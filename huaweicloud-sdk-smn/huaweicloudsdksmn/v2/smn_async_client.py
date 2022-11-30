@@ -47,8 +47,7 @@ class SmnAsyncClient(Client):
 
         为指定Topic添加一个订阅者，如果订阅者的状态为未确认，则向订阅者发送一个确认的消息。待订阅者进行ConfirmSubscription确认后，该订阅者才能收到Topic发布的消息。单Topic默认可添加10000个订阅者，高并发场景下，可能会出现订阅者数量超过10000仍添加成功的情况，此为正常现象。接口是幂等的，如果添加已存在的订阅者，则返回成功，且status code为200，否则status code为201。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddSubscription
@@ -114,8 +113,7 @@ class SmnAsyncClient(Client):
         创建时，不允许重复key，如果数据库存在就覆盖。
         删除时，如果删除的标签不存在，默认处理成功，删除时不对标签字符集范围做校验。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchCreateOrDeleteResourceTags
@@ -180,8 +178,7 @@ class SmnAsyncClient(Client):
 
         删除指定的订阅者。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CancelSubscription
@@ -243,8 +240,7 @@ class SmnAsyncClient(Client):
         创建一个模板，用户可以按照模板去发送消息，这样可以减少请求的数据量。
         单用户默认可创建100个消息模板，高并发场景下，可能会出现消息模板数量超过100仍创建成功的情况，此为正常现象。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateMessageTemplate
@@ -305,8 +301,7 @@ class SmnAsyncClient(Client):
 
         一个资源上最多有10个标签。此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateResourceTag
@@ -372,8 +367,7 @@ class SmnAsyncClient(Client):
         创建Topic，单用户默认配额为3000。高并发场景下，可能会出现Topic数量超过3000仍创建成功的情况，此为正常现象。
         接口是幂等的，接口调用返回成功时，若已存在同名的Topic，返回的status code为200，否则返回的status code为201
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateTopic
@@ -434,8 +428,7 @@ class SmnAsyncClient(Client):
 
         删除消息模板。删除模板之前的消息请求都可以使用该模板发送，删除之后无法再使用该模板发送消息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteMessageTemplate
@@ -496,8 +489,7 @@ class SmnAsyncClient(Client):
 
         幂等接口：删除时，不对标签做校验。删除的key不存在报404，key不能为空或者空字符串。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteResourceTag
@@ -562,8 +554,7 @@ class SmnAsyncClient(Client):
 
         删除主题。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteTopic
@@ -624,8 +615,7 @@ class SmnAsyncClient(Client):
 
         删除指定名称的主题策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteTopicAttributeByName
@@ -688,8 +678,7 @@ class SmnAsyncClient(Client):
 
         删除所有主题策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteTopicAttributes
@@ -750,8 +739,7 @@ class SmnAsyncClient(Client):
 
         查询模板详情，包括模板内容。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListMessageTemplateDetails
@@ -812,8 +800,7 @@ class SmnAsyncClient(Client):
 
         分页查询模板列表，模板列表按照创建时间进行升序排列。分页查询可以指定offset以及limit。如果不存在模板，则返回空列表。额外的查询参数分别有message_template_name和protocol。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListMessageTemplates
@@ -880,8 +867,7 @@ class SmnAsyncClient(Client):
 
         查询租户在指定Region和实例类型的所有标签集合。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListProjectTags
@@ -942,8 +928,7 @@ class SmnAsyncClient(Client):
 
         使用标签过滤实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListResourceInstances
@@ -1006,8 +991,7 @@ class SmnAsyncClient(Client):
 
         查询指定实例的标签信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListResourceTags
@@ -1070,8 +1054,7 @@ class SmnAsyncClient(Client):
 
         分页返回请求者的所有的订阅列表，订阅列表按照订阅创建时间进行升序排列。分页查询可以指定offset以及limit。如果订阅者不存在，返回空列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSubscriptions
@@ -1140,8 +1123,7 @@ class SmnAsyncClient(Client):
 
         分页获取特定Topic的订阅列表，订阅列表按照订阅创建时间进行升序排列。分页查询可以指定offset以及limit。如果指定Topic不存在订阅者，返回空列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSubscriptionsByTopic
@@ -1206,8 +1188,7 @@ class SmnAsyncClient(Client):
 
         查询主题的策略信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTopicAttributes
@@ -1270,8 +1251,7 @@ class SmnAsyncClient(Client):
 
         查询Topic的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTopicDetails
@@ -1332,8 +1312,7 @@ class SmnAsyncClient(Client):
 
         分页查询Topic列表，Topic列表按照Topic创建时间进行降序排列。分页查询可以指定offset以及limit。如果不存在Topic，则返回空列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTopics
@@ -1402,8 +1381,7 @@ class SmnAsyncClient(Client):
 
         查询SMN API V2版本信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListVersion
@@ -1464,8 +1442,7 @@ class SmnAsyncClient(Client):
 
         查询SMN开放API支持的版本号。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListVersions
@@ -1533,8 +1510,7 @@ class SmnAsyncClient(Client):
         只需要设置其中一个，如果同时设置，生效的优先级为
         message_structure &gt; message_template_name &gt; message。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for PublishMessage
@@ -1597,8 +1573,7 @@ class SmnAsyncClient(Client):
 
         修改消息模板的内容。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateMessageTemplate
@@ -1661,8 +1636,7 @@ class SmnAsyncClient(Client):
 
         更新显示名。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateTopic
@@ -1725,8 +1699,7 @@ class SmnAsyncClient(Client):
 
         更新主题的策略信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateTopicAttribute
@@ -1791,8 +1764,7 @@ class SmnAsyncClient(Client):
 
         创建平台应用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateApplication
@@ -1853,8 +1825,7 @@ class SmnAsyncClient(Client):
 
         删除平台应用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteApplication
@@ -1915,8 +1886,7 @@ class SmnAsyncClient(Client):
 
         获取应用平台属性。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApplicationAttributes
@@ -1977,8 +1947,7 @@ class SmnAsyncClient(Client):
 
         查询应用平台列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApplications
@@ -2045,8 +2014,7 @@ class SmnAsyncClient(Client):
 
         将消息直发给endpoint设备。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for PublishAppMessage
@@ -2109,8 +2077,7 @@ class SmnAsyncClient(Client):
 
         更新应用平台。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateApplication
@@ -2173,8 +2140,7 @@ class SmnAsyncClient(Client):
 
         创建应用平台的endpoint终端。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateApplicationEndpoint
@@ -2237,8 +2203,7 @@ class SmnAsyncClient(Client):
 
         删除设备。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteApplicationEndpoint
@@ -2299,8 +2264,7 @@ class SmnAsyncClient(Client):
 
         获取endpoint的属性。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApplicationEndpointAttributes
@@ -2361,8 +2325,7 @@ class SmnAsyncClient(Client):
 
         查询平台的endpoint列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApplicationEndpoints
@@ -2433,8 +2396,7 @@ class SmnAsyncClient(Client):
 
         更新设备属性。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateApplicationEndpoint

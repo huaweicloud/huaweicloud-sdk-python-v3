@@ -36,7 +36,7 @@ class ListInstantQueryAomPromPostResponse(SdkResponse):
 
         :param status: 响应状态。
         :type status: str
-        :param data: 
+        :param data: 响应数据。
         :type data: object
         """
         
@@ -77,6 +77,8 @@ class ListInstantQueryAomPromPostResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListInstantQueryAomPromPostResponse.
 
+        响应数据。
+
         :return: The data of this ListInstantQueryAomPromPostResponse.
         :rtype: object
         """
@@ -85,6 +87,8 @@ class ListInstantQueryAomPromPostResponse(SdkResponse):
     @data.setter
     def data(self, data):
         """Sets the data of this ListInstantQueryAomPromPostResponse.
+
+        响应数据。
 
         :param data: The data of this ListInstantQueryAomPromPostResponse.
         :type data: object

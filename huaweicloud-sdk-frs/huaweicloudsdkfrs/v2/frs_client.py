@@ -47,8 +47,7 @@ class FrsClient(Client):
 
         添加人脸到人脸库中。将单张图片中的人脸添加至人脸库中，支持添加最大人脸或所有人脸。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddFacesByBase64
         :type request: :class:`huaweicloudsdkfrs.v2.AddFacesByBase64Request`
@@ -110,8 +109,7 @@ class FrsClient(Client):
 
         添加人脸到人脸库中。将单张图片中的人脸添加至人脸库中，支持添加最大人脸或所有人脸。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddFacesByFile
         :type request: :class:`huaweicloudsdkfrs.v2.AddFacesByFileRequest`
@@ -181,8 +179,7 @@ class FrsClient(Client):
 
         添加人脸到人脸库中。将单张图片中的人脸添加至人脸库中，支持添加最大人脸或所有人脸。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddFacesByUrl
         :type request: :class:`huaweicloudsdkfrs.v2.AddFacesByUrlRequest`
@@ -244,8 +241,7 @@ class FrsClient(Client):
 
         自定义筛选条件，批量删除人脸库中的符合指定条件的多张人脸。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteFaces
         :type request: :class:`huaweicloudsdkfrs.v2.BatchDeleteFacesRequest`
@@ -307,8 +303,7 @@ class FrsClient(Client):
 
         人脸比对是将两个人脸进行比对，来判断是否为同一个人，返回比对置信度。如果传入的图片中包含多个人脸，选取最大的人脸进行比对。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CompareFaceByBase64
         :type request: :class:`huaweicloudsdkfrs.v2.CompareFaceByBase64Request`
@@ -368,8 +363,7 @@ class FrsClient(Client):
 
         人脸比对是将两个人脸进行比对，来判断是否为同一个人，返回比对置信度。如果传入的图片中包含多个人脸，选取最大的人脸进行比对。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CompareFaceByFile
         :type request: :class:`huaweicloudsdkfrs.v2.CompareFaceByFileRequest`
@@ -433,8 +427,7 @@ class FrsClient(Client):
 
         人脸比对是将两个人脸进行比对，来判断是否为同一个人，返回比对置信度。如果传入的图片中包含多个人脸，选取最大的人脸进行比对。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CompareFaceByUrl
         :type request: :class:`huaweicloudsdkfrs.v2.CompareFaceByUrlRequest`
@@ -494,8 +487,7 @@ class FrsClient(Client):
 
         创建用于存储人脸特征的人脸库。您最多可以创建10个人脸库，每个人脸库最大容量为10万个人脸特征。如有更大规格的需求请联系客服。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateFaceSet
         :type request: :class:`huaweicloudsdkfrs.v2.CreateFaceSetRequest`
@@ -555,8 +547,7 @@ class FrsClient(Client):
 
         根据external_image_id删除人脸。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteFaceByExternalImageId
         :type request: :class:`huaweicloudsdkfrs.v2.DeleteFaceByExternalImageIdRequest`
@@ -618,8 +609,7 @@ class FrsClient(Client):
 
         根据face_id删除人脸。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteFaceByFaceId
         :type request: :class:`huaweicloudsdkfrs.v2.DeleteFaceByFaceIdRequest`
@@ -681,8 +671,7 @@ class FrsClient(Client):
 
         删除人脸库以及其中所有的人脸。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteFaceSet
         :type request: :class:`huaweicloudsdkfrs.v2.DeleteFaceSetRequest`
@@ -742,8 +731,7 @@ class FrsClient(Client):
 
         人脸检测是对输入图片进行人脸检测和分析，输出人脸在图像中的位置、人脸关键点位置和人脸关键属性。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DetectFaceByBase64
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByBase64Request`
@@ -803,8 +791,7 @@ class FrsClient(Client):
 
         人脸检测是对输入图片进行人脸检测和分析，输出人脸在图像中的位置、人脸关键点位置和人脸关键属性。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DetectFaceByBase64Intl
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByBase64IntlRequest`
@@ -864,8 +851,7 @@ class FrsClient(Client):
 
         人脸检测是对输入图片进行人脸检测和分析，输出人脸在图像中的位置、人脸关键点位置和人脸关键属性。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DetectFaceByFile
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByFileRequest`
@@ -929,8 +915,7 @@ class FrsClient(Client):
 
         人脸检测是对输入图片进行人脸检测和分析，输出人脸在图像中的位置、人脸关键点位置和人脸关键属性。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DetectFaceByFileIntl
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByFileIntlRequest`
@@ -992,8 +977,7 @@ class FrsClient(Client):
 
         人脸检测是对输入图片进行人脸检测和分析，输出人脸在图像中的位置、人脸关键点位置和人脸关键属性。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DetectFaceByUrl
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByUrlRequest`
@@ -1053,8 +1037,7 @@ class FrsClient(Client):
 
         人脸检测是对输入图片进行人脸检测和分析，输出人脸在图像中的位置、人脸关键点位置和人脸关键属性。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DetectFaceByUrlIntl
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByUrlIntlRequest`
@@ -1114,8 +1097,7 @@ class FrsClient(Client):
 
         动作活体检测是通过判断视频中的人物动作与传入动作列表是否一致来识别视频中人物是否为活体。如果有多张人脸出现，则选取最大的人脸进行判定。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DetectLiveByBase64
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByBase64Request`
@@ -1175,8 +1157,7 @@ class FrsClient(Client):
 
         动作活体检测是通过判断视频中的人物动作与传入动作列表是否一致来识别视频中人物是否为活体。如果有多张人脸出现，则选取最大的人脸进行判定。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DetectLiveByBase64Intl
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByBase64IntlRequest`
@@ -1236,8 +1217,7 @@ class FrsClient(Client):
 
         动作活体检测是通过判断视频中的人物动作与传入动作列表是否一致来识别视频中人物是否为活体。如果有多张人脸出现，则选取最大的人脸进行判定。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DetectLiveByFile
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByFileRequest`
@@ -1303,8 +1283,7 @@ class FrsClient(Client):
 
         动作活体检测是通过判断视频中的人物动作与传入动作列表是否一致来识别视频中人物是否为活体。如果有多张人脸出现，则选取最大的人脸进行判定。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DetectLiveByFileIntl
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByFileIntlRequest`
@@ -1370,8 +1349,7 @@ class FrsClient(Client):
 
         动作活体检测是通过判断视频中的人物动作与传入动作列表是否一致来识别视频中人物是否为活体。如果有多张人脸出现，则选取最大的人脸进行判定。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DetectLiveByUrl
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByUrlRequest`
@@ -1431,8 +1409,7 @@ class FrsClient(Client):
 
         动作活体检测是通过判断视频中的人物动作与传入动作列表是否一致来识别视频中人物是否为活体。如果有多张人脸出现，则选取最大的人脸进行判定。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DetectLiveByUrlIntl
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByUrlIntlRequest`
@@ -1492,8 +1469,7 @@ class FrsClient(Client):
 
         静默活体检测是基于人脸图片中可能存在的畸变、摩尔纹、反光、倒影、边框等信息，判断图片中的人脸是否来自于真人活体，有效抵御纸质翻拍照、电子翻拍照以及视频翻拍等各种攻击方式。静默活体检测支持单张图片，不支持多人脸图片。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DetectLiveFaceByBase64
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByBase64Request`
@@ -1553,8 +1529,7 @@ class FrsClient(Client):
 
         静默活体检测是基于人脸图片中可能存在的畸变、摩尔纹、反光、倒影、边框等信息，判断图片中的人脸是否来自于真人活体，有效抵御纸质翻拍照、电子翻拍照以及视频翻拍等各种攻击方式。静默活体检测支持单张图片，不支持多人脸图片。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DetectLiveFaceByFile
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByFileRequest`
@@ -1616,8 +1591,7 @@ class FrsClient(Client):
 
         静默活体检测是基于人脸图片中可能存在的畸变、摩尔纹、反光、倒影、边框等信息，判断图片中的人脸是否来自于真人活体，有效抵御纸质翻拍照、电子翻拍照以及视频翻拍等各种攻击方式。静默活体检测支持单张图片，不支持多人脸图片。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DetectLiveFaceByUrl
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByUrlRequest`
@@ -1678,8 +1652,7 @@ class FrsClient(Client):
         人脸搜索是指在已有的人脸库中，查询与目标人脸相似的一张或者多张人脸，并返回相应的置信度。
         支持传入图片或者faceID进行人脸搜索，如果传入的是多张人脸图片，选取图片中检测到的最大尺寸人脸作为检索的输入。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SearchFaceByBase64
         :type request: :class:`huaweicloudsdkfrs.v2.SearchFaceByBase64Request`
@@ -1742,8 +1715,7 @@ class FrsClient(Client):
         人脸搜索是指在已有的人脸库中，查询与目标人脸相似的一张或者多张人脸，并返回相应的置信度。
         支持传入图片或者faceID进行人脸搜索，如果传入的是多张人脸图片，选取图片中检测到的最大尺寸人脸作为检索的输入。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SearchFaceByFaceId
         :type request: :class:`huaweicloudsdkfrs.v2.SearchFaceByFaceIdRequest`
@@ -1806,8 +1778,7 @@ class FrsClient(Client):
         人脸搜索是指在已有的人脸库中，查询与目标人脸相似的一张或者多张人脸，并返回相应的置信度。
         支持传入图片或者faceID进行人脸搜索，如果传入的是多张人脸图片，选取图片中检测到的最大尺寸人脸作为检索的输入。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SearchFaceByFile
         :type request: :class:`huaweicloudsdkfrs.v2.SearchFaceByFileRequest`
@@ -1882,8 +1853,7 @@ class FrsClient(Client):
         人脸搜索是指在已有的人脸库中，查询与目标人脸相似的一张或者多张人脸，并返回相应的置信度。
         支持传入图片或者faceID进行人脸搜索，如果传入的是多张人脸图片，选取图片中检测到的最大尺寸人脸作为检索的输入。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SearchFaceByUrl
         :type request: :class:`huaweicloudsdkfrs.v2.SearchFaceByUrlRequest`
@@ -1945,8 +1915,7 @@ class FrsClient(Client):
 
         查询当前用户所有人脸库的状态信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAllFaceSets
         :type request: :class:`huaweicloudsdkfrs.v2.ShowAllFaceSetsRequest`
@@ -2004,8 +1973,7 @@ class FrsClient(Client):
 
         查询人脸库当前的状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowFaceSet
         :type request: :class:`huaweicloudsdkfrs.v2.ShowFaceSetRequest`
@@ -2065,8 +2033,7 @@ class FrsClient(Client):
 
         查询指定人脸库中人脸信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowFacesByFaceId
         :type request: :class:`huaweicloudsdkfrs.v2.ShowFacesByFaceIdRequest`
@@ -2128,8 +2095,7 @@ class FrsClient(Client):
 
         查询指定人脸库中人脸信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowFacesByLimit
         :type request: :class:`huaweicloudsdkfrs.v2.ShowFacesByLimitRequest`
@@ -2193,8 +2159,7 @@ class FrsClient(Client):
 
         根据人脸ID（face_id）更新单张人脸信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateFace
         :type request: :class:`huaweicloudsdkfrs.v2.UpdateFaceRequest`

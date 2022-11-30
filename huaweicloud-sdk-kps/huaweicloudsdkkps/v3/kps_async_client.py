@@ -47,8 +47,7 @@ class KpsAsyncClient(Client):
 
         给指定的虚拟机绑定（替换或重置，替换需提供虚拟机已配置的SSH密钥对私钥；重置不需要提供虚拟机的SSH密钥对私钥）新的SSH密钥对。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AssociateKeypair
@@ -109,8 +108,7 @@ class KpsAsyncClient(Client):
 
         创建和导入SSH密钥对
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateKeypair
@@ -171,8 +169,7 @@ class KpsAsyncClient(Client):
 
         删除操作失败的任务信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteAllFailedTask
@@ -231,8 +228,7 @@ class KpsAsyncClient(Client):
 
         删除失败的任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteFailedTask
@@ -293,8 +289,7 @@ class KpsAsyncClient(Client):
 
         删除SSH密钥对。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteKeypair
@@ -355,8 +350,7 @@ class KpsAsyncClient(Client):
 
         给指定的虚拟机解除绑定SSH密钥对并恢复SSH密码登录。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DisassociateKeypair
@@ -417,8 +411,7 @@ class KpsAsyncClient(Client):
 
         查询绑定、解绑等操作失败的任务信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListFailedTask
@@ -481,8 +474,7 @@ class KpsAsyncClient(Client):
 
         查询SSH密钥对详细信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListKeypairDetail
@@ -543,8 +535,7 @@ class KpsAsyncClient(Client):
 
         根据SSH密钥对接口返回的task_id，查询SSH密钥对当前任务的执行状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListKeypairTask
@@ -605,8 +596,7 @@ class KpsAsyncClient(Client):
 
         查询SSH密钥对列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListKeypairs
@@ -669,8 +659,7 @@ class KpsAsyncClient(Client):
 
         查询正在处理的任务信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRunningTask
@@ -733,8 +722,7 @@ class KpsAsyncClient(Client):
 
         更新SSH密钥对描述。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateKeypairDescription

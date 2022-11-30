@@ -24,6 +24,7 @@ class ApiPolicyFunctionCreate:
         'invocation_type': 'str',
         'timeout': 'int',
         'version': 'str',
+        'alias_urn': 'str',
         'effect_mode': 'str',
         'name': 'str',
         'backend_params': 'list[BackendParamBase]',
@@ -36,6 +37,7 @@ class ApiPolicyFunctionCreate:
         'invocation_type': 'invocation_type',
         'timeout': 'timeout',
         'version': 'version',
+        'alias_urn': 'alias_urn',
         'effect_mode': 'effect_mode',
         'name': 'name',
         'backend_params': 'backend_params',
@@ -43,7 +45,7 @@ class ApiPolicyFunctionCreate:
         'authorizer_id': 'authorizer_id'
     }
 
-    def __init__(self, function_urn=None, invocation_type=None, timeout=None, version=None, effect_mode=None, name=None, backend_params=None, conditions=None, authorizer_id=None):
+    def __init__(self, function_urn=None, invocation_type=None, timeout=None, version=None, alias_urn=None, effect_mode=None, name=None, backend_params=None, conditions=None, authorizer_id=None):
         """ApiPolicyFunctionCreate
 
         The model defined in huaweicloud sdk
@@ -56,6 +58,8 @@ class ApiPolicyFunctionCreate:
         :type timeout: int
         :param version: 版本。字符长度不超过64
         :type version: str
+        :param alias_urn: 函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+        :type alias_urn: str
         :param effect_mode: 关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
         :type effect_mode: str
         :param name: 策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
@@ -74,6 +78,7 @@ class ApiPolicyFunctionCreate:
         self._invocation_type = None
         self._timeout = None
         self._version = None
+        self._alias_urn = None
         self._effect_mode = None
         self._name = None
         self._backend_params = None
@@ -86,6 +91,8 @@ class ApiPolicyFunctionCreate:
         self.timeout = timeout
         if version is not None:
             self.version = version
+        if alias_urn is not None:
+            self.alias_urn = alias_urn
         self.effect_mode = effect_mode
         self.name = name
         if backend_params is not None:
@@ -181,6 +188,28 @@ class ApiPolicyFunctionCreate:
         :type version: str
         """
         self._version = version
+
+    @property
+    def alias_urn(self):
+        """Gets the alias_urn of this ApiPolicyFunctionCreate.
+
+        函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+
+        :return: The alias_urn of this ApiPolicyFunctionCreate.
+        :rtype: str
+        """
+        return self._alias_urn
+
+    @alias_urn.setter
+    def alias_urn(self, alias_urn):
+        """Sets the alias_urn of this ApiPolicyFunctionCreate.
+
+        函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+
+        :param alias_urn: The alias_urn of this ApiPolicyFunctionCreate.
+        :type alias_urn: str
+        """
+        self._alias_urn = alias_urn
 
     @property
     def effect_mode(self):

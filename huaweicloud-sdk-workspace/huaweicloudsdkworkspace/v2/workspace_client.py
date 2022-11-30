@@ -47,8 +47,7 @@ class WorkspaceClient(Client):
 
         该接口用于查询云桌面支持的可用分区列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAvailabilityZones
         :type request: :class:`huaweicloudsdkworkspace.v2.ListAvailabilityZonesRequest`
@@ -106,8 +105,7 @@ class WorkspaceClient(Client):
 
         该接口用于导出连接记录。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExportUserLoginInfoNew
         :type request: :class:`huaweicloudsdkworkspace.v2.ExportUserLoginInfoNewRequest`
@@ -177,8 +175,7 @@ class WorkspaceClient(Client):
 
         该接口用于查询登录人数，注意查询参数不可全空。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListHistoryOnlineInfoNew
         :type request: :class:`huaweicloudsdkworkspace.v2.ListHistoryOnlineInfoNewRequest`
@@ -242,8 +239,7 @@ class WorkspaceClient(Client):
 
         该接口用于查询登录信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListLoginRecordsNew
         :type request: :class:`huaweicloudsdkworkspace.v2.ListLoginRecordsNewRequest`
@@ -315,8 +311,7 @@ class WorkspaceClient(Client):
 
         批量删除桌面，删除后无法恢复。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteDesktops
         :type request: :class:`huaweicloudsdkworkspace.v2.BatchDeleteDesktopsRequest`
@@ -376,8 +371,7 @@ class WorkspaceClient(Client):
 
         批量操作桌面，用于批量开机、关机和重启。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchRunDesktops
         :type request: :class:`huaweicloudsdkworkspace.v2.BatchRunDesktopsRequest`
@@ -437,8 +431,7 @@ class WorkspaceClient(Client):
 
         创建桌面，并将此桌面分配给用户，当桌面创建成功后用户可以登录使用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDesktop
         :type request: :class:`huaweicloudsdkworkspace.v2.CreateDesktopRequest`
@@ -498,8 +491,7 @@ class WorkspaceClient(Client):
 
         删除单个桌面，删除后无法恢复。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDesktop
         :type request: :class:`huaweicloudsdkworkspace.v2.DeleteDesktopRequest`
@@ -563,8 +555,7 @@ class WorkspaceClient(Client):
 
         该接口用于查询桌面虚拟机列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDesktops
         :type request: :class:`huaweicloudsdkworkspace.v2.ListDesktopsRequest`
@@ -632,8 +623,7 @@ class WorkspaceClient(Client):
 
         查询桌面详情信息列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDesktopsDetail
         :type request: :class:`huaweicloudsdkworkspace.v2.ListDesktopsDetailRequest`
@@ -709,8 +699,7 @@ class WorkspaceClient(Client):
 
         变更云桌面规格，只支持变更CPU和内存，不支持变更磁盘，不支持同规格互相变更。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ResizeDesktop
         :type request: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopRequest`
@@ -770,8 +759,7 @@ class WorkspaceClient(Client):
 
         指定桌面Id查询详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDesktopDetail
         :type request: :class:`huaweicloudsdkworkspace.v2.ShowDesktopDetailRequest`
@@ -831,8 +819,7 @@ class WorkspaceClient(Client):
 
         该接口用于查询云桌面支持的产品镜像列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListImages
         :type request: :class:`huaweicloudsdkworkspace.v2.ListImagesRequest`
@@ -898,8 +885,7 @@ class WorkspaceClient(Client):
 
         该接口用于查询异步任务执行情况，比如查询创建桌面的执行状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListItaSubJobs
         :type request: :class:`huaweicloudsdkworkspace.v2.ListItaSubJobsRequest`
@@ -967,8 +953,7 @@ class WorkspaceClient(Client):
 
         该接口用于查询云桌面支持的产品套餐列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProducts
         :type request: :class:`huaweicloudsdkworkspace.v2.ListProductsRequest`
@@ -1038,8 +1023,7 @@ class WorkspaceClient(Client):
 
         该接口用于操作用户，包含三种操作：锁定、解锁和重置密码。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ChangeUserStatus
         :type request: :class:`huaweicloudsdkworkspace.v2.ChangeUserStatusRequest`
@@ -1101,8 +1085,7 @@ class WorkspaceClient(Client):
 
         该接口用于创建桌面用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDesktopUser
         :type request: :class:`huaweicloudsdkworkspace.v2.CreateDesktopUserRequest`
@@ -1162,8 +1145,7 @@ class WorkspaceClient(Client):
 
         删除指定的桌面用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteUser
         :type request: :class:`huaweicloudsdkworkspace.v2.DeleteUserRequest`
@@ -1223,8 +1205,7 @@ class WorkspaceClient(Client):
 
         该接口用于查询指定的桌面用户详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListUserDetail
         :type request: :class:`huaweicloudsdkworkspace.v2.ListUserDetailRequest`
@@ -1284,8 +1265,7 @@ class WorkspaceClient(Client):
 
         该接口用于查询桌面用户列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListUsers
         :type request: :class:`huaweicloudsdkworkspace.v2.ListUsersRequest`
@@ -1351,8 +1331,7 @@ class WorkspaceClient(Client):
 
         该接口用于修改桌面用户信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateUserInfo
         :type request: :class:`huaweicloudsdkworkspace.v2.UpdateUserInfoRequest`
@@ -1414,8 +1393,7 @@ class WorkspaceClient(Client):
 
         增加桌面磁盘。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddVolumes
         :type request: :class:`huaweicloudsdkworkspace.v2.AddVolumesRequest`
@@ -1475,8 +1453,7 @@ class WorkspaceClient(Client):
 
         扩容桌面磁盘。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExpandVolumes
         :type request: :class:`huaweicloudsdkworkspace.v2.ExpandVolumesRequest`
@@ -1538,8 +1515,7 @@ class WorkspaceClient(Client):
         
         作为异步接口，调用成功说明云办公服务后台收到了开通请求，但服务是否开通成功需要通过任务查询接口(GET /v2/{project_id}/workspace-sub-jobs)查询该任务的执行状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ApplyWorkspace
         :type request: :class:`huaweicloudsdkworkspace.v2.ApplyWorkspaceRequest`
@@ -1599,8 +1575,7 @@ class WorkspaceClient(Client):
 
         该接口用于注销云办公服务。注销前请确保当前用户下的云桌面已经删除，注销后无法恢复。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CancelWorkspace
         :type request: :class:`huaweicloudsdkworkspace.v2.CancelWorkspaceRequest`
@@ -1658,8 +1633,7 @@ class WorkspaceClient(Client):
 
         该接口用于查询云办公服务详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListWorkspaces
         :type request: :class:`huaweicloudsdkworkspace.v2.ListWorkspacesRequest`
@@ -1717,8 +1691,7 @@ class WorkspaceClient(Client):
 
         该接口目前支持修改云办公服务属性。单次请求仅支持修改一种属性类型。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateWorkspace
         :type request: :class:`huaweicloudsdkworkspace.v2.UpdateWorkspaceRequest`

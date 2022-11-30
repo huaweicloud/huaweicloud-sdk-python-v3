@@ -47,8 +47,7 @@ class DdmClient(Client):
 
         创建DDM逻辑库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDatabase
         :type request: :class:`huaweicloudsdkddm.v1.CreateDatabaseRequest`
@@ -112,8 +111,7 @@ class DdmClient(Client):
         
         DDM运行于虚拟私有云。申请DDM实例前，需保证有可用的虚拟私有云，并且已配置好子网与安全组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateInstance
         :type request: :class:`huaweicloudsdkddm.v1.CreateInstanceRequest`
@@ -173,8 +171,7 @@ class DdmClient(Client):
 
         DDM帐号用于连接和管理逻辑库。一个DDM实例最多能创建100个DDM帐号，一个DDM帐号可以关联多个逻辑库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateUsers
         :type request: :class:`huaweicloudsdkddm.v1.CreateUsersRequest`
@@ -236,8 +233,7 @@ class DdmClient(Client):
 
         删除指定的逻辑库，释放该逻辑库的所有资源。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDatabase
         :type request: :class:`huaweicloudsdkddm.v1.DeleteDatabaseRequest`
@@ -301,8 +297,7 @@ class DdmClient(Client):
 
         删除指定的DDM实例，释放该实例的所有资源。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteInstance
         :type request: :class:`huaweicloudsdkddm.v1.DeleteInstanceRequest`
@@ -364,8 +359,7 @@ class DdmClient(Client):
 
         删除指定的DDM实例帐号，如果帐号关联了逻辑库，则对应的关联关系也会删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteUser
         :type request: :class:`huaweicloudsdkddm.v1.DeleteUserRequest`
@@ -425,10 +419,9 @@ class DdmClient(Client):
     def expand_instance_nodes(self, request):
         """DDM实例节点扩容
 
-        对指定的DDM实例的节点个数进行扩容。
+        对指定的DDM实例的节点个数进行扩容，支持按需实例与包周期实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExpandInstanceNodes
         :type request: :class:`huaweicloudsdkddm.v1.ExpandInstanceNodesRequest`
@@ -490,8 +483,7 @@ class DdmClient(Client):
 
         查询创建逻辑库可选取的数据库实例列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAvailableRdsList
         :type request: :class:`huaweicloudsdkddm.v1.ListAvailableRdsListRequest`
@@ -555,8 +547,7 @@ class DdmClient(Client):
 
         查询DDM逻辑库列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDatabases
         :type request: :class:`huaweicloudsdkddm.v1.ListDatabasesRequest`
@@ -620,8 +611,7 @@ class DdmClient(Client):
 
         查询DDM引擎信息详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEngines
         :type request: :class:`huaweicloudsdkddm.v1.ListEnginesRequest`
@@ -683,8 +673,7 @@ class DdmClient(Client):
 
         查询DDM可用区规格信息详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListFlavors
         :type request: :class:`huaweicloudsdkddm.v1.ListFlavorsRequest`
@@ -748,8 +737,7 @@ class DdmClient(Client):
 
         查询DDM实例列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListInstances
         :type request: :class:`huaweicloudsdkddm.v1.ListInstancesRequest`
@@ -811,8 +799,7 @@ class DdmClient(Client):
 
         查询DDM实例节点列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListNodes
         :type request: :class:`huaweicloudsdkddm.v1.ListNodesRequest`
@@ -876,8 +863,7 @@ class DdmClient(Client):
 
         查询指定时间段内在DDM实例的读写次数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListReadWriteRatio
         :type request: :class:`huaweicloudsdkddm.v1.ListReadWriteRatioRequest`
@@ -945,8 +931,7 @@ class DdmClient(Client):
 
         查询指定时间段内在DDM实例上执行过的慢sql相关信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSlowLog
         :type request: :class:`huaweicloudsdkddm.v1.ListSlowLogRequest`
@@ -1014,8 +999,7 @@ class DdmClient(Client):
 
         查询DDM帐号列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListUsers
         :type request: :class:`huaweicloudsdkddm.v1.ListUsersRequest`
@@ -1079,8 +1063,7 @@ class DdmClient(Client):
 
         DDM实例跨region容灾场景下，针对目标DDM实例实现表数据reload，使数据同步。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RebuildConfig
         :type request: :class:`huaweicloudsdkddm.v1.RebuildConfigRequest`
@@ -1140,8 +1123,7 @@ class DdmClient(Client):
 
         首次调用时新建DDM管理员帐号并设置密码。后续调用时仅更新管理员密码。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ResetAdministrator
         :type request: :class:`huaweicloudsdkddm.v1.ResetAdministratorRequest`
@@ -1203,8 +1185,7 @@ class DdmClient(Client):
 
         重置现有DDM帐号的密码。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ResetUserPassword
         :type request: :class:`huaweicloudsdkddm.v1.ResetUserPasswordRequest`
@@ -1268,8 +1249,7 @@ class DdmClient(Client):
 
         变更DDM实例规格。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ResizeFlavor
         :type request: :class:`huaweicloudsdkddm.v1.ResizeFlavorRequest`
@@ -1331,8 +1311,7 @@ class DdmClient(Client):
 
         重启指定的DDM实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RestartInstance
         :type request: :class:`huaweicloudsdkddm.v1.RestartInstanceRequest`
@@ -1394,8 +1373,7 @@ class DdmClient(Client):
 
         查询指定逻辑库的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDatabase
         :type request: :class:`huaweicloudsdkddm.v1.ShowDatabaseRequest`
@@ -1457,8 +1435,7 @@ class DdmClient(Client):
 
         查询指定DDM实例的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowInstance
         :type request: :class:`huaweicloudsdkddm.v1.ShowInstanceRequest`
@@ -1518,8 +1495,7 @@ class DdmClient(Client):
 
         查询DDM指定实例的参数详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowInstanceParam
         :type request: :class:`huaweicloudsdkddm.v1.ShowInstanceParamRequest`
@@ -1585,8 +1561,7 @@ class DdmClient(Client):
 
         查询DDM实例节点详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowNode
         :type request: :class:`huaweicloudsdkddm.v1.ShowNodeRequest`
@@ -1648,8 +1623,7 @@ class DdmClient(Client):
 
         对指定的DDM实例的节点个数进行缩容。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShrinkInstanceNodes
         :type request: :class:`huaweicloudsdkddm.v1.ShrinkInstanceNodesRequest`
@@ -1711,8 +1685,7 @@ class DdmClient(Client):
 
         同步当前DDM实例已关联的所有DN实例配置信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDatabaseInfo
         :type request: :class:`huaweicloudsdkddm.v1.UpdateDatabaseInfoRequest`
@@ -1772,8 +1745,7 @@ class DdmClient(Client):
 
         修改DDM实例名称。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateInstanceName
         :type request: :class:`huaweicloudsdkddm.v1.UpdateInstanceNameRequest`
@@ -1835,8 +1807,7 @@ class DdmClient(Client):
 
         修改DDM实例参数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateInstanceParam
         :type request: :class:`huaweicloudsdkddm.v1.UpdateInstanceParamRequest`
@@ -1900,8 +1871,7 @@ class DdmClient(Client):
 
         修改DDM实例安全组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateInstanceSecurityGroup
         :type request: :class:`huaweicloudsdkddm.v1.UpdateInstanceSecurityGroupRequest`
@@ -1963,8 +1933,7 @@ class DdmClient(Client):
 
         修改DDM已关联的数据库实例的读策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateReadAndWriteStrategy
         :type request: :class:`huaweicloudsdkddm.v1.UpdateReadAndWriteStrategyRequest`
@@ -2026,8 +1995,7 @@ class DdmClient(Client):
 
         修改现有DDM帐号的权限或者与逻辑库的管理关系。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateUser
         :type request: :class:`huaweicloudsdkddm.v1.UpdateUserRequest`
@@ -2091,8 +2059,7 @@ class DdmClient(Client):
 
         弱密码校验
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ValidateWeakPassword
         :type request: :class:`huaweicloudsdkddm.v1.ValidateWeakPasswordRequest`

@@ -47,8 +47,7 @@ class ErAsyncClient(Client):
 
         每个连接只能关联到一张路由表。通过创建关联将连接关联到路由表，从该连接收到的报文会用被关联的路由表进行路由。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AssociateRouteTable
@@ -115,8 +114,7 @@ class ErAsyncClient(Client):
 
         解绑连接和路由表的关联关系。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DisassociateRouteTable
@@ -181,8 +179,7 @@ class ErAsyncClient(Client):
 
         查询路由关联列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAssociations
@@ -264,8 +261,7 @@ class ErAsyncClient(Client):
 
         查询企业路由器实例下的连接列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAttachments
@@ -345,8 +341,7 @@ class ErAsyncClient(Client):
 
         查询连接详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowAttachment
@@ -409,8 +404,7 @@ class ErAsyncClient(Client):
 
         修改连接基本信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateAttachment
@@ -475,8 +469,7 @@ class ErAsyncClient(Client):
 
         查询支持创建企业路由器实例的可用区列表，当可用区状态为available时，表示可以创建企业路由器实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAvailabilityZone
@@ -537,8 +530,7 @@ class ErAsyncClient(Client):
 
         更新企业路由器的可用区信息，企业路由器实例状态为available的时候才能更新。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ChangeAvailabilityZone
@@ -601,8 +593,7 @@ class ErAsyncClient(Client):
 
         创建企业路由器实例，如果使能默认关联路由表或使能默认传递路由表，那么系统会默认创建一张路由表，作为默认关联路由表或默认传递路由表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateEnterpriseRouter
@@ -665,8 +656,7 @@ class ErAsyncClient(Client):
 
         删除企业路由器。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteEnterpriseRouter
@@ -727,8 +717,7 @@ class ErAsyncClient(Client):
 
         查询企业路由器列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListEnterpriseRouters
@@ -809,8 +798,7 @@ class ErAsyncClient(Client):
 
         查询企业路由器详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowEnterpriseRouter
@@ -871,8 +859,7 @@ class ErAsyncClient(Client):
 
         更新企业路由器基本信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateEnterpriseRouter
@@ -935,8 +922,7 @@ class ErAsyncClient(Client):
 
         解绑连接和路由表的传播关系。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DisablePropagation
@@ -1001,8 +987,7 @@ class ErAsyncClient(Client):
 
         每个连接可以和多个路由表建立传播关系，从该连接学习到的路由会应用到具有传播关系的路由表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for EnablePropagation
@@ -1069,8 +1054,7 @@ class ErAsyncClient(Client):
 
         查询路由传播列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListPropagations
@@ -1152,8 +1136,7 @@ class ErAsyncClient(Client):
 
         创建静态路由
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateStaticRoute
@@ -1218,8 +1201,7 @@ class ErAsyncClient(Client):
 
         删除静态路由
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteStaticRoute
@@ -1282,8 +1264,7 @@ class ErAsyncClient(Client):
 
         查询有效的路由列表，支持分页查询能力
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListEffectiveRoutes
@@ -1354,8 +1335,7 @@ class ErAsyncClient(Client):
 
         查询静态路由列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListStaticRoutes
@@ -1435,8 +1415,7 @@ class ErAsyncClient(Client):
 
         查询静态路由详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowStaticRoute
@@ -1499,8 +1478,7 @@ class ErAsyncClient(Client):
 
         更新静态路由
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateStaticRoute
@@ -1565,8 +1543,7 @@ class ErAsyncClient(Client):
 
         路由表是企业路由器收发报文的依据，包含了连接的关联关系，传播关系以及路由信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateRouteTable
@@ -1631,8 +1608,7 @@ class ErAsyncClient(Client):
 
         删除路由表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteRouteTable
@@ -1695,8 +1671,7 @@ class ErAsyncClient(Client):
 
         查询路由表列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRouteTables
@@ -1774,8 +1749,7 @@ class ErAsyncClient(Client):
 
         查询路由表详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowRouteTable
@@ -1838,8 +1812,7 @@ class ErAsyncClient(Client):
 
         更新路由表基本信息，如名称，描述等。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateRouteTable
@@ -1904,8 +1877,7 @@ class ErAsyncClient(Client):
 
         为特定类型的资源创建标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateResourceTag
@@ -1970,8 +1942,7 @@ class ErAsyncClient(Client):
 
         删除特定类型资源的标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteResourceTag
@@ -2036,8 +2007,7 @@ class ErAsyncClient(Client):
 
         查询特定类型资源的标签集合。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListProjectTags
@@ -2098,8 +2068,7 @@ class ErAsyncClient(Client):
 
         查询特定类型资源的标签信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowResourceTag
@@ -2162,8 +2131,7 @@ class ErAsyncClient(Client):
 
         给ER实例创建VPC连接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateVpcAttachment
@@ -2228,8 +2196,7 @@ class ErAsyncClient(Client):
 
         删除VPC连接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteVpcAttachment
@@ -2292,8 +2259,7 @@ class ErAsyncClient(Client):
 
         查询企业路由器实例下的VPC连接列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListVpcAttachments
@@ -2373,8 +2339,7 @@ class ErAsyncClient(Client):
 
         查询VPC连接详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowVpcAttachment
@@ -2437,8 +2402,7 @@ class ErAsyncClient(Client):
 
         修改VPC连接基本信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateVpcAttachment

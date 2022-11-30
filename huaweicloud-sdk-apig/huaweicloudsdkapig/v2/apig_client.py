@@ -47,8 +47,7 @@ class ApigClient(Client):
 
         实例更新或绑定EIP
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddEipV2
         :type request: :class:`huaweicloudsdkapig.v2.AddEipV2Request`
@@ -110,8 +109,7 @@ class ApigClient(Client):
 
         实例开启公网出口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddEngressEipV2
         :type request: :class:`huaweicloudsdkapig.v2.AddEngressEipV2Request`
@@ -174,8 +172,7 @@ class ApigClient(Client):
         如果创建API时，“定义API请求”使用HTTPS请求协议，那么在独立域名中需要添加SSL证书。
         本章节主要介绍为特定域名绑定证书。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AssociateCertificateV2
         :type request: :class:`huaweicloudsdkapig.v2.AssociateCertificateV2Request`
@@ -242,8 +239,7 @@ class ApigClient(Client):
         用户自定义的域名，需要增加A记录才能生效，具体方法请参见《云解析服务用户指南》的“添加A类型记录集”章节。
         每个API分组下最多可绑定5个域名。绑定域名后，用户可通过自定义域名调用API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AssociateDomainV2
         :type request: :class:`huaweicloudsdkapig.v2.AssociateDomainV2Request`
@@ -311,8 +307,7 @@ class ApigClient(Client):
         
         将指定的签名密钥绑定到一个或多个已发布的API上。同一个API发布到不同的环境可以绑定不同的签名密钥；一个API在发布到特定环境后只能绑定一个签名密钥。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AssociateSignatureKeyV2
         :type request: :class:`huaweicloudsdkapig.v2.AssociateSignatureKeyV2Request`
@@ -378,8 +373,7 @@ class ApigClient(Client):
         - 修改插件后及时生效
         - 相同类型的插件只能绑定一个，原来已经绑定的通类型插件，会直接覆盖。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AttachApiToPlugin
         :type request: :class:`huaweicloudsdkapig.v2.AttachApiToPluginRequest`
@@ -447,8 +441,7 @@ class ApigClient(Client):
         - 修改插件后及时生效
         - 相同类型的插件只能绑定一个，原来已经绑定的通类型插件，会直接覆盖。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AttachPluginToApi
         :type request: :class:`huaweicloudsdkapig.v2.AttachPluginToApiRequest`
@@ -512,8 +505,7 @@ class ApigClient(Client):
 
         创建自定义认证
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateCustomAuthorizerV2
         :type request: :class:`huaweicloudsdkapig.v2.CreateCustomAuthorizerV2Request`
@@ -579,8 +571,7 @@ class ApigClient(Client):
         
         为此，API网关提供多环境管理功能，使租户能够最大化的模拟实际场景，低成本的接入API网关。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateEnvironmentV2
         :type request: :class:`huaweicloudsdkapig.v2.CreateEnvironmentV2Request`
@@ -653,8 +644,7 @@ class ApigClient(Client):
         &gt; 3. 设置了环境变量后，使用到该变量的API的调试功能将不可使用。
         &gt; 4. 定义了环境变量后，使用到环境变量的地方应该以对称的#标识环境变量，当API发布到相应的环境后，会对环境变量的值进行替换，如：定义的API的URL为：https://#address#:8080，环境变量address在RELEASE环境上的值为：192.168.1.5，则API发布到RELEASE环境后的真实的URL为：https://192.168.1.5:8080。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateEnvironmentVariableV2
         :type request: :class:`huaweicloudsdkapig.v2.CreateEnvironmentVariableV2Request`
@@ -742,8 +732,7 @@ class ApigClient(Client):
         | real_ip_header_getter | 是否开启通过用户自定义的Header获取用户源IP地址。 |{\&quot;name\&quot;:\&quot;real_ip_header_getter\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;,\\\\\&quot;header_getter\\\\\&quot;: \\\\\&quot;header:testIP\\\\\&quot;}\&quot;} | (1) enable &lt;br/&gt;(2) header_getter | (1) 是否开启 &lt;br/&gt;(2) 获取用户源IP地址的自定义Header | (1) off | (1) on/off |
         | policy_cookie_param | 是否开启策略后端条件支持cookie类型。 |{\&quot;name\&quot;:\&quot;policy_cookie_param\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;on\&quot;} | - | - | off | on/off |
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateFeatureV2
         :type request: :class:`huaweicloudsdkapig.v2.CreateFeatureV2Request`
@@ -805,8 +794,7 @@ class ApigClient(Client):
 
         新增分组下自定义响应
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateGatewayResponseV2
         :type request: :class:`huaweicloudsdkapig.v2.CreateGatewayResponseV2Request`
@@ -870,8 +858,7 @@ class ApigClient(Client):
 
         创建专享版实例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateInstanceV2
         :type request: :class:`huaweicloudsdkapig.v2.CreateInstanceV2Request`
@@ -933,8 +920,7 @@ class ApigClient(Client):
         - 插件不允许重名
         - 插件创建后未绑定API前是无意义的，绑定API后，对绑定的API即时生效
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreatePlugin
         :type request: :class:`huaweicloudsdkapig.v2.CreatePluginRequest`
@@ -996,8 +982,7 @@ class ApigClient(Client):
 
         当API上线后，系统会默认给每个API提供一个流控策略，API提供者可以根据自身API的服务能力及负载情况变更这个流控策略。 流控策略即限制API在一定长度的时间内，能够允许被访问的最大次数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkapig.v2.CreateRequestThrottlingPolicyV2Request`
@@ -1063,8 +1048,7 @@ class ApigClient(Client):
         
         租户创建一个签名密钥，并将签名密钥与API进行绑定，则API网关在请求这个API时，就会使用绑定的签名密钥对请求参数进行数据加密，生成签名。当租户的后端服务收到请求时，可以校验这个签名，如果签名校验不通过，则该请求不是API网关发出的请求，租户可以拒绝这个请求，从而保证API的安全性，避免API被未知来源的请求攻击。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateSignatureKeyV2
         :type request: :class:`huaweicloudsdkapig.v2.CreateSignatureKeyV2Request`
@@ -1130,8 +1114,7 @@ class ApigClient(Client):
         
         为流控策略添加一个特殊设置的对象，可以是APP，也可以是租户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateSpecialThrottlingConfigurationV2
         :type request: :class:`huaweicloudsdkapig.v2.CreateSpecialThrottlingConfigurationV2Request`
@@ -1195,8 +1178,7 @@ class ApigClient(Client):
 
         删除自定义认证
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteCustomAuthorizerV2
         :type request: :class:`huaweicloudsdkapig.v2.DeleteCustomAuthorizerV2Request`
@@ -1262,8 +1244,7 @@ class ApigClient(Client):
         
         环境上存在已发布的API时，该环境不能被删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteEnvironmentV2
         :type request: :class:`huaweicloudsdkapig.v2.DeleteEnvironmentV2Request`
@@ -1325,8 +1306,7 @@ class ApigClient(Client):
 
         删除指定的环境变量。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteEnvironmentVariableV2
         :type request: :class:`huaweicloudsdkapig.v2.DeleteEnvironmentVariableV2Request`
@@ -1388,8 +1368,7 @@ class ApigClient(Client):
 
         删除分组指定错误类型的自定义响应配置，还原为使用默认值的配置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteGatewayResponseTypeV2
         :type request: :class:`huaweicloudsdkapig.v2.DeleteGatewayResponseTypeV2Request`
@@ -1455,8 +1434,7 @@ class ApigClient(Client):
 
         删除分组自定义响应
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteGatewayResponseV2
         :type request: :class:`huaweicloudsdkapig.v2.DeleteGatewayResponseV2Request`
@@ -1520,8 +1498,7 @@ class ApigClient(Client):
 
         删除专享版实例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteInstancesV2
         :type request: :class:`huaweicloudsdkapig.v2.DeleteInstancesV2Request`
@@ -1582,8 +1559,7 @@ class ApigClient(Client):
         删除插件。
         - 必须先解除API和插件的绑定关系，否则删除报错
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeletePlugin
         :type request: :class:`huaweicloudsdkapig.v2.DeletePluginRequest`
@@ -1645,8 +1621,7 @@ class ApigClient(Client):
 
         删除指定的流控策略，以及该流控策略与API的所有绑定关系。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkapig.v2.DeleteRequestThrottlingPolicyV2Request`
@@ -1708,8 +1683,7 @@ class ApigClient(Client):
 
         删除指定的签名密钥，删除签名密钥时，其配置的绑定关系会一并删除，相应的签名密钥会失效。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteSignatureKeyV2
         :type request: :class:`huaweicloudsdkapig.v2.DeleteSignatureKeyV2Request`
@@ -1771,8 +1745,7 @@ class ApigClient(Client):
 
         删除某个流控策略的某个特殊配置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteSpecialThrottlingConfigurationV2
         :type request: :class:`huaweicloudsdkapig.v2.DeleteSpecialThrottlingConfigurationV2Request`
@@ -1837,8 +1810,7 @@ class ApigClient(Client):
         解除绑定在插件上的API
         - 解绑及时生效
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DetachApiFromPlugin
         :type request: :class:`huaweicloudsdkapig.v2.DetachApiFromPluginRequest`
@@ -1903,8 +1875,7 @@ class ApigClient(Client):
         解除绑定在API上的插件
         - 解绑及时生效
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DetachPluginFromApi
         :type request: :class:`huaweicloudsdkapig.v2.DetachPluginFromApiRequest`
@@ -1968,8 +1939,7 @@ class ApigClient(Client):
 
         如果域名证书不再需要或者已过期，则可以删除证书内容。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DisassociateCertificateV2
         :type request: :class:`huaweicloudsdkapig.v2.DisassociateCertificateV2Request`
@@ -2035,8 +2005,7 @@ class ApigClient(Client):
 
         如果API分组不再需要绑定某个自定义域名，则可以为此API分组解绑此域名。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DisassociateDomainV2
         :type request: :class:`huaweicloudsdkapig.v2.DisassociateDomainV2Request`
@@ -2100,8 +2069,7 @@ class ApigClient(Client):
 
         解除API与签名密钥的绑定关系。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DisassociateSignatureKeyV2
         :type request: :class:`huaweicloudsdkapig.v2.DisassociateSignatureKeyV2Request`
@@ -2163,8 +2131,7 @@ class ApigClient(Client):
 
         导入微服务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ImportMicroservice
         :type request: :class:`huaweicloudsdkapig.v2.ImportMicroserviceRequest`
@@ -2228,8 +2195,7 @@ class ApigClient(Client):
         - 支持分页返回
         - 支持插件名称模糊查询
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApiAttachablePlugins
         :type request: :class:`huaweicloudsdkapig.v2.ListApiAttachablePluginsRequest`
@@ -2306,8 +2272,7 @@ class ApigClient(Client):
         - 支持分页返回
         - 支持插件名称模糊查询
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApiAttachedPlugins
         :type request: :class:`huaweicloudsdkapig.v2.ListApiAttachedPluginsRequest`
@@ -2383,8 +2348,7 @@ class ApigClient(Client):
 
         查询租户名下的API分组概况。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApiGroupsQuantitiesV2
         :type request: :class:`huaweicloudsdkapig.v2.ListApiGroupsQuantitiesV2Request`
@@ -2444,8 +2408,7 @@ class ApigClient(Client):
 
         查询租户名下的API概况：已发布到RELEASE环境的API个数，未发布到RELEASE环境的API个数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApiQuantitiesV2
         :type request: :class:`huaweicloudsdkapig.v2.ListApiQuantitiesV2Request`
@@ -2505,8 +2468,7 @@ class ApigClient(Client):
 
         查询某个签名密钥上已经绑定的API列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApisBindedToSignatureKeyV2
         :type request: :class:`huaweicloudsdkapig.v2.ListApisBindedToSignatureKeyV2Request`
@@ -2580,8 +2542,7 @@ class ApigClient(Client):
 
         查询所有未绑定到该签名密钥上的API列表。需要API已经发布，未发布的API不予展示。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApisNotBoundWithSignatureKeyV2
         :type request: :class:`huaweicloudsdkapig.v2.ListApisNotBoundWithSignatureKeyV2Request`
@@ -2655,8 +2616,7 @@ class ApigClient(Client):
 
         查询租户名下的APP概况：已进行API访问授权的APP个数，未进行API访问授权的APP个数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAppQuantitiesV2
         :type request: :class:`huaweicloudsdkapig.v2.ListAppQuantitiesV2Request`
@@ -2716,8 +2676,7 @@ class ApigClient(Client):
 
         查看可用区信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAvailableZonesV2
         :type request: :class:`huaweicloudsdkapig.v2.ListAvailableZonesV2Request`
@@ -2775,8 +2734,7 @@ class ApigClient(Client):
 
         查询自定义认证列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCustomAuthorizersV2
         :type request: :class:`huaweicloudsdkapig.v2.ListCustomAuthorizersV2Request`
@@ -2846,8 +2804,7 @@ class ApigClient(Client):
 
         查询分组下的所有环境变量的列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEnvironmentVariablesV2
         :type request: :class:`huaweicloudsdkapig.v2.ListEnvironmentVariablesV2Request`
@@ -2919,8 +2876,7 @@ class ApigClient(Client):
 
         查询符合条件的环境列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEnvironmentsV2
         :type request: :class:`huaweicloudsdkapig.v2.ListEnvironmentsV2Request`
@@ -3031,8 +2987,7 @@ class ApigClient(Client):
         sm_cipher_type | 加密本地敏感数据时，是否支持应用商密加密算法。 | 否 |
         rate_limit_algorithm | 是否支持切换流控算法。 | 否 |
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListFeaturesV2
         :type request: :class:`huaweicloudsdkapig.v2.ListFeaturesV2Request`
@@ -3096,8 +3051,7 @@ class ApigClient(Client):
 
         查询分组自定义响应列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListGatewayResponsesV2
         :type request: :class:`huaweicloudsdkapig.v2.ListGatewayResponsesV2Request`
@@ -3163,8 +3117,7 @@ class ApigClient(Client):
 
         查询租户实例配置列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListInstanceConfigsV2
         :type request: :class:`huaweicloudsdkapig.v2.ListInstanceConfigsV2Request`
@@ -3226,8 +3179,7 @@ class ApigClient(Client):
 
         查询专享版实例列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListInstancesV2
         :type request: :class:`huaweicloudsdkapig.v2.ListInstancesV2Request`
@@ -3296,8 +3248,7 @@ class ApigClient(Client):
         根据API的id和最近的一段时间查询API被调用的次数，统计周期为1分钟。查询范围一小时以内，一分钟一个样本，其样本值为一分钟内的累计值。
         &gt; 为了安全起见，在服务器上使用curl命令调用接口查询信息后，需要清理历史操作记录，包括但不限于“~/.bash_history”、“/var/log/messages”（如有）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListLatelyApiStatisticsV2
         :type request: :class:`huaweicloudsdkapig.v2.ListLatelyApiStatisticsV2Request`
@@ -3362,8 +3313,7 @@ class ApigClient(Client):
         根据API分组的编号查询该分组下所有API被调用的总次数，统计周期为1分钟。查询范围一小时以内，一分钟一个样本，其样本值为一分钟内的累计值。
         &gt; 为了安全起见，在服务器上使用curl命令调用接口查询信息后，需要清理历史操作记录，包括但不限于“~/.bash_history”、“/var/log/messages”（如有）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListLatelyGroupStatisticsV2
         :type request: :class:`huaweicloudsdkapig.v2.ListLatelyGroupStatisticsV2Request`
@@ -3425,8 +3375,7 @@ class ApigClient(Client):
 
         查询指定时间范围指定指标的指定粒度的监控数据，可以通过参数指定需要查询的数据维度。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListMetricData
         :type request: :class:`huaweicloudsdkapig.v2.ListMetricDataRequest`
@@ -3501,8 +3450,7 @@ class ApigClient(Client):
         - 支持API名称模糊查询
         - 支持已绑定其他插件的API查询返回
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPluginAttachableApis
         :type request: :class:`huaweicloudsdkapig.v2.ListPluginAttachableApisRequest`
@@ -3584,8 +3532,7 @@ class ApigClient(Client):
         - 支持API名称模糊查询
         - 绑定关系列表中返回的API在对应的环境中可能已经下线
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPluginAttachedApis
         :type request: :class:`huaweicloudsdkapig.v2.ListPluginAttachedApisRequest`
@@ -3668,8 +3615,7 @@ class ApigClient(Client):
         - 支持根据插件编码查询
         - 支持根据名称模糊查询
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPlugins
         :type request: :class:`huaweicloudsdkapig.v2.ListPluginsRequest`
@@ -3743,8 +3689,7 @@ class ApigClient(Client):
 
         查询某个实例的租户配置列表，用户可以通过此接口查看各类型资源配置及使用情况。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProjectCofigsV2
         :type request: :class:`huaweicloudsdkapig.v2.ListProjectCofigsV2Request`
@@ -3808,8 +3753,7 @@ class ApigClient(Client):
 
         查询所有流控策略的信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkapig.v2.ListRequestThrottlingPolicyV2Request`
@@ -3879,8 +3823,7 @@ class ApigClient(Client):
 
         查询某个API绑定的签名密钥列表。每个API在每个环境上应该最多只会绑定一个签名密钥。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSignatureKeysBindedToApiV2
         :type request: :class:`huaweicloudsdkapig.v2.ListSignatureKeysBindedToApiV2Request`
@@ -3952,8 +3895,7 @@ class ApigClient(Client):
 
         查询所有签名密钥的信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSignatureKeysV2
         :type request: :class:`huaweicloudsdkapig.v2.ListSignatureKeysV2Request`
@@ -4023,8 +3965,7 @@ class ApigClient(Client):
 
         查看给流控策略设置的特殊配置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSpecialThrottlingConfigurationsV2
         :type request: :class:`huaweicloudsdkapig.v2.ListSpecialThrottlingConfigurationsV2Request`
@@ -4096,8 +4037,7 @@ class ApigClient(Client):
 
         查询标签列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTagsV2
         :type request: :class:`huaweicloudsdkapig.v2.ListTagsV2Request`
@@ -4161,8 +4101,7 @@ class ApigClient(Client):
 
         实例解绑EIP
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RemoveEipV2
         :type request: :class:`huaweicloudsdkapig.v2.RemoveEipV2Request`
@@ -4222,8 +4161,7 @@ class ApigClient(Client):
 
         关闭实例公网出口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RemoveEngressEipV2
         :type request: :class:`huaweicloudsdkapig.v2.RemoveEngressEipV2Request`
@@ -4283,8 +4221,7 @@ class ApigClient(Client):
 
         查看自定义认证详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfCustomAuthorizersV2
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfCustomAuthorizersV2Request`
@@ -4346,8 +4283,7 @@ class ApigClient(Client):
 
         查看域名下绑定的证书详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfDomainNameCertificateV2
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfDomainNameCertificateV2Request`
@@ -4413,8 +4349,7 @@ class ApigClient(Client):
 
         查看指定的环境变量的详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfEnvironmentVariableV2
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfEnvironmentVariableV2Request`
@@ -4476,8 +4411,7 @@ class ApigClient(Client):
 
         查看分组下指定错误类型的自定义响应
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfGatewayResponseTypeV2
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfGatewayResponseTypeV2Request`
@@ -4543,8 +4477,7 @@ class ApigClient(Client):
 
         查询分组自定义响应详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfGatewayResponseV2
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfGatewayResponseV2Request`
@@ -4608,8 +4541,7 @@ class ApigClient(Client):
 
         查看专享版实例创建进度
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfInstanceProgressV2
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfInstanceProgressV2Request`
@@ -4669,8 +4601,7 @@ class ApigClient(Client):
 
         查看专享版实例详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfInstanceV2
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfInstanceV2Request`
@@ -4730,8 +4661,7 @@ class ApigClient(Client):
 
         查看指定流控策略的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfRequestThrottlingPolicyV2Request`
@@ -4793,8 +4723,7 @@ class ApigClient(Client):
 
         查询插件详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPlugin
         :type request: :class:`huaweicloudsdkapig.v2.ShowPluginRequest`
@@ -4856,8 +4785,7 @@ class ApigClient(Client):
 
         修改自定义认证
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateCustomAuthorizerV2
         :type request: :class:`huaweicloudsdkapig.v2.UpdateCustomAuthorizerV2Request`
@@ -4921,8 +4849,7 @@ class ApigClient(Client):
 
         修改绑定的域名所对应的配置信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDomainV2
         :type request: :class:`huaweicloudsdkapig.v2.UpdateDomainV2Request`
@@ -4988,8 +4915,7 @@ class ApigClient(Client):
 
         更新实例出公网带宽
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateEngressEipV2
         :type request: :class:`huaweicloudsdkapig.v2.UpdateEngressEipV2Request`
@@ -5051,8 +4977,7 @@ class ApigClient(Client):
 
         修改指定环境的信息。其中可修改的属性为：name、remark，其它属性不可修改。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateEnvironmentV2
         :type request: :class:`huaweicloudsdkapig.v2.UpdateEnvironmentV2Request`
@@ -5116,8 +5041,7 @@ class ApigClient(Client):
 
         修改分组下指定错误类型的自定义响应。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateGatewayResponseTypeV2
         :type request: :class:`huaweicloudsdkapig.v2.UpdateGatewayResponseTypeV2Request`
@@ -5185,8 +5109,7 @@ class ApigClient(Client):
 
         修改分组自定义响应
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateGatewayResponseV2
         :type request: :class:`huaweicloudsdkapig.v2.UpdateGatewayResponseV2Request`
@@ -5252,8 +5175,7 @@ class ApigClient(Client):
 
         更新专享版实例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateInstanceV2
         :type request: :class:`huaweicloudsdkapig.v2.UpdateInstanceV2Request`
@@ -5317,8 +5239,7 @@ class ApigClient(Client):
         - 插件不允许重名
         - 插件不支持修改类型和可见范围
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdatePlugin
         :type request: :class:`huaweicloudsdkapig.v2.UpdatePluginRequest`
@@ -5382,8 +5303,7 @@ class ApigClient(Client):
 
         修改指定流控策略的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkapig.v2.UpdateRequestThrottlingPolicyV2Request`
@@ -5447,8 +5367,7 @@ class ApigClient(Client):
 
         修改指定签名密钥的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateSignatureKeyV2
         :type request: :class:`huaweicloudsdkapig.v2.UpdateSignatureKeyV2Request`
@@ -5512,8 +5431,7 @@ class ApigClient(Client):
 
         修改某个流控策略下的某个特殊设置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateSpecialThrottlingConfigurationV2
         :type request: :class:`huaweicloudsdkapig.v2.UpdateSpecialThrottlingConfigurationV2Request`
@@ -5581,8 +5499,7 @@ class ApigClient(Client):
         
         删除ACL策略时，如果存在ACL策略与API绑定关系，则无法删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteAclV2
         :type request: :class:`huaweicloudsdkapig.v2.BatchDeleteAclV2Request`
@@ -5646,8 +5563,7 @@ class ApigClient(Client):
 
         增加一个ACL策略，策略类型通过字段acl_type来确定（permit或者deny），限制的对象的类型可以为IP或者DOMAIN，这里的DOMAIN对应的acl_value的值为租户名称，而非“www.exampleDomain.com\&quot;之类的网络域名。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAclStrategyV2
         :type request: :class:`huaweicloudsdkapig.v2.CreateAclStrategyV2Request`
@@ -5709,8 +5625,7 @@ class ApigClient(Client):
 
         删除指定的ACL策略， 如果存在api与该ACL策略的绑定关系，则无法删除
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAclV2
         :type request: :class:`huaweicloudsdkapig.v2.DeleteAclV2Request`
@@ -5772,8 +5687,7 @@ class ApigClient(Client):
 
         查询所有的ACL策略列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAclStrategiesV2
         :type request: :class:`huaweicloudsdkapig.v2.ListAclStrategiesV2Request`
@@ -5847,8 +5761,7 @@ class ApigClient(Client):
 
         查询指定ACL策略的详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfAclPolicyV2
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfAclPolicyV2Request`
@@ -5910,8 +5823,7 @@ class ApigClient(Client):
 
         修改指定的ACL策略，其中可修改的属性为：acl_name、acl_type、acl_value，其它属性不可修改。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateAclStrategyV2
         :type request: :class:`huaweicloudsdkapig.v2.UpdateAclStrategyV2Request`
@@ -5979,8 +5891,7 @@ class ApigClient(Client):
         
         为指定的API绑定流控策略，绑定时，需要指定在哪个环境上生效。同一个API发布到不同的环境可以绑定不同的流控策略；一个API在发布到特定环境后只能绑定一个默认的流控策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AssociateRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkapig.v2.AssociateRequestThrottlingPolicyV2Request`
@@ -6042,8 +5953,7 @@ class ApigClient(Client):
 
         批量解除API与流控策略的绑定关系
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDisassociateThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkapig.v2.BatchDisassociateThrottlingPolicyV2Request`
@@ -6107,8 +6017,7 @@ class ApigClient(Client):
 
         将多个API发布到一个指定的环境，或将多个API从指定的环境下线。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchPublishOrOfflineApiV2
         :type request: :class:`huaweicloudsdkapig.v2.BatchPublishOrOfflineApiV2Request`
@@ -6174,8 +6083,7 @@ class ApigClient(Client):
         
         多个版本之间可以进行随意切换。但一个API在一个环境上，只能有一个版本生效。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ChangeApiVersionV2
         :type request: :class:`huaweicloudsdkapig.v2.ChangeApiVersionV2Request`
@@ -6239,8 +6147,7 @@ class ApigClient(Client):
 
         API分组是API的管理单元，一个API分组等同于一个服务入口，创建API分组时，返回一个子域名作为访问入口。建议一个API分组下的API具有一定的相关性。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateApiGroupV2
         :type request: :class:`huaweicloudsdkapig.v2.CreateApiGroupV2Request`
@@ -6304,8 +6211,7 @@ class ApigClient(Client):
         
         API分为两部分，第一部分为面向API使用者的API接口，定义了使用者如何调用这个API。第二部分面向API提供者，由API提供者定义这个API的真实的后端情况，定义了API网关如何去访问真实的后端服务。API的真实后端服务目前支持三种类型：传统的HTTP/HTTPS形式的web后端、函数工作流、MOCK。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateApiV2
         :type request: :class:`huaweicloudsdkapig.v2.CreateApiV2Request`
@@ -6371,8 +6277,7 @@ class ApigClient(Client):
         
         下线操作是将API从某个已发布的环境上下线，下线后，API将无法再被调用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateOrDeletePublishRecordForApiV2
         :type request: :class:`huaweicloudsdkapig.v2.CreateOrDeletePublishRecordForApiV2Request`
@@ -6434,8 +6339,7 @@ class ApigClient(Client):
 
         调试一个API在指定运行环境下的定义，接口调用者需要具有操作该API的权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DebugApiV2
         :type request: :class:`huaweicloudsdkapig.v2.DebugApiV2Request`
@@ -6499,8 +6403,7 @@ class ApigClient(Client):
 
         对某个生效中的API版本进行下线操作，下线后，API在该版本生效的环境中将不再能够被调用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteApiByVersionIdV2
         :type request: :class:`huaweicloudsdkapig.v2.DeleteApiByVersionIdV2Request`
@@ -6564,8 +6467,7 @@ class ApigClient(Client):
         删除API分组前，要先下线并删除分组下的所有API。
         删除时，会一并删除直接或间接关联到该分组下的所有资源，包括独立域名、SSL证书信息等等。并会将外部域名与子域名的绑定关系进行解除（取决于域名cname方式）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteApiGroupV2
         :type request: :class:`huaweicloudsdkapig.v2.DeleteApiGroupV2Request`
@@ -6629,8 +6531,7 @@ class ApigClient(Client):
         
         删除API时，会删除该API所有相关的资源信息或绑定关系，如API的发布记录，绑定的后端服务，对APP的授权信息等。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteApiV2
         :type request: :class:`huaweicloudsdkapig.v2.DeleteApiV2Request`
@@ -6692,8 +6593,7 @@ class ApigClient(Client):
 
         解除API与流控策略的绑定关系。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DisassociateRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkapig.v2.DisassociateRequestThrottlingPolicyV2Request`
@@ -6757,8 +6657,7 @@ class ApigClient(Client):
         
         如果是租户操作，则查询该租户下所有的分组；如果是管理员权限帐号操作，则查询的是所有租户的分组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApiGroupsV2
         :type request: :class:`huaweicloudsdkapig.v2.ListApiGroupsV2Request`
@@ -6834,8 +6733,7 @@ class ApigClient(Client):
         
         访问某个环境上的API，其实访问的就是其运行时的定义
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApiRuntimeDefinitionV2
         :type request: :class:`huaweicloudsdkapig.v2.ListApiRuntimeDefinitionV2Request`
@@ -6899,8 +6797,7 @@ class ApigClient(Client):
 
         查询某个指定的版本详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApiVersionDetailV2
         :type request: :class:`huaweicloudsdkapig.v2.ListApiVersionDetailV2Request`
@@ -6962,8 +6859,7 @@ class ApigClient(Client):
 
         查询某个API的历史版本。每个API在一个环境上最多存在10个历史版本。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApiVersionsV2
         :type request: :class:`huaweicloudsdkapig.v2.ListApiVersionsV2Request`
@@ -7033,8 +6929,7 @@ class ApigClient(Client):
 
         查询某个流控策略上已经绑定的API列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApisBindedToRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkapig.v2.ListApisBindedToRequestThrottlingPolicyV2Request`
@@ -7108,8 +7003,7 @@ class ApigClient(Client):
 
         查询所有未绑定到该流控策略上的自有API列表。需要API已经发布，未发布的API不予展示。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApisUnbindedToRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkapig.v2.ListApisUnbindedToRequestThrottlingPolicyV2Request`
@@ -7183,8 +7077,7 @@ class ApigClient(Client):
 
         查看API列表，返回API详细信息、发布信息等，但不能查看到后端服务信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApisV2
         :type request: :class:`huaweicloudsdkapig.v2.ListApisV2Request`
@@ -7268,8 +7161,7 @@ class ApigClient(Client):
 
         查询某个API绑定的流控策略列表。每个环境上应该最多只有一个流控策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRequestThrottlingPoliciesBindedToApiV2
         :type request: :class:`huaweicloudsdkapig.v2.ListRequestThrottlingPoliciesBindedToApiV2Request`
@@ -7341,8 +7233,7 @@ class ApigClient(Client):
 
         查询指定分组的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfApiGroupV2
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfApiGroupV2Request`
@@ -7404,8 +7295,7 @@ class ApigClient(Client):
 
         查看指定的API的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfApiV2
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfApiV2Request`
@@ -7467,8 +7357,7 @@ class ApigClient(Client):
 
         修改API分组属性。其中name和remark可修改，其他属性不可修改。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateApiGroupV2
         :type request: :class:`huaweicloudsdkapig.v2.UpdateApiGroupV2Request`
@@ -7532,8 +7421,7 @@ class ApigClient(Client):
 
         修改指定API的信息，包括后端服务信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateApiV2
         :type request: :class:`huaweicloudsdkapig.v2.UpdateApiV2Request`
@@ -7597,8 +7485,7 @@ class ApigClient(Client):
 
         批量解除API与ACL策略的绑定
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteApiAclBindingV2
         :type request: :class:`huaweicloudsdkapig.v2.BatchDeleteApiAclBindingV2Request`
@@ -7664,8 +7551,7 @@ class ApigClient(Client):
         
         同一个API发布到不同的环境可以绑定不同的ACL策略；一个API在发布到特定环境后只能绑定一个同一种类型的ACL策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateApiAclBindingV2
         :type request: :class:`huaweicloudsdkapig.v2.CreateApiAclBindingV2Request`
@@ -7727,8 +7613,7 @@ class ApigClient(Client):
 
         解除某条API与ACL策略的绑定关系
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteApiAclBindingV2
         :type request: :class:`huaweicloudsdkapig.v2.DeleteApiAclBindingV2Request`
@@ -7790,8 +7675,7 @@ class ApigClient(Client):
 
         查看API绑定的ACL策略列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAclPolicyBindedToApiV2
         :type request: :class:`huaweicloudsdkapig.v2.ListAclPolicyBindedToApiV2Request`
@@ -7865,8 +7749,7 @@ class ApigClient(Client):
 
         查看ACL策略绑定的API列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApisBindedToAclPolicyV2
         :type request: :class:`huaweicloudsdkapig.v2.ListApisBindedToAclPolicyV2Request`
@@ -7940,8 +7823,7 @@ class ApigClient(Client):
 
         查看ACL策略未绑定的API列表，需要API已发布
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApisUnbindedToAclPolicyV2
         :type request: :class:`huaweicloudsdkapig.v2.ListApisUnbindedToAclPolicyV2Request`
@@ -8015,8 +7897,7 @@ class ApigClient(Client):
 
         解除API对APP的授权关系。解除授权后，APP将不再能够调用该API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CancelingAuthorizationV2
         :type request: :class:`huaweicloudsdkapig.v2.CancelingAuthorizationV2Request`
@@ -8078,8 +7959,7 @@ class ApigClient(Client):
 
         校验app是否存在，非APP所有者可以调用该接口校验APP是否真实存在。这个接口只展示app的基本信息id 、name、 remark，其他信息不显示。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckAppV2
         :type request: :class:`huaweicloudsdkapig.v2.CheckAppV2Request`
@@ -8142,8 +8022,7 @@ class ApigClient(Client):
         APP即应用，是一个可以访问API的身份标识。将API授权给APP后，APP即可调用API。
         创建一个APP。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAnAppV2
         :type request: :class:`huaweicloudsdkapig.v2.CreateAnAppV2Request`
@@ -8205,8 +8084,7 @@ class ApigClient(Client):
 
         创建App Code时，可以不指定具体值，由后台自动生成随机字符串填充。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAppCodeAutoV2
         :type request: :class:`huaweicloudsdkapig.v2.CreateAppCodeAutoV2Request`
@@ -8268,8 +8146,7 @@ class ApigClient(Client):
 
         App Code为APP应用下的子模块，创建App Code之后，可以实现简易的APP认证。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAppCodeV2
         :type request: :class:`huaweicloudsdkapig.v2.CreateAppCodeV2Request`
@@ -8333,8 +8210,7 @@ class ApigClient(Client):
 
         APP创建成功后，还不能访问API，如果想要访问某个环境上的API，需要将该API在该环境上授权给APP。授权成功后，APP即可访问该环境上的这个API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAuthorizingAppsV2
         :type request: :class:`huaweicloudsdkapig.v2.CreateAuthorizingAppsV2Request`
@@ -8396,8 +8272,7 @@ class ApigClient(Client):
 
         删除App Code，App Code删除后，将无法再通过简易认证访问对应的API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAppCodeV2
         :type request: :class:`huaweicloudsdkapig.v2.DeleteAppCodeV2Request`
@@ -8462,8 +8337,7 @@ class ApigClient(Client):
         删除指定的APP。
         APP删除后，将无法再调用任何API[；其中，云商店自动创建的APP无法被删除](tag:hws)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAppV2
         :type request: :class:`huaweicloudsdkapig.v2.DeleteAppV2Request`
@@ -8525,8 +8399,7 @@ class ApigClient(Client):
 
         查询APP已经绑定的API列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApisBindedToAppV2
         :type request: :class:`huaweicloudsdkapig.v2.ListApisBindedToAppV2Request`
@@ -8602,8 +8475,7 @@ class ApigClient(Client):
 
         查询指定环境上某个APP未绑定的API列表[，包括自有API和从云商店购买的API](tag:hws)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApisUnbindedToAppV2
         :type request: :class:`huaweicloudsdkapig.v2.ListApisUnbindedToAppV2Request`
@@ -8677,8 +8549,7 @@ class ApigClient(Client):
 
         查询App Code列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAppCodesV2
         :type request: :class:`huaweicloudsdkapig.v2.ListAppCodesV2Request`
@@ -8744,8 +8615,7 @@ class ApigClient(Client):
 
         查询API绑定的APP列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAppsBindedToApiV2
         :type request: :class:`huaweicloudsdkapig.v2.ListAppsBindedToApiV2Request`
@@ -8817,8 +8687,7 @@ class ApigClient(Client):
 
         查询APP列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAppsV2
         :type request: :class:`huaweicloudsdkapig.v2.ListAppsV2Request`
@@ -8894,8 +8763,7 @@ class ApigClient(Client):
 
         重置指定APP的密钥。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ResettingAppSecretV2
         :type request: :class:`huaweicloudsdkapig.v2.ResettingAppSecretV2Request`
@@ -8959,8 +8827,7 @@ class ApigClient(Client):
 
         App Code为APP应用下的子模块，创建App Code之后，可以实现简易的APP认证。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfAppCodeV2
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfAppCodeV2Request`
@@ -9024,8 +8891,7 @@ class ApigClient(Client):
 
         查看指定APP的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfAppV2
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfAppV2Request`
@@ -9087,8 +8953,7 @@ class ApigClient(Client):
 
         修改指定APP的信息。其中可修改的属性为：name、remark，当支持用户自定义key和secret的开关开启时，app_key和app_secret也支持修改，其它属性不可修改。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateAppV2
         :type request: :class:`huaweicloudsdkapig.v2.UpdateAppV2Request`
@@ -9152,8 +9017,7 @@ class ApigClient(Client):
 
         导出分组下API的定义信息。导出文件内容符合swagger标准规范，API网关自定义扩展字段请参考《API网关开发指南》的“导入导出API：扩展定义”章节。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExportApiDefinitionsV2
         :type request: :class:`huaweicloudsdkapig.v2.ExportApiDefinitionsV2Request`
@@ -9215,8 +9079,7 @@ class ApigClient(Client):
 
         导入API。导入文件内容需要符合swagger标准规范，API网关自定义扩展字段请参考《API网关开发指南》的“导入导出API：扩展定义”章节。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ImportApiDefinitionsV2
         :type request: :class:`huaweicloudsdkapig.v2.ImportApiDefinitionsV2Request`
@@ -9292,8 +9155,7 @@ class ApigClient(Client):
 
         域名绑定SSL证书。目前暂时仅支持单个绑定,请求体当中的certificate_ids里面有且只能有一个证书ID
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchAssociateCertsV2
         :type request: :class:`huaweicloudsdkapig.v2.BatchAssociateCertsV2Request`
@@ -9359,8 +9221,7 @@ class ApigClient(Client):
 
         域名绑定SSL证书
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchAssociateDomainsV2
         :type request: :class:`huaweicloudsdkapig.v2.BatchAssociateDomainsV2Request`
@@ -9422,8 +9283,7 @@ class ApigClient(Client):
 
         域名解绑SSL证书。目前暂时仅支持单个解绑,请求体当中的certificate_ids里面有且只能有一个证书ID
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDisassociateCertsV2
         :type request: :class:`huaweicloudsdkapig.v2.BatchDisassociateCertsV2Request`
@@ -9489,8 +9349,7 @@ class ApigClient(Client):
 
         SSL证书解绑域名
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDisassociateDomainsV2
         :type request: :class:`huaweicloudsdkapig.v2.BatchDisassociateDomainsV2Request`
@@ -9552,8 +9411,7 @@ class ApigClient(Client):
 
         创建SSL证书
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateCertificateV2
         :type request: :class:`huaweicloudsdkapig.v2.CreateCertificateV2Request`
@@ -9613,8 +9471,7 @@ class ApigClient(Client):
 
         删除ssl证书接口,删除时只有没有关联域名的证书才能被删除
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteCertificateV2
         :type request: :class:`huaweicloudsdkapig.v2.DeleteCertificateV2Request`
@@ -9674,8 +9531,7 @@ class ApigClient(Client):
 
         获取SSL证书已绑定域名列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAttachedDomainsV2
         :type request: :class:`huaweicloudsdkapig.v2.ListAttachedDomainsV2Request`
@@ -9741,8 +9597,7 @@ class ApigClient(Client):
 
         获取SSL证书列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCertificatesV2
         :type request: :class:`huaweicloudsdkapig.v2.ListCertificatesV2Request`
@@ -9814,8 +9669,7 @@ class ApigClient(Client):
 
         查看证书详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfCertificateV2
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfCertificateV2Request`
@@ -9875,8 +9729,7 @@ class ApigClient(Client):
 
         修改SSL证书
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateCertificateV2
         :type request: :class:`huaweicloudsdkapig.v2.UpdateCertificateV2Request`
@@ -9940,8 +9793,7 @@ class ApigClient(Client):
         
         若指定地址的后端实例已存在，则更新对应后端实例信息。若请求体中包含多个重复地址的后端实例定义，则使用第一个定义。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddingBackendInstancesV2
         :type request: :class:`huaweicloudsdkapig.v2.AddingBackendInstancesV2Request`
@@ -10005,8 +9857,7 @@ class ApigClient(Client):
 
         批量修改后端服务器状态不可用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDisableMembers
         :type request: :class:`huaweicloudsdkapig.v2.BatchDisableMembersRequest`
@@ -10070,8 +9921,7 @@ class ApigClient(Client):
 
         批量修改后端服务器状态可用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchEnableMembers
         :type request: :class:`huaweicloudsdkapig.v2.BatchEnableMembersRequest`
@@ -10137,8 +9987,7 @@ class ApigClient(Client):
         
         若指定名称的后端服务器组已存在，则更新对应后端服务器组信息。若请求体中包含多个重复名称的后端服务器定义，则使用第一个定义。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateMemberGroup
         :type request: :class:`huaweicloudsdkapig.v2.CreateMemberGroupRequest`
@@ -10203,8 +10052,7 @@ class ApigClient(Client):
         在API网关中创建连接私有VPC资源的通道，并在创建API时将后端节点配置为使用这些VPC通道，以便API网关直接访问私有VPC资源。
         &gt; 每个用户最多创建30个VPC通道。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateVpcChannelV2
         :type request: :class:`huaweicloudsdkapig.v2.CreateVpcChannelV2Request`
@@ -10266,8 +10114,7 @@ class ApigClient(Client):
 
         删除指定VPC通道中的后端实例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteBackendInstanceV2
         :type request: :class:`huaweicloudsdkapig.v2.DeleteBackendInstanceV2Request`
@@ -10331,8 +10178,7 @@ class ApigClient(Client):
 
         删除指定的VPC通道后端服务器组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteMemberGroup
         :type request: :class:`huaweicloudsdkapig.v2.DeleteMemberGroupRequest`
@@ -10396,8 +10242,7 @@ class ApigClient(Client):
 
         删除指定的VPC通道
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteVpcChannelV2
         :type request: :class:`huaweicloudsdkapig.v2.DeleteVpcChannelV2Request`
@@ -10459,8 +10304,7 @@ class ApigClient(Client):
 
         查看指定VPC通道的后端实例列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListBackendInstancesV2
         :type request: :class:`huaweicloudsdkapig.v2.ListBackendInstancesV2Request`
@@ -10534,8 +10378,7 @@ class ApigClient(Client):
 
         查询VPC通道后端云服务组列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListMemberGroups
         :type request: :class:`huaweicloudsdkapig.v2.ListMemberGroupsRequest`
@@ -10607,8 +10450,7 @@ class ApigClient(Client):
 
         查看VPC通道列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListVpcChannelsV2
         :type request: :class:`huaweicloudsdkapig.v2.ListVpcChannelsV2Request`
@@ -10688,8 +10530,7 @@ class ApigClient(Client):
 
         查看指定的VPC通道后端服务器组详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfMemberGroup
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfMemberGroupRequest`
@@ -10753,8 +10594,7 @@ class ApigClient(Client):
 
         查看指定的VPC通道详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfVpcChannelV2
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfVpcChannelV2Request`
@@ -10816,8 +10656,7 @@ class ApigClient(Client):
 
         更新指定的VPC通道的后端实例。更新时，使用传入的请求参数对对应云服务组的后端实例进行全量覆盖修改。若未指定修改的云服务器组，则进行全量覆盖。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateBackendInstancesV2
         :type request: :class:`huaweicloudsdkapig.v2.UpdateBackendInstancesV2Request`
@@ -10881,8 +10720,7 @@ class ApigClient(Client):
 
         修改VPC通道健康检查。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateHealthCheck
         :type request: :class:`huaweicloudsdkapig.v2.UpdateHealthCheckRequest`
@@ -10946,8 +10784,7 @@ class ApigClient(Client):
 
         更新指定VPC通道后端服务器组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateMemberGroup
         :type request: :class:`huaweicloudsdkapig.v2.UpdateMemberGroupRequest`
@@ -11017,8 +10854,7 @@ class ApigClient(Client):
         
         使用传入的后端服务器组列表对VPC通道进行全量覆盖，若后端服务器组列表为空，则会全量删除已有的服务器组；
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateVpcChannelV2
         :type request: :class:`huaweicloudsdkapig.v2.UpdateVpcChannelV2Request`

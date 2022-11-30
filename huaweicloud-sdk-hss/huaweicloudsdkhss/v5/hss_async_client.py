@@ -47,8 +47,7 @@ class HssAsyncClient(Client):
 
         批量创建标签
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchCreateTags
@@ -113,8 +112,7 @@ class HssAsyncClient(Client):
 
         删除单个资源下的标签
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteResourceInstanceTag
@@ -179,8 +177,7 @@ class HssAsyncClient(Client):
 
         查询云服务器列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListHostStatus
@@ -291,8 +288,7 @@ class HssAsyncClient(Client):
 
         查询口令复杂度策略检测报告
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListPasswordComplexity
@@ -363,8 +359,7 @@ class HssAsyncClient(Client):
 
         查询配额详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListQuotasDetail
@@ -445,8 +440,7 @@ class HssAsyncClient(Client):
 
         查询指定安全配置项的检查项列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRiskConfigCheckRules
@@ -523,8 +517,7 @@ class HssAsyncClient(Client):
 
         查询指定安全配置项的受影响服务器列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRiskConfigHosts
@@ -597,8 +590,7 @@ class HssAsyncClient(Client):
 
         查询租户的服务器安全配置检测结果列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRiskConfigs
@@ -671,8 +663,7 @@ class HssAsyncClient(Client):
 
         查入侵事件列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSecurityEvents
@@ -762,8 +753,7 @@ class HssAsyncClient(Client):
 
         获取账户变动历史记录信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListUserChangeHistories
@@ -844,8 +834,7 @@ class HssAsyncClient(Client):
 
         获取资产的账号列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListUsers
@@ -924,8 +913,7 @@ class HssAsyncClient(Client):
 
         查询漏洞列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListVulnerabilities
@@ -996,8 +984,7 @@ class HssAsyncClient(Client):
 
         查询弱口令检测结果列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListWeakPasswordUsers
@@ -1070,8 +1057,7 @@ class HssAsyncClient(Client):
 
         查询配置检查项检测报告
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowCheckRuleDetail
@@ -1140,8 +1126,7 @@ class HssAsyncClient(Client):
 
         查询配额信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowResourceQuotas
@@ -1208,8 +1193,7 @@ class HssAsyncClient(Client):
 
         查询指定安全配置项的检查结果
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowRiskConfigDetail
@@ -1280,8 +1264,7 @@ class HssAsyncClient(Client):
 
         切换防护状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SwitchHostsProtectStatus

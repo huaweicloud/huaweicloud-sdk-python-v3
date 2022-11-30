@@ -32,7 +32,9 @@ class ProjectVpcChannelInfo:
         'instance_id': 'str',
         'instance_name': 'str',
         'members': 'list[VpcMemberInfo]',
-        'vpc_health_config': 'VpcHealthConfigInfo'
+        'vpc_health_config': 'VpcHealthConfigInfo',
+        'microservice_info': 'MicroServiceInfo',
+        'type': 'str'
     }
 
     attribute_map = {
@@ -48,10 +50,12 @@ class ProjectVpcChannelInfo:
         'instance_id': 'instance_id',
         'instance_name': 'instance_name',
         'members': 'members',
-        'vpc_health_config': 'vpc_health_config'
+        'vpc_health_config': 'vpc_health_config',
+        'microservice_info': 'microservice_info',
+        'type': 'type'
     }
 
-    def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, dict_code=None, create_time=None, id=None, status=None, member_groups=None, instance_id=None, instance_name=None, members=None, vpc_health_config=None):
+    def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, dict_code=None, create_time=None, id=None, status=None, member_groups=None, instance_id=None, instance_name=None, members=None, vpc_health_config=None, microservice_info=None, type=None):
         """ProjectVpcChannelInfo
 
         The model defined in huaweicloud sdk
@@ -82,6 +86,10 @@ class ProjectVpcChannelInfo:
         :type members: list[:class:`huaweicloudsdkroma.v2.VpcMemberInfo`]
         :param vpc_health_config: 
         :type vpc_health_config: :class:`huaweicloudsdkroma.v2.VpcHealthConfigInfo`
+        :param microservice_info: 
+        :type microservice_info: :class:`huaweicloudsdkroma.v2.MicroServiceInfo`
+        :param type: vpc通道类型。 - BUILTIN：BUILTIN通道类型 - MICROSERVICE：微服务类型
+        :type type: str
         """
         
         
@@ -99,6 +107,8 @@ class ProjectVpcChannelInfo:
         self._instance_name = None
         self._members = None
         self._vpc_health_config = None
+        self._microservice_info = None
+        self._type = None
         self.discriminator = None
 
         self.name = name
@@ -123,6 +133,10 @@ class ProjectVpcChannelInfo:
             self.members = members
         if vpc_health_config is not None:
             self.vpc_health_config = vpc_health_config
+        if microservice_info is not None:
+            self.microservice_info = microservice_info
+        if type is not None:
+            self.type = type
 
     @property
     def name(self):
@@ -405,6 +419,46 @@ class ProjectVpcChannelInfo:
         :type vpc_health_config: :class:`huaweicloudsdkroma.v2.VpcHealthConfigInfo`
         """
         self._vpc_health_config = vpc_health_config
+
+    @property
+    def microservice_info(self):
+        """Gets the microservice_info of this ProjectVpcChannelInfo.
+
+        :return: The microservice_info of this ProjectVpcChannelInfo.
+        :rtype: :class:`huaweicloudsdkroma.v2.MicroServiceInfo`
+        """
+        return self._microservice_info
+
+    @microservice_info.setter
+    def microservice_info(self, microservice_info):
+        """Sets the microservice_info of this ProjectVpcChannelInfo.
+
+        :param microservice_info: The microservice_info of this ProjectVpcChannelInfo.
+        :type microservice_info: :class:`huaweicloudsdkroma.v2.MicroServiceInfo`
+        """
+        self._microservice_info = microservice_info
+
+    @property
+    def type(self):
+        """Gets the type of this ProjectVpcChannelInfo.
+
+        vpc通道类型。 - BUILTIN：BUILTIN通道类型 - MICROSERVICE：微服务类型
+
+        :return: The type of this ProjectVpcChannelInfo.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ProjectVpcChannelInfo.
+
+        vpc通道类型。 - BUILTIN：BUILTIN通道类型 - MICROSERVICE：微服务类型
+
+        :param type: The type of this ProjectVpcChannelInfo.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

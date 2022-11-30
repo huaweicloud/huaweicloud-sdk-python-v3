@@ -28,7 +28,9 @@ class UpdateVpcChannelV2Response(SdkResponse):
         'create_time': 'datetime',
         'id': 'str',
         'status': 'int',
-        'member_groups': 'list[MemberGroupInfo]'
+        'member_groups': 'list[MemberGroupInfo]',
+        'microservice_info': 'MicroServiceInfo',
+        'type': 'str'
     }
 
     attribute_map = {
@@ -40,10 +42,12 @@ class UpdateVpcChannelV2Response(SdkResponse):
         'create_time': 'create_time',
         'id': 'id',
         'status': 'status',
-        'member_groups': 'member_groups'
+        'member_groups': 'member_groups',
+        'microservice_info': 'microservice_info',
+        'type': 'type'
     }
 
-    def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, dict_code=None, create_time=None, id=None, status=None, member_groups=None):
+    def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, dict_code=None, create_time=None, id=None, status=None, member_groups=None, microservice_info=None, type=None):
         """UpdateVpcChannelV2Response
 
         The model defined in huaweicloud sdk
@@ -66,6 +70,10 @@ class UpdateVpcChannelV2Response(SdkResponse):
         :type status: int
         :param member_groups: 后端云服务器组列表。  [暂不支持](tag:Site)
         :type member_groups: list[:class:`huaweicloudsdkroma.v2.MemberGroupInfo`]
+        :param microservice_info: 
+        :type microservice_info: :class:`huaweicloudsdkroma.v2.MicroServiceInfo`
+        :param type: vpc通道类型。 - BUILTIN：BUILTIN通道类型 - MICROSERVICE：微服务类型
+        :type type: str
         """
         
         super(UpdateVpcChannelV2Response, self).__init__()
@@ -79,6 +87,8 @@ class UpdateVpcChannelV2Response(SdkResponse):
         self._id = None
         self._status = None
         self._member_groups = None
+        self._microservice_info = None
+        self._type = None
         self.discriminator = None
 
         self.name = name
@@ -95,6 +105,10 @@ class UpdateVpcChannelV2Response(SdkResponse):
             self.status = status
         if member_groups is not None:
             self.member_groups = member_groups
+        if microservice_info is not None:
+            self.microservice_info = microservice_info
+        if type is not None:
+            self.type = type
 
     @property
     def name(self):
@@ -293,6 +307,46 @@ class UpdateVpcChannelV2Response(SdkResponse):
         :type member_groups: list[:class:`huaweicloudsdkroma.v2.MemberGroupInfo`]
         """
         self._member_groups = member_groups
+
+    @property
+    def microservice_info(self):
+        """Gets the microservice_info of this UpdateVpcChannelV2Response.
+
+        :return: The microservice_info of this UpdateVpcChannelV2Response.
+        :rtype: :class:`huaweicloudsdkroma.v2.MicroServiceInfo`
+        """
+        return self._microservice_info
+
+    @microservice_info.setter
+    def microservice_info(self, microservice_info):
+        """Sets the microservice_info of this UpdateVpcChannelV2Response.
+
+        :param microservice_info: The microservice_info of this UpdateVpcChannelV2Response.
+        :type microservice_info: :class:`huaweicloudsdkroma.v2.MicroServiceInfo`
+        """
+        self._microservice_info = microservice_info
+
+    @property
+    def type(self):
+        """Gets the type of this UpdateVpcChannelV2Response.
+
+        vpc通道类型。 - BUILTIN：BUILTIN通道类型 - MICROSERVICE：微服务类型
+
+        :return: The type of this UpdateVpcChannelV2Response.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this UpdateVpcChannelV2Response.
+
+        vpc通道类型。 - BUILTIN：BUILTIN通道类型 - MICROSERVICE：微服务类型
+
+        :param type: The type of this UpdateVpcChannelV2Response.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

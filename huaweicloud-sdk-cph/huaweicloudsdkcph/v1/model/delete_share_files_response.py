@@ -21,7 +21,7 @@ class DeleteShareFilesResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'jobs': 'list[object]'
+        'jobs': 'list[ServerJob]'
     }
 
     attribute_map = {
@@ -34,10 +34,10 @@ class DeleteShareFilesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 请求的唯一标识ID
+        :param request_id: 请求的唯一标识ID。
         :type request_id: str
-        :param jobs: 任务信息
-        :type jobs: list[object]
+        :param jobs: 任务列表。
+        :type jobs: list[:class:`huaweicloudsdkcph.v1.ServerJob`]
         """
         
         super(DeleteShareFilesResponse, self).__init__()
@@ -46,14 +46,16 @@ class DeleteShareFilesResponse(SdkResponse):
         self._jobs = None
         self.discriminator = None
 
-        self.request_id = request_id
-        self.jobs = jobs
+        if request_id is not None:
+            self.request_id = request_id
+        if jobs is not None:
+            self.jobs = jobs
 
     @property
     def request_id(self):
         """Gets the request_id of this DeleteShareFilesResponse.
 
-        请求的唯一标识ID
+        请求的唯一标识ID。
 
         :return: The request_id of this DeleteShareFilesResponse.
         :rtype: str
@@ -64,7 +66,7 @@ class DeleteShareFilesResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this DeleteShareFilesResponse.
 
-        请求的唯一标识ID
+        请求的唯一标识ID。
 
         :param request_id: The request_id of this DeleteShareFilesResponse.
         :type request_id: str
@@ -75,10 +77,10 @@ class DeleteShareFilesResponse(SdkResponse):
     def jobs(self):
         """Gets the jobs of this DeleteShareFilesResponse.
 
-        任务信息
+        任务列表。
 
         :return: The jobs of this DeleteShareFilesResponse.
-        :rtype: list[object]
+        :rtype: list[:class:`huaweicloudsdkcph.v1.ServerJob`]
         """
         return self._jobs
 
@@ -86,10 +88,10 @@ class DeleteShareFilesResponse(SdkResponse):
     def jobs(self, jobs):
         """Sets the jobs of this DeleteShareFilesResponse.
 
-        任务信息
+        任务列表。
 
         :param jobs: The jobs of this DeleteShareFilesResponse.
-        :type jobs: list[object]
+        :type jobs: list[:class:`huaweicloudsdkcph.v1.ServerJob`]
         """
         self._jobs = jobs
 

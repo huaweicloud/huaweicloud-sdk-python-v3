@@ -47,8 +47,7 @@ class DdsAsyncClient(Client):
 
         DDS副本集实例新增只读节点。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddReadonlyNode
@@ -111,8 +110,7 @@ class DdsAsyncClient(Client):
 
         扩容指定集群实例的节点数量。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddShardingNode
@@ -175,8 +173,7 @@ class DdsAsyncClient(Client):
 
         为实例下的节点绑定弹性公网IP。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AttachEip
@@ -239,8 +236,7 @@ class DdsAsyncClient(Client):
 
         修改实例的内网地址
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AttachInternalIp
@@ -303,8 +299,7 @@ class DdsAsyncClient(Client):
 
         批量添加或删除指定实例的标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchTagAction
@@ -367,8 +362,7 @@ class DdsAsyncClient(Client):
 
         解绑实例下节点已经绑定的弹性公网IP。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CancelEip
@@ -429,8 +423,7 @@ class DdsAsyncClient(Client):
 
         修改用户允许启动某项对数据库实例运行有影响的任务的时间范围，例如操作系统升级和数据库软件版本升级的时间窗。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ChangeOpsWindow
@@ -493,8 +486,7 @@ class DdsAsyncClient(Client):
 
         检查数据库密码。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckPassword
@@ -557,8 +549,7 @@ class DdsAsyncClient(Client):
 
         检查弱密码
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckWeakPassword
@@ -621,8 +612,7 @@ class DdsAsyncClient(Client):
 
         比较两个参数模板之间的差异。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CompareConfiguration
@@ -683,8 +673,7 @@ class DdsAsyncClient(Client):
 
         复制参数模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CopyConfiguration
@@ -747,8 +736,7 @@ class DdsAsyncClient(Client):
 
         创建参数模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateConfiguration
@@ -809,8 +797,7 @@ class DdsAsyncClient(Client):
 
         创建数据库角色。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateDatabaseRole
@@ -873,8 +860,7 @@ class DdsAsyncClient(Client):
 
         创建数据库用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateDatabaseUser
@@ -937,8 +923,7 @@ class DdsAsyncClient(Client):
 
         创建文档数据库实例，包括集群实例、副本集实例、以及单节点实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateInstance
@@ -999,8 +984,7 @@ class DdsAsyncClient(Client):
 
         创建集群的Shard/Config IP
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateIp
@@ -1063,8 +1047,7 @@ class DdsAsyncClient(Client):
 
         创建数据库实例的手动备份。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateManualBackup
@@ -1125,8 +1108,7 @@ class DdsAsyncClient(Client):
 
         删除审计日志
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteAuditLog
@@ -1191,8 +1173,7 @@ class DdsAsyncClient(Client):
 
         删除参数模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteConfiguration
@@ -1253,8 +1234,7 @@ class DdsAsyncClient(Client):
 
         删除数据库角色。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDatabaseRole
@@ -1317,8 +1297,7 @@ class DdsAsyncClient(Client):
 
         删除数据库用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDatabaseUser
@@ -1381,8 +1360,7 @@ class DdsAsyncClient(Client):
 
         删除数据库实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteInstance
@@ -1443,8 +1421,7 @@ class DdsAsyncClient(Client):
 
         删除数据库实例的手动备份。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteManualBackup
@@ -1505,8 +1482,7 @@ class DdsAsyncClient(Client):
 
         终结实例节点会话。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteSession
@@ -1569,8 +1545,7 @@ class DdsAsyncClient(Client):
 
         获取错误日志下载链接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DownloadErrorlog
@@ -1633,8 +1608,7 @@ class DdsAsyncClient(Client):
 
         获取慢日志下载链接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DownloadSlowlog
@@ -1697,8 +1671,7 @@ class DdsAsyncClient(Client):
 
         扩容指定副本集实例的节点数量
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ExpandReplicasetNode
@@ -1761,8 +1734,7 @@ class DdsAsyncClient(Client):
 
         查询指定参数模板可被应用的实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAppliedInstances
@@ -1827,8 +1799,7 @@ class DdsAsyncClient(Client):
 
         获取审计日志下载链接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAuditlogLinks
@@ -1891,8 +1862,7 @@ class DdsAsyncClient(Client):
 
         获取审计日志列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAuditlogs
@@ -1965,8 +1935,7 @@ class DdsAsyncClient(Client):
 
         查询实例可迁移到的可用区。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAz2Migrate
@@ -2027,8 +1996,7 @@ class DdsAsyncClient(Client):
 
         根据指定条件查询备份列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListBackups
@@ -2103,8 +2071,7 @@ class DdsAsyncClient(Client):
 
         获取参数模板列表，包括DDS数据库的所有默认参数模板和用户创建的参数模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListConfigurations
@@ -2167,8 +2134,7 @@ class DdsAsyncClient(Client):
 
         查询数据库角色列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDatabaseRoles
@@ -2237,8 +2203,7 @@ class DdsAsyncClient(Client):
 
         查询数据库用户列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDatabaseUsers
@@ -2307,8 +2272,7 @@ class DdsAsyncClient(Client):
 
         查询指定实例类型的数据库版本信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDatastoreVersions
@@ -2369,8 +2333,7 @@ class DdsAsyncClient(Client):
 
         查询数据库错误信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListErrorLogs
@@ -2443,8 +2406,7 @@ class DdsAsyncClient(Client):
 
         查询指定条件下的实例规格信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListFlavorInfos
@@ -2511,8 +2473,7 @@ class DdsAsyncClient(Client):
 
         查询指定条件下的所有实例规格信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListFlavors
@@ -2575,8 +2536,7 @@ class DdsAsyncClient(Client):
 
         查询指定实例的标签信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListInstanceTags
@@ -2637,8 +2597,7 @@ class DdsAsyncClient(Client):
 
         根据指定条件查询实例列表和详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListInstances
@@ -2715,8 +2674,7 @@ class DdsAsyncClient(Client):
 
         根据标签查询指定的数据库实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListInstancesByTags
@@ -2777,8 +2735,7 @@ class DdsAsyncClient(Client):
 
         查询指定project ID下实例的所有标签集合。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListProjectTags
@@ -2837,8 +2794,7 @@ class DdsAsyncClient(Client):
 
         查询回收站实例列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRecycleInstances
@@ -2903,8 +2859,7 @@ class DdsAsyncClient(Client):
 
         获取可恢复的数据库集合列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRestoreCollections
@@ -2975,8 +2930,7 @@ class DdsAsyncClient(Client):
 
         获取可恢复的数据库列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRestoreDatabases
@@ -3045,8 +2999,7 @@ class DdsAsyncClient(Client):
 
         查询实例的可恢复时间段。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRestoreTimes
@@ -3111,8 +3064,7 @@ class DdsAsyncClient(Client):
 
         查询实例节点会话。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSessions
@@ -3185,8 +3137,7 @@ class DdsAsyncClient(Client):
 
         查询数据库慢日志信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSlowLogs
@@ -3259,8 +3210,7 @@ class DdsAsyncClient(Client):
 
         获取SSL证书下载地址
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSslCertDownloadAddress
@@ -3323,8 +3273,7 @@ class DdsAsyncClient(Client):
 
         查询当前区域下的数据库磁盘类型。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListStorageType
@@ -3385,8 +3334,7 @@ class DdsAsyncClient(Client):
 
         根据指定条件查询任务中心中的任务列表和详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTasks
@@ -3457,8 +3405,7 @@ class DdsAsyncClient(Client):
 
         实例可用区迁移。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for MigrateAz
@@ -3521,8 +3468,7 @@ class DdsAsyncClient(Client):
 
         重置参数模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetConfiguration
@@ -3583,8 +3529,7 @@ class DdsAsyncClient(Client):
 
         修改数据库用户密码。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetPassword
@@ -3647,8 +3592,7 @@ class DdsAsyncClient(Client):
 
         变更实例的规格。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResizeInstance
@@ -3711,8 +3655,7 @@ class DdsAsyncClient(Client):
 
         扩容实例相关的存储容量大小。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResizeInstanceVolume
@@ -3775,8 +3718,7 @@ class DdsAsyncClient(Client):
 
         重启实例的数据库服务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RestartInstance
@@ -3839,8 +3781,7 @@ class DdsAsyncClient(Client):
 
         恢复到当前实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RestoreInstance
@@ -3903,8 +3844,7 @@ class DdsAsyncClient(Client):
 
         库表级时间点恢复。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RestoreInstanceFromCollection
@@ -3969,8 +3909,7 @@ class DdsAsyncClient(Client):
 
         根据备份恢复新实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RestoreNewInstance
@@ -4031,8 +3970,7 @@ class DdsAsyncClient(Client):
 
         设置审计日志策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetAuditlogPolicy
@@ -4095,8 +4033,7 @@ class DdsAsyncClient(Client):
 
         设置自动备份策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetBackupPolicy
@@ -4159,8 +4096,7 @@ class DdsAsyncClient(Client):
 
         设置集群均衡开关。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetBalancerSwitch
@@ -4223,8 +4159,7 @@ class DdsAsyncClient(Client):
 
         设置集群均衡活动时间窗。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetBalancerWindow
@@ -4287,8 +4222,7 @@ class DdsAsyncClient(Client):
 
         设置实例回收站策略
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetRecyclePolicy
@@ -4349,8 +4283,7 @@ class DdsAsyncClient(Client):
 
         查询审计日志策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowAuditlogPolicy
@@ -4413,8 +4346,7 @@ class DdsAsyncClient(Client):
 
         获取备份下载链接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowBackupDownloadLink
@@ -4479,8 +4411,7 @@ class DdsAsyncClient(Client):
 
         查询自动备份策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowBackupPolicy
@@ -4541,8 +4472,7 @@ class DdsAsyncClient(Client):
 
         查询参数模板应用历史
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowConfigurationAppliedHistory
@@ -4607,8 +4537,7 @@ class DdsAsyncClient(Client):
 
         查询参数模板修改历史。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowConfigurationModifyHistory
@@ -4673,8 +4602,7 @@ class DdsAsyncClient(Client):
 
         获取参数模板的详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowConfigurationParameter
@@ -4735,8 +4663,7 @@ class DdsAsyncClient(Client):
 
         查询客户端IP访问至DDS数据库实例的连接数统计信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowConnectionStatistics
@@ -4799,8 +4726,7 @@ class DdsAsyncClient(Client):
 
         查询实例磁盘信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDiskUsage
@@ -4863,8 +4789,7 @@ class DdsAsyncClient(Client):
 
         获取指定实例的参数，可以是实例，组，节点的参数模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowEntityConfiguration
@@ -4927,8 +4852,7 @@ class DdsAsyncClient(Client):
 
         获取DDS任务中心指定ID的任务信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowJobDetail
@@ -4989,8 +4913,7 @@ class DdsAsyncClient(Client):
 
         查询单租户在DDS服务下的资源配额，包括单节点实例配额、副本集实例配额、集群实例配额等。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowQuotas
@@ -5049,8 +4972,7 @@ class DdsAsyncClient(Client):
 
         查询实例回收站策略
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowRecyclePolicy
@@ -5111,8 +5033,7 @@ class DdsAsyncClient(Client):
 
         查询秒级监控配置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowSecondLevelMonitoringStatus
@@ -5173,8 +5094,7 @@ class DdsAsyncClient(Client):
 
         查询集群均衡设置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowShardingBalancer
@@ -5235,8 +5155,7 @@ class DdsAsyncClient(Client):
 
         查询慢日志明文开关
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowSlowlogDesensitizationSwitch
@@ -5299,8 +5218,7 @@ class DdsAsyncClient(Client):
 
         查询数据库补丁升级预估时长
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowUpgradeDuration
@@ -5363,8 +5281,7 @@ class DdsAsyncClient(Client):
 
         指定实例变更参数模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SwitchConfiguration
@@ -5427,8 +5344,7 @@ class DdsAsyncClient(Client):
 
         开启或关闭指定实例的秒级监控。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SwitchSecondLevelMonitoring
@@ -5491,8 +5407,7 @@ class DdsAsyncClient(Client):
 
         设置实例的慢日志明文开关。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SwitchSlowlogDesensitization
@@ -5557,8 +5472,7 @@ class DdsAsyncClient(Client):
 
         切换实例的SSL开关
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SwitchSsl
@@ -5621,8 +5535,7 @@ class DdsAsyncClient(Client):
 
         切换副本集实例下的主备节点
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SwitchoverReplicaSet
@@ -5683,8 +5596,7 @@ class DdsAsyncClient(Client):
 
         副本集跨网段访问配置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateClientNetwork
@@ -5747,8 +5659,7 @@ class DdsAsyncClient(Client):
 
         修改指定参数模板的参数信息，包括名称、描述、指定参数的值。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateConfigurationParameter
@@ -5811,8 +5722,7 @@ class DdsAsyncClient(Client):
 
         修改指定实例的参数，可以是实例，组，节点的参数模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateEntityConfiguration
@@ -5875,8 +5785,7 @@ class DdsAsyncClient(Client):
 
         修改实例名称
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateInstanceName
@@ -5939,8 +5848,7 @@ class DdsAsyncClient(Client):
 
         修改数据库实例的端口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateInstancePort
@@ -6003,8 +5911,7 @@ class DdsAsyncClient(Client):
 
         修改实例备注。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateInstanceRemark
@@ -6067,8 +5974,7 @@ class DdsAsyncClient(Client):
 
         变更实例关联的安全组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateSecurityGroup
@@ -6131,8 +6037,7 @@ class DdsAsyncClient(Client):
 
         升级数据库补丁版本。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpgradeDatabaseVersion
@@ -6195,8 +6100,7 @@ class DdsAsyncClient(Client):
 
         查询当前支持的API版本信息列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApiVersion
@@ -6255,8 +6159,7 @@ class DdsAsyncClient(Client):
 
         查询指定API版本信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowApiVersion

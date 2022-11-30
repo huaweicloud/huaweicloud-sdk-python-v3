@@ -47,8 +47,7 @@ class DnsClient(Client):
 
         绑定单个IP地址到终端节点
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AssociateEndpointIpaddress
         :type request: :class:`huaweicloudsdkdns.v2.AssociateEndpointIpaddressRequest`
@@ -110,8 +109,7 @@ class DnsClient(Client):
 
         批量删除PTR。本接口为原子操作，所有记录应全部删除成功或全部失败。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeletePtrRecords
         :type request: :class:`huaweicloudsdkdns.v2.BatchDeletePtrRecordsRequest`
@@ -173,8 +171,7 @@ class DnsClient(Client):
         响应结果中只包含本次实际删除的Record Set。
         支持批量删除公网域名和内网域名的记录集。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteRecordSets
         :type request: :class:`huaweicloudsdkdns.v2.BatchDeleteRecordSetsRequest`
@@ -236,8 +233,7 @@ class DnsClient(Client):
         本接口为原子操作，所有记录应全部删除成功或全部失败。
         仅支持公网Zone、内网Zone。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteZones
         :type request: :class:`huaweicloudsdkdns.v2.BatchDeleteZonesRequest`
@@ -299,8 +295,7 @@ class DnsClient(Client):
         响应结果中只包含本次实际更新的Record Set。
         仅支持公网域名记录集。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchSetRecordSetsStatus
         :type request: :class:`huaweicloudsdkdns.v2.BatchSetRecordSetsStatusRequest`
@@ -362,8 +357,7 @@ class DnsClient(Client):
         响应结果中只包含本次实际更新的Zone。
         仅支持公网Zone。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchSetZonesStatus
         :type request: :class:`huaweicloudsdkdns.v2.BatchSetZonesStatusRequest`
@@ -423,8 +417,7 @@ class DnsClient(Client):
 
         创建单个自定义线路
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateCustomLine
         :type request: :class:`huaweicloudsdkdns.v2.CreateCustomLineRequest`
@@ -484,8 +477,7 @@ class DnsClient(Client):
 
         创建单个终端节点。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateEndpoint
         :type request: :class:`huaweicloudsdkdns.v2.CreateEndpointRequest`
@@ -545,8 +537,7 @@ class DnsClient(Client):
 
         创建一个线路分组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateLineGroup
         :type request: :class:`huaweicloudsdkdns.v2.CreateLineGroupRequest`
@@ -606,8 +597,7 @@ class DnsClient(Client):
 
         创建一个解析规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateResolveRule
         :type request: :class:`huaweicloudsdkdns.v2.CreateResolveRuleRequest`
@@ -667,8 +657,7 @@ class DnsClient(Client):
 
         创建公网域名找回请求。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateRetrieval
         :type request: :class:`huaweicloudsdkdns.v2.CreateRetrievalRequest`
@@ -728,8 +717,7 @@ class DnsClient(Client):
 
         请求服务器立即执行找回验证。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateRetrievalVerification
         :type request: :class:`huaweicloudsdkdns.v2.CreateRetrievalVerificationRequest`
@@ -789,8 +777,7 @@ class DnsClient(Client):
 
         删除单个自定义线路
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteCustomLine
         :type request: :class:`huaweicloudsdkdns.v2.DeleteCustomLineRequest`
@@ -850,8 +837,7 @@ class DnsClient(Client):
 
         删除终端节点。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteEndpoint
         :type request: :class:`huaweicloudsdkdns.v2.DeleteEndpointRequest`
@@ -911,8 +897,7 @@ class DnsClient(Client):
 
         删除单个线路分组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteLineGroup
         :type request: :class:`huaweicloudsdkdns.v2.DeleteLineGroupRequest`
@@ -972,8 +957,7 @@ class DnsClient(Client):
 
         删除解析规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteResolveRule
         :type request: :class:`huaweicloudsdkdns.v2.DeleteResolveRuleRequest`
@@ -1033,8 +1017,7 @@ class DnsClient(Client):
 
         解除endpoint绑定的IP。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DisassociateEndpointIpaddress
         :type request: :class:`huaweicloudsdkdns.v2.DisassociateEndpointIpaddressRequest`
@@ -1096,8 +1079,7 @@ class DnsClient(Client):
 
         查询所有的云解析服务API版本号列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApiVersions
         :type request: :class:`huaweicloudsdkdns.v2.ListApiVersionsRequest`
@@ -1155,8 +1137,7 @@ class DnsClient(Client):
 
         查询自定义线路
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCustomLine
         :type request: :class:`huaweicloudsdkdns.v2.ListCustomLineRequest`
@@ -1224,8 +1205,7 @@ class DnsClient(Client):
 
         查询某个endpoint下的ip地址列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEndpointIpaddresses
         :type request: :class:`huaweicloudsdkdns.v2.ListEndpointIpaddressesRequest`
@@ -1285,8 +1265,7 @@ class DnsClient(Client):
 
         查询vpc的终端节点信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEndpointVpcs
         :type request: :class:`huaweicloudsdkdns.v2.ListEndpointVpcsRequest`
@@ -1346,8 +1325,7 @@ class DnsClient(Client):
 
         查询终端节点列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEndpoints
         :type request: :class:`huaweicloudsdkdns.v2.ListEndpointsRequest`
@@ -1413,8 +1391,7 @@ class DnsClient(Client):
 
         查询线路分组列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListLineGroups
         :type request: :class:`huaweicloudsdkdns.v2.ListLineGroupsRequest`
@@ -1480,8 +1457,7 @@ class DnsClient(Client):
 
         查询名称服务器列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListNameServers
         :type request: :class:`huaweicloudsdkdns.v2.ListNameServersRequest`
@@ -1543,8 +1519,7 @@ class DnsClient(Client):
 
         查询解析规则的列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListResoleRules
         :type request: :class:`huaweicloudsdkdns.v2.ListResoleRulesRequest`
@@ -1608,8 +1583,7 @@ class DnsClient(Client):
 
         查询指定的云解析服务API版本号
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowApiInfo
         :type request: :class:`huaweicloudsdkdns.v2.ShowApiInfoRequest`
@@ -1669,8 +1643,7 @@ class DnsClient(Client):
 
         查询单租户在DNS服务下的资源配额，包括公网zone配额、内网zone配额、Record Set配额、PTR Record配额、入站终端节点配额、出站终端节点配额、自定义线路配额、线路分组配额等。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDomainQuota
         :type request: :class:`huaweicloudsdkdns.v2.ShowDomainQuotaRequest`
@@ -1730,8 +1703,7 @@ class DnsClient(Client):
 
         查询终端单个节点。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowEndpoint
         :type request: :class:`huaweicloudsdkdns.v2.ShowEndpointRequest`
@@ -1791,8 +1763,7 @@ class DnsClient(Client):
 
         查询线路分组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowLineGroup
         :type request: :class:`huaweicloudsdkdns.v2.ShowLineGroupRequest`
@@ -1852,8 +1823,7 @@ class DnsClient(Client):
 
         查询单个解析规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowResoleRule
         :type request: :class:`huaweicloudsdkdns.v2.ShowResoleRuleRequest`
@@ -1913,8 +1883,7 @@ class DnsClient(Client):
 
         查询域名找回请求。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRetrieval
         :type request: :class:`huaweicloudsdkdns.v2.ShowRetrievalRequest`
@@ -1974,8 +1943,7 @@ class DnsClient(Client):
 
         查询域名找回结果。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRetrievalVerification
         :type request: :class:`huaweicloudsdkdns.v2.ShowRetrievalVerificationRequest`
@@ -2035,8 +2003,7 @@ class DnsClient(Client):
 
         更新单个自定义线路
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateCustomLine
         :type request: :class:`huaweicloudsdkdns.v2.UpdateCustomLineRequest`
@@ -2098,8 +2065,7 @@ class DnsClient(Client):
 
         修改终端节点
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateEndpoint
         :type request: :class:`huaweicloudsdkdns.v2.UpdateEndpointRequest`
@@ -2161,8 +2127,7 @@ class DnsClient(Client):
 
         更新单个线路分组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateLineGroups
         :type request: :class:`huaweicloudsdkdns.v2.UpdateLineGroupsRequest`
@@ -2222,8 +2187,7 @@ class DnsClient(Client):
 
         修改一个解析规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateResolveRule
         :type request: :class:`huaweicloudsdkdns.v2.UpdateResolveRuleRequest`
@@ -2285,8 +2249,7 @@ class DnsClient(Client):
 
         设置弹性IP的PTR记录
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateEipRecordSet
         :type request: :class:`huaweicloudsdkdns.v2.CreateEipRecordSetRequest`
@@ -2350,8 +2313,7 @@ class DnsClient(Client):
 
         查询租户弹性IP的PTR记录列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPtrRecords
         :type request: :class:`huaweicloudsdkdns.v2.ListPtrRecordsRequest`
@@ -2421,8 +2383,7 @@ class DnsClient(Client):
 
         将弹性IP的PTR记录恢复为默认值
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RestorePtrRecord
         :type request: :class:`huaweicloudsdkdns.v2.RestorePtrRecordRequest`
@@ -2486,8 +2447,7 @@ class DnsClient(Client):
 
         查询单个弹性IP的PTR记录
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPtrRecordSet
         :type request: :class:`huaweicloudsdkdns.v2.ShowPtrRecordSetRequest`
@@ -2549,8 +2509,7 @@ class DnsClient(Client):
 
         修改弹性IP的PTR记录
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdatePtrRecord
         :type request: :class:`huaweicloudsdkdns.v2.UpdatePtrRecordRequest`
@@ -2614,8 +2573,7 @@ class DnsClient(Client):
 
         Record Set关联健康检查。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AssociateHealthCheck
         :type request: :class:`huaweicloudsdkdns.v2.AssociateHealthCheckRequest`
@@ -2678,8 +2636,7 @@ class DnsClient(Client):
         批量删除某个Zone下的Record Set资源，当删除的资源不存在时，则默认删除成功。
         响应结果中只包含本次实际删除的资源。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteRecordSetWithLine
         :type request: :class:`huaweicloudsdkdns.v2.BatchDeleteRecordSetWithLineRequest`
@@ -2742,8 +2699,7 @@ class DnsClient(Client):
         批量修改RecordSet。属于原子性操作，请求Record Set将全部完成修改，或不做任何修改。
         仅公网Zone支持。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchUpdateRecordSetWithLine
         :type request: :class:`huaweicloudsdkdns.v2.BatchUpdateRecordSetWithLineRequest`
@@ -2805,8 +2761,7 @@ class DnsClient(Client):
 
         创建单个Record Set
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateRecordSet
         :type request: :class:`huaweicloudsdkdns.v2.CreateRecordSetRequest`
@@ -2868,8 +2823,7 @@ class DnsClient(Client):
 
         批量线路创建RecordSet。属于原子性操作，如果存在一个参数校验不通过，则创建失败。仅公网Zone支持。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateRecordSetWithBatchLines
         :type request: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithBatchLinesRequest`
@@ -2931,8 +2885,7 @@ class DnsClient(Client):
 
         创建单个Record Set，仅适用于公网DNS
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateRecordSetWithLine
         :type request: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithLineRequest`
@@ -2994,8 +2947,7 @@ class DnsClient(Client):
 
         删除单个Record Set
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteRecordSet
         :type request: :class:`huaweicloudsdkdns.v2.DeleteRecordSetRequest`
@@ -3057,8 +3009,7 @@ class DnsClient(Client):
 
         删除单个Record Set
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteRecordSets
         :type request: :class:`huaweicloudsdkdns.v2.DeleteRecordSetsRequest`
@@ -3120,8 +3071,7 @@ class DnsClient(Client):
 
         Record Set解关联健康检查。。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DisassociateHealthCheck
         :type request: :class:`huaweicloudsdkdns.v2.DisassociateHealthCheckRequest`
@@ -3183,8 +3133,7 @@ class DnsClient(Client):
 
         查询租户Record Set资源列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRecordSets
         :type request: :class:`huaweicloudsdkdns.v2.ListRecordSetsRequest`
@@ -3266,8 +3215,7 @@ class DnsClient(Client):
 
         查询单个Zone下Record Set列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRecordSetsByZone
         :type request: :class:`huaweicloudsdkdns.v2.ListRecordSetsByZoneRequest`
@@ -3347,8 +3295,7 @@ class DnsClient(Client):
 
         查询租户Record Set资源列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRecordSetsWithLine
         :type request: :class:`huaweicloudsdkdns.v2.ListRecordSetsWithLineRequest`
@@ -3436,8 +3383,7 @@ class DnsClient(Client):
 
         设置Record Set状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SetRecordSetsStatus
         :type request: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusRequest`
@@ -3499,8 +3445,7 @@ class DnsClient(Client):
 
         查询单个Record Set
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRecordSet
         :type request: :class:`huaweicloudsdkdns.v2.ShowRecordSetRequest`
@@ -3562,8 +3507,7 @@ class DnsClient(Client):
 
         查询单个Zone下Record Set列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRecordSetByZone
         :type request: :class:`huaweicloudsdkdns.v2.ShowRecordSetByZoneRequest`
@@ -3647,8 +3591,7 @@ class DnsClient(Client):
 
         查询单个Record Set，仅适用于公网DNS
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRecordSetWithLine
         :type request: :class:`huaweicloudsdkdns.v2.ShowRecordSetWithLineRequest`
@@ -3710,8 +3653,7 @@ class DnsClient(Client):
 
         修改单个Record Set
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateRecordSet
         :type request: :class:`huaweicloudsdkdns.v2.UpdateRecordSetRequest`
@@ -3775,8 +3717,7 @@ class DnsClient(Client):
 
         修改单个Record Set
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateRecordSets
         :type request: :class:`huaweicloudsdkdns.v2.UpdateRecordSetsRequest`
@@ -3840,8 +3781,7 @@ class DnsClient(Client):
 
         为指定实例批量添加或删除标签
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchCreateTag
         :type request: :class:`huaweicloudsdkdns.v2.BatchCreateTagRequest`
@@ -3905,8 +3845,7 @@ class DnsClient(Client):
 
         为指定实例添加标签
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateTag
         :type request: :class:`huaweicloudsdkdns.v2.CreateTagRequest`
@@ -3970,8 +3909,7 @@ class DnsClient(Client):
 
         删除资源标签
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteTag
         :type request: :class:`huaweicloudsdkdns.v2.DeleteTagRequest`
@@ -4035,8 +3973,7 @@ class DnsClient(Client):
 
         使用标签查询资源实例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTag
         :type request: :class:`huaweicloudsdkdns.v2.ListTagRequest`
@@ -4098,8 +4035,7 @@ class DnsClient(Client):
 
         查询指定实例类型的所有标签集合
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTags
         :type request: :class:`huaweicloudsdkdns.v2.ListTagsRequest`
@@ -4159,8 +4095,7 @@ class DnsClient(Client):
 
         查询指定实例的标签信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowResourceTag
         :type request: :class:`huaweicloudsdkdns.v2.ShowResourceTagRequest`
@@ -4222,8 +4157,7 @@ class DnsClient(Client):
 
         在内网Zone上关联VPC
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AssociateRouter
         :type request: :class:`huaweicloudsdkdns.v2.AssociateRouterRequest`
@@ -4285,8 +4219,7 @@ class DnsClient(Client):
 
         创建单个内网Zone
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreatePrivateZone
         :type request: :class:`huaweicloudsdkdns.v2.CreatePrivateZoneRequest`
@@ -4346,8 +4279,7 @@ class DnsClient(Client):
 
         创建单个公网Zone
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreatePublicZone
         :type request: :class:`huaweicloudsdkdns.v2.CreatePublicZoneRequest`
@@ -4407,8 +4339,7 @@ class DnsClient(Client):
 
         删除单个内网Zone
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeletePrivateZone
         :type request: :class:`huaweicloudsdkdns.v2.DeletePrivateZoneRequest`
@@ -4468,8 +4399,7 @@ class DnsClient(Client):
 
         删除单个公网Zone
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeletePublicZone
         :type request: :class:`huaweicloudsdkdns.v2.DeletePublicZoneRequest`
@@ -4529,8 +4459,7 @@ class DnsClient(Client):
 
         在内网Zone上解关联VPC
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DisassociateRouter
         :type request: :class:`huaweicloudsdkdns.v2.DisassociateRouterRequest`
@@ -4592,8 +4521,7 @@ class DnsClient(Client):
 
         查询内网Zone的列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPrivateZones
         :type request: :class:`huaweicloudsdkdns.v2.ListPrivateZonesRequest`
@@ -4667,8 +4595,7 @@ class DnsClient(Client):
 
         查询公网Zone的列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPublicZones
         :type request: :class:`huaweicloudsdkdns.v2.ListPublicZonesRequest`
@@ -4742,8 +4669,7 @@ class DnsClient(Client):
 
         设置单个内网Zone的子域名递归解析代理
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SetPrivateZoneProxyPattern
         :type request: :class:`huaweicloudsdkdns.v2.SetPrivateZoneProxyPatternRequest`
@@ -4805,8 +4731,7 @@ class DnsClient(Client):
 
         查询单个内网Zone
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPrivateZone
         :type request: :class:`huaweicloudsdkdns.v2.ShowPrivateZoneRequest`
@@ -4866,8 +4791,7 @@ class DnsClient(Client):
 
         查询单个内网Zone的名称服务器
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPrivateZoneNameServer
         :type request: :class:`huaweicloudsdkdns.v2.ShowPrivateZoneNameServerRequest`
@@ -4927,8 +4851,7 @@ class DnsClient(Client):
 
         查询单个公网Zone
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPublicZone
         :type request: :class:`huaweicloudsdkdns.v2.ShowPublicZoneRequest`
@@ -4988,8 +4911,7 @@ class DnsClient(Client):
 
         查询单个公网Zone的名称服务器
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPublicZoneNameServer
         :type request: :class:`huaweicloudsdkdns.v2.ShowPublicZoneNameServerRequest`
@@ -5049,8 +4971,7 @@ class DnsClient(Client):
 
         修改单个内网Zone
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdatePrivateZone
         :type request: :class:`huaweicloudsdkdns.v2.UpdatePrivateZoneRequest`
@@ -5112,8 +5033,7 @@ class DnsClient(Client):
 
         修改单个公网Zone
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdatePublicZone
         :type request: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneRequest`
@@ -5175,8 +5095,7 @@ class DnsClient(Client):
 
         设置单个公网Zone状态，支持暂停、启用Zone
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdatePublicZoneStatus
         :type request: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneStatusRequest`

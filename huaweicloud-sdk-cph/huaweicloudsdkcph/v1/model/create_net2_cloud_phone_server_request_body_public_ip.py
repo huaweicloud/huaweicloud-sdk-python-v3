@@ -46,8 +46,10 @@ class CreateNet2CloudPhoneServerRequestBodyPublicIp:
         self._eip = None
         self.discriminator = None
 
-        self.ids = ids
-        self.eip = eip
+        if ids is not None:
+            self.ids = ids
+        if eip is not None:
+            self.eip = eip
 
     @property
     def ids(self):

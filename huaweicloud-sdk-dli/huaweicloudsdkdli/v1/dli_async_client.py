@@ -47,8 +47,7 @@ class DliAsyncClient(Client):
 
         在DLI服务中新建一个用户模板，最多100个。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateFlinkTemplate
@@ -109,8 +108,7 @@ class DliAsyncClient(Client):
 
         创建全局变量。全局变量用于替换SQL作业中的敏感数据。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateGlobleValue
@@ -171,8 +169,7 @@ class DliAsyncClient(Client):
 
         删除一个模板，即使当前模板正在被作业使用，也允许删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteFlinkTemplate
@@ -233,8 +230,7 @@ class DliAsyncClient(Client):
 
         删除全局变量。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteGlobalValue
@@ -295,8 +291,7 @@ class DliAsyncClient(Client):
 
         查询作业模板列表。当前只支持查询用户自定义模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListFlinkTemplates
@@ -365,8 +360,7 @@ class DliAsyncClient(Client):
 
         查询全局变量列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListGlobalValues
@@ -429,8 +423,7 @@ class DliAsyncClient(Client):
 
         对DLI服务中已有的模板进行更新。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateFlinkTemplate
@@ -493,8 +486,7 @@ class DliAsyncClient(Client):
 
         修改全局变量。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateGlobalValue
@@ -557,8 +549,7 @@ class DliAsyncClient(Client):
 
         该API用于在已创建的增强型跨源中绑定队列。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AssociateConnectionQueue
@@ -621,8 +612,7 @@ class DliAsyncClient(Client):
 
         关联队列到弹性资源池
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AssociateQueueToElasticResourcePool
@@ -685,8 +675,7 @@ class DliAsyncClient(Client):
 
         该API用于处理边缘Flink作业状态上报信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ChangeFlinkJobStatusReport
@@ -750,8 +739,7 @@ class DliAsyncClient(Client):
         如果需要了解Console界面的使用方法，可参考经典型跨源连接。
         系统default队列不支持创建跨源连接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateDatasourceConnection
@@ -812,8 +800,7 @@ class DliAsyncClient(Client):
 
         创建弹性资源池
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateElasticResourcePool
@@ -874,8 +861,7 @@ class DliAsyncClient(Client):
 
         该API用于创建与其他服务的增强型跨源连接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateEnhancedConnection
@@ -936,8 +922,7 @@ class DliAsyncClient(Client):
 
         用户自定义作业目前支持jar格式，运行在独享集群中。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateFlinkJar
@@ -998,8 +983,7 @@ class DliAsyncClient(Client):
 
         通过POST方式，提交流式SQL作业，请求体为JSON格式。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateFlinkSql
@@ -1060,8 +1044,7 @@ class DliAsyncClient(Client):
 
         该API用于创建IEF消息通道
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateIefMessageChannel
@@ -1122,8 +1105,7 @@ class DliAsyncClient(Client):
 
         该API用于处理IEF系统事件上报
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateIefSystemEvents
@@ -1184,8 +1166,7 @@ class DliAsyncClient(Client):
 
         生成flink SQL作业的静态流图
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateStreamGraph
@@ -1248,8 +1229,7 @@ class DliAsyncClient(Client):
 
         批量删除任何状态的作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteBatchFlinkJob
@@ -1312,8 +1292,7 @@ class DliAsyncClient(Client):
         说明：
         创建中的连接，无法删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDatasourceConnection
@@ -1374,8 +1353,7 @@ class DliAsyncClient(Client):
 
         删除弹性资源池
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteElasticResourcePool
@@ -1436,8 +1414,7 @@ class DliAsyncClient(Client):
 
         该API用于删除已创建的增强型跨源连接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteEnhancedConnection
@@ -1498,8 +1475,7 @@ class DliAsyncClient(Client):
 
         删除任何状态的作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteFlink
@@ -1560,8 +1536,7 @@ class DliAsyncClient(Client):
 
         该API用于在增强型跨源中解绑已绑定的队列。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DisassociateConnectionQueue
@@ -1624,8 +1599,7 @@ class DliAsyncClient(Client):
 
         通过POST方式，导出流作业，请求体为JSON格式。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ExportFlinkJob
@@ -1686,8 +1660,7 @@ class DliAsyncClient(Client):
 
         通过POST方式，导入流作业，请求体为JSON格式。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ImportFlinkJob
@@ -1748,8 +1721,7 @@ class DliAsyncClient(Client):
 
         该API用于查询该用户已创建的经典型跨源连接列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDatasourceConnections
@@ -1810,8 +1782,7 @@ class DliAsyncClient(Client):
 
         查询弹性资源池所属队列
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListElasticResourcePoolQueues
@@ -1878,8 +1849,7 @@ class DliAsyncClient(Client):
 
         查询所有弹性资源池
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListElasticResourcePools
@@ -1948,8 +1918,7 @@ class DliAsyncClient(Client):
 
         该API用于查询该用户已创建的增强型跨源连接列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListEnhancedConnections
@@ -2018,8 +1987,7 @@ class DliAsyncClient(Client):
 
         查询当前用户的作业列表，可以根据作业ID作为ID，查询大于ID或小于ID的限定条数的作业，默认查询全部状态的作业，也可以设定运行中或其他状态条件。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListFlinkJobs
@@ -2102,8 +2070,7 @@ class DliAsyncClient(Client):
 
         用户主动授权OBS桶的操作权限给DLI服务, 用于保存用户作业的checkpoint、作业的运行日志等。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RegisterBucket
@@ -2164,8 +2131,7 @@ class DliAsyncClient(Client):
 
         触发批量运行作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RunFlinkJob
@@ -2226,8 +2192,7 @@ class DliAsyncClient(Client):
 
         该API用于处理IEF Flink作业action回调信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RunIefJobActionCallBack
@@ -2288,8 +2253,7 @@ class DliAsyncClient(Client):
 
         该API用于查询该用户指定的已创建的经典型跨源连接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDatasourceConnection
@@ -2350,8 +2314,7 @@ class DliAsyncClient(Client):
 
         该API用于查询该用户指定的已创建的增强型跨源连接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowEnhancedConnection
@@ -2412,8 +2375,7 @@ class DliAsyncClient(Client):
 
         该API用于查询增强型跨源连接授权的信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowEnhancedPrivilege
@@ -2474,8 +2436,7 @@ class DliAsyncClient(Client):
 
         查询作业执行计划。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowFlinkExecuteGraph
@@ -2536,8 +2497,7 @@ class DliAsyncClient(Client):
 
         查看一个作业的详情信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowFlinkJob
@@ -2598,8 +2558,7 @@ class DliAsyncClient(Client):
 
         查询作业监控信息, 支持同时查询多个作业的监控信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowFlinkMetric
@@ -2660,8 +2619,7 @@ class DliAsyncClient(Client):
 
         批量停止正在运行的作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopFlinkJob
@@ -2722,8 +2680,7 @@ class DliAsyncClient(Client):
 
         修改弹性资源池信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateElasticResourcePool
@@ -2786,8 +2743,7 @@ class DliAsyncClient(Client):
 
         设置弹性资源池指定队列的扩缩容策略信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateElasticResourcePoolQueueInfo
@@ -2852,8 +2808,7 @@ class DliAsyncClient(Client):
 
         更新用户自定义作业，目前支持jar格式，运行在独享集群中。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateFlinkJar
@@ -2916,8 +2871,7 @@ class DliAsyncClient(Client):
 
         Stream SQL的语法扩展了Apache Flink SQL。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateFlinkSql
@@ -2980,8 +2934,7 @@ class DliAsyncClient(Client):
 
         该API用于在跨源中修改数据源主机信息，仅支持全量覆盖。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateHostMassage
@@ -3044,8 +2997,7 @@ class DliAsyncClient(Client):
 
         创建DLI委托
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateDliAgency
@@ -3106,8 +3058,7 @@ class DliAsyncClient(Client):
 
         获取dli委托信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDliAgency
@@ -3166,8 +3117,7 @@ class DliAsyncClient(Client):
 
         该API用于批量删除队列定时扩缩容计划。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeleteQueuePlans
@@ -3230,8 +3180,7 @@ class DliAsyncClient(Client):
 
         该API用于取消已经提交的作业，若作业已经执行结束或失败则无法取消。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CancelJob
@@ -3294,8 +3243,7 @@ class DliAsyncClient(Client):
         说明：
         被赋权用户所在用户组的所属区域需具有Tenant Guest权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ChangeAuthorization
@@ -3356,8 +3304,7 @@ class DliAsyncClient(Client):
 
         该API用于修改指定ID的队列定时扩缩容计划。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ChangeQueuePlan
@@ -3422,8 +3369,7 @@ class DliAsyncClient(Client):
 
         创建地址连通性请求API接口，往指定集群发送地址连通性测试请求，并将测试地址插入表内
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckConnection
@@ -3486,8 +3432,7 @@ class DliAsyncClient(Client):
 
         该API用于检查SQL语法。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckSql
@@ -3548,8 +3493,7 @@ class DliAsyncClient(Client):
 
         该API用于新增数据库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateDatabase
@@ -3610,8 +3554,7 @@ class DliAsyncClient(Client):
 
         该API用于创建数据下载作业。在DLI内部创建一个赋权给用户的额桶并返回
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateDownloadJob
@@ -3672,8 +3615,7 @@ class DliAsyncClient(Client):
 
         该API用于创建队列，该队列将会绑定用户指定的计算资源。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateQueue
@@ -3734,8 +3676,7 @@ class DliAsyncClient(Client):
 
         创建队列定时扩缩容计划接口，对指定的队列创建定时规格变更计划。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateQueuePlan
@@ -3798,8 +3739,7 @@ class DliAsyncClient(Client):
 
         该API用于创建新的表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateTable
@@ -3862,8 +3802,7 @@ class DliAsyncClient(Client):
 
         该API用于删除空数据库，若待删除的数据库中存在表，则需先删除其中的所有表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDatabase
@@ -3930,8 +3869,7 @@ class DliAsyncClient(Client):
         说明：
         若指定队列正在执行任务，则不允许删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteQueue
@@ -3992,8 +3930,7 @@ class DliAsyncClient(Client):
 
         该API用于删除指定ID的队列定时扩缩容计划。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteQueuePlan
@@ -4056,8 +3993,7 @@ class DliAsyncClient(Client):
 
         该API用于删除指定的表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteTable
@@ -4122,8 +4058,7 @@ class DliAsyncClient(Client):
 
         该API用于将数据导出到文件。支持数据从DLI表中导出到文件。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ExportData
@@ -4184,8 +4119,7 @@ class DliAsyncClient(Client):
 
         该API用于将SQL语句的查询结果导出到OBS对象存储中，只支持导出“QUERY”类型作业的查询结果。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ExportJobResult
@@ -4248,8 +4182,7 @@ class DliAsyncClient(Client):
 
         该API用于将数据从文件导入DLI或OBS表，目前仅支持将OBS上的数据导入DLI或OBS中。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ImportData
@@ -4310,8 +4243,7 @@ class DliAsyncClient(Client):
 
         该API用于查询指定数据库下符合过滤条件的或所有的表信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAllTables
@@ -4384,8 +4316,7 @@ class DliAsyncClient(Client):
 
         该API用于查询可以使用的指定队列的所有用户名称。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDatabaseUsers
@@ -4446,8 +4377,7 @@ class DliAsyncClient(Client):
 
         该API用于查询出所有的数据库信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDatabases
@@ -4516,8 +4446,7 @@ class DliAsyncClient(Client):
 
         该API用于查询当前工程下面的所有作业的信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListJobs
@@ -4604,8 +4533,7 @@ class DliAsyncClient(Client):
 
         查看队列定时扩缩容计划接口，列出指定队列定时规格变更计划。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListQueuePlans
@@ -4666,8 +4594,7 @@ class DliAsyncClient(Client):
 
         该API用于查询可以使用的指定队列的所有用户名称。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListQueueUsers
@@ -4728,8 +4655,7 @@ class DliAsyncClient(Client):
 
         该API用于列出该project下所有的队列。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListQueues
@@ -4796,8 +4722,7 @@ class DliAsyncClient(Client):
 
         该API用于查询指定用户在表上的权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTablePrivileges
@@ -4862,8 +4787,7 @@ class DliAsyncClient(Client):
 
         该API用于查看有权访问指定表或表的列的所有用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTableUsers
@@ -4926,8 +4850,7 @@ class DliAsyncClient(Client):
 
         该API用于与其他用户共享指定的队列，可以给用户赋使用指定的队列的权限或者收回使用权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RegisterAuthorizedQueue
@@ -4990,8 +4913,7 @@ class DliAsyncClient(Client):
         
         作业包含以下类型：DDL、DCL、IMPORT、QUERY和INSERT。其中，IMPORT与导入数据的功能一致，区别仅在于实现方式不同。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RunJob
@@ -5052,8 +4974,7 @@ class DliAsyncClient(Client):
 
         该功能用于重新启动队列、扩容队列、缩容队列。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RunQueueAction
@@ -5116,8 +5037,7 @@ class DliAsyncClient(Client):
 
         该API用于描述指定表的元数据信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDescribeTable
@@ -5180,8 +5100,7 @@ class DliAsyncClient(Client):
 
         该API用于查询作业的详细信息，如作业的databasename、tablename、file size和export mode等信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDetailInfo
@@ -5242,8 +5161,7 @@ class DliAsyncClient(Client):
 
         该API用于获取作业执行进度信息，如果作业正在执行，可以获取到子作业的信息，如果作业刚开始或者已经结束，不可以获取到子作业信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowJobProgress
@@ -5305,8 +5223,7 @@ class DliAsyncClient(Client):
         该API用于在执行SQL查询语句的作业完成后，查看该作业执行的结果。目前仅支持查看“QUERY”类型作业的执行结果。
         该API只能查看前1000条的结果记录，若要查看全部的结果记录，需要先导出查询结果再进行查看。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowJobResult
@@ -5369,8 +5286,7 @@ class DliAsyncClient(Client):
 
         该API用于在作业提交后查询作业状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowJobStatus
@@ -5431,8 +5347,7 @@ class DliAsyncClient(Client):
 
         该API用于在连通性测试提交后查询连通性结果。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowNodeConnectivity
@@ -5495,8 +5410,7 @@ class DliAsyncClient(Client):
 
         获取对象赋权用户的权限信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowObjectUser
@@ -5556,8 +5470,7 @@ class DliAsyncClient(Client):
         """获取分区信息列表
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowPartitions
@@ -5624,8 +5537,7 @@ class DliAsyncClient(Client):
 
         该API用于列出该project下指定的队列详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowQueueDetail
@@ -5686,8 +5598,7 @@ class DliAsyncClient(Client):
 
         该API用于用于预览表中前10行的内容。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTableContent
@@ -5752,8 +5663,7 @@ class DliAsyncClient(Client):
 
         用于修改数据库的owner。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDatabaseOwner
@@ -5818,8 +5728,7 @@ class DliAsyncClient(Client):
         说明：
         如果待修改网段的队列中有正在提交或正在运行的作业，或者改队列已经绑定了增强型跨源，将不支持修改网段操作。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateQueueCidr
@@ -5882,8 +5791,7 @@ class DliAsyncClient(Client):
 
         用于修改表的owner。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateTableOwner
@@ -5948,8 +5856,7 @@ class DliAsyncClient(Client):
 
         该API用于取消批处理作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CancelBatchJob
@@ -6010,8 +5917,7 @@ class DliAsyncClient(Client):
 
         该API用于在某个队列上创建作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateBatchJob
@@ -6074,8 +5980,7 @@ class DliAsyncClient(Client):
 
         该API用于删除某个project某个分组下的资源包
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteResource
@@ -6138,8 +6043,7 @@ class DliAsyncClient(Client):
 
         该API用于查询Project下某队列批处理作业的列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListBatches
@@ -6216,8 +6120,7 @@ class DliAsyncClient(Client):
 
         该API用于查看某个project下的所有资源，其中包含Group。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListResources
@@ -6280,8 +6183,7 @@ class DliAsyncClient(Client):
 
         该API用于根据批处理作业的id查询作业详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowBatchInfo
@@ -6342,8 +6244,7 @@ class DliAsyncClient(Client):
 
         该API用于查询批处理作业的后台日志。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowBatchLog
@@ -6412,8 +6313,7 @@ class DliAsyncClient(Client):
 
         该API用于查询批处理作业的状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowBatchState
@@ -6474,8 +6374,7 @@ class DliAsyncClient(Client):
 
         该API用于查看某个project某个分组下的具体资源信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowResourceInfo
@@ -6538,8 +6437,7 @@ class DliAsyncClient(Client):
 
         用于修改程序包的owner。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateGroupOrResourceOwner
@@ -6601,8 +6499,7 @@ class DliAsyncClient(Client):
         该API用于在project下上传file类型模块。
         说明： 上传同名file模块时，新模块将会覆盖旧模块。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UploadFiles
@@ -6666,8 +6563,7 @@ class DliAsyncClient(Client):
         该API用于在project下上传jar类型分组资源。
         说明：上传同名资源模块时，新模块将会覆盖旧模块。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UploadJars
@@ -6731,8 +6627,7 @@ class DliAsyncClient(Client):
         该API用于在project下的上传pyfile类型模块。
         说明： 上传同名pyfile类型模块时，新模块将会覆盖旧模块。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UploadPythonFiles
@@ -6795,8 +6690,7 @@ class DliAsyncClient(Client):
 
         该API用于上传分组资源到某个project下。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UploadResources

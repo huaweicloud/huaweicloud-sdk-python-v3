@@ -42,13 +42,72 @@ class AomClient(Client):
 
         return ClientBuilder(clazz)
 
+    def add_action_rule(self, request):
+        """新增告警行动规则
+
+        新增告警行动规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddActionRule
+        :type request: :class:`huaweicloudsdkaom.v2.AddActionRuleRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.AddActionRuleResponse`
+        """
+        return self.add_action_rule_with_http_info(request)
+
+    def add_action_rule_with_http_info(self, request):
+        all_params = ['add_action_rule_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/alert/action-rules',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddActionRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def add_alarm_rule(self, request):
         """添加阈值规则
 
         该接口用于添加一条阈值规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddAlarmRule
         :type request: :class:`huaweicloudsdkaom.v2.AddAlarmRuleRequest`
@@ -103,13 +162,72 @@ class AomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def add_event2alarm_rule(self, request):
+        """新增一条事件类告警规则
+
+        新增一条事件类告警规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddEvent2alarmRule
+        :type request: :class:`huaweicloudsdkaom.v2.AddEvent2alarmRuleRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.AddEvent2alarmRuleResponse`
+        """
+        return self.add_event2alarm_rule_with_http_info(request)
+
+    def add_event2alarm_rule_with_http_info(self, request):
+        all_params = ['add_event2alarm_rule_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/event2alarm-rule',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddEvent2alarmRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def add_metric_data(self, request):
         """添加监控数据
 
         该接口用于向服务端添加一条或多条监控数据。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddMetricData
         :type request: :class:`huaweicloudsdkaom.v2.AddMetricDataRequest`
@@ -164,13 +282,72 @@ class AomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def add_mute_rules(self, request):
+        """新增静默规则
+
+        新增静默规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddMuteRules
+        :type request: :class:`huaweicloudsdkaom.v2.AddMuteRulesRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.AddMuteRulesResponse`
+        """
+        return self.add_mute_rules_with_http_info(request)
+
+    def add_mute_rules_with_http_info(self, request):
+        all_params = ['add_mute_rules_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/alert/mute-rules',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddMuteRulesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def add_or_update_service_discovery_rules(self, request):
         """添加或修改服务发现规则
 
         该接口用于添加或修改一条或多条服务发现规则。同一projectid下可添加的规则上限为100条。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddOrUpdateServiceDiscoveryRules
         :type request: :class:`huaweicloudsdkaom.v2.AddOrUpdateServiceDiscoveryRulesRequest`
@@ -230,8 +407,7 @@ class AomClient(Client):
 
         该接口用于分段统计指定条件下的事件、告警。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CountEvents
         :type request: :class:`huaweicloudsdkaom.v2.CountEventsRequest`
@@ -288,13 +464,72 @@ class AomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_action_rule(self, request):
+        """删除告警行动规则
+
+        删除告警行动规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteActionRule
+        :type request: :class:`huaweicloudsdkaom.v2.DeleteActionRuleRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.DeleteActionRuleResponse`
+        """
+        return self.delete_action_rule_with_http_info(request)
+
+    def delete_action_rule_with_http_info(self, request):
+        all_params = ['delete_action_rule_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/alert/action-rules',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteActionRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_alarm_rule(self, request):
         """删除阈值规则
 
         该接口用于删除阈值规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAlarmRule
         :type request: :class:`huaweicloudsdkaom.v2.DeleteAlarmRuleRequest`
@@ -354,8 +589,7 @@ class AomClient(Client):
 
         批量删除阈值规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAlarmRules
         :type request: :class:`huaweicloudsdkaom.v2.DeleteAlarmRulesRequest`
@@ -410,13 +644,132 @@ class AomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_event2alarm_rule(self, request):
+        """删除事件类告警规则
+
+        删除一条事件类告警规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteEvent2alarmRule
+        :type request: :class:`huaweicloudsdkaom.v2.DeleteEvent2alarmRuleRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.DeleteEvent2alarmRuleResponse`
+        """
+        return self.delete_event2alarm_rule_with_http_info(request)
+
+    def delete_event2alarm_rule_with_http_info(self, request):
+        all_params = ['delete_event2alarm_rule_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/event2alarm-rule',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteEvent2alarmRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_mute_rules(self, request):
+        """删除静默规则
+
+        删除静默规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteMuteRules
+        :type request: :class:`huaweicloudsdkaom.v2.DeleteMuteRulesRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.DeleteMuteRulesResponse`
+        """
+        return self.delete_mute_rules_with_http_info(request)
+
+    def delete_mute_rules_with_http_info(self, request):
+        all_params = ['delete_mute_rules_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/alert/mute-rules',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteMuteRulesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def deleteservice_discovery_rules(self, request):
         """删除服务发现规则
 
         该接口用于删除服务发现规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteserviceDiscoveryRules
         :type request: :class:`huaweicloudsdkaom.v2.DeleteserviceDiscoveryRulesRequest`
@@ -472,13 +825,70 @@ class AomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_action_rule(self, request):
+        """获取告警行动规则列表
+
+        获取告警行动规则列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListActionRule
+        :type request: :class:`huaweicloudsdkaom.v2.ListActionRuleRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListActionRuleResponse`
+        """
+        return self.list_action_rule_with_http_info(request)
+
+    def list_action_rule_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/alert/action-rules',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListActionRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_alarm_rule(self, request):
         """查询阈值规则列表
 
         该接口用于查询阈值规则列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAlarmRule
         :type request: :class:`huaweicloudsdkaom.v2.ListAlarmRuleRequest`
@@ -535,13 +945,70 @@ class AomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_event2alarm_rule(self, request):
+        """查询事件类告警规则列表
+
+        查询事件类告警规则列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListEvent2alarmRule
+        :type request: :class:`huaweicloudsdkaom.v2.ListEvent2alarmRuleRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListEvent2alarmRuleResponse`
+        """
+        return self.list_event2alarm_rule_with_http_info(request)
+
+    def list_event2alarm_rule_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/event2alarm-rule',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListEvent2alarmRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_events(self, request):
         """查询事件告警信息
 
         该接口用于查询对应用户的事件、告警。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEvents
         :type request: :class:`huaweicloudsdkaom.v2.ListEventsRequest`
@@ -603,8 +1070,7 @@ class AomClient(Client):
 
         该接口用于查询不同维度(例如集群、IP、应用等)下的日志内容，支持分页查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListLogItems
         :type request: :class:`huaweicloudsdkaom.v2.ListLogItemsRequest`
@@ -666,8 +1132,7 @@ class AomClient(Client):
 
         该接口用于查询系统当前可监控的指标列表，可以指定指标命名空间、指标名称、维度、所属资源的编号（格式为：resType_resId），分页查询的起始位置和返回的最大记录条数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListMetricItems
         :type request: :class:`huaweicloudsdkaom.v2.ListMetricItemsRequest`
@@ -728,13 +1193,130 @@ class AomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_mute_rule(self, request):
+        """获取静默规则列表
+
+        获取静默规则列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListMuteRule
+        :type request: :class:`huaweicloudsdkaom.v2.ListMuteRuleRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListMuteRuleResponse`
+        """
+        return self.list_mute_rule_with_http_info(request)
+
+    def list_mute_rule_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/alert/mute-rules',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListMuteRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_notified_histories(self, request):
+        """获取告警发送结果
+
+        获取告警发送结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListNotifiedHistories
+        :type request: :class:`huaweicloudsdkaom.v2.ListNotifiedHistoriesRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListNotifiedHistoriesResponse`
+        """
+        return self.list_notified_histories_with_http_info(request)
+
+    def list_notified_histories_with_http_info(self, request):
+        all_params = ['event_sn']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'event_sn' in local_var_params:
+            query_params.append(('event_sn', local_var_params['event_sn']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/alarm-notified-histories',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListNotifiedHistoriesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_sample(self, request):
         """查询时序数据
 
         该接口用于查询指定时间范围内的监控时序数据，可以通过参数指定需要查询的数据维度，数据周期等。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSample
         :type request: :class:`huaweicloudsdkaom.v2.ListSampleRequest`
@@ -796,8 +1378,7 @@ class AomClient(Client):
 
         该接口用于查询系统当前可监控的时间序列列表，可以指定时间序列命名空间、名称、维度、所属资源的编号（格式为：resType_resId），分页查询的起始位置和返回的最大记录条数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSeries
         :type request: :class:`huaweicloudsdkaom.v2.ListSeriesRequest`
@@ -861,8 +1442,7 @@ class AomClient(Client):
 
         该接口用于查询系统当前已存在的服务发现规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListServiceDiscoveryRules
         :type request: :class:`huaweicloudsdkaom.v2.ListServiceDiscoveryRulesRequest`
@@ -922,8 +1502,7 @@ class AomClient(Client):
 
         该接口用于上报对应用户的事件、告警。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for PushEvents
         :type request: :class:`huaweicloudsdkaom.v2.PushEventsRequest`
@@ -982,13 +1561,72 @@ class AomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_action_rule(self, request):
+        """通过规则名称获取告警行动规则
+
+        通过规则名称获取告警行动规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowActionRule
+        :type request: :class:`huaweicloudsdkaom.v2.ShowActionRuleRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ShowActionRuleResponse`
+        """
+        return self.show_action_rule_with_http_info(request)
+
+    def show_action_rule_with_http_info(self, request):
+        all_params = ['rule_name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'rule_name' in local_var_params:
+            path_params['rule_name'] = local_var_params['rule_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/alert/action-rules/{rule_name}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowActionRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_alarm_rule(self, request):
         """查询单条阈值规则
 
         该接口用于查询单条阈值规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAlarmRule
         :type request: :class:`huaweicloudsdkaom.v2.ShowAlarmRuleRequest`
@@ -1048,8 +1686,7 @@ class AomClient(Client):
 
         该接口用于查询指定时间范围内指标的监控数据，可以通过参数指定需要查询的数据维度，数据周期等。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowMetricsData
         :type request: :class:`huaweicloudsdkaom.v2.ShowMetricsDataRequest`
@@ -1106,13 +1743,72 @@ class AomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_action_rule(self, request):
+        """修改告警行动规则
+
+        修改告警行动规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateActionRule
+        :type request: :class:`huaweicloudsdkaom.v2.UpdateActionRuleRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.UpdateActionRuleResponse`
+        """
+        return self.update_action_rule_with_http_info(request)
+
+    def update_action_rule_with_http_info(self, request):
+        all_params = ['update_action_rule_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/alert/action-rules',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateActionRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_alarm_rule(self, request):
         """修改阈值规则
 
         该接口用于修改一条阈值规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateAlarmRule
         :type request: :class:`huaweicloudsdkaom.v2.UpdateAlarmRuleRequest`
@@ -1167,13 +1863,132 @@ class AomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_event_rule(self, request):
+        """更新事件类告警规则
+
+        更新事件类告警规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateEventRule
+        :type request: :class:`huaweicloudsdkaom.v2.UpdateEventRuleRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.UpdateEventRuleResponse`
+        """
+        return self.update_event_rule_with_http_info(request)
+
+    def update_event_rule_with_http_info(self, request):
+        all_params = ['update_event_rule_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/event2alarm-rule',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateEventRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_mute_rule(self, request):
+        """修改静默规则
+
+        修改静默规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateMuteRule
+        :type request: :class:`huaweicloudsdkaom.v2.UpdateMuteRuleRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.UpdateMuteRuleResponse`
+        """
+        return self.update_mute_rule_with_http_info(request)
+
+    def update_mute_rule_with_http_info(self, request):
+        all_params = ['update_mute_rule_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/alert/mute-rules',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateMuteRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_instant_query_aom_prom_get(self, request):
         """瞬时数据查询
 
-        该接口用于查询PromQL(Prometheus Query Language)。 在特定时间点下的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
+        该接口用于查询PromQL(Prometheus Query Language)在特定时间点下的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListInstantQueryAomPromGet
         :type request: :class:`huaweicloudsdkaom.v2.ListInstantQueryAomPromGetRequest`
@@ -1235,8 +2050,7 @@ class AomClient(Client):
 
         该接口用于查询PromQL(Prometheus Query Language) 在特定时间点下的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListInstantQueryAomPromPost
         :type request: :class:`huaweicloudsdkaom.v2.ListInstantQueryAomPromPostRequest`
@@ -1298,8 +2112,7 @@ class AomClient(Client):
 
         该接口用于查询带有指定标签的时间序列列表。（注：接口目前开放的region为：北京四、上海一和广州）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListLabelValuesAomPromGet
         :type request: :class:`huaweicloudsdkaom.v2.ListLabelValuesAomPromGetRequest`
@@ -1359,8 +2172,7 @@ class AomClient(Client):
 
         该接口用于获取标签名列表。（注：接口目前开放的region为：北京四、上海一和广州）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListLabelsAomPromGet
         :type request: :class:`huaweicloudsdkaom.v2.ListLabelsAomPromGetRequest`
@@ -1418,8 +2230,7 @@ class AomClient(Client):
 
         该接口用于获取标签名列表。（注：接口目前开放的region为：北京四、上海一和广州）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListLabelsAomPromPost
         :type request: :class:`huaweicloudsdkaom.v2.ListLabelsAomPromPostRequest`
@@ -1477,8 +2288,7 @@ class AomClient(Client):
 
         该接口用于查询序列及序列标签的元数据。（注：接口目前开放的region为：北京四、上海一和广州）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListMetadataAomPromGet
         :type request: :class:`huaweicloudsdkaom.v2.ListMetadataAomPromGetRequest`
@@ -1536,8 +2346,7 @@ class AomClient(Client):
 
         该接口用于查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRangeQueryAomPromGet
         :type request: :class:`huaweicloudsdkaom.v2.ListRangeQueryAomPromGetRequest`
@@ -1603,8 +2412,7 @@ class AomClient(Client):
 
         该接口用于查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRangeQueryAomPromPost
         :type request: :class:`huaweicloudsdkaom.v2.ListRangeQueryAomPromPostRequest`

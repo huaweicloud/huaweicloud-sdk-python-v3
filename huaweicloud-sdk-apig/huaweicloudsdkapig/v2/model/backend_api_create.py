@@ -29,6 +29,7 @@ class BackendApiCreate:
         'req_uri': 'str',
         'timeout': 'int',
         'enable_client_ssl': 'bool',
+        'retry_count': 'str',
         'vpc_channel_info': 'ApiBackendVpcReq',
         'vpc_channel_status': 'int'
     }
@@ -43,11 +44,12 @@ class BackendApiCreate:
         'req_uri': 'req_uri',
         'timeout': 'timeout',
         'enable_client_ssl': 'enable_client_ssl',
+        'retry_count': 'retry_count',
         'vpc_channel_info': 'vpc_channel_info',
         'vpc_channel_status': 'vpc_channel_status'
     }
 
-    def __init__(self, authorizer_id=None, url_domain=None, req_protocol=None, remark=None, req_method=None, version=None, req_uri=None, timeout=None, enable_client_ssl=None, vpc_channel_info=None, vpc_channel_status=None):
+    def __init__(self, authorizer_id=None, url_domain=None, req_protocol=None, remark=None, req_method=None, version=None, req_uri=None, timeout=None, enable_client_ssl=None, retry_count=None, vpc_channel_info=None, vpc_channel_status=None):
         """BackendApiCreate
 
         The model defined in huaweicloud sdk
@@ -70,6 +72,8 @@ class BackendApiCreate:
         :type timeout: int
         :param enable_client_ssl: 是否开启双向认证
         :type enable_client_ssl: bool
+        :param retry_count: 请求后端服务的重试次数，默认为-1，范围[-1,10]
+        :type retry_count: str
         :param vpc_channel_info: 
         :type vpc_channel_info: :class:`huaweicloudsdkapig.v2.ApiBackendVpcReq`
         :param vpc_channel_status: 是否使用VPC通道 - 1：使用VPC通道 - 2：不使用VPC通道
@@ -87,6 +91,7 @@ class BackendApiCreate:
         self._req_uri = None
         self._timeout = None
         self._enable_client_ssl = None
+        self._retry_count = None
         self._vpc_channel_info = None
         self._vpc_channel_status = None
         self.discriminator = None
@@ -105,6 +110,8 @@ class BackendApiCreate:
         self.timeout = timeout
         if enable_client_ssl is not None:
             self.enable_client_ssl = enable_client_ssl
+        if retry_count is not None:
+            self.retry_count = retry_count
         if vpc_channel_info is not None:
             self.vpc_channel_info = vpc_channel_info
         if vpc_channel_status is not None:
@@ -307,6 +314,28 @@ class BackendApiCreate:
         :type enable_client_ssl: bool
         """
         self._enable_client_ssl = enable_client_ssl
+
+    @property
+    def retry_count(self):
+        """Gets the retry_count of this BackendApiCreate.
+
+        请求后端服务的重试次数，默认为-1，范围[-1,10]
+
+        :return: The retry_count of this BackendApiCreate.
+        :rtype: str
+        """
+        return self._retry_count
+
+    @retry_count.setter
+    def retry_count(self, retry_count):
+        """Sets the retry_count of this BackendApiCreate.
+
+        请求后端服务的重试次数，默认为-1，范围[-1,10]
+
+        :param retry_count: The retry_count of this BackendApiCreate.
+        :type retry_count: str
+        """
+        self._retry_count = retry_count
 
     @property
     def vpc_channel_info(self):

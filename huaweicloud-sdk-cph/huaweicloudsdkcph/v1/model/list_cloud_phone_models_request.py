@@ -20,20 +20,51 @@ class ListCloudPhoneModelsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'status': 'int'
     }
 
     attribute_map = {
+        'status': 'status'
     }
 
-    def __init__(self):
+    def __init__(self, status=None):
         """ListCloudPhoneModelsRequest
 
         The model defined in huaweicloud sdk
 
+        :param status: 规格状态 - 0：下线状态 - 1：正常使用 不传该参数表示查询所有状态的规格。
+        :type status: int
         """
         
         
+
+        self._status = None
         self.discriminator = None
+
+        if status is not None:
+            self.status = status
+
+    @property
+    def status(self):
+        """Gets the status of this ListCloudPhoneModelsRequest.
+
+        规格状态 - 0：下线状态 - 1：正常使用 不传该参数表示查询所有状态的规格。
+
+        :return: The status of this ListCloudPhoneModelsRequest.
+        :rtype: int
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ListCloudPhoneModelsRequest.
+
+        规格状态 - 0：下线状态 - 1：正常使用 不传该参数表示查询所有状态的规格。
+
+        :param status: The status of this ListCloudPhoneModelsRequest.
+        :type status: int
+        """
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

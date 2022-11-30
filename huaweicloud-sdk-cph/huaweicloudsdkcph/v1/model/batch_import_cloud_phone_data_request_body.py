@@ -20,7 +20,7 @@ class BatchImportCloudPhoneDataRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'restore_infos': 'list[BatchImportCloudPhoneDataRequestBodyRestoreInfos]'
+        'restore_infos': 'list[RestoreInfo]'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class BatchImportCloudPhoneDataRequestBody:
         The model defined in huaweicloud sdk
 
         :param restore_infos: 待导入数据的云手机信息
-        :type restore_infos: list[:class:`huaweicloudsdkcph.v1.BatchImportCloudPhoneDataRequestBodyRestoreInfos`]
+        :type restore_infos: list[:class:`huaweicloudsdkcph.v1.RestoreInfo`]
         """
         
         
@@ -50,7 +50,7 @@ class BatchImportCloudPhoneDataRequestBody:
         待导入数据的云手机信息
 
         :return: The restore_infos of this BatchImportCloudPhoneDataRequestBody.
-        :rtype: list[:class:`huaweicloudsdkcph.v1.BatchImportCloudPhoneDataRequestBodyRestoreInfos`]
+        :rtype: list[:class:`huaweicloudsdkcph.v1.RestoreInfo`]
         """
         return self._restore_infos
 
@@ -61,7 +61,7 @@ class BatchImportCloudPhoneDataRequestBody:
         待导入数据的云手机信息
 
         :param restore_infos: The restore_infos of this BatchImportCloudPhoneDataRequestBody.
-        :type restore_infos: list[:class:`huaweicloudsdkcph.v1.BatchImportCloudPhoneDataRequestBodyRestoreInfos`]
+        :type restore_infos: list[:class:`huaweicloudsdkcph.v1.RestoreInfo`]
         """
         self._restore_infos = restore_infos
 

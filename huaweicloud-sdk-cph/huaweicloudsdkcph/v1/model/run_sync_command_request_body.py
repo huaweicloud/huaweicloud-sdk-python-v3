@@ -38,13 +38,13 @@ class RunSyncCommandRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param command: 手机管理命令，仅支持shell命令
+        :param command: ADB命令，固定填写shell。
         :type command: str
-        :param content: 待执行的命令。最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）
+        :param content: 待执行的命令。  最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。
         :type content: str
-        :param phone_ids: 云手机ID列表 server_ids参数不存在时必选
+        :param phone_ids: 云手机ID列表。 server_ids参数不存在时必选，同时存在只处理phone_ids。
         :type phone_ids: list[str]
-        :param server_ids: 云手机服务器ID列表 phone_ids参数不存在时必选
+        :param server_ids: 云手机服务器ID列表。 phone_ids参数不存在时必选，同时存在只处理phone_ids。
         :type server_ids: list[str]
         """
         
@@ -67,7 +67,7 @@ class RunSyncCommandRequestBody:
     def command(self):
         """Gets the command of this RunSyncCommandRequestBody.
 
-        手机管理命令，仅支持shell命令
+        ADB命令，固定填写shell。
 
         :return: The command of this RunSyncCommandRequestBody.
         :rtype: str
@@ -78,7 +78,7 @@ class RunSyncCommandRequestBody:
     def command(self, command):
         """Sets the command of this RunSyncCommandRequestBody.
 
-        手机管理命令，仅支持shell命令
+        ADB命令，固定填写shell。
 
         :param command: The command of this RunSyncCommandRequestBody.
         :type command: str
@@ -89,7 +89,7 @@ class RunSyncCommandRequestBody:
     def content(self):
         """Gets the content of this RunSyncCommandRequestBody.
 
-        待执行的命令。最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）
+        待执行的命令。  最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。
 
         :return: The content of this RunSyncCommandRequestBody.
         :rtype: str
@@ -100,7 +100,7 @@ class RunSyncCommandRequestBody:
     def content(self, content):
         """Sets the content of this RunSyncCommandRequestBody.
 
-        待执行的命令。最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）
+        待执行的命令。  最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。
 
         :param content: The content of this RunSyncCommandRequestBody.
         :type content: str
@@ -111,7 +111,7 @@ class RunSyncCommandRequestBody:
     def phone_ids(self):
         """Gets the phone_ids of this RunSyncCommandRequestBody.
 
-        云手机ID列表 server_ids参数不存在时必选
+        云手机ID列表。 server_ids参数不存在时必选，同时存在只处理phone_ids。
 
         :return: The phone_ids of this RunSyncCommandRequestBody.
         :rtype: list[str]
@@ -122,7 +122,7 @@ class RunSyncCommandRequestBody:
     def phone_ids(self, phone_ids):
         """Sets the phone_ids of this RunSyncCommandRequestBody.
 
-        云手机ID列表 server_ids参数不存在时必选
+        云手机ID列表。 server_ids参数不存在时必选，同时存在只处理phone_ids。
 
         :param phone_ids: The phone_ids of this RunSyncCommandRequestBody.
         :type phone_ids: list[str]
@@ -133,7 +133,7 @@ class RunSyncCommandRequestBody:
     def server_ids(self):
         """Gets the server_ids of this RunSyncCommandRequestBody.
 
-        云手机服务器ID列表 phone_ids参数不存在时必选
+        云手机服务器ID列表。 phone_ids参数不存在时必选，同时存在只处理phone_ids。
 
         :return: The server_ids of this RunSyncCommandRequestBody.
         :rtype: list[str]
@@ -144,7 +144,7 @@ class RunSyncCommandRequestBody:
     def server_ids(self, server_ids):
         """Sets the server_ids of this RunSyncCommandRequestBody.
 
-        云手机服务器ID列表 phone_ids参数不存在时必选
+        云手机服务器ID列表。 phone_ids参数不存在时必选，同时存在只处理phone_ids。
 
         :param server_ids: The server_ids of this RunSyncCommandRequestBody.
         :type server_ids: list[str]

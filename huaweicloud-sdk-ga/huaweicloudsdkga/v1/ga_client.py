@@ -47,8 +47,7 @@ class GaClient(Client):
 
         创建全球加速器
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAccelerator
         :type request: :class:`huaweicloudsdkga.v1.CreateAcceleratorRequest`
@@ -108,8 +107,7 @@ class GaClient(Client):
 
         删除全球加速器。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAccelerator
         :type request: :class:`huaweicloudsdkga.v1.DeleteAcceleratorRequest`
@@ -169,8 +167,7 @@ class GaClient(Client):
 
         查询全球加速器列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAccelerators
         :type request: :class:`huaweicloudsdkga.v1.ListAcceleratorsRequest`
@@ -242,8 +239,7 @@ class GaClient(Client):
 
         查询全球加速器详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAccelerator
         :type request: :class:`huaweicloudsdkga.v1.ShowAcceleratorRequest`
@@ -303,8 +299,7 @@ class GaClient(Client):
 
         更新全球加速器
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateAccelerator
         :type request: :class:`huaweicloudsdkga.v1.UpdateAcceleratorRequest`
@@ -366,8 +361,7 @@ class GaClient(Client):
 
         创建终端节点
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateEndpoint
         :type request: :class:`huaweicloudsdkga.v1.CreateEndpointRequest`
@@ -429,8 +423,7 @@ class GaClient(Client):
 
         删除终端节点
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteEndpoint
         :type request: :class:`huaweicloudsdkga.v1.DeleteEndpointRequest`
@@ -492,8 +485,7 @@ class GaClient(Client):
 
         查询终端节点组下终端节点列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEndpoints
         :type request: :class:`huaweicloudsdkga.v1.ListEndpointsRequest`
@@ -563,8 +555,7 @@ class GaClient(Client):
 
         查询终端节点详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowEndpoint
         :type request: :class:`huaweicloudsdkga.v1.ShowEndpointRequest`
@@ -626,8 +617,7 @@ class GaClient(Client):
 
         更新终端节点
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateEndpoint
         :type request: :class:`huaweicloudsdkga.v1.UpdateEndpointRequest`
@@ -691,8 +681,7 @@ class GaClient(Client):
 
         创建终端节点组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateEndpointGroup
         :type request: :class:`huaweicloudsdkga.v1.CreateEndpointGroupRequest`
@@ -752,8 +741,7 @@ class GaClient(Client):
 
         删除终端节点组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteEndpointGroup
         :type request: :class:`huaweicloudsdkga.v1.DeleteEndpointGroupRequest`
@@ -813,8 +801,7 @@ class GaClient(Client):
 
         查询终端节点组列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEndpointGroups
         :type request: :class:`huaweicloudsdkga.v1.ListEndpointGroupsRequest`
@@ -886,8 +873,7 @@ class GaClient(Client):
 
         查询终端节点组详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowEndpointGroup
         :type request: :class:`huaweicloudsdkga.v1.ShowEndpointGroupRequest`
@@ -947,8 +933,7 @@ class GaClient(Client):
 
         更新终端节点组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateEndpointGroup
         :type request: :class:`huaweicloudsdkga.v1.UpdateEndpointGroupRequest`
@@ -1010,8 +995,7 @@ class GaClient(Client):
 
         创建健康检查
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateHealthCheck
         :type request: :class:`huaweicloudsdkga.v1.CreateHealthCheckRequest`
@@ -1071,8 +1055,7 @@ class GaClient(Client):
 
         删除健康检查
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteHealthCheck
         :type request: :class:`huaweicloudsdkga.v1.DeleteHealthCheckRequest`
@@ -1132,8 +1115,7 @@ class GaClient(Client):
 
         查询健康检查列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListHealthChecks
         :type request: :class:`huaweicloudsdkga.v1.ListHealthChecksRequest`
@@ -1203,8 +1185,7 @@ class GaClient(Client):
 
         查询健康检查详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowHealthCheck
         :type request: :class:`huaweicloudsdkga.v1.ShowHealthCheckRequest`
@@ -1264,8 +1245,7 @@ class GaClient(Client):
 
         更新健康检查
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateHealthCheck
         :type request: :class:`huaweicloudsdkga.v1.UpdateHealthCheckRequest`
@@ -1327,8 +1307,7 @@ class GaClient(Client):
 
         创建监听器
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateListener
         :type request: :class:`huaweicloudsdkga.v1.CreateListenerRequest`
@@ -1388,8 +1367,7 @@ class GaClient(Client):
 
         删除监听器
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteListener
         :type request: :class:`huaweicloudsdkga.v1.DeleteListenerRequest`
@@ -1449,8 +1427,7 @@ class GaClient(Client):
 
         查询监听器列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListListeners
         :type request: :class:`huaweicloudsdkga.v1.ListListenersRequest`
@@ -1522,8 +1499,7 @@ class GaClient(Client):
 
         查询监听器详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowListener
         :type request: :class:`huaweicloudsdkga.v1.ShowListenerRequest`
@@ -1583,8 +1559,7 @@ class GaClient(Client):
 
         更新监听器
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateListener
         :type request: :class:`huaweicloudsdkga.v1.UpdateListenerRequest`
@@ -1646,8 +1621,7 @@ class GaClient(Client):
 
         查询区域列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRegions
         :type request: :class:`huaweicloudsdkga.v1.ListRegionsRequest`

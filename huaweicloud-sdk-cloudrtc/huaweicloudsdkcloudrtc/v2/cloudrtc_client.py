@@ -47,8 +47,7 @@ class CloudRTCClient(Client):
 
         调用此接口创建应用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateApp
         :type request: :class:`huaweicloudsdkcloudrtc.v2.CreateAppRequest`
@@ -120,8 +119,7 @@ class CloudRTCClient(Client):
         
         jobtype取值为&#39;s&#39;代表单流录制。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateIndividualStreamJob
         :type request: :class:`huaweicloudsdkcloudrtc.v2.CreateIndividualStreamJobRequest`
@@ -207,8 +205,7 @@ class CloudRTCClient(Client):
         
           API触发合流录制流名规则：{jobtype}\\_{jobid}\\_{roomid}，其中jobtype取值为&#39;m&#39;代表合流录制。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateMixJob
         :type request: :class:`huaweicloudsdkcloudrtc.v2.CreateMixJobRequest`
@@ -281,8 +278,7 @@ class CloudRTCClient(Client):
         - 若当前app在请求的location中无录制规则，则会创建新的录制规则
         - 若当前app在请求的location中已有录制规则，则会更新原来的录制规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateRecordRule
         :type request: :class:`huaweicloudsdkcloudrtc.v2.CreateRecordRuleRequest`
@@ -352,8 +348,7 @@ class CloudRTCClient(Client):
 
         调用此接口删除单个应用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteApp
         :type request: :class:`huaweicloudsdkcloudrtc.v2.DeleteAppRequest`
@@ -421,8 +416,7 @@ class CloudRTCClient(Client):
 
         调用此接口删除录制规则，对于正在使用的录制规则，不允许删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteRecordRule
         :type request: :class:`huaweicloudsdkcloudrtc.v2.DeleteRecordRuleRequest`
@@ -492,8 +486,7 @@ class CloudRTCClient(Client):
 
         调用此接口查询应用列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApps
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ListAppsRequest`
@@ -565,8 +558,7 @@ class CloudRTCClient(Client):
 
         调用此接口查询录制规则列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRecordRules
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ListRecordRulesRequest`
@@ -638,8 +630,7 @@ class CloudRTCClient(Client):
 
         调用此接口解散房间，将该房间中所有用户踢出房间。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RemoveRoom
         :type request: :class:`huaweicloudsdkcloudrtc.v2.RemoveRoomRequest`
@@ -709,8 +700,7 @@ class CloudRTCClient(Client):
 
         调用此接口强制用户离开房间。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RemoveUsers
         :type request: :class:`huaweicloudsdkcloudrtc.v2.RemoveUsersRequest`
@@ -782,8 +772,7 @@ class CloudRTCClient(Client):
 
         调用此接口查询单个应用详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowApp
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowAppRequest`
@@ -851,8 +840,7 @@ class CloudRTCClient(Client):
 
         调用此接口查询自动录制配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAutoRecord
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowAutoRecordRequest`
@@ -922,8 +910,7 @@ class CloudRTCClient(Client):
         
         租户的OBS桶内的情况，暂不支持查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowIndividualStreamJob
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowIndividualStreamJobRequest`
@@ -993,8 +980,7 @@ class CloudRTCClient(Client):
 
         调用此接口查询合流转码任务状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowMixJob
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowMixJobRequest`
@@ -1064,8 +1050,7 @@ class CloudRTCClient(Client):
 
         调用此接口查询增值（录制）事件回调配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRecordCallback
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowRecordCallbackRequest`
@@ -1133,8 +1118,7 @@ class CloudRTCClient(Client):
 
         调用此接口查询指定录制规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRecordRule
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowRecordRuleRequest`
@@ -1204,8 +1188,7 @@ class CloudRTCClient(Client):
 
         查询应用鉴权配置参数
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowUrlAuth
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowUrlAuthRequest`
@@ -1273,8 +1256,7 @@ class CloudRTCClient(Client):
 
         调用此接口启用单个应用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartApp
         :type request: :class:`huaweicloudsdkcloudrtc.v2.StartAppRequest`
@@ -1344,8 +1326,7 @@ class CloudRTCClient(Client):
         
         应用停用后，新房间无法新增和加入，已加入的房间可以继续使用。合流、录制功能等也不可用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StopApp
         :type request: :class:`huaweicloudsdkcloudrtc.v2.StopAppRequest`
@@ -1413,8 +1394,7 @@ class CloudRTCClient(Client):
 
         调用此接口停止单流任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StopIndividualStreamJob
         :type request: :class:`huaweicloudsdkcloudrtc.v2.StopIndividualStreamJobRequest`
@@ -1484,8 +1464,7 @@ class CloudRTCClient(Client):
 
         调用此接口停止已下发的合流转码任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StopMixJob
         :type request: :class:`huaweicloudsdkcloudrtc.v2.StopMixJobRequest`
@@ -1555,8 +1534,7 @@ class CloudRTCClient(Client):
 
         更新自动录制配置，租户可以开启自动单流录制或者停用自动单流录制。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateAutoRecord
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateAutoRecordRequest`
@@ -1628,8 +1606,7 @@ class CloudRTCClient(Client):
         
         仅部分场景支持修改。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateIndividualStreamJob
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateIndividualStreamJobRequest`
@@ -1701,8 +1678,7 @@ class CloudRTCClient(Client):
 
         调用此接口更新合流任务布局。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateMixJob
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateMixJobRequest`
@@ -1778,8 +1754,7 @@ class CloudRTCClient(Client):
         
         回调格式参考/customer-record-notify-url定义。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateRecordCallback
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateRecordCallbackRequest`
@@ -1849,8 +1824,7 @@ class CloudRTCClient(Client):
 
         调用此接口更新录制规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateRecordRule
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateRecordRuleRequest`
@@ -1922,8 +1896,7 @@ class CloudRTCClient(Client):
 
         调用此接口开启或关闭URL鉴权。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateUrlAuth
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateUrlAuthRequest`

@@ -21,7 +21,7 @@ class BatchExportCloudPhoneDataResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'jobs': 'list[object]'
+        'jobs': 'list[PhoneJob]'
     }
 
     attribute_map = {
@@ -34,10 +34,10 @@ class BatchExportCloudPhoneDataResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 请求的唯一标识ID
+        :param request_id: 请求的唯一标识ID。
         :type request_id: str
         :param jobs: 任务信息
-        :type jobs: list[object]
+        :type jobs: list[:class:`huaweicloudsdkcph.v1.PhoneJob`]
         """
         
         super(BatchExportCloudPhoneDataResponse, self).__init__()
@@ -46,14 +46,16 @@ class BatchExportCloudPhoneDataResponse(SdkResponse):
         self._jobs = None
         self.discriminator = None
 
-        self.request_id = request_id
-        self.jobs = jobs
+        if request_id is not None:
+            self.request_id = request_id
+        if jobs is not None:
+            self.jobs = jobs
 
     @property
     def request_id(self):
         """Gets the request_id of this BatchExportCloudPhoneDataResponse.
 
-        请求的唯一标识ID
+        请求的唯一标识ID。
 
         :return: The request_id of this BatchExportCloudPhoneDataResponse.
         :rtype: str
@@ -64,7 +66,7 @@ class BatchExportCloudPhoneDataResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this BatchExportCloudPhoneDataResponse.
 
-        请求的唯一标识ID
+        请求的唯一标识ID。
 
         :param request_id: The request_id of this BatchExportCloudPhoneDataResponse.
         :type request_id: str
@@ -78,7 +80,7 @@ class BatchExportCloudPhoneDataResponse(SdkResponse):
         任务信息
 
         :return: The jobs of this BatchExportCloudPhoneDataResponse.
-        :rtype: list[object]
+        :rtype: list[:class:`huaweicloudsdkcph.v1.PhoneJob`]
         """
         return self._jobs
 
@@ -89,7 +91,7 @@ class BatchExportCloudPhoneDataResponse(SdkResponse):
         任务信息
 
         :param jobs: The jobs of this BatchExportCloudPhoneDataResponse.
-        :type jobs: list[object]
+        :type jobs: list[:class:`huaweicloudsdkcph.v1.PhoneJob`]
         """
         self._jobs = jobs
 

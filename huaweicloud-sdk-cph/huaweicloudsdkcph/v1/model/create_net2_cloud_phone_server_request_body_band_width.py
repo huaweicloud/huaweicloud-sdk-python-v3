@@ -20,92 +20,54 @@ class CreateNet2CloudPhoneServerRequestBodyBandWidth:
     sensitive_list = []
 
     openapi_types = {
-        'band_width_share_type': 'int',
+        'band_width_id': 'str',
         'band_width_size': 'int',
-        'band_width_id': 'str'
+        'band_width_charge_mode': 'int',
+        'band_width_share_type': 'int'
     }
 
     attribute_map = {
-        'band_width_share_type': 'band_width_share_type',
+        'band_width_id': 'band_width_id',
         'band_width_size': 'band_width_size',
-        'band_width_id': 'band_width_id'
+        'band_width_charge_mode': 'band_width_charge_mode',
+        'band_width_share_type': 'band_width_share_type'
     }
 
-    def __init__(self, band_width_share_type=None, band_width_size=None, band_width_id=None):
+    def __init__(self, band_width_id=None, band_width_size=None, band_width_charge_mode=None, band_width_share_type=None):
         """CreateNet2CloudPhoneServerRequestBodyBandWidth
 
         The model defined in huaweicloud sdk
 
-        :param band_width_share_type: 带宽类型 - 0 表示独享带宽 - 1 表示共享带宽
-        :type band_width_share_type: int
-        :param band_width_size: 功能说明：带宽大小  带宽（Mbit/s），取值范围为[1,2000]。  调整带宽时的最小单位会根据带宽范围不同存在差异。  小于等于300Mbit/s：默认最小单位为1Mbit/s。 300Mbit/s~1000Mbit/s：默认最小单位为50Mbit/s。 大于1000Mbit/s：默认最小单位为500Mbit/s。 说明：  如果share_type是独享带宽，该参数必选项；如果share_type是共享带宽并且id有值，该参数会忽略
-        :type band_width_size: int
-        :param band_width_id: 带宽ID，创建共享带宽类型带宽的弹性IP时可以指定之前的共享带宽创建。  取值范围：共享带宽类型的带宽ID。  说明：  当创建共享带宽类型的带宽时，该字段必选
+        :param band_width_id: 云手机服务器的带宽唯一标识
         :type band_width_id: str
+        :param band_width_size: 云手机服务器的带宽大小
+        :type band_width_size: int
+        :param band_width_charge_mode: 云手机服务器带宽的计费方式  取值范围：  - 0，bandwidth, 按带宽计费  - 1，traffic, 按流量计费
+        :type band_width_charge_mode: int
+        :param band_width_share_type: 云手机服务器的带宽类型  - 0，per，独享带宽 - 1，whole，共享带宽
+        :type band_width_share_type: int
         """
         
         
 
-        self._band_width_share_type = None
-        self._band_width_size = None
         self._band_width_id = None
+        self._band_width_size = None
+        self._band_width_charge_mode = None
+        self._band_width_share_type = None
         self.discriminator = None
 
-        self.band_width_share_type = band_width_share_type
-        if band_width_size is not None:
-            self.band_width_size = band_width_size
         if band_width_id is not None:
             self.band_width_id = band_width_id
-
-    @property
-    def band_width_share_type(self):
-        """Gets the band_width_share_type of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
-
-        带宽类型 - 0 表示独享带宽 - 1 表示共享带宽
-
-        :return: The band_width_share_type of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
-        :rtype: int
-        """
-        return self._band_width_share_type
-
-    @band_width_share_type.setter
-    def band_width_share_type(self, band_width_share_type):
-        """Sets the band_width_share_type of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
-
-        带宽类型 - 0 表示独享带宽 - 1 表示共享带宽
-
-        :param band_width_share_type: The band_width_share_type of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
-        :type band_width_share_type: int
-        """
-        self._band_width_share_type = band_width_share_type
-
-    @property
-    def band_width_size(self):
-        """Gets the band_width_size of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
-
-        功能说明：带宽大小  带宽（Mbit/s），取值范围为[1,2000]。  调整带宽时的最小单位会根据带宽范围不同存在差异。  小于等于300Mbit/s：默认最小单位为1Mbit/s。 300Mbit/s~1000Mbit/s：默认最小单位为50Mbit/s。 大于1000Mbit/s：默认最小单位为500Mbit/s。 说明：  如果share_type是独享带宽，该参数必选项；如果share_type是共享带宽并且id有值，该参数会忽略
-
-        :return: The band_width_size of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
-        :rtype: int
-        """
-        return self._band_width_size
-
-    @band_width_size.setter
-    def band_width_size(self, band_width_size):
-        """Sets the band_width_size of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
-
-        功能说明：带宽大小  带宽（Mbit/s），取值范围为[1,2000]。  调整带宽时的最小单位会根据带宽范围不同存在差异。  小于等于300Mbit/s：默认最小单位为1Mbit/s。 300Mbit/s~1000Mbit/s：默认最小单位为50Mbit/s。 大于1000Mbit/s：默认最小单位为500Mbit/s。 说明：  如果share_type是独享带宽，该参数必选项；如果share_type是共享带宽并且id有值，该参数会忽略
-
-        :param band_width_size: The band_width_size of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
-        :type band_width_size: int
-        """
-        self._band_width_size = band_width_size
+        if band_width_size is not None:
+            self.band_width_size = band_width_size
+        self.band_width_charge_mode = band_width_charge_mode
+        self.band_width_share_type = band_width_share_type
 
     @property
     def band_width_id(self):
         """Gets the band_width_id of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
 
-        带宽ID，创建共享带宽类型带宽的弹性IP时可以指定之前的共享带宽创建。  取值范围：共享带宽类型的带宽ID。  说明：  当创建共享带宽类型的带宽时，该字段必选
+        云手机服务器的带宽唯一标识
 
         :return: The band_width_id of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
         :rtype: str
@@ -116,12 +78,78 @@ class CreateNet2CloudPhoneServerRequestBodyBandWidth:
     def band_width_id(self, band_width_id):
         """Sets the band_width_id of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
 
-        带宽ID，创建共享带宽类型带宽的弹性IP时可以指定之前的共享带宽创建。  取值范围：共享带宽类型的带宽ID。  说明：  当创建共享带宽类型的带宽时，该字段必选
+        云手机服务器的带宽唯一标识
 
         :param band_width_id: The band_width_id of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
         :type band_width_id: str
         """
         self._band_width_id = band_width_id
+
+    @property
+    def band_width_size(self):
+        """Gets the band_width_size of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
+
+        云手机服务器的带宽大小
+
+        :return: The band_width_size of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
+        :rtype: int
+        """
+        return self._band_width_size
+
+    @band_width_size.setter
+    def band_width_size(self, band_width_size):
+        """Sets the band_width_size of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
+
+        云手机服务器的带宽大小
+
+        :param band_width_size: The band_width_size of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
+        :type band_width_size: int
+        """
+        self._band_width_size = band_width_size
+
+    @property
+    def band_width_charge_mode(self):
+        """Gets the band_width_charge_mode of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
+
+        云手机服务器带宽的计费方式  取值范围：  - 0，bandwidth, 按带宽计费  - 1，traffic, 按流量计费
+
+        :return: The band_width_charge_mode of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
+        :rtype: int
+        """
+        return self._band_width_charge_mode
+
+    @band_width_charge_mode.setter
+    def band_width_charge_mode(self, band_width_charge_mode):
+        """Sets the band_width_charge_mode of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
+
+        云手机服务器带宽的计费方式  取值范围：  - 0，bandwidth, 按带宽计费  - 1，traffic, 按流量计费
+
+        :param band_width_charge_mode: The band_width_charge_mode of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
+        :type band_width_charge_mode: int
+        """
+        self._band_width_charge_mode = band_width_charge_mode
+
+    @property
+    def band_width_share_type(self):
+        """Gets the band_width_share_type of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
+
+        云手机服务器的带宽类型  - 0，per，独享带宽 - 1，whole，共享带宽
+
+        :return: The band_width_share_type of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
+        :rtype: int
+        """
+        return self._band_width_share_type
+
+    @band_width_share_type.setter
+    def band_width_share_type(self, band_width_share_type):
+        """Sets the band_width_share_type of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
+
+        云手机服务器的带宽类型  - 0，per，独享带宽 - 1，whole，共享带宽
+
+        :param band_width_share_type: The band_width_share_type of this CreateNet2CloudPhoneServerRequestBodyBandWidth.
+        :type band_width_share_type: int
+        """
+        self._band_width_share_type = band_width_share_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

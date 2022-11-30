@@ -28,7 +28,8 @@ class BackendApiBaseInfo:
         'version': 'str',
         'req_uri': 'str',
         'timeout': 'int',
-        'enable_client_ssl': 'bool'
+        'enable_client_ssl': 'bool',
+        'retry_count': 'str'
     }
 
     attribute_map = {
@@ -40,10 +41,11 @@ class BackendApiBaseInfo:
         'version': 'version',
         'req_uri': 'req_uri',
         'timeout': 'timeout',
-        'enable_client_ssl': 'enable_client_ssl'
+        'enable_client_ssl': 'enable_client_ssl',
+        'retry_count': 'retry_count'
     }
 
-    def __init__(self, authorizer_id=None, url_domain=None, req_protocol=None, remark=None, req_method=None, version=None, req_uri=None, timeout=None, enable_client_ssl=None):
+    def __init__(self, authorizer_id=None, url_domain=None, req_protocol=None, remark=None, req_method=None, version=None, req_uri=None, timeout=None, enable_client_ssl=None, retry_count=None):
         """BackendApiBaseInfo
 
         The model defined in huaweicloud sdk
@@ -66,6 +68,8 @@ class BackendApiBaseInfo:
         :type timeout: int
         :param enable_client_ssl: 是否开启双向认证
         :type enable_client_ssl: bool
+        :param retry_count: 请求后端服务的重试次数，默认为-1，范围[-1,10]
+        :type retry_count: str
         """
         
         
@@ -79,6 +83,7 @@ class BackendApiBaseInfo:
         self._req_uri = None
         self._timeout = None
         self._enable_client_ssl = None
+        self._retry_count = None
         self.discriminator = None
 
         if authorizer_id is not None:
@@ -95,6 +100,8 @@ class BackendApiBaseInfo:
         self.timeout = timeout
         if enable_client_ssl is not None:
             self.enable_client_ssl = enable_client_ssl
+        if retry_count is not None:
+            self.retry_count = retry_count
 
     @property
     def authorizer_id(self):
@@ -293,6 +300,28 @@ class BackendApiBaseInfo:
         :type enable_client_ssl: bool
         """
         self._enable_client_ssl = enable_client_ssl
+
+    @property
+    def retry_count(self):
+        """Gets the retry_count of this BackendApiBaseInfo.
+
+        请求后端服务的重试次数，默认为-1，范围[-1,10]
+
+        :return: The retry_count of this BackendApiBaseInfo.
+        :rtype: str
+        """
+        return self._retry_count
+
+    @retry_count.setter
+    def retry_count(self, retry_count):
+        """Sets the retry_count of this BackendApiBaseInfo.
+
+        请求后端服务的重试次数，默认为-1，范围[-1,10]
+
+        :param retry_count: The retry_count of this BackendApiBaseInfo.
+        :type retry_count: str
+        """
+        self._retry_count = retry_count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

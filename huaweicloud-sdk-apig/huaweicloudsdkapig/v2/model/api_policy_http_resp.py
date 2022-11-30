@@ -31,6 +31,7 @@ class ApiPolicyHttpResp:
         'req_method': 'str',
         'req_uri': 'str',
         'timeout': 'int',
+        'retry_count': 'str',
         'vpc_channel_info': 'VpcInfo',
         'vpc_channel_status': 'int'
     }
@@ -47,11 +48,12 @@ class ApiPolicyHttpResp:
         'req_method': 'req_method',
         'req_uri': 'req_uri',
         'timeout': 'timeout',
+        'retry_count': 'retry_count',
         'vpc_channel_info': 'vpc_channel_info',
         'vpc_channel_status': 'vpc_channel_status'
     }
 
-    def __init__(self, id=None, effect_mode=None, name=None, backend_params=None, conditions=None, authorizer_id=None, url_domain=None, req_protocol=None, req_method=None, req_uri=None, timeout=None, vpc_channel_info=None, vpc_channel_status=None):
+    def __init__(self, id=None, effect_mode=None, name=None, backend_params=None, conditions=None, authorizer_id=None, url_domain=None, req_protocol=None, req_method=None, req_uri=None, timeout=None, retry_count=None, vpc_channel_info=None, vpc_channel_status=None):
         """ApiPolicyHttpResp
 
         The model defined in huaweicloud sdk
@@ -78,6 +80,8 @@ class ApiPolicyHttpResp:
         :type req_uri: str
         :param timeout: API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
         :type timeout: int
+        :param retry_count: 请求后端服务的重试次数，默认为-1，范围[-1,10]
+        :type retry_count: str
         :param vpc_channel_info: 
         :type vpc_channel_info: :class:`huaweicloudsdkapig.v2.VpcInfo`
         :param vpc_channel_status: 是否使用VPC通道： - 1： 使用VPC通道 - 2：不使用VPC通道
@@ -97,6 +101,7 @@ class ApiPolicyHttpResp:
         self._req_method = None
         self._req_uri = None
         self._timeout = None
+        self._retry_count = None
         self._vpc_channel_info = None
         self._vpc_channel_status = None
         self.discriminator = None
@@ -117,6 +122,8 @@ class ApiPolicyHttpResp:
         self.req_uri = req_uri
         if timeout is not None:
             self.timeout = timeout
+        if retry_count is not None:
+            self.retry_count = retry_count
         if vpc_channel_info is not None:
             self.vpc_channel_info = vpc_channel_info
         if vpc_channel_status is not None:
@@ -363,6 +370,28 @@ class ApiPolicyHttpResp:
         :type timeout: int
         """
         self._timeout = timeout
+
+    @property
+    def retry_count(self):
+        """Gets the retry_count of this ApiPolicyHttpResp.
+
+        请求后端服务的重试次数，默认为-1，范围[-1,10]
+
+        :return: The retry_count of this ApiPolicyHttpResp.
+        :rtype: str
+        """
+        return self._retry_count
+
+    @retry_count.setter
+    def retry_count(self, retry_count):
+        """Sets the retry_count of this ApiPolicyHttpResp.
+
+        请求后端服务的重试次数，默认为-1，范围[-1,10]
+
+        :param retry_count: The retry_count of this ApiPolicyHttpResp.
+        :type retry_count: str
+        """
+        self._retry_count = retry_count
 
     @property
     def vpc_channel_info(self):

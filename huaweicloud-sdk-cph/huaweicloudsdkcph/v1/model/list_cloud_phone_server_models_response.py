@@ -21,7 +21,7 @@ class ListCloudPhoneServerModelsResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'server_models': 'list[object]'
+        'server_models': 'list[ServerModel]'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class ListCloudPhoneServerModelsResponse(SdkResponse):
         :param request_id: 请求的唯一标识ID
         :type request_id: str
         :param server_models: 云手机服务器的规格信息
-        :type server_models: list[object]
+        :type server_models: list[:class:`huaweicloudsdkcph.v1.ServerModel`]
         """
         
         super(ListCloudPhoneServerModelsResponse, self).__init__()
@@ -46,8 +46,10 @@ class ListCloudPhoneServerModelsResponse(SdkResponse):
         self._server_models = None
         self.discriminator = None
 
-        self.request_id = request_id
-        self.server_models = server_models
+        if request_id is not None:
+            self.request_id = request_id
+        if server_models is not None:
+            self.server_models = server_models
 
     @property
     def request_id(self):
@@ -78,7 +80,7 @@ class ListCloudPhoneServerModelsResponse(SdkResponse):
         云手机服务器的规格信息
 
         :return: The server_models of this ListCloudPhoneServerModelsResponse.
-        :rtype: list[object]
+        :rtype: list[:class:`huaweicloudsdkcph.v1.ServerModel`]
         """
         return self._server_models
 
@@ -89,7 +91,7 @@ class ListCloudPhoneServerModelsResponse(SdkResponse):
         云手机服务器的规格信息
 
         :param server_models: The server_models of this ListCloudPhoneServerModelsResponse.
-        :type server_models: list[object]
+        :type server_models: list[:class:`huaweicloudsdkcph.v1.ServerModel`]
         """
         self._server_models = server_models
 

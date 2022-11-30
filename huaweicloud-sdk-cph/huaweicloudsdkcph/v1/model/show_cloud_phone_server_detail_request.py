@@ -32,7 +32,7 @@ class ShowCloudPhoneServerDetailRequest:
 
         The model defined in huaweicloud sdk
 
-        :param server_id: 服务器id。
+        :param server_id: 云手机服务器的唯一标识。
         :type server_id: str
         """
         
@@ -47,7 +47,7 @@ class ShowCloudPhoneServerDetailRequest:
     def server_id(self):
         """Gets the server_id of this ShowCloudPhoneServerDetailRequest.
 
-        服务器id。
+        云手机服务器的唯一标识。
 
         :return: The server_id of this ShowCloudPhoneServerDetailRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class ShowCloudPhoneServerDetailRequest:
     def server_id(self, server_id):
         """Sets the server_id of this ShowCloudPhoneServerDetailRequest.
 
-        服务器id。
+        云手机服务器的唯一标识。
 
         :param server_id: The server_id of this ShowCloudPhoneServerDetailRequest.
         :type server_id: str

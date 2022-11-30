@@ -42,7 +42,7 @@ class OriginRequestUrlRewrite:
         :type priority: int
         :param match_type: 匹配类型 all：所有文件 file_path：URL路径 wildcard：通配符
         :type match_type: str
-        :param source_url: 需要替换的URL。 以正斜线（/）开头的URL，不含http(s)://头及域名。 长度不超过512个字符。 支持通配符*匹配，如：/test/*/*.mp4。 匹配方式为“URL路径”时，不支持配置参数。
+        :param source_url: 需要替换的URL。 以正斜线（/）开头的URL，不含http(s)://头及域名。 长度不超过512个字符。 支持通配符\\*匹配，如：/test/\\*/\\*.mp4。 匹配方式为“URL路径”时，不支持配置参数。
         :type source_url: str
         :param target_url: 以正斜线（/）开头的URL，不含http(s)://头及域名。 长度不超过256个字符。 通配符 * 可通过$n捕获（n&#x3D;1,2,3...，例如：/newtest/$1/$2.jpg）。
         :type target_url: str
@@ -110,7 +110,7 @@ class OriginRequestUrlRewrite:
     def source_url(self):
         """Gets the source_url of this OriginRequestUrlRewrite.
 
-        需要替换的URL。 以正斜线（/）开头的URL，不含http(s)://头及域名。 长度不超过512个字符。 支持通配符*匹配，如：/test/*/*.mp4。 匹配方式为“URL路径”时，不支持配置参数。
+        需要替换的URL。 以正斜线（/）开头的URL，不含http(s)://头及域名。 长度不超过512个字符。 支持通配符\\*匹配，如：/test/\\*/\\*.mp4。 匹配方式为“URL路径”时，不支持配置参数。
 
         :return: The source_url of this OriginRequestUrlRewrite.
         :rtype: str
@@ -121,7 +121,7 @@ class OriginRequestUrlRewrite:
     def source_url(self, source_url):
         """Sets the source_url of this OriginRequestUrlRewrite.
 
-        需要替换的URL。 以正斜线（/）开头的URL，不含http(s)://头及域名。 长度不超过512个字符。 支持通配符*匹配，如：/test/*/*.mp4。 匹配方式为“URL路径”时，不支持配置参数。
+        需要替换的URL。 以正斜线（/）开头的URL，不含http(s)://头及域名。 长度不超过512个字符。 支持通配符\\*匹配，如：/test/\\*/\\*.mp4。 匹配方式为“URL路径”时，不支持配置参数。
 
         :param source_url: The source_url of this OriginRequestUrlRewrite.
         :type source_url: str

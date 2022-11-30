@@ -47,8 +47,7 @@ class GslAsyncClient(Client):
 
         查询后向流量池成员列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListBackPoolMembers
@@ -117,8 +116,7 @@ class GslAsyncClient(Client):
 
         查询后向流量池列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListBackPools
@@ -185,8 +183,7 @@ class GslAsyncClient(Client):
 
         查询套餐列表信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListProPricePlans
@@ -261,8 +258,7 @@ class GslAsyncClient(Client):
 
         批量设置自定义属性接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchSetAttributes
@@ -323,8 +319,7 @@ class GslAsyncClient(Client):
 
         用户新增自定义属性接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateAttribute
@@ -385,8 +380,7 @@ class GslAsyncClient(Client):
 
         停用自定义属性接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DisableAttribute
@@ -447,8 +441,7 @@ class GslAsyncClient(Client):
 
         启用自定义属性接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for EnableAttribute
@@ -509,8 +502,7 @@ class GslAsyncClient(Client):
 
         查询自定义属性列表接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAttributes
@@ -577,8 +569,7 @@ class GslAsyncClient(Client):
 
         修改自定义属性接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateAttribute
@@ -641,8 +632,7 @@ class GslAsyncClient(Client):
 
         清除实名认证信息，接口只支持电信卡调用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteRealName
@@ -703,8 +693,7 @@ class GslAsyncClient(Client):
 
         创建激活实体卡申请，返回业务受理单号。1~2个工作日完成激活操作。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for EnableSimCard
@@ -765,8 +754,7 @@ class GslAsyncClient(Client):
 
         查询SIM卡列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSimCards
@@ -874,8 +862,7 @@ class GslAsyncClient(Client):
 
         支持固定机卡重绑(需要上传IMEI，将SIM卡绑定到指定IMEI的设备)和普通机卡重绑(会清除之前绑定的设备,将SIM卡绑定到正在使用的设备)，单卡每月只允许重绑2次，接口只支持电信卡调用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RegisterImei
@@ -938,8 +925,7 @@ class GslAsyncClient(Client):
 
         创建复机申请，返回业务受理单号。1~2个工作日完成复机操作。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetSimCard
@@ -1002,8 +988,7 @@ class GslAsyncClient(Client):
 
         SIM卡达量断网/恢复在用,只支持电信卡。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetExceedCutNet
@@ -1066,8 +1051,7 @@ class GslAsyncClient(Client):
 
         实体卡限速接口,支持电信和联通实体卡调用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetSpeedValue
@@ -1130,8 +1114,7 @@ class GslAsyncClient(Client):
 
         设备月用量统计
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowMonthUsages
@@ -1192,8 +1175,7 @@ class GslAsyncClient(Client):
 
         实时查询SIM卡实名认证信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowRealNamed
@@ -1254,8 +1236,7 @@ class GslAsyncClient(Client):
 
         查询SIM卡详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowSimCard
@@ -1316,8 +1297,7 @@ class GslAsyncClient(Client):
 
         SIM卡申请断网/恢复在用,只支持电信卡。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartStopNet
@@ -1380,8 +1360,7 @@ class GslAsyncClient(Client):
 
         创建停机申请，返回业务受理单号。1~2个工作日完成停机操作。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopSimCard
@@ -1444,8 +1423,7 @@ class GslAsyncClient(Client):
 
         查询流量池成员列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSimPoolMembers
@@ -1514,8 +1492,7 @@ class GslAsyncClient(Client):
 
         查询流量池列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSimPools
@@ -1582,8 +1559,7 @@ class GslAsyncClient(Client):
 
         批量查询实体卡流量
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListFlowBySimCards
@@ -1644,8 +1620,7 @@ class GslAsyncClient(Client):
 
         SIM卡套餐列表查询，实体卡只会有一个套餐，eSIM/vSIM可能会有多个套餐
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSimPricePlans
@@ -1712,8 +1687,7 @@ class GslAsyncClient(Client):
 
         批量设置/取消设置标签接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchSetTags
@@ -1774,8 +1748,7 @@ class GslAsyncClient(Client):
 
         添加标签接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateTag
@@ -1836,8 +1809,7 @@ class GslAsyncClient(Client):
 
         删除标签
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteTag
@@ -1898,8 +1870,7 @@ class GslAsyncClient(Client):
 
         查询标签列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTags

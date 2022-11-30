@@ -48,7 +48,7 @@ class ListCloudPhonesRequest:
         :type limit: int
         :param phone_name: 云手机名称，支持模糊查询
         :type phone_name: str
-        :param server_id: 服务器id。
+        :param server_id: 云手机服务器的唯一标识。
         :type server_id: str
         :param status: 云手机状态 - 0：创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
         :type status: int
@@ -149,7 +149,7 @@ class ListCloudPhonesRequest:
     def server_id(self):
         """Gets the server_id of this ListCloudPhonesRequest.
 
-        服务器id。
+        云手机服务器的唯一标识。
 
         :return: The server_id of this ListCloudPhonesRequest.
         :rtype: str
@@ -160,7 +160,7 @@ class ListCloudPhonesRequest:
     def server_id(self, server_id):
         """Sets the server_id of this ListCloudPhonesRequest.
 
-        服务器id。
+        云手机服务器的唯一标识。
 
         :param server_id: The server_id of this ListCloudPhonesRequest.
         :type server_id: str

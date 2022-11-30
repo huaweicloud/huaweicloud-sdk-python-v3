@@ -47,8 +47,7 @@ class RocketMQClient(Client):
 
         批量删除实例。**实例删除后，实例中原有的数据将被删除，且没有备份，请谨慎操作。**
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteInstances
         :type request: :class:`huaweicloudsdkrocketmq.v2.BatchDeleteInstancesRequest`
@@ -108,8 +107,7 @@ class RocketMQClient(Client):
 
         批量修改消费组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchUpdateConsumerGroup
         :type request: :class:`huaweicloudsdkrocketmq.v2.BatchUpdateConsumerGroupRequest`
@@ -171,8 +169,7 @@ class RocketMQClient(Client):
 
         创建消费组或批量删除消费组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateConsumerGroupOrBatchDeleteConsumerGroup
         :type request: :class:`huaweicloudsdkrocketmq.v2.CreateConsumerGroupOrBatchDeleteConsumerGroupRequest`
@@ -236,8 +233,7 @@ class RocketMQClient(Client):
 
         创建实例，该接口创建的实例为按需计费的方式。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreatePostPaidInstance
         :type request: :class:`huaweicloudsdkrocketmq.v2.CreatePostPaidInstanceRequest`
@@ -297,8 +293,7 @@ class RocketMQClient(Client):
 
         创建用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateUser
         :type request: :class:`huaweicloudsdkrocketmq.v2.CreateUserRequest`
@@ -360,8 +355,7 @@ class RocketMQClient(Client):
 
         删除指定消费组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteConsumerGroup
         :type request: :class:`huaweicloudsdkrocketmq.v2.DeleteConsumerGroupRequest`
@@ -423,8 +417,7 @@ class RocketMQClient(Client):
 
         删除指定的实例，释放该实例的所有资源。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteInstance
         :type request: :class:`huaweicloudsdkrocketmq.v2.DeleteInstanceRequest`
@@ -484,8 +477,7 @@ class RocketMQClient(Client):
 
         删除用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteUser
         :type request: :class:`huaweicloudsdkrocketmq.v2.DeleteUserRequest`
@@ -547,8 +539,7 @@ class RocketMQClient(Client):
 
         导出死信消息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExportDlqMessage
         :type request: :class:`huaweicloudsdkrocketmq.v2.ExportDlqMessageRequest`
@@ -610,8 +601,7 @@ class RocketMQClient(Client):
 
         在创建实例时，需要配置实例所在的可用区ID，可通过该接口查询可用区的ID。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAvailableZones
         :type request: :class:`huaweicloudsdkrocketmq.v2.ListAvailableZonesRequest`
@@ -669,8 +659,7 @@ class RocketMQClient(Client):
 
         查询代理列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListBrokers
         :type request: :class:`huaweicloudsdkrocketmq.v2.ListBrokersRequest`
@@ -730,8 +719,7 @@ class RocketMQClient(Client):
 
         查询消费组的授权用户列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListConsumeGroupAccessPolicy
         :type request: :class:`huaweicloudsdkrocketmq.v2.ListConsumeGroupAccessPolicyRequest`
@@ -799,8 +787,7 @@ class RocketMQClient(Client):
 
         查询消费组列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListInstanceConsumerGroups
         :type request: :class:`huaweicloudsdkrocketmq.v2.ListInstanceConsumerGroupsRequest`
@@ -866,8 +853,7 @@ class RocketMQClient(Client):
 
         查询租户的实例列表，支持按照条件查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListInstances
         :type request: :class:`huaweicloudsdkrocketmq.v2.ListInstancesRequest`
@@ -939,8 +925,7 @@ class RocketMQClient(Client):
 
         查询消息轨迹。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListMessageTrace
         :type request: :class:`huaweicloudsdkrocketmq.v2.ListMessageTraceRequest`
@@ -1004,8 +989,7 @@ class RocketMQClient(Client):
 
         查询消息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListMessages
         :type request: :class:`huaweicloudsdkrocketmq.v2.ListMessagesRequest`
@@ -1079,8 +1063,7 @@ class RocketMQClient(Client):
 
         查询主题的授权用户列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTopicAccessPolicy
         :type request: :class:`huaweicloudsdkrocketmq.v2.ListTopicAccessPolicyRequest`
@@ -1146,8 +1129,7 @@ class RocketMQClient(Client):
 
         查询用户列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListUser
         :type request: :class:`huaweicloudsdkrocketmq.v2.ListUserRequest`
@@ -1211,8 +1193,7 @@ class RocketMQClient(Client):
 
         重置消费进度。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ResetConsumeOffset
         :type request: :class:`huaweicloudsdkrocketmq.v2.ResetConsumeOffsetRequest`
@@ -1278,8 +1259,7 @@ class RocketMQClient(Client):
 
         查询消费列表或详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowConsumerListOrDetails
         :type request: :class:`huaweicloudsdkrocketmq.v2.ShowConsumerListOrDetailsRequest`
@@ -1343,8 +1323,7 @@ class RocketMQClient(Client):
 
         查询指定消费组详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowGroup
         :type request: :class:`huaweicloudsdkrocketmq.v2.ShowGroupRequest`
@@ -1406,8 +1385,7 @@ class RocketMQClient(Client):
 
         查询指定实例的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowInstance
         :type request: :class:`huaweicloudsdkrocketmq.v2.ShowInstanceRequest`
@@ -1467,8 +1445,7 @@ class RocketMQClient(Client):
 
         查询用户详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowUser
         :type request: :class:`huaweicloudsdkrocketmq.v2.ShowUserRequest`
@@ -1530,8 +1507,7 @@ class RocketMQClient(Client):
 
         修改指定消费组参数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateConsumerGroup
         :type request: :class:`huaweicloudsdkrocketmq.v2.UpdateConsumerGroupRequest`
@@ -1595,8 +1571,7 @@ class RocketMQClient(Client):
 
         修改实例的名称和描述信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateInstance
         :type request: :class:`huaweicloudsdkrocketmq.v2.UpdateInstanceRequest`
@@ -1658,8 +1633,7 @@ class RocketMQClient(Client):
 
         修改用户参数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateUser
         :type request: :class:`huaweicloudsdkrocketmq.v2.UpdateUserRequest`
@@ -1723,8 +1697,7 @@ class RocketMQClient(Client):
 
         创建主题或批量删除主题。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateTopicOrBatchDeleteTopic
         :type request: :class:`huaweicloudsdkrocketmq.v2.CreateTopicOrBatchDeleteTopicRequest`
@@ -1788,8 +1761,7 @@ class RocketMQClient(Client):
 
         删除指定主题。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteTopic
         :type request: :class:`huaweicloudsdkrocketmq.v2.DeleteTopicRequest`
@@ -1851,8 +1823,7 @@ class RocketMQClient(Client):
 
         查询主题消费组列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListConsumerGroupOfTopic
         :type request: :class:`huaweicloudsdkrocketmq.v2.ListConsumerGroupOfTopicRequest`
@@ -1914,8 +1885,7 @@ class RocketMQClient(Client):
 
         查询单个主题。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowOneTopic
         :type request: :class:`huaweicloudsdkrocketmq.v2.ShowOneTopicRequest`
@@ -1977,8 +1947,7 @@ class RocketMQClient(Client):
 
         查询主题的消息数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTopicStatus
         :type request: :class:`huaweicloudsdkrocketmq.v2.ShowTopicStatusRequest`
@@ -2040,8 +2009,7 @@ class RocketMQClient(Client):
 
         修改主题。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateTopic
         :type request: :class:`huaweicloudsdkrocketmq.v2.UpdateTopicRequest`

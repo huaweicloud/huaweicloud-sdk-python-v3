@@ -47,8 +47,7 @@ class IoTDAAsyncClient(Client):
 
         接入凭证是用于客户端使用AMQP等协议与平台建链的一个认证凭据。只保留一条记录，如果重复调用只会重置接入凭证，使得之前的失效。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateAccessCode
@@ -111,8 +110,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口在物联网平台创建一个AMQP队列。每个租户只能创建100个队列，若超过规格，则创建失败，若队列名称与已有的队列名称相同，则创建失败。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddQueue
@@ -175,8 +173,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口查询物联网平台中的AMQP队列信息列表。可通过队列名称作模糊查询，支持分页。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchShowQueue
@@ -245,8 +242,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口在物联网平台上删除指定AMQP队列。若当前队列正在使用，则会删除失败。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteQueue
@@ -309,8 +305,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口查询物联网平台中指定队列的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowQueue
@@ -373,8 +368,7 @@ class IoTDAAsyncClient(Client):
 
         资源空间对应的是物联网平台原有的应用，在物联网平台的含义与应用一致，只是变更了名称。应用服务器可以调用此接口创建资源空间。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddApplication
@@ -437,8 +431,7 @@ class IoTDAAsyncClient(Client):
 
         删除指定资源空间。删除资源空间属于高危操作，删除资源空间后，该空间下的产品、设备等资源将不可用，请谨慎操作！
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteApplication
@@ -501,8 +494,7 @@ class IoTDAAsyncClient(Client):
 
         资源空间对应的是物联网平台原有的应用，在物联网平台的含义与应用一致，只是变更了名称。应用服务器可以调用此接口查询指定资源空间详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowApplication
@@ -565,8 +557,7 @@ class IoTDAAsyncClient(Client):
 
         资源空间对应的是物联网平台原有的应用，在物联网平台的含义与应用一致，只是变更了名称。应用服务器可以调用此接口查询资源空间列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowApplications
@@ -630,8 +621,7 @@ class IoTDAAsyncClient(Client):
         设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发异步命令，以实现对设备的控制。平台负责将命令发送给设备，并将设备执行命令结果异步通知应用服务器。 命令执行结果支持灵活的数据流转，应用服务器通过调用物联网平台的创建规则触发条件（Resource:device.command.status，Event:update）、创建规则动作并激活规则后，当命令状态变更时，物联网平台会根据规则将结果发送到规则指定的服务器，如用户自定义的HTTP服务器，AMQP服务器，以及华为云的其他储存服务器等, 详情参考[[设备命令状态变更通知](https://support.huaweicloud.com/api-iothub/iot_06_v5_01212.html)](tag:hws)[[设备命令状态变更通知](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_01212.html)](tag:hws_hk)。
         注意：此接口适用于NB设备异步命令下发，暂不支持其他协议类型设备命令下发。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateAsyncCommand
@@ -696,8 +686,7 @@ class IoTDAAsyncClient(Client):
 
         物联网平台可查询指定id的命令。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowAsyncDeviceCommand
@@ -762,8 +751,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口为创建批量处理任务，对多个设备进行批量操作。当前支持批量软固件升级、批量创建设备、批量删除设备、批量冻结设备、批量解冻设备、批量创建命令、批量创建消息任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateBatchTask
@@ -826,8 +814,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口查询物联网平台中批量任务列表，每一个任务又包括具体的任务内容、任务状态、任务完成情况统计等。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListBatchTasks
@@ -900,8 +887,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口查询物联网平台中指定批量任务的信息，包括任务内容、任务状态、任务完成情况统计以及子任务列表等。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowBatchTask
@@ -970,8 +956,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口删除批量任务文件。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteBatchTaskFile
@@ -1034,8 +1019,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口查询批量任务文件列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListBatchTaskFiles
@@ -1096,8 +1080,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口在物联网平台上传设备CA证书
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddCertificate
@@ -1164,8 +1147,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口在物联网平台验证设备的CA证书，目的是为了验证用户持有设备CA证书的私钥
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckCertificate
@@ -1236,8 +1218,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口在物联网平台删除设备CA证书
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteCertificate
@@ -1304,8 +1285,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口在物联网平台获取设备CA证书列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListCertificates
@@ -1379,8 +1359,7 @@ class IoTDAAsyncClient(Client):
         设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发命令，以实现对设备的同步控制。平台负责将命令以同步方式发送给设备，并将设备执行命令结果同步返回, 如果设备没有响应，平台会返回给应用服务器超时，平台超时间是20秒。
         注意：此接口适用于MQTT设备同步命令下发，暂不支持NB-IoT设备命令下发。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateCommand
@@ -1445,8 +1424,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口新建设备组，一个华为云账号下最多可有1,000个分组，包括父分组和子分组。设备组的最大层级关系不超过5层，即群组形成的关系树最大深度不超过5。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddDeviceGroup
@@ -1509,8 +1487,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口管理设备组中的设备。单个设备组内最多添加20,000个设备，一个设备最多可以被添加到10个设备组中。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateOrDeleteDeviceInGroup
@@ -1577,8 +1554,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口删除指定设备组，如果该设备组存在子设备组或者该设备组中存在设备，必须先删除子设备组并将设备从该设备组移除，才能删除该设备组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDeviceGroup
@@ -1641,8 +1617,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口查询物联网平台中的设备组信息列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDeviceGroups
@@ -1713,8 +1688,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口查询指定设备组详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDeviceGroup
@@ -1777,8 +1751,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口查询指定设备组下的设备列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDevicesInGroup
@@ -1847,8 +1820,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口修改物联网平台中指定设备组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDeviceGroup
@@ -1917,8 +1889,7 @@ class IoTDAAsyncClient(Client):
         - 该接口同时还支持对设备进行初始配置，接口会读取创建设备请求参数product_id对应的产品详情，如果产品的属性有定义默认值，则会将该属性默认值写入该设备的设备影子中。
         - 用户还可以使用创建设备请求参数shadow字段为设备指定初始配置，指定后将会根据service_id和desired设置的属性值与产品中对应属性的默认值比对，如果不同，则将以shadow字段中设置的属性值为准写入到设备影子中。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddDevice
@@ -1981,8 +1952,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口在物联网平台上删除指定设备。若设备下连接了非直连设备，则必须把设备下的非直连设备都删除后，才能删除该设备。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDevice
@@ -2045,8 +2015,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口冻结设备，设备冻结后不能再连接上线，可以通过解冻设备接口解除设备冻结。注意，当前仅支持冻结与平台直连的设备。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for FreezeDevice
@@ -2109,8 +2078,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口查询物联网平台中的设备信息列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDevices
@@ -2193,8 +2161,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口重置设备密钥，携带指定密钥时平台将设备密钥重置为指定的密钥，不携带密钥时平台将自动生成一个新的随机密钥返回。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetDeviceSecret
@@ -2261,8 +2228,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口重置设备指纹。携带指定设备指纹时将之重置为指定值；不携带时将之置空，后续设备第一次接入时，该设备指纹的值将设置为第一次接入时的证书指纹。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetFingerprint
@@ -2327,8 +2293,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口查询物联网平台中指定设备的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDevice
@@ -2391,8 +2356,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口解冻设备，解除冻结后，设备可以连接上线。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UnfreezeDevice
@@ -2455,8 +2419,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口修改物联网平台中指定设备的基本信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDevice
@@ -2531,8 +2494,7 @@ class IoTDAAsyncClient(Client):
         限制：
         设备影子JSON文档中的key不允许特殊字符：点(.)、dollar符号($)、空char(十六进制的ASCII码为00)。如果包含了以上特殊字符则无法正常刷新影子文档。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDeviceShadow
@@ -2605,8 +2567,7 @@ class IoTDAAsyncClient(Client):
         限制：
         设备影子JSON文档中的key不允许特殊字符：点(.)、dollar符号($)、空char(十六进制的ASCII码为00)。如果包含了以上特殊字符则无法正常刷新影子文档。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDeviceShadowDesiredData
@@ -2672,8 +2633,7 @@ class IoTDAAsyncClient(Client):
         物联网平台可向设备下发消息，应用服务器可调用此接口向指定设备下发消息，以实现对设备的控制。应用将消息下发给平台后，平台返回应用响应结果，平台再将消息发送给设备。平台返回应用响应结果不一定是设备接收结果，建议用户应用通过订阅[[设备消息状态变更通知](https://support.huaweicloud.com/api-iothub/iot_06_v5_01203.html)](tag:hws)[[设备消息状态变更通知](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_01203.html)](tag:hws_hk)，订阅后平台会将设备接收结果推送给订阅的应用。
         注意：此接口适用于MQTT设备消息下发，暂不支持其他协议接入的设备消息下发。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateMessage
@@ -2738,8 +2698,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口查询平台下发给设备的消息，平台为每个设备默认最多保存20条消息，超过20条后， 后续的消息会替换下发最早的消息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDeviceMessages
@@ -2802,8 +2761,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口查询平台下发给设备的指定消息id的消息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDeviceMessage
@@ -2868,8 +2826,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口创建产品。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateProduct
@@ -2932,8 +2889,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口删除已导入物联网平台的指定产品模型。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteProduct
@@ -2998,8 +2954,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口查询已导入物联网平台的产品模型信息列表，了解产品模型的概要信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListProducts
@@ -3068,8 +3023,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口查询已导入物联网平台的指定产品模型详细信息，包括产品模型的服务、属性、命令等。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowProduct
@@ -3134,8 +3088,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口修改已导入物联网平台的指定产品模型，包括产品模型的服务、属性、命令等。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateProduct
@@ -3201,8 +3154,7 @@ class IoTDAAsyncClient(Client):
         设备的产品模型中定义了物联网平台可向设备下发的属性，应用服务器可调用此接口向设备发送指令用以查询设备的实时属性, 并由设备将属性查询的结果同步返回给应用服务器。
         注意：此接口适用于MQTT设备，暂不支持NB-IoT设备。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListProperties
@@ -3268,8 +3220,7 @@ class IoTDAAsyncClient(Client):
         设备的产品模型中定义了物联网平台可向设备下发的属性，应用服务器可调用此接口向指定设备下发属性。平台负责将属性以同步方式发送给设备，并将设备执行属性结果同步返回。
         注意：此接口适用于MQTT设备，暂不支持NB-IoT设备。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateProperties
@@ -3334,8 +3285,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口在物联网平台创建一条规则触发条件。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateRoutingRule
@@ -3398,8 +3348,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口在物联网平台创建一条规则动作。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateRuleAction
@@ -3462,8 +3411,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口删除物联网平台中的指定规则条件。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteRoutingRule
@@ -3526,8 +3474,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口删除物联网平台中的指定规则动作。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteRuleAction
@@ -3590,8 +3537,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口查询物联网平台中设置的规则条件列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRoutingRules
@@ -3668,8 +3614,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口查询物联网平台中设置的规则动作列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRuleActions
@@ -3744,8 +3689,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口查询物联网平台中指定规则条件的配置信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowRoutingRule
@@ -3808,8 +3752,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口查询物联网平台中指定规则动作的配置信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowRuleAction
@@ -3872,8 +3815,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口修改物联网平台中指定规则条件的配置参数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateRoutingRule
@@ -3938,8 +3880,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口修改物联网平台中指定规则动作的配置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateRuleAction
@@ -4004,8 +3945,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口修改物联网平台中指定规则的状态，激活或者去激活规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ChangeRuleStatus
@@ -4070,8 +4010,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口在物联网平台创建一条规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateRule
@@ -4134,8 +4073,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口删除物联网平台中的指定规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteRule
@@ -4198,8 +4136,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口查询物联网平台中设置的规则列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRules
@@ -4270,8 +4207,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口查询物联网平台中指定规则的配置信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowRule
@@ -4334,8 +4270,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口修改物联网平台中指定规则的配置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateRule
@@ -4400,8 +4335,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口查询绑定了指定标签的资源。当前支持标签的资源有Device(设备)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListResourcesByTags
@@ -4470,8 +4404,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口为指定资源绑定标签。当前支持标签的资源有Device(设备)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for TagDevice
@@ -4534,8 +4467,7 @@ class IoTDAAsyncClient(Client):
 
         应用服务器可调用此接口为指定资源解绑标签。当前支持标签的资源有Device(设备)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UntagDevice

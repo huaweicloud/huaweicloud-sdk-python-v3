@@ -49,8 +49,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AssociateAgencyWithAllProjectsPermission
         :type request: :class:`huaweicloudsdkiam.v3.AssociateAgencyWithAllProjectsPermissionRequest`
@@ -116,8 +115,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AssociateAgencyWithDomainPermission
         :type request: :class:`huaweicloudsdkiam.v3.AssociateAgencyWithDomainPermissionRequest`
@@ -183,8 +181,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AssociateAgencyWithProjectPermission
         :type request: :class:`huaweicloudsdkiam.v3.AssociateAgencyWithProjectPermissionRequest`
@@ -250,8 +247,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AssociateRoleToGroupOnEnterpriseProject
         :type request: :class:`huaweicloudsdkiam.v3.AssociateRoleToGroupOnEnterpriseProjectRequest`
@@ -316,8 +312,7 @@ class IamClient(Client):
         基于用户为企业项目授权。
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AssociateRoleToUserOnEnterpriseProject
         :type request: :class:`huaweicloudsdkiam.v3.AssociateRoleToUserOnEnterpriseProjectRequest`
@@ -383,8 +378,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckAllProjectsPermissionForAgency
         :type request: :class:`huaweicloudsdkiam.v3.CheckAllProjectsPermissionForAgencyRequest`
@@ -450,8 +444,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckDomainPermissionForAgency
         :type request: :class:`huaweicloudsdkiam.v3.CheckDomainPermissionForAgencyRequest`
@@ -517,8 +510,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckProjectPermissionForAgency
         :type request: :class:`huaweicloudsdkiam.v3.CheckProjectPermissionForAgencyRequest`
@@ -584,8 +576,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAgency
         :type request: :class:`huaweicloudsdkiam.v3.CreateAgencyRequest`
@@ -647,8 +638,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAgencyCustomPolicy
         :type request: :class:`huaweicloudsdkiam.v3.CreateAgencyCustomPolicyRequest`
@@ -710,8 +700,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateCloudServiceCustomPolicy
         :type request: :class:`huaweicloudsdkiam.v3.CreateCloudServiceCustomPolicyRequest`
@@ -775,8 +764,7 @@ class IamClient(Client):
         
         &gt; - logintoken的有效期为10分钟。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateLoginToken
         :type request: :class:`huaweicloudsdkiam.v3.CreateLoginTokenRequest`
@@ -840,8 +828,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateMetadata
         :type request: :class:`huaweicloudsdkiam.v3.CreateMetadataRequest`
@@ -905,8 +892,7 @@ class IamClient(Client):
 
         创建OpenId Connect身份提供商配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateOpenIdConnectConfig
         :type request: :class:`huaweicloudsdkiam.v3.CreateOpenIdConnectConfigRequest`
@@ -968,8 +954,7 @@ class IamClient(Client):
 
         获取联邦认证token(OpenId Connect Id token方式)
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateTokenWithIdToken
         :type request: :class:`huaweicloudsdkiam.v3.CreateTokenWithIdTokenRequest`
@@ -1031,8 +1016,7 @@ class IamClient(Client):
 
         获取联邦认证token(OpenId Connect Id token方式)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateUnscopedTokenWithIdToken
         :type request: :class:`huaweicloudsdkiam.v3.CreateUnscopedTokenWithIdTokenRequest`
@@ -1098,8 +1082,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAgency
         :type request: :class:`huaweicloudsdkiam.v3.DeleteAgencyRequest`
@@ -1161,8 +1144,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteCustomPolicy
         :type request: :class:`huaweicloudsdkiam.v3.DeleteCustomPolicyRequest`
@@ -1224,8 +1206,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDomainGroupInheritedRole
         :type request: :class:`huaweicloudsdkiam.v3.DeleteDomainGroupInheritedRoleRequest`
@@ -1291,8 +1272,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneAddUserToGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneAddUserToGroupRequest`
@@ -1356,8 +1336,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneAssociateGroupWithDomainPermission
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneAssociateGroupWithDomainPermissionRequest`
@@ -1423,8 +1402,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneAssociateGroupWithProjectPermission
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneAssociateGroupWithProjectPermissionRequest`
@@ -1490,8 +1468,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneCheckDomainPermissionForGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCheckDomainPermissionForGroupRequest`
@@ -1557,8 +1534,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneCheckProjectPermissionForGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCheckProjectPermissionForGroupRequest`
@@ -1624,8 +1600,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneCheckUserInGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCheckUserInGroupRequest`
@@ -1689,8 +1664,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneCheckroleForGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCheckroleForGroupRequest`
@@ -1756,8 +1730,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneCreateGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateGroupRequest`
@@ -1819,8 +1792,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneCreateIdentityProvider
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateIdentityProviderRequest`
@@ -1884,8 +1856,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneCreateMapping
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateMappingRequest`
@@ -1949,8 +1920,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneCreateProject
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateProjectRequest`
@@ -2012,8 +1982,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneCreateProtocol
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateProtocolRequest`
@@ -2079,8 +2048,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneCreateScopedToken
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateScopedTokenRequest`
@@ -2142,8 +2110,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneDeleteGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneDeleteGroupRequest`
@@ -2205,8 +2172,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneDeleteIdentityProvider
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneDeleteIdentityProviderRequest`
@@ -2268,8 +2234,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneDeleteMapping
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneDeleteMappingRequest`
@@ -2331,8 +2296,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneDeleteProtocol
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneDeleteProtocolRequest`
@@ -2394,8 +2358,7 @@ class IamClient(Client):
 
         该接口可以用于管理员查询用户组所有项目服务权限列表。 该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneListAllProjectPermissionsForGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListAllProjectPermissionsForGroupRequest`
@@ -2459,8 +2422,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneListAuthDomains
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListAuthDomainsRequest`
@@ -2520,8 +2482,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneListAuthProjects
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListAuthProjectsRequest`
@@ -2581,8 +2542,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneListDomainPermissionsForGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListDomainPermissionsForGroupRequest`
@@ -2646,8 +2606,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneListEndpoints
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListEndpointsRequest`
@@ -2712,8 +2671,7 @@ class IamClient(Client):
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         &gt; - 推荐使用[查询IAM用户可以访问的账号详情](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;IAM&amp;api&#x3D;KeystoneQueryAccessibleDomainDetailsToUser)，该接口可以返回相同的响应格式。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneListFederationDomains
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListFederationDomainsRequest`
@@ -2773,8 +2731,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneListGroups
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListGroupsRequest`
@@ -2838,8 +2795,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneListIdentityProviders
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListIdentityProvidersRequest`
@@ -2899,8 +2855,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneListMappings
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListMappingsRequest`
@@ -2960,8 +2915,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneListPermissions
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListPermissionsRequest`
@@ -3037,8 +2991,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneListProjectPermissionsForGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListProjectPermissionsForGroupRequest`
@@ -3102,8 +3055,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneListProjects
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListProjectsRequest`
@@ -3177,8 +3129,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneListProjectsForUser
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListProjectsForUserRequest`
@@ -3240,8 +3191,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneListProtocols
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListProtocolsRequest`
@@ -3303,8 +3253,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneListRegions
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListRegionsRequest`
@@ -3364,8 +3313,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneListServices
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListServicesRequest`
@@ -3427,8 +3375,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneListUsersForGroupByAdmin
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListUsersForGroupByAdminRequest`
@@ -3490,8 +3437,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneListVersions
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListVersionsRequest`
@@ -3551,8 +3497,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneRemoveDomainPermissionFromGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneRemoveDomainPermissionFromGroupRequest`
@@ -3618,8 +3563,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneRemoveProjectPermissionFromGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneRemoveProjectPermissionFromGroupRequest`
@@ -3685,8 +3629,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneRemoveUserFromGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneRemoveUserFromGroupRequest`
@@ -3750,8 +3693,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneShowCatalog
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowCatalogRequest`
@@ -3811,8 +3753,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneShowEndpoint
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowEndpointRequest`
@@ -3874,8 +3815,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneShowGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowGroupRequest`
@@ -3937,8 +3877,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneShowIdentityProvider
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowIdentityProviderRequest`
@@ -4000,8 +3939,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneShowMapping
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowMappingRequest`
@@ -4063,8 +4001,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneShowPermission
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowPermissionRequest`
@@ -4126,8 +4063,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneShowProject
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowProjectRequest`
@@ -4189,8 +4125,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneShowProtocol
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowProtocolRequest`
@@ -4254,8 +4189,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneShowRegion
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowRegionRequest`
@@ -4317,8 +4251,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneShowSecurityCompliance
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowSecurityComplianceRequest`
@@ -4380,8 +4313,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneShowSecurityComplianceByOption
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowSecurityComplianceByOptionRequest`
@@ -4445,8 +4377,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneShowService
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowServiceRequest`
@@ -4508,8 +4439,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneShowVersion
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowVersionRequest`
@@ -4569,8 +4499,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneUpdateGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateGroupRequest`
@@ -4634,8 +4563,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneUpdateIdentityProvider
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateIdentityProviderRequest`
@@ -4699,8 +4627,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneUpdateMapping
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateMappingRequest`
@@ -4764,8 +4691,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneUpdateProject
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProjectRequest`
@@ -4829,8 +4755,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneUpdateProtocol
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProtocolRequest`
@@ -4896,8 +4821,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAgencies
         :type request: :class:`huaweicloudsdkiam.v3.ListAgenciesRequest`
@@ -4963,8 +4887,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAllProjectsPermissionsForAgency
         :type request: :class:`huaweicloudsdkiam.v3.ListAllProjectsPermissionsForAgencyRequest`
@@ -5028,8 +4951,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCustomPolicies
         :type request: :class:`huaweicloudsdkiam.v3.ListCustomPoliciesRequest`
@@ -5093,8 +5015,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDomainPermissionsForAgency
         :type request: :class:`huaweicloudsdkiam.v3.ListDomainPermissionsForAgencyRequest`
@@ -5158,8 +5079,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEnterpriseProjectsForGroup
         :type request: :class:`huaweicloudsdkiam.v3.ListEnterpriseProjectsForGroupRequest`
@@ -5221,8 +5141,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEnterpriseProjectsForUser
         :type request: :class:`huaweicloudsdkiam.v3.ListEnterpriseProjectsForUserRequest`
@@ -5284,8 +5203,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListGroupsForEnterpriseProject
         :type request: :class:`huaweicloudsdkiam.v3.ListGroupsForEnterpriseProjectRequest`
@@ -5347,8 +5265,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProjectPermissionsForAgency
         :type request: :class:`huaweicloudsdkiam.v3.ListProjectPermissionsForAgencyRequest`
@@ -5412,8 +5329,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRolesForGroupOnEnterpriseProject
         :type request: :class:`huaweicloudsdkiam.v3.ListRolesForGroupOnEnterpriseProjectRequest`
@@ -5476,8 +5392,7 @@ class IamClient(Client):
         该接口可用于查询企业项目直接关联用户的权限。
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRolesForUserOnEnterpriseProject
         :type request: :class:`huaweicloudsdkiam.v3.ListRolesForUserOnEnterpriseProjectRequest`
@@ -5540,8 +5455,7 @@ class IamClient(Client):
         该接口可用于查询企业项目直接关联的用户。
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListUsersForEnterpriseProject
         :type request: :class:`huaweicloudsdkiam.v3.ListUsersForEnterpriseProjectRequest`
@@ -5603,8 +5517,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RemoveAllProjectsPermissionFromAgency
         :type request: :class:`huaweicloudsdkiam.v3.RemoveAllProjectsPermissionFromAgencyRequest`
@@ -5670,8 +5583,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RemoveDomainPermissionFromAgency
         :type request: :class:`huaweicloudsdkiam.v3.RemoveDomainPermissionFromAgencyRequest`
@@ -5737,8 +5649,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RemoveProjectPermissionFromAgency
         :type request: :class:`huaweicloudsdkiam.v3.RemoveProjectPermissionFromAgencyRequest`
@@ -5804,8 +5715,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RevokeRoleFromGroupOnEnterpriseProject
         :type request: :class:`huaweicloudsdkiam.v3.RevokeRoleFromGroupOnEnterpriseProjectRequest`
@@ -5870,8 +5780,7 @@ class IamClient(Client):
         删除企业项目直接关联用户的权限。
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RevokeRoleFromUserOnEnterpriseProject
         :type request: :class:`huaweicloudsdkiam.v3.RevokeRoleFromUserOnEnterpriseProjectRequest`
@@ -5937,8 +5846,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAgency
         :type request: :class:`huaweicloudsdkiam.v3.ShowAgencyRequest`
@@ -6000,8 +5908,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowCustomPolicy
         :type request: :class:`huaweicloudsdkiam.v3.ShowCustomPolicyRequest`
@@ -6063,8 +5970,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDomainApiAclPolicy
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainApiAclPolicyRequest`
@@ -6126,8 +6032,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDomainConsoleAclPolicy
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainConsoleAclPolicyRequest`
@@ -6189,8 +6094,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDomainLoginPolicy
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainLoginPolicyRequest`
@@ -6252,8 +6156,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDomainPasswordPolicy
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainPasswordPolicyRequest`
@@ -6315,8 +6218,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDomainProtectPolicy
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainProtectPolicyRequest`
@@ -6378,8 +6280,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDomainQuota
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainQuotaRequest`
@@ -6442,8 +6343,7 @@ class IamClient(Client):
         该接口用于查询指定账号中的授权记录。
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDomainRoleAssignments
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainRoleAssignmentsRequest`
@@ -6531,8 +6431,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowMetadata
         :type request: :class:`huaweicloudsdkiam.v3.ShowMetadataRequest`
@@ -6594,8 +6493,7 @@ class IamClient(Client):
 
         查询OpenId Connect身份提供商配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowOpenIdConnectConfig
         :type request: :class:`huaweicloudsdkiam.v3.ShowOpenIdConnectConfigRequest`
@@ -6657,8 +6555,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowProjectDetailsAndStatus
         :type request: :class:`huaweicloudsdkiam.v3.ShowProjectDetailsAndStatusRequest`
@@ -6720,8 +6617,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowProjectQuota
         :type request: :class:`huaweicloudsdkiam.v3.ShowProjectQuotaRequest`
@@ -6783,8 +6679,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateAgency
         :type request: :class:`huaweicloudsdkiam.v3.UpdateAgencyRequest`
@@ -6848,8 +6743,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateAgencyCustomPolicy
         :type request: :class:`huaweicloudsdkiam.v3.UpdateAgencyCustomPolicyRequest`
@@ -6913,8 +6807,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateCloudServiceCustomPolicy
         :type request: :class:`huaweicloudsdkiam.v3.UpdateCloudServiceCustomPolicyRequest`
@@ -6978,8 +6871,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDomainApiAclPolicy
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainApiAclPolicyRequest`
@@ -7043,8 +6935,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDomainConsoleAclPolicy
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainConsoleAclPolicyRequest`
@@ -7108,8 +6999,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDomainGroupInheritRole
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainGroupInheritRoleRequest`
@@ -7175,8 +7065,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDomainLoginPolicy
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainLoginPolicyRequest`
@@ -7240,8 +7129,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDomainPasswordPolicy
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainPasswordPolicyRequest`
@@ -7305,8 +7193,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDomainProtectPolicy
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainProtectPolicyRequest`
@@ -7368,8 +7255,7 @@ class IamClient(Client):
 
         修改OpenId Connect身份提供商配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateOpenIdConnectConfig
         :type request: :class:`huaweicloudsdkiam.v3.UpdateOpenIdConnectConfigRequest`
@@ -7433,8 +7319,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateProjectStatus
         :type request: :class:`huaweicloudsdkiam.v3.UpdateProjectStatusRequest`
@@ -7500,8 +7385,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreatePermanentAccessKey
         :type request: :class:`huaweicloudsdkiam.v3.CreatePermanentAccessKeyRequest`
@@ -7565,8 +7449,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateTemporaryAccessKeyByAgency
         :type request: :class:`huaweicloudsdkiam.v3.CreateTemporaryAccessKeyByAgencyRequest`
@@ -7630,8 +7513,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateTemporaryAccessKeyByToken
         :type request: :class:`huaweicloudsdkiam.v3.CreateTemporaryAccessKeyByTokenRequest`
@@ -7693,8 +7575,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeletePermanentAccessKey
         :type request: :class:`huaweicloudsdkiam.v3.DeletePermanentAccessKeyRequest`
@@ -7756,8 +7637,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPermanentAccessKeys
         :type request: :class:`huaweicloudsdkiam.v3.ListPermanentAccessKeysRequest`
@@ -7819,8 +7699,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPermanentAccessKey
         :type request: :class:`huaweicloudsdkiam.v3.ShowPermanentAccessKeyRequest`
@@ -7882,8 +7761,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdatePermanentAccessKey
         :type request: :class:`huaweicloudsdkiam.v3.UpdatePermanentAccessKeyRequest`
@@ -7947,8 +7825,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateBindingDevice
         :type request: :class:`huaweicloudsdkiam.v3.CreateBindingDeviceRequest`
@@ -8010,8 +7887,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateMfaDevice
         :type request: :class:`huaweicloudsdkiam.v3.CreateMfaDeviceRequest`
@@ -8073,8 +7949,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateUser
         :type request: :class:`huaweicloudsdkiam.v3.CreateUserRequest`
@@ -8136,8 +8011,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteBindingDevice
         :type request: :class:`huaweicloudsdkiam.v3.DeleteBindingDeviceRequest`
@@ -8199,8 +8073,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteMfaDevice
         :type request: :class:`huaweicloudsdkiam.v3.DeleteMfaDeviceRequest`
@@ -8264,8 +8137,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneCreateUser
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserRequest`
@@ -8327,8 +8199,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneDeleteUser
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneDeleteUserRequest`
@@ -8390,8 +8261,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneListGroupsForUser
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListGroupsForUserRequest`
@@ -8453,8 +8323,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneListUsers
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListUsersRequest`
@@ -8522,8 +8391,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneShowUser
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowUserRequest`
@@ -8585,8 +8453,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneUpdateUserByAdmin
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserByAdminRequest`
@@ -8650,8 +8517,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneUpdateUserPassword
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserPasswordRequest`
@@ -8715,8 +8581,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListUserLoginProtects
         :type request: :class:`huaweicloudsdkiam.v3.ListUserLoginProtectsRequest`
@@ -8776,8 +8641,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListUserMfaDevices
         :type request: :class:`huaweicloudsdkiam.v3.ListUserMfaDevicesRequest`
@@ -8837,8 +8701,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowUser
         :type request: :class:`huaweicloudsdkiam.v3.ShowUserRequest`
@@ -8900,8 +8763,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowUserLoginProtect
         :type request: :class:`huaweicloudsdkiam.v3.ShowUserLoginProtectRequest`
@@ -8963,8 +8825,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowUserMfaDevice
         :type request: :class:`huaweicloudsdkiam.v3.ShowUserMfaDeviceRequest`
@@ -9026,8 +8887,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateLoginProtect
         :type request: :class:`huaweicloudsdkiam.v3.UpdateLoginProtectRequest`
@@ -9091,8 +8951,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateUser
         :type request: :class:`huaweicloudsdkiam.v3.UpdateUserRequest`
@@ -9156,8 +9015,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateUserInformation
         :type request: :class:`huaweicloudsdkiam.v3.UpdateUserInformationRequest`
@@ -9227,8 +9085,7 @@ class IamClient(Client):
         
         &gt; - token的有效期为24小时，建议进行缓存，避免频繁调用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneCreateAgencyToken
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateAgencyTokenRequest`
@@ -9297,8 +9154,7 @@ class IamClient(Client):
         &gt; - 通过Postman获取用户token示例请参见：[如何通过Postman获取用户token](https://support.huaweicloud.com/iam_faq/iam_01_034.html)。
         &gt; - 如果需要获取具有Security Administrator权限的token，请参见：[IAM 常见问题](https://support.huaweicloud.com/iam_faq/iam_01_0608.html)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneCreateUserTokenByPassword
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserTokenByPasswordRequest`
@@ -9367,8 +9223,7 @@ class IamClient(Client):
         &gt; - 通过Postman获取用户token示例请参见：[如何通过Postman获取用户token](https://support.huaweicloud.com/iam_faq/iam_01_034.html)。
         &gt; - 如果需要获取具有Security Administrator权限的token，请参见：[IAM 常见问题](https://support.huaweicloud.com/iam_faq/iam_01_0608.html)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneCreateUserTokenByPasswordAndMfa
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserTokenByPasswordAndMfaRequest`
@@ -9432,8 +9287,7 @@ class IamClient(Client):
         
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for KeystoneValidateToken
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneValidateTokenRequest`

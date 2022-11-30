@@ -12,10 +12,13 @@ class ErRegion:
 
     CN_SOUTH_1 = Region(id="cn-south-1", endpoint="https://er.cn-south-1.myhuaweicloud.com")
 
+    CN_NORTH_9 = Region(id="cn-north-9", endpoint="https://er.cn-north-9.myhuaweicloud.com")
+
     AP_SOUTHEAST_2 = Region(id="ap-southeast-2", endpoint="https://er.ap-southeast-2.myhuaweicloud.com")
 
     static_fields = {
         "cn-south-1": CN_SOUTH_1,
+        "cn-north-9": CN_NORTH_9,
         "ap-southeast-2": AP_SOUTHEAST_2,
     }
 

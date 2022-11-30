@@ -47,8 +47,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：批量添加删除密钥标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchCreateKmsTags
@@ -115,8 +114,7 @@ class KmsAsyncClient(Client):
         - 说明：
            - 创建密钥的用户才能撤销该密钥授权。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CancelGrant
@@ -181,8 +179,7 @@ class KmsAsyncClient(Client):
         
         - 说明：密钥处于“计划删除”状态才能取消计划删除密钥。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CancelKeyDeletion
@@ -252,8 +249,7 @@ class KmsAsyncClient(Client):
            - 授权中retiring_principal指向的用户；
            - 当授权的操作列表中包含retire-grant时，grantee_principal指向的用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CancelSelfGrant
@@ -316,8 +312,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：创建数据密钥，返回结果包含明文和密文。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateDatakey
@@ -380,8 +375,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：创建数据密钥，返回结果只包含密文。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateDatakeyWithoutPlaintext
@@ -446,8 +440,7 @@ class KmsAsyncClient(Client):
         - 说明：
            - 服务默认主密钥（密钥别名后缀为“/default”）不可以授权。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateGrant
@@ -512,8 +505,7 @@ class KmsAsyncClient(Client):
         - 对称密钥为长度为256位AES密钥，可用于小量数据的加密或者用于加密数据密钥。
         - 非对称密钥可以为RSA密钥对或者ECC密钥对，可用于数字签名及验签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateKey
@@ -576,8 +568,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：添加密钥标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateKmsTag
@@ -643,8 +634,7 @@ class KmsAsyncClient(Client):
         - 功能介绍：获取导入密钥的必要参数，包括密钥导入令牌和密钥加密公钥。
         - 说明：返回的公钥类型默认为RSA_2048。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateParametersForImport
@@ -708,8 +698,7 @@ class KmsAsyncClient(Client):
         - 功能介绍：
           生成8~8192bit范围内的随机数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateRandom
@@ -777,8 +766,7 @@ class KmsAsyncClient(Client):
         
         初始版本的状态被标记为SYSCURRENT。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateSecret
@@ -839,8 +827,7 @@ class KmsAsyncClient(Client):
 
         在指定的凭据中，创建一个新的凭据版本，用于加密保管新的凭据值。默认情况下，新创建的凭据版本被标记为SYSCURRENT状态，而SYSCURRENT标记的前一个凭据版本被标记为SYSPREVIOUS状态。您可以通过指定VersionStage参数来覆盖默认行为。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateSecretVersion
@@ -903,8 +890,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：解密数据。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DecryptData
@@ -967,8 +953,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：解密数据密钥，用指定的主密钥解密数据密钥。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DecryptDatakey
@@ -1031,8 +1016,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：删除密钥材料信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteImportedKeyMaterial
@@ -1095,8 +1079,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：计划多少天后删除密钥，可设置7天～1096天内删除密钥。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteKey
@@ -1159,8 +1142,7 @@ class KmsAsyncClient(Client):
 
         立即删除指定的凭据，且无法恢复。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteSecret
@@ -1221,8 +1203,7 @@ class KmsAsyncClient(Client):
 
         指定延迟删除时间，创建删除凭据的定时任务，可设置7~30天的的延迟删除时间。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteSecretForSchedule
@@ -1285,8 +1266,7 @@ class KmsAsyncClient(Client):
 
         删除指定的凭据版本状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteSecretStage
@@ -1349,8 +1329,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：删除密钥标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteTag
@@ -1417,8 +1396,7 @@ class KmsAsyncClient(Client):
         
         - 说明：密钥为启用状态才能禁用密钥。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DisableKey
@@ -1481,8 +1459,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：关闭用户主密钥轮换。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DisableKeyRotation
@@ -1547,8 +1524,7 @@ class KmsAsyncClient(Client):
         
         - 说明：密钥为禁用状态才能启用密钥。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for EnableKey
@@ -1614,8 +1590,7 @@ class KmsAsyncClient(Client):
           - 开启密钥轮换后，默认轮询间隔时间为365天。
           - 默认主密钥及外部导入密钥不支持轮换操作。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for EnableKeyRotation
@@ -1678,8 +1653,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：加密数据，用指定的用户主密钥加密数据。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for EncryptData
@@ -1742,8 +1716,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：加密数据密钥，用指定的主密钥加密数据密钥。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for EncryptDatakey
@@ -1806,8 +1779,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：导入密钥材料。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ImportKeyMaterial
@@ -1870,8 +1842,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：查询密钥的授权列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListGrants
@@ -1934,8 +1905,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：查询密钥详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListKeyDetail
@@ -1998,8 +1968,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：查询用户所有密钥列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListKeys
@@ -2062,8 +2031,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：查询密钥实例。通过标签过滤，查询指定用户主密钥的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListKmsByTags
@@ -2128,8 +2096,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：查询用户在指定项目下的所有标签集合。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListKmsTags
@@ -2190,8 +2157,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：查询用户可以退役的授权列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRetirableGrants
@@ -2254,8 +2220,7 @@ class KmsAsyncClient(Client):
 
         查询指定凭据版本状态标记的版本信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSecretStage
@@ -2318,8 +2283,7 @@ class KmsAsyncClient(Client):
 
         查询指定凭据下的版本列表信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSecretVersions
@@ -2380,8 +2344,7 @@ class KmsAsyncClient(Client):
 
         查询当前用户在本项目下创建的所有凭据。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSecrets
@@ -2444,8 +2407,7 @@ class KmsAsyncClient(Client):
 
         取消凭据的定时删除任务，凭据对象恢复可使用状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RestoreSecret
@@ -2506,8 +2468,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：查询用户主密钥轮换状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowKeyRotationStatus
@@ -2570,8 +2531,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：查询密钥标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowKmsTags
@@ -2634,8 +2594,7 @@ class KmsAsyncClient(Client):
 
         - 查询用户指定非对称密钥的公钥信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowPublicKey
@@ -2698,8 +2657,7 @@ class KmsAsyncClient(Client):
 
         查询指定凭据的信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowSecret
@@ -2761,8 +2719,7 @@ class KmsAsyncClient(Client):
         查询指定凭据版本的信息和版本中的明文凭据值，只能查询ENABLED状态的凭据。
         通过/v1/{project_id}/secrets/{secret_id}/versions/latest可访问凭据最新版本的凭据值。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowSecretVersion
@@ -2825,8 +2782,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：查询实例数，获取用户已经创建的用户主密钥数量。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowUserInstances
@@ -2887,8 +2843,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：查询配额，查询用户可以创建的用户主密钥配额总数及当前使用量信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowUserQuotas
@@ -2949,8 +2904,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：使用非对称密钥的私钥对消息或消息摘要进行数字签名。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for Sign
@@ -3016,8 +2970,7 @@ class KmsAsyncClient(Client):
            - 服务默认主密钥（密钥别名后缀为“/default”）不可以修改。
            - 密钥处于“计划删除”状态，密钥别名不可以修改。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateKeyAlias
@@ -3083,8 +3036,7 @@ class KmsAsyncClient(Client):
            - 服务默认主密钥（密钥别名后缀为“/default”）不可以修改。
            - 密钥处于“计划删除”状态，密钥描述不可以修改。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateKeyDescription
@@ -3147,8 +3099,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：修改用户主密钥轮换周期。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateKeyRotationInterval
@@ -3211,8 +3162,7 @@ class KmsAsyncClient(Client):
 
         更新指定凭据的元数据信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateSecret
@@ -3275,8 +3225,7 @@ class KmsAsyncClient(Client):
 
         更新凭据的版本状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateSecretStage
@@ -3341,8 +3290,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：使用非对称密钥的私钥对消息或消息摘要进行数字签名。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ValidateSignature
@@ -3405,8 +3353,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：查指定API版本信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowVersion
@@ -3467,8 +3414,7 @@ class KmsAsyncClient(Client):
 
         - 功能介绍：查询API版本信息列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowVersions

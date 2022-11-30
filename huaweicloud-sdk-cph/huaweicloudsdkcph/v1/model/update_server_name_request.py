@@ -34,7 +34,7 @@ class UpdateServerNameRequest:
 
         The model defined in huaweicloud sdk
 
-        :param server_id: 服务器id。
+        :param server_id: 云手机服务器的唯一标识。
         :type server_id: str
         :param body: Body of the UpdateServerNameRequest
         :type body: :class:`huaweicloudsdkcph.v1.UpdateServerNameRequestBody`
@@ -54,7 +54,7 @@ class UpdateServerNameRequest:
     def server_id(self):
         """Gets the server_id of this UpdateServerNameRequest.
 
-        服务器id。
+        云手机服务器的唯一标识。
 
         :return: The server_id of this UpdateServerNameRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class UpdateServerNameRequest:
     def server_id(self, server_id):
         """Sets the server_id of this UpdateServerNameRequest.
 
-        服务器id。
+        云手机服务器的唯一标识。
 
         :param server_id: The server_id of this UpdateServerNameRequest.
         :type server_id: str

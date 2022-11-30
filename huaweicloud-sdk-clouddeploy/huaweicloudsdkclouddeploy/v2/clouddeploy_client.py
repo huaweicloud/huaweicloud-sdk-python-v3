@@ -47,8 +47,7 @@ class CloudDeployClient(Client):
 
         获取指定任务的部署任务执行成功率
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTaskSuccessRate
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ListTaskSuccessRateRequest`
@@ -110,8 +109,7 @@ class CloudDeployClient(Client):
 
         获取指定项目的部署任务执行成功率
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowProjectSuccessRate
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ShowProjectSuccessRateRequest`
@@ -175,8 +173,7 @@ class CloudDeployClient(Client):
 
         通过模板新建部署任务cloudpipeline流水线调用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDeployTaskByTemplate
         :type request: :class:`huaweicloudsdkclouddeploy.v2.CreateDeployTaskByTemplateRequest`
@@ -236,8 +233,7 @@ class CloudDeployClient(Client):
 
         根据部署任务id删除部署任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDeployTask
         :type request: :class:`huaweicloudsdkclouddeploy.v2.DeleteDeployTaskRequest`
@@ -297,8 +293,7 @@ class CloudDeployClient(Client):
 
         根据开始时间和结束时间查询项目下指定任务的历史执行记录列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDeployTaskHistoryByDate
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ListDeployTaskHistoryByDateRequest`
@@ -368,8 +363,7 @@ class CloudDeployClient(Client):
 
         查询项目下部署任务列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDeployTasks
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ListDeployTasksRequest`
@@ -433,8 +427,7 @@ class CloudDeployClient(Client):
 
         根据部署任务id获取部署任务详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDeployTaskDetail
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ShowDeployTaskDetailRequest`
@@ -494,8 +487,7 @@ class CloudDeployClient(Client):
 
         根据部署任务id启动部署任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartDeployTask
         :type request: :class:`huaweicloudsdkclouddeploy.v2.StartDeployTaskRequest`
@@ -557,8 +549,7 @@ class CloudDeployClient(Client):
 
         在指定主机组下新建主机。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDeploymentHost
         :type request: :class:`huaweicloudsdkclouddeploy.v2.CreateDeploymentHostRequest`
@@ -620,8 +611,7 @@ class CloudDeployClient(Client):
 
         根据主机id删除主机。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDeploymentHost
         :type request: :class:`huaweicloudsdkclouddeploy.v2.DeleteDeploymentHostRequest`
@@ -683,8 +673,7 @@ class CloudDeployClient(Client):
 
         根据主机组id查询指定主机组下的主机列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListHosts
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ListHostsRequest`
@@ -758,8 +747,7 @@ class CloudDeployClient(Client):
 
         根据主机id查询主机详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDeploymentHostDetail
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ShowDeploymentHostDetailRequest`
@@ -821,8 +809,7 @@ class CloudDeployClient(Client):
 
         根据主机id修改主机信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDeploymentHost
         :type request: :class:`huaweicloudsdkclouddeploy.v2.UpdateDeploymentHostRequest`
@@ -886,8 +873,7 @@ class CloudDeployClient(Client):
 
         在项目下新建主机组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDeploymentGroup
         :type request: :class:`huaweicloudsdkclouddeploy.v2.CreateDeploymentGroupRequest`
@@ -947,8 +933,7 @@ class CloudDeployClient(Client):
 
         根据主机组id删除主机组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDeploymentGroup
         :type request: :class:`huaweicloudsdkclouddeploy.v2.DeleteDeploymentGroupRequest`
@@ -1008,8 +993,7 @@ class CloudDeployClient(Client):
 
         按条件查询主机组列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListHostGroups
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ListHostGroupsRequest`
@@ -1083,8 +1067,7 @@ class CloudDeployClient(Client):
 
         根据主机组id查询主机组详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDeploymentGroupDetail
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ShowDeploymentGroupDetailRequest`
@@ -1144,8 +1127,7 @@ class CloudDeployClient(Client):
 
         根据主机组id修改主机组信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDeploymentGroup
         :type request: :class:`huaweicloudsdkclouddeploy.v2.UpdateDeploymentGroupRequest`

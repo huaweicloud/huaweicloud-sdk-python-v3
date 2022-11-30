@@ -47,8 +47,7 @@ class CseClient(Client):
 
         创建微服务引擎专享版。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateEngine
         :type request: :class:`huaweicloudsdkcse.v1.CreateEngineRequest`
@@ -110,8 +109,7 @@ class CseClient(Client):
 
         删除微服务引擎专享版。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteEngine
         :type request: :class:`huaweicloudsdkcse.v1.DeleteEngineRequest`
@@ -173,8 +171,7 @@ class CseClient(Client):
 
         导出kie配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DownloadKie
         :type request: :class:`huaweicloudsdkcse.v1.DownloadKieRequest`
@@ -242,8 +239,7 @@ class CseClient(Client):
 
         查询微服务引擎列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEngines
         :type request: :class:`huaweicloudsdkcse.v1.ListEnginesRequest`
@@ -305,8 +301,7 @@ class CseClient(Client):
 
         查询微服务引擎专享版的规格列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListFlavors
         :type request: :class:`huaweicloudsdkcse.v1.ListFlavorsRequest`
@@ -366,8 +361,7 @@ class CseClient(Client):
 
         对微服务引擎专享版进行重试
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RetryEngine
         :type request: :class:`huaweicloudsdkcse.v1.RetryEngineRequest`
@@ -431,8 +425,7 @@ class CseClient(Client):
 
         查询微服务引擎专享版详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowEngine
         :type request: :class:`huaweicloudsdkcse.v1.ShowEngineRequest`
@@ -494,8 +487,7 @@ class CseClient(Client):
 
         查询微服务引擎任务详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowEngineJob
         :type request: :class:`huaweicloudsdkcse.v1.ShowEngineJobRequest`
@@ -559,8 +551,7 @@ class CseClient(Client):
 
         升级微服务引擎专享版
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpgradeEngine
         :type request: :class:`huaweicloudsdkcse.v1.UpgradeEngineRequest`
@@ -624,8 +615,7 @@ class CseClient(Client):
 
         导入kie配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UploadKie
         :type request: :class:`huaweicloudsdkcse.v1.UploadKieRequest`

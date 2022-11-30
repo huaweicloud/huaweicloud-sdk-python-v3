@@ -47,8 +47,7 @@ class VcmAsyncClient(Client):
 
         该 API 用于查询并显示单个作业详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckAudioJob
@@ -109,8 +108,7 @@ class VcmAsyncClient(Client):
 
         该API用于查询并显示单个作业详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckVideoJob
@@ -171,8 +169,7 @@ class VcmAsyncClient(Client):
 
         该接口用于创建语音内容审核的作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateAudioJob
@@ -233,8 +230,7 @@ class VcmAsyncClient(Client):
 
         该接口用于创建视频内容审核的作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateVideoJob
@@ -295,8 +291,7 @@ class VcmAsyncClient(Client):
 
         删除语音作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDemoInfo
@@ -357,8 +352,7 @@ class VcmAsyncClient(Client):
 
         该API用于删除指定作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteVideoJob
@@ -419,8 +413,7 @@ class VcmAsyncClient(Client):
 
         查询作业列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAudioJobs
@@ -479,8 +472,7 @@ class VcmAsyncClient(Client):
 
         该API用于查询并显示视频内容审核的作业列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListVideoJobs

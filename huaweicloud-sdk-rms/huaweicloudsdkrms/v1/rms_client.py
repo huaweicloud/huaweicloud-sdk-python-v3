@@ -47,8 +47,7 @@ class RmsClient(Client):
 
         查询资源与资源关系的变更历史
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowResourceHistory
         :type request: :class:`huaweicloudsdkrms.v1.ShowResourceHistoryRequest`
@@ -118,8 +117,7 @@ class RmsClient(Client):
 
         创建新的合规规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreatePolicyAssignments
         :type request: :class:`huaweicloudsdkrms.v1.CreatePolicyAssignmentsRequest`
@@ -179,8 +177,7 @@ class RmsClient(Client):
 
         根据规则ID删除此规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeletePolicyAssignment
         :type request: :class:`huaweicloudsdkrms.v1.DeletePolicyAssignmentRequest`
@@ -240,8 +237,7 @@ class RmsClient(Client):
 
         根据规则ID停用此规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DisablePolicyAssignment
         :type request: :class:`huaweicloudsdkrms.v1.DisablePolicyAssignmentRequest`
@@ -301,8 +297,7 @@ class RmsClient(Client):
 
         根据规则ID启用此规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for EnablePolicyAssignment
         :type request: :class:`huaweicloudsdkrms.v1.EnablePolicyAssignmentRequest`
@@ -362,8 +357,7 @@ class RmsClient(Client):
 
         列出用户的内置策略
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListBuiltInPolicyDefinitions
         :type request: :class:`huaweicloudsdkrms.v1.ListBuiltInPolicyDefinitionsRequest`
@@ -423,8 +417,7 @@ class RmsClient(Client):
 
         列出用户的合规规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPolicyAssignments
         :type request: :class:`huaweicloudsdkrms.v1.ListPolicyAssignmentsRequest`
@@ -482,8 +475,7 @@ class RmsClient(Client):
 
         根据规则ID查询所有的合规结果
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPolicyStatesByAssignmentId
         :type request: :class:`huaweicloudsdkrms.v1.ListPolicyStatesByAssignmentIdRequest`
@@ -553,8 +545,7 @@ class RmsClient(Client):
 
         查询用户所有的合规结果
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPolicyStatesByDomainId
         :type request: :class:`huaweicloudsdkrms.v1.ListPolicyStatesByDomainIdRequest`
@@ -622,8 +613,7 @@ class RmsClient(Client):
 
         根据资源ID查询所有合规结果
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPolicyStatesByResourceId
         :type request: :class:`huaweicloudsdkrms.v1.ListPolicyStatesByResourceIdRequest`
@@ -689,8 +679,7 @@ class RmsClient(Client):
 
         根据规则ID评估此规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RunEvaluationByPolicyAssignmentId
         :type request: :class:`huaweicloudsdkrms.v1.RunEvaluationByPolicyAssignmentIdRequest`
@@ -750,8 +739,7 @@ class RmsClient(Client):
 
         根据策略ID查询单个内置策略
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowBuiltInPolicyDefinition
         :type request: :class:`huaweicloudsdkrms.v1.ShowBuiltInPolicyDefinitionRequest`
@@ -813,8 +801,7 @@ class RmsClient(Client):
 
         根据规则ID查询此规则的评估状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowEvaluationStateByAssignmentId
         :type request: :class:`huaweicloudsdkrms.v1.ShowEvaluationStateByAssignmentIdRequest`
@@ -874,8 +861,7 @@ class RmsClient(Client):
 
         根据规则ID获取单个规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPolicyAssignment
         :type request: :class:`huaweicloudsdkrms.v1.ShowPolicyAssignmentRequest`
@@ -935,8 +921,7 @@ class RmsClient(Client):
 
         更新用户的合规规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdatePolicyAssignment
         :type request: :class:`huaweicloudsdkrms.v1.UpdatePolicyAssignmentRequest`
@@ -993,13 +978,72 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_policy_state(self, request):
+        """更新合规评估结果
+
+        更新用户自定义合规规则的合规评估结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdatePolicyState
+        :type request: :class:`huaweicloudsdkrms.v1.UpdatePolicyStateRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.UpdatePolicyStateResponse`
+        """
+        return self.update_policy_state_with_http_info(request)
+
+    def update_policy_state_with_http_info(self, request):
+        all_params = ['policy_state_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['PkiTokenAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/policy-states',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdatePolicyStateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_stored_query(self, request):
         """创建高级查询
 
         创建新的高级查询
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateStoredQuery
         :type request: :class:`huaweicloudsdkrms.v1.CreateStoredQueryRequest`
@@ -1059,8 +1103,7 @@ class RmsClient(Client):
 
         删除单个高级查询
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteStoredQuery
         :type request: :class:`huaweicloudsdkrms.v1.DeleteStoredQueryRequest`
@@ -1120,8 +1163,7 @@ class RmsClient(Client):
 
         List Schemas
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSchemas
         :type request: :class:`huaweicloudsdkrms.v1.ListSchemasRequest`
@@ -1183,8 +1225,7 @@ class RmsClient(Client):
 
         列举所有高级查询
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListStoredQueries
         :type request: :class:`huaweicloudsdkrms.v1.ListStoredQueriesRequest`
@@ -1248,8 +1289,7 @@ class RmsClient(Client):
 
         执行高级查询
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RunQuery
         :type request: :class:`huaweicloudsdkrms.v1.RunQueryRequest`
@@ -1309,8 +1349,7 @@ class RmsClient(Client):
 
         Show Resource Query Language
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowStoredQuery
         :type request: :class:`huaweicloudsdkrms.v1.ShowStoredQueryRequest`
@@ -1370,8 +1409,7 @@ class RmsClient(Client):
 
         更新自定义查询
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateStoredQuery
         :type request: :class:`huaweicloudsdkrms.v1.UpdateStoredQueryRequest`
@@ -1433,8 +1471,7 @@ class RmsClient(Client):
 
         查询用户可见的区域
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRegions
         :type request: :class:`huaweicloudsdkrms.v1.ListRegionsRequest`
@@ -1494,8 +1531,7 @@ class RmsClient(Client):
 
         指定资源ID，查询该资源与其他资源的关联关系，可以指定关系方向为\&quot;in\&quot; 或者\&quot;out\&quot;
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowResourceRelations
         :type request: :class:`huaweicloudsdkrms.v1.ShowResourceRelationsRequest`
@@ -1561,8 +1597,7 @@ class RmsClient(Client):
 
         返回当前用户下所有资源，需要当前用户有rms:resources:list权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAllResources
         :type request: :class:`huaweicloudsdkrms.v1.ListAllResourcesRequest`
@@ -1630,8 +1665,7 @@ class RmsClient(Client):
 
         查询RMS支持的云服务、资源、区域列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProviders
         :type request: :class:`huaweicloudsdkrms.v1.ListProvidersRequest`
@@ -1695,8 +1729,7 @@ class RmsClient(Client):
 
         返回当前租户下特定资源类型的资源，需要当前用户有rms:resources:list权限。比如查询云服务器，对应的RMS资源类型是ecs.cloudservers，其中provider为ecs，type为cloudservers。 RMS支持的服务和资源类型参见[支持的服务和区域](https://console.huaweicloud.com/eps/#/resources/supported)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListResources
         :type request: :class:`huaweicloudsdkrms.v1.ListResourcesRequest`
@@ -1768,8 +1801,7 @@ class RmsClient(Client):
 
         指定资源ID，返回该资源的详细信息，需要当前用户有rms:resources:get权限。比如查询云服务器，对应的RMS资源类型是ecs.cloudservers，其中provider为ecs，type为cloudservers。RMS支持的服务和资源类型参见[支持的服务和区域](https://console.huaweicloud.com/eps/#/resources/supported)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowResourceById
         :type request: :class:`huaweicloudsdkrms.v1.ShowResourceByIdRequest`
@@ -1833,8 +1865,7 @@ class RmsClient(Client):
 
         创建或更新资源记录器，只能存在一个资源记录器
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateTrackerConfig
         :type request: :class:`huaweicloudsdkrms.v1.CreateTrackerConfigRequest`
@@ -1894,8 +1925,7 @@ class RmsClient(Client):
 
         删除资源记录器
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteTrackerConfig
         :type request: :class:`huaweicloudsdkrms.v1.DeleteTrackerConfigRequest`
@@ -1953,8 +1983,7 @@ class RmsClient(Client):
 
         查询资源记录器的详细信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTrackerConfig
         :type request: :class:`huaweicloudsdkrms.v1.ShowTrackerConfigRequest`

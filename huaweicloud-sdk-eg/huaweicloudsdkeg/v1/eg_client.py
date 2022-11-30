@@ -47,8 +47,7 @@ class EgClient(Client):
 
         按照业务场景，一键创建服务委托授权
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAgencies
         :type request: :class:`huaweicloudsdkeg.v1.CreateAgenciesRequest`
@@ -108,8 +107,7 @@ class EgClient(Client):
 
         创建自定义事件通道
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateChannel
         :type request: :class:`huaweicloudsdkeg.v1.CreateChannelRequest`
@@ -169,8 +167,7 @@ class EgClient(Client):
 
         创建目标连接
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateConnection
         :type request: :class:`huaweicloudsdkeg.v1.CreateConnectionRequest`
@@ -230,8 +227,7 @@ class EgClient(Client):
 
         create endpoint
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateEndpoint
         :type request: :class:`huaweicloudsdkeg.v1.CreateEndpointRequest`
@@ -291,8 +287,7 @@ class EgClient(Client):
 
         创建自定义事件模型
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateEventSchema
         :type request: :class:`huaweicloudsdkeg.v1.CreateEventSchemaRequest`
@@ -352,8 +347,7 @@ class EgClient(Client):
 
         创建自定义事件模型版本，版本号后台自动生成
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateEventSchemaVersion
         :type request: :class:`huaweicloudsdkeg.v1.CreateEventSchemaVersionRequest`
@@ -415,8 +409,7 @@ class EgClient(Client):
 
         创建用户自定义类型的事件源，只能指定自定义通道，不能指定系统通道
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateEventSource
         :type request: :class:`huaweicloudsdkeg.v1.CreateEventSourceRequest`
@@ -476,8 +469,7 @@ class EgClient(Client):
 
         创建事件订阅
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateSubscription
         :type request: :class:`huaweicloudsdkeg.v1.CreateSubscriptionRequest`
@@ -537,8 +529,7 @@ class EgClient(Client):
 
         创建单个事件订阅目标
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateSubscriptionTarget
         :type request: :class:`huaweicloudsdkeg.v1.CreateSubscriptionTargetRequest`
@@ -600,8 +591,7 @@ class EgClient(Client):
 
         删除指定自定义事件通道
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteChannel
         :type request: :class:`huaweicloudsdkeg.v1.DeleteChannelRequest`
@@ -661,8 +651,7 @@ class EgClient(Client):
 
         删除目标连接
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteConnection
         :type request: :class:`huaweicloudsdkeg.v1.DeleteConnectionRequest`
@@ -721,8 +710,7 @@ class EgClient(Client):
         """删除访问端点
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteEndpoint
         :type request: :class:`huaweicloudsdkeg.v1.DeleteEndpointRequest`
@@ -782,8 +770,7 @@ class EgClient(Client):
 
         删除事件模型
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteEventSchema
         :type request: :class:`huaweicloudsdkeg.v1.DeleteEventSchemaRequest`
@@ -843,8 +830,7 @@ class EgClient(Client):
 
         删除事件模型指定版本
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteEventSchemaVersion
         :type request: :class:`huaweicloudsdkeg.v1.DeleteEventSchemaVersionRequest`
@@ -906,8 +892,7 @@ class EgClient(Client):
 
         删除指定的自定义事件源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteEventSource
         :type request: :class:`huaweicloudsdkeg.v1.DeleteEventSourceRequest`
@@ -967,8 +952,7 @@ class EgClient(Client):
 
         删除事件订阅
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteSubscription
         :type request: :class:`huaweicloudsdkeg.v1.DeleteSubscriptionRequest`
@@ -1028,8 +1012,7 @@ class EgClient(Client):
 
         删除事件订阅目标
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteSubscriptionTarget
         :type request: :class:`huaweicloudsdkeg.v1.DeleteSubscriptionTargetRequest`
@@ -1091,8 +1074,7 @@ class EgClient(Client):
 
         事件模型自动发现
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DiscoverEventSchemaFromData
         :type request: :class:`huaweicloudsdkeg.v1.DiscoverEventSchemaFromDataRequest`
@@ -1151,8 +1133,7 @@ class EgClient(Client):
         """查询服务委托
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAgencies
         :type request: :class:`huaweicloudsdkeg.v1.ListAgenciesRequest`
@@ -1212,8 +1193,7 @@ class EgClient(Client):
 
         查询事件通道列表，包括系统通道和自定义通道
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListChannels
         :type request: :class:`huaweicloudsdkeg.v1.ListChannelsRequest`
@@ -1283,8 +1263,7 @@ class EgClient(Client):
 
         查询目标连接列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListConnections
         :type request: :class:`huaweicloudsdkeg.v1.ListConnectionsRequest`
@@ -1352,8 +1331,7 @@ class EgClient(Client):
 
         list all endpoints
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEndpoints
         :type request: :class:`huaweicloudsdkeg.v1.ListEndpointsRequest`
@@ -1425,8 +1403,7 @@ class EgClient(Client):
 
         查询事件模型列表，包括系统事件模型和自定义事件模型
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEventSchema
         :type request: :class:`huaweicloudsdkeg.v1.ListEventSchemaRequest`
@@ -1496,8 +1473,7 @@ class EgClient(Client):
 
         查询事件模型版本列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEventSchemaVersions
         :type request: :class:`huaweicloudsdkeg.v1.ListEventSchemaVersionsRequest`
@@ -1563,8 +1539,7 @@ class EgClient(Client):
 
         支持条件查询，如可以指定事件通道ID来查询某个事件通道下的所有事件源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEventSources
         :type request: :class:`huaweicloudsdkeg.v1.ListEventSourcesRequest`
@@ -1638,8 +1613,7 @@ class EgClient(Client):
 
         查询预置的事件目标分类，获取每个事件目标分类的字段定义
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEventTarget
         :type request: :class:`huaweicloudsdkeg.v1.ListEventTargetRequest`
@@ -1705,8 +1679,7 @@ class EgClient(Client):
 
         查询当前租户的配额，未特殊配置过的会返回默认配额
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListQuotas
         :type request: :class:`huaweicloudsdkeg.v1.ListQuotasRequest`
@@ -1766,8 +1739,7 @@ class EgClient(Client):
 
         查询事件订阅列表，支持指定事件通道
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSubscriptions
         :type request: :class:`huaweicloudsdkeg.v1.ListSubscriptionsRequest`
@@ -1837,8 +1809,7 @@ class EgClient(Client):
 
         查询触发器，支持指定函数urn。一个以函数urn为目标的订阅为一个触发器。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTriggers
         :type request: :class:`huaweicloudsdkeg.v1.ListTriggersRequest`
@@ -1904,8 +1875,7 @@ class EgClient(Client):
 
         操作事件订阅，支持启用、禁用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for OperateSubscription
         :type request: :class:`huaweicloudsdkeg.v1.OperateSubscriptionRequest`
@@ -1965,8 +1935,7 @@ class EgClient(Client):
 
         发布事件到事件通道
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for PutEvents
         :type request: :class:`huaweicloudsdkeg.v1.PutEventsRequest`
@@ -2027,8 +1996,7 @@ class EgClient(Client):
         """查询事件通道详情
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailOfChannel
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfChannelRequest`
@@ -2087,8 +2055,7 @@ class EgClient(Client):
         """查询目标连接详情
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailOfConnection
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfConnectionRequest`
@@ -2148,8 +2115,7 @@ class EgClient(Client):
 
         查询事件模型详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailOfEventSchema
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSchemaRequest`
@@ -2209,8 +2175,7 @@ class EgClient(Client):
 
         查询事件模型指定版本详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailOfEventSchemaVersion
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSchemaVersionRequest`
@@ -2272,8 +2237,7 @@ class EgClient(Client):
 
         查询事件源详情信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailOfEventSource
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSourceRequest`
@@ -2333,8 +2297,7 @@ class EgClient(Client):
 
         查询事件订阅详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailOfSubscription
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfSubscriptionRequest`
@@ -2394,8 +2357,7 @@ class EgClient(Client):
 
         查询事件订阅目标详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailOfSubscriptionTarget
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfSubscriptionTargetRequest`
@@ -2457,8 +2419,7 @@ class EgClient(Client):
 
         更新自定义事件通道定义
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateChannel
         :type request: :class:`huaweicloudsdkeg.v1.UpdateChannelRequest`
@@ -2520,8 +2481,7 @@ class EgClient(Client):
 
         更新目标连接
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateConnection
         :type request: :class:`huaweicloudsdkeg.v1.UpdateConnectionRequest`
@@ -2583,8 +2543,7 @@ class EgClient(Client):
 
         update endpoint
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateEndpoint
         :type request: :class:`huaweicloudsdkeg.v1.UpdateEndpointRequest`
@@ -2646,8 +2605,7 @@ class EgClient(Client):
 
         更新自定义事件模型定义
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateEventSchema
         :type request: :class:`huaweicloudsdkeg.v1.UpdateEventSchemaRequest`
@@ -2709,8 +2667,7 @@ class EgClient(Client):
 
         更新自定义事件源定义
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateEventSource
         :type request: :class:`huaweicloudsdkeg.v1.UpdateEventSourceRequest`
@@ -2772,8 +2729,7 @@ class EgClient(Client):
 
         更新事件订阅定义
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateSubscription
         :type request: :class:`huaweicloudsdkeg.v1.UpdateSubscriptionRequest`
@@ -2835,8 +2791,7 @@ class EgClient(Client):
 
         更新事件订阅源定义
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateSubscriptionSource
         :type request: :class:`huaweicloudsdkeg.v1.UpdateSubscriptionSourceRequest`
@@ -2900,8 +2855,7 @@ class EgClient(Client):
 
         更新事件订阅目标定义
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateSubscriptionTarget
         :type request: :class:`huaweicloudsdkeg.v1.UpdateSubscriptionTargetRequest`
@@ -2965,8 +2919,7 @@ class EgClient(Client):
 
         获取服务支持的API版本列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApiVersions
         :type request: :class:`huaweicloudsdkeg.v1.ListApiVersionsRequest`

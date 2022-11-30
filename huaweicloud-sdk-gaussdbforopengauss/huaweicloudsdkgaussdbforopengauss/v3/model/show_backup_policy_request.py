@@ -34,7 +34,7 @@ class ShowBackupPolicyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言
+        :param x_language: 语言。默认值：en-us。
         :type x_language: str
         :param instance_id: 实例ID。
         :type instance_id: str
@@ -54,7 +54,7 @@ class ShowBackupPolicyRequest:
     def x_language(self):
         """Gets the x_language of this ShowBackupPolicyRequest.
 
-        语言
+        语言。默认值：en-us。
 
         :return: The x_language of this ShowBackupPolicyRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class ShowBackupPolicyRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ShowBackupPolicyRequest.
 
-        语言
+        语言。默认值：en-us。
 
         :param x_language: The x_language of this ShowBackupPolicyRequest.
         :type x_language: str

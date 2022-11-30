@@ -20,56 +20,36 @@ class ListCloudPhonesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'request_id': 'str',
-        'phones': 'list[object]'
+        'phones': 'list[Phone]',
+        'request_id': 'str'
     }
 
     attribute_map = {
-        'request_id': 'request_id',
-        'phones': 'phones'
+        'phones': 'phones',
+        'request_id': 'request_id'
     }
 
-    def __init__(self, request_id=None, phones=None):
+    def __init__(self, phones=None, request_id=None):
         """ListCloudPhonesResponse
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 请求的唯一标识ID
-        :type request_id: str
         :param phones: 云手机信息
-        :type phones: list[object]
+        :type phones: list[:class:`huaweicloudsdkcph.v1.Phone`]
+        :param request_id: 请求的唯一标识ID。
+        :type request_id: str
         """
         
         super(ListCloudPhonesResponse, self).__init__()
 
-        self._request_id = None
         self._phones = None
+        self._request_id = None
         self.discriminator = None
 
-        self.request_id = request_id
-        self.phones = phones
-
-    @property
-    def request_id(self):
-        """Gets the request_id of this ListCloudPhonesResponse.
-
-        请求的唯一标识ID
-
-        :return: The request_id of this ListCloudPhonesResponse.
-        :rtype: str
-        """
-        return self._request_id
-
-    @request_id.setter
-    def request_id(self, request_id):
-        """Sets the request_id of this ListCloudPhonesResponse.
-
-        请求的唯一标识ID
-
-        :param request_id: The request_id of this ListCloudPhonesResponse.
-        :type request_id: str
-        """
-        self._request_id = request_id
+        if phones is not None:
+            self.phones = phones
+        if request_id is not None:
+            self.request_id = request_id
 
     @property
     def phones(self):
@@ -78,7 +58,7 @@ class ListCloudPhonesResponse(SdkResponse):
         云手机信息
 
         :return: The phones of this ListCloudPhonesResponse.
-        :rtype: list[object]
+        :rtype: list[:class:`huaweicloudsdkcph.v1.Phone`]
         """
         return self._phones
 
@@ -89,9 +69,31 @@ class ListCloudPhonesResponse(SdkResponse):
         云手机信息
 
         :param phones: The phones of this ListCloudPhonesResponse.
-        :type phones: list[object]
+        :type phones: list[:class:`huaweicloudsdkcph.v1.Phone`]
         """
         self._phones = phones
+
+    @property
+    def request_id(self):
+        """Gets the request_id of this ListCloudPhonesResponse.
+
+        请求的唯一标识ID。
+
+        :return: The request_id of this ListCloudPhonesResponse.
+        :rtype: str
+        """
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this ListCloudPhonesResponse.
+
+        请求的唯一标识ID。
+
+        :param request_id: The request_id of this ListCloudPhonesResponse.
+        :type request_id: str
+        """
+        self._request_id = request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

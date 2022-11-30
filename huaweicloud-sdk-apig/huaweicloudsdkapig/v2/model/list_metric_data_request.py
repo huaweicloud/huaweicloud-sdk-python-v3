@@ -44,7 +44,7 @@ class ListMetricDataRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID
+        :param instance_id: 实例ID，在API网关控制台的“实例信息”中获取。
         :type instance_id: str
         :param dim: 指标维度 - inbound_eip：入口公网带宽，仅ELB类型实例支持 - outbound_eip：出口公网带宽
         :type dim: str
@@ -83,7 +83,7 @@ class ListMetricDataRequest:
     def instance_id(self):
         """Gets the instance_id of this ListMetricDataRequest.
 
-        实例ID
+        实例ID，在API网关控制台的“实例信息”中获取。
 
         :return: The instance_id of this ListMetricDataRequest.
         :rtype: str
@@ -94,7 +94,7 @@ class ListMetricDataRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListMetricDataRequest.
 
-        实例ID
+        实例ID，在API网关控制台的“实例信息”中获取。
 
         :param instance_id: The instance_id of this ListMetricDataRequest.
         :type instance_id: str

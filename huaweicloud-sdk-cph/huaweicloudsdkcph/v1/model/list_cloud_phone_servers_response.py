@@ -21,7 +21,7 @@ class ListCloudPhoneServersResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'servers': 'list[object]'
+        'servers': 'list[Server]'
     }
 
     attribute_map = {
@@ -34,10 +34,10 @@ class ListCloudPhoneServersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 请求的唯一标识ID
+        :param request_id: 请求的唯一标识ID。
         :type request_id: str
         :param servers: 云手机服务器信息
-        :type servers: list[object]
+        :type servers: list[:class:`huaweicloudsdkcph.v1.Server`]
         """
         
         super(ListCloudPhoneServersResponse, self).__init__()
@@ -46,14 +46,16 @@ class ListCloudPhoneServersResponse(SdkResponse):
         self._servers = None
         self.discriminator = None
 
-        self.request_id = request_id
-        self.servers = servers
+        if request_id is not None:
+            self.request_id = request_id
+        if servers is not None:
+            self.servers = servers
 
     @property
     def request_id(self):
         """Gets the request_id of this ListCloudPhoneServersResponse.
 
-        请求的唯一标识ID
+        请求的唯一标识ID。
 
         :return: The request_id of this ListCloudPhoneServersResponse.
         :rtype: str
@@ -64,7 +66,7 @@ class ListCloudPhoneServersResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this ListCloudPhoneServersResponse.
 
-        请求的唯一标识ID
+        请求的唯一标识ID。
 
         :param request_id: The request_id of this ListCloudPhoneServersResponse.
         :type request_id: str
@@ -78,7 +80,7 @@ class ListCloudPhoneServersResponse(SdkResponse):
         云手机服务器信息
 
         :return: The servers of this ListCloudPhoneServersResponse.
-        :rtype: list[object]
+        :rtype: list[:class:`huaweicloudsdkcph.v1.Server`]
         """
         return self._servers
 
@@ -89,7 +91,7 @@ class ListCloudPhoneServersResponse(SdkResponse):
         云手机服务器信息
 
         :param servers: The servers of this ListCloudPhoneServersResponse.
-        :type servers: list[object]
+        :type servers: list[:class:`huaweicloudsdkcph.v1.Server`]
         """
         self._servers = servers
 

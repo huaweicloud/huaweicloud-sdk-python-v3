@@ -47,8 +47,7 @@ class LiveAsyncClient(Client):
 
         可单独创建直播播放域名或推流域名，每个租户最多可配置64条域名记录。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateDomain
@@ -109,8 +108,7 @@ class LiveAsyncClient(Client):
 
         将用户已创建的播放域名和推流域名建立域名映射关系
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateDomainMapping
@@ -171,8 +169,7 @@ class LiveAsyncClient(Client):
 
         创建录制回调配置接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateRecordCallbackConfig
@@ -233,8 +230,7 @@ class LiveAsyncClient(Client):
 
         Create Record Index
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateRecordIndex
@@ -295,8 +291,7 @@ class LiveAsyncClient(Client):
 
         创建录制规则接口，录制规则对新推送的流生效，对已经推送中的流不生效
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateRecordRule
@@ -357,8 +352,7 @@ class LiveAsyncClient(Client):
 
         禁止直播推流
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateStreamForbidden
@@ -419,8 +413,7 @@ class LiveAsyncClient(Client):
 
         创建直播转码模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateTranscodingsTemplate
@@ -481,8 +474,7 @@ class LiveAsyncClient(Client):
 
         删除域名。只有在域名停用（off）状态时才能删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDomain
@@ -543,8 +535,7 @@ class LiveAsyncClient(Client):
 
         将播放域名和推流域名的域名映射关系删除
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDomainMapping
@@ -607,8 +598,7 @@ class LiveAsyncClient(Client):
 
         删除录制回调配置接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteRecordCallbackConfig
@@ -669,8 +659,7 @@ class LiveAsyncClient(Client):
 
         删除录制规则接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteRecordRule
@@ -731,8 +720,7 @@ class LiveAsyncClient(Client):
 
         恢复直播推流接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteStreamForbidden
@@ -797,8 +785,7 @@ class LiveAsyncClient(Client):
 
         删除直播转码模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteTranscodingsTemplate
@@ -861,8 +848,7 @@ class LiveAsyncClient(Client):
 
         获取直播播放日志，基于域名以5分钟粒度进行打包，日志内容以 \&quot;|\&quot; 进行分隔。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListLiveSampleLogs
@@ -927,8 +913,7 @@ class LiveAsyncClient(Client):
 
         查询直播中的流信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListLiveStreamsOnline
@@ -997,8 +982,7 @@ class LiveAsyncClient(Client):
 
         查询录制回调配置列表接口。通过指定条件，查询满足条件的配置列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRecordCallbackConfigs
@@ -1065,8 +1049,7 @@ class LiveAsyncClient(Client):
 
         录制完成的内容查询
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRecordContents
@@ -1141,8 +1124,7 @@ class LiveAsyncClient(Client):
 
         查询录制规则列表接口，通过指定条件，查询满足条件的录制规则列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRecordRules
@@ -1213,8 +1195,7 @@ class LiveAsyncClient(Client):
 
         查询禁播黑名单列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListStreamForbidden
@@ -1283,8 +1264,7 @@ class LiveAsyncClient(Client):
 
         对单条流的实时录制控制接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RunRecord
@@ -1347,8 +1327,7 @@ class LiveAsyncClient(Client):
 
         查询直播域名
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDomain
@@ -1409,8 +1388,7 @@ class LiveAsyncClient(Client):
 
         查询录制回调配置接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowRecordCallbackConfig
@@ -1471,8 +1449,7 @@ class LiveAsyncClient(Client):
 
         查询录制规则接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowRecordRule
@@ -1533,8 +1510,7 @@ class LiveAsyncClient(Client):
 
         查询直播转码模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTranscodingsTemplate
@@ -1601,8 +1577,7 @@ class LiveAsyncClient(Client):
 
         修改直播播放、RTMP推流加速域名相关信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDomain
@@ -1663,8 +1638,7 @@ class LiveAsyncClient(Client):
 
         修改录制回调配置接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateRecordCallbackConfig
@@ -1727,8 +1701,7 @@ class LiveAsyncClient(Client):
 
         修改录制规则接口，如果规则修改后，修改后的规则对正在录制的流无效，对新的流有效。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateRecordRule
@@ -1791,8 +1764,7 @@ class LiveAsyncClient(Client):
 
         修改禁推属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateStreamForbidden
@@ -1853,8 +1825,7 @@ class LiveAsyncClient(Client):
 
         修改直播转码模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateTranscodingsTemplate

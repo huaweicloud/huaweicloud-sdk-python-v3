@@ -31,7 +31,7 @@ class InstanceResponse:
         'updated': 'str',
         'db_user_name': 'str',
         'switch_strategy': 'str',
-        'read_only_by_user': 'str',
+        'read_only_by_user': 'bool',
         'maintenance_window': 'str',
         'nodes': 'list[NodeResponse]',
         'related_instance': 'list[RelatedInstance]',
@@ -132,8 +132,8 @@ class InstanceResponse:
         :type db_user_name: str
         :param switch_strategy: 数据库切换策略。取值为“reliability”或“availability”，分别对应于可靠性优先和可用性优先。
         :type switch_strategy: str
-        :param read_only_by_user: 客户设置实例只读API的状态信息。仅支持RDS for MySQL引擎。取值为“true”，表示该实例为客户设置的只读状态。取值为“false”，表示该实例未被客户设置只读。
-        :type read_only_by_user: str
+        :param read_only_by_user: 客户设置实例只读API的状态信息。仅支持RDS for MySQL引擎。 - true，表示该实例为客户设置的只读状态 - false， 表示该实例未被客户设置只读
+        :type read_only_by_user: bool
         :param maintenance_window: 可维护时间窗，为UTC时间。
         :type maintenance_window: str
         :param nodes: 
@@ -531,10 +531,10 @@ class InstanceResponse:
     def read_only_by_user(self):
         """Gets the read_only_by_user of this InstanceResponse.
 
-        客户设置实例只读API的状态信息。仅支持RDS for MySQL引擎。取值为“true”，表示该实例为客户设置的只读状态。取值为“false”，表示该实例未被客户设置只读。
+        客户设置实例只读API的状态信息。仅支持RDS for MySQL引擎。 - true，表示该实例为客户设置的只读状态 - false， 表示该实例未被客户设置只读
 
         :return: The read_only_by_user of this InstanceResponse.
-        :rtype: str
+        :rtype: bool
         """
         return self._read_only_by_user
 
@@ -542,10 +542,10 @@ class InstanceResponse:
     def read_only_by_user(self, read_only_by_user):
         """Sets the read_only_by_user of this InstanceResponse.
 
-        客户设置实例只读API的状态信息。仅支持RDS for MySQL引擎。取值为“true”，表示该实例为客户设置的只读状态。取值为“false”，表示该实例未被客户设置只读。
+        客户设置实例只读API的状态信息。仅支持RDS for MySQL引擎。 - true，表示该实例为客户设置的只读状态 - false， 表示该实例未被客户设置只读
 
         :param read_only_by_user: The read_only_by_user of this InstanceResponse.
-        :type read_only_by_user: str
+        :type read_only_by_user: bool
         """
         self._read_only_by_user = read_only_by_user
 

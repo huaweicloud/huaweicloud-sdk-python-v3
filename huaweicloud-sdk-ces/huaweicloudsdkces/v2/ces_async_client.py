@@ -47,8 +47,7 @@ class CesAsyncClient(Client):
 
         批量增加告警规则资源(资源分组类型的告警规则不支持)，资源分组类型的修改请使用资源分组管理相关接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddAlarmRuleResources
@@ -111,8 +110,7 @@ class CesAsyncClient(Client):
 
         给自定义资源分组,即类型为手动添加的资源分组,批量增加关联资源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchCreateResources
@@ -175,8 +173,7 @@ class CesAsyncClient(Client):
 
         批量删除告警规则V2接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeleteAlarmRules
@@ -237,8 +234,7 @@ class CesAsyncClient(Client):
 
         批量删除自定义告警模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeleteAlarmTemplates
@@ -299,8 +295,7 @@ class CesAsyncClient(Client):
 
         批量删除资源分组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeleteResourceGroups
@@ -361,8 +356,7 @@ class CesAsyncClient(Client):
 
         给自定义资源分组,即类型为手动添加的资源分组,批量删除关联资源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeleteResources
@@ -425,8 +419,7 @@ class CesAsyncClient(Client):
 
         批量启停告警规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchEnableAlarmRules
@@ -487,8 +480,7 @@ class CesAsyncClient(Client):
 
         创建告警规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateAlarmRules
@@ -549,8 +541,7 @@ class CesAsyncClient(Client):
 
         创建自定义告警模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateAlarmTemplate
@@ -611,8 +602,7 @@ class CesAsyncClient(Client):
 
         创建资源分组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateResourceGroup
@@ -673,8 +663,7 @@ class CesAsyncClient(Client):
 
         批量删除告警规则资源（资源分组类型的告警规则不支持），资源分组类型的修改请使用资源分组管理相关接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteAlarmRuleResources
@@ -737,8 +726,7 @@ class CesAsyncClient(Client):
 
         根据ECS/BMS资源ID查询磁盘、挂载点、进程、显卡、RAID控制器维度指标信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAgentDimensionInfo
@@ -807,8 +795,7 @@ class CesAsyncClient(Client):
 
         查询告警记录列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAlarmHistories
@@ -887,8 +874,7 @@ class CesAsyncClient(Client):
 
         根据告警规则ID查询策略列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAlarmRulePolicies
@@ -953,8 +939,7 @@ class CesAsyncClient(Client):
 
         根据告警规则ID查询告警规则资源列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAlarmRuleResources
@@ -1019,8 +1004,7 @@ class CesAsyncClient(Client):
 
         查询告警规则列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAlarmRules
@@ -1093,8 +1077,7 @@ class CesAsyncClient(Client):
 
         查询告警模板关联的告警规则列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAlarmTemplateAssociationAlarms
@@ -1159,8 +1142,7 @@ class CesAsyncClient(Client):
 
         查询告警模板列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAlarmTemplates
@@ -1231,8 +1213,7 @@ class CesAsyncClient(Client):
 
         查询资源分组列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListResourceGroups
@@ -1303,8 +1284,7 @@ class CesAsyncClient(Client):
 
         查询资源分组下指定服务类别特定维度的资源列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListResourceGroupsServicesResources
@@ -1377,8 +1357,7 @@ class CesAsyncClient(Client):
 
         查询告警模板详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowAlarmTemplate
@@ -1439,8 +1418,7 @@ class CesAsyncClient(Client):
 
         查询指定资源分组详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowResourceGroup
@@ -1501,8 +1479,7 @@ class CesAsyncClient(Client):
 
         修改告警规则策略(全量修改)
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateAlarmRulePolicies
@@ -1565,8 +1542,7 @@ class CesAsyncClient(Client):
 
         修改自定义告警模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateAlarmTemplate
@@ -1629,8 +1605,7 @@ class CesAsyncClient(Client):
 
         修改资源分组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateResourceGroup

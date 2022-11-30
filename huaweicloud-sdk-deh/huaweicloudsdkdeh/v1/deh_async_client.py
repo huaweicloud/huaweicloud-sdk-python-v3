@@ -49,8 +49,7 @@ class DeHAsyncClient(Client):
         
         标签管理服务（TMS）使用该接口批量添加专属主机的标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchCreateDedicatedHostTags
@@ -115,8 +114,7 @@ class DeHAsyncClient(Client):
         
         标签管理服务（TMS）使用该接口批量删除专属主机的标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeleteDedicatedHostTags
@@ -179,8 +177,7 @@ class DeHAsyncClient(Client):
 
         分配一台或多台专属主机，需要设置实例规格、所属AZ、数量等参数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateDedicatedHost
@@ -241,8 +238,7 @@ class DeHAsyncClient(Client):
 
         释放专属主机。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDedicatedHost
@@ -303,8 +299,7 @@ class DeHAsyncClient(Client):
 
         查询某一AZ内可用的专属主机类型。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDedicatedHostTypes
@@ -365,8 +360,7 @@ class DeHAsyncClient(Client):
 
         通过该接口查询专属主机列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDedicatedHosts
@@ -455,8 +449,7 @@ class DeHAsyncClient(Client):
         
         标签管理服务（TMS）使用该接口过滤专属主机列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDedicatedHostsByTags
@@ -517,8 +510,7 @@ class DeHAsyncClient(Client):
 
         查询专属主机上已部署的云服务器信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListServersDedicatedHost
@@ -583,8 +575,7 @@ class DeHAsyncClient(Client):
 
         查询某一台专属主机的详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDedicatedHost
@@ -647,8 +638,7 @@ class DeHAsyncClient(Client):
         
         标签管理服务（TMS）使用该接口查询指定专属主机的全部标签数据。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDedicatedHostTags
@@ -709,8 +699,7 @@ class DeHAsyncClient(Client):
 
         该接口用于查询租户的专属主机配额。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowQuotaSets
@@ -773,8 +762,7 @@ class DeHAsyncClient(Client):
 
         该接口用于变更专属主机的“auto_placement”和“name”属性。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDedicatedHost

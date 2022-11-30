@@ -204,7 +204,7 @@ class ApiInfo:
         :type req_params: list[:class:`huaweicloudsdkroma.v2.ReqParam`]
         :param backend_params: API的后端参数列表
         :type backend_params: list[:class:`huaweicloudsdkroma.v2.BackendParam`]
-        :param policy_functions: [函数工作流策略后端列表](tag:hws;hws_hk;hcs;fcs;g42;)[暂不支持](tag:Site)
+        :param policy_functions: [函数工作流策略后端列表](tag:hws,hws_hk,hcs,fcs,g42)[暂不支持](tag:Site)
         :type policy_functions: list[:class:`huaweicloudsdkroma.v2.ApiPolicyFunctionResp`]
         :param policy_mocks: mock策略后端列表
         :type policy_mocks: list[:class:`huaweicloudsdkroma.v2.ApiPolicyMockResp`]
@@ -1252,7 +1252,7 @@ class ApiInfo:
     def policy_functions(self):
         """Gets the policy_functions of this ApiInfo.
 
-        [函数工作流策略后端列表](tag:hws;hws_hk;hcs;fcs;g42;)[暂不支持](tag:Site)
+        [函数工作流策略后端列表](tag:hws,hws_hk,hcs,fcs,g42)[暂不支持](tag:Site)
 
         :return: The policy_functions of this ApiInfo.
         :rtype: list[:class:`huaweicloudsdkroma.v2.ApiPolicyFunctionResp`]
@@ -1263,7 +1263,7 @@ class ApiInfo:
     def policy_functions(self, policy_functions):
         """Sets the policy_functions of this ApiInfo.
 
-        [函数工作流策略后端列表](tag:hws;hws_hk;hcs;fcs;g42;)[暂不支持](tag:Site)
+        [函数工作流策略后端列表](tag:hws,hws_hk,hcs,fcs,g42)[暂不支持](tag:Site)
 
         :param policy_functions: The policy_functions of this ApiInfo.
         :type policy_functions: list[:class:`huaweicloudsdkroma.v2.ApiPolicyFunctionResp`]

@@ -42,7 +42,7 @@ class ListApiVersionsV2Request:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID
+        :param instance_id: 实例ID，在API网关控制台的“实例信息”中获取。
         :type instance_id: str
         :param api_id: API的编号
         :type api_id: str
@@ -81,7 +81,7 @@ class ListApiVersionsV2Request:
     def instance_id(self):
         """Gets the instance_id of this ListApiVersionsV2Request.
 
-        实例ID
+        实例ID，在API网关控制台的“实例信息”中获取。
 
         :return: The instance_id of this ListApiVersionsV2Request.
         :rtype: str
@@ -92,7 +92,7 @@ class ListApiVersionsV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListApiVersionsV2Request.
 
-        实例ID
+        实例ID，在API网关控制台的“实例信息”中获取。
 
         :param instance_id: The instance_id of this ListApiVersionsV2Request.
         :type instance_id: str

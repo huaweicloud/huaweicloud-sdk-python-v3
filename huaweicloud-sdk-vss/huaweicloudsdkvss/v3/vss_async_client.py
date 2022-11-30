@@ -47,8 +47,7 @@ class VssAsyncClient(Client):
 
         认证租户的域名资产
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AuthorizeDomains
@@ -109,8 +108,7 @@ class VssAsyncClient(Client):
 
         创建租户的域名资产
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateDomains
@@ -171,8 +169,7 @@ class VssAsyncClient(Client):
 
         删除租户的域名资产
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDomains
@@ -233,8 +230,7 @@ class VssAsyncClient(Client):
 
         获取租户的所有域名资产
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDomains
@@ -301,8 +297,7 @@ class VssAsyncClient(Client):
 
         获取域名登录配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDomainSettings
@@ -363,8 +358,7 @@ class VssAsyncClient(Client):
 
         更新域名登录配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDomainSettings
@@ -425,8 +419,7 @@ class VssAsyncClient(Client):
 
         下载域名扫描任务PDF报告
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DownloadTaskReport
@@ -487,8 +480,7 @@ class VssAsyncClient(Client):
 
         生成域名扫描PDF报告
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ExecuteGenerateReport
@@ -549,8 +541,7 @@ class VssAsyncClient(Client):
 
         获取域名业务风险扫描结果
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListBusinessRisks
@@ -615,8 +606,7 @@ class VssAsyncClient(Client):
 
         获取域名端口扫描结果
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListPortResults
@@ -681,8 +671,7 @@ class VssAsyncClient(Client):
 
         获取域名扫描PDF报告生成状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowReportStatus
@@ -743,8 +732,7 @@ class VssAsyncClient(Client):
 
         获取域名漏洞扫描结果
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowResults
@@ -809,8 +797,7 @@ class VssAsyncClient(Client):
 
         更新域名扫描漏洞的误报状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateFalsePositive
@@ -871,8 +858,7 @@ class VssAsyncClient(Client):
 
         取消或重启域名漏洞扫描任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CancelTasks
@@ -933,8 +919,7 @@ class VssAsyncClient(Client):
 
         创建域名漏洞扫描任务并启动
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateTasks
@@ -997,8 +982,7 @@ class VssAsyncClient(Client):
 
         获取域名漏洞扫描的历史扫描任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTaskHistories
@@ -1063,8 +1047,7 @@ class VssAsyncClient(Client):
 
         获取域名漏洞扫描任务详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTasks

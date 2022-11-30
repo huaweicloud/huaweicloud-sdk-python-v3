@@ -47,8 +47,7 @@ class CfwClient(Client):
 
         添加地址组成员
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddAddressItemsUsingPost
         :type request: :class:`huaweicloudsdkcfw.v1.AddAddressItemsUsingPostRequest`
@@ -108,8 +107,7 @@ class CfwClient(Client):
 
         添加地址组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddAddressSetInfoUsingPost
         :type request: :class:`huaweicloudsdkcfw.v1.AddAddressSetInfoUsingPostRequest`
@@ -169,8 +167,7 @@ class CfwClient(Client):
 
         创建黑白名单规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddBlackWhiteListUsingPost
         :type request: :class:`huaweicloudsdkcfw.v1.AddBlackWhiteListUsingPostRequest`
@@ -230,8 +227,7 @@ class CfwClient(Client):
 
         批量添加服务组成员
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddServiceItemsUsingPost
         :type request: :class:`huaweicloudsdkcfw.v1.AddServiceItemsUsingPostRequest`
@@ -291,8 +287,7 @@ class CfwClient(Client):
 
         创建服务组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddServiceSetUsingPost
         :type request: :class:`huaweicloudsdkcfw.v1.AddServiceSetUsingPostRequest`
@@ -352,8 +347,7 @@ class CfwClient(Client):
 
         东西向防护资源防护开启/关闭
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ChangeEwProtectStatus
         :type request: :class:`huaweicloudsdkcfw.v1.ChangeEwProtectStatusRequest`
@@ -413,8 +407,7 @@ class CfwClient(Client):
 
         切换防护模式
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ChangeIpsProtectModeUsingPost
         :type request: :class:`huaweicloudsdkcfw.v1.ChangeIpsProtectModeUsingPostRequest`
@@ -474,8 +467,7 @@ class CfwClient(Client):
 
         清除规则击中次数
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAclRuleCount
         :type request: :class:`huaweicloudsdkcfw.v1.DeleteAclRuleCountRequest`
@@ -535,8 +527,7 @@ class CfwClient(Client):
 
         删除地址组成员
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAddressItemUsingDelete
         :type request: :class:`huaweicloudsdkcfw.v1.DeleteAddressItemUsingDeleteRequest`
@@ -596,8 +587,7 @@ class CfwClient(Client):
 
         删除地址组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAddressSetInfoUsingDelete
         :type request: :class:`huaweicloudsdkcfw.v1.DeleteAddressSetInfoUsingDeleteRequest`
@@ -657,8 +647,7 @@ class CfwClient(Client):
 
         删除黑白名单规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteBlackWhiteListUsingDelete
         :type request: :class:`huaweicloudsdkcfw.v1.DeleteBlackWhiteListUsingDeleteRequest`
@@ -718,8 +707,7 @@ class CfwClient(Client):
 
         删除服务组成员
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteServiceItemUsingDelete
         :type request: :class:`huaweicloudsdkcfw.v1.DeleteServiceItemUsingDeleteRequest`
@@ -779,8 +767,7 @@ class CfwClient(Client):
 
         删除服务组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteServiceSetUsingDelete
         :type request: :class:`huaweicloudsdkcfw.v1.DeleteServiceSetUsingDeleteRequest`
@@ -840,8 +827,7 @@ class CfwClient(Client):
 
         查询访问控制日志
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAccessControlLogs
         :type request: :class:`huaweicloudsdkcfw.v1.ListAccessControlLogsRequest`
@@ -929,8 +915,7 @@ class CfwClient(Client):
 
         查询地址组成员
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAddressItemsUsingGet
         :type request: :class:`huaweicloudsdkcfw.v1.ListAddressItemsUsingGetRequest`
@@ -998,8 +983,7 @@ class CfwClient(Client):
 
         查询地址组详细
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAddressSetDetailUsingGet
         :type request: :class:`huaweicloudsdkcfw.v1.ListAddressSetDetailUsingGetRequest`
@@ -1059,8 +1043,7 @@ class CfwClient(Client):
 
         查询地址组列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAddressSetListUsingGet
         :type request: :class:`huaweicloudsdkcfw.v1.ListAddressSetListUsingGetRequest`
@@ -1130,8 +1113,7 @@ class CfwClient(Client):
 
         查询攻击日志
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAttackLogs
         :type request: :class:`huaweicloudsdkcfw.v1.ListAttackLogsRequest`
@@ -1227,8 +1209,7 @@ class CfwClient(Client):
 
         查询黑白名单列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListBlackWhiteListsUsingGet
         :type request: :class:`huaweicloudsdkcfw.v1.ListBlackWhiteListsUsingGetRequest`
@@ -1300,8 +1281,7 @@ class CfwClient(Client):
 
         查询dns服务器列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDnsServers
         :type request: :class:`huaweicloudsdkcfw.v1.ListDnsServersRequest`
@@ -1363,8 +1343,7 @@ class CfwClient(Client):
 
         查询东西向防火墙信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEastWestFirewall
         :type request: :class:`huaweicloudsdkcfw.v1.ListEastWestFirewallRequest`
@@ -1426,8 +1405,7 @@ class CfwClient(Client):
 
         查询防火墙实例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListFirewallUsingGet
         :type request: :class:`huaweicloudsdkcfw.v1.ListFirewallUsingGetRequest`
@@ -1491,8 +1469,7 @@ class CfwClient(Client):
 
         查询流日志
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListFlowLogs
         :type request: :class:`huaweicloudsdkcfw.v1.ListFlowLogsRequest`
@@ -1580,8 +1557,7 @@ class CfwClient(Client):
 
         查询防护模式
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListIpsProtectModeUsingPost
         :type request: :class:`huaweicloudsdkcfw.v1.ListIpsProtectModeUsingPostRequest`
@@ -1641,8 +1617,7 @@ class CfwClient(Client):
 
         测试域名有效性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListParseDomainDetails
         :type request: :class:`huaweicloudsdkcfw.v1.ListParseDomainDetailsRequest`
@@ -1702,8 +1677,7 @@ class CfwClient(Client):
 
         获取规则击中次数
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRuleHitCount
         :type request: :class:`huaweicloudsdkcfw.v1.ListRuleHitCountRequest`
@@ -1763,8 +1737,7 @@ class CfwClient(Client):
 
         查询服务组成员列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListServiceItemsDetails
         :type request: :class:`huaweicloudsdkcfw.v1.ListServiceItemsDetailsRequest`
@@ -1830,8 +1803,7 @@ class CfwClient(Client):
 
         获取服务组列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListServiceSet
         :type request: :class:`huaweicloudsdkcfw.v1.ListServiceSetRequest`
@@ -1897,8 +1869,7 @@ class CfwClient(Client):
 
         查询服务组细节
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListServiceSetDetails
         :type request: :class:`huaweicloudsdkcfw.v1.ListServiceSetDetailsRequest`
@@ -1958,8 +1929,7 @@ class CfwClient(Client):
 
         更新地址组信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateAddressSetInfoUsingPut
         :type request: :class:`huaweicloudsdkcfw.v1.UpdateAddressSetInfoUsingPutRequest`
@@ -2021,8 +1991,7 @@ class CfwClient(Client):
 
         更新黑白名单列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateBlackWhiteListUsingPut
         :type request: :class:`huaweicloudsdkcfw.v1.UpdateBlackWhiteListUsingPutRequest`
@@ -2084,8 +2053,7 @@ class CfwClient(Client):
 
         更新dns服务器列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDnsServers
         :type request: :class:`huaweicloudsdkcfw.v1.UpdateDnsServersRequest`
@@ -2145,8 +2113,7 @@ class CfwClient(Client):
 
         更新服务组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateServiceSetUsingPut
         :type request: :class:`huaweicloudsdkcfw.v1.UpdateServiceSetUsingPutRequest`
@@ -2208,8 +2175,7 @@ class CfwClient(Client):
 
         创建ACL规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddRuleAclUsingPost
         :type request: :class:`huaweicloudsdkcfw.v1.AddRuleAclUsingPostRequest`
@@ -2269,8 +2235,7 @@ class CfwClient(Client):
 
         删除ACL规则组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteRuleAclUsingDelete
         :type request: :class:`huaweicloudsdkcfw.v1.DeleteRuleAclUsingDeleteRequest`
@@ -2330,8 +2295,7 @@ class CfwClient(Client):
 
         ACL防护规则优先级设置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRuleAclUsingPut
         :type request: :class:`huaweicloudsdkcfw.v1.ListRuleAclUsingPutRequest`
@@ -2393,8 +2357,7 @@ class CfwClient(Client):
 
         查询防护规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRuleAclsUsingGet
         :type request: :class:`huaweicloudsdkcfw.v1.ListRuleAclsUsingGetRequest`
@@ -2474,8 +2437,7 @@ class CfwClient(Client):
 
         更新ACL规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateRuleAclUsingPut
         :type request: :class:`huaweicloudsdkcfw.v1.UpdateRuleAclUsingPutRequest`
@@ -2537,8 +2499,7 @@ class CfwClient(Client):
 
         切换开关状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ChangeIpsSwitchUsingPost
         :type request: :class:`huaweicloudsdkcfw.v1.ChangeIpsSwitchUsingPostRequest`
@@ -2598,8 +2559,7 @@ class CfwClient(Client):
 
         查询IPS特性开关状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListIpsSwitchStatusUsingGet
         :type request: :class:`huaweicloudsdkcfw.v1.ListIpsSwitchStatusUsingGetRequest`
@@ -2659,8 +2619,7 @@ class CfwClient(Client):
 
         开启关闭EIP
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ChangeProtectEip
         :type request: :class:`huaweicloudsdkcfw.v1.ChangeProtectEipRequest`
@@ -2720,8 +2679,7 @@ class CfwClient(Client):
 
         查询Eip个数
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CountEips
         :type request: :class:`huaweicloudsdkcfw.v1.CountEipsRequest`
@@ -2781,8 +2739,7 @@ class CfwClient(Client):
 
         弹性IP列表查询
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEipResources
         :type request: :class:`huaweicloudsdkcfw.v1.ListEipResourcesRequest`
@@ -2858,8 +2815,7 @@ class CfwClient(Client):
 
         查询防护vpc信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListVpcProtects
         :type request: :class:`huaweicloudsdkcfw.v1.ListVpcProtectsRequest`

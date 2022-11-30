@@ -52,8 +52,7 @@ class CloudTableAsyncClient(Client):
         
         本接口是一个同步接口，当创建CloudTable集群成功后会返回集群id。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateCluster
@@ -119,8 +118,7 @@ class CloudTableAsyncClient(Client):
         - 创建中
         - 扩容中
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteCluster
@@ -183,8 +181,7 @@ class CloudTableAsyncClient(Client):
 
         查看用户创建的集群列表信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListClusters
@@ -247,8 +244,7 @@ class CloudTableAsyncClient(Client):
 
         通过集群ID唯一标识一个集群，根据集群ID查询特定CloudTable集群的详情信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowClusterDetail

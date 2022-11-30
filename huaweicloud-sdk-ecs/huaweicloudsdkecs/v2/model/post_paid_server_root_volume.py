@@ -50,7 +50,7 @@ class PostPaidServerRootVolume:
         :type hwpassthrough: bool
         :param cluster_type: 云服务器系统盘对应的磁盘存储类型。 磁盘存储类型枚举值： DSS：专属存储类型
         :type cluster_type: str
-        :param cluster_id: 使用SDI规格创建虚拟机时请关注该参数，如果该参数值为true，说明创建的为scsi类型的卷
+        :param cluster_id: 云服务器数据盘对应的存储池的ID。
         :type cluster_id: str
         :param extendparam: 
         :type extendparam: :class:`huaweicloudsdkecs.v2.PostPaidServerRootVolumeExtendParam`
@@ -170,7 +170,7 @@ class PostPaidServerRootVolume:
     def cluster_id(self):
         """Gets the cluster_id of this PostPaidServerRootVolume.
 
-        使用SDI规格创建虚拟机时请关注该参数，如果该参数值为true，说明创建的为scsi类型的卷
+        云服务器数据盘对应的存储池的ID。
 
         :return: The cluster_id of this PostPaidServerRootVolume.
         :rtype: str
@@ -181,7 +181,7 @@ class PostPaidServerRootVolume:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this PostPaidServerRootVolume.
 
-        使用SDI规格创建虚拟机时请关注该参数，如果该参数值为true，说明创建的为scsi类型的卷
+        云服务器数据盘对应的存储池的ID。
 
         :param cluster_id: The cluster_id of this PostPaidServerRootVolume.
         :type cluster_id: str

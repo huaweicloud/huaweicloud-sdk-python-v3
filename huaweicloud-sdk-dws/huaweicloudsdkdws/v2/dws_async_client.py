@@ -49,8 +49,7 @@ class DwsAsyncClient(Client):
         集群必须要运行在VPC之内，创建集群前，您需要先创建VPC，并获取VPC和子网的id。
         该接口为异步接口，创建集群需要10～15分钟。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateCluster
@@ -111,8 +110,7 @@ class DwsAsyncClient(Client):
 
         该接口用于为指定集群创建快照。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateSnapshot
@@ -173,8 +171,7 @@ class DwsAsyncClient(Client):
 
         此接口用于删除集群。集群删除后将释放此集群的所有资源，包括客户数据。为了安全起见，请在删除集群前为这个集群创建快照。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteCluster
@@ -237,8 +234,7 @@ class DwsAsyncClient(Client):
 
         该接口用于删除一个指定手动快照。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteSnapshot
@@ -299,8 +295,7 @@ class DwsAsyncClient(Client):
 
         该接口用于查询集群详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListClusterDetails
@@ -361,8 +356,7 @@ class DwsAsyncClient(Client):
 
         该接口用于查询并显示集群列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListClusters
@@ -421,8 +415,7 @@ class DwsAsyncClient(Client):
 
         该接口用于查询所有GaussDB(DWS)服务支持的节点类型。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListNodeTypes
@@ -481,8 +474,7 @@ class DwsAsyncClient(Client):
 
         该接口用于使用快照ID查询快照详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSnapshotDetails
@@ -543,8 +535,7 @@ class DwsAsyncClient(Client):
 
         该接口用于查询快照列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSnapshots
@@ -603,8 +594,7 @@ class DwsAsyncClient(Client):
 
         此接口用于重置集群管理员密码。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetPassword
@@ -667,8 +657,7 @@ class DwsAsyncClient(Client):
 
         此接口用于扩容集群。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResizeCluster
@@ -731,8 +720,7 @@ class DwsAsyncClient(Client):
 
         此接口用于重启集群。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RestartCluster
@@ -795,8 +783,7 @@ class DwsAsyncClient(Client):
 
         该接口用于使用快照恢复集群。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RestoreCluster

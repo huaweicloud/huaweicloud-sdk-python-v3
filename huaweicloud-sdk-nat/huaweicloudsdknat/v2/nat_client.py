@@ -47,8 +47,7 @@ class NatClient(Client):
 
         批量创建DNAT规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchCreateNatGatewayDnatRules
         :type request: :class:`huaweicloudsdknat.v2.BatchCreateNatGatewayDnatRulesRequest`
@@ -108,8 +107,7 @@ class NatClient(Client):
 
         创建DNAT规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateNatGatewayDnatRule
         :type request: :class:`huaweicloudsdknat.v2.CreateNatGatewayDnatRuleRequest`
@@ -169,8 +167,7 @@ class NatClient(Client):
 
         删除指定的DNAT规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteNatGatewayDnatRule
         :type request: :class:`huaweicloudsdknat.v2.DeleteNatGatewayDnatRuleRequest`
@@ -232,8 +229,7 @@ class NatClient(Client):
 
         查询DNAT规则列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListNatGatewayDnatRules
         :type request: :class:`huaweicloudsdknat.v2.ListNatGatewayDnatRulesRequest`
@@ -322,8 +318,7 @@ class NatClient(Client):
 
         查询指定的DNAT规则详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowNatGatewayDnatRule
         :type request: :class:`huaweicloudsdknat.v2.ShowNatGatewayDnatRuleRequest`
@@ -383,8 +378,7 @@ class NatClient(Client):
 
         更新指定的DNAT规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateNatGatewayDnatRule
         :type request: :class:`huaweicloudsdknat.v2.UpdateNatGatewayDnatRuleRequest`
@@ -446,8 +440,7 @@ class NatClient(Client):
 
         创建公网NAT网关实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateNatGateway
         :type request: :class:`huaweicloudsdknat.v2.CreateNatGatewayRequest`
@@ -507,8 +500,7 @@ class NatClient(Client):
 
         删除公网NAT网关实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteNatGateway
         :type request: :class:`huaweicloudsdknat.v2.DeleteNatGatewayRequest`
@@ -568,8 +560,7 @@ class NatClient(Client):
 
         查询公网NAT网关实例列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListNatGateways
         :type request: :class:`huaweicloudsdknat.v2.ListNatGatewaysRequest`
@@ -651,8 +642,7 @@ class NatClient(Client):
 
         查询指定的公网NAT网关实例详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowNatGateway
         :type request: :class:`huaweicloudsdknat.v2.ShowNatGatewayRequest`
@@ -712,8 +702,7 @@ class NatClient(Client):
 
         更新公网NAT网关实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateNatGateway
         :type request: :class:`huaweicloudsdknat.v2.UpdateNatGatewayRequest`
@@ -775,8 +764,7 @@ class NatClient(Client):
 
         创建SNAT规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateNatGatewaySnatRule
         :type request: :class:`huaweicloudsdknat.v2.CreateNatGatewaySnatRuleRequest`
@@ -836,8 +824,7 @@ class NatClient(Client):
 
         删除指定的SNAT规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteNatGatewaySnatRule
         :type request: :class:`huaweicloudsdknat.v2.DeleteNatGatewaySnatRuleRequest`
@@ -899,8 +886,7 @@ class NatClient(Client):
 
         查询SNAT规则列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListNatGatewaySnatRules
         :type request: :class:`huaweicloudsdknat.v2.ListNatGatewaySnatRulesRequest`
@@ -983,8 +969,7 @@ class NatClient(Client):
 
         查询指定的SNAT规则详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowNatGatewaySnatRule
         :type request: :class:`huaweicloudsdknat.v2.ShowNatGatewaySnatRuleRequest`
@@ -1044,8 +1029,7 @@ class NatClient(Client):
 
         更新指定的SNAT规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateNatGatewaySnatRule
         :type request: :class:`huaweicloudsdknat.v2.UpdateNatGatewaySnatRuleRequest`

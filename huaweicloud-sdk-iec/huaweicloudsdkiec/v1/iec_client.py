@@ -47,8 +47,7 @@ class IecClient(Client):
 
         添加网卡。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddNics
         :type request: :class:`huaweicloudsdkiec.v1.AddNicsRequest`
@@ -110,8 +109,7 @@ class IecClient(Client):
 
         路由表关联子网
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AssociateSubnet
         :type request: :class:`huaweicloudsdkiec.v1.AssociateSubnetRequest`
@@ -173,8 +171,7 @@ class IecClient(Client):
 
         批量重启边缘实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchRebootInstance
         :type request: :class:`huaweicloudsdkiec.v1.BatchRebootInstanceRequest`
@@ -234,8 +231,7 @@ class IecClient(Client):
 
         批量操作启动边缘实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchStartInstance
         :type request: :class:`huaweicloudsdkiec.v1.BatchStartInstanceRequest`
@@ -295,8 +291,7 @@ class IecClient(Client):
 
         批量关闭边缘实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchStopInstance
         :type request: :class:`huaweicloudsdkiec.v1.BatchStopInstanceRequest`
@@ -358,8 +353,7 @@ class IecClient(Client):
         
         调用该接口后，系统将卸载系统盘，然后使用新镜像重新创建系统盘，并挂载至实例，实现切换操作系统功能。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ChangeOs
         :type request: :class:`huaweicloudsdkiec.v1.ChangeOsRequest`
@@ -427,8 +421,7 @@ class IecClient(Client):
         - 边缘业务下实例分布取决于部署计划的实例分布与调度策略。
         - 边缘业务下实例名称、规格、镜像等参数取决于部署计划配置计算实例字段。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDeployment
         :type request: :class:`huaweicloudsdkiec.v1.CreateDeploymentRequest`
@@ -490,8 +483,7 @@ class IecClient(Client):
         
         创建SSH密钥成功后，请把响应数据中的私钥内容保存到本地文件，用户使用该私钥登录边缘实例。为保证边缘实例安全，私钥数据只能读取一次，请妥善保管。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateKeypair
         :type request: :class:`huaweicloudsdkiec.v1.CreateKeypairRequest`
@@ -551,8 +543,7 @@ class IecClient(Client):
 
         创建端口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreatePort
         :type request: :class:`huaweicloudsdkiec.v1.CreatePortRequest`
@@ -612,8 +603,7 @@ class IecClient(Client):
 
         创建路由
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateRoutes
         :type request: :class:`huaweicloudsdkiec.v1.CreateRoutesRequest`
@@ -675,8 +665,7 @@ class IecClient(Client):
 
         创建路由表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateRoutetable
         :type request: :class:`huaweicloudsdkiec.v1.CreateRoutetableRequest`
@@ -736,8 +725,7 @@ class IecClient(Client):
 
         根据用户的请求内容，创建对应的安全组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateSecurityGroup
         :type request: :class:`huaweicloudsdkiec.v1.CreateSecurityGroupRequest`
@@ -797,8 +785,7 @@ class IecClient(Client):
 
         根据用户的请求内容，创建安全组规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateSecurityGroupRule
         :type request: :class:`huaweicloudsdkiec.v1.CreateSecurityGroupRuleRequest`
@@ -858,8 +845,7 @@ class IecClient(Client):
 
         根据用户的请求内容，创建虚拟私有云。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateVpc
         :type request: :class:`huaweicloudsdkiec.v1.CreateVpcRequest`
@@ -919,8 +905,7 @@ class IecClient(Client):
 
         删除部署计划。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDeployment
         :type request: :class:`huaweicloudsdkiec.v1.DeleteDeploymentRequest`
@@ -980,8 +965,7 @@ class IecClient(Client):
 
         删除边缘业务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteEdgeCloud
         :type request: :class:`huaweicloudsdkiec.v1.DeleteEdgeCloudRequest`
@@ -1041,8 +1025,7 @@ class IecClient(Client):
 
         批量删除边缘实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteInstances
         :type request: :class:`huaweicloudsdkiec.v1.DeleteInstancesRequest`
@@ -1102,8 +1085,7 @@ class IecClient(Client):
 
         删除密钥。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteKeypair
         :type request: :class:`huaweicloudsdkiec.v1.DeleteKeypairRequest`
@@ -1163,8 +1145,7 @@ class IecClient(Client):
 
         删除网卡。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteNics
         :type request: :class:`huaweicloudsdkiec.v1.DeleteNicsRequest`
@@ -1226,8 +1207,7 @@ class IecClient(Client):
 
         删除端口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeletePort
         :type request: :class:`huaweicloudsdkiec.v1.DeletePortRequest`
@@ -1287,8 +1267,7 @@ class IecClient(Client):
 
         删除路由
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteRoutes
         :type request: :class:`huaweicloudsdkiec.v1.DeleteRoutesRequest`
@@ -1350,8 +1329,7 @@ class IecClient(Client):
 
         删除路由表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteRoutetable
         :type request: :class:`huaweicloudsdkiec.v1.DeleteRoutetableRequest`
@@ -1411,8 +1389,7 @@ class IecClient(Client):
 
         根据安全组的ID，删除对应的安全组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteSecurityGroup
         :type request: :class:`huaweicloudsdkiec.v1.DeleteSecurityGroupRequest`
@@ -1472,8 +1449,7 @@ class IecClient(Client):
 
         根据安全组的ID，删除对应的安全组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteSecurityGroupRule
         :type request: :class:`huaweicloudsdkiec.v1.DeleteSecurityGroupRuleRequest`
@@ -1533,8 +1509,7 @@ class IecClient(Client):
 
         根据子网的ID，删除子网。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteSubnet
         :type request: :class:`huaweicloudsdkiec.v1.DeleteSubnetRequest`
@@ -1594,8 +1569,7 @@ class IecClient(Client):
 
         根据虚拟机私有云的ID，删除对应的虚拟私有云。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteVpc
         :type request: :class:`huaweicloudsdkiec.v1.DeleteVpcRequest`
@@ -1655,8 +1629,7 @@ class IecClient(Client):
 
         路由表解关联子网
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DisassociateSubnet
         :type request: :class:`huaweicloudsdkiec.v1.DisassociateSubnetRequest`
@@ -1718,8 +1691,7 @@ class IecClient(Client):
 
         执行部署计划，创建一个边缘业务。单租户默认可创建10个边缘业务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExecuteDeployment
         :type request: :class:`huaweicloudsdkiec.v1.ExecuteDeploymentRequest`
@@ -1779,8 +1751,7 @@ class IecClient(Client):
 
         执行部署计划，对边缘业务进行扩容操作。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExpandEdgecloud
         :type request: :class:`huaweicloudsdkiec.v1.ExpandEdgecloudRequest`
@@ -1840,8 +1811,7 @@ class IecClient(Client):
 
         查询带宽列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListBandwidths
         :type request: :class:`huaweicloudsdkiec.v1.ListBandwidthsRequest`
@@ -1905,8 +1875,7 @@ class IecClient(Client):
 
         查询部署计划列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDeployments
         :type request: :class:`huaweicloudsdkiec.v1.ListDeploymentsRequest`
@@ -1974,8 +1943,7 @@ class IecClient(Client):
 
         查询边缘业务列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEdgeCloud
         :type request: :class:`huaweicloudsdkiec.v1.ListEdgeCloudRequest`
@@ -2041,8 +2009,7 @@ class IecClient(Client):
 
         查询边缘规格列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListFlavors
         :type request: :class:`huaweicloudsdkiec.v1.ListFlavorsRequest`
@@ -2121,8 +2088,7 @@ class IecClient(Client):
         -  查询已注册的私有镜像列表: visibility&#x3D;private
         - 公共镜像: visibility&#x3D;public
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListImages
         :type request: :class:`huaweicloudsdkiec.v1.ListImagesRequest`
@@ -2218,8 +2184,7 @@ class IecClient(Client):
 
         查询边缘实例列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListInstances
         :type request: :class:`huaweicloudsdkiec.v1.ListInstancesRequest`
@@ -2295,8 +2260,7 @@ class IecClient(Client):
 
         查询密钥信息列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListKeypairs
         :type request: :class:`huaweicloudsdkiec.v1.ListKeypairsRequest`
@@ -2360,8 +2324,7 @@ class IecClient(Client):
 
         查询端口的列表信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPorts
         :type request: :class:`huaweicloudsdkiec.v1.ListPortsRequest`
@@ -2444,8 +2407,7 @@ class IecClient(Client):
 
         查询租户资源配额。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListQuota
         :type request: :class:`huaweicloudsdkiec.v1.ListQuotaRequest`
@@ -2503,8 +2465,7 @@ class IecClient(Client):
 
         查询子网关联的路由表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRelatedRoutetables
         :type request: :class:`huaweicloudsdkiec.v1.ListRelatedRoutetablesRequest`
@@ -2564,8 +2525,7 @@ class IecClient(Client):
 
         查询路由列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRoutes
         :type request: :class:`huaweicloudsdkiec.v1.ListRoutesRequest`
@@ -2625,8 +2585,7 @@ class IecClient(Client):
 
         查询路由列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRoutetables
         :type request: :class:`huaweicloudsdkiec.v1.ListRoutetablesRequest`
@@ -2694,8 +2653,7 @@ class IecClient(Client):
 
         根据用户的查询条件，获取安全组规则的列表信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSecurityGroupRules
         :type request: :class:`huaweicloudsdkiec.v1.ListSecurityGroupRulesRequest`
@@ -2759,8 +2717,7 @@ class IecClient(Client):
 
         根据特定查询条件，获取安全组的列表信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSecurityGroups
         :type request: :class:`huaweicloudsdkiec.v1.ListSecurityGroupsRequest`
@@ -2825,8 +2782,7 @@ class IecClient(Client):
         - 边缘站点：靠近终端应用的位置，基于一个或多个运营商建立的一个城市级站点。边缘站点提供物理隔离的资源池，提供多元算力、存储和网络的能力。用户可以将业务灵活就近部署在边缘站点上，以降低网络时延和成本。
         - 边缘区域：为依据边缘站点的物理位置划分的区域，一个边缘区域包含多个相靠近的边缘站点的集合。IEC当前提供城市级、省级和大区级三个分布层级的边缘区域。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSites
         :type request: :class:`huaweicloudsdkiec.v1.ListSitesRequest`
@@ -2900,8 +2856,7 @@ class IecClient(Client):
 
         根据查询条件获取子网的列表信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSubnets
         :type request: :class:`huaweicloudsdkiec.v1.ListSubnetsRequest`
@@ -2967,8 +2922,7 @@ class IecClient(Client):
 
         获取虚拟私有云的列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListVpcs
         :type request: :class:`huaweicloudsdkiec.v1.ListVpcsRequest`
@@ -3034,8 +2988,7 @@ class IecClient(Client):
 
         查询带宽详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowBandwidth
         :type request: :class:`huaweicloudsdkiec.v1.ShowBandwidthRequest`
@@ -3095,8 +3048,7 @@ class IecClient(Client):
 
         查询边缘业务详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowEdgeCloud
         :type request: :class:`huaweicloudsdkiec.v1.ShowEdgeCloudRequest`
@@ -3156,8 +3108,7 @@ class IecClient(Client):
 
         查询镜像详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowImage
         :type request: :class:`huaweicloudsdkiec.v1.ShowImageRequest`
@@ -3217,8 +3168,7 @@ class IecClient(Client):
 
         查询边缘实例详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowInstance
         :type request: :class:`huaweicloudsdkiec.v1.ShowInstanceRequest`
@@ -3278,8 +3228,7 @@ class IecClient(Client):
 
         查询密钥信息列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowKeypair
         :type request: :class:`huaweicloudsdkiec.v1.ShowKeypairRequest`
@@ -3339,8 +3288,7 @@ class IecClient(Client):
 
         根据端口的ID，获取端口的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPort
         :type request: :class:`huaweicloudsdkiec.v1.ShowPortRequest`
@@ -3400,8 +3348,7 @@ class IecClient(Client):
 
         查询路由表详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRoutetable
         :type request: :class:`huaweicloudsdkiec.v1.ShowRoutetableRequest`
@@ -3461,8 +3408,7 @@ class IecClient(Client):
 
         根据安全组的ID，获取特定安全组的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowSecurityGroup
         :type request: :class:`huaweicloudsdkiec.v1.ShowSecurityGroupRequest`
@@ -3522,8 +3468,7 @@ class IecClient(Client):
 
         根据安全组规则的ID，获取安全组规则的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowSecurityGroupRule
         :type request: :class:`huaweicloudsdkiec.v1.ShowSecurityGroupRuleRequest`
@@ -3583,8 +3528,7 @@ class IecClient(Client):
 
         根据子网的ID，获取子网的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowSubnet
         :type request: :class:`huaweicloudsdkiec.v1.ShowSubnetRequest`
@@ -3644,8 +3588,7 @@ class IecClient(Client):
 
         查询硬盘详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowVolume
         :type request: :class:`huaweicloudsdkiec.v1.ShowVolumeRequest`
@@ -3705,8 +3648,7 @@ class IecClient(Client):
 
         根据虚拟私有云ID，获取虚拟私有云的详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowVpc
         :type request: :class:`huaweicloudsdkiec.v1.ShowVpcRequest`
@@ -3766,8 +3708,7 @@ class IecClient(Client):
 
         修改边缘实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateInstance
         :type request: :class:`huaweicloudsdkiec.v1.UpdateInstanceRequest`
@@ -3829,8 +3770,7 @@ class IecClient(Client):
 
         更新端口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdatePort
         :type request: :class:`huaweicloudsdkiec.v1.UpdatePortRequest`
@@ -3892,8 +3832,7 @@ class IecClient(Client):
 
         更新路由信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateRoutes
         :type request: :class:`huaweicloudsdkiec.v1.UpdateRoutesRequest`
@@ -3955,8 +3894,7 @@ class IecClient(Client):
 
         更新路由表基本信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateRoutetable
         :type request: :class:`huaweicloudsdkiec.v1.UpdateRoutetableRequest`
@@ -4018,8 +3956,7 @@ class IecClient(Client):
 
         更新子网的基本信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateSubnet
         :type request: :class:`huaweicloudsdkiec.v1.UpdateSubnetRequest`
@@ -4081,8 +4018,7 @@ class IecClient(Client):
 
         更新虚拟私有云的信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateVpc
         :type request: :class:`huaweicloudsdkiec.v1.UpdateVpcRequest`
@@ -4144,8 +4080,7 @@ class IecClient(Client):
 
         创建网络ACL。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateFirewall
         :type request: :class:`huaweicloudsdkiec.v1.CreateFirewallRequest`
@@ -4205,8 +4140,7 @@ class IecClient(Client):
 
         删除网络ACL。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteFirewall
         :type request: :class:`huaweicloudsdkiec.v1.DeleteFirewallRequest`
@@ -4266,8 +4200,7 @@ class IecClient(Client):
 
         查询网络ACL列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListFirewalls
         :type request: :class:`huaweicloudsdkiec.v1.ListFirewallsRequest`
@@ -4333,8 +4266,7 @@ class IecClient(Client):
 
         查询网络ACL详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowFirewall
         :type request: :class:`huaweicloudsdkiec.v1.ShowFirewallRequest`
@@ -4394,8 +4326,7 @@ class IecClient(Client):
 
         更新网络ACL。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateFirewall
         :type request: :class:`huaweicloudsdkiec.v1.UpdateFirewallRequest`
@@ -4457,8 +4388,7 @@ class IecClient(Client):
 
         更新网络ACL规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateFirewallRule
         :type request: :class:`huaweicloudsdkiec.v1.UpdateFirewallRuleRequest`
@@ -4520,8 +4450,7 @@ class IecClient(Client):
 
         根据用户的请求内容，创建弹性公网IP
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreatePublicIp
         :type request: :class:`huaweicloudsdkiec.v1.CreatePublicIpRequest`
@@ -4581,8 +4510,7 @@ class IecClient(Client):
 
         根据弹性公网IP的ID，删除对应的弹性公网IP。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeletePublicIp
         :type request: :class:`huaweicloudsdkiec.v1.DeletePublicIpRequest`
@@ -4642,8 +4570,7 @@ class IecClient(Client):
 
         获取弹性公网IP列表信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPublicIps
         :type request: :class:`huaweicloudsdkiec.v1.ListPublicIpsRequest`
@@ -4709,8 +4636,7 @@ class IecClient(Client):
 
         获取弹性公网IP的详情信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPublicIp
         :type request: :class:`huaweicloudsdkiec.v1.ShowPublicIpRequest`
@@ -4770,8 +4696,7 @@ class IecClient(Client):
 
         更新弹性公网IP的信息，主要用于解绑和绑定EIP和VIP之间的关系。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdatePublicIp
         :type request: :class:`huaweicloudsdkiec.v1.UpdatePublicIpRequest`

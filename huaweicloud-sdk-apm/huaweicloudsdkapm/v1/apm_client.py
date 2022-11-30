@@ -47,8 +47,7 @@ class ApmClient(Client):
 
         创建aksk。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAkSk
         :type request: :class:`huaweicloudsdkapm.v1.CreateAkSkRequest`
@@ -108,8 +107,7 @@ class ApmClient(Client):
 
         删除aksk。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAkSk
         :type request: :class:`huaweicloudsdkapm.v1.DeleteAkSkRequest`
@@ -169,8 +167,7 @@ class ApmClient(Client):
 
         查询租户的aksk。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAkSks
         :type request: :class:`huaweicloudsdkapm.v1.ShowAkSksRequest`
@@ -228,8 +225,7 @@ class ApmClient(Client):
 
         查询系统中存在的告警。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAlarmData
         :type request: :class:`huaweicloudsdkapm.v1.ListAlarmDataRequest`
@@ -291,8 +287,7 @@ class ApmClient(Client):
 
         查询单个告警的触发详情与历史。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAlarmNotify
         :type request: :class:`huaweicloudsdkapm.v1.ListAlarmNotifyRequest`
@@ -354,8 +349,7 @@ class ApmClient(Client):
 
         获取该用户创建的ak/sk列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAkSk
         :type request: :class:`huaweicloudsdkapm.v1.ListAkSkRequest`
@@ -413,8 +407,7 @@ class ApmClient(Client):
 
         该接口用于查询对应用户下的应用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListBusiness
         :type request: :class:`huaweicloudsdkapm.v1.ListBusinessRequest`
@@ -472,8 +465,7 @@ class ApmClient(Client):
 
         查询监控项列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEnvMonitorItem
         :type request: :class:`huaweicloudsdkapm.v1.ListEnvMonitorItemRequest`
@@ -535,8 +527,7 @@ class ApmClient(Client):
 
         保存监控项。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SaveMonitorItemConfig
         :type request: :class:`huaweicloudsdkapm.v1.SaveMonitorItemConfigRequest`
@@ -598,8 +589,7 @@ class ApmClient(Client):
 
         对指定区域下的组件和环境及其探针情况进行搜索。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SearchApplication
         :type request: :class:`huaweicloudsdkapm.v1.SearchApplicationRequest`
@@ -661,8 +651,7 @@ class ApmClient(Client):
 
         根据region名称获取该region下的master服务podlb地址信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowMasterAddress
         :type request: :class:`huaweicloudsdkapm.v1.ShowMasterAddressRequest`
@@ -722,8 +711,7 @@ class ApmClient(Client):
 
         该接口用于删除指定的组件。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteApp
         :type request: :class:`huaweicloudsdkapm.v1.DeleteAppRequest`
@@ -785,8 +773,7 @@ class ApmClient(Client):
 
         获取组件下的环境列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAppEnvs
         :type request: :class:`huaweicloudsdkapm.v1.ListAppEnvsRequest`
@@ -848,8 +835,7 @@ class ApmClient(Client):
 
         获取组件列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApps
         :type request: :class:`huaweicloudsdkapm.v1.ListAppsRequest`
@@ -911,8 +897,7 @@ class ApmClient(Client):
 
         查询环境标签接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEnvTags
         :type request: :class:`huaweicloudsdkapm.v1.ListEnvTagsRequest`
@@ -974,8 +959,7 @@ class ApmClient(Client):
 
         查询单个应用的详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowBusinessDetail
         :type request: :class:`huaweicloudsdkapm.v1.ShowBusinessDetailRequest`
@@ -1037,8 +1021,7 @@ class ApmClient(Client):
 
         查询单个子应用详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowSubBusinessDetail
         :type request: :class:`huaweicloudsdkapm.v1.ShowSubBusinessDetailRequest`
@@ -1100,8 +1083,7 @@ class ApmClient(Client):
 
         获取应用树。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTopologyTree
         :type request: :class:`huaweicloudsdkapm.v1.ShowTopologyTreeRequest`
@@ -1169,8 +1151,7 @@ class ApmClient(Client):
 
         该接口用于查询用户开通的region信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListOpenRegion
         :type request: :class:`huaweicloudsdkapm.v1.ListOpenRegionRequest`
@@ -1228,8 +1209,7 @@ class ApmClient(Client):
 
         查询所有的支持的region信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSupportedRegion
         :type request: :class:`huaweicloudsdkapm.v1.ListSupportedRegionRequest`
@@ -1287,8 +1267,7 @@ class ApmClient(Client):
 
         查询应用级别全局拓扑图信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SearchBusinessTopology
         :type request: :class:`huaweicloudsdkapm.v1.SearchBusinessTopologyRequest`
@@ -1350,8 +1329,7 @@ class ApmClient(Client):
 
         查询组件环境级别全局拓扑图信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SearchEnvTopology
         :type request: :class:`huaweicloudsdkapm.v1.SearchEnvTopologyRequest`
@@ -1413,8 +1391,7 @@ class ApmClient(Client):
 
         查询所选Region下设置了URL跟踪的环境列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListBusinessEnv
         :type request: :class:`huaweicloudsdkapm.v1.ListBusinessEnvRequest`
@@ -1476,8 +1453,7 @@ class ApmClient(Client):
 
         查询当前被调用的URL跟踪视图列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SearchTransaction
         :type request: :class:`huaweicloudsdkapm.v1.SearchTransactionRequest`
@@ -1539,8 +1515,7 @@ class ApmClient(Client):
 
         查询已配置好的URL跟踪配置列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SearchTransactionConfig
         :type request: :class:`huaweicloudsdkapm.v1.SearchTransactionConfigRequest`
@@ -1602,8 +1577,7 @@ class ApmClient(Client):
 
         查询某条URL跟踪视图详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTransactionDetail
         :type request: :class:`huaweicloudsdkapm.v1.ShowTransactionDetailRequest`
@@ -1665,8 +1639,7 @@ class ApmClient(Client):
 
         获取实例信息列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEnvInstances
         :type request: :class:`huaweicloudsdkapm.v1.ListEnvInstancesRequest`
@@ -1728,8 +1701,7 @@ class ApmClient(Client):
 
         获取原始数据详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowClobDetail
         :type request: :class:`huaweicloudsdkapm.v1.ShowClobDetailRequest`
@@ -1791,8 +1763,7 @@ class ApmClient(Client):
 
         获取监控项信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowEnvMonitorItems
         :type request: :class:`huaweicloudsdkapm.v1.ShowEnvMonitorItemsRequest`
@@ -1854,8 +1825,7 @@ class ApmClient(Client):
 
         获取event的详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowEventDetail
         :type request: :class:`huaweicloudsdkapm.v1.ShowEventDetailRequest`
@@ -1921,8 +1891,7 @@ class ApmClient(Client):
 
         查询监控项配置信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowMonitorItemViewConfig
         :type request: :class:`huaweicloudsdkapm.v1.ShowMonitorItemViewConfigRequest`
@@ -1986,8 +1955,7 @@ class ApmClient(Client):
 
         获取原始数据表格。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRawTable
         :type request: :class:`huaweicloudsdkapm.v1.ShowRawTableRequest`
@@ -2049,8 +2017,7 @@ class ApmClient(Client):
 
         span数据查询接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowSpanSearch
         :type request: :class:`huaweicloudsdkapm.v1.ShowSpanSearchRequest`
@@ -2112,8 +2079,7 @@ class ApmClient(Client):
 
         获取汇总表格数据。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowSumTable
         :type request: :class:`huaweicloudsdkapm.v1.ShowSumTableRequest`
@@ -2175,8 +2141,7 @@ class ApmClient(Client):
 
         调用链拓扑图。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTopology
         :type request: :class:`huaweicloudsdkapm.v1.ShowTopologyRequest`
@@ -2236,8 +2201,7 @@ class ApmClient(Client):
 
         获取一个trace的所有调用链数据。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTraceEvents
         :type request: :class:`huaweicloudsdkapm.v1.ShowTraceEventsRequest`
@@ -2297,8 +2261,7 @@ class ApmClient(Client):
 
         获取趋势图。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTrend
         :type request: :class:`huaweicloudsdkapm.v1.ShowTrendRequest`

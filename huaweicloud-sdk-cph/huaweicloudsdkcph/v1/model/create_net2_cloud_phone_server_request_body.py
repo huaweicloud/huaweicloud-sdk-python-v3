@@ -26,10 +26,10 @@ class CreateNet2CloudPhoneServerRequestBody:
         'image_id': 'str',
         'count': 'int',
         'keypair_name': 'str',
-        'ports': 'list[CreateNet2CloudPhoneServerRequestBodyPorts]',
+        'ports': 'list[Port]',
         'extend_param': 'CreateNet2CloudPhoneServerRequestBodyExtendParam',
         'tenant_vpc_id': 'str',
-        'nics': 'list[CreateNet2CloudPhoneServerRequestBodyNics]',
+        'nics': 'list[Nic]',
         'public_ip': 'CreateNet2CloudPhoneServerRequestBodyPublicIp',
         'band_width': 'CreateNet2CloudPhoneServerRequestBodyBandWidth',
         'availability_zone': 'str'
@@ -69,13 +69,13 @@ class CreateNet2CloudPhoneServerRequestBody:
         :param keypair_name: 密钥对名称，不超过64个字节，用于云手机ADB登录
         :type keypair_name: str
         :param ports: 云手机启用的应用端口，云手机服务会做端口转发
-        :type ports: list[:class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyPorts`]
+        :type ports: list[:class:`huaweicloudsdkcph.v1.Port`]
         :param extend_param: 
         :type extend_param: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyExtendParam`
         :param tenant_vpc_id: 租户自定义的VPC ID，为待创建的云服务器所属的虚拟私有云（简称VPC），需要指定已创建VPC的ID，UUID格式
         :type tenant_vpc_id: str
         :param nics: 租户自定义的网卡的结构体，为待创建的云服务器的网卡信息
-        :type nics: list[:class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyNics`]
+        :type nics: list[:class:`huaweicloudsdkcph.v1.Nic`]
         :param public_ip: 
         :type public_ip: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyPublicIp`
         :param band_width: 
@@ -257,7 +257,7 @@ class CreateNet2CloudPhoneServerRequestBody:
         云手机启用的应用端口，云手机服务会做端口转发
 
         :return: The ports of this CreateNet2CloudPhoneServerRequestBody.
-        :rtype: list[:class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyPorts`]
+        :rtype: list[:class:`huaweicloudsdkcph.v1.Port`]
         """
         return self._ports
 
@@ -268,7 +268,7 @@ class CreateNet2CloudPhoneServerRequestBody:
         云手机启用的应用端口，云手机服务会做端口转发
 
         :param ports: The ports of this CreateNet2CloudPhoneServerRequestBody.
-        :type ports: list[:class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyPorts`]
+        :type ports: list[:class:`huaweicloudsdkcph.v1.Port`]
         """
         self._ports = ports
 
@@ -319,7 +319,7 @@ class CreateNet2CloudPhoneServerRequestBody:
         租户自定义的网卡的结构体，为待创建的云服务器的网卡信息
 
         :return: The nics of this CreateNet2CloudPhoneServerRequestBody.
-        :rtype: list[:class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyNics`]
+        :rtype: list[:class:`huaweicloudsdkcph.v1.Nic`]
         """
         return self._nics
 
@@ -330,7 +330,7 @@ class CreateNet2CloudPhoneServerRequestBody:
         租户自定义的网卡的结构体，为待创建的云服务器的网卡信息
 
         :param nics: The nics of this CreateNet2CloudPhoneServerRequestBody.
-        :type nics: list[:class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyNics`]
+        :type nics: list[:class:`huaweicloudsdkcph.v1.Nic`]
         """
         self._nics = nics
 

@@ -47,8 +47,7 @@ class CodeHubClient(Client):
 
         能够一次提交位于不同目录的多个文件，目录不存在时，能自动创建目录。支持强制覆盖选项，当选择强制覆盖标志为true时，忽略冲突，强制提交。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateCommit
         :type request: :class:`huaweicloudsdkcodehub.v3.CreateCommitRequest`
@@ -110,8 +109,7 @@ class CodeHubClient(Client):
 
         根据仓库短ID获取提交信息，支持根据文件路径，查询这个路径下所有的commits列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCommits
         :type request: :class:`huaweicloudsdkcodehub.v3.ListCommitsRequest`
@@ -183,8 +181,7 @@ class CodeHubClient(Client):
 
         根据commit id查询提交差异信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDiffCommit
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowDiffCommitRequest`
@@ -246,8 +243,7 @@ class CodeHubClient(Client):
 
         获取由commit id或分支或标记的名称标识的特定提交。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowSingleCommit
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowSingleCommitRequest`
@@ -311,8 +307,7 @@ class CodeHubClient(Client):
 
         获取仓库中文件的信息，如名称、大小、内容。请注意，文件内容是Base64编码的。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListFilesByQuery
         :type request: :class:`huaweicloudsdkcodehub.v3.ListFilesByQueryRequest`
@@ -376,8 +371,7 @@ class CodeHubClient(Client):
 
         获取仓库中文件的信息，如名称、大小、内容。请注意，文件内容是Base64编码的。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowFile
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowFileRequest`
@@ -441,8 +435,7 @@ class CodeHubClient(Client):
 
         获取仓库列表 模糊查询支持范围,如果未传入project_id，则支持按仓库名或项目名模糊查询，否则，只按仓库名模糊匹配。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for GetAllRepositoryByProjectId
         :type request: :class:`huaweicloudsdkcodehub.v3.GetAllRepositoryByProjectIdRequest`
@@ -508,8 +501,7 @@ class CodeHubClient(Client):
 
         获取一个项目下可以设置为公开状态的仓库列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for GetProductTemplates
         :type request: :class:`huaweicloudsdkcodehub.v3.GetProductTemplatesRequest`
@@ -573,8 +565,7 @@ class CodeHubClient(Client):
 
         获取一个项目下可以设置为公开状态的仓库列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProductTwoTemplates
         :type request: :class:`huaweicloudsdkcodehub.v3.ListProductTwoTemplatesRequest`
@@ -638,8 +629,7 @@ class CodeHubClient(Client):
 
         一般创建仓库时调用。通过传入项目uuid,仓库名，来判断仓库是否重名。仓库存在result:false,仓库不存在result:true。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRepositoryNameExist
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryNameExistRequest`
@@ -701,8 +691,7 @@ class CodeHubClient(Client):
 
         调用方codehubportal,添加仓库成员。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddRepoMembers
         :type request: :class:`huaweicloudsdkcodehub.v3.AddRepoMembersRequest`
@@ -764,8 +753,7 @@ class CodeHubClient(Client):
 
         删除仓库成员
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteRepoMember
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteRepoMemberRequest`
@@ -827,8 +815,7 @@ class CodeHubClient(Client):
 
         获取仓库成员列表,可通过关键字搜索某成员。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRepoMembers
         :type request: :class:`huaweicloudsdkcodehub.v3.ListRepoMembersRequest`
@@ -894,8 +881,7 @@ class CodeHubClient(Client):
 
         给仓库中成员设置仓库的操作权限，
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SetRepoRole
         :type request: :class:`huaweicloudsdkcodehub.v3.SetRepoRoleRequest`
@@ -959,8 +945,7 @@ class CodeHubClient(Client):
 
         添加部署密钥
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddDeployKey
         :type request: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyRequest`
@@ -1022,8 +1007,7 @@ class CodeHubClient(Client):
 
         添加部署密钥
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddDeployKeyV2
         :type request: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyV2Request`
@@ -1085,8 +1069,7 @@ class CodeHubClient(Client):
 
         新建保护分支
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddProtectBranchV2
         :type request: :class:`huaweicloudsdkcodehub.v3.AddProtectBranchV2Request`
@@ -1150,8 +1133,7 @@ class CodeHubClient(Client):
 
         新建标签
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddTagV2
         :type request: :class:`huaweicloudsdkcodehub.v3.AddTagV2Request`
@@ -1213,8 +1195,7 @@ class CodeHubClient(Client):
 
         用指定的名称在指定项目上创建仓库。传入参数：仓库名、模板id、是否导入项目成员、归属项目
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateRepository
         :type request: :class:`huaweicloudsdkcodehub.v3.CreateRepositoryRequest`
@@ -1274,8 +1255,7 @@ class CodeHubClient(Client):
 
         删除仓库部署密钥
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDeployKey
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteDeployKeyRequest`
@@ -1337,8 +1317,7 @@ class CodeHubClient(Client):
 
         删除仓库部署密钥
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDeployKeyV2
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteDeployKeyV2Request`
@@ -1400,8 +1379,7 @@ class CodeHubClient(Client):
 
         根据仓库32位uuid删除指定的仓库
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteRepository
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteRepositoryRequest`
@@ -1461,8 +1439,7 @@ class CodeHubClient(Client):
 
         不建议再使用,建议使用/{repository_uuid}/status
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for GetRepositoryByProjectId
         :type request: :class:`huaweicloudsdkcodehub.v3.GetRepositoryByProjectIdRequest`
@@ -1522,8 +1499,7 @@ class CodeHubClient(Client):
 
         获取公开示例模板列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for GetTemplates
         :type request: :class:`huaweicloudsdkcodehub.v3.GetTemplatesRequest`
@@ -1603,8 +1579,7 @@ class CodeHubClient(Client):
 
         获取仓库分支列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListBranchesByRepositoryId
         :type request: :class:`huaweicloudsdkcodehub.v3.ListBranchesByRepositoryIdRequest`
@@ -1670,8 +1645,7 @@ class CodeHubClient(Client):
 
         获取仓库上一次的提交统计信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCommitStatistics
         :type request: :class:`huaweicloudsdkcodehub.v3.ListCommitStatisticsRequest`
@@ -1733,8 +1707,7 @@ class CodeHubClient(Client):
 
         获取一个仓库下特定分支指定文件内容
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListFiles
         :type request: :class:`huaweicloudsdkcodehub.v3.ListFilesRequest`
@@ -1798,8 +1771,7 @@ class CodeHubClient(Client):
 
         获取仓库合并请求列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListMergeRequest
         :type request: :class:`huaweicloudsdkcodehub.v3.ListMergeRequestRequest`
@@ -1867,8 +1839,7 @@ class CodeHubClient(Client):
 
         获取仓库状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRepositoryStatus
         :type request: :class:`huaweicloudsdkcodehub.v3.ListRepositoryStatusRequest`
@@ -1928,8 +1899,7 @@ class CodeHubClient(Client):
 
         获取分支目录下的文件
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSubfiles
         :type request: :class:`huaweicloudsdkcodehub.v3.ListSubfilesRequest`
@@ -1997,8 +1967,7 @@ class CodeHubClient(Client):
 
         设置仓库是公开状态还是私有状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTemplatesTwo
         :type request: :class:`huaweicloudsdkcodehub.v3.ListTemplatesTwoRequest`
@@ -2060,8 +2029,7 @@ class CodeHubClient(Client):
 
         获取公开示例模板列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTwoTemplates
         :type request: :class:`huaweicloudsdkcodehub.v3.ListTwoTemplatesRequest`
@@ -2141,8 +2109,7 @@ class CodeHubClient(Client):
 
         设置仓库是公开状态还是私有状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShareTemplates
         :type request: :class:`huaweicloudsdkcodehub.v3.ShareTemplatesRequest`
@@ -2204,8 +2171,7 @@ class CodeHubClient(Client):
 
         根据仓库id获取指定仓库的分支列表.
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowBranchesByRepositoryId
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowBranchesByRepositoryIdRequest`
@@ -2265,8 +2231,7 @@ class CodeHubClient(Client):
 
         查询指定仓库对应的分支。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowBranchesByTwoRepositoryId
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowBranchesByTwoRepositoryIdRequest`
@@ -2326,8 +2291,7 @@ class CodeHubClient(Client):
 
         根据仓库组名、仓库名和分支获取提交列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowCommitsByBranch
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowCommitsByBranchRequest`
@@ -2395,8 +2359,7 @@ class CodeHubClient(Client):
 
         根据仓库id查询仓库某分支对应的提交.
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowCommitsByRepoId
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowCommitsByRepoIdRequest`
@@ -2474,8 +2437,7 @@ class CodeHubClient(Client):
 
         修改被流水线引用的仓库状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowHasPipeline
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowHasPipelineRequest`
@@ -2535,8 +2497,7 @@ class CodeHubClient(Client):
 
         获取一个仓库下特定分支的图片文件
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowImageBlob
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowImageBlobRequest`
@@ -2600,8 +2561,7 @@ class CodeHubClient(Client):
 
         判断用户是否有仓库的管理员权限
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowMaster
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowMasterRequest`
@@ -2661,8 +2621,7 @@ class CodeHubClient(Client):
 
         获取仓库合并请求详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowMergeRequest
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowMergeRequestRequest`
@@ -2724,8 +2683,7 @@ class CodeHubClient(Client):
 
         获取仓库短id,用于获取仓库详情页面url
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRepoId
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepoIdRequest`
@@ -2787,8 +2745,7 @@ class CodeHubClient(Client):
 
         按照指定格式下载仓库
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRepositoryArchive
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryArchiveRequest`
@@ -2852,8 +2809,7 @@ class CodeHubClient(Client):
 
         根据仓库UUID(由CreateRepository接口返回)获取仓库信息仓库信息。返回 包含id，name，组名，仓库访问URL。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRepositoryByUuid
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryByUuidRequest`
@@ -2913,8 +2869,7 @@ class CodeHubClient(Client):
 
         根据仓库短id，查询仓库的代码提交记录统计
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRepositoryStatistics
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryStatisticsRequest`
@@ -2976,8 +2931,7 @@ class CodeHubClient(Client):
 
         获取指定日期内代码仓指定分支的代码提交行数
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowStatisticCommit
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowStatisticCommitRequest`
@@ -3043,8 +2997,7 @@ class CodeHubClient(Client):
 
         获取指定日期内代码仓指定分支的代码提交行数
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowStatisticCommitV3
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowStatisticCommitV3Request`
@@ -3110,8 +3063,7 @@ class CodeHubClient(Client):
 
         获取仓库统计数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowStatisticalData
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowStatisticalDataRequest`
@@ -3171,8 +3123,7 @@ class CodeHubClient(Client):
 
         添加ssh key
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddSshKey
         :type request: :class:`huaweicloudsdkcodehub.v3.AddSshKeyRequest`
@@ -3232,8 +3183,7 @@ class CodeHubClient(Client):
 
         调用gitlab原生接口删除用户公钥。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteSShkey
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteSShkeyRequest`
@@ -3293,8 +3243,7 @@ class CodeHubClient(Client):
 
         获取ssh key列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSshKeys
         :type request: :class:`huaweicloudsdkcodehub.v3.ListSshKeysRequest`
@@ -3352,8 +3301,7 @@ class CodeHubClient(Client):
 
         检验私钥是否有拉取代码的权限
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPrivateKeyVerify
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowPrivateKeyVerifyRequest`
@@ -3413,8 +3361,7 @@ class CodeHubClient(Client):
 
         调用 gitlab 接口判断用户使用 https 上传/下载代码时输入的用户名和密码是否合法。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ValidateHttpsInfo
         :type request: :class:`huaweicloudsdkcodehub.v3.ValidateHttpsInfoRequest`
@@ -3476,8 +3423,7 @@ class CodeHubClient(Client):
 
         调用 gitlab 接口判断用户使用 https 上传/下载代码时输入的用户名和密码是否合法。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ValidateHttpsInfoV2
         :type request: :class:`huaweicloudsdkcodehub.v3.ValidateHttpsInfoV2Request`
@@ -3539,8 +3485,7 @@ class CodeHubClient(Client):
 
         分支关联工作项
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AssociateIssues
         :type request: :class:`huaweicloudsdkcodehub.v3.AssociateIssuesRequest`
@@ -3600,8 +3545,7 @@ class CodeHubClient(Client):
 
         创建项目后，创建仓库组由后台生成方式 传入参数：仓库名、模板id、是否导入项目成员、归属项目
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateProjectAndRepositories
         :type request: :class:`huaweicloudsdkcodehub.v3.CreateProjectAndRepositoriesRequest`
@@ -3661,8 +3605,7 @@ class CodeHubClient(Client):
 
         创建仓库后fork仓库 传入参数：仓库名、是否导入项目成员、归属项目
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateProjectAndforkRepositories
         :type request: :class:`huaweicloudsdkcodehub.v3.CreateProjectAndforkRepositoriesRequest`
@@ -3722,8 +3665,7 @@ class CodeHubClient(Client):
 
         获取用户的所有仓库信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListUserAllRepositories
         :type request: :class:`huaweicloudsdkcodehub.v3.ListUserAllRepositoriesRequest`
@@ -3787,8 +3729,7 @@ class CodeHubClient(Client):
 
         获取仓库列表,模糊查询支持范围,如果未传入project uuid，则支持按仓库名或项目名模糊查询，否则，只按仓库名模糊匹配
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAllRepositoryByTwoProjectId
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowAllRepositoryByTwoProjectIdRequest`
@@ -3854,8 +3795,7 @@ class CodeHubClient(Client):
 
         提交代码自动触发编译构建，添加仓库钩子
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddHooks
         :type request: :class:`huaweicloudsdkcodehub.v3.AddHooksRequest`
@@ -3919,8 +3859,7 @@ class CodeHubClient(Client):
 
         提交代码自动触发编译构建，删除仓库钩子
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteHooks
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteHooksRequest`
@@ -3984,8 +3923,7 @@ class CodeHubClient(Client):
 
         获取仓库webhook
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListHooks
         :type request: :class:`huaweicloudsdkcodehub.v3.ListHooksRequest`
@@ -4049,8 +3987,7 @@ class CodeHubClient(Client):
 
         根据仓库id在指定仓库中创建分支
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateNewBranch
         :type request: :class:`huaweicloudsdkcodehub.v3.CreateNewBranchRequest`

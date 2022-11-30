@@ -47,8 +47,7 @@ class RdsClient(Client):
 
         应用参数模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ApplyConfigurationAsync
         :type request: :class:`huaweicloudsdkrds.v3.ApplyConfigurationAsyncRequest`
@@ -112,8 +111,7 @@ class RdsClient(Client):
 
         绑定和解绑弹性公网IP。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AttachEip
         :type request: :class:`huaweicloudsdkrds.v3.AttachEipRequest`
@@ -177,8 +175,7 @@ class RdsClient(Client):
 
         批量添加标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchTagAddAction
         :type request: :class:`huaweicloudsdkrds.v3.BatchTagAddActionRequest`
@@ -242,8 +239,7 @@ class RdsClient(Client):
 
         批量删除标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchTagDelAction
         :type request: :class:`huaweicloudsdkrds.v3.BatchTagDelActionRequest`
@@ -307,8 +303,7 @@ class RdsClient(Client):
 
         更改主备实例的数据同步方式。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ChangeFailoverMode
         :type request: :class:`huaweicloudsdkrds.v3.ChangeFailoverModeRequest`
@@ -372,8 +367,7 @@ class RdsClient(Client):
 
         切换主备实例的倒换策略.
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ChangeFailoverStrategy
         :type request: :class:`huaweicloudsdkrds.v3.ChangeFailoverStrategyRequest`
@@ -437,8 +431,7 @@ class RdsClient(Client):
 
         设置可维护时间段
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ChangeOpsWindow
         :type request: :class:`huaweicloudsdkrds.v3.ChangeOpsWindowRequest`
@@ -502,8 +495,7 @@ class RdsClient(Client):
 
         创建参数模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateConfiguration
         :type request: :class:`huaweicloudsdkrds.v3.CreateConfigurationRequest`
@@ -565,8 +557,7 @@ class RdsClient(Client):
 
         申请域名
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDnsName
         :type request: :class:`huaweicloudsdkrds.v3.CreateDnsNameRequest`
@@ -630,8 +621,7 @@ class RdsClient(Client):
 
         创建数据库实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateInstance
         :type request: :class:`huaweicloudsdkrds.v3.CreateInstanceRequest`
@@ -693,8 +683,7 @@ class RdsClient(Client):
 
         创建手动备份。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateManualBackup
         :type request: :class:`huaweicloudsdkrds.v3.CreateManualBackupRequest`
@@ -756,8 +745,7 @@ class RdsClient(Client):
 
         在指定数据库上创建插件。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreatePostgresqlExtension
         :type request: :class:`huaweicloudsdkrds.v3.CreatePostgresqlExtensionRequest`
@@ -821,8 +809,7 @@ class RdsClient(Client):
 
         恢复到新实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateRestoreInstance
         :type request: :class:`huaweicloudsdkrds.v3.CreateRestoreInstanceRequest`
@@ -884,8 +871,7 @@ class RdsClient(Client):
 
         删除参数模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteConfiguration
         :type request: :class:`huaweicloudsdkrds.v3.DeleteConfigurationRequest`
@@ -947,8 +933,7 @@ class RdsClient(Client):
 
         删除数据库实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteInstance
         :type request: :class:`huaweicloudsdkrds.v3.DeleteInstanceRequest`
@@ -1010,8 +995,7 @@ class RdsClient(Client):
 
         删除手动备份。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteManualBackup
         :type request: :class:`huaweicloudsdkrds.v3.DeleteManualBackupRequest`
@@ -1073,8 +1057,7 @@ class RdsClient(Client):
 
         在指定数据库上删除插件。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeletePostgresqlExtension
         :type request: :class:`huaweicloudsdkrds.v3.DeletePostgresqlExtensionRequest`
@@ -1138,8 +1121,7 @@ class RdsClient(Client):
 
         获取慢日志下载链接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DownloadSlowlog
         :type request: :class:`huaweicloudsdkrds.v3.DownloadSlowlogRequest`
@@ -1203,8 +1185,7 @@ class RdsClient(Client):
 
         应用参数模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for EnableConfiguration
         :type request: :class:`huaweicloudsdkrds.v3.EnableConfigurationRequest`
@@ -1268,8 +1249,7 @@ class RdsClient(Client):
 
         获取审计日志列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAuditlogs
         :type request: :class:`huaweicloudsdkrds.v3.ListAuditlogsRequest`
@@ -1339,8 +1319,7 @@ class RdsClient(Client):
 
         获取备份列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListBackups
         :type request: :class:`huaweicloudsdkrds.v3.ListBackupsRequest`
@@ -1414,8 +1393,7 @@ class RdsClient(Client):
 
         查询SQLServer可用字符集
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCollations
         :type request: :class:`huaweicloudsdkrds.v3.ListCollationsRequest`
@@ -1475,8 +1453,7 @@ class RdsClient(Client):
 
         获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListConfigurations
         :type request: :class:`huaweicloudsdkrds.v3.ListConfigurationsRequest`
@@ -1536,8 +1513,7 @@ class RdsClient(Client):
 
         查询数据库引擎的版本。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDatastores
         :type request: :class:`huaweicloudsdkrds.v3.ListDatastoresRequest`
@@ -1599,8 +1575,7 @@ class RdsClient(Client):
 
         批量查询容灾实例信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDrRelations
         :type request: :class:`huaweicloudsdkrds.v3.ListDrRelationsRequest`
@@ -1660,8 +1635,7 @@ class RdsClient(Client):
 
         查询数据库错误日志。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListErrorLogs
         :type request: :class:`huaweicloudsdkrds.v3.ListErrorLogsRequest`
@@ -1733,8 +1707,7 @@ class RdsClient(Client):
 
         查询数据库错误日志。(与原v3接口相比修改offset,符合华为云服务开放 API遵从性规范3.0)
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListErrorLogsNew
         :type request: :class:`huaweicloudsdkrds.v3.ListErrorLogsNewRequest`
@@ -1806,8 +1779,7 @@ class RdsClient(Client):
 
         查询数据库规格。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListFlavors
         :type request: :class:`huaweicloudsdkrds.v3.ListFlavorsRequest`
@@ -1873,8 +1845,7 @@ class RdsClient(Client):
 
         查询数据库实例列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListInstances
         :type request: :class:`huaweicloudsdkrds.v3.ListInstancesRequest`
@@ -1952,8 +1923,7 @@ class RdsClient(Client):
 
         获取指定ID的任务信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListJobInfo
         :type request: :class:`huaweicloudsdkrds.v3.ListJobInfoRequest`
@@ -2015,8 +1985,7 @@ class RdsClient(Client):
 
         获取指定实例和时间范围的任务信息（SQL Server）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListJobInfoDetail
         :type request: :class:`huaweicloudsdkrds.v3.ListJobInfoDetailRequest`
@@ -2082,8 +2051,7 @@ class RdsClient(Client):
 
         查询跨区域备份列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListOffSiteBackups
         :type request: :class:`huaweicloudsdkrds.v3.ListOffSiteBackupsRequest`
@@ -2157,8 +2125,7 @@ class RdsClient(Client):
 
         查询跨区域备份实例列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListOffSiteInstances
         :type request: :class:`huaweicloudsdkrds.v3.ListOffSiteInstancesRequest`
@@ -2223,8 +2190,7 @@ class RdsClient(Client):
         查询跨区域备份可恢复时间段。
         如果您备份策略中的保存天数设置较长，建议您传入查询日期“date”。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListOffSiteRestoreTimes
         :type request: :class:`huaweicloudsdkrds.v3.ListOffSiteRestoreTimesRequest`
@@ -2288,8 +2254,7 @@ class RdsClient(Client):
 
         获取指定数据库的插件信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPostgresqlExtension
         :type request: :class:`huaweicloudsdkrds.v3.ListPostgresqlExtensionRequest`
@@ -2357,8 +2322,7 @@ class RdsClient(Client):
 
         查询项目标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProjectTags
         :type request: :class:`huaweicloudsdkrds.v3.ListProjectTagsRequest`
@@ -2419,8 +2383,7 @@ class RdsClient(Client):
         查询可恢复时间段。
         如果您备份策略中的保存天数设置较长，建议您传入查询日期“date”。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRestoreTimes
         :type request: :class:`huaweicloudsdkrds.v3.ListRestoreTimesRequest`
@@ -2485,8 +2448,7 @@ class RdsClient(Client):
         查询慢日志文件列表。
         调用该接口取到慢日志文件名后，可以调用接口/v3/{project_id}/instances/{instance_id}/slowlog-download 获取慢日志文件下载链接
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSlowLogFile
         :type request: :class:`huaweicloudsdkrds.v3.ListSlowLogFileRequest`
@@ -2552,8 +2514,7 @@ class RdsClient(Client):
 
         查询数据库慢日志。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSlowLogs
         :type request: :class:`huaweicloudsdkrds.v3.ListSlowLogsRequest`
@@ -2625,8 +2586,7 @@ class RdsClient(Client):
 
         查询数据库慢日志。(与原v3接口相比修改offset,符合华为云服务开放 API遵从性规范3.0)
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSlowLogsNew
         :type request: :class:`huaweicloudsdkrds.v3.ListSlowLogsNewRequest`
@@ -2698,8 +2658,7 @@ class RdsClient(Client):
 
         获取慢日志统计信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSlowlogStatistics
         :type request: :class:`huaweicloudsdkrds.v3.ListSlowlogStatisticsRequest`
@@ -2773,8 +2732,7 @@ class RdsClient(Client):
 
         查询数据库磁盘类型。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListStorageTypes
         :type request: :class:`huaweicloudsdkrds.v3.ListStorageTypesRequest`
@@ -2840,8 +2798,7 @@ class RdsClient(Client):
 
         迁移主备实例的备机
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for MigrateFollower
         :type request: :class:`huaweicloudsdkrds.v3.MigrateFollowerRequest`
@@ -2905,8 +2862,7 @@ class RdsClient(Client):
 
         恢复到已有实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RestoreExistInstance
         :type request: :class:`huaweicloudsdkrds.v3.RestoreExistInstanceRequest`
@@ -2968,8 +2924,7 @@ class RdsClient(Client):
 
         表级时间点恢复(MySQL)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RestoreTables
         :type request: :class:`huaweicloudsdkrds.v3.RestoreTablesRequest`
@@ -3033,8 +2988,7 @@ class RdsClient(Client):
 
         恢复到已有实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RestoreToExistingInstance
         :type request: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceRequest`
@@ -3096,8 +3050,7 @@ class RdsClient(Client):
 
         设置审计日志策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SetAuditlogPolicy
         :type request: :class:`huaweicloudsdkrds.v3.SetAuditlogPolicyRequest`
@@ -3161,8 +3114,7 @@ class RdsClient(Client):
 
         设置自动备份策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SetBackupPolicy
         :type request: :class:`huaweicloudsdkrds.v3.SetBackupPolicyRequest`
@@ -3226,8 +3178,7 @@ class RdsClient(Client):
 
         修改指定实例的binlog本地保留时长。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SetBinlogClearPolicy
         :type request: :class:`huaweicloudsdkrds.v3.SetBinlogClearPolicyRequest`
@@ -3291,8 +3242,7 @@ class RdsClient(Client):
 
         设置跨区域备份策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SetOffSiteBackupPolicy
         :type request: :class:`huaweicloudsdkrds.v3.SetOffSiteBackupPolicyRequest`
@@ -3356,8 +3306,7 @@ class RdsClient(Client):
 
         修改安全组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SetSecurityGroup
         :type request: :class:`huaweicloudsdkrds.v3.SetSecurityGroupRequest`
@@ -3421,8 +3370,7 @@ class RdsClient(Client):
 
         V3慢日志敏感信息的开关
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SetSensitiveSlowLog
         :type request: :class:`huaweicloudsdkrds.v3.SetSensitiveSlowLogRequest`
@@ -3486,8 +3434,7 @@ class RdsClient(Client):
 
         生成审计日志下载链接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAuditlogDownloadLink
         :type request: :class:`huaweicloudsdkrds.v3.ShowAuditlogDownloadLinkRequest`
@@ -3551,8 +3498,7 @@ class RdsClient(Client):
 
         查询审计日志策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAuditlogPolicy
         :type request: :class:`huaweicloudsdkrds.v3.ShowAuditlogPolicyRequest`
@@ -3614,8 +3560,7 @@ class RdsClient(Client):
 
         获取备份下载链接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowBackupDownloadLink
         :type request: :class:`huaweicloudsdkrds.v3.ShowBackupDownloadLinkRequest`
@@ -3677,8 +3622,7 @@ class RdsClient(Client):
 
         查询自动备份策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowBackupPolicy
         :type request: :class:`huaweicloudsdkrds.v3.ShowBackupPolicyRequest`
@@ -3740,8 +3684,7 @@ class RdsClient(Client):
 
         查寻指定实例的binlog本地保留时长。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowBinlogClearPolicy
         :type request: :class:`huaweicloudsdkrds.v3.ShowBinlogClearPolicyRequest`
@@ -3803,8 +3746,7 @@ class RdsClient(Client):
 
         获取指定参数模板的参数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowConfiguration
         :type request: :class:`huaweicloudsdkrds.v3.ShowConfigurationRequest`
@@ -3866,8 +3808,7 @@ class RdsClient(Client):
 
         查询实例ipv6域名。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDnsName
         :type request: :class:`huaweicloudsdkrds.v3.ShowDnsNameRequest`
@@ -3931,8 +3872,7 @@ class RdsClient(Client):
 
         查询实例ipv4域名
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDomainName
         :type request: :class:`huaweicloudsdkrds.v3.ShowDomainNameRequest`
@@ -3996,8 +3936,7 @@ class RdsClient(Client):
 
         建立跨云容灾关系后，查询主实例和灾备实例间的复制状态及延迟。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDrReplicaStatus
         :type request: :class:`huaweicloudsdkrds.v3.ShowDrReplicaStatusRequest`
@@ -4059,8 +3998,7 @@ class RdsClient(Client):
 
         获取指定实例的参数模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowInstanceConfiguration
         :type request: :class:`huaweicloudsdkrds.v3.ShowInstanceConfigurationRequest`
@@ -4122,8 +4060,7 @@ class RdsClient(Client):
 
         查询跨区域备份策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowOffSiteBackupPolicy
         :type request: :class:`huaweicloudsdkrds.v3.ShowOffSiteBackupPolicyRequest`
@@ -4185,8 +4122,7 @@ class RdsClient(Client):
 
         查询当前项目下资源配额情况。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowQuotas
         :type request: :class:`huaweicloudsdkrds.v3.ShowQuotasRequest`
@@ -4246,8 +4182,7 @@ class RdsClient(Client):
 
         获取实例的复制状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowReplicationStatus
         :type request: :class:`huaweicloudsdkrds.v3.ShowReplicationStatusRequest`
@@ -4309,8 +4244,7 @@ class RdsClient(Client):
 
         手动倒换主备.
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartFailover
         :type request: :class:`huaweicloudsdkrds.v3.StartFailoverRequest`
@@ -4374,8 +4308,7 @@ class RdsClient(Client):
 
         扩容数据库实例的磁盘空间。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartInstanceEnlargeVolumeAction
         :type request: :class:`huaweicloudsdkrds.v3.StartInstanceEnlargeVolumeActionRequest`
@@ -4439,8 +4372,7 @@ class RdsClient(Client):
 
         重启数据库实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartInstanceRestartAction
         :type request: :class:`huaweicloudsdkrds.v3.StartInstanceRestartActionRequest`
@@ -4504,8 +4436,7 @@ class RdsClient(Client):
 
         单机转主备实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartInstanceSingleToHaAction
         :type request: :class:`huaweicloudsdkrds.v3.StartInstanceSingleToHaActionRequest`
@@ -4569,8 +4500,7 @@ class RdsClient(Client):
 
         设置回收站策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartRecyclePolicy
         :type request: :class:`huaweicloudsdkrds.v3.StartRecyclePolicyRequest`
@@ -4632,8 +4562,7 @@ class RdsClient(Client):
 
         变更数据库实例的规格。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartResizeFlavorAction
         :type request: :class:`huaweicloudsdkrds.v3.StartResizeFlavorActionRequest`
@@ -4697,8 +4626,7 @@ class RdsClient(Client):
 
         停止实例以节省费用，在停止数据库实例后，支持手动重新开启实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartupInstance
         :type request: :class:`huaweicloudsdkrds.v3.StartupInstanceRequest`
@@ -4760,8 +4688,7 @@ class RdsClient(Client):
 
         实例进行关机，通过暂时停止按需实例以节省费用，实例默认停止七天。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StopInstance
         :type request: :class:`huaweicloudsdkrds.v3.StopInstanceRequest`
@@ -4823,8 +4750,7 @@ class RdsClient(Client):
 
         设置SSL数据加密。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SwitchSsl
         :type request: :class:`huaweicloudsdkrds.v3.SwitchSslRequest`
@@ -4888,8 +4814,7 @@ class RdsClient(Client):
 
         修改参数模板参数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateConfiguration
         :type request: :class:`huaweicloudsdkrds.v3.UpdateConfigurationRequest`
@@ -4953,8 +4878,7 @@ class RdsClient(Client):
 
         修改内网地址
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDataIp
         :type request: :class:`huaweicloudsdkrds.v3.UpdateDataIpRequest`
@@ -5018,8 +4942,7 @@ class RdsClient(Client):
 
         修改域名
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDnsName
         :type request: :class:`huaweicloudsdkrds.v3.UpdateDnsNameRequest`
@@ -5083,8 +5006,7 @@ class RdsClient(Client):
 
         修改指定实例的参数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateInstanceConfiguration
         :type request: :class:`huaweicloudsdkrds.v3.UpdateInstanceConfigurationRequest`
@@ -5148,8 +5070,7 @@ class RdsClient(Client):
 
         修改指定实例的参数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateInstanceConfigurationAsync
         :type request: :class:`huaweicloudsdkrds.v3.UpdateInstanceConfigurationAsyncRequest`
@@ -5213,8 +5134,7 @@ class RdsClient(Client):
 
         修改实例名称。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateInstanceName
         :type request: :class:`huaweicloudsdkrds.v3.UpdateInstanceNameRequest`
@@ -5278,8 +5198,7 @@ class RdsClient(Client):
 
         修改数据库端口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdatePort
         :type request: :class:`huaweicloudsdkrds.v3.UpdatePortRequest`
@@ -5343,8 +5262,7 @@ class RdsClient(Client):
 
         修改指定数据库实例的备注信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdatePostgresqlInstanceAlias
         :type request: :class:`huaweicloudsdkrds.v3.UpdatePostgresqlInstanceAliasRequest`
@@ -5408,8 +5326,7 @@ class RdsClient(Client):
 
         对实例进行小版本升级。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpgradeDbVersion
         :type request: :class:`huaweicloudsdkrds.v3.UpgradeDbVersionRequest`
@@ -5473,8 +5390,7 @@ class RdsClient(Client):
 
         查询API版本列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApiVersion
         :type request: :class:`huaweicloudsdkrds.v3.ListApiVersionRequest`
@@ -5532,8 +5448,7 @@ class RdsClient(Client):
 
         查询API版本列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApiVersionNew
         :type request: :class:`huaweicloudsdkrds.v3.ListApiVersionNewRequest`
@@ -5591,8 +5506,7 @@ class RdsClient(Client):
 
         查询指定的API版本信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowApiVersion
         :type request: :class:`huaweicloudsdkrds.v3.ShowApiVersionRequest`
@@ -5652,8 +5566,7 @@ class RdsClient(Client):
 
         授权数据库帐号。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AllowDbUserPrivilege
         :type request: :class:`huaweicloudsdkrds.v3.AllowDbUserPrivilegeRequest`
@@ -5717,8 +5630,7 @@ class RdsClient(Client):
 
         创建数据库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDatabase
         :type request: :class:`huaweicloudsdkrds.v3.CreateDatabaseRequest`
@@ -5782,8 +5694,7 @@ class RdsClient(Client):
 
         在指定实例中创建数据库帐号。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDbUser
         :type request: :class:`huaweicloudsdkrds.v3.CreateDbUserRequest`
@@ -5847,8 +5758,7 @@ class RdsClient(Client):
 
         删除数据库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDatabase
         :type request: :class:`huaweicloudsdkrds.v3.DeleteDatabaseRequest`
@@ -5912,8 +5822,7 @@ class RdsClient(Client):
 
         删除数据库用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDbUser
         :type request: :class:`huaweicloudsdkrds.v3.DeleteDbUserRequest`
@@ -5977,8 +5886,7 @@ class RdsClient(Client):
 
         查询指定用户的已授权数据库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAuthorizedDatabases
         :type request: :class:`huaweicloudsdkrds.v3.ListAuthorizedDatabasesRequest`
@@ -6046,8 +5954,7 @@ class RdsClient(Client):
 
         查询指定数据库的已授权用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAuthorizedDbUsers
         :type request: :class:`huaweicloudsdkrds.v3.ListAuthorizedDbUsersRequest`
@@ -6115,8 +6022,7 @@ class RdsClient(Client):
 
         查询数据库列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDatabases
         :type request: :class:`huaweicloudsdkrds.v3.ListDatabasesRequest`
@@ -6182,8 +6088,7 @@ class RdsClient(Client):
 
         查询数据库用户列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDbUsers
         :type request: :class:`huaweicloudsdkrds.v3.ListDbUsersRequest`
@@ -6249,8 +6154,7 @@ class RdsClient(Client):
 
         重置数据库密码.
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ResetPwd
         :type request: :class:`huaweicloudsdkrds.v3.ResetPwdRequest`
@@ -6314,8 +6218,7 @@ class RdsClient(Client):
 
         解除数据库帐号权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for Revoke
         :type request: :class:`huaweicloudsdkrds.v3.RevokeRequest`
@@ -6379,8 +6282,7 @@ class RdsClient(Client):
 
         设置数据库账号密码
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SetDbUserPwd
         :type request: :class:`huaweicloudsdkrds.v3.SetDbUserPwdRequest`
@@ -6444,8 +6346,7 @@ class RdsClient(Client):
 
         根据业务需求，设置数据库用户只读
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SetReadOnlySwitch
         :type request: :class:`huaweicloudsdkrds.v3.SetReadOnlySwitchRequest`
@@ -6509,8 +6410,7 @@ class RdsClient(Client):
 
         修改指定实例中的数据库备注。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDatabase
         :type request: :class:`huaweicloudsdkrds.v3.UpdateDatabaseRequest`
@@ -6574,8 +6474,7 @@ class RdsClient(Client):
 
         修改数据库用户名备注
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDbUserComment
         :type request: :class:`huaweicloudsdkrds.v3.UpdateDbUserCommentRequest`
@@ -6639,8 +6538,7 @@ class RdsClient(Client):
 
         在指定实例的数据库中, 设置帐号的权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AllowDbPrivilege
         :type request: :class:`huaweicloudsdkrds.v3.AllowDbPrivilegeRequest`
@@ -6706,8 +6604,7 @@ class RdsClient(Client):
         
         - 调用接口前，您需要了解API 认证鉴权。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ChangeProxyScale
         :type request: :class:`huaweicloudsdkrds.v3.ChangeProxyScaleRequest`
@@ -6771,8 +6668,7 @@ class RdsClient(Client):
 
         修改指定实例的读写分离延时阈值。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ChangeTheDelayThreshold
         :type request: :class:`huaweicloudsdkrds.v3.ChangeTheDelayThresholdRequest`
@@ -6836,8 +6732,7 @@ class RdsClient(Client):
 
         在指定实例中创建数据库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreatePostgresqlDatabase
         :type request: :class:`huaweicloudsdkrds.v3.CreatePostgresqlDatabaseRequest`
@@ -6901,8 +6796,7 @@ class RdsClient(Client):
 
         在指定实例的数据库中, 创建数据库schema。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreatePostgresqlDatabaseSchema
         :type request: :class:`huaweicloudsdkrds.v3.CreatePostgresqlDatabaseSchemaRequest`
@@ -6966,8 +6860,7 @@ class RdsClient(Client):
 
         在指定实例中创建数据库用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreatePostgresqlDbUser
         :type request: :class:`huaweicloudsdkrds.v3.CreatePostgresqlDbUserRequest`
@@ -7031,8 +6924,7 @@ class RdsClient(Client):
 
         查询指定实例的数据库SCHEMA列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPostgresqlDatabaseSchemas
         :type request: :class:`huaweicloudsdkrds.v3.ListPostgresqlDatabaseSchemasRequest`
@@ -7100,8 +6992,7 @@ class RdsClient(Client):
 
         查询指定实例中的数据库列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPostgresqlDatabases
         :type request: :class:`huaweicloudsdkrds.v3.ListPostgresqlDatabasesRequest`
@@ -7167,8 +7058,7 @@ class RdsClient(Client):
 
         在指定实例中查询数据库用户列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPostgresqlDbUserPaginated
         :type request: :class:`huaweicloudsdkrds.v3.ListPostgresqlDbUserPaginatedRequest`
@@ -7236,8 +7126,7 @@ class RdsClient(Client):
         
         - 调用接口前，您需要了解API 认证鉴权。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SearchQueryScaleComputeFlavors
         :type request: :class:`huaweicloudsdkrds.v3.SearchQueryScaleComputeFlavorsRequest`
@@ -7305,8 +7194,7 @@ class RdsClient(Client):
         
         - 调用接口前，您需要了解API 认证鉴权。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SearchQueryScaleFlavors
         :type request: :class:`huaweicloudsdkrds.v3.SearchQueryScaleFlavorsRequest`
@@ -7368,8 +7256,7 @@ class RdsClient(Client):
 
         设置数据库用户权限：只读或可读写。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SetDatabaseUserPrivilege
         :type request: :class:`huaweicloudsdkrds.v3.SetDatabaseUserPrivilegeRequest`
@@ -7433,8 +7320,7 @@ class RdsClient(Client):
 
         重置指定数据库帐号的密码。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SetPostgresqlDbUserPwd
         :type request: :class:`huaweicloudsdkrds.v3.SetPostgresqlDbUserPwdRequest`
@@ -7498,8 +7384,7 @@ class RdsClient(Client):
 
         查询指定实例的数据库代理详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowInformationAboutDatabaseProxy
         :type request: :class:`huaweicloudsdkrds.v3.ShowInformationAboutDatabaseProxyRequest`
@@ -7561,8 +7446,7 @@ class RdsClient(Client):
 
         获取实例指定参数的值。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPostgresqlParamValue
         :type request: :class:`huaweicloudsdkrds.v3.ShowPostgresqlParamValueRequest`
@@ -7626,8 +7510,7 @@ class RdsClient(Client):
 
         为指定实例开启数据库代理。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartDatabaseProxy
         :type request: :class:`huaweicloudsdkrds.v3.StartDatabaseProxyRequest`
@@ -7691,8 +7574,7 @@ class RdsClient(Client):
 
         为指定实例关闭数据库代理。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StopDatabaseProxy
         :type request: :class:`huaweicloudsdkrds.v3.StopDatabaseProxyRequest`
@@ -7754,8 +7636,7 @@ class RdsClient(Client):
 
         修改实例指定参数的值。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdatePostgresqlParameterValue
         :type request: :class:`huaweicloudsdkrds.v3.UpdatePostgresqlParameterValueRequest`
@@ -7821,8 +7702,7 @@ class RdsClient(Client):
 
         修改指定实例的读写分离权重。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateReadWeight
         :type request: :class:`huaweicloudsdkrds.v3.UpdateReadWeightRequest`
@@ -7886,8 +7766,7 @@ class RdsClient(Client):
 
         授权数据库帐号。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AllowSqlserverDbUserPrivilege
         :type request: :class:`huaweicloudsdkrds.v3.AllowSqlserverDbUserPrivilegeRequest`
@@ -7951,8 +7830,7 @@ class RdsClient(Client):
 
         创建数据库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateSqlserverDatabase
         :type request: :class:`huaweicloudsdkrds.v3.CreateSqlserverDatabaseRequest`
@@ -8016,8 +7894,7 @@ class RdsClient(Client):
 
         创建数据库用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateSqlserverDbUser
         :type request: :class:`huaweicloudsdkrds.v3.CreateSqlserverDbUserRequest`
@@ -8081,8 +7958,7 @@ class RdsClient(Client):
 
         删除数据库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteSqlserverDatabase
         :type request: :class:`huaweicloudsdkrds.v3.DeleteSqlserverDatabaseRequest`
@@ -8148,8 +8024,7 @@ class RdsClient(Client):
 
         删除数据库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteSqlserverDatabaseEx
         :type request: :class:`huaweicloudsdkrds.v3.DeleteSqlserverDatabaseExRequest`
@@ -8215,8 +8090,7 @@ class RdsClient(Client):
 
         删除数据库用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteSqlserverDbUser
         :type request: :class:`huaweicloudsdkrds.v3.DeleteSqlserverDbUserRequest`
@@ -8280,8 +8154,7 @@ class RdsClient(Client):
 
         查询指定数据库的已授权用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAuthorizedSqlserverDbUsers
         :type request: :class:`huaweicloudsdkrds.v3.ListAuthorizedSqlserverDbUsersRequest`
@@ -8349,8 +8222,7 @@ class RdsClient(Client):
 
         查询数据库列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSqlserverDatabases
         :type request: :class:`huaweicloudsdkrds.v3.ListSqlserverDatabasesRequest`
@@ -8418,8 +8290,7 @@ class RdsClient(Client):
 
         查询数据库用户列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSqlserverDbUsers
         :type request: :class:`huaweicloudsdkrds.v3.ListSqlserverDbUsersRequest`
@@ -8485,8 +8356,7 @@ class RdsClient(Client):
 
         解除数据库帐号权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RevokeSqlserverDbUserPrivilege
         :type request: :class:`huaweicloudsdkrds.v3.RevokeSqlserverDbUserPrivilegeRequest`

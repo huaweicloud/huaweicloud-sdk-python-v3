@@ -47,8 +47,7 @@ class DrsClient(Client):
 
         数据复制服务支持对同步的对象进行加工，即可以为选择的对象添加规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchChangeData
         :type request: :class:`huaweicloudsdkdrs.v3.BatchChangeDataRequest`
@@ -110,8 +109,7 @@ class DrsClient(Client):
 
         批量预检查，校验是否可进行迁移。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchCheckJobs
         :type request: :class:`huaweicloudsdkdrs.v3.BatchCheckJobsRequest`
@@ -173,8 +171,7 @@ class DrsClient(Client):
 
         批量查询任务的预检查结果。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchCheckResults
         :type request: :class:`huaweicloudsdkdrs.v3.BatchCheckResultsRequest`
@@ -236,8 +233,7 @@ class DrsClient(Client):
 
         根据请求参数不同，可以批量创建实时迁移、实时同步、实时灾备任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchCreateJobs
         :type request: :class:`huaweicloudsdkdrs.v3.BatchCreateJobsRequest`
@@ -299,8 +295,7 @@ class DrsClient(Client):
 
         批量结束任务或删除实时迁移、实时同步、实时灾备任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteJobs
         :type request: :class:`huaweicloudsdkdrs.v3.BatchDeleteJobsRequest`
@@ -362,8 +357,7 @@ class DrsClient(Client):
 
         根据任务ID批量查询任务详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchListJobDetails
         :type request: :class:`huaweicloudsdkdrs.v3.BatchListJobDetailsRequest`
@@ -425,8 +419,7 @@ class DrsClient(Client):
 
         根据任务ID批量查询任务状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchListJobStatus
         :type request: :class:`huaweicloudsdkdrs.v3.BatchListJobStatusRequest`
@@ -488,8 +481,7 @@ class DrsClient(Client):
 
         根据任务ID批量查询全量进度、增量时延信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchListProgresses
         :type request: :class:`huaweicloudsdkdrs.v3.BatchListProgressesRequest`
@@ -551,8 +543,7 @@ class DrsClient(Client):
 
         批量查询RPO和RTO。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchListRposAndRtos
         :type request: :class:`huaweicloudsdkdrs.v3.BatchListRposAndRtosRequest`
@@ -614,8 +605,7 @@ class DrsClient(Client):
 
         根据任务ID批量查询灾备初始化对象详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchListStructDetail
         :type request: :class:`huaweicloudsdkdrs.v3.BatchListStructDetailRequest`
@@ -679,8 +669,7 @@ class DrsClient(Client):
 
         根据任务ID批量查询灾备初始化进度，虚拟id不支持查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchListStructProcess
         :type request: :class:`huaweicloudsdkdrs.v3.BatchListStructProcessRequest`
@@ -742,8 +731,7 @@ class DrsClient(Client):
 
         任务启动之后需要修改源库/目标库密码时调用此接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchResetPassword
         :type request: :class:`huaweicloudsdkdrs.v3.BatchResetPasswordRequest`
@@ -805,8 +793,7 @@ class DrsClient(Client):
 
         在迁移过程中由于不确定因素导致迁移任务失败，可通过重试功能，重新提交迁移任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchRestoreTask
         :type request: :class:`huaweicloudsdkdrs.v3.BatchRestoreTaskRequest`
@@ -870,8 +857,7 @@ class DrsClient(Client):
         - 选择是：迁移后，所有源数据库对象的Definer都会迁移至该用户下，其他用户需要授权后才具有数据库对象权限。
         - 选择否：迁移后，将保持源数据库对象Definer定义不变，选择此选项，需要配合下一步用户权限迁移功能，将源数据库的用户全部迁移，这样才能保持源数据库的权限体系完全不变。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchSetDefiner
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSetDefinerRequest`
@@ -933,8 +919,7 @@ class DrsClient(Client):
 
         迁移之前，选择需要迁移的数据库或者表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchSetObjects
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSetObjectsRequest`
@@ -997,8 +982,7 @@ class DrsClient(Client):
         - 批量设置同步策略，包括冲突策略、过滤DROP Datase、对象同步范围。
         - 设置kafka同步策略
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchSetPolicy
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSetPolicyRequest`
@@ -1061,8 +1045,7 @@ class DrsClient(Client):
         批量设置告警信息，已结束的任务不支持设置。
         - 支持选择已有的SMN主题和手动输入手机号、邮箱两种方式，具体根据自己使用情况选择
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchSetSmn
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSetSmnRequest`
@@ -1126,8 +1109,7 @@ class DrsClient(Client):
         - 限速：自定义的最大迁移速度，迁移过程中的迁移速度将不会超过该速度。
         - 不限速：对迁移速度不进行限制，通常会最大化使用源数据库的出口带宽。该流速模式同时会对源数据库造成读消耗，消耗取决于源数据库的出口带宽。比如：源数据库的出口带宽为100MB/s，假设高速模式使用了80%带宽，则迁移对源数据库将造成80MB/s的读操作IO消耗。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchSetSpeed
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSetSpeedRequest`
@@ -1189,8 +1171,7 @@ class DrsClient(Client):
 
         在进行数据库迁移时，为了确保迁移成功后业务应用的使用不受影响，数据复制服务提供了参数对比功能帮助您进行源库和目标库参数一致性对比，此接口可以获取源库和目标库的数据库参数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchShowParams
         :type request: :class:`huaweicloudsdkdrs.v3.BatchShowParamsRequest`
@@ -1252,8 +1233,7 @@ class DrsClient(Client):
 
         批量启动实时迁移、同步、灾备任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchStartJobs
         :type request: :class:`huaweicloudsdkdrs.v3.BatchStartJobsRequest`
@@ -1315,8 +1295,7 @@ class DrsClient(Client):
 
         批量暂停任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchStopJobs
         :type request: :class:`huaweicloudsdkdrs.v3.BatchStopJobsRequest`
@@ -1378,8 +1357,7 @@ class DrsClient(Client):
 
         批量主备倒换。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchSwitchover
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSwitchoverRequest`
@@ -1441,8 +1419,7 @@ class DrsClient(Client):
 
         批量修改任务名称或描述，设置异常通知信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchUpdateJob
         :type request: :class:`huaweicloudsdkdrs.v3.BatchUpdateJobRequest`
@@ -1504,8 +1481,7 @@ class DrsClient(Client):
 
         数据库的迁移过程中，迁移用户需要进行单独处理，该接口可以批量设置需要迁移的用户和角色。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchUpdateUser
         :type request: :class:`huaweicloudsdkdrs.v3.BatchUpdateUserRequest`
@@ -1568,8 +1544,7 @@ class DrsClient(Client):
         - 批量测试连接（集群模式）。
         - 主备任务测试连接
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchValidateClustersConnections
         :type request: :class:`huaweicloudsdkdrs.v3.BatchValidateClustersConnectionsRequest`
@@ -1631,8 +1606,7 @@ class DrsClient(Client):
 
         批量测试连接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchValidateConnections
         :type request: :class:`huaweicloudsdkdrs.v3.BatchValidateConnectionsRequest`
@@ -1694,8 +1668,7 @@ class DrsClient(Client):
 
         创建对比任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateCompareTask
         :type request: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskRequest`
@@ -1757,8 +1730,7 @@ class DrsClient(Client):
 
         查询规格未售罄的可用区
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAvailableZone
         :type request: :class:`huaweicloudsdkdrs.v3.ListAvailableZoneRequest`
@@ -1820,8 +1792,7 @@ class DrsClient(Client):
 
         查询对比结果。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCompareResult
         :type request: :class:`huaweicloudsdkdrs.v3.ListCompareResultRequest`
@@ -1883,8 +1854,7 @@ class DrsClient(Client):
 
         数据库的迁移过程中，迁移用户需要进行单独处理，该接口可以查询源库的用户信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListUsers
         :type request: :class:`huaweicloudsdkdrs.v3.ListUsersRequest`
@@ -1946,8 +1916,7 @@ class DrsClient(Client):
 
         查询租户任务列表，可以根据引擎类型，网络类型，任务状态，任务名称，任务ID进行查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowJobList
         :type request: :class:`huaweicloudsdkdrs.v3.ShowJobListRequest`
@@ -2009,8 +1978,7 @@ class DrsClient(Client):
 
         根据任务ID查询容灾监控数据。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowMonitoringData
         :type request: :class:`huaweicloudsdkdrs.v3.ShowMonitoringDataRequest`
@@ -2072,8 +2040,7 @@ class DrsClient(Client):
 
         查询单租户在DRS服务下的配额信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowQuotas
         :type request: :class:`huaweicloudsdkdrs.v3.ShowQuotasRequest`
@@ -2133,8 +2100,7 @@ class DrsClient(Client):
 
         修改数据库参数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateParams
         :type request: :class:`huaweicloudsdkdrs.v3.UpdateParamsRequest`
@@ -2198,8 +2164,7 @@ class DrsClient(Client):
 
         修改调优参数的值。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateTuningParams
         :type request: :class:`huaweicloudsdkdrs.v3.UpdateTuningParamsRequest`

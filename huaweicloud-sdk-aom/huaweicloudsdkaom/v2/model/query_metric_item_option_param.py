@@ -38,7 +38,7 @@ class QueryMetricItemOptionParam:
 
         :param dimensions: 指标维度列表。
         :type dimensions: list[:class:`huaweicloudsdkaom.v2.Dimension`]
-        :param metric_name: 指标名称。名称长度取值范围为1~255个字符。 取值范围： AOM提供的基础指标， cpuUsage、cpuCoreUsed等 cpuUage：cpu使用率； cpuCoreUsed：cpu内核占用； 用户上报的自定义指标名称。
+        :param metric_name: 指标名称。名称长度取值范围为1~255个字符。 取值范围：AOM提供的基础指标，cpuUsage、cpuCoreUsed等。 cpuUage：cpu使用率； cpuCoreUsed：cpu内核占用； 用户上报的自定义指标名称。
         :type metric_name: str
         :param namespace: 指标命名空间。 取值范围 PAAS.CONTAINER：组件指标、实例指标、进程指标和容器指标的命名空间， PAAS.NODE： 主机指标、网络指标、磁盘指标和文件系统指标的命名空间， PAAS.SLA：SLA指标的命名空间， PAAS.AGGR：集群指标的命名空间， CUSTOMMETRICS：默认的自定义指标的命名空间。
         :type namespace: str
@@ -83,7 +83,7 @@ class QueryMetricItemOptionParam:
     def metric_name(self):
         """Gets the metric_name of this QueryMetricItemOptionParam.
 
-        指标名称。名称长度取值范围为1~255个字符。 取值范围： AOM提供的基础指标， cpuUsage、cpuCoreUsed等 cpuUage：cpu使用率； cpuCoreUsed：cpu内核占用； 用户上报的自定义指标名称。
+        指标名称。名称长度取值范围为1~255个字符。 取值范围：AOM提供的基础指标，cpuUsage、cpuCoreUsed等。 cpuUage：cpu使用率； cpuCoreUsed：cpu内核占用； 用户上报的自定义指标名称。
 
         :return: The metric_name of this QueryMetricItemOptionParam.
         :rtype: str
@@ -94,7 +94,7 @@ class QueryMetricItemOptionParam:
     def metric_name(self, metric_name):
         """Sets the metric_name of this QueryMetricItemOptionParam.
 
-        指标名称。名称长度取值范围为1~255个字符。 取值范围： AOM提供的基础指标， cpuUsage、cpuCoreUsed等 cpuUage：cpu使用率； cpuCoreUsed：cpu内核占用； 用户上报的自定义指标名称。
+        指标名称。名称长度取值范围为1~255个字符。 取值范围：AOM提供的基础指标，cpuUsage、cpuCoreUsed等。 cpuUage：cpu使用率； cpuCoreUsed：cpu内核占用； 用户上报的自定义指标名称。
 
         :param metric_name: The metric_name of this QueryMetricItemOptionParam.
         :type metric_name: str

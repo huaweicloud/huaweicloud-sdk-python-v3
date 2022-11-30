@@ -47,8 +47,7 @@ class BcsAsyncClient(Client):
 
         peer节点加入通道,目前仅支持往一个通道中加入peer
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchAddPeersToChannel
@@ -111,8 +110,7 @@ class BcsAsyncClient(Client):
 
         创建通道
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchCreateChannels
@@ -175,8 +173,7 @@ class BcsAsyncClient(Client):
 
         批量邀请联盟成员加入通道，此操作会向被邀请方发出邀请通知
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchInviteMembersToChannel
@@ -237,8 +234,7 @@ class BcsAsyncClient(Client):
 
         该接口用于BCS组织退出某通道。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchRemoveOrgsFromChannel
@@ -303,8 +299,7 @@ class BcsAsyncClient(Client):
 
         该接口用于BCS某个组织中的节点退出某通道。当节点为通道中最后一个节点时，需要使用组织退通道的接口来将通道中的最后一个节点退出。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchRemovePeersFromChannel
@@ -369,8 +364,7 @@ class BcsAsyncClient(Client):
 
         通过用户名生成指定服务实例组织用户证书
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateBlockchainCertByUserName
@@ -437,8 +431,7 @@ class BcsAsyncClient(Client):
 
         创建BCS服务实例,只支持按需创建
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateNewBlockchain
@@ -499,8 +492,7 @@ class BcsAsyncClient(Client):
 
         删除bcs实例。包周期实例不支持
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteBlockchain
@@ -573,8 +565,7 @@ class BcsAsyncClient(Client):
 
         该接口用于BCS删除某个通道。仅支持删除空通道
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteChannel
@@ -637,8 +628,7 @@ class BcsAsyncClient(Client):
 
         可通过此接口批量取消邀请或删除对已退出或拒绝加入或解散的成员邀请信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteMemberInvite
@@ -699,8 +689,7 @@ class BcsAsyncClient(Client):
 
         下载指定服务实例相关证书
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DownloadBlockchainCert
@@ -765,8 +754,7 @@ class BcsAsyncClient(Client):
 
         下载指定服务实例SDK配置文件
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DownloadBlockchainSdkConfig
@@ -829,8 +817,7 @@ class BcsAsyncClient(Client):
 
         冻结指定服务实例组织用户证书，冻结后需等待半分钟到一分钟左右生效
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for FreezeCert
@@ -899,8 +886,7 @@ class BcsAsyncClient(Client):
 
         处理联盟邀请
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for HandleNotification
@@ -961,8 +947,7 @@ class BcsAsyncClient(Client):
 
         被邀请方退出联盟
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for HandleUnionMemberQuitList
@@ -1023,8 +1008,7 @@ class BcsAsyncClient(Client):
 
         该接口用于查询BCS服务的监控数据，可以指定相应的指标名称。[目前不支持IEF节点](tag:hasief)
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListBcsMetric
@@ -1087,8 +1071,7 @@ class BcsAsyncClient(Client):
 
         查询指定服务实例通道信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListBlockchainChannels
@@ -1149,8 +1132,7 @@ class BcsAsyncClient(Client):
 
         查询当前项目下所有服务实例的简要信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListBlockchains
@@ -1209,8 +1191,7 @@ class BcsAsyncClient(Client):
 
         该接口用于查询BCS组织的监控数据列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListEntityMetric
@@ -1273,8 +1254,7 @@ class BcsAsyncClient(Client):
 
         该接口用于BCS组织实例监控数据详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListInstanceMetric
@@ -1337,8 +1317,7 @@ class BcsAsyncClient(Client):
 
         获取联盟成员列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListMembers
@@ -1397,8 +1376,7 @@ class BcsAsyncClient(Client):
 
         获取全部通知
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListNotifications
@@ -1457,8 +1435,7 @@ class BcsAsyncClient(Client):
 
         查询异步操作结果
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListOpRecord
@@ -1527,8 +1504,7 @@ class BcsAsyncClient(Client):
 
         查询当前项目下BCS服务所有资源的配额信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListQuotas
@@ -1587,8 +1563,7 @@ class BcsAsyncClient(Client):
 
         查询指定服务实例详细信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowBlockchainDetail
@@ -1649,8 +1624,7 @@ class BcsAsyncClient(Client):
 
         查询服务联盟链规格信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowBlockchainFlavors
@@ -1713,8 +1687,7 @@ class BcsAsyncClient(Client):
 
         查询指定服务实例节点信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowBlockchainNodes
@@ -1775,8 +1748,7 @@ class BcsAsyncClient(Client):
 
         查询指定服务实例创建状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowBlockchainStatus
@@ -1837,8 +1809,7 @@ class BcsAsyncClient(Client):
 
         解冻指定服务实例组织用户证书，解冻后需等待半分钟到一分钟左右生效
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UnfreezeCert
@@ -1907,8 +1878,7 @@ class BcsAsyncClient(Client):
 
         修改实例的节点、组织，目前仅支持添加、删除节点（IEF模式不支持添加、删除节点），添加、删除组织，共4种类型，每次操作只可以操作一种类型。此接口不支持包周期模式; 注意注册IEF节点时，IEF节点名称长度应该为4-24位的字符
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateInstance

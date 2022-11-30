@@ -47,8 +47,7 @@ class GaussDBAsyncClient(Client):
 
         授予云数据库 GaussDB(for MySQL)实例数据库用户数据库权限
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddDatabasePermission
@@ -113,8 +112,7 @@ class GaussDBAsyncClient(Client):
 
         批量添加或删除指定实例的标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchTagAction
@@ -179,8 +177,7 @@ class GaussDBAsyncClient(Client):
 
         变更数据库实例的规格。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ChangeGaussMySqlInstanceSpecification
@@ -245,8 +242,7 @@ class GaussDBAsyncClient(Client):
 
         数据库代理规格变更。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ChangeGaussMySqlProxySpecification
@@ -313,8 +309,7 @@ class GaussDBAsyncClient(Client):
 
         创建手动备份
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateGaussMySqlBackup
@@ -377,8 +372,7 @@ class GaussDBAsyncClient(Client):
 
         创建云数据库 GaussDB(for MySQL)实例数据库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateGaussMySqlDatabase
@@ -443,8 +437,7 @@ class GaussDBAsyncClient(Client):
 
         创建云数据库 GaussDB(for MySQL)实例数据库用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateGaussMySqlDatabaseUser
@@ -509,8 +502,7 @@ class GaussDBAsyncClient(Client):
 
         创建云数据库 GaussDB(for MySQL)实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateGaussMySqlInstance
@@ -573,8 +565,7 @@ class GaussDBAsyncClient(Client):
 
         开启数据库代理，只支持ELB模式。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateGaussMySqlProxy
@@ -639,8 +630,7 @@ class GaussDBAsyncClient(Client):
 
         创建只读节点。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateGaussMySqlReadonlyNode
@@ -705,8 +695,7 @@ class GaussDBAsyncClient(Client):
 
         删除云数据库 GaussDB(for MySQL)实例数据库用户的数据库权限
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDatabasePermission
@@ -771,8 +760,7 @@ class GaussDBAsyncClient(Client):
 
         删除云数据库 GaussDB(for MySQL)实例数据库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteGaussMySqlDatabase
@@ -837,8 +825,7 @@ class GaussDBAsyncClient(Client):
 
         删除云数据库 GaussDB(for MySQL)实例数据库用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteGaussMySqlDatabaseUser
@@ -903,8 +890,7 @@ class GaussDBAsyncClient(Client):
 
         删除数据库实例，不支持删除包周期实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteGaussMySqlInstance
@@ -967,8 +953,7 @@ class GaussDBAsyncClient(Client):
 
         关闭数据库代理。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteGaussMySqlProxy
@@ -1033,8 +1018,7 @@ class GaussDBAsyncClient(Client):
 
         删除实例的只读节点。多可用区模式删除只读节点时，要保证删除后，剩余的只读节点和主节点在不同的可用区中，否则无法删除该只读节点。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteGaussMySqlReadonlyNode
@@ -1099,8 +1083,7 @@ class GaussDBAsyncClient(Client):
 
         包周期存储扩容
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ExpandGaussMySqlInstanceVolume
@@ -1166,8 +1149,7 @@ class GaussDBAsyncClient(Client):
         扩容数据库代理节点的数量。
         DeC专属云账号暂不支持数据库代理。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ExpandGaussMySqlProxy
@@ -1232,8 +1214,7 @@ class GaussDBAsyncClient(Client):
 
         获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListGaussMySqlConfigurations
@@ -1298,8 +1279,7 @@ class GaussDBAsyncClient(Client):
 
         查询 GaussDB(for MySQL)实例数据库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListGaussMySqlDatabase
@@ -1366,8 +1346,7 @@ class GaussDBAsyncClient(Client):
 
         查询云数据库 GaussDB(for MySQL)实例数据库可用字符集。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListGaussMySqlDatabaseCharsets
@@ -1430,8 +1409,7 @@ class GaussDBAsyncClient(Client):
 
         查询云数据库 GaussDB(for MySQL)实例数据库用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListGaussMySqlDatabaseUser
@@ -1498,8 +1476,7 @@ class GaussDBAsyncClient(Client):
 
         获取专属资源池列表，包括用户开通的所有专属资源池信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListGaussMySqlDedicatedResources
@@ -1564,8 +1541,7 @@ class GaussDBAsyncClient(Client):
 
         查询数据库错误日志。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListGaussMySqlErrorLog
@@ -1640,8 +1616,7 @@ class GaussDBAsyncClient(Client):
 
         批量查询实例详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListGaussMySqlInstanceDetailInfo
@@ -1704,8 +1679,7 @@ class GaussDBAsyncClient(Client):
 
         根据指定条件查询实例列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListGaussMySqlInstances
@@ -1786,8 +1760,7 @@ class GaussDBAsyncClient(Client):
 
         查询数据库慢日志
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListGaussMySqlSlowLog
@@ -1862,8 +1835,7 @@ class GaussDBAsyncClient(Client):
 
         查询指定实例的标签信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListInstanceTags
@@ -1930,8 +1902,7 @@ class GaussDBAsyncClient(Client):
 
         查询指定project ID下实例的所有标签集合。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListProjectTags
@@ -1996,8 +1967,7 @@ class GaussDBAsyncClient(Client):
 
         修改云数据库 GaussDB(for MySQL)实例数据库用户密码。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetGaussMySqlDatabasePassword
@@ -2062,8 +2032,7 @@ class GaussDBAsyncClient(Client):
 
         重置数据库密码
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetGaussMySqlPassword
@@ -2128,8 +2097,7 @@ class GaussDBAsyncClient(Client):
 
         设置读写分离权重
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetGaussMySqlProxyWeight
@@ -2196,8 +2164,7 @@ class GaussDBAsyncClient(Client):
 
         设置指定企业项目的资源配额。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetGaussMySqlQuotas
@@ -2260,8 +2227,7 @@ class GaussDBAsyncClient(Client):
 
         查询审计日志开关状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowAuditLog
@@ -2324,8 +2290,7 @@ class GaussDBAsyncClient(Client):
 
         查询专属资源信息详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDedicatedResourceInfo
@@ -2388,8 +2353,7 @@ class GaussDBAsyncClient(Client):
 
         查询备份列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowGaussMySqlBackupList
@@ -2464,8 +2428,7 @@ class GaussDBAsyncClient(Client):
 
         查询自动备份策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowGaussMySqlBackupPolicy
@@ -2528,8 +2491,7 @@ class GaussDBAsyncClient(Client):
 
         获取指定数据库引擎对应的数据库版本信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowGaussMySqlEngineVersion
@@ -2592,8 +2554,7 @@ class GaussDBAsyncClient(Client):
 
         获取指定数据库引擎版本对应的规格信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowGaussMySqlFlavors
@@ -2662,8 +2623,7 @@ class GaussDBAsyncClient(Client):
 
         查询实例详情信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowGaussMySqlInstanceInfo
@@ -2726,8 +2686,7 @@ class GaussDBAsyncClient(Client):
 
         获取GaussDB(for MySQL)任务中心指定ID的任务信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowGaussMySqlJobInfo
@@ -2790,8 +2749,7 @@ class GaussDBAsyncClient(Client):
 
         获取指定租户的资源配额。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowGaussMySqlProjectQuotas
@@ -2854,8 +2812,7 @@ class GaussDBAsyncClient(Client):
 
         查询数据库代理规格信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowGaussMySqlProxyFlavors
@@ -2918,8 +2875,7 @@ class GaussDBAsyncClient(Client):
 
         查询数据库代理信息列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowGaussMySqlProxyList
@@ -2986,8 +2942,7 @@ class GaussDBAsyncClient(Client):
 
         获取指定企业项目的资源配额。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowGaussMySqlQuotas
@@ -3054,8 +3009,7 @@ class GaussDBAsyncClient(Client):
 
         查询实例秒级监控频率。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowInstanceMonitorExtend
@@ -3118,8 +3072,7 @@ class GaussDBAsyncClient(Client):
 
         开启或者关闭审计日志
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateAuditLog
@@ -3184,8 +3137,7 @@ class GaussDBAsyncClient(Client):
 
         修改备份策略
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateGaussMySqlBackupPolicy
@@ -3250,8 +3202,7 @@ class GaussDBAsyncClient(Client):
 
         修改实例名称
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateGaussMySqlInstanceName
@@ -3316,8 +3267,7 @@ class GaussDBAsyncClient(Client):
 
         修改指定企业项目的资源配额。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateGaussMySqlQuotas
@@ -3380,8 +3330,7 @@ class GaussDBAsyncClient(Client):
 
         打开/关闭/修改实例秒级监控。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateInstanceMonitor
@@ -3446,8 +3395,7 @@ class GaussDBAsyncClient(Client):
 
         开启/关闭proxy事务拆分
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateTransactionSplitStatus
@@ -3512,8 +3460,7 @@ class GaussDBAsyncClient(Client):
 
         删除SQL限流规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteSqlFilterRule
@@ -3578,8 +3525,7 @@ class GaussDBAsyncClient(Client):
 
         设置SQL限流规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetSqlFilterRule
@@ -3644,8 +3590,7 @@ class GaussDBAsyncClient(Client):
 
         查询SQL限流开关状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowSqlFilterControl
@@ -3708,8 +3653,7 @@ class GaussDBAsyncClient(Client):
 
         查询SQL限流规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowSqlFilterRule
@@ -3776,8 +3720,7 @@ class GaussDBAsyncClient(Client):
 
         开启或者关闭SQL限流
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateSqlFilterControl

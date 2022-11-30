@@ -47,8 +47,7 @@ class VcmClient(Client):
 
         该 API 用于查询并显示单个作业详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckAudioJob
         :type request: :class:`huaweicloudsdkvcm.v2.CheckAudioJobRequest`
@@ -108,8 +107,7 @@ class VcmClient(Client):
 
         该API用于查询并显示单个作业详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckVideoJob
         :type request: :class:`huaweicloudsdkvcm.v2.CheckVideoJobRequest`
@@ -169,8 +167,7 @@ class VcmClient(Client):
 
         该接口用于创建语音内容审核的作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAudioJob
         :type request: :class:`huaweicloudsdkvcm.v2.CreateAudioJobRequest`
@@ -230,8 +227,7 @@ class VcmClient(Client):
 
         该接口用于创建视频内容审核的作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateVideoJob
         :type request: :class:`huaweicloudsdkvcm.v2.CreateVideoJobRequest`
@@ -291,8 +287,7 @@ class VcmClient(Client):
 
         删除语音作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDemoInfo
         :type request: :class:`huaweicloudsdkvcm.v2.DeleteDemoInfoRequest`
@@ -352,8 +347,7 @@ class VcmClient(Client):
 
         该API用于删除指定作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteVideoJob
         :type request: :class:`huaweicloudsdkvcm.v2.DeleteVideoJobRequest`
@@ -413,8 +407,7 @@ class VcmClient(Client):
 
         查询作业列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAudioJobs
         :type request: :class:`huaweicloudsdkvcm.v2.ListAudioJobsRequest`
@@ -472,8 +465,7 @@ class VcmClient(Client):
 
         该API用于查询并显示视频内容审核的作业列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListVideoJobs
         :type request: :class:`huaweicloudsdkvcm.v2.ListVideoJobsRequest`

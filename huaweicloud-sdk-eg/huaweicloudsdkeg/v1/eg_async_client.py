@@ -47,8 +47,7 @@ class EgAsyncClient(Client):
 
         按照业务场景，一键创建服务委托授权
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateAgencies
@@ -109,8 +108,7 @@ class EgAsyncClient(Client):
 
         创建自定义事件通道
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateChannel
@@ -171,8 +169,7 @@ class EgAsyncClient(Client):
 
         创建目标连接
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateConnection
@@ -233,8 +230,7 @@ class EgAsyncClient(Client):
 
         create endpoint
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateEndpoint
@@ -295,8 +291,7 @@ class EgAsyncClient(Client):
 
         创建自定义事件模型
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateEventSchema
@@ -357,8 +352,7 @@ class EgAsyncClient(Client):
 
         创建自定义事件模型版本，版本号后台自动生成
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateEventSchemaVersion
@@ -421,8 +415,7 @@ class EgAsyncClient(Client):
 
         创建用户自定义类型的事件源，只能指定自定义通道，不能指定系统通道
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateEventSource
@@ -483,8 +476,7 @@ class EgAsyncClient(Client):
 
         创建事件订阅
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateSubscription
@@ -545,8 +537,7 @@ class EgAsyncClient(Client):
 
         创建单个事件订阅目标
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateSubscriptionTarget
@@ -609,8 +600,7 @@ class EgAsyncClient(Client):
 
         删除指定自定义事件通道
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteChannel
@@ -671,8 +661,7 @@ class EgAsyncClient(Client):
 
         删除目标连接
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteConnection
@@ -732,8 +721,7 @@ class EgAsyncClient(Client):
         """删除访问端点
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteEndpoint
@@ -794,8 +782,7 @@ class EgAsyncClient(Client):
 
         删除事件模型
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteEventSchema
@@ -856,8 +843,7 @@ class EgAsyncClient(Client):
 
         删除事件模型指定版本
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteEventSchemaVersion
@@ -920,8 +906,7 @@ class EgAsyncClient(Client):
 
         删除指定的自定义事件源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteEventSource
@@ -982,8 +967,7 @@ class EgAsyncClient(Client):
 
         删除事件订阅
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteSubscription
@@ -1044,8 +1028,7 @@ class EgAsyncClient(Client):
 
         删除事件订阅目标
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteSubscriptionTarget
@@ -1108,8 +1091,7 @@ class EgAsyncClient(Client):
 
         事件模型自动发现
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DiscoverEventSchemaFromData
@@ -1169,8 +1151,7 @@ class EgAsyncClient(Client):
         """查询服务委托
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAgencies
@@ -1231,8 +1212,7 @@ class EgAsyncClient(Client):
 
         查询事件通道列表，包括系统通道和自定义通道
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListChannels
@@ -1303,8 +1283,7 @@ class EgAsyncClient(Client):
 
         查询目标连接列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListConnections
@@ -1373,8 +1352,7 @@ class EgAsyncClient(Client):
 
         list all endpoints
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListEndpoints
@@ -1447,8 +1425,7 @@ class EgAsyncClient(Client):
 
         查询事件模型列表，包括系统事件模型和自定义事件模型
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListEventSchema
@@ -1519,8 +1496,7 @@ class EgAsyncClient(Client):
 
         查询事件模型版本列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListEventSchemaVersions
@@ -1587,8 +1563,7 @@ class EgAsyncClient(Client):
 
         支持条件查询，如可以指定事件通道ID来查询某个事件通道下的所有事件源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListEventSources
@@ -1663,8 +1638,7 @@ class EgAsyncClient(Client):
 
         查询预置的事件目标分类，获取每个事件目标分类的字段定义
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListEventTarget
@@ -1731,8 +1705,7 @@ class EgAsyncClient(Client):
 
         查询当前租户的配额，未特殊配置过的会返回默认配额
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListQuotas
@@ -1793,8 +1766,7 @@ class EgAsyncClient(Client):
 
         查询事件订阅列表，支持指定事件通道
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSubscriptions
@@ -1865,8 +1837,7 @@ class EgAsyncClient(Client):
 
         查询触发器，支持指定函数urn。一个以函数urn为目标的订阅为一个触发器。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTriggers
@@ -1933,8 +1904,7 @@ class EgAsyncClient(Client):
 
         操作事件订阅，支持启用、禁用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for OperateSubscription
@@ -1995,8 +1965,7 @@ class EgAsyncClient(Client):
 
         发布事件到事件通道
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for PutEvents
@@ -2058,8 +2027,7 @@ class EgAsyncClient(Client):
         """查询事件通道详情
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDetailOfChannel
@@ -2119,8 +2087,7 @@ class EgAsyncClient(Client):
         """查询目标连接详情
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDetailOfConnection
@@ -2181,8 +2148,7 @@ class EgAsyncClient(Client):
 
         查询事件模型详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDetailOfEventSchema
@@ -2243,8 +2209,7 @@ class EgAsyncClient(Client):
 
         查询事件模型指定版本详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDetailOfEventSchemaVersion
@@ -2307,8 +2272,7 @@ class EgAsyncClient(Client):
 
         查询事件源详情信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDetailOfEventSource
@@ -2369,8 +2333,7 @@ class EgAsyncClient(Client):
 
         查询事件订阅详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDetailOfSubscription
@@ -2431,8 +2394,7 @@ class EgAsyncClient(Client):
 
         查询事件订阅目标详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDetailOfSubscriptionTarget
@@ -2495,8 +2457,7 @@ class EgAsyncClient(Client):
 
         更新自定义事件通道定义
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateChannel
@@ -2559,8 +2520,7 @@ class EgAsyncClient(Client):
 
         更新目标连接
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateConnection
@@ -2623,8 +2583,7 @@ class EgAsyncClient(Client):
 
         update endpoint
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateEndpoint
@@ -2687,8 +2646,7 @@ class EgAsyncClient(Client):
 
         更新自定义事件模型定义
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateEventSchema
@@ -2751,8 +2709,7 @@ class EgAsyncClient(Client):
 
         更新自定义事件源定义
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateEventSource
@@ -2815,8 +2772,7 @@ class EgAsyncClient(Client):
 
         更新事件订阅定义
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateSubscription
@@ -2879,8 +2835,7 @@ class EgAsyncClient(Client):
 
         更新事件订阅源定义
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateSubscriptionSource
@@ -2945,8 +2900,7 @@ class EgAsyncClient(Client):
 
         更新事件订阅目标定义
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateSubscriptionTarget
@@ -3011,8 +2965,7 @@ class EgAsyncClient(Client):
 
         获取服务支持的API版本列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApiVersions

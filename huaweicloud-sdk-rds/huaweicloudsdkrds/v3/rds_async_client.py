@@ -47,8 +47,7 @@ class RdsAsyncClient(Client):
 
         应用参数模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ApplyConfigurationAsync
@@ -113,8 +112,7 @@ class RdsAsyncClient(Client):
 
         绑定和解绑弹性公网IP。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AttachEip
@@ -179,8 +177,7 @@ class RdsAsyncClient(Client):
 
         批量添加标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchTagAddAction
@@ -245,8 +242,7 @@ class RdsAsyncClient(Client):
 
         批量删除标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchTagDelAction
@@ -311,8 +307,7 @@ class RdsAsyncClient(Client):
 
         更改主备实例的数据同步方式。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ChangeFailoverMode
@@ -377,8 +372,7 @@ class RdsAsyncClient(Client):
 
         切换主备实例的倒换策略.
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ChangeFailoverStrategy
@@ -443,8 +437,7 @@ class RdsAsyncClient(Client):
 
         设置可维护时间段
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ChangeOpsWindow
@@ -509,8 +502,7 @@ class RdsAsyncClient(Client):
 
         创建参数模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateConfiguration
@@ -573,8 +565,7 @@ class RdsAsyncClient(Client):
 
         申请域名
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateDnsName
@@ -639,8 +630,7 @@ class RdsAsyncClient(Client):
 
         创建数据库实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateInstance
@@ -703,8 +693,7 @@ class RdsAsyncClient(Client):
 
         创建手动备份。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateManualBackup
@@ -767,8 +756,7 @@ class RdsAsyncClient(Client):
 
         在指定数据库上创建插件。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreatePostgresqlExtension
@@ -833,8 +821,7 @@ class RdsAsyncClient(Client):
 
         恢复到新实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateRestoreInstance
@@ -897,8 +884,7 @@ class RdsAsyncClient(Client):
 
         删除参数模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteConfiguration
@@ -961,8 +947,7 @@ class RdsAsyncClient(Client):
 
         删除数据库实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteInstance
@@ -1025,8 +1010,7 @@ class RdsAsyncClient(Client):
 
         删除手动备份。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteManualBackup
@@ -1089,8 +1073,7 @@ class RdsAsyncClient(Client):
 
         在指定数据库上删除插件。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeletePostgresqlExtension
@@ -1155,8 +1138,7 @@ class RdsAsyncClient(Client):
 
         获取慢日志下载链接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DownloadSlowlog
@@ -1221,8 +1203,7 @@ class RdsAsyncClient(Client):
 
         应用参数模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for EnableConfiguration
@@ -1287,8 +1268,7 @@ class RdsAsyncClient(Client):
 
         获取审计日志列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAuditlogs
@@ -1359,8 +1339,7 @@ class RdsAsyncClient(Client):
 
         获取备份列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListBackups
@@ -1435,8 +1414,7 @@ class RdsAsyncClient(Client):
 
         查询SQLServer可用字符集
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListCollations
@@ -1497,8 +1475,7 @@ class RdsAsyncClient(Client):
 
         获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListConfigurations
@@ -1559,8 +1536,7 @@ class RdsAsyncClient(Client):
 
         查询数据库引擎的版本。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDatastores
@@ -1623,8 +1599,7 @@ class RdsAsyncClient(Client):
 
         批量查询容灾实例信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDrRelations
@@ -1685,8 +1660,7 @@ class RdsAsyncClient(Client):
 
         查询数据库错误日志。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListErrorLogs
@@ -1759,8 +1733,7 @@ class RdsAsyncClient(Client):
 
         查询数据库错误日志。(与原v3接口相比修改offset,符合华为云服务开放 API遵从性规范3.0)
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListErrorLogsNew
@@ -1833,8 +1806,7 @@ class RdsAsyncClient(Client):
 
         查询数据库规格。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListFlavors
@@ -1901,8 +1873,7 @@ class RdsAsyncClient(Client):
 
         查询数据库实例列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListInstances
@@ -1981,8 +1952,7 @@ class RdsAsyncClient(Client):
 
         获取指定ID的任务信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListJobInfo
@@ -2045,8 +2015,7 @@ class RdsAsyncClient(Client):
 
         获取指定实例和时间范围的任务信息（SQL Server）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListJobInfoDetail
@@ -2113,8 +2082,7 @@ class RdsAsyncClient(Client):
 
         查询跨区域备份列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListOffSiteBackups
@@ -2189,8 +2157,7 @@ class RdsAsyncClient(Client):
 
         查询跨区域备份实例列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListOffSiteInstances
@@ -2256,8 +2223,7 @@ class RdsAsyncClient(Client):
         查询跨区域备份可恢复时间段。
         如果您备份策略中的保存天数设置较长，建议您传入查询日期“date”。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListOffSiteRestoreTimes
@@ -2322,8 +2288,7 @@ class RdsAsyncClient(Client):
 
         获取指定数据库的插件信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListPostgresqlExtension
@@ -2392,8 +2357,7 @@ class RdsAsyncClient(Client):
 
         查询项目标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListProjectTags
@@ -2455,8 +2419,7 @@ class RdsAsyncClient(Client):
         查询可恢复时间段。
         如果您备份策略中的保存天数设置较长，建议您传入查询日期“date”。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRestoreTimes
@@ -2522,8 +2485,7 @@ class RdsAsyncClient(Client):
         查询慢日志文件列表。
         调用该接口取到慢日志文件名后，可以调用接口/v3/{project_id}/instances/{instance_id}/slowlog-download 获取慢日志文件下载链接
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSlowLogFile
@@ -2590,8 +2552,7 @@ class RdsAsyncClient(Client):
 
         查询数据库慢日志。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSlowLogs
@@ -2664,8 +2625,7 @@ class RdsAsyncClient(Client):
 
         查询数据库慢日志。(与原v3接口相比修改offset,符合华为云服务开放 API遵从性规范3.0)
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSlowLogsNew
@@ -2738,8 +2698,7 @@ class RdsAsyncClient(Client):
 
         获取慢日志统计信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSlowlogStatistics
@@ -2814,8 +2773,7 @@ class RdsAsyncClient(Client):
 
         查询数据库磁盘类型。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListStorageTypes
@@ -2882,8 +2840,7 @@ class RdsAsyncClient(Client):
 
         迁移主备实例的备机
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for MigrateFollower
@@ -2948,8 +2905,7 @@ class RdsAsyncClient(Client):
 
         恢复到已有实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RestoreExistInstance
@@ -3012,8 +2968,7 @@ class RdsAsyncClient(Client):
 
         表级时间点恢复(MySQL)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RestoreTables
@@ -3078,8 +3033,7 @@ class RdsAsyncClient(Client):
 
         恢复到已有实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RestoreToExistingInstance
@@ -3142,8 +3096,7 @@ class RdsAsyncClient(Client):
 
         设置审计日志策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetAuditlogPolicy
@@ -3208,8 +3161,7 @@ class RdsAsyncClient(Client):
 
         设置自动备份策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetBackupPolicy
@@ -3274,8 +3226,7 @@ class RdsAsyncClient(Client):
 
         修改指定实例的binlog本地保留时长。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetBinlogClearPolicy
@@ -3340,8 +3291,7 @@ class RdsAsyncClient(Client):
 
         设置跨区域备份策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetOffSiteBackupPolicy
@@ -3406,8 +3356,7 @@ class RdsAsyncClient(Client):
 
         修改安全组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetSecurityGroup
@@ -3472,8 +3421,7 @@ class RdsAsyncClient(Client):
 
         V3慢日志敏感信息的开关
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetSensitiveSlowLog
@@ -3538,8 +3486,7 @@ class RdsAsyncClient(Client):
 
         生成审计日志下载链接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowAuditlogDownloadLink
@@ -3604,8 +3551,7 @@ class RdsAsyncClient(Client):
 
         查询审计日志策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowAuditlogPolicy
@@ -3668,8 +3614,7 @@ class RdsAsyncClient(Client):
 
         获取备份下载链接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowBackupDownloadLink
@@ -3732,8 +3677,7 @@ class RdsAsyncClient(Client):
 
         查询自动备份策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowBackupPolicy
@@ -3796,8 +3740,7 @@ class RdsAsyncClient(Client):
 
         查寻指定实例的binlog本地保留时长。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowBinlogClearPolicy
@@ -3860,8 +3803,7 @@ class RdsAsyncClient(Client):
 
         获取指定参数模板的参数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowConfiguration
@@ -3924,8 +3866,7 @@ class RdsAsyncClient(Client):
 
         查询实例ipv6域名。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDnsName
@@ -3990,8 +3931,7 @@ class RdsAsyncClient(Client):
 
         查询实例ipv4域名
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDomainName
@@ -4056,8 +3996,7 @@ class RdsAsyncClient(Client):
 
         建立跨云容灾关系后，查询主实例和灾备实例间的复制状态及延迟。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDrReplicaStatus
@@ -4120,8 +4059,7 @@ class RdsAsyncClient(Client):
 
         获取指定实例的参数模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowInstanceConfiguration
@@ -4184,8 +4122,7 @@ class RdsAsyncClient(Client):
 
         查询跨区域备份策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowOffSiteBackupPolicy
@@ -4248,8 +4185,7 @@ class RdsAsyncClient(Client):
 
         查询当前项目下资源配额情况。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowQuotas
@@ -4310,8 +4246,7 @@ class RdsAsyncClient(Client):
 
         获取实例的复制状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowReplicationStatus
@@ -4374,8 +4309,7 @@ class RdsAsyncClient(Client):
 
         手动倒换主备.
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartFailover
@@ -4440,8 +4374,7 @@ class RdsAsyncClient(Client):
 
         扩容数据库实例的磁盘空间。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartInstanceEnlargeVolumeAction
@@ -4506,8 +4439,7 @@ class RdsAsyncClient(Client):
 
         重启数据库实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartInstanceRestartAction
@@ -4572,8 +4504,7 @@ class RdsAsyncClient(Client):
 
         单机转主备实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartInstanceSingleToHaAction
@@ -4638,8 +4569,7 @@ class RdsAsyncClient(Client):
 
         设置回收站策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartRecyclePolicy
@@ -4702,8 +4632,7 @@ class RdsAsyncClient(Client):
 
         变更数据库实例的规格。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartResizeFlavorAction
@@ -4768,8 +4697,7 @@ class RdsAsyncClient(Client):
 
         停止实例以节省费用，在停止数据库实例后，支持手动重新开启实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartupInstance
@@ -4832,8 +4760,7 @@ class RdsAsyncClient(Client):
 
         实例进行关机，通过暂时停止按需实例以节省费用，实例默认停止七天。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopInstance
@@ -4896,8 +4823,7 @@ class RdsAsyncClient(Client):
 
         设置SSL数据加密。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SwitchSsl
@@ -4962,8 +4888,7 @@ class RdsAsyncClient(Client):
 
         修改参数模板参数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateConfiguration
@@ -5028,8 +4953,7 @@ class RdsAsyncClient(Client):
 
         修改内网地址
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDataIp
@@ -5094,8 +5018,7 @@ class RdsAsyncClient(Client):
 
         修改域名
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDnsName
@@ -5160,8 +5083,7 @@ class RdsAsyncClient(Client):
 
         修改指定实例的参数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateInstanceConfiguration
@@ -5226,8 +5148,7 @@ class RdsAsyncClient(Client):
 
         修改指定实例的参数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateInstanceConfigurationAsync
@@ -5292,8 +5213,7 @@ class RdsAsyncClient(Client):
 
         修改实例名称。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateInstanceName
@@ -5358,8 +5278,7 @@ class RdsAsyncClient(Client):
 
         修改数据库端口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdatePort
@@ -5424,8 +5343,7 @@ class RdsAsyncClient(Client):
 
         修改指定数据库实例的备注信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdatePostgresqlInstanceAlias
@@ -5490,8 +5408,7 @@ class RdsAsyncClient(Client):
 
         对实例进行小版本升级。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpgradeDbVersion
@@ -5556,8 +5473,7 @@ class RdsAsyncClient(Client):
 
         查询API版本列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApiVersion
@@ -5616,8 +5532,7 @@ class RdsAsyncClient(Client):
 
         查询API版本列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApiVersionNew
@@ -5676,8 +5591,7 @@ class RdsAsyncClient(Client):
 
         查询指定的API版本信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowApiVersion
@@ -5738,8 +5652,7 @@ class RdsAsyncClient(Client):
 
         授权数据库帐号。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AllowDbUserPrivilege
@@ -5804,8 +5717,7 @@ class RdsAsyncClient(Client):
 
         创建数据库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateDatabase
@@ -5870,8 +5782,7 @@ class RdsAsyncClient(Client):
 
         在指定实例中创建数据库帐号。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateDbUser
@@ -5936,8 +5847,7 @@ class RdsAsyncClient(Client):
 
         删除数据库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDatabase
@@ -6002,8 +5912,7 @@ class RdsAsyncClient(Client):
 
         删除数据库用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDbUser
@@ -6068,8 +5977,7 @@ class RdsAsyncClient(Client):
 
         查询指定用户的已授权数据库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAuthorizedDatabases
@@ -6138,8 +6046,7 @@ class RdsAsyncClient(Client):
 
         查询指定数据库的已授权用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAuthorizedDbUsers
@@ -6208,8 +6115,7 @@ class RdsAsyncClient(Client):
 
         查询数据库列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDatabases
@@ -6276,8 +6182,7 @@ class RdsAsyncClient(Client):
 
         查询数据库用户列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDbUsers
@@ -6344,8 +6249,7 @@ class RdsAsyncClient(Client):
 
         重置数据库密码.
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetPwd
@@ -6410,8 +6314,7 @@ class RdsAsyncClient(Client):
 
         解除数据库帐号权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for Revoke
@@ -6476,8 +6379,7 @@ class RdsAsyncClient(Client):
 
         设置数据库账号密码
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetDbUserPwd
@@ -6542,8 +6444,7 @@ class RdsAsyncClient(Client):
 
         根据业务需求，设置数据库用户只读
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetReadOnlySwitch
@@ -6608,8 +6509,7 @@ class RdsAsyncClient(Client):
 
         修改指定实例中的数据库备注。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDatabase
@@ -6674,8 +6574,7 @@ class RdsAsyncClient(Client):
 
         修改数据库用户名备注
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDbUserComment
@@ -6740,8 +6639,7 @@ class RdsAsyncClient(Client):
 
         在指定实例的数据库中, 设置帐号的权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AllowDbPrivilege
@@ -6808,8 +6706,7 @@ class RdsAsyncClient(Client):
         
         - 调用接口前，您需要了解API 认证鉴权。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ChangeProxyScale
@@ -6874,8 +6771,7 @@ class RdsAsyncClient(Client):
 
         修改指定实例的读写分离延时阈值。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ChangeTheDelayThreshold
@@ -6940,8 +6836,7 @@ class RdsAsyncClient(Client):
 
         在指定实例中创建数据库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreatePostgresqlDatabase
@@ -7006,8 +6901,7 @@ class RdsAsyncClient(Client):
 
         在指定实例的数据库中, 创建数据库schema。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreatePostgresqlDatabaseSchema
@@ -7072,8 +6966,7 @@ class RdsAsyncClient(Client):
 
         在指定实例中创建数据库用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreatePostgresqlDbUser
@@ -7138,8 +7031,7 @@ class RdsAsyncClient(Client):
 
         查询指定实例的数据库SCHEMA列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListPostgresqlDatabaseSchemas
@@ -7208,8 +7100,7 @@ class RdsAsyncClient(Client):
 
         查询指定实例中的数据库列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListPostgresqlDatabases
@@ -7276,8 +7167,7 @@ class RdsAsyncClient(Client):
 
         在指定实例中查询数据库用户列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListPostgresqlDbUserPaginated
@@ -7346,8 +7236,7 @@ class RdsAsyncClient(Client):
         
         - 调用接口前，您需要了解API 认证鉴权。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchQueryScaleComputeFlavors
@@ -7416,8 +7305,7 @@ class RdsAsyncClient(Client):
         
         - 调用接口前，您需要了解API 认证鉴权。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchQueryScaleFlavors
@@ -7480,8 +7368,7 @@ class RdsAsyncClient(Client):
 
         设置数据库用户权限：只读或可读写。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetDatabaseUserPrivilege
@@ -7546,8 +7433,7 @@ class RdsAsyncClient(Client):
 
         重置指定数据库帐号的密码。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetPostgresqlDbUserPwd
@@ -7612,8 +7498,7 @@ class RdsAsyncClient(Client):
 
         查询指定实例的数据库代理详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowInformationAboutDatabaseProxy
@@ -7676,8 +7561,7 @@ class RdsAsyncClient(Client):
 
         获取实例指定参数的值。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowPostgresqlParamValue
@@ -7742,8 +7626,7 @@ class RdsAsyncClient(Client):
 
         为指定实例开启数据库代理。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartDatabaseProxy
@@ -7808,8 +7691,7 @@ class RdsAsyncClient(Client):
 
         为指定实例关闭数据库代理。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopDatabaseProxy
@@ -7872,8 +7754,7 @@ class RdsAsyncClient(Client):
 
         修改实例指定参数的值。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdatePostgresqlParameterValue
@@ -7940,8 +7821,7 @@ class RdsAsyncClient(Client):
 
         修改指定实例的读写分离权重。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateReadWeight
@@ -8006,8 +7886,7 @@ class RdsAsyncClient(Client):
 
         授权数据库帐号。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AllowSqlserverDbUserPrivilege
@@ -8072,8 +7951,7 @@ class RdsAsyncClient(Client):
 
         创建数据库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateSqlserverDatabase
@@ -8138,8 +8016,7 @@ class RdsAsyncClient(Client):
 
         创建数据库用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateSqlserverDbUser
@@ -8204,8 +8081,7 @@ class RdsAsyncClient(Client):
 
         删除数据库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteSqlserverDatabase
@@ -8272,8 +8148,7 @@ class RdsAsyncClient(Client):
 
         删除数据库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteSqlserverDatabaseEx
@@ -8340,8 +8215,7 @@ class RdsAsyncClient(Client):
 
         删除数据库用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteSqlserverDbUser
@@ -8406,8 +8280,7 @@ class RdsAsyncClient(Client):
 
         查询指定数据库的已授权用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAuthorizedSqlserverDbUsers
@@ -8476,8 +8349,7 @@ class RdsAsyncClient(Client):
 
         查询数据库列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSqlserverDatabases
@@ -8546,8 +8418,7 @@ class RdsAsyncClient(Client):
 
         查询数据库用户列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSqlserverDbUsers
@@ -8614,8 +8485,7 @@ class RdsAsyncClient(Client):
 
         解除数据库帐号权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RevokeSqlserverDbUserPrivilege

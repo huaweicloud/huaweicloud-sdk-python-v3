@@ -47,8 +47,7 @@ class HiLensClient(Client):
 
         获取设备告警列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDeviceAlarms
         :type request: :class:`huaweicloudsdkhilens.v1.ListDeviceAlarmsRequest`
@@ -112,8 +111,7 @@ class HiLensClient(Client):
 
         获取基础版设备列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDevices
         :type request: :class:`huaweicloudsdkhilens.v1.ListDevicesRequest`

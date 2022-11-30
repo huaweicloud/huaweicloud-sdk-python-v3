@@ -48,8 +48,7 @@ class DcAsyncClient(Client):
         用于合作伙伴用户最终租户创建托管专线
         创建者必须拥有合作伙伴资质，并且已经构建好运营(hosting)专线
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateHostedDirectConnect
@@ -110,8 +109,7 @@ class DcAsyncClient(Client):
 
         删除物理连接，本接口只适用于按需计费物理专线，对于包周期购买的专线通过订单退订的方式删除物理连接
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDirectConnect
@@ -172,8 +170,7 @@ class DcAsyncClient(Client):
 
         合作伙伴删除托管专线
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteHostedDirectConnect
@@ -234,8 +231,7 @@ class DcAsyncClient(Client):
 
         查询租户创建的所有的direct connect对象.
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDirectConnects
@@ -318,8 +314,7 @@ class DcAsyncClient(Client):
 
         查询合作伙伴创建的托管专线连接列表.
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListHostedDirectConnects
@@ -399,8 +394,7 @@ class DcAsyncClient(Client):
 
         查询物理连接详细信息.
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDirectConnect
@@ -468,8 +462,7 @@ class DcAsyncClient(Client):
 
         查询合法作伙伴的Hosted专线类型.
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowHostedDirectConnect
@@ -545,8 +538,7 @@ class DcAsyncClient(Client):
 
         更新物理连接信息，包括名字,描述等信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDirectConnect
@@ -609,8 +601,7 @@ class DcAsyncClient(Client):
 
         合作伙伴创建托管专线.
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateHostedDirectConnect
@@ -675,8 +666,7 @@ class DcAsyncClient(Client):
         - 标签管理服务需要使用该接口批量管理实例的标签。
         - 一个资源上最多有10个标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchCreateResourceTags
@@ -743,8 +733,7 @@ class DcAsyncClient(Client):
         - 此接口为幂等接口：
         - 创建时，如果创建的标签已经存在（key相同），则覆盖。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateResourceTag
@@ -809,8 +798,7 @@ class DcAsyncClient(Client):
 
         删除时,不对标签字符集做校验，调用接口前必须要做encodeURI，服务端需要对接口uri做decodeURI。删除的key不存在报404，Key不能为空或者空字符串。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteResourceTag
@@ -876,8 +864,7 @@ class DcAsyncClient(Client):
         - 查询租户在指定Project中实例类型的所有资源标签集合。
         - 标签管理服务需要能够列出当前租户全部已使用的资源标签集合，为各服务打资源标签和过滤实例时提供标签联想功能。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListProjectTags
@@ -938,8 +925,7 @@ class DcAsyncClient(Client):
 
         通过标签查询资源实例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTagResourceInstances
@@ -1002,8 +988,7 @@ class DcAsyncClient(Client):
 
         查询资源标签
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowResourceTag
@@ -1066,8 +1051,7 @@ class DcAsyncClient(Client):
 
         创建虑拟网关
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateVirtualGateway
@@ -1128,8 +1112,7 @@ class DcAsyncClient(Client):
 
         删除指定的虚拟网关
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteVirtualGateway
@@ -1190,8 +1173,7 @@ class DcAsyncClient(Client):
 
         查询虚拟网关列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListVirtualGateways
@@ -1268,8 +1250,7 @@ class DcAsyncClient(Client):
 
         查询指定虚拟网关的详细信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowVirtualGateway
@@ -1333,8 +1314,7 @@ class DcAsyncClient(Client):
 
         修改虚拟网关的信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateVirtualGateway
@@ -1397,8 +1377,7 @@ class DcAsyncClient(Client):
 
         虚拟接口配置物理专线上与客户互联的IP和路由等相关信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateVirtualInterface
@@ -1459,8 +1438,7 @@ class DcAsyncClient(Client):
 
         删除虚拟接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteVirtualInterface
@@ -1521,8 +1499,7 @@ class DcAsyncClient(Client):
 
         查询租户所有的虚拟接口列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListVirtualInterfaces
@@ -1608,8 +1585,7 @@ class DcAsyncClient(Client):
 
         查询虚拟接口详细信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowVirtualInterface
@@ -1673,8 +1649,7 @@ class DcAsyncClient(Client):
 
         修改虚拟接口的详细信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateVirtualInterface

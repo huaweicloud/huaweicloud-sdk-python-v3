@@ -47,8 +47,7 @@ class ClassroomClient(Client):
 
         下发判题任务，根据回调地址、代码来源、源代码文本、语言类型、超时时长、输出类型，触发后台代码编译运行和判题
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ApplyJudgement
         :type request: :class:`huaweicloudsdkclassroom.v3.ApplyJudgementRequest`
@@ -108,8 +107,7 @@ class ClassroomClient(Client):
 
         根据判题任务ID获取判题结果详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowJudgementDetail
         :type request: :class:`huaweicloudsdkclassroom.v3.ShowJudgementDetailRequest`
@@ -169,8 +167,7 @@ class ClassroomClient(Client):
 
         根据文件id或图片id下载输出结果文件
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowJudgementFile
         :type request: :class:`huaweicloudsdkclassroom.v3.ShowJudgementFileRequest`
@@ -230,8 +227,7 @@ class ClassroomClient(Client):
 
         根据课堂ID获取指定课堂的课堂成员列表，支持分页，搜索字段默认同时匹配姓名，学号，用户名，班级。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListClassroomMembers
         :type request: :class:`huaweicloudsdkclassroom.v3.ListClassroomMembersRequest`
@@ -297,8 +293,7 @@ class ClassroomClient(Client):
 
         获取当前用户的课堂列表，课堂课表分为我创建的课堂，我加入的课堂以及所有课堂，支持分页查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListClassrooms
         :type request: :class:`huaweicloudsdkclassroom.v3.ListClassroomsRequest`
@@ -362,8 +357,7 @@ class ClassroomClient(Client):
 
         根据课堂ID获取指定课堂的详细信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowClassroomDetail
         :type request: :class:`huaweicloudsdkclassroom.v3.ShowClassroomDetailRequest`
@@ -423,8 +417,7 @@ class ClassroomClient(Client):
 
         查询课堂下指定成员的作业信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListClassroomMemberJobs
         :type request: :class:`huaweicloudsdkclassroom.v3.ListClassroomMemberJobsRequest`
@@ -490,8 +483,7 @@ class ClassroomClient(Client):
 
         查询指定课堂下的作业列表信息，支持分页查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListJobs
         :type request: :class:`huaweicloudsdkclassroom.v3.ListJobsRequest`
@@ -557,8 +549,7 @@ class ClassroomClient(Client):
 
         查询学生指定作业的习题提交记录信息(针对函数习题)
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListMemberJobRecords
         :type request: :class:`huaweicloudsdkclassroom.v3.ListMemberJobRecordsRequest`
@@ -626,8 +617,7 @@ class ClassroomClient(Client):
 
         根据作业ID，查询指定作业的信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowJobDetail
         :type request: :class:`huaweicloudsdkclassroom.v3.ShowJobDetailRequest`
@@ -687,8 +677,7 @@ class ClassroomClient(Client):
 
         查询指定作业下的习题信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowJobExercises
         :type request: :class:`huaweicloudsdkclassroom.v3.ShowJobExercisesRequest`

@@ -10,6 +10,7 @@ from huaweicloudsdkrms.v1.model.create_stored_query_request import CreateStoredQ
 from huaweicloudsdkrms.v1.model.create_stored_query_response import CreateStoredQueryResponse
 from huaweicloudsdkrms.v1.model.create_tracker_config_request import CreateTrackerConfigRequest
 from huaweicloudsdkrms.v1.model.create_tracker_config_response import CreateTrackerConfigResponse
+from huaweicloudsdkrms.v1.model.custom_policy import CustomPolicy
 from huaweicloudsdkrms.v1.model.delete_policy_assignment_request import DeletePolicyAssignmentRequest
 from huaweicloudsdkrms.v1.model.delete_policy_assignment_response import DeletePolicyAssignmentResponse
 from huaweicloudsdkrms.v1.model.delete_stored_query_request import DeleteStoredQueryRequest
@@ -50,7 +51,9 @@ from huaweicloudsdkrms.v1.model.policy_definition import PolicyDefinition
 from huaweicloudsdkrms.v1.model.policy_filter_definition import PolicyFilterDefinition
 from huaweicloudsdkrms.v1.model.policy_parameter_definition import PolicyParameterDefinition
 from huaweicloudsdkrms.v1.model.policy_parameter_value import PolicyParameterValue
+from huaweicloudsdkrms.v1.model.policy_resource import PolicyResource
 from huaweicloudsdkrms.v1.model.policy_state import PolicyState
+from huaweicloudsdkrms.v1.model.policy_state_request_body import PolicyStateRequestBody
 from huaweicloudsdkrms.v1.model.query_info import QueryInfo
 from huaweicloudsdkrms.v1.model.query_run_request_body import QueryRunRequestBody
 from huaweicloudsdkrms.v1.model.region import Region
@@ -87,5 +90,7 @@ from huaweicloudsdkrms.v1.model.tracker_obs_channel_config_body import TrackerOB
 from huaweicloudsdkrms.v1.model.tracker_smn_channel_config_body import TrackerSMNChannelConfigBody
 from huaweicloudsdkrms.v1.model.update_policy_assignment_request import UpdatePolicyAssignmentRequest
 from huaweicloudsdkrms.v1.model.update_policy_assignment_response import UpdatePolicyAssignmentResponse
+from huaweicloudsdkrms.v1.model.update_policy_state_request import UpdatePolicyStateRequest
+from huaweicloudsdkrms.v1.model.update_policy_state_response import UpdatePolicyStateResponse
 from huaweicloudsdkrms.v1.model.update_stored_query_request import UpdateStoredQueryRequest
 from huaweicloudsdkrms.v1.model.update_stored_query_response import UpdateStoredQueryResponse

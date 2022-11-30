@@ -1,3 +1,294 @@
+# 3.1.13 2022-11-30
+
+### HuaweiCloud SDK AOM
+
+- _Features_
+  - Support the following interfaces：
+    - `ListNotifiedHistories`
+    - `ListMuteRule`
+    - `UpdateMuteRule`
+    - `AddMuteRules`
+    - `DeleteMuteRules`
+    - `ShowActionRule`
+    - `ListActionRule`
+    - `UpdateActionRule`
+    - `AddActionRule`
+    - `DeleteActionRule`
+    - `ListEvent2alarmRule`
+    - `UpdateEventRule`
+    - `AddEvent2alarmRule`
+    - `DeleteEvent2alarmRule`
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type `string` -> `enum` of the request parameter `statistic` of the interface `AddAlarmRule`
+
+### HuaweiCloud SDK APIG
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `retry_count`, `retry_count` to the interface `CreateApiV2`
+  - Changes of the interface `UpdateApiV2`:
+    - Add the request parameters `retry_count`, `retry_count`
+    - Add the response parameters `retry_count`, `retry_count`
+  - Add the response parameters `retry_count`, `retry_count` to the interface `ShowDetailsOfApiV2`
+  - Add the response parameters `retry_count`, `retry_count` to the interface `ListApiVersionDetailV2`
+  - Add the request parameter `is_http_redirect_to_https` to the interface `AssociateDomainV2`
+  - Add the request parameter `is_http_redirect_to_https` to the interface `UpdateDomainV2`
+  - Add the request parameter `labels` to the interface `ImportMicroservice`
+  - Add the response parameter `is_http_redirect_to_https` to the interface `ListAttachedDomainsV2`
+
+### HuaweiCloud SDK CPH
+
+- _Features_
+  - Support the interfaces `PushFile`, `InstallApk`, `UninstallApk`, `PushShareFiles`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interface `DeleteShareFiles`
+  - The response parameter `band_widths`, `request_id` changed to not required of the interface `ShowBandwidthDetail`
+  - The response parameter `request_id` changed to not required of the interface `UpdateBandwidth`
+  - The response parameter `encode_servers`, `request_id` changed to not required of the interface `ListEncodeServers`
+  - The response parameter `jobs`, `request_id` changed to not required of the interface `RestartEncodeServer`
+  - The response parameter `jobs`, `request_id` changed to not required of the interface `ListJobs`
+  - The response parameter `error_msg`, `execute_msg`, `job_id`, `end_time`, `begin_time`, `error_code`, `status`, `request_id` changed to not required of the interface `ShowJob`
+  - The response parameter `phone_images`, `request_id` changed to not required of the interface `ListCloudPhoneImages`
+  - Changes of the interface `ListCloudPhoneModels`:
+    - Add the request parameter `status`
+    - The response parameter `phone_models`, `request_id` changed to not required
+  - The response parameter `phones`, `request_id` changed to not required of the interface `ListCloudPhones`
+  - The response parameter `order_id`, `product_id`, `request_id` changed to not required of the interface `CreateCloudPhoneServer`
+  - The response parameter `jobs`, `request_id` changed to not required of the interface `ImportTraffic`
+  - The response parameter `phone_name`, `server_id`, `phone_id`, `image_id`, `vnc_enable`, `phone_model_name`, `status`, `access_infos`, `property`, `metadata`, `create_time`, `update_time`, `request_id` changed to not required of the interface `ShowCloudPhoneDetail`
+  - The response parameter `request_id` changed to not required of the interface `UpdatePhoneName`
+  - The response parameter `jobs`, `request_id` changed to not required of the interface `BatchMigrateCloudPhone`
+  - The response parameter `jobs`, `request_id` changed to not required of the interface `ResetCloudPhone`
+  - The response parameter `jobs`, `request_id` changed to not required of the interface `RestartCloudPhone`
+  - The response parameter `jobs`, `request_id` changed to not required of the interface `BatchImportCloudPhoneData`
+  - The response parameter `jobs`, `request_id` changed to not required of the interface `StopCloudPhone`
+  - The response parameter `jobs`, `request_id` changed to not required of the interface `BatchExportCloudPhoneData`
+  - The response parameter `jobs`, `request_id` changed to not required of the interface `UpdateCloudPhoneProperty`
+  - The response parameter `jobs`, `request_id` changed to not required of the interface `RunShellCommand`
+  - The response parameter `jobs`, `request_id` changed to not required of the interface `PushShareApps`
+  - The response parameter `jobs`, `request_id` changed to not required of the interface `DeleteShareApps`
+  - Changes of the interface `DeleteShareFiles`:
+    - Add the request parameter `DeleteShareFilesRequestBody`
+    - Remove the request parameter `PushShareFilesRequestBody`
+    - The response parameter `jobs`, `request_id` changed to not required
+  - The response parameter `jobs`, `request_id` changed to not required of the interface `RunSyncCommand`
+  - The response parameter `server_models`, `request_id` changed to not required of the interface `ListCloudPhoneServerModels`
+  - The response parameter `servers`, `request_id` changed to not required of the interface `ListCloudPhoneServers`
+  - The response parameter `server_name`, `availability_zone`, `server_id`, `server_model_name`, `phone_model_name`, `keypair_name`, `status`, `vpc_id`, `cidr`, `vpc_cidr`, `subnet_id`, `subnet_cidr`, `resource_project_id`, `metadata`, `intranet_ip`, `access_ip`, `server_ip`, `public_ip`, `band_width_name`, `band_width_id`, `band_width_size`, `band_width_charge_mode`, `band_width_share_type`, `create_time`, `update_time`, `volume_name`, `volume_id`, `volume_size`, `volume_type`, `create_time`, `update_time`, `network_version`, `security_groups`, `create_time`, `update_time`, `request_id` changed to not required of the interface `ShowCloudPhoneServerDetail`
+  - The response parameter `request_id` changed to not required of the interface `UpdateServerName`
+  - The response parameter `jobs`, `request_id` changed to not required of the interface `RestartCloudPhoneServer`
+  - The response parameter `order_id`, `product_id`, `request_id` changed to not required of the interface `ChangeCloudPhoneServerModel`
+  - The response parameter `jobs`, `request_id` changed to not required of the interface `UpdateKeypair`
+  - The response parameter `jobs`, `request_id` changed to not required of the interface `ListShareFiles`
+  - The response parameter `order_id`, `product_id`, `request_id` changed to not required of the interface `CreateNet2CloudPhoneServer`
+
+### HuaweiCloud SDK DDM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `is_auto_pay` to the interface `ExpandInstanceNodes`
+
+### HuaweiCloud SDK DDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type `string` -> `int32` of the request parameter `num` of the interface `AddReadonlyNode`
+
+### HuaweiCloud SDK EIP
+
+- _Features_
+  - Support the interfaces `DisassociatePublicips`, `AssociatePublicips`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `metric_type` to the interface `ShowTenantMetric`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+  - Support the following interfaces：
+    - `ListAvailableFlavorInfos`
+    - `CheckWeekPassword`
+    - `ModifyPort`
+    - `UpdateClientNetwork`
+    - `DeleteEnlargeFailNode`
+    - `ShowIpNumRequirement`
+    - `ShowAutoEnlargePolicy`
+    - `ShowSlowLogDesensitization`
+    - `SwitchSlowlogDesensitization`
+    - `ShowErrorLog`
+    - `CopyConfiguration`
+    - `CompareConfiguration`
+    - `ListConfigurationDatastores`
+    - `ShowAllInstancesBackups`
+    - `CreateBack`
+    - `ShowRecyclePolicy`
+    - `SetRecyclePolicy`
+    - `ListRecycleInstances`
+    - `ShowPauseResumeStutus`
+    - `PauseResumeDataSynchronization`
+    - `ListProjectTags`
+    - `ListEpsQuotas`
+    - `ModifyEpsQuotas`
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `public_ip`, `public_ip_id` changed to not required of the interface `ModifyPublicIp`
+  - Add the request parameter `SwitchToMasterDisasterRecoveryBody` to the interface `SwitchToMaster`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _Features_
+  - Support the following interfaces：
+    - `CopyConfiguration`
+    - `DeleteJob`
+    - `ListEpsQuotas`
+    - `ModifyEpsQuota`
+    - `ListAvailableFlavors`
+    - `ShowSslCertDownloadLink`
+    - `ListApplicableInstances`
+    - `ListAppliedHistories`
+    - `ListRestorableInstances`
+    - `ListTasks`
+    - `ShowDeploymentForm`
+    - `ShowInstanceDisk`
+    - `ListProjectTags`
+    - `ListInstanceTags`
+    - `AddInstanceTags`
+    - `ShowProjectQuotas`
+    - `ListRecycleInstances`
+    - `ShowConfigurationDetail`
+    - `DeleteConfiguration`
+    - `ListConfigurationsDiff`
+    - `ShowBalanceStatus`
+    - `ShowInstanceSnapshot`
+    - `ValidateWeakPassword`
+    - `ListHistoryOperations`
+    - `ListBindedEips`
+    - `ResetConfiguration`
+    - `ListGaussDbDatastores`
+    - `AttachEip`
+    - `ListPredefinedTags`
+    - `SwitchConfiguration`
+    - `ValidateParaGroupName`
+    - `ShowRecyclePolicy`
+    - `CreateConfigurationTemplate`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `enable_standby_backup` to the interface `ShowBackupPolicy`
+  - Add the request parameter `enable_standby_backup` to the interface `SetBackupPolicy`
+
+### HuaweiCloud SDK MPC
+
+- _Features_
+  - Support the following interfaces：
+    - `ListNotifySmnTopicConfig`
+    - `NotifySmnTopicConfig`
+    - `ListNotifyEvent`
+    - `DeleteTranscodingTaskByConsole`
+    - `ListStatSummary`
+    - `ListAllBuckets`
+    - `UpdateBucketAuthorized`
+    - `ListAllObsObjList`
+    - `ShowAgenciesTask`
+    - `CreateAgenciesTask`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK MRS
+
+- _Features_
+  - Support the interfaces `UpdateClusterName`, `ShowAutoScalingPolicy`
+- _Bug Fix_
+  - None
+- _Change_
+  - The response parameter `result` changed to required of the interface `UpdateAgencyMapping`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type `string` -> `boolean` of the response parameter `read_only_by_user` of the interface `ListInstances`
+
+### HuaweiCloud SDK ROMA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the response parameter `status` from the interface `UpdateProduct`
+  - Remove the response parameters `bool_false`, `bool_true` from the interface `ListProperties`
+  - Remove the request parameters `bool_false`, `bool_true` from the interface `CreateProperty`
+  - Remove the response parameters `bool_false`, `bool_true` from the interface `ShowProperty`
+  - Changes of the interface `UpdateProperty`:
+    - Remove the request parameters `bool_false`, `bool_true`
+    - Remove the response parameters `bool_false`, `bool_true`
+  - Remove the response parameters `bool_false`, `bool_true` from the interface `ListRequestProperties`
+  - Changes of the interface `CreateRequestProperty`:
+    - Remove the request parameters `bool_false`, `bool_true`
+    - Remove the response parameters `bool_false`, `bool_true`
+  - Remove the response parameters `bool_false`, `bool_true` from the interface `ShowRequestProperty`
+  - Changes of the interface `UpdateRequestProperty`:
+    - Remove the request parameters `bool_false`, `bool_true`
+    - Remove the response parameters `bool_false`, `bool_true`
+  - Remove the response parameters `bool_false`, `bool_true` from the interface `ListResponseProperties`
+  - Remove the request parameters `bool_false`, `bool_true` from the interface `CreateResponseProperty`
+  - Remove the response parameters `bool_false`, `bool_true` from the interface `ShowResponseProperty`
+  - Changes of the interface `UpdateResponseProperty`:
+    - Remove the request parameters `bool_false`, `bool_true`
+    - Remove the response parameters `bool_false`, `bool_true`
+  - Add the request parameters `cookie_param_name`, `alias_urn`, `cookie_param_name`, `alias_urn`, `cookie_param_name` to the interface `CreateApiV2`
+  - Add the response parameters `cookie_param_name`, `alias_urn`, `alias_urn`, `cookie_param_name`, `cookie_param_name` to the interface `ShowDetailsOfApiV2`
+  - Changes of the interface `UpdateApiV2`:
+    - Add the request parameters `cookie_param_name`, `alias_urn`, `cookie_param_name`, `alias_urn`, `cookie_param_name`
+    - Add the response parameters `cookie_param_name`, `alias_urn`, `alias_urn`, `cookie_param_name`, `cookie_param_name`
+  - Add the response parameters `cookie_param_name`, `alias_urn`, `alias_urn`, `cookie_param_name`, `cookie_param_name` to the interface `ListApiVersionDetailV2`
+  - Add the response parameters `microservice_info`, `type` to the interface `ListVpcChannelsV2`
+  - Add the response parameters `microservice_info`, `type` to the interface `ShowDetailsOfVpcChannelV2`
+  - Add the response parameters `microservice_info`, `type` to the interface `UpdateVpcChannelV2`
+  - Add the response parameters `microservice_info`, `type` to the interface `ListProjectVpcChannelsV2`
+  - Add the response parameters `microservice_info`, `type` to the interface `UpdateProjectVpcChannel`
+  - Add the response parameter `ingress_ips` to the interface `ShowDetailsOfInstanceV2`
+
+### HuaweiCloud SDK SIS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `chinese_8k_general` to the request parameter `property` to the interface `PushTranscriberJobs`
+  - Add the enum values `chinese_huaxiaoru_common`, `chinese_huaxiaohan_common`, `chinese_huaxiaoning_common`, `chinese_huaxiaozhen_common`, `english_alvin_common`, `english_amy_common` to the request parameter `property` to the interface `RunTts`
+
 # 3.1.12 2022-11-24
 
 ### HuaweiCloud SDK DWR

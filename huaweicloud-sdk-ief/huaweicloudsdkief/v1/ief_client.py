@@ -53,8 +53,7 @@ class IefClient(Client):
         - 创建时不允许设置重复key数据,如果数据库已存在该key，就覆盖value的值。
         - 删除时不对标签字符集范围做校验，如果删除的标签不存在，默认处理成功。删除时tags结构体不能缺失，key不能为空，或者空字符串。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchAddDeleteTags
         :type request: :class:`huaweicloudsdkief.v1.BatchAddDeleteTagsRequest`
@@ -120,8 +119,7 @@ class IefClient(Client):
 
         该API用于创建一个应用模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateApp
         :type request: :class:`huaweicloudsdkief.v1.CreateAppRequest`
@@ -183,8 +181,7 @@ class IefClient(Client):
 
         创建一个应用模板版本
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAppVersions
         :type request: :class:`huaweicloudsdkief.v1.CreateAppVersionsRequest`
@@ -248,8 +245,7 @@ class IefClient(Client):
 
         创建配置项
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateConfigMap
         :type request: :class:`huaweicloudsdkief.v1.CreateConfigMapRequest`
@@ -311,8 +307,7 @@ class IefClient(Client):
 
         创建部署
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDeployments
         :type request: :class:`huaweicloudsdkief.v1.CreateDeploymentsRequest`
@@ -374,8 +369,7 @@ class IefClient(Client):
 
         注册终端设备。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDevice
         :type request: :class:`huaweicloudsdkief.v1.CreateDeviceRequest`
@@ -437,8 +431,7 @@ class IefClient(Client):
 
         创建一个终端设备模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDeviceTemplate
         :type request: :class:`huaweicloudsdkief.v1.CreateDeviceTemplateRequest`
@@ -500,8 +493,7 @@ class IefClient(Client):
 
         该API用于注册一个边缘节点。接口调用成功后，您可以将响应消息体中node.package字段使用base64解码成tar.gz文件，并在控制台下载边缘核心软件，然后纳管边缘节点。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateEdgeNode
         :type request: :class:`huaweicloudsdkief.v1.CreateEdgeNodeRequest`
@@ -563,8 +555,7 @@ class IefClient(Client):
 
         创建边缘节点上的应用证书和设备证书。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateEdgeNodeCerts
         :type request: :class:`huaweicloudsdkief.v1.CreateEdgeNodeCertsRequest`
@@ -628,8 +619,7 @@ class IefClient(Client):
 
         新增加密数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateEncryptdatas
         :type request: :class:`huaweicloudsdkief.v1.CreateEncryptdatasRequest`
@@ -691,8 +681,7 @@ class IefClient(Client):
 
         创建一个端点
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateEndpoint
         :type request: :class:`huaweicloudsdkief.v1.CreateEndpointRequest`
@@ -754,8 +743,7 @@ class IefClient(Client):
 
         加密数据绑定边缘节点
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateNodeEncryptdatas
         :type request: :class:`huaweicloudsdkief.v1.CreateNodeEncryptdatasRequest`
@@ -819,8 +807,7 @@ class IefClient(Client):
 
         创建一条规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateRule
         :type request: :class:`huaweicloudsdkief.v1.CreateRuleRequest`
@@ -882,8 +869,7 @@ class IefClient(Client):
 
         创建密钥
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateSecret
         :type request: :class:`huaweicloudsdkief.v1.CreateSecretRequest`
@@ -945,8 +931,7 @@ class IefClient(Client):
 
         创建一个服务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateService
         :type request: :class:`huaweicloudsdkief.v1.CreateServiceRequest`
@@ -1010,8 +995,7 @@ class IefClient(Client):
         一个资源上最多有20个标签。
         此接口为幂等接口，创建时，如果创建的标签已经存在（key相同），则覆盖。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateTag
         :type request: :class:`huaweicloudsdkief.v1.CreateTagRequest`
@@ -1077,8 +1061,7 @@ class IefClient(Client):
 
         删除应用模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteApp
         :type request: :class:`huaweicloudsdkief.v1.DeleteAppRequest`
@@ -1140,8 +1123,7 @@ class IefClient(Client):
 
         删除应用版本
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAppVersion
         :type request: :class:`huaweicloudsdkief.v1.DeleteAppVersionRequest`
@@ -1205,8 +1187,7 @@ class IefClient(Client):
 
         删除配置项
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteConfigMap
         :type request: :class:`huaweicloudsdkief.v1.DeleteConfigMapRequest`
@@ -1268,8 +1249,7 @@ class IefClient(Client):
 
         删除应用部署
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDeployment
         :type request: :class:`huaweicloudsdkief.v1.DeleteDeploymentRequest`
@@ -1333,8 +1313,7 @@ class IefClient(Client):
 
         该API用于删除终端设备。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDevice
         :type request: :class:`huaweicloudsdkief.v1.DeleteDeviceRequest`
@@ -1396,8 +1375,7 @@ class IefClient(Client):
 
         删除终端设备模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDeviceTemplate
         :type request: :class:`huaweicloudsdkief.v1.DeleteDeviceTemplateRequest`
@@ -1459,8 +1437,7 @@ class IefClient(Client):
 
         删除边缘节点
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteEdgeNode
         :type request: :class:`huaweicloudsdkief.v1.DeleteEdgeNodeRequest`
@@ -1522,8 +1499,7 @@ class IefClient(Client):
 
         删除边缘节点上的证书（目前只支持删除应用证书和设备证书）
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteEdgeNodeCerts
         :type request: :class:`huaweicloudsdkief.v1.DeleteEdgeNodeCertsRequest`
@@ -1587,8 +1563,7 @@ class IefClient(Client):
 
         删除加密数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteEncryptdatas
         :type request: :class:`huaweicloudsdkief.v1.DeleteEncryptdatasRequest`
@@ -1650,8 +1625,7 @@ class IefClient(Client):
 
         删除一个端点
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteEndPoint
         :type request: :class:`huaweicloudsdkief.v1.DeleteEndPointRequest`
@@ -1713,8 +1687,7 @@ class IefClient(Client):
 
         解绑边缘节点的加密数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteNodeEncryptdatas
         :type request: :class:`huaweicloudsdkief.v1.DeleteNodeEncryptdatasRequest`
@@ -1778,8 +1751,7 @@ class IefClient(Client):
 
         删除资源标签。删除时不对标签字符集做校验，调用前必须要做encodeURI，服务端需要对接口uri做decodeURI。删除的key不存在报404，Key不能为空或者空字符串。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteResourceTag
         :type request: :class:`huaweicloudsdkief.v1.DeleteResourceTagRequest`
@@ -1845,8 +1817,7 @@ class IefClient(Client):
 
         删除一条规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteRule
         :type request: :class:`huaweicloudsdkief.v1.DeleteRuleRequest`
@@ -1908,8 +1879,7 @@ class IefClient(Client):
 
         删除密钥
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteSecret
         :type request: :class:`huaweicloudsdkief.v1.DeleteSecretRequest`
@@ -1971,8 +1941,7 @@ class IefClient(Client):
 
         删除一个服务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteService
         :type request: :class:`huaweicloudsdkief.v1.DeleteServiceRequest`
@@ -2034,8 +2003,7 @@ class IefClient(Client):
 
         启用停用边缘节点。被停用的边缘节点将无法连接到云端服务，可用该URI启用边缘节点恢复连接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for EnableDisableEdgeNodes
         :type request: :class:`huaweicloudsdkief.v1.EnableDisableEdgeNodesRequest`
@@ -2099,8 +2067,7 @@ class IefClient(Client):
 
         查询应用模板版本列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAppVersions
         :type request: :class:`huaweicloudsdkief.v1.ListAppVersionsRequest`
@@ -2166,8 +2133,7 @@ class IefClient(Client):
 
         查询应用模板列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApps
         :type request: :class:`huaweicloudsdkief.v1.ListAppsRequest`
@@ -2237,8 +2203,7 @@ class IefClient(Client):
 
         查询配置项列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListConfigMaps
         :type request: :class:`huaweicloudsdkief.v1.ListConfigMapsRequest`
@@ -2304,8 +2269,7 @@ class IefClient(Client):
 
         查询部署列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDeployments
         :type request: :class:`huaweicloudsdkief.v1.ListDeploymentsRequest`
@@ -2377,8 +2341,7 @@ class IefClient(Client):
 
         查询终端设备模板列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDeviceTemplates
         :type request: :class:`huaweicloudsdkief.v1.ListDeviceTemplatesRequest`
@@ -2444,8 +2407,7 @@ class IefClient(Client):
 
         该API用于查询终端设备列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDevices
         :type request: :class:`huaweicloudsdkief.v1.ListDevicesRequest`
@@ -2517,8 +2479,7 @@ class IefClient(Client):
 
         查询边缘节点上的应用证书和设备证书。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEdgeNodeCerts
         :type request: :class:`huaweicloudsdkief.v1.ListEdgeNodeCertsRequest`
@@ -2586,8 +2547,7 @@ class IefClient(Client):
         - 如果不携带任何检索参数，将返回该租户的所有边缘节点信息。
         - app_name和tags不支持复合查询，如果同时存在则返回tags查询结果，可以同时携带多个其他检索参数，可同时生效。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEdgeNodes
         :type request: :class:`huaweicloudsdkief.v1.ListEdgeNodesRequest`
@@ -2665,8 +2625,7 @@ class IefClient(Client):
 
         获取加密数据绑定的边缘节点
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEncryptdataNodes
         :type request: :class:`huaweicloudsdkief.v1.ListEncryptdataNodesRequest`
@@ -2732,8 +2691,7 @@ class IefClient(Client):
 
         获取加密数据列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEncryptdatas
         :type request: :class:`huaweicloudsdkief.v1.ListEncryptdatasRequest`
@@ -2801,8 +2759,7 @@ class IefClient(Client):
         如果不携带任何检索参数，将返回该租户的所有端点信息和系统中所有的共享端点。
         如果同时指定is_shared&#x3D;true和其他参数，同样还会对name、type进行过滤。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEndpoints
         :type request: :class:`huaweicloudsdkief.v1.ListEndpointsRequest`
@@ -2872,8 +2829,7 @@ class IefClient(Client):
 
         获取边缘节点绑定的加密数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListNodeEncryptdatas
         :type request: :class:`huaweicloudsdkief.v1.ListNodeEncryptdatasRequest`
@@ -2939,8 +2895,7 @@ class IefClient(Client):
 
         查询应用实例列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPods
         :type request: :class:`huaweicloudsdkief.v1.ListPodsRequest`
@@ -3012,8 +2967,7 @@ class IefClient(Client):
 
         使用标签过滤实例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListResourceByTags
         :type request: :class:`huaweicloudsdkief.v1.ListResourceByTagsRequest`
@@ -3077,8 +3031,7 @@ class IefClient(Client):
 
         查询特定规则下的所有错误列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRuleErrors
         :type request: :class:`huaweicloudsdkief.v1.ListRuleErrorsRequest`
@@ -3144,8 +3097,7 @@ class IefClient(Client):
 
         查询到所有的规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRules
         :type request: :class:`huaweicloudsdkief.v1.ListRulesRequest`
@@ -3211,8 +3163,7 @@ class IefClient(Client):
 
         查询密钥列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSecrets
         :type request: :class:`huaweicloudsdkief.v1.ListSecretsRequest`
@@ -3280,8 +3231,7 @@ class IefClient(Client):
 
         获取所有的服务详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListServices
         :type request: :class:`huaweicloudsdkief.v1.ListServicesRequest`
@@ -3351,8 +3301,7 @@ class IefClient(Client):
 
         查询指定实例的标签信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTags
         :type request: :class:`huaweicloudsdkief.v1.ListTagsRequest`
@@ -3416,8 +3365,7 @@ class IefClient(Client):
 
         查询指定项目中实例类型的所有资源标签集合
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTagsByResourceType
         :type request: :class:`huaweicloudsdkief.v1.ListTagsByResourceTypeRequest`
@@ -3479,8 +3427,7 @@ class IefClient(Client):
 
         重启部署下的应用实例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RestartDeploymentsPod
         :type request: :class:`huaweicloudsdkief.v1.RestartDeploymentsPodRequest`
@@ -3544,8 +3491,7 @@ class IefClient(Client):
 
         查询应用模板详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAppDetail
         :type request: :class:`huaweicloudsdkief.v1.ShowAppDetailRequest`
@@ -3607,8 +3553,7 @@ class IefClient(Client):
 
         查询应用模板版本详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAppVersionDetail
         :type request: :class:`huaweicloudsdkief.v1.ShowAppVersionDetailRequest`
@@ -3672,8 +3617,7 @@ class IefClient(Client):
 
         查询一个配置项详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowConfigMap
         :type request: :class:`huaweicloudsdkief.v1.ShowConfigMapRequest`
@@ -3735,8 +3679,7 @@ class IefClient(Client):
 
         查询应用部署
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDeployment
         :type request: :class:`huaweicloudsdkief.v1.ShowDeploymentRequest`
@@ -3798,8 +3741,7 @@ class IefClient(Client):
 
         该API用于查询终端设备详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDevice
         :type request: :class:`huaweicloudsdkief.v1.ShowDeviceRequest`
@@ -3861,8 +3803,7 @@ class IefClient(Client):
 
         查询一个终端设备模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDeviceTemplate
         :type request: :class:`huaweicloudsdkief.v1.ShowDeviceTemplateRequest`
@@ -3924,8 +3865,7 @@ class IefClient(Client):
 
         该API用于查询终端设备孪生。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDeviceTwin
         :type request: :class:`huaweicloudsdkief.v1.ShowDeviceTwinRequest`
@@ -3987,8 +3927,7 @@ class IefClient(Client):
 
         查询边缘节点详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowEdgeNodeDetail
         :type request: :class:`huaweicloudsdkief.v1.ShowEdgeNodeDetailRequest`
@@ -4050,8 +3989,7 @@ class IefClient(Client):
 
         查询加密数据详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowEncryptdatas
         :type request: :class:`huaweicloudsdkief.v1.ShowEncryptdatasRequest`
@@ -4113,8 +4051,7 @@ class IefClient(Client):
 
         查询一个端点的详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowEndPointDetail
         :type request: :class:`huaweicloudsdkief.v1.ShowEndPointDetailRequest`
@@ -4176,8 +4113,7 @@ class IefClient(Client):
 
         获取一条规则的详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRuleDetail
         :type request: :class:`huaweicloudsdkief.v1.ShowRuleDetailRequest`
@@ -4239,8 +4175,7 @@ class IefClient(Client):
 
         查询一个密钥详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowSecret
         :type request: :class:`huaweicloudsdkief.v1.ShowSecretRequest`
@@ -4302,8 +4237,7 @@ class IefClient(Client):
 
         查询一个服务的详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowServiceDetail
         :type request: :class:`huaweicloudsdkief.v1.ShowServiceDetailRequest`
@@ -4365,8 +4299,7 @@ class IefClient(Client):
 
         启用一条规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartRule
         :type request: :class:`huaweicloudsdkief.v1.StartRuleRequest`
@@ -4428,8 +4361,7 @@ class IefClient(Client):
 
         停用一条规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StopRule
         :type request: :class:`huaweicloudsdkief.v1.StopRuleRequest`
@@ -4491,8 +4423,7 @@ class IefClient(Client):
 
         更新一个应用模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateApp
         :type request: :class:`huaweicloudsdkief.v1.UpdateAppRequest`
@@ -4556,8 +4487,7 @@ class IefClient(Client):
 
         更新一个应用模板版本
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateAppVersion
         :type request: :class:`huaweicloudsdkief.v1.UpdateAppVersionRequest`
@@ -4623,8 +4553,7 @@ class IefClient(Client):
 
         更新一个配置项
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateConfigMap
         :type request: :class:`huaweicloudsdkief.v1.UpdateConfigMapRequest`
@@ -4688,8 +4617,7 @@ class IefClient(Client):
 
         修改应用部署
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDeployment
         :type request: :class:`huaweicloudsdkief.v1.UpdateDeploymentRequest`
@@ -4753,8 +4681,7 @@ class IefClient(Client):
 
         更新一个终端设备。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDevice
         :type request: :class:`huaweicloudsdkief.v1.UpdateDeviceRequest`
@@ -4818,8 +4745,7 @@ class IefClient(Client):
 
         更新一个终端设备模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDeviceTemplateById
         :type request: :class:`huaweicloudsdkief.v1.UpdateDeviceTemplateByIdRequest`
@@ -4883,8 +4809,7 @@ class IefClient(Client):
 
         该API用于更新终端设备孪生。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDeviceTwin
         :type request: :class:`huaweicloudsdkief.v1.UpdateDeviceTwinRequest`
@@ -4948,8 +4873,7 @@ class IefClient(Client):
 
         该API用于更新边缘节点。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateEdgeNode
         :type request: :class:`huaweicloudsdkief.v1.UpdateEdgeNodeRequest`
@@ -5013,8 +4937,7 @@ class IefClient(Client):
 
         添加或删除边缘节点的终端设备
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateEdgeNodeDevice
         :type request: :class:`huaweicloudsdkief.v1.UpdateEdgeNodeDeviceRequest`
@@ -5078,8 +5001,7 @@ class IefClient(Client):
 
         更新加密数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateEncryptdatas
         :type request: :class:`huaweicloudsdkief.v1.UpdateEncryptdatasRequest`
@@ -5143,8 +5065,7 @@ class IefClient(Client):
 
         该API用于更新终端设备的边缘节点。功能与更新边缘节点的终端设备相同，推荐使用更新边缘节点的终端设备。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateNodeByDeviceId
         :type request: :class:`huaweicloudsdkief.v1.UpdateNodeByDeviceIdRequest`
@@ -5208,8 +5129,7 @@ class IefClient(Client):
 
         更新一个密钥
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateSecret
         :type request: :class:`huaweicloudsdkief.v1.UpdateSecretRequest`
@@ -5273,8 +5193,7 @@ class IefClient(Client):
 
         更新一个服务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateService
         :type request: :class:`huaweicloudsdkief.v1.UpdateServiceRequest`
@@ -5338,8 +5257,7 @@ class IefClient(Client):
 
         该API用于升级边缘节点。边缘节点将自动升级到最新的可用版本
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpgradeEdgeNode
         :type request: :class:`huaweicloudsdkief.v1.UpgradeEdgeNodeRequest`

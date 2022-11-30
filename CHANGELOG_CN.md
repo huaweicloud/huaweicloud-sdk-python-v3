@@ -1,3 +1,294 @@
+# 3.1.13 2022-11-30
+
+### HuaweiCloud SDK AOM
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListNotifiedHistories`
+    - `ListMuteRule`
+    - `UpdateMuteRule`
+    - `AddMuteRules`
+    - `DeleteMuteRules`
+    - `ShowActionRule`
+    - `ListActionRule`
+    - `UpdateActionRule`
+    - `AddActionRule`
+    - `DeleteActionRule`
+    - `ListEvent2alarmRule`
+    - `UpdateEventRule`
+    - `AddEvent2alarmRule`
+    - `DeleteEvent2alarmRule`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`AddAlarmRule`请求参数`statistic`类型调整 `string` -> `enum`
+
+### HuaweiCloud SDK APIG
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateApiV2`新增请求参数 `retry_count`、`retry_count`
+  - 接口`UpdateApiV2`:
+    - 新增请求参数 `retry_count`、`retry_count`
+    - 新增响应参数 `retry_count`、`retry_count`
+  - 接口`ShowDetailsOfApiV2`新增响应参数 `retry_count`、`retry_count`
+  - 接口`ListApiVersionDetailV2`新增响应参数 `retry_count`、`retry_count`
+  - 接口`AssociateDomainV2`新增请求参数 `is_http_redirect_to_https`
+  - 接口`UpdateDomainV2`新增请求参数 `is_http_redirect_to_https`
+  - 接口`ImportMicroservice`新增请求参数 `labels`
+  - 接口`ListAttachedDomainsV2`新增响应参数 `is_http_redirect_to_https`
+
+### HuaweiCloud SDK CPH
+
+- _新增特性_
+  - 支持接口`PushFile`、`InstallApk`、`UninstallApk`、`PushShareFiles`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`DeleteShareFiles`
+  - 接口`ShowBandwidthDetail`响应参数`band_widths`、`request_id`改为非必填
+  - 接口`UpdateBandwidth`响应参数`request_id`改为非必填
+  - 接口`ListEncodeServers`响应参数`encode_servers`、`request_id`改为非必填
+  - 接口`RestartEncodeServer`响应参数`jobs`、`request_id`改为非必填
+  - 接口`ListJobs`响应参数`jobs`、`request_id`改为非必填
+  - 接口`ShowJob`响应参数`error_msg`、`execute_msg`、`job_id`、`end_time`、`begin_time`、`error_code`、`status`、`request_id`改为非必填
+  - 接口`ListCloudPhoneImages`响应参数`phone_images`、`request_id`改为非必填
+  - 接口`ListCloudPhoneModels`:
+    - 新增请求参数 `status`
+    - 响应参数`phone_models`、`request_id`改为非必填
+  - 接口`ListCloudPhones`响应参数`phones`、`request_id`改为非必填
+  - 接口`CreateCloudPhoneServer`响应参数`order_id`、`product_id`、`request_id`改为非必填
+  - 接口`ImportTraffic`响应参数`jobs`、`request_id`改为非必填
+  - 接口`ShowCloudPhoneDetail`响应参数`phone_name`、`server_id`、`phone_id`、`image_id`、`vnc_enable`、`phone_model_name`、`status`、`access_infos`、`property`、`metadata`、`create_time`、`update_time`、`request_id`改为非必填
+  - 接口`UpdatePhoneName`响应参数`request_id`改为非必填
+  - 接口`BatchMigrateCloudPhone`响应参数`jobs`、`request_id`改为非必填
+  - 接口`ResetCloudPhone`响应参数`jobs`、`request_id`改为非必填
+  - 接口`RestartCloudPhone`响应参数`jobs`、`request_id`改为非必填
+  - 接口`BatchImportCloudPhoneData`响应参数`jobs`、`request_id`改为非必填
+  - 接口`StopCloudPhone`响应参数`jobs`、`request_id`改为非必填
+  - 接口`BatchExportCloudPhoneData`响应参数`jobs`、`request_id`改为非必填
+  - 接口`UpdateCloudPhoneProperty`响应参数`jobs`、`request_id`改为非必填
+  - 接口`RunShellCommand`响应参数`jobs`、`request_id`改为非必填
+  - 接口`PushShareApps`响应参数`jobs`、`request_id`改为非必填
+  - 接口`DeleteShareApps`响应参数`jobs`、`request_id`改为非必填
+  - 接口`DeleteShareFiles`:
+    - 新增请求参数 `DeleteShareFilesRequestBody`
+    - 移除请求参数 `PushShareFilesRequestBody`
+    - 响应参数`jobs`、`request_id`改为非必填
+  - 接口`RunSyncCommand`响应参数`jobs`、`request_id`改为非必填
+  - 接口`ListCloudPhoneServerModels`响应参数`server_models`、`request_id`改为非必填
+  - 接口`ListCloudPhoneServers`响应参数`servers`、`request_id`改为非必填
+  - 接口`ShowCloudPhoneServerDetail`响应参数`server_name`、`availability_zone`、`server_id`、`server_model_name`、`phone_model_name`、`keypair_name`、`status`、`vpc_id`、`cidr`、`vpc_cidr`、`subnet_id`、`subnet_cidr`、`resource_project_id`、`metadata`、`intranet_ip`、`access_ip`、`server_ip`、`public_ip`、`band_width_name`、`band_width_id`、`band_width_size`、`band_width_charge_mode`、`band_width_share_type`、`create_time`、`update_time`、`volume_name`、`volume_id`、`volume_size`、`volume_type`、`create_time`、`update_time`、`network_version`、`security_groups`、`create_time`、`update_time`、`request_id`改为非必填
+  - 接口`UpdateServerName`响应参数`request_id`改为非必填
+  - 接口`RestartCloudPhoneServer`响应参数`jobs`、`request_id`改为非必填
+  - 接口`ChangeCloudPhoneServerModel`响应参数`order_id`、`product_id`、`request_id`改为非必填
+  - 接口`UpdateKeypair`响应参数`jobs`、`request_id`改为非必填
+  - 接口`ListShareFiles`响应参数`jobs`、`request_id`改为非必填
+  - 接口`CreateNet2CloudPhoneServer`响应参数`order_id`、`product_id`、`request_id`改为非必填
+
+### HuaweiCloud SDK DDM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ExpandInstanceNodes`新增请求参数 `is_auto_pay`
+
+### HuaweiCloud SDK DDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`AddReadonlyNode`请求参数`num`类型调整 `string` -> `int32`
+
+### HuaweiCloud SDK EIP
+
+- _新增特性_
+  - 支持接口`DisassociatePublicips`、`AssociatePublicips`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowTenantMetric`新增请求参数 `metric_type`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListAvailableFlavorInfos`
+    - `CheckWeekPassword`
+    - `ModifyPort`
+    - `UpdateClientNetwork`
+    - `DeleteEnlargeFailNode`
+    - `ShowIpNumRequirement`
+    - `ShowAutoEnlargePolicy`
+    - `ShowSlowLogDesensitization`
+    - `SwitchSlowlogDesensitization`
+    - `ShowErrorLog`
+    - `CopyConfiguration`
+    - `CompareConfiguration`
+    - `ListConfigurationDatastores`
+    - `ShowAllInstancesBackups`
+    - `CreateBack`
+    - `ShowRecyclePolicy`
+    - `SetRecyclePolicy`
+    - `ListRecycleInstances`
+    - `ShowPauseResumeStutus`
+    - `PauseResumeDataSynchronization`
+    - `ListProjectTags`
+    - `ListEpsQuotas`
+    - `ModifyEpsQuotas`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ModifyPublicIp`请求参数`public_ip`、`public_ip_id`改为非必填
+  - 接口`SwitchToMaster`新增请求参数 `SwitchToMasterDisasterRecoveryBody`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _新增特性_
+  - 支持以下接口：
+    - `CopyConfiguration`
+    - `DeleteJob`
+    - `ListEpsQuotas`
+    - `ModifyEpsQuota`
+    - `ListAvailableFlavors`
+    - `ShowSslCertDownloadLink`
+    - `ListApplicableInstances`
+    - `ListAppliedHistories`
+    - `ListRestorableInstances`
+    - `ListTasks`
+    - `ShowDeploymentForm`
+    - `ShowInstanceDisk`
+    - `ListProjectTags`
+    - `ListInstanceTags`
+    - `AddInstanceTags`
+    - `ShowProjectQuotas`
+    - `ListRecycleInstances`
+    - `ShowConfigurationDetail`
+    - `DeleteConfiguration`
+    - `ListConfigurationsDiff`
+    - `ShowBalanceStatus`
+    - `ShowInstanceSnapshot`
+    - `ValidateWeakPassword`
+    - `ListHistoryOperations`
+    - `ListBindedEips`
+    - `ResetConfiguration`
+    - `ListGaussDbDatastores`
+    - `AttachEip`
+    - `ListPredefinedTags`
+    - `SwitchConfiguration`
+    - `ValidateParaGroupName`
+    - `ShowRecyclePolicy`
+    - `CreateConfigurationTemplate`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowBackupPolicy`新增响应参数 `enable_standby_backup`
+  - 接口`SetBackupPolicy`新增请求参数 `enable_standby_backup`
+
+### HuaweiCloud SDK MPC
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListNotifySmnTopicConfig`
+    - `NotifySmnTopicConfig`
+    - `ListNotifyEvent`
+    - `DeleteTranscodingTaskByConsole`
+    - `ListStatSummary`
+    - `ListAllBuckets`
+    - `UpdateBucketAuthorized`
+    - `ListAllObsObjList`
+    - `ShowAgenciesTask`
+    - `CreateAgenciesTask`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK MRS
+
+- _新增特性_
+  - 支持接口`UpdateClusterName`、`ShowAutoScalingPolicy`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateAgencyMapping`响应参数`result`改为必填
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListInstances`响应参数`read_only_by_user`类型调整 `string` -> `boolean`
+
+### HuaweiCloud SDK ROMA
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateProduct`移除响应参数 `status`
+  - 接口`ListProperties`移除响应参数 `bool_false`、`bool_true`
+  - 接口`CreateProperty`移除请求参数 `bool_false`、`bool_true`
+  - 接口`ShowProperty`移除响应参数 `bool_false`、`bool_true`
+  - 接口`UpdateProperty`:
+    - 移除请求参数 `bool_false`、`bool_true`
+    - 移除响应参数 `bool_false`、`bool_true`
+  - 接口`ListRequestProperties`移除响应参数 `bool_false`、`bool_true`
+  - 接口`CreateRequestProperty`:
+    - 移除请求参数 `bool_false`、`bool_true`
+    - 移除响应参数 `bool_false`、`bool_true`
+  - 接口`ShowRequestProperty`移除响应参数 `bool_false`、`bool_true`
+  - 接口`UpdateRequestProperty`:
+    - 移除请求参数 `bool_false`、`bool_true`
+    - 移除响应参数 `bool_false`、`bool_true`
+  - 接口`ListResponseProperties`移除响应参数 `bool_false`、`bool_true`
+  - 接口`CreateResponseProperty`移除请求参数 `bool_false`、`bool_true`
+  - 接口`ShowResponseProperty`移除响应参数 `bool_false`、`bool_true`
+  - 接口`UpdateResponseProperty`:
+    - 移除请求参数 `bool_false`、`bool_true`
+    - 移除响应参数 `bool_false`、`bool_true`
+  - 接口`CreateApiV2`新增请求参数 `cookie_param_name`、`alias_urn`、`cookie_param_name`、`alias_urn`、`cookie_param_name`
+  - 接口`ShowDetailsOfApiV2`新增响应参数 `cookie_param_name`、`alias_urn`、`alias_urn`、`cookie_param_name`、`cookie_param_name`
+  - 接口`UpdateApiV2`:
+    - 新增请求参数 `cookie_param_name`、`alias_urn`、`cookie_param_name`、`alias_urn`、`cookie_param_name`
+    - 新增响应参数 `cookie_param_name`、`alias_urn`、`alias_urn`、`cookie_param_name`、`cookie_param_name`
+  - 接口`ListApiVersionDetailV2`新增响应参数 `cookie_param_name`、`alias_urn`、`alias_urn`、`cookie_param_name`、`cookie_param_name`
+  - 接口`ListVpcChannelsV2`新增响应参数 `microservice_info`、`type`
+  - 接口`ShowDetailsOfVpcChannelV2`新增响应参数 `microservice_info`、`type`
+  - 接口`UpdateVpcChannelV2`新增响应参数 `microservice_info`、`type`
+  - 接口`ListProjectVpcChannelsV2`新增响应参数 `microservice_info`、`type`
+  - 接口`UpdateProjectVpcChannel`新增响应参数 `microservice_info`、`type`
+  - 接口`ShowDetailsOfInstanceV2`新增响应参数 `ingress_ips`
+
+### HuaweiCloud SDK SIS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`PushTranscriberJobs`请求参数`property`新增枚举值`chinese_8k_general`
+  - 接口`RunTts`请求参数`property`新增枚举值`chinese_huaxiaoru_common`、`chinese_huaxiaohan_common`、`chinese_huaxiaoning_common`、`chinese_huaxiaozhen_common`、`english_alvin_common`、`english_amy_common`
+
 # 3.1.12 2022-11-24
 
 ### HuaweiCloud SDK DWR

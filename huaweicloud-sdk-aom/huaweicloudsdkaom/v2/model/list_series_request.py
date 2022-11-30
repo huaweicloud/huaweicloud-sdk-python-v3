@@ -38,7 +38,7 @@ class ListSeriesRequest:
 
         :param limit: 用于限制本次返回的结果数据条数。 取值范围(0,1000]，默认值为1000。
         :type limit: str
-        :param offset: 分页查询起始位置，为非负整数1234。
+        :param offset: 分页查询起始位置，为非负整数。
         :type offset: str
         :param body: Body of the ListSeriesRequest
         :type body: :class:`huaweicloudsdkaom.v2.SeriesAPIQueryItemParam`
@@ -84,7 +84,7 @@ class ListSeriesRequest:
     def offset(self):
         """Gets the offset of this ListSeriesRequest.
 
-        分页查询起始位置，为非负整数1234。
+        分页查询起始位置，为非负整数。
 
         :return: The offset of this ListSeriesRequest.
         :rtype: str
@@ -95,7 +95,7 @@ class ListSeriesRequest:
     def offset(self, offset):
         """Sets the offset of this ListSeriesRequest.
 
-        分页查询起始位置，为非负整数1234。
+        分页查询起始位置，为非负整数。
 
         :param offset: The offset of this ListSeriesRequest.
         :type offset: str

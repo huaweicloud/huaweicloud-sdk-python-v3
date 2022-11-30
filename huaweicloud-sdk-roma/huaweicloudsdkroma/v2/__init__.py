@@ -628,8 +628,10 @@ from huaweicloudsdkroma.v2.model.member_group_create_batch import MemberGroupCre
 from huaweicloudsdkroma.v2.model.member_group_info import MemberGroupInfo
 from huaweicloudsdkroma.v2.model.member_info import MemberInfo
 from huaweicloudsdkroma.v2.model.members_batch_enable_or_disable import MembersBatchEnableOrDisable
+from huaweicloudsdkroma.v2.model.micro_service_info import MicroServiceInfo
+from huaweicloudsdkroma.v2.model.micro_service_info_cse import MicroServiceInfoCSE
+from huaweicloudsdkroma.v2.model.micro_service_info_cse_base import MicroServiceInfoCSEBase
 from huaweicloudsdkroma.v2.model.mock_api_base_info import MockApiBaseInfo
-from huaweicloudsdkroma.v2.model.mock_api_base_info_header import MockApiBaseInfoHeader
 from huaweicloudsdkroma.v2.model.model_property import ModelProperty
 from huaweicloudsdkroma.v2.model.multi_oracle_address import MultiOracleAddress
 from huaweicloudsdkroma.v2.model.multi_task_column_info import MultiTaskColumnInfo
@@ -655,7 +657,6 @@ from huaweicloudsdkroma.v2.model.products_calculation import ProductsCalculation
 from huaweicloudsdkroma.v2.model.project_vpc_channel_info import ProjectVpcChannelInfo
 from huaweicloudsdkroma.v2.model.project_vpc_create import ProjectVpcCreate
 from huaweicloudsdkroma.v2.model.project_vpc_sync import ProjectVpcSync
-from huaweicloudsdkroma.v2.model.property_data_enum import PropertyDataEnum
 from huaweicloudsdkroma.v2.model.property_response_body import PropertyResponseBody
 from huaweicloudsdkroma.v2.model.publish_live_data_api_v2_request import PublishLiveDataApiV2Request
 from huaweicloudsdkroma.v2.model.publish_live_data_api_v2_response import PublishLiveDataApiV2Response

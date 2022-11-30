@@ -31,7 +31,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
         'max_length': 'int',
         'unit': 'str',
         'enum_list': 'str',
-        'enum_dict': 'PropertyDataEnum'
+        'enum_dict': 'object'
     }
 
     attribute_map = {
@@ -76,8 +76,8 @@ class UpdateRequestPropertyResponse(SdkResponse):
         :type unit: str
         :param enum_list: string的枚举值数组，使用逗号分隔
         :type enum_list: str
-        :param enum_dict: 
-        :type enum_dict: :class:`huaweicloudsdkroma.v2.PropertyDataEnum`
+        :param enum_dict: 当数据类型为boolean枚举值时填写json格式数据，形如\&quot;enum_dict\&quot;:{\&quot;0\&quot;:\&quot;xxx\&quot;,\&quot;1\&quot;:\&quot;xxx\&quot;}
+        :type enum_dict: object
         """
         
         super(UpdateRequestPropertyResponse, self).__init__()
@@ -367,8 +367,10 @@ class UpdateRequestPropertyResponse(SdkResponse):
     def enum_dict(self):
         """Gets the enum_dict of this UpdateRequestPropertyResponse.
 
+        当数据类型为boolean枚举值时填写json格式数据，形如\"enum_dict\":{\"0\":\"xxx\",\"1\":\"xxx\"}
+
         :return: The enum_dict of this UpdateRequestPropertyResponse.
-        :rtype: :class:`huaweicloudsdkroma.v2.PropertyDataEnum`
+        :rtype: object
         """
         return self._enum_dict
 
@@ -376,8 +378,10 @@ class UpdateRequestPropertyResponse(SdkResponse):
     def enum_dict(self, enum_dict):
         """Sets the enum_dict of this UpdateRequestPropertyResponse.
 
+        当数据类型为boolean枚举值时填写json格式数据，形如\"enum_dict\":{\"0\":\"xxx\",\"1\":\"xxx\"}
+
         :param enum_dict: The enum_dict of this UpdateRequestPropertyResponse.
-        :type enum_dict: :class:`huaweicloudsdkroma.v2.PropertyDataEnum`
+        :type enum_dict: object
         """
         self._enum_dict = enum_dict
 

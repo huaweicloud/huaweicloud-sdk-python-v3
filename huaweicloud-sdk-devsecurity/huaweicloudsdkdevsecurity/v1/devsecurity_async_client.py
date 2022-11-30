@@ -47,8 +47,7 @@ class DevSecurityAsyncClient(Client):
 
         创建移动应用安全任务并启动
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateSecAppTask
@@ -117,8 +116,7 @@ class DevSecurityAsyncClient(Client):
 
         删除移动应用安全任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteSecAppTask
@@ -179,8 +177,7 @@ class DevSecurityAsyncClient(Client):
 
         获取移动应用安全任务结果
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowSecAppTaskResult
@@ -241,8 +238,7 @@ class DevSecurityAsyncClient(Client):
 
         查询移动应用安全任务状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowSecAppTaskStatus

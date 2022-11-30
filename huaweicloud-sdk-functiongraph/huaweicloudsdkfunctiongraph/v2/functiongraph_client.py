@@ -47,8 +47,7 @@ class FunctionGraphClient(Client):
 
         异步执行函数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AsyncInvokeFunction
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.AsyncInvokeFunctionRequest`
@@ -114,8 +113,7 @@ class FunctionGraphClient(Client):
         在提供函数别名的情况下，删除对应函数别名的触发器。
         在不提供函数版本（也不提供别名）或版本为latest的情况下，删除该函数所有的触发器（包括所有版本和别名）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteFunctionTriggers
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteFunctionTriggersRequest`
@@ -175,8 +173,7 @@ class FunctionGraphClient(Client):
 
         删除函数流
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteWorkflows
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteWorkflowsRequest`
@@ -236,8 +233,7 @@ class FunctionGraphClient(Client):
 
         -| 停止函数异步调用请求 当前仅支持recursive为false且force为true的参数。针对1：N的函数做并发异步调用 停止异步请求时实例同时在执行的其他请求也会被一并停止并返回4208 function invocation canceled 目前仅支持广州和贵阳一
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CancelAsyncInvocation
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CancelAsyncInvocationRequest`
@@ -299,8 +295,7 @@ class FunctionGraphClient(Client):
 
         创建依赖包
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDependency
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateDependencyRequest`
@@ -360,8 +355,7 @@ class FunctionGraphClient(Client):
 
         创建依赖包版本
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDependencyVersion
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateDependencyVersionRequest`
@@ -421,8 +415,7 @@ class FunctionGraphClient(Client):
 
         创建测试事件
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateEvent
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateEventRequest`
@@ -484,8 +477,7 @@ class FunctionGraphClient(Client):
 
         创建指定的函数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateFunction
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionRequest`
@@ -549,8 +541,7 @@ class FunctionGraphClient(Client):
         - DDS和KAFKA触发器创建时默认为DISABLE状态，其他触发器默认为ACTIVE状态。
         - TIMER、DDS、DMS、KAFKA、LTS触发器支持禁用，其他触发器不支持。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateFunctionTrigger
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionTriggerRequest`
@@ -612,8 +603,7 @@ class FunctionGraphClient(Client):
 
         发布函数版本。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateFunctionVersion
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionVersionRequest`
@@ -675,8 +665,7 @@ class FunctionGraphClient(Client):
 
         创建函数灰度版本别名。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateVersionAlias
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateVersionAliasRequest`
@@ -738,8 +727,7 @@ class FunctionGraphClient(Client):
 
         创建函数流
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateWorkflow
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateWorkflowRequest`
@@ -799,8 +787,7 @@ class FunctionGraphClient(Client):
 
         删除指定的依赖包
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDependency
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteDependencyRequest`
@@ -860,8 +847,7 @@ class FunctionGraphClient(Client):
 
         删除依赖包版本
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDependencyVersion
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteDependencyVersionRequest`
@@ -923,8 +909,7 @@ class FunctionGraphClient(Client):
 
         删除指定测试事件
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteEvent
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteEventRequest`
@@ -989,8 +974,7 @@ class FunctionGraphClient(Client):
         如果URN中包含函数版本或者别名，则删除特定的函数版本或者别名指向的版本以及该版本关联的trigger。
         如果URN中不包含版本或者别名，则删除整个函数，包含所有版本以及别名，触发器。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteFunction
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteFunctionRequest`
@@ -1050,8 +1034,7 @@ class FunctionGraphClient(Client):
 
         删除函数异步配置信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteFunctionAsyncInvokeConfig
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteFunctionAsyncInvokeConfigRequest`
@@ -1111,8 +1094,7 @@ class FunctionGraphClient(Client):
 
         删除触发器。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteFunctionTrigger
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteFunctionTriggerRequest`
@@ -1176,8 +1158,7 @@ class FunctionGraphClient(Client):
 
         删除函数版本别名。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteVersionAlias
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteVersionAliasRequest`
@@ -1239,8 +1220,7 @@ class FunctionGraphClient(Client):
 
         开通lts日志上报功能。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for EnableLtsLogs
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.EnableLtsLogsRequest`
@@ -1298,8 +1278,7 @@ class FunctionGraphClient(Client):
 
         导出函数
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExportFunction
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ExportFunctionRequest`
@@ -1365,8 +1344,7 @@ class FunctionGraphClient(Client):
 
         导入函数
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ImportFunction
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ImportFunctionRequest`
@@ -1426,8 +1404,7 @@ class FunctionGraphClient(Client):
 
         同步调用指的是客户端请求需要明确等到响应结果，也就是说这样的请求必须得调用到用户的函数，并且等到调用完成才返回。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for InvokeFunction
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.InvokeFunctionRequest`
@@ -1493,8 +1470,7 @@ class FunctionGraphClient(Client):
 
         获取函数异步调用请求列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAsyncInvocations
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListAsyncInvocationsRequest`
@@ -1566,8 +1542,7 @@ class FunctionGraphClient(Client):
 
         获取依赖包列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDependencies
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListDependenciesRequest`
@@ -1639,8 +1614,7 @@ class FunctionGraphClient(Client):
 
         获取依赖包版本列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDependencyVersion
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListDependencyVersionRequest`
@@ -1704,8 +1678,7 @@ class FunctionGraphClient(Client):
 
         获取指定函数的测试事件列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEvents
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListEventsRequest`
@@ -1767,8 +1740,7 @@ class FunctionGraphClient(Client):
         
         默认统计按错误次数指标统计最近一天失败次数最多的前10个函数
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListFunctionAsMetric
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionAsMetricRequest`
@@ -1834,8 +1806,7 @@ class FunctionGraphClient(Client):
 
         获取指定函数所有版本的异步配置列表。。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListFunctionAsyncInvokeConfig
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionAsyncInvokeConfigRequest`
@@ -1899,8 +1870,7 @@ class FunctionGraphClient(Client):
 
         获取函数预留实例数量。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListFunctionReservedInstances
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionReservedInstancesRequest`
@@ -1964,8 +1934,7 @@ class FunctionGraphClient(Client):
 
         获取指定时间段的函数运行指标。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListFunctionStatistics
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionStatisticsRequest`
@@ -2027,8 +1996,7 @@ class FunctionGraphClient(Client):
 
         获取指定函数的所有触发器设置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListFunctionTriggers
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionTriggersRequest`
@@ -2088,8 +2056,7 @@ class FunctionGraphClient(Client):
 
         获取指定函数的版本列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListFunctionVersions
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionVersionsRequest`
@@ -2153,8 +2120,7 @@ class FunctionGraphClient(Client):
 
         获取函数列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListFunctions
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionsRequest`
@@ -2218,8 +2184,7 @@ class FunctionGraphClient(Client):
 
         查询租户配额
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListQuotas
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListQuotasRequest`
@@ -2277,8 +2242,7 @@ class FunctionGraphClient(Client):
 
         获取函数预留实例配置列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListReservedInstanceConfigs
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListReservedInstanceConfigsRequest`
@@ -2341,8 +2305,7 @@ class FunctionGraphClient(Client):
         返回三类的统计信息，函数格式和大小使用情况包括配额和使用量，流量报告。
         通过查询参数filter可以进行过滤，查询参数period可以指定返回的时间段。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListStatistics
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListStatisticsRequest`
@@ -2406,8 +2369,7 @@ class FunctionGraphClient(Client):
 
         获取函数版本别名列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListVersionAliases
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListVersionAliasesRequest`
@@ -2467,8 +2429,7 @@ class FunctionGraphClient(Client):
 
         查询函数流
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListWorkflow
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowRequest`
@@ -2536,8 +2497,7 @@ class FunctionGraphClient(Client):
 
         获取指定函数流执行实例列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListWorkflowExecutions
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowExecutionsRequest`
@@ -2605,8 +2565,7 @@ class FunctionGraphClient(Client):
 
         重试函数流
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RetryWorkFlow
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.RetryWorkFlowRequest`
@@ -2668,8 +2627,7 @@ class FunctionGraphClient(Client):
 
         获取指定依赖包
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDependcy
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowDependcyRequest`
@@ -2729,8 +2687,7 @@ class FunctionGraphClient(Client):
 
         获取依赖包版本详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDependencyVersion
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowDependencyVersionRequest`
@@ -2792,8 +2749,7 @@ class FunctionGraphClient(Client):
 
         获取测试事件详细信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowEvent
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowEventRequest`
@@ -2855,8 +2811,7 @@ class FunctionGraphClient(Client):
 
         获取指定函数某一版本的异步配置信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowFunctionAsyncInvokeConfig
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionAsyncInvokeConfigRequest`
@@ -2916,8 +2871,7 @@ class FunctionGraphClient(Client):
 
         获取指定函数的代码。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowFunctionCode
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionCodeRequest`
@@ -2977,8 +2931,7 @@ class FunctionGraphClient(Client):
 
         获取指定函数的metadata。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowFunctionConfig
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionConfigRequest`
@@ -3038,8 +2991,7 @@ class FunctionGraphClient(Client):
 
         获取特定触发器的信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowFunctionTrigger
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionTriggerRequest`
@@ -3103,8 +3055,7 @@ class FunctionGraphClient(Client):
 
         获取指定函数的lts日志组日志流配置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowLtsLogDetails
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowLtsLogDetailsRequest`
@@ -3164,8 +3115,7 @@ class FunctionGraphClient(Client):
 
         获取函数流指标
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTenantMetric
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowTenantMetricRequest`
@@ -3174,7 +3124,7 @@ class FunctionGraphClient(Client):
         return self.show_tenant_metric_with_http_info(request)
 
     def show_tenant_metric_with_http_info(self, request):
-        all_params = ['period', 'start_time', 'end_time']
+        all_params = ['period', 'start_time', 'end_time', 'metric_type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3193,6 +3143,8 @@ class FunctionGraphClient(Client):
             query_params.append(('start_time', local_var_params['start_time']))
         if 'end_time' in local_var_params:
             query_params.append(('end_time', local_var_params['end_time']))
+        if 'metric_type' in local_var_params:
+            query_params.append(('metric_type', local_var_params['metric_type']))
 
         header_params = {}
 
@@ -3229,8 +3181,7 @@ class FunctionGraphClient(Client):
 
         获取函数调用链配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTracing
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowTracingRequest`
@@ -3290,8 +3241,7 @@ class FunctionGraphClient(Client):
 
         获取函数指定的版本别名信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowVersionAlias
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowVersionAliasRequest`
@@ -3353,8 +3303,7 @@ class FunctionGraphClient(Client):
 
         获取指定函数流实例的元数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowWorkFlow
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkFlowRequest`
@@ -3414,8 +3363,7 @@ class FunctionGraphClient(Client):
 
         获取指定函数流指标
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowWorkFlowMetric
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkFlowMetricRequest`
@@ -3481,8 +3429,7 @@ class FunctionGraphClient(Client):
 
         获取指定函数流执行实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowWorkflowExecution
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkflowExecutionRequest`
@@ -3546,8 +3493,7 @@ class FunctionGraphClient(Client):
 
         分页获取指定函数流执行实例列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowWorkflowExecutionForPage
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkflowExecutionForPageRequest`
@@ -3609,8 +3555,7 @@ class FunctionGraphClient(Client):
 
         以同步执行方式启动函数流（仅快速模式函数流支持）
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartSyncWorkflowExecution
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.StartSyncWorkflowExecutionRequest`
@@ -3672,8 +3617,7 @@ class FunctionGraphClient(Client):
 
         以异步执行方式启动函数流
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartWorkflowExecution
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.StartWorkflowExecutionRequest`
@@ -3741,8 +3685,7 @@ class FunctionGraphClient(Client):
 
         停止函数流
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StopWorkFlow
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.StopWorkFlowRequest`
@@ -3804,8 +3747,7 @@ class FunctionGraphClient(Client):
 
         更新指定依赖包
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDependcy
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateDependcyRequest`
@@ -3867,8 +3809,7 @@ class FunctionGraphClient(Client):
 
         更新测试事件详细信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateEvent
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateEventRequest`
@@ -3932,8 +3873,7 @@ class FunctionGraphClient(Client):
 
         设置函数异步配置信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateFunctionAsyncInvokeConfig
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionAsyncInvokeConfigRequest`
@@ -3995,8 +3935,7 @@ class FunctionGraphClient(Client):
 
         修改指定的函数的代码。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateFunctionCode
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionCodeRequest`
@@ -4058,8 +3997,7 @@ class FunctionGraphClient(Client):
 
         修改指定的函数的metadata信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateFunctionConfig
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionConfigRequest`
@@ -4121,8 +4059,7 @@ class FunctionGraphClient(Client):
 
         更新函数最大实例数
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateFunctionMaxInstanceConfig
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionMaxInstanceConfigRequest`
@@ -4184,8 +4121,7 @@ class FunctionGraphClient(Client):
 
         修改函数预留实例数量。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateFunctionReservedInstancesCount
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionReservedInstancesCountRequest`
@@ -4247,8 +4183,7 @@ class FunctionGraphClient(Client):
 
         修改函数调用链配置,开通/修改传入aksk，关闭aksk传空
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateTracing
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateTracingRequest`
@@ -4310,8 +4245,7 @@ class FunctionGraphClient(Client):
 
         更新触发器
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateTrigger
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateTriggerRequest`
@@ -4377,8 +4311,7 @@ class FunctionGraphClient(Client):
 
         修改函数版本别名信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateVersionAlias
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateVersionAliasRequest`
@@ -4442,8 +4375,7 @@ class FunctionGraphClient(Client):
 
         修改指定函数流实例的元数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateWorkFlow
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateWorkFlowRequest`

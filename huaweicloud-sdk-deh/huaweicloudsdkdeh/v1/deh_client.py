@@ -49,8 +49,7 @@ class DeHClient(Client):
         
         标签管理服务（TMS）使用该接口批量添加专属主机的标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchCreateDedicatedHostTags
         :type request: :class:`huaweicloudsdkdeh.v1.BatchCreateDedicatedHostTagsRequest`
@@ -114,8 +113,7 @@ class DeHClient(Client):
         
         标签管理服务（TMS）使用该接口批量删除专属主机的标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteDedicatedHostTags
         :type request: :class:`huaweicloudsdkdeh.v1.BatchDeleteDedicatedHostTagsRequest`
@@ -177,8 +175,7 @@ class DeHClient(Client):
 
         分配一台或多台专属主机，需要设置实例规格、所属AZ、数量等参数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDedicatedHost
         :type request: :class:`huaweicloudsdkdeh.v1.CreateDedicatedHostRequest`
@@ -238,8 +235,7 @@ class DeHClient(Client):
 
         释放专属主机。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDedicatedHost
         :type request: :class:`huaweicloudsdkdeh.v1.DeleteDedicatedHostRequest`
@@ -299,8 +295,7 @@ class DeHClient(Client):
 
         查询某一AZ内可用的专属主机类型。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDedicatedHostTypes
         :type request: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostTypesRequest`
@@ -360,8 +355,7 @@ class DeHClient(Client):
 
         通过该接口查询专属主机列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDedicatedHosts
         :type request: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostsRequest`
@@ -449,8 +443,7 @@ class DeHClient(Client):
         
         标签管理服务（TMS）使用该接口过滤专属主机列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDedicatedHostsByTags
         :type request: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostsByTagsRequest`
@@ -510,8 +503,7 @@ class DeHClient(Client):
 
         查询专属主机上已部署的云服务器信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListServersDedicatedHost
         :type request: :class:`huaweicloudsdkdeh.v1.ListServersDedicatedHostRequest`
@@ -575,8 +567,7 @@ class DeHClient(Client):
 
         查询某一台专属主机的详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDedicatedHost
         :type request: :class:`huaweicloudsdkdeh.v1.ShowDedicatedHostRequest`
@@ -638,8 +629,7 @@ class DeHClient(Client):
         
         标签管理服务（TMS）使用该接口查询指定专属主机的全部标签数据。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDedicatedHostTags
         :type request: :class:`huaweicloudsdkdeh.v1.ShowDedicatedHostTagsRequest`
@@ -699,8 +689,7 @@ class DeHClient(Client):
 
         该接口用于查询租户的专属主机配额。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowQuotaSets
         :type request: :class:`huaweicloudsdkdeh.v1.ShowQuotaSetsRequest`
@@ -762,8 +751,7 @@ class DeHClient(Client):
 
         该接口用于变更专属主机的“auto_placement”和“name”属性。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDedicatedHost
         :type request: :class:`huaweicloudsdkdeh.v1.UpdateDedicatedHostRequest`

@@ -29,6 +29,7 @@ class BackendApi:
         'req_uri': 'str',
         'timeout': 'int',
         'enable_client_ssl': 'bool',
+        'retry_count': 'str',
         'id': 'str',
         'status': 'int',
         'register_time': 'datetime',
@@ -47,6 +48,7 @@ class BackendApi:
         'req_uri': 'req_uri',
         'timeout': 'timeout',
         'enable_client_ssl': 'enable_client_ssl',
+        'retry_count': 'retry_count',
         'id': 'id',
         'status': 'status',
         'register_time': 'register_time',
@@ -55,7 +57,7 @@ class BackendApi:
         'vpc_channel_status': 'vpc_channel_status'
     }
 
-    def __init__(self, authorizer_id=None, url_domain=None, req_protocol=None, remark=None, req_method=None, version=None, req_uri=None, timeout=None, enable_client_ssl=None, id=None, status=None, register_time=None, update_time=None, vpc_channel_info=None, vpc_channel_status=None):
+    def __init__(self, authorizer_id=None, url_domain=None, req_protocol=None, remark=None, req_method=None, version=None, req_uri=None, timeout=None, enable_client_ssl=None, retry_count=None, id=None, status=None, register_time=None, update_time=None, vpc_channel_info=None, vpc_channel_status=None):
         """BackendApi
 
         The model defined in huaweicloud sdk
@@ -78,6 +80,8 @@ class BackendApi:
         :type timeout: int
         :param enable_client_ssl: 是否开启双向认证
         :type enable_client_ssl: bool
+        :param retry_count: 请求后端服务的重试次数，默认为-1，范围[-1,10]
+        :type retry_count: str
         :param id: 编号
         :type id: str
         :param status: 后端状态   - 1： 有效
@@ -103,6 +107,7 @@ class BackendApi:
         self._req_uri = None
         self._timeout = None
         self._enable_client_ssl = None
+        self._retry_count = None
         self._id = None
         self._status = None
         self._register_time = None
@@ -125,6 +130,8 @@ class BackendApi:
         self.timeout = timeout
         if enable_client_ssl is not None:
             self.enable_client_ssl = enable_client_ssl
+        if retry_count is not None:
+            self.retry_count = retry_count
         if id is not None:
             self.id = id
         if status is not None:
@@ -335,6 +342,28 @@ class BackendApi:
         :type enable_client_ssl: bool
         """
         self._enable_client_ssl = enable_client_ssl
+
+    @property
+    def retry_count(self):
+        """Gets the retry_count of this BackendApi.
+
+        请求后端服务的重试次数，默认为-1，范围[-1,10]
+
+        :return: The retry_count of this BackendApi.
+        :rtype: str
+        """
+        return self._retry_count
+
+    @retry_count.setter
+    def retry_count(self, retry_count):
+        """Sets the retry_count of this BackendApi.
+
+        请求后端服务的重试次数，默认为-1，范围[-1,10]
+
+        :param retry_count: The retry_count of this BackendApi.
+        :type retry_count: str
+        """
+        self._retry_count = retry_count
 
     @property
     def id(self):

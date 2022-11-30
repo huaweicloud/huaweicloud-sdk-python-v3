@@ -47,8 +47,7 @@ class DbssAsyncClient(Client):
 
         用于开启和关闭agent的功能，当开启后，开始抓取用户的访问信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SwitchAgent
@@ -111,8 +110,7 @@ class DbssAsyncClient(Client):
 
         开启关闭风险规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SwitchRiskRule

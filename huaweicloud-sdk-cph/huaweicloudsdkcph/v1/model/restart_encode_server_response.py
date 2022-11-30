@@ -21,7 +21,7 @@ class RestartEncodeServerResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'jobs': 'list[object]'
+        'jobs': 'list[EncodeServerJob]'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class RestartEncodeServerResponse(SdkResponse):
         :param request_id: 请求的唯一标识ID
         :type request_id: str
         :param jobs: 任务信息
-        :type jobs: list[object]
+        :type jobs: list[:class:`huaweicloudsdkcph.v1.EncodeServerJob`]
         """
         
         super(RestartEncodeServerResponse, self).__init__()
@@ -46,8 +46,10 @@ class RestartEncodeServerResponse(SdkResponse):
         self._jobs = None
         self.discriminator = None
 
-        self.request_id = request_id
-        self.jobs = jobs
+        if request_id is not None:
+            self.request_id = request_id
+        if jobs is not None:
+            self.jobs = jobs
 
     @property
     def request_id(self):
@@ -78,7 +80,7 @@ class RestartEncodeServerResponse(SdkResponse):
         任务信息
 
         :return: The jobs of this RestartEncodeServerResponse.
-        :rtype: list[object]
+        :rtype: list[:class:`huaweicloudsdkcph.v1.EncodeServerJob`]
         """
         return self._jobs
 
@@ -89,7 +91,7 @@ class RestartEncodeServerResponse(SdkResponse):
         任务信息
 
         :param jobs: The jobs of this RestartEncodeServerResponse.
-        :type jobs: list[object]
+        :type jobs: list[:class:`huaweicloudsdkcph.v1.EncodeServerJob`]
         """
         self._jobs = jobs
 

@@ -47,8 +47,7 @@ class NatAsyncClient(Client):
 
         批量创建DNAT规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchCreateNatGatewayDnatRules
@@ -109,8 +108,7 @@ class NatAsyncClient(Client):
 
         创建DNAT规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateNatGatewayDnatRule
@@ -171,8 +169,7 @@ class NatAsyncClient(Client):
 
         删除指定的DNAT规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteNatGatewayDnatRule
@@ -235,8 +232,7 @@ class NatAsyncClient(Client):
 
         查询DNAT规则列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListNatGatewayDnatRules
@@ -326,8 +322,7 @@ class NatAsyncClient(Client):
 
         查询指定的DNAT规则详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowNatGatewayDnatRule
@@ -388,8 +383,7 @@ class NatAsyncClient(Client):
 
         更新指定的DNAT规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateNatGatewayDnatRule
@@ -452,8 +446,7 @@ class NatAsyncClient(Client):
 
         创建公网NAT网关实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateNatGateway
@@ -514,8 +507,7 @@ class NatAsyncClient(Client):
 
         删除公网NAT网关实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteNatGateway
@@ -576,8 +568,7 @@ class NatAsyncClient(Client):
 
         查询公网NAT网关实例列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListNatGateways
@@ -660,8 +651,7 @@ class NatAsyncClient(Client):
 
         查询指定的公网NAT网关实例详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowNatGateway
@@ -722,8 +712,7 @@ class NatAsyncClient(Client):
 
         更新公网NAT网关实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateNatGateway
@@ -786,8 +775,7 @@ class NatAsyncClient(Client):
 
         创建SNAT规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateNatGatewaySnatRule
@@ -848,8 +836,7 @@ class NatAsyncClient(Client):
 
         删除指定的SNAT规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteNatGatewaySnatRule
@@ -912,8 +899,7 @@ class NatAsyncClient(Client):
 
         查询SNAT规则列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListNatGatewaySnatRules
@@ -997,8 +983,7 @@ class NatAsyncClient(Client):
 
         查询指定的SNAT规则详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowNatGatewaySnatRule
@@ -1059,8 +1044,7 @@ class NatAsyncClient(Client):
 
         更新指定的SNAT规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateNatGatewaySnatRule

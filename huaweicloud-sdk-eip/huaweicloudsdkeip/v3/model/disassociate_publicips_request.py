@@ -20,35 +20,28 @@ class DisassociatePublicipsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'publicip_id': 'str',
-        'body': 'DisassociatePublicipsRequestBody'
+        'publicip_id': 'str'
     }
 
     attribute_map = {
-        'publicip_id': 'publicip_id',
-        'body': 'body'
+        'publicip_id': 'publicip_id'
     }
 
-    def __init__(self, publicip_id=None, body=None):
+    def __init__(self, publicip_id=None):
         """DisassociatePublicipsRequest
 
         The model defined in huaweicloud sdk
 
         :param publicip_id: 弹性公网IP的ID
         :type publicip_id: str
-        :param body: Body of the DisassociatePublicipsRequest
-        :type body: :class:`huaweicloudsdkeip.v3.DisassociatePublicipsRequestBody`
         """
         
         
 
         self._publicip_id = None
-        self._body = None
         self.discriminator = None
 
         self.publicip_id = publicip_id
-        if body is not None:
-            self.body = body
 
     @property
     def publicip_id(self):
@@ -71,24 +64,6 @@ class DisassociatePublicipsRequest:
         :type publicip_id: str
         """
         self._publicip_id = publicip_id
-
-    @property
-    def body(self):
-        """Gets the body of this DisassociatePublicipsRequest.
-
-        :return: The body of this DisassociatePublicipsRequest.
-        :rtype: :class:`huaweicloudsdkeip.v3.DisassociatePublicipsRequestBody`
-        """
-        return self._body
-
-    @body.setter
-    def body(self, body):
-        """Sets the body of this DisassociatePublicipsRequest.
-
-        :param body: The body of this DisassociatePublicipsRequest.
-        :type body: :class:`huaweicloudsdkeip.v3.DisassociatePublicipsRequestBody`
-        """
-        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -51,8 +51,7 @@ class SFSTurboClient(Client):
         一个共享上的多个标签的key不允许重复。
         此接口为幂等接口：如果要添加的key在共享上已存在，则覆盖更新标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchAddSharedTags
         :type request: :class:`huaweicloudsdksfsturbo.v1.BatchAddSharedTagsRequest`
@@ -114,8 +113,7 @@ class SFSTurboClient(Client):
 
         修改SFS Turbo文件系统绑定的安全组。修改安全组为异步任务，可以通过“查询单个文件系统”返回的子状态字段“sub_status”来判断是否修改安全组状态，子状态为“232”即为修改安全组成功。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ChangeSecurityGroup
         :type request: :class:`huaweicloudsdksfsturbo.v1.ChangeSecurityGroupRequest`
@@ -177,8 +175,7 @@ class SFSTurboClient(Client):
 
         修改文件系统名称
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ChangeShareName
         :type request: :class:`huaweicloudsdksfsturbo.v1.ChangeShareNameRequest`
@@ -240,8 +237,7 @@ class SFSTurboClient(Client):
 
         创建文件系统。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateShare
         :type request: :class:`huaweicloudsdksfsturbo.v1.CreateShareRequest`
@@ -304,8 +300,7 @@ class SFSTurboClient(Client):
         一个共享上的多个标签的key不允许重复。
         此接口为幂等接口：如果要添加的key在共享上已存在，则覆盖更新标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateSharedTag
         :type request: :class:`huaweicloudsdksfsturbo.v1.CreateSharedTagRequest`
@@ -367,8 +362,7 @@ class SFSTurboClient(Client):
 
         删除文件系统。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteShare
         :type request: :class:`huaweicloudsdksfsturbo.v1.DeleteShareRequest`
@@ -428,8 +422,7 @@ class SFSTurboClient(Client):
 
         指定共享删除一个标签。当共享中不存在指定要删除的key时，接口调用将会返回404错误。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteSharedTag
         :type request: :class:`huaweicloudsdksfsturbo.v1.DeleteSharedTagRequest`
@@ -491,8 +484,7 @@ class SFSTurboClient(Client):
 
         扩容文件系统。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExpandShare
         :type request: :class:`huaweicloudsdksfsturbo.v1.ExpandShareRequest`
@@ -554,8 +546,7 @@ class SFSTurboClient(Client):
 
         查询租户所有共享的标签集合。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSharedTags
         :type request: :class:`huaweicloudsdksfsturbo.v1.ListSharedTagsRequest`
@@ -613,8 +604,7 @@ class SFSTurboClient(Client):
 
         获取文件系统列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListShares
         :type request: :class:`huaweicloudsdksfsturbo.v1.ListSharesRequest`
@@ -676,8 +666,7 @@ class SFSTurboClient(Client):
 
         查询SFS Turbo文件系统详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowShare
         :type request: :class:`huaweicloudsdksfsturbo.v1.ShowShareRequest`
@@ -737,8 +726,7 @@ class SFSTurboClient(Client):
 
         查询指定共享的所有标签信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowSharedTags
         :type request: :class:`huaweicloudsdksfsturbo.v1.ShowSharedTagsRequest`

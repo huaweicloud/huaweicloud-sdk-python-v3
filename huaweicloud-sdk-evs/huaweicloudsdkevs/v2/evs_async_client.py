@@ -50,8 +50,7 @@ class EvsAsyncClient(Client):
         添加标签时，如果云硬盘的标签已存在相同key，则会覆盖已有标签。
         单个云硬盘最多支持创建10个标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchCreateVolumeTags
@@ -114,8 +113,7 @@ class EvsAsyncClient(Client):
 
         为指定云硬盘批量删除标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeleteVolumeTags
@@ -178,8 +176,7 @@ class EvsAsyncClient(Client):
 
         通过云硬盘过户记录ID以及身份认证密钥来接受云硬盘过户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CinderAcceptVolumeTransfer
@@ -243,8 +240,7 @@ class EvsAsyncClient(Client):
         指定云硬盘来创建云硬盘过户记录，创建成功后，会返回过户记录ID以及身份认证密钥。
         云硬盘在过户过程中的状态变化如下：创建云硬盘过户后，云硬盘状态由“available”变为“awaiting-transfer”。当云硬盘过户被接收后，云硬盘状态变为“available”。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CinderCreateVolumeTransfer
@@ -305,8 +301,7 @@ class EvsAsyncClient(Client):
 
         当云硬盘过户未被接受时，您可以删除云硬盘过户记录，接受后则无法执行删除操作。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CinderDeleteVolumeTransfer
@@ -367,8 +362,7 @@ class EvsAsyncClient(Client):
 
         查询所有的可用分区信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CinderListAvailabilityZones
@@ -427,8 +421,7 @@ class EvsAsyncClient(Client):
 
         查询租户的详细配额。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CinderListQuotas
@@ -491,8 +484,7 @@ class EvsAsyncClient(Client):
 
         查询当前租户下所有云硬盘的过户记录列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CinderListVolumeTransfers
@@ -555,8 +547,7 @@ class EvsAsyncClient(Client):
 
         查询云硬盘类型列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CinderListVolumeTypes
@@ -615,8 +606,7 @@ class EvsAsyncClient(Client):
 
         查询单个云硬盘的过户记录详情，比如过户记录创建时间、ID以及名称等信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CinderShowVolumeTransfer
@@ -677,8 +667,7 @@ class EvsAsyncClient(Client):
 
         创建云硬盘快照。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateSnapshot
@@ -744,8 +733,7 @@ class EvsAsyncClient(Client):
         - 如果您需要查询订单的资源开通详情，请参考\&quot;[查询订单的资源开通详情](https://support.huaweicloud.com/api-oce/api_order_00001.html)\&quot;。
         - 如果您需要退订该包周期资源，请参考“[退订包周期资源](https://support.huaweicloud.com/api-oce/zh-cn_topic_0082522030.html)”。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateVolume
@@ -806,8 +794,7 @@ class EvsAsyncClient(Client):
 
         删除云硬盘快照。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteSnapshot
@@ -868,8 +855,7 @@ class EvsAsyncClient(Client):
 
         删除一个云硬盘。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteVolume
@@ -930,8 +916,7 @@ class EvsAsyncClient(Client):
 
         查询云硬盘快照详细列表信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSnapshots
@@ -1012,8 +997,7 @@ class EvsAsyncClient(Client):
 
         获取某个租户的所有云硬盘资源的标签信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListVolumeTags
@@ -1072,8 +1056,7 @@ class EvsAsyncClient(Client):
 
         查询所有云硬盘的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListVolumes
@@ -1168,8 +1151,7 @@ class EvsAsyncClient(Client):
 
         通过标签查询云硬盘资源实例详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListVolumesByTags
@@ -1235,8 +1217,7 @@ class EvsAsyncClient(Client):
         - 如果您需要查询订单的资源开通详情，请参考\&quot;[查询订单的资源开通详情](https://support.huaweicloud.com/api-oce/api_order_00001.html)\&quot;。
         - 如果您需要退订该包周期资源，请参考“[退订包周期资源](https://support.huaweicloud.com/api-oce/zh-cn_topic_0082522030.html)”。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResizeVolume
@@ -1299,8 +1280,7 @@ class EvsAsyncClient(Client):
 
         将快照数据回滚到云硬盘。支持企业项目授权功能。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RollbackSnapshot
@@ -1364,8 +1344,7 @@ class EvsAsyncClient(Client):
         查询Job的执行状态。
         可用于查询创建云硬盘，扩容云硬盘，删除云硬盘等API的执行状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowJob
@@ -1426,8 +1405,7 @@ class EvsAsyncClient(Client):
 
         查询单个云硬盘快照信息。支持企业项目授权功能。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowSnapshot
@@ -1488,8 +1466,7 @@ class EvsAsyncClient(Client):
 
         查询单个云硬盘的详细信息。支持企业项目授权功能。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowVolume
@@ -1550,8 +1527,7 @@ class EvsAsyncClient(Client):
 
         查询指定云硬盘的标签信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowVolumeTags
@@ -1612,8 +1588,7 @@ class EvsAsyncClient(Client):
 
         更新云硬盘快照。支持企业项目授权功能。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateSnapshot
@@ -1676,8 +1651,7 @@ class EvsAsyncClient(Client):
 
         更新一个云硬盘的名称和描述。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateVolume
@@ -1740,8 +1714,7 @@ class EvsAsyncClient(Client):
 
         查询接口版本信息列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListVersions
@@ -1800,8 +1773,7 @@ class EvsAsyncClient(Client):
 
         查询接口的指定版本信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowVersion

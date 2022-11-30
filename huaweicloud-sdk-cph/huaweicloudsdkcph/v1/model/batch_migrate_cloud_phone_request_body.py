@@ -20,7 +20,7 @@ class BatchMigrateCloudPhoneRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'migrate_infos': 'list[BatchMigrateCloudPhoneRequestBodyMigrateInfos]'
+        'migrate_infos': 'list[MigrateInfo]'
     }
 
     attribute_map = {
@@ -32,8 +32,8 @@ class BatchMigrateCloudPhoneRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param migrate_infos: 待迁移数据的云手机信息
-        :type migrate_infos: list[:class:`huaweicloudsdkcph.v1.BatchMigrateCloudPhoneRequestBodyMigrateInfos`]
+        :param migrate_infos: 待迁移数据的云手机信息。
+        :type migrate_infos: list[:class:`huaweicloudsdkcph.v1.MigrateInfo`]
         """
         
         
@@ -47,10 +47,10 @@ class BatchMigrateCloudPhoneRequestBody:
     def migrate_infos(self):
         """Gets the migrate_infos of this BatchMigrateCloudPhoneRequestBody.
 
-        待迁移数据的云手机信息
+        待迁移数据的云手机信息。
 
         :return: The migrate_infos of this BatchMigrateCloudPhoneRequestBody.
-        :rtype: list[:class:`huaweicloudsdkcph.v1.BatchMigrateCloudPhoneRequestBodyMigrateInfos`]
+        :rtype: list[:class:`huaweicloudsdkcph.v1.MigrateInfo`]
         """
         return self._migrate_infos
 
@@ -58,10 +58,10 @@ class BatchMigrateCloudPhoneRequestBody:
     def migrate_infos(self, migrate_infos):
         """Sets the migrate_infos of this BatchMigrateCloudPhoneRequestBody.
 
-        待迁移数据的云手机信息
+        待迁移数据的云手机信息。
 
         :param migrate_infos: The migrate_infos of this BatchMigrateCloudPhoneRequestBody.
-        :type migrate_infos: list[:class:`huaweicloudsdkcph.v1.BatchMigrateCloudPhoneRequestBodyMigrateInfos`]
+        :type migrate_infos: list[:class:`huaweicloudsdkcph.v1.MigrateInfo`]
         """
         self._migrate_infos = migrate_infos
 

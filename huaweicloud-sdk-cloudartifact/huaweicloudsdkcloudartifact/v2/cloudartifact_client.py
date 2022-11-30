@@ -47,8 +47,7 @@ class CloudArtifactClient(Client):
 
         获取项目下文件版本信息列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowProjectReleaseFiles
         :type request: :class:`huaweicloudsdkcloudartifact.v2.ShowProjectReleaseFilesRequest`
@@ -114,8 +113,7 @@ class CloudArtifactClient(Client):
 
         获取项目下文件版本信息列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowReleaseProjectFiles
         :type request: :class:`huaweicloudsdkcloudartifact.v2.ShowReleaseProjectFilesRequest`

@@ -47,8 +47,7 @@ class EipAsyncClient(Client):
 
         查询公共池列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListCommonPools
@@ -113,8 +112,7 @@ class EipAsyncClient(Client):
 
         查询公共池分组列表，包含名称和位置信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListPublicBorderGroups
@@ -175,8 +173,7 @@ class EipAsyncClient(Client):
 
         查询指定租户下的共享带宽类型列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListShareBandwidthTypes
@@ -253,8 +250,7 @@ class EipAsyncClient(Client):
 
         绑定弹性公网IP
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AssociatePublicips
@@ -299,7 +295,7 @@ class EipAsyncClient(Client):
 
         return self.call_api(
             resource_path='/v3/{project_id}/eip/publicips/{publicip_id}/associate-instance',
-            method='PUT',
+            method='POST',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
@@ -317,8 +313,7 @@ class EipAsyncClient(Client):
 
         解绑弹性公网IP
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DisassociatePublicips
@@ -328,7 +323,7 @@ class EipAsyncClient(Client):
         return self.disassociate_publicips_with_http_info(request)
 
     def disassociate_publicips_with_http_info(self, request):
-        all_params = ['publicip_id', 'disassociate_publicips_request_body']
+        all_params = ['publicip_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -349,21 +344,19 @@ class EipAsyncClient(Client):
         form_params = {}
 
         body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
             resource_path='/v3/{project_id}/eip/publicips/{publicip_id}/disassociate-instance',
-            method='PUT',
+            method='POST',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
@@ -381,8 +374,7 @@ class EipAsyncClient(Client):
 
         全量查询公网IP池列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListPublicipPool
@@ -465,8 +457,7 @@ class EipAsyncClient(Client):
 
         查询弹性公网IP列表信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListPublicips
@@ -637,8 +628,7 @@ class EipAsyncClient(Client):
 
         查询弹性公网IP详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowPublicip
@@ -702,8 +692,7 @@ class EipAsyncClient(Client):
 
         查询公网IP池详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowPublicipPool
@@ -756,6 +745,132 @@ class EipAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowPublicipPoolResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_associate_publicip_async(self, request):
+        """绑定弹性公网IP
+
+        绑定弹性公网IP
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateAssociatePublicip
+        :type request: :class:`huaweicloudsdkeip.v3.UpdateAssociatePublicipRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.UpdateAssociatePublicipResponse`
+        """
+        return self.update_associate_publicip_with_http_info(request)
+
+    def update_associate_publicip_with_http_info(self, request):
+        all_params = ['publicip_id', 'associate_publicips_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'publicip_id' in local_var_params:
+            path_params['publicip_id'] = local_var_params['publicip_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/eip/publicips/{publicip_id}/associate-instance',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateAssociatePublicipResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_disassociate_publicip_async(self, request):
+        """解绑弹性公网IP
+
+        解绑弹性公网IP
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDisassociatePublicip
+        :type request: :class:`huaweicloudsdkeip.v3.UpdateDisassociatePublicipRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.UpdateDisassociatePublicipResponse`
+        """
+        return self.update_disassociate_publicip_with_http_info(request)
+
+    def update_disassociate_publicip_with_http_info(self, request):
+        all_params = ['publicip_id', 'disassociate_publicips_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'publicip_id' in local_var_params:
+            path_params['publicip_id'] = local_var_params['publicip_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/eip/publicips/{publicip_id}/disassociate-instance',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateDisassociatePublicipResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

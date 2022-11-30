@@ -47,8 +47,7 @@ class CodeCheckAsyncClient(Client):
 
         查询任务规则集的检查参数
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckParameters
@@ -115,8 +114,7 @@ class CodeCheckAsyncClient(Client):
 
         提供每次扫描的问题数量统计
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckRecord
@@ -187,8 +185,7 @@ class CodeCheckAsyncClient(Client):
 
         查询任务规则集的检查参数
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckRulesetParameters
@@ -259,8 +256,7 @@ class CodeCheckAsyncClient(Client):
 
         可根据需求灵活的组合规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateRuleset
@@ -321,8 +317,7 @@ class CodeCheckAsyncClient(Client):
 
         新建检查任务但是不执行。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateTask
@@ -385,8 +380,7 @@ class CodeCheckAsyncClient(Client):
 
         删除自定义规则集，正在使用中的或默认规则集不能删除
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteRuleset
@@ -449,8 +443,7 @@ class CodeCheckAsyncClient(Client):
 
         删除检查任务，执行中的任务删除无法再查看
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteTask
@@ -511,8 +504,7 @@ class CodeCheckAsyncClient(Client):
 
         根据语言、问题级别等条件查询规则列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRules
@@ -579,8 +571,7 @@ class CodeCheckAsyncClient(Client):
 
         根据项目ID、语言等条件查询规则集列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRulesets
@@ -647,8 +638,7 @@ class CodeCheckAsyncClient(Client):
 
         任务配置检查参数
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTaskParameter
@@ -713,8 +703,7 @@ class CodeCheckAsyncClient(Client):
 
         查询任务的已选规则集列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTaskRuleset
@@ -777,8 +766,7 @@ class CodeCheckAsyncClient(Client):
 
         根据项目ID、规则集ID等条件查询规则列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTemplateRules
@@ -851,8 +839,7 @@ class CodeCheckAsyncClient(Client):
 
         执行检查任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RunTask
@@ -915,8 +902,7 @@ class CodeCheckAsyncClient(Client):
 
         设置每个项目对应语言的默认规则集配置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetDefaulTemplate
@@ -981,8 +967,7 @@ class CodeCheckAsyncClient(Client):
 
         根据任务ID查询任务执行状态。任务状态：0表示检查中，1表示检查失败，2表示检查成功，3表示任务中止。只有正在检查中才有进度的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowProgressDetail
@@ -1043,8 +1028,7 @@ class CodeCheckAsyncClient(Client):
 
         根据检查任务ID查询cmertrics缺陷概要。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTaskCmetrics
@@ -1107,8 +1091,7 @@ class CodeCheckAsyncClient(Client):
 
         根据检查任务ID分页查询缺陷结果详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTaskDefects
@@ -1177,8 +1160,7 @@ class CodeCheckAsyncClient(Client):
 
         根据检查任务ID查询缺陷详情的统计
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTaskDefectsStatistic
@@ -1239,8 +1221,7 @@ class CodeCheckAsyncClient(Client):
 
         根据检查任务ID查询缺陷结果的概要。包括问题概述、问题状态、圈复杂度、代码重复率等。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTaskDetail
@@ -1301,8 +1282,7 @@ class CodeCheckAsyncClient(Client):
 
         根据DEVCLOUD_PROJECT_UUID查询该项目下的任务列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTaskListByProjectId
@@ -1367,8 +1347,7 @@ class CodeCheckAsyncClient(Client):
 
         查询任务检查失败日志，不传execute_id则查询最近一次的检查日志
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTasklog
@@ -1433,8 +1412,7 @@ class CodeCheckAsyncClient(Client):
 
         查询任务的已选规则集列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTasksRulesets
@@ -1501,8 +1479,7 @@ class CodeCheckAsyncClient(Client):
 
         根据任务ID终止检查任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopTaskById
@@ -1563,8 +1540,7 @@ class CodeCheckAsyncClient(Client):
 
         修改检查出的缺陷的状态为已解决、已忽略
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDefectStatus
@@ -1627,8 +1603,7 @@ class CodeCheckAsyncClient(Client):
 
         修改任务规则集。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateTaskRuleset

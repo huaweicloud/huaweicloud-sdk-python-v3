@@ -36,7 +36,7 @@ class DetachPluginFromApiRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID
+        :param instance_id: 实例ID，在API网关控制台的“实例信息”中获取。
         :type instance_id: str
         :param api_id: API编号
         :type api_id: str
@@ -60,7 +60,7 @@ class DetachPluginFromApiRequest:
     def instance_id(self):
         """Gets the instance_id of this DetachPluginFromApiRequest.
 
-        实例ID
+        实例ID，在API网关控制台的“实例信息”中获取。
 
         :return: The instance_id of this DetachPluginFromApiRequest.
         :rtype: str
@@ -71,7 +71,7 @@ class DetachPluginFromApiRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this DetachPluginFromApiRequest.
 
-        实例ID
+        实例ID，在API网关控制台的“实例信息”中获取。
 
         :param instance_id: The instance_id of this DetachPluginFromApiRequest.
         :type instance_id: str

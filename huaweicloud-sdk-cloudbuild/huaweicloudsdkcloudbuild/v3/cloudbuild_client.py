@@ -47,8 +47,7 @@ class CloudBuildClient(Client):
 
         下载指定租户下的KeyStore文件
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DownloadKeystore
         :type request: :class:`huaweicloudsdkcloudbuild.v3.DownloadKeystoreRequest`
@@ -110,8 +109,7 @@ class CloudBuildClient(Client):
 
         执行构建任务,可传自定义参数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RunJob
         :type request: :class:`huaweicloudsdkcloudbuild.v3.RunJobRequest`
@@ -171,8 +169,7 @@ class CloudBuildClient(Client):
 
         获取构建历史详情信息接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowHistoryDetails
         :type request: :class:`huaweicloudsdkcloudbuild.v3.ShowHistoryDetailsRequest`
@@ -234,8 +231,7 @@ class CloudBuildClient(Client):
 
         查看项目下用户的构建任务列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowJobListByProjectId
         :type request: :class:`huaweicloudsdkcloudbuild.v3.ShowJobListByProjectIdRequest`
@@ -299,8 +295,7 @@ class CloudBuildClient(Client):
 
         查看任务运行状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowJobStatus
         :type request: :class:`huaweicloudsdkcloudbuild.v3.ShowJobStatusRequest`
@@ -360,8 +355,7 @@ class CloudBuildClient(Client):
 
         根据开始时间和结束时间查看构建任务的构建成功率
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowJobSuccessRatio
         :type request: :class:`huaweicloudsdkcloudbuild.v3.ShowJobSuccessRatioRequest`
@@ -425,8 +419,7 @@ class CloudBuildClient(Client):
 
         查询指定代码仓库最近一次成功的构建历史
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowLastHistory
         :type request: :class:`huaweicloudsdkcloudbuild.v3.ShowLastHistoryRequest`
@@ -488,8 +481,7 @@ class CloudBuildClient(Client):
 
         查看构建任务的构建历史列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowListHistory
         :type request: :class:`huaweicloudsdkcloudbuild.v3.ShowListHistoryRequest`
@@ -555,8 +547,7 @@ class CloudBuildClient(Client):
 
         根据开始时间和结束时间查看构建任务的构建历史列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowListPeriodHistory
         :type request: :class:`huaweicloudsdkcloudbuild.v3.ShowListPeriodHistoryRequest`

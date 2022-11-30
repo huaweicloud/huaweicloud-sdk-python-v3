@@ -47,8 +47,7 @@ class UgoAsyncClient(Client):
 
         目标库权限检查。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckPermission
@@ -109,8 +108,7 @@ class UgoAsyncClient(Client):
 
         提交语法转换。只有migration_project_status为\&quot;READY\&quot;时才能调用该接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CommitSyntaxConversion
@@ -171,8 +169,7 @@ class UgoAsyncClient(Client):
 
         提交验证。语法转换完成后，才能调用该接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CommitVerification
@@ -233,8 +230,7 @@ class UgoAsyncClient(Client):
 
         评估项目确认目标数据库类型。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ConfirmTargetDbType
@@ -295,8 +291,7 @@ class UgoAsyncClient(Client):
 
         创建评估项目。评估项目分2个阶段：采集、评估。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateEvaluationProject
@@ -357,8 +352,7 @@ class UgoAsyncClient(Client):
 
         创建迁移项目。创建迁移项目需要关联状态为“COMPLETED”的评估项目。迁移项目依次经历以下几个阶段：目标库权限检查、语法转换、验证、下载迁移失败的报告、删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateMigrationProject
@@ -419,8 +413,7 @@ class UgoAsyncClient(Client):
 
         删除评估项目。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteEvaluationProject
@@ -481,8 +474,7 @@ class UgoAsyncClient(Client):
 
         删除迁移项目。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteMigrationProject
@@ -543,8 +535,7 @@ class UgoAsyncClient(Client):
 
         下载迁移错误报告。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DownloadFailureReport
@@ -605,8 +596,7 @@ class UgoAsyncClient(Client):
 
         查询评估项目列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListEvaluationProjects
@@ -673,8 +663,7 @@ class UgoAsyncClient(Client):
 
         查询迁移项目列表。创建迁移项目之后，调用该接口，根据项目名称，获取项目ID。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListMigrationProjects
@@ -737,8 +726,7 @@ class UgoAsyncClient(Client):
 
         查询权限检查结果。permission_check_status 为 \&quot;SUCCESS\&quot; 或者 \&quot;FAILED\&quot; 时，才能调用该接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListPermissionCheckResult
@@ -803,8 +791,7 @@ class UgoAsyncClient(Client):
 
         查询单租户的配额，包括评估项目配额、迁移项目配额。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListQuotas
@@ -863,8 +850,7 @@ class UgoAsyncClient(Client):
 
         查询语法转换的进度。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSyntaxConversionProgress
@@ -925,8 +911,7 @@ class UgoAsyncClient(Client):
 
         查询验证进度。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListVerificationProgress
@@ -987,8 +972,7 @@ class UgoAsyncClient(Client):
 
         查询评估项目详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowEvaluationProjectDetail
@@ -1049,8 +1033,7 @@ class UgoAsyncClient(Client):
 
         查询评估项目状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowEvaluationProjectStatus
@@ -1111,8 +1094,7 @@ class UgoAsyncClient(Client):
 
         查询迁移项目详情。只有migration_project_status为\&quot;READY\&quot;时才能调用该接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowMigrationProjectDetail
@@ -1173,8 +1155,7 @@ class UgoAsyncClient(Client):
 
         查询迁移项目状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowMigrationProjectStatus
@@ -1235,8 +1216,7 @@ class UgoAsyncClient(Client):
 
         查询API版本信息列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApiVersions
@@ -1295,8 +1275,7 @@ class UgoAsyncClient(Client):
 
         查询指定版本号的API版本信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowApiVersionInfo
@@ -1357,8 +1336,7 @@ class UgoAsyncClient(Client):
 
         SQL语句转换。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RunSqlConversion

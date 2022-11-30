@@ -7,6 +7,7 @@ from huaweicloudsdkmrs.v2.model.add_jobs_req_v11 import AddJobsReqV11
 from huaweicloudsdkmrs.v2.model.agency_mapping import AgencyMapping
 from huaweicloudsdkmrs.v2.model.agency_mapping_array import AgencyMappingArray
 from huaweicloudsdkmrs.v2.model.auto_scaling_policy import AutoScalingPolicy
+from huaweicloudsdkmrs.v2.model.auto_scaling_policy_v2 import AutoScalingPolicyV2
 from huaweicloudsdkmrs.v2.model.batch_delete_jobs_request import BatchDeleteJobsRequest
 from huaweicloudsdkmrs.v2.model.batch_delete_jobs_response import BatchDeleteJobsResponse
 from huaweicloudsdkmrs.v2.model.bootstrap_script import BootstrapScript
@@ -31,6 +32,8 @@ from huaweicloudsdkmrs.v2.model.rule import Rule
 from huaweicloudsdkmrs.v2.model.scale_script import ScaleScript
 from huaweicloudsdkmrs.v2.model.show_agency_mapping_request import ShowAgencyMappingRequest
 from huaweicloudsdkmrs.v2.model.show_agency_mapping_response import ShowAgencyMappingResponse
+from huaweicloudsdkmrs.v2.model.show_auto_scaling_policy_request import ShowAutoScalingPolicyRequest
+from huaweicloudsdkmrs.v2.model.show_auto_scaling_policy_response import ShowAutoScalingPolicyResponse
 from huaweicloudsdkmrs.v2.model.show_hdfs_file_list_request import ShowHdfsFileListRequest
 from huaweicloudsdkmrs.v2.model.show_hdfs_file_list_response import ShowHdfsFileListResponse
 from huaweicloudsdkmrs.v2.model.show_job_exe_list_new_request import ShowJobExeListNewRequest
@@ -48,4 +51,7 @@ from huaweicloudsdkmrs.v2.model.tag import Tag
 from huaweicloudsdkmrs.v2.model.trigger import Trigger
 from huaweicloudsdkmrs.v2.model.update_agency_mapping_request import UpdateAgencyMappingRequest
 from huaweicloudsdkmrs.v2.model.update_agency_mapping_response import UpdateAgencyMappingResponse
+from huaweicloudsdkmrs.v2.model.update_cluster_name_request import UpdateClusterNameRequest
+from huaweicloudsdkmrs.v2.model.update_cluster_name_response import UpdateClusterNameResponse
+from huaweicloudsdkmrs.v2.model.update_cluster_req import UpdateClusterReq
 from huaweicloudsdkmrs.v2.model.volume import Volume

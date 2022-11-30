@@ -47,8 +47,7 @@ class ProjectManClient(Client):
 
         AGC调用 当前用户申请加入项目, 申请的用户id写在header中
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddApplyJoinProjectForAgc
         :type request: :class:`huaweicloudsdkprojectman.v4.AddApplyJoinProjectForAgcRequest`
@@ -112,8 +111,7 @@ class ProjectManClient(Client):
 
         添加项目成员,可以添加跨租户成员
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddMemberV4
         :type request: :class:`huaweicloudsdkprojectman.v4.AddMemberV4Request`
@@ -175,8 +173,7 @@ class ProjectManClient(Client):
 
         批量添加项目成员，只能添加和项目创建者同一租户下的成员，不正确的用户id会略过，添加的用户超过权限的，默认角色设置为7
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchAddMembersV4
         :type request: :class:`huaweicloudsdkprojectman.v4.BatchAddMembersV4Request`
@@ -238,8 +235,7 @@ class ProjectManClient(Client):
 
         批量删除项目成员
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteMembersV4
         :type request: :class:`huaweicloudsdkprojectman.v4.BatchDeleteMembersV4Request`
@@ -301,8 +297,7 @@ class ProjectManClient(Client):
 
         拥有te_admin角色的用户可以更新其他用户的昵称
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchUpdateChildNickNames
         :type request: :class:`huaweicloudsdkprojectman.v4.BatchUpdateChildNickNamesRequest`
@@ -362,8 +357,7 @@ class ProjectManClient(Client):
 
         检查项目名称是否存在
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckProjectNameV4
         :type request: :class:`huaweicloudsdkprojectman.v4.CheckProjectNameV4Request`
@@ -423,8 +417,7 @@ class ProjectManClient(Client):
 
         创建项目
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateProjectV4
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateProjectV4Request`
@@ -484,8 +477,7 @@ class ProjectManClient(Client):
 
         删除项目
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteProjectV4
         :type request: :class:`huaweicloudsdkprojectman.v4.DeleteProjectV4Request`
@@ -545,8 +537,7 @@ class ProjectManClient(Client):
 
         获取租户没有加入的项目
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDomainNotAddedProjectsV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListDomainNotAddedProjectsV4Request`
@@ -608,8 +599,7 @@ class ProjectManClient(Client):
 
         获取bug统计信息，按模块统计
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProjectBugStaticsV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectBugStaticsV4Request`
@@ -669,8 +659,7 @@ class ProjectManClient(Client):
 
         获取需求统计信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProjectDemandStaticV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectDemandStaticV4Request`
@@ -730,8 +719,7 @@ class ProjectManClient(Client):
 
         获取项目成员列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProjectMembersV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectMembersV4Request`
@@ -795,8 +783,7 @@ class ProjectManClient(Client):
 
         查询项目列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProjectsV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectsV4Request`
@@ -868,8 +855,7 @@ class ProjectManClient(Client):
 
         分页查询看板项目下工作项的状态历史记录
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListWorkitemStatusRecordsV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListWorkitemStatusRecordsV4Request`
@@ -933,8 +919,7 @@ class ProjectManClient(Client):
 
         查询看板项目下的工作项
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListWorkitems
         :type request: :class:`huaweicloudsdkprojectman.v4.ListWorkitemsRequest`
@@ -1000,8 +985,7 @@ class ProjectManClient(Client):
 
         项目成员主动退出项目，项目创建者不能退出
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RemoveProject
         :type request: :class:`huaweicloudsdkprojectman.v4.RemoveProjectRequest`
@@ -1061,8 +1045,7 @@ class ProjectManClient(Client):
 
         查询缺陷密度
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowBugDensityV2
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowBugDensityV2Request`
@@ -1124,8 +1107,7 @@ class ProjectManClient(Client):
 
         查询人均bug
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowBugsPerDeveloper
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowBugsPerDeveloperRequest`
@@ -1187,8 +1169,7 @@ class ProjectManClient(Client):
 
         查询需求按时完成率
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowCompletionRate
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowCompletionRateRequest`
@@ -1250,8 +1231,7 @@ class ProjectManClient(Client):
 
         获取当前用户信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowCurUserInfo
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowCurUserInfoRequest`
@@ -1309,8 +1289,7 @@ class ProjectManClient(Client):
 
         获取用户在项目中的角色
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowCurUserRole
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowCurUserRoleRequest`
@@ -1370,8 +1349,7 @@ class ProjectManClient(Client):
 
         获取项目详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowProjectInfoV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowProjectInfoV4Request`
@@ -1431,8 +1409,7 @@ class ProjectManClient(Client):
 
         获取项目概览
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowProjectSummaryV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowProjectSummaryV4Request`
@@ -1492,8 +1469,7 @@ class ProjectManClient(Client):
 
         查询看板项目的工作项流转配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowWorkItemWrokflowConfig
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowWorkItemWrokflowConfigRequest`
@@ -1555,8 +1531,7 @@ class ProjectManClient(Client):
 
         更新成员在项目中的角色
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateMembesRoleV4
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateMembesRoleV4Request`
@@ -1618,8 +1593,7 @@ class ProjectManClient(Client):
 
         更新用户昵称
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateNickNameV4
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateNickNameV4Request`
@@ -1679,8 +1653,7 @@ class ProjectManClient(Client):
 
         更新项目
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateProjectV4
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateProjectV4Request`
@@ -1742,8 +1715,7 @@ class ProjectManClient(Client):
 
         批量删除工作项
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteIssuesV4
         :type request: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIssuesV4Request`
@@ -1805,8 +1777,7 @@ class ProjectManClient(Client):
 
         批量删除项目的迭代
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteIterationsV4
         :type request: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIterationsV4Request`
@@ -1868,8 +1839,7 @@ class ProjectManClient(Client):
 
         取消领域与项目的关联关系
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CancelProjectDomain
         :type request: :class:`huaweicloudsdkprojectman.v4.CancelProjectDomainRequest`
@@ -1931,8 +1901,7 @@ class ProjectManClient(Client):
 
         创建工作项类型自定义字段
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateCustomfields
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateCustomfieldsRequest`
@@ -1994,8 +1963,7 @@ class ProjectManClient(Client):
 
         创建工作项
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateIssueV4
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateIssueV4Request`
@@ -2057,8 +2025,7 @@ class ProjectManClient(Client):
 
         创建Scrum项目迭代
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateIterationV4
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateIterationV4Request`
@@ -2120,8 +2087,7 @@ class ProjectManClient(Client):
 
         查询项目的领域列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateProjectDomain
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateProjectDomainRequest`
@@ -2183,8 +2149,7 @@ class ProjectManClient(Client):
 
         查询项目的模块列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateProjectModule
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateProjectModuleRequest`
@@ -2246,8 +2211,7 @@ class ProjectManClient(Client):
 
         拥有IAM细粒度权限（projectmanConfig:systemSettingField:set）且在devcloud项目中有创建工作项的权限的用户可以设置工作项的创建者
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateSystemIssueV4
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateSystemIssueV4Request`
@@ -2309,8 +2273,7 @@ class ProjectManClient(Client):
 
         删除工作项
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteIssueV4
         :type request: :class:`huaweicloudsdkprojectman.v4.DeleteIssueV4Request`
@@ -2372,8 +2335,7 @@ class ProjectManClient(Client):
 
         删除项目迭代
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteIterationV4
         :type request: :class:`huaweicloudsdkprojectman.v4.DeleteIterationV4Request`
@@ -2435,8 +2397,7 @@ class ProjectManClient(Client):
 
         删除项目的模块
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteProjectModule
         :type request: :class:`huaweicloudsdkprojectman.v4.DeleteProjectModuleRequest`
@@ -2498,8 +2459,7 @@ class ProjectManClient(Client):
 
         下载图片
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DownloadImageFile
         :type request: :class:`huaweicloudsdkprojectman.v4.DownloadImageFileRequest`
@@ -2561,8 +2521,7 @@ class ProjectManClient(Client):
 
         查询当前工作项已经关联的工作项
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAssociatedIssues
         :type request: :class:`huaweicloudsdkprojectman.v4.ListAssociatedIssuesRequest`
@@ -2628,8 +2587,7 @@ class ProjectManClient(Client):
 
         查询关联用例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAssociatedTestCases
         :type request: :class:`huaweicloudsdkprojectman.v4.ListAssociatedTestCasesRequest`
@@ -2695,8 +2653,7 @@ class ProjectManClient(Client):
 
         查询当前工作项已经关联的关联Wiki
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAssociatedWikis
         :type request: :class:`huaweicloudsdkprojectman.v4.ListAssociatedWikisRequest`
@@ -2762,8 +2719,7 @@ class ProjectManClient(Client):
 
         获取子工作项
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListChildIssuesV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListChildIssuesV4Request`
@@ -2825,8 +2781,7 @@ class ProjectManClient(Client):
 
         查询当前工作项已经关联的代码提交记录 / 分支创建记录
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListIssueAssociatedCommits
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssueAssociatedCommitsRequest`
@@ -2894,8 +2849,7 @@ class ProjectManClient(Client):
 
         获取工作项的评论
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListIssueCommentsV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssueCommentsV4Request`
@@ -2961,8 +2915,7 @@ class ProjectManClient(Client):
 
         查询Scrum工作项自定义字段的可选列表,符合custom_fields或者names条件的都返回,2个值都不传，返回所有的自定义字段列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListIssueCustomFields
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssueCustomFieldsRequest`
@@ -3024,8 +2977,7 @@ class ProjectManClient(Client):
 
         获取工作项历史记录
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListIssueRecordsV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssueRecordsV4Request`
@@ -3091,8 +3043,7 @@ class ProjectManClient(Client):
 
         工作项类型id, 分页参数，创建时间查询项目的工作项
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListIssuesSfV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssuesSfV4Request`
@@ -3162,8 +3113,7 @@ class ProjectManClient(Client):
 
         根据筛选条件查询工作项
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListIssuesV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssuesV4Request`
@@ -3225,8 +3175,7 @@ class ProjectManClient(Client):
 
         查看迭代历史记录
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListIterationHistories
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIterationHistoriesRequest`
@@ -3290,8 +3239,7 @@ class ProjectManClient(Client):
 
         查询项目的领域列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProjectDomains
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectDomainsRequest`
@@ -3355,8 +3303,7 @@ class ProjectManClient(Client):
 
         查询项目下所有工作项的历史记录
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProjectIssuesRecordsV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectIssuesRecordsV4Request`
@@ -3422,8 +3369,7 @@ class ProjectManClient(Client):
 
         获取项目迭代
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProjectIterationsV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectIterationsV4Request`
@@ -3487,8 +3433,7 @@ class ProjectManClient(Client):
 
         查询项目的模块列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProjectModules
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectModulesRequest`
@@ -3552,8 +3497,7 @@ class ProjectManClient(Client):
 
         按用户查询工时（多项目）
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProjectWorkHours
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectWorkHoursRequest`
@@ -3613,8 +3557,7 @@ class ProjectManClient(Client):
 
         查询项目的状态列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListScrumProjectStatuses
         :type request: :class:`huaweicloudsdkprojectman.v4.ListScrumProjectStatusesRequest`
@@ -3680,8 +3623,7 @@ class ProjectManClient(Client):
 
         获取工作项的完成率
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowIssueCompletionRate
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowIssueCompletionRateRequest`
@@ -3741,8 +3683,7 @@ class ProjectManClient(Client):
 
         查询工作项详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowIssueV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowIssueV4Request`
@@ -3804,8 +3745,7 @@ class ProjectManClient(Client):
 
         查询Scrum项目的工作项流转配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowIssuesWrokFlowConfig
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowIssuesWrokFlowConfigRequest`
@@ -3867,8 +3807,7 @@ class ProjectManClient(Client):
 
         查看迭代详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowIterationV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowIterationV4Request`
@@ -3928,8 +3867,7 @@ class ProjectManClient(Client):
 
         按用户查询工时（单项目）
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowProjectWorkHours
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowProjectWorkHoursRequest`
@@ -3991,8 +3929,7 @@ class ProjectManClient(Client):
 
         更新工作项
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateIssueV4
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateIssueV4Request`
@@ -4056,8 +3993,7 @@ class ProjectManClient(Client):
 
         更新Scrum项目迭代
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateIterationV4
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateIterationV4Request`
@@ -4121,8 +4057,7 @@ class ProjectManClient(Client):
 
         更新项目的领域
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateProjectDomain
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateProjectDomainRequest`
@@ -4186,8 +4121,7 @@ class ProjectManClient(Client):
 
         更新项目的模块
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateProjectModule
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateProjectModuleRequest`
@@ -4251,8 +4185,7 @@ class ProjectManClient(Client):
 
         上传工作项附件
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UploadAttachments
         :type request: :class:`huaweicloudsdkprojectman.v4.UploadAttachmentsRequest`
@@ -4318,8 +4251,7 @@ class ProjectManClient(Client):
 
         上传图片
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UploadIssueImg
         :type request: :class:`huaweicloudsdkprojectman.v4.UploadIssueImgRequest`

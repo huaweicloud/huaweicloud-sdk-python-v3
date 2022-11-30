@@ -47,8 +47,7 @@ class OsmAsyncClient(Client):
 
         验证授权主机密码是否正确
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckHosts
@@ -117,8 +116,7 @@ class OsmAsyncClient(Client):
 
         是否需要验证
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckNeedVerify
@@ -189,8 +187,7 @@ class OsmAsyncClient(Client):
 
         验证联系方式
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckVerifyCodes
@@ -257,8 +254,7 @@ class OsmAsyncClient(Client):
 
         租户确认授权
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ConfirmAuthorizations
@@ -327,8 +323,7 @@ class OsmAsyncClient(Client):
 
         提交工单扩展参数
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateCaseExtendsParam
@@ -397,8 +392,7 @@ class OsmAsyncClient(Client):
 
         添加工单关联标签接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateCaseLabels
@@ -468,8 +462,7 @@ class OsmAsyncClient(Client):
 
         创建工单
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateCases
@@ -540,8 +533,7 @@ class OsmAsyncClient(Client):
 
         创建标签
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateLabels
@@ -608,8 +600,7 @@ class OsmAsyncClient(Client):
 
         提交留言
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateMessages
@@ -678,8 +669,7 @@ class OsmAsyncClient(Client):
 
         创建授权
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreatePrivileges
@@ -746,8 +736,7 @@ class OsmAsyncClient(Client):
 
         创建关联，一个工单最多支持3个关联
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateRelations
@@ -816,8 +805,7 @@ class OsmAsyncClient(Client):
 
         提交评分
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateScores
@@ -886,8 +874,7 @@ class OsmAsyncClient(Client):
 
         删除附件
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteAccessories
@@ -954,8 +941,7 @@ class OsmAsyncClient(Client):
 
         删除指定工单关联标签接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteCaseLabels
@@ -1025,8 +1011,7 @@ class OsmAsyncClient(Client):
 
         删除标签，同时会删除工单与标签关联关系
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteLabels
@@ -1093,8 +1078,7 @@ class OsmAsyncClient(Client):
 
         删除关联
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteRelation
@@ -1163,8 +1147,7 @@ class OsmAsyncClient(Client):
 
         下载附件
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DownloadAccessories
@@ -1233,8 +1216,7 @@ class OsmAsyncClient(Client):
 
         工单导出
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DownloadCases
@@ -1326,8 +1308,7 @@ class OsmAsyncClient(Client):
 
         返回图片内容，用于页面直接展示
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DownloadImages
@@ -1396,8 +1377,7 @@ class OsmAsyncClient(Client):
 
         租户批量获取下载链接
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAccessoryAccessUrls
@@ -1467,8 +1447,7 @@ class OsmAsyncClient(Client):
 
         查询委托
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAgencies
@@ -1533,8 +1512,7 @@ class OsmAsyncClient(Client):
 
         查询国家码，用于提交工单页面填写联系方式使用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAreaCodes
@@ -1599,8 +1577,7 @@ class OsmAsyncClient(Client):
 
         查询授权列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAuthorizations
@@ -1679,8 +1656,7 @@ class OsmAsyncClient(Client):
 
         查询工单类目列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListCaseCategories
@@ -1745,8 +1721,7 @@ class OsmAsyncClient(Client):
 
         查询工单抄送邮箱
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListCaseCcEmails
@@ -1811,8 +1786,7 @@ class OsmAsyncClient(Client):
 
         统计各状态工单数量
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListCaseCounts
@@ -1879,8 +1853,7 @@ class OsmAsyncClient(Client):
 
         查询工单关联标签接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListCaseLabels
@@ -1947,8 +1920,7 @@ class OsmAsyncClient(Client):
 
         查询工单限制，比如抄送邮箱个数等
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListCaseLimits
@@ -2013,8 +1985,7 @@ class OsmAsyncClient(Client):
 
         查询工单操作日志
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListCaseOperateLogs
@@ -2087,8 +2058,7 @@ class OsmAsyncClient(Client):
 
         查询工单配额
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListCaseQuotas
@@ -2157,8 +2127,7 @@ class OsmAsyncClient(Client):
 
         查询问题类型对应模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListCaseTemplates
@@ -2225,8 +2194,7 @@ class OsmAsyncClient(Client):
 
         查询工单列表接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListCases
@@ -2319,8 +2287,7 @@ class OsmAsyncClient(Client):
 
         查询用户关联的region
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListCustomersRegions
@@ -2385,8 +2352,7 @@ class OsmAsyncClient(Client):
 
         提单时，根据不同的产品或者问题类型，会存在不同的一些附加参数填写
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListExtendsParams
@@ -2457,8 +2423,7 @@ class OsmAsyncClient(Client):
 
         查询已验证的列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListHasVerifiedContacts
@@ -2541,8 +2506,7 @@ class OsmAsyncClient(Client):
 
         查询堡垒机历史操作记录
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListHistoryOperateLogs
@@ -2621,8 +2585,7 @@ class OsmAsyncClient(Client):
 
         查询堡垒机历史会话列
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListHistorySessions
@@ -2697,8 +2660,7 @@ class OsmAsyncClient(Client):
 
         查询标签
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListLabels
@@ -2771,8 +2733,7 @@ class OsmAsyncClient(Client):
 
         查询留言
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListMessages
@@ -2845,8 +2806,7 @@ class OsmAsyncClient(Client):
 
         查询更多留言
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListMoreInstantMessages
@@ -2921,8 +2881,7 @@ class OsmAsyncClient(Client):
 
         轮询查询即时消息接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListNewInstantMessages
@@ -2994,8 +2953,7 @@ class OsmAsyncClient(Client):
 
         查询工单权限
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListPrivileges
@@ -3062,8 +3020,7 @@ class OsmAsyncClient(Client):
 
         提交工单时，选择产品类型之后选择对应的问题列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListProblemTypes
@@ -3130,8 +3087,7 @@ class OsmAsyncClient(Client):
 
         查询产品类型列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListProductCategories
@@ -3198,8 +3154,7 @@ class OsmAsyncClient(Client):
 
         查询区域列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRegions
@@ -3264,8 +3219,7 @@ class OsmAsyncClient(Client):
 
         查询工单的关联，返回关联工单的简要信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRelation
@@ -3332,8 +3286,7 @@ class OsmAsyncClient(Client):
 
         工单满意度分类列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSatisfactionDimensions
@@ -3398,8 +3351,7 @@ class OsmAsyncClient(Client):
 
         查询问题严重性列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSeverities
@@ -3468,8 +3420,7 @@ class OsmAsyncClient(Client):
 
         查询子用户信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSubCustomers
@@ -3538,8 +3489,7 @@ class OsmAsyncClient(Client):
 
         查询堡垒机文件传输记录
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTransportHistories
@@ -3618,8 +3568,7 @@ class OsmAsyncClient(Client):
 
         查询未读消息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListUnreadNewInstantMessages
@@ -3689,8 +3638,7 @@ class OsmAsyncClient(Client):
 
         撤回留言
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RevokeMessage
@@ -3759,8 +3707,7 @@ class OsmAsyncClient(Client):
 
         获取验证码
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SendVerifyCodes
@@ -3827,8 +3774,7 @@ class OsmAsyncClient(Client):
 
         查询附件的一下限制，比如大小，数量，文件类型
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowAccessoryLimits
@@ -3893,8 +3839,7 @@ class OsmAsyncClient(Client):
 
         查询授权详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowAuthorizationDetail
@@ -3963,8 +3908,7 @@ class OsmAsyncClient(Client):
 
         查询工单详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowCaseDetail
@@ -4033,8 +3977,7 @@ class OsmAsyncClient(Client):
 
         查询工单扩展参数
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowCaseExtendsParam
@@ -4103,8 +4046,7 @@ class OsmAsyncClient(Client):
 
         查询某个工单状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowCaseStatus
@@ -4171,8 +4113,7 @@ class OsmAsyncClient(Client):
 
         查询提单权限
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowCustomerPrivilegePolicy
@@ -4237,8 +4178,7 @@ class OsmAsyncClient(Client):
 
         查看最新发布版本协议详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowLatestPublishedAgreement
@@ -4305,8 +4245,7 @@ class OsmAsyncClient(Client):
 
         查询伙伴工单权限
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowPartnersCasesPrivilege
@@ -4371,8 +4310,7 @@ class OsmAsyncClient(Client):
 
         查询关联伙伴服务信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowPartnersServiceInfo
@@ -4441,8 +4379,7 @@ class OsmAsyncClient(Client):
 
         查询用户是否签署最新协议
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowSignedLatestPublishedAgreement
@@ -4509,8 +4446,7 @@ class OsmAsyncClient(Client):
 
         签署协议
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SignPublishedAgreement
@@ -4579,8 +4515,7 @@ class OsmAsyncClient(Client):
 
         拒绝|撤销授权
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateAuthorizations
@@ -4651,8 +4586,7 @@ class OsmAsyncClient(Client):
 
         修改联系方式
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateCaseContactInfo
@@ -4721,8 +4655,7 @@ class OsmAsyncClient(Client):
 
         工单操作
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateCases
@@ -4793,8 +4726,7 @@ class OsmAsyncClient(Client):
 
         修改标签
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateLabels
@@ -4863,8 +4795,7 @@ class OsmAsyncClient(Client):
 
         设置消息已读
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateNewInstantMessagesRead
@@ -4933,8 +4864,7 @@ class OsmAsyncClient(Client):
 
         上传附件给SDK使用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UploadJsonAccessories

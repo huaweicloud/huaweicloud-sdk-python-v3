@@ -47,8 +47,7 @@ class HssClient(Client):
 
         查入侵事件列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEvents
         :type request: :class:`huaweicloudsdkhss.v1.ListEventsRequest`
@@ -121,8 +120,7 @@ class HssClient(Client):
 
         查询弹性云服务器状态列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListHosts
         :type request: :class:`huaweicloudsdkhss.v1.ListHostsRequest`

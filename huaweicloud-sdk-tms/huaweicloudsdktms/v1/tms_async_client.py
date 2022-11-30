@@ -47,8 +47,7 @@ class TmsAsyncClient(Client):
 
         用于创建预定标签。用户创建预定义标签后，可以使用预定义标签来给资源创建标签。该接口支持幂等特性和处理批量数据。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreatePredefineTags
@@ -109,8 +108,7 @@ class TmsAsyncClient(Client):
 
         用于删除预定标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeletePredefineTags
@@ -171,8 +169,7 @@ class TmsAsyncClient(Client):
 
         查询标签管理服务的API版本列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApiVersions
@@ -231,8 +228,7 @@ class TmsAsyncClient(Client):
 
         用于查询预定义标签列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListPredefineTags
@@ -303,8 +299,7 @@ class TmsAsyncClient(Client):
 
         查询标签管理支持的服务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListProviders
@@ -371,8 +366,7 @@ class TmsAsyncClient(Client):
 
         查询指定的标签管理服务API版本号详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowApiVersion
@@ -433,8 +427,7 @@ class TmsAsyncClient(Client):
 
         查询标签的配额信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTagQuota
@@ -493,8 +486,7 @@ class TmsAsyncClient(Client):
 
         修改预定义标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdatePredefineTags

@@ -3,6 +3,7 @@
 from __future__ import absolute_import
 
 # import models into model package
+from huaweicloudsdkmpc.v1.model.agencies_task_req import AgenciesTaskReq
 from huaweicloudsdkmpc.v1.model.animated_graphics_output_param import AnimatedGraphicsOutputParam
 from huaweicloudsdkmpc.v1.model.animated_graphics_task import AnimatedGraphicsTask
 from huaweicloudsdkmpc.v1.model.audio import Audio
@@ -13,6 +14,7 @@ from huaweicloudsdkmpc.v1.model.audio_track import AudioTrack
 from huaweicloudsdkmpc.v1.model.av_parameters import AvParameters
 from huaweicloudsdkmpc.v1.model.basic_task_info import BasicTaskInfo
 from huaweicloudsdkmpc.v1.model.basic_watermark import BasicWatermark
+from huaweicloudsdkmpc.v1.model.bucket_authorized_req import BucketAuthorizedReq
 from huaweicloudsdkmpc.v1.model.cancel_remux_task_request import CancelRemuxTaskRequest
 from huaweicloudsdkmpc.v1.model.cancel_remux_task_response import CancelRemuxTaskResponse
 from huaweicloudsdkmpc.v1.model.clip_info import ClipInfo
@@ -23,6 +25,8 @@ from huaweicloudsdkmpc.v1.model.common_query_task_rsp import CommonQueryTaskRsp
 from huaweicloudsdkmpc.v1.model.common_task import CommonTask
 from huaweicloudsdkmpc.v1.model.common_task_meta import CommonTaskMeta
 from huaweicloudsdkmpc.v1.model.concat_info import ConcatInfo
+from huaweicloudsdkmpc.v1.model.create_agencies_task_request import CreateAgenciesTaskRequest
+from huaweicloudsdkmpc.v1.model.create_agencies_task_response import CreateAgenciesTaskResponse
 from huaweicloudsdkmpc.v1.model.create_animated_graphics_task_req import CreateAnimatedGraphicsTaskReq
 from huaweicloudsdkmpc.v1.model.create_animated_graphics_task_request import CreateAnimatedGraphicsTaskRequest
 from huaweicloudsdkmpc.v1.model.create_animated_graphics_task_response import CreateAnimatedGraphicsTaskResponse
@@ -92,6 +96,8 @@ from huaweicloudsdkmpc.v1.model.delete_template_request import DeleteTemplateReq
 from huaweicloudsdkmpc.v1.model.delete_template_response import DeleteTemplateResponse
 from huaweicloudsdkmpc.v1.model.delete_thumbnails_task_request import DeleteThumbnailsTaskRequest
 from huaweicloudsdkmpc.v1.model.delete_thumbnails_task_response import DeleteThumbnailsTaskResponse
+from huaweicloudsdkmpc.v1.model.delete_transcoding_task_by_console_request import DeleteTranscodingTaskByConsoleRequest
+from huaweicloudsdkmpc.v1.model.delete_transcoding_task_by_console_response import DeleteTranscodingTaskByConsoleResponse
 from huaweicloudsdkmpc.v1.model.delete_transcoding_task_request import DeleteTranscodingTaskRequest
 from huaweicloudsdkmpc.v1.model.delete_transcoding_task_response import DeleteTranscodingTaskResponse
 from huaweicloudsdkmpc.v1.model.delete_watermark_template_request import DeleteWatermarkTemplateRequest
@@ -109,6 +115,10 @@ from huaweicloudsdkmpc.v1.model.hls_encrypt import HlsEncrypt
 from huaweicloudsdkmpc.v1.model.image_watermark import ImageWatermark
 from huaweicloudsdkmpc.v1.model.image_watermark_setting import ImageWatermarkSetting
 from huaweicloudsdkmpc.v1.model.input_setting import InputSetting
+from huaweicloudsdkmpc.v1.model.list_all_buckets_request import ListAllBucketsRequest
+from huaweicloudsdkmpc.v1.model.list_all_buckets_response import ListAllBucketsResponse
+from huaweicloudsdkmpc.v1.model.list_all_obs_obj_list_request import ListAllObsObjListRequest
+from huaweicloudsdkmpc.v1.model.list_all_obs_obj_list_response import ListAllObsObjListResponse
 from huaweicloudsdkmpc.v1.model.list_animated_graphics_task_request import ListAnimatedGraphicsTaskRequest
 from huaweicloudsdkmpc.v1.model.list_animated_graphics_task_response import ListAnimatedGraphicsTaskResponse
 from huaweicloudsdkmpc.v1.model.list_editing_job_request import ListEditingJobRequest
@@ -121,12 +131,18 @@ from huaweicloudsdkmpc.v1.model.list_media_process_task_request import ListMedia
 from huaweicloudsdkmpc.v1.model.list_media_process_task_response import ListMediaProcessTaskResponse
 from huaweicloudsdkmpc.v1.model.list_merge_channels_task_request import ListMergeChannelsTaskRequest
 from huaweicloudsdkmpc.v1.model.list_merge_channels_task_response import ListMergeChannelsTaskResponse
+from huaweicloudsdkmpc.v1.model.list_notify_event_request import ListNotifyEventRequest
+from huaweicloudsdkmpc.v1.model.list_notify_event_response import ListNotifyEventResponse
+from huaweicloudsdkmpc.v1.model.list_notify_smn_topic_config_request import ListNotifySmnTopicConfigRequest
+from huaweicloudsdkmpc.v1.model.list_notify_smn_topic_config_response import ListNotifySmnTopicConfigResponse
 from huaweicloudsdkmpc.v1.model.list_quality_enhance_default_template_request import ListQualityEnhanceDefaultTemplateRequest
 from huaweicloudsdkmpc.v1.model.list_quality_enhance_default_template_response import ListQualityEnhanceDefaultTemplateResponse
 from huaweicloudsdkmpc.v1.model.list_remux_task_request import ListRemuxTaskRequest
 from huaweicloudsdkmpc.v1.model.list_remux_task_response import ListRemuxTaskResponse
 from huaweicloudsdkmpc.v1.model.list_reset_tracks_task_request import ListResetTracksTaskRequest
 from huaweicloudsdkmpc.v1.model.list_reset_tracks_task_response import ListResetTracksTaskResponse
+from huaweicloudsdkmpc.v1.model.list_stat_summary_request import ListStatSummaryRequest
+from huaweicloudsdkmpc.v1.model.list_stat_summary_response import ListStatSummaryResponse
 from huaweicloudsdkmpc.v1.model.list_template_group_request import ListTemplateGroupRequest
 from huaweicloudsdkmpc.v1.model.list_template_group_response import ListTemplateGroupResponse
 from huaweicloudsdkmpc.v1.model.list_template_request import ListTemplateRequest
@@ -157,7 +173,13 @@ from huaweicloudsdkmpc.v1.model.mul_input_file_info import MulInputFileInfo
 from huaweicloudsdkmpc.v1.model.multi_audio import MultiAudio
 from huaweicloudsdkmpc.v1.model.multi_concat_info import MultiConcatInfo
 from huaweicloudsdkmpc.v1.model.multi_task_info import MultiTaskInfo
+from huaweicloudsdkmpc.v1.model.notification import Notification
+from huaweicloudsdkmpc.v1.model.notification_config_req import NotificationConfigReq
+from huaweicloudsdkmpc.v1.model.notify_smn_topic_config_request import NotifySmnTopicConfigRequest
+from huaweicloudsdkmpc.v1.model.notify_smn_topic_config_response import NotifySmnTopicConfigResponse
+from huaweicloudsdkmpc.v1.model.obs_bucket import ObsBucket
 from huaweicloudsdkmpc.v1.model.obs_obj_info import ObsObjInfo
+from huaweicloudsdkmpc.v1.model.obs_object import ObsObject
 from huaweicloudsdkmpc.v1.model.origin_para import OriginPara
 from huaweicloudsdkmpc.v1.model.output_file_info import OutputFileInfo
 from huaweicloudsdkmpc.v1.model.output_policy import OutputPolicy
@@ -176,7 +198,10 @@ from huaweicloudsdkmpc.v1.model.remux_output_param import RemuxOutputParam
 from huaweicloudsdkmpc.v1.model.remux_retry_req import RemuxRetryReq
 from huaweicloudsdkmpc.v1.model.remux_task import RemuxTask
 from huaweicloudsdkmpc.v1.model.reset_tracks_task_info import ResetTracksTaskInfo
+from huaweicloudsdkmpc.v1.model.show_agencies_task_request import ShowAgenciesTaskRequest
+from huaweicloudsdkmpc.v1.model.show_agencies_task_response import ShowAgenciesTaskResponse
 from huaweicloudsdkmpc.v1.model.source_info import SourceInfo
+from huaweicloudsdkmpc.v1.model.stat_summary import StatSummary
 from huaweicloudsdkmpc.v1.model.sub_audio_file import SubAudioFile
 from huaweicloudsdkmpc.v1.model.subtitle import Subtitle
 from huaweicloudsdkmpc.v1.model.task_detail_info import TaskDetailInfo
@@ -191,6 +216,8 @@ from huaweicloudsdkmpc.v1.model.tracks_info import TracksInfo
 from huaweicloudsdkmpc.v1.model.trans_template import TransTemplate
 from huaweicloudsdkmpc.v1.model.trans_template_group import TransTemplateGroup
 from huaweicloudsdkmpc.v1.model.transcode_detail import TranscodeDetail
+from huaweicloudsdkmpc.v1.model.update_bucket_authorized_request import UpdateBucketAuthorizedRequest
+from huaweicloudsdkmpc.v1.model.update_bucket_authorized_response import UpdateBucketAuthorizedResponse
 from huaweicloudsdkmpc.v1.model.update_quality_enhance_template_req import UpdateQualityEnhanceTemplateReq
 from huaweicloudsdkmpc.v1.model.update_quality_enhance_template_request import UpdateQualityEnhanceTemplateRequest
 from huaweicloudsdkmpc.v1.model.update_quality_enhance_template_response import UpdateQualityEnhanceTemplateResponse

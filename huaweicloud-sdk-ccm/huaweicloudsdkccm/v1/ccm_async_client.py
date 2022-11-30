@@ -47,8 +47,7 @@ class CcmAsyncClient(Client):
 
         申请证书。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateCertificate
@@ -110,8 +109,7 @@ class CcmAsyncClient(Client):
         用户给PCA创建OBS委托授权，用于访问OBS桶，更新吊销列表。
         &gt; 用户所使用账号token需要具备安全管理员（secu_admin）权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateCertificateAuthorityObsAgency
@@ -189,8 +187,7 @@ class CcmAsyncClient(Client):
           - 除了导出时不包含密钥信息（密钥在用户端），其余用法与其它私有证书一致。
         &gt; 注：需要使用“\\r\\n”或“\\n”代替换行符，将CSR转换成一串字符，可参考示例请求。注：目前，证书的组织信息、公钥算法以及公钥内容等均来自CSR文件，暂不支持API传入。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateCertificateByCsr
@@ -251,8 +248,7 @@ class CcmAsyncClient(Client):
 
         删除证书。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteCertificate
@@ -327,8 +323,7 @@ class CcmAsyncClient(Client):
               - type &#x3D; \&quot;**IIS**\&quot;或\&quot;**TOMCAT**\&quot;时，暂时未定义。
         &gt; 只有当证书状态为“已签发”时，可进行导出操作。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ExportCertificate
@@ -391,8 +386,7 @@ class CcmAsyncClient(Client):
 
         查询私有证书列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListCertificate
@@ -464,8 +458,7 @@ class CcmAsyncClient(Client):
         查询OBS桶列表。
         &gt; 只有用户创建了委托授权，方可使用此接口。创建委托授权参见本文档：**证书吊销处理&gt;创建委托**。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListCertificateAuthorityObsBucket
@@ -524,8 +517,7 @@ class CcmAsyncClient(Client):
 
         解析CSR。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ParseCertificateSigningRequest
@@ -587,8 +579,7 @@ class CcmAsyncClient(Client):
         吊销证书。
         &gt; 注：当不想填写吊销理由时，请求body体请置为\&quot;**{}**\&quot;，否则将会报错。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RevokeCertificate
@@ -651,8 +642,7 @@ class CcmAsyncClient(Client):
 
         查询证书详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowCertificate
@@ -714,8 +704,7 @@ class CcmAsyncClient(Client):
         查看是否具有委托权限。
         &gt; 用户所使用账号token需要具备安全管理员（secu_admin）权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowCertificateAuthorityObsAgency
@@ -774,8 +763,7 @@ class CcmAsyncClient(Client):
 
         查询私有证书配额。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowCertificateQuota
@@ -837,8 +825,7 @@ class CcmAsyncClient(Client):
         - 创建从属CA，并需要直接激活该证书，根据参数介绍中，填写必选值；
         - 创建从属CA，不需要直接激活该证书，请求body中只需要缺少此三个参数之一即可：issuer_id、signature_algorithm、validity。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateCertificateAuthority
@@ -900,8 +887,7 @@ class CcmAsyncClient(Client):
         计划删除CA。计划多少天后删除CA证书，可设置7天～30天内删除。
         &gt; 只有当证书状态为”待激活“或”已禁用“状态时，才可删除。”待激活“状态下，将会立即删除证书，不支持延迟删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteCertificateAuthority
@@ -965,8 +951,7 @@ class CcmAsyncClient(Client):
         禁用CA。
         &gt; 只有当证书处于\&quot;已激活\&quot;或\&quot;已过期\&quot;状态时，可进行禁用操作。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DisableCertificateAuthority
@@ -1028,8 +1013,7 @@ class CcmAsyncClient(Client):
         启用CA。
         &gt; 注：只有当证书处于\&quot;已禁用\&quot;状态时，可进行启用操作。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for EnableCertificateAuthority
@@ -1091,8 +1075,7 @@ class CcmAsyncClient(Client):
         导出CA证书。
         &gt; 注：只有当证书处于\&quot;已激活\&quot;或\&quot;已过期\&quot;时，可进行导出操作。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ExportCertificateAuthorityCertificate
@@ -1154,8 +1137,7 @@ class CcmAsyncClient(Client):
         导出CA的证书签名请求。
         &gt; 只有当CA处于\&quot;待激活\&quot;状态时，可导出证书签名请求。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ExportCertificateAuthorityCsr
@@ -1221,8 +1203,7 @@ class CcmAsyncClient(Client):
               - b、其证书链虽然允许不上传，但后期若想要导出完整的证书链，应导入完整的证书链；
               - c、证书体与证书链必须为PEM编码。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ImportCertificateAuthorityCertificate
@@ -1286,8 +1267,7 @@ class CcmAsyncClient(Client):
         激活CA。
         &gt; 只有当证书处于\&quot;待激活\&quot;状态时，可进行激活操作。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for IssueCertificateAuthorityCertificate
@@ -1350,8 +1330,7 @@ class CcmAsyncClient(Client):
 
         查询CA列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListCertificateAuthority
@@ -1425,8 +1404,7 @@ class CcmAsyncClient(Client):
         恢复CA，将处于“计划删除”状态的CA证书，重新恢复为“已禁用”状态。
         &gt; 注：只有处于“计划删除”状态的CA证书，才可进行恢复操作。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RestoreCertificateAuthority
@@ -1488,8 +1466,7 @@ class CcmAsyncClient(Client):
         吊销子CA。
         &gt; 注：当不想填写吊销理由时，请求body体请置为\&quot;**{}**\&quot;，否则将会报错。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RevokeCertificateAuthority
@@ -1552,8 +1529,7 @@ class CcmAsyncClient(Client):
 
         查询CA详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowCertificateAuthority
@@ -1614,8 +1590,7 @@ class CcmAsyncClient(Client):
 
         查询CA证书配额。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowCertificateAuthorityQuota

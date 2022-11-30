@@ -36,7 +36,7 @@ class SetBackupPolicyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言
+        :param x_language: 语言。默认值：en-us。
         :type x_language: str
         :param instance_id: 实例ID，严格匹配UUID规则。
         :type instance_id: str
@@ -61,7 +61,7 @@ class SetBackupPolicyRequest:
     def x_language(self):
         """Gets the x_language of this SetBackupPolicyRequest.
 
-        语言
+        语言。默认值：en-us。
 
         :return: The x_language of this SetBackupPolicyRequest.
         :rtype: str
@@ -72,7 +72,7 @@ class SetBackupPolicyRequest:
     def x_language(self, x_language):
         """Sets the x_language of this SetBackupPolicyRequest.
 
-        语言
+        语言。默认值：en-us。
 
         :param x_language: The x_language of this SetBackupPolicyRequest.
         :type x_language: str

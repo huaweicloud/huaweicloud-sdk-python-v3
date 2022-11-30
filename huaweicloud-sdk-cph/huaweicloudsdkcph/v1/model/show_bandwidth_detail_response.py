@@ -21,7 +21,7 @@ class ShowBandwidthDetailResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'band_widths': 'list[object]'
+        'band_widths': 'list[Bandwidth]'
     }
 
     attribute_map = {
@@ -34,10 +34,10 @@ class ShowBandwidthDetailResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 请求的唯一标识ID
+        :param request_id: 请求的唯一标识ID。
         :type request_id: str
         :param band_widths: 带宽信息
-        :type band_widths: list[object]
+        :type band_widths: list[:class:`huaweicloudsdkcph.v1.Bandwidth`]
         """
         
         super(ShowBandwidthDetailResponse, self).__init__()
@@ -46,14 +46,16 @@ class ShowBandwidthDetailResponse(SdkResponse):
         self._band_widths = None
         self.discriminator = None
 
-        self.request_id = request_id
-        self.band_widths = band_widths
+        if request_id is not None:
+            self.request_id = request_id
+        if band_widths is not None:
+            self.band_widths = band_widths
 
     @property
     def request_id(self):
         """Gets the request_id of this ShowBandwidthDetailResponse.
 
-        请求的唯一标识ID
+        请求的唯一标识ID。
 
         :return: The request_id of this ShowBandwidthDetailResponse.
         :rtype: str
@@ -64,7 +66,7 @@ class ShowBandwidthDetailResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this ShowBandwidthDetailResponse.
 
-        请求的唯一标识ID
+        请求的唯一标识ID。
 
         :param request_id: The request_id of this ShowBandwidthDetailResponse.
         :type request_id: str
@@ -78,7 +80,7 @@ class ShowBandwidthDetailResponse(SdkResponse):
         带宽信息
 
         :return: The band_widths of this ShowBandwidthDetailResponse.
-        :rtype: list[object]
+        :rtype: list[:class:`huaweicloudsdkcph.v1.Bandwidth`]
         """
         return self._band_widths
 
@@ -89,7 +91,7 @@ class ShowBandwidthDetailResponse(SdkResponse):
         带宽信息
 
         :param band_widths: The band_widths of this ShowBandwidthDetailResponse.
-        :type band_widths: list[object]
+        :type band_widths: list[:class:`huaweicloudsdkcph.v1.Bandwidth`]
         """
         self._band_widths = band_widths
 

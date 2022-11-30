@@ -47,8 +47,7 @@ class CdnAsyncClient(Client):
 
         批量域名复制接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchCopyDomain
@@ -119,8 +118,7 @@ class CdnAsyncClient(Client):
         
         - 单租户调用频率：10次/min。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DownloadRegionCarrierExcel
@@ -209,8 +207,7 @@ class CdnAsyncClient(Client):
         
         - 单租户调用频率：10次/min。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DownloadStatisticsExcel
@@ -293,8 +290,7 @@ class CdnAsyncClient(Client):
         
         - 单租户调用频率：10次/min。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetChargeModes
@@ -367,8 +363,7 @@ class CdnAsyncClient(Client):
         
         - 单租户调用频率：2次/s。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowBandwidthCalc
@@ -447,8 +442,7 @@ class CdnAsyncClient(Client):
         
         - 单租户调用频率：5次/s。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowChargeModes
@@ -526,8 +520,7 @@ class CdnAsyncClient(Client):
         
         - 单租户调用频率：15次/s。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDomainLocationStats
@@ -621,8 +614,7 @@ class CdnAsyncClient(Client):
         
         - 单租户调用频率：15次/s。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDomainStats
@@ -711,8 +703,7 @@ class CdnAsyncClient(Client):
         
         - 单租户调用频率：5次/s。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTopDomainNames
@@ -795,8 +786,7 @@ class CdnAsyncClient(Client):
         
         - 单租户调用频率：5次/s。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTopUrl

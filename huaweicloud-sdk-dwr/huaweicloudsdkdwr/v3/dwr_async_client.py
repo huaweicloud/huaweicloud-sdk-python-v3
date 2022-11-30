@@ -47,8 +47,7 @@ class DwrAsyncClient(Client):
 
         本接口用于使用工作流时需要同意服务使用协议。该函数具有幂等性。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AcceptServiceContract
@@ -109,8 +108,7 @@ class DwrAsyncClient(Client):
 
         本接口用于API方式异步启动已有工作流，产生工作流实例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AsyncInvokeApiStartWorkflow
@@ -173,8 +171,7 @@ class DwrAsyncClient(Client):
 
         本接口用于查询授权，查询由DWR服务自动帮助用户创建工作流运行时需要的函数服务权限，以及函数服务运行时的权限。该函数具有幂等性。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckWorkflowAuthentication
@@ -233,8 +230,7 @@ class DwrAsyncClient(Client):
 
         创建第三方算子模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateMyActionTemplate
@@ -297,8 +293,7 @@ class DwrAsyncClient(Client):
 
         本接口用于开通授权，由DWR服务自动帮助用户创建工作流运行时需要的函数服务权限，以及函数服务运行时的权限。该函数具有幂等性。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateWorkflowAuthentication
@@ -357,8 +352,7 @@ class DwrAsyncClient(Client):
 
         本接口用于标记删除提交的第三方算子模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteMyActionTemplate
@@ -419,8 +413,7 @@ class DwrAsyncClient(Client):
 
         本接口用于查询提交注册过的三方算子列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListMyActionTemplate
@@ -489,8 +482,7 @@ class DwrAsyncClient(Client):
 
         本接口用于按名称查询系统内置算子列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSystemTemplates
@@ -557,8 +549,7 @@ class DwrAsyncClient(Client):
 
         本接口用于查询用户工作流的实例列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListWorkflowInstance
@@ -629,8 +620,7 @@ class DwrAsyncClient(Client):
 
         本接口用于恢复一个执行失败状态的工作流实例。恢复后，工作流实例将从上次失败的状态处继续执行，而工作流步骤中已经执行成功的状态不会再执行。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RestoreWorkflowExecution
@@ -693,8 +683,7 @@ class DwrAsyncClient(Client):
 
         本接口用于查询开放的算子列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowPublicActionList
@@ -761,8 +750,7 @@ class DwrAsyncClient(Client):
 
         本接口用于按名称查询开放的算子详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowPublicTemplateInfo
@@ -823,8 +811,7 @@ class DwrAsyncClient(Client):
 
         本接口用于查询使用工作流时同意的服务协议。该函数具有幂等性。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowServiceContract
@@ -885,8 +872,7 @@ class DwrAsyncClient(Client):
 
         本接口用于按名称查询系统内置算子详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowSystemTemplateDetail
@@ -947,8 +933,7 @@ class DwrAsyncClient(Client):
 
         本接口用于按名称查询第三方模板详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowThirdTemplateInfo
@@ -1009,8 +994,7 @@ class DwrAsyncClient(Client):
 
         本接口用于查询指定工作流实例详细。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowWorkflowInstance
@@ -1073,8 +1057,7 @@ class DwrAsyncClient(Client):
 
         本接口用于修改第三方算子和将三方算子提交审核
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateMyActionTemplate
@@ -1137,8 +1120,7 @@ class DwrAsyncClient(Client):
 
         本接口用于申请禁用第三方算子。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateMyActionTemplateToDeprecated
@@ -1199,8 +1181,7 @@ class DwrAsyncClient(Client):
 
         本接口用于通过Body体直接创建工作流
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateWorkflow
@@ -1263,8 +1244,7 @@ class DwrAsyncClient(Client):
 
         本接口用于删除工作流。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteWorkflow
@@ -1325,8 +1305,7 @@ class DwrAsyncClient(Client):
 
         本接口用于查询工作流列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListWorkflows
@@ -1391,8 +1370,7 @@ class DwrAsyncClient(Client):
 
         本接口用于根据工作流名称查询工作流详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowWorkflowInfo
@@ -1453,8 +1431,7 @@ class DwrAsyncClient(Client):
 
         Update Workflow
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateWorkflow

@@ -20,7 +20,7 @@ class ResetCloudPhoneRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'ResetRestartRequestBody'
+        'body': 'ResetCloudPhoneRequestBody'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class ResetCloudPhoneRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the ResetCloudPhoneRequest
-        :type body: :class:`huaweicloudsdkcph.v1.ResetRestartRequestBody`
+        :type body: :class:`huaweicloudsdkcph.v1.ResetCloudPhoneRequestBody`
         """
         
         
@@ -49,7 +49,7 @@ class ResetCloudPhoneRequest:
         """Gets the body of this ResetCloudPhoneRequest.
 
         :return: The body of this ResetCloudPhoneRequest.
-        :rtype: :class:`huaweicloudsdkcph.v1.ResetRestartRequestBody`
+        :rtype: :class:`huaweicloudsdkcph.v1.ResetCloudPhoneRequestBody`
         """
         return self._body
 
@@ -58,7 +58,7 @@ class ResetCloudPhoneRequest:
         """Sets the body of this ResetCloudPhoneRequest.
 
         :param body: The body of this ResetCloudPhoneRequest.
-        :type body: :class:`huaweicloudsdkcph.v1.ResetRestartRequestBody`
+        :type body: :class:`huaweicloudsdkcph.v1.ResetCloudPhoneRequestBody`
         """
         self._body = body
 

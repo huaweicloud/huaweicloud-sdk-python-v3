@@ -47,8 +47,7 @@ class KafkaClient(Client):
 
         批量添加或删除实例标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchCreateOrDeleteKafkaTag
         :type request: :class:`huaweicloudsdkkafka.v2.BatchCreateOrDeleteKafkaTagRequest`
@@ -110,8 +109,7 @@ class KafkaClient(Client):
 
         该接口用于向Kafka实例批量删除Topic。批量删除多个消费组时，部分删除成功，部分失败，此时接口返回删除成功，并在返回中显示删除失败的消费组信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteInstanceTopic
         :type request: :class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceTopicRequest`
@@ -173,8 +171,7 @@ class KafkaClient(Client):
 
         批量删除Kafka实例的用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteInstanceUsers
         :type request: :class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceUsersRequest`
@@ -240,8 +237,7 @@ class KafkaClient(Client):
         
         实例删除后，实例中原有的数据将被删除，且没有备份，请谨慎操作。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchRestartOrDeleteInstances
         :type request: :class:`huaweicloudsdkkafka.v2.BatchRestartOrDeleteInstancesRequest`
@@ -303,8 +299,7 @@ class KafkaClient(Client):
         
         **当前通过调用API，只支持按需实例创建转储节点。**
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateConnector
         :type request: :class:`huaweicloudsdkkafka.v2.CreateConnectorRequest`
@@ -366,8 +361,7 @@ class KafkaClient(Client):
 
         该接口用于向Kafka实例创建Topic。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateInstanceTopic
         :type request: :class:`huaweicloudsdkkafka.v2.CreateInstanceTopicRequest`
@@ -429,8 +423,7 @@ class KafkaClient(Client):
 
         创建Kafka实例的用户，用户可连接开启SASL的Kafka实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateInstanceUser
         :type request: :class:`huaweicloudsdkkafka.v2.CreateInstanceUserRequest`
@@ -492,8 +485,7 @@ class KafkaClient(Client):
 
         新增Kafka实例指定Topic分区。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreatePartition
         :type request: :class:`huaweicloudsdkkafka.v2.CreatePartitionRequest`
@@ -557,8 +549,7 @@ class KafkaClient(Client):
 
         [创建按需计费类型的Kafka实例。](tag:hc,hk,hws,hws_hk,otc,hws_ocb,ctc,sbc,hk_sbc,cmcc,hws_eu)[创建kafka实例。](tag:ocb)
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreatePostPaidInstance
         :type request: :class:`huaweicloudsdkkafka.v2.CreatePostPaidInstanceRequest`
@@ -618,8 +609,7 @@ class KafkaClient(Client):
 
         创建转储任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateSinkTask
         :type request: :class:`huaweicloudsdkkafka.v2.CreateSinkTaskRequest`
@@ -681,8 +671,7 @@ class KafkaClient(Client):
 
         删除后台任务管理中的指定记录。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteBackgroundTask
         :type request: :class:`huaweicloudsdkkafka.v2.DeleteBackgroundTaskRequest`
@@ -744,8 +733,7 @@ class KafkaClient(Client):
 
         删除指定的实例，释放该实例的所有资源。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteInstance
         :type request: :class:`huaweicloudsdkkafka.v2.DeleteInstanceRequest`
@@ -805,8 +793,7 @@ class KafkaClient(Client):
 
         删除单个转储任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteSinkTask
         :type request: :class:`huaweicloudsdkkafka.v2.DeleteSinkTaskRequest`
@@ -868,8 +855,7 @@ class KafkaClient(Client):
 
         在创建实例时，需要配置实例所在的可用区ID，可通过该接口查询可用区的ID。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAvailableZones
         :type request: :class:`huaweicloudsdkkafka.v2.ListAvailableZonesRequest`
@@ -927,8 +913,7 @@ class KafkaClient(Client):
 
         查询实例的后台任务列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListBackgroundTasks
         :type request: :class:`huaweicloudsdkkafka.v2.ListBackgroundTasksRequest`
@@ -996,8 +981,7 @@ class KafkaClient(Client):
 
         查询产品规格列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEngineProducts
         :type request: :class:`huaweicloudsdkkafka.v2.ListEngineProductsRequest`
@@ -1059,8 +1043,7 @@ class KafkaClient(Client):
 
         查询所有消费组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListInstanceConsumerGroups
         :type request: :class:`huaweicloudsdkkafka.v2.ListInstanceConsumerGroupsRequest`
@@ -1126,8 +1109,7 @@ class KafkaClient(Client):
 
         该接口用于查询指定Kafka实例的Topic详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListInstanceTopics
         :type request: :class:`huaweicloudsdkkafka.v2.ListInstanceTopicsRequest`
@@ -1187,8 +1169,7 @@ class KafkaClient(Client):
 
         查询租户的实例列表，支持按照条件查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListInstances
         :type request: :class:`huaweicloudsdkkafka.v2.ListInstancesRequest`
@@ -1266,8 +1247,7 @@ class KafkaClient(Client):
         
         [例如，响应消息中bandwidth字段为1200MB的记录，unavailable_zones字段包含cn-east-2b、cn-east-2a和cn-east-2d，表示在华东-上海2的可用区1、可用区2、可用区3都没有该资源。](tag:hc,hws)
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProducts
         :type request: :class:`huaweicloudsdkkafka.v2.ListProductsRequest`
@@ -1327,8 +1307,7 @@ class KafkaClient(Client):
 
         查询转储任务列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSinkTasks
         :type request: :class:`huaweicloudsdkkafka.v2.ListSinkTasksRequest`
@@ -1388,8 +1367,7 @@ class KafkaClient(Client):
 
         重置Manager密码。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ResetManagerPassword
         :type request: :class:`huaweicloudsdkkafka.v2.ResetManagerPasswordRequest`
@@ -1453,8 +1431,7 @@ class KafkaClient(Client):
         
         &gt; 停止待重置消费组客户端，然后等待一段时间（即ConsumerConfig.SESSION_TIMEOUT_MS_CONFIG配置的时间，默认为1000毫秒）后，服务端才认为此消费组客户端已下线。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ResetMessageOffset
         :type request: :class:`huaweicloudsdkkafka.v2.ResetMessageOffsetRequest`
@@ -1518,8 +1495,7 @@ class KafkaClient(Client):
 
         重置密码。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ResetPassword
         :type request: :class:`huaweicloudsdkkafka.v2.ResetPasswordRequest`
@@ -1581,8 +1557,7 @@ class KafkaClient(Client):
 
         重置用户密码
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ResetUserPasswrod
         :type request: :class:`huaweicloudsdkkafka.v2.ResetUserPasswrodRequest`
@@ -1648,8 +1623,7 @@ class KafkaClient(Client):
         
         **当前通过调用API，只支持按需实例进行实例规格变更。**
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ResizeInstance
         :type request: :class:`huaweicloudsdkkafka.v2.ResizeInstanceRequest`
@@ -1711,8 +1685,7 @@ class KafkaClient(Client):
 
         重启Manager。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RestartManager
         :type request: :class:`huaweicloudsdkkafka.v2.RestartManagerRequest`
@@ -1772,8 +1745,7 @@ class KafkaClient(Client):
 
         查询后台任务管理中的指定记录。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowBackgroundTask
         :type request: :class:`huaweicloudsdkkafka.v2.ShowBackgroundTaskRequest`
@@ -1835,8 +1807,7 @@ class KafkaClient(Client):
 
         查询实例在CES的监控层级关系。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowCesHierarchy
         :type request: :class:`huaweicloudsdkkafka.v2.ShowCesHierarchyRequest`
@@ -1896,8 +1867,7 @@ class KafkaClient(Client):
 
         查询Kafka集群元数据信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowCluster
         :type request: :class:`huaweicloudsdkkafka.v2.ShowClusterRequest`
@@ -1957,8 +1927,7 @@ class KafkaClient(Client):
 
         查询Kafka实例的协调器信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowCoordinators
         :type request: :class:`huaweicloudsdkkafka.v2.ShowCoordinatorsRequest`
@@ -2018,8 +1987,7 @@ class KafkaClient(Client):
 
         查询消费组信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowGroups
         :type request: :class:`huaweicloudsdkkafka.v2.ShowGroupsRequest`
@@ -2081,8 +2049,7 @@ class KafkaClient(Client):
 
         查询指定实例的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowInstance
         :type request: :class:`huaweicloudsdkkafka.v2.ShowInstanceRequest`
@@ -2142,8 +2109,7 @@ class KafkaClient(Client):
 
         查询实例的扩容规格列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowInstanceExtendProductInfo
         :type request: :class:`huaweicloudsdkkafka.v2.ShowInstanceExtendProductInfoRequest`
@@ -2208,8 +2174,7 @@ class KafkaClient(Client):
         查询消息的偏移量和消息内容。
         先根据时间戳查询消息的偏移量，再根据偏移量查询消息内容。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowInstanceMessages
         :type request: :class:`huaweicloudsdkkafka.v2.ShowInstanceMessagesRequest`
@@ -2287,8 +2252,7 @@ class KafkaClient(Client):
 
         查询Kafka实例Topic详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowInstanceTopicDetail
         :type request: :class:`huaweicloudsdkkafka.v2.ShowInstanceTopicDetailRequest`
@@ -2352,8 +2316,7 @@ class KafkaClient(Client):
         
         Kafka实例开启SASL功能时，才支持多用户管理的功能。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowInstanceUsers
         :type request: :class:`huaweicloudsdkkafka.v2.ShowInstanceUsersRequest`
@@ -2413,8 +2376,7 @@ class KafkaClient(Client):
 
         查询项目标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowKafkaProjectTags
         :type request: :class:`huaweicloudsdkkafka.v2.ShowKafkaProjectTagsRequest`
@@ -2472,8 +2434,7 @@ class KafkaClient(Client):
 
         查询实例标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowKafkaTags
         :type request: :class:`huaweicloudsdkkafka.v2.ShowKafkaTagsRequest`
@@ -2533,8 +2494,7 @@ class KafkaClient(Client):
 
         查询topic在Broker上磁盘占用情况。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowKafkaTopicPartitionDiskusage
         :type request: :class:`huaweicloudsdkkafka.v2.ShowKafkaTopicPartitionDiskusageRequest`
@@ -2600,8 +2560,7 @@ class KafkaClient(Client):
 
         查询维护时间窗开始时间和结束时间。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowMaintainWindows
         :type request: :class:`huaweicloudsdkkafka.v2.ShowMaintainWindowsRequest`
@@ -2659,8 +2618,7 @@ class KafkaClient(Client):
 
         查询分区指定时间段的消息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowMessages
         :type request: :class:`huaweicloudsdkkafka.v2.ShowMessagesRequest`
@@ -2732,8 +2690,7 @@ class KafkaClient(Client):
 
         查询分区最早消息的位置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPartitionBeginningMessage
         :type request: :class:`huaweicloudsdkkafka.v2.ShowPartitionBeginningMessageRequest`
@@ -2797,8 +2754,7 @@ class KafkaClient(Client):
 
         查询分区最新消息的位置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPartitionEndMessage
         :type request: :class:`huaweicloudsdkkafka.v2.ShowPartitionEndMessageRequest`
@@ -2862,8 +2818,7 @@ class KafkaClient(Client):
 
         查询分区指定偏移量的消息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPartitionMessage
         :type request: :class:`huaweicloudsdkkafka.v2.ShowPartitionMessageRequest`
@@ -2929,8 +2884,7 @@ class KafkaClient(Client):
 
         查询单个转储任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowSinkTaskDetail
         :type request: :class:`huaweicloudsdkkafka.v2.ShowSinkTaskDetailRequest`
@@ -2996,8 +2950,7 @@ class KafkaClient(Client):
         
         Kafka实例开启SASL功能时，才支持多用户管理的功能。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTopicAccessPolicy
         :type request: :class:`huaweicloudsdkkafka.v2.ShowTopicAccessPolicyRequest`
@@ -3059,8 +3012,7 @@ class KafkaClient(Client):
 
         修改实例信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateInstance
         :type request: :class:`huaweicloudsdkkafka.v2.UpdateInstanceRequest`
@@ -3122,8 +3074,7 @@ class KafkaClient(Client):
 
         开启或关闭实例自动创建topic功能。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateInstanceAutoCreateTopic
         :type request: :class:`huaweicloudsdkkafka.v2.UpdateInstanceAutoCreateTopicRequest`
@@ -3185,8 +3136,7 @@ class KafkaClient(Client):
 
         修改实例跨VPC访问的内网IP。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateInstanceCrossVpcIp
         :type request: :class:`huaweicloudsdkkafka.v2.UpdateInstanceCrossVpcIpRequest`
@@ -3248,8 +3198,7 @@ class KafkaClient(Client):
 
         修改Kafka实例Topic
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateInstanceTopic
         :type request: :class:`huaweicloudsdkkafka.v2.UpdateInstanceTopicRequest`
@@ -3311,8 +3260,7 @@ class KafkaClient(Client):
 
         修改转储任务的配额。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateSinkTaskQuota
         :type request: :class:`huaweicloudsdkkafka.v2.UpdateSinkTaskQuotaRequest`
@@ -3376,8 +3324,7 @@ class KafkaClient(Client):
         
         Kafka实例开启SASL功能时，才支持多用户管理的功能。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateTopicAccessPolicy
         :type request: :class:`huaweicloudsdkkafka.v2.UpdateTopicAccessPolicyRequest`
@@ -3439,8 +3386,7 @@ class KafkaClient(Client):
 
         修改Kafka实例Topic分区的副本。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateTopicReplica
         :type request: :class:`huaweicloudsdkkafka.v2.UpdateTopicReplicaRequest`

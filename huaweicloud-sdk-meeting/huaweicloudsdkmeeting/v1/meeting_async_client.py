@@ -47,8 +47,7 @@ class MeetingAsyncClient(Client):
 
         创建企业，默认管理员及分配资源。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddCorp
@@ -113,8 +112,7 @@ class MeetingAsyncClient(Client):
 
         企业默认管理员添加企业普通管理员。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddCorpAdmin
@@ -181,8 +179,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员通过该接口添加部门，最多支持10级部门，每级子部门最多支持100个，默认企业最大部门数量为10000个。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddDepartment
@@ -247,8 +244,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员通过该接口添加专业会议终端。专业会议终端包括DP300/HUAWEI Bar系列/HUAWEI Board/TE系列。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddDevice
@@ -313,8 +309,7 @@ class MeetingAsyncClient(Client):
 
         新增信息窗素材（上传素材文件）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddMaterial
@@ -381,8 +376,7 @@ class MeetingAsyncClient(Client):
 
         新增信息窗节目。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddProgram
@@ -447,8 +441,7 @@ class MeetingAsyncClient(Client):
 
         新增信息窗发布。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddPublication
@@ -513,8 +506,7 @@ class MeetingAsyncClient(Client):
 
         企业新增资源发放。该接口同时支持修改，带resourceId后会判断该资源是否存在，存在即修改（支持修改的参数见修改接口），否则按新增处理。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddResource
@@ -581,8 +573,7 @@ class MeetingAsyncClient(Client):
 
         用户使用手机扫码后,手机端请求服务端将当前会议纪要文件保存到个人云空间。二维码内容 ：cloudlink://cloudlink.huawei.com/h5page?action&#x3D;SAVE_MEETING_FILE&amp;key1&#x3D;value1&amp;key2&#x3D;value2 。key/value的个数可能变化，终端解析后，在发起后续请求时，将所有key/value存为map，作为入参即可。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddToPersonalSpace
@@ -648,8 +639,7 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口添加企业用户。
         &gt; 默认添加用户后，用户第一次登录华为云会议App或者Portal时需要修改密码。若需关闭第一次登录修改密码，请联系华为销售人员，并提供华为云会议企业ID。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddUser
@@ -714,8 +704,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于设置允许/禁止与会者客户端本地录制（非云端录制）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AllowClientRecord
@@ -782,8 +771,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于设置与会者是否可以自己解除静音。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AllowGuestUnmute
@@ -848,8 +836,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于允许等候室中的成员进入会议。可以允许全部成员进入会议，或者允许指定成员进入会议。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AllowWaitingParticipant
@@ -914,8 +901,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员通过该接口将云会议室分配给用户、专业会议终端（TE10、TE20、HUAWEI Board、HUAWEI Bar 500及HUAWEI Box系列）、智慧屏TV、电子白板（SmartRooms）、IdeaHub。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AssociateVmr
@@ -984,8 +970,7 @@ class MeetingAsyncClient(Client):
 
         通过该接口批量删除企业管理员。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeleteCorpAdmins
@@ -1053,8 +1038,7 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口批量删除专业会议终端，返回删除失败的列表。
         &gt; 如果需要删除Ideahub、SmartRooms、智慧屏TV请使用[[批量删除用户](https://support.huaweicloud.com/api-meeting/meeting_21_0070.html)](tag:hws)[[批量删除用户](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0070.html)](tag:hk)接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeleteDevices
@@ -1119,8 +1103,7 @@ class MeetingAsyncClient(Client):
 
         删除信息窗素材。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeleteMaterials
@@ -1185,8 +1168,7 @@ class MeetingAsyncClient(Client):
 
         删除信息窗节目。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeletePrograms
@@ -1251,8 +1233,7 @@ class MeetingAsyncClient(Client):
 
         删除信息窗发布。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeletePublications
@@ -1317,8 +1298,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员通过该接口批量删除企业用户。删除多个用户时，全部删除成功或者全部删除失败。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeleteUsers
@@ -1385,8 +1365,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于批量设置来宾的举手/放下举手状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchHand
@@ -1451,8 +1430,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员通过该接口批量修改专业会议终端状态。当硬终端资源到期后，若企业内对应资源的硬终端超过数量后会被系统随机自动停用，此时可通过该接口修改专业会议终端的状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchUpdateDevicesStatus
@@ -1519,8 +1497,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员通过该接口批量修改用户状态，当用户帐号数资源或者电子白板（SmartRooms）资源到期后，若企业内对应资源的用户帐号超过数量后会被系统随机自动停用，此时可通过该接口修改用户的状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchUpdateUserStatus
@@ -1589,8 +1566,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于广播指定的与会者。同一时间，只允许一个与会者被广播。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BroadcastParticipant
@@ -1655,8 +1631,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于取消广播，包括：取消广播多画面，取消广播会场，取消点名会场。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CancelBroadcast
@@ -1719,8 +1694,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于取消预约的会议。企业管理员可以取消本企业下用户创建的会议，普通用户只能取消自己创建的会议。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CancelMeeting
@@ -1789,8 +1763,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于取消周期性会议。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CancelRecurringMeeting
@@ -1859,8 +1832,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于取消周期性会议的子会议。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CancelRecurringSubMeeting
@@ -1931,8 +1903,7 @@ class MeetingAsyncClient(Client):
 
         该接口提供校验滑块验证码。服务器收到请求，返回校验结果。用户在前台界面通过滑块操作匹配图形，使得抠图和原图吻合。然后服务器进行校验滑块验证码。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckSlideVerifyCode
@@ -1997,8 +1968,7 @@ class MeetingAsyncClient(Client):
 
         该接口提供校验token合法性功能。服务器收到请求后，验证token合法性并返回结果。如果参数needGenNewToken为true时，生成新的token并返回。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckToken
@@ -2063,8 +2033,7 @@ class MeetingAsyncClient(Client):
 
         企业用户通过该接口校验手机和邮箱对应的验证码，一分钟内记录尝试次数不得超过5次。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckVeriCodeForUpdateUserInfo
@@ -2129,8 +2098,7 @@ class MeetingAsyncClient(Client):
 
         该接口提供校验验证码，服务器收到请求，返回结果。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckVerifyCode
@@ -2195,8 +2163,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于匿名用户入会鉴权。请求根据会议ID和密码鉴权，返回鉴权随机数（可以根据该随机数获取匿名用户信息、会议信息等）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateAnonymousAuthRandom
@@ -2259,8 +2226,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于获取正在召开会议的会控Token（未开始的会议调用该接口返回失败）。Token有效期是半个小时。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateConfToken
@@ -2329,8 +2295,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于创建立即会议和预约会议。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateMeeting
@@ -2397,8 +2362,7 @@ class MeetingAsyncClient(Client):
 
         通过Access Token生成页面免登陆跳转到华为云会议的Portal的nonce信息。获取到nonce信息后，通过链接https://meeting.huaweicloud.com/?lang&#x3D;zh-CN&amp;nonce&#x3D;xxxxxxxxxxxxx#/login进行免登陆跳转。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreatePortalRefNonce
@@ -2461,8 +2425,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于预约周期性会议。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateRecurringMeeting
@@ -2529,8 +2492,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员生成智慧屏、电子白板（SmartRooms）、Ideahub的激活码。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateVisionActiveCode
@@ -2595,8 +2557,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于获取会控WebSocket建链的临时Token。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateWebSocketToken
@@ -2659,8 +2620,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于创建网络研讨会。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateWebinar
@@ -2725,8 +2685,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于删除与会者。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteAttendees
@@ -2791,8 +2750,7 @@ class MeetingAsyncClient(Client):
 
         删除企业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteCorp
@@ -2857,8 +2815,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员通过该接口删除企业的云会议室。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteCorpVmr
@@ -2923,8 +2880,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员通过该接口删除部门。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDepartment
@@ -2989,8 +2945,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于删除当前会议已保存的多画面布局。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteLayout
@@ -3055,8 +3010,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于批量删除会议的录制。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteRecordings
@@ -3123,8 +3077,7 @@ class MeetingAsyncClient(Client):
 
         企业删除资源项，删除资源项后，企业资源总数会自动减少。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteResource
@@ -3191,8 +3144,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员批量删除激活码。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteVisionActiveCode
@@ -3257,8 +3209,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于管理员删除已配置的事件推送设置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteWebHookConfig
@@ -3319,8 +3270,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于取消已预约的网络研讨会。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteWebinar
@@ -3385,8 +3335,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员通过该接口回收云会议室。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DisassociateVmr
@@ -3455,8 +3404,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于设置指定与会者的举手/放下举手状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for Hand
@@ -3523,8 +3471,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于挂断正在通话中的与会者。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for HangUp
@@ -3589,8 +3536,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于邀请指定与会者开启、关闭摄像头。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for InviteOperateVideo
@@ -3657,8 +3603,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于邀请与会者加入会议。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for InviteParticipant
@@ -3723,8 +3668,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于邀请/取消邀请指定与会人共享桌面。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for InviteShare
@@ -3795,8 +3739,7 @@ class MeetingAsyncClient(Client):
           - 华为云会议旗舰版在企业内直接添加该用户。用户会收到华为云会议的初始密码，用户第一次以手机号或者邮箱登录时，需要修改密码。
         * 若被邀请用户在华为云会议系统中存在，则该用户会收到短信或者邮件确认。确认完成后改用户加入企业内。该用户的密码保持原来的密码不变。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for InviteUser
@@ -3862,8 +3805,7 @@ class MeetingAsyncClient(Client):
         该接口用于通过会议ID和密码邀请与会者。一般用于App已知会议ID和来宾密码，通过扫码等方式获取其他终端的SIP号码后，使用该接口将其他终端邀请加入会议中。
         &gt; 需要管理员在企业的“会议设置”&gt;“来宾扫码邀请任意硬终端入会”设置成打开，才允许通过来宾密码邀请其他终端入会。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for InviteWithPwd
@@ -3926,8 +3868,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于查询历史网络研讨会。管理员可查询企业内历史网络研讨会，非管理员可查询个人历史网络研讨会。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListHistoryWebinars
@@ -4002,8 +3943,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于查询正在召开的网络研讨会。管理员可查询企业内正在召开网络研讨会，非管理员可查询自己预订的正在召开的网络研讨会。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListOngoingWebinars
@@ -4074,8 +4014,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于查询即将召开的网络研讨会。管理员可查询企业内即将召开网络研讨会，非管理员可查询自己预订的即将召开的网络研讨会。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListUpComingWebinars
@@ -4146,8 +4085,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于启动或停止会议直播。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for Live
@@ -4212,8 +4150,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于锁定或解锁会议。锁定会议后，不允许新的来宾主动加入会议。会议锁定后使用主持人密码/主持人链接加入会议或者主持人邀请来宾不受影响。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for LockMeeting
@@ -4278,8 +4215,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于锁定或者解锁某在线会场的视频源。只适用于专业会议终端（如TE系列等）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for LockView
@@ -4346,8 +4282,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于将会中的指定与会者移入到等候室。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for MoveToWaitingRoom
@@ -4412,8 +4347,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于设置整个会议所有与会者（主持人除外）的静音/取消静音状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for MuteMeeting
@@ -4478,8 +4412,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于设置指定与会者静音/取消静音状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for MuteParticipant
@@ -4546,8 +4479,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于延长会议时间。默认会议自动延长。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ProlongMeeting
@@ -4612,8 +4544,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于启动或停止会议云录制。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for Record
@@ -4678,8 +4609,7 @@ class MeetingAsyncClient(Client):
 
         重命名某个与会者。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RenameParticipant
@@ -4744,8 +4674,7 @@ class MeetingAsyncClient(Client):
 
         当硬终端激活码失效时，企业管理员可以通过该接口重置激活码，使用重新获取的激活码激活终端，每24小时可重新激活5次。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetActivecode
@@ -4812,8 +4741,7 @@ class MeetingAsyncClient(Client):
 
         该接口提供给用户重置密码功能，服务器收到请求，重新设置用户密码并返回结果。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetPwd
@@ -4878,8 +4806,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员通过该接口提供企业管理员重置企业成员密码的功能。当服务器收到重置密码的请求时，发送新的密码到企业成员的邮箱或者短信，并返回结果。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetPwdByAdmin
@@ -4944,8 +4871,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员重置帐号的激活码，重置后，原设备直接解绑，必须重新激活使用,若手机邮箱不填，则不会发送新的激活码。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetVisionActiveCode
@@ -5012,8 +4938,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于点名指定与会者。点名会场的效果是除了主持人外，点名与会者为非静音状态，未点名的与会者统一为静音状态。同一时间，只允许一个与会者被点名。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RollcallParticipant
@@ -5078,8 +5003,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于保存多画面布局。保存的多画面布局，只能在当前会议使用，会议结束后，保存的多画面布局就会释放。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SaveLayout
@@ -5144,8 +5068,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于查询指定历史会议的与会者记录。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchAttendanceRecordsOfHisMeeting
@@ -5220,8 +5143,7 @@ class MeetingAsyncClient(Client):
 
         SP管理员分页搜索企业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchCorp
@@ -5290,8 +5212,7 @@ class MeetingAsyncClient(Client):
 
         通过该接口分页查询企业管理员。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchCorpAdmins
@@ -5360,8 +5281,7 @@ class MeetingAsyncClient(Client):
 
         企业用户（含管理员）通过该接口查询该企业的通讯录。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchCorpDir
@@ -5436,8 +5356,7 @@ class MeetingAsyncClient(Client):
 
         企业用户（含管理员）通过该接口查询该企业的外部联系人或者个人外部联系人。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchCorpExternalDir
@@ -5508,8 +5427,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员根据条件查询企业资源订单列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchCorpResources
@@ -5592,8 +5510,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员通过该接口分页查询企业的云会议室。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchCorpVmr
@@ -5666,8 +5583,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于查询指定历史会议的会控记录。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchCtlRecordsOfHisMeeting
@@ -5740,8 +5656,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员通过该接口按名称查询所有的部门。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchDepartmentByName
@@ -5807,8 +5722,7 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口分页查询专业会议终端信息。
         &gt; 如果需要查询Ideahub、SmartRooms、智慧屏TV请使用[[分页查询用户](https://support.huaweicloud.com/api-meeting/meeting_21_0071.html)](tag:hws)[[分页查询用户](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0071.html)](tag:hk)接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchDevices
@@ -5886,8 +5800,7 @@ class MeetingAsyncClient(Client):
         &gt; * 如果同一个会议召开并结束多次，则会产生多条历史会议（会议ID相同，会议UUID不同）
         &gt; * 历史会议记录默认保留6个月，最长保留12个月。保留时间管理员可在“会议设置”的“历史会议留存时间”中修改
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchHisMeetings
@@ -5966,8 +5879,7 @@ class MeetingAsyncClient(Client):
 
         分页查询信息窗素材。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchMaterials
@@ -6036,8 +5948,7 @@ class MeetingAsyncClient(Client):
 
         用户查询自己的会议纪要列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchMeetingFileList
@@ -6108,8 +6019,7 @@ class MeetingAsyncClient(Client):
         * 管理员可以查询管理权限域内所有的会议，普通用户仅能查询自己创建或者需要参加的会议。不带查询参数时，默认查询权限范围内正在召开或还未召开的会议。
         * 只能查询尚未结束的会议（既正在召开的会议和已预约还未召开的会议）。如果需要查询历史会议列表，请参考[[查询历史会议列表](https://support.huaweicloud.com/api-meeting/meeting_21_0051.html)](tag:hws)[[查询历史会议列表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0051.html)](tag:hk)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchMeetings
@@ -6186,8 +6096,7 @@ class MeetingAsyncClient(Client):
 
         企业用户通过该接口查询个人已分配的云会议室及个人会议ID。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchMemberVmr
@@ -6258,8 +6167,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于查询正在召开的会议列表。管理员可以查询本企业内所有在线会议，普通用户仅能查询当前自己帐号创建或者需要参加的在线会议。不带查询参数时，默认查询权限范围内的在线会议，按开始时间升序排列。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchOnlineMeetings
@@ -6332,8 +6240,7 @@ class MeetingAsyncClient(Client):
 
         获取信息窗节目。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchPrograms
@@ -6402,8 +6309,7 @@ class MeetingAsyncClient(Client):
 
         获取信息窗发布。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchPublications
@@ -6472,8 +6378,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于查询会议录制列表。管理员可以查询本企业内所有的录制，普通用户仅能查询自己创建的会议的录制。不带查询参数时，默认查询权限范围内的录制。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchRecordings
@@ -6552,8 +6457,7 @@ class MeetingAsyncClient(Client):
 
         SP根据条件查询企业的资源项。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchResource
@@ -6634,8 +6538,7 @@ class MeetingAsyncClient(Client):
 
         SP根据根据条件查询企业的资源操作记录，支持根据resourceId模糊搜索。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchResourceOpRecord
@@ -6720,8 +6623,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员通过该接口分页查询企业用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchUsers
@@ -6809,8 +6711,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员分页查询激活码，支持激活码、终端名称模糊查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchVisionActiveCode
@@ -6881,8 +6782,7 @@ class MeetingAsyncClient(Client):
 
         该接口提供发送滑块验证码。服务器收到请求，返回抠图以及抠图后的原图等结果。需要在前台界面显示出抠图以及抠图后的原图，用户通过滑块操作来匹配图形。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SendSlideVerifyCode
@@ -6947,8 +6847,7 @@ class MeetingAsyncClient(Client):
 
         该接口提供发送验证码，服务器收到请求，发送验证码到邮箱或者短信并返回结果。用户在前台界面通过滑块验证后，再进行发送验证码操作。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SendVeriCodeForChangePwd
@@ -7013,8 +6912,7 @@ class MeetingAsyncClient(Client):
 
         修改用户手机或邮箱时，需要获取验证码。企业用户通过该接口获取验证码，系统会向用户的手机或邮箱发送，验证码1分钟内有效。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SendVeriCodeForUpdateUserInfo
@@ -7079,8 +6977,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于设置联席主持人或释放联席主持人。只能将来宾设置为联席主持人。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetCohost
@@ -7147,8 +7044,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于设置会中多画面。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetCustomMultiPicture
@@ -7213,8 +7109,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于主持人轮询、主持人选看多画面、主持人选看会场操作。只适用于专业会议终端（如TE系列等）为主持人的场景。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetHostView
@@ -7279,8 +7174,7 @@ class MeetingAsyncClient(Client):
 
         设置会议多画面。该接口废弃不用，请使用“[[设置自定义多画面](https://support.huaweicloud.com/api-meeting/meeting_21_0418.html)](tag:hws)[[设置自定义多画面](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0418.html)](tag:hk)”接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetMultiPicture
@@ -7345,8 +7239,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于专业会议终端（如TE系列等）选看其他与会者。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetParticipantView
@@ -7413,8 +7306,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于设置主持人或释放主持人。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetRole
@@ -7481,8 +7373,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于设置SSO登录的鉴权配置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetSsoConfig
@@ -7547,8 +7438,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于管理员设置企业级会议事件订阅配置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetWebHookConfig
@@ -7609,8 +7499,7 @@ class MeetingAsyncClient(Client):
 
         SP管理员根据会议ID查询该会议归属的企业ID。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowConfOrg
@@ -7671,8 +7560,7 @@ class MeetingAsyncClient(Client):
 
         获取企业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowCorp
@@ -7737,8 +7625,7 @@ class MeetingAsyncClient(Client):
 
         通过该接口查询企业管理员。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowCorpAdmin
@@ -7805,8 +7692,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员通过该接口查询企业注册信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowCorpBasicInfo
@@ -7869,8 +7755,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员通过该接口查询企业内资源及业务权限，包括查询已使用的资源情况。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowCorpResource
@@ -7933,8 +7818,7 @@ class MeetingAsyncClient(Client):
 
         通过部门编码查询部门信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDepartment
@@ -7999,8 +7883,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员通过该接口查询部门及其一级子部门列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDeptAndChildDept
@@ -8066,8 +7949,7 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口查询专业会议终端详情。
         &gt; 如果需要查询Ideahub、SmartRooms、智慧屏TV详情请使用[[查询用户详情](https://support.huaweicloud.com/api-meeting/meeting_21_0069.html)](tag:hws)[[查询用户详情](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0069.html)](tag:hk)接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDeviceDetail
@@ -8133,8 +8015,7 @@ class MeetingAsyncClient(Client):
         调用本接口可以查询硬终端的状态。
         硬终端与发起查询请求的帐号需在同一企业下，否则会鉴权失败。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDeviceStatus
@@ -8199,8 +8080,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员通过该接口获取所有的专业会议终端类型。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDeviceTypes
@@ -8263,8 +8143,7 @@ class MeetingAsyncClient(Client):
 
         该接口用户查询指定历史会议的详情。管理员可以查询本企业内所有的历史会议详情，普通用户仅能查询自己创建或者被邀请的历史会议详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowHisMeetingDetail
@@ -8341,8 +8220,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于查询当前会议已保存的多画面布局。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowLayout
@@ -8407,8 +8285,7 @@ class MeetingAsyncClient(Client):
         * 管理员可以查询管理权限域内所有会议的详情，普通用户仅能查询自己创建或者需要参加的会议详情。
         * 只能查询尚未结束的会议（既正在召开的会议和已预约还未召开的会议）。如果需要查询历史会议列详情，请参考[[查询历史会议详情](https://support.huaweicloud.com/api-meeting/meeting_21_0052.html)](tag:hws)[[查询历史会议详情](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0052.html)](tag:hk)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowMeetingDetail
@@ -8485,8 +8362,7 @@ class MeetingAsyncClient(Client):
 
         用户查询单个会议纪要详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowMeetingFile
@@ -8551,8 +8427,7 @@ class MeetingAsyncClient(Client):
 
         用户使用手机扫码后，手机端请求服务端,让服务端通知指定IdeaHub打开指定用户的会议纪要文件列表。二维码内容 ：cloudlink://cloudlink.huawei.com/h5page?action&#x3D;OPEN_MEETING_FILE_LIST&amp;key1&#x3D;value1&amp;key2&#x3D;value2 。key/value的个数可能变化，终端解析后，在发起后续请求时，将所有key/value存为map，作为入参即可。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowMeetingFileList
@@ -8617,8 +8492,7 @@ class MeetingAsyncClient(Client):
 
         企业用户通过该接口查询自己的信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowMyInfo
@@ -8681,8 +8555,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于查询正在召开的会议详情。管理员可以查询本企业内所有的在线会议详情，普通用户仅能查询自己帐号创建或者需要参加的在线会议详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowOnlineMeetingDetail
@@ -8759,8 +8632,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员查询所属企业的资源使用信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowOrgRes
@@ -8819,8 +8691,7 @@ class MeetingAsyncClient(Client):
 
         根据ID获取节目详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowProgram
@@ -8885,8 +8756,7 @@ class MeetingAsyncClient(Client):
 
         根据ID获取发布详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowPublication
@@ -8951,8 +8821,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于查询正在召开的会议实时信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowRealTimeInfoOfMeeting
@@ -9015,8 +8884,7 @@ class MeetingAsyncClient(Client):
 
         改接口用于查询某个会议录制的详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowRecordingDetail
@@ -9085,8 +8953,7 @@ class MeetingAsyncClient(Client):
         &gt; * 仅企业管理员权限的帐号才能查询录制文件的下载链接
         &gt; * 这个接口需要在华为云会议后台开通白名单后才能调用。请联系华为销售人员，并提供华为云会议企业ID
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowRecordingFileDownloadUrls
@@ -9155,8 +9022,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于查询会议所在区域的IP和域名。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowRegionInfoOfMeeting
@@ -9217,8 +9083,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于查询指定网络研讨会的高级设置。管理员可查询企业内的网络研讨会高级设置，非管理员只可查询自己预定的网络研讨会的高级设置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowRoomSetting
@@ -9283,8 +9148,7 @@ class MeetingAsyncClient(Client):
 
         SP管理员查询所属SP的共享资源使用信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowSpRes
@@ -9343,8 +9207,7 @@ class MeetingAsyncClient(Client):
 
         SP管理员查询SP的所有资源，包括已使用的资源。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowSpResource
@@ -9409,8 +9272,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于查询SSO登录的鉴权配置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowSsoConfig
@@ -9473,8 +9335,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员通过该接口查询企业用户详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowUserDetail
@@ -9541,8 +9402,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于管理员查询企业事件订阅配置信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowWebHookConfig
@@ -9605,8 +9465,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于查询指定网络研讨会的详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowWebinar
@@ -9672,8 +9531,7 @@ class MeetingAsyncClient(Client):
         该接口用于通过会议ID和会议密码激活会议。所有的会控接口都需要在会议激活后才能调用，可以通过该接口先激活会议。
         &gt; 来宾密码是否可以激活会议取决于会议创建时是否设置了“是否允许来宾启动会议”（allowGuestStartConf&#x3D;true）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartMeeting
@@ -9736,8 +9594,7 @@ class MeetingAsyncClient(Client):
         &gt; * 如果管理员在企业的会议设置中关闭“结束会议保留预约记录”开关，会议结束后会议列表中将删除该会议，与会者不能再次加入该会议。否则会议预约时间到之前，与会者可以再次加入该会议
         &gt; * “结束会议保留预约记录”默认是开的
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopMeeting
@@ -9800,8 +9657,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于切换会中视频画面显示策略，包括广播多画面，广播单画面，声控多画面。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SwitchMode
@@ -9866,8 +9722,7 @@ class MeetingAsyncClient(Client):
 
         企业用户通过该接口修改手机或邮箱，需要先获取验证码，验证多次失败会禁止修改。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateContact
@@ -9932,8 +9787,7 @@ class MeetingAsyncClient(Client):
 
         修改企业，若任一参数为null或者不携带则不修改。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateCorp
@@ -10000,8 +9854,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员通过该接口修改企业注册信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateCorpBasicInfo
@@ -10066,8 +9919,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员通过该接口修改部门。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDepartment
@@ -10135,8 +9987,7 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口修改专业会议终端。
         &gt; 如果需要修改Ideahub、SmartRooms、智慧屏TV请使用[[修改用户](https://support.huaweicloud.com/api-meeting/meeting_21_0068.html)](tag:hws)[[修改用户](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0068.html)](tag:hk)接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDevice
@@ -10203,8 +10054,7 @@ class MeetingAsyncClient(Client):
 
         更新信息窗素材。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateMaterial
@@ -10271,8 +10121,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于修改已预约的会议。会议开始后，不能被修改。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateMeeting
@@ -10341,8 +10190,7 @@ class MeetingAsyncClient(Client):
 
         企业用户登录后可以修改分配给用户的云会议室及个人会议ID。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateMemberVmr
@@ -10409,8 +10257,7 @@ class MeetingAsyncClient(Client):
 
         企业用户通过该接口修改自己的信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateMyInfo
@@ -10475,8 +10322,7 @@ class MeetingAsyncClient(Client):
 
         更新信息窗节目。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateProgram
@@ -10543,8 +10389,7 @@ class MeetingAsyncClient(Client):
 
         修改信息窗发布。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdatePublication
@@ -10611,8 +10456,7 @@ class MeetingAsyncClient(Client):
 
         企业成员通过该接口提供用户修改密码功能，服务器收到请求，修改用户密码并返回结果。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdatePwd
@@ -10677,8 +10521,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于修改已预约的周期性会议。会议开始后，不能被修改。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateRecurringMeeting
@@ -10747,8 +10590,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于修改已预约的周期性会议的子会议。会议开始后，不能被修改。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateRecurringSubMeeting
@@ -10817,8 +10659,7 @@ class MeetingAsyncClient(Client):
 
         企业修改资源的过期时间、停用状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateResource
@@ -10885,8 +10726,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于设置指定网络研讨会的高级设置。管理员可设置企业内的网络研讨会高级设置，非管理员只可设置自己预定的网络研讨会的高级设置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateRoomSetting
@@ -10953,8 +10793,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于修改会议配置，包括会议共享是否锁定，允许呼入范围。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateStartedConfConfig
@@ -11019,8 +10858,7 @@ class MeetingAsyncClient(Client):
 
         该接口提供刷新Token功能，根据传入的Token，刷新Token失效时间并返回结果。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateToken
@@ -11083,8 +10921,7 @@ class MeetingAsyncClient(Client):
 
         企业管理员通过该接口修改企业用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateUser
@@ -11153,8 +10990,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于管理员变更订阅配置使用状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateWebHookConfigStatus
@@ -11217,8 +11053,7 @@ class MeetingAsyncClient(Client):
 
         该接口用于修改已创建的网络研讨会。网络研讨会开始后不能修改。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateWebinar
@@ -11283,8 +11118,7 @@ class MeetingAsyncClient(Client):
 
         该接口用户上传网络研讨会高级设置用的图片。图片可用于网络研讨会的封面和Logo。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UploadFile
@@ -11352,8 +11186,7 @@ class MeetingAsyncClient(Client):
         该接口用于查询企业内历史会议的QoS告警。仅旗舰版企业/标准版企业的企业管理员有权限查询。可以查询最近3个月内的数据。
         &gt; 仪表盘的QoS统计功能需要申请才能开通。请联系华为销售人员，并提供华为云会议企业ID。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchQosHistoryMeetings
@@ -11423,8 +11256,7 @@ class MeetingAsyncClient(Client):
         该接口用于查询企业内正在召开会议的QoS告警。仅旗舰版企业/标准版企业的企业管理员有权限查询。
         &gt; 仪表盘的QoS统计功能需要申请才能开通。请联系华为销售人员，并提供华为云会议企业ID。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchQosOnlineMeetings
@@ -11490,8 +11322,7 @@ class MeetingAsyncClient(Client):
         该接口用于查询企业内在线会议或历史会议的与会者QoS数据。仅旗舰版企业/标准版企业的企业管理员有权限查询。
         &gt; 仪表盘的QoS统计功能需要申请才能开通。请联系华为销售人员，并提供华为云会议企业ID。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchQosParticipantDetail
@@ -11559,8 +11390,7 @@ class MeetingAsyncClient(Client):
         该接口用于查询企业内在线会议或历史会议的与会者QoS告警。仅旗舰版企业/标准版企业的企业管理员有权限查询。
         &gt; 仪表盘的QoS统计功能需要申请才能开通。请联系华为销售人员，并提供华为云会议企业ID。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchQosParticipants
@@ -11630,8 +11460,7 @@ class MeetingAsyncClient(Client):
         该接口用于设置QoS告警阈值。仅旗舰版企业/标准版企业的企业管理员有权限设置。
         &gt; 仪表盘的QoS统计功能需要申请才能开通。请联系华为销售人员，并提供华为云会议企业ID。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SetQosThreshold
@@ -11695,8 +11524,7 @@ class MeetingAsyncClient(Client):
         该接口用于查询QoS告警阈值。仅旗舰版企业/标准版企业的企业管理员有权限查询。
         &gt; 该接口用于查询QoS告警阈值。仅旗舰版企业/标准版企业的企业管理员有权限查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowQosThreshold
@@ -11760,8 +11588,7 @@ class MeetingAsyncClient(Client):
         * 指定日期范围内按日/按月统计的会议数据。
         &gt; 仅旗舰版企业/标准版企业的企业管理员有权限查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchStatisticConferenceInfo
@@ -11836,8 +11663,7 @@ class MeetingAsyncClient(Client):
         * 查询与会设备统计数据，按日/按月统计。
         &gt; 仅旗舰版企业/标准版企业的企业管理员有权限查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchStatisticConferenceParticipant
@@ -11910,8 +11736,7 @@ class MeetingAsyncClient(Client):
         * 查询已购资源使用状况，按日/按月统计。
         &gt; 仅旗舰版企业/标准版企业的企业管理员有权限查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchStatisticResourceInfo
@@ -11986,8 +11811,7 @@ class MeetingAsyncClient(Client):
         * 查询会议用户登录设备数据，按日/按月统计。
         &gt; 仅旗舰版企业/标准版企业的企业管理员有权限查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SearchStatisticUserInfo

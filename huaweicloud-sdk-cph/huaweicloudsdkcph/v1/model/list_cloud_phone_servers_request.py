@@ -46,7 +46,7 @@ class ListCloudPhoneServersRequest:
         :type limit: int
         :param server_name: 云手机服务器名称，支持模糊查询。
         :type server_name: str
-        :param server_id: 服务器id。
+        :param server_id: 云手机服务器的唯一标识。
         :type server_id: str
         :param network_version: 云手机服务器是否为自定义网络标识 - v1：系统定义网络的云手机服务器。 - v2：自定义网络的云手机服务器。
         :type network_version: str
@@ -142,7 +142,7 @@ class ListCloudPhoneServersRequest:
     def server_id(self):
         """Gets the server_id of this ListCloudPhoneServersRequest.
 
-        服务器id。
+        云手机服务器的唯一标识。
 
         :return: The server_id of this ListCloudPhoneServersRequest.
         :rtype: str
@@ -153,7 +153,7 @@ class ListCloudPhoneServersRequest:
     def server_id(self, server_id):
         """Sets the server_id of this ListCloudPhoneServersRequest.
 
-        服务器id。
+        云手机服务器的唯一标识。
 
         :param server_id: The server_id of this ListCloudPhoneServersRequest.
         :type server_id: str

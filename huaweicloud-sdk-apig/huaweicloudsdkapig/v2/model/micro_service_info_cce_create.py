@@ -25,7 +25,8 @@ class MicroServiceInfoCCECreate:
         'workload_type': 'str',
         'app_name': 'str',
         'version': 'str',
-        'port': 'int'
+        'port': 'int',
+        'labels': 'list[MicroserviceLabel]'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class MicroServiceInfoCCECreate:
         'workload_type': 'workload_type',
         'app_name': 'app_name',
         'version': 'version',
-        'port': 'port'
+        'port': 'port',
+        'labels': 'labels'
     }
 
-    def __init__(self, cluster_id=None, namespace=None, workload_type=None, app_name=None, version=None, port=None):
+    def __init__(self, cluster_id=None, namespace=None, workload_type=None, app_name=None, version=None, port=None, labels=None):
         """MicroServiceInfoCCECreate
 
         The model defined in huaweicloud sdk
@@ -54,6 +56,8 @@ class MicroServiceInfoCCECreate:
         :type version: str
         :param port: 工作负载的监听端口号
         :type port: int
+        :param labels: 工作负载的标签列表。
+        :type labels: list[:class:`huaweicloudsdkapig.v2.MicroserviceLabel`]
         """
         
         
@@ -64,6 +68,7 @@ class MicroServiceInfoCCECreate:
         self._app_name = None
         self._version = None
         self._port = None
+        self._labels = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
@@ -72,6 +77,8 @@ class MicroServiceInfoCCECreate:
         self.app_name = app_name
         self.version = version
         self.port = port
+        if labels is not None:
+            self.labels = labels
 
     @property
     def cluster_id(self):
@@ -204,6 +211,28 @@ class MicroServiceInfoCCECreate:
         :type port: int
         """
         self._port = port
+
+    @property
+    def labels(self):
+        """Gets the labels of this MicroServiceInfoCCECreate.
+
+        工作负载的标签列表。
+
+        :return: The labels of this MicroServiceInfoCCECreate.
+        :rtype: list[:class:`huaweicloudsdkapig.v2.MicroserviceLabel`]
+        """
+        return self._labels
+
+    @labels.setter
+    def labels(self, labels):
+        """Sets the labels of this MicroServiceInfoCCECreate.
+
+        工作负载的标签列表。
+
+        :param labels: The labels of this MicroServiceInfoCCECreate.
+        :type labels: list[:class:`huaweicloudsdkapig.v2.MicroserviceLabel`]
+        """
+        self._labels = labels
 
     def to_dict(self):
         """Returns the model properties as a dict"""

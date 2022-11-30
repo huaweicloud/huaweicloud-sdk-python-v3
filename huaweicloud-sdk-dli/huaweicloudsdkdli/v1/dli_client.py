@@ -47,8 +47,7 @@ class DliClient(Client):
 
         在DLI服务中新建一个用户模板，最多100个。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateFlinkTemplate
         :type request: :class:`huaweicloudsdkdli.v1.CreateFlinkTemplateRequest`
@@ -108,8 +107,7 @@ class DliClient(Client):
 
         创建全局变量。全局变量用于替换SQL作业中的敏感数据。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateGlobleValue
         :type request: :class:`huaweicloudsdkdli.v1.CreateGlobleValueRequest`
@@ -169,8 +167,7 @@ class DliClient(Client):
 
         删除一个模板，即使当前模板正在被作业使用，也允许删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteFlinkTemplate
         :type request: :class:`huaweicloudsdkdli.v1.DeleteFlinkTemplateRequest`
@@ -230,8 +227,7 @@ class DliClient(Client):
 
         删除全局变量。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteGlobalValue
         :type request: :class:`huaweicloudsdkdli.v1.DeleteGlobalValueRequest`
@@ -291,8 +287,7 @@ class DliClient(Client):
 
         查询作业模板列表。当前只支持查询用户自定义模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListFlinkTemplates
         :type request: :class:`huaweicloudsdkdli.v1.ListFlinkTemplatesRequest`
@@ -360,8 +355,7 @@ class DliClient(Client):
 
         查询全局变量列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListGlobalValues
         :type request: :class:`huaweicloudsdkdli.v1.ListGlobalValuesRequest`
@@ -423,8 +417,7 @@ class DliClient(Client):
 
         对DLI服务中已有的模板进行更新。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateFlinkTemplate
         :type request: :class:`huaweicloudsdkdli.v1.UpdateFlinkTemplateRequest`
@@ -486,8 +479,7 @@ class DliClient(Client):
 
         修改全局变量。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateGlobalValue
         :type request: :class:`huaweicloudsdkdli.v1.UpdateGlobalValueRequest`
@@ -549,8 +541,7 @@ class DliClient(Client):
 
         该API用于在已创建的增强型跨源中绑定队列。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AssociateConnectionQueue
         :type request: :class:`huaweicloudsdkdli.v1.AssociateConnectionQueueRequest`
@@ -612,8 +603,7 @@ class DliClient(Client):
 
         关联队列到弹性资源池
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AssociateQueueToElasticResourcePool
         :type request: :class:`huaweicloudsdkdli.v1.AssociateQueueToElasticResourcePoolRequest`
@@ -675,8 +665,7 @@ class DliClient(Client):
 
         该API用于处理边缘Flink作业状态上报信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ChangeFlinkJobStatusReport
         :type request: :class:`huaweicloudsdkdli.v1.ChangeFlinkJobStatusReportRequest`
@@ -739,8 +728,7 @@ class DliClient(Client):
         如果需要了解Console界面的使用方法，可参考经典型跨源连接。
         系统default队列不支持创建跨源连接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDatasourceConnection
         :type request: :class:`huaweicloudsdkdli.v1.CreateDatasourceConnectionRequest`
@@ -800,8 +788,7 @@ class DliClient(Client):
 
         创建弹性资源池
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateElasticResourcePool
         :type request: :class:`huaweicloudsdkdli.v1.CreateElasticResourcePoolRequest`
@@ -861,8 +848,7 @@ class DliClient(Client):
 
         该API用于创建与其他服务的增强型跨源连接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateEnhancedConnection
         :type request: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionRequest`
@@ -922,8 +908,7 @@ class DliClient(Client):
 
         用户自定义作业目前支持jar格式，运行在独享集群中。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateFlinkJar
         :type request: :class:`huaweicloudsdkdli.v1.CreateFlinkJarRequest`
@@ -983,8 +968,7 @@ class DliClient(Client):
 
         通过POST方式，提交流式SQL作业，请求体为JSON格式。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateFlinkSql
         :type request: :class:`huaweicloudsdkdli.v1.CreateFlinkSqlRequest`
@@ -1044,8 +1028,7 @@ class DliClient(Client):
 
         该API用于创建IEF消息通道
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateIefMessageChannel
         :type request: :class:`huaweicloudsdkdli.v1.CreateIefMessageChannelRequest`
@@ -1105,8 +1088,7 @@ class DliClient(Client):
 
         该API用于处理IEF系统事件上报
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateIefSystemEvents
         :type request: :class:`huaweicloudsdkdli.v1.CreateIefSystemEventsRequest`
@@ -1166,8 +1148,7 @@ class DliClient(Client):
 
         生成flink SQL作业的静态流图
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateStreamGraph
         :type request: :class:`huaweicloudsdkdli.v1.CreateStreamGraphRequest`
@@ -1229,8 +1210,7 @@ class DliClient(Client):
 
         批量删除任何状态的作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteBatchFlinkJob
         :type request: :class:`huaweicloudsdkdli.v1.DeleteBatchFlinkJobRequest`
@@ -1292,8 +1272,7 @@ class DliClient(Client):
         说明：
         创建中的连接，无法删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDatasourceConnection
         :type request: :class:`huaweicloudsdkdli.v1.DeleteDatasourceConnectionRequest`
@@ -1353,8 +1332,7 @@ class DliClient(Client):
 
         删除弹性资源池
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteElasticResourcePool
         :type request: :class:`huaweicloudsdkdli.v1.DeleteElasticResourcePoolRequest`
@@ -1414,8 +1392,7 @@ class DliClient(Client):
 
         该API用于删除已创建的增强型跨源连接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteEnhancedConnection
         :type request: :class:`huaweicloudsdkdli.v1.DeleteEnhancedConnectionRequest`
@@ -1475,8 +1452,7 @@ class DliClient(Client):
 
         删除任何状态的作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteFlink
         :type request: :class:`huaweicloudsdkdli.v1.DeleteFlinkRequest`
@@ -1536,8 +1512,7 @@ class DliClient(Client):
 
         该API用于在增强型跨源中解绑已绑定的队列。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DisassociateConnectionQueue
         :type request: :class:`huaweicloudsdkdli.v1.DisassociateConnectionQueueRequest`
@@ -1599,8 +1574,7 @@ class DliClient(Client):
 
         通过POST方式，导出流作业，请求体为JSON格式。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExportFlinkJob
         :type request: :class:`huaweicloudsdkdli.v1.ExportFlinkJobRequest`
@@ -1660,8 +1634,7 @@ class DliClient(Client):
 
         通过POST方式，导入流作业，请求体为JSON格式。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ImportFlinkJob
         :type request: :class:`huaweicloudsdkdli.v1.ImportFlinkJobRequest`
@@ -1721,8 +1694,7 @@ class DliClient(Client):
 
         该API用于查询该用户已创建的经典型跨源连接列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDatasourceConnections
         :type request: :class:`huaweicloudsdkdli.v1.ListDatasourceConnectionsRequest`
@@ -1782,8 +1754,7 @@ class DliClient(Client):
 
         查询弹性资源池所属队列
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListElasticResourcePoolQueues
         :type request: :class:`huaweicloudsdkdli.v1.ListElasticResourcePoolQueuesRequest`
@@ -1849,8 +1820,7 @@ class DliClient(Client):
 
         查询所有弹性资源池
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListElasticResourcePools
         :type request: :class:`huaweicloudsdkdli.v1.ListElasticResourcePoolsRequest`
@@ -1918,8 +1888,7 @@ class DliClient(Client):
 
         该API用于查询该用户已创建的增强型跨源连接列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEnhancedConnections
         :type request: :class:`huaweicloudsdkdli.v1.ListEnhancedConnectionsRequest`
@@ -1987,8 +1956,7 @@ class DliClient(Client):
 
         查询当前用户的作业列表，可以根据作业ID作为ID，查询大于ID或小于ID的限定条数的作业，默认查询全部状态的作业，也可以设定运行中或其他状态条件。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListFlinkJobs
         :type request: :class:`huaweicloudsdkdli.v1.ListFlinkJobsRequest`
@@ -2070,8 +2038,7 @@ class DliClient(Client):
 
         用户主动授权OBS桶的操作权限给DLI服务, 用于保存用户作业的checkpoint、作业的运行日志等。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RegisterBucket
         :type request: :class:`huaweicloudsdkdli.v1.RegisterBucketRequest`
@@ -2131,8 +2098,7 @@ class DliClient(Client):
 
         触发批量运行作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RunFlinkJob
         :type request: :class:`huaweicloudsdkdli.v1.RunFlinkJobRequest`
@@ -2192,8 +2158,7 @@ class DliClient(Client):
 
         该API用于处理IEF Flink作业action回调信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RunIefJobActionCallBack
         :type request: :class:`huaweicloudsdkdli.v1.RunIefJobActionCallBackRequest`
@@ -2253,8 +2218,7 @@ class DliClient(Client):
 
         该API用于查询该用户指定的已创建的经典型跨源连接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDatasourceConnection
         :type request: :class:`huaweicloudsdkdli.v1.ShowDatasourceConnectionRequest`
@@ -2314,8 +2278,7 @@ class DliClient(Client):
 
         该API用于查询该用户指定的已创建的增强型跨源连接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowEnhancedConnection
         :type request: :class:`huaweicloudsdkdli.v1.ShowEnhancedConnectionRequest`
@@ -2375,8 +2338,7 @@ class DliClient(Client):
 
         该API用于查询增强型跨源连接授权的信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowEnhancedPrivilege
         :type request: :class:`huaweicloudsdkdli.v1.ShowEnhancedPrivilegeRequest`
@@ -2436,8 +2398,7 @@ class DliClient(Client):
 
         查询作业执行计划。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowFlinkExecuteGraph
         :type request: :class:`huaweicloudsdkdli.v1.ShowFlinkExecuteGraphRequest`
@@ -2497,8 +2458,7 @@ class DliClient(Client):
 
         查看一个作业的详情信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowFlinkJob
         :type request: :class:`huaweicloudsdkdli.v1.ShowFlinkJobRequest`
@@ -2558,8 +2518,7 @@ class DliClient(Client):
 
         查询作业监控信息, 支持同时查询多个作业的监控信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowFlinkMetric
         :type request: :class:`huaweicloudsdkdli.v1.ShowFlinkMetricRequest`
@@ -2619,8 +2578,7 @@ class DliClient(Client):
 
         批量停止正在运行的作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StopFlinkJob
         :type request: :class:`huaweicloudsdkdli.v1.StopFlinkJobRequest`
@@ -2680,8 +2638,7 @@ class DliClient(Client):
 
         修改弹性资源池信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateElasticResourcePool
         :type request: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolRequest`
@@ -2743,8 +2700,7 @@ class DliClient(Client):
 
         设置弹性资源池指定队列的扩缩容策略信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateElasticResourcePoolQueueInfo
         :type request: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolQueueInfoRequest`
@@ -2808,8 +2764,7 @@ class DliClient(Client):
 
         更新用户自定义作业，目前支持jar格式，运行在独享集群中。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateFlinkJar
         :type request: :class:`huaweicloudsdkdli.v1.UpdateFlinkJarRequest`
@@ -2871,8 +2826,7 @@ class DliClient(Client):
 
         Stream SQL的语法扩展了Apache Flink SQL。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateFlinkSql
         :type request: :class:`huaweicloudsdkdli.v1.UpdateFlinkSqlRequest`
@@ -2934,8 +2888,7 @@ class DliClient(Client):
 
         该API用于在跨源中修改数据源主机信息，仅支持全量覆盖。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateHostMassage
         :type request: :class:`huaweicloudsdkdli.v1.UpdateHostMassageRequest`
@@ -2997,8 +2950,7 @@ class DliClient(Client):
 
         创建DLI委托
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDliAgency
         :type request: :class:`huaweicloudsdkdli.v1.CreateDliAgencyRequest`
@@ -3058,8 +3010,7 @@ class DliClient(Client):
 
         获取dli委托信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDliAgency
         :type request: :class:`huaweicloudsdkdli.v1.ShowDliAgencyRequest`
@@ -3117,8 +3068,7 @@ class DliClient(Client):
 
         该API用于批量删除队列定时扩缩容计划。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteQueuePlans
         :type request: :class:`huaweicloudsdkdli.v1.BatchDeleteQueuePlansRequest`
@@ -3180,8 +3130,7 @@ class DliClient(Client):
 
         该API用于取消已经提交的作业，若作业已经执行结束或失败则无法取消。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CancelJob
         :type request: :class:`huaweicloudsdkdli.v1.CancelJobRequest`
@@ -3243,8 +3192,7 @@ class DliClient(Client):
         说明：
         被赋权用户所在用户组的所属区域需具有Tenant Guest权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ChangeAuthorization
         :type request: :class:`huaweicloudsdkdli.v1.ChangeAuthorizationRequest`
@@ -3304,8 +3252,7 @@ class DliClient(Client):
 
         该API用于修改指定ID的队列定时扩缩容计划。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ChangeQueuePlan
         :type request: :class:`huaweicloudsdkdli.v1.ChangeQueuePlanRequest`
@@ -3369,8 +3316,7 @@ class DliClient(Client):
 
         创建地址连通性请求API接口，往指定集群发送地址连通性测试请求，并将测试地址插入表内
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckConnection
         :type request: :class:`huaweicloudsdkdli.v1.CheckConnectionRequest`
@@ -3432,8 +3378,7 @@ class DliClient(Client):
 
         该API用于检查SQL语法。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckSql
         :type request: :class:`huaweicloudsdkdli.v1.CheckSqlRequest`
@@ -3493,8 +3438,7 @@ class DliClient(Client):
 
         该API用于新增数据库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDatabase
         :type request: :class:`huaweicloudsdkdli.v1.CreateDatabaseRequest`
@@ -3554,8 +3498,7 @@ class DliClient(Client):
 
         该API用于创建数据下载作业。在DLI内部创建一个赋权给用户的额桶并返回
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDownloadJob
         :type request: :class:`huaweicloudsdkdli.v1.CreateDownloadJobRequest`
@@ -3615,8 +3558,7 @@ class DliClient(Client):
 
         该API用于创建队列，该队列将会绑定用户指定的计算资源。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateQueue
         :type request: :class:`huaweicloudsdkdli.v1.CreateQueueRequest`
@@ -3676,8 +3618,7 @@ class DliClient(Client):
 
         创建队列定时扩缩容计划接口，对指定的队列创建定时规格变更计划。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateQueuePlan
         :type request: :class:`huaweicloudsdkdli.v1.CreateQueuePlanRequest`
@@ -3739,8 +3680,7 @@ class DliClient(Client):
 
         该API用于创建新的表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateTable
         :type request: :class:`huaweicloudsdkdli.v1.CreateTableRequest`
@@ -3802,8 +3742,7 @@ class DliClient(Client):
 
         该API用于删除空数据库，若待删除的数据库中存在表，则需先删除其中的所有表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDatabase
         :type request: :class:`huaweicloudsdkdli.v1.DeleteDatabaseRequest`
@@ -3869,8 +3808,7 @@ class DliClient(Client):
         说明：
         若指定队列正在执行任务，则不允许删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteQueue
         :type request: :class:`huaweicloudsdkdli.v1.DeleteQueueRequest`
@@ -3930,8 +3868,7 @@ class DliClient(Client):
 
         该API用于删除指定ID的队列定时扩缩容计划。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteQueuePlan
         :type request: :class:`huaweicloudsdkdli.v1.DeleteQueuePlanRequest`
@@ -3993,8 +3930,7 @@ class DliClient(Client):
 
         该API用于删除指定的表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteTable
         :type request: :class:`huaweicloudsdkdli.v1.DeleteTableRequest`
@@ -4058,8 +3994,7 @@ class DliClient(Client):
 
         该API用于将数据导出到文件。支持数据从DLI表中导出到文件。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExportData
         :type request: :class:`huaweicloudsdkdli.v1.ExportDataRequest`
@@ -4119,8 +4054,7 @@ class DliClient(Client):
 
         该API用于将SQL语句的查询结果导出到OBS对象存储中，只支持导出“QUERY”类型作业的查询结果。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExportJobResult
         :type request: :class:`huaweicloudsdkdli.v1.ExportJobResultRequest`
@@ -4182,8 +4116,7 @@ class DliClient(Client):
 
         该API用于将数据从文件导入DLI或OBS表，目前仅支持将OBS上的数据导入DLI或OBS中。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ImportData
         :type request: :class:`huaweicloudsdkdli.v1.ImportDataRequest`
@@ -4243,8 +4176,7 @@ class DliClient(Client):
 
         该API用于查询指定数据库下符合过滤条件的或所有的表信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAllTables
         :type request: :class:`huaweicloudsdkdli.v1.ListAllTablesRequest`
@@ -4316,8 +4248,7 @@ class DliClient(Client):
 
         该API用于查询可以使用的指定队列的所有用户名称。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDatabaseUsers
         :type request: :class:`huaweicloudsdkdli.v1.ListDatabaseUsersRequest`
@@ -4377,8 +4308,7 @@ class DliClient(Client):
 
         该API用于查询出所有的数据库信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDatabases
         :type request: :class:`huaweicloudsdkdli.v1.ListDatabasesRequest`
@@ -4446,8 +4376,7 @@ class DliClient(Client):
 
         该API用于查询当前工程下面的所有作业的信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListJobs
         :type request: :class:`huaweicloudsdkdli.v1.ListJobsRequest`
@@ -4533,8 +4462,7 @@ class DliClient(Client):
 
         查看队列定时扩缩容计划接口，列出指定队列定时规格变更计划。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListQueuePlans
         :type request: :class:`huaweicloudsdkdli.v1.ListQueuePlansRequest`
@@ -4594,8 +4522,7 @@ class DliClient(Client):
 
         该API用于查询可以使用的指定队列的所有用户名称。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListQueueUsers
         :type request: :class:`huaweicloudsdkdli.v1.ListQueueUsersRequest`
@@ -4655,8 +4582,7 @@ class DliClient(Client):
 
         该API用于列出该project下所有的队列。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListQueues
         :type request: :class:`huaweicloudsdkdli.v1.ListQueuesRequest`
@@ -4722,8 +4648,7 @@ class DliClient(Client):
 
         该API用于查询指定用户在表上的权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTablePrivileges
         :type request: :class:`huaweicloudsdkdli.v1.ListTablePrivilegesRequest`
@@ -4787,8 +4712,7 @@ class DliClient(Client):
 
         该API用于查看有权访问指定表或表的列的所有用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTableUsers
         :type request: :class:`huaweicloudsdkdli.v1.ListTableUsersRequest`
@@ -4850,8 +4774,7 @@ class DliClient(Client):
 
         该API用于与其他用户共享指定的队列，可以给用户赋使用指定的队列的权限或者收回使用权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RegisterAuthorizedQueue
         :type request: :class:`huaweicloudsdkdli.v1.RegisterAuthorizedQueueRequest`
@@ -4913,8 +4836,7 @@ class DliClient(Client):
         
         作业包含以下类型：DDL、DCL、IMPORT、QUERY和INSERT。其中，IMPORT与导入数据的功能一致，区别仅在于实现方式不同。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RunJob
         :type request: :class:`huaweicloudsdkdli.v1.RunJobRequest`
@@ -4974,8 +4896,7 @@ class DliClient(Client):
 
         该功能用于重新启动队列、扩容队列、缩容队列。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RunQueueAction
         :type request: :class:`huaweicloudsdkdli.v1.RunQueueActionRequest`
@@ -5037,8 +4958,7 @@ class DliClient(Client):
 
         该API用于描述指定表的元数据信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDescribeTable
         :type request: :class:`huaweicloudsdkdli.v1.ShowDescribeTableRequest`
@@ -5100,8 +5020,7 @@ class DliClient(Client):
 
         该API用于查询作业的详细信息，如作业的databasename、tablename、file size和export mode等信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailInfo
         :type request: :class:`huaweicloudsdkdli.v1.ShowDetailInfoRequest`
@@ -5161,8 +5080,7 @@ class DliClient(Client):
 
         该API用于获取作业执行进度信息，如果作业正在执行，可以获取到子作业的信息，如果作业刚开始或者已经结束，不可以获取到子作业信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowJobProgress
         :type request: :class:`huaweicloudsdkdli.v1.ShowJobProgressRequest`
@@ -5223,8 +5141,7 @@ class DliClient(Client):
         该API用于在执行SQL查询语句的作业完成后，查看该作业执行的结果。目前仅支持查看“QUERY”类型作业的执行结果。
         该API只能查看前1000条的结果记录，若要查看全部的结果记录，需要先导出查询结果再进行查看。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowJobResult
         :type request: :class:`huaweicloudsdkdli.v1.ShowJobResultRequest`
@@ -5286,8 +5203,7 @@ class DliClient(Client):
 
         该API用于在作业提交后查询作业状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowJobStatus
         :type request: :class:`huaweicloudsdkdli.v1.ShowJobStatusRequest`
@@ -5347,8 +5263,7 @@ class DliClient(Client):
 
         该API用于在连通性测试提交后查询连通性结果。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowNodeConnectivity
         :type request: :class:`huaweicloudsdkdli.v1.ShowNodeConnectivityRequest`
@@ -5410,8 +5325,7 @@ class DliClient(Client):
 
         获取对象赋权用户的权限信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowObjectUser
         :type request: :class:`huaweicloudsdkdli.v1.ShowObjectUserRequest`
@@ -5470,8 +5384,7 @@ class DliClient(Client):
         """获取分区信息列表
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPartitions
         :type request: :class:`huaweicloudsdkdli.v1.ShowPartitionsRequest`
@@ -5537,8 +5450,7 @@ class DliClient(Client):
 
         该API用于列出该project下指定的队列详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowQueueDetail
         :type request: :class:`huaweicloudsdkdli.v1.ShowQueueDetailRequest`
@@ -5598,8 +5510,7 @@ class DliClient(Client):
 
         该API用于用于预览表中前10行的内容。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTableContent
         :type request: :class:`huaweicloudsdkdli.v1.ShowTableContentRequest`
@@ -5663,8 +5574,7 @@ class DliClient(Client):
 
         用于修改数据库的owner。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDatabaseOwner
         :type request: :class:`huaweicloudsdkdli.v1.UpdateDatabaseOwnerRequest`
@@ -5728,8 +5638,7 @@ class DliClient(Client):
         说明：
         如果待修改网段的队列中有正在提交或正在运行的作业，或者改队列已经绑定了增强型跨源，将不支持修改网段操作。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateQueueCidr
         :type request: :class:`huaweicloudsdkdli.v1.UpdateQueueCidrRequest`
@@ -5791,8 +5700,7 @@ class DliClient(Client):
 
         用于修改表的owner。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateTableOwner
         :type request: :class:`huaweicloudsdkdli.v1.UpdateTableOwnerRequest`
@@ -5856,8 +5764,7 @@ class DliClient(Client):
 
         该API用于取消批处理作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CancelBatchJob
         :type request: :class:`huaweicloudsdkdli.v1.CancelBatchJobRequest`
@@ -5917,8 +5824,7 @@ class DliClient(Client):
 
         该API用于在某个队列上创建作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateBatchJob
         :type request: :class:`huaweicloudsdkdli.v1.CreateBatchJobRequest`
@@ -5980,8 +5886,7 @@ class DliClient(Client):
 
         该API用于删除某个project某个分组下的资源包
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteResource
         :type request: :class:`huaweicloudsdkdli.v1.DeleteResourceRequest`
@@ -6043,8 +5948,7 @@ class DliClient(Client):
 
         该API用于查询Project下某队列批处理作业的列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListBatches
         :type request: :class:`huaweicloudsdkdli.v1.ListBatchesRequest`
@@ -6120,8 +6024,7 @@ class DliClient(Client):
 
         该API用于查看某个project下的所有资源，其中包含Group。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListResources
         :type request: :class:`huaweicloudsdkdli.v1.ListResourcesRequest`
@@ -6183,8 +6086,7 @@ class DliClient(Client):
 
         该API用于根据批处理作业的id查询作业详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowBatchInfo
         :type request: :class:`huaweicloudsdkdli.v1.ShowBatchInfoRequest`
@@ -6244,8 +6146,7 @@ class DliClient(Client):
 
         该API用于查询批处理作业的后台日志。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowBatchLog
         :type request: :class:`huaweicloudsdkdli.v1.ShowBatchLogRequest`
@@ -6313,8 +6214,7 @@ class DliClient(Client):
 
         该API用于查询批处理作业的状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowBatchState
         :type request: :class:`huaweicloudsdkdli.v1.ShowBatchStateRequest`
@@ -6374,8 +6274,7 @@ class DliClient(Client):
 
         该API用于查看某个project某个分组下的具体资源信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowResourceInfo
         :type request: :class:`huaweicloudsdkdli.v1.ShowResourceInfoRequest`
@@ -6437,8 +6336,7 @@ class DliClient(Client):
 
         用于修改程序包的owner。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateGroupOrResourceOwner
         :type request: :class:`huaweicloudsdkdli.v1.UpdateGroupOrResourceOwnerRequest`
@@ -6499,8 +6397,7 @@ class DliClient(Client):
         该API用于在project下上传file类型模块。
         说明： 上传同名file模块时，新模块将会覆盖旧模块。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UploadFiles
         :type request: :class:`huaweicloudsdkdli.v1.UploadFilesRequest`
@@ -6563,8 +6460,7 @@ class DliClient(Client):
         该API用于在project下上传jar类型分组资源。
         说明：上传同名资源模块时，新模块将会覆盖旧模块。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UploadJars
         :type request: :class:`huaweicloudsdkdli.v1.UploadJarsRequest`
@@ -6627,8 +6523,7 @@ class DliClient(Client):
         该API用于在project下的上传pyfile类型模块。
         说明： 上传同名pyfile类型模块时，新模块将会覆盖旧模块。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UploadPythonFiles
         :type request: :class:`huaweicloudsdkdli.v1.UploadPythonFilesRequest`
@@ -6690,8 +6585,7 @@ class DliClient(Client):
 
         该API用于上传分组资源到某个project下。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UploadResources
         :type request: :class:`huaweicloudsdkdli.v1.UploadResourcesRequest`

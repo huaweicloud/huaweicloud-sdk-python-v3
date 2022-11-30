@@ -20,6 +20,7 @@ class PolicyAssignment:
     sensitive_list = []
 
     openapi_types = {
+        'policy_assignment_type': 'str',
         'id': 'str',
         'name': 'str',
         'description': 'str',
@@ -29,10 +30,12 @@ class PolicyAssignment:
         'created': 'str',
         'updated': 'str',
         'policy_definition_id': 'str',
+        'custom_policy': 'CustomPolicy',
         'parameters': 'dict(str, PolicyParameterValue)'
     }
 
     attribute_map = {
+        'policy_assignment_type': 'policy_assignment_type',
         'id': 'id',
         'name': 'name',
         'description': 'description',
@@ -42,14 +45,17 @@ class PolicyAssignment:
         'created': 'created',
         'updated': 'updated',
         'policy_definition_id': 'policy_definition_id',
+        'custom_policy': 'custom_policy',
         'parameters': 'parameters'
     }
 
-    def __init__(self, id=None, name=None, description=None, policy_filter=None, period=None, state=None, created=None, updated=None, policy_definition_id=None, parameters=None):
+    def __init__(self, policy_assignment_type=None, id=None, name=None, description=None, policy_filter=None, period=None, state=None, created=None, updated=None, policy_definition_id=None, custom_policy=None, parameters=None):
         """PolicyAssignment
 
         The model defined in huaweicloud sdk
 
+        :param policy_assignment_type: 规则类型，包括预定义合规规则(builtin)和用户自定义合规规则(custom)
+        :type policy_assignment_type: str
         :param id: 规则ID
         :type id: str
         :param name: 规则名字
@@ -68,12 +74,15 @@ class PolicyAssignment:
         :type updated: str
         :param policy_definition_id: 规则的策略ID
         :type policy_definition_id: str
+        :param custom_policy: 
+        :type custom_policy: :class:`huaweicloudsdkrms.v1.CustomPolicy`
         :param parameters: 规则参数
         :type parameters: dict(str, PolicyParameterValue)
         """
         
         
 
+        self._policy_assignment_type = None
         self._id = None
         self._name = None
         self._description = None
@@ -83,9 +92,12 @@ class PolicyAssignment:
         self._created = None
         self._updated = None
         self._policy_definition_id = None
+        self._custom_policy = None
         self._parameters = None
         self.discriminator = None
 
+        if policy_assignment_type is not None:
+            self.policy_assignment_type = policy_assignment_type
         if id is not None:
             self.id = id
         if name is not None:
@@ -104,8 +116,32 @@ class PolicyAssignment:
             self.updated = updated
         if policy_definition_id is not None:
             self.policy_definition_id = policy_definition_id
+        if custom_policy is not None:
+            self.custom_policy = custom_policy
         if parameters is not None:
             self.parameters = parameters
+
+    @property
+    def policy_assignment_type(self):
+        """Gets the policy_assignment_type of this PolicyAssignment.
+
+        规则类型，包括预定义合规规则(builtin)和用户自定义合规规则(custom)
+
+        :return: The policy_assignment_type of this PolicyAssignment.
+        :rtype: str
+        """
+        return self._policy_assignment_type
+
+    @policy_assignment_type.setter
+    def policy_assignment_type(self, policy_assignment_type):
+        """Sets the policy_assignment_type of this PolicyAssignment.
+
+        规则类型，包括预定义合规规则(builtin)和用户自定义合规规则(custom)
+
+        :param policy_assignment_type: The policy_assignment_type of this PolicyAssignment.
+        :type policy_assignment_type: str
+        """
+        self._policy_assignment_type = policy_assignment_type
 
     @property
     def id(self):
@@ -300,6 +336,24 @@ class PolicyAssignment:
         :type policy_definition_id: str
         """
         self._policy_definition_id = policy_definition_id
+
+    @property
+    def custom_policy(self):
+        """Gets the custom_policy of this PolicyAssignment.
+
+        :return: The custom_policy of this PolicyAssignment.
+        :rtype: :class:`huaweicloudsdkrms.v1.CustomPolicy`
+        """
+        return self._custom_policy
+
+    @custom_policy.setter
+    def custom_policy(self, custom_policy):
+        """Sets the custom_policy of this PolicyAssignment.
+
+        :param custom_policy: The custom_policy of this PolicyAssignment.
+        :type custom_policy: :class:`huaweicloudsdkrms.v1.CustomPolicy`
+        """
+        self._custom_policy = custom_policy
 
     @property
     def parameters(self):

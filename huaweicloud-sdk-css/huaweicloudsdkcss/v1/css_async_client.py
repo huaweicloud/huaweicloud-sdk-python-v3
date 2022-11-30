@@ -47,8 +47,7 @@ class CssAsyncClient(Client):
 
         由于集群数据面业务的增长或者不确定性，很难在一开始就能够把集群的规模形态想明白，该接口能够在非独立master和client的集群上面独立master、client角色。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddIndependentNode
@@ -113,8 +112,7 @@ class CssAsyncClient(Client):
 
         该接口用于切换集群的安全模式。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ChangeMode
@@ -177,8 +175,7 @@ class CssAsyncClient(Client):
 
         该接口用于设置自动创建快照，默认一天创建一个快照。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateAutoCreatePolicy
@@ -241,8 +238,7 @@ class CssAsyncClient(Client):
 
         该接口用于开启公网访问。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateBindPublic
@@ -305,8 +301,7 @@ class CssAsyncClient(Client):
 
         该接口用于创建集群。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateCluster
@@ -367,8 +362,7 @@ class CssAsyncClient(Client):
 
         该接口用于给指定集群添加标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateClustersTags
@@ -433,8 +427,7 @@ class CssAsyncClient(Client):
 
         该接口用于加载存放于OBS的自定义词库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateLoadIkThesaurus
@@ -497,8 +490,7 @@ class CssAsyncClient(Client):
 
         该接口用于备份日志。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateLogBackup
@@ -559,8 +551,7 @@ class CssAsyncClient(Client):
 
         该接口用于手动创建一个快照。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateSnapshot
@@ -625,8 +616,7 @@ class CssAsyncClient(Client):
         
         &gt;此接口亦可用于包年/包月集群退订。公安冻结的集群不能删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteCluster
@@ -687,8 +677,7 @@ class CssAsyncClient(Client):
 
         此接口用于删除集群标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteClustersTags
@@ -753,8 +742,7 @@ class CssAsyncClient(Client):
 
         该接口用于删除自定义词库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteIkThesaurus
@@ -815,8 +803,7 @@ class CssAsyncClient(Client):
 
         该接口用于删除快照。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteSnapshot
@@ -879,8 +866,7 @@ class CssAsyncClient(Client):
 
         该接口用于下载安全证书。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DownloadCert
@@ -939,8 +925,7 @@ class CssAsyncClient(Client):
 
         该接口用于查询并显示集群列表以及集群的状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListClustersDetails
@@ -1003,8 +988,7 @@ class CssAsyncClient(Client):
 
         该接口用于查询指定region下的所有标签集合。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListClustersTags
@@ -1065,8 +1049,7 @@ class CssAsyncClient(Client):
 
         该接口用于查询并显示支持的实例规格对应的ID。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListFlavors
@@ -1125,8 +1108,7 @@ class CssAsyncClient(Client):
 
         该接口用于查询具体某个集群的日志任务记录列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListLogsJob
@@ -1187,8 +1169,7 @@ class CssAsyncClient(Client):
 
         该接口用于查询集群的所有快照。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSnapshots
@@ -1249,8 +1230,7 @@ class CssAsyncClient(Client):
 
         该接口用于获取当前集群现有的参数配置列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListYmls
@@ -1311,8 +1291,7 @@ class CssAsyncClient(Client):
 
         该接口可获取参数配置的任务操作列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListYmlsJob
@@ -1373,8 +1352,7 @@ class CssAsyncClient(Client):
 
         该接口用于修改集群密码。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetPassword
@@ -1437,8 +1415,7 @@ class CssAsyncClient(Client):
 
         此接口用于重启集群，重启集群将导致业务中断。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RestartCluster
@@ -1499,8 +1476,7 @@ class CssAsyncClient(Client):
 
         该接口用于手动恢复一个快照。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RestoreSnapshot
@@ -1565,8 +1541,7 @@ class CssAsyncClient(Client):
 
         该接口用于查询自动创建快照策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowAutoCreatePolicy
@@ -1627,8 +1602,7 @@ class CssAsyncClient(Client):
 
         该接口用于查询并显示单个集群详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowClusterDetail
@@ -1689,8 +1663,7 @@ class CssAsyncClient(Client):
 
         该接口用于查询指定集群的标签信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowClusterTag
@@ -1753,8 +1726,7 @@ class CssAsyncClient(Client):
 
         该接口用于日志基础配置查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowGetLogSetting
@@ -1815,8 +1787,7 @@ class CssAsyncClient(Client):
 
         该接口用于查询自定义词库的加载状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowIkThesaurus
@@ -1877,8 +1848,7 @@ class CssAsyncClient(Client):
 
         该接口用于查询日志信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowLogBackup
@@ -1941,8 +1911,7 @@ class CssAsyncClient(Client):
 
         该接口用于获取终端节点连接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowVpcepConnection
@@ -2009,8 +1978,7 @@ class CssAsyncClient(Client):
         - “备份路径”：快照在OBS桶中的存放路径。
         - “IAM委托”：由于需要将快照保存在OBS中，所以需要在IAM中设置对应的委托获取对OBS服务的授权。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartAutoSetting
@@ -2071,8 +2039,7 @@ class CssAsyncClient(Client):
 
         该接口用于日志自动备份策略开启。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartLogAutoBackupPolicy
@@ -2135,8 +2102,7 @@ class CssAsyncClient(Client):
 
         该接口用于开启日志功能。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartLogs
@@ -2199,8 +2165,7 @@ class CssAsyncClient(Client):
 
         该接口用于开启公网访问控制白名单。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartPublicWhitelist
@@ -2263,8 +2228,7 @@ class CssAsyncClient(Client):
 
         该接口用于开启终端节点服务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartVpecp
@@ -2327,8 +2291,7 @@ class CssAsyncClient(Client):
 
         该接口用于日志自动备份策略关闭。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopLogAutoBackupPolicy
@@ -2389,8 +2352,7 @@ class CssAsyncClient(Client):
 
         该接口用于关闭日志功能。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopLogs
@@ -2451,8 +2413,7 @@ class CssAsyncClient(Client):
 
         该接口用于关闭公网访问控制白名单。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopPublicWhitelist
@@ -2513,8 +2474,7 @@ class CssAsyncClient(Client):
 
         该接口用于停用快照功能。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopSnapshot
@@ -2575,8 +2535,7 @@ class CssAsyncClient(Client):
 
         该接口用于关闭终端节点服务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopVpecp
@@ -2637,8 +2596,7 @@ class CssAsyncClient(Client):
 
         该接口用于对集群批量添加或删除标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateBatchClustersTags
@@ -2703,8 +2661,7 @@ class CssAsyncClient(Client):
 
         该接口用于修改集群名称。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateClusterName
@@ -2769,8 +2726,7 @@ class CssAsyncClient(Client):
         
         集群扩容实例的数量和存储容量，请参考[扩容实例的数量和存储容量](UpdateExtendInstanceStorage.xml)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateExtendCluster
@@ -2833,8 +2789,7 @@ class CssAsyncClient(Client):
 
         该接口用于集群扩容不同类型实例的个数以及存储容量。已经存在独立Master、Client、冷数据节点的集群使用该接口扩容。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateExtendInstanceStorage
@@ -2897,8 +2852,7 @@ class CssAsyncClient(Client):
 
         该接口用于变更集群规格。只支持变更ess节点类型。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateFlavor
@@ -2965,8 +2919,7 @@ class CssAsyncClient(Client):
         - ess-client: Client节点。
         - ess-master: Master节点。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateFlavorByType
@@ -3031,8 +2984,7 @@ class CssAsyncClient(Client):
 
         该接口用于替换失败节点。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateInstance
@@ -3095,8 +3047,7 @@ class CssAsyncClient(Client):
 
         该接口用于修改日志基础配置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateLogSetting
@@ -3159,8 +3110,7 @@ class CssAsyncClient(Client):
 
         该接口用于按需集群转包周期集群。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateOndemandClusterToPeriod
@@ -3223,8 +3173,7 @@ class CssAsyncClient(Client):
 
         该接口用于修改公网访问带宽。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdatePublicBandWidth
@@ -3287,8 +3236,7 @@ class CssAsyncClient(Client):
 
         该接口用于集群对不同类型实例的个数以及存储容量进行缩容。包周期集群不支持API操作。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateShrinkCluster
@@ -3351,8 +3299,7 @@ class CssAsyncClient(Client):
 
         该接口可以对集群现有节点中指定节点进行缩容。包周期集群不支持API操作。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateShrinkNodes
@@ -3417,8 +3364,7 @@ class CssAsyncClient(Client):
         
         可以使用该接口开启快照功能。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateSnapshotSetting
@@ -3481,8 +3427,7 @@ class CssAsyncClient(Client):
 
         该接口用于关闭公网访问。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateUnbindPublic
@@ -3545,8 +3490,7 @@ class CssAsyncClient(Client):
 
         该接口用于更新终端节点连接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateVpcepConnection
@@ -3609,8 +3553,7 @@ class CssAsyncClient(Client):
 
         该接口用于修改终端节点服务白名单。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateVpcepWhitelist
@@ -3673,8 +3616,7 @@ class CssAsyncClient(Client):
 
         该接口用于修改参数配置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateYmls
@@ -3737,8 +3679,7 @@ class CssAsyncClient(Client):
 
         该接口用于开启Kibana公网访问。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartKibanaPublic
@@ -3801,8 +3742,7 @@ class CssAsyncClient(Client):
 
         该接口用于关闭Kibana公网访问控制。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopPublicKibanaWhitelist
@@ -3863,8 +3803,7 @@ class CssAsyncClient(Client):
 
         该接口用于修改Kibana公网带宽。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateAlterKibana
@@ -3927,8 +3866,7 @@ class CssAsyncClient(Client):
 
         该接口用于关闭Kibana公网访问。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateCloseKibana
@@ -3991,8 +3929,7 @@ class CssAsyncClient(Client):
 
         该接口通过修改kibana白名单，修改kibana的访问权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdatePublicKibanaWhitelist
@@ -4055,8 +3992,7 @@ class CssAsyncClient(Client):
 
         该接口用于添加到自定义模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddFavorite
@@ -4119,8 +4055,7 @@ class CssAsyncClient(Client):
 
         该接口用于创建配置文件。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateCnf
@@ -4183,8 +4118,7 @@ class CssAsyncClient(Client):
 
         删除配置文件。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteConf
@@ -4247,8 +4181,7 @@ class CssAsyncClient(Client):
 
         该接口用于删除自定义模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteTemplate
@@ -4309,8 +4242,7 @@ class CssAsyncClient(Client):
 
         该接口用于查询操作记录。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListActions
@@ -4371,8 +4303,7 @@ class CssAsyncClient(Client):
 
         该接口用于查询配置文件列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListConfs
@@ -4433,8 +4364,7 @@ class CssAsyncClient(Client):
 
         该接口用于查询pipeline列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListPipelines
@@ -4495,8 +4425,7 @@ class CssAsyncClient(Client):
 
         该接口用于查询模板列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTemplates
@@ -4557,8 +4486,7 @@ class CssAsyncClient(Client):
 
         该接口用于查询配置文件内容。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowGetConfDetail
@@ -4621,8 +4549,7 @@ class CssAsyncClient(Client):
 
         该接口用于连通性测试。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartConnectivityTest
@@ -4685,8 +4612,7 @@ class CssAsyncClient(Client):
 
         该接口用于启动pipeline迁移数据。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartPipeline
@@ -4749,8 +4675,7 @@ class CssAsyncClient(Client):
 
         该接口用于停止pipeline迁移数据。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopPipeline
@@ -4811,8 +4736,7 @@ class CssAsyncClient(Client):
 
         该接口用于更新配置文件。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateCnf

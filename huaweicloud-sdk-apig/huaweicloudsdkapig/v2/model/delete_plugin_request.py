@@ -34,7 +34,7 @@ class DeletePluginRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID
+        :param instance_id: 实例ID，在API网关控制台的“实例信息”中获取。
         :type instance_id: str
         :param plugin_id: 插件编号
         :type plugin_id: str
@@ -53,7 +53,7 @@ class DeletePluginRequest:
     def instance_id(self):
         """Gets the instance_id of this DeletePluginRequest.
 
-        实例ID
+        实例ID，在API网关控制台的“实例信息”中获取。
 
         :return: The instance_id of this DeletePluginRequest.
         :rtype: str
@@ -64,7 +64,7 @@ class DeletePluginRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this DeletePluginRequest.
 
-        实例ID
+        实例ID，在API网关控制台的“实例信息”中获取。
 
         :param instance_id: The instance_id of this DeletePluginRequest.
         :type instance_id: str

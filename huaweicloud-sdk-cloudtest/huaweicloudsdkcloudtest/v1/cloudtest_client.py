@@ -47,8 +47,7 @@ class CloudtestClient(Client):
 
         批量删除自定义测试服务类型用例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteTestCase
         :type request: :class:`huaweicloudsdkcloudtest.v1.BatchDeleteTestCaseRequest`
@@ -110,8 +109,7 @@ class CloudtestClient(Client):
 
         项目下创建计划
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreatePlan
         :type request: :class:`huaweicloudsdkcloudtest.v1.CreatePlanRequest`
@@ -173,8 +171,7 @@ class CloudtestClient(Client):
 
         通过接口CreateService注册成为云测的自定义服务。 注册完成后云测界面将会出现此自定义测试类型。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateService
         :type request: :class:`huaweicloudsdkcloudtest.v1.CreateServiceRequest`
@@ -234,8 +231,7 @@ class CloudtestClient(Client):
 
         创建自定义测试服务类型用例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateTestCase
         :type request: :class:`huaweicloudsdkcloudtest.v1.CreateTestCaseRequest`
@@ -297,8 +293,7 @@ class CloudtestClient(Client):
 
         计划中批量添加测试用例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateTestCaseInPlan
         :type request: :class:`huaweicloudsdkcloudtest.v1.CreateTestCaseInPlanRequest`
@@ -362,8 +357,7 @@ class CloudtestClient(Client):
 
         删除已注册服务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteService
         :type request: :class:`huaweicloudsdkcloudtest.v1.DeleteServiceRequest`
@@ -423,8 +417,7 @@ class CloudtestClient(Client):
 
         批量执行测试用例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RunTestCase
         :type request: :class:`huaweicloudsdkcloudtest.v1.RunTestCaseRequest`
@@ -486,8 +479,7 @@ class CloudtestClient(Client):
 
         查询某个测试计划下的需求列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowIssuesByPlanId
         :type request: :class:`huaweicloudsdkcloudtest.v1.ShowIssuesByPlanIdRequest`
@@ -553,8 +545,7 @@ class CloudtestClient(Client):
 
         查询某测试计划下的操作历史
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPlanJournals
         :type request: :class:`huaweicloudsdkcloudtest.v1.ShowPlanJournalsRequest`
@@ -620,8 +611,7 @@ class CloudtestClient(Client):
 
         项目下查询测试计划列表v2
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPlanList
         :type request: :class:`huaweicloudsdkcloudtest.v1.ShowPlanListRequest`
@@ -689,8 +679,7 @@ class CloudtestClient(Client):
 
         项目下查询测试计划列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPlans
         :type request: :class:`huaweicloudsdkcloudtest.v1.ShowPlansRequest`
@@ -758,8 +747,7 @@ class CloudtestClient(Client):
 
         用户获取自己当前已经注册的服务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRegisterService
         :type request: :class:`huaweicloudsdkcloudtest.v1.ShowRegisterServiceRequest`
@@ -817,8 +805,7 @@ class CloudtestClient(Client):
 
         获取测试用例详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTestCaseDetail
         :type request: :class:`huaweicloudsdkcloudtest.v1.ShowTestCaseDetailRequest`
@@ -880,8 +867,7 @@ class CloudtestClient(Client):
 
         通过用例编号获取测试用例详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTestCaseDetailV2
         :type request: :class:`huaweicloudsdkcloudtest.v1.ShowTestCaseDetailV2Request`
@@ -943,8 +929,7 @@ class CloudtestClient(Client):
 
         更新已注册服务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateService
         :type request: :class:`huaweicloudsdkcloudtest.v1.UpdateServiceRequest`
@@ -1006,8 +991,7 @@ class CloudtestClient(Client):
 
         更新自定义测试服务类型用例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateTestCase
         :type request: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseRequest`
@@ -1071,8 +1055,7 @@ class CloudtestClient(Client):
 
         批量更新测试用例结果
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateTestCaseResult
         :type request: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseResultRequest`
@@ -1134,8 +1117,7 @@ class CloudtestClient(Client):
 
         通过导入仓库中的文件生成接口测试套
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateApiTestSuiteByRepoFile
         :type request: :class:`huaweicloudsdkcloudtest.v1.CreateApiTestSuiteByRepoFileRequest`
@@ -1197,8 +1179,7 @@ class CloudtestClient(Client):
 
         获取云测的环境参数分组列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEnvironments
         :type request: :class:`huaweicloudsdkcloudtest.v1.ListEnvironmentsRequest`

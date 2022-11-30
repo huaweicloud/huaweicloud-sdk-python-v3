@@ -56,10 +56,14 @@ class Address:
         self._public_ip = None
         self.discriminator = None
 
-        self.intranet_ip = intranet_ip
-        self.access_ip = access_ip
-        self.server_ip = server_ip
-        self.public_ip = public_ip
+        if intranet_ip is not None:
+            self.intranet_ip = intranet_ip
+        if access_ip is not None:
+            self.access_ip = access_ip
+        if server_ip is not None:
+            self.server_ip = server_ip
+        if public_ip is not None:
+            self.public_ip = public_ip
 
     @property
     def intranet_ip(self):

@@ -50,7 +50,7 @@ class PrePaidServerRootVolume:
         :type extendparam: :class:`huaweicloudsdkecs.v2.PrePaidServerRootVolumeExtendParam`
         :param cluster_type: 云服务器系统盘对应的磁盘存储类型。 磁盘存储类型枚举值： DSS：专属存储类型
         :type cluster_type: str
-        :param cluster_id: 使用SDI规格创建虚拟机时请关注该参数，如果该参数值为true，说明创建的为scsi类型的卷
+        :param cluster_id: 云服务器数据盘对应的存储池的ID。
         :type cluster_id: str
         :param hwpassthrough: 使用SDI规格创建虚拟机时请关注该参数，如果该参数值为true，说明创建的为scsi类型的卷  &gt; 说明： &gt;  &gt; 此参数为boolean类型，若传入非boolean类型字符，程序将按照false方式处理。
         :type hwpassthrough: bool
@@ -166,7 +166,7 @@ class PrePaidServerRootVolume:
     def cluster_id(self):
         """Gets the cluster_id of this PrePaidServerRootVolume.
 
-        使用SDI规格创建虚拟机时请关注该参数，如果该参数值为true，说明创建的为scsi类型的卷
+        云服务器数据盘对应的存储池的ID。
 
         :return: The cluster_id of this PrePaidServerRootVolume.
         :rtype: str
@@ -177,7 +177,7 @@ class PrePaidServerRootVolume:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this PrePaidServerRootVolume.
 
-        使用SDI规格创建虚拟机时请关注该参数，如果该参数值为true，说明创建的为scsi类型的卷
+        云服务器数据盘对应的存储池的ID。
 
         :param cluster_id: The cluster_id of this PrePaidServerRootVolume.
         :type cluster_id: str

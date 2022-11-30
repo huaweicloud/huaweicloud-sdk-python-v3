@@ -24,7 +24,8 @@ class ApiPolicyHttpBase:
         'req_protocol': 'str',
         'req_method': 'str',
         'req_uri': 'str',
-        'timeout': 'int'
+        'timeout': 'int',
+        'retry_count': 'str'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class ApiPolicyHttpBase:
         'req_protocol': 'req_protocol',
         'req_method': 'req_method',
         'req_uri': 'req_uri',
-        'timeout': 'timeout'
+        'timeout': 'timeout',
+        'retry_count': 'retry_count'
     }
 
-    def __init__(self, url_domain=None, req_protocol=None, req_method=None, req_uri=None, timeout=None):
+    def __init__(self, url_domain=None, req_protocol=None, req_method=None, req_uri=None, timeout=None, retry_count=None):
         """ApiPolicyHttpBase
 
         The model defined in huaweicloud sdk
@@ -50,6 +52,8 @@ class ApiPolicyHttpBase:
         :type req_uri: str
         :param timeout: API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
         :type timeout: int
+        :param retry_count: 请求后端服务的重试次数，默认为-1，范围[-1,10]
+        :type retry_count: str
         """
         
         
@@ -59,6 +63,7 @@ class ApiPolicyHttpBase:
         self._req_method = None
         self._req_uri = None
         self._timeout = None
+        self._retry_count = None
         self.discriminator = None
 
         if url_domain is not None:
@@ -68,6 +73,8 @@ class ApiPolicyHttpBase:
         self.req_uri = req_uri
         if timeout is not None:
             self.timeout = timeout
+        if retry_count is not None:
+            self.retry_count = retry_count
 
     @property
     def url_domain(self):
@@ -178,6 +185,28 @@ class ApiPolicyHttpBase:
         :type timeout: int
         """
         self._timeout = timeout
+
+    @property
+    def retry_count(self):
+        """Gets the retry_count of this ApiPolicyHttpBase.
+
+        请求后端服务的重试次数，默认为-1，范围[-1,10]
+
+        :return: The retry_count of this ApiPolicyHttpBase.
+        :rtype: str
+        """
+        return self._retry_count
+
+    @retry_count.setter
+    def retry_count(self, retry_count):
+        """Sets the retry_count of this ApiPolicyHttpBase.
+
+        请求后端服务的重试次数，默认为-1，范围[-1,10]
+
+        :param retry_count: The retry_count of this ApiPolicyHttpBase.
+        :type retry_count: str
+        """
+        self._retry_count = retry_count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

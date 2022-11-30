@@ -20,29 +20,36 @@ class UrlDomainBase:
     sensitive_list = []
 
     openapi_types = {
-        'min_ssl_version': 'str'
+        'min_ssl_version': 'str',
+        'is_http_redirect_to_https': 'bool'
     }
 
     attribute_map = {
-        'min_ssl_version': 'min_ssl_version'
+        'min_ssl_version': 'min_ssl_version',
+        'is_http_redirect_to_https': 'is_http_redirect_to_https'
     }
 
-    def __init__(self, min_ssl_version=None):
+    def __init__(self, min_ssl_version=None, is_http_redirect_to_https=None):
         """UrlDomainBase
 
         The model defined in huaweicloud sdk
 
         :param min_ssl_version: 最小ssl协议版本号。支持TLSv1.1或TLSv1.2
         :type min_ssl_version: str
+        :param is_http_redirect_to_https: 是否开启http到https的重定向，false为关闭，true为开启，默认为false
+        :type is_http_redirect_to_https: bool
         """
         
         
 
         self._min_ssl_version = None
+        self._is_http_redirect_to_https = None
         self.discriminator = None
 
         if min_ssl_version is not None:
             self.min_ssl_version = min_ssl_version
+        if is_http_redirect_to_https is not None:
+            self.is_http_redirect_to_https = is_http_redirect_to_https
 
     @property
     def min_ssl_version(self):
@@ -65,6 +72,28 @@ class UrlDomainBase:
         :type min_ssl_version: str
         """
         self._min_ssl_version = min_ssl_version
+
+    @property
+    def is_http_redirect_to_https(self):
+        """Gets the is_http_redirect_to_https of this UrlDomainBase.
+
+        是否开启http到https的重定向，false为关闭，true为开启，默认为false
+
+        :return: The is_http_redirect_to_https of this UrlDomainBase.
+        :rtype: bool
+        """
+        return self._is_http_redirect_to_https
+
+    @is_http_redirect_to_https.setter
+    def is_http_redirect_to_https(self, is_http_redirect_to_https):
+        """Sets the is_http_redirect_to_https of this UrlDomainBase.
+
+        是否开启http到https的重定向，false为关闭，true为开启，默认为false
+
+        :param is_http_redirect_to_https: The is_http_redirect_to_https of this UrlDomainBase.
+        :type is_http_redirect_to_https: bool
+        """
+        self._is_http_redirect_to_https = is_http_redirect_to_https
 
     def to_dict(self):
         """Returns the model properties as a dict"""

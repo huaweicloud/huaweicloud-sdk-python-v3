@@ -52,8 +52,10 @@ class ModifyPublicIpRequestBody:
         self.discriminator = None
 
         self.action = action
-        self.public_ip = public_ip
-        self.public_ip_id = public_ip_id
+        if public_ip is not None:
+            self.public_ip = public_ip
+        if public_ip_id is not None:
+            self.public_ip_id = public_ip_id
 
     @property
     def action(self):

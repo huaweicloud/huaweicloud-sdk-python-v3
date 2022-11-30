@@ -47,8 +47,7 @@ class VpcClient(Client):
 
         批量创建辅助弹性网卡
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchCreateSubNetworkInterface
         :type request: :class:`huaweicloudsdkvpc.v3.BatchCreateSubNetworkInterfaceRequest`
@@ -108,8 +107,7 @@ class VpcClient(Client):
 
         创建安全组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateSecurityGroup
         :type request: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupRequest`
@@ -169,8 +167,7 @@ class VpcClient(Client):
 
         创建安全组规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateSecurityGroupRule
         :type request: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupRuleRequest`
@@ -230,8 +227,7 @@ class VpcClient(Client):
 
         创建辅助弹性网卡
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateSubNetworkInterface
         :type request: :class:`huaweicloudsdkvpc.v3.CreateSubNetworkInterfaceRequest`
@@ -291,8 +287,7 @@ class VpcClient(Client):
 
         删除安全组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteSecurityGroup
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteSecurityGroupRequest`
@@ -352,8 +347,7 @@ class VpcClient(Client):
 
         删除安全组规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteSecurityGroupRule
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteSecurityGroupRuleRequest`
@@ -413,8 +407,7 @@ class VpcClient(Client):
 
         删除辅助弹性网卡
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteSubNetworkInterface
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteSubNetworkInterfaceRequest`
@@ -474,8 +467,7 @@ class VpcClient(Client):
 
         查询安全组规则列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSecurityGroupRules
         :type request: :class:`huaweicloudsdkvpc.v3.ListSecurityGroupRulesRequest`
@@ -556,8 +548,7 @@ class VpcClient(Client):
 
         查询某租户下的安全组列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSecurityGroups
         :type request: :class:`huaweicloudsdkvpc.v3.ListSecurityGroupsRequest`
@@ -630,8 +621,7 @@ class VpcClient(Client):
 
         查询辅助弹性网卡列表，单次查询最多返回2000条数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSubNetworkInterfaces
         :type request: :class:`huaweicloudsdkvpc.v3.ListSubNetworkInterfacesRequest`
@@ -714,8 +704,7 @@ class VpcClient(Client):
 
         批量迁移辅助弹性网卡
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for MigrateSubNetworkInterface
         :type request: :class:`huaweicloudsdkvpc.v3.MigrateSubNetworkInterfaceRequest`
@@ -775,8 +764,7 @@ class VpcClient(Client):
 
         查询单个安全组详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowSecurityGroup
         :type request: :class:`huaweicloudsdkvpc.v3.ShowSecurityGroupRequest`
@@ -836,8 +824,7 @@ class VpcClient(Client):
 
         查询单个安全组规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowSecurityGroupRule
         :type request: :class:`huaweicloudsdkvpc.v3.ShowSecurityGroupRuleRequest`
@@ -897,8 +884,7 @@ class VpcClient(Client):
 
         查询辅助弹性网卡详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowSubNetworkInterface
         :type request: :class:`huaweicloudsdkvpc.v3.ShowSubNetworkInterfaceRequest`
@@ -958,8 +944,7 @@ class VpcClient(Client):
 
         查询辅助弹性网卡数目
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowSubNetworkInterfacesQuantity
         :type request: :class:`huaweicloudsdkvpc.v3.ShowSubNetworkInterfacesQuantityRequest`
@@ -1017,8 +1002,7 @@ class VpcClient(Client):
 
         更新安全组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateSecurityGroup
         :type request: :class:`huaweicloudsdkvpc.v3.UpdateSecurityGroupRequest`
@@ -1080,8 +1064,7 @@ class VpcClient(Client):
 
         更新辅助弹性网卡
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateSubNetworkInterface
         :type request: :class:`huaweicloudsdkvpc.v3.UpdateSubNetworkInterfaceRequest`
@@ -1143,8 +1126,7 @@ class VpcClient(Client):
 
         创建地址组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAddressGroup
         :type request: :class:`huaweicloudsdkvpc.v3.CreateAddressGroupRequest`
@@ -1204,8 +1186,7 @@ class VpcClient(Client):
 
         删除地址组，非强制删除，删除前请确保未被其他资源引用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAddressGroup
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteAddressGroupRequest`
@@ -1265,8 +1246,7 @@ class VpcClient(Client):
 
         强制删除地址组，删除的地址组与安全组规则关联时，会删除地址组与关联的安全组规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteIpAddressGroupForce
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteIpAddressGroupForceRequest`
@@ -1326,8 +1306,7 @@ class VpcClient(Client):
 
         查询地址组列表，根据过滤条件进行过滤。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAddressGroup
         :type request: :class:`huaweicloudsdkvpc.v3.ListAddressGroupRequest`
@@ -1400,8 +1379,7 @@ class VpcClient(Client):
 
         查询地址组详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAddressGroup
         :type request: :class:`huaweicloudsdkvpc.v3.ShowAddressGroupRequest`
@@ -1461,8 +1439,7 @@ class VpcClient(Client):
 
         更新地址组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateAddressGroup
         :type request: :class:`huaweicloudsdkvpc.v3.UpdateAddressGroupRequest`
@@ -1524,8 +1501,7 @@ class VpcClient(Client):
 
         添加VPC的扩展网段
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddVpcExtendCidr
         :type request: :class:`huaweicloudsdkvpc.v3.AddVpcExtendCidrRequest`
@@ -1587,8 +1563,7 @@ class VpcClient(Client):
 
         创建虚拟私有云
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateVpc
         :type request: :class:`huaweicloudsdkvpc.v3.CreateVpcRequest`
@@ -1648,8 +1623,7 @@ class VpcClient(Client):
 
         删除VPC
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteVpc
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteVpcRequest`
@@ -1709,8 +1683,7 @@ class VpcClient(Client):
 
         查询vpc列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListVpcs
         :type request: :class:`huaweicloudsdkvpc.v3.ListVpcsRequest`
@@ -1784,8 +1757,7 @@ class VpcClient(Client):
 
         移除VPC扩展网段
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RemoveVpcExtendCidr
         :type request: :class:`huaweicloudsdkvpc.v3.RemoveVpcExtendCidrRequest`
@@ -1847,8 +1819,7 @@ class VpcClient(Client):
 
         查询vpc详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowVpc
         :type request: :class:`huaweicloudsdkvpc.v3.ShowVpcRequest`
@@ -1908,8 +1879,7 @@ class VpcClient(Client):
 
         更新vpc
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateVpc
         :type request: :class:`huaweicloudsdkvpc.v3.UpdateVpcRequest`

@@ -47,8 +47,7 @@ class CloudPipelineAsyncClient(Client):
 
         批量获取流水线状态和阶段信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchShowPipelinesStatus
@@ -111,8 +110,7 @@ class CloudPipelineAsyncClient(Client):
 
         基于模板快速创建流水线及流水线内任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreatePipelineByTemplate
@@ -175,8 +173,7 @@ class CloudPipelineAsyncClient(Client):
 
         获取流水线列表接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListPipelineSimpleInfo
@@ -239,8 +236,7 @@ class CloudPipelineAsyncClient(Client):
 
         获取项目下流水线执行状况
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListPipleineBuildResult
@@ -311,8 +307,7 @@ class CloudPipelineAsyncClient(Client):
 
         查询模板列表，支持分页查询,支持模板名字模糊查询
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTemplates
@@ -387,8 +382,7 @@ class CloudPipelineAsyncClient(Client):
 
         根据id删除流水线
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RemovePipeline
@@ -451,8 +445,7 @@ class CloudPipelineAsyncClient(Client):
 
         检查流水线创建状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowInstanceStatus
@@ -515,8 +508,7 @@ class CloudPipelineAsyncClient(Client):
 
         获取流水线状态,阶段及任务信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowPipleineStatus
@@ -581,8 +573,7 @@ class CloudPipelineAsyncClient(Client):
 
         查询模板详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTemplateDetail
@@ -649,8 +640,7 @@ class CloudPipelineAsyncClient(Client):
 
         启动流水线
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartNewPipeline
@@ -715,8 +705,7 @@ class CloudPipelineAsyncClient(Client):
 
         停止流水线
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopPipelineNew

@@ -22,11 +22,27 @@ class VpcepRegion:
 
     CN_SOUTHWEST_2 = Region(id="cn-southwest-2", endpoint="https://vpcep.cn-southwest-2.myhuaweicloud.com")
 
-    AP_SOUTHEAST_1 = Region(id="ap-southeast-1", endpoint="https://vpc.ap-southeast-1.myhuaweicloud.com")
+    AP_SOUTHEAST_1 = Region(id="ap-southeast-1", endpoint="https://vpcep.ap-southeast-1.myhuaweicloud.com")
 
-    LA_SOUTH_2 = Region(id="la-south-2", endpoint="https://vpc.la-south-2.myhuaweicloud.com")
+    LA_SOUTH_2 = Region(id="la-south-2", endpoint="https://vpcep.la-south-2.myhuaweicloud.com")
 
-    NA_MEXICO_1 = Region(id="na-mexico-1", endpoint="https://vpc.na-mexico-1.myhuaweicloud.com")
+    NA_MEXICO_1 = Region(id="na-mexico-1", endpoint="https://vpcep.na-mexico-1.myhuaweicloud.com")
+
+    CN_NORTH_9 = Region(id="cn-north-9", endpoint="https://vpcep.cn-north-9.myhuaweicloud.com")
+
+    AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://vpcep.ap-southeast-3.myhuaweicloud.com")
+
+    AP_SOUTHEAST_2 = Region(id="ap-southeast-2", endpoint="https://vpcep.ap-southeast-2.myhuaweicloud.com")
+
+    CN_NORTH_2 = Region(id="cn-north-2", endpoint="https://vpcep.cn-north-2.myhuaweicloud.com")
+
+    AF_SOUTH_1 = Region(id="af-south-1", endpoint="https://vpcep.af-south-1.myhuaweicloud.com")
+
+    CN_SOUTH_2 = Region(id="cn-south-2", endpoint="https://vpcep.cn-south-2.myhuaweicloud.com")
+
+    SA_BRAZIL_1 = Region(id="sa-brazil-1", endpoint="https://vpcep.sa-brazil-1.myhuaweicloud.com")
+
+    LA_NORTH_2 = Region(id="la-north-2", endpoint="https://vpcep.la-north-2.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -38,6 +54,14 @@ class VpcepRegion:
         "ap-southeast-1": AP_SOUTHEAST_1,
         "la-south-2": LA_SOUTH_2,
         "na-mexico-1": NA_MEXICO_1,
+        "cn-north-9": CN_NORTH_9,
+        "ap-southeast-3": AP_SOUTHEAST_3,
+        "ap-southeast-2": AP_SOUTHEAST_2,
+        "cn-north-2": CN_NORTH_2,
+        "af-south-1": AF_SOUTH_1,
+        "cn-south-2": CN_SOUTH_2,
+        "sa-brazil-1": SA_BRAZIL_1,
+        "la-north-2": LA_NORTH_2,
     }
 
     @classmethod

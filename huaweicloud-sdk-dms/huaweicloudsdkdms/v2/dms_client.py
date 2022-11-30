@@ -47,8 +47,7 @@ class DmsClient(Client):
 
         批量添加或删除队列标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchCreateOrDeleteQueueTag
         :type request: :class:`huaweicloudsdkdms.v2.BatchCreateOrDeleteQueueTagRequest`
@@ -118,8 +117,7 @@ class DmsClient(Client):
         
         确认消费失败后，可以再次重新消费和确认。当开启死信时，消息进行多次重复消费仍然失败后，DMS会将该条消息转存到死信队列中，有效期为72小时，用户可以根据需要对死信消息进行重新消费。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ConfirmConsumptionMessages
         :type request: :class:`huaweicloudsdkdms.v2.ConfirmConsumptionMessagesRequest`
@@ -191,8 +189,7 @@ class DmsClient(Client):
         
         仅NORMAL队列和FIFO队列可以开启死信消息，因为只有NORMAL队列和FIFO队列可消费死信消息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ConfirmDeadLettersMessages
         :type request: :class:`huaweicloudsdkdms.v2.ConfirmDeadLettersMessagesRequest`
@@ -258,8 +255,7 @@ class DmsClient(Client):
         
         仅NORMAL队列和FIFO队列可以开启死信消息，因为只有NORMAL队列和FIFO队列可消费死信消息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ConsumeDeadlettersMessage
         :type request: :class:`huaweicloudsdkdms.v2.ConsumeDeadlettersMessageRequest`
@@ -331,8 +327,7 @@ class DmsClient(Client):
         
         每个消费组只支持一种Label规则，如果第二次消费更换了Label规则，则消费失败。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ConsumeMessages
         :type request: :class:`huaweicloudsdkdms.v2.ConsumeMessagesRequest`
@@ -408,8 +403,7 @@ class DmsClient(Client):
         
         &gt; 创建消费组后系统内部完成初始化需要1-3秒，如果创建消费组后立即进行操作，可能会导致消费失败。建议3秒后再操作该队列。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateConsumerGroup
         :type request: :class:`huaweicloudsdkdms.v2.CreateConsumerGroupRequest`
@@ -472,8 +466,7 @@ class DmsClient(Client):
         每个project_id默认只能创建30个队列。
         &gt; 创建队列时系统内部完成初始化需要1-3秒，如果创建队列后立即进行操作，可能会导致生产消息、消费消息、查询队列详情、创建消费组和删除队列等操作失败。建议3秒后再操作该队列。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateQueue
         :type request: :class:`huaweicloudsdkdms.v2.CreateQueueRequest`
@@ -533,8 +526,7 @@ class DmsClient(Client):
 
         删除指定的队列。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteQueue
         :type request: :class:`huaweicloudsdkdms.v2.DeleteQueueRequest`
@@ -594,8 +586,7 @@ class DmsClient(Client):
 
         删除指定消费组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteSpecifiedConsumerGroup
         :type request: :class:`huaweicloudsdkdms.v2.DeleteSpecifiedConsumerGroupRequest`
@@ -657,8 +648,7 @@ class DmsClient(Client):
 
         获取指定队列的所有消费组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListConsumerGroups
         :type request: :class:`huaweicloudsdkdms.v2.ListConsumerGroupsRequest`
@@ -726,8 +716,7 @@ class DmsClient(Client):
 
         查看所有队列。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListQueues
         :type request: :class:`huaweicloudsdkdms.v2.ListQueuesRequest`
@@ -791,8 +780,7 @@ class DmsClient(Client):
         - 每次发送的消息总负载不超过512KB。
         - Kafka队列的消息保存时间在创建队列时可以设置，可设置范围为1~72小时。其他队列的消息最大保存时长为72小时。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SendMessages
         :type request: :class:`huaweicloudsdkdms.v2.SendMessagesRequest`
@@ -854,8 +842,7 @@ class DmsClient(Client):
 
         查看指定的队列。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowQueue
         :type request: :class:`huaweicloudsdkdms.v2.ShowQueueRequest`
@@ -917,8 +904,7 @@ class DmsClient(Client):
 
         查询项目标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowQueueProjectTags
         :type request: :class:`huaweicloudsdkdms.v2.ShowQueueProjectTagsRequest`
@@ -976,8 +962,7 @@ class DmsClient(Client):
 
         查询队列标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowQueueTags
         :type request: :class:`huaweicloudsdkdms.v2.ShowQueueTagsRequest`
@@ -1037,8 +1022,7 @@ class DmsClient(Client):
 
         查看当前项目的配额。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowQuotas
         :type request: :class:`huaweicloudsdkdms.v2.ShowQuotasRequest`

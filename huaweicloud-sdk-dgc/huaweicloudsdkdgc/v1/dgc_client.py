@@ -46,8 +46,7 @@ class DgcClient(Client):
         """停止脚本实例的执行
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CancelScript
         :type request: :class:`huaweicloudsdkdgc.v1.CancelScriptRequest`
@@ -108,8 +107,7 @@ class DgcClient(Client):
         """创建连接
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateConnection
         :type request: :class:`huaweicloudsdkdgc.v1.CreateConnectionRequest`
@@ -168,8 +166,7 @@ class DgcClient(Client):
         """创建作业
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateJob
         :type request: :class:`huaweicloudsdkdgc.v1.CreateJobRequest`
@@ -228,8 +225,7 @@ class DgcClient(Client):
         """创建资源
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateResource
         :type request: :class:`huaweicloudsdkdgc.v1.CreateResourceRequest`
@@ -288,8 +284,7 @@ class DgcClient(Client):
         """创建脚本
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateScript
         :type request: :class:`huaweicloudsdkdgc.v1.CreateScriptRequest`
@@ -348,8 +343,7 @@ class DgcClient(Client):
         """删除连接
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteConnction
         :type request: :class:`huaweicloudsdkdgc.v1.DeleteConnctionRequest`
@@ -408,8 +402,7 @@ class DgcClient(Client):
         """删除作业
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteJob
         :type request: :class:`huaweicloudsdkdgc.v1.DeleteJobRequest`
@@ -468,8 +461,7 @@ class DgcClient(Client):
         """删除资源
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteResource
         :type request: :class:`huaweicloudsdkdgc.v1.DeleteResourceRequest`
@@ -528,8 +520,7 @@ class DgcClient(Client):
         """删除脚本
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteScript
         :type request: :class:`huaweicloudsdkdgc.v1.DeleteScriptRequest`
@@ -588,8 +579,7 @@ class DgcClient(Client):
         """执行脚本
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExecuteScript
         :type request: :class:`huaweicloudsdkdgc.v1.ExecuteScriptRequest`
@@ -650,8 +640,7 @@ class DgcClient(Client):
         """导出连接
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExportConnections
         :type request: :class:`huaweicloudsdkdgc.v1.ExportConnectionsRequest`
@@ -708,8 +697,7 @@ class DgcClient(Client):
         """导出作业
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExportJob
         :type request: :class:`huaweicloudsdkdgc.v1.ExportJobRequest`
@@ -768,8 +756,7 @@ class DgcClient(Client):
         """批量导出作业
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExportJobList
         :type request: :class:`huaweicloudsdkdgc.v1.ExportJobListRequest`
@@ -828,8 +815,7 @@ class DgcClient(Client):
         """导入连接
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ImportConnections
         :type request: :class:`huaweicloudsdkdgc.v1.ImportConnectionsRequest`
@@ -888,8 +874,7 @@ class DgcClient(Client):
         """导入作业
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ImportJob
         :type request: :class:`huaweicloudsdkdgc.v1.ImportJobRequest`
@@ -948,8 +933,7 @@ class DgcClient(Client):
         """查询连接列表
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListConnections
         :type request: :class:`huaweicloudsdkdgc.v1.ListConnectionsRequest`
@@ -1006,8 +990,7 @@ class DgcClient(Client):
         """查询作业实例列表
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListJobInstances
         :type request: :class:`huaweicloudsdkdgc.v1.ListJobInstancesRequest`
@@ -1064,8 +1047,7 @@ class DgcClient(Client):
         """查询作业列表
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListJobs
         :type request: :class:`huaweicloudsdkdgc.v1.ListJobsRequest`
@@ -1177,8 +1159,7 @@ class DgcClient(Client):
         """查询脚本实例执行结果
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListScriptResults
         :type request: :class:`huaweicloudsdkdgc.v1.ListScriptResultsRequest`
@@ -1239,8 +1220,7 @@ class DgcClient(Client):
         """查询脚本列表
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListScripts
         :type request: :class:`huaweicloudsdkdgc.v1.ListScriptsRequest`
@@ -1297,8 +1277,7 @@ class DgcClient(Client):
         """查询系统任务详情
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSystemTasks
         :type request: :class:`huaweicloudsdkdgc.v1.ListSystemTasksRequest`
@@ -1357,8 +1336,7 @@ class DgcClient(Client):
         """重跑作业实例
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RestoreJobInstance
         :type request: :class:`huaweicloudsdkdgc.v1.RestoreJobInstanceRequest`
@@ -1419,8 +1397,7 @@ class DgcClient(Client):
         """单次执行作业
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RunOnce
         :type request: :class:`huaweicloudsdkdgc.v1.RunOnceRequest`
@@ -1481,8 +1458,7 @@ class DgcClient(Client):
         """查询连接详情
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowConnection
         :type request: :class:`huaweicloudsdkdgc.v1.ShowConnectionRequest`
@@ -1541,8 +1517,7 @@ class DgcClient(Client):
         """检查导入作业文件中的作业和脚本
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowFileInfo
         :type request: :class:`huaweicloudsdkdgc.v1.ShowFileInfoRequest`
@@ -1601,8 +1576,7 @@ class DgcClient(Client):
         """查询作业详情
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowJob
         :type request: :class:`huaweicloudsdkdgc.v1.ShowJobRequest`
@@ -1661,8 +1635,7 @@ class DgcClient(Client):
         """查询作业实例详情
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowJobInstance
         :type request: :class:`huaweicloudsdkdgc.v1.ShowJobInstanceRequest`
@@ -1723,8 +1696,7 @@ class DgcClient(Client):
         """查询实时作业的运行状态
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowJobStatus
         :type request: :class:`huaweicloudsdkdgc.v1.ShowJobStatusRequest`
@@ -1783,8 +1755,7 @@ class DgcClient(Client):
         """查询资源详情
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowResource
         :type request: :class:`huaweicloudsdkdgc.v1.ShowResourceRequest`
@@ -1843,8 +1814,7 @@ class DgcClient(Client):
         """查询脚本信息
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowScript
         :type request: :class:`huaweicloudsdkdgc.v1.ShowScriptRequest`
@@ -1903,8 +1873,7 @@ class DgcClient(Client):
         """启动作业
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartJob
         :type request: :class:`huaweicloudsdkdgc.v1.StartJobRequest`
@@ -1965,8 +1934,7 @@ class DgcClient(Client):
         """停止作业
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StopJob
         :type request: :class:`huaweicloudsdkdgc.v1.StopJobRequest`
@@ -2025,8 +1993,7 @@ class DgcClient(Client):
         """停止作业实例
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StopJobInstance
         :type request: :class:`huaweicloudsdkdgc.v1.StopJobInstanceRequest`
@@ -2087,8 +2054,7 @@ class DgcClient(Client):
         """修改连接
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateConnection
         :type request: :class:`huaweicloudsdkdgc.v1.UpdateConnectionRequest`
@@ -2149,8 +2115,7 @@ class DgcClient(Client):
         """修改作业
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateJob
         :type request: :class:`huaweicloudsdkdgc.v1.UpdateJobRequest`
@@ -2211,8 +2176,7 @@ class DgcClient(Client):
         """修改资源
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateResource
         :type request: :class:`huaweicloudsdkdgc.v1.UpdateResourceRequest`
@@ -2273,8 +2237,7 @@ class DgcClient(Client):
         """修改脚本内容
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateScript
         :type request: :class:`huaweicloudsdkdgc.v1.UpdateScriptRequest`

@@ -69,14 +69,20 @@ def expand_once(prk, info, pre_tmp, i, hmac_algorithm):
     return hmac_sha256(prk, result, hmac_algorithm)
 
 
+def _get_expand_ceil(derivation_key_len, algorithm_hash_len):
+    try:
+        return int(math.ceil(float(derivation_key_len) / float(algorithm_hash_len)))
+    except ZeroDivisionError as e:
+        raise ValueError(e)
+
+
 HMAC_SHA1 = hashlib.sha1
 HMAC_SHA256 = hashlib.sha256
 DERIVATION_KEY_LENGTH = 32
 HMAC_ALGORITHM = HMAC_SHA256
 ALGORITHM_HASH_LENGTH = get_hash_len(HMAC_ALGORITHM)
 UTF_8 = "utf-8"
-EXPAND_CEIL = int(math.ceil(float(DERIVATION_KEY_LENGTH) / float(ALGORITHM_HASH_LENGTH))) \
-    if ALGORITHM_HASH_LENGTH != 0 else 0
+EXPAND_CEIL = _get_expand_ceil(DERIVATION_KEY_LENGTH, ALGORITHM_HASH_LENGTH)
 
 if six.PY2:
 

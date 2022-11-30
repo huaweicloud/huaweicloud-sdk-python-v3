@@ -47,8 +47,7 @@ class KafkaAsyncClient(Client):
 
         批量添加或删除实例标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchCreateOrDeleteKafkaTag
@@ -111,8 +110,7 @@ class KafkaAsyncClient(Client):
 
         该接口用于向Kafka实例批量删除Topic。批量删除多个消费组时，部分删除成功，部分失败，此时接口返回删除成功，并在返回中显示删除失败的消费组信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeleteInstanceTopic
@@ -175,8 +173,7 @@ class KafkaAsyncClient(Client):
 
         批量删除Kafka实例的用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeleteInstanceUsers
@@ -243,8 +240,7 @@ class KafkaAsyncClient(Client):
         
         实例删除后，实例中原有的数据将被删除，且没有备份，请谨慎操作。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchRestartOrDeleteInstances
@@ -307,8 +303,7 @@ class KafkaAsyncClient(Client):
         
         **当前通过调用API，只支持按需实例创建转储节点。**
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateConnector
@@ -371,8 +366,7 @@ class KafkaAsyncClient(Client):
 
         该接口用于向Kafka实例创建Topic。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateInstanceTopic
@@ -435,8 +429,7 @@ class KafkaAsyncClient(Client):
 
         创建Kafka实例的用户，用户可连接开启SASL的Kafka实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateInstanceUser
@@ -499,8 +492,7 @@ class KafkaAsyncClient(Client):
 
         新增Kafka实例指定Topic分区。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreatePartition
@@ -565,8 +557,7 @@ class KafkaAsyncClient(Client):
 
         [创建按需计费类型的Kafka实例。](tag:hc,hk,hws,hws_hk,otc,hws_ocb,ctc,sbc,hk_sbc,cmcc,hws_eu)[创建kafka实例。](tag:ocb)
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreatePostPaidInstance
@@ -627,8 +618,7 @@ class KafkaAsyncClient(Client):
 
         创建转储任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateSinkTask
@@ -691,8 +681,7 @@ class KafkaAsyncClient(Client):
 
         删除后台任务管理中的指定记录。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteBackgroundTask
@@ -755,8 +744,7 @@ class KafkaAsyncClient(Client):
 
         删除指定的实例，释放该实例的所有资源。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteInstance
@@ -817,8 +805,7 @@ class KafkaAsyncClient(Client):
 
         删除单个转储任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteSinkTask
@@ -881,8 +868,7 @@ class KafkaAsyncClient(Client):
 
         在创建实例时，需要配置实例所在的可用区ID，可通过该接口查询可用区的ID。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAvailableZones
@@ -941,8 +927,7 @@ class KafkaAsyncClient(Client):
 
         查询实例的后台任务列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListBackgroundTasks
@@ -1011,8 +996,7 @@ class KafkaAsyncClient(Client):
 
         查询产品规格列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListEngineProducts
@@ -1075,8 +1059,7 @@ class KafkaAsyncClient(Client):
 
         查询所有消费组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListInstanceConsumerGroups
@@ -1143,8 +1126,7 @@ class KafkaAsyncClient(Client):
 
         该接口用于查询指定Kafka实例的Topic详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListInstanceTopics
@@ -1205,8 +1187,7 @@ class KafkaAsyncClient(Client):
 
         查询租户的实例列表，支持按照条件查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListInstances
@@ -1285,8 +1266,7 @@ class KafkaAsyncClient(Client):
         
         [例如，响应消息中bandwidth字段为1200MB的记录，unavailable_zones字段包含cn-east-2b、cn-east-2a和cn-east-2d，表示在华东-上海2的可用区1、可用区2、可用区3都没有该资源。](tag:hc,hws)
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListProducts
@@ -1347,8 +1327,7 @@ class KafkaAsyncClient(Client):
 
         查询转储任务列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSinkTasks
@@ -1409,8 +1388,7 @@ class KafkaAsyncClient(Client):
 
         重置Manager密码。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetManagerPassword
@@ -1475,8 +1453,7 @@ class KafkaAsyncClient(Client):
         
         &gt; 停止待重置消费组客户端，然后等待一段时间（即ConsumerConfig.SESSION_TIMEOUT_MS_CONFIG配置的时间，默认为1000毫秒）后，服务端才认为此消费组客户端已下线。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetMessageOffset
@@ -1541,8 +1518,7 @@ class KafkaAsyncClient(Client):
 
         重置密码。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetPassword
@@ -1605,8 +1581,7 @@ class KafkaAsyncClient(Client):
 
         重置用户密码
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetUserPasswrod
@@ -1673,8 +1648,7 @@ class KafkaAsyncClient(Client):
         
         **当前通过调用API，只支持按需实例进行实例规格变更。**
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResizeInstance
@@ -1737,8 +1711,7 @@ class KafkaAsyncClient(Client):
 
         重启Manager。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RestartManager
@@ -1799,8 +1772,7 @@ class KafkaAsyncClient(Client):
 
         查询后台任务管理中的指定记录。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowBackgroundTask
@@ -1863,8 +1835,7 @@ class KafkaAsyncClient(Client):
 
         查询实例在CES的监控层级关系。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowCesHierarchy
@@ -1925,8 +1896,7 @@ class KafkaAsyncClient(Client):
 
         查询Kafka集群元数据信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowCluster
@@ -1987,8 +1957,7 @@ class KafkaAsyncClient(Client):
 
         查询Kafka实例的协调器信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowCoordinators
@@ -2049,8 +2018,7 @@ class KafkaAsyncClient(Client):
 
         查询消费组信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowGroups
@@ -2113,8 +2081,7 @@ class KafkaAsyncClient(Client):
 
         查询指定实例的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowInstance
@@ -2175,8 +2142,7 @@ class KafkaAsyncClient(Client):
 
         查询实例的扩容规格列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowInstanceExtendProductInfo
@@ -2242,8 +2208,7 @@ class KafkaAsyncClient(Client):
         查询消息的偏移量和消息内容。
         先根据时间戳查询消息的偏移量，再根据偏移量查询消息内容。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowInstanceMessages
@@ -2322,8 +2287,7 @@ class KafkaAsyncClient(Client):
 
         查询Kafka实例Topic详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowInstanceTopicDetail
@@ -2388,8 +2352,7 @@ class KafkaAsyncClient(Client):
         
         Kafka实例开启SASL功能时，才支持多用户管理的功能。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowInstanceUsers
@@ -2450,8 +2413,7 @@ class KafkaAsyncClient(Client):
 
         查询项目标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowKafkaProjectTags
@@ -2510,8 +2472,7 @@ class KafkaAsyncClient(Client):
 
         查询实例标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowKafkaTags
@@ -2572,8 +2533,7 @@ class KafkaAsyncClient(Client):
 
         查询topic在Broker上磁盘占用情况。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowKafkaTopicPartitionDiskusage
@@ -2640,8 +2600,7 @@ class KafkaAsyncClient(Client):
 
         查询维护时间窗开始时间和结束时间。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowMaintainWindows
@@ -2700,8 +2659,7 @@ class KafkaAsyncClient(Client):
 
         查询分区指定时间段的消息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowMessages
@@ -2774,8 +2732,7 @@ class KafkaAsyncClient(Client):
 
         查询分区最早消息的位置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowPartitionBeginningMessage
@@ -2840,8 +2797,7 @@ class KafkaAsyncClient(Client):
 
         查询分区最新消息的位置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowPartitionEndMessage
@@ -2906,8 +2862,7 @@ class KafkaAsyncClient(Client):
 
         查询分区指定偏移量的消息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowPartitionMessage
@@ -2974,8 +2929,7 @@ class KafkaAsyncClient(Client):
 
         查询单个转储任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowSinkTaskDetail
@@ -3042,8 +2996,7 @@ class KafkaAsyncClient(Client):
         
         Kafka实例开启SASL功能时，才支持多用户管理的功能。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTopicAccessPolicy
@@ -3106,8 +3059,7 @@ class KafkaAsyncClient(Client):
 
         修改实例信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateInstance
@@ -3170,8 +3122,7 @@ class KafkaAsyncClient(Client):
 
         开启或关闭实例自动创建topic功能。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateInstanceAutoCreateTopic
@@ -3234,8 +3185,7 @@ class KafkaAsyncClient(Client):
 
         修改实例跨VPC访问的内网IP。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateInstanceCrossVpcIp
@@ -3298,8 +3248,7 @@ class KafkaAsyncClient(Client):
 
         修改Kafka实例Topic
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateInstanceTopic
@@ -3362,8 +3311,7 @@ class KafkaAsyncClient(Client):
 
         修改转储任务的配额。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateSinkTaskQuota
@@ -3428,8 +3376,7 @@ class KafkaAsyncClient(Client):
         
         Kafka实例开启SASL功能时，才支持多用户管理的功能。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateTopicAccessPolicy
@@ -3492,8 +3439,7 @@ class KafkaAsyncClient(Client):
 
         修改Kafka实例Topic分区的副本。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateTopicReplica

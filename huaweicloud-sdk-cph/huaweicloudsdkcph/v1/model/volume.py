@@ -66,12 +66,18 @@ class Volume:
         self._update_time = None
         self.discriminator = None
 
-        self.volume_name = volume_name
-        self.volume_id = volume_id
-        self.volume_size = volume_size
-        self.volume_type = volume_type
-        self.create_time = create_time
-        self.update_time = update_time
+        if volume_name is not None:
+            self.volume_name = volume_name
+        if volume_id is not None:
+            self.volume_id = volume_id
+        if volume_size is not None:
+            self.volume_size = volume_size
+        if volume_type is not None:
+            self.volume_type = volume_type
+        if create_time is not None:
+            self.create_time = create_time
+        if update_time is not None:
+            self.update_time = update_time
 
     @property
     def volume_name(self):

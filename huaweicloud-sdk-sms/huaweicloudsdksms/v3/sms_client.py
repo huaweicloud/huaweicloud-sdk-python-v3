@@ -47,8 +47,7 @@ class SmsClient(Client):
 
         检查网卡安全组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckNetAcl
         :type request: :class:`huaweicloudsdksms.v3.CheckNetAclRequest`
@@ -114,8 +113,7 @@ class SmsClient(Client):
 
         上传迁移任务的日志。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CollectLog
         :type request: :class:`huaweicloudsdksms.v3.CollectLogRequest`
@@ -177,8 +175,7 @@ class SmsClient(Client):
 
         新建迁移项目。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateMigproject
         :type request: :class:`huaweicloudsdksms.v3.CreateMigprojectRequest`
@@ -238,8 +235,7 @@ class SmsClient(Client):
 
         根据源端服务器创建一个迁移任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateTask
         :type request: :class:`huaweicloudsdksms.v3.CreateTaskRequest`
@@ -299,8 +295,7 @@ class SmsClient(Client):
 
         新增源端模板信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateTemplate
         :type request: :class:`huaweicloudsdksms.v3.CreateTemplateRequest`
@@ -360,8 +355,7 @@ class SmsClient(Client):
 
         删除指定ID的迁移项目。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteMigproject
         :type request: :class:`huaweicloudsdksms.v3.DeleteMigprojectRequest`
@@ -421,8 +415,7 @@ class SmsClient(Client):
 
         从主机迁移服务界面上删除指定ID的源端服务器信息。一旦源端服务器信息被删除，则只能通过重启源端服务器上的迁移Agent来将源端服务器信息重新添加在主机迁移服务界面。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteServer
         :type request: :class:`huaweicloudsdksms.v3.DeleteServerRequest`
@@ -482,8 +475,7 @@ class SmsClient(Client):
 
         批量删除源端服务器信息。一旦源端服务器信息被删除，则只能通过重启源端服务器上的迁移Agent来将源端服务器信息重新添加在主机迁移服务界面。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteServers
         :type request: :class:`huaweicloudsdksms.v3.DeleteServersRequest`
@@ -543,8 +535,7 @@ class SmsClient(Client):
 
         删除指定ID的迁移任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteTask
         :type request: :class:`huaweicloudsdksms.v3.DeleteTaskRequest`
@@ -604,8 +595,7 @@ class SmsClient(Client):
 
         批量删除迁移任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteTasks
         :type request: :class:`huaweicloudsdksms.v3.DeleteTasksRequest`
@@ -665,8 +655,7 @@ class SmsClient(Client):
 
         删除指定ID的模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteTemplate
         :type request: :class:`huaweicloudsdksms.v3.DeleteTemplateRequest`
@@ -726,8 +715,7 @@ class SmsClient(Client):
 
         批量删除指定ID的模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteTemplates
         :type request: :class:`huaweicloudsdksms.v3.DeleteTemplatesRequest`
@@ -787,8 +775,7 @@ class SmsClient(Client):
 
         主机迁移过程中可能发生错误，使用该接口可以批量查询迁移过程中出现错误的源端服务器信息，以及它们的错误信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListErrorServers
         :type request: :class:`huaweicloudsdksms.v3.ListErrorServersRequest`
@@ -854,8 +841,7 @@ class SmsClient(Client):
 
         主机迁移服务中可以使用迁移项目来对源端进行项目管理，使用该接口获取当前账户下所有的迁移项目列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListMigprojects
         :type request: :class:`huaweicloudsdksms.v3.ListMigprojectsRequest`
@@ -917,8 +903,7 @@ class SmsClient(Client):
 
         用户在源端安装并成功启动Agent后，Agent会将源端服务器信息注册在主机迁移服务中，调用该接口查询已注册的源端服务器列表信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListServers
         :type request: :class:`huaweicloudsdksms.v3.ListServersRequest`
@@ -996,8 +981,7 @@ class SmsClient(Client):
 
         在设置目的端后，主机迁移服务会自动创建迁移任务，使用该接口可以查询迁移任务列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTasks
         :type request: :class:`huaweicloudsdksms.v3.ListTasksRequest`
@@ -1069,8 +1053,7 @@ class SmsClient(Client):
 
         查询弹性云服务器模板列表，迁移时选择“新建服务器”时可使用该模板创建弹性云服务器。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTemplates
         :type request: :class:`huaweicloudsdksms.v3.ListTemplatesRequest`
@@ -1138,8 +1121,7 @@ class SmsClient(Client):
 
         上报源端服务器信息，上报成功后会在sms服务器列表中看到对应的源端服务器信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RegisterServer
         :type request: :class:`huaweicloudsdksms.v3.RegisterServerRequest`
@@ -1199,8 +1181,7 @@ class SmsClient(Client):
 
         当源端服务器为Windows操作系统时，安装在源端服务器上的迁移Agent通过SSLSocket同目的端服务器通信，该接口用于下载目的端服务器所需要的证书和私钥(PEM格式)。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowCertKey
         :type request: :class:`huaweicloudsdksms.v3.ShowCertKeyRequest`
@@ -1260,8 +1241,7 @@ class SmsClient(Client):
 
         迁移Agent调用该接口从SMS服务端获取下发给指定源端迁移Agent的命令。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowCommand
         :type request: :class:`huaweicloudsdksms.v3.ShowCommandRequest`
@@ -1321,8 +1301,7 @@ class SmsClient(Client):
 
         查询指定ID的迁移项目详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowMigproject
         :type request: :class:`huaweicloudsdksms.v3.ShowMigprojectRequest`
@@ -1382,8 +1361,7 @@ class SmsClient(Client):
 
         获取服务器总览
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowOverview
         :type request: :class:`huaweicloudsdksms.v3.ShowOverviewRequest`
@@ -1441,8 +1419,7 @@ class SmsClient(Client):
 
         查询指定任务ID的安全传输通道的证书passphrase。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPassphrase
         :type request: :class:`huaweicloudsdksms.v3.ShowPassphraseRequest`
@@ -1502,8 +1479,7 @@ class SmsClient(Client):
 
         迁移Agent将源端服务器信息上报到主机迁移服务后，主机迁移服务会对迁移的可行性进行检测，该接口返回源端服务器的基本信息和检查结果。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowServer
         :type request: :class:`huaweicloudsdksms.v3.ShowServerRequest`
@@ -1563,8 +1539,7 @@ class SmsClient(Client):
 
         计算sha256
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowSha256
         :type request: :class:`huaweicloudsdksms.v3.ShowSha256Request`
@@ -1624,8 +1599,7 @@ class SmsClient(Client):
 
         查询指定ID的模板中的目的端服务器的密码。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTargetPassword
         :type request: :class:`huaweicloudsdksms.v3.ShowTargetPasswordRequest`
@@ -1685,8 +1659,7 @@ class SmsClient(Client):
 
         查询指定ID的迁移任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTask
         :type request: :class:`huaweicloudsdksms.v3.ShowTaskRequest`
@@ -1746,8 +1719,7 @@ class SmsClient(Client):
 
         查询指定ID的弹性云服务器模板信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTemplate
         :type request: :class:`huaweicloudsdksms.v3.ShowTemplateRequest`
@@ -1807,8 +1779,7 @@ class SmsClient(Client):
 
         按时间段查询迁移任务的迁移速率。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowsSpeedLimits
         :type request: :class:`huaweicloudsdksms.v3.ShowsSpeedLimitsRequest`
@@ -1868,8 +1839,7 @@ class SmsClient(Client):
 
         解锁指定任务的目的端服务器。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UnlockTargetEcs
         :type request: :class:`huaweicloudsdksms.v3.UnlockTargetEcsRequest`
@@ -1929,8 +1899,7 @@ class SmsClient(Client):
 
         迁移Agent调用该接口向SMS服务端反馈指定指令的执行结果。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateCommandResult
         :type request: :class:`huaweicloudsdksms.v3.UpdateCommandResultRequest`
@@ -1992,8 +1961,7 @@ class SmsClient(Client):
 
         更新任务对应源端复制状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateCopyState
         :type request: :class:`huaweicloudsdksms.v3.UpdateCopyStateRequest`
@@ -2055,8 +2023,7 @@ class SmsClient(Client):
 
         更改默认迁移项目，注册源端会注册在当前的默认项目下。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDefaultMigproject
         :type request: :class:`huaweicloudsdksms.v3.UpdateDefaultMigprojectRequest`
@@ -2116,8 +2083,7 @@ class SmsClient(Client):
 
         更新服务器的磁盘信息，此接口会把服务器原有磁盘信息清空，然后更新成新磁盘信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDiskInfo
         :type request: :class:`huaweicloudsdksms.v3.UpdateDiskInfoRequest`
@@ -2179,8 +2145,7 @@ class SmsClient(Client):
 
         更新迁移项目的信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateMigproject
         :type request: :class:`huaweicloudsdksms.v3.UpdateMigprojectRequest`
@@ -2242,8 +2207,7 @@ class SmsClient(Client):
 
         该功能用来修改SMS服务端的源端名称，方便用户对源端进行管理。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateServerName
         :type request: :class:`huaweicloudsdksms.v3.UpdateServerNameRequest`
@@ -2305,8 +2269,7 @@ class SmsClient(Client):
 
         设置迁移任务的迁移速率。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateSpeed
         :type request: :class:`huaweicloudsdksms.v3.UpdateSpeedRequest`
@@ -2368,8 +2331,7 @@ class SmsClient(Client):
 
         更新指定ID的迁移任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateTask
         :type request: :class:`huaweicloudsdksms.v3.UpdateTaskRequest`
@@ -2433,8 +2395,7 @@ class SmsClient(Client):
         
         迁移Agent自动调用此接口用于上报数据迁移进度，您无需调用此接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateTaskSpeed
         :type request: :class:`huaweicloudsdksms.v3.UpdateTaskSpeedRequest`
@@ -2496,8 +2457,7 @@ class SmsClient(Client):
 
         管理迁移任务，包括启动任务，暂停任务，同步任务，日志上传，回滚失败迁移任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateTaskStatus
         :type request: :class:`huaweicloudsdksms.v3.UpdateTaskStatusRequest`
@@ -2559,8 +2519,7 @@ class SmsClient(Client):
 
         修改源端模板信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateTemplate
         :type request: :class:`huaweicloudsdksms.v3.UpdateTemplateRequest`

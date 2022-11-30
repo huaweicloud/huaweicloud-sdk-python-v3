@@ -20,28 +20,35 @@ class SwitchToMasterRequest:
     sensitive_list = []
 
     openapi_types = {
-        'instance_id': 'str'
+        'instance_id': 'str',
+        'body': 'SwitchToMasterDisasterRecoveryBody'
     }
 
     attribute_map = {
-        'instance_id': 'instance_id'
+        'instance_id': 'instance_id',
+        'body': 'body'
     }
 
-    def __init__(self, instance_id=None):
+    def __init__(self, instance_id=None, body=None):
         """SwitchToMasterRequest
 
         The model defined in huaweicloud sdk
 
         :param instance_id: 实例ID。
         :type instance_id: str
+        :param body: Body of the SwitchToMasterRequest
+        :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchToMasterDisasterRecoveryBody`
         """
         
         
 
         self._instance_id = None
+        self._body = None
         self.discriminator = None
 
         self.instance_id = instance_id
+        if body is not None:
+            self.body = body
 
     @property
     def instance_id(self):
@@ -64,6 +71,24 @@ class SwitchToMasterRequest:
         :type instance_id: str
         """
         self._instance_id = instance_id
+
+    @property
+    def body(self):
+        """Gets the body of this SwitchToMasterRequest.
+
+        :return: The body of this SwitchToMasterRequest.
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchToMasterDisasterRecoveryBody`
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this SwitchToMasterRequest.
+
+        :param body: The body of this SwitchToMasterRequest.
+        :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchToMasterDisasterRecoveryBody`
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

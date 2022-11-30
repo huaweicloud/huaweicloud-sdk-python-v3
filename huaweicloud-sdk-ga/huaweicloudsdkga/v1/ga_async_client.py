@@ -47,8 +47,7 @@ class GaAsyncClient(Client):
 
         创建全球加速器
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateAccelerator
@@ -109,8 +108,7 @@ class GaAsyncClient(Client):
 
         删除全球加速器。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteAccelerator
@@ -171,8 +169,7 @@ class GaAsyncClient(Client):
 
         查询全球加速器列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAccelerators
@@ -245,8 +242,7 @@ class GaAsyncClient(Client):
 
         查询全球加速器详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowAccelerator
@@ -307,8 +303,7 @@ class GaAsyncClient(Client):
 
         更新全球加速器
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateAccelerator
@@ -371,8 +366,7 @@ class GaAsyncClient(Client):
 
         创建终端节点
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateEndpoint
@@ -435,8 +429,7 @@ class GaAsyncClient(Client):
 
         删除终端节点
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteEndpoint
@@ -499,8 +492,7 @@ class GaAsyncClient(Client):
 
         查询终端节点组下终端节点列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListEndpoints
@@ -571,8 +563,7 @@ class GaAsyncClient(Client):
 
         查询终端节点详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowEndpoint
@@ -635,8 +626,7 @@ class GaAsyncClient(Client):
 
         更新终端节点
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateEndpoint
@@ -701,8 +691,7 @@ class GaAsyncClient(Client):
 
         创建终端节点组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateEndpointGroup
@@ -763,8 +752,7 @@ class GaAsyncClient(Client):
 
         删除终端节点组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteEndpointGroup
@@ -825,8 +813,7 @@ class GaAsyncClient(Client):
 
         查询终端节点组列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListEndpointGroups
@@ -899,8 +886,7 @@ class GaAsyncClient(Client):
 
         查询终端节点组详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowEndpointGroup
@@ -961,8 +947,7 @@ class GaAsyncClient(Client):
 
         更新终端节点组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateEndpointGroup
@@ -1025,8 +1010,7 @@ class GaAsyncClient(Client):
 
         创建健康检查
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateHealthCheck
@@ -1087,8 +1071,7 @@ class GaAsyncClient(Client):
 
         删除健康检查
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteHealthCheck
@@ -1149,8 +1132,7 @@ class GaAsyncClient(Client):
 
         查询健康检查列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListHealthChecks
@@ -1221,8 +1203,7 @@ class GaAsyncClient(Client):
 
         查询健康检查详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowHealthCheck
@@ -1283,8 +1264,7 @@ class GaAsyncClient(Client):
 
         更新健康检查
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateHealthCheck
@@ -1347,8 +1327,7 @@ class GaAsyncClient(Client):
 
         创建监听器
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateListener
@@ -1409,8 +1388,7 @@ class GaAsyncClient(Client):
 
         删除监听器
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteListener
@@ -1471,8 +1449,7 @@ class GaAsyncClient(Client):
 
         查询监听器列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListListeners
@@ -1545,8 +1522,7 @@ class GaAsyncClient(Client):
 
         查询监听器详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowListener
@@ -1607,8 +1583,7 @@ class GaAsyncClient(Client):
 
         更新监听器
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateListener
@@ -1671,8 +1646,7 @@ class GaAsyncClient(Client):
 
         查询区域列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRegions

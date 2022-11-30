@@ -47,8 +47,7 @@ class MrsAsyncClient(Client):
 
         在MRS集群中批量删除作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeleteJobs
@@ -115,8 +114,7 @@ class MrsAsyncClient(Client):
         - 通过[终端节点](https://support.huaweicloud.com/api-mrs/mrs_02_0003.html)获取区域信息
         - 参考[MRS服务支持的组件](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)获取MRS版本及对应版本支持的组件信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateCluster
@@ -183,8 +181,7 @@ class MrsAsyncClient(Client):
         
         所有示例中涉及的OBS路径、样例文件及终端节点和AKSK，请提前准备并在提交请求时根据实际情况替换。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateExecuteJob
@@ -247,8 +244,7 @@ class MrsAsyncClient(Client):
 
         获取用户（组）与IAM委托之间的映射关系的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowAgencyMapping
@@ -304,13 +300,73 @@ class MrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_auto_scaling_policy_async(self, request):
+        """查看弹性伸缩策略
+
+        查看指定集群的所有的弹性伸缩策略信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAutoScalingPolicy
+        :type request: :class:`huaweicloudsdkmrs.v2.ShowAutoScalingPolicyRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.ShowAutoScalingPolicyResponse`
+        """
+        return self.show_auto_scaling_policy_with_http_info(request)
+
+    def show_auto_scaling_policy_with_http_info(self, request):
+        all_params = ['cluster_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/autoscaling-policy/{cluster_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowAutoScalingPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_job_exe_list_new_async(self, request):
         """查询作业列表信息
 
         在MRS指定集群中查询作业列表信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowJobExeListNew
@@ -395,8 +451,7 @@ class MrsAsyncClient(Client):
 
         在MRS集群中查询指定作业的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowSingleJobExe
@@ -459,8 +514,7 @@ class MrsAsyncClient(Client):
 
         在MRS集群中查询SparkSql和SparkScript两种类型作业的SQL语句运行完成后返回的查询结果。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowSqlResultWithJob
@@ -523,8 +577,7 @@ class MrsAsyncClient(Client):
 
         在MRS集群中终止指定作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopJob
@@ -587,8 +640,7 @@ class MrsAsyncClient(Client):
 
         更新用户（组）与IAM委托之间的映射关系。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateAgencyMapping
@@ -646,13 +698,75 @@ class MrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_cluster_name_async(self, request):
+        """修改集群名称
+
+        修改集群名称
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateClusterName
+        :type request: :class:`huaweicloudsdkmrs.v2.UpdateClusterNameRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.UpdateClusterNameResponse`
+        """
+        return self.update_cluster_name_with_http_info(request)
+
+    def update_cluster_name_with_http_info(self, request):
+        all_params = ['cluster_id', 'update_cluster_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/clusters/{cluster_id}/cluster-name',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateClusterNameResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_hdfs_file_list_async(self, request):
         """获取指定目录文件列表
 
         在MRS集群中获取指定目录文件列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowHdfsFileList
@@ -723,8 +837,7 @@ class MrsAsyncClient(Client):
 
         在MRS集群中取消一条SQL的执行任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CancelSql
@@ -787,8 +900,7 @@ class MrsAsyncClient(Client):
 
         在MRS集群中提交并执行一条SQL语句。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ExecuteSql
@@ -851,8 +963,7 @@ class MrsAsyncClient(Client):
 
         在MRS集群中查询一条SQL的执行结果。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowSqlResult

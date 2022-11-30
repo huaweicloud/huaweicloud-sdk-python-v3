@@ -47,8 +47,7 @@ class SwrClient(Client):
 
         创建镜像自动同步任务，帮助您把最新推送的镜像自动同步到其他区域镜像仓库内。 镜像自动同步帮助您把最新推送的镜像自动同步到其他区域镜像仓库内，后期镜像有更新时，目标仓库的镜像也会自动更新，但已有的镜像不会自动同步。已有镜像的同步需要手动操作，详情请参见手动同步镜像。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateImageSyncRepo
         :type request: :class:`huaweicloudsdkswr.v2.CreateImageSyncRepoRequest`
@@ -112,8 +111,7 @@ class SwrClient(Client):
 
         对于镜像仓库已有的镜像，如果想在其他区域使用，需要手动触发镜像同步。 判断是否同步成功的方法如下：响应状态码为200，无报错信息，表示同步成功。通过SWR管理控制台或调用查询镜像仓库概要信息接口，在目标区域的目标组织下，若存在所同步的镜像版本表示同步成功。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateManualImageSyncRepo
         :type request: :class:`huaweicloudsdkswr.v2.CreateManualImageSyncRepoRequest`
@@ -177,8 +175,7 @@ class SwrClient(Client):
 
         创建组织
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateNamespace
         :type request: :class:`huaweicloudsdkswr.v2.CreateNamespaceRequest`
@@ -238,8 +235,7 @@ class SwrClient(Client):
 
         创建组织权限
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateNamespaceAuth
         :type request: :class:`huaweicloudsdkswr.v2.CreateNamespaceAuthRequest`
@@ -301,8 +297,7 @@ class SwrClient(Client):
 
         在组织下创建镜像仓库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateRepo
         :type request: :class:`huaweicloudsdkswr.v2.CreateRepoRequest`
@@ -364,8 +359,7 @@ class SwrClient(Client):
 
         创建共享帐号。镜像上传后，您可以共享私有镜像给其他帐号，并授予下载该镜像的权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateRepoDomains
         :type request: :class:`huaweicloudsdkswr.v2.CreateRepoDomainsRequest`
@@ -429,8 +423,7 @@ class SwrClient(Client):
 
         创建镜像老化规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateRetention
         :type request: :class:`huaweicloudsdkswr.v2.CreateRetentionRequest`
@@ -494,8 +487,7 @@ class SwrClient(Client):
 
         调用该接口，通过获取响应消息头的X-Swr-Dockerlogin的值及响应消息体的host值，可生成临时登录指令。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateSecret
         :type request: :class:`huaweicloudsdkswr.v2.CreateSecretRequest`
@@ -555,8 +547,7 @@ class SwrClient(Client):
 
         创建触发器
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateTrigger
         :type request: :class:`huaweicloudsdkswr.v2.CreateTriggerRequest`
@@ -620,8 +611,7 @@ class SwrClient(Client):
 
         创建镜像权限
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateUserRepositoryAuth
         :type request: :class:`huaweicloudsdkswr.v2.CreateUserRepositoryAuthRequest`
@@ -685,8 +675,7 @@ class SwrClient(Client):
 
         根据目标区域、目标组织删除指定的镜像自动同步任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteImageSyncRepo
         :type request: :class:`huaweicloudsdkswr.v2.DeleteImageSyncRepoRequest`
@@ -750,8 +739,7 @@ class SwrClient(Client):
 
         删除组织权限
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteNamespaceAuth
         :type request: :class:`huaweicloudsdkswr.v2.DeleteNamespaceAuthRequest`
@@ -813,8 +801,7 @@ class SwrClient(Client):
 
         删除组织
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteNamespaces
         :type request: :class:`huaweicloudsdkswr.v2.DeleteNamespacesRequest`
@@ -874,8 +861,7 @@ class SwrClient(Client):
 
         删除组织下的镜像仓库。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteRepo
         :type request: :class:`huaweicloudsdkswr.v2.DeleteRepoRequest`
@@ -937,8 +923,7 @@ class SwrClient(Client):
 
         删除共享帐号
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteRepoDomains
         :type request: :class:`huaweicloudsdkswr.v2.DeleteRepoDomainsRequest`
@@ -1002,8 +987,7 @@ class SwrClient(Client):
 
         删除镜像仓库中指定tag的镜像
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteRepoTag
         :type request: :class:`huaweicloudsdkswr.v2.DeleteRepoTagRequest`
@@ -1067,8 +1051,7 @@ class SwrClient(Client):
 
         删除镜像老化规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteRetention
         :type request: :class:`huaweicloudsdkswr.v2.DeleteRetentionRequest`
@@ -1132,8 +1115,7 @@ class SwrClient(Client):
 
         删除触发器
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteTrigger
         :type request: :class:`huaweicloudsdkswr.v2.DeleteTriggerRequest`
@@ -1197,8 +1179,7 @@ class SwrClient(Client):
 
         删除镜像权限
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteUserRepositoryAuth
         :type request: :class:`huaweicloudsdkswr.v2.DeleteUserRepositoryAuthRequest`
@@ -1262,8 +1243,7 @@ class SwrClient(Client):
 
         获取为当前镜像仓库所创建的所有自动同步任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListImageAutoSyncReposDetails
         :type request: :class:`huaweicloudsdkswr.v2.ListImageAutoSyncReposDetailsRequest`
@@ -1325,8 +1305,7 @@ class SwrClient(Client):
 
         查询组织列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListNamespaces
         :type request: :class:`huaweicloudsdkswr.v2.ListNamespacesRequest`
@@ -1388,8 +1367,7 @@ class SwrClient(Client):
 
         获取配额信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListQuotas
         :type request: :class:`huaweicloudsdkswr.v2.ListQuotasRequest`
@@ -1447,8 +1425,7 @@ class SwrClient(Client):
 
         获取共享帐号列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRepoDomains
         :type request: :class:`huaweicloudsdkswr.v2.ListRepoDomainsRequest`
@@ -1510,8 +1487,7 @@ class SwrClient(Client):
 
         查询镜像仓库列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListReposDetails
         :type request: :class:`huaweicloudsdkswr.v2.ListReposDetailsRequest`
@@ -1585,8 +1561,7 @@ class SwrClient(Client):
 
         查询镜像tag列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRepositoryTags
         :type request: :class:`huaweicloudsdkswr.v2.ListRepositoryTagsRequest`
@@ -1660,8 +1635,7 @@ class SwrClient(Client):
 
         获取镜像老化记录
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRetentionHistories
         :type request: :class:`huaweicloudsdkswr.v2.ListRetentionHistoriesRequest`
@@ -1725,8 +1699,7 @@ class SwrClient(Client):
 
         获取镜像老化规则列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRetentions
         :type request: :class:`huaweicloudsdkswr.v2.ListRetentionsRequest`
@@ -1788,8 +1761,7 @@ class SwrClient(Client):
 
         查询共享镜像列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSharedReposDetails
         :type request: :class:`huaweicloudsdkswr.v2.ListSharedReposDetailsRequest`
@@ -1863,8 +1835,7 @@ class SwrClient(Client):
 
         获取镜像仓库下的触发器列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTriggersDetails
         :type request: :class:`huaweicloudsdkswr.v2.ListTriggersDetailsRequest`
@@ -1926,8 +1897,7 @@ class SwrClient(Client):
 
         判断共享租户是否存在
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAccessDomain
         :type request: :class:`huaweicloudsdkswr.v2.ShowAccessDomainRequest`
@@ -1991,8 +1961,7 @@ class SwrClient(Client):
 
         获取组织详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowNamespace
         :type request: :class:`huaweicloudsdkswr.v2.ShowNamespaceRequest`
@@ -2052,8 +2021,7 @@ class SwrClient(Client):
 
         查询组织权限
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowNamespaceAuth
         :type request: :class:`huaweicloudsdkswr.v2.ShowNamespaceAuthRequest`
@@ -2113,8 +2081,7 @@ class SwrClient(Client):
 
         查询镜像仓库概要信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRepository
         :type request: :class:`huaweicloudsdkswr.v2.ShowRepositoryRequest`
@@ -2176,8 +2143,7 @@ class SwrClient(Client):
 
         获取镜像老化规则记录
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRetention
         :type request: :class:`huaweicloudsdkswr.v2.ShowRetentionRequest`
@@ -2241,8 +2207,7 @@ class SwrClient(Client):
 
         创建镜像自动同步任务后，可以通过此接口查询该任务的状态，以判断是否同步成功。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowSyncJob
         :type request: :class:`huaweicloudsdkswr.v2.ShowSyncJobRequest`
@@ -2306,8 +2271,7 @@ class SwrClient(Client):
 
         获取触发器详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTrigger
         :type request: :class:`huaweicloudsdkswr.v2.ShowTriggerRequest`
@@ -2371,8 +2335,7 @@ class SwrClient(Client):
 
         查询镜像权限
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowUserRepositoryAuth
         :type request: :class:`huaweicloudsdkswr.v2.ShowUserRepositoryAuthRequest`
@@ -2434,8 +2397,7 @@ class SwrClient(Client):
 
         更新组织权限
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateNamespaceAuth
         :type request: :class:`huaweicloudsdkswr.v2.UpdateNamespaceAuthRequest`
@@ -2497,8 +2459,7 @@ class SwrClient(Client):
 
         更新租户组织下的镜像概要信息，包括镜像类型、是否公有、描述信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateRepo
         :type request: :class:`huaweicloudsdkswr.v2.UpdateRepoRequest`
@@ -2562,8 +2523,7 @@ class SwrClient(Client):
 
         更新共享帐号
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateRepoDomains
         :type request: :class:`huaweicloudsdkswr.v2.UpdateRepoDomainsRequest`
@@ -2629,8 +2589,7 @@ class SwrClient(Client):
 
         修改镜像老化规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateRetention
         :type request: :class:`huaweicloudsdkswr.v2.UpdateRetentionRequest`
@@ -2696,8 +2655,7 @@ class SwrClient(Client):
 
         更新触发器配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateTrigger
         :type request: :class:`huaweicloudsdkswr.v2.UpdateTriggerRequest`
@@ -2763,8 +2721,7 @@ class SwrClient(Client):
 
         更新镜像权限
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateUserRepositoryAuth
         :type request: :class:`huaweicloudsdkswr.v2.UpdateUserRepositoryAuthRequest`
@@ -2828,8 +2785,7 @@ class SwrClient(Client):
 
         查询所有API版本信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApiVersions
         :type request: :class:`huaweicloudsdkswr.v2.ListApiVersionsRequest`
@@ -2887,8 +2843,7 @@ class SwrClient(Client):
 
         查询指定API版本信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowApiVersion
         :type request: :class:`huaweicloudsdkswr.v2.ShowApiVersionRequest`

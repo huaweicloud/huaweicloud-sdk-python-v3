@@ -47,8 +47,7 @@ class RabbitMQClient(Client):
 
         批量添加或删除实例标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchCreateOrDeleteRabbitMqTag
         :type request: :class:`huaweicloudsdkrabbitmq.v2.BatchCreateOrDeleteRabbitMqTagRequest`
@@ -114,8 +113,7 @@ class RabbitMQClient(Client):
         
         实例删除后，实例中原有的数据将被删除，且没有备份，请谨慎操作。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchRestartOrDeleteInstances
         :type request: :class:`huaweicloudsdkrabbitmq.v2.BatchRestartOrDeleteInstancesRequest`
@@ -175,8 +173,7 @@ class RabbitMQClient(Client):
 
         创建实例，该接口创建的实例为按需计费的方式。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreatePostPaidInstance
         :type request: :class:`huaweicloudsdkrabbitmq.v2.CreatePostPaidInstanceRequest`
@@ -236,8 +233,7 @@ class RabbitMQClient(Client):
 
         创建实例，该接口创建的实例为按需计费的方式。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreatePostPaidInstanceByEngine
         :type request: :class:`huaweicloudsdkrabbitmq.v2.CreatePostPaidInstanceByEngineRequest`
@@ -299,8 +295,7 @@ class RabbitMQClient(Client):
 
         删除后台任务管理中的指定记录。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteBackgroundTask
         :type request: :class:`huaweicloudsdkrabbitmq.v2.DeleteBackgroundTaskRequest`
@@ -362,8 +357,7 @@ class RabbitMQClient(Client):
 
         删除指定的实例，释放该实例的所有资源。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteInstance
         :type request: :class:`huaweicloudsdkrabbitmq.v2.DeleteInstanceRequest`
@@ -423,8 +417,7 @@ class RabbitMQClient(Client):
 
         在创建实例时，需要配置实例所在的可用区ID，可通过该接口查询可用区的ID。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAvailableZones
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListAvailableZonesRequest`
@@ -482,8 +475,7 @@ class RabbitMQClient(Client):
 
         查询实例的后台任务列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListBackgroundTasks
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListBackgroundTasksRequest`
@@ -551,8 +543,7 @@ class RabbitMQClient(Client):
 
         查询产品规格列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEngineProducts
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListEngineProductsRequest`
@@ -614,8 +605,7 @@ class RabbitMQClient(Client):
 
         查询租户的实例列表，支持按照条件查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListInstancesDetails
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListInstancesDetailsRequest`
@@ -687,8 +677,7 @@ class RabbitMQClient(Client):
 
         查询插件列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPlugins
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListPluginsRequest`
@@ -748,8 +737,7 @@ class RabbitMQClient(Client):
 
         在创建实例时，需要配置订购的产品ID（即product_id），可通过该接口查询产品规格。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProducts
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListProductsRequest`
@@ -809,8 +797,7 @@ class RabbitMQClient(Client):
 
         重置密码。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ResetPassword
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ResetPasswordRequest`
@@ -874,8 +861,7 @@ class RabbitMQClient(Client):
         
         [**当前通过调用API，只支持按需实例进行实例规格变更。**](tag:hws,ctc)
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ResizeInstance
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ResizeInstanceRequest`
@@ -937,8 +923,7 @@ class RabbitMQClient(Client):
 
         查询后台任务管理中的指定记录。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowBackgroundTask
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowBackgroundTaskRequest`
@@ -1000,8 +985,7 @@ class RabbitMQClient(Client):
 
         查询指定实例的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowInstance
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowInstanceRequest`
@@ -1063,8 +1047,7 @@ class RabbitMQClient(Client):
         
         RabbtiMQ只支持只增加节点数的扩容方式。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowInstanceExtendProductInfo
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowInstanceExtendProductInfoRequest`
@@ -1128,8 +1111,7 @@ class RabbitMQClient(Client):
 
         查询维护时间窗开始时间和结束时间。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowMaintainWindows
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowMaintainWindowsRequest`
@@ -1187,8 +1169,7 @@ class RabbitMQClient(Client):
 
         查询项目标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRabbitMqProjectTags
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowRabbitMqProjectTagsRequest`
@@ -1246,8 +1227,7 @@ class RabbitMQClient(Client):
 
         查询实例标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRabbitMqTags
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowRabbitMqTagsRequest`
@@ -1307,8 +1287,7 @@ class RabbitMQClient(Client):
 
         修改实例的名称和描述信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateInstance
         :type request: :class:`huaweicloudsdkrabbitmq.v2.UpdateInstanceRequest`
@@ -1370,8 +1349,7 @@ class RabbitMQClient(Client):
 
         开启或关闭插件。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdatePlugins
         :type request: :class:`huaweicloudsdkrabbitmq.v2.UpdatePluginsRequest`

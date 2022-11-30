@@ -47,8 +47,7 @@ class VasClient(Client):
 
         该接口用于创建服务作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateTasks
         :type request: :class:`huaweicloudsdkvas.v2.CreateTasksRequest`
@@ -110,8 +109,7 @@ class VasClient(Client):
 
         该接口用于删除服务作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteTask
         :type request: :class:`huaweicloudsdkvas.v2.DeleteTaskRequest`
@@ -173,8 +171,7 @@ class VasClient(Client):
 
         该接口用于获取服务作业列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTasksDetails
         :type request: :class:`huaweicloudsdkvas.v2.ListTasksDetailsRequest`
@@ -252,8 +249,7 @@ class VasClient(Client):
 
         该接口用于查询服务作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTask
         :type request: :class:`huaweicloudsdkvas.v2.ShowTaskRequest`
@@ -315,8 +311,7 @@ class VasClient(Client):
 
         该接口用于启动服务作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartTask
         :type request: :class:`huaweicloudsdkvas.v2.StartTaskRequest`
@@ -378,8 +373,7 @@ class VasClient(Client):
 
         该接口用于停止服务作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StopTask
         :type request: :class:`huaweicloudsdkvas.v2.StopTaskRequest`
@@ -441,8 +435,7 @@ class VasClient(Client):
 
         该接口用于更新服务作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateTask
         :type request: :class:`huaweicloudsdkvas.v2.UpdateTaskRequest`

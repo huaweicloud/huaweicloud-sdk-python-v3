@@ -47,8 +47,7 @@ class LtsAsyncClient(Client):
 
         创建日志接入
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateAccessConfig
@@ -109,8 +108,7 @@ class LtsAsyncClient(Client):
 
         创建主机组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateHostGroup
@@ -171,8 +169,7 @@ class LtsAsyncClient(Client):
 
         该接口用于创建关键词告警，目前每个帐户最多可以创建共200个关键词告警与SQL告警。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateKeywordsAlarmRule
@@ -233,8 +230,7 @@ class LtsAsyncClient(Client):
 
         该接口用于将指定的一个或多个日志流的日志转储到OBS服务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateLogDumpObs
@@ -295,8 +291,7 @@ class LtsAsyncClient(Client):
 
         该接口用于创建一个日志组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateLogGroup
@@ -357,8 +352,7 @@ class LtsAsyncClient(Client):
 
         该接口用于创建某个指定日志组下的日志流
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateLogStream
@@ -421,8 +415,7 @@ class LtsAsyncClient(Client):
 
         该接口用于创建通知模板，目前每个帐户最多可以创建共100个通知模板，创建后名称不可修改。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateNotificationTemplate
@@ -485,8 +478,7 @@ class LtsAsyncClient(Client):
 
         该接口通过结构化模板创建结构化配置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateStructConfig
@@ -547,8 +539,7 @@ class LtsAsyncClient(Client):
 
         该接口用于创建指定日志流下的结构化配置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateStructTemplate
@@ -609,8 +600,7 @@ class LtsAsyncClient(Client):
 
         该接口用于创建OBS转储，DIS转储，DMS转储。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateTransfer
@@ -671,8 +661,7 @@ class LtsAsyncClient(Client):
 
         删除日志接入
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteAccessConfig
@@ -733,8 +722,7 @@ class LtsAsyncClient(Client):
 
         该接口用于删除活动告警
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteActiveAlarms
@@ -797,8 +785,7 @@ class LtsAsyncClient(Client):
 
         删除主机组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteHostGroup
@@ -859,8 +846,7 @@ class LtsAsyncClient(Client):
 
         该接口用于删除关键词告警。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteKeywordsAlarmRule
@@ -921,8 +907,7 @@ class LtsAsyncClient(Client):
 
         该接口用于删除指定日志组。当日志组中的日志流配置了日志转储，需要取消日志转储后才可删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteLogGroup
@@ -983,8 +968,7 @@ class LtsAsyncClient(Client):
 
         该接口用于删除指定日志组下的指定日志流。当该日志流配置了日志转储，需要取消日志转储后才可删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteLogStream
@@ -1047,8 +1031,7 @@ class LtsAsyncClient(Client):
 
         该接口用于删除通知模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteNotificationTemplate
@@ -1111,8 +1094,7 @@ class LtsAsyncClient(Client):
 
         该接口用于删除指定日志流下的结构化配置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteStructTemplate
@@ -1173,8 +1155,7 @@ class LtsAsyncClient(Client):
 
         该接口用于删除OBS转储，DIS转储，DMS转储。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteTransfer
@@ -1235,8 +1216,7 @@ class LtsAsyncClient(Client):
 
         该接口用于将超额采集日志功能关闭。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DisableLogCollection
@@ -1295,8 +1275,7 @@ class LtsAsyncClient(Client):
 
         该接口用于将超额采集日志功能打开。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for EnableLogCollection
@@ -1355,8 +1334,7 @@ class LtsAsyncClient(Client):
 
         查询日志接入列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAccessConfig
@@ -1417,8 +1395,7 @@ class LtsAsyncClient(Client):
 
         该接口用于查询告警列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListActiveOrHistoryAlarms
@@ -1487,8 +1464,7 @@ class LtsAsyncClient(Client):
 
         该接口用于查询结构化模板简略列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListBreifStructTemplate
@@ -1547,8 +1523,7 @@ class LtsAsyncClient(Client):
 
         该接口用于查询日志流图表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListCharts
@@ -1615,8 +1590,7 @@ class LtsAsyncClient(Client):
 
         查询主机列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListHost
@@ -1677,8 +1651,7 @@ class LtsAsyncClient(Client):
 
         查询主机组列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListHostGroup
@@ -1739,8 +1712,7 @@ class LtsAsyncClient(Client):
 
         该接口用于查询关键词告警。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListKeywordsAlarmRules
@@ -1799,8 +1771,7 @@ class LtsAsyncClient(Client):
 
         该接口用于查询账号下所有日志组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListLogGroups
@@ -1859,8 +1830,7 @@ class LtsAsyncClient(Client):
 
         查询关键词搜索条数
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListLogHistogram
@@ -1921,8 +1891,7 @@ class LtsAsyncClient(Client):
 
         该接口用于查询指定日志组下的所有日志流信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListLogStream
@@ -1985,8 +1954,7 @@ class LtsAsyncClient(Client):
 
         该接口用于查询LTS日志流信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListLogStreams
@@ -2053,8 +2021,7 @@ class LtsAsyncClient(Client):
 
         该接口用于查询指定日志流下的日志内容。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListLogs
@@ -2119,8 +2086,7 @@ class LtsAsyncClient(Client):
 
         该接口用于预览通知模板邮件格式
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListNotificationTemplate
@@ -2183,8 +2149,7 @@ class LtsAsyncClient(Client):
 
         该接口用于查询通知模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListNotificationTemplates
@@ -2249,8 +2214,7 @@ class LtsAsyncClient(Client):
 
         该接口用于查询SMN主题
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListNotificationTopics
@@ -2313,8 +2277,7 @@ class LtsAsyncClient(Client):
 
         该接口用于查询指定日志流下的结构化日志内容。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListQueryStructuredLogs
@@ -2379,8 +2342,7 @@ class LtsAsyncClient(Client):
 
         该接口用于查询结构化模板。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListStructTemplate
@@ -2441,8 +2403,7 @@ class LtsAsyncClient(Client):
 
         该接口用于查询指定日志流下的结构化日志内容（新版）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListStructuredLogsWithTimeRange
@@ -2505,8 +2466,7 @@ class LtsAsyncClient(Client):
 
         该接口用于查询OBS转储，DIS转储，DMS转储配置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTransfers
@@ -2575,8 +2535,7 @@ class LtsAsyncClient(Client):
 
         该接口用于注册DMS kafka实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RegisterDmsKafkaInstance
@@ -2637,8 +2596,7 @@ class LtsAsyncClient(Client):
 
         该接口用于查询单个通知模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowNotificationTemplate
@@ -2701,8 +2659,7 @@ class LtsAsyncClient(Client):
 
         该接口用于查询指定日志流下的结构化配置内容。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowStructTemplate
@@ -2765,8 +2722,7 @@ class LtsAsyncClient(Client):
 
         修改日志接入
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateAccessConfig
@@ -2827,8 +2783,7 @@ class LtsAsyncClient(Client):
 
         修改主机组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateHostGroup
@@ -2889,8 +2844,7 @@ class LtsAsyncClient(Client):
 
         该接口用于修改关键词告警。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateKeywordsAlarmRule
@@ -2951,8 +2905,7 @@ class LtsAsyncClient(Client):
 
         该接口用于修改指定日志组下的日志存储时长。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateLogGroup
@@ -3015,8 +2968,7 @@ class LtsAsyncClient(Client):
 
         该接口用于修改通知模板,根据名称进行修改。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateNotificationTemplate
@@ -3079,8 +3031,7 @@ class LtsAsyncClient(Client):
 
         该接口通过结构化模板修改结构化配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateStructConfig
@@ -3141,8 +3092,7 @@ class LtsAsyncClient(Client):
 
         该接口用于修改指定日志流下的结构化配置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateStructTemplate
@@ -3203,8 +3153,7 @@ class LtsAsyncClient(Client):
 
         该接口用于更新OBS转储，DIS转储，DMS转储。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateTransfer
@@ -3265,8 +3214,7 @@ class LtsAsyncClient(Client):
 
         该接口用于创建aom日志接入lts规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateAomMappingRules
@@ -3329,8 +3277,7 @@ class LtsAsyncClient(Client):
 
         该接口用于删除lts接入规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteAomMappingRules
@@ -3391,8 +3338,7 @@ class LtsAsyncClient(Client):
 
         该接口用于查询单个aom日志接入lts
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowAomMappingRule
@@ -3453,8 +3399,7 @@ class LtsAsyncClient(Client):
 
         该接口用于查询aom日志所有接入lts规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowAomMappingRules
@@ -3513,8 +3458,7 @@ class LtsAsyncClient(Client):
 
         该接口用于修改接入规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateAomMappingRules
@@ -3575,8 +3519,7 @@ class LtsAsyncClient(Client):
 
         该接口用于创建SQL告警，目前每个帐户最多可以创建共200个关键词告警与SQL告警
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateSqlAlarmRule
@@ -3637,8 +3580,7 @@ class LtsAsyncClient(Client):
 
         该接口用于删除SQL告警
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteSqlAlarmRule
@@ -3699,8 +3641,7 @@ class LtsAsyncClient(Client):
 
         该接口用于查询SQL告警
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSqlAlarmRules
@@ -3759,8 +3700,7 @@ class LtsAsyncClient(Client):
 
         改变告警规则状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateAlarmRuleStatus
@@ -3821,8 +3761,7 @@ class LtsAsyncClient(Client):
 
         该接口用于修改SQL告警
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateSqlAlarmRule

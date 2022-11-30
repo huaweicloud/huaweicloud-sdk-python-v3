@@ -21,7 +21,7 @@ class ListCloudPhoneModelsResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'phone_models': 'list[object]'
+        'phone_models': 'list[PhoneModel]'
     }
 
     attribute_map = {
@@ -34,10 +34,10 @@ class ListCloudPhoneModelsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 请求的唯一标识ID
+        :param request_id: 请求的唯一标识ID。
         :type request_id: str
         :param phone_models: 云手机的规格信息
-        :type phone_models: list[object]
+        :type phone_models: list[:class:`huaweicloudsdkcph.v1.PhoneModel`]
         """
         
         super(ListCloudPhoneModelsResponse, self).__init__()
@@ -46,14 +46,16 @@ class ListCloudPhoneModelsResponse(SdkResponse):
         self._phone_models = None
         self.discriminator = None
 
-        self.request_id = request_id
-        self.phone_models = phone_models
+        if request_id is not None:
+            self.request_id = request_id
+        if phone_models is not None:
+            self.phone_models = phone_models
 
     @property
     def request_id(self):
         """Gets the request_id of this ListCloudPhoneModelsResponse.
 
-        请求的唯一标识ID
+        请求的唯一标识ID。
 
         :return: The request_id of this ListCloudPhoneModelsResponse.
         :rtype: str
@@ -64,7 +66,7 @@ class ListCloudPhoneModelsResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this ListCloudPhoneModelsResponse.
 
-        请求的唯一标识ID
+        请求的唯一标识ID。
 
         :param request_id: The request_id of this ListCloudPhoneModelsResponse.
         :type request_id: str
@@ -78,7 +80,7 @@ class ListCloudPhoneModelsResponse(SdkResponse):
         云手机的规格信息
 
         :return: The phone_models of this ListCloudPhoneModelsResponse.
-        :rtype: list[object]
+        :rtype: list[:class:`huaweicloudsdkcph.v1.PhoneModel`]
         """
         return self._phone_models
 
@@ -89,7 +91,7 @@ class ListCloudPhoneModelsResponse(SdkResponse):
         云手机的规格信息
 
         :param phone_models: The phone_models of this ListCloudPhoneModelsResponse.
-        :type phone_models: list[object]
+        :type phone_models: list[:class:`huaweicloudsdkcph.v1.PhoneModel`]
         """
         self._phone_models = phone_models
 

@@ -47,8 +47,7 @@ class CesClient(Client):
 
         批量增加告警规则资源(资源分组类型的告警规则不支持)，资源分组类型的修改请使用资源分组管理相关接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddAlarmRuleResources
         :type request: :class:`huaweicloudsdkces.v2.AddAlarmRuleResourcesRequest`
@@ -110,8 +109,7 @@ class CesClient(Client):
 
         给自定义资源分组,即类型为手动添加的资源分组,批量增加关联资源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchCreateResources
         :type request: :class:`huaweicloudsdkces.v2.BatchCreateResourcesRequest`
@@ -173,8 +171,7 @@ class CesClient(Client):
 
         批量删除告警规则V2接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteAlarmRules
         :type request: :class:`huaweicloudsdkces.v2.BatchDeleteAlarmRulesRequest`
@@ -234,8 +231,7 @@ class CesClient(Client):
 
         批量删除自定义告警模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteAlarmTemplates
         :type request: :class:`huaweicloudsdkces.v2.BatchDeleteAlarmTemplatesRequest`
@@ -295,8 +291,7 @@ class CesClient(Client):
 
         批量删除资源分组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteResourceGroups
         :type request: :class:`huaweicloudsdkces.v2.BatchDeleteResourceGroupsRequest`
@@ -356,8 +351,7 @@ class CesClient(Client):
 
         给自定义资源分组,即类型为手动添加的资源分组,批量删除关联资源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteResources
         :type request: :class:`huaweicloudsdkces.v2.BatchDeleteResourcesRequest`
@@ -419,8 +413,7 @@ class CesClient(Client):
 
         批量启停告警规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchEnableAlarmRules
         :type request: :class:`huaweicloudsdkces.v2.BatchEnableAlarmRulesRequest`
@@ -480,8 +473,7 @@ class CesClient(Client):
 
         创建告警规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAlarmRules
         :type request: :class:`huaweicloudsdkces.v2.CreateAlarmRulesRequest`
@@ -541,8 +533,7 @@ class CesClient(Client):
 
         创建自定义告警模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAlarmTemplate
         :type request: :class:`huaweicloudsdkces.v2.CreateAlarmTemplateRequest`
@@ -602,8 +593,7 @@ class CesClient(Client):
 
         创建资源分组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateResourceGroup
         :type request: :class:`huaweicloudsdkces.v2.CreateResourceGroupRequest`
@@ -663,8 +653,7 @@ class CesClient(Client):
 
         批量删除告警规则资源（资源分组类型的告警规则不支持），资源分组类型的修改请使用资源分组管理相关接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAlarmRuleResources
         :type request: :class:`huaweicloudsdkces.v2.DeleteAlarmRuleResourcesRequest`
@@ -726,8 +715,7 @@ class CesClient(Client):
 
         根据ECS/BMS资源ID查询磁盘、挂载点、进程、显卡、RAID控制器维度指标信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAgentDimensionInfo
         :type request: :class:`huaweicloudsdkces.v2.ListAgentDimensionInfoRequest`
@@ -795,8 +783,7 @@ class CesClient(Client):
 
         查询告警记录列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAlarmHistories
         :type request: :class:`huaweicloudsdkces.v2.ListAlarmHistoriesRequest`
@@ -874,8 +861,7 @@ class CesClient(Client):
 
         根据告警规则ID查询策略列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAlarmRulePolicies
         :type request: :class:`huaweicloudsdkces.v2.ListAlarmRulePoliciesRequest`
@@ -939,8 +925,7 @@ class CesClient(Client):
 
         根据告警规则ID查询告警规则资源列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAlarmRuleResources
         :type request: :class:`huaweicloudsdkces.v2.ListAlarmRuleResourcesRequest`
@@ -1004,8 +989,7 @@ class CesClient(Client):
 
         查询告警规则列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAlarmRules
         :type request: :class:`huaweicloudsdkces.v2.ListAlarmRulesRequest`
@@ -1077,8 +1061,7 @@ class CesClient(Client):
 
         查询告警模板关联的告警规则列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAlarmTemplateAssociationAlarms
         :type request: :class:`huaweicloudsdkces.v2.ListAlarmTemplateAssociationAlarmsRequest`
@@ -1142,8 +1125,7 @@ class CesClient(Client):
 
         查询告警模板列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAlarmTemplates
         :type request: :class:`huaweicloudsdkces.v2.ListAlarmTemplatesRequest`
@@ -1213,8 +1195,7 @@ class CesClient(Client):
 
         查询资源分组列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListResourceGroups
         :type request: :class:`huaweicloudsdkces.v2.ListResourceGroupsRequest`
@@ -1284,8 +1265,7 @@ class CesClient(Client):
 
         查询资源分组下指定服务类别特定维度的资源列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListResourceGroupsServicesResources
         :type request: :class:`huaweicloudsdkces.v2.ListResourceGroupsServicesResourcesRequest`
@@ -1357,8 +1337,7 @@ class CesClient(Client):
 
         查询告警模板详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAlarmTemplate
         :type request: :class:`huaweicloudsdkces.v2.ShowAlarmTemplateRequest`
@@ -1418,8 +1397,7 @@ class CesClient(Client):
 
         查询指定资源分组详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowResourceGroup
         :type request: :class:`huaweicloudsdkces.v2.ShowResourceGroupRequest`
@@ -1479,8 +1457,7 @@ class CesClient(Client):
 
         修改告警规则策略(全量修改)
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateAlarmRulePolicies
         :type request: :class:`huaweicloudsdkces.v2.UpdateAlarmRulePoliciesRequest`
@@ -1542,8 +1519,7 @@ class CesClient(Client):
 
         修改自定义告警模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateAlarmTemplate
         :type request: :class:`huaweicloudsdkces.v2.UpdateAlarmTemplateRequest`
@@ -1605,8 +1581,7 @@ class CesClient(Client):
 
         修改资源分组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateResourceGroup
         :type request: :class:`huaweicloudsdkces.v2.UpdateResourceGroupRequest`

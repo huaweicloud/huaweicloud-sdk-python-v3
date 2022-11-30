@@ -22,16 +22,18 @@ class EnlargeRequest:
     openapi_types = {
         'flavor_id': 'str',
         'node_number': 'int',
-        'group_id': 'str'
+        'group_id': 'str',
+        'is_auto_pay': 'bool'
     }
 
     attribute_map = {
         'flavor_id': 'flavor_id',
         'node_number': 'node_number',
-        'group_id': 'group_id'
+        'group_id': 'group_id',
+        'is_auto_pay': 'is_auto_pay'
     }
 
-    def __init__(self, flavor_id=None, node_number=None, group_id=None):
+    def __init__(self, flavor_id=None, node_number=None, group_id=None, is_auto_pay=None):
         """EnlargeRequest
 
         The model defined in huaweicloud sdk
@@ -42,6 +44,8 @@ class EnlargeRequest:
         :type node_number: int
         :param group_id: 组id，指定当前进行节点扩容的组。当实例的组&gt;1时，必填。
         :type group_id: str
+        :param is_auto_pay: 变更包年包月实例规格时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。true，表示自动从账户中支付。false，表示手动从账户中支付，默认为该方式。
+        :type is_auto_pay: bool
         """
         
         
@@ -49,12 +53,15 @@ class EnlargeRequest:
         self._flavor_id = None
         self._node_number = None
         self._group_id = None
+        self._is_auto_pay = None
         self.discriminator = None
 
         self.flavor_id = flavor_id
         self.node_number = node_number
         if group_id is not None:
             self.group_id = group_id
+        if is_auto_pay is not None:
+            self.is_auto_pay = is_auto_pay
 
     @property
     def flavor_id(self):
@@ -121,6 +128,28 @@ class EnlargeRequest:
         :type group_id: str
         """
         self._group_id = group_id
+
+    @property
+    def is_auto_pay(self):
+        """Gets the is_auto_pay of this EnlargeRequest.
+
+        变更包年包月实例规格时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。true，表示自动从账户中支付。false，表示手动从账户中支付，默认为该方式。
+
+        :return: The is_auto_pay of this EnlargeRequest.
+        :rtype: bool
+        """
+        return self._is_auto_pay
+
+    @is_auto_pay.setter
+    def is_auto_pay(self, is_auto_pay):
+        """Sets the is_auto_pay of this EnlargeRequest.
+
+        变更包年包月实例规格时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。true，表示自动从账户中支付。false，表示手动从账户中支付，默认为该方式。
+
+        :param is_auto_pay: The is_auto_pay of this EnlargeRequest.
+        :type is_auto_pay: bool
+        """
+        self._is_auto_pay = is_auto_pay
 
     def to_dict(self):
         """Returns the model properties as a dict"""

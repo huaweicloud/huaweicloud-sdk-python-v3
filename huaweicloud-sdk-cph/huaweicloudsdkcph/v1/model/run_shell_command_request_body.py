@@ -38,13 +38,13 @@ class RunShellCommandRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param command: 手机管理命令 - 推送文件场景固定填写push - 安装apk场景固定填写install - 安装多apk场景固定填写install-multiple - 卸载apk场景固定填写uninstall - 执行命令固定写shell
+        :param command: ADB命令，固定填写shell。
         :type command: str
-        :param content: - 推送文件场景：指定OBS桶中的tar文件。最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。推送的文件只支持tar文件类型。文件格式：obs://obs-bucket-name/obs-file-path/file.tar  - 安装apk场景：指定OBS桶中的apk文件（需要提前上传到指定桶中）。单apk场景，只能传一个apk。最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。推送的文件只支持apk文件类型。文件格式：obs://obs-bucket-name/obs-file-path/file.apk  - 安装多apk场景：指定OBS桶中的apk文件（需要提前上传到指定桶中）。多apk场景，最多传50个apk，中间用空格分开，最大长度8100字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。推送的文件只支持apk文件类型。文件格式：obs://obs-bucket-name/obs-file-path/file.apk  - 卸载apk场景：待卸载的APP名称。最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）  - 执行命令场景：待执行的命令。最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）
+        :param content: 待执行的命令。  最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。
         :type content: str
-        :param phone_ids: 云手机ID列表 server_ids参数不存在时必选
+        :param phone_ids: 云手机ID列表。 server_ids参数不存在时必选，同时存在只处理phone_ids。
         :type phone_ids: list[str]
-        :param server_ids: 云手机服务器ID列表 phone_ids参数不存在时必选
+        :param server_ids: 云手机服务器ID列表。 phone_ids参数不存在时必选，同时存在只处理phone_ids。
         :type server_ids: list[str]
         """
         
@@ -67,7 +67,7 @@ class RunShellCommandRequestBody:
     def command(self):
         """Gets the command of this RunShellCommandRequestBody.
 
-        手机管理命令 - 推送文件场景固定填写push - 安装apk场景固定填写install - 安装多apk场景固定填写install-multiple - 卸载apk场景固定填写uninstall - 执行命令固定写shell
+        ADB命令，固定填写shell。
 
         :return: The command of this RunShellCommandRequestBody.
         :rtype: str
@@ -78,7 +78,7 @@ class RunShellCommandRequestBody:
     def command(self, command):
         """Sets the command of this RunShellCommandRequestBody.
 
-        手机管理命令 - 推送文件场景固定填写push - 安装apk场景固定填写install - 安装多apk场景固定填写install-multiple - 卸载apk场景固定填写uninstall - 执行命令固定写shell
+        ADB命令，固定填写shell。
 
         :param command: The command of this RunShellCommandRequestBody.
         :type command: str
@@ -89,7 +89,7 @@ class RunShellCommandRequestBody:
     def content(self):
         """Gets the content of this RunShellCommandRequestBody.
 
-        - 推送文件场景：指定OBS桶中的tar文件。最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。推送的文件只支持tar文件类型。文件格式：obs://obs-bucket-name/obs-file-path/file.tar  - 安装apk场景：指定OBS桶中的apk文件（需要提前上传到指定桶中）。单apk场景，只能传一个apk。最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。推送的文件只支持apk文件类型。文件格式：obs://obs-bucket-name/obs-file-path/file.apk  - 安装多apk场景：指定OBS桶中的apk文件（需要提前上传到指定桶中）。多apk场景，最多传50个apk，中间用空格分开，最大长度8100字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。推送的文件只支持apk文件类型。文件格式：obs://obs-bucket-name/obs-file-path/file.apk  - 卸载apk场景：待卸载的APP名称。最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）  - 执行命令场景：待执行的命令。最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）
+        待执行的命令。  最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。
 
         :return: The content of this RunShellCommandRequestBody.
         :rtype: str
@@ -100,7 +100,7 @@ class RunShellCommandRequestBody:
     def content(self, content):
         """Sets the content of this RunShellCommandRequestBody.
 
-        - 推送文件场景：指定OBS桶中的tar文件。最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。推送的文件只支持tar文件类型。文件格式：obs://obs-bucket-name/obs-file-path/file.tar  - 安装apk场景：指定OBS桶中的apk文件（需要提前上传到指定桶中）。单apk场景，只能传一个apk。最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。推送的文件只支持apk文件类型。文件格式：obs://obs-bucket-name/obs-file-path/file.apk  - 安装多apk场景：指定OBS桶中的apk文件（需要提前上传到指定桶中）。多apk场景，最多传50个apk，中间用空格分开，最大长度8100字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。推送的文件只支持apk文件类型。文件格式：obs://obs-bucket-name/obs-file-path/file.apk  - 卸载apk场景：待卸载的APP名称。最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）  - 执行命令场景：待执行的命令。最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）
+        待执行的命令。  最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。
 
         :param content: The content of this RunShellCommandRequestBody.
         :type content: str
@@ -111,7 +111,7 @@ class RunShellCommandRequestBody:
     def phone_ids(self):
         """Gets the phone_ids of this RunShellCommandRequestBody.
 
-        云手机ID列表 server_ids参数不存在时必选
+        云手机ID列表。 server_ids参数不存在时必选，同时存在只处理phone_ids。
 
         :return: The phone_ids of this RunShellCommandRequestBody.
         :rtype: list[str]
@@ -122,7 +122,7 @@ class RunShellCommandRequestBody:
     def phone_ids(self, phone_ids):
         """Sets the phone_ids of this RunShellCommandRequestBody.
 
-        云手机ID列表 server_ids参数不存在时必选
+        云手机ID列表。 server_ids参数不存在时必选，同时存在只处理phone_ids。
 
         :param phone_ids: The phone_ids of this RunShellCommandRequestBody.
         :type phone_ids: list[str]
@@ -133,7 +133,7 @@ class RunShellCommandRequestBody:
     def server_ids(self):
         """Gets the server_ids of this RunShellCommandRequestBody.
 
-        云手机服务器ID列表 phone_ids参数不存在时必选
+        云手机服务器ID列表。 phone_ids参数不存在时必选，同时存在只处理phone_ids。
 
         :return: The server_ids of this RunShellCommandRequestBody.
         :rtype: list[str]
@@ -144,7 +144,7 @@ class RunShellCommandRequestBody:
     def server_ids(self, server_ids):
         """Sets the server_ids of this RunShellCommandRequestBody.
 
-        云手机服务器ID列表 phone_ids参数不存在时必选
+        云手机服务器ID列表。 phone_ids参数不存在时必选，同时存在只处理phone_ids。
 
         :param server_ids: The server_ids of this RunShellCommandRequestBody.
         :type server_ids: list[str]

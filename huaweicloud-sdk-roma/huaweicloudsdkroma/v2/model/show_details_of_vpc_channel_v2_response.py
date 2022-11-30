@@ -29,6 +29,8 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
         'id': 'str',
         'status': 'int',
         'member_groups': 'list[MemberGroupInfo]',
+        'microservice_info': 'MicroServiceInfo',
+        'type': 'str',
         'members': 'list[VpcMemberInfo]',
         'vpc_health_config': 'VpcHealthConfigInfo'
     }
@@ -43,11 +45,13 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
         'id': 'id',
         'status': 'status',
         'member_groups': 'member_groups',
+        'microservice_info': 'microservice_info',
+        'type': 'type',
         'members': 'members',
         'vpc_health_config': 'vpc_health_config'
     }
 
-    def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, dict_code=None, create_time=None, id=None, status=None, member_groups=None, members=None, vpc_health_config=None):
+    def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, dict_code=None, create_time=None, id=None, status=None, member_groups=None, microservice_info=None, type=None, members=None, vpc_health_config=None):
         """ShowDetailsOfVpcChannelV2Response
 
         The model defined in huaweicloud sdk
@@ -70,6 +74,10 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
         :type status: int
         :param member_groups: 后端云服务器组列表。  [暂不支持](tag:Site)
         :type member_groups: list[:class:`huaweicloudsdkroma.v2.MemberGroupInfo`]
+        :param microservice_info: 
+        :type microservice_info: :class:`huaweicloudsdkroma.v2.MicroServiceInfo`
+        :param type: vpc通道类型。 - BUILTIN：BUILTIN通道类型 - MICROSERVICE：微服务类型
+        :type type: str
         :param members: 后端实例列表。
         :type members: list[:class:`huaweicloudsdkroma.v2.VpcMemberInfo`]
         :param vpc_health_config: 
@@ -87,6 +95,8 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
         self._id = None
         self._status = None
         self._member_groups = None
+        self._microservice_info = None
+        self._type = None
         self._members = None
         self._vpc_health_config = None
         self.discriminator = None
@@ -105,6 +115,10 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
             self.status = status
         if member_groups is not None:
             self.member_groups = member_groups
+        if microservice_info is not None:
+            self.microservice_info = microservice_info
+        if type is not None:
+            self.type = type
         if members is not None:
             self.members = members
         if vpc_health_config is not None:
@@ -307,6 +321,46 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
         :type member_groups: list[:class:`huaweicloudsdkroma.v2.MemberGroupInfo`]
         """
         self._member_groups = member_groups
+
+    @property
+    def microservice_info(self):
+        """Gets the microservice_info of this ShowDetailsOfVpcChannelV2Response.
+
+        :return: The microservice_info of this ShowDetailsOfVpcChannelV2Response.
+        :rtype: :class:`huaweicloudsdkroma.v2.MicroServiceInfo`
+        """
+        return self._microservice_info
+
+    @microservice_info.setter
+    def microservice_info(self, microservice_info):
+        """Sets the microservice_info of this ShowDetailsOfVpcChannelV2Response.
+
+        :param microservice_info: The microservice_info of this ShowDetailsOfVpcChannelV2Response.
+        :type microservice_info: :class:`huaweicloudsdkroma.v2.MicroServiceInfo`
+        """
+        self._microservice_info = microservice_info
+
+    @property
+    def type(self):
+        """Gets the type of this ShowDetailsOfVpcChannelV2Response.
+
+        vpc通道类型。 - BUILTIN：BUILTIN通道类型 - MICROSERVICE：微服务类型
+
+        :return: The type of this ShowDetailsOfVpcChannelV2Response.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ShowDetailsOfVpcChannelV2Response.
+
+        vpc通道类型。 - BUILTIN：BUILTIN通道类型 - MICROSERVICE：微服务类型
+
+        :param type: The type of this ShowDetailsOfVpcChannelV2Response.
+        :type type: str
+        """
+        self._type = type
 
     @property
     def members(self):

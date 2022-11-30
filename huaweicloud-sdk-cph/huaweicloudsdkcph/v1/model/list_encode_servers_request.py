@@ -48,7 +48,7 @@ class ListEncodeServersRequest:
         :type type: int
         :param status: 状态列表 - 1：运行中 - 2：异常 - 3：重启中 - 4：冻结 - 5：关机 - 100、1014、0：创建中
         :type status: int
-        :param server_id: 服务器id。
+        :param server_id: 云手机服务器的唯一标识。
         :type server_id: str
         """
         
@@ -164,7 +164,7 @@ class ListEncodeServersRequest:
     def server_id(self):
         """Gets the server_id of this ListEncodeServersRequest.
 
-        服务器id。
+        云手机服务器的唯一标识。
 
         :return: The server_id of this ListEncodeServersRequest.
         :rtype: str
@@ -175,7 +175,7 @@ class ListEncodeServersRequest:
     def server_id(self, server_id):
         """Sets the server_id of this ListEncodeServersRequest.
 
-        服务器id。
+        云手机服务器的唯一标识。
 
         :param server_id: The server_id of this ListEncodeServersRequest.
         :type server_id: str

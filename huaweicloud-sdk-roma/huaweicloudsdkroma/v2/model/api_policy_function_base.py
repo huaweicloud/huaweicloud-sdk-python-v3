@@ -23,17 +23,19 @@ class ApiPolicyFunctionBase:
         'function_urn': 'str',
         'invocation_type': 'str',
         'timeout': 'int',
-        'version': 'str'
+        'version': 'str',
+        'alias_urn': 'str'
     }
 
     attribute_map = {
         'function_urn': 'function_urn',
         'invocation_type': 'invocation_type',
         'timeout': 'timeout',
-        'version': 'version'
+        'version': 'version',
+        'alias_urn': 'alias_urn'
     }
 
-    def __init__(self, function_urn=None, invocation_type=None, timeout=None, version=None):
+    def __init__(self, function_urn=None, invocation_type=None, timeout=None, version=None, alias_urn=None):
         """ApiPolicyFunctionBase
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class ApiPolicyFunctionBase:
         :type timeout: int
         :param version: 版本。字符长度不超过64
         :type version: str
+        :param alias_urn: 函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+        :type alias_urn: str
         """
         
         
@@ -54,6 +58,7 @@ class ApiPolicyFunctionBase:
         self._invocation_type = None
         self._timeout = None
         self._version = None
+        self._alias_urn = None
         self.discriminator = None
 
         self.function_urn = function_urn
@@ -61,6 +66,8 @@ class ApiPolicyFunctionBase:
         self.timeout = timeout
         if version is not None:
             self.version = version
+        if alias_urn is not None:
+            self.alias_urn = alias_urn
 
     @property
     def function_urn(self):
@@ -149,6 +156,28 @@ class ApiPolicyFunctionBase:
         :type version: str
         """
         self._version = version
+
+    @property
+    def alias_urn(self):
+        """Gets the alias_urn of this ApiPolicyFunctionBase.
+
+        函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+
+        :return: The alias_urn of this ApiPolicyFunctionBase.
+        :rtype: str
+        """
+        return self._alias_urn
+
+    @alias_urn.setter
+    def alias_urn(self, alias_urn):
+        """Sets the alias_urn of this ApiPolicyFunctionBase.
+
+        函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+
+        :param alias_urn: The alias_urn of this ApiPolicyFunctionBase.
+        :type alias_urn: str
+        """
+        self._alias_urn = alias_urn
 
     def to_dict(self):
         """Returns the model properties as a dict"""

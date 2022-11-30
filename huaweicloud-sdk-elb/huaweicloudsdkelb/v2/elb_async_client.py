@@ -47,8 +47,7 @@ class ElbAsyncClient(Client):
 
         批量添加监听器标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchCreateListenerTags
@@ -111,8 +110,7 @@ class ElbAsyncClient(Client):
 
         批量添加负载均衡器标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchCreateLoadbalancerTags
@@ -175,8 +173,7 @@ class ElbAsyncClient(Client):
 
         批量删除监听器标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeleteListenerTags
@@ -239,8 +236,7 @@ class ElbAsyncClient(Client):
 
         批量删除负载均衡器标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeleteLoadbalancerTags
@@ -303,8 +299,7 @@ class ElbAsyncClient(Client):
 
         给后端云服务器组添加健康检查
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateHealthmonitor
@@ -365,8 +360,7 @@ class ElbAsyncClient(Client):
 
         创建listener关联的转发策略
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateL7policy
@@ -427,8 +421,7 @@ class ElbAsyncClient(Client):
 
         创建转发规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateL7rule
@@ -491,8 +484,7 @@ class ElbAsyncClient(Client):
 
         创建与负载均衡器绑定的监听器。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateListener
@@ -553,8 +545,7 @@ class ElbAsyncClient(Client):
 
         给指定监听器添加标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateListenerTags
@@ -617,8 +608,7 @@ class ElbAsyncClient(Client):
 
         创建私网类型的增强型负载均衡器。创建成功后，该接口会返回创建的增强型负载均衡器的ID、所属子网ID、负载均衡器IP等详细信息。若要创建公网类型的增强型负载均衡器，还需调用创建浮动IP的接口，将浮动IP与私网负载均衡器的vip_port_id绑定。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateLoadbalancer
@@ -679,8 +669,7 @@ class ElbAsyncClient(Client):
 
         给指定负载均衡器添加标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateLoadbalancerTags
@@ -743,8 +732,7 @@ class ElbAsyncClient(Client):
 
         添加属于某个后端云服务器组的后端云服务器。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateMember
@@ -807,8 +795,7 @@ class ElbAsyncClient(Client):
 
         创建后端云服务器组。将多个后端云服务器添加到后端云服务器组中后，请求会在后端云服务器间按后端云服务器组的负载均衡算法和后端云服务器的权重来做请求分发。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreatePool
@@ -869,8 +856,7 @@ class ElbAsyncClient(Client):
 
         创建白名单，控制监听器的访问权限。若开启了白名单功能，只有白名单中放通的IP可以访问该监听器的后端服务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateWhitelist
@@ -931,8 +917,7 @@ class ElbAsyncClient(Client):
 
         删除健康检查
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteHealthmonitor
@@ -993,8 +978,7 @@ class ElbAsyncClient(Client):
 
         删除转发策略
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteL7policy
@@ -1055,8 +1039,7 @@ class ElbAsyncClient(Client):
 
         删除转发规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteL7rule
@@ -1119,8 +1102,7 @@ class ElbAsyncClient(Client):
 
         根据指定ID删除监听器。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteListener
@@ -1181,8 +1163,7 @@ class ElbAsyncClient(Client):
 
         删除监听器的某个key对应的标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteListenerTags
@@ -1245,8 +1226,7 @@ class ElbAsyncClient(Client):
 
         根据指定ID删除负载均衡器。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteLoadbalancer
@@ -1307,8 +1287,7 @@ class ElbAsyncClient(Client):
 
         删除负载均衡器的某个key对应的标签。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteLoadbalancerTags
@@ -1371,8 +1350,7 @@ class ElbAsyncClient(Client):
 
         删除后端云服务器
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteMember
@@ -1435,8 +1413,7 @@ class ElbAsyncClient(Client):
 
         删除后端云服务器组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeletePool
@@ -1497,8 +1474,7 @@ class ElbAsyncClient(Client):
 
         删除白名单
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteWhitelist
@@ -1559,8 +1535,7 @@ class ElbAsyncClient(Client):
 
         查询健康检查列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListHealthmonitors
@@ -1649,8 +1624,7 @@ class ElbAsyncClient(Client):
 
         查询转发策略。支持过滤查询和分页查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListL7policies
@@ -1741,8 +1715,7 @@ class ElbAsyncClient(Client):
 
         查询指定转发策略下关联的转发规则列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListL7rules
@@ -1825,8 +1798,7 @@ class ElbAsyncClient(Client):
 
         查询指定项目下所有监听器的标签列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListListenerTags
@@ -1885,8 +1857,7 @@ class ElbAsyncClient(Client):
 
         查询监听器列表。支持过滤查询和分页查询。可以通过监听器ID、协议类型、监听端口号、关联的后端云服务器的IP等查询监听器。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListListeners
@@ -1981,8 +1952,7 @@ class ElbAsyncClient(Client):
 
         根据标签过滤查询监听器实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListListenersByTags
@@ -2043,8 +2013,7 @@ class ElbAsyncClient(Client):
 
         查询指定项目下所有负载均衡器的标签列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListLoadbalancerTags
@@ -2103,8 +2072,7 @@ class ElbAsyncClient(Client):
 
         查询负载均衡器列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListLoadbalancers
@@ -2195,8 +2163,7 @@ class ElbAsyncClient(Client):
 
         根据标签过滤查询负载均衡实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListLoadbalancersByTags
@@ -2257,8 +2224,7 @@ class ElbAsyncClient(Client):
 
         查询属于某个后端云服务器组的后端云服务器。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListMembers
@@ -2339,8 +2305,7 @@ class ElbAsyncClient(Client):
 
         查询后端云服务器组列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListPools
@@ -2425,8 +2390,7 @@ class ElbAsyncClient(Client):
 
         查询白名单，支持过滤查询和分页查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListWhitelists
@@ -2499,8 +2463,7 @@ class ElbAsyncClient(Client):
 
         根据指定ID查询健康检查详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowHealthmonitors
@@ -2561,8 +2524,7 @@ class ElbAsyncClient(Client):
 
         根据指定ID查询转发策略详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowL7policy
@@ -2623,8 +2585,7 @@ class ElbAsyncClient(Client):
 
         根据指定ID查询某转发策略下关联的转发规则详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowL7rule
@@ -2687,8 +2648,7 @@ class ElbAsyncClient(Client):
 
         根据指定ID查询监听器详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowListener
@@ -2749,8 +2709,7 @@ class ElbAsyncClient(Client):
 
         查询指定监听器的所有标签信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowListenerTags
@@ -2811,8 +2770,7 @@ class ElbAsyncClient(Client):
 
         根据指定负载均衡器ID查询负载均衡器详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowLoadbalancer
@@ -2873,8 +2831,7 @@ class ElbAsyncClient(Client):
 
         查询指定负载均衡器的所有标签信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowLoadbalancerTags
@@ -2935,8 +2892,7 @@ class ElbAsyncClient(Client):
 
         查询负载均衡器状态树。可通过该接口查询负载均衡器关联的监听器、后端云服务器组、后端云服务器、健康检查、转发策略、转发规则的主要信息，了解负载均衡器下资源的拓扑情况。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowLoadbalancersStatus
@@ -2997,8 +2953,7 @@ class ElbAsyncClient(Client):
 
         根据指定ID查询后端云服务器详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowMember
@@ -3061,8 +3016,7 @@ class ElbAsyncClient(Client):
 
         根据指定ID查询后端云服务器组详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowPool
@@ -3123,8 +3077,7 @@ class ElbAsyncClient(Client):
 
         根据指定ID查询白名单详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowWhitelist
@@ -3185,8 +3138,7 @@ class ElbAsyncClient(Client):
 
         更新健康检查
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateHealthmonitor
@@ -3249,8 +3201,7 @@ class ElbAsyncClient(Client):
 
         更新转发策略
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateL7policies
@@ -3313,8 +3264,7 @@ class ElbAsyncClient(Client):
 
         更新指定的转发规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateL7rule
@@ -3379,8 +3329,7 @@ class ElbAsyncClient(Client):
 
         更新监听器。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateListener
@@ -3443,8 +3392,7 @@ class ElbAsyncClient(Client):
 
         更新负载均衡器。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateLoadbalancer
@@ -3507,8 +3455,7 @@ class ElbAsyncClient(Client):
 
         更新后端云服务器
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateMember
@@ -3573,8 +3520,7 @@ class ElbAsyncClient(Client):
 
         更新后端云服务器组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdatePool
@@ -3637,8 +3583,7 @@ class ElbAsyncClient(Client):
 
         更新白名单。可以打开或关闭白名单，或更新访问控制的IP。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateWhitelist
@@ -3701,8 +3646,7 @@ class ElbAsyncClient(Client):
 
         创建SSL证书。将监听器和SSL证书绑定后，可以通过负载均衡器实现服务端认证，后端服务器只要提供HTTP服务就能实现安全可靠的连接。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateCertificate
@@ -3763,8 +3707,7 @@ class ElbAsyncClient(Client):
 
         删除指定的SSL证书
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteCertificate
@@ -3825,8 +3768,7 @@ class ElbAsyncClient(Client):
 
         查询SSL证书。支持过滤查询和分页查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListCertificates
@@ -3905,8 +3847,7 @@ class ElbAsyncClient(Client):
 
         查询指定SSL证书的详情信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowCertificate
@@ -3967,8 +3908,7 @@ class ElbAsyncClient(Client):
 
         更新指定的SSL证书
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateCertificate

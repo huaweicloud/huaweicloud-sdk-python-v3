@@ -51,7 +51,8 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         'listeners': 'list[Listener]',
         'supported_features': 'list[str]',
         'ingress_ip_v6': 'str',
-        'node_ips': 'NodeIps'
+        'node_ips': 'NodeIps',
+        'ingress_ips': 'str'
     }
 
     attribute_map = {
@@ -86,10 +87,11 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         'listeners': 'listeners',
         'supported_features': 'supported_features',
         'ingress_ip_v6': 'ingress_ip_v6',
-        'node_ips': 'node_ips'
+        'node_ips': 'node_ips',
+        'ingress_ips': 'ingress_ips'
     }
 
-    def __init__(self, id=None, project_id=None, instance_name=None, status=None, instance_status=None, type=None, spec=None, create_time=None, enterprise_project_id=None, eip_address=None, charging_mode=None, cbc_metadata=None, description=None, vpc_id=None, subnet_id=None, security_group_id=None, maintain_begin=None, maintain_end=None, ingress_ip=None, user_id=None, nat_eip_ipv6_cidr=None, eip_ipv6_address=None, nat_eip_address=None, bandwidth_size=None, available_zone_ids=None, instance_version=None, virsubnet_id=None, roma_eip_address=None, listeners=None, supported_features=None, ingress_ip_v6=None, node_ips=None):
+    def __init__(self, id=None, project_id=None, instance_name=None, status=None, instance_status=None, type=None, spec=None, create_time=None, enterprise_project_id=None, eip_address=None, charging_mode=None, cbc_metadata=None, description=None, vpc_id=None, subnet_id=None, security_group_id=None, maintain_begin=None, maintain_end=None, ingress_ip=None, user_id=None, nat_eip_ipv6_cidr=None, eip_ipv6_address=None, nat_eip_address=None, bandwidth_size=None, available_zone_ids=None, instance_version=None, virsubnet_id=None, roma_eip_address=None, listeners=None, supported_features=None, ingress_ip_v6=None, node_ips=None, ingress_ips=None):
         """ShowDetailsOfInstanceV2Response
 
         The model defined in huaweicloud sdk
@@ -158,6 +160,8 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type ingress_ip_v6: str
         :param node_ips: 
         :type node_ips: :class:`huaweicloudsdkroma.v2.NodeIps`
+        :param ingress_ips: 实例集群全量入口（多入口实例）
+        :type ingress_ips: str
         """
         
         super(ShowDetailsOfInstanceV2Response, self).__init__()
@@ -194,6 +198,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         self._supported_features = None
         self._ingress_ip_v6 = None
         self._node_ips = None
+        self._ingress_ips = None
         self.discriminator = None
 
         if id is not None:
@@ -260,6 +265,8 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
             self.ingress_ip_v6 = ingress_ip_v6
         if node_ips is not None:
             self.node_ips = node_ips
+        if ingress_ips is not None:
+            self.ingress_ips = ingress_ips
 
     @property
     def id(self):
@@ -960,6 +967,28 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type node_ips: :class:`huaweicloudsdkroma.v2.NodeIps`
         """
         self._node_ips = node_ips
+
+    @property
+    def ingress_ips(self):
+        """Gets the ingress_ips of this ShowDetailsOfInstanceV2Response.
+
+        实例集群全量入口（多入口实例）
+
+        :return: The ingress_ips of this ShowDetailsOfInstanceV2Response.
+        :rtype: str
+        """
+        return self._ingress_ips
+
+    @ingress_ips.setter
+    def ingress_ips(self, ingress_ips):
+        """Sets the ingress_ips of this ShowDetailsOfInstanceV2Response.
+
+        实例集群全量入口（多入口实例）
+
+        :param ingress_ips: The ingress_ips of this ShowDetailsOfInstanceV2Response.
+        :type ingress_ips: str
+        """
+        self._ingress_ips = ingress_ips
 
     def to_dict(self):
         """Returns the model properties as a dict"""

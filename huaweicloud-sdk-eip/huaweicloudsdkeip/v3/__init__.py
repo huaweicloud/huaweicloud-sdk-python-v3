@@ -40,5 +40,9 @@ from huaweicloudsdkeip.v3.model.show_publicip_pool_response import ShowPublicipP
 from huaweicloudsdkeip.v3.model.show_publicip_request import ShowPublicipRequest
 from huaweicloudsdkeip.v3.model.show_publicip_response import ShowPublicipResponse
 from huaweicloudsdkeip.v3.model.tags_info import TagsInfo
+from huaweicloudsdkeip.v3.model.update_associate_publicip_request import UpdateAssociatePublicipRequest
+from huaweicloudsdkeip.v3.model.update_associate_publicip_response import UpdateAssociatePublicipResponse
+from huaweicloudsdkeip.v3.model.update_disassociate_publicip_request import UpdateDisassociatePublicipRequest
+from huaweicloudsdkeip.v3.model.update_disassociate_publicip_response import UpdateDisassociatePublicipResponse
 from huaweicloudsdkeip.v3.model.vnic_info import VnicInfo
 

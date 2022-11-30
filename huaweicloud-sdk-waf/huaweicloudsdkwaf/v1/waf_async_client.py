@@ -47,8 +47,7 @@ class WafAsyncClient(Client):
 
         绑定证书到域名
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ApplyCertificateToHost
@@ -116,8 +115,7 @@ class WafAsyncClient(Client):
          - 2.waf版本只支持升配，不支持降配；扩展包数量可以增加或者减少，但不支持数量减少为0 
          - 3.不支持同时升降配，如增加域名扩展包数量，同时减少规则扩展包数量
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ChangePrepaidCloudWaf
@@ -180,8 +178,7 @@ class WafAsyncClient(Client):
 
         创建防篡改规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateAntiTamperRule
@@ -246,8 +243,7 @@ class WafAsyncClient(Client):
 
         创建证书
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateCertificate
@@ -310,8 +306,7 @@ class WafAsyncClient(Client):
 
         创建地理位置控制规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateGeoipRule
@@ -376,8 +371,7 @@ class WafAsyncClient(Client):
 
         创建云模式防护域名
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateHost
@@ -440,8 +434,7 @@ class WafAsyncClient(Client):
 
         创建全局白名单(原误报屏蔽)规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateIgnoreRule
@@ -506,8 +499,7 @@ class WafAsyncClient(Client):
 
         创建WAF独享引擎实例。独享模式只在部分局点支持，包括：华北-北京四、华东-上海一、华南-广州、华南-深圳  、中国-香港、亚太-曼谷、 亚太-新加坡。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateInstance
@@ -570,8 +562,7 @@ class WafAsyncClient(Client):
 
         创建ip地址组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateIpGroup
@@ -634,8 +625,7 @@ class WafAsyncClient(Client):
 
         创建防护策略，系统会在生成策略时配置一些默认的配置项，如果需要修改策略的默认配置项需要通过调用更新防护策略接口实现
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreatePolicy
@@ -698,8 +688,7 @@ class WafAsyncClient(Client):
 
         创建独享模式域名
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreatePremiumHost
@@ -762,8 +751,7 @@ class WafAsyncClient(Client):
 
         购买包周期云模式waf
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreatePrepaidCloudWaf
@@ -826,8 +814,7 @@ class WafAsyncClient(Client):
 
         创建隐私屏蔽防护规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreatePrivacyRule
@@ -892,8 +879,7 @@ class WafAsyncClient(Client):
 
         创建引用表，引用表能够被CC攻击防护规则和精准访问防护中的规则所引用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateValueList
@@ -956,8 +942,7 @@ class WafAsyncClient(Client):
 
         创建黑白名单规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateWhiteblackipRule
@@ -1022,8 +1007,7 @@ class WafAsyncClient(Client):
 
         删除防篡改防护规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteAntitamperRule
@@ -1088,8 +1072,7 @@ class WafAsyncClient(Client):
 
         删除证书
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteCertificate
@@ -1152,8 +1135,7 @@ class WafAsyncClient(Client):
 
         删除地理位置控制防护规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteGeoipRule
@@ -1218,8 +1200,7 @@ class WafAsyncClient(Client):
 
         删除云模式防护域名
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteHost
@@ -1282,8 +1263,7 @@ class WafAsyncClient(Client):
 
         删除全局白名单(原误报屏蔽)防护规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteIgnoreRule
@@ -1348,8 +1328,7 @@ class WafAsyncClient(Client):
 
         删除WAF独享引擎信息。独享模式只在部分局点支持，包括：华北-北京四、华东-上海一、华南-广州、华南-深圳  、中国-香港、亚太-曼谷、 亚太-新加坡。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteInstance
@@ -1412,8 +1391,7 @@ class WafAsyncClient(Client):
 
         删除ip地址组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteIpGroup
@@ -1476,8 +1454,7 @@ class WafAsyncClient(Client):
 
         删除防护策略，若策略正在使用，则需要先接解除域名与策略的绑定关系才能删除策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeletePolicy
@@ -1540,8 +1517,7 @@ class WafAsyncClient(Client):
 
         删除独享模式域名
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeletePremiumHost
@@ -1606,8 +1582,7 @@ class WafAsyncClient(Client):
 
         删除隐私屏蔽防护规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeletePrivacyRule
@@ -1672,8 +1647,7 @@ class WafAsyncClient(Client):
 
         删除引用表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteValueList
@@ -1736,8 +1710,7 @@ class WafAsyncClient(Client):
 
         删除黑白名单防护规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteWhiteBlackIpRule
@@ -1802,8 +1775,7 @@ class WafAsyncClient(Client):
 
         查询防篡改规则列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAntitamperRule
@@ -1870,8 +1842,7 @@ class WafAsyncClient(Client):
 
         查询安全统计带宽数据。需要注意的是，安全统计相关的接口，暂时不能支持任意时间的查询。只能支持 console上显示的 昨天，今天，3天，7天和30天 数据查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListBandwidthTimeline
@@ -1942,8 +1913,7 @@ class WafAsyncClient(Client):
 
         查询证书列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListCertificates
@@ -2014,8 +1984,7 @@ class WafAsyncClient(Client):
 
         查询全部防护域名列表，包括云模式和独享模式
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListCompositeHosts
@@ -2090,8 +2059,7 @@ class WafAsyncClient(Client):
 
         查询攻击事件列表，该API暂时不支持查询全部防护事件，pagesize参数不可设为-1，由于性能原因，数据量越大消耗的内存越大，后端最多限制查询10000条数据，例如：自定义时间段内的数据超过了10000条，就无法查出page为101，pagesize为100之后的数据，需要调整时间区间，再进行查询
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListEvent
@@ -2168,8 +2136,7 @@ class WafAsyncClient(Client):
 
         查询地理位置访问控制规则列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListGeoipRule
@@ -2236,8 +2203,7 @@ class WafAsyncClient(Client):
 
         查询云模式防护域名列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListHost
@@ -2306,8 +2272,7 @@ class WafAsyncClient(Client):
 
         返回路由信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListHostRoute
@@ -2370,8 +2335,7 @@ class WafAsyncClient(Client):
 
         查询全局白名单(原误报屏蔽)规则列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListIgnoreRule
@@ -2438,8 +2402,7 @@ class WafAsyncClient(Client):
 
         查询WAF独享引擎列表。独享模式只在部分局点支持，包括：华北-北京四、华东-上海一、华南-广州、华南-深圳  、中国-香港、亚太-曼谷、 亚太-新加坡。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListInstance
@@ -2506,8 +2469,7 @@ class WafAsyncClient(Client):
 
         查询地址组列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListIpGroup
@@ -2576,8 +2538,7 @@ class WafAsyncClient(Client):
 
         查询告警通知配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListNoticeConfigs
@@ -2638,8 +2599,7 @@ class WafAsyncClient(Client):
 
         查询安全总览分类统计TOP信息，包含受攻击域名 、攻击源ip、受攻击URL、攻击来源区域、攻击事件分布。需要注意的是，安全总览相关的接口，暂时不能支持任意时间的查询。只能支持 console上显示的 昨天，今天，3天，7天和30天 数据查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListOverviewsClassification
@@ -2710,8 +2670,7 @@ class WafAsyncClient(Client):
 
         查询防护策略列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListPolicy
@@ -2778,8 +2737,7 @@ class WafAsyncClient(Client):
 
         独享模式域名列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListPremiumHost
@@ -2850,8 +2808,7 @@ class WafAsyncClient(Client):
 
         查询隐私屏蔽防护规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListPrivacyRule
@@ -2918,8 +2875,7 @@ class WafAsyncClient(Client):
 
         查询安全统计qps次数。需要注意的是，安全统计相关的接口，暂时不能支持任意时间的查询。只能支持 console上显示的 昨天，今天，3天，7天和30天 数据查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListQpsTimeline
@@ -2990,8 +2946,7 @@ class WafAsyncClient(Client):
 
         查询安全总览中请求次数时间线统计数据。需要注意的是，安全总览相关的接口，暂时不能支持任意时间的查询。只能支持 console上显示的 昨天，今天，3天，7天和30天 数据查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRequestTimeline
@@ -3064,8 +3019,7 @@ class WafAsyncClient(Client):
 
         查询安全总览请求与攻击数量。需要注意的是，安全总览相关的接口，暂时不能支持任意时间的查询。只能支持 console上显示的 昨天，今天，3天，7天和30天 数据查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListStatistics
@@ -3134,8 +3088,7 @@ class WafAsyncClient(Client):
 
         查询业务异常TOP统计信息。需要注意的是，安全总览相关的接口，暂时不能支持任意时间的查询。只能支持 console上显示的 昨天，今天，3天，7天和30天 数据查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTopAbnormal
@@ -3208,8 +3161,7 @@ class WafAsyncClient(Client):
 
         查询引用表列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListValueList
@@ -3274,8 +3226,7 @@ class WafAsyncClient(Client):
 
         查询黑白名单规则列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListWhiteblackipRule
@@ -3344,8 +3295,7 @@ class WafAsyncClient(Client):
 
         按企业项目迁移防护域名，仅专业版与独享版支持该功能
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for MigrateCompositeHosts
@@ -3410,8 +3360,7 @@ class WafAsyncClient(Client):
 
         重命名WAF独享引擎。独享模式只在部分局点支持，包括：华北-北京四、华东-上海一、华南-广州、华南-深圳  、中国-香港、亚太-曼谷、 亚太-新加坡。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RenameInstance
@@ -3476,8 +3425,7 @@ class WafAsyncClient(Client):
 
         查询证书
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowCertificate
@@ -3540,8 +3488,7 @@ class WafAsyncClient(Client):
 
         根据Id查询防护域名
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowCompositeHost
@@ -3604,8 +3551,7 @@ class WafAsyncClient(Client):
 
         局点支持特性查询
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowConsoleConfig
@@ -3664,8 +3610,7 @@ class WafAsyncClient(Client):
 
         查询指定事件id的防护事件详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowEvent
@@ -3728,8 +3673,7 @@ class WafAsyncClient(Client):
 
         根据防护域名Id查询云模式防护域名详细信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowHost
@@ -3792,8 +3736,7 @@ class WafAsyncClient(Client):
 
         查询WAF独享引擎信息。独享模式只在部分局点支持，包括：华北-北京四、华东-上海一、华南-广州、华南-深圳  、中国-香港、亚太-曼谷、 亚太-新加坡。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowInstance
@@ -3856,8 +3799,7 @@ class WafAsyncClient(Client):
 
         查询ip地址组明细
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowIpGroup
@@ -3920,8 +3862,7 @@ class WafAsyncClient(Client):
 
         查询lts配置信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowLtsInfoConfig
@@ -3982,8 +3923,7 @@ class WafAsyncClient(Client):
 
         根据Id查询防护策略
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowPolicy
@@ -4046,8 +3986,7 @@ class WafAsyncClient(Client):
 
         查看独享模式域名配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowPremiumHost
@@ -4110,8 +4049,7 @@ class WafAsyncClient(Client):
 
         查询WAF回源Ip信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowSourceIp
@@ -4170,8 +4108,7 @@ class WafAsyncClient(Client):
 
         查询租户订购信息，包括云模式包周期、按需计费、独享模式
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowSubscriptionInfo
@@ -4230,8 +4167,7 @@ class WafAsyncClient(Client):
 
         更新告警通知配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateAlertNoticeConfig
@@ -4296,8 +4232,7 @@ class WafAsyncClient(Client):
 
         修改证书
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateCertificate
@@ -4362,8 +4297,7 @@ class WafAsyncClient(Client):
 
         更新地理位置控制防护规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateGeoipRule
@@ -4430,8 +4364,7 @@ class WafAsyncClient(Client):
 
         更新云模式防护域名配置，在没有填入源站信息server的原始数据的情况下，则新的源站信息server会覆盖源站信息，而不是新增源站。此外，请求体可只传需要更新的部分。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateHost
@@ -4496,8 +4429,7 @@ class WafAsyncClient(Client):
 
         修改域名防护状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateHostProtectStatus
@@ -4562,8 +4494,7 @@ class WafAsyncClient(Client):
 
         修改ip地址组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateIpGroup
@@ -4628,8 +4559,7 @@ class WafAsyncClient(Client):
 
         配置全量日志lts，该接口可用来开启与关闭waf全量日志以及配置日志组和日志流。日志组id和日志流id可前往云日志服务获取。配置的日志流id要属于所配置的日志组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateLtsInfoConfig
@@ -4694,8 +4624,7 @@ class WafAsyncClient(Client):
 
         更新防护策略，请求体可只传需要更新的部分
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdatePolicy
@@ -4760,8 +4689,7 @@ class WafAsyncClient(Client):
 
         更新防护策略的防护域名
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdatePolicyProtectHost
@@ -4826,8 +4754,7 @@ class WafAsyncClient(Client):
 
         修改单条规则的状态，用于开启或者关闭单条规则，比如关闭精准防护中某一条规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdatePolicyRuleStatus
@@ -4896,8 +4823,7 @@ class WafAsyncClient(Client):
 
         修改独享模式域名配置，在没有填入源站信息server的原始数据的情况下，则新的源站信息server会覆盖源站信息，而不是新增源站。此外，请求体可只传需要更新的部分。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdatePremiumHost
@@ -4962,8 +4888,7 @@ class WafAsyncClient(Client):
 
         修改独享模式域名防护状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdatePremiumHostProtectStatus
@@ -5028,8 +4953,7 @@ class WafAsyncClient(Client):
 
         更新隐私屏蔽防护规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdatePrivacyRule
@@ -5096,8 +5020,7 @@ class WafAsyncClient(Client):
 
         修改引用表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateValueList
@@ -5162,8 +5085,7 @@ class WafAsyncClient(Client):
 
         更新黑白名单防护规则，可以更新ip/ip段以及防护动作等信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateWhiteblackipRule

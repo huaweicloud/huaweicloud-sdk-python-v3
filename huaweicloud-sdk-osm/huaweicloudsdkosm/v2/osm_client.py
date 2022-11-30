@@ -47,8 +47,7 @@ class OsmClient(Client):
 
         验证授权主机密码是否正确
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckHosts
         :type request: :class:`huaweicloudsdkosm.v2.CheckHostsRequest`
@@ -116,8 +115,7 @@ class OsmClient(Client):
 
         是否需要验证
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckNeedVerify
         :type request: :class:`huaweicloudsdkosm.v2.CheckNeedVerifyRequest`
@@ -187,8 +185,7 @@ class OsmClient(Client):
 
         验证联系方式
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckVerifyCodes
         :type request: :class:`huaweicloudsdkosm.v2.CheckVerifyCodesRequest`
@@ -254,8 +251,7 @@ class OsmClient(Client):
 
         租户确认授权
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ConfirmAuthorizations
         :type request: :class:`huaweicloudsdkosm.v2.ConfirmAuthorizationsRequest`
@@ -323,8 +319,7 @@ class OsmClient(Client):
 
         提交工单扩展参数
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateCaseExtendsParam
         :type request: :class:`huaweicloudsdkosm.v2.CreateCaseExtendsParamRequest`
@@ -392,8 +387,7 @@ class OsmClient(Client):
 
         添加工单关联标签接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateCaseLabels
         :type request: :class:`huaweicloudsdkosm.v2.CreateCaseLabelsRequest`
@@ -462,8 +456,7 @@ class OsmClient(Client):
 
         创建工单
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateCases
         :type request: :class:`huaweicloudsdkosm.v2.CreateCasesRequest`
@@ -533,8 +526,7 @@ class OsmClient(Client):
 
         创建标签
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateLabels
         :type request: :class:`huaweicloudsdkosm.v2.CreateLabelsRequest`
@@ -600,8 +592,7 @@ class OsmClient(Client):
 
         提交留言
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateMessages
         :type request: :class:`huaweicloudsdkosm.v2.CreateMessagesRequest`
@@ -669,8 +660,7 @@ class OsmClient(Client):
 
         创建授权
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreatePrivileges
         :type request: :class:`huaweicloudsdkosm.v2.CreatePrivilegesRequest`
@@ -736,8 +726,7 @@ class OsmClient(Client):
 
         创建关联，一个工单最多支持3个关联
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateRelations
         :type request: :class:`huaweicloudsdkosm.v2.CreateRelationsRequest`
@@ -805,8 +794,7 @@ class OsmClient(Client):
 
         提交评分
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateScores
         :type request: :class:`huaweicloudsdkosm.v2.CreateScoresRequest`
@@ -874,8 +862,7 @@ class OsmClient(Client):
 
         删除附件
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAccessories
         :type request: :class:`huaweicloudsdkosm.v2.DeleteAccessoriesRequest`
@@ -941,8 +928,7 @@ class OsmClient(Client):
 
         删除指定工单关联标签接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteCaseLabels
         :type request: :class:`huaweicloudsdkosm.v2.DeleteCaseLabelsRequest`
@@ -1011,8 +997,7 @@ class OsmClient(Client):
 
         删除标签，同时会删除工单与标签关联关系
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteLabels
         :type request: :class:`huaweicloudsdkosm.v2.DeleteLabelsRequest`
@@ -1078,8 +1063,7 @@ class OsmClient(Client):
 
         删除关联
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteRelation
         :type request: :class:`huaweicloudsdkosm.v2.DeleteRelationRequest`
@@ -1147,8 +1131,7 @@ class OsmClient(Client):
 
         下载附件
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DownloadAccessories
         :type request: :class:`huaweicloudsdkosm.v2.DownloadAccessoriesRequest`
@@ -1216,8 +1199,7 @@ class OsmClient(Client):
 
         工单导出
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DownloadCases
         :type request: :class:`huaweicloudsdkosm.v2.DownloadCasesRequest`
@@ -1308,8 +1290,7 @@ class OsmClient(Client):
 
         返回图片内容，用于页面直接展示
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DownloadImages
         :type request: :class:`huaweicloudsdkosm.v2.DownloadImagesRequest`
@@ -1377,8 +1358,7 @@ class OsmClient(Client):
 
         租户批量获取下载链接
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAccessoryAccessUrls
         :type request: :class:`huaweicloudsdkosm.v2.ListAccessoryAccessUrlsRequest`
@@ -1447,8 +1427,7 @@ class OsmClient(Client):
 
         查询委托
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAgencies
         :type request: :class:`huaweicloudsdkosm.v2.ListAgenciesRequest`
@@ -1512,8 +1491,7 @@ class OsmClient(Client):
 
         查询国家码，用于提交工单页面填写联系方式使用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAreaCodes
         :type request: :class:`huaweicloudsdkosm.v2.ListAreaCodesRequest`
@@ -1577,8 +1555,7 @@ class OsmClient(Client):
 
         查询授权列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAuthorizations
         :type request: :class:`huaweicloudsdkosm.v2.ListAuthorizationsRequest`
@@ -1656,8 +1633,7 @@ class OsmClient(Client):
 
         查询工单类目列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCaseCategories
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseCategoriesRequest`
@@ -1721,8 +1697,7 @@ class OsmClient(Client):
 
         查询工单抄送邮箱
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCaseCcEmails
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseCcEmailsRequest`
@@ -1786,8 +1761,7 @@ class OsmClient(Client):
 
         统计各状态工单数量
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCaseCounts
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseCountsRequest`
@@ -1853,8 +1827,7 @@ class OsmClient(Client):
 
         查询工单关联标签接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCaseLabels
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseLabelsRequest`
@@ -1920,8 +1893,7 @@ class OsmClient(Client):
 
         查询工单限制，比如抄送邮箱个数等
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCaseLimits
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseLimitsRequest`
@@ -1985,8 +1957,7 @@ class OsmClient(Client):
 
         查询工单操作日志
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCaseOperateLogs
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseOperateLogsRequest`
@@ -2058,8 +2029,7 @@ class OsmClient(Client):
 
         查询工单配额
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCaseQuotas
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseQuotasRequest`
@@ -2127,8 +2097,7 @@ class OsmClient(Client):
 
         查询问题类型对应模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCaseTemplates
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseTemplatesRequest`
@@ -2194,8 +2163,7 @@ class OsmClient(Client):
 
         查询工单列表接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCases
         :type request: :class:`huaweicloudsdkosm.v2.ListCasesRequest`
@@ -2287,8 +2255,7 @@ class OsmClient(Client):
 
         查询用户关联的region
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCustomersRegions
         :type request: :class:`huaweicloudsdkosm.v2.ListCustomersRegionsRequest`
@@ -2352,8 +2319,7 @@ class OsmClient(Client):
 
         提单时，根据不同的产品或者问题类型，会存在不同的一些附加参数填写
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListExtendsParams
         :type request: :class:`huaweicloudsdkosm.v2.ListExtendsParamsRequest`
@@ -2423,8 +2389,7 @@ class OsmClient(Client):
 
         查询已验证的列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListHasVerifiedContacts
         :type request: :class:`huaweicloudsdkosm.v2.ListHasVerifiedContactsRequest`
@@ -2506,8 +2471,7 @@ class OsmClient(Client):
 
         查询堡垒机历史操作记录
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListHistoryOperateLogs
         :type request: :class:`huaweicloudsdkosm.v2.ListHistoryOperateLogsRequest`
@@ -2585,8 +2549,7 @@ class OsmClient(Client):
 
         查询堡垒机历史会话列
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListHistorySessions
         :type request: :class:`huaweicloudsdkosm.v2.ListHistorySessionsRequest`
@@ -2660,8 +2623,7 @@ class OsmClient(Client):
 
         查询标签
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListLabels
         :type request: :class:`huaweicloudsdkosm.v2.ListLabelsRequest`
@@ -2733,8 +2695,7 @@ class OsmClient(Client):
 
         查询留言
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListMessages
         :type request: :class:`huaweicloudsdkosm.v2.ListMessagesRequest`
@@ -2806,8 +2767,7 @@ class OsmClient(Client):
 
         查询更多留言
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListMoreInstantMessages
         :type request: :class:`huaweicloudsdkosm.v2.ListMoreInstantMessagesRequest`
@@ -2881,8 +2841,7 @@ class OsmClient(Client):
 
         轮询查询即时消息接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListNewInstantMessages
         :type request: :class:`huaweicloudsdkosm.v2.ListNewInstantMessagesRequest`
@@ -2953,8 +2912,7 @@ class OsmClient(Client):
 
         查询工单权限
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPrivileges
         :type request: :class:`huaweicloudsdkosm.v2.ListPrivilegesRequest`
@@ -3020,8 +2978,7 @@ class OsmClient(Client):
 
         提交工单时，选择产品类型之后选择对应的问题列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProblemTypes
         :type request: :class:`huaweicloudsdkosm.v2.ListProblemTypesRequest`
@@ -3087,8 +3044,7 @@ class OsmClient(Client):
 
         查询产品类型列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProductCategories
         :type request: :class:`huaweicloudsdkosm.v2.ListProductCategoriesRequest`
@@ -3154,8 +3110,7 @@ class OsmClient(Client):
 
         查询区域列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRegions
         :type request: :class:`huaweicloudsdkosm.v2.ListRegionsRequest`
@@ -3219,8 +3174,7 @@ class OsmClient(Client):
 
         查询工单的关联，返回关联工单的简要信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRelation
         :type request: :class:`huaweicloudsdkosm.v2.ListRelationRequest`
@@ -3286,8 +3240,7 @@ class OsmClient(Client):
 
         工单满意度分类列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSatisfactionDimensions
         :type request: :class:`huaweicloudsdkosm.v2.ListSatisfactionDimensionsRequest`
@@ -3351,8 +3304,7 @@ class OsmClient(Client):
 
         查询问题严重性列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSeverities
         :type request: :class:`huaweicloudsdkosm.v2.ListSeveritiesRequest`
@@ -3420,8 +3372,7 @@ class OsmClient(Client):
 
         查询子用户信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSubCustomers
         :type request: :class:`huaweicloudsdkosm.v2.ListSubCustomersRequest`
@@ -3489,8 +3440,7 @@ class OsmClient(Client):
 
         查询堡垒机文件传输记录
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTransportHistories
         :type request: :class:`huaweicloudsdkosm.v2.ListTransportHistoriesRequest`
@@ -3568,8 +3518,7 @@ class OsmClient(Client):
 
         查询未读消息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListUnreadNewInstantMessages
         :type request: :class:`huaweicloudsdkosm.v2.ListUnreadNewInstantMessagesRequest`
@@ -3638,8 +3587,7 @@ class OsmClient(Client):
 
         撤回留言
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RevokeMessage
         :type request: :class:`huaweicloudsdkosm.v2.RevokeMessageRequest`
@@ -3707,8 +3655,7 @@ class OsmClient(Client):
 
         获取验证码
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SendVerifyCodes
         :type request: :class:`huaweicloudsdkosm.v2.SendVerifyCodesRequest`
@@ -3774,8 +3721,7 @@ class OsmClient(Client):
 
         查询附件的一下限制，比如大小，数量，文件类型
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAccessoryLimits
         :type request: :class:`huaweicloudsdkosm.v2.ShowAccessoryLimitsRequest`
@@ -3839,8 +3785,7 @@ class OsmClient(Client):
 
         查询授权详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAuthorizationDetail
         :type request: :class:`huaweicloudsdkosm.v2.ShowAuthorizationDetailRequest`
@@ -3908,8 +3853,7 @@ class OsmClient(Client):
 
         查询工单详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowCaseDetail
         :type request: :class:`huaweicloudsdkosm.v2.ShowCaseDetailRequest`
@@ -3977,8 +3921,7 @@ class OsmClient(Client):
 
         查询工单扩展参数
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowCaseExtendsParam
         :type request: :class:`huaweicloudsdkosm.v2.ShowCaseExtendsParamRequest`
@@ -4046,8 +3989,7 @@ class OsmClient(Client):
 
         查询某个工单状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowCaseStatus
         :type request: :class:`huaweicloudsdkosm.v2.ShowCaseStatusRequest`
@@ -4113,8 +4055,7 @@ class OsmClient(Client):
 
         查询提单权限
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowCustomerPrivilegePolicy
         :type request: :class:`huaweicloudsdkosm.v2.ShowCustomerPrivilegePolicyRequest`
@@ -4178,8 +4119,7 @@ class OsmClient(Client):
 
         查看最新发布版本协议详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowLatestPublishedAgreement
         :type request: :class:`huaweicloudsdkosm.v2.ShowLatestPublishedAgreementRequest`
@@ -4245,8 +4185,7 @@ class OsmClient(Client):
 
         查询伙伴工单权限
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPartnersCasesPrivilege
         :type request: :class:`huaweicloudsdkosm.v2.ShowPartnersCasesPrivilegeRequest`
@@ -4310,8 +4249,7 @@ class OsmClient(Client):
 
         查询关联伙伴服务信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPartnersServiceInfo
         :type request: :class:`huaweicloudsdkosm.v2.ShowPartnersServiceInfoRequest`
@@ -4379,8 +4317,7 @@ class OsmClient(Client):
 
         查询用户是否签署最新协议
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowSignedLatestPublishedAgreement
         :type request: :class:`huaweicloudsdkosm.v2.ShowSignedLatestPublishedAgreementRequest`
@@ -4446,8 +4383,7 @@ class OsmClient(Client):
 
         签署协议
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SignPublishedAgreement
         :type request: :class:`huaweicloudsdkosm.v2.SignPublishedAgreementRequest`
@@ -4515,8 +4451,7 @@ class OsmClient(Client):
 
         拒绝|撤销授权
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateAuthorizations
         :type request: :class:`huaweicloudsdkosm.v2.UpdateAuthorizationsRequest`
@@ -4586,8 +4521,7 @@ class OsmClient(Client):
 
         修改联系方式
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateCaseContactInfo
         :type request: :class:`huaweicloudsdkosm.v2.UpdateCaseContactInfoRequest`
@@ -4655,8 +4589,7 @@ class OsmClient(Client):
 
         工单操作
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateCases
         :type request: :class:`huaweicloudsdkosm.v2.UpdateCasesRequest`
@@ -4726,8 +4659,7 @@ class OsmClient(Client):
 
         修改标签
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateLabels
         :type request: :class:`huaweicloudsdkosm.v2.UpdateLabelsRequest`
@@ -4795,8 +4727,7 @@ class OsmClient(Client):
 
         设置消息已读
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateNewInstantMessagesRead
         :type request: :class:`huaweicloudsdkosm.v2.UpdateNewInstantMessagesReadRequest`
@@ -4864,8 +4795,7 @@ class OsmClient(Client):
 
         上传附件给SDK使用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UploadJsonAccessories
         :type request: :class:`huaweicloudsdkosm.v2.UploadJsonAccessoriesRequest`

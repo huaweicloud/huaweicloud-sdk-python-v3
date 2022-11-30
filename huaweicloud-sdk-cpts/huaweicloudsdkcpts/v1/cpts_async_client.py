@@ -47,8 +47,7 @@ class CptsAsyncClient(Client):
 
         创建用例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateCase
@@ -109,8 +108,7 @@ class CptsAsyncClient(Client):
 
         创建任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateTask
@@ -171,8 +169,7 @@ class CptsAsyncClient(Client):
 
         创建事务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateTemp
@@ -233,8 +230,7 @@ class CptsAsyncClient(Client):
 
         创建变量
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateVariable
@@ -297,8 +293,7 @@ class CptsAsyncClient(Client):
 
         调试用例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DebugCase
@@ -365,8 +360,7 @@ class CptsAsyncClient(Client):
 
         删除用例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteCase
@@ -427,8 +421,7 @@ class CptsAsyncClient(Client):
 
         删除任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteTask
@@ -489,8 +482,7 @@ class CptsAsyncClient(Client):
 
         删除事务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteTemp
@@ -551,8 +543,7 @@ class CptsAsyncClient(Client):
 
         删除全局变量
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteVariable
@@ -615,8 +606,7 @@ class CptsAsyncClient(Client):
 
         查询全局变量
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListVariables
@@ -679,8 +669,7 @@ class CptsAsyncClient(Client):
 
         查询CPTS任务离线报告列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowHistoryRunInfo
@@ -741,8 +730,7 @@ class CptsAsyncClient(Client):
 
         查询报告
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowReport
@@ -807,8 +795,7 @@ class CptsAsyncClient(Client):
 
         查询任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTask
@@ -869,8 +856,7 @@ class CptsAsyncClient(Client):
 
         查询任务集
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTaskSet
@@ -935,8 +921,7 @@ class CptsAsyncClient(Client):
 
         查询事务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTemp
@@ -997,8 +982,7 @@ class CptsAsyncClient(Client):
 
         查询事务集
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTempSet
@@ -1063,8 +1047,7 @@ class CptsAsyncClient(Client):
 
         修改用例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateCase
@@ -1129,8 +1112,7 @@ class CptsAsyncClient(Client):
 
         修改任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateTask
@@ -1193,8 +1175,7 @@ class CptsAsyncClient(Client):
 
         修改任务关联用例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateTaskRelatedTestCase
@@ -1257,8 +1238,7 @@ class CptsAsyncClient(Client):
 
         更新任务状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateTaskStatus
@@ -1323,8 +1303,7 @@ class CptsAsyncClient(Client):
 
         修改事务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateTemp
@@ -1387,8 +1366,7 @@ class CptsAsyncClient(Client):
 
         修改变量
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateVariable
@@ -1451,8 +1429,7 @@ class CptsAsyncClient(Client):
 
         创建工程
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateProject
@@ -1513,8 +1490,7 @@ class CptsAsyncClient(Client):
 
         删除工程
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteProject
@@ -1575,8 +1551,7 @@ class CptsAsyncClient(Client):
 
         查询工程集
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListProjectSets
@@ -1639,8 +1614,7 @@ class CptsAsyncClient(Client):
 
         查询用例树
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListProjectTestCase
@@ -1701,8 +1675,7 @@ class CptsAsyncClient(Client):
 
         查询导入进度
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowProcess
@@ -1761,8 +1734,7 @@ class CptsAsyncClient(Client):
 
         查询工程
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowProject
@@ -1823,8 +1795,7 @@ class CptsAsyncClient(Client):
 
         修改工程
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateProject

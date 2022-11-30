@@ -47,8 +47,7 @@ class CloudRTCAsyncClient(Client):
 
         调用此接口创建应用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateApp
@@ -121,8 +120,7 @@ class CloudRTCAsyncClient(Client):
         
         jobtype取值为&#39;s&#39;代表单流录制。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateIndividualStreamJob
@@ -209,8 +207,7 @@ class CloudRTCAsyncClient(Client):
         
           API触发合流录制流名规则：{jobtype}\\_{jobid}\\_{roomid}，其中jobtype取值为&#39;m&#39;代表合流录制。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateMixJob
@@ -284,8 +281,7 @@ class CloudRTCAsyncClient(Client):
         - 若当前app在请求的location中无录制规则，则会创建新的录制规则
         - 若当前app在请求的location中已有录制规则，则会更新原来的录制规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateRecordRule
@@ -356,8 +352,7 @@ class CloudRTCAsyncClient(Client):
 
         调用此接口删除单个应用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteApp
@@ -426,8 +421,7 @@ class CloudRTCAsyncClient(Client):
 
         调用此接口删除录制规则，对于正在使用的录制规则，不允许删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteRecordRule
@@ -498,8 +492,7 @@ class CloudRTCAsyncClient(Client):
 
         调用此接口查询应用列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApps
@@ -572,8 +565,7 @@ class CloudRTCAsyncClient(Client):
 
         调用此接口查询录制规则列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRecordRules
@@ -646,8 +638,7 @@ class CloudRTCAsyncClient(Client):
 
         调用此接口解散房间，将该房间中所有用户踢出房间。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RemoveRoom
@@ -718,8 +709,7 @@ class CloudRTCAsyncClient(Client):
 
         调用此接口强制用户离开房间。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RemoveUsers
@@ -792,8 +782,7 @@ class CloudRTCAsyncClient(Client):
 
         调用此接口查询单个应用详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowApp
@@ -862,8 +851,7 @@ class CloudRTCAsyncClient(Client):
 
         调用此接口查询自动录制配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowAutoRecord
@@ -934,8 +922,7 @@ class CloudRTCAsyncClient(Client):
         
         租户的OBS桶内的情况，暂不支持查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowIndividualStreamJob
@@ -1006,8 +993,7 @@ class CloudRTCAsyncClient(Client):
 
         调用此接口查询合流转码任务状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowMixJob
@@ -1078,8 +1064,7 @@ class CloudRTCAsyncClient(Client):
 
         调用此接口查询增值（录制）事件回调配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowRecordCallback
@@ -1148,8 +1133,7 @@ class CloudRTCAsyncClient(Client):
 
         调用此接口查询指定录制规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowRecordRule
@@ -1220,8 +1204,7 @@ class CloudRTCAsyncClient(Client):
 
         查询应用鉴权配置参数
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowUrlAuth
@@ -1290,8 +1273,7 @@ class CloudRTCAsyncClient(Client):
 
         调用此接口启用单个应用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartApp
@@ -1362,8 +1344,7 @@ class CloudRTCAsyncClient(Client):
         
         应用停用后，新房间无法新增和加入，已加入的房间可以继续使用。合流、录制功能等也不可用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopApp
@@ -1432,8 +1413,7 @@ class CloudRTCAsyncClient(Client):
 
         调用此接口停止单流任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopIndividualStreamJob
@@ -1504,8 +1484,7 @@ class CloudRTCAsyncClient(Client):
 
         调用此接口停止已下发的合流转码任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopMixJob
@@ -1576,8 +1555,7 @@ class CloudRTCAsyncClient(Client):
 
         更新自动录制配置，租户可以开启自动单流录制或者停用自动单流录制。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateAutoRecord
@@ -1650,8 +1628,7 @@ class CloudRTCAsyncClient(Client):
         
         仅部分场景支持修改。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateIndividualStreamJob
@@ -1724,8 +1701,7 @@ class CloudRTCAsyncClient(Client):
 
         调用此接口更新合流任务布局。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateMixJob
@@ -1802,8 +1778,7 @@ class CloudRTCAsyncClient(Client):
         
         回调格式参考/customer-record-notify-url定义。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateRecordCallback
@@ -1874,8 +1849,7 @@ class CloudRTCAsyncClient(Client):
 
         调用此接口更新录制规则。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateRecordRule
@@ -1948,8 +1922,7 @@ class CloudRTCAsyncClient(Client):
 
         调用此接口开启或关闭URL鉴权。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateUrlAuth

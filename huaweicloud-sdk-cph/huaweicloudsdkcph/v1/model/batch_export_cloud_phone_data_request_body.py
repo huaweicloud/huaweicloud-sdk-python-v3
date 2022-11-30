@@ -20,7 +20,7 @@ class BatchExportCloudPhoneDataRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'storage_infos': 'list[BatchExportCloudPhoneDataRequestBodyStorageInfos]'
+        'storage_infos': 'list[StorageInfo]'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class BatchExportCloudPhoneDataRequestBody:
         The model defined in huaweicloud sdk
 
         :param storage_infos: 待导出数据的云手机信息
-        :type storage_infos: list[:class:`huaweicloudsdkcph.v1.BatchExportCloudPhoneDataRequestBodyStorageInfos`]
+        :type storage_infos: list[:class:`huaweicloudsdkcph.v1.StorageInfo`]
         """
         
         
@@ -50,7 +50,7 @@ class BatchExportCloudPhoneDataRequestBody:
         待导出数据的云手机信息
 
         :return: The storage_infos of this BatchExportCloudPhoneDataRequestBody.
-        :rtype: list[:class:`huaweicloudsdkcph.v1.BatchExportCloudPhoneDataRequestBodyStorageInfos`]
+        :rtype: list[:class:`huaweicloudsdkcph.v1.StorageInfo`]
         """
         return self._storage_infos
 
@@ -61,7 +61,7 @@ class BatchExportCloudPhoneDataRequestBody:
         待导出数据的云手机信息
 
         :param storage_infos: The storage_infos of this BatchExportCloudPhoneDataRequestBody.
-        :type storage_infos: list[:class:`huaweicloudsdkcph.v1.BatchExportCloudPhoneDataRequestBodyStorageInfos`]
+        :type storage_infos: list[:class:`huaweicloudsdkcph.v1.StorageInfo`]
         """
         self._storage_infos = storage_infos
 

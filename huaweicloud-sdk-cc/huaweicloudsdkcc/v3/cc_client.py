@@ -47,8 +47,7 @@ class CcClient(Client):
 
         创建云连接实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateCloudConnection
         :type request: :class:`huaweicloudsdkcc.v3.CreateCloudConnectionRequest`
@@ -108,8 +107,7 @@ class CcClient(Client):
 
         创建网络实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateNetworkInstance
         :type request: :class:`huaweicloudsdkcc.v3.CreateNetworkInstanceRequest`
@@ -169,8 +167,7 @@ class CcClient(Client):
 
         删除云连接实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteCloudConnection
         :type request: :class:`huaweicloudsdkcc.v3.DeleteCloudConnectionRequest`
@@ -230,8 +227,7 @@ class CcClient(Client):
 
         删除网络实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteNetworkInstance
         :type request: :class:`huaweicloudsdkcc.v3.DeleteNetworkInstanceRequest`
@@ -292,8 +288,7 @@ class CcClient(Client):
         查询云连接路由条目列表。
         分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCloudConnectionRoutes
         :type request: :class:`huaweicloudsdkcc.v3.ListCloudConnectionRoutesRequest`
@@ -366,8 +361,7 @@ class CcClient(Client):
         查询云连接列表。
         分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCloudConnections
         :type request: :class:`huaweicloudsdkcc.v3.ListCloudConnectionsRequest`
@@ -448,8 +442,7 @@ class CcClient(Client):
         查询云连接列表。
         分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListNetworkInstances
         :type request: :class:`huaweicloudsdkcc.v3.ListNetworkInstancesRequest`
@@ -535,8 +528,7 @@ class CcClient(Client):
 
         查询云连接实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowCloudConnection
         :type request: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionRequest`
@@ -597,8 +589,7 @@ class CcClient(Client):
         查询云连接路由条目列表。
         分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowCloudConnectionRoutes
         :type request: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionRoutesRequest`
@@ -658,8 +649,7 @@ class CcClient(Client):
 
         查询网络实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowNetworkInstance
         :type request: :class:`huaweicloudsdkcc.v3.ShowNetworkInstanceRequest`
@@ -719,8 +709,7 @@ class CcClient(Client):
 
         更新云连接实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateCloudConnection
         :type request: :class:`huaweicloudsdkcc.v3.UpdateCloudConnectionRequest`
@@ -782,8 +771,7 @@ class CcClient(Client):
 
         更新网络实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateNetworkInstance
         :type request: :class:`huaweicloudsdkcc.v3.UpdateNetworkInstanceRequest`

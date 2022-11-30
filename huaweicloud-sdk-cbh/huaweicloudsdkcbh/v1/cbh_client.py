@@ -47,8 +47,7 @@ class CbhClient(Client):
 
         获取CBH实例列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCbhInstance
         :type request: :class:`huaweicloudsdkcbh.v1.ListCbhInstanceRequest`

@@ -47,8 +47,7 @@ class ResClient(Client):
 
         在指定的工作空间下面创建一个新的数据源。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateResDatasource
         :type request: :class:`huaweicloudsdkres.v1.CreateResDatasourceRequest`
@@ -112,8 +111,7 @@ class ResClient(Client):
 
         在指定工作空间下面创建智能场景。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateResIntelligentScene
         :type request: :class:`huaweicloudsdkres.v1.CreateResIntelligentSceneRequest`
@@ -177,8 +175,7 @@ class ResClient(Client):
 
         新建训练作业元数据，新建成功之后可手动执行此任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateResJob
         :type request: :class:`huaweicloudsdkres.v1.CreateResJobRequest`
@@ -244,8 +241,7 @@ class ResClient(Client):
 
         批量新建作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateResJobs
         :type request: :class:`huaweicloudsdkres.v1.CreateResJobsRequest`
@@ -311,8 +307,7 @@ class ResClient(Client):
 
         新建在线服务元数据，新建成功之后可手动发布此服务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateResOnlineInstance
         :type request: :class:`huaweicloudsdkres.v1.CreateResOnlineInstanceRequest`
@@ -378,8 +373,7 @@ class ResClient(Client):
 
         在指定工作空间下面创建自定义场景。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateResScene
         :type request: :class:`huaweicloudsdkres.v1.CreateResSceneRequest`
@@ -443,8 +437,7 @@ class ResClient(Client):
 
         用于在推荐系统下面创建独立的工作空间，用于资源的隔离，用户可以在工作空间下面继续创建数据源、场景以及推荐任务等。是否有工作空间的操作权限取决于用户是否属于当前工作空间绑定的企业项目。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateResWorkspace
         :type request: :class:`huaweicloudsdkres.v1.CreateResWorkspaceRequest`
@@ -506,8 +499,7 @@ class ResClient(Client):
 
         删除数据源。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteResDatasource
         :type request: :class:`huaweicloudsdkres.v1.DeleteResDatasourceRequest`
@@ -571,8 +563,7 @@ class ResClient(Client):
 
         删除指定作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteResJob
         :type request: :class:`huaweicloudsdkres.v1.DeleteResJobRequest`
@@ -638,8 +629,7 @@ class ResClient(Client):
 
         删除在线服务实例。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteResOnlineInstance
         :type request: :class:`huaweicloudsdkres.v1.DeleteResOnlineInstanceRequest`
@@ -705,8 +695,7 @@ class ResClient(Client):
 
         该接口用于删除场景，删除之后不能恢复，请您谨慎操作。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteResScene
         :type request: :class:`huaweicloudsdkres.v1.DeleteResSceneRequest`
@@ -770,8 +759,7 @@ class ResClient(Client):
 
         删除指定工作空间。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteResWorkspace
         :type request: :class:`huaweicloudsdkres.v1.DeleteResWorkspaceRequest`
@@ -833,8 +821,7 @@ class ResClient(Client):
 
         查询当前工作空间下的数据源列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListResDatasources
         :type request: :class:`huaweicloudsdkres.v1.ListResDatasourcesRequest`
@@ -896,8 +883,7 @@ class ResClient(Client):
 
         查询用户在当前项目id下的企业项目列表。在创建工作空间时需要提供企业项目id。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListResEnterprises
         :type request: :class:`huaweicloudsdkres.v1.ListResEnterprisesRequest`
@@ -957,8 +943,7 @@ class ResClient(Client):
 
         根据给定的workspace_id和resource_id及category查询在线服务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListResOnlineServiceDetails
         :type request: :class:`huaweicloudsdkres.v1.ListResOnlineServiceDetailsRequest`
@@ -1024,8 +1009,7 @@ class ResClient(Client):
 
         查询当前推荐系统所提供的离线计算规格，实时计算规格和排序模型训练规格。在创建数据源和场景时，需要提供此信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListResResourceSpec
         :type request: :class:`huaweicloudsdkres.v1.ListResResourceSpecRequest`
@@ -1085,8 +1069,7 @@ class ResClient(Client):
 
         查询当前工作空间下的场景列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListResScenes
         :type request: :class:`huaweicloudsdkres.v1.ListResScenesRequest`
@@ -1150,8 +1133,7 @@ class ResClient(Client):
 
         用于查询当前用户具有操作权限的工作空间列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListResWorkspaces
         :type request: :class:`huaweicloudsdkres.v1.ListResWorkspacesRequest`
@@ -1211,8 +1193,7 @@ class ResClient(Client):
 
         查询指定数据源的详情信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowResDatasource
         :type request: :class:`huaweicloudsdkres.v1.ShowResDatasourceRequest`
@@ -1276,8 +1257,7 @@ class ResClient(Client):
 
         查询指定数据源下离线任务的结果。其中包括数据格式，数据检测、数据探索及效果评估的内容。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowResDatasourceWorkDetail
         :type request: :class:`huaweicloudsdkres.v1.ShowResDatasourceWorkDetailRequest`
@@ -1343,8 +1323,7 @@ class ResClient(Client):
 
         查询resource_id（数据源id或场景id）下的指定类型的作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowResJob
         :type request: :class:`huaweicloudsdkres.v1.ShowResJobRequest`
@@ -1410,8 +1389,7 @@ class ResClient(Client):
 
         查询给定workspaces_id和指定resource_id下的候选集。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowResRecallSet
         :type request: :class:`huaweicloudsdkres.v1.ShowResRecallSetRequest`
@@ -1477,8 +1455,7 @@ class ResClient(Client):
 
         查询指定场景的详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowResScene
         :type request: :class:`huaweicloudsdkres.v1.ShowResSceneRequest`
@@ -1542,8 +1519,7 @@ class ResClient(Client):
 
         查询指定工作空间的具体信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowResWrokspace
         :type request: :class:`huaweicloudsdkres.v1.ShowResWrokspaceRequest`
@@ -1605,8 +1581,7 @@ class ResClient(Client):
 
         执行独立的作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartResJob
         :type request: :class:`huaweicloudsdkres.v1.StartResJobRequest`
@@ -1674,8 +1649,7 @@ class ResClient(Client):
 
         执行场景下面的所有作业和服务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartResSceneJobs
         :type request: :class:`huaweicloudsdkres.v1.StartResSceneJobsRequest`
@@ -1741,8 +1715,7 @@ class ResClient(Client):
 
         修改指定数据源的配置内容。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateResDatasource
         :type request: :class:`huaweicloudsdkres.v1.UpdateResDatasourceRequest`
@@ -1808,8 +1781,7 @@ class ResClient(Client):
 
         修改数据源中的特征。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateResDatastruct
         :type request: :class:`huaweicloudsdkres.v1.UpdateResDatastructRequest`
@@ -1875,8 +1847,7 @@ class ResClient(Client):
 
         更新智能场景的内容信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateResIntelligentScene
         :type request: :class:`huaweicloudsdkres.v1.UpdateResIntelligentSceneRequest`
@@ -1942,8 +1913,7 @@ class ResClient(Client):
 
         修改指定作业的元数据信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateResJob
         :type request: :class:`huaweicloudsdkres.v1.UpdateResJobRequest`
@@ -2011,8 +1981,7 @@ class ResClient(Client):
 
         修改指定在线服务的元数据内容。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateResOnlineInstance
         :type request: :class:`huaweicloudsdkres.v1.UpdateResOnlineInstanceRequest`
@@ -2080,8 +2049,7 @@ class ResClient(Client):
 
         更新自定义场景的内容信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateResScene
         :type request: :class:`huaweicloudsdkres.v1.UpdateResSceneRequest`
@@ -2147,8 +2115,7 @@ class ResClient(Client):
 
         更新工作空间信息, 只允许更新描述信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateResWorkspace
         :type request: :class:`huaweicloudsdkres.v1.UpdateResWorkspaceRequest`

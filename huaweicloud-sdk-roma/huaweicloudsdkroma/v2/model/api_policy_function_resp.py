@@ -24,6 +24,7 @@ class ApiPolicyFunctionResp:
         'invocation_type': 'str',
         'timeout': 'int',
         'version': 'str',
+        'alias_urn': 'str',
         'id': 'str',
         'name': 'str',
         'conditions': 'list[ConditionResp]',
@@ -37,6 +38,7 @@ class ApiPolicyFunctionResp:
         'invocation_type': 'invocation_type',
         'timeout': 'timeout',
         'version': 'version',
+        'alias_urn': 'alias_urn',
         'id': 'id',
         'name': 'name',
         'conditions': 'conditions',
@@ -45,7 +47,7 @@ class ApiPolicyFunctionResp:
         'authorizer_id': 'authorizer_id'
     }
 
-    def __init__(self, function_urn=None, invocation_type=None, timeout=None, version=None, id=None, name=None, conditions=None, backend_params=None, effect_mode=None, authorizer_id=None):
+    def __init__(self, function_urn=None, invocation_type=None, timeout=None, version=None, alias_urn=None, id=None, name=None, conditions=None, backend_params=None, effect_mode=None, authorizer_id=None):
         """ApiPolicyFunctionResp
 
         The model defined in huaweicloud sdk
@@ -58,6 +60,8 @@ class ApiPolicyFunctionResp:
         :type timeout: int
         :param version: 版本。字符长度不超过64
         :type version: str
+        :param alias_urn: 函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+        :type alias_urn: str
         :param id: 编号
         :type id: str
         :param name: 策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
@@ -78,6 +82,7 @@ class ApiPolicyFunctionResp:
         self._invocation_type = None
         self._timeout = None
         self._version = None
+        self._alias_urn = None
         self._id = None
         self._name = None
         self._conditions = None
@@ -91,6 +96,8 @@ class ApiPolicyFunctionResp:
         self.timeout = timeout
         if version is not None:
             self.version = version
+        if alias_urn is not None:
+            self.alias_urn = alias_urn
         if id is not None:
             self.id = id
         self.name = name
@@ -188,6 +195,28 @@ class ApiPolicyFunctionResp:
         :type version: str
         """
         self._version = version
+
+    @property
+    def alias_urn(self):
+        """Gets the alias_urn of this ApiPolicyFunctionResp.
+
+        函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+
+        :return: The alias_urn of this ApiPolicyFunctionResp.
+        :rtype: str
+        """
+        return self._alias_urn
+
+    @alias_urn.setter
+    def alias_urn(self, alias_urn):
+        """Sets the alias_urn of this ApiPolicyFunctionResp.
+
+        函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+
+        :param alias_urn: The alias_urn of this ApiPolicyFunctionResp.
+        :type alias_urn: str
+        """
+        self._alias_urn = alias_urn
 
     @property
     def id(self):

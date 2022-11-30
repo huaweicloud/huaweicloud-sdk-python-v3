@@ -28,9 +28,9 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
         'vnc_enable': 'str',
         'phone_model_name': 'str',
         'status': 'int',
-        'access_infos': 'list[object]',
+        'access_infos': 'list[PhoneAccessInfo]',
         '_property': 'str',
-        'metadata': 'object',
+        'metadata': 'ShowCloudPhoneDetailResponseBodyMetadata',
         'create_time': 'str',
         'update_time': 'str'
     }
@@ -56,7 +56,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 请求的唯一标识ID
+        :param request_id: 请求的唯一标识ID，不超过32个字节。
         :type request_id: str
         :param phone_name: 云手机名称，不超过65个字符
         :type phone_name: str
@@ -73,11 +73,11 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
         :param status: 云手机状态 - 0：创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
         :type status: int
         :param access_infos: 云手机访问信息
-        :type access_infos: list[object]
+        :type access_infos: list[:class:`huaweicloudsdkcph.v1.PhoneAccessInfo`]
         :param _property: 云手机属性字符串，不超过2048个字节
         :type _property: str
-        :param metadata: 订单以及产品相关信息
-        :type metadata: :class:`huaweicloudsdkcph.v1.object`
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneDetailResponseBodyMetadata`
         :param create_time: 创建时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
         :type create_time: str
         :param update_time: 更新时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
@@ -101,25 +101,38 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
         self._update_time = None
         self.discriminator = None
 
-        self.request_id = request_id
-        self.phone_name = phone_name
-        self.server_id = server_id
-        self.phone_id = phone_id
-        self.image_id = image_id
-        self.vnc_enable = vnc_enable
-        self.phone_model_name = phone_model_name
-        self.status = status
-        self.access_infos = access_infos
-        self._property = _property
-        self.metadata = metadata
-        self.create_time = create_time
-        self.update_time = update_time
+        if request_id is not None:
+            self.request_id = request_id
+        if phone_name is not None:
+            self.phone_name = phone_name
+        if server_id is not None:
+            self.server_id = server_id
+        if phone_id is not None:
+            self.phone_id = phone_id
+        if image_id is not None:
+            self.image_id = image_id
+        if vnc_enable is not None:
+            self.vnc_enable = vnc_enable
+        if phone_model_name is not None:
+            self.phone_model_name = phone_model_name
+        if status is not None:
+            self.status = status
+        if access_infos is not None:
+            self.access_infos = access_infos
+        if _property is not None:
+            self._property = _property
+        if metadata is not None:
+            self.metadata = metadata
+        if create_time is not None:
+            self.create_time = create_time
+        if update_time is not None:
+            self.update_time = update_time
 
     @property
     def request_id(self):
         """Gets the request_id of this ShowCloudPhoneDetailResponse.
 
-        请求的唯一标识ID
+        请求的唯一标识ID，不超过32个字节。
 
         :return: The request_id of this ShowCloudPhoneDetailResponse.
         :rtype: str
@@ -130,7 +143,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this ShowCloudPhoneDetailResponse.
 
-        请求的唯一标识ID
+        请求的唯一标识ID，不超过32个字节。
 
         :param request_id: The request_id of this ShowCloudPhoneDetailResponse.
         :type request_id: str
@@ -298,7 +311,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
         云手机访问信息
 
         :return: The access_infos of this ShowCloudPhoneDetailResponse.
-        :rtype: list[object]
+        :rtype: list[:class:`huaweicloudsdkcph.v1.PhoneAccessInfo`]
         """
         return self._access_infos
 
@@ -309,7 +322,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
         云手机访问信息
 
         :param access_infos: The access_infos of this ShowCloudPhoneDetailResponse.
-        :type access_infos: list[object]
+        :type access_infos: list[:class:`huaweicloudsdkcph.v1.PhoneAccessInfo`]
         """
         self._access_infos = access_infos
 
@@ -339,10 +352,8 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this ShowCloudPhoneDetailResponse.
 
-        订单以及产品相关信息
-
         :return: The metadata of this ShowCloudPhoneDetailResponse.
-        :rtype: :class:`huaweicloudsdkcph.v1.object`
+        :rtype: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneDetailResponseBodyMetadata`
         """
         return self._metadata
 
@@ -350,10 +361,8 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def metadata(self, metadata):
         """Sets the metadata of this ShowCloudPhoneDetailResponse.
 
-        订单以及产品相关信息
-
         :param metadata: The metadata of this ShowCloudPhoneDetailResponse.
-        :type metadata: :class:`huaweicloudsdkcph.v1.object`
+        :type metadata: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneDetailResponseBodyMetadata`
         """
         self._metadata = metadata
 

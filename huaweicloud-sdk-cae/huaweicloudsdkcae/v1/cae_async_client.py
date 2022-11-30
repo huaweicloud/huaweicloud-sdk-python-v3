@@ -47,8 +47,7 @@ class CaeAsyncClient(Client):
 
         本接口用于创建cae_trust委托
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateAgency
@@ -109,8 +108,7 @@ class CaeAsyncClient(Client):
 
         本接口用于获取cae_trust委托，如果委托不存在则创建委托
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowAgency
@@ -169,8 +167,7 @@ class CaeAsyncClient(Client):
 
         本接口用于创建一个应用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateApplication
@@ -235,8 +232,7 @@ class CaeAsyncClient(Client):
 
         本接口用于删除指定应用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteApplication
@@ -301,8 +297,7 @@ class CaeAsyncClient(Client):
 
         本接口用于获取当前环境下的应用列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApplications
@@ -365,8 +360,7 @@ class CaeAsyncClient(Client):
 
         本接口用于获取指定应用详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowApplication
@@ -431,8 +425,7 @@ class CaeAsyncClient(Client):
 
         本接口用于创建一个组件，组件是CAE的最小部署单位，支持将用户的源码，部署包，镜像等资源部署到组件上
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateComponent
@@ -499,8 +492,7 @@ class CaeAsyncClient(Client):
 
         本接口用于删除指定的组件，组件是CAE的最小部署单位，支持将用户的源码，部署包，镜像等资源部署到组件上
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteComponent
@@ -567,8 +559,7 @@ class CaeAsyncClient(Client):
 
         本接口用于对组件执行指定操作，如部署、升级、重启、停止、启动、伸缩、重试、配置、回滚
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ExecuteAction
@@ -637,8 +628,7 @@ class CaeAsyncClient(Client):
 
         本接口用于获取组件快照版本
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListComponentSnapshots
@@ -705,8 +695,7 @@ class CaeAsyncClient(Client):
 
         本接口用于获取组件列表，组件是CAE的最小部署单位，支持将用户的源码，部署包，镜像等资源部署到组件上
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListComponents
@@ -774,8 +763,7 @@ class CaeAsyncClient(Client):
         """获取事件列表
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListEvents
@@ -842,8 +830,7 @@ class CaeAsyncClient(Client):
 
         本接口用于获取组件实例列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListInstances
@@ -910,8 +897,7 @@ class CaeAsyncClient(Client):
 
         本接口用于获取指定的组件，组件是CAE的最小部署单位，支持将用户的源码，部署包，镜像等资源部署到组件上
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowComponent
@@ -978,8 +964,7 @@ class CaeAsyncClient(Client):
 
         本接口用于更新指定的组件，组件是CAE的最小部署单位，支持将用户的源码，部署包，镜像等资源部署到组件上
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateComponent
@@ -1048,8 +1033,7 @@ class CaeAsyncClient(Client):
 
         本接口用于创建组件配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateComponentConfiguration
@@ -1117,8 +1101,7 @@ class CaeAsyncClient(Client):
         """删除组件配置
 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteComponentConfiguration
@@ -1185,8 +1168,7 @@ class CaeAsyncClient(Client):
 
         本接口用于获取组件配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListConfigurations
@@ -1253,8 +1235,7 @@ class CaeAsyncClient(Client):
 
         本接口用于创建一个环境，环境是CAE定义的一个资源维度，所有的用户组件都放在环境下
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateEnvironment
@@ -1317,8 +1298,7 @@ class CaeAsyncClient(Client):
 
         本接口用于删除环境，暂未开放。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteEnvironment
@@ -1381,8 +1361,7 @@ class CaeAsyncClient(Client):
 
         本接口用于获取当前租户环境信息，环境是CAE定义的一个资源维度，所有的用户组件都放在环境下
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListEnvironments
@@ -1443,8 +1422,7 @@ class CaeAsyncClient(Client):
 
         本接口用于重试任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RetryJob
@@ -1505,8 +1483,7 @@ class CaeAsyncClient(Client):
 
         本接口用于获取任务详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowJob
@@ -1569,8 +1546,7 @@ class CaeAsyncClient(Client):
 
         本接口用于创建卷
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateVolume
@@ -1635,8 +1611,7 @@ class CaeAsyncClient(Client):
 
         本接口用于创建卷
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteVolume
@@ -1701,8 +1676,7 @@ class CaeAsyncClient(Client):
 
         本接口用于获取卷列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListVolumes

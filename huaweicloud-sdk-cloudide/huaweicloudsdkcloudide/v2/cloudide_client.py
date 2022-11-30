@@ -47,8 +47,7 @@ class CloudIDEClient(Client):
 
         添加插件评论
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddExtensionEvaluation
         :type request: :class:`huaweicloudsdkcloudide.v2.AddExtensionEvaluationRequest`
@@ -108,8 +107,7 @@ class CloudIDEClient(Client):
 
         添加评论回复、回复评论回复
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddExtensionEvaluationReply
         :type request: :class:`huaweicloudsdkcloudide.v2.AddExtensionEvaluationReplyRequest`
@@ -169,8 +167,7 @@ class CloudIDEClient(Client):
 
         添加新评星
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddExtensionStar
         :type request: :class:`huaweicloudsdkcloudide.v2.AddExtensionStarRequest`
@@ -230,8 +227,7 @@ class CloudIDEClient(Client):
 
         举报评论,举报回复
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckMaliciousExtensionEvaluation
         :type request: :class:`huaweicloudsdkcloudide.v2.CheckMaliciousExtensionEvaluationRequest`
@@ -291,8 +287,7 @@ class CloudIDEClient(Client):
 
         设置ide实例对插件的授权。同意、不同意、未知（下次重新询问）
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateExtensionAuthorization
         :type request: :class:`huaweicloudsdkcloudide.v2.CreateExtensionAuthorizationRequest`
@@ -354,8 +349,7 @@ class CloudIDEClient(Client):
 
         删除评论
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteEvaluation
         :type request: :class:`huaweicloudsdkcloudide.v2.DeleteEvaluationRequest`
@@ -415,8 +409,7 @@ class CloudIDEClient(Client):
 
         删除回复
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteEvaluationReply
         :type request: :class:`huaweicloudsdkcloudide.v2.DeleteEvaluationReplyRequest`
@@ -476,8 +469,7 @@ class CloudIDEClient(Client):
 
         查询插件列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListExtensions
         :type request: :class:`huaweicloudsdkcloudide.v2.ListExtensionsRequest`
@@ -537,8 +529,7 @@ class CloudIDEClient(Client):
 
         查询技术栈模板工程
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProjectTemplates
         :type request: :class:`huaweicloudsdkcloudide.v2.ListProjectTemplatesRequest`
@@ -600,8 +591,7 @@ class CloudIDEClient(Client):
 
         按region获取标签所有技术栈
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListStacks
         :type request: :class:`huaweicloudsdkcloudide.v2.ListStacksRequest`
@@ -661,8 +651,7 @@ class CloudIDEClient(Client):
 
         查询当前帐号访问权限
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAccountStatus
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowAccountStatusRequest`
@@ -720,8 +709,7 @@ class CloudIDEClient(Client):
 
         查询ide实例对插件的授权情况，同意授权的插件能在ide实例内携带登陆用户的token调用第三方服务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowExtensionAuthorization
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowExtensionAuthorizationRequest`
@@ -785,8 +773,7 @@ class CloudIDEClient(Client):
 
         查询插件详细信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowExtensionDetail
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowExtensionDetailRequest`
@@ -846,8 +833,7 @@ class CloudIDEClient(Client):
 
         查询插件评价
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowExtensionEvaluation
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowExtensionEvaluationRequest`
@@ -911,8 +897,7 @@ class CloudIDEClient(Client):
 
         查询插件评星
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowExtensionEvaluationStar
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowExtensionEvaluationStarRequest`
@@ -976,8 +961,7 @@ class CloudIDEClient(Client):
 
         获取技术栈计费信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPrice
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowPriceRequest`
@@ -1035,8 +1019,7 @@ class CloudIDEClient(Client):
 
         上传插件
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UploadExtensionFile
         :type request: :class:`huaweicloudsdkcloudide.v2.UploadExtensionFileRequest`
@@ -1100,8 +1083,7 @@ class CloudIDEClient(Client):
 
         查询用户是否有权限访问某个IDE实例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckInstanceAccess
         :type request: :class:`huaweicloudsdkcloudide.v2.CheckInstanceAccessRequest`
@@ -1161,8 +1143,7 @@ class CloudIDEClient(Client):
 
         查询IDE实例名是否重复
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckName
         :type request: :class:`huaweicloudsdkcloudide.v2.CheckNameRequest`
@@ -1222,8 +1203,7 @@ class CloudIDEClient(Client):
 
         创建IDE实例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateInstance
         :type request: :class:`huaweicloudsdkcloudide.v2.CreateInstanceRequest`
@@ -1285,8 +1265,7 @@ class CloudIDEClient(Client):
 
         创建IDE实例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateInstanceBy3rd
         :type request: :class:`huaweicloudsdkcloudide.v2.CreateInstanceBy3rdRequest`
@@ -1348,8 +1327,7 @@ class CloudIDEClient(Client):
 
         删除IDE实例（同时删除磁盘数据）
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteInstance
         :type request: :class:`huaweicloudsdkcloudide.v2.DeleteInstanceRequest`
@@ -1409,8 +1387,7 @@ class CloudIDEClient(Client):
 
         查询IDE实例列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListInstances
         :type request: :class:`huaweicloudsdkcloudide.v2.ListInstancesRequest`
@@ -1482,8 +1459,7 @@ class CloudIDEClient(Client):
 
         查询某个租户下的IDE实例列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListOrgInstances
         :type request: :class:`huaweicloudsdkcloudide.v2.ListOrgInstancesRequest`
@@ -1551,8 +1527,7 @@ class CloudIDEClient(Client):
 
         查询某个IDE实例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowInstance
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowInstanceRequest`
@@ -1612,8 +1587,7 @@ class CloudIDEClient(Client):
 
         查询某个IDE实例的状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowInstanceStatusInfo
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowInstanceStatusInfoRequest`
@@ -1673,8 +1647,7 @@ class CloudIDEClient(Client):
 
         启动IDE实例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartInstance
         :type request: :class:`huaweicloudsdkcloudide.v2.StartInstanceRequest`
@@ -1736,8 +1709,7 @@ class CloudIDEClient(Client):
 
         停止IDE实例（不删除磁盘数据）
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StopInstance
         :type request: :class:`huaweicloudsdkcloudide.v2.StopInstanceRequest`
@@ -1797,8 +1769,7 @@ class CloudIDEClient(Client):
 
         修改IDE实例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateInstance
         :type request: :class:`huaweicloudsdkcloudide.v2.UpdateInstanceRequest`
@@ -1860,8 +1831,7 @@ class CloudIDEClient(Client):
 
         刷新IDE实例活跃状态，超过该实例设置的过期时间后实例自动关闭。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateInstanceActivity
         :type request: :class:`huaweicloudsdkcloudide.v2.UpdateInstanceActivityRequest`

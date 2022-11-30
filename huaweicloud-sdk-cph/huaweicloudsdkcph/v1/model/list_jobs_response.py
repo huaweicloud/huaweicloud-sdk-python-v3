@@ -21,7 +21,7 @@ class ListJobsResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'jobs': 'list[object]'
+        'jobs': 'list[Job]'
     }
 
     attribute_map = {
@@ -34,10 +34,10 @@ class ListJobsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 请求的唯一标识ID
+        :param request_id: 请求的唯一标识ID。
         :type request_id: str
         :param jobs: 任务信息
-        :type jobs: list[object]
+        :type jobs: list[:class:`huaweicloudsdkcph.v1.Job`]
         """
         
         super(ListJobsResponse, self).__init__()
@@ -46,14 +46,16 @@ class ListJobsResponse(SdkResponse):
         self._jobs = None
         self.discriminator = None
 
-        self.request_id = request_id
-        self.jobs = jobs
+        if request_id is not None:
+            self.request_id = request_id
+        if jobs is not None:
+            self.jobs = jobs
 
     @property
     def request_id(self):
         """Gets the request_id of this ListJobsResponse.
 
-        请求的唯一标识ID
+        请求的唯一标识ID。
 
         :return: The request_id of this ListJobsResponse.
         :rtype: str
@@ -64,7 +66,7 @@ class ListJobsResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this ListJobsResponse.
 
-        请求的唯一标识ID
+        请求的唯一标识ID。
 
         :param request_id: The request_id of this ListJobsResponse.
         :type request_id: str
@@ -78,7 +80,7 @@ class ListJobsResponse(SdkResponse):
         任务信息
 
         :return: The jobs of this ListJobsResponse.
-        :rtype: list[object]
+        :rtype: list[:class:`huaweicloudsdkcph.v1.Job`]
         """
         return self._jobs
 
@@ -89,7 +91,7 @@ class ListJobsResponse(SdkResponse):
         任务信息
 
         :param jobs: The jobs of this ListJobsResponse.
-        :type jobs: list[object]
+        :type jobs: list[:class:`huaweicloudsdkcph.v1.Job`]
         """
         self._jobs = jobs
 

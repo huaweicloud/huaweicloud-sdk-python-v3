@@ -20,7 +20,7 @@ class UpdateCloudPhonePropertyRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'Phones'
+        'body': 'UpdateCloudPhonePropertyRequestBody'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class UpdateCloudPhonePropertyRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the UpdateCloudPhonePropertyRequest
-        :type body: :class:`huaweicloudsdkcph.v1.Phones`
+        :type body: :class:`huaweicloudsdkcph.v1.UpdateCloudPhonePropertyRequestBody`
         """
         
         
@@ -49,7 +49,7 @@ class UpdateCloudPhonePropertyRequest:
         """Gets the body of this UpdateCloudPhonePropertyRequest.
 
         :return: The body of this UpdateCloudPhonePropertyRequest.
-        :rtype: :class:`huaweicloudsdkcph.v1.Phones`
+        :rtype: :class:`huaweicloudsdkcph.v1.UpdateCloudPhonePropertyRequestBody`
         """
         return self._body
 
@@ -58,7 +58,7 @@ class UpdateCloudPhonePropertyRequest:
         """Sets the body of this UpdateCloudPhonePropertyRequest.
 
         :param body: The body of this UpdateCloudPhonePropertyRequest.
-        :type body: :class:`huaweicloudsdkcph.v1.Phones`
+        :type body: :class:`huaweicloudsdkcph.v1.UpdateCloudPhonePropertyRequestBody`
         """
         self._body = body
 

@@ -47,8 +47,7 @@ class CphClient(Client):
 
         批量导出云手机中的数据。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchExportCloudPhoneData
         :type request: :class:`huaweicloudsdkcph.v1.BatchExportCloudPhoneDataRequest`
@@ -108,8 +107,7 @@ class CphClient(Client):
 
         导入数据到手机中。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchImportCloudPhoneData
         :type request: :class:`huaweicloudsdkcph.v1.BatchImportCloudPhoneDataRequest`
@@ -169,8 +167,7 @@ class CphClient(Client):
 
         批量迁移整台云手机，包括云手机的系统盘数据和数据盘数据。该接口为异步接口，迁移完成的时间和手机的数据量有一定关系，整机数据大小为11G时，迁移时间大约为3-5分钟。迁移前请关闭云手机。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchMigrateCloudPhone
         :type request: :class:`huaweicloudsdkcph.v1.BatchMigrateCloudPhoneRequest`
@@ -230,8 +227,7 @@ class CphClient(Client):
 
         变更云手机服务器规格。只有能使用physical.rx1.xlarge.special私有规格的租户才可使用本接口。变更的目标规格也必须为特殊的规格才可变更。接口调用成功后，大约2分钟左右规格会变更结束，在订单中心可以查看到变更的订单状态为成功，且查询服务器的详细信息，可以查看到服务器规格名称已经变成新的规格名称。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ChangeCloudPhoneServerModel
         :type request: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerModelRequest`
@@ -287,12 +283,11 @@ class CphClient(Client):
             request_type=request.__class__.__name__)
 
     def create_cloud_phone_server(self, request):
-        """购买系统定义网络的云手机服务器
+        """购买系统定义网络云手机服务器
 
         购买系统定义网络云手机服务器。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateCloudPhoneServer
         :type request: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneServerRequest`
@@ -352,8 +347,7 @@ class CphClient(Client):
 
         购买自定义网络的云手机服务器。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateNet2CloudPhoneServer
         :type request: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequest`
@@ -413,8 +407,7 @@ class CphClient(Client):
 
         在共享应用存储目录中删除共享应用，该功能仅在支持共享应用的云手机规格上可实现。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteShareApps
         :type request: :class:`huaweicloudsdkcph.v1.DeleteShareAppsRequest`
@@ -474,8 +467,7 @@ class CphClient(Client):
 
         删除共享存储目录中文件，该功能仅在支持共享存储的云手机规格上可实现。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteShareFiles
         :type request: :class:`huaweicloudsdkcph.v1.DeleteShareFilesRequest`
@@ -535,8 +527,7 @@ class CphClient(Client):
 
         手机流量路由修改。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ImportTraffic
         :type request: :class:`huaweicloudsdkcph.v1.ImportTrafficRequest`
@@ -596,8 +587,7 @@ class CphClient(Client):
 
         根据项目ID查询可用的手机镜像。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCloudPhoneImages
         :type request: :class:`huaweicloudsdkcph.v1.ListCloudPhoneImagesRequest`
@@ -655,8 +645,7 @@ class CphClient(Client):
 
         查询或统计云手机的规格列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCloudPhoneModels
         :type request: :class:`huaweicloudsdkcph.v1.ListCloudPhoneModelsRequest`
@@ -665,7 +654,7 @@ class CphClient(Client):
         return self.list_cloud_phone_models_with_http_info(request)
 
     def list_cloud_phone_models_with_http_info(self, request):
-        all_params = []
+        all_params = ['status']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -678,6 +667,8 @@ class CphClient(Client):
         path_params = {}
 
         query_params = []
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
 
         header_params = {}
 
@@ -714,8 +705,7 @@ class CphClient(Client):
 
         查询云手机服务器的规格列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCloudPhoneServerModels
         :type request: :class:`huaweicloudsdkcph.v1.ListCloudPhoneServerModelsRequest`
@@ -775,8 +765,7 @@ class CphClient(Client):
 
         分页查询云手机服务器，云手机服务器列表按照创建时间进行降序排列。分页查询可以指定offset以及limit。如果不存在云手机服务器，则返回空列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCloudPhoneServers
         :type request: :class:`huaweicloudsdkcph.v1.ListCloudPhoneServersRequest`
@@ -844,8 +833,7 @@ class CphClient(Client):
 
         分页查询云手机，云手机列表按照创建时间进行降序排列。分页查询可以指定offset以及limit。如果不存在云手机，则返回空列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCloudPhones
         :type request: :class:`huaweicloudsdkcph.v1.ListCloudPhonesRequest`
@@ -915,8 +903,7 @@ class CphClient(Client):
 
         查询编码服务列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEncodeServers
         :type request: :class:`huaweicloudsdkcph.v1.ListEncodeServersRequest`
@@ -984,8 +971,7 @@ class CphClient(Client):
 
         查询同一个request id下的任务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListJobs
         :type request: :class:`huaweicloudsdkcph.v1.ListJobsRequest`
@@ -1047,8 +1033,7 @@ class CphClient(Client):
 
         查询共享存储指定路径下的文件列表，该功能仅在支持共享存储的云手机规格上可实现。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListShareFiles
         :type request: :class:`huaweicloudsdkcph.v1.ListShareFilesRequest`
@@ -1114,8 +1099,7 @@ class CphClient(Client):
 
         推送应用tar文件至共享应用存储目录中，该功能仅在支持共享应用的云手机规格上可实现。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for PushShareApps
         :type request: :class:`huaweicloudsdkcph.v1.PushShareAppsRequest`
@@ -1175,8 +1159,7 @@ class CphClient(Client):
 
         推送文件至共享存储目录中，该功能仅在支持共享存储的云手机规格上可实现。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for PushShareFiles
         :type request: :class:`huaweicloudsdkcph.v1.PushShareFilesRequest`
@@ -1236,8 +1219,7 @@ class CphClient(Client):
 
         批量重置云手机，将云手机恢复出厂设置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ResetCloudPhone
         :type request: :class:`huaweicloudsdkcph.v1.ResetCloudPhoneRequest`
@@ -1297,8 +1279,7 @@ class CphClient(Client):
 
         批量重启云手机，也可用于开启云手机。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RestartCloudPhone
         :type request: :class:`huaweicloudsdkcph.v1.RestartCloudPhoneRequest`
@@ -1358,8 +1339,7 @@ class CphClient(Client):
 
         批量重启云手机服务器。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RestartCloudPhoneServer
         :type request: :class:`huaweicloudsdkcph.v1.RestartCloudPhoneServerRequest`
@@ -1419,8 +1399,7 @@ class CphClient(Client):
 
         批量重启编码服务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RestartEncodeServer
         :type request: :class:`huaweicloudsdkcph.v1.RestartEncodeServerRequest`
@@ -1480,8 +1459,7 @@ class CphClient(Client):
 
         查询云手机使用的带宽信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowBandwidthDetail
         :type request: :class:`huaweicloudsdkcph.v1.ShowBandwidthDetailRequest`
@@ -1539,8 +1517,7 @@ class CphClient(Client):
 
         查询云手机的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowCloudPhoneDetail
         :type request: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneDetailRequest`
@@ -1600,8 +1577,7 @@ class CphClient(Client):
 
         根据server_id查询云手机服务器的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowCloudPhoneServerDetail
         :type request: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneServerDetailRequest`
@@ -1661,8 +1637,7 @@ class CphClient(Client):
 
         查询任务的执行状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowJob
         :type request: :class:`huaweicloudsdkcph.v1.ShowJobRequest`
@@ -1722,8 +1697,7 @@ class CphClient(Client):
 
         批量关闭云手机。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StopCloudPhone
         :type request: :class:`huaweicloudsdkcph.v1.StopCloudPhoneRequest`
@@ -1783,8 +1757,7 @@ class CphClient(Client):
 
         修改云手机使用的共享带宽大小。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateBandwidth
         :type request: :class:`huaweicloudsdkcph.v1.UpdateBandwidthRequest`
@@ -1846,8 +1819,7 @@ class CphClient(Client):
 
         部分云手机属性开放更新能力，部分属性无法更新，部分属性需要重启手机生效，属性约束请云手机属性列表。如果手机处于异常状态，属性更新后需恢复手机状态为运行中才可生效。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateCloudPhoneProperty
         :type request: :class:`huaweicloudsdkcph.v1.UpdateCloudPhonePropertyRequest`
@@ -1907,8 +1879,7 @@ class CphClient(Client):
 
         修改连接云手机的密钥对。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateKeypair
         :type request: :class:`huaweicloudsdkcph.v1.UpdateKeypairRequest`
@@ -1968,8 +1939,7 @@ class CphClient(Client):
 
         根据phoneId修改phoneName。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdatePhoneName
         :type request: :class:`huaweicloudsdkcph.v1.UpdatePhoneNameRequest`
@@ -2031,8 +2001,7 @@ class CphClient(Client):
 
         根据serverId修改serverName。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateServerName
         :type request: :class:`huaweicloudsdkcph.v1.UpdateServerNameRequest`
@@ -2089,13 +2058,133 @@ class CphClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def install_apk(self, request):
+        """安装apk
+
+        在云手机中安装apk。系统会将指定的apk文件下载后直接安装到云手机中。
+        支持安装单apk应用和多apk应用。可使用install命令安装单apk应用，一次只支持安装一个apk；可使用install-multiple命令安装多apk应用（多apk应用为单个应用拆分成多个apk），一次只支持同一个应用的多个apk。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for InstallApk
+        :type request: :class:`huaweicloudsdkcph.v1.InstallApkRequest`
+        :rtype: :class:`huaweicloudsdkcph.v1.InstallApkResponse`
+        """
+        return self.install_apk_with_http_info(request)
+
+    def install_apk_with_http_info(self, request):
+        all_params = ['install_apk_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloud-phone/phones/commands',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='InstallApkResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def push_file(self, request):
+        """推送文件
+
+        推送文件到云手机文件系统中。系统会将所指定的文件下载解压后，将解压后的内容全部推送到云手机的根目录下。只支持指定tar格式的文件进行推送，您需要将tar文件提前上传至您的OBS桶中。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for PushFile
+        :type request: :class:`huaweicloudsdkcph.v1.PushFileRequest`
+        :rtype: :class:`huaweicloudsdkcph.v1.PushFileResponse`
+        """
+        return self.push_file_with_http_info(request)
+
+    def push_file_with_http_info(self, request):
+        all_params = ['push_file_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloud-phone/phones/commands',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='PushFileResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def run_shell_command(self, request):
         """执行异步adb命令
 
-        在云手机中执行异步执行命令并返回任务，可调用查询任务执行状态和查询任务执行状态列表获取任务执行结果。该接口支持push、install、uninstall和shell命令的执行。
+        在云手机中执行shell命令。该接口为异步接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RunShellCommand
         :type request: :class:`huaweicloudsdkcph.v1.RunShellCommandRequest`
@@ -2155,8 +2244,7 @@ class CphClient(Client):
 
         在云手机中同步执行命令并返回命令执行的输出信息，该接口仅支持adb shell命令的执行。1分钟内每个用户调用接口次数上限为6次，每个云手机允许执行命令超时时间为2秒，接口时间不超过30秒，执行云手机数越多，接口耗时相应越长。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RunSyncCommand
         :type request: :class:`huaweicloudsdkcph.v1.RunSyncCommandRequest`
@@ -2206,6 +2294,66 @@ class CphClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='RunSyncCommandResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def uninstall_apk(self, request):
+        """卸载apk
+
+        在云手机中卸载apk。该接口为异步接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UninstallApk
+        :type request: :class:`huaweicloudsdkcph.v1.UninstallApkRequest`
+        :rtype: :class:`huaweicloudsdkcph.v1.UninstallApkResponse`
+        """
+        return self.uninstall_apk_with_http_info(request)
+
+    def uninstall_apk_with_http_info(self, request):
+        all_params = ['uninstall_apk_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloud-phone/phones/commands',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UninstallApkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

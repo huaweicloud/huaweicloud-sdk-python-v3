@@ -47,8 +47,7 @@ class IoTEdgeAsyncClient(Client):
 
         创建边缘节点
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateEdgeNode
@@ -109,8 +108,7 @@ class IoTEdgeAsyncClient(Client):
 
         生成边缘节点安装命令，命令有效时间30分钟，超过后需要重新生成
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateInstallCmd
@@ -175,8 +173,7 @@ class IoTEdgeAsyncClient(Client):
 
         删除指定边缘节点
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteEdgeNode
@@ -239,8 +236,7 @@ class IoTEdgeAsyncClient(Client):
 
         查询边缘节点列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListEdgeNodes
@@ -316,8 +312,7 @@ class IoTEdgeAsyncClient(Client):
 
         查询边缘节点详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowEdgeNode
@@ -378,8 +373,7 @@ class IoTEdgeAsyncClient(Client):
 
         添加设备
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddDevice
@@ -442,8 +436,7 @@ class IoTEdgeAsyncClient(Client):
 
         删除设备
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDevice
@@ -506,8 +499,7 @@ class IoTEdgeAsyncClient(Client):
 
         查询设备列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDevices
@@ -576,8 +568,7 @@ class IoTEdgeAsyncClient(Client):
 
         获取协议配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowProductConfig
@@ -638,8 +629,7 @@ class IoTEdgeAsyncClient(Client):
 
         修改设备
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDevice
@@ -704,8 +694,7 @@ class IoTEdgeAsyncClient(Client):
 
         查询应用列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchListEdgeApps
@@ -774,8 +763,7 @@ class IoTEdgeAsyncClient(Client):
 
         创建应用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateEdgeApp
@@ -836,8 +824,7 @@ class IoTEdgeAsyncClient(Client):
 
         删除应用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteEdgeApp
@@ -898,8 +885,7 @@ class IoTEdgeAsyncClient(Client):
 
         查询应用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowEdgeApp
@@ -960,8 +946,7 @@ class IoTEdgeAsyncClient(Client):
 
         查询应用版本列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchListEdgeAppVersions
@@ -1034,8 +1019,7 @@ class IoTEdgeAsyncClient(Client):
 
         创建应用版本
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateEdgeApplicationVersion
@@ -1098,8 +1082,7 @@ class IoTEdgeAsyncClient(Client):
 
         删除应用版本
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteEdgeApplicationVersion
@@ -1162,8 +1145,7 @@ class IoTEdgeAsyncClient(Client):
 
         查询应用版本详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowEdgeApplicationVersion
@@ -1226,8 +1208,7 @@ class IoTEdgeAsyncClient(Client):
 
         修改应用版本
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateEdgeApplicationVersion
@@ -1292,8 +1273,7 @@ class IoTEdgeAsyncClient(Client):
 
         更新应用版本状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateEdgeApplicationVersionState
@@ -1358,8 +1338,7 @@ class IoTEdgeAsyncClient(Client):
 
         用户通过在指定边缘节点上设置外部实体的接入信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateExternalEntity
@@ -1422,8 +1401,7 @@ class IoTEdgeAsyncClient(Client):
 
         删除节点下外部实体
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteExternalEntity
@@ -1486,8 +1464,7 @@ class IoTEdgeAsyncClient(Client):
 
         用户在指定边缘节点上查询外部实体列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListExternalEntity
@@ -1552,8 +1529,7 @@ class IoTEdgeAsyncClient(Client):
 
         用户通过在指定边缘节点上修改指定外部实体的接入信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateExternalEntity
@@ -1618,8 +1594,7 @@ class IoTEdgeAsyncClient(Client):
 
         用户通过Console接口查询指定边缘节点上边缘模块列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchListModules
@@ -1688,8 +1663,7 @@ class IoTEdgeAsyncClient(Client):
 
         用户通过Console接口在指定边缘节点上创建边缘模块
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateModule
@@ -1752,8 +1726,7 @@ class IoTEdgeAsyncClient(Client):
 
         用户通过过Console接口在指定边缘节点上删除边缘模块
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteModule
@@ -1816,8 +1789,7 @@ class IoTEdgeAsyncClient(Client):
 
         用户通过Console接口查询指定边缘节点上指定边缘模块
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowModule
@@ -1880,8 +1852,7 @@ class IoTEdgeAsyncClient(Client):
 
         用户通过Console接口查询指定边缘节点上指定边缘模块
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateModule
@@ -1946,8 +1917,7 @@ class IoTEdgeAsyncClient(Client):
 
         用户在指定边缘节点上查询边缘路由列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRoutes
@@ -2010,8 +1980,7 @@ class IoTEdgeAsyncClient(Client):
 
         用户通过在指定边缘节点上设置边缘路由
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateRoutes
@@ -2074,8 +2043,7 @@ class IoTEdgeAsyncClient(Client):
 
         南向3rdIA对下发的配置项进行批量确认
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchConfirmConfigsNew
@@ -2140,8 +2108,7 @@ class IoTEdgeAsyncClient(Client):
 
         批量导入南向3rdIA配置项
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchImportConfigs
@@ -2206,8 +2173,7 @@ class IoTEdgeAsyncClient(Client):
 
         删除南向3rdIA配置项
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteIaConfig
@@ -2272,8 +2238,7 @@ class IoTEdgeAsyncClient(Client):
 
         查询南向3rdIA配置项列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListIaConfigs
@@ -2340,8 +2305,7 @@ class IoTEdgeAsyncClient(Client):
 
         查询南向3rdIA配置项详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowIaConfig
@@ -2406,8 +2370,7 @@ class IoTEdgeAsyncClient(Client):
 
         创建&amp;更新南向3rdIA配置项信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateIaConfig
@@ -2475,8 +2438,7 @@ class IoTEdgeAsyncClient(Client):
         批量授权北向NA信息到边缘节点。
         已授权的边缘节点上的南向IA应用，可以通过部署在边缘节点上的api网关访问北向NA提供的接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchAssociateNaToNodes
@@ -2541,8 +2503,7 @@ class IoTEdgeAsyncClient(Client):
 
         删除北向NA信息，如果有边缘节点已分配该NA信息，会通知到该边缘节点。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteNa
@@ -2603,8 +2564,7 @@ class IoTEdgeAsyncClient(Client):
 
         查询该北向NA信息的已分配节点
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListNaAuthorizedNodes
@@ -2669,8 +2629,7 @@ class IoTEdgeAsyncClient(Client):
 
         查询北向NA信息列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListNas
@@ -2735,8 +2694,7 @@ class IoTEdgeAsyncClient(Client):
 
         查询北向NA信息详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowNa
@@ -2797,8 +2755,7 @@ class IoTEdgeAsyncClient(Client):
 
         创建&amp;更新北向NA信息，当更新北向NA信息时，会通知到已分配该北向NA的所有边缘节点。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateNa

@@ -47,8 +47,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         创建资产模型
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateAssetModel
@@ -109,8 +108,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         删除资产模型
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteAssetModel
@@ -171,8 +169,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         获取资产模型列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAssetModels
@@ -237,8 +234,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         获取资产模型详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowAssetModel
@@ -299,8 +295,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         修改资产模型
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateAssetModel
@@ -363,8 +358,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         创建资产
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateAssetNew
@@ -425,8 +419,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         删除资产
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteAssetNew
@@ -487,8 +480,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         获取资产列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAssetsNew
@@ -555,8 +547,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         发布资产
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for PublishRootAsset
@@ -617,8 +608,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         获取资产详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowAssetNew
@@ -681,8 +671,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         修改资产
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateAssetNew
@@ -745,8 +734,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         获取资产属性最新值
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowLastPropertyValue
@@ -809,8 +797,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         获取资产属性聚合值
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowMetricValue
@@ -873,8 +860,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         获取资产属性历史值
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowPropertyRawValue
@@ -937,8 +923,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         创建数据源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateDatasource
@@ -999,8 +984,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         删除数据源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDatasource
@@ -1061,8 +1045,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         查询数据源列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowAllDataSource
@@ -1129,8 +1112,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         查询数据源详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDataSource
@@ -1191,8 +1173,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         修改数据源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDataSource
@@ -1255,8 +1236,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         创建存储组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateGroup
@@ -1317,8 +1297,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         删除存储组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteGroup
@@ -1379,8 +1358,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         查询存储组列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListGroups
@@ -1451,8 +1429,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         更新存储组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateGroup
@@ -1515,8 +1492,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         删除存储
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDataStore
@@ -1577,8 +1553,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         查询存储列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDataStores
@@ -1647,8 +1622,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         更新存储
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDataStore
@@ -1711,8 +1685,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         根据标签查询设备历史值
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListHistory
@@ -1775,8 +1748,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         根据标签聚合、查询数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListMetrics
@@ -1839,8 +1811,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         查询设备属性最新状态值
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowPropertyValues
@@ -1903,8 +1874,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         查询标签的值列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTagValues
@@ -1973,8 +1943,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         通过API数据源上报设备数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddDevData
@@ -2037,8 +2006,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         新建管道作业时，需要在URL中指定是更新哪一个作业，将在body中附带完整的作业信息。（作业中各算子的详细配置请参考算子配置章节。） check参数表示是否需要对作业配置进行检查，若为false，则不检查，将作业保存为草稿；若为true，则对作业配置进行检查。当检查不通过时，将作业状态修改为草稿；检查通过时，将作业状态修改为就绪，并返回成功。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddPipelineJob
@@ -2101,8 +2069,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         删除用户指定的管道作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeletePipelineJob
@@ -2163,8 +2130,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         获取用户下的所有管道作业，支持分页。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListPipelineJobs
@@ -2239,8 +2205,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         获取指定管道作业的详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowPipelineJob
@@ -2301,8 +2266,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         提交管道作业到运行环境，实时接收数据源的数据并按用户定义的数据清洗逻辑对数据进行处理。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartPipelineJob
@@ -2369,8 +2333,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         停止一个正在运行中的管道作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopPipelineJob
@@ -2433,8 +2396,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         更新管道作业时，需要在URL中指定是更新哪一个作业，将在body中附带完整的作业信息。（管道作业详细配置，每个作业可选择不同的算子进行组合，各算子的使用方法详见：数据管道算子配置指南。） check参数表示是否需要对作业配置进行检查，若为false，则不检查，将作业保存为草稿；若为true，则对作业配置进行检查。当检查不通过时，将作业状态修改为草稿；检查通过时，将作业状态修改为就绪，并返回成功。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdatePipelineJob
@@ -2499,8 +2461,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         除名称和描述外，可先不提供作业的详细配置信息。 check参数表示是否需要对作业配置进行检查，若为false，则不检查，将作业保存为草稿；若为true，则对作业配置进行检查，无论检查是否通过，都将作业及配置信息保存为草稿，当检查不通过时，返回失败及错误信息，检查通过时，将作业状态修改为就绪，并返回成功。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateStreamingJob
@@ -2563,8 +2524,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         删除用户指定的作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteStreamingJobById
@@ -2625,8 +2585,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         获取指定作业的详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowJobById
@@ -2687,8 +2646,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         获取用户下的所有实时分析作业，支持分页。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowJobs
@@ -2755,8 +2713,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         更新作业时，需要在URL中指定是更新哪一个作业，将在body中附带完整的作业信息。 check参数表示是否需要对作业配置进行检查，若为false，则不检查，将作业保存为草稿；若为true，则对作业配置进行检查，无论检查是否通过，都将作业及配置信息保存为草稿，当检查不通过时，返回失败及错误信息，检查通过时，将作业状态修改为就绪，并返回成功。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateStreamingJob
@@ -2821,8 +2778,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         提交作业到运行环境，实时接收数据并按用户定义的业务逻辑对数据进行处理。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartJob
@@ -2889,8 +2845,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         停止一个正在运行中的作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopJob
@@ -2953,8 +2908,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         创建批计算资源。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateComputingResource
@@ -3015,8 +2969,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         删除批计算资源。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteComputingResource
@@ -3077,8 +3030,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         查询批计算资源列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListComputingResources
@@ -3143,8 +3095,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         将SQL语句的查询结果下载到本地，只支持下载“QUERY”类型作业的查询结果。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ExportDataset
@@ -3207,8 +3158,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         将数据从文件导入OBS表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ImportData
@@ -3269,8 +3219,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         在执行SQL查询语句的作业完成后，查看该作业执行的结果。目前仅支持查看“QUERY”类型作业的执行结果。该API只能查看前1000条的结果记录，若要查看全部的结果记录，需要先导出查询结果再进行查看。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDataset
@@ -3337,8 +3286,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         检查离线作业SQL语法。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ValidateSql
@@ -3399,8 +3347,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         创建离线作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateBatchJob
@@ -3461,8 +3408,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         删除离线作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteBatchJob
@@ -3523,8 +3469,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         查询离线作业列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListBatchJobs
@@ -3597,8 +3542,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         查询离线作业详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowBatchJob
@@ -3659,8 +3603,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         修改离线作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateBatchJob
@@ -3723,8 +3666,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         执行离线作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateRun
@@ -3787,8 +3729,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         停止提交中或运行中的离线作业，若作业已经执行结束或失败则无法停止。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteRun
@@ -3851,8 +3792,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         查询离线作业运行列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRuns
@@ -3933,8 +3873,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         查询离线作业运行详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowRun
@@ -3999,8 +3938,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         创建离线数据表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateTable
@@ -4061,8 +3999,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         删除离线数据表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteTable
@@ -4123,8 +4060,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         查询离线数据表列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTables
@@ -4195,8 +4131,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         预览离线数据表内容。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTablePreview
@@ -4257,8 +4192,7 @@ class IoTAnalyticsAsyncClient(Client):
 
         查询离线数据表结构。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTableSchema

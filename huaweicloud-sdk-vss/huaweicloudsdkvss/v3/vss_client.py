@@ -47,8 +47,7 @@ class VssClient(Client):
 
         认证租户的域名资产
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AuthorizeDomains
         :type request: :class:`huaweicloudsdkvss.v3.AuthorizeDomainsRequest`
@@ -108,8 +107,7 @@ class VssClient(Client):
 
         创建租户的域名资产
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDomains
         :type request: :class:`huaweicloudsdkvss.v3.CreateDomainsRequest`
@@ -169,8 +167,7 @@ class VssClient(Client):
 
         删除租户的域名资产
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDomains
         :type request: :class:`huaweicloudsdkvss.v3.DeleteDomainsRequest`
@@ -230,8 +227,7 @@ class VssClient(Client):
 
         获取租户的所有域名资产
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDomains
         :type request: :class:`huaweicloudsdkvss.v3.ListDomainsRequest`
@@ -297,8 +293,7 @@ class VssClient(Client):
 
         获取域名登录配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDomainSettings
         :type request: :class:`huaweicloudsdkvss.v3.ShowDomainSettingsRequest`
@@ -358,8 +353,7 @@ class VssClient(Client):
 
         更新域名登录配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDomainSettings
         :type request: :class:`huaweicloudsdkvss.v3.UpdateDomainSettingsRequest`
@@ -419,8 +413,7 @@ class VssClient(Client):
 
         下载域名扫描任务PDF报告
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DownloadTaskReport
         :type request: :class:`huaweicloudsdkvss.v3.DownloadTaskReportRequest`
@@ -480,8 +473,7 @@ class VssClient(Client):
 
         生成域名扫描PDF报告
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExecuteGenerateReport
         :type request: :class:`huaweicloudsdkvss.v3.ExecuteGenerateReportRequest`
@@ -541,8 +533,7 @@ class VssClient(Client):
 
         获取域名业务风险扫描结果
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListBusinessRisks
         :type request: :class:`huaweicloudsdkvss.v3.ListBusinessRisksRequest`
@@ -606,8 +597,7 @@ class VssClient(Client):
 
         获取域名端口扫描结果
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPortResults
         :type request: :class:`huaweicloudsdkvss.v3.ListPortResultsRequest`
@@ -671,8 +661,7 @@ class VssClient(Client):
 
         获取域名扫描PDF报告生成状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowReportStatus
         :type request: :class:`huaweicloudsdkvss.v3.ShowReportStatusRequest`
@@ -732,8 +721,7 @@ class VssClient(Client):
 
         获取域名漏洞扫描结果
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowResults
         :type request: :class:`huaweicloudsdkvss.v3.ShowResultsRequest`
@@ -797,8 +785,7 @@ class VssClient(Client):
 
         更新域名扫描漏洞的误报状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateFalsePositive
         :type request: :class:`huaweicloudsdkvss.v3.UpdateFalsePositiveRequest`
@@ -858,8 +845,7 @@ class VssClient(Client):
 
         取消或重启域名漏洞扫描任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CancelTasks
         :type request: :class:`huaweicloudsdkvss.v3.CancelTasksRequest`
@@ -919,8 +905,7 @@ class VssClient(Client):
 
         创建域名漏洞扫描任务并启动
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateTasks
         :type request: :class:`huaweicloudsdkvss.v3.CreateTasksRequest`
@@ -982,8 +967,7 @@ class VssClient(Client):
 
         获取域名漏洞扫描的历史扫描任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTaskHistories
         :type request: :class:`huaweicloudsdkvss.v3.ListTaskHistoriesRequest`
@@ -1047,8 +1031,7 @@ class VssClient(Client):
 
         获取域名漏洞扫描任务详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTasks
         :type request: :class:`huaweicloudsdkvss.v3.ShowTasksRequest`

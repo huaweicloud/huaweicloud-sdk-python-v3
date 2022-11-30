@@ -47,8 +47,7 @@ class RomaClient(Client):
 
         添加子设备到网关
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddSubsetsToGateway
         :type request: :class:`huaweicloudsdkroma.v2.AddSubsetsToGatewayRequest`
@@ -112,8 +111,7 @@ class RomaClient(Client):
 
         客户端配额绑定客户端应用列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AssociateAppsForAppQuota
         :type request: :class:`huaweicloudsdkroma.v2.AssociateAppsForAppQuotaRequest`
@@ -178,8 +176,7 @@ class RomaClient(Client):
         如果创建API时，“定义API请求”使用HTTPS请求协议，那么在独立域名中需要添加SSL证书。
         本章节主要介绍为特定域名绑定证书。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AssociateCertificateV2
         :type request: :class:`huaweicloudsdkroma.v2.AssociateCertificateV2Request`
@@ -245,8 +242,7 @@ class RomaClient(Client):
 
         用户自定义的域名，需要CNAME到API分组的子域名上才能生效。 每个API分组下最多可绑定5个域名。绑定域名后，用户可通过自定义域名调用API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AssociateDomainV2
         :type request: :class:`huaweicloudsdkroma.v2.AssociateDomainV2Request`
@@ -314,8 +310,7 @@ class RomaClient(Client):
         
         将指定的签名密钥绑定到一个或多个已发布的API上。同一个API发布到不同的环境可以绑定不同的签名密钥；一个API在发布到特定环境后只能绑定一个签名密钥。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AssociateSignatureKeyV2
         :type request: :class:`huaweicloudsdkroma.v2.AssociateSignatureKeyV2Request`
@@ -377,8 +372,7 @@ class RomaClient(Client):
 
         批量添加设备到设备分组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchAddDeviceToGroup
         :type request: :class:`huaweicloudsdkroma.v2.BatchAddDeviceToGroupRequest`
@@ -442,8 +436,7 @@ class RomaClient(Client):
 
         批量删除设备
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteDevices
         :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteDevicesRequest`
@@ -505,8 +498,7 @@ class RomaClient(Client):
 
         批量删除Topic。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteMqsInstanceTopic
         :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteMqsInstanceTopicRequest`
@@ -568,8 +560,7 @@ class RomaClient(Client):
 
         批量删除规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteRules
         :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteRulesRequest`
@@ -631,8 +622,7 @@ class RomaClient(Client):
 
         设备批量下线
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchFreezeDevices
         :type request: :class:`huaweicloudsdkroma.v2.BatchFreezeDevicesRequest`
@@ -694,8 +684,7 @@ class RomaClient(Client):
 
         批量启动\\停止任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchStartOrStopTasks
         :type request: :class:`huaweicloudsdkroma.v2.BatchStartOrStopTasksRequest`
@@ -757,8 +746,7 @@ class RomaClient(Client):
 
         校验自定义后端API定义。校验自定义后端API的路径或名称是否已存在
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckLivedataApisV2
         :type request: :class:`huaweicloudsdkroma.v2.CheckLivedataApisV2Request`
@@ -820,8 +808,7 @@ class RomaClient(Client):
 
         设备数量统计
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CountDevices
         :type request: :class:`huaweicloudsdkroma.v2.CountDevicesRequest`
@@ -881,8 +868,7 @@ class RomaClient(Client):
 
         统计不同类型不同状态任务数量
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CountTasks
         :type request: :class:`huaweicloudsdkroma.v2.CountTasksRequest`
@@ -942,8 +928,7 @@ class RomaClient(Client):
 
         创建App Code时，可以不指定具体值，由后台自动生成随机字符串填充。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAppCodeAutoV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateAppCodeAutoV2Request`
@@ -1005,8 +990,7 @@ class RomaClient(Client):
 
         App Code为APP应用下的子模块，创建App Code之后，可以实现简易的APP认证。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAppCodeV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateAppCodeV2Request`
@@ -1070,8 +1054,7 @@ class RomaClient(Client):
 
         创建应用配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAppConfigV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateAppConfigV2Request`
@@ -1135,8 +1118,7 @@ class RomaClient(Client):
 
         创建客户端配额
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAppQuota
         :type request: :class:`huaweicloudsdkroma.v2.CreateAppQuotaRequest`
@@ -1198,8 +1180,7 @@ class RomaClient(Client):
 
         创建命令
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateCommand
         :type request: :class:`huaweicloudsdkroma.v2.CreateCommandRequest`
@@ -1263,8 +1244,7 @@ class RomaClient(Client):
 
         创建普通任务(区别于组合任务)
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateCommonTask
         :type request: :class:`huaweicloudsdkroma.v2.CreateCommonTaskRequest`
@@ -1326,8 +1306,7 @@ class RomaClient(Client):
 
         创建自定义认证
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateCustomAuthorizerV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateCustomAuthorizerV2Request`
@@ -1389,8 +1368,7 @@ class RomaClient(Client):
 
         创建数据源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDatasourceInfo
         :type request: :class:`huaweicloudsdkroma.v2.CreateDatasourceInfoRequest`
@@ -1452,8 +1430,7 @@ class RomaClient(Client):
 
         添加目标数据源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDestination
         :type request: :class:`huaweicloudsdkroma.v2.CreateDestinationRequest`
@@ -1517,8 +1494,7 @@ class RomaClient(Client):
 
         创建设备
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDevice
         :type request: :class:`huaweicloudsdkroma.v2.CreateDeviceRequest`
@@ -1580,8 +1556,7 @@ class RomaClient(Client):
 
         创建设备分组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDeviceGroup
         :type request: :class:`huaweicloudsdkroma.v2.CreateDeviceGroupRequest`
@@ -1643,8 +1618,7 @@ class RomaClient(Client):
 
         创建调度计划
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDispatches
         :type request: :class:`huaweicloudsdkroma.v2.CreateDispatchesRequest`
@@ -1712,8 +1686,7 @@ class RomaClient(Client):
         
         为此，ROMA Connect APIC提供多环境管理功能，使租户能够最大化的模拟实际场景，低成本的接入ROMA Connect APIC。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateEnvironmentV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateEnvironmentV2Request`
@@ -1783,8 +1756,7 @@ class RomaClient(Client):
           3.设置了环境变量后，使用到该变量的API的调试功能将不可使用。
           4.定义了环境变量后，使用到环境变量的地方应该以对称的#标识环境变量，当API发布到相应的环境后，会对环境变量的值进行替换，如：定义的API的URL为：https://#address#:8080，环境变量address在RELEASE环境上的值为：192.168.1.5，则API发布到RELEASE环境后的真实的URL为：https://192.168.1.5:8080。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateEnvironmentVariableV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateEnvironmentVariableV2Request`
@@ -1848,8 +1820,7 @@ class RomaClient(Client):
         
         支持配置的特性列表及特性配置请参考“附录 &gt; 实例支持的APIC特性”
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateFeatureV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateFeatureV2Request`
@@ -1911,8 +1882,7 @@ class RomaClient(Client):
 
         在某个实例中创建后端API脚本。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateLiveDataApiScriptV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateLiveDataApiScriptV2Request`
@@ -1976,8 +1946,7 @@ class RomaClient(Client):
 
         在某个实例中创建后端API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateLiveDataApiV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateLiveDataApiV2Request`
@@ -2039,8 +2008,7 @@ class RomaClient(Client):
 
         创建Topic。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateMqsInstanceTopic
         :type request: :class:`huaweicloudsdkroma.v2.CreateMqsInstanceTopicRequest`
@@ -2102,8 +2070,7 @@ class RomaClient(Client):
 
         创建组合任务映射
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateMultiTaskMappings
         :type request: :class:`huaweicloudsdkroma.v2.CreateMultiTaskMappingsRequest`
@@ -2167,8 +2134,7 @@ class RomaClient(Client):
 
         创建组合任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateMultiTasks
         :type request: :class:`huaweicloudsdkroma.v2.CreateMultiTasksRequest`
@@ -2230,8 +2196,7 @@ class RomaClient(Client):
 
         该接口用于创建指定实例下对应的应用下的设备操作，订阅到指定的topic
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateNotification
         :type request: :class:`huaweicloudsdkroma.v2.CreateNotificationRequest`
@@ -2293,8 +2258,7 @@ class RomaClient(Client):
 
         创建产品
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateProduct
         :type request: :class:`huaweicloudsdkroma.v2.CreateProductRequest`
@@ -2356,8 +2320,7 @@ class RomaClient(Client):
 
         创建产品模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateProductTemplate
         :type request: :class:`huaweicloudsdkroma.v2.CreateProductTemplateRequest`
@@ -2419,8 +2382,7 @@ class RomaClient(Client):
 
         添加产品主题
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateProductTopic
         :type request: :class:`huaweicloudsdkroma.v2.CreateProductTopicRequest`
@@ -2484,8 +2446,7 @@ class RomaClient(Client):
 
         创建属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateProperty
         :type request: :class:`huaweicloudsdkroma.v2.CreatePropertyRequest`
@@ -2549,8 +2510,7 @@ class RomaClient(Client):
 
         创建请求属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateRequestProperty
         :type request: :class:`huaweicloudsdkroma.v2.CreateRequestPropertyRequest`
@@ -2616,8 +2576,7 @@ class RomaClient(Client):
 
         当API上线后，系统会默认给每个API提供一个流控策略，API提供者可以根据自身API的服务能力及负载情况变更这个流控策略。 流控策略即限制API在一定长度的时间内，能够允许被访问的最大次数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateRequestThrottlingPolicyV2Request`
@@ -2679,8 +2638,7 @@ class RomaClient(Client):
 
         创建响应属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateResponseProperty
         :type request: :class:`huaweicloudsdkroma.v2.CreateResponsePropertyRequest`
@@ -2746,8 +2704,7 @@ class RomaClient(Client):
 
         创建规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateRule
         :type request: :class:`huaweicloudsdkroma.v2.CreateRuleRequest`
@@ -2809,8 +2766,7 @@ class RomaClient(Client):
 
         创建服务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateService
         :type request: :class:`huaweicloudsdkroma.v2.CreateServiceRequest`
@@ -2876,8 +2832,7 @@ class RomaClient(Client):
         
         租户创建一个签名密钥，并将签名密钥与API进行绑定，则ROMA Connect APIC在请求这个API时，就会使用绑定的签名密钥对请求参数进行数据加密，生成签名。当租户的后端服务收到请求时，可以校验这个签名，如果签名校验不通过，则该请求不是ROMA Connect APIC发出的请求，租户可以拒绝这个请求，从而保证API的安全性，避免API被未知来源的请求攻击。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateSignatureKeyV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateSignatureKeyV2Request`
@@ -2939,8 +2894,7 @@ class RomaClient(Client):
 
         添加源数据源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateSource
         :type request: :class:`huaweicloudsdkroma.v2.CreateSourceRequest`
@@ -3008,8 +2962,7 @@ class RomaClient(Client):
         
         为流控策略添加一个特殊设置的对象，可以是APP，也可以是租户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateSpecialThrottlingConfigurationV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateSpecialThrottlingConfigurationV2Request`
@@ -3073,8 +3026,7 @@ class RomaClient(Client):
 
         测试后端API是否可用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DebugLiveDataApiV2
         :type request: :class:`huaweicloudsdkroma.v2.DebugLiveDataApiV2Request`
@@ -3138,8 +3090,7 @@ class RomaClient(Client):
 
         规则调试
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DebugRule
         :type request: :class:`huaweicloudsdkroma.v2.DebugRuleRequest`
@@ -3201,8 +3152,7 @@ class RomaClient(Client):
 
         删除客户端配置的访问控制信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAppAcl
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAppAclRequest`
@@ -3264,8 +3214,7 @@ class RomaClient(Client):
 
         删除App Code，App Code删除后，将无法再通过简易认证访问对应的API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAppCodeV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAppCodeV2Request`
@@ -3329,8 +3278,7 @@ class RomaClient(Client):
 
         删除应用配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAppConfigV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAppConfigV2Request`
@@ -3394,8 +3342,7 @@ class RomaClient(Client):
 
         删除客户端配额。删除客户端配额时，同时删除客户端配额和客户端应用的关联关系
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAppQuota
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAppQuotaRequest`
@@ -3457,8 +3404,7 @@ class RomaClient(Client):
 
         删除命令
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteCommand
         :type request: :class:`huaweicloudsdkroma.v2.DeleteCommandRequest`
@@ -3522,8 +3468,7 @@ class RomaClient(Client):
 
         删除自定义认证
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteCustomAuthorizerV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteCustomAuthorizerV2Request`
@@ -3585,8 +3530,7 @@ class RomaClient(Client):
 
         通过数据源Id删除指定数据源信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDatasourceInfoById
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDatasourceInfoByIdRequest`
@@ -3648,8 +3592,7 @@ class RomaClient(Client):
 
         删除目标数据源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDestination
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDestinationRequest`
@@ -3713,8 +3656,7 @@ class RomaClient(Client):
 
         删除指定设备ID的设备
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDevice
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDeviceRequest`
@@ -3776,8 +3718,7 @@ class RomaClient(Client):
 
         删除设备分组内的设备
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDeviceFromGroup
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDeviceFromGroupRequest`
@@ -3841,8 +3782,7 @@ class RomaClient(Client):
 
         删除分组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDeviceGroup
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDeviceGroupRequest`
@@ -3905,8 +3845,7 @@ class RomaClient(Client):
         删除指定的环境。
         该操作将导致此API在指定的环境无法被访问，可能会影响相当一部分应用和用户。请确保已经告知用户，或者确认需要强制下线。环境上存在已发布的API时，该环境不能被删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteEnvironmentV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteEnvironmentV2Request`
@@ -3968,8 +3907,7 @@ class RomaClient(Client):
 
         删除指定的环境变量。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteEnvironmentVariableV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteEnvironmentVariableV2Request`
@@ -4031,8 +3969,7 @@ class RomaClient(Client):
 
         在某个实例中删除后端API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteLiveDataApiV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteLiveDataApiV2Request`
@@ -4094,8 +4031,7 @@ class RomaClient(Client):
 
         删除Topic。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteMqsInstanceTopic
         :type request: :class:`huaweicloudsdkroma.v2.DeleteMqsInstanceTopicRequest`
@@ -4157,8 +4093,7 @@ class RomaClient(Client):
 
         通过映射ID删除指定任务映射
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteMultiTaskMapping
         :type request: :class:`huaweicloudsdkroma.v2.DeleteMultiTaskMappingRequest`
@@ -4222,8 +4157,7 @@ class RomaClient(Client):
 
         该接口用于删除指定订阅管理
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteNotification
         :type request: :class:`huaweicloudsdkroma.v2.DeleteNotificationRequest`
@@ -4285,8 +4219,7 @@ class RomaClient(Client):
 
         删除产品
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteProduct
         :type request: :class:`huaweicloudsdkroma.v2.DeleteProductRequest`
@@ -4348,8 +4281,7 @@ class RomaClient(Client):
 
         删除产品模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteProductTemplate
         :type request: :class:`huaweicloudsdkroma.v2.DeleteProductTemplateRequest`
@@ -4411,8 +4343,7 @@ class RomaClient(Client):
 
         删除产品主题
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteProductTopic
         :type request: :class:`huaweicloudsdkroma.v2.DeleteProductTopicRequest`
@@ -4476,8 +4407,7 @@ class RomaClient(Client):
 
         删除服务属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteProperty
         :type request: :class:`huaweicloudsdkroma.v2.DeletePropertyRequest`
@@ -4541,8 +4471,7 @@ class RomaClient(Client):
 
         删除请求属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteRequestProperty
         :type request: :class:`huaweicloudsdkroma.v2.DeleteRequestPropertyRequest`
@@ -4608,8 +4537,7 @@ class RomaClient(Client):
 
         删除指定的流控策略。当该流控策略绑定了API时，需要先解除流控策略与API的所有绑定关系后再删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteRequestThrottlingPolicyV2Request`
@@ -4671,8 +4599,7 @@ class RomaClient(Client):
 
         删除响应属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteResponseProperty
         :type request: :class:`huaweicloudsdkroma.v2.DeleteResponsePropertyRequest`
@@ -4738,8 +4665,7 @@ class RomaClient(Client):
 
         删除规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteRule
         :type request: :class:`huaweicloudsdkroma.v2.DeleteRuleRequest`
@@ -4801,8 +4727,7 @@ class RomaClient(Client):
 
         删除服务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteService
         :type request: :class:`huaweicloudsdkroma.v2.DeleteServiceRequest`
@@ -4864,8 +4789,7 @@ class RomaClient(Client):
 
         删除指定的签名密钥。签名密钥绑定了API时无法删除，需要先解除与API的绑定关系后删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteSignatureKeyV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteSignatureKeyV2Request`
@@ -4927,8 +4851,7 @@ class RomaClient(Client):
 
         删除源数据源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteSource
         :type request: :class:`huaweicloudsdkroma.v2.DeleteSourceRequest`
@@ -4992,8 +4915,7 @@ class RomaClient(Client):
 
         删除某个流控策略的某个特殊配置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteSpecialThrottlingConfigurationV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteSpecialThrottlingConfigurationV2Request`
@@ -5057,8 +4979,7 @@ class RomaClient(Client):
 
         通过任务ID删除指定任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteTask
         :type request: :class:`huaweicloudsdkroma.v2.DeleteTaskRequest`
@@ -5120,8 +5041,7 @@ class RomaClient(Client):
 
         解除客户端配额和客户端应用的绑定
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DisassociateAppQuotaWithApp
         :type request: :class:`huaweicloudsdkroma.v2.DisassociateAppQuotaWithAppRequest`
@@ -5185,8 +5105,7 @@ class RomaClient(Client):
 
         如果域名证书不再需要或者已过期，则可以删除证书内容。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DisassociateCertificateV2
         :type request: :class:`huaweicloudsdkroma.v2.DisassociateCertificateV2Request`
@@ -5252,8 +5171,7 @@ class RomaClient(Client):
 
         如果API分组不再需要绑定某个自定义域名，则可以为此API分组解绑此域名。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DisassociateDomainV2
         :type request: :class:`huaweicloudsdkroma.v2.DisassociateDomainV2Request`
@@ -5317,8 +5235,7 @@ class RomaClient(Client):
 
         解除API与签名密钥的绑定关系。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DisassociateSignatureKeyV2
         :type request: :class:`huaweicloudsdkroma.v2.DisassociateSignatureKeyV2Request`
@@ -5380,8 +5297,7 @@ class RomaClient(Client):
 
         导出产品
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DownloadProducts
         :type request: :class:`huaweicloudsdkroma.v2.DownloadProductsRequest`
@@ -5444,8 +5360,7 @@ class RomaClient(Client):
 
         导出Topic。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExportMqsInstanceTopic
         :type request: :class:`huaweicloudsdkroma.v2.ExportMqsInstanceTopicRequest`
@@ -5507,8 +5422,7 @@ class RomaClient(Client):
 
         导入Topic。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ImportMqsInstanceTopic
         :type request: :class:`huaweicloudsdkroma.v2.ImportMqsInstanceTopicRequest`
@@ -5576,8 +5490,7 @@ class RomaClient(Client):
 
         初始化组合任务，分配任务ID，初始化映射等
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for InstallMultiTasks
         :type request: :class:`huaweicloudsdkroma.v2.InstallMultiTasksRequest`
@@ -5639,8 +5552,7 @@ class RomaClient(Client):
 
         查询某个签名密钥上已经绑定的API列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApisBindedToSignatureKeyV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApisBindedToSignatureKeyV2Request`
@@ -5714,8 +5626,7 @@ class RomaClient(Client):
 
         查询所有未绑定到该签名密钥上的API列表。需要API已经发布，未发布的API不予展示。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApisNotBoundWithSignatureKeyV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApisNotBoundWithSignatureKeyV2Request`
@@ -5789,8 +5700,7 @@ class RomaClient(Client):
 
         查询App Code列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAppCodesV2
         :type request: :class:`huaweicloudsdkroma.v2.ListAppCodesV2Request`
@@ -5856,8 +5766,7 @@ class RomaClient(Client):
 
         查询应用配置列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAppConfigsV2
         :type request: :class:`huaweicloudsdkroma.v2.ListAppConfigsV2Request`
@@ -5927,8 +5836,7 @@ class RomaClient(Client):
 
         查询客户端配额可绑定的客户端应用列表。支持按客户端应用名称模糊搜索
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAppQuotaBindableApps
         :type request: :class:`huaweicloudsdkroma.v2.ListAppQuotaBindableAppsRequest`
@@ -5996,8 +5904,7 @@ class RomaClient(Client):
 
         查询客户端配额已绑定的客户端应用列表。支持按客户端应用名称模糊匹配
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAppQuotaBoundApps
         :type request: :class:`huaweicloudsdkroma.v2.ListAppQuotaBoundAppsRequest`
@@ -6065,8 +5972,7 @@ class RomaClient(Client):
 
         获取客户端配额列表。支持根据名称模糊查询
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAppQuotas
         :type request: :class:`huaweicloudsdkroma.v2.ListAppQuotasRequest`
@@ -6132,8 +6038,7 @@ class RomaClient(Client):
 
         查询APP列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAppsV2
         :type request: :class:`huaweicloudsdkroma.v2.ListAppsV2Request`
@@ -6207,8 +6112,7 @@ class RomaClient(Client):
 
         查询命令
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCommands
         :type request: :class:`huaweicloudsdkroma.v2.ListCommandsRequest`
@@ -6278,8 +6182,7 @@ class RomaClient(Client):
 
         查询自定义认证列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCustomAuthorizersV2
         :type request: :class:`huaweicloudsdkroma.v2.ListCustomAuthorizersV2Request`
@@ -6349,8 +6252,7 @@ class RomaClient(Client):
 
         获取数据源中中某个表中所有字段
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDatasourceColumns
         :type request: :class:`huaweicloudsdkroma.v2.ListDatasourceColumnsRequest`
@@ -6418,8 +6320,7 @@ class RomaClient(Client):
 
         获取数据源中所有的表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDatasourceTables
         :type request: :class:`huaweicloudsdkroma.v2.ListDatasourceTablesRequest`
@@ -6489,8 +6390,7 @@ class RomaClient(Client):
 
         查询数据源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDatasources
         :type request: :class:`huaweicloudsdkroma.v2.ListDatasourcesRequest`
@@ -6566,8 +6466,7 @@ class RomaClient(Client):
 
         查询目标数据源列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDestinations
         :type request: :class:`huaweicloudsdkroma.v2.ListDestinationsRequest`
@@ -6633,8 +6532,7 @@ class RomaClient(Client):
 
         查询设备
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDevices
         :type request: :class:`huaweicloudsdkroma.v2.ListDevicesRequest`
@@ -6720,8 +6618,7 @@ class RomaClient(Client):
 
         查询产品内设备数量
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDevicesInProduct
         :type request: :class:`huaweicloudsdkroma.v2.ListDevicesInProductRequest`
@@ -6783,8 +6680,7 @@ class RomaClient(Client):
 
         查询分组下的所有环境变量的列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEnvironmentVariablesV2
         :type request: :class:`huaweicloudsdkroma.v2.ListEnvironmentVariablesV2Request`
@@ -6856,8 +6752,7 @@ class RomaClient(Client):
 
         查询符合条件的环境列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListEnvironmentsV2
         :type request: :class:`huaweicloudsdkroma.v2.ListEnvironmentsV2Request`
@@ -6925,8 +6820,7 @@ class RomaClient(Client):
         
         支持配置的特性列表及特性配置请参考“附录 &gt; 实例支持的APIC特性”
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListFeaturesV2
         :type request: :class:`huaweicloudsdkroma.v2.ListFeaturesV2Request`
@@ -6991,8 +6885,7 @@ class RomaClient(Client):
         根据API的id和最近的一段时间查询API被调用的次数，统计周期为1分钟。查询范围一小时以内，一分钟一个样本，其样本值为一分钟内的累计值。
         &gt; 为了安全起见，在服务器上使用curl命令调用接口查询信息后，需要清理历史操作记录，包括但不限于“~/.bash_history”、“/var/log/messages”（如有）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListLatelyApiStatisticsV2
         :type request: :class:`huaweicloudsdkroma.v2.ListLatelyApiStatisticsV2Request`
@@ -7056,8 +6949,7 @@ class RomaClient(Client):
 
         在某个实例中查询后端API的部署记录。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListLiveDataApiDeploymentHistoryV2
         :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataApiDeploymentHistoryV2Request`
@@ -7119,8 +7011,7 @@ class RomaClient(Client):
 
         在某个实例中查询后端API的测试结果。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListLiveDataApiTestHistoryV2
         :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataApiTestHistoryV2Request`
@@ -7186,8 +7077,7 @@ class RomaClient(Client):
 
         获取某个实例下的所有后端API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListLiveDataApiV2
         :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataApiV2Request`
@@ -7263,8 +7153,7 @@ class RomaClient(Client):
 
         查询自定义后端服务数据源列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListLiveDataDataSourcesV2
         :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataDataSourcesV2Request`
@@ -7332,8 +7221,7 @@ class RomaClient(Client):
 
         查询自定义后端服务配额。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListLiveDataQuotaV2
         :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataQuotaV2Request`
@@ -7393,8 +7281,7 @@ class RomaClient(Client):
 
         查询所有任务的监控信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListMonitorInfos
         :type request: :class:`huaweicloudsdkroma.v2.ListMonitorInfosRequest`
@@ -7462,8 +7349,7 @@ class RomaClient(Client):
 
         查询单个任务的所有日志信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListMonitorLog
         :type request: :class:`huaweicloudsdkroma.v2.ListMonitorLogRequest`
@@ -7533,8 +7419,7 @@ class RomaClient(Client):
 
         查询Topic列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListMqsInstanceTopics
         :type request: :class:`huaweicloudsdkroma.v2.ListMqsInstanceTopicsRequest`
@@ -7604,8 +7489,7 @@ class RomaClient(Client):
 
         该接口用于查询指定应用订阅管理信息的数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListNotification
         :type request: :class:`huaweicloudsdkroma.v2.ListNotificationRequest`
@@ -7671,8 +7555,7 @@ class RomaClient(Client):
 
         查询产品模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProductTemplates
         :type request: :class:`huaweicloudsdkroma.v2.ListProductTemplatesRequest`
@@ -7748,8 +7631,7 @@ class RomaClient(Client):
 
         查询产品主题
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProductTopics
         :type request: :class:`huaweicloudsdkroma.v2.ListProductTopicsRequest`
@@ -7815,8 +7697,7 @@ class RomaClient(Client):
 
         查询产品
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProducts
         :type request: :class:`huaweicloudsdkroma.v2.ListProductsRequest`
@@ -7908,8 +7789,7 @@ class RomaClient(Client):
 
         查询某个实例的租户配置列表，用户可以通过此接口查看各类型资源配置及使用情况。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProjectCofigsV2
         :type request: :class:`huaweicloudsdkroma.v2.ListProjectCofigsV2Request`
@@ -7973,8 +7853,7 @@ class RomaClient(Client):
 
         查询属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProperties
         :type request: :class:`huaweicloudsdkroma.v2.ListPropertiesRequest`
@@ -8044,8 +7923,7 @@ class RomaClient(Client):
 
         查询请求属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRequestProperties
         :type request: :class:`huaweicloudsdkroma.v2.ListRequestPropertiesRequest`
@@ -8117,8 +7995,7 @@ class RomaClient(Client):
 
         查询所有流控策略的信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.ListRequestThrottlingPolicyV2Request`
@@ -8188,8 +8065,7 @@ class RomaClient(Client):
 
         查询响应属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListResponseProperties
         :type request: :class:`huaweicloudsdkroma.v2.ListResponsePropertiesRequest`
@@ -8261,8 +8137,7 @@ class RomaClient(Client):
 
         查询规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRules
         :type request: :class:`huaweicloudsdkroma.v2.ListRulesRequest`
@@ -8330,8 +8205,7 @@ class RomaClient(Client):
 
         查询服务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListServices
         :type request: :class:`huaweicloudsdkroma.v2.ListServicesRequest`
@@ -8409,8 +8283,7 @@ class RomaClient(Client):
 
         查询设备影子
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListShadows
         :type request: :class:`huaweicloudsdkroma.v2.ListShadowsRequest`
@@ -8472,8 +8345,7 @@ class RomaClient(Client):
 
         查询某个API绑定的签名密钥列表。每个API在每个环境上应该最多只会绑定一个签名密钥。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSignatureKeysBindedToApiV2
         :type request: :class:`huaweicloudsdkroma.v2.ListSignatureKeysBindedToApiV2Request`
@@ -8545,8 +8417,7 @@ class RomaClient(Client):
 
         查询所有签名密钥的信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSignatureKeysV2
         :type request: :class:`huaweicloudsdkroma.v2.ListSignatureKeysV2Request`
@@ -8616,8 +8487,7 @@ class RomaClient(Client):
 
         查询源数据源列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSources
         :type request: :class:`huaweicloudsdkroma.v2.ListSourcesRequest`
@@ -8683,8 +8553,7 @@ class RomaClient(Client):
 
         查看给流控策略设置的特殊配置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSpecialThrottlingConfigurationsV2
         :type request: :class:`huaweicloudsdkroma.v2.ListSpecialThrottlingConfigurationsV2Request`
@@ -8754,8 +8623,7 @@ class RomaClient(Client):
 
         查询某个实例下的API统计信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListStatisticsApi
         :type request: :class:`huaweicloudsdkroma.v2.ListStatisticsApiRequest`
@@ -8829,8 +8697,7 @@ class RomaClient(Client):
 
         查询子设备
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSubsets
         :type request: :class:`huaweicloudsdkroma.v2.ListSubsetsRequest`
@@ -8902,8 +8769,7 @@ class RomaClient(Client):
 
         查询标签列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTagsV2
         :type request: :class:`huaweicloudsdkroma.v2.ListTagsV2Request`
@@ -8967,8 +8833,7 @@ class RomaClient(Client):
 
         查询任务列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTasks
         :type request: :class:`huaweicloudsdkroma.v2.ListTasksRequest`
@@ -9056,8 +8921,7 @@ class RomaClient(Client):
 
         查询设备主题
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTopics
         :type request: :class:`huaweicloudsdkroma.v2.ListTopicsRequest`
@@ -9131,8 +8995,7 @@ class RomaClient(Client):
 
         在某个实例中部署后端API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for PublishLiveDataApiV2
         :type request: :class:`huaweicloudsdkroma.v2.PublishLiveDataApiV2Request`
@@ -9196,8 +9059,7 @@ class RomaClient(Client):
 
         重置设备鉴权信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ResetAuthentication
         :type request: :class:`huaweicloudsdkroma.v2.ResetAuthenticationRequest`
@@ -9261,8 +9123,7 @@ class RomaClient(Client):
 
         重发消息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ResetMessages
         :type request: :class:`huaweicloudsdkroma.v2.ResetMessagesRequest`
@@ -9326,8 +9187,7 @@ class RomaClient(Client):
 
         重置组合任务进度
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ResetMultiTaskOffset
         :type request: :class:`huaweicloudsdkroma.v2.ResetMultiTaskOffsetRequest`
@@ -9391,8 +9251,7 @@ class RomaClient(Client):
 
         重置产品鉴权信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ResetProductAuthentication
         :type request: :class:`huaweicloudsdkroma.v2.ResetProductAuthenticationRequest`
@@ -9456,8 +9315,7 @@ class RomaClient(Client):
 
         手工触发一次任务调度
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RunTask
         :type request: :class:`huaweicloudsdkroma.v2.RunTaskRequest`
@@ -9519,8 +9377,7 @@ class RomaClient(Client):
 
         发送命令
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SendCommand
         :type request: :class:`huaweicloudsdkroma.v2.SendCommandRequest`
@@ -9584,8 +9441,7 @@ class RomaClient(Client):
 
         查看指定客户端应用关联的应用配额。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAppBoundAppQuota
         :type request: :class:`huaweicloudsdkroma.v2.ShowAppBoundAppQuotaRequest`
@@ -9647,8 +9503,7 @@ class RomaClient(Client):
 
         获取客户端配额详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAppQuota
         :type request: :class:`huaweicloudsdkroma.v2.ShowAppQuotaRequest`
@@ -9710,8 +9565,7 @@ class RomaClient(Client):
 
         查询设备鉴权信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAuthentication
         :type request: :class:`huaweicloudsdkroma.v2.ShowAuthenticationRequest`
@@ -9773,8 +9627,7 @@ class RomaClient(Client):
 
         查询命令详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowCommand
         :type request: :class:`huaweicloudsdkroma.v2.ShowCommandRequest`
@@ -9838,8 +9691,7 @@ class RomaClient(Client):
 
         根据数据源id查询数据源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDataourceDetail
         :type request: :class:`huaweicloudsdkroma.v2.ShowDataourceDetailRequest`
@@ -9901,8 +9753,7 @@ class RomaClient(Client):
 
         查看APP的访问控制详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfAppAcl
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppAclRequest`
@@ -9964,8 +9815,7 @@ class RomaClient(Client):
 
         App Code为APP应用下的子模块，创建App Code之后，可以实现简易的APP认证。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfAppCodeV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppCodeV2Request`
@@ -10029,8 +9879,7 @@ class RomaClient(Client):
 
         查看应用配置详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfAppConfigV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppConfigV2Request`
@@ -10094,8 +9943,7 @@ class RomaClient(Client):
 
         查看指定APP的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfAppV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppV2Request`
@@ -10157,8 +10005,7 @@ class RomaClient(Client):
 
         查看自定义认证详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfCustomAuthorizersV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfCustomAuthorizersV2Request`
@@ -10220,8 +10067,7 @@ class RomaClient(Client):
 
         查看域名下绑定的证书详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfDomainNameCertificateV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfDomainNameCertificateV2Request`
@@ -10287,8 +10133,7 @@ class RomaClient(Client):
 
         查看指定的环境变量的详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfEnvironmentVariableV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfEnvironmentVariableV2Request`
@@ -10350,8 +10195,7 @@ class RomaClient(Client):
 
         查看ROMA Connect实例详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfInstanceV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfInstanceV2Request`
@@ -10411,8 +10255,7 @@ class RomaClient(Client):
 
         查看指定流控策略的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfRequestThrottlingPolicyV2Request`
@@ -10474,8 +10317,7 @@ class RomaClient(Client):
 
         查询设备详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDevice
         :type request: :class:`huaweicloudsdkroma.v2.ShowDeviceRequest`
@@ -10537,8 +10379,7 @@ class RomaClient(Client):
 
         获取设备分组及下一层分组信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDeviceGroup
         :type request: :class:`huaweicloudsdkroma.v2.ShowDeviceGroupRequest`
@@ -10600,8 +10441,7 @@ class RomaClient(Client):
 
         查询所有设备分组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDeviceGroupTree
         :type request: :class:`huaweicloudsdkroma.v2.ShowDeviceGroupTreeRequest`
@@ -10663,8 +10503,7 @@ class RomaClient(Client):
 
         查询设备分组内设备
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDevicesInGroup
         :type request: :class:`huaweicloudsdkroma.v2.ShowDevicesInGroupRequest`
@@ -10734,8 +10573,7 @@ class RomaClient(Client):
 
         查询调度计划
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDispatches
         :type request: :class:`huaweicloudsdkroma.v2.ShowDispatchesRequest`
@@ -10797,8 +10635,7 @@ class RomaClient(Client):
 
         查询后端API的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowLiveDataApiV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowLiveDataApiV2Request`
@@ -10861,8 +10698,7 @@ class RomaClient(Client):
         查询消息的偏移量和消息内容。
         先根据时间戳查询消息的偏移量，再根据偏移量查询消息内容。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowMqsInstanceMessages
         :type request: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceMessagesRequest`
@@ -10946,8 +10782,7 @@ class RomaClient(Client):
 
         查询Topic权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowMqsInstanceTopicAccessPolicy
         :type request: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceTopicAccessPolicyRequest`
@@ -11013,8 +10848,7 @@ class RomaClient(Client):
 
         查询产品详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowProduct
         :type request: :class:`huaweicloudsdkroma.v2.ShowProductRequest`
@@ -11076,8 +10910,7 @@ class RomaClient(Client):
 
         查询产品鉴权信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowProductAuthentication
         :type request: :class:`huaweicloudsdkroma.v2.ShowProductAuthenticationRequest`
@@ -11139,8 +10972,7 @@ class RomaClient(Client):
 
         查询产品模板详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowProductTemplate
         :type request: :class:`huaweicloudsdkroma.v2.ShowProductTemplateRequest`
@@ -11202,8 +11034,7 @@ class RomaClient(Client):
 
         查询服务属性详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowProperty
         :type request: :class:`huaweicloudsdkroma.v2.ShowPropertyRequest`
@@ -11267,8 +11098,7 @@ class RomaClient(Client):
 
         查询请求属性详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRequestProperty
         :type request: :class:`huaweicloudsdkroma.v2.ShowRequestPropertyRequest`
@@ -11334,8 +11164,7 @@ class RomaClient(Client):
 
         查询响应属性详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowResponseProperty
         :type request: :class:`huaweicloudsdkroma.v2.ShowResponsePropertyRequest`
@@ -11401,8 +11230,7 @@ class RomaClient(Client):
 
         查看ROMA Connect实例约束信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRestrictionOfInstanceV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowRestrictionOfInstanceV2Request`
@@ -11462,8 +11290,7 @@ class RomaClient(Client):
 
         查询规则详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRule
         :type request: :class:`huaweicloudsdkroma.v2.ShowRuleRequest`
@@ -11525,8 +11352,7 @@ class RomaClient(Client):
 
         查询服务详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowService
         :type request: :class:`huaweicloudsdkroma.v2.ShowServiceRequest`
@@ -11588,8 +11414,7 @@ class RomaClient(Client):
 
         通过任务ID查询指定任务的信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTask
         :type request: :class:`huaweicloudsdkroma.v2.ShowTaskRequest`
@@ -11651,8 +11476,7 @@ class RomaClient(Client):
 
         测试数据源连通性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartTestDatasource
         :type request: :class:`huaweicloudsdkroma.v2.StartTestDatasourceRequest`
@@ -11716,8 +11540,7 @@ class RomaClient(Client):
 
         手工停止当前执行的任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StopTask
         :type request: :class:`huaweicloudsdkroma.v2.StopTaskRequest`
@@ -11779,8 +11602,7 @@ class RomaClient(Client):
 
         在某个实例中取消部署后端API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UnpublishLiveDataApiV2
         :type request: :class:`huaweicloudsdkroma.v2.UnpublishLiveDataApiV2Request`
@@ -11842,8 +11664,7 @@ class RomaClient(Client):
 
         设置客户端配置的访问控制。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateAppAcl
         :type request: :class:`huaweicloudsdkroma.v2.UpdateAppAclRequest`
@@ -11907,8 +11728,7 @@ class RomaClient(Client):
 
         修改应用配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateAppConfigV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateAppConfigV2Request`
@@ -11974,8 +11794,7 @@ class RomaClient(Client):
 
         修改客户端配额
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateAppQuota
         :type request: :class:`huaweicloudsdkroma.v2.UpdateAppQuotaRequest`
@@ -12039,8 +11858,7 @@ class RomaClient(Client):
 
         修改命令
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateCommand
         :type request: :class:`huaweicloudsdkroma.v2.UpdateCommandRequest`
@@ -12106,8 +11924,7 @@ class RomaClient(Client):
 
         修改自定义认证
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateCustomAuthorizerV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateCustomAuthorizerV2Request`
@@ -12171,8 +11988,7 @@ class RomaClient(Client):
 
         修改数据源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDatasourceInfo
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDatasourceInfoRequest`
@@ -12236,8 +12052,7 @@ class RomaClient(Client):
 
         修改设备信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDevice
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDeviceRequest`
@@ -12301,8 +12116,7 @@ class RomaClient(Client):
 
         修改设备分组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDeviceGroup
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDeviceGroupRequest`
@@ -12366,8 +12180,7 @@ class RomaClient(Client):
 
         通过任务ID和调度ID修改调度计划
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDispatches
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDispatchesRequest`
@@ -12433,8 +12246,7 @@ class RomaClient(Client):
 
         修改绑定的域名所对应的配置信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDomainV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDomainV2Request`
@@ -12500,8 +12312,7 @@ class RomaClient(Client):
 
         修改指定环境的信息。其中可修改的属性为：name、remark，其它属性不可修改。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateEnvironmentV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateEnvironmentV2Request`
@@ -12565,8 +12376,7 @@ class RomaClient(Client):
 
         修改环境变量。环境变量引用位置为api的后端服务地址时，修改对应环境变量会将使用该变量的所有api重新发布。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateEnvironmentVariableV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateEnvironmentVariableV2Request`
@@ -12630,8 +12440,7 @@ class RomaClient(Client):
 
         在某个实例中更新后端API的参数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateLiveDataApiV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateLiveDataApiV2Request`
@@ -12695,8 +12504,7 @@ class RomaClient(Client):
 
         修改Topic。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateMqsInstanceTopic
         :type request: :class:`huaweicloudsdkroma.v2.UpdateMqsInstanceTopicRequest`
@@ -12758,8 +12566,7 @@ class RomaClient(Client):
 
         修改组合任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateMultiTasks
         :type request: :class:`huaweicloudsdkroma.v2.UpdateMultiTasksRequest`
@@ -12823,8 +12630,7 @@ class RomaClient(Client):
 
         该接口用于修改指定的订阅管理
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateNotification
         :type request: :class:`huaweicloudsdkroma.v2.UpdateNotificationRequest`
@@ -12888,8 +12694,7 @@ class RomaClient(Client):
 
         修改产品信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateProduct
         :type request: :class:`huaweicloudsdkroma.v2.UpdateProductRequest`
@@ -12953,8 +12758,7 @@ class RomaClient(Client):
 
         修改产品模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateProductTemplate
         :type request: :class:`huaweicloudsdkroma.v2.UpdateProductTemplateRequest`
@@ -13018,8 +12822,7 @@ class RomaClient(Client):
 
         更新产品主题
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateProductTopic
         :type request: :class:`huaweicloudsdkroma.v2.UpdateProductTopicRequest`
@@ -13085,8 +12888,7 @@ class RomaClient(Client):
 
         修改服务属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateProperty
         :type request: :class:`huaweicloudsdkroma.v2.UpdatePropertyRequest`
@@ -13152,8 +12954,7 @@ class RomaClient(Client):
 
         修改请求属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateRequestProperty
         :type request: :class:`huaweicloudsdkroma.v2.UpdateRequestPropertyRequest`
@@ -13221,8 +13022,7 @@ class RomaClient(Client):
 
         修改指定流控策略的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateRequestThrottlingPolicyV2Request`
@@ -13286,8 +13086,7 @@ class RomaClient(Client):
 
         修改响应属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateResponseProperty
         :type request: :class:`huaweicloudsdkroma.v2.UpdateResponsePropertyRequest`
@@ -13355,8 +13154,7 @@ class RomaClient(Client):
 
         修改规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateRule
         :type request: :class:`huaweicloudsdkroma.v2.UpdateRuleRequest`
@@ -13420,8 +13218,7 @@ class RomaClient(Client):
 
         修改服务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateService
         :type request: :class:`huaweicloudsdkroma.v2.UpdateServiceRequest`
@@ -13485,8 +13282,7 @@ class RomaClient(Client):
 
         修改指定签名密钥的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateSignatureKeyV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateSignatureKeyV2Request`
@@ -13550,8 +13346,7 @@ class RomaClient(Client):
 
         修改某个流控策略下的某个特殊设置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateSpecialThrottlingConfigurationV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateSpecialThrottlingConfigurationV2Request`
@@ -13617,8 +13412,7 @@ class RomaClient(Client):
 
         更新普通任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateTask
         :type request: :class:`huaweicloudsdkroma.v2.UpdateTaskRequest`
@@ -13682,8 +13476,7 @@ class RomaClient(Client):
 
         更新Topic权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateTopicAccessPolicy
         :type request: :class:`huaweicloudsdkroma.v2.UpdateTopicAccessPolicyRequest`
@@ -13745,8 +13538,7 @@ class RomaClient(Client):
 
         导入产品
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UploadProduct
         :type request: :class:`huaweicloudsdkroma.v2.UploadProductRequest`
@@ -13812,8 +13604,7 @@ class RomaClient(Client):
         
         删除ACL策略时，如果存在ACL策略与API绑定关系，则无法删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteAclV2
         :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteAclV2Request`
@@ -13877,8 +13668,7 @@ class RomaClient(Client):
 
         增加一个ACL策略，策略类型通过字段acl_type来确定（permit或者deny），限制的对象的类型可以为IP[或者DOMAIN，这里的DOMAIN对应的acl_value的值为租户名称，而非“www.exampleDomain.com\&quot;之类的网络域名。](tag:hws;hws_hk;hcs;fcs;g42;)
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAclStrategyV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateAclStrategyV2Request`
@@ -13940,8 +13730,7 @@ class RomaClient(Client):
 
         删除指定的ACL策略， 如果存在api与该ACL策略的绑定关系，则无法删除
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAclV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAclV2Request`
@@ -14003,8 +13792,7 @@ class RomaClient(Client):
 
         查询所有的ACL策略列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAclStrategiesV2
         :type request: :class:`huaweicloudsdkroma.v2.ListAclStrategiesV2Request`
@@ -14078,8 +13866,7 @@ class RomaClient(Client):
 
         查询指定ACL策略的详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfAclPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAclPolicyV2Request`
@@ -14141,8 +13928,7 @@ class RomaClient(Client):
 
         修改指定的ACL策略，其中可修改的属性为：acl_name、acl_type、acl_value，其它属性不可修改。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateAclStrategyV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateAclStrategyV2Request`
@@ -14210,8 +13996,7 @@ class RomaClient(Client):
         
         为指定的API绑定流控策略，绑定时，需要指定在哪个环境上生效。同一个API发布到不同的环境可以绑定不同的流控策略；一个API在发布到特定环境后只能绑定一个默认的流控策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AssociateRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.AssociateRequestThrottlingPolicyV2Request`
@@ -14273,8 +14058,7 @@ class RomaClient(Client):
 
         批量解除API与流控策略的绑定关系
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDisassociateThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.BatchDisassociateThrottlingPolicyV2Request`
@@ -14340,8 +14124,7 @@ class RomaClient(Client):
         
         注意：当action &#x3D; online时，接口返回的响应中publish_id，version_id， publish_time字段才有含义。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchPublishOrOfflineApiV2
         :type request: :class:`huaweicloudsdkroma.v2.BatchPublishOrOfflineApiV2Request`
@@ -14407,8 +14190,7 @@ class RomaClient(Client):
         
         多个版本之间可以进行随意切换。但一个API在一个环境上，只能有一个版本生效。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ChangeApiVersionV2
         :type request: :class:`huaweicloudsdkroma.v2.ChangeApiVersionV2Request`
@@ -14472,8 +14254,7 @@ class RomaClient(Client):
 
         校验API分组名称是否存在。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckApiGroupsV2
         :type request: :class:`huaweicloudsdkroma.v2.CheckApiGroupsV2Request`
@@ -14535,8 +14316,7 @@ class RomaClient(Client):
 
         校验API定义。校验API的路径或名称是否已存在
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckApisV2
         :type request: :class:`huaweicloudsdkroma.v2.CheckApisV2Request`
@@ -14598,8 +14378,7 @@ class RomaClient(Client):
 
         API分组是API的管理单元，一个API分组等同于一个服务入口，创建API分组时，返回一个子域名作为访问入口。建议一个API分组下的API具有一定的相关性。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateApiGroupV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateApiGroupV2Request`
@@ -14663,8 +14442,7 @@ class RomaClient(Client):
         
         API分为两部分，第一部分为面向API使用者的API接口，定义了使用者如何调用这个API。第二部分面向API提供者，由API提供者定义这个API的真实的后端情况，定义了ROMA Connect如何去访问真实的后端服务。API的真实后端服务目前支持三种类型：传统的HTTP/HTTPS形式的web后端、[函数工作流、](tag:hws;hws_hk;hcs;fcs;g42;)MOCK。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateApiV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateApiV2Request`
@@ -14730,8 +14508,7 @@ class RomaClient(Client):
         
         下线操作是将API从某个已发布的环境上下线，下线后，API将无法再被调用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateOrDeletePublishRecordForApiV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateOrDeletePublishRecordForApiV2Request`
@@ -14793,8 +14570,7 @@ class RomaClient(Client):
 
         调试一个API在指定运行环境下的定义，接口调用者需要具有操作该API的权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DebugApiV2
         :type request: :class:`huaweicloudsdkroma.v2.DebugApiV2Request`
@@ -14858,8 +14634,7 @@ class RomaClient(Client):
 
         对某个生效中的API版本进行下线操作，下线后，API在该版本生效的环境中将不再能够被调用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteApiByVersionIdV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteApiByVersionIdV2Request`
@@ -14923,8 +14698,7 @@ class RomaClient(Client):
         分组下存在API时分组无法删除，需要删除所有分组下的API后，再删除分组。
         删除分组时，会一并删除直接或间接关联到该分组下的所有资源，包括独立域名、SSL证书等等。并会将外部域名与子域名的绑定关系进行解除（取决于域名cname方式）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteApiGroupV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteApiGroupV2Request`
@@ -14988,8 +14762,7 @@ class RomaClient(Client):
         
         删除API时，会删除该API所有相关的资源信息或绑定关系，如API的发布记录，绑定的后端服务，对APP的授权信息等。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteApiV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteApiV2Request`
@@ -15051,8 +14824,7 @@ class RomaClient(Client):
 
         解除API与流控策略的绑定关系。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DisassociateRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.DisassociateRequestThrottlingPolicyV2Request`
@@ -15116,8 +14888,7 @@ class RomaClient(Client):
         
         如果是租户操作，则查询该租户下所有的分组；如果是管理员操作，则查询的是所有租户的分组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApiGroupsV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApiGroupsV2Request`
@@ -15197,8 +14968,7 @@ class RomaClient(Client):
         
         访问某个环境上的API，其实访问的就是其运行时的定义
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApiRuntimeDefinitionV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApiRuntimeDefinitionV2Request`
@@ -15262,8 +15032,7 @@ class RomaClient(Client):
 
         查询某个指定的版本详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApiVersionDetailV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApiVersionDetailV2Request`
@@ -15325,8 +15094,7 @@ class RomaClient(Client):
 
         查询某个API的历史版本。每个API在一个环境上最多存在10个历史版本。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApiVersionsV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApiVersionsV2Request`
@@ -15396,8 +15164,7 @@ class RomaClient(Client):
 
         查询某个流控策略上已经绑定的API列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApisBindedToRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApisBindedToRequestThrottlingPolicyV2Request`
@@ -15471,8 +15238,7 @@ class RomaClient(Client):
 
         查询所有未绑定到该流控策略上的自有API列表。需要API已经发布，未发布的API不予展示。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApisUnbindedToRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToRequestThrottlingPolicyV2Request`
@@ -15546,8 +15312,7 @@ class RomaClient(Client):
 
         查看API列表，返回API详细信息、发布信息等，但不能查看到后端服务信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApisV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApisV2Request`
@@ -15635,8 +15400,7 @@ class RomaClient(Client):
 
         查询某个API绑定的流控策略列表。每个环境上应该最多只有一个流控策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRequestThrottlingPoliciesBindedToApiV2
         :type request: :class:`huaweicloudsdkroma.v2.ListRequestThrottlingPoliciesBindedToApiV2Request`
@@ -15708,8 +15472,7 @@ class RomaClient(Client):
 
         查询指定分组的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfApiGroupV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfApiGroupV2Request`
@@ -15771,8 +15534,7 @@ class RomaClient(Client):
 
         查看指定的API的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfApiV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfApiV2Request`
@@ -15834,8 +15596,7 @@ class RomaClient(Client):
 
         修改API分组属性。其中name和remark可修改，其他属性不可修改。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateApiGroupV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateApiGroupV2Request`
@@ -15899,8 +15660,7 @@ class RomaClient(Client):
 
         修改指定API的信息，包括后端服务信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateApiV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateApiV2Request`
@@ -15964,8 +15724,7 @@ class RomaClient(Client):
 
         批量解除API与ACL策略的绑定
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteApiAclBindingV2
         :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteApiAclBindingV2Request`
@@ -16031,8 +15790,7 @@ class RomaClient(Client):
         
         同一个API发布到不同的环境可以绑定不同的ACL策略；一个API在发布到特定环境后只能绑定一个同一种类型的ACL策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateApiAclBindingV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateApiAclBindingV2Request`
@@ -16094,8 +15852,7 @@ class RomaClient(Client):
 
         解除某条API与ACL策略的绑定关系
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteApiAclBindingV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteApiAclBindingV2Request`
@@ -16157,8 +15914,7 @@ class RomaClient(Client):
 
         查看API绑定的ACL策略列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAclPolicyBindedToApiV2
         :type request: :class:`huaweicloudsdkroma.v2.ListAclPolicyBindedToApiV2Request`
@@ -16232,8 +15988,7 @@ class RomaClient(Client):
 
         查看ACL策略绑定的API列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApisBindedToAclPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApisBindedToAclPolicyV2Request`
@@ -16305,8 +16060,7 @@ class RomaClient(Client):
 
         查看ACL策略未绑定的API列表，需要API已发布
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApisUnbindedToAclPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToAclPolicyV2Request`
@@ -16380,8 +16134,7 @@ class RomaClient(Client):
 
         解除API对APP的授权关系。解除授权后，APP将不再能够调用该API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CancelingAuthorizationV2
         :type request: :class:`huaweicloudsdkroma.v2.CancelingAuthorizationV2Request`
@@ -16443,8 +16196,7 @@ class RomaClient(Client):
 
         APP创建成功后，还不能访问API，如果想要访问某个环境上的API，需要将该API在该环境上授权给APP。授权成功后，APP即可访问该环境上的这个API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAuthorizingAppsV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateAuthorizingAppsV2Request`
@@ -16506,8 +16258,7 @@ class RomaClient(Client):
 
         查询APP已经绑定的API列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApisBindedToAppV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApisBindedToAppV2Request`
@@ -16583,8 +16334,7 @@ class RomaClient(Client):
 
         查询指定环境上某个APP未绑定的API列表，包括自有API和从云市场购买的API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApisUnbindedToAppV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToAppV2Request`
@@ -16658,8 +16408,7 @@ class RomaClient(Client):
 
         查询API绑定的APP列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAppsBindedToApiV2
         :type request: :class:`huaweicloudsdkroma.v2.ListAppsBindedToApiV2Request`
@@ -16731,8 +16480,7 @@ class RomaClient(Client):
 
         查询指定APP下路径冲突的api列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDuplicateApisForAppV2
         :type request: :class:`huaweicloudsdkroma.v2.ListDuplicateApisForAppV2Request`
@@ -16795,8 +16543,7 @@ class RomaClient(Client):
         - 设置应用的用户成员，为空数组时会清空已有应用成员列表
         - 设置动作为全量更新非增量更新，应用的成员列表都会替换为当次请求的应用成员列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddUserToApp
         :type request: :class:`huaweicloudsdkroma.v2.AddUserToAppRequest`
@@ -16860,8 +16607,7 @@ class RomaClient(Client):
 
         查询用户成列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckAuthUsersOfApp
         :type request: :class:`huaweicloudsdkroma.v2.CheckAuthUsersOfAppRequest`
@@ -16925,8 +16671,7 @@ class RomaClient(Client):
 
         查询应用的候选用户成员列表,会过滤掉异常状态用户
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckCanAuthUsersOfApp
         :type request: :class:`huaweicloudsdkroma.v2.CheckCanAuthUsersOfAppRequest`
@@ -16990,8 +16735,7 @@ class RomaClient(Client):
 
         查询应用详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckRomaAppDetails
         :type request: :class:`huaweicloudsdkroma.v2.CheckRomaAppDetailsRequest`
@@ -17053,8 +16797,7 @@ class RomaClient(Client):
 
         查询应用密钥
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckRomaAppSecret
         :type request: :class:`huaweicloudsdkroma.v2.CheckRomaAppSecretRequest`
@@ -17116,8 +16859,7 @@ class RomaClient(Client):
 
         创建应用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateRomaApp
         :type request: :class:`huaweicloudsdkroma.v2.CreateRomaAppRequest`
@@ -17179,8 +16921,7 @@ class RomaClient(Client):
 
         删除单个应用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteRomaApp
         :type request: :class:`huaweicloudsdkroma.v2.DeleteRomaAppRequest`
@@ -17242,8 +16983,7 @@ class RomaClient(Client):
 
         查询应用列表，支持条件查询，所有条件是并且的关系
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRomaApp
         :type request: :class:`huaweicloudsdkroma.v2.ListRomaAppRequest`
@@ -17317,8 +17057,7 @@ class RomaClient(Client):
 
         重置应用密钥
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ResetRomaAppSecret
         :type request: :class:`huaweicloudsdkroma.v2.ResetRomaAppSecretRequest`
@@ -17382,8 +17121,7 @@ class RomaClient(Client):
 
         更新应用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateRomaApp
         :type request: :class:`huaweicloudsdkroma.v2.UpdateRomaAppRequest`
@@ -17447,8 +17185,7 @@ class RomaClient(Client):
 
         校验指定条件的应用是否存在
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ValidateRomaApp
         :type request: :class:`huaweicloudsdkroma.v2.ValidateRomaAppRequest`
@@ -17514,8 +17251,7 @@ class RomaClient(Client):
 
         查询作业进度
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckAssetJobStatus
         :type request: :class:`huaweicloudsdkroma.v2.CheckAssetJobStatusRequest`
@@ -17580,8 +17316,7 @@ class RomaClient(Client):
         - 最大支持100个应用和任务
         - 一个用户同一时刻只能创建一个资产删除作业任务，没有Running状态的作业任务存在
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAsset
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAssetRequest`
@@ -17644,8 +17379,7 @@ class RomaClient(Client):
         - 导出作业执行成功后，通过该接口获取导出作业产生的资产包，仅能下载一次
         - 可先压缩后存在数据库，下载后删除
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DownloadAssetArchive
         :type request: :class:`huaweicloudsdkroma.v2.DownloadAssetArchiveRequest`
@@ -17710,8 +17444,7 @@ class RomaClient(Client):
         - 最大支持100个应用和任务
         - 一个用户同一时刻只能创建一个资产导出作业任务，没有Running状态的作业任务存在
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExportAsset
         :type request: :class:`huaweicloudsdkroma.v2.ExportAssetRequest`
@@ -17775,8 +17508,7 @@ class RomaClient(Client):
         - 最大支持100个应用和任务
         - 一个用户同一时刻只能创建一个资产导入作业任务，没有Running状态的作业任务存在
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ImportAsset
         :type request: :class:`huaweicloudsdkroma.v2.ImportAssetRequest`
@@ -17840,8 +17572,7 @@ class RomaClient(Client):
 
         查询字典详情,
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckDictionary
         :type request: :class:`huaweicloudsdkroma.v2.CheckDictionaryRequest`
@@ -17903,8 +17634,7 @@ class RomaClient(Client):
 
         创建字典
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDictionary
         :type request: :class:`huaweicloudsdkroma.v2.CreateDictionaryRequest`
@@ -17966,8 +17696,7 @@ class RomaClient(Client):
 
         删除单个字典，会同时删除该字典的所有子字典
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDictionary
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDictionaryRequest`
@@ -18029,8 +17758,7 @@ class RomaClient(Client):
 
         查询字典列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDictionary
         :type request: :class:`huaweicloudsdkroma.v2.ListDictionaryRequest`
@@ -18100,8 +17828,7 @@ class RomaClient(Client):
 
         更新字典
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDictionary
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDictionaryRequest`
@@ -18165,8 +17892,7 @@ class RomaClient(Client):
 
         校验指定条件的字典是否存在，支持字典名称和字典编码
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ValidateDictionary
         :type request: :class:`huaweicloudsdkroma.v2.ValidateDictionaryRequest`
@@ -18230,8 +17956,7 @@ class RomaClient(Client):
 
         获取符合条件的服务实例列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckRomaInstanceListV2
         :type request: :class:`huaweicloudsdkroma.v2.CheckRomaInstanceListV2Request`
@@ -18295,8 +18020,7 @@ class RomaClient(Client):
 
         查询MQS实例列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListMqsInstance
         :type request: :class:`huaweicloudsdkroma.v2.ListMqsInstanceRequest`
@@ -18356,8 +18080,7 @@ class RomaClient(Client):
 
         查询指定MQS实例详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowMqsInstance
         :type request: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceRequest`
@@ -18417,8 +18140,7 @@ class RomaClient(Client):
 
         导出分组下API的定义信息，导出文件内容符合swagger标准规范。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExportApiDefinitionsV2
         :type request: :class:`huaweicloudsdkroma.v2.ExportApiDefinitionsV2Request`
@@ -18480,8 +18202,7 @@ class RomaClient(Client):
 
         导出自定义后端API，导出文件内容符合swagger标准规范。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExportLiveDataApiDefinitionsV2
         :type request: :class:`huaweicloudsdkroma.v2.ExportLiveDataApiDefinitionsV2Request`
@@ -18543,8 +18264,7 @@ class RomaClient(Client):
 
         导入API。导入文件内容需要符合swagger标准规范，自定义扩展字段请参考用户指南的“附录：前端API的Swagger扩展定义”章节。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ImportApiDefinitionsV2
         :type request: :class:`huaweicloudsdkroma.v2.ImportApiDefinitionsV2Request`
@@ -18622,8 +18342,7 @@ class RomaClient(Client):
 
         导入自定义后端API。导入文件内容需要符合swagger标准规范，自定义扩展字段请参考用户指南的“附录：后端API的Swagger扩展定义”章节
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ImportLiveDataApiDefinitionsV2
         :type request: :class:`huaweicloudsdkroma.v2.ImportLiveDataApiDefinitionsV2Request`
@@ -18693,8 +18412,7 @@ class RomaClient(Client):
         
         若指定地址的后端实例已存在，则更新对应后端实例信息。若请求体中包含多个重复地址的后端实例定义，则使用第一个定义。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddingBackendInstancesV2
         :type request: :class:`huaweicloudsdkroma.v2.AddingBackendInstancesV2Request`
@@ -18758,8 +18476,7 @@ class RomaClient(Client):
 
         批量修改后端服务器状态不可用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDisableMembers
         :type request: :class:`huaweicloudsdkroma.v2.BatchDisableMembersRequest`
@@ -18823,8 +18540,7 @@ class RomaClient(Client):
 
         批量修改后端服务器状态可用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchEnableMembers
         :type request: :class:`huaweicloudsdkroma.v2.BatchEnableMembersRequest`
@@ -18890,8 +18606,7 @@ class RomaClient(Client):
         
         若指定名称的后端服务器组已存在，则更新对应后端服务器组信息。若请求体中包含多个重复名称的后端服务器定义，则使用第一个定义。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateMemberGroup
         :type request: :class:`huaweicloudsdkroma.v2.CreateMemberGroupRequest`
@@ -18956,8 +18671,7 @@ class RomaClient(Client):
         在ROMA Connect APIC中创建连接私有VPC资源的通道，并在创建API时将后端节点配置为使用这些VPC通道，以便ROMA Connect APIC直接访问私有VPC资源。
         &gt; 每个用户默认最多创建200个VPC通道，如需支持更多请联系技术支持调整配额。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateVpcChannelV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateVpcChannelV2Request`
@@ -19019,8 +18733,7 @@ class RomaClient(Client):
 
         删除指定VPC通道中的后端实例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteBackendInstanceV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteBackendInstanceV2Request`
@@ -19084,8 +18797,7 @@ class RomaClient(Client):
 
         删除指定的VPC通道后端服务器组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteMemberGroup
         :type request: :class:`huaweicloudsdkroma.v2.DeleteMemberGroupRequest`
@@ -19149,8 +18861,7 @@ class RomaClient(Client):
 
         删除指定的VPC通道
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteVpcChannelV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteVpcChannelV2Request`
@@ -19212,8 +18923,7 @@ class RomaClient(Client):
 
         查看指定VPC通道的后端实例列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListBackendInstancesV2
         :type request: :class:`huaweicloudsdkroma.v2.ListBackendInstancesV2Request`
@@ -19287,8 +18997,7 @@ class RomaClient(Client):
 
         查询VPC通道后端云服务组列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListMemberGroups
         :type request: :class:`huaweicloudsdkroma.v2.ListMemberGroupsRequest`
@@ -19360,8 +19069,7 @@ class RomaClient(Client):
 
         查看VPC通道列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListVpcChannelsV2
         :type request: :class:`huaweicloudsdkroma.v2.ListVpcChannelsV2Request`
@@ -19441,8 +19149,7 @@ class RomaClient(Client):
 
         查看指定的VPC通道后端服务器组详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfMemberGroup
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfMemberGroupRequest`
@@ -19506,8 +19213,7 @@ class RomaClient(Client):
 
         查看指定的VPC通道详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDetailsOfVpcChannelV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfVpcChannelV2Request`
@@ -19569,8 +19275,7 @@ class RomaClient(Client):
 
         更新指定的VPC通道的后端实例。更新时，使用传入的请求参数对对应云服务组的后端实例进行全量覆盖修改。若未指定修改的云服务器组，则进行全量覆盖。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateBackendInstancesV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateBackendInstancesV2Request`
@@ -19634,8 +19339,7 @@ class RomaClient(Client):
 
         修改VPC通道健康检查。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateHealthCheck
         :type request: :class:`huaweicloudsdkroma.v2.UpdateHealthCheckRequest`
@@ -19699,8 +19403,7 @@ class RomaClient(Client):
 
         更新指定VPC通道后端服务器组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateMemberGroup
         :type request: :class:`huaweicloudsdkroma.v2.UpdateMemberGroupRequest`
@@ -19770,8 +19473,7 @@ class RomaClient(Client):
         
         使用传入的后端服务器组列表对VPC通道进行全量覆盖，若后端服务器组列表为空，则会全量删除已有的服务器组；
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateVpcChannelV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateVpcChannelV2Request`
@@ -19835,8 +19537,7 @@ class RomaClient(Client):
 
         创建相同的VPC通道关联到多个实例。同一个项目下VPC通道名称不可重复。注意：实例特性vpc_name_modifiable配置为off时才可使用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateProjectVpcChannel
         :type request: :class:`huaweicloudsdkroma.v2.CreateProjectVpcChannelRequest`
@@ -19896,8 +19597,7 @@ class RomaClient(Client):
 
         同步VPC通道到多个实例。注意：实例特性vpc_name_modifiable配置为off时才可使用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateProjectVpcChannelSyncs
         :type request: :class:`huaweicloudsdkroma.v2.CreateProjectVpcChannelSyncsRequest`
@@ -19957,8 +19657,7 @@ class RomaClient(Client):
 
         查询项目下所有实例的VPC通道列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProjectVpcChannelsV2
         :type request: :class:`huaweicloudsdkroma.v2.ListProjectVpcChannelsV2Request`
@@ -20036,8 +19735,7 @@ class RomaClient(Client):
 
         项目下根据VPC通道名称批量修改多个多个实例下的VPC通道。若实例下不存在该VPC通道则创建。注意：实例特性vpc_name_modifiable配置为off时才可使用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateProjectVpcChannel
         :type request: :class:`huaweicloudsdkroma.v2.UpdateProjectVpcChannelRequest`

@@ -71,13 +71,20 @@ class Bandwidth:
         self._update_time = None
         self.discriminator = None
 
-        self.band_width_name = band_width_name
-        self.band_width_id = band_width_id
-        self.band_width_size = band_width_size
-        self.band_width_charge_mode = band_width_charge_mode
-        self.band_width_share_type = band_width_share_type
-        self.create_time = create_time
-        self.update_time = update_time
+        if band_width_name is not None:
+            self.band_width_name = band_width_name
+        if band_width_id is not None:
+            self.band_width_id = band_width_id
+        if band_width_size is not None:
+            self.band_width_size = band_width_size
+        if band_width_charge_mode is not None:
+            self.band_width_charge_mode = band_width_charge_mode
+        if band_width_share_type is not None:
+            self.band_width_share_type = band_width_share_type
+        if create_time is not None:
+            self.create_time = create_time
+        if update_time is not None:
+            self.update_time = update_time
 
     @property
     def band_width_name(self):

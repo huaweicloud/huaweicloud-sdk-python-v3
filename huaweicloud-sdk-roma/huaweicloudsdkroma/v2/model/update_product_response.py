@@ -37,8 +37,7 @@ class UpdateProductResponse(SdkResponse):
         'last_updated_user': 'LastUpdatedUser',
         'created_datetime': 'int',
         'app_name': 'str',
-        'data_format': 'int',
-        'status': 'int'
+        'data_format': 'int'
     }
 
     attribute_map = {
@@ -59,11 +58,10 @@ class UpdateProductResponse(SdkResponse):
         'last_updated_user': 'last_updated_user',
         'created_datetime': 'created_datetime',
         'app_name': 'app_name',
-        'data_format': 'data_format',
-        'status': 'status'
+        'data_format': 'data_format'
     }
 
-    def __init__(self, permissions=None, id=None, product_serial=None, app_id=None, name=None, manufacturer_id=None, manufacturer_name=None, model=None, product_type=None, description=None, protocol_type=None, device_type=None, version=None, created_user=None, last_updated_user=None, created_datetime=None, app_name=None, data_format=None, status=None):
+    def __init__(self, permissions=None, id=None, product_serial=None, app_id=None, name=None, manufacturer_id=None, manufacturer_name=None, model=None, product_type=None, description=None, protocol_type=None, device_type=None, version=None, created_user=None, last_updated_user=None, created_datetime=None, app_name=None, data_format=None):
         """UpdateProductResponse
 
         The model defined in huaweicloud sdk
@@ -104,8 +102,6 @@ class UpdateProductResponse(SdkResponse):
         :type app_name: str
         :param data_format: data_format 0-JSON 1-USER_DEFINED
         :type data_format: int
-        :param status: 产品状态 0-启用 1-禁用
-        :type status: int
         """
         
         super(UpdateProductResponse, self).__init__()
@@ -128,7 +124,6 @@ class UpdateProductResponse(SdkResponse):
         self._created_datetime = None
         self._app_name = None
         self._data_format = None
-        self._status = None
         self.discriminator = None
 
         if permissions is not None:
@@ -167,8 +162,6 @@ class UpdateProductResponse(SdkResponse):
             self.app_name = app_name
         if data_format is not None:
             self.data_format = data_format
-        if status is not None:
-            self.status = status
 
     @property
     def permissions(self):
@@ -557,28 +550,6 @@ class UpdateProductResponse(SdkResponse):
         :type data_format: int
         """
         self._data_format = data_format
-
-    @property
-    def status(self):
-        """Gets the status of this UpdateProductResponse.
-
-        产品状态 0-启用 1-禁用
-
-        :return: The status of this UpdateProductResponse.
-        :rtype: int
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this UpdateProductResponse.
-
-        产品状态 0-启用 1-禁用
-
-        :param status: The status of this UpdateProductResponse.
-        :type status: int
-        """
-        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

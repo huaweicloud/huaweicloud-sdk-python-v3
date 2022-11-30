@@ -21,7 +21,7 @@ class ListEncodeServersResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'encode_servers': 'list[object]'
+        'encode_servers': 'list[EncodeServer]'
     }
 
     attribute_map = {
@@ -34,10 +34,10 @@ class ListEncodeServersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 请求的唯一标识ID
+        :param request_id: 请求的唯一标识ID。
         :type request_id: str
-        :param encode_servers: 编码服务信息
-        :type encode_servers: list[object]
+        :param encode_servers: 编码服务信息。
+        :type encode_servers: list[:class:`huaweicloudsdkcph.v1.EncodeServer`]
         """
         
         super(ListEncodeServersResponse, self).__init__()
@@ -46,14 +46,16 @@ class ListEncodeServersResponse(SdkResponse):
         self._encode_servers = None
         self.discriminator = None
 
-        self.request_id = request_id
-        self.encode_servers = encode_servers
+        if request_id is not None:
+            self.request_id = request_id
+        if encode_servers is not None:
+            self.encode_servers = encode_servers
 
     @property
     def request_id(self):
         """Gets the request_id of this ListEncodeServersResponse.
 
-        请求的唯一标识ID
+        请求的唯一标识ID。
 
         :return: The request_id of this ListEncodeServersResponse.
         :rtype: str
@@ -64,7 +66,7 @@ class ListEncodeServersResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this ListEncodeServersResponse.
 
-        请求的唯一标识ID
+        请求的唯一标识ID。
 
         :param request_id: The request_id of this ListEncodeServersResponse.
         :type request_id: str
@@ -75,10 +77,10 @@ class ListEncodeServersResponse(SdkResponse):
     def encode_servers(self):
         """Gets the encode_servers of this ListEncodeServersResponse.
 
-        编码服务信息
+        编码服务信息。
 
         :return: The encode_servers of this ListEncodeServersResponse.
-        :rtype: list[object]
+        :rtype: list[:class:`huaweicloudsdkcph.v1.EncodeServer`]
         """
         return self._encode_servers
 
@@ -86,10 +88,10 @@ class ListEncodeServersResponse(SdkResponse):
     def encode_servers(self, encode_servers):
         """Sets the encode_servers of this ListEncodeServersResponse.
 
-        编码服务信息
+        编码服务信息。
 
         :param encode_servers: The encode_servers of this ListEncodeServersResponse.
-        :type encode_servers: list[object]
+        :type encode_servers: list[:class:`huaweicloudsdkcph.v1.EncodeServer`]
         """
         self._encode_servers = encode_servers
 

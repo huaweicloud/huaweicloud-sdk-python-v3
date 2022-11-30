@@ -24,6 +24,7 @@ class FunctionApiBaseInfo:
         'remark': 'str',
         'invocation_type': 'str',
         'version': 'str',
+        'alias_urn': 'str',
         'timeout': 'int',
         'authorizer_id': 'str'
     }
@@ -33,11 +34,12 @@ class FunctionApiBaseInfo:
         'remark': 'remark',
         'invocation_type': 'invocation_type',
         'version': 'version',
+        'alias_urn': 'alias_urn',
         'timeout': 'timeout',
         'authorizer_id': 'authorizer_id'
     }
 
-    def __init__(self, function_urn=None, remark=None, invocation_type=None, version=None, timeout=None, authorizer_id=None):
+    def __init__(self, function_urn=None, remark=None, invocation_type=None, version=None, alias_urn=None, timeout=None, authorizer_id=None):
         """FunctionApiBaseInfo
 
         The model defined in huaweicloud sdk
@@ -50,6 +52,8 @@ class FunctionApiBaseInfo:
         :type invocation_type: str
         :param version: 版本。
         :type version: str
+        :param alias_urn: 函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+        :type alias_urn: str
         :param timeout: ROMA Connect APIC请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
         :type timeout: int
         :param authorizer_id: 后端自定义认证ID
@@ -62,6 +66,7 @@ class FunctionApiBaseInfo:
         self._remark = None
         self._invocation_type = None
         self._version = None
+        self._alias_urn = None
         self._timeout = None
         self._authorizer_id = None
         self.discriminator = None
@@ -72,6 +77,8 @@ class FunctionApiBaseInfo:
         self.invocation_type = invocation_type
         if version is not None:
             self.version = version
+        if alias_urn is not None:
+            self.alias_urn = alias_urn
         self.timeout = timeout
         if authorizer_id is not None:
             self.authorizer_id = authorizer_id
@@ -163,6 +170,28 @@ class FunctionApiBaseInfo:
         :type version: str
         """
         self._version = version
+
+    @property
+    def alias_urn(self):
+        """Gets the alias_urn of this FunctionApiBaseInfo.
+
+        函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+
+        :return: The alias_urn of this FunctionApiBaseInfo.
+        :rtype: str
+        """
+        return self._alias_urn
+
+    @alias_urn.setter
+    def alias_urn(self, alias_urn):
+        """Sets the alias_urn of this FunctionApiBaseInfo.
+
+        函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+
+        :param alias_urn: The alias_urn of this FunctionApiBaseInfo.
+        :type alias_urn: str
+        """
+        self._alias_urn = alias_urn
 
     @property
     def timeout(self):

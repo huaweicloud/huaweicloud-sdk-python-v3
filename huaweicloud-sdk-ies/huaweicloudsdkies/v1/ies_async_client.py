@@ -48,8 +48,7 @@ class IesAsyncClient(Client):
         创建边缘小站。
         - 一个边缘小站关联一个华为云指定的区域。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateEdgeSite
@@ -110,8 +109,7 @@ class IesAsyncClient(Client):
 
         删除指定的边缘小站。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteEdgeSite
@@ -172,8 +170,7 @@ class IesAsyncClient(Client):
 
         查询边缘小站列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListEdgeSites
@@ -254,8 +251,7 @@ class IesAsyncClient(Client):
 
         查询边缘小站详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowEdgeSite
@@ -317,8 +313,7 @@ class IesAsyncClient(Client):
         更新边缘小站。
         - 允许更新边缘小站描述或场地信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateEdgeSite
@@ -381,8 +376,7 @@ class IesAsyncClient(Client):
 
         查看站点容量信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListEdgeSiteMetrics
@@ -445,8 +439,7 @@ class IesAsyncClient(Client):
 
         查询租户资源配额。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListQuotas
@@ -505,8 +498,7 @@ class IesAsyncClient(Client):
 
         查询支持智能边缘小站接入的华为云区域（region）列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSupportedRegions

@@ -47,8 +47,7 @@ class CdmAsyncClient(Client):
 
         随机集群创建作业并执行接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateAndStartRandomClusterJob
@@ -111,8 +110,7 @@ class CdmAsyncClient(Client):
 
         创建集群接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateCluster
@@ -175,8 +173,7 @@ class CdmAsyncClient(Client):
 
         指定集群创建作业接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateJob
@@ -239,8 +236,7 @@ class CdmAsyncClient(Client):
 
         创建连接接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateLink
@@ -305,8 +301,7 @@ class CdmAsyncClient(Client):
 
         删除集群接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteCluster
@@ -369,8 +364,7 @@ class CdmAsyncClient(Client):
 
         删除作业接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteJob
@@ -433,8 +427,7 @@ class CdmAsyncClient(Client):
 
         删除连接接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteLink
@@ -497,8 +490,7 @@ class CdmAsyncClient(Client):
 
         查询集群列表接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListClusters
@@ -557,8 +549,7 @@ class CdmAsyncClient(Client):
 
         重启集群接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RestartCluster
@@ -621,8 +612,7 @@ class CdmAsyncClient(Client):
 
         查询集群详情接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowClusterDetail
@@ -683,8 +673,7 @@ class CdmAsyncClient(Client):
 
         查询作业状态接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowJobStatus
@@ -747,8 +736,7 @@ class CdmAsyncClient(Client):
 
         查询作业接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowJobs
@@ -819,8 +807,7 @@ class CdmAsyncClient(Client):
 
         查询连接接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowLink
@@ -883,8 +870,7 @@ class CdmAsyncClient(Client):
 
         查询作业执行历史接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowSubmissions
@@ -947,8 +933,7 @@ class CdmAsyncClient(Client):
 
         启动集群接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartCluster
@@ -1011,8 +996,7 @@ class CdmAsyncClient(Client):
 
         启动作业接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartJob
@@ -1075,8 +1059,7 @@ class CdmAsyncClient(Client):
 
         停止集群接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopCluster
@@ -1139,8 +1122,7 @@ class CdmAsyncClient(Client):
 
         停止作业接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopJob
@@ -1203,8 +1185,7 @@ class CdmAsyncClient(Client):
 
         修改作业接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateJob
@@ -1269,8 +1250,7 @@ class CdmAsyncClient(Client):
 
         修改连接接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateLink

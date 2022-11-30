@@ -47,8 +47,7 @@ class IoTAnalyticsClient(Client):
 
         创建资产模型
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAssetModel
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateAssetModelRequest`
@@ -108,8 +107,7 @@ class IoTAnalyticsClient(Client):
 
         删除资产模型
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAssetModel
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteAssetModelRequest`
@@ -169,8 +167,7 @@ class IoTAnalyticsClient(Client):
 
         获取资产模型列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAssetModels
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListAssetModelsRequest`
@@ -234,8 +231,7 @@ class IoTAnalyticsClient(Client):
 
         获取资产模型详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAssetModel
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowAssetModelRequest`
@@ -295,8 +291,7 @@ class IoTAnalyticsClient(Client):
 
         修改资产模型
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateAssetModel
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateAssetModelRequest`
@@ -358,8 +353,7 @@ class IoTAnalyticsClient(Client):
 
         创建资产
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAssetNew
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateAssetNewRequest`
@@ -419,8 +413,7 @@ class IoTAnalyticsClient(Client):
 
         删除资产
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAssetNew
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteAssetNewRequest`
@@ -480,8 +473,7 @@ class IoTAnalyticsClient(Client):
 
         获取资产列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAssetsNew
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListAssetsNewRequest`
@@ -547,8 +539,7 @@ class IoTAnalyticsClient(Client):
 
         发布资产
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for PublishRootAsset
         :type request: :class:`huaweicloudsdkiotanalytics.v1.PublishRootAssetRequest`
@@ -608,8 +599,7 @@ class IoTAnalyticsClient(Client):
 
         获取资产详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAssetNew
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowAssetNewRequest`
@@ -671,8 +661,7 @@ class IoTAnalyticsClient(Client):
 
         修改资产
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateAssetNew
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateAssetNewRequest`
@@ -734,8 +723,7 @@ class IoTAnalyticsClient(Client):
 
         获取资产属性最新值
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowLastPropertyValue
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowLastPropertyValueRequest`
@@ -797,8 +785,7 @@ class IoTAnalyticsClient(Client):
 
         获取资产属性聚合值
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowMetricValue
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowMetricValueRequest`
@@ -860,8 +847,7 @@ class IoTAnalyticsClient(Client):
 
         获取资产属性历史值
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPropertyRawValue
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowPropertyRawValueRequest`
@@ -923,8 +909,7 @@ class IoTAnalyticsClient(Client):
 
         创建数据源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDatasource
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateDatasourceRequest`
@@ -984,8 +969,7 @@ class IoTAnalyticsClient(Client):
 
         删除数据源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDatasource
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteDatasourceRequest`
@@ -1045,8 +1029,7 @@ class IoTAnalyticsClient(Client):
 
         查询数据源列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAllDataSource
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowAllDataSourceRequest`
@@ -1112,8 +1095,7 @@ class IoTAnalyticsClient(Client):
 
         查询数据源详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDataSource
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowDataSourceRequest`
@@ -1173,8 +1155,7 @@ class IoTAnalyticsClient(Client):
 
         修改数据源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDataSource
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateDataSourceRequest`
@@ -1236,8 +1217,7 @@ class IoTAnalyticsClient(Client):
 
         创建存储组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateGroup
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateGroupRequest`
@@ -1297,8 +1277,7 @@ class IoTAnalyticsClient(Client):
 
         删除存储组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteGroup
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteGroupRequest`
@@ -1358,8 +1337,7 @@ class IoTAnalyticsClient(Client):
 
         查询存储组列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListGroups
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListGroupsRequest`
@@ -1429,8 +1407,7 @@ class IoTAnalyticsClient(Client):
 
         更新存储组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateGroup
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateGroupRequest`
@@ -1492,8 +1469,7 @@ class IoTAnalyticsClient(Client):
 
         删除存储
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDataStore
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteDataStoreRequest`
@@ -1553,8 +1529,7 @@ class IoTAnalyticsClient(Client):
 
         查询存储列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDataStores
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListDataStoresRequest`
@@ -1622,8 +1597,7 @@ class IoTAnalyticsClient(Client):
 
         更新存储
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDataStore
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateDataStoreRequest`
@@ -1685,8 +1659,7 @@ class IoTAnalyticsClient(Client):
 
         根据标签查询设备历史值
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListHistory
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListHistoryRequest`
@@ -1748,8 +1721,7 @@ class IoTAnalyticsClient(Client):
 
         根据标签聚合、查询数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListMetrics
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListMetricsRequest`
@@ -1811,8 +1783,7 @@ class IoTAnalyticsClient(Client):
 
         查询设备属性最新状态值
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPropertyValues
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowPropertyValuesRequest`
@@ -1874,8 +1845,7 @@ class IoTAnalyticsClient(Client):
 
         查询标签的值列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTagValues
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListTagValuesRequest`
@@ -1943,8 +1913,7 @@ class IoTAnalyticsClient(Client):
 
         通过API数据源上报设备数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddDevData
         :type request: :class:`huaweicloudsdkiotanalytics.v1.AddDevDataRequest`
@@ -2006,8 +1975,7 @@ class IoTAnalyticsClient(Client):
 
         新建管道作业时，需要在URL中指定是更新哪一个作业，将在body中附带完整的作业信息。（作业中各算子的详细配置请参考算子配置章节。） check参数表示是否需要对作业配置进行检查，若为false，则不检查，将作业保存为草稿；若为true，则对作业配置进行检查。当检查不通过时，将作业状态修改为草稿；检查通过时，将作业状态修改为就绪，并返回成功。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddPipelineJob
         :type request: :class:`huaweicloudsdkiotanalytics.v1.AddPipelineJobRequest`
@@ -2069,8 +2037,7 @@ class IoTAnalyticsClient(Client):
 
         删除用户指定的管道作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeletePipelineJob
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeletePipelineJobRequest`
@@ -2130,8 +2097,7 @@ class IoTAnalyticsClient(Client):
 
         获取用户下的所有管道作业，支持分页。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPipelineJobs
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListPipelineJobsRequest`
@@ -2205,8 +2171,7 @@ class IoTAnalyticsClient(Client):
 
         获取指定管道作业的详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPipelineJob
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowPipelineJobRequest`
@@ -2266,8 +2231,7 @@ class IoTAnalyticsClient(Client):
 
         提交管道作业到运行环境，实时接收数据源的数据并按用户定义的数据清洗逻辑对数据进行处理。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartPipelineJob
         :type request: :class:`huaweicloudsdkiotanalytics.v1.StartPipelineJobRequest`
@@ -2333,8 +2297,7 @@ class IoTAnalyticsClient(Client):
 
         停止一个正在运行中的管道作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StopPipelineJob
         :type request: :class:`huaweicloudsdkiotanalytics.v1.StopPipelineJobRequest`
@@ -2396,8 +2359,7 @@ class IoTAnalyticsClient(Client):
 
         更新管道作业时，需要在URL中指定是更新哪一个作业，将在body中附带完整的作业信息。（管道作业详细配置，每个作业可选择不同的算子进行组合，各算子的使用方法详见：数据管道算子配置指南。） check参数表示是否需要对作业配置进行检查，若为false，则不检查，将作业保存为草稿；若为true，则对作业配置进行检查。当检查不通过时，将作业状态修改为草稿；检查通过时，将作业状态修改为就绪，并返回成功。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdatePipelineJob
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdatePipelineJobRequest`
@@ -2461,8 +2423,7 @@ class IoTAnalyticsClient(Client):
 
         除名称和描述外，可先不提供作业的详细配置信息。 check参数表示是否需要对作业配置进行检查，若为false，则不检查，将作业保存为草稿；若为true，则对作业配置进行检查，无论检查是否通过，都将作业及配置信息保存为草稿，当检查不通过时，返回失败及错误信息，检查通过时，将作业状态修改为就绪，并返回成功。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateStreamingJob
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateStreamingJobRequest`
@@ -2524,8 +2485,7 @@ class IoTAnalyticsClient(Client):
 
         删除用户指定的作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteStreamingJobById
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteStreamingJobByIdRequest`
@@ -2585,8 +2545,7 @@ class IoTAnalyticsClient(Client):
 
         获取指定作业的详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowJobById
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowJobByIdRequest`
@@ -2646,8 +2605,7 @@ class IoTAnalyticsClient(Client):
 
         获取用户下的所有实时分析作业，支持分页。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowJobs
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowJobsRequest`
@@ -2713,8 +2671,7 @@ class IoTAnalyticsClient(Client):
 
         更新作业时，需要在URL中指定是更新哪一个作业，将在body中附带完整的作业信息。 check参数表示是否需要对作业配置进行检查，若为false，则不检查，将作业保存为草稿；若为true，则对作业配置进行检查，无论检查是否通过，都将作业及配置信息保存为草稿，当检查不通过时，返回失败及错误信息，检查通过时，将作业状态修改为就绪，并返回成功。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateStreamingJob
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateStreamingJobRequest`
@@ -2778,8 +2735,7 @@ class IoTAnalyticsClient(Client):
 
         提交作业到运行环境，实时接收数据并按用户定义的业务逻辑对数据进行处理。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartJob
         :type request: :class:`huaweicloudsdkiotanalytics.v1.StartJobRequest`
@@ -2845,8 +2801,7 @@ class IoTAnalyticsClient(Client):
 
         停止一个正在运行中的作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StopJob
         :type request: :class:`huaweicloudsdkiotanalytics.v1.StopJobRequest`
@@ -2908,8 +2863,7 @@ class IoTAnalyticsClient(Client):
 
         创建批计算资源。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateComputingResource
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateComputingResourceRequest`
@@ -2969,8 +2923,7 @@ class IoTAnalyticsClient(Client):
 
         删除批计算资源。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteComputingResource
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteComputingResourceRequest`
@@ -3030,8 +2983,7 @@ class IoTAnalyticsClient(Client):
 
         查询批计算资源列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListComputingResources
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListComputingResourcesRequest`
@@ -3095,8 +3047,7 @@ class IoTAnalyticsClient(Client):
 
         将SQL语句的查询结果下载到本地，只支持下载“QUERY”类型作业的查询结果。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExportDataset
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ExportDatasetRequest`
@@ -3158,8 +3109,7 @@ class IoTAnalyticsClient(Client):
 
         将数据从文件导入OBS表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ImportData
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ImportDataRequest`
@@ -3219,8 +3169,7 @@ class IoTAnalyticsClient(Client):
 
         在执行SQL查询语句的作业完成后，查看该作业执行的结果。目前仅支持查看“QUERY”类型作业的执行结果。该API只能查看前1000条的结果记录，若要查看全部的结果记录，需要先导出查询结果再进行查看。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDataset
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowDatasetRequest`
@@ -3286,8 +3235,7 @@ class IoTAnalyticsClient(Client):
 
         检查离线作业SQL语法。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ValidateSql
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ValidateSqlRequest`
@@ -3347,8 +3295,7 @@ class IoTAnalyticsClient(Client):
 
         创建离线作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateBatchJob
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateBatchJobRequest`
@@ -3408,8 +3355,7 @@ class IoTAnalyticsClient(Client):
 
         删除离线作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteBatchJob
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteBatchJobRequest`
@@ -3469,8 +3415,7 @@ class IoTAnalyticsClient(Client):
 
         查询离线作业列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListBatchJobs
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListBatchJobsRequest`
@@ -3542,8 +3487,7 @@ class IoTAnalyticsClient(Client):
 
         查询离线作业详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowBatchJob
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowBatchJobRequest`
@@ -3603,8 +3547,7 @@ class IoTAnalyticsClient(Client):
 
         修改离线作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateBatchJob
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateBatchJobRequest`
@@ -3666,8 +3609,7 @@ class IoTAnalyticsClient(Client):
 
         执行离线作业。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateRun
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateRunRequest`
@@ -3729,8 +3671,7 @@ class IoTAnalyticsClient(Client):
 
         停止提交中或运行中的离线作业，若作业已经执行结束或失败则无法停止。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteRun
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteRunRequest`
@@ -3792,8 +3733,7 @@ class IoTAnalyticsClient(Client):
 
         查询离线作业运行列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRuns
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListRunsRequest`
@@ -3873,8 +3813,7 @@ class IoTAnalyticsClient(Client):
 
         查询离线作业运行详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRun
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowRunRequest`
@@ -3938,8 +3877,7 @@ class IoTAnalyticsClient(Client):
 
         创建离线数据表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateTable
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateTableRequest`
@@ -3999,8 +3937,7 @@ class IoTAnalyticsClient(Client):
 
         删除离线数据表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteTable
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteTableRequest`
@@ -4060,8 +3997,7 @@ class IoTAnalyticsClient(Client):
 
         查询离线数据表列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTables
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListTablesRequest`
@@ -4131,8 +4067,7 @@ class IoTAnalyticsClient(Client):
 
         预览离线数据表内容。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTablePreview
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowTablePreviewRequest`
@@ -4192,8 +4127,7 @@ class IoTAnalyticsClient(Client):
 
         查询离线数据表结构。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTableSchema
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowTableSchemaRequest`

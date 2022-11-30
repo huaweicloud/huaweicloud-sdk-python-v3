@@ -26,7 +26,7 @@ class CreateCloudPhoneServerRequestBody:
         'image_id': 'str',
         'count': 'int',
         'keypair_name': 'str',
-        'ports': 'list[CreateCloudPhoneServerRequestBodyPorts]',
+        'ports': 'list[Port]',
         'band_width': 'CreateCloudPhoneServerRequestBodyBandWidth',
         'extend_param': 'CreateCloudPhoneServerRequestBodyExtendParam',
         'vnc_enable': 'str',
@@ -65,7 +65,7 @@ class CreateCloudPhoneServerRequestBody:
         :param keypair_name: 密钥对名称，不超过64个字节，用于云手机ADB登录
         :type keypair_name: str
         :param ports: 云手机启用的应用端口，云手机服务会做端口转发
-        :type ports: list[:class:`huaweicloudsdkcph.v1.CreateCloudPhoneServerRequestBodyPorts`]
+        :type ports: list[:class:`huaweicloudsdkcph.v1.Port`]
         :param band_width: 
         :type band_width: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneServerRequestBodyBandWidth`
         :param extend_param: 
@@ -246,7 +246,7 @@ class CreateCloudPhoneServerRequestBody:
         云手机启用的应用端口，云手机服务会做端口转发
 
         :return: The ports of this CreateCloudPhoneServerRequestBody.
-        :rtype: list[:class:`huaweicloudsdkcph.v1.CreateCloudPhoneServerRequestBodyPorts`]
+        :rtype: list[:class:`huaweicloudsdkcph.v1.Port`]
         """
         return self._ports
 
@@ -257,7 +257,7 @@ class CreateCloudPhoneServerRequestBody:
         云手机启用的应用端口，云手机服务会做端口转发
 
         :param ports: The ports of this CreateCloudPhoneServerRequestBody.
-        :type ports: list[:class:`huaweicloudsdkcph.v1.CreateCloudPhoneServerRequestBodyPorts`]
+        :type ports: list[:class:`huaweicloudsdkcph.v1.Port`]
         """
         self._ports = ports
 

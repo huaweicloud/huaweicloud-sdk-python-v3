@@ -47,8 +47,7 @@ class HssClient(Client):
 
         批量创建标签
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchCreateTags
         :type request: :class:`huaweicloudsdkhss.v5.BatchCreateTagsRequest`
@@ -112,8 +111,7 @@ class HssClient(Client):
 
         删除单个资源下的标签
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteResourceInstanceTag
         :type request: :class:`huaweicloudsdkhss.v5.DeleteResourceInstanceTagRequest`
@@ -177,8 +175,7 @@ class HssClient(Client):
 
         查询云服务器列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListHostStatus
         :type request: :class:`huaweicloudsdkhss.v5.ListHostStatusRequest`
@@ -288,8 +285,7 @@ class HssClient(Client):
 
         查询口令复杂度策略检测报告
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPasswordComplexity
         :type request: :class:`huaweicloudsdkhss.v5.ListPasswordComplexityRequest`
@@ -359,8 +355,7 @@ class HssClient(Client):
 
         查询配额详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListQuotasDetail
         :type request: :class:`huaweicloudsdkhss.v5.ListQuotasDetailRequest`
@@ -440,8 +435,7 @@ class HssClient(Client):
 
         查询指定安全配置项的检查项列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRiskConfigCheckRules
         :type request: :class:`huaweicloudsdkhss.v5.ListRiskConfigCheckRulesRequest`
@@ -517,8 +511,7 @@ class HssClient(Client):
 
         查询指定安全配置项的受影响服务器列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRiskConfigHosts
         :type request: :class:`huaweicloudsdkhss.v5.ListRiskConfigHostsRequest`
@@ -590,8 +583,7 @@ class HssClient(Client):
 
         查询租户的服务器安全配置检测结果列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRiskConfigs
         :type request: :class:`huaweicloudsdkhss.v5.ListRiskConfigsRequest`
@@ -663,8 +655,7 @@ class HssClient(Client):
 
         查入侵事件列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSecurityEvents
         :type request: :class:`huaweicloudsdkhss.v5.ListSecurityEventsRequest`
@@ -753,8 +744,7 @@ class HssClient(Client):
 
         获取账户变动历史记录信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListUserChangeHistories
         :type request: :class:`huaweicloudsdkhss.v5.ListUserChangeHistoriesRequest`
@@ -834,8 +824,7 @@ class HssClient(Client):
 
         获取资产的账号列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListUsers
         :type request: :class:`huaweicloudsdkhss.v5.ListUsersRequest`
@@ -913,8 +902,7 @@ class HssClient(Client):
 
         查询漏洞列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListVulnerabilities
         :type request: :class:`huaweicloudsdkhss.v5.ListVulnerabilitiesRequest`
@@ -984,8 +972,7 @@ class HssClient(Client):
 
         查询弱口令检测结果列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListWeakPasswordUsers
         :type request: :class:`huaweicloudsdkhss.v5.ListWeakPasswordUsersRequest`
@@ -1057,8 +1044,7 @@ class HssClient(Client):
 
         查询配置检查项检测报告
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowCheckRuleDetail
         :type request: :class:`huaweicloudsdkhss.v5.ShowCheckRuleDetailRequest`
@@ -1126,8 +1112,7 @@ class HssClient(Client):
 
         查询配额信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowResourceQuotas
         :type request: :class:`huaweicloudsdkhss.v5.ShowResourceQuotasRequest`
@@ -1193,8 +1178,7 @@ class HssClient(Client):
 
         查询指定安全配置项的检查结果
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRiskConfigDetail
         :type request: :class:`huaweicloudsdkhss.v5.ShowRiskConfigDetailRequest`
@@ -1264,8 +1248,7 @@ class HssClient(Client):
 
         切换防护状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SwitchHostsProtectStatus
         :type request: :class:`huaweicloudsdkhss.v5.SwitchHostsProtectStatusRequest`

@@ -47,8 +47,7 @@ class CbrClient(Client):
 
         添加备份可共享的成员，只有云服务器备份可以添加备份共享成员，且仅支持在同一区域的不同用户间共享。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddMember
         :type request: :class:`huaweicloudsdkcbr.v1.AddMemberRequest`
@@ -110,8 +109,7 @@ class CbrClient(Client):
 
         存储库添加资源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AddVaultResource
         :type request: :class:`huaweicloudsdkcbr.v1.AddVaultResourceRequest`
@@ -173,8 +171,7 @@ class CbrClient(Client):
 
         存储库设置策略
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AssociateVaultPolicy
         :type request: :class:`huaweicloudsdkcbr.v1.AssociateVaultPolicyRequest`
@@ -243,8 +240,7 @@ class CbrClient(Client):
             删除时，允许重复key。
             删除时，如果删除的标签不存在，默认处理成功,删除时不对标签字符集范围做校验。key长度127个字符，value为255个字符。删除时tags结构体不能缺失，key不能为空，或者空字符串。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchCreateAndDeleteVaultTags
         :type request: :class:`huaweicloudsdkcbr.v1.BatchCreateAndDeleteVaultTagsRequest`
@@ -306,8 +302,7 @@ class CbrClient(Client):
 
         跨区域复制备份。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CopyBackup
         :type request: :class:`huaweicloudsdkcbr.v1.CopyBackupRequest`
@@ -369,8 +364,7 @@ class CbrClient(Client):
 
         执行复制
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CopyCheckpoint
         :type request: :class:`huaweicloudsdkcbr.v1.CopyCheckpointRequest`
@@ -430,8 +424,7 @@ class CbrClient(Client):
 
         对存储库执行备份，生成备份还原点
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateCheckpoint
         :type request: :class:`huaweicloudsdkcbr.v1.CreateCheckpointRequest`
@@ -491,8 +484,7 @@ class CbrClient(Client):
 
         创建策略，策略分为备份策略和复制策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreatePolicy
         :type request: :class:`huaweicloudsdkcbr.v1.CreatePolicyRequest`
@@ -552,8 +544,7 @@ class CbrClient(Client):
 
         创建存储库
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateVault
         :type request: :class:`huaweicloudsdkcbr.v1.CreateVaultRequest`
@@ -614,8 +605,7 @@ class CbrClient(Client):
         一个资源上最多有10个标签。
         此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateVaultTags
         :type request: :class:`huaweicloudsdkcbr.v1.CreateVaultTagsRequest`
@@ -677,8 +667,7 @@ class CbrClient(Client):
 
         删除单个备份。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteBackup
         :type request: :class:`huaweicloudsdkcbr.v1.DeleteBackupRequest`
@@ -738,8 +727,7 @@ class CbrClient(Client):
 
         删除指定的备份共享成员
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteMember
         :type request: :class:`huaweicloudsdkcbr.v1.DeleteMemberRequest`
@@ -801,8 +789,7 @@ class CbrClient(Client):
 
         删除策略
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeletePolicy
         :type request: :class:`huaweicloudsdkcbr.v1.DeletePolicyRequest`
@@ -862,8 +849,7 @@ class CbrClient(Client):
 
         删除存储库。若删除储存库，将一并删除存储库中的所有备份。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteVault
         :type request: :class:`huaweicloudsdkcbr.v1.DeleteVaultRequest`
@@ -923,8 +909,7 @@ class CbrClient(Client):
 
         幂等接口：删除时，如果删除的标签不存在，返回404。Key不能为空或者空字符串。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteVaultTag
         :type request: :class:`huaweicloudsdkcbr.v1.DeleteVaultTagRequest`
@@ -986,8 +971,7 @@ class CbrClient(Client):
 
         存储库解除策略
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DisassociateVaultPolicy
         :type request: :class:`huaweicloudsdkcbr.v1.DisassociateVaultPolicyRequest`
@@ -1049,8 +1033,7 @@ class CbrClient(Client):
 
         同步线下混合云VMware备份副本
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ImportBackup
         :type request: :class:`huaweicloudsdkcbr.v1.ImportBackupRequest`
@@ -1110,8 +1093,7 @@ class CbrClient(Client):
 
         查询所有副本
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListBackups
         :type request: :class:`huaweicloudsdkcbr.v1.ListBackupsRequest`
@@ -1213,8 +1195,7 @@ class CbrClient(Client):
 
         查询任务列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListOpLogs
         :type request: :class:`huaweicloudsdkcbr.v1.ListOpLogsRequest`
@@ -1296,8 +1277,7 @@ class CbrClient(Client):
 
         查询策略列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPolicies
         :type request: :class:`huaweicloudsdkcbr.v1.ListPoliciesRequest`
@@ -1359,8 +1339,7 @@ class CbrClient(Client):
 
         查询可保护性资源列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProtectable
         :type request: :class:`huaweicloudsdkcbr.v1.ListProtectableRequest`
@@ -1434,8 +1413,7 @@ class CbrClient(Client):
 
         查询存储库列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListVault
         :type request: :class:`huaweicloudsdkcbr.v1.ListVaultRequest`
@@ -1515,8 +1493,7 @@ class CbrClient(Client):
 
         支持资源迁移到另一个存储库，不删除备份。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for MigrateVaultResource
         :type request: :class:`huaweicloudsdkcbr.v1.MigrateVaultResourceRequest`
@@ -1578,8 +1555,7 @@ class CbrClient(Client):
 
         移除存储库中的资源，若移除资源，将一并删除该资源在保管库中的备份
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RemoveVaultResource
         :type request: :class:`huaweicloudsdkcbr.v1.RemoveVaultResourceRequest`
@@ -1641,8 +1617,7 @@ class CbrClient(Client):
 
         恢复备份数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RestoreBackup
         :type request: :class:`huaweicloudsdkcbr.v1.RestoreBackupRequest`
@@ -1704,8 +1679,7 @@ class CbrClient(Client):
 
         根据指定id查询单个副本。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowBackup
         :type request: :class:`huaweicloudsdkcbr.v1.ShowBackupRequest`
@@ -1765,8 +1739,7 @@ class CbrClient(Client):
 
         根据还原点ID查询指定还原点
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowCheckpoint
         :type request: :class:`huaweicloudsdkcbr.v1.ShowCheckpointRequest`
@@ -1826,8 +1799,7 @@ class CbrClient(Client):
 
         获取备份成员的详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowMemberDetail
         :type request: :class:`huaweicloudsdkcbr.v1.ShowMemberDetailRequest`
@@ -1889,8 +1861,7 @@ class CbrClient(Client):
 
         获取备份共享成员的列表信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowMembersDetail
         :type request: :class:`huaweicloudsdkcbr.v1.ShowMembersDetailRequest`
@@ -1966,8 +1937,7 @@ class CbrClient(Client):
 
         根据指定任务ID查询任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowOpLog
         :type request: :class:`huaweicloudsdkcbr.v1.ShowOpLogRequest`
@@ -2027,8 +1997,7 @@ class CbrClient(Client):
 
         查询单个策略
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPolicy
         :type request: :class:`huaweicloudsdkcbr.v1.ShowPolicyRequest`
@@ -2088,8 +2057,7 @@ class CbrClient(Client):
 
         根据ID查询可保护性资源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowProtectable
         :type request: :class:`huaweicloudsdkcbr.v1.ShowProtectableRequest`
@@ -2151,8 +2119,7 @@ class CbrClient(Client):
 
         查询本区域的复制能力
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowReplicationCapabilities
         :type request: :class:`huaweicloudsdkcbr.v1.ShowReplicationCapabilitiesRequest`
@@ -2210,8 +2177,7 @@ class CbrClient(Client):
 
         根据ID查询指定存储库
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowVault
         :type request: :class:`huaweicloudsdkcbr.v1.ShowVaultRequest`
@@ -2272,8 +2238,7 @@ class CbrClient(Client):
         查询租户在指定Region和实例类型的所有标签集合
         标签管理服务需要能够列出当前租户全部已使用的标签集合，为各服务Console打标签和过滤实例时提供标签联想功能
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowVaultProjectTag
         :type request: :class:`huaweicloudsdkcbr.v1.ShowVaultProjectTagRequest`
@@ -2332,8 +2297,7 @@ class CbrClient(Client):
         使用标签过滤实例
         标签管理服务需要提供按标签过滤各服务实例并汇总显示在列表中，需要各服务提供查询能力
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowVaultResourceInstances
         :type request: :class:`huaweicloudsdkcbr.v1.ShowVaultResourceInstancesRequest`
@@ -2394,8 +2358,7 @@ class CbrClient(Client):
         查询指定实例的标签信息
         标签管理服务需要使用该接口查询指定实例的全部标签数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowVaultTag
         :type request: :class:`huaweicloudsdkcbr.v1.ShowVaultTagRequest`
@@ -2455,8 +2418,7 @@ class CbrClient(Client):
 
         更新备份共享成员的状态，需要接收方执行此API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateMemberStatus
         :type request: :class:`huaweicloudsdkcbr.v1.UpdateMemberStatusRequest`
@@ -2520,8 +2482,7 @@ class CbrClient(Client):
 
         修改策略
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdatePolicy
         :type request: :class:`huaweicloudsdkcbr.v1.UpdatePolicyRequest`
@@ -2583,8 +2544,7 @@ class CbrClient(Client):
 
         根据存储库ID修改存储库
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateVault
         :type request: :class:`huaweicloudsdkcbr.v1.UpdateVaultRequest`

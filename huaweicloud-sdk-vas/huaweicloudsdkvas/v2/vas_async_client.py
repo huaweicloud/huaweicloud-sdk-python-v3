@@ -47,8 +47,7 @@ class VasAsyncClient(Client):
 
         该接口用于创建服务作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateTasks
@@ -111,8 +110,7 @@ class VasAsyncClient(Client):
 
         该接口用于删除服务作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteTask
@@ -175,8 +173,7 @@ class VasAsyncClient(Client):
 
         该接口用于获取服务作业列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTasksDetails
@@ -255,8 +252,7 @@ class VasAsyncClient(Client):
 
         该接口用于查询服务作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTask
@@ -319,8 +315,7 @@ class VasAsyncClient(Client):
 
         该接口用于启动服务作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartTask
@@ -383,8 +378,7 @@ class VasAsyncClient(Client):
 
         该接口用于停止服务作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopTask
@@ -447,8 +441,7 @@ class VasAsyncClient(Client):
 
         该接口用于更新服务作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateTask

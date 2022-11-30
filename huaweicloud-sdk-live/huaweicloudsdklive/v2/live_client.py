@@ -51,8 +51,7 @@ class LiveClient(Client):
         
         支持查询当天，当前数据延时少于1分钟。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAreaDetail
         :type request: :class:`huaweicloudsdklive.v2.ListAreaDetailRequest`
@@ -133,8 +132,7 @@ class LiveClient(Client):
 
         查询播放域名带宽数据。  最大查询跨度31天，最大查询周期一年。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListBandwidthDetail
         :type request: :class:`huaweicloudsdklive.v2.ListBandwidthDetailRequest`
@@ -216,8 +214,7 @@ class LiveClient(Client):
 
         查询指定时间范围内播放带宽峰值。  最大查询跨度31天，最大查询周期一年。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDomainBandwidthPeak
         :type request: :class:`huaweicloudsdklive.v2.ListDomainBandwidthPeakRequest`
@@ -294,8 +291,7 @@ class LiveClient(Client):
 
         查询播放域名流量数据。  最大查询跨度31天，最大查询周期一年。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDomainTrafficDetail
         :type request: :class:`huaweicloudsdklive.v2.ListDomainTrafficDetailRequest`
@@ -374,8 +370,7 @@ class LiveClient(Client):
 
         查询指定时间范围内流量汇总量。  最大查询跨度31天，最大查询周期一年。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDomainTrafficSummary
         :type request: :class:`huaweicloudsdklive.v2.ListDomainTrafficSummaryRequest`
@@ -456,8 +451,7 @@ class LiveClient(Client):
         
         最大查询跨度1天。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListHistoryStreams
         :type request: :class:`huaweicloudsdklive.v2.ListHistoryStreamsRequest`
@@ -529,8 +523,7 @@ class LiveClient(Client):
 
         查询直播拉流HTTP状态码接口。  获取加速域名1分钟粒度的HTTP返回码  最大查询跨度不能超过24小时，最大查询周期7天。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListQueryHttpCode
         :type request: :class:`huaweicloudsdklive.v2.ListQueryHttpCodeRequest`
@@ -604,8 +597,7 @@ class LiveClient(Client):
 
         查询直播租户每小时录制的最大并发数，计算1小时内每分钟的并发总路数，取最大值做为统计值。  最大查询跨度31天，最大查询周期90天。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRecordData
         :type request: :class:`huaweicloudsdklive.v2.ListRecordDataRequest`
@@ -669,8 +661,7 @@ class LiveClient(Client):
 
         查询直播域名每小时的截图数量。  最大查询跨度31天，最大查询周期90天。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSnapshotData
         :type request: :class:`huaweicloudsdklive.v2.ListSnapshotDataRequest`
@@ -734,8 +725,7 @@ class LiveClient(Client):
 
         查询直播域名每小时的转码时长数据。  最大查询跨度31天，最大查询周期90天。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTranscodeData
         :type request: :class:`huaweicloudsdklive.v2.ListTranscodeDataRequest`
@@ -801,8 +791,7 @@ class LiveClient(Client):
 
         查询观众趋势。  最大查询跨度31天，最大查询周期一年。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListUsersOfStream
         :type request: :class:`huaweicloudsdklive.v2.ListUsersOfStreamRequest`
@@ -883,8 +872,7 @@ class LiveClient(Client):
 
         查询域名维度推流路数接口。  最大查询跨度31天，最大查询周期1年。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowStreamCount
         :type request: :class:`huaweicloudsdklive.v2.ShowStreamCountRequest`
@@ -950,8 +938,7 @@ class LiveClient(Client):
         查询播放画像信息。  最大查询跨度1天，最大查询周期31天。
         不统计协议为HLS的播放时长（play_duration）信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowStreamPortrait
         :type request: :class:`huaweicloudsdklive.v2.ShowStreamPortraitRequest`
@@ -1015,8 +1002,7 @@ class LiveClient(Client):
 
         查询上行带宽数据。  最大查询跨度31天，最大查询周期1年。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowUpBandwidth
         :type request: :class:`huaweicloudsdklive.v2.ShowUpBandwidthRequest`
@@ -1097,8 +1083,7 @@ class LiveClient(Client):
         
         返回的码率数据列表粒度为1秒钟。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSingleStreamBitrate
         :type request: :class:`huaweicloudsdklive.v2.ListSingleStreamBitrateRequest`
@@ -1170,8 +1155,7 @@ class LiveClient(Client):
         
         返回的码率数据列表粒度为1秒钟。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSingleStreamDetail
         :type request: :class:`huaweicloudsdklive.v2.ListSingleStreamDetailRequest`
@@ -1243,8 +1227,7 @@ class LiveClient(Client):
         
         返回的帧率数据列表粒度为1秒钟。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSingleStreamFramerate
         :type request: :class:`huaweicloudsdklive.v2.ListSingleStreamFramerateRequest`

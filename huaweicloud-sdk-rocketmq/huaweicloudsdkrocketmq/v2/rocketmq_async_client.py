@@ -47,8 +47,7 @@ class RocketMQAsyncClient(Client):
 
         批量删除实例。**实例删除后，实例中原有的数据将被删除，且没有备份，请谨慎操作。**
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeleteInstances
@@ -109,8 +108,7 @@ class RocketMQAsyncClient(Client):
 
         批量修改消费组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchUpdateConsumerGroup
@@ -173,8 +171,7 @@ class RocketMQAsyncClient(Client):
 
         创建消费组或批量删除消费组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateConsumerGroupOrBatchDeleteConsumerGroup
@@ -239,8 +236,7 @@ class RocketMQAsyncClient(Client):
 
         创建实例，该接口创建的实例为按需计费的方式。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreatePostPaidInstance
@@ -301,8 +297,7 @@ class RocketMQAsyncClient(Client):
 
         创建用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateUser
@@ -365,8 +360,7 @@ class RocketMQAsyncClient(Client):
 
         删除指定消费组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteConsumerGroup
@@ -429,8 +423,7 @@ class RocketMQAsyncClient(Client):
 
         删除指定的实例，释放该实例的所有资源。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteInstance
@@ -491,8 +484,7 @@ class RocketMQAsyncClient(Client):
 
         删除用户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteUser
@@ -555,8 +547,7 @@ class RocketMQAsyncClient(Client):
 
         导出死信消息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ExportDlqMessage
@@ -619,8 +610,7 @@ class RocketMQAsyncClient(Client):
 
         在创建实例时，需要配置实例所在的可用区ID，可通过该接口查询可用区的ID。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAvailableZones
@@ -679,8 +669,7 @@ class RocketMQAsyncClient(Client):
 
         查询代理列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListBrokers
@@ -741,8 +730,7 @@ class RocketMQAsyncClient(Client):
 
         查询消费组的授权用户列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListConsumeGroupAccessPolicy
@@ -811,8 +799,7 @@ class RocketMQAsyncClient(Client):
 
         查询消费组列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListInstanceConsumerGroups
@@ -879,8 +866,7 @@ class RocketMQAsyncClient(Client):
 
         查询租户的实例列表，支持按照条件查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListInstances
@@ -953,8 +939,7 @@ class RocketMQAsyncClient(Client):
 
         查询消息轨迹。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListMessageTrace
@@ -1019,8 +1004,7 @@ class RocketMQAsyncClient(Client):
 
         查询消息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListMessages
@@ -1095,8 +1079,7 @@ class RocketMQAsyncClient(Client):
 
         查询主题的授权用户列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTopicAccessPolicy
@@ -1163,8 +1146,7 @@ class RocketMQAsyncClient(Client):
 
         查询用户列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListUser
@@ -1229,8 +1211,7 @@ class RocketMQAsyncClient(Client):
 
         重置消费进度。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetConsumeOffset
@@ -1297,8 +1278,7 @@ class RocketMQAsyncClient(Client):
 
         查询消费列表或详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowConsumerListOrDetails
@@ -1363,8 +1343,7 @@ class RocketMQAsyncClient(Client):
 
         查询指定消费组详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowGroup
@@ -1427,8 +1406,7 @@ class RocketMQAsyncClient(Client):
 
         查询指定实例的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowInstance
@@ -1489,8 +1467,7 @@ class RocketMQAsyncClient(Client):
 
         查询用户详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowUser
@@ -1553,8 +1530,7 @@ class RocketMQAsyncClient(Client):
 
         修改指定消费组参数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateConsumerGroup
@@ -1619,8 +1595,7 @@ class RocketMQAsyncClient(Client):
 
         修改实例的名称和描述信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateInstance
@@ -1683,8 +1658,7 @@ class RocketMQAsyncClient(Client):
 
         修改用户参数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateUser
@@ -1749,8 +1723,7 @@ class RocketMQAsyncClient(Client):
 
         创建主题或批量删除主题。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateTopicOrBatchDeleteTopic
@@ -1815,8 +1788,7 @@ class RocketMQAsyncClient(Client):
 
         删除指定主题。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteTopic
@@ -1879,8 +1851,7 @@ class RocketMQAsyncClient(Client):
 
         查询主题消费组列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListConsumerGroupOfTopic
@@ -1943,8 +1914,7 @@ class RocketMQAsyncClient(Client):
 
         查询单个主题。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowOneTopic
@@ -2007,8 +1977,7 @@ class RocketMQAsyncClient(Client):
 
         查询主题的消息数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTopicStatus
@@ -2071,8 +2040,7 @@ class RocketMQAsyncClient(Client):
 
         修改主题。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateTopic

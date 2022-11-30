@@ -20,7 +20,7 @@ class UpdateKeypairRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'servers': 'list[UpdateKeypairRequestBodyServers]'
+        'servers': 'list[ServerKeypair]'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class UpdateKeypairRequestBody:
         The model defined in huaweicloud sdk
 
         :param servers: 待更改密钥对的云手机服务器信息
-        :type servers: list[:class:`huaweicloudsdkcph.v1.UpdateKeypairRequestBodyServers`]
+        :type servers: list[:class:`huaweicloudsdkcph.v1.ServerKeypair`]
         """
         
         
@@ -50,7 +50,7 @@ class UpdateKeypairRequestBody:
         待更改密钥对的云手机服务器信息
 
         :return: The servers of this UpdateKeypairRequestBody.
-        :rtype: list[:class:`huaweicloudsdkcph.v1.UpdateKeypairRequestBodyServers`]
+        :rtype: list[:class:`huaweicloudsdkcph.v1.ServerKeypair`]
         """
         return self._servers
 
@@ -61,7 +61,7 @@ class UpdateKeypairRequestBody:
         待更改密钥对的云手机服务器信息
 
         :param servers: The servers of this UpdateKeypairRequestBody.
-        :type servers: list[:class:`huaweicloudsdkcph.v1.UpdateKeypairRequestBodyServers`]
+        :type servers: list[:class:`huaweicloudsdkcph.v1.ServerKeypair`]
         """
         self._servers = servers
 

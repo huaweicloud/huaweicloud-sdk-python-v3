@@ -47,8 +47,7 @@ class ScmClient(Client):
 
         删除证书实例，即将证书资源从华为云系统中删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteCertificate
         :type request: :class:`huaweicloudsdkscm.v3.DeleteCertificateRequest`
@@ -108,8 +107,7 @@ class ScmClient(Client):
 
         导出证书。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExportCertificate
         :type request: :class:`huaweicloudsdkscm.v3.ExportCertificateRequest`
@@ -169,8 +167,7 @@ class ScmClient(Client):
 
         导入证书到SCM服务管理。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ImportCertificate
         :type request: :class:`huaweicloudsdkscm.v3.ImportCertificateRequest`
@@ -230,8 +227,7 @@ class ScmClient(Client):
 
         根据证书名称或绑定域名查询证书列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCertificates
         :type request: :class:`huaweicloudsdkscm.v3.ListCertificatesRequest`
@@ -303,8 +299,7 @@ class ScmClient(Client):
 
         推送SSL证书到弹性负载均衡（Elastic Load Balance，简称ELB）、Web应用防火墙（Web Application Firewall，WAF）、CDN（Content Delivery Network，内容分发网络）等其它华为云产品中。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for PushCertificate
         :type request: :class:`huaweicloudsdkscm.v3.PushCertificateRequest`
@@ -366,8 +361,7 @@ class ScmClient(Client):
 
         查询某张证书的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowCertificate
         :type request: :class:`huaweicloudsdkscm.v3.ShowCertificateRequest`

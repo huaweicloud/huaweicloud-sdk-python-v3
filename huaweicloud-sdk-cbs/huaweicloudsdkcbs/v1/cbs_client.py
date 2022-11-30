@@ -48,8 +48,7 @@ class CbsClient(Client):
         获取完全匹配的热点标准问题列表。
         默认按照完全匹配标准问题被问及的频次降序排序。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CollectHotQuestions
         :type request: :class:`huaweicloudsdkcbs.v1.CollectHotQuestionsRequest`
@@ -121,8 +120,7 @@ class CbsClient(Client):
 
         用户问关键词统计。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CollectKeyWords
         :type request: :class:`huaweicloudsdkcbs.v1.CollectKeyWordsRequest`
@@ -189,8 +187,7 @@ class CbsClient(Client):
         指定领域获取指定时间范围内的问题答复率，支持按周期统计。
         如果领域未指定则表示获取所有领域的问题答复率。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CollectReplyRates
         :type request: :class:`huaweicloudsdkcbs.v1.CollectReplyRatesRequest`
@@ -260,8 +257,7 @@ class CbsClient(Client):
 
         获取用户会话统计信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CollectSessionStats
         :type request: :class:`huaweicloudsdkcbs.v1.CollectSessionStatsRequest`
@@ -329,8 +325,7 @@ class CbsClient(Client):
 
         问答会话API由开启会话、处理会话、关闭会话三个接口组成。用户可通过调用该接口创建会话。该接口仅支持老用户，新用户请优先使用问答机器人API接口进行调用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateSession
         :type request: :class:`huaweicloudsdkcbs.v1.CreateSessionRequest`
@@ -390,8 +385,7 @@ class CbsClient(Client):
 
         问答会话API由开启会话、处理会话、关闭会话三个接口组成。用户可通过调用该接口关闭会话。该接口即将下线，请优先使用问答机器人API接口进行调用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteSession
         :type request: :class:`huaweicloudsdkcbs.v1.DeleteSessionRequest`
@@ -453,8 +447,7 @@ class CbsClient(Client):
 
         用户调用该接口和机器人进行聊天。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExecuteQaChat
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteQaChatRequest`
@@ -516,8 +509,7 @@ class CbsClient(Client):
 
         问答会话API由开启会话、处理会话、关闭会话三个接口组成。用户可通过调用该接口与机器人进行会话。该接口即将下线，请优先使用问答机器人API接口进行调用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExecuteSession
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteSessionRequest`
@@ -581,8 +573,7 @@ class CbsClient(Client):
 
         获取用户输入问题的提示问题列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListSuggestions
         :type request: :class:`huaweicloudsdkcbs.v1.ListSuggestionsRequest`
@@ -644,8 +635,7 @@ class CbsClient(Client):
 
         智能问答返回的结果后，用户是否转人工。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for TagLabor
         :type request: :class:`huaweicloudsdkcbs.v1.TagLaborRequest`
@@ -707,8 +697,7 @@ class CbsClient(Client):
 
         用户提出问题后，对智能问答返回的结果是否满意。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for TagSatisfaction
         :type request: :class:`huaweicloudsdkcbs.v1.TagSatisfactionRequest`

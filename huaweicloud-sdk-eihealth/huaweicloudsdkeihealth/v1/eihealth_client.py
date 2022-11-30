@@ -47,8 +47,7 @@ class EiHealthClient(Client):
 
         批量导入应用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchImportApp
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchImportAppRequest`
@@ -110,8 +109,7 @@ class EiHealthClient(Client):
 
         创建应用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateApp
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateAppRequest`
@@ -173,8 +171,7 @@ class EiHealthClient(Client):
 
         删除应用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteApp
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteAppRequest`
@@ -236,8 +233,7 @@ class EiHealthClient(Client):
 
         获取应用列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApp
         :type request: :class:`huaweicloudsdkeihealth.v1.ListAppRequest`
@@ -301,8 +297,7 @@ class EiHealthClient(Client):
 
         获取应用详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowApp
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowAppRequest`
@@ -364,8 +359,7 @@ class EiHealthClient(Client):
 
         订阅应用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SubscribeApp
         :type request: :class:`huaweicloudsdkeihealth.v1.SubscribeAppRequest`
@@ -427,8 +421,7 @@ class EiHealthClient(Client):
 
         更新应用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateApp
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateAppRequest`
@@ -492,8 +485,7 @@ class EiHealthClient(Client):
 
         获取资产列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAsset
         :type request: :class:`huaweicloudsdkeihealth.v1.ListAssetRequest`
@@ -567,8 +559,7 @@ class EiHealthClient(Client):
 
         获取属性值列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProperty
         :type request: :class:`huaweicloudsdkeihealth.v1.ListPropertyRequest`
@@ -628,8 +619,7 @@ class EiHealthClient(Client):
 
         查询资产详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAsset
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowAssetRequest`
@@ -689,8 +679,7 @@ class EiHealthClient(Client):
 
         查询资产版本详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAssetVersion
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowAssetVersionRequest`
@@ -752,8 +741,7 @@ class EiHealthClient(Client):
 
         创建自动作业模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateAutoJob
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateAutoJobRequest`
@@ -815,8 +803,7 @@ class EiHealthClient(Client):
 
         删除自动作业模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteAutoJob
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteAutoJobRequest`
@@ -878,8 +865,7 @@ class EiHealthClient(Client):
 
         获取自动作业模板列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListAutoJob
         :type request: :class:`huaweicloudsdkeihealth.v1.ListAutoJobRequest`
@@ -949,8 +935,7 @@ class EiHealthClient(Client):
 
         查询自动作业模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowAutoJob
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowAutoJobRequest`
@@ -1012,8 +997,7 @@ class EiHealthClient(Client):
 
         启动自动作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartAutoJob
         :type request: :class:`huaweicloudsdkeihealth.v1.StartAutoJobRequest`
@@ -1075,8 +1059,7 @@ class EiHealthClient(Client):
 
         停止自动作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StopAutoJob
         :type request: :class:`huaweicloudsdkeihealth.v1.StopAutoJobRequest`
@@ -1138,8 +1121,7 @@ class EiHealthClient(Client):
 
         更新自动作业模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateAutoJob
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateAutoJobRequest`
@@ -1203,8 +1185,7 @@ class EiHealthClient(Client):
 
         购买计算资源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateComputingResource
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateComputingResourceRequest`
@@ -1264,8 +1245,7 @@ class EiHealthClient(Client):
 
         删除计算资源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteComputingResource
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteComputingResourceRequest`
@@ -1325,8 +1305,7 @@ class EiHealthClient(Client):
 
         查询计算资源规格
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListComputingResourceFlavors
         :type request: :class:`huaweicloudsdkeihealth.v1.ListComputingResourceFlavorsRequest`
@@ -1386,8 +1365,7 @@ class EiHealthClient(Client):
 
         查询计算资源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListComputingResources
         :type request: :class:`huaweicloudsdkeihealth.v1.ListComputingResourcesRequest`
@@ -1451,8 +1429,7 @@ class EiHealthClient(Client):
 
         重启计算资源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RebootNode
         :type request: :class:`huaweicloudsdkeihealth.v1.RebootNodeRequest`
@@ -1514,8 +1491,7 @@ class EiHealthClient(Client):
 
         查询bms计算资源显卡id列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowBmsDevices
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowBmsDevicesRequest`
@@ -1575,8 +1551,7 @@ class EiHealthClient(Client):
 
         获取EVS配额及使用情况
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowEvsQuota
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowEvsQuotaRequest`
@@ -1634,8 +1609,7 @@ class EiHealthClient(Client):
 
         获取节点剩余配额
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowLeftQuota
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowLeftQuotaRequest`
@@ -1693,8 +1667,7 @@ class EiHealthClient(Client):
 
         查询计算资源调度信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowSchedule
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowScheduleRequest`
@@ -1754,8 +1727,7 @@ class EiHealthClient(Client):
 
         启动计算资源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartNode
         :type request: :class:`huaweicloudsdkeihealth.v1.StartNodeRequest`
@@ -1815,8 +1787,7 @@ class EiHealthClient(Client):
 
         关闭计算资源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StopNode
         :type request: :class:`huaweicloudsdkeihealth.v1.StopNodeRequest`
@@ -1878,8 +1849,7 @@ class EiHealthClient(Client):
 
         修改计算资源调度信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateSchedule
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateScheduleRequest`
@@ -1941,8 +1911,7 @@ class EiHealthClient(Client):
 
         将需要归档的重要数据拷贝到数据归档桶
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateBackup
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateBackupRequest`
@@ -2004,8 +1973,7 @@ class EiHealthClient(Client):
 
         删除指定的归档
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteBackup
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteBackupRequest`
@@ -2067,8 +2035,7 @@ class EiHealthClient(Client):
 
         分页查询用户管理的项目的所有历史归档记录
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListBackup
         :type request: :class:`huaweicloudsdkeihealth.v1.ListBackupRequest`
@@ -2136,8 +2103,7 @@ class EiHealthClient(Client):
 
         将指定的归档数据拷贝到目标项目的某个目录下
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RestoreBackup
         :type request: :class:`huaweicloudsdkeihealth.v1.RestoreBackupRequest`
@@ -2201,8 +2167,7 @@ class EiHealthClient(Client):
 
         根据归档ID获取该归档的全数据清单
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowBackupPath
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowBackupPathRequest`
@@ -2264,8 +2229,7 @@ class EiHealthClient(Client):
 
         复制项目数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CopyData
         :type request: :class:`huaweicloudsdkeihealth.v1.CopyDataRequest`
@@ -2327,8 +2291,7 @@ class EiHealthClient(Client):
 
         创建文件夹
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateData
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateDataRequest`
@@ -2390,8 +2353,7 @@ class EiHealthClient(Client):
 
         批量删除项目数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteData
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteDataRequest`
@@ -2453,8 +2415,7 @@ class EiHealthClient(Client):
 
         导入项目数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ImportData
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportDataRequest`
@@ -2516,8 +2477,7 @@ class EiHealthClient(Client):
 
         导入网上数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ImportNetworkData
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportNetworkDataRequest`
@@ -2579,8 +2539,7 @@ class EiHealthClient(Client):
 
         获取桶列表(包含当前项目桶和引用项目桶)
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListBucket
         :type request: :class:`huaweicloudsdkeihealth.v1.ListBucketRequest`
@@ -2640,8 +2599,7 @@ class EiHealthClient(Client):
 
         查询指定目录下的数据列表，如果不指定默认查询根目录
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListData
         :type request: :class:`huaweicloudsdkeihealth.v1.ListDataRequest`
@@ -2715,8 +2673,7 @@ class EiHealthClient(Client):
 
         引用项目数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for QuoteData
         :type request: :class:`huaweicloudsdkeihealth.v1.QuoteDataRequest`
@@ -2778,8 +2735,7 @@ class EiHealthClient(Client):
 
         获取桶存量信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowBucketStorage
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowBucketStorageRequest`
@@ -2839,8 +2795,7 @@ class EiHealthClient(Client):
 
         获取指定数据对象的详细信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowData
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowDataRequest`
@@ -2902,8 +2857,7 @@ class EiHealthClient(Client):
 
         查询项目级数据权限控制策略
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDataPolicy
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowDataPolicyRequest`
@@ -2963,8 +2917,7 @@ class EiHealthClient(Client):
 
         订阅资产市场数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SubscribeData
         :type request: :class:`huaweicloudsdkeihealth.v1.SubscribeDataRequest`
@@ -3026,8 +2979,7 @@ class EiHealthClient(Client):
 
         设置项目级权限控制策略
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDataPolicy
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateDataPolicyRequest`
@@ -3089,8 +3041,7 @@ class EiHealthClient(Client):
 
         上传数据文件
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UploadData
         :type request: :class:`huaweicloudsdkeihealth.v1.UploadDataRequest`
@@ -3166,8 +3117,7 @@ class EiHealthClient(Client):
 
         取消数据作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CancelDataJob
         :type request: :class:`huaweicloudsdkeihealth.v1.CancelDataJobRequest`
@@ -3229,8 +3179,7 @@ class EiHealthClient(Client):
 
         删除数据作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDataJob
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteDataJobRequest`
@@ -3292,8 +3241,7 @@ class EiHealthClient(Client):
 
         下载数据作业执行日志
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DownloadDataJobLog
         :type request: :class:`huaweicloudsdkeihealth.v1.DownloadDataJobLogRequest`
@@ -3355,8 +3303,7 @@ class EiHealthClient(Client):
 
         获取数据作业执行日志
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListCheckpoint
         :type request: :class:`huaweicloudsdkeihealth.v1.ListCheckpointRequest`
@@ -3418,8 +3365,7 @@ class EiHealthClient(Client):
 
         获取数据作业列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDataJob
         :type request: :class:`huaweicloudsdkeihealth.v1.ListDataJobRequest`
@@ -3503,8 +3449,7 @@ class EiHealthClient(Client):
 
         重试数据作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RetryDataJob
         :type request: :class:`huaweicloudsdkeihealth.v1.RetryDataJobRequest`
@@ -3566,8 +3511,7 @@ class EiHealthClient(Client):
 
         获取数据作业详细信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDataJob
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowDataJobRequest`
@@ -3629,8 +3573,7 @@ class EiHealthClient(Client):
 
         插入单条数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDatabaseData
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateDatabaseDataRequest`
@@ -3694,8 +3637,7 @@ class EiHealthClient(Client):
 
         创建数据库实例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateInstance
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateInstanceRequest`
@@ -3757,8 +3699,7 @@ class EiHealthClient(Client):
 
         删除指定行数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDatabaseData
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteDatabaseDataRequest`
@@ -3822,8 +3763,7 @@ class EiHealthClient(Client):
 
         删除实例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteInstance
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteInstanceRequest`
@@ -3885,8 +3825,7 @@ class EiHealthClient(Client):
 
         导入数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ImportDatabaseData
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportDatabaseDataRequest`
@@ -3950,8 +3889,7 @@ class EiHealthClient(Client):
 
         查询数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDatabaseData
         :type request: :class:`huaweicloudsdkeihealth.v1.ListDatabaseDataRequest`
@@ -4023,8 +3961,7 @@ class EiHealthClient(Client):
 
         获取实例列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListInstance
         :type request: :class:`huaweicloudsdkeihealth.v1.ListInstanceRequest`
@@ -4084,8 +4021,7 @@ class EiHealthClient(Client):
 
         引用数据库实例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for QuoteInstance
         :type request: :class:`huaweicloudsdkeihealth.v1.QuoteInstanceRequest`
@@ -4147,8 +4083,7 @@ class EiHealthClient(Client):
 
         查询实例详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowInstance
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowInstanceRequest`
@@ -4210,8 +4145,7 @@ class EiHealthClient(Client):
 
         更新数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateDatabaseData
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateDatabaseDataRequest`
@@ -4277,8 +4211,7 @@ class EiHealthClient(Client):
 
         购买数据库资源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDatabaseResource
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateDatabaseResourceRequest`
@@ -4338,8 +4271,7 @@ class EiHealthClient(Client):
 
         删除数据库资源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteDatabaseResource
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteDatabaseResourceRequest`
@@ -4399,8 +4331,7 @@ class EiHealthClient(Client):
 
         查询数据库资源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDatabaseResource
         :type request: :class:`huaweicloudsdkeihealth.v1.ListDatabaseResourceRequest`
@@ -4458,8 +4389,7 @@ class EiHealthClient(Client):
 
         获取数据库资源规格列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDatabaseResourceFlavor
         :type request: :class:`huaweicloudsdkeihealth.v1.ListDatabaseResourceFlavorRequest`
@@ -4517,8 +4447,7 @@ class EiHealthClient(Client):
 
         批量删除镜像tag
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteTag
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchDeleteTagRequest`
@@ -4582,8 +4511,7 @@ class EiHealthClient(Client):
 
         创建镜像
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateImage
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateImageRequest`
@@ -4645,8 +4573,7 @@ class EiHealthClient(Client):
 
         删除镜像仓库
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteImage
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteImageRequest`
@@ -4708,8 +4635,7 @@ class EiHealthClient(Client):
 
         删除指定镜像tag
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteTag
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteTagRequest`
@@ -4773,8 +4699,7 @@ class EiHealthClient(Client):
 
         导入镜像
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ImportImage
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportImageRequest`
@@ -4836,8 +4761,7 @@ class EiHealthClient(Client):
 
         获取镜像列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListImage
         :type request: :class:`huaweicloudsdkeihealth.v1.ListImageRequest`
@@ -4903,8 +4827,7 @@ class EiHealthClient(Client):
 
         获取指定镜像的tag列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListImageTag
         :type request: :class:`huaweicloudsdkeihealth.v1.ListImageTagRequest`
@@ -4966,8 +4889,7 @@ class EiHealthClient(Client):
 
         获取docker login指令
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDockerLogin
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowDockerLoginRequest`
@@ -5027,8 +4949,7 @@ class EiHealthClient(Client):
 
         订阅镜像
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SubscribeImage
         :type request: :class:`huaweicloudsdkeihealth.v1.SubscribeImageRequest`
@@ -5090,8 +5011,7 @@ class EiHealthClient(Client):
 
         更新镜像描述信息或者类型
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateImage
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateImageRequest`
@@ -5155,8 +5075,7 @@ class EiHealthClient(Client):
 
         获取作业配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowJobConfig
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowJobConfigRequest`
@@ -5214,8 +5133,7 @@ class EiHealthClient(Client):
 
         设置作业配置，目前支持修改保存时长(180天 - 10年)、记录数(1W-500W)
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateJobConfig
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateJobConfigRequest`
@@ -5275,8 +5193,7 @@ class EiHealthClient(Client):
 
         取消或强制作业调度
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CancelJob
         :type request: :class:`huaweicloudsdkeihealth.v1.CancelJobRequest`
@@ -5340,8 +5257,7 @@ class EiHealthClient(Client):
 
         删除作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteJob
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteJobRequest`
@@ -5403,8 +5319,7 @@ class EiHealthClient(Client):
 
         启动作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExecuteJob
         :type request: :class:`huaweicloudsdkeihealth.v1.ExecuteJobRequest`
@@ -5466,8 +5381,7 @@ class EiHealthClient(Client):
 
         获取作业列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListJob
         :type request: :class:`huaweicloudsdkeihealth.v1.ListJobRequest`
@@ -5554,8 +5468,7 @@ class EiHealthClient(Client):
 
         重试作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RetryJob
         :type request: :class:`huaweicloudsdkeihealth.v1.RetryJobRequest`
@@ -5617,8 +5530,7 @@ class EiHealthClient(Client):
 
         获取作业详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowJob
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowJobRequest`
@@ -5682,8 +5594,7 @@ class EiHealthClient(Client):
 
         获取作业事件
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowJobEvent
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowJobEventRequest`
@@ -5747,8 +5658,7 @@ class EiHealthClient(Client):
 
         获取作业日志
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowJobLog
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowJobLogRequest`
@@ -5814,8 +5724,7 @@ class EiHealthClient(Client):
 
         获取子任务启动事件
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTaskEvents
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTaskEventsRequest`
@@ -5881,8 +5790,7 @@ class EiHealthClient(Client):
 
         获取子任务中实例的事件
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTaskInstanceEvents
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstanceEventsRequest`
@@ -5950,8 +5858,7 @@ class EiHealthClient(Client):
 
         获取子任务中实例的pod信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTaskInstancePod
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstancePodRequest`
@@ -6019,8 +5926,7 @@ class EiHealthClient(Client):
 
         获取子任务实例信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTaskInstances
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstancesRequest`
@@ -6086,8 +5992,7 @@ class EiHealthClient(Client):
 
         创建标签
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateLabel
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateLabelRequest`
@@ -6147,8 +6052,7 @@ class EiHealthClient(Client):
 
         删除标签
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteLabel
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteLabelRequest`
@@ -6208,8 +6112,7 @@ class EiHealthClient(Client):
 
         获取标签列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListLabel
         :type request: :class:`huaweicloudsdkeihealth.v1.ListLabelRequest`
@@ -6267,8 +6170,7 @@ class EiHealthClient(Client):
 
         创建标签页面
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateLabelPage
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateLabelPageRequest`
@@ -6330,8 +6232,7 @@ class EiHealthClient(Client):
 
         删除标签页面
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteLabelPage
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteLabelPageRequest`
@@ -6393,8 +6294,7 @@ class EiHealthClient(Client):
 
         获取标签页面列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListLabelPage
         :type request: :class:`huaweicloudsdkeihealth.v1.ListLabelPageRequest`
@@ -6454,8 +6354,7 @@ class EiHealthClient(Client):
 
         邮箱连通性测试
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckEmailConnection
         :type request: :class:`huaweicloudsdkeihealth.v1.CheckEmailConnectionRequest`
@@ -6515,8 +6414,7 @@ class EiHealthClient(Client):
 
         删除消息邮件配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteMessageEmailConfig
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteMessageEmailConfigRequest`
@@ -6574,8 +6472,7 @@ class EiHealthClient(Client):
 
         从消息中心获取当前用户有权限查看的消息列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListMessage
         :type request: :class:`huaweicloudsdkeihealth.v1.ListMessageRequest`
@@ -6647,8 +6544,7 @@ class EiHealthClient(Client):
 
         获取消息清理规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowMessageClearRule
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowMessageClearRuleRequest`
@@ -6706,8 +6602,7 @@ class EiHealthClient(Client):
 
         获取消息邮件配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowMessageEmailConfig
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowMessageEmailConfigRequest`
@@ -6765,8 +6660,7 @@ class EiHealthClient(Client):
 
         获取用户邮件配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowMessageReceiveConfig
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowMessageReceiveConfigRequest`
@@ -6824,8 +6718,7 @@ class EiHealthClient(Client):
 
         设置消息清理规则，支持修改保存时长(180天 - 10年)、记录数(1W-500W)
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateMessageClearRule
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateMessageClearRuleRequest`
@@ -6885,8 +6778,7 @@ class EiHealthClient(Client):
 
         设置消息邮件配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateMessageEmailConfig
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateMessageEmailConfigRequest`
@@ -6946,8 +6838,7 @@ class EiHealthClient(Client):
 
         设置用户邮件配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateMessageReceiveConfig
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateMessageReceiveConfigRequest`
@@ -7007,8 +6898,7 @@ class EiHealthClient(Client):
 
         设置节点标签
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchUpdateNodeLabel
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchUpdateNodeLabelRequest`
@@ -7070,8 +6960,7 @@ class EiHealthClient(Client):
 
         获取节点标签集
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListClusterAllNodeLabel
         :type request: :class:`huaweicloudsdkeihealth.v1.ListClusterAllNodeLabelRequest`
@@ -7129,8 +7018,7 @@ class EiHealthClient(Client):
 
         获取节点标签集
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListNodeLabel
         :type request: :class:`huaweicloudsdkeihealth.v1.ListNodeLabelRequest`
@@ -7190,8 +7078,7 @@ class EiHealthClient(Client):
 
         获取预置标签列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPresetLabel
         :type request: :class:`huaweicloudsdkeihealth.v1.ListPresetLabelRequest`
@@ -7249,8 +7136,7 @@ class EiHealthClient(Client):
 
         创建notebook
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateNotebook
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateNotebookRequest`
@@ -7312,8 +7198,7 @@ class EiHealthClient(Client):
 
         删除notebook
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteNotebook
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteNotebookRequest`
@@ -7375,8 +7260,7 @@ class EiHealthClient(Client):
 
         获取notebook列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListNotebook
         :type request: :class:`huaweicloudsdkeihealth.v1.ListNotebookRequest`
@@ -7444,8 +7328,7 @@ class EiHealthClient(Client):
 
         获取notebook工作环境
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListNotebookTool
         :type request: :class:`huaweicloudsdkeihealth.v1.ListNotebookToolRequest`
@@ -7505,8 +7388,7 @@ class EiHealthClient(Client):
 
         获取notebook详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowNotebook
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowNotebookRequest`
@@ -7568,8 +7450,7 @@ class EiHealthClient(Client):
 
         获取notebook鉴权信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowNotebookToken
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowNotebookTokenRequest`
@@ -7631,8 +7512,7 @@ class EiHealthClient(Client):
 
         启停notebook
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StopOrStartNotebook
         :type request: :class:`huaweicloudsdkeihealth.v1.StopOrStartNotebookRequest`
@@ -7696,8 +7576,7 @@ class EiHealthClient(Client):
 
         更新notebook
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateNotebook
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateNotebookRequest`
@@ -7761,8 +7640,7 @@ class EiHealthClient(Client):
 
         获取用户OBS桶列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListObsBucket
         :type request: :class:`huaweicloudsdkeihealth.v1.ListObsBucketRequest`
@@ -7822,8 +7700,7 @@ class EiHealthClient(Client):
 
         获取用户OBS桶内对象
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListObsBucketObject
         :type request: :class:`huaweicloudsdkeihealth.v1.ListObsBucketObjectRequest`
@@ -7889,8 +7766,7 @@ class EiHealthClient(Client):
 
         获取医疗平台信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowOverview
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowOverviewRequest`
@@ -7948,8 +7824,7 @@ class EiHealthClient(Client):
 
         购买性能加速资源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreatePerformanceResource
         :type request: :class:`huaweicloudsdkeihealth.v1.CreatePerformanceResourceRequest`
@@ -8009,8 +7884,7 @@ class EiHealthClient(Client):
 
         删除性能加速资源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeletePerformanceResource
         :type request: :class:`huaweicloudsdkeihealth.v1.DeletePerformanceResourceRequest`
@@ -8070,8 +7944,7 @@ class EiHealthClient(Client):
 
         查询性能加速资源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPerformanceResources
         :type request: :class:`huaweicloudsdkeihealth.v1.ListPerformanceResourcesRequest`
@@ -8129,8 +8002,7 @@ class EiHealthClient(Client):
 
         更新性能加速资源配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdatePerformanceResource
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdatePerformanceResourceRequest`
@@ -8192,8 +8064,7 @@ class EiHealthClient(Client):
 
         批量删除项目成员
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for BatchDeleteMember
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchDeleteMemberRequest`
@@ -8255,8 +8126,7 @@ class EiHealthClient(Client):
 
         创建项目
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateProject
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateProjectRequest`
@@ -8316,8 +8186,7 @@ class EiHealthClient(Client):
 
         移除项目成员
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteMember
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteMemberRequest`
@@ -8379,8 +8248,7 @@ class EiHealthClient(Client):
 
         删除项目
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteProject
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteProjectRequest`
@@ -8442,8 +8310,7 @@ class EiHealthClient(Client):
 
         获取项目列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProject
         :type request: :class:`huaweicloudsdkeihealth.v1.ListProjectRequest`
@@ -8501,8 +8368,7 @@ class EiHealthClient(Client):
 
         获取最近的作业列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListRecentJob
         :type request: :class:`huaweicloudsdkeihealth.v1.ListRecentJobRequest`
@@ -8564,8 +8430,7 @@ class EiHealthClient(Client):
 
         获取项目详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowProject
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowProjectRequest`
@@ -8629,8 +8494,7 @@ class EiHealthClient(Client):
 
         转移项目
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for TransferProject
         :type request: :class:`huaweicloudsdkeihealth.v1.TransferProjectRequest`
@@ -8692,8 +8556,7 @@ class EiHealthClient(Client):
 
         更新或者添加项目成员角色
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateMember
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateMemberRequest`
@@ -8757,8 +8620,7 @@ class EiHealthClient(Client):
 
         更新项目
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateProject
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateProjectRequest`
@@ -8820,8 +8682,7 @@ class EiHealthClient(Client):
 
         下载近一万条审计日志
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DownloadDataTrace
         :type request: :class:`huaweicloudsdkeihealth.v1.DownloadDataTraceRequest`
@@ -8883,8 +8744,7 @@ class EiHealthClient(Client):
 
         获取项目审计日志
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowProjectTrace
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowProjectTraceRequest`
@@ -8950,8 +8810,7 @@ class EiHealthClient(Client):
 
         获取指定审计日志
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowProjectTraceData
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowProjectTraceDataRequest`
@@ -9013,8 +8872,7 @@ class EiHealthClient(Client):
 
         获取项目审计日志追踪器
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowProjectTracker
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowProjectTrackerRequest`
@@ -9074,8 +8932,7 @@ class EiHealthClient(Client):
 
         更新项目审计日志追踪器配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateProjectTracker
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateProjectTrackerRequest`
@@ -9137,8 +8994,7 @@ class EiHealthClient(Client):
 
         获取资源监控数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowResourceMetricData
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowResourceMetricDataRequest`
@@ -9210,8 +9066,7 @@ class EiHealthClient(Client):
 
         取消收藏
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteStar
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteStarRequest`
@@ -9271,8 +9126,7 @@ class EiHealthClient(Client):
 
         获取收藏资产列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListStar
         :type request: :class:`huaweicloudsdkeihealth.v1.ListStarRequest`
@@ -9330,8 +9184,7 @@ class EiHealthClient(Client):
 
         收藏资产
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateStar
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateStarRequest`
@@ -9391,8 +9244,7 @@ class EiHealthClient(Client):
 
         获取性能加速资源上统计信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPerformanceResourceStat
         :type request: :class:`huaweicloudsdkeihealth.v1.ListPerformanceResourceStatRequest`
@@ -9454,8 +9306,7 @@ class EiHealthClient(Client):
 
         统计应用、流程、作业数目
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListWorkflowStatistic
         :type request: :class:`huaweicloudsdkeihealth.v1.ListWorkflowStatisticRequest`
@@ -9515,8 +9366,7 @@ class EiHealthClient(Client):
 
         查询存储资源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListStorageResources
         :type request: :class:`huaweicloudsdkeihealth.v1.ListStorageResourcesRequest`
@@ -9574,8 +9424,7 @@ class EiHealthClient(Client):
 
         创建study
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateStudy
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateStudyRequest`
@@ -9637,8 +9486,7 @@ class EiHealthClient(Client):
 
         创建study作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateStudyJob
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateStudyJobRequest`
@@ -9702,8 +9550,7 @@ class EiHealthClient(Client):
 
         删除study
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteStudy
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteStudyRequest`
@@ -9765,8 +9612,7 @@ class EiHealthClient(Client):
 
         列举study
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListStudy
         :type request: :class:`huaweicloudsdkeihealth.v1.ListStudyRequest`
@@ -9824,8 +9670,7 @@ class EiHealthClient(Client):
 
         列举study所有作业
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListStudyJob
         :type request: :class:`huaweicloudsdkeihealth.v1.ListStudyJobRequest`
@@ -9887,8 +9732,7 @@ class EiHealthClient(Client):
 
         获取生成study作业3D结构的内容
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for Show3dStructureContent
         :type request: :class:`huaweicloudsdkeihealth.v1.Show3dStructureContentRequest`
@@ -9956,8 +9800,7 @@ class EiHealthClient(Client):
 
         获取study作业的最值信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowExtremumInfo
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowExtremumInfoRequest`
@@ -10021,8 +9864,7 @@ class EiHealthClient(Client):
 
         获取跨域归档配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListArchiveConfigs
         :type request: :class:`huaweicloudsdkeihealth.v1.ListArchiveConfigsRequest`
@@ -10080,8 +9922,7 @@ class EiHealthClient(Client):
 
         获取系统配置列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowEnv
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowEnvRequest`
@@ -10139,8 +9980,7 @@ class EiHealthClient(Client):
 
         获取供应商配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowVendor
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowVendorRequest`
@@ -10198,8 +10038,7 @@ class EiHealthClient(Client):
 
         修改跨域归档设置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateArchiveConfig
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateArchiveConfigRequest`
@@ -10259,8 +10098,7 @@ class EiHealthClient(Client):
 
         设置供应商配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateVendor
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateVendorRequest`
@@ -10324,8 +10162,7 @@ class EiHealthClient(Client):
 
         获取当前系统配额及资源使用情况
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListQuota
         :type request: :class:`huaweicloudsdkeihealth.v1.ListQuotaRequest`
@@ -10383,8 +10220,7 @@ class EiHealthClient(Client):
 
         创建模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateTemplate
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateTemplateRequest`
@@ -10446,8 +10282,7 @@ class EiHealthClient(Client):
 
         删除模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteTemplate
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteTemplateRequest`
@@ -10509,8 +10344,7 @@ class EiHealthClient(Client):
 
         从其他项目导入模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ImportTemplate
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportTemplateRequest`
@@ -10572,8 +10406,7 @@ class EiHealthClient(Client):
 
         查询模板列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTemplate
         :type request: :class:`huaweicloudsdkeihealth.v1.ListTemplateRequest`
@@ -10633,8 +10466,7 @@ class EiHealthClient(Client):
 
         查询模板详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTemplate
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTemplateRequest`
@@ -10696,8 +10528,7 @@ class EiHealthClient(Client):
 
         上传模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UploadTemplate
         :type request: :class:`huaweicloudsdkeihealth.v1.UploadTemplateRequest`
@@ -10761,8 +10592,7 @@ class EiHealthClient(Client):
 
         发送验证码
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateCode
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateCodeRequest`
@@ -10824,8 +10654,7 @@ class EiHealthClient(Client):
 
         创建用户
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateUser
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateUserRequest`
@@ -10885,8 +10714,7 @@ class EiHealthClient(Client):
 
         删除用户
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteUser
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteUserRequest`
@@ -10948,8 +10776,7 @@ class EiHealthClient(Client):
 
         获取可用的认证方法
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListMfa
         :type request: :class:`huaweicloudsdkeihealth.v1.ListMfaRequest`
@@ -11009,8 +10836,7 @@ class EiHealthClient(Client):
 
         获取用户列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListUser
         :type request: :class:`huaweicloudsdkeihealth.v1.ListUserRequest`
@@ -11068,8 +10894,7 @@ class EiHealthClient(Client):
 
         校验token是否可访问当前环境
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTokenVerification
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTokenVerificationRequest`
@@ -11127,8 +10952,7 @@ class EiHealthClient(Client):
 
         获取指定用户详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowUser
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowUserRequest`
@@ -11188,8 +11012,7 @@ class EiHealthClient(Client):
 
         查询用户设置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowUserSetting
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowUserSettingRequest`
@@ -11249,8 +11072,7 @@ class EiHealthClient(Client):
 
         新用户重置密码
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateInitPassword
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateInitPasswordRequest`
@@ -11312,8 +11134,7 @@ class EiHealthClient(Client):
 
         修改密码
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdatePassword
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdatePasswordRequest`
@@ -11375,8 +11196,7 @@ class EiHealthClient(Client):
 
         修改用户基本信息（邮箱，手机）
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateUser
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateUserRequest`
@@ -11438,8 +11258,7 @@ class EiHealthClient(Client):
 
         最终租户修改子用户
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateUserByDomain
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateUserByDomainRequest`
@@ -11501,8 +11320,7 @@ class EiHealthClient(Client):
 
         更新用户角色
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateUserRole
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateUserRoleRequest`
@@ -11564,8 +11382,7 @@ class EiHealthClient(Client):
 
         更新用户设置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateUserSetting
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateUserSettingRequest`
@@ -11627,8 +11444,7 @@ class EiHealthClient(Client):
 
         预验证
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ValidateCode
         :type request: :class:`huaweicloudsdkeihealth.v1.ValidateCodeRequest`
@@ -11690,8 +11506,7 @@ class EiHealthClient(Client):
 
         获取供应商列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListVendor
         :type request: :class:`huaweicloudsdkeihealth.v1.ListVendorRequest`
@@ -11749,8 +11564,7 @@ class EiHealthClient(Client):
 
         创建流程
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateWorkflow
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateWorkflowRequest`
@@ -11812,8 +11626,7 @@ class EiHealthClient(Client):
 
         删除流程
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteWorkflow
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteWorkflowRequest`
@@ -11875,8 +11688,7 @@ class EiHealthClient(Client):
 
         导入流程
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ImportWorkflow
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportWorkflowRequest`
@@ -11938,8 +11750,7 @@ class EiHealthClient(Client):
 
         获取流程列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListWorkflow
         :type request: :class:`huaweicloudsdkeihealth.v1.ListWorkflowRequest`
@@ -12003,8 +11814,7 @@ class EiHealthClient(Client):
 
         获取流程详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowWorkflow
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowWorkflowRequest`
@@ -12068,8 +11878,7 @@ class EiHealthClient(Client):
 
         订阅流程
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for SubscribeWorkflow
         :type request: :class:`huaweicloudsdkeihealth.v1.SubscribeWorkflowRequest`
@@ -12131,8 +11940,7 @@ class EiHealthClient(Client):
 
         更新流程
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateWorkflow
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateWorkflowRequest`

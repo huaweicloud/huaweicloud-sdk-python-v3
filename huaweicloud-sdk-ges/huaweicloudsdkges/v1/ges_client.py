@@ -47,8 +47,7 @@ class GesClient(Client):
 
         可以通过绑定弹性公网IP（简称EIP）访问GES服务。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for AttachEip
         :type request: :class:`huaweicloudsdkges.v1.AttachEipRequest`
@@ -112,8 +111,7 @@ class GesClient(Client):
 
         清空图中所有数据。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ClearGraph
         :type request: :class:`huaweicloudsdkges.v1.ClearGraphRequest`
@@ -177,8 +175,7 @@ class GesClient(Client):
 
         新增备份。当前图数据出现错误或故障时，可以启动备份图进行恢复。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateBackup
         :type request: :class:`huaweicloudsdkges.v1.CreateBackupRequest`
@@ -238,8 +235,7 @@ class GesClient(Client):
 
         创建一个图。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateGraph
         :type request: :class:`huaweicloudsdkges.v1.CreateGraphRequest`
@@ -299,8 +295,7 @@ class GesClient(Client):
 
         新增元数据。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateMetadata
         :type request: :class:`huaweicloudsdkges.v1.CreateMetadataRequest`
@@ -360,8 +355,7 @@ class GesClient(Client):
 
         删除备份。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteBackup
         :type request: :class:`huaweicloudsdkges.v1.DeleteBackupRequest`
@@ -423,8 +417,7 @@ class GesClient(Client):
 
         删除一个图。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteGraph
         :type request: :class:`huaweicloudsdkges.v1.DeleteGraphRequest`
@@ -486,8 +479,7 @@ class GesClient(Client):
 
         删除元数据。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteMetadata
         :type request: :class:`huaweicloudsdkges.v1.DeleteMetadataRequest`
@@ -547,8 +539,7 @@ class GesClient(Client):
 
         当无需继续使用EIP时，您可通过解绑EIP来释放网络资源。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DetachEip
         :type request: :class:`huaweicloudsdkges.v1.DetachEipRequest`
@@ -613,8 +604,7 @@ class GesClient(Client):
         扩副本能力允许动态扩容多个从节点，扩容的从节点可以处理读请求，从而提高读请求性能。
         &gt;一万边和百亿边规格的图暂不支持扩副本。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExpandGraph
         :type request: :class:`huaweicloudsdkges.v1.ExpandGraphRequest`
@@ -676,8 +666,7 @@ class GesClient(Client):
 
         导出图。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ExportGraph
         :type request: :class:`huaweicloudsdkges.v1.ExportGraphRequest`
@@ -741,8 +730,7 @@ class GesClient(Client):
 
         增量导入图数据。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ImportGraph
         :type request: :class:`huaweicloudsdkges.v1.ImportGraphRequest`
@@ -806,8 +794,7 @@ class GesClient(Client):
 
         查询备份列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListBackups
         :type request: :class:`huaweicloudsdkges.v1.ListBackupsRequest`
@@ -869,8 +856,7 @@ class GesClient(Client):
 
         查询某个图下的备份列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListGraphBackups
         :type request: :class:`huaweicloudsdkges.v1.ListGraphBackupsRequest`
@@ -934,8 +920,7 @@ class GesClient(Client):
 
         查询某个图下的元数据。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListGraphMetadatas
         :type request: :class:`huaweicloudsdkges.v1.ListGraphMetadatasRequest`
@@ -995,8 +980,7 @@ class GesClient(Client):
 
         查询当前租户所有的图。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListGraphs
         :type request: :class:`huaweicloudsdkges.v1.ListGraphsRequest`
@@ -1058,8 +1042,7 @@ class GesClient(Client):
 
         查询管理面任务中心。当前创建图、关闭图、启动图、删除图、增加备份、导入图、导出图、升级图等操作为异步任务，该API用于查询这些任务的详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListJobs
         :type request: :class:`huaweicloudsdkges.v1.ListJobsRequest`
@@ -1129,8 +1112,7 @@ class GesClient(Client):
 
         查询元数据列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListMetadatas
         :type request: :class:`huaweicloudsdkges.v1.ListMetadatasRequest`
@@ -1192,8 +1174,7 @@ class GesClient(Client):
 
         查询租户配额。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListQuotas
         :type request: :class:`huaweicloudsdkges.v1.ListQuotasRequest`
@@ -1251,8 +1232,7 @@ class GesClient(Client):
 
         扩容图规格。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ResizeGraph
         :type request: :class:`huaweicloudsdkges.v1.ResizeGraphRequest`
@@ -1314,8 +1294,7 @@ class GesClient(Client):
 
         强制启动一个图。针对导入、导出 、运行中 、清空中的图。强制重启图，会将该图执行中的异步任务变为失败，然后停止图、启动图到运行状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RestartGraph
         :type request: :class:`huaweicloudsdkges.v1.RestartGraphRequest`
@@ -1377,8 +1356,7 @@ class GesClient(Client):
 
         根据图ID查询某个图详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowGraph
         :type request: :class:`huaweicloudsdkges.v1.ShowGraphRequest`
@@ -1438,8 +1416,7 @@ class GesClient(Client):
 
         查询Job的执行状态。对创建图、关闭图、启动图、删除图、导入图等异步API命令下发后，会返回jobId，通过jobId查询任务的执行状态。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowJob
         :type request: :class:`huaweicloudsdkges.v1.ShowJobRequest`
@@ -1501,8 +1478,7 @@ class GesClient(Client):
 
         启动一个图。暂时不用的图可以先关闭，需要使用时再启动。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartGraph
         :type request: :class:`huaweicloudsdkges.v1.StartGraphRequest`
@@ -1567,8 +1543,7 @@ class GesClient(Client):
         关闭一个图。如果图创建好了，暂时不用可以先关闭，需要使用时再启用。
         &gt;处于关闭状态的图不计算实例费用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StopGraph
         :type request: :class:`huaweicloudsdkges.v1.StopGraphRequest`
@@ -1630,8 +1605,7 @@ class GesClient(Client):
 
         升级图。图引擎服务会定期升级版本，用户可根据需要升级图。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpgradeGraph
         :type request: :class:`huaweicloudsdkges.v1.UpgradeGraphRequest`
@@ -1695,8 +1669,7 @@ class GesClient(Client):
 
         从OBS导入元数据。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UploadFromObs
         :type request: :class:`huaweicloudsdkges.v1.UploadFromObsRequest`

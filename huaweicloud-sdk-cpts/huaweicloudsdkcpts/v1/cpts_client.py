@@ -47,8 +47,7 @@ class CptsClient(Client):
 
         创建用例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateCase
         :type request: :class:`huaweicloudsdkcpts.v1.CreateCaseRequest`
@@ -108,8 +107,7 @@ class CptsClient(Client):
 
         创建任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateTask
         :type request: :class:`huaweicloudsdkcpts.v1.CreateTaskRequest`
@@ -169,8 +167,7 @@ class CptsClient(Client):
 
         创建事务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateTemp
         :type request: :class:`huaweicloudsdkcpts.v1.CreateTempRequest`
@@ -230,8 +227,7 @@ class CptsClient(Client):
 
         创建变量
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateVariable
         :type request: :class:`huaweicloudsdkcpts.v1.CreateVariableRequest`
@@ -293,8 +289,7 @@ class CptsClient(Client):
 
         调试用例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DebugCase
         :type request: :class:`huaweicloudsdkcpts.v1.DebugCaseRequest`
@@ -360,8 +355,7 @@ class CptsClient(Client):
 
         删除用例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteCase
         :type request: :class:`huaweicloudsdkcpts.v1.DeleteCaseRequest`
@@ -421,8 +415,7 @@ class CptsClient(Client):
 
         删除任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteTask
         :type request: :class:`huaweicloudsdkcpts.v1.DeleteTaskRequest`
@@ -482,8 +475,7 @@ class CptsClient(Client):
 
         删除事务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteTemp
         :type request: :class:`huaweicloudsdkcpts.v1.DeleteTempRequest`
@@ -543,8 +535,7 @@ class CptsClient(Client):
 
         删除全局变量
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteVariable
         :type request: :class:`huaweicloudsdkcpts.v1.DeleteVariableRequest`
@@ -606,8 +597,7 @@ class CptsClient(Client):
 
         查询全局变量
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListVariables
         :type request: :class:`huaweicloudsdkcpts.v1.ListVariablesRequest`
@@ -669,8 +659,7 @@ class CptsClient(Client):
 
         查询CPTS任务离线报告列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowHistoryRunInfo
         :type request: :class:`huaweicloudsdkcpts.v1.ShowHistoryRunInfoRequest`
@@ -730,8 +719,7 @@ class CptsClient(Client):
 
         查询报告
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowReport
         :type request: :class:`huaweicloudsdkcpts.v1.ShowReportRequest`
@@ -795,8 +783,7 @@ class CptsClient(Client):
 
         查询任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTask
         :type request: :class:`huaweicloudsdkcpts.v1.ShowTaskRequest`
@@ -856,8 +843,7 @@ class CptsClient(Client):
 
         查询任务集
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTaskSet
         :type request: :class:`huaweicloudsdkcpts.v1.ShowTaskSetRequest`
@@ -921,8 +907,7 @@ class CptsClient(Client):
 
         查询事务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTemp
         :type request: :class:`huaweicloudsdkcpts.v1.ShowTempRequest`
@@ -982,8 +967,7 @@ class CptsClient(Client):
 
         查询事务集
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTempSet
         :type request: :class:`huaweicloudsdkcpts.v1.ShowTempSetRequest`
@@ -1047,8 +1031,7 @@ class CptsClient(Client):
 
         修改用例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateCase
         :type request: :class:`huaweicloudsdkcpts.v1.UpdateCaseRequest`
@@ -1112,8 +1095,7 @@ class CptsClient(Client):
 
         修改任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateTask
         :type request: :class:`huaweicloudsdkcpts.v1.UpdateTaskRequest`
@@ -1175,8 +1157,7 @@ class CptsClient(Client):
 
         修改任务关联用例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateTaskRelatedTestCase
         :type request: :class:`huaweicloudsdkcpts.v1.UpdateTaskRelatedTestCaseRequest`
@@ -1238,8 +1219,7 @@ class CptsClient(Client):
 
         更新任务状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateTaskStatus
         :type request: :class:`huaweicloudsdkcpts.v1.UpdateTaskStatusRequest`
@@ -1303,8 +1283,7 @@ class CptsClient(Client):
 
         修改事务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateTemp
         :type request: :class:`huaweicloudsdkcpts.v1.UpdateTempRequest`
@@ -1366,8 +1345,7 @@ class CptsClient(Client):
 
         修改变量
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateVariable
         :type request: :class:`huaweicloudsdkcpts.v1.UpdateVariableRequest`
@@ -1429,8 +1407,7 @@ class CptsClient(Client):
 
         创建工程
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateProject
         :type request: :class:`huaweicloudsdkcpts.v1.CreateProjectRequest`
@@ -1490,8 +1467,7 @@ class CptsClient(Client):
 
         删除工程
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteProject
         :type request: :class:`huaweicloudsdkcpts.v1.DeleteProjectRequest`
@@ -1551,8 +1527,7 @@ class CptsClient(Client):
 
         查询工程集
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProjectSets
         :type request: :class:`huaweicloudsdkcpts.v1.ListProjectSetsRequest`
@@ -1614,8 +1589,7 @@ class CptsClient(Client):
 
         查询用例树
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProjectTestCase
         :type request: :class:`huaweicloudsdkcpts.v1.ListProjectTestCaseRequest`
@@ -1675,8 +1649,7 @@ class CptsClient(Client):
 
         查询导入进度
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowProcess
         :type request: :class:`huaweicloudsdkcpts.v1.ShowProcessRequest`
@@ -1734,8 +1707,7 @@ class CptsClient(Client):
 
         查询工程
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowProject
         :type request: :class:`huaweicloudsdkcpts.v1.ShowProjectRequest`
@@ -1795,8 +1767,7 @@ class CptsClient(Client):
 
         修改工程
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateProject
         :type request: :class:`huaweicloudsdkcpts.v1.UpdateProjectRequest`

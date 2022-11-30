@@ -25,6 +25,7 @@ class ApiPolicyHttpCreate:
         'req_method': 'str',
         'req_uri': 'str',
         'timeout': 'int',
+        'retry_count': 'str',
         'effect_mode': 'str',
         'name': 'str',
         'backend_params': 'list[BackendParamBase]',
@@ -40,6 +41,7 @@ class ApiPolicyHttpCreate:
         'req_method': 'req_method',
         'req_uri': 'req_uri',
         'timeout': 'timeout',
+        'retry_count': 'retry_count',
         'effect_mode': 'effect_mode',
         'name': 'name',
         'backend_params': 'backend_params',
@@ -49,7 +51,7 @@ class ApiPolicyHttpCreate:
         'vpc_channel_status': 'vpc_channel_status'
     }
 
-    def __init__(self, url_domain=None, req_protocol=None, req_method=None, req_uri=None, timeout=None, effect_mode=None, name=None, backend_params=None, conditions=None, authorizer_id=None, vpc_channel_info=None, vpc_channel_status=None):
+    def __init__(self, url_domain=None, req_protocol=None, req_method=None, req_uri=None, timeout=None, retry_count=None, effect_mode=None, name=None, backend_params=None, conditions=None, authorizer_id=None, vpc_channel_info=None, vpc_channel_status=None):
         """ApiPolicyHttpCreate
 
         The model defined in huaweicloud sdk
@@ -64,6 +66,8 @@ class ApiPolicyHttpCreate:
         :type req_uri: str
         :param timeout: API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
         :type timeout: int
+        :param retry_count: 请求后端服务的重试次数，默认为-1，范围[-1,10]
+        :type retry_count: str
         :param effect_mode: 关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
         :type effect_mode: str
         :param name: 策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
@@ -87,6 +91,7 @@ class ApiPolicyHttpCreate:
         self._req_method = None
         self._req_uri = None
         self._timeout = None
+        self._retry_count = None
         self._effect_mode = None
         self._name = None
         self._backend_params = None
@@ -103,6 +108,8 @@ class ApiPolicyHttpCreate:
         self.req_uri = req_uri
         if timeout is not None:
             self.timeout = timeout
+        if retry_count is not None:
+            self.retry_count = retry_count
         self.effect_mode = effect_mode
         self.name = name
         if backend_params is not None:
@@ -224,6 +231,28 @@ class ApiPolicyHttpCreate:
         :type timeout: int
         """
         self._timeout = timeout
+
+    @property
+    def retry_count(self):
+        """Gets the retry_count of this ApiPolicyHttpCreate.
+
+        请求后端服务的重试次数，默认为-1，范围[-1,10]
+
+        :return: The retry_count of this ApiPolicyHttpCreate.
+        :rtype: str
+        """
+        return self._retry_count
+
+    @retry_count.setter
+    def retry_count(self, retry_count):
+        """Sets the retry_count of this ApiPolicyHttpCreate.
+
+        请求后端服务的重试次数，默认为-1，范围[-1,10]
+
+        :param retry_count: The retry_count of this ApiPolicyHttpCreate.
+        :type retry_count: str
+        """
+        self._retry_count = retry_count
 
     @property
     def effect_mode(self):

@@ -47,8 +47,7 @@ class RomaAsyncClient(Client):
 
         添加子设备到网关
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddSubsetsToGateway
@@ -113,8 +112,7 @@ class RomaAsyncClient(Client):
 
         客户端配额绑定客户端应用列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AssociateAppsForAppQuota
@@ -180,8 +178,7 @@ class RomaAsyncClient(Client):
         如果创建API时，“定义API请求”使用HTTPS请求协议，那么在独立域名中需要添加SSL证书。
         本章节主要介绍为特定域名绑定证书。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AssociateCertificateV2
@@ -248,8 +245,7 @@ class RomaAsyncClient(Client):
 
         用户自定义的域名，需要CNAME到API分组的子域名上才能生效。 每个API分组下最多可绑定5个域名。绑定域名后，用户可通过自定义域名调用API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AssociateDomainV2
@@ -318,8 +314,7 @@ class RomaAsyncClient(Client):
         
         将指定的签名密钥绑定到一个或多个已发布的API上。同一个API发布到不同的环境可以绑定不同的签名密钥；一个API在发布到特定环境后只能绑定一个签名密钥。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AssociateSignatureKeyV2
@@ -382,8 +377,7 @@ class RomaAsyncClient(Client):
 
         批量添加设备到设备分组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchAddDeviceToGroup
@@ -448,8 +442,7 @@ class RomaAsyncClient(Client):
 
         批量删除设备
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeleteDevices
@@ -512,8 +505,7 @@ class RomaAsyncClient(Client):
 
         批量删除Topic。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeleteMqsInstanceTopic
@@ -576,8 +568,7 @@ class RomaAsyncClient(Client):
 
         批量删除规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeleteRules
@@ -640,8 +631,7 @@ class RomaAsyncClient(Client):
 
         设备批量下线
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchFreezeDevices
@@ -704,8 +694,7 @@ class RomaAsyncClient(Client):
 
         批量启动\\停止任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchStartOrStopTasks
@@ -768,8 +757,7 @@ class RomaAsyncClient(Client):
 
         校验自定义后端API定义。校验自定义后端API的路径或名称是否已存在
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckLivedataApisV2
@@ -832,8 +820,7 @@ class RomaAsyncClient(Client):
 
         设备数量统计
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CountDevices
@@ -894,8 +881,7 @@ class RomaAsyncClient(Client):
 
         统计不同类型不同状态任务数量
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CountTasks
@@ -956,8 +942,7 @@ class RomaAsyncClient(Client):
 
         创建App Code时，可以不指定具体值，由后台自动生成随机字符串填充。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateAppCodeAutoV2
@@ -1020,8 +1005,7 @@ class RomaAsyncClient(Client):
 
         App Code为APP应用下的子模块，创建App Code之后，可以实现简易的APP认证。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateAppCodeV2
@@ -1086,8 +1070,7 @@ class RomaAsyncClient(Client):
 
         创建应用配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateAppConfigV2
@@ -1152,8 +1135,7 @@ class RomaAsyncClient(Client):
 
         创建客户端配额
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateAppQuota
@@ -1216,8 +1198,7 @@ class RomaAsyncClient(Client):
 
         创建命令
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateCommand
@@ -1282,8 +1263,7 @@ class RomaAsyncClient(Client):
 
         创建普通任务(区别于组合任务)
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateCommonTask
@@ -1346,8 +1326,7 @@ class RomaAsyncClient(Client):
 
         创建自定义认证
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateCustomAuthorizerV2
@@ -1410,8 +1389,7 @@ class RomaAsyncClient(Client):
 
         创建数据源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateDatasourceInfo
@@ -1474,8 +1452,7 @@ class RomaAsyncClient(Client):
 
         添加目标数据源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateDestination
@@ -1540,8 +1517,7 @@ class RomaAsyncClient(Client):
 
         创建设备
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateDevice
@@ -1604,8 +1580,7 @@ class RomaAsyncClient(Client):
 
         创建设备分组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateDeviceGroup
@@ -1668,8 +1643,7 @@ class RomaAsyncClient(Client):
 
         创建调度计划
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateDispatches
@@ -1738,8 +1712,7 @@ class RomaAsyncClient(Client):
         
         为此，ROMA Connect APIC提供多环境管理功能，使租户能够最大化的模拟实际场景，低成本的接入ROMA Connect APIC。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateEnvironmentV2
@@ -1810,8 +1783,7 @@ class RomaAsyncClient(Client):
           3.设置了环境变量后，使用到该变量的API的调试功能将不可使用。
           4.定义了环境变量后，使用到环境变量的地方应该以对称的#标识环境变量，当API发布到相应的环境后，会对环境变量的值进行替换，如：定义的API的URL为：https://#address#:8080，环境变量address在RELEASE环境上的值为：192.168.1.5，则API发布到RELEASE环境后的真实的URL为：https://192.168.1.5:8080。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateEnvironmentVariableV2
@@ -1876,8 +1848,7 @@ class RomaAsyncClient(Client):
         
         支持配置的特性列表及特性配置请参考“附录 &gt; 实例支持的APIC特性”
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateFeatureV2
@@ -1940,8 +1911,7 @@ class RomaAsyncClient(Client):
 
         在某个实例中创建后端API脚本。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateLiveDataApiScriptV2
@@ -2006,8 +1976,7 @@ class RomaAsyncClient(Client):
 
         在某个实例中创建后端API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateLiveDataApiV2
@@ -2070,8 +2039,7 @@ class RomaAsyncClient(Client):
 
         创建Topic。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateMqsInstanceTopic
@@ -2134,8 +2102,7 @@ class RomaAsyncClient(Client):
 
         创建组合任务映射
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateMultiTaskMappings
@@ -2200,8 +2167,7 @@ class RomaAsyncClient(Client):
 
         创建组合任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateMultiTasks
@@ -2264,8 +2230,7 @@ class RomaAsyncClient(Client):
 
         该接口用于创建指定实例下对应的应用下的设备操作，订阅到指定的topic
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateNotification
@@ -2328,8 +2293,7 @@ class RomaAsyncClient(Client):
 
         创建产品
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateProduct
@@ -2392,8 +2356,7 @@ class RomaAsyncClient(Client):
 
         创建产品模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateProductTemplate
@@ -2456,8 +2419,7 @@ class RomaAsyncClient(Client):
 
         添加产品主题
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateProductTopic
@@ -2522,8 +2484,7 @@ class RomaAsyncClient(Client):
 
         创建属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateProperty
@@ -2588,8 +2549,7 @@ class RomaAsyncClient(Client):
 
         创建请求属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateRequestProperty
@@ -2656,8 +2616,7 @@ class RomaAsyncClient(Client):
 
         当API上线后，系统会默认给每个API提供一个流控策略，API提供者可以根据自身API的服务能力及负载情况变更这个流控策略。 流控策略即限制API在一定长度的时间内，能够允许被访问的最大次数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateRequestThrottlingPolicyV2
@@ -2720,8 +2679,7 @@ class RomaAsyncClient(Client):
 
         创建响应属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateResponseProperty
@@ -2788,8 +2746,7 @@ class RomaAsyncClient(Client):
 
         创建规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateRule
@@ -2852,8 +2809,7 @@ class RomaAsyncClient(Client):
 
         创建服务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateService
@@ -2920,8 +2876,7 @@ class RomaAsyncClient(Client):
         
         租户创建一个签名密钥，并将签名密钥与API进行绑定，则ROMA Connect APIC在请求这个API时，就会使用绑定的签名密钥对请求参数进行数据加密，生成签名。当租户的后端服务收到请求时，可以校验这个签名，如果签名校验不通过，则该请求不是ROMA Connect APIC发出的请求，租户可以拒绝这个请求，从而保证API的安全性，避免API被未知来源的请求攻击。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateSignatureKeyV2
@@ -2984,8 +2939,7 @@ class RomaAsyncClient(Client):
 
         添加源数据源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateSource
@@ -3054,8 +3008,7 @@ class RomaAsyncClient(Client):
         
         为流控策略添加一个特殊设置的对象，可以是APP，也可以是租户。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateSpecialThrottlingConfigurationV2
@@ -3120,8 +3073,7 @@ class RomaAsyncClient(Client):
 
         测试后端API是否可用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DebugLiveDataApiV2
@@ -3186,8 +3138,7 @@ class RomaAsyncClient(Client):
 
         规则调试
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DebugRule
@@ -3250,8 +3201,7 @@ class RomaAsyncClient(Client):
 
         删除客户端配置的访问控制信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteAppAcl
@@ -3314,8 +3264,7 @@ class RomaAsyncClient(Client):
 
         删除App Code，App Code删除后，将无法再通过简易认证访问对应的API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteAppCodeV2
@@ -3380,8 +3329,7 @@ class RomaAsyncClient(Client):
 
         删除应用配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteAppConfigV2
@@ -3446,8 +3394,7 @@ class RomaAsyncClient(Client):
 
         删除客户端配额。删除客户端配额时，同时删除客户端配额和客户端应用的关联关系
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteAppQuota
@@ -3510,8 +3457,7 @@ class RomaAsyncClient(Client):
 
         删除命令
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteCommand
@@ -3576,8 +3522,7 @@ class RomaAsyncClient(Client):
 
         删除自定义认证
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteCustomAuthorizerV2
@@ -3640,8 +3585,7 @@ class RomaAsyncClient(Client):
 
         通过数据源Id删除指定数据源信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDatasourceInfoById
@@ -3704,8 +3648,7 @@ class RomaAsyncClient(Client):
 
         删除目标数据源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDestination
@@ -3770,8 +3713,7 @@ class RomaAsyncClient(Client):
 
         删除指定设备ID的设备
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDevice
@@ -3834,8 +3776,7 @@ class RomaAsyncClient(Client):
 
         删除设备分组内的设备
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDeviceFromGroup
@@ -3900,8 +3841,7 @@ class RomaAsyncClient(Client):
 
         删除分组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDeviceGroup
@@ -3965,8 +3905,7 @@ class RomaAsyncClient(Client):
         删除指定的环境。
         该操作将导致此API在指定的环境无法被访问，可能会影响相当一部分应用和用户。请确保已经告知用户，或者确认需要强制下线。环境上存在已发布的API时，该环境不能被删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteEnvironmentV2
@@ -4029,8 +3968,7 @@ class RomaAsyncClient(Client):
 
         删除指定的环境变量。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteEnvironmentVariableV2
@@ -4093,8 +4031,7 @@ class RomaAsyncClient(Client):
 
         在某个实例中删除后端API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteLiveDataApiV2
@@ -4157,8 +4094,7 @@ class RomaAsyncClient(Client):
 
         删除Topic。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteMqsInstanceTopic
@@ -4221,8 +4157,7 @@ class RomaAsyncClient(Client):
 
         通过映射ID删除指定任务映射
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteMultiTaskMapping
@@ -4287,8 +4222,7 @@ class RomaAsyncClient(Client):
 
         该接口用于删除指定订阅管理
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteNotification
@@ -4351,8 +4285,7 @@ class RomaAsyncClient(Client):
 
         删除产品
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteProduct
@@ -4415,8 +4348,7 @@ class RomaAsyncClient(Client):
 
         删除产品模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteProductTemplate
@@ -4479,8 +4411,7 @@ class RomaAsyncClient(Client):
 
         删除产品主题
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteProductTopic
@@ -4545,8 +4476,7 @@ class RomaAsyncClient(Client):
 
         删除服务属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteProperty
@@ -4611,8 +4541,7 @@ class RomaAsyncClient(Client):
 
         删除请求属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteRequestProperty
@@ -4679,8 +4608,7 @@ class RomaAsyncClient(Client):
 
         删除指定的流控策略。当该流控策略绑定了API时，需要先解除流控策略与API的所有绑定关系后再删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteRequestThrottlingPolicyV2
@@ -4743,8 +4671,7 @@ class RomaAsyncClient(Client):
 
         删除响应属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteResponseProperty
@@ -4811,8 +4738,7 @@ class RomaAsyncClient(Client):
 
         删除规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteRule
@@ -4875,8 +4801,7 @@ class RomaAsyncClient(Client):
 
         删除服务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteService
@@ -4939,8 +4864,7 @@ class RomaAsyncClient(Client):
 
         删除指定的签名密钥。签名密钥绑定了API时无法删除，需要先解除与API的绑定关系后删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteSignatureKeyV2
@@ -5003,8 +4927,7 @@ class RomaAsyncClient(Client):
 
         删除源数据源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteSource
@@ -5069,8 +4992,7 @@ class RomaAsyncClient(Client):
 
         删除某个流控策略的某个特殊配置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteSpecialThrottlingConfigurationV2
@@ -5135,8 +5057,7 @@ class RomaAsyncClient(Client):
 
         通过任务ID删除指定任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteTask
@@ -5199,8 +5120,7 @@ class RomaAsyncClient(Client):
 
         解除客户端配额和客户端应用的绑定
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DisassociateAppQuotaWithApp
@@ -5265,8 +5185,7 @@ class RomaAsyncClient(Client):
 
         如果域名证书不再需要或者已过期，则可以删除证书内容。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DisassociateCertificateV2
@@ -5333,8 +5252,7 @@ class RomaAsyncClient(Client):
 
         如果API分组不再需要绑定某个自定义域名，则可以为此API分组解绑此域名。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DisassociateDomainV2
@@ -5399,8 +5317,7 @@ class RomaAsyncClient(Client):
 
         解除API与签名密钥的绑定关系。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DisassociateSignatureKeyV2
@@ -5463,8 +5380,7 @@ class RomaAsyncClient(Client):
 
         导出产品
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DownloadProducts
@@ -5528,8 +5444,7 @@ class RomaAsyncClient(Client):
 
         导出Topic。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ExportMqsInstanceTopic
@@ -5592,8 +5507,7 @@ class RomaAsyncClient(Client):
 
         导入Topic。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ImportMqsInstanceTopic
@@ -5662,8 +5576,7 @@ class RomaAsyncClient(Client):
 
         初始化组合任务，分配任务ID，初始化映射等
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for InstallMultiTasks
@@ -5726,8 +5639,7 @@ class RomaAsyncClient(Client):
 
         查询某个签名密钥上已经绑定的API列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApisBindedToSignatureKeyV2
@@ -5802,8 +5714,7 @@ class RomaAsyncClient(Client):
 
         查询所有未绑定到该签名密钥上的API列表。需要API已经发布，未发布的API不予展示。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApisNotBoundWithSignatureKeyV2
@@ -5878,8 +5789,7 @@ class RomaAsyncClient(Client):
 
         查询App Code列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAppCodesV2
@@ -5946,8 +5856,7 @@ class RomaAsyncClient(Client):
 
         查询应用配置列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAppConfigsV2
@@ -6018,8 +5927,7 @@ class RomaAsyncClient(Client):
 
         查询客户端配额可绑定的客户端应用列表。支持按客户端应用名称模糊搜索
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAppQuotaBindableApps
@@ -6088,8 +5996,7 @@ class RomaAsyncClient(Client):
 
         查询客户端配额已绑定的客户端应用列表。支持按客户端应用名称模糊匹配
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAppQuotaBoundApps
@@ -6158,8 +6065,7 @@ class RomaAsyncClient(Client):
 
         获取客户端配额列表。支持根据名称模糊查询
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAppQuotas
@@ -6226,8 +6132,7 @@ class RomaAsyncClient(Client):
 
         查询APP列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAppsV2
@@ -6302,8 +6207,7 @@ class RomaAsyncClient(Client):
 
         查询命令
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListCommands
@@ -6374,8 +6278,7 @@ class RomaAsyncClient(Client):
 
         查询自定义认证列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListCustomAuthorizersV2
@@ -6446,8 +6349,7 @@ class RomaAsyncClient(Client):
 
         获取数据源中中某个表中所有字段
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDatasourceColumns
@@ -6516,8 +6418,7 @@ class RomaAsyncClient(Client):
 
         获取数据源中所有的表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDatasourceTables
@@ -6588,8 +6489,7 @@ class RomaAsyncClient(Client):
 
         查询数据源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDatasources
@@ -6666,8 +6566,7 @@ class RomaAsyncClient(Client):
 
         查询目标数据源列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDestinations
@@ -6734,8 +6633,7 @@ class RomaAsyncClient(Client):
 
         查询设备
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDevices
@@ -6822,8 +6720,7 @@ class RomaAsyncClient(Client):
 
         查询产品内设备数量
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDevicesInProduct
@@ -6886,8 +6783,7 @@ class RomaAsyncClient(Client):
 
         查询分组下的所有环境变量的列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListEnvironmentVariablesV2
@@ -6960,8 +6856,7 @@ class RomaAsyncClient(Client):
 
         查询符合条件的环境列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListEnvironmentsV2
@@ -7030,8 +6925,7 @@ class RomaAsyncClient(Client):
         
         支持配置的特性列表及特性配置请参考“附录 &gt; 实例支持的APIC特性”
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListFeaturesV2
@@ -7097,8 +6991,7 @@ class RomaAsyncClient(Client):
         根据API的id和最近的一段时间查询API被调用的次数，统计周期为1分钟。查询范围一小时以内，一分钟一个样本，其样本值为一分钟内的累计值。
         &gt; 为了安全起见，在服务器上使用curl命令调用接口查询信息后，需要清理历史操作记录，包括但不限于“~/.bash_history”、“/var/log/messages”（如有）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListLatelyApiStatisticsV2
@@ -7163,8 +7056,7 @@ class RomaAsyncClient(Client):
 
         在某个实例中查询后端API的部署记录。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListLiveDataApiDeploymentHistoryV2
@@ -7227,8 +7119,7 @@ class RomaAsyncClient(Client):
 
         在某个实例中查询后端API的测试结果。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListLiveDataApiTestHistoryV2
@@ -7295,8 +7186,7 @@ class RomaAsyncClient(Client):
 
         获取某个实例下的所有后端API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListLiveDataApiV2
@@ -7373,8 +7263,7 @@ class RomaAsyncClient(Client):
 
         查询自定义后端服务数据源列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListLiveDataDataSourcesV2
@@ -7443,8 +7332,7 @@ class RomaAsyncClient(Client):
 
         查询自定义后端服务配额。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListLiveDataQuotaV2
@@ -7505,8 +7393,7 @@ class RomaAsyncClient(Client):
 
         查询所有任务的监控信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListMonitorInfos
@@ -7575,8 +7462,7 @@ class RomaAsyncClient(Client):
 
         查询单个任务的所有日志信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListMonitorLog
@@ -7647,8 +7533,7 @@ class RomaAsyncClient(Client):
 
         查询Topic列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListMqsInstanceTopics
@@ -7719,8 +7604,7 @@ class RomaAsyncClient(Client):
 
         该接口用于查询指定应用订阅管理信息的数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListNotification
@@ -7787,8 +7671,7 @@ class RomaAsyncClient(Client):
 
         查询产品模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListProductTemplates
@@ -7865,8 +7748,7 @@ class RomaAsyncClient(Client):
 
         查询产品主题
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListProductTopics
@@ -7933,8 +7815,7 @@ class RomaAsyncClient(Client):
 
         查询产品
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListProducts
@@ -8027,8 +7908,7 @@ class RomaAsyncClient(Client):
 
         查询某个实例的租户配置列表，用户可以通过此接口查看各类型资源配置及使用情况。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListProjectCofigsV2
@@ -8093,8 +7973,7 @@ class RomaAsyncClient(Client):
 
         查询属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListProperties
@@ -8165,8 +8044,7 @@ class RomaAsyncClient(Client):
 
         查询请求属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRequestProperties
@@ -8239,8 +8117,7 @@ class RomaAsyncClient(Client):
 
         查询所有流控策略的信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRequestThrottlingPolicyV2
@@ -8311,8 +8188,7 @@ class RomaAsyncClient(Client):
 
         查询响应属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListResponseProperties
@@ -8385,8 +8261,7 @@ class RomaAsyncClient(Client):
 
         查询规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRules
@@ -8455,8 +8330,7 @@ class RomaAsyncClient(Client):
 
         查询服务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListServices
@@ -8535,8 +8409,7 @@ class RomaAsyncClient(Client):
 
         查询设备影子
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListShadows
@@ -8599,8 +8472,7 @@ class RomaAsyncClient(Client):
 
         查询某个API绑定的签名密钥列表。每个API在每个环境上应该最多只会绑定一个签名密钥。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSignatureKeysBindedToApiV2
@@ -8673,8 +8545,7 @@ class RomaAsyncClient(Client):
 
         查询所有签名密钥的信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSignatureKeysV2
@@ -8745,8 +8616,7 @@ class RomaAsyncClient(Client):
 
         查询源数据源列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSources
@@ -8813,8 +8683,7 @@ class RomaAsyncClient(Client):
 
         查看给流控策略设置的特殊配置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSpecialThrottlingConfigurationsV2
@@ -8885,8 +8754,7 @@ class RomaAsyncClient(Client):
 
         查询某个实例下的API统计信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListStatisticsApi
@@ -8961,8 +8829,7 @@ class RomaAsyncClient(Client):
 
         查询子设备
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListSubsets
@@ -9035,8 +8902,7 @@ class RomaAsyncClient(Client):
 
         查询标签列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTagsV2
@@ -9101,8 +8967,7 @@ class RomaAsyncClient(Client):
 
         查询任务列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTasks
@@ -9191,8 +9056,7 @@ class RomaAsyncClient(Client):
 
         查询设备主题
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTopics
@@ -9267,8 +9131,7 @@ class RomaAsyncClient(Client):
 
         在某个实例中部署后端API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for PublishLiveDataApiV2
@@ -9333,8 +9196,7 @@ class RomaAsyncClient(Client):
 
         重置设备鉴权信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetAuthentication
@@ -9399,8 +9261,7 @@ class RomaAsyncClient(Client):
 
         重发消息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetMessages
@@ -9465,8 +9326,7 @@ class RomaAsyncClient(Client):
 
         重置组合任务进度
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetMultiTaskOffset
@@ -9531,8 +9391,7 @@ class RomaAsyncClient(Client):
 
         重置产品鉴权信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetProductAuthentication
@@ -9597,8 +9456,7 @@ class RomaAsyncClient(Client):
 
         手工触发一次任务调度
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for RunTask
@@ -9661,8 +9519,7 @@ class RomaAsyncClient(Client):
 
         发送命令
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for SendCommand
@@ -9727,8 +9584,7 @@ class RomaAsyncClient(Client):
 
         查看指定客户端应用关联的应用配额。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowAppBoundAppQuota
@@ -9791,8 +9647,7 @@ class RomaAsyncClient(Client):
 
         获取客户端配额详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowAppQuota
@@ -9855,8 +9710,7 @@ class RomaAsyncClient(Client):
 
         查询设备鉴权信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowAuthentication
@@ -9919,8 +9773,7 @@ class RomaAsyncClient(Client):
 
         查询命令详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowCommand
@@ -9985,8 +9838,7 @@ class RomaAsyncClient(Client):
 
         根据数据源id查询数据源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDataourceDetail
@@ -10049,8 +9901,7 @@ class RomaAsyncClient(Client):
 
         查看APP的访问控制详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDetailsOfAppAcl
@@ -10113,8 +9964,7 @@ class RomaAsyncClient(Client):
 
         App Code为APP应用下的子模块，创建App Code之后，可以实现简易的APP认证。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDetailsOfAppCodeV2
@@ -10179,8 +10029,7 @@ class RomaAsyncClient(Client):
 
         查看应用配置详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDetailsOfAppConfigV2
@@ -10245,8 +10094,7 @@ class RomaAsyncClient(Client):
 
         查看指定APP的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDetailsOfAppV2
@@ -10309,8 +10157,7 @@ class RomaAsyncClient(Client):
 
         查看自定义认证详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDetailsOfCustomAuthorizersV2
@@ -10373,8 +10220,7 @@ class RomaAsyncClient(Client):
 
         查看域名下绑定的证书详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDetailsOfDomainNameCertificateV2
@@ -10441,8 +10287,7 @@ class RomaAsyncClient(Client):
 
         查看指定的环境变量的详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDetailsOfEnvironmentVariableV2
@@ -10505,8 +10350,7 @@ class RomaAsyncClient(Client):
 
         查看ROMA Connect实例详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDetailsOfInstanceV2
@@ -10567,8 +10411,7 @@ class RomaAsyncClient(Client):
 
         查看指定流控策略的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDetailsOfRequestThrottlingPolicyV2
@@ -10631,8 +10474,7 @@ class RomaAsyncClient(Client):
 
         查询设备详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDevice
@@ -10695,8 +10537,7 @@ class RomaAsyncClient(Client):
 
         获取设备分组及下一层分组信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDeviceGroup
@@ -10759,8 +10600,7 @@ class RomaAsyncClient(Client):
 
         查询所有设备分组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDeviceGroupTree
@@ -10823,8 +10663,7 @@ class RomaAsyncClient(Client):
 
         查询设备分组内设备
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDevicesInGroup
@@ -10895,8 +10734,7 @@ class RomaAsyncClient(Client):
 
         查询调度计划
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDispatches
@@ -10959,8 +10797,7 @@ class RomaAsyncClient(Client):
 
         查询后端API的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowLiveDataApiV2
@@ -11024,8 +10861,7 @@ class RomaAsyncClient(Client):
         查询消息的偏移量和消息内容。
         先根据时间戳查询消息的偏移量，再根据偏移量查询消息内容。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowMqsInstanceMessages
@@ -11110,8 +10946,7 @@ class RomaAsyncClient(Client):
 
         查询Topic权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowMqsInstanceTopicAccessPolicy
@@ -11178,8 +11013,7 @@ class RomaAsyncClient(Client):
 
         查询产品详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowProduct
@@ -11242,8 +11076,7 @@ class RomaAsyncClient(Client):
 
         查询产品鉴权信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowProductAuthentication
@@ -11306,8 +11139,7 @@ class RomaAsyncClient(Client):
 
         查询产品模板详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowProductTemplate
@@ -11370,8 +11202,7 @@ class RomaAsyncClient(Client):
 
         查询服务属性详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowProperty
@@ -11436,8 +11267,7 @@ class RomaAsyncClient(Client):
 
         查询请求属性详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowRequestProperty
@@ -11504,8 +11334,7 @@ class RomaAsyncClient(Client):
 
         查询响应属性详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowResponseProperty
@@ -11572,8 +11401,7 @@ class RomaAsyncClient(Client):
 
         查看ROMA Connect实例约束信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowRestrictionOfInstanceV2
@@ -11634,8 +11462,7 @@ class RomaAsyncClient(Client):
 
         查询规则详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowRule
@@ -11698,8 +11525,7 @@ class RomaAsyncClient(Client):
 
         查询服务详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowService
@@ -11762,8 +11588,7 @@ class RomaAsyncClient(Client):
 
         通过任务ID查询指定任务的信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowTask
@@ -11826,8 +11651,7 @@ class RomaAsyncClient(Client):
 
         测试数据源连通性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StartTestDatasource
@@ -11892,8 +11716,7 @@ class RomaAsyncClient(Client):
 
         手工停止当前执行的任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for StopTask
@@ -11956,8 +11779,7 @@ class RomaAsyncClient(Client):
 
         在某个实例中取消部署后端API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UnpublishLiveDataApiV2
@@ -12020,8 +11842,7 @@ class RomaAsyncClient(Client):
 
         设置客户端配置的访问控制。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateAppAcl
@@ -12086,8 +11907,7 @@ class RomaAsyncClient(Client):
 
         修改应用配置
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateAppConfigV2
@@ -12154,8 +11974,7 @@ class RomaAsyncClient(Client):
 
         修改客户端配额
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateAppQuota
@@ -12220,8 +12039,7 @@ class RomaAsyncClient(Client):
 
         修改命令
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateCommand
@@ -12288,8 +12106,7 @@ class RomaAsyncClient(Client):
 
         修改自定义认证
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateCustomAuthorizerV2
@@ -12354,8 +12171,7 @@ class RomaAsyncClient(Client):
 
         修改数据源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDatasourceInfo
@@ -12420,8 +12236,7 @@ class RomaAsyncClient(Client):
 
         修改设备信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDevice
@@ -12486,8 +12301,7 @@ class RomaAsyncClient(Client):
 
         修改设备分组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDeviceGroup
@@ -12552,8 +12366,7 @@ class RomaAsyncClient(Client):
 
         通过任务ID和调度ID修改调度计划
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDispatches
@@ -12620,8 +12433,7 @@ class RomaAsyncClient(Client):
 
         修改绑定的域名所对应的配置信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDomainV2
@@ -12688,8 +12500,7 @@ class RomaAsyncClient(Client):
 
         修改指定环境的信息。其中可修改的属性为：name、remark，其它属性不可修改。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateEnvironmentV2
@@ -12754,8 +12565,7 @@ class RomaAsyncClient(Client):
 
         修改环境变量。环境变量引用位置为api的后端服务地址时，修改对应环境变量会将使用该变量的所有api重新发布。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateEnvironmentVariableV2
@@ -12820,8 +12630,7 @@ class RomaAsyncClient(Client):
 
         在某个实例中更新后端API的参数。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateLiveDataApiV2
@@ -12886,8 +12695,7 @@ class RomaAsyncClient(Client):
 
         修改Topic。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateMqsInstanceTopic
@@ -12950,8 +12758,7 @@ class RomaAsyncClient(Client):
 
         修改组合任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateMultiTasks
@@ -13016,8 +12823,7 @@ class RomaAsyncClient(Client):
 
         该接口用于修改指定的订阅管理
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateNotification
@@ -13082,8 +12888,7 @@ class RomaAsyncClient(Client):
 
         修改产品信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateProduct
@@ -13148,8 +12953,7 @@ class RomaAsyncClient(Client):
 
         修改产品模板
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateProductTemplate
@@ -13214,8 +13018,7 @@ class RomaAsyncClient(Client):
 
         更新产品主题
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateProductTopic
@@ -13282,8 +13085,7 @@ class RomaAsyncClient(Client):
 
         修改服务属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateProperty
@@ -13350,8 +13152,7 @@ class RomaAsyncClient(Client):
 
         修改请求属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateRequestProperty
@@ -13420,8 +13221,7 @@ class RomaAsyncClient(Client):
 
         修改指定流控策略的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateRequestThrottlingPolicyV2
@@ -13486,8 +13286,7 @@ class RomaAsyncClient(Client):
 
         修改响应属性
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateResponseProperty
@@ -13556,8 +13355,7 @@ class RomaAsyncClient(Client):
 
         修改规则
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateRule
@@ -13622,8 +13420,7 @@ class RomaAsyncClient(Client):
 
         修改服务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateService
@@ -13688,8 +13485,7 @@ class RomaAsyncClient(Client):
 
         修改指定签名密钥的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateSignatureKeyV2
@@ -13754,8 +13550,7 @@ class RomaAsyncClient(Client):
 
         修改某个流控策略下的某个特殊设置。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateSpecialThrottlingConfigurationV2
@@ -13822,8 +13617,7 @@ class RomaAsyncClient(Client):
 
         更新普通任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateTask
@@ -13888,8 +13682,7 @@ class RomaAsyncClient(Client):
 
         更新Topic权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateTopicAccessPolicy
@@ -13952,8 +13745,7 @@ class RomaAsyncClient(Client):
 
         导入产品
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UploadProduct
@@ -14020,8 +13812,7 @@ class RomaAsyncClient(Client):
         
         删除ACL策略时，如果存在ACL策略与API绑定关系，则无法删除。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeleteAclV2
@@ -14086,8 +13877,7 @@ class RomaAsyncClient(Client):
 
         增加一个ACL策略，策略类型通过字段acl_type来确定（permit或者deny），限制的对象的类型可以为IP[或者DOMAIN，这里的DOMAIN对应的acl_value的值为租户名称，而非“www.exampleDomain.com\&quot;之类的网络域名。](tag:hws;hws_hk;hcs;fcs;g42;)
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateAclStrategyV2
@@ -14150,8 +13940,7 @@ class RomaAsyncClient(Client):
 
         删除指定的ACL策略， 如果存在api与该ACL策略的绑定关系，则无法删除
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteAclV2
@@ -14214,8 +14003,7 @@ class RomaAsyncClient(Client):
 
         查询所有的ACL策略列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAclStrategiesV2
@@ -14290,8 +14078,7 @@ class RomaAsyncClient(Client):
 
         查询指定ACL策略的详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDetailsOfAclPolicyV2
@@ -14354,8 +14141,7 @@ class RomaAsyncClient(Client):
 
         修改指定的ACL策略，其中可修改的属性为：acl_name、acl_type、acl_value，其它属性不可修改。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateAclStrategyV2
@@ -14424,8 +14210,7 @@ class RomaAsyncClient(Client):
         
         为指定的API绑定流控策略，绑定时，需要指定在哪个环境上生效。同一个API发布到不同的环境可以绑定不同的流控策略；一个API在发布到特定环境后只能绑定一个默认的流控策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AssociateRequestThrottlingPolicyV2
@@ -14488,8 +14273,7 @@ class RomaAsyncClient(Client):
 
         批量解除API与流控策略的绑定关系
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDisassociateThrottlingPolicyV2
@@ -14556,8 +14340,7 @@ class RomaAsyncClient(Client):
         
         注意：当action &#x3D; online时，接口返回的响应中publish_id，version_id， publish_time字段才有含义。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchPublishOrOfflineApiV2
@@ -14624,8 +14407,7 @@ class RomaAsyncClient(Client):
         
         多个版本之间可以进行随意切换。但一个API在一个环境上，只能有一个版本生效。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ChangeApiVersionV2
@@ -14690,8 +14472,7 @@ class RomaAsyncClient(Client):
 
         校验API分组名称是否存在。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckApiGroupsV2
@@ -14754,8 +14535,7 @@ class RomaAsyncClient(Client):
 
         校验API定义。校验API的路径或名称是否已存在
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckApisV2
@@ -14818,8 +14598,7 @@ class RomaAsyncClient(Client):
 
         API分组是API的管理单元，一个API分组等同于一个服务入口，创建API分组时，返回一个子域名作为访问入口。建议一个API分组下的API具有一定的相关性。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateApiGroupV2
@@ -14884,8 +14663,7 @@ class RomaAsyncClient(Client):
         
         API分为两部分，第一部分为面向API使用者的API接口，定义了使用者如何调用这个API。第二部分面向API提供者，由API提供者定义这个API的真实的后端情况，定义了ROMA Connect如何去访问真实的后端服务。API的真实后端服务目前支持三种类型：传统的HTTP/HTTPS形式的web后端、[函数工作流、](tag:hws;hws_hk;hcs;fcs;g42;)MOCK。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateApiV2
@@ -14952,8 +14730,7 @@ class RomaAsyncClient(Client):
         
         下线操作是将API从某个已发布的环境上下线，下线后，API将无法再被调用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateOrDeletePublishRecordForApiV2
@@ -15016,8 +14793,7 @@ class RomaAsyncClient(Client):
 
         调试一个API在指定运行环境下的定义，接口调用者需要具有操作该API的权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DebugApiV2
@@ -15082,8 +14858,7 @@ class RomaAsyncClient(Client):
 
         对某个生效中的API版本进行下线操作，下线后，API在该版本生效的环境中将不再能够被调用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteApiByVersionIdV2
@@ -15148,8 +14923,7 @@ class RomaAsyncClient(Client):
         分组下存在API时分组无法删除，需要删除所有分组下的API后，再删除分组。
         删除分组时，会一并删除直接或间接关联到该分组下的所有资源，包括独立域名、SSL证书等等。并会将外部域名与子域名的绑定关系进行解除（取决于域名cname方式）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteApiGroupV2
@@ -15214,8 +14988,7 @@ class RomaAsyncClient(Client):
         
         删除API时，会删除该API所有相关的资源信息或绑定关系，如API的发布记录，绑定的后端服务，对APP的授权信息等。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteApiV2
@@ -15278,8 +15051,7 @@ class RomaAsyncClient(Client):
 
         解除API与流控策略的绑定关系。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DisassociateRequestThrottlingPolicyV2
@@ -15344,8 +15116,7 @@ class RomaAsyncClient(Client):
         
         如果是租户操作，则查询该租户下所有的分组；如果是管理员操作，则查询的是所有租户的分组。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApiGroupsV2
@@ -15426,8 +15197,7 @@ class RomaAsyncClient(Client):
         
         访问某个环境上的API，其实访问的就是其运行时的定义
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApiRuntimeDefinitionV2
@@ -15492,8 +15262,7 @@ class RomaAsyncClient(Client):
 
         查询某个指定的版本详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApiVersionDetailV2
@@ -15556,8 +15325,7 @@ class RomaAsyncClient(Client):
 
         查询某个API的历史版本。每个API在一个环境上最多存在10个历史版本。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApiVersionsV2
@@ -15628,8 +15396,7 @@ class RomaAsyncClient(Client):
 
         查询某个流控策略上已经绑定的API列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApisBindedToRequestThrottlingPolicyV2
@@ -15704,8 +15471,7 @@ class RomaAsyncClient(Client):
 
         查询所有未绑定到该流控策略上的自有API列表。需要API已经发布，未发布的API不予展示。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApisUnbindedToRequestThrottlingPolicyV2
@@ -15780,8 +15546,7 @@ class RomaAsyncClient(Client):
 
         查看API列表，返回API详细信息、发布信息等，但不能查看到后端服务信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApisV2
@@ -15870,8 +15635,7 @@ class RomaAsyncClient(Client):
 
         查询某个API绑定的流控策略列表。每个环境上应该最多只有一个流控策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRequestThrottlingPoliciesBindedToApiV2
@@ -15944,8 +15708,7 @@ class RomaAsyncClient(Client):
 
         查询指定分组的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDetailsOfApiGroupV2
@@ -16008,8 +15771,7 @@ class RomaAsyncClient(Client):
 
         查看指定的API的详细信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDetailsOfApiV2
@@ -16072,8 +15834,7 @@ class RomaAsyncClient(Client):
 
         修改API分组属性。其中name和remark可修改，其他属性不可修改。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateApiGroupV2
@@ -16138,8 +15899,7 @@ class RomaAsyncClient(Client):
 
         修改指定API的信息，包括后端服务信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateApiV2
@@ -16204,8 +15964,7 @@ class RomaAsyncClient(Client):
 
         批量解除API与ACL策略的绑定
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDeleteApiAclBindingV2
@@ -16272,8 +16031,7 @@ class RomaAsyncClient(Client):
         
         同一个API发布到不同的环境可以绑定不同的ACL策略；一个API在发布到特定环境后只能绑定一个同一种类型的ACL策略。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateApiAclBindingV2
@@ -16336,8 +16094,7 @@ class RomaAsyncClient(Client):
 
         解除某条API与ACL策略的绑定关系
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteApiAclBindingV2
@@ -16400,8 +16157,7 @@ class RomaAsyncClient(Client):
 
         查看API绑定的ACL策略列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAclPolicyBindedToApiV2
@@ -16476,8 +16232,7 @@ class RomaAsyncClient(Client):
 
         查看ACL策略绑定的API列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApisBindedToAclPolicyV2
@@ -16550,8 +16305,7 @@ class RomaAsyncClient(Client):
 
         查看ACL策略未绑定的API列表，需要API已发布
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApisUnbindedToAclPolicyV2
@@ -16626,8 +16380,7 @@ class RomaAsyncClient(Client):
 
         解除API对APP的授权关系。解除授权后，APP将不再能够调用该API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CancelingAuthorizationV2
@@ -16690,8 +16443,7 @@ class RomaAsyncClient(Client):
 
         APP创建成功后，还不能访问API，如果想要访问某个环境上的API，需要将该API在该环境上授权给APP。授权成功后，APP即可访问该环境上的这个API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateAuthorizingAppsV2
@@ -16754,8 +16506,7 @@ class RomaAsyncClient(Client):
 
         查询APP已经绑定的API列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApisBindedToAppV2
@@ -16832,8 +16583,7 @@ class RomaAsyncClient(Client):
 
         查询指定环境上某个APP未绑定的API列表，包括自有API和从云市场购买的API。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApisUnbindedToAppV2
@@ -16908,8 +16658,7 @@ class RomaAsyncClient(Client):
 
         查询API绑定的APP列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAppsBindedToApiV2
@@ -16982,8 +16731,7 @@ class RomaAsyncClient(Client):
 
         查询指定APP下路径冲突的api列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDuplicateApisForAppV2
@@ -17047,8 +16795,7 @@ class RomaAsyncClient(Client):
         - 设置应用的用户成员，为空数组时会清空已有应用成员列表
         - 设置动作为全量更新非增量更新，应用的成员列表都会替换为当次请求的应用成员列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddUserToApp
@@ -17113,8 +16860,7 @@ class RomaAsyncClient(Client):
 
         查询用户成列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckAuthUsersOfApp
@@ -17179,8 +16925,7 @@ class RomaAsyncClient(Client):
 
         查询应用的候选用户成员列表,会过滤掉异常状态用户
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckCanAuthUsersOfApp
@@ -17245,8 +16990,7 @@ class RomaAsyncClient(Client):
 
         查询应用详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckRomaAppDetails
@@ -17309,8 +17053,7 @@ class RomaAsyncClient(Client):
 
         查询应用密钥
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckRomaAppSecret
@@ -17373,8 +17116,7 @@ class RomaAsyncClient(Client):
 
         创建应用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateRomaApp
@@ -17437,8 +17179,7 @@ class RomaAsyncClient(Client):
 
         删除单个应用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteRomaApp
@@ -17501,8 +17242,7 @@ class RomaAsyncClient(Client):
 
         查询应用列表，支持条件查询，所有条件是并且的关系
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRomaApp
@@ -17577,8 +17317,7 @@ class RomaAsyncClient(Client):
 
         重置应用密钥
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ResetRomaAppSecret
@@ -17643,8 +17382,7 @@ class RomaAsyncClient(Client):
 
         更新应用
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateRomaApp
@@ -17709,8 +17447,7 @@ class RomaAsyncClient(Client):
 
         校验指定条件的应用是否存在
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ValidateRomaApp
@@ -17777,8 +17514,7 @@ class RomaAsyncClient(Client):
 
         查询作业进度
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckAssetJobStatus
@@ -17844,8 +17580,7 @@ class RomaAsyncClient(Client):
         - 最大支持100个应用和任务
         - 一个用户同一时刻只能创建一个资产删除作业任务，没有Running状态的作业任务存在
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteAsset
@@ -17909,8 +17644,7 @@ class RomaAsyncClient(Client):
         - 导出作业执行成功后，通过该接口获取导出作业产生的资产包，仅能下载一次
         - 可先压缩后存在数据库，下载后删除
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DownloadAssetArchive
@@ -17976,8 +17710,7 @@ class RomaAsyncClient(Client):
         - 最大支持100个应用和任务
         - 一个用户同一时刻只能创建一个资产导出作业任务，没有Running状态的作业任务存在
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ExportAsset
@@ -18042,8 +17775,7 @@ class RomaAsyncClient(Client):
         - 最大支持100个应用和任务
         - 一个用户同一时刻只能创建一个资产导入作业任务，没有Running状态的作业任务存在
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ImportAsset
@@ -18108,8 +17840,7 @@ class RomaAsyncClient(Client):
 
         查询字典详情,
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckDictionary
@@ -18172,8 +17903,7 @@ class RomaAsyncClient(Client):
 
         创建字典
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateDictionary
@@ -18236,8 +17966,7 @@ class RomaAsyncClient(Client):
 
         删除单个字典，会同时删除该字典的所有子字典
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteDictionary
@@ -18300,8 +18029,7 @@ class RomaAsyncClient(Client):
 
         查询字典列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListDictionary
@@ -18372,8 +18100,7 @@ class RomaAsyncClient(Client):
 
         更新字典
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateDictionary
@@ -18438,8 +18165,7 @@ class RomaAsyncClient(Client):
 
         校验指定条件的字典是否存在，支持字典名称和字典编码
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ValidateDictionary
@@ -18504,8 +18230,7 @@ class RomaAsyncClient(Client):
 
         获取符合条件的服务实例列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CheckRomaInstanceListV2
@@ -18570,8 +18295,7 @@ class RomaAsyncClient(Client):
 
         查询MQS实例列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListMqsInstance
@@ -18632,8 +18356,7 @@ class RomaAsyncClient(Client):
 
         查询指定MQS实例详情。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowMqsInstance
@@ -18694,8 +18417,7 @@ class RomaAsyncClient(Client):
 
         导出分组下API的定义信息，导出文件内容符合swagger标准规范。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ExportApiDefinitionsV2
@@ -18758,8 +18480,7 @@ class RomaAsyncClient(Client):
 
         导出自定义后端API，导出文件内容符合swagger标准规范。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ExportLiveDataApiDefinitionsV2
@@ -18822,8 +18543,7 @@ class RomaAsyncClient(Client):
 
         导入API。导入文件内容需要符合swagger标准规范，自定义扩展字段请参考用户指南的“附录：前端API的Swagger扩展定义”章节。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ImportApiDefinitionsV2
@@ -18902,8 +18622,7 @@ class RomaAsyncClient(Client):
 
         导入自定义后端API。导入文件内容需要符合swagger标准规范，自定义扩展字段请参考用户指南的“附录：后端API的Swagger扩展定义”章节
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ImportLiveDataApiDefinitionsV2
@@ -18974,8 +18693,7 @@ class RomaAsyncClient(Client):
         
         若指定地址的后端实例已存在，则更新对应后端实例信息。若请求体中包含多个重复地址的后端实例定义，则使用第一个定义。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for AddingBackendInstancesV2
@@ -19040,8 +18758,7 @@ class RomaAsyncClient(Client):
 
         批量修改后端服务器状态不可用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchDisableMembers
@@ -19106,8 +18823,7 @@ class RomaAsyncClient(Client):
 
         批量修改后端服务器状态可用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for BatchEnableMembers
@@ -19174,8 +18890,7 @@ class RomaAsyncClient(Client):
         
         若指定名称的后端服务器组已存在，则更新对应后端服务器组信息。若请求体中包含多个重复名称的后端服务器定义，则使用第一个定义。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateMemberGroup
@@ -19241,8 +18956,7 @@ class RomaAsyncClient(Client):
         在ROMA Connect APIC中创建连接私有VPC资源的通道，并在创建API时将后端节点配置为使用这些VPC通道，以便ROMA Connect APIC直接访问私有VPC资源。
         &gt; 每个用户默认最多创建200个VPC通道，如需支持更多请联系技术支持调整配额。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateVpcChannelV2
@@ -19305,8 +19019,7 @@ class RomaAsyncClient(Client):
 
         删除指定VPC通道中的后端实例
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteBackendInstanceV2
@@ -19371,8 +19084,7 @@ class RomaAsyncClient(Client):
 
         删除指定的VPC通道后端服务器组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteMemberGroup
@@ -19437,8 +19149,7 @@ class RomaAsyncClient(Client):
 
         删除指定的VPC通道
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteVpcChannelV2
@@ -19501,8 +19212,7 @@ class RomaAsyncClient(Client):
 
         查看指定VPC通道的后端实例列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListBackendInstancesV2
@@ -19577,8 +19287,7 @@ class RomaAsyncClient(Client):
 
         查询VPC通道后端云服务组列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListMemberGroups
@@ -19651,8 +19360,7 @@ class RomaAsyncClient(Client):
 
         查看VPC通道列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListVpcChannelsV2
@@ -19733,8 +19441,7 @@ class RomaAsyncClient(Client):
 
         查看指定的VPC通道后端服务器组详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDetailsOfMemberGroup
@@ -19799,8 +19506,7 @@ class RomaAsyncClient(Client):
 
         查看指定的VPC通道详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowDetailsOfVpcChannelV2
@@ -19863,8 +19569,7 @@ class RomaAsyncClient(Client):
 
         更新指定的VPC通道的后端实例。更新时，使用传入的请求参数对对应云服务组的后端实例进行全量覆盖修改。若未指定修改的云服务器组，则进行全量覆盖。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateBackendInstancesV2
@@ -19929,8 +19634,7 @@ class RomaAsyncClient(Client):
 
         修改VPC通道健康检查。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateHealthCheck
@@ -19995,8 +19699,7 @@ class RomaAsyncClient(Client):
 
         更新指定VPC通道后端服务器组
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateMemberGroup
@@ -20067,8 +19770,7 @@ class RomaAsyncClient(Client):
         
         使用传入的后端服务器组列表对VPC通道进行全量覆盖，若后端服务器组列表为空，则会全量删除已有的服务器组；
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateVpcChannelV2
@@ -20133,8 +19835,7 @@ class RomaAsyncClient(Client):
 
         创建相同的VPC通道关联到多个实例。同一个项目下VPC通道名称不可重复。注意：实例特性vpc_name_modifiable配置为off时才可使用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateProjectVpcChannel
@@ -20195,8 +19896,7 @@ class RomaAsyncClient(Client):
 
         同步VPC通道到多个实例。注意：实例特性vpc_name_modifiable配置为off时才可使用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateProjectVpcChannelSyncs
@@ -20257,8 +19957,7 @@ class RomaAsyncClient(Client):
 
         查询项目下所有实例的VPC通道列表
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListProjectVpcChannelsV2
@@ -20337,8 +20036,7 @@ class RomaAsyncClient(Client):
 
         项目下根据VPC通道名称批量修改多个多个实例下的VPC通道。若实例下不存在该VPC通道则创建。注意：实例特性vpc_name_modifiable配置为off时才可使用。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateProjectVpcChannel

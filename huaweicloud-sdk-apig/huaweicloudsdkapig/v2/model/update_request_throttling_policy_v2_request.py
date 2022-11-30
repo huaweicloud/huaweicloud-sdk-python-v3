@@ -36,7 +36,7 @@ class UpdateRequestThrottlingPolicyV2Request:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID
+        :param instance_id: 实例ID，在API网关控制台的“实例信息”中获取。
         :type instance_id: str
         :param throttle_id: 流控策略的编号
         :type throttle_id: str
@@ -60,7 +60,7 @@ class UpdateRequestThrottlingPolicyV2Request:
     def instance_id(self):
         """Gets the instance_id of this UpdateRequestThrottlingPolicyV2Request.
 
-        实例ID
+        实例ID，在API网关控制台的“实例信息”中获取。
 
         :return: The instance_id of this UpdateRequestThrottlingPolicyV2Request.
         :rtype: str
@@ -71,7 +71,7 @@ class UpdateRequestThrottlingPolicyV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this UpdateRequestThrottlingPolicyV2Request.
 
-        实例ID
+        实例ID，在API网关控制台的“实例信息”中获取。
 
         :param instance_id: The instance_id of this UpdateRequestThrottlingPolicyV2Request.
         :type instance_id: str

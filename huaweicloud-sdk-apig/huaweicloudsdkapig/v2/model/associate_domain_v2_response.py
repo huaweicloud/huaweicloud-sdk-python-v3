@@ -23,17 +23,19 @@ class AssociateDomainV2Response(SdkResponse):
         'url_domain': 'str',
         'id': 'str',
         'status': 'int',
-        'min_ssl_version': 'str'
+        'min_ssl_version': 'str',
+        'is_http_redirect_to_https': 'bool'
     }
 
     attribute_map = {
         'url_domain': 'url_domain',
         'id': 'id',
         'status': 'status',
-        'min_ssl_version': 'min_ssl_version'
+        'min_ssl_version': 'min_ssl_version',
+        'is_http_redirect_to_https': 'is_http_redirect_to_https'
     }
 
-    def __init__(self, url_domain=None, id=None, status=None, min_ssl_version=None):
+    def __init__(self, url_domain=None, id=None, status=None, min_ssl_version=None, is_http_redirect_to_https=None):
         """AssociateDomainV2Response
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class AssociateDomainV2Response(SdkResponse):
         :type status: int
         :param min_ssl_version: 支持的最小SSL版本
         :type min_ssl_version: str
+        :param is_http_redirect_to_https: 是否开启http到https的重定向，false为关闭，true为开启，默认为false
+        :type is_http_redirect_to_https: bool
         """
         
         super(AssociateDomainV2Response, self).__init__()
@@ -54,6 +58,7 @@ class AssociateDomainV2Response(SdkResponse):
         self._id = None
         self._status = None
         self._min_ssl_version = None
+        self._is_http_redirect_to_https = None
         self.discriminator = None
 
         if url_domain is not None:
@@ -64,6 +69,8 @@ class AssociateDomainV2Response(SdkResponse):
             self.status = status
         if min_ssl_version is not None:
             self.min_ssl_version = min_ssl_version
+        if is_http_redirect_to_https is not None:
+            self.is_http_redirect_to_https = is_http_redirect_to_https
 
     @property
     def url_domain(self):
@@ -152,6 +159,28 @@ class AssociateDomainV2Response(SdkResponse):
         :type min_ssl_version: str
         """
         self._min_ssl_version = min_ssl_version
+
+    @property
+    def is_http_redirect_to_https(self):
+        """Gets the is_http_redirect_to_https of this AssociateDomainV2Response.
+
+        是否开启http到https的重定向，false为关闭，true为开启，默认为false
+
+        :return: The is_http_redirect_to_https of this AssociateDomainV2Response.
+        :rtype: bool
+        """
+        return self._is_http_redirect_to_https
+
+    @is_http_redirect_to_https.setter
+    def is_http_redirect_to_https(self, is_http_redirect_to_https):
+        """Sets the is_http_redirect_to_https of this AssociateDomainV2Response.
+
+        是否开启http到https的重定向，false为关闭，true为开启，默认为false
+
+        :param is_http_redirect_to_https: The is_http_redirect_to_https of this AssociateDomainV2Response.
+        :type is_http_redirect_to_https: bool
+        """
+        self._is_http_redirect_to_https = is_http_redirect_to_https
 
     def to_dict(self):
         """Returns the model properties as a dict"""

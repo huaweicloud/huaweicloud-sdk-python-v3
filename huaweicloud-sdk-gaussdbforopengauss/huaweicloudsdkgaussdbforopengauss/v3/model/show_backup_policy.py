@@ -28,7 +28,8 @@ class ShowBackupPolicy:
         'rate_limit': 'int',
         'prefetch_block': 'int',
         'filesplit_size': 'int',
-        'file_split_size': 'int'
+        'file_split_size': 'int',
+        'enable_standby_backup': 'bool'
     }
 
     attribute_map = {
@@ -40,10 +41,11 @@ class ShowBackupPolicy:
         'rate_limit': 'rate_limit',
         'prefetch_block': 'prefetch_block',
         'filesplit_size': 'filesplit_size',
-        'file_split_size': 'file_split_size'
+        'file_split_size': 'file_split_size',
+        'enable_standby_backup': 'enable_standby_backup'
     }
 
-    def __init__(self, keep_days=None, start_time=None, period=None, differential_priod=None, differential_period=None, rate_limit=None, prefetch_block=None, filesplit_size=None, file_split_size=None):
+    def __init__(self, keep_days=None, start_time=None, period=None, differential_priod=None, differential_period=None, rate_limit=None, prefetch_block=None, filesplit_size=None, file_split_size=None, enable_standby_backup=None):
         """ShowBackupPolicy
 
         The model defined in huaweicloud sdk
@@ -66,6 +68,8 @@ class ShowBackupPolicy:
         :type filesplit_size: int
         :param file_split_size: 全量、差量备份时产生的备份文件会根据分片大小进行拆分，可设置范围为0~1024GB，设置需为4的倍数，默认4GB，0GB表示不限制大小。  取值范围：0 ~ 1024
         :type file_split_size: int
+        :param enable_standby_backup: 是否启用备机备份。  取值范围：true|false
+        :type enable_standby_backup: bool
         """
         
         
@@ -79,6 +83,7 @@ class ShowBackupPolicy:
         self._prefetch_block = None
         self._filesplit_size = None
         self._file_split_size = None
+        self._enable_standby_backup = None
         self.discriminator = None
 
         self.keep_days = keep_days
@@ -95,6 +100,8 @@ class ShowBackupPolicy:
             self.filesplit_size = filesplit_size
         if file_split_size is not None:
             self.file_split_size = file_split_size
+        if enable_standby_backup is not None:
+            self.enable_standby_backup = enable_standby_backup
 
     @property
     def keep_days(self):
@@ -293,6 +300,28 @@ class ShowBackupPolicy:
         :type file_split_size: int
         """
         self._file_split_size = file_split_size
+
+    @property
+    def enable_standby_backup(self):
+        """Gets the enable_standby_backup of this ShowBackupPolicy.
+
+        是否启用备机备份。  取值范围：true|false
+
+        :return: The enable_standby_backup of this ShowBackupPolicy.
+        :rtype: bool
+        """
+        return self._enable_standby_backup
+
+    @enable_standby_backup.setter
+    def enable_standby_backup(self, enable_standby_backup):
+        """Sets the enable_standby_backup of this ShowBackupPolicy.
+
+        是否启用备机备份。  取值范围：true|false
+
+        :param enable_standby_backup: The enable_standby_backup of this ShowBackupPolicy.
+        :type enable_standby_backup: bool
+        """
+        self._enable_standby_backup = enable_standby_backup
 
     def to_dict(self):
         """Returns the model properties as a dict"""

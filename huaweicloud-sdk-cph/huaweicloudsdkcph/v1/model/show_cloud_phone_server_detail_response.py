@@ -34,7 +34,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
         'subnet_id': 'str',
         'subnet_cidr': 'str',
         'resource_project_id': 'str',
-        'metadata': 'object',
+        'metadata': 'ShowCloudPhoneServerDetailResponseBodyMetadata',
         'addresses': 'list[Address]',
         'band_widths': 'list[Bandwidth]',
         'volumes': 'list[Volume]',
@@ -74,7 +74,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 请求的唯一标识ID
+        :param request_id: 请求的唯一标识ID。
         :type request_id: str
         :param server_name: 云手机服务器名称 不超过65字符，只支持英文字母、数字、汉字、下划线和中划线
         :type server_name: str
@@ -90,27 +90,27 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
         :type keypair_name: str
         :param status: 服务器状态 - 0、1、3、4：创建中 - 2：异常 - 5：正常 - 8：冻结 - 10：关机 - 11：关机中 - 12：关机失败 - 13：开机中
         :type status: int
-        :param vpc_id: 云手机服务器所属虚拟私有云（简称VPC）的ID。 网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC ID；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC ID
+        :param vpc_id: 云手机服务器所属虚拟私有云（简称VPC）的ID 网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC ID；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC ID
         :type vpc_id: str
-        :param cidr: 云手机服务器所属虚拟私有云（简称VPC）的网段。 网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR
+        :param cidr: 云手机服务器所属虚拟私有云（简称VPC）的网段 网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR
         :type cidr: str
-        :param vpc_cidr: 云手机服务器所属虚拟私有云（简称VPC）的网段。 网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR
+        :param vpc_cidr: 云手机服务器所属虚拟私有云（简称VPC）的网段 网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR
         :type vpc_cidr: str
-        :param subnet_id: 云手机服务器所属子网的ID。 仅在网络版本 network_version 取值为“v2”时，该取值表示租户创建服务器时指定子网的 ID，网络版本取值为“v1”时，该字段表示云手机服务器所属资源租户的子网ID
+        :param subnet_id: 云手机服务器所属子网的ID 仅在网络版本 network_version 取值为“v2”时，该取值表示租户创建服务器时指定子网的 ID，网络版本取值为“v1”时，该字段表示云手机服务器所属资源租户的子网ID
         :type subnet_id: str
-        :param subnet_cidr: 云手机服务器所属子网的网段。 网络版本 network_version 取值为“v2”时，表示租户创建服务器时指定子网的 CIDR; 取值为“v1”时，表示云手机服务器所属资源租户的子网CIDR
+        :param subnet_cidr: 云手机服务器所属子网的网段 网络版本 network_version 取值为“v2”时，表示租户创建服务器时指定子网的 CIDR; 取值为“v1”时，表示云手机服务器所属资源租户的子网CIDR
         :type subnet_cidr: str
         :param resource_project_id: 云手机服务器的项目ID
         :type resource_project_id: str
-        :param metadata: 订单以及产品相关信息
-        :type metadata: :class:`huaweicloudsdkcph.v1.object`
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneServerDetailResponseBodyMetadata`
         :param addresses: 云手机服务器的IP相关信息
         :type addresses: list[:class:`huaweicloudsdkcph.v1.Address`]
         :param band_widths: 云手机服务器带宽信息的结构体数组
         :type band_widths: list[:class:`huaweicloudsdkcph.v1.Bandwidth`]
         :param volumes: 云手机服务器卷信息的结构体数组
         :type volumes: list[:class:`huaweicloudsdkcph.v1.Volume`]
-        :param network_version: 是否为自定义网络的云手机服务器标识。  \&quot;v1\&quot;，非自定义网络的云手机服务器。  \&quot;v2\&quot;，自定义网络的云手机服务器。 支持按照网络版本字段进行筛选
+        :param network_version: 是否为自定义网络的云手机服务器标识。  \&quot;v1\&quot;，非自定义网络的云手机服务器。\\t\&quot;v2\&quot;，自定义网络的云手机服务器。 支持按照网络版本字段进行筛选
         :type network_version: str
         :param security_groups: 服务器扩展网卡绑定的安全组信息 系统定义网络的服务器，该字段返回为空列表
         :type security_groups: list[str]
@@ -146,34 +146,56 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
         self._update_time = None
         self.discriminator = None
 
-        self.request_id = request_id
-        self.server_name = server_name
-        self.availability_zone = availability_zone
-        self.server_id = server_id
-        self.server_model_name = server_model_name
-        self.phone_model_name = phone_model_name
-        self.keypair_name = keypair_name
-        self.status = status
-        self.vpc_id = vpc_id
-        self.cidr = cidr
-        self.vpc_cidr = vpc_cidr
-        self.subnet_id = subnet_id
-        self.subnet_cidr = subnet_cidr
-        self.resource_project_id = resource_project_id
-        self.metadata = metadata
-        self.addresses = addresses
-        self.band_widths = band_widths
-        self.volumes = volumes
-        self.network_version = network_version
-        self.security_groups = security_groups
-        self.create_time = create_time
-        self.update_time = update_time
+        if request_id is not None:
+            self.request_id = request_id
+        if server_name is not None:
+            self.server_name = server_name
+        if availability_zone is not None:
+            self.availability_zone = availability_zone
+        if server_id is not None:
+            self.server_id = server_id
+        if server_model_name is not None:
+            self.server_model_name = server_model_name
+        if phone_model_name is not None:
+            self.phone_model_name = phone_model_name
+        if keypair_name is not None:
+            self.keypair_name = keypair_name
+        if status is not None:
+            self.status = status
+        if vpc_id is not None:
+            self.vpc_id = vpc_id
+        if cidr is not None:
+            self.cidr = cidr
+        if vpc_cidr is not None:
+            self.vpc_cidr = vpc_cidr
+        if subnet_id is not None:
+            self.subnet_id = subnet_id
+        if subnet_cidr is not None:
+            self.subnet_cidr = subnet_cidr
+        if resource_project_id is not None:
+            self.resource_project_id = resource_project_id
+        if metadata is not None:
+            self.metadata = metadata
+        if addresses is not None:
+            self.addresses = addresses
+        if band_widths is not None:
+            self.band_widths = band_widths
+        if volumes is not None:
+            self.volumes = volumes
+        if network_version is not None:
+            self.network_version = network_version
+        if security_groups is not None:
+            self.security_groups = security_groups
+        if create_time is not None:
+            self.create_time = create_time
+        if update_time is not None:
+            self.update_time = update_time
 
     @property
     def request_id(self):
         """Gets the request_id of this ShowCloudPhoneServerDetailResponse.
 
-        请求的唯一标识ID
+        请求的唯一标识ID。
 
         :return: The request_id of this ShowCloudPhoneServerDetailResponse.
         :rtype: str
@@ -184,7 +206,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this ShowCloudPhoneServerDetailResponse.
 
-        请求的唯一标识ID
+        请求的唯一标识ID。
 
         :param request_id: The request_id of this ShowCloudPhoneServerDetailResponse.
         :type request_id: str
@@ -349,7 +371,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
     def vpc_id(self):
         """Gets the vpc_id of this ShowCloudPhoneServerDetailResponse.
 
-        云手机服务器所属虚拟私有云（简称VPC）的ID。 网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC ID；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC ID
+        云手机服务器所属虚拟私有云（简称VPC）的ID 网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC ID；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC ID
 
         :return: The vpc_id of this ShowCloudPhoneServerDetailResponse.
         :rtype: str
@@ -360,7 +382,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this ShowCloudPhoneServerDetailResponse.
 
-        云手机服务器所属虚拟私有云（简称VPC）的ID。 网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC ID；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC ID
+        云手机服务器所属虚拟私有云（简称VPC）的ID 网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC ID；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC ID
 
         :param vpc_id: The vpc_id of this ShowCloudPhoneServerDetailResponse.
         :type vpc_id: str
@@ -371,7 +393,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
     def cidr(self):
         """Gets the cidr of this ShowCloudPhoneServerDetailResponse.
 
-        云手机服务器所属虚拟私有云（简称VPC）的网段。 网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR
+        云手机服务器所属虚拟私有云（简称VPC）的网段 网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR
 
         :return: The cidr of this ShowCloudPhoneServerDetailResponse.
         :rtype: str
@@ -382,7 +404,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
     def cidr(self, cidr):
         """Sets the cidr of this ShowCloudPhoneServerDetailResponse.
 
-        云手机服务器所属虚拟私有云（简称VPC）的网段。 网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR
+        云手机服务器所属虚拟私有云（简称VPC）的网段 网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR
 
         :param cidr: The cidr of this ShowCloudPhoneServerDetailResponse.
         :type cidr: str
@@ -393,7 +415,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
     def vpc_cidr(self):
         """Gets the vpc_cidr of this ShowCloudPhoneServerDetailResponse.
 
-        云手机服务器所属虚拟私有云（简称VPC）的网段。 网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR
+        云手机服务器所属虚拟私有云（简称VPC）的网段 网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR
 
         :return: The vpc_cidr of this ShowCloudPhoneServerDetailResponse.
         :rtype: str
@@ -404,7 +426,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
     def vpc_cidr(self, vpc_cidr):
         """Sets the vpc_cidr of this ShowCloudPhoneServerDetailResponse.
 
-        云手机服务器所属虚拟私有云（简称VPC）的网段。 网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR
+        云手机服务器所属虚拟私有云（简称VPC）的网段 网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR
 
         :param vpc_cidr: The vpc_cidr of this ShowCloudPhoneServerDetailResponse.
         :type vpc_cidr: str
@@ -415,7 +437,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
     def subnet_id(self):
         """Gets the subnet_id of this ShowCloudPhoneServerDetailResponse.
 
-        云手机服务器所属子网的ID。 仅在网络版本 network_version 取值为“v2”时，该取值表示租户创建服务器时指定子网的 ID，网络版本取值为“v1”时，该字段表示云手机服务器所属资源租户的子网ID
+        云手机服务器所属子网的ID 仅在网络版本 network_version 取值为“v2”时，该取值表示租户创建服务器时指定子网的 ID，网络版本取值为“v1”时，该字段表示云手机服务器所属资源租户的子网ID
 
         :return: The subnet_id of this ShowCloudPhoneServerDetailResponse.
         :rtype: str
@@ -426,7 +448,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this ShowCloudPhoneServerDetailResponse.
 
-        云手机服务器所属子网的ID。 仅在网络版本 network_version 取值为“v2”时，该取值表示租户创建服务器时指定子网的 ID，网络版本取值为“v1”时，该字段表示云手机服务器所属资源租户的子网ID
+        云手机服务器所属子网的ID 仅在网络版本 network_version 取值为“v2”时，该取值表示租户创建服务器时指定子网的 ID，网络版本取值为“v1”时，该字段表示云手机服务器所属资源租户的子网ID
 
         :param subnet_id: The subnet_id of this ShowCloudPhoneServerDetailResponse.
         :type subnet_id: str
@@ -437,7 +459,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
     def subnet_cidr(self):
         """Gets the subnet_cidr of this ShowCloudPhoneServerDetailResponse.
 
-        云手机服务器所属子网的网段。 网络版本 network_version 取值为“v2”时，表示租户创建服务器时指定子网的 CIDR; 取值为“v1”时，表示云手机服务器所属资源租户的子网CIDR
+        云手机服务器所属子网的网段 网络版本 network_version 取值为“v2”时，表示租户创建服务器时指定子网的 CIDR; 取值为“v1”时，表示云手机服务器所属资源租户的子网CIDR
 
         :return: The subnet_cidr of this ShowCloudPhoneServerDetailResponse.
         :rtype: str
@@ -448,7 +470,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
     def subnet_cidr(self, subnet_cidr):
         """Sets the subnet_cidr of this ShowCloudPhoneServerDetailResponse.
 
-        云手机服务器所属子网的网段。 网络版本 network_version 取值为“v2”时，表示租户创建服务器时指定子网的 CIDR; 取值为“v1”时，表示云手机服务器所属资源租户的子网CIDR
+        云手机服务器所属子网的网段 网络版本 network_version 取值为“v2”时，表示租户创建服务器时指定子网的 CIDR; 取值为“v1”时，表示云手机服务器所属资源租户的子网CIDR
 
         :param subnet_cidr: The subnet_cidr of this ShowCloudPhoneServerDetailResponse.
         :type subnet_cidr: str
@@ -481,10 +503,8 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this ShowCloudPhoneServerDetailResponse.
 
-        订单以及产品相关信息
-
         :return: The metadata of this ShowCloudPhoneServerDetailResponse.
-        :rtype: :class:`huaweicloudsdkcph.v1.object`
+        :rtype: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneServerDetailResponseBodyMetadata`
         """
         return self._metadata
 
@@ -492,10 +512,8 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
     def metadata(self, metadata):
         """Sets the metadata of this ShowCloudPhoneServerDetailResponse.
 
-        订单以及产品相关信息
-
         :param metadata: The metadata of this ShowCloudPhoneServerDetailResponse.
-        :type metadata: :class:`huaweicloudsdkcph.v1.object`
+        :type metadata: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneServerDetailResponseBodyMetadata`
         """
         self._metadata = metadata
 
@@ -569,7 +587,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
     def network_version(self):
         """Gets the network_version of this ShowCloudPhoneServerDetailResponse.
 
-        是否为自定义网络的云手机服务器标识。  \"v1\"，非自定义网络的云手机服务器。  \"v2\"，自定义网络的云手机服务器。 支持按照网络版本字段进行筛选
+        是否为自定义网络的云手机服务器标识。  \"v1\"，非自定义网络的云手机服务器。\\t\"v2\"，自定义网络的云手机服务器。 支持按照网络版本字段进行筛选
 
         :return: The network_version of this ShowCloudPhoneServerDetailResponse.
         :rtype: str
@@ -580,7 +598,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
     def network_version(self, network_version):
         """Sets the network_version of this ShowCloudPhoneServerDetailResponse.
 
-        是否为自定义网络的云手机服务器标识。  \"v1\"，非自定义网络的云手机服务器。  \"v2\"，自定义网络的云手机服务器。 支持按照网络版本字段进行筛选
+        是否为自定义网络的云手机服务器标识。  \"v1\"，非自定义网络的云手机服务器。\\t\"v2\"，自定义网络的云手机服务器。 支持按照网络版本字段进行筛选
 
         :param network_version: The network_version of this ShowCloudPhoneServerDetailResponse.
         :type network_version: str

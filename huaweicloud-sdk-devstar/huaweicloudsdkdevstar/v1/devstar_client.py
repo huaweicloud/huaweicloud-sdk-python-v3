@@ -47,8 +47,7 @@ class DevStarClient(Client):
 
         通过应用Id获取软件发布仓库列表 
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowApplicationReleaseRepositories
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowApplicationReleaseRepositoriesRequest`
@@ -118,8 +117,7 @@ class DevStarClient(Client):
 
         根据应用Id查询应用关联的代码仓、流水线删除状态 使用场景：用户删除应用关联的资源（如代码仓、流水线...）后，通过该接口实时查询代码仓、流水线删除状态
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowApplicationResDeleteStatus
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowApplicationResDeleteStatusRequest`
@@ -181,8 +179,7 @@ class DevStarClient(Client):
 
         根据应用Id获取依赖元数据资源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowApplicationDependentResources
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowApplicationDependentResourcesRequest`
@@ -248,8 +245,7 @@ class DevStarClient(Client):
 
         根据应用Id获取应用详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowApplicationV3
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowApplicationV3Request`
@@ -313,8 +309,7 @@ class DevStarClient(Client):
         - 允许更新信息的信息包含
         name,description,icon
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for UpdateApplication
         :type request: :class:`huaweicloudsdkdevstar.v1.UpdateApplicationRequest`
@@ -378,8 +373,7 @@ class DevStarClient(Client):
 
         根据应用Id删除应用，并可以选择删除其关联的代码仓、流水线资源
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeleteApplicationV4
         :type request: :class:`huaweicloudsdkdevstar.v1.DeleteApplicationV4Request`
@@ -444,8 +438,7 @@ class DevStarClient(Client):
         获取我创建的应用列表
         当前只支持查询我创建的应用，其中请求参数is_created_by_self需为true
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListApplicationsV6
         :type request: :class:`huaweicloudsdkdevstar.v1.ListApplicationsV6Request`
@@ -527,8 +520,7 @@ class DevStarClient(Client):
 
         下载模板产物。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DownloadApplicationCode
         :type request: :class:`huaweicloudsdkdevstar.v1.DownloadApplicationCodeRequest`
@@ -590,8 +582,7 @@ class DevStarClient(Client):
 
         部署任务执行变更人工审核，终止或者继续部署任务
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ConfirmDeploymentJob
         :type request: :class:`huaweicloudsdkdevstar.v1.ConfirmDeploymentJobRequest`
@@ -660,8 +651,7 @@ class DevStarClient(Client):
         handler为在函数部署方式下，入口函数名称，从应用代码中获取，格式为“包名.类名.函数名称”，例如：com.example.demo.APIGTrigger.handler。
         也可以从应用详情接口返回结构template_deployment中直接获取。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDeploymentJobs
         :type request: :class:`huaweicloudsdkdevstar.v1.CreateDeploymentJobsRequest`
@@ -727,8 +717,7 @@ class DevStarClient(Client):
 
         查询应用环境部署任务详情
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowDeploymentJobs
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowDeploymentJobsRequest`
@@ -800,8 +789,7 @@ class DevStarClient(Client):
         - 代码生成位置
         应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RunCodehubTemplateJob
         :type request: :class:`huaweicloudsdkdevstar.v1.RunCodehubTemplateJobRequest`
@@ -871,8 +859,7 @@ class DevStarClient(Client):
         - 代码生成位置
         应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RunDevstarTemplateJob
         :type request: :class:`huaweicloudsdkdevstar.v1.RunDevstarTemplateJobRequest`
@@ -943,8 +930,7 @@ class DevStarClient(Client):
         - 代码生成位置
         应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowJobDetail
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowJobDetailRequest`
@@ -1006,8 +992,7 @@ class DevStarClient(Client):
 
         流水线模板列表查询
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPipelineTemplates
         :type request: :class:`huaweicloudsdkdevstar.v1.ListPipelineTemplatesRequest`
@@ -1073,8 +1058,7 @@ class DevStarClient(Client):
 
         查询应用流水线最近一次运行状态查询接口
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowPipelineLastStatusV2
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowPipelineLastStatusV2Request`
@@ -1136,8 +1120,7 @@ class DevStarClient(Client):
 
         根据流水线Id操作流水线启动
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for StartPipeline
         :type request: :class:`huaweicloudsdkdevstar.v1.StartPipelineRequest`
@@ -1200,8 +1183,7 @@ class DevStarClient(Client):
         获取用户有权限的DevStar存量DevCloud项目列表。
         来源包括：1.DevStar创建的DevCloud项目；2.DevStar应用有关联DevCloud项目。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListProjectsV4
         :type request: :class:`huaweicloudsdkdevstar.v1.ListProjectsV4Request`
@@ -1271,8 +1253,7 @@ class DevStarClient(Client):
         - 必传参数
             project_id,name,region_id
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CheckRepositoryDuplicateName
         :type request: :class:`huaweicloudsdkdevstar.v1.CheckRepositoryDuplicateNameRequest`
@@ -1340,8 +1321,7 @@ class DevStarClient(Client):
         - 用户需为登录状态。
         - 拥有仓库权限。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRepositoryByCloudIde
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowRepositoryByCloudIdeRequest`
@@ -1413,8 +1393,7 @@ class DevStarClient(Client):
 
         查询代码仓库的统计信息,包括代码仓的名称,代码行数等信息
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowRepositoryStatisticalDataV2
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowRepositoryStatisticalDataV2Request`
@@ -1476,8 +1455,7 @@ class DevStarClient(Client):
 
         该接口可以用于模板作者或模板维护人读取模板文件内容。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTemplateFile
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowTemplateFileRequest`
@@ -1543,8 +1521,7 @@ class DevStarClient(Client):
 
         未登录状态下，将用户浏览过的模板缓存在浏览器中，登录时，调用该接口同步模板浏览记录。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateTemplateViewHistories
         :type request: :class:`huaweicloudsdkdevstar.v1.CreateTemplateViewHistoriesRequest`
@@ -1606,8 +1583,7 @@ class DevStarClient(Client):
 
         查询模板列表，推荐使用/v1/templates/query接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListPublishedTemplates
         :type request: :class:`huaweicloudsdkdevstar.v1.ListPublishedTemplatesRequest`
@@ -1673,8 +1649,7 @@ class DevStarClient(Client):
 
         查询DevStar或者CodeLabs登录用户浏览过的模板（只返回最近浏览的5个模板）。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTemplateViewHistories
         :type request: :class:`huaweicloudsdkdevstar.v1.ListTemplateViewHistoriesRequest`
@@ -1736,8 +1711,7 @@ class DevStarClient(Client):
 
         查询模板列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTemplates
         :type request: :class:`huaweicloudsdkdevstar.v1.ListTemplatesRequest`
@@ -1799,8 +1773,7 @@ class DevStarClient(Client):
 
         查询模板列表。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListTemplatesV2
         :type request: :class:`huaweicloudsdkdevstar.v1.ListTemplatesV2Request`
@@ -1864,8 +1837,7 @@ class DevStarClient(Client):
 
         获取指定模板详情，包括模板id、名称、描述、作者、标签、上架时间等信息。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTemplateV3
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowTemplateV3Request`
@@ -1927,8 +1899,7 @@ class DevStarClient(Client):
 
         查询模板详情，推荐使用V3版本接口。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ShowTemplateDetail
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowTemplateDetailRequest`

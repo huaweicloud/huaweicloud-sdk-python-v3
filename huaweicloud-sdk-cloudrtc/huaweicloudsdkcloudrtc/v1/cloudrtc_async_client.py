@@ -49,8 +49,7 @@ class CloudRTCAsyncClient(Client):
         
         最大查询跨度1天。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRtcAbnormalEventDimension
@@ -121,8 +120,7 @@ class CloudRTCAsyncClient(Client):
         
         最大查询跨度1天。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRtcAbnormalEvents
@@ -197,8 +195,7 @@ class CloudRTCAsyncClient(Client):
         
         可查询5天内的数据，mid 不为null，查询实时数据时，查询起止时间不超过24个小时，每次查询单个用户时，支持跨天查询。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRtcClientQosDetails
@@ -293,8 +290,7 @@ class CloudRTCAsyncClient(Client):
         
         最大查询跨度31天。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRtcHistoryQuality
@@ -372,8 +368,7 @@ class CloudRTCAsyncClient(Client):
         
         最大查询跨度31天。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRtcHistoryScale
@@ -449,8 +444,7 @@ class CloudRTCAsyncClient(Client):
 
         查询过去的某一时间段内各种业务的用量数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRtcHistoryUsage
@@ -527,8 +521,7 @@ class CloudRTCAsyncClient(Client):
         
         最大查询跨度1天。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRtcRealtimeNetwork
@@ -609,8 +602,7 @@ class CloudRTCAsyncClient(Client):
         
         最大查询跨度1天。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRtcRealtimeQuality
@@ -691,8 +683,7 @@ class CloudRTCAsyncClient(Client):
         
         最大查询跨度1天。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRtcRealtimeScale
@@ -769,8 +760,7 @@ class CloudRTCAsyncClient(Client):
 
         对规模相关的数据，根据指定维度按在线用户数排名，获取规模相关的指标在指定维度下的统计数据
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRtcRealtimeScaleDimension
@@ -849,8 +839,7 @@ class CloudRTCAsyncClient(Client):
         
         最大查询跨度90天。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRtcRoomList
@@ -933,8 +922,7 @@ class CloudRTCAsyncClient(Client):
         
         最大查询跨度90天。
         
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRtcUserList
