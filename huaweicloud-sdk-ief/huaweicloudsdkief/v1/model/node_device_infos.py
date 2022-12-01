@@ -51,8 +51,10 @@ class NodeDeviceInfos:
         self._node_ids = None
         self.discriminator = None
 
-        self.relation = relation
-        self.comment = comment
+        if relation is not None:
+            self.relation = relation
+        if comment is not None:
+            self.comment = comment
         self.node_ids = node_ids
 
     @property

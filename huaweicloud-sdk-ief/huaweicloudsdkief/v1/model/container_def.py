@@ -28,6 +28,7 @@ class ContainerDef:
         'envs': 'list[Env]',
         'ports': 'list[HostContainerPortMapping]',
         'privileged': 'bool',
+        'run_as_user': 'int',
         'readiness_probe': 'Probe',
         'liveness_probe': 'Probe',
         'version': 'str',
@@ -44,6 +45,7 @@ class ContainerDef:
         'envs': 'envs',
         'ports': 'ports',
         'privileged': 'privileged',
+        'run_as_user': 'run_as_user',
         'readiness_probe': 'readiness_probe',
         'liveness_probe': 'liveness_probe',
         'version': 'version',
@@ -51,7 +53,7 @@ class ContainerDef:
         'npu_type': 'npu_type'
     }
 
-    def __init__(self, name=None, image_url=None, args=None, command=None, resources=None, envs=None, ports=None, privileged=None, readiness_probe=None, liveness_probe=None, version=None, volumes=None, npu_type=None):
+    def __init__(self, name=None, image_url=None, args=None, command=None, resources=None, envs=None, ports=None, privileged=None, run_as_user=None, readiness_probe=None, liveness_probe=None, version=None, volumes=None, npu_type=None):
         """ContainerDef
 
         The model defined in huaweicloud sdk
@@ -72,6 +74,8 @@ class ContainerDef:
         :type ports: list[:class:`huaweicloudsdkief.v1.HostContainerPortMapping`]
         :param privileged: 是否启用特权容器,默认值false
         :type privileged: bool
+        :param run_as_user: 容器运行用户ID，输入范围为0~65534的整数
+        :type run_as_user: int
         :param readiness_probe: 
         :type readiness_probe: :class:`huaweicloudsdkief.v1.Probe`
         :param liveness_probe: 
@@ -94,6 +98,7 @@ class ContainerDef:
         self._envs = None
         self._ports = None
         self._privileged = None
+        self._run_as_user = None
         self._readiness_probe = None
         self._liveness_probe = None
         self._version = None
@@ -115,6 +120,8 @@ class ContainerDef:
             self.ports = ports
         if privileged is not None:
             self.privileged = privileged
+        if run_as_user is not None:
+            self.run_as_user = run_as_user
         if readiness_probe is not None:
             self.readiness_probe = readiness_probe
         if liveness_probe is not None:
@@ -297,6 +304,28 @@ class ContainerDef:
         :type privileged: bool
         """
         self._privileged = privileged
+
+    @property
+    def run_as_user(self):
+        """Gets the run_as_user of this ContainerDef.
+
+        容器运行用户ID，输入范围为0~65534的整数
+
+        :return: The run_as_user of this ContainerDef.
+        :rtype: int
+        """
+        return self._run_as_user
+
+    @run_as_user.setter
+    def run_as_user(self, run_as_user):
+        """Sets the run_as_user of this ContainerDef.
+
+        容器运行用户ID，输入范围为0~65534的整数
+
+        :param run_as_user: The run_as_user of this ContainerDef.
+        :type run_as_user: int
+        """
+        self._run_as_user = run_as_user
 
     @property
     def readiness_probe(self):

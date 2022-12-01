@@ -37,7 +37,8 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         'dst_port': 'int',
         'protocol': 'str',
         'packet': 'Packet',
-        'app': 'str'
+        'app': 'str',
+        'packet_messages': 'list[PacketMessage]'
     }
 
     attribute_map = {
@@ -58,10 +59,11 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         'dst_port': 'dst_port',
         'protocol': 'protocol',
         'packet': 'packet',
-        'app': 'app'
+        'app': 'app',
+        'packet_messages': 'packetMessages'
     }
 
-    def __init__(self, direction=None, action=None, event_time=None, attack_type=None, attack_rule=None, level=None, source=None, packet_length=None, attack_rule_id=None, hit_time=None, log_id=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, packet=None, app=None):
+    def __init__(self, direction=None, action=None, event_time=None, attack_type=None, attack_rule=None, level=None, source=None, packet_length=None, attack_rule_id=None, hit_time=None, log_id=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, packet=None, app=None, packet_messages=None):
         """HttpQueryCfwAttackLogsResponseDTODataRecords
 
         The model defined in huaweicloud sdk
@@ -102,6 +104,8 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         :type packet: :class:`huaweicloudsdkcfw.v1.Packet`
         :param app: 应用协议
         :type app: str
+        :param packet_messages: 攻击报文信息
+        :type packet_messages: list[:class:`huaweicloudsdkcfw.v1.PacketMessage`]
         """
         
         
@@ -124,6 +128,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         self._protocol = None
         self._packet = None
         self._app = None
+        self._packet_messages = None
         self.discriminator = None
 
         if direction is not None:
@@ -162,6 +167,8 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
             self.packet = packet
         if app is not None:
             self.app = app
+        if packet_messages is not None:
+            self.packet_messages = packet_messages
 
     @property
     def direction(self):
@@ -554,6 +561,28 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         :type app: str
         """
         self._app = app
+
+    @property
+    def packet_messages(self):
+        """Gets the packet_messages of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        攻击报文信息
+
+        :return: The packet_messages of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :rtype: list[:class:`huaweicloudsdkcfw.v1.PacketMessage`]
+        """
+        return self._packet_messages
+
+    @packet_messages.setter
+    def packet_messages(self, packet_messages):
+        """Sets the packet_messages of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        攻击报文信息
+
+        :param packet_messages: The packet_messages of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :type packet_messages: list[:class:`huaweicloudsdkcfw.v1.PacketMessage`]
+        """
+        self._packet_messages = packet_messages
 
     def to_dict(self):
         """Returns the model properties as a dict"""

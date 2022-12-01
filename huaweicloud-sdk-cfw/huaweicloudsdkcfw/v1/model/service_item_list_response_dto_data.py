@@ -23,6 +23,7 @@ class ServiceItemListResponseDtoData:
         'offset': 'int',
         'limit': 'int',
         'total': 'int',
+        'set_id': 'str',
         'records': 'list[ServiceItemListResponseDtoDataRecords]'
     }
 
@@ -30,10 +31,11 @@ class ServiceItemListResponseDtoData:
         'offset': 'offset',
         'limit': 'limit',
         'total': 'total',
+        'set_id': 'set_id',
         'records': 'records'
     }
 
-    def __init__(self, offset=None, limit=None, total=None, records=None):
+    def __init__(self, offset=None, limit=None, total=None, set_id=None, records=None):
         """ServiceItemListResponseDtoData
 
         The model defined in huaweicloud sdk
@@ -44,6 +46,8 @@ class ServiceItemListResponseDtoData:
         :type limit: int
         :param total: 记录的总数
         :type total: int
+        :param set_id: 服务组id
+        :type set_id: str
         :param records: 记录
         :type records: list[:class:`huaweicloudsdkcfw.v1.ServiceItemListResponseDtoDataRecords`]
         """
@@ -53,6 +57,7 @@ class ServiceItemListResponseDtoData:
         self._offset = None
         self._limit = None
         self._total = None
+        self._set_id = None
         self._records = None
         self.discriminator = None
 
@@ -62,6 +67,8 @@ class ServiceItemListResponseDtoData:
             self.limit = limit
         if total is not None:
             self.total = total
+        if set_id is not None:
+            self.set_id = set_id
         if records is not None:
             self.records = records
 
@@ -130,6 +137,28 @@ class ServiceItemListResponseDtoData:
         :type total: int
         """
         self._total = total
+
+    @property
+    def set_id(self):
+        """Gets the set_id of this ServiceItemListResponseDtoData.
+
+        服务组id
+
+        :return: The set_id of this ServiceItemListResponseDtoData.
+        :rtype: str
+        """
+        return self._set_id
+
+    @set_id.setter
+    def set_id(self, set_id):
+        """Sets the set_id of this ServiceItemListResponseDtoData.
+
+        服务组id
+
+        :param set_id: The set_id of this ServiceItemListResponseDtoData.
+        :type set_id: str
+        """
+        self._set_id = set_id
 
     @property
     def records(self):

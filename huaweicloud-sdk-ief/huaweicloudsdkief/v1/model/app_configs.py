@@ -21,27 +21,31 @@ class AppConfigs:
 
     openapi_types = {
         'privileged': 'bool',
+        'run_as_user': 'int',
         'host_network': 'bool',
         'restart_policy': 'str',
         'ports': 'list[Ports]',
-        'host_pid': 'str'
+        'host_pid': 'bool'
     }
 
     attribute_map = {
         'privileged': 'privileged',
+        'run_as_user': 'run_as_user',
         'host_network': 'host_network',
         'restart_policy': 'restart_policy',
         'ports': 'ports',
         'host_pid': 'host_pid'
     }
 
-    def __init__(self, privileged=None, host_network=None, restart_policy=None, ports=None, host_pid=None):
+    def __init__(self, privileged=None, run_as_user=None, host_network=None, restart_policy=None, ports=None, host_pid=None):
         """AppConfigs
 
         The model defined in huaweicloud sdk
 
         :param privileged: 默认为false，表示是否开启特权模式
         :type privileged: bool
+        :param run_as_user: 容器运行用户ID，输入范围为0~65534的整数
+        :type run_as_user: int
         :param host_network: 默认为true，其中true表示主机网络，而false表示端口映射
         :type host_network: bool
         :param restart_policy: 应用实例重启模式： - Always：当容器终止退出后，总是重启容器 - Onfailure：容器异常退出（退出码非0）时才重启容器 - Never：容器终止退出后，不重启容器
@@ -49,12 +53,13 @@ class AppConfigs:
         :param ports: 容器端口映射值
         :type ports: list[:class:`huaweicloudsdkief.v1.Ports`]
         :param host_pid: 应用实例是否与主机共PID命名空间，默认值false
-        :type host_pid: str
+        :type host_pid: bool
         """
         
         
 
         self._privileged = None
+        self._run_as_user = None
         self._host_network = None
         self._restart_policy = None
         self._ports = None
@@ -63,6 +68,8 @@ class AppConfigs:
 
         if privileged is not None:
             self.privileged = privileged
+        if run_as_user is not None:
+            self.run_as_user = run_as_user
         if host_network is not None:
             self.host_network = host_network
         if restart_policy is not None:
@@ -93,6 +100,28 @@ class AppConfigs:
         :type privileged: bool
         """
         self._privileged = privileged
+
+    @property
+    def run_as_user(self):
+        """Gets the run_as_user of this AppConfigs.
+
+        容器运行用户ID，输入范围为0~65534的整数
+
+        :return: The run_as_user of this AppConfigs.
+        :rtype: int
+        """
+        return self._run_as_user
+
+    @run_as_user.setter
+    def run_as_user(self, run_as_user):
+        """Sets the run_as_user of this AppConfigs.
+
+        容器运行用户ID，输入范围为0~65534的整数
+
+        :param run_as_user: The run_as_user of this AppConfigs.
+        :type run_as_user: int
+        """
+        self._run_as_user = run_as_user
 
     @property
     def host_network(self):
@@ -167,7 +196,7 @@ class AppConfigs:
         应用实例是否与主机共PID命名空间，默认值false
 
         :return: The host_pid of this AppConfigs.
-        :rtype: str
+        :rtype: bool
         """
         return self._host_pid
 
@@ -178,7 +207,7 @@ class AppConfigs:
         应用实例是否与主机共PID命名空间，默认值false
 
         :param host_pid: The host_pid of this AppConfigs.
-        :type host_pid: str
+        :type host_pid: bool
         """
         self._host_pid = host_pid
 

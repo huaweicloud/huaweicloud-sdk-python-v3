@@ -779,7 +779,7 @@ class GslClient(Client):
             query_params.append(('device_status', local_var_params['device_status']))
         if 'tag_id' in local_var_params:
             query_params.append(('tag_id', local_var_params['tag_id']))
-            collection_formats['tag_id'] = 'csv'
+            collection_formats['tag_id'] = 'multi'
         if 'sim_type' in local_var_params:
             query_params.append(('sim_type', local_var_params['sim_type']))
         if 'order' in local_var_params:

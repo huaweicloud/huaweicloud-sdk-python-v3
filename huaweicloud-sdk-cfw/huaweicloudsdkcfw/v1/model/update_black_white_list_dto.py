@@ -24,7 +24,9 @@ class UpdateBlackWhiteListDto:
         'address_type': 'int',
         'address': 'str',
         'protocol': 'int',
-        'port': 'str'
+        'port': 'str',
+        'list_type': 'int',
+        'object_id': 'str'
     }
 
     attribute_map = {
@@ -32,10 +34,12 @@ class UpdateBlackWhiteListDto:
         'address_type': 'address_type',
         'address': 'address',
         'protocol': 'protocol',
-        'port': 'port'
+        'port': 'port',
+        'list_type': 'list_type',
+        'object_id': 'object_id'
     }
 
-    def __init__(self, direction=None, address_type=None, address=None, protocol=None, port=None):
+    def __init__(self, direction=None, address_type=None, address=None, protocol=None, port=None, list_type=None, object_id=None):
         """UpdateBlackWhiteListDto
 
         The model defined in huaweicloud sdk
@@ -50,6 +54,10 @@ class UpdateBlackWhiteListDto:
         :type protocol: int
         :param port: 端口
         :type port: str
+        :param list_type: 黑白名单类型4：黑名单，5：白名单
+        :type list_type: int
+        :param object_id: 防护对象id
+        :type object_id: str
         """
         
         
@@ -59,6 +67,8 @@ class UpdateBlackWhiteListDto:
         self._address = None
         self._protocol = None
         self._port = None
+        self._list_type = None
+        self._object_id = None
         self.discriminator = None
 
         if direction is not None:
@@ -71,6 +81,10 @@ class UpdateBlackWhiteListDto:
             self.protocol = protocol
         if port is not None:
             self.port = port
+        if list_type is not None:
+            self.list_type = list_type
+        if object_id is not None:
+            self.object_id = object_id
 
     @property
     def direction(self):
@@ -181,6 +195,50 @@ class UpdateBlackWhiteListDto:
         :type port: str
         """
         self._port = port
+
+    @property
+    def list_type(self):
+        """Gets the list_type of this UpdateBlackWhiteListDto.
+
+        黑白名单类型4：黑名单，5：白名单
+
+        :return: The list_type of this UpdateBlackWhiteListDto.
+        :rtype: int
+        """
+        return self._list_type
+
+    @list_type.setter
+    def list_type(self, list_type):
+        """Sets the list_type of this UpdateBlackWhiteListDto.
+
+        黑白名单类型4：黑名单，5：白名单
+
+        :param list_type: The list_type of this UpdateBlackWhiteListDto.
+        :type list_type: int
+        """
+        self._list_type = list_type
+
+    @property
+    def object_id(self):
+        """Gets the object_id of this UpdateBlackWhiteListDto.
+
+        防护对象id
+
+        :return: The object_id of this UpdateBlackWhiteListDto.
+        :rtype: str
+        """
+        return self._object_id
+
+    @object_id.setter
+    def object_id(self, object_id):
+        """Sets the object_id of this UpdateBlackWhiteListDto.
+
+        防护对象id
+
+        :param object_id: The object_id of this UpdateBlackWhiteListDto.
+        :type object_id: str
+        """
+        self._object_id = object_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

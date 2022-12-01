@@ -38,7 +38,7 @@ class AddRuleAclDto:
 
         :param object_id: 防护对象id
         :type object_id: str
-        :param type: 规则type，0：互联网规则,1：vpc规则, 2:nat规则
+        :param type: 规则type，0：互联网规则，1:vpc规则，2：nat规则
         :type type: int
         :param rules: rules
         :type rules: list[:class:`huaweicloudsdkcfw.v1.AddRuleAclDtoRules`]
@@ -81,7 +81,7 @@ class AddRuleAclDto:
     def type(self):
         """Gets the type of this AddRuleAclDto.
 
-        规则type，0：互联网规则,1：vpc规则, 2:nat规则
+        规则type，0：互联网规则，1:vpc规则，2：nat规则
 
         :return: The type of this AddRuleAclDto.
         :rtype: int
@@ -92,7 +92,7 @@ class AddRuleAclDto:
     def type(self, type):
         """Sets the type of this AddRuleAclDto.
 
-        规则type，0：互联网规则,1：vpc规则, 2:nat规则
+        规则type，0：互联网规则，1:vpc规则，2：nat规则
 
         :param type: The type of this AddRuleAclDto.
         :type type: int

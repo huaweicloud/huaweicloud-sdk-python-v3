@@ -243,6 +243,69 @@ class IefAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_batch_job_async(self, request):
+        """创建批量处理任务
+
+        创建批量处理作业。该API用于创建批量处理作业，当前支持：批量节点升级、批量应用部署、批量应用升级
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateBatchJob
+        :type request: :class:`huaweicloudsdkief.v1.CreateBatchJobRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.CreateBatchJobResponse`
+        """
+        return self.create_batch_job_with_http_info(request)
+
+    def create_batch_job_with_http_info(self, request):
+        all_params = ['ief_instance_id', 'create_batch_job_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/productmgr/jobs',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateBatchJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_config_map_async(self, request):
         """创建配置项
 
@@ -490,6 +553,134 @@ class IefAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateDeviceTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_edge_group_async(self, request):
+        """边缘节点组管理
+
+        创建边缘节点组。该API只能在铂金版实例中使用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateEdgeGroup
+        :type request: :class:`huaweicloudsdkief.v1.CreateEdgeGroupRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.CreateEdgeGroupResponse`
+        """
+        return self.create_edge_group_with_http_info(request)
+
+    def create_edge_group_with_http_info(self, request):
+        all_params = ['ief_instance_id', 'create_edge_group_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edgemgr/groups',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateEdgeGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_edge_group_cert_async(self, request):
+        """创建边缘节点组证书
+
+        创建边缘节点组证书。边缘节点组证书.tar.gz文件仅在调用该API时提供压缩包下载，请及时下载证书文件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateEdgeGroupCert
+        :type request: :class:`huaweicloudsdkief.v1.CreateEdgeGroupCertRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.CreateEdgeGroupCertResponse`
+        """
+        return self.create_edge_group_cert_with_http_info(request)
+
+    def create_edge_group_cert_with_http_info(self, request):
+        all_params = ['group_id', 'ief_instance_id', 'create_edge_group_cert_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edgemgr/groups/{group_id}/certs',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateEdgeGroupCertResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -814,6 +1005,69 @@ class IefAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_product_async(self, request):
+        """创建批量节点注册作业
+
+        创建批量节点注册作业。接口调用成功后，您可以将响应消息体中product.package字段使用base64解码成tar.gz产品证书文件，并在控制台下载边缘注册软件edge-register和edge-installer，使用该产品证书批量纳管边缘节点。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateProduct
+        :type request: :class:`huaweicloudsdkief.v1.CreateProductRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.CreateProductResponse`
+        """
+        return self.create_product_with_http_info(request)
+
+    def create_product_with_http_info(self, request):
+        all_params = ['ief_instance_id', 'create_product_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/productmgr/products',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateProductResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_rule_async(self, request):
         """创建规则
 
@@ -998,6 +1252,69 @@ class IefAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateServiceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_system_event_async(self, request):
+        """创建系统订阅
+
+        创建系统订阅
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateSystemEvent
+        :type request: :class:`huaweicloudsdkief.v1.CreateSystemEventRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.CreateSystemEventResponse`
+        """
+        return self.create_system_event_with_http_info(request)
+
+    def create_system_event_with_http_info(self, request):
+        all_params = ['ief_instance_id', 'create_system_event_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/routemgr/exchanger/systemevents',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateSystemEventResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1195,6 +1512,69 @@ class IefAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteAppVersionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_batch_job_async(self, request):
+        """删除批量处理作业
+
+        删除批量处理作业
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteBatchJob
+        :type request: :class:`huaweicloudsdkief.v1.DeleteBatchJobRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.DeleteBatchJobResponse`
+        """
+        return self.delete_batch_job_with_http_info(request)
+
+    def delete_batch_job_with_http_info(self, request):
+        all_params = ['job_id', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/productmgr/jobs/{job_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteBatchJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1449,6 +1829,134 @@ class IefAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteDeviceTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_edge_group_async(self, request):
+        """删除边缘节点组
+
+        删除边缘节点组。该API只能在铂金版实例中使用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteEdgeGroup
+        :type request: :class:`huaweicloudsdkief.v1.DeleteEdgeGroupRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.DeleteEdgeGroupResponse`
+        """
+        return self.delete_edge_group_with_http_info(request)
+
+    def delete_edge_group_with_http_info(self, request):
+        all_params = ['group_id', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edgemgr/groups/{group_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteEdgeGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_edge_group_cert_async(self, request):
+        """删除边缘节点组证书
+
+        删除边缘节点组证书
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteEdgeGroupCert
+        :type request: :class:`huaweicloudsdkief.v1.DeleteEdgeGroupCertRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.DeleteEdgeGroupCertResponse`
+        """
+        return self.delete_edge_group_cert_with_http_info(request)
+
+    def delete_edge_group_cert_with_http_info(self, request):
+        all_params = ['group_id', 'group_cert_id', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'group_cert_id' in local_var_params:
+            path_params['group_cert_id'] = local_var_params['group_cert_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edgemgr/groups/{group_id}/certs/{group_cert_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteEdgeGroupCertResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1773,6 +2281,69 @@ class IefAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_product_async(self, request):
+        """删除批量节点注册作业
+
+        删除批量节点注册作业。接口调用成功后，与该批量注册任务关联的批量注册凭证将会失效
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteProduct
+        :type request: :class:`huaweicloudsdkief.v1.DeleteProductRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.DeleteProductResponse`
+        """
+        return self.delete_product_with_http_info(request)
+
+    def delete_product_with_http_info(self, request):
+        all_params = ['product_id', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'product_id' in local_var_params:
+            path_params['product_id'] = local_var_params['product_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/productmgr/products/{product_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteProductResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_resource_tag_async(self, request):
         """删除资源标签
 
@@ -2029,6 +2600,69 @@ class IefAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_system_event_async(self, request):
+        """删除系统订阅列表
+
+        删除系统订阅列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteSystemEvent
+        :type request: :class:`huaweicloudsdkief.v1.DeleteSystemEventRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.DeleteSystemEventResponse`
+        """
+        return self.delete_system_event_with_http_info(request)
+
+    def delete_system_event_with_http_info(self, request):
+        all_params = ['event_id', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'event_id' in local_var_params:
+            path_params['event_id'] = local_var_params['event_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/routemgr/exchanger/systemevents/{event_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteSystemEventResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def enable_disable_edge_nodes_async(self, request):
         """启用停用边缘节点
 
@@ -2227,6 +2861,75 @@ class IefAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListAppsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_batch_job_async(self, request):
+        """查询批量处理作业列表
+
+        查询批量处理作业列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBatchJob
+        :type request: :class:`huaweicloudsdkief.v1.ListBatchJobRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.ListBatchJobResponse`
+        """
+        return self.list_batch_job_with_http_info(request)
+
+    def list_batch_job_with_http_info(self, request):
+        all_params = ['job_type', 'limit', 'offset', 'sort', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'job_type' in local_var_params:
+            query_params.append(('job_type', local_var_params['job_type']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/productmgr/jobs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListBatchJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2507,6 +3210,142 @@ class IefAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListDevicesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_edge_group_certs_async(self, request):
+        """查询边缘节点组证书列表
+
+        查询边缘节点组证书列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListEdgeGroupCerts
+        :type request: :class:`huaweicloudsdkief.v1.ListEdgeGroupCertsRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.ListEdgeGroupCertsResponse`
+        """
+        return self.list_edge_group_certs_with_http_info(request)
+
+    def list_edge_group_certs_with_http_info(self, request):
+        all_params = ['group_id', 'ief_instance_id', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edgemgr/groups/{group_id}/certs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListEdgeGroupCertsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_edge_groups_async(self, request):
+        """查询边缘节点组列表
+
+        查询边缘节点组列表。该API只能在铂金版实例中使用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListEdgeGroups
+        :type request: :class:`huaweicloudsdkief.v1.ListEdgeGroupsRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.ListEdgeGroupsResponse`
+        """
+        return self.list_edge_groups_with_http_info(request)
+
+    def list_edge_groups_with_http_info(self, request):
+        all_params = ['ief_instance_id', 'name', 'limit', 'offset', 'sort']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edgemgr/groups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListEdgeGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3007,6 +3846,73 @@ class IefAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_products_async(self, request):
+        """查询批量节点注册作业列表
+
+        查询批量节点注册作业列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListProducts
+        :type request: :class:`huaweicloudsdkief.v1.ListProductsRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.ListProductsResponse`
+        """
+        return self.list_products_with_http_info(request)
+
+    def list_products_with_http_info(self, request):
+        all_params = ['ief_instance_id', 'limit', 'offset', 'sort']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/productmgr/products',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListProductsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_resource_by_tags_async(self, request):
         """查询资源实例
 
@@ -3346,6 +4252,73 @@ class IefAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_system_events_async(self, request):
+        """查询系统订阅列表
+
+        查询系统订阅列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSystemEvents
+        :type request: :class:`huaweicloudsdkief.v1.ListSystemEventsRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.ListSystemEventsResponse`
+        """
+        return self.list_system_events_with_http_info(request)
+
+    def list_system_events_with_http_info(self, request):
+        all_params = ['ief_instance_id', 'name', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/routemgr/exchanger/systemevents',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListSystemEventsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_tags_async(self, request):
         """查询资源标签
 
@@ -3539,6 +4512,132 @@ class IefAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def restore_batch_job_async(self, request):
+        """继续批量处理作业
+
+        继续执行批量处理作业。该API只对停止的批量处理作业生效
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RestoreBatchJob
+        :type request: :class:`huaweicloudsdkief.v1.RestoreBatchJobRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.RestoreBatchJobResponse`
+        """
+        return self.restore_batch_job_with_http_info(request)
+
+    def restore_batch_job_with_http_info(self, request):
+        all_params = ['job_id', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/productmgr/jobs/{job_id}/restore',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RestoreBatchJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def retry_batch_job_async(self, request):
+        """重试批量处理作业
+
+        重试批量处理作业。该API仅对执行状态失败的批量处理作业生效
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RetryBatchJob
+        :type request: :class:`huaweicloudsdkief.v1.RetryBatchJobRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.RetryBatchJobResponse`
+        """
+        return self.retry_batch_job_with_http_info(request)
+
+    def retry_batch_job_with_http_info(self, request):
+        all_params = ['job_id', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/productmgr/jobs/{job_id}/retry',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RetryBatchJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_app_detail_async(self, request):
         """查询应用模板详情
 
@@ -3662,6 +4761,69 @@ class IefAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowAppVersionDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_batch_job_async(self, request):
+        """查询批量处理作业详情
+
+        查询批量处理作业详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowBatchJob
+        :type request: :class:`huaweicloudsdkief.v1.ShowBatchJobRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.ShowBatchJobResponse`
+        """
+        return self.show_batch_job_with_http_info(request)
+
+    def show_batch_job_with_http_info(self, request):
+        all_params = ['job_id', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/productmgr/jobs/{job_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowBatchJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3982,6 +5144,134 @@ class IefAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_edge_group_cert_detail_async(self, request):
+        """查询边缘节点组证书列表
+
+        查询边缘节点组证书详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowEdgeGroupCertDetail
+        :type request: :class:`huaweicloudsdkief.v1.ShowEdgeGroupCertDetailRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.ShowEdgeGroupCertDetailResponse`
+        """
+        return self.show_edge_group_cert_detail_with_http_info(request)
+
+    def show_edge_group_cert_detail_with_http_info(self, request):
+        all_params = ['group_id', 'group_cert_id', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'group_cert_id' in local_var_params:
+            path_params['group_cert_id'] = local_var_params['group_cert_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edgemgr/groups/{group_id}/certs/{group_cert_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowEdgeGroupCertDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_edge_group_detail_async(self, request):
+        """查询边缘节点组详情
+
+        查询边缘节点组详情。该API只能在铂金版实例中使用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowEdgeGroupDetail
+        :type request: :class:`huaweicloudsdkief.v1.ShowEdgeGroupDetailRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.ShowEdgeGroupDetailResponse`
+        """
+        return self.show_edge_group_detail_with_http_info(request)
+
+    def show_edge_group_detail_with_http_info(self, request):
+        all_params = ['group_id', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edgemgr/groups/{group_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowEdgeGroupDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_edge_node_detail_async(self, request):
         """查询边缘节点详情
 
@@ -4166,6 +5456,130 @@ class IefAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowEndPointDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_product_detail_async(self, request):
+        """查询批量节点注册作业详情
+
+        查询批量节点注册作业详情。该接口无法查询产品证书文件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowProductDetail
+        :type request: :class:`huaweicloudsdkief.v1.ShowProductDetailRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.ShowProductDetailResponse`
+        """
+        return self.show_product_detail_with_http_info(request)
+
+    def show_product_detail_with_http_info(self, request):
+        all_params = ['product_id', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'product_id' in local_var_params:
+            path_params['product_id'] = local_var_params['product_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/productmgr/products/{product_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowProductDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_quota_async(self, request):
+        """查询IEF服务下的资源配额
+
+        查询IEF服务下的资源配额
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowQuota
+        :type request: :class:`huaweicloudsdkief.v1.ShowQuotaRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.ShowQuotaResponse`
+        """
+        return self.show_quota_with_http_info(request)
+
+    def show_quota_with_http_info(self, request):
+        all_params = ['types']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'types' in local_var_params:
+            query_params.append(('types', local_var_params['types']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edgemgr/quotas',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4360,6 +5774,69 @@ class IefAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_system_event_detail_async(self, request):
+        """查询系统订阅列表
+
+        查询系统订阅列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSystemEventDetail
+        :type request: :class:`huaweicloudsdkief.v1.ShowSystemEventDetailRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.ShowSystemEventDetailResponse`
+        """
+        return self.show_system_event_detail_with_http_info(request)
+
+    def show_system_event_detail_with_http_info(self, request):
+        all_params = ['event_id', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'event_id' in local_var_params:
+            path_params['event_id'] = local_var_params['event_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/routemgr/exchanger/systemevents/{event_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowSystemEventDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def start_rule_async(self, request):
         """启用规则
 
@@ -4423,6 +5900,132 @@ class IefAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def start_system_event_async(self, request):
+        """启用系统订阅
+
+        启用系统订阅
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StartSystemEvent
+        :type request: :class:`huaweicloudsdkief.v1.StartSystemEventRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.StartSystemEventResponse`
+        """
+        return self.start_system_event_with_http_info(request)
+
+    def start_system_event_with_http_info(self, request):
+        all_params = ['event_id', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'event_id' in local_var_params:
+            path_params['event_id'] = local_var_params['event_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/routemgr/exchanger/systemevents/{event_id}/start',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='StartSystemEventResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def stop_batch_job_async(self, request):
+        """停止批量处理作业
+
+        停止批量处理作业。该API仅对运行中的批量处理作业生效
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StopBatchJob
+        :type request: :class:`huaweicloudsdkief.v1.StopBatchJobRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.StopBatchJobResponse`
+        """
+        return self.stop_batch_job_with_http_info(request)
+
+    def stop_batch_job_with_http_info(self, request):
+        all_params = ['job_id', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/productmgr/jobs/{job_id}/pause',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='StopBatchJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def stop_rule_async(self, request):
         """停用规则
 
@@ -4481,6 +6084,69 @@ class IefAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='StopRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def stop_system_event_async(self, request):
+        """停用系统订阅
+
+        停用系统订阅
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StopSystemEvent
+        :type request: :class:`huaweicloudsdkief.v1.StopSystemEventRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.StopSystemEventResponse`
+        """
+        return self.stop_system_event_with_http_info(request)
+
+    def stop_system_event_with_http_info(self, request):
+        all_params = ['event_id', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'event_id' in local_var_params:
+            path_params['event_id'] = local_var_params['event_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/routemgr/exchanger/systemevents/{event_id}/stop',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='StopSystemEventResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4938,6 +6604,136 @@ class IefAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateDeviceTwinResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_edge_group_async(self, request):
+        """更新边缘节点组
+
+        更新边缘节点组描述。该API只能在铂金版实例中使用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateEdgeGroup
+        :type request: :class:`huaweicloudsdkief.v1.UpdateEdgeGroupRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.UpdateEdgeGroupResponse`
+        """
+        return self.update_edge_group_with_http_info(request)
+
+    def update_edge_group_with_http_info(self, request):
+        all_params = ['group_id', 'ief_instance_id', 'update_edge_group_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edgemgr/groups/{group_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateEdgeGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_edge_group_node_binding_async(self, request):
+        """绑定或解绑边缘节点
+
+        边缘节点组绑定或解绑边缘节点。该API只能在铂金版实例中使用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateEdgeGroupNodeBinding
+        :type request: :class:`huaweicloudsdkief.v1.UpdateEdgeGroupNodeBindingRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.UpdateEdgeGroupNodeBindingResponse`
+        """
+        return self.update_edge_group_node_binding_with_http_info(request)
+
+    def update_edge_group_node_binding_with_http_info(self, request):
+        all_params = ['group_id', 'ief_instance_id', 'update_edge_group_node_binding_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edgemgr/groups/{group_id}/nodes',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateEdgeGroupNodeBindingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -497,6 +497,69 @@ class RdsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def copy_configuration_async(self, request):
+        """复制参数模板
+
+        复制参数模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CopyConfiguration
+        :type request: :class:`huaweicloudsdkrds.v3.CopyConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.CopyConfigurationResponse`
+        """
+        return self.copy_configuration_with_http_info(request)
+
+    def copy_configuration_with_http_info(self, request):
+        all_params = ['config_id', 'configuration_copy_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'config_id' in local_var_params:
+            path_params['config_id'] = local_var_params['config_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/configurations/{config_id}/copy',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CopyConfigurationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_configuration_async(self, request):
         """创建参数模板
 
@@ -1863,6 +1926,77 @@ class RdsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListFlavorsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_instance_param_histories_async(self, request):
+        """查询实例参数修改历史
+
+        实例参数修改历史。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListInstanceParamHistories
+        :type request: :class:`huaweicloudsdkrds.v3.ListInstanceParamHistoriesRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListInstanceParamHistoriesResponse`
+        """
+        return self.list_instance_param_histories_with_http_info(request)
+
+    def list_instance_param_histories_with_http_info(self, request):
+        all_params = ['instance_id', 'offset', 'limit', 'start_time', 'end_time', 'param_name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'param_name' in local_var_params:
+            query_params.append(('param_name', local_var_params['param_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/configuration-histories',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListInstanceParamHistoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -7946,6 +8080,69 @@ class RdsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def batch_add_msdtcs_async(self, request):
+        """添加MSDTC
+
+        添加MSDTC相关主机host地址
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchAddMsdtcs
+        :type request: :class:`huaweicloudsdkrds.v3.BatchAddMsdtcsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.BatchAddMsdtcsResponse`
+        """
+        return self.batch_add_msdtcs_with_http_info(request)
+
+    def batch_add_msdtcs_with_http_info(self, request):
+        all_params = ['instance_id', 'add_msdtc']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/msdtc/host',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchAddMsdtcsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_sqlserver_database_async(self, request):
         """创建数据库
 
@@ -8339,6 +8536,71 @@ class RdsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListAuthorizedSqlserverDbUsersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_msdtc_hosts_async(self, request):
+        """查询MSDTC的hosts信息
+
+        查询MSDTC的hosts信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListMsdtcHosts
+        :type request: :class:`huaweicloudsdkrds.v3.ListMsdtcHostsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListMsdtcHostsResponse`
+        """
+        return self.list_msdtc_hosts_with_http_info(request)
+
+    def list_msdtc_hosts_with_http_info(self, request):
+        all_params = ['instance_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/msdtc/hosts',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListMsdtcHostsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -34,7 +34,7 @@ class ChangeProtectStatusRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 防护对象ID
+        :param object_id: 防护对象id
         :type object_id: str
         :param status: 防护状态：0 开启，1 关闭
         :type status: int
@@ -53,7 +53,7 @@ class ChangeProtectStatusRequestBody:
     def object_id(self):
         """Gets the object_id of this ChangeProtectStatusRequestBody.
 
-        防护对象ID
+        防护对象id
 
         :return: The object_id of this ChangeProtectStatusRequestBody.
         :rtype: str
@@ -64,7 +64,7 @@ class ChangeProtectStatusRequestBody:
     def object_id(self, object_id):
         """Sets the object_id of this ChangeProtectStatusRequestBody.
 
-        防护对象ID
+        防护对象id
 
         :param object_id: The object_id of this ChangeProtectStatusRequestBody.
         :type object_id: str

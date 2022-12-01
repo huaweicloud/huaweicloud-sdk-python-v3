@@ -35,7 +35,8 @@ class RuleAclListResponseDTODataRecords:
         'long_connect_enable': 'int',
         'source': 'RuleAddressDto',
         'destination': 'RuleAddressDto',
-        'service': 'RuleServiceDto'
+        'service': 'RuleServiceDto',
+        'type': 'int'
     }
 
     attribute_map = {
@@ -54,10 +55,11 @@ class RuleAclListResponseDTODataRecords:
         'long_connect_enable': 'long_connect_enable',
         'source': 'source',
         'destination': 'destination',
-        'service': 'service'
+        'service': 'service',
+        'type': 'type'
     }
 
-    def __init__(self, rule_id=None, address_type=None, name=None, sequence=None, direction=None, action_type=None, status=None, description=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_time=None, long_connect_enable=None, source=None, destination=None, service=None):
+    def __init__(self, rule_id=None, address_type=None, name=None, sequence=None, direction=None, action_type=None, status=None, description=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_time=None, long_connect_enable=None, source=None, destination=None, service=None, type=None):
         """RuleAclListResponseDTODataRecords
 
         The model defined in huaweicloud sdk
@@ -94,6 +96,8 @@ class RuleAclListResponseDTODataRecords:
         :type destination: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
         :param service: 
         :type service: :class:`huaweicloudsdkcfw.v1.RuleServiceDto`
+        :param type: 规则type，0：互联网规则，1：vpc规则，2nat规则
+        :type type: int
         """
         
         
@@ -114,6 +118,7 @@ class RuleAclListResponseDTODataRecords:
         self._source = None
         self._destination = None
         self._service = None
+        self._type = None
         self.discriminator = None
 
         if rule_id is not None:
@@ -148,6 +153,8 @@ class RuleAclListResponseDTODataRecords:
             self.destination = destination
         if service is not None:
             self.service = service
+        if type is not None:
+            self.type = type
 
     @property
     def rule_id(self):
@@ -484,6 +491,28 @@ class RuleAclListResponseDTODataRecords:
         :type service: :class:`huaweicloudsdkcfw.v1.RuleServiceDto`
         """
         self._service = service
+
+    @property
+    def type(self):
+        """Gets the type of this RuleAclListResponseDTODataRecords.
+
+        规则type，0：互联网规则，1：vpc规则，2nat规则
+
+        :return: The type of this RuleAclListResponseDTODataRecords.
+        :rtype: int
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this RuleAclListResponseDTODataRecords.
+
+        规则type，0：互联网规则，1：vpc规则，2nat规则
+
+        :param type: The type of this RuleAclListResponseDTODataRecords.
+        :type type: int
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

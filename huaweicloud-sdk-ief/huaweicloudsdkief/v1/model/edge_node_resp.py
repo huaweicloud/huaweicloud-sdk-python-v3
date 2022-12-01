@@ -70,7 +70,8 @@ class EdgeNodeResp:
         'tags': 'list[ResourceTag]',
         'npu_num': 'int',
         'npu_info': 'list[NpuInfo]',
-        'container_runtime_version': 'str'
+        'container_runtime_version': 'str',
+        'identifier': 'str'
     }
 
     attribute_map = {
@@ -124,10 +125,11 @@ class EdgeNodeResp:
         'tags': 'tags',
         'npu_num': 'npu_num',
         'npu_info': 'npu_info',
-        'container_runtime_version': 'container_runtime_version'
+        'container_runtime_version': 'container_runtime_version',
+        'identifier': 'identifier'
     }
 
-    def __init__(self, id=None, name=None, description=None, created_at=None, updated_at=None, project_id=None, private_key=None, certificate=None, ca=None, state=None, package=None, master_addr=None, cpu=None, memory=None, os_name=None, os_version=None, pause_docker_image=None, arch=None, os_type=None, deployment_num=None, enable_gpu=None, log_configs=None, device_infos=None, edged_version=None, gpu_num=None, host_ips=None, relation=None, comment=None, gpu_info=None, device_num=None, enable_npu=None, npu_type=None, nics=None, host_name=None, ief_node_version=None, upgrade_flag=None, product_id=None, group_ids=None, upgrade_history=None, attributes=None, docker_enable=None, mqtt_mode=None, mqtt_external=None, mqtt_internal=None, node_type=None, ntp_configs=None, error_reason=None, tags=None, npu_num=None, npu_info=None, container_runtime_version=None):
+    def __init__(self, id=None, name=None, description=None, created_at=None, updated_at=None, project_id=None, private_key=None, certificate=None, ca=None, state=None, package=None, master_addr=None, cpu=None, memory=None, os_name=None, os_version=None, pause_docker_image=None, arch=None, os_type=None, deployment_num=None, enable_gpu=None, log_configs=None, device_infos=None, edged_version=None, gpu_num=None, host_ips=None, relation=None, comment=None, gpu_info=None, device_num=None, enable_npu=None, npu_type=None, nics=None, host_name=None, ief_node_version=None, upgrade_flag=None, product_id=None, group_ids=None, upgrade_history=None, attributes=None, docker_enable=None, mqtt_mode=None, mqtt_external=None, mqtt_internal=None, node_type=None, ntp_configs=None, error_reason=None, tags=None, npu_num=None, npu_info=None, container_runtime_version=None, identifier=None):
         """EdgeNodeResp
 
         The model defined in huaweicloud sdk
@@ -234,6 +236,8 @@ class EdgeNodeResp:
         :type npu_info: list[:class:`huaweicloudsdkief.v1.NpuInfo`]
         :param container_runtime_version: 容器运行时版本
         :type container_runtime_version: str
+        :param identifier: 边缘节点使用token注册时的凭证
+        :type identifier: str
         """
         
         
@@ -289,6 +293,7 @@ class EdgeNodeResp:
         self._npu_num = None
         self._npu_info = None
         self._container_runtime_version = None
+        self._identifier = None
         self.discriminator = None
 
         self.id = id
@@ -342,6 +347,8 @@ class EdgeNodeResp:
         self.npu_num = npu_num
         self.npu_info = npu_info
         self.container_runtime_version = container_runtime_version
+        if identifier is not None:
+            self.identifier = identifier
 
     @property
     def id(self):
@@ -1460,6 +1467,28 @@ class EdgeNodeResp:
         :type container_runtime_version: str
         """
         self._container_runtime_version = container_runtime_version
+
+    @property
+    def identifier(self):
+        """Gets the identifier of this EdgeNodeResp.
+
+        边缘节点使用token注册时的凭证
+
+        :return: The identifier of this EdgeNodeResp.
+        :rtype: str
+        """
+        return self._identifier
+
+    @identifier.setter
+    def identifier(self, identifier):
+        """Sets the identifier of this EdgeNodeResp.
+
+        边缘节点使用token注册时的凭证
+
+        :param identifier: The identifier of this EdgeNodeResp.
+        :type identifier: str
+        """
+        self._identifier = identifier
 
     def to_dict(self):
         """Returns the model properties as a dict"""

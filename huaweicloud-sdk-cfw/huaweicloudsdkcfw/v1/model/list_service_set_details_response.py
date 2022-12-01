@@ -20,109 +20,47 @@ class ListServiceSetDetailsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
-        'name': 'str',
-        'description': 'str'
+        'data': 'ServiceSetDetailResponseDto'
     }
 
     attribute_map = {
-        'id': 'id',
-        'name': 'name',
-        'description': 'description'
+        'data': 'data'
     }
 
-    def __init__(self, id=None, name=None, description=None):
+    def __init__(self, data=None):
         """ListServiceSetDetailsResponse
 
         The model defined in huaweicloud sdk
 
-        :param id: 服务组id
-        :type id: str
-        :param name: 服务组名称
-        :type name: str
-        :param description: 服务组描述信息
-        :type description: str
+        :param data: 
+        :type data: :class:`huaweicloudsdkcfw.v1.ServiceSetDetailResponseDto`
         """
         
         super(ListServiceSetDetailsResponse, self).__init__()
 
-        self._id = None
-        self._name = None
-        self._description = None
+        self._data = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if name is not None:
-            self.name = name
-        if description is not None:
-            self.description = description
+        if data is not None:
+            self.data = data
 
     @property
-    def id(self):
-        """Gets the id of this ListServiceSetDetailsResponse.
+    def data(self):
+        """Gets the data of this ListServiceSetDetailsResponse.
 
-        服务组id
-
-        :return: The id of this ListServiceSetDetailsResponse.
-        :rtype: str
+        :return: The data of this ListServiceSetDetailsResponse.
+        :rtype: :class:`huaweicloudsdkcfw.v1.ServiceSetDetailResponseDto`
         """
-        return self._id
+        return self._data
 
-    @id.setter
-    def id(self, id):
-        """Sets the id of this ListServiceSetDetailsResponse.
+    @data.setter
+    def data(self, data):
+        """Sets the data of this ListServiceSetDetailsResponse.
 
-        服务组id
-
-        :param id: The id of this ListServiceSetDetailsResponse.
-        :type id: str
+        :param data: The data of this ListServiceSetDetailsResponse.
+        :type data: :class:`huaweicloudsdkcfw.v1.ServiceSetDetailResponseDto`
         """
-        self._id = id
-
-    @property
-    def name(self):
-        """Gets the name of this ListServiceSetDetailsResponse.
-
-        服务组名称
-
-        :return: The name of this ListServiceSetDetailsResponse.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this ListServiceSetDetailsResponse.
-
-        服务组名称
-
-        :param name: The name of this ListServiceSetDetailsResponse.
-        :type name: str
-        """
-        self._name = name
-
-    @property
-    def description(self):
-        """Gets the description of this ListServiceSetDetailsResponse.
-
-        服务组描述信息
-
-        :return: The description of this ListServiceSetDetailsResponse.
-        :rtype: str
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        """Sets the description of this ListServiceSetDetailsResponse.
-
-        服务组描述信息
-
-        :param description: The description of this ListServiceSetDetailsResponse.
-        :type description: str
-        """
-        self._description = description
+        self._data = data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

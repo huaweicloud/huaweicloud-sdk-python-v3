@@ -116,10 +116,14 @@ class AddRuleAclDtoRules:
         self.address_type = address_type
         self.action_type = action_type
         self.status = status
-        self.long_connect_time = long_connect_time
-        self.long_connect_time_hour = long_connect_time_hour
-        self.long_connect_time_minute = long_connect_time_minute
-        self.long_connect_time_second = long_connect_time_second
+        if long_connect_time is not None:
+            self.long_connect_time = long_connect_time
+        if long_connect_time_hour is not None:
+            self.long_connect_time_hour = long_connect_time_hour
+        if long_connect_time_minute is not None:
+            self.long_connect_time_minute = long_connect_time_minute
+        if long_connect_time_second is not None:
+            self.long_connect_time_second = long_connect_time_second
         self.long_connect_enable = long_connect_enable
         if description is not None:
             self.description = description

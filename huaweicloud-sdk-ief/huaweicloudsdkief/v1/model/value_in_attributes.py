@@ -36,7 +36,7 @@ class ValueInAttributes:
 
         The model defined in huaweicloud sdk
 
-        :param value: value 最大长度512， value允许英文字母、数字、下划线、中划线、点、逗号、@、#、+、\\、/、？、^、&#x3D;、%、&amp;、:、~
+        :param value: value 最大长度512，value允许英文字母、数字、下划线、中划线、点、逗号、冒号、/、@、+、?、^、&#x3D;、%、&amp;、~、#、!、*
         :type value: str
         :param optional: 标识属性是否可选，默认为true
         :type optional: bool
@@ -61,7 +61,7 @@ class ValueInAttributes:
     def value(self):
         """Gets the value of this ValueInAttributes.
 
-        value 最大长度512， value允许英文字母、数字、下划线、中划线、点、逗号、@、#、+、\\、/、？、^、=、%、&、:、~
+        value 最大长度512，value允许英文字母、数字、下划线、中划线、点、逗号、冒号、/、@、+、?、^、=、%、&、~、#、!、*
 
         :return: The value of this ValueInAttributes.
         :rtype: str
@@ -72,7 +72,7 @@ class ValueInAttributes:
     def value(self, value):
         """Sets the value of this ValueInAttributes.
 
-        value 最大长度512， value允许英文字母、数字、下划线、中划线、点、逗号、@、#、+、\\、/、？、^、=、%、&、:、~
+        value 最大长度512，value允许英文字母、数字、下划线、中划线、点、逗号、冒号、/、@、+、?、^、=、%、&、~、#、!、*
 
         :param value: The value of this ValueInAttributes.
         :type value: str

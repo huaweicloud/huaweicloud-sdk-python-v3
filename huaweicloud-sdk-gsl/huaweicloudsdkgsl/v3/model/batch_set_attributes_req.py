@@ -34,7 +34,7 @@ class BatchSetAttributesReq:
 
         The model defined in huaweicloud sdk
 
-        :param file_temp_id: 临时文件ID
+        :param file_temp_id: 临时文件ID，如果通过接口调用，此字段为空
         :type file_temp_id: int
         :param attributes: 自定义属性集合
         :type attributes: list[:class:`huaweicloudsdkgsl.v3.AttributeReq`]
@@ -55,7 +55,7 @@ class BatchSetAttributesReq:
     def file_temp_id(self):
         """Gets the file_temp_id of this BatchSetAttributesReq.
 
-        临时文件ID
+        临时文件ID，如果通过接口调用，此字段为空
 
         :return: The file_temp_id of this BatchSetAttributesReq.
         :rtype: int
@@ -66,7 +66,7 @@ class BatchSetAttributesReq:
     def file_temp_id(self, file_temp_id):
         """Sets the file_temp_id of this BatchSetAttributesReq.
 
-        临时文件ID
+        临时文件ID，如果通过接口调用，此字段为空
 
         :param file_temp_id: The file_temp_id of this BatchSetAttributesReq.
         :type file_temp_id: int

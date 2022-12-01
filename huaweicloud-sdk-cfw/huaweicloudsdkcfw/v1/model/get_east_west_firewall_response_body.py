@@ -27,7 +27,7 @@ class GetEastWestFirewallResponseBody:
         'firewall_associated_subnets': 'list[SubnetInfo]',
         'er': 'ErInstance',
         'inspection_vpc': 'VpcDetail',
-        'protected_infos': 'list[EwProtectResourceInfo]',
+        'protect_infos': 'list[EwProtectResourceInfo]',
         'total': 'int',
         'offset': 'int',
         'limit': 'int'
@@ -41,13 +41,13 @@ class GetEastWestFirewallResponseBody:
         'firewall_associated_subnets': 'firewall_associated_subnets',
         'er': 'er',
         'inspection_vpc': 'inspection_vpc',
-        'protected_infos': 'protected_infos',
+        'protect_infos': 'protect_infos',
         'total': 'total',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, object_id=None, project_id=None, status=None, er_associated_subnet=None, firewall_associated_subnets=None, er=None, inspection_vpc=None, protected_infos=None, total=None, offset=None, limit=None):
+    def __init__(self, object_id=None, project_id=None, status=None, er_associated_subnet=None, firewall_associated_subnets=None, er=None, inspection_vpc=None, protect_infos=None, total=None, offset=None, limit=None):
         """GetEastWestFirewallResponseBody
 
         The model defined in huaweicloud sdk
@@ -66,8 +66,8 @@ class GetEastWestFirewallResponseBody:
         :type er: :class:`huaweicloudsdkcfw.v1.ErInstance`
         :param inspection_vpc: 
         :type inspection_vpc: :class:`huaweicloudsdkcfw.v1.VpcDetail`
-        :param protected_infos: 东西向防护资源信息
-        :type protected_infos: list[:class:`huaweicloudsdkcfw.v1.EwProtectResourceInfo`]
+        :param protect_infos: 东西向防护资源信息
+        :type protect_infos: list[:class:`huaweicloudsdkcfw.v1.EwProtectResourceInfo`]
         :param total: 防护VPC总数
         :type total: int
         :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
@@ -85,7 +85,7 @@ class GetEastWestFirewallResponseBody:
         self._firewall_associated_subnets = None
         self._er = None
         self._inspection_vpc = None
-        self._protected_infos = None
+        self._protect_infos = None
         self._total = None
         self._offset = None
         self._limit = None
@@ -105,8 +105,8 @@ class GetEastWestFirewallResponseBody:
             self.er = er
         if inspection_vpc is not None:
             self.inspection_vpc = inspection_vpc
-        if protected_infos is not None:
-            self.protected_infos = protected_infos
+        if protect_infos is not None:
+            self.protect_infos = protect_infos
         if total is not None:
             self.total = total
         if offset is not None:
@@ -257,26 +257,26 @@ class GetEastWestFirewallResponseBody:
         self._inspection_vpc = inspection_vpc
 
     @property
-    def protected_infos(self):
-        """Gets the protected_infos of this GetEastWestFirewallResponseBody.
+    def protect_infos(self):
+        """Gets the protect_infos of this GetEastWestFirewallResponseBody.
 
         东西向防护资源信息
 
-        :return: The protected_infos of this GetEastWestFirewallResponseBody.
+        :return: The protect_infos of this GetEastWestFirewallResponseBody.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.EwProtectResourceInfo`]
         """
-        return self._protected_infos
+        return self._protect_infos
 
-    @protected_infos.setter
-    def protected_infos(self, protected_infos):
-        """Sets the protected_infos of this GetEastWestFirewallResponseBody.
+    @protect_infos.setter
+    def protect_infos(self, protect_infos):
+        """Sets the protect_infos of this GetEastWestFirewallResponseBody.
 
         东西向防护资源信息
 
-        :param protected_infos: The protected_infos of this GetEastWestFirewallResponseBody.
-        :type protected_infos: list[:class:`huaweicloudsdkcfw.v1.EwProtectResourceInfo`]
+        :param protect_infos: The protect_infos of this GetEastWestFirewallResponseBody.
+        :type protect_infos: list[:class:`huaweicloudsdkcfw.v1.EwProtectResourceInfo`]
         """
-        self._protected_infos = protected_infos
+        self._protect_infos = protect_infos
 
     @property
     def total(self):

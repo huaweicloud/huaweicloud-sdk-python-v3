@@ -34,7 +34,8 @@ class UpdateRuleAclDto:
         'long_connect_enable': 'int',
         'source': 'RuleAddressDto',
         'destination': 'RuleAddressDto',
-        'service': 'RuleServiceDto'
+        'service': 'RuleServiceDto',
+        'type': 'int'
     }
 
     attribute_map = {
@@ -52,10 +53,11 @@ class UpdateRuleAclDto:
         'long_connect_enable': 'long_connect_enable',
         'source': 'source',
         'destination': 'destination',
-        'service': 'service'
+        'service': 'service',
+        'type': 'type'
     }
 
-    def __init__(self, address_type=None, name=None, sequence=None, direction=None, action_type=None, status=None, description=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_time=None, long_connect_enable=None, source=None, destination=None, service=None):
+    def __init__(self, address_type=None, name=None, sequence=None, direction=None, action_type=None, status=None, description=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_time=None, long_connect_enable=None, source=None, destination=None, service=None, type=None):
         """UpdateRuleAclDto
 
         The model defined in huaweicloud sdk
@@ -90,6 +92,8 @@ class UpdateRuleAclDto:
         :type destination: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
         :param service: 
         :type service: :class:`huaweicloudsdkcfw.v1.RuleServiceDto`
+        :param type: 规则type，0：互联网规则，1:vpc规则，2：nat规则
+        :type type: int
         """
         
         
@@ -109,6 +113,7 @@ class UpdateRuleAclDto:
         self._source = None
         self._destination = None
         self._service = None
+        self._type = None
         self.discriminator = None
 
         if address_type is not None:
@@ -141,6 +146,8 @@ class UpdateRuleAclDto:
             self.destination = destination
         if service is not None:
             self.service = service
+        if type is not None:
+            self.type = type
 
     @property
     def address_type(self):
@@ -455,6 +462,28 @@ class UpdateRuleAclDto:
         :type service: :class:`huaweicloudsdkcfw.v1.RuleServiceDto`
         """
         self._service = service
+
+    @property
+    def type(self):
+        """Gets the type of this UpdateRuleAclDto.
+
+        规则type，0：互联网规则，1:vpc规则，2：nat规则
+
+        :return: The type of this UpdateRuleAclDto.
+        :rtype: int
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this UpdateRuleAclDto.
+
+        规则type，0：互联网规则，1:vpc规则，2：nat规则
+
+        :param type: The type of this UpdateRuleAclDto.
+        :type type: int
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

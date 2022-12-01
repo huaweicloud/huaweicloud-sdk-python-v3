@@ -152,8 +152,7 @@ class ListAttackLogsRequest:
         if offset is not None:
             self.offset = offset
         self.limit = limit
-        if fw_instance_id is not None:
-            self.fw_instance_id = fw_instance_id
+        self.fw_instance_id = fw_instance_id
         if action is not None:
             self.action = action
         if direction is not None:

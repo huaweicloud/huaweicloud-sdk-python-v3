@@ -24,7 +24,8 @@ class ImageMediaTaggingReq:
         'url': 'str',
         'language': 'str',
         'threshold': 'float',
-        'limit': 'int'
+        'limit': 'int',
+        'use_default_tags': 'str'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class ImageMediaTaggingReq:
         'url': 'url',
         'language': 'language',
         'threshold': 'threshold',
-        'limit': 'limit'
+        'limit': 'limit',
+        'use_default_tags': 'use_default_tags'
     }
 
-    def __init__(self, image=None, url=None, language=None, threshold=None, limit=None):
+    def __init__(self, image=None, url=None, language=None, threshold=None, limit=None, use_default_tags=None):
         """ImageMediaTaggingReq
 
         The model defined in huaweicloud sdk
@@ -50,6 +52,8 @@ class ImageMediaTaggingReq:
         :type threshold: float
         :param limit: 最多返回的tag数（取值范围：1~150），默认值： 50
         :type limit: int
+        :param use_default_tags: \&quot;true\&quot;：使用系统默认标签体系。  \&quot;false\&quot;：使用用户自定义标签体系（用户需预先调用接口进行自定义标签体系的构建）。  默认值为\&quot;true\&quot;。
+        :type use_default_tags: str
         """
         
         
@@ -59,6 +63,7 @@ class ImageMediaTaggingReq:
         self._language = None
         self._threshold = None
         self._limit = None
+        self._use_default_tags = None
         self.discriminator = None
 
         if image is not None:
@@ -71,6 +76,8 @@ class ImageMediaTaggingReq:
             self.threshold = threshold
         if limit is not None:
             self.limit = limit
+        if use_default_tags is not None:
+            self.use_default_tags = use_default_tags
 
     @property
     def image(self):
@@ -181,6 +188,28 @@ class ImageMediaTaggingReq:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def use_default_tags(self):
+        """Gets the use_default_tags of this ImageMediaTaggingReq.
+
+        \"true\"：使用系统默认标签体系。  \"false\"：使用用户自定义标签体系（用户需预先调用接口进行自定义标签体系的构建）。  默认值为\"true\"。
+
+        :return: The use_default_tags of this ImageMediaTaggingReq.
+        :rtype: str
+        """
+        return self._use_default_tags
+
+    @use_default_tags.setter
+    def use_default_tags(self, use_default_tags):
+        """Sets the use_default_tags of this ImageMediaTaggingReq.
+
+        \"true\"：使用系统默认标签体系。  \"false\"：使用用户自定义标签体系（用户需预先调用接口进行自定义标签体系的构建）。  默认值为\"true\"。
+
+        :param use_default_tags: The use_default_tags of this ImageMediaTaggingReq.
+        :type use_default_tags: str
+        """
+        self._use_default_tags = use_default_tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

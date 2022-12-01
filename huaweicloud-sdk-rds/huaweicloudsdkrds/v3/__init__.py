@@ -7,6 +7,7 @@ from huaweicloudsdkrds.v3.rds_client import RdsClient
 from huaweicloudsdkrds.v3.rds_async_client import RdsAsyncClient
 # import models into sdk package
 from huaweicloudsdkrds.v3.model.ad_domain_info import ADDomainInfo
+from huaweicloudsdkrds.v3.model.add_msdtc_request_body import AddMsdtcRequestBody
 from huaweicloudsdkrds.v3.model.allow_db_privilege_request import AllowDbPrivilegeRequest
 from huaweicloudsdkrds.v3.model.allow_db_privilege_response import AllowDbPrivilegeResponse
 from huaweicloudsdkrds.v3.model.allow_db_user_privilege_request import AllowDbUserPrivilegeRequest
@@ -29,6 +30,8 @@ from huaweicloudsdkrds.v3.model.backup_info import BackupInfo
 from huaweicloudsdkrds.v3.model.backup_policy import BackupPolicy
 from huaweicloudsdkrds.v3.model.backup_strategy import BackupStrategy
 from huaweicloudsdkrds.v3.model.backup_strategy_for_response import BackupStrategyForResponse
+from huaweicloudsdkrds.v3.model.batch_add_msdtcs_request import BatchAddMsdtcsRequest
+from huaweicloudsdkrds.v3.model.batch_add_msdtcs_response import BatchAddMsdtcsResponse
 from huaweicloudsdkrds.v3.model.batch_tag_action_add_request_body import BatchTagActionAddRequestBody
 from huaweicloudsdkrds.v3.model.batch_tag_action_del_request_body import BatchTagActionDelRequestBody
 from huaweicloudsdkrds.v3.model.batch_tag_add_action_request import BatchTagAddActionRequest
@@ -51,11 +54,14 @@ from huaweicloudsdkrds.v3.model.changing_the_delay_threshold_request_body import
 from huaweicloudsdkrds.v3.model.charge_info import ChargeInfo
 from huaweicloudsdkrds.v3.model.charge_info_response import ChargeInfoResponse
 from huaweicloudsdkrds.v3.model.computes import Computes
+from huaweicloudsdkrds.v3.model.configuration_copy_request_body import ConfigurationCopyRequestBody
 from huaweicloudsdkrds.v3.model.configuration_for_creation import ConfigurationForCreation
 from huaweicloudsdkrds.v3.model.configuration_for_update import ConfigurationForUpdate
 from huaweicloudsdkrds.v3.model.configuration_parameter import ConfigurationParameter
 from huaweicloudsdkrds.v3.model.configuration_summary import ConfigurationSummary
 from huaweicloudsdkrds.v3.model.configuration_summary_for_create import ConfigurationSummaryForCreate
+from huaweicloudsdkrds.v3.model.copy_configuration_request import CopyConfigurationRequest
+from huaweicloudsdkrds.v3.model.copy_configuration_response import CopyConfigurationResponse
 from huaweicloudsdkrds.v3.model.create_configuration_request import CreateConfigurationRequest
 from huaweicloudsdkrds.v3.model.create_configuration_response import CreateConfigurationResponse
 from huaweicloudsdkrds.v3.model.create_database_request import CreateDatabaseRequest
@@ -87,6 +93,7 @@ from huaweicloudsdkrds.v3.model.create_sqlserver_database_response import Create
 from huaweicloudsdkrds.v3.model.create_sqlserver_db_user_request import CreateSqlserverDbUserRequest
 from huaweicloudsdkrds.v3.model.create_sqlserver_db_user_response import CreateSqlserverDbUserResponse
 from huaweicloudsdkrds.v3.model.customer_upgrade_database_version_req import CustomerUpgradeDatabaseVersionReq
+from huaweicloudsdkrds.v3.model.dbs_instance_host_info_result import DBSInstanceHostInfoResult
 from huaweicloudsdkrds.v3.model.data_ip_request import DataIpRequest
 from huaweicloudsdkrds.v3.model.database_for_creation import DatabaseForCreation
 from huaweicloudsdkrds.v3.model.database_with_privilege import DatabaseWithPrivilege
@@ -176,12 +183,16 @@ from huaweicloudsdkrds.v3.model.list_error_logs_request import ListErrorLogsRequ
 from huaweicloudsdkrds.v3.model.list_error_logs_response import ListErrorLogsResponse
 from huaweicloudsdkrds.v3.model.list_flavors_request import ListFlavorsRequest
 from huaweicloudsdkrds.v3.model.list_flavors_response import ListFlavorsResponse
+from huaweicloudsdkrds.v3.model.list_instance_param_histories_request import ListInstanceParamHistoriesRequest
+from huaweicloudsdkrds.v3.model.list_instance_param_histories_response import ListInstanceParamHistoriesResponse
 from huaweicloudsdkrds.v3.model.list_instances_request import ListInstancesRequest
 from huaweicloudsdkrds.v3.model.list_instances_response import ListInstancesResponse
 from huaweicloudsdkrds.v3.model.list_job_info_detail_request import ListJobInfoDetailRequest
 from huaweicloudsdkrds.v3.model.list_job_info_detail_response import ListJobInfoDetailResponse
 from huaweicloudsdkrds.v3.model.list_job_info_request import ListJobInfoRequest
 from huaweicloudsdkrds.v3.model.list_job_info_response import ListJobInfoResponse
+from huaweicloudsdkrds.v3.model.list_msdtc_hosts_request import ListMsdtcHostsRequest
+from huaweicloudsdkrds.v3.model.list_msdtc_hosts_response import ListMsdtcHostsResponse
 from huaweicloudsdkrds.v3.model.list_off_site_backups_request import ListOffSiteBackupsRequest
 from huaweicloudsdkrds.v3.model.list_off_site_backups_response import ListOffSiteBackupsResponse
 from huaweicloudsdkrds.v3.model.list_off_site_instances_request import ListOffSiteInstancesRequest
@@ -221,6 +232,7 @@ from huaweicloudsdkrds.v3.model.modifiy_instance_name_request import ModifiyInst
 from huaweicloudsdkrds.v3.model.modify_dns_name_request_body import ModifyDnsNameRequestBody
 from huaweicloudsdkrds.v3.model.modify_param_request import ModifyParamRequest
 from huaweicloudsdkrds.v3.model.modify_proxy_weight_request import ModifyProxyWeightRequest
+from huaweicloudsdkrds.v3.model.msdtc_host_option import MsdtcHostOption
 from huaweicloudsdkrds.v3.model.mysql_read_only_switch import MysqlReadOnlySwitch
 from huaweicloudsdkrds.v3.model.node_response import NodeResponse
 from huaweicloudsdkrds.v3.model.off_site_backup_for_list import OffSiteBackupForList
@@ -229,6 +241,7 @@ from huaweicloudsdkrds.v3.model.offsite_backup_instance import OffsiteBackupInst
 from huaweicloudsdkrds.v3.model.open_proxy_request import OpenProxyRequest
 from huaweicloudsdkrds.v3.model.ops_window_request import OpsWindowRequest
 from huaweicloudsdkrds.v3.model.para_group_datastore import ParaGroupDatastore
+from huaweicloudsdkrds.v3.model.param_group_history_result import ParamGroupHistoryResult
 from huaweicloudsdkrds.v3.model.postgresql_create_schema_req import PostgresqlCreateSchemaReq
 from huaweicloudsdkrds.v3.model.postgresql_database_for_creation import PostgresqlDatabaseForCreation
 from huaweicloudsdkrds.v3.model.postgresql_database_for_list_schema import PostgresqlDatabaseForListSchema

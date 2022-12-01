@@ -152,7 +152,7 @@ class SimDeviceVO:
         :type flow_left: float
         :param flow_used: 已用流量(单位M)，数据默认截止到昨日24点。
         :type flow_used: float
-        :param operator_status: 运营商状态 -1.正常（非停机状态） 1.停机（超流量停机） 2.停机（超流量阈值停机） 3.停机（流量池停机） 4.停机（套餐到期停机） 5.停机（主动停机） 6.停机（违规停机）
+        :param operator_status: 运营商状态 -1.正常（非停机状态） 1.停机（超流量停机） 2.停机（超流量阈值停机） 3.停机（流量池停机） 4.停机（套餐到期停机） 5.停机（主动停机） 6.停机（违规停机） 7.停机（机卡分离停机）
         :type operator_status: int
         :param msisdn: MSISDN
         :type msisdn: str
@@ -813,7 +813,7 @@ class SimDeviceVO:
     def operator_status(self):
         """Gets the operator_status of this SimDeviceVO.
 
-        运营商状态 -1.正常（非停机状态） 1.停机（超流量停机） 2.停机（超流量阈值停机） 3.停机（流量池停机） 4.停机（套餐到期停机） 5.停机（主动停机） 6.停机（违规停机）
+        运营商状态 -1.正常（非停机状态） 1.停机（超流量停机） 2.停机（超流量阈值停机） 3.停机（流量池停机） 4.停机（套餐到期停机） 5.停机（主动停机） 6.停机（违规停机） 7.停机（机卡分离停机）
 
         :return: The operator_status of this SimDeviceVO.
         :rtype: int
@@ -824,7 +824,7 @@ class SimDeviceVO:
     def operator_status(self, operator_status):
         """Sets the operator_status of this SimDeviceVO.
 
-        运营商状态 -1.正常（非停机状态） 1.停机（超流量停机） 2.停机（超流量阈值停机） 3.停机（流量池停机） 4.停机（套餐到期停机） 5.停机（主动停机） 6.停机（违规停机）
+        运营商状态 -1.正常（非停机状态） 1.停机（超流量停机） 2.停机（超流量阈值停机） 3.停机（流量池停机） 4.停机（套餐到期停机） 5.停机（主动停机） 6.停机（违规停机） 7.停机（机卡分离停机）
 
         :param operator_status: The operator_status of this SimDeviceVO.
         :type operator_status: int

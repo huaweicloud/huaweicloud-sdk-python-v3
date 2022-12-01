@@ -1916,6 +1916,204 @@ class CloudIDEAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_acceptance_async(self, request):
+        """CreateAcceptance接口
+
+        create a acceptance
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateAcceptance
+        :type request: :class:`huaweicloudsdkcloudide.v2.CreateAcceptanceRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.CreateAcceptanceResponse`
+        """
+        return self.create_acceptance_with_http_info(request)
+
+    def create_acceptance_with_http_info(self, request):
+        all_params = ['create_acceptance_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/aims/codemodelserver/code-generation/acceptance',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateAcceptanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_request_async(self, request):
+        """Create Request接口
+
+        create a code generation request.
+        
+        if agent receives a code generation request, it will:
+        - record the request into mysql,
+        - decompose the request into &#x60;topn&#x60; tasks.
+        - send the tasks to kafka.
+        
+        if agent receives a duplicated code generation request, it will not decompose request and send to kafka.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateRequest
+        :type request: :class:`huaweicloudsdkcloudide.v2.CreateRequestRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.CreateRequestResponse`
+        """
+        return self.create_request_with_http_info(request)
+
+    def create_request_with_http_info(self, request):
+        all_params = ['create_request_request_body', 'topn', 'scenario', 'resubmit', 'model_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'topn' in local_var_params:
+            query_params.append(('topn', local_var_params['topn']))
+        if 'scenario' in local_var_params:
+            query_params.append(('scenario', local_var_params['scenario']))
+        if 'resubmit' in local_var_params:
+            query_params.append(('resubmit', local_var_params['resubmit']))
+        if 'model_id' in local_var_params:
+            query_params.append(('model_id', local_var_params['model_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/aims/codemodelserver/code-generation/request',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateRequestResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_result_async(self, request):
+        """Show Result接口
+
+        get the result of the code generation request.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowResult
+        :type request: :class:`huaweicloudsdkcloudide.v2.ShowResultRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.ShowResultResponse`
+        """
+        return self.show_result_with_http_info(request)
+
+    def show_result_with_http_info(self, request):
+        all_params = ['request_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'request_id' in local_var_params:
+            query_params.append(('request_id', local_var_params['request_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/aims/codemodelserver/code-generation/results',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowResultResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):

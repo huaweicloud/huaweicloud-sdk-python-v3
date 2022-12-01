@@ -1140,7 +1140,7 @@ class CfwAsyncClient(Client):
         return self.list_attack_logs_with_http_info(request)
 
     def list_attack_logs_with_http_info(self, request):
-        all_params = ['start_time', 'end_time', 'limit', 'src_ip', 'src_port', 'dst_ip', 'dst_port', 'protocol', 'app', 'log_id', 'next_date', 'offset', 'fw_instance_id', 'action', 'direction', 'attack_type', 'attack_rule', 'level', 'source']
+        all_params = ['start_time', 'end_time', 'limit', 'fw_instance_id', 'src_ip', 'src_port', 'dst_ip', 'dst_port', 'protocol', 'app', 'log_id', 'next_date', 'offset', 'action', 'direction', 'attack_type', 'attack_rule', 'level', 'source']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):

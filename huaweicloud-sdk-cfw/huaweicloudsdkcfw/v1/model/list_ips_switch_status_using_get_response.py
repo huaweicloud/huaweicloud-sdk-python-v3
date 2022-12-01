@@ -20,109 +20,47 @@ class ListIpsSwitchStatusUsingGetResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'object_id': 'str',
-        'basic_defense_status': 'int',
-        'virtual_patches_stauts': 'int'
+        'data': 'IpsSwitchResponseDTO'
     }
 
     attribute_map = {
-        'object_id': 'object_id',
-        'basic_defense_status': 'basic_defense_status',
-        'virtual_patches_stauts': 'virtual_patches_stauts'
+        'data': 'data'
     }
 
-    def __init__(self, object_id=None, basic_defense_status=None, virtual_patches_stauts=None):
+    def __init__(self, data=None):
         """ListIpsSwitchStatusUsingGetResponse
 
         The model defined in huaweicloud sdk
 
-        :param object_id: object_id
-        :type object_id: str
-        :param basic_defense_status: 基础防御状态
-        :type basic_defense_status: int
-        :param virtual_patches_stauts: 虚拟补丁状态
-        :type virtual_patches_stauts: int
+        :param data: 
+        :type data: :class:`huaweicloudsdkcfw.v1.IpsSwitchResponseDTO`
         """
         
         super(ListIpsSwitchStatusUsingGetResponse, self).__init__()
 
-        self._object_id = None
-        self._basic_defense_status = None
-        self._virtual_patches_stauts = None
+        self._data = None
         self.discriminator = None
 
-        if object_id is not None:
-            self.object_id = object_id
-        if basic_defense_status is not None:
-            self.basic_defense_status = basic_defense_status
-        if virtual_patches_stauts is not None:
-            self.virtual_patches_stauts = virtual_patches_stauts
+        if data is not None:
+            self.data = data
 
     @property
-    def object_id(self):
-        """Gets the object_id of this ListIpsSwitchStatusUsingGetResponse.
+    def data(self):
+        """Gets the data of this ListIpsSwitchStatusUsingGetResponse.
 
-        object_id
-
-        :return: The object_id of this ListIpsSwitchStatusUsingGetResponse.
-        :rtype: str
+        :return: The data of this ListIpsSwitchStatusUsingGetResponse.
+        :rtype: :class:`huaweicloudsdkcfw.v1.IpsSwitchResponseDTO`
         """
-        return self._object_id
+        return self._data
 
-    @object_id.setter
-    def object_id(self, object_id):
-        """Sets the object_id of this ListIpsSwitchStatusUsingGetResponse.
+    @data.setter
+    def data(self, data):
+        """Sets the data of this ListIpsSwitchStatusUsingGetResponse.
 
-        object_id
-
-        :param object_id: The object_id of this ListIpsSwitchStatusUsingGetResponse.
-        :type object_id: str
+        :param data: The data of this ListIpsSwitchStatusUsingGetResponse.
+        :type data: :class:`huaweicloudsdkcfw.v1.IpsSwitchResponseDTO`
         """
-        self._object_id = object_id
-
-    @property
-    def basic_defense_status(self):
-        """Gets the basic_defense_status of this ListIpsSwitchStatusUsingGetResponse.
-
-        基础防御状态
-
-        :return: The basic_defense_status of this ListIpsSwitchStatusUsingGetResponse.
-        :rtype: int
-        """
-        return self._basic_defense_status
-
-    @basic_defense_status.setter
-    def basic_defense_status(self, basic_defense_status):
-        """Sets the basic_defense_status of this ListIpsSwitchStatusUsingGetResponse.
-
-        基础防御状态
-
-        :param basic_defense_status: The basic_defense_status of this ListIpsSwitchStatusUsingGetResponse.
-        :type basic_defense_status: int
-        """
-        self._basic_defense_status = basic_defense_status
-
-    @property
-    def virtual_patches_stauts(self):
-        """Gets the virtual_patches_stauts of this ListIpsSwitchStatusUsingGetResponse.
-
-        虚拟补丁状态
-
-        :return: The virtual_patches_stauts of this ListIpsSwitchStatusUsingGetResponse.
-        :rtype: int
-        """
-        return self._virtual_patches_stauts
-
-    @virtual_patches_stauts.setter
-    def virtual_patches_stauts(self, virtual_patches_stauts):
-        """Sets the virtual_patches_stauts of this ListIpsSwitchStatusUsingGetResponse.
-
-        虚拟补丁状态
-
-        :param virtual_patches_stauts: The virtual_patches_stauts of this ListIpsSwitchStatusUsingGetResponse.
-        :type virtual_patches_stauts: int
-        """
-        self._virtual_patches_stauts = virtual_patches_stauts
+        self._data = data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

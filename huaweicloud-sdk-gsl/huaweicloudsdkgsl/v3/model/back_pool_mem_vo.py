@@ -48,7 +48,7 @@ class BackPoolMemVO:
         :type sim_price_plan_id: int
         :param flow_used: 已用流量(查询账期所在月份), 单位MB
         :type flow_used: float
-        :param sim_status: 卡当前状态：10-可测试，11-未激活，13-可激活，14-已停用，20-在用，30-已拆机
+        :param sim_status: 卡当前状态：11-未激活，13-可激活，14-已停用，20-在用，30-已拆机
         :type sim_status: int
         """
         
@@ -164,7 +164,7 @@ class BackPoolMemVO:
     def sim_status(self):
         """Gets the sim_status of this BackPoolMemVO.
 
-        卡当前状态：10-可测试，11-未激活，13-可激活，14-已停用，20-在用，30-已拆机
+        卡当前状态：11-未激活，13-可激活，14-已停用，20-在用，30-已拆机
 
         :return: The sim_status of this BackPoolMemVO.
         :rtype: int
@@ -175,7 +175,7 @@ class BackPoolMemVO:
     def sim_status(self, sim_status):
         """Sets the sim_status of this BackPoolMemVO.
 
-        卡当前状态：10-可测试，11-未激活，13-可激活，14-已停用，20-在用，30-已拆机
+        卡当前状态：11-未激活，13-可激活，14-已停用，20-在用，30-已拆机
 
         :param sim_status: The sim_status of this BackPoolMemVO.
         :type sim_status: int

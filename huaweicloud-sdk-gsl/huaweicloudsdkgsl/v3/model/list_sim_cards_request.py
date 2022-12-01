@@ -90,7 +90,7 @@ class ListSimCardsRequest:
         :type sim_status: int
         :param device_status: 设备状态: 1.注册 2.重启 3.在线 4.离线
         :type device_status: int
-        :param tag_id: 标签ID，最多支持传50个
+        :param tag_id: 标签ID，最多支持传10个
         :type tag_id: list[int]
         :param sim_type: sim卡类型：  1.vSIM  2.eSIM  3.实体卡
         :type sim_type: int
@@ -341,7 +341,7 @@ class ListSimCardsRequest:
     def tag_id(self):
         """Gets the tag_id of this ListSimCardsRequest.
 
-        标签ID，最多支持传50个
+        标签ID，最多支持传10个
 
         :return: The tag_id of this ListSimCardsRequest.
         :rtype: list[int]
@@ -352,7 +352,7 @@ class ListSimCardsRequest:
     def tag_id(self, tag_id):
         """Sets the tag_id of this ListSimCardsRequest.
 
-        标签ID，最多支持传50个
+        标签ID，最多支持传10个
 
         :param tag_id: The tag_id of this ListSimCardsRequest.
         :type tag_id: list[int]

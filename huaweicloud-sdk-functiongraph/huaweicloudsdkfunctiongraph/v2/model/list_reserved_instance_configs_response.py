@@ -20,192 +20,105 @@ class ListReservedInstanceConfigsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'function_urn': 'str',
-        'qualifier_type': 'str',
-        'qualifier_name': 'str',
-        'min_count': 'int',
-        'idle_mode': 'bool',
-        'tactics_config': 'TacticsConfig'
+        'reservedinstances': 'list[ReservedInstanceConfigs]',
+        'page_info': 'PageInfo',
+        'count': 'int'
     }
 
     attribute_map = {
-        'function_urn': 'function_urn',
-        'qualifier_type': 'qualifier_type',
-        'qualifier_name': 'qualifier_name',
-        'min_count': 'min_count',
-        'idle_mode': 'idle_mode',
-        'tactics_config': 'tactics_config'
+        'reservedinstances': 'reservedinstances',
+        'page_info': 'page_info',
+        'count': 'count'
     }
 
-    def __init__(self, function_urn=None, qualifier_type=None, qualifier_name=None, min_count=None, idle_mode=None, tactics_config=None):
+    def __init__(self, reservedinstances=None, page_info=None, count=None):
         """ListReservedInstanceConfigsResponse
 
         The model defined in huaweicloud sdk
 
-        :param function_urn: 函数URN
-        :type function_urn: str
-        :param qualifier_type: 限定类型, 支持version和alias
-        :type qualifier_type: str
-        :param qualifier_name: 限定类型对应的取值
-        :type qualifier_name: str
-        :param min_count: 预留实例个数
-        :type min_count: int
-        :param idle_mode: 是否开启闲置模式配置
-        :type idle_mode: bool
-        :param tactics_config: 
-        :type tactics_config: :class:`huaweicloudsdkfunctiongraph.v2.TacticsConfig`
+        :param reservedinstances: 函数预留实例列表
+        :type reservedinstances: list[:class:`huaweicloudsdkfunctiongraph.v2.ReservedInstanceConfigs`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkfunctiongraph.v2.PageInfo`
+        :param count: 函数个数
+        :type count: int
         """
         
         super(ListReservedInstanceConfigsResponse, self).__init__()
 
-        self._function_urn = None
-        self._qualifier_type = None
-        self._qualifier_name = None
-        self._min_count = None
-        self._idle_mode = None
-        self._tactics_config = None
+        self._reservedinstances = None
+        self._page_info = None
+        self._count = None
         self.discriminator = None
 
-        if function_urn is not None:
-            self.function_urn = function_urn
-        if qualifier_type is not None:
-            self.qualifier_type = qualifier_type
-        if qualifier_name is not None:
-            self.qualifier_name = qualifier_name
-        if min_count is not None:
-            self.min_count = min_count
-        if idle_mode is not None:
-            self.idle_mode = idle_mode
-        if tactics_config is not None:
-            self.tactics_config = tactics_config
+        if reservedinstances is not None:
+            self.reservedinstances = reservedinstances
+        if page_info is not None:
+            self.page_info = page_info
+        if count is not None:
+            self.count = count
 
     @property
-    def function_urn(self):
-        """Gets the function_urn of this ListReservedInstanceConfigsResponse.
+    def reservedinstances(self):
+        """Gets the reservedinstances of this ListReservedInstanceConfigsResponse.
 
-        函数URN
+        函数预留实例列表
 
-        :return: The function_urn of this ListReservedInstanceConfigsResponse.
-        :rtype: str
+        :return: The reservedinstances of this ListReservedInstanceConfigsResponse.
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.ReservedInstanceConfigs`]
         """
-        return self._function_urn
+        return self._reservedinstances
 
-    @function_urn.setter
-    def function_urn(self, function_urn):
-        """Sets the function_urn of this ListReservedInstanceConfigsResponse.
+    @reservedinstances.setter
+    def reservedinstances(self, reservedinstances):
+        """Sets the reservedinstances of this ListReservedInstanceConfigsResponse.
 
-        函数URN
+        函数预留实例列表
 
-        :param function_urn: The function_urn of this ListReservedInstanceConfigsResponse.
-        :type function_urn: str
+        :param reservedinstances: The reservedinstances of this ListReservedInstanceConfigsResponse.
+        :type reservedinstances: list[:class:`huaweicloudsdkfunctiongraph.v2.ReservedInstanceConfigs`]
         """
-        self._function_urn = function_urn
+        self._reservedinstances = reservedinstances
 
     @property
-    def qualifier_type(self):
-        """Gets the qualifier_type of this ListReservedInstanceConfigsResponse.
+    def page_info(self):
+        """Gets the page_info of this ListReservedInstanceConfigsResponse.
 
-        限定类型, 支持version和alias
-
-        :return: The qualifier_type of this ListReservedInstanceConfigsResponse.
-        :rtype: str
+        :return: The page_info of this ListReservedInstanceConfigsResponse.
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.PageInfo`
         """
-        return self._qualifier_type
+        return self._page_info
 
-    @qualifier_type.setter
-    def qualifier_type(self, qualifier_type):
-        """Sets the qualifier_type of this ListReservedInstanceConfigsResponse.
+    @page_info.setter
+    def page_info(self, page_info):
+        """Sets the page_info of this ListReservedInstanceConfigsResponse.
 
-        限定类型, 支持version和alias
-
-        :param qualifier_type: The qualifier_type of this ListReservedInstanceConfigsResponse.
-        :type qualifier_type: str
+        :param page_info: The page_info of this ListReservedInstanceConfigsResponse.
+        :type page_info: :class:`huaweicloudsdkfunctiongraph.v2.PageInfo`
         """
-        self._qualifier_type = qualifier_type
+        self._page_info = page_info
 
     @property
-    def qualifier_name(self):
-        """Gets the qualifier_name of this ListReservedInstanceConfigsResponse.
+    def count(self):
+        """Gets the count of this ListReservedInstanceConfigsResponse.
 
-        限定类型对应的取值
+        函数个数
 
-        :return: The qualifier_name of this ListReservedInstanceConfigsResponse.
-        :rtype: str
-        """
-        return self._qualifier_name
-
-    @qualifier_name.setter
-    def qualifier_name(self, qualifier_name):
-        """Sets the qualifier_name of this ListReservedInstanceConfigsResponse.
-
-        限定类型对应的取值
-
-        :param qualifier_name: The qualifier_name of this ListReservedInstanceConfigsResponse.
-        :type qualifier_name: str
-        """
-        self._qualifier_name = qualifier_name
-
-    @property
-    def min_count(self):
-        """Gets the min_count of this ListReservedInstanceConfigsResponse.
-
-        预留实例个数
-
-        :return: The min_count of this ListReservedInstanceConfigsResponse.
+        :return: The count of this ListReservedInstanceConfigsResponse.
         :rtype: int
         """
-        return self._min_count
+        return self._count
 
-    @min_count.setter
-    def min_count(self, min_count):
-        """Sets the min_count of this ListReservedInstanceConfigsResponse.
+    @count.setter
+    def count(self, count):
+        """Sets the count of this ListReservedInstanceConfigsResponse.
 
-        预留实例个数
+        函数个数
 
-        :param min_count: The min_count of this ListReservedInstanceConfigsResponse.
-        :type min_count: int
+        :param count: The count of this ListReservedInstanceConfigsResponse.
+        :type count: int
         """
-        self._min_count = min_count
-
-    @property
-    def idle_mode(self):
-        """Gets the idle_mode of this ListReservedInstanceConfigsResponse.
-
-        是否开启闲置模式配置
-
-        :return: The idle_mode of this ListReservedInstanceConfigsResponse.
-        :rtype: bool
-        """
-        return self._idle_mode
-
-    @idle_mode.setter
-    def idle_mode(self, idle_mode):
-        """Sets the idle_mode of this ListReservedInstanceConfigsResponse.
-
-        是否开启闲置模式配置
-
-        :param idle_mode: The idle_mode of this ListReservedInstanceConfigsResponse.
-        :type idle_mode: bool
-        """
-        self._idle_mode = idle_mode
-
-    @property
-    def tactics_config(self):
-        """Gets the tactics_config of this ListReservedInstanceConfigsResponse.
-
-        :return: The tactics_config of this ListReservedInstanceConfigsResponse.
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.TacticsConfig`
-        """
-        return self._tactics_config
-
-    @tactics_config.setter
-    def tactics_config(self, tactics_config):
-        """Sets the tactics_config of this ListReservedInstanceConfigsResponse.
-
-        :param tactics_config: The tactics_config of this ListReservedInstanceConfigsResponse.
-        :type tactics_config: :class:`huaweicloudsdkfunctiongraph.v2.TacticsConfig`
-        """
-        self._tactics_config = tactics_config
+        self._count = count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

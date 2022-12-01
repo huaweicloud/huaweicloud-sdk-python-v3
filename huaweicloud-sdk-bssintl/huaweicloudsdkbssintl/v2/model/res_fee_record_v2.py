@@ -67,7 +67,8 @@ class ResFeeRecordV2:
         'bonus_amount': 'float',
         'debt_amount': 'float',
         'adjustment_amount': 'float',
-        'measure_id': 'int'
+        'measure_id': 'int',
+        'formula': 'str'
     }
 
     attribute_map = {
@@ -118,10 +119,11 @@ class ResFeeRecordV2:
         'bonus_amount': 'bonus_amount',
         'debt_amount': 'debt_amount',
         'adjustment_amount': 'adjustment_amount',
-        'measure_id': 'measure_id'
+        'measure_id': 'measure_id',
+        'formula': 'formula'
     }
 
-    def __init__(self, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type=None, cloud_service_type_name=None, resource_type_name=None, effective_time=None, expire_time=None, resource_id=None, resource_name=None, resource_tag=None, product_id=None, product_name=None, product_spec_desc=None, sku_code=None, spec_size=None, spec_size_measure_id=None, trade_id=None, trade_time=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, order_id=None, period_type=None, usage_type=None, usage=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, unit_price=None, unit=None, official_amount=None, discount_amount=None, amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, measure_id=None):
+    def __init__(self, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type=None, cloud_service_type_name=None, resource_type_name=None, effective_time=None, expire_time=None, resource_id=None, resource_name=None, resource_tag=None, product_id=None, product_name=None, product_spec_desc=None, sku_code=None, spec_size=None, spec_size_measure_id=None, trade_id=None, trade_time=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, order_id=None, period_type=None, usage_type=None, usage=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, unit_price=None, unit=None, official_amount=None, discount_amount=None, amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, measure_id=None, formula=None):
         """ResFeeRecordV2
 
         The model defined in huaweicloud sdk
@@ -222,6 +224,8 @@ class ResFeeRecordV2:
         :type adjustment_amount: float
         :param measure_id: 金额单位。 1：元
         :type measure_id: int
+        :param formula: 实付金额计算公式。当前只包含如下场景： 按需简单定价 按需线性定价 包年包月新购和续费的简单定价 包年包月新购和续费的线性定价  说明： 实付金额计算公式得到的金额值等于amount - coupon_amount的差值。
+        :type formula: str
         """
         
         
@@ -274,6 +278,7 @@ class ResFeeRecordV2:
         self._debt_amount = None
         self._adjustment_amount = None
         self._measure_id = None
+        self._formula = None
         self.discriminator = None
 
         if bill_date is not None:
@@ -372,6 +377,8 @@ class ResFeeRecordV2:
             self.adjustment_amount = adjustment_amount
         if measure_id is not None:
             self.measure_id = measure_id
+        if formula is not None:
+            self.formula = formula
 
     @property
     def bill_date(self):
@@ -1428,6 +1435,28 @@ class ResFeeRecordV2:
         :type measure_id: int
         """
         self._measure_id = measure_id
+
+    @property
+    def formula(self):
+        """Gets the formula of this ResFeeRecordV2.
+
+        实付金额计算公式。当前只包含如下场景： 按需简单定价 按需线性定价 包年包月新购和续费的简单定价 包年包月新购和续费的线性定价  说明： 实付金额计算公式得到的金额值等于amount - coupon_amount的差值。
+
+        :return: The formula of this ResFeeRecordV2.
+        :rtype: str
+        """
+        return self._formula
+
+    @formula.setter
+    def formula(self, formula):
+        """Sets the formula of this ResFeeRecordV2.
+
+        实付金额计算公式。当前只包含如下场景： 按需简单定价 按需线性定价 包年包月新购和续费的简单定价 包年包月新购和续费的线性定价  说明： 实付金额计算公式得到的金额值等于amount - coupon_amount的差值。
+
+        :param formula: The formula of this ResFeeRecordV2.
+        :type formula: str
+        """
+        self._formula = formula
 
     def to_dict(self):
         """Returns the model properties as a dict"""

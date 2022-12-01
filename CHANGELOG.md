@@ -1,3 +1,280 @@
+# 3.1.14 2022-12-01
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `formula` to the interface `ListCustomerselfResourceRecords`
+
+### HuaweiCloud SDK BSSINTL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `formula` to the interface `ListCustomerselfResourceRecords`
+
+### HuaweiCloud SDK CFW
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListIpsSwitchStatusUsingGet`:
+    - Add the response parameter `data`
+    - Remove the response parameters `object_id`, `basic_defense_status`, `virtual_patches_stauts`
+  - Changes of the interface `ListEastWestFirewall`:
+    - Add the response parameter `protect_infos`
+    - Remove the response parameter `protected_infos`
+  - The request parameter `fw_instance_id` changed to not required of the interface `ListAttackLogs`
+  - Add the request parameter `type` to the interface `UpdateRuleAclUsingPut`
+  - Add the request parameters `list_type`, `object_id` to the interface `UpdateBlackWhiteListUsingPut`
+  - Changes of the interface `ListFirewallUsingGet`:
+    - Add the response parameter `data`
+    - Remove the response parameters `fw_instance_id`, `resource_id`, `name`, `ha_type`, `charge_mode`, `service_type`, `engine_type`, `flavor`, `protect_objects`, `status`, `description`, `is_old_firewall_instance`, `support_ipv6`, `feature_toggle`
+  - Changes of the interface `ListServiceSetDetails`:
+    - Add the response parameter `data`
+    - Remove the response parameters `id`, `name`, `description`
+  - Changes of the interface `CountEips`:
+    - Add the response parameter `data`
+    - Remove the response parameters `object_id`, `eip_total`, `eip_protected`
+  - Changes of the interface `ListEipResources`:
+    - Add the response parameter `data`
+    - Remove the response parameters `id`, `public_ip`, `status`, `public_ipv6`, `enterprise_project_id`, `device_id`, `device_name`, `device_owner`, `associate_instance_type`
+  - Add the request parameter `address_type` to the interface `UpdateAddressSetInfoUsingPut`
+
+### HuaweiCloud SDK CloudIDE
+
+- _Features_
+  - Support the interfaces `CreateAcceptance`, `CreateRequest`, `ShowResult`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DWS
+
+- _Features_
+  - Support the following interfaces：
+    - `CheckCluster`
+    - `ShrinkCluster`
+    - `ListDssPools`
+    - `ListStatistics`
+    - `SwitchOverCluster`
+    - `CancelReadonlyCluster`
+    - `UpdateMaintenanceWindow`
+    - `ListClusterCn`
+    - `BatchCreateClusterCn`
+    - `BatchDeleteClusterCn`
+    - `ListClusterConfigurations`
+    - `ListClusterConfigurationsParameter`
+    - `UpdateConfiguration`
+    - `ListSnapshotStatistics`
+    - `ExecuteRedistributionCluster`
+    - `ListClusterWorkload`
+    - `CreateClusterWorkload`
+    - `CreateWorkloadPlan`
+    - `ListWorkloadQueue`
+    - `AddWorkloadQueue`
+    - `DeleteWorkloadQueue`
+    - `CopySnapshot`
+    - `ListClusterSnapshots`
+    - `DeleteSnapshotPolicy`
+    - `ListSnapshotPolicy`
+    - `CreateSnapshotPolicy`
+    - `DeleteDisasterRecovery`
+    - `StartDisasterRecovery`
+    - `PauseDisasterRecovery`
+    - `SwitchoverDisasterRecovery`
+    - `SwitchFailoverDisaster`
+    - `RestoreDisaster`
+    - `ListAuditLog`
+    - `ListDataSource`
+    - `CreateDataSource`
+    - `UpdateDataSource`
+    - `ListElbs`
+    - `AssociateElb`
+    - `DisassociateElb`
+    - `AssociateEip`
+    - `DisassociateEip`
+    - `UpdateClusterDns`
+    - `CreateClusterDns`
+    - `DeleteClusterDns`
+    - `ListAlarmConfigs`
+    - `ListAlarmDetail`
+    - `ListAlarmStatistic`
+    - `ListAlarmSubs`
+    - `CreateAlarmSub`
+    - `UpdateAlarmSub`
+    - `DeleteAlarmSub`
+    - `ListEvents`
+    - `ListEventSpecs`
+    - `ListEventSubs`
+    - `CreateEventSub`
+    - `UpdateEventSub`
+    - `DeleteEventSub`
+    - `ListJobDetails`
+    - `ListQuotas`
+    - `ListTags`
+    - `ListClusterTags`
+    - `BatchCreateResourceTag`
+    - `BatchDeleteResourceTag`
+    - `ListAvailabilityZones`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - Support the interface `AsyncInvokeReservedFunction`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `http` to the response parameter `runtime` to the interface `ListDependencies`
+  - Add the enum values `http` to the response parameter `runtime` to the interface `ListDependencyVersion`
+  - Changes of the interface `CreateFunction`:
+    - Add the enum values `http` to the request parameter `runtime`
+    - Add the enum values `http` to the response parameter `runtime`
+  - Add the enum values `http` to the response parameter `runtime` to the interface `ListFunctions`
+  - Add the enum values `http` to the response parameter `runtime` to the interface `UpdateFunctionCode`
+  - Add the enum values `http` to the response parameter `runtime` to the interface `ShowFunctionCode`
+  - Changes of the interface `UpdateFunctionConfig`:
+    - Add the enum values `http` to the request parameter `runtime`
+    - Add the enum values `http` to the response parameter `runtime`
+  - Add the enum values `http` to the response parameter `runtime` to the interface `ShowFunctionConfig`
+  - Add the enum values `http` to the response parameter `runtime` to the interface `UpdateFunctionMaxInstanceConfig`
+  - Changes of the interface `ListReservedInstanceConfigs`:
+    - Add the response parameters `reservedinstances`, `page_info`, `count`
+    - Remove the response parameters `function_urn`, `qualifier_type`, `qualifier_name`, `min_count`, `idle_mode`, `tactics_config`
+  - Add the enum values `http` to the response parameter `runtime` to the interface `CreateFunctionVersion`
+  - Add the enum values `http` to the response parameter `runtime` to the interface `ListFunctionVersions`
+  - Add the enum values `http` to the response parameter `runtime` to the interface `ImportFunction`
+
+### HuaweiCloud SDK GSL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `sim_card_id`, `partner`, `package_type`, `sim_type` to the interface `ListProPricePlans`
+  - Changes of the interface `ListSimCards`:
+    - Add the request parameters `expire_time_duration`, `traffic_warning_threshold`, `sim_status_in`
+    - Add the response parameters `sn`, `supply_code`, `bundle_id`, `test_type`
+  - Changes of the interface `StopSimCard`:
+    - Add the request parameter `price_plan_list`
+    - Add the response parameter `sim_price_plan_list`
+  - Changes of the interface `ResetSimCard`:
+    - Add the request parameter `price_plan_list`
+    - Add the response parameter `sim_price_plan_list`
+  - Add the response parameters `sn`, `supply_code`, `bundle_id`, `test_type` to the interface `ShowSimCard`
+  - Add the response parameter `order_id` to the interface `ListSimPools`
+  - Changes of the interface `ListSimPricePlans`:
+    - Add the request parameter `sim_price_plan_id`
+    - Add the response parameters `partner`, `partner_pid`
+  - Add the response parameter `id` to the interface `CreateAttribute`
+
+### HuaweiCloud SDK Image
+
+- _Features_
+  - Support the interfaces `RunQueryCustomTags`, `RunDeleteCustomTags`, `RunImageMediaTaggingDet`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `use_default_tags` to the interface `RunImageMediaTagging`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interfaces `CopyConfiguration`, `ListInstanceParamHistories`, `ListMsdtcHosts`, `BatchAddMsdtcs`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IEF
+
+- _Features_
+  - Support the following interfaces：
+    - `ListEdgeGroups`
+    - `CreateEdgeGroup`
+    - `ShowEdgeGroupDetail`
+    - `UpdateEdgeGroup`
+    - `DeleteEdgeGroup`
+    - `UpdateEdgeGroupNodeBinding`
+    - `ListEdgeGroupCerts`
+    - `CreateEdgeGroupCert`
+    - `ShowEdgeGroupCertDetail`
+    - `DeleteEdgeGroupCert`
+    - `ListSystemEvents`
+    - `CreateSystemEvent`
+    - `ShowSystemEventDetail`
+    - `DeleteSystemEvent`
+    - `StartSystemEvent`
+    - `StopSystemEvent`
+    - `ListBatchJob`
+    - `CreateBatchJob`
+    - `ShowBatchJob`
+    - `DeleteBatchJob`
+    - `StopBatchJob`
+    - `ListProducts`
+    - `CreateProduct`
+    - `ShowProductDetail`
+    - `DeleteProduct`
+    - `RestoreBatchJob`
+    - `RetryBatchJob`
+    - `ShowQuota`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListEdgeNodes`:
+    - Add the response parameter `identifier`
+  - Changes of the interface `ShowEdgeNodeDetail`:
+    - Add the response parameter `identifier`
+  - Changes of the interface `UpdateEdgeNode`:
+    - Add the response parameter `identifier`
+  - Changes of the interface `UpdateNodeByDeviceId`:
+    - The request parameter `relation`, `comment` changed to not required
+    - The response parameter `relation`, `comment` changed to not required
+  - Changes of the interface `ListApps`:
+    - Add the response parameter `run_as_user`
+    - Modify the type `string` -> `boolean` of the response parameter `host_pid`
+  - Changes of the interface `ShowAppDetail`:
+    - Add the response parameter `run_as_user`
+    - Modify the type `string` -> `boolean` of the response parameter `host_pid`
+  - Changes of the interface `UpdateApp`:
+    - Add the response parameter `run_as_user`
+    - Modify the type `string` -> `boolean` of the response parameter `host_pid`
+  - Changes of the interface `ListAppVersions`:
+    - Add the response parameter `run_as_user`
+    - Modify the type `string` -> `boolean` of the response parameter `host_pid`
+  - Changes of the interface `CreateAppVersions`:
+    - Add the request parameter `run_as_user`
+    - Modify the type `string` -> `boolean` of the request parameter `host_pid`
+  - Changes of the interface `ShowAppVersionDetail`:
+    - Add the response parameter `run_as_user`
+    - Modify the type `string` -> `boolean` of the response parameter `host_pid`
+  - Changes of the interface `UpdateAppVersion`:
+    - Add the request parameter `run_as_user`
+    - Add the response parameter `run_as_user`
+    - Modify the type `string` -> `boolean` of the request parameter `host_pid`
+    - Modify the type `string` -> `boolean` of the response parameter `host_pid`
+  - Changes of the interface `ListDeployments`:
+    - Add the response parameters `run_as_user`, `run_as_user`
+  - Add the request parameters `run_as_user`, `run_as_user` to the interface `CreateDeployments`
+  - Changes of the interface `ShowDeployment`:
+    - Add the response parameters `run_as_user`, `run_as_user`
+  - Changes of the interface `UpdateDeployment`:
+    - Add the request parameters `run_as_user`, `run_as_user`
+    - Add the response parameters `run_as_user`, `run_as_user`
+
 # 3.1.13 2022-11-30
 
 ### HuaweiCloud SDK AOM

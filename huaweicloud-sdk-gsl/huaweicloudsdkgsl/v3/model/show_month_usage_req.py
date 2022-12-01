@@ -34,9 +34,9 @@ class ShowMonthUsageReq:
 
         The model defined in huaweicloud sdk
 
-        :param sim_card_ids: sim卡id列表
+        :param sim_card_ids: sim卡id列表，最多支持传入500个SIM卡id。
         :type sim_card_ids: list[int]
-        :param billing_cycles: 账期
+        :param billing_cycles: 账期，最多支持传入本月在内的6个月账期，例如[2022-07, 2022-06]，不支持传入未来账期。
         :type billing_cycles: list[str]
         """
         
@@ -53,7 +53,7 @@ class ShowMonthUsageReq:
     def sim_card_ids(self):
         """Gets the sim_card_ids of this ShowMonthUsageReq.
 
-        sim卡id列表
+        sim卡id列表，最多支持传入500个SIM卡id。
 
         :return: The sim_card_ids of this ShowMonthUsageReq.
         :rtype: list[int]
@@ -64,7 +64,7 @@ class ShowMonthUsageReq:
     def sim_card_ids(self, sim_card_ids):
         """Sets the sim_card_ids of this ShowMonthUsageReq.
 
-        sim卡id列表
+        sim卡id列表，最多支持传入500个SIM卡id。
 
         :param sim_card_ids: The sim_card_ids of this ShowMonthUsageReq.
         :type sim_card_ids: list[int]
@@ -75,7 +75,7 @@ class ShowMonthUsageReq:
     def billing_cycles(self):
         """Gets the billing_cycles of this ShowMonthUsageReq.
 
-        账期
+        账期，最多支持传入本月在内的6个月账期，例如[2022-07, 2022-06]，不支持传入未来账期。
 
         :return: The billing_cycles of this ShowMonthUsageReq.
         :rtype: list[str]
@@ -86,7 +86,7 @@ class ShowMonthUsageReq:
     def billing_cycles(self, billing_cycles):
         """Sets the billing_cycles of this ShowMonthUsageReq.
 
-        账期
+        账期，最多支持传入本月在内的6个月账期，例如[2022-07, 2022-06]，不支持传入未来账期。
 
         :param billing_cycles: The billing_cycles of this ShowMonthUsageReq.
         :type billing_cycles: list[str]

@@ -34,7 +34,7 @@ class Excepted:
 
         The model defined in huaweicloud sdk
 
-        :param value: 动态属性的初始值，最大长度512， value允许英文字母、数字、下划线、中划线、点、逗号、冒号、/、@、#
+        :param value: 动态属性的初始值，最大长度512，value允许英文字母、数字、下划线、中划线、点、逗号、冒号、/、@、+、?、^、&#x3D;、%、&amp;、~、#、!、*
         :type value: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkief.v1.ExceptedMetadata`
@@ -55,7 +55,7 @@ class Excepted:
     def value(self):
         """Gets the value of this Excepted.
 
-        动态属性的初始值，最大长度512， value允许英文字母、数字、下划线、中划线、点、逗号、冒号、/、@、#
+        动态属性的初始值，最大长度512，value允许英文字母、数字、下划线、中划线、点、逗号、冒号、/、@、+、?、^、=、%、&、~、#、!、*
 
         :return: The value of this Excepted.
         :rtype: str
@@ -66,7 +66,7 @@ class Excepted:
     def value(self, value):
         """Sets the value of this Excepted.
 
-        动态属性的初始值，最大长度512， value允许英文字母、数字、下划线、中划线、点、逗号、冒号、/、@、#
+        动态属性的初始值，最大长度512，value允许英文字母、数字、下划线、中划线、点、逗号、冒号、/、@、+、?、^、=、%、&、~、#、!、*
 
         :param value: The value of this Excepted.
         :type value: str

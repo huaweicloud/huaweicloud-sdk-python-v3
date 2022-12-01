@@ -3,6 +3,7 @@
 from __future__ import absolute_import
 
 # import models into model package
+from huaweicloudsdkcloudide.v2.model.acceptance_schema import AcceptanceSchema
 from huaweicloudsdkcloudide.v2.model.account_status import AccountStatus
 from huaweicloudsdkcloudide.v2.model.add_extension_evaluation_reply_request import AddExtensionEvaluationReplyRequest
 from huaweicloudsdkcloudide.v2.model.add_extension_evaluation_reply_response import AddExtensionEvaluationReplyResponse
@@ -20,12 +21,16 @@ from huaweicloudsdkcloudide.v2.model.check_name_response import CheckNameRespons
 from huaweicloudsdkcloudide.v2.model.check_result import CheckResult
 from huaweicloudsdkcloudide.v2.model.check_result_error import CheckResultError
 from huaweicloudsdkcloudide.v2.model.cloud_ide_extension_version_property import CloudIDEExtensionVersionProperty
+from huaweicloudsdkcloudide.v2.model.create_acceptance_request import CreateAcceptanceRequest
+from huaweicloudsdkcloudide.v2.model.create_acceptance_response import CreateAcceptanceResponse
 from huaweicloudsdkcloudide.v2.model.create_extension_authorization_request import CreateExtensionAuthorizationRequest
 from huaweicloudsdkcloudide.v2.model.create_extension_authorization_response import CreateExtensionAuthorizationResponse
 from huaweicloudsdkcloudide.v2.model.create_instance_by3rd_request import CreateInstanceBy3rdRequest
 from huaweicloudsdkcloudide.v2.model.create_instance_by3rd_response import CreateInstanceBy3rdResponse
 from huaweicloudsdkcloudide.v2.model.create_instance_request import CreateInstanceRequest
 from huaweicloudsdkcloudide.v2.model.create_instance_response import CreateInstanceResponse
+from huaweicloudsdkcloudide.v2.model.create_request_request import CreateRequestRequest
+from huaweicloudsdkcloudide.v2.model.create_request_response import CreateRequestResponse
 from huaweicloudsdkcloudide.v2.model.criteria_snake import CriteriaSnake
 from huaweicloudsdkcloudide.v2.model.delete_evaluation_reply_request import DeleteEvaluationReplyRequest
 from huaweicloudsdkcloudide.v2.model.delete_evaluation_reply_response import DeleteEvaluationReplyResponse
@@ -68,8 +73,10 @@ from huaweicloudsdkcloudide.v2.model.list_stacks_response import ListStacksRespo
 from huaweicloudsdkcloudide.v2.model.page_instances_vo import PageInstancesVO
 from huaweicloudsdkcloudide.v2.model.plugin import Plugin
 from huaweicloudsdkcloudide.v2.model.project_templates import ProjectTemplates
+from huaweicloudsdkcloudide.v2.model.properties_schema import PropertiesSchema
 from huaweicloudsdkcloudide.v2.model.publisher_snake import PublisherSnake
 from huaweicloudsdkcloudide.v2.model.recipe import Recipe
+from huaweicloudsdkcloudide.v2.model.request_status import RequestStatus
 from huaweicloudsdkcloudide.v2.model.resource_price import ResourcePrice
 from huaweicloudsdkcloudide.v2.model.result_metadata_snake import ResultMetadataSnake
 from huaweicloudsdkcloudide.v2.model.show_account_status_request import ShowAccountStatusRequest
@@ -88,6 +95,8 @@ from huaweicloudsdkcloudide.v2.model.show_instance_status_info_request import Sh
 from huaweicloudsdkcloudide.v2.model.show_instance_status_info_response import ShowInstanceStatusInfoResponse
 from huaweicloudsdkcloudide.v2.model.show_price_request import ShowPriceRequest
 from huaweicloudsdkcloudide.v2.model.show_price_response import ShowPriceResponse
+from huaweicloudsdkcloudide.v2.model.show_result_request import ShowResultRequest
+from huaweicloudsdkcloudide.v2.model.show_result_response import ShowResultResponse
 from huaweicloudsdkcloudide.v2.model.source_storage import SourceStorage
 from huaweicloudsdkcloudide.v2.model.stack_info import StackInfo
 from huaweicloudsdkcloudide.v2.model.stacks_attribute import StacksAttribute
@@ -98,6 +107,7 @@ from huaweicloudsdkcloudide.v2.model.start_instance_request import StartInstance
 from huaweicloudsdkcloudide.v2.model.start_instance_response import StartInstanceResponse
 from huaweicloudsdkcloudide.v2.model.stop_instance_request import StopInstanceRequest
 from huaweicloudsdkcloudide.v2.model.stop_instance_response import StopInstanceResponse
+from huaweicloudsdkcloudide.v2.model.task_model import TaskModel
 from huaweicloudsdkcloudide.v2.model.update_instance_activity_request import UpdateInstanceActivityRequest
 from huaweicloudsdkcloudide.v2.model.update_instance_activity_response import UpdateInstanceActivityResponse
 from huaweicloudsdkcloudide.v2.model.update_instance_request import UpdateInstanceRequest

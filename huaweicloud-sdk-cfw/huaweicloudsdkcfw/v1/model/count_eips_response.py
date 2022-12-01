@@ -20,109 +20,47 @@ class CountEipsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'object_id': 'str',
-        'eip_total': 'int',
-        'eip_protected': 'int'
+        'data': 'EipCountRespData'
     }
 
     attribute_map = {
-        'object_id': 'object_id',
-        'eip_total': 'eip_total',
-        'eip_protected': 'eip_protected'
+        'data': 'data'
     }
 
-    def __init__(self, object_id=None, eip_total=None, eip_protected=None):
+    def __init__(self, data=None):
         """CountEipsResponse
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 防护对象ID
-        :type object_id: str
-        :param eip_total: EIP总数
-        :type eip_total: int
-        :param eip_protected: EIP防护数
-        :type eip_protected: int
+        :param data: 
+        :type data: :class:`huaweicloudsdkcfw.v1.EipCountRespData`
         """
         
         super(CountEipsResponse, self).__init__()
 
-        self._object_id = None
-        self._eip_total = None
-        self._eip_protected = None
+        self._data = None
         self.discriminator = None
 
-        if object_id is not None:
-            self.object_id = object_id
-        if eip_total is not None:
-            self.eip_total = eip_total
-        if eip_protected is not None:
-            self.eip_protected = eip_protected
+        if data is not None:
+            self.data = data
 
     @property
-    def object_id(self):
-        """Gets the object_id of this CountEipsResponse.
+    def data(self):
+        """Gets the data of this CountEipsResponse.
 
-        防护对象ID
-
-        :return: The object_id of this CountEipsResponse.
-        :rtype: str
+        :return: The data of this CountEipsResponse.
+        :rtype: :class:`huaweicloudsdkcfw.v1.EipCountRespData`
         """
-        return self._object_id
+        return self._data
 
-    @object_id.setter
-    def object_id(self, object_id):
-        """Sets the object_id of this CountEipsResponse.
+    @data.setter
+    def data(self, data):
+        """Sets the data of this CountEipsResponse.
 
-        防护对象ID
-
-        :param object_id: The object_id of this CountEipsResponse.
-        :type object_id: str
+        :param data: The data of this CountEipsResponse.
+        :type data: :class:`huaweicloudsdkcfw.v1.EipCountRespData`
         """
-        self._object_id = object_id
-
-    @property
-    def eip_total(self):
-        """Gets the eip_total of this CountEipsResponse.
-
-        EIP总数
-
-        :return: The eip_total of this CountEipsResponse.
-        :rtype: int
-        """
-        return self._eip_total
-
-    @eip_total.setter
-    def eip_total(self, eip_total):
-        """Sets the eip_total of this CountEipsResponse.
-
-        EIP总数
-
-        :param eip_total: The eip_total of this CountEipsResponse.
-        :type eip_total: int
-        """
-        self._eip_total = eip_total
-
-    @property
-    def eip_protected(self):
-        """Gets the eip_protected of this CountEipsResponse.
-
-        EIP防护数
-
-        :return: The eip_protected of this CountEipsResponse.
-        :rtype: int
-        """
-        return self._eip_protected
-
-    @eip_protected.setter
-    def eip_protected(self, eip_protected):
-        """Sets the eip_protected of this CountEipsResponse.
-
-        EIP防护数
-
-        :param eip_protected: The eip_protected of this CountEipsResponse.
-        :type eip_protected: int
-        """
-        self._eip_protected = eip_protected
+        self._data = data
 
     def to_dict(self):
         """Returns the model properties as a dict"""
