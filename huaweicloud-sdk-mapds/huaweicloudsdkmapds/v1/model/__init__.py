@@ -1,0 +1,18 @@
+# coding: utf-8
+
+from __future__ import absolute_import
+
+# import models into model package
+from huaweicloudsdkmapds.v1.model.create_credential_request import CreateCredentialRequest
+from huaweicloudsdkmapds.v1.model.create_credential_request_body import CreateCredentialRequestBody
+from huaweicloudsdkmapds.v1.model.create_credential_response import CreateCredentialResponse
+from huaweicloudsdkmapds.v1.model.create_sas_token_request import CreateSasTokenRequest
+from huaweicloudsdkmapds.v1.model.create_sas_token_request_body import CreateSasTokenRequestBody
+from huaweicloudsdkmapds.v1.model.create_sas_token_response import CreateSasTokenResponse
+from huaweicloudsdkmapds.v1.model.credentials_resp_credentials import CredentialsRespCredentials
+from huaweicloudsdkmapds.v1.model.delete_cedential_request import DeleteCedentialRequest
+from huaweicloudsdkmapds.v1.model.delete_cedential_response import DeleteCedentialResponse
+from huaweicloudsdkmapds.v1.model.show_credential_request import ShowCredentialRequest
+from huaweicloudsdkmapds.v1.model.show_credential_response import ShowCredentialResponse
+from huaweicloudsdkmapds.v1.model.show_map_tile_request import ShowMapTileRequest
+from huaweicloudsdkmapds.v1.model.show_map_tile_response import ShowMapTileResponse

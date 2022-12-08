@@ -136,8 +136,7 @@ class CreatePostPaidInstanceReq:
             self.enable_publicip = enable_publicip
         if publicip_id is not None:
             self.publicip_id = publicip_id
-        if broker_num is not None:
-            self.broker_num = broker_num
+        self.broker_num = broker_num
 
     @property
     def name(self):

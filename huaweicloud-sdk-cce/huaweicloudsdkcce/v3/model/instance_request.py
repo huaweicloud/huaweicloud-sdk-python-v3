@@ -38,9 +38,9 @@ class InstanceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param kind: API类型，固定值“Addon”，该值不可修改。
+        :param kind: API类型，固定值“Addon”，该值不可修改，该字段传入无效。
         :type kind: str
-        :param api_version: API版本，固定值“v3”，该值不可修改。
+        :param api_version: API版本，固定值“v3”，该值不可修改，该字段传入无效。
         :type api_version: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -65,7 +65,7 @@ class InstanceRequest:
     def kind(self):
         """Gets the kind of this InstanceRequest.
 
-        API类型，固定值“Addon”，该值不可修改。
+        API类型，固定值“Addon”，该值不可修改，该字段传入无效。
 
         :return: The kind of this InstanceRequest.
         :rtype: str
@@ -76,7 +76,7 @@ class InstanceRequest:
     def kind(self, kind):
         """Sets the kind of this InstanceRequest.
 
-        API类型，固定值“Addon”，该值不可修改。
+        API类型，固定值“Addon”，该值不可修改，该字段传入无效。
 
         :param kind: The kind of this InstanceRequest.
         :type kind: str
@@ -87,7 +87,7 @@ class InstanceRequest:
     def api_version(self):
         """Gets the api_version of this InstanceRequest.
 
-        API版本，固定值“v3”，该值不可修改。
+        API版本，固定值“v3”，该值不可修改，该字段传入无效。
 
         :return: The api_version of this InstanceRequest.
         :rtype: str
@@ -98,7 +98,7 @@ class InstanceRequest:
     def api_version(self, api_version):
         """Sets the api_version of this InstanceRequest.
 
-        API版本，固定值“v3”，该值不可修改。
+        API版本，固定值“v3”，该值不可修改，该字段传入无效。
 
         :param api_version: The api_version of this InstanceRequest.
         :type api_version: str

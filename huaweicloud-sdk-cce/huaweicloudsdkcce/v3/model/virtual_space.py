@@ -38,9 +38,9 @@ class VirtualSpace:
 
         The model defined in huaweicloud sdk
 
-        :param name: virtualSpace的名称，当前仅支持三种类型：kubernetes、runtime、user。kubernetes：k8s空间配置，需配置lvmConfig；runtime：运行时空间配置，需配置runtimeConfig；user：用户空间配置，需配置lvmConfig
+        :param name: virtualSpace的名称，当前仅支持三种类型：kubernetes、runtime、user。 - kubernetes：k8s空间配置，需配置lvmConfig； - runtime：运行时空间配置，需配置runtimeConfig； - user：用户空间配置，需配置lvmConfig 
         :type name: str
-        :param size: virtualSpace的大小，仅支持整数百分比。例如：90%。 需要注意：一个group中所有virtualSpace的百分比之和不得超过100%
+        :param size: virtualSpace的大小，仅支持整数百分比。例如：90%。 &gt;一个group中所有virtualSpace的百分比之和不得超过100% 
         :type size: str
         :param lvm_config: 
         :type lvm_config: :class:`huaweicloudsdkcce.v3.LVMConfig`
@@ -67,7 +67,7 @@ class VirtualSpace:
     def name(self):
         """Gets the name of this VirtualSpace.
 
-        virtualSpace的名称，当前仅支持三种类型：kubernetes、runtime、user。kubernetes：k8s空间配置，需配置lvmConfig；runtime：运行时空间配置，需配置runtimeConfig；user：用户空间配置，需配置lvmConfig
+        virtualSpace的名称，当前仅支持三种类型：kubernetes、runtime、user。 - kubernetes：k8s空间配置，需配置lvmConfig； - runtime：运行时空间配置，需配置runtimeConfig； - user：用户空间配置，需配置lvmConfig 
 
         :return: The name of this VirtualSpace.
         :rtype: str
@@ -78,7 +78,7 @@ class VirtualSpace:
     def name(self, name):
         """Sets the name of this VirtualSpace.
 
-        virtualSpace的名称，当前仅支持三种类型：kubernetes、runtime、user。kubernetes：k8s空间配置，需配置lvmConfig；runtime：运行时空间配置，需配置runtimeConfig；user：用户空间配置，需配置lvmConfig
+        virtualSpace的名称，当前仅支持三种类型：kubernetes、runtime、user。 - kubernetes：k8s空间配置，需配置lvmConfig； - runtime：运行时空间配置，需配置runtimeConfig； - user：用户空间配置，需配置lvmConfig 
 
         :param name: The name of this VirtualSpace.
         :type name: str
@@ -89,7 +89,7 @@ class VirtualSpace:
     def size(self):
         """Gets the size of this VirtualSpace.
 
-        virtualSpace的大小，仅支持整数百分比。例如：90%。 需要注意：一个group中所有virtualSpace的百分比之和不得超过100%
+        virtualSpace的大小，仅支持整数百分比。例如：90%。 >一个group中所有virtualSpace的百分比之和不得超过100% 
 
         :return: The size of this VirtualSpace.
         :rtype: str
@@ -100,7 +100,7 @@ class VirtualSpace:
     def size(self, size):
         """Sets the size of this VirtualSpace.
 
-        virtualSpace的大小，仅支持整数百分比。例如：90%。 需要注意：一个group中所有virtualSpace的百分比之和不得超过100%
+        virtualSpace的大小，仅支持整数百分比。例如：90%。 >一个group中所有virtualSpace的百分比之和不得超过100% 
 
         :param size: The size of this VirtualSpace.
         :type size: str

@@ -38,11 +38,11 @@ class TextTranslationReq:
 
         The model defined in huaweicloud sdk
 
-        :param text: 待翻译文本，仅支持utf-8编码，长度不超过5000字符。
+        :param text: 待翻译文本，仅支持utf-8编码，长度不超过2000字符。
         :type text: str
-        :param _from: 翻译原语言，具体取值见支持的语言列表: zh    中文 en    英文 ru    俄语 ja    日文 de    德文 fr    法文 es    西班牙文 ko    韩语 auto  自动检测输入语种并翻译成目标语种，您需要指定目标语种。
+        :param _from: 翻译原语言，具体取值见支持的语言列表: 阿拉伯语 ar 德语 de 俄语 ru 法语 fr 韩语 ko 葡萄牙语 pt 日语 ja 泰语 th 土耳其语 tr 西班牙语 es 英语 en 越南语 vi 中文（简体） zh 中文（繁体） zh-tw 自动检测输入语种并翻译成目标语种，您需要指定目标语种。 auto
         :type _from: str
-        :param to: 翻译原语言，具体取值见支持的语言列表: zh    中文 en    英文 ru    俄语 ja    日文 de    德文 fr    法文 es    西班牙文 ko    韩语
+        :param to: 翻译目标语言，具体取值见支持的语言列表: 阿拉伯语 ar 德语 de 俄语 ru 法语 fr 韩语 ko 葡萄牙语 pt 日语 ja 泰语 th 土耳其语 tr 西班牙语 es 英语 en 越南语 vi 中文（简体） zh 中文（繁体） zh-tw
         :type to: str
         :param scene: 默认为“common”，当前只有通用场景
         :type scene: str
@@ -66,7 +66,7 @@ class TextTranslationReq:
     def text(self):
         """Gets the text of this TextTranslationReq.
 
-        待翻译文本，仅支持utf-8编码，长度不超过5000字符。
+        待翻译文本，仅支持utf-8编码，长度不超过2000字符。
 
         :return: The text of this TextTranslationReq.
         :rtype: str
@@ -77,7 +77,7 @@ class TextTranslationReq:
     def text(self, text):
         """Sets the text of this TextTranslationReq.
 
-        待翻译文本，仅支持utf-8编码，长度不超过5000字符。
+        待翻译文本，仅支持utf-8编码，长度不超过2000字符。
 
         :param text: The text of this TextTranslationReq.
         :type text: str
@@ -88,7 +88,7 @@ class TextTranslationReq:
     def _from(self):
         """Gets the _from of this TextTranslationReq.
 
-        翻译原语言，具体取值见支持的语言列表: zh    中文 en    英文 ru    俄语 ja    日文 de    德文 fr    法文 es    西班牙文 ko    韩语 auto  自动检测输入语种并翻译成目标语种，您需要指定目标语种。
+        翻译原语言，具体取值见支持的语言列表: 阿拉伯语 ar 德语 de 俄语 ru 法语 fr 韩语 ko 葡萄牙语 pt 日语 ja 泰语 th 土耳其语 tr 西班牙语 es 英语 en 越南语 vi 中文（简体） zh 中文（繁体） zh-tw 自动检测输入语种并翻译成目标语种，您需要指定目标语种。 auto
 
         :return: The _from of this TextTranslationReq.
         :rtype: str
@@ -99,7 +99,7 @@ class TextTranslationReq:
     def _from(self, _from):
         """Sets the _from of this TextTranslationReq.
 
-        翻译原语言，具体取值见支持的语言列表: zh    中文 en    英文 ru    俄语 ja    日文 de    德文 fr    法文 es    西班牙文 ko    韩语 auto  自动检测输入语种并翻译成目标语种，您需要指定目标语种。
+        翻译原语言，具体取值见支持的语言列表: 阿拉伯语 ar 德语 de 俄语 ru 法语 fr 韩语 ko 葡萄牙语 pt 日语 ja 泰语 th 土耳其语 tr 西班牙语 es 英语 en 越南语 vi 中文（简体） zh 中文（繁体） zh-tw 自动检测输入语种并翻译成目标语种，您需要指定目标语种。 auto
 
         :param _from: The _from of this TextTranslationReq.
         :type _from: str
@@ -110,7 +110,7 @@ class TextTranslationReq:
     def to(self):
         """Gets the to of this TextTranslationReq.
 
-        翻译原语言，具体取值见支持的语言列表: zh    中文 en    英文 ru    俄语 ja    日文 de    德文 fr    法文 es    西班牙文 ko    韩语
+        翻译目标语言，具体取值见支持的语言列表: 阿拉伯语 ar 德语 de 俄语 ru 法语 fr 韩语 ko 葡萄牙语 pt 日语 ja 泰语 th 土耳其语 tr 西班牙语 es 英语 en 越南语 vi 中文（简体） zh 中文（繁体） zh-tw
 
         :return: The to of this TextTranslationReq.
         :rtype: str
@@ -121,7 +121,7 @@ class TextTranslationReq:
     def to(self, to):
         """Sets the to of this TextTranslationReq.
 
-        翻译原语言，具体取值见支持的语言列表: zh    中文 en    英文 ru    俄语 ja    日文 de    德文 fr    法文 es    西班牙文 ko    韩语
+        翻译目标语言，具体取值见支持的语言列表: 阿拉伯语 ar 德语 de 俄语 ru 法语 fr 韩语 ko 葡萄牙语 pt 日语 ja 泰语 th 土耳其语 tr 西班牙语 es 英语 en 越南语 vi 中文（简体） zh 中文（繁体） zh-tw
 
         :param to: The to of this TextTranslationReq.
         :type to: str

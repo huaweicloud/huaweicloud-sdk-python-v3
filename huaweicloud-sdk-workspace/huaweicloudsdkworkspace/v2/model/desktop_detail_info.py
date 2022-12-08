@@ -38,6 +38,8 @@ class DesktopDetailInfo:
         'data_volumes': 'list[VolumeDetail]',
         'user_group': 'str',
         'availability_zone': 'str',
+        'site_type': 'str',
+        'site_name': 'str',
         'product': 'ProductDetailInfo',
         'ou_name': 'str',
         'os_version': 'str',
@@ -65,6 +67,8 @@ class DesktopDetailInfo:
         'data_volumes': 'data_volumes',
         'user_group': 'user_group',
         'availability_zone': 'availability_zone',
+        'site_type': 'site_type',
+        'site_name': 'site_name',
         'product': 'product',
         'ou_name': 'ou_name',
         'os_version': 'os_version',
@@ -73,7 +77,7 @@ class DesktopDetailInfo:
         'tags': 'tags'
     }
 
-    def __init__(self, desktop_id=None, computer_name=None, addresses=None, ip_addresses=None, desktop_type=None, metadata=None, flavor=None, status=None, task_status=None, created=None, security_groups=None, login_status=None, user_name=None, product_id=None, root_volume=None, data_volumes=None, user_group=None, availability_zone=None, product=None, ou_name=None, os_version=None, sid=None, order_id=None, tags=None):
+    def __init__(self, desktop_id=None, computer_name=None, addresses=None, ip_addresses=None, desktop_type=None, metadata=None, flavor=None, status=None, task_status=None, created=None, security_groups=None, login_status=None, user_name=None, product_id=None, root_volume=None, data_volumes=None, user_group=None, availability_zone=None, site_type=None, site_name=None, product=None, ou_name=None, os_version=None, sid=None, order_id=None, tags=None):
         """DesktopDetailInfo
 
         The model defined in huaweicloud sdk
@@ -114,6 +118,10 @@ class DesktopDetailInfo:
         :type user_group: str
         :param availability_zone: 可用分区。
         :type availability_zone: str
+        :param site_type: 站点类型
+        :type site_type: str
+        :param site_name: 站点名字
+        :type site_name: str
         :param product: 
         :type product: :class:`huaweicloudsdkworkspace.v2.ProductDetailInfo`
         :param ou_name: 创建桌面时加入的OU名称。
@@ -148,6 +156,8 @@ class DesktopDetailInfo:
         self._data_volumes = None
         self._user_group = None
         self._availability_zone = None
+        self._site_type = None
+        self._site_name = None
         self._product = None
         self._ou_name = None
         self._os_version = None
@@ -192,6 +202,10 @@ class DesktopDetailInfo:
             self.user_group = user_group
         if availability_zone is not None:
             self.availability_zone = availability_zone
+        if site_type is not None:
+            self.site_type = site_type
+        if site_name is not None:
+            self.site_name = site_name
         if product is not None:
             self.product = product
         if ou_name is not None:
@@ -592,6 +606,50 @@ class DesktopDetailInfo:
         :type availability_zone: str
         """
         self._availability_zone = availability_zone
+
+    @property
+    def site_type(self):
+        """Gets the site_type of this DesktopDetailInfo.
+
+        站点类型
+
+        :return: The site_type of this DesktopDetailInfo.
+        :rtype: str
+        """
+        return self._site_type
+
+    @site_type.setter
+    def site_type(self, site_type):
+        """Sets the site_type of this DesktopDetailInfo.
+
+        站点类型
+
+        :param site_type: The site_type of this DesktopDetailInfo.
+        :type site_type: str
+        """
+        self._site_type = site_type
+
+    @property
+    def site_name(self):
+        """Gets the site_name of this DesktopDetailInfo.
+
+        站点名字
+
+        :return: The site_name of this DesktopDetailInfo.
+        :rtype: str
+        """
+        return self._site_name
+
+    @site_name.setter
+    def site_name(self, site_name):
+        """Sets the site_name of this DesktopDetailInfo.
+
+        站点名字
+
+        :param site_name: The site_name of this DesktopDetailInfo.
+        :type site_name: str
+        """
+        self._site_name = site_name
 
     @property
     def product(self):

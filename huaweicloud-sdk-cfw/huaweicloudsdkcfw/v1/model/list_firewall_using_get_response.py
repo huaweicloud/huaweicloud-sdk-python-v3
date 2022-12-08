@@ -20,7 +20,7 @@ class ListFirewallUsingGetResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'GetFirewallInstanceResponseData'
+        'data': 'GetFirewallInstanceData'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class ListFirewallUsingGetResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param data: 
-        :type data: :class:`huaweicloudsdkcfw.v1.GetFirewallInstanceResponseData`
+        :type data: :class:`huaweicloudsdkcfw.v1.GetFirewallInstanceData`
         """
         
         super(ListFirewallUsingGetResponse, self).__init__()
@@ -49,7 +49,7 @@ class ListFirewallUsingGetResponse(SdkResponse):
         """Gets the data of this ListFirewallUsingGetResponse.
 
         :return: The data of this ListFirewallUsingGetResponse.
-        :rtype: :class:`huaweicloudsdkcfw.v1.GetFirewallInstanceResponseData`
+        :rtype: :class:`huaweicloudsdkcfw.v1.GetFirewallInstanceData`
         """
         return self._data
 
@@ -58,7 +58,7 @@ class ListFirewallUsingGetResponse(SdkResponse):
         """Sets the data of this ListFirewallUsingGetResponse.
 
         :param data: The data of this ListFirewallUsingGetResponse.
-        :type data: :class:`huaweicloudsdkcfw.v1.GetFirewallInstanceResponseData`
+        :type data: :class:`huaweicloudsdkcfw.v1.GetFirewallInstanceData`
         """
         self._data = data
 

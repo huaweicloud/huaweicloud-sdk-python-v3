@@ -33,6 +33,9 @@ from huaweicloudsdkga.v1.model.create_listener_option import CreateListenerOptio
 from huaweicloudsdkga.v1.model.create_listener_request import CreateListenerRequest
 from huaweicloudsdkga.v1.model.create_listener_request_body import CreateListenerRequestBody
 from huaweicloudsdkga.v1.model.create_listener_response import CreateListenerResponse
+from huaweicloudsdkga.v1.model.create_tags_request import CreateTagsRequest
+from huaweicloudsdkga.v1.model.create_tags_request_body import CreateTagsRequestBody
+from huaweicloudsdkga.v1.model.create_tags_response import CreateTagsResponse
 from huaweicloudsdkga.v1.model.delete_accelerator_request import DeleteAcceleratorRequest
 from huaweicloudsdkga.v1.model.delete_accelerator_response import DeleteAcceleratorResponse
 from huaweicloudsdkga.v1.model.delete_endpoint_group_request import DeleteEndpointGroupRequest
@@ -43,6 +46,10 @@ from huaweicloudsdkga.v1.model.delete_health_check_request import DeleteHealthCh
 from huaweicloudsdkga.v1.model.delete_health_check_response import DeleteHealthCheckResponse
 from huaweicloudsdkga.v1.model.delete_listener_request import DeleteListenerRequest
 from huaweicloudsdkga.v1.model.delete_listener_response import DeleteListenerResponse
+from huaweicloudsdkga.v1.model.delete_tags_request import DeleteTagsRequest
+from huaweicloudsdkga.v1.model.delete_tags_request_body import DeleteTagsRequestBody
+from huaweicloudsdkga.v1.model.delete_tags_response import DeleteTagsResponse
+from huaweicloudsdkga.v1.model.deleting_resource_tag import DeletingResourceTag
 from huaweicloudsdkga.v1.model.endpoint_detail import EndpointDetail
 from huaweicloudsdkga.v1.model.endpoint_group_detail import EndpointGroupDetail
 from huaweicloudsdkga.v1.model.endpoint_type import EndpointType
@@ -67,6 +74,7 @@ from huaweicloudsdkga.v1.model.listener_protocol import ListenerProtocol
 from huaweicloudsdkga.v1.model.page_info import PageInfo
 from huaweicloudsdkga.v1.model.port_range import PortRange
 from huaweicloudsdkga.v1.model.resource_tag import ResourceTag
+from huaweicloudsdkga.v1.model.resource_type import ResourceType
 from huaweicloudsdkga.v1.model.show_accelerator_request import ShowAcceleratorRequest
 from huaweicloudsdkga.v1.model.show_accelerator_response import ShowAcceleratorResponse
 from huaweicloudsdkga.v1.model.show_endpoint_group_request import ShowEndpointGroupRequest
@@ -77,6 +85,8 @@ from huaweicloudsdkga.v1.model.show_health_check_request import ShowHealthCheckR
 from huaweicloudsdkga.v1.model.show_health_check_response import ShowHealthCheckResponse
 from huaweicloudsdkga.v1.model.show_listener_request import ShowListenerRequest
 from huaweicloudsdkga.v1.model.show_listener_response import ShowListenerResponse
+from huaweicloudsdkga.v1.model.show_resource_tags_request import ShowResourceTagsRequest
+from huaweicloudsdkga.v1.model.show_resource_tags_response import ShowResourceTagsResponse
 from huaweicloudsdkga.v1.model.update_accelerator_option import UpdateAcceleratorOption
 from huaweicloudsdkga.v1.model.update_accelerator_request import UpdateAcceleratorRequest
 from huaweicloudsdkga.v1.model.update_accelerator_request_body import UpdateAcceleratorRequestBody

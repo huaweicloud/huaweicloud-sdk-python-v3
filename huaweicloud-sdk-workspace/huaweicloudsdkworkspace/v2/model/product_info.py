@@ -116,7 +116,7 @@ class ProductInfo:
         :type status: str
         :param sub_product_list: 专属主机的子产品。
         :type sub_product_list: list[str]
-        :param package_type: 套餐系列。
+        :param package_type: 套餐类型。 - ultimate：尊享版 - enterprise：企业版 - general: 通用办公版 - workstation: 云工作站 - dedicated: 专属办公版 - solver: 解算版 - agile: 敏捷办公版
         :type package_type: str
         """
         
@@ -657,7 +657,7 @@ class ProductInfo:
     def package_type(self):
         """Gets the package_type of this ProductInfo.
 
-        套餐系列。
+        套餐类型。 - ultimate：尊享版 - enterprise：企业版 - general: 通用办公版 - workstation: 云工作站 - dedicated: 专属办公版 - solver: 解算版 - agile: 敏捷办公版
 
         :return: The package_type of this ProductInfo.
         :rtype: str
@@ -668,7 +668,7 @@ class ProductInfo:
     def package_type(self, package_type):
         """Sets the package_type of this ProductInfo.
 
-        套餐系列。
+        套餐类型。 - ultimate：尊享版 - enterprise：企业版 - general: 通用办公版 - workstation: 云工作站 - dedicated: 专属办公版 - solver: 解算版 - agile: 敏捷办公版
 
         :param package_type: The package_type of this ProductInfo.
         :type package_type: str

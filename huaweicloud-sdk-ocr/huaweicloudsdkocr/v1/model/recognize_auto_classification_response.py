@@ -20,7 +20,7 @@ class RecognizeAutoClassificationResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'AutoClassificationResult'
+        'result': 'list[AutoClassificationResult]'
     }
 
     attribute_map = {
@@ -32,8 +32,8 @@ class RecognizeAutoClassificationResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 
-        :type result: :class:`huaweicloudsdkocr.v1.AutoClassificationResult`
+        :param result: 调用成功时表示调用结果。  调用失败时无此字段。 
+        :type result: list[:class:`huaweicloudsdkocr.v1.AutoClassificationResult`]
         """
         
         super(RecognizeAutoClassificationResponse, self).__init__()
@@ -48,8 +48,10 @@ class RecognizeAutoClassificationResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeAutoClassificationResponse.
 
+        调用成功时表示调用结果。  调用失败时无此字段。 
+
         :return: The result of this RecognizeAutoClassificationResponse.
-        :rtype: :class:`huaweicloudsdkocr.v1.AutoClassificationResult`
+        :rtype: list[:class:`huaweicloudsdkocr.v1.AutoClassificationResult`]
         """
         return self._result
 
@@ -57,8 +59,10 @@ class RecognizeAutoClassificationResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this RecognizeAutoClassificationResponse.
 
+        调用成功时表示调用结果。  调用失败时无此字段。 
+
         :param result: The result of this RecognizeAutoClassificationResponse.
-        :type result: :class:`huaweicloudsdkocr.v1.AutoClassificationResult`
+        :type result: list[:class:`huaweicloudsdkocr.v1.AutoClassificationResult`]
         """
         self._result = result
 

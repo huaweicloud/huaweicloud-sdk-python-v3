@@ -20,29 +20,36 @@ class ListImagesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'images': 'list[ImageInfo]'
+        'images': 'list[ImageInfo]',
+        'total_count': 'int'
     }
 
     attribute_map = {
-        'images': 'images'
+        'images': 'images',
+        'total_count': 'total_count'
     }
 
-    def __init__(self, images=None):
+    def __init__(self, images=None, total_count=None):
         """ListImagesResponse
 
         The model defined in huaweicloud sdk
 
         :param images: 云桌面支持的产品镜像列表。
         :type images: list[:class:`huaweicloudsdkworkspace.v2.ImageInfo`]
+        :param total_count: 对象总数。
+        :type total_count: int
         """
         
         super(ListImagesResponse, self).__init__()
 
         self._images = None
+        self._total_count = None
         self.discriminator = None
 
         if images is not None:
             self.images = images
+        if total_count is not None:
+            self.total_count = total_count
 
     @property
     def images(self):
@@ -65,6 +72,28 @@ class ListImagesResponse(SdkResponse):
         :type images: list[:class:`huaweicloudsdkworkspace.v2.ImageInfo`]
         """
         self._images = images
+
+    @property
+    def total_count(self):
+        """Gets the total_count of this ListImagesResponse.
+
+        对象总数。
+
+        :return: The total_count of this ListImagesResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        """Sets the total_count of this ListImagesResponse.
+
+        对象总数。
+
+        :param total_count: The total_count of this ListImagesResponse.
+        :type total_count: int
+        """
+        self._total_count = total_count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

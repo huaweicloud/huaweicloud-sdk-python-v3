@@ -21,7 +21,7 @@ class ListEpsQuotasResponse(SdkResponse):
 
     openapi_types = {
         'total_count': 'int',
-        'quotas': 'list[NoSqlQueryEpsQuotaInfoList]'
+        'quotas': 'list[NoSqlQueryEpsQuotaInfo]'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class ListEpsQuotasResponse(SdkResponse):
         :param total_count: 总记录数。
         :type total_count: int
         :param quotas: 企业项目配额信息列表。
-        :type quotas: list[:class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlQueryEpsQuotaInfoList`]
+        :type quotas: list[:class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlQueryEpsQuotaInfo`]
         """
         
         super(ListEpsQuotasResponse, self).__init__()
@@ -80,7 +80,7 @@ class ListEpsQuotasResponse(SdkResponse):
         企业项目配额信息列表。
 
         :return: The quotas of this ListEpsQuotasResponse.
-        :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlQueryEpsQuotaInfoList`]
+        :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlQueryEpsQuotaInfo`]
         """
         return self._quotas
 
@@ -91,7 +91,7 @@ class ListEpsQuotasResponse(SdkResponse):
         企业项目配额信息列表。
 
         :param quotas: The quotas of this ListEpsQuotasResponse.
-        :type quotas: list[:class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlQueryEpsQuotaInfoList`]
+        :type quotas: list[:class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlQueryEpsQuotaInfo`]
         """
         self._quotas = quotas
 

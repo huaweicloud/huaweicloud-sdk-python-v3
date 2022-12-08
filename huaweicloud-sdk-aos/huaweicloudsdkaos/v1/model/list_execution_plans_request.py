@@ -22,18 +22,16 @@ class ListExecutionPlansRequest:
     openapi_types = {
         'client_request_id': 'str',
         'stack_name': 'str',
-        'executor': 'str',
         'stack_id': 'str'
     }
 
     attribute_map = {
         'client_request_id': 'Client-Request-Id',
         'stack_name': 'stack_name',
-        'executor': 'executor',
         'stack_id': 'stack_id'
     }
 
-    def __init__(self, client_request_id=None, stack_name=None, executor=None, stack_id=None):
+    def __init__(self, client_request_id=None, stack_name=None, stack_id=None):
         """ListExecutionPlansRequest
 
         The model defined in huaweicloud sdk
@@ -42,9 +40,7 @@ class ListExecutionPlansRequest:
         :type client_request_id: str
         :param stack_name: 用户希望操作的资源栈名
         :type stack_name: str
-        :param executor: 执行操作者的名字，将用做未来的审计工作。
-        :type executor: str
-        :param stack_id: 用户希望描述的栈的Id。若stack_name和stack_id同时存在，则IaC会检查是否两个匹配，否则返回400
+        :param stack_id: 用户希望描述的栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
         :type stack_id: str
         """
         
@@ -52,14 +48,11 @@ class ListExecutionPlansRequest:
 
         self._client_request_id = None
         self._stack_name = None
-        self._executor = None
         self._stack_id = None
         self.discriminator = None
 
         self.client_request_id = client_request_id
         self.stack_name = stack_name
-        if executor is not None:
-            self.executor = executor
         if stack_id is not None:
             self.stack_id = stack_id
 
@@ -108,32 +101,10 @@ class ListExecutionPlansRequest:
         self._stack_name = stack_name
 
     @property
-    def executor(self):
-        """Gets the executor of this ListExecutionPlansRequest.
-
-        执行操作者的名字，将用做未来的审计工作。
-
-        :return: The executor of this ListExecutionPlansRequest.
-        :rtype: str
-        """
-        return self._executor
-
-    @executor.setter
-    def executor(self, executor):
-        """Sets the executor of this ListExecutionPlansRequest.
-
-        执行操作者的名字，将用做未来的审计工作。
-
-        :param executor: The executor of this ListExecutionPlansRequest.
-        :type executor: str
-        """
-        self._executor = executor
-
-    @property
     def stack_id(self):
         """Gets the stack_id of this ListExecutionPlansRequest.
 
-        用户希望描述的栈的Id。若stack_name和stack_id同时存在，则IaC会检查是否两个匹配，否则返回400
+        用户希望描述的栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
 
         :return: The stack_id of this ListExecutionPlansRequest.
         :rtype: str
@@ -144,7 +115,7 @@ class ListExecutionPlansRequest:
     def stack_id(self, stack_id):
         """Sets the stack_id of this ListExecutionPlansRequest.
 
-        用户希望描述的栈的Id。若stack_name和stack_id同时存在，则IaC会检查是否两个匹配，否则返回400
+        用户希望描述的栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
 
         :param stack_id: The stack_id of this ListExecutionPlansRequest.
         :type stack_id: str

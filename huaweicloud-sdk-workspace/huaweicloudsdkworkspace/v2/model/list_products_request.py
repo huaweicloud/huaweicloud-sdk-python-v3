@@ -25,7 +25,9 @@ class ListProductsRequest:
         'os_type': 'str',
         'charge_mode': 'str',
         'architecture': 'str',
-        'package_type': 'str'
+        'package_type': 'str',
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
@@ -34,10 +36,12 @@ class ListProductsRequest:
         'os_type': 'os_type',
         'charge_mode': 'charge_mode',
         'architecture': 'architecture',
-        'package_type': 'package_type'
+        'package_type': 'package_type',
+        'limit': 'limit',
+        'offset': 'offset'
     }
 
-    def __init__(self, product_id=None, availability_zone=None, os_type=None, charge_mode=None, architecture=None, package_type=None):
+    def __init__(self, product_id=None, availability_zone=None, os_type=None, charge_mode=None, architecture=None, package_type=None, limit=None, offset=None):
         """ListProductsRequest
 
         The model defined in huaweicloud sdk
@@ -54,6 +58,10 @@ class ListProductsRequest:
         :type architecture: str
         :param package_type: 套餐系列。
         :type package_type: str
+        :param limit: 每页数量，范围0-100，默认100。
+        :type limit: int
+        :param offset: 偏移量，默认0。
+        :type offset: int
         """
         
         
@@ -64,6 +72,8 @@ class ListProductsRequest:
         self._charge_mode = None
         self._architecture = None
         self._package_type = None
+        self._limit = None
+        self._offset = None
         self.discriminator = None
 
         if product_id is not None:
@@ -78,6 +88,10 @@ class ListProductsRequest:
             self.architecture = architecture
         if package_type is not None:
             self.package_type = package_type
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
 
     @property
     def product_id(self):
@@ -210,6 +224,50 @@ class ListProductsRequest:
         :type package_type: str
         """
         self._package_type = package_type
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListProductsRequest.
+
+        每页数量，范围0-100，默认100。
+
+        :return: The limit of this ListProductsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListProductsRequest.
+
+        每页数量，范围0-100，默认100。
+
+        :param limit: The limit of this ListProductsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListProductsRequest.
+
+        偏移量，默认0。
+
+        :return: The offset of this ListProductsRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListProductsRequest.
+
+        偏移量，默认0。
+
+        :param offset: The offset of this ListProductsRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     def to_dict(self):
         """Returns the model properties as a dict"""

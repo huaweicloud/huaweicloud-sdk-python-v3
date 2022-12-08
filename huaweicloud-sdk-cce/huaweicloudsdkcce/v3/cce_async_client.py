@@ -229,9 +229,10 @@ class CceAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def create_cloud_persistent_volume_claims_async(self, request):
-        """创建PVC
+        """创建PVC（待废弃）
 
-        该API用于在指定的Namespace下通过云存储服务中的云存储（EVS、SFS、OBS）去创建PVC（PersistentVolumeClaim）。
+        该API用于在指定的Namespace下通过云存储服务中的云存储（EVS、SFS、OBS）去创建PVC（PersistentVolumeClaim）。该API待废弃，请使用Kubernetes PVC相关接口。
+        
         
         &gt;存储管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。如果使用https://Endpoint/uri，则必须指定请求header中的X-Cluster-ID参数。
         
@@ -300,8 +301,9 @@ class CceAsyncClient(Client):
 
         该API用于创建一个空集群（即只有控制节点Master，没有工作节点Node）。请在调用本接口完成集群创建之后，通过[创建节点](cce_02_0242.xml)添加节点。
         
+        
         &gt;   - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
-        &gt;   - 调用该接口创建集群时，默认不安装ICAgent，若需安装ICAgent，可在请求Body参数的annotations中加入\&quot;cluster.install.addons.external/install\&quot;: \&quot;[{\&quot;addonTemplateName\&quot;:\&quot;icagent\&quot;}]\&quot;的集群注解，将在创建集群时自动安装ICAgent。ICAgent是应用性能管理APM的采集代理，运行在应用所在的服务器上，用于实时采集探针所获取的数据，安装ICAgent是使用应用性能管理APM的前提。
+        &gt;   - 调用该接口创建集群时，默认不安装ICAgent，若需安装ICAgent，可在请求Body参数的annotations中加入\&quot;cluster.install.addons.external/install\&quot;:\&quot;[{\&quot;addonTemplateName\&quot;:\&quot;icagent\&quot;}]\&quot;的集群注解，将在创建集群时自动安装ICAgent。ICAgent是应用性能管理APM的采集代理，运行在应用所在的服务器上，用于实时采集探针所获取的数据，安装ICAgent是使用应用性能管理APM的前提。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -492,7 +494,11 @@ class CceAsyncClient(Client):
     def create_node_pool_async(self, request):
         """创建节点池
 
-        该API用于在指定集群下创建节点池。仅支持集群在处于可用、扩容、缩容状态时调用。1.21版本的集群创建节点池时支持绑定安全组，每个节点池最多绑定五个安全组。更新节点池的安全组后，只针对新创的pod生效，建议驱逐节点上原有的pod。
+        该API用于在指定集群下创建节点池。仅支持集群在处于可用、扩容、缩容状态时调用。
+        
+        1.21版本的集群创建节点池时支持绑定安全组，每个节点池最多绑定五个安全组。
+        
+        更新节点池的安全组后，只针对新创的pod生效，建议驱逐节点上原有的pod。
         
         &gt; 若无集群，请先[创建集群](cce_02_0236.xml)。
         &gt; 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径
@@ -622,7 +628,6 @@ class CceAsyncClient(Client):
         """删除PVC（待废弃）
 
         该API用于删除指定Namespace下的PVC（PersistentVolumeClaim）对象，并可以选择保留后端的云存储。该API待废弃，请使用Kubernetes PVC相关接口。
-        
         &gt;存储管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。如果使用https://Endpoint/uri，则必须指定请求header中的X-Cluster-ID参数。
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2174,7 +2179,9 @@ class CceAsyncClient(Client):
 
         该API用于更新指定的节点池。仅支持集群在处于可用、扩容、缩容状态时调用。
         
+        
         &gt; - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径
+        
         &gt; - 当前仅支持更新节点池名称，spec下的initialNodeCount，k8sTags，taints，login，userTags与节点池的扩缩容配置相关字段。若此次更新未设置相关值，默认更新为初始值。
         
         Please refer to HUAWEI cloud API Explorer for details.

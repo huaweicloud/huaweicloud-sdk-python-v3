@@ -20,72 +20,105 @@ class ShowWorkflowExecutionForPageResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'pager': 'Pager',
-        'his_records': 'FlowExecutionBriefV2'
+        'total': 'int',
+        'size': 'int',
+        'executions': 'FlowExecutionBriefV2'
     }
 
     attribute_map = {
-        'pager': 'pager',
-        'his_records': 'hisRecords'
+        'total': 'total',
+        'size': 'size',
+        'executions': 'executions'
     }
 
-    def __init__(self, pager=None, his_records=None):
+    def __init__(self, total=None, size=None, executions=None):
         """ShowWorkflowExecutionForPageResponse
 
         The model defined in huaweicloud sdk
 
-        :param pager: 
-        :type pager: :class:`huaweicloudsdkfunctiongraph.v2.Pager`
-        :param his_records: 
-        :type his_records: :class:`huaweicloudsdkfunctiongraph.v2.FlowExecutionBriefV2`
+        :param total: 返回所有满足条件的对象个数
+        :type total: int
+        :param size: 返回对象的大小
+        :type size: int
+        :param executions: 
+        :type executions: :class:`huaweicloudsdkfunctiongraph.v2.FlowExecutionBriefV2`
         """
         
         super(ShowWorkflowExecutionForPageResponse, self).__init__()
 
-        self._pager = None
-        self._his_records = None
+        self._total = None
+        self._size = None
+        self._executions = None
         self.discriminator = None
 
-        if pager is not None:
-            self.pager = pager
-        if his_records is not None:
-            self.his_records = his_records
+        if total is not None:
+            self.total = total
+        if size is not None:
+            self.size = size
+        if executions is not None:
+            self.executions = executions
 
     @property
-    def pager(self):
-        """Gets the pager of this ShowWorkflowExecutionForPageResponse.
+    def total(self):
+        """Gets the total of this ShowWorkflowExecutionForPageResponse.
 
-        :return: The pager of this ShowWorkflowExecutionForPageResponse.
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.Pager`
+        返回所有满足条件的对象个数
+
+        :return: The total of this ShowWorkflowExecutionForPageResponse.
+        :rtype: int
         """
-        return self._pager
+        return self._total
 
-    @pager.setter
-    def pager(self, pager):
-        """Sets the pager of this ShowWorkflowExecutionForPageResponse.
+    @total.setter
+    def total(self, total):
+        """Sets the total of this ShowWorkflowExecutionForPageResponse.
 
-        :param pager: The pager of this ShowWorkflowExecutionForPageResponse.
-        :type pager: :class:`huaweicloudsdkfunctiongraph.v2.Pager`
+        返回所有满足条件的对象个数
+
+        :param total: The total of this ShowWorkflowExecutionForPageResponse.
+        :type total: int
         """
-        self._pager = pager
+        self._total = total
 
     @property
-    def his_records(self):
-        """Gets the his_records of this ShowWorkflowExecutionForPageResponse.
+    def size(self):
+        """Gets the size of this ShowWorkflowExecutionForPageResponse.
 
-        :return: The his_records of this ShowWorkflowExecutionForPageResponse.
+        返回对象的大小
+
+        :return: The size of this ShowWorkflowExecutionForPageResponse.
+        :rtype: int
+        """
+        return self._size
+
+    @size.setter
+    def size(self, size):
+        """Sets the size of this ShowWorkflowExecutionForPageResponse.
+
+        返回对象的大小
+
+        :param size: The size of this ShowWorkflowExecutionForPageResponse.
+        :type size: int
+        """
+        self._size = size
+
+    @property
+    def executions(self):
+        """Gets the executions of this ShowWorkflowExecutionForPageResponse.
+
+        :return: The executions of this ShowWorkflowExecutionForPageResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FlowExecutionBriefV2`
         """
-        return self._his_records
+        return self._executions
 
-    @his_records.setter
-    def his_records(self, his_records):
-        """Sets the his_records of this ShowWorkflowExecutionForPageResponse.
+    @executions.setter
+    def executions(self, executions):
+        """Sets the executions of this ShowWorkflowExecutionForPageResponse.
 
-        :param his_records: The his_records of this ShowWorkflowExecutionForPageResponse.
-        :type his_records: :class:`huaweicloudsdkfunctiongraph.v2.FlowExecutionBriefV2`
+        :param executions: The executions of this ShowWorkflowExecutionForPageResponse.
+        :type executions: :class:`huaweicloudsdkfunctiongraph.v2.FlowExecutionBriefV2`
         """
-        self._his_records = his_records
+        self._executions = executions
 
     def to_dict(self):
         """Returns the model properties as a dict"""

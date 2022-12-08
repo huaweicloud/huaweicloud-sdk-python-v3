@@ -32,7 +32,7 @@ class ContinueRollbackStackResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param deployment_id: 继续回滚触发部署生成的唯一的deployment_id，由RF生成，通常为UUID
+        :param deployment_id: 继续回滚触发部署生成的唯一的deployment_id，由资源编排服务生成，通常为UUID
         :type deployment_id: str
         """
         
@@ -48,7 +48,7 @@ class ContinueRollbackStackResponse(SdkResponse):
     def deployment_id(self):
         """Gets the deployment_id of this ContinueRollbackStackResponse.
 
-        继续回滚触发部署生成的唯一的deployment_id，由RF生成，通常为UUID
+        继续回滚触发部署生成的唯一的deployment_id，由资源编排服务生成，通常为UUID
 
         :return: The deployment_id of this ContinueRollbackStackResponse.
         :rtype: str
@@ -59,7 +59,7 @@ class ContinueRollbackStackResponse(SdkResponse):
     def deployment_id(self, deployment_id):
         """Sets the deployment_id of this ContinueRollbackStackResponse.
 
-        继续回滚触发部署生成的唯一的deployment_id，由RF生成，通常为UUID
+        继续回滚触发部署生成的唯一的deployment_id，由资源编排服务生成，通常为UUID
 
         :param deployment_id: The deployment_id of this ContinueRollbackStackResponse.
         :type deployment_id: str

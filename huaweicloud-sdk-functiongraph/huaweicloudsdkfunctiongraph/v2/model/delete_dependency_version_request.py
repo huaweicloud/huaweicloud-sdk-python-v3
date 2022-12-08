@@ -36,7 +36,7 @@ class DeleteDependencyVersionRequest:
 
         :param depend_id: 依赖包的ID。
         :type depend_id: str
-        :param version: 依赖包的ID。
+        :param version: 依赖包版本号。
         :type version: str
         """
         
@@ -75,7 +75,7 @@ class DeleteDependencyVersionRequest:
     def version(self):
         """Gets the version of this DeleteDependencyVersionRequest.
 
-        依赖包的ID。
+        依赖包版本号。
 
         :return: The version of this DeleteDependencyVersionRequest.
         :rtype: str
@@ -86,7 +86,7 @@ class DeleteDependencyVersionRequest:
     def version(self, version):
         """Sets the version of this DeleteDependencyVersionRequest.
 
-        依赖包的ID。
+        依赖包版本号。
 
         :param version: The version of this DeleteDependencyVersionRequest.
         :type version: str

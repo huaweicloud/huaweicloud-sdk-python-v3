@@ -38,7 +38,7 @@ class StorageSelectors:
 
         :param name: selector的名字，作为storageGroup中selectorNames的索引，因此各个selector间的名字不能重复。
         :type name: str
-        :param storage_type: 存储类型，当前仅支持evs（云硬盘）或local（本地盘）；local存储类型不支持磁盘选择，所有本地盘将被组成一个VG，因此也仅允许只有一个local类型的storageSelector。
+        :param storage_type: 存储类型，当前仅支持evs（云硬盘）或local（本地盘）；local存储类型不支持磁盘选择，所有本地盘将被组成一个VG，因此也仅允许只有一个local类型的storageSelector。 
         :type storage_type: str
         :param match_labels: 
         :type match_labels: :class:`huaweicloudsdkcce.v3.StorageSelectorsMatchLabels`
@@ -82,7 +82,7 @@ class StorageSelectors:
     def storage_type(self):
         """Gets the storage_type of this StorageSelectors.
 
-        存储类型，当前仅支持evs（云硬盘）或local（本地盘）；local存储类型不支持磁盘选择，所有本地盘将被组成一个VG，因此也仅允许只有一个local类型的storageSelector。
+        存储类型，当前仅支持evs（云硬盘）或local（本地盘）；local存储类型不支持磁盘选择，所有本地盘将被组成一个VG，因此也仅允许只有一个local类型的storageSelector。 
 
         :return: The storage_type of this StorageSelectors.
         :rtype: str
@@ -93,7 +93,7 @@ class StorageSelectors:
     def storage_type(self, storage_type):
         """Sets the storage_type of this StorageSelectors.
 
-        存储类型，当前仅支持evs（云硬盘）或local（本地盘）；local存储类型不支持磁盘选择，所有本地盘将被组成一个VG，因此也仅允许只有一个local类型的storageSelector。
+        存储类型，当前仅支持evs（云硬盘）或local（本地盘）；local存储类型不支持磁盘选择，所有本地盘将被组成一个VG，因此也仅允许只有一个local类型的storageSelector。 
 
         :param storage_type: The storage_type of this StorageSelectors.
         :type storage_type: str

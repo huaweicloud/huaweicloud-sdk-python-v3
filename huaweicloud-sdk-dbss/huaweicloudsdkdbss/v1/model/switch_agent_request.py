@@ -34,7 +34,7 @@ class SwitchAgentRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: instance_id
+        :param instance_id: 实例ID
         :type instance_id: str
         :param body: Body of the SwitchAgentRequest
         :type body: :class:`huaweicloudsdkdbss.v1.AgentSwitchRequest`
@@ -54,7 +54,7 @@ class SwitchAgentRequest:
     def instance_id(self):
         """Gets the instance_id of this SwitchAgentRequest.
 
-        instance_id
+        实例ID
 
         :return: The instance_id of this SwitchAgentRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class SwitchAgentRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this SwitchAgentRequest.
 
-        instance_id
+        实例ID
 
         :param instance_id: The instance_id of this SwitchAgentRequest.
         :type instance_id: str

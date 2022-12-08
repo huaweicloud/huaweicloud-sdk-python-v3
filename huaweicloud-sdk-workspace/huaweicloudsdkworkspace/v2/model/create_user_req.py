@@ -50,7 +50,7 @@ class CreateUserReq:
         :type user_name: str
         :param user_email: 用户邮箱。
         :type user_email: str
-        :param account_expires: 账户过期时间，0表示永远不过期。时间格式：yyyy-MM-ddTHH:mm:ssZ。
+        :param account_expires: 账户过期时间，0表示永远不过期。时间格式：yyyy-MM-ddTHH:mm:ssZ或yyyy-MM-ddTHH:mm:ss.SSSZ。
         :type account_expires: str
         :param enable_change_password: 是否允许用户更改密码，缺省值为true。
         :type enable_change_password: bool
@@ -140,7 +140,7 @@ class CreateUserReq:
     def account_expires(self):
         """Gets the account_expires of this CreateUserReq.
 
-        账户过期时间，0表示永远不过期。时间格式：yyyy-MM-ddTHH:mm:ssZ。
+        账户过期时间，0表示永远不过期。时间格式：yyyy-MM-ddTHH:mm:ssZ或yyyy-MM-ddTHH:mm:ss.SSSZ。
 
         :return: The account_expires of this CreateUserReq.
         :rtype: str
@@ -151,7 +151,7 @@ class CreateUserReq:
     def account_expires(self, account_expires):
         """Sets the account_expires of this CreateUserReq.
 
-        账户过期时间，0表示永远不过期。时间格式：yyyy-MM-ddTHH:mm:ssZ。
+        账户过期时间，0表示永远不过期。时间格式：yyyy-MM-ddTHH:mm:ssZ或yyyy-MM-ddTHH:mm:ss.SSSZ。
 
         :param account_expires: The account_expires of this CreateUserReq.
         :type account_expires: str

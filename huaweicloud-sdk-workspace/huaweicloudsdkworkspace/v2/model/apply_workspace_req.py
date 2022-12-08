@@ -48,7 +48,7 @@ class ApplyWorkspaceReq:
 
         :param ad_domains: 
         :type ad_domains: :class:`huaweicloudsdkworkspace.v2.AdDomain`
-        :param enterprise_id: 企业ID。  企业ID是您在云桌面服务的唯一标识，终端用户登录时需要填写企业ID，若不自定义设置企业ID，系统将自动生成您的企业ID。格式为由半角数字、字母、_-组成，长度范围小于等于32个字符。
+        :param enterprise_id: 企业ID。 企业ID是您在云桌面服务的唯一标识，终端用户登录时需要填写企业ID，若不自定义设置企业ID，系统将自动生成您的企业ID。格式为由半角数字、字母、_-组成，长度范围小于等于32个字符。
         :type enterprise_id: str
         :param vpc_id: VPC ID。
         :type vpc_id: str
@@ -114,7 +114,7 @@ class ApplyWorkspaceReq:
     def enterprise_id(self):
         """Gets the enterprise_id of this ApplyWorkspaceReq.
 
-        企业ID。  企业ID是您在云桌面服务的唯一标识，终端用户登录时需要填写企业ID，若不自定义设置企业ID，系统将自动生成您的企业ID。格式为由半角数字、字母、_-组成，长度范围小于等于32个字符。
+        企业ID。 企业ID是您在云桌面服务的唯一标识，终端用户登录时需要填写企业ID，若不自定义设置企业ID，系统将自动生成您的企业ID。格式为由半角数字、字母、_-组成，长度范围小于等于32个字符。
 
         :return: The enterprise_id of this ApplyWorkspaceReq.
         :rtype: str
@@ -125,7 +125,7 @@ class ApplyWorkspaceReq:
     def enterprise_id(self, enterprise_id):
         """Sets the enterprise_id of this ApplyWorkspaceReq.
 
-        企业ID。  企业ID是您在云桌面服务的唯一标识，终端用户登录时需要填写企业ID，若不自定义设置企业ID，系统将自动生成您的企业ID。格式为由半角数字、字母、_-组成，长度范围小于等于32个字符。
+        企业ID。 企业ID是您在云桌面服务的唯一标识，终端用户登录时需要填写企业ID，若不自定义设置企业ID，系统将自动生成您的企业ID。格式为由半角数字、字母、_-组成，长度范围小于等于32个字符。
 
         :param enterprise_id: The enterprise_id of this ApplyWorkspaceReq.
         :type enterprise_id: str

@@ -23,17 +23,17 @@ class UpdateInstanceReq:
         'name': 'str',
         'description': 'str',
         'security_group_id': 'str',
-        'retention_policy': 'bool'
+        'enable_acl': 'bool'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
         'security_group_id': 'security_group_id',
-        'retention_policy': 'retention_policy'
+        'enable_acl': 'enable_acl'
     }
 
-    def __init__(self, name=None, description=None, security_group_id=None, retention_policy=None):
+    def __init__(self, name=None, description=None, security_group_id=None, enable_acl=None):
         """UpdateInstanceReq
 
         The model defined in huaweicloud sdk
@@ -44,8 +44,8 @@ class UpdateInstanceReq:
         :type description: str
         :param security_group_id: 安全组ID。
         :type security_group_id: str
-        :param retention_policy: ACL访问控制。
-        :type retention_policy: bool
+        :param enable_acl: ACL访问控制。
+        :type enable_acl: bool
         """
         
         
@@ -53,7 +53,7 @@ class UpdateInstanceReq:
         self._name = None
         self._description = None
         self._security_group_id = None
-        self._retention_policy = None
+        self._enable_acl = None
         self.discriminator = None
 
         if name is not None:
@@ -62,8 +62,8 @@ class UpdateInstanceReq:
             self.description = description
         if security_group_id is not None:
             self.security_group_id = security_group_id
-        if retention_policy is not None:
-            self.retention_policy = retention_policy
+        if enable_acl is not None:
+            self.enable_acl = enable_acl
 
     @property
     def name(self):
@@ -132,26 +132,26 @@ class UpdateInstanceReq:
         self._security_group_id = security_group_id
 
     @property
-    def retention_policy(self):
-        """Gets the retention_policy of this UpdateInstanceReq.
+    def enable_acl(self):
+        """Gets the enable_acl of this UpdateInstanceReq.
 
         ACL访问控制。
 
-        :return: The retention_policy of this UpdateInstanceReq.
+        :return: The enable_acl of this UpdateInstanceReq.
         :rtype: bool
         """
-        return self._retention_policy
+        return self._enable_acl
 
-    @retention_policy.setter
-    def retention_policy(self, retention_policy):
-        """Sets the retention_policy of this UpdateInstanceReq.
+    @enable_acl.setter
+    def enable_acl(self, enable_acl):
+        """Sets the enable_acl of this UpdateInstanceReq.
 
         ACL访问控制。
 
-        :param retention_policy: The retention_policy of this UpdateInstanceReq.
-        :type retention_policy: bool
+        :param enable_acl: The enable_acl of this UpdateInstanceReq.
+        :type enable_acl: bool
         """
-        self._retention_policy = retention_policy
+        self._enable_acl = enable_acl
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -20,22 +20,30 @@ class IssueUser:
     sensitive_list = []
 
     openapi_types = {
+        'user_id': 'str',
+        'user_num_id': 'int',
         'id': 'int',
         'name': 'str',
         'nick_name': 'str'
     }
 
     attribute_map = {
+        'user_id': 'user_id',
+        'user_num_id': 'user_num_id',
         'id': 'id',
         'name': 'name',
         'nick_name': 'nick_name'
     }
 
-    def __init__(self, id=None, name=None, nick_name=None):
+    def __init__(self, user_id=None, user_num_id=None, id=None, name=None, nick_name=None):
         """IssueUser
 
         The model defined in huaweicloud sdk
 
+        :param user_id: 用户uuid
+        :type user_id: str
+        :param user_num_id: 用户数字id
+        :type user_num_id: int
         :param id: 用户id
         :type id: int
         :param name: 用户名
@@ -46,17 +54,67 @@ class IssueUser:
         
         
 
+        self._user_id = None
+        self._user_num_id = None
         self._id = None
         self._name = None
         self._nick_name = None
         self.discriminator = None
 
+        if user_id is not None:
+            self.user_id = user_id
+        if user_num_id is not None:
+            self.user_num_id = user_num_id
         if id is not None:
             self.id = id
         if name is not None:
             self.name = name
         if nick_name is not None:
             self.nick_name = nick_name
+
+    @property
+    def user_id(self):
+        """Gets the user_id of this IssueUser.
+
+        用户uuid
+
+        :return: The user_id of this IssueUser.
+        :rtype: str
+        """
+        return self._user_id
+
+    @user_id.setter
+    def user_id(self, user_id):
+        """Sets the user_id of this IssueUser.
+
+        用户uuid
+
+        :param user_id: The user_id of this IssueUser.
+        :type user_id: str
+        """
+        self._user_id = user_id
+
+    @property
+    def user_num_id(self):
+        """Gets the user_num_id of this IssueUser.
+
+        用户数字id
+
+        :return: The user_num_id of this IssueUser.
+        :rtype: int
+        """
+        return self._user_num_id
+
+    @user_num_id.setter
+    def user_num_id(self, user_num_id):
+        """Sets the user_num_id of this IssueUser.
+
+        用户数字id
+
+        :param user_num_id: The user_num_id of this IssueUser.
+        :type user_num_id: int
+        """
+        self._user_num_id = user_num_id
 
     @property
     def id(self):

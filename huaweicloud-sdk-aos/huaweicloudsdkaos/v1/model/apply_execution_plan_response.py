@@ -32,7 +32,7 @@ class ApplyExecutionPlanResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param deployment_id: 部署生成的唯一ID，由IAC生成
+        :param deployment_id: 部署生成的唯一ID，由资源编排服务生成
         :type deployment_id: str
         """
         
@@ -48,7 +48,7 @@ class ApplyExecutionPlanResponse(SdkResponse):
     def deployment_id(self):
         """Gets the deployment_id of this ApplyExecutionPlanResponse.
 
-        部署生成的唯一ID，由IAC生成
+        部署生成的唯一ID，由资源编排服务生成
 
         :return: The deployment_id of this ApplyExecutionPlanResponse.
         :rtype: str
@@ -59,7 +59,7 @@ class ApplyExecutionPlanResponse(SdkResponse):
     def deployment_id(self, deployment_id):
         """Sets the deployment_id of this ApplyExecutionPlanResponse.
 
-        部署生成的唯一ID，由IAC生成
+        部署生成的唯一ID，由资源编排服务生成
 
         :param deployment_id: The deployment_id of this ApplyExecutionPlanResponse.
         :type deployment_id: str

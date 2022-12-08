@@ -24,7 +24,6 @@ class CreateExecutionPlanRequestBody:
         'template_body': 'str',
         'template_uri': 'str',
         'execution_plan_name': 'str',
-        'executor': 'str',
         'description': 'str',
         'vars_structure': 'list[VarsStructure]',
         'vars_body': 'str',
@@ -36,35 +35,32 @@ class CreateExecutionPlanRequestBody:
         'template_body': 'template_body',
         'template_uri': 'template_uri',
         'execution_plan_name': 'execution_plan_name',
-        'executor': 'executor',
         'description': 'description',
         'vars_structure': 'vars_structure',
         'vars_body': 'vars_body',
         'vars_uri': 'vars_uri'
     }
 
-    def __init__(self, stack_id=None, template_body=None, template_uri=None, execution_plan_name=None, executor=None, description=None, vars_structure=None, vars_body=None, vars_uri=None):
+    def __init__(self, stack_id=None, template_body=None, template_uri=None, execution_plan_name=None, description=None, vars_structure=None, vars_body=None, vars_uri=None):
         """CreateExecutionPlanRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param stack_id: 用户希望生成执行计划的栈（stack）的Id。此Id由IAC在生成栈的时候生成，为UUID。
+        :param stack_id: 用户希望生成执行计划的栈（stack）的Id。此Id由资源编排服务在生成栈的时候生成，为UUID。
         :type stack_id: str
-        :param template_body: HCL模板，描述了资源的目标状态。IAC将比较此模板与当前远程资源的状态之间的区别 template_body 和 template_uri 有且仅有一个存在
+        :param template_body: HCL模板，描述了资源的目标状态。资源编排服务将比较此模板与当前远程资源的状态之间的区别 template_body 和 template_uri 有且仅有一个存在
         :type template_body: str
-        :param template_uri: HCL模板的OBS地址，描述了资源的目标状态。IAC将比较此模板与当前远程资源的状态之间的区别。目前接受纯tf文件或zip压缩包。 纯tf文件需要以“.tf”结尾，并遵守tf模板格式。压缩包目前只支持zip格式，文件需要以\&quot;.zip\&quot;结尾，压缩包解压后应该只包含文件，且文件均以“.tf”结尾，不支持nested结构 template_body 和 template_uri 有且仅有一个存在
+        :param template_uri: HCL模板的OBS地址，描述了资源的目标状态。资源编排服务将比较此模板与当前远程资源的状态之间的区别。目前接受纯tf文件或zip压缩包。 纯tf文件需要以“.tf”结尾，并遵守tf模板格式。压缩包目前只支持zip格式，文件需要以\&quot;.zip\&quot;结尾，压缩包解压后应该只包含文件，且文件均以“.tf”结尾，不支持nested结构 template_body 和 template_uri 有且仅有一个存在
         :type template_uri: str
         :param execution_plan_name: 执行计划的名字，在domain_id+region+project_id+stack_id下应唯一。
         :type execution_plan_name: str
-        :param executor: 执行操作者的名字
-        :type executor: str
         :param description: 执行计划的描述。可用于客户识别自己的执行计划
         :type description: str
-        :param vars_structure: terraform支持参数，即，同一个模板可以给予不同的参数而达到不同的效果。var是一系列terraform所需要的参数。 注：IaC支持vars、vars_body和vars_uri，如果vars、vars_body和vars_uri中声名了同一个变量，将报错400。 注：vars中的值只支持简单的字符串类型，如果其他类型，需要用户自己在HCL引用时转换，或者用户可以使用vars_body或vars_uri， vars_body和vars_uri中支持HCL支持的各种类型以及复杂结构。
+        :param vars_structure: terraform支持参数，即，同一个模板可以给予不同的参数而达到不同的效果。var是一系列terraform所需要的参数。 注：资源编排服务支持vars、vars_body和vars_uri，如果vars、vars_body和vars_uri中声名了同一个变量，将报错400。 注：vars中的值只支持简单的字符串类型，如果其他类型，需要用户自己在HCL引用时转换，或者用户可以使用vars_body或vars_uri， vars_body和vars_uri中支持HCL支持的各种类型以及复杂结构。
         :type vars_structure: list[:class:`huaweicloudsdkaos.v1.VarsStructure`]
         :param vars_body: terraform支持参数，即，同一个模板可以给予不同的参数而达到不同的效果。vars_body用于接收用户直接提交的tfvars文件内容
         :type vars_body: str
-        :param vars_uri: 参数文件的OBS地址，如果客户偏向使用文件维护参数，可以将参数上传OBS，并将OBS地址提交。 注：如果用户同时使用了vars_body、vars_uri和vars，且他们的内容中定义了同一个参数，IAC将报错并返回400。 vars_uri和vars_body中的vars按照HCL的语义，可以支持各种类型、复杂结构等
+        :param vars_uri: 参数文件的OBS地址，如果客户偏向使用文件维护参数，可以将参数上传OBS，并将OBS地址提交。 注：如果用户同时使用了vars_body、vars_uri和vars，且他们的内容中定义了同一个参数，资源编排服务将报错并返回400。 vars_uri和vars_body中的vars按照HCL的语义，可以支持各种类型、复杂结构等
         :type vars_uri: str
         """
         
@@ -74,7 +70,6 @@ class CreateExecutionPlanRequestBody:
         self._template_body = None
         self._template_uri = None
         self._execution_plan_name = None
-        self._executor = None
         self._description = None
         self._vars_structure = None
         self._vars_body = None
@@ -88,8 +83,6 @@ class CreateExecutionPlanRequestBody:
         if template_uri is not None:
             self.template_uri = template_uri
         self.execution_plan_name = execution_plan_name
-        if executor is not None:
-            self.executor = executor
         if description is not None:
             self.description = description
         if vars_structure is not None:
@@ -103,7 +96,7 @@ class CreateExecutionPlanRequestBody:
     def stack_id(self):
         """Gets the stack_id of this CreateExecutionPlanRequestBody.
 
-        用户希望生成执行计划的栈（stack）的Id。此Id由IAC在生成栈的时候生成，为UUID。
+        用户希望生成执行计划的栈（stack）的Id。此Id由资源编排服务在生成栈的时候生成，为UUID。
 
         :return: The stack_id of this CreateExecutionPlanRequestBody.
         :rtype: str
@@ -114,7 +107,7 @@ class CreateExecutionPlanRequestBody:
     def stack_id(self, stack_id):
         """Sets the stack_id of this CreateExecutionPlanRequestBody.
 
-        用户希望生成执行计划的栈（stack）的Id。此Id由IAC在生成栈的时候生成，为UUID。
+        用户希望生成执行计划的栈（stack）的Id。此Id由资源编排服务在生成栈的时候生成，为UUID。
 
         :param stack_id: The stack_id of this CreateExecutionPlanRequestBody.
         :type stack_id: str
@@ -125,7 +118,7 @@ class CreateExecutionPlanRequestBody:
     def template_body(self):
         """Gets the template_body of this CreateExecutionPlanRequestBody.
 
-        HCL模板，描述了资源的目标状态。IAC将比较此模板与当前远程资源的状态之间的区别 template_body 和 template_uri 有且仅有一个存在
+        HCL模板，描述了资源的目标状态。资源编排服务将比较此模板与当前远程资源的状态之间的区别 template_body 和 template_uri 有且仅有一个存在
 
         :return: The template_body of this CreateExecutionPlanRequestBody.
         :rtype: str
@@ -136,7 +129,7 @@ class CreateExecutionPlanRequestBody:
     def template_body(self, template_body):
         """Sets the template_body of this CreateExecutionPlanRequestBody.
 
-        HCL模板，描述了资源的目标状态。IAC将比较此模板与当前远程资源的状态之间的区别 template_body 和 template_uri 有且仅有一个存在
+        HCL模板，描述了资源的目标状态。资源编排服务将比较此模板与当前远程资源的状态之间的区别 template_body 和 template_uri 有且仅有一个存在
 
         :param template_body: The template_body of this CreateExecutionPlanRequestBody.
         :type template_body: str
@@ -147,7 +140,7 @@ class CreateExecutionPlanRequestBody:
     def template_uri(self):
         """Gets the template_uri of this CreateExecutionPlanRequestBody.
 
-        HCL模板的OBS地址，描述了资源的目标状态。IAC将比较此模板与当前远程资源的状态之间的区别。目前接受纯tf文件或zip压缩包。 纯tf文件需要以“.tf”结尾，并遵守tf模板格式。压缩包目前只支持zip格式，文件需要以\".zip\"结尾，压缩包解压后应该只包含文件，且文件均以“.tf”结尾，不支持nested结构 template_body 和 template_uri 有且仅有一个存在
+        HCL模板的OBS地址，描述了资源的目标状态。资源编排服务将比较此模板与当前远程资源的状态之间的区别。目前接受纯tf文件或zip压缩包。 纯tf文件需要以“.tf”结尾，并遵守tf模板格式。压缩包目前只支持zip格式，文件需要以\".zip\"结尾，压缩包解压后应该只包含文件，且文件均以“.tf”结尾，不支持nested结构 template_body 和 template_uri 有且仅有一个存在
 
         :return: The template_uri of this CreateExecutionPlanRequestBody.
         :rtype: str
@@ -158,7 +151,7 @@ class CreateExecutionPlanRequestBody:
     def template_uri(self, template_uri):
         """Sets the template_uri of this CreateExecutionPlanRequestBody.
 
-        HCL模板的OBS地址，描述了资源的目标状态。IAC将比较此模板与当前远程资源的状态之间的区别。目前接受纯tf文件或zip压缩包。 纯tf文件需要以“.tf”结尾，并遵守tf模板格式。压缩包目前只支持zip格式，文件需要以\".zip\"结尾，压缩包解压后应该只包含文件，且文件均以“.tf”结尾，不支持nested结构 template_body 和 template_uri 有且仅有一个存在
+        HCL模板的OBS地址，描述了资源的目标状态。资源编排服务将比较此模板与当前远程资源的状态之间的区别。目前接受纯tf文件或zip压缩包。 纯tf文件需要以“.tf”结尾，并遵守tf模板格式。压缩包目前只支持zip格式，文件需要以\".zip\"结尾，压缩包解压后应该只包含文件，且文件均以“.tf”结尾，不支持nested结构 template_body 和 template_uri 有且仅有一个存在
 
         :param template_uri: The template_uri of this CreateExecutionPlanRequestBody.
         :type template_uri: str
@@ -188,28 +181,6 @@ class CreateExecutionPlanRequestBody:
         self._execution_plan_name = execution_plan_name
 
     @property
-    def executor(self):
-        """Gets the executor of this CreateExecutionPlanRequestBody.
-
-        执行操作者的名字
-
-        :return: The executor of this CreateExecutionPlanRequestBody.
-        :rtype: str
-        """
-        return self._executor
-
-    @executor.setter
-    def executor(self, executor):
-        """Sets the executor of this CreateExecutionPlanRequestBody.
-
-        执行操作者的名字
-
-        :param executor: The executor of this CreateExecutionPlanRequestBody.
-        :type executor: str
-        """
-        self._executor = executor
-
-    @property
     def description(self):
         """Gets the description of this CreateExecutionPlanRequestBody.
 
@@ -235,7 +206,7 @@ class CreateExecutionPlanRequestBody:
     def vars_structure(self):
         """Gets the vars_structure of this CreateExecutionPlanRequestBody.
 
-        terraform支持参数，即，同一个模板可以给予不同的参数而达到不同的效果。var是一系列terraform所需要的参数。 注：IaC支持vars、vars_body和vars_uri，如果vars、vars_body和vars_uri中声名了同一个变量，将报错400。 注：vars中的值只支持简单的字符串类型，如果其他类型，需要用户自己在HCL引用时转换，或者用户可以使用vars_body或vars_uri， vars_body和vars_uri中支持HCL支持的各种类型以及复杂结构。
+        terraform支持参数，即，同一个模板可以给予不同的参数而达到不同的效果。var是一系列terraform所需要的参数。 注：资源编排服务支持vars、vars_body和vars_uri，如果vars、vars_body和vars_uri中声名了同一个变量，将报错400。 注：vars中的值只支持简单的字符串类型，如果其他类型，需要用户自己在HCL引用时转换，或者用户可以使用vars_body或vars_uri， vars_body和vars_uri中支持HCL支持的各种类型以及复杂结构。
 
         :return: The vars_structure of this CreateExecutionPlanRequestBody.
         :rtype: list[:class:`huaweicloudsdkaos.v1.VarsStructure`]
@@ -246,7 +217,7 @@ class CreateExecutionPlanRequestBody:
     def vars_structure(self, vars_structure):
         """Sets the vars_structure of this CreateExecutionPlanRequestBody.
 
-        terraform支持参数，即，同一个模板可以给予不同的参数而达到不同的效果。var是一系列terraform所需要的参数。 注：IaC支持vars、vars_body和vars_uri，如果vars、vars_body和vars_uri中声名了同一个变量，将报错400。 注：vars中的值只支持简单的字符串类型，如果其他类型，需要用户自己在HCL引用时转换，或者用户可以使用vars_body或vars_uri， vars_body和vars_uri中支持HCL支持的各种类型以及复杂结构。
+        terraform支持参数，即，同一个模板可以给予不同的参数而达到不同的效果。var是一系列terraform所需要的参数。 注：资源编排服务支持vars、vars_body和vars_uri，如果vars、vars_body和vars_uri中声名了同一个变量，将报错400。 注：vars中的值只支持简单的字符串类型，如果其他类型，需要用户自己在HCL引用时转换，或者用户可以使用vars_body或vars_uri， vars_body和vars_uri中支持HCL支持的各种类型以及复杂结构。
 
         :param vars_structure: The vars_structure of this CreateExecutionPlanRequestBody.
         :type vars_structure: list[:class:`huaweicloudsdkaos.v1.VarsStructure`]
@@ -279,7 +250,7 @@ class CreateExecutionPlanRequestBody:
     def vars_uri(self):
         """Gets the vars_uri of this CreateExecutionPlanRequestBody.
 
-        参数文件的OBS地址，如果客户偏向使用文件维护参数，可以将参数上传OBS，并将OBS地址提交。 注：如果用户同时使用了vars_body、vars_uri和vars，且他们的内容中定义了同一个参数，IAC将报错并返回400。 vars_uri和vars_body中的vars按照HCL的语义，可以支持各种类型、复杂结构等
+        参数文件的OBS地址，如果客户偏向使用文件维护参数，可以将参数上传OBS，并将OBS地址提交。 注：如果用户同时使用了vars_body、vars_uri和vars，且他们的内容中定义了同一个参数，资源编排服务将报错并返回400。 vars_uri和vars_body中的vars按照HCL的语义，可以支持各种类型、复杂结构等
 
         :return: The vars_uri of this CreateExecutionPlanRequestBody.
         :rtype: str
@@ -290,7 +261,7 @@ class CreateExecutionPlanRequestBody:
     def vars_uri(self, vars_uri):
         """Sets the vars_uri of this CreateExecutionPlanRequestBody.
 
-        参数文件的OBS地址，如果客户偏向使用文件维护参数，可以将参数上传OBS，并将OBS地址提交。 注：如果用户同时使用了vars_body、vars_uri和vars，且他们的内容中定义了同一个参数，IAC将报错并返回400。 vars_uri和vars_body中的vars按照HCL的语义，可以支持各种类型、复杂结构等
+        参数文件的OBS地址，如果客户偏向使用文件维护参数，可以将参数上传OBS，并将OBS地址提交。 注：如果用户同时使用了vars_body、vars_uri和vars，且他们的内容中定义了同一个参数，资源编排服务将报错并返回400。 vars_uri和vars_body中的vars按照HCL的语义，可以支持各种类型、复杂结构等
 
         :param vars_uri: The vars_uri of this CreateExecutionPlanRequestBody.
         :type vars_uri: str

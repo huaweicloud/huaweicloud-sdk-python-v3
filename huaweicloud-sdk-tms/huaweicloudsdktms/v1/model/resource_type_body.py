@@ -40,7 +40,7 @@ class ResourceTypeBody:
 
         :param resource_type: 资源类型
         :type resource_type: str
-        :param resource_type_i18n_display_name: 资源类型显示名称，可以通过参数中&#39;locale&#39;设置语言
+        :param resource_type_i18n_display_name: 资源类型显示名称，可以通过参数中“locale”设置语言。
         :type resource_type_i18n_display_name: str
         :param regions: 支持的region列表
         :type regions: list[str]
@@ -87,7 +87,7 @@ class ResourceTypeBody:
     def resource_type_i18n_display_name(self):
         """Gets the resource_type_i18n_display_name of this ResourceTypeBody.
 
-        资源类型显示名称，可以通过参数中'locale'设置语言
+        资源类型显示名称，可以通过参数中“locale”设置语言。
 
         :return: The resource_type_i18n_display_name of this ResourceTypeBody.
         :rtype: str
@@ -98,7 +98,7 @@ class ResourceTypeBody:
     def resource_type_i18n_display_name(self, resource_type_i18n_display_name):
         """Sets the resource_type_i18n_display_name of this ResourceTypeBody.
 
-        资源类型显示名称，可以通过参数中'locale'设置语言
+        资源类型显示名称，可以通过参数中“locale”设置语言。
 
         :param resource_type_i18n_display_name: The resource_type_i18n_display_name of this ResourceTypeBody.
         :type resource_type_i18n_display_name: str

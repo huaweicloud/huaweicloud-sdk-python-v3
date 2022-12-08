@@ -288,6 +288,65 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_bandwidth_pkg_async(self, request):
+        """查询带宽加油包列表
+
+        查询带宽加油包列表信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBandwidthPkg
+        :type request: :class:`huaweicloudsdkeip.v2.ListBandwidthPkgRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.ListBandwidthPkgResponse`
+        """
+        return self.list_bandwidth_pkg_with_http_info(request)
+
+    def list_bandwidth_pkg_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/bandwidthpkgs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListBandwidthPkgResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_bandwidths_async(self, request):
         """查询带宽列表
 
@@ -729,6 +788,128 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def batch_create_publicips_async(self, request):
+        """批量创建弹性公网IP
+
+        批量创建弹性公网IP
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchCreatePublicips
+        :type request: :class:`huaweicloudsdkeip.v2.BatchCreatePublicipsRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.BatchCreatePublicipsResponse`
+        """
+        return self.batch_create_publicips_with_http_info(request)
+
+    def batch_create_publicips_with_http_info(self, request):
+        all_params = ['batch_create_publicips_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/batchpublicips',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchCreatePublicipsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_delete_public_ip_async(self, request):
+        """批量删除弹性公网IP
+
+        批量删除弹性公网IP
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeletePublicIp
+        :type request: :class:`huaweicloudsdkeip.v2.BatchDeletePublicIpRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.BatchDeletePublicIpResponse`
+        """
+        return self.batch_delete_public_ip_with_http_info(request)
+
+    def batch_delete_public_ip_with_http_info(self, request):
+        all_params = ['batch_delete_public_ip_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/batchpublicips',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchDeletePublicIpResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def batch_delete_publicip_tags_async(self, request):
         """批量删除弹性公网IP资源标签
 
@@ -787,6 +968,185 @@ class EipAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='BatchDeletePublicipTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_disassociate_publicips_async(self, request):
+        """批量解绑弹性公网IP
+
+        批量解绑弹性公网IP
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDisassociatePublicips
+        :type request: :class:`huaweicloudsdkeip.v2.BatchDisassociatePublicipsRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.BatchDisassociatePublicipsResponse`
+        """
+        return self.batch_disassociate_publicips_with_http_info(request)
+
+    def batch_disassociate_publicips_with_http_info(self, request):
+        all_params = ['batch_disassociate_publicips_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/batchpublicips',
+            method='PATCH',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchDisassociatePublicipsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def count_public_ip_async(self, request):
+        """查询PublicIp数量
+
+        查询PublicIp数量
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CountPublicIp
+        :type request: :class:`huaweicloudsdkeip.v2.CountPublicIpRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.CountPublicIpResponse`
+        """
+        return self.count_public_ip_with_http_info(request)
+
+    def count_public_ip_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/elasticips',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CountPublicIpResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def count_public_ip_instance_async(self, request):
+        """查询PublicIp实例数
+
+        查询PublicIp实例数
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CountPublicIpInstance
+        :type request: :class:`huaweicloudsdkeip.v2.CountPublicIpInstanceRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.CountPublicIpInstanceResponse`
+        """
+        return self.count_public_ip_instance_with_http_info(request)
+
+    def count_public_ip_instance_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/publicip/instances',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CountPublicIpInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1299,6 +1659,65 @@ class EipAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListPublicipsByTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_public_ip_type_async(self, request):
+        """查询PublicIp类型
+
+        查询PublicIp类型
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowPublicIpType
+        :type request: :class:`huaweicloudsdkeip.v2.ShowPublicIpTypeRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.ShowPublicIpTypeResponse`
+        """
+        return self.show_public_ip_type_with_http_info(request)
+
+    def show_public_ip_type_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/publicip_types',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowPublicIpTypeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

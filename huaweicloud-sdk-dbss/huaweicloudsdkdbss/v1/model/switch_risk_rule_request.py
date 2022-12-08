@@ -34,7 +34,7 @@ class SwitchRiskRuleRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: instance_id
+        :param instance_id: 实例ID
         :type instance_id: str
         :param body: Body of the SwitchRiskRuleRequest
         :type body: :class:`huaweicloudsdkdbss.v1.BatchSwitchesRequest`
@@ -54,7 +54,7 @@ class SwitchRiskRuleRequest:
     def instance_id(self):
         """Gets the instance_id of this SwitchRiskRuleRequest.
 
-        instance_id
+        实例ID
 
         :return: The instance_id of this SwitchRiskRuleRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class SwitchRiskRuleRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this SwitchRiskRuleRequest.
 
-        instance_id
+        实例ID
 
         :param instance_id: The instance_id of this SwitchRiskRuleRequest.
         :type instance_id: str

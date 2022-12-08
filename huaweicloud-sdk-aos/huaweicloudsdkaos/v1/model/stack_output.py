@@ -40,7 +40,7 @@ class StackOutput:
 
         The model defined in huaweicloud sdk
 
-        :param name: 堆栈输出的name，由用户自己在模板中定义
+        :param name: 资源栈输出的name，由用户自己在模板中定义
         :type name: str
         :param description: 描述
         :type description: str
@@ -76,7 +76,7 @@ class StackOutput:
     def name(self):
         """Gets the name of this StackOutput.
 
-        堆栈输出的name，由用户自己在模板中定义
+        资源栈输出的name，由用户自己在模板中定义
 
         :return: The name of this StackOutput.
         :rtype: str
@@ -87,7 +87,7 @@ class StackOutput:
     def name(self, name):
         """Sets the name of this StackOutput.
 
-        堆栈输出的name，由用户自己在模板中定义
+        资源栈输出的name，由用户自己在模板中定义
 
         :param name: The name of this StackOutput.
         :type name: str

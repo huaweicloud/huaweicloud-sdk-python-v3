@@ -1,3 +1,392 @@
+# 3.1.15 2022-12-08
+
+### HuaweiCloud SDK MapDS
+
+- _Features_
+  - Support the `Map Data Service`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK AOS
+
+- _Features_
+  - Support the interfaces `GetExecutionPlan`, `DeleteExecutionPlan`, `DescribeExecutionPlan`, `GetStackMetadata`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the request parameter `executor` from the interface `ListExecutionPlans`
+  - Remove the request parameter `executor` from the interface `CreateExecutionPlan`
+  - Remove the request parameter `executor` from the interface `ApplyExecutionPlan`
+  - Changes of the interface `ListStackEvents`:
+    - Remove the request parameters `limit`, `marker`, `executor`
+    - Remove the response parameter `next_marker`
+  - Remove the request parameter `executor` from the interface `ListStacks`
+  - Remove the request parameter `executor` from the interface `CreateStack`
+  - Remove the request parameter `executor` from the interface `GetStackTemplate`
+  - Changes of the interface `ListStackResources`:
+    - Remove the request parameter `executor`
+    - Remove the response parameters `create_time`, `update_time`
+  - Changes of the interface `ListStackOutputs`:
+    - Remove the request parameters `executor`, `limit`, `marker`
+    - Remove the response parameter `next_marker`
+  - Remove the request parameter `executor` from the interface `DeployStack`
+  - Remove the request parameter `executor` from the interface `DeleteStack`
+
+### HuaweiCloud SDK APM
+
+- _Features_
+  - Support the interfaces `SearchAgent`, `ChangeAgentStatus`, `DeleteAgent`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CBH
+
+- _Features_
+  - Support the following interfaces：
+    - `ListQuotaState`
+    - `ShowNetworkConfiguration`
+    - `StopCbhInstance`
+    - `UpgradeCbhInstance`
+    - `RestartCbhInstance`
+    - `InstallInstanceEip`
+    - `UninstallInstanceEip`
+    - `ResetPassword`
+    - `ShowAvailableZoneInfo`
+    - `StartCbhInstance`
+    - `SearchQuota`
+    - `ResetLoginMethod`
+    - `CreateInstanceOrder`
+    - `ChangeInstanceNetwork`
+    - `CreateInstance`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListCbhInstance`:
+    - Add the response parameters `public_ip`, `is_auto_renew`
+    - Remove the request parameter `X-Auth-Token`
+    - Remove the response parameter `publicip`
+    - The response parameter `zh_cn`, `en_us`, `exp_time`, `start_time`, `end_time`, `release_time`, `instance_id`, `private_ip`, `task_status`, `vpc_id`, `subnet_id`, `security_group_id`, `createinstance_status`, `fail_reason`, `instance_key`, `order_id`, `period_num`, `resource_id`, `public_id`, `alter_permit`, `bastion_version`, `new_bastion_version`, `instance_status`, `instance_description` changed to required
+
+### HuaweiCloud SDK CC
+
+- _Features_
+  - Support the following interfaces：
+    - `ListDomainTags`
+    - `DeleteTag`
+    - `BatchCreateDeleteTags`
+    - `ListResourceByFilterTag`
+    - `ListTags`
+    - `CreateTag`
+    - `ListQuotas`
+    - `ListBandwidthPackages`
+    - `CreateBandwidthPackage`
+    - `ShowBandwidthPackage`
+    - `UpdateBandwidthPackage`
+    - `DeleteBandwidthPackage`
+    - `AssociateBandwidthPackage`
+    - `DisassociateBandwidthPackage`
+    - `ListInterRegionBandwidths`
+    - `CreateInterRegionBandwidth`
+    - `ShowInterRegionBandwidth`
+    - `UpdateInterRegionBandwidth`
+    - `DeleteInterRegionBandwidth`
+    - `ListAuthorisations`
+    - `CreateAuthorisation`
+    - `ListPermissions`
+    - `UpdateAuthorisation`
+    - `DeleteAuthorisation`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `version` changed to not required of the interface `CreateAddonInstance`
+  - The request parameter `version` changed to not required of the interface `UpdateAddonInstance`
+
+### HuaweiCloud SDK CFW
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListIpsSwitchStatusUsingGet`:
+    - Add the response parameters `id`, `virtual_patches_status`
+    - Remove the response parameters `object_id`, `virtual_patches_stauts`
+  - The request parameter `ips_type` changed to required of the interface `ChangeIpsSwitchUsingPost`
+  - Remove the response parameters `fw_instance_id`, `resource_id`, `name`, `ha_type`, `charge_mode`, `service_type`, `engine_type`, `flavor`, `protect_objects`, `status`, `description`, `is_old_firewall_instance`, `support_ipv6`, `feature_toggle` from the interface `ListFirewallUsingGet`
+
+### HuaweiCloud SDK CloudDeploy
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `enum` to the request parameter `type` to the interface `StartDeployTask`
+
+### HuaweiCloud SDK DBSS
+
+- _Features_
+  - Support the following interfaces：
+    - `ListAuditInstances`
+    - `ShowAuditQuota`
+    - `ListEcsSpecification`
+    - `ListAvailabilityZoneInfos`
+    - `ListAuditInstanceJobs`
+    - `ListAuditDatabases`
+    - `ListAuditOperateLogs`
+    - `ListAuditRuleScopes`
+    - `ListSqlInjectionRules`
+    - `ListAuditRuleRisks`
+    - `ShowAuditRuleRisk`
+    - `ListAuditSensitiveMasks`
+    - `ListProjectResourceTags`
+    - `ListResourceInstanceByTag`
+    - `CountResourceInstanceByTag`
+    - `BatchAddResourceTag`
+    - `BatchDeleteResourceTag`
+    - `CreateInstancesPeriodOrder`
+    - `UpdateAuditSecurityGroup`
+    - `AddRdsNoAgentDatabase`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DRS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `name`, `job_type`, `engine_type`, `job_direction`, `task_type`, `net_type`, `enterprise_project_id`, `ip`, `db_port`, `ssl_link`, `ssl_cert_name`, `ssl_cert_key`, `ssl_cert_check_sum`, `ip`, `db_port`, `ssl_link`, `ssl_cert_name`, `ssl_cert_key`, `ssl_cert_check_sum`, `is_auto_renew`, `security_group_id` changed to not required of the interface `BatchCreateJobsAsync`
+  - The request parameter `name`, `job_type`, `engine_type`, `job_direction`, `task_type`, `net_type`, `enterprise_project_id`, `ip`, `db_port`, `ssl_link`, `ssl_cert_name`, `ssl_cert_key`, `ssl_cert_check_sum`, `ip`, `db_port`, `ssl_link`, `ssl_cert_name`, `ssl_cert_key`, `ssl_cert_check_sum`, `is_auto_renew`, `security_group_id` changed to not required of the interface `CreateJob`
+  - The response parameter `name`, `job_type`, `engine_type`, `job_direction`, `task_type`, `net_type`, `enterprise_project_id`, `ip`, `db_port`, `ssl_link`, `ssl_cert_name`, `ssl_cert_key`, `ssl_cert_check_sum`, `ip`, `db_port`, `ssl_link`, `ssl_cert_name`, `ssl_cert_key`, `ssl_cert_check_sum`, `is_auto_renew`, `security_group_id` changed to not required of the interface `ListAsyncJobDetail`
+  - The request parameter `name`, `job_type`, `engine_type`, `job_direction`, `task_type`, `net_type`, `enterprise_project_id`, `ip`, `db_port`, `ssl_link`, `ssl_cert_name`, `ssl_cert_key`, `ssl_cert_check_sum`, `ip`, `db_port`, `ssl_link`, `ssl_cert_name`, `ssl_cert_key`, `ssl_cert_check_sum`, `is_auto_renew`, `security_group_id` changed to not required of the interface `UpdateBatchAsyncJobs`
+  - The response parameter `name`, `job_type`, `engine_type`, `job_direction`, `task_type`, `net_type`, `enterprise_project_id`, `ip`, `db_port`, `ssl_link`, `ssl_cert_name`, `ssl_cert_key`, `ssl_cert_check_sum`, `ip`, `db_port`, `ssl_link`, `ssl_cert_name`, `ssl_cert_key`, `ssl_cert_check_sum`, `is_auto_renew`, `security_group_id` changed to not required of the interface `ShowJobDetail`
+  - The request parameter `name`, `job_type`, `engine_type`, `job_direction`, `task_type`, `net_type`, `enterprise_project_id`, `ip`, `db_port`, `ssl_link`, `ssl_cert_name`, `ssl_cert_key`, `ssl_cert_check_sum`, `ip`, `db_port`, `ssl_link`, `ssl_cert_name`, `ssl_cert_key`, `ssl_cert_check_sum`, `is_auto_renew`, `security_group_id` changed to not required of the interface `UpdateJob`
+  - Changes of the interface `ExecuteJobAction`:
+    - Add the request parameters `is_sync_re_edit`, `force_delete`
+    - The request parameter `job_id`, `ip`, `db_port`, `ssl_link`, `ssl_cert_name`, `ssl_cert_key`, `ssl_cert_check_sum` changed to not required
+  - Changes of the interface `BatchExecuteJobActions`:
+    - Add the request parameters `is_sync_re_edit`, `force_delete`
+    - The request parameter `job_id`, `ip`, `db_port`, `ssl_link`, `ssl_cert_name`, `ssl_cert_key`, `ssl_cert_check_sum` changed to not required
+
+### HuaweiCloud SDK DSC
+
+- _Features_
+  - Support the following interfaces：
+    - `CreateProductOrder`
+    - `ShowSpecification`
+    - `ShowTopics`
+    - `UpdateDefaultTopic`
+    - `ShowRules`
+    - `ChangeRule`
+    - `AddRule`
+    - `DeleteRule`
+    - `ListRuleGroups`
+    - `AddRuleGroup`
+    - `DeleteRuleGroup`
+    - `AddScanJob`
+    - `ListRelationDb`
+    - `ListRelationTable`
+    - `ListRelationColumn`
+    - `ListRelationBuckets`
+    - `ListRelationFile`
+    - `ListDbMaskTask`
+    - `ChangeDbTemplateOperation`
+    - `UpdateAssetName`
+    - `ListBuckets`
+    - `AddBuckets`
+    - `DeleteBucket`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DWS
+
+- _Features_
+  - Support the interfaces `ListHostOverview`, `ListHostDisk`, `ListHostNet`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK EIP
+
+- _Features_
+  - Support the following interfaces：
+    - `ListBandwidthPkg`
+    - `CountPublicIp`
+    - `ShowPublicIpType`
+    - `CountPublicIpInstance`
+    - `BatchCreatePublicips`
+    - `BatchDeletePublicIp`
+    - `BatchDisassociatePublicips`
+    - `CountEipAvailableResources`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the enum values `` from the request parameter `associate_instance_type` from the interface `AssociatePublicips`
+  - Remove the enum values `` from the request parameter `associate_instance_type` from the interface `UpdateAssociatePublicip`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `dep_id` to the interface `CreateDependency`
+  - Add the response parameter `dep_id` to the interface `CreateDependencyVersion`
+  - Add the request parameters `enable_dynamic_memory`, `enable_auth_in_header` to the interface `UpdateFunctionConfig`
+  - Changes of the interface `ShowWorkflowExecutionForPage`:
+    - Add the request parameters `offset`, `limit`
+    - Add the response parameters `total`, `size`, `executions`
+    - Remove the request parameters `page`, `page_size`
+    - Remove the response parameters `pager`, `hisRecords`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - Support the following interfaces：
+    - `RestartGaussMySqlInstance`
+    - `ShowGaussMySqlConfiguration`
+    - `UpdateGaussMySqlConfiguration`
+    - `DeleteGaussMySqlConfiguration`
+    - `SwitchGaussMySqlConfiguration`
+    - `RestartGaussMySqlNode`
+    - `UpdateProxySessionConsistence`
+    - `ListImmediateJobs`
+    - `ListScheduleJobs`
+    - `CancelScheduleTask`
+    - `DeleteTaskRecord`
+    - `UpgradeGaussMySqlInstanceDatabase`
+    - `SwitchGaussMySqlInstanceSsl`
+    - `UpdateGaussMySqlInstanceEip`
+    - `CancelGaussMySqlInstanceEip`
+    - `InvokeGaussMySqlInstanceSwitchOver`
+    - `UpdateGaussMySqlInstanceOpsWindow`
+    - `UpdateGaussMySqlInstanceSecurityGroup`
+    - `UpdateGaussMySqlInstanceInternalIp`
+    - `UpdateGaussMySqlInstancePort`
+    - `UpdateGaussMySqlInstanceAlias`
+    - `DeleteGaussMySqlBackup`
+    - `CreateGaussMySqlConfiguration`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListAvailableFlavorInfos`:
+    - Add the request parameter `x-auth-token`
+    - Add the response parameter `list`
+    - Remove the response parameter `optional_flavor_list`
+    - The response parameter `instance_id`, `instance_name`, `vcpus`, `ram`, `spec_code`, `az_status`, `region_status`, `total_count` changed to required
+  - Changes of the interface `ShowSlowLogDesensitization`:
+    - Add the request parameter `x-auth-token`
+    - The response parameter `desensitization_status` changed to required
+  - The response parameter `type`, `key`, `values`, `total_count` changed to required of the interface `ListProjectTags`
+  - The request parameter `instance`, `vcpus`, `ram` changed to required of the interface `ModifyEpsQuotas`
+  - Changes of the interface `ListEpsQuotas`:
+    - Remove the response parameters `enterprise_project_id`, `enterprise_project_name`, `quota`, `used`
+    - The response parameter `total_count` changed to required
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `publicip_id` to the interface `ResizeInstance`
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - Support the interface `ListTimeLineTrafficStatistics`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK ProjectMan
+
+- _Features_
+  - Support the interfaces `DownloadAttachment`, `DeleteAttachment`, `ListStatusStatistic`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `user_id`, `user_num_id`, `user_id`, `user_num_id`, `user_id`, `user_num_id`, `user_id`, `user_num_id` to the interface `CreateIssueV4`
+  - Add the response parameters `user_id`, `user_num_id`, `user_id`, `user_num_id`, `user_id`, `user_num_id` to the interface `ListIssuesSfV4`
+  - Add the response parameters `user_id`, `user_num_id`, `user_id`, `user_num_id`, `user_id`, `user_num_id`, `user_id`, `user_num_id` to the interface `ListIssuesV4`
+  - Add the response parameters `user_id`, `user_num_id`, `user_id`, `user_num_id`, `user_id`, `user_num_id`, `user_id`, `user_num_id` to the interface `UpdateIssueV4`
+  - Add the response parameters `user_id`, `user_num_id`, `user_id`, `user_num_id`, `user_id`, `user_num_id`, `user_id`, `user_num_id` to the interface `ShowIssueV4`
+  - Add the response parameters `user_id`, `user_num_id`, `user_id`, `user_num_id`, `user_id`, `user_num_id`, `user_id`, `user_num_id` to the interface `ListChildIssuesV4`
+  - Add the response parameters `user_id`, `user_num_id` to the interface `ListProjectIssuesRecordsV4`
+  - Add the response parameters `user_id`, `user_num_id`, `user_id`, `user_num_id`, `user_id`, `user_num_id`, `user_id`, `user_num_id` to the interface `CreateSystemIssueV4`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interfaces `ShowSecondLevelMonitoring`, `SetSecondLevelMonitor`, `ShowAutoEnlargePolicy`, `SetAutoEnlargePolicy`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RocketMQ
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `broker_num` changed to required of the interface `CreatePostPaidInstance`
+  - Changes of the interface `UpdateInstance`:
+    - Add the request parameter `enable_acl`
+    - Remove the request parameter `retention_policy`
+  - Add the response parameter `job_id` to the interface `BatchUpdateConsumerGroup`
+  - Changes of the interface `ShowGroup`:
+    - Add the response parameters `app_id`, `app_name`, `permissions`
+    - Remove the response parameter `from_beginning`
+
+### HuaweiCloud SDK TMS
+
+- _Features_
+  - Support the following interfaces：
+    - `ListResource`
+    - `CreateResourceTag`
+    - `DeleteResourceTag`
+    - `ListTagKeys`
+    - `ListTagValues`
+    - `ShowResourceTag`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.14 2022-12-01
 
 ### HuaweiCloud SDK BSS

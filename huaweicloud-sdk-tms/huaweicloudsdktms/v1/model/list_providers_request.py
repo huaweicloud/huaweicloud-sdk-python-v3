@@ -40,9 +40,9 @@ class ListProvidersRequest:
 
         :param locale: 指定显示语言
         :type locale: str
-        :param limit: 查询记录数默认为200，limit最多为200, 最小值为1
+        :param limit: 查询记录数默认为200，limit最多为200，最小值为1。
         :type limit: int
-        :param offset: 索引位置，从offset指定的下一条数据开始查询，必须为数字，不能为负数，默认为0
+        :param offset: 索引位置，从offset指定的下一条数据开始查询，必须为数字，不能为负数，默认为0。
         :type offset: int
         :param provider: 云服务名称
         :type provider: str
@@ -91,7 +91,7 @@ class ListProvidersRequest:
     def limit(self):
         """Gets the limit of this ListProvidersRequest.
 
-        查询记录数默认为200，limit最多为200, 最小值为1
+        查询记录数默认为200，limit最多为200，最小值为1。
 
         :return: The limit of this ListProvidersRequest.
         :rtype: int
@@ -102,7 +102,7 @@ class ListProvidersRequest:
     def limit(self, limit):
         """Sets the limit of this ListProvidersRequest.
 
-        查询记录数默认为200，limit最多为200, 最小值为1
+        查询记录数默认为200，limit最多为200，最小值为1。
 
         :param limit: The limit of this ListProvidersRequest.
         :type limit: int
@@ -113,7 +113,7 @@ class ListProvidersRequest:
     def offset(self):
         """Gets the offset of this ListProvidersRequest.
 
-        索引位置，从offset指定的下一条数据开始查询，必须为数字，不能为负数，默认为0
+        索引位置，从offset指定的下一条数据开始查询，必须为数字，不能为负数，默认为0。
 
         :return: The offset of this ListProvidersRequest.
         :rtype: int
@@ -124,7 +124,7 @@ class ListProvidersRequest:
     def offset(self, offset):
         """Sets the offset of this ListProvidersRequest.
 
-        索引位置，从offset指定的下一条数据开始查询，必须为数字，不能为负数，默认为0
+        索引位置，从offset指定的下一条数据开始查询，必须为数字，不能为负数，默认为0。
 
         :param offset: The offset of this ListProvidersRequest.
         :type offset: int

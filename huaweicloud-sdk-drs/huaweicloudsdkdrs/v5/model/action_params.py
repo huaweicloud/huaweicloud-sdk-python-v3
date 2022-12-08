@@ -25,7 +25,9 @@ class ActionParams:
         'skip_precheck_info': 'SkipPreCheckInfo',
         'pause_mode': 'str',
         'start_time': 'str',
-        'compare_task_param': 'CompareTaskParams'
+        'compare_task_param': 'CompareTaskParams',
+        'is_sync_re_edit': 'bool',
+        'force_delete': 'bool'
     }
 
     attribute_map = {
@@ -34,10 +36,12 @@ class ActionParams:
         'skip_precheck_info': 'skip_precheck_info',
         'pause_mode': 'pause_mode',
         'start_time': 'start_time',
-        'compare_task_param': 'compare_task_param'
+        'compare_task_param': 'compare_task_param',
+        'is_sync_re_edit': 'is_sync_re_edit',
+        'force_delete': 'force_delete'
     }
 
-    def __init__(self, endpoints=None, precheck_mode=None, skip_precheck_info=None, pause_mode=None, start_time=None, compare_task_param=None):
+    def __init__(self, endpoints=None, precheck_mode=None, skip_precheck_info=None, pause_mode=None, start_time=None, compare_task_param=None, is_sync_re_edit=None, force_delete=None):
         """ActionParams
 
         The model defined in huaweicloud sdk
@@ -54,6 +58,10 @@ class ActionParams:
         :type start_time: str
         :param compare_task_param: 
         :type compare_task_param: :class:`huaweicloudsdkdrs.v5.CompareTaskParams`
+        :param is_sync_re_edit: 再编辑任务启动时取值true。
+        :type is_sync_re_edit: bool
+        :param force_delete: 强制结束任务时取值true。
+        :type force_delete: bool
         """
         
         
@@ -64,6 +72,8 @@ class ActionParams:
         self._pause_mode = None
         self._start_time = None
         self._compare_task_param = None
+        self._is_sync_re_edit = None
+        self._force_delete = None
         self.discriminator = None
 
         if endpoints is not None:
@@ -78,6 +88,10 @@ class ActionParams:
             self.start_time = start_time
         if compare_task_param is not None:
             self.compare_task_param = compare_task_param
+        if is_sync_re_edit is not None:
+            self.is_sync_re_edit = is_sync_re_edit
+        if force_delete is not None:
+            self.force_delete = force_delete
 
     @property
     def endpoints(self):
@@ -202,6 +216,50 @@ class ActionParams:
         :type compare_task_param: :class:`huaweicloudsdkdrs.v5.CompareTaskParams`
         """
         self._compare_task_param = compare_task_param
+
+    @property
+    def is_sync_re_edit(self):
+        """Gets the is_sync_re_edit of this ActionParams.
+
+        再编辑任务启动时取值true。
+
+        :return: The is_sync_re_edit of this ActionParams.
+        :rtype: bool
+        """
+        return self._is_sync_re_edit
+
+    @is_sync_re_edit.setter
+    def is_sync_re_edit(self, is_sync_re_edit):
+        """Sets the is_sync_re_edit of this ActionParams.
+
+        再编辑任务启动时取值true。
+
+        :param is_sync_re_edit: The is_sync_re_edit of this ActionParams.
+        :type is_sync_re_edit: bool
+        """
+        self._is_sync_re_edit = is_sync_re_edit
+
+    @property
+    def force_delete(self):
+        """Gets the force_delete of this ActionParams.
+
+        强制结束任务时取值true。
+
+        :return: The force_delete of this ActionParams.
+        :rtype: bool
+        """
+        return self._force_delete
+
+    @force_delete.setter
+    def force_delete(self, force_delete):
+        """Sets the force_delete of this ActionParams.
+
+        强制结束任务时取值true。
+
+        :param force_delete: The force_delete of this ActionParams.
+        :type force_delete: bool
+        """
+        self._force_delete = force_delete
 
     def to_dict(self):
         """Returns the model properties as a dict"""

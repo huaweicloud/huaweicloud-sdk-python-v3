@@ -24,7 +24,8 @@ class ResizeInstanceReq:
         'new_storage_space': 'int',
         'oper_type': 'str',
         'new_broker_num': 'int',
-        'new_product_id': 'str'
+        'new_product_id': 'str',
+        'publicip_id': 'str'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class ResizeInstanceReq:
         'new_storage_space': 'new_storage_space',
         'oper_type': 'oper_type',
         'new_broker_num': 'new_broker_num',
-        'new_product_id': 'new_product_id'
+        'new_product_id': 'new_product_id',
+        'publicip_id': 'publicip_id'
     }
 
-    def __init__(self, new_spec_code=None, new_storage_space=None, oper_type=None, new_broker_num=None, new_product_id=None):
+    def __init__(self, new_spec_code=None, new_storage_space=None, oper_type=None, new_broker_num=None, new_product_id=None, publicip_id=None):
         """ResizeInstanceReq
 
         The model defined in huaweicloud sdk
@@ -50,6 +52,8 @@ class ResizeInstanceReq:
         :type new_broker_num: int
         :param new_product_id: 新规格变更后的产品ID。 涉及垂直扩容场景，需指定该项。
         :type new_product_id: str
+        :param publicip_id: 实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网再扩容，需要填写此参数。
+        :type publicip_id: str
         """
         
         
@@ -59,6 +63,7 @@ class ResizeInstanceReq:
         self._oper_type = None
         self._new_broker_num = None
         self._new_product_id = None
+        self._publicip_id = None
         self.discriminator = None
 
         if new_spec_code is not None:
@@ -71,6 +76,8 @@ class ResizeInstanceReq:
             self.new_broker_num = new_broker_num
         if new_product_id is not None:
             self.new_product_id = new_product_id
+        if publicip_id is not None:
+            self.publicip_id = publicip_id
 
     @property
     def new_spec_code(self):
@@ -181,6 +188,28 @@ class ResizeInstanceReq:
         :type new_product_id: str
         """
         self._new_product_id = new_product_id
+
+    @property
+    def publicip_id(self):
+        """Gets the publicip_id of this ResizeInstanceReq.
+
+        实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网再扩容，需要填写此参数。
+
+        :return: The publicip_id of this ResizeInstanceReq.
+        :rtype: str
+        """
+        return self._publicip_id
+
+    @publicip_id.setter
+    def publicip_id(self, publicip_id):
+        """Sets the publicip_id of this ResizeInstanceReq.
+
+        实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网再扩容，需要填写此参数。
+
+        :param publicip_id: The publicip_id of this ResizeInstanceReq.
+        :type publicip_id: str
+        """
+        self._publicip_id = publicip_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

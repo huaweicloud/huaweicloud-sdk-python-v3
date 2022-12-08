@@ -46,7 +46,7 @@ class SummaryDomainReq:
         :type title: str
         :param lang: 支持的文本语言类型，目前支持中文（zh）。
         :type lang: str
-        :param content: 文本正文（目前仅支持UTF-8编码），长度不超过1000字。
+        :param content: 文本正文（目前仅支持UTF-8编码），长度不超过10000字。
         :type content: str
         :param type: 支持的领域类型，取值如下（目前只支持通用领域），默认为通用领域： 0：通用领域
         :type type: int
@@ -141,7 +141,7 @@ class SummaryDomainReq:
     def content(self):
         """Gets the content of this SummaryDomainReq.
 
-        文本正文（目前仅支持UTF-8编码），长度不超过1000字。
+        文本正文（目前仅支持UTF-8编码），长度不超过10000字。
 
         :return: The content of this SummaryDomainReq.
         :rtype: str
@@ -152,7 +152,7 @@ class SummaryDomainReq:
     def content(self, content):
         """Sets the content of this SummaryDomainReq.
 
-        文本正文（目前仅支持UTF-8编码），长度不超过1000字。
+        文本正文（目前仅支持UTF-8编码），长度不超过10000字。
 
         :param content: The content of this SummaryDomainReq.
         :type content: str

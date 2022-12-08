@@ -36,7 +36,7 @@ class Agency:
 
         :param provider_name: 用户使用的provider的名字。如果用户给与的provider_name含有重复的值，则返回400
         :type provider_name: str
-        :param agency_name: 对应provider所使用的IAM委托名称名称，RF会使用此委托的权限去访问、创建对应provider的资源
+        :param agency_name: 对应provider所使用的IAM委托名称，资源编排服务会使用此委托的权限去访问、创建对应provider的资源
         :type agency_name: str
         """
         
@@ -75,7 +75,7 @@ class Agency:
     def agency_name(self):
         """Gets the agency_name of this Agency.
 
-        对应provider所使用的IAM委托名称名称，RF会使用此委托的权限去访问、创建对应provider的资源
+        对应provider所使用的IAM委托名称，资源编排服务会使用此委托的权限去访问、创建对应provider的资源
 
         :return: The agency_name of this Agency.
         :rtype: str
@@ -86,7 +86,7 @@ class Agency:
     def agency_name(self, agency_name):
         """Sets the agency_name of this Agency.
 
-        对应provider所使用的IAM委托名称名称，RF会使用此委托的权限去访问、创建对应provider的资源
+        对应provider所使用的IAM委托名称，资源编排服务会使用此委托的权限去访问、创建对应provider的资源
 
         :param agency_name: The agency_name of this Agency.
         :type agency_name: str

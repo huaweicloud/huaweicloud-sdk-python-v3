@@ -10,9 +10,9 @@ class AosRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("AOS")
 
 
-    CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://rf-internal.cn-north-4.myhuaweicloud.com")
+    CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://aos.cn-north-4.myhuaweicloud.com")
 
-    CN_SOUTH_1 = Region(id="cn-south-1", endpoint="https://rf-internal.cn-south-1.myhuaweicloud.com")
+    CN_SOUTH_1 = Region(id="cn-south-1", endpoint="https://aos.cn-south-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,

@@ -36,7 +36,7 @@ class PostDomainNerRequest:
 
         The model defined in huaweicloud sdk
 
-        :param text: 待分析文本，长度为1~64，文本编码为UTF-8。
+        :param text: 待分析文本，长度为1~512，文本编码为UTF-8。
         :type text: str
         :param lang: 支持的文本语言类型，目前只支持中文，默认为zh。
         :type lang: str
@@ -61,7 +61,7 @@ class PostDomainNerRequest:
     def text(self):
         """Gets the text of this PostDomainNerRequest.
 
-        待分析文本，长度为1~64，文本编码为UTF-8。
+        待分析文本，长度为1~512，文本编码为UTF-8。
 
         :return: The text of this PostDomainNerRequest.
         :rtype: str
@@ -72,7 +72,7 @@ class PostDomainNerRequest:
     def text(self, text):
         """Sets the text of this PostDomainNerRequest.
 
-        待分析文本，长度为1~64，文本编码为UTF-8。
+        待分析文本，长度为1~512，文本编码为UTF-8。
 
         :param text: The text of this PostDomainNerRequest.
         :type text: str

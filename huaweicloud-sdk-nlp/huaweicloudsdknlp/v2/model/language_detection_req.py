@@ -32,7 +32,7 @@ class LanguageDetectionReq:
 
         The model defined in huaweicloud sdk
 
-        :param text: 需要识别语种的文本。仅支持utf-8编码，长度不超过1000字符。
+        :param text: 需要识别语种的文本。仅支持utf-8编码，长度不超过2000字符。
         :type text: str
         """
         
@@ -47,7 +47,7 @@ class LanguageDetectionReq:
     def text(self):
         """Gets the text of this LanguageDetectionReq.
 
-        需要识别语种的文本。仅支持utf-8编码，长度不超过1000字符。
+        需要识别语种的文本。仅支持utf-8编码，长度不超过2000字符。
 
         :return: The text of this LanguageDetectionReq.
         :rtype: str
@@ -58,7 +58,7 @@ class LanguageDetectionReq:
     def text(self, text):
         """Sets the text of this LanguageDetectionReq.
 
-        需要识别语种的文本。仅支持utf-8编码，长度不超过1000字符。
+        需要识别语种的文本。仅支持utf-8编码，长度不超过2000字符。
 
         :param text: The text of this LanguageDetectionReq.
         :type text: str

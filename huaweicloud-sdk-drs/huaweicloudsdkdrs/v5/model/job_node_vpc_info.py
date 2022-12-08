@@ -60,7 +60,8 @@ class JobNodeVpcInfo:
         self.subnet_id = subnet_id
         if custom_node_ip is not None:
             self.custom_node_ip = custom_node_ip
-        self.security_group_id = security_group_id
+        if security_group_id is not None:
+            self.security_group_id = security_group_id
 
     @property
     def vpc_id(self):

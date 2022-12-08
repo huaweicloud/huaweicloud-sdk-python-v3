@@ -26,6 +26,8 @@ class CloudtestRegion:
 
     SA_BRAZIL_1 = Region(id="sa-brazil-1", endpoint="https://cloudtest-ext.sa-brazil-1.myhuaweicloud.com")
 
+    AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://cloudtest-ext.ap-southeast-3.myhuaweicloud.com")
+
     static_fields = {
         "cn-north-1": CN_NORTH_1,
         "cn-north-4": CN_NORTH_4,
@@ -35,6 +37,7 @@ class CloudtestRegion:
         "cn-east-3": CN_EAST_3,
         "la-north-2": LA_NORTH_2,
         "sa-brazil-1": SA_BRAZIL_1,
+        "ap-southeast-3": AP_SOUTHEAST_3,
     }
 
     @classmethod

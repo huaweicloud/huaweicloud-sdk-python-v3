@@ -38,11 +38,11 @@ class InstanceRequestSpec:
 
         The model defined in huaweicloud sdk
 
-        :param version: 待安装、升级插件的具体版本版本号，例如1.0.0
+        :param version: 待安装、升级插件的具体版本版本号，例如1.0.0，如果不传，匹配集群支持的稳定版本
         :type version: str
         :param cluster_id: 集群id
         :type cluster_id: str
-        :param values: 插件模板安装参数（各插件不同），升级插件时需要填写全量安装参数，未填写参数将使用插件模板中的默认值，当前插件安装参数可通过查询插件实例接口获取。
+        :param values: 插件模板安装参数（各插件不同），升级插件时需要填写全量安装参数，未填写参数将使用插件模板中的默认值，当前插件安装参数可通过查询插件实例接口获取。 
         :type values: dict(str, object)
         :param addon_template_name: 待安装插件模板名称，如coredns
         :type addon_template_name: str
@@ -56,7 +56,8 @@ class InstanceRequestSpec:
         self._addon_template_name = None
         self.discriminator = None
 
-        self.version = version
+        if version is not None:
+            self.version = version
         self.cluster_id = cluster_id
         self.values = values
         self.addon_template_name = addon_template_name
@@ -65,7 +66,7 @@ class InstanceRequestSpec:
     def version(self):
         """Gets the version of this InstanceRequestSpec.
 
-        待安装、升级插件的具体版本版本号，例如1.0.0
+        待安装、升级插件的具体版本版本号，例如1.0.0，如果不传，匹配集群支持的稳定版本
 
         :return: The version of this InstanceRequestSpec.
         :rtype: str
@@ -76,7 +77,7 @@ class InstanceRequestSpec:
     def version(self, version):
         """Sets the version of this InstanceRequestSpec.
 
-        待安装、升级插件的具体版本版本号，例如1.0.0
+        待安装、升级插件的具体版本版本号，例如1.0.0，如果不传，匹配集群支持的稳定版本
 
         :param version: The version of this InstanceRequestSpec.
         :type version: str
@@ -109,7 +110,7 @@ class InstanceRequestSpec:
     def values(self):
         """Gets the values of this InstanceRequestSpec.
 
-        插件模板安装参数（各插件不同），升级插件时需要填写全量安装参数，未填写参数将使用插件模板中的默认值，当前插件安装参数可通过查询插件实例接口获取。
+        插件模板安装参数（各插件不同），升级插件时需要填写全量安装参数，未填写参数将使用插件模板中的默认值，当前插件安装参数可通过查询插件实例接口获取。 
 
         :return: The values of this InstanceRequestSpec.
         :rtype: dict(str, object)
@@ -120,7 +121,7 @@ class InstanceRequestSpec:
     def values(self, values):
         """Sets the values of this InstanceRequestSpec.
 
-        插件模板安装参数（各插件不同），升级插件时需要填写全量安装参数，未填写参数将使用插件模板中的默认值，当前插件安装参数可通过查询插件实例接口获取。
+        插件模板安装参数（各插件不同），升级插件时需要填写全量安装参数，未填写参数将使用插件模板中的默认值，当前插件安装参数可通过查询插件实例接口获取。 
 
         :param values: The values of this InstanceRequestSpec.
         :type values: dict(str, object)

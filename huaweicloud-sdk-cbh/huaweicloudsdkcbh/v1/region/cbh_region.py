@@ -20,12 +20,15 @@ class CbhRegion:
 
     CN_SOUTHWEST_2 = Region(id="cn-southwest-2", endpoint="https://cbh.cn-southwest-2.myhuaweicloud.com")
 
+    AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://cbh.ap-southeast-3.myhuaweicloud.com")
+
     static_fields = {
         "cn-north-4": CN_NORTH_4,
         "cn-north-9": CN_NORTH_9,
         "cn-east-3": CN_EAST_3,
         "cn-south-1": CN_SOUTH_1,
         "cn-southwest-2": CN_SOUTHWEST_2,
+        "ap-southeast-3": AP_SOUTHEAST_3,
     }
 
     @classmethod

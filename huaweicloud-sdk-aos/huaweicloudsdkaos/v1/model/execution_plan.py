@@ -52,7 +52,7 @@ class ExecutionPlan:
         :type stack_id: str
         :param stack_name: 栈的名字
         :type stack_name: str
-        :param execution_plan_id: 执行计划的唯一Id，由IaC随机生成,为uuid
+        :param execution_plan_id: 执行计划的唯一Id，由资源编排服务随机生成,为uuid
         :type execution_plan_id: str
         :param execution_plan_name: 执行计划的名字
         :type execution_plan_name: str
@@ -148,7 +148,7 @@ class ExecutionPlan:
     def execution_plan_id(self):
         """Gets the execution_plan_id of this ExecutionPlan.
 
-        执行计划的唯一Id，由IaC随机生成,为uuid
+        执行计划的唯一Id，由资源编排服务随机生成,为uuid
 
         :return: The execution_plan_id of this ExecutionPlan.
         :rtype: str
@@ -159,7 +159,7 @@ class ExecutionPlan:
     def execution_plan_id(self, execution_plan_id):
         """Sets the execution_plan_id of this ExecutionPlan.
 
-        执行计划的唯一Id，由IaC随机生成,为uuid
+        执行计划的唯一Id，由资源编排服务随机生成,为uuid
 
         :param execution_plan_id: The execution_plan_id of this ExecutionPlan.
         :type execution_plan_id: str

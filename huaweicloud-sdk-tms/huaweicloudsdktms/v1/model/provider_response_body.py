@@ -38,7 +38,7 @@ class ProviderResponseBody:
 
         :param provider: 云服务名称
         :type provider: str
-        :param provider_i18n_display_name: 服务显示名称，可以通过参数中&#39;locale&#39;设置语言。
+        :param provider_i18n_display_name: 服务显示名称，可以通过参数中“locale”设置语言。
         :type provider_i18n_display_name: str
         :param resource_types: 资源类型列表
         :type resource_types: list[:class:`huaweicloudsdktms.v1.ResourceTypeBody`]
@@ -81,7 +81,7 @@ class ProviderResponseBody:
     def provider_i18n_display_name(self):
         """Gets the provider_i18n_display_name of this ProviderResponseBody.
 
-        服务显示名称，可以通过参数中'locale'设置语言。
+        服务显示名称，可以通过参数中“locale”设置语言。
 
         :return: The provider_i18n_display_name of this ProviderResponseBody.
         :rtype: str
@@ -92,7 +92,7 @@ class ProviderResponseBody:
     def provider_i18n_display_name(self, provider_i18n_display_name):
         """Sets the provider_i18n_display_name of this ProviderResponseBody.
 
-        服务显示名称，可以通过参数中'locale'设置语言。
+        服务显示名称，可以通过参数中“locale”设置语言。
 
         :param provider_i18n_display_name: The provider_i18n_display_name of this ProviderResponseBody.
         :type provider_i18n_display_name: str

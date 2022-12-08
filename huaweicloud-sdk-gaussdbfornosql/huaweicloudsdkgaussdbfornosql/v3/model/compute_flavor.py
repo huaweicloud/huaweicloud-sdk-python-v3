@@ -61,16 +61,11 @@ class ComputeFlavor:
         self._region_status = None
         self.discriminator = None
 
-        if vcpus is not None:
-            self.vcpus = vcpus
-        if ram is not None:
-            self.ram = ram
-        if spec_code is not None:
-            self.spec_code = spec_code
-        if az_status is not None:
-            self.az_status = az_status
-        if region_status is not None:
-            self.region_status = region_status
+        self.vcpus = vcpus
+        self.ram = ram
+        self.spec_code = spec_code
+        self.az_status = az_status
+        self.region_status = region_status
 
     @property
     def vcpus(self):

@@ -51,10 +51,8 @@ class QuotaDetail:
         self._remaining = None
         self.discriminator = None
 
-        if zh_cn is not None:
-            self.zh_cn = zh_cn
-        if en_us is not None:
-            self.en_us = en_us
+        self.zh_cn = zh_cn
+        self.en_us = en_us
         self.remaining = remaining
 
     @property

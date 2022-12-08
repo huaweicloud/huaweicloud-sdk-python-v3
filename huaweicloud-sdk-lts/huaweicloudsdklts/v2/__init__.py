@@ -161,6 +161,8 @@ from huaweicloudsdklts.v2.model.list_struct_template_request import ListStructTe
 from huaweicloudsdklts.v2.model.list_struct_template_response import ListStructTemplateResponse
 from huaweicloudsdklts.v2.model.list_structured_logs_with_time_range_request import ListStructuredLogsWithTimeRangeRequest
 from huaweicloudsdklts.v2.model.list_structured_logs_with_time_range_response import ListStructuredLogsWithTimeRangeResponse
+from huaweicloudsdklts.v2.model.list_time_line_traffic_statistics_request import ListTimeLineTrafficStatisticsRequest
+from huaweicloudsdklts.v2.model.list_time_line_traffic_statistics_response import ListTimeLineTrafficStatisticsResponse
 from huaweicloudsdklts.v2.model.list_transfers_request import ListTransfersRequest
 from huaweicloudsdklts.v2.model.list_transfers_response import ListTransfersResponse
 from huaweicloudsdklts.v2.model.log_contents import LogContents
@@ -180,6 +182,7 @@ from huaweicloudsdklts.v2.model.register_dms_kafka_instance_request import Regis
 from huaweicloudsdklts.v2.model.register_dms_kafka_instance_request_body import RegisterDmsKafkaInstanceRequestBody
 from huaweicloudsdklts.v2.model.register_dms_kafka_instance_request_body_connect_info import RegisterDmsKafkaInstanceRequestBodyConnectInfo
 from huaweicloudsdklts.v2.model.register_dms_kafka_instance_response import RegisterDmsKafkaInstanceResponse
+from huaweicloudsdklts.v2.model.resulits import Resulits
 from huaweicloudsdklts.v2.model.rule import Rule
 from huaweicloudsdklts.v2.model.show_aom_mapping_rule_request import ShowAomMappingRuleRequest
 from huaweicloudsdklts.v2.model.show_aom_mapping_rule_response import ShowAomMappingRuleResponse
@@ -206,6 +209,7 @@ from huaweicloudsdklts.v2.model.tag_field_new import TagFieldNew
 from huaweicloudsdklts.v2.model.tag_fields_info import TagFieldsInfo
 from huaweicloudsdklts.v2.model.template_rule import TemplateRule
 from huaweicloudsdklts.v2.model.time_range import TimeRange
+from huaweicloudsdklts.v2.model.timeline_traffic_statistics_request_body import TimelineTrafficStatisticsRequestBody
 from huaweicloudsdklts.v2.model.topics import Topics
 from huaweicloudsdklts.v2.model.transfer_detail import TransferDetail
 from huaweicloudsdklts.v2.model.update_access_config_request import UpdateAccessConfigRequest

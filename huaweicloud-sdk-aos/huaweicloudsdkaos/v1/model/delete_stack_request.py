@@ -22,18 +22,16 @@ class DeleteStackRequest:
     openapi_types = {
         'client_request_id': 'str',
         'stack_name': 'str',
-        'stack_id': 'str',
-        'executor': 'str'
+        'stack_id': 'str'
     }
 
     attribute_map = {
         'client_request_id': 'Client-Request-Id',
         'stack_name': 'stack_name',
-        'stack_id': 'stack_id',
-        'executor': 'executor'
+        'stack_id': 'stack_id'
     }
 
-    def __init__(self, client_request_id=None, stack_name=None, stack_id=None, executor=None):
+    def __init__(self, client_request_id=None, stack_name=None, stack_id=None):
         """DeleteStackRequest
 
         The model defined in huaweicloud sdk
@@ -42,10 +40,8 @@ class DeleteStackRequest:
         :type client_request_id: str
         :param stack_name: 用户希望操作的资源栈名
         :type stack_name: str
-        :param stack_id: 用户希望描述的栈的Id。若stack_name和stack_id同时存在，则IaC会检查是否两个匹配，否则返回400
+        :param stack_id: 用户希望描述的栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
         :type stack_id: str
-        :param executor: 执行操作者的名字，将用做未来的审计工作。
-        :type executor: str
         """
         
         
@@ -53,15 +49,12 @@ class DeleteStackRequest:
         self._client_request_id = None
         self._stack_name = None
         self._stack_id = None
-        self._executor = None
         self.discriminator = None
 
         self.client_request_id = client_request_id
         self.stack_name = stack_name
         if stack_id is not None:
             self.stack_id = stack_id
-        if executor is not None:
-            self.executor = executor
 
     @property
     def client_request_id(self):
@@ -111,7 +104,7 @@ class DeleteStackRequest:
     def stack_id(self):
         """Gets the stack_id of this DeleteStackRequest.
 
-        用户希望描述的栈的Id。若stack_name和stack_id同时存在，则IaC会检查是否两个匹配，否则返回400
+        用户希望描述的栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
 
         :return: The stack_id of this DeleteStackRequest.
         :rtype: str
@@ -122,34 +115,12 @@ class DeleteStackRequest:
     def stack_id(self, stack_id):
         """Sets the stack_id of this DeleteStackRequest.
 
-        用户希望描述的栈的Id。若stack_name和stack_id同时存在，则IaC会检查是否两个匹配，否则返回400
+        用户希望描述的栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
 
         :param stack_id: The stack_id of this DeleteStackRequest.
         :type stack_id: str
         """
         self._stack_id = stack_id
-
-    @property
-    def executor(self):
-        """Gets the executor of this DeleteStackRequest.
-
-        执行操作者的名字，将用做未来的审计工作。
-
-        :return: The executor of this DeleteStackRequest.
-        :rtype: str
-        """
-        return self._executor
-
-    @executor.setter
-    def executor(self, executor):
-        """Sets the executor of this DeleteStackRequest.
-
-        执行操作者的名字，将用做未来的审计工作。
-
-        :param executor: The executor of this DeleteStackRequest.
-        :type executor: str
-        """
-        self._executor = executor
 
     def to_dict(self):
         """Returns the model properties as a dict"""

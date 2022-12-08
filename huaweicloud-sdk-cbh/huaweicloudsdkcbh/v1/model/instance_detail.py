@@ -20,7 +20,7 @@ class InstanceDetail:
     sensitive_list = []
 
     openapi_types = {
-        'publicip': 'str',
+        'public_ip': 'str',
         'exp_time': 'str',
         'start_time': 'str',
         'end_time': 'str',
@@ -46,16 +46,17 @@ class InstanceDetail:
         'period_num': 'str',
         'resource_id': 'str',
         'bastion_type': 'str',
-        'public_id': 'str',
         'alter_permit': 'str',
+        'public_id': 'str',
         'bastion_version': 'str',
         'new_bastion_version': 'str',
         'instance_status': 'str',
-        'instance_description': 'str'
+        'instance_description': 'str',
+        'is_auto_renew': 'int'
     }
 
     attribute_map = {
-        'publicip': 'publicip',
+        'public_ip': 'public_ip',
         'exp_time': 'exp_time',
         'start_time': 'start_time',
         'end_time': 'end_time',
@@ -81,28 +82,29 @@ class InstanceDetail:
         'period_num': 'period_num',
         'resource_id': 'resource_id',
         'bastion_type': 'bastion_type',
-        'public_id': 'public_id',
         'alter_permit': 'alter_permit',
+        'public_id': 'public_id',
         'bastion_version': 'bastion_version',
         'new_bastion_version': 'new_bastion_version',
         'instance_status': 'instance_status',
-        'instance_description': 'instance_description'
+        'instance_description': 'instance_description',
+        'is_auto_renew': 'is_auto_renew'
     }
 
-    def __init__(self, publicip=None, exp_time=None, start_time=None, end_time=None, release_time=None, name=None, instance_id=None, private_ip=None, task_status=None, status=None, created=None, region=None, zone=None, availability_zone_display=None, vpc_id=None, subnet_id=None, security_group_id=None, specification=None, update=None, createinstance_status=None, fail_reason=None, instance_key=None, order_id=None, period_num=None, resource_id=None, bastion_type=None, public_id=None, alter_permit=None, bastion_version=None, new_bastion_version=None, instance_status=None, instance_description=None):
+    def __init__(self, public_ip=None, exp_time=None, start_time=None, end_time=None, release_time=None, name=None, instance_id=None, private_ip=None, task_status=None, status=None, created=None, region=None, zone=None, availability_zone_display=None, vpc_id=None, subnet_id=None, security_group_id=None, specification=None, update=None, createinstance_status=None, fail_reason=None, instance_key=None, order_id=None, period_num=None, resource_id=None, bastion_type=None, alter_permit=None, public_id=None, bastion_version=None, new_bastion_version=None, instance_status=None, instance_description=None, is_auto_renew=None):
         """InstanceDetail
 
         The model defined in huaweicloud sdk
 
-        :param publicip: 弹性ip
-        :type publicip: str
-        :param exp_time: 过期时间
+        :param public_ip: 弹性ip
+        :type public_ip: str
+        :param exp_time: 过期时间，要求用UTC时间表示
         :type exp_time: str
-        :param start_time: 开始时间
+        :param start_time: 开始时间，要求用UTC时间表示
         :type start_time: str
-        :param end_time: 结束时间
+        :param end_time: 结束时间，要求用UTC时间表示
         :type end_time: str
-        :param release_time: 释放时间
+        :param release_time: 释放时间，要求用UTC时间表示
         :type release_time: str
         :param name: 实例名称
         :type name: str
@@ -114,7 +116,7 @@ class InstanceDetail:
         :type task_status: str
         :param status: 实例状态
         :type status: str
-        :param created: 实例创建时间
+        :param created: 实例创建时间，要求用UTC时间表示
         :type created: str
         :param region: 实例所在region
         :type region: str
@@ -146,10 +148,10 @@ class InstanceDetail:
         :type resource_id: str
         :param bastion_type: 堡垒机类型
         :type bastion_type: str
-        :param public_id: 实例绑定的弹性IP的id
-        :type public_id: str
         :param alter_permit: 前端是否显示扩容按钮
         :type alter_permit: str
+        :param public_id: 实例绑定的弹性IP的id
+        :type public_id: str
         :param bastion_version: 实例镜像当前版本号
         :type bastion_version: str
         :param new_bastion_version: 实例镜像最新版本号
@@ -158,11 +160,13 @@ class InstanceDetail:
         :type instance_status: str
         :param instance_description: 实例描述
         :type instance_description: str
+        :param is_auto_renew: 是否支持续费
+        :type is_auto_renew: int
         """
         
         
 
-        self._publicip = None
+        self._public_ip = None
         self._exp_time = None
         self._start_time = None
         self._end_time = None
@@ -188,96 +192,76 @@ class InstanceDetail:
         self._period_num = None
         self._resource_id = None
         self._bastion_type = None
-        self._public_id = None
         self._alter_permit = None
+        self._public_id = None
         self._bastion_version = None
         self._new_bastion_version = None
         self._instance_status = None
         self._instance_description = None
+        self._is_auto_renew = None
         self.discriminator = None
 
-        self.publicip = publicip
-        if exp_time is not None:
-            self.exp_time = exp_time
-        if start_time is not None:
-            self.start_time = start_time
-        if end_time is not None:
-            self.end_time = end_time
-        if release_time is not None:
-            self.release_time = release_time
+        self.public_ip = public_ip
+        self.exp_time = exp_time
+        self.start_time = start_time
+        self.end_time = end_time
+        self.release_time = release_time
         self.name = name
-        if instance_id is not None:
-            self.instance_id = instance_id
-        if private_ip is not None:
-            self.private_ip = private_ip
-        if task_status is not None:
-            self.task_status = task_status
+        self.instance_id = instance_id
+        self.private_ip = private_ip
+        self.task_status = task_status
         self.status = status
         self.created = created
         self.region = region
         self.zone = zone
         self.availability_zone_display = availability_zone_display
-        if vpc_id is not None:
-            self.vpc_id = vpc_id
-        if subnet_id is not None:
-            self.subnet_id = subnet_id
-        if security_group_id is not None:
-            self.security_group_id = security_group_id
+        self.vpc_id = vpc_id
+        self.subnet_id = subnet_id
+        self.security_group_id = security_group_id
         self.specification = specification
         self.update = update
-        if createinstance_status is not None:
-            self.createinstance_status = createinstance_status
-        if fail_reason is not None:
-            self.fail_reason = fail_reason
-        if instance_key is not None:
-            self.instance_key = instance_key
-        if order_id is not None:
-            self.order_id = order_id
-        if period_num is not None:
-            self.period_num = period_num
-        if resource_id is not None:
-            self.resource_id = resource_id
+        self.createinstance_status = createinstance_status
+        self.fail_reason = fail_reason
+        self.instance_key = instance_key
+        self.order_id = order_id
+        self.period_num = period_num
+        self.resource_id = resource_id
         self.bastion_type = bastion_type
-        if public_id is not None:
-            self.public_id = public_id
-        if alter_permit is not None:
-            self.alter_permit = alter_permit
-        if bastion_version is not None:
-            self.bastion_version = bastion_version
-        if new_bastion_version is not None:
-            self.new_bastion_version = new_bastion_version
-        if instance_status is not None:
-            self.instance_status = instance_status
-        if instance_description is not None:
-            self.instance_description = instance_description
+        self.alter_permit = alter_permit
+        self.public_id = public_id
+        self.bastion_version = bastion_version
+        self.new_bastion_version = new_bastion_version
+        self.instance_status = instance_status
+        self.instance_description = instance_description
+        self.is_auto_renew = is_auto_renew
 
     @property
-    def publicip(self):
-        """Gets the publicip of this InstanceDetail.
+    def public_ip(self):
+        """Gets the public_ip of this InstanceDetail.
 
         弹性ip
 
-        :return: The publicip of this InstanceDetail.
+        :return: The public_ip of this InstanceDetail.
         :rtype: str
         """
-        return self._publicip
+        return self._public_ip
 
-    @publicip.setter
-    def publicip(self, publicip):
-        """Sets the publicip of this InstanceDetail.
+    @public_ip.setter
+    def public_ip(self, public_ip):
+        """Sets the public_ip of this InstanceDetail.
 
         弹性ip
 
-        :param publicip: The publicip of this InstanceDetail.
-        :type publicip: str
+        :param public_ip: The public_ip of this InstanceDetail.
+        :type public_ip: str
         """
-        self._publicip = publicip
+        self._public_ip = public_ip
 
     @property
     def exp_time(self):
         """Gets the exp_time of this InstanceDetail.
 
-        过期时间
+        过期时间，要求用UTC时间表示
 
         :return: The exp_time of this InstanceDetail.
         :rtype: str
@@ -288,7 +272,7 @@ class InstanceDetail:
     def exp_time(self, exp_time):
         """Sets the exp_time of this InstanceDetail.
 
-        过期时间
+        过期时间，要求用UTC时间表示
 
         :param exp_time: The exp_time of this InstanceDetail.
         :type exp_time: str
@@ -299,7 +283,7 @@ class InstanceDetail:
     def start_time(self):
         """Gets the start_time of this InstanceDetail.
 
-        开始时间
+        开始时间，要求用UTC时间表示
 
         :return: The start_time of this InstanceDetail.
         :rtype: str
@@ -310,7 +294,7 @@ class InstanceDetail:
     def start_time(self, start_time):
         """Sets the start_time of this InstanceDetail.
 
-        开始时间
+        开始时间，要求用UTC时间表示
 
         :param start_time: The start_time of this InstanceDetail.
         :type start_time: str
@@ -321,7 +305,7 @@ class InstanceDetail:
     def end_time(self):
         """Gets the end_time of this InstanceDetail.
 
-        结束时间
+        结束时间，要求用UTC时间表示
 
         :return: The end_time of this InstanceDetail.
         :rtype: str
@@ -332,7 +316,7 @@ class InstanceDetail:
     def end_time(self, end_time):
         """Sets the end_time of this InstanceDetail.
 
-        结束时间
+        结束时间，要求用UTC时间表示
 
         :param end_time: The end_time of this InstanceDetail.
         :type end_time: str
@@ -343,7 +327,7 @@ class InstanceDetail:
     def release_time(self):
         """Gets the release_time of this InstanceDetail.
 
-        释放时间
+        释放时间，要求用UTC时间表示
 
         :return: The release_time of this InstanceDetail.
         :rtype: str
@@ -354,7 +338,7 @@ class InstanceDetail:
     def release_time(self, release_time):
         """Sets the release_time of this InstanceDetail.
 
-        释放时间
+        释放时间，要求用UTC时间表示
 
         :param release_time: The release_time of this InstanceDetail.
         :type release_time: str
@@ -475,7 +459,7 @@ class InstanceDetail:
     def created(self):
         """Gets the created of this InstanceDetail.
 
-        实例创建时间
+        实例创建时间，要求用UTC时间表示
 
         :return: The created of this InstanceDetail.
         :rtype: str
@@ -486,7 +470,7 @@ class InstanceDetail:
     def created(self, created):
         """Sets the created of this InstanceDetail.
 
-        实例创建时间
+        实例创建时间，要求用UTC时间表示
 
         :param created: The created of this InstanceDetail.
         :type created: str
@@ -824,28 +808,6 @@ class InstanceDetail:
         self._bastion_type = bastion_type
 
     @property
-    def public_id(self):
-        """Gets the public_id of this InstanceDetail.
-
-        实例绑定的弹性IP的id
-
-        :return: The public_id of this InstanceDetail.
-        :rtype: str
-        """
-        return self._public_id
-
-    @public_id.setter
-    def public_id(self, public_id):
-        """Sets the public_id of this InstanceDetail.
-
-        实例绑定的弹性IP的id
-
-        :param public_id: The public_id of this InstanceDetail.
-        :type public_id: str
-        """
-        self._public_id = public_id
-
-    @property
     def alter_permit(self):
         """Gets the alter_permit of this InstanceDetail.
 
@@ -866,6 +828,28 @@ class InstanceDetail:
         :type alter_permit: str
         """
         self._alter_permit = alter_permit
+
+    @property
+    def public_id(self):
+        """Gets the public_id of this InstanceDetail.
+
+        实例绑定的弹性IP的id
+
+        :return: The public_id of this InstanceDetail.
+        :rtype: str
+        """
+        return self._public_id
+
+    @public_id.setter
+    def public_id(self, public_id):
+        """Sets the public_id of this InstanceDetail.
+
+        实例绑定的弹性IP的id
+
+        :param public_id: The public_id of this InstanceDetail.
+        :type public_id: str
+        """
+        self._public_id = public_id
 
     @property
     def bastion_version(self):
@@ -954,6 +938,28 @@ class InstanceDetail:
         :type instance_description: str
         """
         self._instance_description = instance_description
+
+    @property
+    def is_auto_renew(self):
+        """Gets the is_auto_renew of this InstanceDetail.
+
+        是否支持续费
+
+        :return: The is_auto_renew of this InstanceDetail.
+        :rtype: int
+        """
+        return self._is_auto_renew
+
+    @is_auto_renew.setter
+    def is_auto_renew(self, is_auto_renew):
+        """Sets the is_auto_renew of this InstanceDetail.
+
+        是否支持续费
+
+        :param is_auto_renew: The is_auto_renew of this InstanceDetail.
+        :type is_auto_renew: int
+        """
+        self._is_auto_renew = is_auto_renew
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -32,7 +32,7 @@ class TemplateBodyPrimitiveTypeHolder:
 
         The model defined in huaweicloud sdk
 
-        :param template_body: HCL模板，描述了资源的目标状态。RF将比较此模板与当前远程资源的状态之间的区别。  template_body和template_uri 必须有且只有一个存在 
+        :param template_body: HCL模板，描述了资源的目标状态。资源编排服务将比较此模板与当前远程资源的状态之间的区别。  template_body和template_uri 必须有且只有一个存在 
         :type template_body: str
         """
         
@@ -48,7 +48,7 @@ class TemplateBodyPrimitiveTypeHolder:
     def template_body(self):
         """Gets the template_body of this TemplateBodyPrimitiveTypeHolder.
 
-        HCL模板，描述了资源的目标状态。RF将比较此模板与当前远程资源的状态之间的区别。  template_body和template_uri 必须有且只有一个存在 
+        HCL模板，描述了资源的目标状态。资源编排服务将比较此模板与当前远程资源的状态之间的区别。  template_body和template_uri 必须有且只有一个存在 
 
         :return: The template_body of this TemplateBodyPrimitiveTypeHolder.
         :rtype: str
@@ -59,7 +59,7 @@ class TemplateBodyPrimitiveTypeHolder:
     def template_body(self, template_body):
         """Sets the template_body of this TemplateBodyPrimitiveTypeHolder.
 
-        HCL模板，描述了资源的目标状态。RF将比较此模板与当前远程资源的状态之间的区别。  template_body和template_uri 必须有且只有一个存在 
+        HCL模板，描述了资源的目标状态。资源编排服务将比较此模板与当前远程资源的状态之间的区别。  template_body和template_uri 必须有且只有一个存在 
 
         :param template_body: The template_body of this TemplateBodyPrimitiveTypeHolder.
         :type template_body: str

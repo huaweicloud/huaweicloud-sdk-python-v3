@@ -46,7 +46,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
 
         :param groups: 待删除的消费组列表。
         :type groups: list[str]
-        :param enabled: 是否启用。
+        :param enabled: 是否可以消费。
         :type enabled: bool
         :param broadcast: 是否广播。
         :type broadcast: bool
@@ -112,7 +112,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
     def enabled(self):
         """Gets the enabled of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        是否启用。
+        是否可以消费。
 
         :return: The enabled of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
         :rtype: bool
@@ -123,7 +123,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
     def enabled(self, enabled):
         """Sets the enabled of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        是否启用。
+        是否可以消费。
 
         :param enabled: The enabled of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
         :type enabled: bool

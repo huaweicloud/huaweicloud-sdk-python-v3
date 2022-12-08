@@ -20,42 +20,35 @@ class ListStackOutputsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'outputs': 'list[StackOutput]',
-        'next_marker': 'str'
+        'outputs': 'list[StackOutput]'
     }
 
     attribute_map = {
-        'outputs': 'outputs',
-        'next_marker': 'next_marker'
+        'outputs': 'outputs'
     }
 
-    def __init__(self, outputs=None, next_marker=None):
+    def __init__(self, outputs=None):
         """ListStackOutputsResponse
 
         The model defined in huaweicloud sdk
 
-        :param outputs: 堆栈输出
+        :param outputs: 资源栈输出
         :type outputs: list[:class:`huaweicloudsdkaos.v1.StackOutput`]
-        :param next_marker: 下一页的标记信息
-        :type next_marker: str
         """
         
         super(ListStackOutputsResponse, self).__init__()
 
         self._outputs = None
-        self._next_marker = None
         self.discriminator = None
 
         if outputs is not None:
             self.outputs = outputs
-        if next_marker is not None:
-            self.next_marker = next_marker
 
     @property
     def outputs(self):
         """Gets the outputs of this ListStackOutputsResponse.
 
-        堆栈输出
+        资源栈输出
 
         :return: The outputs of this ListStackOutputsResponse.
         :rtype: list[:class:`huaweicloudsdkaos.v1.StackOutput`]
@@ -66,34 +59,12 @@ class ListStackOutputsResponse(SdkResponse):
     def outputs(self, outputs):
         """Sets the outputs of this ListStackOutputsResponse.
 
-        堆栈输出
+        资源栈输出
 
         :param outputs: The outputs of this ListStackOutputsResponse.
         :type outputs: list[:class:`huaweicloudsdkaos.v1.StackOutput`]
         """
         self._outputs = outputs
-
-    @property
-    def next_marker(self):
-        """Gets the next_marker of this ListStackOutputsResponse.
-
-        下一页的标记信息
-
-        :return: The next_marker of this ListStackOutputsResponse.
-        :rtype: str
-        """
-        return self._next_marker
-
-    @next_marker.setter
-    def next_marker(self, next_marker):
-        """Sets the next_marker of this ListStackOutputsResponse.
-
-        下一页的标记信息
-
-        :param next_marker: The next_marker of this ListStackOutputsResponse.
-        :type next_marker: str
-        """
-        self._next_marker = next_marker
 
     def to_dict(self):
         """Returns the model properties as a dict"""

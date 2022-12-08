@@ -31,7 +31,6 @@ class CreateDesktopReq:
         'security_groups': 'list[SecurityGroupInfo]',
         'desktops': 'list[Desktop]',
         'email_notification': 'bool',
-        'vpc_id': 'str',
         'tags': 'list[Tag]'
     }
 
@@ -47,11 +46,10 @@ class CreateDesktopReq:
         'security_groups': 'security_groups',
         'desktops': 'desktops',
         'email_notification': 'email_notification',
-        'vpc_id': 'vpc_id',
         'tags': 'tags'
     }
 
-    def __init__(self, desktop_type=None, availability_zone=None, product_id=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, nics=None, security_groups=None, desktops=None, email_notification=None, vpc_id=None, tags=None):
+    def __init__(self, desktop_type=None, availability_zone=None, product_id=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, nics=None, security_groups=None, desktops=None, email_notification=None, tags=None):
         """CreateDesktopReq
 
         The model defined in huaweicloud sdk
@@ -78,8 +76,6 @@ class CreateDesktopReq:
         :type desktops: list[:class:`huaweicloudsdkworkspace.v2.Desktop`]
         :param email_notification: 创建成功后是否发送邮件通知桌面用户，默认为true。此参数仅在开通云桌面服务的domain_type为LOCAL_AD时有效，为LITE_AS时无效，因为LITE_AS首次创建桌面时必须发送邮件通知桌面用户修改登录密码。
         :type email_notification: bool
-        :param vpc_id: 在非对接AD场景首次创建桌面时使用。
-        :type vpc_id: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
         """
@@ -97,7 +93,6 @@ class CreateDesktopReq:
         self._security_groups = None
         self._desktops = None
         self._email_notification = None
-        self._vpc_id = None
         self._tags = None
         self.discriminator = None
 
@@ -117,8 +112,6 @@ class CreateDesktopReq:
         self.desktops = desktops
         if email_notification is not None:
             self.email_notification = email_notification
-        if vpc_id is not None:
-            self.vpc_id = vpc_id
         if tags is not None:
             self.tags = tags
 
@@ -359,28 +352,6 @@ class CreateDesktopReq:
         :type email_notification: bool
         """
         self._email_notification = email_notification
-
-    @property
-    def vpc_id(self):
-        """Gets the vpc_id of this CreateDesktopReq.
-
-        在非对接AD场景首次创建桌面时使用。
-
-        :return: The vpc_id of this CreateDesktopReq.
-        :rtype: str
-        """
-        return self._vpc_id
-
-    @vpc_id.setter
-    def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateDesktopReq.
-
-        在非对接AD场景首次创建桌面时使用。
-
-        :param vpc_id: The vpc_id of this CreateDesktopReq.
-        :type vpc_id: str
-        """
-        self._vpc_id = vpc_id
 
     @property
     def tags(self):

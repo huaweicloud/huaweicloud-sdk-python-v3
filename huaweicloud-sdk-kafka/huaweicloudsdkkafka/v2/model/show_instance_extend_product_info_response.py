@@ -21,7 +21,7 @@ class ShowInstanceExtendProductInfoResponse(SdkResponse):
 
     openapi_types = {
         'hourly': 'list[ShowInstanceExtendProductInfoRespHourly]',
-        'monthly': 'list[ListProductsRespHourly]'
+        'monthly': 'list[ShowInstanceExtendProductInfoRespHourly]'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class ShowInstanceExtendProductInfoResponse(SdkResponse):
         :param hourly: 表示按需付费的产品列表。
         :type hourly: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceExtendProductInfoRespHourly`]
         :param monthly: 表示包年包月的产品列表。当前暂不支持通过API创建包年包月的Kafka实例。
-        :type monthly: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespHourly`]
+        :type monthly: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceExtendProductInfoRespHourly`]
         """
         
         super(ShowInstanceExtendProductInfoResponse, self).__init__()
@@ -80,7 +80,7 @@ class ShowInstanceExtendProductInfoResponse(SdkResponse):
         表示包年包月的产品列表。当前暂不支持通过API创建包年包月的Kafka实例。
 
         :return: The monthly of this ShowInstanceExtendProductInfoResponse.
-        :rtype: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespHourly`]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceExtendProductInfoRespHourly`]
         """
         return self._monthly
 
@@ -91,7 +91,7 @@ class ShowInstanceExtendProductInfoResponse(SdkResponse):
         表示包年包月的产品列表。当前暂不支持通过API创建包年包月的Kafka实例。
 
         :param monthly: The monthly of this ShowInstanceExtendProductInfoResponse.
-        :type monthly: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespHourly`]
+        :type monthly: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceExtendProductInfoRespHourly`]
         """
         self._monthly = monthly
 

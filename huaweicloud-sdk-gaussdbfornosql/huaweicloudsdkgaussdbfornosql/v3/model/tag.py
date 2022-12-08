@@ -51,12 +51,9 @@ class Tag:
         self._values = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
-        if key is not None:
-            self.key = key
-        if values is not None:
-            self.values = values
+        self.type = type
+        self.key = key
+        self.values = values
 
     @property
     def type(self):

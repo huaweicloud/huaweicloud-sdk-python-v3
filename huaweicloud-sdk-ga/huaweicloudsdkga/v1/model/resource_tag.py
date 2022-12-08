@@ -34,9 +34,9 @@ class ResourceTag:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签键，填写规则： - 1.key不能为空，长度1~128个字符（中文也可以输入128个字符）。 - 2.可用 UTF-8 格式表示的字母（包含中文）、数字和空格，以及以下字符_ . : &#x3D; + - @。 - 3._sys_开头属于系统标签，租户不能输入。
+        :param key: 标签键，规则： - 1.key不能为空，长度1~128个字符（中文也可以输入128个字符）。 - 2.可用 UTF-8 格式表示的字母（包含中文）、数字和空格，以及以下字符_ . : &#x3D; + - @。 - 3._sys_开头属于系统标签，租户不能输入。
         :type key: str
-        :param value: 标签值，填写规则： - 1.长度0~255个字符（中文也可以输入255个字符）。 - 2.可用 UTF-8 格式表示的字母（包含中文）、数字和空格，以及以下字符_ . : / &#x3D; + - @。 - 3.资源标签值可以为空（empty or null）。
+        :param value: 标签值，规则： - 1.长度0~255个字符（中文也可以输入255个字符）。 - 2.可用 UTF-8 格式表示的字母（包含中文）、数字和空格，以及以下字符_ . : / &#x3D; + - @。 - 3.资源标签值可以为空（empty or null）。
         :type value: str
         """
         
@@ -53,7 +53,7 @@ class ResourceTag:
     def key(self):
         """Gets the key of this ResourceTag.
 
-        标签键，填写规则： - 1.key不能为空，长度1~128个字符（中文也可以输入128个字符）。 - 2.可用 UTF-8 格式表示的字母（包含中文）、数字和空格，以及以下字符_ . : = + - @。 - 3._sys_开头属于系统标签，租户不能输入。
+        标签键，规则： - 1.key不能为空，长度1~128个字符（中文也可以输入128个字符）。 - 2.可用 UTF-8 格式表示的字母（包含中文）、数字和空格，以及以下字符_ . : = + - @。 - 3._sys_开头属于系统标签，租户不能输入。
 
         :return: The key of this ResourceTag.
         :rtype: str
@@ -64,7 +64,7 @@ class ResourceTag:
     def key(self, key):
         """Sets the key of this ResourceTag.
 
-        标签键，填写规则： - 1.key不能为空，长度1~128个字符（中文也可以输入128个字符）。 - 2.可用 UTF-8 格式表示的字母（包含中文）、数字和空格，以及以下字符_ . : = + - @。 - 3._sys_开头属于系统标签，租户不能输入。
+        标签键，规则： - 1.key不能为空，长度1~128个字符（中文也可以输入128个字符）。 - 2.可用 UTF-8 格式表示的字母（包含中文）、数字和空格，以及以下字符_ . : = + - @。 - 3._sys_开头属于系统标签，租户不能输入。
 
         :param key: The key of this ResourceTag.
         :type key: str
@@ -75,7 +75,7 @@ class ResourceTag:
     def value(self):
         """Gets the value of this ResourceTag.
 
-        标签值，填写规则： - 1.长度0~255个字符（中文也可以输入255个字符）。 - 2.可用 UTF-8 格式表示的字母（包含中文）、数字和空格，以及以下字符_ . : / = + - @。 - 3.资源标签值可以为空（empty or null）。
+        标签值，规则： - 1.长度0~255个字符（中文也可以输入255个字符）。 - 2.可用 UTF-8 格式表示的字母（包含中文）、数字和空格，以及以下字符_ . : / = + - @。 - 3.资源标签值可以为空（empty or null）。
 
         :return: The value of this ResourceTag.
         :rtype: str
@@ -86,7 +86,7 @@ class ResourceTag:
     def value(self, value):
         """Sets the value of this ResourceTag.
 
-        标签值，填写规则： - 1.长度0~255个字符（中文也可以输入255个字符）。 - 2.可用 UTF-8 格式表示的字母（包含中文）、数字和空格，以及以下字符_ . : / = + - @。 - 3.资源标签值可以为空（empty or null）。
+        标签值，规则： - 1.长度0~255个字符（中文也可以输入255个字符）。 - 2.可用 UTF-8 格式表示的字母（包含中文）、数字和空格，以及以下字符_ . : / = + - @。 - 3.资源标签值可以为空（empty or null）。
 
         :param value: The value of this ResourceTag.
         :type value: str

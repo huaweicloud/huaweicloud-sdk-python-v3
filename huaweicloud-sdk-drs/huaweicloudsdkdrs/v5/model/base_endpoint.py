@@ -89,8 +89,10 @@ class BaseEndpoint:
         if id is not None:
             self.id = id
         self.endpoint_name = endpoint_name
-        self.ip = ip
-        self.db_port = db_port
+        if ip is not None:
+            self.ip = ip
+        if db_port is not None:
+            self.db_port = db_port
         self.db_user = db_user
         self.db_password = db_password
         if instance_id is not None:

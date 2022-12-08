@@ -25,7 +25,9 @@ class ShowGroupResponse(SdkResponse):
         'brokers': 'list[str]',
         'name': 'str',
         'retry_max_time': 'float',
-        'from_beginning': 'bool'
+        'app_id': 'str',
+        'app_name': 'str',
+        'permissions': 'list[str]'
     }
 
     attribute_map = {
@@ -34,15 +36,17 @@ class ShowGroupResponse(SdkResponse):
         'brokers': 'brokers',
         'name': 'name',
         'retry_max_time': 'retry_max_time',
-        'from_beginning': 'from_beginning'
+        'app_id': 'app_id',
+        'app_name': 'app_name',
+        'permissions': 'permissions'
     }
 
-    def __init__(self, enabled=None, broadcast=None, brokers=None, name=None, retry_max_time=None, from_beginning=None):
+    def __init__(self, enabled=None, broadcast=None, brokers=None, name=None, retry_max_time=None, app_id=None, app_name=None, permissions=None):
         """ShowGroupResponse
 
         The model defined in huaweicloud sdk
 
-        :param enabled: 是否启用。
+        :param enabled: 是否可以消费。
         :type enabled: bool
         :param broadcast: 是否广播。
         :type broadcast: bool
@@ -52,8 +56,12 @@ class ShowGroupResponse(SdkResponse):
         :type name: str
         :param retry_max_time: 最大重试次数。
         :type retry_max_time: float
-        :param from_beginning: 是否重头消费。
-        :type from_beginning: bool
+        :param app_id: 应用id。
+        :type app_id: str
+        :param app_name: 应用名称。
+        :type app_name: str
+        :param permissions: 权限。
+        :type permissions: list[str]
         """
         
         super(ShowGroupResponse, self).__init__()
@@ -63,7 +71,9 @@ class ShowGroupResponse(SdkResponse):
         self._brokers = None
         self._name = None
         self._retry_max_time = None
-        self._from_beginning = None
+        self._app_id = None
+        self._app_name = None
+        self._permissions = None
         self.discriminator = None
 
         if enabled is not None:
@@ -76,14 +86,18 @@ class ShowGroupResponse(SdkResponse):
             self.name = name
         if retry_max_time is not None:
             self.retry_max_time = retry_max_time
-        if from_beginning is not None:
-            self.from_beginning = from_beginning
+        if app_id is not None:
+            self.app_id = app_id
+        if app_name is not None:
+            self.app_name = app_name
+        if permissions is not None:
+            self.permissions = permissions
 
     @property
     def enabled(self):
         """Gets the enabled of this ShowGroupResponse.
 
-        是否启用。
+        是否可以消费。
 
         :return: The enabled of this ShowGroupResponse.
         :rtype: bool
@@ -94,7 +108,7 @@ class ShowGroupResponse(SdkResponse):
     def enabled(self, enabled):
         """Sets the enabled of this ShowGroupResponse.
 
-        是否启用。
+        是否可以消费。
 
         :param enabled: The enabled of this ShowGroupResponse.
         :type enabled: bool
@@ -190,26 +204,70 @@ class ShowGroupResponse(SdkResponse):
         self._retry_max_time = retry_max_time
 
     @property
-    def from_beginning(self):
-        """Gets the from_beginning of this ShowGroupResponse.
+    def app_id(self):
+        """Gets the app_id of this ShowGroupResponse.
 
-        是否重头消费。
+        应用id。
 
-        :return: The from_beginning of this ShowGroupResponse.
-        :rtype: bool
+        :return: The app_id of this ShowGroupResponse.
+        :rtype: str
         """
-        return self._from_beginning
+        return self._app_id
 
-    @from_beginning.setter
-    def from_beginning(self, from_beginning):
-        """Sets the from_beginning of this ShowGroupResponse.
+    @app_id.setter
+    def app_id(self, app_id):
+        """Sets the app_id of this ShowGroupResponse.
 
-        是否重头消费。
+        应用id。
 
-        :param from_beginning: The from_beginning of this ShowGroupResponse.
-        :type from_beginning: bool
+        :param app_id: The app_id of this ShowGroupResponse.
+        :type app_id: str
         """
-        self._from_beginning = from_beginning
+        self._app_id = app_id
+
+    @property
+    def app_name(self):
+        """Gets the app_name of this ShowGroupResponse.
+
+        应用名称。
+
+        :return: The app_name of this ShowGroupResponse.
+        :rtype: str
+        """
+        return self._app_name
+
+    @app_name.setter
+    def app_name(self, app_name):
+        """Sets the app_name of this ShowGroupResponse.
+
+        应用名称。
+
+        :param app_name: The app_name of this ShowGroupResponse.
+        :type app_name: str
+        """
+        self._app_name = app_name
+
+    @property
+    def permissions(self):
+        """Gets the permissions of this ShowGroupResponse.
+
+        权限。
+
+        :return: The permissions of this ShowGroupResponse.
+        :rtype: list[str]
+        """
+        return self._permissions
+
+    @permissions.setter
+    def permissions(self, permissions):
+        """Sets the permissions of this ShowGroupResponse.
+
+        权限。
+
+        :param permissions: The permissions of this ShowGroupResponse.
+        :type permissions: list[str]
+        """
+        self._permissions = permissions
 
     def to_dict(self):
         """Returns the model properties as a dict"""

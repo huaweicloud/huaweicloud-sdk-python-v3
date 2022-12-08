@@ -51,12 +51,9 @@ class NoSqlEpsQuota:
         self._ram = None
         self.discriminator = None
 
-        if instance is not None:
-            self.instance = instance
-        if vcpus is not None:
-            self.vcpus = vcpus
-        if ram is not None:
-            self.ram = ram
+        self.instance = instance
+        self.vcpus = vcpus
+        self.ram = ram
 
     @property
     def instance(self):

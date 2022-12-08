@@ -45,7 +45,7 @@ class GaAsyncClient(Client):
     def create_accelerator_async(self, request):
         """创建全球加速器
 
-        创建全球加速器
+        创建全球加速器。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -167,7 +167,7 @@ class GaAsyncClient(Client):
     def list_accelerators_async(self, request):
         """查询全球加速器列表
 
-        查询全球加速器列表
+        查询全球加速器列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -240,7 +240,7 @@ class GaAsyncClient(Client):
     def show_accelerator_async(self, request):
         """查询全球加速器详情
 
-        查询全球加速器详情
+        查询全球加速器详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -301,7 +301,7 @@ class GaAsyncClient(Client):
     def update_accelerator_async(self, request):
         """更新全球加速器
 
-        更新全球加速器
+        更新全球加速器。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -364,7 +364,7 @@ class GaAsyncClient(Client):
     def create_endpoint_async(self, request):
         """创建终端节点
 
-        创建终端节点
+        创建终端节点。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -427,7 +427,7 @@ class GaAsyncClient(Client):
     def delete_endpoint_async(self, request):
         """删除终端节点
 
-        删除终端节点
+        删除终端节点。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -490,7 +490,7 @@ class GaAsyncClient(Client):
     def list_endpoints_async(self, request):
         """查询终端节点组下终端节点列表
 
-        查询终端节点组下终端节点列表
+        查询终端节点组下终端节点列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -561,7 +561,7 @@ class GaAsyncClient(Client):
     def show_endpoint_async(self, request):
         """查询终端节点详情
 
-        查询终端节点详情
+        查询终端节点详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -624,7 +624,7 @@ class GaAsyncClient(Client):
     def update_endpoint_async(self, request):
         """更新终端节点
 
-        更新终端节点
+        更新终端节点。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -689,7 +689,7 @@ class GaAsyncClient(Client):
     def create_endpoint_group_async(self, request):
         """创建终端节点组
 
-        创建终端节点组
+        创建终端节点组。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -811,7 +811,7 @@ class GaAsyncClient(Client):
     def list_endpoint_groups_async(self, request):
         """查询终端节点组列表
 
-        查询终端节点组列表
+        查询终端节点组列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -884,7 +884,7 @@ class GaAsyncClient(Client):
     def show_endpoint_group_async(self, request):
         """查询终端节点组详情
 
-        查询终端节点组详情
+        查询终端节点组详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -945,7 +945,7 @@ class GaAsyncClient(Client):
     def update_endpoint_group_async(self, request):
         """更新终端节点组
 
-        更新终端节点组
+        更新终端节点组。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1008,7 +1008,7 @@ class GaAsyncClient(Client):
     def create_health_check_async(self, request):
         """创建健康检查
 
-        创建健康检查
+        创建健康检查。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1069,7 +1069,7 @@ class GaAsyncClient(Client):
     def delete_health_check_async(self, request):
         """删除健康检查
 
-        删除健康检查
+        删除健康检查。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1130,7 +1130,7 @@ class GaAsyncClient(Client):
     def list_health_checks_async(self, request):
         """查询健康检查列表
 
-        查询健康检查列表
+        查询健康检查列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1201,7 +1201,7 @@ class GaAsyncClient(Client):
     def show_health_check_async(self, request):
         """查询健康检查详情
 
-        查询健康检查详情
+        查询健康检查详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1262,7 +1262,7 @@ class GaAsyncClient(Client):
     def update_health_check_async(self, request):
         """更新健康检查
 
-        更新健康检查
+        更新健康检查。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1325,7 +1325,7 @@ class GaAsyncClient(Client):
     def create_listener_async(self, request):
         """创建监听器
 
-        创建监听器
+        创建监听器。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1386,7 +1386,7 @@ class GaAsyncClient(Client):
     def delete_listener_async(self, request):
         """删除监听器
 
-        删除监听器
+        删除监听器。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1447,7 +1447,7 @@ class GaAsyncClient(Client):
     def list_listeners_async(self, request):
         """查询监听器列表
 
-        查询监听器列表
+        查询监听器列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1520,7 +1520,7 @@ class GaAsyncClient(Client):
     def show_listener_async(self, request):
         """查询监听器详情
 
-        查询监听器详情
+        查询监听器详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1581,7 +1581,7 @@ class GaAsyncClient(Client):
     def update_listener_async(self, request):
         """更新监听器
 
-        更新监听器
+        更新监听器。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1644,7 +1644,7 @@ class GaAsyncClient(Client):
     def list_regions_async(self, request):
         """查询区域列表
 
-        查询区域列表
+        查询区域列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1695,6 +1695,199 @@ class GaAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListRegionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_tags_async(self, request):
+        """批量添加标签
+
+        批量添加标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateTags
+        :type request: :class:`huaweicloudsdkga.v1.CreateTagsRequest`
+        :rtype: :class:`huaweicloudsdkga.v1.CreateTagsResponse`
+        """
+        return self.create_tags_with_http_info(request)
+
+    def create_tags_with_http_info(self, request):
+        all_params = ['resource_type', 'resource_id', 'create_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{resource_type}/{resource_id}/tags/create',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_tags_async(self, request):
+        """批量删除标签
+
+        批量删除标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteTags
+        :type request: :class:`huaweicloudsdkga.v1.DeleteTagsRequest`
+        :rtype: :class:`huaweicloudsdkga.v1.DeleteTagsResponse`
+        """
+        return self.delete_tags_with_http_info(request)
+
+    def delete_tags_with_http_info(self, request):
+        all_params = ['resource_type', 'resource_id', 'delete_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{resource_type}/{resource_id}/tags/delete',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_resource_tags_async(self, request):
+        """查询资源已打标签
+
+        查询资源已打标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowResourceTags
+        :type request: :class:`huaweicloudsdkga.v1.ShowResourceTagsRequest`
+        :rtype: :class:`huaweicloudsdkga.v1.ShowResourceTagsResponse`
+        """
+        return self.show_resource_tags_with_http_info(request)
+
+    def show_resource_tags_with_http_info(self, request):
+        all_params = ['resource_type', 'resource_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{resource_type}/{resource_id}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowResourceTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

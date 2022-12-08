@@ -349,6 +349,132 @@ class ApmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def change_agent_status_async(self, request):
+        """更改实例的采集状态
+
+        改变指定实例的采集状态：开启和关闭。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ChangeAgentStatus
+        :type request: :class:`huaweicloudsdkapm.v1.ChangeAgentStatusRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.ChangeAgentStatusResponse`
+        """
+        return self.change_agent_status_with_http_info(request)
+
+    def change_agent_status_with_http_info(self, request):
+        all_params = ['x_business_id', 'agent_status_change_param']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_business_id' in local_var_params:
+            header_params['x-business-id'] = local_var_params['x_business_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/apm2/openapi/apm-service/agent-mgr/change-status',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ChangeAgentStatusResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_agent_async(self, request):
+        """删除agent
+
+        删除agent
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteAgent
+        :type request: :class:`huaweicloudsdkapm.v1.DeleteAgentRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.DeleteAgentResponse`
+        """
+        return self.delete_agent_with_http_info(request)
+
+    def delete_agent_with_http_info(self, request):
+        all_params = ['x_business_id', 'agent_delete_param']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_business_id' in local_var_params:
+            header_params['x-business-id'] = local_var_params['x_business_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/apm2/openapi/apm-service/agent-mgr/delete-agent',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteAgentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_ak_sk_async(self, request):
         """获取ak/sk
 
@@ -588,6 +714,69 @@ class ApmAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='SaveMonitorItemConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def search_agent_async(self, request):
+        """搜索业务下所有探针
+
+        该接口用于搜索业务下所有探针情况。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SearchAgent
+        :type request: :class:`huaweicloudsdkapm.v1.SearchAgentRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.SearchAgentResponse`
+        """
+        return self.search_agent_with_http_info(request)
+
+    def search_agent_with_http_info(self, request):
+        all_params = ['x_business_id', 'agent_search_param']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_business_id' in local_var_params:
+            header_params['x-business-id'] = local_var_params['x_business_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/apm2/openapi/apm-service/agent-mgr/search',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SearchAgentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -25,9 +25,7 @@ class StackResource:
         'logical_resource_name': 'str',
         'logical_resource_type': 'str',
         'resource_status': 'str',
-        'status_message': 'str',
-        'create_time': 'str',
-        'update_time': 'str'
+        'status_message': 'str'
     }
 
     attribute_map = {
@@ -36,12 +34,10 @@ class StackResource:
         'logical_resource_name': 'logical_resource_name',
         'logical_resource_type': 'logical_resource_type',
         'resource_status': 'resource_status',
-        'status_message': 'status_message',
-        'create_time': 'create_time',
-        'update_time': 'update_time'
+        'status_message': 'status_message'
     }
 
-    def __init__(self, physical_resource_id=None, physical_resource_name=None, logical_resource_name=None, logical_resource_type=None, resource_status=None, status_message=None, create_time=None, update_time=None):
+    def __init__(self, physical_resource_id=None, physical_resource_name=None, logical_resource_name=None, logical_resource_type=None, resource_status=None, status_message=None):
         """StackResource
 
         The model defined in huaweicloud sdk
@@ -54,14 +50,10 @@ class StackResource:
         :type logical_resource_name: str
         :param logical_resource_type: 资源的类型，是用户在模板中定义的
         :type logical_resource_type: str
-        :param resource_status: 此次事件的类型 * &#x60;CREATION_IN_PROGRESS&#x60; - 正在生成 * &#x60;CREATION_FAILED&#x60;      - 生成失败 * &#x60;CREATION_COMPLETE&#x60;    - 生成完成 * &#x60;DELETION_IN_PROGRESS&#x60; - 正在删除 * &#x60;DELETION_FAILED&#x60;      - 删除失败 * &#x60;DELETION_COMPLETE&#x60;    - 已经删除 * &#x60;DELETION_SKIPPED&#x60;     - 跳过删除。未来我们将支持，用户可以从IaC中删除，但是不真的删除资源本身 * &#x60;UPDATE_IN_PROGRESS&#x60;   - 正在更新。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION * &#x60;UPDATE_FAILED&#x60;        - 更新失败。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION * &#x60;UPDATE_COMPLETE&#x60;      - 更新完成。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION
+        :param resource_status: 此次事件的类型 * &#x60;CREATION_IN_PROGRESS&#x60; - 正在生成 * &#x60;CREATION_FAILED&#x60;      - 生成失败 * &#x60;CREATION_COMPLETE&#x60;    - 生成完成 * &#x60;DELETION_IN_PROGRESS&#x60; - 正在删除 * &#x60;DELETION_FAILED&#x60;      - 删除失败 * &#x60;DELETION_COMPLETE&#x60;    - 已经删除 * &#x60;DELETION_SKIPPED&#x60;     - 跳过删除。未来我们将支持，用户可以从资源编排服务中删除，但是不真的删除资源本身 * &#x60;UPDATE_IN_PROGRESS&#x60;   - 正在更新。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION * &#x60;UPDATE_FAILED&#x60;        - 更新失败。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION * &#x60;UPDATE_COMPLETE&#x60;      - 更新完成。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION
         :type resource_status: str
         :param status_message: 如果是成功状态或执行中状态，则没有信息
         :type status_message: str
-        :param create_time: 资源的生成时间
-        :type create_time: str
-        :param update_time: 资源的更新时间
-        :type update_time: str
         """
         
         
@@ -72,8 +64,6 @@ class StackResource:
         self._logical_resource_type = None
         self._resource_status = None
         self._status_message = None
-        self._create_time = None
-        self._update_time = None
         self.discriminator = None
 
         if physical_resource_id is not None:
@@ -88,10 +78,6 @@ class StackResource:
             self.resource_status = resource_status
         if status_message is not None:
             self.status_message = status_message
-        if create_time is not None:
-            self.create_time = create_time
-        if update_time is not None:
-            self.update_time = update_time
 
     @property
     def physical_resource_id(self):
@@ -185,7 +171,7 @@ class StackResource:
     def resource_status(self):
         """Gets the resource_status of this StackResource.
 
-        此次事件的类型 * `CREATION_IN_PROGRESS` - 正在生成 * `CREATION_FAILED`      - 生成失败 * `CREATION_COMPLETE`    - 生成完成 * `DELETION_IN_PROGRESS` - 正在删除 * `DELETION_FAILED`      - 删除失败 * `DELETION_COMPLETE`    - 已经删除 * `DELETION_SKIPPED`     - 跳过删除。未来我们将支持，用户可以从IaC中删除，但是不真的删除资源本身 * `UPDATE_IN_PROGRESS`   - 正在更新。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION * `UPDATE_FAILED`        - 更新失败。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION * `UPDATE_COMPLETE`      - 更新完成。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION
+        此次事件的类型 * `CREATION_IN_PROGRESS` - 正在生成 * `CREATION_FAILED`      - 生成失败 * `CREATION_COMPLETE`    - 生成完成 * `DELETION_IN_PROGRESS` - 正在删除 * `DELETION_FAILED`      - 删除失败 * `DELETION_COMPLETE`    - 已经删除 * `DELETION_SKIPPED`     - 跳过删除。未来我们将支持，用户可以从资源编排服务中删除，但是不真的删除资源本身 * `UPDATE_IN_PROGRESS`   - 正在更新。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION * `UPDATE_FAILED`        - 更新失败。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION * `UPDATE_COMPLETE`      - 更新完成。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION
 
         :return: The resource_status of this StackResource.
         :rtype: str
@@ -196,7 +182,7 @@ class StackResource:
     def resource_status(self, resource_status):
         """Sets the resource_status of this StackResource.
 
-        此次事件的类型 * `CREATION_IN_PROGRESS` - 正在生成 * `CREATION_FAILED`      - 生成失败 * `CREATION_COMPLETE`    - 生成完成 * `DELETION_IN_PROGRESS` - 正在删除 * `DELETION_FAILED`      - 删除失败 * `DELETION_COMPLETE`    - 已经删除 * `DELETION_SKIPPED`     - 跳过删除。未来我们将支持，用户可以从IaC中删除，但是不真的删除资源本身 * `UPDATE_IN_PROGRESS`   - 正在更新。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION * `UPDATE_FAILED`        - 更新失败。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION * `UPDATE_COMPLETE`      - 更新完成。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION
+        此次事件的类型 * `CREATION_IN_PROGRESS` - 正在生成 * `CREATION_FAILED`      - 生成失败 * `CREATION_COMPLETE`    - 生成完成 * `DELETION_IN_PROGRESS` - 正在删除 * `DELETION_FAILED`      - 删除失败 * `DELETION_COMPLETE`    - 已经删除 * `DELETION_SKIPPED`     - 跳过删除。未来我们将支持，用户可以从资源编排服务中删除，但是不真的删除资源本身 * `UPDATE_IN_PROGRESS`   - 正在更新。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION * `UPDATE_FAILED`        - 更新失败。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION * `UPDATE_COMPLETE`      - 更新完成。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION
 
         :param resource_status: The resource_status of this StackResource.
         :type resource_status: str
@@ -224,50 +210,6 @@ class StackResource:
         :type status_message: str
         """
         self._status_message = status_message
-
-    @property
-    def create_time(self):
-        """Gets the create_time of this StackResource.
-
-        资源的生成时间
-
-        :return: The create_time of this StackResource.
-        :rtype: str
-        """
-        return self._create_time
-
-    @create_time.setter
-    def create_time(self, create_time):
-        """Sets the create_time of this StackResource.
-
-        资源的生成时间
-
-        :param create_time: The create_time of this StackResource.
-        :type create_time: str
-        """
-        self._create_time = create_time
-
-    @property
-    def update_time(self):
-        """Gets the update_time of this StackResource.
-
-        资源的更新时间
-
-        :return: The update_time of this StackResource.
-        :rtype: str
-        """
-        return self._update_time
-
-    @update_time.setter
-    def update_time(self, update_time):
-        """Sets the update_time of this StackResource.
-
-        资源的更新时间
-
-        :param update_time: The update_time of this StackResource.
-        :type update_time: str
-        """
-        self._update_time = update_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

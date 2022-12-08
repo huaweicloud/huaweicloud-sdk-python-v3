@@ -1,3 +1,392 @@
+# 3.1.15 2022-12-08
+
+### HuaweiCloud SDK MapDS
+
+- _新增特性_
+  - 支持地图数据服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK AOS
+
+- _新增特性_
+  - 支持接口`GetExecutionPlan`、`DeleteExecutionPlan`、`DescribeExecutionPlan`、`GetStackMetadata`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListExecutionPlans`移除请求参数 `executor`
+  - 接口`CreateExecutionPlan`移除请求参数 `executor`
+  - 接口`ApplyExecutionPlan`移除请求参数 `executor`
+  - 接口`ListStackEvents`:
+    - 移除请求参数 `limit`、`marker`、`executor`
+    - 移除响应参数 `next_marker`
+  - 接口`ListStacks`移除请求参数 `executor`
+  - 接口`CreateStack`移除请求参数 `executor`
+  - 接口`GetStackTemplate`移除请求参数 `executor`
+  - 接口`ListStackResources`:
+    - 移除请求参数 `executor`
+    - 移除响应参数 `create_time`、`update_time`
+  - 接口`ListStackOutputs`:
+    - 移除请求参数 `executor`、`limit`、`marker`
+    - 移除响应参数 `next_marker`
+  - 接口`DeployStack`移除请求参数 `executor`
+  - 接口`DeleteStack`移除请求参数 `executor`
+
+### HuaweiCloud SDK APM
+
+- _新增特性_
+  - 支持接口`SearchAgent`、`ChangeAgentStatus`、`DeleteAgent`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CBH
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListQuotaState`
+    - `ShowNetworkConfiguration`
+    - `StopCbhInstance`
+    - `UpgradeCbhInstance`
+    - `RestartCbhInstance`
+    - `InstallInstanceEip`
+    - `UninstallInstanceEip`
+    - `ResetPassword`
+    - `ShowAvailableZoneInfo`
+    - `StartCbhInstance`
+    - `SearchQuota`
+    - `ResetLoginMethod`
+    - `CreateInstanceOrder`
+    - `ChangeInstanceNetwork`
+    - `CreateInstance`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListCbhInstance`:
+    - 新增响应参数 `public_ip`、`is_auto_renew`
+    - 移除请求参数 `X-Auth-Token`
+    - 移除响应参数 `publicip`
+    - 响应参数`zh_cn`、`en_us`、`exp_time`、`start_time`、`end_time`、`release_time`、`instance_id`、`private_ip`、`task_status`、`vpc_id`、`subnet_id`、`security_group_id`、`createinstance_status`、`fail_reason`、`instance_key`、`order_id`、`period_num`、`resource_id`、`public_id`、`alter_permit`、`bastion_version`、`new_bastion_version`、`instance_status`、`instance_description`改为必填
+
+### HuaweiCloud SDK CC
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListDomainTags`
+    - `DeleteTag`
+    - `BatchCreateDeleteTags`
+    - `ListResourceByFilterTag`
+    - `ListTags`
+    - `CreateTag`
+    - `ListQuotas`
+    - `ListBandwidthPackages`
+    - `CreateBandwidthPackage`
+    - `ShowBandwidthPackage`
+    - `UpdateBandwidthPackage`
+    - `DeleteBandwidthPackage`
+    - `AssociateBandwidthPackage`
+    - `DisassociateBandwidthPackage`
+    - `ListInterRegionBandwidths`
+    - `CreateInterRegionBandwidth`
+    - `ShowInterRegionBandwidth`
+    - `UpdateInterRegionBandwidth`
+    - `DeleteInterRegionBandwidth`
+    - `ListAuthorisations`
+    - `CreateAuthorisation`
+    - `ListPermissions`
+    - `UpdateAuthorisation`
+    - `DeleteAuthorisation`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateAddonInstance`请求参数`version`改为非必填
+  - 接口`UpdateAddonInstance`请求参数`version`改为非必填
+
+### HuaweiCloud SDK CFW
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListIpsSwitchStatusUsingGet`:
+    - 新增响应参数 `id`、`virtual_patches_status`
+    - 移除响应参数 `object_id`、`virtual_patches_stauts`
+  - 接口`ChangeIpsSwitchUsingPost`请求参数`ips_type`改为必填
+  - 接口`ListFirewallUsingGet`移除响应参数 `fw_instance_id`、`resource_id`、`name`、`ha_type`、`charge_mode`、`service_type`、`engine_type`、`flavor`、`protect_objects`、`status`、`description`、`is_old_firewall_instance`、`support_ipv6`、`feature_toggle`
+
+### HuaweiCloud SDK CloudDeploy
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`StartDeployTask`请求参数`type`新增枚举值`enum`
+
+### HuaweiCloud SDK DBSS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListAuditInstances`
+    - `ShowAuditQuota`
+    - `ListEcsSpecification`
+    - `ListAvailabilityZoneInfos`
+    - `ListAuditInstanceJobs`
+    - `ListAuditDatabases`
+    - `ListAuditOperateLogs`
+    - `ListAuditRuleScopes`
+    - `ListSqlInjectionRules`
+    - `ListAuditRuleRisks`
+    - `ShowAuditRuleRisk`
+    - `ListAuditSensitiveMasks`
+    - `ListProjectResourceTags`
+    - `ListResourceInstanceByTag`
+    - `CountResourceInstanceByTag`
+    - `BatchAddResourceTag`
+    - `BatchDeleteResourceTag`
+    - `CreateInstancesPeriodOrder`
+    - `UpdateAuditSecurityGroup`
+    - `AddRdsNoAgentDatabase`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`BatchCreateJobsAsync`请求参数`name`、`job_type`、`engine_type`、`job_direction`、`task_type`、`net_type`、`enterprise_project_id`、`ip`、`db_port`、`ssl_link`、`ssl_cert_name`、`ssl_cert_key`、`ssl_cert_check_sum`、`ip`、`db_port`、`ssl_link`、`ssl_cert_name`、`ssl_cert_key`、`ssl_cert_check_sum`、`is_auto_renew`、`security_group_id`改为非必填
+  - 接口`CreateJob`请求参数`name`、`job_type`、`engine_type`、`job_direction`、`task_type`、`net_type`、`enterprise_project_id`、`ip`、`db_port`、`ssl_link`、`ssl_cert_name`、`ssl_cert_key`、`ssl_cert_check_sum`、`ip`、`db_port`、`ssl_link`、`ssl_cert_name`、`ssl_cert_key`、`ssl_cert_check_sum`、`is_auto_renew`、`security_group_id`改为非必填
+  - 接口`ListAsyncJobDetail`响应参数`name`、`job_type`、`engine_type`、`job_direction`、`task_type`、`net_type`、`enterprise_project_id`、`ip`、`db_port`、`ssl_link`、`ssl_cert_name`、`ssl_cert_key`、`ssl_cert_check_sum`、`ip`、`db_port`、`ssl_link`、`ssl_cert_name`、`ssl_cert_key`、`ssl_cert_check_sum`、`is_auto_renew`、`security_group_id`改为非必填
+  - 接口`UpdateBatchAsyncJobs`请求参数`name`、`job_type`、`engine_type`、`job_direction`、`task_type`、`net_type`、`enterprise_project_id`、`ip`、`db_port`、`ssl_link`、`ssl_cert_name`、`ssl_cert_key`、`ssl_cert_check_sum`、`ip`、`db_port`、`ssl_link`、`ssl_cert_name`、`ssl_cert_key`、`ssl_cert_check_sum`、`is_auto_renew`、`security_group_id`改为非必填
+  - 接口`ShowJobDetail`响应参数`name`、`job_type`、`engine_type`、`job_direction`、`task_type`、`net_type`、`enterprise_project_id`、`ip`、`db_port`、`ssl_link`、`ssl_cert_name`、`ssl_cert_key`、`ssl_cert_check_sum`、`ip`、`db_port`、`ssl_link`、`ssl_cert_name`、`ssl_cert_key`、`ssl_cert_check_sum`、`is_auto_renew`、`security_group_id`改为非必填
+  - 接口`UpdateJob`请求参数`name`、`job_type`、`engine_type`、`job_direction`、`task_type`、`net_type`、`enterprise_project_id`、`ip`、`db_port`、`ssl_link`、`ssl_cert_name`、`ssl_cert_key`、`ssl_cert_check_sum`、`ip`、`db_port`、`ssl_link`、`ssl_cert_name`、`ssl_cert_key`、`ssl_cert_check_sum`、`is_auto_renew`、`security_group_id`改为非必填
+  - 接口`ExecuteJobAction`:
+    - 新增请求参数 `is_sync_re_edit`、`force_delete`
+    - 请求参数`job_id`、`ip`、`db_port`、`ssl_link`、`ssl_cert_name`、`ssl_cert_key`、`ssl_cert_check_sum`改为非必填
+  - 接口`BatchExecuteJobActions`:
+    - 新增请求参数 `is_sync_re_edit`、`force_delete`
+    - 请求参数`job_id`、`ip`、`db_port`、`ssl_link`、`ssl_cert_name`、`ssl_cert_key`、`ssl_cert_check_sum`改为非必填
+
+### HuaweiCloud SDK DSC
+
+- _新增特性_
+  - 支持以下接口：
+    - `CreateProductOrder`
+    - `ShowSpecification`
+    - `ShowTopics`
+    - `UpdateDefaultTopic`
+    - `ShowRules`
+    - `ChangeRule`
+    - `AddRule`
+    - `DeleteRule`
+    - `ListRuleGroups`
+    - `AddRuleGroup`
+    - `DeleteRuleGroup`
+    - `AddScanJob`
+    - `ListRelationDb`
+    - `ListRelationTable`
+    - `ListRelationColumn`
+    - `ListRelationBuckets`
+    - `ListRelationFile`
+    - `ListDbMaskTask`
+    - `ChangeDbTemplateOperation`
+    - `UpdateAssetName`
+    - `ListBuckets`
+    - `AddBuckets`
+    - `DeleteBucket`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DWS
+
+- _新增特性_
+  - 支持接口`ListHostOverview`、`ListHostDisk`、`ListHostNet`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK EIP
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListBandwidthPkg`
+    - `CountPublicIp`
+    - `ShowPublicIpType`
+    - `CountPublicIpInstance`
+    - `BatchCreatePublicips`
+    - `BatchDeletePublicIp`
+    - `BatchDisassociatePublicips`
+    - `CountEipAvailableResources`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`AssociatePublicips`请求参数`associate_instance_type`移除枚举值``
+  - 接口`UpdateAssociatePublicip`请求参数`associate_instance_type`移除枚举值``
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateDependency`新增响应参数 `dep_id`
+  - 接口`CreateDependencyVersion`新增响应参数 `dep_id`
+  - 接口`UpdateFunctionConfig`新增请求参数 `enable_dynamic_memory`、`enable_auth_in_header`
+  - 接口`ShowWorkflowExecutionForPage`:
+    - 新增请求参数 `offset`、`limit`
+    - 新增响应参数 `total`、`size`、`executions`
+    - 移除请求参数 `page`、`page_size`
+    - 移除响应参数 `pager`、`hisRecords`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 支持以下接口：
+    - `RestartGaussMySqlInstance`
+    - `ShowGaussMySqlConfiguration`
+    - `UpdateGaussMySqlConfiguration`
+    - `DeleteGaussMySqlConfiguration`
+    - `SwitchGaussMySqlConfiguration`
+    - `RestartGaussMySqlNode`
+    - `UpdateProxySessionConsistence`
+    - `ListImmediateJobs`
+    - `ListScheduleJobs`
+    - `CancelScheduleTask`
+    - `DeleteTaskRecord`
+    - `UpgradeGaussMySqlInstanceDatabase`
+    - `SwitchGaussMySqlInstanceSsl`
+    - `UpdateGaussMySqlInstanceEip`
+    - `CancelGaussMySqlInstanceEip`
+    - `InvokeGaussMySqlInstanceSwitchOver`
+    - `UpdateGaussMySqlInstanceOpsWindow`
+    - `UpdateGaussMySqlInstanceSecurityGroup`
+    - `UpdateGaussMySqlInstanceInternalIp`
+    - `UpdateGaussMySqlInstancePort`
+    - `UpdateGaussMySqlInstanceAlias`
+    - `DeleteGaussMySqlBackup`
+    - `CreateGaussMySqlConfiguration`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListAvailableFlavorInfos`:
+    - 新增请求参数 `x-auth-token`
+    - 新增响应参数 `list`
+    - 移除响应参数 `optional_flavor_list`
+    - 响应参数`instance_id`、`instance_name`、`vcpus`、`ram`、`spec_code`、`az_status`、`region_status`、`total_count`改为必填
+  - 接口`ShowSlowLogDesensitization`:
+    - 新增请求参数 `x-auth-token`
+    - 响应参数`desensitization_status`改为必填
+  - 接口`ListProjectTags`响应参数`type`、`key`、`values`、`total_count`改为必填
+  - 接口`ModifyEpsQuotas`请求参数`instance`、`vcpus`、`ram`改为必填
+  - 接口`ListEpsQuotas`:
+    - 移除响应参数 `enterprise_project_id`、`enterprise_project_name`、`quota`、`used`
+    - 响应参数`total_count`改为必填
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ResizeInstance`新增请求参数 `publicip_id`
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 支持接口`ListTimeLineTrafficStatistics`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK ProjectMan
+
+- _新增特性_
+  - 支持接口`DownloadAttachment`、`DeleteAttachment`、`ListStatusStatistic`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateIssueV4`新增响应参数 `user_id`、`user_num_id`、`user_id`、`user_num_id`、`user_id`、`user_num_id`、`user_id`、`user_num_id`
+  - 接口`ListIssuesSfV4`新增响应参数 `user_id`、`user_num_id`、`user_id`、`user_num_id`、`user_id`、`user_num_id`
+  - 接口`ListIssuesV4`新增响应参数 `user_id`、`user_num_id`、`user_id`、`user_num_id`、`user_id`、`user_num_id`、`user_id`、`user_num_id`
+  - 接口`UpdateIssueV4`新增响应参数 `user_id`、`user_num_id`、`user_id`、`user_num_id`、`user_id`、`user_num_id`、`user_id`、`user_num_id`
+  - 接口`ShowIssueV4`新增响应参数 `user_id`、`user_num_id`、`user_id`、`user_num_id`、`user_id`、`user_num_id`、`user_id`、`user_num_id`
+  - 接口`ListChildIssuesV4`新增响应参数 `user_id`、`user_num_id`、`user_id`、`user_num_id`、`user_id`、`user_num_id`、`user_id`、`user_num_id`
+  - 接口`ListProjectIssuesRecordsV4`新增响应参数 `user_id`、`user_num_id`
+  - 接口`CreateSystemIssueV4`新增响应参数 `user_id`、`user_num_id`、`user_id`、`user_num_id`、`user_id`、`user_num_id`、`user_id`、`user_num_id`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`ShowSecondLevelMonitoring`、`SetSecondLevelMonitor`、`ShowAutoEnlargePolicy`、`SetAutoEnlargePolicy`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RocketMQ
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreatePostPaidInstance`请求参数`broker_num`改为必填
+  - 接口`UpdateInstance`:
+    - 新增请求参数 `enable_acl`
+    - 移除请求参数 `retention_policy`
+  - 接口`BatchUpdateConsumerGroup`新增响应参数 `job_id`
+  - 接口`ShowGroup`:
+    - 新增响应参数 `app_id`、`app_name`、`permissions`
+    - 移除响应参数 `from_beginning`
+
+### HuaweiCloud SDK TMS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListResource`
+    - `CreateResourceTag`
+    - `DeleteResourceTag`
+    - `ListTagKeys`
+    - `ListTagValues`
+    - `ShowResourceTag`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.14 2022-12-01
 
 ### HuaweiCloud SDK BSS

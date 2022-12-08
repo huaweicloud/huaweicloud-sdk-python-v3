@@ -42,7 +42,7 @@ class ConsumerGroup:
 
         The model defined in huaweicloud sdk
 
-        :param enabled: 是否启用。
+        :param enabled: 是否可以消费。
         :type enabled: bool
         :param broadcast: 是否广播。
         :type broadcast: bool
@@ -83,7 +83,7 @@ class ConsumerGroup:
     def enabled(self):
         """Gets the enabled of this ConsumerGroup.
 
-        是否启用。
+        是否可以消费。
 
         :return: The enabled of this ConsumerGroup.
         :rtype: bool
@@ -94,7 +94,7 @@ class ConsumerGroup:
     def enabled(self, enabled):
         """Sets the enabled of this ConsumerGroup.
 
-        是否启用。
+        是否可以消费。
 
         :param enabled: The enabled of this ConsumerGroup.
         :type enabled: bool

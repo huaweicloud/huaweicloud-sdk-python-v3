@@ -32,7 +32,7 @@ class StackIdPrimitiveTypeHolder:
 
         The model defined in huaweicloud sdk
 
-        :param stack_id: 资源栈（stack）的唯一Id。  此Id由RF在生成资源栈的时候生成，为UUID。  由于堆栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的堆栈，删除，再重新创建一个同名堆栈。  对于团队并行开发，用户可能希望确保，当前我操作的堆栈就是我认为的那个，而不是其他队友删除后创建的同名堆栈。因此，使用ID就可以做到强匹配。  RF保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给与的stack_id和当前资源栈的ID不一致，则返回400 
+        :param stack_id: 资源栈（stack）的唯一Id。  此Id由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给与的stack_id和当前资源栈的ID不一致，则返回400 
         :type stack_id: str
         """
         
@@ -48,7 +48,7 @@ class StackIdPrimitiveTypeHolder:
     def stack_id(self):
         """Gets the stack_id of this StackIdPrimitiveTypeHolder.
 
-        资源栈（stack）的唯一Id。  此Id由RF在生成资源栈的时候生成，为UUID。  由于堆栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的堆栈，删除，再重新创建一个同名堆栈。  对于团队并行开发，用户可能希望确保，当前我操作的堆栈就是我认为的那个，而不是其他队友删除后创建的同名堆栈。因此，使用ID就可以做到强匹配。  RF保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给与的stack_id和当前资源栈的ID不一致，则返回400 
+        资源栈（stack）的唯一Id。  此Id由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给与的stack_id和当前资源栈的ID不一致，则返回400 
 
         :return: The stack_id of this StackIdPrimitiveTypeHolder.
         :rtype: str
@@ -59,7 +59,7 @@ class StackIdPrimitiveTypeHolder:
     def stack_id(self, stack_id):
         """Sets the stack_id of this StackIdPrimitiveTypeHolder.
 
-        资源栈（stack）的唯一Id。  此Id由RF在生成资源栈的时候生成，为UUID。  由于堆栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的堆栈，删除，再重新创建一个同名堆栈。  对于团队并行开发，用户可能希望确保，当前我操作的堆栈就是我认为的那个，而不是其他队友删除后创建的同名堆栈。因此，使用ID就可以做到强匹配。  RF保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给与的stack_id和当前资源栈的ID不一致，则返回400 
+        资源栈（stack）的唯一Id。  此Id由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给与的stack_id和当前资源栈的ID不一致，则返回400 
 
         :param stack_id: The stack_id of this StackIdPrimitiveTypeHolder.
         :type stack_id: str

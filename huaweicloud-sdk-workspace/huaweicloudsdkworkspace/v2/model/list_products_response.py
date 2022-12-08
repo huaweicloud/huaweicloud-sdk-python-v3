@@ -21,42 +21,56 @@ class ListProductsResponse(SdkResponse):
 
     openapi_types = {
         'os_type': 'str',
+        'architecture': 'str',
         'availability_zone': 'str',
-        'products': 'list[ProductInfo]'
+        'products': 'list[ProductInfo]',
+        'total_count': 'int'
     }
 
     attribute_map = {
         'os_type': 'os_type',
+        'architecture': 'architecture',
         'availability_zone': 'availability_zone',
-        'products': 'products'
+        'products': 'products',
+        'total_count': 'total_count'
     }
 
-    def __init__(self, os_type=None, availability_zone=None, products=None):
+    def __init__(self, os_type=None, architecture=None, availability_zone=None, products=None, total_count=None):
         """ListProductsResponse
 
         The model defined in huaweicloud sdk
 
         :param os_type: 套餐所支持操作系统类型。请求参数有os_type时，才有此参数。
         :type os_type: str
+        :param architecture: 产品架构。请求参数有package_type&#x3D;agile时，才有此参数。
+        :type architecture: str
         :param availability_zone: 可用分区。请求参数有availability_zone时，才有此参数。
         :type availability_zone: str
         :param products: 产品列表。
         :type products: list[:class:`huaweicloudsdkworkspace.v2.ProductInfo`]
+        :param total_count: 对象总数。
+        :type total_count: int
         """
         
         super(ListProductsResponse, self).__init__()
 
         self._os_type = None
+        self._architecture = None
         self._availability_zone = None
         self._products = None
+        self._total_count = None
         self.discriminator = None
 
         if os_type is not None:
             self.os_type = os_type
+        if architecture is not None:
+            self.architecture = architecture
         if availability_zone is not None:
             self.availability_zone = availability_zone
         if products is not None:
             self.products = products
+        if total_count is not None:
+            self.total_count = total_count
 
     @property
     def os_type(self):
@@ -79,6 +93,28 @@ class ListProductsResponse(SdkResponse):
         :type os_type: str
         """
         self._os_type = os_type
+
+    @property
+    def architecture(self):
+        """Gets the architecture of this ListProductsResponse.
+
+        产品架构。请求参数有package_type=agile时，才有此参数。
+
+        :return: The architecture of this ListProductsResponse.
+        :rtype: str
+        """
+        return self._architecture
+
+    @architecture.setter
+    def architecture(self, architecture):
+        """Sets the architecture of this ListProductsResponse.
+
+        产品架构。请求参数有package_type=agile时，才有此参数。
+
+        :param architecture: The architecture of this ListProductsResponse.
+        :type architecture: str
+        """
+        self._architecture = architecture
 
     @property
     def availability_zone(self):
@@ -123,6 +159,28 @@ class ListProductsResponse(SdkResponse):
         :type products: list[:class:`huaweicloudsdkworkspace.v2.ProductInfo`]
         """
         self._products = products
+
+    @property
+    def total_count(self):
+        """Gets the total_count of this ListProductsResponse.
+
+        对象总数。
+
+        :return: The total_count of this ListProductsResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        """Sets the total_count of this ListProductsResponse.
+
+        对象总数。
+
+        :param total_count: The total_count of this ListProductsResponse.
+        :type total_count: int
+        """
+        self._total_count = total_count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -4,6 +4,9 @@ from __future__ import absolute_import
 
 # import models into model package
 from huaweicloudsdkapm.v1.model.access_aksk_vo import AccessAkskVO
+from huaweicloudsdkapm.v1.model.agent_delete_param import AgentDeleteParam
+from huaweicloudsdkapm.v1.model.agent_search_param import AgentSearchParam
+from huaweicloudsdkapm.v1.model.agent_status_change_param import AgentStatusChangeParam
 from huaweicloudsdkapm.v1.model.alarm_data_list_request import AlarmDataListRequest
 from huaweicloudsdkapm.v1.model.alarm_data_vo import AlarmDataVO
 from huaweicloudsdkapm.v1.model.alarm_notify_list_request import AlarmNotifyListRequest
@@ -13,6 +16,8 @@ from huaweicloudsdkapm.v1.model.app_search_param import AppSearchParam
 from huaweicloudsdkapm.v1.model.business_env_request import BusinessEnvRequest
 from huaweicloudsdkapm.v1.model.business_node_model import BusinessNodeModel
 from huaweicloudsdkapm.v1.model.business_topo_request import BusinessTopoRequest
+from huaweicloudsdkapm.v1.model.change_agent_status_request import ChangeAgentStatusRequest
+from huaweicloudsdkapm.v1.model.change_agent_status_response import ChangeAgentStatusResponse
 from huaweicloudsdkapm.v1.model.client_span_info import ClientSpanInfo
 from huaweicloudsdkapm.v1.model.cmdb_tag_entity import CmdbTagEntity
 from huaweicloudsdkapm.v1.model.collector_category_info import CollectorCategoryInfo
@@ -21,6 +26,8 @@ from huaweicloudsdkapm.v1.model.config_item import ConfigItem
 from huaweicloudsdkapm.v1.model.create_ak_sk_request import CreateAkSkRequest
 from huaweicloudsdkapm.v1.model.create_ak_sk_response import CreateAkSkResponse
 from huaweicloudsdkapm.v1.model.create_aksk_model import CreateAkskModel
+from huaweicloudsdkapm.v1.model.delete_agent_request import DeleteAgentRequest
+from huaweicloudsdkapm.v1.model.delete_agent_response import DeleteAgentResponse
 from huaweicloudsdkapm.v1.model.delete_ak_sk_request import DeleteAkSkRequest
 from huaweicloudsdkapm.v1.model.delete_ak_sk_response import DeleteAkSkResponse
 from huaweicloudsdkapm.v1.model.delete_app_request import DeleteAppRequest
@@ -76,6 +83,8 @@ from huaweicloudsdkapm.v1.model.region import Region
 from huaweicloudsdkapm.v1.model.save_monitor_item_config_request import SaveMonitorItemConfigRequest
 from huaweicloudsdkapm.v1.model.save_monitor_item_config_response import SaveMonitorItemConfigResponse
 from huaweicloudsdkapm.v1.model.save_monitor_item_param import SaveMonitorItemParam
+from huaweicloudsdkapm.v1.model.search_agent_request import SearchAgentRequest
+from huaweicloudsdkapm.v1.model.search_agent_response import SearchAgentResponse
 from huaweicloudsdkapm.v1.model.search_application_request import SearchApplicationRequest
 from huaweicloudsdkapm.v1.model.search_application_response import SearchApplicationResponse
 from huaweicloudsdkapm.v1.model.search_business_topology_request import SearchBusinessTopologyRequest

@@ -56,11 +56,11 @@ class AdDomain:
 
         The model defined in huaweicloud sdk
 
-        :param domain_type: 域类型。 - LITE_AS：本地认证。 - LOCAL_AD：本地AD。  说明：域类型为“LOCAL_AD”时，请确保所选VPC网络与AD所属网络可连通。
+        :param domain_type: 域类型。 - LITE_AS：本地认证。 - LOCAL_AD：本地AD。 说明：域类型为“LOCAL_AD”时，请确保所选VPC网络与AD所属网络可连通。
         :type domain_type: str
-        :param domain_name: 域名称。域类型为LOCAL_AD时需要配置。  域名必须为AD服务器上已经存在的域名，且长度不超过55。
+        :param domain_name: 域名称。域类型为LOCAL_AD时需要配置。 域名必须为AD服务器上已经存在的域名，且长度不超过55。
         :type domain_name: str
-        :param domain_admin_account: 域管理员帐号。域类型为LOCAL_AD时需要配置。  必须为AD服务器上已经存在的域管理员帐号。
+        :param domain_admin_account: 域管理员帐号。域类型为LOCAL_AD时需要配置。 必须为AD服务器上已经存在的域管理员帐号。
         :type domain_admin_account: str
         :param domain_password: 域管理员账号密码。域类型为LOCAL_AD时需要配置。
         :type domain_password: str
@@ -131,7 +131,7 @@ class AdDomain:
     def domain_type(self):
         """Gets the domain_type of this AdDomain.
 
-        域类型。 - LITE_AS：本地认证。 - LOCAL_AD：本地AD。  说明：域类型为“LOCAL_AD”时，请确保所选VPC网络与AD所属网络可连通。
+        域类型。 - LITE_AS：本地认证。 - LOCAL_AD：本地AD。 说明：域类型为“LOCAL_AD”时，请确保所选VPC网络与AD所属网络可连通。
 
         :return: The domain_type of this AdDomain.
         :rtype: str
@@ -142,7 +142,7 @@ class AdDomain:
     def domain_type(self, domain_type):
         """Sets the domain_type of this AdDomain.
 
-        域类型。 - LITE_AS：本地认证。 - LOCAL_AD：本地AD。  说明：域类型为“LOCAL_AD”时，请确保所选VPC网络与AD所属网络可连通。
+        域类型。 - LITE_AS：本地认证。 - LOCAL_AD：本地AD。 说明：域类型为“LOCAL_AD”时，请确保所选VPC网络与AD所属网络可连通。
 
         :param domain_type: The domain_type of this AdDomain.
         :type domain_type: str
@@ -153,7 +153,7 @@ class AdDomain:
     def domain_name(self):
         """Gets the domain_name of this AdDomain.
 
-        域名称。域类型为LOCAL_AD时需要配置。  域名必须为AD服务器上已经存在的域名，且长度不超过55。
+        域名称。域类型为LOCAL_AD时需要配置。 域名必须为AD服务器上已经存在的域名，且长度不超过55。
 
         :return: The domain_name of this AdDomain.
         :rtype: str
@@ -164,7 +164,7 @@ class AdDomain:
     def domain_name(self, domain_name):
         """Sets the domain_name of this AdDomain.
 
-        域名称。域类型为LOCAL_AD时需要配置。  域名必须为AD服务器上已经存在的域名，且长度不超过55。
+        域名称。域类型为LOCAL_AD时需要配置。 域名必须为AD服务器上已经存在的域名，且长度不超过55。
 
         :param domain_name: The domain_name of this AdDomain.
         :type domain_name: str
@@ -175,7 +175,7 @@ class AdDomain:
     def domain_admin_account(self):
         """Gets the domain_admin_account of this AdDomain.
 
-        域管理员帐号。域类型为LOCAL_AD时需要配置。  必须为AD服务器上已经存在的域管理员帐号。
+        域管理员帐号。域类型为LOCAL_AD时需要配置。 必须为AD服务器上已经存在的域管理员帐号。
 
         :return: The domain_admin_account of this AdDomain.
         :rtype: str
@@ -186,7 +186,7 @@ class AdDomain:
     def domain_admin_account(self, domain_admin_account):
         """Sets the domain_admin_account of this AdDomain.
 
-        域管理员帐号。域类型为LOCAL_AD时需要配置。  必须为AD服务器上已经存在的域管理员帐号。
+        域管理员帐号。域类型为LOCAL_AD时需要配置。 必须为AD服务器上已经存在的域管理员帐号。
 
         :param domain_admin_account: The domain_admin_account of this AdDomain.
         :type domain_admin_account: str

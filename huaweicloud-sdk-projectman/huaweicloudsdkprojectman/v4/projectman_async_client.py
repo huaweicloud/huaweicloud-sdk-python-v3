@@ -2304,6 +2304,71 @@ class ProjectManAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_attachment_async(self, request):
+        """删除附件
+
+        取消工作项与附件关联，如附件为工作项页面上传则删除附件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteAttachment
+        :type request: :class:`huaweicloudsdkprojectman.v4.DeleteAttachmentRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.DeleteAttachmentResponse`
+        """
+        return self.delete_attachment_with_http_info(request)
+
+    def delete_attachment_with_http_info(self, request):
+        all_params = ['project_id', 'issue_id', 'attachment_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'issue_id' in local_var_params:
+            path_params['issue_id'] = local_var_params['issue_id']
+        if 'attachment_id' in local_var_params:
+            path_params['attachment_id'] = local_var_params['attachment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/issues/{issue_id}/attachments/{attachment_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteAttachmentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_issue_v4_async(self, request):
         """删除工作项
 
@@ -2488,6 +2553,71 @@ class ProjectManAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteProjectModuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def download_attachment_async(self, request):
+        """下载工作项附件
+
+        下载工作项附件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DownloadAttachment
+        :type request: :class:`huaweicloudsdkprojectman.v4.DownloadAttachmentRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.DownloadAttachmentResponse`
+        """
+        return self.download_attachment_with_http_info(request)
+
+    def download_attachment_with_http_info(self, request):
+        all_params = ['project_id', 'issue_id', 'attachment_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'issue_id' in local_var_params:
+            path_params['issue_id'] = local_var_params['issue_id']
+        if 'attachment_id' in local_var_params:
+            path_params['attachment_id'] = local_var_params['attachment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/issues/{issue_id}/attachments/{attachment_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DownloadAttachmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3670,6 +3800,73 @@ class ProjectManAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListScrumProjectStatusesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_status_statistic_async(self, request):
+        """查询迭代下工作项状态的统计数据（处理人维度）
+
+        查询迭代下工作项状态的统计数据（处理人维度）
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListStatusStatistic
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListStatusStatisticRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListStatusStatisticResponse`
+        """
+        return self.list_status_statistic_with_http_info(request)
+
+    def list_status_statistic_with_http_info(self, request):
+        all_params = ['project_id', 'iteration_id', 'tracker_id', 'status_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'iteration_id' in local_var_params:
+            query_params.append(('iteration_id', local_var_params['iteration_id']))
+        if 'tracker_id' in local_var_params:
+            query_params.append(('tracker_id', local_var_params['tracker_id']))
+        if 'status_id' in local_var_params:
+            query_params.append(('status_id', local_var_params['status_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/status-statistic',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListStatusStatisticResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

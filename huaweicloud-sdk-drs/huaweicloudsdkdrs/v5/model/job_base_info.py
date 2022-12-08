@@ -101,17 +101,24 @@ class JobBaseInfo:
         self._tags = None
         self.discriminator = None
 
-        self.name = name
-        self.job_type = job_type
+        if name is not None:
+            self.name = name
+        if job_type is not None:
+            self.job_type = job_type
         if multi_write is not None:
             self.multi_write = multi_write
-        self.engine_type = engine_type
-        self.job_direction = job_direction
-        self.task_type = task_type
-        self.net_type = net_type
+        if engine_type is not None:
+            self.engine_type = engine_type
+        if job_direction is not None:
+            self.job_direction = job_direction
+        if task_type is not None:
+            self.task_type = task_type
+        if net_type is not None:
+            self.net_type = net_type
         if charging_mode is not None:
             self.charging_mode = charging_mode
-        self.enterprise_project_id = enterprise_project_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if description is not None:
             self.description = description
         if start_time is not None:

@@ -23,23 +23,17 @@ class ListStackEventsRequest:
         'client_request_id': 'str',
         'stack_name': 'str',
         'stack_id': 'str',
-        'deployment_id': 'str',
-        'limit': 'int',
-        'marker': 'str',
-        'executor': 'str'
+        'deployment_id': 'str'
     }
 
     attribute_map = {
         'client_request_id': 'Client-Request-Id',
         'stack_name': 'stack_name',
         'stack_id': 'stack_id',
-        'deployment_id': 'deployment_id',
-        'limit': 'limit',
-        'marker': 'marker',
-        'executor': 'executor'
+        'deployment_id': 'deployment_id'
     }
 
-    def __init__(self, client_request_id=None, stack_name=None, stack_id=None, deployment_id=None, limit=None, marker=None, executor=None):
+    def __init__(self, client_request_id=None, stack_name=None, stack_id=None, deployment_id=None):
         """ListStackEventsRequest
 
         The model defined in huaweicloud sdk
@@ -48,16 +42,10 @@ class ListStackEventsRequest:
         :type client_request_id: str
         :param stack_name: 用户希望操作的资源栈名
         :type stack_name: str
-        :param stack_id: 用户希望描述的栈的Id。若stack_name和stack_id同时存在，则IaC会检查是否两个匹配，否则返回400
+        :param stack_id: 用户希望描述的栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
         :type stack_id: str
         :param deployment_id: 部署时API返回的id(uuid)。如果deployment_id不存在，则返回整个栈从生成到现在的所有更新状态
         :type deployment_id: str
-        :param limit: 一次返回的stack-events的最大数量
-        :type limit: int
-        :param marker: 当一页无法发回所有的细节，上一次的请求将返回next_marker以指引还有更多页数，客户可以将next_marker中的值放到此处以查询下一页的信息。
-        :type marker: str
-        :param executor: 执行操作者的名字，将用做未来的审计工作。
-        :type executor: str
         """
         
         
@@ -66,9 +54,6 @@ class ListStackEventsRequest:
         self._stack_name = None
         self._stack_id = None
         self._deployment_id = None
-        self._limit = None
-        self._marker = None
-        self._executor = None
         self.discriminator = None
 
         self.client_request_id = client_request_id
@@ -77,12 +62,6 @@ class ListStackEventsRequest:
             self.stack_id = stack_id
         if deployment_id is not None:
             self.deployment_id = deployment_id
-        if limit is not None:
-            self.limit = limit
-        if marker is not None:
-            self.marker = marker
-        if executor is not None:
-            self.executor = executor
 
     @property
     def client_request_id(self):
@@ -132,7 +111,7 @@ class ListStackEventsRequest:
     def stack_id(self):
         """Gets the stack_id of this ListStackEventsRequest.
 
-        用户希望描述的栈的Id。若stack_name和stack_id同时存在，则IaC会检查是否两个匹配，否则返回400
+        用户希望描述的栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
 
         :return: The stack_id of this ListStackEventsRequest.
         :rtype: str
@@ -143,7 +122,7 @@ class ListStackEventsRequest:
     def stack_id(self, stack_id):
         """Sets the stack_id of this ListStackEventsRequest.
 
-        用户希望描述的栈的Id。若stack_name和stack_id同时存在，则IaC会检查是否两个匹配，否则返回400
+        用户希望描述的栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
 
         :param stack_id: The stack_id of this ListStackEventsRequest.
         :type stack_id: str
@@ -171,72 +150,6 @@ class ListStackEventsRequest:
         :type deployment_id: str
         """
         self._deployment_id = deployment_id
-
-    @property
-    def limit(self):
-        """Gets the limit of this ListStackEventsRequest.
-
-        一次返回的stack-events的最大数量
-
-        :return: The limit of this ListStackEventsRequest.
-        :rtype: int
-        """
-        return self._limit
-
-    @limit.setter
-    def limit(self, limit):
-        """Sets the limit of this ListStackEventsRequest.
-
-        一次返回的stack-events的最大数量
-
-        :param limit: The limit of this ListStackEventsRequest.
-        :type limit: int
-        """
-        self._limit = limit
-
-    @property
-    def marker(self):
-        """Gets the marker of this ListStackEventsRequest.
-
-        当一页无法发回所有的细节，上一次的请求将返回next_marker以指引还有更多页数，客户可以将next_marker中的值放到此处以查询下一页的信息。
-
-        :return: The marker of this ListStackEventsRequest.
-        :rtype: str
-        """
-        return self._marker
-
-    @marker.setter
-    def marker(self, marker):
-        """Sets the marker of this ListStackEventsRequest.
-
-        当一页无法发回所有的细节，上一次的请求将返回next_marker以指引还有更多页数，客户可以将next_marker中的值放到此处以查询下一页的信息。
-
-        :param marker: The marker of this ListStackEventsRequest.
-        :type marker: str
-        """
-        self._marker = marker
-
-    @property
-    def executor(self):
-        """Gets the executor of this ListStackEventsRequest.
-
-        执行操作者的名字，将用做未来的审计工作。
-
-        :return: The executor of this ListStackEventsRequest.
-        :rtype: str
-        """
-        return self._executor
-
-    @executor.setter
-    def executor(self, executor):
-        """Sets the executor of this ListStackEventsRequest.
-
-        执行操作者的名字，将用做未来的审计工作。
-
-        :param executor: The executor of this ListStackEventsRequest.
-        :type executor: str
-        """
-        self._executor = executor
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -30,6 +30,7 @@ class CreateDependencyResponse(SdkResponse):
         'description': 'str',
         'file_name': 'str',
         'version': 'int',
+        'dep_id': 'str',
         'last_modified': 'int'
     }
 
@@ -44,15 +45,16 @@ class CreateDependencyResponse(SdkResponse):
         'description': 'description',
         'file_name': 'file_name',
         'version': 'version',
+        'dep_id': 'dep_id',
         'last_modified': 'last_modified'
     }
 
-    def __init__(self, id=None, owner=None, link=None, runtime=None, etag=None, size=None, name=None, description=None, file_name=None, version=None, last_modified=None):
+    def __init__(self, id=None, owner=None, link=None, runtime=None, etag=None, size=None, name=None, description=None, file_name=None, version=None, dep_id=None, last_modified=None):
         """CreateDependencyResponse
 
         The model defined in huaweicloud sdk
 
-        :param id: 依赖包ID。
+        :param id: 依赖包版本ID。
         :type id: str
         :param owner: 依赖包拥有者。
         :type owner: str
@@ -72,6 +74,8 @@ class CreateDependencyResponse(SdkResponse):
         :type file_name: str
         :param version: 依赖包版本号
         :type version: int
+        :param dep_id: 依赖包ID
+        :type dep_id: str
         :param last_modified: 依赖包更新时间
         :type last_modified: int
         """
@@ -88,6 +92,7 @@ class CreateDependencyResponse(SdkResponse):
         self._description = None
         self._file_name = None
         self._version = None
+        self._dep_id = None
         self._last_modified = None
         self.discriminator = None
 
@@ -111,6 +116,8 @@ class CreateDependencyResponse(SdkResponse):
             self.file_name = file_name
         if version is not None:
             self.version = version
+        if dep_id is not None:
+            self.dep_id = dep_id
         if last_modified is not None:
             self.last_modified = last_modified
 
@@ -118,7 +125,7 @@ class CreateDependencyResponse(SdkResponse):
     def id(self):
         """Gets the id of this CreateDependencyResponse.
 
-        依赖包ID。
+        依赖包版本ID。
 
         :return: The id of this CreateDependencyResponse.
         :rtype: str
@@ -129,7 +136,7 @@ class CreateDependencyResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this CreateDependencyResponse.
 
-        依赖包ID。
+        依赖包版本ID。
 
         :param id: The id of this CreateDependencyResponse.
         :type id: str
@@ -333,6 +340,28 @@ class CreateDependencyResponse(SdkResponse):
         :type version: int
         """
         self._version = version
+
+    @property
+    def dep_id(self):
+        """Gets the dep_id of this CreateDependencyResponse.
+
+        依赖包ID
+
+        :return: The dep_id of this CreateDependencyResponse.
+        :rtype: str
+        """
+        return self._dep_id
+
+    @dep_id.setter
+    def dep_id(self, dep_id):
+        """Sets the dep_id of this CreateDependencyResponse.
+
+        依赖包ID
+
+        :param dep_id: The dep_id of this CreateDependencyResponse.
+        :type dep_id: str
+        """
+        self._dep_id = dep_id
 
     @property
     def last_modified(self):

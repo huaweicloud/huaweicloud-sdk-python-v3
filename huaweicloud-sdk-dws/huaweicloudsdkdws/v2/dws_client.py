@@ -3327,6 +3327,8 @@ class DwsClient(Client):
         """openApi查询磁盘信息
 
         openApi查询磁盘信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListHostDisk
         :type request: :class:`huaweicloudsdkdws.v2.ListHostDiskRequest`
@@ -3391,6 +3393,8 @@ class DwsClient(Client):
         """openapi获取网卡状态
 
         openapi获取网卡状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListHostNet
         :type request: :class:`huaweicloudsdkdws.v2.ListHostNetRequest`
@@ -3455,6 +3459,8 @@ class DwsClient(Client):
         """openApi查询主机概览
 
         openApi查询主机概览
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListHostOverview
         :type request: :class:`huaweicloudsdkdws.v2.ListHostOverviewRequest`

@@ -52,8 +52,7 @@ class IpsSwitchDTO:
         self.discriminator = None
 
         self.object_id = object_id
-        if ips_type is not None:
-            self.ips_type = ips_type
+        self.ips_type = ips_type
         self.status = status
 
     @property

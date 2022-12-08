@@ -2461,6 +2461,69 @@ class LtsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_time_line_traffic_statistics_async(self, request):
+        """按时间段统计查询资源
+
+        按时间段统计查询资源
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTimeLineTrafficStatistics
+        :type request: :class:`huaweicloudsdklts.v2.ListTimeLineTrafficStatisticsRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.ListTimeLineTrafficStatisticsResponse`
+        """
+        return self.list_time_line_traffic_statistics_with_http_info(request)
+
+    def list_time_line_traffic_statistics_with_http_info(self, request):
+        all_params = ['timezone', 'timeline_traffic_statistics_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'timezone' in local_var_params:
+            query_params.append(('timezone', local_var_params['timezone']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/timeline-traffic-statistics',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListTimeLineTrafficStatisticsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_transfers_async(self, request):
         """查询日志转储
 

@@ -21,48 +21,41 @@ class ApplyExecutionPlanRequestBody:
 
     openapi_types = {
         'stack_id': 'str',
-        'execution_plan_id': 'str',
-        'executor': 'str'
+        'execution_plan_id': 'str'
     }
 
     attribute_map = {
         'stack_id': 'stack_id',
-        'execution_plan_id': 'execution_plan_id',
-        'executor': 'executor'
+        'execution_plan_id': 'execution_plan_id'
     }
 
-    def __init__(self, stack_id=None, execution_plan_id=None, executor=None):
+    def __init__(self, stack_id=None, execution_plan_id=None):
         """ApplyExecutionPlanRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param stack_id: 堆栈id
+        :param stack_id: 资源栈id
         :type stack_id: str
         :param execution_plan_id: 执行计划Id，在domain_id+region+project_id+stack_id下应唯一
         :type execution_plan_id: str
-        :param executor: 执行操作者的名字，用于审计工作
-        :type executor: str
         """
         
         
 
         self._stack_id = None
         self._execution_plan_id = None
-        self._executor = None
         self.discriminator = None
 
         if stack_id is not None:
             self.stack_id = stack_id
         if execution_plan_id is not None:
             self.execution_plan_id = execution_plan_id
-        if executor is not None:
-            self.executor = executor
 
     @property
     def stack_id(self):
         """Gets the stack_id of this ApplyExecutionPlanRequestBody.
 
-        堆栈id
+        资源栈id
 
         :return: The stack_id of this ApplyExecutionPlanRequestBody.
         :rtype: str
@@ -73,7 +66,7 @@ class ApplyExecutionPlanRequestBody:
     def stack_id(self, stack_id):
         """Sets the stack_id of this ApplyExecutionPlanRequestBody.
 
-        堆栈id
+        资源栈id
 
         :param stack_id: The stack_id of this ApplyExecutionPlanRequestBody.
         :type stack_id: str
@@ -101,28 +94,6 @@ class ApplyExecutionPlanRequestBody:
         :type execution_plan_id: str
         """
         self._execution_plan_id = execution_plan_id
-
-    @property
-    def executor(self):
-        """Gets the executor of this ApplyExecutionPlanRequestBody.
-
-        执行操作者的名字，用于审计工作
-
-        :return: The executor of this ApplyExecutionPlanRequestBody.
-        :rtype: str
-        """
-        return self._executor
-
-    @executor.setter
-    def executor(self, executor):
-        """Sets the executor of this ApplyExecutionPlanRequestBody.
-
-        执行操作者的名字，用于审计工作
-
-        :param executor: The executor of this ApplyExecutionPlanRequestBody.
-        :type executor: str
-        """
-        self._executor = executor
 
     def to_dict(self):
         """Returns the model properties as a dict"""

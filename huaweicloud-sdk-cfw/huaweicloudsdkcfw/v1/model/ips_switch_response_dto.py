@@ -20,65 +20,65 @@ class IpsSwitchResponseDTO:
     sensitive_list = []
 
     openapi_types = {
-        'object_id': 'str',
+        'id': 'str',
         'basic_defense_status': 'int',
-        'virtual_patches_stauts': 'int'
+        'virtual_patches_status': 'int'
     }
 
     attribute_map = {
-        'object_id': 'object_id',
+        'id': 'id',
         'basic_defense_status': 'basic_defense_status',
-        'virtual_patches_stauts': 'virtual_patches_stauts'
+        'virtual_patches_status': 'virtual_patches_status'
     }
 
-    def __init__(self, object_id=None, basic_defense_status=None, virtual_patches_stauts=None):
+    def __init__(self, id=None, basic_defense_status=None, virtual_patches_status=None):
         """IpsSwitchResponseDTO
 
         The model defined in huaweicloud sdk
 
-        :param object_id: object_id
-        :type object_id: str
+        :param id: ips开关id
+        :type id: str
         :param basic_defense_status: 基础防御状态
         :type basic_defense_status: int
-        :param virtual_patches_stauts: 虚拟补丁状态
-        :type virtual_patches_stauts: int
+        :param virtual_patches_status: 虚拟补丁状态
+        :type virtual_patches_status: int
         """
         
         
 
-        self._object_id = None
+        self._id = None
         self._basic_defense_status = None
-        self._virtual_patches_stauts = None
+        self._virtual_patches_status = None
         self.discriminator = None
 
-        if object_id is not None:
-            self.object_id = object_id
+        if id is not None:
+            self.id = id
         if basic_defense_status is not None:
             self.basic_defense_status = basic_defense_status
-        if virtual_patches_stauts is not None:
-            self.virtual_patches_stauts = virtual_patches_stauts
+        if virtual_patches_status is not None:
+            self.virtual_patches_status = virtual_patches_status
 
     @property
-    def object_id(self):
-        """Gets the object_id of this IpsSwitchResponseDTO.
+    def id(self):
+        """Gets the id of this IpsSwitchResponseDTO.
 
-        object_id
+        ips开关id
 
-        :return: The object_id of this IpsSwitchResponseDTO.
+        :return: The id of this IpsSwitchResponseDTO.
         :rtype: str
         """
-        return self._object_id
+        return self._id
 
-    @object_id.setter
-    def object_id(self, object_id):
-        """Sets the object_id of this IpsSwitchResponseDTO.
+    @id.setter
+    def id(self, id):
+        """Sets the id of this IpsSwitchResponseDTO.
 
-        object_id
+        ips开关id
 
-        :param object_id: The object_id of this IpsSwitchResponseDTO.
-        :type object_id: str
+        :param id: The id of this IpsSwitchResponseDTO.
+        :type id: str
         """
-        self._object_id = object_id
+        self._id = id
 
     @property
     def basic_defense_status(self):
@@ -103,26 +103,26 @@ class IpsSwitchResponseDTO:
         self._basic_defense_status = basic_defense_status
 
     @property
-    def virtual_patches_stauts(self):
-        """Gets the virtual_patches_stauts of this IpsSwitchResponseDTO.
+    def virtual_patches_status(self):
+        """Gets the virtual_patches_status of this IpsSwitchResponseDTO.
 
         虚拟补丁状态
 
-        :return: The virtual_patches_stauts of this IpsSwitchResponseDTO.
+        :return: The virtual_patches_status of this IpsSwitchResponseDTO.
         :rtype: int
         """
-        return self._virtual_patches_stauts
+        return self._virtual_patches_status
 
-    @virtual_patches_stauts.setter
-    def virtual_patches_stauts(self, virtual_patches_stauts):
-        """Sets the virtual_patches_stauts of this IpsSwitchResponseDTO.
+    @virtual_patches_status.setter
+    def virtual_patches_status(self, virtual_patches_status):
+        """Sets the virtual_patches_status of this IpsSwitchResponseDTO.
 
         虚拟补丁状态
 
-        :param virtual_patches_stauts: The virtual_patches_stauts of this IpsSwitchResponseDTO.
-        :type virtual_patches_stauts: int
+        :param virtual_patches_status: The virtual_patches_status of this IpsSwitchResponseDTO.
+        :type virtual_patches_status: int
         """
-        self._virtual_patches_stauts = virtual_patches_stauts
+        self._virtual_patches_status = virtual_patches_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

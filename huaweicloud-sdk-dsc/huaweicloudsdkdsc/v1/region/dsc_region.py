@@ -22,6 +22,8 @@ class DscRegion:
 
     CN_SOUTH_1 = Region(id="cn-south-1", endpoint="https://sdg.cn-south-1.myhuaweicloud.com")
 
+    CN_SOUTHWEST_2 = Region(id="cn-southwest-2", endpoint="https://sdg.cn-southwest-2.myhuaweicloud.com")
+
     AP_SOUTHEAST_2 = Region(id="ap-southeast-2", endpoint="https://sdg.ap-southeast-2.myhuaweicloud.com")
 
     AP_SOUTHEAST_1 = Region(id="ap-southeast-1", endpoint="https://sdg.ap-southeast-1.myhuaweicloud.com")
@@ -41,6 +43,7 @@ class DscRegion:
         "cn-east-2": CN_EAST_2,
         "cn-east-3": CN_EAST_3,
         "cn-south-1": CN_SOUTH_1,
+        "cn-southwest-2": CN_SOUTHWEST_2,
         "ap-southeast-2": AP_SOUTHEAST_2,
         "ap-southeast-1": AP_SOUTHEAST_1,
         "ap-southeast-3": AP_SOUTHEAST_3,

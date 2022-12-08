@@ -20,35 +20,28 @@ class ListStacksRequest:
     sensitive_list = []
 
     openapi_types = {
-        'client_request_id': 'str',
-        'executor': 'str'
+        'client_request_id': 'str'
     }
 
     attribute_map = {
-        'client_request_id': 'Client-Request-Id',
-        'executor': 'executor'
+        'client_request_id': 'Client-Request-Id'
     }
 
-    def __init__(self, client_request_id=None, executor=None):
+    def __init__(self, client_request_id=None):
         """ListStacksRequest
 
         The model defined in huaweicloud sdk
 
         :param client_request_id: 用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
         :type client_request_id: str
-        :param executor: 执行操作者的名字，将用做未来的审计工作。
-        :type executor: str
         """
         
         
 
         self._client_request_id = None
-        self._executor = None
         self.discriminator = None
 
         self.client_request_id = client_request_id
-        if executor is not None:
-            self.executor = executor
 
     @property
     def client_request_id(self):
@@ -71,28 +64,6 @@ class ListStacksRequest:
         :type client_request_id: str
         """
         self._client_request_id = client_request_id
-
-    @property
-    def executor(self):
-        """Gets the executor of this ListStacksRequest.
-
-        执行操作者的名字，将用做未来的审计工作。
-
-        :return: The executor of this ListStacksRequest.
-        :rtype: str
-        """
-        return self._executor
-
-    @executor.setter
-    def executor(self, executor):
-        """Sets the executor of this ListStacksRequest.
-
-        执行操作者的名字，将用做未来的审计工作。
-
-        :param executor: The executor of this ListStacksRequest.
-        :type executor: str
-        """
-        self._executor = executor
 
     def to_dict(self):
         """Returns the model properties as a dict"""

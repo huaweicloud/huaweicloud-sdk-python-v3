@@ -90,7 +90,7 @@ class UserDetail:
         :type distinguished_name: str
         :param account_type: 帐号类型(0：用户；1：用户组)。
         :type account_type: int
-        :param when_created: UTC时间毫秒数对应的字符。
+        :param when_created: UTC时间毫秒数对应的字符，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ。
         :type when_created: str
         :param account_expires: 账号有效期最后一天对应的UTC时间，以毫秒为单位。
         :type account_expires: int
@@ -401,7 +401,7 @@ class UserDetail:
     def when_created(self):
         """Gets the when_created of this UserDetail.
 
-        UTC时间毫秒数对应的字符。
+        UTC时间毫秒数对应的字符，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ。
 
         :return: The when_created of this UserDetail.
         :rtype: str
@@ -412,7 +412,7 @@ class UserDetail:
     def when_created(self, when_created):
         """Sets the when_created of this UserDetail.
 
-        UTC时间毫秒数对应的字符。
+        UTC时间毫秒数对应的字符，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ。
 
         :param when_created: The when_created of this UserDetail.
         :type when_created: str

@@ -20,7 +20,7 @@ class RecognizeLicensePlateResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'LicensePlateResult'
+        'result': 'list[LicensePlateResult]'
     }
 
     attribute_map = {
@@ -32,8 +32,8 @@ class RecognizeLicensePlateResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 
-        :type result: :class:`huaweicloudsdkocr.v1.LicensePlateResult`
+        :param result: 调用成功时表示调用结果。  调用失败时无此字段。 
+        :type result: list[:class:`huaweicloudsdkocr.v1.LicensePlateResult`]
         """
         
         super(RecognizeLicensePlateResponse, self).__init__()
@@ -48,8 +48,10 @@ class RecognizeLicensePlateResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeLicensePlateResponse.
 
+        调用成功时表示调用结果。  调用失败时无此字段。 
+
         :return: The result of this RecognizeLicensePlateResponse.
-        :rtype: :class:`huaweicloudsdkocr.v1.LicensePlateResult`
+        :rtype: list[:class:`huaweicloudsdkocr.v1.LicensePlateResult`]
         """
         return self._result
 
@@ -57,8 +59,10 @@ class RecognizeLicensePlateResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this RecognizeLicensePlateResponse.
 
+        调用成功时表示调用结果。  调用失败时无此字段。 
+
         :param result: The result of this RecognizeLicensePlateResponse.
-        :type result: :class:`huaweicloudsdkocr.v1.LicensePlateResult`
+        :type result: list[:class:`huaweicloudsdkocr.v1.LicensePlateResult`]
         """
         self._result = result
 

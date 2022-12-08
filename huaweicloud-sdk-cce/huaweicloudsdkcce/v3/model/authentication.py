@@ -34,7 +34,7 @@ class Authentication:
 
         The model defined in huaweicloud sdk
 
-        :param mode: 集群认证模式。   - kubernetes 1.11及之前版本的集群支持“x509”、“rbac”和“authenticating_proxy”，默认取值为“x509”。  - kubernetes 1.13及以上版本的集群支持“rbac”和“authenticating_proxy”，默认取值为“rbac”。
+        :param mode: 集群认证模式。 - kubernetes 1.11及之前版本的集群支持“x509”、“rbac”和“authenticating_proxy”，默认取值为“x509”。 - kubernetes 1.13及以上版本的集群支持“rbac”和“authenticating_proxy”，默认取值为“rbac”。
         :type mode: str
         :param authenticating_proxy: 
         :type authenticating_proxy: :class:`huaweicloudsdkcce.v3.AuthenticatingProxy`
@@ -55,7 +55,7 @@ class Authentication:
     def mode(self):
         """Gets the mode of this Authentication.
 
-        集群认证模式。   - kubernetes 1.11及之前版本的集群支持“x509”、“rbac”和“authenticating_proxy”，默认取值为“x509”。  - kubernetes 1.13及以上版本的集群支持“rbac”和“authenticating_proxy”，默认取值为“rbac”。
+        集群认证模式。 - kubernetes 1.11及之前版本的集群支持“x509”、“rbac”和“authenticating_proxy”，默认取值为“x509”。 - kubernetes 1.13及以上版本的集群支持“rbac”和“authenticating_proxy”，默认取值为“rbac”。
 
         :return: The mode of this Authentication.
         :rtype: str
@@ -66,7 +66,7 @@ class Authentication:
     def mode(self, mode):
         """Sets the mode of this Authentication.
 
-        集群认证模式。   - kubernetes 1.11及之前版本的集群支持“x509”、“rbac”和“authenticating_proxy”，默认取值为“x509”。  - kubernetes 1.13及以上版本的集群支持“rbac”和“authenticating_proxy”，默认取值为“rbac”。
+        集群认证模式。 - kubernetes 1.11及之前版本的集群支持“x509”、“rbac”和“authenticating_proxy”，默认取值为“x509”。 - kubernetes 1.13及以上版本的集群支持“rbac”和“authenticating_proxy”，默认取值为“rbac”。
 
         :param mode: The mode of this Authentication.
         :type mode: str

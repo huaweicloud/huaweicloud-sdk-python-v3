@@ -42,6 +42,252 @@ class DscAsyncClient(Client):
 
         return ClientBuilder(clazz)
 
+    def add_buckets_async(self, request):
+        """添加资产授权
+
+        添加数据资产扫描授权
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddBuckets
+        :type request: :class:`huaweicloudsdkdsc.v1.AddBucketsRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.AddBucketsResponse`
+        """
+        return self.add_buckets_with_http_info(request)
+
+    def add_buckets_with_http_info(self, request):
+        all_params = ['add_buckets_request_body', 'type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sdg/asset/obs/buckets',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddBucketsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def add_rule_async(self, request):
+        """创建扫描规则
+
+        根据指定的规则名称、规则类型、风险等级、最小匹配次数等参数创建自定义的敏感数据识别规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddRule
+        :type request: :class:`huaweicloudsdkdsc.v1.AddRuleRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.AddRuleResponse`
+        """
+        return self.add_rule_with_http_info(request)
+
+    def add_rule_with_http_info(self, request):
+        all_params = ['add_rule_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sdg/server/scan/rules',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def add_rule_group_async(self, request):
+        """创建扫描规则组
+
+        根据指定的规则组名称和扫描规则列表创建敏感数据扫描规则组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddRuleGroup
+        :type request: :class:`huaweicloudsdkdsc.v1.AddRuleGroupRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.AddRuleGroupResponse`
+        """
+        return self.add_rule_group_with_http_info(request)
+
+    def add_rule_group_with_http_info(self, request):
+        all_params = ['add_rule_group_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sdg/server/scan/groups',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddRuleGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def add_scan_job_async(self, request):
+        """创建扫描任务
+
+        根据指定的任务名称、扫描方式、扫描周期、扫描规则组、扫描时间创建扫描任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddScanJob
+        :type request: :class:`huaweicloudsdkdsc.v1.AddScanJobRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.AddScanJobResponse`
+        """
+        return self.add_scan_job_with_http_info(request)
+
+    def add_scan_job_with_http_info(self, request):
+        all_params = ['add_scan_job_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sdg/scan/job',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddScanJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def batch_add_data_mask_async(self, request):
         """对数据进行脱敏
 
@@ -98,6 +344,130 @@ class DscAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='BatchAddDataMaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def change_db_template_operation_async(self, request):
+        """开启/停止脱敏任务
+
+        开启/停止脱敏任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ChangeDbTemplateOperation
+        :type request: :class:`huaweicloudsdkdsc.v1.ChangeDbTemplateOperationRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.ChangeDbTemplateOperationResponse`
+        """
+        return self.change_db_template_operation_with_http_info(request)
+
+    def change_db_template_operation_with_http_info(self, request):
+        all_params = ['template_id', 'change_db_template_operation_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sdg/server/mask/dbs/templates/{template_id}/operation',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ChangeDbTemplateOperationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def change_rule_async(self, request):
+        """修改扫描规则
+
+        修改自定义的敏感数据识别规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ChangeRule
+        :type request: :class:`huaweicloudsdkdsc.v1.ChangeRuleRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.ChangeRuleResponse`
+        """
+        return self.change_rule_with_http_info(request)
+
+    def change_rule_with_http_info(self, request):
+        all_params = ['change_rule_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sdg/server/scan/rules',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ChangeRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -433,6 +803,810 @@ class DscAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateImageWatermarkByAddressResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_product_order_async(self, request):
+        """实例下单
+
+        根据计费方式、计费周期等信息进行实例下单
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateProductOrder
+        :type request: :class:`huaweicloudsdkdsc.v1.CreateProductOrderRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.CreateProductOrderResponse`
+        """
+        return self.create_product_order_with_http_info(request)
+
+    def create_product_order_with_http_info(self, request):
+        all_params = ['create_product_order_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/period/order',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateProductOrderResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_bucket_async(self, request):
+        """删除资产授权
+
+        删除数据资产扫描授权
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteBucket
+        :type request: :class:`huaweicloudsdkdsc.v1.DeleteBucketRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.DeleteBucketResponse`
+        """
+        return self.delete_bucket_with_http_info(request)
+
+    def delete_bucket_with_http_info(self, request):
+        all_params = ['bucket_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'bucket_id' in local_var_params:
+            path_params['bucket_id'] = local_var_params['bucket_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sdg/asset/obs/bucket/{bucket_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteBucketResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_rule_async(self, request):
+        """删除扫描规则
+
+        删除指定的敏感数据识别规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteRule
+        :type request: :class:`huaweicloudsdkdsc.v1.DeleteRuleRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.DeleteRuleResponse`
+        """
+        return self.delete_rule_with_http_info(request)
+
+    def delete_rule_with_http_info(self, request):
+        all_params = ['rule_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sdg/server/scan/rules/{rule_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_rule_group_async(self, request):
+        """删除扫描规则组
+
+        根据扫描规则组ID删除指定的扫描规则组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteRuleGroup
+        :type request: :class:`huaweicloudsdkdsc.v1.DeleteRuleGroupRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.DeleteRuleGroupResponse`
+        """
+        return self.delete_rule_group_with_http_info(request)
+
+    def delete_rule_group_with_http_info(self, request):
+        all_params = ['group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sdg/server/scan/groups/{group_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteRuleGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_buckets_async(self, request):
+        """查看资产列表
+
+        查询数据资产扫描授权列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBuckets
+        :type request: :class:`huaweicloudsdkdsc.v1.ListBucketsRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.ListBucketsResponse`
+        """
+        return self.list_buckets_with_http_info(request)
+
+    def list_buckets_with_http_info(self, request):
+        all_params = ['added', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'added' in local_var_params:
+            query_params.append(('added', local_var_params['added']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sdg/asset/obs/buckets',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListBucketsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_db_mask_task_async(self, request):
+        """查询脱敏任务执行列表
+
+        查询脱敏任务执行列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDbMaskTask
+        :type request: :class:`huaweicloudsdkdsc.v1.ListDbMaskTaskRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.ListDbMaskTaskResponse`
+        """
+        return self.list_db_mask_task_with_http_info(request)
+
+    def list_db_mask_task_with_http_info(self, request):
+        all_params = ['template_id', 'workspace_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+        if 'workspace_id' in local_var_params:
+            query_params.append(('workspace_id', local_var_params['workspace_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sdg/server/mask/dbs/templates/{template_id}/tasks',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListDbMaskTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_relation_buckets_async(self, request):
+        """OBS血缘图桶级查询
+
+        OBS血缘图桶级查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRelationBuckets
+        :type request: :class:`huaweicloudsdkdsc.v1.ListRelationBucketsRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.ListRelationBucketsResponse`
+        """
+        return self.list_relation_buckets_with_http_info(request)
+
+    def list_relation_buckets_with_http_info(self, request):
+        all_params = ['job_id', 'risk_start', 'risk_end', 'assets_name', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'assets_name' in local_var_params:
+            query_params.append(('assets_name', local_var_params['assets_name']))
+        if 'risk_start' in local_var_params:
+            query_params.append(('risk_start', local_var_params['risk_start']))
+        if 'risk_end' in local_var_params:
+            query_params.append(('risk_end', local_var_params['risk_end']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sdg/server/relation/jobs/{job_id}/obs/buckets',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListRelationBucketsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_relation_column_async(self, request):
+        """数据库血缘图表字段级查询
+
+        数据库血缘图表字段级查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRelationColumn
+        :type request: :class:`huaweicloudsdkdsc.v1.ListRelationColumnRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.ListRelationColumnResponse`
+        """
+        return self.list_relation_column_with_http_info(request)
+
+    def list_relation_column_with_http_info(self, request):
+        all_params = ['job_id', 'table_id', 'risk_start', 'risk_end', 'assets_name', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+        if 'table_id' in local_var_params:
+            path_params['table_id'] = local_var_params['table_id']
+
+        query_params = []
+        if 'assets_name' in local_var_params:
+            query_params.append(('assets_name', local_var_params['assets_name']))
+        if 'risk_start' in local_var_params:
+            query_params.append(('risk_start', local_var_params['risk_start']))
+        if 'risk_end' in local_var_params:
+            query_params.append(('risk_end', local_var_params['risk_end']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sdg/server/relation/jobs/{job_id}/dbs/{table_id}/columns',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListRelationColumnResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_relation_db_async(self, request):
+        """数据库血缘图数据库级查询
+
+        数据库血缘图数据库级查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRelationDb
+        :type request: :class:`huaweicloudsdkdsc.v1.ListRelationDbRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.ListRelationDbResponse`
+        """
+        return self.list_relation_db_with_http_info(request)
+
+    def list_relation_db_with_http_info(self, request):
+        all_params = ['job_id', 'risk_start', 'risk_end', 'assets_name', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'assets_name' in local_var_params:
+            query_params.append(('assets_name', local_var_params['assets_name']))
+        if 'risk_start' in local_var_params:
+            query_params.append(('risk_start', local_var_params['risk_start']))
+        if 'risk_end' in local_var_params:
+            query_params.append(('risk_end', local_var_params['risk_end']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sdg/server/relation/jobs/{job_id}/dbs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListRelationDbResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_relation_file_async(self, request):
+        """OBS血缘图文件分页查询
+
+        OBS血缘图文件分页查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRelationFile
+        :type request: :class:`huaweicloudsdkdsc.v1.ListRelationFileRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.ListRelationFileResponse`
+        """
+        return self.list_relation_file_with_http_info(request)
+
+    def list_relation_file_with_http_info(self, request):
+        all_params = ['job_id', 'bucket_id', 'risk_start', 'risk_end', 'offset', 'size', 'assets_name', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+        if 'bucket_id' in local_var_params:
+            path_params['bucket_id'] = local_var_params['bucket_id']
+
+        query_params = []
+        if 'assets_name' in local_var_params:
+            query_params.append(('assets_name', local_var_params['assets_name']))
+        if 'risk_start' in local_var_params:
+            query_params.append(('risk_start', local_var_params['risk_start']))
+        if 'risk_end' in local_var_params:
+            query_params.append(('risk_end', local_var_params['risk_end']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'size' in local_var_params:
+            query_params.append(('size', local_var_params['size']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sdg/server/relation/jobs/{job_id}/obs/{bucket_id}/files',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListRelationFileResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_relation_table_async(self, request):
+        """数据库血缘图表分页查询
+
+        数据库血缘图表分页查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRelationTable
+        :type request: :class:`huaweicloudsdkdsc.v1.ListRelationTableRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.ListRelationTableResponse`
+        """
+        return self.list_relation_table_with_http_info(request)
+
+    def list_relation_table_with_http_info(self, request):
+        all_params = ['job_id', 'db_id', 'risk_start', 'risk_end', 'offset', 'size', 'assets_name', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+        if 'db_id' in local_var_params:
+            path_params['db_id'] = local_var_params['db_id']
+
+        query_params = []
+        if 'assets_name' in local_var_params:
+            query_params.append(('assets_name', local_var_params['assets_name']))
+        if 'risk_start' in local_var_params:
+            query_params.append(('risk_start', local_var_params['risk_start']))
+        if 'risk_end' in local_var_params:
+            query_params.append(('risk_end', local_var_params['risk_end']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'size' in local_var_params:
+            query_params.append(('size', local_var_params['size']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sdg/server/relation/jobs/{job_id}/dbs/{db_id}/tables',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListRelationTableResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_rule_groups_async(self, request):
+        """查询扫描规则组列表
+
+        根据指定的项目ID查询扫描规则组列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRuleGroups
+        :type request: :class:`huaweicloudsdkdsc.v1.ListRuleGroupsRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.ListRuleGroupsResponse`
+        """
+        return self.list_rule_groups_with_http_info(request)
+
+    def list_rule_groups_with_http_info(self, request):
+        all_params = ['offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sdg/server/scan/groups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListRuleGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -877,6 +2051,69 @@ class DscAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_rules_async(self, request):
+        """查看规则列表
+
+        查询扫描规则列表，返回扫描规则总数和扫描规则列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRules
+        :type request: :class:`huaweicloudsdkdsc.v1.ShowRulesRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.ShowRulesResponse`
+        """
+        return self.show_rules_with_http_info(request)
+
+    def show_rules_with_http_info(self, request):
+        all_params = ['offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sdg/server/scan/rules',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowRulesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_scan_job_results_async(self, request):
         """查询指定任务扫描结果
 
@@ -1012,6 +2249,252 @@ class DscAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowScanJobsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_specification_async(self, request):
+        """查询资源开通信息
+
+        查询资源开通信息，根据项目ID查询订单详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSpecification
+        :type request: :class:`huaweicloudsdkdsc.v1.ShowSpecificationRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.ShowSpecificationResponse`
+        """
+        return self.show_specification_with_http_info(request)
+
+    def show_specification_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/period/product/specification',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowSpecificationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_topics_async(self, request):
+        """查询告警通知主题
+
+        查询告警通知主题，返回默认主题、已确认主题数量及列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTopics
+        :type request: :class:`huaweicloudsdkdsc.v1.ShowTopicsRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.ShowTopicsResponse`
+        """
+        return self.show_topics_with_http_info(request)
+
+    def show_topics_with_http_info(self, request):
+        all_params = ['offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sdg/smn/topics',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowTopicsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_asset_name_async(self, request):
+        """编辑资产名称
+
+        编辑数据资产名称
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateAssetName
+        :type request: :class:`huaweicloudsdkdsc.v1.UpdateAssetNameRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.UpdateAssetNameResponse`
+        """
+        return self.update_asset_name_with_http_info(request)
+
+    def update_asset_name_with_http_info(self, request):
+        all_params = ['asset_id', 'update_asset_name_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'asset_id' in local_var_params:
+            path_params['asset_id'] = local_var_params['asset_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sdg/asset/{asset_id}/name',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateAssetNameResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_default_topic_async(self, request):
+        """修改告警通知主题
+
+        修改告警通知的关联项目ID、通知主题、通知状态(0为关闭通知，1为开启通知)等通用配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDefaultTopic
+        :type request: :class:`huaweicloudsdkdsc.v1.UpdateDefaultTopicRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.UpdateDefaultTopicResponse`
+        """
+        return self.update_default_topic_with_http_info(request)
+
+    def update_default_topic_with_http_info(self, request):
+        all_params = ['update_default_topic_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sdg/smn/topic',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateDefaultTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

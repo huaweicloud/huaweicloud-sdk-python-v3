@@ -32,7 +32,7 @@ class ListStackResourcesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param stack_resources: 堆栈输出
+        :param stack_resources: 资源栈输出
         :type stack_resources: list[:class:`huaweicloudsdkaos.v1.StackResource`]
         """
         
@@ -48,7 +48,7 @@ class ListStackResourcesResponse(SdkResponse):
     def stack_resources(self):
         """Gets the stack_resources of this ListStackResourcesResponse.
 
-        堆栈输出
+        资源栈输出
 
         :return: The stack_resources of this ListStackResourcesResponse.
         :rtype: list[:class:`huaweicloudsdkaos.v1.StackResource`]
@@ -59,7 +59,7 @@ class ListStackResourcesResponse(SdkResponse):
     def stack_resources(self, stack_resources):
         """Sets the stack_resources of this ListStackResourcesResponse.
 
-        堆栈输出
+        资源栈输出
 
         :param stack_resources: The stack_resources of this ListStackResourcesResponse.
         :type stack_resources: list[:class:`huaweicloudsdkaos.v1.StackResource`]

@@ -39,6 +39,8 @@ class UpdateFunctionConfigRequestBody:
         'initializer_timeout': 'int',
         'enterprise_project_id': 'str',
         'is_stateful_function': 'bool',
+        'enable_dynamic_memory': 'bool',
+        'enable_auth_in_header': 'bool',
         'domain_names': 'str'
     }
 
@@ -62,10 +64,12 @@ class UpdateFunctionConfigRequestBody:
         'initializer_timeout': 'initializer_timeout',
         'enterprise_project_id': 'enterprise_project_id',
         'is_stateful_function': 'is_stateful_function',
+        'enable_dynamic_memory': 'enable_dynamic_memory',
+        'enable_auth_in_header': 'enable_auth_in_header',
         'domain_names': 'domain_names'
     }
 
-    def __init__(self, func_name=None, runtime=None, timeout=None, handler=None, memory_size=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_vpc=None, mount_config=None, strategy_config=None, custom_image=None, extend_config=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, is_stateful_function=None, domain_names=None):
+    def __init__(self, func_name=None, runtime=None, timeout=None, handler=None, memory_size=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_vpc=None, mount_config=None, strategy_config=None, custom_image=None, extend_config=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, is_stateful_function=None, enable_dynamic_memory=None, enable_auth_in_header=None, domain_names=None):
         """UpdateFunctionConfigRequestBody
 
         The model defined in huaweicloud sdk
@@ -108,6 +112,10 @@ class UpdateFunctionConfigRequestBody:
         :type enterprise_project_id: str
         :param is_stateful_function: 是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
         :type is_stateful_function: bool
+        :param enable_dynamic_memory: 是否启动动态内存配置
+        :type enable_dynamic_memory: bool
+        :param enable_auth_in_header: 是否允许在请求头中添加鉴权信息
+        :type enable_auth_in_header: bool
         :param domain_names: 内网域名配置。
         :type domain_names: str
         """
@@ -133,6 +141,8 @@ class UpdateFunctionConfigRequestBody:
         self._initializer_timeout = None
         self._enterprise_project_id = None
         self._is_stateful_function = None
+        self._enable_dynamic_memory = None
+        self._enable_auth_in_header = None
         self._domain_names = None
         self.discriminator = None
 
@@ -169,6 +179,10 @@ class UpdateFunctionConfigRequestBody:
             self.enterprise_project_id = enterprise_project_id
         if is_stateful_function is not None:
             self.is_stateful_function = is_stateful_function
+        if enable_dynamic_memory is not None:
+            self.enable_dynamic_memory = enable_dynamic_memory
+        if enable_auth_in_header is not None:
+            self.enable_auth_in_header = enable_auth_in_header
         if domain_names is not None:
             self.domain_names = domain_names
 
@@ -573,6 +587,50 @@ class UpdateFunctionConfigRequestBody:
         :type is_stateful_function: bool
         """
         self._is_stateful_function = is_stateful_function
+
+    @property
+    def enable_dynamic_memory(self):
+        """Gets the enable_dynamic_memory of this UpdateFunctionConfigRequestBody.
+
+        是否启动动态内存配置
+
+        :return: The enable_dynamic_memory of this UpdateFunctionConfigRequestBody.
+        :rtype: bool
+        """
+        return self._enable_dynamic_memory
+
+    @enable_dynamic_memory.setter
+    def enable_dynamic_memory(self, enable_dynamic_memory):
+        """Sets the enable_dynamic_memory of this UpdateFunctionConfigRequestBody.
+
+        是否启动动态内存配置
+
+        :param enable_dynamic_memory: The enable_dynamic_memory of this UpdateFunctionConfigRequestBody.
+        :type enable_dynamic_memory: bool
+        """
+        self._enable_dynamic_memory = enable_dynamic_memory
+
+    @property
+    def enable_auth_in_header(self):
+        """Gets the enable_auth_in_header of this UpdateFunctionConfigRequestBody.
+
+        是否允许在请求头中添加鉴权信息
+
+        :return: The enable_auth_in_header of this UpdateFunctionConfigRequestBody.
+        :rtype: bool
+        """
+        return self._enable_auth_in_header
+
+    @enable_auth_in_header.setter
+    def enable_auth_in_header(self, enable_auth_in_header):
+        """Sets the enable_auth_in_header of this UpdateFunctionConfigRequestBody.
+
+        是否允许在请求头中添加鉴权信息
+
+        :param enable_auth_in_header: The enable_auth_in_header of this UpdateFunctionConfigRequestBody.
+        :type enable_auth_in_header: bool
+        """
+        self._enable_auth_in_header = enable_auth_in_header
 
     @property
     def domain_names(self):

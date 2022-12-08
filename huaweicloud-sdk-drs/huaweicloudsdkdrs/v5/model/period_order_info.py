@@ -53,7 +53,8 @@ class PeriodOrderInfo:
 
         self.period_type = period_type
         self.period_num = period_num
-        self.is_auto_renew = is_auto_renew
+        if is_auto_renew is not None:
+            self.is_auto_renew = is_auto_renew
 
     @property
     def period_type(self):

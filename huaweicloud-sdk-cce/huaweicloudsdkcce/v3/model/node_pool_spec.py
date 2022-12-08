@@ -56,7 +56,7 @@ class NodePoolSpec:
         :type node_management: :class:`huaweicloudsdkcce.v3.NodeManagement`
         :param pod_security_groups: 1.21版本集群节点池支持绑定安全组，最多五个。
         :type pod_security_groups: list[:class:`huaweicloudsdkcce.v3.SecurityID`]
-        :param custom_security_groups: 节点池自定义安全组相关配置。支持节点池新扩容节点绑定指定的安全组。 - 未指定安全组ID，新建节点将添加Node节点默认安全组。 - 指定有效安全组ID，新建节点将使用指定安全组。 - 指定安全组，应避免对CCE运行依赖的端口规则进行修改。[链接请参见[CCE集群安全组规则配置](https://support.huaweicloud.com/cce_faq/cce_faq_00265.html)](tag:hws)
+        :param custom_security_groups: 节点池自定义安全组相关配置。支持节点池新扩容节点绑定指定的安全组。  - 未指定安全组ID，新建节点将添加Node节点默认安全组。  - 指定有效安全组ID，新建节点将使用指定安全组。  - 指定安全组，应避免对CCE运行依赖的端口规则进行修改。[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/cce_faq/cce_faq_00265.html)。](tag:hws)[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/intl/zh-cn/cce_faq/cce_faq_00265.html)。](tag:hws_hk) 
         :type custom_security_groups: list[str]
         """
         
@@ -209,7 +209,7 @@ class NodePoolSpec:
     def custom_security_groups(self):
         """Gets the custom_security_groups of this NodePoolSpec.
 
-        节点池自定义安全组相关配置。支持节点池新扩容节点绑定指定的安全组。 - 未指定安全组ID，新建节点将添加Node节点默认安全组。 - 指定有效安全组ID，新建节点将使用指定安全组。 - 指定安全组，应避免对CCE运行依赖的端口规则进行修改。[链接请参见[CCE集群安全组规则配置](https://support.huaweicloud.com/cce_faq/cce_faq_00265.html)](tag:hws)
+        节点池自定义安全组相关配置。支持节点池新扩容节点绑定指定的安全组。  - 未指定安全组ID，新建节点将添加Node节点默认安全组。  - 指定有效安全组ID，新建节点将使用指定安全组。  - 指定安全组，应避免对CCE运行依赖的端口规则进行修改。[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/cce_faq/cce_faq_00265.html)。](tag:hws)[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/intl/zh-cn/cce_faq/cce_faq_00265.html)。](tag:hws_hk) 
 
         :return: The custom_security_groups of this NodePoolSpec.
         :rtype: list[str]
@@ -220,7 +220,7 @@ class NodePoolSpec:
     def custom_security_groups(self, custom_security_groups):
         """Sets the custom_security_groups of this NodePoolSpec.
 
-        节点池自定义安全组相关配置。支持节点池新扩容节点绑定指定的安全组。 - 未指定安全组ID，新建节点将添加Node节点默认安全组。 - 指定有效安全组ID，新建节点将使用指定安全组。 - 指定安全组，应避免对CCE运行依赖的端口规则进行修改。[链接请参见[CCE集群安全组规则配置](https://support.huaweicloud.com/cce_faq/cce_faq_00265.html)](tag:hws)
+        节点池自定义安全组相关配置。支持节点池新扩容节点绑定指定的安全组。  - 未指定安全组ID，新建节点将添加Node节点默认安全组。  - 指定有效安全组ID，新建节点将使用指定安全组。  - 指定安全组，应避免对CCE运行依赖的端口规则进行修改。[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/cce_faq/cce_faq_00265.html)。](tag:hws)[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/intl/zh-cn/cce_faq/cce_faq_00265.html)。](tag:hws_hk) 
 
         :param custom_security_groups: The custom_security_groups of this NodePoolSpec.
         :type custom_security_groups: list[str]

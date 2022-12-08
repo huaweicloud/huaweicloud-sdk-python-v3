@@ -20,58 +20,56 @@ class OptionalFlavorsInfo:
     sensitive_list = []
 
     openapi_types = {
-        'optional_flavor_list': 'list[ComputeFlavor]',
+        'list': 'list[ComputeFlavor]',
         'total_count': 'int'
     }
 
     attribute_map = {
-        'optional_flavor_list': 'optional_flavor_list',
+        'list': 'list',
         'total_count': 'total_count'
     }
 
-    def __init__(self, optional_flavor_list=None, total_count=None):
+    def __init__(self, list=None, total_count=None):
         """OptionalFlavorsInfo
 
         The model defined in huaweicloud sdk
 
-        :param optional_flavor_list: 扩容节点时可用的规格列表。
-        :type optional_flavor_list: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ComputeFlavor`]
+        :param list: 实例规格变更时可用的规格列表。
+        :type list: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ComputeFlavor`]
         :param total_count: 总记录数。
         :type total_count: int
         """
         
         
 
-        self._optional_flavor_list = None
+        self._list = None
         self._total_count = None
         self.discriminator = None
 
-        if optional_flavor_list is not None:
-            self.optional_flavor_list = optional_flavor_list
-        if total_count is not None:
-            self.total_count = total_count
+        self.list = list
+        self.total_count = total_count
 
     @property
-    def optional_flavor_list(self):
-        """Gets the optional_flavor_list of this OptionalFlavorsInfo.
+    def list(self):
+        """Gets the list of this OptionalFlavorsInfo.
 
-        扩容节点时可用的规格列表。
+        实例规格变更时可用的规格列表。
 
-        :return: The optional_flavor_list of this OptionalFlavorsInfo.
+        :return: The list of this OptionalFlavorsInfo.
         :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ComputeFlavor`]
         """
-        return self._optional_flavor_list
+        return self._list
 
-    @optional_flavor_list.setter
-    def optional_flavor_list(self, optional_flavor_list):
-        """Sets the optional_flavor_list of this OptionalFlavorsInfo.
+    @list.setter
+    def list(self, list):
+        """Sets the list of this OptionalFlavorsInfo.
 
-        扩容节点时可用的规格列表。
+        实例规格变更时可用的规格列表。
 
-        :param optional_flavor_list: The optional_flavor_list of this OptionalFlavorsInfo.
-        :type optional_flavor_list: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ComputeFlavor`]
+        :param list: The list of this OptionalFlavorsInfo.
+        :type list: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ComputeFlavor`]
         """
-        self._optional_flavor_list = optional_flavor_list
+        self._list = list
 
     @property
     def total_count(self):

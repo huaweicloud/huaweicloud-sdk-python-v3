@@ -42,7 +42,7 @@ class ApplyExecutionPlanRequest:
         :type client_request_id: str
         :param stack_name: 用户希望操作的资源栈名
         :type stack_name: str
-        :param execution_plan_name: 执行计划的名字。如果未指定，则使用execution_plan_id作为execution_plan_name。
+        :param execution_plan_name: 执行计划的名字。
         :type execution_plan_name: str
         :param body: Body of the ApplyExecutionPlanRequest
         :type body: :class:`huaweicloudsdkaos.v1.ApplyExecutionPlanRequestBody`
@@ -110,7 +110,7 @@ class ApplyExecutionPlanRequest:
     def execution_plan_name(self):
         """Gets the execution_plan_name of this ApplyExecutionPlanRequest.
 
-        执行计划的名字。如果未指定，则使用execution_plan_id作为execution_plan_name。
+        执行计划的名字。
 
         :return: The execution_plan_name of this ApplyExecutionPlanRequest.
         :rtype: str
@@ -121,7 +121,7 @@ class ApplyExecutionPlanRequest:
     def execution_plan_name(self, execution_plan_name):
         """Sets the execution_plan_name of this ApplyExecutionPlanRequest.
 
-        执行计划的名字。如果未指定，则使用execution_plan_id作为execution_plan_name。
+        执行计划的名字。
 
         :param execution_plan_name: The execution_plan_name of this ApplyExecutionPlanRequest.
         :type execution_plan_name: str

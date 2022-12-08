@@ -3241,6 +3241,72 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def set_auto_enlarge_policy(self, request):
+        """设置自动扩容策略
+
+        设置实例存储空间自动扩容策略，按扩容量扣除存储费用。
+        可用存储空间小于设置值或者10GB时，自动扩容当前存储空间的15%（非10倍数向上取整，账户余额不足，会导致自动扩容失败）。
+        设置只读实例自动扩容与主实例自动扩容互不影响，对只读实例设置自动扩容时，可选择大于或等于主实例的存储空间。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetAutoEnlargePolicy
+        :type request: :class:`huaweicloudsdkrds.v3.SetAutoEnlargePolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SetAutoEnlargePolicyResponse`
+        """
+        return self.set_auto_enlarge_policy_with_http_info(request)
+
+    def set_auto_enlarge_policy_with_http_info(self, request):
+        all_params = ['instance_id', 'customer_modify_auto_enlarge_policy_req', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/disk-auto-expansion',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SetAutoEnlargePolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def set_backup_policy(self, request):
         """设置自动备份策略
 
@@ -3428,6 +3494,72 @@ class RdsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='SetOffSiteBackupPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def set_second_level_monitor(self, request):
+        """设置秒级监控策略
+
+        设置实例秒级监控策略，约五分钟后生效，对于1秒监控和5秒监控，计费方式为按需付费（每小时扣费一次）。
+        设置只读实例秒级监控与主实例互不影响。
+        规格变更到4U以下的实例，秒级监控功能会自动关闭。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetSecondLevelMonitor
+        :type request: :class:`huaweicloudsdkrds.v3.SetSecondLevelMonitorRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SetSecondLevelMonitorResponse`
+        """
+        return self.set_second_level_monitor_with_http_info(request)
+
+    def set_second_level_monitor_with_http_info(self, request):
+        all_params = ['instance_id', 'second_monitor_req', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/second-level-monitor',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SetSecondLevelMonitorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3682,6 +3814,68 @@ class RdsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowAuditlogPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_auto_enlarge_policy(self, request):
+        """查询自动扩容策略
+
+        查询实例存储空间自动扩容策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAutoEnlargePolicy
+        :type request: :class:`huaweicloudsdkrds.v3.ShowAutoEnlargePolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowAutoEnlargePolicyResponse`
+        """
+        return self.show_auto_enlarge_policy_with_http_info(request)
+
+    def show_auto_enlarge_policy_with_http_info(self, request):
+        all_params = ['instance_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/disk-auto-expansion',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowAutoEnlargePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4366,6 +4560,68 @@ class RdsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowReplicationStatusResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_second_level_monitoring(self, request):
+        """查询秒级监控策略
+
+        查询实例秒级监控策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSecondLevelMonitoring
+        :type request: :class:`huaweicloudsdkrds.v3.ShowSecondLevelMonitoringRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowSecondLevelMonitoringResponse`
+        """
+        return self.show_second_level_monitoring_with_http_info(request)
+
+    def show_second_level_monitoring_with_http_info(self, request):
+        all_params = ['instance_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/second-level-monitor',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowSecondLevelMonitoringResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

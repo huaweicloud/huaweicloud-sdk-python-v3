@@ -61,10 +61,14 @@ class EndpointSslConfig:
         self._ssl_cert_password = None
         self.discriminator = None
 
-        self.ssl_link = ssl_link
-        self.ssl_cert_name = ssl_cert_name
-        self.ssl_cert_key = ssl_cert_key
-        self.ssl_cert_check_sum = ssl_cert_check_sum
+        if ssl_link is not None:
+            self.ssl_link = ssl_link
+        if ssl_cert_name is not None:
+            self.ssl_cert_name = ssl_cert_name
+        if ssl_cert_key is not None:
+            self.ssl_cert_key = ssl_cert_key
+        if ssl_cert_check_sum is not None:
+            self.ssl_cert_check_sum = ssl_cert_check_sum
         if ssl_cert_password is not None:
             self.ssl_cert_password = ssl_cert_password
 

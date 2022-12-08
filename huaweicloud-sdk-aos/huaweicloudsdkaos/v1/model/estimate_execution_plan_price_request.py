@@ -44,9 +44,9 @@ class EstimateExecutionPlanPriceRequest:
         :type client_request_id: str
         :param stack_name: 用户希望操作的资源栈名
         :type stack_name: str
-        :param execution_plan_name: 执行计划的名字。如果未指定，则使用execution_plan_id作为execution_plan_name。
+        :param execution_plan_name: 执行计划的名字。
         :type execution_plan_name: str
-        :param stack_id: 用户希望描述的栈的Id。若stack_name和stack_id同时存在，则IaC会检查是否两个匹配，否则返回400
+        :param stack_id: 用户希望描述的栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
         :type stack_id: str
         :param execution_plan_id: 执行计划ID(uuid)
         :type execution_plan_id: str
@@ -117,7 +117,7 @@ class EstimateExecutionPlanPriceRequest:
     def execution_plan_name(self):
         """Gets the execution_plan_name of this EstimateExecutionPlanPriceRequest.
 
-        执行计划的名字。如果未指定，则使用execution_plan_id作为execution_plan_name。
+        执行计划的名字。
 
         :return: The execution_plan_name of this EstimateExecutionPlanPriceRequest.
         :rtype: str
@@ -128,7 +128,7 @@ class EstimateExecutionPlanPriceRequest:
     def execution_plan_name(self, execution_plan_name):
         """Sets the execution_plan_name of this EstimateExecutionPlanPriceRequest.
 
-        执行计划的名字。如果未指定，则使用execution_plan_id作为execution_plan_name。
+        执行计划的名字。
 
         :param execution_plan_name: The execution_plan_name of this EstimateExecutionPlanPriceRequest.
         :type execution_plan_name: str
@@ -139,7 +139,7 @@ class EstimateExecutionPlanPriceRequest:
     def stack_id(self):
         """Gets the stack_id of this EstimateExecutionPlanPriceRequest.
 
-        用户希望描述的栈的Id。若stack_name和stack_id同时存在，则IaC会检查是否两个匹配，否则返回400
+        用户希望描述的栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
 
         :return: The stack_id of this EstimateExecutionPlanPriceRequest.
         :rtype: str
@@ -150,7 +150,7 @@ class EstimateExecutionPlanPriceRequest:
     def stack_id(self, stack_id):
         """Sets the stack_id of this EstimateExecutionPlanPriceRequest.
 
-        用户希望描述的栈的Id。若stack_name和stack_id同时存在，则IaC会检查是否两个匹配，否则返回400
+        用户希望描述的栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
 
         :param stack_id: The stack_id of this EstimateExecutionPlanPriceRequest.
         :type stack_id: str
