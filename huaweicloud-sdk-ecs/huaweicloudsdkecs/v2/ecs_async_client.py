@@ -2119,7 +2119,7 @@ class EcsAsyncClient(Client):
         return self.list_servers_details_with_http_info(request)
 
     def list_servers_details_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'flavor', 'ip', 'limit', 'name', 'not_tags', 'offset', 'reservation_id', 'status', 'tags', 'ip_eq']
+        all_params = ['enterprise_project_id', 'flavor', 'ip', 'limit', 'name', 'not_tags', 'offset', 'reservation_id', 'status', 'tags', 'ip_eq', 'server_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2154,6 +2154,8 @@ class EcsAsyncClient(Client):
             query_params.append(('tags', local_var_params['tags']))
         if 'ip_eq' in local_var_params:
             query_params.append(('ip_eq', local_var_params['ip_eq']))
+        if 'server_id' in local_var_params:
+            query_params.append(('server_id', local_var_params['server_id']))
 
         header_params = {}
 

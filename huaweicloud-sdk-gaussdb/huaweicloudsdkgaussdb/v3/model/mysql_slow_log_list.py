@@ -74,7 +74,7 @@ class MysqlSlowLogList:
         :type query_sample: str
         :param type: 语句类型。
         :type type: str
-        :param start_time: 发生时间,UTC时间
+        :param start_time: 发生时间，UTC时间
         :type start_time: str
         :param client_ip: IP地址。
         :type client_ip: str
@@ -345,7 +345,7 @@ class MysqlSlowLogList:
     def start_time(self):
         """Gets the start_time of this MysqlSlowLogList.
 
-        发生时间,UTC时间
+        发生时间，UTC时间
 
         :return: The start_time of this MysqlSlowLogList.
         :rtype: str
@@ -356,7 +356,7 @@ class MysqlSlowLogList:
     def start_time(self, start_time):
         """Sets the start_time of this MysqlSlowLogList.
 
-        发生时间,UTC时间
+        发生时间，UTC时间
 
         :param start_time: The start_time of this MysqlSlowLogList.
         :type start_time: str

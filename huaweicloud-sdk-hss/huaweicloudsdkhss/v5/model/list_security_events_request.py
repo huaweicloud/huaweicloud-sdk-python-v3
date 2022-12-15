@@ -70,7 +70,7 @@ class ListSecurityEventsRequest:
         :type host_name: str
         :param host_id: 服务器ID
         :type host_id: str
-        :param private_ip: 服务器IP
+        :param private_ip: 服务器私有IP
         :type private_ip: str
         :param container_name: 容器名称
         :type container_name: str
@@ -78,7 +78,7 @@ class ListSecurityEventsRequest:
         :type offset: int
         :param limit: 每页显示个数
         :type limit: int
-        :param event_types: 事件类型，包含如下:   - 1001 : 恶意软件   - 1010 : Rootkit   - 1011 : 勒索软件   - 1015 : Webshell   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3027 : Crontab可疑任务   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号
+        :param event_types: 事件类型，包含如下:   - 1001 : 恶意软件   - 1010 : Rootkit   - 1011 : 勒索软件   - 1015 : Webshell   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 2047 : Redis漏洞利用   - 2048 : Hadoop漏洞利用   - 2049 : MySQL漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3027 : Crontab可疑任务   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号
         :type event_types: list[int]
         :param handle_status: 处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
         :type handle_status: str
@@ -254,7 +254,7 @@ class ListSecurityEventsRequest:
     def private_ip(self):
         """Gets the private_ip of this ListSecurityEventsRequest.
 
-        服务器IP
+        服务器私有IP
 
         :return: The private_ip of this ListSecurityEventsRequest.
         :rtype: str
@@ -265,7 +265,7 @@ class ListSecurityEventsRequest:
     def private_ip(self, private_ip):
         """Sets the private_ip of this ListSecurityEventsRequest.
 
-        服务器IP
+        服务器私有IP
 
         :param private_ip: The private_ip of this ListSecurityEventsRequest.
         :type private_ip: str
@@ -342,7 +342,7 @@ class ListSecurityEventsRequest:
     def event_types(self):
         """Gets the event_types of this ListSecurityEventsRequest.
 
-        事件类型，包含如下:   - 1001 : 恶意软件   - 1010 : Rootkit   - 1011 : 勒索软件   - 1015 : Webshell   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3027 : Crontab可疑任务   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号
+        事件类型，包含如下:   - 1001 : 恶意软件   - 1010 : Rootkit   - 1011 : 勒索软件   - 1015 : Webshell   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 2047 : Redis漏洞利用   - 2048 : Hadoop漏洞利用   - 2049 : MySQL漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3027 : Crontab可疑任务   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号
 
         :return: The event_types of this ListSecurityEventsRequest.
         :rtype: list[int]
@@ -353,7 +353,7 @@ class ListSecurityEventsRequest:
     def event_types(self, event_types):
         """Sets the event_types of this ListSecurityEventsRequest.
 
-        事件类型，包含如下:   - 1001 : 恶意软件   - 1010 : Rootkit   - 1011 : 勒索软件   - 1015 : Webshell   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3027 : Crontab可疑任务   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号
+        事件类型，包含如下:   - 1001 : 恶意软件   - 1010 : Rootkit   - 1011 : 勒索软件   - 1015 : Webshell   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 2047 : Redis漏洞利用   - 2048 : Hadoop漏洞利用   - 2049 : MySQL漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3027 : Crontab可疑任务   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号
 
         :param event_types: The event_types of this ListSecurityEventsRequest.
         :type event_types: list[int]

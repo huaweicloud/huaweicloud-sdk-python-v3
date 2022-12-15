@@ -166,6 +166,67 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def change_bandwidth_to_period_async(self, request):
+        """按需转包API
+
+        租户按需转包接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ChangeBandwidthToPeriod
+        :type request: :class:`huaweicloudsdkeip.v2.ChangeBandwidthToPeriodRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.ChangeBandwidthToPeriodResponse`
+        """
+        return self.change_bandwidth_to_period_with_http_info(request)
+
+    def change_bandwidth_to_period_with_http_info(self, request):
+        all_params = ['ip_change_to_period_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/bandwidths/change-to-period',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ChangeBandwidthToPeriodResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_shared_bandwidth_async(self, request):
         """创建共享带宽
 
@@ -1029,6 +1090,67 @@ class EipAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='BatchDisassociatePublicipsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def change_publicip_to_period_async(self, request):
+        """按需转包接口
+
+        租户按需转包接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ChangePublicipToPeriod
+        :type request: :class:`huaweicloudsdkeip.v2.ChangePublicipToPeriodRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.ChangePublicipToPeriodResponse`
+        """
+        return self.change_publicip_to_period_with_http_info(request)
+
+    def change_publicip_to_period_with_http_info(self, request):
+        all_params = ['ip_change_to_period_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/publicips/change-to-period',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ChangePublicipToPeriodResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1903,6 +2025,67 @@ class EipAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdatePublicipResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_resources_job_detail_async(self, request):
+        """查询Job状态接口
+
+        查询Job状态接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowResourcesJobDetail
+        :type request: :class:`huaweicloudsdkeip.v2.ShowResourcesJobDetailRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.ShowResourcesJobDetailResponse`
+        """
+        return self.show_resources_job_detail_with_http_info(request)
+
+    def show_resources_job_detail_with_http_info(self, request):
+        all_params = ['job_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/jobs/{job_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowResourcesJobDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -70,7 +70,7 @@ class UpdateListenerReq:
         :type sni_container_refs: list[str]
         :param insert_headers: 
         :type insert_headers: :class:`huaweicloudsdkelb.v2.InsertHeader`
-        :param tls_ciphers_policy: 监听器使用的安全策略，仅对TERMINATED_HTTPS协议类型的监听器有效。  取值包括：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict多种安全策略。
+        :param tls_ciphers_policy: 监听器使用的安全策略，仅对TERMINATED_HTTPS协议类型的监听器有效。  取值包括：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict多种安全策略。  加密套件的排序为国密套件、ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa）
         :type tls_ciphers_policy: str
         :param admin_state_up: 监听器的管理状态。  该字段为预留字段，暂未启动。只支持设定为true
         :type admin_state_up: bool
@@ -312,7 +312,7 @@ class UpdateListenerReq:
     def tls_ciphers_policy(self):
         """Gets the tls_ciphers_policy of this UpdateListenerReq.
 
-        监听器使用的安全策略，仅对TERMINATED_HTTPS协议类型的监听器有效。  取值包括：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict多种安全策略。
+        监听器使用的安全策略，仅对TERMINATED_HTTPS协议类型的监听器有效。  取值包括：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict多种安全策略。  加密套件的排序为国密套件、ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa）
 
         :return: The tls_ciphers_policy of this UpdateListenerReq.
         :rtype: str
@@ -323,7 +323,7 @@ class UpdateListenerReq:
     def tls_ciphers_policy(self, tls_ciphers_policy):
         """Sets the tls_ciphers_policy of this UpdateListenerReq.
 
-        监听器使用的安全策略，仅对TERMINATED_HTTPS协议类型的监听器有效。  取值包括：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict多种安全策略。
+        监听器使用的安全策略，仅对TERMINATED_HTTPS协议类型的监听器有效。  取值包括：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict多种安全策略。  加密套件的排序为国密套件、ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa）
 
         :param tls_ciphers_policy: The tls_ciphers_policy of this UpdateListenerReq.
         :type tls_ciphers_policy: str

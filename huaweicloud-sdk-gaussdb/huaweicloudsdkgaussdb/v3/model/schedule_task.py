@@ -29,7 +29,7 @@ class ScheduleTask:
         'create_time': 'str',
         'start_time': 'str',
         'end_time': 'str',
-        'task_status': 'str',
+        'job_status': 'str',
         'datastore_type': 'str',
         'target_config': 'object'
     }
@@ -44,12 +44,12 @@ class ScheduleTask:
         'create_time': 'create_time',
         'start_time': 'start_time',
         'end_time': 'end_time',
-        'task_status': 'task_status',
+        'job_status': 'job_status',
         'datastore_type': 'datastore_type',
         'target_config': 'target_config'
     }
 
-    def __init__(self, job_id=None, instance_id=None, instance_name=None, instance_status=None, project_id=None, job_name=None, create_time=None, start_time=None, end_time=None, task_status=None, datastore_type=None, target_config=None):
+    def __init__(self, job_id=None, instance_id=None, instance_name=None, instance_status=None, project_id=None, job_name=None, create_time=None, start_time=None, end_time=None, job_status=None, datastore_type=None, target_config=None):
         """ScheduleTask
 
         The model defined in huaweicloud sdk
@@ -72,8 +72,8 @@ class ScheduleTask:
         :type start_time: str
         :param end_time: 任务结束时间，格式为\&quot;yyyy-mm-ddThh:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。 说明：创建时返回值为空，数据库实例创建成功后该值不为空
         :type end_time: str
-        :param task_status: 任务执行状态。 取值： - 值为“Pending”，表示延时任务，未执行。 - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。
-        :type task_status: str
+        :param job_status: 任务执行状态。 取值： - 值为“Pending”，表示延时任务，未执行。 - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。
+        :type job_status: str
         :param datastore_type: 数据库类型。
         :type datastore_type: str
         :param target_config: 实例配置相关信息，比如规格等。
@@ -91,7 +91,7 @@ class ScheduleTask:
         self._create_time = None
         self._start_time = None
         self._end_time = None
-        self._task_status = None
+        self._job_status = None
         self._datastore_type = None
         self._target_config = None
         self.discriminator = None
@@ -114,8 +114,8 @@ class ScheduleTask:
             self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
-        if task_status is not None:
-            self.task_status = task_status
+        if job_status is not None:
+            self.job_status = job_status
         if datastore_type is not None:
             self.datastore_type = datastore_type
         if target_config is not None:
@@ -320,26 +320,26 @@ class ScheduleTask:
         self._end_time = end_time
 
     @property
-    def task_status(self):
-        """Gets the task_status of this ScheduleTask.
+    def job_status(self):
+        """Gets the job_status of this ScheduleTask.
 
         任务执行状态。 取值： - 值为“Pending”，表示延时任务，未执行。 - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。
 
-        :return: The task_status of this ScheduleTask.
+        :return: The job_status of this ScheduleTask.
         :rtype: str
         """
-        return self._task_status
+        return self._job_status
 
-    @task_status.setter
-    def task_status(self, task_status):
-        """Sets the task_status of this ScheduleTask.
+    @job_status.setter
+    def job_status(self, job_status):
+        """Sets the job_status of this ScheduleTask.
 
         任务执行状态。 取值： - 值为“Pending”，表示延时任务，未执行。 - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。
 
-        :param task_status: The task_status of this ScheduleTask.
-        :type task_status: str
+        :param job_status: The job_status of this ScheduleTask.
+        :type job_status: str
         """
-        self._task_status = task_status
+        self._job_status = job_status
 
     @property
     def datastore_type(self):

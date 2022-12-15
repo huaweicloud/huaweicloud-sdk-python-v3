@@ -36,11 +36,11 @@ class IEFNode:
 
         The model defined in huaweicloud sdk
 
-        :param id: 节点ID
+        :param id: 节点ID（注意：应填写IEF节点的ID信息）
         :type id: str
         :param status: 节点状态:\&quot;ACTIVE\&quot;
         :type status: str
-        :param public_ip_address: 节点公有IP
+        :param public_ip_address: 节点公有IP（弹性IP）
         :type public_ip_address: str
         """
         
@@ -59,7 +59,7 @@ class IEFNode:
     def id(self):
         """Gets the id of this IEFNode.
 
-        节点ID
+        节点ID（注意：应填写IEF节点的ID信息）
 
         :return: The id of this IEFNode.
         :rtype: str
@@ -70,7 +70,7 @@ class IEFNode:
     def id(self, id):
         """Sets the id of this IEFNode.
 
-        节点ID
+        节点ID（注意：应填写IEF节点的ID信息）
 
         :param id: The id of this IEFNode.
         :type id: str
@@ -103,7 +103,7 @@ class IEFNode:
     def public_ip_address(self):
         """Gets the public_ip_address of this IEFNode.
 
-        节点公有IP
+        节点公有IP（弹性IP）
 
         :return: The public_ip_address of this IEFNode.
         :rtype: str
@@ -114,7 +114,7 @@ class IEFNode:
     def public_ip_address(self, public_ip_address):
         """Sets the public_ip_address of this IEFNode.
 
-        节点公有IP
+        节点公有IP（弹性IP）
 
         :param public_ip_address: The public_ip_address of this IEFNode.
         :type public_ip_address: str

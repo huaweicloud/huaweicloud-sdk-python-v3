@@ -46,6 +46,7 @@ class ImportFunctionResponse(SdkResponse):
         'last_modified': 'datetime',
         'func_vpc': 'FuncVpc',
         'depend_list': 'list[str]',
+        'depend_version_list': 'list[str]',
         'strategy_config': 'StrategyConfig',
         'extend_config': 'str',
         'initializer_handler': 'str',
@@ -80,6 +81,7 @@ class ImportFunctionResponse(SdkResponse):
         'last_modified': 'last_modified',
         'func_vpc': 'func_vpc',
         'depend_list': 'depend_list',
+        'depend_version_list': 'depend_version_list',
         'strategy_config': 'strategy_config',
         'extend_config': 'extend_config',
         'initializer_handler': 'initializer_handler',
@@ -87,7 +89,7 @@ class ImportFunctionResponse(SdkResponse):
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, version_description=None, last_modified=None, func_vpc=None, depend_list=None, strategy_config=None, extend_config=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None):
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, version_description=None, last_modified=None, func_vpc=None, depend_list=None, depend_version_list=None, strategy_config=None, extend_config=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None):
         """ImportFunctionResponse
 
         The model defined in huaweicloud sdk
@@ -144,6 +146,8 @@ class ImportFunctionResponse(SdkResponse):
         :type func_vpc: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
         :param depend_list: 依赖id列表
         :type depend_list: list[str]
+        :param depend_version_list: 依赖版本id列表
+        :type depend_version_list: list[str]
         :param strategy_config: 
         :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
         :param extend_config: 函数扩展配置。
@@ -184,6 +188,7 @@ class ImportFunctionResponse(SdkResponse):
         self._last_modified = None
         self._func_vpc = None
         self._depend_list = None
+        self._depend_version_list = None
         self._strategy_config = None
         self._extend_config = None
         self._initializer_handler = None
@@ -243,6 +248,8 @@ class ImportFunctionResponse(SdkResponse):
             self.func_vpc = func_vpc
         if depend_list is not None:
             self.depend_list = depend_list
+        if depend_version_list is not None:
+            self.depend_version_list = depend_version_list
         if strategy_config is not None:
             self.strategy_config = strategy_config
         if extend_config is not None:
@@ -821,6 +828,28 @@ class ImportFunctionResponse(SdkResponse):
         :type depend_list: list[str]
         """
         self._depend_list = depend_list
+
+    @property
+    def depend_version_list(self):
+        """Gets the depend_version_list of this ImportFunctionResponse.
+
+        依赖版本id列表
+
+        :return: The depend_version_list of this ImportFunctionResponse.
+        :rtype: list[str]
+        """
+        return self._depend_version_list
+
+    @depend_version_list.setter
+    def depend_version_list(self, depend_version_list):
+        """Sets the depend_version_list of this ImportFunctionResponse.
+
+        依赖版本id列表
+
+        :param depend_version_list: The depend_version_list of this ImportFunctionResponse.
+        :type depend_version_list: list[str]
+        """
+        self._depend_version_list = depend_version_list
 
     @property
     def strategy_config(self):

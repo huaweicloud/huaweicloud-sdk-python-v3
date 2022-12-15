@@ -25,7 +25,7 @@ class IncidentOrderAuthV2:
         'incident_id': 'str',
         'simple_description': 'str',
         'auth_describe': 'str',
-        'resource_type_id': 'object',
+        'resource_type_id': 'str',
         'resource_type_name': 'str',
         'visit_type_id': 'str',
         'visit_type_name': 'str',
@@ -75,7 +75,7 @@ class IncidentOrderAuthV2:
         :param auth_describe: 授权描述
         :type auth_describe: str
         :param resource_type_id: 授权资源类型id
-        :type resource_type_id: object
+        :type resource_type_id: str
         :param resource_type_name: 授权资源类型名称
         :type resource_type_name: str
         :param visit_type_id: 授权访问类型id
@@ -273,7 +273,7 @@ class IncidentOrderAuthV2:
         授权资源类型id
 
         :return: The resource_type_id of this IncidentOrderAuthV2.
-        :rtype: object
+        :rtype: str
         """
         return self._resource_type_id
 
@@ -284,7 +284,7 @@ class IncidentOrderAuthV2:
         授权资源类型id
 
         :param resource_type_id: The resource_type_id of this IncidentOrderAuthV2.
-        :type resource_type_id: object
+        :type resource_type_id: str
         """
         self._resource_type_id = resource_type_id
 

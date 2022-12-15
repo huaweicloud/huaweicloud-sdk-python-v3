@@ -21,35 +21,35 @@ class CreateClusterResponse(SdkResponse):
 
     openapi_types = {
         'cluster': 'CreateClusterClusterResponse',
-        'orde_id': 'str'
+        'order_id': 'str'
     }
 
     attribute_map = {
         'cluster': 'cluster',
-        'orde_id': 'ordeId'
+        'order_id': 'orderId'
     }
 
-    def __init__(self, cluster=None, orde_id=None):
+    def __init__(self, cluster=None, order_id=None):
         """CreateClusterResponse
 
         The model defined in huaweicloud sdk
 
         :param cluster: 
         :type cluster: :class:`huaweicloudsdkcss.v1.CreateClusterClusterResponse`
-        :param orde_id: 订单号。若创建的是包周期集群，则只返回ordeld参数。
-        :type orde_id: str
+        :param order_id: 订单号。若创建的是包周期集群，则只返回ordeld参数。
+        :type order_id: str
         """
         
         super(CreateClusterResponse, self).__init__()
 
         self._cluster = None
-        self._orde_id = None
+        self._order_id = None
         self.discriminator = None
 
         if cluster is not None:
             self.cluster = cluster
-        if orde_id is not None:
-            self.orde_id = orde_id
+        if order_id is not None:
+            self.order_id = order_id
 
     @property
     def cluster(self):
@@ -70,26 +70,26 @@ class CreateClusterResponse(SdkResponse):
         self._cluster = cluster
 
     @property
-    def orde_id(self):
-        """Gets the orde_id of this CreateClusterResponse.
+    def order_id(self):
+        """Gets the order_id of this CreateClusterResponse.
 
         订单号。若创建的是包周期集群，则只返回ordeld参数。
 
-        :return: The orde_id of this CreateClusterResponse.
+        :return: The order_id of this CreateClusterResponse.
         :rtype: str
         """
-        return self._orde_id
+        return self._order_id
 
-    @orde_id.setter
-    def orde_id(self, orde_id):
-        """Sets the orde_id of this CreateClusterResponse.
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this CreateClusterResponse.
 
         订单号。若创建的是包周期集群，则只返回ordeld参数。
 
-        :param orde_id: The orde_id of this CreateClusterResponse.
-        :type orde_id: str
+        :param order_id: The order_id of this CreateClusterResponse.
+        :type order_id: str
         """
-        self._orde_id = orde_id
+        self._order_id = order_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

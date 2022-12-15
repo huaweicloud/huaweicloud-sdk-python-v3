@@ -34,7 +34,7 @@ class RawTableParam:
     }
 
     attribute_map = {
-        'last_row_id': 'lastRowId',
+        'last_row_id': 'last_row_id',
         'view_config': 'view_config',
         'page': 'page',
         'page_size': 'page_size',

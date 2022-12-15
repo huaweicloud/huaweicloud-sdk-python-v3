@@ -42,6 +42,8 @@ class HssRegion:
 
     CN_SOUTH_4 = Region(id="cn-south-4", endpoint="https://hss.cn-south-4.myhuaweicloud.com")
 
+    LA_NORTH_2 = Region(id="la-north-2", endpoint="https://hss.la-north-2.myhuaweicloud.com")
+
     static_fields = {
         "cn-north-9": CN_NORTH_9,
         "cn-north-1": CN_NORTH_1,
@@ -59,6 +61,7 @@ class HssRegion:
         "sa-brazil-1": SA_BRAZIL_1,
         "la-south-2": LA_SOUTH_2,
         "cn-south-4": CN_SOUTH_4,
+        "la-north-2": LA_NORTH_2,
     }
 
     @classmethod

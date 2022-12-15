@@ -22,8 +22,8 @@ class NoSqlQueryEpsQuotaInfo:
     openapi_types = {
         'enterprise_project_id': 'str',
         'enterprise_project_name': 'str',
-        'quota': 'NoSqlEpsQuota',
-        'used': 'NoSqlQueryEpsQuotaUsed'
+        'quota': 'NoSqlEpsQuotaTotal',
+        'used': 'NoSqlEpsQuotaUsed'
     }
 
     attribute_map = {
@@ -43,9 +43,9 @@ class NoSqlQueryEpsQuotaInfo:
         :param enterprise_project_name: 企业项目名称。
         :type enterprise_project_name: str
         :param quota: 
-        :type quota: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlEpsQuota`
+        :type quota: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlEpsQuotaTotal`
         :param used: 
-        :type used: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlQueryEpsQuotaUsed`
+        :type used: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlEpsQuotaUsed`
         """
         
         
@@ -110,7 +110,7 @@ class NoSqlQueryEpsQuotaInfo:
         """Gets the quota of this NoSqlQueryEpsQuotaInfo.
 
         :return: The quota of this NoSqlQueryEpsQuotaInfo.
-        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlEpsQuota`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlEpsQuotaTotal`
         """
         return self._quota
 
@@ -119,7 +119,7 @@ class NoSqlQueryEpsQuotaInfo:
         """Sets the quota of this NoSqlQueryEpsQuotaInfo.
 
         :param quota: The quota of this NoSqlQueryEpsQuotaInfo.
-        :type quota: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlEpsQuota`
+        :type quota: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlEpsQuotaTotal`
         """
         self._quota = quota
 
@@ -128,7 +128,7 @@ class NoSqlQueryEpsQuotaInfo:
         """Gets the used of this NoSqlQueryEpsQuotaInfo.
 
         :return: The used of this NoSqlQueryEpsQuotaInfo.
-        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlQueryEpsQuotaUsed`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlEpsQuotaUsed`
         """
         return self._used
 
@@ -137,7 +137,7 @@ class NoSqlQueryEpsQuotaInfo:
         """Sets the used of this NoSqlQueryEpsQuotaInfo.
 
         :param used: The used of this NoSqlQueryEpsQuotaInfo.
-        :type used: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlQueryEpsQuotaUsed`
+        :type used: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlEpsQuotaUsed`
         """
         self._used = used
 

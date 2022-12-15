@@ -60,7 +60,7 @@ class BillingCreate:
         :type cloud_type: str
         :param consistent_level: 规格，崩溃一致性（crash_consistent）或应用一致性（app_consistent）
         :type consistent_level: str
-        :param object_type: 对象类型：云服务器（server），云硬盘（disk），文件系统（turbo）。
+        :param object_type: 对象类型：云服务器（server），云硬盘（disk），文件系统（turbo），云桌面（workspace）。
         :type object_type: str
         :param protect_type: 保护类型：备份（backup）、复制(replication)
         :type protect_type: str
@@ -172,7 +172,7 @@ class BillingCreate:
     def object_type(self):
         """Gets the object_type of this BillingCreate.
 
-        对象类型：云服务器（server），云硬盘（disk），文件系统（turbo）。
+        对象类型：云服务器（server），云硬盘（disk），文件系统（turbo），云桌面（workspace）。
 
         :return: The object_type of this BillingCreate.
         :rtype: str
@@ -183,7 +183,7 @@ class BillingCreate:
     def object_type(self, object_type):
         """Sets the object_type of this BillingCreate.
 
-        对象类型：云服务器（server），云硬盘（disk），文件系统（turbo）。
+        对象类型：云服务器（server），云硬盘（disk），文件系统（turbo），云桌面（workspace）。
 
         :param object_type: The object_type of this BillingCreate.
         :type object_type: str

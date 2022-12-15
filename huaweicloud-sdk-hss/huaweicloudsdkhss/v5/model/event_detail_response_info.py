@@ -60,7 +60,7 @@ class EventDetailResponseInfo:
         :type file_path: str
         :param file_attr: 文件属性
         :type file_attr: str
-        :param private_ip: 服务器私网IP
+        :param private_ip: 服务器私有IP
         :type private_ip: str
         :param login_ip: 登录源IP
         :type login_ip: str
@@ -236,7 +236,7 @@ class EventDetailResponseInfo:
     def private_ip(self):
         """Gets the private_ip of this EventDetailResponseInfo.
 
-        服务器私网IP
+        服务器私有IP
 
         :return: The private_ip of this EventDetailResponseInfo.
         :rtype: str
@@ -247,7 +247,7 @@ class EventDetailResponseInfo:
     def private_ip(self, private_ip):
         """Sets the private_ip of this EventDetailResponseInfo.
 
-        服务器私网IP
+        服务器私有IP
 
         :param private_ip: The private_ip of this EventDetailResponseInfo.
         :type private_ip: str

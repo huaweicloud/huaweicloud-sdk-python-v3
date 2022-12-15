@@ -34,9 +34,9 @@ class DedicatedStorageInfo:
 
         The model defined in huaweicloud sdk
 
-        :param spec_code: 专属资源池存储资源规格码
+        :param spec_code: 专属资源池存储资源规格码。
         :type spec_code: str
-        :param host_num: 专属资源池存储主机数量
+        :param host_num: 专属资源池存储主机数量。
         :type host_num: int
         """
         
@@ -53,7 +53,7 @@ class DedicatedStorageInfo:
     def spec_code(self):
         """Gets the spec_code of this DedicatedStorageInfo.
 
-        专属资源池存储资源规格码
+        专属资源池存储资源规格码。
 
         :return: The spec_code of this DedicatedStorageInfo.
         :rtype: str
@@ -64,7 +64,7 @@ class DedicatedStorageInfo:
     def spec_code(self, spec_code):
         """Sets the spec_code of this DedicatedStorageInfo.
 
-        专属资源池存储资源规格码
+        专属资源池存储资源规格码。
 
         :param spec_code: The spec_code of this DedicatedStorageInfo.
         :type spec_code: str
@@ -75,7 +75,7 @@ class DedicatedStorageInfo:
     def host_num(self):
         """Gets the host_num of this DedicatedStorageInfo.
 
-        专属资源池存储主机数量
+        专属资源池存储主机数量。
 
         :return: The host_num of this DedicatedStorageInfo.
         :rtype: int
@@ -86,7 +86,7 @@ class DedicatedStorageInfo:
     def host_num(self, host_num):
         """Sets the host_num of this DedicatedStorageInfo.
 
-        专属资源池存储主机数量
+        专属资源池存储主机数量。
 
         :param host_num: The host_num of this DedicatedStorageInfo.
         :type host_num: int

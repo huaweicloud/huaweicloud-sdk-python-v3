@@ -64,13 +64,13 @@ class MysqlProxyV3:
 
         :param pool_id: Proxy实例id。
         :type pool_id: str
-        :param status: Proxy实例开启状态。  取值: 值为“ACTIVE”，表示数据库代理正常； “FAILED”，表示数据库代理创建失败； “DELETED”，表示数据库代理已删除； “ABNORMAL”，表示数据库代理异常； “ENABLING PROXY”，表示数据库代理正在开启； “DISABLING PROXY”，表示数据库代理正在关闭； “ADDING PROXY NODE”，表示数据库代理正在扩容； “DELETING READ REPLICAS FROM PROXY”，表示数据库代理正在移除只读节点； “ADDING READ REPLICAS TO PROXY”，表示数据库代理正在添加只读节点； “CHANGING WEIGHTS”，表示数据库代理正在修改只读节点权重。
+        :param status: Proxy实例开启状态。  取值: - “ACTIVE”，表示数据库代理正常； - “FAILED”，表示数据库代理创建失败； - “DELETED”，表示数据库代理已删除； - “ABNORMAL”，表示数据库代理异常； - “ENABLING PROXY”，表示数据库代理正在开启； - “DISABLING PROXY”，表示数据库代理正在关闭； - “ADDING PROXY NODE”，表示数据库代理正在扩容； - “DELETING READ REPLICAS FROM PROXY”，表示数据库代理正在移除只读节点； - “ADDING READ REPLICAS TO PROXY”，表示数据库代理正在添加只读节点； - “CHANGING WEIGHTS”，表示数据库代理正在修改只读节点权重。
         :type status: str
         :param address: Proxy读写分离地址。
         :type address: str
         :param port: Proxy端口信息。
         :type port: int
-        :param pool_status: Proxy实例状态。 取值范围：ACTIVE、ABNORMAL、FAILED和DELETED。
+        :param pool_status: Proxy实例状态。  取值范围： - ACTIVE，表示数据库代理正常 - ABNORMAL，表示数据库代理异常 - FAILED，表示数据库代理创建失败 - DELETED，表示数据库代理已删除
         :type pool_status: str
         :param delay_threshold_in_seconds: 延时阈值，单位：秒。
         :type delay_threshold_in_seconds: int
@@ -175,7 +175,7 @@ class MysqlProxyV3:
     def status(self):
         """Gets the status of this MysqlProxyV3.
 
-        Proxy实例开启状态。  取值: 值为“ACTIVE”，表示数据库代理正常； “FAILED”，表示数据库代理创建失败； “DELETED”，表示数据库代理已删除； “ABNORMAL”，表示数据库代理异常； “ENABLING PROXY”，表示数据库代理正在开启； “DISABLING PROXY”，表示数据库代理正在关闭； “ADDING PROXY NODE”，表示数据库代理正在扩容； “DELETING READ REPLICAS FROM PROXY”，表示数据库代理正在移除只读节点； “ADDING READ REPLICAS TO PROXY”，表示数据库代理正在添加只读节点； “CHANGING WEIGHTS”，表示数据库代理正在修改只读节点权重。
+        Proxy实例开启状态。  取值: - “ACTIVE”，表示数据库代理正常； - “FAILED”，表示数据库代理创建失败； - “DELETED”，表示数据库代理已删除； - “ABNORMAL”，表示数据库代理异常； - “ENABLING PROXY”，表示数据库代理正在开启； - “DISABLING PROXY”，表示数据库代理正在关闭； - “ADDING PROXY NODE”，表示数据库代理正在扩容； - “DELETING READ REPLICAS FROM PROXY”，表示数据库代理正在移除只读节点； - “ADDING READ REPLICAS TO PROXY”，表示数据库代理正在添加只读节点； - “CHANGING WEIGHTS”，表示数据库代理正在修改只读节点权重。
 
         :return: The status of this MysqlProxyV3.
         :rtype: str
@@ -186,7 +186,7 @@ class MysqlProxyV3:
     def status(self, status):
         """Sets the status of this MysqlProxyV3.
 
-        Proxy实例开启状态。  取值: 值为“ACTIVE”，表示数据库代理正常； “FAILED”，表示数据库代理创建失败； “DELETED”，表示数据库代理已删除； “ABNORMAL”，表示数据库代理异常； “ENABLING PROXY”，表示数据库代理正在开启； “DISABLING PROXY”，表示数据库代理正在关闭； “ADDING PROXY NODE”，表示数据库代理正在扩容； “DELETING READ REPLICAS FROM PROXY”，表示数据库代理正在移除只读节点； “ADDING READ REPLICAS TO PROXY”，表示数据库代理正在添加只读节点； “CHANGING WEIGHTS”，表示数据库代理正在修改只读节点权重。
+        Proxy实例开启状态。  取值: - “ACTIVE”，表示数据库代理正常； - “FAILED”，表示数据库代理创建失败； - “DELETED”，表示数据库代理已删除； - “ABNORMAL”，表示数据库代理异常； - “ENABLING PROXY”，表示数据库代理正在开启； - “DISABLING PROXY”，表示数据库代理正在关闭； - “ADDING PROXY NODE”，表示数据库代理正在扩容； - “DELETING READ REPLICAS FROM PROXY”，表示数据库代理正在移除只读节点； - “ADDING READ REPLICAS TO PROXY”，表示数据库代理正在添加只读节点； - “CHANGING WEIGHTS”，表示数据库代理正在修改只读节点权重。
 
         :param status: The status of this MysqlProxyV3.
         :type status: str
@@ -241,7 +241,7 @@ class MysqlProxyV3:
     def pool_status(self):
         """Gets the pool_status of this MysqlProxyV3.
 
-        Proxy实例状态。 取值范围：ACTIVE、ABNORMAL、FAILED和DELETED。
+        Proxy实例状态。  取值范围： - ACTIVE，表示数据库代理正常 - ABNORMAL，表示数据库代理异常 - FAILED，表示数据库代理创建失败 - DELETED，表示数据库代理已删除
 
         :return: The pool_status of this MysqlProxyV3.
         :rtype: str
@@ -252,7 +252,7 @@ class MysqlProxyV3:
     def pool_status(self, pool_status):
         """Sets the pool_status of this MysqlProxyV3.
 
-        Proxy实例状态。 取值范围：ACTIVE、ABNORMAL、FAILED和DELETED。
+        Proxy实例状态。  取值范围： - ACTIVE，表示数据库代理正常 - ABNORMAL，表示数据库代理异常 - FAILED，表示数据库代理创建失败 - DELETED，表示数据库代理已删除
 
         :param pool_status: The pool_status of this MysqlProxyV3.
         :type pool_status: str

@@ -34,7 +34,7 @@ class MysqlCreateReadonlyNodeRequest:
 
         The model defined in huaweicloud sdk
 
-        :param priorities: 指定创建的只读节点故障倒换优先级。 故障倒换优先级的取值范围为1~16(只读节点个数最大值)，数字越小，优先级越大，即故障倒换时，主节点会优先倒换到优先级高的备节点上，优先级相同的备节点选为主节点的概率相同。
+        :param priorities: 指定创建的只读节点故障倒换优先级。  故障倒换优先级的取值范围为1~16，数字越小，优先级越大，即故障倒换时，主节点会优先倒换到优先级高的备节点上，优先级相同的备节点选为主节点的概率相同。最多支持9个备节点设置故障倒换优先级，超过9个的备节点优先级默认为-1，表示不会参与倒换。可通过修改节点的故障倒换优先级来进行调整。
         :type priorities: list[int]
         :param is_auto_pay: 创建包周期时可指定，表示是否自动从客户的账户中支付，此字段不影响自动续订的支付方式。  - true，为自动支付，默认该方式。 - false，为手动支付。
         :type is_auto_pay: str
@@ -54,7 +54,7 @@ class MysqlCreateReadonlyNodeRequest:
     def priorities(self):
         """Gets the priorities of this MysqlCreateReadonlyNodeRequest.
 
-        指定创建的只读节点故障倒换优先级。 故障倒换优先级的取值范围为1~16(只读节点个数最大值)，数字越小，优先级越大，即故障倒换时，主节点会优先倒换到优先级高的备节点上，优先级相同的备节点选为主节点的概率相同。
+        指定创建的只读节点故障倒换优先级。  故障倒换优先级的取值范围为1~16，数字越小，优先级越大，即故障倒换时，主节点会优先倒换到优先级高的备节点上，优先级相同的备节点选为主节点的概率相同。最多支持9个备节点设置故障倒换优先级，超过9个的备节点优先级默认为-1，表示不会参与倒换。可通过修改节点的故障倒换优先级来进行调整。
 
         :return: The priorities of this MysqlCreateReadonlyNodeRequest.
         :rtype: list[int]
@@ -65,7 +65,7 @@ class MysqlCreateReadonlyNodeRequest:
     def priorities(self, priorities):
         """Sets the priorities of this MysqlCreateReadonlyNodeRequest.
 
-        指定创建的只读节点故障倒换优先级。 故障倒换优先级的取值范围为1~16(只读节点个数最大值)，数字越小，优先级越大，即故障倒换时，主节点会优先倒换到优先级高的备节点上，优先级相同的备节点选为主节点的概率相同。
+        指定创建的只读节点故障倒换优先级。  故障倒换优先级的取值范围为1~16，数字越小，优先级越大，即故障倒换时，主节点会优先倒换到优先级高的备节点上，优先级相同的备节点选为主节点的概率相同。最多支持9个备节点设置故障倒换优先级，超过9个的备节点优先级默认为-1，表示不会参与倒换。可通过修改节点的故障倒换优先级来进行调整。
 
         :param priorities: The priorities of this MysqlCreateReadonlyNodeRequest.
         :type priorities: list[int]

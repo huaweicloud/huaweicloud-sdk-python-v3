@@ -1,0 +1,234 @@
+# coding: utf-8
+
+import re
+import six
+
+
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class HostRaspProtectHistoryResponseInfo:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'alarm_time': 'int',
+        'threat_type': 'str',
+        'alarm_level': 'int',
+        'source_ip': 'str',
+        'attacked_url': 'str'
+    }
+
+    attribute_map = {
+        'alarm_time': 'alarm_time',
+        'threat_type': 'threat_type',
+        'alarm_level': 'alarm_level',
+        'source_ip': 'source_ip',
+        'attacked_url': 'attacked_url'
+    }
+
+    def __init__(self, alarm_time=None, threat_type=None, alarm_level=None, source_ip=None, attacked_url=None):
+        """HostRaspProtectHistoryResponseInfo
+
+        The model defined in huaweicloud sdk
+
+        :param alarm_time: 告警时间
+        :type alarm_time: int
+        :param threat_type: 威胁类型
+        :type threat_type: str
+        :param alarm_level: 告警级别
+        :type alarm_level: int
+        :param source_ip: 源IP
+        :type source_ip: str
+        :param attacked_url: 攻击URL
+        :type attacked_url: str
+        """
+        
+        
+
+        self._alarm_time = None
+        self._threat_type = None
+        self._alarm_level = None
+        self._source_ip = None
+        self._attacked_url = None
+        self.discriminator = None
+
+        if alarm_time is not None:
+            self.alarm_time = alarm_time
+        if threat_type is not None:
+            self.threat_type = threat_type
+        if alarm_level is not None:
+            self.alarm_level = alarm_level
+        if source_ip is not None:
+            self.source_ip = source_ip
+        if attacked_url is not None:
+            self.attacked_url = attacked_url
+
+    @property
+    def alarm_time(self):
+        """Gets the alarm_time of this HostRaspProtectHistoryResponseInfo.
+
+        告警时间
+
+        :return: The alarm_time of this HostRaspProtectHistoryResponseInfo.
+        :rtype: int
+        """
+        return self._alarm_time
+
+    @alarm_time.setter
+    def alarm_time(self, alarm_time):
+        """Sets the alarm_time of this HostRaspProtectHistoryResponseInfo.
+
+        告警时间
+
+        :param alarm_time: The alarm_time of this HostRaspProtectHistoryResponseInfo.
+        :type alarm_time: int
+        """
+        self._alarm_time = alarm_time
+
+    @property
+    def threat_type(self):
+        """Gets the threat_type of this HostRaspProtectHistoryResponseInfo.
+
+        威胁类型
+
+        :return: The threat_type of this HostRaspProtectHistoryResponseInfo.
+        :rtype: str
+        """
+        return self._threat_type
+
+    @threat_type.setter
+    def threat_type(self, threat_type):
+        """Sets the threat_type of this HostRaspProtectHistoryResponseInfo.
+
+        威胁类型
+
+        :param threat_type: The threat_type of this HostRaspProtectHistoryResponseInfo.
+        :type threat_type: str
+        """
+        self._threat_type = threat_type
+
+    @property
+    def alarm_level(self):
+        """Gets the alarm_level of this HostRaspProtectHistoryResponseInfo.
+
+        告警级别
+
+        :return: The alarm_level of this HostRaspProtectHistoryResponseInfo.
+        :rtype: int
+        """
+        return self._alarm_level
+
+    @alarm_level.setter
+    def alarm_level(self, alarm_level):
+        """Sets the alarm_level of this HostRaspProtectHistoryResponseInfo.
+
+        告警级别
+
+        :param alarm_level: The alarm_level of this HostRaspProtectHistoryResponseInfo.
+        :type alarm_level: int
+        """
+        self._alarm_level = alarm_level
+
+    @property
+    def source_ip(self):
+        """Gets the source_ip of this HostRaspProtectHistoryResponseInfo.
+
+        源IP
+
+        :return: The source_ip of this HostRaspProtectHistoryResponseInfo.
+        :rtype: str
+        """
+        return self._source_ip
+
+    @source_ip.setter
+    def source_ip(self, source_ip):
+        """Sets the source_ip of this HostRaspProtectHistoryResponseInfo.
+
+        源IP
+
+        :param source_ip: The source_ip of this HostRaspProtectHistoryResponseInfo.
+        :type source_ip: str
+        """
+        self._source_ip = source_ip
+
+    @property
+    def attacked_url(self):
+        """Gets the attacked_url of this HostRaspProtectHistoryResponseInfo.
+
+        攻击URL
+
+        :return: The attacked_url of this HostRaspProtectHistoryResponseInfo.
+        :rtype: str
+        """
+        return self._attacked_url
+
+    @attacked_url.setter
+    def attacked_url(self, attacked_url):
+        """Sets the attacked_url of this HostRaspProtectHistoryResponseInfo.
+
+        攻击URL
+
+        :param attacked_url: The attacked_url of this HostRaspProtectHistoryResponseInfo.
+        :type attacked_url: str
+        """
+        self._attacked_url = attacked_url
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, HostRaspProtectHistoryResponseInfo):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

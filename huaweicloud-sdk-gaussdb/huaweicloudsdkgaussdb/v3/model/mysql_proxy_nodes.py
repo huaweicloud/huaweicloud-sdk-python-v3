@@ -44,7 +44,7 @@ class MysqlProxyNodes:
 
         :param id: Proxy节点id。
         :type id: str
-        :param status: Proxy节点状态。 取值范围：ACTIVE、ABNORMAL、BUILD和FAILED。
+        :param status: Proxy节点状态。  取值范围： - ACTIVE，表示节点正常 - ABNORMAL，表示节点异常 - FAILED，表示节点失败 - DELETED，表示节点已删除
         :type status: str
         :param name: Proxy节点名称。
         :type name: str
@@ -52,7 +52,7 @@ class MysqlProxyNodes:
         :type role: str
         :param az_code: 可用区。
         :type az_code: str
-        :param frozen_flag: Proxy节点是否被冻结：0-未冻结；1-冻结；2-冻结删除。
+        :param frozen_flag: Proxy节点是否被冻结。  取值范围： - 0-未冻结 - 1-冻结 - 2-冻结删除
         :type frozen_flag: int
         """
         
@@ -105,7 +105,7 @@ class MysqlProxyNodes:
     def status(self):
         """Gets the status of this MysqlProxyNodes.
 
-        Proxy节点状态。 取值范围：ACTIVE、ABNORMAL、BUILD和FAILED。
+        Proxy节点状态。  取值范围： - ACTIVE，表示节点正常 - ABNORMAL，表示节点异常 - FAILED，表示节点失败 - DELETED，表示节点已删除
 
         :return: The status of this MysqlProxyNodes.
         :rtype: str
@@ -116,7 +116,7 @@ class MysqlProxyNodes:
     def status(self, status):
         """Sets the status of this MysqlProxyNodes.
 
-        Proxy节点状态。 取值范围：ACTIVE、ABNORMAL、BUILD和FAILED。
+        Proxy节点状态。  取值范围： - ACTIVE，表示节点正常 - ABNORMAL，表示节点异常 - FAILED，表示节点失败 - DELETED，表示节点已删除
 
         :param status: The status of this MysqlProxyNodes.
         :type status: str
@@ -193,7 +193,7 @@ class MysqlProxyNodes:
     def frozen_flag(self):
         """Gets the frozen_flag of this MysqlProxyNodes.
 
-        Proxy节点是否被冻结：0-未冻结；1-冻结；2-冻结删除。
+        Proxy节点是否被冻结。  取值范围： - 0-未冻结 - 1-冻结 - 2-冻结删除
 
         :return: The frozen_flag of this MysqlProxyNodes.
         :rtype: int
@@ -204,7 +204,7 @@ class MysqlProxyNodes:
     def frozen_flag(self, frozen_flag):
         """Sets the frozen_flag of this MysqlProxyNodes.
 
-        Proxy节点是否被冻结：0-未冻结；1-冻结；2-冻结删除。
+        Proxy节点是否被冻结。  取值范围： - 0-未冻结 - 1-冻结 - 2-冻结删除
 
         :param frozen_flag: The frozen_flag of this MysqlProxyNodes.
         :type frozen_flag: int

@@ -21,7 +21,7 @@ class NoSqlRequestEpsQuota:
 
     openapi_types = {
         'enterprise_project_id': 'str',
-        'quota': 'NoSqlEpsQuota'
+        'quota': 'NoSqlEpsQuotaRequestInfo'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class NoSqlRequestEpsQuota:
         :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
         :param quota: 
-        :type quota: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlEpsQuota`
+        :type quota: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlEpsQuotaRequestInfo`
         """
         
         
@@ -76,7 +76,7 @@ class NoSqlRequestEpsQuota:
         """Gets the quota of this NoSqlRequestEpsQuota.
 
         :return: The quota of this NoSqlRequestEpsQuota.
-        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlEpsQuota`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlEpsQuotaRequestInfo`
         """
         return self._quota
 
@@ -85,7 +85,7 @@ class NoSqlRequestEpsQuota:
         """Sets the quota of this NoSqlRequestEpsQuota.
 
         :param quota: The quota of this NoSqlRequestEpsQuota.
-        :type quota: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlEpsQuota`
+        :type quota: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlEpsQuotaRequestInfo`
         """
         self._quota = quota
 

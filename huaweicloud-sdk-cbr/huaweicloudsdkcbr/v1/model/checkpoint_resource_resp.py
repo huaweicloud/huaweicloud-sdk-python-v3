@@ -56,7 +56,7 @@ class CheckpointResourceResp:
         :type protect_status: str
         :param resource_size: 资源已分配容量,单位为GB
         :type resource_size: str
-        :param type: 待备份资源的类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Native::Server, OS::Sfs::Turbo
+        :param type: 待备份资源的类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Native::Server, OS::Sfs::Turbo, OS::Workspace::DesktopV2
         :type type: str
         :param backup_size: 副本大小
         :type backup_size: str
@@ -204,7 +204,7 @@ class CheckpointResourceResp:
     def type(self):
         """Gets the type of this CheckpointResourceResp.
 
-        待备份资源的类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Native::Server, OS::Sfs::Turbo
+        待备份资源的类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Native::Server, OS::Sfs::Turbo, OS::Workspace::DesktopV2
 
         :return: The type of this CheckpointResourceResp.
         :rtype: str
@@ -215,7 +215,7 @@ class CheckpointResourceResp:
     def type(self, type):
         """Sets the type of this CheckpointResourceResp.
 
-        待备份资源的类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Native::Server, OS::Sfs::Turbo
+        待备份资源的类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Native::Server, OS::Sfs::Turbo, OS::Workspace::DesktopV2
 
         :param type: The type of this CheckpointResourceResp.
         :type type: str

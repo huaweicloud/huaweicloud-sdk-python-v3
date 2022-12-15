@@ -36,7 +36,7 @@ class BlockchainInfo:
 
         :param id: 服务实例ID
         :type id: str
-        :param name: 服务实例名
+        :param name: 服务实例名称
         :type name: str
         """
         
@@ -77,7 +77,7 @@ class BlockchainInfo:
     def name(self):
         """Gets the name of this BlockchainInfo.
 
-        服务实例名
+        服务实例名称
 
         :return: The name of this BlockchainInfo.
         :rtype: str
@@ -88,7 +88,7 @@ class BlockchainInfo:
     def name(self, name):
         """Sets the name of this BlockchainInfo.
 
-        服务实例名
+        服务实例名称
 
         :param name: The name of this BlockchainInfo.
         :type name: str

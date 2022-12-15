@@ -32,7 +32,7 @@ class UpdateAuditLogResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 开启/关闭审计日志操作结果。
+        :param result: 开启/关闭全量SQL操作结果。
         :type result: str
         """
         
@@ -48,7 +48,7 @@ class UpdateAuditLogResponse(SdkResponse):
     def result(self):
         """Gets the result of this UpdateAuditLogResponse.
 
-        开启/关闭审计日志操作结果。
+        开启/关闭全量SQL操作结果。
 
         :return: The result of this UpdateAuditLogResponse.
         :rtype: str
@@ -59,7 +59,7 @@ class UpdateAuditLogResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this UpdateAuditLogResponse.
 
-        开启/关闭审计日志操作结果。
+        开启/关闭全量SQL操作结果。
 
         :param result: The result of this UpdateAuditLogResponse.
         :type result: str

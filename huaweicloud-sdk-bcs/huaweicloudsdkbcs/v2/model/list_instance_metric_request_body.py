@@ -36,11 +36,11 @@ class ListInstanceMetricRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param type: 实体类型，[可选值如下 org     # 节点组织 plugin  # 插件](tag:online) 默认为org 
+        :param type: 实体类型，[可选值如下: org(包括代理节点baas-agent、共识节点orderer、记账节点peer), plugin(插件)] 默认为org 
         :type type: str
-        :param entity_name: 所属实体的名称
+        :param entity_name: 所属实体的名称，即区块链服务详情页面的“区块链实例”中各节点的名称（代理节点、共识节点、记账节点）
         :type entity_name: str
-        :param instance_name: 具体实例的名称
+        :param instance_name: 具体实例的名称。若当前区块链服务部署在CCE集群上，该名称为各节点对应的负载（pod）名称；若当前区块链服务部署在IEF集群上，可进入“智能边缘平台”服务，进入“边缘应用”-&gt;“容器应用”，查询负载名称。
         :type instance_name: str
         """
         
@@ -59,7 +59,7 @@ class ListInstanceMetricRequestBody:
     def type(self):
         """Gets the type of this ListInstanceMetricRequestBody.
 
-        实体类型，[可选值如下 org     # 节点组织 plugin  # 插件](tag:online) 默认为org 
+        实体类型，[可选值如下: org(包括代理节点baas-agent、共识节点orderer、记账节点peer), plugin(插件)] 默认为org 
 
         :return: The type of this ListInstanceMetricRequestBody.
         :rtype: str
@@ -70,7 +70,7 @@ class ListInstanceMetricRequestBody:
     def type(self, type):
         """Sets the type of this ListInstanceMetricRequestBody.
 
-        实体类型，[可选值如下 org     # 节点组织 plugin  # 插件](tag:online) 默认为org 
+        实体类型，[可选值如下: org(包括代理节点baas-agent、共识节点orderer、记账节点peer), plugin(插件)] 默认为org 
 
         :param type: The type of this ListInstanceMetricRequestBody.
         :type type: str
@@ -81,7 +81,7 @@ class ListInstanceMetricRequestBody:
     def entity_name(self):
         """Gets the entity_name of this ListInstanceMetricRequestBody.
 
-        所属实体的名称
+        所属实体的名称，即区块链服务详情页面的“区块链实例”中各节点的名称（代理节点、共识节点、记账节点）
 
         :return: The entity_name of this ListInstanceMetricRequestBody.
         :rtype: str
@@ -92,7 +92,7 @@ class ListInstanceMetricRequestBody:
     def entity_name(self, entity_name):
         """Sets the entity_name of this ListInstanceMetricRequestBody.
 
-        所属实体的名称
+        所属实体的名称，即区块链服务详情页面的“区块链实例”中各节点的名称（代理节点、共识节点、记账节点）
 
         :param entity_name: The entity_name of this ListInstanceMetricRequestBody.
         :type entity_name: str
@@ -103,7 +103,7 @@ class ListInstanceMetricRequestBody:
     def instance_name(self):
         """Gets the instance_name of this ListInstanceMetricRequestBody.
 
-        具体实例的名称
+        具体实例的名称。若当前区块链服务部署在CCE集群上，该名称为各节点对应的负载（pod）名称；若当前区块链服务部署在IEF集群上，可进入“智能边缘平台”服务，进入“边缘应用”->“容器应用”，查询负载名称。
 
         :return: The instance_name of this ListInstanceMetricRequestBody.
         :rtype: str
@@ -114,7 +114,7 @@ class ListInstanceMetricRequestBody:
     def instance_name(self, instance_name):
         """Sets the instance_name of this ListInstanceMetricRequestBody.
 
-        具体实例的名称
+        具体实例的名称。若当前区块链服务部署在CCE集群上，该名称为各节点对应的负载（pod）名称；若当前区块链服务部署在IEF集群上，可进入“智能边缘平台”服务，进入“边缘应用”->“容器应用”，查询负载名称。
 
         :param instance_name: The instance_name of this ListInstanceMetricRequestBody.
         :type instance_name: str

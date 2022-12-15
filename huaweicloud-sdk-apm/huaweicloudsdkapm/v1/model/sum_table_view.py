@@ -96,12 +96,9 @@ class SumTableView:
         self._latest = None
         self.discriminator = None
 
-        if view_type is not None:
-            self.view_type = view_type
-        if collector_name is not None:
-            self.collector_name = collector_name
-        if metric_set is not None:
-            self.metric_set = metric_set
+        self.view_type = view_type
+        self.collector_name = collector_name
+        self.metric_set = metric_set
         if title is not None:
             self.title = title
         if table_direction is not None:
@@ -110,8 +107,7 @@ class SumTableView:
             self.group_by = group_by
         if filter is not None:
             self.filter = filter
-        if field_item_list is not None:
-            self.field_item_list = field_item_list
+        self.field_item_list = field_item_list
         if span is not None:
             self.span = span
         if span_field is not None:

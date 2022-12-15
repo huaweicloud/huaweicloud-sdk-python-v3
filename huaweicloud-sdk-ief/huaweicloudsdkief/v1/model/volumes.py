@@ -65,7 +65,8 @@ class Volumes:
         self.type = type
         self.source = source
         self.destination = destination
-        self.read_only = read_only
+        if read_only is not None:
+            self.read_only = read_only
 
     @property
     def name(self):

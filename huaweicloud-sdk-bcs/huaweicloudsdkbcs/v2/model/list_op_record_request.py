@@ -42,11 +42,11 @@ class ListOpRecordRequest:
 
         :param blockchain_id: 区块链ID
         :type blockchain_id: str
-        :param operation_status: 操作状态, 可选数值如下（括号中为该数值对应的操作类型含义）：waiting(等待执行)，processing（处理中），finished（操作完成，成功），failed（操作失败），stop（操作中断）
+        :param operation_status: 操作状态, 可选数值如下（括号中为该数值对应的操作状态含义）：waiting(等待执行)，processing（处理中），finished（操作完成，成功），failed（操作失败），stop（操作中断）
         :type operation_status: str
-        :param resource_type: 资源类型, 可选数值如下（括号中为该数值对应的操作类型含义）：BCSSVC01（BCS变更操作），BCSSVC02（UGBaaS变更操作），PLUGIN01（RestAPI插件变更操作），PLUGIN02（TC3插件变更操作），PLUGIN03（轻节点插件变更操作）
+        :param resource_type: 资源类型, 可选数值如下（括号中为该数值对应的资源类型含义）：BCSSVC01（BCS变更操作），BCSSVC02（UGBaaS变更操作），PLUGIN01（RestAPI插件变更操作），PLUGIN02（TC3插件变更操作），PLUGIN03（轻节点插件变更操作）
         :type resource_type: str
-        :param operation_type: 操作类型,  可选数值如下（括号中为该数值对应的操作类型含义）：99（OpCreate）,00（OpDelete）,01（OpUpgrade）,91（OpUpgradeRb）,02（OpAddOrg）,03（OpScaleOrg）,04（OpJoinChannel）,05（OpJoinUnion）
+        :param operation_type: 操作类型, 可选数值如下（括号中为该数值对应的操作类型含义）：99（OpCreate）,00（OpDelete）,01（OpUpgrade）,91（OpUpgradeRb）,02（OpAddOrg）,03（OpScaleOrg）,04（OpJoinChannel）,05（OpJoinUnion）
         :type operation_type: str
         :param operation_id: 操作记录ID
         :type operation_id: str
@@ -98,7 +98,7 @@ class ListOpRecordRequest:
     def operation_status(self):
         """Gets the operation_status of this ListOpRecordRequest.
 
-        操作状态, 可选数值如下（括号中为该数值对应的操作类型含义）：waiting(等待执行)，processing（处理中），finished（操作完成，成功），failed（操作失败），stop（操作中断）
+        操作状态, 可选数值如下（括号中为该数值对应的操作状态含义）：waiting(等待执行)，processing（处理中），finished（操作完成，成功），failed（操作失败），stop（操作中断）
 
         :return: The operation_status of this ListOpRecordRequest.
         :rtype: str
@@ -109,7 +109,7 @@ class ListOpRecordRequest:
     def operation_status(self, operation_status):
         """Sets the operation_status of this ListOpRecordRequest.
 
-        操作状态, 可选数值如下（括号中为该数值对应的操作类型含义）：waiting(等待执行)，processing（处理中），finished（操作完成，成功），failed（操作失败），stop（操作中断）
+        操作状态, 可选数值如下（括号中为该数值对应的操作状态含义）：waiting(等待执行)，processing（处理中），finished（操作完成，成功），failed（操作失败），stop（操作中断）
 
         :param operation_status: The operation_status of this ListOpRecordRequest.
         :type operation_status: str
@@ -120,7 +120,7 @@ class ListOpRecordRequest:
     def resource_type(self):
         """Gets the resource_type of this ListOpRecordRequest.
 
-        资源类型, 可选数值如下（括号中为该数值对应的操作类型含义）：BCSSVC01（BCS变更操作），BCSSVC02（UGBaaS变更操作），PLUGIN01（RestAPI插件变更操作），PLUGIN02（TC3插件变更操作），PLUGIN03（轻节点插件变更操作）
+        资源类型, 可选数值如下（括号中为该数值对应的资源类型含义）：BCSSVC01（BCS变更操作），BCSSVC02（UGBaaS变更操作），PLUGIN01（RestAPI插件变更操作），PLUGIN02（TC3插件变更操作），PLUGIN03（轻节点插件变更操作）
 
         :return: The resource_type of this ListOpRecordRequest.
         :rtype: str
@@ -131,7 +131,7 @@ class ListOpRecordRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListOpRecordRequest.
 
-        资源类型, 可选数值如下（括号中为该数值对应的操作类型含义）：BCSSVC01（BCS变更操作），BCSSVC02（UGBaaS变更操作），PLUGIN01（RestAPI插件变更操作），PLUGIN02（TC3插件变更操作），PLUGIN03（轻节点插件变更操作）
+        资源类型, 可选数值如下（括号中为该数值对应的资源类型含义）：BCSSVC01（BCS变更操作），BCSSVC02（UGBaaS变更操作），PLUGIN01（RestAPI插件变更操作），PLUGIN02（TC3插件变更操作），PLUGIN03（轻节点插件变更操作）
 
         :param resource_type: The resource_type of this ListOpRecordRequest.
         :type resource_type: str
@@ -142,7 +142,7 @@ class ListOpRecordRequest:
     def operation_type(self):
         """Gets the operation_type of this ListOpRecordRequest.
 
-        操作类型,  可选数值如下（括号中为该数值对应的操作类型含义）：99（OpCreate）,00（OpDelete）,01（OpUpgrade）,91（OpUpgradeRb）,02（OpAddOrg）,03（OpScaleOrg）,04（OpJoinChannel）,05（OpJoinUnion）
+        操作类型, 可选数值如下（括号中为该数值对应的操作类型含义）：99（OpCreate）,00（OpDelete）,01（OpUpgrade）,91（OpUpgradeRb）,02（OpAddOrg）,03（OpScaleOrg）,04（OpJoinChannel）,05（OpJoinUnion）
 
         :return: The operation_type of this ListOpRecordRequest.
         :rtype: str
@@ -153,7 +153,7 @@ class ListOpRecordRequest:
     def operation_type(self, operation_type):
         """Sets the operation_type of this ListOpRecordRequest.
 
-        操作类型,  可选数值如下（括号中为该数值对应的操作类型含义）：99（OpCreate）,00（OpDelete）,01（OpUpgrade）,91（OpUpgradeRb）,02（OpAddOrg）,03（OpScaleOrg）,04（OpJoinChannel）,05（OpJoinUnion）
+        操作类型, 可选数值如下（括号中为该数值对应的操作类型含义）：99（OpCreate）,00（OpDelete）,01（OpUpgrade）,91（OpUpgradeRb）,02（OpAddOrg）,03（OpScaleOrg）,04（OpJoinChannel）,05（OpJoinUnion）
 
         :param operation_type: The operation_type of this ListOpRecordRequest.
         :type operation_type: str

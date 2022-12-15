@@ -21,34 +21,34 @@ class CreateClusterLoadBalance:
 
     openapi_types = {
         'endpoint_with_dns_name': 'bool',
-        'vpc_permisssions': 'list[str]'
+        'vpc_permissions': 'list[str]'
     }
 
     attribute_map = {
         'endpoint_with_dns_name': 'endpointWithDnsName',
-        'vpc_permisssions': 'vpcPermisssions'
+        'vpc_permissions': 'vpcPermissions'
     }
 
-    def __init__(self, endpoint_with_dns_name=None, vpc_permisssions=None):
+    def __init__(self, endpoint_with_dns_name=None, vpc_permissions=None):
         """CreateClusterLoadBalance
 
         The model defined in huaweicloud sdk
 
         :param endpoint_with_dns_name: 是否开启内网域名。 - true： 开启内网域名。 - false： 关闭内网域名。
         :type endpoint_with_dns_name: bool
-        :param vpc_permisssions: 访问控制。
-        :type vpc_permisssions: list[str]
+        :param vpc_permissions: 访问控制。
+        :type vpc_permissions: list[str]
         """
         
         
 
         self._endpoint_with_dns_name = None
-        self._vpc_permisssions = None
+        self._vpc_permissions = None
         self.discriminator = None
 
         self.endpoint_with_dns_name = endpoint_with_dns_name
-        if vpc_permisssions is not None:
-            self.vpc_permisssions = vpc_permisssions
+        if vpc_permissions is not None:
+            self.vpc_permissions = vpc_permissions
 
     @property
     def endpoint_with_dns_name(self):
@@ -73,26 +73,26 @@ class CreateClusterLoadBalance:
         self._endpoint_with_dns_name = endpoint_with_dns_name
 
     @property
-    def vpc_permisssions(self):
-        """Gets the vpc_permisssions of this CreateClusterLoadBalance.
+    def vpc_permissions(self):
+        """Gets the vpc_permissions of this CreateClusterLoadBalance.
 
         访问控制。
 
-        :return: The vpc_permisssions of this CreateClusterLoadBalance.
+        :return: The vpc_permissions of this CreateClusterLoadBalance.
         :rtype: list[str]
         """
-        return self._vpc_permisssions
+        return self._vpc_permissions
 
-    @vpc_permisssions.setter
-    def vpc_permisssions(self, vpc_permisssions):
-        """Sets the vpc_permisssions of this CreateClusterLoadBalance.
+    @vpc_permissions.setter
+    def vpc_permissions(self, vpc_permissions):
+        """Sets the vpc_permissions of this CreateClusterLoadBalance.
 
         访问控制。
 
-        :param vpc_permisssions: The vpc_permisssions of this CreateClusterLoadBalance.
-        :type vpc_permisssions: list[str]
+        :param vpc_permissions: The vpc_permissions of this CreateClusterLoadBalance.
+        :type vpc_permissions: list[str]
         """
-        self._vpc_permisssions = vpc_permisssions
+        self._vpc_permissions = vpc_permissions
 
     def to_dict(self):
         """Returns the model properties as a dict"""

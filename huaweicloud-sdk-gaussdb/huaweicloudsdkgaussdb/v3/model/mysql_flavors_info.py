@@ -60,7 +60,7 @@ class MysqlFlavorsInfo:
         :type version_name: str
         :param instance_mode: 实例类型。目前仅支持Cluster。
         :type instance_mode: str
-        :param az_status: 规格所在az的状态，包含以下状态： - normal，在售 - unsupported，暂不支持该规格 - sellout，售罄。
+        :param az_status: 规格所在az的状态，包含以下状态：  - normal，在售 - unsupported，暂不支持该规格 - sellout，售罄。
         :type az_status: dict(str, str)
         """
         
@@ -243,7 +243,7 @@ class MysqlFlavorsInfo:
     def az_status(self):
         """Gets the az_status of this MysqlFlavorsInfo.
 
-        规格所在az的状态，包含以下状态： - normal，在售 - unsupported，暂不支持该规格 - sellout，售罄。
+        规格所在az的状态，包含以下状态：  - normal，在售 - unsupported，暂不支持该规格 - sellout，售罄。
 
         :return: The az_status of this MysqlFlavorsInfo.
         :rtype: dict(str, str)
@@ -254,7 +254,7 @@ class MysqlFlavorsInfo:
     def az_status(self, az_status):
         """Sets the az_status of this MysqlFlavorsInfo.
 
-        规格所在az的状态，包含以下状态： - normal，在售 - unsupported，暂不支持该规格 - sellout，售罄。
+        规格所在az的状态，包含以下状态：  - normal，在售 - unsupported，暂不支持该规格 - sellout，售罄。
 
         :param az_status: The az_status of this MysqlFlavorsInfo.
         :type az_status: dict(str, str)

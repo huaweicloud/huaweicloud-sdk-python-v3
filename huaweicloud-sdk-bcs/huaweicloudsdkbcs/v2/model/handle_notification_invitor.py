@@ -44,7 +44,7 @@ class HandleNotificationInvitor:
         :type invitor_bcs_name: str
         :param invitor_project_id: 邀请方project id
         :type invitor_project_id: str
-        :param invitor_user_id: 邀请方租户id。控制台-&gt;邀请方账号-&gt;我的凭证-&gt;API凭证-&gt;账号ID
+        :param invitor_user_id: 邀请方租户id。控制台-&gt;邀请方帐号-&gt;我的凭证-&gt;API凭证-&gt;帐号ID
         :type invitor_user_id: str
         """
         
@@ -131,7 +131,7 @@ class HandleNotificationInvitor:
     def invitor_user_id(self):
         """Gets the invitor_user_id of this HandleNotificationInvitor.
 
-        邀请方租户id。控制台->邀请方账号->我的凭证->API凭证->账号ID
+        邀请方租户id。控制台->邀请方帐号->我的凭证->API凭证->帐号ID
 
         :return: The invitor_user_id of this HandleNotificationInvitor.
         :rtype: str
@@ -142,7 +142,7 @@ class HandleNotificationInvitor:
     def invitor_user_id(self, invitor_user_id):
         """Sets the invitor_user_id of this HandleNotificationInvitor.
 
-        邀请方租户id。控制台->邀请方账号->我的凭证->API凭证->账号ID
+        邀请方租户id。控制台->邀请方帐号->我的凭证->API凭证->帐号ID
 
         :param invitor_user_id: The invitor_user_id of this HandleNotificationInvitor.
         :type invitor_user_id: str

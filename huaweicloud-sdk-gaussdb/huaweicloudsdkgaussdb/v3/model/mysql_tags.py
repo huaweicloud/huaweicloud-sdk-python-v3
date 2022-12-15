@@ -34,9 +34,9 @@ class MysqlTags:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签键。最大长度36个unicode字符。 key不能为空或者空字符串，不能为空格。 字符集：A-Z，a-z ，0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
+        :param key: 标签键。最大长度36个unicode字符。key不能为空或者空字符串，不能为空格。  字符集：A-Z，a-z ，0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
         :type key: str
-        :param value: 标签值。最大长度43个unicode字符。 可以为空字符串。 字符集：A-Z，a-z ，0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
+        :param value: 标签值。最大长度43个unicode字符。可以为空字符串。  字符集：A-Z，a-z ，0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
         :type value: str
         """
         
@@ -53,7 +53,7 @@ class MysqlTags:
     def key(self):
         """Gets the key of this MysqlTags.
 
-        标签键。最大长度36个unicode字符。 key不能为空或者空字符串，不能为空格。 字符集：A-Z，a-z ，0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
+        标签键。最大长度36个unicode字符。key不能为空或者空字符串，不能为空格。  字符集：A-Z，a-z ，0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
         :return: The key of this MysqlTags.
         :rtype: str
@@ -64,7 +64,7 @@ class MysqlTags:
     def key(self, key):
         """Sets the key of this MysqlTags.
 
-        标签键。最大长度36个unicode字符。 key不能为空或者空字符串，不能为空格。 字符集：A-Z，a-z ，0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
+        标签键。最大长度36个unicode字符。key不能为空或者空字符串，不能为空格。  字符集：A-Z，a-z ，0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
         :param key: The key of this MysqlTags.
         :type key: str
@@ -75,7 +75,7 @@ class MysqlTags:
     def value(self):
         """Gets the value of this MysqlTags.
 
-        标签值。最大长度43个unicode字符。 可以为空字符串。 字符集：A-Z，a-z ，0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
+        标签值。最大长度43个unicode字符。可以为空字符串。  字符集：A-Z，a-z ，0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
         :return: The value of this MysqlTags.
         :rtype: str
@@ -86,7 +86,7 @@ class MysqlTags:
     def value(self, value):
         """Sets the value of this MysqlTags.
 
-        标签值。最大长度43个unicode字符。 可以为空字符串。 字符集：A-Z，a-z ，0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
+        标签值。最大长度43个unicode字符。可以为空字符串。  字符集：A-Z，a-z ，0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
         :param value: The value of this MysqlTags.
         :type value: str

@@ -130,7 +130,7 @@ class InstanceRequest:
         :type restore_point: :class:`huaweicloudsdkrds.v3.RestorePoint`
         :param collation: 仅限Microsoft SQL Server实例创建使用。对于MySQL和PostgreSQL实例，该参数无意义。取值范围：根据查询SQL Server可用字符集的字符集查询列表查询可设置的字符集。 取值范围：根据[查询SQL Server可用字符集](https://support.huaweicloud.com/api-rds/rds_05_0010.html)查询可设置的字符集。
         :type collation: str
-        :param tags: 标签列表。单个实例总标签数上限10个。
+        :param tags: 标签列表。单个实例总标签数上限20个。
         :type tags: list[:class:`huaweicloudsdkrds.v3.TagWithKeyValue`]
         :param unchangeable_param: 
         :type unchangeable_param: :class:`huaweicloudsdkrds.v3.UnchangeableParam`
@@ -703,7 +703,7 @@ class InstanceRequest:
     def tags(self):
         """Gets the tags of this InstanceRequest.
 
-        标签列表。单个实例总标签数上限10个。
+        标签列表。单个实例总标签数上限20个。
 
         :return: The tags of this InstanceRequest.
         :rtype: list[:class:`huaweicloudsdkrds.v3.TagWithKeyValue`]
@@ -714,7 +714,7 @@ class InstanceRequest:
     def tags(self, tags):
         """Sets the tags of this InstanceRequest.
 
-        标签列表。单个实例总标签数上限10个。
+        标签列表。单个实例总标签数上限20个。
 
         :param tags: The tags of this InstanceRequest.
         :type tags: list[:class:`huaweicloudsdkrds.v3.TagWithKeyValue`]

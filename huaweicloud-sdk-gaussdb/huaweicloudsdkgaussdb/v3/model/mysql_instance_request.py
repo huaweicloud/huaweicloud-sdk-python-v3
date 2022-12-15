@@ -76,7 +76,7 @@ class MysqlInstanceRequest:
         :type charge_info: :class:`huaweicloudsdkgaussdb.v3.MysqlChargeInfo`
         :param region: 区域ID。
         :type region: str
-        :param name: 实例名称。 用于表示实例的名称，同一租户下，同类型的实例名可重名。 取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
+        :param name: 实例名称。用于表示实例的名称，同一租户下，同类型的实例名可重名。  取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
         :type name: str
         :param datastore: 
         :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
@@ -92,7 +92,7 @@ class MysqlInstanceRequest:
         :type security_group_id: str
         :param configuration_id: 参数模板ID。
         :type configuration_id: str
-        :param password: 数据库密码。 取值范围：至少包含以下字符的三种：大小写字母、数字和特殊符号~!@#$%^*-_&#x3D;+?,()&amp;，长度8~32个字符。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。如果您输入弱密码，系统会自动判定密码非法。
+        :param password: 数据库密码。  取值范围：至少包含以下字符的三种：大小写字母、数字和特殊符号~!@#$%^*-_&#x3D;+?,()&amp;，长度8~32个字符。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。如果您输入弱密码，系统会自动判定密码非法。
         :type password: str
         :param backup_strategy: 
         :type backup_strategy: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
@@ -218,7 +218,7 @@ class MysqlInstanceRequest:
     def name(self):
         """Gets the name of this MysqlInstanceRequest.
 
-        实例名称。 用于表示实例的名称，同一租户下，同类型的实例名可重名。 取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
+        实例名称。用于表示实例的名称，同一租户下，同类型的实例名可重名。  取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
 
         :return: The name of this MysqlInstanceRequest.
         :rtype: str
@@ -229,7 +229,7 @@ class MysqlInstanceRequest:
     def name(self, name):
         """Sets the name of this MysqlInstanceRequest.
 
-        实例名称。 用于表示实例的名称，同一租户下，同类型的实例名可重名。 取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
+        实例名称。用于表示实例的名称，同一租户下，同类型的实例名可重名。  取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
 
         :param name: The name of this MysqlInstanceRequest.
         :type name: str
@@ -390,7 +390,7 @@ class MysqlInstanceRequest:
     def password(self):
         """Gets the password of this MysqlInstanceRequest.
 
-        数据库密码。 取值范围：至少包含以下字符的三种：大小写字母、数字和特殊符号~!@#$%^*-_=+?,()&，长度8~32个字符。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。如果您输入弱密码，系统会自动判定密码非法。
+        数据库密码。  取值范围：至少包含以下字符的三种：大小写字母、数字和特殊符号~!@#$%^*-_=+?,()&，长度8~32个字符。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。如果您输入弱密码，系统会自动判定密码非法。
 
         :return: The password of this MysqlInstanceRequest.
         :rtype: str
@@ -401,7 +401,7 @@ class MysqlInstanceRequest:
     def password(self, password):
         """Sets the password of this MysqlInstanceRequest.
 
-        数据库密码。 取值范围：至少包含以下字符的三种：大小写字母、数字和特殊符号~!@#$%^*-_=+?,()&，长度8~32个字符。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。如果您输入弱密码，系统会自动判定密码非法。
+        数据库密码。  取值范围：至少包含以下字符的三种：大小写字母、数字和特殊符号~!@#$%^*-_=+?,()&，长度8~32个字符。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。如果您输入弱密码，系统会自动判定密码非法。
 
         :param password: The password of this MysqlInstanceRequest.
         :type password: str

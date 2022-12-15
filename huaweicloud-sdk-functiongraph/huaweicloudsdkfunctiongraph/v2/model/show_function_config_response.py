@@ -47,6 +47,7 @@ class ShowFunctionConfigResponse(SdkResponse):
         'func_vpc': 'FuncVpc',
         'mount_config': 'MountConfig',
         'depend_list': 'list[str]',
+        'depend_version_list': 'list[str]',
         'strategy_config': 'StrategyConfig',
         'dependencies': 'list[Dependency]',
         'initializer_handler': 'str',
@@ -90,6 +91,7 @@ class ShowFunctionConfigResponse(SdkResponse):
         'func_vpc': 'func_vpc',
         'mount_config': 'mount_config',
         'depend_list': 'depend_list',
+        'depend_version_list': 'depend_version_list',
         'strategy_config': 'strategy_config',
         'dependencies': 'dependencies',
         'initializer_handler': 'initializer_handler',
@@ -105,7 +107,7 @@ class ShowFunctionConfigResponse(SdkResponse):
         'custom_image': 'custom_image'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc=None, mount_config=None, depend_list=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_dynamic_memory=None, is_stateful_function=None, enable_auth_in_header=None, custom_image=None):
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc=None, mount_config=None, depend_list=None, depend_version_list=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_dynamic_memory=None, is_stateful_function=None, enable_auth_in_header=None, custom_image=None):
         """ShowFunctionConfigResponse
 
         The model defined in huaweicloud sdk
@@ -164,6 +166,8 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type mount_config: :class:`huaweicloudsdkfunctiongraph.v2.MountConfig`
         :param depend_list: 依赖id列表
         :type depend_list: list[str]
+        :param depend_version_list: 依赖版本id列表
+        :type depend_version_list: list[str]
         :param strategy_config: 
         :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
         :param dependencies: 函数依赖代码包列表。
@@ -221,6 +225,7 @@ class ShowFunctionConfigResponse(SdkResponse):
         self._func_vpc = None
         self._mount_config = None
         self._depend_list = None
+        self._depend_version_list = None
         self._strategy_config = None
         self._dependencies = None
         self._initializer_handler = None
@@ -290,6 +295,8 @@ class ShowFunctionConfigResponse(SdkResponse):
             self.mount_config = mount_config
         if depend_list is not None:
             self.depend_list = depend_list
+        if depend_version_list is not None:
+            self.depend_version_list = depend_version_list
         if strategy_config is not None:
             self.strategy_config = strategy_config
         if dependencies is not None:
@@ -902,6 +909,28 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type depend_list: list[str]
         """
         self._depend_list = depend_list
+
+    @property
+    def depend_version_list(self):
+        """Gets the depend_version_list of this ShowFunctionConfigResponse.
+
+        依赖版本id列表
+
+        :return: The depend_version_list of this ShowFunctionConfigResponse.
+        :rtype: list[str]
+        """
+        return self._depend_version_list
+
+    @depend_version_list.setter
+    def depend_version_list(self, depend_version_list):
+        """Sets the depend_version_list of this ShowFunctionConfigResponse.
+
+        依赖版本id列表
+
+        :param depend_version_list: The depend_version_list of this ShowFunctionConfigResponse.
+        :type depend_version_list: list[str]
+        """
+        self._depend_version_list = depend_version_list
 
     @property
     def strategy_config(self):

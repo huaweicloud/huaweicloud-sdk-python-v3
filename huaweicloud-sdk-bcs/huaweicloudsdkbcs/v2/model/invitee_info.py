@@ -44,9 +44,9 @@ class InviteeInfo:
         :type invitee_id: str
         :param invitee_name: 被邀请租户名称
         :type invitee_name: int
-        :param invitee_bcs_name: 被邀请的BCS服务实例名称
+        :param invitee_bcs_name: 被邀请的服务实例名称
         :type invitee_bcs_name: str
-        :param invitee_bcs_id: 被邀请的BCS服务实例id
+        :param invitee_bcs_id: 被邀请的服务实例id
         :type invitee_bcs_id: str
         :param invitee_project_id: 被邀请的项目id
         :type invitee_project_id: str
@@ -120,7 +120,7 @@ class InviteeInfo:
     def invitee_bcs_name(self):
         """Gets the invitee_bcs_name of this InviteeInfo.
 
-        被邀请的BCS服务实例名称
+        被邀请的服务实例名称
 
         :return: The invitee_bcs_name of this InviteeInfo.
         :rtype: str
@@ -131,7 +131,7 @@ class InviteeInfo:
     def invitee_bcs_name(self, invitee_bcs_name):
         """Sets the invitee_bcs_name of this InviteeInfo.
 
-        被邀请的BCS服务实例名称
+        被邀请的服务实例名称
 
         :param invitee_bcs_name: The invitee_bcs_name of this InviteeInfo.
         :type invitee_bcs_name: str
@@ -142,7 +142,7 @@ class InviteeInfo:
     def invitee_bcs_id(self):
         """Gets the invitee_bcs_id of this InviteeInfo.
 
-        被邀请的BCS服务实例id
+        被邀请的服务实例id
 
         :return: The invitee_bcs_id of this InviteeInfo.
         :rtype: str
@@ -153,7 +153,7 @@ class InviteeInfo:
     def invitee_bcs_id(self, invitee_bcs_id):
         """Sets the invitee_bcs_id of this InviteeInfo.
 
-        被邀请的BCS服务实例id
+        被邀请的服务实例id
 
         :param invitee_bcs_id: The invitee_bcs_id of this InviteeInfo.
         :type invitee_bcs_id: str

@@ -34,7 +34,7 @@ class ListEntityMetricRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param type: 实体类型，[可选值如下 org     # 节点组织 plugin  # 插件](tag:online) 默认为org 
+        :param type: 实体类型，[可选值如下: org(节点组织), plugin(插件)] 默认为org 
         :type type: str
         :param entity_name: 具体实体的名称
         :type entity_name: str
@@ -54,7 +54,7 @@ class ListEntityMetricRequestBody:
     def type(self):
         """Gets the type of this ListEntityMetricRequestBody.
 
-        实体类型，[可选值如下 org     # 节点组织 plugin  # 插件](tag:online) 默认为org 
+        实体类型，[可选值如下: org(节点组织), plugin(插件)] 默认为org 
 
         :return: The type of this ListEntityMetricRequestBody.
         :rtype: str
@@ -65,7 +65,7 @@ class ListEntityMetricRequestBody:
     def type(self, type):
         """Sets the type of this ListEntityMetricRequestBody.
 
-        实体类型，[可选值如下 org     # 节点组织 plugin  # 插件](tag:online) 默认为org 
+        实体类型，[可选值如下: org(节点组织), plugin(插件)] 默认为org 
 
         :param type: The type of this ListEntityMetricRequestBody.
         :type type: str

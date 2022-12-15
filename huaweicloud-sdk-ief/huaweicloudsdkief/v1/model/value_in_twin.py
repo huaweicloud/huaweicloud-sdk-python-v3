@@ -38,7 +38,7 @@ class ValueInTwin:
 
         :param excepted: 
         :type excepted: :class:`huaweicloudsdkief.v1.Excepted`
-        :param optional: 动态属性的期望信息
+        :param optional: 动态属性的实际信息
         :type optional: bool
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkief.v1.Metadata`
@@ -51,7 +51,8 @@ class ValueInTwin:
         self._metadata = None
         self.discriminator = None
 
-        self.excepted = excepted
+        if excepted is not None:
+            self.excepted = excepted
         if optional is not None:
             self.optional = optional
         if metadata is not None:
@@ -79,7 +80,7 @@ class ValueInTwin:
     def optional(self):
         """Gets the optional of this ValueInTwin.
 
-        动态属性的期望信息
+        动态属性的实际信息
 
         :return: The optional of this ValueInTwin.
         :rtype: bool
@@ -90,7 +91,7 @@ class ValueInTwin:
     def optional(self, optional):
         """Sets the optional of this ValueInTwin.
 
-        动态属性的期望信息
+        动态属性的实际信息
 
         :param optional: The optional of this ValueInTwin.
         :type optional: bool

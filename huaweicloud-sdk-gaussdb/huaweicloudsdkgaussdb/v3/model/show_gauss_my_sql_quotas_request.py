@@ -40,7 +40,7 @@ class ShowGaussMySqlQuotasRequest:
 
         :param x_language: 语言
         :type x_language: str
-        :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。 取值范围：0 - 10000
+        :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。  取值范围：0 - 10000
         :type offset: str
         :param limit: 查询记录数。默认为10，不能为负数，最小值为1，最大值为100。
         :type limit: str
@@ -91,7 +91,7 @@ class ShowGaussMySqlQuotasRequest:
     def offset(self):
         """Gets the offset of this ShowGaussMySqlQuotasRequest.
 
-        索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。 取值范围：0 - 10000
+        索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。  取值范围：0 - 10000
 
         :return: The offset of this ShowGaussMySqlQuotasRequest.
         :rtype: str
@@ -102,7 +102,7 @@ class ShowGaussMySqlQuotasRequest:
     def offset(self, offset):
         """Sets the offset of this ShowGaussMySqlQuotasRequest.
 
-        索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。 取值范围：0 - 10000
+        索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。  取值范围：0 - 10000
 
         :param offset: The offset of this ShowGaussMySqlQuotasRequest.
         :type offset: str

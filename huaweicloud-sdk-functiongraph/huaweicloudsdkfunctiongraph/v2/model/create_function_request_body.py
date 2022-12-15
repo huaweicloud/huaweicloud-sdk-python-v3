@@ -25,6 +25,8 @@ class CreateFunctionRequestBody:
         'runtime': 'str',
         'timeout': 'int',
         'handler': 'str',
+        'depend_version_list': 'list[str]',
+        'func_vpc': 'FuncVpc',
         'memory_size': 'int',
         'code_type': 'str',
         'code_url': 'str',
@@ -46,6 +48,8 @@ class CreateFunctionRequestBody:
         'runtime': 'runtime',
         'timeout': 'timeout',
         'handler': 'handler',
+        'depend_version_list': 'depend_version_list',
+        'func_vpc': 'func_vpc',
         'memory_size': 'memory_size',
         'code_type': 'code_type',
         'code_url': 'code_url',
@@ -61,7 +65,7 @@ class CreateFunctionRequestBody:
         'type': 'type'
     }
 
-    def __init__(self, func_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, code_type=None, code_url=None, code_filename=None, user_data=None, xrole=None, app_xrole=None, description=None, func_code=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, type=None):
+    def __init__(self, func_name=None, package=None, runtime=None, timeout=None, handler=None, depend_version_list=None, func_vpc=None, memory_size=None, code_type=None, code_url=None, code_filename=None, user_data=None, xrole=None, app_xrole=None, description=None, func_code=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, type=None):
         """CreateFunctionRequestBody
 
         The model defined in huaweicloud sdk
@@ -76,6 +80,10 @@ class CreateFunctionRequestBody:
         :type timeout: int
         :param handler: 函数执行入口 规则：xx.xx，必须包含“. ” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
         :type handler: str
+        :param depend_version_list: 依赖版本id列表
+        :type depend_version_list: list[str]
+        :param func_vpc: 
+        :type func_vpc: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
         :param memory_size: 函数消耗的内存。 单位M。 取值范围为：128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096。 最小值为128，最大值为4096。
         :type memory_size: int
         :param code_type: 函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
@@ -111,6 +119,8 @@ class CreateFunctionRequestBody:
         self._runtime = None
         self._timeout = None
         self._handler = None
+        self._depend_version_list = None
+        self._func_vpc = None
         self._memory_size = None
         self._code_type = None
         self._code_url = None
@@ -131,6 +141,10 @@ class CreateFunctionRequestBody:
         self.runtime = runtime
         self.timeout = timeout
         self.handler = handler
+        if depend_version_list is not None:
+            self.depend_version_list = depend_version_list
+        if func_vpc is not None:
+            self.func_vpc = func_vpc
         self.memory_size = memory_size
         self.code_type = code_type
         if code_url is not None:
@@ -265,6 +279,46 @@ class CreateFunctionRequestBody:
         :type handler: str
         """
         self._handler = handler
+
+    @property
+    def depend_version_list(self):
+        """Gets the depend_version_list of this CreateFunctionRequestBody.
+
+        依赖版本id列表
+
+        :return: The depend_version_list of this CreateFunctionRequestBody.
+        :rtype: list[str]
+        """
+        return self._depend_version_list
+
+    @depend_version_list.setter
+    def depend_version_list(self, depend_version_list):
+        """Sets the depend_version_list of this CreateFunctionRequestBody.
+
+        依赖版本id列表
+
+        :param depend_version_list: The depend_version_list of this CreateFunctionRequestBody.
+        :type depend_version_list: list[str]
+        """
+        self._depend_version_list = depend_version_list
+
+    @property
+    def func_vpc(self):
+        """Gets the func_vpc of this CreateFunctionRequestBody.
+
+        :return: The func_vpc of this CreateFunctionRequestBody.
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
+        """
+        return self._func_vpc
+
+    @func_vpc.setter
+    def func_vpc(self, func_vpc):
+        """Sets the func_vpc of this CreateFunctionRequestBody.
+
+        :param func_vpc: The func_vpc of this CreateFunctionRequestBody.
+        :type func_vpc: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
+        """
+        self._func_vpc = func_vpc
 
     @property
     def memory_size(self):

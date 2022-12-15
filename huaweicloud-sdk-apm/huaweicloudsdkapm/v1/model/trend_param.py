@@ -66,18 +66,14 @@ class TrendParam:
         self._end_time = None
         self.discriminator = None
 
-        if view_config is not None:
-            self.view_config = view_config
+        self.view_config = view_config
         if instance_id is not None:
             self.instance_id = instance_id
         if monitor_item_id is not None:
             self.monitor_item_id = monitor_item_id
-        if env_id is not None:
-            self.env_id = env_id
-        if start_time is not None:
-            self.start_time = start_time
-        if end_time is not None:
-            self.end_time = end_time
+        self.env_id = env_id
+        self.start_time = start_time
+        self.end_time = end_time
 
     @property
     def view_config(self):

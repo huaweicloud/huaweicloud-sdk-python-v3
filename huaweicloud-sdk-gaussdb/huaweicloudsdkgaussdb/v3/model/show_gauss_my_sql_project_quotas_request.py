@@ -36,7 +36,7 @@ class ShowGaussMySqlProjectQuotasRequest:
 
         :param x_language: 语言
         :type x_language: str
-        :param type: &#39;功能说明：根据type过滤查询指定类型的配额&#39; 取值范围：instance
+        :param type: 功能说明：根据type过滤查询指定类型的配额。  取值范围：instance
         :type type: str
         """
         
@@ -77,7 +77,7 @@ class ShowGaussMySqlProjectQuotasRequest:
     def type(self):
         """Gets the type of this ShowGaussMySqlProjectQuotasRequest.
 
-        '功能说明：根据type过滤查询指定类型的配额' 取值范围：instance
+        功能说明：根据type过滤查询指定类型的配额。  取值范围：instance
 
         :return: The type of this ShowGaussMySqlProjectQuotasRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class ShowGaussMySqlProjectQuotasRequest:
     def type(self, type):
         """Sets the type of this ShowGaussMySqlProjectQuotasRequest.
 
-        '功能说明：根据type过滤查询指定类型的配额' 取值范围：instance
+        功能说明：根据type过滤查询指定类型的配额。  取值范围：instance
 
         :param type: The type of this ShowGaussMySqlProjectQuotasRequest.
         :type type: str

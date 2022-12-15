@@ -720,9 +720,9 @@ class ApmAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def search_agent_async(self, request):
-        """搜索业务下所有探针
+        """查询应用下所有探针
 
-        该接口用于搜索业务下所有探针情况。
+        该接口用于搜索应用下所有探针情况。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

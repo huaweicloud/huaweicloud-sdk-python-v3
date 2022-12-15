@@ -21,11 +21,11 @@ class ApiDebugInfo:
 
     openapi_types = {
         'body': 'str',
-        'header': 'dict(str, str)',
+        'header': 'dict(str, list[str])',
         'method': 'str',
         'mode': 'str',
         'path': 'str',
-        'query': 'dict(str, str)',
+        'query': 'dict(str, list[str])',
         'scheme': 'str',
         'app_key': 'str',
         'app_secret': 'str',
@@ -55,7 +55,7 @@ class ApiDebugInfo:
         :param body: 请求消息体，最长2097152字节
         :type body: str
         :param header: 头域参数，每个参数值为字符串数组，每个参数名称有如下约束： - 英文字母、数字、点、中连线组成 - 必须以英文字母开头，最长32字节 - 不支持以\&quot;X-Apig-\&quot;或\&quot;X-Sdk-\&quot;开头，不区分大小写 - 不支持取值为\&quot;X-Stage\&quot;，不区分大小写 - mode为MARKET或CONSUMER时，不支持取值为\&quot;X-Auth-Token\&quot;和\&quot;Authorization\&quot;，不区分大小写 &gt; 头域名称在使用前会被规范化，如：\&quot;x-MY-hEaDer\&quot;会被规范化为\&quot;X-My-Header\&quot;
-        :type header: dict(str, str)
+        :type header: dict(str, list[str])
         :param method: API的请求方法
         :type method: str
         :param mode: 调试模式 - DEVELOPER 调试尚未发布的API定义 - MARKET [调试云商店已购买的API](tag:hws)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk) - CONSUMER 调试指定运行环境下的API定义 &gt; DEVELOPER模式，接口调用者必须是API拥有者。    [MARKET模式，接口调用者必须是API购买者或拥有者。](tag:hws)    CONSUMER模式，接口调用者必须有API在指定环境上的授权信息或是API拥有者。
@@ -63,7 +63,7 @@ class ApiDebugInfo:
         :param path: API的请求路径，需以\&quot;/\&quot;开头，最大长度1024 &gt; 须符合路径规范，百分号编码格式可被正确解码
         :type path: str
         :param query: 查询参数，每个参数值为字符串数组，每个参数名称有如下约束： - 英文字母、数字、点、下划线、中连线组成 - 必须以英文字母开头，最长32字节 - 不支持以\&quot;X-Apig-\&quot;或\&quot;X-Sdk-\&quot;开头，不区分大小写 - 不支持取值为\&quot;X-Stage\&quot;，不区分大小写
-        :type query: dict(str, str)
+        :type query: dict(str, list[str])
         :param scheme: API的请求协议 - HTTP - HTTPS
         :type scheme: str
         :param app_key: 调试请求使用的APP的key
@@ -139,7 +139,7 @@ class ApiDebugInfo:
         头域参数，每个参数值为字符串数组，每个参数名称有如下约束： - 英文字母、数字、点、中连线组成 - 必须以英文字母开头，最长32字节 - 不支持以\"X-Apig-\"或\"X-Sdk-\"开头，不区分大小写 - 不支持取值为\"X-Stage\"，不区分大小写 - mode为MARKET或CONSUMER时，不支持取值为\"X-Auth-Token\"和\"Authorization\"，不区分大小写 > 头域名称在使用前会被规范化，如：\"x-MY-hEaDer\"会被规范化为\"X-My-Header\"
 
         :return: The header of this ApiDebugInfo.
-        :rtype: dict(str, str)
+        :rtype: dict(str, list[str])
         """
         return self._header
 
@@ -150,7 +150,7 @@ class ApiDebugInfo:
         头域参数，每个参数值为字符串数组，每个参数名称有如下约束： - 英文字母、数字、点、中连线组成 - 必须以英文字母开头，最长32字节 - 不支持以\"X-Apig-\"或\"X-Sdk-\"开头，不区分大小写 - 不支持取值为\"X-Stage\"，不区分大小写 - mode为MARKET或CONSUMER时，不支持取值为\"X-Auth-Token\"和\"Authorization\"，不区分大小写 > 头域名称在使用前会被规范化，如：\"x-MY-hEaDer\"会被规范化为\"X-My-Header\"
 
         :param header: The header of this ApiDebugInfo.
-        :type header: dict(str, str)
+        :type header: dict(str, list[str])
         """
         self._header = header
 
@@ -227,7 +227,7 @@ class ApiDebugInfo:
         查询参数，每个参数值为字符串数组，每个参数名称有如下约束： - 英文字母、数字、点、下划线、中连线组成 - 必须以英文字母开头，最长32字节 - 不支持以\"X-Apig-\"或\"X-Sdk-\"开头，不区分大小写 - 不支持取值为\"X-Stage\"，不区分大小写
 
         :return: The query of this ApiDebugInfo.
-        :rtype: dict(str, str)
+        :rtype: dict(str, list[str])
         """
         return self._query
 
@@ -238,7 +238,7 @@ class ApiDebugInfo:
         查询参数，每个参数值为字符串数组，每个参数名称有如下约束： - 英文字母、数字、点、下划线、中连线组成 - 必须以英文字母开头，最长32字节 - 不支持以\"X-Apig-\"或\"X-Sdk-\"开头，不区分大小写 - 不支持取值为\"X-Stage\"，不区分大小写
 
         :param query: The query of this ApiDebugInfo.
-        :type query: dict(str, str)
+        :type query: dict(str, list[str])
         """
         self._query = query
 

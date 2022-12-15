@@ -46,21 +46,21 @@ class QuitUnionFromMemberListRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param inviter_bcsid: 邀请方BCS服务实例ID。可调用“查询服务实例列表”接口获取对应的id
+        :param inviter_bcsid: 邀请方BCS服务实例ID。可调用“查询服务实例列表”接口获取对应的ID
         :type inviter_bcsid: str
-        :param inviter_projectid: 邀请方项目ID。控制台-&gt;邀请方账号-&gt;我的凭证-&gt;API凭证-&gt;项目列表，选择对应的项目ID
+        :param inviter_projectid: 邀请方项目ID。控制台-&gt;邀请方帐号-&gt;我的凭证-&gt;API凭证-&gt;项目列表，选择对应的项目ID
         :type inviter_projectid: str
-        :param inviter_domainid: 邀请方租户ID。控制台-&gt;邀请方账号-&gt;我的凭证-&gt;API凭证-&gt;账号ID
+        :param inviter_domainid: 邀请方租户ID。控制台-&gt;邀请方帐号-&gt;我的凭证-&gt;API凭证-&gt;帐号ID
         :type inviter_domainid: str
-        :param inviter_username: 邀请方租户名称。控制台-&gt;邀请方账号-&gt;我的凭证-&gt;API凭证-&gt;账号名
+        :param inviter_username: 邀请方租户名称。控制台-&gt;邀请方帐号-&gt;我的凭证-&gt;API凭证-&gt;帐号名
         :type inviter_username: str
         :param channel_name: 联盟通道名称。BCS管理面-&gt;成员管理-&gt;通道，选择对应的邀请的通道
         :type channel_name: str
         :param invitee_bcsid: 被邀请方BCS服务实例ID。可调用“查询服务实例列表”接口获取对应的id
         :type invitee_bcsid: str
-        :param invitee_projectid: 被邀请方项目ID。控制台-&gt;被邀请方账号-&gt;我的凭证-&gt;API凭证-&gt;项目列表，选择对应的项目ID
+        :param invitee_projectid: 被邀请方项目ID。控制台-&gt;被邀请方帐号-&gt;我的凭证-&gt;API凭证-&gt;项目列表，选择对应的项目ID
         :type invitee_projectid: str
-        :param invitee_domainid: 被邀请方租户ID。控制台-&gt;被邀请方账号-&gt;我的凭证-&gt;API凭证-&gt;账号ID
+        :param invitee_domainid: 被邀请方租户ID。控制台-&gt;被邀请方帐号-&gt;我的凭证-&gt;API凭证-&gt;帐号ID
         :type invitee_domainid: str
         """
         
@@ -89,7 +89,7 @@ class QuitUnionFromMemberListRequestBody:
     def inviter_bcsid(self):
         """Gets the inviter_bcsid of this QuitUnionFromMemberListRequestBody.
 
-        邀请方BCS服务实例ID。可调用“查询服务实例列表”接口获取对应的id
+        邀请方BCS服务实例ID。可调用“查询服务实例列表”接口获取对应的ID
 
         :return: The inviter_bcsid of this QuitUnionFromMemberListRequestBody.
         :rtype: str
@@ -100,7 +100,7 @@ class QuitUnionFromMemberListRequestBody:
     def inviter_bcsid(self, inviter_bcsid):
         """Sets the inviter_bcsid of this QuitUnionFromMemberListRequestBody.
 
-        邀请方BCS服务实例ID。可调用“查询服务实例列表”接口获取对应的id
+        邀请方BCS服务实例ID。可调用“查询服务实例列表”接口获取对应的ID
 
         :param inviter_bcsid: The inviter_bcsid of this QuitUnionFromMemberListRequestBody.
         :type inviter_bcsid: str
@@ -111,7 +111,7 @@ class QuitUnionFromMemberListRequestBody:
     def inviter_projectid(self):
         """Gets the inviter_projectid of this QuitUnionFromMemberListRequestBody.
 
-        邀请方项目ID。控制台->邀请方账号->我的凭证->API凭证->项目列表，选择对应的项目ID
+        邀请方项目ID。控制台->邀请方帐号->我的凭证->API凭证->项目列表，选择对应的项目ID
 
         :return: The inviter_projectid of this QuitUnionFromMemberListRequestBody.
         :rtype: str
@@ -122,7 +122,7 @@ class QuitUnionFromMemberListRequestBody:
     def inviter_projectid(self, inviter_projectid):
         """Sets the inviter_projectid of this QuitUnionFromMemberListRequestBody.
 
-        邀请方项目ID。控制台->邀请方账号->我的凭证->API凭证->项目列表，选择对应的项目ID
+        邀请方项目ID。控制台->邀请方帐号->我的凭证->API凭证->项目列表，选择对应的项目ID
 
         :param inviter_projectid: The inviter_projectid of this QuitUnionFromMemberListRequestBody.
         :type inviter_projectid: str
@@ -133,7 +133,7 @@ class QuitUnionFromMemberListRequestBody:
     def inviter_domainid(self):
         """Gets the inviter_domainid of this QuitUnionFromMemberListRequestBody.
 
-        邀请方租户ID。控制台->邀请方账号->我的凭证->API凭证->账号ID
+        邀请方租户ID。控制台->邀请方帐号->我的凭证->API凭证->帐号ID
 
         :return: The inviter_domainid of this QuitUnionFromMemberListRequestBody.
         :rtype: str
@@ -144,7 +144,7 @@ class QuitUnionFromMemberListRequestBody:
     def inviter_domainid(self, inviter_domainid):
         """Sets the inviter_domainid of this QuitUnionFromMemberListRequestBody.
 
-        邀请方租户ID。控制台->邀请方账号->我的凭证->API凭证->账号ID
+        邀请方租户ID。控制台->邀请方帐号->我的凭证->API凭证->帐号ID
 
         :param inviter_domainid: The inviter_domainid of this QuitUnionFromMemberListRequestBody.
         :type inviter_domainid: str
@@ -155,7 +155,7 @@ class QuitUnionFromMemberListRequestBody:
     def inviter_username(self):
         """Gets the inviter_username of this QuitUnionFromMemberListRequestBody.
 
-        邀请方租户名称。控制台->邀请方账号->我的凭证->API凭证->账号名
+        邀请方租户名称。控制台->邀请方帐号->我的凭证->API凭证->帐号名
 
         :return: The inviter_username of this QuitUnionFromMemberListRequestBody.
         :rtype: str
@@ -166,7 +166,7 @@ class QuitUnionFromMemberListRequestBody:
     def inviter_username(self, inviter_username):
         """Sets the inviter_username of this QuitUnionFromMemberListRequestBody.
 
-        邀请方租户名称。控制台->邀请方账号->我的凭证->API凭证->账号名
+        邀请方租户名称。控制台->邀请方帐号->我的凭证->API凭证->帐号名
 
         :param inviter_username: The inviter_username of this QuitUnionFromMemberListRequestBody.
         :type inviter_username: str
@@ -221,7 +221,7 @@ class QuitUnionFromMemberListRequestBody:
     def invitee_projectid(self):
         """Gets the invitee_projectid of this QuitUnionFromMemberListRequestBody.
 
-        被邀请方项目ID。控制台->被邀请方账号->我的凭证->API凭证->项目列表，选择对应的项目ID
+        被邀请方项目ID。控制台->被邀请方帐号->我的凭证->API凭证->项目列表，选择对应的项目ID
 
         :return: The invitee_projectid of this QuitUnionFromMemberListRequestBody.
         :rtype: str
@@ -232,7 +232,7 @@ class QuitUnionFromMemberListRequestBody:
     def invitee_projectid(self, invitee_projectid):
         """Sets the invitee_projectid of this QuitUnionFromMemberListRequestBody.
 
-        被邀请方项目ID。控制台->被邀请方账号->我的凭证->API凭证->项目列表，选择对应的项目ID
+        被邀请方项目ID。控制台->被邀请方帐号->我的凭证->API凭证->项目列表，选择对应的项目ID
 
         :param invitee_projectid: The invitee_projectid of this QuitUnionFromMemberListRequestBody.
         :type invitee_projectid: str
@@ -243,7 +243,7 @@ class QuitUnionFromMemberListRequestBody:
     def invitee_domainid(self):
         """Gets the invitee_domainid of this QuitUnionFromMemberListRequestBody.
 
-        被邀请方租户ID。控制台->被邀请方账号->我的凭证->API凭证->账号ID
+        被邀请方租户ID。控制台->被邀请方帐号->我的凭证->API凭证->帐号ID
 
         :return: The invitee_domainid of this QuitUnionFromMemberListRequestBody.
         :rtype: str
@@ -254,7 +254,7 @@ class QuitUnionFromMemberListRequestBody:
     def invitee_domainid(self, invitee_domainid):
         """Sets the invitee_domainid of this QuitUnionFromMemberListRequestBody.
 
-        被邀请方租户ID。控制台->被邀请方账号->我的凭证->API凭证->账号ID
+        被邀请方租户ID。控制台->被邀请方帐号->我的凭证->API凭证->帐号ID
 
         :param invitee_domainid: The invitee_domainid of this QuitUnionFromMemberListRequestBody.
         :type invitee_domainid: str

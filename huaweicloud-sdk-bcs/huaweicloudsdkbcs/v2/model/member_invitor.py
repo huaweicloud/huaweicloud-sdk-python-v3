@@ -40,7 +40,7 @@ class MemberInvitor:
 
         The model defined in huaweicloud sdk
 
-        :param invitor_bcs_id: 邀请方BCS服务实例id
+        :param invitor_bcs_id: 邀请方BCS服务实例ID
         :type invitor_bcs_id: str
         :param invitor_bcs_name: 邀请方BCS服务实例名称
         :type invitor_bcs_name: str
@@ -76,7 +76,7 @@ class MemberInvitor:
     def invitor_bcs_id(self):
         """Gets the invitor_bcs_id of this MemberInvitor.
 
-        邀请方BCS服务实例id
+        邀请方BCS服务实例ID
 
         :return: The invitor_bcs_id of this MemberInvitor.
         :rtype: str
@@ -87,7 +87,7 @@ class MemberInvitor:
     def invitor_bcs_id(self, invitor_bcs_id):
         """Sets the invitor_bcs_id of this MemberInvitor.
 
-        邀请方BCS服务实例id
+        邀请方BCS服务实例ID
 
         :param invitor_bcs_id: The invitor_bcs_id of this MemberInvitor.
         :type invitor_bcs_id: str

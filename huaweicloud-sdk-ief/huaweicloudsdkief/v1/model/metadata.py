@@ -41,7 +41,8 @@ class Metadata:
         self._type = None
         self.discriminator = None
 
-        self.type = type
+        if type is not None:
+            self.type = type
 
     @property
     def type(self):

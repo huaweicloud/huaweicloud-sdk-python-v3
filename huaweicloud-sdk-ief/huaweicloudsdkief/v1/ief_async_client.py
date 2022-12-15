@@ -1083,7 +1083,7 @@ class IefAsyncClient(Client):
         return self.create_rule_with_http_info(request)
 
     def create_rule_with_http_info(self, request):
-        all_params = ['ief_instance_id', 'create_rule']
+        all_params = ['create_rule', 'ief_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -5145,7 +5145,7 @@ class IefAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_edge_group_cert_detail_async(self, request):
-        """查询边缘节点组证书列表
+        """查询边缘节点组证书详情
 
         查询边缘节点组证书详情
         

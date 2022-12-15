@@ -44,7 +44,7 @@ class OpenMysqlProxyRequestBody:
         :type flavor_ref: str
         :param node_num: 代理实例节点数，取值整数2-32。
         :type node_num: int
-        :param proxy_name: 代理实例名称。 用于表示实例的名称，同一租户下，同类型的实例名可重名。取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
+        :param proxy_name: 代理实例名称。用于表示实例的名称，同一租户下，同类型的实例名可重名。  取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
         :type proxy_name: str
         :param proxy_mode: 代理实例类型。默认类型为readwrite。
         :type proxy_mode: str
@@ -118,7 +118,7 @@ class OpenMysqlProxyRequestBody:
     def proxy_name(self):
         """Gets the proxy_name of this OpenMysqlProxyRequestBody.
 
-        代理实例名称。 用于表示实例的名称，同一租户下，同类型的实例名可重名。取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
+        代理实例名称。用于表示实例的名称，同一租户下，同类型的实例名可重名。  取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
 
         :return: The proxy_name of this OpenMysqlProxyRequestBody.
         :rtype: str
@@ -129,7 +129,7 @@ class OpenMysqlProxyRequestBody:
     def proxy_name(self, proxy_name):
         """Sets the proxy_name of this OpenMysqlProxyRequestBody.
 
-        代理实例名称。 用于表示实例的名称，同一租户下，同类型的实例名可重名。取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
+        代理实例名称。用于表示实例的名称，同一租户下，同类型的实例名可重名。  取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
 
         :param proxy_name: The proxy_name of this OpenMysqlProxyRequestBody.
         :type proxy_name: str

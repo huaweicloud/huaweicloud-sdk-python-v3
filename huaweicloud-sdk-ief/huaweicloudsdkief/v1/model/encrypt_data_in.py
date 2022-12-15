@@ -36,7 +36,7 @@ class EncryptDataIn:
 
         The model defined in huaweicloud sdk
 
-        :param name: 加密数据名称
+        :param name: 加密数据名称，小写英文字母、数字、中划线，以小写字母或数字开头，最大长度为64个字符，不能为空
         :type name: str
         :param description: 加密数据描述
         :type description: str
@@ -52,14 +52,15 @@ class EncryptDataIn:
         self.discriminator = None
 
         self.name = name
-        self.description = description
+        if description is not None:
+            self.description = description
         self.config = config
 
     @property
     def name(self):
         """Gets the name of this EncryptDataIn.
 
-        加密数据名称
+        加密数据名称，小写英文字母、数字、中划线，以小写字母或数字开头，最大长度为64个字符，不能为空
 
         :return: The name of this EncryptDataIn.
         :rtype: str
@@ -70,7 +71,7 @@ class EncryptDataIn:
     def name(self, name):
         """Sets the name of this EncryptDataIn.
 
-        加密数据名称
+        加密数据名称，小写英文字母、数字、中划线，以小写字母或数字开头，最大长度为64个字符，不能为空
 
         :param name: The name of this EncryptDataIn.
         :type name: str

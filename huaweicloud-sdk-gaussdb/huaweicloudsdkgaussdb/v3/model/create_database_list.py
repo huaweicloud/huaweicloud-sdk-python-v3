@@ -36,7 +36,7 @@ class CreateDatabaseList:
 
         :param name: 数据库名称。
         :type name: str
-        :param readonly: 是否为只读权限：true表示只读,false表示可读写。
+        :param readonly: 是否为只读权限： - true，表示只读。 - false，表示可读写。
         :type readonly: bool
         """
         
@@ -75,7 +75,7 @@ class CreateDatabaseList:
     def readonly(self):
         """Gets the readonly of this CreateDatabaseList.
 
-        是否为只读权限：true表示只读,false表示可读写。
+        是否为只读权限： - true，表示只读。 - false，表示可读写。
 
         :return: The readonly of this CreateDatabaseList.
         :rtype: bool
@@ -86,7 +86,7 @@ class CreateDatabaseList:
     def readonly(self, readonly):
         """Sets the readonly of this CreateDatabaseList.
 
-        是否为只读权限：true表示只读,false表示可读写。
+        是否为只读权限： - true，表示只读。 - false，表示可读写。
 
         :param readonly: The readonly of this CreateDatabaseList.
         :type readonly: bool

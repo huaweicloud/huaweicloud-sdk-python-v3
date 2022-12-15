@@ -33,7 +33,7 @@ class ShowBatchJobResponse(SdkResponse):
         'task_data': 'str',
         'tasks': 'list[Task]',
         'targets': 'list[Target]',
-        'updated_at': 'int'
+        'status_last_updated_at': 'int'
     }
 
     attribute_map = {
@@ -50,10 +50,10 @@ class ShowBatchJobResponse(SdkResponse):
         'task_data': 'task_data',
         'tasks': 'tasks',
         'targets': 'targets',
-        'updated_at': 'updated_at'
+        'status_last_updated_at': 'status_last_updated_at'
     }
 
-    def __init__(self, job_id=None, job_name=None, job_type=None, description=None, created_at=None, status=None, task_total_count=None, task_failed_count=None, task_success_count=None, target_type=None, task_data=None, tasks=None, targets=None, updated_at=None):
+    def __init__(self, job_id=None, job_name=None, job_type=None, description=None, created_at=None, status=None, task_total_count=None, task_failed_count=None, task_success_count=None, target_type=None, task_data=None, tasks=None, targets=None, status_last_updated_at=None):
         """ShowBatchJobResponse
 
         The model defined in huaweicloud sdk
@@ -84,8 +84,8 @@ class ShowBatchJobResponse(SdkResponse):
         :type tasks: list[:class:`huaweicloudsdkief.v1.Task`]
         :param targets: 批量处理对象详情
         :type targets: list[:class:`huaweicloudsdkief.v1.Target`]
-        :param updated_at: 状态更新时间戳
-        :type updated_at: int
+        :param status_last_updated_at: 状态更新时间戳
+        :type status_last_updated_at: int
         """
         
         super(ShowBatchJobResponse, self).__init__()
@@ -103,7 +103,7 @@ class ShowBatchJobResponse(SdkResponse):
         self._task_data = None
         self._tasks = None
         self._targets = None
-        self._updated_at = None
+        self._status_last_updated_at = None
         self.discriminator = None
 
         if job_id is not None:
@@ -132,8 +132,8 @@ class ShowBatchJobResponse(SdkResponse):
             self.tasks = tasks
         if targets is not None:
             self.targets = targets
-        if updated_at is not None:
-            self.updated_at = updated_at
+        if status_last_updated_at is not None:
+            self.status_last_updated_at = status_last_updated_at
 
     @property
     def job_id(self):
@@ -422,26 +422,26 @@ class ShowBatchJobResponse(SdkResponse):
         self._targets = targets
 
     @property
-    def updated_at(self):
-        """Gets the updated_at of this ShowBatchJobResponse.
+    def status_last_updated_at(self):
+        """Gets the status_last_updated_at of this ShowBatchJobResponse.
 
         状态更新时间戳
 
-        :return: The updated_at of this ShowBatchJobResponse.
+        :return: The status_last_updated_at of this ShowBatchJobResponse.
         :rtype: int
         """
-        return self._updated_at
+        return self._status_last_updated_at
 
-    @updated_at.setter
-    def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowBatchJobResponse.
+    @status_last_updated_at.setter
+    def status_last_updated_at(self, status_last_updated_at):
+        """Sets the status_last_updated_at of this ShowBatchJobResponse.
 
         状态更新时间戳
 
-        :param updated_at: The updated_at of this ShowBatchJobResponse.
-        :type updated_at: int
+        :param status_last_updated_at: The status_last_updated_at of this ShowBatchJobResponse.
+        :type status_last_updated_at: int
         """
-        self._updated_at = updated_at
+        self._status_last_updated_at = status_last_updated_at
 
     def to_dict(self):
         """Returns the model properties as a dict"""

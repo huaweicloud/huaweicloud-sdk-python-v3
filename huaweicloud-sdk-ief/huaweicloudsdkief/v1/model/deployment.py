@@ -44,7 +44,7 @@ class Deployment:
 
         The model defined in huaweicloud sdk
 
-        :param name: 部署名称
+        :param name: 部署名称，只允许英文小写字母、数字、中划线，最大长度32，英文小写字母或数字开头和结尾
         :type name: str
         :param description: 部署描述
         :type description: str
@@ -87,7 +87,7 @@ class Deployment:
     def name(self):
         """Gets the name of this Deployment.
 
-        部署名称
+        部署名称，只允许英文小写字母、数字、中划线，最大长度32，英文小写字母或数字开头和结尾
 
         :return: The name of this Deployment.
         :rtype: str
@@ -98,7 +98,7 @@ class Deployment:
     def name(self, name):
         """Sets the name of this Deployment.
 
-        部署名称
+        部署名称，只允许英文小写字母、数字、中划线，最大长度32，英文小写字母或数字开头和结尾
 
         :param name: The name of this Deployment.
         :type name: str

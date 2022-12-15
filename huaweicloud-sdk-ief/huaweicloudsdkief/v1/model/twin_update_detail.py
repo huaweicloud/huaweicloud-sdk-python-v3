@@ -46,8 +46,10 @@ class TwinUpdateDetail:
         self._property_visitors = None
         self.discriminator = None
 
-        self.twin = twin
-        self.property_visitors = property_visitors
+        if twin is not None:
+            self.twin = twin
+        if property_visitors is not None:
+            self.property_visitors = property_visitors
 
     @property
     def twin(self):

@@ -36,7 +36,7 @@ class BatchTagActionAddRequestBody:
 
         :param action: 操作标识（区分大小写）：创建时为“create”。
         :type action: str
-        :param tags: 标签列表。单个实例总标签数上限10个。
+        :param tags: 标签列表。单个实例总标签数上限20个。
         :type tags: list[:class:`huaweicloudsdkrds.v3.TagWithKeyValue`]
         """
         
@@ -75,7 +75,7 @@ class BatchTagActionAddRequestBody:
     def tags(self):
         """Gets the tags of this BatchTagActionAddRequestBody.
 
-        标签列表。单个实例总标签数上限10个。
+        标签列表。单个实例总标签数上限20个。
 
         :return: The tags of this BatchTagActionAddRequestBody.
         :rtype: list[:class:`huaweicloudsdkrds.v3.TagWithKeyValue`]
@@ -86,7 +86,7 @@ class BatchTagActionAddRequestBody:
     def tags(self, tags):
         """Sets the tags of this BatchTagActionAddRequestBody.
 
-        标签列表。单个实例总标签数上限10个。
+        标签列表。单个实例总标签数上限20个。
 
         :param tags: The tags of this BatchTagActionAddRequestBody.
         :type tags: list[:class:`huaweicloudsdkrds.v3.TagWithKeyValue`]

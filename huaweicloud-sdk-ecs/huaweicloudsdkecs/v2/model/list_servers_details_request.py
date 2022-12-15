@@ -30,7 +30,8 @@ class ListServersDetailsRequest:
         'reservation_id': 'str',
         'status': 'str',
         'tags': 'str',
-        'ip_eq': 'str'
+        'ip_eq': 'str',
+        'server_id': 'str'
     }
 
     attribute_map = {
@@ -44,10 +45,11 @@ class ListServersDetailsRequest:
         'reservation_id': 'reservation_id',
         'status': 'status',
         'tags': 'tags',
-        'ip_eq': 'ip_eq'
+        'ip_eq': 'ip_eq',
+        'server_id': 'server_id'
     }
 
-    def __init__(self, enterprise_project_id=None, flavor=None, ip=None, limit=None, name=None, not_tags=None, offset=None, reservation_id=None, status=None, tags=None, ip_eq=None):
+    def __init__(self, enterprise_project_id=None, flavor=None, ip=None, limit=None, name=None, not_tags=None, offset=None, reservation_id=None, status=None, tags=None, ip_eq=None, server_id=None):
         """ListServersDetailsRequest
 
         The model defined in huaweicloud sdk
@@ -74,6 +76,8 @@ class ListServersDetailsRequest:
         :type tags: str
         :param ip_eq: IPv4地址过滤结果，匹配规则为精确匹配。
         :type ip_eq: str
+        :param server_id: 云服务器ID，格式为UUID，匹配规则为精确匹配  示例: server_id&#x3D;{id1}&amp;server_id&#x3D;{id2}
+        :type server_id: str
         """
         
         
@@ -89,6 +93,7 @@ class ListServersDetailsRequest:
         self._status = None
         self._tags = None
         self._ip_eq = None
+        self._server_id = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -113,6 +118,8 @@ class ListServersDetailsRequest:
             self.tags = tags
         if ip_eq is not None:
             self.ip_eq = ip_eq
+        if server_id is not None:
+            self.server_id = server_id
 
     @property
     def enterprise_project_id(self):
@@ -355,6 +362,28 @@ class ListServersDetailsRequest:
         :type ip_eq: str
         """
         self._ip_eq = ip_eq
+
+    @property
+    def server_id(self):
+        """Gets the server_id of this ListServersDetailsRequest.
+
+        云服务器ID，格式为UUID，匹配规则为精确匹配  示例: server_id={id1}&server_id={id2}
+
+        :return: The server_id of this ListServersDetailsRequest.
+        :rtype: str
+        """
+        return self._server_id
+
+    @server_id.setter
+    def server_id(self, server_id):
+        """Sets the server_id of this ListServersDetailsRequest.
+
+        云服务器ID，格式为UUID，匹配规则为精确匹配  示例: server_id={id1}&server_id={id2}
+
+        :param server_id: The server_id of this ListServersDetailsRequest.
+        :type server_id: str
+        """
+        self._server_id = server_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

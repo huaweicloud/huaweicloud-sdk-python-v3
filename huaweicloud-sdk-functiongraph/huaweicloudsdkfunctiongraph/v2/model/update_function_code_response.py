@@ -32,6 +32,7 @@ class UpdateFunctionCodeResponse(SdkResponse):
         'last_modified': 'datetime',
         'func_code': 'FuncCode',
         'depend_list': 'list[str]',
+        'depend_version_list': 'list[str]',
         'strategy_config': 'StrategyConfig',
         'dependencies': 'list[Dependency]'
     }
@@ -49,11 +50,12 @@ class UpdateFunctionCodeResponse(SdkResponse):
         'last_modified': 'last_modified',
         'func_code': 'func_code',
         'depend_list': 'depend_list',
+        'depend_version_list': 'depend_version_list',
         'strategy_config': 'strategy_config',
         'dependencies': 'dependencies'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, runtime=None, code_type=None, code_url=None, code_filename=None, code_size=None, digest=None, last_modified=None, func_code=None, depend_list=None, strategy_config=None, dependencies=None):
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, runtime=None, code_type=None, code_url=None, code_filename=None, code_size=None, digest=None, last_modified=None, func_code=None, depend_list=None, depend_version_list=None, strategy_config=None, dependencies=None):
         """UpdateFunctionCodeResponse
 
         The model defined in huaweicloud sdk
@@ -82,6 +84,8 @@ class UpdateFunctionCodeResponse(SdkResponse):
         :type func_code: :class:`huaweicloudsdkfunctiongraph.v2.FuncCode`
         :param depend_list: 依赖id列表
         :type depend_list: list[str]
+        :param depend_version_list: 依赖版本id列表
+        :type depend_version_list: list[str]
         :param strategy_config: 
         :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
         :param dependencies: 函数依赖代码包列表。
@@ -102,6 +106,7 @@ class UpdateFunctionCodeResponse(SdkResponse):
         self._last_modified = None
         self._func_code = None
         self._depend_list = None
+        self._depend_version_list = None
         self._strategy_config = None
         self._dependencies = None
         self.discriminator = None
@@ -130,6 +135,8 @@ class UpdateFunctionCodeResponse(SdkResponse):
             self.func_code = func_code
         if depend_list is not None:
             self.depend_list = depend_list
+        if depend_version_list is not None:
+            self.depend_version_list = depend_version_list
         if strategy_config is not None:
             self.strategy_config = strategy_config
         if dependencies is not None:
@@ -394,6 +401,28 @@ class UpdateFunctionCodeResponse(SdkResponse):
         :type depend_list: list[str]
         """
         self._depend_list = depend_list
+
+    @property
+    def depend_version_list(self):
+        """Gets the depend_version_list of this UpdateFunctionCodeResponse.
+
+        依赖版本id列表
+
+        :return: The depend_version_list of this UpdateFunctionCodeResponse.
+        :rtype: list[str]
+        """
+        return self._depend_version_list
+
+    @depend_version_list.setter
+    def depend_version_list(self, depend_version_list):
+        """Sets the depend_version_list of this UpdateFunctionCodeResponse.
+
+        依赖版本id列表
+
+        :param depend_version_list: The depend_version_list of this UpdateFunctionCodeResponse.
+        :type depend_version_list: list[str]
+        """
+        self._depend_version_list = depend_version_list
 
     @property
     def strategy_config(self):

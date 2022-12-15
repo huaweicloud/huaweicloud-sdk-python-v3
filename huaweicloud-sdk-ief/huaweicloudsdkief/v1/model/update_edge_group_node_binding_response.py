@@ -30,7 +30,7 @@ class UpdateEdgeGroupNodeBindingResponse(SdkResponse):
         'cpu': 'int',
         'memory': 'int',
         'gpu_num': 'int',
-        'nodes': 'list[EdgeNode]',
+        'nodes': 'list[EdgeNodeResp]',
         'deployments': 'list[GroupDeployment]',
         'attributes': 'list[Attributes]',
         'tags': 'list[Attributes]',
@@ -68,7 +68,7 @@ class UpdateEdgeGroupNodeBindingResponse(SdkResponse):
 
         :param id: 边缘节点组ID
         :type id: str
-        :param name: 边缘节点组名称
+        :param name: 边缘节点组名称，小写英文字母、数字、中划线，以小写字母或数字开头，最大长度为32个字符，不能为空
         :type name: str
         :param description: 描述
         :type description: str
@@ -87,7 +87,7 @@ class UpdateEdgeGroupNodeBindingResponse(SdkResponse):
         :param gpu_num: 边缘节点组GPU总数，为边缘节点组所绑定的边缘节点的GPU数目之和
         :type gpu_num: int
         :param nodes: 绑定的边缘节点详情
-        :type nodes: list[:class:`huaweicloudsdkief.v1.EdgeNode`]
+        :type nodes: list[:class:`huaweicloudsdkief.v1.EdgeNodeResp`]
         :param deployments: 绑定的边缘应用详情
         :type deployments: list[:class:`huaweicloudsdkief.v1.GroupDeployment`]
         :param attributes: 属性
@@ -189,7 +189,7 @@ class UpdateEdgeGroupNodeBindingResponse(SdkResponse):
     def name(self):
         """Gets the name of this UpdateEdgeGroupNodeBindingResponse.
 
-        边缘节点组名称
+        边缘节点组名称，小写英文字母、数字、中划线，以小写字母或数字开头，最大长度为32个字符，不能为空
 
         :return: The name of this UpdateEdgeGroupNodeBindingResponse.
         :rtype: str
@@ -200,7 +200,7 @@ class UpdateEdgeGroupNodeBindingResponse(SdkResponse):
     def name(self, name):
         """Sets the name of this UpdateEdgeGroupNodeBindingResponse.
 
-        边缘节点组名称
+        边缘节点组名称，小写英文字母、数字、中划线，以小写字母或数字开头，最大长度为32个字符，不能为空
 
         :param name: The name of this UpdateEdgeGroupNodeBindingResponse.
         :type name: str
@@ -390,7 +390,7 @@ class UpdateEdgeGroupNodeBindingResponse(SdkResponse):
         绑定的边缘节点详情
 
         :return: The nodes of this UpdateEdgeGroupNodeBindingResponse.
-        :rtype: list[:class:`huaweicloudsdkief.v1.EdgeNode`]
+        :rtype: list[:class:`huaweicloudsdkief.v1.EdgeNodeResp`]
         """
         return self._nodes
 
@@ -401,7 +401,7 @@ class UpdateEdgeGroupNodeBindingResponse(SdkResponse):
         绑定的边缘节点详情
 
         :param nodes: The nodes of this UpdateEdgeGroupNodeBindingResponse.
-        :type nodes: list[:class:`huaweicloudsdkief.v1.EdgeNode`]
+        :type nodes: list[:class:`huaweicloudsdkief.v1.EdgeNodeResp`]
         """
         self._nodes = nodes
 

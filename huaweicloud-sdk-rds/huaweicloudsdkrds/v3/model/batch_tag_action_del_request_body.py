@@ -36,7 +36,7 @@ class BatchTagActionDelRequestBody:
 
         :param action: 操作标识（区分大小写）：删除时为“delete”。
         :type action: str
-        :param tags: 标签列表。单个实例总标签数上限10个。
+        :param tags: 标签列表。单个实例总标签数上限20个。
         :type tags: list[:class:`huaweicloudsdkrds.v3.TagDelWithKeyValue`]
         """
         
@@ -75,7 +75,7 @@ class BatchTagActionDelRequestBody:
     def tags(self):
         """Gets the tags of this BatchTagActionDelRequestBody.
 
-        标签列表。单个实例总标签数上限10个。
+        标签列表。单个实例总标签数上限20个。
 
         :return: The tags of this BatchTagActionDelRequestBody.
         :rtype: list[:class:`huaweicloudsdkrds.v3.TagDelWithKeyValue`]
@@ -86,7 +86,7 @@ class BatchTagActionDelRequestBody:
     def tags(self, tags):
         """Sets the tags of this BatchTagActionDelRequestBody.
 
-        标签列表。单个实例总标签数上限10个。
+        标签列表。单个实例总标签数上限20个。
 
         :param tags: The tags of this BatchTagActionDelRequestBody.
         :type tags: list[:class:`huaweicloudsdkrds.v3.TagDelWithKeyValue`]

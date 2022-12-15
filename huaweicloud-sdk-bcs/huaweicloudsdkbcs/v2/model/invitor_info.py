@@ -58,9 +58,9 @@ class InvitorInfo:
         :type invitor_id: str
         :param invitor_name: 邀请方用户名
         :type invitor_name: str
-        :param invitor_bcs_id: 邀请方的BCS服务实例id
+        :param invitor_bcs_id: 邀请方的服务实例id
         :type invitor_bcs_id: str
-        :param invitor_bcs_name: 邀请方的BCS服务实例名
+        :param invitor_bcs_name: 邀请方的服务实例名
         :type invitor_bcs_name: str
         :param invitor_consensus: 邀请方的共识
         :type invitor_consensus: str
@@ -74,9 +74,9 @@ class InvitorInfo:
         :type invitor_signature_algorithm: str
         :param invitor_fabric_version: 邀请方的fabric版本
         :type invitor_fabric_version: str
-        :param order_fade_enabled: 是否允许order老化
+        :param order_fade_enabled: 是否允许共识节点老化
         :type order_fade_enabled: bool
-        :param order_fade_cache: order老化阈值
+        :param order_fade_cache: 共识节点的老化阈值
         :type order_fade_cache: int
         """
         
@@ -169,7 +169,7 @@ class InvitorInfo:
     def invitor_bcs_id(self):
         """Gets the invitor_bcs_id of this InvitorInfo.
 
-        邀请方的BCS服务实例id
+        邀请方的服务实例id
 
         :return: The invitor_bcs_id of this InvitorInfo.
         :rtype: str
@@ -180,7 +180,7 @@ class InvitorInfo:
     def invitor_bcs_id(self, invitor_bcs_id):
         """Sets the invitor_bcs_id of this InvitorInfo.
 
-        邀请方的BCS服务实例id
+        邀请方的服务实例id
 
         :param invitor_bcs_id: The invitor_bcs_id of this InvitorInfo.
         :type invitor_bcs_id: str
@@ -191,7 +191,7 @@ class InvitorInfo:
     def invitor_bcs_name(self):
         """Gets the invitor_bcs_name of this InvitorInfo.
 
-        邀请方的BCS服务实例名
+        邀请方的服务实例名
 
         :return: The invitor_bcs_name of this InvitorInfo.
         :rtype: str
@@ -202,7 +202,7 @@ class InvitorInfo:
     def invitor_bcs_name(self, invitor_bcs_name):
         """Sets the invitor_bcs_name of this InvitorInfo.
 
-        邀请方的BCS服务实例名
+        邀请方的服务实例名
 
         :param invitor_bcs_name: The invitor_bcs_name of this InvitorInfo.
         :type invitor_bcs_name: str
@@ -345,7 +345,7 @@ class InvitorInfo:
     def order_fade_enabled(self):
         """Gets the order_fade_enabled of this InvitorInfo.
 
-        是否允许order老化
+        是否允许共识节点老化
 
         :return: The order_fade_enabled of this InvitorInfo.
         :rtype: bool
@@ -356,7 +356,7 @@ class InvitorInfo:
     def order_fade_enabled(self, order_fade_enabled):
         """Sets the order_fade_enabled of this InvitorInfo.
 
-        是否允许order老化
+        是否允许共识节点老化
 
         :param order_fade_enabled: The order_fade_enabled of this InvitorInfo.
         :type order_fade_enabled: bool
@@ -367,7 +367,7 @@ class InvitorInfo:
     def order_fade_cache(self):
         """Gets the order_fade_cache of this InvitorInfo.
 
-        order老化阈值
+        共识节点的老化阈值
 
         :return: The order_fade_cache of this InvitorInfo.
         :rtype: int
@@ -378,7 +378,7 @@ class InvitorInfo:
     def order_fade_cache(self, order_fade_cache):
         """Sets the order_fade_cache of this InvitorInfo.
 
-        order老化阈值
+        共识节点的老化阈值
 
         :param order_fade_cache: The order_fade_cache of this InvitorInfo.
         :type order_fade_cache: int

@@ -38,13 +38,13 @@ class MysqlBackupPolicy:
 
         The model defined in huaweicloud sdk
 
-        :param start_time: 备份时间段。自动备份将在该时间段内触发。取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。HH取值必须比hh大1。mm和MM取值必须相同，且取值必须为00。取值示例：21:00-22:00
+        :param start_time: 备份时间段。自动备份将在该时间段内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。HH取值必须比hh大1。mm和MM取值必须相同，且取值必须为00。  取值示例：21:00-22:00
         :type start_time: str
         :param keep_days: 备份文件的保留天数。
         :type keep_days: int
-        :param period: 备份周期配置。自动备份将在每星期指定的天进行。取值范围：格式为逗号隔开的数字，数字代表星期。取值示例：1,2,3,4则表示备份周期配置为星期一、星期二、星期三和星期四。
+        :param period: 备份周期配置。自动备份将在每星期指定的天进行。  取值范围：格式为逗号隔开的数字，数字代表星期。  取值示例：1,2,3,4则表示备份周期配置为星期一、星期二、星期三和星期四。
         :type period: str
-        :param retention_num_backup_level1: 1级备份保留数量，默认值为0。当一级备份开关开启时，该参数值有效。取值：0或1
+        :param retention_num_backup_level1: 一级备份保留数量，默认值为0。当一级备份开关开启时，该参数值有效。取值：0或1
         :type retention_num_backup_level1: int
         """
         
@@ -66,7 +66,7 @@ class MysqlBackupPolicy:
     def start_time(self):
         """Gets the start_time of this MysqlBackupPolicy.
 
-        备份时间段。自动备份将在该时间段内触发。取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。HH取值必须比hh大1。mm和MM取值必须相同，且取值必须为00。取值示例：21:00-22:00
+        备份时间段。自动备份将在该时间段内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。HH取值必须比hh大1。mm和MM取值必须相同，且取值必须为00。  取值示例：21:00-22:00
 
         :return: The start_time of this MysqlBackupPolicy.
         :rtype: str
@@ -77,7 +77,7 @@ class MysqlBackupPolicy:
     def start_time(self, start_time):
         """Sets the start_time of this MysqlBackupPolicy.
 
-        备份时间段。自动备份将在该时间段内触发。取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。HH取值必须比hh大1。mm和MM取值必须相同，且取值必须为00。取值示例：21:00-22:00
+        备份时间段。自动备份将在该时间段内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。HH取值必须比hh大1。mm和MM取值必须相同，且取值必须为00。  取值示例：21:00-22:00
 
         :param start_time: The start_time of this MysqlBackupPolicy.
         :type start_time: str
@@ -110,7 +110,7 @@ class MysqlBackupPolicy:
     def period(self):
         """Gets the period of this MysqlBackupPolicy.
 
-        备份周期配置。自动备份将在每星期指定的天进行。取值范围：格式为逗号隔开的数字，数字代表星期。取值示例：1,2,3,4则表示备份周期配置为星期一、星期二、星期三和星期四。
+        备份周期配置。自动备份将在每星期指定的天进行。  取值范围：格式为逗号隔开的数字，数字代表星期。  取值示例：1,2,3,4则表示备份周期配置为星期一、星期二、星期三和星期四。
 
         :return: The period of this MysqlBackupPolicy.
         :rtype: str
@@ -121,7 +121,7 @@ class MysqlBackupPolicy:
     def period(self, period):
         """Sets the period of this MysqlBackupPolicy.
 
-        备份周期配置。自动备份将在每星期指定的天进行。取值范围：格式为逗号隔开的数字，数字代表星期。取值示例：1,2,3,4则表示备份周期配置为星期一、星期二、星期三和星期四。
+        备份周期配置。自动备份将在每星期指定的天进行。  取值范围：格式为逗号隔开的数字，数字代表星期。  取值示例：1,2,3,4则表示备份周期配置为星期一、星期二、星期三和星期四。
 
         :param period: The period of this MysqlBackupPolicy.
         :type period: str
@@ -132,7 +132,7 @@ class MysqlBackupPolicy:
     def retention_num_backup_level1(self):
         """Gets the retention_num_backup_level1 of this MysqlBackupPolicy.
 
-        1级备份保留数量，默认值为0。当一级备份开关开启时，该参数值有效。取值：0或1
+        一级备份保留数量，默认值为0。当一级备份开关开启时，该参数值有效。取值：0或1
 
         :return: The retention_num_backup_level1 of this MysqlBackupPolicy.
         :rtype: int
@@ -143,7 +143,7 @@ class MysqlBackupPolicy:
     def retention_num_backup_level1(self, retention_num_backup_level1):
         """Sets the retention_num_backup_level1 of this MysqlBackupPolicy.
 
-        1级备份保留数量，默认值为0。当一级备份开关开启时，该参数值有效。取值：0或1
+        一级备份保留数量，默认值为0。当一级备份开关开启时，该参数值有效。取值：0或1
 
         :param retention_num_backup_level1: The retention_num_backup_level1 of this MysqlBackupPolicy.
         :type retention_num_backup_level1: int

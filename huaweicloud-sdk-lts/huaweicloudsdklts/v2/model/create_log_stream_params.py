@@ -38,9 +38,9 @@ class CreateLogStreamParams:
 
         :param log_stream_name: 需要创建的日志流名称。
         :type log_stream_name: str
-        :param enterprise_project_name: 企业项目名称。
+        :param enterprise_project_name: 
         :type enterprise_project_name: str
-        :param ttl_in_days: 日志存储时间（天），取值范围：1-365。
+        :param ttl_in_days: 
         :type ttl_in_days: int
         """
         
@@ -83,8 +83,6 @@ class CreateLogStreamParams:
     def enterprise_project_name(self):
         """Gets the enterprise_project_name of this CreateLogStreamParams.
 
-        企业项目名称。
-
         :return: The enterprise_project_name of this CreateLogStreamParams.
         :rtype: str
         """
@@ -93,8 +91,6 @@ class CreateLogStreamParams:
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
         """Sets the enterprise_project_name of this CreateLogStreamParams.
-
-        企业项目名称。
 
         :param enterprise_project_name: The enterprise_project_name of this CreateLogStreamParams.
         :type enterprise_project_name: str
@@ -105,8 +101,6 @@ class CreateLogStreamParams:
     def ttl_in_days(self):
         """Gets the ttl_in_days of this CreateLogStreamParams.
 
-        日志存储时间（天），取值范围：1-365。
-
         :return: The ttl_in_days of this CreateLogStreamParams.
         :rtype: int
         """
@@ -115,8 +109,6 @@ class CreateLogStreamParams:
     @ttl_in_days.setter
     def ttl_in_days(self, ttl_in_days):
         """Sets the ttl_in_days of this CreateLogStreamParams.
-
-        日志存储时间（天），取值范围：1-365。
 
         :param ttl_in_days: The ttl_in_days of this CreateLogStreamParams.
         :type ttl_in_days: int

@@ -36,7 +36,7 @@ class MysqlChangeSpecificationRequest:
 
         :param resize_flavor: 
         :type resize_flavor: :class:`huaweicloudsdkgaussdb.v3.MysqlResizeFlavor`
-        :param is_auto_pay: 变更包周期实例规格时可指定，表示是否自动从客户的账户中支付。true，为自动支付，默认该方式。false，为手动支付。
+        :param is_auto_pay: 变更包周期实例规格时可指定，表示是否自动从客户的账户中支付。  - true，为自动支付，默认该方式。 - false，为手动支付。
         :type is_auto_pay: str
         """
         
@@ -72,7 +72,7 @@ class MysqlChangeSpecificationRequest:
     def is_auto_pay(self):
         """Gets the is_auto_pay of this MysqlChangeSpecificationRequest.
 
-        变更包周期实例规格时可指定，表示是否自动从客户的账户中支付。true，为自动支付，默认该方式。false，为手动支付。
+        变更包周期实例规格时可指定，表示是否自动从客户的账户中支付。  - true，为自动支付，默认该方式。 - false，为手动支付。
 
         :return: The is_auto_pay of this MysqlChangeSpecificationRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class MysqlChangeSpecificationRequest:
     def is_auto_pay(self, is_auto_pay):
         """Sets the is_auto_pay of this MysqlChangeSpecificationRequest.
 
-        变更包周期实例规格时可指定，表示是否自动从客户的账户中支付。true，为自动支付，默认该方式。false，为手动支付。
+        变更包周期实例规格时可指定，表示是否自动从客户的账户中支付。  - true，为自动支付，默认该方式。 - false，为手动支付。
 
         :param is_auto_pay: The is_auto_pay of this MysqlChangeSpecificationRequest.
         :type is_auto_pay: str

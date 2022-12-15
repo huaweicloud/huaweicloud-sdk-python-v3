@@ -28,7 +28,10 @@ class CheckRuleRiskInfoResponseInfo:
         'check_rule_id': 'str',
         'host_num': 'int',
         'scan_result': 'str',
-        'status': 'str'
+        'status': 'str',
+        'fix_status': 'str',
+        'enable_auto_fix': 'bool',
+        'rule_params': 'list[CheckRuleFixParamInfo]'
     }
 
     attribute_map = {
@@ -40,10 +43,13 @@ class CheckRuleRiskInfoResponseInfo:
         'check_rule_id': 'check_rule_id',
         'host_num': 'host_num',
         'scan_result': 'scan_result',
-        'status': 'status'
+        'status': 'status',
+        'fix_status': 'fix_status',
+        'enable_auto_fix': 'enable_auto_fix',
+        'rule_params': 'rule_params'
     }
 
-    def __init__(self, severity=None, check_name=None, check_type=None, standard=None, check_rule_name=None, check_rule_id=None, host_num=None, scan_result=None, status=None):
+    def __init__(self, severity=None, check_name=None, check_type=None, standard=None, check_rule_name=None, check_rule_id=None, host_num=None, scan_result=None, status=None, fix_status=None, enable_auto_fix=None, rule_params=None):
         """CheckRuleRiskInfoResponseInfo
 
         The model defined in huaweicloud sdk
@@ -66,6 +72,12 @@ class CheckRuleRiskInfoResponseInfo:
         :type scan_result: str
         :param status: 状态，包含如下：   - safe : 无需处理   - ignored : 已忽略   - unhandled : 未处理
         :type status: str
+        :param fix_status: 修复状态，包含如下：   - fixing :正在修复中   - fix_failed :修复失败   - fix_success :修复成功
+        :type fix_status: str
+        :param enable_auto_fix: 是否支持一键修复
+        :type enable_auto_fix: bool
+        :param rule_params: 支持传递参数修复的检查项可传递参数的范围
+        :type rule_params: list[:class:`huaweicloudsdkhss.v5.CheckRuleFixParamInfo`]
         """
         
         
@@ -79,6 +91,9 @@ class CheckRuleRiskInfoResponseInfo:
         self._host_num = None
         self._scan_result = None
         self._status = None
+        self._fix_status = None
+        self._enable_auto_fix = None
+        self._rule_params = None
         self.discriminator = None
 
         if severity is not None:
@@ -99,6 +114,12 @@ class CheckRuleRiskInfoResponseInfo:
             self.scan_result = scan_result
         if status is not None:
             self.status = status
+        if fix_status is not None:
+            self.fix_status = fix_status
+        if enable_auto_fix is not None:
+            self.enable_auto_fix = enable_auto_fix
+        if rule_params is not None:
+            self.rule_params = rule_params
 
     @property
     def severity(self):
@@ -297,6 +318,72 @@ class CheckRuleRiskInfoResponseInfo:
         :type status: str
         """
         self._status = status
+
+    @property
+    def fix_status(self):
+        """Gets the fix_status of this CheckRuleRiskInfoResponseInfo.
+
+        修复状态，包含如下：   - fixing :正在修复中   - fix_failed :修复失败   - fix_success :修复成功
+
+        :return: The fix_status of this CheckRuleRiskInfoResponseInfo.
+        :rtype: str
+        """
+        return self._fix_status
+
+    @fix_status.setter
+    def fix_status(self, fix_status):
+        """Sets the fix_status of this CheckRuleRiskInfoResponseInfo.
+
+        修复状态，包含如下：   - fixing :正在修复中   - fix_failed :修复失败   - fix_success :修复成功
+
+        :param fix_status: The fix_status of this CheckRuleRiskInfoResponseInfo.
+        :type fix_status: str
+        """
+        self._fix_status = fix_status
+
+    @property
+    def enable_auto_fix(self):
+        """Gets the enable_auto_fix of this CheckRuleRiskInfoResponseInfo.
+
+        是否支持一键修复
+
+        :return: The enable_auto_fix of this CheckRuleRiskInfoResponseInfo.
+        :rtype: bool
+        """
+        return self._enable_auto_fix
+
+    @enable_auto_fix.setter
+    def enable_auto_fix(self, enable_auto_fix):
+        """Sets the enable_auto_fix of this CheckRuleRiskInfoResponseInfo.
+
+        是否支持一键修复
+
+        :param enable_auto_fix: The enable_auto_fix of this CheckRuleRiskInfoResponseInfo.
+        :type enable_auto_fix: bool
+        """
+        self._enable_auto_fix = enable_auto_fix
+
+    @property
+    def rule_params(self):
+        """Gets the rule_params of this CheckRuleRiskInfoResponseInfo.
+
+        支持传递参数修复的检查项可传递参数的范围
+
+        :return: The rule_params of this CheckRuleRiskInfoResponseInfo.
+        :rtype: list[:class:`huaweicloudsdkhss.v5.CheckRuleFixParamInfo`]
+        """
+        return self._rule_params
+
+    @rule_params.setter
+    def rule_params(self, rule_params):
+        """Sets the rule_params of this CheckRuleRiskInfoResponseInfo.
+
+        支持传递参数修复的检查项可传递参数的范围
+
+        :param rule_params: The rule_params of this CheckRuleRiskInfoResponseInfo.
+        :type rule_params: list[:class:`huaweicloudsdkhss.v5.CheckRuleFixParamInfo`]
+        """
+        self._rule_params = rule_params
 
     def to_dict(self):
         """Returns the model properties as a dict"""

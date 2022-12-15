@@ -46,17 +46,17 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 专属资源池id
+        :param id: 专属资源池id。
         :type id: str
-        :param name: 专属资源池名称
+        :param name: 专属资源池名称。
         :type name: str
-        :param engine_name: 引擎名称
+        :param engine_name: 引擎名称。
         :type engine_name: str
-        :param availability_zone_ids: 可用区
+        :param availability_zone_ids: 可用区。
         :type availability_zone_ids: list[str]
-        :param architecture: 资源规格类型
+        :param architecture: 资源规格类型。
         :type architecture: str
-        :param status: 专属资源池状态
+        :param status: 专属资源池状态。
         :type status: str
         :param dedicated_compute_info: 
         :type dedicated_compute_info: :class:`huaweicloudsdkgaussdb.v3.DedicatedComputeInfo`
@@ -97,7 +97,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
     def id(self):
         """Gets the id of this ShowDedicatedResourceInfoResponse.
 
-        专属资源池id
+        专属资源池id。
 
         :return: The id of this ShowDedicatedResourceInfoResponse.
         :rtype: str
@@ -108,7 +108,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this ShowDedicatedResourceInfoResponse.
 
-        专属资源池id
+        专属资源池id。
 
         :param id: The id of this ShowDedicatedResourceInfoResponse.
         :type id: str
@@ -119,7 +119,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
     def name(self):
         """Gets the name of this ShowDedicatedResourceInfoResponse.
 
-        专属资源池名称
+        专属资源池名称。
 
         :return: The name of this ShowDedicatedResourceInfoResponse.
         :rtype: str
@@ -130,7 +130,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
     def name(self, name):
         """Sets the name of this ShowDedicatedResourceInfoResponse.
 
-        专属资源池名称
+        专属资源池名称。
 
         :param name: The name of this ShowDedicatedResourceInfoResponse.
         :type name: str
@@ -141,7 +141,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
     def engine_name(self):
         """Gets the engine_name of this ShowDedicatedResourceInfoResponse.
 
-        引擎名称
+        引擎名称。
 
         :return: The engine_name of this ShowDedicatedResourceInfoResponse.
         :rtype: str
@@ -152,7 +152,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
     def engine_name(self, engine_name):
         """Sets the engine_name of this ShowDedicatedResourceInfoResponse.
 
-        引擎名称
+        引擎名称。
 
         :param engine_name: The engine_name of this ShowDedicatedResourceInfoResponse.
         :type engine_name: str
@@ -163,7 +163,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
     def availability_zone_ids(self):
         """Gets the availability_zone_ids of this ShowDedicatedResourceInfoResponse.
 
-        可用区
+        可用区。
 
         :return: The availability_zone_ids of this ShowDedicatedResourceInfoResponse.
         :rtype: list[str]
@@ -174,7 +174,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
     def availability_zone_ids(self, availability_zone_ids):
         """Sets the availability_zone_ids of this ShowDedicatedResourceInfoResponse.
 
-        可用区
+        可用区。
 
         :param availability_zone_ids: The availability_zone_ids of this ShowDedicatedResourceInfoResponse.
         :type availability_zone_ids: list[str]
@@ -185,7 +185,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
     def architecture(self):
         """Gets the architecture of this ShowDedicatedResourceInfoResponse.
 
-        资源规格类型
+        资源规格类型。
 
         :return: The architecture of this ShowDedicatedResourceInfoResponse.
         :rtype: str
@@ -196,7 +196,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
     def architecture(self, architecture):
         """Sets the architecture of this ShowDedicatedResourceInfoResponse.
 
-        资源规格类型
+        资源规格类型。
 
         :param architecture: The architecture of this ShowDedicatedResourceInfoResponse.
         :type architecture: str
@@ -207,7 +207,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowDedicatedResourceInfoResponse.
 
-        专属资源池状态
+        专属资源池状态。
 
         :return: The status of this ShowDedicatedResourceInfoResponse.
         :rtype: str
@@ -218,7 +218,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowDedicatedResourceInfoResponse.
 
-        专属资源池状态
+        专属资源池状态。
 
         :param status: The status of this ShowDedicatedResourceInfoResponse.
         :type status: str

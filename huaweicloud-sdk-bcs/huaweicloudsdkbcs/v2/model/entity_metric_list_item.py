@@ -25,7 +25,8 @@ class EntityMetricListItem:
         'disk_write_rate': 'str',
         'mem_usage': 'str',
         'recv_bytes_rate': 'str',
-        'send_bytes_rate': 'str'
+        'send_bytes_rate': 'str',
+        'filesystem_usage': 'str'
     }
 
     attribute_map = {
@@ -34,17 +35,18 @@ class EntityMetricListItem:
         'disk_write_rate': 'diskWriteRate',
         'mem_usage': 'memUsage',
         'recv_bytes_rate': 'recvBytesRate',
-        'send_bytes_rate': 'sendBytesRate'
+        'send_bytes_rate': 'sendBytesRate',
+        'filesystem_usage': 'filesystemUsage'
     }
 
-    def __init__(self, cpu_usage=None, disk_read_rate=None, disk_write_rate=None, mem_usage=None, recv_bytes_rate=None, send_bytes_rate=None):
+    def __init__(self, cpu_usage=None, disk_read_rate=None, disk_write_rate=None, mem_usage=None, recv_bytes_rate=None, send_bytes_rate=None, filesystem_usage=None):
         """EntityMetricListItem
 
         The model defined in huaweicloud sdk
 
         :param cpu_usage: cpu使用率
         :type cpu_usage: str
-        :param disk_read_rate: 磁盘使用率
+        :param disk_read_rate: 磁盘读取速率
         :type disk_read_rate: str
         :param disk_write_rate: 磁盘写入速率
         :type disk_write_rate: str
@@ -54,6 +56,8 @@ class EntityMetricListItem:
         :type recv_bytes_rate: str
         :param send_bytes_rate: 上行BPs
         :type send_bytes_rate: str
+        :param filesystem_usage: 文件系统使用率
+        :type filesystem_usage: str
         """
         
         
@@ -64,6 +68,7 @@ class EntityMetricListItem:
         self._mem_usage = None
         self._recv_bytes_rate = None
         self._send_bytes_rate = None
+        self._filesystem_usage = None
         self.discriminator = None
 
         if cpu_usage is not None:
@@ -78,6 +83,8 @@ class EntityMetricListItem:
             self.recv_bytes_rate = recv_bytes_rate
         if send_bytes_rate is not None:
             self.send_bytes_rate = send_bytes_rate
+        if filesystem_usage is not None:
+            self.filesystem_usage = filesystem_usage
 
     @property
     def cpu_usage(self):
@@ -105,7 +112,7 @@ class EntityMetricListItem:
     def disk_read_rate(self):
         """Gets the disk_read_rate of this EntityMetricListItem.
 
-        磁盘使用率
+        磁盘读取速率
 
         :return: The disk_read_rate of this EntityMetricListItem.
         :rtype: str
@@ -116,7 +123,7 @@ class EntityMetricListItem:
     def disk_read_rate(self, disk_read_rate):
         """Sets the disk_read_rate of this EntityMetricListItem.
 
-        磁盘使用率
+        磁盘读取速率
 
         :param disk_read_rate: The disk_read_rate of this EntityMetricListItem.
         :type disk_read_rate: str
@@ -210,6 +217,28 @@ class EntityMetricListItem:
         :type send_bytes_rate: str
         """
         self._send_bytes_rate = send_bytes_rate
+
+    @property
+    def filesystem_usage(self):
+        """Gets the filesystem_usage of this EntityMetricListItem.
+
+        文件系统使用率
+
+        :return: The filesystem_usage of this EntityMetricListItem.
+        :rtype: str
+        """
+        return self._filesystem_usage
+
+    @filesystem_usage.setter
+    def filesystem_usage(self, filesystem_usage):
+        """Sets the filesystem_usage of this EntityMetricListItem.
+
+        文件系统使用率
+
+        :param filesystem_usage: The filesystem_usage of this EntityMetricListItem.
+        :type filesystem_usage: str
+        """
+        self._filesystem_usage = filesystem_usage
 
     def to_dict(self):
         """Returns the model properties as a dict"""

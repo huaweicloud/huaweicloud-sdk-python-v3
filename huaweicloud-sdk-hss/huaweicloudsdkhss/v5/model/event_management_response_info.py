@@ -47,6 +47,7 @@ class EventManagementResponseInfo:
         'network_info': 'object',
         'app_info': 'object',
         'system_info': 'object',
+        'extend_info': 'object',
         'recommendation': 'str',
         'process_info_list': 'list[EventProcessResponseInfo]',
         'user_info_list': 'list[EventUserResponseInfo]',
@@ -81,13 +82,14 @@ class EventManagementResponseInfo:
         'network_info': 'network_info',
         'app_info': 'app_info',
         'system_info': 'system_info',
+        'extend_info': 'extend_info',
         'recommendation': 'recommendation',
         'process_info_list': 'process_info_list',
         'user_info_list': 'user_info_list',
         'file_info_list': 'file_info_list'
     }
 
-    def __init__(self, event_id=None, event_class_id=None, event_type=None, event_name=None, severity=None, container_name=None, image_name=None, host_name=None, host_id=None, private_ip=None, public_ip=None, attack_phase=None, attack_tag=None, occur_time=None, handle_time=None, handle_status=None, handle_method=None, handler=None, operate_accept_list=None, operate_detail_list=None, forensic_info=None, resource_info=None, geo_info=None, malware_info=None, network_info=None, app_info=None, system_info=None, recommendation=None, process_info_list=None, user_info_list=None, file_info_list=None):
+    def __init__(self, event_id=None, event_class_id=None, event_type=None, event_name=None, severity=None, container_name=None, image_name=None, host_name=None, host_id=None, private_ip=None, public_ip=None, attack_phase=None, attack_tag=None, occur_time=None, handle_time=None, handle_status=None, handle_method=None, handler=None, operate_accept_list=None, operate_detail_list=None, forensic_info=None, resource_info=None, geo_info=None, malware_info=None, network_info=None, app_info=None, system_info=None, extend_info=None, recommendation=None, process_info_list=None, user_info_list=None, file_info_list=None):
         """EventManagementResponseInfo
 
         The model defined in huaweicloud sdk
@@ -96,7 +98,7 @@ class EventManagementResponseInfo:
         :type event_id: str
         :param event_class_id: 事件分类，包含如下:   - container_1001 : 容器命名空间   - container_1002 : 容器开放端口   - container_1003 : 容器安全选项   - container_1004 : 容器挂载目录   - containerescape_0001 : 容器高危系统调用   - containerescape_0002 : Shocker攻击   - containerescape_0003 : DirtCow攻击   - containerescape_0004 : 容器文件逃逸攻击   - dockerfile_001 : 用户自定义容器保护文件被修改   - dockerfile_002 : 容器文件系统可执行文件被修改   - dockerproc_001 : 容器进程异常事件上报   - fileprotect_0001 : 文件提权   - fileprotect_0002 : 关键文件变更   - fileprotect_0003 : 关键文件路径变更   - fileprotect_0004 : 文件目录变更   - login_0001 : 尝试暴力破解   - login_0002 : 爆破成功   - login_1001 : 登录成功   - login_1002 : 异地登录   - login_1003 : 弱口令   - malware_0001 : shell变更事件上报   - malware_0002 : 反弹shell事件上报   - malware_1001 : 恶意程序   - procdet_0001 : 进程异常行为检测   - procdet_0002 : 进程提权   - procreport_0001 : 危险命令   - user_1001 : 账号变更   - user_1002 : 风险账号   - vmescape_0001 : 虚拟机敏感命令执行   - vmescape_0002 : 虚拟化进程访问敏感文件   - vmescape_0003 : 虚拟机异常端口访问   - webshell_0001 : 网站后门   - network_1001 : 恶意挖矿   - network_1002 : 对外DDoS攻击   - network_1003 : 恶意扫描   - network_1004 : 敏感区域攻击   - crontab_1001 : Crontab可疑任务   - vul_exploit_0001 : Redis漏洞利用攻击   - vul_exploit_0002 : Hadoop漏洞利用攻击   - vul_exploit_0003 : MySQL漏洞利用攻击
         :type event_class_id: str
-        :param event_type: 事件类型，包含如下:   - 1001 : 恶意软件   - 1010 : Rootkit   - 1011 : 勒索软件   - 1015 : Webshell   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3027 : Crontab可疑任务   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号
+        :param event_type: 事件类型，包含如下:   - 1001 : 恶意软件   - 1010 : Rootkit   - 1011 : 勒索软件   - 1015 : Webshell   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 2047 : Redis漏洞利用   - 2048 : Hadoop漏洞利用   - 2049 : MySQL漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3027 : Crontab可疑任务   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号
         :type event_type: int
         :param event_name: 事件名称
         :type event_name: str
@@ -110,7 +112,7 @@ class EventManagementResponseInfo:
         :type host_name: str
         :param host_id: 服务器ID
         :type host_id: str
-        :param private_ip: 服务器私网IP
+        :param private_ip: 服务器私有IP
         :type private_ip: str
         :param public_ip: 弹性公网IP地址
         :type public_ip: str
@@ -146,6 +148,8 @@ class EventManagementResponseInfo:
         :type app_info: object
         :param system_info: 系统信息，json格式
         :type system_info: object
+        :param extend_info: 事件扩展信息，json格式
+        :type extend_info: object
         :param recommendation: 处置建议
         :type recommendation: str
         :param process_info_list: 进程信息列表
@@ -185,6 +189,7 @@ class EventManagementResponseInfo:
         self._network_info = None
         self._app_info = None
         self._system_info = None
+        self._extend_info = None
         self._recommendation = None
         self._process_info_list = None
         self._user_info_list = None
@@ -245,6 +250,8 @@ class EventManagementResponseInfo:
             self.app_info = app_info
         if system_info is not None:
             self.system_info = system_info
+        if extend_info is not None:
+            self.extend_info = extend_info
         if recommendation is not None:
             self.recommendation = recommendation
         if process_info_list is not None:
@@ -302,7 +309,7 @@ class EventManagementResponseInfo:
     def event_type(self):
         """Gets the event_type of this EventManagementResponseInfo.
 
-        事件类型，包含如下:   - 1001 : 恶意软件   - 1010 : Rootkit   - 1011 : 勒索软件   - 1015 : Webshell   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3027 : Crontab可疑任务   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号
+        事件类型，包含如下:   - 1001 : 恶意软件   - 1010 : Rootkit   - 1011 : 勒索软件   - 1015 : Webshell   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 2047 : Redis漏洞利用   - 2048 : Hadoop漏洞利用   - 2049 : MySQL漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3027 : Crontab可疑任务   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号
 
         :return: The event_type of this EventManagementResponseInfo.
         :rtype: int
@@ -313,7 +320,7 @@ class EventManagementResponseInfo:
     def event_type(self, event_type):
         """Sets the event_type of this EventManagementResponseInfo.
 
-        事件类型，包含如下:   - 1001 : 恶意软件   - 1010 : Rootkit   - 1011 : 勒索软件   - 1015 : Webshell   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3027 : Crontab可疑任务   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号
+        事件类型，包含如下:   - 1001 : 恶意软件   - 1010 : Rootkit   - 1011 : 勒索软件   - 1015 : Webshell   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 2047 : Redis漏洞利用   - 2048 : Hadoop漏洞利用   - 2049 : MySQL漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3027 : Crontab可疑任务   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号
 
         :param event_type: The event_type of this EventManagementResponseInfo.
         :type event_type: int
@@ -456,7 +463,7 @@ class EventManagementResponseInfo:
     def private_ip(self):
         """Gets the private_ip of this EventManagementResponseInfo.
 
-        服务器私网IP
+        服务器私有IP
 
         :return: The private_ip of this EventManagementResponseInfo.
         :rtype: str
@@ -467,7 +474,7 @@ class EventManagementResponseInfo:
     def private_ip(self, private_ip):
         """Sets the private_ip of this EventManagementResponseInfo.
 
-        服务器私网IP
+        服务器私有IP
 
         :param private_ip: The private_ip of this EventManagementResponseInfo.
         :type private_ip: str
@@ -843,6 +850,28 @@ class EventManagementResponseInfo:
         :type system_info: object
         """
         self._system_info = system_info
+
+    @property
+    def extend_info(self):
+        """Gets the extend_info of this EventManagementResponseInfo.
+
+        事件扩展信息，json格式
+
+        :return: The extend_info of this EventManagementResponseInfo.
+        :rtype: object
+        """
+        return self._extend_info
+
+    @extend_info.setter
+    def extend_info(self, extend_info):
+        """Sets the extend_info of this EventManagementResponseInfo.
+
+        事件扩展信息，json格式
+
+        :param extend_info: The extend_info of this EventManagementResponseInfo.
+        :type extend_info: object
+        """
+        self._extend_info = extend_info
 
     @property
     def recommendation(self):

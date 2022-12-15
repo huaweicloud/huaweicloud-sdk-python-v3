@@ -34,9 +34,9 @@ class ShowInstanceMonitorExtendResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param monitor_switch: 实例秒级监控开关。为true时表示开启，为false时表示关闭。
+        :param monitor_switch: 实例秒级监控开关。  - true，表示开启。 - false，表示关闭。
         :type monitor_switch: bool
-        :param period: 采集周期，仅在monitor_switch为true时返回。1：采集周期为1s； 5：采集周期为5s。
+        :param period: 采集周期，仅在monitor_switch为true时返回。 - 1：采集周期为1s。 - 5：采集周期为5s。
         :type period: int
         """
         
@@ -55,7 +55,7 @@ class ShowInstanceMonitorExtendResponse(SdkResponse):
     def monitor_switch(self):
         """Gets the monitor_switch of this ShowInstanceMonitorExtendResponse.
 
-        实例秒级监控开关。为true时表示开启，为false时表示关闭。
+        实例秒级监控开关。  - true，表示开启。 - false，表示关闭。
 
         :return: The monitor_switch of this ShowInstanceMonitorExtendResponse.
         :rtype: bool
@@ -66,7 +66,7 @@ class ShowInstanceMonitorExtendResponse(SdkResponse):
     def monitor_switch(self, monitor_switch):
         """Sets the monitor_switch of this ShowInstanceMonitorExtendResponse.
 
-        实例秒级监控开关。为true时表示开启，为false时表示关闭。
+        实例秒级监控开关。  - true，表示开启。 - false，表示关闭。
 
         :param monitor_switch: The monitor_switch of this ShowInstanceMonitorExtendResponse.
         :type monitor_switch: bool
@@ -77,7 +77,7 @@ class ShowInstanceMonitorExtendResponse(SdkResponse):
     def period(self):
         """Gets the period of this ShowInstanceMonitorExtendResponse.
 
-        采集周期，仅在monitor_switch为true时返回。1：采集周期为1s； 5：采集周期为5s。
+        采集周期，仅在monitor_switch为true时返回。 - 1：采集周期为1s。 - 5：采集周期为5s。
 
         :return: The period of this ShowInstanceMonitorExtendResponse.
         :rtype: int
@@ -88,7 +88,7 @@ class ShowInstanceMonitorExtendResponse(SdkResponse):
     def period(self, period):
         """Sets the period of this ShowInstanceMonitorExtendResponse.
 
-        采集周期，仅在monitor_switch为true时返回。1：采集周期为1s； 5：采集周期为5s。
+        采集周期，仅在monitor_switch为true时返回。 - 1：采集周期为1s。 - 5：采集周期为5s。
 
         :param period: The period of this ShowInstanceMonitorExtendResponse.
         :type period: int

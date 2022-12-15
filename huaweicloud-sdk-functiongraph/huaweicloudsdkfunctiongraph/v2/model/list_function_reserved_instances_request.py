@@ -21,25 +21,25 @@ class ListFunctionReservedInstancesRequest:
 
     openapi_types = {
         'marker': 'str',
-        'maxitems': 'str',
+        'limit': 'str',
         'urn': 'str'
     }
 
     attribute_map = {
         'marker': 'marker',
-        'maxitems': 'maxitems',
+        'limit': 'limit',
         'urn': 'urn'
     }
 
-    def __init__(self, marker=None, maxitems=None, urn=None):
+    def __init__(self, marker=None, limit=None, urn=None):
         """ListFunctionReservedInstancesRequest
 
         The model defined in huaweicloud sdk
 
         :param marker: 上一次查询到的最后的记录位置。
         :type marker: str
-        :param maxitems: 每次查询获取的最大函数记录数量  最大值：400 如果不提供该值或者提供的值大于400或等于0，则使用默认值：400 如果该值小于0，则返回参数错误。
-        :type maxitems: str
+        :param limit: 每次查询获取的最大函数记录数量  最大值：400 如果不提供该值或者提供的值大于400或等于0，则使用默认值：400 如果该值小于0，则返回参数错误。
+        :type limit: str
         :param urn: 查询指定函数版本预留实例数的函数urn。
         :type urn: str
         """
@@ -47,14 +47,14 @@ class ListFunctionReservedInstancesRequest:
         
 
         self._marker = None
-        self._maxitems = None
+        self._limit = None
         self._urn = None
         self.discriminator = None
 
         if marker is not None:
             self.marker = marker
-        if maxitems is not None:
-            self.maxitems = maxitems
+        if limit is not None:
+            self.limit = limit
         if urn is not None:
             self.urn = urn
 
@@ -81,26 +81,26 @@ class ListFunctionReservedInstancesRequest:
         self._marker = marker
 
     @property
-    def maxitems(self):
-        """Gets the maxitems of this ListFunctionReservedInstancesRequest.
+    def limit(self):
+        """Gets the limit of this ListFunctionReservedInstancesRequest.
 
         每次查询获取的最大函数记录数量  最大值：400 如果不提供该值或者提供的值大于400或等于0，则使用默认值：400 如果该值小于0，则返回参数错误。
 
-        :return: The maxitems of this ListFunctionReservedInstancesRequest.
+        :return: The limit of this ListFunctionReservedInstancesRequest.
         :rtype: str
         """
-        return self._maxitems
+        return self._limit
 
-    @maxitems.setter
-    def maxitems(self, maxitems):
-        """Sets the maxitems of this ListFunctionReservedInstancesRequest.
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListFunctionReservedInstancesRequest.
 
         每次查询获取的最大函数记录数量  最大值：400 如果不提供该值或者提供的值大于400或等于0，则使用默认值：400 如果该值小于0，则返回参数错误。
 
-        :param maxitems: The maxitems of this ListFunctionReservedInstancesRequest.
-        :type maxitems: str
+        :param limit: The limit of this ListFunctionReservedInstancesRequest.
+        :type limit: str
         """
-        self._maxitems = maxitems
+        self._limit = limit
 
     @property
     def urn(self):

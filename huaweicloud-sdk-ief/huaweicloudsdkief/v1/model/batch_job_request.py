@@ -40,7 +40,7 @@ class BatchJobRequest:
 
         The model defined in huaweicloud sdk
 
-        :param job_name: 批量作业名称
+        :param job_name: 批量作业名称，允许输入小写字母，数字，中划线，不能以中划线开头或结尾，最大长度为26位
         :type job_name: str
         :param job_type: 批量作业类型，支持以下选项： - node_upgrade： 节点升级 - deployment_deploy：应用部署 - deployment_upgrade：应用升级
         :type job_type: str
@@ -74,7 +74,7 @@ class BatchJobRequest:
     def job_name(self):
         """Gets the job_name of this BatchJobRequest.
 
-        批量作业名称
+        批量作业名称，允许输入小写字母，数字，中划线，不能以中划线开头或结尾，最大长度为26位
 
         :return: The job_name of this BatchJobRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class BatchJobRequest:
     def job_name(self, job_name):
         """Sets the job_name of this BatchJobRequest.
 
-        批量作业名称
+        批量作业名称，允许输入小写字母，数字，中划线，不能以中划线开头或结尾，最大长度为26位
 
         :param job_name: The job_name of this BatchJobRequest.
         :type job_name: str

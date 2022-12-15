@@ -25,10 +25,11 @@ class BatchJobForList:
         'job_type': 'str',
         'created_at': 'int',
         'status': 'str',
-        'task_count': 'int',
-        'success_count': 'int',
-        'failed_count': 'int',
-        'updated_at': 'int'
+        'task_total_count': 'int',
+        'task_success_count': 'int',
+        'task_failed_count': 'int',
+        'status_last_updated_at': 'int',
+        'description': 'str'
     }
 
     attribute_map = {
@@ -37,13 +38,14 @@ class BatchJobForList:
         'job_type': 'job_type',
         'created_at': 'created_at',
         'status': 'status',
-        'task_count': 'task_count',
-        'success_count': 'success_count',
-        'failed_count': 'failed_count',
-        'updated_at': 'updated_at'
+        'task_total_count': 'task_total_count',
+        'task_success_count': 'task_success_count',
+        'task_failed_count': 'task_failed_count',
+        'status_last_updated_at': 'status_last_updated_at',
+        'description': 'description'
     }
 
-    def __init__(self, job_id=None, job_name=None, job_type=None, created_at=None, status=None, task_count=None, success_count=None, failed_count=None, updated_at=None):
+    def __init__(self, job_id=None, job_name=None, job_type=None, created_at=None, status=None, task_total_count=None, task_success_count=None, task_failed_count=None, status_last_updated_at=None, description=None):
         """BatchJobForList
 
         The model defined in huaweicloud sdk
@@ -58,14 +60,16 @@ class BatchJobForList:
         :type created_at: int
         :param status: 执行状态
         :type status: str
-        :param task_count: 任务总数
-        :type task_count: int
-        :param success_count: 任务项执行成功数
-        :type success_count: int
-        :param failed_count: 任务项执行失败数
-        :type failed_count: int
-        :param updated_at: 状态更新时间戳
-        :type updated_at: int
+        :param task_total_count: 任务总数
+        :type task_total_count: int
+        :param task_success_count: 任务项执行成功数
+        :type task_success_count: int
+        :param task_failed_count: 任务项执行失败数
+        :type task_failed_count: int
+        :param status_last_updated_at: 状态更新时间戳
+        :type status_last_updated_at: int
+        :param description: 任务描述
+        :type description: str
         """
         
         
@@ -75,10 +79,11 @@ class BatchJobForList:
         self._job_type = None
         self._created_at = None
         self._status = None
-        self._task_count = None
-        self._success_count = None
-        self._failed_count = None
-        self._updated_at = None
+        self._task_total_count = None
+        self._task_success_count = None
+        self._task_failed_count = None
+        self._status_last_updated_at = None
+        self._description = None
         self.discriminator = None
 
         if job_id is not None:
@@ -91,14 +96,16 @@ class BatchJobForList:
             self.created_at = created_at
         if status is not None:
             self.status = status
-        if task_count is not None:
-            self.task_count = task_count
-        if success_count is not None:
-            self.success_count = success_count
-        if failed_count is not None:
-            self.failed_count = failed_count
-        if updated_at is not None:
-            self.updated_at = updated_at
+        if task_total_count is not None:
+            self.task_total_count = task_total_count
+        if task_success_count is not None:
+            self.task_success_count = task_success_count
+        if task_failed_count is not None:
+            self.task_failed_count = task_failed_count
+        if status_last_updated_at is not None:
+            self.status_last_updated_at = status_last_updated_at
+        if description is not None:
+            self.description = description
 
     @property
     def job_id(self):
@@ -211,92 +218,114 @@ class BatchJobForList:
         self._status = status
 
     @property
-    def task_count(self):
-        """Gets the task_count of this BatchJobForList.
+    def task_total_count(self):
+        """Gets the task_total_count of this BatchJobForList.
 
         任务总数
 
-        :return: The task_count of this BatchJobForList.
+        :return: The task_total_count of this BatchJobForList.
         :rtype: int
         """
-        return self._task_count
+        return self._task_total_count
 
-    @task_count.setter
-    def task_count(self, task_count):
-        """Sets the task_count of this BatchJobForList.
+    @task_total_count.setter
+    def task_total_count(self, task_total_count):
+        """Sets the task_total_count of this BatchJobForList.
 
         任务总数
 
-        :param task_count: The task_count of this BatchJobForList.
-        :type task_count: int
+        :param task_total_count: The task_total_count of this BatchJobForList.
+        :type task_total_count: int
         """
-        self._task_count = task_count
+        self._task_total_count = task_total_count
 
     @property
-    def success_count(self):
-        """Gets the success_count of this BatchJobForList.
+    def task_success_count(self):
+        """Gets the task_success_count of this BatchJobForList.
 
         任务项执行成功数
 
-        :return: The success_count of this BatchJobForList.
+        :return: The task_success_count of this BatchJobForList.
         :rtype: int
         """
-        return self._success_count
+        return self._task_success_count
 
-    @success_count.setter
-    def success_count(self, success_count):
-        """Sets the success_count of this BatchJobForList.
+    @task_success_count.setter
+    def task_success_count(self, task_success_count):
+        """Sets the task_success_count of this BatchJobForList.
 
         任务项执行成功数
 
-        :param success_count: The success_count of this BatchJobForList.
-        :type success_count: int
+        :param task_success_count: The task_success_count of this BatchJobForList.
+        :type task_success_count: int
         """
-        self._success_count = success_count
+        self._task_success_count = task_success_count
 
     @property
-    def failed_count(self):
-        """Gets the failed_count of this BatchJobForList.
+    def task_failed_count(self):
+        """Gets the task_failed_count of this BatchJobForList.
 
         任务项执行失败数
 
-        :return: The failed_count of this BatchJobForList.
+        :return: The task_failed_count of this BatchJobForList.
         :rtype: int
         """
-        return self._failed_count
+        return self._task_failed_count
 
-    @failed_count.setter
-    def failed_count(self, failed_count):
-        """Sets the failed_count of this BatchJobForList.
+    @task_failed_count.setter
+    def task_failed_count(self, task_failed_count):
+        """Sets the task_failed_count of this BatchJobForList.
 
         任务项执行失败数
 
-        :param failed_count: The failed_count of this BatchJobForList.
-        :type failed_count: int
+        :param task_failed_count: The task_failed_count of this BatchJobForList.
+        :type task_failed_count: int
         """
-        self._failed_count = failed_count
+        self._task_failed_count = task_failed_count
 
     @property
-    def updated_at(self):
-        """Gets the updated_at of this BatchJobForList.
+    def status_last_updated_at(self):
+        """Gets the status_last_updated_at of this BatchJobForList.
 
         状态更新时间戳
 
-        :return: The updated_at of this BatchJobForList.
+        :return: The status_last_updated_at of this BatchJobForList.
         :rtype: int
         """
-        return self._updated_at
+        return self._status_last_updated_at
 
-    @updated_at.setter
-    def updated_at(self, updated_at):
-        """Sets the updated_at of this BatchJobForList.
+    @status_last_updated_at.setter
+    def status_last_updated_at(self, status_last_updated_at):
+        """Sets the status_last_updated_at of this BatchJobForList.
 
         状态更新时间戳
 
-        :param updated_at: The updated_at of this BatchJobForList.
-        :type updated_at: int
+        :param status_last_updated_at: The status_last_updated_at of this BatchJobForList.
+        :type status_last_updated_at: int
         """
-        self._updated_at = updated_at
+        self._status_last_updated_at = status_last_updated_at
+
+    @property
+    def description(self):
+        """Gets the description of this BatchJobForList.
+
+        任务描述
+
+        :return: The description of this BatchJobForList.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this BatchJobForList.
+
+        任务描述
+
+        :param description: The description of this BatchJobForList.
+        :type description: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

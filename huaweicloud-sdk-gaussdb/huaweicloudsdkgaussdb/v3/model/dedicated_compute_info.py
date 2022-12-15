@@ -42,17 +42,17 @@ class DedicatedComputeInfo:
 
         The model defined in huaweicloud sdk
 
-        :param vcpus_total: 专属资源池中cpu总数
+        :param vcpus_total: 专属资源池中cpu总数。
         :type vcpus_total: int
-        :param vcpus_used: 专属资源池已使用的cpu数
+        :param vcpus_used: 专属资源池已使用的cpu数。
         :type vcpus_used: int
-        :param ram_total: 专属资源池计算内存大小, 单位GB
+        :param ram_total: 专属资源池计算内存大小, 单位GB。
         :type ram_total: int
-        :param ram_used: 专属资源池已使用的计算内存大小，单位GB
+        :param ram_used: 专属资源池已使用的计算内存大小，单位GB。
         :type ram_used: int
-        :param spec_code: 专属资源池计算资源规格码
+        :param spec_code: 专属资源池计算资源规格码。
         :type spec_code: str
-        :param host_num: 专属资源池计算主机数量
+        :param host_num: 专属资源池计算主机数量。
         :type host_num: int
         """
         
@@ -77,7 +77,7 @@ class DedicatedComputeInfo:
     def vcpus_total(self):
         """Gets the vcpus_total of this DedicatedComputeInfo.
 
-        专属资源池中cpu总数
+        专属资源池中cpu总数。
 
         :return: The vcpus_total of this DedicatedComputeInfo.
         :rtype: int
@@ -88,7 +88,7 @@ class DedicatedComputeInfo:
     def vcpus_total(self, vcpus_total):
         """Sets the vcpus_total of this DedicatedComputeInfo.
 
-        专属资源池中cpu总数
+        专属资源池中cpu总数。
 
         :param vcpus_total: The vcpus_total of this DedicatedComputeInfo.
         :type vcpus_total: int
@@ -99,7 +99,7 @@ class DedicatedComputeInfo:
     def vcpus_used(self):
         """Gets the vcpus_used of this DedicatedComputeInfo.
 
-        专属资源池已使用的cpu数
+        专属资源池已使用的cpu数。
 
         :return: The vcpus_used of this DedicatedComputeInfo.
         :rtype: int
@@ -110,7 +110,7 @@ class DedicatedComputeInfo:
     def vcpus_used(self, vcpus_used):
         """Sets the vcpus_used of this DedicatedComputeInfo.
 
-        专属资源池已使用的cpu数
+        专属资源池已使用的cpu数。
 
         :param vcpus_used: The vcpus_used of this DedicatedComputeInfo.
         :type vcpus_used: int
@@ -121,7 +121,7 @@ class DedicatedComputeInfo:
     def ram_total(self):
         """Gets the ram_total of this DedicatedComputeInfo.
 
-        专属资源池计算内存大小, 单位GB
+        专属资源池计算内存大小, 单位GB。
 
         :return: The ram_total of this DedicatedComputeInfo.
         :rtype: int
@@ -132,7 +132,7 @@ class DedicatedComputeInfo:
     def ram_total(self, ram_total):
         """Sets the ram_total of this DedicatedComputeInfo.
 
-        专属资源池计算内存大小, 单位GB
+        专属资源池计算内存大小, 单位GB。
 
         :param ram_total: The ram_total of this DedicatedComputeInfo.
         :type ram_total: int
@@ -143,7 +143,7 @@ class DedicatedComputeInfo:
     def ram_used(self):
         """Gets the ram_used of this DedicatedComputeInfo.
 
-        专属资源池已使用的计算内存大小，单位GB
+        专属资源池已使用的计算内存大小，单位GB。
 
         :return: The ram_used of this DedicatedComputeInfo.
         :rtype: int
@@ -154,7 +154,7 @@ class DedicatedComputeInfo:
     def ram_used(self, ram_used):
         """Sets the ram_used of this DedicatedComputeInfo.
 
-        专属资源池已使用的计算内存大小，单位GB
+        专属资源池已使用的计算内存大小，单位GB。
 
         :param ram_used: The ram_used of this DedicatedComputeInfo.
         :type ram_used: int
@@ -165,7 +165,7 @@ class DedicatedComputeInfo:
     def spec_code(self):
         """Gets the spec_code of this DedicatedComputeInfo.
 
-        专属资源池计算资源规格码
+        专属资源池计算资源规格码。
 
         :return: The spec_code of this DedicatedComputeInfo.
         :rtype: str
@@ -176,7 +176,7 @@ class DedicatedComputeInfo:
     def spec_code(self, spec_code):
         """Sets the spec_code of this DedicatedComputeInfo.
 
-        专属资源池计算资源规格码
+        专属资源池计算资源规格码。
 
         :param spec_code: The spec_code of this DedicatedComputeInfo.
         :type spec_code: str
@@ -187,7 +187,7 @@ class DedicatedComputeInfo:
     def host_num(self):
         """Gets the host_num of this DedicatedComputeInfo.
 
-        专属资源池计算主机数量
+        专属资源池计算主机数量。
 
         :return: The host_num of this DedicatedComputeInfo.
         :rtype: int
@@ -198,7 +198,7 @@ class DedicatedComputeInfo:
     def host_num(self, host_num):
         """Sets the host_num of this DedicatedComputeInfo.
 
-        专属资源池计算主机数量
+        专属资源池计算主机数量。
 
         :param host_num: The host_num of this DedicatedComputeInfo.
         :type host_num: int

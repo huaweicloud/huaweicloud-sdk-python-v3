@@ -132,7 +132,6 @@ from huaweicloudsdkfunctiongraph.v2.model.on_error import OnError
 from huaweicloudsdkfunctiongraph.v2.model.operate_error_info import OperateErrorInfo
 from huaweicloudsdkfunctiongraph.v2.model.operation_state import OperationState
 from huaweicloudsdkfunctiongraph.v2.model.page_info import PageInfo
-from huaweicloudsdkfunctiongraph.v2.model.query_run_list_param import QueryRunListParam
 from huaweicloudsdkfunctiongraph.v2.model.reserved_instance_configs import ReservedInstanceConfigs
 from huaweicloudsdkfunctiongraph.v2.model.resources import Resources
 from huaweicloudsdkfunctiongraph.v2.model.retry import Retry

@@ -32,7 +32,7 @@ class InstanceRestartRequsetBody:
 
         The model defined in huaweicloud sdk
 
-        :param restart: 在线调试时必填。
+        :param restart: 空值
         :type restart: object
         """
         
@@ -41,14 +41,13 @@ class InstanceRestartRequsetBody:
         self._restart = None
         self.discriminator = None
 
-        if restart is not None:
-            self.restart = restart
+        self.restart = restart
 
     @property
     def restart(self):
         """Gets the restart of this InstanceRestartRequsetBody.
 
-        在线调试时必填。
+        空值
 
         :return: The restart of this InstanceRestartRequsetBody.
         :rtype: object
@@ -59,7 +58,7 @@ class InstanceRestartRequsetBody:
     def restart(self, restart):
         """Sets the restart of this InstanceRestartRequsetBody.
 
-        在线调试时必填。
+        空值
 
         :param restart: The restart of this InstanceRestartRequsetBody.
         :type restart: object

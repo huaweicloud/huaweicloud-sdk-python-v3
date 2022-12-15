@@ -36,7 +36,7 @@ class ShowGaussMySqlEngineVersionRequest:
 
         :param x_language: 语言。
         :type x_language: str
-        :param database_name: 数据库引擎。支持的引擎如下，不区分大小写：gaussdb-mysql
+        :param database_name: 数据库引擎。支持的引擎如下，不区分大小写：gaussdb-mysql。
         :type database_name: str
         """
         
@@ -76,7 +76,7 @@ class ShowGaussMySqlEngineVersionRequest:
     def database_name(self):
         """Gets the database_name of this ShowGaussMySqlEngineVersionRequest.
 
-        数据库引擎。支持的引擎如下，不区分大小写：gaussdb-mysql
+        数据库引擎。支持的引擎如下，不区分大小写：gaussdb-mysql。
 
         :return: The database_name of this ShowGaussMySqlEngineVersionRequest.
         :rtype: str
@@ -87,7 +87,7 @@ class ShowGaussMySqlEngineVersionRequest:
     def database_name(self, database_name):
         """Sets the database_name of this ShowGaussMySqlEngineVersionRequest.
 
-        数据库引擎。支持的引擎如下，不区分大小写：gaussdb-mysql
+        数据库引擎。支持的引擎如下，不区分大小写：gaussdb-mysql。
 
         :param database_name: The database_name of this ShowGaussMySqlEngineVersionRequest.
         :type database_name: str

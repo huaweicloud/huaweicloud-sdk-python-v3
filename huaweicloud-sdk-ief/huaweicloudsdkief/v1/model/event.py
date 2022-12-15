@@ -74,13 +74,13 @@ class Event:
         :type events: str
         :param target: 
         :type target: :class:`huaweicloudsdkief.v1.EndpointObjResp`
-        :param target_resource: 
+        :param target_resource: 目的端点资源属性
         :type target_resource: dict(str, str)
-        :param success_messages: 
+        :param success_messages: 成功次数
         :type success_messages: int
-        :param fail_messages: 
+        :param fail_messages: 失败次数
         :type fail_messages: int
-        :param delete_at: 
+        :param delete_at: 删除时间
         :type delete_at: int
         """
         
@@ -326,6 +326,8 @@ class Event:
     def target_resource(self):
         """Gets the target_resource of this Event.
 
+        目的端点资源属性
+
         :return: The target_resource of this Event.
         :rtype: dict(str, str)
         """
@@ -334,6 +336,8 @@ class Event:
     @target_resource.setter
     def target_resource(self, target_resource):
         """Sets the target_resource of this Event.
+
+        目的端点资源属性
 
         :param target_resource: The target_resource of this Event.
         :type target_resource: dict(str, str)
@@ -344,6 +348,8 @@ class Event:
     def success_messages(self):
         """Gets the success_messages of this Event.
 
+        成功次数
+
         :return: The success_messages of this Event.
         :rtype: int
         """
@@ -352,6 +358,8 @@ class Event:
     @success_messages.setter
     def success_messages(self, success_messages):
         """Sets the success_messages of this Event.
+
+        成功次数
 
         :param success_messages: The success_messages of this Event.
         :type success_messages: int
@@ -362,6 +370,8 @@ class Event:
     def fail_messages(self):
         """Gets the fail_messages of this Event.
 
+        失败次数
+
         :return: The fail_messages of this Event.
         :rtype: int
         """
@@ -370,6 +380,8 @@ class Event:
     @fail_messages.setter
     def fail_messages(self, fail_messages):
         """Sets the fail_messages of this Event.
+
+        失败次数
 
         :param fail_messages: The fail_messages of this Event.
         :type fail_messages: int
@@ -380,6 +392,8 @@ class Event:
     def delete_at(self):
         """Gets the delete_at of this Event.
 
+        删除时间
+
         :return: The delete_at of this Event.
         :rtype: int
         """
@@ -388,6 +402,8 @@ class Event:
     @delete_at.setter
     def delete_at(self, delete_at):
         """Sets the delete_at of this Event.
+
+        删除时间
 
         :param delete_at: The delete_at of this Event.
         :type delete_at: int

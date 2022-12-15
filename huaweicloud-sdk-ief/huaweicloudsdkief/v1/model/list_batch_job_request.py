@@ -40,7 +40,7 @@ class ListBatchJobRequest:
 
         The model defined in huaweicloud sdk
 
-        :param job_type: 批量处理作业类型
+        :param job_type: 批量处理作业类型，支持以下选项： - node_upgrade： 节点升级 - deployment_deploy：应用部署 - deployment_upgrade：应用升级
         :type job_type: str
         :param limit: 查询返回记录的数量限制
         :type limit: int
@@ -76,7 +76,7 @@ class ListBatchJobRequest:
     def job_type(self):
         """Gets the job_type of this ListBatchJobRequest.
 
-        批量处理作业类型
+        批量处理作业类型，支持以下选项： - node_upgrade： 节点升级 - deployment_deploy：应用部署 - deployment_upgrade：应用升级
 
         :return: The job_type of this ListBatchJobRequest.
         :rtype: str
@@ -87,7 +87,7 @@ class ListBatchJobRequest:
     def job_type(self, job_type):
         """Sets the job_type of this ListBatchJobRequest.
 
-        批量处理作业类型
+        批量处理作业类型，支持以下选项： - node_upgrade： 节点升级 - deployment_deploy：应用部署 - deployment_upgrade：应用升级
 
         :param job_type: The job_type of this ListBatchJobRequest.
         :type job_type: str

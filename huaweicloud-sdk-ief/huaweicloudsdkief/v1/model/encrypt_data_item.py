@@ -36,11 +36,11 @@ class EncryptDataItem:
 
         The model defined in huaweicloud sdk
 
-        :param name: 加密数据项键名
+        :param name: 加密数据项键名，小写英文字母、数字、中划线，以小写字母或数字开头，最大长度为32个字符，不能为空
         :type name: str
         :param value: 加密数据项键值
         :type value: str
-        :param is_encrypted: 加密数据项键值是否已加密，默认为false
+        :param is_encrypted: 加密数据项键值是否已加密，默认为true
         :type is_encrypted: bool
         """
         
@@ -60,7 +60,7 @@ class EncryptDataItem:
     def name(self):
         """Gets the name of this EncryptDataItem.
 
-        加密数据项键名
+        加密数据项键名，小写英文字母、数字、中划线，以小写字母或数字开头，最大长度为32个字符，不能为空
 
         :return: The name of this EncryptDataItem.
         :rtype: str
@@ -71,7 +71,7 @@ class EncryptDataItem:
     def name(self, name):
         """Sets the name of this EncryptDataItem.
 
-        加密数据项键名
+        加密数据项键名，小写英文字母、数字、中划线，以小写字母或数字开头，最大长度为32个字符，不能为空
 
         :param name: The name of this EncryptDataItem.
         :type name: str
@@ -104,7 +104,7 @@ class EncryptDataItem:
     def is_encrypted(self):
         """Gets the is_encrypted of this EncryptDataItem.
 
-        加密数据项键值是否已加密，默认为false
+        加密数据项键值是否已加密，默认为true
 
         :return: The is_encrypted of this EncryptDataItem.
         :rtype: bool
@@ -115,7 +115,7 @@ class EncryptDataItem:
     def is_encrypted(self, is_encrypted):
         """Sets the is_encrypted of this EncryptDataItem.
 
-        加密数据项键值是否已加密，默认为false
+        加密数据项键值是否已加密，默认为true
 
         :param is_encrypted: The is_encrypted of this EncryptDataItem.
         :type is_encrypted: bool

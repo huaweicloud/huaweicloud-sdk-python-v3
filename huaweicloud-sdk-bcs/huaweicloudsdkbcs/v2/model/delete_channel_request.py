@@ -34,7 +34,7 @@ class DeleteChannelRequest:
 
         The model defined in huaweicloud sdk
 
-        :param blockchain_id: 区块链服务id。可调用“查询服务实例列表”接口获取id
+        :param blockchain_id: 区块链服务id。可调用“查询服务实例列表”接口获取ID
         :type blockchain_id: str
         :param channel_id: 区块链通道名称。可调用“查询实例信息”接口获取，接口返回的“channels”中的name字段值
         :type channel_id: str
@@ -53,7 +53,7 @@ class DeleteChannelRequest:
     def blockchain_id(self):
         """Gets the blockchain_id of this DeleteChannelRequest.
 
-        区块链服务id。可调用“查询服务实例列表”接口获取id
+        区块链服务id。可调用“查询服务实例列表”接口获取ID
 
         :return: The blockchain_id of this DeleteChannelRequest.
         :rtype: str
@@ -64,7 +64,7 @@ class DeleteChannelRequest:
     def blockchain_id(self, blockchain_id):
         """Sets the blockchain_id of this DeleteChannelRequest.
 
-        区块链服务id。可调用“查询服务实例列表”接口获取id
+        区块链服务id。可调用“查询服务实例列表”接口获取ID
 
         :param blockchain_id: The blockchain_id of this DeleteChannelRequest.
         :type blockchain_id: str

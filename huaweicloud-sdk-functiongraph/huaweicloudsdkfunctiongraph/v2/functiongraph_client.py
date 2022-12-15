@@ -1941,7 +1941,7 @@ class FunctionGraphClient(Client):
         return self.list_function_reserved_instances_with_http_info(request)
 
     def list_function_reserved_instances_with_http_info(self, request):
-        all_params = ['marker', 'maxitems', 'urn']
+        all_params = ['marker', 'limit', 'urn']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1956,8 +1956,8 @@ class FunctionGraphClient(Client):
         query_params = []
         if 'marker' in local_var_params:
             query_params.append(('marker', local_var_params['marker']))
-        if 'maxitems' in local_var_params:
-            query_params.append(('maxitems', local_var_params['maxitems']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
         if 'urn' in local_var_params:
             query_params.append(('urn', local_var_params['urn']))
 
@@ -2313,7 +2313,7 @@ class FunctionGraphClient(Client):
         return self.list_reserved_instance_configs_with_http_info(request)
 
     def list_reserved_instance_configs_with_http_info(self, request):
-        all_params = ['function_urn']
+        all_params = ['function_urn', 'marker', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2328,6 +2328,10 @@ class FunctionGraphClient(Client):
         query_params = []
         if 'function_urn' in local_var_params:
             query_params.append(('function_urn', local_var_params['function_urn']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -3564,7 +3568,7 @@ class FunctionGraphClient(Client):
         return self.show_workflow_execution_for_page_with_http_info(request)
 
     def show_workflow_execution_for_page_with_http_info(self, request):
-        all_params = ['workflow_id', 'create_workflow_request_body']
+        all_params = ['workflow_id', 'offset', 'limit', 'start_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3579,14 +3583,20 @@ class FunctionGraphClient(Client):
             path_params['workflow_id'] = local_var_params['workflow_id']
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
 
         header_params = {}
 
         form_params = {}
 
         body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 

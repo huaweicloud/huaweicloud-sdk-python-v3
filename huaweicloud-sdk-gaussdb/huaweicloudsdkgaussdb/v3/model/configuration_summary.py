@@ -56,9 +56,9 @@ class ConfigurationSummary:
         :type datastore_version_name: str
         :param datastore_name: 引擎名。
         :type datastore_name: str
-        :param created: 创建时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :param created: 创建时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
         :type created: str
-        :param updated: 更新时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :param updated: 更新时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
         :type updated: str
         :param user_defined: 是否是用户自定义参数模板：  - false，表示为系统默认参数模板。 - true，表示为用户自定义参数模板。
         :type user_defined: bool
@@ -200,7 +200,7 @@ class ConfigurationSummary:
     def created(self):
         """Gets the created of this ConfigurationSummary.
 
-        创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
         :return: The created of this ConfigurationSummary.
         :rtype: str
@@ -211,7 +211,7 @@ class ConfigurationSummary:
     def created(self, created):
         """Sets the created of this ConfigurationSummary.
 
-        创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
         :param created: The created of this ConfigurationSummary.
         :type created: str
@@ -222,7 +222,7 @@ class ConfigurationSummary:
     def updated(self):
         """Gets the updated of this ConfigurationSummary.
 
-        更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
         :return: The updated of this ConfigurationSummary.
         :rtype: str
@@ -233,7 +233,7 @@ class ConfigurationSummary:
     def updated(self, updated):
         """Sets the updated of this ConfigurationSummary.
 
-        更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
         :param updated: The updated of this ConfigurationSummary.
         :type updated: str

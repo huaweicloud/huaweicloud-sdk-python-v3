@@ -61,7 +61,8 @@ class PodConfigs:
         self._toleration_seconds = None
         self.discriminator = None
 
-        self.host_network = host_network
+        if host_network is not None:
+            self.host_network = host_network
         if host_pid is not None:
             self.host_pid = host_pid
         if migration is not None:

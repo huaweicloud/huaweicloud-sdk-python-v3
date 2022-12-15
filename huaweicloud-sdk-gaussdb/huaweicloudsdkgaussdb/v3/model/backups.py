@@ -58,15 +58,15 @@ class Backups:
         :type id: str
         :param name: 备份名称。
         :type name: str
-        :param begin_time: 备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :param begin_time: 备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
         :type begin_time: str
-        :param end_time: 备份结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :param end_time: 备份结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
         :type end_time: str
         :param status: 备份状态，取值： - BUILDING：备份中。 - COMPLETED：备份完成。 - FAILED：备份失败。 - AVAILABLE：备份可用。
         :type status: str
         :param take_up_time: 备份花费时间(单位：minutes)
         :type take_up_time: int
-        :param type: 备份类型，取值： - auto：自动全量备份。 - manual：手动全量备份
+        :param type: 备份类型，取值：  - auto：自动全量备份。 - manual：手动全量备份。
         :type type: str
         :param size: 备份大小，(单位：MB)
         :type size: int
@@ -169,7 +169,7 @@ class Backups:
     def begin_time(self):
         """Gets the begin_time of this Backups.
 
-        备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
         :return: The begin_time of this Backups.
         :rtype: str
@@ -180,7 +180,7 @@ class Backups:
     def begin_time(self, begin_time):
         """Sets the begin_time of this Backups.
 
-        备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
         :param begin_time: The begin_time of this Backups.
         :type begin_time: str
@@ -191,7 +191,7 @@ class Backups:
     def end_time(self):
         """Gets the end_time of this Backups.
 
-        备份结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        备份结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
         :return: The end_time of this Backups.
         :rtype: str
@@ -202,7 +202,7 @@ class Backups:
     def end_time(self, end_time):
         """Sets the end_time of this Backups.
 
-        备份结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        备份结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
         :param end_time: The end_time of this Backups.
         :type end_time: str
@@ -257,7 +257,7 @@ class Backups:
     def type(self):
         """Gets the type of this Backups.
 
-        备份类型，取值： - auto：自动全量备份。 - manual：手动全量备份
+        备份类型，取值：  - auto：自动全量备份。 - manual：手动全量备份。
 
         :return: The type of this Backups.
         :rtype: str
@@ -268,7 +268,7 @@ class Backups:
     def type(self, type):
         """Sets the type of this Backups.
 
-        备份类型，取值： - auto：自动全量备份。 - manual：手动全量备份
+        备份类型，取值：  - auto：自动全量备份。 - manual：手动全量备份。
 
         :param type: The type of this Backups.
         :type type: str

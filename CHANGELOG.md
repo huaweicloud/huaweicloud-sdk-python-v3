@@ -1,3 +1,328 @@
+# 3.1.16 2022-12-15
+
+### HuaweiCloud SDK APM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The response parameter `function` changed to required of the interface `ShowMonitorItemViewConfig`
+  - The request parameter `view_type`, `collector_name`, `metric_set`, `function`, `env_id`, `start_time`, `end_time` changed to required of the interface `ShowTrend`
+  - The request parameter `view_type`, `collector_name`, `metric_set`, `function`, `page`, `page_size`, `env_id`, `start_time`, `end_time` changed to required of the interface `ShowSumTable`
+  - Changes of the interface `ShowRawTable`:
+    - Add the request parameter `last_row_id`
+    - Remove the request parameter `lastRowId`
+    - The request parameter `function` changed to required
+  - Changes of the interface `SearchAgent`:
+    - Add the request parameter `order_by_status`
+    - Remove the request parameter `orderByStatus`
+
+### HuaweiCloud SDK BCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `order_fade_enabled`, `is_support_tc3`, `order_fade_cache`, `deploy_status`, `block_info`, `cluster_platform_type`, `status`, `status_detail`, `order_fade_enabled` to the interface `ShowBlockchainDetail`
+  - Add the response parameter `result` to the interface `DeleteMemberInvite`
+  - Add the response parameter `result` to the interface `HandleNotification`
+  - Changes of the interface `CreateNewBlockchain`:
+    - Modify the type `string` -> `int64` of the request parameter `node_flavor`
+    - Modify the type `string` -> `int64` of the request parameter `cce_flavor`
+    - Modify the type `string` -> `int64` of the request parameter `init_node_pwd`
+    - Modify the type `string` -> `int64` of the request parameter `az`
+    - Modify the type `string` -> `int64` of the request parameter `cluster_platform_type`
+  - Add the response parameter `result` to the interface `DownloadBlockchainCert`
+  - Add the response parameter `result` to the interface `DownloadBlockchainSdkConfig`
+  - Add the response parameter `filesystemUsage` to the interface `ListEntityMetric`
+  - Add the response parameter `result` to the interface `CreateBlockchainCertByUserName`
+
+### HuaweiCloud SDK CBH
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `available_zone_id` changed to not required of the interface `CreateInstanceOrder`
+
+### HuaweiCloud SDK CBR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateVault`:
+    - Add the enum values `workspace` to the request parameter `object_type`
+    - Add the enum values `workspace` to the response parameter `object_type`
+  - Add the enum values `workspace` to the response parameter `object_type` to the interface `ListVault`
+  - Add the enum values `workspace` to the response parameter `object_type` to the interface `ShowVault`
+  - Add the enum values `workspace` to the response parameter `object_type` to the interface `UpdateVault`
+  - Add the enum values `OS::Workspace::DesktopV2` to the response parameter `resource_type` to the interface `ShowBackup`
+  - Changes of the interface `ListBackups`:
+    - Add the enum values `OS::Workspace::DesktopV2` to the request parameter `resource_type`
+    - Add the enum values `OS::Workspace::DesktopV2` to the response parameter `resource_type`
+  - Add the enum values `workspace` to the response parameter `object_type` to the interface `ListProtectable`
+  - Add the enum values `workspace` to the response parameter `object_type` to the interface `ShowProtectable`
+  - Add the enum values `workspace` to the response parameter `object_type` to the interface `ShowVaultResourceInstances`
+
+### HuaweiCloud SDK CC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `interflow_mode` to the interface `CreateBandwidthPackage`
+  - Changes of the interface `ListInterRegionBandwidths`:
+    - Add the response parameter `inter_region_bandwidths`
+    - Remove the response parameter `inter_region_bandwidth`
+
+### HuaweiCloud SDK CSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateCluster`:
+    - Add the request parameter `vpcPermissions`
+    - Add the response parameter `orderId`
+    - Remove the request parameter `vpcPermisssions`
+    - Remove the response parameter `ordeId`
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `server_id` to the interface `ListServersDetails`
+
+### HuaweiCloud SDK EIP
+
+- _Features_
+  - Support the interfaces `ShowResourcesJobDetail`, `ChangeBandwidthToPeriod`, `ChangePublicipToPeriod`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateFunction`:
+    - Add the request parameters `depend_version_list`, `func_vpc`
+    - Add the response parameter `depend_version_list`
+  - Changes of the interface `UpdateFunctionCode`:
+    - Add the request parameter `depend_version_list`
+    - Add the response parameter `depend_version_list`
+  - Add the response parameter `depend_version_list` to the interface `ShowFunctionCode`
+  - Add the response parameter `depend_version_list` to the interface `ShowFunctionConfig`
+  - Changes of the interface `ListReservedInstanceConfigs`:
+    - Add the request parameters `marker`, `limit`
+    - Add the response parameter `reserved_instances`
+    - Remove the response parameter `reservedinstances`
+  - Add the response parameter `depend_version_list` to the interface `ImportFunction`
+  - Changes of the interface `ListFunctionReservedInstances`:
+    - Add the request parameter `limit`
+    - Remove the request parameter `maxitems`
+  - Changes of the interface `ShowWorkflowExecutionForPage`:
+    - Add the request parameters `offset`, `limit`, `start_time`, `end_time`
+    - Remove the request parameter `CreateWorkflowRequestBody`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the request parameters `id`, `weight` from the interface `SetGaussMySqlProxyWeight`
+  - Add the enum values `Pending` to the response parameter `status` to the interface `ShowGaussMySqlJobInfo`
+  - Changes of the interface `ListScheduleJobs`:
+    - Add the response parameter `job_status`
+    - Remove the response parameter `task_status`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListConfigurationDatastores`:
+    - Add the response parameter `datastore_name`
+    - Remove the response parameter `datastore_type`
+  - Remove the request parameters `instance`, `vcpus`, `ram` from the interface `ModifyEpsQuotas`
+  - Remove the response parameters `instance`, `vcpus`, `ram`, `instance`, `vcpus`, `ram` from the interface `ListEpsQuotas`
+
+### HuaweiCloud SDK HSS
+
+- _Features_
+  - Support the following interfaces：
+    - `ShowAssetStatistic`
+    - `ListUserStatistics`
+    - `ListPortStatistics`
+    - `ListProcessStatistics`
+    - `ListAppStatistics`
+    - `ListAutoLaunchStatistics`
+    - `ListPorts`
+    - `ListApps`
+    - `ListAutoLaunchs`
+    - `ListAppChangeHistories`
+    - `ListAutoLaunchChangeHistories`
+    - `ListProtectionServer`
+    - `ListProtectionPolicy`
+    - `UpdateProtectionPolicy`
+    - `StartProtection`
+    - `StopProtection`
+    - `ShowBackupPolicyInfo`
+    - `UpdateBackupPolicyInfo`
+    - `ChangeEvent`
+    - `ListAlarmWhiteList`
+    - `ListHostGroups`
+    - `ChangeHostsGroup`
+    - `AddHostsGroup`
+    - `DeleteHostsGroup`
+    - `ListPolicyGroup`
+    - `AssociatePolicyGroup`
+    - `ListVulHosts`
+    - `ChangeVulStatus`
+    - `ListWtpProtectHost`
+    - `SetWtpProtectionStatusInfo`
+    - `SetRaspSwitch`
+    - `ListHostProtectHistoryInfo`
+    - `ListHostRaspProtectHistoryInfo`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `fix_status`, `enable_auto_fix`, `rule_params` to the interface `ListRiskConfigCheckRules`
+  - Add the response parameter `extend_info` to the interface `ListSecurityEvents`
+  - Changes of the interface `ListHostStatus`:
+    - Add the response parameters `enterprise_project_id`, `agent_create_time`, `agent_update_time`, `agent_version`, `upgrade_status`, `upgrade_result_code`, `upgradable`
+    - The request parameter `region` changed to required
+  - The request parameter `vul_id` changed to required of the interface `ListVulnerabilities`
+
+### HuaweiCloud SDK IEF
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The response parameter `key`, `value` changed to not required of the interface `ListTags`
+  - The request parameter `key`, `value` changed to not required of the interface `CreateTag`
+  - The response parameter `key`, `value` changed to not required of the interface `ListEdgeNodes`
+  - The response parameter `key`, `value` changed to not required of the interface `ShowEdgeNodeDetail`
+  - The response parameter `key`, `value` changed to not required of the interface `UpdateEdgeNode`
+  - Add the request parameter `device_ids` to the interface `CreateEdgeGroup`
+  - Changes of the interface `ListEdgeGroupCerts`:
+    - Add the response parameter `groupcerts`
+    - Remove the response parameter `edge_groups`
+  - The response parameter `type` changed to not required of the interface `ListDevices`
+  - The request parameter `type` changed to not required of the interface `CreateDevice`
+  - The response parameter `type` changed to not required of the interface `ShowDevice`
+  - The response parameter `type` changed to not required of the interface `UpdateDevice`
+  - The response parameter `type` changed to not required of the interface `ShowDeviceTwin`
+  - Changes of the interface `UpdateDeviceTwin`:
+    - The request parameter `twin`, `property_visitors` changed to not required
+    - The response parameter `type` changed to not required
+  - The response parameter `key`, `value` changed to not required of the interface `ListDeviceTemplates`
+  - The request parameter `key`, `value` changed to not required of the interface `CreateDeviceTemplate`
+  - The response parameter `key`, `value` changed to not required of the interface `ShowDeviceTemplate`
+  - The response parameter `key`, `value` changed to not required of the interface `UpdateDeviceTemplateById`
+  - The response parameter `key`, `value` changed to not required of the interface `ListResourceByTags`
+  - The request parameter `key`, `value` changed to not required of the interface `BatchAddDeleteTags`
+  - The response parameter `read_only` changed to not required of the interface `ListApps`
+  - The response parameter `read_only` changed to not required of the interface `ShowAppDetail`
+  - The response parameter `read_only` changed to not required of the interface `UpdateApp`
+  - The response parameter `read_only` changed to not required of the interface `ListAppVersions`
+  - The request parameter `read_only` changed to not required of the interface `CreateAppVersions`
+  - The response parameter `read_only` changed to not required of the interface `ShowAppVersionDetail`
+  - Changes of the interface `UpdateAppVersion`:
+    - The request parameter `read_only` changed to not required
+    - The response parameter `read_only` changed to not required
+  - The response parameter `host_network`, `read_only` changed to not required of the interface `ListDeployments`
+  - The request parameter `host_network`, `read_only` changed to not required of the interface `CreateDeployments`
+  - The response parameter `host_network`, `read_only` changed to not required of the interface `ShowDeployment`
+  - Changes of the interface `UpdateDeployment`:
+    - The request parameter `replicas`, `host_network`, `read_only` changed to not required
+    - The response parameter `host_network`, `read_only` changed to not required
+  - The response parameter `host_network`, `read_only`changed to not required of the interface `ListPods`
+  - The request parameter `description` changed to not required of the interface `CreateEncryptdatas`
+  - The request parameter `description` changed to not required of the interface `UpdateEncryptdatas`
+  - Changes of the interface `ListBatchJob`:
+    - Add the response parameters `task_total_count`, `task_success_count`, `task_failed_count`, `status_last_updated_at`, `description`
+    - Remove the response parameters `task_count`, `success_count`, `failed_count`, `updated_at`
+  - Changes of the interface `ShowBatchJob`:
+    - Add the response parameter `status_last_updated_at`
+    - Remove the response parameter `updated_at`
+
+### HuaweiCloud SDK Live
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `key` to the interface `CreateRecordCallbackConfig`
+  - Changes of the interface `UpdateRecordCallbackConfig`:
+    - Add the request parameter `key`
+    - Add the response parameters `id`, `publish_domain`, `app`, `notify_callback_url`, `notify_event_subscription`, `sign_type`, `create_time`, `update_time`
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `trigger_condition_count`, `trigger_condition_frequency`, `whether_recovery_policy`, `recovery_policy` to the interface `UpdateSqlAlarmRule`
+  - Add the request parameters `trigger_condition_count`, `trigger_condition_frequency`, `whether_recovery_policy`, `recovery_policy` to the interface `CreateSqlAlarmRule`
+  - Add the response parameters `trigger_condition_count`, `trigger_condition_frequency`, `whether_recovery_policy`, `recovery_policy` to the interface `ListSqlAlarmRules`
+  - Add the request parameters `trigger_condition_count`, `trigger_condition_frequency`, `whether_recovery_policy`, `recovery_policy` to the interface `UpdateKeywordsAlarmRule`
+  - Add the request parameters `trigger_condition_count`, `trigger_condition_frequency`, `whether_recovery_policy`, `recovery_policy` to the interface `CreateKeywordsAlarmRule`
+  - Add the response parameters `trigger_condition_count`, `trigger_condition_frequency`, `whether_recovery_policy`, `recovery_policy` to the interface `ListKeywordsAlarmRules`
+  - The request parameter `host_id_list` changed to not required of the interface `ListHost`
+  - The request parameter `is_analysis`, `is_analysis` changed to not required of the interface `UpdateStructConfig`
+  - The request parameter `is_analysis`, `is_analysis` changed to not required of the interface `CreateStructConfig`
+
+### HuaweiCloud SDK OSM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `resource_type_id` to the interface `ListAuthorizations`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `restart` changed to required of the interface `StartInstanceRestartAction`
+
+### HuaweiCloud SDK Workspace
+
+- _Features_
+  - Support the interface `ShowQuotas`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.15 2022-12-08
 
 ### HuaweiCloud SDK MapDS

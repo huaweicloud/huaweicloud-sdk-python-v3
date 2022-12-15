@@ -20,29 +20,43 @@ class ListReservedInstanceConfigsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'function_urn': 'str'
+        'function_urn': 'str',
+        'marker': 'str',
+        'limit': 'str'
     }
 
     attribute_map = {
-        'function_urn': 'function_urn'
+        'function_urn': 'function_urn',
+        'marker': 'marker',
+        'limit': 'limit'
     }
 
-    def __init__(self, function_urn=None):
+    def __init__(self, function_urn=None, marker=None, limit=None):
         """ListReservedInstanceConfigsRequest
 
         The model defined in huaweicloud sdk
 
         :param function_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。
         :type function_urn: str
+        :param marker: 本次查询起始位置，默认值0
+        :type marker: str
+        :param limit: 本次查询最大返回的数据条数，最大值500，默认值100
+        :type limit: str
         """
         
         
 
         self._function_urn = None
+        self._marker = None
+        self._limit = None
         self.discriminator = None
 
         if function_urn is not None:
             self.function_urn = function_urn
+        if marker is not None:
+            self.marker = marker
+        if limit is not None:
+            self.limit = limit
 
     @property
     def function_urn(self):
@@ -65,6 +79,50 @@ class ListReservedInstanceConfigsRequest:
         :type function_urn: str
         """
         self._function_urn = function_urn
+
+    @property
+    def marker(self):
+        """Gets the marker of this ListReservedInstanceConfigsRequest.
+
+        本次查询起始位置，默认值0
+
+        :return: The marker of this ListReservedInstanceConfigsRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListReservedInstanceConfigsRequest.
+
+        本次查询起始位置，默认值0
+
+        :param marker: The marker of this ListReservedInstanceConfigsRequest.
+        :type marker: str
+        """
+        self._marker = marker
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListReservedInstanceConfigsRequest.
+
+        本次查询最大返回的数据条数，最大值500，默认值100
+
+        :return: The limit of this ListReservedInstanceConfigsRequest.
+        :rtype: str
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListReservedInstanceConfigsRequest.
+
+        本次查询最大返回的数据条数，最大值500，默认值100
+
+        :param limit: The limit of this ListReservedInstanceConfigsRequest.
+        :type limit: str
+        """
+        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

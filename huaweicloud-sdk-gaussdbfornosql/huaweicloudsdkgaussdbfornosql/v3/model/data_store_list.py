@@ -20,56 +20,56 @@ class DataStoreList:
     sensitive_list = []
 
     openapi_types = {
-        'datastore_type': 'str',
+        'datastore_name': 'str',
         'version': 'str'
     }
 
     attribute_map = {
-        'datastore_type': 'datastore_type',
+        'datastore_name': 'datastore_name',
         'version': 'version'
     }
 
-    def __init__(self, datastore_type=None, version=None):
+    def __init__(self, datastore_name=None, version=None):
         """DataStoreList
 
         The model defined in huaweicloud sdk
 
-        :param datastore_type: 数据库引擎。
-        :type datastore_type: str
+        :param datastore_name: 数据库引擎。
+        :type datastore_name: str
         :param version: 数据库引擎版本。
         :type version: str
         """
         
         
 
-        self._datastore_type = None
+        self._datastore_name = None
         self._version = None
         self.discriminator = None
 
-        self.datastore_type = datastore_type
+        self.datastore_name = datastore_name
         self.version = version
 
     @property
-    def datastore_type(self):
-        """Gets the datastore_type of this DataStoreList.
+    def datastore_name(self):
+        """Gets the datastore_name of this DataStoreList.
 
         数据库引擎。
 
-        :return: The datastore_type of this DataStoreList.
+        :return: The datastore_name of this DataStoreList.
         :rtype: str
         """
-        return self._datastore_type
+        return self._datastore_name
 
-    @datastore_type.setter
-    def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this DataStoreList.
+    @datastore_name.setter
+    def datastore_name(self, datastore_name):
+        """Sets the datastore_name of this DataStoreList.
 
         数据库引擎。
 
-        :param datastore_type: The datastore_type of this DataStoreList.
-        :type datastore_type: str
+        :param datastore_name: The datastore_name of this DataStoreList.
+        :type datastore_name: str
         """
-        self._datastore_type = datastore_type
+        self._datastore_name = datastore_name
 
     @property
     def version(self):

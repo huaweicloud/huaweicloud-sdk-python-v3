@@ -75,7 +75,8 @@ class ProductInfos:
         self.cloud_service_type = cloud_service_type
         self.resource_type = resource_type
         self.resource_spec_code = resource_spec_code
-        self.available_zone_id = available_zone_id
+        if available_zone_id is not None:
+            self.available_zone_id = available_zone_id
         self.resource_size_measure_id = resource_size_measure_id
         self.resource_size = resource_size
 

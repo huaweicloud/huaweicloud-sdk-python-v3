@@ -24,7 +24,8 @@ class RecordCallbackConfigRequest:
         'app': 'str',
         'notify_callback_url': 'str',
         'notify_event_subscription': 'list[str]',
-        'sign_type': 'str'
+        'sign_type': 'str',
+        'key': 'str'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class RecordCallbackConfigRequest:
         'app': 'app',
         'notify_callback_url': 'notify_callback_url',
         'notify_event_subscription': 'notify_event_subscription',
-        'sign_type': 'sign_type'
+        'sign_type': 'sign_type',
+        'key': 'key'
     }
 
-    def __init__(self, publish_domain=None, app=None, notify_callback_url=None, notify_event_subscription=None, sign_type=None):
+    def __init__(self, publish_domain=None, app=None, notify_callback_url=None, notify_event_subscription=None, sign_type=None, key=None):
         """RecordCallbackConfigRequest
 
         The model defined in huaweicloud sdk
@@ -50,6 +52,8 @@ class RecordCallbackConfigRequest:
         :type notify_event_subscription: list[str]
         :param sign_type: 加密类型
         :type sign_type: str
+        :param key: 回调秘钥，主要用于鉴权。为了保护用户数据信息安全，建议填写。
+        :type key: str
         """
         
         
@@ -59,6 +63,7 @@ class RecordCallbackConfigRequest:
         self._notify_callback_url = None
         self._notify_event_subscription = None
         self._sign_type = None
+        self._key = None
         self.discriminator = None
 
         self.publish_domain = publish_domain
@@ -69,6 +74,8 @@ class RecordCallbackConfigRequest:
             self.notify_event_subscription = notify_event_subscription
         if sign_type is not None:
             self.sign_type = sign_type
+        if key is not None:
+            self.key = key
 
     @property
     def publish_domain(self):
@@ -179,6 +186,28 @@ class RecordCallbackConfigRequest:
         :type sign_type: str
         """
         self._sign_type = sign_type
+
+    @property
+    def key(self):
+        """Gets the key of this RecordCallbackConfigRequest.
+
+        回调秘钥，主要用于鉴权。为了保护用户数据信息安全，建议填写。
+
+        :return: The key of this RecordCallbackConfigRequest.
+        :rtype: str
+        """
+        return self._key
+
+    @key.setter
+    def key(self, key):
+        """Sets the key of this RecordCallbackConfigRequest.
+
+        回调秘钥，主要用于鉴权。为了保护用户数据信息安全，建议填写。
+
+        :param key: The key of this RecordCallbackConfigRequest.
+        :type key: str
+        """
+        self._key = key
 
     def to_dict(self):
         """Returns the model properties as a dict"""

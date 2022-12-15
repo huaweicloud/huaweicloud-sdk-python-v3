@@ -32,7 +32,7 @@ class MysqlUpdateInstanceNameRequest:
 
         The model defined in huaweicloud sdk
 
-        :param name: 实例名称。 用于表示实例的名称，同一租户下，同类型的实例名可重名。取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
+        :param name: 实例名称。  用于表示实例的名称，同一租户下，同类型的实例名可重名。取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
         :type name: str
         """
         
@@ -47,7 +47,7 @@ class MysqlUpdateInstanceNameRequest:
     def name(self):
         """Gets the name of this MysqlUpdateInstanceNameRequest.
 
-        实例名称。 用于表示实例的名称，同一租户下，同类型的实例名可重名。取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
+        实例名称。  用于表示实例的名称，同一租户下，同类型的实例名可重名。取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
 
         :return: The name of this MysqlUpdateInstanceNameRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class MysqlUpdateInstanceNameRequest:
     def name(self, name):
         """Sets the name of this MysqlUpdateInstanceNameRequest.
 
-        实例名称。 用于表示实例的名称，同一租户下，同类型的实例名可重名。取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
+        实例名称。  用于表示实例的名称，同一租户下，同类型的实例名可重名。取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
 
         :param name: The name of this MysqlUpdateInstanceNameRequest.
         :type name: str

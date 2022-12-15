@@ -20,24 +20,24 @@ class ListReservedInstanceConfigsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'reservedinstances': 'list[ReservedInstanceConfigs]',
+        'reserved_instances': 'list[ReservedInstanceConfigs]',
         'page_info': 'PageInfo',
         'count': 'int'
     }
 
     attribute_map = {
-        'reservedinstances': 'reservedinstances',
+        'reserved_instances': 'reserved_instances',
         'page_info': 'page_info',
         'count': 'count'
     }
 
-    def __init__(self, reservedinstances=None, page_info=None, count=None):
+    def __init__(self, reserved_instances=None, page_info=None, count=None):
         """ListReservedInstanceConfigsResponse
 
         The model defined in huaweicloud sdk
 
-        :param reservedinstances: 函数预留实例列表
-        :type reservedinstances: list[:class:`huaweicloudsdkfunctiongraph.v2.ReservedInstanceConfigs`]
+        :param reserved_instances: 函数预留实例列表
+        :type reserved_instances: list[:class:`huaweicloudsdkfunctiongraph.v2.ReservedInstanceConfigs`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkfunctiongraph.v2.PageInfo`
         :param count: 函数个数
@@ -46,39 +46,39 @@ class ListReservedInstanceConfigsResponse(SdkResponse):
         
         super(ListReservedInstanceConfigsResponse, self).__init__()
 
-        self._reservedinstances = None
+        self._reserved_instances = None
         self._page_info = None
         self._count = None
         self.discriminator = None
 
-        if reservedinstances is not None:
-            self.reservedinstances = reservedinstances
+        if reserved_instances is not None:
+            self.reserved_instances = reserved_instances
         if page_info is not None:
             self.page_info = page_info
         if count is not None:
             self.count = count
 
     @property
-    def reservedinstances(self):
-        """Gets the reservedinstances of this ListReservedInstanceConfigsResponse.
+    def reserved_instances(self):
+        """Gets the reserved_instances of this ListReservedInstanceConfigsResponse.
 
         函数预留实例列表
 
-        :return: The reservedinstances of this ListReservedInstanceConfigsResponse.
+        :return: The reserved_instances of this ListReservedInstanceConfigsResponse.
         :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.ReservedInstanceConfigs`]
         """
-        return self._reservedinstances
+        return self._reserved_instances
 
-    @reservedinstances.setter
-    def reservedinstances(self, reservedinstances):
-        """Sets the reservedinstances of this ListReservedInstanceConfigsResponse.
+    @reserved_instances.setter
+    def reserved_instances(self, reserved_instances):
+        """Sets the reserved_instances of this ListReservedInstanceConfigsResponse.
 
         函数预留实例列表
 
-        :param reservedinstances: The reservedinstances of this ListReservedInstanceConfigsResponse.
-        :type reservedinstances: list[:class:`huaweicloudsdkfunctiongraph.v2.ReservedInstanceConfigs`]
+        :param reserved_instances: The reserved_instances of this ListReservedInstanceConfigsResponse.
+        :type reserved_instances: list[:class:`huaweicloudsdkfunctiongraph.v2.ReservedInstanceConfigs`]
         """
-        self._reservedinstances = reservedinstances
+        self._reserved_instances = reserved_instances
 
     @property
     def page_info(self):

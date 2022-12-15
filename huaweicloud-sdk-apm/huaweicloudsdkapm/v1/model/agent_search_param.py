@@ -35,7 +35,7 @@ class AgentSearchParam:
         'env_id': 'env_id',
         'status': 'status',
         'region': 'region',
-        'order_by_status': 'orderByStatus',
+        'order_by_status': 'order_by_status',
         'page': 'page',
         'page_size': 'page_size',
         'keyword': 'keyword'

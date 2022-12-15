@@ -98,14 +98,11 @@ class SumTableParam:
 
         if request_id is not None:
             self.request_id = request_id
-        if view_config is not None:
-            self.view_config = view_config
+        self.view_config = view_config
         if strategy is not None:
             self.strategy = strategy
-        if page is not None:
-            self.page = page
-        if page_size is not None:
-            self.page_size = page_size
+        self.page = page
+        self.page_size = page_size
         if order_by is not None:
             self.order_by = order_by
         if search_word is not None:
@@ -114,12 +111,9 @@ class SumTableParam:
             self.instance_id = instance_id
         if monitor_item_id is not None:
             self.monitor_item_id = monitor_item_id
-        if env_id is not None:
-            self.env_id = env_id
-        if start_time is not None:
-            self.start_time = start_time
-        if end_time is not None:
-            self.end_time = end_time
+        self.env_id = env_id
+        self.start_time = start_time
+        self.end_time = end_time
 
     @property
     def request_id(self):

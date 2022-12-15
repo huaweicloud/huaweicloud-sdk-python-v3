@@ -96,7 +96,7 @@ class ListBackupsRequest:
         :type resource_id: str
         :param resource_name: 资源名称
         :type resource_name: str
-        :param resource_type: 资源类型
+        :param resource_type: 资源类型: 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 云桌面：OS::Workspace::DesktopV2
         :type resource_type: str
         :param sort: sort的内容为一组由逗号分隔的属性及可选排序方向组成，形如&lt;key1&gt;[:&lt;direction&gt;],&lt;key2&gt;[:&lt;direction&gt;],其中direction的取值为asc (升序) 或 desc (降序),如没有传入direction参数，默认为降序，sort内容的长度限制为255个字符。key取值范围:[created_at，updated_at，name，status，protected_at，id]
         :type sort: str
@@ -437,7 +437,7 @@ class ListBackupsRequest:
     def resource_type(self):
         """Gets the resource_type of this ListBackupsRequest.
 
-        资源类型
+        资源类型: 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 云桌面：OS::Workspace::DesktopV2
 
         :return: The resource_type of this ListBackupsRequest.
         :rtype: str
@@ -448,7 +448,7 @@ class ListBackupsRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListBackupsRequest.
 
-        资源类型
+        资源类型: 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 云桌面：OS::Workspace::DesktopV2
 
         :param resource_type: The resource_type of this ListBackupsRequest.
         :type resource_type: str

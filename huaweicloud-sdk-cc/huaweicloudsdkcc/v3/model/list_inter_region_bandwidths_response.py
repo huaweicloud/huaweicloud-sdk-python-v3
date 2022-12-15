@@ -20,24 +20,24 @@ class ListInterRegionBandwidthsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'inter_region_bandwidth': 'list[InterRegionBandwidth]',
+        'inter_region_bandwidths': 'list[InterRegionBandwidth]',
         'page_info': 'PageInfo',
         'request_id': 'str'
     }
 
     attribute_map = {
-        'inter_region_bandwidth': 'inter_region_bandwidth',
+        'inter_region_bandwidths': 'inter_region_bandwidths',
         'page_info': 'page_info',
         'request_id': 'request_id'
     }
 
-    def __init__(self, inter_region_bandwidth=None, page_info=None, request_id=None):
+    def __init__(self, inter_region_bandwidths=None, page_info=None, request_id=None):
         """ListInterRegionBandwidthsResponse
 
         The model defined in huaweicloud sdk
 
-        :param inter_region_bandwidth: 域间带宽实例列表。
-        :type inter_region_bandwidth: list[:class:`huaweicloudsdkcc.v3.InterRegionBandwidth`]
+        :param inter_region_bandwidths: 域间带宽实例列表。
+        :type inter_region_bandwidths: list[:class:`huaweicloudsdkcc.v3.InterRegionBandwidth`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
         :param request_id: 请求ID。
@@ -46,39 +46,39 @@ class ListInterRegionBandwidthsResponse(SdkResponse):
         
         super(ListInterRegionBandwidthsResponse, self).__init__()
 
-        self._inter_region_bandwidth = None
+        self._inter_region_bandwidths = None
         self._page_info = None
         self._request_id = None
         self.discriminator = None
 
-        if inter_region_bandwidth is not None:
-            self.inter_region_bandwidth = inter_region_bandwidth
+        if inter_region_bandwidths is not None:
+            self.inter_region_bandwidths = inter_region_bandwidths
         if page_info is not None:
             self.page_info = page_info
         if request_id is not None:
             self.request_id = request_id
 
     @property
-    def inter_region_bandwidth(self):
-        """Gets the inter_region_bandwidth of this ListInterRegionBandwidthsResponse.
+    def inter_region_bandwidths(self):
+        """Gets the inter_region_bandwidths of this ListInterRegionBandwidthsResponse.
 
         域间带宽实例列表。
 
-        :return: The inter_region_bandwidth of this ListInterRegionBandwidthsResponse.
+        :return: The inter_region_bandwidths of this ListInterRegionBandwidthsResponse.
         :rtype: list[:class:`huaweicloudsdkcc.v3.InterRegionBandwidth`]
         """
-        return self._inter_region_bandwidth
+        return self._inter_region_bandwidths
 
-    @inter_region_bandwidth.setter
-    def inter_region_bandwidth(self, inter_region_bandwidth):
-        """Sets the inter_region_bandwidth of this ListInterRegionBandwidthsResponse.
+    @inter_region_bandwidths.setter
+    def inter_region_bandwidths(self, inter_region_bandwidths):
+        """Sets the inter_region_bandwidths of this ListInterRegionBandwidthsResponse.
 
         域间带宽实例列表。
 
-        :param inter_region_bandwidth: The inter_region_bandwidth of this ListInterRegionBandwidthsResponse.
-        :type inter_region_bandwidth: list[:class:`huaweicloudsdkcc.v3.InterRegionBandwidth`]
+        :param inter_region_bandwidths: The inter_region_bandwidths of this ListInterRegionBandwidthsResponse.
+        :type inter_region_bandwidths: list[:class:`huaweicloudsdkcc.v3.InterRegionBandwidth`]
         """
-        self._inter_region_bandwidth = inter_region_bandwidth
+        self._inter_region_bandwidths = inter_region_bandwidths
 
     @property
     def page_info(self):

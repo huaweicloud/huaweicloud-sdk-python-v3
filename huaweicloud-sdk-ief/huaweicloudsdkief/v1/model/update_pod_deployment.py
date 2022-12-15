@@ -34,7 +34,7 @@ class UpdatePodDeployment:
 
         The model defined in huaweicloud sdk
 
-        :param replicas: 应用部署副本数，只能为1
+        :param replicas: 应用部署副本数
         :type replicas: int
         :param template: 
         :type template: :class:`huaweicloudsdkief.v1.PodRequest`
@@ -46,14 +46,15 @@ class UpdatePodDeployment:
         self._template = None
         self.discriminator = None
 
-        self.replicas = replicas
+        if replicas is not None:
+            self.replicas = replicas
         self.template = template
 
     @property
     def replicas(self):
         """Gets the replicas of this UpdatePodDeployment.
 
-        应用部署副本数，只能为1
+        应用部署副本数
 
         :return: The replicas of this UpdatePodDeployment.
         :rtype: int
@@ -64,7 +65,7 @@ class UpdatePodDeployment:
     def replicas(self, replicas):
         """Sets the replicas of this UpdatePodDeployment.
 
-        应用部署副本数，只能为1
+        应用部署副本数
 
         :param replicas: The replicas of this UpdatePodDeployment.
         :type replicas: int

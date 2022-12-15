@@ -32,7 +32,7 @@ class OperateAuditLogRequestV3Body:
 
         The model defined in huaweicloud sdk
 
-        :param switch_status: 审计日志开关状态。取值：ON|OFF
+        :param switch_status: 全量SQL开关状态。 取值： - ON，表示开启 - OFF，表示关闭
         :type switch_status: str
         """
         
@@ -47,7 +47,7 @@ class OperateAuditLogRequestV3Body:
     def switch_status(self):
         """Gets the switch_status of this OperateAuditLogRequestV3Body.
 
-        审计日志开关状态。取值：ON|OFF
+        全量SQL开关状态。 取值： - ON，表示开启 - OFF，表示关闭
 
         :return: The switch_status of this OperateAuditLogRequestV3Body.
         :rtype: str
@@ -58,7 +58,7 @@ class OperateAuditLogRequestV3Body:
     def switch_status(self, switch_status):
         """Sets the switch_status of this OperateAuditLogRequestV3Body.
 
-        审计日志开关状态。取值：ON|OFF
+        全量SQL开关状态。 取值： - ON，表示开启 - OFF，表示关闭
 
         :param switch_status: The switch_status of this OperateAuditLogRequestV3Body.
         :type switch_status: str

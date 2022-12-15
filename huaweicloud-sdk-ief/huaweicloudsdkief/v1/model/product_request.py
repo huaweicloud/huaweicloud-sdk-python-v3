@@ -38,7 +38,7 @@ class ProductRequest:
 
         The model defined in huaweicloud sdk
 
-        :param name: 产品名称
+        :param name: 产品名称，允许输入小写字母，数字，中划线，不能以中划线开头或结尾，最大长度为26位
         :type name: str
         :param description: 产品描述
         :type description: str
@@ -68,7 +68,7 @@ class ProductRequest:
     def name(self):
         """Gets the name of this ProductRequest.
 
-        产品名称
+        产品名称，允许输入小写字母，数字，中划线，不能以中划线开头或结尾，最大长度为26位
 
         :return: The name of this ProductRequest.
         :rtype: str
@@ -79,7 +79,7 @@ class ProductRequest:
     def name(self, name):
         """Sets the name of this ProductRequest.
 
-        产品名称
+        产品名称，允许输入小写字母，数字，中划线，不能以中划线开头或结尾，最大长度为26位
 
         :param name: The name of this ProductRequest.
         :type name: str

@@ -23,17 +23,19 @@ class EdgeGroupRequest:
         'name': 'str',
         'description': 'str',
         'node_ids': 'list[str]',
-        'tags': 'list[Attributes]'
+        'tags': 'list[Attributes]',
+        'device_ids': 'list[str]'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
         'node_ids': 'node_ids',
-        'tags': 'tags'
+        'tags': 'tags',
+        'device_ids': 'device_ids'
     }
 
-    def __init__(self, name=None, description=None, node_ids=None, tags=None):
+    def __init__(self, name=None, description=None, node_ids=None, tags=None, device_ids=None):
         """EdgeGroupRequest
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class EdgeGroupRequest:
         :type node_ids: list[str]
         :param tags: 节点组标签
         :type tags: list[:class:`huaweicloudsdkief.v1.Attributes`]
+        :param device_ids: 节点组绑定的终端设备ID列表
+        :type device_ids: list[str]
         """
         
         
@@ -54,6 +58,7 @@ class EdgeGroupRequest:
         self._description = None
         self._node_ids = None
         self._tags = None
+        self._device_ids = None
         self.discriminator = None
 
         self.name = name
@@ -63,6 +68,8 @@ class EdgeGroupRequest:
             self.node_ids = node_ids
         if tags is not None:
             self.tags = tags
+        if device_ids is not None:
+            self.device_ids = device_ids
 
     @property
     def name(self):
@@ -151,6 +158,28 @@ class EdgeGroupRequest:
         :type tags: list[:class:`huaweicloudsdkief.v1.Attributes`]
         """
         self._tags = tags
+
+    @property
+    def device_ids(self):
+        """Gets the device_ids of this EdgeGroupRequest.
+
+        节点组绑定的终端设备ID列表
+
+        :return: The device_ids of this EdgeGroupRequest.
+        :rtype: list[str]
+        """
+        return self._device_ids
+
+    @device_ids.setter
+    def device_ids(self, device_ids):
+        """Sets the device_ids of this EdgeGroupRequest.
+
+        节点组绑定的终端设备ID列表
+
+        :param device_ids: The device_ids of this EdgeGroupRequest.
+        :type device_ids: list[str]
+        """
+        self._device_ids = device_ids
 
     def to_dict(self):
         """Returns the model properties as a dict"""

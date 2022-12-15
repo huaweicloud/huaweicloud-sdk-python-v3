@@ -46,7 +46,8 @@ class GetHostListRequestBody:
         self._filter = None
         self.discriminator = None
 
-        self.host_id_list = host_id_list
+        if host_id_list is not None:
+            self.host_id_list = host_id_list
         self.filter = filter
 
     @property

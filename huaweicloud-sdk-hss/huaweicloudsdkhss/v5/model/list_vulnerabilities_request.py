@@ -70,7 +70,8 @@ class ListVulnerabilitiesRequest:
             self.enterprise_project_id = enterprise_project_id
         if type is not None:
             self.type = type
-        self.vul_id = vul_id
+        if vul_id is not None:
+            self.vul_id = vul_id
         if vul_name is not None:
             self.vul_name = vul_name
         if limit is not None:

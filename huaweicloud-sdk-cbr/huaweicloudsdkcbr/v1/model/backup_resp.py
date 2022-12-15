@@ -106,7 +106,7 @@ class BackupResp:
         :type resource_name: str
         :param resource_size: 资源大小，单位为GB
         :type resource_size: int
-        :param resource_type: 资源类型
+        :param resource_type: 资源类型: 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 云桌面：OS::Workspace::DesktopV2
         :type resource_type: str
         :param status: 备份状态
         :type status: str
@@ -508,7 +508,7 @@ class BackupResp:
     def resource_type(self):
         """Gets the resource_type of this BackupResp.
 
-        资源类型
+        资源类型: 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 云桌面：OS::Workspace::DesktopV2
 
         :return: The resource_type of this BackupResp.
         :rtype: str
@@ -519,7 +519,7 @@ class BackupResp:
     def resource_type(self, resource_type):
         """Sets the resource_type of this BackupResp.
 
-        资源类型
+        资源类型: 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 云桌面：OS::Workspace::DesktopV2
 
         :param resource_type: The resource_type of this BackupResp.
         :type resource_type: str

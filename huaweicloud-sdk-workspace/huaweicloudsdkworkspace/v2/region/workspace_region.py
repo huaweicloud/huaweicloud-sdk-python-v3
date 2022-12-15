@@ -18,11 +18,14 @@ class WorkspaceRegion:
 
     CN_SOUTHWEST_2 = Region(id="cn-southwest-2", endpoint="https://workspace.cn-southwest-2.myhuaweicloud.com")
 
+    LA_SOUTH_2 = Region(id="la-south-2", endpoint="https://workspace.la-south-2.myhuaweicloud.com")
+
     static_fields = {
         "cn-east-3": CN_EAST_3,
         "cn-north-4": CN_NORTH_4,
         "cn-south-1": CN_SOUTH_1,
         "cn-southwest-2": CN_SOUTHWEST_2,
+        "la-south-2": LA_SOUTH_2,
     }
 
     @classmethod

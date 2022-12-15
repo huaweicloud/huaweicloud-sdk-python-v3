@@ -71,8 +71,7 @@ class FieldItem:
         self._visible = None
         self.discriminator = None
 
-        if function is not None:
-            self.function = function
+        self.function = function
         if _as is not None:
             self._as = _as
         if default_value is not None:

@@ -34,7 +34,11 @@ class KeywordsAlarmRuleRespList:
         'update_time': 'int',
         'topics': 'list[Topics]',
         'template_name': 'str',
-        'status': 'str'
+        'status': 'str',
+        'trigger_condition_count': 'int',
+        'trigger_condition_frequency': 'int',
+        'whether_recovery_policy': 'bool',
+        'recovery_policy': 'int'
     }
 
     attribute_map = {
@@ -52,10 +56,14 @@ class KeywordsAlarmRuleRespList:
         'update_time': 'update_time',
         'topics': 'topics',
         'template_name': 'template_name',
-        'status': 'status'
+        'status': 'status',
+        'trigger_condition_count': 'trigger_condition_count',
+        'trigger_condition_frequency': 'trigger_condition_frequency',
+        'whether_recovery_policy': 'whether_recovery_policy',
+        'recovery_policy': 'recovery_policy'
     }
 
-    def __init__(self, project_id=None, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, condition_expression=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, create_time=None, update_time=None, topics=None, template_name=None, status=None):
+    def __init__(self, project_id=None, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, condition_expression=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, create_time=None, update_time=None, topics=None, template_name=None, status=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None):
         """KeywordsAlarmRuleRespList
 
         The model defined in huaweicloud sdk
@@ -90,6 +98,14 @@ class KeywordsAlarmRuleRespList:
         :type template_name: str
         :param status: 
         :type status: str
+        :param trigger_condition_count: 触发条件：触发次数;默认为1
+        :type trigger_condition_count: int
+        :param trigger_condition_frequency: 触发条件：触发周期;默认为1
+        :type trigger_condition_frequency: int
+        :param whether_recovery_policy: 是否打开恢复通知;默认false
+        :type whether_recovery_policy: bool
+        :param recovery_policy: 恢复策略周期;默认为3
+        :type recovery_policy: int
         """
         
         
@@ -109,6 +125,10 @@ class KeywordsAlarmRuleRespList:
         self._topics = None
         self._template_name = None
         self._status = None
+        self._trigger_condition_count = None
+        self._trigger_condition_frequency = None
+        self._whether_recovery_policy = None
+        self._recovery_policy = None
         self.discriminator = None
 
         self.project_id = project_id
@@ -128,6 +148,14 @@ class KeywordsAlarmRuleRespList:
             self.template_name = template_name
         if status is not None:
             self.status = status
+        if trigger_condition_count is not None:
+            self.trigger_condition_count = trigger_condition_count
+        if trigger_condition_frequency is not None:
+            self.trigger_condition_frequency = trigger_condition_frequency
+        if whether_recovery_policy is not None:
+            self.whether_recovery_policy = whether_recovery_policy
+        if recovery_policy is not None:
+            self.recovery_policy = recovery_policy
 
     @property
     def project_id(self):
@@ -450,6 +478,94 @@ class KeywordsAlarmRuleRespList:
         :type status: str
         """
         self._status = status
+
+    @property
+    def trigger_condition_count(self):
+        """Gets the trigger_condition_count of this KeywordsAlarmRuleRespList.
+
+        触发条件：触发次数;默认为1
+
+        :return: The trigger_condition_count of this KeywordsAlarmRuleRespList.
+        :rtype: int
+        """
+        return self._trigger_condition_count
+
+    @trigger_condition_count.setter
+    def trigger_condition_count(self, trigger_condition_count):
+        """Sets the trigger_condition_count of this KeywordsAlarmRuleRespList.
+
+        触发条件：触发次数;默认为1
+
+        :param trigger_condition_count: The trigger_condition_count of this KeywordsAlarmRuleRespList.
+        :type trigger_condition_count: int
+        """
+        self._trigger_condition_count = trigger_condition_count
+
+    @property
+    def trigger_condition_frequency(self):
+        """Gets the trigger_condition_frequency of this KeywordsAlarmRuleRespList.
+
+        触发条件：触发周期;默认为1
+
+        :return: The trigger_condition_frequency of this KeywordsAlarmRuleRespList.
+        :rtype: int
+        """
+        return self._trigger_condition_frequency
+
+    @trigger_condition_frequency.setter
+    def trigger_condition_frequency(self, trigger_condition_frequency):
+        """Sets the trigger_condition_frequency of this KeywordsAlarmRuleRespList.
+
+        触发条件：触发周期;默认为1
+
+        :param trigger_condition_frequency: The trigger_condition_frequency of this KeywordsAlarmRuleRespList.
+        :type trigger_condition_frequency: int
+        """
+        self._trigger_condition_frequency = trigger_condition_frequency
+
+    @property
+    def whether_recovery_policy(self):
+        """Gets the whether_recovery_policy of this KeywordsAlarmRuleRespList.
+
+        是否打开恢复通知;默认false
+
+        :return: The whether_recovery_policy of this KeywordsAlarmRuleRespList.
+        :rtype: bool
+        """
+        return self._whether_recovery_policy
+
+    @whether_recovery_policy.setter
+    def whether_recovery_policy(self, whether_recovery_policy):
+        """Sets the whether_recovery_policy of this KeywordsAlarmRuleRespList.
+
+        是否打开恢复通知;默认false
+
+        :param whether_recovery_policy: The whether_recovery_policy of this KeywordsAlarmRuleRespList.
+        :type whether_recovery_policy: bool
+        """
+        self._whether_recovery_policy = whether_recovery_policy
+
+    @property
+    def recovery_policy(self):
+        """Gets the recovery_policy of this KeywordsAlarmRuleRespList.
+
+        恢复策略周期;默认为3
+
+        :return: The recovery_policy of this KeywordsAlarmRuleRespList.
+        :rtype: int
+        """
+        return self._recovery_policy
+
+    @recovery_policy.setter
+    def recovery_policy(self, recovery_policy):
+        """Sets the recovery_policy of this KeywordsAlarmRuleRespList.
+
+        恢复策略周期;默认为3
+
+        :param recovery_policy: The recovery_policy of this KeywordsAlarmRuleRespList.
+        :type recovery_policy: int
+        """
+        self._recovery_policy = recovery_policy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

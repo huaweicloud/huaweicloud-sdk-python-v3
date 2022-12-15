@@ -42,7 +42,7 @@ class CreateTagRequest:
         :type ief_instance_id: str
         :param resource_id: 资源ID
         :type resource_id: str
-        :param resource_type: 资源类型
+        :param resource_type: 资源类型 1. ief-edge_node 2. ief-deployment 3. ief-application 4. ief-device
         :type resource_type: str
         :param body: Body of the CreateTagRequest
         :type body: :class:`huaweicloudsdkief.v1.CreateTagRequestBody`
@@ -111,7 +111,7 @@ class CreateTagRequest:
     def resource_type(self):
         """Gets the resource_type of this CreateTagRequest.
 
-        资源类型
+        资源类型 1. ief-edge_node 2. ief-deployment 3. ief-application 4. ief-device
 
         :return: The resource_type of this CreateTagRequest.
         :rtype: str
@@ -122,7 +122,7 @@ class CreateTagRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this CreateTagRequest.
 
-        资源类型
+        资源类型 1. ief-edge_node 2. ief-deployment 3. ief-application 4. ief-device
 
         :param resource_type: The resource_type of this CreateTagRequest.
         :type resource_type: str

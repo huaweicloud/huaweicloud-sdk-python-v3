@@ -30,7 +30,8 @@ class CreateBandwidthPackage:
         'bandwidth': 'int',
         'project_id': 'str',
         'resource_id': 'str',
-        'resource_type': 'str'
+        'resource_type': 'str',
+        'interflow_mode': 'str'
     }
 
     attribute_map = {
@@ -44,10 +45,11 @@ class CreateBandwidthPackage:
         'bandwidth': 'bandwidth',
         'project_id': 'project_id',
         'resource_id': 'resource_id',
-        'resource_type': 'resource_type'
+        'resource_type': 'resource_type',
+        'interflow_mode': 'interflow_mode'
     }
 
-    def __init__(self, name=None, description=None, enterprise_project_id=None, local_area_id=None, remote_area_id=None, charge_mode=None, billing_mode=None, bandwidth=None, project_id=None, resource_id=None, resource_type=None):
+    def __init__(self, name=None, description=None, enterprise_project_id=None, local_area_id=None, remote_area_id=None, charge_mode=None, billing_mode=None, bandwidth=None, project_id=None, resource_id=None, resource_type=None, interflow_mode=None):
         """CreateBandwidthPackage
 
         The model defined in huaweicloud sdk
@@ -74,6 +76,8 @@ class CreateBandwidthPackage:
         :type resource_id: str
         :param resource_type: 带宽包实例绑定的资源类型。  cloud_connection: 云连接实例。
         :type resource_type: str
+        :param interflow_mode: 互通类型: - Area: 大区互通 - Region: 城域互通
+        :type interflow_mode: str
         """
         
         
@@ -89,6 +93,7 @@ class CreateBandwidthPackage:
         self._project_id = None
         self._resource_id = None
         self._resource_type = None
+        self._interflow_mode = None
         self.discriminator = None
 
         self.name = name
@@ -106,6 +111,8 @@ class CreateBandwidthPackage:
             self.resource_id = resource_id
         if resource_type is not None:
             self.resource_type = resource_type
+        if interflow_mode is not None:
+            self.interflow_mode = interflow_mode
 
     @property
     def name(self):
@@ -348,6 +355,28 @@ class CreateBandwidthPackage:
         :type resource_type: str
         """
         self._resource_type = resource_type
+
+    @property
+    def interflow_mode(self):
+        """Gets the interflow_mode of this CreateBandwidthPackage.
+
+        互通类型: - Area: 大区互通 - Region: 城域互通
+
+        :return: The interflow_mode of this CreateBandwidthPackage.
+        :rtype: str
+        """
+        return self._interflow_mode
+
+    @interflow_mode.setter
+    def interflow_mode(self, interflow_mode):
+        """Sets the interflow_mode of this CreateBandwidthPackage.
+
+        互通类型: - Area: 大区互通 - Region: 城域互通
+
+        :param interflow_mode: The interflow_mode of this CreateBandwidthPackage.
+        :type interflow_mode: str
+        """
+        self._interflow_mode = interflow_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

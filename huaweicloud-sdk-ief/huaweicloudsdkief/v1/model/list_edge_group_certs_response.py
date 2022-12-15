@@ -20,80 +20,47 @@ class ListEdgeGroupCertsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'count': 'int',
-        'edge_groups': 'list[EdgeGroupResp]'
+        'body': 'list[EdgeGroupCertListResp]'
     }
 
     attribute_map = {
-        'count': 'count',
-        'edge_groups': 'edge_groups'
+        'body': 'body'
     }
 
-    def __init__(self, count=None, edge_groups=None):
+    def __init__(self, body=None):
         """ListEdgeGroupCertsResponse
 
         The model defined in huaweicloud sdk
 
-        :param count: 边缘节点组数目
-        :type count: int
-        :param edge_groups: 边缘节点组详情
-        :type edge_groups: list[:class:`huaweicloudsdkief.v1.EdgeGroupResp`]
+        :param body: 
+        :type body: list[:class:`huaweicloudsdkief.v1.EdgeGroupCertListResp`]
         """
         
         super(ListEdgeGroupCertsResponse, self).__init__()
 
-        self._count = None
-        self._edge_groups = None
+        self._body = None
         self.discriminator = None
 
-        if count is not None:
-            self.count = count
-        if edge_groups is not None:
-            self.edge_groups = edge_groups
+        if body is not None:
+            self.body = body
 
     @property
-    def count(self):
-        """Gets the count of this ListEdgeGroupCertsResponse.
+    def body(self):
+        """Gets the body of this ListEdgeGroupCertsResponse.
 
-        边缘节点组数目
-
-        :return: The count of this ListEdgeGroupCertsResponse.
-        :rtype: int
+        :return: The body of this ListEdgeGroupCertsResponse.
+        :rtype: list[:class:`huaweicloudsdkief.v1.EdgeGroupCertListResp`]
         """
-        return self._count
+        return self._body
 
-    @count.setter
-    def count(self, count):
-        """Sets the count of this ListEdgeGroupCertsResponse.
+    @body.setter
+    def body(self, body):
+        """Sets the body of this ListEdgeGroupCertsResponse.
 
-        边缘节点组数目
-
-        :param count: The count of this ListEdgeGroupCertsResponse.
-        :type count: int
+        :param body: The body of this ListEdgeGroupCertsResponse.
+        :type body: list[:class:`huaweicloudsdkief.v1.EdgeGroupCertListResp`]
         """
-        self._count = count
-
-    @property
-    def edge_groups(self):
-        """Gets the edge_groups of this ListEdgeGroupCertsResponse.
-
-        边缘节点组详情
-
-        :return: The edge_groups of this ListEdgeGroupCertsResponse.
-        :rtype: list[:class:`huaweicloudsdkief.v1.EdgeGroupResp`]
-        """
-        return self._edge_groups
-
-    @edge_groups.setter
-    def edge_groups(self, edge_groups):
-        """Sets the edge_groups of this ListEdgeGroupCertsResponse.
-
-        边缘节点组详情
-
-        :param edge_groups: The edge_groups of this ListEdgeGroupCertsResponse.
-        :type edge_groups: list[:class:`huaweicloudsdkief.v1.EdgeGroupResp`]
-        """
-        self._edge_groups = edge_groups
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

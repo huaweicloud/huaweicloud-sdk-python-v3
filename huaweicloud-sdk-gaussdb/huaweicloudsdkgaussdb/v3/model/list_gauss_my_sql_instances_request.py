@@ -54,9 +54,9 @@ class ListGaussMySqlInstancesRequest:
 
         :param x_language: 语言。
         :type x_language: str
-        :param id: 实例ID。 \\“\\*\\”为系统保留字符，如果id是以 \\“\\*\\”起始，表示按照 \\“\\*\\”后面的值模糊匹配，否则，按照id精确匹配查询。不能只传入 \\“\\*\\”。
+        :param id: 实例ID。 “\\*”为系统保留字符，如果id是以“\\*”起始，表示按照“\\*”后面的值模糊匹配，否则，按照id精确匹配查询。不能只传入“\\*”。
         :type id: str
-        :param name: 实例名称。  \\“\\*\\”为系统保留字符，如果name是以 \\“\\*\\”起始，表示按照 \\“\\*\\”后面的值模糊匹配，否则，按照name精确匹配查询。不能只传入 \\“\\*\\”。
+        :param name: 实例名称。  “\\*”为系统保留字符，如果name是以“\\*”起始，表示按照“\\*”后面的值模糊匹配，否则，按照name精确匹配查询。不能只传入“\\*”。
         :type name: str
         :param type: 按照实例类型查询。目前仅支持Cluster。
         :type type: str
@@ -72,7 +72,7 @@ class ListGaussMySqlInstancesRequest:
         :type offset: int
         :param limit: 查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
         :type limit: int
-        :param tags: 根据实例标签键值对进行查询。{key}表示标签键，{value}表示标签值。如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。key不能重复，key之间是与的关系。
+        :param tags: 根据实例标签键值对进行查询。 - {key}表示标签键。 - {value}表示标签值。  如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。key不能重复，key之间是与的关系。
         :type tags: str
         """
         
@@ -140,7 +140,7 @@ class ListGaussMySqlInstancesRequest:
     def id(self):
         """Gets the id of this ListGaussMySqlInstancesRequest.
 
-        实例ID。 \\“\\*\\”为系统保留字符，如果id是以 \\“\\*\\”起始，表示按照 \\“\\*\\”后面的值模糊匹配，否则，按照id精确匹配查询。不能只传入 \\“\\*\\”。
+        实例ID。 “\\*”为系统保留字符，如果id是以“\\*”起始，表示按照“\\*”后面的值模糊匹配，否则，按照id精确匹配查询。不能只传入“\\*”。
 
         :return: The id of this ListGaussMySqlInstancesRequest.
         :rtype: str
@@ -151,7 +151,7 @@ class ListGaussMySqlInstancesRequest:
     def id(self, id):
         """Sets the id of this ListGaussMySqlInstancesRequest.
 
-        实例ID。 \\“\\*\\”为系统保留字符，如果id是以 \\“\\*\\”起始，表示按照 \\“\\*\\”后面的值模糊匹配，否则，按照id精确匹配查询。不能只传入 \\“\\*\\”。
+        实例ID。 “\\*”为系统保留字符，如果id是以“\\*”起始，表示按照“\\*”后面的值模糊匹配，否则，按照id精确匹配查询。不能只传入“\\*”。
 
         :param id: The id of this ListGaussMySqlInstancesRequest.
         :type id: str
@@ -162,7 +162,7 @@ class ListGaussMySqlInstancesRequest:
     def name(self):
         """Gets the name of this ListGaussMySqlInstancesRequest.
 
-        实例名称。  \\“\\*\\”为系统保留字符，如果name是以 \\“\\*\\”起始，表示按照 \\“\\*\\”后面的值模糊匹配，否则，按照name精确匹配查询。不能只传入 \\“\\*\\”。
+        实例名称。  “\\*”为系统保留字符，如果name是以“\\*”起始，表示按照“\\*”后面的值模糊匹配，否则，按照name精确匹配查询。不能只传入“\\*”。
 
         :return: The name of this ListGaussMySqlInstancesRequest.
         :rtype: str
@@ -173,7 +173,7 @@ class ListGaussMySqlInstancesRequest:
     def name(self, name):
         """Sets the name of this ListGaussMySqlInstancesRequest.
 
-        实例名称。  \\“\\*\\”为系统保留字符，如果name是以 \\“\\*\\”起始，表示按照 \\“\\*\\”后面的值模糊匹配，否则，按照name精确匹配查询。不能只传入 \\“\\*\\”。
+        实例名称。  “\\*”为系统保留字符，如果name是以“\\*”起始，表示按照“\\*”后面的值模糊匹配，否则，按照name精确匹配查询。不能只传入“\\*”。
 
         :param name: The name of this ListGaussMySqlInstancesRequest.
         :type name: str
@@ -338,7 +338,7 @@ class ListGaussMySqlInstancesRequest:
     def tags(self):
         """Gets the tags of this ListGaussMySqlInstancesRequest.
 
-        根据实例标签键值对进行查询。{key}表示标签键，{value}表示标签值。如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。key不能重复，key之间是与的关系。
+        根据实例标签键值对进行查询。 - {key}表示标签键。 - {value}表示标签值。  如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。key不能重复，key之间是与的关系。
 
         :return: The tags of this ListGaussMySqlInstancesRequest.
         :rtype: str
@@ -349,7 +349,7 @@ class ListGaussMySqlInstancesRequest:
     def tags(self, tags):
         """Sets the tags of this ListGaussMySqlInstancesRequest.
 
-        根据实例标签键值对进行查询。{key}表示标签键，{value}表示标签值。如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。key不能重复，key之间是与的关系。
+        根据实例标签键值对进行查询。 - {key}表示标签键。 - {value}表示标签值。  如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。key不能重复，key之间是与的关系。
 
         :param tags: The tags of this ListGaussMySqlInstancesRequest.
         :type tags: str

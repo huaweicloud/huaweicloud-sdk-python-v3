@@ -52,11 +52,11 @@ class GetJobInfoDetail:
         :type id: str
         :param name: 任务名称。
         :type name: str
-        :param status: 任务执行状态。  取值： - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。
+        :param status: 任务执行状态。  取值： - 值为“Pending”，表示延时任务，未执行。 - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。
         :type status: str
-        :param created: 创建时间，格式为\&quot;yyyy-mm-ddThh:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为   +0800 说明：创建时返回值为空，数据库实例创建成功后该值不为空。
+        :param created: 创建时间，格式为\&quot;yyyy-mm-ddThh:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。  说明：创建时返回值为空，数据库实例创建成功后该值不为空。
         :type created: str
-        :param ended: 结束时间，格式为\&quot;yyyy-mm-ddThh:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为   +0800 说明：创建时返回值为空，数据库实例创建成功后该值不为空。
+        :param ended: 结束时间，格式为\&quot;yyyy-mm-ddThh:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。  说明：创建时返回值为空，数据库实例创建成功后该值不为空。
         :type ended: str
         :param process: 任务执行进度。执行中状态才返回执行进度，例如60%，否则返回\&quot;\&quot;。
         :type process: str
@@ -143,7 +143,7 @@ class GetJobInfoDetail:
     def status(self):
         """Gets the status of this GetJobInfoDetail.
 
-        任务执行状态。  取值： - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。
+        任务执行状态。  取值： - 值为“Pending”，表示延时任务，未执行。 - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。
 
         :return: The status of this GetJobInfoDetail.
         :rtype: str
@@ -154,7 +154,7 @@ class GetJobInfoDetail:
     def status(self, status):
         """Sets the status of this GetJobInfoDetail.
 
-        任务执行状态。  取值： - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。
+        任务执行状态。  取值： - 值为“Pending”，表示延时任务，未执行。 - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。
 
         :param status: The status of this GetJobInfoDetail.
         :type status: str
@@ -165,7 +165,7 @@ class GetJobInfoDetail:
     def created(self):
         """Gets the created of this GetJobInfoDetail.
 
-        创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为   +0800 说明：创建时返回值为空，数据库实例创建成功后该值不为空。
+        创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。  说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
         :return: The created of this GetJobInfoDetail.
         :rtype: str
@@ -176,7 +176,7 @@ class GetJobInfoDetail:
     def created(self, created):
         """Sets the created of this GetJobInfoDetail.
 
-        创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为   +0800 说明：创建时返回值为空，数据库实例创建成功后该值不为空。
+        创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。  说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
         :param created: The created of this GetJobInfoDetail.
         :type created: str
@@ -187,7 +187,7 @@ class GetJobInfoDetail:
     def ended(self):
         """Gets the ended of this GetJobInfoDetail.
 
-        结束时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为   +0800 说明：创建时返回值为空，数据库实例创建成功后该值不为空。
+        结束时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。  说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
         :return: The ended of this GetJobInfoDetail.
         :rtype: str
@@ -198,7 +198,7 @@ class GetJobInfoDetail:
     def ended(self, ended):
         """Sets the ended of this GetJobInfoDetail.
 
-        结束时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为   +0800 说明：创建时返回值为空，数据库实例创建成功后该值不为空。
+        结束时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。  说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
         :param ended: The ended of this GetJobInfoDetail.
         :type ended: str

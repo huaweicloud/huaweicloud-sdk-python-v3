@@ -50,13 +50,13 @@ class ListGaussMySqlErrorLogRequest:
         :type x_language: str
         :param instance_id: 实例ID
         :type instance_id: str
-        :param start_date: 开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :param start_date: 开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
         :type start_date: str
-        :param end_date: 结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :param end_date: 结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
         :type end_date: str
         :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数
         :type offset: int
-        :param limit: 查询记录数。默认为100，不能为负数，最小值为1，最大值为100
+        :param limit: 查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
         :type limit: int
         :param level: 日志级别。  取值范围：  - ALL - INFO - LOG - WARNING - ERROR - FATAL - PANIC - NOTE
         :type level: str
@@ -137,7 +137,7 @@ class ListGaussMySqlErrorLogRequest:
     def start_date(self):
         """Gets the start_date of this ListGaussMySqlErrorLogRequest.
 
-        开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
         :return: The start_date of this ListGaussMySqlErrorLogRequest.
         :rtype: str
@@ -148,7 +148,7 @@ class ListGaussMySqlErrorLogRequest:
     def start_date(self, start_date):
         """Sets the start_date of this ListGaussMySqlErrorLogRequest.
 
-        开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
         :param start_date: The start_date of this ListGaussMySqlErrorLogRequest.
         :type start_date: str
@@ -159,7 +159,7 @@ class ListGaussMySqlErrorLogRequest:
     def end_date(self):
         """Gets the end_date of this ListGaussMySqlErrorLogRequest.
 
-        结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
         :return: The end_date of this ListGaussMySqlErrorLogRequest.
         :rtype: str
@@ -170,7 +170,7 @@ class ListGaussMySqlErrorLogRequest:
     def end_date(self, end_date):
         """Sets the end_date of this ListGaussMySqlErrorLogRequest.
 
-        结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
         :param end_date: The end_date of this ListGaussMySqlErrorLogRequest.
         :type end_date: str
@@ -203,7 +203,7 @@ class ListGaussMySqlErrorLogRequest:
     def limit(self):
         """Gets the limit of this ListGaussMySqlErrorLogRequest.
 
-        查询记录数。默认为100，不能为负数，最小值为1，最大值为100
+        查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
         :return: The limit of this ListGaussMySqlErrorLogRequest.
         :rtype: int
@@ -214,7 +214,7 @@ class ListGaussMySqlErrorLogRequest:
     def limit(self, limit):
         """Sets the limit of this ListGaussMySqlErrorLogRequest.
 
-        查询记录数。默认为100，不能为负数，最小值为1，最大值为100
+        查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
         :param limit: The limit of this ListGaussMySqlErrorLogRequest.
         :type limit: int

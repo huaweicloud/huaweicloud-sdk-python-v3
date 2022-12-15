@@ -25,6 +25,7 @@ class Host:
         'agent_id': 'str',
         'private_ip': 'str',
         'public_ip': 'str',
+        'enterprise_project_id': 'str',
         'enterprise_project_name': 'str',
         'host_status': 'str',
         'agent_status': 'str',
@@ -47,7 +48,13 @@ class Host:
         'baseline': 'int',
         'intrusion': 'int',
         'asset_value': 'str',
-        'labels': 'list[str]'
+        'labels': 'list[str]',
+        'agent_create_time': 'int',
+        'agent_update_time': 'int',
+        'agent_version': 'str',
+        'upgrade_status': 'str',
+        'upgrade_result_code': 'str',
+        'upgradable': 'bool'
     }
 
     attribute_map = {
@@ -56,6 +63,7 @@ class Host:
         'agent_id': 'agent_id',
         'private_ip': 'private_ip',
         'public_ip': 'public_ip',
+        'enterprise_project_id': 'enterprise_project_id',
         'enterprise_project_name': 'enterprise_project_name',
         'host_status': 'host_status',
         'agent_status': 'agent_status',
@@ -78,10 +86,16 @@ class Host:
         'baseline': 'baseline',
         'intrusion': 'intrusion',
         'asset_value': 'asset_value',
-        'labels': 'labels'
+        'labels': 'labels',
+        'agent_create_time': 'agent_create_time',
+        'agent_update_time': 'agent_update_time',
+        'agent_version': 'agent_version',
+        'upgrade_status': 'upgrade_status',
+        'upgrade_result_code': 'upgrade_result_code',
+        'upgradable': 'upgradable'
     }
 
-    def __init__(self, host_name=None, host_id=None, agent_id=None, private_ip=None, public_ip=None, enterprise_project_name=None, host_status=None, agent_status=None, install_result_code=None, version=None, protect_status=None, os_image=None, os_type=None, os_bit=None, detect_result=None, charging_mode=None, resource_id=None, outside_host=None, group_id=None, group_name=None, policy_group_id=None, policy_group_name=None, asset=None, vulnerability=None, baseline=None, intrusion=None, asset_value=None, labels=None):
+    def __init__(self, host_name=None, host_id=None, agent_id=None, private_ip=None, public_ip=None, enterprise_project_id=None, enterprise_project_name=None, host_status=None, agent_status=None, install_result_code=None, version=None, protect_status=None, os_image=None, os_type=None, os_bit=None, detect_result=None, charging_mode=None, resource_id=None, outside_host=None, group_id=None, group_name=None, policy_group_id=None, policy_group_name=None, asset=None, vulnerability=None, baseline=None, intrusion=None, asset_value=None, labels=None, agent_create_time=None, agent_update_time=None, agent_version=None, upgrade_status=None, upgrade_result_code=None, upgradable=None):
         """Host
 
         The model defined in huaweicloud sdk
@@ -96,11 +110,13 @@ class Host:
         :type private_ip: str
         :param public_ip: 弹性公网IP地址
         :type public_ip: str
+        :param enterprise_project_id: 企业项目ID
+        :type enterprise_project_id: str
         :param enterprise_project_name: 所属企业项目名称
         :type enterprise_project_name: str
         :param host_status: 服务器状态，包含如下4种。   - ACTIVE ：运行中。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
         :type host_status: str
-        :param agent_status: Agent状态，包含如下5种。   - not_installed ：未安装。   - online ：在线。   - offline ：离线。   - install_failed ：安装失败。   - installing ：安装中。
+        :param agent_status: Agent状态，包含如下5种。   - installed ：已安装。   - not_installed ：未安装。   - online ：在线。   - offline ：离线。   - install_failed ：安装失败。   - installing ：安装中。
         :type agent_status: str
         :param install_result_code: 安装结果，包含如下12种。   - install_succeed ：安装成功。   - network_access_timeout ：网络不通，访问超时。   - invalid_port ：无效端口。   - auth_failed ：认证错误，口令不正确。   - permission_denied ：权限错误，被拒绝。   - no_available_vpc ：没有相同VPC的agent在线虚拟机。   - install_exception ：安装异常。   - invalid_param ：参数错误。   - install_failed ：安装失败。   - package_unavailable ：安装包失效。   - os_type_not_support ：系统类型错误。   - os_arch_not_support ：架构类型错误。
         :type install_result_code: str
@@ -142,6 +158,18 @@ class Host:
         :type asset_value: str
         :param labels: 标签列表
         :type labels: list[str]
+        :param agent_create_time: agent安装时间，采用时间戳，默认毫秒，
+        :type agent_create_time: int
+        :param agent_update_time: agent状态修改时间，采用时间戳，默认毫秒，
+        :type agent_update_time: int
+        :param agent_version: agent版本
+        :type agent_version: str
+        :param upgrade_status: 升级状态，包含如下4种。   - not_upgrade ：未升级，也就是默认状态，客户还没有给这台机器下发过升级。   - upgrading ：正在升级中。   - upgrade_failed ：升级失败。   - upgrade_succeed ：升级成功。
+        :type upgrade_status: str
+        :param upgrade_result_code: 升级失败原因，只有当 upgrade_status 为 upgrade_failed 时才显示，包含如下12种。   - package_unavailable ：升级包解析失败，升级文件有错误。   - network_access_timeout ：下载升级包失败，网络异常。   - agent_offline ：agent离线。   - hostguard_abnormal ：agent工作进程异常。   - insufficient_disk_space ：磁盘空间不足。   - failed_to_replace_file ：替换文件失败。
+        :type upgrade_result_code: str
+        :param upgradable: 该服务器agent是否可升级
+        :type upgradable: bool
         """
         
         
@@ -151,6 +179,7 @@ class Host:
         self._agent_id = None
         self._private_ip = None
         self._public_ip = None
+        self._enterprise_project_id = None
         self._enterprise_project_name = None
         self._host_status = None
         self._agent_status = None
@@ -174,6 +203,12 @@ class Host:
         self._intrusion = None
         self._asset_value = None
         self._labels = None
+        self._agent_create_time = None
+        self._agent_update_time = None
+        self._agent_version = None
+        self._upgrade_status = None
+        self._upgrade_result_code = None
+        self._upgradable = None
         self.discriminator = None
 
         if host_name is not None:
@@ -186,6 +221,8 @@ class Host:
             self.private_ip = private_ip
         if public_ip is not None:
             self.public_ip = public_ip
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if enterprise_project_name is not None:
             self.enterprise_project_name = enterprise_project_name
         if host_status is not None:
@@ -232,6 +269,18 @@ class Host:
             self.asset_value = asset_value
         if labels is not None:
             self.labels = labels
+        if agent_create_time is not None:
+            self.agent_create_time = agent_create_time
+        if agent_update_time is not None:
+            self.agent_update_time = agent_update_time
+        if agent_version is not None:
+            self.agent_version = agent_version
+        if upgrade_status is not None:
+            self.upgrade_status = upgrade_status
+        if upgrade_result_code is not None:
+            self.upgrade_result_code = upgrade_result_code
+        if upgradable is not None:
+            self.upgradable = upgradable
 
     @property
     def host_name(self):
@@ -344,6 +393,28 @@ class Host:
         self._public_ip = public_ip
 
     @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this Host.
+
+        企业项目ID
+
+        :return: The enterprise_project_id of this Host.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this Host.
+
+        企业项目ID
+
+        :param enterprise_project_id: The enterprise_project_id of this Host.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
     def enterprise_project_name(self):
         """Gets the enterprise_project_name of this Host.
 
@@ -391,7 +462,7 @@ class Host:
     def agent_status(self):
         """Gets the agent_status of this Host.
 
-        Agent状态，包含如下5种。   - not_installed ：未安装。   - online ：在线。   - offline ：离线。   - install_failed ：安装失败。   - installing ：安装中。
+        Agent状态，包含如下5种。   - installed ：已安装。   - not_installed ：未安装。   - online ：在线。   - offline ：离线。   - install_failed ：安装失败。   - installing ：安装中。
 
         :return: The agent_status of this Host.
         :rtype: str
@@ -402,7 +473,7 @@ class Host:
     def agent_status(self, agent_status):
         """Sets the agent_status of this Host.
 
-        Agent状态，包含如下5种。   - not_installed ：未安装。   - online ：在线。   - offline ：离线。   - install_failed ：安装失败。   - installing ：安装中。
+        Agent状态，包含如下5种。   - installed ：已安装。   - not_installed ：未安装。   - online ：在线。   - offline ：离线。   - install_failed ：安装失败。   - installing ：安装中。
 
         :param agent_status: The agent_status of this Host.
         :type agent_status: str
@@ -848,6 +919,138 @@ class Host:
         :type labels: list[str]
         """
         self._labels = labels
+
+    @property
+    def agent_create_time(self):
+        """Gets the agent_create_time of this Host.
+
+        agent安装时间，采用时间戳，默认毫秒，
+
+        :return: The agent_create_time of this Host.
+        :rtype: int
+        """
+        return self._agent_create_time
+
+    @agent_create_time.setter
+    def agent_create_time(self, agent_create_time):
+        """Sets the agent_create_time of this Host.
+
+        agent安装时间，采用时间戳，默认毫秒，
+
+        :param agent_create_time: The agent_create_time of this Host.
+        :type agent_create_time: int
+        """
+        self._agent_create_time = agent_create_time
+
+    @property
+    def agent_update_time(self):
+        """Gets the agent_update_time of this Host.
+
+        agent状态修改时间，采用时间戳，默认毫秒，
+
+        :return: The agent_update_time of this Host.
+        :rtype: int
+        """
+        return self._agent_update_time
+
+    @agent_update_time.setter
+    def agent_update_time(self, agent_update_time):
+        """Sets the agent_update_time of this Host.
+
+        agent状态修改时间，采用时间戳，默认毫秒，
+
+        :param agent_update_time: The agent_update_time of this Host.
+        :type agent_update_time: int
+        """
+        self._agent_update_time = agent_update_time
+
+    @property
+    def agent_version(self):
+        """Gets the agent_version of this Host.
+
+        agent版本
+
+        :return: The agent_version of this Host.
+        :rtype: str
+        """
+        return self._agent_version
+
+    @agent_version.setter
+    def agent_version(self, agent_version):
+        """Sets the agent_version of this Host.
+
+        agent版本
+
+        :param agent_version: The agent_version of this Host.
+        :type agent_version: str
+        """
+        self._agent_version = agent_version
+
+    @property
+    def upgrade_status(self):
+        """Gets the upgrade_status of this Host.
+
+        升级状态，包含如下4种。   - not_upgrade ：未升级，也就是默认状态，客户还没有给这台机器下发过升级。   - upgrading ：正在升级中。   - upgrade_failed ：升级失败。   - upgrade_succeed ：升级成功。
+
+        :return: The upgrade_status of this Host.
+        :rtype: str
+        """
+        return self._upgrade_status
+
+    @upgrade_status.setter
+    def upgrade_status(self, upgrade_status):
+        """Sets the upgrade_status of this Host.
+
+        升级状态，包含如下4种。   - not_upgrade ：未升级，也就是默认状态，客户还没有给这台机器下发过升级。   - upgrading ：正在升级中。   - upgrade_failed ：升级失败。   - upgrade_succeed ：升级成功。
+
+        :param upgrade_status: The upgrade_status of this Host.
+        :type upgrade_status: str
+        """
+        self._upgrade_status = upgrade_status
+
+    @property
+    def upgrade_result_code(self):
+        """Gets the upgrade_result_code of this Host.
+
+        升级失败原因，只有当 upgrade_status 为 upgrade_failed 时才显示，包含如下12种。   - package_unavailable ：升级包解析失败，升级文件有错误。   - network_access_timeout ：下载升级包失败，网络异常。   - agent_offline ：agent离线。   - hostguard_abnormal ：agent工作进程异常。   - insufficient_disk_space ：磁盘空间不足。   - failed_to_replace_file ：替换文件失败。
+
+        :return: The upgrade_result_code of this Host.
+        :rtype: str
+        """
+        return self._upgrade_result_code
+
+    @upgrade_result_code.setter
+    def upgrade_result_code(self, upgrade_result_code):
+        """Sets the upgrade_result_code of this Host.
+
+        升级失败原因，只有当 upgrade_status 为 upgrade_failed 时才显示，包含如下12种。   - package_unavailable ：升级包解析失败，升级文件有错误。   - network_access_timeout ：下载升级包失败，网络异常。   - agent_offline ：agent离线。   - hostguard_abnormal ：agent工作进程异常。   - insufficient_disk_space ：磁盘空间不足。   - failed_to_replace_file ：替换文件失败。
+
+        :param upgrade_result_code: The upgrade_result_code of this Host.
+        :type upgrade_result_code: str
+        """
+        self._upgrade_result_code = upgrade_result_code
+
+    @property
+    def upgradable(self):
+        """Gets the upgradable of this Host.
+
+        该服务器agent是否可升级
+
+        :return: The upgradable of this Host.
+        :rtype: bool
+        """
+        return self._upgradable
+
+    @upgradable.setter
+    def upgradable(self, upgradable):
+        """Sets the upgradable of this Host.
+
+        该服务器agent是否可升级
+
+        :param upgradable: The upgradable of this Host.
+        :type upgradable: bool
+        """
+        self._upgradable = upgradable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

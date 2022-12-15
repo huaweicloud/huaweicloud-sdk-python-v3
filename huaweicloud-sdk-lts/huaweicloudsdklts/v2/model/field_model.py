@@ -47,7 +47,8 @@ class FieldModel:
         self.discriminator = None
 
         self.field_name = field_name
-        self.is_analysis = is_analysis
+        if is_analysis is not None:
+            self.is_analysis = is_analysis
 
     @property
     def field_name(self):

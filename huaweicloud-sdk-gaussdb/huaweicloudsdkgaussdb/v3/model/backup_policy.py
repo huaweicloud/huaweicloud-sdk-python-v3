@@ -44,7 +44,7 @@ class BackupPolicy:
         :type start_time: str
         :param period: 备份周期配置。自动备份将在每星期指定的天进行。 取值范围：格式为逗号隔开的数字，数字代表星期。
         :type period: str
-        :param retention_num_backup_level1: 1级备份保留数量。当一级备份开关开启时，返回此参数。
+        :param retention_num_backup_level1: 一级备份保留数量。当一级备份开关开启时，返回此参数。
         :type retention_num_backup_level1: int
         """
         
@@ -134,7 +134,7 @@ class BackupPolicy:
     def retention_num_backup_level1(self):
         """Gets the retention_num_backup_level1 of this BackupPolicy.
 
-        1级备份保留数量。当一级备份开关开启时，返回此参数。
+        一级备份保留数量。当一级备份开关开启时，返回此参数。
 
         :return: The retention_num_backup_level1 of this BackupPolicy.
         :rtype: int
@@ -145,7 +145,7 @@ class BackupPolicy:
     def retention_num_backup_level1(self, retention_num_backup_level1):
         """Sets the retention_num_backup_level1 of this BackupPolicy.
 
-        1级备份保留数量。当一级备份开关开启时，返回此参数。
+        一级备份保留数量。当一级备份开关开启时，返回此参数。
 
         :param retention_num_backup_level1: The retention_num_backup_level1 of this BackupPolicy.
         :type retention_num_backup_level1: int

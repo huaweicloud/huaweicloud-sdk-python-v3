@@ -30,7 +30,11 @@ class UpdateSqlAlarmRuleRequestBody:
         'sql_alarm_send': 'bool',
         'sql_alarm_send_code': 'int',
         'domain_id': 'str',
-        'notification_save_rule': 'NotificationSaveRule'
+        'notification_save_rule': 'NotificationSaveRule',
+        'trigger_condition_count': 'int',
+        'trigger_condition_frequency': 'int',
+        'whether_recovery_policy': 'bool',
+        'recovery_policy': 'int'
     }
 
     attribute_map = {
@@ -44,10 +48,14 @@ class UpdateSqlAlarmRuleRequestBody:
         'sql_alarm_send': 'sql_alarm_send',
         'sql_alarm_send_code': 'sql_alarm_send_code',
         'domain_id': 'domain_id',
-        'notification_save_rule': 'notification_save_rule'
+        'notification_save_rule': 'notification_save_rule',
+        'trigger_condition_count': 'trigger_condition_count',
+        'trigger_condition_frequency': 'trigger_condition_frequency',
+        'whether_recovery_policy': 'whether_recovery_policy',
+        'recovery_policy': 'recovery_policy'
     }
 
-    def __init__(self, sql_alarm_rule_id=None, sql_alarm_rule_name=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, sql_alarm_send_code=None, domain_id=None, notification_save_rule=None):
+    def __init__(self, sql_alarm_rule_id=None, sql_alarm_rule_name=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, sql_alarm_send_code=None, domain_id=None, notification_save_rule=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None):
         """UpdateSqlAlarmRuleRequestBody
 
         The model defined in huaweicloud sdk
@@ -74,6 +82,14 @@ class UpdateSqlAlarmRuleRequestBody:
         :type domain_id: str
         :param notification_save_rule: 通知主题
         :type notification_save_rule: :class:`huaweicloudsdklts.v2.NotificationSaveRule`
+        :param trigger_condition_count: 触发条件：触发次数;默认为1
+        :type trigger_condition_count: int
+        :param trigger_condition_frequency: 触发条件：触发周期;默认为1
+        :type trigger_condition_frequency: int
+        :param whether_recovery_policy: 是否打开恢复通知;默认false
+        :type whether_recovery_policy: bool
+        :param recovery_policy: 恢复策略周期;默认为3
+        :type recovery_policy: int
         """
         
         
@@ -89,6 +105,10 @@ class UpdateSqlAlarmRuleRequestBody:
         self._sql_alarm_send_code = None
         self._domain_id = None
         self._notification_save_rule = None
+        self._trigger_condition_count = None
+        self._trigger_condition_frequency = None
+        self._whether_recovery_policy = None
+        self._recovery_policy = None
         self.discriminator = None
 
         self.sql_alarm_rule_id = sql_alarm_rule_id
@@ -104,6 +124,14 @@ class UpdateSqlAlarmRuleRequestBody:
         self.domain_id = domain_id
         if notification_save_rule is not None:
             self.notification_save_rule = notification_save_rule
+        if trigger_condition_count is not None:
+            self.trigger_condition_count = trigger_condition_count
+        if trigger_condition_frequency is not None:
+            self.trigger_condition_frequency = trigger_condition_frequency
+        if whether_recovery_policy is not None:
+            self.whether_recovery_policy = whether_recovery_policy
+        if recovery_policy is not None:
+            self.recovery_policy = recovery_policy
 
     @property
     def sql_alarm_rule_id(self):
@@ -346,6 +374,94 @@ class UpdateSqlAlarmRuleRequestBody:
         :type notification_save_rule: :class:`huaweicloudsdklts.v2.NotificationSaveRule`
         """
         self._notification_save_rule = notification_save_rule
+
+    @property
+    def trigger_condition_count(self):
+        """Gets the trigger_condition_count of this UpdateSqlAlarmRuleRequestBody.
+
+        触发条件：触发次数;默认为1
+
+        :return: The trigger_condition_count of this UpdateSqlAlarmRuleRequestBody.
+        :rtype: int
+        """
+        return self._trigger_condition_count
+
+    @trigger_condition_count.setter
+    def trigger_condition_count(self, trigger_condition_count):
+        """Sets the trigger_condition_count of this UpdateSqlAlarmRuleRequestBody.
+
+        触发条件：触发次数;默认为1
+
+        :param trigger_condition_count: The trigger_condition_count of this UpdateSqlAlarmRuleRequestBody.
+        :type trigger_condition_count: int
+        """
+        self._trigger_condition_count = trigger_condition_count
+
+    @property
+    def trigger_condition_frequency(self):
+        """Gets the trigger_condition_frequency of this UpdateSqlAlarmRuleRequestBody.
+
+        触发条件：触发周期;默认为1
+
+        :return: The trigger_condition_frequency of this UpdateSqlAlarmRuleRequestBody.
+        :rtype: int
+        """
+        return self._trigger_condition_frequency
+
+    @trigger_condition_frequency.setter
+    def trigger_condition_frequency(self, trigger_condition_frequency):
+        """Sets the trigger_condition_frequency of this UpdateSqlAlarmRuleRequestBody.
+
+        触发条件：触发周期;默认为1
+
+        :param trigger_condition_frequency: The trigger_condition_frequency of this UpdateSqlAlarmRuleRequestBody.
+        :type trigger_condition_frequency: int
+        """
+        self._trigger_condition_frequency = trigger_condition_frequency
+
+    @property
+    def whether_recovery_policy(self):
+        """Gets the whether_recovery_policy of this UpdateSqlAlarmRuleRequestBody.
+
+        是否打开恢复通知;默认false
+
+        :return: The whether_recovery_policy of this UpdateSqlAlarmRuleRequestBody.
+        :rtype: bool
+        """
+        return self._whether_recovery_policy
+
+    @whether_recovery_policy.setter
+    def whether_recovery_policy(self, whether_recovery_policy):
+        """Sets the whether_recovery_policy of this UpdateSqlAlarmRuleRequestBody.
+
+        是否打开恢复通知;默认false
+
+        :param whether_recovery_policy: The whether_recovery_policy of this UpdateSqlAlarmRuleRequestBody.
+        :type whether_recovery_policy: bool
+        """
+        self._whether_recovery_policy = whether_recovery_policy
+
+    @property
+    def recovery_policy(self):
+        """Gets the recovery_policy of this UpdateSqlAlarmRuleRequestBody.
+
+        恢复策略周期;默认为3
+
+        :return: The recovery_policy of this UpdateSqlAlarmRuleRequestBody.
+        :rtype: int
+        """
+        return self._recovery_policy
+
+    @recovery_policy.setter
+    def recovery_policy(self, recovery_policy):
+        """Sets the recovery_policy of this UpdateSqlAlarmRuleRequestBody.
+
+        恢复策略周期;默认为3
+
+        :param recovery_policy: The recovery_policy of this UpdateSqlAlarmRuleRequestBody.
+        :type recovery_policy: int
+        """
+        self._recovery_policy = recovery_policy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

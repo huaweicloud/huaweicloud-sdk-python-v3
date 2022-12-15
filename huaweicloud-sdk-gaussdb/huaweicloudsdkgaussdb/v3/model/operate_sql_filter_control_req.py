@@ -32,7 +32,7 @@ class OperateSqlFilterControlReq:
 
         The model defined in huaweicloud sdk
 
-        :param switch_status: SQL限流开关状态。取值：ON|OFF
+        :param switch_status: SQL限流开关状态。 取值： - ON，表示开启。 - OFF，表示关闭。
         :type switch_status: str
         """
         
@@ -47,7 +47,7 @@ class OperateSqlFilterControlReq:
     def switch_status(self):
         """Gets the switch_status of this OperateSqlFilterControlReq.
 
-        SQL限流开关状态。取值：ON|OFF
+        SQL限流开关状态。 取值： - ON，表示开启。 - OFF，表示关闭。
 
         :return: The switch_status of this OperateSqlFilterControlReq.
         :rtype: str
@@ -58,7 +58,7 @@ class OperateSqlFilterControlReq:
     def switch_status(self, switch_status):
         """Sets the switch_status of this OperateSqlFilterControlReq.
 
-        SQL限流开关状态。取值：ON|OFF
+        SQL限流开关状态。 取值： - ON，表示开启。 - OFF，表示关闭。
 
         :param switch_status: The switch_status of this OperateSqlFilterControlReq.
         :type switch_status: str

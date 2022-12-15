@@ -116,7 +116,7 @@ class CreateRequestBody:
         :type database_type: str
         :param resource_password: BCS服务资源、区块链管理密码
         :type resource_password: str
-        :param orderer_node_number: 共识组织节点数，被邀请方创实例时可不填。购买fabric2.2服务时必填。
+        :param orderer_node_number: 共识组织节点数，被邀请方创实例时可不填。购买fabric2.2服务时必填，若共识策略为Raft（CFT），节点数为3；若共识策略为快速拜占庭容错共识算法（FBFT），节点数为4。
         :type orderer_node_number: int
         :param use_eip: 是否使用集群节点弹性IP
         :type use_eip: bool
@@ -516,7 +516,7 @@ class CreateRequestBody:
     def orderer_node_number(self):
         """Gets the orderer_node_number of this CreateRequestBody.
 
-        共识组织节点数，被邀请方创实例时可不填。购买fabric2.2服务时必填。
+        共识组织节点数，被邀请方创实例时可不填。购买fabric2.2服务时必填，若共识策略为Raft（CFT），节点数为3；若共识策略为快速拜占庭容错共识算法（FBFT），节点数为4。
 
         :return: The orderer_node_number of this CreateRequestBody.
         :rtype: int
@@ -527,7 +527,7 @@ class CreateRequestBody:
     def orderer_node_number(self, orderer_node_number):
         """Sets the orderer_node_number of this CreateRequestBody.
 
-        共识组织节点数，被邀请方创实例时可不填。购买fabric2.2服务时必填。
+        共识组织节点数，被邀请方创实例时可不填。购买fabric2.2服务时必填，若共识策略为Raft（CFT），节点数为3；若共识策略为快速拜占庭容错共识算法（FBFT），节点数为4。
 
         :param orderer_node_number: The orderer_node_number of this CreateRequestBody.
         :type orderer_node_number: int

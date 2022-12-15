@@ -84,7 +84,7 @@ class MysqlInstanceNodeInfo:
         :type az_code: str
         :param region_code: 实例所在的区域。
         :type region_code: str
-        :param created: 创建时间，格式为\&quot;yyyy-mm-ddThh:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
+        :param created: 创建时间，格式为\&quot;yyyy-mm-ddThh:mm:ssZ\&quot;。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
         :type created: str
         :param updated: 更新时间，格式与\&quot;created\&quot;字段对应格式完全相同。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
         :type updated: str
@@ -359,7 +359,7 @@ class MysqlInstanceNodeInfo:
     def created(self):
         """Gets the created of this MysqlInstanceNodeInfo.
 
-        创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
+        创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
         :return: The created of this MysqlInstanceNodeInfo.
         :rtype: str
@@ -370,7 +370,7 @@ class MysqlInstanceNodeInfo:
     def created(self, created):
         """Sets the created of this MysqlInstanceNodeInfo.
 
-        创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
+        创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
         :param created: The created of this MysqlInstanceNodeInfo.
         :type created: str

@@ -1004,9 +1004,9 @@ class BcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_bcs_metric_async(self, request):
-        """查询BCS服务实例监控数据
+        """查询服务实例监控数据
 
-        该接口用于查询BCS服务的监控数据，可以指定相应的指标名称。[目前不支持IEF节点](tag:hasief)
+        该接口用于查询BCS服务的监控数据，可以指定相应的指标名称。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

@@ -36,7 +36,7 @@ class ListGaussMySqlDatabase:
 
         :param name: 数据库名称。
         :type name: str
-        :param readonly: 是否为只读权限：true表示只读,false表示可读写。
+        :param readonly: 是否为只读权限： - true，表示只读。 - false，表示可读写。
         :type readonly: bool
         """
         
@@ -77,7 +77,7 @@ class ListGaussMySqlDatabase:
     def readonly(self):
         """Gets the readonly of this ListGaussMySqlDatabase.
 
-        是否为只读权限：true表示只读,false表示可读写。
+        是否为只读权限： - true，表示只读。 - false，表示可读写。
 
         :return: The readonly of this ListGaussMySqlDatabase.
         :rtype: bool
@@ -88,7 +88,7 @@ class ListGaussMySqlDatabase:
     def readonly(self, readonly):
         """Sets the readonly of this ListGaussMySqlDatabase.
 
-        是否为只读权限：true表示只读,false表示可读写。
+        是否为只读权限： - true，表示只读。 - false，表示可读写。
 
         :param readonly: The readonly of this ListGaussMySqlDatabase.
         :type readonly: bool

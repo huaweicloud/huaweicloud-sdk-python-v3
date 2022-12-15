@@ -36,15 +36,21 @@ class BasicInfo:
         'cluster_az': 'str',
         'created_time': 'str',
         'deploy_type': 'str',
+        'order_fade_enabled': 'bool',
         'is_cross_region': 'bool',
         'is_support_rollback': 'bool',
         'is_support_restful': 'bool',
+        'is_support_tc3': 'bool',
         'is_old_service': 'bool',
         'old_service_version': 'str',
         'agent_portal_addrs': 'list[str]',
         'status': 'str',
         'process_status': 'str',
-        'order_status': 'int'
+        'order_status': 'int',
+        'order_fade_cache': 'int',
+        'deploy_status': 'int',
+        'block_info': 'CreateRequestBodyBlockInfo',
+        'cluster_platform_type': 'str'
     }
 
     attribute_map = {
@@ -64,18 +70,24 @@ class BasicInfo:
         'cluster_az': 'cluster_az',
         'created_time': 'created_time',
         'deploy_type': 'deploy_type',
+        'order_fade_enabled': 'order_fade_enabled',
         'is_cross_region': 'is_cross_region',
         'is_support_rollback': 'is_support_rollback',
         'is_support_restful': 'is_support_restful',
+        'is_support_tc3': 'is_support_tc3',
         'is_old_service': 'is_old_service',
         'old_service_version': 'old_service_version',
         'agent_portal_addrs': 'agent_portal_addrs',
         'status': 'status',
         'process_status': 'process_status',
-        'order_status': 'order_status'
+        'order_status': 'order_status',
+        'order_fade_cache': 'order_fade_cache',
+        'deploy_status': 'deploy_status',
+        'block_info': 'block_info',
+        'cluster_platform_type': 'cluster_platform_type'
     }
 
-    def __init__(self, id=None, name=None, version=None, service_type=None, purchase_type=None, sign_algorithm=None, consensus=None, charging_mode=None, version_type=None, database_type=None, cluster_id=None, cluster_name=None, cluster_type=None, cluster_az=None, created_time=None, deploy_type=None, is_cross_region=None, is_support_rollback=None, is_support_restful=None, is_old_service=None, old_service_version=None, agent_portal_addrs=None, status=None, process_status=None, order_status=None):
+    def __init__(self, id=None, name=None, version=None, service_type=None, purchase_type=None, sign_algorithm=None, consensus=None, charging_mode=None, version_type=None, database_type=None, cluster_id=None, cluster_name=None, cluster_type=None, cluster_az=None, created_time=None, deploy_type=None, order_fade_enabled=None, is_cross_region=None, is_support_rollback=None, is_support_restful=None, is_support_tc3=None, is_old_service=None, old_service_version=None, agent_portal_addrs=None, status=None, process_status=None, order_status=None, order_fade_cache=None, deploy_status=None, block_info=None, cluster_platform_type=None):
         """BasicInfo
 
         The model defined in huaweicloud sdk
@@ -112,12 +124,16 @@ class BasicInfo:
         :type created_time: str
         :param deploy_type: BCS服务联盟链下生效，分为邀请方（create），被邀请方（invite）
         :type deploy_type: str
+        :param order_fade_enabled: 是否允许order老化
+        :type order_fade_enabled: bool
         :param is_cross_region: BCS服务是否跨region
         :type is_cross_region: bool
         :param is_support_rollback: BCS服务升级失败，是否支持回滚
         :type is_support_rollback: bool
         :param is_support_restful: BCS服务是否添加RESTful APIs支持，分为支持（true），不支持（false）
         :type is_support_restful: bool
+        :param is_support_tc3: BCS服务是否支持可信计算平台，分为支持（true），不支持（false）
+        :type is_support_tc3: bool
         :param is_old_service: 区分BCS是否新服务，分为老服务（true），新服务（false）
         :type is_old_service: bool
         :param old_service_version: BCS服务为老服务时，此字段为老服务版本号
@@ -130,6 +146,14 @@ class BasicInfo:
         :type process_status: str
         :param order_status: BCS服务为包周期模式时，返回值为0（订单未成功）,1（订单异常）,2（订单正常）
         :type order_status: int
+        :param order_fade_cache: 共识节点的老化阈值
+        :type order_fade_cache: int
+        :param deploy_status: BCS服务部署状态，分为进行中（0），成功（1），失败（2），结束（3）
+        :type deploy_status: int
+        :param block_info: 
+        :type block_info: :class:`huaweicloudsdkbcs.v2.CreateRequestBodyBlockInfo`
+        :param cluster_platform_type: 集群CPU架构类型：X86（VirtualMachine），ARM（ARM64）
+        :type cluster_platform_type: str
         """
         
         
@@ -150,15 +174,21 @@ class BasicInfo:
         self._cluster_az = None
         self._created_time = None
         self._deploy_type = None
+        self._order_fade_enabled = None
         self._is_cross_region = None
         self._is_support_rollback = None
         self._is_support_restful = None
+        self._is_support_tc3 = None
         self._is_old_service = None
         self._old_service_version = None
         self._agent_portal_addrs = None
         self._status = None
         self._process_status = None
         self._order_status = None
+        self._order_fade_cache = None
+        self._deploy_status = None
+        self._block_info = None
+        self._cluster_platform_type = None
         self.discriminator = None
 
         if id is not None:
@@ -193,12 +223,16 @@ class BasicInfo:
             self.created_time = created_time
         if deploy_type is not None:
             self.deploy_type = deploy_type
+        if order_fade_enabled is not None:
+            self.order_fade_enabled = order_fade_enabled
         if is_cross_region is not None:
             self.is_cross_region = is_cross_region
         if is_support_rollback is not None:
             self.is_support_rollback = is_support_rollback
         if is_support_restful is not None:
             self.is_support_restful = is_support_restful
+        if is_support_tc3 is not None:
+            self.is_support_tc3 = is_support_tc3
         if is_old_service is not None:
             self.is_old_service = is_old_service
         if old_service_version is not None:
@@ -211,6 +245,14 @@ class BasicInfo:
             self.process_status = process_status
         if order_status is not None:
             self.order_status = order_status
+        if order_fade_cache is not None:
+            self.order_fade_cache = order_fade_cache
+        if deploy_status is not None:
+            self.deploy_status = deploy_status
+        if block_info is not None:
+            self.block_info = block_info
+        if cluster_platform_type is not None:
+            self.cluster_platform_type = cluster_platform_type
 
     @property
     def id(self):
@@ -565,6 +607,28 @@ class BasicInfo:
         self._deploy_type = deploy_type
 
     @property
+    def order_fade_enabled(self):
+        """Gets the order_fade_enabled of this BasicInfo.
+
+        是否允许order老化
+
+        :return: The order_fade_enabled of this BasicInfo.
+        :rtype: bool
+        """
+        return self._order_fade_enabled
+
+    @order_fade_enabled.setter
+    def order_fade_enabled(self, order_fade_enabled):
+        """Sets the order_fade_enabled of this BasicInfo.
+
+        是否允许order老化
+
+        :param order_fade_enabled: The order_fade_enabled of this BasicInfo.
+        :type order_fade_enabled: bool
+        """
+        self._order_fade_enabled = order_fade_enabled
+
+    @property
     def is_cross_region(self):
         """Gets the is_cross_region of this BasicInfo.
 
@@ -629,6 +693,28 @@ class BasicInfo:
         :type is_support_restful: bool
         """
         self._is_support_restful = is_support_restful
+
+    @property
+    def is_support_tc3(self):
+        """Gets the is_support_tc3 of this BasicInfo.
+
+        BCS服务是否支持可信计算平台，分为支持（true），不支持（false）
+
+        :return: The is_support_tc3 of this BasicInfo.
+        :rtype: bool
+        """
+        return self._is_support_tc3
+
+    @is_support_tc3.setter
+    def is_support_tc3(self, is_support_tc3):
+        """Sets the is_support_tc3 of this BasicInfo.
+
+        BCS服务是否支持可信计算平台，分为支持（true），不支持（false）
+
+        :param is_support_tc3: The is_support_tc3 of this BasicInfo.
+        :type is_support_tc3: bool
+        """
+        self._is_support_tc3 = is_support_tc3
 
     @property
     def is_old_service(self):
@@ -761,6 +847,90 @@ class BasicInfo:
         :type order_status: int
         """
         self._order_status = order_status
+
+    @property
+    def order_fade_cache(self):
+        """Gets the order_fade_cache of this BasicInfo.
+
+        共识节点的老化阈值
+
+        :return: The order_fade_cache of this BasicInfo.
+        :rtype: int
+        """
+        return self._order_fade_cache
+
+    @order_fade_cache.setter
+    def order_fade_cache(self, order_fade_cache):
+        """Sets the order_fade_cache of this BasicInfo.
+
+        共识节点的老化阈值
+
+        :param order_fade_cache: The order_fade_cache of this BasicInfo.
+        :type order_fade_cache: int
+        """
+        self._order_fade_cache = order_fade_cache
+
+    @property
+    def deploy_status(self):
+        """Gets the deploy_status of this BasicInfo.
+
+        BCS服务部署状态，分为进行中（0），成功（1），失败（2），结束（3）
+
+        :return: The deploy_status of this BasicInfo.
+        :rtype: int
+        """
+        return self._deploy_status
+
+    @deploy_status.setter
+    def deploy_status(self, deploy_status):
+        """Sets the deploy_status of this BasicInfo.
+
+        BCS服务部署状态，分为进行中（0），成功（1），失败（2），结束（3）
+
+        :param deploy_status: The deploy_status of this BasicInfo.
+        :type deploy_status: int
+        """
+        self._deploy_status = deploy_status
+
+    @property
+    def block_info(self):
+        """Gets the block_info of this BasicInfo.
+
+        :return: The block_info of this BasicInfo.
+        :rtype: :class:`huaweicloudsdkbcs.v2.CreateRequestBodyBlockInfo`
+        """
+        return self._block_info
+
+    @block_info.setter
+    def block_info(self, block_info):
+        """Sets the block_info of this BasicInfo.
+
+        :param block_info: The block_info of this BasicInfo.
+        :type block_info: :class:`huaweicloudsdkbcs.v2.CreateRequestBodyBlockInfo`
+        """
+        self._block_info = block_info
+
+    @property
+    def cluster_platform_type(self):
+        """Gets the cluster_platform_type of this BasicInfo.
+
+        集群CPU架构类型：X86（VirtualMachine），ARM（ARM64）
+
+        :return: The cluster_platform_type of this BasicInfo.
+        :rtype: str
+        """
+        return self._cluster_platform_type
+
+    @cluster_platform_type.setter
+    def cluster_platform_type(self, cluster_platform_type):
+        """Sets the cluster_platform_type of this BasicInfo.
+
+        集群CPU架构类型：X86（VirtualMachine），ARM（ARM64）
+
+        :param cluster_platform_type: The cluster_platform_type of this BasicInfo.
+        :type cluster_platform_type: str
+        """
+        self._cluster_platform_type = cluster_platform_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

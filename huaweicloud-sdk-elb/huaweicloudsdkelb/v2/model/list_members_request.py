@@ -56,7 +56,7 @@ class ListMembersRequest:
         :type pool_id: str
         :param limit: 分页查询中每页的后端服务器个数
         :type limit: int
-        :param marker: 分页查询的起始的资源id，表示上一页最后一条查询记录的负载均衡器的id。不指定时表示查询第一页。
+        :param marker: 分页查询的起始的资源id，表示上一页最后一条查询记录的后端服务器的id。不指定时表示查询第一页。
         :type marker: str
         :param page_reverse: 分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
         :type page_reverse: bool
@@ -161,7 +161,7 @@ class ListMembersRequest:
     def marker(self):
         """Gets the marker of this ListMembersRequest.
 
-        分页查询的起始的资源id，表示上一页最后一条查询记录的负载均衡器的id。不指定时表示查询第一页。
+        分页查询的起始的资源id，表示上一页最后一条查询记录的后端服务器的id。不指定时表示查询第一页。
 
         :return: The marker of this ListMembersRequest.
         :rtype: str
@@ -172,7 +172,7 @@ class ListMembersRequest:
     def marker(self, marker):
         """Sets the marker of this ListMembersRequest.
 
-        分页查询的起始的资源id，表示上一页最后一条查询记录的负载均衡器的id。不指定时表示查询第一页。
+        分页查询的起始的资源id，表示上一页最后一条查询记录的后端服务器的id。不指定时表示查询第一页。
 
         :param marker: The marker of this ListMembersRequest.
         :type marker: str

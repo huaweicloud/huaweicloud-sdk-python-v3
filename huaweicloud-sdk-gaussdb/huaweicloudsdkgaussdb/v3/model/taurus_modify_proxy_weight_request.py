@@ -21,7 +21,7 @@ class TaurusModifyProxyWeightRequest:
 
     openapi_types = {
         'master_weight': 'int',
-        'readonly_nodes': 'list[TaurusModifyProxyWeightReadonlyNode]'
+        'readonly_nodes': 'list[ModifyProxyWeightReadonlyNode]'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class TaurusModifyProxyWeightRequest:
         :param master_weight: 主节点权重
         :type master_weight: int
         :param readonly_nodes: 只读节点权重配置信息
-        :type readonly_nodes: list[:class:`huaweicloudsdkgaussdb.v3.TaurusModifyProxyWeightReadonlyNode`]
+        :type readonly_nodes: list[:class:`huaweicloudsdkgaussdb.v3.ModifyProxyWeightReadonlyNode`]
         """
         
         
@@ -80,7 +80,7 @@ class TaurusModifyProxyWeightRequest:
         只读节点权重配置信息
 
         :return: The readonly_nodes of this TaurusModifyProxyWeightRequest.
-        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.TaurusModifyProxyWeightReadonlyNode`]
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.ModifyProxyWeightReadonlyNode`]
         """
         return self._readonly_nodes
 
@@ -91,7 +91,7 @@ class TaurusModifyProxyWeightRequest:
         只读节点权重配置信息
 
         :param readonly_nodes: The readonly_nodes of this TaurusModifyProxyWeightRequest.
-        :type readonly_nodes: list[:class:`huaweicloudsdkgaussdb.v3.TaurusModifyProxyWeightReadonlyNode`]
+        :type readonly_nodes: list[:class:`huaweicloudsdkgaussdb.v3.ModifyProxyWeightReadonlyNode`]
         """
         self._readonly_nodes = readonly_nodes
 

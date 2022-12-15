@@ -20,7 +20,6 @@ class ListHostStatusRequest:
     sensitive_list = []
 
     openapi_types = {
-        'region': 'str',
         'enterprise_project_id': 'str',
         'version': 'str',
         'agent_status': 'str',
@@ -35,6 +34,7 @@ class ListHostStatusRequest:
         'protect_status': 'str',
         'group_id': 'str',
         'group_name': 'str',
+        'region': 'str',
         'policy_group_id': 'str',
         'policy_group_name': 'str',
         'charging_mode': 'str',
@@ -49,7 +49,6 @@ class ListHostStatusRequest:
     }
 
     attribute_map = {
-        'region': 'region',
         'enterprise_project_id': 'enterprise_project_id',
         'version': 'version',
         'agent_status': 'agent_status',
@@ -64,6 +63,7 @@ class ListHostStatusRequest:
         'protect_status': 'protect_status',
         'group_id': 'group_id',
         'group_name': 'group_name',
+        'region': 'region',
         'policy_group_id': 'policy_group_id',
         'policy_group_name': 'policy_group_name',
         'charging_mode': 'charging_mode',
@@ -77,18 +77,16 @@ class ListHostStatusRequest:
         'offset': 'offset'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, version=None, agent_status=None, detect_result=None, host_name=None, host_id=None, host_status=None, os_type=None, private_ip=None, public_ip=None, ip_addr=None, protect_status=None, group_id=None, group_name=None, policy_group_id=None, policy_group_name=None, charging_mode=None, refresh=None, above_version=None, outside_host=None, asset_value=None, label=None, server_group=None, limit=None, offset=None):
+    def __init__(self, enterprise_project_id=None, version=None, agent_status=None, detect_result=None, host_name=None, host_id=None, host_status=None, os_type=None, private_ip=None, public_ip=None, ip_addr=None, protect_status=None, group_id=None, group_name=None, region=None, policy_group_id=None, policy_group_name=None, charging_mode=None, refresh=None, above_version=None, outside_host=None, asset_value=None, label=None, server_group=None, limit=None, offset=None):
         """ListHostStatusRequest
 
         The model defined in huaweicloud sdk
 
-        :param region: region id
-        :type region: str
         :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
         :param version: 主机开通的版本，包含如下6种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
         :type version: str
-        :param agent_status: Agent状态，包含如下5种。   - not_installed ：未安装。   - online ：在线。   - offline ：离线。   - install_failed ：安装失败。   - installing ：安装中。   - not_online ：不在线的（除了在线以外的所有状态，仅作为查询条件）。
+        :param agent_status: Agent状态，包含如下6种。   - installed ：已安装。   - not_installed ：未安装。   - online ：在线。   - offline ：离线。   - install_failed ：安装失败。   - installing ：安装中。   - not_online ：不在线的（除了在线以外的所有状态，仅作为查询条件）。
         :type agent_status: str
         :param detect_result: 检测结果，包含如下4种。   - undetected ：未检测。   - clean ：无风险。   - risk ：有风险。   - scanning ：检测中。
         :type detect_result: str
@@ -112,6 +110,8 @@ class ListHostStatusRequest:
         :type group_id: str
         :param group_name: 服务器组名称
         :type group_name: str
+        :param region: region id
+        :type region: str
         :param policy_group_id: 策略组ID
         :type policy_group_id: str
         :param policy_group_name: 策略组名称
@@ -138,7 +138,6 @@ class ListHostStatusRequest:
         
         
 
-        self._region = None
         self._enterprise_project_id = None
         self._version = None
         self._agent_status = None
@@ -153,6 +152,7 @@ class ListHostStatusRequest:
         self._protect_status = None
         self._group_id = None
         self._group_name = None
+        self._region = None
         self._policy_group_id = None
         self._policy_group_name = None
         self._charging_mode = None
@@ -166,7 +166,6 @@ class ListHostStatusRequest:
         self._offset = None
         self.discriminator = None
 
-        self.region = region
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if version is not None:
@@ -195,6 +194,8 @@ class ListHostStatusRequest:
             self.group_id = group_id
         if group_name is not None:
             self.group_name = group_name
+        if region is not None:
+            self.region = region
         if policy_group_id is not None:
             self.policy_group_id = policy_group_id
         if policy_group_name is not None:
@@ -217,28 +218,6 @@ class ListHostStatusRequest:
             self.limit = limit
         if offset is not None:
             self.offset = offset
-
-    @property
-    def region(self):
-        """Gets the region of this ListHostStatusRequest.
-
-        region id
-
-        :return: The region of this ListHostStatusRequest.
-        :rtype: str
-        """
-        return self._region
-
-    @region.setter
-    def region(self, region):
-        """Sets the region of this ListHostStatusRequest.
-
-        region id
-
-        :param region: The region of this ListHostStatusRequest.
-        :type region: str
-        """
-        self._region = region
 
     @property
     def enterprise_project_id(self):
@@ -288,7 +267,7 @@ class ListHostStatusRequest:
     def agent_status(self):
         """Gets the agent_status of this ListHostStatusRequest.
 
-        Agent状态，包含如下5种。   - not_installed ：未安装。   - online ：在线。   - offline ：离线。   - install_failed ：安装失败。   - installing ：安装中。   - not_online ：不在线的（除了在线以外的所有状态，仅作为查询条件）。
+        Agent状态，包含如下6种。   - installed ：已安装。   - not_installed ：未安装。   - online ：在线。   - offline ：离线。   - install_failed ：安装失败。   - installing ：安装中。   - not_online ：不在线的（除了在线以外的所有状态，仅作为查询条件）。
 
         :return: The agent_status of this ListHostStatusRequest.
         :rtype: str
@@ -299,7 +278,7 @@ class ListHostStatusRequest:
     def agent_status(self, agent_status):
         """Sets the agent_status of this ListHostStatusRequest.
 
-        Agent状态，包含如下5种。   - not_installed ：未安装。   - online ：在线。   - offline ：离线。   - install_failed ：安装失败。   - installing ：安装中。   - not_online ：不在线的（除了在线以外的所有状态，仅作为查询条件）。
+        Agent状态，包含如下6种。   - installed ：已安装。   - not_installed ：未安装。   - online ：在线。   - offline ：离线。   - install_failed ：安装失败。   - installing ：安装中。   - not_online ：不在线的（除了在线以外的所有状态，仅作为查询条件）。
 
         :param agent_status: The agent_status of this ListHostStatusRequest.
         :type agent_status: str
@@ -547,6 +526,28 @@ class ListHostStatusRequest:
         :type group_name: str
         """
         self._group_name = group_name
+
+    @property
+    def region(self):
+        """Gets the region of this ListHostStatusRequest.
+
+        region id
+
+        :return: The region of this ListHostStatusRequest.
+        :rtype: str
+        """
+        return self._region
+
+    @region.setter
+    def region(self, region):
+        """Sets the region of this ListHostStatusRequest.
+
+        region id
+
+        :param region: The region of this ListHostStatusRequest.
+        :type region: str
+        """
+        self._region = region
 
     @property
     def policy_group_id(self):

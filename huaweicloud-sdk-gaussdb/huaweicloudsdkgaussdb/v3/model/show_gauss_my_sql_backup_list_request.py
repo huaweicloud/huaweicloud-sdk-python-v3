@@ -52,15 +52,15 @@ class ShowGaussMySqlBackupListRequest:
         :type instance_id: str
         :param backup_id: 备份ID。
         :type backup_id: str
-        :param backup_type: 备份类型，取值：   \&quot;auto\&quot;：自动全量备份   \&quot;manual\&quot;：手动全量备份
+        :param backup_type: 备份类型，取值：  - \&quot;auto\&quot;：自动全量备份。 - \&quot;manual\&quot;：手动全量备份。
         :type backup_type: str
         :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
         :type offset: str
         :param limit: 查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
         :type limit: str
-        :param begin_time: 查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :param begin_time: 查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
         :type begin_time: str
-        :param end_time: 查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :param end_time: 查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
         :type end_time: str
         """
         
@@ -163,7 +163,7 @@ class ShowGaussMySqlBackupListRequest:
     def backup_type(self):
         """Gets the backup_type of this ShowGaussMySqlBackupListRequest.
 
-        备份类型，取值：   \"auto\"：自动全量备份   \"manual\"：手动全量备份
+        备份类型，取值：  - \"auto\"：自动全量备份。 - \"manual\"：手动全量备份。
 
         :return: The backup_type of this ShowGaussMySqlBackupListRequest.
         :rtype: str
@@ -174,7 +174,7 @@ class ShowGaussMySqlBackupListRequest:
     def backup_type(self, backup_type):
         """Sets the backup_type of this ShowGaussMySqlBackupListRequest.
 
-        备份类型，取值：   \"auto\"：自动全量备份   \"manual\"：手动全量备份
+        备份类型，取值：  - \"auto\"：自动全量备份。 - \"manual\"：手动全量备份。
 
         :param backup_type: The backup_type of this ShowGaussMySqlBackupListRequest.
         :type backup_type: str
@@ -229,7 +229,7 @@ class ShowGaussMySqlBackupListRequest:
     def begin_time(self):
         """Gets the begin_time of this ShowGaussMySqlBackupListRequest.
 
-        查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
         :return: The begin_time of this ShowGaussMySqlBackupListRequest.
         :rtype: str
@@ -240,7 +240,7 @@ class ShowGaussMySqlBackupListRequest:
     def begin_time(self, begin_time):
         """Sets the begin_time of this ShowGaussMySqlBackupListRequest.
 
-        查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
         :param begin_time: The begin_time of this ShowGaussMySqlBackupListRequest.
         :type begin_time: str
@@ -251,7 +251,7 @@ class ShowGaussMySqlBackupListRequest:
     def end_time(self):
         """Gets the end_time of this ShowGaussMySqlBackupListRequest.
 
-        查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
         :return: The end_time of this ShowGaussMySqlBackupListRequest.
         :rtype: str
@@ -262,7 +262,7 @@ class ShowGaussMySqlBackupListRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ShowGaussMySqlBackupListRequest.
 
-        查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
         :param end_time: The end_time of this ShowGaussMySqlBackupListRequest.
         :type end_time: str

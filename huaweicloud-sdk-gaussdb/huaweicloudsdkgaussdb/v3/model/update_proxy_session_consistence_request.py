@@ -40,7 +40,7 @@ class UpdateProxySessionConsistenceRequest:
 
         :param x_language: 语言。
         :type x_language: str
-        :param instance_id: 租户在某一project下的实例id。
+        :param instance_id: 租户在某一project下的实例ID。
         :type instance_id: str
         :param proxy_id: 租户在某一instance下的数据库代理id。
         :type proxy_id: str
@@ -89,7 +89,7 @@ class UpdateProxySessionConsistenceRequest:
     def instance_id(self):
         """Gets the instance_id of this UpdateProxySessionConsistenceRequest.
 
-        租户在某一project下的实例id。
+        租户在某一project下的实例ID。
 
         :return: The instance_id of this UpdateProxySessionConsistenceRequest.
         :rtype: str
@@ -100,7 +100,7 @@ class UpdateProxySessionConsistenceRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this UpdateProxySessionConsistenceRequest.
 
-        租户在某一project下的实例id。
+        租户在某一project下的实例ID。
 
         :param instance_id: The instance_id of this UpdateProxySessionConsistenceRequest.
         :type instance_id: str
