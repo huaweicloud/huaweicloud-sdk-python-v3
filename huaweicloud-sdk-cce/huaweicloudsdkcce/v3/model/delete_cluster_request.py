@@ -48,7 +48,7 @@ class DeleteClusterRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        :param cluster_id: 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
         :type cluster_id: str
         :param delete_efs: 是否删除SFS Turbo（极速文件存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
         :type delete_efs: str
@@ -103,7 +103,7 @@ class DeleteClusterRequest:
     def cluster_id(self):
         """Gets the cluster_id of this DeleteClusterRequest.
 
-        集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :return: The cluster_id of this DeleteClusterRequest.
         :rtype: str
@@ -114,7 +114,7 @@ class DeleteClusterRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this DeleteClusterRequest.
 
-        集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :param cluster_id: The cluster_id of this DeleteClusterRequest.
         :type cluster_id: str

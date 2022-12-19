@@ -1342,6 +1342,142 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_task_path_tree_async(self, request):
+        """获取任务的目录树
+
+        获取任务的目录树
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTaskPathTree
+        :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTaskPathTreeRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTaskPathTreeResponse`
+        """
+        return self.show_task_path_tree_with_http_info(request)
+
+    def show_task_path_tree_with_http_info(self, request):
+        all_params = ['project_id', 'task_id', 'current_path', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+        if 'current_path' in local_var_params:
+            query_params.append(('current_path', local_var_params['current_path']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/tasks/{task_id}/listpathtree',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowTaskPathTreeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_task_settings_async(self, request):
+        """查询任务的高级选项
+
+        查询任务的高级选项
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTaskSettings
+        :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTaskSettingsRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTaskSettingsResponse`
+        """
+        return self.show_task_settings_with_http_info(request)
+
+    def show_task_settings_with_http_info(self, request):
+        all_params = ['project_id', 'task_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/tasks/{task_id}/settings',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowTaskSettingsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_tasklog_async(self, request):
         """查询任务检查失败日志
 
@@ -1598,6 +1734,71 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_ignore_path_async(self, request):
+        """任务配置屏蔽目录
+
+        任务配置屏蔽目录
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateIgnorePath
+        :type request: :class:`huaweicloudsdkcodecheck.v2.UpdateIgnorePathRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.UpdateIgnorePathResponse`
+        """
+        return self.update_ignore_path_with_http_info(request)
+
+    def update_ignore_path_with_http_info(self, request):
+        all_params = ['project_id', 'task_id', 'update_ignore_path_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/tasks/{task_id}/config-ignorepath',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateIgnorePathResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_task_ruleset_async(self, request):
         """修改任务规则集
 
@@ -1656,6 +1857,71 @@ class CodeCheckAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateTaskRulesetResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_task_settings_async(self, request):
+        """任务配置高级选项
+
+        任务配置高级选项，如自定义镜像
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateTaskSettings
+        :type request: :class:`huaweicloudsdkcodecheck.v2.UpdateTaskSettingsRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.UpdateTaskSettingsResponse`
+        """
+        return self.update_task_settings_with_http_info(request)
+
+    def update_task_settings_with_http_info(self, request):
+        all_params = ['project_id', 'task_id', 'update_task_settings_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/tasks/{task_id}/settings',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateTaskSettingsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -43,7 +43,7 @@ class SaClient(Client):
         return ClientBuilder(clazz)
 
     def check_product_healthy(self, request):
-        """检查心跳健康
+        """检查心跳健康（仅支持华北-北京四使用）
 
         SA提供心跳接口，集成产品定时（每五分钟）发送心跳报文到态势感知，用来确认集成产品与态势感知之间的通路是否健康。
         
@@ -107,7 +107,7 @@ class SaClient(Client):
             request_type=request.__class__.__name__)
 
     def import_events(self, request):
-        """上报安全产品数据
+        """上报安全产品数据（仅支持华北-北京四使用）
 
         批量数据上报，每批次最多不超过50条。
         

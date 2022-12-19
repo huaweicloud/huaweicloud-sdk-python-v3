@@ -1,3 +1,328 @@
+# 3.1.17 2022-12-19
+
+### HuaweiCloud SDK APM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowMonitorItemViewConfig`响应参数`function`改为必填
+  - 接口`ShowTrend`请求参数`view_type`、`collector_name`、`metric_set`、`function`、`env_id`、`start_time`、`end_time`改为必填
+  - 接口`ShowSumTable`请求参数`view_type`、`collector_name`、`metric_set`、`function`、`page`、`page_size`、`env_id`、`start_time`、`end_time`改为必填
+  - 接口`ShowRawTable`:
+    - 新增请求参数 `last_row_id`
+    - 移除请求参数 `lastRowId`
+    - 请求参数`function`改为必填
+  - 接口`SearchAgent`:
+    - 新增请求参数 `order_by_status`
+    - 移除请求参数 `orderByStatus`
+
+### HuaweiCloud SDK BCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowBlockchainDetail`新增响应参数 `order_fade_enabled`、`is_support_tc3`、`order_fade_cache`、`deploy_status`、`block_info`、`cluster_platform_type`、`status`、`status_detail`、`order_fade_enabled`
+  - 接口`DeleteMemberInvite`新增响应参数 `result`
+  - 接口`HandleNotification`新增响应参数 `result`
+  - 接口`CreateNewBlockchain`:
+    - 请求参数`node_flavor`类型调整 `string` -> `int64`
+    - 请求参数`cce_flavor`类型调整 `string` -> `int64`
+    - 请求参数`init_node_pwd`类型调整 `string` -> `int64`
+    - 请求参数`az`类型调整 `string` -> `int64`
+    - 请求参数`cluster_platform_type`类型调整 `string` -> `int64`
+  - 接口`DownloadBlockchainCert`新增响应参数 `result`
+  - 接口`DownloadBlockchainSdkConfig`新增响应参数 `result`
+  - 接口`ListEntityMetric`新增响应参数 `filesystemUsage`
+  - 接口`CreateBlockchainCertByUserName`新增响应参数 `result`
+
+### HuaweiCloud SDK CBH
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateInstanceOrder`请求参数`available_zone_id`改为非必填
+
+### HuaweiCloud SDK CBR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateVault`:
+    - 请求参数`object_type`新增枚举值`workspace`
+    - 响应参数`object_type`新增枚举值`workspace`
+  - 接口`ListVault`响应参数`object_type`新增枚举值`workspace`
+  - 接口`ShowVault`响应参数`object_type`新增枚举值`workspace`
+  - 接口`UpdateVault`响应参数`object_type`新增枚举值`workspace`
+  - 接口`ShowBackup`响应参数`resource_type`新增枚举值`OS::Workspace::DesktopV2`
+  - 接口`ListBackups`:
+    - 请求参数`resource_type`新增枚举值`OS::Workspace::DesktopV2`
+    - 响应参数`resource_type`新增枚举值`OS::Workspace::DesktopV2`
+  - 接口`ListProtectable`响应参数`object_type`新增枚举值`workspace`
+  - 接口`ShowProtectable`响应参数`object_type`新增枚举值`workspace`
+  - 接口`ShowVaultResourceInstances`响应参数`object_type`新增枚举值`workspace`
+
+### HuaweiCloud SDK CC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateBandwidthPackage`新增请求参数 `interflow_mode`
+  - 接口`ListInterRegionBandwidths`:
+    - 新增响应参数 `inter_region_bandwidths`
+    - 移除响应参数 `inter_region_bandwidth`
+
+### HuaweiCloud SDK CSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateCluster`:
+    - 新增请求参数 `vpcPermissions`
+    - 新增响应参数 `orderId`
+    - 移除请求参数 `vpcPermisssions`
+    - 移除响应参数 `ordeId`
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListServersDetails`新增请求参数 `server_id`
+
+### HuaweiCloud SDK EIP
+
+- _新增特性_
+  - 支持接口`ShowResourcesJobDetail`、`ChangeBandwidthToPeriod`、`ChangePublicipToPeriod`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateFunction`:
+    - 新增请求参数 `depend_version_list`、`func_vpc`
+    - 新增响应参数 `depend_version_list`
+  - 接口`UpdateFunctionCode`:
+    - 新增请求参数 `depend_version_list`
+    - 新增响应参数 `depend_version_list`
+  - 接口`ShowFunctionCode`新增响应参数 `depend_version_list`
+  - 接口`ShowFunctionConfig`新增响应参数 `depend_version_list`
+  - 接口`ListReservedInstanceConfigs`:
+    - 新增请求参数 `marker`、`limit`
+    - 新增响应参数 `reserved_instances`
+    - 移除响应参数 `reservedinstances`
+  - 接口`ImportFunction`新增响应参数 `depend_version_list`
+  - 接口`ListFunctionReservedInstances`:
+    - 新增请求参数 `limit`
+    - 移除请求参数 `maxitems`
+  - 接口`ShowWorkflowExecutionForPage`:
+    - 新增请求参数 `offset`、`limit`、`start_time`、`end_time`
+    - 移除请求参数 `CreateWorkflowRequestBody`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`SetGaussMySqlProxyWeight`移除请求参数 `id`、`weight`
+  - 接口`ShowGaussMySqlJobInfo`响应参数`status`新增枚举值`Pending`
+  - 接口`ListScheduleJobs`:
+    - 新增响应参数 `job_status`
+    - 移除响应参数 `task_status`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListConfigurationDatastores`:
+    - 新增响应参数 `datastore_name`
+    - 移除响应参数 `datastore_type`
+  - 接口`ModifyEpsQuotas`移除请求参数 `instance`、`vcpus`、`ram`
+  - 接口`ListEpsQuotas`移除响应参数 `instance`、`vcpus`、`ram`、`instance`、`vcpus`、`ram`
+
+### HuaweiCloud SDK HSS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowAssetStatistic`
+    - `ListUserStatistics`
+    - `ListPortStatistics`
+    - `ListProcessStatistics`
+    - `ListAppStatistics`
+    - `ListAutoLaunchStatistics`
+    - `ListPorts`
+    - `ListApps`
+    - `ListAutoLaunchs`
+    - `ListAppChangeHistories`
+    - `ListAutoLaunchChangeHistories`
+    - `ListProtectionServer`
+    - `ListProtectionPolicy`
+    - `UpdateProtectionPolicy`
+    - `StartProtection`
+    - `StopProtection`
+    - `ShowBackupPolicyInfo`
+    - `UpdateBackupPolicyInfo`
+    - `ChangeEvent`
+    - `ListAlarmWhiteList`
+    - `ListHostGroups`
+    - `ChangeHostsGroup`
+    - `AddHostsGroup`
+    - `DeleteHostsGroup`
+    - `ListPolicyGroup`
+    - `AssociatePolicyGroup`
+    - `ListVulHosts`
+    - `ChangeVulStatus`
+    - `ListWtpProtectHost`
+    - `SetWtpProtectionStatusInfo`
+    - `SetRaspSwitch`
+    - `ListHostProtectHistoryInfo`
+    - `ListHostRaspProtectHistoryInfo`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListRiskConfigCheckRules`新增响应参数 `fix_status`、`enable_auto_fix`、`rule_params`
+  - 接口`ListSecurityEvents`新增响应参数 `extend_info`
+  - 接口`ListHostStatus`:
+    - 新增响应参数 `enterprise_project_id`、`agent_create_time`、`agent_update_time`、`agent_version`、`upgrade_status`、`upgrade_result_code`、`upgradable`
+    - 请求参数`region`改为必填
+  - 接口`ListVulnerabilities`请求参数`vul_id`改为必填
+
+### HuaweiCloud SDK IEF
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListTags`响应参数`key`、`value`改为非必填
+  - 接口`CreateTag`请求参数`key`、`value`改为非必填
+  - 接口`ListEdgeNodes`响应参数`key`、`value`改为非必填
+  - 接口`ShowEdgeNodeDetail`响应参数`key`、`value`改为非必填
+  - 接口`UpdateEdgeNode`响应参数`key`、`value`改为非必填
+  - 接口`CreateEdgeGroup`新增请求参数 `device_ids`
+  - 接口`ListEdgeGroupCerts`:
+    - 新增响应参数 `groupcerts`
+    - 移除响应参数 `edge_groups`
+  - 接口`ListDevices`响应参数`type`改为非必填
+  - 接口`CreateDevice`请求参数`type`改为非必填
+  - 接口`ShowDevice`响应参数`type`改为非必填
+  - 接口`UpdateDevice`响应参数`type`改为非必填
+  - 接口`ShowDeviceTwin`响应参数`type`改为非必填
+  - 接口`UpdateDeviceTwin`:
+    - 请求参数`twin`、`property_visitors`改为非必填
+    - 响应参数`type`改为非必填
+  - 接口`ListDeviceTemplates`响应参数`key`、`value`改为非必填
+  - 接口`CreateDeviceTemplate`请求参数`key`、`value`改为非必填
+  - 接口`ShowDeviceTemplate`响应参数`key`、`value`改为非必填
+  - 接口`UpdateDeviceTemplateById`响应参数`key`、`value`改为非必填
+  - 接口`ListResourceByTags`响应参数`key`、`value`改为非必填
+  - 接口`BatchAddDeleteTags`请求参数`key`、`value`改为非必填
+  - 接口`ListApps`响应参数`read_only`改为非必填
+  - 接口`ShowAppDetail`响应参数`read_only`改为非必填
+  - 接口`UpdateApp`响应参数`read_only`改为非必填
+  - 接口`ListAppVersions`响应参数`read_only`改为非必填
+  - 接口`CreateAppVersions`请求参数`read_only`改为非必填
+  - 接口`ShowAppVersionDetail`响应参数`read_only`改为非必填
+  - 接口`UpdateAppVersion`:
+    - 请求参数`read_only`改为非必填
+    - 响应参数`read_only`改为非必填
+  - 接口`ListDeployments`响应参数`host_network`、`read_only`改为非必填
+  - 接口`CreateDeployments`请求参数`host_network`、`read_only`改为非必填
+  - 接口`ShowDeployment`响应参数`host_network`、`read_only`改为非必填
+  - 接口`UpdateDeployment`:
+    - 请求参数`replicas`、`host_network`、`read_only`改为非必填
+    - 响应参数`host_network`、`read_only`改为非必填
+  - 接口`ListPods`响应参数`host_network`、`read_only`改为非必填
+  - 接口`CreateEncryptdatas`请求参数`description`改为非必填
+  - 接口`UpdateEncryptdatas`请求参数`description`改为非必填
+  - 接口`ListBatchJob`:
+    - 新增响应参数 `task_total_count`、`task_success_count`、`task_failed_count`、`status_last_updated_at`、`description`
+    - 移除响应参数 `task_count`、`success_count`、`failed_count`、`updated_at`
+  - 接口`ShowBatchJob`:
+    - 新增响应参数 `status_last_updated_at`
+    - 移除响应参数 `updated_at`
+
+### HuaweiCloud SDK Live
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateRecordCallbackConfig`新增请求参数 `key`
+  - 接口`UpdateRecordCallbackConfig`:
+    - 新增请求参数 `key`
+    - 新增响应参数 `id`、`publish_domain`、`app`、`notify_callback_url`、`notify_event_subscription`、`sign_type`、`create_time`、`update_time`
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateSqlAlarmRule`新增请求参数 `trigger_condition_count`、`trigger_condition_frequency`、`whether_recovery_policy`、`recovery_policy`
+  - 接口`CreateSqlAlarmRule`新增请求参数 `trigger_condition_count`、`trigger_condition_frequency`、`whether_recovery_policy`、`recovery_policy`
+  - 接口`ListSqlAlarmRules`新增响应参数 `trigger_condition_count`、`trigger_condition_frequency`、`whether_recovery_policy`、`recovery_policy`
+  - 接口`UpdateKeywordsAlarmRule`新增请求参数 `trigger_condition_count`、`trigger_condition_frequency`、`whether_recovery_policy`、`recovery_policy`
+  - 接口`CreateKeywordsAlarmRule`新增请求参数 `trigger_condition_count`、`trigger_condition_frequency`、`whether_recovery_policy`、`recovery_policy`
+  - 接口`ListKeywordsAlarmRules`新增响应参数 `trigger_condition_count`、`trigger_condition_frequency`、`whether_recovery_policy`、`recovery_policy`
+  - 接口`ListHost`请求参数`host_id_list`改为非必填
+  - 接口`UpdateStructConfig`请求参数`is_analysis`、`is_analysis`改为非必填
+  - 接口`CreateStructConfig`请求参数`is_analysis`、`is_analysis`改为非必填
+
+### HuaweiCloud SDK OSM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListAuthorizations`新增响应参数 `resource_type_id`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`StartInstanceRestartAction`请求参数`restart`改为必填
+
+### HuaweiCloud SDK Workspace
+
+- _新增特性_
+  - 支持接口`ShowQuotas`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.16 2022-12-15
 
 ### HuaweiCloud SDK APM

@@ -48,7 +48,7 @@ class CreateMemberReq:
         :type tenant_id: str
         :param name: 后端云服务器名称。
         :type name: str
-        :param admin_state_up: 后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        :param admin_state_up: 后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
         :type admin_state_up: bool
         :param protocol_port: 后端端口和协议号
         :type protocol_port: int
@@ -131,7 +131,7 @@ class CreateMemberReq:
     def admin_state_up(self):
         """Gets the admin_state_up of this CreateMemberReq.
 
-        后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
         :return: The admin_state_up of this CreateMemberReq.
         :rtype: bool
@@ -142,7 +142,7 @@ class CreateMemberReq:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this CreateMemberReq.
 
-        后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
         :param admin_state_up: The admin_state_up of this CreateMemberReq.
         :type admin_state_up: bool

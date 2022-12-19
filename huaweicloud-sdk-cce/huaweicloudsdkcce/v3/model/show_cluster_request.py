@@ -34,7 +34,7 @@ class ShowClusterRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        :param cluster_id: 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
         :type cluster_id: str
         :param detail: 查询集群详细信息。  若设置为true，获取集群下节点总数(totalNodesNumber)、正常节点数(activeNodesNumber)、CPU总量(totalNodesCPU)、内存总量(totalNodesMemory)和已安装插件列表(installedAddonInstances)，已安装插件列表中包含名称(addonTemplateName)、版本号(version)、插件的状态信息(status)，放入到annotation中。 
         :type detail: str
@@ -54,7 +54,7 @@ class ShowClusterRequest:
     def cluster_id(self):
         """Gets the cluster_id of this ShowClusterRequest.
 
-        集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :return: The cluster_id of this ShowClusterRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class ShowClusterRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this ShowClusterRequest.
 
-        集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :param cluster_id: The cluster_id of this ShowClusterRequest.
         :type cluster_id: str

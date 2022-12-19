@@ -36,7 +36,7 @@ class MigrateNodeRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        :param cluster_id: 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
         :type cluster_id: str
         :param target_cluster_id: 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
         :type target_cluster_id: str
@@ -60,7 +60,7 @@ class MigrateNodeRequest:
     def cluster_id(self):
         """Gets the cluster_id of this MigrateNodeRequest.
 
-        集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :return: The cluster_id of this MigrateNodeRequest.
         :rtype: str
@@ -71,7 +71,7 @@ class MigrateNodeRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this MigrateNodeRequest.
 
-        集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :param cluster_id: The cluster_id of this MigrateNodeRequest.
         :type cluster_id: str

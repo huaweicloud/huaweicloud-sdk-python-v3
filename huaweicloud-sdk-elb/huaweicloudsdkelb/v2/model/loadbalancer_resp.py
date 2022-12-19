@@ -74,7 +74,7 @@ class LoadbalancerResp:
         :type name: str
         :param description: 负载均衡器的描述信息
         :type description: str
-        :param vip_subnet_id: 负载均衡器所在的子网的IPv4网络ID。仅支持内网类型。
+        :param vip_subnet_id: 负载均衡器所在的子网的IPv4子网ID。仅支持内网类型。
         :type vip_subnet_id: str
         :param vip_port_id: 负载均衡器虚拟IP对应的端口ID
         :type vip_port_id: str
@@ -237,7 +237,7 @@ class LoadbalancerResp:
     def vip_subnet_id(self):
         """Gets the vip_subnet_id of this LoadbalancerResp.
 
-        负载均衡器所在的子网的IPv4网络ID。仅支持内网类型。
+        负载均衡器所在的子网的IPv4子网ID。仅支持内网类型。
 
         :return: The vip_subnet_id of this LoadbalancerResp.
         :rtype: str
@@ -248,7 +248,7 @@ class LoadbalancerResp:
     def vip_subnet_id(self, vip_subnet_id):
         """Sets the vip_subnet_id of this LoadbalancerResp.
 
-        负载均衡器所在的子网的IPv4网络ID。仅支持内网类型。
+        负载均衡器所在的子网的IPv4子网ID。仅支持内网类型。
 
         :param vip_subnet_id: The vip_subnet_id of this LoadbalancerResp.
         :type vip_subnet_id: str

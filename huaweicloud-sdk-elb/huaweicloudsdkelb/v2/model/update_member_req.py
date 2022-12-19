@@ -38,7 +38,7 @@ class UpdateMemberReq:
 
         :param name: 后端云服务器名称。
         :type name: str
-        :param admin_state_up: 后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        :param admin_state_up: 后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
         :type admin_state_up: bool
         :param weight: 后端云服务器的权重，请求按权重在同一后端云服务器组下的后端云服务器间分发。权重为0的后端不再接受新的请求。当后端云服务器所在的后端云服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
         :type weight: int
@@ -84,7 +84,7 @@ class UpdateMemberReq:
     def admin_state_up(self):
         """Gets the admin_state_up of this UpdateMemberReq.
 
-        后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
         :return: The admin_state_up of this UpdateMemberReq.
         :rtype: bool
@@ -95,7 +95,7 @@ class UpdateMemberReq:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this UpdateMemberReq.
 
-        后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
         :param admin_state_up: The admin_state_up of this UpdateMemberReq.
         :type admin_state_up: bool

@@ -36,7 +36,7 @@ class UpdateNodeRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        :param cluster_id: 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
         :type cluster_id: str
         :param node_id: 节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
         :type node_id: str
@@ -60,7 +60,7 @@ class UpdateNodeRequest:
     def cluster_id(self):
         """Gets the cluster_id of this UpdateNodeRequest.
 
-        集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :return: The cluster_id of this UpdateNodeRequest.
         :rtype: str
@@ -71,7 +71,7 @@ class UpdateNodeRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this UpdateNodeRequest.
 
-        集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :param cluster_id: The cluster_id of this UpdateNodeRequest.
         :type cluster_id: str

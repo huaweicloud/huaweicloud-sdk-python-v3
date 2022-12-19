@@ -21,6 +21,7 @@ class SlowSqlTemplate:
 
     openapi_types = {
         'sql_template': 'str',
+        'sql_sample': 'str',
         'db_names': 'list[str]',
         'execute_count': 'int',
         'avg_execute_time': 'float',
@@ -35,6 +36,7 @@ class SlowSqlTemplate:
 
     attribute_map = {
         'sql_template': 'sql_template',
+        'sql_sample': 'sql_sample',
         'db_names': 'db_names',
         'execute_count': 'execute_count',
         'avg_execute_time': 'avg_execute_time',
@@ -47,13 +49,15 @@ class SlowSqlTemplate:
         'max_rows_sent': 'max_rows_sent'
     }
 
-    def __init__(self, sql_template=None, db_names=None, execute_count=None, avg_execute_time=None, max_execute_time=None, avg_lock_wait_time=None, max_lock_wait_time=None, avg_rows_examined=None, max_rows_examined=None, avg_rows_sent=None, max_rows_sent=None):
+    def __init__(self, sql_template=None, sql_sample=None, db_names=None, execute_count=None, avg_execute_time=None, max_execute_time=None, avg_lock_wait_time=None, max_lock_wait_time=None, avg_rows_examined=None, max_rows_examined=None, avg_rows_sent=None, max_rows_sent=None):
         """SlowSqlTemplate
 
         The model defined in huaweicloud sdk
 
         :param sql_template: SQL模板。
         :type sql_template: str
+        :param sql_sample: SQL样本。
+        :type sql_sample: str
         :param db_names: 库名。
         :type db_names: list[str]
         :param execute_count: 执行次数。
@@ -79,6 +83,7 @@ class SlowSqlTemplate:
         
 
         self._sql_template = None
+        self._sql_sample = None
         self._db_names = None
         self._execute_count = None
         self._avg_execute_time = None
@@ -92,6 +97,7 @@ class SlowSqlTemplate:
         self.discriminator = None
 
         self.sql_template = sql_template
+        self.sql_sample = sql_sample
         self.db_names = db_names
         self.execute_count = execute_count
         self.avg_execute_time = avg_execute_time
@@ -124,6 +130,28 @@ class SlowSqlTemplate:
         :type sql_template: str
         """
         self._sql_template = sql_template
+
+    @property
+    def sql_sample(self):
+        """Gets the sql_sample of this SlowSqlTemplate.
+
+        SQL样本。
+
+        :return: The sql_sample of this SlowSqlTemplate.
+        :rtype: str
+        """
+        return self._sql_sample
+
+    @sql_sample.setter
+    def sql_sample(self, sql_sample):
+        """Sets the sql_sample of this SlowSqlTemplate.
+
+        SQL样本。
+
+        :param sql_sample: The sql_sample of this SlowSqlTemplate.
+        :type sql_sample: str
+        """
+        self._sql_sample = sql_sample
 
     @property
     def db_names(self):

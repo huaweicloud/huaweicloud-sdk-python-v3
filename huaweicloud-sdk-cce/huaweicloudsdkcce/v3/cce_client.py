@@ -165,6 +165,68 @@ class CceClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def continue_upgrade_cluster_task(self, request):
+        """继续执行集群升级任务
+
+        继续执行被暂停的集群升级任务。
+        &gt; - 集群升级涉及多维度的组件升级操作，强烈建议统一通过CCE控制台执行交互式升级，降低集群升级过程的业务意外受损风险；
+        &gt; - 当前集群升级相关接口受限开放。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ContinueUpgradeClusterTask
+        :type request: :class:`huaweicloudsdkcce.v3.ContinueUpgradeClusterTaskRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ContinueUpgradeClusterTaskResponse`
+        """
+        return self.continue_upgrade_cluster_task_with_http_info(request)
+
+    def continue_upgrade_cluster_task_with_http_info(self, request):
+        all_params = ['cluster_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgrade/continue',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ContinueUpgradeClusterTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_addon_instance(self, request):
         """创建AddonInstance
 
@@ -1327,6 +1389,68 @@ class CceClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def pause_upgrade_cluster_task(self, request):
+        """暂停集群升级任务
+
+        暂停集群升级任务。
+        &gt; - 集群升级涉及多维度的组件升级操作，强烈建议统一通过CCE控制台执行交互式升级，降低集群升级过程的业务意外受损风险；
+        &gt; - 当前集群升级相关接口受限开放。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for PauseUpgradeClusterTask
+        :type request: :class:`huaweicloudsdkcce.v3.PauseUpgradeClusterTaskRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.PauseUpgradeClusterTaskResponse`
+        """
+        return self.pause_upgrade_cluster_task_with_http_info(request)
+
+    def pause_upgrade_cluster_task_with_http_info(self, request):
+        all_params = ['cluster_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgrade/pause',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='PauseUpgradeClusterTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def remove_node(self, request):
         """节点移除
 
@@ -1448,6 +1572,68 @@ class CceClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ResetNodeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def retry_upgrade_cluster_task(self, request):
+        """重试集群升级任务
+
+        重新执行失败的集群升级任务。
+        &gt; - 集群升级涉及多维度的组件升级操作，强烈建议统一通过CCE控制台执行交互式升级，降低集群升级过程的业务意外受损风险；
+        &gt; - 当前集群升级相关接口受限开放。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RetryUpgradeClusterTask
+        :type request: :class:`huaweicloudsdkcce.v3.RetryUpgradeClusterTaskRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.RetryUpgradeClusterTaskResponse`
+        """
+        return self.retry_upgrade_cluster_task_with_http_info(request)
+
+    def retry_upgrade_cluster_task_with_http_info(self, request):
+        all_params = ['cluster_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgrade/retry',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RetryUpgradeClusterTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1887,6 +2073,70 @@ class CceClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_upgrade_cluster_task(self, request):
+        """获取集群升级任务详情
+
+        获取集群升级任务详情，任务ID由调用集群升级API后从响应体中uid字段获取。
+        &gt; - 集群升级涉及多维度的组件升级操作，强烈建议统一通过CCE控制台执行交互式升级，降低集群升级过程的业务意外受损风险；
+        &gt; - 当前集群升级相关接口受限开放。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowUpgradeClusterTask
+        :type request: :class:`huaweicloudsdkcce.v3.ShowUpgradeClusterTaskRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowUpgradeClusterTaskResponse`
+        """
+        return self.show_upgrade_cluster_task_with_http_info(request)
+
+    def show_upgrade_cluster_task_with_http_info(self, request):
+        all_params = ['cluster_id', 'task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgrade/tasks/{task_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowUpgradeClusterTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_addon_instance(self, request):
         """更新AddonInstance
 
@@ -2205,6 +2455,70 @@ class CceClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateNodePoolResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def upgrade_cluster(self, request):
+        """集群升级
+
+        集群升级。
+        &gt; - 集群升级涉及多维度的组件升级操作，强烈建议统一通过CCE控制台执行交互式升级，降低集群升级过程的业务意外受损风险；
+        &gt; - 当前集群升级相关接口受限开放。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpgradeCluster
+        :type request: :class:`huaweicloudsdkcce.v3.UpgradeClusterRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.UpgradeClusterResponse`
+        """
+        return self.upgrade_cluster_with_http_info(request)
+
+    def upgrade_cluster_with_http_info(self, request):
+        all_params = ['cluster_id', 'upgrade_cluster_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgrade',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpgradeClusterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

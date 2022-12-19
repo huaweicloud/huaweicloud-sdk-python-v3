@@ -54,7 +54,7 @@ class UpdateHealthmonitorReq:
 
         :param name: 健康检查名称。
         :type name: str
-        :param admin_state_up: 健康检查的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        :param admin_state_up: 健康检查的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
         :type admin_state_up: bool
         :param monitor_port: 健康检查端口号。默认为空，表示使用后端云服务器组的端口。
         :type monitor_port: int
@@ -140,7 +140,7 @@ class UpdateHealthmonitorReq:
     def admin_state_up(self):
         """Gets the admin_state_up of this UpdateHealthmonitorReq.
 
-        健康检查的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        健康检查的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
         :return: The admin_state_up of this UpdateHealthmonitorReq.
         :rtype: bool
@@ -151,7 +151,7 @@ class UpdateHealthmonitorReq:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this UpdateHealthmonitorReq.
 
-        健康检查的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        健康检查的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
         :param admin_state_up: The admin_state_up of this UpdateHealthmonitorReq.
         :type admin_state_up: bool

@@ -34,7 +34,7 @@ class DeleteNodePoolRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        :param cluster_id: 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
         :type cluster_id: str
         :param nodepool_id: 节点池ID
         :type nodepool_id: str
@@ -53,7 +53,7 @@ class DeleteNodePoolRequest:
     def cluster_id(self):
         """Gets the cluster_id of this DeleteNodePoolRequest.
 
-        集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :return: The cluster_id of this DeleteNodePoolRequest.
         :rtype: str
@@ -64,7 +64,7 @@ class DeleteNodePoolRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this DeleteNodePoolRequest.
 
-        集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :param cluster_id: The cluster_id of this DeleteNodePoolRequest.
         :type cluster_id: str

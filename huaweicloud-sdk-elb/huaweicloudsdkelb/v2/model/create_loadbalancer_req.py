@@ -52,7 +52,7 @@ class CreateLoadbalancerReq:
         :type name: str
         :param description: 负载均衡器的描述信息
         :type description: str
-        :param vip_subnet_id: 负载均衡器所在的子网IPv4网络ID
+        :param vip_subnet_id: 负载均衡器所在的子网IPv4子网ID
         :type vip_subnet_id: str
         :param vip_address: 负载均衡器的虚拟IP。
         :type vip_address: str
@@ -162,7 +162,7 @@ class CreateLoadbalancerReq:
     def vip_subnet_id(self):
         """Gets the vip_subnet_id of this CreateLoadbalancerReq.
 
-        负载均衡器所在的子网IPv4网络ID
+        负载均衡器所在的子网IPv4子网ID
 
         :return: The vip_subnet_id of this CreateLoadbalancerReq.
         :rtype: str
@@ -173,7 +173,7 @@ class CreateLoadbalancerReq:
     def vip_subnet_id(self, vip_subnet_id):
         """Sets the vip_subnet_id of this CreateLoadbalancerReq.
 
-        负载均衡器所在的子网IPv4网络ID
+        负载均衡器所在的子网IPv4子网ID
 
         :param vip_subnet_id: The vip_subnet_id of this CreateLoadbalancerReq.
         :type vip_subnet_id: str
