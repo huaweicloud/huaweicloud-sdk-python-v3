@@ -21,7 +21,7 @@ class CreateDataSourceRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'body': 'object'
+        'body': 'ExtDataSourceReq'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class CreateDataSourceRequest:
         :param cluster_id: 集群ID
         :type cluster_id: str
         :param body: Body of the CreateDataSourceRequest
-        :type body: :class:`huaweicloudsdkdws.v2.object`
+        :type body: :class:`huaweicloudsdkdws.v2.ExtDataSourceReq`
         """
         
         
@@ -77,7 +77,7 @@ class CreateDataSourceRequest:
         """Gets the body of this CreateDataSourceRequest.
 
         :return: The body of this CreateDataSourceRequest.
-        :rtype: :class:`huaweicloudsdkdws.v2.object`
+        :rtype: :class:`huaweicloudsdkdws.v2.ExtDataSourceReq`
         """
         return self._body
 
@@ -86,7 +86,7 @@ class CreateDataSourceRequest:
         """Sets the body of this CreateDataSourceRequest.
 
         :param body: The body of this CreateDataSourceRequest.
-        :type body: :class:`huaweicloudsdkdws.v2.object`
+        :type body: :class:`huaweicloudsdkdws.v2.ExtDataSourceReq`
         """
         self._body = body
 

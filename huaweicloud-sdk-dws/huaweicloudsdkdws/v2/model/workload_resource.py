@@ -46,10 +46,8 @@ class WorkloadResource:
         self._resource_value = None
         self.discriminator = None
 
-        if resource_name is not None:
-            self.resource_name = resource_name
-        if resource_value is not None:
-            self.resource_value = resource_value
+        self.resource_name = resource_name
+        self.resource_value = resource_value
 
     @property
     def resource_name(self):

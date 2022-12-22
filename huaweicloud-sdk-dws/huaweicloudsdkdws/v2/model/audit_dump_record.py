@@ -25,8 +25,6 @@ class AuditDumpRecord:
         'begin_time': 'str',
         'end_time': 'str',
         'bucket_name': 'str',
-        'version': 'str',
-        'configure_status': 'str',
         'location_prefix': 'str',
         'result': 'str',
         'failed_reason': 'str'
@@ -38,14 +36,12 @@ class AuditDumpRecord:
         'begin_time': 'begin_time',
         'end_time': 'end_time',
         'bucket_name': 'bucket_name',
-        'version': 'version',
-        'configure_status': 'configure_status',
         'location_prefix': 'location_prefix',
         'result': 'result',
         'failed_reason': 'failed_reason'
     }
 
-    def __init__(self, cluster_id=None, exector_time=None, begin_time=None, end_time=None, bucket_name=None, version=None, configure_status=None, location_prefix=None, result=None, failed_reason=None):
+    def __init__(self, cluster_id=None, exector_time=None, begin_time=None, end_time=None, bucket_name=None, location_prefix=None, result=None, failed_reason=None):
         """AuditDumpRecord
 
         The model defined in huaweicloud sdk
@@ -60,10 +56,6 @@ class AuditDumpRecord:
         :type end_time: str
         :param bucket_name: 桶名。
         :type bucket_name: str
-        :param version: 版本。
-        :type version: str
-        :param configure_status: 配置状态。
-        :type configure_status: str
         :param location_prefix: 前缀。
         :type location_prefix: str
         :param result: 结果。
@@ -79,8 +71,6 @@ class AuditDumpRecord:
         self._begin_time = None
         self._end_time = None
         self._bucket_name = None
-        self._version = None
-        self._configure_status = None
         self._location_prefix = None
         self._result = None
         self._failed_reason = None
@@ -96,10 +86,6 @@ class AuditDumpRecord:
             self.end_time = end_time
         if bucket_name is not None:
             self.bucket_name = bucket_name
-        if version is not None:
-            self.version = version
-        if configure_status is not None:
-            self.configure_status = configure_status
         if location_prefix is not None:
             self.location_prefix = location_prefix
         if result is not None:
@@ -216,50 +202,6 @@ class AuditDumpRecord:
         :type bucket_name: str
         """
         self._bucket_name = bucket_name
-
-    @property
-    def version(self):
-        """Gets the version of this AuditDumpRecord.
-
-        版本。
-
-        :return: The version of this AuditDumpRecord.
-        :rtype: str
-        """
-        return self._version
-
-    @version.setter
-    def version(self, version):
-        """Sets the version of this AuditDumpRecord.
-
-        版本。
-
-        :param version: The version of this AuditDumpRecord.
-        :type version: str
-        """
-        self._version = version
-
-    @property
-    def configure_status(self):
-        """Gets the configure_status of this AuditDumpRecord.
-
-        配置状态。
-
-        :return: The configure_status of this AuditDumpRecord.
-        :rtype: str
-        """
-        return self._configure_status
-
-    @configure_status.setter
-    def configure_status(self, configure_status):
-        """Sets the configure_status of this AuditDumpRecord.
-
-        配置状态。
-
-        :param configure_status: The configure_status of this AuditDumpRecord.
-        :type configure_status: str
-        """
-        self._configure_status = configure_status
 
     @property
     def location_prefix(self):

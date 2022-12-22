@@ -20,47 +20,80 @@ class CreateClusterWorkloadResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
+        'workload_res_code': 'int',
+        'workload_res_str': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'workload_res_code': 'workload_res_code',
+        'workload_res_str': 'workload_res_str'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, workload_res_code=None, workload_res_str=None):
         """CreateClusterWorkloadResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: str
+        :param workload_res_code: 响应编码。
+        :type workload_res_code: int
+        :param workload_res_str: 响应信息。
+        :type workload_res_str: str
         """
         
         super(CreateClusterWorkloadResponse, self).__init__()
 
-        self._body = None
+        self._workload_res_code = None
+        self._workload_res_str = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if workload_res_code is not None:
+            self.workload_res_code = workload_res_code
+        if workload_res_str is not None:
+            self.workload_res_str = workload_res_str
 
     @property
-    def body(self):
-        """Gets the body of this CreateClusterWorkloadResponse.
+    def workload_res_code(self):
+        """Gets the workload_res_code of this CreateClusterWorkloadResponse.
 
-        :return: The body of this CreateClusterWorkloadResponse.
+        响应编码。
+
+        :return: The workload_res_code of this CreateClusterWorkloadResponse.
+        :rtype: int
+        """
+        return self._workload_res_code
+
+    @workload_res_code.setter
+    def workload_res_code(self, workload_res_code):
+        """Sets the workload_res_code of this CreateClusterWorkloadResponse.
+
+        响应编码。
+
+        :param workload_res_code: The workload_res_code of this CreateClusterWorkloadResponse.
+        :type workload_res_code: int
+        """
+        self._workload_res_code = workload_res_code
+
+    @property
+    def workload_res_str(self):
+        """Gets the workload_res_str of this CreateClusterWorkloadResponse.
+
+        响应信息。
+
+        :return: The workload_res_str of this CreateClusterWorkloadResponse.
         :rtype: str
         """
-        return self._body
+        return self._workload_res_str
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this CreateClusterWorkloadResponse.
+    @workload_res_str.setter
+    def workload_res_str(self, workload_res_str):
+        """Sets the workload_res_str of this CreateClusterWorkloadResponse.
 
-        :param body: The body of this CreateClusterWorkloadResponse.
-        :type body: str
+        响应信息。
+
+        :param workload_res_str: The workload_res_str of this CreateClusterWorkloadResponse.
+        :type workload_res_str: str
         """
-        self._body = body
+        self._workload_res_str = workload_res_str
 
     def to_dict(self):
         """Returns the model properties as a dict"""

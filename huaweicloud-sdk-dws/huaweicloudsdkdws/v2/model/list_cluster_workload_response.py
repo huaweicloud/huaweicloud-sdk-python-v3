@@ -20,29 +20,87 @@ class ListClusterWorkloadResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'workload_res_code': 'int',
+        'workload_res_str': 'str',
         'workload_status': 'WorkloadStatus'
     }
 
     attribute_map = {
+        'workload_res_code': 'workload_res_code',
+        'workload_res_str': 'workload_res_str',
         'workload_status': 'workload_status'
     }
 
-    def __init__(self, workload_status=None):
+    def __init__(self, workload_res_code=None, workload_res_str=None, workload_status=None):
         """ListClusterWorkloadResponse
 
         The model defined in huaweicloud sdk
 
+        :param workload_res_code: 结果状态码。
+        :type workload_res_code: int
+        :param workload_res_str: 结果描述。
+        :type workload_res_str: str
         :param workload_status: 
         :type workload_status: :class:`huaweicloudsdkdws.v2.WorkloadStatus`
         """
         
         super(ListClusterWorkloadResponse, self).__init__()
 
+        self._workload_res_code = None
+        self._workload_res_str = None
         self._workload_status = None
         self.discriminator = None
 
+        if workload_res_code is not None:
+            self.workload_res_code = workload_res_code
+        if workload_res_str is not None:
+            self.workload_res_str = workload_res_str
         if workload_status is not None:
             self.workload_status = workload_status
+
+    @property
+    def workload_res_code(self):
+        """Gets the workload_res_code of this ListClusterWorkloadResponse.
+
+        结果状态码。
+
+        :return: The workload_res_code of this ListClusterWorkloadResponse.
+        :rtype: int
+        """
+        return self._workload_res_code
+
+    @workload_res_code.setter
+    def workload_res_code(self, workload_res_code):
+        """Sets the workload_res_code of this ListClusterWorkloadResponse.
+
+        结果状态码。
+
+        :param workload_res_code: The workload_res_code of this ListClusterWorkloadResponse.
+        :type workload_res_code: int
+        """
+        self._workload_res_code = workload_res_code
+
+    @property
+    def workload_res_str(self):
+        """Gets the workload_res_str of this ListClusterWorkloadResponse.
+
+        结果描述。
+
+        :return: The workload_res_str of this ListClusterWorkloadResponse.
+        :rtype: str
+        """
+        return self._workload_res_str
+
+    @workload_res_str.setter
+    def workload_res_str(self, workload_res_str):
+        """Sets the workload_res_str of this ListClusterWorkloadResponse.
+
+        结果描述。
+
+        :param workload_res_str: The workload_res_str of this ListClusterWorkloadResponse.
+        :type workload_res_str: str
+        """
+        self._workload_res_str = workload_res_str
 
     @property
     def workload_status(self):

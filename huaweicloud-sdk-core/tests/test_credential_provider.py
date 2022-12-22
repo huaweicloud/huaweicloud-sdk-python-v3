@@ -141,16 +141,17 @@ class TestProfileCredentialProvider:
     CREDENTIALS_FILE_DIR = _get_credentials_file_dir()
     TEST_CREDENTIALS_FILE = os.path.join(CREDENTIALS_FILE_DIR, "test_credentials")
 
-    @staticmethod
-    def setup_class(self):
+    @classmethod
+    def setup_class(cls):
         flags = os.O_WRONLY | os.O_CREAT | os.O_EXCL
         modes = stat.S_IWUSR | stat.S_IRUSR
-        with os.fdopen(os.open(self.TEST_CREDENTIALS_FILE, flags, modes), 'w') as f:
+        with os.fdopen(os.open(cls.TEST_CREDENTIALS_FILE, flags, modes), 'w') as f:
             f.write(CONTENT)
 
-    def teardown_class(self):
-        if os.path.exists(self.TEST_CREDENTIALS_FILE):
-            os.remove(self.TEST_CREDENTIALS_FILE)
+    @classmethod
+    def teardown_class(cls):
+        if os.path.exists(cls.TEST_CREDENTIALS_FILE):
+            os.remove(cls.TEST_CREDENTIALS_FILE)
 
     def setup(self):
         os.environ[self.CREDENTIALS_FILE_ENV_NAME] = self.TEST_CREDENTIALS_FILE
@@ -198,7 +199,8 @@ class TestProfileCredentialProvider:
 
 class TestCredentialProviderChain:
 
-    def teardown_class(self):
+    @classmethod
+    def teardown_class(cls):
         _clear_envs()
 
     def test_custom_providers(self):

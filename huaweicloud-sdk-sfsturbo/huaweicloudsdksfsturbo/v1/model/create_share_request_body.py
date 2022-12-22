@@ -20,28 +20,35 @@ class CreateShareRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'share': 'Share'
+        'share': 'Share',
+        'bss_param': 'BssInfo'
     }
 
     attribute_map = {
-        'share': 'share'
+        'share': 'share',
+        'bss_param': 'bss_param'
     }
 
-    def __init__(self, share=None):
+    def __init__(self, share=None, bss_param=None):
         """CreateShareRequestBody
 
         The model defined in huaweicloud sdk
 
         :param share: 
         :type share: :class:`huaweicloudsdksfsturbo.v1.Share`
+        :param bss_param: 
+        :type bss_param: :class:`huaweicloudsdksfsturbo.v1.BssInfo`
         """
         
         
 
         self._share = None
+        self._bss_param = None
         self.discriminator = None
 
         self.share = share
+        if bss_param is not None:
+            self.bss_param = bss_param
 
     @property
     def share(self):
@@ -60,6 +67,24 @@ class CreateShareRequestBody:
         :type share: :class:`huaweicloudsdksfsturbo.v1.Share`
         """
         self._share = share
+
+    @property
+    def bss_param(self):
+        """Gets the bss_param of this CreateShareRequestBody.
+
+        :return: The bss_param of this CreateShareRequestBody.
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.BssInfo`
+        """
+        return self._bss_param
+
+    @bss_param.setter
+    def bss_param(self, bss_param):
+        """Sets the bss_param of this CreateShareRequestBody.
+
+        :param bss_param: The bss_param of this CreateShareRequestBody.
+        :type bss_param: :class:`huaweicloudsdksfsturbo.v1.BssInfo`
+        """
+        self._bss_param = bss_param
 
     def to_dict(self):
         """Returns the model properties as a dict"""

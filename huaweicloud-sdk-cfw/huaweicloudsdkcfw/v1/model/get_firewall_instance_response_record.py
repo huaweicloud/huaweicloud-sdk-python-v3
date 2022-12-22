@@ -56,7 +56,7 @@ class GetFirewallInstanceResponseRecord:
 
         The model defined in huaweicloud sdk
 
-        :param fw_instance_id: 防火墙id
+        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
         :type fw_instance_id: str
         :param name: 防火墙名称
         :type name: str
@@ -132,7 +132,7 @@ class GetFirewallInstanceResponseRecord:
     def fw_instance_id(self):
         """Gets the fw_instance_id of this GetFirewallInstanceResponseRecord.
 
-        防火墙id
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
 
         :return: The fw_instance_id of this GetFirewallInstanceResponseRecord.
         :rtype: str
@@ -143,7 +143,7 @@ class GetFirewallInstanceResponseRecord:
     def fw_instance_id(self, fw_instance_id):
         """Sets the fw_instance_id of this GetFirewallInstanceResponseRecord.
 
-        防火墙id
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
 
         :param fw_instance_id: The fw_instance_id of this GetFirewallInstanceResponseRecord.
         :type fw_instance_id: str

@@ -22,7 +22,7 @@ class ShowWorkflowExecutionForPageResponse(SdkResponse):
     openapi_types = {
         'total': 'int',
         'size': 'int',
-        'executions': 'FlowExecutionBriefV2'
+        'executions': 'list[FlowExecutionBriefV2]'
     }
 
     attribute_map = {
@@ -40,8 +40,8 @@ class ShowWorkflowExecutionForPageResponse(SdkResponse):
         :type total: int
         :param size: 返回对象的大小
         :type size: int
-        :param executions: 
-        :type executions: :class:`huaweicloudsdkfunctiongraph.v2.FlowExecutionBriefV2`
+        :param executions: 函数流返回体信息
+        :type executions: list[:class:`huaweicloudsdkfunctiongraph.v2.FlowExecutionBriefV2`]
         """
         
         super(ShowWorkflowExecutionForPageResponse, self).__init__()
@@ -106,8 +106,10 @@ class ShowWorkflowExecutionForPageResponse(SdkResponse):
     def executions(self):
         """Gets the executions of this ShowWorkflowExecutionForPageResponse.
 
+        函数流返回体信息
+
         :return: The executions of this ShowWorkflowExecutionForPageResponse.
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FlowExecutionBriefV2`
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.FlowExecutionBriefV2`]
         """
         return self._executions
 
@@ -115,8 +117,10 @@ class ShowWorkflowExecutionForPageResponse(SdkResponse):
     def executions(self, executions):
         """Sets the executions of this ShowWorkflowExecutionForPageResponse.
 
+        函数流返回体信息
+
         :param executions: The executions of this ShowWorkflowExecutionForPageResponse.
-        :type executions: :class:`huaweicloudsdkfunctiongraph.v2.FlowExecutionBriefV2`
+        :type executions: list[:class:`huaweicloudsdkfunctiongraph.v2.FlowExecutionBriefV2`]
         """
         self._executions = executions
 

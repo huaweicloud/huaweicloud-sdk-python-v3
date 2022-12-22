@@ -36,7 +36,7 @@ class IpsSwitchDTO:
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 防护对象id
+        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
         :type object_id: str
         :param ips_type: 补丁类型，1-基础补丁 2&#x3D;虚拟补丁
         :type ips_type: int
@@ -59,7 +59,7 @@ class IpsSwitchDTO:
     def object_id(self):
         """Gets the object_id of this IpsSwitchDTO.
 
-        防护对象id
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
 
         :return: The object_id of this IpsSwitchDTO.
         :rtype: str
@@ -70,7 +70,7 @@ class IpsSwitchDTO:
     def object_id(self, object_id):
         """Sets the object_id of this IpsSwitchDTO.
 
-        防护对象id
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
 
         :param object_id: The object_id of this IpsSwitchDTO.
         :type object_id: str

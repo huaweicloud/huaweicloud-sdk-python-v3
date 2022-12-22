@@ -1,3 +1,189 @@
+# 3.1.18 2022-12-22
+
+### HuaweiCloud SDK APIG
+
+- _Features_
+  - Support the interfaces `ListProjectInstanceTags`, `ListInstanceTags`, `BatchCreateOrDeleteInstanceTags`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DWS
+
+- _Features_
+  - Support the following interfaces：
+    - `ExpandInstanceStorage`
+    - `ListClusterScaleInNumbers`
+    - `ListDisasterRecover`
+    - `CreateDisasterRecovery`
+    - `DeleteDataSource`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ShrinkCluster`:
+    - Add the request parameter `clusterShrinkReq`
+    - Add the response parameter `job_id`
+    - Remove the request parameters `shrink_number`, `online`, `type`, `retry`, `force_backup`, `need_agency`
+  - Changes of the interface `ExecuteRedistributionCluster`:
+    - Add the request parameter `redistributionReq`
+    - Remove the request parameters `redis_mode`, `parallel_jobs`
+  - Changes of the interface `CreateClusterWorkload`:
+    - Add the request parameter `workload_status`
+    - Add the response parameters `workload_res_code`, `workload_res_str`
+    - Remove the request parameters `workload_switch`, `max_concurrency_num`
+  - Changes of the interface `ListClusterWorkload`:
+    - Add the response parameters `workload_res_code`, `workload_res_str`
+    - The response parameter `workload_switch` changed to required
+  - Changes of the interface `CreateWorkloadPlan`:
+    - Add the request parameter `workloadPlan`
+    - Add the response parameters `workload_res_code`, `workload_res_str`
+    - Remove the request parameters `plan_id`, `plan_name`, `logical_cluster_name`
+  - Changes of the interface `AddWorkloadQueue`:
+    - Add the request parameter `workload_queue`
+    - Add the response parameters `workload_res_code`, `workload_res_str`
+    - Remove the request parameters `workload_queue_name`, `logical_cluster_name`, `short_query_optimize`, `short_query_concurrency_num`, `workload_resource_item_list`
+  - Add the response parameters `workload_res_code`, `workload_res_str` to the interface `ListWorkloadQueue`
+  - Changes of the interface `DeleteWorkloadQueue`:
+    - Add the response parameters `workload_res_code`, `workload_res_str`
+    - The request parameter `logical_cluster_name` changed to required
+  - Changes of the interface `CopySnapshot`:
+    - Add the request parameter `linkCopyReq`
+    - Add the response parameter `snapshot_id`
+    - Remove the request parameters `backup_name`, `description`
+  - Remove the response parameters `version`, `configure_status` from the interface `ListAuditLog`
+  - Changes of the interface `CreateDataSource`:
+    - Add the request parameter `extDataSourceReq`
+    - Add the response parameters `id`, `job_id`
+    - Remove the request parameters `data_source_id`, `type`, `data_source_name`, `user_name`, `user_pwd`, `description`, `reboot`, `connect_info`
+  - Changes of the interface `UpdateDataSource`:
+    - Add the request parameter `reconfigure`
+    - Add the response parameter `job_id`
+    - Remove the request parameters `database`, `agency`
+  - Add the response parameters `datastore`, `cluster_name`, `bak_expected_start_time`, `bak_keep_day`, `bak_period`, `db_user`, `progress`, `backup_key`, `prior_backup_key`, `base_backup_key`, `backup_device`, `total_backup_size`, `base_backup_name`, `support_inplace_restore`, `fine_grained_backup`, `backup_level`, `fine_grained_backup_detail`, `guest_agent_version`, `cluster_status` to the interface `ListSnapshotDetails`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ShowWorkflowExecutionForPage`:
+    - Add the response parameter `created_by`
+    - Remove the response parameter `create_by`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+  - Support the interface `ModifyVolume`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `offset`, `limit` to the interface `ListAvailableFlavorInfos`
+
+### HuaweiCloud SDK GSL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `tag_name` changed to required of the interface `CreateTag`
+  - Remove the request parameters `sim_card_id`, `partner`, `package_type`, `sim_type` from the interface `ListProPricePlans`
+  - Changes of the interface `ListSimCards`:
+    - Remove the request parameters `expire_time_duration`, `traffic_warning_threshold`, `sim_status_in`
+    - Remove the response parameters `sn`, `supply_code`, `bundle_id`, `test_type`
+  - Changes of the interface `StopSimCard`:
+    - Remove the request parameter `price_plan_list`
+    - Remove the response parameter `sim_price_plan_list`
+  - Changes of the interface `ResetSimCard`:
+    - Remove the request parameter `price_plan_list`
+    - Remove the response parameter `sim_price_plan_list`
+  - Remove the response parameters `sn`, `supply_code`, `bundle_id`, `test_type` from the interface `ShowSimCard`
+  - Changes of the interface `ListSimPricePlans`:
+    - Remove the request parameter `sim_price_plan_id`
+    - Remove the response parameters `partner`, `partner_pid`
+
+### HuaweiCloud SDK IEF
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `purchase_id`, `state_details`, `cert_remaining_valid_time` to the interface `ListEdgeNodes`
+  - Add the response parameters `purchase_id`, `state_details`, `cert_remaining_valid_time` to the interface `UpdateEdgeNode`
+  - Add the response parameters `purchase_id`, `state_details`, `cert_remaining_valid_time` to the interface `ShowEdgeNodeDetail`
+  - Add the response parameters `purchase_id`, `state_details`, `cert_remaining_valid_time` to the interface `ListEdgeGroups`
+  - Add the response parameters `purchase_id`, `state_details`, `cert_remaining_valid_time` to the interface `UpdateEdgeGroup`
+  - Add the response parameters `purchase_id`, `state_details`, `cert_remaining_valid_time` to the interface `ShowEdgeGroupDetail`
+  - Add the response parameters `purchase_id`, `state_details`, `cert_remaining_valid_time` to the interface `UpdateEdgeGroupNodeBinding`
+
+### HuaweiCloud SDK IMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `vault_id` to the interface `CopyImageCrossRegion`
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - Support the interface `SearchDevices`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `device_side` to the interface `CreateRule`
+  - Add the response parameter `device_side` to the interface `ListRules`
+  - Add the response parameter `device_side` to the interface `ShowRule`
+  - Changes of the interface `UpdateRule`:
+    - Add the request parameter `device_side`
+    - Add the response parameter `device_side`
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `sasl_enabled_mechanisms` to the interface `CreatePostPaidInstance`
+
+### HuaweiCloud SDK RocketMQ
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `enterprise_project_id`, `enable_acl` to the interface `CreatePostPaidInstance`
+
+### HuaweiCloud SDK SFSTurbo
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateShare`:
+    - Add the request parameter `CreateShareRequestBody`
+    - Remove the request parameter `share`
+  - Changes of the interface `ListShares`:
+    - Modify the type `int32` -> `int64` of the request parameter `offset`
+    - Modify the type `int32` -> `int64` of the request parameter `limit`
+  - Changes of the interface `ExpandShare`:
+    - Add the request parameter `ExpandShareRequestBody`
+    - Remove the request parameter `extend`
+  - Changes of the interface `CreateSharedTag`:
+    - Add the request parameter `CreateSharedTagRequestBody`
+    - Remove the request parameter `tag`
+  - Changes of the interface `BatchAddSharedTags`:
+    - Add the request parameter `BatchAddSharedTagsRequestBody`
+    - Remove the request parameter `add_shareed_tags`
+
 # 3.1.17 2022-12-19
 
 ### HuaweiCloud SDK APM

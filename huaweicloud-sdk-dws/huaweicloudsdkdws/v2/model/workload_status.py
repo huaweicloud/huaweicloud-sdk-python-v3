@@ -46,8 +46,7 @@ class WorkloadStatus:
         self._max_concurrency_num = None
         self.discriminator = None
 
-        if workload_switch is not None:
-            self.workload_switch = workload_switch
+        self.workload_switch = workload_switch
         if max_concurrency_num is not None:
             self.max_concurrency_num = max_concurrency_num
 

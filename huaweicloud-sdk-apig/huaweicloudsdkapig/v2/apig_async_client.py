@@ -507,6 +507,69 @@ class ApigAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def batch_create_or_delete_instance_tags_async(self, request):
+        """批量添加或删除单个实例的标签
+
+        批量添加或删除单个实例的标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchCreateOrDeleteInstanceTags
+        :type request: :class:`huaweicloudsdkapig.v2.BatchCreateOrDeleteInstanceTagsRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.BatchCreateOrDeleteInstanceTagsResponse`
+        """
+        return self.batch_create_or_delete_instance_tags_with_http_info(request)
+
+    def batch_create_or_delete_instance_tags_with_http_info(self, request):
+        all_params = ['instance_id', 'batch_create_or_delete_instance_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/instance-tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchCreateOrDeleteInstanceTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_custom_authorizer_v2_async(self, request):
         """创建自定义认证
 
@@ -3221,6 +3284,67 @@ class ApigAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_instance_tags_async(self, request):
+        """查询单个实例标签
+
+        查询单个实例的标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListInstanceTags
+        :type request: :class:`huaweicloudsdkapig.v2.ListInstanceTagsRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ListInstanceTagsResponse`
+        """
+        return self.list_instance_tags_with_http_info(request)
+
+    def list_instance_tags_with_http_info(self, request):
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/instance-tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListInstanceTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_instances_v2_async(self, request):
         """查询专享版实例列表
 
@@ -3798,6 +3922,65 @@ class ApigAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListProjectCofigsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_project_instance_tags_async(self, request):
+        """查询项目下所有实例标签
+
+        查询项目下所有实例标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListProjectInstanceTags
+        :type request: :class:`huaweicloudsdkapig.v2.ListProjectInstanceTagsRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ListProjectInstanceTagsResponse`
+        """
+        return self.list_project_instance_tags_with_http_info(request)
+
+    def list_project_instance_tags_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instance-tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListProjectInstanceTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

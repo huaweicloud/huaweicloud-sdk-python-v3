@@ -20,28 +20,56 @@ class ListClusterSnapshotsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'cluster_id': 'str'
+        'cluster_id': 'str',
+        'limit': 'int',
+        'offset': 'int',
+        'sort_key': 'str',
+        'sort_dir': 'str'
     }
 
     attribute_map = {
-        'cluster_id': 'cluster_id'
+        'cluster_id': 'cluster_id',
+        'limit': 'limit',
+        'offset': 'offset',
+        'sort_key': 'sort_key',
+        'sort_dir': 'sort_dir'
     }
 
-    def __init__(self, cluster_id=None):
+    def __init__(self, cluster_id=None, limit=None, offset=None, sort_key=None, sort_dir=None):
         """ListClusterSnapshotsRequest
 
         The model defined in huaweicloud sdk
 
         :param cluster_id: 集群ID
         :type cluster_id: str
+        :param limit: 查询条数
+        :type limit: int
+        :param offset: 偏移量
+        :type offset: int
+        :param sort_key: 排序字段
+        :type sort_key: str
+        :param sort_dir: 排序规则
+        :type sort_dir: str
         """
         
         
 
         self._cluster_id = None
+        self._limit = None
+        self._offset = None
+        self._sort_key = None
+        self._sort_dir = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
+        if sort_key is not None:
+            self.sort_key = sort_key
+        if sort_dir is not None:
+            self.sort_dir = sort_dir
 
     @property
     def cluster_id(self):
@@ -64,6 +92,94 @@ class ListClusterSnapshotsRequest:
         :type cluster_id: str
         """
         self._cluster_id = cluster_id
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListClusterSnapshotsRequest.
+
+        查询条数
+
+        :return: The limit of this ListClusterSnapshotsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListClusterSnapshotsRequest.
+
+        查询条数
+
+        :param limit: The limit of this ListClusterSnapshotsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListClusterSnapshotsRequest.
+
+        偏移量
+
+        :return: The offset of this ListClusterSnapshotsRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListClusterSnapshotsRequest.
+
+        偏移量
+
+        :param offset: The offset of this ListClusterSnapshotsRequest.
+        :type offset: int
+        """
+        self._offset = offset
+
+    @property
+    def sort_key(self):
+        """Gets the sort_key of this ListClusterSnapshotsRequest.
+
+        排序字段
+
+        :return: The sort_key of this ListClusterSnapshotsRequest.
+        :rtype: str
+        """
+        return self._sort_key
+
+    @sort_key.setter
+    def sort_key(self, sort_key):
+        """Sets the sort_key of this ListClusterSnapshotsRequest.
+
+        排序字段
+
+        :param sort_key: The sort_key of this ListClusterSnapshotsRequest.
+        :type sort_key: str
+        """
+        self._sort_key = sort_key
+
+    @property
+    def sort_dir(self):
+        """Gets the sort_dir of this ListClusterSnapshotsRequest.
+
+        排序规则
+
+        :return: The sort_dir of this ListClusterSnapshotsRequest.
+        :rtype: str
+        """
+        return self._sort_dir
+
+    @sort_dir.setter
+    def sort_dir(self, sort_dir):
+        """Sets the sort_dir of this ListClusterSnapshotsRequest.
+
+        排序规则
+
+        :param sort_dir: The sort_dir of this ListClusterSnapshotsRequest.
+        :type sort_dir: str
+        """
+        self._sort_dir = sort_dir
 
     def to_dict(self):
         """Returns the model properties as a dict"""

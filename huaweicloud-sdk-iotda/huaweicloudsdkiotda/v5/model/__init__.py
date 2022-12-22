@@ -91,6 +91,7 @@ from huaweicloudsdkiotda.v5.model.device_message_request import DeviceMessageReq
 from huaweicloudsdkiotda.v5.model.device_properties_request import DevicePropertiesRequest
 from huaweicloudsdkiotda.v5.model.device_shadow_data import DeviceShadowData
 from huaweicloudsdkiotda.v5.model.device_shadow_properties import DeviceShadowProperties
+from huaweicloudsdkiotda.v5.model.device_side import DeviceSide
 from huaweicloudsdkiotda.v5.model.dis_forwarding import DisForwarding
 from huaweicloudsdkiotda.v5.model.dms_kafka_forwarding import DmsKafkaForwarding
 from huaweicloudsdkiotda.v5.model.error_info import ErrorInfo
@@ -149,6 +150,10 @@ from huaweicloudsdkiotda.v5.model.rule_action import RuleAction
 from huaweicloudsdkiotda.v5.model.rule_condition import RuleCondition
 from huaweicloudsdkiotda.v5.model.rule_response import RuleResponse
 from huaweicloudsdkiotda.v5.model.rule_status import RuleStatus
+from huaweicloudsdkiotda.v5.model.search_device import SearchDevice
+from huaweicloudsdkiotda.v5.model.search_devices_request import SearchDevicesRequest
+from huaweicloudsdkiotda.v5.model.search_devices_response import SearchDevicesResponse
+from huaweicloudsdkiotda.v5.model.search_sql import SearchSql
 from huaweicloudsdkiotda.v5.model.service_capability import ServiceCapability
 from huaweicloudsdkiotda.v5.model.service_command import ServiceCommand
 from huaweicloudsdkiotda.v5.model.service_command_para import ServiceCommandPara

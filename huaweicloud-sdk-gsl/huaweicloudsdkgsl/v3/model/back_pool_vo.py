@@ -32,6 +32,7 @@ class BackPoolVO:
         'status_time': 'datetime',
         'quantity': 'int',
         'modify_time': 'datetime',
+        'order_id': 'int',
         'activated_sim_quantity': 'int',
         'inactive_sim_quantity': 'int',
         'disassembled_sim_quantity': 'int',
@@ -51,13 +52,14 @@ class BackPoolVO:
         'status_time': 'status_time',
         'quantity': 'quantity',
         'modify_time': 'modify_time',
+        'order_id': 'order_id',
         'activated_sim_quantity': 'activated_sim_quantity',
         'inactive_sim_quantity': 'inactive_sim_quantity',
         'disassembled_sim_quantity': 'disassembled_sim_quantity',
         'order_ids': 'order_ids'
     }
 
-    def __init__(self, id=None, pool_name=None, price_plan_name=None, price_plan_id=None, effective_time=None, expired_time=None, billing_cycle=None, pool_status=None, flow_used=None, status_time=None, quantity=None, modify_time=None, activated_sim_quantity=None, inactive_sim_quantity=None, disassembled_sim_quantity=None, order_ids=None):
+    def __init__(self, id=None, pool_name=None, price_plan_name=None, price_plan_id=None, effective_time=None, expired_time=None, billing_cycle=None, pool_status=None, flow_used=None, status_time=None, quantity=None, modify_time=None, order_id=None, activated_sim_quantity=None, inactive_sim_quantity=None, disassembled_sim_quantity=None, order_ids=None):
         """BackPoolVO
 
         The model defined in huaweicloud sdk
@@ -86,6 +88,8 @@ class BackPoolVO:
         :type quantity: int
         :param modify_time: 更新时间
         :type modify_time: datetime
+        :param order_id: 批次号
+        :type order_id: int
         :param activated_sim_quantity: 已激活成员数量
         :type activated_sim_quantity: int
         :param inactive_sim_quantity: 未激活成员数量
@@ -110,6 +114,7 @@ class BackPoolVO:
         self._status_time = None
         self._quantity = None
         self._modify_time = None
+        self._order_id = None
         self._activated_sim_quantity = None
         self._inactive_sim_quantity = None
         self._disassembled_sim_quantity = None
@@ -140,6 +145,8 @@ class BackPoolVO:
             self.quantity = quantity
         if modify_time is not None:
             self.modify_time = modify_time
+        if order_id is not None:
+            self.order_id = order_id
         if activated_sim_quantity is not None:
             self.activated_sim_quantity = activated_sim_quantity
         if inactive_sim_quantity is not None:
@@ -412,6 +419,28 @@ class BackPoolVO:
         :type modify_time: datetime
         """
         self._modify_time = modify_time
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this BackPoolVO.
+
+        批次号
+
+        :return: The order_id of this BackPoolVO.
+        :rtype: int
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this BackPoolVO.
+
+        批次号
+
+        :param order_id: The order_id of this BackPoolVO.
+        :type order_id: int
+        """
+        self._order_id = order_id
 
     @property
     def activated_sim_quantity(self):

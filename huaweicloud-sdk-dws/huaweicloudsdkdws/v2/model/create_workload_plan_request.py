@@ -21,7 +21,7 @@ class CreateWorkloadPlanRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'body': 'object'
+        'body': 'WorkloadPlanReq'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class CreateWorkloadPlanRequest:
         :param cluster_id: 集群ID
         :type cluster_id: str
         :param body: Body of the CreateWorkloadPlanRequest
-        :type body: :class:`huaweicloudsdkdws.v2.object`
+        :type body: :class:`huaweicloudsdkdws.v2.WorkloadPlanReq`
         """
         
         
@@ -77,7 +77,7 @@ class CreateWorkloadPlanRequest:
         """Gets the body of this CreateWorkloadPlanRequest.
 
         :return: The body of this CreateWorkloadPlanRequest.
-        :rtype: :class:`huaweicloudsdkdws.v2.object`
+        :rtype: :class:`huaweicloudsdkdws.v2.WorkloadPlanReq`
         """
         return self._body
 
@@ -86,7 +86,7 @@ class CreateWorkloadPlanRequest:
         """Sets the body of this CreateWorkloadPlanRequest.
 
         :param body: The body of this CreateWorkloadPlanRequest.
-        :type body: :class:`huaweicloudsdkdws.v2.object`
+        :type body: :class:`huaweicloudsdkdws.v2.WorkloadPlanReq`
         """
         self._body = body
 

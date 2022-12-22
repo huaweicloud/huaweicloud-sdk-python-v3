@@ -56,7 +56,7 @@ class DwsClient(Client):
         return self.add_workload_queue_with_http_info(request)
 
     def add_workload_queue_with_http_info(self, request):
-        all_params = ['cluster_id', 'workload_queue_name', 'logical_cluster_name', 'short_query_optimize', 'short_query_concurrency_num', 'workload_resource_item_list']
+        all_params = ['cluster_id', 'workload_queue']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -75,17 +75,6 @@ class DwsClient(Client):
         header_params = {}
 
         form_params = {}
-        if 'workload_queue_name' in local_var_params:
-            form_params['workload_queue_name'] = local_var_params['workload_queue_name']
-        if 'logical_cluster_name' in local_var_params:
-            form_params['logical_cluster_name'] = local_var_params['logical_cluster_name']
-        if 'short_query_optimize' in local_var_params:
-            form_params['short_query_optimize'] = local_var_params['short_query_optimize']
-        if 'short_query_concurrency_num' in local_var_params:
-            form_params['short_query_concurrency_num'] = local_var_params['short_query_concurrency_num']
-        if 'workload_resource_item_list' in local_var_params:
-            form_params['workload_resource_item_list'] = local_var_params['workload_resource_item_list']
-            collection_formats['workload_resource_item_list'] = 'csv'
 
         body_params = None
         if 'body' in local_var_params:
@@ -96,7 +85,7 @@ class DwsClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/x-www-form-urlencoded'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -628,7 +617,7 @@ class DwsClient(Client):
         return self.copy_snapshot_with_http_info(request)
 
     def copy_snapshot_with_http_info(self, request):
-        all_params = ['snapshot_id', 'backup_name', 'description']
+        all_params = ['snapshot_id', 'link_copy_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -647,10 +636,6 @@ class DwsClient(Client):
         header_params = {}
 
         form_params = {}
-        if 'backup_name' in local_var_params:
-            form_params['backup_name'] = local_var_params['backup_name']
-        if 'description' in local_var_params:
-            form_params['description'] = local_var_params['description']
 
         body_params = None
         if 'body' in local_var_params:
@@ -661,7 +646,7 @@ class DwsClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/x-www-form-urlencoded'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -878,7 +863,7 @@ class DwsClient(Client):
         return self.create_cluster_workload_with_http_info(request)
 
     def create_cluster_workload_with_http_info(self, request):
-        all_params = ['cluster_id', 'workload_switch', 'max_concurrency_num']
+        all_params = ['cluster_id', 'workload_status']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -897,10 +882,6 @@ class DwsClient(Client):
         header_params = {}
 
         form_params = {}
-        if 'workload_switch' in local_var_params:
-            form_params['workload_switch'] = local_var_params['workload_switch']
-        if 'max_concurrency_num' in local_var_params:
-            form_params['max_concurrency_num'] = local_var_params['max_concurrency_num']
 
         body_params = None
         if 'body' in local_var_params:
@@ -911,7 +892,7 @@ class DwsClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/x-www-form-urlencoded'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -944,7 +925,7 @@ class DwsClient(Client):
         return self.create_data_source_with_http_info(request)
 
     def create_data_source_with_http_info(self, request):
-        all_params = ['cluster_id', 'data_source_name', 'user_name', 'user_pwd', 'description', 'reboot', 'connect_info', 'data_source_id', 'type']
+        all_params = ['cluster_id', 'ext_data_source_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -963,22 +944,6 @@ class DwsClient(Client):
         header_params = {}
 
         form_params = {}
-        if 'data_source_id' in local_var_params:
-            form_params['data_source_id'] = local_var_params['data_source_id']
-        if 'type' in local_var_params:
-            form_params['type'] = local_var_params['type']
-        if 'data_source_name' in local_var_params:
-            form_params['data_source_name'] = local_var_params['data_source_name']
-        if 'user_name' in local_var_params:
-            form_params['user_name'] = local_var_params['user_name']
-        if 'user_pwd' in local_var_params:
-            form_params['user_pwd'] = local_var_params['user_pwd']
-        if 'description' in local_var_params:
-            form_params['description'] = local_var_params['description']
-        if 'reboot' in local_var_params:
-            form_params['reboot'] = local_var_params['reboot']
-        if 'connect_info' in local_var_params:
-            form_params['connect_info'] = local_var_params['connect_info']
 
         body_params = None
         if 'body' in local_var_params:
@@ -989,7 +954,7 @@ class DwsClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/x-www-form-urlencoded'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -1012,6 +977,8 @@ class DwsClient(Client):
         """创建容灾
 
         创建容灾
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for CreateDisasterRecovery
         :type request: :class:`huaweicloudsdkdws.v2.CreateDisasterRecoveryRequest`
@@ -1200,7 +1167,7 @@ class DwsClient(Client):
         return self.create_snapshot_policy_with_http_info(request)
 
     def create_snapshot_policy_with_http_info(self, request):
-        all_params = ['cluster_id', 'keep_day', 'backup_strategies', 'device_name', 'server_port', 'backup_param', 'server_ips']
+        all_params = ['cluster_id', 'req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1219,19 +1186,6 @@ class DwsClient(Client):
         header_params = {}
 
         form_params = {}
-        if 'keep_day' in local_var_params:
-            form_params['keep_day'] = local_var_params['keep_day']
-        if 'backup_strategies' in local_var_params:
-            form_params['backup_strategies'] = local_var_params['backup_strategies']
-        if 'device_name' in local_var_params:
-            form_params['device_name'] = local_var_params['device_name']
-        if 'server_port' in local_var_params:
-            form_params['server_port'] = local_var_params['server_port']
-        if 'backup_param' in local_var_params:
-            form_params['backup_param'] = local_var_params['backup_param']
-        if 'server_ips' in local_var_params:
-            form_params['server_ips'] = local_var_params['server_ips']
-            collection_formats['server_ips'] = 'csv'
 
         body_params = None
         if 'body' in local_var_params:
@@ -1242,7 +1196,7 @@ class DwsClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/x-www-form-urlencoded'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -1275,7 +1229,7 @@ class DwsClient(Client):
         return self.create_workload_plan_with_http_info(request)
 
     def create_workload_plan_with_http_info(self, request):
-        all_params = ['cluster_id', 'plan_id', 'plan_name', 'logical_cluster_name']
+        all_params = ['cluster_id', 'workload_plan']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1294,12 +1248,6 @@ class DwsClient(Client):
         header_params = {}
 
         form_params = {}
-        if 'plan_id' in local_var_params:
-            form_params['plan_id'] = local_var_params['plan_id']
-        if 'plan_name' in local_var_params:
-            form_params['plan_name'] = local_var_params['plan_name']
-        if 'logical_cluster_name' in local_var_params:
-            form_params['logical_cluster_name'] = local_var_params['logical_cluster_name']
 
         body_params = None
         if 'body' in local_var_params:
@@ -1310,7 +1258,7 @@ class DwsClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/x-www-form-urlencoded'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -1508,6 +1456,68 @@ class DwsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteClusterDnsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_data_source(self, request):
+        """删除数据源
+
+        该接口用于删除一个数据源。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDataSource
+        :type request: :class:`huaweicloudsdkdws.v2.DeleteDataSourceRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.DeleteDataSourceResponse`
+        """
+        return self.delete_data_source_with_http_info(request)
+
+    def delete_data_source_with_http_info(self, request):
+        all_params = ['cluster_id', 'ext_data_source_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'ext_data_source_id' in local_var_params:
+            path_params['ext_data_source_id'] = local_var_params['ext_data_source_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/ext-data-sources/{ext_data_source_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteDataSourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1769,7 +1779,7 @@ class DwsClient(Client):
         return self.delete_workload_queue_with_http_info(request)
 
     def delete_workload_queue_with_http_info(self, request):
-        all_params = ['cluster_id', 'logical_cluster_name', 'workload_queue_name']
+        all_params = ['cluster_id', 'workload_queue_name', 'logical_cluster_name']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1957,7 +1967,7 @@ class DwsClient(Client):
         return self.execute_redistribution_cluster_with_http_info(request)
 
     def execute_redistribution_cluster_with_http_info(self, request):
-        all_params = ['cluster_id', 'redis_mode', 'parallel_jobs']
+        all_params = ['cluster_id', 'redistribution_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1976,10 +1986,6 @@ class DwsClient(Client):
         header_params = {}
 
         form_params = {}
-        if 'redis_mode' in local_var_params:
-            form_params['redis_mode'] = local_var_params['redis_mode']
-        if 'parallel_jobs' in local_var_params:
-            form_params['parallel_jobs'] = local_var_params['parallel_jobs']
 
         body_params = None
         if 'body' in local_var_params:
@@ -1990,7 +1996,7 @@ class DwsClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/x-www-form-urlencoded'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -2004,6 +2010,70 @@ class DwsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ExecuteRedistributionClusterResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def expand_instance_storage(self, request):
+        """磁盘扩容
+
+        随着客户业务的发展，磁盘空间往往最先出现资源瓶颈，在其他资源尚且充足的情况下，通过磁盘扩容可快速缓解存储资源瓶颈现象，操作过程中无需暂停业务，并且不会造成CPU、内存等资源浪费。
+        - 磁盘扩容功能仅8.1.1.203及以上版本支持，并且创建集群规格需要为云数仓SSD云盘或实时数仓类型。
+        - 按需+折扣套餐包消费模式下，存储扩容后超出折扣套餐包部分将按需收费。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExpandInstanceStorage
+        :type request: :class:`huaweicloudsdkdws.v2.ExpandInstanceStorageRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ExpandInstanceStorageResponse`
+        """
+        return self.expand_instance_storage_with_http_info(request)
+
+    def expand_instance_storage_with_http_info(self, request):
+        all_params = ['cluster_id', 'payload']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/expand-instance-storage',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExpandInstanceStorageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2613,6 +2683,8 @@ class DwsClient(Client):
         """查询合适的缩容数
 
         查询合适的缩容数
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListClusterScaleInNumbers
         :type request: :class:`huaweicloudsdkdws.v2.ListClusterScaleInNumbersRequest`
@@ -2681,7 +2753,7 @@ class DwsClient(Client):
         return self.list_cluster_snapshots_with_http_info(request)
 
     def list_cluster_snapshots_with_http_info(self, request):
-        all_params = ['cluster_id']
+        all_params = ['cluster_id', 'limit', 'offset', 'sort_key', 'sort_dir']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2696,6 +2768,14 @@ class DwsClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
 
         header_params = {}
 
@@ -2713,7 +2793,7 @@ class DwsClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/{project_id}/cluster/{cluster_id}/snapshots',
+            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/snapshots',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -2969,6 +3049,8 @@ class DwsClient(Client):
         """查询容灾列表
 
         查询容灾列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListDisasterRecover
         :type request: :class:`huaweicloudsdkdws.v2.ListDisasterRecoverRequest`
@@ -4493,7 +4575,7 @@ class DwsClient(Client):
         return self.shrink_cluster_with_http_info(request)
 
     def shrink_cluster_with_http_info(self, request):
-        all_params = ['cluster_id', 'shrink_number', 'online', 'type', 'retry', 'force_backup', 'need_agency']
+        all_params = ['cluster_id', 'cluster_shrink_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4512,18 +4594,6 @@ class DwsClient(Client):
         header_params = {}
 
         form_params = {}
-        if 'shrink_number' in local_var_params:
-            form_params['shrink_number'] = local_var_params['shrink_number']
-        if 'online' in local_var_params:
-            form_params['online'] = local_var_params['online']
-        if 'type' in local_var_params:
-            form_params['type'] = local_var_params['type']
-        if 'retry' in local_var_params:
-            form_params['retry'] = local_var_params['retry']
-        if 'force_backup' in local_var_params:
-            form_params['force_backup'] = local_var_params['force_backup']
-        if 'need_agency' in local_var_params:
-            form_params['need_agency'] = local_var_params['need_agency']
 
         body_params = None
         if 'body' in local_var_params:
@@ -4534,7 +4604,7 @@ class DwsClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/x-www-form-urlencoded'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -4997,7 +5067,7 @@ class DwsClient(Client):
         return self.update_data_source_with_http_info(request)
 
     def update_data_source_with_http_info(self, request):
-        all_params = ['cluster_id', 'ext_data_source_id', 'database', 'agency']
+        all_params = ['cluster_id', 'ext_data_source_id', 'reconfigure']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -5018,10 +5088,6 @@ class DwsClient(Client):
         header_params = {}
 
         form_params = {}
-        if 'database' in local_var_params:
-            form_params['database'] = local_var_params['database']
-        if 'agency' in local_var_params:
-            form_params['agency'] = local_var_params['agency']
 
         body_params = None
         if 'body' in local_var_params:
@@ -5032,7 +5098,7 @@ class DwsClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/x-www-form-urlencoded'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 

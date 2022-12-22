@@ -26,7 +26,8 @@ class Rule:
         'actions': 'list[RuleAction]',
         'rule_type': 'str',
         'status': 'str',
-        'app_id': 'str'
+        'app_id': 'str',
+        'device_side': 'DeviceSide'
     }
 
     attribute_map = {
@@ -36,10 +37,11 @@ class Rule:
         'actions': 'actions',
         'rule_type': 'rule_type',
         'status': 'status',
-        'app_id': 'app_id'
+        'app_id': 'app_id',
+        'device_side': 'device_side'
     }
 
-    def __init__(self, name=None, description=None, condition_group=None, actions=None, rule_type=None, status=None, app_id=None):
+    def __init__(self, name=None, description=None, condition_group=None, actions=None, rule_type=None, status=None, app_id=None, device_side=None):
         """Rule
 
         The model defined in huaweicloud sdk
@@ -52,12 +54,14 @@ class Rule:
         :type condition_group: :class:`huaweicloudsdkiotda.v5.ConditionGroup`
         :param actions: **参数说明**：规则的动作列表，单个规则最多支持设置10个动作。
         :type actions: list[:class:`huaweicloudsdkiotda.v5.RuleAction`]
-        :param rule_type: **参数说明**：规则的类型。 **取值范围**： - DEVICE_LINKAGE：设备联动。
+        :param rule_type: **参数说明**：规则的类型。 **取值范围**： - DEVICE_LINKAGE：云端联动规则。  - DEVICE_SIDE：端侧规则。
         :type rule_type: str
         :param status: **参数说明**：规则的状态，默认值：active。 **取值范围**： - active：激活。 - inactive：未激活。
         :type status: str
         :param app_id: **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的规则归属到哪个资源空间下，否则创建的规则将会归属到[[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)](tag:hws)[[默认资源空间](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0006.html#section0)](tag:hws_hk)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
         :type app_id: str
+        :param device_side: 
+        :type device_side: :class:`huaweicloudsdkiotda.v5.DeviceSide`
         """
         
         
@@ -69,6 +73,7 @@ class Rule:
         self._rule_type = None
         self._status = None
         self._app_id = None
+        self._device_side = None
         self.discriminator = None
 
         self.name = name
@@ -81,6 +86,8 @@ class Rule:
             self.status = status
         if app_id is not None:
             self.app_id = app_id
+        if device_side is not None:
+            self.device_side = device_side
 
     @property
     def name(self):
@@ -170,7 +177,7 @@ class Rule:
     def rule_type(self):
         """Gets the rule_type of this Rule.
 
-        **参数说明**：规则的类型。 **取值范围**： - DEVICE_LINKAGE：设备联动。
+        **参数说明**：规则的类型。 **取值范围**： - DEVICE_LINKAGE：云端联动规则。  - DEVICE_SIDE：端侧规则。
 
         :return: The rule_type of this Rule.
         :rtype: str
@@ -181,7 +188,7 @@ class Rule:
     def rule_type(self, rule_type):
         """Sets the rule_type of this Rule.
 
-        **参数说明**：规则的类型。 **取值范围**： - DEVICE_LINKAGE：设备联动。
+        **参数说明**：规则的类型。 **取值范围**： - DEVICE_LINKAGE：云端联动规则。  - DEVICE_SIDE：端侧规则。
 
         :param rule_type: The rule_type of this Rule.
         :type rule_type: str
@@ -231,6 +238,24 @@ class Rule:
         :type app_id: str
         """
         self._app_id = app_id
+
+    @property
+    def device_side(self):
+        """Gets the device_side of this Rule.
+
+        :return: The device_side of this Rule.
+        :rtype: :class:`huaweicloudsdkiotda.v5.DeviceSide`
+        """
+        return self._device_side
+
+    @device_side.setter
+    def device_side(self, device_side):
+        """Sets the device_side of this Rule.
+
+        :param device_side: The device_side of this Rule.
+        :type device_side: :class:`huaweicloudsdkiotda.v5.DeviceSide`
+        """
+        self._device_side = device_side
 
     def to_dict(self):
         """Returns the model properties as a dict"""

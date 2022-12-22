@@ -60,8 +60,7 @@ class CreateEndpointOption:
         self.resource_type = resource_type
         if weight is not None:
             self.weight = weight
-        if ip_address is not None:
-            self.ip_address = ip_address
+        self.ip_address = ip_address
 
     @property
     def resource_id(self):

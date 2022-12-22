@@ -1345,7 +1345,7 @@ class CceAsyncClient(Client):
     def migrate_node_async(self, request):
         """节点迁移
 
-        该API用于在指定集群下迁移节点到另一集群（仅支持在同一VPC下的不同集群之间进行迁移）。
+        该API用于在指定集群下迁移节点到另一集群（仅支持在同一VPC、同一项目下的不同集群之间进行迁移，且迁移前后的集群类型需相同）。
         [CCE Turbo集群下弹性云服务-物理机类型节点不支持迁移。](tag:hws,hws_hk,dt)
         
         &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。

@@ -71,7 +71,10 @@ class EdgeNodeResp:
         'npu_num': 'int',
         'npu_info': 'list[NpuInfo]',
         'container_runtime_version': 'str',
-        'identifier': 'str'
+        'identifier': 'str',
+        'purchase_id': 'str',
+        'state_details': 'StateDetails',
+        'cert_remaining_valid_time': 'int'
     }
 
     attribute_map = {
@@ -126,10 +129,13 @@ class EdgeNodeResp:
         'npu_num': 'npu_num',
         'npu_info': 'npu_info',
         'container_runtime_version': 'container_runtime_version',
-        'identifier': 'identifier'
+        'identifier': 'identifier',
+        'purchase_id': 'purchase_id',
+        'state_details': 'state_details',
+        'cert_remaining_valid_time': 'cert_remaining_valid_time'
     }
 
-    def __init__(self, id=None, name=None, description=None, created_at=None, updated_at=None, project_id=None, private_key=None, certificate=None, ca=None, state=None, package=None, master_addr=None, cpu=None, memory=None, os_name=None, os_version=None, pause_docker_image=None, arch=None, os_type=None, deployment_num=None, enable_gpu=None, log_configs=None, device_infos=None, edged_version=None, gpu_num=None, host_ips=None, relation=None, comment=None, gpu_info=None, device_num=None, enable_npu=None, npu_type=None, nics=None, host_name=None, ief_node_version=None, upgrade_flag=None, product_id=None, group_ids=None, upgrade_history=None, attributes=None, docker_enable=None, mqtt_mode=None, mqtt_external=None, mqtt_internal=None, node_type=None, ntp_configs=None, error_reason=None, tags=None, npu_num=None, npu_info=None, container_runtime_version=None, identifier=None):
+    def __init__(self, id=None, name=None, description=None, created_at=None, updated_at=None, project_id=None, private_key=None, certificate=None, ca=None, state=None, package=None, master_addr=None, cpu=None, memory=None, os_name=None, os_version=None, pause_docker_image=None, arch=None, os_type=None, deployment_num=None, enable_gpu=None, log_configs=None, device_infos=None, edged_version=None, gpu_num=None, host_ips=None, relation=None, comment=None, gpu_info=None, device_num=None, enable_npu=None, npu_type=None, nics=None, host_name=None, ief_node_version=None, upgrade_flag=None, product_id=None, group_ids=None, upgrade_history=None, attributes=None, docker_enable=None, mqtt_mode=None, mqtt_external=None, mqtt_internal=None, node_type=None, ntp_configs=None, error_reason=None, tags=None, npu_num=None, npu_info=None, container_runtime_version=None, identifier=None, purchase_id=None, state_details=None, cert_remaining_valid_time=None):
         """EdgeNodeResp
 
         The model defined in huaweicloud sdk
@@ -238,6 +244,12 @@ class EdgeNodeResp:
         :type container_runtime_version: str
         :param identifier: 边缘节点使用token注册时的凭证
         :type identifier: str
+        :param purchase_id: IEC/IES节点id
+        :type purchase_id: str
+        :param state_details: 
+        :type state_details: :class:`huaweicloudsdkief.v1.StateDetails`
+        :param cert_remaining_valid_time: 证书有效期持续时间
+        :type cert_remaining_valid_time: int
         """
         
         
@@ -294,6 +306,9 @@ class EdgeNodeResp:
         self._npu_info = None
         self._container_runtime_version = None
         self._identifier = None
+        self._purchase_id = None
+        self._state_details = None
+        self._cert_remaining_valid_time = None
         self.discriminator = None
 
         self.id = id
@@ -349,6 +364,12 @@ class EdgeNodeResp:
         self.container_runtime_version = container_runtime_version
         if identifier is not None:
             self.identifier = identifier
+        if purchase_id is not None:
+            self.purchase_id = purchase_id
+        if state_details is not None:
+            self.state_details = state_details
+        if cert_remaining_valid_time is not None:
+            self.cert_remaining_valid_time = cert_remaining_valid_time
 
     @property
     def id(self):
@@ -1489,6 +1510,68 @@ class EdgeNodeResp:
         :type identifier: str
         """
         self._identifier = identifier
+
+    @property
+    def purchase_id(self):
+        """Gets the purchase_id of this EdgeNodeResp.
+
+        IEC/IES节点id
+
+        :return: The purchase_id of this EdgeNodeResp.
+        :rtype: str
+        """
+        return self._purchase_id
+
+    @purchase_id.setter
+    def purchase_id(self, purchase_id):
+        """Sets the purchase_id of this EdgeNodeResp.
+
+        IEC/IES节点id
+
+        :param purchase_id: The purchase_id of this EdgeNodeResp.
+        :type purchase_id: str
+        """
+        self._purchase_id = purchase_id
+
+    @property
+    def state_details(self):
+        """Gets the state_details of this EdgeNodeResp.
+
+        :return: The state_details of this EdgeNodeResp.
+        :rtype: :class:`huaweicloudsdkief.v1.StateDetails`
+        """
+        return self._state_details
+
+    @state_details.setter
+    def state_details(self, state_details):
+        """Sets the state_details of this EdgeNodeResp.
+
+        :param state_details: The state_details of this EdgeNodeResp.
+        :type state_details: :class:`huaweicloudsdkief.v1.StateDetails`
+        """
+        self._state_details = state_details
+
+    @property
+    def cert_remaining_valid_time(self):
+        """Gets the cert_remaining_valid_time of this EdgeNodeResp.
+
+        证书有效期持续时间
+
+        :return: The cert_remaining_valid_time of this EdgeNodeResp.
+        :rtype: int
+        """
+        return self._cert_remaining_valid_time
+
+    @cert_remaining_valid_time.setter
+    def cert_remaining_valid_time(self, cert_remaining_valid_time):
+        """Sets the cert_remaining_valid_time of this EdgeNodeResp.
+
+        证书有效期持续时间
+
+        :param cert_remaining_valid_time: The cert_remaining_valid_time of this EdgeNodeResp.
+        :type cert_remaining_valid_time: int
+        """
+        self._cert_remaining_valid_time = cert_remaining_valid_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

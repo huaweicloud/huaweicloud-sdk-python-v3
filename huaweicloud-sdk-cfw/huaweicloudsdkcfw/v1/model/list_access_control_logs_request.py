@@ -60,7 +60,7 @@ class ListAccessControlLogsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param fw_instance_id: 防火墙实例ID
+        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
         :type fw_instance_id: str
         :param rule_id: 规则ID
         :type rule_id: str
@@ -142,7 +142,7 @@ class ListAccessControlLogsRequest:
     def fw_instance_id(self):
         """Gets the fw_instance_id of this ListAccessControlLogsRequest.
 
-        防火墙实例ID
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
 
         :return: The fw_instance_id of this ListAccessControlLogsRequest.
         :rtype: str
@@ -153,7 +153,7 @@ class ListAccessControlLogsRequest:
     def fw_instance_id(self, fw_instance_id):
         """Sets the fw_instance_id of this ListAccessControlLogsRequest.
 
-        防火墙实例ID
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
 
         :param fw_instance_id: The fw_instance_id of this ListAccessControlLogsRequest.
         :type fw_instance_id: str

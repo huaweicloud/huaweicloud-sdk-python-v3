@@ -21,7 +21,7 @@ class AddWorkloadQueueRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'body': 'WorkloadQueue'
+        'body': 'WorkloadQueueReq'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class AddWorkloadQueueRequest:
         :param cluster_id: 集群ID
         :type cluster_id: str
         :param body: Body of the AddWorkloadQueueRequest
-        :type body: :class:`huaweicloudsdkdws.v2.WorkloadQueue`
+        :type body: :class:`huaweicloudsdkdws.v2.WorkloadQueueReq`
         """
         
         
@@ -77,7 +77,7 @@ class AddWorkloadQueueRequest:
         """Gets the body of this AddWorkloadQueueRequest.
 
         :return: The body of this AddWorkloadQueueRequest.
-        :rtype: :class:`huaweicloudsdkdws.v2.WorkloadQueue`
+        :rtype: :class:`huaweicloudsdkdws.v2.WorkloadQueueReq`
         """
         return self._body
 
@@ -86,7 +86,7 @@ class AddWorkloadQueueRequest:
         """Sets the body of this AddWorkloadQueueRequest.
 
         :param body: The body of this AddWorkloadQueueRequest.
-        :type body: :class:`huaweicloudsdkdws.v2.WorkloadQueue`
+        :type body: :class:`huaweicloudsdkdws.v2.WorkloadQueueReq`
         """
         self._body = body
 

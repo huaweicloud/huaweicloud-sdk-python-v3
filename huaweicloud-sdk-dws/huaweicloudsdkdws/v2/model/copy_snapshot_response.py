@@ -20,47 +20,51 @@ class CopySnapshotResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
+        'snapshot_id': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'snapshot_id': 'snapshot_id'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, snapshot_id=None):
         """CopySnapshotResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: str
+        :param snapshot_id: 快照id。
+        :type snapshot_id: str
         """
         
         super(CopySnapshotResponse, self).__init__()
 
-        self._body = None
+        self._snapshot_id = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if snapshot_id is not None:
+            self.snapshot_id = snapshot_id
 
     @property
-    def body(self):
-        """Gets the body of this CopySnapshotResponse.
+    def snapshot_id(self):
+        """Gets the snapshot_id of this CopySnapshotResponse.
 
-        :return: The body of this CopySnapshotResponse.
+        快照id。
+
+        :return: The snapshot_id of this CopySnapshotResponse.
         :rtype: str
         """
-        return self._body
+        return self._snapshot_id
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this CopySnapshotResponse.
+    @snapshot_id.setter
+    def snapshot_id(self, snapshot_id):
+        """Sets the snapshot_id of this CopySnapshotResponse.
 
-        :param body: The body of this CopySnapshotResponse.
-        :type body: str
+        快照id。
+
+        :param snapshot_id: The snapshot_id of this CopySnapshotResponse.
+        :type snapshot_id: str
         """
-        self._body = body
+        self._snapshot_id = snapshot_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

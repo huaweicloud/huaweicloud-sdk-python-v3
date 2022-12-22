@@ -22,20 +22,16 @@ class WorkloadQueue:
     openapi_types = {
         'workload_queue_name': 'str',
         'logical_cluster_name': 'str',
-        'short_query_optimize': 'str',
-        'short_query_concurrency_num': 'str',
         'workload_resource_item_list': 'list[WorkloadResource]'
     }
 
     attribute_map = {
         'workload_queue_name': 'workload_queue_name',
         'logical_cluster_name': 'logical_cluster_name',
-        'short_query_optimize': 'short_query_optimize',
-        'short_query_concurrency_num': 'short_query_concurrency_num',
         'workload_resource_item_list': 'workload_resource_item_list'
     }
 
-    def __init__(self, workload_queue_name=None, logical_cluster_name=None, short_query_optimize=None, short_query_concurrency_num=None, workload_resource_item_list=None):
+    def __init__(self, workload_queue_name=None, logical_cluster_name=None, workload_resource_item_list=None):
         """WorkloadQueue
 
         The model defined in huaweicloud sdk
@@ -44,10 +40,6 @@ class WorkloadQueue:
         :type workload_queue_name: str
         :param logical_cluster_name: 逻辑集群名称。
         :type logical_cluster_name: str
-        :param short_query_optimize: 短查询开关。
-        :type short_query_optimize: str
-        :param short_query_concurrency_num: 短查询并发数。
-        :type short_query_concurrency_num: str
         :param workload_resource_item_list: 资源配置队列。
         :type workload_resource_item_list: list[:class:`huaweicloudsdkdws.v2.WorkloadResource`]
         """
@@ -56,21 +48,13 @@ class WorkloadQueue:
 
         self._workload_queue_name = None
         self._logical_cluster_name = None
-        self._short_query_optimize = None
-        self._short_query_concurrency_num = None
         self._workload_resource_item_list = None
         self.discriminator = None
 
-        if workload_queue_name is not None:
-            self.workload_queue_name = workload_queue_name
+        self.workload_queue_name = workload_queue_name
         if logical_cluster_name is not None:
             self.logical_cluster_name = logical_cluster_name
-        if short_query_optimize is not None:
-            self.short_query_optimize = short_query_optimize
-        if short_query_concurrency_num is not None:
-            self.short_query_concurrency_num = short_query_concurrency_num
-        if workload_resource_item_list is not None:
-            self.workload_resource_item_list = workload_resource_item_list
+        self.workload_resource_item_list = workload_resource_item_list
 
     @property
     def workload_queue_name(self):
@@ -115,50 +99,6 @@ class WorkloadQueue:
         :type logical_cluster_name: str
         """
         self._logical_cluster_name = logical_cluster_name
-
-    @property
-    def short_query_optimize(self):
-        """Gets the short_query_optimize of this WorkloadQueue.
-
-        短查询开关。
-
-        :return: The short_query_optimize of this WorkloadQueue.
-        :rtype: str
-        """
-        return self._short_query_optimize
-
-    @short_query_optimize.setter
-    def short_query_optimize(self, short_query_optimize):
-        """Sets the short_query_optimize of this WorkloadQueue.
-
-        短查询开关。
-
-        :param short_query_optimize: The short_query_optimize of this WorkloadQueue.
-        :type short_query_optimize: str
-        """
-        self._short_query_optimize = short_query_optimize
-
-    @property
-    def short_query_concurrency_num(self):
-        """Gets the short_query_concurrency_num of this WorkloadQueue.
-
-        短查询并发数。
-
-        :return: The short_query_concurrency_num of this WorkloadQueue.
-        :rtype: str
-        """
-        return self._short_query_concurrency_num
-
-    @short_query_concurrency_num.setter
-    def short_query_concurrency_num(self, short_query_concurrency_num):
-        """Sets the short_query_concurrency_num of this WorkloadQueue.
-
-        短查询并发数。
-
-        :param short_query_concurrency_num: The short_query_concurrency_num of this WorkloadQueue.
-        :type short_query_concurrency_num: str
-        """
-        self._short_query_concurrency_num = short_query_concurrency_num
 
     @property
     def workload_resource_item_list(self):

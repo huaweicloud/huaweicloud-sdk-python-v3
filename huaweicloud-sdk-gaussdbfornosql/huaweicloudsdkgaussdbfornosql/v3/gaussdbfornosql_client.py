@@ -1095,7 +1095,7 @@ class GaussDBforNoSQLClient(Client):
         return self.list_available_flavor_infos_with_http_info(request)
 
     def list_available_flavor_infos_with_http_info(self, request):
-        all_params = ['instance_id']
+        all_params = ['instance_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1110,6 +1110,10 @@ class GaussDBforNoSQLClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -2332,6 +2336,68 @@ class GaussDBforNoSQLClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ModifyPublicIpResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def modify_volume(self, request):
+        """变更实例存储容量
+
+        变更实例的存储容量大小
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifyVolume
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ModifyVolumeRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ModifyVolumeResponse`
+        """
+        return self.modify_volume_with_http_info(request)
+
+    def modify_volume_with_http_info(self, request):
+        all_params = ['instance_id', 'adjust_volume_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/volume',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ModifyVolumeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

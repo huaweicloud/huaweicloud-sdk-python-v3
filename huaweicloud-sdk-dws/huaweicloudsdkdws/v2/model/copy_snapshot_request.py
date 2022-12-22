@@ -21,7 +21,7 @@ class CopySnapshotRequest:
 
     openapi_types = {
         'snapshot_id': 'str',
-        'body': 'object'
+        'body': 'LinkCopyReq'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class CopySnapshotRequest:
         :param snapshot_id: 快照ID
         :type snapshot_id: str
         :param body: Body of the CopySnapshotRequest
-        :type body: :class:`huaweicloudsdkdws.v2.object`
+        :type body: :class:`huaweicloudsdkdws.v2.LinkCopyReq`
         """
         
         
@@ -77,7 +77,7 @@ class CopySnapshotRequest:
         """Gets the body of this CopySnapshotRequest.
 
         :return: The body of this CopySnapshotRequest.
-        :rtype: :class:`huaweicloudsdkdws.v2.object`
+        :rtype: :class:`huaweicloudsdkdws.v2.LinkCopyReq`
         """
         return self._body
 
@@ -86,7 +86,7 @@ class CopySnapshotRequest:
         """Sets the body of this CopySnapshotRequest.
 
         :param body: The body of this CopySnapshotRequest.
-        :type body: :class:`huaweicloudsdkdws.v2.object`
+        :type body: :class:`huaweicloudsdkdws.v2.LinkCopyReq`
         """
         self._body = body
 

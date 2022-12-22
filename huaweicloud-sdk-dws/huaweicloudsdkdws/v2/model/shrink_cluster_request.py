@@ -21,7 +21,7 @@ class ShrinkClusterRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'body': 'object'
+        'body': 'ClusterShrinkReq'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class ShrinkClusterRequest:
         :param cluster_id: 集群ID
         :type cluster_id: str
         :param body: Body of the ShrinkClusterRequest
-        :type body: :class:`huaweicloudsdkdws.v2.object`
+        :type body: :class:`huaweicloudsdkdws.v2.ClusterShrinkReq`
         """
         
         
@@ -77,7 +77,7 @@ class ShrinkClusterRequest:
         """Gets the body of this ShrinkClusterRequest.
 
         :return: The body of this ShrinkClusterRequest.
-        :rtype: :class:`huaweicloudsdkdws.v2.object`
+        :rtype: :class:`huaweicloudsdkdws.v2.ClusterShrinkReq`
         """
         return self._body
 
@@ -86,7 +86,7 @@ class ShrinkClusterRequest:
         """Sets the body of this ShrinkClusterRequest.
 
         :param body: The body of this ShrinkClusterRequest.
-        :type body: :class:`huaweicloudsdkdws.v2.object`
+        :type body: :class:`huaweicloudsdkdws.v2.ClusterShrinkReq`
         """
         self._body = body
 

@@ -1,3 +1,189 @@
+# 3.1.18 2022-12-22
+
+### HuaweiCloud SDK APIG
+
+- _新增特性_
+  - 支持接口`ListProjectInstanceTags`、`ListInstanceTags`、`BatchCreateOrDeleteInstanceTags`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DWS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ExpandInstanceStorage`
+    - `ListClusterScaleInNumbers`
+    - `ListDisasterRecover`
+    - `CreateDisasterRecovery`
+    - `DeleteDataSource`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShrinkCluster`:
+    - 新增请求参数 `clusterShrinkReq`
+    - 新增响应参数 `job_id`
+    - 移除请求参数 `shrink_number`、`online`、`type`、`retry`、`force_backup`、`need_agency`
+  - 接口`ExecuteRedistributionCluster`:
+    - 新增请求参数 `redistributionReq`
+    - 移除请求参数 `redis_mode`、`parallel_jobs`
+  - 接口`CreateClusterWorkload`:
+    - 新增请求参数 `workload_status`
+    - 新增响应参数 `workload_res_code`、`workload_res_str`
+    - 移除请求参数 `workload_switch`、`max_concurrency_num`
+  - 接口`ListClusterWorkload`:
+    - 新增响应参数 `workload_res_code`、`workload_res_str`
+    - 响应参数`workload_switch`改为必填
+  - 接口`CreateWorkloadPlan`:
+    - 新增请求参数 `workloadPlan`
+    - 新增响应参数 `workload_res_code`、`workload_res_str`
+    - 移除请求参数 `plan_id`、`plan_name`、`logical_cluster_name`
+  - 接口`AddWorkloadQueue`:
+    - 新增请求参数 `workload_queue`
+    - 新增响应参数 `workload_res_code`、`workload_res_str`
+    - 移除请求参数 `workload_queue_name`、`logical_cluster_name`、`short_query_optimize`、`short_query_concurrency_num`、`workload_resource_item_list`
+  - 接口`ListWorkloadQueue`新增响应参数 `workload_res_code`、`workload_res_str`
+  - 接口`DeleteWorkloadQueue`:
+    - 新增响应参数 `workload_res_code`、`workload_res_str`
+    - 请求参数`logical_cluster_name`改为必填
+  - 接口`CopySnapshot`:
+    - 新增请求参数 `linkCopyReq`
+    - 新增响应参数 `snapshot_id`
+    - 移除请求参数 `backup_name`、`description`
+  - 接口`ListAuditLog`移除响应参数 `version`、`configure_status`
+  - 接口`CreateDataSource`:
+    - 新增请求参数 `extDataSourceReq`
+    - 新增响应参数 `id`、`job_id`
+    - 移除请求参数 `data_source_id`、`type`、`data_source_name`、`user_name`、`user_pwd`、`description`、`reboot`、`connect_info`
+  - 接口`UpdateDataSource`:
+    - 新增请求参数 `reconfigure`
+    - 新增响应参数 `job_id`
+    - 移除请求参数 `database`、`agency`
+  - 接口`ListSnapshotDetails`新增响应参数 `datastore`、`cluster_name`、`bak_expected_start_time`、`bak_keep_day`、`bak_period`、`db_user`、`progress`、`backup_key`、`prior_backup_key`、`base_backup_key`、`backup_device`、`total_backup_size`、`base_backup_name`、`support_inplace_restore`、`fine_grained_backup`、`backup_level`、`fine_grained_backup_detail`、`guest_agent_version`、`cluster_status`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowWorkflowExecutionForPage`:
+    - 新增响应参数 `created_by`
+    - 移除响应参数 `create_by`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _新增特性_
+  - 支持接口`ModifyVolume`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListAvailableFlavorInfos`新增请求参数 `offset`、`limit`
+
+### HuaweiCloud SDK GSL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateTag`请求参数`tag_name`改为必填
+  - 接口`ListProPricePlans`移除请求参数 `sim_card_id`、`partner`、`package_type`、`sim_type`
+  - 接口`ListSimCards`:
+    - 移除请求参数 `expire_time_duration`、`traffic_warning_threshold`、`sim_status_in`
+    - 移除响应参数 `sn`、`supply_code`、`bundle_id`、`test_type`
+  - 接口`StopSimCard`:
+    - 移除请求参数 `price_plan_list`
+    - 移除响应参数 `sim_price_plan_list`
+  - 接口`ResetSimCard`:
+    - 移除请求参数 `price_plan_list`
+    - 移除响应参数 `sim_price_plan_list`
+  - 接口`ShowSimCard`移除响应参数 `sn`、`supply_code`、`bundle_id`、`test_type`
+  - 接口`ListSimPricePlans`:
+    - 移除请求参数 `sim_price_plan_id`
+    - 移除响应参数 `partner`、`partner_pid`
+
+### HuaweiCloud SDK IEF
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListEdgeNodes`新增响应参数 `purchase_id`、`state_details`、`cert_remaining_valid_time`
+  - 接口`UpdateEdgeNode`新增响应参数 `purchase_id`、`state_details`、`cert_remaining_valid_time`
+  - 接口`ShowEdgeNodeDetail`新增响应参数 `purchase_id`、`state_details`、`cert_remaining_valid_time`
+  - 接口`ListEdgeGroups`新增响应参数 `purchase_id`、`state_details`、`cert_remaining_valid_time`
+  - 接口`UpdateEdgeGroup`新增响应参数 `purchase_id`、`state_details`、`cert_remaining_valid_time`
+  - 接口`ShowEdgeGroupDetail`新增响应参数 `purchase_id`、`state_details`、`cert_remaining_valid_time`
+  - 接口`UpdateEdgeGroupNodeBinding`新增响应参数 `purchase_id`、`state_details`、`cert_remaining_valid_time`
+
+### HuaweiCloud SDK IMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CopyImageCrossRegion`新增请求参数 `vault_id`
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 支持接口`SearchDevices`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateRule`新增请求参数 `device_side`
+  - 接口`ListRules`新增响应参数 `device_side`
+  - 接口`ShowRule`新增响应参数 `device_side`
+  - 接口`UpdateRule`:
+    - 新增请求参数 `device_side`
+    - 新增响应参数 `device_side`
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreatePostPaidInstance`新增请求参数 `sasl_enabled_mechanisms`
+
+### HuaweiCloud SDK RocketMQ
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreatePostPaidInstance`新增请求参数 `enterprise_project_id`、`enable_acl`
+
+### HuaweiCloud SDK SFSTurbo
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateShare`:
+    - 新增请求参数 `CreateShareRequestBody`
+    - 移除请求参数 `share`
+  - 接口`ListShares`:
+    - 请求参数`offset`类型调整 `int32` -> `int64`
+    - 请求参数`limit`类型调整 `int32` -> `int64`
+  - 接口`ExpandShare`:
+    - 新增请求参数 `ExpandShareRequestBody`
+    - 移除请求参数 `extend`
+  - 接口`CreateSharedTag`:
+    - 新增请求参数 `CreateSharedTagRequestBody`
+    - 移除请求参数 `tag`
+  - 接口`BatchAddSharedTags`:
+    - 新增请求参数 `BatchAddSharedTagsRequestBody`
+    - 移除请求参数 `add_shareed_tags`
+
 # 3.1.17 2022-12-19
 
 ### HuaweiCloud SDK APM

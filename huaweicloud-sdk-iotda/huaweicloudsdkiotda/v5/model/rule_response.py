@@ -29,7 +29,8 @@ class RuleResponse:
         'status': 'str',
         'app_id': 'str',
         'edge_node_ids': 'list[str]',
-        'last_update_time': 'str'
+        'last_update_time': 'str',
+        'device_side': 'DeviceSide'
     }
 
     attribute_map = {
@@ -42,10 +43,11 @@ class RuleResponse:
         'status': 'status',
         'app_id': 'app_id',
         'edge_node_ids': 'edge_node_ids',
-        'last_update_time': 'last_update_time'
+        'last_update_time': 'last_update_time',
+        'device_side': 'device_side'
     }
 
-    def __init__(self, rule_id=None, name=None, description=None, condition_group=None, actions=None, rule_type=None, status=None, app_id=None, edge_node_ids=None, last_update_time=None):
+    def __init__(self, rule_id=None, name=None, description=None, condition_group=None, actions=None, rule_type=None, status=None, app_id=None, edge_node_ids=None, last_update_time=None, device_side=None):
         """RuleResponse
 
         The model defined in huaweicloud sdk
@@ -60,7 +62,7 @@ class RuleResponse:
         :type condition_group: :class:`huaweicloudsdkiotda.v5.ConditionGroup`
         :param actions: 规则的动作列表，单个规则最多支持设置10个动作。
         :type actions: list[:class:`huaweicloudsdkiotda.v5.RuleAction`]
-        :param rule_type: 规则的类型 - DEVICE_LINKAGE：设备联动。
+        :param rule_type: 规则的类型 - DEVICE_LINKAGE：云端联动规则。 - DEVICE_SIDE：端侧规则。
         :type rule_type: str
         :param status: 规则的状态，默认值：active。 - active：激活。 - inactive：未激活。
         :type status: str
@@ -70,6 +72,8 @@ class RuleResponse:
         :type edge_node_ids: list[str]
         :param last_update_time: 规则最后更新时间，使用UTC时区，格式：yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;。
         :type last_update_time: str
+        :param device_side: 
+        :type device_side: :class:`huaweicloudsdkiotda.v5.DeviceSide`
         """
         
         
@@ -84,6 +88,7 @@ class RuleResponse:
         self._app_id = None
         self._edge_node_ids = None
         self._last_update_time = None
+        self._device_side = None
         self.discriminator = None
 
         if rule_id is not None:
@@ -102,6 +107,8 @@ class RuleResponse:
             self.edge_node_ids = edge_node_ids
         if last_update_time is not None:
             self.last_update_time = last_update_time
+        if device_side is not None:
+            self.device_side = device_side
 
     @property
     def rule_id(self):
@@ -213,7 +220,7 @@ class RuleResponse:
     def rule_type(self):
         """Gets the rule_type of this RuleResponse.
 
-        规则的类型 - DEVICE_LINKAGE：设备联动。
+        规则的类型 - DEVICE_LINKAGE：云端联动规则。 - DEVICE_SIDE：端侧规则。
 
         :return: The rule_type of this RuleResponse.
         :rtype: str
@@ -224,7 +231,7 @@ class RuleResponse:
     def rule_type(self, rule_type):
         """Sets the rule_type of this RuleResponse.
 
-        规则的类型 - DEVICE_LINKAGE：设备联动。
+        规则的类型 - DEVICE_LINKAGE：云端联动规则。 - DEVICE_SIDE：端侧规则。
 
         :param rule_type: The rule_type of this RuleResponse.
         :type rule_type: str
@@ -318,6 +325,24 @@ class RuleResponse:
         :type last_update_time: str
         """
         self._last_update_time = last_update_time
+
+    @property
+    def device_side(self):
+        """Gets the device_side of this RuleResponse.
+
+        :return: The device_side of this RuleResponse.
+        :rtype: :class:`huaweicloudsdkiotda.v5.DeviceSide`
+        """
+        return self._device_side
+
+    @device_side.setter
+    def device_side(self, device_side):
+        """Sets the device_side of this RuleResponse.
+
+        :param device_side: The device_side of this RuleResponse.
+        :type device_side: :class:`huaweicloudsdkiotda.v5.DeviceSide`
+        """
+        self._device_side = device_side
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -24,7 +24,6 @@ class ClusterSnapshots:
         'name': 'str',
         'description': 'str',
         'started': 'str',
-        'finished': 'str',
         'size': 'float',
         'status': 'str',
         'cluster_id': 'str',
@@ -41,11 +40,11 @@ class ClusterSnapshots:
         'prior_backup_key': 'str',
         'base_backup_key': 'str',
         'backup_device': 'str',
-        'total_backup_size': 'str',
+        'total_backup_size': 'int',
         'base_backup_name': 'str',
         'support_inplace_restore': 'bool',
         'fine_grained_backup': 'bool',
-        'backup_level': 'bool',
+        'backup_level': 'str',
         'fine_grained_backup_detail': 'FineGrainedSnapshotDetail',
         'guest_agent_version': 'str',
         'cluster_status': 'str'
@@ -56,7 +55,6 @@ class ClusterSnapshots:
         'name': 'name',
         'description': 'description',
         'started': 'started',
-        'finished': 'finished',
         'size': 'size',
         'status': 'status',
         'cluster_id': 'cluster_id',
@@ -83,7 +81,7 @@ class ClusterSnapshots:
         'cluster_status': 'cluster_status'
     }
 
-    def __init__(self, id=None, name=None, description=None, started=None, finished=None, size=None, status=None, cluster_id=None, datastore=None, cluster_name=None, updated=None, type=None, bak_expected_start_time=None, bak_keep_day=None, bak_period=None, db_user=None, progress=None, backup_key=None, prior_backup_key=None, base_backup_key=None, backup_device=None, total_backup_size=None, base_backup_name=None, support_inplace_restore=None, fine_grained_backup=None, backup_level=None, fine_grained_backup_detail=None, guest_agent_version=None, cluster_status=None):
+    def __init__(self, id=None, name=None, description=None, started=None, size=None, status=None, cluster_id=None, datastore=None, cluster_name=None, updated=None, type=None, bak_expected_start_time=None, bak_keep_day=None, bak_period=None, db_user=None, progress=None, backup_key=None, prior_backup_key=None, base_backup_key=None, backup_device=None, total_backup_size=None, base_backup_name=None, support_inplace_restore=None, fine_grained_backup=None, backup_level=None, fine_grained_backup_detail=None, guest_agent_version=None, cluster_status=None):
         """ClusterSnapshots
 
         The model defined in huaweicloud sdk
@@ -96,8 +94,6 @@ class ClusterSnapshots:
         :type description: str
         :param started: 快照创建的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。
         :type started: str
-        :param finished: 快照完成的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。
-        :type finished: str
         :param size: 快照大小，单位 GB。
         :type size: float
         :param status: 快照状态： - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - RESTORING：恢复中。
@@ -131,7 +127,7 @@ class ClusterSnapshots:
         :param backup_device: 备份介质。
         :type backup_device: str
         :param total_backup_size: 累计快照大小。
-        :type total_backup_size: str
+        :type total_backup_size: int
         :param base_backup_name: 对应全量快照名称。
         :type base_backup_name: str
         :param support_inplace_restore: 是否支持就地恢复。
@@ -139,7 +135,7 @@ class ClusterSnapshots:
         :param fine_grained_backup: 是否是细粒度备份。
         :type fine_grained_backup: bool
         :param backup_level: 备份级别。
-        :type backup_level: bool
+        :type backup_level: str
         :param fine_grained_backup_detail: 
         :type fine_grained_backup_detail: :class:`huaweicloudsdkdws.v2.FineGrainedSnapshotDetail`
         :param guest_agent_version: guestAgent版本。
@@ -154,7 +150,6 @@ class ClusterSnapshots:
         self._name = None
         self._description = None
         self._started = None
-        self._finished = None
         self._size = None
         self._status = None
         self._cluster_id = None
@@ -189,8 +184,6 @@ class ClusterSnapshots:
             self.description = description
         if started is not None:
             self.started = started
-        if finished is not None:
-            self.finished = finished
         if size is not None:
             self.size = size
         if status is not None:
@@ -327,28 +320,6 @@ class ClusterSnapshots:
         :type started: str
         """
         self._started = started
-
-    @property
-    def finished(self):
-        """Gets the finished of this ClusterSnapshots.
-
-        快照完成的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。
-
-        :return: The finished of this ClusterSnapshots.
-        :rtype: str
-        """
-        return self._finished
-
-    @finished.setter
-    def finished(self, finished):
-        """Sets the finished of this ClusterSnapshots.
-
-        快照完成的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。
-
-        :param finished: The finished of this ClusterSnapshots.
-        :type finished: str
-        """
-        self._finished = finished
 
     @property
     def size(self):
@@ -705,7 +676,7 @@ class ClusterSnapshots:
         累计快照大小。
 
         :return: The total_backup_size of this ClusterSnapshots.
-        :rtype: str
+        :rtype: int
         """
         return self._total_backup_size
 
@@ -716,7 +687,7 @@ class ClusterSnapshots:
         累计快照大小。
 
         :param total_backup_size: The total_backup_size of this ClusterSnapshots.
-        :type total_backup_size: str
+        :type total_backup_size: int
         """
         self._total_backup_size = total_backup_size
 
@@ -793,7 +764,7 @@ class ClusterSnapshots:
         备份级别。
 
         :return: The backup_level of this ClusterSnapshots.
-        :rtype: bool
+        :rtype: str
         """
         return self._backup_level
 
@@ -804,7 +775,7 @@ class ClusterSnapshots:
         备份级别。
 
         :param backup_level: The backup_level of this ClusterSnapshots.
-        :type backup_level: bool
+        :type backup_level: str
         """
         self._backup_level = backup_level
 

@@ -61,7 +61,7 @@ class SFSTurboAsyncClient(Client):
         return self.batch_add_shared_tags_with_http_info(request)
 
     def batch_add_shared_tags_with_http_info(self, request):
-        all_params = ['share_id', 'add_shareed_tags']
+        all_params = ['share_id', 'batch_add_shared_tags_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -250,7 +250,7 @@ class SFSTurboAsyncClient(Client):
         return self.create_share_with_http_info(request)
 
     def create_share_with_http_info(self, request):
-        all_params = ['share']
+        all_params = ['create_share_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -314,7 +314,7 @@ class SFSTurboAsyncClient(Client):
         return self.create_shared_tag_with_http_info(request)
 
     def create_shared_tag_with_http_info(self, request):
-        all_params = ['share_id', 'tag']
+        all_params = ['share_id', 'create_shared_tag_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -501,7 +501,7 @@ class SFSTurboAsyncClient(Client):
         return self.expand_share_with_http_info(request)
 
     def expand_share_with_http_info(self, request):
-        all_params = ['share_id', 'extend']
+        all_params = ['share_id', 'expand_share_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):

@@ -31,6 +31,7 @@ class SimPoolVO:
         'flow_used': 'float',
         'flow_left': 'float',
         'quantity': 'int',
+        'order_id': 'int',
         'modify_time': 'datetime',
         'activated_sim_quantity': 'int',
         'inactive_sim_quantity': 'int',
@@ -50,6 +51,7 @@ class SimPoolVO:
         'flow_used': 'flow_used',
         'flow_left': 'flow_left',
         'quantity': 'quantity',
+        'order_id': 'order_id',
         'modify_time': 'modify_time',
         'activated_sim_quantity': 'activated_sim_quantity',
         'inactive_sim_quantity': 'inactive_sim_quantity',
@@ -57,7 +59,7 @@ class SimPoolVO:
         'order_ids': 'order_ids'
     }
 
-    def __init__(self, id=None, pool_name=None, price_plan_name=None, price_plan_id=None, effective_time=None, expired_time=None, billing_cycle=None, flow_total=None, flow_used=None, flow_left=None, quantity=None, modify_time=None, activated_sim_quantity=None, inactive_sim_quantity=None, disassembled_sim_quantity=None, order_ids=None):
+    def __init__(self, id=None, pool_name=None, price_plan_name=None, price_plan_id=None, effective_time=None, expired_time=None, billing_cycle=None, flow_total=None, flow_used=None, flow_left=None, quantity=None, order_id=None, modify_time=None, activated_sim_quantity=None, inactive_sim_quantity=None, disassembled_sim_quantity=None, order_ids=None):
         """SimPoolVO
 
         The model defined in huaweicloud sdk
@@ -84,6 +86,8 @@ class SimPoolVO:
         :type flow_left: float
         :param quantity: 流量池成员数量
         :type quantity: int
+        :param order_id: 批次号
+        :type order_id: int
         :param modify_time: 更新时间
         :type modify_time: datetime
         :param activated_sim_quantity: 已激活成员数量
@@ -109,6 +113,7 @@ class SimPoolVO:
         self._flow_used = None
         self._flow_left = None
         self._quantity = None
+        self._order_id = None
         self._modify_time = None
         self._activated_sim_quantity = None
         self._inactive_sim_quantity = None
@@ -138,6 +143,8 @@ class SimPoolVO:
             self.flow_left = flow_left
         if quantity is not None:
             self.quantity = quantity
+        if order_id is not None:
+            self.order_id = order_id
         if modify_time is not None:
             self.modify_time = modify_time
         if activated_sim_quantity is not None:
@@ -390,6 +397,28 @@ class SimPoolVO:
         :type quantity: int
         """
         self._quantity = quantity
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this SimPoolVO.
+
+        批次号
+
+        :return: The order_id of this SimPoolVO.
+        :rtype: int
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this SimPoolVO.
+
+        批次号
+
+        :param order_id: The order_id of this SimPoolVO.
+        :type order_id: int
+        """
+        self._order_id = order_id
 
     @property
     def modify_time(self):

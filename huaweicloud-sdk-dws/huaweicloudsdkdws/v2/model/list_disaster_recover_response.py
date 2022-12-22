@@ -20,47 +20,51 @@ class ListDisasterRecoverResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
+        'disaster_recovery': 'list[DisasterRecovery]'
     }
 
     attribute_map = {
-        'body': 'body'
+        'disaster_recovery': 'disaster_recovery'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, disaster_recovery=None):
         """ListDisasterRecoverResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: str
+        :param disaster_recovery: 容灾对象
+        :type disaster_recovery: list[:class:`huaweicloudsdkdws.v2.DisasterRecovery`]
         """
         
         super(ListDisasterRecoverResponse, self).__init__()
 
-        self._body = None
+        self._disaster_recovery = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if disaster_recovery is not None:
+            self.disaster_recovery = disaster_recovery
 
     @property
-    def body(self):
-        """Gets the body of this ListDisasterRecoverResponse.
+    def disaster_recovery(self):
+        """Gets the disaster_recovery of this ListDisasterRecoverResponse.
 
-        :return: The body of this ListDisasterRecoverResponse.
-        :rtype: str
+        容灾对象
+
+        :return: The disaster_recovery of this ListDisasterRecoverResponse.
+        :rtype: list[:class:`huaweicloudsdkdws.v2.DisasterRecovery`]
         """
-        return self._body
+        return self._disaster_recovery
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this ListDisasterRecoverResponse.
+    @disaster_recovery.setter
+    def disaster_recovery(self, disaster_recovery):
+        """Sets the disaster_recovery of this ListDisasterRecoverResponse.
 
-        :param body: The body of this ListDisasterRecoverResponse.
-        :type body: str
+        容灾对象
+
+        :param disaster_recovery: The disaster_recovery of this ListDisasterRecoverResponse.
+        :type disaster_recovery: list[:class:`huaweicloudsdkdws.v2.DisasterRecovery`]
         """
-        self._body = body
+        self._disaster_recovery = disaster_recovery
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -23,17 +23,19 @@ class Metadata:
         'crypt_key_id': 'str',
         'dedicated_flavor': 'str',
         'dedicated_storage_id': 'str',
-        'expand_type': 'str'
+        'expand_type': 'str',
+        'hpc_bw': 'str'
     }
 
     attribute_map = {
         'crypt_key_id': 'crypt_key_id',
         'dedicated_flavor': 'dedicated_flavor',
         'dedicated_storage_id': 'dedicated_storage_id',
-        'expand_type': 'expand_type'
+        'expand_type': 'expand_type',
+        'hpc_bw': 'hpc_bw'
     }
 
-    def __init__(self, crypt_key_id=None, dedicated_flavor=None, dedicated_storage_id=None, expand_type=None):
+    def __init__(self, crypt_key_id=None, dedicated_flavor=None, dedicated_storage_id=None, expand_type=None, hpc_bw=None):
         """Metadata
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class Metadata:
         :type dedicated_storage_id: str
         :param expand_type: 扩展类型。当前有效值为bandwidth，即创建增强型的文件系统。
         :type expand_type: str
+        :param hpc_bw: hpc型带宽,仅创建hpc型需要
+        :type hpc_bw: str
         """
         
         
@@ -54,6 +58,7 @@ class Metadata:
         self._dedicated_flavor = None
         self._dedicated_storage_id = None
         self._expand_type = None
+        self._hpc_bw = None
         self.discriminator = None
 
         if crypt_key_id is not None:
@@ -64,6 +69,8 @@ class Metadata:
             self.dedicated_storage_id = dedicated_storage_id
         if expand_type is not None:
             self.expand_type = expand_type
+        if hpc_bw is not None:
+            self.hpc_bw = hpc_bw
 
     @property
     def crypt_key_id(self):
@@ -152,6 +159,28 @@ class Metadata:
         :type expand_type: str
         """
         self._expand_type = expand_type
+
+    @property
+    def hpc_bw(self):
+        """Gets the hpc_bw of this Metadata.
+
+        hpc型带宽,仅创建hpc型需要
+
+        :return: The hpc_bw of this Metadata.
+        :rtype: str
+        """
+        return self._hpc_bw
+
+    @hpc_bw.setter
+    def hpc_bw(self, hpc_bw):
+        """Sets the hpc_bw of this Metadata.
+
+        hpc型带宽,仅创建hpc型需要
+
+        :param hpc_bw: The hpc_bw of this Metadata.
+        :type hpc_bw: str
+        """
+        self._hpc_bw = hpc_bw
 
     def to_dict(self):
         """Returns the model properties as a dict"""

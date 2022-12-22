@@ -24,7 +24,8 @@ class CopyImageCrossRegionRequestBody:
         'description': 'str',
         'name': 'str',
         'project_name': 'str',
-        'region': 'str'
+        'region': 'str',
+        'vault_id': 'str'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class CopyImageCrossRegionRequestBody:
         'description': 'description',
         'name': 'name',
         'project_name': 'project_name',
-        'region': 'region'
+        'region': 'region',
+        'vault_id': 'vault_id'
     }
 
-    def __init__(self, agency_name=None, description=None, name=None, project_name=None, region=None):
+    def __init__(self, agency_name=None, description=None, name=None, project_name=None, region=None, vault_id=None):
         """CopyImageCrossRegionRequestBody
 
         The model defined in huaweicloud sdk
@@ -50,6 +52,8 @@ class CopyImageCrossRegionRequestBody:
         :type project_name: str
         :param region: 目的区域的Region ID。
         :type region: str
+        :param vault_id: 存储库ID。如果是整机镜像，则在跨Region复制镜像时，为必选参数，需传入该值。
+        :type vault_id: str
         """
         
         
@@ -59,6 +63,7 @@ class CopyImageCrossRegionRequestBody:
         self._name = None
         self._project_name = None
         self._region = None
+        self._vault_id = None
         self.discriminator = None
 
         self.agency_name = agency_name
@@ -67,6 +72,8 @@ class CopyImageCrossRegionRequestBody:
         self.name = name
         self.project_name = project_name
         self.region = region
+        if vault_id is not None:
+            self.vault_id = vault_id
 
     @property
     def agency_name(self):
@@ -177,6 +184,28 @@ class CopyImageCrossRegionRequestBody:
         :type region: str
         """
         self._region = region
+
+    @property
+    def vault_id(self):
+        """Gets the vault_id of this CopyImageCrossRegionRequestBody.
+
+        存储库ID。如果是整机镜像，则在跨Region复制镜像时，为必选参数，需传入该值。
+
+        :return: The vault_id of this CopyImageCrossRegionRequestBody.
+        :rtype: str
+        """
+        return self._vault_id
+
+    @vault_id.setter
+    def vault_id(self, vault_id):
+        """Sets the vault_id of this CopyImageCrossRegionRequestBody.
+
+        存储库ID。如果是整机镜像，则在跨Region复制镜像时，为必选参数，需传入该值。
+
+        :param vault_id: The vault_id of this CopyImageCrossRegionRequestBody.
+        :type vault_id: str
+        """
+        self._vault_id = vault_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

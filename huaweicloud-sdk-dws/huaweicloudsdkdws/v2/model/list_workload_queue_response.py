@@ -20,29 +20,43 @@ class ListWorkloadQueueResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'workload_queue_name_list': 'list[str]'
+        'workload_queue_name_list': 'list[str]',
+        'workload_res_code': 'int',
+        'workload_res_str': 'str'
     }
 
     attribute_map = {
-        'workload_queue_name_list': 'workload_queue_name_list'
+        'workload_queue_name_list': 'workload_queue_name_list',
+        'workload_res_code': 'workload_res_code',
+        'workload_res_str': 'workload_res_str'
     }
 
-    def __init__(self, workload_queue_name_list=None):
+    def __init__(self, workload_queue_name_list=None, workload_res_code=None, workload_res_str=None):
         """ListWorkloadQueueResponse
 
         The model defined in huaweicloud sdk
 
         :param workload_queue_name_list: 工作负载队列名称。
         :type workload_queue_name_list: list[str]
+        :param workload_res_code: 结果状态码。
+        :type workload_res_code: int
+        :param workload_res_str: 结果描述。
+        :type workload_res_str: str
         """
         
         super(ListWorkloadQueueResponse, self).__init__()
 
         self._workload_queue_name_list = None
+        self._workload_res_code = None
+        self._workload_res_str = None
         self.discriminator = None
 
         if workload_queue_name_list is not None:
             self.workload_queue_name_list = workload_queue_name_list
+        if workload_res_code is not None:
+            self.workload_res_code = workload_res_code
+        if workload_res_str is not None:
+            self.workload_res_str = workload_res_str
 
     @property
     def workload_queue_name_list(self):
@@ -65,6 +79,50 @@ class ListWorkloadQueueResponse(SdkResponse):
         :type workload_queue_name_list: list[str]
         """
         self._workload_queue_name_list = workload_queue_name_list
+
+    @property
+    def workload_res_code(self):
+        """Gets the workload_res_code of this ListWorkloadQueueResponse.
+
+        结果状态码。
+
+        :return: The workload_res_code of this ListWorkloadQueueResponse.
+        :rtype: int
+        """
+        return self._workload_res_code
+
+    @workload_res_code.setter
+    def workload_res_code(self, workload_res_code):
+        """Sets the workload_res_code of this ListWorkloadQueueResponse.
+
+        结果状态码。
+
+        :param workload_res_code: The workload_res_code of this ListWorkloadQueueResponse.
+        :type workload_res_code: int
+        """
+        self._workload_res_code = workload_res_code
+
+    @property
+    def workload_res_str(self):
+        """Gets the workload_res_str of this ListWorkloadQueueResponse.
+
+        结果描述。
+
+        :return: The workload_res_str of this ListWorkloadQueueResponse.
+        :rtype: str
+        """
+        return self._workload_res_str
+
+    @workload_res_str.setter
+    def workload_res_str(self, workload_res_str):
+        """Sets the workload_res_str of this ListWorkloadQueueResponse.
+
+        结果描述。
+
+        :param workload_res_str: The workload_res_str of this ListWorkloadQueueResponse.
+        :type workload_res_str: str
+        """
+        self._workload_res_str = workload_res_str
 
     def to_dict(self):
         """Returns the model properties as a dict"""

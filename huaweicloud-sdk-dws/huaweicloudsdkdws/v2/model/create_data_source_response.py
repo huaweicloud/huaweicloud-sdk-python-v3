@@ -20,47 +20,80 @@ class CreateDataSourceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
+        'id': 'str',
+        'job_id': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'id': 'id',
+        'job_id': 'job_id'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, id=None, job_id=None):
         """CreateDataSourceResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: str
+        :param id: 数据源id。
+        :type id: str
+        :param job_id: 创建数据源job_id。
+        :type job_id: str
         """
         
         super(CreateDataSourceResponse, self).__init__()
 
-        self._body = None
+        self._id = None
+        self._job_id = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if id is not None:
+            self.id = id
+        if job_id is not None:
+            self.job_id = job_id
 
     @property
-    def body(self):
-        """Gets the body of this CreateDataSourceResponse.
+    def id(self):
+        """Gets the id of this CreateDataSourceResponse.
 
-        :return: The body of this CreateDataSourceResponse.
+        数据源id。
+
+        :return: The id of this CreateDataSourceResponse.
         :rtype: str
         """
-        return self._body
+        return self._id
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this CreateDataSourceResponse.
+    @id.setter
+    def id(self, id):
+        """Sets the id of this CreateDataSourceResponse.
 
-        :param body: The body of this CreateDataSourceResponse.
-        :type body: str
+        数据源id。
+
+        :param id: The id of this CreateDataSourceResponse.
+        :type id: str
         """
-        self._body = body
+        self._id = id
+
+    @property
+    def job_id(self):
+        """Gets the job_id of this CreateDataSourceResponse.
+
+        创建数据源job_id。
+
+        :return: The job_id of this CreateDataSourceResponse.
+        :rtype: str
+        """
+        return self._job_id
+
+    @job_id.setter
+    def job_id(self, job_id):
+        """Sets the job_id of this CreateDataSourceResponse.
+
+        创建数据源job_id。
+
+        :param job_id: The job_id of this CreateDataSourceResponse.
+        :type job_id: str
+        """
+        self._job_id = job_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -23,17 +23,19 @@ class CreateCloudPhoneServerRequestBodyExtendParam:
         'charging_mode': 'int',
         'period_type': 'int',
         'period_num': 'int',
-        'is_auto_pay': 'int'
+        'is_auto_pay': 'int',
+        'is_auto_renew': 'int'
     }
 
     attribute_map = {
         'charging_mode': 'charging_mode',
         'period_type': 'period_type',
         'period_num': 'period_num',
-        'is_auto_pay': 'is_auto_pay'
+        'is_auto_pay': 'is_auto_pay',
+        'is_auto_renew': 'is_auto_renew'
     }
 
-    def __init__(self, charging_mode=None, period_type=None, period_num=None, is_auto_pay=None):
+    def __init__(self, charging_mode=None, period_type=None, period_num=None, is_auto_pay=None, is_auto_renew=None):
         """CreateCloudPhoneServerRequestBodyExtendParam
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class CreateCloudPhoneServerRequestBodyExtendParam:
         :type period_num: int
         :param is_auto_pay: 是否自动付款。默认不自动付款。 - 1 表示自动付款 - 0 表示不自动付款
         :type is_auto_pay: int
+        :param is_auto_renew: 是否自动续订。默认不自动续订。 - 1 表示自动续订 - 0 表示不自动续订
+        :type is_auto_renew: int
         """
         
         
@@ -54,6 +58,7 @@ class CreateCloudPhoneServerRequestBodyExtendParam:
         self._period_type = None
         self._period_num = None
         self._is_auto_pay = None
+        self._is_auto_renew = None
         self.discriminator = None
 
         self.charging_mode = charging_mode
@@ -61,6 +66,8 @@ class CreateCloudPhoneServerRequestBodyExtendParam:
         self.period_num = period_num
         if is_auto_pay is not None:
             self.is_auto_pay = is_auto_pay
+        if is_auto_renew is not None:
+            self.is_auto_renew = is_auto_renew
 
     @property
     def charging_mode(self):
@@ -149,6 +156,28 @@ class CreateCloudPhoneServerRequestBodyExtendParam:
         :type is_auto_pay: int
         """
         self._is_auto_pay = is_auto_pay
+
+    @property
+    def is_auto_renew(self):
+        """Gets the is_auto_renew of this CreateCloudPhoneServerRequestBodyExtendParam.
+
+        是否自动续订。默认不自动续订。 - 1 表示自动续订 - 0 表示不自动续订
+
+        :return: The is_auto_renew of this CreateCloudPhoneServerRequestBodyExtendParam.
+        :rtype: int
+        """
+        return self._is_auto_renew
+
+    @is_auto_renew.setter
+    def is_auto_renew(self, is_auto_renew):
+        """Sets the is_auto_renew of this CreateCloudPhoneServerRequestBodyExtendParam.
+
+        是否自动续订。默认不自动续订。 - 1 表示自动续订 - 0 表示不自动续订
+
+        :param is_auto_renew: The is_auto_renew of this CreateCloudPhoneServerRequestBodyExtendParam.
+        :type is_auto_renew: int
+        """
+        self._is_auto_renew = is_auto_renew
 
     def to_dict(self):
         """Returns the model properties as a dict"""

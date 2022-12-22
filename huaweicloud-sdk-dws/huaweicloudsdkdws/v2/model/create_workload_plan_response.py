@@ -20,47 +20,80 @@ class CreateWorkloadPlanResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
+        'workload_res_code': 'int',
+        'workload_res_str': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'workload_res_code': 'workload_res_code',
+        'workload_res_str': 'workload_res_str'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, workload_res_code=None, workload_res_str=None):
         """CreateWorkloadPlanResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: str
+        :param workload_res_code: 响应编码。
+        :type workload_res_code: int
+        :param workload_res_str: 响应信息。
+        :type workload_res_str: str
         """
         
         super(CreateWorkloadPlanResponse, self).__init__()
 
-        self._body = None
+        self._workload_res_code = None
+        self._workload_res_str = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if workload_res_code is not None:
+            self.workload_res_code = workload_res_code
+        if workload_res_str is not None:
+            self.workload_res_str = workload_res_str
 
     @property
-    def body(self):
-        """Gets the body of this CreateWorkloadPlanResponse.
+    def workload_res_code(self):
+        """Gets the workload_res_code of this CreateWorkloadPlanResponse.
 
-        :return: The body of this CreateWorkloadPlanResponse.
+        响应编码。
+
+        :return: The workload_res_code of this CreateWorkloadPlanResponse.
+        :rtype: int
+        """
+        return self._workload_res_code
+
+    @workload_res_code.setter
+    def workload_res_code(self, workload_res_code):
+        """Sets the workload_res_code of this CreateWorkloadPlanResponse.
+
+        响应编码。
+
+        :param workload_res_code: The workload_res_code of this CreateWorkloadPlanResponse.
+        :type workload_res_code: int
+        """
+        self._workload_res_code = workload_res_code
+
+    @property
+    def workload_res_str(self):
+        """Gets the workload_res_str of this CreateWorkloadPlanResponse.
+
+        响应信息。
+
+        :return: The workload_res_str of this CreateWorkloadPlanResponse.
         :rtype: str
         """
-        return self._body
+        return self._workload_res_str
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this CreateWorkloadPlanResponse.
+    @workload_res_str.setter
+    def workload_res_str(self, workload_res_str):
+        """Sets the workload_res_str of this CreateWorkloadPlanResponse.
 
-        :param body: The body of this CreateWorkloadPlanResponse.
-        :type body: str
+        响应信息。
+
+        :param workload_res_str: The workload_res_str of this CreateWorkloadPlanResponse.
+        :type workload_res_str: str
         """
-        self._body = body
+        self._workload_res_str = workload_res_str
 
     def to_dict(self):
         """Returns the model properties as a dict"""

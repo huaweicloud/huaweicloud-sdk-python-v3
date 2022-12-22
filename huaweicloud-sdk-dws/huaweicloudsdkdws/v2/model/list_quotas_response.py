@@ -20,7 +20,7 @@ class ListQuotasResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'quotas': 'object'
+        'quotas': 'QuotasQuotas'
     }
 
     attribute_map = {
@@ -32,8 +32,8 @@ class ListQuotasResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param quotas: 配额列表对象。
-        :type quotas: object
+        :param quotas: 
+        :type quotas: :class:`huaweicloudsdkdws.v2.QuotasQuotas`
         """
         
         super(ListQuotasResponse, self).__init__()
@@ -48,10 +48,8 @@ class ListQuotasResponse(SdkResponse):
     def quotas(self):
         """Gets the quotas of this ListQuotasResponse.
 
-        配额列表对象。
-
         :return: The quotas of this ListQuotasResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdws.v2.QuotasQuotas`
         """
         return self._quotas
 
@@ -59,10 +57,8 @@ class ListQuotasResponse(SdkResponse):
     def quotas(self, quotas):
         """Sets the quotas of this ListQuotasResponse.
 
-        配额列表对象。
-
         :param quotas: The quotas of this ListQuotasResponse.
-        :type quotas: object
+        :type quotas: :class:`huaweicloudsdkdws.v2.QuotasQuotas`
         """
         self._quotas = quotas
 

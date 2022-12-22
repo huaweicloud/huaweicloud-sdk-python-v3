@@ -41,8 +41,7 @@ class AddOrModifyTagReq:
         self._tag_name = None
         self.discriminator = None
 
-        if tag_name is not None:
-            self.tag_name = tag_name
+        self.tag_name = tag_name
 
     @property
     def tag_name(self):

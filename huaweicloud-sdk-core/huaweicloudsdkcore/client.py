@@ -24,6 +24,8 @@ import importlib
 import logging
 import re
 import sys
+from collections import OrderedDict
+from concurrent.futures import ThreadPoolExecutor
 from logging.handlers import RotatingFileHandler
 
 import six
@@ -43,6 +45,7 @@ from huaweicloudsdkcore.sdk_response import FutureSdkResponse
 from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
 from huaweicloudsdkcore.utils import http_utils, core_utils
 from huaweicloudsdkcore.http.formdata import FormFile
+from huaweicloudsdkcore.utils.xml_utils import XmlTransfer
 
 
 class ClientBuilder(object):
@@ -168,6 +171,14 @@ class ClientBuilder(object):
 
 
 class Client(object):
+    _CONTENT_TYPE = "Content-Type"
+    _APPLICATION_JSON = "application/json"
+    _APPLICATION_XML = "application/xml"
+    _MULTIPART_FORMDATA = "multipart/form-data"
+    _XML_NAME = "xml_name"
+    _AUTHORIZATION = "Authorization"
+    _HEADERS = "headers"
+
     def __init__(self):
         self.preset_headers = {}
 
@@ -300,6 +311,12 @@ class Client(object):
         return post_params
 
     @classmethod
+    def _parse_xml_body(cls, body):
+        root_name = getattr(body, cls._XML_NAME) if hasattr(body, cls._XML_NAME) else body.__class__.__name__
+        _dict = {root_name: http_utils.sanitize_for_serialization(body)}
+        return XmlTransfer().to_string(_dict)
+
+    @classmethod
     def _parse_body(cls, body, post_params):
         if body:
             if six.PY3:
@@ -318,14 +335,23 @@ class Client(object):
         return body
 
     @classmethod
-    def _parse_formdata_body(cls, body, headers):
+    def _parse_formdata_body(cls, body):
         if not body:
-            return body, headers
+            body = {}
         body = http_utils.sanitize_for_serialization(body)
-        body = {k: v.convert_to_file_tuple() if isinstance(v, FormFile) else str(v) for k, v in body.items()}
-        multipart = MultipartEncoder(fields=body)
-        headers["Content-Type"] = multipart.content_type
-        return multipart, headers
+
+        fields = OrderedDict()
+        files = []
+        for key, value in body.items():
+            if isinstance(value, FormFile):
+                files.append((key, value))
+            else:
+                fields[key] = str(value)
+        for file_tuple in files:
+            fields[file_tuple[0]] = file_tuple[1].convert_to_file_tuple()
+
+        multipart = MultipartEncoder(fields=fields)
+        return multipart
 
     def _is_stream(self, response_type):
         if type(response_type) == str and hasattr(self.model_package, response_type):
@@ -344,6 +370,7 @@ class Client(object):
         elif type(params) == list:
             list_filter = filter(lambda x: type(x) == tuple and len(x) == 2 and x[1] is not None, params)
             return [i for i in list_filter]
+        return None
 
     def _url_parse(self, cname):
         parse_result = urlparse(self._endpoint)
@@ -365,16 +392,19 @@ class Client(object):
         query_params = self._parse_query_params(collection_formats, query_params)
         post_params = self._parse_post_params(collection_formats, post_params)
 
-        if isinstance(header_params, dict) \
-                and header_params.setdefault("Content-Type", "").startswith("multipart/form-data"):
-            body, header_params = self._parse_formdata_body(body, header_params)
+        content_type = header_params.setdefault(self._CONTENT_TYPE, self._APPLICATION_JSON)
+        if content_type == self._MULTIPART_FORMDATA:
+            body = self._parse_formdata_body(body)
+            header_params[self._CONTENT_TYPE] = body.content_type
+        elif content_type == self._APPLICATION_XML:
+            body = self._parse_xml_body(body)
         else:
             body = self._parse_body(body, post_params)
 
         stream = self._is_stream(response_type)
         sdk_request = SdkRequest(method=method, schema=schema, host=host, resource_path=resource_path,
                                  query_params=query_params, header_params=header_params, body=body, stream=stream)
-        if "Authorization" not in header_params:
+        if self._AUTHORIZATION not in header_params:
             future_request = self._credentials.process_auth_request(sdk_request, self._http_client)
         else:
             future_request = self._http_client.executor.submit(lambda: sdk_request)
@@ -439,7 +469,10 @@ class Client(object):
                 return klass(response)
 
         try:
-            data = json.loads(six.ensure_str(response.text), parse_float=decimal.Decimal)
+            if hasattr(response, self._HEADERS) and response.headers.get(self._CONTENT_TYPE) == self._APPLICATION_XML:
+                data = XmlTransfer().to_dict(response.content, ignore_root=True)
+            else:
+                data = json.loads(six.ensure_str(response.text), parse_float=decimal.Decimal)
         except ValueError:
             data = response.text
         return self._deserialize(data, response_type)
@@ -450,6 +483,8 @@ class Client(object):
 
         if type(klass) == str:
             if klass.startswith('list['):
+                if not isinstance(data, list):
+                    data = [data]
                 sub_kls = re.match(r'list\[(.*)\]', klass).group(1)
                 return [self._deserialize(sub_data, sub_kls)
                         for sub_data in data]

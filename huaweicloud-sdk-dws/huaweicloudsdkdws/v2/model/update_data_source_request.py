@@ -22,7 +22,7 @@ class UpdateDataSourceRequest:
     openapi_types = {
         'cluster_id': 'str',
         'ext_data_source_id': 'str',
-        'body': 'ReconfigureExtDataSourceAction'
+        'body': 'ReconfigureExtDataSourceActionReq'
     }
 
     attribute_map = {
@@ -41,7 +41,7 @@ class UpdateDataSourceRequest:
         :param ext_data_source_id: 数据源id
         :type ext_data_source_id: str
         :param body: Body of the UpdateDataSourceRequest
-        :type body: :class:`huaweicloudsdkdws.v2.ReconfigureExtDataSourceAction`
+        :type body: :class:`huaweicloudsdkdws.v2.ReconfigureExtDataSourceActionReq`
         """
         
         
@@ -105,7 +105,7 @@ class UpdateDataSourceRequest:
         """Gets the body of this UpdateDataSourceRequest.
 
         :return: The body of this UpdateDataSourceRequest.
-        :rtype: :class:`huaweicloudsdkdws.v2.ReconfigureExtDataSourceAction`
+        :rtype: :class:`huaweicloudsdkdws.v2.ReconfigureExtDataSourceActionReq`
         """
         return self._body
 
@@ -114,7 +114,7 @@ class UpdateDataSourceRequest:
         """Sets the body of this UpdateDataSourceRequest.
 
         :param body: The body of this UpdateDataSourceRequest.
-        :type body: :class:`huaweicloudsdkdws.v2.ReconfigureExtDataSourceAction`
+        :type body: :class:`huaweicloudsdkdws.v2.ReconfigureExtDataSourceActionReq`
         """
         self._body = body
 

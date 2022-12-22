@@ -20,47 +20,47 @@ class CreateDisasterRecoveryResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
+        'disaster_recovery': 'DisasterRecoveryId'
     }
 
     attribute_map = {
-        'body': 'body'
+        'disaster_recovery': 'disaster_recovery'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, disaster_recovery=None):
         """CreateDisasterRecoveryResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: str
+        :param disaster_recovery: 
+        :type disaster_recovery: :class:`huaweicloudsdkdws.v2.DisasterRecoveryId`
         """
         
         super(CreateDisasterRecoveryResponse, self).__init__()
 
-        self._body = None
+        self._disaster_recovery = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if disaster_recovery is not None:
+            self.disaster_recovery = disaster_recovery
 
     @property
-    def body(self):
-        """Gets the body of this CreateDisasterRecoveryResponse.
+    def disaster_recovery(self):
+        """Gets the disaster_recovery of this CreateDisasterRecoveryResponse.
 
-        :return: The body of this CreateDisasterRecoveryResponse.
-        :rtype: str
+        :return: The disaster_recovery of this CreateDisasterRecoveryResponse.
+        :rtype: :class:`huaweicloudsdkdws.v2.DisasterRecoveryId`
         """
-        return self._body
+        return self._disaster_recovery
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this CreateDisasterRecoveryResponse.
+    @disaster_recovery.setter
+    def disaster_recovery(self, disaster_recovery):
+        """Sets the disaster_recovery of this CreateDisasterRecoveryResponse.
 
-        :param body: The body of this CreateDisasterRecoveryResponse.
-        :type body: str
+        :param disaster_recovery: The disaster_recovery of this CreateDisasterRecoveryResponse.
+        :type disaster_recovery: :class:`huaweicloudsdkdws.v2.DisasterRecoveryId`
         """
-        self._body = body
+        self._disaster_recovery = disaster_recovery
 
     def to_dict(self):
         """Returns the model properties as a dict"""

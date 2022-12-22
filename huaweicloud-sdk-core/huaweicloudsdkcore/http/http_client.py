@@ -31,6 +31,7 @@ from urllib3.exceptions import SSLError, NewConnectionError
 from concurrent.futures import ThreadPoolExecutor
 
 from huaweicloudsdkcore.exceptions import exceptions
+from huaweicloudsdkcore.utils.xml_utils import XmlTransfer
 
 
 class HttpClient(object):
@@ -125,18 +126,13 @@ class HttpClient(object):
             try:
                 resp.raise_for_status()
             except HTTPError as httpError:
-                response_status_code = httpError.response.status_code
-                response_header_params = httpError.response.headers
-                if "X-Request-Id" in response_header_params:
-                    request_id = response_header_params["X-Request-Id"]
+                sdk_error = self._get_sdk_error_from_xml_response(httpError.response) \
+                    if httpError.response.headers.get("Content-Type") == "application/xml" \
+                    else self._get_sdk_error_from_response(httpError.response)
+                if 400 <= httpError.response.status_code < 500:
+                    raise exceptions.ClientRequestException(httpError.response.status_code, sdk_error)
                 else:
-                    request_id = ""
-                response_body = httpError.response.text
-                sdk_error = self.get_sdk_error_from_response(request_id, response_body, response_status_code)
-                if 400 <= response_status_code < 500:
-                    raise exceptions.ClientRequestException(response_status_code, sdk_error)
-                else:
-                    raise exceptions.ServerResponseException(response_status_code, sdk_error)
+                    raise exceptions.ServerResponseException(httpError.response.status_code, sdk_error)
             except Timeout as timeout:
                 raise exceptions.CallTimeoutException(str(timeout))
             except TooManyRedirects as tooManyRedirects:
@@ -144,36 +140,57 @@ class HttpClient(object):
 
         return response_hook
 
-    def get_sdk_error_from_response(self, request_id, response_body, response_status_code):
-        sdk_error = exceptions.SdkError()
-
+    def _get_sdk_error_from_xml_response(self, resp):
+        request_id = resp.headers.get("x-obs-request-id")
+        sdk_error = exceptions.SdkError(request_id=request_id)
         try:
-            sdk_error_dict = json.loads(six.ensure_str(response_body))
-            if "error_code" in sdk_error_dict and "error_msg" in sdk_error_dict:
-                sdk_error = exceptions.SdkError(request_id, sdk_error_dict["error_code"],
-                                                sdk_error_dict["error_msg"])
-            elif "code" in sdk_error_dict and "message" in sdk_error_dict:
-                sdk_error = exceptions.SdkError(request_id, sdk_error_dict["code"],
-                                                sdk_error_dict["message"])
-            else:
-                for key in sdk_error_dict:
-                    if type(sdk_error_dict[key]) == dict and "error_code" in sdk_error_dict[key] \
-                            and "error_msg" in sdk_error_dict[key]:
-                        sdk_error = exceptions.SdkError(request_id, sdk_error_dict[key]["error_code"],
-                                                        sdk_error_dict[key]["error_msg"])
-                    if type(sdk_error_dict[key]) == dict and "code" in sdk_error_dict[key] and "message" in \
-                            sdk_error_dict[key]:
-                        sdk_error = exceptions.SdkError(request_id, sdk_error_dict[key]["code"],
-                                                        sdk_error_dict[key]["message"])
+            sdk_error_dict = XmlTransfer().to_dict(resp.text, ignore_root=True)
+            self._process_sdk_error_from_xml(sdk_error, sdk_error_dict)
         except Exception:
-            raise exceptions.ServerResponseException(response_status_code,
-                                                     exceptions.SdkError(error_msg=str(response_body)))
+            sdk_error.error_msg = six.ensure_str(resp.text)
+            raise exceptions.ServerResponseException(resp.status_code, sdk_error)
 
-        if sdk_error.error_msg is None or sdk_error.error_msg == "":
-            if self._exception_handler is not None:
-                sdk_error = self._exception_handler(response_body)
-        if sdk_error.error_msg is None or sdk_error.error_msg == "":
+        return self._handle_sdk_error_msg(sdk_error, resp.text)
+
+    @classmethod
+    def _process_sdk_error_from_xml(cls, sdk_error, sdk_error_dict):
+        if not sdk_error.request_id:
+            sdk_error.request_id = sdk_error_dict.get("RequestId")
+        if "Code" in sdk_error_dict and "Message" in sdk_error_dict:
+            sdk_error.error_code = sdk_error_dict.get("Code")
+            sdk_error.error_msg = sdk_error_dict.get("Message")
+
+    def _get_sdk_error_from_response(self, resp):
+        request_id = resp.headers.get("X-Request-Id")
+        sdk_error = exceptions.SdkError(request_id=request_id)
+        try:
+            sdk_error_dict = json.loads(resp.text)
+            self._process_sdk_error(sdk_error, sdk_error_dict)
+        except Exception:
+            sdk_error.error_msg = six.ensure_str(resp.text)
+            raise exceptions.ServerResponseException(resp.status_code, sdk_error)
+
+        return self._handle_sdk_error_msg(sdk_error, resp.text)
+
+    def _handle_sdk_error_msg(self, sdk_error, response_body):
+        if sdk_error.error_msg:
+            return sdk_error
+        if not sdk_error.error_msg and self._exception_handler:
+            sdk_error = self._exception_handler(response_body)
+        if not sdk_error.error_msg:
             sdk_error = exceptions.SdkError(error_msg=response_body)
-
-        sdk_error.request_id = request_id
         return sdk_error
+
+    @classmethod
+    def _process_sdk_error(cls, sdk_error, sdk_error_dict):
+        if "error_code" in sdk_error_dict and "error_msg" in sdk_error_dict:
+            sdk_error.error_code = sdk_error_dict.get("error_code")
+            sdk_error.error_msg = sdk_error_dict.get("error_msg")
+        elif "code" in sdk_error_dict and "message" in sdk_error_dict:
+            sdk_error.error_code = sdk_error_dict.get("code")
+            sdk_error.error_msg = sdk_error_dict.get("message")
+        else:
+            for value in sdk_error_dict.values():
+                if not isinstance(value, dict):
+                    continue
+                cls._process_sdk_error(sdk_error, value)

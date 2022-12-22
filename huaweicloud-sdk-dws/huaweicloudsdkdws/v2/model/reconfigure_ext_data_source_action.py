@@ -20,58 +20,58 @@ class ReconfigureExtDataSourceAction:
     sensitive_list = []
 
     openapi_types = {
-        'database': 'bool',
+        'reboot': 'bool',
         'agency': 'str'
     }
 
     attribute_map = {
-        'database': 'database',
+        'reboot': 'reboot',
         'agency': 'agency'
     }
 
-    def __init__(self, database=None, agency=None):
+    def __init__(self, reboot=None, agency=None):
         """ReconfigureExtDataSourceAction
 
         The model defined in huaweicloud sdk
 
-        :param database: 重启。
-        :type database: bool
+        :param reboot: 重启。
+        :type reboot: bool
         :param agency: 委托。
         :type agency: str
         """
         
         
 
-        self._database = None
+        self._reboot = None
         self._agency = None
         self.discriminator = None
 
-        if database is not None:
-            self.database = database
+        if reboot is not None:
+            self.reboot = reboot
         if agency is not None:
             self.agency = agency
 
     @property
-    def database(self):
-        """Gets the database of this ReconfigureExtDataSourceAction.
+    def reboot(self):
+        """Gets the reboot of this ReconfigureExtDataSourceAction.
 
         重启。
 
-        :return: The database of this ReconfigureExtDataSourceAction.
+        :return: The reboot of this ReconfigureExtDataSourceAction.
         :rtype: bool
         """
-        return self._database
+        return self._reboot
 
-    @database.setter
-    def database(self, database):
-        """Sets the database of this ReconfigureExtDataSourceAction.
+    @reboot.setter
+    def reboot(self, reboot):
+        """Sets the reboot of this ReconfigureExtDataSourceAction.
 
         重启。
 
-        :param database: The database of this ReconfigureExtDataSourceAction.
-        :type database: bool
+        :param reboot: The reboot of this ReconfigureExtDataSourceAction.
+        :type reboot: bool
         """
-        self._database = database
+        self._reboot = reboot
 
     @property
     def agency(self):

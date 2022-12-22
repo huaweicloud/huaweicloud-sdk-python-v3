@@ -26,7 +26,7 @@ class FlowExecutionBriefV2:
         'begin_time': 'datetime',
         'end_time': 'datetime',
         'last_update_time': 'datetime',
-        'create_by': 'str',
+        'created_by': 'str',
         'workflow_urn': 'str'
     }
 
@@ -37,11 +37,11 @@ class FlowExecutionBriefV2:
         'begin_time': 'begin_time',
         'end_time': 'end_time',
         'last_update_time': 'last_update_time',
-        'create_by': 'create_by',
+        'created_by': 'created_by',
         'workflow_urn': 'workflow_urn'
     }
 
-    def __init__(self, workflow_id=None, execution_id=None, status=None, begin_time=None, end_time=None, last_update_time=None, create_by=None, workflow_urn=None):
+    def __init__(self, workflow_id=None, execution_id=None, status=None, begin_time=None, end_time=None, last_update_time=None, created_by=None, workflow_urn=None):
         """FlowExecutionBriefV2
 
         The model defined in huaweicloud sdk
@@ -58,8 +58,8 @@ class FlowExecutionBriefV2:
         :type end_time: datetime
         :param last_update_time: 结束时间（格式为yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;,UTC时间）。
         :type last_update_time: datetime
-        :param create_by: 
-        :type create_by: str
+        :param created_by: 
+        :type created_by: str
         :param workflow_urn: 函数流执行urn
         :type workflow_urn: str
         """
@@ -72,7 +72,7 @@ class FlowExecutionBriefV2:
         self._begin_time = None
         self._end_time = None
         self._last_update_time = None
-        self._create_by = None
+        self._created_by = None
         self._workflow_urn = None
         self.discriminator = None
 
@@ -88,8 +88,8 @@ class FlowExecutionBriefV2:
             self.end_time = end_time
         if last_update_time is not None:
             self.last_update_time = last_update_time
-        if create_by is not None:
-            self.create_by = create_by
+        if created_by is not None:
+            self.created_by = created_by
         if workflow_urn is not None:
             self.workflow_urn = workflow_urn
 
@@ -226,22 +226,22 @@ class FlowExecutionBriefV2:
         self._last_update_time = last_update_time
 
     @property
-    def create_by(self):
-        """Gets the create_by of this FlowExecutionBriefV2.
+    def created_by(self):
+        """Gets the created_by of this FlowExecutionBriefV2.
 
-        :return: The create_by of this FlowExecutionBriefV2.
+        :return: The created_by of this FlowExecutionBriefV2.
         :rtype: str
         """
-        return self._create_by
+        return self._created_by
 
-    @create_by.setter
-    def create_by(self, create_by):
-        """Sets the create_by of this FlowExecutionBriefV2.
+    @created_by.setter
+    def created_by(self, created_by):
+        """Sets the created_by of this FlowExecutionBriefV2.
 
-        :param create_by: The create_by of this FlowExecutionBriefV2.
-        :type create_by: str
+        :param created_by: The created_by of this FlowExecutionBriefV2.
+        :type created_by: str
         """
-        self._create_by = create_by
+        self._created_by = created_by
 
     @property
     def workflow_urn(self):

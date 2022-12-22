@@ -20,7 +20,7 @@ class CreateDisasterRecoveryRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateDisasterRecovery'
+        'body': 'CreateDisasterRecoveryReq'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class CreateDisasterRecoveryRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CreateDisasterRecoveryRequest
-        :type body: :class:`huaweicloudsdkdws.v2.CreateDisasterRecovery`
+        :type body: :class:`huaweicloudsdkdws.v2.CreateDisasterRecoveryReq`
         """
         
         
@@ -49,7 +49,7 @@ class CreateDisasterRecoveryRequest:
         """Gets the body of this CreateDisasterRecoveryRequest.
 
         :return: The body of this CreateDisasterRecoveryRequest.
-        :rtype: :class:`huaweicloudsdkdws.v2.CreateDisasterRecovery`
+        :rtype: :class:`huaweicloudsdkdws.v2.CreateDisasterRecoveryReq`
         """
         return self._body
 
@@ -58,7 +58,7 @@ class CreateDisasterRecoveryRequest:
         """Sets the body of this CreateDisasterRecoveryRequest.
 
         :param body: The body of this CreateDisasterRecoveryRequest.
-        :type body: :class:`huaweicloudsdkdws.v2.CreateDisasterRecovery`
+        :type body: :class:`huaweicloudsdkdws.v2.CreateDisasterRecoveryReq`
         """
         self._body = body
 

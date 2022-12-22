@@ -323,6 +323,7 @@ from huaweicloudsdkief.v1.model.start_rule_request import StartRuleRequest
 from huaweicloudsdkief.v1.model.start_rule_response import StartRuleResponse
 from huaweicloudsdkief.v1.model.start_system_event_request import StartSystemEventRequest
 from huaweicloudsdkief.v1.model.start_system_event_response import StartSystemEventResponse
+from huaweicloudsdkief.v1.model.state_details import StateDetails
 from huaweicloudsdkief.v1.model.stop_batch_job_request import StopBatchJobRequest
 from huaweicloudsdkief.v1.model.stop_batch_job_response import StopBatchJobResponse
 from huaweicloudsdkief.v1.model.stop_rule_request import StopRuleRequest

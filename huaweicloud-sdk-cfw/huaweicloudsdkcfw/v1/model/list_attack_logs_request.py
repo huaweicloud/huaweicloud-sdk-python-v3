@@ -92,7 +92,7 @@ class ListAttackLogsRequest:
         :type offset: int
         :param limit: 每页显示个数
         :type limit: int
-        :param fw_instance_id: 防火墙实例ID
+        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
         :type fw_instance_id: str
         :param action: 动作0：permit,1：deny
         :type action: str
@@ -434,7 +434,7 @@ class ListAttackLogsRequest:
     def fw_instance_id(self):
         """Gets the fw_instance_id of this ListAttackLogsRequest.
 
-        防火墙实例ID
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
 
         :return: The fw_instance_id of this ListAttackLogsRequest.
         :rtype: str
@@ -445,7 +445,7 @@ class ListAttackLogsRequest:
     def fw_instance_id(self, fw_instance_id):
         """Sets the fw_instance_id of this ListAttackLogsRequest.
 
-        防火墙实例ID
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
 
         :param fw_instance_id: The fw_instance_id of this ListAttackLogsRequest.
         :type fw_instance_id: str

@@ -25,43 +25,58 @@ from mimetypes import MimeTypes
 class FormFile(object):
     TYPE = "file"
 
-    def __init__(self, f):
+    def __init__(self, f, content_type=None):
         """This class is used for the formdata.
 
-        :param f: An opened file, for example, f = open("demo.txt", "r")
-        :type f: stream
+        :param f: An opened file or file path, for example, f = open("demo.txt", "rb") or f = "/tmp/log.txt"
+        :type f: stream or str
+        :param content_type: the content type of the file
+        :type content_type: str
         """
-        self._file = f
+        self._file = self._init_file(f)
+        self._content_type = content_type
+
+    @classmethod
+    def _init_file(cls, f):
+        if isinstance(f, str):
+            if not os.path.isfile(f):
+                raise ValueError("invalid file path: " + f)
+            return open(f, "rb")
+
+        if f.mode != "rb":
+            f.close()
+            raise ValueError("invalid file mode, please open the file in 'rb' mode")
+        return f
 
     def close(self):
-        self._file.close()
+        if hasattr(self._file, "closed") and not self._file.closed:
+            self._file.close()
 
-    def get_path(self):
+    @property
+    def path(self):
         return self._file.name
 
-    def get_abs_path(self):
-        return os.path.abspath(self.get_path())
+    @property
+    def abs_path(self):
+        return os.path.abspath(self.path)
 
-    def get_file_name(self):
-        file_name = self._file.name
-        if "\\" in file_name:
-            return file_name.split("\\")[-1]
-        elif "/" in file_name:
-            return file_name.split("/")[-1]
+    @property
+    def name(self):
+        name = self._file.name
+        if "\\" in name:
+            return name.split("\\")[-1]
+        elif "/" in name:
+            return name.split("/")[-1]
         else:
-            return file_name
+            return name
+
+    @property
+    def content_type(self):
+        mime_type = MimeTypes().guess_type(self.abs_path)
+        return mime_type[0]
 
     def convert_to_file_tuple(self):
-        mime_type = MimeTypes().guess_type(self.get_abs_path())
-        file_name = self.get_file_name()
-        return (file_name, self._file, mime_type[0]) if mime_type[0] else (file_name, self._file)
+        return (self.name, self._file, str(self._content_type)) if self._content_type else (self.name, self._file)
 
     def __del__(self):
         self.close()
-
-
-
-
-
-
-

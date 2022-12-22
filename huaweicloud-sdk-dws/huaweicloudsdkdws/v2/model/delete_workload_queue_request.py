@@ -52,7 +52,8 @@ class DeleteWorkloadQueueRequest:
         self.discriminator = None
 
         self.cluster_id = cluster_id
-        self.logical_cluster_name = logical_cluster_name
+        if logical_cluster_name is not None:
+            self.logical_cluster_name = logical_cluster_name
         self.workload_queue_name = workload_queue_name
 
     @property

@@ -21,7 +21,7 @@ class CreateClusterWorkloadRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'body': 'WorkloadStatus'
+        'body': 'WorkloadStatusReq'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class CreateClusterWorkloadRequest:
         :param cluster_id: 集群ID
         :type cluster_id: str
         :param body: Body of the CreateClusterWorkloadRequest
-        :type body: :class:`huaweicloudsdkdws.v2.WorkloadStatus`
+        :type body: :class:`huaweicloudsdkdws.v2.WorkloadStatusReq`
         """
         
         
@@ -77,7 +77,7 @@ class CreateClusterWorkloadRequest:
         """Gets the body of this CreateClusterWorkloadRequest.
 
         :return: The body of this CreateClusterWorkloadRequest.
-        :rtype: :class:`huaweicloudsdkdws.v2.WorkloadStatus`
+        :rtype: :class:`huaweicloudsdkdws.v2.WorkloadStatusReq`
         """
         return self._body
 
@@ -86,7 +86,7 @@ class CreateClusterWorkloadRequest:
         """Sets the body of this CreateClusterWorkloadRequest.
 
         :param body: The body of this CreateClusterWorkloadRequest.
-        :type body: :class:`huaweicloudsdkdws.v2.WorkloadStatus`
+        :type body: :class:`huaweicloudsdkdws.v2.WorkloadStatusReq`
         """
         self._body = body
 

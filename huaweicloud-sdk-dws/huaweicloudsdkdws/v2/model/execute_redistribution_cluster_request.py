@@ -21,7 +21,7 @@ class ExecuteRedistributionClusterRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'body': 'object'
+        'body': 'RedistributionReq'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class ExecuteRedistributionClusterRequest:
         :param cluster_id: 集群ID
         :type cluster_id: str
         :param body: Body of the ExecuteRedistributionClusterRequest
-        :type body: :class:`huaweicloudsdkdws.v2.object`
+        :type body: :class:`huaweicloudsdkdws.v2.RedistributionReq`
         """
         
         
@@ -77,7 +77,7 @@ class ExecuteRedistributionClusterRequest:
         """Gets the body of this ExecuteRedistributionClusterRequest.
 
         :return: The body of this ExecuteRedistributionClusterRequest.
-        :rtype: :class:`huaweicloudsdkdws.v2.object`
+        :rtype: :class:`huaweicloudsdkdws.v2.RedistributionReq`
         """
         return self._body
 
@@ -86,7 +86,7 @@ class ExecuteRedistributionClusterRequest:
         """Sets the body of this ExecuteRedistributionClusterRequest.
 
         :param body: The body of this ExecuteRedistributionClusterRequest.
-        :type body: :class:`huaweicloudsdkdws.v2.object`
+        :type body: :class:`huaweicloudsdkdws.v2.RedistributionReq`
         """
         self._body = body
 

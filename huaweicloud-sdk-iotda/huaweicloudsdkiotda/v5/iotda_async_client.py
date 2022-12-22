@@ -2288,6 +2288,182 @@ class IoTDAAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def search_devices_async(self, request):
+        """灵活搜索设备列表
+
+        #### 接口说明
+        
+        应用服务器使用SQL语句调用该接口，灵活的搜索所需要的设备资源列表
+        
+        #### 限制
+        
+        - 仅**标准版实例、企业版实例**支持该接口调用，基础版不支持。
+        - 单账号调用该接口的 TPS 限制最大为1/S(每秒1次请求数)
+        
+        #### 类SQL语法使用说明
+        
+        类SQL语句有select、from、where(可选)、order by(可选)、limit子句(可选)组成，长度限制为400个字符。子句里的内容大小写敏感，SQL语句的关键字大小写不敏感。
+        
+        示例：
+        
+        &#x60;&#x60;&#x60;
+        select * from device where device_id &#x3D; &#39;as********&#39; limit 0,5
+        &#x60;&#x60;&#x60;
+        
+        ##### SELECT子句
+        
+        &#x60;&#x60;&#x60;
+        select [field]/[count(*)/count(1)] from device
+        &#x60;&#x60;&#x60;
+        
+        其中field为需要获取的字段，请参考响应参数字段名称，也可填*，获取所有字段。
+        
+        如果需要统计搜索的设备个数，请填count(*)或者count(1).
+        
+        ##### FROM子句
+        
+        &#x60;&#x60;&#x60;
+        from device
+        &#x60;&#x60;&#x60;
+        
+        from后为要查询的资源名，当前支持\&quot;device\&quot;
+        
+        ##### WHERE子句(可选)
+        
+        &#x60;&#x60;&#x60;
+        WHERE [condition1] AND [condition2]
+        &#x60;&#x60;&#x60;
+        
+        最多支持5个condition，不支持嵌套；支持的检索字段请参见下面的**搜索条件字段说明**和**支持的运算符**章节
+        
+        连接词支持AND、OR，优先级参考标准SQL语法，默认AND优先级高于OR。
+        
+        ##### LIMIT子句(可选)
+        
+        &#x60;&#x60;&#x60;
+        limit [offset,] rows
+        &#x60;&#x60;&#x60;
+        
+        offset标识搜索的偏移量，rows标识返回搜索结果的最大行数，例如：
+        
+        - limit n ;示例(select * from device limit 10)
+        
+          最大返回n条结果数据
+          
+        - limit m,n; 示例(select * from device limit 20,10) 
+          搜索偏移量为m，最大返回n条结果数据
+        
+        ###### 限制
+        
+         offset 最大 500， rows最大50，如果不填写limit子句，默认为limit 10
+        
+        ##### ORDER BY子句(可选)
+        
+        用于实现自定义排序，当前支持自定义排序的字段为：\&quot;marker\&quot;。
+        
+        &#x60;&#x60;&#x60;
+        order by marker [asc]/[desc]
+        &#x60;&#x60;&#x60;
+        
+        子句不填写时默认逻辑为随机排序
+        
+        #### 搜索条件字段说明
+        
+        | 字段名      | 类型   | 说明             | 取值范围                                                     |
+        | :---------- | :----- | :--------------- | :----------------------------------------------------------- |
+        | app_id      | string | 资源空间ID       | 长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。 |
+        | device_id   | string | 设备ID           | 长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合，建议不少于4个字符。 |
+        | gateway_id  | string | 网关ID           | 长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。 |
+        | product_id  | string | 设备关联的产品ID | 长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。 |
+        | device_name | string | 设备名称         | 长度不超过256，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-等字符的组合，建议不少于4个字符。 |
+        | node_id     | string | 设备标识码       | 长度不超过64，只允许字母、数字、下划线（_）、连接符（-）的组合，建议不少于4个字符 |
+        | status      | string | 设备的状态       | ONLINE(在线)、OFFLINE(离线)、ABNORMAL(异常)、INACTIVE(未激活)、FROZEN(冻结) |
+        | node_type   | string | 设备节点类型     | GATEWAY(直连设备或网关)、ENDPOINT(非直连设备)                |
+        | tag_key     | string | 标签键           | 长度不超过64，只允许中文、字母、数字、以及_.-等字符的组合。  |
+        | tag_value   | string | 标签值           | 长度不超过128，只允许中文、字母、数字、以及_.-等字符的组合。 |
+        | sw_version  | string | 软件版本         | 长度不超过64，只允许字母、数字、下划线（_）、连接符（-）、英文点(.)的组合。 |
+        | fw_version  | string | 固件版本         | 长度不超过64，只允许字母、数字、下划线（_）、连接符（-）、英文点(.)的组合。 |
+        | create_time | string | 设备注册时间     | 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS&#39;Z&#39;，如：2015-06-06T12:10:10.000Z |
+        | marker      | string | 结果记录ID       | 长度为24的十六进制字符串，如ffffffffffffffffffffffff         |
+        
+        #### 支持的运算符
+        
+        | 运算符  | 支持的字段                               |
+        | ------- | ---------------------------------------- |
+        | &#x3D;       | 所有                                     |
+        | !&#x3D;      | 所有                                     |
+        | &gt;       | create_time、marker                      |
+        | &lt;       | create_time、marker                      |
+        | like    | device_name、node_id、tag_key、tag_value |
+        | in      | 所有                                     |
+        | not  in | 所有                                     |
+        
+        #### SQL 限制
+        
+        - like: 只支持前缀匹配，不支持后缀匹配或者通配符匹配。前缀匹配不得少于4个字符，且不能包含任何特殊字符(只允许中文、字母、数字、下划线（_）、连接符（-）). 前缀后必须跟上\&quot;%\&quot;结尾。
+        - 不支持除了count(*)/count(1)以外的其他任何函数。
+        - 不支持其他SQL用法，如嵌套SQL、union、join、别名(Alias)等用法
+        - SQL长度限制为400个字符，单个请求条件最大支持5个。
+        - 不支持\&quot;null\&quot;和空字符串等条件值匹配
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SearchDevices
+        :type request: :class:`huaweicloudsdkiotda.v5.SearchDevicesRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.SearchDevicesResponse`
+        """
+        return self.search_devices_with_http_info(request)
+
+    def search_devices_with_http_info(self, request):
+        all_params = ['search_devices_request_body', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/search/query-devices',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SearchDevicesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_device_async(self, request):
         """查询设备
 

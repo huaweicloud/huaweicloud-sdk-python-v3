@@ -32,6 +32,8 @@ class CreatePostPaidInstanceReq:
         'product_id': 'str',
         'ssl_enable': 'bool',
         'storage_spec_code': 'str',
+        'enterprise_project_id': 'str',
+        'enable_acl': 'bool',
         'ipv6_enable': 'bool',
         'enable_publicip': 'bool',
         'publicip_id': 'str',
@@ -51,13 +53,15 @@ class CreatePostPaidInstanceReq:
         'product_id': 'product_id',
         'ssl_enable': 'ssl_enable',
         'storage_spec_code': 'storage_spec_code',
+        'enterprise_project_id': 'enterprise_project_id',
+        'enable_acl': 'enable_acl',
         'ipv6_enable': 'ipv6_enable',
         'enable_publicip': 'enable_publicip',
         'publicip_id': 'publicip_id',
         'broker_num': 'broker_num'
     }
 
-    def __init__(self, name=None, description=None, engine=None, engine_version=None, storage_space=None, vpc_id=None, subnet_id=None, security_group_id=None, available_zones=None, product_id=None, ssl_enable=None, storage_spec_code=None, ipv6_enable=None, enable_publicip=None, publicip_id=None, broker_num=None):
+    def __init__(self, name=None, description=None, engine=None, engine_version=None, storage_space=None, vpc_id=None, subnet_id=None, security_group_id=None, available_zones=None, product_id=None, ssl_enable=None, storage_spec_code=None, enterprise_project_id=None, enable_acl=None, ipv6_enable=None, enable_publicip=None, publicip_id=None, broker_num=None):
         """CreatePostPaidInstanceReq
 
         The model defined in huaweicloud sdk
@@ -86,6 +90,10 @@ class CreatePostPaidInstanceReq:
         :type ssl_enable: bool
         :param storage_spec_code: 存储IO规格。   - dms.physical.storage.high.v2: 高IO类型磁盘   - dms.physical.storage.ultra.v2: 超高IO类型磁盘
         :type storage_spec_code: str
+        :param enterprise_project_id: 企业项目ID。若为企业项目帐号，该参数必填。
+        :type enterprise_project_id: str
+        :param enable_acl: 是否开启访问控制列表。
+        :type enable_acl: bool
         :param ipv6_enable: 是否支持IPV6。   - true: 支持   - false：不支持
         :type ipv6_enable: bool
         :param enable_publicip: 是否开启公网访问功能。默认不开启公网。 - true：开启 - false：不开启
@@ -110,6 +118,8 @@ class CreatePostPaidInstanceReq:
         self._product_id = None
         self._ssl_enable = None
         self._storage_spec_code = None
+        self._enterprise_project_id = None
+        self._enable_acl = None
         self._ipv6_enable = None
         self._enable_publicip = None
         self._publicip_id = None
@@ -130,6 +140,10 @@ class CreatePostPaidInstanceReq:
         if ssl_enable is not None:
             self.ssl_enable = ssl_enable
         self.storage_spec_code = storage_spec_code
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if enable_acl is not None:
+            self.enable_acl = enable_acl
         if ipv6_enable is not None:
             self.ipv6_enable = ipv6_enable
         if enable_publicip is not None:
@@ -401,6 +415,50 @@ class CreatePostPaidInstanceReq:
         :type storage_spec_code: str
         """
         self._storage_spec_code = storage_spec_code
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this CreatePostPaidInstanceReq.
+
+        企业项目ID。若为企业项目帐号，该参数必填。
+
+        :return: The enterprise_project_id of this CreatePostPaidInstanceReq.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this CreatePostPaidInstanceReq.
+
+        企业项目ID。若为企业项目帐号，该参数必填。
+
+        :param enterprise_project_id: The enterprise_project_id of this CreatePostPaidInstanceReq.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def enable_acl(self):
+        """Gets the enable_acl of this CreatePostPaidInstanceReq.
+
+        是否开启访问控制列表。
+
+        :return: The enable_acl of this CreatePostPaidInstanceReq.
+        :rtype: bool
+        """
+        return self._enable_acl
+
+    @enable_acl.setter
+    def enable_acl(self, enable_acl):
+        """Sets the enable_acl of this CreatePostPaidInstanceReq.
+
+        是否开启访问控制列表。
+
+        :param enable_acl: The enable_acl of this CreatePostPaidInstanceReq.
+        :type enable_acl: bool
+        """
+        self._enable_acl = enable_acl
 
     @property
     def ipv6_enable(self):
