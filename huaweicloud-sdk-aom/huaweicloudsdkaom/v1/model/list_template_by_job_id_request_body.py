@@ -42,9 +42,9 @@ class ListTemplateByJobIdRequestBody:
 
         :param name: 方案名称
         :type name: str
-        :param page_num: 当前页，查询的当前页，page_num为正整数，不能是0和负数，当输入参数为负数，0和大于1000，自动修正参数为1，默认值是1（用户不传，值是1） 当前页，查询的当前页，page_num为正整数，不能是0和负数，当输入参数为负数，0和大于1000，自动修正参数为1，默认值是1（用户不传，值是1）
+        :param page_num: page_num为正整数
         :type page_num: int
-        :param page_size: 每页显示的条数，每页查询的总条数，page_size为正整数，不能是0和负数，当输入参数为负数，0和大于101，自动修正参数为10，默认值是10（用户不传时，值是10） 每页显示的条数，每页查询的总条数，page_size为正整数，不能是0和负数，当输入参数为负数，0和大于101，自动修正参数为10，默认值是10（用户不传时，值是10）
+        :param page_size: 每页显示的条数
         :type page_size: int
         :param order_by_column: 需要排序的字段(默认为更新时间),支持字段有create_time
         :type order_by_column: str
@@ -67,8 +67,7 @@ class ListTemplateByJobIdRequestBody:
             self.page_num = page_num
         if page_size is not None:
             self.page_size = page_size
-        if order_by_column is not None:
-            self.order_by_column = order_by_column
+        self.order_by_column = order_by_column
         if sort_order is not None:
             self.sort_order = sort_order
 
@@ -98,7 +97,7 @@ class ListTemplateByJobIdRequestBody:
     def page_num(self):
         """Gets the page_num of this ListTemplateByJobIdRequestBody.
 
-        当前页，查询的当前页，page_num为正整数，不能是0和负数，当输入参数为负数，0和大于1000，自动修正参数为1，默认值是1（用户不传，值是1） 当前页，查询的当前页，page_num为正整数，不能是0和负数，当输入参数为负数，0和大于1000，自动修正参数为1，默认值是1（用户不传，值是1）
+        page_num为正整数
 
         :return: The page_num of this ListTemplateByJobIdRequestBody.
         :rtype: int
@@ -109,7 +108,7 @@ class ListTemplateByJobIdRequestBody:
     def page_num(self, page_num):
         """Sets the page_num of this ListTemplateByJobIdRequestBody.
 
-        当前页，查询的当前页，page_num为正整数，不能是0和负数，当输入参数为负数，0和大于1000，自动修正参数为1，默认值是1（用户不传，值是1） 当前页，查询的当前页，page_num为正整数，不能是0和负数，当输入参数为负数，0和大于1000，自动修正参数为1，默认值是1（用户不传，值是1）
+        page_num为正整数
 
         :param page_num: The page_num of this ListTemplateByJobIdRequestBody.
         :type page_num: int
@@ -120,7 +119,7 @@ class ListTemplateByJobIdRequestBody:
     def page_size(self):
         """Gets the page_size of this ListTemplateByJobIdRequestBody.
 
-        每页显示的条数，每页查询的总条数，page_size为正整数，不能是0和负数，当输入参数为负数，0和大于101，自动修正参数为10，默认值是10（用户不传时，值是10） 每页显示的条数，每页查询的总条数，page_size为正整数，不能是0和负数，当输入参数为负数，0和大于101，自动修正参数为10，默认值是10（用户不传时，值是10）
+        每页显示的条数
 
         :return: The page_size of this ListTemplateByJobIdRequestBody.
         :rtype: int
@@ -131,7 +130,7 @@ class ListTemplateByJobIdRequestBody:
     def page_size(self, page_size):
         """Sets the page_size of this ListTemplateByJobIdRequestBody.
 
-        每页显示的条数，每页查询的总条数，page_size为正整数，不能是0和负数，当输入参数为负数，0和大于101，自动修正参数为10，默认值是10（用户不传时，值是10） 每页显示的条数，每页查询的总条数，page_size为正整数，不能是0和负数，当输入参数为负数，0和大于101，自动修正参数为10，默认值是10（用户不传时，值是10）
+        每页显示的条数
 
         :param page_size: The page_size of this ListTemplateByJobIdRequestBody.
         :type page_size: int

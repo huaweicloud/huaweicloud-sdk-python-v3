@@ -36,7 +36,7 @@ class SearchTemplateByIdRequest:
 
         :param template_id: 方案id。
         :type template_id: str
-        :param share_type: 模板共享类型，默认为private。
+        :param share_type: 模板共享类型，默认为private。可选public private
         :type share_type: str
         """
         
@@ -47,8 +47,7 @@ class SearchTemplateByIdRequest:
         self.discriminator = None
 
         self.template_id = template_id
-        if share_type is not None:
-            self.share_type = share_type
+        self.share_type = share_type
 
     @property
     def template_id(self):
@@ -76,7 +75,7 @@ class SearchTemplateByIdRequest:
     def share_type(self):
         """Gets the share_type of this SearchTemplateByIdRequest.
 
-        模板共享类型，默认为private。
+        模板共享类型，默认为private。可选public private
 
         :return: The share_type of this SearchTemplateByIdRequest.
         :rtype: str
@@ -87,7 +86,7 @@ class SearchTemplateByIdRequest:
     def share_type(self, share_type):
         """Sets the share_type of this SearchTemplateByIdRequest.
 
-        模板共享类型，默认为private。
+        模板共享类型，默认为private。可选public private
 
         :param share_type: The share_type of this SearchTemplateByIdRequest.
         :type share_type: str

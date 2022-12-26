@@ -24,7 +24,7 @@ class ChangeInstanceOrderResponse(SdkResponse):
     }
 
     attribute_map = {
-        'order_id': 'order_id'
+        'order_id': 'orderId'
     }
 
     def __init__(self, order_id=None):

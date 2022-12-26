@@ -20,94 +20,108 @@ class ChangeInstanceNetworkResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'type': 'str',
-        'security_groups': 'str',
+        'status': 'str',
+        'security_grp_status': 'str',
         'firewall_status': 'bool',
+        'public_eip_status': 'bool',
+        'nics': 'bool',
         'public_eip_statu': 'bool'
     }
 
     attribute_map = {
-        'type': 'type',
-        'security_groups': 'security_groups',
+        'status': 'status',
+        'security_grp_status': 'security_grp_status',
         'firewall_status': 'firewall_status',
+        'public_eip_status': 'public_eip_status',
+        'nics': 'nics',
         'public_eip_statu': 'public_eip_statu'
     }
 
-    def __init__(self, type=None, security_groups=None, firewall_status=None, public_eip_statu=None):
+    def __init__(self, status=None, security_grp_status=None, firewall_status=None, public_eip_status=None, nics=None, public_eip_statu=None):
         """ChangeInstanceNetworkResponse
 
         The model defined in huaweicloud sdk
 
-        :param type: 状态
-        :type type: str
-        :param security_groups: 安全组
-        :type security_groups: str
+        :param status: 状态
+        :type status: str
+        :param security_grp_status: 安全组
+        :type security_grp_status: str
         :param firewall_status: 防火墙状态
         :type firewall_status: bool
-        :param public_eip_statu: 公共EIP状态
+        :param public_eip_status: 公共EIP状态
+        :type public_eip_status: bool
+        :param nics: 防火墙状态(兼容)
+        :type nics: bool
+        :param public_eip_statu: 公共EIP状态(兼容)
         :type public_eip_statu: bool
         """
         
         super(ChangeInstanceNetworkResponse, self).__init__()
 
-        self._type = None
-        self._security_groups = None
+        self._status = None
+        self._security_grp_status = None
         self._firewall_status = None
+        self._public_eip_status = None
+        self._nics = None
         self._public_eip_statu = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
-        if security_groups is not None:
-            self.security_groups = security_groups
+        if status is not None:
+            self.status = status
+        if security_grp_status is not None:
+            self.security_grp_status = security_grp_status
         if firewall_status is not None:
             self.firewall_status = firewall_status
+        if public_eip_status is not None:
+            self.public_eip_status = public_eip_status
+        if nics is not None:
+            self.nics = nics
         if public_eip_statu is not None:
             self.public_eip_statu = public_eip_statu
 
     @property
-    def type(self):
-        """Gets the type of this ChangeInstanceNetworkResponse.
+    def status(self):
+        """Gets the status of this ChangeInstanceNetworkResponse.
 
         状态
 
-        :return: The type of this ChangeInstanceNetworkResponse.
+        :return: The status of this ChangeInstanceNetworkResponse.
         :rtype: str
         """
-        return self._type
+        return self._status
 
-    @type.setter
-    def type(self, type):
-        """Sets the type of this ChangeInstanceNetworkResponse.
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ChangeInstanceNetworkResponse.
 
         状态
 
-        :param type: The type of this ChangeInstanceNetworkResponse.
-        :type type: str
+        :param status: The status of this ChangeInstanceNetworkResponse.
+        :type status: str
         """
-        self._type = type
+        self._status = status
 
     @property
-    def security_groups(self):
-        """Gets the security_groups of this ChangeInstanceNetworkResponse.
+    def security_grp_status(self):
+        """Gets the security_grp_status of this ChangeInstanceNetworkResponse.
 
         安全组
 
-        :return: The security_groups of this ChangeInstanceNetworkResponse.
+        :return: The security_grp_status of this ChangeInstanceNetworkResponse.
         :rtype: str
         """
-        return self._security_groups
+        return self._security_grp_status
 
-    @security_groups.setter
-    def security_groups(self, security_groups):
-        """Sets the security_groups of this ChangeInstanceNetworkResponse.
+    @security_grp_status.setter
+    def security_grp_status(self, security_grp_status):
+        """Sets the security_grp_status of this ChangeInstanceNetworkResponse.
 
         安全组
 
-        :param security_groups: The security_groups of this ChangeInstanceNetworkResponse.
-        :type security_groups: str
+        :param security_grp_status: The security_grp_status of this ChangeInstanceNetworkResponse.
+        :type security_grp_status: str
         """
-        self._security_groups = security_groups
+        self._security_grp_status = security_grp_status
 
     @property
     def firewall_status(self):
@@ -132,10 +146,54 @@ class ChangeInstanceNetworkResponse(SdkResponse):
         self._firewall_status = firewall_status
 
     @property
+    def public_eip_status(self):
+        """Gets the public_eip_status of this ChangeInstanceNetworkResponse.
+
+        公共EIP状态
+
+        :return: The public_eip_status of this ChangeInstanceNetworkResponse.
+        :rtype: bool
+        """
+        return self._public_eip_status
+
+    @public_eip_status.setter
+    def public_eip_status(self, public_eip_status):
+        """Sets the public_eip_status of this ChangeInstanceNetworkResponse.
+
+        公共EIP状态
+
+        :param public_eip_status: The public_eip_status of this ChangeInstanceNetworkResponse.
+        :type public_eip_status: bool
+        """
+        self._public_eip_status = public_eip_status
+
+    @property
+    def nics(self):
+        """Gets the nics of this ChangeInstanceNetworkResponse.
+
+        防火墙状态(兼容)
+
+        :return: The nics of this ChangeInstanceNetworkResponse.
+        :rtype: bool
+        """
+        return self._nics
+
+    @nics.setter
+    def nics(self, nics):
+        """Sets the nics of this ChangeInstanceNetworkResponse.
+
+        防火墙状态(兼容)
+
+        :param nics: The nics of this ChangeInstanceNetworkResponse.
+        :type nics: bool
+        """
+        self._nics = nics
+
+    @property
     def public_eip_statu(self):
         """Gets the public_eip_statu of this ChangeInstanceNetworkResponse.
 
-        公共EIP状态
+        公共EIP状态(兼容)
 
         :return: The public_eip_statu of this ChangeInstanceNetworkResponse.
         :rtype: bool
@@ -146,7 +204,7 @@ class ChangeInstanceNetworkResponse(SdkResponse):
     def public_eip_statu(self, public_eip_statu):
         """Sets the public_eip_statu of this ChangeInstanceNetworkResponse.
 
-        公共EIP状态
+        公共EIP状态(兼容)
 
         :param public_eip_statu: The public_eip_statu of this ChangeInstanceNetworkResponse.
         :type public_eip_statu: bool

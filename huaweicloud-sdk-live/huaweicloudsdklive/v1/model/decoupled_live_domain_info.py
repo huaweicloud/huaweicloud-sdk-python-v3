@@ -29,7 +29,9 @@ class DecoupledLiveDomainInfo:
         'related_domain': 'str',
         'create_time': 'datetime',
         'status_describe': 'str',
-        'service_area': 'str'
+        'service_area': 'str',
+        'enterprise_project_id': 'str',
+        'is_ipv6': 'bool'
     }
 
     attribute_map = {
@@ -42,10 +44,12 @@ class DecoupledLiveDomainInfo:
         'related_domain': 'related_domain',
         'create_time': 'create_time',
         'status_describe': 'status_describe',
-        'service_area': 'service_area'
+        'service_area': 'service_area',
+        'enterprise_project_id': 'enterprise_project_id',
+        'is_ipv6': 'is_ipv6'
     }
 
-    def __init__(self, domain=None, domain_type=None, vendor=None, region=None, domain_cname=None, status=None, related_domain=None, create_time=None, status_describe=None, service_area=None):
+    def __init__(self, domain=None, domain_type=None, vendor=None, region=None, domain_cname=None, status=None, related_domain=None, create_time=None, status_describe=None, service_area=None, enterprise_project_id=None, is_ipv6=None):
         """DecoupledLiveDomainInfo
 
         The model defined in huaweicloud sdk
@@ -70,6 +74,10 @@ class DecoupledLiveDomainInfo:
         :type status_describe: str
         :param service_area: 域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 
         :type service_area: str
+        :param enterprise_project_id: 企业项目ID
+        :type enterprise_project_id: str
+        :param is_ipv6: IPV6开关是否开启，默认关闭，true为开启；false或空为关闭
+        :type is_ipv6: bool
         """
         
         
@@ -84,6 +92,8 @@ class DecoupledLiveDomainInfo:
         self._create_time = None
         self._status_describe = None
         self._service_area = None
+        self._enterprise_project_id = None
+        self._is_ipv6 = None
         self.discriminator = None
 
         self.domain = domain
@@ -98,6 +108,10 @@ class DecoupledLiveDomainInfo:
             self.status_describe = status_describe
         if service_area is not None:
             self.service_area = service_area
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if is_ipv6 is not None:
+            self.is_ipv6 = is_ipv6
 
     @property
     def domain(self):
@@ -318,6 +332,50 @@ class DecoupledLiveDomainInfo:
         :type service_area: str
         """
         self._service_area = service_area
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this DecoupledLiveDomainInfo.
+
+        企业项目ID
+
+        :return: The enterprise_project_id of this DecoupledLiveDomainInfo.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this DecoupledLiveDomainInfo.
+
+        企业项目ID
+
+        :param enterprise_project_id: The enterprise_project_id of this DecoupledLiveDomainInfo.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def is_ipv6(self):
+        """Gets the is_ipv6 of this DecoupledLiveDomainInfo.
+
+        IPV6开关是否开启，默认关闭，true为开启；false或空为关闭
+
+        :return: The is_ipv6 of this DecoupledLiveDomainInfo.
+        :rtype: bool
+        """
+        return self._is_ipv6
+
+    @is_ipv6.setter
+    def is_ipv6(self, is_ipv6):
+        """Sets the is_ipv6 of this DecoupledLiveDomainInfo.
+
+        IPV6开关是否开启，默认关闭，true为开启；false或空为关闭
+
+        :param is_ipv6: The is_ipv6 of this DecoupledLiveDomainInfo.
+        :type is_ipv6: bool
+        """
+        self._is_ipv6 = is_ipv6
 
     def to_dict(self):
         """Returns the model properties as a dict"""

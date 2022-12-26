@@ -66,10 +66,8 @@ class VideoInfo:
             self.width = width
         if height is not None:
             self.height = height
-        if bitrate is not None:
-            self.bitrate = bitrate
-        if frame_rate is not None:
-            self.frame_rate = frame_rate
+        self.bitrate = bitrate
+        self.frame_rate = frame_rate
 
     @property
     def quality(self):

@@ -26,7 +26,8 @@ class ResponseGroup:
         'group_name': 'str',
         'id': 'str',
         'rule_names': 'str',
-        'task_names': 'str'
+        'task_names': 'str',
+        'is_default': 'bool'
     }
 
     attribute_map = {
@@ -36,10 +37,11 @@ class ResponseGroup:
         'group_name': 'group_name',
         'id': 'id',
         'rule_names': 'rule_names',
-        'task_names': 'task_names'
+        'task_names': 'task_names',
+        'is_default': 'is_default'
     }
 
-    def __init__(self, category=None, delete_allowed=None, group_desc=None, group_name=None, id=None, rule_names=None, task_names=None):
+    def __init__(self, category=None, delete_allowed=None, group_desc=None, group_name=None, id=None, rule_names=None, task_names=None, is_default=None):
         """ResponseGroup
 
         The model defined in huaweicloud sdk
@@ -58,6 +60,8 @@ class ResponseGroup:
         :type rule_names: str
         :param task_names: 扫描任务名称
         :type task_names: str
+        :param is_default: 是否为默认规则组
+        :type is_default: bool
         """
         
         
@@ -69,6 +73,7 @@ class ResponseGroup:
         self._id = None
         self._rule_names = None
         self._task_names = None
+        self._is_default = None
         self.discriminator = None
 
         if category is not None:
@@ -85,6 +90,8 @@ class ResponseGroup:
             self.rule_names = rule_names
         if task_names is not None:
             self.task_names = task_names
+        if is_default is not None:
+            self.is_default = is_default
 
     @property
     def category(self):
@@ -239,6 +246,28 @@ class ResponseGroup:
         :type task_names: str
         """
         self._task_names = task_names
+
+    @property
+    def is_default(self):
+        """Gets the is_default of this ResponseGroup.
+
+        是否为默认规则组
+
+        :return: The is_default of this ResponseGroup.
+        :rtype: bool
+        """
+        return self._is_default
+
+    @is_default.setter
+    def is_default(self, is_default):
+        """Sets the is_default of this ResponseGroup.
+
+        是否为默认规则组
+
+        :param is_default: The is_default of this ResponseGroup.
+        :type is_default: bool
+        """
+        self._is_default = is_default
 
     def to_dict(self):
         """Returns the model properties as a dict"""

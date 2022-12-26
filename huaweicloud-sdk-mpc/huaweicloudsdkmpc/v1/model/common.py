@@ -56,9 +56,12 @@ class Common:
         self._pack_type = None
         self.discriminator = None
 
-        self.pvc = pvc
-        self.hls_interval = hls_interval
-        self.dash_interval = dash_interval
+        if pvc is not None:
+            self.pvc = pvc
+        if hls_interval is not None:
+            self.hls_interval = hls_interval
+        if dash_interval is not None:
+            self.dash_interval = dash_interval
         self.pack_type = pack_type
 
     @property

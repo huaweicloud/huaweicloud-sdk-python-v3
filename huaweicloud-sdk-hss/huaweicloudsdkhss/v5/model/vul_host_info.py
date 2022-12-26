@@ -21,7 +21,6 @@ class VulHostInfo:
 
     openapi_types = {
         'host_id': 'str',
-        'repair_necessity': 'str',
         'severity_level': 'str',
         'host_name': 'str',
         'host_ip': 'str',
@@ -33,7 +32,6 @@ class VulHostInfo:
 
     attribute_map = {
         'host_id': 'host_id',
-        'repair_necessity': 'repair_necessity',
         'severity_level': 'severity_level',
         'host_name': 'host_name',
         'host_ip': 'host_ip',
@@ -43,15 +41,13 @@ class VulHostInfo:
         'repair_cmd': 'repair_cmd'
     }
 
-    def __init__(self, host_id=None, repair_necessity=None, severity_level=None, host_name=None, host_ip=None, cve_num=None, cve_id_list=None, status=None, repair_cmd=None):
+    def __init__(self, host_id=None, severity_level=None, host_name=None, host_ip=None, cve_num=None, cve_id_list=None, status=None, repair_cmd=None):
         """VulHostInfo
 
         The model defined in huaweicloud sdk
 
         :param host_id: 主机id
         :type host_id: str
-        :param repair_necessity: 修复紧急度   - Critical : 高危   - High : 中危   - Medium : 中危   - Low : 低危
-        :type repair_necessity: str
         :param severity_level: 危险程度   - Critical : 高危   - High : 中危   - Medium : 中危   - Low : 低危
         :type severity_level: str
         :param host_name: 受影响资产名称
@@ -71,7 +67,6 @@ class VulHostInfo:
         
 
         self._host_id = None
-        self._repair_necessity = None
         self._severity_level = None
         self._host_name = None
         self._host_ip = None
@@ -83,8 +78,6 @@ class VulHostInfo:
 
         if host_id is not None:
             self.host_id = host_id
-        if repair_necessity is not None:
-            self.repair_necessity = repair_necessity
         if severity_level is not None:
             self.severity_level = severity_level
         if host_name is not None:
@@ -121,28 +114,6 @@ class VulHostInfo:
         :type host_id: str
         """
         self._host_id = host_id
-
-    @property
-    def repair_necessity(self):
-        """Gets the repair_necessity of this VulHostInfo.
-
-        修复紧急度   - Critical : 高危   - High : 中危   - Medium : 中危   - Low : 低危
-
-        :return: The repair_necessity of this VulHostInfo.
-        :rtype: str
-        """
-        return self._repair_necessity
-
-    @repair_necessity.setter
-    def repair_necessity(self, repair_necessity):
-        """Sets the repair_necessity of this VulHostInfo.
-
-        修复紧急度   - Critical : 高危   - High : 中危   - Medium : 中危   - Low : 低危
-
-        :param repair_necessity: The repair_necessity of this VulHostInfo.
-        :type repair_necessity: str
-        """
-        self._repair_necessity = repair_necessity
 
     @property
     def severity_level(self):

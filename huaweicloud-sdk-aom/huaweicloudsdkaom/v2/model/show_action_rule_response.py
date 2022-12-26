@@ -58,7 +58,7 @@ class ShowActionRuleResponse(SdkResponse):
         :type user_name: str
         :param desc: 规则描述
         :type desc: str
-        :param type: 规则类型。1：通知，2：用户
+        :param type: 规则类型。\&quot;1\&quot;：通知，\&quot;2\&quot;：用户
         :type type: str
         :param notification_template: 消息模板
         :type notification_template: str
@@ -199,7 +199,7 @@ class ShowActionRuleResponse(SdkResponse):
     def type(self):
         """Gets the type of this ShowActionRuleResponse.
 
-        规则类型。1：通知，2：用户
+        规则类型。\"1\"：通知，\"2\"：用户
 
         :return: The type of this ShowActionRuleResponse.
         :rtype: str
@@ -210,7 +210,7 @@ class ShowActionRuleResponse(SdkResponse):
     def type(self, type):
         """Sets the type of this ShowActionRuleResponse.
 
-        规则类型。1：通知，2：用户
+        规则类型。\"1\"：通知，\"2\"：用户
 
         :param type: The type of this ShowActionRuleResponse.
         :type type: str

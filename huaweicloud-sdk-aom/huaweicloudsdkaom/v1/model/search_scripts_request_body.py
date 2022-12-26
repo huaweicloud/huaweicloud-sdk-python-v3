@@ -29,7 +29,6 @@ class SearchScriptsRequestBody:
         'project_id': 'str',
         'order_by_column': 'str',
         'sort_order': 'str',
-        'page_total': 'str',
         'enterprise_project_id': 'str'
     }
 
@@ -43,35 +42,32 @@ class SearchScriptsRequestBody:
         'project_id': 'project_id',
         'order_by_column': 'order_by_column',
         'sort_order': 'sort_order',
-        'page_total': 'page_total',
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, name=None, is_default=None, create_by=None, script_id=None, page_num=None, page_size=None, project_id=None, order_by_column=None, sort_order=None, page_total=None, enterprise_project_id=None):
+    def __init__(self, name=None, is_default=None, create_by=None, script_id=None, page_num=None, page_size=None, project_id=None, order_by_column=None, sort_order=None, enterprise_project_id=None):
         """SearchScriptsRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param name: 查询接收的的参数，版本管理时，name为脚本名称（版本管理查询时name不能为空），页面查询时，name为接收模糊查询的参数，name是null，表示查询所有默认脚本。
+        :param name: 查询接收的参数，版本管理时，name为脚本名称（版本管理查询时name不能为空），页面查询时，name为接收模糊查询的参数，name是null，表示查询所有默认脚本。
         :type name: str
-        :param is_default: 查询规则，default表示脚本管理主页查询，包括模糊查询，no_default就是版本管理,当defalult不输入（参数为空）进行查询时，默认是页面查询,废弃字段，传入不影响使用。
+        :param is_default: 查询规则，当取值为default时，表示脚本管理主页查询，包括模糊查询；当取值为no_default时，表示版本管理；当取值为空时，默认是页面查询, 传入不影响使用。
         :type is_default: str
-        :param create_by: 创建人，默认按照创建人搜说脚本。
+        :param create_by: 创建人，默认按照创建人搜索脚本。
         :type create_by: str
         :param script_id: 版本管理时需要查询的脚本id。
         :type script_id: str
-        :param page_num: 当前页，查询的当前页，page_num为正整数，不能是0和负数，当输入参数为负数，0和大于1000，自动修正参数为1，默认值是1（用户不传，值是1）。
+        :param page_num: page_num为正整数。
         :type page_num: int
-        :param page_size: 每页显示的条数，每页查询的总条数，page_size为正整数，不能是0和负数，当输入参数为负数，0和大于101，自动修正参数为10，默认值是10（用户不传时，值是10）。
+        :param page_size: 每页显示的条数，默认值是10。
         :type page_size: int
-        :param project_id: 项目id，版本管理参数，当时page_total为total,返回出改脚本名称下所有的脚本对象,传入其他参数无意义，，当前进行 版本管理时，需要分页显示脚本名称下所有对象，传入空值即可。
+        :param project_id: 项目id。
         :type project_id: str
         :param order_by_column: 需要排序的字段(默认为更新时间),支持字段有name,create_time和update_time。
         :type order_by_column: str
         :param sort_order: 排序规则(默认降序) 传入升序或降序，升序：ASC，降序：DESC。
         :type sort_order: str
-        :param page_total: 版本管理参数，当时page_total为total,返回出改脚本名称下所有的脚本对象,传入其他参数无意义，，当前进行 版本管理时，需要分页显示脚本名称下所有对象，传入空值即可。
-        :type page_total: str
         :param enterprise_project_id: 企业项目id，根据企业项目id搜索。
         :type enterprise_project_id: str
         """
@@ -87,7 +83,6 @@ class SearchScriptsRequestBody:
         self._project_id = None
         self._order_by_column = None
         self._sort_order = None
-        self._page_total = None
         self._enterprise_project_id = None
         self.discriminator = None
 
@@ -103,13 +98,11 @@ class SearchScriptsRequestBody:
             self.page_num = page_num
         if page_size is not None:
             self.page_size = page_size
-        self.project_id = project_id
-        if order_by_column is not None:
-            self.order_by_column = order_by_column
+        if project_id is not None:
+            self.project_id = project_id
+        self.order_by_column = order_by_column
         if sort_order is not None:
             self.sort_order = sort_order
-        if page_total is not None:
-            self.page_total = page_total
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
 
@@ -117,7 +110,7 @@ class SearchScriptsRequestBody:
     def name(self):
         """Gets the name of this SearchScriptsRequestBody.
 
-        查询接收的的参数，版本管理时，name为脚本名称（版本管理查询时name不能为空），页面查询时，name为接收模糊查询的参数，name是null，表示查询所有默认脚本。
+        查询接收的参数，版本管理时，name为脚本名称（版本管理查询时name不能为空），页面查询时，name为接收模糊查询的参数，name是null，表示查询所有默认脚本。
 
         :return: The name of this SearchScriptsRequestBody.
         :rtype: str
@@ -128,7 +121,7 @@ class SearchScriptsRequestBody:
     def name(self, name):
         """Sets the name of this SearchScriptsRequestBody.
 
-        查询接收的的参数，版本管理时，name为脚本名称（版本管理查询时name不能为空），页面查询时，name为接收模糊查询的参数，name是null，表示查询所有默认脚本。
+        查询接收的参数，版本管理时，name为脚本名称（版本管理查询时name不能为空），页面查询时，name为接收模糊查询的参数，name是null，表示查询所有默认脚本。
 
         :param name: The name of this SearchScriptsRequestBody.
         :type name: str
@@ -139,7 +132,7 @@ class SearchScriptsRequestBody:
     def is_default(self):
         """Gets the is_default of this SearchScriptsRequestBody.
 
-        查询规则，default表示脚本管理主页查询，包括模糊查询，no_default就是版本管理,当defalult不输入（参数为空）进行查询时，默认是页面查询,废弃字段，传入不影响使用。
+        查询规则，当取值为default时，表示脚本管理主页查询，包括模糊查询；当取值为no_default时，表示版本管理；当取值为空时，默认是页面查询, 传入不影响使用。
 
         :return: The is_default of this SearchScriptsRequestBody.
         :rtype: str
@@ -150,7 +143,7 @@ class SearchScriptsRequestBody:
     def is_default(self, is_default):
         """Sets the is_default of this SearchScriptsRequestBody.
 
-        查询规则，default表示脚本管理主页查询，包括模糊查询，no_default就是版本管理,当defalult不输入（参数为空）进行查询时，默认是页面查询,废弃字段，传入不影响使用。
+        查询规则，当取值为default时，表示脚本管理主页查询，包括模糊查询；当取值为no_default时，表示版本管理；当取值为空时，默认是页面查询, 传入不影响使用。
 
         :param is_default: The is_default of this SearchScriptsRequestBody.
         :type is_default: str
@@ -161,7 +154,7 @@ class SearchScriptsRequestBody:
     def create_by(self):
         """Gets the create_by of this SearchScriptsRequestBody.
 
-        创建人，默认按照创建人搜说脚本。
+        创建人，默认按照创建人搜索脚本。
 
         :return: The create_by of this SearchScriptsRequestBody.
         :rtype: str
@@ -172,7 +165,7 @@ class SearchScriptsRequestBody:
     def create_by(self, create_by):
         """Sets the create_by of this SearchScriptsRequestBody.
 
-        创建人，默认按照创建人搜说脚本。
+        创建人，默认按照创建人搜索脚本。
 
         :param create_by: The create_by of this SearchScriptsRequestBody.
         :type create_by: str
@@ -205,7 +198,7 @@ class SearchScriptsRequestBody:
     def page_num(self):
         """Gets the page_num of this SearchScriptsRequestBody.
 
-        当前页，查询的当前页，page_num为正整数，不能是0和负数，当输入参数为负数，0和大于1000，自动修正参数为1，默认值是1（用户不传，值是1）。
+        page_num为正整数。
 
         :return: The page_num of this SearchScriptsRequestBody.
         :rtype: int
@@ -216,7 +209,7 @@ class SearchScriptsRequestBody:
     def page_num(self, page_num):
         """Sets the page_num of this SearchScriptsRequestBody.
 
-        当前页，查询的当前页，page_num为正整数，不能是0和负数，当输入参数为负数，0和大于1000，自动修正参数为1，默认值是1（用户不传，值是1）。
+        page_num为正整数。
 
         :param page_num: The page_num of this SearchScriptsRequestBody.
         :type page_num: int
@@ -227,7 +220,7 @@ class SearchScriptsRequestBody:
     def page_size(self):
         """Gets the page_size of this SearchScriptsRequestBody.
 
-        每页显示的条数，每页查询的总条数，page_size为正整数，不能是0和负数，当输入参数为负数，0和大于101，自动修正参数为10，默认值是10（用户不传时，值是10）。
+        每页显示的条数，默认值是10。
 
         :return: The page_size of this SearchScriptsRequestBody.
         :rtype: int
@@ -238,7 +231,7 @@ class SearchScriptsRequestBody:
     def page_size(self, page_size):
         """Sets the page_size of this SearchScriptsRequestBody.
 
-        每页显示的条数，每页查询的总条数，page_size为正整数，不能是0和负数，当输入参数为负数，0和大于101，自动修正参数为10，默认值是10（用户不传时，值是10）。
+        每页显示的条数，默认值是10。
 
         :param page_size: The page_size of this SearchScriptsRequestBody.
         :type page_size: int
@@ -249,7 +242,7 @@ class SearchScriptsRequestBody:
     def project_id(self):
         """Gets the project_id of this SearchScriptsRequestBody.
 
-        项目id，版本管理参数，当时page_total为total,返回出改脚本名称下所有的脚本对象,传入其他参数无意义，，当前进行 版本管理时，需要分页显示脚本名称下所有对象，传入空值即可。
+        项目id。
 
         :return: The project_id of this SearchScriptsRequestBody.
         :rtype: str
@@ -260,7 +253,7 @@ class SearchScriptsRequestBody:
     def project_id(self, project_id):
         """Sets the project_id of this SearchScriptsRequestBody.
 
-        项目id，版本管理参数，当时page_total为total,返回出改脚本名称下所有的脚本对象,传入其他参数无意义，，当前进行 版本管理时，需要分页显示脚本名称下所有对象，传入空值即可。
+        项目id。
 
         :param project_id: The project_id of this SearchScriptsRequestBody.
         :type project_id: str
@@ -310,28 +303,6 @@ class SearchScriptsRequestBody:
         :type sort_order: str
         """
         self._sort_order = sort_order
-
-    @property
-    def page_total(self):
-        """Gets the page_total of this SearchScriptsRequestBody.
-
-        版本管理参数，当时page_total为total,返回出改脚本名称下所有的脚本对象,传入其他参数无意义，，当前进行 版本管理时，需要分页显示脚本名称下所有对象，传入空值即可。
-
-        :return: The page_total of this SearchScriptsRequestBody.
-        :rtype: str
-        """
-        return self._page_total
-
-    @page_total.setter
-    def page_total(self, page_total):
-        """Sets the page_total of this SearchScriptsRequestBody.
-
-        版本管理参数，当时page_total为total,返回出改脚本名称下所有的脚本对象,传入其他参数无意义，，当前进行 版本管理时，需要分页显示脚本名称下所有对象，传入空值即可。
-
-        :param page_total: The page_total of this SearchScriptsRequestBody.
-        :type page_total: str
-        """
-        self._page_total = page_total
 
     @property
     def enterprise_project_id(self):

@@ -45,7 +45,7 @@ class AomClient(Client):
     def create_app(self, request):
         """新增应用
 
-        新增应用
+        新增应用。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -105,7 +105,7 @@ class AomClient(Client):
     def create_component(self, request):
         """新增组件
 
-        新增组件
+        新增组件。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -165,7 +165,7 @@ class AomClient(Client):
     def create_env(self, request):
         """创建环境
 
-        创建环境
+        创建环境。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -225,7 +225,7 @@ class AomClient(Client):
     def delete_app(self, request):
         """删除应用
 
-        删除应用
+        删除应用。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -285,7 +285,7 @@ class AomClient(Client):
     def delete_component(self, request):
         """删除组件
 
-        删除组件
+        删除组件。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -345,7 +345,7 @@ class AomClient(Client):
     def delete_env(self, request):
         """删除环境
 
-        删除环境
+        删除环境。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -405,7 +405,7 @@ class AomClient(Client):
     def list_resource_under_node(self, request):
         """查询绑定在节点上的资源列表
 
-        查询绑定在节点上的资源列表
+        查询绑定在节点上的资源列表。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -469,7 +469,7 @@ class AomClient(Client):
     def show_app(self, request):
         """查询应用详情
 
-        获取应用详情
+        获取应用详情。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -529,7 +529,7 @@ class AomClient(Client):
     def show_app_by_name(self, request):
         """查询应用详情
 
-        获取应用详情
+        获取应用详情。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -591,7 +591,7 @@ class AomClient(Client):
     def show_component(self, request):
         """查询组件详情
 
-        查询组件详情
+        查询组件详情。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -651,7 +651,7 @@ class AomClient(Client):
     def show_component_by_name(self, request):
         """查询组件详情
 
-        查询组件详情
+        查询组件详情。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -713,7 +713,7 @@ class AomClient(Client):
     def show_env(self, request):
         """查询环境详情
 
-        查询环境详情
+        查询环境详情。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -773,7 +773,7 @@ class AomClient(Client):
     def show_env_by_name(self, request):
         """查询环境详情
 
-        查询环境详情
+        查询环境详情。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -837,7 +837,7 @@ class AomClient(Client):
     def update_app(self, request):
         """修改应用
 
-        修改应用
+        修改应用。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -899,7 +899,7 @@ class AomClient(Client):
     def update_component(self, request):
         """修改组件
 
-        修改组件
+        修改组件。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -961,7 +961,7 @@ class AomClient(Client):
     def update_env(self, request):
         """修改环境
 
-        修改环境
+        修改环境。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

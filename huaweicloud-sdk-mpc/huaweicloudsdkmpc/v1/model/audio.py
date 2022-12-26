@@ -63,8 +63,10 @@ class Audio:
 
         if output_policy is not None:
             self.output_policy = output_policy
-        self.codec = codec
-        self.sample_rate = sample_rate
+        if codec is not None:
+            self.codec = codec
+        if sample_rate is not None:
+            self.sample_rate = sample_rate
         if bitrate is not None:
             self.bitrate = bitrate
         self.channels = channels

@@ -1316,7 +1316,7 @@ class LiveClient(Client):
         return self.show_domain_with_http_info(request)
 
     def show_domain_with_http_info(self, request):
-        all_params = ['domain']
+        all_params = ['domain', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1331,6 +1331,8 @@ class LiveClient(Client):
         query_params = []
         if 'domain' in local_var_params:
             query_params.append(('domain', local_var_params['domain']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -1603,6 +1605,66 @@ class LiveClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateDomainResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_domain_ip6_switch(self, request):
+        """配置域名IPV6开关
+
+        配置IPV6开关
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDomainIp6Switch
+        :type request: :class:`huaweicloudsdklive.v1.UpdateDomainIp6SwitchRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.UpdateDomainIp6SwitchResponse`
+        """
+        return self.update_domain_ip6_switch_with_http_info(request)
+
+    def update_domain_ip6_switch_with_http_info(self, request):
+        all_params = ['domain_ipv6_switch_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/domain/ipv6-switch',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateDomainIp6SwitchResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

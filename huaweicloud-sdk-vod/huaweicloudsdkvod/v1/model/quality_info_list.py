@@ -46,8 +46,7 @@ class QualityInfoList:
         self._audio = None
         self.discriminator = None
 
-        if video is not None:
-            self.video = video
+        self.video = video
         if audio is not None:
             self.audio = audio
 

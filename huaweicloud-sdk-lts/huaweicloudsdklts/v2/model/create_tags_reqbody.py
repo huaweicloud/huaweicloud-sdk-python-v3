@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class AssociatedVaultsInfo:
+class CreateTagsReqbody:
 
     """
     Attributes:
@@ -20,80 +20,106 @@ class AssociatedVaultsInfo:
     sensitive_list = []
 
     openapi_types = {
-        'destination_vault_id': 'str',
-        'vault_id': 'str'
+        'action': 'str',
+        'is_open': 'bool',
+        'tags': 'list[TagsBody]'
     }
 
     attribute_map = {
-        'destination_vault_id': 'destination_vault_id',
-        'vault_id': 'vault_id'
+        'action': 'action',
+        'is_open': 'is_open',
+        'tags': 'tags'
     }
 
-    def __init__(self, destination_vault_id=None, vault_id=None):
-        """AssociatedVaultsInfo
+    def __init__(self, action=None, is_open=None, tags=None):
+        """CreateTagsReqbody
 
         The model defined in huaweicloud sdk
 
-        :param destination_vault_id: 关联的远端存储库ID
-        :type destination_vault_id: str
-        :param vault_id: 存储库ID
-        :type vault_id: str
+        :param action: 添加标签方式
+        :type action: str
+        :param is_open: 是否对外接口调用
+        :type is_open: bool
+        :param tags: 标签字段信息
+        :type tags: list[:class:`huaweicloudsdklts.v2.TagsBody`]
         """
         
         
 
-        self._destination_vault_id = None
-        self._vault_id = None
+        self._action = None
+        self._is_open = None
+        self._tags = None
         self.discriminator = None
 
-        if destination_vault_id is not None:
-            self.destination_vault_id = destination_vault_id
-        if vault_id is not None:
-            self.vault_id = vault_id
+        self.action = action
+        self.is_open = is_open
+        self.tags = tags
 
     @property
-    def destination_vault_id(self):
-        """Gets the destination_vault_id of this AssociatedVaultsInfo.
+    def action(self):
+        """Gets the action of this CreateTagsReqbody.
 
-        关联的远端存储库ID
+        添加标签方式
 
-        :return: The destination_vault_id of this AssociatedVaultsInfo.
+        :return: The action of this CreateTagsReqbody.
         :rtype: str
         """
-        return self._destination_vault_id
+        return self._action
 
-    @destination_vault_id.setter
-    def destination_vault_id(self, destination_vault_id):
-        """Sets the destination_vault_id of this AssociatedVaultsInfo.
+    @action.setter
+    def action(self, action):
+        """Sets the action of this CreateTagsReqbody.
 
-        关联的远端存储库ID
+        添加标签方式
 
-        :param destination_vault_id: The destination_vault_id of this AssociatedVaultsInfo.
-        :type destination_vault_id: str
+        :param action: The action of this CreateTagsReqbody.
+        :type action: str
         """
-        self._destination_vault_id = destination_vault_id
+        self._action = action
 
     @property
-    def vault_id(self):
-        """Gets the vault_id of this AssociatedVaultsInfo.
+    def is_open(self):
+        """Gets the is_open of this CreateTagsReqbody.
 
-        存储库ID
+        是否对外接口调用
 
-        :return: The vault_id of this AssociatedVaultsInfo.
-        :rtype: str
+        :return: The is_open of this CreateTagsReqbody.
+        :rtype: bool
         """
-        return self._vault_id
+        return self._is_open
 
-    @vault_id.setter
-    def vault_id(self, vault_id):
-        """Sets the vault_id of this AssociatedVaultsInfo.
+    @is_open.setter
+    def is_open(self, is_open):
+        """Sets the is_open of this CreateTagsReqbody.
 
-        存储库ID
+        是否对外接口调用
 
-        :param vault_id: The vault_id of this AssociatedVaultsInfo.
-        :type vault_id: str
+        :param is_open: The is_open of this CreateTagsReqbody.
+        :type is_open: bool
         """
-        self._vault_id = vault_id
+        self._is_open = is_open
+
+    @property
+    def tags(self):
+        """Gets the tags of this CreateTagsReqbody.
+
+        标签字段信息
+
+        :return: The tags of this CreateTagsReqbody.
+        :rtype: list[:class:`huaweicloudsdklts.v2.TagsBody`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this CreateTagsReqbody.
+
+        标签字段信息
+
+        :param tags: The tags of this CreateTagsReqbody.
+        :type tags: list[:class:`huaweicloudsdklts.v2.TagsBody`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -137,7 +163,7 @@ class AssociatedVaultsInfo:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AssociatedVaultsInfo):
+        if not isinstance(other, CreateTagsReqbody):
             return False
 
         return self.__dict__ == other.__dict__

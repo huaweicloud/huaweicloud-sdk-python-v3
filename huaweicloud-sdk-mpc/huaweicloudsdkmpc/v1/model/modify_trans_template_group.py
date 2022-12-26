@@ -66,8 +66,7 @@ class ModifyTransTemplateGroup:
         self._common = None
         self.discriminator = None
 
-        if group_id is not None:
-            self.group_id = group_id
+        self.group_id = group_id
         if name is not None:
             self.name = name
         if videos is not None:

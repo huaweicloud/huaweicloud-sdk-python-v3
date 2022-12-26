@@ -20,29 +20,36 @@ class ShowDomainRequest:
     sensitive_list = []
 
     openapi_types = {
-        'domain': 'str'
+        'domain': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
-        'domain': 'domain'
+        'domain': 'domain',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, domain=None):
+    def __init__(self, domain=None, enterprise_project_id=None):
         """ShowDomainRequest
 
         The model defined in huaweicloud sdk
 
         :param domain: 直播域名，如果不设置此字段，则返回租户所有的域名信息
         :type domain: str
+        :param enterprise_project_id: 企业项目ID，如果不设置此字段，则不进行该字段过滤，返回所有域名信息
+        :type enterprise_project_id: str
         """
         
         
 
         self._domain = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if domain is not None:
             self.domain = domain
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def domain(self):
@@ -65,6 +72,28 @@ class ShowDomainRequest:
         :type domain: str
         """
         self._domain = domain
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ShowDomainRequest.
+
+        企业项目ID，如果不设置此字段，则不进行该字段过滤，返回所有域名信息
+
+        :return: The enterprise_project_id of this ShowDomainRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ShowDomainRequest.
+
+        企业项目ID，如果不设置此字段，则不进行该字段过滤，返回所有域名信息
+
+        :param enterprise_project_id: The enterprise_project_id of this ShowDomainRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

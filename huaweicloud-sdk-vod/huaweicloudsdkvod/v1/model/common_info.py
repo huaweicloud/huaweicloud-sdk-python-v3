@@ -77,16 +77,13 @@ class CommonInfo:
         self.discriminator = None
 
         self.pvc = pvc
-        if video_codec is not None:
-            self.video_codec = video_codec
+        self.video_codec = video_codec
         if audio_codec is not None:
             self.audio_codec = audio_codec
         if is_black_cut is not None:
             self.is_black_cut = is_black_cut
-        if format is not None:
-            self.format = format
-        if hls_interval is not None:
-            self.hls_interval = hls_interval
+        self.format = format
+        self.hls_interval = hls_interval
         if upsample is not None:
             self.upsample = upsample
         if adaptation is not None:

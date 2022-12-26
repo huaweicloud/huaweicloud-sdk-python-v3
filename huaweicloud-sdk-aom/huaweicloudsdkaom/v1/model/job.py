@@ -32,7 +32,9 @@ class Job:
         'steps': 'list[Step]',
         'parameters': 'list[Parameter]',
         'rate_control': 'RateControl',
-        'approve_info': 'ApproveInfo'
+        'approve_info': 'ApproveInfo',
+        'is_latest_version': 'bool',
+        'version_number': 'int'
     }
 
     attribute_map = {
@@ -48,10 +50,12 @@ class Job:
         'steps': 'steps',
         'parameters': 'parameters',
         'rate_control': 'rate_control',
-        'approve_info': 'approve_info'
+        'approve_info': 'approve_info',
+        'is_latest_version': 'is_latest_version',
+        'version_number': 'version_number'
     }
 
-    def __init__(self, id=None, name=None, create_time=None, create_by=None, update_time=None, update_by=None, description=None, enterprise_project_id=None, project_id=None, steps=None, parameters=None, rate_control=None, approve_info=None):
+    def __init__(self, id=None, name=None, create_time=None, create_by=None, update_time=None, update_by=None, description=None, enterprise_project_id=None, project_id=None, steps=None, parameters=None, rate_control=None, approve_info=None, is_latest_version=None, version_number=None):
         """Job
 
         The model defined in huaweicloud sdk
@@ -68,7 +72,7 @@ class Job:
         :type update_time: int
         :param update_by: 修改人。
         :type update_by: str
-        :param description: 作业描述,对脚本进行描述，最大长度为1000。
+        :param description: 作业描述，最大长度为1000。
         :type description: str
         :param enterprise_project_id: 企业项目id。
         :type enterprise_project_id: str
@@ -82,6 +86,10 @@ class Job:
         :type rate_control: :class:`huaweicloudsdkaom.v1.RateControl`
         :param approve_info: 
         :type approve_info: :class:`huaweicloudsdkaom.v1.ApproveInfo`
+        :param is_latest_version: 是否为最新版本的作业
+        :type is_latest_version: bool
+        :param version_number: 版本号
+        :type version_number: int
         """
         
         
@@ -99,6 +107,8 @@ class Job:
         self._parameters = None
         self._rate_control = None
         self._approve_info = None
+        self._is_latest_version = None
+        self._version_number = None
         self.discriminator = None
 
         if id is not None:
@@ -120,6 +130,10 @@ class Job:
         self.parameters = parameters
         self.rate_control = rate_control
         self.approve_info = approve_info
+        if is_latest_version is not None:
+            self.is_latest_version = is_latest_version
+        if version_number is not None:
+            self.version_number = version_number
 
     @property
     def id(self):
@@ -257,7 +271,7 @@ class Job:
     def description(self):
         """Gets the description of this Job.
 
-        作业描述,对脚本进行描述，最大长度为1000。
+        作业描述，最大长度为1000。
 
         :return: The description of this Job.
         :rtype: str
@@ -268,7 +282,7 @@ class Job:
     def description(self, description):
         """Sets the description of this Job.
 
-        作业描述,对脚本进行描述，最大长度为1000。
+        作业描述，最大长度为1000。
 
         :param description: The description of this Job.
         :type description: str
@@ -398,6 +412,50 @@ class Job:
         :type approve_info: :class:`huaweicloudsdkaom.v1.ApproveInfo`
         """
         self._approve_info = approve_info
+
+    @property
+    def is_latest_version(self):
+        """Gets the is_latest_version of this Job.
+
+        是否为最新版本的作业
+
+        :return: The is_latest_version of this Job.
+        :rtype: bool
+        """
+        return self._is_latest_version
+
+    @is_latest_version.setter
+    def is_latest_version(self, is_latest_version):
+        """Sets the is_latest_version of this Job.
+
+        是否为最新版本的作业
+
+        :param is_latest_version: The is_latest_version of this Job.
+        :type is_latest_version: bool
+        """
+        self._is_latest_version = is_latest_version
+
+    @property
+    def version_number(self):
+        """Gets the version_number of this Job.
+
+        版本号
+
+        :return: The version_number of this Job.
+        :rtype: int
+        """
+        return self._version_number
+
+    @version_number.setter
+    def version_number(self, version_number):
+        """Sets the version_number of this Job.
+
+        版本号
+
+        :param version_number: The version_number of this Job.
+        :type version_number: int
+        """
+        self._version_number = version_number
 
     def to_dict(self):
         """Returns the model properties as a dict"""

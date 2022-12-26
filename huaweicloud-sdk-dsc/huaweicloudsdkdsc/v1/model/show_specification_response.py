@@ -24,7 +24,7 @@ class ShowSpecificationResponse(SdkResponse):
     }
 
     attribute_map = {
-        'order_infos': 'order_infos'
+        'order_infos': 'orderInfos'
     }
 
     def __init__(self, order_infos=None):

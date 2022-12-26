@@ -28,11 +28,11 @@ class ProductOrderInfo:
     }
 
     attribute_map = {
-        'tenant_id': 'tenant_id',
-        'period_type': 'period_type',
-        'period_num': 'period_num',
-        'resource_id': 'resource_id',
-        'product_info': 'product_info'
+        'tenant_id': 'tenantId',
+        'period_type': 'periodType',
+        'period_num': 'periodNum',
+        'resource_id': 'resourceId',
+        'product_info': 'productInfo'
     }
 
     def __init__(self, tenant_id=None, period_type=None, period_num=None, resource_id=None, product_info=None):

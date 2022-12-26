@@ -20,7 +20,6 @@ class WorkflowQueryParam:
     sensitive_list = []
 
     openapi_types = {
-        'template_name_list': 'list[str]',
         'search': 'str',
         'type': 'str',
         'tags': 'dict(str, str)',
@@ -36,7 +35,6 @@ class WorkflowQueryParam:
     }
 
     attribute_map = {
-        'template_name_list': 'template_name_list',
         'search': 'search',
         'type': 'type',
         'tags': 'tags',
@@ -51,13 +49,11 @@ class WorkflowQueryParam:
         'status': 'status'
     }
 
-    def __init__(self, template_name_list=None, search=None, type=None, tags=None, page=None, size=None, enterprise_project_id=None, create_by=None, sort_field=None, sort_type=None, search_time_start=None, search_time_end=None, status=None):
+    def __init__(self, search=None, type=None, tags=None, page=None, size=None, enterprise_project_id=None, create_by=None, sort_field=None, sort_type=None, search_time_start=None, search_time_end=None, status=None):
         """WorkflowQueryParam
 
         The model defined in huaweicloud sdk
 
-        :param template_name_list: 模板名称列表。
-        :type template_name_list: list[str]
         :param search: 搜索内容，可以针对工作流名称和描述内容进行搜索。
         :type search: str
         :param type: 工作流分类，可以取值[\&quot;cron\&quot;,\&quot;event\&quot;,\&quot;manual\&quot;]。
@@ -66,7 +62,7 @@ class WorkflowQueryParam:
         :type tags: dict(str, str)
         :param page: 查询当前的页数，默认值为0。
         :type page: int
-        :param size: 查询当前页的大小，默认值为1000。
+        :param size: 查询当前页的大小，默认值为10。
         :type size: int
         :param enterprise_project_id: 企业项目id。
         :type enterprise_project_id: str
@@ -80,13 +76,12 @@ class WorkflowQueryParam:
         :type search_time_start: int
         :param search_time_end: 更新时间，时间范围查询的结束时间。
         :type search_time_end: int
-        :param status: 任务的状态
+        :param status: 任务的状态 [\&quot;success\&quot;,\&quot;fail\&quot;,\&quot;executing\&quot;,\&quot;cancel\&quot;,\&quot;waitExecute\&quot;,\&quot;waitApproval\&quot;,\&quot;approvalFailed\&quot;,\&quot;pausing\&quot;,\&quot;canceling\&quot;]
         :type status: str
         """
         
         
 
-        self._template_name_list = None
         self._search = None
         self._type = None
         self._tags = None
@@ -101,8 +96,6 @@ class WorkflowQueryParam:
         self._status = None
         self.discriminator = None
 
-        if template_name_list is not None:
-            self.template_name_list = template_name_list
         if search is not None:
             self.search = search
         if type is not None:
@@ -125,28 +118,6 @@ class WorkflowQueryParam:
             self.search_time_end = search_time_end
         if status is not None:
             self.status = status
-
-    @property
-    def template_name_list(self):
-        """Gets the template_name_list of this WorkflowQueryParam.
-
-        模板名称列表。
-
-        :return: The template_name_list of this WorkflowQueryParam.
-        :rtype: list[str]
-        """
-        return self._template_name_list
-
-    @template_name_list.setter
-    def template_name_list(self, template_name_list):
-        """Sets the template_name_list of this WorkflowQueryParam.
-
-        模板名称列表。
-
-        :param template_name_list: The template_name_list of this WorkflowQueryParam.
-        :type template_name_list: list[str]
-        """
-        self._template_name_list = template_name_list
 
     @property
     def search(self):
@@ -240,7 +211,7 @@ class WorkflowQueryParam:
     def size(self):
         """Gets the size of this WorkflowQueryParam.
 
-        查询当前页的大小，默认值为1000。
+        查询当前页的大小，默认值为10。
 
         :return: The size of this WorkflowQueryParam.
         :rtype: int
@@ -251,7 +222,7 @@ class WorkflowQueryParam:
     def size(self, size):
         """Sets the size of this WorkflowQueryParam.
 
-        查询当前页的大小，默认值为1000。
+        查询当前页的大小，默认值为10。
 
         :param size: The size of this WorkflowQueryParam.
         :type size: int
@@ -394,7 +365,7 @@ class WorkflowQueryParam:
     def status(self):
         """Gets the status of this WorkflowQueryParam.
 
-        任务的状态
+        任务的状态 [\"success\",\"fail\",\"executing\",\"cancel\",\"waitExecute\",\"waitApproval\",\"approvalFailed\",\"pausing\",\"canceling\"]
 
         :return: The status of this WorkflowQueryParam.
         :rtype: str
@@ -405,7 +376,7 @@ class WorkflowQueryParam:
     def status(self, status):
         """Sets the status of this WorkflowQueryParam.
 
-        任务的状态
+        任务的状态 [\"success\",\"fail\",\"executing\",\"cancel\",\"waitExecute\",\"waitApproval\",\"approvalFailed\",\"pausing\",\"canceling\"]
 
         :param status: The status of this WorkflowQueryParam.
         :type status: str

@@ -20,80 +20,74 @@ class Trigger:
     sensitive_list = []
 
     openapi_types = {
-        'information': 'str',
+        'policy': 'str',
         'scheduled_time': 'str',
         'time_zone': 'str',
-        'topic_urn': 'str',
-        'alarm_name': 'str'
+        'topic_urn': 'str'
     }
 
     attribute_map = {
-        'information': 'information',
+        'policy': 'policy',
         'scheduled_time': 'scheduled_time',
         'time_zone': 'time_zone',
-        'topic_urn': 'topic_urn',
-        'alarm_name': 'alarm_name'
+        'topic_urn': 'topic_urn'
     }
 
-    def __init__(self, information=None, scheduled_time=None, time_zone=None, topic_urn=None, alarm_name=None):
+    def __init__(self, policy=None, scheduled_time=None, time_zone=None, topic_urn=None):
         """Trigger
 
         The model defined in huaweicloud sdk
 
-        :param information: 定时任务的必填信息。
-        :type information: str
-        :param scheduled_time: 触发器执行时间。
+        :param policy: 定时策略。once、corn、periodic
+        :type policy: str
+        :param scheduled_time: 触发器执行时间。单次执行为UTC毫秒数、简单周期为\&quot;[\\\&quot;7\\\&quot;]\&quot;、corn为corn表达式\&quot;0 23 * * *\&quot;
         :type scheduled_time: str
         :param time_zone: 时区。
         :type time_zone: str
         :param topic_urn: smn主题urn。
         :type topic_urn: str
-        :param alarm_name: aom告警名字。
-        :type alarm_name: str
         """
         
         
 
-        self._information = None
+        self._policy = None
         self._scheduled_time = None
         self._time_zone = None
         self._topic_urn = None
-        self._alarm_name = None
         self.discriminator = None
 
-        self.information = information
+        self.policy = policy
         self.scheduled_time = scheduled_time
         self.time_zone = time_zone
         self.topic_urn = topic_urn
-        self.alarm_name = alarm_name
 
     @property
-    def information(self):
-        """Gets the information of this Trigger.
+    def policy(self):
+        """Gets the policy of this Trigger.
 
-        定时任务的必填信息。
+        定时策略。once、corn、periodic
 
-        :return: The information of this Trigger.
+        :return: The policy of this Trigger.
         :rtype: str
         """
-        return self._information
+        return self._policy
 
-    @information.setter
-    def information(self, information):
-        """Sets the information of this Trigger.
+    @policy.setter
+    def policy(self, policy):
+        """Sets the policy of this Trigger.
 
-        定时任务的必填信息。
+        定时策略。once、corn、periodic
 
-        :param information: The information of this Trigger.
-        :type information: str
+        :param policy: The policy of this Trigger.
+        :type policy: str
         """
-        self._information = information
+        self._policy = policy
 
     @property
     def scheduled_time(self):
         """Gets the scheduled_time of this Trigger.
 
-        触发器执行时间。
+        触发器执行时间。单次执行为UTC毫秒数、简单周期为\"[\\\"7\\\"]\"、corn为corn表达式\"0 23 * * *\"
 
         :return: The scheduled_time of this Trigger.
         :rtype: str
@@ -104,7 +98,7 @@ class Trigger:
     def scheduled_time(self, scheduled_time):
         """Sets the scheduled_time of this Trigger.
 
-        触发器执行时间。
+        触发器执行时间。单次执行为UTC毫秒数、简单周期为\"[\\\"7\\\"]\"、corn为corn表达式\"0 23 * * *\"
 
         :param scheduled_time: The scheduled_time of this Trigger.
         :type scheduled_time: str
@@ -154,28 +148,6 @@ class Trigger:
         :type topic_urn: str
         """
         self._topic_urn = topic_urn
-
-    @property
-    def alarm_name(self):
-        """Gets the alarm_name of this Trigger.
-
-        aom告警名字。
-
-        :return: The alarm_name of this Trigger.
-        :rtype: str
-        """
-        return self._alarm_name
-
-    @alarm_name.setter
-    def alarm_name(self, alarm_name):
-        """Sets the alarm_name of this Trigger.
-
-        aom告警名字。
-
-        :param alarm_name: The alarm_name of this Trigger.
-        :type alarm_name: str
-        """
-        self._alarm_name = alarm_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

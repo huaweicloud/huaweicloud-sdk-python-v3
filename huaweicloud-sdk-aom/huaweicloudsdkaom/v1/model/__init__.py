@@ -10,6 +10,7 @@ from huaweicloudsdkaom.v1.model.create_workflow_request import CreateWorkflowReq
 from huaweicloudsdkaom.v1.model.create_workflow_response import CreateWorkflowResponse
 from huaweicloudsdkaom.v1.model.execute_workflow_request import ExecuteWorkflowRequest
 from huaweicloudsdkaom.v1.model.execute_workflow_response import ExecuteWorkflowResponse
+from huaweicloudsdkaom.v1.model.execution_result_list import ExecutionResultList
 from huaweicloudsdkaom.v1.model.his_fast_script import HISFastScript
 from huaweicloudsdkaom.v1.model.job import Job
 from huaweicloudsdkaom.v1.model.list_all_job_by_name_request import ListAllJobByNameRequest
@@ -27,7 +28,6 @@ from huaweicloudsdkaom.v1.model.list_workflow_request import ListWorkflowRequest
 from huaweicloudsdkaom.v1.model.list_workflow_response import ListWorkflowResponse
 from huaweicloudsdkaom.v1.model.metadata import Metadata
 from huaweicloudsdkaom.v1.model.node import Node
-from huaweicloudsdkaom.v1.model.node_execution_detail import NodeExecutionDetail
 from huaweicloudsdkaom.v1.model.parameter import Parameter
 from huaweicloudsdkaom.v1.model.rate_control import RateControl
 from huaweicloudsdkaom.v1.model.script import Script

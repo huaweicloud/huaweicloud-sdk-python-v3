@@ -20,138 +20,51 @@ class ResetLoginMethodResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'code': 'int',
-        'description': 'str',
-        'task_id': 'str',
-        'order_id': 'str'
+        'request_info': 'str'
     }
 
     attribute_map = {
-        'code': 'code',
-        'description': 'description',
-        'task_id': 'task_id',
-        'order_id': 'order_id'
+        'request_info': 'request_info'
     }
 
-    def __init__(self, code=None, description=None, task_id=None, order_id=None):
+    def __init__(self, request_info=None):
         """ResetLoginMethodResponse
 
         The model defined in huaweicloud sdk
 
-        :param code: 操作结果
-        :type code: int
-        :param description: 描述
-        :type description: str
-        :param task_id: 任务 id
-        :type task_id: str
-        :param order_id: 订单 id
-        :type order_id: str
+        :param request_info: Requested information
+        :type request_info: str
         """
         
         super(ResetLoginMethodResponse, self).__init__()
 
-        self._code = None
-        self._description = None
-        self._task_id = None
-        self._order_id = None
+        self._request_info = None
         self.discriminator = None
 
-        if code is not None:
-            self.code = code
-        if description is not None:
-            self.description = description
-        if task_id is not None:
-            self.task_id = task_id
-        if order_id is not None:
-            self.order_id = order_id
+        if request_info is not None:
+            self.request_info = request_info
 
     @property
-    def code(self):
-        """Gets the code of this ResetLoginMethodResponse.
+    def request_info(self):
+        """Gets the request_info of this ResetLoginMethodResponse.
 
-        操作结果
+        Requested information
 
-        :return: The code of this ResetLoginMethodResponse.
-        :rtype: int
-        """
-        return self._code
-
-    @code.setter
-    def code(self, code):
-        """Sets the code of this ResetLoginMethodResponse.
-
-        操作结果
-
-        :param code: The code of this ResetLoginMethodResponse.
-        :type code: int
-        """
-        self._code = code
-
-    @property
-    def description(self):
-        """Gets the description of this ResetLoginMethodResponse.
-
-        描述
-
-        :return: The description of this ResetLoginMethodResponse.
+        :return: The request_info of this ResetLoginMethodResponse.
         :rtype: str
         """
-        return self._description
+        return self._request_info
 
-    @description.setter
-    def description(self, description):
-        """Sets the description of this ResetLoginMethodResponse.
+    @request_info.setter
+    def request_info(self, request_info):
+        """Sets the request_info of this ResetLoginMethodResponse.
 
-        描述
+        Requested information
 
-        :param description: The description of this ResetLoginMethodResponse.
-        :type description: str
+        :param request_info: The request_info of this ResetLoginMethodResponse.
+        :type request_info: str
         """
-        self._description = description
-
-    @property
-    def task_id(self):
-        """Gets the task_id of this ResetLoginMethodResponse.
-
-        任务 id
-
-        :return: The task_id of this ResetLoginMethodResponse.
-        :rtype: str
-        """
-        return self._task_id
-
-    @task_id.setter
-    def task_id(self, task_id):
-        """Sets the task_id of this ResetLoginMethodResponse.
-
-        任务 id
-
-        :param task_id: The task_id of this ResetLoginMethodResponse.
-        :type task_id: str
-        """
-        self._task_id = task_id
-
-    @property
-    def order_id(self):
-        """Gets the order_id of this ResetLoginMethodResponse.
-
-        订单 id
-
-        :return: The order_id of this ResetLoginMethodResponse.
-        :rtype: str
-        """
-        return self._order_id
-
-    @order_id.setter
-    def order_id(self, order_id):
-        """Sets the order_id of this ResetLoginMethodResponse.
-
-        订单 id
-
-        :param order_id: The order_id of this ResetLoginMethodResponse.
-        :type order_id: str
-        """
-        self._order_id = order_id
+        self._request_info = request_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

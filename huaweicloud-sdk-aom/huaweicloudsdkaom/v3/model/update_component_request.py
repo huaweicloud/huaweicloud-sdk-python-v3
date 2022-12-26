@@ -21,7 +21,7 @@ class UpdateComponentRequest:
 
     openapi_types = {
         'component_id': 'str',
-        'body': 'ComponentParam'
+        'body': 'ComponentUpdateParam'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class UpdateComponentRequest:
         :param component_id: 组件id
         :type component_id: str
         :param body: Body of the UpdateComponentRequest
-        :type body: :class:`huaweicloudsdkaom.v3.ComponentParam`
+        :type body: :class:`huaweicloudsdkaom.v3.ComponentUpdateParam`
         """
         
         
@@ -77,7 +77,7 @@ class UpdateComponentRequest:
         """Gets the body of this UpdateComponentRequest.
 
         :return: The body of this UpdateComponentRequest.
-        :rtype: :class:`huaweicloudsdkaom.v3.ComponentParam`
+        :rtype: :class:`huaweicloudsdkaom.v3.ComponentUpdateParam`
         """
         return self._body
 
@@ -86,7 +86,7 @@ class UpdateComponentRequest:
         """Sets the body of this UpdateComponentRequest.
 
         :param body: The body of this UpdateComponentRequest.
-        :type body: :class:`huaweicloudsdkaom.v3.ComponentParam`
+        :type body: :class:`huaweicloudsdkaom.v3.ComponentUpdateParam`
         """
         self._body = body
 

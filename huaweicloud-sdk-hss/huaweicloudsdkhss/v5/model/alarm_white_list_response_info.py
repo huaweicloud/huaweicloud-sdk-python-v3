@@ -20,6 +20,7 @@ class AlarmWhiteListResponseInfo:
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_name': 'str',
         'hash': 'str',
         'description': 'str',
         'event_type': 'int',
@@ -27,17 +28,20 @@ class AlarmWhiteListResponseInfo:
     }
 
     attribute_map = {
+        'enterprise_project_name': 'enterprise_project_name',
         'hash': 'hash',
         'description': 'description',
         'event_type': 'event_type',
         'update_time': 'update_time'
     }
 
-    def __init__(self, hash=None, description=None, event_type=None, update_time=None):
+    def __init__(self, enterprise_project_name=None, hash=None, description=None, event_type=None, update_time=None):
         """AlarmWhiteListResponseInfo
 
         The model defined in huaweicloud sdk
 
+        :param enterprise_project_name: 企业项目名称
+        :type enterprise_project_name: str
         :param hash: SHA256
         :type hash: str
         :param description: 描述信息
@@ -50,12 +54,15 @@ class AlarmWhiteListResponseInfo:
         
         
 
+        self._enterprise_project_name = None
         self._hash = None
         self._description = None
         self._event_type = None
         self._update_time = None
         self.discriminator = None
 
+        if enterprise_project_name is not None:
+            self.enterprise_project_name = enterprise_project_name
         if hash is not None:
             self.hash = hash
         if description is not None:
@@ -64,6 +71,28 @@ class AlarmWhiteListResponseInfo:
             self.event_type = event_type
         if update_time is not None:
             self.update_time = update_time
+
+    @property
+    def enterprise_project_name(self):
+        """Gets the enterprise_project_name of this AlarmWhiteListResponseInfo.
+
+        企业项目名称
+
+        :return: The enterprise_project_name of this AlarmWhiteListResponseInfo.
+        :rtype: str
+        """
+        return self._enterprise_project_name
+
+    @enterprise_project_name.setter
+    def enterprise_project_name(self, enterprise_project_name):
+        """Sets the enterprise_project_name of this AlarmWhiteListResponseInfo.
+
+        企业项目名称
+
+        :param enterprise_project_name: The enterprise_project_name of this AlarmWhiteListResponseInfo.
+        :type enterprise_project_name: str
+        """
+        self._enterprise_project_name = enterprise_project_name
 
     @property
     def hash(self):

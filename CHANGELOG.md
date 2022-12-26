@@ -1,3 +1,205 @@
+# 3.1.19 2022-12-26
+
+### HuaweiCloud SDK AOM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateWorkflow`:
+    - Add the request parameter `policy`
+    - Remove the request parameters `citation_urns`, `information`, `alarm_name`
+    - Remove the response parameters `param_name`, `domain_id`, `domain_name`
+  - The request parameter `action` changed to not required of the interface `UpdateWorkflowTriggerStatus`
+  - Remove the response parameters `workflow_urn`, `headers`, `input`, `output`, `created_by`, `node_id`, `begin_time`, `end_time`, `function_execution_id`, `output`, `status` from the interface `SearchWorkflowExecutionDetail`
+  - Changes of the interface `ListAllScriptByName`:
+    - Remove the request parameter `page_total`
+    - The request parameter `order_by_column` changed to required
+    - The request parameter `project_id` changed to not required
+  - Changes of the interface `ListAllVersionByVersionId`:
+    - Remove the request parameter `page_total`
+    - The request parameter `order_by_column` changed to required
+    - The request parameter `project_id` changed to not required
+  - Changes of the interface `ListAllJobByName`:
+    - Add the request parameter `enterprise_project_id`
+    - Add the response parameters `is_latest_version`, `version_number`
+    - The request parameter `order_by_column` changed to required
+  - The request parameter `order_by_column` changed to required of the interface `ListTemplateByJobId`
+  - The request parameter `share_type` changed to not required of the interface `SearchTemplateById`
+  - Changes of the interface `ListWorkflow`:
+    - Remove the request parameter `template_name_list`
+    - Remove the response parameters `param_name`, `domain_id`, `domain_name`
+  - Remove the response parameters `workflow_id`, `workflow_urn`, `status`, `headers`, `input`, `output`, `begin_time`, `end_time`, `last_update_time`, `created_by`, `execution_result_list`, `approve_user_name_list`, `project_id`, `workflow_edit_time`, `last_record_id_with_snapshot` from the interface `ExecuteWorkflow`
+  - Remove the response parameters `workflow_urn`, `node_id`, `begin_time`, `end_time`, `function_execution_id`, `output`, `status` from the interface `ListWorkflowExecutions`
+  - The request parameter `event_sn` changed to required of the interface `ListNotifiedHistories`
+  - Modify the type `string` -> `enum` of the response parameter `type` of the interface `ShowActionRule`
+  - Modify the type `string` -> `enum` of the request parameter `type` of the interface `AddActionRule`
+  - Modify the type `string` -> `enum` of the request parameter `type` of the interface `UpdateActionRule`
+  - Modify the type `string` -> `enum` of the response parameter `type` of the interface `ListActionRule`
+  - The request parameter `resource_provider` changed to not required of the interface `AddEvent2alarmRule`
+  - The request parameter `resource_provider` changed to not required of the interface `UpdateEventRule`
+  - The response parameter `resource_provider` changed to not required of the interface `ListEvent2alarmRule`
+  - Modify the type `string` -> `enum` of the request parameter `register_type` of the interface `CreateApp`
+  - Changes of the interface `UpdateApp`:
+    - Remove the response parameters `aom_id`, `app_id`, `create_time`, `creator`, `description`, `display_name`, `eps_id`, `modified_time`, `modifier`, `name`, `register_type`
+    - Modify the type `string` -> `enum` of the request parameter `register_type`
+  - Remove the request parameters `model_id`, `model_type` from the interface `UpdateComponent`
+  - Changes of the interface `CreateEnv`:
+    - The request parameter `component_id`, `os_type` changed to required
+    - The request parameter `region` changed to not required
+  - Changes of the interface `UpdateEnv`:
+    - The request parameter `component_id`, `os_type` changed to required
+    - The request parameter `region` changed to not required
+  - Remove the response parameters `create_time`, `creator`, `description`, `modified_time`, `modifier`, `register_type`, `sub_app_id` from the interface `ShowComponentByName`
+
+### HuaweiCloud SDK CBH
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListCbhInstance`:
+    - Add the response parameters `quotaDetail`, `publicip`, `expTime`, `startTime`, `endTime`, `releaseTime`, `instanceId`, `privateIp`, `taskStatus`, `vpcId`, `subnetId`, `securityGroupId`, `createinstanceStatus`, `failReason`, `instanceKey`, `orderId`, `periodNum`, `resourceId`, `alterPermit`, `publicId`, `bastionVersion`, `newBastionVersion`, `instanceStatus`, `instanceDescription`, `slaveZone`, `enterpriseProjectId`, `instanceType`, `haId`, `slaveZoneDisplay`, `webPort`, `vip`
+    - Remove the response parameters `quota_detail`, `public_ip`, `exp_time`, `start_time`, `end_time`, `release_time`, `instance_id`, `private_ip`, `task_status`, `vpc_id`, `subnet_id`, `security_group_id`, `createinstance_status`, `fail_reason`, `instance_key`, `order_id`, `period_num`, `resource_id`, `alter_permit`, `public_id`, `bastion_version`, `new_bastion_version`, `instance_status`, `instance_description`
+    - The response parameter `is_auto_renew` changed to not required
+  - The response parameter `task_id`, `order_id` changed to not required of the interface `UpgradeCbhInstance`
+  - Changes of the interface `ResetPassword`:
+    - Add the response parameter `request_info`
+    - Remove the response parameters `code`, `description`, `task_id`, `order_id`
+  - Changes of the interface `ShowAvailableZoneInfo`:
+    - Add the response parameter `availability_zone`
+    - Remove the response parameter `availability_zones`
+  - Changes of the interface `ResetLoginMethod`:
+    - Add the response parameter `request_info`
+    - Remove the response parameters `code`, `description`, `task_id`, `order_id`
+  - Changes of the interface `ChangeInstanceNetwork`:
+    - Add the response parameters `status`, `security_grp_status`, `public_eip_status`, `nics`
+    - Remove the response parameters `type`, `security_groups`
+    - The response parameter `firewall_status` changed to required
+    - The response parameter `public_eip_statu` changed to not required
+  - The request parameter `slave_availability_zone` changed to not required of the interface `CreateInstance`
+  - Changes of the interface `ChangeInstanceOrder`:
+    - Add the response parameter `orderId`
+    - Remove the response parameter `order_id`
+
+### HuaweiCloud SDK DSC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ShowSpecification`:
+    - Add the response parameter `orderInfos`
+    - Remove the response parameter `order_infos`
+  - Add the response parameter `is_default` to the interface `ListRuleGroups`
+
+### HuaweiCloud SDK HSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `laddr` to the interface `ListPorts`
+  - Add the response parameters `os_name`, `agent_status` to the interface `ListProtectionServer`
+  - Remove the response parameter `associated_vaults` from the interface `ShowBackupPolicyInfo`
+  - Add the response parameters `os_type`, `event_details` to the interface `ListSecurityEvents`
+  - Add the response parameter `enterprise_project_name` to the interface `ListAlarmWhiteList`
+  - Remove the response parameter `repair_necessity` from the interface `ListVulHosts`
+
+### HuaweiCloud SDK Live
+
+- _Features_
+  - Support the interface `UpdateDomainIp6Switch`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ShowDomain`:
+    - Add the request parameter `enterprise_project_id`
+    - Add the response parameters `enterprise_project_id`, `is_ipv6`
+  - Changes of the interface `UpdateDomain`:
+    - Add the request parameter `enterprise_project_id`
+    - Add the response parameter `enterprise_project_id`
+  - Add the request parameter `enterprise_project_id` to the interface `CreateDomain`
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - Support the following interfaces：
+    - `Deletefavorite`
+    - `ListTopnTrafficStatistics`
+    - `Createfavorite`
+    - `CreateTags`
+    - `CreateDashboardGroup`
+    - `CreateDashBoard`
+    - `ListHistorySql`
+    - `ListCriterias`
+    - `CreateSearchCriterias`
+    - `DeleteSearchCriterias`
+    - `ListQueryAllSearchCriterias`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the request parameters `enterprise_project_name`, `ttl_in_days` from the interface `CreateLogStream`
+
+### HuaweiCloud SDK MPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListTranscodingTask`:
+    - Remove the response parameter `ref_frames_count`
+    - The response parameter `codec`, `sample_rate`, `PVC`, `hls_interval`, `dash_interval` changed to not required
+  - Changes of the interface `CreateTranscodingTask`:
+    - Remove the request parameters `ref_frames_count`, `aspect_ratio`
+    - The request parameter `codec`, `sample_rate`, `PVC`, `hls_interval`, `dash_interval` changed to not required
+  - Changes of the interface `ListTemplate`:
+    - Remove the response parameter `ref_frames_count`
+    - The response parameter `codec`, `sample_rate`, `PVC`, `hls_interval`, `dash_interval` changed to not required
+  - Changes of the interface `CreateTransTemplate`:
+    - Remove the request parameter `ref_frames_count`
+    - The request parameter `codec`, `sample_rate`, `PVC`, `hls_interval`, `dash_interval` changed to not required
+  - Changes of the interface `UpdateTransTemplate`:
+    - Remove the request parameter `ref_frames_count`
+    - The request parameter `codec`, `sample_rate`, `PVC`, `hls_interval`, `dash_interval` changed to not required
+  - Changes of the interface `ListTemplateGroup`:
+    - Remove the response parameters `ref_frames_count`, `aspect_ratio`
+    - The response parameter `codec`, `sample_rate`, `PVC`, `hls_interval`, `dash_interval` changed to not required
+  - Changes of the interface `CreateTemplateGroup`:
+    - Remove the request parameters `ref_frames_count`, `aspect_ratio`
+    - The request parameter `name` changed to required
+    - The request parameter `codec`, `sample_rate`, `PVC`, `hls_interval`, `dash_interval` changed to not required
+  - Changes of the interface `UpdateTemplateGroup`:
+    - Remove the request parameters `ref_frames_count`, `aspect_ratio`
+    - The request parameter `group_id` changed to required
+    - The request parameter `codec`, `sample_rate`, `PVC`, `hls_interval`, `dash_interval` changed to not required
+  - Remove the request parameter `project_id` from the interface `UpdateBucketAuthorized`
+  - Remove the request parameter `aspect_ratio` from the interface `CreateThumbnailsTask`
+  - Changes of the interface `ListEditingJob`:
+    - Remove the response parameters `ref_frames_count`, `ref_frames_count`
+    - The response parameter `codec`, `sample_rate`, `PVC`, `hls_interval`, `dash_interval`, `codec`, `sample_rate`, `PVC`, `hls_interval`, `dash_interval` changed to not required
+  - Changes of the interface `CreateEditingJob`:
+    - Remove the request parameters `ref_frames_count`, `ref_frames_count`
+    - The request parameter `codec`, `sample_rate`, `PVC`, `hls_interval`, `dash_interval`, `codec`, `sample_rate`, `PVC`, `hls_interval`, `dash_interval` changed to not required
+
+### HuaweiCloud SDK VOD
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `group_id`, `name`, `bitrate`, `frame_rate`, `video_codec`, `format`, `hls_interval` changed to required of the interface `UpdateTranscodeTemplate`
+  - The response parameter `bitrate`, `frame_rate`, `video_codec`, `format`, `hls_interval` changed to required of the interface `ListTranscodeTemplate`
+  - The request parameter `name`, `bitrate`, `frame_rate`, `video_codec`, `format`, `hls_interval` changed to required of the interface `CreateTranscodeTemplate`
+  - The request parameter `name`, `template_group_list` changed to required of the interface `UpdateTemplateGroupCollection`
+  - The request parameter `name`, `template_group_list` changed to required of the interface `CreateTemplateGroupCollection`
+
 # 3.1.18 2022-12-22
 
 ### HuaweiCloud SDK APIG

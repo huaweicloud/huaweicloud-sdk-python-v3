@@ -26,6 +26,7 @@ class ProtectionServerInfo:
         'host_ip': 'str',
         'private_ip': 'str',
         'os_type': 'str',
+        'os_name': 'str',
         'host_status': 'str',
         'ransom_protection_status': 'str',
         'protect_status': 'str',
@@ -36,7 +37,8 @@ class ProtectionServerInfo:
         'backup_error': 'ProtectionServerInfoBackupError',
         'backup_protection_status': 'str',
         'count_protect_event': 'int',
-        'count_backuped': 'int'
+        'count_backuped': 'int',
+        'agent_status': 'str'
     }
 
     attribute_map = {
@@ -46,6 +48,7 @@ class ProtectionServerInfo:
         'host_ip': 'host_ip',
         'private_ip': 'private_ip',
         'os_type': 'os_type',
+        'os_name': 'os_name',
         'host_status': 'host_status',
         'ransom_protection_status': 'ransom_protection_status',
         'protect_status': 'protect_status',
@@ -56,10 +59,11 @@ class ProtectionServerInfo:
         'backup_error': 'backup_error',
         'backup_protection_status': 'backup_protection_status',
         'count_protect_event': 'count_protect_event',
-        'count_backuped': 'count_backuped'
+        'count_backuped': 'count_backuped',
+        'agent_status': 'agent_status'
     }
 
-    def __init__(self, host_id=None, agent_id=None, host_name=None, host_ip=None, private_ip=None, os_type=None, host_status=None, ransom_protection_status=None, protect_status=None, group_id=None, group_name=None, protect_policy_id=None, protect_policy_name=None, backup_error=None, backup_protection_status=None, count_protect_event=None, count_backuped=None):
+    def __init__(self, host_id=None, agent_id=None, host_name=None, host_ip=None, private_ip=None, os_type=None, os_name=None, host_status=None, ransom_protection_status=None, protect_status=None, group_id=None, group_name=None, protect_policy_id=None, protect_policy_name=None, backup_error=None, backup_protection_status=None, count_protect_event=None, count_backuped=None, agent_status=None):
         """ProtectionServerInfo
 
         The model defined in huaweicloud sdk
@@ -76,6 +80,8 @@ class ProtectionServerInfo:
         :type private_ip: str
         :param os_type: 操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
         :type os_type: str
+        :param os_name: 系统名称
+        :type os_name: str
         :param host_status: 服务器状态，包含如下2种。   - ACTIVE ：运行中。   - SHUTOFF ：关机。
         :type host_status: str
         :param ransom_protection_status: 勒索防护状态，包含如下4种。   - closed ：关闭。   - opened ：开启。   - opening ：开启中。   - closing ：关闭中。
@@ -98,6 +104,8 @@ class ProtectionServerInfo:
         :type count_protect_event: int
         :param count_backuped: 已有备份数
         :type count_backuped: int
+        :param agent_status: Agent状态
+        :type agent_status: str
         """
         
         
@@ -108,6 +116,7 @@ class ProtectionServerInfo:
         self._host_ip = None
         self._private_ip = None
         self._os_type = None
+        self._os_name = None
         self._host_status = None
         self._ransom_protection_status = None
         self._protect_status = None
@@ -119,6 +128,7 @@ class ProtectionServerInfo:
         self._backup_protection_status = None
         self._count_protect_event = None
         self._count_backuped = None
+        self._agent_status = None
         self.discriminator = None
 
         if host_id is not None:
@@ -133,6 +143,8 @@ class ProtectionServerInfo:
             self.private_ip = private_ip
         if os_type is not None:
             self.os_type = os_type
+        if os_name is not None:
+            self.os_name = os_name
         if host_status is not None:
             self.host_status = host_status
         if ransom_protection_status is not None:
@@ -155,6 +167,8 @@ class ProtectionServerInfo:
             self.count_protect_event = count_protect_event
         if count_backuped is not None:
             self.count_backuped = count_backuped
+        if agent_status is not None:
+            self.agent_status = agent_status
 
     @property
     def host_id(self):
@@ -287,6 +301,28 @@ class ProtectionServerInfo:
         :type os_type: str
         """
         self._os_type = os_type
+
+    @property
+    def os_name(self):
+        """Gets the os_name of this ProtectionServerInfo.
+
+        系统名称
+
+        :return: The os_name of this ProtectionServerInfo.
+        :rtype: str
+        """
+        return self._os_name
+
+    @os_name.setter
+    def os_name(self, os_name):
+        """Sets the os_name of this ProtectionServerInfo.
+
+        系统名称
+
+        :param os_name: The os_name of this ProtectionServerInfo.
+        :type os_name: str
+        """
+        self._os_name = os_name
 
     @property
     def host_status(self):
@@ -525,6 +561,28 @@ class ProtectionServerInfo:
         :type count_backuped: int
         """
         self._count_backuped = count_backuped
+
+    @property
+    def agent_status(self):
+        """Gets the agent_status of this ProtectionServerInfo.
+
+        Agent状态
+
+        :return: The agent_status of this ProtectionServerInfo.
+        :rtype: str
+        """
+        return self._agent_status
+
+    @agent_status.setter
+    def agent_status(self, agent_status):
+        """Sets the agent_status of this ProtectionServerInfo.
+
+        Agent状态
+
+        :param agent_status: The agent_status of this ProtectionServerInfo.
+        :type agent_status: str
+        """
+        self._agent_status = agent_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

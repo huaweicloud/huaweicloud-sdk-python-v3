@@ -102,6 +102,126 @@ class LtsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_dash_board(self, request):
+        """创建仪表盘
+
+        创建仪表盘
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDashBoard
+        :type request: :class:`huaweicloudsdklts.v2.CreateDashBoardRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.CreateDashBoardResponse`
+        """
+        return self.create_dash_board_with_http_info(request)
+
+    def create_dash_board_with_http_info(self, request):
+        all_params = ['create_dash_board_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/dashboard',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateDashBoardResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_dashboard_group(self, request):
+        """创建仪表盘分组
+
+        创建仪表盘分组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDashboardGroup
+        :type request: :class:`huaweicloudsdklts.v2.CreateDashboardGroupRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.CreateDashboardGroupResponse`
+        """
+        return self.create_dashboard_group_with_http_info(request)
+
+    def create_dashboard_group_with_http_info(self, request):
+        all_params = ['create_dashboard_group']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/dashboard-group',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateDashboardGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_host_group(self, request):
         """创建主机组
 
@@ -466,6 +586,70 @@ class LtsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_search_criterias(self, request):
+        """添加快速查询
+
+        添加快速查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSearchCriterias
+        :type request: :class:`huaweicloudsdklts.v2.CreateSearchCriteriasRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.CreateSearchCriteriasResponse`
+        """
+        return self.create_search_criterias_with_http_info(request)
+
+    def create_search_criterias_with_http_info(self, request):
+        all_params = ['group_id', 'topic_id', 'create_search_criterias_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'topic_id' in local_var_params:
+            path_params['topic_id'] = local_var_params['topic_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/groups/{group_id}/topics/{topic_id}/search-criterias',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateSearchCriteriasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_struct_config(self, request):
         """通过结构化模板创建结构化配置（新）
 
@@ -586,6 +770,70 @@ class LtsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_tags(self, request):
+        """create_tags
+
+        添加标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateTags
+        :type request: :class:`huaweicloudsdklts.v2.CreateTagsRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.CreateTagsResponse`
+        """
+        return self.create_tags_with_http_info(request)
+
+    def create_tags_with_http_info(self, request):
+        all_params = ['resource_type', 'resource_id', 'create_tags']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/{resource_type}/{resource_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_transfer(self, request):
         """创建日志转储（新版）
 
@@ -641,6 +889,66 @@ class LtsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateTransferResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def createfavorite(self, request):
+        """查询Demo
+
+        创建日志收藏
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for Createfavorite
+        :type request: :class:`huaweicloudsdklts.v2.CreatefavoriteRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.CreatefavoriteResponse`
+        """
+        return self.createfavorite_with_http_info(request)
+
+    def createfavorite_with_http_info(self, request):
+        all_params = ['request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/lts/favorite',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreatefavoriteResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1072,6 +1380,70 @@ class LtsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_search_criterias(self, request):
+        """删除快速查询
+
+        删除快速查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteSearchCriterias
+        :type request: :class:`huaweicloudsdklts.v2.DeleteSearchCriteriasRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.DeleteSearchCriteriasResponse`
+        """
+        return self.delete_search_criterias_with_http_info(request)
+
+    def delete_search_criterias_with_http_info(self, request):
+        all_params = ['group_id', 'topic_id', 'delete_search_criterias']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'topic_id' in local_var_params:
+            path_params['topic_id'] = local_var_params['topic_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/groups/{group_id}/topics/{topic_id}/search-criterias',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteSearchCriteriasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_struct_template(self, request):
         """删除结构化配置
 
@@ -1187,6 +1559,66 @@ class LtsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteTransferResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def deletefavorite(self, request):
+        """取消收藏
+
+        取消收藏
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for Deletefavorite
+        :type request: :class:`huaweicloudsdklts.v2.DeletefavoriteRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.DeletefavoriteResponse`
+        """
+        return self.deletefavorite_with_http_info(request)
+
+    def deletefavorite_with_http_info(self, request):
+        all_params = ['fav_res_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'fav_res_id' in local_var_params:
+            path_params['fav_res_id'] = local_var_params['fav_res_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/lts/favorite/{fav_res_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeletefavoriteResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1555,6 +1987,128 @@ class LtsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListChartsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_criterias(self, request):
+        """获取快速查询
+
+        获取快速查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCriterias
+        :type request: :class:`huaweicloudsdklts.v2.ListCriteriasRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.ListCriteriasResponse`
+        """
+        return self.list_criterias_with_http_info(request)
+
+    def list_criterias_with_http_info(self, request):
+        all_params = ['group_id', 'topic_id', 'search_type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'topic_id' in local_var_params:
+            path_params['topic_id'] = local_var_params['topic_id']
+
+        query_params = []
+        if 'search_type' in local_var_params:
+            query_params.append(('search_type', local_var_params['search_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/groups/{group_id}/topics/{topic_id}/search-criterias',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListCriteriasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_history_sql(self, request):
+        """查询用户历史sql
+
+        查询用户历史sql
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListHistorySql
+        :type request: :class:`huaweicloudsdklts.v2.ListHistorySqlRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.ListHistorySqlResponse`
+        """
+        return self.list_history_sql_with_http_info(request)
+
+    def list_history_sql_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/history-sql',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListHistorySqlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2236,6 +2790,66 @@ class LtsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_query_all_search_criterias(self, request):
+        """查询日志组下所有快速查询
+
+        查询日志组下所有快速查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListQueryAllSearchCriterias
+        :type request: :class:`huaweicloudsdklts.v2.ListQueryAllSearchCriteriasRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.ListQueryAllSearchCriteriasResponse`
+        """
+        return self.list_query_all_search_criterias_with_http_info(request)
+
+    def list_query_all_search_criterias_with_http_info(self, request):
+        all_params = ['group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/lts/groups/{group_id}/search-criterias',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListQueryAllSearchCriteriasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_query_structured_logs(self, request):
         """查询结构化日志
 
@@ -2479,6 +3093,66 @@ class LtsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListTimeLineTrafficStatisticsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_topn_traffic_statistics(self, request):
+        """统计top n的日志组或日志流流量
+
+        统计top n的日志组或日志流流量
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTopnTrafficStatistics
+        :type request: :class:`huaweicloudsdklts.v2.ListTopnTrafficStatisticsRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.ListTopnTrafficStatisticsResponse`
+        """
+        return self.list_topn_traffic_statistics_with_http_info(request)
+
+    def list_topn_traffic_statistics_with_http_info(self, request):
+        all_params = ['update_demo_info_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/topn-traffic-statistics',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListTopnTrafficStatisticsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

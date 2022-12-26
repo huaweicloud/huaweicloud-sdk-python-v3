@@ -54,7 +54,7 @@ class EnvParam:
         :type env_type: str
         :param os_type: OS类型，取值：LINUX、WINDOWS
         :type os_type: str
-        :param region: 环境关联region
+        :param region: 环境关联region。创建环境必传
         :type region: str
         :param register_type: 注册类型，取值：API、SERVICE_DISCOVERY、CONSOLE，默认值：API
         :type register_type: str
@@ -71,15 +71,14 @@ class EnvParam:
         self._register_type = None
         self.discriminator = None
 
-        if component_id is not None:
-            self.component_id = component_id
+        self.component_id = component_id
         if description is not None:
             self.description = description
         self.env_name = env_name
         self.env_type = env_type
-        if os_type is not None:
-            self.os_type = os_type
-        self.region = region
+        self.os_type = os_type
+        if region is not None:
+            self.region = region
         if register_type is not None:
             self.register_type = register_type
 
@@ -197,7 +196,7 @@ class EnvParam:
     def region(self):
         """Gets the region of this EnvParam.
 
-        环境关联region
+        环境关联region。创建环境必传
 
         :return: The region of this EnvParam.
         :rtype: str
@@ -208,7 +207,7 @@ class EnvParam:
     def region(self, region):
         """Sets the region of this EnvParam.
 
-        环境关联region
+        环境关联region。创建环境必传
 
         :param region: The region of this EnvParam.
         :type region: str

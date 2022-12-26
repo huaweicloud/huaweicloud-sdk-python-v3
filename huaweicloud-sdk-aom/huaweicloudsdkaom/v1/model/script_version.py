@@ -72,11 +72,11 @@ class ScriptVersion:
         :type name: str
         :param project_id: 租户从IAM申请到的projectid，一般为32位字符串
         :type project_id: str
-        :param reference_number: 脚本引用次数，脚本被任务和模板引用的次数默认是0次,引用次数未非负整数，不能出现负数
+        :param reference_number: 脚本引用次数，脚本被任务和模板引用的次数。默认是0次,引用次数未非负整数，不能出现负数
         :type reference_number: int
         :param script_id: 版本所在的脚本id,根据project_id、脚本名称的和，用guava计算hash(md5)方式获取，比如为：d648c682ef5750f700c050b41692b2b8
         :type script_id: str
-        :param script_language: 脚本语言，目前支持四种，分别是：[\&quot;Shell\&quot;,\&quot;Bat\&quot;,\&quot;Python\&quot;,\&quot;Powershell\&quot;]
+        :param script_language: 脚本语言，目前支持四种，分别是：SHELL BAT PYTHON POWER_SHELL
         :type script_language: str
         :param status_desc: 状态说明  0代表 未上线，1代表已上线  2代表已下线   3代表已禁用
         :type status_desc: int
@@ -277,7 +277,7 @@ class ScriptVersion:
     def reference_number(self):
         """Gets the reference_number of this ScriptVersion.
 
-        脚本引用次数，脚本被任务和模板引用的次数默认是0次,引用次数未非负整数，不能出现负数
+        脚本引用次数，脚本被任务和模板引用的次数。默认是0次,引用次数未非负整数，不能出现负数
 
         :return: The reference_number of this ScriptVersion.
         :rtype: int
@@ -288,7 +288,7 @@ class ScriptVersion:
     def reference_number(self, reference_number):
         """Sets the reference_number of this ScriptVersion.
 
-        脚本引用次数，脚本被任务和模板引用的次数默认是0次,引用次数未非负整数，不能出现负数
+        脚本引用次数，脚本被任务和模板引用的次数。默认是0次,引用次数未非负整数，不能出现负数
 
         :param reference_number: The reference_number of this ScriptVersion.
         :type reference_number: int
@@ -321,7 +321,7 @@ class ScriptVersion:
     def script_language(self):
         """Gets the script_language of this ScriptVersion.
 
-        脚本语言，目前支持四种，分别是：[\"Shell\",\"Bat\",\"Python\",\"Powershell\"]
+        脚本语言，目前支持四种，分别是：SHELL BAT PYTHON POWER_SHELL
 
         :return: The script_language of this ScriptVersion.
         :rtype: str
@@ -332,7 +332,7 @@ class ScriptVersion:
     def script_language(self, script_language):
         """Sets the script_language of this ScriptVersion.
 
-        脚本语言，目前支持四种，分别是：[\"Shell\",\"Bat\",\"Python\",\"Powershell\"]
+        脚本语言，目前支持四种，分别是：SHELL BAT PYTHON POWER_SHELL
 
         :param script_language: The script_language of this ScriptVersion.
         :type script_language: str

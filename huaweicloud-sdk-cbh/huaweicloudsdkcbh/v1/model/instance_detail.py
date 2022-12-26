@@ -20,7 +20,7 @@ class InstanceDetail:
     sensitive_list = []
 
     openapi_types = {
-        'public_ip': 'str',
+        'publicip': 'str',
         'exp_time': 'str',
         'start_time': 'str',
         'end_time': 'str',
@@ -52,52 +52,66 @@ class InstanceDetail:
         'new_bastion_version': 'str',
         'instance_status': 'str',
         'instance_description': 'str',
-        'is_auto_renew': 'int'
+        'is_auto_renew': 'int',
+        'slave_zone': 'str',
+        'enterprise_project_id': 'str',
+        'instance_type': 'str',
+        'ha_id': 'str',
+        'slave_zone_display': 'str',
+        'web_port': 'str',
+        'vip': 'str'
     }
 
     attribute_map = {
-        'public_ip': 'public_ip',
-        'exp_time': 'exp_time',
-        'start_time': 'start_time',
-        'end_time': 'end_time',
-        'release_time': 'release_time',
+        'publicip': 'publicip',
+        'exp_time': 'expTime',
+        'start_time': 'startTime',
+        'end_time': 'endTime',
+        'release_time': 'releaseTime',
         'name': 'name',
-        'instance_id': 'instance_id',
-        'private_ip': 'private_ip',
-        'task_status': 'task_status',
+        'instance_id': 'instanceId',
+        'private_ip': 'privateIp',
+        'task_status': 'taskStatus',
         'status': 'status',
         'created': 'created',
         'region': 'region',
         'zone': 'zone',
         'availability_zone_display': 'availability_zone_display',
-        'vpc_id': 'vpc_id',
-        'subnet_id': 'subnet_id',
-        'security_group_id': 'security_group_id',
+        'vpc_id': 'vpcId',
+        'subnet_id': 'subnetId',
+        'security_group_id': 'securityGroupId',
         'specification': 'specification',
         'update': 'update',
-        'createinstance_status': 'createinstance_status',
-        'fail_reason': 'fail_reason',
-        'instance_key': 'instance_key',
-        'order_id': 'order_id',
-        'period_num': 'period_num',
-        'resource_id': 'resource_id',
+        'createinstance_status': 'createinstanceStatus',
+        'fail_reason': 'failReason',
+        'instance_key': 'instanceKey',
+        'order_id': 'orderId',
+        'period_num': 'periodNum',
+        'resource_id': 'resourceId',
         'bastion_type': 'bastion_type',
-        'alter_permit': 'alter_permit',
-        'public_id': 'public_id',
-        'bastion_version': 'bastion_version',
-        'new_bastion_version': 'new_bastion_version',
-        'instance_status': 'instance_status',
-        'instance_description': 'instance_description',
-        'is_auto_renew': 'is_auto_renew'
+        'alter_permit': 'alterPermit',
+        'public_id': 'publicId',
+        'bastion_version': 'bastionVersion',
+        'new_bastion_version': 'newBastionVersion',
+        'instance_status': 'instanceStatus',
+        'instance_description': 'instanceDescription',
+        'is_auto_renew': 'is_auto_renew',
+        'slave_zone': 'slaveZone',
+        'enterprise_project_id': 'enterpriseProjectId',
+        'instance_type': 'instanceType',
+        'ha_id': 'haId',
+        'slave_zone_display': 'slaveZoneDisplay',
+        'web_port': 'webPort',
+        'vip': 'vip'
     }
 
-    def __init__(self, public_ip=None, exp_time=None, start_time=None, end_time=None, release_time=None, name=None, instance_id=None, private_ip=None, task_status=None, status=None, created=None, region=None, zone=None, availability_zone_display=None, vpc_id=None, subnet_id=None, security_group_id=None, specification=None, update=None, createinstance_status=None, fail_reason=None, instance_key=None, order_id=None, period_num=None, resource_id=None, bastion_type=None, alter_permit=None, public_id=None, bastion_version=None, new_bastion_version=None, instance_status=None, instance_description=None, is_auto_renew=None):
+    def __init__(self, publicip=None, exp_time=None, start_time=None, end_time=None, release_time=None, name=None, instance_id=None, private_ip=None, task_status=None, status=None, created=None, region=None, zone=None, availability_zone_display=None, vpc_id=None, subnet_id=None, security_group_id=None, specification=None, update=None, createinstance_status=None, fail_reason=None, instance_key=None, order_id=None, period_num=None, resource_id=None, bastion_type=None, alter_permit=None, public_id=None, bastion_version=None, new_bastion_version=None, instance_status=None, instance_description=None, is_auto_renew=None, slave_zone=None, enterprise_project_id=None, instance_type=None, ha_id=None, slave_zone_display=None, web_port=None, vip=None):
         """InstanceDetail
 
         The model defined in huaweicloud sdk
 
-        :param public_ip: 弹性ip
-        :type public_ip: str
+        :param publicip: 弹性ip
+        :type publicip: str
         :param exp_time: 过期时间，要求用UTC时间表示
         :type exp_time: str
         :param start_time: 开始时间，要求用UTC时间表示
@@ -162,11 +176,25 @@ class InstanceDetail:
         :type instance_description: str
         :param is_auto_renew: 是否支持续费
         :type is_auto_renew: int
+        :param slave_zone: 备可用分区
+        :type slave_zone: str
+        :param enterprise_project_id: 企业项目id
+        :type enterprise_project_id: str
+        :param instance_type: 实例类型
+        :type instance_type: str
+        :param ha_id: 主备ID
+        :type ha_id: str
+        :param slave_zone_display: 备可用分区名称
+        :type slave_zone_display: str
+        :param web_port: 端口号
+        :type web_port: str
+        :param vip: 浮动ip
+        :type vip: str
         """
         
         
 
-        self._public_ip = None
+        self._publicip = None
         self._exp_time = None
         self._start_time = None
         self._end_time = None
@@ -199,9 +227,16 @@ class InstanceDetail:
         self._instance_status = None
         self._instance_description = None
         self._is_auto_renew = None
+        self._slave_zone = None
+        self._enterprise_project_id = None
+        self._instance_type = None
+        self._ha_id = None
+        self._slave_zone_display = None
+        self._web_port = None
+        self._vip = None
         self.discriminator = None
 
-        self.public_ip = public_ip
+        self.publicip = publicip
         self.exp_time = exp_time
         self.start_time = start_time
         self.end_time = end_time
@@ -233,29 +268,44 @@ class InstanceDetail:
         self.new_bastion_version = new_bastion_version
         self.instance_status = instance_status
         self.instance_description = instance_description
-        self.is_auto_renew = is_auto_renew
+        if is_auto_renew is not None:
+            self.is_auto_renew = is_auto_renew
+        if slave_zone is not None:
+            self.slave_zone = slave_zone
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if instance_type is not None:
+            self.instance_type = instance_type
+        if ha_id is not None:
+            self.ha_id = ha_id
+        if slave_zone_display is not None:
+            self.slave_zone_display = slave_zone_display
+        if web_port is not None:
+            self.web_port = web_port
+        if vip is not None:
+            self.vip = vip
 
     @property
-    def public_ip(self):
-        """Gets the public_ip of this InstanceDetail.
+    def publicip(self):
+        """Gets the publicip of this InstanceDetail.
 
         弹性ip
 
-        :return: The public_ip of this InstanceDetail.
+        :return: The publicip of this InstanceDetail.
         :rtype: str
         """
-        return self._public_ip
+        return self._publicip
 
-    @public_ip.setter
-    def public_ip(self, public_ip):
-        """Sets the public_ip of this InstanceDetail.
+    @publicip.setter
+    def publicip(self, publicip):
+        """Sets the publicip of this InstanceDetail.
 
         弹性ip
 
-        :param public_ip: The public_ip of this InstanceDetail.
-        :type public_ip: str
+        :param publicip: The publicip of this InstanceDetail.
+        :type publicip: str
         """
-        self._public_ip = public_ip
+        self._publicip = publicip
 
     @property
     def exp_time(self):
@@ -960,6 +1010,160 @@ class InstanceDetail:
         :type is_auto_renew: int
         """
         self._is_auto_renew = is_auto_renew
+
+    @property
+    def slave_zone(self):
+        """Gets the slave_zone of this InstanceDetail.
+
+        备可用分区
+
+        :return: The slave_zone of this InstanceDetail.
+        :rtype: str
+        """
+        return self._slave_zone
+
+    @slave_zone.setter
+    def slave_zone(self, slave_zone):
+        """Sets the slave_zone of this InstanceDetail.
+
+        备可用分区
+
+        :param slave_zone: The slave_zone of this InstanceDetail.
+        :type slave_zone: str
+        """
+        self._slave_zone = slave_zone
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this InstanceDetail.
+
+        企业项目id
+
+        :return: The enterprise_project_id of this InstanceDetail.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this InstanceDetail.
+
+        企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this InstanceDetail.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def instance_type(self):
+        """Gets the instance_type of this InstanceDetail.
+
+        实例类型
+
+        :return: The instance_type of this InstanceDetail.
+        :rtype: str
+        """
+        return self._instance_type
+
+    @instance_type.setter
+    def instance_type(self, instance_type):
+        """Sets the instance_type of this InstanceDetail.
+
+        实例类型
+
+        :param instance_type: The instance_type of this InstanceDetail.
+        :type instance_type: str
+        """
+        self._instance_type = instance_type
+
+    @property
+    def ha_id(self):
+        """Gets the ha_id of this InstanceDetail.
+
+        主备ID
+
+        :return: The ha_id of this InstanceDetail.
+        :rtype: str
+        """
+        return self._ha_id
+
+    @ha_id.setter
+    def ha_id(self, ha_id):
+        """Sets the ha_id of this InstanceDetail.
+
+        主备ID
+
+        :param ha_id: The ha_id of this InstanceDetail.
+        :type ha_id: str
+        """
+        self._ha_id = ha_id
+
+    @property
+    def slave_zone_display(self):
+        """Gets the slave_zone_display of this InstanceDetail.
+
+        备可用分区名称
+
+        :return: The slave_zone_display of this InstanceDetail.
+        :rtype: str
+        """
+        return self._slave_zone_display
+
+    @slave_zone_display.setter
+    def slave_zone_display(self, slave_zone_display):
+        """Sets the slave_zone_display of this InstanceDetail.
+
+        备可用分区名称
+
+        :param slave_zone_display: The slave_zone_display of this InstanceDetail.
+        :type slave_zone_display: str
+        """
+        self._slave_zone_display = slave_zone_display
+
+    @property
+    def web_port(self):
+        """Gets the web_port of this InstanceDetail.
+
+        端口号
+
+        :return: The web_port of this InstanceDetail.
+        :rtype: str
+        """
+        return self._web_port
+
+    @web_port.setter
+    def web_port(self, web_port):
+        """Sets the web_port of this InstanceDetail.
+
+        端口号
+
+        :param web_port: The web_port of this InstanceDetail.
+        :type web_port: str
+        """
+        self._web_port = web_port
+
+    @property
+    def vip(self):
+        """Gets the vip of this InstanceDetail.
+
+        浮动ip
+
+        :return: The vip of this InstanceDetail.
+        :rtype: str
+        """
+        return self._vip
+
+    @vip.setter
+    def vip(self, vip):
+        """Sets the vip of this InstanceDetail.
+
+        浮动ip
+
+        :param vip: The vip of this InstanceDetail.
+        :type vip: str
+        """
+        self._vip = vip
 
     def to_dict(self):
         """Returns the model properties as a dict"""

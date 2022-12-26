@@ -76,10 +76,8 @@ class ModifyTransTemplate:
         self._common = None
         self.discriminator = None
 
-        if group_id is not None:
-            self.group_id = group_id
-        if name is not None:
-            self.name = name
+        self.group_id = group_id
+        self.name = name
         if is_default is not None:
             self.is_default = is_default
         if is_auto_encrypt is not None:

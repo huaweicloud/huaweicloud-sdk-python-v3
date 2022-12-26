@@ -25,8 +25,7 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
         'name': 'str',
         'operation_type': 'str',
         'operation_definition': 'OperationDefinitionInfo',
-        'trigger': 'BackupTriggerInfo',
-        'associated_vaults': 'list[AssociatedVaultsInfo]'
+        'trigger': 'BackupTriggerInfo'
     }
 
     attribute_map = {
@@ -35,11 +34,10 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
         'name': 'name',
         'operation_type': 'operation_type',
         'operation_definition': 'operation_definition',
-        'trigger': 'trigger',
-        'associated_vaults': 'associated_vaults'
+        'trigger': 'trigger'
     }
 
-    def __init__(self, enabled=None, id=None, name=None, operation_type=None, operation_definition=None, trigger=None, associated_vaults=None):
+    def __init__(self, enabled=None, id=None, name=None, operation_type=None, operation_definition=None, trigger=None):
         """ShowBackupPolicyInfoResponse
 
         The model defined in huaweicloud sdk
@@ -56,8 +54,6 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
         :type operation_definition: :class:`huaweicloudsdkhss.v5.OperationDefinitionInfo`
         :param trigger: 
         :type trigger: :class:`huaweicloudsdkhss.v5.BackupTriggerInfo`
-        :param associated_vaults: 关联的存储库
-        :type associated_vaults: list[:class:`huaweicloudsdkhss.v5.AssociatedVaultsInfo`]
         """
         
         super(ShowBackupPolicyInfoResponse, self).__init__()
@@ -68,7 +64,6 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
         self._operation_type = None
         self._operation_definition = None
         self._trigger = None
-        self._associated_vaults = None
         self.discriminator = None
 
         if enabled is not None:
@@ -83,8 +78,6 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
             self.operation_definition = operation_definition
         if trigger is not None:
             self.trigger = trigger
-        if associated_vaults is not None:
-            self.associated_vaults = associated_vaults
 
     @property
     def enabled(self):
@@ -209,28 +202,6 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
         :type trigger: :class:`huaweicloudsdkhss.v5.BackupTriggerInfo`
         """
         self._trigger = trigger
-
-    @property
-    def associated_vaults(self):
-        """Gets the associated_vaults of this ShowBackupPolicyInfoResponse.
-
-        关联的存储库
-
-        :return: The associated_vaults of this ShowBackupPolicyInfoResponse.
-        :rtype: list[:class:`huaweicloudsdkhss.v5.AssociatedVaultsInfo`]
-        """
-        return self._associated_vaults
-
-    @associated_vaults.setter
-    def associated_vaults(self, associated_vaults):
-        """Sets the associated_vaults of this ShowBackupPolicyInfoResponse.
-
-        关联的存储库
-
-        :param associated_vaults: The associated_vaults of this ShowBackupPolicyInfoResponse.
-        :type associated_vaults: list[:class:`huaweicloudsdkhss.v5.AssociatedVaultsInfo`]
-        """
-        self._associated_vaults = associated_vaults
 
     def to_dict(self):
         """Returns the model properties as a dict"""

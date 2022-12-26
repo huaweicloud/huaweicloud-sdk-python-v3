@@ -41,8 +41,7 @@ class NotificationConfigReq:
         self._notifications = None
         self.discriminator = None
 
-        if notifications is not None:
-            self.notifications = notifications
+        self.notifications = notifications
 
     @property
     def notifications(self):

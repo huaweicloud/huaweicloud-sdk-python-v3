@@ -45,7 +45,7 @@ class AomAsyncClient(Client):
     def create_fast_execute_script_async(self, request):
         """快速创建并执行脚本
 
-        该接口用于创建快速执行脚本的任务，可以指定脚本类型，执行用户，脚本参数，执行机器，脚本内容，在用户指定的机器上执行脚本。
+        该接口用于创建快速执行脚本的任务，可以指定脚本类型，执行用户，脚本参数，执行机器，脚本内容，在用户指定的机器上执行脚本。（注：接口目前开放的region为：苏州201）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -106,7 +106,7 @@ class AomAsyncClient(Client):
     def create_workflow_async(self, request):
         """创建任务
 
-        该接口用于创建工作流（任务），返回工作流详情。任务类型取决于模板名称和&#39;input&#39;参数。
+        该接口用于创建工作流（任务），返回工作流详情。任务类型取决于模板名称和&#39;input&#39;参数。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -167,7 +167,7 @@ class AomAsyncClient(Client):
     def execute_workflow_async(self, request):
         """执行工作流
 
-        该接口可下发执行指定的任务
+        该接口可下发执行指定的任务。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -228,7 +228,7 @@ class AomAsyncClient(Client):
     def list_all_job_by_name_async(self, request):
         """作业管理主页模糊查询
 
-        该接口可查询已创建的作业，可指定作业名称和作业创建人去精确查询，返回作业列表信息。
+        该接口可查询已创建的作业，可指定作业名称和作业创建人去精确查询，返回作业列表信息。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -289,7 +289,7 @@ class AomAsyncClient(Client):
     def list_all_script_by_name_async(self, request):
         """脚本主页查询
 
-        该接口是脚本主页查询，可指定脚本名称和脚本创建人进行精确查询，返回包含脚本基本信息的列表数据。
+        该接口是脚本主页查询，可指定脚本名称和脚本创建人进行精确查询，返回包含脚本基本信息的列表数据。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -350,7 +350,7 @@ class AomAsyncClient(Client):
     def list_all_version_by_version_id_async(self, request):
         """脚本管理主页查询，版本管理查询
 
-        该接口可查询指定脚本ID下的所有版本，返回该名称的脚本版本列表信息。
+        该接口可查询指定脚本ID下的所有版本，返回该名称的脚本版本列表信息。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -411,7 +411,7 @@ class AomAsyncClient(Client):
     def list_template_by_job_id_async(self, request):
         """根据作业id查询方案(自定义模板)列表
 
-        该接口可根据作业ID查询执行方案，分页返回执行方案列表。
+        该接口可根据作业ID查询执行方案，分页返回执行方案列表。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -474,7 +474,7 @@ class AomAsyncClient(Client):
     def list_workflow_async(self, request):
         """查询任务列表
 
-        该接口可返回已经创建的任务列表，可按任务名称，任务状态，任务类型，执行人，更新时间为查询条件分页查询任务。
+        该接口可返回已经创建的任务列表，可按任务名称，任务状态，任务类型，执行人，更新时间为查询条件分页查询任务。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -535,7 +535,7 @@ class AomAsyncClient(Client):
     def list_workflow_executions_async(self, request):
         """获取任务执行历史
 
-        该接口可获取执行任务的执行历史。
+        该接口可获取执行任务的执行历史。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -598,7 +598,7 @@ class AomAsyncClient(Client):
     def search_template_by_id_async(self, request):
         """获取方案信息
 
-        该接口可根据执行方案id查询执行方案详情。
+        该接口可根据执行方案id查询执行方案详情。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -661,7 +661,7 @@ class AomAsyncClient(Client):
     def search_workflow_execution_detail_async(self, request):
         """获取工作流执行中的执行详情
 
-        该接口可获取任务的执行详情，可指定工作流ID和执行ID去查询对应的任务，返回任务执行详情。
+        该接口可获取任务的执行详情，可指定工作流ID和执行ID去查询对应的任务，返回任务执行详情。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -724,7 +724,7 @@ class AomAsyncClient(Client):
     def start_pausing_workflow_executions_async(self, request):
         """对暂停中的任务进行操作
 
-        该接口可对任务进行失败重试、失败跳过、暂停继续操作，返回操作结果。
+        该接口可对任务进行失败重试、失败跳过、暂停继续操作，返回操作结果。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -791,7 +791,7 @@ class AomAsyncClient(Client):
     def stop_execution_async(self, request):
         """终止任务执行
 
-        该接口可终止正在执行的任务，指定工作流ID和执行ID去终止对应的任务，返回终止操作状态。
+        该接口可终止正在执行的任务，指定工作流ID和执行ID去终止对应的任务，返回终止操作状态。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -854,7 +854,7 @@ class AomAsyncClient(Client):
     def update_workflow_trigger_status_async(self, request):
         """更新任务
 
-        更新定时任务的启停状态，可启动定时任务或停止定时任务，返回操作任务结果。
+        更新定时任务的启停状态，可启动定时任务或停止定时任务，返回操作任务结果。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

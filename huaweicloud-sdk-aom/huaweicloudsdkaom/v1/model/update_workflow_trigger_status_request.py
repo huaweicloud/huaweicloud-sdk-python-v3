@@ -34,7 +34,7 @@ class UpdateWorkflowTriggerStatusRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workflow_id: 任务id， 待修改任务的id。
+        :param workflow_id: 任务id，待修改任务的id。
         :type workflow_id: str
         :param action: 启动或暂停任务的定时执行。enable为开启定时任务，disable为关闭定时任务
         :type action: str
@@ -47,14 +47,13 @@ class UpdateWorkflowTriggerStatusRequest:
         self.discriminator = None
 
         self.workflow_id = workflow_id
-        if action is not None:
-            self.action = action
+        self.action = action
 
     @property
     def workflow_id(self):
         """Gets the workflow_id of this UpdateWorkflowTriggerStatusRequest.
 
-        任务id， 待修改任务的id。
+        任务id，待修改任务的id。
 
         :return: The workflow_id of this UpdateWorkflowTriggerStatusRequest.
         :rtype: str
@@ -65,7 +64,7 @@ class UpdateWorkflowTriggerStatusRequest:
     def workflow_id(self, workflow_id):
         """Sets the workflow_id of this UpdateWorkflowTriggerStatusRequest.
 
-        任务id， 待修改任务的id。
+        任务id，待修改任务的id。
 
         :param workflow_id: The workflow_id of this UpdateWorkflowTriggerStatusRequest.
         :type workflow_id: str

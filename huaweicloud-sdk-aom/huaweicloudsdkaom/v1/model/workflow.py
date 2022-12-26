@@ -32,7 +32,6 @@ class Workflow:
         'template_name': 'str',
         'template_id': 'str',
         'input': 'dict(str, object)',
-        'param_name': 'str',
         'last_execution_id': 'str',
         'status': 'str',
         'citation_urns': 'list[str]',
@@ -44,8 +43,6 @@ class Workflow:
         'service_scenario': 'str',
         'service_name': 'str',
         'task_type': 'str',
-        'domain_id': 'str',
-        'domain_name': 'str',
         'project_id': 'str',
         'workflow_id': 'str',
         'task_status': 'str',
@@ -78,7 +75,6 @@ class Workflow:
         'template_name': 'template_name',
         'template_id': 'template_id',
         'input': 'input',
-        'param_name': 'param_name',
         'last_execution_id': 'last_execution_id',
         'status': 'status',
         'citation_urns': 'citation_urns',
@@ -90,8 +86,6 @@ class Workflow:
         'service_scenario': 'service_scenario',
         'service_name': 'service_name',
         'task_type': 'task_type',
-        'domain_id': 'domain_id',
-        'domain_name': 'domain_name',
         'project_id': 'project_id',
         'workflow_id': 'workflow_id',
         'task_status': 'task_status',
@@ -111,16 +105,16 @@ class Workflow:
         'last_execute_by': 'last_execute_by'
     }
 
-    def __init__(self, id=None, name=None, type=None, description=None, tags=None, create_time=None, create_by=None, update_time=None, update_by=None, template_name=None, template_id=None, input=None, param_name=None, last_execution_id=None, status=None, citation_urns=None, last_execution_end_time=None, last_execution_start_time=None, quote=None, job_name=None, job_id=None, service_scenario=None, service_name=None, task_type=None, domain_id=None, domain_name=None, project_id=None, workflow_id=None, task_status=None, nodes=None, edit_time=None, execution_action_rules=None, execution_permission=None, global_parameters=None, is_delete=None, steps=None, output=None, trigger_id=None, trigger_status=None, approve_id=None, template_i18n=None, enterprise_project_id=None, last_execute_by=None):
+    def __init__(self, id=None, name=None, type=None, description=None, tags=None, create_time=None, create_by=None, update_time=None, update_by=None, template_name=None, template_id=None, input=None, last_execution_id=None, status=None, citation_urns=None, last_execution_end_time=None, last_execution_start_time=None, quote=None, job_name=None, job_id=None, service_scenario=None, service_name=None, task_type=None, project_id=None, workflow_id=None, task_status=None, nodes=None, edit_time=None, execution_action_rules=None, execution_permission=None, global_parameters=None, is_delete=None, steps=None, output=None, trigger_id=None, trigger_status=None, approve_id=None, template_i18n=None, enterprise_project_id=None, last_execute_by=None):
         """Workflow
 
         The model defined in huaweicloud sdk
 
         :param id: 工作流id，唯一标识，根据project_id和workflow_name生成。
         :type id: str
-        :param name: 工作流名称，需要满足：[^\\\\&gt;+&lt;^;#\&quot;\\s&amp;?%&#x3D;&#39;$￥@*/\\]\\[【】{}|:,.，。：‘’“、—！!~&#x60;·？《》…]{1,64}。
+        :param name: 工作流名称，满足：[^\\\\&gt;+&lt;^;#\&quot;\\s&amp;?%&#x3D;&#39;$￥@*/\\]\\[【】{}|:,.，。：‘’“、—！!~&#x60;·？《》…]{1,64}。
         :type name: str
-        :param type: 工作流类型，可以为cron/manul/event
+        :param type: 工作流类型，可以为cron、manual
         :type type: str
         :param description: 工作流描述信息。
         :type description: str
@@ -140,8 +134,6 @@ class Workflow:
         :type template_id: str
         :param input: 任务执行时需要的参数列表。
         :type input: dict(str, object)
-        :param param_name: 参数名，该字段已经被删除，不再使用
-        :type param_name: str
         :param last_execution_id: 最近一次执行id，也是工作流id
         :type last_execution_id: str
         :param status: 任务状态，包含success，fail,executing
@@ -164,10 +156,6 @@ class Workflow:
         :type service_name: str
         :param task_type: 任务类型
         :type task_type: str
-        :param domain_id: functiongraph返回的DOMAIN_ID
-        :type domain_id: str
-        :param domain_name: functiongraph返回的DOMAIN_NAME
-        :type domain_name: str
         :param project_id: functiongraph返回的PROJECT_ID
         :type project_id: str
         :param workflow_id: functiongraph返回的WORKFLOW_ID
@@ -218,7 +206,6 @@ class Workflow:
         self._template_name = None
         self._template_id = None
         self._input = None
-        self._param_name = None
         self._last_execution_id = None
         self._status = None
         self._citation_urns = None
@@ -230,8 +217,6 @@ class Workflow:
         self._service_scenario = None
         self._service_name = None
         self._task_type = None
-        self._domain_id = None
-        self._domain_name = None
         self._project_id = None
         self._workflow_id = None
         self._task_status = None
@@ -274,8 +259,6 @@ class Workflow:
             self.template_id = template_id
         if input is not None:
             self.input = input
-        if param_name is not None:
-            self.param_name = param_name
         if last_execution_id is not None:
             self.last_execution_id = last_execution_id
         if status is not None:
@@ -298,10 +281,6 @@ class Workflow:
             self.service_name = service_name
         if task_type is not None:
             self.task_type = task_type
-        if domain_id is not None:
-            self.domain_id = domain_id
-        if domain_name is not None:
-            self.domain_name = domain_name
         if project_id is not None:
             self.project_id = project_id
         if workflow_id is not None:
@@ -363,7 +342,7 @@ class Workflow:
     def name(self):
         """Gets the name of this Workflow.
 
-        工作流名称，需要满足：[^\\\\>+<^;#\"\\s&?%='$￥@*/\\]\\[【】{}|:,.，。：‘’“、—！!~`·？《》…]{1,64}。
+        工作流名称，满足：[^\\\\>+<^;#\"\\s&?%='$￥@*/\\]\\[【】{}|:,.，。：‘’“、—！!~`·？《》…]{1,64}。
 
         :return: The name of this Workflow.
         :rtype: str
@@ -374,7 +353,7 @@ class Workflow:
     def name(self, name):
         """Sets the name of this Workflow.
 
-        工作流名称，需要满足：[^\\\\>+<^;#\"\\s&?%='$￥@*/\\]\\[【】{}|:,.，。：‘’“、—！!~`·？《》…]{1,64}。
+        工作流名称，满足：[^\\\\>+<^;#\"\\s&?%='$￥@*/\\]\\[【】{}|:,.，。：‘’“、—！!~`·？《》…]{1,64}。
 
         :param name: The name of this Workflow.
         :type name: str
@@ -385,7 +364,7 @@ class Workflow:
     def type(self):
         """Gets the type of this Workflow.
 
-        工作流类型，可以为cron/manul/event
+        工作流类型，可以为cron、manual
 
         :return: The type of this Workflow.
         :rtype: str
@@ -396,7 +375,7 @@ class Workflow:
     def type(self, type):
         """Sets the type of this Workflow.
 
-        工作流类型，可以为cron/manul/event
+        工作流类型，可以为cron、manual
 
         :param type: The type of this Workflow.
         :type type: str
@@ -600,28 +579,6 @@ class Workflow:
         :type input: dict(str, object)
         """
         self._input = input
-
-    @property
-    def param_name(self):
-        """Gets the param_name of this Workflow.
-
-        参数名，该字段已经被删除，不再使用
-
-        :return: The param_name of this Workflow.
-        :rtype: str
-        """
-        return self._param_name
-
-    @param_name.setter
-    def param_name(self, param_name):
-        """Sets the param_name of this Workflow.
-
-        参数名，该字段已经被删除，不再使用
-
-        :param param_name: The param_name of this Workflow.
-        :type param_name: str
-        """
-        self._param_name = param_name
 
     @property
     def last_execution_id(self):
@@ -864,50 +821,6 @@ class Workflow:
         :type task_type: str
         """
         self._task_type = task_type
-
-    @property
-    def domain_id(self):
-        """Gets the domain_id of this Workflow.
-
-        functiongraph返回的DOMAIN_ID
-
-        :return: The domain_id of this Workflow.
-        :rtype: str
-        """
-        return self._domain_id
-
-    @domain_id.setter
-    def domain_id(self, domain_id):
-        """Sets the domain_id of this Workflow.
-
-        functiongraph返回的DOMAIN_ID
-
-        :param domain_id: The domain_id of this Workflow.
-        :type domain_id: str
-        """
-        self._domain_id = domain_id
-
-    @property
-    def domain_name(self):
-        """Gets the domain_name of this Workflow.
-
-        functiongraph返回的DOMAIN_NAME
-
-        :return: The domain_name of this Workflow.
-        :rtype: str
-        """
-        return self._domain_name
-
-    @domain_name.setter
-    def domain_name(self, domain_name):
-        """Sets the domain_name of this Workflow.
-
-        functiongraph返回的DOMAIN_NAME
-
-        :param domain_name: The domain_name of this Workflow.
-        :type domain_name: str
-        """
-        self._domain_name = domain_name
 
     @property
     def project_id(self):

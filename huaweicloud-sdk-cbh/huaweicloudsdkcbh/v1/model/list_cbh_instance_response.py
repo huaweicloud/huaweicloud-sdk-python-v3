@@ -27,7 +27,7 @@ class ListCbhInstanceResponse(SdkResponse):
 
     attribute_map = {
         'total': 'total',
-        'quota_detail': 'quota_detail',
+        'quota_detail': 'quotaDetail',
         'instance': 'instance'
     }
 

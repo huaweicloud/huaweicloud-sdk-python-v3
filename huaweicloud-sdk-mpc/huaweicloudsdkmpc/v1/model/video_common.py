@@ -25,11 +25,9 @@ class VideoCommon:
         'profile': 'int',
         'level': 'int',
         'preset': 'int',
-        'ref_frames_count': 'int',
         'max_iframes_interval': 'int',
         'bframes_count': 'int',
         'frame_rate': 'int',
-        'aspect_ratio': 'int',
         'black_cut': 'int'
     }
 
@@ -39,15 +37,13 @@ class VideoCommon:
         'profile': 'profile',
         'level': 'level',
         'preset': 'preset',
-        'ref_frames_count': 'ref_frames_count',
         'max_iframes_interval': 'max_iframes_interval',
         'bframes_count': 'bframes_count',
         'frame_rate': 'frame_rate',
-        'aspect_ratio': 'aspect_ratio',
         'black_cut': 'black_cut'
     }
 
-    def __init__(self, output_policy=None, codec=None, profile=None, level=None, preset=None, ref_frames_count=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, aspect_ratio=None, black_cut=None):
+    def __init__(self, output_policy=None, codec=None, profile=None, level=None, preset=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, black_cut=None):
         """VideoCommon
 
         The model defined in huaweicloud sdk
@@ -62,16 +58,12 @@ class VideoCommon:
         :type level: int
         :param preset: 编码质量等级。  取值如下： - 1：VIDEO_PRESET_HSPEED2 - 2：VIDEO_PRESET_HSPEED - 3：VIDEO_PRESET_NORMAL &gt; 值越大，表示编码的质量越高，转码耗时也越长。 
         :type preset: int
-        :param ref_frames_count: 最大参考帧数。  取值范围： - H264：[1，8]，默认值为4 。 - H265：固定值4。  单位：帧。 
-        :type ref_frames_count: int
         :param max_iframes_interval: I帧最大间隔  取值范围：[2，10]。  默认值：5。  单位：秒。 
         :type max_iframes_interval: int
         :param bframes_count: 最大B帧间隔。  取值范围： - H264：[0，7]，默认值为4。 - H265：[0，7]，默认值为7。  单位：帧。 
         :type bframes_count: int
         :param frame_rate: 帧率  取值范围：0或[5,60]之间的整数，0表示自适应  单位：帧每秒 
         :type frame_rate: int
-        :param aspect_ratio: 纵横比，图像缩放方式 
-        :type aspect_ratio: int
         :param black_cut: 黑边剪裁类型  取值如下： - 0：不开启黑边剪裁 - 1：开启黑边剪裁，低复杂度算法，针对长视频（&gt;5分钟） - 2：开启黑边剪裁，高复杂度算法，针对短视频（&lt;&#x3D;5分钟） 
         :type black_cut: int
         """
@@ -83,11 +75,9 @@ class VideoCommon:
         self._profile = None
         self._level = None
         self._preset = None
-        self._ref_frames_count = None
         self._max_iframes_interval = None
         self._bframes_count = None
         self._frame_rate = None
-        self._aspect_ratio = None
         self._black_cut = None
         self.discriminator = None
 
@@ -101,16 +91,12 @@ class VideoCommon:
             self.level = level
         if preset is not None:
             self.preset = preset
-        if ref_frames_count is not None:
-            self.ref_frames_count = ref_frames_count
         if max_iframes_interval is not None:
             self.max_iframes_interval = max_iframes_interval
         if bframes_count is not None:
             self.bframes_count = bframes_count
         if frame_rate is not None:
             self.frame_rate = frame_rate
-        if aspect_ratio is not None:
-            self.aspect_ratio = aspect_ratio
         if black_cut is not None:
             self.black_cut = black_cut
 
@@ -225,28 +211,6 @@ class VideoCommon:
         self._preset = preset
 
     @property
-    def ref_frames_count(self):
-        """Gets the ref_frames_count of this VideoCommon.
-
-        最大参考帧数。  取值范围： - H264：[1，8]，默认值为4 。 - H265：固定值4。  单位：帧。 
-
-        :return: The ref_frames_count of this VideoCommon.
-        :rtype: int
-        """
-        return self._ref_frames_count
-
-    @ref_frames_count.setter
-    def ref_frames_count(self, ref_frames_count):
-        """Sets the ref_frames_count of this VideoCommon.
-
-        最大参考帧数。  取值范围： - H264：[1，8]，默认值为4 。 - H265：固定值4。  单位：帧。 
-
-        :param ref_frames_count: The ref_frames_count of this VideoCommon.
-        :type ref_frames_count: int
-        """
-        self._ref_frames_count = ref_frames_count
-
-    @property
     def max_iframes_interval(self):
         """Gets the max_iframes_interval of this VideoCommon.
 
@@ -311,28 +275,6 @@ class VideoCommon:
         :type frame_rate: int
         """
         self._frame_rate = frame_rate
-
-    @property
-    def aspect_ratio(self):
-        """Gets the aspect_ratio of this VideoCommon.
-
-        纵横比，图像缩放方式 
-
-        :return: The aspect_ratio of this VideoCommon.
-        :rtype: int
-        """
-        return self._aspect_ratio
-
-    @aspect_ratio.setter
-    def aspect_ratio(self, aspect_ratio):
-        """Sets the aspect_ratio of this VideoCommon.
-
-        纵横比，图像缩放方式 
-
-        :param aspect_ratio: The aspect_ratio of this VideoCommon.
-        :type aspect_ratio: int
-        """
-        self._aspect_ratio = aspect_ratio
 
     @property
     def black_cut(self):

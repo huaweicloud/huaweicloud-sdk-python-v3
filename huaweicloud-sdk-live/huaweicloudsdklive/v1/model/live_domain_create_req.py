@@ -23,17 +23,19 @@ class LiveDomainCreateReq:
         'domain': 'str',
         'domain_type': 'str',
         'region': 'str',
-        'service_area': 'str'
+        'service_area': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
         'domain': 'domain',
         'domain_type': 'domain_type',
         'region': 'region',
-        'service_area': 'service_area'
+        'service_area': 'service_area',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, domain=None, domain_type=None, region=None, service_area=None):
+    def __init__(self, domain=None, domain_type=None, region=None, service_area=None, enterprise_project_id=None):
         """LiveDomainCreateReq
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class LiveDomainCreateReq:
         :type region: str
         :param service_area: 域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 
         :type service_area: str
+        :param enterprise_project_id: 企业项目ID
+        :type enterprise_project_id: str
         """
         
         
@@ -54,6 +58,7 @@ class LiveDomainCreateReq:
         self._domain_type = None
         self._region = None
         self._service_area = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.domain = domain
@@ -61,6 +66,8 @@ class LiveDomainCreateReq:
         self.region = region
         if service_area is not None:
             self.service_area = service_area
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def domain(self):
@@ -149,6 +156,28 @@ class LiveDomainCreateReq:
         :type service_area: str
         """
         self._service_area = service_area
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this LiveDomainCreateReq.
+
+        企业项目ID
+
+        :return: The enterprise_project_id of this LiveDomainCreateReq.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this LiveDomainCreateReq.
+
+        企业项目ID
+
+        :param enterprise_project_id: The enterprise_project_id of this LiveDomainCreateReq.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

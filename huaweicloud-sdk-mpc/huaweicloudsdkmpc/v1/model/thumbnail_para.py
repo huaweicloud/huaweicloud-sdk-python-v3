@@ -27,7 +27,6 @@ class ThumbnailPara:
         'dots': 'list[int]',
         'output_filename': 'str',
         'format': 'int',
-        'aspect_ratio': 'int',
         'width': 'int',
         'height': 'int',
         'max_length': 'int'
@@ -41,13 +40,12 @@ class ThumbnailPara:
         'dots': 'dots',
         'output_filename': 'output_filename',
         'format': 'format',
-        'aspect_ratio': 'aspect_ratio',
         'width': 'width',
         'height': 'height',
         'max_length': 'max_length'
     }
 
-    def __init__(self, type=None, time=None, start_time=None, duration=None, dots=None, output_filename=None, format=None, aspect_ratio=None, width=None, height=None, max_length=None):
+    def __init__(self, type=None, time=None, start_time=None, duration=None, dots=None, output_filename=None, format=None, width=None, height=None, max_length=None):
         """ThumbnailPara
 
         The model defined in huaweicloud sdk
@@ -66,8 +64,6 @@ class ThumbnailPara:
         :type output_filename: str
         :param format: 截图文件格式。  取值如下：  1：表示jpg格式 
         :type format: int
-        :param aspect_ratio: 纵横比。 
-        :type aspect_ratio: int
         :param width: 图片宽度  取值范围：(96,3840]  单位：px 
         :type width: int
         :param height: 图片高度  取值范围：(96,2160]  单位：px 
@@ -85,7 +81,6 @@ class ThumbnailPara:
         self._dots = None
         self._output_filename = None
         self._format = None
-        self._aspect_ratio = None
         self._width = None
         self._height = None
         self._max_length = None
@@ -105,8 +100,6 @@ class ThumbnailPara:
             self.output_filename = output_filename
         if format is not None:
             self.format = format
-        if aspect_ratio is not None:
-            self.aspect_ratio = aspect_ratio
         if width is not None:
             self.width = width
         if height is not None:
@@ -267,28 +260,6 @@ class ThumbnailPara:
         :type format: int
         """
         self._format = format
-
-    @property
-    def aspect_ratio(self):
-        """Gets the aspect_ratio of this ThumbnailPara.
-
-        纵横比。 
-
-        :return: The aspect_ratio of this ThumbnailPara.
-        :rtype: int
-        """
-        return self._aspect_ratio
-
-    @aspect_ratio.setter
-    def aspect_ratio(self, aspect_ratio):
-        """Sets the aspect_ratio of this ThumbnailPara.
-
-        纵横比。 
-
-        :param aspect_ratio: The aspect_ratio of this ThumbnailPara.
-        :type aspect_ratio: int
-        """
-        self._aspect_ratio = aspect_ratio
 
     @property
     def width(self):

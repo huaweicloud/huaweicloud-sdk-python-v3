@@ -108,7 +108,8 @@ class Event2alarmRuleBody:
         self.create_time = create_time
         if update_time is not None:
             self.update_time = update_time
-        self.resource_provider = resource_provider
+        if resource_provider is not None:
+            self.resource_provider = resource_provider
         self.metadata = metadata
         self.enable = enable
         self.trigger_policies = trigger_policies

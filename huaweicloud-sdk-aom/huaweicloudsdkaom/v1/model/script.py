@@ -68,23 +68,23 @@ class Script:
         :type description: str
         :param enterprise_project_id: 企业项目id
         :type enterprise_project_id: str
-        :param id: 项目id,根据project_id、脚本名称的和，用guava计算hash(md5)方式获取，比如为：c279d73a0b4e0f0927721e366c736880
+        :param id: 脚本id,根据project_id、脚本名称的和，用guava计算hash(md5)方式获取，比如为：c279d73a0b4e0f0927721e366c736880
         :type id: str
         :param name: 脚本名称，支持数字，下划线，大小写字母 ,中文
         :type name: str
-        :param online_exist_status: 脚本中是否有已上线的版本，true表示有已上线的版本，false表示灭没有已上线的版本
+        :param online_exist_status: 脚本中是否有已上线的版本，true表示有已上线的版本，false表示没有已上线的版本
         :type online_exist_status: bool
-        :param online_id: 正在上线版本id
+        :param online_id: 已上线版本id
         :type online_id: str
         :param project_id: 租户从IAM申请到的projectid，一般为32位字符串
         :type project_id: str
         :param rate_control: 
         :type rate_control: :class:`huaweicloudsdkaom.v1.RateControl`
-        :param script_language: 脚本语言，目前支持四种，分别是：[\&quot;Shell\&quot;,\&quot;Bat\&quot;,\&quot;Python\&quot;,\&quot;Powershell\&quot;]
+        :param script_language: 脚本语言，目前支持四种，分别是：SHELL BAT PYTHON POWER_SHELL
         :type script_language: str
         :param update_by: 修改人
         :type update_by: str
-        :param update_time: 实体的最后更新时间戳。 注意：执行创建/修补/删除操作时，update_time将更新。
+        :param update_time: 实体的最后更新时间戳。 注意：执行创建/修改/删除操作时，update_time将更新。
         :type update_time: int
         """
         
@@ -243,7 +243,7 @@ class Script:
     def id(self):
         """Gets the id of this Script.
 
-        项目id,根据project_id、脚本名称的和，用guava计算hash(md5)方式获取，比如为：c279d73a0b4e0f0927721e366c736880
+        脚本id,根据project_id、脚本名称的和，用guava计算hash(md5)方式获取，比如为：c279d73a0b4e0f0927721e366c736880
 
         :return: The id of this Script.
         :rtype: str
@@ -254,7 +254,7 @@ class Script:
     def id(self, id):
         """Sets the id of this Script.
 
-        项目id,根据project_id、脚本名称的和，用guava计算hash(md5)方式获取，比如为：c279d73a0b4e0f0927721e366c736880
+        脚本id,根据project_id、脚本名称的和，用guava计算hash(md5)方式获取，比如为：c279d73a0b4e0f0927721e366c736880
 
         :param id: The id of this Script.
         :type id: str
@@ -287,7 +287,7 @@ class Script:
     def online_exist_status(self):
         """Gets the online_exist_status of this Script.
 
-        脚本中是否有已上线的版本，true表示有已上线的版本，false表示灭没有已上线的版本
+        脚本中是否有已上线的版本，true表示有已上线的版本，false表示没有已上线的版本
 
         :return: The online_exist_status of this Script.
         :rtype: bool
@@ -298,7 +298,7 @@ class Script:
     def online_exist_status(self, online_exist_status):
         """Sets the online_exist_status of this Script.
 
-        脚本中是否有已上线的版本，true表示有已上线的版本，false表示灭没有已上线的版本
+        脚本中是否有已上线的版本，true表示有已上线的版本，false表示没有已上线的版本
 
         :param online_exist_status: The online_exist_status of this Script.
         :type online_exist_status: bool
@@ -309,7 +309,7 @@ class Script:
     def online_id(self):
         """Gets the online_id of this Script.
 
-        正在上线版本id
+        已上线版本id
 
         :return: The online_id of this Script.
         :rtype: str
@@ -320,7 +320,7 @@ class Script:
     def online_id(self, online_id):
         """Sets the online_id of this Script.
 
-        正在上线版本id
+        已上线版本id
 
         :param online_id: The online_id of this Script.
         :type online_id: str
@@ -371,7 +371,7 @@ class Script:
     def script_language(self):
         """Gets the script_language of this Script.
 
-        脚本语言，目前支持四种，分别是：[\"Shell\",\"Bat\",\"Python\",\"Powershell\"]
+        脚本语言，目前支持四种，分别是：SHELL BAT PYTHON POWER_SHELL
 
         :return: The script_language of this Script.
         :rtype: str
@@ -382,7 +382,7 @@ class Script:
     def script_language(self, script_language):
         """Sets the script_language of this Script.
 
-        脚本语言，目前支持四种，分别是：[\"Shell\",\"Bat\",\"Python\",\"Powershell\"]
+        脚本语言，目前支持四种，分别是：SHELL BAT PYTHON POWER_SHELL
 
         :param script_language: The script_language of this Script.
         :type script_language: str
@@ -415,7 +415,7 @@ class Script:
     def update_time(self):
         """Gets the update_time of this Script.
 
-        实体的最后更新时间戳。 注意：执行创建/修补/删除操作时，update_time将更新。
+        实体的最后更新时间戳。 注意：执行创建/修改/删除操作时，update_time将更新。
 
         :return: The update_time of this Script.
         :rtype: int
@@ -426,7 +426,7 @@ class Script:
     def update_time(self, update_time):
         """Sets the update_time of this Script.
 
-        实体的最后更新时间戳。 注意：执行创建/修补/删除操作时，update_time将更新。
+        实体的最后更新时间戳。 注意：执行创建/修改/删除操作时，update_time将更新。
 
         :param update_time: The update_time of this Script.
         :type update_time: int

@@ -20,47 +20,47 @@ class ShowAvailableZoneInfoResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'availability_zones': 'AvailabilityZones'
+        'availability_zone': 'AvailabilityZones'
     }
 
     attribute_map = {
-        'availability_zones': 'availability_zones'
+        'availability_zone': 'availability_zone'
     }
 
-    def __init__(self, availability_zones=None):
+    def __init__(self, availability_zone=None):
         """ShowAvailableZoneInfoResponse
 
         The model defined in huaweicloud sdk
 
-        :param availability_zones: 
-        :type availability_zones: :class:`huaweicloudsdkcbh.v1.AvailabilityZones`
+        :param availability_zone: 
+        :type availability_zone: :class:`huaweicloudsdkcbh.v1.AvailabilityZones`
         """
         
         super(ShowAvailableZoneInfoResponse, self).__init__()
 
-        self._availability_zones = None
+        self._availability_zone = None
         self.discriminator = None
 
-        if availability_zones is not None:
-            self.availability_zones = availability_zones
+        if availability_zone is not None:
+            self.availability_zone = availability_zone
 
     @property
-    def availability_zones(self):
-        """Gets the availability_zones of this ShowAvailableZoneInfoResponse.
+    def availability_zone(self):
+        """Gets the availability_zone of this ShowAvailableZoneInfoResponse.
 
-        :return: The availability_zones of this ShowAvailableZoneInfoResponse.
+        :return: The availability_zone of this ShowAvailableZoneInfoResponse.
         :rtype: :class:`huaweicloudsdkcbh.v1.AvailabilityZones`
         """
-        return self._availability_zones
+        return self._availability_zone
 
-    @availability_zones.setter
-    def availability_zones(self, availability_zones):
-        """Sets the availability_zones of this ShowAvailableZoneInfoResponse.
+    @availability_zone.setter
+    def availability_zone(self, availability_zone):
+        """Sets the availability_zone of this ShowAvailableZoneInfoResponse.
 
-        :param availability_zones: The availability_zones of this ShowAvailableZoneInfoResponse.
-        :type availability_zones: :class:`huaweicloudsdkcbh.v1.AvailabilityZones`
+        :param availability_zone: The availability_zone of this ShowAvailableZoneInfoResponse.
+        :type availability_zone: :class:`huaweicloudsdkcbh.v1.AvailabilityZones`
         """
-        self._availability_zones = availability_zones
+        self._availability_zone = availability_zone
 
     def to_dict(self):
         """Returns the model properties as a dict"""

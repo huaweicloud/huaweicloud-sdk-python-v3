@@ -44,7 +44,7 @@ class HISFastScript:
 
         The model defined in huaweicloud sdk
 
-        :param script_type: 脚本类型。
+        :param script_type: 脚本类型。SHELL BAT PYTHON POWER_SHELL
         :type script_type: str
         :param cmd_user: 执行脚本的ECS机器用户。
         :type cmd_user: str
@@ -84,7 +84,7 @@ class HISFastScript:
     def script_type(self):
         """Gets the script_type of this HISFastScript.
 
-        脚本类型。
+        脚本类型。SHELL BAT PYTHON POWER_SHELL
 
         :return: The script_type of this HISFastScript.
         :rtype: str
@@ -95,7 +95,7 @@ class HISFastScript:
     def script_type(self, script_type):
         """Sets the script_type of this HISFastScript.
 
-        脚本类型。
+        脚本类型。SHELL BAT PYTHON POWER_SHELL
 
         :param script_type: The script_type of this HISFastScript.
         :type script_type: str

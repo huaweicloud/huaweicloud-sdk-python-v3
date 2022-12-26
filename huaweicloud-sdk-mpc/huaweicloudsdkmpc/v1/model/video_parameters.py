@@ -26,7 +26,6 @@ class VideoParameters:
         'profile': 'int',
         'level': 'int',
         'preset': 'int',
-        'ref_frames_count': 'int',
         'max_iframes_interval': 'int',
         'bframes_count': 'int',
         'frame_rate': 'int',
@@ -42,7 +41,6 @@ class VideoParameters:
         'profile': 'profile',
         'level': 'level',
         'preset': 'preset',
-        'ref_frames_count': 'ref_frames_count',
         'max_iframes_interval': 'max_iframes_interval',
         'bframes_count': 'bframes_count',
         'frame_rate': 'frame_rate',
@@ -51,7 +49,7 @@ class VideoParameters:
         'black_cut': 'black_cut'
     }
 
-    def __init__(self, output_policy=None, codec=None, bitrate=None, profile=None, level=None, preset=None, ref_frames_count=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, width=None, height=None, black_cut=None):
+    def __init__(self, output_policy=None, codec=None, bitrate=None, profile=None, level=None, preset=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, width=None, height=None, black_cut=None):
         """VideoParameters
 
         The model defined in huaweicloud sdk
@@ -68,8 +66,6 @@ class VideoParameters:
         :type level: int
         :param preset: 编码质量等级  取值如下： - 1：VIDEO_PRESET_HSPEED2 (只用于h.265, h.265 default) - 2：VIDEO_PRESET_HSPEED (只用于h.265) - 3：VIDEO_PRESET_NORMAL (h264/h.265可用，h.264 default) 
         :type preset: int
-        :param ref_frames_count: 最大参考帧数。  取值范围： - H264：[1，8]，默认值为4 。 - H265：固定值4。  单位：帧。 
-        :type ref_frames_count: int
         :param max_iframes_interval: I帧最大间隔  取值范围：[2，10]。  默认值：5。  单位：秒。 
         :type max_iframes_interval: int
         :param bframes_count: 最大B帧间隔。  取值范围： - H264：[0，7]，默认值为4。 - H265：[0，7]，默认值为7。  单位：帧。 
@@ -92,7 +88,6 @@ class VideoParameters:
         self._profile = None
         self._level = None
         self._preset = None
-        self._ref_frames_count = None
         self._max_iframes_interval = None
         self._bframes_count = None
         self._frame_rate = None
@@ -113,8 +108,6 @@ class VideoParameters:
             self.level = level
         if preset is not None:
             self.preset = preset
-        if ref_frames_count is not None:
-            self.ref_frames_count = ref_frames_count
         if max_iframes_interval is not None:
             self.max_iframes_interval = max_iframes_interval
         if bframes_count is not None:
@@ -259,28 +252,6 @@ class VideoParameters:
         :type preset: int
         """
         self._preset = preset
-
-    @property
-    def ref_frames_count(self):
-        """Gets the ref_frames_count of this VideoParameters.
-
-        最大参考帧数。  取值范围： - H264：[1，8]，默认值为4 。 - H265：固定值4。  单位：帧。 
-
-        :return: The ref_frames_count of this VideoParameters.
-        :rtype: int
-        """
-        return self._ref_frames_count
-
-    @ref_frames_count.setter
-    def ref_frames_count(self, ref_frames_count):
-        """Sets the ref_frames_count of this VideoParameters.
-
-        最大参考帧数。  取值范围： - H264：[1，8]，默认值为4 。 - H265：固定值4。  单位：帧。 
-
-        :param ref_frames_count: The ref_frames_count of this VideoParameters.
-        :type ref_frames_count: int
-        """
-        self._ref_frames_count = ref_frames_count
 
     @property
     def max_iframes_interval(self):

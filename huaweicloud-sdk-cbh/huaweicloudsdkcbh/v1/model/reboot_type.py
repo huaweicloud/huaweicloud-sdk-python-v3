@@ -32,7 +32,7 @@ class RebootType:
 
         The model defined in huaweicloud sdk
 
-        :param type: 关闭实例
+        :param type: 重启方式
         :type type: str
         """
         
@@ -47,7 +47,7 @@ class RebootType:
     def type(self):
         """Gets the type of this RebootType.
 
-        关闭实例
+        重启方式
 
         :return: The type of this RebootType.
         :rtype: str
@@ -58,7 +58,7 @@ class RebootType:
     def type(self, type):
         """Sets the type of this RebootType.
 
-        关闭实例
+        重启方式
 
         :param type: The type of this RebootType.
         :type type: str

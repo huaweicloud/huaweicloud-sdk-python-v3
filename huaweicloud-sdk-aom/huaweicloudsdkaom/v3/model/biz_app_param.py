@@ -44,7 +44,7 @@ class BizAppParam:
         :type description: str
         :param display_name: 应用名称
         :type display_name: str
-        :param eps_id: 应用关联的企业项目id
+        :param eps_id: 应用关联的企业项目id。企业级用户必传
         :type eps_id: str
         :param name: 唯一标识
         :type name: str
@@ -119,7 +119,7 @@ class BizAppParam:
     def eps_id(self):
         """Gets the eps_id of this BizAppParam.
 
-        应用关联的企业项目id
+        应用关联的企业项目id。企业级用户必传
 
         :return: The eps_id of this BizAppParam.
         :rtype: str
@@ -130,7 +130,7 @@ class BizAppParam:
     def eps_id(self, eps_id):
         """Sets the eps_id of this BizAppParam.
 
-        应用关联的企业项目id
+        应用关联的企业项目id。企业级用户必传
 
         :param eps_id: The eps_id of this BizAppParam.
         :type eps_id: str

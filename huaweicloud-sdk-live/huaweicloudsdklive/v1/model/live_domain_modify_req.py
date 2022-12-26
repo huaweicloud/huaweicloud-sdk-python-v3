@@ -21,15 +21,17 @@ class LiveDomainModifyReq:
 
     openapi_types = {
         'domain': 'str',
-        'status': 'str'
+        'status': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
         'domain': 'domain',
-        'status': 'status'
+        'status': 'status',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, domain=None, status=None):
+    def __init__(self, domain=None, status=None, enterprise_project_id=None):
         """LiveDomainModifyReq
 
         The model defined in huaweicloud sdk
@@ -38,17 +40,22 @@ class LiveDomainModifyReq:
         :type domain: str
         :param status: 直播域名状态，通过修改此字段，实现域名的启用和停用。注意：域名处于“配置中”状态时，不允对该域名执行启停操作。
         :type status: str
+        :param enterprise_project_id: 企业项目ID
+        :type enterprise_project_id: str
         """
         
         
 
         self._domain = None
         self._status = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.domain = domain
         if status is not None:
             self.status = status
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def domain(self):
@@ -93,6 +100,28 @@ class LiveDomainModifyReq:
         :type status: str
         """
         self._status = status
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this LiveDomainModifyReq.
+
+        企业项目ID
+
+        :return: The enterprise_project_id of this LiveDomainModifyReq.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this LiveDomainModifyReq.
+
+        企业项目ID
+
+        :param enterprise_project_id: The enterprise_project_id of this LiveDomainModifyReq.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

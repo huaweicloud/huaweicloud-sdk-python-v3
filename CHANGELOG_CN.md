@@ -1,3 +1,205 @@
+# 3.1.19 2022-12-26
+
+### HuaweiCloud SDK AOM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateWorkflow`:
+    - 新增请求参数 `policy`
+    - 移除请求参数 `citation_urns`、`information`、`alarm_name`
+    - 移除响应参数 `param_name`、`domain_id`、`domain_name`
+  - 接口`UpdateWorkflowTriggerStatus`请求参数`action`改为非必填
+  - 接口`SearchWorkflowExecutionDetail`移除响应参数 `workflow_urn`、`headers`、`input`、`output`、`created_by`、`node_id`、`begin_time`、`end_time`、`function_execution_id`、`output`、`status`
+  - 接口`ListAllScriptByName`:
+    - 移除请求参数 `page_total`
+    - 请求参数`order_by_column`改为必填
+    - 请求参数`project_id`改为非必填
+  - 接口`ListAllVersionByVersionId`:
+    - 移除请求参数 `page_total`
+    - 请求参数`order_by_column`改为必填
+    - 请求参数`project_id`改为非必填
+  - 接口`ListAllJobByName`:
+    - 新增请求参数 `enterprise_project_id`
+    - 新增响应参数 `is_latest_version`、`version_number`
+    - 请求参数`order_by_column`改为必填
+  - 接口`ListTemplateByJobId`请求参数`order_by_column`改为必填
+  - 接口`SearchTemplateById`请求参数`share_type`改为非必填
+  - 接口`ListWorkflow`:
+    - 移除请求参数 `template_name_list`
+    - 移除响应参数 `param_name`、`domain_id`、`domain_name`
+  - 接口`ExecuteWorkflow`移除响应参数 `workflow_id`、`workflow_urn`、`status`、`headers`、`input`、`output`、`begin_time`、`end_time`、`last_update_time`、`created_by`、`execution_result_list`、`approve_user_name_list`、`project_id`、`workflow_edit_time`、`last_record_id_with_snapshot`
+  - 接口`ListWorkflowExecutions`移除响应参数 `workflow_urn`、`node_id`、`begin_time`、`end_time`、`function_execution_id`、`output`、`status`
+  - 接口`ListNotifiedHistories`请求参数`event_sn`改为必填
+  - 接口`ShowActionRule`响应参数`type`类型调整 `string` -> `enum`
+  - 接口`AddActionRule`请求参数`type`类型调整 `string` -> `enum`
+  - 接口`UpdateActionRule`请求参数`type`类型调整 `string` -> `enum`
+  - 接口`ListActionRule`响应参数`type`类型调整 `string` -> `enum`
+  - 接口`AddEvent2alarmRule`请求参数`resource_provider`改为非必填
+  - 接口`UpdateEventRule`请求参数`resource_provider`改为非必填
+  - 接口`ListEvent2alarmRule`响应参数`resource_provider`改为非必填
+  - 接口`CreateApp`请求参数`register_type`类型调整 `string` -> `enum`
+  - 接口`UpdateApp`:
+    - 移除响应参数 `aom_id`、`app_id`、`create_time`、`creator`、`description`、`display_name`、`eps_id`、`modified_time`、`modifier`、`name`、`register_type`
+    - 请求参数`register_type`类型调整 `string` -> `enum`
+  - 接口`UpdateComponent`移除请求参数 `model_id`、`model_type`
+  - 接口`CreateEnv`:
+    - 请求参数`component_id`、`os_type`改为必填
+    - 请求参数`region`改为非必填
+  - 接口`UpdateEnv`:
+    - 请求参数`component_id`、`os_type`改为必填
+    - 请求参数`region`改为非必填
+  - 接口`ShowComponentByName`移除响应参数 `create_time`、`creator`、`description`、`modified_time`、`modifier`、`register_type`、`sub_app_id`
+
+### HuaweiCloud SDK CBH
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListCbhInstance`:
+    - 新增响应参数 `quotaDetail`、`publicip`、`expTime`、`startTime`、`endTime`、`releaseTime`、`instanceId`、`privateIp`、`taskStatus`、`vpcId`、`subnetId`、`securityGroupId`、`createinstanceStatus`、`failReason`、`instanceKey`、`orderId`、`periodNum`、`resourceId`、`alterPermit`、`publicId`、`bastionVersion`、`newBastionVersion`、`instanceStatus`、`instanceDescription`、`slaveZone`、`enterpriseProjectId`、`instanceType`、`haId`、`slaveZoneDisplay`、`webPort`、`vip`
+    - 移除响应参数 `quota_detail`、`public_ip`、`exp_time`、`start_time`、`end_time`、`release_time`、`instance_id`、`private_ip`、`task_status`、`vpc_id`、`subnet_id`、`security_group_id`、`createinstance_status`、`fail_reason`、`instance_key`、`order_id`、`period_num`、`resource_id`、`alter_permit`、`public_id`、`bastion_version`、`new_bastion_version`、`instance_status`、`instance_description`
+    - 响应参数`is_auto_renew`改为非必填
+  - 接口`UpgradeCbhInstance`响应参数`task_id`、`order_id`改为非必填
+  - 接口`ResetPassword`:
+    - 新增响应参数 `request_info`
+    - 移除响应参数 `code`、`description`、`task_id`、`order_id`
+  - 接口`ShowAvailableZoneInfo`:
+    - 新增响应参数 `availability_zone`
+    - 移除响应参数 `availability_zones`
+  - 接口`ResetLoginMethod`:
+    - 新增响应参数 `request_info`
+    - 移除响应参数 `code`、`description`、`task_id`、`order_id`
+  - 接口`ChangeInstanceNetwork`:
+    - 新增响应参数 `status`、`security_grp_status`、`public_eip_status`、`nics`
+    - 移除响应参数 `type`、`security_groups`
+    - 响应参数`firewall_status`改为必填
+    - 响应参数`public_eip_statu`改为非必填
+  - 接口`CreateInstance`请求参数`slave_availability_zone`改为非必填
+  - 接口`ChangeInstanceOrder`:
+    - 新增响应参数 `orderId`
+    - 移除响应参数 `order_id`
+
+### HuaweiCloud SDK DSC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowSpecification`:
+    - 新增响应参数 `orderInfos`
+    - 移除响应参数 `order_infos`
+  - 接口`ListRuleGroups`新增响应参数 `is_default`
+
+### HuaweiCloud SDK HSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListPorts`新增响应参数 `laddr`
+  - 接口`ListProtectionServer`新增响应参数 `os_name`、`agent_status`
+  - 接口`ShowBackupPolicyInfo`移除响应参数 `associated_vaults`
+  - 接口`ListSecurityEvents`新增响应参数 `os_type`、`event_details`
+  - 接口`ListAlarmWhiteList`新增响应参数 `enterprise_project_name`
+  - 接口`ListVulHosts`移除响应参数 `repair_necessity`
+
+### HuaweiCloud SDK Live
+
+- _新增特性_
+  - 支持接口`UpdateDomainIp6Switch`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowDomain`:
+    - 新增请求参数 `enterprise_project_id`
+    - 新增响应参数 `enterprise_project_id`、`is_ipv6`
+  - 接口`UpdateDomain`:
+    - 新增请求参数 `enterprise_project_id`
+    - 新增响应参数 `enterprise_project_id`
+  - 接口`CreateDomain`新增请求参数 `enterprise_project_id`
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 支持以下接口：
+    - `Deletefavorite`
+    - `ListTopnTrafficStatistics`
+    - `Createfavorite`
+    - `CreateTags`
+    - `CreateDashboardGroup`
+    - `CreateDashBoard`
+    - `ListHistorySql`
+    - `ListCriterias`
+    - `CreateSearchCriterias`
+    - `DeleteSearchCriterias`
+    - `ListQueryAllSearchCriterias`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateLogStream`移除请求参数 `enterprise_project_name`、`ttl_in_days`
+
+### HuaweiCloud SDK MPC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListTranscodingTask`:
+    - 移除响应参数 `ref_frames_count`
+    - 响应参数`codec`、`sample_rate`、`PVC`、`hls_interval`、`dash_interval`改为非必填
+  - 接口`CreateTranscodingTask`:
+    - 移除请求参数 `ref_frames_count`、`aspect_ratio`
+    - 请求参数`codec`、`sample_rate`、`PVC`、`hls_interval`、`dash_interval`改为非必填
+  - 接口`ListTemplate`:
+    - 移除响应参数 `ref_frames_count`
+    - 响应参数`codec`、`sample_rate`、`PVC`、`hls_interval`、`dash_interval`改为非必填
+  - 接口`CreateTransTemplate`:
+    - 移除请求参数 `ref_frames_count`
+    - 请求参数`codec`、`sample_rate`、`PVC`、`hls_interval`、`dash_interval`改为非必填
+  - 接口`UpdateTransTemplate`:
+    - 移除请求参数 `ref_frames_count`
+    - 请求参数`codec`、`sample_rate`、`PVC`、`hls_interval`、`dash_interval`改为非必填
+  - 接口`ListTemplateGroup`:
+    - 移除响应参数 `ref_frames_count`、`aspect_ratio`
+    - 响应参数`codec`、`sample_rate`、`PVC`、`hls_interval`、`dash_interval`改为非必填
+  - 接口`CreateTemplateGroup`:
+    - 移除请求参数 `ref_frames_count`、`aspect_ratio`
+    - 请求参数`name`改为必填
+    - 请求参数`codec`、`sample_rate`、`PVC`、`hls_interval`、`dash_interval`改为非必填
+  - 接口`UpdateTemplateGroup`:
+    - 移除请求参数 `ref_frames_count`、`aspect_ratio`
+    - 请求参数`group_id`改为必填
+    - 请求参数`codec`、`sample_rate`、`PVC`、`hls_interval`、`dash_interval`改为非必填
+  - 接口`UpdateBucketAuthorized`移除请求参数 `project_id`
+  - 接口`CreateThumbnailsTask`移除请求参数 `aspect_ratio`
+  - 接口`ListEditingJob`:
+    - 移除响应参数 `ref_frames_count`、`ref_frames_count`
+    - 响应参数`codec`、`sample_rate`、`PVC`、`hls_interval`、`dash_interval`、`codec`、`sample_rate`、`PVC`、`hls_interval`、`dash_interval`改为非必填
+  - 接口`CreateEditingJob`:
+    - 移除请求参数 `ref_frames_count`、`ref_frames_count`
+    - 请求参数`codec`、`sample_rate`、`PVC`、`hls_interval`、`dash_interval`、`codec`、`sample_rate`、`PVC`、`hls_interval`、`dash_interval`改为非必填
+
+### HuaweiCloud SDK VOD
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateTranscodeTemplate`请求参数`group_id`、`name`、`bitrate`、`frame_rate`、`video_codec`、`format`、`hls_interval`改为必填
+  - 接口`ListTranscodeTemplate`响应参数`bitrate`、`frame_rate`、`video_codec`、`format`、`hls_interval`改为必填
+  - 接口`CreateTranscodeTemplate`请求参数`name`、`bitrate`、`frame_rate`、`video_codec`、`format`、`hls_interval`改为必填
+  - 接口`UpdateTemplateGroupCollection`请求参数`name`、`template_group_list`改为必填
+  - 接口`CreateTemplateGroupCollection`请求参数`name`、`template_group_list`改为必填
+
 # 3.1.18 2022-12-22
 
 ### HuaweiCloud SDK APIG

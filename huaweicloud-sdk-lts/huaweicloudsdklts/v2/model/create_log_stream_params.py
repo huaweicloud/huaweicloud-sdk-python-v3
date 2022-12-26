@@ -20,48 +20,34 @@ class CreateLogStreamParams:
     sensitive_list = []
 
     openapi_types = {
-        'log_stream_name': 'str',
-        'enterprise_project_name': 'str',
-        'ttl_in_days': 'int'
+        'log_stream_name': 'str'
     }
 
     attribute_map = {
-        'log_stream_name': 'log_stream_name',
-        'enterprise_project_name': 'enterprise_project_name',
-        'ttl_in_days': 'ttl_in_days'
+        'log_stream_name': 'log_stream_name'
     }
 
-    def __init__(self, log_stream_name=None, enterprise_project_name=None, ttl_in_days=None):
+    def __init__(self, log_stream_name=None):
         """CreateLogStreamParams
 
         The model defined in huaweicloud sdk
 
-        :param log_stream_name: 需要创建的日志流名称。
+        :param log_stream_name: 需要创建的日志流名称
         :type log_stream_name: str
-        :param enterprise_project_name: 
-        :type enterprise_project_name: str
-        :param ttl_in_days: 
-        :type ttl_in_days: int
         """
         
         
 
         self._log_stream_name = None
-        self._enterprise_project_name = None
-        self._ttl_in_days = None
         self.discriminator = None
 
         self.log_stream_name = log_stream_name
-        if enterprise_project_name is not None:
-            self.enterprise_project_name = enterprise_project_name
-        if ttl_in_days is not None:
-            self.ttl_in_days = ttl_in_days
 
     @property
     def log_stream_name(self):
         """Gets the log_stream_name of this CreateLogStreamParams.
 
-        需要创建的日志流名称。
+        需要创建的日志流名称
 
         :return: The log_stream_name of this CreateLogStreamParams.
         :rtype: str
@@ -72,48 +58,12 @@ class CreateLogStreamParams:
     def log_stream_name(self, log_stream_name):
         """Sets the log_stream_name of this CreateLogStreamParams.
 
-        需要创建的日志流名称。
+        需要创建的日志流名称
 
         :param log_stream_name: The log_stream_name of this CreateLogStreamParams.
         :type log_stream_name: str
         """
         self._log_stream_name = log_stream_name
-
-    @property
-    def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this CreateLogStreamParams.
-
-        :return: The enterprise_project_name of this CreateLogStreamParams.
-        :rtype: str
-        """
-        return self._enterprise_project_name
-
-    @enterprise_project_name.setter
-    def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this CreateLogStreamParams.
-
-        :param enterprise_project_name: The enterprise_project_name of this CreateLogStreamParams.
-        :type enterprise_project_name: str
-        """
-        self._enterprise_project_name = enterprise_project_name
-
-    @property
-    def ttl_in_days(self):
-        """Gets the ttl_in_days of this CreateLogStreamParams.
-
-        :return: The ttl_in_days of this CreateLogStreamParams.
-        :rtype: int
-        """
-        return self._ttl_in_days
-
-    @ttl_in_days.setter
-    def ttl_in_days(self, ttl_in_days):
-        """Sets the ttl_in_days of this CreateLogStreamParams.
-
-        :param ttl_in_days: The ttl_in_days of this CreateLogStreamParams.
-        :type ttl_in_days: int
-        """
-        self._ttl_in_days = ttl_in_days
 
     def to_dict(self):
         """Returns the model properties as a dict"""

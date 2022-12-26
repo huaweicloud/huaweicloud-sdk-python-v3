@@ -8,6 +8,7 @@ from huaweicloudsdkaom.v3.aom_async_client import AomAsyncClient
 # import models into sdk package
 from huaweicloudsdkaom.v3.model.biz_app_param import BizAppParam
 from huaweicloudsdkaom.v3.model.component_param import ComponentParam
+from huaweicloudsdkaom.v3.model.component_update_param import ComponentUpdateParam
 from huaweicloudsdkaom.v3.model.create_app_request import CreateAppRequest
 from huaweicloudsdkaom.v3.model.create_app_response import CreateAppResponse
 from huaweicloudsdkaom.v3.model.create_component_request import CreateComponentRequest

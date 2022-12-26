@@ -41,7 +41,8 @@ class ListNotifiedHistoriesRequest:
         self._event_sn = None
         self.discriminator = None
 
-        self.event_sn = event_sn
+        if event_sn is not None:
+            self.event_sn = event_sn
 
     @property
     def event_sn(self):

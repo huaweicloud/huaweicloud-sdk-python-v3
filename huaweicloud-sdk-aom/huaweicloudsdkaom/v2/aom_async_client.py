@@ -45,7 +45,7 @@ class AomAsyncClient(Client):
     def add_action_rule_async(self, request):
         """新增告警行动规则
 
-        新增告警行动规则
+        新增告警行动规则。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -167,7 +167,7 @@ class AomAsyncClient(Client):
     def add_event2alarm_rule_async(self, request):
         """新增一条事件类告警规则
 
-        新增一条事件类告警规则。
+        新增一条事件类告警规则。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -289,7 +289,7 @@ class AomAsyncClient(Client):
     def add_mute_rules_async(self, request):
         """新增静默规则
 
-        新增静默规则
+        新增静默规则。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -474,7 +474,7 @@ class AomAsyncClient(Client):
     def delete_action_rule_async(self, request):
         """删除告警行动规则
 
-        删除告警行动规则
+        删除告警行动规则。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -657,7 +657,7 @@ class AomAsyncClient(Client):
     def delete_event2alarm_rule_async(self, request):
         """删除事件类告警规则
 
-        删除一条事件类告警规则。
+        删除一条事件类告警规则。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -718,7 +718,7 @@ class AomAsyncClient(Client):
     def delete_mute_rules_async(self, request):
         """删除静默规则
 
-        删除静默规则
+        删除静默规则。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -841,7 +841,7 @@ class AomAsyncClient(Client):
     def list_action_rule_async(self, request):
         """获取告警行动规则列表
 
-        获取告警行动规则列表
+        获取告警行动规则列表。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -963,7 +963,7 @@ class AomAsyncClient(Client):
     def list_event2alarm_rule_async(self, request):
         """查询事件类告警规则列表
 
-        查询事件类告警规则列表。
+        查询事件类告警规则列表。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1215,7 +1215,7 @@ class AomAsyncClient(Client):
     def list_mute_rule_async(self, request):
         """获取静默规则列表
 
-        获取静默规则列表
+        获取静默规则列表。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1274,7 +1274,7 @@ class AomAsyncClient(Client):
     def list_notified_histories_async(self, request):
         """获取告警发送结果
 
-        获取告警发送结果
+        获取告警发送结果。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1589,7 +1589,7 @@ class AomAsyncClient(Client):
     def show_action_rule_async(self, request):
         """通过规则名称获取告警行动规则
 
-        通过规则名称获取告警行动规则
+        通过规则名称获取告警行动规则。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1774,7 +1774,7 @@ class AomAsyncClient(Client):
     def update_action_rule_async(self, request):
         """修改告警行动规则
 
-        修改告警行动规则
+        修改告警行动规则。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1896,7 +1896,7 @@ class AomAsyncClient(Client):
     def update_event_rule_async(self, request):
         """更新事件类告警规则
 
-        更新事件类告警规则。
+        更新事件类告警规则。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1957,7 +1957,7 @@ class AomAsyncClient(Client):
     def update_mute_rule_async(self, request):
         """修改静默规则
 
-        修改静默规则
+        修改静默规则。（注：接口目前开放的region为：上海一）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

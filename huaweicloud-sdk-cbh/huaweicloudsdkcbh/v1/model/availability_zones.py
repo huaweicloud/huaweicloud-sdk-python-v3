@@ -23,17 +23,19 @@ class AvailabilityZones:
         'id': 'str',
         'display_name': 'str',
         'region_id': 'str',
-        'status': 'str'
+        'status': 'str',
+        'type': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'display_name': 'display_name',
         'region_id': 'region_id',
-        'status': 'status'
+        'status': 'status',
+        'type': 'type'
     }
 
-    def __init__(self, id=None, display_name=None, region_id=None, status=None):
+    def __init__(self, id=None, display_name=None, region_id=None, status=None, type=None):
         """AvailabilityZones
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class AvailabilityZones:
         :type region_id: str
         :param status: 可用区状态
         :type status: str
+        :param type: 可用区类型
+        :type type: str
         """
         
         
@@ -54,12 +58,15 @@ class AvailabilityZones:
         self._display_name = None
         self._region_id = None
         self._status = None
+        self._type = None
         self.discriminator = None
 
         self.id = id
         self.display_name = display_name
         self.region_id = region_id
         self.status = status
+        if type is not None:
+            self.type = type
 
     @property
     def id(self):
@@ -148,6 +155,28 @@ class AvailabilityZones:
         :type status: str
         """
         self._status = status
+
+    @property
+    def type(self):
+        """Gets the type of this AvailabilityZones.
+
+        可用区类型
+
+        :return: The type of this AvailabilityZones.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this AvailabilityZones.
+
+        可用区类型
+
+        :param type: The type of this AvailabilityZones.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -14,7 +14,6 @@ from huaweicloudsdkhss.v5.model.app_statistic_response_info import AppStatisticR
 from huaweicloudsdkhss.v5.model.associate_policy_group_request import AssociatePolicyGroupRequest
 from huaweicloudsdkhss.v5.model.associate_policy_group_request_info import AssociatePolicyGroupRequestInfo
 from huaweicloudsdkhss.v5.model.associate_policy_group_response import AssociatePolicyGroupResponse
-from huaweicloudsdkhss.v5.model.associated_vaults_info import AssociatedVaultsInfo
 from huaweicloudsdkhss.v5.model.attack_phase import AttackPhase
 from huaweicloudsdkhss.v5.model.attack_tag import AttackTag
 from huaweicloudsdkhss.v5.model.auto_lauch_response_info import AutoLauchResponseInfo
@@ -49,6 +48,7 @@ from huaweicloudsdkhss.v5.model.delete_hosts_group_response import DeleteHostsGr
 from huaweicloudsdkhss.v5.model.delete_resource_instance_tag_request import DeleteResourceInstanceTagRequest
 from huaweicloudsdkhss.v5.model.delete_resource_instance_tag_response import DeleteResourceInstanceTagResponse
 from huaweicloudsdkhss.v5.model.description import Description
+from huaweicloudsdkhss.v5.model.enterprise_project_name import EnterpriseProjectName
 from huaweicloudsdkhss.v5.model.event_class_id import EventClassId
 from huaweicloudsdkhss.v5.model.event_detail_request_info import EventDetailRequestInfo
 from huaweicloudsdkhss.v5.model.event_detail_response_info import EventDetailResponseInfo
@@ -146,6 +146,7 @@ from huaweicloudsdkhss.v5.model.operate_event_request_info import OperateEventRe
 from huaweicloudsdkhss.v5.model.operate_type import OperateType
 from huaweicloudsdkhss.v5.model.operation_definition_info import OperationDefinitionInfo
 from huaweicloudsdkhss.v5.model.operation_definition_request_info import OperationDefinitionRequestInfo
+from huaweicloudsdkhss.v5.model.os_type import OsType
 from huaweicloudsdkhss.v5.model.policy_group_id import PolicyGroupId
 from huaweicloudsdkhss.v5.model.policy_group_name import PolicyGroupName
 from huaweicloudsdkhss.v5.model.policy_group_response_info import PolicyGroupResponseInfo

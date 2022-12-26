@@ -31,6 +31,7 @@ class EventManagementResponseInfo:
         'host_id': 'str',
         'private_ip': 'str',
         'public_ip': 'str',
+        'os_type': 'str',
         'attack_phase': 'str',
         'attack_tag': 'str',
         'occur_time': 'int',
@@ -51,7 +52,8 @@ class EventManagementResponseInfo:
         'recommendation': 'str',
         'process_info_list': 'list[EventProcessResponseInfo]',
         'user_info_list': 'list[EventUserResponseInfo]',
-        'file_info_list': 'list[EventFileResponseInfo]'
+        'file_info_list': 'list[EventFileResponseInfo]',
+        'event_details': 'str'
     }
 
     attribute_map = {
@@ -66,6 +68,7 @@ class EventManagementResponseInfo:
         'host_id': 'host_id',
         'private_ip': 'private_ip',
         'public_ip': 'public_ip',
+        'os_type': 'os_type',
         'attack_phase': 'attack_phase',
         'attack_tag': 'attack_tag',
         'occur_time': 'occur_time',
@@ -86,10 +89,11 @@ class EventManagementResponseInfo:
         'recommendation': 'recommendation',
         'process_info_list': 'process_info_list',
         'user_info_list': 'user_info_list',
-        'file_info_list': 'file_info_list'
+        'file_info_list': 'file_info_list',
+        'event_details': 'event_details'
     }
 
-    def __init__(self, event_id=None, event_class_id=None, event_type=None, event_name=None, severity=None, container_name=None, image_name=None, host_name=None, host_id=None, private_ip=None, public_ip=None, attack_phase=None, attack_tag=None, occur_time=None, handle_time=None, handle_status=None, handle_method=None, handler=None, operate_accept_list=None, operate_detail_list=None, forensic_info=None, resource_info=None, geo_info=None, malware_info=None, network_info=None, app_info=None, system_info=None, extend_info=None, recommendation=None, process_info_list=None, user_info_list=None, file_info_list=None):
+    def __init__(self, event_id=None, event_class_id=None, event_type=None, event_name=None, severity=None, container_name=None, image_name=None, host_name=None, host_id=None, private_ip=None, public_ip=None, os_type=None, attack_phase=None, attack_tag=None, occur_time=None, handle_time=None, handle_status=None, handle_method=None, handler=None, operate_accept_list=None, operate_detail_list=None, forensic_info=None, resource_info=None, geo_info=None, malware_info=None, network_info=None, app_info=None, system_info=None, extend_info=None, recommendation=None, process_info_list=None, user_info_list=None, file_info_list=None, event_details=None):
         """EventManagementResponseInfo
 
         The model defined in huaweicloud sdk
@@ -116,6 +120,8 @@ class EventManagementResponseInfo:
         :type private_ip: str
         :param public_ip: 弹性公网IP地址
         :type public_ip: str
+        :param os_type: 操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+        :type os_type: str
         :param attack_phase: 攻击阶段，包含如下：   - reconnaissance : 侦查跟踪   - weaponization : 武器构建   - delivery : 载荷投递   - exploit : 漏洞利用   - installation : 安装植入   - command_and_control : 命令与控制   - actions : 目标达成
         :type attack_phase: str
         :param attack_tag: 攻击标识，包含如下：   - attack_success : 攻击成功   - attack_attempt : 攻击尝试   - attack_blocked : 攻击被阻断   - abnormal_behavior : 异常行为   - collapsible_host : 主机失陷   - system_vulnerability : 系统脆弱性
@@ -158,6 +164,8 @@ class EventManagementResponseInfo:
         :type user_info_list: list[:class:`huaweicloudsdkhss.v5.EventUserResponseInfo`]
         :param file_info_list: 文件信息列表
         :type file_info_list: list[:class:`huaweicloudsdkhss.v5.EventFileResponseInfo`]
+        :param event_details: 事件信息的简述
+        :type event_details: str
         """
         
         
@@ -173,6 +181,7 @@ class EventManagementResponseInfo:
         self._host_id = None
         self._private_ip = None
         self._public_ip = None
+        self._os_type = None
         self._attack_phase = None
         self._attack_tag = None
         self._occur_time = None
@@ -194,6 +203,7 @@ class EventManagementResponseInfo:
         self._process_info_list = None
         self._user_info_list = None
         self._file_info_list = None
+        self._event_details = None
         self.discriminator = None
 
         if event_id is not None:
@@ -218,6 +228,8 @@ class EventManagementResponseInfo:
             self.private_ip = private_ip
         if public_ip is not None:
             self.public_ip = public_ip
+        if os_type is not None:
+            self.os_type = os_type
         if attack_phase is not None:
             self.attack_phase = attack_phase
         if attack_tag is not None:
@@ -260,6 +272,8 @@ class EventManagementResponseInfo:
             self.user_info_list = user_info_list
         if file_info_list is not None:
             self.file_info_list = file_info_list
+        if event_details is not None:
+            self.event_details = event_details
 
     @property
     def event_id(self):
@@ -502,6 +516,28 @@ class EventManagementResponseInfo:
         :type public_ip: str
         """
         self._public_ip = public_ip
+
+    @property
+    def os_type(self):
+        """Gets the os_type of this EventManagementResponseInfo.
+
+        操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+
+        :return: The os_type of this EventManagementResponseInfo.
+        :rtype: str
+        """
+        return self._os_type
+
+    @os_type.setter
+    def os_type(self, os_type):
+        """Sets the os_type of this EventManagementResponseInfo.
+
+        操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+
+        :param os_type: The os_type of this EventManagementResponseInfo.
+        :type os_type: str
+        """
+        self._os_type = os_type
 
     @property
     def attack_phase(self):
@@ -960,6 +996,28 @@ class EventManagementResponseInfo:
         :type file_info_list: list[:class:`huaweicloudsdkhss.v5.EventFileResponseInfo`]
         """
         self._file_info_list = file_info_list
+
+    @property
+    def event_details(self):
+        """Gets the event_details of this EventManagementResponseInfo.
+
+        事件信息的简述
+
+        :return: The event_details of this EventManagementResponseInfo.
+        :rtype: str
+        """
+        return self._event_details
+
+    @event_details.setter
+    def event_details(self, event_details):
+        """Sets the event_details of this EventManagementResponseInfo.
+
+        事件信息的简述
+
+        :param event_details: The event_details of this EventManagementResponseInfo.
+        :type event_details: str
+        """
+        self._event_details = event_details
 
     def to_dict(self):
         """Returns the model properties as a dict"""

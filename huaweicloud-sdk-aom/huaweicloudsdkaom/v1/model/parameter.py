@@ -50,7 +50,7 @@ class Parameter:
 
         The model defined in huaweicloud sdk
 
-        :param param_name: 参数名称,需要满足：[^\\&gt;+&lt;;#\&quot;;&amp;?%&#x3D;&#39;]{1,64}。
+        :param param_name: 参数名称,满足：[^\\&gt;+&lt;;#\&quot;;&amp;?%&#x3D;&#39;]{1,64}。
         :type param_name: str
         :param param_type: 参数类型。
         :type param_type: str
@@ -107,7 +107,7 @@ class Parameter:
     def param_name(self):
         """Gets the param_name of this Parameter.
 
-        参数名称,需要满足：[^\\>+<;#\";&?%=']{1,64}。
+        参数名称,满足：[^\\>+<;#\";&?%=']{1,64}。
 
         :return: The param_name of this Parameter.
         :rtype: str
@@ -118,7 +118,7 @@ class Parameter:
     def param_name(self, param_name):
         """Sets the param_name of this Parameter.
 
-        参数名称,需要满足：[^\\>+<;#\";&?%=']{1,64}。
+        参数名称,满足：[^\\>+<;#\";&?%=']{1,64}。
 
         :param param_name: The param_name of this Parameter.
         :type param_name: str

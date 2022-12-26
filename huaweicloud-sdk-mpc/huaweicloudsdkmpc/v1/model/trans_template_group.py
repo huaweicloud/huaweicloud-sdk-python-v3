@@ -61,8 +61,7 @@ class TransTemplateGroup:
         self._common = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if videos is not None:
             self.videos = videos
         if audio is not None:

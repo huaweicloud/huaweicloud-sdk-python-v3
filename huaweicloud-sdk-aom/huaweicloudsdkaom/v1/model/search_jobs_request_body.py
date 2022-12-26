@@ -24,7 +24,8 @@ class SearchJobsRequestBody:
         'page_num': 'int',
         'page_size': 'int',
         'order_by_column': 'str',
-        'sort_order': 'str'
+        'sort_order': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -32,15 +33,16 @@ class SearchJobsRequestBody:
         'page_num': 'page_num',
         'page_size': 'page_size',
         'order_by_column': 'order_by_column',
-        'sort_order': 'sort_order'
+        'sort_order': 'sort_order',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, name=None, page_num=None, page_size=None, order_by_column=None, sort_order=None):
+    def __init__(self, name=None, page_num=None, page_size=None, order_by_column=None, sort_order=None, enterprise_project_id=None):
         """SearchJobsRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param name: 查询接收的的参数，版本管理时，name为脚本名称（版本管理查询时name不能为空），页面查询时，name为接收模糊查询的参数，name是null，表示查询所有默认脚本。
+        :param name: name为作业名称。
         :type name: str
         :param page_num: 当前页，查询的当前页，page_num为正整数，不能是0和负数，当输入参数为负数，0和大于1000，自动修正参数为1，默认值是1（用户不传，值是1）。
         :type page_num: int
@@ -50,6 +52,8 @@ class SearchJobsRequestBody:
         :type order_by_column: str
         :param sort_order: 排序规则(默认降序) 传入升序或降序，升序：ASC，降序：DESC。
         :type sort_order: str
+        :param enterprise_project_id: 企业项目id
+        :type enterprise_project_id: str
         """
         
         
@@ -59,6 +63,7 @@ class SearchJobsRequestBody:
         self._page_size = None
         self._order_by_column = None
         self._sort_order = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if name is not None:
@@ -67,16 +72,17 @@ class SearchJobsRequestBody:
             self.page_num = page_num
         if page_size is not None:
             self.page_size = page_size
-        if order_by_column is not None:
-            self.order_by_column = order_by_column
+        self.order_by_column = order_by_column
         if sort_order is not None:
             self.sort_order = sort_order
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def name(self):
         """Gets the name of this SearchJobsRequestBody.
 
-        查询接收的的参数，版本管理时，name为脚本名称（版本管理查询时name不能为空），页面查询时，name为接收模糊查询的参数，name是null，表示查询所有默认脚本。
+        name为作业名称。
 
         :return: The name of this SearchJobsRequestBody.
         :rtype: str
@@ -87,7 +93,7 @@ class SearchJobsRequestBody:
     def name(self, name):
         """Sets the name of this SearchJobsRequestBody.
 
-        查询接收的的参数，版本管理时，name为脚本名称（版本管理查询时name不能为空），页面查询时，name为接收模糊查询的参数，name是null，表示查询所有默认脚本。
+        name为作业名称。
 
         :param name: The name of this SearchJobsRequestBody.
         :type name: str
@@ -181,6 +187,28 @@ class SearchJobsRequestBody:
         :type sort_order: str
         """
         self._sort_order = sort_order
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this SearchJobsRequestBody.
+
+        企业项目id
+
+        :return: The enterprise_project_id of this SearchJobsRequestBody.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this SearchJobsRequestBody.
+
+        企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this SearchJobsRequestBody.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

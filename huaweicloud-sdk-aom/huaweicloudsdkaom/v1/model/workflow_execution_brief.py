@@ -21,7 +21,6 @@ class WorkflowExecutionBrief:
 
     openapi_types = {
         'workflow_id': 'str',
-        'workflow_urn': 'str',
         'execution_id': 'str',
         'status': 'str',
         'begin_time': 'int',
@@ -29,7 +28,7 @@ class WorkflowExecutionBrief:
         'last_update_time': 'int',
         'created_by': 'str',
         'approve_user_name_list': 'list[str]',
-        'execution_result_list': 'list[NodeExecutionDetail]',
+        'execution_result_list': 'list[ExecutionResultList]',
         'project_id': 'str',
         'workflow_edit_time': 'int',
         'last_record_id_with_snapshot': 'str'
@@ -37,7 +36,6 @@ class WorkflowExecutionBrief:
 
     attribute_map = {
         'workflow_id': 'workflow_id',
-        'workflow_urn': 'workflow_urn',
         'execution_id': 'execution_id',
         'status': 'status',
         'begin_time': 'begin_time',
@@ -51,34 +49,32 @@ class WorkflowExecutionBrief:
         'last_record_id_with_snapshot': 'last_record_id_with_snapshot'
     }
 
-    def __init__(self, workflow_id=None, workflow_urn=None, execution_id=None, status=None, begin_time=None, end_time=None, last_update_time=None, created_by=None, approve_user_name_list=None, execution_result_list=None, project_id=None, workflow_edit_time=None, last_record_id_with_snapshot=None):
+    def __init__(self, workflow_id=None, execution_id=None, status=None, begin_time=None, end_time=None, last_update_time=None, created_by=None, approve_user_name_list=None, execution_result_list=None, project_id=None, workflow_edit_time=None, last_record_id_with_snapshot=None):
         """WorkflowExecutionBrief
 
         The model defined in huaweicloud sdk
 
         :param workflow_id: 流程定义ID
         :type workflow_id: str
-        :param workflow_urn: 工作流模板参数
-        :type workflow_urn: str
         :param execution_id: 流程执行实例ID
         :type execution_id: str
         :param status: 流程实例执行状态
         :type status: str
-        :param begin_time: 流程实例创建时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
+        :param begin_time: 流程实例创建时间，格式：UT时间戳
         :type begin_time: int
-        :param end_time: 流程实例结束时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
+        :param end_time: 流程实例结束时间，格式：UTC时间戳
         :type end_time: int
-        :param last_update_time: 流程实例上次更新时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
+        :param last_update_time: 流程实例上次更新时间，格式：UTC时间戳
         :type last_update_time: int
         :param created_by: 流程实例创建者
         :type created_by: str
         :param approve_user_name_list: 审批人列表
         :type approve_user_name_list: list[str]
         :param execution_result_list: 执行记录
-        :type execution_result_list: list[:class:`huaweicloudsdkaom.v1.NodeExecutionDetail`]
+        :type execution_result_list: list[:class:`huaweicloudsdkaom.v1.ExecutionResultList`]
         :param project_id: 租户从IAM申请到的projectid，一般为32位字符串。
         :type project_id: str
-        :param workflow_edit_time: 执行工作流的修改时间
+        :param workflow_edit_time: 执行工作流的修改时间，格式：UTC时间戳
         :type workflow_edit_time: int
         :param last_record_id_with_snapshot: 执行快照
         :type last_record_id_with_snapshot: str
@@ -87,7 +83,6 @@ class WorkflowExecutionBrief:
         
 
         self._workflow_id = None
-        self._workflow_urn = None
         self._execution_id = None
         self._status = None
         self._begin_time = None
@@ -103,8 +98,6 @@ class WorkflowExecutionBrief:
 
         if workflow_id is not None:
             self.workflow_id = workflow_id
-        if workflow_urn is not None:
-            self.workflow_urn = workflow_urn
         if execution_id is not None:
             self.execution_id = execution_id
         if status is not None:
@@ -149,28 +142,6 @@ class WorkflowExecutionBrief:
         :type workflow_id: str
         """
         self._workflow_id = workflow_id
-
-    @property
-    def workflow_urn(self):
-        """Gets the workflow_urn of this WorkflowExecutionBrief.
-
-        工作流模板参数
-
-        :return: The workflow_urn of this WorkflowExecutionBrief.
-        :rtype: str
-        """
-        return self._workflow_urn
-
-    @workflow_urn.setter
-    def workflow_urn(self, workflow_urn):
-        """Sets the workflow_urn of this WorkflowExecutionBrief.
-
-        工作流模板参数
-
-        :param workflow_urn: The workflow_urn of this WorkflowExecutionBrief.
-        :type workflow_urn: str
-        """
-        self._workflow_urn = workflow_urn
 
     @property
     def execution_id(self):
@@ -220,7 +191,7 @@ class WorkflowExecutionBrief:
     def begin_time(self):
         """Gets the begin_time of this WorkflowExecutionBrief.
 
-        流程实例创建时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
+        流程实例创建时间，格式：UT时间戳
 
         :return: The begin_time of this WorkflowExecutionBrief.
         :rtype: int
@@ -231,7 +202,7 @@ class WorkflowExecutionBrief:
     def begin_time(self, begin_time):
         """Sets the begin_time of this WorkflowExecutionBrief.
 
-        流程实例创建时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
+        流程实例创建时间，格式：UT时间戳
 
         :param begin_time: The begin_time of this WorkflowExecutionBrief.
         :type begin_time: int
@@ -242,7 +213,7 @@ class WorkflowExecutionBrief:
     def end_time(self):
         """Gets the end_time of this WorkflowExecutionBrief.
 
-        流程实例结束时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
+        流程实例结束时间，格式：UTC时间戳
 
         :return: The end_time of this WorkflowExecutionBrief.
         :rtype: int
@@ -253,7 +224,7 @@ class WorkflowExecutionBrief:
     def end_time(self, end_time):
         """Sets the end_time of this WorkflowExecutionBrief.
 
-        流程实例结束时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
+        流程实例结束时间，格式：UTC时间戳
 
         :param end_time: The end_time of this WorkflowExecutionBrief.
         :type end_time: int
@@ -264,7 +235,7 @@ class WorkflowExecutionBrief:
     def last_update_time(self):
         """Gets the last_update_time of this WorkflowExecutionBrief.
 
-        流程实例上次更新时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
+        流程实例上次更新时间，格式：UTC时间戳
 
         :return: The last_update_time of this WorkflowExecutionBrief.
         :rtype: int
@@ -275,7 +246,7 @@ class WorkflowExecutionBrief:
     def last_update_time(self, last_update_time):
         """Sets the last_update_time of this WorkflowExecutionBrief.
 
-        流程实例上次更新时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
+        流程实例上次更新时间，格式：UTC时间戳
 
         :param last_update_time: The last_update_time of this WorkflowExecutionBrief.
         :type last_update_time: int
@@ -333,7 +304,7 @@ class WorkflowExecutionBrief:
         执行记录
 
         :return: The execution_result_list of this WorkflowExecutionBrief.
-        :rtype: list[:class:`huaweicloudsdkaom.v1.NodeExecutionDetail`]
+        :rtype: list[:class:`huaweicloudsdkaom.v1.ExecutionResultList`]
         """
         return self._execution_result_list
 
@@ -344,7 +315,7 @@ class WorkflowExecutionBrief:
         执行记录
 
         :param execution_result_list: The execution_result_list of this WorkflowExecutionBrief.
-        :type execution_result_list: list[:class:`huaweicloudsdkaom.v1.NodeExecutionDetail`]
+        :type execution_result_list: list[:class:`huaweicloudsdkaom.v1.ExecutionResultList`]
         """
         self._execution_result_list = execution_result_list
 
@@ -374,7 +345,7 @@ class WorkflowExecutionBrief:
     def workflow_edit_time(self):
         """Gets the workflow_edit_time of this WorkflowExecutionBrief.
 
-        执行工作流的修改时间
+        执行工作流的修改时间，格式：UTC时间戳
 
         :return: The workflow_edit_time of this WorkflowExecutionBrief.
         :rtype: int
@@ -385,7 +356,7 @@ class WorkflowExecutionBrief:
     def workflow_edit_time(self, workflow_edit_time):
         """Sets the workflow_edit_time of this WorkflowExecutionBrief.
 
-        执行工作流的修改时间
+        执行工作流的修改时间，格式：UTC时间戳
 
         :param workflow_edit_time: The workflow_edit_time of this WorkflowExecutionBrief.
         :type workflow_edit_time: int

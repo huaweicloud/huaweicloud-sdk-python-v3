@@ -21,17 +21,15 @@ class BucketAuthorizedReq:
 
     openapi_types = {
         'bucket': 'str',
-        'operation': 'str',
-        'project_id': 'str'
+        'operation': 'str'
     }
 
     attribute_map = {
         'bucket': 'bucket',
-        'operation': 'operation',
-        'project_id': 'project_id'
+        'operation': 'operation'
     }
 
-    def __init__(self, bucket=None, operation=None, project_id=None):
+    def __init__(self, bucket=None, operation=None):
         """BucketAuthorizedReq
 
         The model defined in huaweicloud sdk
@@ -40,21 +38,16 @@ class BucketAuthorizedReq:
         :type bucket: str
         :param operation: 操作标记，取值[0,1]，0表示取消授权，1表示授权 
         :type operation: str
-        :param project_id: 租户Id
-        :type project_id: str
         """
         
         
 
         self._bucket = None
         self._operation = None
-        self._project_id = None
         self.discriminator = None
 
         self.bucket = bucket
         self.operation = operation
-        if project_id is not None:
-            self.project_id = project_id
 
     @property
     def bucket(self):
@@ -99,28 +92,6 @@ class BucketAuthorizedReq:
         :type operation: str
         """
         self._operation = operation
-
-    @property
-    def project_id(self):
-        """Gets the project_id of this BucketAuthorizedReq.
-
-        租户Id
-
-        :return: The project_id of this BucketAuthorizedReq.
-        :rtype: str
-        """
-        return self._project_id
-
-    @project_id.setter
-    def project_id(self, project_id):
-        """Sets the project_id of this BucketAuthorizedReq.
-
-        租户Id
-
-        :param project_id: The project_id of this BucketAuthorizedReq.
-        :type project_id: str
-        """
-        self._project_id = project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -27,7 +27,6 @@ class WorkflowRequestBody:
         'template_name': 'str',
         'template_id': 'str',
         'input': 'dict(str, object)',
-        'citation_urns': 'list[str]',
         'quote': 'list[str]',
         'trigger': 'Trigger',
         'job_name': 'str',
@@ -45,7 +44,6 @@ class WorkflowRequestBody:
         'template_name': 'template_name',
         'template_id': 'template_id',
         'input': 'input',
-        'citation_urns': 'citation_urns',
         'quote': 'quote',
         'trigger': 'trigger',
         'job_name': 'job_name',
@@ -55,27 +53,25 @@ class WorkflowRequestBody:
         'task_type': 'task_type'
     }
 
-    def __init__(self, name=None, type=None, description=None, tags=None, template_name=None, template_id=None, input=None, citation_urns=None, quote=None, trigger=None, job_name=None, job_id=None, service_scenario=None, service_name=None, task_type=None):
+    def __init__(self, name=None, type=None, description=None, tags=None, template_name=None, template_id=None, input=None, quote=None, trigger=None, job_name=None, job_id=None, service_scenario=None, service_name=None, task_type=None):
         """WorkflowRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param name: 工作流名称，需要满足：[^\\\\&gt;+&lt;^;#\&quot;\\s&amp;?%&#x3D;&#39;$￥@*/\\]\\[【】{}|:,.，。：‘’“、—！!~&#x60;·？《》…]{1,64}。
+        :param name: 工作流名称，需要满足中文、英文大小写、数字、中划线和下划线{1,64}。
         :type name: str
-        :param type: 工作流类型，可以为cron/manul/event。
+        :param type: 工作流类型，可以为cron、manual
         :type type: str
         :param description: 工作流描述信息。
         :type description: str
         :param tags: 标签键和值列表，标签键值对数量范围是0至20。
         :type tags: object
-        :param template_name: 模板名称，需要满足：[^\\\\&gt;+&lt;^;#\&quot;\\s&amp;?%&#x3D;&#39;$￥@*/\\]\\[【】{}|:,.，。：‘’“、—！!~&#x60;·？《》…]{1,64}。
+        :param template_name: 模板名称，示例：CMS::ECS::BulkyRunScript  CMS::ECS::BulkyStartECSInstances CMS::ECS::BulkyCleanDisks
         :type template_name: str
         :param template_id: 模板id。
         :type template_id: str
         :param input: 任务执行时需要的参数列表。
         :type input: dict(str, object)
-        :param citation_urns: 引用链接,workflow引用的工作链接。
-        :type citation_urns: list[str]
         :param quote: 引用，参数引用。
         :type quote: list[str]
         :param trigger: 
@@ -88,7 +84,7 @@ class WorkflowRequestBody:
         :type service_scenario: str
         :param service_name: 服务名称。
         :type service_name: str
-        :param task_type: 任务类型。
+        :param task_type: 任务类型。package,script,job,cloud,standard,customize
         :type task_type: str
         """
         
@@ -101,7 +97,6 @@ class WorkflowRequestBody:
         self._template_name = None
         self._template_id = None
         self._input = None
-        self._citation_urns = None
         self._quote = None
         self._trigger = None
         self._job_name = None
@@ -125,8 +120,6 @@ class WorkflowRequestBody:
             self.template_id = template_id
         if input is not None:
             self.input = input
-        if citation_urns is not None:
-            self.citation_urns = citation_urns
         if quote is not None:
             self.quote = quote
         if trigger is not None:
@@ -146,7 +139,7 @@ class WorkflowRequestBody:
     def name(self):
         """Gets the name of this WorkflowRequestBody.
 
-        工作流名称，需要满足：[^\\\\>+<^;#\"\\s&?%='$￥@*/\\]\\[【】{}|:,.，。：‘’“、—！!~`·？《》…]{1,64}。
+        工作流名称，需要满足中文、英文大小写、数字、中划线和下划线{1,64}。
 
         :return: The name of this WorkflowRequestBody.
         :rtype: str
@@ -157,7 +150,7 @@ class WorkflowRequestBody:
     def name(self, name):
         """Sets the name of this WorkflowRequestBody.
 
-        工作流名称，需要满足：[^\\\\>+<^;#\"\\s&?%='$￥@*/\\]\\[【】{}|:,.，。：‘’“、—！!~`·？《》…]{1,64}。
+        工作流名称，需要满足中文、英文大小写、数字、中划线和下划线{1,64}。
 
         :param name: The name of this WorkflowRequestBody.
         :type name: str
@@ -168,7 +161,7 @@ class WorkflowRequestBody:
     def type(self):
         """Gets the type of this WorkflowRequestBody.
 
-        工作流类型，可以为cron/manul/event。
+        工作流类型，可以为cron、manual
 
         :return: The type of this WorkflowRequestBody.
         :rtype: str
@@ -179,7 +172,7 @@ class WorkflowRequestBody:
     def type(self, type):
         """Sets the type of this WorkflowRequestBody.
 
-        工作流类型，可以为cron/manul/event。
+        工作流类型，可以为cron、manual
 
         :param type: The type of this WorkflowRequestBody.
         :type type: str
@@ -234,7 +227,7 @@ class WorkflowRequestBody:
     def template_name(self):
         """Gets the template_name of this WorkflowRequestBody.
 
-        模板名称，需要满足：[^\\\\>+<^;#\"\\s&?%='$￥@*/\\]\\[【】{}|:,.，。：‘’“、—！!~`·？《》…]{1,64}。
+        模板名称，示例：CMS::ECS::BulkyRunScript  CMS::ECS::BulkyStartECSInstances CMS::ECS::BulkyCleanDisks
 
         :return: The template_name of this WorkflowRequestBody.
         :rtype: str
@@ -245,7 +238,7 @@ class WorkflowRequestBody:
     def template_name(self, template_name):
         """Sets the template_name of this WorkflowRequestBody.
 
-        模板名称，需要满足：[^\\\\>+<^;#\"\\s&?%='$￥@*/\\]\\[【】{}|:,.，。：‘’“、—！!~`·？《》…]{1,64}。
+        模板名称，示例：CMS::ECS::BulkyRunScript  CMS::ECS::BulkyStartECSInstances CMS::ECS::BulkyCleanDisks
 
         :param template_name: The template_name of this WorkflowRequestBody.
         :type template_name: str
@@ -295,28 +288,6 @@ class WorkflowRequestBody:
         :type input: dict(str, object)
         """
         self._input = input
-
-    @property
-    def citation_urns(self):
-        """Gets the citation_urns of this WorkflowRequestBody.
-
-        引用链接,workflow引用的工作链接。
-
-        :return: The citation_urns of this WorkflowRequestBody.
-        :rtype: list[str]
-        """
-        return self._citation_urns
-
-    @citation_urns.setter
-    def citation_urns(self, citation_urns):
-        """Sets the citation_urns of this WorkflowRequestBody.
-
-        引用链接,workflow引用的工作链接。
-
-        :param citation_urns: The citation_urns of this WorkflowRequestBody.
-        :type citation_urns: list[str]
-        """
-        self._citation_urns = citation_urns
 
     @property
     def quote(self):
@@ -450,7 +421,7 @@ class WorkflowRequestBody:
     def task_type(self):
         """Gets the task_type of this WorkflowRequestBody.
 
-        任务类型。
+        任务类型。package,script,job,cloud,standard,customize
 
         :return: The task_type of this WorkflowRequestBody.
         :rtype: str
@@ -461,7 +432,7 @@ class WorkflowRequestBody:
     def task_type(self, task_type):
         """Sets the task_type of this WorkflowRequestBody.
 
-        任务类型。
+        任务类型。package,script,job,cloud,standard,customize
 
         :param task_type: The task_type of this WorkflowRequestBody.
         :type task_type: str

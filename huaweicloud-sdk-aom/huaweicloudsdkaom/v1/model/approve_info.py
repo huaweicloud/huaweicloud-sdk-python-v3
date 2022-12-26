@@ -36,7 +36,7 @@ class ApproveInfo:
 
         The model defined in huaweicloud sdk
 
-        :param topic_selected: 审批人主题选择，当是否审核,默认是审核时，不能为空。
+        :param topic_selected: 审批人主题选择。
         :type topic_selected: str
         :param need_approve: 是否审核,默认是不审核，true，false。
         :type need_approve: bool
@@ -62,7 +62,7 @@ class ApproveInfo:
     def topic_selected(self):
         """Gets the topic_selected of this ApproveInfo.
 
-        审批人主题选择，当是否审核,默认是审核时，不能为空。
+        审批人主题选择。
 
         :return: The topic_selected of this ApproveInfo.
         :rtype: str
@@ -73,7 +73,7 @@ class ApproveInfo:
     def topic_selected(self, topic_selected):
         """Sets the topic_selected of this ApproveInfo.
 
-        审批人主题选择，当是否审核,默认是审核时，不能为空。
+        审批人主题选择。
 
         :param topic_selected: The topic_selected of this ApproveInfo.
         :type topic_selected: str

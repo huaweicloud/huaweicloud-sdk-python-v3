@@ -51,12 +51,10 @@ class TransTemplateGroupCollection:
         self._template_group_list = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if description is not None:
             self.description = description
-        if template_group_list is not None:
-            self.template_group_list = template_group_list
+        self.template_group_list = template_group_list
 
     @property
     def name(self):

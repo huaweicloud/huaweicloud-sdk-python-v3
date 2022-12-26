@@ -21,6 +21,7 @@ class PortResponseInfo:
 
     openapi_types = {
         'host_id': 'str',
+        'laddr': 'str',
         'status': 'str',
         'port': 'int',
         'type': 'str',
@@ -30,6 +31,7 @@ class PortResponseInfo:
 
     attribute_map = {
         'host_id': 'host_id',
+        'laddr': 'laddr',
         'status': 'status',
         'port': 'port',
         'type': 'type',
@@ -37,13 +39,15 @@ class PortResponseInfo:
         'path': 'path'
     }
 
-    def __init__(self, host_id=None, status=None, port=None, type=None, pid=None, path=None):
+    def __init__(self, host_id=None, laddr=None, status=None, port=None, type=None, pid=None, path=None):
         """PortResponseInfo
 
         The model defined in huaweicloud sdk
 
         :param host_id: 主机id
         :type host_id: str
+        :param laddr: 监听ip
+        :type laddr: str
         :param status: port status, normal, danger or unknow   - \&quot;normal\&quot; : 正常   - \&quot;danger\&quot; : 危险   - \&quot;unknow\&quot; : 未知
         :type status: str
         :param port: 端口号
@@ -59,6 +63,7 @@ class PortResponseInfo:
         
 
         self._host_id = None
+        self._laddr = None
         self._status = None
         self._port = None
         self._type = None
@@ -68,6 +73,8 @@ class PortResponseInfo:
 
         if host_id is not None:
             self.host_id = host_id
+        if laddr is not None:
+            self.laddr = laddr
         if status is not None:
             self.status = status
         if port is not None:
@@ -100,6 +107,28 @@ class PortResponseInfo:
         :type host_id: str
         """
         self._host_id = host_id
+
+    @property
+    def laddr(self):
+        """Gets the laddr of this PortResponseInfo.
+
+        监听ip
+
+        :return: The laddr of this PortResponseInfo.
+        :rtype: str
+        """
+        return self._laddr
+
+    @laddr.setter
+    def laddr(self, laddr):
+        """Sets the laddr of this PortResponseInfo.
+
+        监听ip
+
+        :param laddr: The laddr of this PortResponseInfo.
+        :type laddr: str
+        """
+        self._laddr = laddr
 
     @property
     def status(self):

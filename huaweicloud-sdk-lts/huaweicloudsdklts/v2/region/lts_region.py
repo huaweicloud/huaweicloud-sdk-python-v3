@@ -38,6 +38,10 @@ class LtsRegion:
 
     LA_NORTH_2 = Region(id="la-north-2", endpoint="https://lts.la-north-2.myhuaweicloud.com")
 
+    CN_NORTH_9 = Region(id="cn-north-9", endpoint="https://lts-pctest.cn-north-9.myhuaweicloud.cn")
+
+    CN_SOUTH_2 = Region(id="cn-south-2", endpoint="https://lts.cn-south-2.myhuaweicloud.com")
+
     static_fields = {
         "cn-east-2": CN_EAST_2,
         "cn-east-3": CN_EAST_3,
@@ -53,6 +57,8 @@ class LtsRegion:
         "la-south-2": LA_SOUTH_2,
         "sa-brazil-1": SA_BRAZIL_1,
         "la-north-2": LA_NORTH_2,
+        "cn-north-9": CN_NORTH_9,
+        "cn-south-2": CN_SOUTH_2,
     }
 
     @classmethod

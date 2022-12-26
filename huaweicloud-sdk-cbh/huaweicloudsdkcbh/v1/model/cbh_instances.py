@@ -196,7 +196,8 @@ class CBHInstances:
             self.data_volumes = data_volumes
         self.security_groups = security_groups
         self.availability_zone = availability_zone
-        self.slave_availability_zone = slave_availability_zone
+        if slave_availability_zone is not None:
+            self.slave_availability_zone = slave_availability_zone
         if extend_param is not None:
             self.extend_param = extend_param
         if metadata is not None:

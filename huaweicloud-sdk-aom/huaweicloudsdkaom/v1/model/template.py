@@ -90,7 +90,7 @@ class Template:
         :type job_id: str
         :param job_version: 作业版本
         :type job_version: int
-        :param name: 模板名称，需要满足：。 不允许更新模板时修改
+        :param name: 模板名称
         :type name: str
         :param need_synchronize: 是否需要同步
         :type need_synchronize: bool
@@ -382,7 +382,7 @@ class Template:
     def name(self):
         """Gets the name of this Template.
 
-        模板名称，需要满足：。 不允许更新模板时修改
+        模板名称
 
         :return: The name of this Template.
         :rtype: str
@@ -393,7 +393,7 @@ class Template:
     def name(self, name):
         """Sets the name of this Template.
 
-        模板名称，需要满足：。 不允许更新模板时修改
+        模板名称
 
         :param name: The name of this Template.
         :type name: str
