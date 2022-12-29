@@ -20,47 +20,51 @@ class DeleteDeploymentResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'dict(str, str)'
+        'deployment_id': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'deployment_id': 'deployment_id'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, deployment_id=None):
         """DeleteDeploymentResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: dict(str, str)
+        :param deployment_id: 部署Id
+        :type deployment_id: str
         """
         
         super(DeleteDeploymentResponse, self).__init__()
 
-        self._body = None
+        self._deployment_id = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if deployment_id is not None:
+            self.deployment_id = deployment_id
 
     @property
-    def body(self):
-        """Gets the body of this DeleteDeploymentResponse.
+    def deployment_id(self):
+        """Gets the deployment_id of this DeleteDeploymentResponse.
 
-        :return: The body of this DeleteDeploymentResponse.
-        :rtype: dict(str, str)
+        部署Id
+
+        :return: The deployment_id of this DeleteDeploymentResponse.
+        :rtype: str
         """
-        return self._body
+        return self._deployment_id
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this DeleteDeploymentResponse.
+    @deployment_id.setter
+    def deployment_id(self, deployment_id):
+        """Sets the deployment_id of this DeleteDeploymentResponse.
 
-        :param body: The body of this DeleteDeploymentResponse.
-        :type body: dict(str, str)
+        部署Id
+
+        :param deployment_id: The deployment_id of this DeleteDeploymentResponse.
+        :type deployment_id: str
         """
-        self._body = body
+        self._deployment_id = deployment_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

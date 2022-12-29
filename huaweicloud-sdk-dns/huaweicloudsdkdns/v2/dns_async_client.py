@@ -43,7 +43,7 @@ class DnsAsyncClient(Client):
         return ClientBuilder(clazz)
 
     def associate_endpoint_ipaddress_async(self, request):
-        """绑定ip地址。
+        """绑定ip地址
 
         绑定单个IP地址到终端节点
         
@@ -100,6 +100,69 @@ class DnsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='AssociateEndpointIpaddressResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def associate_resolve_rule_router_async(self, request):
+        """在解析规则上关联VPC
+
+        在解析规则上关联VPC
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AssociateResolveRuleRouter
+        :type request: :class:`huaweicloudsdkdns.v2.AssociateResolveRuleRouterRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.AssociateResolveRuleRouterResponse`
+        """
+        return self.associate_resolve_rule_router_with_http_info(request)
+
+    def associate_resolve_rule_router_with_http_info(self, request):
+        all_params = ['resolverrule_id', 'associate_router_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resolverrule_id' in local_var_params:
+            path_params['resolverrule_id'] = local_var_params['resolverrule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/resolverrule/{resolverrule_id}/associaterouter',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AssociateResolveRuleRouterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -480,7 +543,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def create_endpoint_async(self, request):
-        """创建终端节点。
+        """创建终端节点
 
         创建单个终端节点。
         
@@ -541,7 +604,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def create_line_group_async(self, request):
-        """创建线路分组。
+        """创建线路分组
 
         创建一个线路分组。
         
@@ -602,7 +665,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def create_resolve_rule_async(self, request):
-        """创建解析规则。
+        """创建解析规则
 
         创建一个解析规则。
         
@@ -663,7 +726,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def create_retrieval_async(self, request):
-        """创建公网域名找回请求。
+        """创建公网域名找回请求
 
         创建公网域名找回请求。
         
@@ -724,7 +787,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def create_retrieval_verification_async(self, request):
-        """请求立即验证域名找回。
+        """请求立即验证域名找回
 
         请求服务器立即执行找回验证。
         
@@ -771,7 +834,7 @@ class DnsAsyncClient(Client):
 
         return self.call_api(
             resource_path='/v2/retrieval/verification/{id}',
-            method='GET',
+            method='POST',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
@@ -846,7 +909,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_endpoint_async(self, request):
-        """删除终端节点。
+        """删除终端节点
 
         删除终端节点。
         
@@ -907,7 +970,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_line_group_async(self, request):
-        """删除线路分组。
+        """删除线路分组
 
         删除单个线路分组。
         
@@ -968,7 +1031,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_resolve_rule_async(self, request):
-        """删除解析规则。
+        """删除解析规则
 
         删除解析规则。
         
@@ -1029,7 +1092,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def disassociate_endpoint_ipaddress_async(self, request):
-        """解关联ip地址。
+        """解关联ip地址
 
         解除endpoint绑定的IP。
         
@@ -1077,7 +1140,7 @@ class DnsAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='v2.1/endpoint/{endpoint_id}/ipaddress/{ipaddress_id}',
+            resource_path='/v2.1/endpoint/{endpoint_id}/ipaddress/{ipaddress_id}',
             method='DELETE',
             path_params=path_params,
             query_params=query_params,
@@ -1086,6 +1149,69 @@ class DnsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DisassociateEndpointIpaddressResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def disassociate_resolve_rule_router_async(self, request):
+        """在解析规则上解关联VPC
+
+        在解析规则上解关联VPC
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DisassociateResolveRuleRouter
+        :type request: :class:`huaweicloudsdkdns.v2.DisassociateResolveRuleRouterRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.DisassociateResolveRuleRouterResponse`
+        """
+        return self.disassociate_resolve_rule_router_with_http_info(request)
+
+    def disassociate_resolve_rule_router_with_http_info(self, request):
+        all_params = ['resolverrule_id', 'disassociaterouter_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resolverrule_id' in local_var_params:
+            path_params['resolverrule_id'] = local_var_params['resolverrule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/resolverrule/{resolverrule_id}/disassociaterouter',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DisassociateResolveRuleRouterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1220,7 +1346,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_endpoint_ipaddresses_async(self, request):
-        """查询ip地址列表。
+        """查询ip地址列表
 
         查询某个endpoint下的ip地址列表。
         
@@ -1281,7 +1407,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_endpoint_vpcs_async(self, request):
-        """查询vpc信息。
+        """查询vpc信息
 
         查询vpc的终端节点信息。
         
@@ -1342,7 +1468,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_endpoints_async(self, request):
-        """查询终端节点列表。
+        """查询终端节点列表
 
         查询终端节点列表。
         
@@ -1409,7 +1535,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_line_groups_async(self, request):
-        """查询线路分组列表。
+        """查询线路分组列表
 
         查询线路分组列表。
         
@@ -1423,7 +1549,7 @@ class DnsAsyncClient(Client):
         return self.list_line_groups_with_http_info(request)
 
     def list_line_groups_with_http_info(self, request):
-        all_params = ['limit', 'line_id', 'name', 'offset']
+        all_params = ['line_id', 'name', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1539,7 +1665,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_resole_rules_async(self, request):
-        """查询解析规则列表。
+        """查询解析规则列表
 
         查询解析规则的列表。
         
@@ -1726,7 +1852,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_endpoint_async(self, request):
-        """查询endpoint。
+        """查询终端节点
 
         查询终端单个节点。
         
@@ -1787,7 +1913,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_line_group_async(self, request):
-        """查询线路分组。
+        """查询线路分组
 
         查询线路分组。
         
@@ -1848,7 +1974,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_resole_rule_async(self, request):
-        """查询单个解析规则。
+        """查询单个解析规则
 
         查询单个解析规则。
         
@@ -1909,7 +2035,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_retrieval_async(self, request):
-        """查询域名找回。
+        """查询域名找回
 
         查询域名找回请求。
         
@@ -1970,7 +2096,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_retrieval_verification_async(self, request):
-        """查询域名找回结果。
+        """查询域名找回结果
 
         查询域名找回结果。
         
@@ -2157,7 +2283,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def update_line_groups_async(self, request):
-        """更新线路分组。
+        """更新线路分组
 
         更新单个线路分组。
         
@@ -2171,7 +2297,7 @@ class DnsAsyncClient(Client):
         return self.update_line_groups_with_http_info(request)
 
     def update_line_groups_with_http_info(self, request):
-        all_params = ['linegroup_id']
+        all_params = ['linegroup_id', 'update_line_groups_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2192,6 +2318,8 @@ class DnsAsyncClient(Client):
         form_params = {}
 
         body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
@@ -2218,7 +2346,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def update_resolve_rule_async(self, request):
-        """修改解析规则。
+        """修改解析规则
 
         修改一个解析规则。
         
@@ -2610,7 +2738,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def associate_health_check_async(self, request):
-        """Record Set关联健康检查。
+        """Record Set关联健康检查
 
         Record Set关联健康检查。
         
@@ -2658,7 +2786,7 @@ class DnsAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path=' /v2.1/recordsets/{recordset_id}/associatehealthcheck',
+            resource_path='/v2.1/recordsets/{recordset_id}/associatehealthcheck',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -2673,7 +2801,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def batch_delete_record_set_with_line_async(self, request):
-        """批量删除某个Zone下的Record Set资源。
+        """批量删除某个Zone下的Record Set资源
 
         批量删除某个Zone下的Record Set资源，当删除的资源不存在时，则默认删除成功。
         响应结果中只包含本次实际删除的资源。
@@ -2737,7 +2865,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def batch_update_record_set_with_line_async(self, request):
-        """批量修改RecordSet。
+        """批量修改RecordSet
 
         批量修改RecordSet。属于原子性操作，请求Record Set将全部完成修改，或不做任何修改。
         仅公网Zone支持。
@@ -2864,7 +2992,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def create_record_set_with_batch_lines_async(self, request):
-        """批量线路创建RecordSet。仅公网Zone支持。
+        """批量线路创建RecordSet
 
         批量线路创建RecordSet。属于原子性操作，如果存在一个参数校验不通过，则创建失败。仅公网Zone支持。
         
@@ -2927,7 +3055,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def create_record_set_with_line_async(self, request):
-        """创建单个Record Set，仅适用于公网DNS
+        """创建单个Record Set
 
         创建单个Record Set，仅适用于公网DNS
         
@@ -3116,9 +3244,9 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def disassociate_health_check_async(self, request):
-        """Record Set解关联健康检查。
+        """Record Set解关联健康检查
 
-        Record Set解关联健康检查。。
+        Record Set解关联健康检查。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3164,7 +3292,7 @@ class DnsAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2.1/recordsets/{recordset_id}/associatehealthcheck',
+            resource_path='/v2.1/recordsets/{recordset_id}/disassociatehealthcheck',
             method='DELETE',
             path_params=path_params,
             query_params=query_params,
@@ -3497,7 +3625,7 @@ class DnsAsyncClient(Client):
     def show_record_set_async(self, request):
         """查询单个Record Set
 
-        查询单个Record Set
+        查询单个Record Set。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3643,7 +3771,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_record_set_with_line_async(self, request):
-        """查询单个Record Set，仅适用于公网DNS
+        """查询单个Record Set
 
         查询单个Record Set，仅适用于公网DNS
         
@@ -5171,7 +5299,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def update_public_zone_status_async(self, request):
-        """设置单个公网Zone状态，支持暂停、启用Zone
+        """设置单个公网Zone状态
 
         设置单个公网Zone状态，支持暂停、启用Zone
         

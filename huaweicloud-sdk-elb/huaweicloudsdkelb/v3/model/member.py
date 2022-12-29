@@ -76,7 +76,7 @@ class Member:
         :type name: str
         :param project_id: 后端服务器所在的项目ID。
         :type project_id: str
-        :param pool_id: 所在后端服务器组ID。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        :param pool_id: 所在后端服务器组ID。  不支持该字段，请勿使用。
         :type pool_id: str
         :param admin_state_up: 后端云服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
         :type admin_state_up: bool
@@ -90,17 +90,17 @@ class Member:
         :type address: str
         :param ip_version: 当前后端服务器的IP地址版本，由后端系统自动根据传入的address字段确定。取值：v4、v6。
         :type ip_version: str
-        :param device_owner: 设备所有者。  取值： - 空，表示后端服务器未关联到ECS。 - compute:{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        :param device_owner: 设备所有者。  取值： - 空，表示后端服务器未关联到ECS。 - compute:{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。  不支持该字段，请勿使用。
         :type device_owner: str
-        :param device_id: 关联的ECS ID，为空表示后端服务器未关联到ECS。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        :param device_id: 关联的ECS ID，为空表示后端服务器未关联到ECS。  不支持该字段，请勿使用。
         :type device_id: str
         :param operating_status: 后端云服务器的健康状态。  取值： - ONLINE：后端云服务器正常。 - NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 - OFFLINE：后端云服务器关联的ECS服务器不存在或已关机。
         :type operating_status: str
         :param status: 后端云服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_stauts为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
         :type status: list[:class:`huaweicloudsdkelb.v3.MemberStatus`]
-        :param loadbalancer_id: 所属负载均衡器ID。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        :param loadbalancer_id: 所属负载均衡器ID。  不支持该字段，请勿使用。
         :type loadbalancer_id: str
-        :param loadbalancers: 后端云服务器关联的负载均衡器ID列表。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        :param loadbalancers: 后端云服务器关联的负载均衡器ID列表。  不支持该字段，请勿使用。
         :type loadbalancers: list[:class:`huaweicloudsdkelb.v3.ResourceID`]
         :param created_at: 创建时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt,hk_tm)
         :type created_at: str
@@ -237,7 +237,7 @@ class Member:
     def pool_id(self):
         """Gets the pool_id of this Member.
 
-        所在后端服务器组ID。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        所在后端服务器组ID。  不支持该字段，请勿使用。
 
         :return: The pool_id of this Member.
         :rtype: str
@@ -248,7 +248,7 @@ class Member:
     def pool_id(self, pool_id):
         """Sets the pool_id of this Member.
 
-        所在后端服务器组ID。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        所在后端服务器组ID。  不支持该字段，请勿使用。
 
         :param pool_id: The pool_id of this Member.
         :type pool_id: str
@@ -391,7 +391,7 @@ class Member:
     def device_owner(self):
         """Gets the device_owner of this Member.
 
-        设备所有者。  取值： - 空，表示后端服务器未关联到ECS。 - compute:{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        设备所有者。  取值： - 空，表示后端服务器未关联到ECS。 - compute:{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。  不支持该字段，请勿使用。
 
         :return: The device_owner of this Member.
         :rtype: str
@@ -402,7 +402,7 @@ class Member:
     def device_owner(self, device_owner):
         """Sets the device_owner of this Member.
 
-        设备所有者。  取值： - 空，表示后端服务器未关联到ECS。 - compute:{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        设备所有者。  取值： - 空，表示后端服务器未关联到ECS。 - compute:{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。  不支持该字段，请勿使用。
 
         :param device_owner: The device_owner of this Member.
         :type device_owner: str
@@ -413,7 +413,7 @@ class Member:
     def device_id(self):
         """Gets the device_id of this Member.
 
-        关联的ECS ID，为空表示后端服务器未关联到ECS。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        关联的ECS ID，为空表示后端服务器未关联到ECS。  不支持该字段，请勿使用。
 
         :return: The device_id of this Member.
         :rtype: str
@@ -424,7 +424,7 @@ class Member:
     def device_id(self, device_id):
         """Sets the device_id of this Member.
 
-        关联的ECS ID，为空表示后端服务器未关联到ECS。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        关联的ECS ID，为空表示后端服务器未关联到ECS。  不支持该字段，请勿使用。
 
         :param device_id: The device_id of this Member.
         :type device_id: str
@@ -479,7 +479,7 @@ class Member:
     def loadbalancer_id(self):
         """Gets the loadbalancer_id of this Member.
 
-        所属负载均衡器ID。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        所属负载均衡器ID。  不支持该字段，请勿使用。
 
         :return: The loadbalancer_id of this Member.
         :rtype: str
@@ -490,7 +490,7 @@ class Member:
     def loadbalancer_id(self, loadbalancer_id):
         """Sets the loadbalancer_id of this Member.
 
-        所属负载均衡器ID。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        所属负载均衡器ID。  不支持该字段，请勿使用。
 
         :param loadbalancer_id: The loadbalancer_id of this Member.
         :type loadbalancer_id: str
@@ -501,7 +501,7 @@ class Member:
     def loadbalancers(self):
         """Gets the loadbalancers of this Member.
 
-        后端云服务器关联的负载均衡器ID列表。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        后端云服务器关联的负载均衡器ID列表。  不支持该字段，请勿使用。
 
         :return: The loadbalancers of this Member.
         :rtype: list[:class:`huaweicloudsdkelb.v3.ResourceID`]
@@ -512,7 +512,7 @@ class Member:
     def loadbalancers(self, loadbalancers):
         """Sets the loadbalancers of this Member.
 
-        后端云服务器关联的负载均衡器ID列表。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        后端云服务器关联的负载均衡器ID列表。  不支持该字段，请勿使用。
 
         :param loadbalancers: The loadbalancers of this Member.
         :type loadbalancers: list[:class:`huaweicloudsdkelb.v3.ResourceID`]

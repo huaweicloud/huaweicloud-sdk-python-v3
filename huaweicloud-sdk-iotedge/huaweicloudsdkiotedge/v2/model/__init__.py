@@ -26,6 +26,7 @@ from huaweicloudsdkiotedge.v2.model.batch_list_edge_apps_request import BatchLis
 from huaweicloudsdkiotedge.v2.model.batch_list_edge_apps_response import BatchListEdgeAppsResponse
 from huaweicloudsdkiotedge.v2.model.batch_list_modules_request import BatchListModulesRequest
 from huaweicloudsdkiotedge.v2.model.batch_list_modules_response import BatchListModulesResponse
+from huaweicloudsdkiotedge.v2.model.certificate_local_path_dto import CertificateLocalPathDTO
 from huaweicloudsdkiotedge.v2.model.confirm_ia_config_request_body import ConfirmIaConfigRequestBody
 from huaweicloudsdkiotedge.v2.model.confirm_ia_configs_request_body import ConfirmIaConfigsRequestBody
 from huaweicloudsdkiotedge.v2.model.container_configs_dto import ContainerConfigsDTO
@@ -68,6 +69,8 @@ from huaweicloudsdkiotedge.v2.model.delete_module_request import DeleteModuleReq
 from huaweicloudsdkiotedge.v2.model.delete_module_response import DeleteModuleResponse
 from huaweicloudsdkiotedge.v2.model.delete_na_request import DeleteNaRequest
 from huaweicloudsdkiotedge.v2.model.delete_na_response import DeleteNaResponse
+from huaweicloudsdkiotedge.v2.model.device_auth_info_dto import DeviceAuthInfoDTO
+from huaweicloudsdkiotedge.v2.model.device_auth_info_display_dto import DeviceAuthInfoDisplayDTO
 from huaweicloudsdkiotedge.v2.model.edge_app_instance_dto import EdgeAppInstanceDTO
 from huaweicloudsdkiotedge.v2.model.edge_device_auth_info import EdgeDeviceAuthInfo
 from huaweicloudsdkiotedge.v2.model.edge_module_dto import EdgeModuleDTO
@@ -95,6 +98,7 @@ from huaweicloudsdkiotedge.v2.model.log_config_dto import LogConfigDTO
 from huaweicloudsdkiotedge.v2.model.module_container_settings_res_dto import ModuleContainerSettingsResDTO
 from huaweicloudsdkiotedge.v2.model.mqtt_connection_info import MqttConnectionInfo
 from huaweicloudsdkiotedge.v2.model.nic import Nic
+from huaweicloudsdkiotedge.v2.model.offline_cache_configs_dto import OfflineCacheConfigsDTO
 from huaweicloudsdkiotedge.v2.model.page_info_dto import PageInfoDTO
 from huaweicloudsdkiotedge.v2.model.probe_dto import ProbeDTO
 from huaweicloudsdkiotedge.v2.model.query_application_brief_response_dto import QueryApplicationBriefResponseDTO

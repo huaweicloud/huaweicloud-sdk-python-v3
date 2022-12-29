@@ -23,7 +23,7 @@ class TaskInfo:
         'name': 'str',
         'timestamp': 'str',
         'description': 'str',
-        'streams': 'TaskStream',
+        'streams': 'list[TaskStream]',
         'ok_pod_number': 'int',
         'cur_pod_number': 'int',
         'sum_pod_number': 'int',
@@ -64,8 +64,8 @@ class TaskInfo:
         :type timestamp: str
         :param description: 作业描述
         :type description: str
-        :param streams: 
-        :type streams: :class:`huaweicloudsdkhilens.v3.TaskStream`
+        :param streams: 作业流详情
+        :type streams: list[:class:`huaweicloudsdkhilens.v3.TaskStream`]
         :param ok_pod_number: 在实例上运行成功的作业数
         :type ok_pod_number: int
         :param cur_pod_number: 在实例上正在运行的作业数
@@ -205,8 +205,10 @@ class TaskInfo:
     def streams(self):
         """Gets the streams of this TaskInfo.
 
+        作业流详情
+
         :return: The streams of this TaskInfo.
-        :rtype: :class:`huaweicloudsdkhilens.v3.TaskStream`
+        :rtype: list[:class:`huaweicloudsdkhilens.v3.TaskStream`]
         """
         return self._streams
 
@@ -214,8 +216,10 @@ class TaskInfo:
     def streams(self, streams):
         """Sets the streams of this TaskInfo.
 
+        作业流详情
+
         :param streams: The streams of this TaskInfo.
-        :type streams: :class:`huaweicloudsdkhilens.v3.TaskStream`
+        :type streams: list[:class:`huaweicloudsdkhilens.v3.TaskStream`]
         """
         self._streams = streams
 

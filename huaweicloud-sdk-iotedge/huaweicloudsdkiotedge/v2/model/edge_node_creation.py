@@ -26,16 +26,21 @@ class EdgeNodeCreation:
         'verify_code': 'str',
         'time_out': 'int',
         'arch': 'str',
+        'os_type': 'str',
         'instance_id': 'str',
         'space_id': 'str',
         'resource_ids': 'list[str]',
         'security_level': 'str',
+        'reliability_level': 'str',
         'storage_period': 'int',
         'ai_card_type': 'str',
         'base_path': 'BasePathDTO',
         'log_configs': 'list[LogConfigDTO]',
         'apps': 'list[EdgeAppInstanceDTO]',
-        'hardware_model': 'str'
+        'network_access_point': 'str',
+        'hardware_model': 'str',
+        'offline_cache_configs': 'OfflineCacheConfigsDTO',
+        'device_auth_info': 'DeviceAuthInfoDTO'
     }
 
     attribute_map = {
@@ -45,19 +50,24 @@ class EdgeNodeCreation:
         'verify_code': 'verify_code',
         'time_out': 'time_out',
         'arch': 'arch',
+        'os_type': 'os_type',
         'instance_id': 'instance_id',
         'space_id': 'space_id',
         'resource_ids': 'resource_ids',
         'security_level': 'security_level',
+        'reliability_level': 'reliability_level',
         'storage_period': 'storage_period',
         'ai_card_type': 'ai_card_type',
         'base_path': 'base_path',
         'log_configs': 'log_configs',
         'apps': 'apps',
-        'hardware_model': 'hardware_model'
+        'network_access_point': 'network_access_point',
+        'hardware_model': 'hardware_model',
+        'offline_cache_configs': 'offline_cache_configs',
+        'device_auth_info': 'device_auth_info'
     }
 
-    def __init__(self, edge_node_id=None, name=None, type=None, verify_code=None, time_out=None, arch=None, instance_id=None, space_id=None, resource_ids=None, security_level=None, storage_period=None, ai_card_type=None, base_path=None, log_configs=None, apps=None, hardware_model=None):
+    def __init__(self, edge_node_id=None, name=None, type=None, verify_code=None, time_out=None, arch=None, os_type=None, instance_id=None, space_id=None, resource_ids=None, security_level=None, reliability_level=None, storage_period=None, ai_card_type=None, base_path=None, log_configs=None, apps=None, network_access_point=None, hardware_model=None, offline_cache_configs=None, device_auth_info=None):
         """EdgeNodeCreation
 
         The model defined in huaweicloud sdk
@@ -74,6 +84,8 @@ class EdgeNodeCreation:
         :type time_out: int
         :param arch: 系统架构。包括：arm64，arm32，x86_64。
         :type arch: str
+        :param os_type: 系统类型。包括：generalLinux通用系统，openHarmony。
+        :type os_type: str
         :param instance_id: 实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
         :type instance_id: str
         :param space_id: 资源空间id，对应IOTDA云服务接口参数中的app_id。
@@ -82,6 +94,8 @@ class EdgeNodeCreation:
         :type resource_ids: list[str]
         :param security_level: 节点的安全等级，MEDIUM表示本地明文存储，HIGH表示本地加密存储。
         :type security_level: str
+        :param reliability_level: 节点的可靠性等级。
+        :type reliability_level: str
         :param storage_period: 节点的存储周期，默认0天，取值范围0~7天，0天则不存储。
         :type storage_period: int
         :param ai_card_type: 华为AI加速卡类型，如NPU、GPU。
@@ -92,8 +106,14 @@ class EdgeNodeCreation:
         :type log_configs: list[:class:`huaweicloudsdkiotedge.v2.LogConfigDTO`]
         :param apps: 用户预置第三方边缘应用
         :type apps: list[:class:`huaweicloudsdkiotedge.v2.EdgeAppInstanceDTO`]
+        :param network_access_point: 网络接入方式类型
+        :type network_access_point: str
         :param hardware_model: 网关型号
         :type hardware_model: str
+        :param offline_cache_configs: 
+        :type offline_cache_configs: :class:`huaweicloudsdkiotedge.v2.OfflineCacheConfigsDTO`
+        :param device_auth_info: 
+        :type device_auth_info: :class:`huaweicloudsdkiotedge.v2.DeviceAuthInfoDTO`
         """
         
         
@@ -104,16 +124,21 @@ class EdgeNodeCreation:
         self._verify_code = None
         self._time_out = None
         self._arch = None
+        self._os_type = None
         self._instance_id = None
         self._space_id = None
         self._resource_ids = None
         self._security_level = None
+        self._reliability_level = None
         self._storage_period = None
         self._ai_card_type = None
         self._base_path = None
         self._log_configs = None
         self._apps = None
+        self._network_access_point = None
         self._hardware_model = None
+        self._offline_cache_configs = None
+        self._device_auth_info = None
         self.discriminator = None
 
         if edge_node_id is not None:
@@ -126,6 +151,8 @@ class EdgeNodeCreation:
             self.time_out = time_out
         if arch is not None:
             self.arch = arch
+        if os_type is not None:
+            self.os_type = os_type
         if instance_id is not None:
             self.instance_id = instance_id
         if space_id is not None:
@@ -134,6 +161,8 @@ class EdgeNodeCreation:
             self.resource_ids = resource_ids
         if security_level is not None:
             self.security_level = security_level
+        if reliability_level is not None:
+            self.reliability_level = reliability_level
         if storage_period is not None:
             self.storage_period = storage_period
         if ai_card_type is not None:
@@ -144,8 +173,14 @@ class EdgeNodeCreation:
             self.log_configs = log_configs
         if apps is not None:
             self.apps = apps
+        if network_access_point is not None:
+            self.network_access_point = network_access_point
         if hardware_model is not None:
             self.hardware_model = hardware_model
+        if offline_cache_configs is not None:
+            self.offline_cache_configs = offline_cache_configs
+        if device_auth_info is not None:
+            self.device_auth_info = device_auth_info
 
     @property
     def edge_node_id(self):
@@ -280,6 +315,28 @@ class EdgeNodeCreation:
         self._arch = arch
 
     @property
+    def os_type(self):
+        """Gets the os_type of this EdgeNodeCreation.
+
+        系统类型。包括：generalLinux通用系统，openHarmony。
+
+        :return: The os_type of this EdgeNodeCreation.
+        :rtype: str
+        """
+        return self._os_type
+
+    @os_type.setter
+    def os_type(self, os_type):
+        """Sets the os_type of this EdgeNodeCreation.
+
+        系统类型。包括：generalLinux通用系统，openHarmony。
+
+        :param os_type: The os_type of this EdgeNodeCreation.
+        :type os_type: str
+        """
+        self._os_type = os_type
+
+    @property
     def instance_id(self):
         """Gets the instance_id of this EdgeNodeCreation.
 
@@ -366,6 +423,28 @@ class EdgeNodeCreation:
         :type security_level: str
         """
         self._security_level = security_level
+
+    @property
+    def reliability_level(self):
+        """Gets the reliability_level of this EdgeNodeCreation.
+
+        节点的可靠性等级。
+
+        :return: The reliability_level of this EdgeNodeCreation.
+        :rtype: str
+        """
+        return self._reliability_level
+
+    @reliability_level.setter
+    def reliability_level(self, reliability_level):
+        """Sets the reliability_level of this EdgeNodeCreation.
+
+        节点的可靠性等级。
+
+        :param reliability_level: The reliability_level of this EdgeNodeCreation.
+        :type reliability_level: str
+        """
+        self._reliability_level = reliability_level
 
     @property
     def storage_period(self):
@@ -474,6 +553,28 @@ class EdgeNodeCreation:
         self._apps = apps
 
     @property
+    def network_access_point(self):
+        """Gets the network_access_point of this EdgeNodeCreation.
+
+        网络接入方式类型
+
+        :return: The network_access_point of this EdgeNodeCreation.
+        :rtype: str
+        """
+        return self._network_access_point
+
+    @network_access_point.setter
+    def network_access_point(self, network_access_point):
+        """Sets the network_access_point of this EdgeNodeCreation.
+
+        网络接入方式类型
+
+        :param network_access_point: The network_access_point of this EdgeNodeCreation.
+        :type network_access_point: str
+        """
+        self._network_access_point = network_access_point
+
+    @property
     def hardware_model(self):
         """Gets the hardware_model of this EdgeNodeCreation.
 
@@ -494,6 +595,42 @@ class EdgeNodeCreation:
         :type hardware_model: str
         """
         self._hardware_model = hardware_model
+
+    @property
+    def offline_cache_configs(self):
+        """Gets the offline_cache_configs of this EdgeNodeCreation.
+
+        :return: The offline_cache_configs of this EdgeNodeCreation.
+        :rtype: :class:`huaweicloudsdkiotedge.v2.OfflineCacheConfigsDTO`
+        """
+        return self._offline_cache_configs
+
+    @offline_cache_configs.setter
+    def offline_cache_configs(self, offline_cache_configs):
+        """Sets the offline_cache_configs of this EdgeNodeCreation.
+
+        :param offline_cache_configs: The offline_cache_configs of this EdgeNodeCreation.
+        :type offline_cache_configs: :class:`huaweicloudsdkiotedge.v2.OfflineCacheConfigsDTO`
+        """
+        self._offline_cache_configs = offline_cache_configs
+
+    @property
+    def device_auth_info(self):
+        """Gets the device_auth_info of this EdgeNodeCreation.
+
+        :return: The device_auth_info of this EdgeNodeCreation.
+        :rtype: :class:`huaweicloudsdkiotedge.v2.DeviceAuthInfoDTO`
+        """
+        return self._device_auth_info
+
+    @device_auth_info.setter
+    def device_auth_info(self, device_auth_info):
+        """Sets the device_auth_info of this EdgeNodeCreation.
+
+        :param device_auth_info: The device_auth_info of this EdgeNodeCreation.
+        :type device_auth_info: :class:`huaweicloudsdkiotedge.v2.DeviceAuthInfoDTO`
+        """
+        self._device_auth_info = device_auth_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -24,7 +24,8 @@ class InstanceModReq:
         'maintain_begin': 'str',
         'maintain_end': 'str',
         'instance_name': 'str',
-        'security_group_id': 'str'
+        'security_group_id': 'str',
+        'vpcep_service_name': 'str'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class InstanceModReq:
         'maintain_begin': 'maintain_begin',
         'maintain_end': 'maintain_end',
         'instance_name': 'instance_name',
-        'security_group_id': 'security_group_id'
+        'security_group_id': 'security_group_id',
+        'vpcep_service_name': 'vpcep_service_name'
     }
 
-    def __init__(self, description=None, maintain_begin=None, maintain_end=None, instance_name=None, security_group_id=None):
+    def __init__(self, description=None, maintain_begin=None, maintain_end=None, instance_name=None, security_group_id=None, vpcep_service_name=None):
         """InstanceModReq
 
         The model defined in huaweicloud sdk
@@ -50,6 +52,8 @@ class InstanceModReq:
         :type instance_name: str
         :param security_group_id: 指定实例所属的安全组。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。 
         :type security_group_id: str
+        :param vpcep_service_name: 终端节点服务的名称。  长度不超过16个字符，允许输入大小写字母、数字、下划线、中划线。  如果您不填写该参数，系统生成的终端节点服务的名称为{region}.apig.{service_id}。 如果您填写该参数，系统生成的终端节点服务的名称为{region}.{vpcep_service_name}.{service_id}。 
+        :type vpcep_service_name: str
         """
         
         
@@ -59,6 +63,7 @@ class InstanceModReq:
         self._maintain_end = None
         self._instance_name = None
         self._security_group_id = None
+        self._vpcep_service_name = None
         self.discriminator = None
 
         if description is not None:
@@ -71,6 +76,8 @@ class InstanceModReq:
             self.instance_name = instance_name
         if security_group_id is not None:
             self.security_group_id = security_group_id
+        if vpcep_service_name is not None:
+            self.vpcep_service_name = vpcep_service_name
 
     @property
     def description(self):
@@ -181,6 +188,28 @@ class InstanceModReq:
         :type security_group_id: str
         """
         self._security_group_id = security_group_id
+
+    @property
+    def vpcep_service_name(self):
+        """Gets the vpcep_service_name of this InstanceModReq.
+
+        终端节点服务的名称。  长度不超过16个字符，允许输入大小写字母、数字、下划线、中划线。  如果您不填写该参数，系统生成的终端节点服务的名称为{region}.apig.{service_id}。 如果您填写该参数，系统生成的终端节点服务的名称为{region}.{vpcep_service_name}.{service_id}。 
+
+        :return: The vpcep_service_name of this InstanceModReq.
+        :rtype: str
+        """
+        return self._vpcep_service_name
+
+    @vpcep_service_name.setter
+    def vpcep_service_name(self, vpcep_service_name):
+        """Sets the vpcep_service_name of this InstanceModReq.
+
+        终端节点服务的名称。  长度不超过16个字符，允许输入大小写字母、数字、下划线、中划线。  如果您不填写该参数，系统生成的终端节点服务的名称为{region}.apig.{service_id}。 如果您填写该参数，系统生成的终端节点服务的名称为{region}.{vpcep_service_name}.{service_id}。 
+
+        :param vpcep_service_name: The vpcep_service_name of this InstanceModReq.
+        :type vpcep_service_name: str
+        """
+        self._vpcep_service_name = vpcep_service_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

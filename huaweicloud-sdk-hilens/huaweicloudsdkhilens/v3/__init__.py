@@ -8,6 +8,8 @@ from huaweicloudsdkhilens.v3.hilens_async_client import HiLensAsyncClient
 # import models into sdk package
 from huaweicloudsdkhilens.v3.model.activate_node_request_body import ActivateNodeRequestBody
 from huaweicloudsdkhilens.v3.model.activate_record_records import ActivateRecordRecords
+from huaweicloudsdkhilens.v3.model.add_deployment_nodes_request import AddDeploymentNodesRequest
+from huaweicloudsdkhilens.v3.model.add_deployment_nodes_response import AddDeploymentNodesResponse
 from huaweicloudsdkhilens.v3.model.app_def import AppDef
 from huaweicloudsdkhilens.v3.model.batch_create_node_tags_request import BatchCreateNodeTagsRequest
 from huaweicloudsdkhilens.v3.model.batch_create_node_tags_response import BatchCreateNodeTagsResponse
@@ -18,6 +20,8 @@ from huaweicloudsdkhilens.v3.model.config_map_model_box_dto import ConfigMapMode
 from huaweicloudsdkhilens.v3.model.configs_map import ConfigsMap
 from huaweicloudsdkhilens.v3.model.create_config_map_request import CreateConfigMapRequest
 from huaweicloudsdkhilens.v3.model.create_config_map_response import CreateConfigMapResponse
+from huaweicloudsdkhilens.v3.model.create_deployment_request import CreateDeploymentRequest
+from huaweicloudsdkhilens.v3.model.create_deployment_response import CreateDeploymentResponse
 from huaweicloudsdkhilens.v3.model.create_node_request import CreateNodeRequest
 from huaweicloudsdkhilens.v3.model.create_node_response import CreateNodeResponse
 from huaweicloudsdkhilens.v3.model.create_order_form_request import CreateOrderFormRequest
@@ -29,6 +33,7 @@ from huaweicloudsdkhilens.v3.model.create_secret_response import CreateSecretRes
 from huaweicloudsdkhilens.v3.model.create_skill_order_from import CreateSkillOrderFrom
 from huaweicloudsdkhilens.v3.model.create_task_request import CreateTaskRequest
 from huaweicloudsdkhilens.v3.model.create_task_response import CreateTaskResponse
+from huaweicloudsdkhilens.v3.model.create_update_secret_resp_secret import CreateUpdateSecretRespSecret
 from huaweicloudsdkhilens.v3.model.create_work_space_request import CreateWorkSpaceRequest
 from huaweicloudsdkhilens.v3.model.create_work_space_response import CreateWorkSpaceResponse
 from huaweicloudsdkhilens.v3.model.delete_config_map_request import DeleteConfigMapRequest
@@ -37,6 +42,8 @@ from huaweicloudsdkhilens.v3.model.delete_deployment_request import DeleteDeploy
 from huaweicloudsdkhilens.v3.model.delete_deployment_response import DeleteDeploymentResponse
 from huaweicloudsdkhilens.v3.model.delete_node_request import DeleteNodeRequest
 from huaweicloudsdkhilens.v3.model.delete_node_response import DeleteNodeResponse
+from huaweicloudsdkhilens.v3.model.delete_pod_request import DeletePodRequest
+from huaweicloudsdkhilens.v3.model.delete_pod_response import DeletePodResponse
 from huaweicloudsdkhilens.v3.model.delete_resource_tag_request import DeleteResourceTagRequest
 from huaweicloudsdkhilens.v3.model.delete_resource_tag_response import DeleteResourceTagResponse
 from huaweicloudsdkhilens.v3.model.delete_secret_request import DeleteSecretRequest
@@ -45,9 +52,15 @@ from huaweicloudsdkhilens.v3.model.delete_task_request import DeleteTaskRequest
 from huaweicloudsdkhilens.v3.model.delete_task_response import DeleteTaskResponse
 from huaweicloudsdkhilens.v3.model.delete_work_space_request import DeleteWorkSpaceRequest
 from huaweicloudsdkhilens.v3.model.delete_work_space_response import DeleteWorkSpaceResponse
+from huaweicloudsdkhilens.v3.model.deployment import Deployment
+from huaweicloudsdkhilens.v3.model.deployment_add_nodes_request import DeploymentAddNodesRequest
+from huaweicloudsdkhilens.v3.model.deployment_create_request import DeploymentCreateRequest
 from huaweicloudsdkhilens.v3.model.deployment_patch_request import DeploymentPatchRequest
+from huaweicloudsdkhilens.v3.model.deployment_request import DeploymentRequest
 from huaweicloudsdkhilens.v3.model.deployment_secrets import DeploymentSecrets
+from huaweicloudsdkhilens.v3.model.deployment_tag import DeploymentTag
 from huaweicloudsdkhilens.v3.model.deployment_template import DeploymentTemplate
+from huaweicloudsdkhilens.v3.model.deployment_update_request import DeploymentUpdateRequest
 from huaweicloudsdkhilens.v3.model.env import Env
 from huaweicloudsdkhilens.v3.model.firmware_update_record import FirmwareUpdateRecord
 from huaweicloudsdkhilens.v3.model.freeze_node_request import FreezeNodeRequest
@@ -55,9 +68,13 @@ from huaweicloudsdkhilens.v3.model.freeze_node_response import FreezeNodeRespons
 from huaweicloudsdkhilens.v3.model.host_container_port_mapping import HostContainerPortMapping
 from huaweicloudsdkhilens.v3.model.host_port_range import HostPortRange
 from huaweicloudsdkhilens.v3.model.http_get import HttpGet
-from huaweicloudsdkhilens.v3.model.license import License
 from huaweicloudsdkhilens.v3.model.list_config_maps_request import ListConfigMapsRequest
 from huaweicloudsdkhilens.v3.model.list_config_maps_response import ListConfigMapsResponse
+from huaweicloudsdkhilens.v3.model.list_firmwares_request import ListFirmwaresRequest
+from huaweicloudsdkhilens.v3.model.list_firmwares_response import ListFirmwaresResponse
+from huaweicloudsdkhilens.v3.model.list_firmwares_response_data import ListFirmwaresResponseData
+from huaweicloudsdkhilens.v3.model.list_platform_manager_request import ListPlatformManagerRequest
+from huaweicloudsdkhilens.v3.model.list_platform_manager_response import ListPlatformManagerResponse
 from huaweicloudsdkhilens.v3.model.list_resource_tags_request import ListResourceTagsRequest
 from huaweicloudsdkhilens.v3.model.list_resource_tags_response import ListResourceTagsResponse
 from huaweicloudsdkhilens.v3.model.list_secrets_request import ListSecretsRequest
@@ -77,12 +94,13 @@ from huaweicloudsdkhilens.v3.model.node_resource import NodeResource
 from huaweicloudsdkhilens.v3.model.node_response import NodeResponse
 from huaweicloudsdkhilens.v3.model.node_result import NodeResult
 from huaweicloudsdkhilens.v3.model.node_tag import NodeTag
+from huaweicloudsdkhilens.v3.model.order_form import OrderForm
 from huaweicloudsdkhilens.v3.model.patch import Patch
 from huaweicloudsdkhilens.v3.model.pod import Pod
 from huaweicloudsdkhilens.v3.model.pod_affinity import PodAffinity
 from huaweicloudsdkhilens.v3.model.pod_config import PodConfig
+from huaweicloudsdkhilens.v3.model.pod_request import PodRequest
 from huaweicloudsdkhilens.v3.model.probe import Probe
-from huaweicloudsdkhilens.v3.model.product_info import ProductInfo
 from huaweicloudsdkhilens.v3.model.request_workspace import RequestWorkspace
 from huaweicloudsdkhilens.v3.model.res import Res
 from huaweicloudsdkhilens.v3.model.res_quest import ResQuest
@@ -98,6 +116,10 @@ from huaweicloudsdkhilens.v3.model.show_config_map_request import ShowConfigMapR
 from huaweicloudsdkhilens.v3.model.show_config_map_response import ShowConfigMapResponse
 from huaweicloudsdkhilens.v3.model.show_deployment_pods_request import ShowDeploymentPodsRequest
 from huaweicloudsdkhilens.v3.model.show_deployment_pods_response import ShowDeploymentPodsResponse
+from huaweicloudsdkhilens.v3.model.show_deployment_request import ShowDeploymentRequest
+from huaweicloudsdkhilens.v3.model.show_deployment_response import ShowDeploymentResponse
+from huaweicloudsdkhilens.v3.model.show_deployments_request import ShowDeploymentsRequest
+from huaweicloudsdkhilens.v3.model.show_deployments_response import ShowDeploymentsResponse
 from huaweicloudsdkhilens.v3.model.show_node_activation_records_request import ShowNodeActivationRecordsRequest
 from huaweicloudsdkhilens.v3.model.show_node_activation_records_response import ShowNodeActivationRecordsResponse
 from huaweicloudsdkhilens.v3.model.show_node_request import ShowNodeRequest
@@ -124,11 +146,16 @@ from huaweicloudsdkhilens.v3.model.show_work_space_request import ShowWorkSpaceR
 from huaweicloudsdkhilens.v3.model.show_work_space_response import ShowWorkSpaceResponse
 from huaweicloudsdkhilens.v3.model.skill_info import SkillInfo
 from huaweicloudsdkhilens.v3.model.skill_order_info import SkillOrderInfo
+from huaweicloudsdkhilens.v3.model.start_and_stop_deployment_pod_request import StartAndStopDeploymentPodRequest
+from huaweicloudsdkhilens.v3.model.start_and_stop_deployment_pod_response import StartAndStopDeploymentPodResponse
+from huaweicloudsdkhilens.v3.model.start_and_stop_deployment_request import StartAndStopDeploymentRequest
+from huaweicloudsdkhilens.v3.model.start_and_stop_deployment_response import StartAndStopDeploymentResponse
 from huaweicloudsdkhilens.v3.model.start_time_info import StartTimeInfo
 from huaweicloudsdkhilens.v3.model.switch_node_connection_request import SwitchNodeConnectionRequest
 from huaweicloudsdkhilens.v3.model.switch_node_connection_response import SwitchNodeConnectionResponse
 from huaweicloudsdkhilens.v3.model.tag import Tag
 from huaweicloudsdkhilens.v3.model.tag_object import TagObject
+from huaweicloudsdkhilens.v3.model.tag_request import TagRequest
 from huaweicloudsdkhilens.v3.model.tag_request_detail import TagRequestDetail
 from huaweicloudsdkhilens.v3.model.task_data import TaskData
 from huaweicloudsdkhilens.v3.model.task_info import TaskInfo
@@ -143,6 +170,8 @@ from huaweicloudsdkhilens.v3.model.unfreeze_node_request import UnfreezeNodeRequ
 from huaweicloudsdkhilens.v3.model.unfreeze_node_response import UnfreezeNodeResponse
 from huaweicloudsdkhilens.v3.model.update_config_map_request import UpdateConfigMapRequest
 from huaweicloudsdkhilens.v3.model.update_config_map_response import UpdateConfigMapResponse
+from huaweicloudsdkhilens.v3.model.update_deployment_request import UpdateDeploymentRequest
+from huaweicloudsdkhilens.v3.model.update_deployment_response import UpdateDeploymentResponse
 from huaweicloudsdkhilens.v3.model.update_deployment_using_patch_request import UpdateDeploymentUsingPatchRequest
 from huaweicloudsdkhilens.v3.model.update_deployment_using_patch_response import UpdateDeploymentUsingPatchResponse
 from huaweicloudsdkhilens.v3.model.update_description import UpdateDescription

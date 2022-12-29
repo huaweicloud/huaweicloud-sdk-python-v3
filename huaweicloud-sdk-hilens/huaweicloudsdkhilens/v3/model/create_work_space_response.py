@@ -20,51 +20,51 @@ class CreateWorkSpaceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str'
+        'workspace_id': 'str'
     }
 
     attribute_map = {
-        'name': 'name'
+        'workspace_id': 'workspace_id'
     }
 
-    def __init__(self, name=None):
+    def __init__(self, workspace_id=None):
         """CreateWorkSpaceResponse
 
         The model defined in huaweicloud sdk
 
-        :param name: 创建的工作空间名
-        :type name: str
+        :param workspace_id: 工作空间id
+        :type workspace_id: str
         """
         
         super(CreateWorkSpaceResponse, self).__init__()
 
-        self._name = None
+        self._workspace_id = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        if workspace_id is not None:
+            self.workspace_id = workspace_id
 
     @property
-    def name(self):
-        """Gets the name of this CreateWorkSpaceResponse.
+    def workspace_id(self):
+        """Gets the workspace_id of this CreateWorkSpaceResponse.
 
-        创建的工作空间名
+        工作空间id
 
-        :return: The name of this CreateWorkSpaceResponse.
+        :return: The workspace_id of this CreateWorkSpaceResponse.
         :rtype: str
         """
-        return self._name
+        return self._workspace_id
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this CreateWorkSpaceResponse.
+    @workspace_id.setter
+    def workspace_id(self, workspace_id):
+        """Sets the workspace_id of this CreateWorkSpaceResponse.
 
-        创建的工作空间名
+        工作空间id
 
-        :param name: The name of this CreateWorkSpaceResponse.
-        :type name: str
+        :param workspace_id: The workspace_id of this CreateWorkSpaceResponse.
+        :type workspace_id: str
         """
-        self._name = name
+        self._workspace_id = workspace_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

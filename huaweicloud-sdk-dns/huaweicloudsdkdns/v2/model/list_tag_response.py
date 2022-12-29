@@ -34,9 +34,9 @@ class ListTagResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param resources: 
+        :param resources: 标签资源信息列表。
         :type resources: list[:class:`huaweicloudsdkdns.v2.ResourceItem`]
-        :param total_count: 
+        :param total_count: 资源总数。
         :type total_count: int
         """
         
@@ -55,6 +55,8 @@ class ListTagResponse(SdkResponse):
     def resources(self):
         """Gets the resources of this ListTagResponse.
 
+        标签资源信息列表。
+
         :return: The resources of this ListTagResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.ResourceItem`]
         """
@@ -63,6 +65,8 @@ class ListTagResponse(SdkResponse):
     @resources.setter
     def resources(self, resources):
         """Sets the resources of this ListTagResponse.
+
+        标签资源信息列表。
 
         :param resources: The resources of this ListTagResponse.
         :type resources: list[:class:`huaweicloudsdkdns.v2.ResourceItem`]
@@ -73,6 +77,8 @@ class ListTagResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListTagResponse.
 
+        资源总数。
+
         :return: The total_count of this ListTagResponse.
         :rtype: int
         """
@@ -81,6 +87,8 @@ class ListTagResponse(SdkResponse):
     @total_count.setter
     def total_count(self, total_count):
         """Sets the total_count of this ListTagResponse.
+
+        资源总数。
 
         :param total_count: The total_count of this ListTagResponse.
         :type total_count: int

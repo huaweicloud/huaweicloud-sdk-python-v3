@@ -36,7 +36,7 @@ class UpdateRecordSetsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param zone_id: 
+        :param zone_id: 所属zone的ID。
         :type zone_id: str
         :param recordset_id: 
         :type recordset_id: str
@@ -60,6 +60,8 @@ class UpdateRecordSetsRequest:
     def zone_id(self):
         """Gets the zone_id of this UpdateRecordSetsRequest.
 
+        所属zone的ID。
+
         :return: The zone_id of this UpdateRecordSetsRequest.
         :rtype: str
         """
@@ -68,6 +70,8 @@ class UpdateRecordSetsRequest:
     @zone_id.setter
     def zone_id(self, zone_id):
         """Sets the zone_id of this UpdateRecordSetsRequest.
+
+        所属zone的ID。
 
         :param zone_id: The zone_id of this UpdateRecordSetsRequest.
         :type zone_id: str

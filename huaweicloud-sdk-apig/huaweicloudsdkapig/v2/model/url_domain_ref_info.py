@@ -25,6 +25,7 @@ class UrlDomainRefInfo:
         'status': 'int',
         'min_ssl_version': 'str',
         'is_http_redirect_to_https': 'bool',
+        'verified_client_certificate_enabled': 'bool',
         'ssl_id': 'str',
         'ssl_name': 'str',
         'api_group_id': 'str',
@@ -38,6 +39,7 @@ class UrlDomainRefInfo:
         'status': 'status',
         'min_ssl_version': 'min_ssl_version',
         'is_http_redirect_to_https': 'is_http_redirect_to_https',
+        'verified_client_certificate_enabled': 'verified_client_certificate_enabled',
         'ssl_id': 'ssl_id',
         'ssl_name': 'ssl_name',
         'api_group_id': 'api_group_id',
@@ -45,7 +47,7 @@ class UrlDomainRefInfo:
         'instance_id': 'instance_id'
     }
 
-    def __init__(self, url_domain=None, id=None, status=None, min_ssl_version=None, is_http_redirect_to_https=None, ssl_id=None, ssl_name=None, api_group_id=None, api_group_name=None, instance_id=None):
+    def __init__(self, url_domain=None, id=None, status=None, min_ssl_version=None, is_http_redirect_to_https=None, verified_client_certificate_enabled=None, ssl_id=None, ssl_name=None, api_group_id=None, api_group_name=None, instance_id=None):
         """UrlDomainRefInfo
 
         The model defined in huaweicloud sdk
@@ -60,6 +62,8 @@ class UrlDomainRefInfo:
         :type min_ssl_version: str
         :param is_http_redirect_to_https: 是否开启http到https的重定向，false为关闭，true为开启，默认为false
         :type is_http_redirect_to_https: bool
+        :param verified_client_certificate_enabled: 是否开启客户端证书校验。只有绑定证书时，该参数才生效。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
+        :type verified_client_certificate_enabled: bool
         :param ssl_id: 证书ID
         :type ssl_id: str
         :param ssl_name: 证书名称
@@ -79,6 +83,7 @@ class UrlDomainRefInfo:
         self._status = None
         self._min_ssl_version = None
         self._is_http_redirect_to_https = None
+        self._verified_client_certificate_enabled = None
         self._ssl_id = None
         self._ssl_name = None
         self._api_group_id = None
@@ -92,6 +97,8 @@ class UrlDomainRefInfo:
         self.min_ssl_version = min_ssl_version
         if is_http_redirect_to_https is not None:
             self.is_http_redirect_to_https = is_http_redirect_to_https
+        if verified_client_certificate_enabled is not None:
+            self.verified_client_certificate_enabled = verified_client_certificate_enabled
         if ssl_id is not None:
             self.ssl_id = ssl_id
         if ssl_name is not None:
@@ -209,6 +216,28 @@ class UrlDomainRefInfo:
         :type is_http_redirect_to_https: bool
         """
         self._is_http_redirect_to_https = is_http_redirect_to_https
+
+    @property
+    def verified_client_certificate_enabled(self):
+        """Gets the verified_client_certificate_enabled of this UrlDomainRefInfo.
+
+        是否开启客户端证书校验。只有绑定证书时，该参数才生效。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
+
+        :return: The verified_client_certificate_enabled of this UrlDomainRefInfo.
+        :rtype: bool
+        """
+        return self._verified_client_certificate_enabled
+
+    @verified_client_certificate_enabled.setter
+    def verified_client_certificate_enabled(self, verified_client_certificate_enabled):
+        """Sets the verified_client_certificate_enabled of this UrlDomainRefInfo.
+
+        是否开启客户端证书校验。只有绑定证书时，该参数才生效。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
+
+        :param verified_client_certificate_enabled: The verified_client_certificate_enabled of this UrlDomainRefInfo.
+        :type verified_client_certificate_enabled: bool
+        """
+        self._verified_client_certificate_enabled = verified_client_certificate_enabled
 
     @property
     def ssl_id(self):

@@ -20,20 +20,80 @@ class ListAlarmConfigsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'offset': 'str',
+        'limit': 'str'
     }
 
     attribute_map = {
+        'offset': 'offset',
+        'limit': 'limit'
     }
 
-    def __init__(self):
+    def __init__(self, offset=None, limit=None):
         """ListAlarmConfigsRequest
 
         The model defined in huaweicloud sdk
 
+        :param offset: 偏移量
+        :type offset: str
+        :param limit: 限制条目数
+        :type limit: str
         """
         
         
+
+        self._offset = None
+        self._limit = None
         self.discriminator = None
+
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListAlarmConfigsRequest.
+
+        偏移量
+
+        :return: The offset of this ListAlarmConfigsRequest.
+        :rtype: str
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListAlarmConfigsRequest.
+
+        偏移量
+
+        :param offset: The offset of this ListAlarmConfigsRequest.
+        :type offset: str
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListAlarmConfigsRequest.
+
+        限制条目数
+
+        :return: The limit of this ListAlarmConfigsRequest.
+        :rtype: str
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListAlarmConfigsRequest.
+
+        限制条目数
+
+        :param limit: The limit of this ListAlarmConfigsRequest.
+        :type limit: str
+        """
+        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

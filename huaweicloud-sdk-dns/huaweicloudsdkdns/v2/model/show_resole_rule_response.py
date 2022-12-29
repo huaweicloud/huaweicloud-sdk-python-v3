@@ -20,7 +20,7 @@ class ShowResoleRuleResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'resolver_rule': 'object'
+        'resolver_rule': 'ShowResolveRuleParam'
     }
 
     attribute_map = {
@@ -32,8 +32,8 @@ class ShowResoleRuleResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param resolver_rule: 查询单个resolver_rule响应。
-        :type resolver_rule: object
+        :param resolver_rule: 
+        :type resolver_rule: :class:`huaweicloudsdkdns.v2.ShowResolveRuleParam`
         """
         
         super(ShowResoleRuleResponse, self).__init__()
@@ -48,10 +48,8 @@ class ShowResoleRuleResponse(SdkResponse):
     def resolver_rule(self):
         """Gets the resolver_rule of this ShowResoleRuleResponse.
 
-        查询单个resolver_rule响应。
-
         :return: The resolver_rule of this ShowResoleRuleResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdns.v2.ShowResolveRuleParam`
         """
         return self._resolver_rule
 
@@ -59,10 +57,8 @@ class ShowResoleRuleResponse(SdkResponse):
     def resolver_rule(self, resolver_rule):
         """Sets the resolver_rule of this ShowResoleRuleResponse.
 
-        查询单个resolver_rule响应。
-
         :param resolver_rule: The resolver_rule of this ShowResoleRuleResponse.
-        :type resolver_rule: object
+        :type resolver_rule: :class:`huaweicloudsdkdns.v2.ShowResolveRuleParam`
         """
         self._resolver_rule = resolver_rule
 

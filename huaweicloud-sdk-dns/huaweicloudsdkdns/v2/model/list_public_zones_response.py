@@ -22,7 +22,7 @@ class ListPublicZonesResponse(SdkResponse):
     openapi_types = {
         'links': 'PageLink',
         'zones': 'list[PublicZoneResp]',
-        'metadata': 'Metedata'
+        'metadata': 'Metadata'
     }
 
     attribute_map = {
@@ -41,7 +41,7 @@ class ListPublicZonesResponse(SdkResponse):
         :param zones: 查询公网Zone的列表响应。
         :type zones: list[:class:`huaweicloudsdkdns.v2.PublicZoneResp`]
         :param metadata: 
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         
         super(ListPublicZonesResponse, self).__init__()
@@ -103,7 +103,7 @@ class ListPublicZonesResponse(SdkResponse):
         """Gets the metadata of this ListPublicZonesResponse.
 
         :return: The metadata of this ListPublicZonesResponse.
-        :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
+        :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         return self._metadata
 
@@ -112,7 +112,7 @@ class ListPublicZonesResponse(SdkResponse):
         """Sets the metadata of this ListPublicZonesResponse.
 
         :param metadata: The metadata of this ListPublicZonesResponse.
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         self._metadata = metadata
 

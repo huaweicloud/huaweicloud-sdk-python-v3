@@ -38,9 +38,9 @@ class ListResoleRulesRequest:
 
         :param domain_name: 待查询的resolverrule的域名。
         :type domain_name: str
-        :param limit: 每页返回的资源个数。 取值范围：0~500，取值一般为10，20，50。
+        :param limit: 每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
         :type limit: int
-        :param offset: 分页查询起始页码，起始值为0。 当前设置marker不为空时，以marker为分页起始标识。取值范围：0~2147483647。
+        :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
         :type offset: int
         """
         
@@ -84,7 +84,7 @@ class ListResoleRulesRequest:
     def limit(self):
         """Gets the limit of this ListResoleRulesRequest.
 
-        每页返回的资源个数。 取值范围：0~500，取值一般为10，20，50。
+        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
         :return: The limit of this ListResoleRulesRequest.
         :rtype: int
@@ -95,7 +95,7 @@ class ListResoleRulesRequest:
     def limit(self, limit):
         """Sets the limit of this ListResoleRulesRequest.
 
-        每页返回的资源个数。 取值范围：0~500，取值一般为10，20，50。
+        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
         :param limit: The limit of this ListResoleRulesRequest.
         :type limit: int
@@ -106,7 +106,7 @@ class ListResoleRulesRequest:
     def offset(self):
         """Gets the offset of this ListResoleRulesRequest.
 
-        分页查询起始页码，起始值为0。 当前设置marker不为空时，以marker为分页起始标识。取值范围：0~2147483647。
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :return: The offset of this ListResoleRulesRequest.
         :rtype: int
@@ -117,7 +117,7 @@ class ListResoleRulesRequest:
     def offset(self, offset):
         """Sets the offset of this ListResoleRulesRequest.
 
-        分页查询起始页码，起始值为0。 当前设置marker不为空时，以marker为分页起始标识。取值范围：0~2147483647。
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :param offset: The offset of this ListResoleRulesRequest.
         :type offset: int

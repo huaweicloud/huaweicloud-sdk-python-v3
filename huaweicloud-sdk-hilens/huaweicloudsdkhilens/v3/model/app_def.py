@@ -20,12 +20,6 @@ class AppDef:
     sensitive_list = []
 
     openapi_types = {
-        'app_docker_login': 'str',
-        'app_id': 'str',
-        'expire_time': 'int',
-        'image_url': 'str',
-        'license': 'License',
-        'model_key': 'str',
         'app_order_id': 'str',
         'app_url': 'str',
         'channel_limit': 'int',
@@ -43,16 +37,13 @@ class AppDef:
         'readiness_probe': 'Probe',
         'resources': 'ResQuest',
         'version': 'str',
-        'volumes': 'list[Volume]'
+        'volumes': 'list[Volume]',
+        'start_resources': 'ResQuest',
+        'channel_resources': 'ResQuest',
+        'skill_project_id': 'str'
     }
 
     attribute_map = {
-        'app_docker_login': 'app_docker_login',
-        'app_id': 'app_id',
-        'expire_time': 'expire_time',
-        'image_url': 'image_url',
-        'license': 'license',
-        'model_key': 'modelKey',
         'app_order_id': 'app_order_id',
         'app_url': 'app_url',
         'channel_limit': 'channel_limit',
@@ -70,26 +61,17 @@ class AppDef:
         'readiness_probe': 'readiness_probe',
         'resources': 'resources',
         'version': 'version',
-        'volumes': 'volumes'
+        'volumes': 'volumes',
+        'start_resources': 'start_resources',
+        'channel_resources': 'channel_resources',
+        'skill_project_id': 'skill_project_id'
     }
 
-    def __init__(self, app_docker_login=None, app_id=None, expire_time=None, image_url=None, license=None, model_key=None, app_order_id=None, app_url=None, channel_limit=None, channel_upper_limit=None, args=None, command=None, envs=None, is_modelbox=None, liveness_probe=None, msgs=None, name=None, npu_type=None, ports=None, privileged=None, readiness_probe=None, resources=None, version=None, volumes=None):
+    def __init__(self, app_order_id=None, app_url=None, channel_limit=None, channel_upper_limit=None, args=None, command=None, envs=None, is_modelbox=None, liveness_probe=None, msgs=None, name=None, npu_type=None, ports=None, privileged=None, readiness_probe=None, resources=None, version=None, volumes=None, start_resources=None, channel_resources=None, skill_project_id=None):
         """AppDef
 
         The model defined in huaweicloud sdk
 
-        :param app_docker_login: 
-        :type app_docker_login: str
-        :param app_id: 
-        :type app_id: str
-        :param expire_time: 
-        :type expire_time: int
-        :param image_url: 
-        :type image_url: str
-        :param license: 
-        :type license: :class:`huaweicloudsdkhilens.v3.License`
-        :param model_key: 
-        :type model_key: str
         :param app_order_id: app应用的订单ID，技能来源是市场时，如果不填，则自动选择默认订单。
         :type app_order_id: str
         :param app_url: app应用的地址，可以是镜像地址或者OBS地址
@@ -126,16 +108,16 @@ class AppDef:
         :type version: str
         :param volumes: 卷配置
         :type volumes: list[:class:`huaweicloudsdkhilens.v3.Volume`]
+        :param start_resources: 
+        :type start_resources: :class:`huaweicloudsdkhilens.v3.ResQuest`
+        :param channel_resources: 
+        :type channel_resources: :class:`huaweicloudsdkhilens.v3.ResQuest`
+        :param skill_project_id: 技能管理ID，技能来源source是skill的时候，需要传入该ID
+        :type skill_project_id: str
         """
         
         
 
-        self._app_docker_login = None
-        self._app_id = None
-        self._expire_time = None
-        self._image_url = None
-        self._license = None
-        self._model_key = None
         self._app_order_id = None
         self._app_url = None
         self._channel_limit = None
@@ -154,24 +136,14 @@ class AppDef:
         self._resources = None
         self._version = None
         self._volumes = None
+        self._start_resources = None
+        self._channel_resources = None
+        self._skill_project_id = None
         self.discriminator = None
 
-        if app_docker_login is not None:
-            self.app_docker_login = app_docker_login
-        if app_id is not None:
-            self.app_id = app_id
-        if expire_time is not None:
-            self.expire_time = expire_time
-        if image_url is not None:
-            self.image_url = image_url
-        if license is not None:
-            self.license = license
-        if model_key is not None:
-            self.model_key = model_key
         if app_order_id is not None:
             self.app_order_id = app_order_id
-        if app_url is not None:
-            self.app_url = app_url
+        self.app_url = app_url
         if channel_limit is not None:
             self.channel_limit = channel_limit
         if channel_upper_limit is not None:
@@ -188,8 +160,7 @@ class AppDef:
             self.liveness_probe = liveness_probe
         if msgs is not None:
             self.msgs = msgs
-        if name is not None:
-            self.name = name
+        self.name = name
         if npu_type is not None:
             self.npu_type = npu_type
         if ports is not None:
@@ -198,120 +169,17 @@ class AppDef:
             self.privileged = privileged
         if readiness_probe is not None:
             self.readiness_probe = readiness_probe
-        if resources is not None:
-            self.resources = resources
+        self.resources = resources
         if version is not None:
             self.version = version
         if volumes is not None:
             self.volumes = volumes
-
-    @property
-    def app_docker_login(self):
-        """Gets the app_docker_login of this AppDef.
-
-        :return: The app_docker_login of this AppDef.
-        :rtype: str
-        """
-        return self._app_docker_login
-
-    @app_docker_login.setter
-    def app_docker_login(self, app_docker_login):
-        """Sets the app_docker_login of this AppDef.
-
-        :param app_docker_login: The app_docker_login of this AppDef.
-        :type app_docker_login: str
-        """
-        self._app_docker_login = app_docker_login
-
-    @property
-    def app_id(self):
-        """Gets the app_id of this AppDef.
-
-        :return: The app_id of this AppDef.
-        :rtype: str
-        """
-        return self._app_id
-
-    @app_id.setter
-    def app_id(self, app_id):
-        """Sets the app_id of this AppDef.
-
-        :param app_id: The app_id of this AppDef.
-        :type app_id: str
-        """
-        self._app_id = app_id
-
-    @property
-    def expire_time(self):
-        """Gets the expire_time of this AppDef.
-
-        :return: The expire_time of this AppDef.
-        :rtype: int
-        """
-        return self._expire_time
-
-    @expire_time.setter
-    def expire_time(self, expire_time):
-        """Sets the expire_time of this AppDef.
-
-        :param expire_time: The expire_time of this AppDef.
-        :type expire_time: int
-        """
-        self._expire_time = expire_time
-
-    @property
-    def image_url(self):
-        """Gets the image_url of this AppDef.
-
-        :return: The image_url of this AppDef.
-        :rtype: str
-        """
-        return self._image_url
-
-    @image_url.setter
-    def image_url(self, image_url):
-        """Sets the image_url of this AppDef.
-
-        :param image_url: The image_url of this AppDef.
-        :type image_url: str
-        """
-        self._image_url = image_url
-
-    @property
-    def license(self):
-        """Gets the license of this AppDef.
-
-        :return: The license of this AppDef.
-        :rtype: :class:`huaweicloudsdkhilens.v3.License`
-        """
-        return self._license
-
-    @license.setter
-    def license(self, license):
-        """Sets the license of this AppDef.
-
-        :param license: The license of this AppDef.
-        :type license: :class:`huaweicloudsdkhilens.v3.License`
-        """
-        self._license = license
-
-    @property
-    def model_key(self):
-        """Gets the model_key of this AppDef.
-
-        :return: The model_key of this AppDef.
-        :rtype: str
-        """
-        return self._model_key
-
-    @model_key.setter
-    def model_key(self, model_key):
-        """Sets the model_key of this AppDef.
-
-        :param model_key: The model_key of this AppDef.
-        :type model_key: str
-        """
-        self._model_key = model_key
+        if start_resources is not None:
+            self.start_resources = start_resources
+        if channel_resources is not None:
+            self.channel_resources = channel_resources
+        if skill_project_id is not None:
+            self.skill_project_id = skill_project_id
 
     @property
     def app_order_id(self):
@@ -696,6 +564,64 @@ class AppDef:
         :type volumes: list[:class:`huaweicloudsdkhilens.v3.Volume`]
         """
         self._volumes = volumes
+
+    @property
+    def start_resources(self):
+        """Gets the start_resources of this AppDef.
+
+        :return: The start_resources of this AppDef.
+        :rtype: :class:`huaweicloudsdkhilens.v3.ResQuest`
+        """
+        return self._start_resources
+
+    @start_resources.setter
+    def start_resources(self, start_resources):
+        """Sets the start_resources of this AppDef.
+
+        :param start_resources: The start_resources of this AppDef.
+        :type start_resources: :class:`huaweicloudsdkhilens.v3.ResQuest`
+        """
+        self._start_resources = start_resources
+
+    @property
+    def channel_resources(self):
+        """Gets the channel_resources of this AppDef.
+
+        :return: The channel_resources of this AppDef.
+        :rtype: :class:`huaweicloudsdkhilens.v3.ResQuest`
+        """
+        return self._channel_resources
+
+    @channel_resources.setter
+    def channel_resources(self, channel_resources):
+        """Sets the channel_resources of this AppDef.
+
+        :param channel_resources: The channel_resources of this AppDef.
+        :type channel_resources: :class:`huaweicloudsdkhilens.v3.ResQuest`
+        """
+        self._channel_resources = channel_resources
+
+    @property
+    def skill_project_id(self):
+        """Gets the skill_project_id of this AppDef.
+
+        技能管理ID，技能来源source是skill的时候，需要传入该ID
+
+        :return: The skill_project_id of this AppDef.
+        :rtype: str
+        """
+        return self._skill_project_id
+
+    @skill_project_id.setter
+    def skill_project_id(self, skill_project_id):
+        """Sets the skill_project_id of this AppDef.
+
+        技能管理ID，技能来源source是skill的时候，需要传入该ID
+
+        :param skill_project_id: The skill_project_id of this AppDef.
+        :type skill_project_id: str
+        """
+        self._skill_project_id = skill_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

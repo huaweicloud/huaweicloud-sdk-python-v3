@@ -52,7 +52,7 @@ class EndpointResp:
         :type id: str
         :param name: endpoint的名称。
         :type name: str
-        :param direction: endpoint的ID，uuid形式的一个资源标识。
+        :param direction: 终端节点方向。 取值： inbound，表示入站规则。 outbound，表示出站规则。
         :type direction: str
         :param status: 资源状态。 取值范围：PENDING_CREATE, ACTIVE, PENDING_DELETE, ERROR。
         :type status: str
@@ -148,7 +148,7 @@ class EndpointResp:
     def direction(self):
         """Gets the direction of this EndpointResp.
 
-        endpoint的ID，uuid形式的一个资源标识。
+        终端节点方向。 取值： inbound，表示入站规则。 outbound，表示出站规则。
 
         :return: The direction of this EndpointResp.
         :rtype: str
@@ -159,7 +159,7 @@ class EndpointResp:
     def direction(self, direction):
         """Sets the direction of this EndpointResp.
 
-        endpoint的ID，uuid形式的一个资源标识。
+        终端节点方向。 取值： inbound，表示入站规则。 outbound，表示出站规则。
 
         :param direction: The direction of this EndpointResp.
         :type direction: str

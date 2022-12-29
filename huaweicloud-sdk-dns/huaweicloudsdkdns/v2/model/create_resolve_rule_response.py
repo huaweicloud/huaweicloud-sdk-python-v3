@@ -20,51 +20,47 @@ class CreateResolveRuleResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'resolver_rules': 'list[ResolveRuleParam]'
+        'resolver_rule': 'ResolveRuleParam'
     }
 
     attribute_map = {
-        'resolver_rules': 'resolver_rules'
+        'resolver_rule': 'resolver_rule'
     }
 
-    def __init__(self, resolver_rules=None):
+    def __init__(self, resolver_rule=None):
         """CreateResolveRuleResponse
 
         The model defined in huaweicloud sdk
 
-        :param resolver_rules: 查询resolver_rule的列表响应。
-        :type resolver_rules: list[:class:`huaweicloudsdkdns.v2.ResolveRuleParam`]
+        :param resolver_rule: 
+        :type resolver_rule: :class:`huaweicloudsdkdns.v2.ResolveRuleParam`
         """
         
         super(CreateResolveRuleResponse, self).__init__()
 
-        self._resolver_rules = None
+        self._resolver_rule = None
         self.discriminator = None
 
-        if resolver_rules is not None:
-            self.resolver_rules = resolver_rules
+        if resolver_rule is not None:
+            self.resolver_rule = resolver_rule
 
     @property
-    def resolver_rules(self):
-        """Gets the resolver_rules of this CreateResolveRuleResponse.
+    def resolver_rule(self):
+        """Gets the resolver_rule of this CreateResolveRuleResponse.
 
-        查询resolver_rule的列表响应。
-
-        :return: The resolver_rules of this CreateResolveRuleResponse.
-        :rtype: list[:class:`huaweicloudsdkdns.v2.ResolveRuleParam`]
+        :return: The resolver_rule of this CreateResolveRuleResponse.
+        :rtype: :class:`huaweicloudsdkdns.v2.ResolveRuleParam`
         """
-        return self._resolver_rules
+        return self._resolver_rule
 
-    @resolver_rules.setter
-    def resolver_rules(self, resolver_rules):
-        """Sets the resolver_rules of this CreateResolveRuleResponse.
+    @resolver_rule.setter
+    def resolver_rule(self, resolver_rule):
+        """Sets the resolver_rule of this CreateResolveRuleResponse.
 
-        查询resolver_rule的列表响应。
-
-        :param resolver_rules: The resolver_rules of this CreateResolveRuleResponse.
-        :type resolver_rules: list[:class:`huaweicloudsdkdns.v2.ResolveRuleParam`]
+        :param resolver_rule: The resolver_rule of this CreateResolveRuleResponse.
+        :type resolver_rule: :class:`huaweicloudsdkdns.v2.ResolveRuleParam`
         """
-        self._resolver_rules = resolver_rules
+        self._resolver_rule = resolver_rule
 
     def to_dict(self):
         """Returns the model properties as a dict"""

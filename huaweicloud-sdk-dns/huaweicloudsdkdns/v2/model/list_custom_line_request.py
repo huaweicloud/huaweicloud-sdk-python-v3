@@ -44,9 +44,9 @@ class ListCustomLineRequest:
         :type line_id: str
         :param name: 解析线路名称。
         :type name: str
-        :param limit: 每页返回的资源个数。取值范围为0~100。
+        :param limit: 每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
         :type limit: int
-        :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。
+        :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
         :type offset: int
         :param show_detail: 是否查询详细信息。  取值范围：  true：是，查询详细信息。 false：否，不查询详细信息。 默认为true。
         :type show_detail: bool
@@ -120,7 +120,7 @@ class ListCustomLineRequest:
     def limit(self):
         """Gets the limit of this ListCustomLineRequest.
 
-        每页返回的资源个数。取值范围为0~100。
+        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
         :return: The limit of this ListCustomLineRequest.
         :rtype: int
@@ -131,7 +131,7 @@ class ListCustomLineRequest:
     def limit(self, limit):
         """Sets the limit of this ListCustomLineRequest.
 
-        每页返回的资源个数。取值范围为0~100。
+        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
         :param limit: The limit of this ListCustomLineRequest.
         :type limit: int
@@ -142,7 +142,7 @@ class ListCustomLineRequest:
     def offset(self):
         """Gets the offset of this ListCustomLineRequest.
 
-        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :return: The offset of this ListCustomLineRequest.
         :rtype: int
@@ -153,7 +153,7 @@ class ListCustomLineRequest:
     def offset(self, offset):
         """Sets the offset of this ListCustomLineRequest.
 
-        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :param offset: The offset of this ListCustomLineRequest.
         :type offset: int

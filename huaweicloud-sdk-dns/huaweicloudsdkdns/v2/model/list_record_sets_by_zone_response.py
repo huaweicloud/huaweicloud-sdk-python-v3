@@ -22,7 +22,7 @@ class ListRecordSetsByZoneResponse(SdkResponse):
     openapi_types = {
         'links': 'PageLink',
         'recordsets': 'list[ListRecordSets]',
-        'metadata': 'Metedata'
+        'metadata': 'Metadata'
     }
 
     attribute_map = {
@@ -38,10 +38,10 @@ class ListRecordSetsByZoneResponse(SdkResponse):
 
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
-        :param recordsets: 
+        :param recordsets: recordset列表对象。
         :type recordsets: list[:class:`huaweicloudsdkdns.v2.ListRecordSets`]
         :param metadata: 
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         
         super(ListRecordSetsByZoneResponse, self).__init__()
@@ -80,6 +80,8 @@ class ListRecordSetsByZoneResponse(SdkResponse):
     def recordsets(self):
         """Gets the recordsets of this ListRecordSetsByZoneResponse.
 
+        recordset列表对象。
+
         :return: The recordsets of this ListRecordSetsByZoneResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.ListRecordSets`]
         """
@@ -88,6 +90,8 @@ class ListRecordSetsByZoneResponse(SdkResponse):
     @recordsets.setter
     def recordsets(self, recordsets):
         """Sets the recordsets of this ListRecordSetsByZoneResponse.
+
+        recordset列表对象。
 
         :param recordsets: The recordsets of this ListRecordSetsByZoneResponse.
         :type recordsets: list[:class:`huaweicloudsdkdns.v2.ListRecordSets`]
@@ -99,7 +103,7 @@ class ListRecordSetsByZoneResponse(SdkResponse):
         """Gets the metadata of this ListRecordSetsByZoneResponse.
 
         :return: The metadata of this ListRecordSetsByZoneResponse.
-        :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
+        :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         return self._metadata
 
@@ -108,7 +112,7 @@ class ListRecordSetsByZoneResponse(SdkResponse):
         """Sets the metadata of this ListRecordSetsByZoneResponse.
 
         :param metadata: The metadata of this ListRecordSetsByZoneResponse.
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         self._metadata = metadata
 

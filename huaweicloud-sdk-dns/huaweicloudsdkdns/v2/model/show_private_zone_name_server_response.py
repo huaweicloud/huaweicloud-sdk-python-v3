@@ -32,7 +32,7 @@ class ShowPrivateZoneNameServerResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param nameservers: 
+        :param nameservers: 名称服务器列表信息。
         :type nameservers: list[:class:`huaweicloudsdkdns.v2.PrivateNameServer`]
         """
         
@@ -48,6 +48,8 @@ class ShowPrivateZoneNameServerResponse(SdkResponse):
     def nameservers(self):
         """Gets the nameservers of this ShowPrivateZoneNameServerResponse.
 
+        名称服务器列表信息。
+
         :return: The nameservers of this ShowPrivateZoneNameServerResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.PrivateNameServer`]
         """
@@ -56,6 +58,8 @@ class ShowPrivateZoneNameServerResponse(SdkResponse):
     @nameservers.setter
     def nameservers(self, nameservers):
         """Sets the nameservers of this ShowPrivateZoneNameServerResponse.
+
+        名称服务器列表信息。
 
         :param nameservers: The nameservers of this ShowPrivateZoneNameServerResponse.
         :type nameservers: list[:class:`huaweicloudsdkdns.v2.PrivateNameServer`]

@@ -24,7 +24,9 @@ class ListEventSpecsRequest:
         'category': 'str',
         'severity': 'str',
         'source_type': 'str',
-        'tag': 'str'
+        'tag': 'str',
+        'offset': 'str',
+        'limit': 'str'
     }
 
     attribute_map = {
@@ -32,10 +34,12 @@ class ListEventSpecsRequest:
         'category': 'category',
         'severity': 'severity',
         'source_type': 'source_type',
-        'tag': 'tag'
+        'tag': 'tag',
+        'offset': 'offset',
+        'limit': 'limit'
     }
 
-    def __init__(self, spec_name=None, category=None, severity=None, source_type=None, tag=None):
+    def __init__(self, spec_name=None, category=None, severity=None, source_type=None, tag=None, offset=None, limit=None):
         """ListEventSpecsRequest
 
         The model defined in huaweicloud sdk
@@ -50,6 +54,10 @@ class ListEventSpecsRequest:
         :type source_type: str
         :param tag: 事件标签
         :type tag: str
+        :param offset: 偏移量
+        :type offset: str
+        :param limit: 限制条目数
+        :type limit: str
         """
         
         
@@ -59,6 +67,8 @@ class ListEventSpecsRequest:
         self._severity = None
         self._source_type = None
         self._tag = None
+        self._offset = None
+        self._limit = None
         self.discriminator = None
 
         if spec_name is not None:
@@ -71,6 +81,10 @@ class ListEventSpecsRequest:
             self.source_type = source_type
         if tag is not None:
             self.tag = tag
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
 
     @property
     def spec_name(self):
@@ -181,6 +195,50 @@ class ListEventSpecsRequest:
         :type tag: str
         """
         self._tag = tag
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListEventSpecsRequest.
+
+        偏移量
+
+        :return: The offset of this ListEventSpecsRequest.
+        :rtype: str
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListEventSpecsRequest.
+
+        偏移量
+
+        :param offset: The offset of this ListEventSpecsRequest.
+        :type offset: str
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListEventSpecsRequest.
+
+        限制条目数
+
+        :return: The limit of this ListEventSpecsRequest.
+        :rtype: str
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListEventSpecsRequest.
+
+        限制条目数
+
+        :param limit: The limit of this ListEventSpecsRequest.
+        :type limit: str
+        """
+        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

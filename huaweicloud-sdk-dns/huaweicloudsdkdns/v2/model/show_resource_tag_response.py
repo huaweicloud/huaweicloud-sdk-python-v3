@@ -32,7 +32,7 @@ class ShowResourceTagResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param tags: 
+        :param tags: 指定实例的标签列表。
         :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         
@@ -48,6 +48,8 @@ class ShowResourceTagResponse(SdkResponse):
     def tags(self):
         """Gets the tags of this ShowResourceTagResponse.
 
+        指定实例的标签列表。
+
         :return: The tags of this ShowResourceTagResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
@@ -56,6 +58,8 @@ class ShowResourceTagResponse(SdkResponse):
     @tags.setter
     def tags(self, tags):
         """Sets the tags of this ShowResourceTagResponse.
+
+        指定实例的标签列表。
 
         :param tags: The tags of this ShowResourceTagResponse.
         :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]

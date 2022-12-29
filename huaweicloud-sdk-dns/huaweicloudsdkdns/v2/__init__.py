@@ -12,6 +12,8 @@ from huaweicloudsdkdns.v2.model.associate_endpoint_ipaddress_response import Ass
 from huaweicloudsdkdns.v2.model.associate_health_check_req import AssociateHealthCheckReq
 from huaweicloudsdkdns.v2.model.associate_health_check_request import AssociateHealthCheckRequest
 from huaweicloudsdkdns.v2.model.associate_health_check_response import AssociateHealthCheckResponse
+from huaweicloudsdkdns.v2.model.associate_resolve_rule_router_request import AssociateResolveRuleRouterRequest
+from huaweicloudsdkdns.v2.model.associate_resolve_rule_router_response import AssociateResolveRuleRouterResponse
 from huaweicloudsdkdns.v2.model.associate_router_req import AssociateRouterReq
 from huaweicloudsdkdns.v2.model.associate_router_request import AssociateRouterRequest
 from huaweicloudsdkdns.v2.model.associate_router_response import AssociateRouterResponse
@@ -56,7 +58,6 @@ from huaweicloudsdkdns.v2.model.create_private_zone_request import CreatePrivate
 from huaweicloudsdkdns.v2.model.create_private_zone_response import CreatePrivateZoneResponse
 from huaweicloudsdkdns.v2.model.create_ptr_req import CreatePtrReq
 from huaweicloudsdkdns.v2.model.create_public_zone_find_req import CreatePublicZoneFindReq
-from huaweicloudsdkdns.v2.model.create_public_zone_find_resp_record import CreatePublicZoneFindRespRecord
 from huaweicloudsdkdns.v2.model.create_public_zone_req import CreatePublicZoneReq
 from huaweicloudsdkdns.v2.model.create_public_zone_request import CreatePublicZoneRequest
 from huaweicloudsdkdns.v2.model.create_public_zone_response import CreatePublicZoneResponse
@@ -102,12 +103,15 @@ from huaweicloudsdkdns.v2.model.disassociate_endpoint_ipaddress_request import D
 from huaweicloudsdkdns.v2.model.disassociate_endpoint_ipaddress_response import DisassociateEndpointIpaddressResponse
 from huaweicloudsdkdns.v2.model.disassociate_health_check_request import DisassociateHealthCheckRequest
 from huaweicloudsdkdns.v2.model.disassociate_health_check_response import DisassociateHealthCheckResponse
+from huaweicloudsdkdns.v2.model.disassociate_resolve_rule_router_request import DisassociateResolveRuleRouterRequest
+from huaweicloudsdkdns.v2.model.disassociate_resolve_rule_router_response import DisassociateResolveRuleRouterResponse
 from huaweicloudsdkdns.v2.model.disassociate_router_request import DisassociateRouterRequest
 from huaweicloudsdkdns.v2.model.disassociate_router_response import DisassociateRouterResponse
 from huaweicloudsdkdns.v2.model.disassociaterouter_req import DisassociaterouterReq
 from huaweicloudsdkdns.v2.model.domain_quota_response_quotas import DomainQuotaResponseQuotas
 from huaweicloudsdkdns.v2.model.endpoint_resp import EndpointResp
 from huaweicloudsdkdns.v2.model.ip_info import IpInfo
+from huaweicloudsdkdns.v2.model.ipaddress_data import IpaddressData
 from huaweicloudsdkdns.v2.model.ipaddresses import Ipaddresses
 from huaweicloudsdkdns.v2.model.ipaddresses_data import IpaddressesData
 from huaweicloudsdkdns.v2.model.line import Line
@@ -150,7 +154,7 @@ from huaweicloudsdkdns.v2.model.list_tag_response import ListTagResponse
 from huaweicloudsdkdns.v2.model.list_tags_request import ListTagsRequest
 from huaweicloudsdkdns.v2.model.list_tags_response import ListTagsResponse
 from huaweicloudsdkdns.v2.model.match import Match
-from huaweicloudsdkdns.v2.model.metedata import Metedata
+from huaweicloudsdkdns.v2.model.metadata import Metadata
 from huaweicloudsdkdns.v2.model.name_servers_resp import NameServersResp
 from huaweicloudsdkdns.v2.model.nameserver import Nameserver
 from huaweicloudsdkdns.v2.model.ns_records import NsRecords
@@ -161,6 +165,7 @@ from huaweicloudsdkdns.v2.model.public_zone_resp import PublicZoneResp
 from huaweicloudsdkdns.v2.model.query_record_set_with_line_and_tags_resp import QueryRecordSetWithLineAndTagsResp
 from huaweicloudsdkdns.v2.model.query_record_set_with_line_resp import QueryRecordSetWithLineResp
 from huaweicloudsdkdns.v2.model.query_zone_req import QueryZoneReq
+from huaweicloudsdkdns.v2.model.record_info import RecordInfo
 from huaweicloudsdkdns.v2.model.recordset_data import RecordsetData
 from huaweicloudsdkdns.v2.model.resolve_rule_param import ResolveRuleParam
 from huaweicloudsdkdns.v2.model.resolve_rule_req import ResolveRuleReq
@@ -203,6 +208,7 @@ from huaweicloudsdkdns.v2.model.show_record_set_with_line_request import ShowRec
 from huaweicloudsdkdns.v2.model.show_record_set_with_line_response import ShowRecordSetWithLineResponse
 from huaweicloudsdkdns.v2.model.show_resole_rule_request import ShowResoleRuleRequest
 from huaweicloudsdkdns.v2.model.show_resole_rule_response import ShowResoleRuleResponse
+from huaweicloudsdkdns.v2.model.show_resolve_rule_param import ShowResolveRuleParam
 from huaweicloudsdkdns.v2.model.show_resource_tag_request import ShowResourceTagRequest
 from huaweicloudsdkdns.v2.model.show_resource_tag_response import ShowResourceTagResponse
 from huaweicloudsdkdns.v2.model.show_retrieval_request import ShowRetrievalRequest
@@ -217,6 +223,7 @@ from huaweicloudsdkdns.v2.model.update_customs_line_req import UpdateCustomsLine
 from huaweicloudsdkdns.v2.model.update_endpoint_info import UpdateEndpointInfo
 from huaweicloudsdkdns.v2.model.update_endpoint_request import UpdateEndpointRequest
 from huaweicloudsdkdns.v2.model.update_endpoint_response import UpdateEndpointResponse
+from huaweicloudsdkdns.v2.model.update_line_groups_body import UpdateLineGroupsBody
 from huaweicloudsdkdns.v2.model.update_line_groups_request import UpdateLineGroupsRequest
 from huaweicloudsdkdns.v2.model.update_line_groups_response import UpdateLineGroupsResponse
 from huaweicloudsdkdns.v2.model.update_private_zone_info_req import UpdatePrivateZoneInfoReq

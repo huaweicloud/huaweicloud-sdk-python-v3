@@ -127,6 +127,8 @@ from huaweicloudsdkims.v2.model.show_job_request import ShowJobRequest
 from huaweicloudsdkims.v2.model.show_job_response import ShowJobResponse
 from huaweicloudsdkims.v2.model.show_version_request import ShowVersionRequest
 from huaweicloudsdkims.v2.model.show_version_response import ShowVersionResponse
+from huaweicloudsdkims.v2.model.sub_job_entities import SubJobEntities
+from huaweicloudsdkims.v2.model.sub_job_result import SubJobResult
 from huaweicloudsdkims.v2.model.tag_key_value import TagKeyValue
 from huaweicloudsdkims.v2.model.tags import Tags
 from huaweicloudsdkims.v2.model.update_image_request import UpdateImageRequest

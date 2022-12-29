@@ -21,7 +21,7 @@ class ShowUpgradeProgressResponse(SdkResponse):
 
     openapi_types = {
         'version': 'str',
-        'status': 'str',
+        'status': 'int',
         'progress': 'str',
         'cause': 'str'
     }
@@ -41,7 +41,7 @@ class ShowUpgradeProgressResponse(SdkResponse):
         :param version: 升级的固件版本
         :type version: str
         :param status: 固件升级状态，1:升级中 2:升级失败 3:升级成功
-        :type status: str
+        :type status: int
         :param progress: 固件升级进度，用数字0-100表示
         :type progress: str
         :param cause: 固件升级失败原因
@@ -94,7 +94,7 @@ class ShowUpgradeProgressResponse(SdkResponse):
         固件升级状态，1:升级中 2:升级失败 3:升级成功
 
         :return: The status of this ShowUpgradeProgressResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._status
 
@@ -105,7 +105,7 @@ class ShowUpgradeProgressResponse(SdkResponse):
         固件升级状态，1:升级中 2:升级失败 3:升级成功
 
         :param status: The status of this ShowUpgradeProgressResponse.
-        :type status: str
+        :type status: int
         """
         self._status = status
 

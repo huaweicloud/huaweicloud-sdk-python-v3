@@ -20,47 +20,47 @@ class AssociateEndpointIpaddressResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'endpoints': 'list[EndpointResp]'
+        'endpoint': 'EndpointResp'
     }
 
     attribute_map = {
-        'endpoints': 'endpoints'
+        'endpoint': 'endpoint'
     }
 
-    def __init__(self, endpoints=None):
+    def __init__(self, endpoint=None):
         """AssociateEndpointIpaddressResponse
 
         The model defined in huaweicloud sdk
 
-        :param endpoints: 
-        :type endpoints: list[:class:`huaweicloudsdkdns.v2.EndpointResp`]
+        :param endpoint: 
+        :type endpoint: :class:`huaweicloudsdkdns.v2.EndpointResp`
         """
         
         super(AssociateEndpointIpaddressResponse, self).__init__()
 
-        self._endpoints = None
+        self._endpoint = None
         self.discriminator = None
 
-        if endpoints is not None:
-            self.endpoints = endpoints
+        if endpoint is not None:
+            self.endpoint = endpoint
 
     @property
-    def endpoints(self):
-        """Gets the endpoints of this AssociateEndpointIpaddressResponse.
+    def endpoint(self):
+        """Gets the endpoint of this AssociateEndpointIpaddressResponse.
 
-        :return: The endpoints of this AssociateEndpointIpaddressResponse.
-        :rtype: list[:class:`huaweicloudsdkdns.v2.EndpointResp`]
+        :return: The endpoint of this AssociateEndpointIpaddressResponse.
+        :rtype: :class:`huaweicloudsdkdns.v2.EndpointResp`
         """
-        return self._endpoints
+        return self._endpoint
 
-    @endpoints.setter
-    def endpoints(self, endpoints):
-        """Sets the endpoints of this AssociateEndpointIpaddressResponse.
+    @endpoint.setter
+    def endpoint(self, endpoint):
+        """Sets the endpoint of this AssociateEndpointIpaddressResponse.
 
-        :param endpoints: The endpoints of this AssociateEndpointIpaddressResponse.
-        :type endpoints: list[:class:`huaweicloudsdkdns.v2.EndpointResp`]
+        :param endpoint: The endpoint of this AssociateEndpointIpaddressResponse.
+        :type endpoint: :class:`huaweicloudsdkdns.v2.EndpointResp`
         """
-        self._endpoints = endpoints
+        self._endpoint = endpoint
 
     def to_dict(self):
         """Returns the model properties as a dict"""

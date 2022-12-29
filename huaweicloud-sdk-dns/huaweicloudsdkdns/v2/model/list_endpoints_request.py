@@ -38,13 +38,13 @@ class ListEndpointsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param direction: 待查询的endpoint的方向。 取值：inbound，表示入站规则。
+        :param direction: 终端节点方向。 取值： inbound，表示入站规则。 outbound，表示出站规则。
         :type direction: str
         :param vpc_id: 待查询的endpoint所属vpc的id。
         :type vpc_id: str
-        :param limit: 每页返回的资源个数。 取值范围：0~500，取值一般为10，20，50。
+        :param limit: 每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。。
         :type limit: int
-        :param offset: 分页查询起始页码，起始值为0。 当前设置marker不为空时，以marker为分页起始标识。取值范围：0~2147483647。
+        :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
         :type offset: int
         """
         
@@ -68,7 +68,7 @@ class ListEndpointsRequest:
     def direction(self):
         """Gets the direction of this ListEndpointsRequest.
 
-        待查询的endpoint的方向。 取值：inbound，表示入站规则。
+        终端节点方向。 取值： inbound，表示入站规则。 outbound，表示出站规则。
 
         :return: The direction of this ListEndpointsRequest.
         :rtype: str
@@ -79,7 +79,7 @@ class ListEndpointsRequest:
     def direction(self, direction):
         """Sets the direction of this ListEndpointsRequest.
 
-        待查询的endpoint的方向。 取值：inbound，表示入站规则。
+        终端节点方向。 取值： inbound，表示入站规则。 outbound，表示出站规则。
 
         :param direction: The direction of this ListEndpointsRequest.
         :type direction: str
@@ -112,7 +112,7 @@ class ListEndpointsRequest:
     def limit(self):
         """Gets the limit of this ListEndpointsRequest.
 
-        每页返回的资源个数。 取值范围：0~500，取值一般为10，20，50。
+        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。。
 
         :return: The limit of this ListEndpointsRequest.
         :rtype: int
@@ -123,7 +123,7 @@ class ListEndpointsRequest:
     def limit(self, limit):
         """Sets the limit of this ListEndpointsRequest.
 
-        每页返回的资源个数。 取值范围：0~500，取值一般为10，20，50。
+        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。。
 
         :param limit: The limit of this ListEndpointsRequest.
         :type limit: int
@@ -134,7 +134,7 @@ class ListEndpointsRequest:
     def offset(self):
         """Gets the offset of this ListEndpointsRequest.
 
-        分页查询起始页码，起始值为0。 当前设置marker不为空时，以marker为分页起始标识。取值范围：0~2147483647。
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :return: The offset of this ListEndpointsRequest.
         :rtype: int
@@ -145,7 +145,7 @@ class ListEndpointsRequest:
     def offset(self, offset):
         """Sets the offset of this ListEndpointsRequest.
 
-        分页查询起始页码，起始值为0。 当前设置marker不为空时，以marker为分页起始标识。取值范围：0~2147483647。
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :param offset: The offset of this ListEndpointsRequest.
         :type offset: int

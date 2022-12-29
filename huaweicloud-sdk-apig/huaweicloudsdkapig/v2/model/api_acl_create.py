@@ -44,7 +44,7 @@ class ApiAclCreate:
         :type acl_type: str
         :param acl_value: ACL策略值，支持一个或多个值，使用英文半角逗号分隔
         :type acl_value: str
-        :param entity_type: 对象类型： - IP：IP地址 - DOMAIN：账号名 - DOMAIN_ID：账号ID
+        :param entity_type: 对象类型： - IP：IP地址 - DOMAIN：帐号名 - DOMAIN_ID：帐号ID
         :type entity_type: str
         """
         
@@ -131,7 +131,7 @@ class ApiAclCreate:
     def entity_type(self):
         """Gets the entity_type of this ApiAclCreate.
 
-        对象类型： - IP：IP地址 - DOMAIN：账号名 - DOMAIN_ID：账号ID
+        对象类型： - IP：IP地址 - DOMAIN：帐号名 - DOMAIN_ID：帐号ID
 
         :return: The entity_type of this ApiAclCreate.
         :rtype: str
@@ -142,7 +142,7 @@ class ApiAclCreate:
     def entity_type(self, entity_type):
         """Sets the entity_type of this ApiAclCreate.
 
-        对象类型： - IP：IP地址 - DOMAIN：账号名 - DOMAIN_ID：账号ID
+        对象类型： - IP：IP地址 - DOMAIN：帐号名 - DOMAIN_ID：帐号ID
 
         :param entity_type: The entity_type of this ApiAclCreate.
         :type entity_type: str

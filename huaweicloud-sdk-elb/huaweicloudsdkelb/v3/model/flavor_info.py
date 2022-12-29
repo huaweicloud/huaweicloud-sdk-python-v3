@@ -46,13 +46,13 @@ class FlavorInfo:
         :type connection: int
         :param cps: 新建数。单位：个
         :type cps: int
-        :param qps: 7层每秒查询数。单位：个
+        :param qps: 每秒查询数。单位：个。仅7层LB有该指标。
         :type qps: int
-        :param bandwidth: 带宽。单位：Mbit/s
+        :param bandwidth: 带宽。单位：Mbit/s。
         :type bandwidth: int
         :param lcu: 当前flavor对应的lcu数量。 LCU是用来衡量独享型ELB处理性能综合指标，LCU值越大，性能越好。单位：个
         :type lcu: int
-        :param https_cps: https新建连接数。单位：个
+        :param https_cps: https新建连接数。单位：个。仅7层LB有该指标。
         :type https_cps: int
         """
         
@@ -125,7 +125,7 @@ class FlavorInfo:
     def qps(self):
         """Gets the qps of this FlavorInfo.
 
-        7层每秒查询数。单位：个
+        每秒查询数。单位：个。仅7层LB有该指标。
 
         :return: The qps of this FlavorInfo.
         :rtype: int
@@ -136,7 +136,7 @@ class FlavorInfo:
     def qps(self, qps):
         """Sets the qps of this FlavorInfo.
 
-        7层每秒查询数。单位：个
+        每秒查询数。单位：个。仅7层LB有该指标。
 
         :param qps: The qps of this FlavorInfo.
         :type qps: int
@@ -147,7 +147,7 @@ class FlavorInfo:
     def bandwidth(self):
         """Gets the bandwidth of this FlavorInfo.
 
-        带宽。单位：Mbit/s
+        带宽。单位：Mbit/s。
 
         :return: The bandwidth of this FlavorInfo.
         :rtype: int
@@ -158,7 +158,7 @@ class FlavorInfo:
     def bandwidth(self, bandwidth):
         """Sets the bandwidth of this FlavorInfo.
 
-        带宽。单位：Mbit/s
+        带宽。单位：Mbit/s。
 
         :param bandwidth: The bandwidth of this FlavorInfo.
         :type bandwidth: int
@@ -191,7 +191,7 @@ class FlavorInfo:
     def https_cps(self):
         """Gets the https_cps of this FlavorInfo.
 
-        https新建连接数。单位：个
+        https新建连接数。单位：个。仅7层LB有该指标。
 
         :return: The https_cps of this FlavorInfo.
         :rtype: int
@@ -202,7 +202,7 @@ class FlavorInfo:
     def https_cps(self, https_cps):
         """Sets the https_cps of this FlavorInfo.
 
-        https新建连接数。单位：个
+        https新建连接数。单位：个。仅7层LB有该指标。
 
         :param https_cps: The https_cps of this FlavorInfo.
         :type https_cps: int

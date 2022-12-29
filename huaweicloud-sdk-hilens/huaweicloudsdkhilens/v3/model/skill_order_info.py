@@ -46,7 +46,7 @@ class SkillOrderInfo:
         'resource_spec_code': 'str',
         'skill_id': 'str',
         'skill_platform': 'str',
-        'order_limit': 'str',
+        'order_limit': 'int',
         'order_id': 'str',
         'status': 'int'
     }
@@ -141,7 +141,7 @@ class SkillOrderInfo:
         :param skill_platform: 技能支持的平台
         :type skill_platform: str
         :param order_limit: 订单购买限制
-        :type order_limit: str
+        :type order_limit: int
         :param order_id: 订单ID
         :type order_id: str
         :param status: 订单状态，0表示正常状态，1表示冻结状态，2表示受限状态
@@ -819,7 +819,7 @@ class SkillOrderInfo:
         订单购买限制
 
         :return: The order_limit of this SkillOrderInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._order_limit
 
@@ -830,7 +830,7 @@ class SkillOrderInfo:
         订单购买限制
 
         :param order_limit: The order_limit of this SkillOrderInfo.
-        :type order_limit: str
+        :type order_limit: int
         """
         self._order_limit = order_limit
 

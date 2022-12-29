@@ -21,7 +21,7 @@ class ListPtrRecordsResponse(SdkResponse):
 
     openapi_types = {
         'links': 'PageLink',
-        'metadata': 'Metedata',
+        'metadata': 'Metadata',
         'floatingips': 'list[ListPtrRecordsFloatingResp]'
     }
 
@@ -39,8 +39,8 @@ class ListPtrRecordsResponse(SdkResponse):
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         :param metadata: 
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
-        :param floatingips: 
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
+        :param floatingips: 弹性IP的PTR记录ID列表信息。
         :type floatingips: list[:class:`huaweicloudsdkdns.v2.ListPtrRecordsFloatingResp`]
         """
         
@@ -81,7 +81,7 @@ class ListPtrRecordsResponse(SdkResponse):
         """Gets the metadata of this ListPtrRecordsResponse.
 
         :return: The metadata of this ListPtrRecordsResponse.
-        :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
+        :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         return self._metadata
 
@@ -90,13 +90,15 @@ class ListPtrRecordsResponse(SdkResponse):
         """Sets the metadata of this ListPtrRecordsResponse.
 
         :param metadata: The metadata of this ListPtrRecordsResponse.
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         self._metadata = metadata
 
     @property
     def floatingips(self):
         """Gets the floatingips of this ListPtrRecordsResponse.
+
+        弹性IP的PTR记录ID列表信息。
 
         :return: The floatingips of this ListPtrRecordsResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.ListPtrRecordsFloatingResp`]
@@ -106,6 +108,8 @@ class ListPtrRecordsResponse(SdkResponse):
     @floatingips.setter
     def floatingips(self, floatingips):
         """Sets the floatingips of this ListPtrRecordsResponse.
+
+        弹性IP的PTR记录ID列表信息。
 
         :param floatingips: The floatingips of this ListPtrRecordsResponse.
         :type floatingips: list[:class:`huaweicloudsdkdns.v2.ListPtrRecordsFloatingResp`]

@@ -24,7 +24,8 @@ class CertificateForm:
         'cert_content': 'str',
         'private_key': 'str',
         'type': 'str',
-        'instance_id': 'str'
+        'instance_id': 'str',
+        'trusted_root_ca': 'str'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class CertificateForm:
         'cert_content': 'cert_content',
         'private_key': 'private_key',
         'type': 'type',
-        'instance_id': 'instance_id'
+        'instance_id': 'instance_id',
+        'trusted_root_ca': 'trusted_root_ca'
     }
 
-    def __init__(self, name=None, cert_content=None, private_key=None, type=None, instance_id=None):
+    def __init__(self, name=None, cert_content=None, private_key=None, type=None, instance_id=None, trusted_root_ca=None):
         """CertificateForm
 
         The model defined in huaweicloud sdk
@@ -50,6 +52,8 @@ class CertificateForm:
         :type type: str
         :param instance_id: 所属实例ID，当type&#x3D;instance时必填
         :type instance_id: str
+        :param trusted_root_ca: 信任的根证书CA
+        :type trusted_root_ca: str
         """
         
         
@@ -59,6 +63,7 @@ class CertificateForm:
         self._private_key = None
         self._type = None
         self._instance_id = None
+        self._trusted_root_ca = None
         self.discriminator = None
 
         self.name = name
@@ -68,6 +73,8 @@ class CertificateForm:
             self.type = type
         if instance_id is not None:
             self.instance_id = instance_id
+        if trusted_root_ca is not None:
+            self.trusted_root_ca = trusted_root_ca
 
     @property
     def name(self):
@@ -178,6 +185,28 @@ class CertificateForm:
         :type instance_id: str
         """
         self._instance_id = instance_id
+
+    @property
+    def trusted_root_ca(self):
+        """Gets the trusted_root_ca of this CertificateForm.
+
+        信任的根证书CA
+
+        :return: The trusted_root_ca of this CertificateForm.
+        :rtype: str
+        """
+        return self._trusted_root_ca
+
+    @trusted_root_ca.setter
+    def trusted_root_ca(self, trusted_root_ca):
+        """Sets the trusted_root_ca of this CertificateForm.
+
+        信任的根证书CA
+
+        :param trusted_root_ca: The trusted_root_ca of this CertificateForm.
+        :type trusted_root_ca: str
+        """
+        self._trusted_root_ca = trusted_root_ca
 
     def to_dict(self):
         """Returns the model properties as a dict"""

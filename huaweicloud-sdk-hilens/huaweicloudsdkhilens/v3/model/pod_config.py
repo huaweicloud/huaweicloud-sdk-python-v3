@@ -61,14 +61,12 @@ class PodConfig:
         self._toleration_seconds = None
         self.discriminator = None
 
-        if host_network is not None:
-            self.host_network = host_network
+        self.host_network = host_network
         if host_pid is not None:
             self.host_pid = host_pid
         if migration is not None:
             self.migration = migration
-        if restart_policy is not None:
-            self.restart_policy = restart_policy
+        self.restart_policy = restart_policy
         if toleration_seconds is not None:
             self.toleration_seconds = toleration_seconds
 

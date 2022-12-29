@@ -42,9 +42,9 @@ class ListLineGroupsRequest:
         :type line_id: str
         :param name: 线路分组名称。 模糊匹配。
         :type name: str
-        :param limit: 每页返回的资源个数。 当查询详细信息时：取值范围：0~100取值一般为10，20，50默认为100。 当查询概要信息时：取值范围：0~3000默认为3000。
+        :param limit: 每页返回的资源个数。  当查询详细信息时：取值范围：0~100取值一般为10，20，50默认为100。  当查询概要信息时：取值范围：0~3000默认为3000。
         :type limit: int
-        :param offset: 取值范围：0~2147483647 分页查询起始页码，起始值为0。
+        :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
         :type offset: int
         """
         
@@ -60,7 +60,8 @@ class ListLineGroupsRequest:
             self.line_id = line_id
         if name is not None:
             self.name = name
-        self.limit = limit
+        if limit is not None:
+            self.limit = limit
         if offset is not None:
             self.offset = offset
 
@@ -112,7 +113,7 @@ class ListLineGroupsRequest:
     def limit(self):
         """Gets the limit of this ListLineGroupsRequest.
 
-        每页返回的资源个数。 当查询详细信息时：取值范围：0~100取值一般为10，20，50默认为100。 当查询概要信息时：取值范围：0~3000默认为3000。
+        每页返回的资源个数。  当查询详细信息时：取值范围：0~100取值一般为10，20，50默认为100。  当查询概要信息时：取值范围：0~3000默认为3000。
 
         :return: The limit of this ListLineGroupsRequest.
         :rtype: int
@@ -123,7 +124,7 @@ class ListLineGroupsRequest:
     def limit(self, limit):
         """Sets the limit of this ListLineGroupsRequest.
 
-        每页返回的资源个数。 当查询详细信息时：取值范围：0~100取值一般为10，20，50默认为100。 当查询概要信息时：取值范围：0~3000默认为3000。
+        每页返回的资源个数。  当查询详细信息时：取值范围：0~100取值一般为10，20，50默认为100。  当查询概要信息时：取值范围：0~3000默认为3000。
 
         :param limit: The limit of this ListLineGroupsRequest.
         :type limit: int
@@ -134,7 +135,7 @@ class ListLineGroupsRequest:
     def offset(self):
         """Gets the offset of this ListLineGroupsRequest.
 
-        取值范围：0~2147483647 分页查询起始页码，起始值为0。
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :return: The offset of this ListLineGroupsRequest.
         :rtype: int
@@ -145,7 +146,7 @@ class ListLineGroupsRequest:
     def offset(self, offset):
         """Sets the offset of this ListLineGroupsRequest.
 
-        取值范围：0~2147483647 分页查询起始页码，起始值为0。
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :param offset: The offset of this ListLineGroupsRequest.
         :type offset: int

@@ -49,7 +49,8 @@ class ClusterDetail:
         'private_ip': 'list[str]',
         'maintain_window': 'MaintainWindow',
         'resize_info': 'ResizeInfo',
-        'failed_reasons': 'FailedReason'
+        'failed_reasons': 'FailedReason',
+        'elb': 'ElbResp'
     }
 
     attribute_map = {
@@ -82,10 +83,11 @@ class ClusterDetail:
         'private_ip': 'private_ip',
         'maintain_window': 'maintain_window',
         'resize_info': 'resize_info',
-        'failed_reasons': 'failed_reasons'
+        'failed_reasons': 'failed_reasons',
+        'elb': 'elb'
     }
 
-    def __init__(self, id=None, name=None, status=None, version=None, updated=None, created=None, port=None, endpoints=None, nodes=None, tags=None, user_name=None, number_of_node=None, recent_event=None, availability_zone=None, enterprise_project_id=None, node_type=None, vpc_id=None, subnet_id=None, public_ip=None, public_endpoints=None, action_progress=None, sub_status=None, task_status=None, parameter_group=None, node_type_id=None, security_group_id=None, private_ip=None, maintain_window=None, resize_info=None, failed_reasons=None):
+    def __init__(self, id=None, name=None, status=None, version=None, updated=None, created=None, port=None, endpoints=None, nodes=None, tags=None, user_name=None, number_of_node=None, recent_event=None, availability_zone=None, enterprise_project_id=None, node_type=None, vpc_id=None, subnet_id=None, public_ip=None, public_endpoints=None, action_progress=None, sub_status=None, task_status=None, parameter_group=None, node_type_id=None, security_group_id=None, private_ip=None, maintain_window=None, resize_info=None, failed_reasons=None, elb=None):
         """ClusterDetail
 
         The model defined in huaweicloud sdk
@@ -150,6 +152,8 @@ class ClusterDetail:
         :type resize_info: :class:`huaweicloudsdkdws.v2.ResizeInfo`
         :param failed_reasons: 
         :type failed_reasons: :class:`huaweicloudsdkdws.v2.FailedReason`
+        :param elb: 
+        :type elb: :class:`huaweicloudsdkdws.v2.ElbResp`
         """
         
         
@@ -184,6 +188,7 @@ class ClusterDetail:
         self._maintain_window = None
         self._resize_info = None
         self._failed_reasons = None
+        self._elb = None
         self.discriminator = None
 
         self.id = id
@@ -219,6 +224,8 @@ class ClusterDetail:
             self.resize_info = resize_info
         if failed_reasons is not None:
             self.failed_reasons = failed_reasons
+        if elb is not None:
+            self.elb = elb
 
     @property
     def id(self):
@@ -859,6 +866,24 @@ class ClusterDetail:
         :type failed_reasons: :class:`huaweicloudsdkdws.v2.FailedReason`
         """
         self._failed_reasons = failed_reasons
+
+    @property
+    def elb(self):
+        """Gets the elb of this ClusterDetail.
+
+        :return: The elb of this ClusterDetail.
+        :rtype: :class:`huaweicloudsdkdws.v2.ElbResp`
+        """
+        return self._elb
+
+    @elb.setter
+    def elb(self, elb):
+        """Sets the elb of this ClusterDetail.
+
+        :param elb: The elb of this ClusterDetail.
+        :type elb: :class:`huaweicloudsdkdws.v2.ElbResp`
+        """
+        self._elb = elb
 
     def to_dict(self):
         """Returns the model properties as a dict"""

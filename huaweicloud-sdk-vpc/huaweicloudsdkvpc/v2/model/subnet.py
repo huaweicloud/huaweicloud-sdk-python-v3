@@ -39,7 +39,10 @@ class Subnet:
         'neutron_subnet_id': 'str',
         'neutron_subnet_id_v6': 'str',
         'extra_dhcp_opts': 'list[ExtraDhcpOption]',
-        'scope': 'str'
+        'scope': 'str',
+        'tenant_id': 'str',
+        'created_at': 'datetime',
+        'updated_at': 'datetime'
     }
 
     attribute_map = {
@@ -62,10 +65,13 @@ class Subnet:
         'neutron_subnet_id': 'neutron_subnet_id',
         'neutron_subnet_id_v6': 'neutron_subnet_id_v6',
         'extra_dhcp_opts': 'extra_dhcp_opts',
-        'scope': 'scope'
+        'scope': 'scope',
+        'tenant_id': 'tenant_id',
+        'created_at': 'created_at',
+        'updated_at': 'updated_at'
     }
 
-    def __init__(self, id=None, name=None, description=None, cidr=None, gateway_ip=None, ipv6_enable=None, cidr_v6=None, gateway_ip_v6=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, dns_list=None, availability_zone=None, vpc_id=None, status=None, neutron_network_id=None, neutron_subnet_id=None, neutron_subnet_id_v6=None, extra_dhcp_opts=None, scope=None):
+    def __init__(self, id=None, name=None, description=None, cidr=None, gateway_ip=None, ipv6_enable=None, cidr_v6=None, gateway_ip_v6=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, dns_list=None, availability_zone=None, vpc_id=None, status=None, neutron_network_id=None, neutron_subnet_id=None, neutron_subnet_id_v6=None, extra_dhcp_opts=None, scope=None, tenant_id=None, created_at=None, updated_at=None):
         """Subnet
 
         The model defined in huaweicloud sdk
@@ -110,6 +116,12 @@ class Subnet:
         :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOption`]
         :param scope: 功能说明：子网作用域 取值范围：center-表示作用域为中心；{azId}表示作用域为具体的AZ
         :type scope: str
+        :param tenant_id: 项目ID
+        :type tenant_id: str
+        :param created_at: 功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+        :type created_at: datetime
+        :param updated_at: 功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+        :type updated_at: datetime
         """
         
         
@@ -134,6 +146,9 @@ class Subnet:
         self._neutron_subnet_id_v6 = None
         self._extra_dhcp_opts = None
         self._scope = None
+        self._tenant_id = None
+        self._created_at = None
+        self._updated_at = None
         self.discriminator = None
 
         self.id = id
@@ -157,6 +172,9 @@ class Subnet:
         self.extra_dhcp_opts = extra_dhcp_opts
         if scope is not None:
             self.scope = scope
+        self.tenant_id = tenant_id
+        self.created_at = created_at
+        self.updated_at = updated_at
 
     @property
     def id(self):
@@ -597,6 +615,72 @@ class Subnet:
         :type scope: str
         """
         self._scope = scope
+
+    @property
+    def tenant_id(self):
+        """Gets the tenant_id of this Subnet.
+
+        项目ID
+
+        :return: The tenant_id of this Subnet.
+        :rtype: str
+        """
+        return self._tenant_id
+
+    @tenant_id.setter
+    def tenant_id(self, tenant_id):
+        """Sets the tenant_id of this Subnet.
+
+        项目ID
+
+        :param tenant_id: The tenant_id of this Subnet.
+        :type tenant_id: str
+        """
+        self._tenant_id = tenant_id
+
+    @property
+    def created_at(self):
+        """Gets the created_at of this Subnet.
+
+        功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+
+        :return: The created_at of this Subnet.
+        :rtype: datetime
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        """Sets the created_at of this Subnet.
+
+        功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+
+        :param created_at: The created_at of this Subnet.
+        :type created_at: datetime
+        """
+        self._created_at = created_at
+
+    @property
+    def updated_at(self):
+        """Gets the updated_at of this Subnet.
+
+        功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+
+        :return: The updated_at of this Subnet.
+        :rtype: datetime
+        """
+        return self._updated_at
+
+    @updated_at.setter
+    def updated_at(self, updated_at):
+        """Sets the updated_at of this Subnet.
+
+        功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+
+        :param updated_at: The updated_at of this Subnet.
+        :type updated_at: datetime
+        """
+        self._updated_at = updated_at
 
     def to_dict(self):
         """Returns the model properties as a dict"""

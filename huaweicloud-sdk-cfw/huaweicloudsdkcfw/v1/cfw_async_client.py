@@ -57,7 +57,7 @@ class CfwAsyncClient(Client):
         return self.add_address_items_using_post_with_http_info(request)
 
     def add_address_items_using_post_with_http_info(self, request):
-        all_params = ['add_address_items_using_post_request_body']
+        all_params = ['add_address_items_using_post_request_body', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -70,6 +70,10 @@ class CfwAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -118,7 +122,7 @@ class CfwAsyncClient(Client):
         return self.add_address_set_info_using_post_with_http_info(request)
 
     def add_address_set_info_using_post_with_http_info(self, request):
-        all_params = ['add_address_set_info_using_post_request_body']
+        all_params = ['add_address_set_info_using_post_request_body', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -131,6 +135,10 @@ class CfwAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -179,7 +187,7 @@ class CfwAsyncClient(Client):
         return self.add_black_white_list_using_post_with_http_info(request)
 
     def add_black_white_list_using_post_with_http_info(self, request):
-        all_params = ['add_black_white_list_using_post_request_body']
+        all_params = ['add_black_white_list_using_post_request_body', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -192,6 +200,10 @@ class CfwAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -240,7 +252,7 @@ class CfwAsyncClient(Client):
         return self.add_service_items_using_post_with_http_info(request)
 
     def add_service_items_using_post_with_http_info(self, request):
-        all_params = ['add_service_items_using_post_request_body']
+        all_params = ['add_service_items_using_post_request_body', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -253,6 +265,10 @@ class CfwAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -301,7 +317,7 @@ class CfwAsyncClient(Client):
         return self.add_service_set_using_post_with_http_info(request)
 
     def add_service_set_using_post_with_http_info(self, request):
-        all_params = ['add_service_set_using_post_request_body']
+        all_params = ['add_service_set_using_post_request_body', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -314,6 +330,10 @@ class CfwAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -362,7 +382,7 @@ class CfwAsyncClient(Client):
         return self.change_ew_protect_status_with_http_info(request)
 
     def change_ew_protect_status_with_http_info(self, request):
-        all_params = ['change_ew_protect_status_request_body']
+        all_params = ['change_ew_protect_status_request_body', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -375,6 +395,10 @@ class CfwAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -423,7 +447,7 @@ class CfwAsyncClient(Client):
         return self.change_ips_protect_mode_using_post_with_http_info(request)
 
     def change_ips_protect_mode_using_post_with_http_info(self, request):
-        all_params = ['change_ips_protect_mode_using_post_request_body']
+        all_params = ['change_ips_protect_mode_using_post_request_body', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -436,6 +460,10 @@ class CfwAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -484,7 +512,7 @@ class CfwAsyncClient(Client):
         return self.delete_acl_rule_count_with_http_info(request)
 
     def delete_acl_rule_count_with_http_info(self, request):
-        all_params = ['delete_acl_rule_count_request_body']
+        all_params = ['delete_acl_rule_count_request_body', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -497,6 +525,10 @@ class CfwAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -545,7 +577,7 @@ class CfwAsyncClient(Client):
         return self.delete_address_item_using_delete_with_http_info(request)
 
     def delete_address_item_using_delete_with_http_info(self, request):
-        all_params = ['item_id']
+        all_params = ['item_id', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -560,6 +592,10 @@ class CfwAsyncClient(Client):
             path_params['item_id'] = local_var_params['item_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -606,7 +642,7 @@ class CfwAsyncClient(Client):
         return self.delete_address_set_info_using_delete_with_http_info(request)
 
     def delete_address_set_info_using_delete_with_http_info(self, request):
-        all_params = ['set_id']
+        all_params = ['set_id', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -621,6 +657,10 @@ class CfwAsyncClient(Client):
             path_params['set_id'] = local_var_params['set_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -667,7 +707,7 @@ class CfwAsyncClient(Client):
         return self.delete_black_white_list_using_delete_with_http_info(request)
 
     def delete_black_white_list_using_delete_with_http_info(self, request):
-        all_params = ['list_id']
+        all_params = ['list_id', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -682,6 +722,10 @@ class CfwAsyncClient(Client):
             path_params['list_id'] = local_var_params['list_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -728,7 +772,7 @@ class CfwAsyncClient(Client):
         return self.delete_service_item_using_delete_with_http_info(request)
 
     def delete_service_item_using_delete_with_http_info(self, request):
-        all_params = ['item_id']
+        all_params = ['item_id', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -743,6 +787,10 @@ class CfwAsyncClient(Client):
             path_params['item_id'] = local_var_params['item_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -789,7 +837,7 @@ class CfwAsyncClient(Client):
         return self.delete_service_set_using_delete_with_http_info(request)
 
     def delete_service_set_using_delete_with_http_info(self, request):
-        all_params = ['set_id']
+        all_params = ['set_id', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -804,6 +852,10 @@ class CfwAsyncClient(Client):
             path_params['set_id'] = local_var_params['set_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -850,7 +902,7 @@ class CfwAsyncClient(Client):
         return self.list_access_control_logs_with_http_info(request)
 
     def list_access_control_logs_with_http_info(self, request):
-        all_params = ['fw_instance_id', 'start_time', 'end_time', 'limit', 'rule_id', 'src_ip', 'src_port', 'dst_ip', 'dst_port', 'protocol', 'app', 'log_id', 'next_date', 'offset', 'log_type']
+        all_params = ['fw_instance_id', 'start_time', 'end_time', 'limit', 'rule_id', 'src_ip', 'src_port', 'dst_ip', 'dst_port', 'protocol', 'app', 'log_id', 'next_date', 'offset', 'log_type', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -893,6 +945,8 @@ class CfwAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'log_type' in local_var_params:
             query_params.append(('log_type', local_var_params['log_type']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -939,7 +993,7 @@ class CfwAsyncClient(Client):
         return self.list_address_items_using_get_with_http_info(request)
 
     def list_address_items_using_get_with_http_info(self, request):
-        all_params = ['set_id', 'limit', 'offset', 'key_word', 'address']
+        all_params = ['set_id', 'limit', 'offset', 'key_word', 'address', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -962,6 +1016,10 @@ class CfwAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'address' in local_var_params:
             query_params.append(('address', local_var_params['address']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -1008,7 +1066,7 @@ class CfwAsyncClient(Client):
         return self.list_address_set_detail_using_get_with_http_info(request)
 
     def list_address_set_detail_using_get_with_http_info(self, request):
-        all_params = ['set_id']
+        all_params = ['set_id', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1023,6 +1081,10 @@ class CfwAsyncClient(Client):
             path_params['set_id'] = local_var_params['set_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -1069,7 +1131,7 @@ class CfwAsyncClient(Client):
         return self.list_address_set_list_using_get_with_http_info(request)
 
     def list_address_set_list_using_get_with_http_info(self, request):
-        all_params = ['object_id', 'limit', 'offset', 'key_word', 'address', 'address_type']
+        all_params = ['object_id', 'limit', 'offset', 'key_word', 'address', 'address_type', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1094,6 +1156,10 @@ class CfwAsyncClient(Client):
             query_params.append(('address', local_var_params['address']))
         if 'address_type' in local_var_params:
             query_params.append(('address_type', local_var_params['address_type']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -1140,7 +1206,7 @@ class CfwAsyncClient(Client):
         return self.list_attack_logs_with_http_info(request)
 
     def list_attack_logs_with_http_info(self, request):
-        all_params = ['start_time', 'end_time', 'limit', 'fw_instance_id', 'src_ip', 'src_port', 'dst_ip', 'dst_port', 'protocol', 'app', 'log_id', 'next_date', 'offset', 'action', 'direction', 'attack_type', 'attack_rule', 'level', 'source']
+        all_params = ['start_time', 'end_time', 'limit', 'fw_instance_id', 'src_ip', 'src_port', 'dst_ip', 'dst_port', 'protocol', 'app', 'log_id', 'next_date', 'offset', 'action', 'direction', 'attack_type', 'attack_rule', 'level', 'source', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1191,6 +1257,8 @@ class CfwAsyncClient(Client):
             query_params.append(('level', local_var_params['level']))
         if 'source' in local_var_params:
             query_params.append(('source', local_var_params['source']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -1237,7 +1305,7 @@ class CfwAsyncClient(Client):
         return self.list_black_white_lists_using_get_with_http_info(request)
 
     def list_black_white_lists_using_get_with_http_info(self, request):
-        all_params = ['object_id', 'list_type', 'limit', 'offset', 'address_type', 'address', 'port']
+        all_params = ['object_id', 'list_type', 'limit', 'offset', 'address_type', 'address', 'port', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1264,6 +1332,10 @@ class CfwAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -1310,7 +1382,7 @@ class CfwAsyncClient(Client):
         return self.list_dns_servers_with_http_info(request)
 
     def list_dns_servers_with_http_info(self, request):
-        all_params = ['limit', 'offset']
+        all_params = ['limit', 'offset', 'fw_instance_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1327,6 +1399,10 @@ class CfwAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -1373,7 +1449,7 @@ class CfwAsyncClient(Client):
         return self.list_east_west_firewall_with_http_info(request)
 
     def list_east_west_firewall_with_http_info(self, request):
-        all_params = ['limit', 'offset']
+        all_params = ['limit', 'offset', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1390,6 +1466,10 @@ class CfwAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -1436,7 +1516,7 @@ class CfwAsyncClient(Client):
         return self.list_firewall_using_get_with_http_info(request)
 
     def list_firewall_using_get_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'service_type']
+        all_params = ['offset', 'limit', 'service_type', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1455,6 +1535,10 @@ class CfwAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'service_type' in local_var_params:
             query_params.append(('service_type', local_var_params['service_type']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -1501,7 +1585,7 @@ class CfwAsyncClient(Client):
         return self.list_flow_logs_with_http_info(request)
 
     def list_flow_logs_with_http_info(self, request):
-        all_params = ['fw_instance_id', 'start_time', 'end_time', 'limit', 'direction', 'log_type', 'src_ip', 'src_port', 'dst_ip', 'dst_port', 'protocol', 'app', 'log_id', 'next_date', 'offset']
+        all_params = ['fw_instance_id', 'start_time', 'end_time', 'limit', 'direction', 'log_type', 'src_ip', 'src_port', 'dst_ip', 'dst_port', 'protocol', 'app', 'log_id', 'next_date', 'offset', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1544,6 +1628,8 @@ class CfwAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -1590,7 +1676,7 @@ class CfwAsyncClient(Client):
         return self.list_ips_protect_mode_using_post_with_http_info(request)
 
     def list_ips_protect_mode_using_post_with_http_info(self, request):
-        all_params = ['object_id']
+        all_params = ['object_id', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1605,6 +1691,10 @@ class CfwAsyncClient(Client):
         query_params = []
         if 'object_id' in local_var_params:
             query_params.append(('object_id', local_var_params['object_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -1651,7 +1741,7 @@ class CfwAsyncClient(Client):
         return self.list_parse_domain_details_with_http_info(request)
 
     def list_parse_domain_details_with_http_info(self, request):
-        all_params = ['domain_name']
+        all_params = ['domain_name', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1666,6 +1756,10 @@ class CfwAsyncClient(Client):
             path_params['domain_name'] = local_var_params['domain_name']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -1712,7 +1806,7 @@ class CfwAsyncClient(Client):
         return self.list_rule_hit_count_with_http_info(request)
 
     def list_rule_hit_count_with_http_info(self, request):
-        all_params = ['list_rule_hit_count_request_body']
+        all_params = ['enterprise_project_id', 'fw_instance_id', 'list_rule_hit_count_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1725,6 +1819,10 @@ class CfwAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -1773,7 +1871,7 @@ class CfwAsyncClient(Client):
         return self.list_service_items_details_with_http_info(request)
 
     def list_service_items_details_with_http_info(self, request):
-        all_params = ['set_id', 'limit', 'offset', 'key_word']
+        all_params = ['set_id', 'limit', 'offset', 'key_word', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1794,6 +1892,10 @@ class CfwAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -1840,7 +1942,7 @@ class CfwAsyncClient(Client):
         return self.list_service_set_with_http_info(request)
 
     def list_service_set_with_http_info(self, request):
-        all_params = ['object_id', 'limit', 'offset', 'key_word']
+        all_params = ['object_id', 'limit', 'offset', 'key_word', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1861,6 +1963,10 @@ class CfwAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -1907,7 +2013,7 @@ class CfwAsyncClient(Client):
         return self.list_service_set_details_with_http_info(request)
 
     def list_service_set_details_with_http_info(self, request):
-        all_params = ['set_id']
+        all_params = ['set_id', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1922,6 +2028,10 @@ class CfwAsyncClient(Client):
             path_params['set_id'] = local_var_params['set_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -1968,7 +2078,7 @@ class CfwAsyncClient(Client):
         return self.update_address_set_info_using_put_with_http_info(request)
 
     def update_address_set_info_using_put_with_http_info(self, request):
-        all_params = ['set_id', 'update_address_set_info_using_put_request_body']
+        all_params = ['set_id', 'update_address_set_info_using_put_request_body', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1983,6 +2093,10 @@ class CfwAsyncClient(Client):
             path_params['set_id'] = local_var_params['set_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -2031,7 +2145,7 @@ class CfwAsyncClient(Client):
         return self.update_black_white_list_using_put_with_http_info(request)
 
     def update_black_white_list_using_put_with_http_info(self, request):
-        all_params = ['list_id', 'update_black_white_list_using_put_request_body']
+        all_params = ['list_id', 'update_black_white_list_using_put_request_body', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2046,6 +2160,10 @@ class CfwAsyncClient(Client):
             path_params['list_id'] = local_var_params['list_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -2094,7 +2212,7 @@ class CfwAsyncClient(Client):
         return self.update_dns_servers_with_http_info(request)
 
     def update_dns_servers_with_http_info(self, request):
-        all_params = ['update_dns_servers_request_body']
+        all_params = ['update_dns_servers_request_body', 'fw_instance_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2107,6 +2225,10 @@ class CfwAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -2155,7 +2277,7 @@ class CfwAsyncClient(Client):
         return self.update_service_set_using_put_with_http_info(request)
 
     def update_service_set_using_put_with_http_info(self, request):
-        all_params = ['set_id', 'update_service_set_using_put_request_body']
+        all_params = ['set_id', 'update_service_set_using_put_request_body', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2170,6 +2292,10 @@ class CfwAsyncClient(Client):
             path_params['set_id'] = local_var_params['set_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -2218,7 +2344,7 @@ class CfwAsyncClient(Client):
         return self.add_rule_acl_using_post_with_http_info(request)
 
     def add_rule_acl_using_post_with_http_info(self, request):
-        all_params = ['add_rule_acl_using_post_request_body']
+        all_params = ['add_rule_acl_using_post_request_body', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2231,6 +2357,10 @@ class CfwAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -2279,7 +2409,7 @@ class CfwAsyncClient(Client):
         return self.delete_rule_acl_using_delete_with_http_info(request)
 
     def delete_rule_acl_using_delete_with_http_info(self, request):
-        all_params = ['acl_rule_id']
+        all_params = ['acl_rule_id', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2294,6 +2424,10 @@ class CfwAsyncClient(Client):
             path_params['acl_rule_id'] = local_var_params['acl_rule_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -2340,7 +2474,7 @@ class CfwAsyncClient(Client):
         return self.list_rule_acl_using_put_with_http_info(request)
 
     def list_rule_acl_using_put_with_http_info(self, request):
-        all_params = ['acl_rule_id', 'list_rule_acl_using_put_request_body']
+        all_params = ['acl_rule_id', 'list_rule_acl_using_put_request_body', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2355,6 +2489,10 @@ class CfwAsyncClient(Client):
             path_params['acl_rule_id'] = local_var_params['acl_rule_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -2403,7 +2541,7 @@ class CfwAsyncClient(Client):
         return self.list_rule_acls_using_get_with_http_info(request)
 
     def list_rule_acls_using_get_with_http_info(self, request):
-        all_params = ['object_id', 'limit', 'offset', 'type', 'protocol', 'ip', 'name', 'direction', 'status', 'action_type', 'address_type']
+        all_params = ['object_id', 'limit', 'offset', 'type', 'protocol', 'ip', 'name', 'direction', 'status', 'action_type', 'address_type', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2438,6 +2576,10 @@ class CfwAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -2484,7 +2626,7 @@ class CfwAsyncClient(Client):
         return self.update_rule_acl_using_put_with_http_info(request)
 
     def update_rule_acl_using_put_with_http_info(self, request):
-        all_params = ['acl_rule_id', 'update_rule_acl_using_put_request_body']
+        all_params = ['acl_rule_id', 'update_rule_acl_using_put_request_body', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2499,6 +2641,10 @@ class CfwAsyncClient(Client):
             path_params['acl_rule_id'] = local_var_params['acl_rule_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -2547,7 +2693,7 @@ class CfwAsyncClient(Client):
         return self.change_ips_switch_using_post_with_http_info(request)
 
     def change_ips_switch_using_post_with_http_info(self, request):
-        all_params = ['change_ips_switch_using_post_request_body']
+        all_params = ['change_ips_switch_using_post_request_body', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2560,6 +2706,10 @@ class CfwAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -2608,7 +2758,7 @@ class CfwAsyncClient(Client):
         return self.list_ips_switch_status_using_get_with_http_info(request)
 
     def list_ips_switch_status_using_get_with_http_info(self, request):
-        all_params = ['object_id']
+        all_params = ['object_id', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2623,6 +2773,10 @@ class CfwAsyncClient(Client):
         query_params = []
         if 'object_id' in local_var_params:
             query_params.append(('object_id', local_var_params['object_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -2669,7 +2823,7 @@ class CfwAsyncClient(Client):
         return self.change_protect_eip_with_http_info(request)
 
     def change_protect_eip_with_http_info(self, request):
-        all_params = ['change_protect_eip_request_body']
+        all_params = ['change_protect_eip_request_body', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2682,6 +2836,10 @@ class CfwAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -2730,7 +2888,7 @@ class CfwAsyncClient(Client):
         return self.count_eips_with_http_info(request)
 
     def count_eips_with_http_info(self, request):
-        all_params = ['object_id']
+        all_params = ['object_id', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2745,6 +2903,10 @@ class CfwAsyncClient(Client):
             path_params['object_id'] = local_var_params['object_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -2791,7 +2953,7 @@ class CfwAsyncClient(Client):
         return self.list_eip_resources_with_http_info(request)
 
     def list_eip_resources_with_http_info(self, request):
-        all_params = ['object_id', 'limit', 'offset', 'key_word', 'status', 'sync', 'enterprise_project_id', 'device_key', 'address_type']
+        all_params = ['object_id', 'limit', 'offset', 'key_word', 'status', 'sync', 'enterprise_project_id', 'device_key', 'address_type', 'fw_instance_id', 'fw_key_word', 'eps_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2822,6 +2984,12 @@ class CfwAsyncClient(Client):
             query_params.append(('device_key', local_var_params['device_key']))
         if 'address_type' in local_var_params:
             query_params.append(('address_type', local_var_params['address_type']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'fw_key_word' in local_var_params:
+            query_params.append(('fw_key_word', local_var_params['fw_key_word']))
+        if 'eps_id' in local_var_params:
+            query_params.append(('eps_id', local_var_params['eps_id']))
 
         header_params = {}
 
@@ -2868,7 +3036,7 @@ class CfwAsyncClient(Client):
         return self.list_vpc_protects_with_http_info(request)
 
     def list_vpc_protects_with_http_info(self, request):
-        all_params = ['object_id']
+        all_params = ['object_id', 'enterprise_project_id', 'fw_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2883,6 +3051,10 @@ class CfwAsyncClient(Client):
         query_params = []
         if 'object_id' in local_var_params:
             query_params.append(('object_id', local_var_params['object_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 

@@ -24,7 +24,9 @@ class JobEntities:
         'current_task': 'str',
         'image_name': 'str',
         'process_percent': 'float',
-        'results': 'list[JobEntitiesResult]'
+        'results': 'list[JobEntitiesResult]',
+        'sub_jobs_result': 'list[SubJobResult]',
+        'sub_jobs_list': 'list[str]'
     }
 
     attribute_map = {
@@ -32,10 +34,12 @@ class JobEntities:
         'current_task': 'current_task',
         'image_name': 'image_name',
         'process_percent': 'process_percent',
-        'results': 'results'
+        'results': 'results',
+        'sub_jobs_result': 'sub_jobs_result',
+        'sub_jobs_list': 'sub_jobs_list'
     }
 
-    def __init__(self, image_id=None, current_task=None, image_name=None, process_percent=None, results=None):
+    def __init__(self, image_id=None, current_task=None, image_name=None, process_percent=None, results=None, sub_jobs_result=None, sub_jobs_list=None):
         """JobEntities
 
         The model defined in huaweicloud sdk
@@ -50,6 +54,10 @@ class JobEntities:
         :type process_percent: float
         :param results: 批量任务执行结果
         :type results: list[:class:`huaweicloudsdkims.v2.JobEntitiesResult`]
+        :param sub_jobs_result: 子任务结果列表
+        :type sub_jobs_result: list[:class:`huaweicloudsdkims.v2.SubJobResult`]
+        :param sub_jobs_list: 子任务ID列表
+        :type sub_jobs_list: list[str]
         """
         
         
@@ -59,6 +67,8 @@ class JobEntities:
         self._image_name = None
         self._process_percent = None
         self._results = None
+        self._sub_jobs_result = None
+        self._sub_jobs_list = None
         self.discriminator = None
 
         if image_id is not None:
@@ -71,6 +81,10 @@ class JobEntities:
             self.process_percent = process_percent
         if results is not None:
             self.results = results
+        if sub_jobs_result is not None:
+            self.sub_jobs_result = sub_jobs_result
+        if sub_jobs_list is not None:
+            self.sub_jobs_list = sub_jobs_list
 
     @property
     def image_id(self):
@@ -181,6 +195,50 @@ class JobEntities:
         :type results: list[:class:`huaweicloudsdkims.v2.JobEntitiesResult`]
         """
         self._results = results
+
+    @property
+    def sub_jobs_result(self):
+        """Gets the sub_jobs_result of this JobEntities.
+
+        子任务结果列表
+
+        :return: The sub_jobs_result of this JobEntities.
+        :rtype: list[:class:`huaweicloudsdkims.v2.SubJobResult`]
+        """
+        return self._sub_jobs_result
+
+    @sub_jobs_result.setter
+    def sub_jobs_result(self, sub_jobs_result):
+        """Sets the sub_jobs_result of this JobEntities.
+
+        子任务结果列表
+
+        :param sub_jobs_result: The sub_jobs_result of this JobEntities.
+        :type sub_jobs_result: list[:class:`huaweicloudsdkims.v2.SubJobResult`]
+        """
+        self._sub_jobs_result = sub_jobs_result
+
+    @property
+    def sub_jobs_list(self):
+        """Gets the sub_jobs_list of this JobEntities.
+
+        子任务ID列表
+
+        :return: The sub_jobs_list of this JobEntities.
+        :rtype: list[str]
+        """
+        return self._sub_jobs_list
+
+    @sub_jobs_list.setter
+    def sub_jobs_list(self, sub_jobs_list):
+        """Sets the sub_jobs_list of this JobEntities.
+
+        子任务ID列表
+
+        :param sub_jobs_list: The sub_jobs_list of this JobEntities.
+        :type sub_jobs_list: list[str]
+        """
+        self._sub_jobs_list = sub_jobs_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

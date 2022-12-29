@@ -29,16 +29,15 @@ class NodeResponse:
         'cluster_node_type': 'str',
         'firmware_name': 'str',
         'upgrade_firmware_version': 'str',
-        'firmware_status': 'str',
+        'firmware_status': 'int',
         'firmware_upgrade_record': 'list[FirmwareUpdateRecord]',
         'state': 'str',
         'type': 'str',
         'active_status': 'str',
         'cpu': 'int',
-        'gpu_num': 'object',
-        'npu_num': 'object',
-        'host_ips': 'list[str]',
-        'tags': 'list[TagObject]'
+        'gpu_num': 'int',
+        'npu_num': 'int',
+        'host_ips': 'list[str]'
     }
 
     attribute_map = {
@@ -59,11 +58,10 @@ class NodeResponse:
         'cpu': 'cpu',
         'gpu_num': 'gpu_num',
         'npu_num': 'npu_num',
-        'host_ips': 'host_ips',
-        'tags': 'tags'
+        'host_ips': 'host_ips'
     }
 
-    def __init__(self, id=None, name=None, description=None, created_at=None, cluster_id=None, cluster_node_state=None, cluster_node_type=None, firmware_name=None, upgrade_firmware_version=None, firmware_status=None, firmware_upgrade_record=None, state=None, type=None, active_status=None, cpu=None, gpu_num=None, npu_num=None, host_ips=None, tags=None):
+    def __init__(self, id=None, name=None, description=None, created_at=None, cluster_id=None, cluster_node_state=None, cluster_node_type=None, firmware_name=None, upgrade_firmware_version=None, firmware_status=None, firmware_upgrade_record=None, state=None, type=None, active_status=None, cpu=None, gpu_num=None, npu_num=None, host_ips=None):
         """NodeResponse
 
         The model defined in huaweicloud sdk
@@ -87,7 +85,7 @@ class NodeResponse:
         :param upgrade_firmware_version: 固件正在升级的版本
         :type upgrade_firmware_version: str
         :param firmware_status: 固件升级状态，1、2、3分别代表升级中，升级失败，升级成功
-        :type firmware_status: str
+        :type firmware_status: int
         :param firmware_upgrade_record: 
         :type firmware_upgrade_record: list[:class:`huaweicloudsdkhilens.v3.FirmwareUpdateRecord`]
         :param state: 设备状态：UNCONNECTED(未注册)、RUNNING(运行中)、FAIL(故障)、STOPPED(停用)、UPGRADING(升级中)、FREEZE(冻结)
@@ -99,13 +97,11 @@ class NodeResponse:
         :param cpu: 设备CPU个数
         :type cpu: int
         :param gpu_num: 设备GPU个数
-        :type gpu_num: object
+        :type gpu_num: int
         :param npu_num: 设备NPU个数
-        :type npu_num: object
+        :type npu_num: int
         :param host_ips: 主机IP列表
         :type host_ips: list[str]
-        :param tags: 设备标签对列表
-        :type tags: list[:class:`huaweicloudsdkhilens.v3.TagObject`]
         """
         
         
@@ -128,7 +124,6 @@ class NodeResponse:
         self._gpu_num = None
         self._npu_num = None
         self._host_ips = None
-        self._tags = None
         self.discriminator = None
 
         if id is not None:
@@ -167,8 +162,6 @@ class NodeResponse:
             self.npu_num = npu_num
         if host_ips is not None:
             self.host_ips = host_ips
-        if tags is not None:
-            self.tags = tags
 
     @property
     def id(self):
@@ -375,7 +368,7 @@ class NodeResponse:
         固件升级状态，1、2、3分别代表升级中，升级失败，升级成功
 
         :return: The firmware_status of this NodeResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._firmware_status
 
@@ -386,7 +379,7 @@ class NodeResponse:
         固件升级状态，1、2、3分别代表升级中，升级失败，升级成功
 
         :param firmware_status: The firmware_status of this NodeResponse.
-        :type firmware_status: str
+        :type firmware_status: int
         """
         self._firmware_status = firmware_status
 
@@ -503,7 +496,7 @@ class NodeResponse:
         设备GPU个数
 
         :return: The gpu_num of this NodeResponse.
-        :rtype: object
+        :rtype: int
         """
         return self._gpu_num
 
@@ -514,7 +507,7 @@ class NodeResponse:
         设备GPU个数
 
         :param gpu_num: The gpu_num of this NodeResponse.
-        :type gpu_num: object
+        :type gpu_num: int
         """
         self._gpu_num = gpu_num
 
@@ -525,7 +518,7 @@ class NodeResponse:
         设备NPU个数
 
         :return: The npu_num of this NodeResponse.
-        :rtype: object
+        :rtype: int
         """
         return self._npu_num
 
@@ -536,7 +529,7 @@ class NodeResponse:
         设备NPU个数
 
         :param npu_num: The npu_num of this NodeResponse.
-        :type npu_num: object
+        :type npu_num: int
         """
         self._npu_num = npu_num
 
@@ -561,28 +554,6 @@ class NodeResponse:
         :type host_ips: list[str]
         """
         self._host_ips = host_ips
-
-    @property
-    def tags(self):
-        """Gets the tags of this NodeResponse.
-
-        设备标签对列表
-
-        :return: The tags of this NodeResponse.
-        :rtype: list[:class:`huaweicloudsdkhilens.v3.TagObject`]
-        """
-        return self._tags
-
-    @tags.setter
-    def tags(self, tags):
-        """Sets the tags of this NodeResponse.
-
-        设备标签对列表
-
-        :param tags: The tags of this NodeResponse.
-        :type tags: list[:class:`huaweicloudsdkhilens.v3.TagObject`]
-        """
-        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

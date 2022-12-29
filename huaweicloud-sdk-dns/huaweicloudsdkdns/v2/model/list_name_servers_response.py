@@ -32,7 +32,7 @@ class ListNameServersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param nameservers: 
+        :param nameservers: name server列表对象。
         :type nameservers: list[:class:`huaweicloudsdkdns.v2.NameServersResp`]
         """
         
@@ -48,6 +48,8 @@ class ListNameServersResponse(SdkResponse):
     def nameservers(self):
         """Gets the nameservers of this ListNameServersResponse.
 
+        name server列表对象。
+
         :return: The nameservers of this ListNameServersResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.NameServersResp`]
         """
@@ -56,6 +58,8 @@ class ListNameServersResponse(SdkResponse):
     @nameservers.setter
     def nameservers(self, nameservers):
         """Sets the nameservers of this ListNameServersResponse.
+
+        name server列表对象。
 
         :param nameservers: The nameservers of this ListNameServersResponse.
         :type nameservers: list[:class:`huaweicloudsdkdns.v2.NameServersResp`]

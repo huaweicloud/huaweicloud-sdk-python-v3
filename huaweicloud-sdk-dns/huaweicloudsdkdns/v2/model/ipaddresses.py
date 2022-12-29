@@ -20,79 +20,47 @@ class Ipaddresses:
     sensitive_list = []
 
     openapi_types = {
-        'subnet_id': 'str',
-        'ip': 'str'
+        'ipaddress': 'IpaddressData'
     }
 
     attribute_map = {
-        'subnet_id': 'subnet_id',
-        'ip': 'ip'
+        'ipaddress': 'ipaddress'
     }
 
-    def __init__(self, subnet_id=None, ip=None):
+    def __init__(self, ipaddress=None):
         """Ipaddresses
 
         The model defined in huaweicloud sdk
 
-        :param subnet_id: 子网的网络id。
-        :type subnet_id: str
-        :param ip: 自定义ip地址，需在子网的网段内部。
-        :type ip: str
+        :param ipaddress: 
+        :type ipaddress: :class:`huaweicloudsdkdns.v2.IpaddressData`
         """
         
         
 
-        self._subnet_id = None
-        self._ip = None
+        self._ipaddress = None
         self.discriminator = None
 
-        self.subnet_id = subnet_id
-        if ip is not None:
-            self.ip = ip
+        if ipaddress is not None:
+            self.ipaddress = ipaddress
 
     @property
-    def subnet_id(self):
-        """Gets the subnet_id of this Ipaddresses.
+    def ipaddress(self):
+        """Gets the ipaddress of this Ipaddresses.
 
-        子网的网络id。
-
-        :return: The subnet_id of this Ipaddresses.
-        :rtype: str
+        :return: The ipaddress of this Ipaddresses.
+        :rtype: :class:`huaweicloudsdkdns.v2.IpaddressData`
         """
-        return self._subnet_id
+        return self._ipaddress
 
-    @subnet_id.setter
-    def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this Ipaddresses.
+    @ipaddress.setter
+    def ipaddress(self, ipaddress):
+        """Sets the ipaddress of this Ipaddresses.
 
-        子网的网络id。
-
-        :param subnet_id: The subnet_id of this Ipaddresses.
-        :type subnet_id: str
+        :param ipaddress: The ipaddress of this Ipaddresses.
+        :type ipaddress: :class:`huaweicloudsdkdns.v2.IpaddressData`
         """
-        self._subnet_id = subnet_id
-
-    @property
-    def ip(self):
-        """Gets the ip of this Ipaddresses.
-
-        自定义ip地址，需在子网的网段内部。
-
-        :return: The ip of this Ipaddresses.
-        :rtype: str
-        """
-        return self._ip
-
-    @ip.setter
-    def ip(self, ip):
-        """Sets the ip of this Ipaddresses.
-
-        自定义ip地址，需在子网的网段内部。
-
-        :param ip: The ip of this Ipaddresses.
-        :type ip: str
-        """
-        self._ip = ip
+        self._ipaddress = ipaddress
 
     def to_dict(self):
         """Returns the model properties as a dict"""

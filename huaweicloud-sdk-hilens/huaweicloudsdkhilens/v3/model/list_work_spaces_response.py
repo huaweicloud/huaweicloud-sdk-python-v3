@@ -21,7 +21,7 @@ class ListWorkSpacesResponse(SdkResponse):
 
     openapi_types = {
         'count': 'int',
-        'workspaces': 'WorkspaceListElem'
+        'workspaces': 'list[WorkspaceListElem]'
     }
 
     attribute_map = {
@@ -36,8 +36,8 @@ class ListWorkSpacesResponse(SdkResponse):
 
         :param count: 返回总条目数
         :type count: int
-        :param workspaces: 
-        :type workspaces: :class:`huaweicloudsdkhilens.v3.WorkspaceListElem`
+        :param workspaces: 工作空间列表
+        :type workspaces: list[:class:`huaweicloudsdkhilens.v3.WorkspaceListElem`]
         """
         
         super(ListWorkSpacesResponse, self).__init__()
@@ -77,8 +77,10 @@ class ListWorkSpacesResponse(SdkResponse):
     def workspaces(self):
         """Gets the workspaces of this ListWorkSpacesResponse.
 
+        工作空间列表
+
         :return: The workspaces of this ListWorkSpacesResponse.
-        :rtype: :class:`huaweicloudsdkhilens.v3.WorkspaceListElem`
+        :rtype: list[:class:`huaweicloudsdkhilens.v3.WorkspaceListElem`]
         """
         return self._workspaces
 
@@ -86,8 +88,10 @@ class ListWorkSpacesResponse(SdkResponse):
     def workspaces(self, workspaces):
         """Sets the workspaces of this ListWorkSpacesResponse.
 
+        工作空间列表
+
         :param workspaces: The workspaces of this ListWorkSpacesResponse.
-        :type workspaces: :class:`huaweicloudsdkhilens.v3.WorkspaceListElem`
+        :type workspaces: list[:class:`huaweicloudsdkhilens.v3.WorkspaceListElem`]
         """
         self._workspaces = workspaces
 

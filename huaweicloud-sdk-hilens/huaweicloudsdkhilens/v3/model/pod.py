@@ -31,7 +31,7 @@ class Pod:
         'id': 'str',
         'deployment_id': 'str',
         'affinity': 'PodAffinity',
-        'apps': 'AppDef',
+        'apps': 'list[AppDef]',
         'node_id': 'str',
         'status': 'str'
     }
@@ -80,8 +80,8 @@ class Pod:
         :type deployment_id: str
         :param affinity: 
         :type affinity: :class:`huaweicloudsdkhilens.v3.PodAffinity`
-        :param apps: 
-        :type apps: :class:`huaweicloudsdkhilens.v3.AppDef`
+        :param apps: 应用部署信息
+        :type apps: list[:class:`huaweicloudsdkhilens.v3.AppDef`]
         :param node_id: 节点ID
         :type node_id: str
         :param status: 状态，状态包括，Pending，表示挂起，Running表示pod已经被调到到某节点，Succeeded表示Pod已经被成功终止，Failed表示左右容器都已终止，Unkonwn表示无法取得Pod状态
@@ -373,8 +373,10 @@ class Pod:
     def apps(self):
         """Gets the apps of this Pod.
 
+        应用部署信息
+
         :return: The apps of this Pod.
-        :rtype: :class:`huaweicloudsdkhilens.v3.AppDef`
+        :rtype: list[:class:`huaweicloudsdkhilens.v3.AppDef`]
         """
         return self._apps
 
@@ -382,8 +384,10 @@ class Pod:
     def apps(self, apps):
         """Sets the apps of this Pod.
 
+        应用部署信息
+
         :param apps: The apps of this Pod.
-        :type apps: :class:`huaweicloudsdkhilens.v3.AppDef`
+        :type apps: list[:class:`huaweicloudsdkhilens.v3.AppDef`]
         """
         self._apps = apps
 

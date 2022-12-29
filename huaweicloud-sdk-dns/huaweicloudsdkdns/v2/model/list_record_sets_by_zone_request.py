@@ -54,7 +54,7 @@ class ListRecordSetsByZoneRequest:
 
         :param zone_id: 所属zone id。
         :type zone_id: str
-        :param marker: 分页查询起始的资源ID，为空时为查询第一页。
+        :param marker: 分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
         :type marker: str
         :param limit: 每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
         :type limit: int
@@ -139,7 +139,7 @@ class ListRecordSetsByZoneRequest:
     def marker(self):
         """Gets the marker of this ListRecordSetsByZoneRequest.
 
-        分页查询起始的资源ID，为空时为查询第一页。
+        分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
 
         :return: The marker of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -150,7 +150,7 @@ class ListRecordSetsByZoneRequest:
     def marker(self, marker):
         """Sets the marker of this ListRecordSetsByZoneRequest.
 
-        分页查询起始的资源ID，为空时为查询第一页。
+        分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
 
         :param marker: The marker of this ListRecordSetsByZoneRequest.
         :type marker: str

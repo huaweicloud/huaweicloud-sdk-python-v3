@@ -35,7 +35,8 @@ class InstanceCreateReq:
         'bandwidth_size': 'int',
         'ipv6_enable': 'bool',
         'loadbalancer_provider': 'str',
-        'tags': 'list[TmsKeyValue]'
+        'tags': 'list[TmsKeyValue]',
+        'vpcep_service_name': 'str'
     }
 
     attribute_map = {
@@ -54,10 +55,11 @@ class InstanceCreateReq:
         'bandwidth_size': 'bandwidth_size',
         'ipv6_enable': 'ipv6_enable',
         'loadbalancer_provider': 'loadbalancer_provider',
-        'tags': 'tags'
+        'tags': 'tags',
+        'vpcep_service_name': 'vpcep_service_name'
     }
 
-    def __init__(self, description=None, maintain_begin=None, maintain_end=None, instance_name=None, instance_id=None, spec_id=None, vpc_id=None, subnet_id=None, security_group_id=None, eip_id=None, enterprise_project_id=None, available_zone_ids=None, bandwidth_size=None, ipv6_enable=None, loadbalancer_provider=None, tags=None):
+    def __init__(self, description=None, maintain_begin=None, maintain_end=None, instance_name=None, instance_id=None, spec_id=None, vpc_id=None, subnet_id=None, security_group_id=None, eip_id=None, enterprise_project_id=None, available_zone_ids=None, bandwidth_size=None, ipv6_enable=None, loadbalancer_provider=None, tags=None, vpcep_service_name=None):
         """InstanceCreateReq
 
         The model defined in huaweicloud sdk
@@ -94,6 +96,8 @@ class InstanceCreateReq:
         :type loadbalancer_provider: str
         :param tags: 标签列表。  一个实例默认最多支持创建20个标签
         :type tags: list[:class:`huaweicloudsdkapig.v2.TmsKeyValue`]
+        :param vpcep_service_name: 终端节点服务的名称。  长度不超过16个字符，允许输入大小写字母、数字、下划线、中划线。  如果您不填写该参数，系统生成的终端节点服务的名称为{region}.apig.{service_id}。 如果您填写该参数，系统生成的终端节点服务的名称为{region}.{vpcep_service_name}.{service_id}。 实例创建完成后，可以在实例管理-&gt;终端节点管理页面修改该名称。 
+        :type vpcep_service_name: str
         """
         
         
@@ -114,6 +118,7 @@ class InstanceCreateReq:
         self._ipv6_enable = None
         self._loadbalancer_provider = None
         self._tags = None
+        self._vpcep_service_name = None
         self.discriminator = None
 
         if description is not None:
@@ -148,6 +153,8 @@ class InstanceCreateReq:
             self.loadbalancer_provider = loadbalancer_provider
         if tags is not None:
             self.tags = tags
+        if vpcep_service_name is not None:
+            self.vpcep_service_name = vpcep_service_name
 
     @property
     def description(self):
@@ -500,6 +507,28 @@ class InstanceCreateReq:
         :type tags: list[:class:`huaweicloudsdkapig.v2.TmsKeyValue`]
         """
         self._tags = tags
+
+    @property
+    def vpcep_service_name(self):
+        """Gets the vpcep_service_name of this InstanceCreateReq.
+
+        终端节点服务的名称。  长度不超过16个字符，允许输入大小写字母、数字、下划线、中划线。  如果您不填写该参数，系统生成的终端节点服务的名称为{region}.apig.{service_id}。 如果您填写该参数，系统生成的终端节点服务的名称为{region}.{vpcep_service_name}.{service_id}。 实例创建完成后，可以在实例管理->终端节点管理页面修改该名称。 
+
+        :return: The vpcep_service_name of this InstanceCreateReq.
+        :rtype: str
+        """
+        return self._vpcep_service_name
+
+    @vpcep_service_name.setter
+    def vpcep_service_name(self, vpcep_service_name):
+        """Sets the vpcep_service_name of this InstanceCreateReq.
+
+        终端节点服务的名称。  长度不超过16个字符，允许输入大小写字母、数字、下划线、中划线。  如果您不填写该参数，系统生成的终端节点服务的名称为{region}.apig.{service_id}。 如果您填写该参数，系统生成的终端节点服务的名称为{region}.{vpcep_service_name}.{service_id}。 实例创建完成后，可以在实例管理->终端节点管理页面修改该名称。 
+
+        :param vpcep_service_name: The vpcep_service_name of this InstanceCreateReq.
+        :type vpcep_service_name: str
+        """
+        self._vpcep_service_name = vpcep_service_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -77,19 +77,18 @@ class ModifyTransTemplate:
         self.discriminator = None
 
         self.group_id = group_id
-        self.name = name
+        if name is not None:
+            self.name = name
         if is_default is not None:
             self.is_default = is_default
         if is_auto_encrypt is not None:
             self.is_auto_encrypt = is_auto_encrypt
-        if quality_info_list is not None:
-            self.quality_info_list = quality_info_list
+        self.quality_info_list = quality_info_list
         if watermark_template_ids is not None:
             self.watermark_template_ids = watermark_template_ids
         if description is not None:
             self.description = description
-        if common is not None:
-            self.common = common
+        self.common = common
 
     @property
     def group_id(self):

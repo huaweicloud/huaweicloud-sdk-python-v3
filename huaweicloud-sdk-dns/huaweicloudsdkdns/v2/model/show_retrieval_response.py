@@ -22,7 +22,7 @@ class ShowRetrievalResponse(SdkResponse):
     openapi_types = {
         'id': 'str',
         'zone_name': 'str',
-        'record': 'CreatePublicZoneFindRespRecord',
+        'record': 'RecordInfo',
         'status': 'str',
         'created_at': 'str',
         'updated_at': 'str'
@@ -47,7 +47,7 @@ class ShowRetrievalResponse(SdkResponse):
         :param zone_name: 域名名称。
         :type zone_name: str
         :param record: 
-        :type record: :class:`huaweicloudsdkdns.v2.CreatePublicZoneFindRespRecord`
+        :type record: :class:`huaweicloudsdkdns.v2.RecordInfo`
         :param status: 状态，(PENDING,VERIFIED,CREATED,EXPIRED)
         :type status: str
         :param created_at: 创建时间。
@@ -128,7 +128,7 @@ class ShowRetrievalResponse(SdkResponse):
         """Gets the record of this ShowRetrievalResponse.
 
         :return: The record of this ShowRetrievalResponse.
-        :rtype: :class:`huaweicloudsdkdns.v2.CreatePublicZoneFindRespRecord`
+        :rtype: :class:`huaweicloudsdkdns.v2.RecordInfo`
         """
         return self._record
 
@@ -137,7 +137,7 @@ class ShowRetrievalResponse(SdkResponse):
         """Sets the record of this ShowRetrievalResponse.
 
         :param record: The record of this ShowRetrievalResponse.
-        :type record: :class:`huaweicloudsdkdns.v2.CreatePublicZoneFindRespRecord`
+        :type record: :class:`huaweicloudsdkdns.v2.RecordInfo`
         """
         self._record = record
 

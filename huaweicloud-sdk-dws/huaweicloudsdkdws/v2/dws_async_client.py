@@ -2127,7 +2127,7 @@ class DwsAsyncClient(Client):
         return self.list_alarm_configs_with_http_info(request)
 
     def list_alarm_configs_with_http_info(self, request):
-        all_params = []
+        all_params = ['offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2140,6 +2140,10 @@ class DwsAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -2157,7 +2161,7 @@ class DwsAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/alarm-configs',
+            resource_path='/v2/{project_id}/alarm-configs',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -2312,7 +2316,7 @@ class DwsAsyncClient(Client):
         return self.list_alarm_subs_with_http_info(request)
 
     def list_alarm_subs_with_http_info(self, request):
-        all_params = []
+        all_params = ['offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2325,6 +2329,10 @@ class DwsAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -3288,7 +3296,7 @@ class DwsAsyncClient(Client):
         return self.list_event_specs_with_http_info(request)
 
     def list_event_specs_with_http_info(self, request):
-        all_params = ['spec_name', 'category', 'severity', 'source_type', 'tag']
+        all_params = ['spec_name', 'category', 'severity', 'source_type', 'tag', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3311,6 +3319,10 @@ class DwsAsyncClient(Client):
             query_params.append(('source_type', local_var_params['source_type']))
         if 'tag' in local_var_params:
             query_params.append(('tag', local_var_params['tag']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -3328,7 +3340,7 @@ class DwsAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/event-specs',
+            resource_path='/v2/{project_id}/event-specs',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -3357,7 +3369,7 @@ class DwsAsyncClient(Client):
         return self.list_event_subs_with_http_info(request)
 
     def list_event_subs_with_http_info(self, request):
-        all_params = []
+        all_params = ['offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3370,6 +3382,10 @@ class DwsAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -3416,7 +3432,7 @@ class DwsAsyncClient(Client):
         return self.list_events_with_http_info(request)
 
     def list_events_with_http_info(self, request):
-        all_params = []
+        all_params = ['offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3429,6 +3445,10 @@ class DwsAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -4009,7 +4029,7 @@ class DwsAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/snapshots/statistics',
+            resource_path='/v1.0/{project_id}/cluster/{cluster_id}/snapshots/statistics',
             method='GET',
             path_params=path_params,
             query_params=query_params,

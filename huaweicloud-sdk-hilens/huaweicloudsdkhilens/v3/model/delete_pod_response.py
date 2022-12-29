@@ -4,11 +4,11 @@ import re
 import six
 
 
-
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class Metedata:
+class DeletePodResponse(SdkResponse):
 
     """
     Attributes:
@@ -20,51 +20,51 @@ class Metedata:
     sensitive_list = []
 
     openapi_types = {
-        'total_count': 'int'
+        'pod_id': 'str'
     }
 
     attribute_map = {
-        'total_count': 'total_count'
+        'pod_id': 'pod_id'
     }
 
-    def __init__(self, total_count=None):
-        """Metedata
+    def __init__(self, pod_id=None):
+        """DeletePodResponse
 
         The model defined in huaweicloud sdk
 
-        :param total_count: 满足查询条件的资源总数，不受分页（即limit、offset参数）影响。
-        :type total_count: int
+        :param pod_id: pod的ID
+        :type pod_id: str
         """
         
-        
+        super(DeletePodResponse, self).__init__()
 
-        self._total_count = None
+        self._pod_id = None
         self.discriminator = None
 
-        if total_count is not None:
-            self.total_count = total_count
+        if pod_id is not None:
+            self.pod_id = pod_id
 
     @property
-    def total_count(self):
-        """Gets the total_count of this Metedata.
+    def pod_id(self):
+        """Gets the pod_id of this DeletePodResponse.
 
-        满足查询条件的资源总数，不受分页（即limit、offset参数）影响。
+        pod的ID
 
-        :return: The total_count of this Metedata.
-        :rtype: int
+        :return: The pod_id of this DeletePodResponse.
+        :rtype: str
         """
-        return self._total_count
+        return self._pod_id
 
-    @total_count.setter
-    def total_count(self, total_count):
-        """Sets the total_count of this Metedata.
+    @pod_id.setter
+    def pod_id(self, pod_id):
+        """Sets the pod_id of this DeletePodResponse.
 
-        满足查询条件的资源总数，不受分页（即limit、offset参数）影响。
+        pod的ID
 
-        :param total_count: The total_count of this Metedata.
-        :type total_count: int
+        :param pod_id: The pod_id of this DeletePodResponse.
+        :type pod_id: str
         """
-        self._total_count = total_count
+        self._pod_id = pod_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -108,7 +108,7 @@ class Metedata:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Metedata):
+        if not isinstance(other, DeletePodResponse):
             return False
 
         return self.__dict__ == other.__dict__

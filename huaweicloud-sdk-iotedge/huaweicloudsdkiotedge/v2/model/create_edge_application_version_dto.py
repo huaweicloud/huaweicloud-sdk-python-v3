@@ -33,7 +33,9 @@ class CreateEdgeApplicationVersionDTO:
         'args': 'object',
         'outputs': 'object',
         'inputs': 'object',
-        'services': 'object'
+        'services': 'object',
+        'supplier': 'str',
+        'tpl_id': 'str'
     }
 
     attribute_map = {
@@ -50,10 +52,12 @@ class CreateEdgeApplicationVersionDTO:
         'args': 'args',
         'outputs': 'outputs',
         'inputs': 'inputs',
-        'services': 'services'
+        'services': 'services',
+        'supplier': 'supplier',
+        'tpl_id': 'tpl_id'
     }
 
-    def __init__(self, version=None, description=None, sdk_version=None, deploy_type=None, deploy_multi_instance=None, container_settings=None, liveness_probe=None, readiness_probe=None, arch=None, command=None, args=None, outputs=None, inputs=None, services=None):
+    def __init__(self, version=None, description=None, sdk_version=None, deploy_type=None, deploy_multi_instance=None, container_settings=None, liveness_probe=None, readiness_probe=None, arch=None, command=None, args=None, outputs=None, inputs=None, services=None, supplier=None, tpl_id=None):
         """CreateEdgeApplicationVersionDTO
 
         The model defined in huaweicloud sdk
@@ -86,6 +90,10 @@ class CreateEdgeApplicationVersionDTO:
         :type inputs: object
         :param services: 应用实现的服务列表
         :type services: object
+        :param supplier: 驱动厂商
+        :type supplier: str
+        :param tpl_id: 模板id
+        :type tpl_id: str
         """
         
         
@@ -104,6 +112,8 @@ class CreateEdgeApplicationVersionDTO:
         self._outputs = None
         self._inputs = None
         self._services = None
+        self._supplier = None
+        self._tpl_id = None
         self.discriminator = None
 
         self.version = version
@@ -131,6 +141,10 @@ class CreateEdgeApplicationVersionDTO:
             self.inputs = inputs
         if services is not None:
             self.services = services
+        if supplier is not None:
+            self.supplier = supplier
+        if tpl_id is not None:
+            self.tpl_id = tpl_id
 
     @property
     def version(self):
@@ -427,6 +441,50 @@ class CreateEdgeApplicationVersionDTO:
         :type services: object
         """
         self._services = services
+
+    @property
+    def supplier(self):
+        """Gets the supplier of this CreateEdgeApplicationVersionDTO.
+
+        驱动厂商
+
+        :return: The supplier of this CreateEdgeApplicationVersionDTO.
+        :rtype: str
+        """
+        return self._supplier
+
+    @supplier.setter
+    def supplier(self, supplier):
+        """Sets the supplier of this CreateEdgeApplicationVersionDTO.
+
+        驱动厂商
+
+        :param supplier: The supplier of this CreateEdgeApplicationVersionDTO.
+        :type supplier: str
+        """
+        self._supplier = supplier
+
+    @property
+    def tpl_id(self):
+        """Gets the tpl_id of this CreateEdgeApplicationVersionDTO.
+
+        模板id
+
+        :return: The tpl_id of this CreateEdgeApplicationVersionDTO.
+        :rtype: str
+        """
+        return self._tpl_id
+
+    @tpl_id.setter
+    def tpl_id(self, tpl_id):
+        """Sets the tpl_id of this CreateEdgeApplicationVersionDTO.
+
+        模板id
+
+        :param tpl_id: The tpl_id of this CreateEdgeApplicationVersionDTO.
+        :type tpl_id: str
+        """
+        self._tpl_id = tpl_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

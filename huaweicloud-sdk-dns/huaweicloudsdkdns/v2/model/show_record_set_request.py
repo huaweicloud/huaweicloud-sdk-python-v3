@@ -34,9 +34,9 @@ class ShowRecordSetRequest:
 
         The model defined in huaweicloud sdk
 
-        :param zone_id: 
+        :param zone_id: 所属zone的ID。
         :type zone_id: str
-        :param recordset_id: 
+        :param recordset_id: 待查询recordset的ID信息。
         :type recordset_id: str
         """
         
@@ -53,6 +53,8 @@ class ShowRecordSetRequest:
     def zone_id(self):
         """Gets the zone_id of this ShowRecordSetRequest.
 
+        所属zone的ID。
+
         :return: The zone_id of this ShowRecordSetRequest.
         :rtype: str
         """
@@ -61,6 +63,8 @@ class ShowRecordSetRequest:
     @zone_id.setter
     def zone_id(self, zone_id):
         """Sets the zone_id of this ShowRecordSetRequest.
+
+        所属zone的ID。
 
         :param zone_id: The zone_id of this ShowRecordSetRequest.
         :type zone_id: str
@@ -71,6 +75,8 @@ class ShowRecordSetRequest:
     def recordset_id(self):
         """Gets the recordset_id of this ShowRecordSetRequest.
 
+        待查询recordset的ID信息。
+
         :return: The recordset_id of this ShowRecordSetRequest.
         :rtype: str
         """
@@ -79,6 +85,8 @@ class ShowRecordSetRequest:
     @recordset_id.setter
     def recordset_id(self, recordset_id):
         """Sets the recordset_id of this ShowRecordSetRequest.
+
+        待查询recordset的ID信息。
 
         :param recordset_id: The recordset_id of this ShowRecordSetRequest.
         :type recordset_id: str

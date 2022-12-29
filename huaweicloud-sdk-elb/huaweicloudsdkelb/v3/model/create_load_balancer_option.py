@@ -82,7 +82,7 @@ class CreateLoadBalancerOption:
 
         The model defined in huaweicloud sdk
 
-        :param id: 负载均衡器ID（UUID）
+        :param id: 负载均衡器ID（UUID）。不支持该字段，请勿使用。
         :type id: str
         :param project_id: 负载均衡器所在的项目ID。
         :type project_id: str
@@ -114,7 +114,7 @@ class CreateLoadBalancerOption:
         :type tags: list[:class:`huaweicloudsdkelb.v3.Tag`]
         :param admin_state_up: 负载均衡器的管理状态。只能设置为true。默认：true。  [不支持该字段，请勿使用。](tag:dt,dt_test)
         :type admin_state_up: bool
-        :param billing_info: 资源账单信息。  取值： - 空：按需计费。 - 非空：包周期计费。  格式为： order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584:az1: 057ef081eb00d2732fd1c01a9be75e6f  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt)
+        :param billing_info: 资源账单信息。  取值： - 空：按需计费。 - 非空：包周期计费。  格式为： order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584:az1: 057ef081eb00d2732fd1c01a9be75e6f  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs)
         :type billing_info: str
         :param ipv6_bandwidth: 
         :type ipv6_bandwidth: :class:`huaweicloudsdkelb.v3.BandwidthRef`
@@ -124,15 +124,15 @@ class CreateLoadBalancerOption:
         :type publicip: :class:`huaweicloudsdkelb.v3.CreateLoadBalancerPublicIpOption`
         :param elb_virsubnet_ids: 下联面子网的网络ID列表。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。  若不指定该字段，则按如下规则选择下联面网络： 1. 如果ELB实例开启ipv6，则选择ipv6_vip_virsubnet_id子网对应的网络ID。 2. 如果ELB实例没有开启ipv6，开启ipv4，则选择vip_subnet_cidr_id子网对应的网络ID。 3. 如果ELB实例没有选择私网，只开启公网，则会在当前负载均衡器所在的VPC中任意选一个子网，优选可用IP多的网络。  若指定多个下联面子网，则按顺序优先使用第一个子网来为负载均衡器下联面端口分配ip地址。  下联面子网必须属于该LB所在的VPC。
         :type elb_virsubnet_ids: list[str]
-        :param ip_target_enable: 是否启用跨VPC后端转发。  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  [仅独享型负载均衡器支持该特性。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  取值： - true：开启。 - false：不开启。  使用说明： - 开启不能关闭。
+        :param ip_target_enable: 是否启用跨VPC后端转发。  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加 [其他VPC、](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs) 其他公有云、云下数据中心的服务器。  [仅独享型负载均衡器支持该特性。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  取值： - true：开启。 - false：不开启。  使用说明： - 开启不能关闭。  [荷兰region不支持该字段，请勿使用。](tag:dt)
         :type ip_target_enable: bool
-        :param deletion_protection_enable: 是否开启删除保护。  取值：false不开启，true开启。默认false不开启。  &gt; 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
+        :param deletion_protection_enable: 是否开启删除保护。  取值：false不开启，true开启。默认false不开启。  &gt; 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
         :type deletion_protection_enable: bool
         :param prepaid_options: 
         :type prepaid_options: :class:`huaweicloudsdkelb.v3.PrepaidCreateOption`
         :param autoscaling: 
         :type autoscaling: :class:`huaweicloudsdkelb.v3.CreateLoadbalancerAutoscalingOption`
-        :param waf_failure_action: WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt)
+        :param waf_failure_action: WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc)
         :type waf_failure_action: str
         """
         
@@ -222,7 +222,7 @@ class CreateLoadBalancerOption:
     def id(self):
         """Gets the id of this CreateLoadBalancerOption.
 
-        负载均衡器ID（UUID）
+        负载均衡器ID（UUID）。不支持该字段，请勿使用。
 
         :return: The id of this CreateLoadBalancerOption.
         :rtype: str
@@ -233,7 +233,7 @@ class CreateLoadBalancerOption:
     def id(self, id):
         """Sets the id of this CreateLoadBalancerOption.
 
-        负载均衡器ID（UUID）
+        负载均衡器ID（UUID）。不支持该字段，请勿使用。
 
         :param id: The id of this CreateLoadBalancerOption.
         :type id: str
@@ -574,7 +574,7 @@ class CreateLoadBalancerOption:
     def billing_info(self):
         """Gets the billing_info of this CreateLoadBalancerOption.
 
-        资源账单信息。  取值： - 空：按需计费。 - 非空：包周期计费。  格式为： order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584:az1: 057ef081eb00d2732fd1c01a9be75e6f  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt)
+        资源账单信息。  取值： - 空：按需计费。 - 非空：包周期计费。  格式为： order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584:az1: 057ef081eb00d2732fd1c01a9be75e6f  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs)
 
         :return: The billing_info of this CreateLoadBalancerOption.
         :rtype: str
@@ -585,7 +585,7 @@ class CreateLoadBalancerOption:
     def billing_info(self, billing_info):
         """Sets the billing_info of this CreateLoadBalancerOption.
 
-        资源账单信息。  取值： - 空：按需计费。 - 非空：包周期计费。  格式为： order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584:az1: 057ef081eb00d2732fd1c01a9be75e6f  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt)
+        资源账单信息。  取值： - 空：按需计费。 - 非空：包周期计费。  格式为： order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584:az1: 057ef081eb00d2732fd1c01a9be75e6f  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs)
 
         :param billing_info: The billing_info of this CreateLoadBalancerOption.
         :type billing_info: str
@@ -676,7 +676,7 @@ class CreateLoadBalancerOption:
     def ip_target_enable(self):
         """Gets the ip_target_enable of this CreateLoadBalancerOption.
 
-        是否启用跨VPC后端转发。  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  [仅独享型负载均衡器支持该特性。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  取值： - true：开启。 - false：不开启。  使用说明： - 开启不能关闭。
+        是否启用跨VPC后端转发。  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加 [其他VPC、](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs) 其他公有云、云下数据中心的服务器。  [仅独享型负载均衡器支持该特性。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  取值： - true：开启。 - false：不开启。  使用说明： - 开启不能关闭。  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :return: The ip_target_enable of this CreateLoadBalancerOption.
         :rtype: bool
@@ -687,7 +687,7 @@ class CreateLoadBalancerOption:
     def ip_target_enable(self, ip_target_enable):
         """Sets the ip_target_enable of this CreateLoadBalancerOption.
 
-        是否启用跨VPC后端转发。  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  [仅独享型负载均衡器支持该特性。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  取值： - true：开启。 - false：不开启。  使用说明： - 开启不能关闭。
+        是否启用跨VPC后端转发。  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加 [其他VPC、](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs) 其他公有云、云下数据中心的服务器。  [仅独享型负载均衡器支持该特性。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  取值： - true：开启。 - false：不开启。  使用说明： - 开启不能关闭。  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :param ip_target_enable: The ip_target_enable of this CreateLoadBalancerOption.
         :type ip_target_enable: bool
@@ -698,7 +698,7 @@ class CreateLoadBalancerOption:
     def deletion_protection_enable(self):
         """Gets the deletion_protection_enable of this CreateLoadBalancerOption.
 
-        是否开启删除保护。  取值：false不开启，true开启。默认false不开启。  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
+        是否开启删除保护。  取值：false不开启，true开启。默认false不开启。  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :return: The deletion_protection_enable of this CreateLoadBalancerOption.
         :rtype: bool
@@ -709,7 +709,7 @@ class CreateLoadBalancerOption:
     def deletion_protection_enable(self, deletion_protection_enable):
         """Sets the deletion_protection_enable of this CreateLoadBalancerOption.
 
-        是否开启删除保护。  取值：false不开启，true开启。默认false不开启。  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
+        是否开启删除保护。  取值：false不开启，true开启。默认false不开启。  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :param deletion_protection_enable: The deletion_protection_enable of this CreateLoadBalancerOption.
         :type deletion_protection_enable: bool
@@ -756,7 +756,7 @@ class CreateLoadBalancerOption:
     def waf_failure_action(self):
         """Gets the waf_failure_action of this CreateLoadBalancerOption.
 
-        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt)
+        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc)
 
         :return: The waf_failure_action of this CreateLoadBalancerOption.
         :rtype: str
@@ -767,7 +767,7 @@ class CreateLoadBalancerOption:
     def waf_failure_action(self, waf_failure_action):
         """Sets the waf_failure_action of this CreateLoadBalancerOption.
 
-        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt)
+        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc)
 
         :param waf_failure_action: The waf_failure_action of this CreateLoadBalancerOption.
         :type waf_failure_action: str

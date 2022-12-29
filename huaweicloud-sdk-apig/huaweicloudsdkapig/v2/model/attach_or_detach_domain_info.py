@@ -21,15 +21,17 @@ class AttachOrDetachDomainInfo:
 
     openapi_types = {
         'domain': 'str',
-        'instance_ids': 'list[str]'
+        'instance_ids': 'list[str]',
+        'verified_client_certificate_enabled': 'bool'
     }
 
     attribute_map = {
         'domain': 'domain',
-        'instance_ids': 'instance_ids'
+        'instance_ids': 'instance_ids',
+        'verified_client_certificate_enabled': 'verified_client_certificate_enabled'
     }
 
-    def __init__(self, domain=None, instance_ids=None):
+    def __init__(self, domain=None, instance_ids=None, verified_client_certificate_enabled=None):
         """AttachOrDetachDomainInfo
 
         The model defined in huaweicloud sdk
@@ -38,17 +40,22 @@ class AttachOrDetachDomainInfo:
         :type domain: str
         :param instance_ids: 实例ID集合
         :type instance_ids: list[str]
+        :param verified_client_certificate_enabled: 是否开启客户端证书校验。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
+        :type verified_client_certificate_enabled: bool
         """
         
         
 
         self._domain = None
         self._instance_ids = None
+        self._verified_client_certificate_enabled = None
         self.discriminator = None
 
         self.domain = domain
         if instance_ids is not None:
             self.instance_ids = instance_ids
+        if verified_client_certificate_enabled is not None:
+            self.verified_client_certificate_enabled = verified_client_certificate_enabled
 
     @property
     def domain(self):
@@ -93,6 +100,28 @@ class AttachOrDetachDomainInfo:
         :type instance_ids: list[str]
         """
         self._instance_ids = instance_ids
+
+    @property
+    def verified_client_certificate_enabled(self):
+        """Gets the verified_client_certificate_enabled of this AttachOrDetachDomainInfo.
+
+        是否开启客户端证书校验。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
+
+        :return: The verified_client_certificate_enabled of this AttachOrDetachDomainInfo.
+        :rtype: bool
+        """
+        return self._verified_client_certificate_enabled
+
+    @verified_client_certificate_enabled.setter
+    def verified_client_certificate_enabled(self, verified_client_certificate_enabled):
+        """Sets the verified_client_certificate_enabled of this AttachOrDetachDomainInfo.
+
+        是否开启客户端证书校验。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
+
+        :param verified_client_certificate_enabled: The verified_client_certificate_enabled of this AttachOrDetachDomainInfo.
+        :type verified_client_certificate_enabled: bool
+        """
+        self._verified_client_certificate_enabled = verified_client_certificate_enabled
 
     def to_dict(self):
         """Returns the model properties as a dict"""

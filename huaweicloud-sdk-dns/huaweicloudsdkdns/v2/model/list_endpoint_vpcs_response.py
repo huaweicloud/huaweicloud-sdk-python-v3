@@ -21,7 +21,7 @@ class ListEndpointVpcsResponse(SdkResponse):
 
     openapi_types = {
         'vpcs': 'list[VpcsData]',
-        'metadata': 'Metedata'
+        'metadata': 'Metadata'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class ListEndpointVpcsResponse(SdkResponse):
         :param vpcs: 查询公网Zone的列表响应。
         :type vpcs: list[:class:`huaweicloudsdkdns.v2.VpcsData`]
         :param metadata: 
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         
         super(ListEndpointVpcsResponse, self).__init__()
@@ -78,7 +78,7 @@ class ListEndpointVpcsResponse(SdkResponse):
         """Gets the metadata of this ListEndpointVpcsResponse.
 
         :return: The metadata of this ListEndpointVpcsResponse.
-        :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
+        :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         return self._metadata
 
@@ -87,7 +87,7 @@ class ListEndpointVpcsResponse(SdkResponse):
         """Sets the metadata of this ListEndpointVpcsResponse.
 
         :param metadata: The metadata of this ListEndpointVpcsResponse.
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         self._metadata = metadata
 

@@ -71,7 +71,9 @@ class QueryJobResp:
         'az_name': 'str',
         'master_az': 'str',
         'slave_az': 'str',
-        'node_role': 'str'
+        'node_role': 'str',
+        'period_order': 'PeriodOrderResp',
+        'object_infos': 'list[DatabaseObjectInfo]'
     }
 
     attribute_map = {
@@ -126,10 +128,12 @@ class QueryJobResp:
         'az_name': 'az_name',
         'master_az': 'master_az',
         'slave_az': 'slave_az',
-        'node_role': 'node_role'
+        'node_role': 'node_role',
+        'period_order': 'period_order',
+        'object_infos': 'object_infos'
     }
 
-    def __init__(self, id=None, parent_id=None, name=None, status=None, description=None, create_time=None, task_type=None, source_endpoint=None, dmq_endpoint=None, source_sharding=None, target_endpoint=None, net_type=None, failed_reason=None, inst_info=None, actual_start_time=None, full_transfer_complete_time=None, update_time=None, job_direction=None, db_use_type=None, need_restart=None, is_target_readonly=None, conflict_policy=None, filter_ddl_policy=None, speed_limit=None, schema_type=None, node_num=None, object_switch=None, master_job_id=None, full_mode=None, struct_trans=None, index_trans=None, replace_definer=None, migrate_user=None, sync_database=None, error_code=None, error_message=None, target_root_db=None, az_code=None, vpc_id=None, subnet_id=None, security_group_id=None, multi_write=None, support_ip_v6=None, inherit_id=None, gtid=None, alarm_notify=None, incre_start_position=None, is_multi_az=None, az_name=None, master_az=None, slave_az=None, node_role=None):
+    def __init__(self, id=None, parent_id=None, name=None, status=None, description=None, create_time=None, task_type=None, source_endpoint=None, dmq_endpoint=None, source_sharding=None, target_endpoint=None, net_type=None, failed_reason=None, inst_info=None, actual_start_time=None, full_transfer_complete_time=None, update_time=None, job_direction=None, db_use_type=None, need_restart=None, is_target_readonly=None, conflict_policy=None, filter_ddl_policy=None, speed_limit=None, schema_type=None, node_num=None, object_switch=None, master_job_id=None, full_mode=None, struct_trans=None, index_trans=None, replace_definer=None, migrate_user=None, sync_database=None, error_code=None, error_message=None, target_root_db=None, az_code=None, vpc_id=None, subnet_id=None, security_group_id=None, multi_write=None, support_ip_v6=None, inherit_id=None, gtid=None, alarm_notify=None, incre_start_position=None, is_multi_az=None, az_name=None, master_az=None, slave_az=None, node_role=None, period_order=None, object_infos=None):
         """QueryJobResp
 
         The model defined in huaweicloud sdk
@@ -238,6 +242,10 @@ class QueryJobResp:
         :type slave_az: str
         :param node_role: 任务主备角色。
         :type node_role: str
+        :param period_order: 
+        :type period_order: :class:`huaweicloudsdkdrs.v3.PeriodOrderResp`
+        :param object_infos: 已同步对象信息。
+        :type object_infos: list[:class:`huaweicloudsdkdrs.v3.DatabaseObjectInfo`]
         """
         
         
@@ -294,6 +302,8 @@ class QueryJobResp:
         self._master_az = None
         self._slave_az = None
         self._node_role = None
+        self._period_order = None
+        self._object_infos = None
         self.discriminator = None
 
         if id is not None:
@@ -400,6 +410,10 @@ class QueryJobResp:
             self.slave_az = slave_az
         if node_role is not None:
             self.node_role = node_role
+        if period_order is not None:
+            self.period_order = period_order
+        if object_infos is not None:
+            self.object_infos = object_infos
 
     @property
     def id(self):
@@ -1520,6 +1534,46 @@ class QueryJobResp:
         :type node_role: str
         """
         self._node_role = node_role
+
+    @property
+    def period_order(self):
+        """Gets the period_order of this QueryJobResp.
+
+        :return: The period_order of this QueryJobResp.
+        :rtype: :class:`huaweicloudsdkdrs.v3.PeriodOrderResp`
+        """
+        return self._period_order
+
+    @period_order.setter
+    def period_order(self, period_order):
+        """Sets the period_order of this QueryJobResp.
+
+        :param period_order: The period_order of this QueryJobResp.
+        :type period_order: :class:`huaweicloudsdkdrs.v3.PeriodOrderResp`
+        """
+        self._period_order = period_order
+
+    @property
+    def object_infos(self):
+        """Gets the object_infos of this QueryJobResp.
+
+        已同步对象信息。
+
+        :return: The object_infos of this QueryJobResp.
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.DatabaseObjectInfo`]
+        """
+        return self._object_infos
+
+    @object_infos.setter
+    def object_infos(self, object_infos):
+        """Sets the object_infos of this QueryJobResp.
+
+        已同步对象信息。
+
+        :param object_infos: The object_infos of this QueryJobResp.
+        :type object_infos: list[:class:`huaweicloudsdkdrs.v3.DatabaseObjectInfo`]
+        """
+        self._object_infos = object_infos
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -30,7 +30,9 @@ class Quota:
         'member': 'int',
         'members_per_pool': 'int',
         'ipgroup': 'int',
-        'security_policy': 'int'
+        'security_policy': 'int',
+        'ipgroup_bindings': 'str',
+        'ipgroup_max_length': 'str'
     }
 
     attribute_map = {
@@ -44,10 +46,12 @@ class Quota:
         'member': 'member',
         'members_per_pool': 'members_per_pool',
         'ipgroup': 'ipgroup',
-        'security_policy': 'security_policy'
+        'security_policy': 'security_policy',
+        'ipgroup_bindings': 'ipgroup_bindings',
+        'ipgroup_max_length': 'ipgroup_max_length'
     }
 
-    def __init__(self, project_id=None, loadbalancer=None, certificate=None, listener=None, l7policy=None, pool=None, healthmonitor=None, member=None, members_per_pool=None, ipgroup=None, security_policy=None):
+    def __init__(self, project_id=None, loadbalancer=None, certificate=None, listener=None, l7policy=None, pool=None, healthmonitor=None, member=None, members_per_pool=None, ipgroup=None, security_policy=None, ipgroup_bindings=None, ipgroup_max_length=None):
         """Quota
 
         The model defined in huaweicloud sdk
@@ -74,6 +78,10 @@ class Quota:
         :type ipgroup: int
         :param security_policy: 自定义安全策略配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
         :type security_policy: int
+        :param ipgroup_bindings: ipgroup最大可关联的监听器数量。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+        :type ipgroup_bindings: str
+        :param ipgroup_max_length: 单个ipgroup最多可设置的ip地址数量。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+        :type ipgroup_max_length: str
         """
         
         
@@ -89,6 +97,8 @@ class Quota:
         self._members_per_pool = None
         self._ipgroup = None
         self._security_policy = None
+        self._ipgroup_bindings = None
+        self._ipgroup_max_length = None
         self.discriminator = None
 
         self.project_id = project_id
@@ -102,6 +112,8 @@ class Quota:
         self.members_per_pool = members_per_pool
         self.ipgroup = ipgroup
         self.security_policy = security_policy
+        self.ipgroup_bindings = ipgroup_bindings
+        self.ipgroup_max_length = ipgroup_max_length
 
     @property
     def project_id(self):
@@ -344,6 +356,50 @@ class Quota:
         :type security_policy: int
         """
         self._security_policy = security_policy
+
+    @property
+    def ipgroup_bindings(self):
+        """Gets the ipgroup_bindings of this Quota.
+
+        ipgroup最大可关联的监听器数量。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+
+        :return: The ipgroup_bindings of this Quota.
+        :rtype: str
+        """
+        return self._ipgroup_bindings
+
+    @ipgroup_bindings.setter
+    def ipgroup_bindings(self, ipgroup_bindings):
+        """Sets the ipgroup_bindings of this Quota.
+
+        ipgroup最大可关联的监听器数量。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+
+        :param ipgroup_bindings: The ipgroup_bindings of this Quota.
+        :type ipgroup_bindings: str
+        """
+        self._ipgroup_bindings = ipgroup_bindings
+
+    @property
+    def ipgroup_max_length(self):
+        """Gets the ipgroup_max_length of this Quota.
+
+        单个ipgroup最多可设置的ip地址数量。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+
+        :return: The ipgroup_max_length of this Quota.
+        :rtype: str
+        """
+        return self._ipgroup_max_length
+
+    @ipgroup_max_length.setter
+    def ipgroup_max_length(self, ipgroup_max_length):
+        """Sets the ipgroup_max_length of this Quota.
+
+        单个ipgroup最多可设置的ip地址数量。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+
+        :param ipgroup_max_length: The ipgroup_max_length of this Quota.
+        :type ipgroup_max_length: str
+        """
+        self._ipgroup_max_length = ipgroup_max_length
 
     def to_dict(self):
         """Returns the model properties as a dict"""

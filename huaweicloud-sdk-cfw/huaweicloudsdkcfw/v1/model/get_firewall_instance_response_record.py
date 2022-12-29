@@ -32,7 +32,9 @@ class GetFirewallInstanceResponseRecord:
         'is_old_firewall_instance': 'bool',
         'support_ipv6': 'bool',
         'feature_toggle': 'dict(str, bool)',
-        'resources': 'list[FirewallInstanceResource]'
+        'resources': 'list[FirewallInstanceResource]',
+        'fw_instance_name': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -48,10 +50,12 @@ class GetFirewallInstanceResponseRecord:
         'is_old_firewall_instance': 'is_old_firewall_instance',
         'support_ipv6': 'support_ipv6',
         'feature_toggle': 'feature_toggle',
-        'resources': 'resources'
+        'resources': 'resources',
+        'fw_instance_name': 'fw_instance_name',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, fw_instance_id=None, name=None, ha_type=None, charge_mode=None, service_type=None, engine_type=None, flavor=None, protect_objects=None, status=None, is_old_firewall_instance=None, support_ipv6=None, feature_toggle=None, resources=None):
+    def __init__(self, fw_instance_id=None, name=None, ha_type=None, charge_mode=None, service_type=None, engine_type=None, flavor=None, protect_objects=None, status=None, is_old_firewall_instance=None, support_ipv6=None, feature_toggle=None, resources=None, fw_instance_name=None, enterprise_project_id=None):
         """GetFirewallInstanceResponseRecord
 
         The model defined in huaweicloud sdk
@@ -82,6 +86,10 @@ class GetFirewallInstanceResponseRecord:
         :type feature_toggle: dict(str, bool)
         :param resources: 防火墙资源列表
         :type resources: list[:class:`huaweicloudsdkcfw.v1.FirewallInstanceResource`]
+        :param fw_instance_name: 防火墙名称
+        :type fw_instance_name: str
+        :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
+        :type enterprise_project_id: str
         """
         
         
@@ -99,6 +107,8 @@ class GetFirewallInstanceResponseRecord:
         self._support_ipv6 = None
         self._feature_toggle = None
         self._resources = None
+        self._fw_instance_name = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if fw_instance_id is not None:
@@ -127,6 +137,10 @@ class GetFirewallInstanceResponseRecord:
             self.feature_toggle = feature_toggle
         if resources is not None:
             self.resources = resources
+        if fw_instance_name is not None:
+            self.fw_instance_name = fw_instance_name
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def fw_instance_id(self):
@@ -409,6 +423,50 @@ class GetFirewallInstanceResponseRecord:
         :type resources: list[:class:`huaweicloudsdkcfw.v1.FirewallInstanceResource`]
         """
         self._resources = resources
+
+    @property
+    def fw_instance_name(self):
+        """Gets the fw_instance_name of this GetFirewallInstanceResponseRecord.
+
+        防火墙名称
+
+        :return: The fw_instance_name of this GetFirewallInstanceResponseRecord.
+        :rtype: str
+        """
+        return self._fw_instance_name
+
+    @fw_instance_name.setter
+    def fw_instance_name(self, fw_instance_name):
+        """Sets the fw_instance_name of this GetFirewallInstanceResponseRecord.
+
+        防火墙名称
+
+        :param fw_instance_name: The fw_instance_name of this GetFirewallInstanceResponseRecord.
+        :type fw_instance_name: str
+        """
+        self._fw_instance_name = fw_instance_name
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this GetFirewallInstanceResponseRecord.
+
+        企业项目id，用户支持企业项目后，由企业项目生成的id。
+
+        :return: The enterprise_project_id of this GetFirewallInstanceResponseRecord.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this GetFirewallInstanceResponseRecord.
+
+        企业项目id，用户支持企业项目后，由企业项目生成的id。
+
+        :param enterprise_project_id: The enterprise_project_id of this GetFirewallInstanceResponseRecord.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

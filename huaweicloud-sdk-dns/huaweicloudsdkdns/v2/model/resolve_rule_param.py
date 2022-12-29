@@ -64,7 +64,7 @@ class ResolveRuleParam:
         :type rule_type: str
         :param ipaddress_count: 当前规则下的ip地址数量。
         :type ipaddress_count: int
-        :param routers: 
+        :param routers: 规则关联的vpc信息。
         :type routers: list[:class:`huaweicloudsdkdns.v2.Router`]
         :param create_time: 创建时间。
         :type create_time: str
@@ -265,6 +265,8 @@ class ResolveRuleParam:
     def routers(self):
         """Gets the routers of this ResolveRuleParam.
 
+        规则关联的vpc信息。
+
         :return: The routers of this ResolveRuleParam.
         :rtype: list[:class:`huaweicloudsdkdns.v2.Router`]
         """
@@ -273,6 +275,8 @@ class ResolveRuleParam:
     @routers.setter
     def routers(self, routers):
         """Sets the routers of this ResolveRuleParam.
+
+        规则关联的vpc信息。
 
         :param routers: The routers of this ResolveRuleParam.
         :type routers: list[:class:`huaweicloudsdkdns.v2.Router`]

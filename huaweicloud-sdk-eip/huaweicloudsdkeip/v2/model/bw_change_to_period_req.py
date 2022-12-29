@@ -21,7 +21,7 @@ class BwChangeToPeriodReq:
 
     openapi_types = {
         'bandwidth_ids': 'list[str]',
-        'extend_param': 'object'
+        'extend_param': 'CreatePrePaidPublicipExtendParamOption'
     }
 
     attribute_map = {
@@ -36,8 +36,8 @@ class BwChangeToPeriodReq:
 
         :param bandwidth_ids: 待按需转包带宽列表 
         :type bandwidth_ids: list[str]
-        :param extend_param: 按需转包周期参数
-        :type extend_param: object
+        :param extend_param: 
+        :type extend_param: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipExtendParamOption`
         """
         
         
@@ -75,10 +75,8 @@ class BwChangeToPeriodReq:
     def extend_param(self):
         """Gets the extend_param of this BwChangeToPeriodReq.
 
-        按需转包周期参数
-
         :return: The extend_param of this BwChangeToPeriodReq.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipExtendParamOption`
         """
         return self._extend_param
 
@@ -86,10 +84,8 @@ class BwChangeToPeriodReq:
     def extend_param(self, extend_param):
         """Sets the extend_param of this BwChangeToPeriodReq.
 
-        按需转包周期参数
-
         :param extend_param: The extend_param of this BwChangeToPeriodReq.
-        :type extend_param: object
+        :type extend_param: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipExtendParamOption`
         """
         self._extend_param = extend_param
 

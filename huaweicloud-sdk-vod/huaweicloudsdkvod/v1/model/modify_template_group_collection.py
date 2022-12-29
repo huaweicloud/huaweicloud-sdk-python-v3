@@ -56,12 +56,13 @@ class ModifyTemplateGroupCollection:
         self._template_group_list = None
         self.discriminator = None
 
-        self.name = name
-        if collection_id is not None:
-            self.collection_id = collection_id
+        if name is not None:
+            self.name = name
+        self.collection_id = collection_id
         if description is not None:
             self.description = description
-        self.template_group_list = template_group_list
+        if template_group_list is not None:
+            self.template_group_list = template_group_list
 
     @property
     def name(self):

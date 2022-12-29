@@ -56,7 +56,8 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         'endpoint_services': 'list[EndpointService]',
         'node_ips': 'NodeIps',
         'publicips': 'list[IpDetails]',
-        'privateips': 'list[IpDetails]'
+        'privateips': 'list[IpDetails]',
+        'is_releasable': 'bool'
     }
 
     attribute_map = {
@@ -96,10 +97,11 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         'endpoint_services': 'endpoint_services',
         'node_ips': 'node_ips',
         'publicips': 'publicips',
-        'privateips': 'privateips'
+        'privateips': 'privateips',
+        'is_releasable': 'is_releasable'
     }
 
-    def __init__(self, id=None, project_id=None, instance_name=None, status=None, instance_status=None, type=None, spec=None, create_time=None, enterprise_project_id=None, eip_address=None, charging_mode=None, cbc_metadata=None, loadbalancer_provider=None, description=None, vpc_id=None, subnet_id=None, security_group_id=None, maintain_begin=None, maintain_end=None, ingress_ip=None, ingress_ip_v6=None, user_id=None, nat_eip_ipv6_cidr=None, eip_ipv6_address=None, nat_eip_address=None, bandwidth_size=None, available_zone_ids=None, instance_version=None, virsubnet_id=None, roma_eip_address=None, listeners=None, supported_features=None, endpoint_service=None, endpoint_services=None, node_ips=None, publicips=None, privateips=None):
+    def __init__(self, id=None, project_id=None, instance_name=None, status=None, instance_status=None, type=None, spec=None, create_time=None, enterprise_project_id=None, eip_address=None, charging_mode=None, cbc_metadata=None, loadbalancer_provider=None, description=None, vpc_id=None, subnet_id=None, security_group_id=None, maintain_begin=None, maintain_end=None, ingress_ip=None, ingress_ip_v6=None, user_id=None, nat_eip_ipv6_cidr=None, eip_ipv6_address=None, nat_eip_address=None, bandwidth_size=None, available_zone_ids=None, instance_version=None, virsubnet_id=None, roma_eip_address=None, listeners=None, supported_features=None, endpoint_service=None, endpoint_services=None, node_ips=None, publicips=None, privateips=None, is_releasable=None):
         """ShowDetailsOfInstanceV2Response
 
         The model defined in huaweicloud sdk
@@ -178,6 +180,8 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type publicips: list[:class:`huaweicloudsdkapig.v2.IpDetails`]
         :param privateips: 私网入口地址列表
         :type privateips: list[:class:`huaweicloudsdkapig.v2.IpDetails`]
+        :param is_releasable: 实例是否可释放 - true：可释放 - false：不可释放
+        :type is_releasable: bool
         """
         
         super(ShowDetailsOfInstanceV2Response, self).__init__()
@@ -219,6 +223,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         self._node_ips = None
         self._publicips = None
         self._privateips = None
+        self._is_releasable = None
         self.discriminator = None
 
         if id is not None:
@@ -295,6 +300,8 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
             self.publicips = publicips
         if privateips is not None:
             self.privateips = privateips
+        if is_releasable is not None:
+            self.is_releasable = is_releasable
 
     @property
     def id(self):
@@ -1101,6 +1108,28 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type privateips: list[:class:`huaweicloudsdkapig.v2.IpDetails`]
         """
         self._privateips = privateips
+
+    @property
+    def is_releasable(self):
+        """Gets the is_releasable of this ShowDetailsOfInstanceV2Response.
+
+        实例是否可释放 - true：可释放 - false：不可释放
+
+        :return: The is_releasable of this ShowDetailsOfInstanceV2Response.
+        :rtype: bool
+        """
+        return self._is_releasable
+
+    @is_releasable.setter
+    def is_releasable(self, is_releasable):
+        """Sets the is_releasable of this ShowDetailsOfInstanceV2Response.
+
+        实例是否可释放 - true：可释放 - false：不可释放
+
+        :param is_releasable: The is_releasable of this ShowDetailsOfInstanceV2Response.
+        :type is_releasable: bool
+        """
+        self._is_releasable = is_releasable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -24,8 +24,7 @@ class ListLoadbalancersByTagsRequestBody:
         'limit': 'int',
         'action': 'str',
         'matches': 'list[ActionMatch]',
-        'tags': 'list[ActionTag]',
-        'without_any_tag': 'bool'
+        'tags': 'list[ActionTag]'
     }
 
     attribute_map = {
@@ -33,11 +32,10 @@ class ListLoadbalancersByTagsRequestBody:
         'limit': 'limit',
         'action': 'action',
         'matches': 'matches',
-        'tags': 'tags',
-        'without_any_tag': 'without_any_tag'
+        'tags': 'tags'
     }
 
-    def __init__(self, offset=None, limit=None, action=None, matches=None, tags=None, without_any_tag=None):
+    def __init__(self, offset=None, limit=None, action=None, matches=None, tags=None):
         """ListLoadbalancersByTagsRequestBody
 
         The model defined in huaweicloud sdk
@@ -52,8 +50,6 @@ class ListLoadbalancersByTagsRequestBody:
         :type matches: list[:class:`huaweicloudsdkelb.v2.ActionMatch`]
         :param tags: 要搜索的标签值
         :type tags: list[:class:`huaweicloudsdkelb.v2.ActionTag`]
-        :param without_any_tag: 查询不包含任何标签的资源，该字段为true时，忽略tags字段的查询条件。
-        :type without_any_tag: bool
         """
         
         
@@ -63,7 +59,6 @@ class ListLoadbalancersByTagsRequestBody:
         self._action = None
         self._matches = None
         self._tags = None
-        self._without_any_tag = None
         self.discriminator = None
 
         if offset is not None:
@@ -75,8 +70,6 @@ class ListLoadbalancersByTagsRequestBody:
             self.matches = matches
         if tags is not None:
             self.tags = tags
-        if without_any_tag is not None:
-            self.without_any_tag = without_any_tag
 
     @property
     def offset(self):
@@ -187,28 +180,6 @@ class ListLoadbalancersByTagsRequestBody:
         :type tags: list[:class:`huaweicloudsdkelb.v2.ActionTag`]
         """
         self._tags = tags
-
-    @property
-    def without_any_tag(self):
-        """Gets the without_any_tag of this ListLoadbalancersByTagsRequestBody.
-
-        查询不包含任何标签的资源，该字段为true时，忽略tags字段的查询条件。
-
-        :return: The without_any_tag of this ListLoadbalancersByTagsRequestBody.
-        :rtype: bool
-        """
-        return self._without_any_tag
-
-    @without_any_tag.setter
-    def without_any_tag(self, without_any_tag):
-        """Sets the without_any_tag of this ListLoadbalancersByTagsRequestBody.
-
-        查询不包含任何标签的资源，该字段为true时，忽略tags字段的查询条件。
-
-        :param without_any_tag: The without_any_tag of this ListLoadbalancersByTagsRequestBody.
-        :type without_any_tag: bool
-        """
-        self._without_any_tag = without_any_tag
 
     def to_dict(self):
         """Returns the model properties as a dict"""

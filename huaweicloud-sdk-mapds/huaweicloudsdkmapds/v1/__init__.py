@@ -8,6 +8,7 @@ from huaweicloudsdkmapds.v1.mapds_async_client import MapDSAsyncClient
 # import models into sdk package
 from huaweicloudsdkmapds.v1.model.create_credential_request import CreateCredentialRequest
 from huaweicloudsdkmapds.v1.model.create_credential_request_body import CreateCredentialRequestBody
+from huaweicloudsdkmapds.v1.model.create_credential_request_body_credential import CreateCredentialRequestBodyCredential
 from huaweicloudsdkmapds.v1.model.create_credential_response import CreateCredentialResponse
 from huaweicloudsdkmapds.v1.model.create_sas_token_request import CreateSasTokenRequest
 from huaweicloudsdkmapds.v1.model.create_sas_token_request_body import CreateSasTokenRequestBody

@@ -20,51 +20,47 @@ class CreateCredentialRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'description': 'str'
+        'credential': 'CreateCredentialRequestBodyCredential'
     }
 
     attribute_map = {
-        'description': 'description'
+        'credential': 'credential'
     }
 
-    def __init__(self, description=None):
+    def __init__(self, credential=None):
         """CreateCredentialRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param description: 凭证的描述信息。
-        :type description: str
+        :param credential: 
+        :type credential: :class:`huaweicloudsdkmapds.v1.CreateCredentialRequestBodyCredential`
         """
         
         
 
-        self._description = None
+        self._credential = None
         self.discriminator = None
 
-        if description is not None:
-            self.description = description
+        if credential is not None:
+            self.credential = credential
 
     @property
-    def description(self):
-        """Gets the description of this CreateCredentialRequestBody.
+    def credential(self):
+        """Gets the credential of this CreateCredentialRequestBody.
 
-        凭证的描述信息。
-
-        :return: The description of this CreateCredentialRequestBody.
-        :rtype: str
+        :return: The credential of this CreateCredentialRequestBody.
+        :rtype: :class:`huaweicloudsdkmapds.v1.CreateCredentialRequestBodyCredential`
         """
-        return self._description
+        return self._credential
 
-    @description.setter
-    def description(self, description):
-        """Sets the description of this CreateCredentialRequestBody.
+    @credential.setter
+    def credential(self, credential):
+        """Sets the credential of this CreateCredentialRequestBody.
 
-        凭证的描述信息。
-
-        :param description: The description of this CreateCredentialRequestBody.
-        :type description: str
+        :param credential: The credential of this CreateCredentialRequestBody.
+        :type credential: :class:`huaweicloudsdkmapds.v1.CreateCredentialRequestBodyCredential`
         """
-        self._description = description
+        self._credential = credential
 
     def to_dict(self):
         """Returns the model properties as a dict"""

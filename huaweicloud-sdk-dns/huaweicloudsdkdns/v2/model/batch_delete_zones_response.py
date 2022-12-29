@@ -21,7 +21,7 @@ class BatchDeleteZonesResponse(SdkResponse):
 
     openapi_types = {
         'zones': 'list[ZoneData]',
-        'metadata': 'Metedata'
+        'metadata': 'Metadata'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class BatchDeleteZonesResponse(SdkResponse):
         :param zones: 待删除zone类型，当前仅支持 public 或 private
         :type zones: list[:class:`huaweicloudsdkdns.v2.ZoneData`]
         :param metadata: 
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         
         super(BatchDeleteZonesResponse, self).__init__()
@@ -78,7 +78,7 @@ class BatchDeleteZonesResponse(SdkResponse):
         """Gets the metadata of this BatchDeleteZonesResponse.
 
         :return: The metadata of this BatchDeleteZonesResponse.
-        :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
+        :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         return self._metadata
 
@@ -87,7 +87,7 @@ class BatchDeleteZonesResponse(SdkResponse):
         """Sets the metadata of this BatchDeleteZonesResponse.
 
         :param metadata: The metadata of this BatchDeleteZonesResponse.
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         self._metadata = metadata
 

@@ -58,31 +58,31 @@ class UpdateRecordSetResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 
+        :param id: Record Set的ID。
         :type id: str
-        :param name: 
+        :param name: Record Set的名称。
         :type name: str
-        :param description: 
+        :param description: Record Set的描述信息。
         :type description: str
-        :param zone_id: 
+        :param zone_id: 托管该记录的zone_id。
         :type zone_id: str
-        :param zone_name: 
+        :param zone_name: 托管该记录的zone_name。
         :type zone_name: str
-        :param type: 
+        :param type: 记录类型。 取值范围：A，AAAA，MX，CNAME，TXT，NS（仅限公网Zone），SRV，CAA（仅限公网Zone）。
         :type type: str
-        :param ttl: 
+        :param ttl: 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
         :type ttl: int
-        :param records: 
+        :param records: 域名解析后的值。
         :type records: list[str]
-        :param create_at: 
+        :param create_at: 创建时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS
         :type create_at: str
-        :param update_at: 
+        :param update_at: 更新时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS
         :type update_at: str
-        :param status: 
+        :param status: 资源状态。
         :type status: str
-        :param default: 
+        :param default: 标识是否由系统默认生成，系统默认生成的Record Set不能删除。
         :type default: bool
-        :param project_id: 
+        :param project_id: 该Record Set所属的项目ID。
         :type project_id: str
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -139,6 +139,8 @@ class UpdateRecordSetResponse(SdkResponse):
     def id(self):
         """Gets the id of this UpdateRecordSetResponse.
 
+        Record Set的ID。
+
         :return: The id of this UpdateRecordSetResponse.
         :rtype: str
         """
@@ -147,6 +149,8 @@ class UpdateRecordSetResponse(SdkResponse):
     @id.setter
     def id(self, id):
         """Sets the id of this UpdateRecordSetResponse.
+
+        Record Set的ID。
 
         :param id: The id of this UpdateRecordSetResponse.
         :type id: str
@@ -157,6 +161,8 @@ class UpdateRecordSetResponse(SdkResponse):
     def name(self):
         """Gets the name of this UpdateRecordSetResponse.
 
+        Record Set的名称。
+
         :return: The name of this UpdateRecordSetResponse.
         :rtype: str
         """
@@ -165,6 +171,8 @@ class UpdateRecordSetResponse(SdkResponse):
     @name.setter
     def name(self, name):
         """Sets the name of this UpdateRecordSetResponse.
+
+        Record Set的名称。
 
         :param name: The name of this UpdateRecordSetResponse.
         :type name: str
@@ -175,6 +183,8 @@ class UpdateRecordSetResponse(SdkResponse):
     def description(self):
         """Gets the description of this UpdateRecordSetResponse.
 
+        Record Set的描述信息。
+
         :return: The description of this UpdateRecordSetResponse.
         :rtype: str
         """
@@ -183,6 +193,8 @@ class UpdateRecordSetResponse(SdkResponse):
     @description.setter
     def description(self, description):
         """Sets the description of this UpdateRecordSetResponse.
+
+        Record Set的描述信息。
 
         :param description: The description of this UpdateRecordSetResponse.
         :type description: str
@@ -193,6 +205,8 @@ class UpdateRecordSetResponse(SdkResponse):
     def zone_id(self):
         """Gets the zone_id of this UpdateRecordSetResponse.
 
+        托管该记录的zone_id。
+
         :return: The zone_id of this UpdateRecordSetResponse.
         :rtype: str
         """
@@ -201,6 +215,8 @@ class UpdateRecordSetResponse(SdkResponse):
     @zone_id.setter
     def zone_id(self, zone_id):
         """Sets the zone_id of this UpdateRecordSetResponse.
+
+        托管该记录的zone_id。
 
         :param zone_id: The zone_id of this UpdateRecordSetResponse.
         :type zone_id: str
@@ -211,6 +227,8 @@ class UpdateRecordSetResponse(SdkResponse):
     def zone_name(self):
         """Gets the zone_name of this UpdateRecordSetResponse.
 
+        托管该记录的zone_name。
+
         :return: The zone_name of this UpdateRecordSetResponse.
         :rtype: str
         """
@@ -219,6 +237,8 @@ class UpdateRecordSetResponse(SdkResponse):
     @zone_name.setter
     def zone_name(self, zone_name):
         """Sets the zone_name of this UpdateRecordSetResponse.
+
+        托管该记录的zone_name。
 
         :param zone_name: The zone_name of this UpdateRecordSetResponse.
         :type zone_name: str
@@ -229,6 +249,8 @@ class UpdateRecordSetResponse(SdkResponse):
     def type(self):
         """Gets the type of this UpdateRecordSetResponse.
 
+        记录类型。 取值范围：A，AAAA，MX，CNAME，TXT，NS（仅限公网Zone），SRV，CAA（仅限公网Zone）。
+
         :return: The type of this UpdateRecordSetResponse.
         :rtype: str
         """
@@ -237,6 +259,8 @@ class UpdateRecordSetResponse(SdkResponse):
     @type.setter
     def type(self, type):
         """Sets the type of this UpdateRecordSetResponse.
+
+        记录类型。 取值范围：A，AAAA，MX，CNAME，TXT，NS（仅限公网Zone），SRV，CAA（仅限公网Zone）。
 
         :param type: The type of this UpdateRecordSetResponse.
         :type type: str
@@ -247,6 +271,8 @@ class UpdateRecordSetResponse(SdkResponse):
     def ttl(self):
         """Gets the ttl of this UpdateRecordSetResponse.
 
+        解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+
         :return: The ttl of this UpdateRecordSetResponse.
         :rtype: int
         """
@@ -255,6 +281,8 @@ class UpdateRecordSetResponse(SdkResponse):
     @ttl.setter
     def ttl(self, ttl):
         """Sets the ttl of this UpdateRecordSetResponse.
+
+        解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
         :param ttl: The ttl of this UpdateRecordSetResponse.
         :type ttl: int
@@ -265,6 +293,8 @@ class UpdateRecordSetResponse(SdkResponse):
     def records(self):
         """Gets the records of this UpdateRecordSetResponse.
 
+        域名解析后的值。
+
         :return: The records of this UpdateRecordSetResponse.
         :rtype: list[str]
         """
@@ -273,6 +303,8 @@ class UpdateRecordSetResponse(SdkResponse):
     @records.setter
     def records(self, records):
         """Sets the records of this UpdateRecordSetResponse.
+
+        域名解析后的值。
 
         :param records: The records of this UpdateRecordSetResponse.
         :type records: list[str]
@@ -283,6 +315,8 @@ class UpdateRecordSetResponse(SdkResponse):
     def create_at(self):
         """Gets the create_at of this UpdateRecordSetResponse.
 
+        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS
+
         :return: The create_at of this UpdateRecordSetResponse.
         :rtype: str
         """
@@ -291,6 +325,8 @@ class UpdateRecordSetResponse(SdkResponse):
     @create_at.setter
     def create_at(self, create_at):
         """Sets the create_at of this UpdateRecordSetResponse.
+
+        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS
 
         :param create_at: The create_at of this UpdateRecordSetResponse.
         :type create_at: str
@@ -301,6 +337,8 @@ class UpdateRecordSetResponse(SdkResponse):
     def update_at(self):
         """Gets the update_at of this UpdateRecordSetResponse.
 
+        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS
+
         :return: The update_at of this UpdateRecordSetResponse.
         :rtype: str
         """
@@ -309,6 +347,8 @@ class UpdateRecordSetResponse(SdkResponse):
     @update_at.setter
     def update_at(self, update_at):
         """Sets the update_at of this UpdateRecordSetResponse.
+
+        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS
 
         :param update_at: The update_at of this UpdateRecordSetResponse.
         :type update_at: str
@@ -319,6 +359,8 @@ class UpdateRecordSetResponse(SdkResponse):
     def status(self):
         """Gets the status of this UpdateRecordSetResponse.
 
+        资源状态。
+
         :return: The status of this UpdateRecordSetResponse.
         :rtype: str
         """
@@ -327,6 +369,8 @@ class UpdateRecordSetResponse(SdkResponse):
     @status.setter
     def status(self, status):
         """Sets the status of this UpdateRecordSetResponse.
+
+        资源状态。
 
         :param status: The status of this UpdateRecordSetResponse.
         :type status: str
@@ -337,6 +381,8 @@ class UpdateRecordSetResponse(SdkResponse):
     def default(self):
         """Gets the default of this UpdateRecordSetResponse.
 
+        标识是否由系统默认生成，系统默认生成的Record Set不能删除。
+
         :return: The default of this UpdateRecordSetResponse.
         :rtype: bool
         """
@@ -345,6 +391,8 @@ class UpdateRecordSetResponse(SdkResponse):
     @default.setter
     def default(self, default):
         """Sets the default of this UpdateRecordSetResponse.
+
+        标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
         :param default: The default of this UpdateRecordSetResponse.
         :type default: bool
@@ -355,6 +403,8 @@ class UpdateRecordSetResponse(SdkResponse):
     def project_id(self):
         """Gets the project_id of this UpdateRecordSetResponse.
 
+        该Record Set所属的项目ID。
+
         :return: The project_id of this UpdateRecordSetResponse.
         :rtype: str
         """
@@ -363,6 +413,8 @@ class UpdateRecordSetResponse(SdkResponse):
     @project_id.setter
     def project_id(self, project_id):
         """Sets the project_id of this UpdateRecordSetResponse.
+
+        该Record Set所属的项目ID。
 
         :param project_id: The project_id of this UpdateRecordSetResponse.
         :type project_id: str

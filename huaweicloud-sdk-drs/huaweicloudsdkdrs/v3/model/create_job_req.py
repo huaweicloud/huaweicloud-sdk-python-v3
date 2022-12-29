@@ -40,7 +40,9 @@ class CreateJobReq:
         'sys_tags': 'list[ResourceTag]',
         'expired_days': 'str',
         'master_az': 'str',
-        'slave_az': 'str'
+        'slave_az': 'str',
+        'charging_mode': 'str',
+        'period_order': 'PeriodOrderInfo'
     }
 
     attribute_map = {
@@ -64,10 +66,12 @@ class CreateJobReq:
         'sys_tags': 'sys_tags',
         'expired_days': 'expired_days',
         'master_az': 'master_az',
-        'slave_az': 'slave_az'
+        'slave_az': 'slave_az',
+        'charging_mode': 'charging_mode',
+        'period_order': 'period_order'
     }
 
-    def __init__(self, bind_eip=None, db_use_type=None, name=None, description=None, engine_type=None, is_target_readonly=None, job_direction=None, multi_write=None, net_type=None, node_num=None, node_type=None, source_endpoint=None, target_endpoint=None, tags=None, task_type=None, customize_sutnet_id=None, product_id=None, sys_tags=None, expired_days=None, master_az=None, slave_az=None):
+    def __init__(self, bind_eip=None, db_use_type=None, name=None, description=None, engine_type=None, is_target_readonly=None, job_direction=None, multi_write=None, net_type=None, node_num=None, node_type=None, source_endpoint=None, target_endpoint=None, tags=None, task_type=None, customize_sutnet_id=None, product_id=None, sys_tags=None, expired_days=None, master_az=None, slave_az=None, charging_mode=None, period_order=None):
         """CreateJobReq
 
         The model defined in huaweicloud sdk
@@ -114,6 +118,10 @@ class CreateJobReq:
         :type master_az: str
         :param slave_az: 主备任务备任务所在可用区code，可以通过查询规格未售罄的可用区接口获取 - master_az和slave_az同时填写时生效 - 目前支持mysql，gaussdbv5ha-to-kafka
         :type slave_az: str
+        :param charging_mode: 计费模式，不填默认为按需计费。 取值范围： - period：包年包月。 - on_demand：按需计费。
+        :type charging_mode: str
+        :param period_order: 
+        :type period_order: :class:`huaweicloudsdkdrs.v3.PeriodOrderInfo`
         """
         
         
@@ -139,6 +147,8 @@ class CreateJobReq:
         self._expired_days = None
         self._master_az = None
         self._slave_az = None
+        self._charging_mode = None
+        self._period_order = None
         self.discriminator = None
 
         if bind_eip is not None:
@@ -173,6 +183,10 @@ class CreateJobReq:
             self.master_az = master_az
         if slave_az is not None:
             self.slave_az = slave_az
+        if charging_mode is not None:
+            self.charging_mode = charging_mode
+        if period_order is not None:
+            self.period_order = period_order
 
     @property
     def bind_eip(self):
@@ -627,6 +641,46 @@ class CreateJobReq:
         :type slave_az: str
         """
         self._slave_az = slave_az
+
+    @property
+    def charging_mode(self):
+        """Gets the charging_mode of this CreateJobReq.
+
+        计费模式，不填默认为按需计费。 取值范围： - period：包年包月。 - on_demand：按需计费。
+
+        :return: The charging_mode of this CreateJobReq.
+        :rtype: str
+        """
+        return self._charging_mode
+
+    @charging_mode.setter
+    def charging_mode(self, charging_mode):
+        """Sets the charging_mode of this CreateJobReq.
+
+        计费模式，不填默认为按需计费。 取值范围： - period：包年包月。 - on_demand：按需计费。
+
+        :param charging_mode: The charging_mode of this CreateJobReq.
+        :type charging_mode: str
+        """
+        self._charging_mode = charging_mode
+
+    @property
+    def period_order(self):
+        """Gets the period_order of this CreateJobReq.
+
+        :return: The period_order of this CreateJobReq.
+        :rtype: :class:`huaweicloudsdkdrs.v3.PeriodOrderInfo`
+        """
+        return self._period_order
+
+    @period_order.setter
+    def period_order(self, period_order):
+        """Sets the period_order of this CreateJobReq.
+
+        :param period_order: The period_order of this CreateJobReq.
+        :type period_order: :class:`huaweicloudsdkdrs.v3.PeriodOrderInfo`
+        """
+        self._period_order = period_order
 
     def to_dict(self):
         """Returns the model properties as a dict"""

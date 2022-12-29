@@ -21,7 +21,7 @@ class ShowClusterVolumeRsp:
 
     openapi_types = {
         'type': 'str',
-        'size': 'str'
+        'size': 'int'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class ShowClusterVolumeRsp:
         :param type: 实例磁盘类型。
         :type type: str
         :param size: 实例磁盘大小。
-        :type size: str
+        :type size: int
         """
         
         
@@ -80,7 +80,7 @@ class ShowClusterVolumeRsp:
         实例磁盘大小。
 
         :return: The size of this ShowClusterVolumeRsp.
-        :rtype: str
+        :rtype: int
         """
         return self._size
 
@@ -91,7 +91,7 @@ class ShowClusterVolumeRsp:
         实例磁盘大小。
 
         :param size: The size of this ShowClusterVolumeRsp.
-        :type size: str
+        :type size: int
         """
         self._size = size
 

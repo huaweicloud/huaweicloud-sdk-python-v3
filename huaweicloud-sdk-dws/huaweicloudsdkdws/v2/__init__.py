@@ -111,6 +111,7 @@ from huaweicloudsdkdws.v2.model.disaster_recovery import DisasterRecovery
 from huaweicloudsdkdws.v2.model.disaster_recovery_id import DisasterRecoveryId
 from huaweicloudsdkdws.v2.model.disk_resp import DiskResp
 from huaweicloudsdkdws.v2.model.dss_pool import DssPool
+from huaweicloudsdkdws.v2.model.elb_resp import ElbResp
 from huaweicloudsdkdws.v2.model.endpoints import Endpoints
 from huaweicloudsdkdws.v2.model.event_response import EventResponse
 from huaweicloudsdkdws.v2.model.event_spec_response import EventSpecResponse

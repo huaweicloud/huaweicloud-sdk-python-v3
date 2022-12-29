@@ -20,7 +20,7 @@ class ListSecretsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'count': 'str',
+        'count': 'int',
         'secrets': 'list[SecretDetail]'
     }
 
@@ -35,7 +35,7 @@ class ListSecretsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param count: 数量
-        :type count: str
+        :type count: int
         :param secrets: 缪瑶详情列表
         :type secrets: list[:class:`huaweicloudsdkhilens.v3.SecretDetail`]
         """
@@ -58,7 +58,7 @@ class ListSecretsResponse(SdkResponse):
         数量
 
         :return: The count of this ListSecretsResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._count
 
@@ -69,7 +69,7 @@ class ListSecretsResponse(SdkResponse):
         数量
 
         :param count: The count of this ListSecretsResponse.
-        :type count: str
+        :type count: int
         """
         self._count = count
 

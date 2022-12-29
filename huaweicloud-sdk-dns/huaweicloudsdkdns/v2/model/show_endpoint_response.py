@@ -20,7 +20,7 @@ class ShowEndpointResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'endpoint': 'object'
+        'endpoint': 'EndpointResp'
     }
 
     attribute_map = {
@@ -32,8 +32,8 @@ class ShowEndpointResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param endpoint: 查询endpoint响应。
-        :type endpoint: object
+        :param endpoint: 
+        :type endpoint: :class:`huaweicloudsdkdns.v2.EndpointResp`
         """
         
         super(ShowEndpointResponse, self).__init__()
@@ -48,10 +48,8 @@ class ShowEndpointResponse(SdkResponse):
     def endpoint(self):
         """Gets the endpoint of this ShowEndpointResponse.
 
-        查询endpoint响应。
-
         :return: The endpoint of this ShowEndpointResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdns.v2.EndpointResp`
         """
         return self._endpoint
 
@@ -59,10 +57,8 @@ class ShowEndpointResponse(SdkResponse):
     def endpoint(self, endpoint):
         """Sets the endpoint of this ShowEndpointResponse.
 
-        查询endpoint响应。
-
         :param endpoint: The endpoint of this ShowEndpointResponse.
-        :type endpoint: object
+        :type endpoint: :class:`huaweicloudsdkdns.v2.EndpointResp`
         """
         self._endpoint = endpoint
 

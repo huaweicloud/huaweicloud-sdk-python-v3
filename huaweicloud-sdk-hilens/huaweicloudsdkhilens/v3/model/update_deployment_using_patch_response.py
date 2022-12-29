@@ -36,7 +36,6 @@ class UpdateDeploymentUsingPatchResponse(SdkResponse):
         'id': 'str',
         'state': 'str',
         'node_num': 'int',
-        'deployment_tags': 'str',
         'result': 'list[NodeResult]'
     }
 
@@ -57,11 +56,10 @@ class UpdateDeploymentUsingPatchResponse(SdkResponse):
         'id': 'id',
         'state': 'state',
         'node_num': 'node_num',
-        'deployment_tags': 'deployment_tags',
         'result': 'result'
     }
 
-    def __init__(self, template=None, reason=None, ready_replicas=None, replicas=None, description=None, created_at=None, source=None, api_version=None, node_ids=None, cluster_id=None, updated_at=None, project_id=None, name=None, id=None, state=None, node_num=None, deployment_tags=None, result=None):
+    def __init__(self, template=None, reason=None, ready_replicas=None, replicas=None, description=None, created_at=None, source=None, api_version=None, node_ids=None, cluster_id=None, updated_at=None, project_id=None, name=None, id=None, state=None, node_num=None, result=None):
         """UpdateDeploymentUsingPatchResponse
 
         The model defined in huaweicloud sdk
@@ -98,8 +96,6 @@ class UpdateDeploymentUsingPatchResponse(SdkResponse):
         :type state: str
         :param node_num: 部署的节点数，最小为1，集群部署也为1
         :type node_num: int
-        :param deployment_tags: 
-        :type deployment_tags: str
         :param result: 每个节点的部署结果
         :type result: list[:class:`huaweicloudsdkhilens.v3.NodeResult`]
         """
@@ -122,7 +118,6 @@ class UpdateDeploymentUsingPatchResponse(SdkResponse):
         self._id = None
         self._state = None
         self._node_num = None
-        self._deployment_tags = None
         self._result = None
         self.discriminator = None
 
@@ -158,8 +153,6 @@ class UpdateDeploymentUsingPatchResponse(SdkResponse):
             self.state = state
         if node_num is not None:
             self.node_num = node_num
-        if deployment_tags is not None:
-            self.deployment_tags = deployment_tags
         if result is not None:
             self.result = result
 
@@ -510,24 +503,6 @@ class UpdateDeploymentUsingPatchResponse(SdkResponse):
         :type node_num: int
         """
         self._node_num = node_num
-
-    @property
-    def deployment_tags(self):
-        """Gets the deployment_tags of this UpdateDeploymentUsingPatchResponse.
-
-        :return: The deployment_tags of this UpdateDeploymentUsingPatchResponse.
-        :rtype: str
-        """
-        return self._deployment_tags
-
-    @deployment_tags.setter
-    def deployment_tags(self, deployment_tags):
-        """Sets the deployment_tags of this UpdateDeploymentUsingPatchResponse.
-
-        :param deployment_tags: The deployment_tags of this UpdateDeploymentUsingPatchResponse.
-        :type deployment_tags: str
-        """
-        self._deployment_tags = deployment_tags
 
     @property
     def result(self):

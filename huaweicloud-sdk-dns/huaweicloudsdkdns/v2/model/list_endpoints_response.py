@@ -21,7 +21,7 @@ class ListEndpointsResponse(SdkResponse):
 
     openapi_types = {
         'endpoints': 'list[EndpointResp]',
-        'metadata': 'Metedata'
+        'metadata': 'Metadata'
     }
 
     attribute_map = {
@@ -34,10 +34,10 @@ class ListEndpointsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param endpoints: 查询公网Zone的列表响应。
+        :param endpoints: 查询终端节点响应列表。
         :type endpoints: list[:class:`huaweicloudsdkdns.v2.EndpointResp`]
         :param metadata: 
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         
         super(ListEndpointsResponse, self).__init__()
@@ -55,7 +55,7 @@ class ListEndpointsResponse(SdkResponse):
     def endpoints(self):
         """Gets the endpoints of this ListEndpointsResponse.
 
-        查询公网Zone的列表响应。
+        查询终端节点响应列表。
 
         :return: The endpoints of this ListEndpointsResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.EndpointResp`]
@@ -66,7 +66,7 @@ class ListEndpointsResponse(SdkResponse):
     def endpoints(self, endpoints):
         """Sets the endpoints of this ListEndpointsResponse.
 
-        查询公网Zone的列表响应。
+        查询终端节点响应列表。
 
         :param endpoints: The endpoints of this ListEndpointsResponse.
         :type endpoints: list[:class:`huaweicloudsdkdns.v2.EndpointResp`]
@@ -78,7 +78,7 @@ class ListEndpointsResponse(SdkResponse):
         """Gets the metadata of this ListEndpointsResponse.
 
         :return: The metadata of this ListEndpointsResponse.
-        :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
+        :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         return self._metadata
 
@@ -87,7 +87,7 @@ class ListEndpointsResponse(SdkResponse):
         """Sets the metadata of this ListEndpointsResponse.
 
         :param metadata: The metadata of this ListEndpointsResponse.
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         self._metadata = metadata
 

@@ -36,9 +36,9 @@ class RestorePtrRecordRequest:
 
         The model defined in huaweicloud sdk
 
-        :param region: 
+        :param region: 域名所属的区域。
         :type region: str
-        :param floatingip_id: 
+        :param floatingip_id: 待删除PTR ID。
         :type floatingip_id: str
         :param body: Body of the RestorePtrRecordRequest
         :type body: :class:`huaweicloudsdkdns.v2.RestorePtrReq`
@@ -60,6 +60,8 @@ class RestorePtrRecordRequest:
     def region(self):
         """Gets the region of this RestorePtrRecordRequest.
 
+        域名所属的区域。
+
         :return: The region of this RestorePtrRecordRequest.
         :rtype: str
         """
@@ -68,6 +70,8 @@ class RestorePtrRecordRequest:
     @region.setter
     def region(self, region):
         """Sets the region of this RestorePtrRecordRequest.
+
+        域名所属的区域。
 
         :param region: The region of this RestorePtrRecordRequest.
         :type region: str
@@ -78,6 +82,8 @@ class RestorePtrRecordRequest:
     def floatingip_id(self):
         """Gets the floatingip_id of this RestorePtrRecordRequest.
 
+        待删除PTR ID。
+
         :return: The floatingip_id of this RestorePtrRecordRequest.
         :rtype: str
         """
@@ -86,6 +92,8 @@ class RestorePtrRecordRequest:
     @floatingip_id.setter
     def floatingip_id(self, floatingip_id):
         """Sets the floatingip_id of this RestorePtrRecordRequest.
+
+        待删除PTR ID。
 
         :param floatingip_id: The floatingip_id of this RestorePtrRecordRequest.
         :type floatingip_id: str

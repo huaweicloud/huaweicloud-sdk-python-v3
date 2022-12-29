@@ -47,8 +47,7 @@ class ActionTag:
         self.discriminator = None
 
         self.key = key
-        if values is not None:
-            self.values = values
+        self.values = values
 
     @property
     def key(self):

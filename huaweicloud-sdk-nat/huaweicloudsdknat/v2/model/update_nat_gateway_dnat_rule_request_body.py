@@ -41,8 +41,7 @@ class UpdateNatGatewayDnatRuleRequestBody:
         self._dnat_rule = None
         self.discriminator = None
 
-        if dnat_rule is not None:
-            self.dnat_rule = dnat_rule
+        self.dnat_rule = dnat_rule
 
     @property
     def dnat_rule(self):

@@ -28,7 +28,10 @@ class EipResource:
         'device_id': 'str',
         'device_name': 'str',
         'device_owner': 'str',
-        'associate_instance_type': 'str'
+        'associate_instance_type': 'str',
+        'fw_instance_name': 'str',
+        'fw_instance_id': 'str',
+        'fw_enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -40,10 +43,13 @@ class EipResource:
         'device_id': 'device_id',
         'device_name': 'device_name',
         'device_owner': 'device_owner',
-        'associate_instance_type': 'associate_instance_type'
+        'associate_instance_type': 'associate_instance_type',
+        'fw_instance_name': 'fw_instance_name',
+        'fw_instance_id': 'fw_instance_id',
+        'fw_enterprise_project_id': 'fw_enterprise_project_id'
     }
 
-    def __init__(self, id=None, public_ip=None, status=None, public_ipv6=None, enterprise_project_id=None, device_id=None, device_name=None, device_owner=None, associate_instance_type=None):
+    def __init__(self, id=None, public_ip=None, status=None, public_ipv6=None, enterprise_project_id=None, device_id=None, device_name=None, device_owner=None, associate_instance_type=None, fw_instance_name=None, fw_instance_id=None, fw_enterprise_project_id=None):
         """EipResource
 
         The model defined in huaweicloud sdk
@@ -66,6 +72,12 @@ class EipResource:
         :type device_owner: str
         :param associate_instance_type: 关联实例类型
         :type associate_instance_type: str
+        :param fw_instance_name: 防火墙名称
+        :type fw_instance_name: str
+        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+        :type fw_instance_id: str
+        :param fw_enterprise_project_id: Eip绑定的防火墙企业项目id
+        :type fw_enterprise_project_id: str
         """
         
         
@@ -79,6 +91,9 @@ class EipResource:
         self._device_name = None
         self._device_owner = None
         self._associate_instance_type = None
+        self._fw_instance_name = None
+        self._fw_instance_id = None
+        self._fw_enterprise_project_id = None
         self.discriminator = None
 
         if id is not None:
@@ -99,6 +114,12 @@ class EipResource:
             self.device_owner = device_owner
         if associate_instance_type is not None:
             self.associate_instance_type = associate_instance_type
+        if fw_instance_name is not None:
+            self.fw_instance_name = fw_instance_name
+        if fw_instance_id is not None:
+            self.fw_instance_id = fw_instance_id
+        if fw_enterprise_project_id is not None:
+            self.fw_enterprise_project_id = fw_enterprise_project_id
 
     @property
     def id(self):
@@ -297,6 +318,72 @@ class EipResource:
         :type associate_instance_type: str
         """
         self._associate_instance_type = associate_instance_type
+
+    @property
+    def fw_instance_name(self):
+        """Gets the fw_instance_name of this EipResource.
+
+        防火墙名称
+
+        :return: The fw_instance_name of this EipResource.
+        :rtype: str
+        """
+        return self._fw_instance_name
+
+    @fw_instance_name.setter
+    def fw_instance_name(self, fw_instance_name):
+        """Sets the fw_instance_name of this EipResource.
+
+        防火墙名称
+
+        :param fw_instance_name: The fw_instance_name of this EipResource.
+        :type fw_instance_name: str
+        """
+        self._fw_instance_name = fw_instance_name
+
+    @property
+    def fw_instance_id(self):
+        """Gets the fw_instance_id of this EipResource.
+
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+
+        :return: The fw_instance_id of this EipResource.
+        :rtype: str
+        """
+        return self._fw_instance_id
+
+    @fw_instance_id.setter
+    def fw_instance_id(self, fw_instance_id):
+        """Sets the fw_instance_id of this EipResource.
+
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+
+        :param fw_instance_id: The fw_instance_id of this EipResource.
+        :type fw_instance_id: str
+        """
+        self._fw_instance_id = fw_instance_id
+
+    @property
+    def fw_enterprise_project_id(self):
+        """Gets the fw_enterprise_project_id of this EipResource.
+
+        Eip绑定的防火墙企业项目id
+
+        :return: The fw_enterprise_project_id of this EipResource.
+        :rtype: str
+        """
+        return self._fw_enterprise_project_id
+
+    @fw_enterprise_project_id.setter
+    def fw_enterprise_project_id(self, fw_enterprise_project_id):
+        """Sets the fw_enterprise_project_id of this EipResource.
+
+        Eip绑定的防火墙企业项目id
+
+        :param fw_enterprise_project_id: The fw_enterprise_project_id of this EipResource.
+        :type fw_enterprise_project_id: str
+        """
+        self._fw_enterprise_project_id = fw_enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

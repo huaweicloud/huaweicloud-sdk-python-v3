@@ -1675,9 +1675,9 @@ class GaClient(Client):
             request_type=request.__class__.__name__)
 
     def create_tags(self, request):
-        """批量添加标签
+        """创建资源标签
 
-        批量添加标签。
+        创建资源标签。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1739,9 +1739,9 @@ class GaClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_tags(self, request):
-        """批量删除标签
+        """删除资源标签
 
-        批量删除标签。
+        删除资源标签。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1803,9 +1803,9 @@ class GaClient(Client):
             request_type=request.__class__.__name__)
 
     def show_resource_tags(self, request):
-        """查询资源已打标签
+        """查询特定资源标签
 
-        查询资源已打标签。
+        查询特定资源标签。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

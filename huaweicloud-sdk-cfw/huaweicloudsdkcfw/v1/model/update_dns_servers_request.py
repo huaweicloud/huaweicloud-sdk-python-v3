@@ -20,29 +20,87 @@ class UpdateDnsServersRequest:
     sensitive_list = []
 
     openapi_types = {
+        'fw_instance_id': 'str',
+        'enterprise_project_id': 'str',
         'body': 'UpdateDnsServersRequestBody'
     }
 
     attribute_map = {
+        'fw_instance_id': 'fw_instance_id',
+        'enterprise_project_id': 'enterprise_project_id',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, fw_instance_id=None, enterprise_project_id=None, body=None):
         """UpdateDnsServersRequest
 
         The model defined in huaweicloud sdk
 
+        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+        :type fw_instance_id: str
+        :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
+        :type enterprise_project_id: str
         :param body: Body of the UpdateDnsServersRequest
         :type body: :class:`huaweicloudsdkcfw.v1.UpdateDnsServersRequestBody`
         """
         
         
 
+        self._fw_instance_id = None
+        self._enterprise_project_id = None
         self._body = None
         self.discriminator = None
 
+        if fw_instance_id is not None:
+            self.fw_instance_id = fw_instance_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if body is not None:
             self.body = body
+
+    @property
+    def fw_instance_id(self):
+        """Gets the fw_instance_id of this UpdateDnsServersRequest.
+
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+
+        :return: The fw_instance_id of this UpdateDnsServersRequest.
+        :rtype: str
+        """
+        return self._fw_instance_id
+
+    @fw_instance_id.setter
+    def fw_instance_id(self, fw_instance_id):
+        """Sets the fw_instance_id of this UpdateDnsServersRequest.
+
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+
+        :param fw_instance_id: The fw_instance_id of this UpdateDnsServersRequest.
+        :type fw_instance_id: str
+        """
+        self._fw_instance_id = fw_instance_id
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this UpdateDnsServersRequest.
+
+        企业项目id，用户支持企业项目后，由企业项目生成的id。
+
+        :return: The enterprise_project_id of this UpdateDnsServersRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this UpdateDnsServersRequest.
+
+        企业项目id，用户支持企业项目后，由企业项目生成的id。
+
+        :param enterprise_project_id: The enterprise_project_id of this UpdateDnsServersRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def body(self):

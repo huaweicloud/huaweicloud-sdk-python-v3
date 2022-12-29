@@ -21,7 +21,7 @@ class BatchDeleteRecordSetsResponse(SdkResponse):
 
     openapi_types = {
         'recordsets': 'list[RecordsetData]',
-        'metadata': 'Metedata'
+        'metadata': 'Metadata'
     }
 
     attribute_map = {
@@ -34,10 +34,10 @@ class BatchDeleteRecordSetsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param recordsets: 待删除zone类型，当前仅支持 public 或 private
+        :param recordsets: 待删除zone类型，当前仅支持public或private。
         :type recordsets: list[:class:`huaweicloudsdkdns.v2.RecordsetData`]
         :param metadata: 
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         
         super(BatchDeleteRecordSetsResponse, self).__init__()
@@ -55,7 +55,7 @@ class BatchDeleteRecordSetsResponse(SdkResponse):
     def recordsets(self):
         """Gets the recordsets of this BatchDeleteRecordSetsResponse.
 
-        待删除zone类型，当前仅支持 public 或 private
+        待删除zone类型，当前仅支持public或private。
 
         :return: The recordsets of this BatchDeleteRecordSetsResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.RecordsetData`]
@@ -66,7 +66,7 @@ class BatchDeleteRecordSetsResponse(SdkResponse):
     def recordsets(self, recordsets):
         """Sets the recordsets of this BatchDeleteRecordSetsResponse.
 
-        待删除zone类型，当前仅支持 public 或 private
+        待删除zone类型，当前仅支持public或private。
 
         :param recordsets: The recordsets of this BatchDeleteRecordSetsResponse.
         :type recordsets: list[:class:`huaweicloudsdkdns.v2.RecordsetData`]
@@ -78,7 +78,7 @@ class BatchDeleteRecordSetsResponse(SdkResponse):
         """Gets the metadata of this BatchDeleteRecordSetsResponse.
 
         :return: The metadata of this BatchDeleteRecordSetsResponse.
-        :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
+        :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         return self._metadata
 
@@ -87,7 +87,7 @@ class BatchDeleteRecordSetsResponse(SdkResponse):
         """Sets the metadata of this BatchDeleteRecordSetsResponse.
 
         :param metadata: The metadata of this BatchDeleteRecordSetsResponse.
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         self._metadata = metadata
 

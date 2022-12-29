@@ -34,7 +34,7 @@ class SetRecordSetsStatusRequest:
 
         The model defined in huaweicloud sdk
 
-        :param recordset_id: 
+        :param recordset_id: 待设置Record Set的ID信息。
         :type recordset_id: str
         :param body: Body of the SetRecordSetsStatusRequest
         :type body: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusReq`
@@ -54,6 +54,8 @@ class SetRecordSetsStatusRequest:
     def recordset_id(self):
         """Gets the recordset_id of this SetRecordSetsStatusRequest.
 
+        待设置Record Set的ID信息。
+
         :return: The recordset_id of this SetRecordSetsStatusRequest.
         :rtype: str
         """
@@ -62,6 +64,8 @@ class SetRecordSetsStatusRequest:
     @recordset_id.setter
     def recordset_id(self, recordset_id):
         """Sets the recordset_id of this SetRecordSetsStatusRequest.
+
+        待设置Record Set的ID信息。
 
         :param recordset_id: The recordset_id of this SetRecordSetsStatusRequest.
         :type recordset_id: str

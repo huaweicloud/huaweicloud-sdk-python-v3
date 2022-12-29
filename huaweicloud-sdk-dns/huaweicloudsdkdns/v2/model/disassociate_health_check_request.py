@@ -34,7 +34,7 @@ class DisassociateHealthCheckRequest:
 
         The model defined in huaweicloud sdk
 
-        :param recordset_id: 
+        :param recordset_id: Record Set关联健康检查。
         :type recordset_id: str
         :param body: Body of the DisassociateHealthCheckRequest
         :type body: :class:`huaweicloudsdkdns.v2.AssociateHealthCheckReq`
@@ -54,6 +54,8 @@ class DisassociateHealthCheckRequest:
     def recordset_id(self):
         """Gets the recordset_id of this DisassociateHealthCheckRequest.
 
+        Record Set关联健康检查。
+
         :return: The recordset_id of this DisassociateHealthCheckRequest.
         :rtype: str
         """
@@ -62,6 +64,8 @@ class DisassociateHealthCheckRequest:
     @recordset_id.setter
     def recordset_id(self, recordset_id):
         """Sets the recordset_id of this DisassociateHealthCheckRequest.
+
+        Record Set关联健康检查。
 
         :param recordset_id: The recordset_id of this DisassociateHealthCheckRequest.
         :type recordset_id: str

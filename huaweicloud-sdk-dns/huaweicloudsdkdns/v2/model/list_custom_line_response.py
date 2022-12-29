@@ -21,7 +21,7 @@ class ListCustomLineResponse(SdkResponse):
 
     openapi_types = {
         'lines': 'list[Line]',
-        'metadata': 'Metedata'
+        'metadata': 'Metadata'
     }
 
     attribute_map = {
@@ -34,10 +34,10 @@ class ListCustomLineResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param lines: 
+        :param lines: 线路列表。
         :type lines: list[:class:`huaweicloudsdkdns.v2.Line`]
         :param metadata: 
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         
         super(ListCustomLineResponse, self).__init__()
@@ -55,6 +55,8 @@ class ListCustomLineResponse(SdkResponse):
     def lines(self):
         """Gets the lines of this ListCustomLineResponse.
 
+        线路列表。
+
         :return: The lines of this ListCustomLineResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.Line`]
         """
@@ -63,6 +65,8 @@ class ListCustomLineResponse(SdkResponse):
     @lines.setter
     def lines(self, lines):
         """Sets the lines of this ListCustomLineResponse.
+
+        线路列表。
 
         :param lines: The lines of this ListCustomLineResponse.
         :type lines: list[:class:`huaweicloudsdkdns.v2.Line`]
@@ -74,7 +78,7 @@ class ListCustomLineResponse(SdkResponse):
         """Gets the metadata of this ListCustomLineResponse.
 
         :return: The metadata of this ListCustomLineResponse.
-        :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
+        :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         return self._metadata
 
@@ -83,7 +87,7 @@ class ListCustomLineResponse(SdkResponse):
         """Sets the metadata of this ListCustomLineResponse.
 
         :param metadata: The metadata of this ListCustomLineResponse.
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         self._metadata = metadata
 

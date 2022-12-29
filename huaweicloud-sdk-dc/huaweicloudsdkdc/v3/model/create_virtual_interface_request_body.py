@@ -20,56 +20,28 @@ class CreateVirtualInterfaceRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'request_id': 'str',
         'virtual_interface': 'CreateVirtualInterface'
     }
 
     attribute_map = {
-        'request_id': 'request_id',
         'virtual_interface': 'virtual_interface'
     }
 
-    def __init__(self, request_id=None, virtual_interface=None):
+    def __init__(self, virtual_interface=None):
         """CreateVirtualInterfaceRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 操作请求ID
-        :type request_id: str
         :param virtual_interface: 
         :type virtual_interface: :class:`huaweicloudsdkdc.v3.CreateVirtualInterface`
         """
         
         
 
-        self._request_id = None
         self._virtual_interface = None
         self.discriminator = None
 
-        self.request_id = request_id
         self.virtual_interface = virtual_interface
-
-    @property
-    def request_id(self):
-        """Gets the request_id of this CreateVirtualInterfaceRequestBody.
-
-        操作请求ID
-
-        :return: The request_id of this CreateVirtualInterfaceRequestBody.
-        :rtype: str
-        """
-        return self._request_id
-
-    @request_id.setter
-    def request_id(self, request_id):
-        """Sets the request_id of this CreateVirtualInterfaceRequestBody.
-
-        操作请求ID
-
-        :param request_id: The request_id of this CreateVirtualInterfaceRequestBody.
-        :type request_id: str
-        """
-        self._request_id = request_id
 
     @property
     def virtual_interface(self):

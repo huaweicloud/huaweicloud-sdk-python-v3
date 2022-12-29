@@ -56,7 +56,7 @@ class ShowRecordSetByZoneRequest:
 
         The model defined in huaweicloud sdk
 
-        :param zone_id: 
+        :param zone_id: 所属zone的ID。
         :type zone_id: str
         :param marker: 分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
         :type marker: str
@@ -131,6 +131,8 @@ class ShowRecordSetByZoneRequest:
     def zone_id(self):
         """Gets the zone_id of this ShowRecordSetByZoneRequest.
 
+        所属zone的ID。
+
         :return: The zone_id of this ShowRecordSetByZoneRequest.
         :rtype: str
         """
@@ -139,6 +141,8 @@ class ShowRecordSetByZoneRequest:
     @zone_id.setter
     def zone_id(self, zone_id):
         """Sets the zone_id of this ShowRecordSetByZoneRequest.
+
+        所属zone的ID。
 
         :param zone_id: The zone_id of this ShowRecordSetByZoneRequest.
         :type zone_id: str

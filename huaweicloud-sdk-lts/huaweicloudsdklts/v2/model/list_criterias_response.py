@@ -20,51 +20,47 @@ class ListCriteriasResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str'
+        'search_criterias': 'list[GetQuerySearchCriteriasBody]'
     }
 
     attribute_map = {
-        'id': 'id'
+        'search_criterias': 'search_criterias'
     }
 
-    def __init__(self, id=None):
+    def __init__(self, search_criterias=None):
         """ListCriteriasResponse
 
         The model defined in huaweicloud sdk
 
-        :param id: 快速查询id
-        :type id: str
+        :param search_criterias: 
+        :type search_criterias: list[:class:`huaweicloudsdklts.v2.GetQuerySearchCriteriasBody`]
         """
         
         super(ListCriteriasResponse, self).__init__()
 
-        self._id = None
+        self._search_criterias = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
+        if search_criterias is not None:
+            self.search_criterias = search_criterias
 
     @property
-    def id(self):
-        """Gets the id of this ListCriteriasResponse.
+    def search_criterias(self):
+        """Gets the search_criterias of this ListCriteriasResponse.
 
-        快速查询id
-
-        :return: The id of this ListCriteriasResponse.
-        :rtype: str
+        :return: The search_criterias of this ListCriteriasResponse.
+        :rtype: list[:class:`huaweicloudsdklts.v2.GetQuerySearchCriteriasBody`]
         """
-        return self._id
+        return self._search_criterias
 
-    @id.setter
-    def id(self, id):
-        """Sets the id of this ListCriteriasResponse.
+    @search_criterias.setter
+    def search_criterias(self, search_criterias):
+        """Sets the search_criterias of this ListCriteriasResponse.
 
-        快速查询id
-
-        :param id: The id of this ListCriteriasResponse.
-        :type id: str
+        :param search_criterias: The search_criterias of this ListCriteriasResponse.
+        :type search_criterias: list[:class:`huaweicloudsdklts.v2.GetQuerySearchCriteriasBody`]
         """
-        self._id = id
+        self._search_criterias = search_criterias
 
     def to_dict(self):
         """Returns the model properties as a dict"""

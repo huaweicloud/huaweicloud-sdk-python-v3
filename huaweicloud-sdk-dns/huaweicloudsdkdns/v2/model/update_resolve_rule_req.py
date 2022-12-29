@@ -21,17 +21,15 @@ class UpdateResolveRuleReq:
 
     openapi_types = {
         'name': 'str',
-        'ipaddresses': 'IpInfo',
-        'routers': 'list[Router]'
+        'ipaddresses': 'IpInfo'
     }
 
     attribute_map = {
         'name': 'name',
-        'ipaddresses': 'ipaddresses',
-        'routers': 'routers'
+        'ipaddresses': 'ipaddresses'
     }
 
-    def __init__(self, name=None, ipaddresses=None, routers=None):
+    def __init__(self, name=None, ipaddresses=None):
         """UpdateResolveRuleReq
 
         The model defined in huaweicloud sdk
@@ -40,23 +38,18 @@ class UpdateResolveRuleReq:
         :type name: str
         :param ipaddresses: 
         :type ipaddresses: :class:`huaweicloudsdkdns.v2.IpInfo`
-        :param routers: 规则关联的目标ip地址。
-        :type routers: list[:class:`huaweicloudsdkdns.v2.Router`]
         """
         
         
 
         self._name = None
         self._ipaddresses = None
-        self._routers = None
         self.discriminator = None
 
         if name is not None:
             self.name = name
         if ipaddresses is not None:
             self.ipaddresses = ipaddresses
-        if routers is not None:
-            self.routers = routers
 
     @property
     def name(self):
@@ -97,28 +90,6 @@ class UpdateResolveRuleReq:
         :type ipaddresses: :class:`huaweicloudsdkdns.v2.IpInfo`
         """
         self._ipaddresses = ipaddresses
-
-    @property
-    def routers(self):
-        """Gets the routers of this UpdateResolveRuleReq.
-
-        规则关联的目标ip地址。
-
-        :return: The routers of this UpdateResolveRuleReq.
-        :rtype: list[:class:`huaweicloudsdkdns.v2.Router`]
-        """
-        return self._routers
-
-    @routers.setter
-    def routers(self, routers):
-        """Sets the routers of this UpdateResolveRuleReq.
-
-        规则关联的目标ip地址。
-
-        :param routers: The routers of this UpdateResolveRuleReq.
-        :type routers: list[:class:`huaweicloudsdkdns.v2.Router`]
-        """
-        self._routers = routers
 
     def to_dict(self):
         """Returns the model properties as a dict"""

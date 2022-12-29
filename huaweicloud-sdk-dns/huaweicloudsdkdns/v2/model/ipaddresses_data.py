@@ -22,6 +22,7 @@ class IpaddressesData:
     openapi_types = {
         'status': 'str',
         'id': 'str',
+        'ip': 'str',
         'create_time': 'str',
         'update_time': 'str',
         'subnet_id': 'str',
@@ -31,13 +32,14 @@ class IpaddressesData:
     attribute_map = {
         'status': 'status',
         'id': 'id',
+        'ip': 'ip',
         'create_time': 'create_time',
         'update_time': 'update_time',
         'subnet_id': 'subnet_id',
         'error_info': 'error_info'
     }
 
-    def __init__(self, status=None, id=None, create_time=None, update_time=None, subnet_id=None, error_info=None):
+    def __init__(self, status=None, id=None, ip=None, create_time=None, update_time=None, subnet_id=None, error_info=None):
         """IpaddressesData
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class IpaddressesData:
         :type status: str
         :param id: endpoint的ID，uuid形式的一个资源标识。
         :type id: str
+        :param ip: ip地址信息。
+        :type ip: str
         :param create_time: 创建时间。
         :type create_time: str
         :param update_time: 更新时间。
@@ -60,6 +64,7 @@ class IpaddressesData:
 
         self._status = None
         self._id = None
+        self._ip = None
         self._create_time = None
         self._update_time = None
         self._subnet_id = None
@@ -70,6 +75,8 @@ class IpaddressesData:
             self.status = status
         if id is not None:
             self.id = id
+        if ip is not None:
+            self.ip = ip
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -122,6 +129,28 @@ class IpaddressesData:
         :type id: str
         """
         self._id = id
+
+    @property
+    def ip(self):
+        """Gets the ip of this IpaddressesData.
+
+        ip地址信息。
+
+        :return: The ip of this IpaddressesData.
+        :rtype: str
+        """
+        return self._ip
+
+    @ip.setter
+    def ip(self, ip):
+        """Sets the ip of this IpaddressesData.
+
+        ip地址信息。
+
+        :param ip: The ip of this IpaddressesData.
+        :type ip: str
+        """
+        self._ip = ip
 
     @property
     def create_time(self):

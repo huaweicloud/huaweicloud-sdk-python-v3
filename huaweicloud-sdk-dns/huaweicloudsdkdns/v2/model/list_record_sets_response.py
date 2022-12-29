@@ -22,7 +22,7 @@ class ListRecordSetsResponse(SdkResponse):
     openapi_types = {
         'links': 'PageLink',
         'recordsets': 'list[ListRecordSetsWithTags]',
-        'metadata': 'Metedata'
+        'metadata': 'Metadata'
     }
 
     attribute_map = {
@@ -38,10 +38,10 @@ class ListRecordSetsResponse(SdkResponse):
 
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
-        :param recordsets: 
+        :param recordsets: recordset列表对象。
         :type recordsets: list[:class:`huaweicloudsdkdns.v2.ListRecordSetsWithTags`]
         :param metadata: 
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         
         super(ListRecordSetsResponse, self).__init__()
@@ -80,6 +80,8 @@ class ListRecordSetsResponse(SdkResponse):
     def recordsets(self):
         """Gets the recordsets of this ListRecordSetsResponse.
 
+        recordset列表对象。
+
         :return: The recordsets of this ListRecordSetsResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.ListRecordSetsWithTags`]
         """
@@ -88,6 +90,8 @@ class ListRecordSetsResponse(SdkResponse):
     @recordsets.setter
     def recordsets(self, recordsets):
         """Sets the recordsets of this ListRecordSetsResponse.
+
+        recordset列表对象。
 
         :param recordsets: The recordsets of this ListRecordSetsResponse.
         :type recordsets: list[:class:`huaweicloudsdkdns.v2.ListRecordSetsWithTags`]
@@ -99,7 +103,7 @@ class ListRecordSetsResponse(SdkResponse):
         """Gets the metadata of this ListRecordSetsResponse.
 
         :return: The metadata of this ListRecordSetsResponse.
-        :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
+        :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         return self._metadata
 
@@ -108,7 +112,7 @@ class ListRecordSetsResponse(SdkResponse):
         """Sets the metadata of this ListRecordSetsResponse.
 
         :param metadata: The metadata of this ListRecordSetsResponse.
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         self._metadata = metadata
 

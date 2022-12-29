@@ -40,7 +40,7 @@ class NameServersResp:
         :type type: str
         :param region: 待查询的region ID。  当查询公网的名称服务器时，此处不填。
         :type region: str
-        :param ns_records: 
+        :param ns_records: 名称服务器列表。
         :type ns_records: list[:class:`huaweicloudsdkdns.v2.NsRecords`]
         """
         
@@ -106,6 +106,8 @@ class NameServersResp:
     def ns_records(self):
         """Gets the ns_records of this NameServersResp.
 
+        名称服务器列表。
+
         :return: The ns_records of this NameServersResp.
         :rtype: list[:class:`huaweicloudsdkdns.v2.NsRecords`]
         """
@@ -114,6 +116,8 @@ class NameServersResp:
     @ns_records.setter
     def ns_records(self, ns_records):
         """Sets the ns_records of this NameServersResp.
+
+        名称服务器列表。
 
         :param ns_records: The ns_records of this NameServersResp.
         :type ns_records: list[:class:`huaweicloudsdkdns.v2.NsRecords`]

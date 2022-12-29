@@ -27,7 +27,7 @@ class ShowResourcesJobDetailResponse(SdkResponse):
         'status': 'str',
         'error_code': 'str',
         'fail_reason': 'str',
-        'entities': 'SubJobs'
+        'entities': 'SubJobsInfo'
     }
 
     attribute_map = {
@@ -61,7 +61,7 @@ class ShowResourcesJobDetailResponse(SdkResponse):
         :param fail_reason: 错误信息
         :type fail_reason: str
         :param entities: 
-        :type entities: :class:`huaweicloudsdkeip.v2.SubJobs`
+        :type entities: :class:`huaweicloudsdkeip.v2.SubJobsInfo`
         """
         
         super(ShowResourcesJobDetailResponse, self).__init__()
@@ -252,7 +252,7 @@ class ShowResourcesJobDetailResponse(SdkResponse):
         """Gets the entities of this ShowResourcesJobDetailResponse.
 
         :return: The entities of this ShowResourcesJobDetailResponse.
-        :rtype: :class:`huaweicloudsdkeip.v2.SubJobs`
+        :rtype: :class:`huaweicloudsdkeip.v2.SubJobsInfo`
         """
         return self._entities
 
@@ -261,7 +261,7 @@ class ShowResourcesJobDetailResponse(SdkResponse):
         """Sets the entities of this ShowResourcesJobDetailResponse.
 
         :param entities: The entities of this ShowResourcesJobDetailResponse.
-        :type entities: :class:`huaweicloudsdkeip.v2.SubJobs`
+        :type entities: :class:`huaweicloudsdkeip.v2.SubJobsInfo`
         """
         self._entities = entities
 

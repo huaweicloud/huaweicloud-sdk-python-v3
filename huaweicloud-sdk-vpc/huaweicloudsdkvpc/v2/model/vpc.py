@@ -26,7 +26,10 @@ class Vpc:
         'description': 'str',
         'routes': 'list[Route]',
         'status': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'tenant_id': 'str',
+        'created_at': 'datetime',
+        'updated_at': 'datetime'
     }
 
     attribute_map = {
@@ -36,10 +39,13 @@ class Vpc:
         'description': 'description',
         'routes': 'routes',
         'status': 'status',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'tenant_id': 'tenant_id',
+        'created_at': 'created_at',
+        'updated_at': 'updated_at'
     }
 
-    def __init__(self, id=None, name=None, cidr=None, description=None, routes=None, status=None, enterprise_project_id=None):
+    def __init__(self, id=None, name=None, cidr=None, description=None, routes=None, status=None, enterprise_project_id=None, tenant_id=None, created_at=None, updated_at=None):
         """Vpc
 
         The model defined in huaweicloud sdk
@@ -58,6 +64,12 @@ class Vpc:
         :type status: str
         :param enterprise_project_id: 功能说明：企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
         :type enterprise_project_id: str
+        :param tenant_id: 项目ID
+        :type tenant_id: str
+        :param created_at: 功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+        :type created_at: datetime
+        :param updated_at: 功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+        :type updated_at: datetime
         """
         
         
@@ -69,6 +81,9 @@ class Vpc:
         self._routes = None
         self._status = None
         self._enterprise_project_id = None
+        self._tenant_id = None
+        self._created_at = None
+        self._updated_at = None
         self.discriminator = None
 
         self.id = id
@@ -78,6 +93,9 @@ class Vpc:
         self.routes = routes
         self.status = status
         self.enterprise_project_id = enterprise_project_id
+        self.tenant_id = tenant_id
+        self.created_at = created_at
+        self.updated_at = updated_at
 
     @property
     def id(self):
@@ -232,6 +250,72 @@ class Vpc:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def tenant_id(self):
+        """Gets the tenant_id of this Vpc.
+
+        项目ID
+
+        :return: The tenant_id of this Vpc.
+        :rtype: str
+        """
+        return self._tenant_id
+
+    @tenant_id.setter
+    def tenant_id(self, tenant_id):
+        """Sets the tenant_id of this Vpc.
+
+        项目ID
+
+        :param tenant_id: The tenant_id of this Vpc.
+        :type tenant_id: str
+        """
+        self._tenant_id = tenant_id
+
+    @property
+    def created_at(self):
+        """Gets the created_at of this Vpc.
+
+        功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+
+        :return: The created_at of this Vpc.
+        :rtype: datetime
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        """Sets the created_at of this Vpc.
+
+        功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+
+        :param created_at: The created_at of this Vpc.
+        :type created_at: datetime
+        """
+        self._created_at = created_at
+
+    @property
+    def updated_at(self):
+        """Gets the updated_at of this Vpc.
+
+        功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+
+        :return: The updated_at of this Vpc.
+        :rtype: datetime
+        """
+        return self._updated_at
+
+    @updated_at.setter
+    def updated_at(self, updated_at):
+        """Sets the updated_at of this Vpc.
+
+        功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+
+        :param updated_at: The updated_at of this Vpc.
+        :type updated_at: datetime
+        """
+        self._updated_at = updated_at
 
     def to_dict(self):
         """Returns the model properties as a dict"""

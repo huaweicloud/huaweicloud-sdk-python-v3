@@ -27,7 +27,9 @@ class RouteTableResp:
         'subnets': 'list[SubnetList]',
         'tenant_id': 'str',
         'vpc_id': 'str',
-        'description': 'str'
+        'description': 'str',
+        'created_at': 'datetime',
+        'updated_at': 'datetime'
     }
 
     attribute_map = {
@@ -38,10 +40,12 @@ class RouteTableResp:
         'subnets': 'subnets',
         'tenant_id': 'tenant_id',
         'vpc_id': 'vpc_id',
-        'description': 'description'
+        'description': 'description',
+        'created_at': 'created_at',
+        'updated_at': 'updated_at'
     }
 
-    def __init__(self, id=None, name=None, default=None, routes=None, subnets=None, tenant_id=None, vpc_id=None, description=None):
+    def __init__(self, id=None, name=None, default=None, routes=None, subnets=None, tenant_id=None, vpc_id=None, description=None, created_at=None, updated_at=None):
         """RouteTableResp
 
         The model defined in huaweicloud sdk
@@ -62,6 +66,10 @@ class RouteTableResp:
         :type vpc_id: str
         :param description: 功能说明：路由表描述信息  取值范围：0-255个字符，不能包含“&lt;”和“&gt;”
         :type description: str
+        :param created_at: 功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+        :type created_at: datetime
+        :param updated_at: 功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+        :type updated_at: datetime
         """
         
         
@@ -74,6 +82,8 @@ class RouteTableResp:
         self._tenant_id = None
         self._vpc_id = None
         self._description = None
+        self._created_at = None
+        self._updated_at = None
         self.discriminator = None
 
         self.id = id
@@ -84,6 +94,8 @@ class RouteTableResp:
         self.tenant_id = tenant_id
         self.vpc_id = vpc_id
         self.description = description
+        self.created_at = created_at
+        self.updated_at = updated_at
 
     @property
     def id(self):
@@ -260,6 +272,50 @@ class RouteTableResp:
         :type description: str
         """
         self._description = description
+
+    @property
+    def created_at(self):
+        """Gets the created_at of this RouteTableResp.
+
+        功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+
+        :return: The created_at of this RouteTableResp.
+        :rtype: datetime
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        """Sets the created_at of this RouteTableResp.
+
+        功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+
+        :param created_at: The created_at of this RouteTableResp.
+        :type created_at: datetime
+        """
+        self._created_at = created_at
+
+    @property
+    def updated_at(self):
+        """Gets the updated_at of this RouteTableResp.
+
+        功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+
+        :return: The updated_at of this RouteTableResp.
+        :rtype: datetime
+        """
+        return self._updated_at
+
+    @updated_at.setter
+    def updated_at(self, updated_at):
+        """Sets the updated_at of this RouteTableResp.
+
+        功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+
+        :param updated_at: The updated_at of this RouteTableResp.
+        :type updated_at: datetime
+        """
+        self._updated_at = updated_at
 
     def to_dict(self):
         """Returns the model properties as a dict"""

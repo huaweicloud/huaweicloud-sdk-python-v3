@@ -20,28 +20,35 @@ class AttachOrDetachCertsReqBody:
     sensitive_list = []
 
     openapi_types = {
-        'certificate_ids': 'list[str]'
+        'certificate_ids': 'list[str]',
+        'verified_client_certificate_enabled': 'bool'
     }
 
     attribute_map = {
-        'certificate_ids': 'certificate_ids'
+        'certificate_ids': 'certificate_ids',
+        'verified_client_certificate_enabled': 'verified_client_certificate_enabled'
     }
 
-    def __init__(self, certificate_ids=None):
+    def __init__(self, certificate_ids=None, verified_client_certificate_enabled=None):
         """AttachOrDetachCertsReqBody
 
         The model defined in huaweicloud sdk
 
         :param certificate_ids: 证书的id集合
         :type certificate_ids: list[str]
+        :param verified_client_certificate_enabled: 是否开启客户端证书校验。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
+        :type verified_client_certificate_enabled: bool
         """
         
         
 
         self._certificate_ids = None
+        self._verified_client_certificate_enabled = None
         self.discriminator = None
 
         self.certificate_ids = certificate_ids
+        if verified_client_certificate_enabled is not None:
+            self.verified_client_certificate_enabled = verified_client_certificate_enabled
 
     @property
     def certificate_ids(self):
@@ -64,6 +71,28 @@ class AttachOrDetachCertsReqBody:
         :type certificate_ids: list[str]
         """
         self._certificate_ids = certificate_ids
+
+    @property
+    def verified_client_certificate_enabled(self):
+        """Gets the verified_client_certificate_enabled of this AttachOrDetachCertsReqBody.
+
+        是否开启客户端证书校验。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
+
+        :return: The verified_client_certificate_enabled of this AttachOrDetachCertsReqBody.
+        :rtype: bool
+        """
+        return self._verified_client_certificate_enabled
+
+    @verified_client_certificate_enabled.setter
+    def verified_client_certificate_enabled(self, verified_client_certificate_enabled):
+        """Sets the verified_client_certificate_enabled of this AttachOrDetachCertsReqBody.
+
+        是否开启客户端证书校验。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
+
+        :param verified_client_certificate_enabled: The verified_client_certificate_enabled of this AttachOrDetachCertsReqBody.
+        :type verified_client_certificate_enabled: bool
+        """
+        self._verified_client_certificate_enabled = verified_client_certificate_enabled
 
     def to_dict(self):
         """Returns the model properties as a dict"""

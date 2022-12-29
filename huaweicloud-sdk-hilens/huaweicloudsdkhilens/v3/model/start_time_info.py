@@ -42,9 +42,9 @@ class StartTimeInfo:
 
         :param start_time: 任务启动时间
         :type start_time: str
-        :param frequency: 
+        :param frequency: 任务运行频率（定时任务频率，每天运行还是单次运行）
         :type frequency: str
-        :param mode: 
+        :param mode: 任务运行模式（按时间段运行还是按频率运行）
         :type mode: str
         :param day_time_frame: 每天运行时间段
         :type day_time_frame: list[:class:`huaweicloudsdkhilens.v3.TimeFrame`]
@@ -97,6 +97,8 @@ class StartTimeInfo:
     def frequency(self):
         """Gets the frequency of this StartTimeInfo.
 
+        任务运行频率（定时任务频率，每天运行还是单次运行）
+
         :return: The frequency of this StartTimeInfo.
         :rtype: str
         """
@@ -105,6 +107,8 @@ class StartTimeInfo:
     @frequency.setter
     def frequency(self, frequency):
         """Sets the frequency of this StartTimeInfo.
+
+        任务运行频率（定时任务频率，每天运行还是单次运行）
 
         :param frequency: The frequency of this StartTimeInfo.
         :type frequency: str
@@ -115,6 +119,8 @@ class StartTimeInfo:
     def mode(self):
         """Gets the mode of this StartTimeInfo.
 
+        任务运行模式（按时间段运行还是按频率运行）
+
         :return: The mode of this StartTimeInfo.
         :rtype: str
         """
@@ -123,6 +129,8 @@ class StartTimeInfo:
     @mode.setter
     def mode(self, mode):
         """Sets the mode of this StartTimeInfo.
+
+        任务运行模式（按时间段运行还是按频率运行）
 
         :param mode: The mode of this StartTimeInfo.
         :type mode: str

@@ -46,10 +46,8 @@ class AssociatePublicipsOption:
         self._associate_instance_id = None
         self.discriminator = None
 
-        if associate_instance_type is not None:
-            self.associate_instance_type = associate_instance_type
-        if associate_instance_id is not None:
-            self.associate_instance_id = associate_instance_id
+        self.associate_instance_type = associate_instance_type
+        self.associate_instance_id = associate_instance_id
 
     @property
     def associate_instance_type(self):

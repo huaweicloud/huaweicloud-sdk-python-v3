@@ -34,7 +34,7 @@ class AssociateHealthCheckRequest:
 
         The model defined in huaweicloud sdk
 
-        :param recordset_id: 
+        :param recordset_id: 待查询的recordset ID。
         :type recordset_id: str
         :param body: Body of the AssociateHealthCheckRequest
         :type body: :class:`huaweicloudsdkdns.v2.AssociateHealthCheckReq`
@@ -54,6 +54,8 @@ class AssociateHealthCheckRequest:
     def recordset_id(self):
         """Gets the recordset_id of this AssociateHealthCheckRequest.
 
+        待查询的recordset ID。
+
         :return: The recordset_id of this AssociateHealthCheckRequest.
         :rtype: str
         """
@@ -62,6 +64,8 @@ class AssociateHealthCheckRequest:
     @recordset_id.setter
     def recordset_id(self, recordset_id):
         """Sets the recordset_id of this AssociateHealthCheckRequest.
+
+        待查询的recordset ID。
 
         :param recordset_id: The recordset_id of this AssociateHealthCheckRequest.
         :type recordset_id: str

@@ -4,11 +4,11 @@ import re
 import six
 
 
-
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreatePublicZoneFindRespRecord:
+class ShowDeploymentsResponse(SdkResponse):
 
     """
     Attributes:
@@ -20,80 +20,80 @@ class CreatePublicZoneFindRespRecord:
     sensitive_list = []
 
     openapi_types = {
-        'host': 'str',
-        'value': 'str'
+        'count': 'int',
+        'deployments': 'list[Deployment]'
     }
 
     attribute_map = {
-        'host': 'host',
-        'value': 'value'
+        'count': 'count',
+        'deployments': 'deployments'
     }
 
-    def __init__(self, host=None, value=None):
-        """CreatePublicZoneFindRespRecord
+    def __init__(self, count=None, deployments=None):
+        """ShowDeploymentsResponse
 
         The model defined in huaweicloud sdk
 
-        :param host: 找回记录host名称。
-        :type host: str
-        :param value: 找回记录解析值。
-        :type value: str
+        :param count: 部署的全部数量
+        :type count: int
+        :param deployments: 部署列表信息
+        :type deployments: list[:class:`huaweicloudsdkhilens.v3.Deployment`]
         """
         
-        
+        super(ShowDeploymentsResponse, self).__init__()
 
-        self._host = None
-        self._value = None
+        self._count = None
+        self._deployments = None
         self.discriminator = None
 
-        if host is not None:
-            self.host = host
-        if value is not None:
-            self.value = value
+        if count is not None:
+            self.count = count
+        if deployments is not None:
+            self.deployments = deployments
 
     @property
-    def host(self):
-        """Gets the host of this CreatePublicZoneFindRespRecord.
+    def count(self):
+        """Gets the count of this ShowDeploymentsResponse.
 
-        找回记录host名称。
+        部署的全部数量
 
-        :return: The host of this CreatePublicZoneFindRespRecord.
-        :rtype: str
+        :return: The count of this ShowDeploymentsResponse.
+        :rtype: int
         """
-        return self._host
+        return self._count
 
-    @host.setter
-    def host(self, host):
-        """Sets the host of this CreatePublicZoneFindRespRecord.
+    @count.setter
+    def count(self, count):
+        """Sets the count of this ShowDeploymentsResponse.
 
-        找回记录host名称。
+        部署的全部数量
 
-        :param host: The host of this CreatePublicZoneFindRespRecord.
-        :type host: str
+        :param count: The count of this ShowDeploymentsResponse.
+        :type count: int
         """
-        self._host = host
+        self._count = count
 
     @property
-    def value(self):
-        """Gets the value of this CreatePublicZoneFindRespRecord.
+    def deployments(self):
+        """Gets the deployments of this ShowDeploymentsResponse.
 
-        找回记录解析值。
+        部署列表信息
 
-        :return: The value of this CreatePublicZoneFindRespRecord.
-        :rtype: str
+        :return: The deployments of this ShowDeploymentsResponse.
+        :rtype: list[:class:`huaweicloudsdkhilens.v3.Deployment`]
         """
-        return self._value
+        return self._deployments
 
-    @value.setter
-    def value(self, value):
-        """Sets the value of this CreatePublicZoneFindRespRecord.
+    @deployments.setter
+    def deployments(self, deployments):
+        """Sets the deployments of this ShowDeploymentsResponse.
 
-        找回记录解析值。
+        部署列表信息
 
-        :param value: The value of this CreatePublicZoneFindRespRecord.
-        :type value: str
+        :param deployments: The deployments of this ShowDeploymentsResponse.
+        :type deployments: list[:class:`huaweicloudsdkhilens.v3.Deployment`]
         """
-        self._value = value
+        self._deployments = deployments
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -137,7 +137,7 @@ class CreatePublicZoneFindRespRecord:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreatePublicZoneFindRespRecord):
+        if not isinstance(other, ShowDeploymentsResponse):
             return False
 
         return self.__dict__ == other.__dict__

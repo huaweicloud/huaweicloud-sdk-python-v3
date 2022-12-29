@@ -20,58 +20,58 @@ class ShowResourceTagsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total': 'int',
+        'count': 'int',
         'tags': 'list[TagObject]'
     }
 
     attribute_map = {
-        'total': 'total',
+        'count': 'count',
         'tags': 'tags'
     }
 
-    def __init__(self, total=None, tags=None):
+    def __init__(self, count=None, tags=None):
         """ShowResourceTagsResponse
 
         The model defined in huaweicloud sdk
 
-        :param total: 满足条件的总数
-        :type total: int
+        :param count: 满足条件的总数
+        :type count: int
         :param tags: 资源标签对列表
         :type tags: list[:class:`huaweicloudsdkhilens.v3.TagObject`]
         """
         
         super(ShowResourceTagsResponse, self).__init__()
 
-        self._total = None
+        self._count = None
         self._tags = None
         self.discriminator = None
 
-        if total is not None:
-            self.total = total
+        if count is not None:
+            self.count = count
         if tags is not None:
             self.tags = tags
 
     @property
-    def total(self):
-        """Gets the total of this ShowResourceTagsResponse.
+    def count(self):
+        """Gets the count of this ShowResourceTagsResponse.
 
         满足条件的总数
 
-        :return: The total of this ShowResourceTagsResponse.
+        :return: The count of this ShowResourceTagsResponse.
         :rtype: int
         """
-        return self._total
+        return self._count
 
-    @total.setter
-    def total(self, total):
-        """Sets the total of this ShowResourceTagsResponse.
+    @count.setter
+    def count(self, count):
+        """Sets the count of this ShowResourceTagsResponse.
 
         满足条件的总数
 
-        :param total: The total of this ShowResourceTagsResponse.
-        :type total: int
+        :param count: The count of this ShowResourceTagsResponse.
+        :type count: int
         """
-        self._total = total
+        self._count = count
 
     @property
     def tags(self):

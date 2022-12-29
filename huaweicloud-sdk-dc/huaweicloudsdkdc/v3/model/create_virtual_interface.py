@@ -84,7 +84,7 @@ class CreateVirtualInterface:
         :type description: str
         :param direct_connect_id: 虚拟接口关联的物理专线ID
         :type direct_connect_id: str
-        :param type: 虚拟接口的类型,private/public
+        :param type: 虚拟接口的类型,private
         :type type: str
         :param service_type: 接入网关类型：VGW/GDGW/LGW
         :type service_type: str
@@ -92,15 +92,15 @@ class CreateVirtualInterface:
         :type vlan: int
         :param bandwidth: 虚拟接口接入带宽
         :type bandwidth: int
-        :param local_gateway_v4_ip: 云侧网关IPv4接口地址
+        :param local_gateway_v4_ip: 云侧网关IPv4接口地址,如果address_family是IPv4，是必选参数
         :type local_gateway_v4_ip: str
-        :param remote_gateway_v4_ip: 客户侧网关IPv4接口地址
+        :param remote_gateway_v4_ip: 客户侧网关IPv4接口地址,如果address_family是IPv4，是必选参数
         :type remote_gateway_v4_ip: str
         :param address_family: 接口的地址簇类型，ipv4，ipv6
         :type address_family: str
-        :param local_gateway_v6_ip: 云侧网关IPv6接口地址
+        :param local_gateway_v6_ip: 云侧网关IPv6接口地址,如果address_family是IPv6，是必选参数
         :type local_gateway_v6_ip: str
-        :param remote_gateway_v6_ip: 客户侧网关IPv6接口地址
+        :param remote_gateway_v6_ip: 客户侧网关IPv6接口地址,如果address_family是IPv6，是必选参数
         :type remote_gateway_v6_ip: str
         :param vgw_id: 虚拟风关连接的虚拟网关的ID
         :type vgw_id: str
@@ -269,7 +269,7 @@ class CreateVirtualInterface:
     def type(self):
         """Gets the type of this CreateVirtualInterface.
 
-        虚拟接口的类型,private/public
+        虚拟接口的类型,private
 
         :return: The type of this CreateVirtualInterface.
         :rtype: str
@@ -280,7 +280,7 @@ class CreateVirtualInterface:
     def type(self, type):
         """Sets the type of this CreateVirtualInterface.
 
-        虚拟接口的类型,private/public
+        虚拟接口的类型,private
 
         :param type: The type of this CreateVirtualInterface.
         :type type: str
@@ -357,7 +357,7 @@ class CreateVirtualInterface:
     def local_gateway_v4_ip(self):
         """Gets the local_gateway_v4_ip of this CreateVirtualInterface.
 
-        云侧网关IPv4接口地址
+        云侧网关IPv4接口地址,如果address_family是IPv4，是必选参数
 
         :return: The local_gateway_v4_ip of this CreateVirtualInterface.
         :rtype: str
@@ -368,7 +368,7 @@ class CreateVirtualInterface:
     def local_gateway_v4_ip(self, local_gateway_v4_ip):
         """Sets the local_gateway_v4_ip of this CreateVirtualInterface.
 
-        云侧网关IPv4接口地址
+        云侧网关IPv4接口地址,如果address_family是IPv4，是必选参数
 
         :param local_gateway_v4_ip: The local_gateway_v4_ip of this CreateVirtualInterface.
         :type local_gateway_v4_ip: str
@@ -379,7 +379,7 @@ class CreateVirtualInterface:
     def remote_gateway_v4_ip(self):
         """Gets the remote_gateway_v4_ip of this CreateVirtualInterface.
 
-        客户侧网关IPv4接口地址
+        客户侧网关IPv4接口地址,如果address_family是IPv4，是必选参数
 
         :return: The remote_gateway_v4_ip of this CreateVirtualInterface.
         :rtype: str
@@ -390,7 +390,7 @@ class CreateVirtualInterface:
     def remote_gateway_v4_ip(self, remote_gateway_v4_ip):
         """Sets the remote_gateway_v4_ip of this CreateVirtualInterface.
 
-        客户侧网关IPv4接口地址
+        客户侧网关IPv4接口地址,如果address_family是IPv4，是必选参数
 
         :param remote_gateway_v4_ip: The remote_gateway_v4_ip of this CreateVirtualInterface.
         :type remote_gateway_v4_ip: str
@@ -423,7 +423,7 @@ class CreateVirtualInterface:
     def local_gateway_v6_ip(self):
         """Gets the local_gateway_v6_ip of this CreateVirtualInterface.
 
-        云侧网关IPv6接口地址
+        云侧网关IPv6接口地址,如果address_family是IPv6，是必选参数
 
         :return: The local_gateway_v6_ip of this CreateVirtualInterface.
         :rtype: str
@@ -434,7 +434,7 @@ class CreateVirtualInterface:
     def local_gateway_v6_ip(self, local_gateway_v6_ip):
         """Sets the local_gateway_v6_ip of this CreateVirtualInterface.
 
-        云侧网关IPv6接口地址
+        云侧网关IPv6接口地址,如果address_family是IPv6，是必选参数
 
         :param local_gateway_v6_ip: The local_gateway_v6_ip of this CreateVirtualInterface.
         :type local_gateway_v6_ip: str
@@ -445,7 +445,7 @@ class CreateVirtualInterface:
     def remote_gateway_v6_ip(self):
         """Gets the remote_gateway_v6_ip of this CreateVirtualInterface.
 
-        客户侧网关IPv6接口地址
+        客户侧网关IPv6接口地址,如果address_family是IPv6，是必选参数
 
         :return: The remote_gateway_v6_ip of this CreateVirtualInterface.
         :rtype: str
@@ -456,7 +456,7 @@ class CreateVirtualInterface:
     def remote_gateway_v6_ip(self, remote_gateway_v6_ip):
         """Sets the remote_gateway_v6_ip of this CreateVirtualInterface.
 
-        客户侧网关IPv6接口地址
+        客户侧网关IPv6接口地址,如果address_family是IPv6，是必选参数
 
         :param remote_gateway_v6_ip: The remote_gateway_v6_ip of this CreateVirtualInterface.
         :type remote_gateway_v6_ip: str

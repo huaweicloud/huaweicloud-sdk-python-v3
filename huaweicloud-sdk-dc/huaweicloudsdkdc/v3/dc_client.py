@@ -84,7 +84,7 @@ class DcClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json; charset=utf-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -385,7 +385,7 @@ class DcClient(Client):
             request_type=request.__class__.__name__)
 
     def show_direct_connect(self, request):
-        """查询物理连接详细信息
+        """查询物理连接详情
 
         查询物理连接详细信息.
         
@@ -1032,9 +1032,9 @@ class DcClient(Client):
             request_type=request.__class__.__name__)
 
     def create_virtual_gateway(self, request):
-        """创建虑拟网关
+        """创建虚拟网关
 
-        创建虑拟网关
+        创建虚拟网关
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1291,9 +1291,9 @@ class DcClient(Client):
             request_type=request.__class__.__name__)
 
     def update_virtual_gateway(self, request):
-        """修改虚拟网关信息
+        """更新虚拟网关信息
 
-        修改虚拟网关的信息
+        更新虚拟网关的信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1621,9 +1621,9 @@ class DcClient(Client):
             request_type=request.__class__.__name__)
 
     def update_virtual_interface(self, request):
-        """修改虚拟接口virtual_interface
+        """更新虚拟接口
 
-        修改虚拟接口的详细信息
+        更新虚拟接口的详细信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 

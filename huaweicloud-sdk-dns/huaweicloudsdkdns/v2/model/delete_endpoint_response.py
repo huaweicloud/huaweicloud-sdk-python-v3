@@ -20,47 +20,47 @@ class DeleteEndpointResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'endpoints': 'list[EndpointResp]'
+        'endpoint': 'EndpointResp'
     }
 
     attribute_map = {
-        'endpoints': 'endpoints'
+        'endpoint': 'endpoint'
     }
 
-    def __init__(self, endpoints=None):
+    def __init__(self, endpoint=None):
         """DeleteEndpointResponse
 
         The model defined in huaweicloud sdk
 
-        :param endpoints: 
-        :type endpoints: list[:class:`huaweicloudsdkdns.v2.EndpointResp`]
+        :param endpoint: 
+        :type endpoint: :class:`huaweicloudsdkdns.v2.EndpointResp`
         """
         
         super(DeleteEndpointResponse, self).__init__()
 
-        self._endpoints = None
+        self._endpoint = None
         self.discriminator = None
 
-        if endpoints is not None:
-            self.endpoints = endpoints
+        if endpoint is not None:
+            self.endpoint = endpoint
 
     @property
-    def endpoints(self):
-        """Gets the endpoints of this DeleteEndpointResponse.
+    def endpoint(self):
+        """Gets the endpoint of this DeleteEndpointResponse.
 
-        :return: The endpoints of this DeleteEndpointResponse.
-        :rtype: list[:class:`huaweicloudsdkdns.v2.EndpointResp`]
+        :return: The endpoint of this DeleteEndpointResponse.
+        :rtype: :class:`huaweicloudsdkdns.v2.EndpointResp`
         """
-        return self._endpoints
+        return self._endpoint
 
-    @endpoints.setter
-    def endpoints(self, endpoints):
-        """Sets the endpoints of this DeleteEndpointResponse.
+    @endpoint.setter
+    def endpoint(self, endpoint):
+        """Sets the endpoint of this DeleteEndpointResponse.
 
-        :param endpoints: The endpoints of this DeleteEndpointResponse.
-        :type endpoints: list[:class:`huaweicloudsdkdns.v2.EndpointResp`]
+        :param endpoint: The endpoint of this DeleteEndpointResponse.
+        :type endpoint: :class:`huaweicloudsdkdns.v2.EndpointResp`
         """
-        self._endpoints = endpoints
+        self._endpoint = endpoint
 
     def to_dict(self):
         """Returns the model properties as a dict"""

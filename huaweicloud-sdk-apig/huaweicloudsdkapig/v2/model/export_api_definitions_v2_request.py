@@ -21,21 +21,25 @@ class ExportApiDefinitionsV2Request:
 
     openapi_types = {
         'instance_id': 'str',
+        'oas_version': 'str',
         'body': 'ExportOpenApiReq'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
+        'oas_version': 'oas_version',
         'body': 'body'
     }
 
-    def __init__(self, instance_id=None, body=None):
+    def __init__(self, instance_id=None, oas_version=None, body=None):
         """ExportApiDefinitionsV2Request
 
         The model defined in huaweicloud sdk
 
         :param instance_id: 实例ID，在API网关控制台的“实例信息”中获取。
         :type instance_id: str
+        :param oas_version: OpenAPI版本
+        :type oas_version: str
         :param body: Body of the ExportApiDefinitionsV2Request
         :type body: :class:`huaweicloudsdkapig.v2.ExportOpenApiReq`
         """
@@ -43,10 +47,13 @@ class ExportApiDefinitionsV2Request:
         
 
         self._instance_id = None
+        self._oas_version = None
         self._body = None
         self.discriminator = None
 
         self.instance_id = instance_id
+        if oas_version is not None:
+            self.oas_version = oas_version
         if body is not None:
             self.body = body
 
@@ -71,6 +78,28 @@ class ExportApiDefinitionsV2Request:
         :type instance_id: str
         """
         self._instance_id = instance_id
+
+    @property
+    def oas_version(self):
+        """Gets the oas_version of this ExportApiDefinitionsV2Request.
+
+        OpenAPI版本
+
+        :return: The oas_version of this ExportApiDefinitionsV2Request.
+        :rtype: str
+        """
+        return self._oas_version
+
+    @oas_version.setter
+    def oas_version(self, oas_version):
+        """Sets the oas_version of this ExportApiDefinitionsV2Request.
+
+        OpenAPI版本
+
+        :param oas_version: The oas_version of this ExportApiDefinitionsV2Request.
+        :type oas_version: str
+        """
+        self._oas_version = oas_version
 
     @property
     def body(self):

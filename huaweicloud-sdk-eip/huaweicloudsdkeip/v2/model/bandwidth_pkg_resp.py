@@ -38,7 +38,7 @@ class BandwidthPkgResp:
         'processed_time': 'processedTime',
         'bandwidth_id': 'bandwidthId',
         'pkg_size': 'pkgSize',
-        'tenant_id': 'tenant_id',
+        'tenant_id': 'tenantId',
         'billing_info': 'billingInfo',
         'start_time': 'startTime',
         'end_time': 'endTime',
@@ -91,8 +91,7 @@ class BandwidthPkgResp:
         self.processed_time = processed_time
         self.bandwidth_id = bandwidth_id
         self.pkg_size = pkg_size
-        if tenant_id is not None:
-            self.tenant_id = tenant_id
+        self.tenant_id = tenant_id
         self.billing_info = billing_info
         self.start_time = start_time
         self.end_time = end_time

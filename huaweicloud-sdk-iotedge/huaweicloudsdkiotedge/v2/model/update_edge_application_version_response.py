@@ -21,6 +21,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     openapi_types = {
         'edge_app_id': 'str',
+        'name': 'str',
         'version': 'str',
         'sdk_version': 'str',
         'description': 'str',
@@ -36,6 +37,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     attribute_map = {
         'edge_app_id': 'edge_app_id',
+        'name': 'name',
         'version': 'version',
         'sdk_version': 'sdk_version',
         'description': 'description',
@@ -49,13 +51,15 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
         'off_shelf_time': 'off_shelf_time'
     }
 
-    def __init__(self, edge_app_id=None, version=None, sdk_version=None, description=None, deploy_type=None, deploy_multi_instance=None, create_time=None, update_time=None, state=None, arch=None, publish_time=None, off_shelf_time=None):
+    def __init__(self, edge_app_id=None, name=None, version=None, sdk_version=None, description=None, deploy_type=None, deploy_multi_instance=None, create_time=None, update_time=None, state=None, arch=None, publish_time=None, off_shelf_time=None):
         """UpdateEdgeApplicationVersionResponse
 
         The model defined in huaweicloud sdk
 
         :param edge_app_id: 应用ID
         :type edge_app_id: str
+        :param name: 应用名称
+        :type name: str
         :param version: 应用名称
         :type version: str
         :param sdk_version: 应用集成的边缘升得快版本
@@ -83,6 +87,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
         super(UpdateEdgeApplicationVersionResponse, self).__init__()
 
         self._edge_app_id = None
+        self._name = None
         self._version = None
         self._sdk_version = None
         self._description = None
@@ -98,6 +103,8 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
         if edge_app_id is not None:
             self.edge_app_id = edge_app_id
+        if name is not None:
+            self.name = name
         if version is not None:
             self.version = version
         if sdk_version is not None:
@@ -142,6 +149,28 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
         :type edge_app_id: str
         """
         self._edge_app_id = edge_app_id
+
+    @property
+    def name(self):
+        """Gets the name of this UpdateEdgeApplicationVersionResponse.
+
+        应用名称
+
+        :return: The name of this UpdateEdgeApplicationVersionResponse.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this UpdateEdgeApplicationVersionResponse.
+
+        应用名称
+
+        :param name: The name of this UpdateEdgeApplicationVersionResponse.
+        :type name: str
+        """
+        self._name = name
 
     @property
     def version(self):

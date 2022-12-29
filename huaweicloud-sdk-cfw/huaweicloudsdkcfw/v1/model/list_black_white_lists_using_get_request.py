@@ -26,7 +26,9 @@ class ListBlackWhiteListsUsingGetRequest:
         'address': 'str',
         'port': 'str',
         'limit': 'int',
-        'offset': 'int'
+        'offset': 'int',
+        'enterprise_project_id': 'str',
+        'fw_instance_id': 'str'
     }
 
     attribute_map = {
@@ -36,10 +38,12 @@ class ListBlackWhiteListsUsingGetRequest:
         'address': 'address',
         'port': 'port',
         'limit': 'limit',
-        'offset': 'offset'
+        'offset': 'offset',
+        'enterprise_project_id': 'enterprise_project_id',
+        'fw_instance_id': 'fw_instance_id'
     }
 
-    def __init__(self, object_id=None, list_type=None, address_type=None, address=None, port=None, limit=None, offset=None):
+    def __init__(self, object_id=None, list_type=None, address_type=None, address=None, port=None, limit=None, offset=None, enterprise_project_id=None, fw_instance_id=None):
         """ListBlackWhiteListsUsingGetRequest
 
         The model defined in huaweicloud sdk
@@ -58,6 +62,10 @@ class ListBlackWhiteListsUsingGetRequest:
         :type limit: int
         :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
+        :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
+        :type enterprise_project_id: str
+        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+        :type fw_instance_id: str
         """
         
         
@@ -69,6 +77,8 @@ class ListBlackWhiteListsUsingGetRequest:
         self._port = None
         self._limit = None
         self._offset = None
+        self._enterprise_project_id = None
+        self._fw_instance_id = None
         self.discriminator = None
 
         self.object_id = object_id
@@ -81,6 +91,10 @@ class ListBlackWhiteListsUsingGetRequest:
             self.port = port
         self.limit = limit
         self.offset = offset
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if fw_instance_id is not None:
+            self.fw_instance_id = fw_instance_id
 
     @property
     def object_id(self):
@@ -235,6 +249,50 @@ class ListBlackWhiteListsUsingGetRequest:
         :type offset: int
         """
         self._offset = offset
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListBlackWhiteListsUsingGetRequest.
+
+        企业项目id，用户支持企业项目后，由企业项目生成的id。
+
+        :return: The enterprise_project_id of this ListBlackWhiteListsUsingGetRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListBlackWhiteListsUsingGetRequest.
+
+        企业项目id，用户支持企业项目后，由企业项目生成的id。
+
+        :param enterprise_project_id: The enterprise_project_id of this ListBlackWhiteListsUsingGetRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def fw_instance_id(self):
+        """Gets the fw_instance_id of this ListBlackWhiteListsUsingGetRequest.
+
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+
+        :return: The fw_instance_id of this ListBlackWhiteListsUsingGetRequest.
+        :rtype: str
+        """
+        return self._fw_instance_id
+
+    @fw_instance_id.setter
+    def fw_instance_id(self, fw_instance_id):
+        """Sets the fw_instance_id of this ListBlackWhiteListsUsingGetRequest.
+
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+
+        :param fw_instance_id: The fw_instance_id of this ListBlackWhiteListsUsingGetRequest.
+        :type fw_instance_id: str
+        """
+        self._fw_instance_id = fw_instance_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

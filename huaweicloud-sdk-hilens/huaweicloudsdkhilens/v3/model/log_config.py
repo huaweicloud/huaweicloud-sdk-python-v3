@@ -25,8 +25,7 @@ class LogConfig:
         'rotate_num': 'int',
         'rotate_period': 'str',
         'size': 'int',
-        'type': 'str',
-        'log_group_id': 'str'
+        'type': 'str'
     }
 
     attribute_map = {
@@ -35,11 +34,10 @@ class LogConfig:
         'rotate_num': 'rotate_num',
         'rotate_period': 'rotate_period',
         'size': 'size',
-        'type': 'type',
-        'log_group_id': 'log_group_id'
+        'type': 'type'
     }
 
-    def __init__(self, component=None, level=None, rotate_num=None, rotate_period=None, size=None, type=None, log_group_id=None):
+    def __init__(self, component=None, level=None, rotate_num=None, rotate_period=None, size=None, type=None):
         """LogConfig
 
         The model defined in huaweicloud sdk
@@ -56,8 +54,6 @@ class LogConfig:
         :type size: int
         :param type: - LTS 将日志发送到云日志服务（Log Tank Service，简称LTS） - local 本地日志
         :type type: str
-        :param log_group_id: 
-        :type log_group_id: str
         """
         
         
@@ -68,11 +64,9 @@ class LogConfig:
         self._rotate_period = None
         self._size = None
         self._type = None
-        self._log_group_id = None
         self.discriminator = None
 
-        if component is not None:
-            self.component = component
+        self.component = component
         if level is not None:
             self.level = level
         if rotate_num is not None:
@@ -81,10 +75,7 @@ class LogConfig:
             self.rotate_period = rotate_period
         if size is not None:
             self.size = size
-        if type is not None:
-            self.type = type
-        if log_group_id is not None:
-            self.log_group_id = log_group_id
+        self.type = type
 
     @property
     def component(self):
@@ -217,24 +208,6 @@ class LogConfig:
         :type type: str
         """
         self._type = type
-
-    @property
-    def log_group_id(self):
-        """Gets the log_group_id of this LogConfig.
-
-        :return: The log_group_id of this LogConfig.
-        :rtype: str
-        """
-        return self._log_group_id
-
-    @log_group_id.setter
-    def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this LogConfig.
-
-        :param log_group_id: The log_group_id of this LogConfig.
-        :type log_group_id: str
-        """
-        self._log_group_id = log_group_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

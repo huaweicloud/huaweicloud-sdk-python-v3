@@ -22,7 +22,7 @@ class ListRecordSetsWithLineResponse(SdkResponse):
     openapi_types = {
         'links': 'PageLink',
         'recordsets': 'list[QueryRecordSetWithLineAndTagsResp]',
-        'metadata': 'Metedata'
+        'metadata': 'Metadata'
     }
 
     attribute_map = {
@@ -38,10 +38,10 @@ class ListRecordSetsWithLineResponse(SdkResponse):
 
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
-        :param recordsets: 
+        :param recordsets: recordset列表信息。
         :type recordsets: list[:class:`huaweicloudsdkdns.v2.QueryRecordSetWithLineAndTagsResp`]
         :param metadata: 
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         
         super(ListRecordSetsWithLineResponse, self).__init__()
@@ -80,6 +80,8 @@ class ListRecordSetsWithLineResponse(SdkResponse):
     def recordsets(self):
         """Gets the recordsets of this ListRecordSetsWithLineResponse.
 
+        recordset列表信息。
+
         :return: The recordsets of this ListRecordSetsWithLineResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.QueryRecordSetWithLineAndTagsResp`]
         """
@@ -88,6 +90,8 @@ class ListRecordSetsWithLineResponse(SdkResponse):
     @recordsets.setter
     def recordsets(self, recordsets):
         """Sets the recordsets of this ListRecordSetsWithLineResponse.
+
+        recordset列表信息。
 
         :param recordsets: The recordsets of this ListRecordSetsWithLineResponse.
         :type recordsets: list[:class:`huaweicloudsdkdns.v2.QueryRecordSetWithLineAndTagsResp`]
@@ -99,7 +103,7 @@ class ListRecordSetsWithLineResponse(SdkResponse):
         """Gets the metadata of this ListRecordSetsWithLineResponse.
 
         :return: The metadata of this ListRecordSetsWithLineResponse.
-        :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
+        :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         return self._metadata
 
@@ -108,7 +112,7 @@ class ListRecordSetsWithLineResponse(SdkResponse):
         """Sets the metadata of this ListRecordSetsWithLineResponse.
 
         :param metadata: The metadata of this ListRecordSetsWithLineResponse.
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         self._metadata = metadata
 

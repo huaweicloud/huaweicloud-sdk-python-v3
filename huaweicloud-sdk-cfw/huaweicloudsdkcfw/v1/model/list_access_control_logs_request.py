@@ -34,7 +34,8 @@ class ListAccessControlLogsRequest:
         'next_date': 'int',
         'offset': 'int',
         'limit': 'int',
-        'log_type': 'str'
+        'log_type': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -52,10 +53,11 @@ class ListAccessControlLogsRequest:
         'next_date': 'next_date',
         'offset': 'offset',
         'limit': 'limit',
-        'log_type': 'log_type'
+        'log_type': 'log_type',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, fw_instance_id=None, rule_id=None, start_time=None, end_time=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, app=None, log_id=None, next_date=None, offset=None, limit=None, log_type=None):
+    def __init__(self, fw_instance_id=None, rule_id=None, start_time=None, end_time=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, app=None, log_id=None, next_date=None, offset=None, limit=None, log_type=None, enterprise_project_id=None):
         """ListAccessControlLogsRequest
 
         The model defined in huaweicloud sdk
@@ -90,6 +92,8 @@ class ListAccessControlLogsRequest:
         :type limit: int
         :param log_type: 日志类型
         :type log_type: str
+        :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
+        :type enterprise_project_id: str
         """
         
         
@@ -109,6 +113,7 @@ class ListAccessControlLogsRequest:
         self._offset = None
         self._limit = None
         self._log_type = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.fw_instance_id = fw_instance_id
@@ -137,6 +142,8 @@ class ListAccessControlLogsRequest:
         self.limit = limit
         if log_type is not None:
             self.log_type = log_type
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def fw_instance_id(self):
@@ -467,6 +474,28 @@ class ListAccessControlLogsRequest:
         :type log_type: str
         """
         self._log_type = log_type
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListAccessControlLogsRequest.
+
+        企业项目id，用户支持企业项目后，由企业项目生成的id。
+
+        :return: The enterprise_project_id of this ListAccessControlLogsRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListAccessControlLogsRequest.
+
+        企业项目id，用户支持企业项目后，由企业项目生成的id。
+
+        :param enterprise_project_id: The enterprise_project_id of this ListAccessControlLogsRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

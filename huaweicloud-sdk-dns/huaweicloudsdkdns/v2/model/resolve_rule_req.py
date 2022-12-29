@@ -23,21 +23,17 @@ class ResolveRuleReq:
         'name': 'str',
         'domain_name': 'str',
         'endpoint_id': 'str',
-        'region': 'str',
-        'ipaddresses': 'list[IpInfo]',
-        'routers': 'list[Router]'
+        'ipaddresses': 'list[IpInfo]'
     }
 
     attribute_map = {
         'name': 'name',
         'domain_name': 'domain_name',
         'endpoint_id': 'endpoint_id',
-        'region': 'region',
-        'ipaddresses': 'ipaddresses',
-        'routers': 'routers'
+        'ipaddresses': 'ipaddresses'
     }
 
-    def __init__(self, name=None, domain_name=None, endpoint_id=None, region=None, ipaddresses=None, routers=None):
+    def __init__(self, name=None, domain_name=None, endpoint_id=None, ipaddresses=None):
         """ResolveRuleReq
 
         The model defined in huaweicloud sdk
@@ -48,12 +44,8 @@ class ResolveRuleReq:
         :type domain_name: str
         :param endpoint_id: 当前规则所属的endpoint_id。
         :type endpoint_id: str
-        :param region: 当前规则所在的region。
-        :type region: str
         :param ipaddresses: 规则关联的目标ip地址。
         :type ipaddresses: list[:class:`huaweicloudsdkdns.v2.IpInfo`]
-        :param routers: 规则关联的目标ip地址。
-        :type routers: list[:class:`huaweicloudsdkdns.v2.Router`]
         """
         
         
@@ -61,17 +53,13 @@ class ResolveRuleReq:
         self._name = None
         self._domain_name = None
         self._endpoint_id = None
-        self._region = None
         self._ipaddresses = None
-        self._routers = None
         self.discriminator = None
 
         self.name = name
         self.domain_name = domain_name
         self.endpoint_id = endpoint_id
-        self.region = region
         self.ipaddresses = ipaddresses
-        self.routers = routers
 
     @property
     def name(self):
@@ -140,28 +128,6 @@ class ResolveRuleReq:
         self._endpoint_id = endpoint_id
 
     @property
-    def region(self):
-        """Gets the region of this ResolveRuleReq.
-
-        当前规则所在的region。
-
-        :return: The region of this ResolveRuleReq.
-        :rtype: str
-        """
-        return self._region
-
-    @region.setter
-    def region(self, region):
-        """Sets the region of this ResolveRuleReq.
-
-        当前规则所在的region。
-
-        :param region: The region of this ResolveRuleReq.
-        :type region: str
-        """
-        self._region = region
-
-    @property
     def ipaddresses(self):
         """Gets the ipaddresses of this ResolveRuleReq.
 
@@ -182,28 +148,6 @@ class ResolveRuleReq:
         :type ipaddresses: list[:class:`huaweicloudsdkdns.v2.IpInfo`]
         """
         self._ipaddresses = ipaddresses
-
-    @property
-    def routers(self):
-        """Gets the routers of this ResolveRuleReq.
-
-        规则关联的目标ip地址。
-
-        :return: The routers of this ResolveRuleReq.
-        :rtype: list[:class:`huaweicloudsdkdns.v2.Router`]
-        """
-        return self._routers
-
-    @routers.setter
-    def routers(self, routers):
-        """Sets the routers of this ResolveRuleReq.
-
-        规则关联的目标ip地址。
-
-        :param routers: The routers of this ResolveRuleReq.
-        :type routers: list[:class:`huaweicloudsdkdns.v2.Router`]
-        """
-        self._routers = routers
 
     def to_dict(self):
         """Returns the model properties as a dict"""

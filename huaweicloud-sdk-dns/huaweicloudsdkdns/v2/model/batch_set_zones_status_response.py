@@ -21,7 +21,7 @@ class BatchSetZonesStatusResponse(SdkResponse):
 
     openapi_types = {
         'zones': 'list[ZoneData]',
-        'metadata': 'Metedata'
+        'metadata': 'Metadata'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class BatchSetZonesStatusResponse(SdkResponse):
         :param zones: 待删除zone类型，当前仅支持 public 或 private
         :type zones: list[:class:`huaweicloudsdkdns.v2.ZoneData`]
         :param metadata: 
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         
         super(BatchSetZonesStatusResponse, self).__init__()
@@ -78,7 +78,7 @@ class BatchSetZonesStatusResponse(SdkResponse):
         """Gets the metadata of this BatchSetZonesStatusResponse.
 
         :return: The metadata of this BatchSetZonesStatusResponse.
-        :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
+        :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         return self._metadata
 
@@ -87,7 +87,7 @@ class BatchSetZonesStatusResponse(SdkResponse):
         """Sets the metadata of this BatchSetZonesStatusResponse.
 
         :param metadata: The metadata of this BatchSetZonesStatusResponse.
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         self._metadata = metadata
 

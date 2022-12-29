@@ -46,13 +46,13 @@ class CreateRecordSetReq:
 
         :param name: 域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
         :type name: str
-        :param description: 
+        :param description: 可选配置，对域名的描述。  长度不超过255个字符。  默认值为空。
         :type description: str
         :param type: Record Set的类型。  取值范围：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。
         :type type: str
-        :param status: 
+        :param status: 资源状态。
         :type status: str
-        :param ttl: 
+        :param ttl: 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。
         :type ttl: int
         :param records: 解析记录的值。不同类型解析记录对应的值的规则不同。
         :type records: list[str]
@@ -109,6 +109,8 @@ class CreateRecordSetReq:
     def description(self):
         """Gets the description of this CreateRecordSetReq.
 
+        可选配置，对域名的描述。  长度不超过255个字符。  默认值为空。
+
         :return: The description of this CreateRecordSetReq.
         :rtype: str
         """
@@ -117,6 +119,8 @@ class CreateRecordSetReq:
     @description.setter
     def description(self, description):
         """Sets the description of this CreateRecordSetReq.
+
+        可选配置，对域名的描述。  长度不超过255个字符。  默认值为空。
 
         :param description: The description of this CreateRecordSetReq.
         :type description: str
@@ -149,6 +153,8 @@ class CreateRecordSetReq:
     def status(self):
         """Gets the status of this CreateRecordSetReq.
 
+        资源状态。
+
         :return: The status of this CreateRecordSetReq.
         :rtype: str
         """
@@ -157,6 +163,8 @@ class CreateRecordSetReq:
     @status.setter
     def status(self, status):
         """Sets the status of this CreateRecordSetReq.
+
+        资源状态。
 
         :param status: The status of this CreateRecordSetReq.
         :type status: str
@@ -167,6 +175,8 @@ class CreateRecordSetReq:
     def ttl(self):
         """Gets the ttl of this CreateRecordSetReq.
 
+        解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。
+
         :return: The ttl of this CreateRecordSetReq.
         :rtype: int
         """
@@ -175,6 +185,8 @@ class CreateRecordSetReq:
     @ttl.setter
     def ttl(self, ttl):
         """Sets the ttl of this CreateRecordSetReq.
+
+        解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。
 
         :param ttl: The ttl of this CreateRecordSetReq.
         :type ttl: int

@@ -20,29 +20,36 @@ class CreateVirtualGatewayResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'virtual_gateway': 'VirtualGateway'
+        'virtual_gateway': 'VirtualGateway',
+        'request_id': 'str'
     }
 
     attribute_map = {
-        'virtual_gateway': 'virtual_gateway'
+        'virtual_gateway': 'virtual_gateway',
+        'request_id': 'request_id'
     }
 
-    def __init__(self, virtual_gateway=None):
+    def __init__(self, virtual_gateway=None, request_id=None):
         """CreateVirtualGatewayResponse
 
         The model defined in huaweicloud sdk
 
         :param virtual_gateway: 
         :type virtual_gateway: :class:`huaweicloudsdkdc.v3.VirtualGateway`
+        :param request_id: 操作请求ID
+        :type request_id: str
         """
         
         super(CreateVirtualGatewayResponse, self).__init__()
 
         self._virtual_gateway = None
+        self._request_id = None
         self.discriminator = None
 
         if virtual_gateway is not None:
             self.virtual_gateway = virtual_gateway
+        if request_id is not None:
+            self.request_id = request_id
 
     @property
     def virtual_gateway(self):
@@ -61,6 +68,28 @@ class CreateVirtualGatewayResponse(SdkResponse):
         :type virtual_gateway: :class:`huaweicloudsdkdc.v3.VirtualGateway`
         """
         self._virtual_gateway = virtual_gateway
+
+    @property
+    def request_id(self):
+        """Gets the request_id of this CreateVirtualGatewayResponse.
+
+        操作请求ID
+
+        :return: The request_id of this CreateVirtualGatewayResponse.
+        :rtype: str
+        """
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this CreateVirtualGatewayResponse.
+
+        操作请求ID
+
+        :param request_id: The request_id of this CreateVirtualGatewayResponse.
+        :type request_id: str
+        """
+        self._request_id = request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

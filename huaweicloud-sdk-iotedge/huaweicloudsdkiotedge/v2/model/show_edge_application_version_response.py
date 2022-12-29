@@ -40,7 +40,9 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
         'inputs': 'list[str]',
         'services': 'list[str]',
         'publish_time': 'str',
-        'off_shelf_time': 'str'
+        'off_shelf_time': 'str',
+        'supplier': 'str',
+        'tpl_id': 'str'
     }
 
     attribute_map = {
@@ -64,10 +66,12 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
         'inputs': 'inputs',
         'services': 'services',
         'publish_time': 'publish_time',
-        'off_shelf_time': 'off_shelf_time'
+        'off_shelf_time': 'off_shelf_time',
+        'supplier': 'supplier',
+        'tpl_id': 'tpl_id'
     }
 
-    def __init__(self, edge_app_id=None, name=None, deploy_type=None, deploy_multi_instance=None, version=None, sdk_version=None, description=None, create_time=None, update_time=None, state=None, liveness_probe=None, readiness_probe=None, arch=None, command=None, args=None, container_settings=None, outputs=None, inputs=None, services=None, publish_time=None, off_shelf_time=None):
+    def __init__(self, edge_app_id=None, name=None, deploy_type=None, deploy_multi_instance=None, version=None, sdk_version=None, description=None, create_time=None, update_time=None, state=None, liveness_probe=None, readiness_probe=None, arch=None, command=None, args=None, container_settings=None, outputs=None, inputs=None, services=None, publish_time=None, off_shelf_time=None, supplier=None, tpl_id=None):
         """ShowEdgeApplicationVersionResponse
 
         The model defined in huaweicloud sdk
@@ -114,6 +118,10 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
         :type publish_time: str
         :param off_shelf_time: 下线时间
         :type off_shelf_time: str
+        :param supplier: 驱动厂商
+        :type supplier: str
+        :param tpl_id: 模板id
+        :type tpl_id: str
         """
         
         super(ShowEdgeApplicationVersionResponse, self).__init__()
@@ -139,6 +147,8 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
         self._services = None
         self._publish_time = None
         self._off_shelf_time = None
+        self._supplier = None
+        self._tpl_id = None
         self.discriminator = None
 
         if edge_app_id is not None:
@@ -183,6 +193,10 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
             self.publish_time = publish_time
         if off_shelf_time is not None:
             self.off_shelf_time = off_shelf_time
+        if supplier is not None:
+            self.supplier = supplier
+        if tpl_id is not None:
+            self.tpl_id = tpl_id
 
     @property
     def edge_app_id(self):
@@ -633,6 +647,50 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
         :type off_shelf_time: str
         """
         self._off_shelf_time = off_shelf_time
+
+    @property
+    def supplier(self):
+        """Gets the supplier of this ShowEdgeApplicationVersionResponse.
+
+        驱动厂商
+
+        :return: The supplier of this ShowEdgeApplicationVersionResponse.
+        :rtype: str
+        """
+        return self._supplier
+
+    @supplier.setter
+    def supplier(self, supplier):
+        """Sets the supplier of this ShowEdgeApplicationVersionResponse.
+
+        驱动厂商
+
+        :param supplier: The supplier of this ShowEdgeApplicationVersionResponse.
+        :type supplier: str
+        """
+        self._supplier = supplier
+
+    @property
+    def tpl_id(self):
+        """Gets the tpl_id of this ShowEdgeApplicationVersionResponse.
+
+        模板id
+
+        :return: The tpl_id of this ShowEdgeApplicationVersionResponse.
+        :rtype: str
+        """
+        return self._tpl_id
+
+    @tpl_id.setter
+    def tpl_id(self, tpl_id):
+        """Sets the tpl_id of this ShowEdgeApplicationVersionResponse.
+
+        模板id
+
+        :param tpl_id: The tpl_id of this ShowEdgeApplicationVersionResponse.
+        :type tpl_id: str
+        """
+        self._tpl_id = tpl_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

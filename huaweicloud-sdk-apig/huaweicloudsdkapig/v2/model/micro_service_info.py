@@ -21,6 +21,7 @@ class MicroServiceInfo:
 
     openapi_types = {
         'id': 'str',
+        'instance_id': 'str',
         'service_type': 'str',
         'cse_info': 'MicroServiceInfoCSE',
         'cce_info': 'MicroServiceInfoCCE',
@@ -30,6 +31,7 @@ class MicroServiceInfo:
 
     attribute_map = {
         'id': 'id',
+        'instance_id': 'instance_id',
         'service_type': 'service_type',
         'cse_info': 'cse_info',
         'cce_info': 'cce_info',
@@ -37,13 +39,15 @@ class MicroServiceInfo:
         'create_time': 'create_time'
     }
 
-    def __init__(self, id=None, service_type=None, cse_info=None, cce_info=None, update_time=None, create_time=None):
+    def __init__(self, id=None, instance_id=None, service_type=None, cse_info=None, cce_info=None, update_time=None, create_time=None):
         """MicroServiceInfo
 
         The model defined in huaweicloud sdk
 
         :param id: 微服务编号
         :type id: str
+        :param instance_id: 实例编号
+        :type instance_id: str
         :param service_type: 微服务类型： - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎
         :type service_type: str
         :param cse_info: 
@@ -59,6 +63,7 @@ class MicroServiceInfo:
         
 
         self._id = None
+        self._instance_id = None
         self._service_type = None
         self._cse_info = None
         self._cce_info = None
@@ -68,6 +73,8 @@ class MicroServiceInfo:
 
         if id is not None:
             self.id = id
+        if instance_id is not None:
+            self.instance_id = instance_id
         if service_type is not None:
             self.service_type = service_type
         if cse_info is not None:
@@ -100,6 +107,28 @@ class MicroServiceInfo:
         :type id: str
         """
         self._id = id
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this MicroServiceInfo.
+
+        实例编号
+
+        :return: The instance_id of this MicroServiceInfo.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this MicroServiceInfo.
+
+        实例编号
+
+        :param instance_id: The instance_id of this MicroServiceInfo.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
 
     @property
     def service_type(self):

@@ -20,80 +20,51 @@ class CreateOrderFormResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'list[SkillInfo]',
-        'total': 'int'
+        'order_id': 'str'
     }
 
     attribute_map = {
-        'data': 'data',
-        'total': 'total'
+        'order_id': 'order_id'
     }
 
-    def __init__(self, data=None, total=None):
+    def __init__(self, order_id=None):
         """CreateOrderFormResponse
 
         The model defined in huaweicloud sdk
 
-        :param data: 技能列表
-        :type data: list[:class:`huaweicloudsdkhilens.v3.SkillInfo`]
-        :param total: 总数量
-        :type total: int
+        :param order_id: 订单ID
+        :type order_id: str
         """
         
         super(CreateOrderFormResponse, self).__init__()
 
-        self._data = None
-        self._total = None
+        self._order_id = None
         self.discriminator = None
 
-        if data is not None:
-            self.data = data
-        if total is not None:
-            self.total = total
+        if order_id is not None:
+            self.order_id = order_id
 
     @property
-    def data(self):
-        """Gets the data of this CreateOrderFormResponse.
+    def order_id(self):
+        """Gets the order_id of this CreateOrderFormResponse.
 
-        技能列表
+        订单ID
 
-        :return: The data of this CreateOrderFormResponse.
-        :rtype: list[:class:`huaweicloudsdkhilens.v3.SkillInfo`]
+        :return: The order_id of this CreateOrderFormResponse.
+        :rtype: str
         """
-        return self._data
+        return self._order_id
 
-    @data.setter
-    def data(self, data):
-        """Sets the data of this CreateOrderFormResponse.
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this CreateOrderFormResponse.
 
-        技能列表
+        订单ID
 
-        :param data: The data of this CreateOrderFormResponse.
-        :type data: list[:class:`huaweicloudsdkhilens.v3.SkillInfo`]
+        :param order_id: The order_id of this CreateOrderFormResponse.
+        :type order_id: str
         """
-        self._data = data
-
-    @property
-    def total(self):
-        """Gets the total of this CreateOrderFormResponse.
-
-        总数量
-
-        :return: The total of this CreateOrderFormResponse.
-        :rtype: int
-        """
-        return self._total
-
-    @total.setter
-    def total(self, total):
-        """Sets the total of this CreateOrderFormResponse.
-
-        总数量
-
-        :param total: The total of this CreateOrderFormResponse.
-        :type total: int
-        """
-        self._total = total
+        self._order_id = order_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

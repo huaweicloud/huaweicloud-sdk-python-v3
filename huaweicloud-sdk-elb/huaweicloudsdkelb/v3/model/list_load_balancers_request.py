@@ -134,11 +134,11 @@ class ListLoadBalancersRequest:
         :type publicips: list[str]
         :param availability_zone_list: 负载均衡器所在可用区列表。  支持多值查询，查询条件格式： *availability_zone_list&#x3D;xxx&amp;availability_zone_list&#x3D;xxx*。
         :type availability_zone_list: list[str]
-        :param l4_flavor_id: 四层Flavor ID。  支持多值查询，查询条件格式：*l4_flavor_id&#x3D;xxx&amp;l4_flavor_id&#x3D;xxx*。
+        :param l4_flavor_id: 四层Flavor ID。  支持多值查询，查询条件格式：*l4_flavor_id&#x3D;xxx&amp;l4_flavor_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:fcs)
         :type l4_flavor_id: list[str]
         :param l4_scale_flavor_id: 四层弹性Flavor ID。  支持多值查询，查询条件格式：*l4_scale_flavor_id&#x3D;xxx&amp;l4_scale_flavor_id&#x3D;xxx*。  不支持该字段，请勿使用。
         :type l4_scale_flavor_id: list[str]
-        :param l7_flavor_id: 七层Flavor ID。  支持多值查询，查询条件格式：*l7_flavor_id&#x3D;xxx&amp;l7_flavor_id&#x3D;xxx*。
+        :param l7_flavor_id: 七层Flavor ID。  支持多值查询，查询条件格式：*l7_flavor_id&#x3D;xxx&amp;l7_flavor_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:fcs)
         :type l7_flavor_id: list[str]
         :param l7_scale_flavor_id: 七层弹性Flavor ID。  支持多值查询，查询条件格式：*l7_scale_flavor_id&#x3D;xxx&amp;l7_scale_flavor_id&#x3D;xxx*。  不支持该字段，请勿使用。
         :type l7_scale_flavor_id: list[str]
@@ -152,11 +152,11 @@ class ListLoadBalancersRequest:
         :type enterprise_project_id: list[str]
         :param ip_version: IP版本信息。  取值：4代表IPv4，6代表IPv6。  支持多值查询，查询条件格式：*ip_version&#x3D;xxx&amp;ip_version&#x3D;xxx*。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
         :type ip_version: list[int]
-        :param deletion_protection_enable: 是否开启删除保护，false不开启，true开启。[不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
+        :param deletion_protection_enable: 是否开启删除保护，false不开启，true开启。[不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
         :type deletion_protection_enable: bool
         :param elb_virsubnet_type: 下联面子网类型。  取值： - ipv4：ipv4。 - dualstack：双栈。  支持多值查询，查询条件格式： *elb_virsubnet_type&#x3D;ipv4&amp;elb_virsubnet_type&#x3D;dualstack*。
         :type elb_virsubnet_type: list[str]
-        :param autoscaling: 是否开启弹性扩缩容。示例如下： \&quot;autoscaling\&quot;: {             \&quot;enable\&quot;: \&quot;true\&quot;         }  支持多值查询，查询条件格式：  *autoscaling&#x3D;enable&#x3D;true&amp;autoscaling&#x3D;enable&#x3D;false*。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
+        :param autoscaling: 是否开启弹性扩缩容。示例如下： \&quot;autoscaling\&quot;: {             \&quot;enable\&quot;: \&quot;true\&quot;         }  支持多值查询，查询条件格式：  *autoscaling&#x3D;enable&#x3D;true&amp;autoscaling&#x3D;enable&#x3D;false*。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,fcs)
         :type autoscaling: list[str]
         """
         
@@ -705,7 +705,7 @@ class ListLoadBalancersRequest:
     def l4_flavor_id(self):
         """Gets the l4_flavor_id of this ListLoadBalancersRequest.
 
-        四层Flavor ID。  支持多值查询，查询条件格式：*l4_flavor_id=xxx&l4_flavor_id=xxx*。
+        四层Flavor ID。  支持多值查询，查询条件格式：*l4_flavor_id=xxx&l4_flavor_id=xxx*。  [不支持该字段，请勿使用。](tag:fcs)
 
         :return: The l4_flavor_id of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -716,7 +716,7 @@ class ListLoadBalancersRequest:
     def l4_flavor_id(self, l4_flavor_id):
         """Sets the l4_flavor_id of this ListLoadBalancersRequest.
 
-        四层Flavor ID。  支持多值查询，查询条件格式：*l4_flavor_id=xxx&l4_flavor_id=xxx*。
+        四层Flavor ID。  支持多值查询，查询条件格式：*l4_flavor_id=xxx&l4_flavor_id=xxx*。  [不支持该字段，请勿使用。](tag:fcs)
 
         :param l4_flavor_id: The l4_flavor_id of this ListLoadBalancersRequest.
         :type l4_flavor_id: list[str]
@@ -749,7 +749,7 @@ class ListLoadBalancersRequest:
     def l7_flavor_id(self):
         """Gets the l7_flavor_id of this ListLoadBalancersRequest.
 
-        七层Flavor ID。  支持多值查询，查询条件格式：*l7_flavor_id=xxx&l7_flavor_id=xxx*。
+        七层Flavor ID。  支持多值查询，查询条件格式：*l7_flavor_id=xxx&l7_flavor_id=xxx*。  [不支持该字段，请勿使用。](tag:fcs)
 
         :return: The l7_flavor_id of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -760,7 +760,7 @@ class ListLoadBalancersRequest:
     def l7_flavor_id(self, l7_flavor_id):
         """Sets the l7_flavor_id of this ListLoadBalancersRequest.
 
-        七层Flavor ID。  支持多值查询，查询条件格式：*l7_flavor_id=xxx&l7_flavor_id=xxx*。
+        七层Flavor ID。  支持多值查询，查询条件格式：*l7_flavor_id=xxx&l7_flavor_id=xxx*。  [不支持该字段，请勿使用。](tag:fcs)
 
         :param l7_flavor_id: The l7_flavor_id of this ListLoadBalancersRequest.
         :type l7_flavor_id: list[str]
@@ -903,7 +903,7 @@ class ListLoadBalancersRequest:
     def deletion_protection_enable(self):
         """Gets the deletion_protection_enable of this ListLoadBalancersRequest.
 
-        是否开启删除保护，false不开启，true开启。[不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
+        是否开启删除保护，false不开启，true开启。[不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :return: The deletion_protection_enable of this ListLoadBalancersRequest.
         :rtype: bool
@@ -914,7 +914,7 @@ class ListLoadBalancersRequest:
     def deletion_protection_enable(self, deletion_protection_enable):
         """Sets the deletion_protection_enable of this ListLoadBalancersRequest.
 
-        是否开启删除保护，false不开启，true开启。[不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
+        是否开启删除保护，false不开启，true开启。[不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :param deletion_protection_enable: The deletion_protection_enable of this ListLoadBalancersRequest.
         :type deletion_protection_enable: bool
@@ -947,7 +947,7 @@ class ListLoadBalancersRequest:
     def autoscaling(self):
         """Gets the autoscaling of this ListLoadBalancersRequest.
 
-        是否开启弹性扩缩容。示例如下： \"autoscaling\": {             \"enable\": \"true\"         }  支持多值查询，查询条件格式：  *autoscaling=enable=true&autoscaling=enable=false*。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
+        是否开启弹性扩缩容。示例如下： \"autoscaling\": {             \"enable\": \"true\"         }  支持多值查询，查询条件格式：  *autoscaling=enable=true&autoscaling=enable=false*。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,fcs)
 
         :return: The autoscaling of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -958,7 +958,7 @@ class ListLoadBalancersRequest:
     def autoscaling(self, autoscaling):
         """Sets the autoscaling of this ListLoadBalancersRequest.
 
-        是否开启弹性扩缩容。示例如下： \"autoscaling\": {             \"enable\": \"true\"         }  支持多值查询，查询条件格式：  *autoscaling=enable=true&autoscaling=enable=false*。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
+        是否开启弹性扩缩容。示例如下： \"autoscaling\": {             \"enable\": \"true\"         }  支持多值查询，查询条件格式：  *autoscaling=enable=true&autoscaling=enable=false*。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,fcs)
 
         :param autoscaling: The autoscaling of this ListLoadBalancersRequest.
         :type autoscaling: list[str]

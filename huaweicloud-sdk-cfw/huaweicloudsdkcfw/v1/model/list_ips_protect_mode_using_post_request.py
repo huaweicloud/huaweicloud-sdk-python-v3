@@ -20,28 +20,42 @@ class ListIpsProtectModeUsingPostRequest:
     sensitive_list = []
 
     openapi_types = {
-        'object_id': 'str'
+        'object_id': 'str',
+        'enterprise_project_id': 'str',
+        'fw_instance_id': 'str'
     }
 
     attribute_map = {
-        'object_id': 'object_id'
+        'object_id': 'object_id',
+        'enterprise_project_id': 'enterprise_project_id',
+        'fw_instance_id': 'fw_instance_id'
     }
 
-    def __init__(self, object_id=None):
+    def __init__(self, object_id=None, enterprise_project_id=None, fw_instance_id=None):
         """ListIpsProtectModeUsingPostRequest
 
         The model defined in huaweicloud sdk
 
         :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
         :type object_id: str
+        :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
+        :type enterprise_project_id: str
+        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+        :type fw_instance_id: str
         """
         
         
 
         self._object_id = None
+        self._enterprise_project_id = None
+        self._fw_instance_id = None
         self.discriminator = None
 
         self.object_id = object_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if fw_instance_id is not None:
+            self.fw_instance_id = fw_instance_id
 
     @property
     def object_id(self):
@@ -64,6 +78,50 @@ class ListIpsProtectModeUsingPostRequest:
         :type object_id: str
         """
         self._object_id = object_id
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListIpsProtectModeUsingPostRequest.
+
+        企业项目id，用户支持企业项目后，由企业项目生成的id。
+
+        :return: The enterprise_project_id of this ListIpsProtectModeUsingPostRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListIpsProtectModeUsingPostRequest.
+
+        企业项目id，用户支持企业项目后，由企业项目生成的id。
+
+        :param enterprise_project_id: The enterprise_project_id of this ListIpsProtectModeUsingPostRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def fw_instance_id(self):
+        """Gets the fw_instance_id of this ListIpsProtectModeUsingPostRequest.
+
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+
+        :return: The fw_instance_id of this ListIpsProtectModeUsingPostRequest.
+        :rtype: str
+        """
+        return self._fw_instance_id
+
+    @fw_instance_id.setter
+    def fw_instance_id(self, fw_instance_id):
+        """Sets the fw_instance_id of this ListIpsProtectModeUsingPostRequest.
+
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+
+        :param fw_instance_id: The fw_instance_id of this ListIpsProtectModeUsingPostRequest.
+        :type fw_instance_id: str
+        """
+        self._fw_instance_id = fw_instance_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -42,6 +42,71 @@ class HiLensAsyncClient(Client):
 
         return ClientBuilder(clazz)
 
+    def add_deployment_nodes_async(self, request):
+        """批量部署
+
+        通过指定设备id列表或者设备标签将应用部署下发到多个设备上。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddDeploymentNodes
+        :type request: :class:`huaweicloudsdkhilens.v3.AddDeploymentNodesRequest`
+        :rtype: :class:`huaweicloudsdkhilens.v3.AddDeploymentNodesResponse`
+        """
+        return self.add_deployment_nodes_with_http_info(request)
+
+    def add_deployment_nodes_with_http_info(self, request):
+        all_params = ['deployment_id', 'deployment_add_nodes_request', 'provider']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'deployment_id' in local_var_params:
+            path_params['deployment_id'] = local_var_params['deployment_id']
+
+        query_params = []
+        if 'provider' in local_var_params:
+            query_params.append(('provider', local_var_params['provider']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/ai-mgr/deployments/{deployment_id}/nodes',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddDeploymentNodesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def batch_create_node_tags_async(self, request):
         """批量添加节点标签
 
@@ -161,6 +226,71 @@ class HiLensAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateConfigMapResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_deployment_async(self, request):
+        """创建应用部署
+
+        创建应用部署。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDeployment
+        :type request: :class:`huaweicloudsdkhilens.v3.CreateDeploymentRequest`
+        :rtype: :class:`huaweicloudsdkhilens.v3.CreateDeploymentResponse`
+        """
+        return self.create_deployment_with_http_info(request)
+
+    def create_deployment_with_http_info(self, request):
+        all_params = ['deployment_create_request', 'provider', 'x_expired_time']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'provider' in local_var_params:
+            query_params.append(('provider', local_var_params['provider']))
+
+        header_params = {}
+        if 'x_expired_time' in local_var_params:
+            header_params['X-Expired-Time'] = local_var_params['x_expired_time']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/ai-mgr/deployments',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateDeploymentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -733,6 +863,71 @@ class HiLensAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_pod_async(self, request):
+        """删除应用实例
+
+        删除指定实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeletePod
+        :type request: :class:`huaweicloudsdkhilens.v3.DeletePodRequest`
+        :rtype: :class:`huaweicloudsdkhilens.v3.DeletePodResponse`
+        """
+        return self.delete_pod_with_http_info(request)
+
+    def delete_pod_with_http_info(self, request):
+        all_params = ['deployment_id', 'pod_id', 'force_delete']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'deployment_id' in local_var_params:
+            path_params['deployment_id'] = local_var_params['deployment_id']
+        if 'pod_id' in local_var_params:
+            path_params['pod_id'] = local_var_params['pod_id']
+
+        query_params = []
+        if 'force_delete' in local_var_params:
+            query_params.append(('force_delete', local_var_params['force_delete']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/ai-mgr/deployments/{deployment_id}/{pod_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeletePodResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_resource_tag_async(self, request):
         """删除资源标签
 
@@ -1117,6 +1312,146 @@ class HiLensAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_firmwares_async(self, request):
+        """查询固件列表
+
+        查看指定固件历史版本信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListFirmwares
+        :type request: :class:`huaweicloudsdkhilens.v3.ListFirmwaresRequest`
+        :rtype: :class:`huaweicloudsdkhilens.v3.ListFirmwaresResponse`
+        """
+        return self.list_firmwares_with_http_info(request)
+
+    def list_firmwares_with_http_info(self, request):
+        all_params = ['device_type', 'arch', 'os_name', 'os_version', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'device_type' in local_var_params:
+            query_params.append(('device_type', local_var_params['device_type']))
+        if 'arch' in local_var_params:
+            query_params.append(('arch', local_var_params['arch']))
+        if 'os_name' in local_var_params:
+            query_params.append(('os_name', local_var_params['os_name']))
+        if 'os_version' in local_var_params:
+            query_params.append(('os_version', local_var_params['os_version']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/ai-mgr/firmwares',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListFirmwaresResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_platform_manager_async(self, request):
+        """获取运行服务费订单列表
+
+        获取平台管理费列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPlatformManager
+        :type request: :class:`huaweicloudsdkhilens.v3.ListPlatformManagerRequest`
+        :rtype: :class:`huaweicloudsdkhilens.v3.ListPlatformManagerResponse`
+        """
+        return self.list_platform_manager_with_http_info(request)
+
+    def list_platform_manager_with_http_info(self, request):
+        all_params = ['id', 'device_type', 'type', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'device_type' in local_var_params:
+            query_params.append(('device_type', local_var_params['device_type']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/platform-manager/orders',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListPlatformManagerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_resource_tags_async(self, request):
         """查询某资源类型的标签
 
@@ -1495,6 +1830,69 @@ class HiLensAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_deployment_async(self, request):
+        """查询应用部署详情
+
+        获取部署的详情信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDeployment
+        :type request: :class:`huaweicloudsdkhilens.v3.ShowDeploymentRequest`
+        :rtype: :class:`huaweicloudsdkhilens.v3.ShowDeploymentResponse`
+        """
+        return self.show_deployment_with_http_info(request)
+
+    def show_deployment_with_http_info(self, request):
+        all_params = ['deployment_id', 'provider']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'deployment_id' in local_var_params:
+            path_params['deployment_id'] = local_var_params['deployment_id']
+
+        query_params = []
+        if 'provider' in local_var_params:
+            query_params.append(('provider', local_var_params['provider']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/ai-mgr/deployments/{deployment_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowDeploymentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_deployment_pods_async(self, request):
         """查询应用实例列表
 
@@ -1559,6 +1957,79 @@ class HiLensAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowDeploymentPodsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_deployments_async(self, request):
+        """查询应用部署列表
+
+        获取部署列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDeployments
+        :type request: :class:`huaweicloudsdkhilens.v3.ShowDeploymentsRequest`
+        :rtype: :class:`huaweicloudsdkhilens.v3.ShowDeploymentsResponse`
+        """
+        return self.show_deployments_with_http_info(request)
+
+    def show_deployments_with_http_info(self, request):
+        all_params = ['cluster_id', 'node_id', 'provider', 'name', 'sort', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'cluster_id' in local_var_params:
+            query_params.append(('cluster_id', local_var_params['cluster_id']))
+        if 'node_id' in local_var_params:
+            query_params.append(('node_id', local_var_params['node_id']))
+        if 'provider' in local_var_params:
+            query_params.append(('provider', local_var_params['provider']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/ai-mgr/deployments',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowDeploymentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2358,6 +2829,134 @@ class HiLensAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def start_and_stop_deployment_async(self, request):
+        """暂停、继续部署负载
+
+        启动/暂停应用部署。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StartAndStopDeployment
+        :type request: :class:`huaweicloudsdkhilens.v3.StartAndStopDeploymentRequest`
+        :rtype: :class:`huaweicloudsdkhilens.v3.StartAndStopDeploymentResponse`
+        """
+        return self.start_and_stop_deployment_with_http_info(request)
+
+    def start_and_stop_deployment_with_http_info(self, request):
+        all_params = ['deployment_id', 'action']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'deployment_id' in local_var_params:
+            path_params['deployment_id'] = local_var_params['deployment_id']
+        if 'action' in local_var_params:
+            path_params['action'] = local_var_params['action']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/ai-mgr/deployments/{deployment_id}/action/{action}',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='StartAndStopDeploymentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def start_and_stop_deployment_pod_async(self, request):
+        """启动/停止部署下的指定实例
+
+        启动/停止部署下的指定实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StartAndStopDeploymentPod
+        :type request: :class:`huaweicloudsdkhilens.v3.StartAndStopDeploymentPodRequest`
+        :rtype: :class:`huaweicloudsdkhilens.v3.StartAndStopDeploymentPodResponse`
+        """
+        return self.start_and_stop_deployment_pod_with_http_info(request)
+
+    def start_and_stop_deployment_pod_with_http_info(self, request):
+        all_params = ['deployment_id', 'pod_id', 'action']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'deployment_id' in local_var_params:
+            path_params['deployment_id'] = local_var_params['deployment_id']
+        if 'pod_id' in local_var_params:
+            path_params['pod_id'] = local_var_params['pod_id']
+        if 'action' in local_var_params:
+            path_params['action'] = local_var_params['action']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/ai-mgr/deployments/{deployment_id}/{pod_id}/action/{action}',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='StartAndStopDeploymentPodResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def switch_node_connection_async(self, request):
         """启停设备
 
@@ -2544,6 +3143,73 @@ class HiLensAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateConfigMapResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_deployment_async(self, request):
+        """更新应用部署
+
+        更新应用部署相关信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDeployment
+        :type request: :class:`huaweicloudsdkhilens.v3.UpdateDeploymentRequest`
+        :rtype: :class:`huaweicloudsdkhilens.v3.UpdateDeploymentResponse`
+        """
+        return self.update_deployment_with_http_info(request)
+
+    def update_deployment_with_http_info(self, request):
+        all_params = ['deployment_id', 'deployment_update_request', 'provider', 'x_expired_time']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'deployment_id' in local_var_params:
+            path_params['deployment_id'] = local_var_params['deployment_id']
+
+        query_params = []
+        if 'provider' in local_var_params:
+            query_params.append(('provider', local_var_params['provider']))
+
+        header_params = {}
+        if 'x_expired_time' in local_var_params:
+            header_params['X-Expired-Time'] = local_var_params['x_expired_time']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/ai-mgr/deployments/{deployment_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateDeploymentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -25,7 +25,9 @@ class ListAddressSetListUsingGetRequest:
         'limit': 'int',
         'offset': 'int',
         'address': 'str',
-        'address_type': 'int'
+        'address_type': 'int',
+        'enterprise_project_id': 'str',
+        'fw_instance_id': 'str'
     }
 
     attribute_map = {
@@ -34,10 +36,12 @@ class ListAddressSetListUsingGetRequest:
         'limit': 'limit',
         'offset': 'offset',
         'address': 'address',
-        'address_type': 'address_type'
+        'address_type': 'address_type',
+        'enterprise_project_id': 'enterprise_project_id',
+        'fw_instance_id': 'fw_instance_id'
     }
 
-    def __init__(self, object_id=None, key_word=None, limit=None, offset=None, address=None, address_type=None):
+    def __init__(self, object_id=None, key_word=None, limit=None, offset=None, address=None, address_type=None, enterprise_project_id=None, fw_instance_id=None):
         """ListAddressSetListUsingGetRequest
 
         The model defined in huaweicloud sdk
@@ -54,6 +58,10 @@ class ListAddressSetListUsingGetRequest:
         :type address: str
         :param address_type: 地址类型0 ipv4,1 ipv6
         :type address_type: int
+        :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
+        :type enterprise_project_id: str
+        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+        :type fw_instance_id: str
         """
         
         
@@ -64,6 +72,8 @@ class ListAddressSetListUsingGetRequest:
         self._offset = None
         self._address = None
         self._address_type = None
+        self._enterprise_project_id = None
+        self._fw_instance_id = None
         self.discriminator = None
 
         self.object_id = object_id
@@ -75,6 +85,10 @@ class ListAddressSetListUsingGetRequest:
             self.address = address
         if address_type is not None:
             self.address_type = address_type
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if fw_instance_id is not None:
+            self.fw_instance_id = fw_instance_id
 
     @property
     def object_id(self):
@@ -207,6 +221,50 @@ class ListAddressSetListUsingGetRequest:
         :type address_type: int
         """
         self._address_type = address_type
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListAddressSetListUsingGetRequest.
+
+        企业项目id，用户支持企业项目后，由企业项目生成的id。
+
+        :return: The enterprise_project_id of this ListAddressSetListUsingGetRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListAddressSetListUsingGetRequest.
+
+        企业项目id，用户支持企业项目后，由企业项目生成的id。
+
+        :param enterprise_project_id: The enterprise_project_id of this ListAddressSetListUsingGetRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def fw_instance_id(self):
+        """Gets the fw_instance_id of this ListAddressSetListUsingGetRequest.
+
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+
+        :return: The fw_instance_id of this ListAddressSetListUsingGetRequest.
+        :rtype: str
+        """
+        return self._fw_instance_id
+
+    @fw_instance_id.setter
+    def fw_instance_id(self, fw_instance_id):
+        """Sets the fw_instance_id of this ListAddressSetListUsingGetRequest.
+
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+
+        :param fw_instance_id: The fw_instance_id of this ListAddressSetListUsingGetRequest.
+        :type fw_instance_id: str
+        """
+        self._fw_instance_id = fw_instance_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

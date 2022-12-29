@@ -48,11 +48,11 @@ class ListPrivateZonesRequest:
 
         :param type: 待查询的zone的类型。  取值范围：private。
         :type type: str
-        :param limit: 每页返回的资源个数，取值范围：0~500
+        :param limit: 每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
         :type limit: int
-        :param marker: 分页查询起始的资源ID，为空时为查询第一页
+        :param marker: 分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
         :type marker: str
-        :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询
+        :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
         :type offset: int
         :param tags: 资源标签。
         :type tags: str
@@ -118,7 +118,7 @@ class ListPrivateZonesRequest:
     def limit(self):
         """Gets the limit of this ListPrivateZonesRequest.
 
-        每页返回的资源个数，取值范围：0~500
+        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
         :return: The limit of this ListPrivateZonesRequest.
         :rtype: int
@@ -129,7 +129,7 @@ class ListPrivateZonesRequest:
     def limit(self, limit):
         """Sets the limit of this ListPrivateZonesRequest.
 
-        每页返回的资源个数，取值范围：0~500
+        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
         :param limit: The limit of this ListPrivateZonesRequest.
         :type limit: int
@@ -140,7 +140,7 @@ class ListPrivateZonesRequest:
     def marker(self):
         """Gets the marker of this ListPrivateZonesRequest.
 
-        分页查询起始的资源ID，为空时为查询第一页
+        分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
 
         :return: The marker of this ListPrivateZonesRequest.
         :rtype: str
@@ -151,7 +151,7 @@ class ListPrivateZonesRequest:
     def marker(self, marker):
         """Sets the marker of this ListPrivateZonesRequest.
 
-        分页查询起始的资源ID，为空时为查询第一页
+        分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
 
         :param marker: The marker of this ListPrivateZonesRequest.
         :type marker: str
@@ -162,7 +162,7 @@ class ListPrivateZonesRequest:
     def offset(self):
         """Gets the offset of this ListPrivateZonesRequest.
 
-        分页查询起始偏移量，表示从偏移量的下一个资源开始查询
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :return: The offset of this ListPrivateZonesRequest.
         :rtype: int
@@ -173,7 +173,7 @@ class ListPrivateZonesRequest:
     def offset(self, offset):
         """Sets the offset of this ListPrivateZonesRequest.
 
-        分页查询起始偏移量，表示从偏移量的下一个资源开始查询
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :param offset: The offset of this ListPrivateZonesRequest.
         :type offset: int

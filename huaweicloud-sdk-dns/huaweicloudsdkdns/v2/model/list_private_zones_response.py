@@ -21,7 +21,7 @@ class ListPrivateZonesResponse(SdkResponse):
 
     openapi_types = {
         'links': 'PageLink',
-        'metadata': 'Metedata',
+        'metadata': 'Metadata',
         'zones': 'list[PrivateZoneResp]'
     }
 
@@ -39,8 +39,8 @@ class ListPrivateZonesResponse(SdkResponse):
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         :param metadata: 
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
-        :param zones: 
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
+        :param zones: zone列表信息。
         :type zones: list[:class:`huaweicloudsdkdns.v2.PrivateZoneResp`]
         """
         
@@ -81,7 +81,7 @@ class ListPrivateZonesResponse(SdkResponse):
         """Gets the metadata of this ListPrivateZonesResponse.
 
         :return: The metadata of this ListPrivateZonesResponse.
-        :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
+        :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         return self._metadata
 
@@ -90,13 +90,15 @@ class ListPrivateZonesResponse(SdkResponse):
         """Sets the metadata of this ListPrivateZonesResponse.
 
         :param metadata: The metadata of this ListPrivateZonesResponse.
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         self._metadata = metadata
 
     @property
     def zones(self):
         """Gets the zones of this ListPrivateZonesResponse.
+
+        zone列表信息。
 
         :return: The zones of this ListPrivateZonesResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.PrivateZoneResp`]
@@ -106,6 +108,8 @@ class ListPrivateZonesResponse(SdkResponse):
     @zones.setter
     def zones(self, zones):
         """Sets the zones of this ListPrivateZonesResponse.
+
+        zone列表信息。
 
         :param zones: The zones of this ListPrivateZonesResponse.
         :type zones: list[:class:`huaweicloudsdkdns.v2.PrivateZoneResp`]

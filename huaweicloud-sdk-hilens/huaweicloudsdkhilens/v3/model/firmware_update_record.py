@@ -23,7 +23,7 @@ class FirmwareUpdateRecord:
         'firmware_name': 'str',
         'firmware_version': 'str',
         'firmware_size': 'int',
-        'firmware_upgrade_time': 'int',
+        'firmware_upgrade_time': 'str',
         'status': 'int'
     }
 
@@ -47,7 +47,7 @@ class FirmwareUpdateRecord:
         :param firmware_size: 固件大小
         :type firmware_size: int
         :param firmware_upgrade_time: 固件升级时间
-        :type firmware_upgrade_time: int
+        :type firmware_upgrade_time: str
         :param status: 固件升级状态
         :type status: int
         """
@@ -145,7 +145,7 @@ class FirmwareUpdateRecord:
         固件升级时间
 
         :return: The firmware_upgrade_time of this FirmwareUpdateRecord.
-        :rtype: int
+        :rtype: str
         """
         return self._firmware_upgrade_time
 
@@ -156,7 +156,7 @@ class FirmwareUpdateRecord:
         固件升级时间
 
         :param firmware_upgrade_time: The firmware_upgrade_time of this FirmwareUpdateRecord.
-        :type firmware_upgrade_time: int
+        :type firmware_upgrade_time: str
         """
         self._firmware_upgrade_time = firmware_upgrade_time
 

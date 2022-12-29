@@ -107,6 +107,7 @@ from huaweicloudsdkdrs.v3.model.create_job_req import CreateJobReq
 from huaweicloudsdkdrs.v3.model.create_job_resp import CreateJobResp
 from huaweicloudsdkdrs.v3.model.data_transformation_resp import DataTransformationResp
 from huaweicloudsdkdrs.v3.model.database_info import DatabaseInfo
+from huaweicloudsdkdrs.v3.model.database_object_info import DatabaseObjectInfo
 from huaweicloudsdkdrs.v3.model.database_object_resp import DatabaseObjectResp
 from huaweicloudsdkdrs.v3.model.database_object_vo import DatabaseObjectVO
 from huaweicloudsdkdrs.v3.model.default_root_db import DefaultRootDb
@@ -144,6 +145,8 @@ from huaweicloudsdkdrs.v3.model.params import Params
 from huaweicloudsdkdrs.v3.model.params_req_bean import ParamsReqBean
 from huaweicloudsdkdrs.v3.model.pause_info import PauseInfo
 from huaweicloudsdkdrs.v3.model.pause_job_resp import PauseJobResp
+from huaweicloudsdkdrs.v3.model.period_order_info import PeriodOrderInfo
+from huaweicloudsdkdrs.v3.model.period_order_resp import PeriodOrderResp
 from huaweicloudsdkdrs.v3.model.post_pre_check_resp import PostPreCheckResp
 from huaweicloudsdkdrs.v3.model.pre_check_info import PreCheckInfo
 from huaweicloudsdkdrs.v3.model.precheck_fail_sub_job_vo import PrecheckFailSubJobVO

@@ -34,7 +34,7 @@ class CreateRecordSetWithBatchLinesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param zone_id: 
+        :param zone_id: 所属Zone的ID。
         :type zone_id: str
         :param body: Body of the CreateRecordSetWithBatchLinesRequest
         :type body: :class:`huaweicloudsdkdns.v2.CreateRSetBatchLinesReq`
@@ -54,6 +54,8 @@ class CreateRecordSetWithBatchLinesRequest:
     def zone_id(self):
         """Gets the zone_id of this CreateRecordSetWithBatchLinesRequest.
 
+        所属Zone的ID。
+
         :return: The zone_id of this CreateRecordSetWithBatchLinesRequest.
         :rtype: str
         """
@@ -62,6 +64,8 @@ class CreateRecordSetWithBatchLinesRequest:
     @zone_id.setter
     def zone_id(self, zone_id):
         """Sets the zone_id of this CreateRecordSetWithBatchLinesRequest.
+
+        所属Zone的ID。
 
         :param zone_id: The zone_id of this CreateRecordSetWithBatchLinesRequest.
         :type zone_id: str

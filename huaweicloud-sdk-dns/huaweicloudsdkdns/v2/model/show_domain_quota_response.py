@@ -32,7 +32,7 @@ class ShowDomainQuotaResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param quotas: 
+        :param quotas: 配额项数据。
         :type quotas: list[:class:`huaweicloudsdkdns.v2.DomainQuotaResponseQuotas`]
         """
         
@@ -48,6 +48,8 @@ class ShowDomainQuotaResponse(SdkResponse):
     def quotas(self):
         """Gets the quotas of this ShowDomainQuotaResponse.
 
+        配额项数据。
+
         :return: The quotas of this ShowDomainQuotaResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.DomainQuotaResponseQuotas`]
         """
@@ -56,6 +58,8 @@ class ShowDomainQuotaResponse(SdkResponse):
     @quotas.setter
     def quotas(self, quotas):
         """Sets the quotas of this ShowDomainQuotaResponse.
+
+        配额项数据。
 
         :param quotas: The quotas of this ShowDomainQuotaResponse.
         :type quotas: list[:class:`huaweicloudsdkdns.v2.DomainQuotaResponseQuotas`]

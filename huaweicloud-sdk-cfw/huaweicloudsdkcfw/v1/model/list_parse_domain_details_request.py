@@ -20,28 +20,42 @@ class ListParseDomainDetailsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'domain_name': 'str'
+        'domain_name': 'str',
+        'enterprise_project_id': 'str',
+        'fw_instance_id': 'str'
     }
 
     attribute_map = {
-        'domain_name': 'domain_name'
+        'domain_name': 'domain_name',
+        'enterprise_project_id': 'enterprise_project_id',
+        'fw_instance_id': 'fw_instance_id'
     }
 
-    def __init__(self, domain_name=None):
+    def __init__(self, domain_name=None, enterprise_project_id=None, fw_instance_id=None):
         """ListParseDomainDetailsRequest
 
         The model defined in huaweicloud sdk
 
         :param domain_name: 域名
         :type domain_name: str
+        :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
+        :type enterprise_project_id: str
+        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+        :type fw_instance_id: str
         """
         
         
 
         self._domain_name = None
+        self._enterprise_project_id = None
+        self._fw_instance_id = None
         self.discriminator = None
 
         self.domain_name = domain_name
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if fw_instance_id is not None:
+            self.fw_instance_id = fw_instance_id
 
     @property
     def domain_name(self):
@@ -64,6 +78,50 @@ class ListParseDomainDetailsRequest:
         :type domain_name: str
         """
         self._domain_name = domain_name
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListParseDomainDetailsRequest.
+
+        企业项目id，用户支持企业项目后，由企业项目生成的id。
+
+        :return: The enterprise_project_id of this ListParseDomainDetailsRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListParseDomainDetailsRequest.
+
+        企业项目id，用户支持企业项目后，由企业项目生成的id。
+
+        :param enterprise_project_id: The enterprise_project_id of this ListParseDomainDetailsRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def fw_instance_id(self):
+        """Gets the fw_instance_id of this ListParseDomainDetailsRequest.
+
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+
+        :return: The fw_instance_id of this ListParseDomainDetailsRequest.
+        :rtype: str
+        """
+        return self._fw_instance_id
+
+    @fw_instance_id.setter
+    def fw_instance_id(self, fw_instance_id):
+        """Sets the fw_instance_id of this ListParseDomainDetailsRequest.
+
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+
+        :param fw_instance_id: The fw_instance_id of this ListParseDomainDetailsRequest.
+        :type fw_instance_id: str
+        """
+        self._fw_instance_id = fw_instance_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

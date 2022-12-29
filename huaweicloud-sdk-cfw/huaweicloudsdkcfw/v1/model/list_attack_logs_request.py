@@ -38,7 +38,8 @@ class ListAttackLogsRequest:
         'attack_type': 'str',
         'attack_rule': 'str',
         'level': 'str',
-        'source': 'str'
+        'source': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -60,10 +61,11 @@ class ListAttackLogsRequest:
         'attack_type': 'attack_type',
         'attack_rule': 'attack_rule',
         'level': 'level',
-        'source': 'source'
+        'source': 'source',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, start_time=None, end_time=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, app=None, log_id=None, next_date=None, offset=None, limit=None, fw_instance_id=None, action=None, direction=None, attack_type=None, attack_rule=None, level=None, source=None):
+    def __init__(self, start_time=None, end_time=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, app=None, log_id=None, next_date=None, offset=None, limit=None, fw_instance_id=None, action=None, direction=None, attack_type=None, attack_rule=None, level=None, source=None, enterprise_project_id=None):
         """ListAttackLogsRequest
 
         The model defined in huaweicloud sdk
@@ -106,6 +108,8 @@ class ListAttackLogsRequest:
         :type level: str
         :param source: 判断来源
         :type source: str
+        :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
+        :type enterprise_project_id: str
         """
         
         
@@ -129,6 +133,7 @@ class ListAttackLogsRequest:
         self._attack_rule = None
         self._level = None
         self._source = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.start_time = start_time
@@ -165,6 +170,8 @@ class ListAttackLogsRequest:
             self.level = level
         if source is not None:
             self.source = source
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def start_time(self):
@@ -583,6 +590,28 @@ class ListAttackLogsRequest:
         :type source: str
         """
         self._source = source
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListAttackLogsRequest.
+
+        企业项目id，用户支持企业项目后，由企业项目生成的id。
+
+        :return: The enterprise_project_id of this ListAttackLogsRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListAttackLogsRequest.
+
+        企业项目id，用户支持企业项目后，由企业项目生成的id。
+
+        :param enterprise_project_id: The enterprise_project_id of this ListAttackLogsRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

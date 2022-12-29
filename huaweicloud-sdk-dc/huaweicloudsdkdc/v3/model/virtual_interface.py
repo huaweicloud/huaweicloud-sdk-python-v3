@@ -98,7 +98,7 @@ class VirtualInterface:
         :type status: str
         :param tenant_id: 租户ID
         :type tenant_id: str
-        :param type: 接口类型：private/public,
+        :param type: 表示接口类型：private
         :type type: str
         :param vgw_id: 虚拟网关的ID
         :type vgw_id: str
@@ -444,7 +444,7 @@ class VirtualInterface:
     def type(self):
         """Gets the type of this VirtualInterface.
 
-        接口类型：private/public,
+        表示接口类型：private
 
         :return: The type of this VirtualInterface.
         :rtype: str
@@ -455,7 +455,7 @@ class VirtualInterface:
     def type(self, type):
         """Sets the type of this VirtualInterface.
 
-        接口类型：private/public,
+        表示接口类型：private
 
         :param type: The type of this VirtualInterface.
         :type type: str

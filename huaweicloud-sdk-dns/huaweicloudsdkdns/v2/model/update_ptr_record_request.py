@@ -36,9 +36,9 @@ class UpdatePtrRecordRequest:
 
         The model defined in huaweicloud sdk
 
-        :param region: 
+        :param region: 域名所属的区域。
         :type region: str
-        :param floatingip_id: 
+        :param floatingip_id: 待修改弹性IP的PTR记录ID信息。
         :type floatingip_id: str
         :param body: Body of the UpdatePtrRecordRequest
         :type body: :class:`huaweicloudsdkdns.v2.UpdatePtrReq`
@@ -60,6 +60,8 @@ class UpdatePtrRecordRequest:
     def region(self):
         """Gets the region of this UpdatePtrRecordRequest.
 
+        域名所属的区域。
+
         :return: The region of this UpdatePtrRecordRequest.
         :rtype: str
         """
@@ -68,6 +70,8 @@ class UpdatePtrRecordRequest:
     @region.setter
     def region(self, region):
         """Sets the region of this UpdatePtrRecordRequest.
+
+        域名所属的区域。
 
         :param region: The region of this UpdatePtrRecordRequest.
         :type region: str
@@ -78,6 +82,8 @@ class UpdatePtrRecordRequest:
     def floatingip_id(self):
         """Gets the floatingip_id of this UpdatePtrRecordRequest.
 
+        待修改弹性IP的PTR记录ID信息。
+
         :return: The floatingip_id of this UpdatePtrRecordRequest.
         :rtype: str
         """
@@ -86,6 +92,8 @@ class UpdatePtrRecordRequest:
     @floatingip_id.setter
     def floatingip_id(self, floatingip_id):
         """Sets the floatingip_id of this UpdatePtrRecordRequest.
+
+        待修改弹性IP的PTR记录ID信息。
 
         :param floatingip_id: The floatingip_id of this UpdatePtrRecordRequest.
         :type floatingip_id: str

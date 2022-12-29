@@ -20,28 +20,35 @@ class UpdateLineGroupsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'linegroup_id': 'str'
+        'linegroup_id': 'str',
+        'body': 'UpdateLineGroupsBody'
     }
 
     attribute_map = {
-        'linegroup_id': 'linegroup_id'
+        'linegroup_id': 'linegroup_id',
+        'body': 'body'
     }
 
-    def __init__(self, linegroup_id=None):
+    def __init__(self, linegroup_id=None, body=None):
         """UpdateLineGroupsRequest
 
         The model defined in huaweicloud sdk
 
         :param linegroup_id: 待更新的线路分组ID。
         :type linegroup_id: str
+        :param body: Body of the UpdateLineGroupsRequest
+        :type body: :class:`huaweicloudsdkdns.v2.UpdateLineGroupsBody`
         """
         
         
 
         self._linegroup_id = None
+        self._body = None
         self.discriminator = None
 
         self.linegroup_id = linegroup_id
+        if body is not None:
+            self.body = body
 
     @property
     def linegroup_id(self):
@@ -64,6 +71,24 @@ class UpdateLineGroupsRequest:
         :type linegroup_id: str
         """
         self._linegroup_id = linegroup_id
+
+    @property
+    def body(self):
+        """Gets the body of this UpdateLineGroupsRequest.
+
+        :return: The body of this UpdateLineGroupsRequest.
+        :rtype: :class:`huaweicloudsdkdns.v2.UpdateLineGroupsBody`
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this UpdateLineGroupsRequest.
+
+        :param body: The body of this UpdateLineGroupsRequest.
+        :type body: :class:`huaweicloudsdkdns.v2.UpdateLineGroupsBody`
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

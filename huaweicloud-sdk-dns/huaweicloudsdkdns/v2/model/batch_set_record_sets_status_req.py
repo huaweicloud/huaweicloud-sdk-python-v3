@@ -21,35 +21,35 @@ class BatchSetRecordSetsStatusReq:
 
     openapi_types = {
         'status': 'str',
-        'zone_ids': 'list[str]'
+        'recordset_ids': 'list[str]'
     }
 
     attribute_map = {
         'status': 'status',
-        'zone_ids': 'zone_ids'
+        'recordset_ids': 'recordset_ids'
     }
 
-    def __init__(self, status=None, zone_ids=None):
+    def __init__(self, status=None, recordset_ids=None):
         """BatchSetRecordSetsStatusReq
 
         The model defined in huaweicloud sdk
 
         :param status: 待设置Record Se状态，当前仅支持DISABLE或ENABLE。
         :type status: str
-        :param zone_ids: 待设置Record Set ID列表。 最多支持50个。
-        :type zone_ids: list[str]
+        :param recordset_ids: 待设置Record Set ID列表。 最多支持50个。
+        :type recordset_ids: list[str]
         """
         
         
 
         self._status = None
-        self._zone_ids = None
+        self._recordset_ids = None
         self.discriminator = None
 
         if status is not None:
             self.status = status
-        if zone_ids is not None:
-            self.zone_ids = zone_ids
+        if recordset_ids is not None:
+            self.recordset_ids = recordset_ids
 
     @property
     def status(self):
@@ -74,26 +74,26 @@ class BatchSetRecordSetsStatusReq:
         self._status = status
 
     @property
-    def zone_ids(self):
-        """Gets the zone_ids of this BatchSetRecordSetsStatusReq.
+    def recordset_ids(self):
+        """Gets the recordset_ids of this BatchSetRecordSetsStatusReq.
 
         待设置Record Set ID列表。 最多支持50个。
 
-        :return: The zone_ids of this BatchSetRecordSetsStatusReq.
+        :return: The recordset_ids of this BatchSetRecordSetsStatusReq.
         :rtype: list[str]
         """
-        return self._zone_ids
+        return self._recordset_ids
 
-    @zone_ids.setter
-    def zone_ids(self, zone_ids):
-        """Sets the zone_ids of this BatchSetRecordSetsStatusReq.
+    @recordset_ids.setter
+    def recordset_ids(self, recordset_ids):
+        """Sets the recordset_ids of this BatchSetRecordSetsStatusReq.
 
         待设置Record Set ID列表。 最多支持50个。
 
-        :param zone_ids: The zone_ids of this BatchSetRecordSetsStatusReq.
-        :type zone_ids: list[str]
+        :param recordset_ids: The recordset_ids of this BatchSetRecordSetsStatusReq.
+        :type recordset_ids: list[str]
         """
-        self._zone_ids = zone_ids
+        self._recordset_ids = recordset_ids
 
     def to_dict(self):
         """Returns the model properties as a dict"""

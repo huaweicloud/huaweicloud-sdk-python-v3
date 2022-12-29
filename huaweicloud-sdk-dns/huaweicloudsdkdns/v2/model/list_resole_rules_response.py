@@ -20,35 +20,42 @@ class ListResoleRulesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'resolver_rules': 'list[ResolveRuleParam]'
+        'resolver_rules': 'list[ResolveRuleParam]',
+        'metadata': 'Metadata'
     }
 
     attribute_map = {
-        'resolver_rules': 'resolver_rules'
+        'resolver_rules': 'resolver_rules',
+        'metadata': 'metadata'
     }
 
-    def __init__(self, resolver_rules=None):
+    def __init__(self, resolver_rules=None, metadata=None):
         """ListResoleRulesResponse
 
         The model defined in huaweicloud sdk
 
-        :param resolver_rules: 查询resolver_rule的列表响应。
+        :param resolver_rules: 解析记录资源列表。
         :type resolver_rules: list[:class:`huaweicloudsdkdns.v2.ResolveRuleParam`]
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         
         super(ListResoleRulesResponse, self).__init__()
 
         self._resolver_rules = None
+        self._metadata = None
         self.discriminator = None
 
         if resolver_rules is not None:
             self.resolver_rules = resolver_rules
+        if metadata is not None:
+            self.metadata = metadata
 
     @property
     def resolver_rules(self):
         """Gets the resolver_rules of this ListResoleRulesResponse.
 
-        查询resolver_rule的列表响应。
+        解析记录资源列表。
 
         :return: The resolver_rules of this ListResoleRulesResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.ResolveRuleParam`]
@@ -59,12 +66,30 @@ class ListResoleRulesResponse(SdkResponse):
     def resolver_rules(self, resolver_rules):
         """Sets the resolver_rules of this ListResoleRulesResponse.
 
-        查询resolver_rule的列表响应。
+        解析记录资源列表。
 
         :param resolver_rules: The resolver_rules of this ListResoleRulesResponse.
         :type resolver_rules: list[:class:`huaweicloudsdkdns.v2.ResolveRuleParam`]
         """
         self._resolver_rules = resolver_rules
+
+    @property
+    def metadata(self):
+        """Gets the metadata of this ListResoleRulesResponse.
+
+        :return: The metadata of this ListResoleRulesResponse.
+        :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
+        """
+        return self._metadata
+
+    @metadata.setter
+    def metadata(self, metadata):
+        """Sets the metadata of this ListResoleRulesResponse.
+
+        :param metadata: The metadata of this ListResoleRulesResponse.
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
+        """
+        self._metadata = metadata
 
     def to_dict(self):
         """Returns the model properties as a dict"""

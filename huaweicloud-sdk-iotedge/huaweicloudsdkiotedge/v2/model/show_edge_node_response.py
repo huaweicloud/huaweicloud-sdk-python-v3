@@ -46,7 +46,9 @@ class ShowEdgeNodeResponse(SdkResponse):
         'security_level': 'str',
         'storage_period': 'int',
         'base_path': 'BasePathDTO',
-        'hardware_model': 'str'
+        'hardware_model': 'str',
+        'offline_cache_configs': 'OfflineCacheConfigsDTO',
+        'device_auth_info': 'DeviceAuthInfoDisplayDTO'
     }
 
     attribute_map = {
@@ -76,10 +78,12 @@ class ShowEdgeNodeResponse(SdkResponse):
         'security_level': 'security_level',
         'storage_period': 'storage_period',
         'base_path': 'base_path',
-        'hardware_model': 'hardware_model'
+        'hardware_model': 'hardware_model',
+        'offline_cache_configs': 'offline_cache_configs',
+        'device_auth_info': 'device_auth_info'
     }
 
-    def __init__(self, log_configs=None, ha_config=None, edge_node_id=None, instance_id=None, product_id=None, product_name=None, space_id=None, resource_spec_types=None, resource_ids=None, ips=None, name=None, state=None, software_version=None, create_time=None, update_time=None, os_name=None, arch=None, host_name=None, nics=None, specification=None, ai_card_type=None, container_version=None, type=None, security_level=None, storage_period=None, base_path=None, hardware_model=None):
+    def __init__(self, log_configs=None, ha_config=None, edge_node_id=None, instance_id=None, product_id=None, product_name=None, space_id=None, resource_spec_types=None, resource_ids=None, ips=None, name=None, state=None, software_version=None, create_time=None, update_time=None, os_name=None, arch=None, host_name=None, nics=None, specification=None, ai_card_type=None, container_version=None, type=None, security_level=None, storage_period=None, base_path=None, hardware_model=None, offline_cache_configs=None, device_auth_info=None):
         """ShowEdgeNodeResponse
 
         The model defined in huaweicloud sdk
@@ -138,6 +142,10 @@ class ShowEdgeNodeResponse(SdkResponse):
         :type base_path: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`
         :param hardware_model: 注册节点网关配置
         :type hardware_model: str
+        :param offline_cache_configs: 
+        :type offline_cache_configs: :class:`huaweicloudsdkiotedge.v2.OfflineCacheConfigsDTO`
+        :param device_auth_info: 
+        :type device_auth_info: :class:`huaweicloudsdkiotedge.v2.DeviceAuthInfoDisplayDTO`
         """
         
         super(ShowEdgeNodeResponse, self).__init__()
@@ -169,6 +177,8 @@ class ShowEdgeNodeResponse(SdkResponse):
         self._storage_period = None
         self._base_path = None
         self._hardware_model = None
+        self._offline_cache_configs = None
+        self._device_auth_info = None
         self.discriminator = None
 
         if log_configs is not None:
@@ -225,6 +235,10 @@ class ShowEdgeNodeResponse(SdkResponse):
             self.base_path = base_path
         if hardware_model is not None:
             self.hardware_model = hardware_model
+        if offline_cache_configs is not None:
+            self.offline_cache_configs = offline_cache_configs
+        if device_auth_info is not None:
+            self.device_auth_info = device_auth_info
 
     @property
     def log_configs(self):
@@ -811,6 +825,42 @@ class ShowEdgeNodeResponse(SdkResponse):
         :type hardware_model: str
         """
         self._hardware_model = hardware_model
+
+    @property
+    def offline_cache_configs(self):
+        """Gets the offline_cache_configs of this ShowEdgeNodeResponse.
+
+        :return: The offline_cache_configs of this ShowEdgeNodeResponse.
+        :rtype: :class:`huaweicloudsdkiotedge.v2.OfflineCacheConfigsDTO`
+        """
+        return self._offline_cache_configs
+
+    @offline_cache_configs.setter
+    def offline_cache_configs(self, offline_cache_configs):
+        """Sets the offline_cache_configs of this ShowEdgeNodeResponse.
+
+        :param offline_cache_configs: The offline_cache_configs of this ShowEdgeNodeResponse.
+        :type offline_cache_configs: :class:`huaweicloudsdkiotedge.v2.OfflineCacheConfigsDTO`
+        """
+        self._offline_cache_configs = offline_cache_configs
+
+    @property
+    def device_auth_info(self):
+        """Gets the device_auth_info of this ShowEdgeNodeResponse.
+
+        :return: The device_auth_info of this ShowEdgeNodeResponse.
+        :rtype: :class:`huaweicloudsdkiotedge.v2.DeviceAuthInfoDisplayDTO`
+        """
+        return self._device_auth_info
+
+    @device_auth_info.setter
+    def device_auth_info(self, device_auth_info):
+        """Sets the device_auth_info of this ShowEdgeNodeResponse.
+
+        :param device_auth_info: The device_auth_info of this ShowEdgeNodeResponse.
+        :type device_auth_info: :class:`huaweicloudsdkiotedge.v2.DeviceAuthInfoDisplayDTO`
+        """
+        self._device_auth_info = device_auth_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

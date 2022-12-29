@@ -21,7 +21,7 @@ class ListLineGroupsResponse(SdkResponse):
 
     openapi_types = {
         'linegroups': 'list[CreateLineGroupsResp]',
-        'metadata': 'Metedata'
+        'metadata': 'Metadata'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class ListLineGroupsResponse(SdkResponse):
         :param linegroups: 列表对象。
         :type linegroups: list[:class:`huaweicloudsdkdns.v2.CreateLineGroupsResp`]
         :param metadata: 
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         
         super(ListLineGroupsResponse, self).__init__()
@@ -78,7 +78,7 @@ class ListLineGroupsResponse(SdkResponse):
         """Gets the metadata of this ListLineGroupsResponse.
 
         :return: The metadata of this ListLineGroupsResponse.
-        :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
+        :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         return self._metadata
 
@@ -87,7 +87,7 @@ class ListLineGroupsResponse(SdkResponse):
         """Sets the metadata of this ListLineGroupsResponse.
 
         :param metadata: The metadata of this ListLineGroupsResponse.
-        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
         """
         self._metadata = metadata
 

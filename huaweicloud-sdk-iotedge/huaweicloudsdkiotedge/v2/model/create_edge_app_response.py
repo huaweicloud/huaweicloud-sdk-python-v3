@@ -27,7 +27,9 @@ class CreateEdgeAppResponse(SdkResponse):
         'last_published_version': 'str',
         'app_type': 'str',
         'function_type': 'str',
-        'deploy_type': 'str'
+        'deploy_type': 'str',
+        'protocol': 'str',
+        'edge_app_name': 'str'
     }
 
     attribute_map = {
@@ -38,15 +40,17 @@ class CreateEdgeAppResponse(SdkResponse):
         'last_published_version': 'last_published_version',
         'app_type': 'app_type',
         'function_type': 'function_type',
-        'deploy_type': 'deploy_type'
+        'deploy_type': 'deploy_type',
+        'protocol': 'protocol',
+        'edge_app_name': 'edge_app_name'
     }
 
-    def __init__(self, edge_app_id=None, description=None, create_time=None, update_time=None, last_published_version=None, app_type=None, function_type=None, deploy_type=None):
+    def __init__(self, edge_app_id=None, description=None, create_time=None, update_time=None, last_published_version=None, app_type=None, function_type=None, deploy_type=None, protocol=None, edge_app_name=None):
         """CreateEdgeAppResponse
 
         The model defined in huaweicloud sdk
 
-        :param edge_app_id: 应用名称
+        :param edge_app_id: 应用id
         :type edge_app_id: str
         :param description: 应用描述
         :type description: str
@@ -62,6 +66,10 @@ class CreateEdgeAppResponse(SdkResponse):
         :type function_type: str
         :param deploy_type: 部署类型docker|process
         :type deploy_type: str
+        :param protocol: 驱动协议类型OPCUA|Modbus-TCP
+        :type protocol: str
+        :param edge_app_name: 应用名称
+        :type edge_app_name: str
         """
         
         super(CreateEdgeAppResponse, self).__init__()
@@ -74,6 +82,8 @@ class CreateEdgeAppResponse(SdkResponse):
         self._app_type = None
         self._function_type = None
         self._deploy_type = None
+        self._protocol = None
+        self._edge_app_name = None
         self.discriminator = None
 
         if edge_app_id is not None:
@@ -92,12 +102,16 @@ class CreateEdgeAppResponse(SdkResponse):
             self.function_type = function_type
         if deploy_type is not None:
             self.deploy_type = deploy_type
+        if protocol is not None:
+            self.protocol = protocol
+        if edge_app_name is not None:
+            self.edge_app_name = edge_app_name
 
     @property
     def edge_app_id(self):
         """Gets the edge_app_id of this CreateEdgeAppResponse.
 
-        应用名称
+        应用id
 
         :return: The edge_app_id of this CreateEdgeAppResponse.
         :rtype: str
@@ -108,7 +122,7 @@ class CreateEdgeAppResponse(SdkResponse):
     def edge_app_id(self, edge_app_id):
         """Sets the edge_app_id of this CreateEdgeAppResponse.
 
-        应用名称
+        应用id
 
         :param edge_app_id: The edge_app_id of this CreateEdgeAppResponse.
         :type edge_app_id: str
@@ -268,6 +282,50 @@ class CreateEdgeAppResponse(SdkResponse):
         :type deploy_type: str
         """
         self._deploy_type = deploy_type
+
+    @property
+    def protocol(self):
+        """Gets the protocol of this CreateEdgeAppResponse.
+
+        驱动协议类型OPCUA|Modbus-TCP
+
+        :return: The protocol of this CreateEdgeAppResponse.
+        :rtype: str
+        """
+        return self._protocol
+
+    @protocol.setter
+    def protocol(self, protocol):
+        """Sets the protocol of this CreateEdgeAppResponse.
+
+        驱动协议类型OPCUA|Modbus-TCP
+
+        :param protocol: The protocol of this CreateEdgeAppResponse.
+        :type protocol: str
+        """
+        self._protocol = protocol
+
+    @property
+    def edge_app_name(self):
+        """Gets the edge_app_name of this CreateEdgeAppResponse.
+
+        应用名称
+
+        :return: The edge_app_name of this CreateEdgeAppResponse.
+        :rtype: str
+        """
+        return self._edge_app_name
+
+    @edge_app_name.setter
+    def edge_app_name(self, edge_app_name):
+        """Sets the edge_app_name of this CreateEdgeAppResponse.
+
+        应用名称
+
+        :param edge_app_name: The edge_app_name of this CreateEdgeAppResponse.
+        :type edge_app_name: str
+        """
+        self._edge_app_name = edge_app_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

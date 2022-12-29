@@ -20,30 +20,22 @@ class CreateSkillOrderFrom:
     sensitive_list = []
 
     openapi_types = {
-        'data': 'list[SkillInfo]',
-        'total': 'int',
         'skill_id': 'str',
         'amount': 'int',
         'commission_flag': 'int'
     }
 
     attribute_map = {
-        'data': 'data',
-        'total': 'total',
         'skill_id': 'skill_id',
         'amount': 'amount',
         'commission_flag': 'commission_flag'
     }
 
-    def __init__(self, data=None, total=None, skill_id=None, amount=None, commission_flag=None):
+    def __init__(self, skill_id=None, amount=None, commission_flag=None):
         """CreateSkillOrderFrom
 
         The model defined in huaweicloud sdk
 
-        :param data: 技能列表
-        :type data: list[:class:`huaweicloudsdkhilens.v3.SkillInfo`]
-        :param total: 总数量
-        :type total: int
         :param skill_id: 技能ID
         :type skill_id: str
         :param amount: 购买个数
@@ -54,64 +46,14 @@ class CreateSkillOrderFrom:
         
         
 
-        self._data = None
-        self._total = None
         self._skill_id = None
         self._amount = None
         self._commission_flag = None
         self.discriminator = None
 
-        if data is not None:
-            self.data = data
-        if total is not None:
-            self.total = total
         self.skill_id = skill_id
         self.amount = amount
         self.commission_flag = commission_flag
-
-    @property
-    def data(self):
-        """Gets the data of this CreateSkillOrderFrom.
-
-        技能列表
-
-        :return: The data of this CreateSkillOrderFrom.
-        :rtype: list[:class:`huaweicloudsdkhilens.v3.SkillInfo`]
-        """
-        return self._data
-
-    @data.setter
-    def data(self, data):
-        """Sets the data of this CreateSkillOrderFrom.
-
-        技能列表
-
-        :param data: The data of this CreateSkillOrderFrom.
-        :type data: list[:class:`huaweicloudsdkhilens.v3.SkillInfo`]
-        """
-        self._data = data
-
-    @property
-    def total(self):
-        """Gets the total of this CreateSkillOrderFrom.
-
-        总数量
-
-        :return: The total of this CreateSkillOrderFrom.
-        :rtype: int
-        """
-        return self._total
-
-    @total.setter
-    def total(self, total):
-        """Sets the total of this CreateSkillOrderFrom.
-
-        总数量
-
-        :param total: The total of this CreateSkillOrderFrom.
-        :type total: int
-        """
-        self._total = total
 
     @property
     def skill_id(self):

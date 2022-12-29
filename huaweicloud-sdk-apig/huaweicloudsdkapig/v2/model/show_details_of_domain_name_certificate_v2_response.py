@@ -20,6 +20,13 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
+        'name': 'str',
+        'type': 'str',
+        'instance_id': 'str',
+        'project_id': 'str',
+        'create_time': 'datetime',
+        'update_time': 'datetime',
         'common_name': 'str',
         'san': 'list[str]',
         'version': 'int',
@@ -36,6 +43,13 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
     }
 
     attribute_map = {
+        'id': 'id',
+        'name': 'name',
+        'type': 'type',
+        'instance_id': 'instance_id',
+        'project_id': 'project_id',
+        'create_time': 'create_time',
+        'update_time': 'update_time',
         'common_name': 'common_name',
         'san': 'san',
         'version': 'version',
@@ -51,11 +65,25 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
         'signature_algorithm': 'signature_algorithm'
     }
 
-    def __init__(self, common_name=None, san=None, version=None, organization=None, organizational_unit=None, locality=None, state=None, country=None, not_before=None, not_after=None, serial_number=None, issuer=None, signature_algorithm=None):
+    def __init__(self, id=None, name=None, type=None, instance_id=None, project_id=None, create_time=None, update_time=None, common_name=None, san=None, version=None, organization=None, organizational_unit=None, locality=None, state=None, country=None, not_before=None, not_after=None, serial_number=None, issuer=None, signature_algorithm=None):
         """ShowDetailsOfDomainNameCertificateV2Response
 
         The model defined in huaweicloud sdk
 
+        :param id: 证书ID
+        :type id: str
+        :param name: 证书名称
+        :type name: str
+        :param type: 证书类型  - global：全局证书 - instance：实例证书
+        :type type: str
+        :param instance_id: 实例编码  - &#x60;type&#x60;为&#x60;global&#x60;时，缺省为common - &#x60;type&#x60;为&#x60;instance&#x60;时，为实例编码
+        :type instance_id: str
+        :param project_id: 租户项目编号
+        :type project_id: str
+        :param create_time: 创建时间
+        :type create_time: datetime
+        :param update_time: 更新时间
+        :type update_time: datetime
         :param common_name: 证书域名
         :type common_name: str
         :param san: SAN域名
@@ -86,6 +114,13 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
         
         super(ShowDetailsOfDomainNameCertificateV2Response, self).__init__()
 
+        self._id = None
+        self._name = None
+        self._type = None
+        self._instance_id = None
+        self._project_id = None
+        self._create_time = None
+        self._update_time = None
         self._common_name = None
         self._san = None
         self._version = None
@@ -101,6 +136,20 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
         self._signature_algorithm = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
+        if name is not None:
+            self.name = name
+        if type is not None:
+            self.type = type
+        if instance_id is not None:
+            self.instance_id = instance_id
+        if project_id is not None:
+            self.project_id = project_id
+        if create_time is not None:
+            self.create_time = create_time
+        if update_time is not None:
+            self.update_time = update_time
         if common_name is not None:
             self.common_name = common_name
         if san is not None:
@@ -127,6 +176,160 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
             self.issuer = issuer
         if signature_algorithm is not None:
             self.signature_algorithm = signature_algorithm
+
+    @property
+    def id(self):
+        """Gets the id of this ShowDetailsOfDomainNameCertificateV2Response.
+
+        证书ID
+
+        :return: The id of this ShowDetailsOfDomainNameCertificateV2Response.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ShowDetailsOfDomainNameCertificateV2Response.
+
+        证书ID
+
+        :param id: The id of this ShowDetailsOfDomainNameCertificateV2Response.
+        :type id: str
+        """
+        self._id = id
+
+    @property
+    def name(self):
+        """Gets the name of this ShowDetailsOfDomainNameCertificateV2Response.
+
+        证书名称
+
+        :return: The name of this ShowDetailsOfDomainNameCertificateV2Response.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ShowDetailsOfDomainNameCertificateV2Response.
+
+        证书名称
+
+        :param name: The name of this ShowDetailsOfDomainNameCertificateV2Response.
+        :type name: str
+        """
+        self._name = name
+
+    @property
+    def type(self):
+        """Gets the type of this ShowDetailsOfDomainNameCertificateV2Response.
+
+        证书类型  - global：全局证书 - instance：实例证书
+
+        :return: The type of this ShowDetailsOfDomainNameCertificateV2Response.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ShowDetailsOfDomainNameCertificateV2Response.
+
+        证书类型  - global：全局证书 - instance：实例证书
+
+        :param type: The type of this ShowDetailsOfDomainNameCertificateV2Response.
+        :type type: str
+        """
+        self._type = type
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this ShowDetailsOfDomainNameCertificateV2Response.
+
+        实例编码  - `type`为`global`时，缺省为common - `type`为`instance`时，为实例编码
+
+        :return: The instance_id of this ShowDetailsOfDomainNameCertificateV2Response.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this ShowDetailsOfDomainNameCertificateV2Response.
+
+        实例编码  - `type`为`global`时，缺省为common - `type`为`instance`时，为实例编码
+
+        :param instance_id: The instance_id of this ShowDetailsOfDomainNameCertificateV2Response.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
+
+    @property
+    def project_id(self):
+        """Gets the project_id of this ShowDetailsOfDomainNameCertificateV2Response.
+
+        租户项目编号
+
+        :return: The project_id of this ShowDetailsOfDomainNameCertificateV2Response.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this ShowDetailsOfDomainNameCertificateV2Response.
+
+        租户项目编号
+
+        :param project_id: The project_id of this ShowDetailsOfDomainNameCertificateV2Response.
+        :type project_id: str
+        """
+        self._project_id = project_id
+
+    @property
+    def create_time(self):
+        """Gets the create_time of this ShowDetailsOfDomainNameCertificateV2Response.
+
+        创建时间
+
+        :return: The create_time of this ShowDetailsOfDomainNameCertificateV2Response.
+        :rtype: datetime
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        """Sets the create_time of this ShowDetailsOfDomainNameCertificateV2Response.
+
+        创建时间
+
+        :param create_time: The create_time of this ShowDetailsOfDomainNameCertificateV2Response.
+        :type create_time: datetime
+        """
+        self._create_time = create_time
+
+    @property
+    def update_time(self):
+        """Gets the update_time of this ShowDetailsOfDomainNameCertificateV2Response.
+
+        更新时间
+
+        :return: The update_time of this ShowDetailsOfDomainNameCertificateV2Response.
+        :rtype: datetime
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        """Sets the update_time of this ShowDetailsOfDomainNameCertificateV2Response.
+
+        更新时间
+
+        :param update_time: The update_time of this ShowDetailsOfDomainNameCertificateV2Response.
+        :type update_time: datetime
+        """
+        self._update_time = update_time
 
     @property
     def common_name(self):

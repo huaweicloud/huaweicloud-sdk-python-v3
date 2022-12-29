@@ -126,7 +126,7 @@ from huaweicloudsdkeip.v2.model.show_publicip_tags_request import ShowPublicipTa
 from huaweicloudsdkeip.v2.model.show_publicip_tags_response import ShowPublicipTagsResponse
 from huaweicloudsdkeip.v2.model.show_resources_job_detail_request import ShowResourcesJobDetailRequest
 from huaweicloudsdkeip.v2.model.show_resources_job_detail_response import ShowResourcesJobDetailResponse
-from huaweicloudsdkeip.v2.model.sub_jobs import SubJobs
+from huaweicloudsdkeip.v2.model.sub_jobs_info import SubJobsInfo
 from huaweicloudsdkeip.v2.model.tag_req import TagReq
 from huaweicloudsdkeip.v2.model.tag_resp import TagResp
 from huaweicloudsdkeip.v2.model.update_bandwidth_option import UpdateBandwidthOption

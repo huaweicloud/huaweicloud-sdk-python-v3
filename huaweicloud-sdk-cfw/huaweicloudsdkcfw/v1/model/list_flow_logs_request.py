@@ -34,7 +34,8 @@ class ListFlowLogsRequest:
         'log_id': 'str',
         'next_date': 'int',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -52,10 +53,11 @@ class ListFlowLogsRequest:
         'log_id': 'log_id',
         'next_date': 'next_date',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, fw_instance_id=None, direction=None, log_type=None, start_time=None, end_time=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, app=None, log_id=None, next_date=None, offset=None, limit=None):
+    def __init__(self, fw_instance_id=None, direction=None, log_type=None, start_time=None, end_time=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, app=None, log_id=None, next_date=None, offset=None, limit=None, enterprise_project_id=None):
         """ListFlowLogsRequest
 
         The model defined in huaweicloud sdk
@@ -90,6 +92,8 @@ class ListFlowLogsRequest:
         :type offset: int
         :param limit: 每页显示个数
         :type limit: int
+        :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
+        :type enterprise_project_id: str
         """
         
         
@@ -109,6 +113,7 @@ class ListFlowLogsRequest:
         self._next_date = None
         self._offset = None
         self._limit = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.fw_instance_id = fw_instance_id
@@ -137,6 +142,8 @@ class ListFlowLogsRequest:
         if offset is not None:
             self.offset = offset
         self.limit = limit
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def fw_instance_id(self):
@@ -467,6 +474,28 @@ class ListFlowLogsRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListFlowLogsRequest.
+
+        企业项目id，用户支持企业项目后，由企业项目生成的id。
+
+        :return: The enterprise_project_id of this ListFlowLogsRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListFlowLogsRequest.
+
+        企业项目id，用户支持企业项目后，由企业项目生成的id。
+
+        :param enterprise_project_id: The enterprise_project_id of this ListFlowLogsRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
