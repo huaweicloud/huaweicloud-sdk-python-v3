@@ -36,7 +36,7 @@ class ServiceRequestBody:
 
         :param service_name: 测试类型名称，用于界面显示，不能使用当前保留名，长度小于等于16位字符
         :type service_name: str
-        :param server_host: server_host是由用户提供的域名。 我们会通过此域名进行接口调用，请以https/http开头,长度小于等于128位字符。 TestHub将会通过此域名下的接口，保证云测数据与用户系统数据的一致性。
+        :param server_host: server_host是由用户提供的域名。 我们会通过此域名进行接口调用，请以https/http开头,长度小于等于128位字符。 TestHub将会通过此域名下的接口，保证服务数据与用户系统数据的一致性。
         :type server_host: str
         """
         
@@ -75,7 +75,7 @@ class ServiceRequestBody:
     def server_host(self):
         """Gets the server_host of this ServiceRequestBody.
 
-        server_host是由用户提供的域名。 我们会通过此域名进行接口调用，请以https/http开头,长度小于等于128位字符。 TestHub将会通过此域名下的接口，保证云测数据与用户系统数据的一致性。
+        server_host是由用户提供的域名。 我们会通过此域名进行接口调用，请以https/http开头,长度小于等于128位字符。 TestHub将会通过此域名下的接口，保证服务数据与用户系统数据的一致性。
 
         :return: The server_host of this ServiceRequestBody.
         :rtype: str
@@ -86,7 +86,7 @@ class ServiceRequestBody:
     def server_host(self, server_host):
         """Sets the server_host of this ServiceRequestBody.
 
-        server_host是由用户提供的域名。 我们会通过此域名进行接口调用，请以https/http开头,长度小于等于128位字符。 TestHub将会通过此域名下的接口，保证云测数据与用户系统数据的一致性。
+        server_host是由用户提供的域名。 我们会通过此域名进行接口调用，请以https/http开头,长度小于等于128位字符。 TestHub将会通过此域名下的接口，保证服务数据与用户系统数据的一致性。
 
         :param server_host: The server_host of this ServiceRequestBody.
         :type server_host: str

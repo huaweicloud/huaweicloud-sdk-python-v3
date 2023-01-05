@@ -609,7 +609,7 @@ class FunctionGraphAsyncClient(Client):
         创建触发器。
         
         - 可以创建的触发器类型包括TIMER、APIG、CTS、DDS、DMS、DIS、LTS、OBS、SMN、KAFKA。
-        - DDS和KAFKA触发器创建时默认为DISABLE状态，其他触发器默认为ACTIVE状态。
+        - DDS和KAFKA触发器创建时默认为DISABLED状态，其他触发器默认为ACTIVE状态。
         - TIMER、DDS、DMS、KAFKA、LTS触发器支持禁用，其他触发器不支持。
         
         Please refer to HUAWEI cloud API Explorer for details.

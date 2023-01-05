@@ -20,102 +20,42 @@ class UpdateJobResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'error_code': 'str',
-        'error_msg': 'str',
         'id': 'str',
-        'name': 'str',
         'status': 'str'
     }
 
     attribute_map = {
-        'error_code': 'error_code',
-        'error_msg': 'error_msg',
         'id': 'id',
-        'name': 'name',
         'status': 'status'
     }
 
-    def __init__(self, error_code=None, error_msg=None, id=None, name=None, status=None):
+    def __init__(self, id=None, status=None):
         """UpdateJobResponse
 
         The model defined in huaweicloud sdk
 
-        :param error_code: 错误码。
-        :type error_code: str
-        :param error_msg: 错误描述。
-        :type error_msg: str
-        :param id: 任务ID。
+        :param id: 查询结果id
         :type id: str
-        :param name: 任务名称。
-        :type name: str
-        :param status: 操作结果。
+        :param status: 查询状态
         :type status: str
         """
         
         super(UpdateJobResponse, self).__init__()
 
-        self._error_code = None
-        self._error_msg = None
         self._id = None
-        self._name = None
         self._status = None
         self.discriminator = None
 
-        self.error_code = error_code
-        self.error_msg = error_msg
-        self.id = id
-        self.name = name
-        self.status = status
-
-    @property
-    def error_code(self):
-        """Gets the error_code of this UpdateJobResponse.
-
-        错误码。
-
-        :return: The error_code of this UpdateJobResponse.
-        :rtype: str
-        """
-        return self._error_code
-
-    @error_code.setter
-    def error_code(self, error_code):
-        """Sets the error_code of this UpdateJobResponse.
-
-        错误码。
-
-        :param error_code: The error_code of this UpdateJobResponse.
-        :type error_code: str
-        """
-        self._error_code = error_code
-
-    @property
-    def error_msg(self):
-        """Gets the error_msg of this UpdateJobResponse.
-
-        错误描述。
-
-        :return: The error_msg of this UpdateJobResponse.
-        :rtype: str
-        """
-        return self._error_msg
-
-    @error_msg.setter
-    def error_msg(self, error_msg):
-        """Sets the error_msg of this UpdateJobResponse.
-
-        错误描述。
-
-        :param error_msg: The error_msg of this UpdateJobResponse.
-        :type error_msg: str
-        """
-        self._error_msg = error_msg
+        if id is not None:
+            self.id = id
+        if status is not None:
+            self.status = status
 
     @property
     def id(self):
         """Gets the id of this UpdateJobResponse.
 
-        任务ID。
+        查询结果id
 
         :return: The id of this UpdateJobResponse.
         :rtype: str
@@ -126,7 +66,7 @@ class UpdateJobResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this UpdateJobResponse.
 
-        任务ID。
+        查询结果id
 
         :param id: The id of this UpdateJobResponse.
         :type id: str
@@ -134,32 +74,10 @@ class UpdateJobResponse(SdkResponse):
         self._id = id
 
     @property
-    def name(self):
-        """Gets the name of this UpdateJobResponse.
-
-        任务名称。
-
-        :return: The name of this UpdateJobResponse.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this UpdateJobResponse.
-
-        任务名称。
-
-        :param name: The name of this UpdateJobResponse.
-        :type name: str
-        """
-        self._name = name
-
-    @property
     def status(self):
         """Gets the status of this UpdateJobResponse.
 
-        操作结果。
+        查询状态
 
         :return: The status of this UpdateJobResponse.
         :rtype: str
@@ -170,7 +88,7 @@ class UpdateJobResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this UpdateJobResponse.
 
-        操作结果。
+        查询状态
 
         :param status: The status of this UpdateJobResponse.
         :type status: str

@@ -1601,7 +1601,7 @@ class HiLensAsyncClient(Client):
         return self.list_tasks_with_http_info(request)
 
     def list_tasks_with_http_info(self, request):
-        all_params = ['deployment_id']
+        all_params = ['deployment_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1616,6 +1616,10 @@ class HiLensAsyncClient(Client):
             path_params['deployment_id'] = local_var_params['deployment_id']
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -1662,7 +1666,7 @@ class HiLensAsyncClient(Client):
         return self.list_work_spaces_with_http_info(request)
 
     def list_work_spaces_with_http_info(self, request):
-        all_params = ['iam_user_id']
+        all_params = ['iam_user_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1677,6 +1681,10 @@ class HiLensAsyncClient(Client):
         query_params = []
         if 'iam_user_id' in local_var_params:
             query_params.append(('iam_user_id', local_var_params['iam_user_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -1908,7 +1916,7 @@ class HiLensAsyncClient(Client):
         return self.show_deployment_pods_with_http_info(request)
 
     def show_deployment_pods_with_http_info(self, request):
-        all_params = ['cluster_id', 'node_id', 'provider', 'deployment_id', 'workspace_id']
+        all_params = ['cluster_id', 'node_id', 'provider', 'deployment_id', 'workspace_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1931,6 +1939,10 @@ class HiLensAsyncClient(Client):
             query_params.append(('deployment_id', local_var_params['deployment_id']))
         if 'workspace_id' in local_var_params:
             query_params.append(('workspace_id', local_var_params['workspace_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -2722,7 +2734,7 @@ class HiLensAsyncClient(Client):
         return self.show_upgrade_progress_with_http_info(request)
 
     def show_upgrade_progress_with_http_info(self, request):
-        all_params = ['node_id']
+        all_params = ['node_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2737,6 +2749,10 @@ class HiLensAsyncClient(Client):
             path_params['node_id'] = local_var_params['node_id']
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 

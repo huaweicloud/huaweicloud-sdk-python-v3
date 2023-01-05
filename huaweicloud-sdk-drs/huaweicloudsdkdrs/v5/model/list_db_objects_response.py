@@ -22,16 +22,20 @@ class ListDbObjectsResponse(SdkResponse):
     openapi_types = {
         'target_root_db': 'TargetRootDb',
         'object_info': 'dict(str, DatabaseObject)',
-        'max_table_num': 'int'
+        'max_table_num': 'int',
+        'status': 'str',
+        'id': 'str'
     }
 
     attribute_map = {
         'target_root_db': 'target_root_db',
         'object_info': 'object_info',
-        'max_table_num': 'max_table_num'
+        'max_table_num': 'max_table_num',
+        'status': 'status',
+        'id': 'id'
     }
 
-    def __init__(self, target_root_db=None, object_info=None, max_table_num=None):
+    def __init__(self, target_root_db=None, object_info=None, max_table_num=None, status=None, id=None):
         """ListDbObjectsResponse
 
         The model defined in huaweicloud sdk
@@ -42,6 +46,10 @@ class ListDbObjectsResponse(SdkResponse):
         :type object_info: dict(str, DatabaseObject)
         :param max_table_num: 库下表数量的阈值。
         :type max_table_num: int
+        :param status: 获取提交查询对象选择信息的状态
+        :type status: str
+        :param id: 任务id
+        :type id: str
         """
         
         super(ListDbObjectsResponse, self).__init__()
@@ -49,6 +57,8 @@ class ListDbObjectsResponse(SdkResponse):
         self._target_root_db = None
         self._object_info = None
         self._max_table_num = None
+        self._status = None
+        self._id = None
         self.discriminator = None
 
         if target_root_db is not None:
@@ -57,6 +67,10 @@ class ListDbObjectsResponse(SdkResponse):
             self.object_info = object_info
         if max_table_num is not None:
             self.max_table_num = max_table_num
+        if status is not None:
+            self.status = status
+        if id is not None:
+            self.id = id
 
     @property
     def target_root_db(self):
@@ -119,6 +133,50 @@ class ListDbObjectsResponse(SdkResponse):
         :type max_table_num: int
         """
         self._max_table_num = max_table_num
+
+    @property
+    def status(self):
+        """Gets the status of this ListDbObjectsResponse.
+
+        获取提交查询对象选择信息的状态
+
+        :return: The status of this ListDbObjectsResponse.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ListDbObjectsResponse.
+
+        获取提交查询对象选择信息的状态
+
+        :param status: The status of this ListDbObjectsResponse.
+        :type status: str
+        """
+        self._status = status
+
+    @property
+    def id(self):
+        """Gets the id of this ListDbObjectsResponse.
+
+        任务id
+
+        :return: The id of this ListDbObjectsResponse.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ListDbObjectsResponse.
+
+        任务id
+
+        :param id: The id of this ListDbObjectsResponse.
+        :type id: str
+        """
+        self._id = id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

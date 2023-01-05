@@ -40,13 +40,13 @@ class CreateTestCaseRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param name: 云测页面上显示的用例名称，长度为[3-128]位字符
+        :param name: 页面上显示的用例名称，长度为[3-128]位字符
         :type name: str
         :param service_id: 该值由注册接口返回,取值范围为10-9999
         :type service_id: int
-        :param rank_id: 测试用例等级，可选值为[0,1,2,3,4]，不填时云测默认为2
+        :param rank_id: 测试用例等级，可选值为[0,1,2,3,4]，不填时默认为2
         :type rank_id: str
-        :param testcase_number: 用例编号，不填该值时云测会自动生成，长度为[3-128]位字符
+        :param testcase_number: 用例编号，不填该值时会自动生成，长度为[3-128]位字符
         :type testcase_number: str
         :param extend_info: 
         :type extend_info: :class:`huaweicloudsdkcloudtest.v1.ExternalServiceCaseInfo`
@@ -74,7 +74,7 @@ class CreateTestCaseRequestBody:
     def name(self):
         """Gets the name of this CreateTestCaseRequestBody.
 
-        云测页面上显示的用例名称，长度为[3-128]位字符
+        页面上显示的用例名称，长度为[3-128]位字符
 
         :return: The name of this CreateTestCaseRequestBody.
         :rtype: str
@@ -85,7 +85,7 @@ class CreateTestCaseRequestBody:
     def name(self, name):
         """Sets the name of this CreateTestCaseRequestBody.
 
-        云测页面上显示的用例名称，长度为[3-128]位字符
+        页面上显示的用例名称，长度为[3-128]位字符
 
         :param name: The name of this CreateTestCaseRequestBody.
         :type name: str
@@ -118,7 +118,7 @@ class CreateTestCaseRequestBody:
     def rank_id(self):
         """Gets the rank_id of this CreateTestCaseRequestBody.
 
-        测试用例等级，可选值为[0,1,2,3,4]，不填时云测默认为2
+        测试用例等级，可选值为[0,1,2,3,4]，不填时默认为2
 
         :return: The rank_id of this CreateTestCaseRequestBody.
         :rtype: str
@@ -129,7 +129,7 @@ class CreateTestCaseRequestBody:
     def rank_id(self, rank_id):
         """Sets the rank_id of this CreateTestCaseRequestBody.
 
-        测试用例等级，可选值为[0,1,2,3,4]，不填时云测默认为2
+        测试用例等级，可选值为[0,1,2,3,4]，不填时默认为2
 
         :param rank_id: The rank_id of this CreateTestCaseRequestBody.
         :type rank_id: str
@@ -140,7 +140,7 @@ class CreateTestCaseRequestBody:
     def testcase_number(self):
         """Gets the testcase_number of this CreateTestCaseRequestBody.
 
-        用例编号，不填该值时云测会自动生成，长度为[3-128]位字符
+        用例编号，不填该值时会自动生成，长度为[3-128]位字符
 
         :return: The testcase_number of this CreateTestCaseRequestBody.
         :rtype: str
@@ -151,7 +151,7 @@ class CreateTestCaseRequestBody:
     def testcase_number(self, testcase_number):
         """Sets the testcase_number of this CreateTestCaseRequestBody.
 
-        用例编号，不填该值时云测会自动生成，长度为[3-128]位字符
+        用例编号，不填该值时会自动生成，长度为[3-128]位字符
 
         :param testcase_number: The testcase_number of this CreateTestCaseRequestBody.
         :type testcase_number: str

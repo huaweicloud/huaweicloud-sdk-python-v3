@@ -200,6 +200,10 @@ from huaweicloudsdkdws.v2.model.maintain_window import MaintainWindow
 from huaweicloudsdkdws.v2.model.maintenance_window import MaintenanceWindow
 from huaweicloudsdkdws.v2.model.modify_cluster_dns import ModifyClusterDns
 from huaweicloudsdkdws.v2.model.net_resp import NetResp
+from huaweicloudsdkdws.v2.model.node_type_available_zones import NodeTypeAvailableZones
+from huaweicloudsdkdws.v2.model.node_type_datastores import NodeTypeDatastores
+from huaweicloudsdkdws.v2.model.node_type_datastores_attachments import NodeTypeDatastoresAttachments
+from huaweicloudsdkdws.v2.model.node_type_elastic_volume_specs import NodeTypeElasticVolumeSpecs
 from huaweicloudsdkdws.v2.model.node_types import NodeTypes
 from huaweicloudsdkdws.v2.model.nodes import Nodes
 from huaweicloudsdkdws.v2.model.open_public_ip import OpenPublicIp
@@ -264,6 +268,7 @@ from huaweicloudsdkdws.v2.model.update_event_sub_response import UpdateEventSubR
 from huaweicloudsdkdws.v2.model.update_maintenance_window_request import UpdateMaintenanceWindowRequest
 from huaweicloudsdkdws.v2.model.update_maintenance_window_response import UpdateMaintenanceWindowResponse
 from huaweicloudsdkdws.v2.model.volume import Volume
+from huaweicloudsdkdws.v2.model.volume_resp import VolumeResp
 from huaweicloudsdkdws.v2.model.workload_plan_req import WorkloadPlanReq
 from huaweicloudsdkdws.v2.model.workload_queue import WorkloadQueue
 from huaweicloudsdkdws.v2.model.workload_queue_req import WorkloadQueueReq

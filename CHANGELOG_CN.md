@@ -1,3 +1,192 @@
+# 3.1.21 2023-01-05
+
+### HuaweiCloud SDK CPH
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListProjectTags`
+    - `ListResourceTags`
+    - `ListResourceInstances`
+    - `BatchCreateTags`
+    - `BatchDeleteTags`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListCloudPhoneServers`新增响应参数 `enterprise_project_id`
+  - 接口`ShowCloudPhoneServerDetail`新增响应参数 `enterprise_project_id`
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 支持接口`ListConfigHistories`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DNS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除以下接口：
+    - `ListResoleRules`
+    - `SetPrivateZoneProxyPattern`
+    - `ShowDomainQuota`
+    - `ShowRetrieval`
+    - `CreateRetrieval`
+    - `ShowRetrievalVerification`
+    - `CreateRetrievalVerification`
+    - `ListEndpoints`
+    - `CreateEndpoint`
+    - `ShowEndpoint`
+    - `UpdateEndpoint`
+    - `DeleteEndpoint`
+    - `ListEndpointIpaddresses`
+    - `AssociateEndpointIpaddress`
+    - `DisassociateEndpointIpaddress`
+    - `ListEndpointVpcs`
+    - `CreateResolveRule`
+    - `AssociateResolveRuleRouter`
+    - `DisassociateResolveRuleRouter`
+    - `ShowResoleRule`
+    - `UpdateResolveRule`
+    - `DeleteResolveRule`
+    - `BatchDeleteZones`
+    - `BatchDeletePtrRecords`
+    - `BatchSetZonesStatus`
+    - `BatchSetRecordSetsStatus`
+    - `BatchDeleteRecordSets`
+  - 接口`CreatePrivateZone`:
+    - 新增请求参数 `proxy_pattern`
+    - 新增响应参数 `proxy_pattern`
+  - 接口`ListPrivateZones`新增响应参数 `proxy_pattern`
+
+### HuaweiCloud SDK DRIS
+
+- _新增特性_
+  - 支持接口`BatchShowRadars`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DRS
+
+- _新增特性_
+  - 支持接口`ShowDbObjectCollectionStatus`、`ShowUpdateObjectSavingStatus`、`CollectDbObjectsAsync`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListDbObjects`:
+    - 新增请求参数 `db_names`
+    - 新增响应参数 `status`、`id`
+
+### HuaweiCloud SDK DWS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListNodeTypes`新增响应参数 `count`、`datastore_type`、`available_zones`、`ram`、`vcpus`、`datastores`、`volume`、`elastic_volume_specs`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListFunctionTriggers`响应参数`trigger_status`新增枚举值`DISABLED`, 移除枚举值`DISABLE`
+  - 接口`UpdateTrigger`请求参数`trigger_status`新增枚举值`DISABLED`, 移除枚举值`DISABLE`
+  - 接口`ShowFunctionTrigger`响应参数`trigger_status`新增枚举值`DISABLED`, 移除枚举值`DISABLE`
+  - 接口`CreateWorkflow`新增请求参数 `enable_stream_response`
+  - 接口`UpdateWorkFlow`新增请求参数 `enable_stream_response`
+  - 接口`ShowWorkFlow`新增响应参数 `enable_stream_response`
+
+### HuaweiCloud SDK HiLens
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowNodes`新增响应参数 `deployment_num`
+  - 接口`ShowNode`新增响应参数 `cluster_node_type`
+  - 接口`ShowUpgradeProgress`新增请求参数 `offset`、`limit`
+  - 接口`ListTasks`新增请求参数 `offset`、`limit`
+  - 接口`ShowDeploymentPods`新增请求参数 `offset`、`limit`
+  - 接口`ListWorkSpaces`新增请求参数 `offset`、`limit`
+
+### HuaweiCloud SDK IoTEdge
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateEdgeNode`请求参数`app_version`改为非必填
+  - 接口`ShowEdgeNode`新增响应参数 `reliability_level`
+
+### HuaweiCloud SDK Live
+
+- _新增特性_
+  - 支持接口`ListUpStreamDetail`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListBandwidthDetail`:
+    - 新增请求参数 `service_type`
+    - 请求参数`play_domains`改为必填
+  - 接口`ListDomainTrafficDetail`:
+    - 新增请求参数 `service_type`
+    - 请求参数`play_domains`改为必填
+  - 接口`ListDomainBandwidthPeak`:
+    - 新增请求参数 `service_type`
+    - 请求参数`play_domains`改为必填
+  - 接口`ListDomainTrafficSummary`:
+    - 新增请求参数 `service_type`
+    - 请求参数`play_domains`改为必填
+  - 接口`ListUsersOfStream`新增请求参数 `service_type`
+  - 接口`ShowUpBandwidth`新增请求参数 `type`
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateSearchCriterias`:
+    - 新增请求参数 `eps_id`
+    - 移除请求参数 `epsId`
+  - 接口`DeleteSearchCriterias`:
+    - 新增请求参数 `eps_id`
+    - 移除请求参数 `epsId`
+
+### HuaweiCloud SDK Moderation
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RunTextModeration`新增请求参数 `white_glossary_names`
+
+### HuaweiCloud SDK VPC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListPorts`:
+    - 新增请求参数 `security_groups`
+    - 请求参数`fixed_ips`类型调整 `string` -> `array`
+
 # 3.1.20 2022-12-29
 
 ### HuaweiCloud SDK APIG

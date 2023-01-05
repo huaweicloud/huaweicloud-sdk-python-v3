@@ -36,6 +36,7 @@ class Server:
         'resource_project_id': 'str',
         'metadata': 'ServerMetadata',
         'network_version': 'str',
+        'enterprise_project_id': 'str',
         'create_time': 'str',
         'update_time': 'str'
     }
@@ -57,11 +58,12 @@ class Server:
         'resource_project_id': 'resource_project_id',
         'metadata': 'metadata',
         'network_version': 'network_version',
+        'enterprise_project_id': 'enterprise_project_id',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, server_name=None, availability_zone=None, server_id=None, server_model_name=None, phone_model_name=None, keypair_name=None, status=None, vpc_id=None, cidr=None, vpc_cidr=None, subnet_id=None, subnet_cidr=None, addresses=None, resource_project_id=None, metadata=None, network_version=None, create_time=None, update_time=None):
+    def __init__(self, server_name=None, availability_zone=None, server_id=None, server_model_name=None, phone_model_name=None, keypair_name=None, status=None, vpc_id=None, cidr=None, vpc_cidr=None, subnet_id=None, subnet_cidr=None, addresses=None, resource_project_id=None, metadata=None, network_version=None, enterprise_project_id=None, create_time=None, update_time=None):
         """Server
 
         The model defined in huaweicloud sdk
@@ -98,6 +100,8 @@ class Server:
         :type metadata: :class:`huaweicloudsdkcph.v1.ServerMetadata`
         :param network_version: 是否为自定义网络的云手机服务器标识。  \&quot;v1\&quot;，非自定义网络的云手机服务器。  v2\&quot;，自定义网络的云手机服务器。 支持按照网络版本字段进行筛选
         :type network_version: str
+        :param enterprise_project_id: 云手机服务器所属企业项目ID。
+        :type enterprise_project_id: str
         :param create_time: 创建时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
         :type create_time: str
         :param update_time: 更新时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
@@ -122,6 +126,7 @@ class Server:
         self._resource_project_id = None
         self._metadata = None
         self._network_version = None
+        self._enterprise_project_id = None
         self._create_time = None
         self._update_time = None
         self.discriminator = None
@@ -158,6 +163,8 @@ class Server:
             self.metadata = metadata
         if network_version is not None:
             self.network_version = network_version
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -510,6 +517,28 @@ class Server:
         :type network_version: str
         """
         self._network_version = network_version
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this Server.
+
+        云手机服务器所属企业项目ID。
+
+        :return: The enterprise_project_id of this Server.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this Server.
+
+        云手机服务器所属企业项目ID。
+
+        :param enterprise_project_id: The enterprise_project_id of this Server.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def create_time(self):

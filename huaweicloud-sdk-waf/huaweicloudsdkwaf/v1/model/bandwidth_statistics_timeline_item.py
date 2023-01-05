@@ -36,7 +36,7 @@ class BandwidthStatisticsTimelineItem:
 
         :param key: 键值，包括带宽（BANDWIDTH）、入带宽（IN_BANDWIDTH）以及出带宽（OUT_BANDWIDTH）
         :type key: str
-        :param timeline: 对应键值的时间线统计数据
+        :param timeline: 对应键值的时间线统计数据，包含两个字段，time字段值为时间点；num字段为time对应时间点与前一时间点间隔内的统计数值
         :type timeline: list[:class:`huaweicloudsdkwaf.v1.TimeLineItem`]
         """
         
@@ -77,7 +77,7 @@ class BandwidthStatisticsTimelineItem:
     def timeline(self):
         """Gets the timeline of this BandwidthStatisticsTimelineItem.
 
-        对应键值的时间线统计数据
+        对应键值的时间线统计数据，包含两个字段，time字段值为时间点；num字段为time对应时间点与前一时间点间隔内的统计数值
 
         :return: The timeline of this BandwidthStatisticsTimelineItem.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.TimeLineItem`]
@@ -88,7 +88,7 @@ class BandwidthStatisticsTimelineItem:
     def timeline(self, timeline):
         """Sets the timeline of this BandwidthStatisticsTimelineItem.
 
-        对应键值的时间线统计数据
+        对应键值的时间线统计数据，包含两个字段，time字段值为时间点；num字段为time对应时间点与前一时间点间隔内的统计数值
 
         :param timeline: The timeline of this BandwidthStatisticsTimelineItem.
         :type timeline: list[:class:`huaweicloudsdkwaf.v1.TimeLineItem`]

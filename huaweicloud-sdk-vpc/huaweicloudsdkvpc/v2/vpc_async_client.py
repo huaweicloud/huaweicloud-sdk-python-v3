@@ -1235,7 +1235,7 @@ class VpcAsyncClient(Client):
         return self.list_ports_with_http_info(request)
 
     def list_ports_with_http_info(self, request):
-        all_params = ['name', 'id', 'limit', 'admin_state_up', 'network_id', 'mac_address', 'device_id', 'device_owner', 'status', 'marker', 'fixed_ips', 'enterprise_project_id']
+        all_params = ['name', 'id', 'limit', 'admin_state_up', 'network_id', 'mac_address', 'device_id', 'device_owner', 'status', 'security_groups', 'marker', 'fixed_ips', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1266,10 +1266,14 @@ class VpcAsyncClient(Client):
             query_params.append(('device_owner', local_var_params['device_owner']))
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
+        if 'security_groups' in local_var_params:
+            query_params.append(('security_groups', local_var_params['security_groups']))
+            collection_formats['security_groups'] = 'multi'
         if 'marker' in local_var_params:
             query_params.append(('marker', local_var_params['marker']))
         if 'fixed_ips' in local_var_params:
             query_params.append(('fixed_ips', local_var_params['fixed_ips']))
+            collection_formats['fixed_ips'] = 'multi'
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 

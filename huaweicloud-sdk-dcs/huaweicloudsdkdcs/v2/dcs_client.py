@@ -1663,6 +1663,70 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_config_histories(self, request):
+        """查询实例参数修改记录列表
+
+        查询实例的参数修改记录列表，支持按照关键字查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListConfigHistories
+        :type request: :class:`huaweicloudsdkdcs.v2.ListConfigHistoriesRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.ListConfigHistoriesResponse`
+        """
+        return self.list_config_histories_with_http_info(request)
+
+    def list_config_histories_with_http_info(self, request):
+        all_params = ['instance_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/config-histories',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListConfigHistoriesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_configurations(self, request):
         """查询实例配置参数
 

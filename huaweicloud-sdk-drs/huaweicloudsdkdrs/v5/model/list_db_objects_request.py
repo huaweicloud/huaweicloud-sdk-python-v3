@@ -24,7 +24,8 @@ class ListDbObjectsRequest:
         'x_language': 'str',
         'offset': 'int',
         'limit': 'int',
-        'type': 'str'
+        'type': 'str',
+        'db_names': 'list[str]'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class ListDbObjectsRequest:
         'x_language': 'X-Language',
         'offset': 'offset',
         'limit': 'limit',
-        'type': 'type'
+        'type': 'type',
+        'db_names': 'db_names'
     }
 
-    def __init__(self, job_id=None, x_language=None, offset=None, limit=None, type=None):
+    def __init__(self, job_id=None, x_language=None, offset=None, limit=None, type=None, db_names=None):
         """ListDbObjectsRequest
 
         The model defined in huaweicloud sdk
@@ -48,8 +50,10 @@ class ListDbObjectsRequest:
         :type offset: int
         :param limit: 每页显示的条目数量
         :type limit: int
-        :param type: 查询对象信息类型。取值： - source：查询源库对象信息。 - modified：查询已选择的（未下发与已同步的）对象信息。 - synchronized：查询已同步的（已下发的）对象信息 。
+        :param type: 查询对象信息类型。取值： - source：查询源库对象信息。 - modified：查询已选择的（已同步的和未下发的）对象信息。 - synchronized：查询已同步的（已下发的）对象信息 ， 使用场景在任务处于全量中或者增量中。
         :type type: str
+        :param db_names: 查询指定库的信息
+        :type db_names: list[str]
         """
         
         
@@ -59,6 +63,7 @@ class ListDbObjectsRequest:
         self._offset = None
         self._limit = None
         self._type = None
+        self._db_names = None
         self.discriminator = None
 
         self.job_id = job_id
@@ -69,6 +74,8 @@ class ListDbObjectsRequest:
         if limit is not None:
             self.limit = limit
         self.type = type
+        if db_names is not None:
+            self.db_names = db_names
 
     @property
     def job_id(self):
@@ -162,7 +169,7 @@ class ListDbObjectsRequest:
     def type(self):
         """Gets the type of this ListDbObjectsRequest.
 
-        查询对象信息类型。取值： - source：查询源库对象信息。 - modified：查询已选择的（未下发与已同步的）对象信息。 - synchronized：查询已同步的（已下发的）对象信息 。
+        查询对象信息类型。取值： - source：查询源库对象信息。 - modified：查询已选择的（已同步的和未下发的）对象信息。 - synchronized：查询已同步的（已下发的）对象信息 ， 使用场景在任务处于全量中或者增量中。
 
         :return: The type of this ListDbObjectsRequest.
         :rtype: str
@@ -173,12 +180,34 @@ class ListDbObjectsRequest:
     def type(self, type):
         """Sets the type of this ListDbObjectsRequest.
 
-        查询对象信息类型。取值： - source：查询源库对象信息。 - modified：查询已选择的（未下发与已同步的）对象信息。 - synchronized：查询已同步的（已下发的）对象信息 。
+        查询对象信息类型。取值： - source：查询源库对象信息。 - modified：查询已选择的（已同步的和未下发的）对象信息。 - synchronized：查询已同步的（已下发的）对象信息 ， 使用场景在任务处于全量中或者增量中。
 
         :param type: The type of this ListDbObjectsRequest.
         :type type: str
         """
         self._type = type
+
+    @property
+    def db_names(self):
+        """Gets the db_names of this ListDbObjectsRequest.
+
+        查询指定库的信息
+
+        :return: The db_names of this ListDbObjectsRequest.
+        :rtype: list[str]
+        """
+        return self._db_names
+
+    @db_names.setter
+    def db_names(self, db_names):
+        """Sets the db_names of this ListDbObjectsRequest.
+
+        查询指定库的信息
+
+        :param db_names: The db_names of this ListDbObjectsRequest.
+        :type db_names: list[str]
+        """
+        self._db_names = db_names
 
     def to_dict(self):
         """Returns the model properties as a dict"""

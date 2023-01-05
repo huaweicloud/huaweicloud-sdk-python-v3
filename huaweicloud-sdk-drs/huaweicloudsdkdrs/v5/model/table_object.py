@@ -29,7 +29,7 @@ class TableObject:
         'filtered': 'bool',
         'filter_conditions': 'list[str]',
         'config_conditions': 'list[str]',
-        'has_been_sent': 'bool',
+        'is_synchronized': 'bool',
         'columns': 'dict(str, ColumnObject)'
     }
 
@@ -43,11 +43,11 @@ class TableObject:
         'filtered': 'filtered',
         'filter_conditions': 'filter_conditions',
         'config_conditions': 'config_conditions',
-        'has_been_sent': 'has_been_sent',
+        'is_synchronized': 'is_synchronized',
         'columns': 'columns'
     }
 
-    def __init__(self, sync_type=None, type=None, name=None, all=None, db_alias_name=None, schema_alias_name=None, filtered=None, filter_conditions=None, config_conditions=None, has_been_sent=None, columns=None):
+    def __init__(self, sync_type=None, type=None, name=None, all=None, db_alias_name=None, schema_alias_name=None, filtered=None, filter_conditions=None, config_conditions=None, is_synchronized=None, columns=None):
         """TableObject
 
         The model defined in huaweicloud sdk
@@ -70,8 +70,8 @@ class TableObject:
         :type filter_conditions: list[str]
         :param config_conditions: 该表数据过滤高级设置的配置条件，当该表作为联表查询时填写，生成加工规则值为SQL条件语句，长度限制512。
         :type config_conditions: list[str]
-        :param has_been_sent: 是否已经进行同步。
-        :type has_been_sent: bool
+        :param is_synchronized: 是否已经进行同步。
+        :type is_synchronized: bool
         :param columns: 需要同步/映射/过滤/新增的列，当需要列过滤、列映射、附加列功能时填写，仅在实时同步任务中生效，当整表同步为false时需要填写。
         :type columns: dict(str, ColumnObject)
         """
@@ -87,7 +87,7 @@ class TableObject:
         self._filtered = None
         self._filter_conditions = None
         self._config_conditions = None
-        self._has_been_sent = None
+        self._is_synchronized = None
         self._columns = None
         self.discriminator = None
 
@@ -109,8 +109,8 @@ class TableObject:
             self.filter_conditions = filter_conditions
         if config_conditions is not None:
             self.config_conditions = config_conditions
-        if has_been_sent is not None:
-            self.has_been_sent = has_been_sent
+        if is_synchronized is not None:
+            self.is_synchronized = is_synchronized
         if columns is not None:
             self.columns = columns
 
@@ -313,26 +313,26 @@ class TableObject:
         self._config_conditions = config_conditions
 
     @property
-    def has_been_sent(self):
-        """Gets the has_been_sent of this TableObject.
+    def is_synchronized(self):
+        """Gets the is_synchronized of this TableObject.
 
         是否已经进行同步。
 
-        :return: The has_been_sent of this TableObject.
+        :return: The is_synchronized of this TableObject.
         :rtype: bool
         """
-        return self._has_been_sent
+        return self._is_synchronized
 
-    @has_been_sent.setter
-    def has_been_sent(self, has_been_sent):
-        """Sets the has_been_sent of this TableObject.
+    @is_synchronized.setter
+    def is_synchronized(self, is_synchronized):
+        """Sets the is_synchronized of this TableObject.
 
         是否已经进行同步。
 
-        :param has_been_sent: The has_been_sent of this TableObject.
-        :type has_been_sent: bool
+        :param is_synchronized: The is_synchronized of this TableObject.
+        :type is_synchronized: bool
         """
-        self._has_been_sent = has_been_sent
+        self._is_synchronized = is_synchronized
 
     @property
     def columns(self):

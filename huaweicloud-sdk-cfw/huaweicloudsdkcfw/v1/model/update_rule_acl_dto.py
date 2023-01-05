@@ -84,7 +84,7 @@ class UpdateRuleAclDto:
         :type long_connect_time_second: int
         :param long_connect_time: 长连接时长
         :type long_connect_time: int
-        :param long_connect_enable: 是否支持长连接，0表示支持，1表示不支持
+        :param long_connect_enable: 是否支持长连接，0表示不支持，1表示支持
         :type long_connect_enable: int
         :param source: 
         :type source: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
@@ -391,7 +391,7 @@ class UpdateRuleAclDto:
     def long_connect_enable(self):
         """Gets the long_connect_enable of this UpdateRuleAclDto.
 
-        是否支持长连接，0表示支持，1表示不支持
+        是否支持长连接，0表示不支持，1表示支持
 
         :return: The long_connect_enable of this UpdateRuleAclDto.
         :rtype: int
@@ -402,7 +402,7 @@ class UpdateRuleAclDto:
     def long_connect_enable(self, long_connect_enable):
         """Sets the long_connect_enable of this UpdateRuleAclDto.
 
-        是否支持长连接，0表示支持，1表示不支持
+        是否支持长连接，0表示不支持，1表示支持
 
         :param long_connect_enable: The long_connect_enable of this UpdateRuleAclDto.
         :type long_connect_enable: int

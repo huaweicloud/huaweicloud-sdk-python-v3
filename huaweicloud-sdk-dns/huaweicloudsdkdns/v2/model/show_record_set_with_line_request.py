@@ -36,7 +36,7 @@ class ShowRecordSetWithLineRequest:
 
         :param zone_id: 所属zone的ID。
         :type zone_id: str
-        :param recordset_id: 
+        :param recordset_id: 待查询recordset的ID信息。
         :type recordset_id: str
         """
         
@@ -75,6 +75,8 @@ class ShowRecordSetWithLineRequest:
     def recordset_id(self):
         """Gets the recordset_id of this ShowRecordSetWithLineRequest.
 
+        待查询recordset的ID信息。
+
         :return: The recordset_id of this ShowRecordSetWithLineRequest.
         :rtype: str
         """
@@ -83,6 +85,8 @@ class ShowRecordSetWithLineRequest:
     @recordset_id.setter
     def recordset_id(self, recordset_id):
         """Sets the recordset_id of this ShowRecordSetWithLineRequest.
+
+        待查询recordset的ID信息。
 
         :param recordset_id: The recordset_id of this ShowRecordSetWithLineRequest.
         :type recordset_id: str

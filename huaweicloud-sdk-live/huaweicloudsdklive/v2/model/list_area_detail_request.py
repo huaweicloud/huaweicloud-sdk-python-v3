@@ -54,7 +54,7 @@ class ListAreaDetailRequest:
         :type start_time: str
         :param end_time: 查询结束时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期90天。 
         :type end_time: str
-        :param play_domains: 需查询的播放域名列表，最多支持查询10个域名。 
+        :param play_domains: 需查询的播放域名列表，最多支持查询15个域名。 
         :type play_domains: list[str]
         :param app: 需查询的app。 
         :type app: str
@@ -64,7 +64,7 @@ class ListAreaDetailRequest:
         :type interval: int
         :param isp: 运营商列表，取值如下： - CMCC：移动 - CTCC：电信 - CUCC：联通 - OTHER：其他  若参数为空，则查询所有运营商。 
         :type isp: list[str]
-        :param area: 需查询的计费大区，取值如下： - CN - AP1 - AP2 - AP3 - EU - MEAA - NA - SA 
+        :param area: 需查询的计费大区，取值如下： - CN：中国内地。 - AP1：亚太1区。 - AP2：亚太2区。 - AP3：亚太3区。 - MEAA：中东非洲。 - SA：南美。 - EU：欧洲。 - ALL：全部。  中国内地返回结果为省份/直辖市的中文名称，比如：广东、上海； 海外大区与地区/国家的对应关系请参考[地区/国家代码对照表](live_03_0049.xml)。 
         :type area: list[str]
         :param metric: 指标，取值如下： - bandwidth：带宽 - traffic：流量 - player：观众数 
         :type metric: str
@@ -150,7 +150,7 @@ class ListAreaDetailRequest:
     def play_domains(self):
         """Gets the play_domains of this ListAreaDetailRequest.
 
-        需查询的播放域名列表，最多支持查询10个域名。 
+        需查询的播放域名列表，最多支持查询15个域名。 
 
         :return: The play_domains of this ListAreaDetailRequest.
         :rtype: list[str]
@@ -161,7 +161,7 @@ class ListAreaDetailRequest:
     def play_domains(self, play_domains):
         """Sets the play_domains of this ListAreaDetailRequest.
 
-        需查询的播放域名列表，最多支持查询10个域名。 
+        需查询的播放域名列表，最多支持查询15个域名。 
 
         :param play_domains: The play_domains of this ListAreaDetailRequest.
         :type play_domains: list[str]
@@ -260,7 +260,7 @@ class ListAreaDetailRequest:
     def area(self):
         """Gets the area of this ListAreaDetailRequest.
 
-        需查询的计费大区，取值如下： - CN - AP1 - AP2 - AP3 - EU - MEAA - NA - SA 
+        需查询的计费大区，取值如下： - CN：中国内地。 - AP1：亚太1区。 - AP2：亚太2区。 - AP3：亚太3区。 - MEAA：中东非洲。 - SA：南美。 - EU：欧洲。 - ALL：全部。  中国内地返回结果为省份/直辖市的中文名称，比如：广东、上海； 海外大区与地区/国家的对应关系请参考[地区/国家代码对照表](live_03_0049.xml)。 
 
         :return: The area of this ListAreaDetailRequest.
         :rtype: list[str]
@@ -271,7 +271,7 @@ class ListAreaDetailRequest:
     def area(self, area):
         """Sets the area of this ListAreaDetailRequest.
 
-        需查询的计费大区，取值如下： - CN - AP1 - AP2 - AP3 - EU - MEAA - NA - SA 
+        需查询的计费大区，取值如下： - CN：中国内地。 - AP1：亚太1区。 - AP2：亚太2区。 - AP3：亚太3区。 - MEAA：中东非洲。 - SA：南美。 - EU：欧洲。 - ALL：全部。  中国内地返回结果为省份/直辖市的中文名称，比如：广东、上海； 海外大区与地区/国家的对应关系请参考[地区/国家代码对照表](live_03_0049.xml)。 
 
         :param area: The area of this ListAreaDetailRequest.
         :type area: list[str]

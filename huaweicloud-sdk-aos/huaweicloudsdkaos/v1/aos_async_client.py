@@ -243,71 +243,6 @@ class AosAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def delete_stack_async(self, request):
-        """删除资源栈
-
-        删除资源栈
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteStack
-        :type request: :class:`huaweicloudsdkaos.v1.DeleteStackRequest`
-        :rtype: :class:`huaweicloudsdkaos.v1.DeleteStackResponse`
-        """
-        return self.delete_stack_with_http_info(request)
-
-    def delete_stack_with_http_info(self, request):
-        all_params = ['client_request_id', 'stack_name', 'stack_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'stack_name' in local_var_params:
-            path_params['stack_name'] = local_var_params['stack_name']
-
-        query_params = []
-        if 'stack_id' in local_var_params:
-            query_params.append(('stack_id', local_var_params['stack_id']))
-
-        header_params = {}
-        if 'client_request_id' in local_var_params:
-            header_params['Client-Request-Id'] = local_var_params['client_request_id']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['token']
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks/{stack_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteStackResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def describe_execution_plan_async(self, request):
         """描述执行计划当前的状态，返回执行计划的元数据
 
@@ -515,6 +450,343 @@ class AosAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_execution_plans_async(self, request):
+        """列举执行计划
+
+        列举执行计划
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListExecutionPlans
+        :type request: :class:`huaweicloudsdkaos.v1.ListExecutionPlansRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.ListExecutionPlansResponse`
+        """
+        return self.list_execution_plans_with_http_info(request)
+
+    def list_execution_plans_with_http_info(self, request):
+        all_params = ['client_request_id', 'stack_name', 'stack_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'stack_name' in local_var_params:
+            path_params['stack_name'] = local_var_params['stack_name']
+
+        query_params = []
+        if 'stack_id' in local_var_params:
+            query_params.append(('stack_id', local_var_params['stack_id']))
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/stacks/{stack_name}/execution-plans',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListExecutionPlansResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def continue_rollback_stack_async(self, request):
+        """继续回滚资源栈
+
+        如果资源栈开启了自动回滚，在部署失败的时候则会自动回滚。但是自动回滚依然有可能失败，用户可以根据错误信息修复后，调用ContinueRollbackStack触发继续回滚，即重试回滚
+        
+        * 如果资源栈当前可以回滚，即处于&#x60;ROLLBACK_FAILED&#x60;，则返回202与对应生成的deploymentId，否则将不允许回滚并返回响应的错误码
+        * 继续回滚也有可能会回滚失败。如果失败，用户可以从ListStackEvents获取对应的log，解决后可再次调用ContinueRollbackStack去继续触发回滚
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ContinueRollbackStack
+        :type request: :class:`huaweicloudsdkaos.v1.ContinueRollbackStackRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.ContinueRollbackStackResponse`
+        """
+        return self.continue_rollback_stack_with_http_info(request)
+
+    def continue_rollback_stack_with_http_info(self, request):
+        all_params = ['client_request_id', 'stack_name', 'continue_rollback_stack_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'stack_name' in local_var_params:
+            path_params['stack_name'] = local_var_params['stack_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/stacks/{stack_name}/rollbacks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ContinueRollbackStackResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_stack_async(self, request):
+        """创建资源栈
+
+        CreateStack用于生成一个资源栈
+        
+        * 当请求中不含有模板（template）、参数（vars）等信息，将生成一个无任何资源的空资源栈，返回资源栈ID（stack_id）
+        * 当请求中携带了模板（template）、参数（vars）等信息，则会同时创建并部署资源栈，返回资源栈ID（stack_id）和部署ID（deployment_id）
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateStack
+        :type request: :class:`huaweicloudsdkaos.v1.CreateStackRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.CreateStackResponse`
+        """
+        return self.create_stack_with_http_info(request)
+
+    def create_stack_with_http_info(self, request):
+        all_params = ['client_request_id', 'create_stack_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/stacks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateStackResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_stack_async(self, request):
+        """删除资源栈
+
+        删除资源栈
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteStack
+        :type request: :class:`huaweicloudsdkaos.v1.DeleteStackRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.DeleteStackResponse`
+        """
+        return self.delete_stack_with_http_info(request)
+
+    def delete_stack_with_http_info(self, request):
+        all_params = ['client_request_id', 'stack_name', 'stack_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'stack_name' in local_var_params:
+            path_params['stack_name'] = local_var_params['stack_name']
+
+        query_params = []
+        if 'stack_id' in local_var_params:
+            query_params.append(('stack_id', local_var_params['stack_id']))
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/stacks/{stack_name}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteStackResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def deploy_stack_async(self, request):
+        """部署一个已有的资源栈
+
+        部署一个已有的资源栈
+        
+        * 用户可以使用此API更新模板、参数等并触发一个新的部署
+        
+        * 此API会直接触发部署，如果用户希望先确认部署会发生的时间，请使用执行计划，即使用CreateExecutionPlan以创建执行计划、使用GetExecutionPlan以获取执行计划
+        
+        * 此API为全量API，即用户每次部署都需要给予所想要使用的template、vars的全量
+        
+        * 当触发的部署失败时，如果资源栈开启了自动回滚，会触发自动回滚的流程，否则就会停留在部署失败时的状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeployStack
+        :type request: :class:`huaweicloudsdkaos.v1.DeployStackRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.DeployStackResponse`
+        """
+        return self.deploy_stack_with_http_info(request)
+
+    def deploy_stack_with_http_info(self, request):
+        all_params = ['client_request_id', 'stack_name', 'deploy_stack_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'stack_name' in local_var_params:
+            path_params['stack_name'] = local_var_params['stack_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/stacks/{stack_name}/deployments',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeployStackResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def get_stack_metadata_async(self, request):
         """描述栈的状态，返回栈的元数据
 
@@ -640,71 +912,6 @@ class AosAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='GetStackTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def list_execution_plans_async(self, request):
-        """列举执行计划
-
-        列举执行计划
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListExecutionPlans
-        :type request: :class:`huaweicloudsdkaos.v1.ListExecutionPlansRequest`
-        :rtype: :class:`huaweicloudsdkaos.v1.ListExecutionPlansResponse`
-        """
-        return self.list_execution_plans_with_http_info(request)
-
-    def list_execution_plans_with_http_info(self, request):
-        all_params = ['client_request_id', 'stack_name', 'stack_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'stack_name' in local_var_params:
-            path_params['stack_name'] = local_var_params['stack_name']
-
-        query_params = []
-        if 'stack_id' in local_var_params:
-            query_params.append(('stack_id', local_var_params['stack_id']))
-
-        header_params = {}
-        if 'client_request_id' in local_var_params:
-            header_params['Client-Request-Id'] = local_var_params['client_request_id']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['token']
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks/{stack_name}/execution-plans',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListExecutionPlansResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -907,276 +1114,6 @@ class AosAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def parse_template_variables_async(self, request):
-        """此命令用于解析模板参数
-
-        此命令用于解析模板参数
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ParseTemplateVariables
-        :type request: :class:`huaweicloudsdkaos.v1.ParseTemplateVariablesRequest`
-        :rtype: :class:`huaweicloudsdkaos.v1.ParseTemplateVariablesResponse`
-        """
-        return self.parse_template_variables_with_http_info(request)
-
-    def parse_template_variables_with_http_info(self, request):
-        all_params = ['client_request_id', 'parse_template_variables_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'client_request_id' in local_var_params:
-            header_params['Client-Request-Id'] = local_var_params['client_request_id']
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['token']
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/template-analyses/variables',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ParseTemplateVariablesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def continue_rollback_stack_async(self, request):
-        """继续回滚资源栈
-
-        如果资源栈开启了自动回滚，在部署失败的时候则会自动回滚。但是自动回滚依然有可能失败，用户可以根据错误信息修复后，调用ContinueRollbackStack触发继续回滚，即重试回滚
-        
-        * 如果资源栈当前可以回滚，即处于&#x60;ROLLBACK_FAILED&#x60;，则返回202与对应生成的deploymentId，否则将不允许回滚并返回响应的错误码
-        * 继续回滚也有可能会回滚失败。如果失败，用户可以从ListStackEvents获取对应的log，解决后可再次调用ContinueRollbackStack去继续触发回滚
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ContinueRollbackStack
-        :type request: :class:`huaweicloudsdkaos.v1.ContinueRollbackStackRequest`
-        :rtype: :class:`huaweicloudsdkaos.v1.ContinueRollbackStackResponse`
-        """
-        return self.continue_rollback_stack_with_http_info(request)
-
-    def continue_rollback_stack_with_http_info(self, request):
-        all_params = ['client_request_id', 'stack_name', 'continue_rollback_stack_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'stack_name' in local_var_params:
-            path_params['stack_name'] = local_var_params['stack_name']
-
-        query_params = []
-
-        header_params = {}
-        if 'client_request_id' in local_var_params:
-            header_params['Client-Request-Id'] = local_var_params['client_request_id']
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['token']
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks/{stack_name}/rollbacks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ContinueRollbackStackResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def create_stack_async(self, request):
-        """创建资源栈
-
-        CreateStack用于生成一个资源栈
-        
-        * 当请求中不含有模板（template）、参数（vars）等信息，将生成一个无任何资源的空资源栈，返回资源栈ID（stack_id）
-        * 当请求中携带了模板（template）、参数（vars）等信息，则会同时创建并部署资源栈，返回资源栈ID（stack_id）和部署ID（deployment_id）
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateStack
-        :type request: :class:`huaweicloudsdkaos.v1.CreateStackRequest`
-        :rtype: :class:`huaweicloudsdkaos.v1.CreateStackResponse`
-        """
-        return self.create_stack_with_http_info(request)
-
-    def create_stack_with_http_info(self, request):
-        all_params = ['client_request_id', 'create_stack_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'client_request_id' in local_var_params:
-            header_params['Client-Request-Id'] = local_var_params['client_request_id']
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['token']
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateStackResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def deploy_stack_async(self, request):
-        """部署一个已有的资源栈
-
-        部署一个已有的资源栈
-        
-        * 用户可以使用此API更新模板、参数等并触发一个新的部署
-        
-        * 此API会直接触发部署，如果用户希望先确认部署会发生的时间，请使用执行计划，即使用CreateExecutionPlan以创建执行计划、使用GetExecutionPlan以获取执行计划
-        
-        * 此API为全量API，即用户每次部署都需要给予所想要使用的template、vars的全量
-        
-        * 当触发的部署失败时，如果资源栈开启了自动回滚，会触发自动回滚的流程，否则就会停留在部署失败时的状态
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeployStack
-        :type request: :class:`huaweicloudsdkaos.v1.DeployStackRequest`
-        :rtype: :class:`huaweicloudsdkaos.v1.DeployStackResponse`
-        """
-        return self.deploy_stack_with_http_info(request)
-
-    def deploy_stack_with_http_info(self, request):
-        all_params = ['client_request_id', 'stack_name', 'deploy_stack_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'stack_name' in local_var_params:
-            path_params['stack_name'] = local_var_params['stack_name']
-
-        query_params = []
-
-        header_params = {}
-        if 'client_request_id' in local_var_params:
-            header_params['Client-Request-Id'] = local_var_params['client_request_id']
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['token']
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks/{stack_name}/deployments',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeployStackResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def list_stacks_async(self, request):
         """列举资源栈
 
@@ -1239,6 +1176,69 @@ class AosAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListStacksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def parse_template_variables_async(self, request):
+        """此命令用于解析模板参数
+
+        此命令用于解析模板参数
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ParseTemplateVariables
+        :type request: :class:`huaweicloudsdkaos.v1.ParseTemplateVariablesRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.ParseTemplateVariablesResponse`
+        """
+        return self.parse_template_variables_with_http_info(request)
+
+    def parse_template_variables_with_http_info(self, request):
+        all_params = ['client_request_id', 'parse_template_variables_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/template-analyses/variables',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ParseTemplateVariablesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

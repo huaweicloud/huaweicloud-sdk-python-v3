@@ -29,8 +29,9 @@ class ListPortsRequest:
         'device_id': 'str',
         'device_owner': 'str',
         'status': 'str',
+        'security_groups': 'list[str]',
         'marker': 'str',
-        'fixed_ips': 'str',
+        'fixed_ips': 'list[str]',
         'enterprise_project_id': 'str'
     }
 
@@ -44,12 +45,13 @@ class ListPortsRequest:
         'device_id': 'device_id',
         'device_owner': 'device_owner',
         'status': 'status',
+        'security_groups': 'security_groups',
         'marker': 'marker',
         'fixed_ips': 'fixed_ips',
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, name=None, id=None, limit=None, admin_state_up=None, network_id=None, mac_address=None, device_id=None, device_owner=None, status=None, marker=None, fixed_ips=None, enterprise_project_id=None):
+    def __init__(self, name=None, id=None, limit=None, admin_state_up=None, network_id=None, mac_address=None, device_id=None, device_owner=None, status=None, security_groups=None, marker=None, fixed_ips=None, enterprise_project_id=None):
         """ListPortsRequest
 
         The model defined in huaweicloud sdk
@@ -72,10 +74,12 @@ class ListPortsRequest:
         :type device_owner: str
         :param status: 功能说明：按照status过滤查询  取值范围：ACTIVE、BUILD、DOWN
         :type status: str
+        :param security_groups: 按照安全组ID列表过滤查询
+        :type security_groups: list[str]
         :param marker: 分页查询起始的资源ID，为空时查询第一页
         :type marker: str
         :param fixed_ips: 按照fixed_ips&#x3D;ip_address或者fixed_ips&#x3D;subnet_id过滤查询
-        :type fixed_ips: str
+        :type fixed_ips: list[str]
         :param enterprise_project_id: 功能说明：企业项目ID，用于基于企业项目的权限管理。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。  若需要查询当前用户所有企业项目绑定的端口，请传参all_granted_eps。
         :type enterprise_project_id: str
         """
@@ -91,6 +95,7 @@ class ListPortsRequest:
         self._device_id = None
         self._device_owner = None
         self._status = None
+        self._security_groups = None
         self._marker = None
         self._fixed_ips = None
         self._enterprise_project_id = None
@@ -114,6 +119,8 @@ class ListPortsRequest:
             self.device_owner = device_owner
         if status is not None:
             self.status = status
+        if security_groups is not None:
+            self.security_groups = security_groups
         if marker is not None:
             self.marker = marker
         if fixed_ips is not None:
@@ -320,6 +327,28 @@ class ListPortsRequest:
         self._status = status
 
     @property
+    def security_groups(self):
+        """Gets the security_groups of this ListPortsRequest.
+
+        按照安全组ID列表过滤查询
+
+        :return: The security_groups of this ListPortsRequest.
+        :rtype: list[str]
+        """
+        return self._security_groups
+
+    @security_groups.setter
+    def security_groups(self, security_groups):
+        """Sets the security_groups of this ListPortsRequest.
+
+        按照安全组ID列表过滤查询
+
+        :param security_groups: The security_groups of this ListPortsRequest.
+        :type security_groups: list[str]
+        """
+        self._security_groups = security_groups
+
+    @property
     def marker(self):
         """Gets the marker of this ListPortsRequest.
 
@@ -348,7 +377,7 @@ class ListPortsRequest:
         按照fixed_ips=ip_address或者fixed_ips=subnet_id过滤查询
 
         :return: The fixed_ips of this ListPortsRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._fixed_ips
 
@@ -359,7 +388,7 @@ class ListPortsRequest:
         按照fixed_ips=ip_address或者fixed_ips=subnet_id过滤查询
 
         :param fixed_ips: The fixed_ips of this ListPortsRequest.
-        :type fixed_ips: str
+        :type fixed_ips: list[str]
         """
         self._fixed_ips = fixed_ips
 

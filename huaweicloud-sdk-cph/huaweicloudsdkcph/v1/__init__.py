@@ -8,6 +8,12 @@ from huaweicloudsdkcph.v1.cph_async_client import CphAsyncClient
 # import models into sdk package
 from huaweicloudsdkcph.v1.model.address import Address
 from huaweicloudsdkcph.v1.model.bandwidth import Bandwidth
+from huaweicloudsdkcph.v1.model.batch_create_tags_request import BatchCreateTagsRequest
+from huaweicloudsdkcph.v1.model.batch_create_tags_request_body import BatchCreateTagsRequestBody
+from huaweicloudsdkcph.v1.model.batch_create_tags_response import BatchCreateTagsResponse
+from huaweicloudsdkcph.v1.model.batch_delete_tags_request import BatchDeleteTagsRequest
+from huaweicloudsdkcph.v1.model.batch_delete_tags_request_body import BatchDeleteTagsRequestBody
+from huaweicloudsdkcph.v1.model.batch_delete_tags_response import BatchDeleteTagsResponse
 from huaweicloudsdkcph.v1.model.batch_export_cloud_phone_data_request import BatchExportCloudPhoneDataRequest
 from huaweicloudsdkcph.v1.model.batch_export_cloud_phone_data_request_body import BatchExportCloudPhoneDataRequestBody
 from huaweicloudsdkcph.v1.model.batch_export_cloud_phone_data_response import BatchExportCloudPhoneDataResponse
@@ -63,8 +69,16 @@ from huaweicloudsdkcph.v1.model.list_encode_servers_request import ListEncodeSer
 from huaweicloudsdkcph.v1.model.list_encode_servers_response import ListEncodeServersResponse
 from huaweicloudsdkcph.v1.model.list_jobs_request import ListJobsRequest
 from huaweicloudsdkcph.v1.model.list_jobs_response import ListJobsResponse
+from huaweicloudsdkcph.v1.model.list_project_tags_request import ListProjectTagsRequest
+from huaweicloudsdkcph.v1.model.list_project_tags_response import ListProjectTagsResponse
+from huaweicloudsdkcph.v1.model.list_resource_instances_request import ListResourceInstancesRequest
+from huaweicloudsdkcph.v1.model.list_resource_instances_request_body import ListResourceInstancesRequestBody
+from huaweicloudsdkcph.v1.model.list_resource_instances_response import ListResourceInstancesResponse
+from huaweicloudsdkcph.v1.model.list_resource_tags_request import ListResourceTagsRequest
+from huaweicloudsdkcph.v1.model.list_resource_tags_response import ListResourceTagsResponse
 from huaweicloudsdkcph.v1.model.list_share_files_request import ListShareFilesRequest
 from huaweicloudsdkcph.v1.model.list_share_files_response import ListShareFilesResponse
+from huaweicloudsdkcph.v1.model.match import Match
 from huaweicloudsdkcph.v1.model.migrate_info import MigrateInfo
 from huaweicloudsdkcph.v1.model.model_property import ModelProperty
 from huaweicloudsdkcph.v1.model.nic import Nic
@@ -89,6 +103,7 @@ from huaweicloudsdkcph.v1.model.push_share_files_response import PushShareFilesR
 from huaweicloudsdkcph.v1.model.reset_cloud_phone_request import ResetCloudPhoneRequest
 from huaweicloudsdkcph.v1.model.reset_cloud_phone_request_body import ResetCloudPhoneRequestBody
 from huaweicloudsdkcph.v1.model.reset_cloud_phone_response import ResetCloudPhoneResponse
+from huaweicloudsdkcph.v1.model.resource import Resource
 from huaweicloudsdkcph.v1.model.restart_cloud_phone_request import RestartCloudPhoneRequest
 from huaweicloudsdkcph.v1.model.restart_cloud_phone_request_body import RestartCloudPhoneRequestBody
 from huaweicloudsdkcph.v1.model.restart_cloud_phone_response import RestartCloudPhoneResponse
@@ -126,6 +141,8 @@ from huaweicloudsdkcph.v1.model.stop_cloud_phone_request import StopCloudPhoneRe
 from huaweicloudsdkcph.v1.model.stop_cloud_phone_request_body import StopCloudPhoneRequestBody
 from huaweicloudsdkcph.v1.model.stop_cloud_phone_response import StopCloudPhoneResponse
 from huaweicloudsdkcph.v1.model.storage_info import StorageInfo
+from huaweicloudsdkcph.v1.model.tag import Tag
+from huaweicloudsdkcph.v1.model.tags import Tags
 from huaweicloudsdkcph.v1.model.uninstall_apk_request import UninstallApkRequest
 from huaweicloudsdkcph.v1.model.uninstall_apk_request_body import UninstallApkRequestBody
 from huaweicloudsdkcph.v1.model.uninstall_apk_response import UninstallApkResponse

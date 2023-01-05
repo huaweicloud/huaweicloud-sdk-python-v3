@@ -29,6 +29,7 @@ class PrivateZoneResp:
         'serial': 'int',
         'status': 'str',
         'record_num': 'int',
+        'proxy_pattern': 'str',
         'pool_id': 'str',
         'project_id': 'str',
         'created_at': 'str',
@@ -50,6 +51,7 @@ class PrivateZoneResp:
         'serial': 'serial',
         'status': 'status',
         'record_num': 'record_num',
+        'proxy_pattern': 'proxy_pattern',
         'pool_id': 'pool_id',
         'project_id': 'project_id',
         'created_at': 'created_at',
@@ -61,7 +63,7 @@ class PrivateZoneResp:
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, id=None, name=None, description=None, email=None, zone_type=None, ttl=None, serial=None, status=None, record_num=None, pool_id=None, project_id=None, created_at=None, updated_at=None, links=None, tags=None, masters=None, routers=None, enterprise_project_id=None):
+    def __init__(self, id=None, name=None, description=None, email=None, zone_type=None, ttl=None, serial=None, status=None, record_num=None, proxy_pattern=None, pool_id=None, project_id=None, created_at=None, updated_at=None, links=None, tags=None, masters=None, routers=None, enterprise_project_id=None):
         """PrivateZoneResp
 
         The model defined in huaweicloud sdk
@@ -84,6 +86,8 @@ class PrivateZoneResp:
         :type status: str
         :param record_num: 该zone下的recordset个数。
         :type record_num: int
+        :param proxy_pattern: 内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+        :type proxy_pattern: str
         :param pool_id: 托管该zone的pool，由系统分配。
         :type pool_id: str
         :param project_id: zone所属的项目ID。
@@ -115,6 +119,7 @@ class PrivateZoneResp:
         self._serial = None
         self._status = None
         self._record_num = None
+        self._proxy_pattern = None
         self._pool_id = None
         self._project_id = None
         self._created_at = None
@@ -144,6 +149,8 @@ class PrivateZoneResp:
             self.status = status
         if record_num is not None:
             self.record_num = record_num
+        if proxy_pattern is not None:
+            self.proxy_pattern = proxy_pattern
         if pool_id is not None:
             self.pool_id = pool_id
         if project_id is not None:
@@ -360,6 +367,28 @@ class PrivateZoneResp:
         :type record_num: int
         """
         self._record_num = record_num
+
+    @property
+    def proxy_pattern(self):
+        """Gets the proxy_pattern of this PrivateZoneResp.
+
+        内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+
+        :return: The proxy_pattern of this PrivateZoneResp.
+        :rtype: str
+        """
+        return self._proxy_pattern
+
+    @proxy_pattern.setter
+    def proxy_pattern(self, proxy_pattern):
+        """Sets the proxy_pattern of this PrivateZoneResp.
+
+        内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+
+        :param proxy_pattern: The proxy_pattern of this PrivateZoneResp.
+        :type proxy_pattern: str
+        """
+        self._proxy_pattern = proxy_pattern
 
     @property
     def pool_id(self):

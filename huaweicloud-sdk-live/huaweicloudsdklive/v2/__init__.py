@@ -37,6 +37,8 @@ from huaweicloudsdklive.v2.model.list_snapshot_data_request import ListSnapshotD
 from huaweicloudsdklive.v2.model.list_snapshot_data_response import ListSnapshotDataResponse
 from huaweicloudsdklive.v2.model.list_transcode_data_request import ListTranscodeDataRequest
 from huaweicloudsdklive.v2.model.list_transcode_data_response import ListTranscodeDataResponse
+from huaweicloudsdklive.v2.model.list_up_stream_detail_request import ListUpStreamDetailRequest
+from huaweicloudsdklive.v2.model.list_up_stream_detail_response import ListUpStreamDetailResponse
 from huaweicloudsdklive.v2.model.list_users_of_stream_request import ListUsersOfStreamRequest
 from huaweicloudsdklive.v2.model.list_users_of_stream_response import ListUsersOfStreamResponse
 from huaweicloudsdklive.v2.model.peak_bandwidth_data import PeakBandwidthData
@@ -57,6 +59,7 @@ from huaweicloudsdklive.v2.model.traffic_summary_data import TrafficSummaryData
 from huaweicloudsdklive.v2.model.transcode_data import TranscodeData
 from huaweicloudsdklive.v2.model.transcode_spec import TranscodeSpec
 from huaweicloudsdklive.v2.model.transcode_summary import TranscodeSummary
+from huaweicloudsdklive.v2.model.up_stream_detail import UpStreamDetail
 from huaweicloudsdklive.v2.model.v2_bandwidth_data import V2BandwidthData
 from huaweicloudsdklive.v2.model.v2_bitrate_info import V2BitrateInfo
 from huaweicloudsdklive.v2.model.v2_framerate_info import V2FramerateInfo

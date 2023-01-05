@@ -44,15 +44,15 @@ class ListBandwidthTimelineRequest:
 
         :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
         :type enterprise_project_id: str
-        :param _from: 起始时间（13位毫秒时间戳），需要和to同时使用
+        :param _from: 查询的带宽统计数据的起始时间（13位毫秒时间戳），需要和to同时使用
         :type _from: int
-        :param to: 结束时间（13位毫秒时间戳），需要和from同时使用
+        :param to: 查询的带宽统计数据的结束时间（13位毫秒时间戳），需要和from同时使用
         :type to: int
-        :param hosts: 域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
+        :param hosts: 域名id，用于查询指定的防护域名在from到to这段时间内的带宽数据。通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
         :type hosts: str
-        :param instances: 要查询引擎实例id
+        :param instances: 引擎实例id，用于查询指定的独享引擎实例所防护的域名在from到to这段时间内的带宽数据。
         :type instances: str
-        :param group_by: 展示维度，按天展示时传\&quot;DAY\&quot;；默认不传，按照分钟展示
+        :param group_by: 展示维度，按天展示时传\&quot;DAY\&quot;；默认不传，按照分钟展示。
         :type group_by: str
         """
         
@@ -103,7 +103,7 @@ class ListBandwidthTimelineRequest:
     def _from(self):
         """Gets the _from of this ListBandwidthTimelineRequest.
 
-        起始时间（13位毫秒时间戳），需要和to同时使用
+        查询的带宽统计数据的起始时间（13位毫秒时间戳），需要和to同时使用
 
         :return: The _from of this ListBandwidthTimelineRequest.
         :rtype: int
@@ -114,7 +114,7 @@ class ListBandwidthTimelineRequest:
     def _from(self, _from):
         """Sets the _from of this ListBandwidthTimelineRequest.
 
-        起始时间（13位毫秒时间戳），需要和to同时使用
+        查询的带宽统计数据的起始时间（13位毫秒时间戳），需要和to同时使用
 
         :param _from: The _from of this ListBandwidthTimelineRequest.
         :type _from: int
@@ -125,7 +125,7 @@ class ListBandwidthTimelineRequest:
     def to(self):
         """Gets the to of this ListBandwidthTimelineRequest.
 
-        结束时间（13位毫秒时间戳），需要和from同时使用
+        查询的带宽统计数据的结束时间（13位毫秒时间戳），需要和from同时使用
 
         :return: The to of this ListBandwidthTimelineRequest.
         :rtype: int
@@ -136,7 +136,7 @@ class ListBandwidthTimelineRequest:
     def to(self, to):
         """Sets the to of this ListBandwidthTimelineRequest.
 
-        结束时间（13位毫秒时间戳），需要和from同时使用
+        查询的带宽统计数据的结束时间（13位毫秒时间戳），需要和from同时使用
 
         :param to: The to of this ListBandwidthTimelineRequest.
         :type to: int
@@ -147,7 +147,7 @@ class ListBandwidthTimelineRequest:
     def hosts(self):
         """Gets the hosts of this ListBandwidthTimelineRequest.
 
-        域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
+        域名id，用于查询指定的防护域名在from到to这段时间内的带宽数据。通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 
         :return: The hosts of this ListBandwidthTimelineRequest.
         :rtype: str
@@ -158,7 +158,7 @@ class ListBandwidthTimelineRequest:
     def hosts(self, hosts):
         """Sets the hosts of this ListBandwidthTimelineRequest.
 
-        域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
+        域名id，用于查询指定的防护域名在from到to这段时间内的带宽数据。通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 
         :param hosts: The hosts of this ListBandwidthTimelineRequest.
         :type hosts: str
@@ -169,7 +169,7 @@ class ListBandwidthTimelineRequest:
     def instances(self):
         """Gets the instances of this ListBandwidthTimelineRequest.
 
-        要查询引擎实例id
+        引擎实例id，用于查询指定的独享引擎实例所防护的域名在from到to这段时间内的带宽数据。
 
         :return: The instances of this ListBandwidthTimelineRequest.
         :rtype: str
@@ -180,7 +180,7 @@ class ListBandwidthTimelineRequest:
     def instances(self, instances):
         """Sets the instances of this ListBandwidthTimelineRequest.
 
-        要查询引擎实例id
+        引擎实例id，用于查询指定的独享引擎实例所防护的域名在from到to这段时间内的带宽数据。
 
         :param instances: The instances of this ListBandwidthTimelineRequest.
         :type instances: str
@@ -191,7 +191,7 @@ class ListBandwidthTimelineRequest:
     def group_by(self):
         """Gets the group_by of this ListBandwidthTimelineRequest.
 
-        展示维度，按天展示时传\"DAY\"；默认不传，按照分钟展示
+        展示维度，按天展示时传\"DAY\"；默认不传，按照分钟展示。
 
         :return: The group_by of this ListBandwidthTimelineRequest.
         :rtype: str
@@ -202,7 +202,7 @@ class ListBandwidthTimelineRequest:
     def group_by(self, group_by):
         """Sets the group_by of this ListBandwidthTimelineRequest.
 
-        展示维度，按天展示时传\"DAY\"；默认不传，按照分钟展示
+        展示维度，按天展示时传\"DAY\"；默认不传，按照分钟展示。
 
         :param group_by: The group_by of this ListBandwidthTimelineRequest.
         :type group_by: str

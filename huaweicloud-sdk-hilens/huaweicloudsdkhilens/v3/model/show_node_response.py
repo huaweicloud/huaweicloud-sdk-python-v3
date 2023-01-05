@@ -30,7 +30,7 @@ class ShowNodeResponse(SdkResponse):
         'user_name': 'str',
         'cluster_id': 'str',
         'cluster_node_state': 'str',
-        'cluster_node_type': 'object',
+        'cluster_node_type': 'str',
         'firmware_name': 'str',
         'firmware_version': 'str',
         'upgrade_firmware_version': 'str',
@@ -121,7 +121,7 @@ class ShowNodeResponse(SdkResponse):
         :param cluster_node_state: 设备所处集群状态，集群创建（cluster_create）、集群删除（cluster_delete）、添加集群工作节点设备（cluster_add_nodes）、删除集群工作节点设备（cluster_delete_node）、集群节点设备状态更新（cluster_node_state_update）
         :type cluster_node_state: str
         :param cluster_node_type: 当该设备处于集群时，显示所属的集群设备类型。 - cluster_controller 控制设备 - cluster_worker 工作设备
-        :type cluster_node_type: object
+        :type cluster_node_type: str
         :param firmware_name: 固件名称。可包含大小写字母、数字、下划线、中划线,长度不超过60字符。必须以字母开头,字母或数字结尾
         :type firmware_name: str
         :param firmware_version: 固件版本。支持X.Y.Z格式。每一个子版本号不超过三位且为非负整数,禁止在数字前补0
@@ -509,7 +509,7 @@ class ShowNodeResponse(SdkResponse):
         当该设备处于集群时，显示所属的集群设备类型。 - cluster_controller 控制设备 - cluster_worker 工作设备
 
         :return: The cluster_node_type of this ShowNodeResponse.
-        :rtype: object
+        :rtype: str
         """
         return self._cluster_node_type
 
@@ -520,7 +520,7 @@ class ShowNodeResponse(SdkResponse):
         当该设备处于集群时，显示所属的集群设备类型。 - cluster_controller 控制设备 - cluster_worker 工作设备
 
         :param cluster_node_type: The cluster_node_type of this ShowNodeResponse.
-        :type cluster_node_type: object
+        :type cluster_node_type: str
         """
         self._cluster_node_type = cluster_node_type
 

@@ -25,7 +25,8 @@ class DatabaseObject:
         'all': 'bool',
         'schemas': 'dict(str, SchemaObject)',
         'tables': 'dict(str, TableObject)',
-        'total_table_num': 'int'
+        'total_table_num': 'int',
+        'is_synchronized': 'bool'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class DatabaseObject:
         'all': 'all',
         'schemas': 'schemas',
         'tables': 'tables',
-        'total_table_num': 'total_table_num'
+        'total_table_num': 'total_table_num',
+        'is_synchronized': 'is_synchronized'
     }
 
-    def __init__(self, sync_type=None, name=None, all=None, schemas=None, tables=None, total_table_num=None):
+    def __init__(self, sync_type=None, name=None, all=None, schemas=None, tables=None, total_table_num=None, is_synchronized=None):
         """DatabaseObject
 
         The model defined in huaweicloud sdk
@@ -54,6 +56,8 @@ class DatabaseObject:
         :type tables: dict(str, TableObject)
         :param total_table_num: 库下的表的数量，表的数量超过阈值就不显示。
         :type total_table_num: int
+        :param is_synchronized: 是否已同步
+        :type is_synchronized: bool
         """
         
         
@@ -64,6 +68,7 @@ class DatabaseObject:
         self._schemas = None
         self._tables = None
         self._total_table_num = None
+        self._is_synchronized = None
         self.discriminator = None
 
         if sync_type is not None:
@@ -78,6 +83,8 @@ class DatabaseObject:
             self.tables = tables
         if total_table_num is not None:
             self.total_table_num = total_table_num
+        if is_synchronized is not None:
+            self.is_synchronized = is_synchronized
 
     @property
     def sync_type(self):
@@ -210,6 +217,28 @@ class DatabaseObject:
         :type total_table_num: int
         """
         self._total_table_num = total_table_num
+
+    @property
+    def is_synchronized(self):
+        """Gets the is_synchronized of this DatabaseObject.
+
+        是否已同步
+
+        :return: The is_synchronized of this DatabaseObject.
+        :rtype: bool
+        """
+        return self._is_synchronized
+
+    @is_synchronized.setter
+    def is_synchronized(self, is_synchronized):
+        """Sets the is_synchronized of this DatabaseObject.
+
+        是否已同步
+
+        :param is_synchronized: The is_synchronized of this DatabaseObject.
+        :type is_synchronized: bool
+        """
+        self._is_synchronized = is_synchronized
 
     def to_dict(self):
         """Returns the model properties as a dict"""

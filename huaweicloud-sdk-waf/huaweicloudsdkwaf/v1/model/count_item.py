@@ -34,7 +34,7 @@ class CountItem:
 
         The model defined in huaweicloud sdk
 
-        :param key: 类型，包括请求总量（ACCESS）、Bot攻击防护（CRAWLER）、攻击总量（TOTAL_ATTACK）、Web基础防护（WEB_ATTACK）、精准防护（PRECISE）以及CC攻击防护（CC）
+        :param key: 类型，包括请求总量（ACCESS）、Bot攻击防护（CRAWLER）、攻击总量（ATTACK）、Web基础防护（WEB_ATTACK）、精准防护（PRECISE）以及CC攻击防护（CC）
         :type key: str
         :param num: 数量
         :type num: int
@@ -55,7 +55,7 @@ class CountItem:
     def key(self):
         """Gets the key of this CountItem.
 
-        类型，包括请求总量（ACCESS）、Bot攻击防护（CRAWLER）、攻击总量（TOTAL_ATTACK）、Web基础防护（WEB_ATTACK）、精准防护（PRECISE）以及CC攻击防护（CC）
+        类型，包括请求总量（ACCESS）、Bot攻击防护（CRAWLER）、攻击总量（ATTACK）、Web基础防护（WEB_ATTACK）、精准防护（PRECISE）以及CC攻击防护（CC）
 
         :return: The key of this CountItem.
         :rtype: str
@@ -66,7 +66,7 @@ class CountItem:
     def key(self, key):
         """Sets the key of this CountItem.
 
-        类型，包括请求总量（ACCESS）、Bot攻击防护（CRAWLER）、攻击总量（TOTAL_ATTACK）、Web基础防护（WEB_ATTACK）、精准防护（PRECISE）以及CC攻击防护（CC）
+        类型，包括请求总量（ACCESS）、Bot攻击防护（CRAWLER）、攻击总量（ATTACK）、Web基础防护（WEB_ATTACK）、精准防护（PRECISE）以及CC攻击防护（CC）
 
         :param key: The key of this CountItem.
         :type key: str

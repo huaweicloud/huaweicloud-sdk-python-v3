@@ -85,6 +85,7 @@ from huaweicloudsdkdcs.v2.model.features import Features
 from huaweicloudsdkdcs.v2.model.files import Files
 from huaweicloudsdkdcs.v2.model.flavor_az_object import FlavorAzObject
 from huaweicloudsdkdcs.v2.model.flavors_items import FlavorsItems
+from huaweicloudsdkdcs.v2.model.history_info import HistoryInfo
 from huaweicloudsdkdcs.v2.model.hotkeys_body import HotkeysBody
 from huaweicloudsdkdcs.v2.model.instance_backup_policy import InstanceBackupPolicy
 from huaweicloudsdkdcs.v2.model.instance_group_list_info import InstanceGroupListInfo
@@ -107,6 +108,8 @@ from huaweicloudsdkdcs.v2.model.list_backup_records_request import ListBackupRec
 from huaweicloudsdkdcs.v2.model.list_backup_records_response import ListBackupRecordsResponse
 from huaweicloudsdkdcs.v2.model.list_bigkey_scan_tasks_request import ListBigkeyScanTasksRequest
 from huaweicloudsdkdcs.v2.model.list_bigkey_scan_tasks_response import ListBigkeyScanTasksResponse
+from huaweicloudsdkdcs.v2.model.list_config_histories_request import ListConfigHistoriesRequest
+from huaweicloudsdkdcs.v2.model.list_config_histories_response import ListConfigHistoriesResponse
 from huaweicloudsdkdcs.v2.model.list_configurations_request import ListConfigurationsRequest
 from huaweicloudsdkdcs.v2.model.list_configurations_response import ListConfigurationsResponse
 from huaweicloudsdkdcs.v2.model.list_diagnosis_tasks_request import ListDiagnosisTasksRequest

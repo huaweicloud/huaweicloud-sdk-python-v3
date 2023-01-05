@@ -29,7 +29,8 @@ class ListBandwidthDetailRequest:
         'protocol': 'str',
         'interval': 'int',
         'start_time': 'str',
-        'end_time': 'str'
+        'end_time': 'str',
+        'service_type': 'str'
     }
 
     attribute_map = {
@@ -42,15 +43,16 @@ class ListBandwidthDetailRequest:
         'protocol': 'protocol',
         'interval': 'interval',
         'start_time': 'start_time',
-        'end_time': 'end_time'
+        'end_time': 'end_time',
+        'service_type': 'service_type'
     }
 
-    def __init__(self, play_domains=None, app=None, stream=None, country=None, region=None, isp=None, protocol=None, interval=None, start_time=None, end_time=None):
+    def __init__(self, play_domains=None, app=None, stream=None, country=None, region=None, isp=None, protocol=None, interval=None, start_time=None, end_time=None, service_type=None):
         """ListBandwidthDetailRequest
 
         The model defined in huaweicloud sdk
 
-        :param play_domains: 播放域名列表，最多支持查询100个域名，多个域名以逗号分隔。 
+        :param play_domains: 播放域名列表，最多支持查询100个域名，多个域名以逗号分隔。  如果不传入域名，则查询租户下所有播放域名的带宽数据。 
         :type play_domains: list[str]
         :param app: 应用名称。
         :type app: str
@@ -70,6 +72,8 @@ class ListBandwidthDetailRequest:
         :type start_time: str
         :param end_time: 结束时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
         :type end_time: str
+        :param service_type: 服务类型： - Live：直播 - LLL：超低时延直播 - ALL：默认所有直播 
+        :type service_type: str
         """
         
         
@@ -84,9 +88,11 @@ class ListBandwidthDetailRequest:
         self._interval = None
         self._start_time = None
         self._end_time = None
+        self._service_type = None
         self.discriminator = None
 
-        self.play_domains = play_domains
+        if play_domains is not None:
+            self.play_domains = play_domains
         if app is not None:
             self.app = app
         if stream is not None:
@@ -105,12 +111,14 @@ class ListBandwidthDetailRequest:
             self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
+        if service_type is not None:
+            self.service_type = service_type
 
     @property
     def play_domains(self):
         """Gets the play_domains of this ListBandwidthDetailRequest.
 
-        播放域名列表，最多支持查询100个域名，多个域名以逗号分隔。 
+        播放域名列表，最多支持查询100个域名，多个域名以逗号分隔。  如果不传入域名，则查询租户下所有播放域名的带宽数据。 
 
         :return: The play_domains of this ListBandwidthDetailRequest.
         :rtype: list[str]
@@ -121,7 +129,7 @@ class ListBandwidthDetailRequest:
     def play_domains(self, play_domains):
         """Sets the play_domains of this ListBandwidthDetailRequest.
 
-        播放域名列表，最多支持查询100个域名，多个域名以逗号分隔。 
+        播放域名列表，最多支持查询100个域名，多个域名以逗号分隔。  如果不传入域名，则查询租户下所有播放域名的带宽数据。 
 
         :param play_domains: The play_domains of this ListBandwidthDetailRequest.
         :type play_domains: list[str]
@@ -325,6 +333,28 @@ class ListBandwidthDetailRequest:
         :type end_time: str
         """
         self._end_time = end_time
+
+    @property
+    def service_type(self):
+        """Gets the service_type of this ListBandwidthDetailRequest.
+
+        服务类型： - Live：直播 - LLL：超低时延直播 - ALL：默认所有直播 
+
+        :return: The service_type of this ListBandwidthDetailRequest.
+        :rtype: str
+        """
+        return self._service_type
+
+    @service_type.setter
+    def service_type(self, service_type):
+        """Sets the service_type of this ListBandwidthDetailRequest.
+
+        服务类型： - Live：直播 - LLL：超低时延直播 - ALL：默认所有直播 
+
+        :param service_type: The service_type of this ListBandwidthDetailRequest.
+        :type service_type: str
+        """
+        self._service_type = service_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -24,7 +24,8 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
         'period_type': 'int',
         'period_num': 'int',
         'is_auto_pay': 'int',
-        'is_auto_renew': 'int'
+        'is_auto_renew': 'int',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
         'period_type': 'period_type',
         'period_num': 'period_num',
         'is_auto_pay': 'is_auto_pay',
-        'is_auto_renew': 'is_auto_renew'
+        'is_auto_renew': 'is_auto_renew',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, charging_mode=None, period_type=None, period_num=None, is_auto_pay=None, is_auto_renew=None):
+    def __init__(self, charging_mode=None, period_type=None, period_num=None, is_auto_pay=None, is_auto_renew=None, enterprise_project_id=None):
         """CreateNet2CloudPhoneServerRequestBodyExtendParam
 
         The model defined in huaweicloud sdk
@@ -50,6 +52,8 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
         :type is_auto_pay: int
         :param is_auto_renew: 是否自动续订。默认不自动续订。 1 表示自动续订 0 表示不自动续订
         :type is_auto_renew: int
+        :param enterprise_project_id: 企业项目ID。 该字段不传（或传为字符串“0”），则将资源绑定给默认企业项目。
+        :type enterprise_project_id: str
         """
         
         
@@ -59,6 +63,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
         self._period_num = None
         self._is_auto_pay = None
         self._is_auto_renew = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.charging_mode = charging_mode
@@ -68,6 +73,8 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
             self.is_auto_pay = is_auto_pay
         if is_auto_renew is not None:
             self.is_auto_renew = is_auto_renew
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def charging_mode(self):
@@ -178,6 +185,28 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
         :type is_auto_renew: int
         """
         self._is_auto_renew = is_auto_renew
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
+
+        企业项目ID。 该字段不传（或传为字符串“0”），则将资源绑定给默认企业项目。
+
+        :return: The enterprise_project_id of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
+
+        企业项目ID。 该字段不传（或传为字符串“0”），则将资源绑定给默认企业项目。
+
+        :param enterprise_project_id: The enterprise_project_id of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

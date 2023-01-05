@@ -20,29 +20,36 @@ class ListNodeTypesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'node_types': 'list[NodeTypes]'
+        'node_types': 'list[NodeTypes]',
+        'count': 'int'
     }
 
     attribute_map = {
-        'node_types': 'node_types'
+        'node_types': 'node_types',
+        'count': 'count'
     }
 
-    def __init__(self, node_types=None):
+    def __init__(self, node_types=None, count=None):
         """ListNodeTypesResponse
 
         The model defined in huaweicloud sdk
 
         :param node_types: 节点类型对象列表。
         :type node_types: list[:class:`huaweicloudsdkdws.v2.NodeTypes`]
+        :param count: 节点类型总数
+        :type count: int
         """
         
         super(ListNodeTypesResponse, self).__init__()
 
         self._node_types = None
+        self._count = None
         self.discriminator = None
 
         if node_types is not None:
             self.node_types = node_types
+        if count is not None:
+            self.count = count
 
     @property
     def node_types(self):
@@ -65,6 +72,28 @@ class ListNodeTypesResponse(SdkResponse):
         :type node_types: list[:class:`huaweicloudsdkdws.v2.NodeTypes`]
         """
         self._node_types = node_types
+
+    @property
+    def count(self):
+        """Gets the count of this ListNodeTypesResponse.
+
+        节点类型总数
+
+        :return: The count of this ListNodeTypesResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        """Sets the count of this ListNodeTypesResponse.
+
+        节点类型总数
+
+        :param count: The count of this ListNodeTypesResponse.
+        :type count: int
+        """
+        self._count = count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

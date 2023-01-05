@@ -30,7 +30,8 @@ class WorkflowCreateBody:
         'retries': 'list[Retry]',
         'mode': 'str',
         'express_config': 'ExpressConfig',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'enable_stream_response': 'bool'
     }
 
     attribute_map = {
@@ -44,10 +45,11 @@ class WorkflowCreateBody:
         'retries': 'retries',
         'mode': 'mode',
         'express_config': 'express_config',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'enable_stream_response': 'enable_stream_response'
     }
 
-    def __init__(self, name=None, description=None, start=None, triggers=None, functions=None, states=None, constants=None, retries=None, mode=None, express_config=None, enterprise_project_id=None):
+    def __init__(self, name=None, description=None, start=None, triggers=None, functions=None, states=None, constants=None, retries=None, mode=None, express_config=None, enterprise_project_id=None, enable_stream_response=None):
         """WorkflowCreateBody
 
         The model defined in huaweicloud sdk
@@ -74,6 +76,8 @@ class WorkflowCreateBody:
         :type express_config: :class:`huaweicloudsdkfunctiongraph.v2.ExpressConfig`
         :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
+        :param enable_stream_response: 是否返回流数据
+        :type enable_stream_response: bool
         """
         
         
@@ -89,6 +93,7 @@ class WorkflowCreateBody:
         self._mode = None
         self._express_config = None
         self._enterprise_project_id = None
+        self._enable_stream_response = None
         self.discriminator = None
 
         self.name = name
@@ -107,6 +112,8 @@ class WorkflowCreateBody:
             self.express_config = express_config
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if enable_stream_response is not None:
+            self.enable_stream_response = enable_stream_response
 
     @property
     def name(self):
@@ -345,6 +352,28 @@ class WorkflowCreateBody:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def enable_stream_response(self):
+        """Gets the enable_stream_response of this WorkflowCreateBody.
+
+        是否返回流数据
+
+        :return: The enable_stream_response of this WorkflowCreateBody.
+        :rtype: bool
+        """
+        return self._enable_stream_response
+
+    @enable_stream_response.setter
+    def enable_stream_response(self, enable_stream_response):
+        """Sets the enable_stream_response of this WorkflowCreateBody.
+
+        是否返回流数据
+
+        :param enable_stream_response: The enable_stream_response of this WorkflowCreateBody.
+        :type enable_stream_response: bool
+        """
+        self._enable_stream_response = enable_stream_response
 
     def to_dict(self):
         """Returns the model properties as a dict"""

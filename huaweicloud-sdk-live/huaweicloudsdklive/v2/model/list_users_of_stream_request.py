@@ -29,7 +29,8 @@ class ListUsersOfStreamRequest:
         'protocol': 'str',
         'interval': 'int',
         'start_time': 'str',
-        'end_time': 'str'
+        'end_time': 'str',
+        'service_type': 'str'
     }
 
     attribute_map = {
@@ -42,10 +43,11 @@ class ListUsersOfStreamRequest:
         'protocol': 'protocol',
         'interval': 'interval',
         'start_time': 'start_time',
-        'end_time': 'end_time'
+        'end_time': 'end_time',
+        'service_type': 'service_type'
     }
 
-    def __init__(self, play_domain=None, app=None, stream=None, isp=None, country=None, region=None, protocol=None, interval=None, start_time=None, end_time=None):
+    def __init__(self, play_domain=None, app=None, stream=None, isp=None, country=None, region=None, protocol=None, interval=None, start_time=None, end_time=None, service_type=None):
         """ListUsersOfStreamRequest
 
         The model defined in huaweicloud sdk
@@ -70,6 +72,8 @@ class ListUsersOfStreamRequest:
         :type start_time: str
         :param end_time: 结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
         :type end_time: str
+        :param service_type: 服务类型： - Live：直播 - LLL：超低时延直播 - ALL: 默认所有直播 
+        :type service_type: str
         """
         
         
@@ -84,6 +88,7 @@ class ListUsersOfStreamRequest:
         self._interval = None
         self._start_time = None
         self._end_time = None
+        self._service_type = None
         self.discriminator = None
 
         self.play_domain = play_domain
@@ -105,6 +110,8 @@ class ListUsersOfStreamRequest:
             self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
+        if service_type is not None:
+            self.service_type = service_type
 
     @property
     def play_domain(self):
@@ -325,6 +332,28 @@ class ListUsersOfStreamRequest:
         :type end_time: str
         """
         self._end_time = end_time
+
+    @property
+    def service_type(self):
+        """Gets the service_type of this ListUsersOfStreamRequest.
+
+        服务类型： - Live：直播 - LLL：超低时延直播 - ALL: 默认所有直播 
+
+        :return: The service_type of this ListUsersOfStreamRequest.
+        :rtype: str
+        """
+        return self._service_type
+
+    @service_type.setter
+    def service_type(self, service_type):
+        """Sets the service_type of this ListUsersOfStreamRequest.
+
+        服务类型： - Live：直播 - LLL：超低时延直播 - ALL: 默认所有直播 
+
+        :param service_type: The service_type of this ListUsersOfStreamRequest.
+        :type service_type: str
+        """
+        self._service_type = service_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

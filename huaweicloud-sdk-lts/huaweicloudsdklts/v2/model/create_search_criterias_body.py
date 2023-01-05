@@ -28,7 +28,7 @@ class CreateSearchCriteriasBody:
 
     attribute_map = {
         'criteria': 'criteria',
-        'eps_id': 'epsId',
+        'eps_id': 'eps_id',
         'name': 'name',
         'search_type': 'search_type'
     }
@@ -57,7 +57,8 @@ class CreateSearchCriteriasBody:
         self.discriminator = None
 
         self.criteria = criteria
-        self.eps_id = eps_id
+        if eps_id is not None:
+            self.eps_id = eps_id
         self.name = name
         self.search_type = search_type
 

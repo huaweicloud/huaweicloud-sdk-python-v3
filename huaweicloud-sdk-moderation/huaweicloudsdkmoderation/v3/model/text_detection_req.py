@@ -22,16 +22,18 @@ class TextDetectionReq:
     openapi_types = {
         'event_type': 'str',
         'glossary_names': 'list[str]',
-        'data': 'TextDetectionDataReq'
+        'data': 'TextDetectionDataReq',
+        'white_glossary_names': 'list[str]'
     }
 
     attribute_map = {
         'event_type': 'event_type',
         'glossary_names': 'glossary_names',
-        'data': 'data'
+        'data': 'data',
+        'white_glossary_names': 'white_glossary_names'
     }
 
-    def __init__(self, event_type=None, glossary_names=None, data=None):
+    def __init__(self, event_type=None, glossary_names=None, data=None, white_glossary_names=None):
         """TextDetectionReq
 
         The model defined in huaweicloud sdk
@@ -42,6 +44,8 @@ class TextDetectionReq:
         :type glossary_names: list[str]
         :param data: 
         :type data: :class:`huaweicloudsdkmoderation.v3.TextDetectionDataReq`
+        :param white_glossary_names: 检测时使用的自定义白名单词库列表。
+        :type white_glossary_names: list[str]
         """
         
         
@@ -49,12 +53,15 @@ class TextDetectionReq:
         self._event_type = None
         self._glossary_names = None
         self._data = None
+        self._white_glossary_names = None
         self.discriminator = None
 
         self.event_type = event_type
         if glossary_names is not None:
             self.glossary_names = glossary_names
         self.data = data
+        if white_glossary_names is not None:
+            self.white_glossary_names = white_glossary_names
 
     @property
     def event_type(self):
@@ -117,6 +124,28 @@ class TextDetectionReq:
         :type data: :class:`huaweicloudsdkmoderation.v3.TextDetectionDataReq`
         """
         self._data = data
+
+    @property
+    def white_glossary_names(self):
+        """Gets the white_glossary_names of this TextDetectionReq.
+
+        检测时使用的自定义白名单词库列表。
+
+        :return: The white_glossary_names of this TextDetectionReq.
+        :rtype: list[str]
+        """
+        return self._white_glossary_names
+
+    @white_glossary_names.setter
+    def white_glossary_names(self, white_glossary_names):
+        """Sets the white_glossary_names of this TextDetectionReq.
+
+        检测时使用的自定义白名单词库列表。
+
+        :param white_glossary_names: The white_glossary_names of this TextDetectionReq.
+        :type white_glossary_names: list[str]
+        """
+        self._white_glossary_names = white_glossary_names
 
     def to_dict(self):
         """Returns the model properties as a dict"""

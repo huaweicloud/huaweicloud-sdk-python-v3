@@ -20,28 +20,42 @@ class ListTasksRequest:
     sensitive_list = []
 
     openapi_types = {
-        'deployment_id': 'str'
+        'deployment_id': 'str',
+        'offset': 'int',
+        'limit': 'int'
     }
 
     attribute_map = {
-        'deployment_id': 'deployment_id'
+        'deployment_id': 'deployment_id',
+        'offset': 'offset',
+        'limit': 'limit'
     }
 
-    def __init__(self, deployment_id=None):
+    def __init__(self, deployment_id=None, offset=None, limit=None):
         """ListTasksRequest
 
         The model defined in huaweicloud sdk
 
         :param deployment_id: 部署ID，从专业版HiLens控制台部署管理[获取部署列表](getDeploymentListUsingGET.xml)获取
         :type deployment_id: str
+        :param offset: 查询的起始位置，取值范围为非负整数，默认为0
+        :type offset: int
+        :param limit: 每页显示的条目数量，取值范围1~100，默认为100
+        :type limit: int
         """
         
         
 
         self._deployment_id = None
+        self._offset = None
+        self._limit = None
         self.discriminator = None
 
         self.deployment_id = deployment_id
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
 
     @property
     def deployment_id(self):
@@ -64,6 +78,50 @@ class ListTasksRequest:
         :type deployment_id: str
         """
         self._deployment_id = deployment_id
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListTasksRequest.
+
+        查询的起始位置，取值范围为非负整数，默认为0
+
+        :return: The offset of this ListTasksRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListTasksRequest.
+
+        查询的起始位置，取值范围为非负整数，默认为0
+
+        :param offset: The offset of this ListTasksRequest.
+        :type offset: int
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListTasksRequest.
+
+        每页显示的条目数量，取值范围1~100，默认为100
+
+        :return: The limit of this ListTasksRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListTasksRequest.
+
+        每页显示的条目数量，取值范围1~100，默认为100
+
+        :param limit: The limit of this ListTasksRequest.
+        :type limit: int
+        """
+        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

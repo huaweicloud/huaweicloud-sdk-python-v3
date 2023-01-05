@@ -37,7 +37,8 @@ class NodeResponse:
         'cpu': 'int',
         'gpu_num': 'int',
         'npu_num': 'int',
-        'host_ips': 'list[str]'
+        'host_ips': 'list[str]',
+        'deployment_num': 'int'
     }
 
     attribute_map = {
@@ -58,10 +59,11 @@ class NodeResponse:
         'cpu': 'cpu',
         'gpu_num': 'gpu_num',
         'npu_num': 'npu_num',
-        'host_ips': 'host_ips'
+        'host_ips': 'host_ips',
+        'deployment_num': 'deployment_num'
     }
 
-    def __init__(self, id=None, name=None, description=None, created_at=None, cluster_id=None, cluster_node_state=None, cluster_node_type=None, firmware_name=None, upgrade_firmware_version=None, firmware_status=None, firmware_upgrade_record=None, state=None, type=None, active_status=None, cpu=None, gpu_num=None, npu_num=None, host_ips=None):
+    def __init__(self, id=None, name=None, description=None, created_at=None, cluster_id=None, cluster_node_state=None, cluster_node_type=None, firmware_name=None, upgrade_firmware_version=None, firmware_status=None, firmware_upgrade_record=None, state=None, type=None, active_status=None, cpu=None, gpu_num=None, npu_num=None, host_ips=None, deployment_num=None):
         """NodeResponse
 
         The model defined in huaweicloud sdk
@@ -102,6 +104,8 @@ class NodeResponse:
         :type npu_num: int
         :param host_ips: 主机IP列表
         :type host_ips: list[str]
+        :param deployment_num: 节点中部署的数量
+        :type deployment_num: int
         """
         
         
@@ -124,6 +128,7 @@ class NodeResponse:
         self._gpu_num = None
         self._npu_num = None
         self._host_ips = None
+        self._deployment_num = None
         self.discriminator = None
 
         if id is not None:
@@ -162,6 +167,8 @@ class NodeResponse:
             self.npu_num = npu_num
         if host_ips is not None:
             self.host_ips = host_ips
+        if deployment_num is not None:
+            self.deployment_num = deployment_num
 
     @property
     def id(self):
@@ -554,6 +561,28 @@ class NodeResponse:
         :type host_ips: list[str]
         """
         self._host_ips = host_ips
+
+    @property
+    def deployment_num(self):
+        """Gets the deployment_num of this NodeResponse.
+
+        节点中部署的数量
+
+        :return: The deployment_num of this NodeResponse.
+        :rtype: int
+        """
+        return self._deployment_num
+
+    @deployment_num.setter
+    def deployment_num(self, deployment_num):
+        """Sets the deployment_num of this NodeResponse.
+
+        节点中部署的数量
+
+        :param deployment_num: The deployment_num of this NodeResponse.
+        :type deployment_num: int
+        """
+        self._deployment_num = deployment_num
 
     def to_dict(self):
         """Returns the model properties as a dict"""

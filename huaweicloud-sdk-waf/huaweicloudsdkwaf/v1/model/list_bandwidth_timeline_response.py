@@ -32,7 +32,7 @@ class ListBandwidthTimelineResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 安全统计的带宽时间线数据
+        :param body: 带宽时间线统计数据，包括带宽（BANDWIDTH）、入带宽（IN_BANDWIDTH）以及出带宽（OUT_BANDWIDTH）统计数据。
         :type body: list[:class:`huaweicloudsdkwaf.v1.BandwidthStatisticsTimelineItem`]
         """
         
@@ -48,7 +48,7 @@ class ListBandwidthTimelineResponse(SdkResponse):
     def body(self):
         """Gets the body of this ListBandwidthTimelineResponse.
 
-        安全统计的带宽时间线数据
+        带宽时间线统计数据，包括带宽（BANDWIDTH）、入带宽（IN_BANDWIDTH）以及出带宽（OUT_BANDWIDTH）统计数据。
 
         :return: The body of this ListBandwidthTimelineResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.BandwidthStatisticsTimelineItem`]
@@ -59,7 +59,7 @@ class ListBandwidthTimelineResponse(SdkResponse):
     def body(self, body):
         """Sets the body of this ListBandwidthTimelineResponse.
 
-        安全统计的带宽时间线数据
+        带宽时间线统计数据，包括带宽（BANDWIDTH）、入带宽（IN_BANDWIDTH）以及出带宽（OUT_BANDWIDTH）统计数据。
 
         :param body: The body of this ListBandwidthTimelineResponse.
         :type body: list[:class:`huaweicloudsdkwaf.v1.BandwidthStatisticsTimelineItem`]

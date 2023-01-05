@@ -25,7 +25,7 @@ class DeleteSearchCriterias:
     }
 
     attribute_map = {
-        'eps_id': 'epsId',
+        'eps_id': 'eps_id',
         'id': 'id'
     }
 

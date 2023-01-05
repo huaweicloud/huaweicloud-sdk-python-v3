@@ -228,6 +228,82 @@ class DrsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def collect_db_objects_async(self, request):
+        """提交查询数据库对象信息
+
+        提交查询数据库对象信息。例如：
+        - 当type取值为source时，表示查询源库库表信息。
+        - 当源库库表信息有变化时，则type取值为source，is_refresh取值为true。
+        - 当已同步到目标库的库表信息过大，需要提前将数据加载到缓存中时，type取值为synchronized。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CollectDbObjectsAsync
+        :type request: :class:`huaweicloudsdkdrs.v5.CollectDbObjectsAsyncRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.CollectDbObjectsAsyncResponse`
+        """
+        return self.collect_db_objects_async_with_http_info(request)
+
+    def collect_db_objects_async_with_http_info(self, request):
+        all_params = ['job_id', 'type', 'x_language', 'offset', 'limit', 'is_refresh', 'db_names']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'is_refresh' in local_var_params:
+            query_params.append(('is_refresh', local_var_params['is_refresh']))
+        if 'db_names' in local_var_params:
+            query_params.append(('db_names', local_var_params['db_names']))
+            collection_formats['db_names'] = 'csv'
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/jobs/{job_id}/db-objects/collect',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CollectDbObjectsAsyncResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def commit_async_job(self, request):
         """提交批量创建异步任务
 
@@ -696,7 +772,7 @@ class DrsClient(Client):
         return self.list_db_objects_with_http_info(request)
 
     def list_db_objects_with_http_info(self, request):
-        all_params = ['job_id', 'type', 'x_language', 'offset', 'limit']
+        all_params = ['job_id', 'type', 'x_language', 'offset', 'limit', 'db_names']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -717,6 +793,9 @@ class DrsClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'type' in local_var_params:
             query_params.append(('type', local_var_params['type']))
+        if 'db_names' in local_var_params:
+            query_params.append(('db_names', local_var_params['db_names']))
+            collection_formats['db_names'] = 'csv'
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -891,6 +970,70 @@ class DrsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListLinksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_db_object_collection_status(self, request):
+        """获取数据库对象信息的结果
+
+        获取数据库对象信息的结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDbObjectCollectionStatus
+        :type request: :class:`huaweicloudsdkdrs.v5.ShowDbObjectCollectionStatusRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.ShowDbObjectCollectionStatusResponse`
+        """
+        return self.show_db_object_collection_status_with_http_info(request)
+
+    def show_db_object_collection_status_with_http_info(self, request):
+        all_params = ['job_id', 'query_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'query_id' in local_var_params:
+            query_params.append(('query_id', local_var_params['query_id']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/jobs/{job_id}/db-objects/collection-status',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowDbObjectCollectionStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1110,6 +1253,70 @@ class DrsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_update_object_saving_status(self, request):
+        """获取对象保存进度
+
+        获取对象保存进度。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowUpdateObjectSavingStatus
+        :type request: :class:`huaweicloudsdkdrs.v5.ShowUpdateObjectSavingStatusRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.ShowUpdateObjectSavingStatusResponse`
+        """
+        return self.show_update_object_saving_status_with_http_info(request)
+
+    def show_update_object_saving_status_with_http_info(self, request):
+        all_params = ['job_id', 'query_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'query_id' in local_var_params:
+            query_params.append(('query_id', local_var_params['query_id']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/jobs/{job_id}/db-objects/saving-status',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowUpdateObjectSavingStatusResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_batch_async_jobs(self, request):
         """更新指定ID批量异步任务详情
 
@@ -1178,6 +1385,7 @@ class DrsClient(Client):
         """更新指定ID任务详情
 
         更新租户指定ID任务详情。
+        当type取值为db_object， 进行异步处理。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

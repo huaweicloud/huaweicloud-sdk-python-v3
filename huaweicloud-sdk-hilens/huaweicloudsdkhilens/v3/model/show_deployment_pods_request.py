@@ -24,7 +24,9 @@ class ShowDeploymentPodsRequest:
         'node_id': 'str',
         'provider': 'str',
         'deployment_id': 'str',
-        'workspace_id': 'str'
+        'workspace_id': 'str',
+        'offset': 'int',
+        'limit': 'int'
     }
 
     attribute_map = {
@@ -32,10 +34,12 @@ class ShowDeploymentPodsRequest:
         'node_id': 'node_id',
         'provider': 'provider',
         'deployment_id': 'deployment_id',
-        'workspace_id': 'workspace_id'
+        'workspace_id': 'workspace_id',
+        'offset': 'offset',
+        'limit': 'limit'
     }
 
-    def __init__(self, cluster_id=None, node_id=None, provider=None, deployment_id=None, workspace_id=None):
+    def __init__(self, cluster_id=None, node_id=None, provider=None, deployment_id=None, workspace_id=None, offset=None, limit=None):
         """ShowDeploymentPodsRequest
 
         The model defined in huaweicloud sdk
@@ -50,6 +54,10 @@ class ShowDeploymentPodsRequest:
         :type deployment_id: str
         :param workspace_id: 工作空间ID，默认为注册账号/子账号的default工作空间。主账号默认ID为0，子账号默认空间id为该子账号user_id
         :type workspace_id: str
+        :param offset: 查询的起始位置，取值范围为非负整数，默认为0
+        :type offset: int
+        :param limit: 每页显示的条目数量，取值范围1~100，默认为100
+        :type limit: int
         """
         
         
@@ -59,6 +67,8 @@ class ShowDeploymentPodsRequest:
         self._provider = None
         self._deployment_id = None
         self._workspace_id = None
+        self._offset = None
+        self._limit = None
         self.discriminator = None
 
         if cluster_id is not None:
@@ -71,6 +81,10 @@ class ShowDeploymentPodsRequest:
             self.deployment_id = deployment_id
         if workspace_id is not None:
             self.workspace_id = workspace_id
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
 
     @property
     def cluster_id(self):
@@ -181,6 +195,50 @@ class ShowDeploymentPodsRequest:
         :type workspace_id: str
         """
         self._workspace_id = workspace_id
+
+    @property
+    def offset(self):
+        """Gets the offset of this ShowDeploymentPodsRequest.
+
+        查询的起始位置，取值范围为非负整数，默认为0
+
+        :return: The offset of this ShowDeploymentPodsRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ShowDeploymentPodsRequest.
+
+        查询的起始位置，取值范围为非负整数，默认为0
+
+        :param offset: The offset of this ShowDeploymentPodsRequest.
+        :type offset: int
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        """Gets the limit of this ShowDeploymentPodsRequest.
+
+        每页显示的条目数量，取值范围1~100，默认为100
+
+        :return: The limit of this ShowDeploymentPodsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ShowDeploymentPodsRequest.
+
+        每页显示的条目数量，取值范围1~100，默认为100
+
+        :param limit: The limit of this ShowDeploymentPodsRequest.
+        :type limit: int
+        """
+        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

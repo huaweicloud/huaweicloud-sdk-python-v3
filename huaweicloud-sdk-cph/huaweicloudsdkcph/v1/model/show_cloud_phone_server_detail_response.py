@@ -39,6 +39,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
         'band_widths': 'list[Bandwidth]',
         'volumes': 'list[Volume]',
         'network_version': 'str',
+        'enterprise_project_id': 'str',
         'security_groups': 'list[str]',
         'create_time': 'str',
         'update_time': 'str'
@@ -64,12 +65,13 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
         'band_widths': 'band_widths',
         'volumes': 'volumes',
         'network_version': 'network_version',
+        'enterprise_project_id': 'enterprise_project_id',
         'security_groups': 'security_groups',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, request_id=None, server_name=None, availability_zone=None, server_id=None, server_model_name=None, phone_model_name=None, keypair_name=None, status=None, vpc_id=None, cidr=None, vpc_cidr=None, subnet_id=None, subnet_cidr=None, resource_project_id=None, metadata=None, addresses=None, band_widths=None, volumes=None, network_version=None, security_groups=None, create_time=None, update_time=None):
+    def __init__(self, request_id=None, server_name=None, availability_zone=None, server_id=None, server_model_name=None, phone_model_name=None, keypair_name=None, status=None, vpc_id=None, cidr=None, vpc_cidr=None, subnet_id=None, subnet_cidr=None, resource_project_id=None, metadata=None, addresses=None, band_widths=None, volumes=None, network_version=None, enterprise_project_id=None, security_groups=None, create_time=None, update_time=None):
         """ShowCloudPhoneServerDetailResponse
 
         The model defined in huaweicloud sdk
@@ -112,6 +114,8 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
         :type volumes: list[:class:`huaweicloudsdkcph.v1.Volume`]
         :param network_version: 是否为自定义网络的云手机服务器标识。  \&quot;v1\&quot;，非自定义网络的云手机服务器。\\t\&quot;v2\&quot;，自定义网络的云手机服务器。 支持按照网络版本字段进行筛选
         :type network_version: str
+        :param enterprise_project_id: 云手机服务器所属企业项目ID。
+        :type enterprise_project_id: str
         :param security_groups: 服务器扩展网卡绑定的安全组信息 系统定义网络的服务器，该字段返回为空列表
         :type security_groups: list[str]
         :param create_time: 创建时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
@@ -141,6 +145,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
         self._band_widths = None
         self._volumes = None
         self._network_version = None
+        self._enterprise_project_id = None
         self._security_groups = None
         self._create_time = None
         self._update_time = None
@@ -184,6 +189,8 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
             self.volumes = volumes
         if network_version is not None:
             self.network_version = network_version
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if security_groups is not None:
             self.security_groups = security_groups
         if create_time is not None:
@@ -604,6 +611,28 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
         :type network_version: str
         """
         self._network_version = network_version
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ShowCloudPhoneServerDetailResponse.
+
+        云手机服务器所属企业项目ID。
+
+        :return: The enterprise_project_id of this ShowCloudPhoneServerDetailResponse.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ShowCloudPhoneServerDetailResponse.
+
+        云手机服务器所属企业项目ID。
+
+        :param enterprise_project_id: The enterprise_project_id of this ShowCloudPhoneServerDetailResponse.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def security_groups(self):

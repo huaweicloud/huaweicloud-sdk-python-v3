@@ -47,7 +47,8 @@ class EdgeAppInstanceDTO:
         self.discriminator = None
 
         self.edge_app_id = edge_app_id
-        self.app_version = app_version
+        if app_version is not None:
+            self.app_version = app_version
 
     @property
     def edge_app_id(self):

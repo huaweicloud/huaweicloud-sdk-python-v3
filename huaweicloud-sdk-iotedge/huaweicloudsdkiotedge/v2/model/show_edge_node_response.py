@@ -44,6 +44,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         'container_version': 'str',
         'type': 'str',
         'security_level': 'str',
+        'reliability_level': 'str',
         'storage_period': 'int',
         'base_path': 'BasePathDTO',
         'hardware_model': 'str',
@@ -76,6 +77,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         'container_version': 'container_version',
         'type': 'type',
         'security_level': 'security_level',
+        'reliability_level': 'reliability_level',
         'storage_period': 'storage_period',
         'base_path': 'base_path',
         'hardware_model': 'hardware_model',
@@ -83,7 +85,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         'device_auth_info': 'device_auth_info'
     }
 
-    def __init__(self, log_configs=None, ha_config=None, edge_node_id=None, instance_id=None, product_id=None, product_name=None, space_id=None, resource_spec_types=None, resource_ids=None, ips=None, name=None, state=None, software_version=None, create_time=None, update_time=None, os_name=None, arch=None, host_name=None, nics=None, specification=None, ai_card_type=None, container_version=None, type=None, security_level=None, storage_period=None, base_path=None, hardware_model=None, offline_cache_configs=None, device_auth_info=None):
+    def __init__(self, log_configs=None, ha_config=None, edge_node_id=None, instance_id=None, product_id=None, product_name=None, space_id=None, resource_spec_types=None, resource_ids=None, ips=None, name=None, state=None, software_version=None, create_time=None, update_time=None, os_name=None, arch=None, host_name=None, nics=None, specification=None, ai_card_type=None, container_version=None, type=None, security_level=None, reliability_level=None, storage_period=None, base_path=None, hardware_model=None, offline_cache_configs=None, device_auth_info=None):
         """ShowEdgeNodeResponse
 
         The model defined in huaweicloud sdk
@@ -136,6 +138,8 @@ class ShowEdgeNodeResponse(SdkResponse):
         :type type: str
         :param security_level: 节点的安全等级，MEDIUM边缘节数据上报不进行加密，HIGH对数据上报进行加密。
         :type security_level: str
+        :param reliability_level: 节点的可靠性等级。
+        :type reliability_level: str
         :param storage_period: 节点的存储周期，默认0天，取值范围0~7天，0天则不存储。
         :type storage_period: int
         :param base_path: 
@@ -174,6 +178,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         self._container_version = None
         self._type = None
         self._security_level = None
+        self._reliability_level = None
         self._storage_period = None
         self._base_path = None
         self._hardware_model = None
@@ -229,6 +234,8 @@ class ShowEdgeNodeResponse(SdkResponse):
             self.type = type
         if security_level is not None:
             self.security_level = security_level
+        if reliability_level is not None:
+            self.reliability_level = reliability_level
         if storage_period is not None:
             self.storage_period = storage_period
         if base_path is not None:
@@ -763,6 +770,28 @@ class ShowEdgeNodeResponse(SdkResponse):
         :type security_level: str
         """
         self._security_level = security_level
+
+    @property
+    def reliability_level(self):
+        """Gets the reliability_level of this ShowEdgeNodeResponse.
+
+        节点的可靠性等级。
+
+        :return: The reliability_level of this ShowEdgeNodeResponse.
+        :rtype: str
+        """
+        return self._reliability_level
+
+    @reliability_level.setter
+    def reliability_level(self, reliability_level):
+        """Sets the reliability_level of this ShowEdgeNodeResponse.
+
+        节点的可靠性等级。
+
+        :param reliability_level: The reliability_level of this ShowEdgeNodeResponse.
+        :type reliability_level: str
+        """
+        self._reliability_level = reliability_level
 
     @property
     def storage_period(self):

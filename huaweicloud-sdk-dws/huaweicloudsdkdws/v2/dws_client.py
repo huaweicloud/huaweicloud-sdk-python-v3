@@ -2801,7 +2801,7 @@ class DwsClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/snapshots',
+            resource_path='/v1.0/{project_id}/cluster/{cluster_id}/snapshots',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -3965,7 +3965,7 @@ class DwsClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/{project_id}/cluster/{cluster_id}/snapshots/statistics',
+            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/snapshots/statistics',
             method='GET',
             path_params=path_params,
             query_params=query_params,

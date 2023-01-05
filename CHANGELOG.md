@@ -1,3 +1,192 @@
+# 3.1.21 2023-01-05
+
+### HuaweiCloud SDK CPH
+
+- _Features_
+  - Support the following interfaces：
+    - `ListProjectTags`
+    - `ListResourceTags`
+    - `ListResourceInstances`
+    - `BatchCreateTags`
+    - `BatchDeleteTags`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `enterprise_project_id` to the interface `ListCloudPhoneServers`
+  - Add the response parameter `enterprise_project_id` to the interface `ShowCloudPhoneServerDetail`
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - Support the interface `ListConfigHistories`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DNS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the following interfaces：
+    - `ListResoleRules`
+    - `SetPrivateZoneProxyPattern`
+    - `ShowDomainQuota`
+    - `ShowRetrieval`
+    - `CreateRetrieval`
+    - `ShowRetrievalVerification`
+    - `CreateRetrievalVerification`
+    - `ListEndpoints`
+    - `CreateEndpoint`
+    - `ShowEndpoint`
+    - `UpdateEndpoint`
+    - `DeleteEndpoint`
+    - `ListEndpointIpaddresses`
+    - `AssociateEndpointIpaddress`
+    - `DisassociateEndpointIpaddress`
+    - `ListEndpointVpcs`
+    - `CreateResolveRule`
+    - `AssociateResolveRuleRouter`
+    - `DisassociateResolveRuleRouter`
+    - `ShowResoleRule`
+    - `UpdateResolveRule`
+    - `DeleteResolveRule`
+    - `BatchDeleteZones`
+    - `BatchDeletePtrRecords`
+    - `BatchSetZonesStatus`
+    - `BatchSetRecordSetsStatus`
+    - `BatchDeleteRecordSets`
+  - Changes of the interface `CreatePrivateZone`:
+    - Add the request parameter `proxy_pattern`
+    - Add the response parameter `proxy_pattern`
+  - Add the response parameter `proxy_pattern` to the interface `ListPrivateZones`
+
+### HuaweiCloud SDK DRIS
+
+- _Features_
+  - Support the interface `BatchShowRadars`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DRS
+
+- _Features_
+  - Support the interfaces `ShowDbObjectCollectionStatus`, `ShowUpdateObjectSavingStatus`, `CollectDbObjectsAsync`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListDbObjects`:
+    - Add the request parameter `db_names`
+    - Add the response parameters `status`, `id`
+
+### HuaweiCloud SDK DWS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `count`, `datastore_type`, `available_zones`, `ram`, `vcpus`, `datastores`, `volume`, `elastic_volume_specs` to the interface `ListNodeTypes`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `DISABLED`, Remove the enum values `DISABLE` from the response parameter `trigger_status` to the interface `ListFunctionTriggers`
+  - Add the enum values `DISABLED`, Remove the enum values `DISABLE` from the request parameter `trigger_status` to the interface `UpdateTrigger`
+  - Add the enum values `DISABLED`, Remove the enum values `DISABLE` from the response parameter `trigger_status` to the interface `ShowFunctionTrigger`
+  - Add the request parameter `enable_stream_response` to the interface `CreateWorkflow`
+  - Add the request parameter `enable_stream_response` to the interface `UpdateWorkFlow`
+  - Add the response parameter `enable_stream_response` to the interface `ShowWorkFlow`
+
+### HuaweiCloud SDK HiLens
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `deployment_num` to the interface `ShowNodes`
+  - Add the response parameter `cluster_node_type` to the interface `ShowNode`
+  - Add the request parameters `offset`, `limit` to the interface `ShowUpgradeProgress`
+  - Add the request parameters `offset`, `limit` to the interface `ListTasks`
+  - Add the request parameters `offset`, `limit` to the interface `ShowDeploymentPods`
+  - Add the request parameters `offset`, `limit` to the interface `ListWorkSpaces`
+
+### HuaweiCloud SDK IoTEdge
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `app_version` changed to not required of the interface `CreateEdgeNode`
+  - Add the response parameter `reliability_level` to the interface `ShowEdgeNode`
+
+### HuaweiCloud SDK Live
+
+- _Features_
+  - Support the interface `ListUpStreamDetail`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListBandwidthDetail`:
+    - Add the request parameter `service_type`
+    - The request parameter `play_domains` changed to required
+  - Changes of the interface `ListDomainTrafficDetail`:
+    - Add the request parameter `service_type`
+    - The request parameter `play_domains` changed to required
+  - Changes of the interface `ListDomainBandwidthPeak`:
+    - Add the request parameter `service_type`
+    - The request parameter `play_domains` changed to required
+  - Changes of the interface `ListDomainTrafficSummary`:
+    - Add the request parameter `service_type`
+    - The request parameter `play_domains` changed to required
+  - Add the request parameter `service_type` to the interface `ListUsersOfStream`
+  - Add the request parameter `type` to the interface `ShowUpBandwidth`
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateSearchCriterias`:
+    - Add the request parameter `eps_id`
+    - Remove the request parameter `epsId`
+  - Changes of the interface `DeleteSearchCriterias`:
+    - Add the request parameter `eps_id`
+    - Remove the request parameter `epsId`
+
+### HuaweiCloud SDK Moderation
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `white_glossary_names` to the interface `RunTextModeration`
+
+### HuaweiCloud SDK VPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListPorts`:
+    - Add the request parameter `security_groups`
+    - Modify the type `string` -> `array` of the request parameter `fixed_ips`
+
 # 3.1.20 2022-12-29
 
 ### HuaweiCloud SDK APIG

@@ -23,6 +23,8 @@ from huaweicloudsdkdris.v1.model.batch_show_edge_apps_request import BatchShowEd
 from huaweicloudsdkdris.v1.model.batch_show_edge_apps_response import BatchShowEdgeAppsResponse
 from huaweicloudsdkdris.v1.model.batch_show_ipcs_request import BatchShowIpcsRequest
 from huaweicloudsdkdris.v1.model.batch_show_ipcs_response import BatchShowIpcsResponse
+from huaweicloudsdkdris.v1.model.batch_show_radars_request import BatchShowRadarsRequest
+from huaweicloudsdkdris.v1.model.batch_show_radars_response import BatchShowRadarsResponse
 from huaweicloudsdkdris.v1.model.batch_show_rsus_request import BatchShowRsusRequest
 from huaweicloudsdkdris.v1.model.batch_show_rsus_response import BatchShowRsusResponse
 from huaweicloudsdkdris.v1.model.batch_show_traffic_controllers_request import BatchShowTrafficControllersRequest
@@ -122,6 +124,7 @@ from huaweicloudsdkdris.v1.model.platform_para import PlatformPara
 from huaweicloudsdkdris.v1.model.position3_d import Position3D
 from huaweicloudsdkdris.v1.model.query_application_brief_response_dto import QueryApplicationBriefResponseDTO
 from huaweicloudsdkdris.v1.model.query_edge_app_version_brief_response_dto import QueryEdgeAppVersionBriefResponseDTO
+from huaweicloudsdkdris.v1.model.radar_resource_dto import RadarResourceDTO
 from huaweicloudsdkdris.v1.model.reference_path import ReferencePath
 from huaweicloudsdkdris.v1.model.resource_config_dto import ResourceConfigDTO
 from huaweicloudsdkdris.v1.model.resource_dto import ResourceDTO

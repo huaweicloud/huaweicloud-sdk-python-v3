@@ -78,7 +78,7 @@ class AddRuleAclDtoRules:
         :type long_connect_time_minute: int
         :param long_connect_time_second: 长连接时长秒
         :type long_connect_time_second: int
-        :param long_connect_enable: 是否支持长连接，0表示支持长连接，1表示不支持长连接
+        :param long_connect_enable: 是否支持长连接，0表示不支持长连接，1表示支持长连接
         :type long_connect_enable: int
         :param description: 描述
         :type description: str
@@ -331,7 +331,7 @@ class AddRuleAclDtoRules:
     def long_connect_enable(self):
         """Gets the long_connect_enable of this AddRuleAclDtoRules.
 
-        是否支持长连接，0表示支持长连接，1表示不支持长连接
+        是否支持长连接，0表示不支持长连接，1表示支持长连接
 
         :return: The long_connect_enable of this AddRuleAclDtoRules.
         :rtype: int
@@ -342,7 +342,7 @@ class AddRuleAclDtoRules:
     def long_connect_enable(self, long_connect_enable):
         """Sets the long_connect_enable of this AddRuleAclDtoRules.
 
-        是否支持长连接，0表示支持长连接，1表示不支持长连接
+        是否支持长连接，0表示不支持长连接，1表示支持长连接
 
         :param long_connect_enable: The long_connect_enable of this AddRuleAclDtoRules.
         :type long_connect_enable: int

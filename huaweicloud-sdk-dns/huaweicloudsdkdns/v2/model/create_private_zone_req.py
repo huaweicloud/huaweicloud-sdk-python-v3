@@ -26,6 +26,7 @@ class CreatePrivateZoneReq:
         'email': 'str',
         'ttl': 'int',
         'router': 'Router',
+        'proxy_pattern': 'str',
         'tags': 'list[Tag]',
         'enterprise_project_id': 'str'
     }
@@ -37,11 +38,12 @@ class CreatePrivateZoneReq:
         'email': 'email',
         'ttl': 'ttl',
         'router': 'router',
+        'proxy_pattern': 'proxy_pattern',
         'tags': 'tags',
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, name=None, description=None, zone_type=None, email=None, ttl=None, router=None, tags=None, enterprise_project_id=None):
+    def __init__(self, name=None, description=None, zone_type=None, email=None, ttl=None, router=None, proxy_pattern=None, tags=None, enterprise_project_id=None):
         """CreatePrivateZoneReq
 
         The model defined in huaweicloud sdk
@@ -58,6 +60,8 @@ class CreatePrivateZoneReq:
         :type ttl: int
         :param router: 
         :type router: :class:`huaweicloudsdkdns.v2.Router`
+        :param proxy_pattern: 内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+        :type proxy_pattern: str
         :param tags: 资源标签。
         :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
         :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符。  默认值为0。
@@ -72,6 +76,7 @@ class CreatePrivateZoneReq:
         self._email = None
         self._ttl = None
         self._router = None
+        self._proxy_pattern = None
         self._tags = None
         self._enterprise_project_id = None
         self.discriminator = None
@@ -85,6 +90,8 @@ class CreatePrivateZoneReq:
         if ttl is not None:
             self.ttl = ttl
         self.router = router
+        if proxy_pattern is not None:
+            self.proxy_pattern = proxy_pattern
         if tags is not None:
             self.tags = tags
         if enterprise_project_id is not None:
@@ -217,6 +224,28 @@ class CreatePrivateZoneReq:
         :type router: :class:`huaweicloudsdkdns.v2.Router`
         """
         self._router = router
+
+    @property
+    def proxy_pattern(self):
+        """Gets the proxy_pattern of this CreatePrivateZoneReq.
+
+        内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+
+        :return: The proxy_pattern of this CreatePrivateZoneReq.
+        :rtype: str
+        """
+        return self._proxy_pattern
+
+    @proxy_pattern.setter
+    def proxy_pattern(self, proxy_pattern):
+        """Sets the proxy_pattern of this CreatePrivateZoneReq.
+
+        内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+
+        :param proxy_pattern: The proxy_pattern of this CreatePrivateZoneReq.
+        :type proxy_pattern: str
+        """
+        self._proxy_pattern = proxy_pattern
 
     @property
     def tags(self):
