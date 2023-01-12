@@ -292,6 +292,70 @@ class EiHealthClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def publish_app(self, request):
+        """发布应用
+
+        发布应用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for PublishApp
+        :type request: :class:`huaweicloudsdkeihealth.v1.PublishAppRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.PublishAppResponse`
+        """
+        return self.publish_app_with_http_info(request)
+
+    def publish_app_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'app_id', 'publish_asset_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/apps/{app_id}/publish',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='PublishAppResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_app(self, request):
         """获取应用详情
 
@@ -475,6 +539,132 @@ class EiHealthClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateAppResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_asset_version(self, request):
+        """删除资产指定版本
+
+        删除资产指定版本
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteAssetVersion
+        :type request: :class:`huaweicloudsdkeihealth.v1.DeleteAssetVersionRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteAssetVersionResponse`
+        """
+        return self.delete_asset_version_with_http_info(request)
+
+    def delete_asset_version_with_http_info(self, request):
+        all_params = ['asset_id', 'version']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'asset_id' in local_var_params:
+            path_params['asset_id'] = local_var_params['asset_id']
+        if 'version' in local_var_params:
+            path_params['version'] = local_var_params['version']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/assets/{asset_id}/versions/{version}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteAssetVersionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def execute_asset_action(self, request):
+        """操作资产发布状态
+
+        操作资产发布状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteAssetAction
+        :type request: :class:`huaweicloudsdkeihealth.v1.ExecuteAssetActionRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ExecuteAssetActionResponse`
+        """
+        return self.execute_asset_action_with_http_info(request)
+
+    def execute_asset_action_with_http_info(self, request):
+        all_params = ['asset_id', 'version', 'manage_asset_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'asset_id' in local_var_params:
+            path_params['asset_id'] = local_var_params['asset_id']
+        if 'version' in local_var_params:
+            path_params['version'] = local_var_params['version']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/assets/{asset_id}/versions/{version}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExecuteAssetActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -731,6 +921,70 @@ class EiHealthClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowAssetVersionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_asset_version(self, request):
+        """更新资产指定版本的信息
+
+        更新资产指定版本的信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAssetVersion
+        :type request: :class:`huaweicloudsdkeihealth.v1.UpdateAssetVersionRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateAssetVersionResponse`
+        """
+        return self.update_asset_version_with_http_info(request)
+
+    def update_asset_version_with_http_info(self, request):
+        all_params = ['asset_id', 'version', 'update_asset_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'asset_id' in local_var_params:
+            path_params['asset_id'] = local_var_params['asset_id']
+        if 'version' in local_var_params:
+            path_params['version'] = local_var_params['version']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/assets/{asset_id}/versions/{version}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateAssetVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1374,7 +1628,7 @@ class EiHealthClient(Client):
         return self.list_computing_resources_with_http_info(request)
 
     def list_computing_resources_with_http_info(self, request):
-        all_params = ['label', 'offset', 'limit']
+        all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1387,12 +1641,6 @@ class EiHealthClient(Client):
         path_params = {}
 
         query_params = []
-        if 'label' in local_var_params:
-            query_params.append(('label', local_var_params['label']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -2668,6 +2916,68 @@ class EiHealthClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def publish_data(self, request):
+        """发布数据资产
+
+        发布数据资产
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for PublishData
+        :type request: :class:`huaweicloudsdkeihealth.v1.PublishDataRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.PublishDataResponse`
+        """
+        return self.publish_data_with_http_info(request)
+
+    def publish_data_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'publish_data_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/publish',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='PublishDataResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def quote_data(self, request):
         """引用项目数据
 
@@ -2969,6 +3279,70 @@ class EiHealthClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='SubscribeDataResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_data_path_policy(self, request):
+        """设置数据对象策略
+
+        设置数据对象策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDataPathPolicy
+        :type request: :class:`huaweicloudsdkeihealth.v1.UpdateDataPathPolicyRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateDataPathPolicyResponse`
+        """
+        return self.update_data_path_policy_with_http_info(request)
+
+    def update_data_path_policy_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'path', 'request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+        if 'path' in local_var_params:
+            path_params['path'] = local_var_params['path']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/{path}/policy',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateDataPathPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4884,6 +5258,68 @@ class EiHealthClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def publish_image(self, request):
+        """发布镜像
+
+        发布镜像
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for PublishImage
+        :type request: :class:`huaweicloudsdkeihealth.v1.PublishImageRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.PublishImageResponse`
+        """
+        return self.publish_image_with_http_info(request)
+
+    def publish_image_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'publish_asset_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/images/publish',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='PublishImageResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_docker_login(self, request):
         """获取docker login指令
 
@@ -5131,7 +5567,7 @@ class EiHealthClient(Client):
     def update_job_config(self, request):
         """设置作业配置
 
-        设置作业配置，目前支持修改保存时长(180天 - 10年)、记录数(1W-500W)
+        设置作业配置，目前支持修改作业保存条数(1万条-1000万条)，默认设置为500万条；
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5183,6 +5619,194 @@ class EiHealthClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateJobConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_cancel_job(self, request):
+        """批量取消作业
+
+        批量取消作业
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCancelJob
+        :type request: :class:`huaweicloudsdkeihealth.v1.BatchCancelJobRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.BatchCancelJobResponse`
+        """
+        return self.batch_cancel_job_with_http_info(request)
+
+    def batch_cancel_job_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'job_ids', 'x_force']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_force' in local_var_params:
+            header_params['X-Force'] = local_var_params['x_force']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/batch-terminate',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchCancelJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_delete_job(self, request):
+        """批量删除作业
+
+        批量删除作业
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteJob
+        :type request: :class:`huaweicloudsdkeihealth.v1.BatchDeleteJobRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.BatchDeleteJobResponse`
+        """
+        return self.batch_delete_job_with_http_info(request)
+
+    def batch_delete_job_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'job_ids']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/batch-delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchDeleteJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_retry_job(self, request):
+        """批量重试作业
+
+        批量重试作业
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchRetryJob
+        :type request: :class:`huaweicloudsdkeihealth.v1.BatchRetryJobRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.BatchRetryJobResponse`
+        """
+        return self.batch_retry_job_with_http_info(request)
+
+    def batch_retry_job_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'job_ids']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/batch-retry',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchRetryJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -5853,6 +6477,82 @@ class EiHealthClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_task_instance_metric_data(self, request):
+        """获取子任务中实例的资源监控数据
+
+        获取子任务中实例的资源监控数据
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTaskInstanceMetricData
+        :type request: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstanceMetricDataRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstanceMetricDataResponse`
+        """
+        return self.show_task_instance_metric_data_with_http_info(request)
+
+    def show_task_instance_metric_data_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'job_id', 'task_name', 'instance_name', 'metric_name', 'task_index', 'from_time', 'to_time', 'method']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+        if 'task_name' in local_var_params:
+            path_params['task_name'] = local_var_params['task_name']
+        if 'instance_name' in local_var_params:
+            path_params['instance_name'] = local_var_params['instance_name']
+
+        query_params = []
+        if 'task_index' in local_var_params:
+            query_params.append(('task_index', local_var_params['task_index']))
+        if 'from_time' in local_var_params:
+            query_params.append(('from_time', local_var_params['from_time']))
+        if 'to_time' in local_var_params:
+            query_params.append(('to_time', local_var_params['to_time']))
+        if 'method' in local_var_params:
+            query_params.append(('method', local_var_params['method']))
+        if 'metric_name' in local_var_params:
+            query_params.append(('metric_name', local_var_params['metric_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}/tasks/{task_name}/instances/{instance_name}/metric-data',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowTaskInstanceMetricDataResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_task_instance_pod(self, request):
         """获取子任务中实例的pod信息
 
@@ -5982,6 +6682,130 @@ class EiHealthClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowTaskInstancesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_job(self, request):
+        """更新作业
+
+        更新作业
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateJob
+        :type request: :class:`huaweicloudsdkeihealth.v1.UpdateJobRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateJobResponse`
+        """
+        return self.update_job_with_http_info(request)
+
+    def update_job_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'job_id', 'update_job_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_delete_label(self, request):
+        """批量删除标签
+
+        批量删除标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteLabel
+        :type request: :class:`huaweicloudsdkeihealth.v1.BatchDeleteLabelRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.BatchDeleteLabelResponse`
+        """
+        return self.batch_delete_label_with_http_info(request)
+
+    def batch_delete_label_with_http_info(self, request):
+        all_params = ['label_ids']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/system/labels/batch-delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchDeleteLabelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -8363,68 +9187,6 @@ class EiHealthClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def list_recent_job(self, request):
-        """获取最近的作业列表
-
-        获取最近的作业列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ListRecentJob
-        :type request: :class:`huaweicloudsdkeihealth.v1.ListRecentJobRequest`
-        :rtype: :class:`huaweicloudsdkeihealth.v1.ListRecentJobResponse`
-        """
-        return self.list_recent_job_with_http_info(request)
-
-    def list_recent_job_with_http_info(self, request):
-        all_params = ['limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/recent-jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRecentJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def show_project(self, request):
         """获取项目详情
 
@@ -8984,6 +9746,66 @@ class EiHealthClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateProjectTrackerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_download_resource_stat_data(self, request):
+        """批量获取资源统计数据
+
+        批量获取资源统计数据
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDownloadResourceStatData
+        :type request: :class:`huaweicloudsdkeihealth.v1.BatchDownloadResourceStatDataRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.BatchDownloadResourceStatDataResponse`
+        """
+        return self.batch_download_resource_stat_data_with_http_info(request)
+
+    def batch_download_resource_stat_data_with_http_info(self, request):
+        all_params = ['batch_query_stat_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/metric-data/batch-stat-metric-data',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchDownloadResourceStatDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -10587,6 +11409,64 @@ class EiHealthClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def check_token_verification(self, request):
+        """校验token
+
+        校验token是否可访问当前环境
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CheckTokenVerification
+        :type request: :class:`huaweicloudsdkeihealth.v1.CheckTokenVerificationRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.CheckTokenVerificationResponse`
+        """
+        return self.check_token_verification_with_http_info(request)
+
+    def check_token_verification_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/users/token-verification',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CheckTokenVerificationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_code(self, request):
         """发送验证码
 
@@ -10723,7 +11603,7 @@ class EiHealthClient(Client):
         return self.delete_user_with_http_info(request)
 
     def delete_user_with_http_info(self, request):
-        all_params = ['user_id', 'user_id_type']
+        all_params = ['user_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -10738,8 +11618,6 @@ class EiHealthClient(Client):
             path_params['user_id'] = local_var_params['user_id']
 
         query_params = []
-        if 'user_id_type' in local_var_params:
-            query_params.append(('user_id_type', local_var_params['user_id_type']))
 
         header_params = {}
 
@@ -10884,64 +11762,6 @@ class EiHealthClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def show_token_verification(self, request):
-        """校验token
-
-        校验token是否可访问当前环境
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ShowTokenVerification
-        :type request: :class:`huaweicloudsdkeihealth.v1.ShowTokenVerificationRequest`
-        :rtype: :class:`huaweicloudsdkeihealth.v1.ShowTokenVerificationResponse`
-        """
-        return self.show_token_verification_with_http_info(request)
-
-    def show_token_verification_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/users/token-verification',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTokenVerificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -11804,6 +12624,70 @@ class EiHealthClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListWorkflowResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def publish_workflow(self, request):
+        """发布流程
+
+        发布流程
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for PublishWorkflow
+        :type request: :class:`huaweicloudsdkeihealth.v1.PublishWorkflowRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.PublishWorkflowResponse`
+        """
+        return self.publish_workflow_with_http_info(request)
+
+    def publish_workflow_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'workflow_id', 'publish_asset_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+        if 'workflow_id' in local_var_params:
+            path_params['workflow_id'] = local_var_params['workflow_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/workflows/{workflow_id}/publish',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='PublishWorkflowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

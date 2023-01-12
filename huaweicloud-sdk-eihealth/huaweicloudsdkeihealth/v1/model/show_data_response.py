@@ -26,7 +26,8 @@ class ShowDataResponse(SdkResponse):
         'size': 'int',
         'create_time': 'str',
         'download_url': 'str',
-        'allowed_operate': 'bool'
+        'allowed_operate': 'bool',
+        'deletable': 'bool'
     }
 
     attribute_map = {
@@ -36,10 +37,11 @@ class ShowDataResponse(SdkResponse):
         'size': 'size',
         'create_time': 'create_time',
         'download_url': 'download_url',
-        'allowed_operate': 'allowed_operate'
+        'allowed_operate': 'allowed_operate',
+        'deletable': 'deletable'
     }
 
-    def __init__(self, path=None, name=None, type=None, size=None, create_time=None, download_url=None, allowed_operate=None):
+    def __init__(self, path=None, name=None, type=None, size=None, create_time=None, download_url=None, allowed_operate=None, deletable=None):
         """ShowDataResponse
 
         The model defined in huaweicloud sdk
@@ -58,6 +60,8 @@ class ShowDataResponse(SdkResponse):
         :type download_url: str
         :param allowed_operate: 可操作标记
         :type allowed_operate: bool
+        :param deletable: 可删除标记
+        :type deletable: bool
         """
         
         super(ShowDataResponse, self).__init__()
@@ -69,6 +73,7 @@ class ShowDataResponse(SdkResponse):
         self._create_time = None
         self._download_url = None
         self._allowed_operate = None
+        self._deletable = None
         self.discriminator = None
 
         if path is not None:
@@ -85,6 +90,8 @@ class ShowDataResponse(SdkResponse):
             self.download_url = download_url
         if allowed_operate is not None:
             self.allowed_operate = allowed_operate
+        if deletable is not None:
+            self.deletable = deletable
 
     @property
     def path(self):
@@ -235,6 +242,28 @@ class ShowDataResponse(SdkResponse):
         :type allowed_operate: bool
         """
         self._allowed_operate = allowed_operate
+
+    @property
+    def deletable(self):
+        """Gets the deletable of this ShowDataResponse.
+
+        可删除标记
+
+        :return: The deletable of this ShowDataResponse.
+        :rtype: bool
+        """
+        return self._deletable
+
+    @deletable.setter
+    def deletable(self, deletable):
+        """Sets the deletable of this ShowDataResponse.
+
+        可删除标记
+
+        :param deletable: The deletable of this ShowDataResponse.
+        :type deletable: bool
+        """
+        self._deletable = deletable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

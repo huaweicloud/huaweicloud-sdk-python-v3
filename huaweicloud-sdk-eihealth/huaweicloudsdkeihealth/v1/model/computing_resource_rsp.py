@@ -33,7 +33,8 @@ class ComputingResourceRsp:
         'create_time': 'str',
         'status': 'str',
         'availability_zone_id': 'str',
-        'schedulable': 'bool'
+        'schedulable': 'bool',
+        'node_labels': 'list[str]'
     }
 
     attribute_map = {
@@ -50,10 +51,11 @@ class ComputingResourceRsp:
         'create_time': 'create_time',
         'status': 'status',
         'availability_zone_id': 'availability_zone_id',
-        'schedulable': 'schedulable'
+        'schedulable': 'schedulable',
+        'node_labels': 'node_labels'
     }
 
-    def __init__(self, id=None, resource_id=None, name=None, spec=None, ip=None, system_disk=None, data_disks=None, image=None, charge_mode=None, period_num=None, create_time=None, status=None, availability_zone_id=None, schedulable=None):
+    def __init__(self, id=None, resource_id=None, name=None, spec=None, ip=None, system_disk=None, data_disks=None, image=None, charge_mode=None, period_num=None, create_time=None, status=None, availability_zone_id=None, schedulable=None, node_labels=None):
         """ComputingResourceRsp
 
         The model defined in huaweicloud sdk
@@ -86,6 +88,8 @@ class ComputingResourceRsp:
         :type availability_zone_id: str
         :param schedulable: 资源是否可调度
         :type schedulable: bool
+        :param node_labels: 计算节点标签列表
+        :type node_labels: list[str]
         """
         
         
@@ -104,6 +108,7 @@ class ComputingResourceRsp:
         self._status = None
         self._availability_zone_id = None
         self._schedulable = None
+        self._node_labels = None
         self.discriminator = None
 
         self.id = id
@@ -126,6 +131,7 @@ class ComputingResourceRsp:
         self.availability_zone_id = availability_zone_id
         if schedulable is not None:
             self.schedulable = schedulable
+        self.node_labels = node_labels
 
     @property
     def id(self):
@@ -422,6 +428,28 @@ class ComputingResourceRsp:
         :type schedulable: bool
         """
         self._schedulable = schedulable
+
+    @property
+    def node_labels(self):
+        """Gets the node_labels of this ComputingResourceRsp.
+
+        计算节点标签列表
+
+        :return: The node_labels of this ComputingResourceRsp.
+        :rtype: list[str]
+        """
+        return self._node_labels
+
+    @node_labels.setter
+    def node_labels(self, node_labels):
+        """Sets the node_labels of this ComputingResourceRsp.
+
+        计算节点标签列表
+
+        :param node_labels: The node_labels of this ComputingResourceRsp.
+        :type node_labels: list[str]
+        """
+        self._node_labels = node_labels
 
     def to_dict(self):
         """Returns the model properties as a dict"""

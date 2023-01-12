@@ -34,7 +34,7 @@ class AlarmHistoryItemV2:
         'additional_info': 'AdditionalInfo',
         'alarm_actions': 'list[Notification]',
         'ok_actions': 'list[Notification]',
-        'datapoints': 'list[DataPointInfo]'
+        'data_points': 'list[DataPointInfo]'
     }
 
     attribute_map = {
@@ -52,10 +52,10 @@ class AlarmHistoryItemV2:
         'additional_info': 'additional_info',
         'alarm_actions': 'alarm_actions',
         'ok_actions': 'ok_actions',
-        'datapoints': 'datapoints'
+        'data_points': 'data_points'
     }
 
-    def __init__(self, record_id=None, alarm_id=None, name=None, status=None, level=None, type=None, action_enabled=None, begin_time=None, end_time=None, metric=None, condition=None, additional_info=None, alarm_actions=None, ok_actions=None, datapoints=None):
+    def __init__(self, record_id=None, alarm_id=None, name=None, status=None, level=None, type=None, action_enabled=None, begin_time=None, end_time=None, metric=None, condition=None, additional_info=None, alarm_actions=None, ok_actions=None, data_points=None):
         """AlarmHistoryItemV2
 
         The model defined in huaweicloud sdk
@@ -88,8 +88,8 @@ class AlarmHistoryItemV2:
         :type alarm_actions: list[:class:`huaweicloudsdkces.v2.Notification`]
         :param ok_actions: 告警恢复触发的动作。  结构如下：  {  \&quot;type\&quot;: \&quot;notification\&quot;, \&quot;notification_list\&quot;: [\&quot;urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\&quot;]  } type取值：  notification：通知。  notification_list：告警状态发生变化时，被通知对象的列表。
         :type ok_actions: list[:class:`huaweicloudsdkces.v2.Notification`]
-        :param datapoints: 计算出该条告警记录的资源监控数据上报时间和监控数值。
-        :type datapoints: list[:class:`huaweicloudsdkces.v2.DataPointInfo`]
+        :param data_points: 计算出该条告警记录的资源监控数据上报时间和监控数值。
+        :type data_points: list[:class:`huaweicloudsdkces.v2.DataPointInfo`]
         """
         
         
@@ -108,7 +108,7 @@ class AlarmHistoryItemV2:
         self._additional_info = None
         self._alarm_actions = None
         self._ok_actions = None
-        self._datapoints = None
+        self._data_points = None
         self.discriminator = None
 
         if record_id is not None:
@@ -139,8 +139,8 @@ class AlarmHistoryItemV2:
             self.alarm_actions = alarm_actions
         if ok_actions is not None:
             self.ok_actions = ok_actions
-        if datapoints is not None:
-            self.datapoints = datapoints
+        if data_points is not None:
+            self.data_points = data_points
 
     @property
     def record_id(self):
@@ -439,26 +439,26 @@ class AlarmHistoryItemV2:
         self._ok_actions = ok_actions
 
     @property
-    def datapoints(self):
-        """Gets the datapoints of this AlarmHistoryItemV2.
+    def data_points(self):
+        """Gets the data_points of this AlarmHistoryItemV2.
 
         计算出该条告警记录的资源监控数据上报时间和监控数值。
 
-        :return: The datapoints of this AlarmHistoryItemV2.
+        :return: The data_points of this AlarmHistoryItemV2.
         :rtype: list[:class:`huaweicloudsdkces.v2.DataPointInfo`]
         """
-        return self._datapoints
+        return self._data_points
 
-    @datapoints.setter
-    def datapoints(self, datapoints):
-        """Sets the datapoints of this AlarmHistoryItemV2.
+    @data_points.setter
+    def data_points(self, data_points):
+        """Sets the data_points of this AlarmHistoryItemV2.
 
         计算出该条告警记录的资源监控数据上报时间和监控数值。
 
-        :param datapoints: The datapoints of this AlarmHistoryItemV2.
-        :type datapoints: list[:class:`huaweicloudsdkces.v2.DataPointInfo`]
+        :param data_points: The data_points of this AlarmHistoryItemV2.
+        :type data_points: list[:class:`huaweicloudsdkces.v2.DataPointInfo`]
         """
-        self._datapoints = datapoints
+        self._data_points = data_points
 
     def to_dict(self):
         """Returns the model properties as a dict"""

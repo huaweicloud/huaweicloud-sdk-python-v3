@@ -42,9 +42,9 @@ class ShowDbObjectTemplateProgressRequest:
         :type job_id: str
         :param x_language: 请求语言类型。
         :type x_language: str
-        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0
+        :param offset: 偏移量，表示查询该偏移量后面的记录。
         :type offset: int
-        :param limit: 每页显示的条目数量
+        :param limit: 查询返回记录的数量限制。
         :type limit: int
         """
         
@@ -112,7 +112,7 @@ class ShowDbObjectTemplateProgressRequest:
     def offset(self):
         """Gets the offset of this ShowDbObjectTemplateProgressRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0
+        偏移量，表示查询该偏移量后面的记录。
 
         :return: The offset of this ShowDbObjectTemplateProgressRequest.
         :rtype: int
@@ -123,7 +123,7 @@ class ShowDbObjectTemplateProgressRequest:
     def offset(self, offset):
         """Sets the offset of this ShowDbObjectTemplateProgressRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0
+        偏移量，表示查询该偏移量后面的记录。
 
         :param offset: The offset of this ShowDbObjectTemplateProgressRequest.
         :type offset: int
@@ -134,7 +134,7 @@ class ShowDbObjectTemplateProgressRequest:
     def limit(self):
         """Gets the limit of this ShowDbObjectTemplateProgressRequest.
 
-        每页显示的条目数量
+        查询返回记录的数量限制。
 
         :return: The limit of this ShowDbObjectTemplateProgressRequest.
         :rtype: int
@@ -145,7 +145,7 @@ class ShowDbObjectTemplateProgressRequest:
     def limit(self, limit):
         """Sets the limit of this ShowDbObjectTemplateProgressRequest.
 
-        每页显示的条目数量
+        查询返回记录的数量限制。
 
         :param limit: The limit of this ShowDbObjectTemplateProgressRequest.
         :type limit: int

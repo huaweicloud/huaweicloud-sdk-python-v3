@@ -23,7 +23,6 @@ class LabelRsp:
         'id': 'str',
         'name': 'str',
         'description': 'str',
-        'count': 'int',
         'creator': 'str',
         'create_time': 'str',
         'update_time': 'str'
@@ -33,13 +32,12 @@ class LabelRsp:
         'id': 'id',
         'name': 'name',
         'description': 'description',
-        'count': 'count',
         'creator': 'creator',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, id=None, name=None, description=None, count=None, creator=None, create_time=None, update_time=None):
+    def __init__(self, id=None, name=None, description=None, creator=None, create_time=None, update_time=None):
         """LabelRsp
 
         The model defined in huaweicloud sdk
@@ -50,8 +48,6 @@ class LabelRsp:
         :type name: str
         :param description: 标签描述
         :type description: str
-        :param count: 标签使用次数
-        :type count: int
         :param creator: 标签创建者
         :type creator: str
         :param create_time: 标签创建时间
@@ -65,7 +61,6 @@ class LabelRsp:
         self._id = None
         self._name = None
         self._description = None
-        self._count = None
         self._creator = None
         self._create_time = None
         self._update_time = None
@@ -77,8 +72,6 @@ class LabelRsp:
             self.name = name
         if description is not None:
             self.description = description
-        if count is not None:
-            self.count = count
         if creator is not None:
             self.creator = creator
         if create_time is not None:
@@ -151,28 +144,6 @@ class LabelRsp:
         :type description: str
         """
         self._description = description
-
-    @property
-    def count(self):
-        """Gets the count of this LabelRsp.
-
-        标签使用次数
-
-        :return: The count of this LabelRsp.
-        :rtype: int
-        """
-        return self._count
-
-    @count.setter
-    def count(self, count):
-        """Sets the count of this LabelRsp.
-
-        标签使用次数
-
-        :param count: The count of this LabelRsp.
-        :type count: int
-        """
-        self._count = count
 
     @property
     def creator(self):

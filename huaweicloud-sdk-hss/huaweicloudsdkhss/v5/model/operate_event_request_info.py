@@ -48,7 +48,7 @@ class OperateEventRequestInfo:
         :type event_type: int
         :param occur_time: 发生时间，毫秒
         :type occur_time: int
-        :param operate_detail_list: 操作详情信息列表
+        :param operate_detail_list: 操作详情信息列表，当 operate_type 为 add_to_alarm_whitelist 或 remove_from_alarm_whitelist 时，必传 keyword 和 hash；当 operate_type 为 add_to_login_whitelist 或 remove_from_login_whitelist 时，必传 login_ip， private_ip 和 login_user_name；当 operate_type 为 isolate_and_kill 或 do_not_isolate_or_kill 时，必传 agent_id，file_hash，file_path，process_pid；其余情况可不填写内容。
         :type operate_detail_list: list[:class:`huaweicloudsdkhss.v5.EventDetailRequestInfo`]
         """
         
@@ -61,16 +61,11 @@ class OperateEventRequestInfo:
         self._operate_detail_list = None
         self.discriminator = None
 
-        if event_class_id is not None:
-            self.event_class_id = event_class_id
-        if event_id is not None:
-            self.event_id = event_id
-        if event_type is not None:
-            self.event_type = event_type
-        if occur_time is not None:
-            self.occur_time = occur_time
-        if operate_detail_list is not None:
-            self.operate_detail_list = operate_detail_list
+        self.event_class_id = event_class_id
+        self.event_id = event_id
+        self.event_type = event_type
+        self.occur_time = occur_time
+        self.operate_detail_list = operate_detail_list
 
     @property
     def event_class_id(self):
@@ -164,7 +159,7 @@ class OperateEventRequestInfo:
     def operate_detail_list(self):
         """Gets the operate_detail_list of this OperateEventRequestInfo.
 
-        操作详情信息列表
+        操作详情信息列表，当 operate_type 为 add_to_alarm_whitelist 或 remove_from_alarm_whitelist 时，必传 keyword 和 hash；当 operate_type 为 add_to_login_whitelist 或 remove_from_login_whitelist 时，必传 login_ip， private_ip 和 login_user_name；当 operate_type 为 isolate_and_kill 或 do_not_isolate_or_kill 时，必传 agent_id，file_hash，file_path，process_pid；其余情况可不填写内容。
 
         :return: The operate_detail_list of this OperateEventRequestInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.EventDetailRequestInfo`]
@@ -175,7 +170,7 @@ class OperateEventRequestInfo:
     def operate_detail_list(self, operate_detail_list):
         """Sets the operate_detail_list of this OperateEventRequestInfo.
 
-        操作详情信息列表
+        操作详情信息列表，当 operate_type 为 add_to_alarm_whitelist 或 remove_from_alarm_whitelist 时，必传 keyword 和 hash；当 operate_type 为 add_to_login_whitelist 或 remove_from_login_whitelist 时，必传 login_ip， private_ip 和 login_user_name；当 operate_type 为 isolate_and_kill 或 do_not_isolate_or_kill 时，必传 agent_id，file_hash，file_path，process_pid；其余情况可不填写内容。
 
         :param operate_detail_list: The operate_detail_list of this OperateEventRequestInfo.
         :type operate_detail_list: list[:class:`huaweicloudsdkhss.v5.EventDetailRequestInfo`]

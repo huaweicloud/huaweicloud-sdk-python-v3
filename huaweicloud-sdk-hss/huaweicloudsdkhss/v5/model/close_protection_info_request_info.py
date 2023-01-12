@@ -51,12 +51,9 @@ class CloseProtectionInfoRequestInfo:
         self._close_protection_type = None
         self.discriminator = None
 
-        if host_id_list is not None:
-            self.host_id_list = host_id_list
-        if agent_id_list is not None:
-            self.agent_id_list = agent_id_list
-        if close_protection_type is not None:
-            self.close_protection_type = close_protection_type
+        self.host_id_list = host_id_list
+        self.agent_id_list = agent_id_list
+        self.close_protection_type = close_protection_type
 
     @property
     def host_id_list(self):

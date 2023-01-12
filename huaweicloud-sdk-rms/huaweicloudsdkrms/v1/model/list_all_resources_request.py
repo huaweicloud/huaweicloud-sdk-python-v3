@@ -18,8 +18,10 @@ class ListAllResourcesRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
+    sensitive_list.append('x_auth_token')
 
     openapi_types = {
+        'x_auth_token': 'str',
         'region_id': 'str',
         'ep_id': 'str',
         'type': 'str',
@@ -28,6 +30,7 @@ class ListAllResourcesRequest:
     }
 
     attribute_map = {
+        'x_auth_token': 'X-Auth-Token',
         'region_id': 'region_id',
         'ep_id': 'ep_id',
         'type': 'type',
@@ -35,11 +38,13 @@ class ListAllResourcesRequest:
         'marker': 'marker'
     }
 
-    def __init__(self, region_id=None, ep_id=None, type=None, limit=None, marker=None):
+    def __init__(self, x_auth_token=None, region_id=None, ep_id=None, type=None, limit=None, marker=None):
         """ListAllResourcesRequest
 
         The model defined in huaweicloud sdk
 
+        :param x_auth_token: 用户Token。 获取Token，请参考《统一身份认证服务API参考》的“获取用户Token”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。
+        :type x_auth_token: str
         :param region_id: 区域ID
         :type region_id: str
         :param ep_id: 企业项目ID
@@ -54,6 +59,7 @@ class ListAllResourcesRequest:
         
         
 
+        self._x_auth_token = None
         self._region_id = None
         self._ep_id = None
         self._type = None
@@ -61,6 +67,7 @@ class ListAllResourcesRequest:
         self._marker = None
         self.discriminator = None
 
+        self.x_auth_token = x_auth_token
         if region_id is not None:
             self.region_id = region_id
         if ep_id is not None:
@@ -71,6 +78,28 @@ class ListAllResourcesRequest:
             self.limit = limit
         if marker is not None:
             self.marker = marker
+
+    @property
+    def x_auth_token(self):
+        """Gets the x_auth_token of this ListAllResourcesRequest.
+
+        用户Token。 获取Token，请参考《统一身份认证服务API参考》的“获取用户Token”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。
+
+        :return: The x_auth_token of this ListAllResourcesRequest.
+        :rtype: str
+        """
+        return self._x_auth_token
+
+    @x_auth_token.setter
+    def x_auth_token(self, x_auth_token):
+        """Sets the x_auth_token of this ListAllResourcesRequest.
+
+        用户Token。 获取Token，请参考《统一身份认证服务API参考》的“获取用户Token”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。
+
+        :param x_auth_token: The x_auth_token of this ListAllResourcesRequest.
+        :type x_auth_token: str
+        """
+        self._x_auth_token = x_auth_token
 
     @property
     def region_id(self):

@@ -21,15 +21,17 @@ class WebImageResult:
 
     openapi_types = {
         'words_block_count': 'int',
-        'words_block_list': 'list[WebImageWordsBlockList]'
+        'words_block_list': 'list[WebImageWordsBlockList]',
+        'extracted_data': 'WebImageExtractedData'
     }
 
     attribute_map = {
         'words_block_count': 'words_block_count',
-        'words_block_list': 'words_block_list'
+        'words_block_list': 'words_block_list',
+        'extracted_data': 'extracted_data'
     }
 
-    def __init__(self, words_block_count=None, words_block_list=None):
+    def __init__(self, words_block_count=None, words_block_list=None, extracted_data=None):
         """WebImageResult
 
         The model defined in huaweicloud sdk
@@ -38,16 +40,20 @@ class WebImageResult:
         :type words_block_count: int
         :param words_block_list: 识别文字块列表，输出顺序从左到右，从上到下。 
         :type words_block_list: list[:class:`huaweicloudsdkocr.v1.WebImageWordsBlockList`]
+        :param extracted_data: 
+        :type extracted_data: :class:`huaweicloudsdkocr.v1.WebImageExtractedData`
         """
         
         
 
         self._words_block_count = None
         self._words_block_list = None
+        self._extracted_data = None
         self.discriminator = None
 
         self.words_block_count = words_block_count
         self.words_block_list = words_block_list
+        self.extracted_data = extracted_data
 
     @property
     def words_block_count(self):
@@ -92,6 +98,24 @@ class WebImageResult:
         :type words_block_list: list[:class:`huaweicloudsdkocr.v1.WebImageWordsBlockList`]
         """
         self._words_block_list = words_block_list
+
+    @property
+    def extracted_data(self):
+        """Gets the extracted_data of this WebImageResult.
+
+        :return: The extracted_data of this WebImageResult.
+        :rtype: :class:`huaweicloudsdkocr.v1.WebImageExtractedData`
+        """
+        return self._extracted_data
+
+    @extracted_data.setter
+    def extracted_data(self, extracted_data):
+        """Sets the extracted_data of this WebImageResult.
+
+        :param extracted_data: The extracted_data of this WebImageResult.
+        :type extracted_data: :class:`huaweicloudsdkocr.v1.WebImageExtractedData`
+        """
+        self._extracted_data = extracted_data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

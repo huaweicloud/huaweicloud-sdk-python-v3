@@ -382,7 +382,7 @@ class HssAsyncClient(Client):
         return self.change_vul_status_with_http_info(request)
 
     def change_vul_status_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'change_vul_status_request_body']
+        all_params = ['change_vul_status_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -445,7 +445,7 @@ class HssAsyncClient(Client):
         return self.delete_hosts_group_with_http_info(request)
 
     def delete_hosts_group_with_http_info(self, request):
-        all_params = ['region', 'enterprise_project_id', 'group_id']
+        all_params = ['region', 'group_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):

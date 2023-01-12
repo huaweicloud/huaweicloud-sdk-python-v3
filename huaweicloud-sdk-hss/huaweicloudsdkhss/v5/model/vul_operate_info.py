@@ -46,10 +46,8 @@ class VulOperateInfo:
         self._host_id_list = None
         self.discriminator = None
 
-        if vul_id is not None:
-            self.vul_id = vul_id
-        if host_id_list is not None:
-            self.host_id_list = host_id_list
+        self.vul_id = vul_id
+        self.host_id_list = host_id_list
 
     @property
     def vul_id(self):

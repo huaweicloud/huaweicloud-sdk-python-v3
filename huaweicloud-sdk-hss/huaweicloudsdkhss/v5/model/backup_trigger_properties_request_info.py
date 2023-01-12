@@ -41,8 +41,7 @@ class BackupTriggerPropertiesRequestInfo:
         self._pattern = None
         self.discriminator = None
 
-        if pattern is not None:
-            self.pattern = pattern
+        self.pattern = pattern
 
     @property
     def pattern(self):

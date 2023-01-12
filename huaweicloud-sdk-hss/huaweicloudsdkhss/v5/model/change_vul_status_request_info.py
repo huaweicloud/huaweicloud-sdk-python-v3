@@ -46,10 +46,8 @@ class ChangeVulStatusRequestInfo:
         self._data_list = None
         self.discriminator = None
 
-        if operate_type is not None:
-            self.operate_type = operate_type
-        if data_list is not None:
-            self.data_list = data_list
+        self.operate_type = operate_type
+        self.data_list = data_list
 
     @property
     def operate_type(self):

@@ -46,6 +46,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         'eip_ipv6_address': 'str',
         'nat_eip_address': 'str',
         'bandwidth_size': 'int',
+        'bandwidth_charging_mode': 'str',
         'available_zone_ids': 'str',
         'instance_version': 'str',
         'virsubnet_id': 'str',
@@ -57,7 +58,8 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         'node_ips': 'NodeIps',
         'publicips': 'list[IpDetails]',
         'privateips': 'list[IpDetails]',
-        'is_releasable': 'bool'
+        'is_releasable': 'bool',
+        'ingress_bandwidth_charging_mode': 'str'
     }
 
     attribute_map = {
@@ -87,6 +89,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         'eip_ipv6_address': 'eip_ipv6_address',
         'nat_eip_address': 'nat_eip_address',
         'bandwidth_size': 'bandwidth_size',
+        'bandwidth_charging_mode': 'bandwidth_charging_mode',
         'available_zone_ids': 'available_zone_ids',
         'instance_version': 'instance_version',
         'virsubnet_id': 'virsubnet_id',
@@ -98,10 +101,11 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         'node_ips': 'node_ips',
         'publicips': 'publicips',
         'privateips': 'privateips',
-        'is_releasable': 'is_releasable'
+        'is_releasable': 'is_releasable',
+        'ingress_bandwidth_charging_mode': 'ingress_bandwidth_charging_mode'
     }
 
-    def __init__(self, id=None, project_id=None, instance_name=None, status=None, instance_status=None, type=None, spec=None, create_time=None, enterprise_project_id=None, eip_address=None, charging_mode=None, cbc_metadata=None, loadbalancer_provider=None, description=None, vpc_id=None, subnet_id=None, security_group_id=None, maintain_begin=None, maintain_end=None, ingress_ip=None, ingress_ip_v6=None, user_id=None, nat_eip_ipv6_cidr=None, eip_ipv6_address=None, nat_eip_address=None, bandwidth_size=None, available_zone_ids=None, instance_version=None, virsubnet_id=None, roma_eip_address=None, listeners=None, supported_features=None, endpoint_service=None, endpoint_services=None, node_ips=None, publicips=None, privateips=None, is_releasable=None):
+    def __init__(self, id=None, project_id=None, instance_name=None, status=None, instance_status=None, type=None, spec=None, create_time=None, enterprise_project_id=None, eip_address=None, charging_mode=None, cbc_metadata=None, loadbalancer_provider=None, description=None, vpc_id=None, subnet_id=None, security_group_id=None, maintain_begin=None, maintain_end=None, ingress_ip=None, ingress_ip_v6=None, user_id=None, nat_eip_ipv6_cidr=None, eip_ipv6_address=None, nat_eip_address=None, bandwidth_size=None, bandwidth_charging_mode=None, available_zone_ids=None, instance_version=None, virsubnet_id=None, roma_eip_address=None, listeners=None, supported_features=None, endpoint_service=None, endpoint_services=None, node_ips=None, publicips=None, privateips=None, is_releasable=None, ingress_bandwidth_charging_mode=None):
         """ShowDetailsOfInstanceV2Response
 
         The model defined in huaweicloud sdk
@@ -158,6 +162,8 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type nat_eip_address: str
         :param bandwidth_size: 出公网带宽
         :type bandwidth_size: int
+        :param bandwidth_charging_mode: 出公网带宽计费模式
+        :type bandwidth_charging_mode: str
         :param available_zone_ids: 可用区
         :type available_zone_ids: str
         :param instance_version: 实例版本编号
@@ -182,6 +188,8 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type privateips: list[:class:`huaweicloudsdkapig.v2.IpDetails`]
         :param is_releasable: 实例是否可释放 - true：可释放 - false：不可释放
         :type is_releasable: bool
+        :param ingress_bandwidth_charging_mode: 入公网带宽计费模式
+        :type ingress_bandwidth_charging_mode: str
         """
         
         super(ShowDetailsOfInstanceV2Response, self).__init__()
@@ -212,6 +220,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         self._eip_ipv6_address = None
         self._nat_eip_address = None
         self._bandwidth_size = None
+        self._bandwidth_charging_mode = None
         self._available_zone_ids = None
         self._instance_version = None
         self._virsubnet_id = None
@@ -224,6 +233,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         self._publicips = None
         self._privateips = None
         self._is_releasable = None
+        self._ingress_bandwidth_charging_mode = None
         self.discriminator = None
 
         if id is not None:
@@ -278,6 +288,8 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
             self.nat_eip_address = nat_eip_address
         if bandwidth_size is not None:
             self.bandwidth_size = bandwidth_size
+        if bandwidth_charging_mode is not None:
+            self.bandwidth_charging_mode = bandwidth_charging_mode
         if available_zone_ids is not None:
             self.available_zone_ids = available_zone_ids
         if instance_version is not None:
@@ -302,6 +314,8 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
             self.privateips = privateips
         if is_releasable is not None:
             self.is_releasable = is_releasable
+        if ingress_bandwidth_charging_mode is not None:
+            self.ingress_bandwidth_charging_mode = ingress_bandwidth_charging_mode
 
     @property
     def id(self):
@@ -876,6 +890,28 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         self._bandwidth_size = bandwidth_size
 
     @property
+    def bandwidth_charging_mode(self):
+        """Gets the bandwidth_charging_mode of this ShowDetailsOfInstanceV2Response.
+
+        出公网带宽计费模式
+
+        :return: The bandwidth_charging_mode of this ShowDetailsOfInstanceV2Response.
+        :rtype: str
+        """
+        return self._bandwidth_charging_mode
+
+    @bandwidth_charging_mode.setter
+    def bandwidth_charging_mode(self, bandwidth_charging_mode):
+        """Sets the bandwidth_charging_mode of this ShowDetailsOfInstanceV2Response.
+
+        出公网带宽计费模式
+
+        :param bandwidth_charging_mode: The bandwidth_charging_mode of this ShowDetailsOfInstanceV2Response.
+        :type bandwidth_charging_mode: str
+        """
+        self._bandwidth_charging_mode = bandwidth_charging_mode
+
+    @property
     def available_zone_ids(self):
         """Gets the available_zone_ids of this ShowDetailsOfInstanceV2Response.
 
@@ -1130,6 +1166,28 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type is_releasable: bool
         """
         self._is_releasable = is_releasable
+
+    @property
+    def ingress_bandwidth_charging_mode(self):
+        """Gets the ingress_bandwidth_charging_mode of this ShowDetailsOfInstanceV2Response.
+
+        入公网带宽计费模式
+
+        :return: The ingress_bandwidth_charging_mode of this ShowDetailsOfInstanceV2Response.
+        :rtype: str
+        """
+        return self._ingress_bandwidth_charging_mode
+
+    @ingress_bandwidth_charging_mode.setter
+    def ingress_bandwidth_charging_mode(self, ingress_bandwidth_charging_mode):
+        """Sets the ingress_bandwidth_charging_mode of this ShowDetailsOfInstanceV2Response.
+
+        入公网带宽计费模式
+
+        :param ingress_bandwidth_charging_mode: The ingress_bandwidth_charging_mode of this ShowDetailsOfInstanceV2Response.
+        :type ingress_bandwidth_charging_mode: str
+        """
+        self._ingress_bandwidth_charging_mode = ingress_bandwidth_charging_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

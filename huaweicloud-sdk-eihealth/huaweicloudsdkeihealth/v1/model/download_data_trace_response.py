@@ -4,11 +4,11 @@ import re
 import six
 
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class DownloadDataTraceResponse(SdkResponse):
+class DownloadDataTraceResponse(SdkStreamResponse):
 
     """
     Attributes:
@@ -25,14 +25,14 @@ class DownloadDataTraceResponse(SdkResponse):
     attribute_map = {
     }
 
-    def __init__(self):
+    def __init__(self, response):
         """DownloadDataTraceResponse
 
         The model defined in huaweicloud sdk
 
         """
         
-        super(DownloadDataTraceResponse, self).__init__()
+        super(DownloadDataTraceResponse, self).__init__(response)
         self.discriminator = None
 
     def to_dict(self):

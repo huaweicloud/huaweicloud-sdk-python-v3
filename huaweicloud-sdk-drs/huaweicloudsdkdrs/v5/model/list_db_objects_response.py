@@ -24,7 +24,8 @@ class ListDbObjectsResponse(SdkResponse):
         'object_info': 'dict(str, DatabaseObject)',
         'max_table_num': 'int',
         'status': 'str',
-        'id': 'str'
+        'id': 'str',
+        'object_scope': 'str'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class ListDbObjectsResponse(SdkResponse):
         'object_info': 'object_info',
         'max_table_num': 'max_table_num',
         'status': 'status',
-        'id': 'id'
+        'id': 'id',
+        'object_scope': 'object_scope'
     }
 
-    def __init__(self, target_root_db=None, object_info=None, max_table_num=None, status=None, id=None):
+    def __init__(self, target_root_db=None, object_info=None, max_table_num=None, status=None, id=None, object_scope=None):
         """ListDbObjectsResponse
 
         The model defined in huaweicloud sdk
@@ -50,6 +52,8 @@ class ListDbObjectsResponse(SdkResponse):
         :type status: str
         :param id: 任务id
         :type id: str
+        :param object_scope: 该数据库在实时同步场景下的类型
+        :type object_scope: str
         """
         
         super(ListDbObjectsResponse, self).__init__()
@@ -59,6 +63,7 @@ class ListDbObjectsResponse(SdkResponse):
         self._max_table_num = None
         self._status = None
         self._id = None
+        self._object_scope = None
         self.discriminator = None
 
         if target_root_db is not None:
@@ -71,6 +76,8 @@ class ListDbObjectsResponse(SdkResponse):
             self.status = status
         if id is not None:
             self.id = id
+        if object_scope is not None:
+            self.object_scope = object_scope
 
     @property
     def target_root_db(self):
@@ -177,6 +184,28 @@ class ListDbObjectsResponse(SdkResponse):
         :type id: str
         """
         self._id = id
+
+    @property
+    def object_scope(self):
+        """Gets the object_scope of this ListDbObjectsResponse.
+
+        该数据库在实时同步场景下的类型
+
+        :return: The object_scope of this ListDbObjectsResponse.
+        :rtype: str
+        """
+        return self._object_scope
+
+    @object_scope.setter
+    def object_scope(self, object_scope):
+        """Sets the object_scope of this ListDbObjectsResponse.
+
+        该数据库在实时同步场景下的类型
+
+        :param object_scope: The object_scope of this ListDbObjectsResponse.
+        :type object_scope: str
+        """
+        self._object_scope = object_scope
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -31,6 +31,7 @@ class ShowDetailsOfCertificateV2Response(SdkResponse):
         'signature_algorithm': 'str',
         'create_time': 'datetime',
         'update_time': 'datetime',
+        'is_has_trusted_root_ca': 'bool',
         'version': 'int',
         'organization': 'list[str]',
         'organizational_unit': 'list[str]',
@@ -54,6 +55,7 @@ class ShowDetailsOfCertificateV2Response(SdkResponse):
         'signature_algorithm': 'signature_algorithm',
         'create_time': 'create_time',
         'update_time': 'update_time',
+        'is_has_trusted_root_ca': 'is_has_trusted_root_ca',
         'version': 'version',
         'organization': 'organization',
         'organizational_unit': 'organizational_unit',
@@ -65,7 +67,7 @@ class ShowDetailsOfCertificateV2Response(SdkResponse):
         'issuer': 'issuer'
     }
 
-    def __init__(self, id=None, name=None, type=None, instance_id=None, project_id=None, common_name=None, san=None, not_after=None, signature_algorithm=None, create_time=None, update_time=None, version=None, organization=None, organizational_unit=None, locality=None, state=None, country=None, not_before=None, serial_number=None, issuer=None):
+    def __init__(self, id=None, name=None, type=None, instance_id=None, project_id=None, common_name=None, san=None, not_after=None, signature_algorithm=None, create_time=None, update_time=None, is_has_trusted_root_ca=None, version=None, organization=None, organizational_unit=None, locality=None, state=None, country=None, not_before=None, serial_number=None, issuer=None):
         """ShowDetailsOfCertificateV2Response
 
         The model defined in huaweicloud sdk
@@ -92,6 +94,8 @@ class ShowDetailsOfCertificateV2Response(SdkResponse):
         :type create_time: datetime
         :param update_time: 更新时间
         :type update_time: datetime
+        :param is_has_trusted_root_ca: 是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。
+        :type is_has_trusted_root_ca: bool
         :param version: 版本
         :type version: int
         :param organization: 公司、组织
@@ -125,6 +129,7 @@ class ShowDetailsOfCertificateV2Response(SdkResponse):
         self._signature_algorithm = None
         self._create_time = None
         self._update_time = None
+        self._is_has_trusted_root_ca = None
         self._version = None
         self._organization = None
         self._organizational_unit = None
@@ -158,6 +163,8 @@ class ShowDetailsOfCertificateV2Response(SdkResponse):
             self.create_time = create_time
         if update_time is not None:
             self.update_time = update_time
+        if is_has_trusted_root_ca is not None:
+            self.is_has_trusted_root_ca = is_has_trusted_root_ca
         if version is not None:
             self.version = version
         if organization is not None:
@@ -418,6 +425,28 @@ class ShowDetailsOfCertificateV2Response(SdkResponse):
         :type update_time: datetime
         """
         self._update_time = update_time
+
+    @property
+    def is_has_trusted_root_ca(self):
+        """Gets the is_has_trusted_root_ca of this ShowDetailsOfCertificateV2Response.
+
+        是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。
+
+        :return: The is_has_trusted_root_ca of this ShowDetailsOfCertificateV2Response.
+        :rtype: bool
+        """
+        return self._is_has_trusted_root_ca
+
+    @is_has_trusted_root_ca.setter
+    def is_has_trusted_root_ca(self, is_has_trusted_root_ca):
+        """Sets the is_has_trusted_root_ca of this ShowDetailsOfCertificateV2Response.
+
+        是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。
+
+        :param is_has_trusted_root_ca: The is_has_trusted_root_ca of this ShowDetailsOfCertificateV2Response.
+        :type is_has_trusted_root_ca: bool
+        """
+        self._is_has_trusted_root_ca = is_has_trusted_root_ca
 
     @property
     def version(self):

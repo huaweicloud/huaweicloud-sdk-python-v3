@@ -25,7 +25,8 @@ class EventDetailRequestInfo:
         'file_hash': 'str',
         'file_path': 'str',
         'file_attr': 'str',
-        'description': 'str',
+        'keyword': 'str',
+        'hash': 'str',
         'private_ip': 'str',
         'login_ip': 'str',
         'login_user_name': 'str'
@@ -37,13 +38,14 @@ class EventDetailRequestInfo:
         'file_hash': 'file_hash',
         'file_path': 'file_path',
         'file_attr': 'file_attr',
-        'description': 'description',
+        'keyword': 'keyword',
+        'hash': 'hash',
         'private_ip': 'private_ip',
         'login_ip': 'login_ip',
         'login_user_name': 'login_user_name'
     }
 
-    def __init__(self, agent_id=None, process_pid=None, file_hash=None, file_path=None, file_attr=None, description=None, private_ip=None, login_ip=None, login_user_name=None):
+    def __init__(self, agent_id=None, process_pid=None, file_hash=None, file_path=None, file_attr=None, keyword=None, hash=None, private_ip=None, login_ip=None, login_user_name=None):
         """EventDetailRequestInfo
 
         The model defined in huaweicloud sdk
@@ -58,8 +60,10 @@ class EventDetailRequestInfo:
         :type file_path: str
         :param file_attr: 文件属性
         :type file_attr: str
-        :param description: 描述信息
-        :type description: str
+        :param keyword: 告警事件关键字，仅用于告警白名单
+        :type keyword: str
+        :param hash: 告警事件hash，仅用于告警白名单
+        :type hash: str
         :param private_ip: 服务器私有IP
         :type private_ip: str
         :param login_ip: 登录源IP
@@ -75,7 +79,8 @@ class EventDetailRequestInfo:
         self._file_hash = None
         self._file_path = None
         self._file_attr = None
-        self._description = None
+        self._keyword = None
+        self._hash = None
         self._private_ip = None
         self._login_ip = None
         self._login_user_name = None
@@ -91,8 +96,10 @@ class EventDetailRequestInfo:
             self.file_path = file_path
         if file_attr is not None:
             self.file_attr = file_attr
-        if description is not None:
-            self.description = description
+        if keyword is not None:
+            self.keyword = keyword
+        if hash is not None:
+            self.hash = hash
         if private_ip is not None:
             self.private_ip = private_ip
         if login_ip is not None:
@@ -211,26 +218,48 @@ class EventDetailRequestInfo:
         self._file_attr = file_attr
 
     @property
-    def description(self):
-        """Gets the description of this EventDetailRequestInfo.
+    def keyword(self):
+        """Gets the keyword of this EventDetailRequestInfo.
 
-        描述信息
+        告警事件关键字，仅用于告警白名单
 
-        :return: The description of this EventDetailRequestInfo.
+        :return: The keyword of this EventDetailRequestInfo.
         :rtype: str
         """
-        return self._description
+        return self._keyword
 
-    @description.setter
-    def description(self, description):
-        """Sets the description of this EventDetailRequestInfo.
+    @keyword.setter
+    def keyword(self, keyword):
+        """Sets the keyword of this EventDetailRequestInfo.
 
-        描述信息
+        告警事件关键字，仅用于告警白名单
 
-        :param description: The description of this EventDetailRequestInfo.
-        :type description: str
+        :param keyword: The keyword of this EventDetailRequestInfo.
+        :type keyword: str
         """
-        self._description = description
+        self._keyword = keyword
+
+    @property
+    def hash(self):
+        """Gets the hash of this EventDetailRequestInfo.
+
+        告警事件hash，仅用于告警白名单
+
+        :return: The hash of this EventDetailRequestInfo.
+        :rtype: str
+        """
+        return self._hash
+
+    @hash.setter
+    def hash(self, hash):
+        """Sets the hash of this EventDetailRequestInfo.
+
+        告警事件hash，仅用于告警白名单
+
+        :param hash: The hash of this EventDetailRequestInfo.
+        :type hash: str
+        """
+        self._hash = hash
 
     @property
     def private_ip(self):

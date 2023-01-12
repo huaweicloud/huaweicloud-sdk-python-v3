@@ -50,7 +50,7 @@ class ShowResourceMetricDataRequest:
         :type to_time: int
         :param period: 监控数据周期。枚举值，取值范围：real_time（实时数据）、five_minutes（5分钟粒度）、fifteen_to_twenty_minutes（15-20分钟粒度）、one_hour（1小时粒度），不填时默认为real_time
         :type period: str
-        :param method: 统计方法。枚举值，取值范围：max（最大值）、min（最小值）、sum（求和值）、average（平均值），不填时默认为max
+        :param method: 统计方法。枚举值，取值范围：max（最大值）、min（最小值）、average（平均值），不填时默认为max
         :type method: str
         :param metric_name: 查询的监控指标名称
         :type metric_name: str
@@ -155,7 +155,7 @@ class ShowResourceMetricDataRequest:
     def method(self):
         """Gets the method of this ShowResourceMetricDataRequest.
 
-        统计方法。枚举值，取值范围：max（最大值）、min（最小值）、sum（求和值）、average（平均值），不填时默认为max
+        统计方法。枚举值，取值范围：max（最大值）、min（最小值）、average（平均值），不填时默认为max
 
         :return: The method of this ShowResourceMetricDataRequest.
         :rtype: str
@@ -166,7 +166,7 @@ class ShowResourceMetricDataRequest:
     def method(self, method):
         """Sets the method of this ShowResourceMetricDataRequest.
 
-        统计方法。枚举值，取值范围：max（最大值）、min（最小值）、sum（求和值）、average（平均值），不填时默认为max
+        统计方法。枚举值，取值范围：max（最大值）、min（最小值）、average（平均值），不填时默认为max
 
         :param method: The method of this ShowResourceMetricDataRequest.
         :type method: str

@@ -58,15 +58,15 @@ class UpdateProtectionPolicyInfoRequestInfo:
         :type protection_mode: str
         :param bait_protection_status: 是否开启诱饵防护，包含如下1种, 默认为开启防护诱饵防护。   - opened ：开启。   - closed ：关闭。
         :type bait_protection_status: str
-        :param protection_directory: 防护目录
+        :param protection_directory: 防护目录,多个目录请用英文分号隔开，最多支持填写20个防护目录
         :type protection_directory: str
         :param protection_type: 防护文件类型
         :type protection_type: str
-        :param exclude_directory: 排除目录
+        :param exclude_directory: 排除目录(选填)，多个目录请用英文分号隔开，最多支持填写20个排除目录
         :type exclude_directory: str
         :param agent_id_list: 关联server
         :type agent_id_list: list[str]
-        :param operating_system: 操作系统，包含如下：   - Windows : 无需处理   - Linux : 已忽略
+        :param operating_system: 操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
         :type operating_system: str
         :param runtime_detection_status: 是否运行时检测，包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。
         :type runtime_detection_status: str
@@ -86,24 +86,17 @@ class UpdateProtectionPolicyInfoRequestInfo:
         self._runtime_detection_status = None
         self.discriminator = None
 
-        if policy_id is not None:
-            self.policy_id = policy_id
-        if policy_name is not None:
-            self.policy_name = policy_name
-        if protection_mode is not None:
-            self.protection_mode = protection_mode
-        if bait_protection_status is not None:
-            self.bait_protection_status = bait_protection_status
-        if protection_directory is not None:
-            self.protection_directory = protection_directory
-        if protection_type is not None:
-            self.protection_type = protection_type
+        self.policy_id = policy_id
+        self.policy_name = policy_name
+        self.protection_mode = protection_mode
+        self.bait_protection_status = bait_protection_status
+        self.protection_directory = protection_directory
+        self.protection_type = protection_type
         if exclude_directory is not None:
             self.exclude_directory = exclude_directory
         if agent_id_list is not None:
             self.agent_id_list = agent_id_list
-        if operating_system is not None:
-            self.operating_system = operating_system
+        self.operating_system = operating_system
         if runtime_detection_status is not None:
             self.runtime_detection_status = runtime_detection_status
 
@@ -199,7 +192,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def protection_directory(self):
         """Gets the protection_directory of this UpdateProtectionPolicyInfoRequestInfo.
 
-        防护目录
+        防护目录,多个目录请用英文分号隔开，最多支持填写20个防护目录
 
         :return: The protection_directory of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -210,7 +203,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def protection_directory(self, protection_directory):
         """Sets the protection_directory of this UpdateProtectionPolicyInfoRequestInfo.
 
-        防护目录
+        防护目录,多个目录请用英文分号隔开，最多支持填写20个防护目录
 
         :param protection_directory: The protection_directory of this UpdateProtectionPolicyInfoRequestInfo.
         :type protection_directory: str
@@ -243,7 +236,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def exclude_directory(self):
         """Gets the exclude_directory of this UpdateProtectionPolicyInfoRequestInfo.
 
-        排除目录
+        排除目录(选填)，多个目录请用英文分号隔开，最多支持填写20个排除目录
 
         :return: The exclude_directory of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -254,7 +247,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def exclude_directory(self, exclude_directory):
         """Sets the exclude_directory of this UpdateProtectionPolicyInfoRequestInfo.
 
-        排除目录
+        排除目录(选填)，多个目录请用英文分号隔开，最多支持填写20个排除目录
 
         :param exclude_directory: The exclude_directory of this UpdateProtectionPolicyInfoRequestInfo.
         :type exclude_directory: str
@@ -287,7 +280,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def operating_system(self):
         """Gets the operating_system of this UpdateProtectionPolicyInfoRequestInfo.
 
-        操作系统，包含如下：   - Windows : 无需处理   - Linux : 已忽略
+        操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
 
         :return: The operating_system of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -298,7 +291,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def operating_system(self, operating_system):
         """Sets the operating_system of this UpdateProtectionPolicyInfoRequestInfo.
 
-        操作系统，包含如下：   - Windows : 无需处理   - Linux : 已忽略
+        操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
 
         :param operating_system: The operating_system of this UpdateProtectionPolicyInfoRequestInfo.
         :type operating_system: str

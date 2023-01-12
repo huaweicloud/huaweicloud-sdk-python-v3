@@ -100,7 +100,7 @@ class CreateAutJobReq:
         :type priority: int
         :param timeout: 作业执行超时时长，取值范围: [1, 144000]，单位：分钟，默认数值1440
         :type timeout: int
-        :param output_dir: job结果存储目录，不指定则在workflow的工作目录下生产job同名子目录，指定则已指定路径为准;不能包含以下特殊字符\\:*?&lt;\&quot;&gt;|。
+        :param output_dir: 作业结果存储目录，不指定则在workflow的工作目录下生产job同名子目录，指定则已指定路径为准;输出路径必须以斜杠（/）开头且不能以斜杠（/）结尾，不能包含两个以上相邻的斜杠（/），不能包含以下特殊字符：\\ : ; * ? &lt; \&quot; &gt; | 。其中单个文件夹名称不能以中划线（-）开头，不能以英文句号（.）或斜杠（/）或空格开头或结尾
         :type output_dir: str
         :param output_dir_type: 输出路径的类型
         :type output_dir_type: str
@@ -500,7 +500,7 @@ class CreateAutJobReq:
     def output_dir(self):
         """Gets the output_dir of this CreateAutJobReq.
 
-        job结果存储目录，不指定则在workflow的工作目录下生产job同名子目录，指定则已指定路径为准;不能包含以下特殊字符\\:*?<\">|。
+        作业结果存储目录，不指定则在workflow的工作目录下生产job同名子目录，指定则已指定路径为准;输出路径必须以斜杠（/）开头且不能以斜杠（/）结尾，不能包含两个以上相邻的斜杠（/），不能包含以下特殊字符：\\ : ; * ? < \" > | 。其中单个文件夹名称不能以中划线（-）开头，不能以英文句号（.）或斜杠（/）或空格开头或结尾
 
         :return: The output_dir of this CreateAutJobReq.
         :rtype: str
@@ -511,7 +511,7 @@ class CreateAutJobReq:
     def output_dir(self, output_dir):
         """Sets the output_dir of this CreateAutJobReq.
 
-        job结果存储目录，不指定则在workflow的工作目录下生产job同名子目录，指定则已指定路径为准;不能包含以下特殊字符\\:*?<\">|。
+        作业结果存储目录，不指定则在workflow的工作目录下生产job同名子目录，指定则已指定路径为准;输出路径必须以斜杠（/）开头且不能以斜杠（/）结尾，不能包含两个以上相邻的斜杠（/），不能包含以下特殊字符：\\ : ; * ? < \" > | 。其中单个文件夹名称不能以中划线（-）开头，不能以英文句号（.）或斜杠（/）或空格开头或结尾
 
         :param output_dir: The output_dir of this CreateAutJobReq.
         :type output_dir: str

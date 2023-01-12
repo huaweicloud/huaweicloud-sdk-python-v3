@@ -54,8 +54,7 @@ class DeleteHostsGroupRequest:
         self.region = region
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        if group_id is not None:
-            self.group_id = group_id
+        self.group_id = group_id
 
     @property
     def region(self):

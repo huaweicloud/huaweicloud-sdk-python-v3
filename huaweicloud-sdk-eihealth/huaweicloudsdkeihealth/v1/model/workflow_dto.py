@@ -58,7 +58,7 @@ class WorkflowDto:
         :type labels: list[str]
         :param timeout: 流程超时时间，取值范围[1,144000]，单位分钟，默认1440
         :type timeout: int
-        :param output_dir: 流程的当前工作目录，默认为根目录，用户可显示指定;必须以/开头，结尾不能有/.;不能包含以下特殊字符\\:*?&lt;\&quot;&gt;|。
+        :param output_dir: 流程的当前工作目录，默认为根目录，用户可显式指定;输出路径必须以斜杠（/）开头且不能以斜杠（/）结尾，不能包含两个以上相邻的斜杠（/），不能包含以下特殊字符：\\ : ; * ? &lt; \&quot; &gt; | 。其中单个文件夹名称不能以中划线（-）开头，不能以英文句号（.）或斜杠（/）或空格开头或结尾
         :type output_dir: str
         :param tasks: 流程中子任务的描述信息，子任务数量取值范围:[1,64]
         :type tasks: list[:class:`huaweicloudsdkeihealth.v1.TaskDto`]
@@ -227,7 +227,7 @@ class WorkflowDto:
     def output_dir(self):
         """Gets the output_dir of this WorkflowDto.
 
-        流程的当前工作目录，默认为根目录，用户可显示指定;必须以/开头，结尾不能有/.;不能包含以下特殊字符\\:*?<\">|。
+        流程的当前工作目录，默认为根目录，用户可显式指定;输出路径必须以斜杠（/）开头且不能以斜杠（/）结尾，不能包含两个以上相邻的斜杠（/），不能包含以下特殊字符：\\ : ; * ? < \" > | 。其中单个文件夹名称不能以中划线（-）开头，不能以英文句号（.）或斜杠（/）或空格开头或结尾
 
         :return: The output_dir of this WorkflowDto.
         :rtype: str
@@ -238,7 +238,7 @@ class WorkflowDto:
     def output_dir(self, output_dir):
         """Sets the output_dir of this WorkflowDto.
 
-        流程的当前工作目录，默认为根目录，用户可显示指定;必须以/开头，结尾不能有/.;不能包含以下特殊字符\\:*?<\">|。
+        流程的当前工作目录，默认为根目录，用户可显式指定;输出路径必须以斜杠（/）开头且不能以斜杠（/）结尾，不能包含两个以上相邻的斜杠（/），不能包含以下特殊字符：\\ : ; * ? < \" > | 。其中单个文件夹名称不能以中划线（-）开头，不能以英文句号（.）或斜杠（/）或空格开头或结尾
 
         :param output_dir: The output_dir of this WorkflowDto.
         :type output_dir: str

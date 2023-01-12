@@ -72,7 +72,7 @@ class ListJobsRequest:
         :type limit: int
         :param sort_key: 返回结果按该关键字排序，默认为“create_time”。
         :type sort_key: str
-        :param sort_dir: 降序或升序（分别对应desc和asc，默认为“desc”）
+        :param sort_dir: 降序或升序（分别对应desc和asc，默认为“desc”）。
         :type sort_dir: str
         """
         
@@ -337,7 +337,7 @@ class ListJobsRequest:
     def sort_dir(self):
         """Gets the sort_dir of this ListJobsRequest.
 
-        降序或升序（分别对应desc和asc，默认为“desc”）
+        降序或升序（分别对应desc和asc，默认为“desc”）。
 
         :return: The sort_dir of this ListJobsRequest.
         :rtype: str
@@ -348,7 +348,7 @@ class ListJobsRequest:
     def sort_dir(self, sort_dir):
         """Sets the sort_dir of this ListJobsRequest.
 
-        降序或升序（分别对应desc和asc，默认为“desc”）
+        降序或升序（分别对应desc和asc，默认为“desc”）。
 
         :param sort_dir: The sort_dir of this ListJobsRequest.
         :type sort_dir: str

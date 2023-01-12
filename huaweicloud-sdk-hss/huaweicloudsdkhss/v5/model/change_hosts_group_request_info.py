@@ -53,8 +53,7 @@ class ChangeHostsGroupRequestInfo:
 
         if group_name is not None:
             self.group_name = group_name
-        if group_id is not None:
-            self.group_id = group_id
+        self.group_id = group_id
         if host_id_list is not None:
             self.host_id_list = host_id_list
 

@@ -21,7 +21,7 @@ class ShowProjectTraceResponse(SdkResponse):
 
     openapi_types = {
         'count': 'int',
-        'datas': 'list[TraceDataRsp]',
+        'datas': 'list[DataRsp]',
         'bucket_size': 'int'
     }
 
@@ -39,7 +39,7 @@ class ShowProjectTraceResponse(SdkResponse):
         :param count: 数据对象（目录，文件）总数量
         :type count: int
         :param datas: 数据对象列表
-        :type datas: list[:class:`huaweicloudsdkeihealth.v1.TraceDataRsp`]
+        :type datas: list[:class:`huaweicloudsdkeihealth.v1.DataRsp`]
         :param bucket_size: 桶存量
         :type bucket_size: int
         """
@@ -87,7 +87,7 @@ class ShowProjectTraceResponse(SdkResponse):
         数据对象列表
 
         :return: The datas of this ShowProjectTraceResponse.
-        :rtype: list[:class:`huaweicloudsdkeihealth.v1.TraceDataRsp`]
+        :rtype: list[:class:`huaweicloudsdkeihealth.v1.DataRsp`]
         """
         return self._datas
 
@@ -98,7 +98,7 @@ class ShowProjectTraceResponse(SdkResponse):
         数据对象列表
 
         :param datas: The datas of this ShowProjectTraceResponse.
-        :type datas: list[:class:`huaweicloudsdkeihealth.v1.TraceDataRsp`]
+        :type datas: list[:class:`huaweicloudsdkeihealth.v1.DataRsp`]
         """
         self._datas = datas
 

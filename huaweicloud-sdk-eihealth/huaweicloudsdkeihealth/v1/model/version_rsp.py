@@ -26,6 +26,9 @@ class VersionRsp:
         'summary': 'str',
         'license': 'str',
         'status': 'str',
+        'failed_reason': 'str',
+        'labels': 'list[str]',
+        'picture': 'str',
         'create_time': 'str',
         'update_time': 'str'
     }
@@ -37,11 +40,14 @@ class VersionRsp:
         'summary': 'summary',
         'license': 'license',
         'status': 'status',
+        'failed_reason': 'failed_reason',
+        'labels': 'labels',
+        'picture': 'picture',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, version=None, publisher=None, descritpion=None, summary=None, license=None, status=None, create_time=None, update_time=None):
+    def __init__(self, version=None, publisher=None, descritpion=None, summary=None, license=None, status=None, failed_reason=None, labels=None, picture=None, create_time=None, update_time=None):
         """VersionRsp
 
         The model defined in huaweicloud sdk
@@ -58,6 +64,12 @@ class VersionRsp:
         :type license: str
         :param status: 资产状态
         :type status: str
+        :param failed_reason: 资产发布失败原因
+        :type failed_reason: str
+        :param labels: 资产标签列表
+        :type labels: list[str]
+        :param picture: 资产封面图访问链接
+        :type picture: str
         :param create_time: 创建时间
         :type create_time: str
         :param update_time: 更新时间
@@ -72,6 +84,9 @@ class VersionRsp:
         self._summary = None
         self._license = None
         self._status = None
+        self._failed_reason = None
+        self._labels = None
+        self._picture = None
         self._create_time = None
         self._update_time = None
         self.discriminator = None
@@ -88,6 +103,12 @@ class VersionRsp:
             self.license = license
         if status is not None:
             self.status = status
+        if failed_reason is not None:
+            self.failed_reason = failed_reason
+        if labels is not None:
+            self.labels = labels
+        if picture is not None:
+            self.picture = picture
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -224,6 +245,72 @@ class VersionRsp:
         :type status: str
         """
         self._status = status
+
+    @property
+    def failed_reason(self):
+        """Gets the failed_reason of this VersionRsp.
+
+        资产发布失败原因
+
+        :return: The failed_reason of this VersionRsp.
+        :rtype: str
+        """
+        return self._failed_reason
+
+    @failed_reason.setter
+    def failed_reason(self, failed_reason):
+        """Sets the failed_reason of this VersionRsp.
+
+        资产发布失败原因
+
+        :param failed_reason: The failed_reason of this VersionRsp.
+        :type failed_reason: str
+        """
+        self._failed_reason = failed_reason
+
+    @property
+    def labels(self):
+        """Gets the labels of this VersionRsp.
+
+        资产标签列表
+
+        :return: The labels of this VersionRsp.
+        :rtype: list[str]
+        """
+        return self._labels
+
+    @labels.setter
+    def labels(self, labels):
+        """Sets the labels of this VersionRsp.
+
+        资产标签列表
+
+        :param labels: The labels of this VersionRsp.
+        :type labels: list[str]
+        """
+        self._labels = labels
+
+    @property
+    def picture(self):
+        """Gets the picture of this VersionRsp.
+
+        资产封面图访问链接
+
+        :return: The picture of this VersionRsp.
+        :rtype: str
+        """
+        return self._picture
+
+    @picture.setter
+    def picture(self, picture):
+        """Sets the picture of this VersionRsp.
+
+        资产封面图访问链接
+
+        :param picture: The picture of this VersionRsp.
+        :type picture: str
+        """
+        self._picture = picture
 
     @property
     def create_time(self):

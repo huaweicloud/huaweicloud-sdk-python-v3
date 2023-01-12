@@ -29,7 +29,9 @@ class QuotaResourcesResponseInfo:
         'charging_mode': 'str',
         'tags': 'list[TagInfo]',
         'expire_time': 'int',
-        'shared_quota': 'str'
+        'shared_quota': 'str',
+        'enterprise_project_id': 'str',
+        'enterprise_project_name': 'str'
     }
 
     attribute_map = {
@@ -42,10 +44,12 @@ class QuotaResourcesResponseInfo:
         'charging_mode': 'charging_mode',
         'tags': 'tags',
         'expire_time': 'expire_time',
-        'shared_quota': 'shared_quota'
+        'shared_quota': 'shared_quota',
+        'enterprise_project_id': 'enterprise_project_id',
+        'enterprise_project_name': 'enterprise_project_name'
     }
 
-    def __init__(self, resource_id=None, version=None, quota_status=None, used_status=None, host_id=None, host_name=None, charging_mode=None, tags=None, expire_time=None, shared_quota=None):
+    def __init__(self, resource_id=None, version=None, quota_status=None, used_status=None, host_id=None, host_name=None, charging_mode=None, tags=None, expire_time=None, shared_quota=None, enterprise_project_id=None, enterprise_project_name=None):
         """QuotaResourcesResponseInfo
 
         The model defined in huaweicloud sdk
@@ -70,6 +74,10 @@ class QuotaResourcesResponseInfo:
         :type expire_time: int
         :param shared_quota: 是否共享配额   - shared：共享的   - unshared：非共享的
         :type shared_quota: str
+        :param enterprise_project_id: 企业项目ID
+        :type enterprise_project_id: str
+        :param enterprise_project_name: 所属企业项目名称
+        :type enterprise_project_name: str
         """
         
         
@@ -84,6 +92,8 @@ class QuotaResourcesResponseInfo:
         self._tags = None
         self._expire_time = None
         self._shared_quota = None
+        self._enterprise_project_id = None
+        self._enterprise_project_name = None
         self.discriminator = None
 
         if resource_id is not None:
@@ -106,6 +116,10 @@ class QuotaResourcesResponseInfo:
             self.expire_time = expire_time
         if shared_quota is not None:
             self.shared_quota = shared_quota
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if enterprise_project_name is not None:
+            self.enterprise_project_name = enterprise_project_name
 
     @property
     def resource_id(self):
@@ -326,6 +340,50 @@ class QuotaResourcesResponseInfo:
         :type shared_quota: str
         """
         self._shared_quota = shared_quota
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this QuotaResourcesResponseInfo.
+
+        企业项目ID
+
+        :return: The enterprise_project_id of this QuotaResourcesResponseInfo.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this QuotaResourcesResponseInfo.
+
+        企业项目ID
+
+        :param enterprise_project_id: The enterprise_project_id of this QuotaResourcesResponseInfo.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def enterprise_project_name(self):
+        """Gets the enterprise_project_name of this QuotaResourcesResponseInfo.
+
+        所属企业项目名称
+
+        :return: The enterprise_project_name of this QuotaResourcesResponseInfo.
+        :rtype: str
+        """
+        return self._enterprise_project_name
+
+    @enterprise_project_name.setter
+    def enterprise_project_name(self, enterprise_project_name):
+        """Sets the enterprise_project_name of this QuotaResourcesResponseInfo.
+
+        所属企业项目名称
+
+        :param enterprise_project_name: The enterprise_project_name of this QuotaResourcesResponseInfo.
+        :type enterprise_project_name: str
+        """
+        self._enterprise_project_name = enterprise_project_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

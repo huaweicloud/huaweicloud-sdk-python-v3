@@ -33,10 +33,13 @@ class InstanceCreateReq:
         'enterprise_project_id': 'str',
         'available_zone_ids': 'list[str]',
         'bandwidth_size': 'int',
+        'bandwidth_charging_mode': 'str',
         'ipv6_enable': 'bool',
         'loadbalancer_provider': 'str',
         'tags': 'list[TmsKeyValue]',
-        'vpcep_service_name': 'str'
+        'vpcep_service_name': 'str',
+        'ingress_bandwidth_size': 'int',
+        'ingress_bandwidth_charging_mode': 'str'
     }
 
     attribute_map = {
@@ -53,13 +56,16 @@ class InstanceCreateReq:
         'enterprise_project_id': 'enterprise_project_id',
         'available_zone_ids': 'available_zone_ids',
         'bandwidth_size': 'bandwidth_size',
+        'bandwidth_charging_mode': 'bandwidth_charging_mode',
         'ipv6_enable': 'ipv6_enable',
         'loadbalancer_provider': 'loadbalancer_provider',
         'tags': 'tags',
-        'vpcep_service_name': 'vpcep_service_name'
+        'vpcep_service_name': 'vpcep_service_name',
+        'ingress_bandwidth_size': 'ingress_bandwidth_size',
+        'ingress_bandwidth_charging_mode': 'ingress_bandwidth_charging_mode'
     }
 
-    def __init__(self, description=None, maintain_begin=None, maintain_end=None, instance_name=None, instance_id=None, spec_id=None, vpc_id=None, subnet_id=None, security_group_id=None, eip_id=None, enterprise_project_id=None, available_zone_ids=None, bandwidth_size=None, ipv6_enable=None, loadbalancer_provider=None, tags=None, vpcep_service_name=None):
+    def __init__(self, description=None, maintain_begin=None, maintain_end=None, instance_name=None, instance_id=None, spec_id=None, vpc_id=None, subnet_id=None, security_group_id=None, eip_id=None, enterprise_project_id=None, available_zone_ids=None, bandwidth_size=None, bandwidth_charging_mode=None, ipv6_enable=None, loadbalancer_provider=None, tags=None, vpcep_service_name=None, ingress_bandwidth_size=None, ingress_bandwidth_charging_mode=None):
         """InstanceCreateReq
 
         The model defined in huaweicloud sdk
@@ -82,7 +88,7 @@ class InstanceCreateReq:
         :type subnet_id: str
         :param security_group_id: 指定实例所属的安全组。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。 
         :type security_group_id: str
-        :param eip_id: 弹性公网IP ID。  实例需要开启公网访问时需要填写，绑定后使用者可以通过该入口从公网访问APIG实例中的API等资源  获取方法：登录虚拟私有云服务的控制台界面，在弹性公网IP的详情页面查找弹性公网IP ID。
+        :param eip_id: 弹性公网IP ID。  实例需要开启公网访问，且loadbalancer_provider为lvs时需要填写，绑定后使用者可以通过该入口从公网访问APIG实例中的API等资源  获取方法：登录虚拟私有云服务的控制台界面，在弹性公网IP的详情页面查找弹性公网IP ID。
         :type eip_id: str
         :param enterprise_project_id: 企业项目ID，企业帐号必填。  获取方法如下： - 方法1：登录企业项目管理界面，在项目管理详情页面查找项目ID。 - 方法2：通过企业项目管理的API接口查询，具体方法请参见《企业管理API参考》的“查询企业项目列表”章节。
         :type enterprise_project_id: str
@@ -90,6 +96,8 @@ class InstanceCreateReq:
         :type available_zone_ids: list[str]
         :param bandwidth_size: 出公网带宽  实例需要开启出公网功能时需要填写，绑定后使用者可以利用该出口访问公网上的互联网资源
         :type bandwidth_size: int
+        :param bandwidth_charging_mode: 出公网带宽计费类型，实例需要开启出公网功能时需要填写： - bandwidth：按带宽计费 - traffic：按流量计费
+        :type bandwidth_charging_mode: str
         :param ipv6_enable: 公网访问是否支持IPv6。  当前仅部分region部分可用区支持IPv6
         :type ipv6_enable: bool
         :param loadbalancer_provider: 实例使用的负载均衡器类型 - lvs Linux虚拟服务器 - elb 弹性负载均衡，elb仅部分region支持
@@ -98,6 +106,10 @@ class InstanceCreateReq:
         :type tags: list[:class:`huaweicloudsdkapig.v2.TmsKeyValue`]
         :param vpcep_service_name: 终端节点服务的名称。  长度不超过16个字符，允许输入大小写字母、数字、下划线、中划线。  如果您不填写该参数，系统生成的终端节点服务的名称为{region}.apig.{service_id}。 如果您填写该参数，系统生成的终端节点服务的名称为{region}.{vpcep_service_name}.{service_id}。 实例创建完成后，可以在实例管理-&gt;终端节点管理页面修改该名称。 
         :type vpcep_service_name: str
+        :param ingress_bandwidth_size: 入公网带宽  实例需要开启入公网功能，且loadbalancer_provider为elb时需要填写，绑定后使用者可以通过该入口从公网访问APIG实例中的API等资源
+        :type ingress_bandwidth_size: int
+        :param ingress_bandwidth_charging_mode: 入公网带宽计费类型，实例需要开启入公网功能，且loadbalancer_provider为elb时需要填写： - bandwidth：按带宽计费 - traffic：按流量计费
+        :type ingress_bandwidth_charging_mode: str
         """
         
         
@@ -115,10 +127,13 @@ class InstanceCreateReq:
         self._enterprise_project_id = None
         self._available_zone_ids = None
         self._bandwidth_size = None
+        self._bandwidth_charging_mode = None
         self._ipv6_enable = None
         self._loadbalancer_provider = None
         self._tags = None
         self._vpcep_service_name = None
+        self._ingress_bandwidth_size = None
+        self._ingress_bandwidth_charging_mode = None
         self.discriminator = None
 
         if description is not None:
@@ -147,6 +162,8 @@ class InstanceCreateReq:
             self.available_zone_ids = available_zone_ids
         if bandwidth_size is not None:
             self.bandwidth_size = bandwidth_size
+        if bandwidth_charging_mode is not None:
+            self.bandwidth_charging_mode = bandwidth_charging_mode
         if ipv6_enable is not None:
             self.ipv6_enable = ipv6_enable
         if loadbalancer_provider is not None:
@@ -155,6 +172,10 @@ class InstanceCreateReq:
             self.tags = tags
         if vpcep_service_name is not None:
             self.vpcep_service_name = vpcep_service_name
+        if ingress_bandwidth_size is not None:
+            self.ingress_bandwidth_size = ingress_bandwidth_size
+        if ingress_bandwidth_charging_mode is not None:
+            self.ingress_bandwidth_charging_mode = ingress_bandwidth_charging_mode
 
     @property
     def description(self):
@@ -358,7 +379,7 @@ class InstanceCreateReq:
     def eip_id(self):
         """Gets the eip_id of this InstanceCreateReq.
 
-        弹性公网IP ID。  实例需要开启公网访问时需要填写，绑定后使用者可以通过该入口从公网访问APIG实例中的API等资源  获取方法：登录虚拟私有云服务的控制台界面，在弹性公网IP的详情页面查找弹性公网IP ID。
+        弹性公网IP ID。  实例需要开启公网访问，且loadbalancer_provider为lvs时需要填写，绑定后使用者可以通过该入口从公网访问APIG实例中的API等资源  获取方法：登录虚拟私有云服务的控制台界面，在弹性公网IP的详情页面查找弹性公网IP ID。
 
         :return: The eip_id of this InstanceCreateReq.
         :rtype: str
@@ -369,7 +390,7 @@ class InstanceCreateReq:
     def eip_id(self, eip_id):
         """Sets the eip_id of this InstanceCreateReq.
 
-        弹性公网IP ID。  实例需要开启公网访问时需要填写，绑定后使用者可以通过该入口从公网访问APIG实例中的API等资源  获取方法：登录虚拟私有云服务的控制台界面，在弹性公网IP的详情页面查找弹性公网IP ID。
+        弹性公网IP ID。  实例需要开启公网访问，且loadbalancer_provider为lvs时需要填写，绑定后使用者可以通过该入口从公网访问APIG实例中的API等资源  获取方法：登录虚拟私有云服务的控制台界面，在弹性公网IP的详情页面查找弹性公网IP ID。
 
         :param eip_id: The eip_id of this InstanceCreateReq.
         :type eip_id: str
@@ -441,6 +462,28 @@ class InstanceCreateReq:
         :type bandwidth_size: int
         """
         self._bandwidth_size = bandwidth_size
+
+    @property
+    def bandwidth_charging_mode(self):
+        """Gets the bandwidth_charging_mode of this InstanceCreateReq.
+
+        出公网带宽计费类型，实例需要开启出公网功能时需要填写： - bandwidth：按带宽计费 - traffic：按流量计费
+
+        :return: The bandwidth_charging_mode of this InstanceCreateReq.
+        :rtype: str
+        """
+        return self._bandwidth_charging_mode
+
+    @bandwidth_charging_mode.setter
+    def bandwidth_charging_mode(self, bandwidth_charging_mode):
+        """Sets the bandwidth_charging_mode of this InstanceCreateReq.
+
+        出公网带宽计费类型，实例需要开启出公网功能时需要填写： - bandwidth：按带宽计费 - traffic：按流量计费
+
+        :param bandwidth_charging_mode: The bandwidth_charging_mode of this InstanceCreateReq.
+        :type bandwidth_charging_mode: str
+        """
+        self._bandwidth_charging_mode = bandwidth_charging_mode
 
     @property
     def ipv6_enable(self):
@@ -529,6 +572,50 @@ class InstanceCreateReq:
         :type vpcep_service_name: str
         """
         self._vpcep_service_name = vpcep_service_name
+
+    @property
+    def ingress_bandwidth_size(self):
+        """Gets the ingress_bandwidth_size of this InstanceCreateReq.
+
+        入公网带宽  实例需要开启入公网功能，且loadbalancer_provider为elb时需要填写，绑定后使用者可以通过该入口从公网访问APIG实例中的API等资源
+
+        :return: The ingress_bandwidth_size of this InstanceCreateReq.
+        :rtype: int
+        """
+        return self._ingress_bandwidth_size
+
+    @ingress_bandwidth_size.setter
+    def ingress_bandwidth_size(self, ingress_bandwidth_size):
+        """Sets the ingress_bandwidth_size of this InstanceCreateReq.
+
+        入公网带宽  实例需要开启入公网功能，且loadbalancer_provider为elb时需要填写，绑定后使用者可以通过该入口从公网访问APIG实例中的API等资源
+
+        :param ingress_bandwidth_size: The ingress_bandwidth_size of this InstanceCreateReq.
+        :type ingress_bandwidth_size: int
+        """
+        self._ingress_bandwidth_size = ingress_bandwidth_size
+
+    @property
+    def ingress_bandwidth_charging_mode(self):
+        """Gets the ingress_bandwidth_charging_mode of this InstanceCreateReq.
+
+        入公网带宽计费类型，实例需要开启入公网功能，且loadbalancer_provider为elb时需要填写： - bandwidth：按带宽计费 - traffic：按流量计费
+
+        :return: The ingress_bandwidth_charging_mode of this InstanceCreateReq.
+        :rtype: str
+        """
+        return self._ingress_bandwidth_charging_mode
+
+    @ingress_bandwidth_charging_mode.setter
+    def ingress_bandwidth_charging_mode(self, ingress_bandwidth_charging_mode):
+        """Sets the ingress_bandwidth_charging_mode of this InstanceCreateReq.
+
+        入公网带宽计费类型，实例需要开启入公网功能，且loadbalancer_provider为elb时需要填写： - bandwidth：按带宽计费 - traffic：按流量计费
+
+        :param ingress_bandwidth_charging_mode: The ingress_bandwidth_charging_mode of this InstanceCreateReq.
+        :type ingress_bandwidth_charging_mode: str
+        """
+        self._ingress_bandwidth_charging_mode = ingress_bandwidth_charging_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -27,8 +27,7 @@ class ShowAssetResponse(SdkResponse):
         'labels': 'list[str]',
         'picture': 'str',
         'vendor_id': 'str',
-        'latest_version': 'VersionRsp',
-        'versions': 'list[str]',
+        'versions': 'list[VersionRsp]',
         'create_time': 'str',
         'update_time': 'str',
         'stars': 'int',
@@ -43,7 +42,6 @@ class ShowAssetResponse(SdkResponse):
         'labels': 'labels',
         'picture': 'picture',
         'vendor_id': 'vendor_id',
-        'latest_version': 'latest_version',
         'versions': 'versions',
         'create_time': 'create_time',
         'update_time': 'update_time',
@@ -51,7 +49,7 @@ class ShowAssetResponse(SdkResponse):
         'subscribes': 'subscribes'
     }
 
-    def __init__(self, id=None, category=None, name=None, title=None, labels=None, picture=None, vendor_id=None, latest_version=None, versions=None, create_time=None, update_time=None, stars=None, subscribes=None):
+    def __init__(self, id=None, category=None, name=None, title=None, labels=None, picture=None, vendor_id=None, versions=None, create_time=None, update_time=None, stars=None, subscribes=None):
         """ShowAssetResponse
 
         The model defined in huaweicloud sdk
@@ -70,10 +68,8 @@ class ShowAssetResponse(SdkResponse):
         :type picture: str
         :param vendor_id: 供应商id
         :type vendor_id: str
-        :param latest_version: 
-        :type latest_version: :class:`huaweicloudsdkeihealth.v1.VersionRsp`
         :param versions: 资产版本号列表
-        :type versions: list[str]
+        :type versions: list[:class:`huaweicloudsdkeihealth.v1.VersionRsp`]
         :param create_time: 创建时间
         :type create_time: str
         :param update_time: 更新时间
@@ -93,7 +89,6 @@ class ShowAssetResponse(SdkResponse):
         self._labels = None
         self._picture = None
         self._vendor_id = None
-        self._latest_version = None
         self._versions = None
         self._create_time = None
         self._update_time = None
@@ -115,8 +110,6 @@ class ShowAssetResponse(SdkResponse):
             self.picture = picture
         if vendor_id is not None:
             self.vendor_id = vendor_id
-        if latest_version is not None:
-            self.latest_version = latest_version
         if versions is not None:
             self.versions = versions
         if create_time is not None:
@@ -283,31 +276,13 @@ class ShowAssetResponse(SdkResponse):
         self._vendor_id = vendor_id
 
     @property
-    def latest_version(self):
-        """Gets the latest_version of this ShowAssetResponse.
-
-        :return: The latest_version of this ShowAssetResponse.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.VersionRsp`
-        """
-        return self._latest_version
-
-    @latest_version.setter
-    def latest_version(self, latest_version):
-        """Sets the latest_version of this ShowAssetResponse.
-
-        :param latest_version: The latest_version of this ShowAssetResponse.
-        :type latest_version: :class:`huaweicloudsdkeihealth.v1.VersionRsp`
-        """
-        self._latest_version = latest_version
-
-    @property
     def versions(self):
         """Gets the versions of this ShowAssetResponse.
 
         资产版本号列表
 
         :return: The versions of this ShowAssetResponse.
-        :rtype: list[str]
+        :rtype: list[:class:`huaweicloudsdkeihealth.v1.VersionRsp`]
         """
         return self._versions
 
@@ -318,7 +293,7 @@ class ShowAssetResponse(SdkResponse):
         资产版本号列表
 
         :param versions: The versions of this ShowAssetResponse.
-        :type versions: list[str]
+        :type versions: list[:class:`huaweicloudsdkeihealth.v1.VersionRsp`]
         """
         self._versions = versions
 

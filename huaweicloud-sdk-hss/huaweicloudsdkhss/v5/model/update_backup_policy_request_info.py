@@ -38,7 +38,7 @@ class UpdateBackupPolicyRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param enabled: 策略是否启用
+        :param enabled: 策略是否启用，缺省值：true
         :type enabled: bool
         :param policy_id: 策略ID
         :type policy_id: str
@@ -58,8 +58,7 @@ class UpdateBackupPolicyRequestInfo:
 
         if enabled is not None:
             self.enabled = enabled
-        if policy_id is not None:
-            self.policy_id = policy_id
+        self.policy_id = policy_id
         if operation_definition is not None:
             self.operation_definition = operation_definition
         if trigger is not None:
@@ -69,7 +68,7 @@ class UpdateBackupPolicyRequestInfo:
     def enabled(self):
         """Gets the enabled of this UpdateBackupPolicyRequestInfo.
 
-        策略是否启用
+        策略是否启用，缺省值：true
 
         :return: The enabled of this UpdateBackupPolicyRequestInfo.
         :rtype: bool
@@ -80,7 +79,7 @@ class UpdateBackupPolicyRequestInfo:
     def enabled(self, enabled):
         """Sets the enabled of this UpdateBackupPolicyRequestInfo.
 
-        策略是否启用
+        策略是否启用，缺省值：true
 
         :param enabled: The enabled of this UpdateBackupPolicyRequestInfo.
         :type enabled: bool

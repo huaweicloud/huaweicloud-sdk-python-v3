@@ -18,6 +18,7 @@ class UpdateUserReq:
                             and the value is json key in definition.
     """
     sensitive_list = []
+    sensitive_list.append('email')
 
     openapi_types = {
         'mobile': 'str',

@@ -38,7 +38,7 @@ class AssociatePolicyGroupRequestInfo:
 
         :param target_policy_group_id: 部署的目标策略组ID
         :type target_policy_group_id: str
-        :param operate_all: 是否要对全量主机部署策略，如果为true的话，不需填写host_id_list
+        :param operate_all: 是否要对全量主机部署策略，如果为true的话，不需填写host_id_list，如果为false的话，需要填写host_id_list
         :type operate_all: bool
         :param host_id_list: 服务器ID列表
         :type host_id_list: list[str]
@@ -51,8 +51,7 @@ class AssociatePolicyGroupRequestInfo:
         self._host_id_list = None
         self.discriminator = None
 
-        if target_policy_group_id is not None:
-            self.target_policy_group_id = target_policy_group_id
+        self.target_policy_group_id = target_policy_group_id
         if operate_all is not None:
             self.operate_all = operate_all
         if host_id_list is not None:
@@ -84,7 +83,7 @@ class AssociatePolicyGroupRequestInfo:
     def operate_all(self):
         """Gets the operate_all of this AssociatePolicyGroupRequestInfo.
 
-        是否要对全量主机部署策略，如果为true的话，不需填写host_id_list
+        是否要对全量主机部署策略，如果为true的话，不需填写host_id_list，如果为false的话，需要填写host_id_list
 
         :return: The operate_all of this AssociatePolicyGroupRequestInfo.
         :rtype: bool
@@ -95,7 +94,7 @@ class AssociatePolicyGroupRequestInfo:
     def operate_all(self, operate_all):
         """Sets the operate_all of this AssociatePolicyGroupRequestInfo.
 
-        是否要对全量主机部署策略，如果为true的话，不需填写host_id_list
+        是否要对全量主机部署策略，如果为true的话，不需填写host_id_list，如果为false的话，需要填写host_id_list
 
         :param operate_all: The operate_all of this AssociatePolicyGroupRequestInfo.
         :type operate_all: bool

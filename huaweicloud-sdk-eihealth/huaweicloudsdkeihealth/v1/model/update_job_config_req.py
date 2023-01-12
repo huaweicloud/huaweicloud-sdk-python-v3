@@ -20,36 +20,29 @@ class UpdateJobConfigReq:
     sensitive_list = []
 
     openapi_types = {
-        'job_retain_number': 'int',
-        'job_retain_time': 'int'
+        'job_retain_number': 'int'
     }
 
     attribute_map = {
-        'job_retain_number': 'job_retain_number',
-        'job_retain_time': 'job_retain_time'
+        'job_retain_number': 'job_retain_number'
     }
 
-    def __init__(self, job_retain_number=None, job_retain_time=None):
+    def __init__(self, job_retain_number=None):
         """UpdateJobConfigReq
 
         The model defined in huaweicloud sdk
 
         :param job_retain_number: 作业保存条数
         :type job_retain_number: int
-        :param job_retain_time: 作业保存时长，单位天
-        :type job_retain_time: int
         """
         
         
 
         self._job_retain_number = None
-        self._job_retain_time = None
         self.discriminator = None
 
         if job_retain_number is not None:
             self.job_retain_number = job_retain_number
-        if job_retain_time is not None:
-            self.job_retain_time = job_retain_time
 
     @property
     def job_retain_number(self):
@@ -72,28 +65,6 @@ class UpdateJobConfigReq:
         :type job_retain_number: int
         """
         self._job_retain_number = job_retain_number
-
-    @property
-    def job_retain_time(self):
-        """Gets the job_retain_time of this UpdateJobConfigReq.
-
-        作业保存时长，单位天
-
-        :return: The job_retain_time of this UpdateJobConfigReq.
-        :rtype: int
-        """
-        return self._job_retain_time
-
-    @job_retain_time.setter
-    def job_retain_time(self, job_retain_time):
-        """Sets the job_retain_time of this UpdateJobConfigReq.
-
-        作业保存时长，单位天
-
-        :param job_retain_time: The job_retain_time of this UpdateJobConfigReq.
-        :type job_retain_time: int
-        """
-        self._job_retain_time = job_retain_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

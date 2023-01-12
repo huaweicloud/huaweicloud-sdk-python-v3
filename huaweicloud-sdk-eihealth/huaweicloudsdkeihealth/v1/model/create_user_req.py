@@ -44,7 +44,7 @@ class CreateUserReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: 用户名，长度4~31之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格
+        :param name: 用户名，长度5~31之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格
         :type name: str
         :param password: 用户密码，在8-32位之间支持用户自定义密码长度，至少包含以下四种字符中的三种： 大写字母、小写字母、数字和特殊字符。
         :type password: str
@@ -87,7 +87,7 @@ class CreateUserReq:
     def name(self):
         """Gets the name of this CreateUserReq.
 
-        用户名，长度4~31之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格
+        用户名，长度5~31之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格
 
         :return: The name of this CreateUserReq.
         :rtype: str
@@ -98,7 +98,7 @@ class CreateUserReq:
     def name(self, name):
         """Sets the name of this CreateUserReq.
 
-        用户名，长度4~31之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格
+        用户名，长度5~31之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格
 
         :param name: The name of this CreateUserReq.
         :type name: str

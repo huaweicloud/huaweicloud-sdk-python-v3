@@ -52,7 +52,7 @@ class AppOutputParameterDto:
         :type required: bool
         :param type: 参数类型。取值：[STRING，FILE，DIRECTORY，ENUM]
         :type type: str
-        :param pattern: 提示用户参数填写的格式，取值范围：[0-64]。对于STRING类型，匹配字符串内容，比如后缀约束.fastq；对于ENUM类型，可以提示一定要在param_enum列表范围内取值；对于FILE类型，约束文件后缀类型；对于DIRECTORY类型，提示xxx；
+        :param pattern: 提示用户参数填写的格式，取值范围：[0-64]。对于STRING类型，匹配字符串内容，比如后缀约束.fastq；对于ENUM类型，可以提示一定要在param_enum列表范围内取值；对于FILE类型，约束文件后缀类型；对于DIRECTORY类型，提示目录下需要包含哪些文件；
         :type pattern: str
         :param values: 参数取值 如填写，只支持填一项，根据参数类型进行不同的校验
         :type values: list[str]
@@ -175,7 +175,7 @@ class AppOutputParameterDto:
     def pattern(self):
         """Gets the pattern of this AppOutputParameterDto.
 
-        提示用户参数填写的格式，取值范围：[0-64]。对于STRING类型，匹配字符串内容，比如后缀约束.fastq；对于ENUM类型，可以提示一定要在param_enum列表范围内取值；对于FILE类型，约束文件后缀类型；对于DIRECTORY类型，提示xxx；
+        提示用户参数填写的格式，取值范围：[0-64]。对于STRING类型，匹配字符串内容，比如后缀约束.fastq；对于ENUM类型，可以提示一定要在param_enum列表范围内取值；对于FILE类型，约束文件后缀类型；对于DIRECTORY类型，提示目录下需要包含哪些文件；
 
         :return: The pattern of this AppOutputParameterDto.
         :rtype: str
@@ -186,7 +186,7 @@ class AppOutputParameterDto:
     def pattern(self, pattern):
         """Sets the pattern of this AppOutputParameterDto.
 
-        提示用户参数填写的格式，取值范围：[0-64]。对于STRING类型，匹配字符串内容，比如后缀约束.fastq；对于ENUM类型，可以提示一定要在param_enum列表范围内取值；对于FILE类型，约束文件后缀类型；对于DIRECTORY类型，提示xxx；
+        提示用户参数填写的格式，取值范围：[0-64]。对于STRING类型，匹配字符串内容，比如后缀约束.fastq；对于ENUM类型，可以提示一定要在param_enum列表范围内取值；对于FILE类型，约束文件后缀类型；对于DIRECTORY类型，提示目录下需要包含哪些文件；
 
         :param pattern: The pattern of this AppOutputParameterDto.
         :type pattern: str

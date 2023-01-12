@@ -42,7 +42,7 @@ class UpdateAddressSetInfoUsingPutRequest:
         :type set_id: str
         :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
         :type enterprise_project_id: str
-        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。默认情况下，fw_instance_Id为空时，返回帐号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
         :type fw_instance_id: str
         :param body: Body of the UpdateAddressSetInfoUsingPutRequest
         :type body: :class:`huaweicloudsdkcfw.v1.UpdateAddressSetDto`
@@ -112,7 +112,7 @@ class UpdateAddressSetInfoUsingPutRequest:
     def fw_instance_id(self):
         """Gets the fw_instance_id of this UpdateAddressSetInfoUsingPutRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。默认情况下，fw_instance_Id为空时，返回帐号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
 
         :return: The fw_instance_id of this UpdateAddressSetInfoUsingPutRequest.
         :rtype: str
@@ -123,7 +123,7 @@ class UpdateAddressSetInfoUsingPutRequest:
     def fw_instance_id(self, fw_instance_id):
         """Sets the fw_instance_id of this UpdateAddressSetInfoUsingPutRequest.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
+        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。默认情况下，fw_instance_Id为空时，返回帐号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
 
         :param fw_instance_id: The fw_instance_id of this UpdateAddressSetInfoUsingPutRequest.
         :type fw_instance_id: str

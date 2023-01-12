@@ -22,16 +22,18 @@ class WordsListIem:
     openapi_types = {
         'words': 'str',
         'confidence': 'float',
-        'location': 'list[list[int]]'
+        'location': 'list[list[int]]',
+        'char_list': 'list[CharListIem]'
     }
 
     attribute_map = {
         'words': 'words',
         'confidence': 'confidence',
-        'location': 'location'
+        'location': 'location',
+        'char_list': 'char_list'
     }
 
-    def __init__(self, words=None, confidence=None, location=None):
+    def __init__(self, words=None, confidence=None, location=None, char_list=None):
         """WordsListIem
 
         The model defined in huaweicloud sdk
@@ -42,6 +44,8 @@ class WordsListIem:
         :type confidence: float
         :param location: 文字块位置信息，列表形式，分别表示文字块4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
         :type location: list[list[int]]
+        :param char_list: 单元格内文字段列表。输出顺序从左到右，从上到下。仅当入参\&quot;return_text_location\&quot;和\&quot;return_char_location\&quot;同时为true时存在。 
+        :type char_list: list[:class:`huaweicloudsdkocr.v1.CharListIem`]
         """
         
         
@@ -49,6 +53,7 @@ class WordsListIem:
         self._words = None
         self._confidence = None
         self._location = None
+        self._char_list = None
         self.discriminator = None
 
         if words is not None:
@@ -57,6 +62,8 @@ class WordsListIem:
             self.confidence = confidence
         if location is not None:
             self.location = location
+        if char_list is not None:
+            self.char_list = char_list
 
     @property
     def words(self):
@@ -123,6 +130,28 @@ class WordsListIem:
         :type location: list[list[int]]
         """
         self._location = location
+
+    @property
+    def char_list(self):
+        """Gets the char_list of this WordsListIem.
+
+        单元格内文字段列表。输出顺序从左到右，从上到下。仅当入参\"return_text_location\"和\"return_char_location\"同时为true时存在。 
+
+        :return: The char_list of this WordsListIem.
+        :rtype: list[:class:`huaweicloudsdkocr.v1.CharListIem`]
+        """
+        return self._char_list
+
+    @char_list.setter
+    def char_list(self, char_list):
+        """Sets the char_list of this WordsListIem.
+
+        单元格内文字段列表。输出顺序从左到右，从上到下。仅当入参\"return_text_location\"和\"return_char_location\"同时为true时存在。 
+
+        :param char_list: The char_list of this WordsListIem.
+        :type char_list: list[:class:`huaweicloudsdkocr.v1.CharListIem`]
+        """
+        self._char_list = char_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,8 +18,10 @@ class ShowResourceHistoryRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
+    sensitive_list.append('x_auth_token')
 
     openapi_types = {
+        'x_auth_token': 'str',
         'resource_id': 'str',
         'marker': 'str',
         'limit': 'int',
@@ -29,6 +31,7 @@ class ShowResourceHistoryRequest:
     }
 
     attribute_map = {
+        'x_auth_token': 'X-Auth-Token',
         'resource_id': 'resource_id',
         'marker': 'marker',
         'limit': 'limit',
@@ -37,11 +40,13 @@ class ShowResourceHistoryRequest:
         'chronological_order': 'chronological_order'
     }
 
-    def __init__(self, resource_id=None, marker=None, limit=None, earlier_time=None, later_time=None, chronological_order=None):
+    def __init__(self, x_auth_token=None, resource_id=None, marker=None, limit=None, earlier_time=None, later_time=None, chronological_order=None):
         """ShowResourceHistoryRequest
 
         The model defined in huaweicloud sdk
 
+        :param x_auth_token: 用户Token。 获取Token，请参考《统一身份认证服务API参考》的“获取用户Token”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。
+        :type x_auth_token: str
         :param resource_id: 资源ID
         :type resource_id: str
         :param marker: 分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
@@ -58,6 +63,7 @@ class ShowResourceHistoryRequest:
         
         
 
+        self._x_auth_token = None
         self._resource_id = None
         self._marker = None
         self._limit = None
@@ -66,6 +72,7 @@ class ShowResourceHistoryRequest:
         self._chronological_order = None
         self.discriminator = None
 
+        self.x_auth_token = x_auth_token
         self.resource_id = resource_id
         if marker is not None:
             self.marker = marker
@@ -77,6 +84,28 @@ class ShowResourceHistoryRequest:
             self.later_time = later_time
         if chronological_order is not None:
             self.chronological_order = chronological_order
+
+    @property
+    def x_auth_token(self):
+        """Gets the x_auth_token of this ShowResourceHistoryRequest.
+
+        用户Token。 获取Token，请参考《统一身份认证服务API参考》的“获取用户Token”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。
+
+        :return: The x_auth_token of this ShowResourceHistoryRequest.
+        :rtype: str
+        """
+        return self._x_auth_token
+
+    @x_auth_token.setter
+    def x_auth_token(self, x_auth_token):
+        """Sets the x_auth_token of this ShowResourceHistoryRequest.
+
+        用户Token。 获取Token，请参考《统一身份认证服务API参考》的“获取用户Token”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。
+
+        :param x_auth_token: The x_auth_token of this ShowResourceHistoryRequest.
+        :type x_auth_token: str
+        """
+        self._x_auth_token = x_auth_token
 
     @property
     def resource_id(self):

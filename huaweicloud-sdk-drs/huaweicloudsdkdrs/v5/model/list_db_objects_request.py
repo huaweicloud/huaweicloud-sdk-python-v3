@@ -46,13 +46,13 @@ class ListDbObjectsRequest:
         :type job_id: str
         :param x_language: 请求语言类型。
         :type x_language: str
-        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0
+        :param offset: 偏移量，表示查询该偏移量后面的记录。
         :type offset: int
-        :param limit: 每页显示的条目数量
+        :param limit: 查询返回记录的数量限制。
         :type limit: int
         :param type: 查询对象信息类型。取值： - source：查询源库对象信息。 - modified：查询已选择的（已同步的和未下发的）对象信息。 - synchronized：查询已同步的（已下发的）对象信息 ， 使用场景在任务处于全量中或者增量中。
         :type type: str
-        :param db_names: 查询指定库的信息
+        :param db_names: 查询指定库的信息。
         :type db_names: list[str]
         """
         
@@ -125,7 +125,7 @@ class ListDbObjectsRequest:
     def offset(self):
         """Gets the offset of this ListDbObjectsRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0
+        偏移量，表示查询该偏移量后面的记录。
 
         :return: The offset of this ListDbObjectsRequest.
         :rtype: int
@@ -136,7 +136,7 @@ class ListDbObjectsRequest:
     def offset(self, offset):
         """Sets the offset of this ListDbObjectsRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0
+        偏移量，表示查询该偏移量后面的记录。
 
         :param offset: The offset of this ListDbObjectsRequest.
         :type offset: int
@@ -147,7 +147,7 @@ class ListDbObjectsRequest:
     def limit(self):
         """Gets the limit of this ListDbObjectsRequest.
 
-        每页显示的条目数量
+        查询返回记录的数量限制。
 
         :return: The limit of this ListDbObjectsRequest.
         :rtype: int
@@ -158,7 +158,7 @@ class ListDbObjectsRequest:
     def limit(self, limit):
         """Sets the limit of this ListDbObjectsRequest.
 
-        每页显示的条目数量
+        查询返回记录的数量限制。
 
         :param limit: The limit of this ListDbObjectsRequest.
         :type limit: int
@@ -191,7 +191,7 @@ class ListDbObjectsRequest:
     def db_names(self):
         """Gets the db_names of this ListDbObjectsRequest.
 
-        查询指定库的信息
+        查询指定库的信息。
 
         :return: The db_names of this ListDbObjectsRequest.
         :rtype: list[str]
@@ -202,7 +202,7 @@ class ListDbObjectsRequest:
     def db_names(self, db_names):
         """Sets the db_names of this ListDbObjectsRequest.
 
-        查询指定库的信息
+        查询指定库的信息。
 
         :param db_names: The db_names of this ListDbObjectsRequest.
         :type db_names: list[str]

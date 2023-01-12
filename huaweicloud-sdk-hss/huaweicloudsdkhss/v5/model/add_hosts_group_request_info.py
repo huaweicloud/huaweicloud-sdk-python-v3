@@ -46,10 +46,8 @@ class AddHostsGroupRequestInfo:
         self._host_id_list = None
         self.discriminator = None
 
-        if group_name is not None:
-            self.group_name = group_name
-        if host_id_list is not None:
-            self.host_id_list = host_id_list
+        self.group_name = group_name
+        self.host_id_list = host_id_list
 
     @property
     def group_name(self):

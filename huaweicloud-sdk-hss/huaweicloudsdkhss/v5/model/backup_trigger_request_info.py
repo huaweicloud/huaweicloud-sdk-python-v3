@@ -41,8 +41,7 @@ class BackupTriggerRequestInfo:
         self._properties = None
         self.discriminator = None
 
-        if properties is not None:
-            self.properties = properties
+        self.properties = properties
 
     @property
     def properties(self):

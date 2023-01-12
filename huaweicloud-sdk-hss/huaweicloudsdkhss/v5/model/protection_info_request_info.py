@@ -26,7 +26,7 @@ class ProtectionInfoRequestInfo:
         'create_protection_policy': 'ProtectionProxyInfoRequestInfo',
         'backup_protection_status': 'str',
         'backup_policy_id': 'str',
-        'backup_cycle': 'UpdateBackupPolicyRequestInfo',
+        'backup_cycle': 'UpdateBackupPolicyRequestInfo1',
         'agent_id_list': 'list[str]',
         'host_id_list': 'list[str]'
     }
@@ -48,20 +48,20 @@ class ProtectionInfoRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param operating_system: 操作系统，包含如下：   - Windows : 无需处理   - Linux : 已忽略
+        :param operating_system: 操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
         :type operating_system: str
-        :param ransom_protection_status: 勒索防护是否开启，包含如下：   - closed ：关闭。   - opened ：开启。
+        :param ransom_protection_status: 勒索防护是否开启，包含如下：   - closed ：关闭。   - opened ：开启。   若选择开启，protection_policy_id或者create_protection_policy必填一项
         :type ransom_protection_status: str
-        :param protection_policy_id: 防护策略ID
+        :param protection_policy_id: 防护策略ID,若选择已有策略防护,则该字段必选
         :type protection_policy_id: str
         :param create_protection_policy: 
         :type create_protection_policy: :class:`huaweicloudsdkhss.v5.ProtectionProxyInfoRequestInfo`
-        :param backup_protection_status: 是否服务器备份，包含如下：   - closed ：关闭。   - opened ：开启。
+        :param backup_protection_status: 是否服务器备份，包含如下：   - closed ：关闭。   - opened ：开启。   若选择开启服务器备份，则backup_cycle必填
         :type backup_protection_status: str
         :param backup_policy_id: 备份策略ID
         :type backup_policy_id: str
         :param backup_cycle: 
-        :type backup_cycle: :class:`huaweicloudsdkhss.v5.UpdateBackupPolicyRequestInfo`
+        :type backup_cycle: :class:`huaweicloudsdkhss.v5.UpdateBackupPolicyRequestInfo1`
         :param agent_id_list: 开启防护的Agent id列表
         :type agent_id_list: list[str]
         :param host_id_list: 开启防护的host id列表
@@ -81,30 +81,25 @@ class ProtectionInfoRequestInfo:
         self._host_id_list = None
         self.discriminator = None
 
-        if operating_system is not None:
-            self.operating_system = operating_system
-        if ransom_protection_status is not None:
-            self.ransom_protection_status = ransom_protection_status
+        self.operating_system = operating_system
+        self.ransom_protection_status = ransom_protection_status
         if protection_policy_id is not None:
             self.protection_policy_id = protection_policy_id
         if create_protection_policy is not None:
             self.create_protection_policy = create_protection_policy
-        if backup_protection_status is not None:
-            self.backup_protection_status = backup_protection_status
+        self.backup_protection_status = backup_protection_status
         if backup_policy_id is not None:
             self.backup_policy_id = backup_policy_id
         if backup_cycle is not None:
             self.backup_cycle = backup_cycle
-        if agent_id_list is not None:
-            self.agent_id_list = agent_id_list
-        if host_id_list is not None:
-            self.host_id_list = host_id_list
+        self.agent_id_list = agent_id_list
+        self.host_id_list = host_id_list
 
     @property
     def operating_system(self):
         """Gets the operating_system of this ProtectionInfoRequestInfo.
 
-        操作系统，包含如下：   - Windows : 无需处理   - Linux : 已忽略
+        操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
 
         :return: The operating_system of this ProtectionInfoRequestInfo.
         :rtype: str
@@ -115,7 +110,7 @@ class ProtectionInfoRequestInfo:
     def operating_system(self, operating_system):
         """Sets the operating_system of this ProtectionInfoRequestInfo.
 
-        操作系统，包含如下：   - Windows : 无需处理   - Linux : 已忽略
+        操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
 
         :param operating_system: The operating_system of this ProtectionInfoRequestInfo.
         :type operating_system: str
@@ -126,7 +121,7 @@ class ProtectionInfoRequestInfo:
     def ransom_protection_status(self):
         """Gets the ransom_protection_status of this ProtectionInfoRequestInfo.
 
-        勒索防护是否开启，包含如下：   - closed ：关闭。   - opened ：开启。
+        勒索防护是否开启，包含如下：   - closed ：关闭。   - opened ：开启。   若选择开启，protection_policy_id或者create_protection_policy必填一项
 
         :return: The ransom_protection_status of this ProtectionInfoRequestInfo.
         :rtype: str
@@ -137,7 +132,7 @@ class ProtectionInfoRequestInfo:
     def ransom_protection_status(self, ransom_protection_status):
         """Sets the ransom_protection_status of this ProtectionInfoRequestInfo.
 
-        勒索防护是否开启，包含如下：   - closed ：关闭。   - opened ：开启。
+        勒索防护是否开启，包含如下：   - closed ：关闭。   - opened ：开启。   若选择开启，protection_policy_id或者create_protection_policy必填一项
 
         :param ransom_protection_status: The ransom_protection_status of this ProtectionInfoRequestInfo.
         :type ransom_protection_status: str
@@ -148,7 +143,7 @@ class ProtectionInfoRequestInfo:
     def protection_policy_id(self):
         """Gets the protection_policy_id of this ProtectionInfoRequestInfo.
 
-        防护策略ID
+        防护策略ID,若选择已有策略防护,则该字段必选
 
         :return: The protection_policy_id of this ProtectionInfoRequestInfo.
         :rtype: str
@@ -159,7 +154,7 @@ class ProtectionInfoRequestInfo:
     def protection_policy_id(self, protection_policy_id):
         """Sets the protection_policy_id of this ProtectionInfoRequestInfo.
 
-        防护策略ID
+        防护策略ID,若选择已有策略防护,则该字段必选
 
         :param protection_policy_id: The protection_policy_id of this ProtectionInfoRequestInfo.
         :type protection_policy_id: str
@@ -188,7 +183,7 @@ class ProtectionInfoRequestInfo:
     def backup_protection_status(self):
         """Gets the backup_protection_status of this ProtectionInfoRequestInfo.
 
-        是否服务器备份，包含如下：   - closed ：关闭。   - opened ：开启。
+        是否服务器备份，包含如下：   - closed ：关闭。   - opened ：开启。   若选择开启服务器备份，则backup_cycle必填
 
         :return: The backup_protection_status of this ProtectionInfoRequestInfo.
         :rtype: str
@@ -199,7 +194,7 @@ class ProtectionInfoRequestInfo:
     def backup_protection_status(self, backup_protection_status):
         """Sets the backup_protection_status of this ProtectionInfoRequestInfo.
 
-        是否服务器备份，包含如下：   - closed ：关闭。   - opened ：开启。
+        是否服务器备份，包含如下：   - closed ：关闭。   - opened ：开启。   若选择开启服务器备份，则backup_cycle必填
 
         :param backup_protection_status: The backup_protection_status of this ProtectionInfoRequestInfo.
         :type backup_protection_status: str
@@ -233,7 +228,7 @@ class ProtectionInfoRequestInfo:
         """Gets the backup_cycle of this ProtectionInfoRequestInfo.
 
         :return: The backup_cycle of this ProtectionInfoRequestInfo.
-        :rtype: :class:`huaweicloudsdkhss.v5.UpdateBackupPolicyRequestInfo`
+        :rtype: :class:`huaweicloudsdkhss.v5.UpdateBackupPolicyRequestInfo1`
         """
         return self._backup_cycle
 
@@ -242,7 +237,7 @@ class ProtectionInfoRequestInfo:
         """Sets the backup_cycle of this ProtectionInfoRequestInfo.
 
         :param backup_cycle: The backup_cycle of this ProtectionInfoRequestInfo.
-        :type backup_cycle: :class:`huaweicloudsdkhss.v5.UpdateBackupPolicyRequestInfo`
+        :type backup_cycle: :class:`huaweicloudsdkhss.v5.UpdateBackupPolicyRequestInfo1`
         """
         self._backup_cycle = backup_cycle
 

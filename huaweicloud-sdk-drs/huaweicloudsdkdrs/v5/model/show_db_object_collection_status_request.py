@@ -36,11 +36,11 @@ class ShowDbObjectCollectionStatusRequest:
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务id
+        :param job_id: 任务ID。
         :type job_id: str
         :param x_language: 请求语言类型。
         :type x_language: str
-        :param query_id: 对象信息采集的id，指的是提交查询对象接口返回的id
+        :param query_id: 对象信息采集的ID，提交查询数据库对象信息接口返回的ID。
         :type query_id: str
         """
         
@@ -60,7 +60,7 @@ class ShowDbObjectCollectionStatusRequest:
     def job_id(self):
         """Gets the job_id of this ShowDbObjectCollectionStatusRequest.
 
-        任务id
+        任务ID。
 
         :return: The job_id of this ShowDbObjectCollectionStatusRequest.
         :rtype: str
@@ -71,7 +71,7 @@ class ShowDbObjectCollectionStatusRequest:
     def job_id(self, job_id):
         """Sets the job_id of this ShowDbObjectCollectionStatusRequest.
 
-        任务id
+        任务ID。
 
         :param job_id: The job_id of this ShowDbObjectCollectionStatusRequest.
         :type job_id: str
@@ -104,7 +104,7 @@ class ShowDbObjectCollectionStatusRequest:
     def query_id(self):
         """Gets the query_id of this ShowDbObjectCollectionStatusRequest.
 
-        对象信息采集的id，指的是提交查询对象接口返回的id
+        对象信息采集的ID，提交查询数据库对象信息接口返回的ID。
 
         :return: The query_id of this ShowDbObjectCollectionStatusRequest.
         :rtype: str
@@ -115,7 +115,7 @@ class ShowDbObjectCollectionStatusRequest:
     def query_id(self, query_id):
         """Sets the query_id of this ShowDbObjectCollectionStatusRequest.
 
-        对象信息采集的id，指的是提交查询对象接口返回的id
+        对象信息采集的ID，提交查询数据库对象信息接口返回的ID。
 
         :param query_id: The query_id of this ShowDbObjectCollectionStatusRequest.
         :type query_id: str

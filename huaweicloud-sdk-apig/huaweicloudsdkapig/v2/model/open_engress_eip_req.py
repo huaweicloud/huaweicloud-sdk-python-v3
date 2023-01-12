@@ -20,29 +20,36 @@ class OpenEngressEipReq:
     sensitive_list = []
 
     openapi_types = {
-        'bandwidth_size': 'str'
+        'bandwidth_size': 'str',
+        'bandwidth_charging_mode': 'str'
     }
 
     attribute_map = {
-        'bandwidth_size': 'bandwidth_size'
+        'bandwidth_size': 'bandwidth_size',
+        'bandwidth_charging_mode': 'bandwidth_charging_mode'
     }
 
-    def __init__(self, bandwidth_size=None):
+    def __init__(self, bandwidth_size=None, bandwidth_charging_mode=None):
         """OpenEngressEipReq
 
         The model defined in huaweicloud sdk
 
         :param bandwidth_size: 出公网带宽  单位：Mbit/s
         :type bandwidth_size: str
+        :param bandwidth_charging_mode: 出公网带宽计费类型： - bandwidth：按带宽计费 - traffic：按流量计费
+        :type bandwidth_charging_mode: str
         """
         
         
 
         self._bandwidth_size = None
+        self._bandwidth_charging_mode = None
         self.discriminator = None
 
         if bandwidth_size is not None:
             self.bandwidth_size = bandwidth_size
+        if bandwidth_charging_mode is not None:
+            self.bandwidth_charging_mode = bandwidth_charging_mode
 
     @property
     def bandwidth_size(self):
@@ -65,6 +72,28 @@ class OpenEngressEipReq:
         :type bandwidth_size: str
         """
         self._bandwidth_size = bandwidth_size
+
+    @property
+    def bandwidth_charging_mode(self):
+        """Gets the bandwidth_charging_mode of this OpenEngressEipReq.
+
+        出公网带宽计费类型： - bandwidth：按带宽计费 - traffic：按流量计费
+
+        :return: The bandwidth_charging_mode of this OpenEngressEipReq.
+        :rtype: str
+        """
+        return self._bandwidth_charging_mode
+
+    @bandwidth_charging_mode.setter
+    def bandwidth_charging_mode(self, bandwidth_charging_mode):
+        """Sets the bandwidth_charging_mode of this OpenEngressEipReq.
+
+        出公网带宽计费类型： - bandwidth：按带宽计费 - traffic：按流量计费
+
+        :param bandwidth_charging_mode: The bandwidth_charging_mode of this OpenEngressEipReq.
+        :type bandwidth_charging_mode: str
+        """
+        self._bandwidth_charging_mode = bandwidth_charging_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -20,34 +20,28 @@ class DeleteUserRequest:
     sensitive_list = []
 
     openapi_types = {
-        'user_id': 'str',
-        'user_id_type': 'str'
+        'user_id': 'str'
     }
 
     attribute_map = {
-        'user_id': 'user_id',
-        'user_id_type': 'user_id_type'
+        'user_id': 'user_id'
     }
 
-    def __init__(self, user_id=None, user_id_type=None):
+    def __init__(self, user_id=None):
         """DeleteUserRequest
 
         The model defined in huaweicloud sdk
 
         :param user_id: 用户id
         :type user_id: str
-        :param user_id_type: 删除类型，通过(name或id)删除
-        :type user_id_type: str
         """
         
         
 
         self._user_id = None
-        self._user_id_type = None
         self.discriminator = None
 
         self.user_id = user_id
-        self.user_id_type = user_id_type
 
     @property
     def user_id(self):
@@ -70,28 +64,6 @@ class DeleteUserRequest:
         :type user_id: str
         """
         self._user_id = user_id
-
-    @property
-    def user_id_type(self):
-        """Gets the user_id_type of this DeleteUserRequest.
-
-        删除类型，通过(name或id)删除
-
-        :return: The user_id_type of this DeleteUserRequest.
-        :rtype: str
-        """
-        return self._user_id_type
-
-    @user_id_type.setter
-    def user_id_type(self, user_id_type):
-        """Sets the user_id_type of this DeleteUserRequest.
-
-        删除类型，通过(name或id)删除
-
-        :param user_id_type: The user_id_type of this DeleteUserRequest.
-        :type user_id_type: str
-        """
-        self._user_id_type = user_id_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

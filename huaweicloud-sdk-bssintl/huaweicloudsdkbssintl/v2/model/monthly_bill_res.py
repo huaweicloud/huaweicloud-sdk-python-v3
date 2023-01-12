@@ -53,7 +53,13 @@ class MonthlyBillRes:
         'root_resource_id': 'str',
         'parent_resource_id': 'str',
         'trade_id': 'str',
-        'product_spec_desc': 'str'
+        'product_spec_desc': 'str',
+        'sub_service_type_code': 'str',
+        'sub_service_type_name': 'str',
+        'sub_resource_type_code': 'str',
+        'sub_resource_type_name': 'str',
+        'sub_resource_id': 'str',
+        'sub_resource_name': 'str'
     }
 
     attribute_map = {
@@ -90,10 +96,16 @@ class MonthlyBillRes:
         'root_resource_id': 'root_resource_id',
         'parent_resource_id': 'parent_resource_id',
         'trade_id': 'trade_id',
-        'product_spec_desc': 'product_spec_desc'
+        'product_spec_desc': 'product_spec_desc',
+        'sub_service_type_code': 'sub_service_type_code',
+        'sub_service_type_name': 'sub_service_type_name',
+        'sub_resource_type_code': 'sub_resource_type_code',
+        'sub_resource_type_name': 'sub_resource_type_name',
+        'sub_resource_id': 'sub_resource_id',
+        'sub_resource_name': 'sub_resource_name'
     }
 
-    def __init__(self, cycle=None, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, cloud_service_type_name=None, resource_type_name=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None, period_type=None, root_resource_id=None, parent_resource_id=None, trade_id=None, product_spec_desc=None):
+    def __init__(self, cycle=None, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, cloud_service_type_name=None, resource_type_name=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None, period_type=None, root_resource_id=None, parent_resource_id=None, trade_id=None, product_spec_desc=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None):
         """MonthlyBillRes
 
         The model defined in huaweicloud sdk
@@ -166,6 +178,18 @@ class MonthlyBillRes:
         :type trade_id: str
         :param product_spec_desc: 产品的规格描述。
         :type product_spec_desc: str
+        :param sub_service_type_code: 该字段为预留字段。
+        :type sub_service_type_code: str
+        :param sub_service_type_name: 该字段为预留字段。
+        :type sub_service_type_name: str
+        :param sub_resource_type_code: 该字段为预留字段。
+        :type sub_resource_type_code: str
+        :param sub_resource_type_name: 该字段为预留字段。
+        :type sub_resource_type_name: str
+        :param sub_resource_id: 该字段为预留字段。
+        :type sub_resource_id: str
+        :param sub_resource_name: 该字段为预留字段。
+        :type sub_resource_name: str
         """
         
         
@@ -204,6 +228,12 @@ class MonthlyBillRes:
         self._parent_resource_id = None
         self._trade_id = None
         self._product_spec_desc = None
+        self._sub_service_type_code = None
+        self._sub_service_type_name = None
+        self._sub_resource_type_code = None
+        self._sub_resource_type_name = None
+        self._sub_resource_id = None
+        self._sub_resource_name = None
         self.discriminator = None
 
         if cycle is not None:
@@ -274,6 +304,18 @@ class MonthlyBillRes:
             self.trade_id = trade_id
         if product_spec_desc is not None:
             self.product_spec_desc = product_spec_desc
+        if sub_service_type_code is not None:
+            self.sub_service_type_code = sub_service_type_code
+        if sub_service_type_name is not None:
+            self.sub_service_type_name = sub_service_type_name
+        if sub_resource_type_code is not None:
+            self.sub_resource_type_code = sub_resource_type_code
+        if sub_resource_type_name is not None:
+            self.sub_resource_type_name = sub_resource_type_name
+        if sub_resource_id is not None:
+            self.sub_resource_id = sub_resource_id
+        if sub_resource_name is not None:
+            self.sub_resource_name = sub_resource_name
 
     @property
     def cycle(self):
@@ -1022,6 +1064,138 @@ class MonthlyBillRes:
         :type product_spec_desc: str
         """
         self._product_spec_desc = product_spec_desc
+
+    @property
+    def sub_service_type_code(self):
+        """Gets the sub_service_type_code of this MonthlyBillRes.
+
+        该字段为预留字段。
+
+        :return: The sub_service_type_code of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._sub_service_type_code
+
+    @sub_service_type_code.setter
+    def sub_service_type_code(self, sub_service_type_code):
+        """Sets the sub_service_type_code of this MonthlyBillRes.
+
+        该字段为预留字段。
+
+        :param sub_service_type_code: The sub_service_type_code of this MonthlyBillRes.
+        :type sub_service_type_code: str
+        """
+        self._sub_service_type_code = sub_service_type_code
+
+    @property
+    def sub_service_type_name(self):
+        """Gets the sub_service_type_name of this MonthlyBillRes.
+
+        该字段为预留字段。
+
+        :return: The sub_service_type_name of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._sub_service_type_name
+
+    @sub_service_type_name.setter
+    def sub_service_type_name(self, sub_service_type_name):
+        """Sets the sub_service_type_name of this MonthlyBillRes.
+
+        该字段为预留字段。
+
+        :param sub_service_type_name: The sub_service_type_name of this MonthlyBillRes.
+        :type sub_service_type_name: str
+        """
+        self._sub_service_type_name = sub_service_type_name
+
+    @property
+    def sub_resource_type_code(self):
+        """Gets the sub_resource_type_code of this MonthlyBillRes.
+
+        该字段为预留字段。
+
+        :return: The sub_resource_type_code of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._sub_resource_type_code
+
+    @sub_resource_type_code.setter
+    def sub_resource_type_code(self, sub_resource_type_code):
+        """Sets the sub_resource_type_code of this MonthlyBillRes.
+
+        该字段为预留字段。
+
+        :param sub_resource_type_code: The sub_resource_type_code of this MonthlyBillRes.
+        :type sub_resource_type_code: str
+        """
+        self._sub_resource_type_code = sub_resource_type_code
+
+    @property
+    def sub_resource_type_name(self):
+        """Gets the sub_resource_type_name of this MonthlyBillRes.
+
+        该字段为预留字段。
+
+        :return: The sub_resource_type_name of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._sub_resource_type_name
+
+    @sub_resource_type_name.setter
+    def sub_resource_type_name(self, sub_resource_type_name):
+        """Sets the sub_resource_type_name of this MonthlyBillRes.
+
+        该字段为预留字段。
+
+        :param sub_resource_type_name: The sub_resource_type_name of this MonthlyBillRes.
+        :type sub_resource_type_name: str
+        """
+        self._sub_resource_type_name = sub_resource_type_name
+
+    @property
+    def sub_resource_id(self):
+        """Gets the sub_resource_id of this MonthlyBillRes.
+
+        该字段为预留字段。
+
+        :return: The sub_resource_id of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._sub_resource_id
+
+    @sub_resource_id.setter
+    def sub_resource_id(self, sub_resource_id):
+        """Sets the sub_resource_id of this MonthlyBillRes.
+
+        该字段为预留字段。
+
+        :param sub_resource_id: The sub_resource_id of this MonthlyBillRes.
+        :type sub_resource_id: str
+        """
+        self._sub_resource_id = sub_resource_id
+
+    @property
+    def sub_resource_name(self):
+        """Gets the sub_resource_name of this MonthlyBillRes.
+
+        该字段为预留字段。
+
+        :return: The sub_resource_name of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._sub_resource_name
+
+    @sub_resource_name.setter
+    def sub_resource_name(self, sub_resource_name):
+        """Sets the sub_resource_name of this MonthlyBillRes.
+
+        该字段为预留字段。
+
+        :param sub_resource_name: The sub_resource_name of this MonthlyBillRes.
+        :type sub_resource_name: str
+        """
+        self._sub_resource_name = sub_resource_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

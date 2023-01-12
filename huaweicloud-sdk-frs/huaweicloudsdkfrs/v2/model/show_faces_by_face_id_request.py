@@ -20,20 +20,24 @@ class ShowFacesByFaceIdRequest:
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_id': 'str',
         'face_set_name': 'str',
         'face_id': 'str'
     }
 
     attribute_map = {
+        'enterprise_project_id': 'Enterprise-Project-Id',
         'face_set_name': 'face_set_name',
         'face_id': 'face_id'
     }
 
-    def __init__(self, face_set_name=None, face_id=None):
+    def __init__(self, enterprise_project_id=None, face_set_name=None, face_id=None):
         """ShowFacesByFaceIdRequest
 
         The model defined in huaweicloud sdk
 
+        :param enterprise_project_id: 企业项目ID。FRS支持通过企业项目管理（EPS）对不同用户组和用户的资源使用，进行分账。  获取方法：进入“[企业项目管理](https://console.huaweicloud.com/eps/?region&#x3D;cn-north-4#/projects/list)”页面，单击企业项目名称，在企业项目详情页获取Enterprise-Project-Id（企业项目ID）。  企业项目创建步骤请参见用户指南。 &gt; 说明： 创建企业项目后，在传参时，有以下三类场景。 - 携带正确的ID，正常使用FRS服务，账单归到企业ID对应的企业项目中。 - 携带错误的ID，正常使用FRS服务，账单的企业项目会被分类为“未归集”。 - 不携带ID，正常使用FRS服务，账单的企业项目会被分类为“未归集”。
+        :type enterprise_project_id: str
         :param face_set_name: 人脸库名称。
         :type face_set_name: str
         :param face_id: 人脸ID。
@@ -42,12 +46,37 @@ class ShowFacesByFaceIdRequest:
         
         
 
+        self._enterprise_project_id = None
         self._face_set_name = None
         self._face_id = None
         self.discriminator = None
 
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         self.face_set_name = face_set_name
         self.face_id = face_id
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ShowFacesByFaceIdRequest.
+
+        企业项目ID。FRS支持通过企业项目管理（EPS）对不同用户组和用户的资源使用，进行分账。  获取方法：进入“[企业项目管理](https://console.huaweicloud.com/eps/?region=cn-north-4#/projects/list)”页面，单击企业项目名称，在企业项目详情页获取Enterprise-Project-Id（企业项目ID）。  企业项目创建步骤请参见用户指南。 > 说明： 创建企业项目后，在传参时，有以下三类场景。 - 携带正确的ID，正常使用FRS服务，账单归到企业ID对应的企业项目中。 - 携带错误的ID，正常使用FRS服务，账单的企业项目会被分类为“未归集”。 - 不携带ID，正常使用FRS服务，账单的企业项目会被分类为“未归集”。
+
+        :return: The enterprise_project_id of this ShowFacesByFaceIdRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ShowFacesByFaceIdRequest.
+
+        企业项目ID。FRS支持通过企业项目管理（EPS）对不同用户组和用户的资源使用，进行分账。  获取方法：进入“[企业项目管理](https://console.huaweicloud.com/eps/?region=cn-north-4#/projects/list)”页面，单击企业项目名称，在企业项目详情页获取Enterprise-Project-Id（企业项目ID）。  企业项目创建步骤请参见用户指南。 > 说明： 创建企业项目后，在传参时，有以下三类场景。 - 携带正确的ID，正常使用FRS服务，账单归到企业ID对应的企业项目中。 - 携带错误的ID，正常使用FRS服务，账单的企业项目会被分类为“未归集”。 - 不携带ID，正常使用FRS服务，账单的企业项目会被分类为“未归集”。
+
+        :param enterprise_project_id: The enterprise_project_id of this ShowFacesByFaceIdRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def face_set_name(self):

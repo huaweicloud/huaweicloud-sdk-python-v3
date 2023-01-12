@@ -58,7 +58,7 @@ class ListAssetRequest:
         :type offset: int
         :param publishers: 发布者，支持查询多个，以&#39;,&#39;分割
         :type publishers: str
-        :param scope: 查询范围，支持PUBLIC/INTERNAL
+        :param scope: 查询范围，支持PUBLIC/INTERNAL/SELF
         :type scope: str
         :param vendor_ids: 供应商，支持查询多个，以&#39;,&#39;分割
         :type vendor_ids: str
@@ -228,7 +228,7 @@ class ListAssetRequest:
     def scope(self):
         """Gets the scope of this ListAssetRequest.
 
-        查询范围，支持PUBLIC/INTERNAL
+        查询范围，支持PUBLIC/INTERNAL/SELF
 
         :return: The scope of this ListAssetRequest.
         :rtype: str
@@ -239,7 +239,7 @@ class ListAssetRequest:
     def scope(self, scope):
         """Sets the scope of this ListAssetRequest.
 
-        查询范围，支持PUBLIC/INTERNAL
+        查询范围，支持PUBLIC/INTERNAL/SELF
 
         :param scope: The scope of this ListAssetRequest.
         :type scope: str

@@ -18,24 +18,29 @@ class ShowResourceByIdRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
+    sensitive_list.append('x_auth_token')
 
     openapi_types = {
+        'x_auth_token': 'str',
         'provider': 'str',
         'type': 'str',
         'resource_id': 'str'
     }
 
     attribute_map = {
+        'x_auth_token': 'X-Auth-Token',
         'provider': 'provider',
         'type': 'type',
         'resource_id': 'resource_id'
     }
 
-    def __init__(self, provider=None, type=None, resource_id=None):
+    def __init__(self, x_auth_token=None, provider=None, type=None, resource_id=None):
         """ShowResourceByIdRequest
 
         The model defined in huaweicloud sdk
 
+        :param x_auth_token: 用户Token。 获取Token，请参考《统一身份认证服务API参考》的“获取用户Token”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。
+        :type x_auth_token: str
         :param provider: 云服务名称
         :type provider: str
         :param type: 资源类型名称
@@ -46,14 +51,38 @@ class ShowResourceByIdRequest:
         
         
 
+        self._x_auth_token = None
         self._provider = None
         self._type = None
         self._resource_id = None
         self.discriminator = None
 
+        self.x_auth_token = x_auth_token
         self.provider = provider
         self.type = type
         self.resource_id = resource_id
+
+    @property
+    def x_auth_token(self):
+        """Gets the x_auth_token of this ShowResourceByIdRequest.
+
+        用户Token。 获取Token，请参考《统一身份认证服务API参考》的“获取用户Token”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。
+
+        :return: The x_auth_token of this ShowResourceByIdRequest.
+        :rtype: str
+        """
+        return self._x_auth_token
+
+    @x_auth_token.setter
+    def x_auth_token(self, x_auth_token):
+        """Sets the x_auth_token of this ShowResourceByIdRequest.
+
+        用户Token。 获取Token，请参考《统一身份认证服务API参考》的“获取用户Token”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。
+
+        :param x_auth_token: The x_auth_token of this ShowResourceByIdRequest.
+        :type x_auth_token: str
+        """
+        self._x_auth_token = x_auth_token
 
     @property
     def provider(self):

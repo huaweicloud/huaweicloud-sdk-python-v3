@@ -23,17 +23,19 @@ class UpdateProjectReq:
         'description': 'str',
         'status': 'ProjectStatus',
         'tags': 'list[str]',
-        'is_core': 'bool'
+        'is_core': 'bool',
+        'storage_quota': 'int'
     }
 
     attribute_map = {
         'description': 'description',
         'status': 'status',
         'tags': 'tags',
-        'is_core': 'is_core'
+        'is_core': 'is_core',
+        'storage_quota': 'storage_quota'
     }
 
-    def __init__(self, description=None, status=None, tags=None, is_core=None):
+    def __init__(self, description=None, status=None, tags=None, is_core=None, storage_quota=None):
         """UpdateProjectReq
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class UpdateProjectReq:
         :type tags: list[str]
         :param is_core: 是否为核心项目标记
         :type is_core: bool
+        :param storage_quota: 项目数据容量配额，单位为字节，范围为1073741824-11258999068426240，-1表示无容量限制
+        :type storage_quota: int
         """
         
         
@@ -54,6 +58,7 @@ class UpdateProjectReq:
         self._status = None
         self._tags = None
         self._is_core = None
+        self._storage_quota = None
         self.discriminator = None
 
         if description is not None:
@@ -64,6 +69,8 @@ class UpdateProjectReq:
             self.tags = tags
         if is_core is not None:
             self.is_core = is_core
+        if storage_quota is not None:
+            self.storage_quota = storage_quota
 
     @property
     def description(self):
@@ -148,6 +155,28 @@ class UpdateProjectReq:
         :type is_core: bool
         """
         self._is_core = is_core
+
+    @property
+    def storage_quota(self):
+        """Gets the storage_quota of this UpdateProjectReq.
+
+        项目数据容量配额，单位为字节，范围为1073741824-11258999068426240，-1表示无容量限制
+
+        :return: The storage_quota of this UpdateProjectReq.
+        :rtype: int
+        """
+        return self._storage_quota
+
+    @storage_quota.setter
+    def storage_quota(self, storage_quota):
+        """Sets the storage_quota of this UpdateProjectReq.
+
+        项目数据容量配额，单位为字节，范围为1073741824-11258999068426240，-1表示无容量限制
+
+        :param storage_quota: The storage_quota of this UpdateProjectReq.
+        :type storage_quota: int
+        """
+        self._storage_quota = storage_quota
 
     def to_dict(self):
         """Returns the model properties as a dict"""

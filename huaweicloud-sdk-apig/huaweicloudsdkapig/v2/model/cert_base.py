@@ -30,7 +30,8 @@ class CertBase:
         'not_after': 'datetime',
         'signature_algorithm': 'str',
         'create_time': 'datetime',
-        'update_time': 'datetime'
+        'update_time': 'datetime',
+        'is_has_trusted_root_ca': 'bool'
     }
 
     attribute_map = {
@@ -44,10 +45,11 @@ class CertBase:
         'not_after': 'not_after',
         'signature_algorithm': 'signature_algorithm',
         'create_time': 'create_time',
-        'update_time': 'update_time'
+        'update_time': 'update_time',
+        'is_has_trusted_root_ca': 'is_has_trusted_root_ca'
     }
 
-    def __init__(self, id=None, name=None, type=None, instance_id=None, project_id=None, common_name=None, san=None, not_after=None, signature_algorithm=None, create_time=None, update_time=None):
+    def __init__(self, id=None, name=None, type=None, instance_id=None, project_id=None, common_name=None, san=None, not_after=None, signature_algorithm=None, create_time=None, update_time=None, is_has_trusted_root_ca=None):
         """CertBase
 
         The model defined in huaweicloud sdk
@@ -74,6 +76,8 @@ class CertBase:
         :type create_time: datetime
         :param update_time: 更新时间
         :type update_time: datetime
+        :param is_has_trusted_root_ca: 是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。
+        :type is_has_trusted_root_ca: bool
         """
         
         
@@ -89,6 +93,7 @@ class CertBase:
         self._signature_algorithm = None
         self._create_time = None
         self._update_time = None
+        self._is_has_trusted_root_ca = None
         self.discriminator = None
 
         if id is not None:
@@ -113,6 +118,8 @@ class CertBase:
             self.create_time = create_time
         if update_time is not None:
             self.update_time = update_time
+        if is_has_trusted_root_ca is not None:
+            self.is_has_trusted_root_ca = is_has_trusted_root_ca
 
     @property
     def id(self):
@@ -355,6 +362,28 @@ class CertBase:
         :type update_time: datetime
         """
         self._update_time = update_time
+
+    @property
+    def is_has_trusted_root_ca(self):
+        """Gets the is_has_trusted_root_ca of this CertBase.
+
+        是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。
+
+        :return: The is_has_trusted_root_ca of this CertBase.
+        :rtype: bool
+        """
+        return self._is_has_trusted_root_ca
+
+    @is_has_trusted_root_ca.setter
+    def is_has_trusted_root_ca(self, is_has_trusted_root_ca):
+        """Sets the is_has_trusted_root_ca of this CertBase.
+
+        是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。
+
+        :param is_has_trusted_root_ca: The is_has_trusted_root_ca of this CertBase.
+        :type is_has_trusted_root_ca: bool
+        """
+        self._is_has_trusted_root_ca = is_has_trusted_root_ca
 
     def to_dict(self):
         """Returns the model properties as a dict"""

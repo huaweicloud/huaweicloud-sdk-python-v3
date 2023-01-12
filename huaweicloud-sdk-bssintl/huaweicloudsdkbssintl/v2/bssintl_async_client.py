@@ -231,6 +231,79 @@ class BssintlAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_free_resources_usage_records_async(self, request):
+        """查询资源包使用明细
+
+        客户在自建平台查询资源包使用明细。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListFreeResourcesUsageRecords
+        :type request: :class:`huaweicloudsdkbssintl.v2.ListFreeResourcesUsageRecordsRequest`
+        :rtype: :class:`huaweicloudsdkbssintl.v2.ListFreeResourcesUsageRecordsResponse`
+        """
+        return self.list_free_resources_usage_records_with_http_info(request)
+
+    def list_free_resources_usage_records_with_http_info(self, request):
+        all_params = ['deduct_time_begin', 'deduct_time_end', 'free_resource_id', 'product_id', 'resource_type_code', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'free_resource_id' in local_var_params:
+            query_params.append(('free_resource_id', local_var_params['free_resource_id']))
+        if 'product_id' in local_var_params:
+            query_params.append(('product_id', local_var_params['product_id']))
+        if 'resource_type_code' in local_var_params:
+            query_params.append(('resource_type_code', local_var_params['resource_type_code']))
+        if 'deduct_time_begin' in local_var_params:
+            query_params.append(('deduct_time_begin', local_var_params['deduct_time_begin']))
+        if 'deduct_time_end' in local_var_params:
+            query_params.append(('deduct_time_end', local_var_params['deduct_time_end']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/bills/customer-bills/free-resources-usage-records',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListFreeResourcesUsageRecordsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_measure_units_async(self, request):
         """查询使用量单位列表
 

@@ -46,10 +46,8 @@ class FilterV2:
         self._filter_factor = None
         self.discriminator = None
 
-        if operator is not None:
-            self.operator = operator
-        if filter_factor is not None:
-            self.filter_factor = filter_factor
+        self.operator = operator
+        self.filter_factor = filter_factor
 
     @property
     def operator(self):

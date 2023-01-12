@@ -40,9 +40,9 @@ class CambodianIdCardRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param image: 与url二选一。 图像数据，base64编码。图片尺寸不小于15像素，最长边不超过8192像素，支持JPG/PNG/BMP/TIF格式。
+        :param image: 与url二选一。图像数据，base64编码。图片尺寸不小于15像素，最长边不超过8192像素，支持JPG/PNG/BMP/TIF格式。
         :type image: str
-        :param url: 与image二选一。  图片的URL路径，目前仅支持华为云上OBS提供的匿名公开授权访问的URL以及公网URL。 
+        :param url: 与image二选一。 图片的url路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/intl/en-us/api-ocr/ocr_03_0132.html)。 &gt; 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 
         :type url: str
         :param return_portrait_image: 是否返回头像内容开关，可选值如下所示： - true: 返回身份证头像照片的 base64 编码 - false: 不返回身份证头像照片的 base64 编码 未传入该参数时默认为“false”，即不返回身份证头像照片的 base64 编码。 
         :type return_portrait_image: bool
@@ -76,7 +76,7 @@ class CambodianIdCardRequestBody:
     def image(self):
         """Gets the image of this CambodianIdCardRequestBody.
 
-        与url二选一。 图像数据，base64编码。图片尺寸不小于15像素，最长边不超过8192像素，支持JPG/PNG/BMP/TIF格式。
+        与url二选一。图像数据，base64编码。图片尺寸不小于15像素，最长边不超过8192像素，支持JPG/PNG/BMP/TIF格式。
 
         :return: The image of this CambodianIdCardRequestBody.
         :rtype: str
@@ -87,7 +87,7 @@ class CambodianIdCardRequestBody:
     def image(self, image):
         """Sets the image of this CambodianIdCardRequestBody.
 
-        与url二选一。 图像数据，base64编码。图片尺寸不小于15像素，最长边不超过8192像素，支持JPG/PNG/BMP/TIF格式。
+        与url二选一。图像数据，base64编码。图片尺寸不小于15像素，最长边不超过8192像素，支持JPG/PNG/BMP/TIF格式。
 
         :param image: The image of this CambodianIdCardRequestBody.
         :type image: str
@@ -98,7 +98,7 @@ class CambodianIdCardRequestBody:
     def url(self):
         """Gets the url of this CambodianIdCardRequestBody.
 
-        与image二选一。  图片的URL路径，目前仅支持华为云上OBS提供的匿名公开授权访问的URL以及公网URL。 
+        与image二选一。 图片的url路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/intl/en-us/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 
 
         :return: The url of this CambodianIdCardRequestBody.
         :rtype: str
@@ -109,7 +109,7 @@ class CambodianIdCardRequestBody:
     def url(self, url):
         """Sets the url of this CambodianIdCardRequestBody.
 
-        与image二选一。  图片的URL路径，目前仅支持华为云上OBS提供的匿名公开授权访问的URL以及公网URL。 
+        与image二选一。 图片的url路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/intl/en-us/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 
 
         :param url: The url of this CambodianIdCardRequestBody.
         :type url: str

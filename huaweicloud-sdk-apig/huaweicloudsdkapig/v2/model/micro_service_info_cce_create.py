@@ -75,7 +75,8 @@ class MicroServiceInfoCCECreate:
         self.namespace = namespace
         self.workload_type = workload_type
         self.app_name = app_name
-        self.version = version
+        if version is not None:
+            self.version = version
         self.port = port
         if labels is not None:
             self.labels = labels

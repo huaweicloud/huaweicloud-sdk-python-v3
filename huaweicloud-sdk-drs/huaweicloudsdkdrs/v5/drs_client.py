@@ -976,9 +976,9 @@ class DrsClient(Client):
             request_type=request.__class__.__name__)
 
     def show_db_object_collection_status(self, request):
-        """获取数据库对象信息的结果
+        """获取提交查询数据库对象信息的结果
 
-        获取数据库对象信息的结果
+        获取提交查询数据库对象信息的结果。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

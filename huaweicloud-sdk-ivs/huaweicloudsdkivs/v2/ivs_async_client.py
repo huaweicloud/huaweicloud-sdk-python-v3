@@ -57,7 +57,7 @@ class IvsAsyncClient(Client):
         return self.detect_extention_by_id_card_image_with_http_info(request)
 
     def detect_extention_by_id_card_image_with_http_info(self, request):
-        all_params = ['ivs_extention_by_id_card_image_request_body']
+        all_params = ['ivs_extention_by_id_card_image_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -72,6 +72,8 @@ class IvsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -118,7 +120,7 @@ class IvsAsyncClient(Client):
         return self.detect_extention_by_name_and_id_with_http_info(request)
 
     def detect_extention_by_name_and_id_with_http_info(self, request):
-        all_params = ['ivs_extention_by_name_and_id_request_body']
+        all_params = ['ivs_extention_by_name_and_id_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -133,6 +135,8 @@ class IvsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -180,7 +184,7 @@ class IvsAsyncClient(Client):
         return self.detect_standard_by_id_card_image_with_http_info(request)
 
     def detect_standard_by_id_card_image_with_http_info(self, request):
-        all_params = ['ivs_standard_by_id_card_image_request_body']
+        all_params = ['ivs_standard_by_id_card_image_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -195,6 +199,8 @@ class IvsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -241,7 +247,7 @@ class IvsAsyncClient(Client):
         return self.detect_standard_by_name_and_id_with_http_info(request)
 
     def detect_standard_by_name_and_id_with_http_info(self, request):
-        all_params = ['ivs_standard_by_name_and_id_request_body']
+        all_params = ['ivs_standard_by_name_and_id_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -256,6 +262,8 @@ class IvsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 

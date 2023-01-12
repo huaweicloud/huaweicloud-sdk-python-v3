@@ -1880,6 +1880,70 @@ class RocketMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_rocket_instance_topics(self, request):
+        """查询主题列表
+
+        该接口用于查询指定RocketMQ实例的Topic列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListRocketInstanceTopics
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ListRocketInstanceTopicsRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ListRocketInstanceTopicsResponse`
+        """
+        return self.list_rocket_instance_topics_with_http_info(request)
+
+    def list_rocket_instance_topics_with_http_info(self, request):
+        all_params = ['instance_id', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/topics',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListRocketInstanceTopicsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_one_topic(self, request):
         """查询单个主题
 

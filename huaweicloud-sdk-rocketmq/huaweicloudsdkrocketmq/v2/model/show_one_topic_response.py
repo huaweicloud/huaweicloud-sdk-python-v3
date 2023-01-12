@@ -20,6 +20,7 @@ class ShowOneTopicResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'name': 'str',
         'total_read_queue_num': 'float',
         'total_write_queue_num': 'float',
         'permission': 'str',
@@ -27,17 +28,20 @@ class ShowOneTopicResponse(SdkResponse):
     }
 
     attribute_map = {
+        'name': 'name',
         'total_read_queue_num': 'total_read_queue_num',
         'total_write_queue_num': 'total_write_queue_num',
         'permission': 'permission',
         'brokers': 'brokers'
     }
 
-    def __init__(self, total_read_queue_num=None, total_write_queue_num=None, permission=None, brokers=None):
+    def __init__(self, name=None, total_read_queue_num=None, total_write_queue_num=None, permission=None, brokers=None):
         """ShowOneTopicResponse
 
         The model defined in huaweicloud sdk
 
+        :param name: topic名称。
+        :type name: str
         :param total_read_queue_num: 总读队列个数。
         :type total_read_queue_num: float
         :param total_write_queue_num: 总写队列个数。
@@ -50,12 +54,15 @@ class ShowOneTopicResponse(SdkResponse):
         
         super(ShowOneTopicResponse, self).__init__()
 
+        self._name = None
         self._total_read_queue_num = None
         self._total_write_queue_num = None
         self._permission = None
         self._brokers = None
         self.discriminator = None
 
+        if name is not None:
+            self.name = name
         if total_read_queue_num is not None:
             self.total_read_queue_num = total_read_queue_num
         if total_write_queue_num is not None:
@@ -64,6 +71,28 @@ class ShowOneTopicResponse(SdkResponse):
             self.permission = permission
         if brokers is not None:
             self.brokers = brokers
+
+    @property
+    def name(self):
+        """Gets the name of this ShowOneTopicResponse.
+
+        topic名称。
+
+        :return: The name of this ShowOneTopicResponse.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ShowOneTopicResponse.
+
+        topic名称。
+
+        :param name: The name of this ShowOneTopicResponse.
+        :type name: str
+        """
+        self._name = name
 
     @property
     def total_read_queue_num(self):

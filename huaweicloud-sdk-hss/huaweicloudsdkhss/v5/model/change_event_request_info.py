@@ -51,12 +51,10 @@ class ChangeEventRequestInfo:
         self._operate_event_list = None
         self.discriminator = None
 
-        if operate_type is not None:
-            self.operate_type = operate_type
+        self.operate_type = operate_type
         if handler is not None:
             self.handler = handler
-        if operate_event_list is not None:
-            self.operate_event_list = operate_event_list
+        self.operate_event_list = operate_event_list
 
     @property
     def operate_type(self):

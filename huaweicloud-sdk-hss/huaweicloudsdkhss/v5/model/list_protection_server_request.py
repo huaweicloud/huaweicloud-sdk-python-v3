@@ -64,7 +64,7 @@ class ListProtectionServerRequest:
         :type host_ip: str
         :param host_status: 主机状态，包含如下3种。   - 不传参默认为全部。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。
         :type host_status: str
-        :param last_days: 查询时间范围天数，最近7天为last_days&#x3D;7
+        :param last_days: 查询时间范围天数，最近7天为last_days&#x3D;7，若不填，则默认查询一天内的防护事件和已有备份数
         :type last_days: int
         """
         
@@ -279,7 +279,7 @@ class ListProtectionServerRequest:
     def last_days(self):
         """Gets the last_days of this ListProtectionServerRequest.
 
-        查询时间范围天数，最近7天为last_days=7
+        查询时间范围天数，最近7天为last_days=7，若不填，则默认查询一天内的防护事件和已有备份数
 
         :return: The last_days of this ListProtectionServerRequest.
         :rtype: int
@@ -290,7 +290,7 @@ class ListProtectionServerRequest:
     def last_days(self, last_days):
         """Sets the last_days of this ListProtectionServerRequest.
 
-        查询时间范围天数，最近7天为last_days=7
+        查询时间范围天数，最近7天为last_days=7，若不填，则默认查询一天内的防护事件和已有备份数
 
         :param last_days: The last_days of this ListProtectionServerRequest.
         :type last_days: int

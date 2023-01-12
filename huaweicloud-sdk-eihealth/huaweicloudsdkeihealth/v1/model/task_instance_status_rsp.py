@@ -23,6 +23,7 @@ class TaskInstanceStatusRsp:
         'phase': 'str',
         'pod_ip': 'str',
         'host_ip': 'str',
+        'host_name': 'str',
         'start_time': 'str',
         'container_statuses': 'list[TaskInstanceContainerStatusRsp]'
     }
@@ -31,11 +32,12 @@ class TaskInstanceStatusRsp:
         'phase': 'phase',
         'pod_ip': 'pod_ip',
         'host_ip': 'host_ip',
+        'host_name': 'host_name',
         'start_time': 'start_time',
         'container_statuses': 'container_statuses'
     }
 
-    def __init__(self, phase=None, pod_ip=None, host_ip=None, start_time=None, container_statuses=None):
+    def __init__(self, phase=None, pod_ip=None, host_ip=None, host_name=None, start_time=None, container_statuses=None):
         """TaskInstanceStatusRsp
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class TaskInstanceStatusRsp:
         :type pod_ip: str
         :param host_ip: 实例所在节点IP
         :type host_ip: str
+        :param host_name: 计算节点的名称
+        :type host_name: str
         :param start_time: 实例创建时间
         :type start_time: str
         :param container_statuses: 实例状态信息
@@ -57,6 +61,7 @@ class TaskInstanceStatusRsp:
         self._phase = None
         self._pod_ip = None
         self._host_ip = None
+        self._host_name = None
         self._start_time = None
         self._container_statuses = None
         self.discriminator = None
@@ -67,6 +72,8 @@ class TaskInstanceStatusRsp:
             self.pod_ip = pod_ip
         if host_ip is not None:
             self.host_ip = host_ip
+        if host_name is not None:
+            self.host_name = host_name
         if start_time is not None:
             self.start_time = start_time
         if container_statuses is not None:
@@ -137,6 +144,28 @@ class TaskInstanceStatusRsp:
         :type host_ip: str
         """
         self._host_ip = host_ip
+
+    @property
+    def host_name(self):
+        """Gets the host_name of this TaskInstanceStatusRsp.
+
+        计算节点的名称
+
+        :return: The host_name of this TaskInstanceStatusRsp.
+        :rtype: str
+        """
+        return self._host_name
+
+    @host_name.setter
+    def host_name(self, host_name):
+        """Sets the host_name of this TaskInstanceStatusRsp.
+
+        计算节点的名称
+
+        :param host_name: The host_name of this TaskInstanceStatusRsp.
+        :type host_name: str
+        """
+        self._host_name = host_name
 
     @property
     def start_time(self):

@@ -72,7 +72,7 @@ class IdCardResult:
         :type issue: str
         :param valid_from: 有效起始日期。 
         :type valid_from: str
-        :param valid_to: 有效结束日期。   &gt; 说明：  - 身份证识别支持中华人民共和国居民身份证识别。 
+        :param valid_to: 有效结束日期。  &gt; 说明： - 身份证识别支持中华人民共和国居民身份证识别。 
         :type valid_to: str
         :param verification_result: 
         :type verification_result: :class:`huaweicloudsdkocr.v1.IdcardVerificationResult`
@@ -308,7 +308,7 @@ class IdCardResult:
     def valid_to(self):
         """Gets the valid_to of this IdCardResult.
 
-        有效结束日期。   > 说明：  - 身份证识别支持中华人民共和国居民身份证识别。 
+        有效结束日期。  > 说明： - 身份证识别支持中华人民共和国居民身份证识别。 
 
         :return: The valid_to of this IdCardResult.
         :rtype: str
@@ -319,7 +319,7 @@ class IdCardResult:
     def valid_to(self, valid_to):
         """Sets the valid_to of this IdCardResult.
 
-        有效结束日期。   > 说明：  - 身份证识别支持中华人民共和国居民身份证识别。 
+        有效结束日期。  > 说明： - 身份证识别支持中华人民共和国居民身份证识别。 
 
         :param valid_to: The valid_to of this IdCardResult.
         :type valid_to: str

@@ -18,8 +18,10 @@ class ListPolicyStatesByAssignmentIdRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
+    sensitive_list.append('x_auth_token')
 
     openapi_types = {
+        'x_auth_token': 'str',
         'policy_assignment_id': 'str',
         'compliance_state': 'str',
         'resource_id': 'str',
@@ -29,6 +31,7 @@ class ListPolicyStatesByAssignmentIdRequest:
     }
 
     attribute_map = {
+        'x_auth_token': 'X-Auth-Token',
         'policy_assignment_id': 'policy_assignment_id',
         'compliance_state': 'compliance_state',
         'resource_id': 'resource_id',
@@ -37,11 +40,13 @@ class ListPolicyStatesByAssignmentIdRequest:
         'marker': 'marker'
     }
 
-    def __init__(self, policy_assignment_id=None, compliance_state=None, resource_id=None, resource_name=None, limit=None, marker=None):
+    def __init__(self, x_auth_token=None, policy_assignment_id=None, compliance_state=None, resource_id=None, resource_name=None, limit=None, marker=None):
         """ListPolicyStatesByAssignmentIdRequest
 
         The model defined in huaweicloud sdk
 
+        :param x_auth_token: 用户Token。 获取Token，请参考《统一身份认证服务API参考》的“获取用户Token”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。
+        :type x_auth_token: str
         :param policy_assignment_id: 规则ID
         :type policy_assignment_id: str
         :param compliance_state: 合规状态
@@ -58,6 +63,7 @@ class ListPolicyStatesByAssignmentIdRequest:
         
         
 
+        self._x_auth_token = None
         self._policy_assignment_id = None
         self._compliance_state = None
         self._resource_id = None
@@ -66,6 +72,7 @@ class ListPolicyStatesByAssignmentIdRequest:
         self._marker = None
         self.discriminator = None
 
+        self.x_auth_token = x_auth_token
         self.policy_assignment_id = policy_assignment_id
         if compliance_state is not None:
             self.compliance_state = compliance_state
@@ -77,6 +84,28 @@ class ListPolicyStatesByAssignmentIdRequest:
             self.limit = limit
         if marker is not None:
             self.marker = marker
+
+    @property
+    def x_auth_token(self):
+        """Gets the x_auth_token of this ListPolicyStatesByAssignmentIdRequest.
+
+        用户Token。 获取Token，请参考《统一身份认证服务API参考》的“获取用户Token”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。
+
+        :return: The x_auth_token of this ListPolicyStatesByAssignmentIdRequest.
+        :rtype: str
+        """
+        return self._x_auth_token
+
+    @x_auth_token.setter
+    def x_auth_token(self, x_auth_token):
+        """Sets the x_auth_token of this ListPolicyStatesByAssignmentIdRequest.
+
+        用户Token。 获取Token，请参考《统一身份认证服务API参考》的“获取用户Token”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。
+
+        :param x_auth_token: The x_auth_token of this ListPolicyStatesByAssignmentIdRequest.
+        :type x_auth_token: str
+        """
+        self._x_auth_token = x_auth_token
 
     @property
     def policy_assignment_id(self):

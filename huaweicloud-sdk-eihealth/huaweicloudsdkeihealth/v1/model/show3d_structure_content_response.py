@@ -4,11 +4,11 @@ import re
 import six
 
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class Show3dStructureContentResponse(SdkResponse):
+class Show3dStructureContentResponse(SdkStreamResponse):
 
     """
     Attributes:
@@ -25,14 +25,14 @@ class Show3dStructureContentResponse(SdkResponse):
     attribute_map = {
     }
 
-    def __init__(self):
+    def __init__(self, response):
         """Show3dStructureContentResponse
 
         The model defined in huaweicloud sdk
 
         """
         
-        super(Show3dStructureContentResponse, self).__init__()
+        super(Show3dStructureContentResponse, self).__init__(response)
         self.discriminator = None
 
     def to_dict(self):

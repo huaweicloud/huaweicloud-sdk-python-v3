@@ -1,3 +1,224 @@
+# 3.1.22 2023-01-12
+
+### HuaweiCloud SDK APIG
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListApiGroupsV2`新增响应参数 `is_has_trusted_root_ca`
+  - 接口`UpdateApiGroupV2`新增响应参数 `is_has_trusted_root_ca`
+  - 接口`ShowDetailsOfApiGroupV2`新增响应参数 `is_has_trusted_root_ca`
+  - 接口`UpdateApiV2`新增响应参数 `is_has_trusted_root_ca`
+  - 接口`ShowDetailsOfApiV2`新增响应参数 `is_has_trusted_root_ca`
+  - 接口`BatchPublishOrOfflineApiV2`:
+    - 新增请求参数 `group_id`
+    - 请求参数`env_id`改为必填
+  - 接口`ListApiVersionDetailV2`新增响应参数 `is_has_trusted_root_ca`
+  - 接口`CreateInstanceV2`新增请求参数 `bandwidth_charging_mode`、`ingress_bandwidth_size`、`ingress_bandwidth_charging_mode`
+  - 接口`UpdateInstanceV2`新增响应参数 `bandwidth_charging_mode`、`ingress_bandwidth_charging_mode`
+  - 接口`ShowDetailsOfInstanceV2`新增响应参数 `bandwidth_charging_mode`、`ingress_bandwidth_charging_mode`
+  - 接口`AddEngressEipV2`新增请求参数 `bandwidth_charging_mode`
+  - 接口`UpdateEngressEipV2`新增请求参数 `bandwidth_charging_mode`
+  - 接口`ImportMicroservice`请求参数`version`改为非必填
+  - 接口`CreateCertificateV2`新增响应参数 `is_has_trusted_root_ca`
+  - 接口`ListCertificatesV2`新增响应参数 `is_has_trusted_root_ca`
+  - 接口`UpdateCertificateV2`新增响应参数 `is_has_trusted_root_ca`
+  - 接口`ShowDetailsOfCertificateV2`新增响应参数 `is_has_trusted_root_ca`
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 支持接口`ListFreeResourcesUsageRecords`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListCustomerselfResourceRecordDetails`新增响应参数 `sub_service_type_code`、`sub_service_type_name`、`sub_resource_type_code`、`sub_resource_type_name`、`sub_resource_id`、`sub_resource_name`
+  - 接口`ListCustomerselfResourceRecords`新增响应参数 `sub_service_type_code`、`sub_service_type_name`、`sub_resource_type_code`、`sub_resource_type_name`、`sub_resource_id`、`sub_resource_name`
+  - 接口`ListCosts`请求参数`operator`改为必填
+
+### HuaweiCloud SDK BSSINTL
+
+- _新增特性_
+  - 支持接口`ListFreeResourcesUsageRecords`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListCustomerselfResourceRecordDetails`新增响应参数 `sub_service_type_code`、`sub_service_type_name`、`sub_resource_type_code`、`sub_resource_type_name`、`sub_resource_id`、`sub_resource_name`
+  - 接口`ListCustomerselfResourceRecords`新增响应参数 `sub_service_type_code`、`sub_service_type_name`、`sub_resource_type_code`、`sub_resource_type_name`、`sub_resource_id`、`sub_resource_name`
+  - 接口`ListCosts`请求参数`operator`改为必填
+
+### HuaweiCloud SDK CES
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListAlarmHistories`:
+    - 新增响应参数 `data_points`
+    - 移除响应参数 `datapoints`
+
+### HuaweiCloud SDK DRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListDbObjects`新增响应参数 `object_scope`
+  - 接口`ShowDbObjectCollectionStatus`新增响应参数 `object_scope`
+
+### HuaweiCloud SDK eiHealth
+
+- _新增特性_
+  - 支持以下接口：
+    - `ExecuteAssetAction`
+    - `UpdateDataPathPolicy`
+    - `PublishData`
+    - `PublishImage`
+    - `BatchDeleteLabel`
+    - `BatchDownloadResourceStatData`
+    - `PublishApp`
+    - `ShowTaskInstanceMetricData`
+    - `BatchCancelJob`
+    - `BatchRetryJob`
+    - `BatchDeleteJob`
+    - `PublishWorkflow`
+    - `UpdateAssetVersion`
+    - `DeleteAssetVersion`
+    - `UpdateJob`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ListRecentJob`
+  - 接口`ListAsset`移除响应参数 `latest_version`
+  - 接口`ShowAsset`移除响应参数 `latest_version`
+  - 接口`ShowAssetVersion`新增响应参数 `failed_reason`、`labels`、`picture`
+  - 接口`ListStar`移除响应参数 `latest_version`
+  - 接口`CreateDatabaseData`请求参数`column`改为必填
+  - 接口`UpdateDatabaseData`请求参数`column`改为必填
+  - 接口`ListData`新增响应参数 `deletable`
+  - 接口`ShowData`新增响应参数 `deletable`
+  - 接口`ListDataJob`新增响应参数 `failed_reason`
+  - 接口`UpdateProject`新增请求参数 `storage_quota`
+  - 接口`ShowProject`新增响应参数 `storage_quota`
+  - 接口`ShowProjectTrace`移除响应参数 `path`、`name`、`type`、`size`、`create_time`、`download_url`
+  - 接口`ShowProjectTraceData`新增响应参数 `allowed_operate`、`deletable`
+  - 接口`ListComputingResources`:
+    - 新增响应参数 `node_labels`
+    - 移除请求参数 `label`、`offset`、`limit`
+  - 接口`UpdateJobConfig`移除请求参数 `job_retain_time`
+  - 接口`ShowJobConfig`移除响应参数 `job_retain_time`
+  - 接口`ListLabel`移除响应参数 `count`
+  - 接口`BatchUpdateNodeLabel`移除请求参数 `name`
+  - 接口`DeleteUser`移除请求参数 `user_id_type`
+  - 接口`ShowTaskInstances`新增响应参数 `host_name`
+
+### HuaweiCloud SDK FRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`DetectLiveByUrl`新增请求参数 `Enterprise-Project-Id`
+  - 接口`DetectLiveByUrlIntl`新增请求参数 `Enterprise-Project-Id`
+  - 接口`DetectLiveFaceByUrl`新增请求参数 `Enterprise-Project-Id`
+  - 接口`DetectLiveByFile`新增请求参数 `Enterprise-Project-Id`
+  - 接口`DetectLiveByFileIntl`新增请求参数 `Enterprise-Project-Id`
+  - 接口`DetectLiveFaceByFile`新增请求参数 `Enterprise-Project-Id`
+  - 接口`DetectLiveByBase64`新增请求参数 `Enterprise-Project-Id`
+  - 接口`DetectLiveByBase64Intl`新增请求参数 `Enterprise-Project-Id`
+  - 接口`DetectLiveFaceByBase64`新增请求参数 `Enterprise-Project-Id`
+  - 接口`SearchFaceByFaceId`新增请求参数 `Enterprise-Project-Id`
+  - 接口`DetectFaceByFile`新增请求参数 `Enterprise-Project-Id`
+  - 接口`DetectFaceByFileIntl`新增请求参数 `Enterprise-Project-Id`
+  - 接口`UpdateFace`新增请求参数 `Enterprise-Project-Id`
+  - 接口`DeleteFaceByExternalImageId`新增请求参数 `Enterprise-Project-Id`
+  - 接口`ShowFacesByLimit`新增请求参数 `Enterprise-Project-Id`
+  - 接口`CompareFaceByFile`新增请求参数 `Enterprise-Project-Id`
+  - 接口`DeleteFaceByFaceId`新增请求参数 `Enterprise-Project-Id`
+  - 接口`ShowFacesByFaceId`新增请求参数 `Enterprise-Project-Id`
+  - 接口`AddFacesByBase64`新增请求参数 `Enterprise-Project-Id`
+  - 接口`DetectFaceByUrl`新增请求参数 `Enterprise-Project-Id`
+  - 接口`DetectFaceByUrlIntl`新增请求参数 `Enterprise-Project-Id`
+  - 接口`DeleteFaceSet`新增请求参数 `Enterprise-Project-Id`
+  - 接口`ShowFaceSet`新增请求参数 `Enterprise-Project-Id`
+  - 接口`CompareFaceByBase64`新增请求参数 `Enterprise-Project-Id`
+  - 接口`DetectFaceByBase64`新增请求参数 `Enterprise-Project-Id`
+  - 接口`DetectFaceByBase64Intl`新增请求参数 `Enterprise-Project-Id`
+  - 接口`CreateFaceSet`新增请求参数 `Enterprise-Project-Id`
+  - 接口`ShowAllFaceSets`新增请求参数 `Enterprise-Project-Id`
+  - 接口`SearchFaceByFile`新增请求参数 `Enterprise-Project-Id`
+  - 接口`AddFacesByUrl`新增请求参数 `Enterprise-Project-Id`
+  - 接口`AddFacesByFile`新增请求参数 `Enterprise-Project-Id`
+  - 接口`SearchFaceByUrl`新增请求参数 `Enterprise-Project-Id`
+  - 接口`SearchFaceByBase64`新增请求参数 `Enterprise-Project-Id`
+  - 接口`CompareFaceByUrl`新增请求参数 `Enterprise-Project-Id`
+  - 接口`BatchDeleteFaces`新增请求参数 `Enterprise-Project-Id`
+
+### HuaweiCloud SDK HSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateProtectionPolicy`请求参数`policy_id`、`policy_name`、`protection_mode`、`bait_protection_status`、`protection_directory`、`protection_type`、`operating_system`改为必填
+  - 接口`StartProtection`请求参数`operating_system`、`ransom_protection_status`、`backup_protection_status`、`policy_id`、`pattern`、`agent_id_list`、`host_id_list`改为必填
+  - 接口`StopProtection`请求参数`host_id_list`、`agent_id_list`、`close_protection_type`改为必填
+  - 接口`UpdateBackupPolicyInfo`请求参数`policy_id`、`pattern`改为必填
+  - 接口`ListQuotasDetail`新增响应参数 `enterprise_project_id`、`enterprise_project_name`
+  - 接口`ListSecurityEvents`新增响应参数 `host_status`、`agent_status`、`protect_status`、`asset_value`、`keyword`、`hash`
+  - 接口`ChangeEvent`:
+    - 新增请求参数 `keyword`、`hash`
+    - 移除请求参数 `description`
+  - 接口`DeleteHostsGroup`请求参数`group_id`改为非必填
+  - 接口`AddHostsGroup`请求参数`group_name`、`host_id_list`改为必填
+  - 接口`AssociatePolicyGroup`请求参数`target_policy_group_id`改为必填
+  - 接口`ChangeVulStatus`请求参数`operate_type`、`vul_id`、`host_id_list`改为必填
+  - 接口`SetWtpProtectionStatusInfo`:
+    - 新增请求参数 `charging_mode`
+    - 移除请求参数 `payment_mode`
+
+### HuaweiCloud SDK IVS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`DetectStandardByIdCardImage`新增请求参数 `Enterprise-Project-Id`
+  - 接口`DetectStandardByNameAndId`新增请求参数 `Enterprise-Project-Id`
+  - 接口`DetectExtentionByNameAndId`新增请求参数 `Enterprise-Project-Id`
+  - 接口`DetectExtentionByIdCardImage`新增请求参数 `Enterprise-Project-Id`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 支持接口`RecognizeCustomTemplate`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RecognizeGeneralTable`:
+    - 新增请求参数 `return_char_location`、`return_rectification_matrix`
+    - 新增响应参数 `char_list`
+  - 接口`RecognizeGeneralText`新增请求参数 `language`
+  - 接口`RecognizeWebImage`:
+    - 新增响应参数 `extracted_data`
+    - 移除响应参数 `extracted_data`、`contact_info`、`image_size`、`height`、`width`、`name`、`phone`、`province`、`city`、`district`、`detail_address`
+
+### HuaweiCloud SDK RocketMQ
+
+- _新增特性_
+  - 支持接口`ListRocketInstanceTopics`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowOneTopic`新增响应参数 `name`
+
 # 3.1.21 2023-01-05
 
 ### HuaweiCloud SDK CPH

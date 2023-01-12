@@ -34,7 +34,8 @@ class ShowProjectResponse(SdkResponse):
         'create_time': 'str',
         'update_time': 'str',
         'delete_time': 'str',
-        'is_core': 'bool'
+        'is_core': 'bool',
+        'storage_quota': 'int'
     }
 
     attribute_map = {
@@ -52,10 +53,11 @@ class ShowProjectResponse(SdkResponse):
         'create_time': 'create_time',
         'update_time': 'update_time',
         'delete_time': 'delete_time',
-        'is_core': 'is_core'
+        'is_core': 'is_core',
+        'storage_quota': 'storage_quota'
     }
 
-    def __init__(self, id=None, name=None, obs_bucket_name=None, swr_namespace=None, creator=None, role=None, roles=None, size=None, status=None, tags=None, description=None, create_time=None, update_time=None, delete_time=None, is_core=None):
+    def __init__(self, id=None, name=None, obs_bucket_name=None, swr_namespace=None, creator=None, role=None, roles=None, size=None, status=None, tags=None, description=None, create_time=None, update_time=None, delete_time=None, is_core=None, storage_quota=None):
         """ShowProjectResponse
 
         The model defined in huaweicloud sdk
@@ -90,6 +92,8 @@ class ShowProjectResponse(SdkResponse):
         :type delete_time: str
         :param is_core: 是否为核心项目
         :type is_core: bool
+        :param storage_quota: 项目数据容量配额，-1表示无容量限制
+        :type storage_quota: int
         """
         
         super(ShowProjectResponse, self).__init__()
@@ -109,6 +113,7 @@ class ShowProjectResponse(SdkResponse):
         self._update_time = None
         self._delete_time = None
         self._is_core = None
+        self._storage_quota = None
         self.discriminator = None
 
         if id is not None:
@@ -141,6 +146,8 @@ class ShowProjectResponse(SdkResponse):
             self.delete_time = delete_time
         if is_core is not None:
             self.is_core = is_core
+        if storage_quota is not None:
+            self.storage_quota = storage_quota
 
     @property
     def id(self):
@@ -471,6 +478,28 @@ class ShowProjectResponse(SdkResponse):
         :type is_core: bool
         """
         self._is_core = is_core
+
+    @property
+    def storage_quota(self):
+        """Gets the storage_quota of this ShowProjectResponse.
+
+        项目数据容量配额，-1表示无容量限制
+
+        :return: The storage_quota of this ShowProjectResponse.
+        :rtype: int
+        """
+        return self._storage_quota
+
+    @storage_quota.setter
+    def storage_quota(self, storage_quota):
+        """Sets the storage_quota of this ShowProjectResponse.
+
+        项目数据容量配额，-1表示无容量限制
+
+        :param storage_quota: The storage_quota of this ShowProjectResponse.
+        :type storage_quota: int
+        """
+        self._storage_quota = storage_quota
 
     def to_dict(self):
         """Returns the model properties as a dict"""

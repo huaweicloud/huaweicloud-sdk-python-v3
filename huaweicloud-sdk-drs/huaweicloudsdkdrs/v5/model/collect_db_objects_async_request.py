@@ -56,7 +56,7 @@ class CollectDbObjectsAsyncRequest:
         :type type: str
         :param is_refresh: 是否强制刷新。取值： - true：是，表示从源库重新查询。    - false：否，表示从已缓存中数据查询。
         :type is_refresh: bool
-        :param db_names: 查询指定库的信息
+        :param db_names: 查询指定库的信息。
         :type db_names: list[str]
         """
         
@@ -220,7 +220,7 @@ class CollectDbObjectsAsyncRequest:
     def db_names(self):
         """Gets the db_names of this CollectDbObjectsAsyncRequest.
 
-        查询指定库的信息
+        查询指定库的信息。
 
         :return: The db_names of this CollectDbObjectsAsyncRequest.
         :rtype: list[str]
@@ -231,7 +231,7 @@ class CollectDbObjectsAsyncRequest:
     def db_names(self, db_names):
         """Sets the db_names of this CollectDbObjectsAsyncRequest.
 
-        查询指定库的信息
+        查询指定库的信息。
 
         :param db_names: The db_names of this CollectDbObjectsAsyncRequest.
         :type db_names: list[str]

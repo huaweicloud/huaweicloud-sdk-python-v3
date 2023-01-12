@@ -46,8 +46,7 @@ class ColumnValueDto:
         self._value = None
         self.discriminator = None
 
-        if column is not None:
-            self.column = column
+        self.column = column
         if value is not None:
             self.value = value
 

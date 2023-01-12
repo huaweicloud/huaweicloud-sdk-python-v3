@@ -28,7 +28,9 @@ class EventDetailResponseInfo:
         'file_attr': 'str',
         'private_ip': 'str',
         'login_ip': 'str',
-        'login_user_name': 'str'
+        'login_user_name': 'str',
+        'keyword': 'str',
+        'hash': 'str'
     }
 
     attribute_map = {
@@ -40,10 +42,12 @@ class EventDetailResponseInfo:
         'file_attr': 'file_attr',
         'private_ip': 'private_ip',
         'login_ip': 'login_ip',
-        'login_user_name': 'login_user_name'
+        'login_user_name': 'login_user_name',
+        'keyword': 'keyword',
+        'hash': 'hash'
     }
 
-    def __init__(self, agent_id=None, process_pid=None, is_parent=None, file_hash=None, file_path=None, file_attr=None, private_ip=None, login_ip=None, login_user_name=None):
+    def __init__(self, agent_id=None, process_pid=None, is_parent=None, file_hash=None, file_path=None, file_attr=None, private_ip=None, login_ip=None, login_user_name=None, keyword=None, hash=None):
         """EventDetailResponseInfo
 
         The model defined in huaweicloud sdk
@@ -66,6 +70,10 @@ class EventDetailResponseInfo:
         :type login_ip: str
         :param login_user_name: 登录用户名
         :type login_user_name: str
+        :param keyword: 告警事件关键字，仅用于告警白名单
+        :type keyword: str
+        :param hash: 告警事件hash，仅用于告警白名单
+        :type hash: str
         """
         
         
@@ -79,6 +87,8 @@ class EventDetailResponseInfo:
         self._private_ip = None
         self._login_ip = None
         self._login_user_name = None
+        self._keyword = None
+        self._hash = None
         self.discriminator = None
 
         if agent_id is not None:
@@ -99,6 +109,10 @@ class EventDetailResponseInfo:
             self.login_ip = login_ip
         if login_user_name is not None:
             self.login_user_name = login_user_name
+        if keyword is not None:
+            self.keyword = keyword
+        if hash is not None:
+            self.hash = hash
 
     @property
     def agent_id(self):
@@ -297,6 +311,50 @@ class EventDetailResponseInfo:
         :type login_user_name: str
         """
         self._login_user_name = login_user_name
+
+    @property
+    def keyword(self):
+        """Gets the keyword of this EventDetailResponseInfo.
+
+        告警事件关键字，仅用于告警白名单
+
+        :return: The keyword of this EventDetailResponseInfo.
+        :rtype: str
+        """
+        return self._keyword
+
+    @keyword.setter
+    def keyword(self, keyword):
+        """Sets the keyword of this EventDetailResponseInfo.
+
+        告警事件关键字，仅用于告警白名单
+
+        :param keyword: The keyword of this EventDetailResponseInfo.
+        :type keyword: str
+        """
+        self._keyword = keyword
+
+    @property
+    def hash(self):
+        """Gets the hash of this EventDetailResponseInfo.
+
+        告警事件hash，仅用于告警白名单
+
+        :return: The hash of this EventDetailResponseInfo.
+        :rtype: str
+        """
+        return self._hash
+
+    @hash.setter
+    def hash(self, hash):
+        """Sets the hash of this EventDetailResponseInfo.
+
+        告警事件hash，仅用于告警白名单
+
+        :param hash: The hash of this EventDetailResponseInfo.
+        :type hash: str
+        """
+        self._hash = hash
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -28,7 +28,8 @@ class DataJobRsp:
         'status': 'str',
         'finish_count': 'int',
         'total_count': 'int',
-        'type': 'str'
+        'type': 'str',
+        'failed_reason': 'str'
     }
 
     attribute_map = {
@@ -40,10 +41,11 @@ class DataJobRsp:
         'status': 'status',
         'finish_count': 'finish_count',
         'total_count': 'total_count',
-        'type': 'type'
+        'type': 'type',
+        'failed_reason': 'failed_reason'
     }
 
-    def __init__(self, creator=None, end_time=None, id=None, name=None, create_time=None, status=None, finish_count=None, total_count=None, type=None):
+    def __init__(self, creator=None, end_time=None, id=None, name=None, create_time=None, status=None, finish_count=None, total_count=None, type=None, failed_reason=None):
         """DataJobRsp
 
         The model defined in huaweicloud sdk
@@ -66,6 +68,8 @@ class DataJobRsp:
         :type total_count: int
         :param type: 数据作业类型
         :type type: str
+        :param failed_reason: 数据作业失败原因
+        :type failed_reason: str
         """
         
         
@@ -79,6 +83,7 @@ class DataJobRsp:
         self._finish_count = None
         self._total_count = None
         self._type = None
+        self._failed_reason = None
         self.discriminator = None
 
         if creator is not None:
@@ -99,6 +104,8 @@ class DataJobRsp:
             self.total_count = total_count
         if type is not None:
             self.type = type
+        if failed_reason is not None:
+            self.failed_reason = failed_reason
 
     @property
     def creator(self):
@@ -297,6 +304,28 @@ class DataJobRsp:
         :type type: str
         """
         self._type = type
+
+    @property
+    def failed_reason(self):
+        """Gets the failed_reason of this DataJobRsp.
+
+        数据作业失败原因
+
+        :return: The failed_reason of this DataJobRsp.
+        :rtype: str
+        """
+        return self._failed_reason
+
+    @failed_reason.setter
+    def failed_reason(self, failed_reason):
+        """Sets the failed_reason of this DataJobRsp.
+
+        数据作业失败原因
+
+        :param failed_reason: The failed_reason of this DataJobRsp.
+        :type failed_reason: str
+        """
+        self._failed_reason = failed_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -60,6 +60,8 @@ from huaweicloudsdkrocketmq.v2.model.list_message_trace_resp_trace import ListMe
 from huaweicloudsdkrocketmq.v2.model.list_message_trace_response import ListMessageTraceResponse
 from huaweicloudsdkrocketmq.v2.model.list_messages_request import ListMessagesRequest
 from huaweicloudsdkrocketmq.v2.model.list_messages_response import ListMessagesResponse
+from huaweicloudsdkrocketmq.v2.model.list_rocket_instance_topics_request import ListRocketInstanceTopicsRequest
+from huaweicloudsdkrocketmq.v2.model.list_rocket_instance_topics_response import ListRocketInstanceTopicsResponse
 from huaweicloudsdkrocketmq.v2.model.list_topic_access_policy_request import ListTopicAccessPolicyRequest
 from huaweicloudsdkrocketmq.v2.model.list_topic_access_policy_response import ListTopicAccessPolicyResponse
 from huaweicloudsdkrocketmq.v2.model.list_user_request import ListUserRequest
@@ -86,6 +88,7 @@ from huaweicloudsdkrocketmq.v2.model.show_topic_status_response import ShowTopic
 from huaweicloudsdkrocketmq.v2.model.show_user_request import ShowUserRequest
 from huaweicloudsdkrocketmq.v2.model.show_user_response import ShowUserResponse
 from huaweicloudsdkrocketmq.v2.model.tag_entity import TagEntity
+from huaweicloudsdkrocketmq.v2.model.topic import Topic
 from huaweicloudsdkrocketmq.v2.model.topic_brokers import TopicBrokers
 from huaweicloudsdkrocketmq.v2.model.update_consumer_group_request import UpdateConsumerGroupRequest
 from huaweicloudsdkrocketmq.v2.model.update_consumer_group_response import UpdateConsumerGroupResponse

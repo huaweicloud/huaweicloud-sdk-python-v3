@@ -23,17 +23,17 @@ class SetWtpProtectionStatusRequestInfo:
         'status': 'bool',
         'host_id_list': 'list[str]',
         'resource_id': 'str',
-        'payment_mode': 'int'
+        'charging_mode': 'str'
     }
 
     attribute_map = {
         'status': 'status',
         'host_id_list': 'host_id_list',
         'resource_id': 'resource_id',
-        'payment_mode': 'payment_mode'
+        'charging_mode': 'charging_mode'
     }
 
-    def __init__(self, status=None, host_id_list=None, resource_id=None, payment_mode=None):
+    def __init__(self, status=None, host_id_list=None, resource_id=None, charging_mode=None):
         """SetWtpProtectionStatusRequestInfo
 
         The model defined in huaweicloud sdk
@@ -44,8 +44,8 @@ class SetWtpProtectionStatusRequestInfo:
         :type host_id_list: list[str]
         :param resource_id: 资源ID
         :type resource_id: str
-        :param payment_mode: 随机选择配额还是指定资源
-        :type payment_mode: int
+        :param charging_mode: 计费模式   - packet_cycle: 包周期
+        :type charging_mode: str
         """
         
         
@@ -53,7 +53,7 @@ class SetWtpProtectionStatusRequestInfo:
         self._status = None
         self._host_id_list = None
         self._resource_id = None
-        self._payment_mode = None
+        self._charging_mode = None
         self.discriminator = None
 
         if status is not None:
@@ -62,8 +62,8 @@ class SetWtpProtectionStatusRequestInfo:
             self.host_id_list = host_id_list
         if resource_id is not None:
             self.resource_id = resource_id
-        if payment_mode is not None:
-            self.payment_mode = payment_mode
+        if charging_mode is not None:
+            self.charging_mode = charging_mode
 
     @property
     def status(self):
@@ -132,26 +132,26 @@ class SetWtpProtectionStatusRequestInfo:
         self._resource_id = resource_id
 
     @property
-    def payment_mode(self):
-        """Gets the payment_mode of this SetWtpProtectionStatusRequestInfo.
+    def charging_mode(self):
+        """Gets the charging_mode of this SetWtpProtectionStatusRequestInfo.
 
-        随机选择配额还是指定资源
+        计费模式   - packet_cycle: 包周期
 
-        :return: The payment_mode of this SetWtpProtectionStatusRequestInfo.
-        :rtype: int
+        :return: The charging_mode of this SetWtpProtectionStatusRequestInfo.
+        :rtype: str
         """
-        return self._payment_mode
+        return self._charging_mode
 
-    @payment_mode.setter
-    def payment_mode(self, payment_mode):
-        """Sets the payment_mode of this SetWtpProtectionStatusRequestInfo.
+    @charging_mode.setter
+    def charging_mode(self, charging_mode):
+        """Sets the charging_mode of this SetWtpProtectionStatusRequestInfo.
 
-        随机选择配额还是指定资源
+        计费模式   - packet_cycle: 包周期
 
-        :param payment_mode: The payment_mode of this SetWtpProtectionStatusRequestInfo.
-        :type payment_mode: int
+        :param charging_mode: The charging_mode of this SetWtpProtectionStatusRequestInfo.
+        :type charging_mode: str
         """
-        self._payment_mode = payment_mode
+        self._charging_mode = charging_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

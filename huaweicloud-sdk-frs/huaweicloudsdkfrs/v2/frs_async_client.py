@@ -57,7 +57,7 @@ class FrsAsyncClient(Client):
         return self.add_faces_by_base64_with_http_info(request)
 
     def add_faces_by_base64_with_http_info(self, request):
-        all_params = ['face_set_name', 'add_faces_base64_req']
+        all_params = ['face_set_name', 'add_faces_base64_req', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -74,6 +74,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -120,7 +122,7 @@ class FrsAsyncClient(Client):
         return self.add_faces_by_file_with_http_info(request)
 
     def add_faces_by_file_with_http_info(self, request):
-        all_params = ['face_set_name', 'image_file', 'external_image_id', 'external_fields', 'single']
+        all_params = ['face_set_name', 'image_file', 'enterprise_project_id', 'external_image_id', 'external_fields', 'single']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -137,6 +139,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
         if 'image_file' in local_var_params:
@@ -191,7 +195,7 @@ class FrsAsyncClient(Client):
         return self.add_faces_by_url_with_http_info(request)
 
     def add_faces_by_url_with_http_info(self, request):
-        all_params = ['face_set_name', 'add_faces_url_req']
+        all_params = ['face_set_name', 'add_faces_url_req', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -208,6 +212,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -254,7 +260,7 @@ class FrsAsyncClient(Client):
         return self.batch_delete_faces_with_http_info(request)
 
     def batch_delete_faces_with_http_info(self, request):
-        all_params = ['face_set_name', 'delete_faces_batch_req']
+        all_params = ['face_set_name', 'delete_faces_batch_req', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -271,6 +277,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -317,7 +325,7 @@ class FrsAsyncClient(Client):
         return self.compare_face_by_base64_with_http_info(request)
 
     def compare_face_by_base64_with_http_info(self, request):
-        all_params = ['face_compare_base64_req']
+        all_params = ['face_compare_base64_req', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -332,6 +340,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -378,7 +388,7 @@ class FrsAsyncClient(Client):
         return self.compare_face_by_file_with_http_info(request)
 
     def compare_face_by_file_with_http_info(self, request):
-        all_params = ['image1_file', 'image2_file']
+        all_params = ['image1_file', 'image2_file', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -393,6 +403,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
         if 'image1_file' in local_var_params:
@@ -443,7 +455,7 @@ class FrsAsyncClient(Client):
         return self.compare_face_by_url_with_http_info(request)
 
     def compare_face_by_url_with_http_info(self, request):
-        all_params = ['face_compare_url_req']
+        all_params = ['face_compare_url_req', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -458,6 +470,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -504,7 +518,7 @@ class FrsAsyncClient(Client):
         return self.create_face_set_with_http_info(request)
 
     def create_face_set_with_http_info(self, request):
-        all_params = ['create_face_set_req']
+        all_params = ['create_face_set_req', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -519,6 +533,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -565,7 +581,7 @@ class FrsAsyncClient(Client):
         return self.delete_face_by_external_image_id_with_http_info(request)
 
     def delete_face_by_external_image_id_with_http_info(self, request):
-        all_params = ['face_set_name', 'external_image_id']
+        all_params = ['face_set_name', 'external_image_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -584,6 +600,8 @@ class FrsAsyncClient(Client):
             query_params.append(('external_image_id', local_var_params['external_image_id']))
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -628,7 +646,7 @@ class FrsAsyncClient(Client):
         return self.delete_face_by_face_id_with_http_info(request)
 
     def delete_face_by_face_id_with_http_info(self, request):
-        all_params = ['face_set_name', 'face_id']
+        all_params = ['face_set_name', 'face_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -647,6 +665,8 @@ class FrsAsyncClient(Client):
             query_params.append(('face_id', local_var_params['face_id']))
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -691,7 +711,7 @@ class FrsAsyncClient(Client):
         return self.delete_face_set_with_http_info(request)
 
     def delete_face_set_with_http_info(self, request):
-        all_params = ['face_set_name']
+        all_params = ['face_set_name', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -708,6 +728,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -752,7 +774,7 @@ class FrsAsyncClient(Client):
         return self.detect_face_by_base64_with_http_info(request)
 
     def detect_face_by_base64_with_http_info(self, request):
-        all_params = ['face_detect_base64_req']
+        all_params = ['face_detect_base64_req', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -767,6 +789,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -813,7 +837,7 @@ class FrsAsyncClient(Client):
         return self.detect_face_by_base64_intl_with_http_info(request)
 
     def detect_face_by_base64_intl_with_http_info(self, request):
-        all_params = ['face_detect_base64_req']
+        all_params = ['face_detect_base64_req', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -828,6 +852,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -874,7 +900,7 @@ class FrsAsyncClient(Client):
         return self.detect_face_by_file_with_http_info(request)
 
     def detect_face_by_file_with_http_info(self, request):
-        all_params = ['image_file', 'attributes']
+        all_params = ['image_file', 'enterprise_project_id', 'attributes']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -889,6 +915,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
         if 'image_file' in local_var_params:
@@ -939,7 +967,7 @@ class FrsAsyncClient(Client):
         return self.detect_face_by_file_intl_with_http_info(request)
 
     def detect_face_by_file_intl_with_http_info(self, request):
-        all_params = ['image_file']
+        all_params = ['image_file', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -954,6 +982,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
         if 'image_file' in local_var_params:
@@ -1002,7 +1032,7 @@ class FrsAsyncClient(Client):
         return self.detect_face_by_url_with_http_info(request)
 
     def detect_face_by_url_with_http_info(self, request):
-        all_params = ['face_detect_url_req']
+        all_params = ['face_detect_url_req', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1017,6 +1047,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1063,7 +1095,7 @@ class FrsAsyncClient(Client):
         return self.detect_face_by_url_intl_with_http_info(request)
 
     def detect_face_by_url_intl_with_http_info(self, request):
-        all_params = ['face_detect_url_req']
+        all_params = ['face_detect_url_req', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1078,6 +1110,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1124,7 +1158,7 @@ class FrsAsyncClient(Client):
         return self.detect_live_by_base64_with_http_info(request)
 
     def detect_live_by_base64_with_http_info(self, request):
-        all_params = ['live_detect_base64_req']
+        all_params = ['live_detect_base64_req', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1139,6 +1173,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1185,7 +1221,7 @@ class FrsAsyncClient(Client):
         return self.detect_live_by_base64_intl_with_http_info(request)
 
     def detect_live_by_base64_intl_with_http_info(self, request):
-        all_params = ['live_detect_base64_req']
+        all_params = ['live_detect_base64_req', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1200,6 +1236,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1246,7 +1284,7 @@ class FrsAsyncClient(Client):
         return self.detect_live_by_file_with_http_info(request)
 
     def detect_live_by_file_with_http_info(self, request):
-        all_params = ['video_file', 'actions', 'action_time']
+        all_params = ['video_file', 'actions', 'enterprise_project_id', 'action_time']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1261,6 +1299,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
         if 'video_file' in local_var_params:
@@ -1313,7 +1353,7 @@ class FrsAsyncClient(Client):
         return self.detect_live_by_file_intl_with_http_info(request)
 
     def detect_live_by_file_intl_with_http_info(self, request):
-        all_params = ['video_file', 'actions', 'action_time']
+        all_params = ['video_file', 'actions', 'enterprise_project_id', 'action_time']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1328,6 +1368,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
         if 'video_file' in local_var_params:
@@ -1380,7 +1422,7 @@ class FrsAsyncClient(Client):
         return self.detect_live_by_url_with_http_info(request)
 
     def detect_live_by_url_with_http_info(self, request):
-        all_params = ['live_detect_url_req']
+        all_params = ['live_detect_url_req', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1395,6 +1437,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1441,7 +1485,7 @@ class FrsAsyncClient(Client):
         return self.detect_live_by_url_intl_with_http_info(request)
 
     def detect_live_by_url_intl_with_http_info(self, request):
-        all_params = ['live_detect_url_req']
+        all_params = ['live_detect_url_req', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1456,6 +1500,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1502,7 +1548,7 @@ class FrsAsyncClient(Client):
         return self.detect_live_face_by_base64_with_http_info(request)
 
     def detect_live_face_by_base64_with_http_info(self, request):
-        all_params = ['live_detect_face_base64_req']
+        all_params = ['live_detect_face_base64_req', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1517,6 +1563,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1563,7 +1611,7 @@ class FrsAsyncClient(Client):
         return self.detect_live_face_by_file_with_http_info(request)
 
     def detect_live_face_by_file_with_http_info(self, request):
-        all_params = ['image_file']
+        all_params = ['image_file', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1578,6 +1626,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
         if 'image_file' in local_var_params:
@@ -1626,7 +1676,7 @@ class FrsAsyncClient(Client):
         return self.detect_live_face_by_url_with_http_info(request)
 
     def detect_live_face_by_url_with_http_info(self, request):
-        all_params = ['live_detect_face_url_req']
+        all_params = ['live_detect_face_url_req', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1641,6 +1691,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1688,7 +1740,7 @@ class FrsAsyncClient(Client):
         return self.search_face_by_base64_with_http_info(request)
 
     def search_face_by_base64_with_http_info(self, request):
-        all_params = ['face_set_name', 'face_search_base64_req']
+        all_params = ['face_set_name', 'face_search_base64_req', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1705,6 +1757,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1752,7 +1806,7 @@ class FrsAsyncClient(Client):
         return self.search_face_by_face_id_with_http_info(request)
 
     def search_face_by_face_id_with_http_info(self, request):
-        all_params = ['face_set_name', 'face_search_face_id_req']
+        all_params = ['face_set_name', 'face_search_face_id_req', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1769,6 +1823,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1816,7 +1872,7 @@ class FrsAsyncClient(Client):
         return self.search_face_by_file_with_http_info(request)
 
     def search_face_by_file_with_http_info(self, request):
-        all_params = ['face_set_name', 'image_file', 'top_n', 'threshold', 'sort', 'filter', 'return_fields']
+        all_params = ['face_set_name', 'image_file', 'enterprise_project_id', 'top_n', 'threshold', 'sort', 'filter', 'return_fields']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1833,6 +1889,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
         if 'image_file' in local_var_params:
@@ -1892,7 +1950,7 @@ class FrsAsyncClient(Client):
         return self.search_face_by_url_with_http_info(request)
 
     def search_face_by_url_with_http_info(self, request):
-        all_params = ['face_set_name', 'face_search_url_req']
+        all_params = ['face_set_name', 'face_search_url_req', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1909,6 +1967,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1955,7 +2015,7 @@ class FrsAsyncClient(Client):
         return self.show_all_face_sets_with_http_info(request)
 
     def show_all_face_sets_with_http_info(self, request):
-        all_params = []
+        all_params = ['enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1970,6 +2030,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -2014,7 +2076,7 @@ class FrsAsyncClient(Client):
         return self.show_face_set_with_http_info(request)
 
     def show_face_set_with_http_info(self, request):
-        all_params = ['face_set_name']
+        all_params = ['face_set_name', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2031,6 +2093,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -2075,7 +2139,7 @@ class FrsAsyncClient(Client):
         return self.show_faces_by_face_id_with_http_info(request)
 
     def show_faces_by_face_id_with_http_info(self, request):
-        all_params = ['face_set_name', 'face_id']
+        all_params = ['face_set_name', 'face_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2094,6 +2158,8 @@ class FrsAsyncClient(Client):
             query_params.append(('face_id', local_var_params['face_id']))
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -2138,7 +2204,7 @@ class FrsAsyncClient(Client):
         return self.show_faces_by_limit_with_http_info(request)
 
     def show_faces_by_limit_with_http_info(self, request):
-        all_params = ['face_set_name', 'offset', 'limit']
+        all_params = ['face_set_name', 'offset', 'limit', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2159,6 +2225,8 @@ class FrsAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -2203,7 +2271,7 @@ class FrsAsyncClient(Client):
         return self.update_face_with_http_info(request)
 
     def update_face_with_http_info(self, request):
-        all_params = ['face_set_name', 'update_face_req']
+        all_params = ['face_set_name', 'update_face_req', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2220,6 +2288,8 @@ class FrsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 

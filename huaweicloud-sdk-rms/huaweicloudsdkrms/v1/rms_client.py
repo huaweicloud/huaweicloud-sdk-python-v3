@@ -56,7 +56,7 @@ class RmsClient(Client):
         return self.show_resource_history_with_http_info(request)
 
     def show_resource_history_with_http_info(self, request):
-        all_params = ['resource_id', 'marker', 'limit', 'earlier_time', 'later_time', 'chronological_order']
+        all_params = ['x_auth_token', 'resource_id', 'marker', 'limit', 'earlier_time', 'later_time', 'chronological_order']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -83,6 +83,8 @@ class RmsClient(Client):
             query_params.append(('chronological_order', local_var_params['chronological_order']))
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -126,7 +128,7 @@ class RmsClient(Client):
         return self.create_policy_assignments_with_http_info(request)
 
     def create_policy_assignments_with_http_info(self, request):
-        all_params = ['policy_assignment_request_body']
+        all_params = ['x_auth_token', 'policy_assignment_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -141,6 +143,8 @@ class RmsClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -186,7 +190,7 @@ class RmsClient(Client):
         return self.delete_policy_assignment_with_http_info(request)
 
     def delete_policy_assignment_with_http_info(self, request):
-        all_params = ['policy_assignment_id']
+        all_params = ['x_auth_token', 'policy_assignment_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -203,6 +207,8 @@ class RmsClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -246,7 +252,7 @@ class RmsClient(Client):
         return self.disable_policy_assignment_with_http_info(request)
 
     def disable_policy_assignment_with_http_info(self, request):
-        all_params = ['policy_assignment_id']
+        all_params = ['x_auth_token', 'policy_assignment_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -263,6 +269,8 @@ class RmsClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -306,7 +314,7 @@ class RmsClient(Client):
         return self.enable_policy_assignment_with_http_info(request)
 
     def enable_policy_assignment_with_http_info(self, request):
-        all_params = ['policy_assignment_id']
+        all_params = ['x_auth_token', 'policy_assignment_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -323,6 +331,8 @@ class RmsClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -366,7 +376,7 @@ class RmsClient(Client):
         return self.list_built_in_policy_definitions_with_http_info(request)
 
     def list_built_in_policy_definitions_with_http_info(self, request):
-        all_params = ['x_language']
+        all_params = ['x_auth_token', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -381,6 +391,8 @@ class RmsClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
 
@@ -426,7 +438,7 @@ class RmsClient(Client):
         return self.list_policy_assignments_with_http_info(request)
 
     def list_policy_assignments_with_http_info(self, request):
-        all_params = []
+        all_params = ['x_auth_token']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -441,6 +453,8 @@ class RmsClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -484,7 +498,7 @@ class RmsClient(Client):
         return self.list_policy_states_by_assignment_id_with_http_info(request)
 
     def list_policy_states_by_assignment_id_with_http_info(self, request):
-        all_params = ['policy_assignment_id', 'compliance_state', 'resource_id', 'resource_name', 'limit', 'marker']
+        all_params = ['x_auth_token', 'policy_assignment_id', 'compliance_state', 'resource_id', 'resource_name', 'limit', 'marker']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -511,6 +525,8 @@ class RmsClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -554,7 +570,7 @@ class RmsClient(Client):
         return self.list_policy_states_by_domain_id_with_http_info(request)
 
     def list_policy_states_by_domain_id_with_http_info(self, request):
-        all_params = ['compliance_state', 'resource_id', 'resource_name', 'limit', 'marker']
+        all_params = ['x_auth_token', 'compliance_state', 'resource_id', 'resource_name', 'limit', 'marker']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -579,6 +595,8 @@ class RmsClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -622,7 +640,7 @@ class RmsClient(Client):
         return self.list_policy_states_by_resource_id_with_http_info(request)
 
     def list_policy_states_by_resource_id_with_http_info(self, request):
-        all_params = ['resource_id', 'compliance_state', 'limit', 'marker']
+        all_params = ['x_auth_token', 'resource_id', 'compliance_state', 'limit', 'marker']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -645,6 +663,8 @@ class RmsClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -688,7 +708,7 @@ class RmsClient(Client):
         return self.run_evaluation_by_policy_assignment_id_with_http_info(request)
 
     def run_evaluation_by_policy_assignment_id_with_http_info(self, request):
-        all_params = ['policy_assignment_id']
+        all_params = ['x_auth_token', 'policy_assignment_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -705,6 +725,8 @@ class RmsClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -748,7 +770,7 @@ class RmsClient(Client):
         return self.show_built_in_policy_definition_with_http_info(request)
 
     def show_built_in_policy_definition_with_http_info(self, request):
-        all_params = ['policy_definition_id', 'x_language']
+        all_params = ['x_auth_token', 'policy_definition_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -765,6 +787,8 @@ class RmsClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
 
@@ -810,7 +834,7 @@ class RmsClient(Client):
         return self.show_evaluation_state_by_assignment_id_with_http_info(request)
 
     def show_evaluation_state_by_assignment_id_with_http_info(self, request):
-        all_params = ['policy_assignment_id']
+        all_params = ['x_auth_token', 'policy_assignment_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -827,6 +851,8 @@ class RmsClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -870,7 +896,7 @@ class RmsClient(Client):
         return self.show_policy_assignment_with_http_info(request)
 
     def show_policy_assignment_with_http_info(self, request):
-        all_params = ['policy_assignment_id']
+        all_params = ['x_auth_token', 'policy_assignment_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -887,6 +913,8 @@ class RmsClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -930,7 +958,7 @@ class RmsClient(Client):
         return self.update_policy_assignment_with_http_info(request)
 
     def update_policy_assignment_with_http_info(self, request):
-        all_params = ['policy_assignment_id', 'policy_assignment_request_body']
+        all_params = ['x_auth_token', 'policy_assignment_id', 'policy_assignment_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -947,6 +975,8 @@ class RmsClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -992,7 +1022,7 @@ class RmsClient(Client):
         return self.update_policy_state_with_http_info(request)
 
     def update_policy_state_with_http_info(self, request):
-        all_params = ['policy_state_request_body']
+        all_params = ['x_auth_token', 'policy_state_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1007,6 +1037,8 @@ class RmsClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -1052,7 +1084,7 @@ class RmsClient(Client):
         return self.create_stored_query_with_http_info(request)
 
     def create_stored_query_with_http_info(self, request):
-        all_params = ['stored_query_request_body']
+        all_params = ['x_auth_token', 'stored_query_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1067,6 +1099,8 @@ class RmsClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -1112,7 +1146,7 @@ class RmsClient(Client):
         return self.delete_stored_query_with_http_info(request)
 
     def delete_stored_query_with_http_info(self, request):
-        all_params = ['query_id']
+        all_params = ['x_auth_token', 'query_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1129,6 +1163,8 @@ class RmsClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -1172,7 +1208,7 @@ class RmsClient(Client):
         return self.list_schemas_with_http_info(request)
 
     def list_schemas_with_http_info(self, request):
-        all_params = ['limit', 'marker']
+        all_params = ['x_auth_token', 'limit', 'marker']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1191,6 +1227,8 @@ class RmsClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -1234,7 +1272,7 @@ class RmsClient(Client):
         return self.list_stored_queries_with_http_info(request)
 
     def list_stored_queries_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'name']
+        all_params = ['x_auth_token', 'limit', 'marker', 'name']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1255,6 +1293,8 @@ class RmsClient(Client):
             query_params.append(('name', local_var_params['name']))
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -1298,7 +1338,7 @@ class RmsClient(Client):
         return self.run_query_with_http_info(request)
 
     def run_query_with_http_info(self, request):
-        all_params = ['query_run_request_body']
+        all_params = ['x_auth_token', 'query_run_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1313,6 +1353,8 @@ class RmsClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -1358,7 +1400,7 @@ class RmsClient(Client):
         return self.show_stored_query_with_http_info(request)
 
     def show_stored_query_with_http_info(self, request):
-        all_params = ['query_id']
+        all_params = ['x_auth_token', 'query_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1375,6 +1417,8 @@ class RmsClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -1418,7 +1462,7 @@ class RmsClient(Client):
         return self.update_stored_query_with_http_info(request)
 
     def update_stored_query_with_http_info(self, request):
-        all_params = ['query_id', 'stored_query_request_body']
+        all_params = ['x_auth_token', 'query_id', 'stored_query_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1435,6 +1479,8 @@ class RmsClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -1480,7 +1526,7 @@ class RmsClient(Client):
         return self.list_regions_with_http_info(request)
 
     def list_regions_with_http_info(self, request):
-        all_params = ['x_language']
+        all_params = ['x_auth_token', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1495,6 +1541,8 @@ class RmsClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
 
@@ -1540,7 +1588,7 @@ class RmsClient(Client):
         return self.show_resource_relations_with_http_info(request)
 
     def show_resource_relations_with_http_info(self, request):
-        all_params = ['resource_id', 'direction', 'limit', 'marker']
+        all_params = ['x_auth_token', 'resource_id', 'direction', 'limit', 'marker']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1563,6 +1611,8 @@ class RmsClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -1606,7 +1656,7 @@ class RmsClient(Client):
         return self.list_all_resources_with_http_info(request)
 
     def list_all_resources_with_http_info(self, request):
-        all_params = ['region_id', 'ep_id', 'type', 'limit', 'marker']
+        all_params = ['x_auth_token', 'region_id', 'ep_id', 'type', 'limit', 'marker']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1631,6 +1681,8 @@ class RmsClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -1674,7 +1726,7 @@ class RmsClient(Client):
         return self.list_providers_with_http_info(request)
 
     def list_providers_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'x_language']
+        all_params = ['x_auth_token', 'offset', 'limit', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1693,6 +1745,8 @@ class RmsClient(Client):
             query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
 
@@ -1738,7 +1792,7 @@ class RmsClient(Client):
         return self.list_resources_with_http_info(request)
 
     def list_resources_with_http_info(self, request):
-        all_params = ['provider', 'type', 'region_id', 'ep_id', 'tag', 'limit', 'marker']
+        all_params = ['x_auth_token', 'provider', 'type', 'region_id', 'ep_id', 'tag', 'limit', 'marker']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1767,6 +1821,8 @@ class RmsClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -1810,7 +1866,7 @@ class RmsClient(Client):
         return self.show_resource_by_id_with_http_info(request)
 
     def show_resource_by_id_with_http_info(self, request):
-        all_params = ['provider', 'type', 'resource_id']
+        all_params = ['x_auth_token', 'provider', 'type', 'resource_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1831,6 +1887,8 @@ class RmsClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -1874,7 +1932,7 @@ class RmsClient(Client):
         return self.create_tracker_config_with_http_info(request)
 
     def create_tracker_config_with_http_info(self, request):
-        all_params = ['tracker_config_body']
+        all_params = ['x_auth_token', 'tracker_config_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1889,6 +1947,8 @@ class RmsClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -1934,7 +1994,7 @@ class RmsClient(Client):
         return self.delete_tracker_config_with_http_info(request)
 
     def delete_tracker_config_with_http_info(self, request):
-        all_params = []
+        all_params = ['x_auth_token']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1949,6 +2009,8 @@ class RmsClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 
@@ -1992,7 +2054,7 @@ class RmsClient(Client):
         return self.show_tracker_config_with_http_info(request)
 
     def show_tracker_config_with_http_info(self, request):
-        all_params = []
+        all_params = ['x_auth_token']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2007,6 +2069,8 @@ class RmsClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_auth_token' in local_var_params:
+            header_params['X-Auth-Token'] = local_var_params['x_auth_token']
 
         form_params = {}
 

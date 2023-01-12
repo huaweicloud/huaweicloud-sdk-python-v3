@@ -22,24 +22,28 @@ class ApiBatchPublish:
     openapi_types = {
         'apis': 'list[str]',
         'env_id': 'str',
+        'group_id': 'str',
         'remark': 'str'
     }
 
     attribute_map = {
         'apis': 'apis',
         'env_id': 'env_id',
+        'group_id': 'group_id',
         'remark': 'remark'
     }
 
-    def __init__(self, apis=None, env_id=None, remark=None):
+    def __init__(self, apis=None, env_id=None, group_id=None, remark=None):
         """ApiBatchPublish
 
         The model defined in huaweicloud sdk
 
-        :param apis: 需要发布或下线的API ID列表，单次更新上限为1000个API
+        :param apis: 需要发布或下线的API ID列表，单次更新上限为1000个API。必须指定apis或group_id。
         :type apis: list[str]
         :param env_id: 环境ID
         :type env_id: str
+        :param group_id: API分组ID。必须指定apis或group_id。
+        :type group_id: str
         :param remark: 对本次发布的描述信息  字符长度不超过255 &gt; 中文字符必须为UTF-8或者unicode编码。
         :type remark: str
         """
@@ -48,13 +52,15 @@ class ApiBatchPublish:
 
         self._apis = None
         self._env_id = None
+        self._group_id = None
         self._remark = None
         self.discriminator = None
 
         if apis is not None:
             self.apis = apis
-        if env_id is not None:
-            self.env_id = env_id
+        self.env_id = env_id
+        if group_id is not None:
+            self.group_id = group_id
         if remark is not None:
             self.remark = remark
 
@@ -62,7 +68,7 @@ class ApiBatchPublish:
     def apis(self):
         """Gets the apis of this ApiBatchPublish.
 
-        需要发布或下线的API ID列表，单次更新上限为1000个API
+        需要发布或下线的API ID列表，单次更新上限为1000个API。必须指定apis或group_id。
 
         :return: The apis of this ApiBatchPublish.
         :rtype: list[str]
@@ -73,7 +79,7 @@ class ApiBatchPublish:
     def apis(self, apis):
         """Sets the apis of this ApiBatchPublish.
 
-        需要发布或下线的API ID列表，单次更新上限为1000个API
+        需要发布或下线的API ID列表，单次更新上限为1000个API。必须指定apis或group_id。
 
         :param apis: The apis of this ApiBatchPublish.
         :type apis: list[str]
@@ -101,6 +107,28 @@ class ApiBatchPublish:
         :type env_id: str
         """
         self._env_id = env_id
+
+    @property
+    def group_id(self):
+        """Gets the group_id of this ApiBatchPublish.
+
+        API分组ID。必须指定apis或group_id。
+
+        :return: The group_id of this ApiBatchPublish.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        """Sets the group_id of this ApiBatchPublish.
+
+        API分组ID。必须指定apis或group_id。
+
+        :param group_id: The group_id of this ApiBatchPublish.
+        :type group_id: str
+        """
+        self._group_id = group_id
 
     @property
     def remark(self):
