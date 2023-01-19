@@ -1,3 +1,58 @@
+# 3.1.23 2023-01-19
+
+### HuaweiCloud SDK CCM
+
+- _Features_
+  - Support the interfaces `EnableCertificateAuthorityCrl`, `DisableCertificateAuthorityCrl`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `enc_cert_info` to the interface `ListCertificate`
+  - Add the response parameter `enc_cert_info` to the interface `ShowCertificate`
+  - Changes of the interface `ExportCertificate`:
+    - Add the request parameter `is_sm_standard`
+    - Add the response parameters `enc_certificate`, `enc_private_key`, `enc_sm2_enveloped_key`
+
+### HuaweiCloud SDK DWS
+
+- _Features_
+  - Support the interfaces `ListMonitorIndicatorData`, `ListMonitorIndicators`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK HSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListRiskConfigCheckRules`:
+    - Add the response parameters `enable_fix`, `enable_click`
+    - Remove the response parameters `fix_status`, `enable_auto_fix`
+  - Add the request parameter `check_type` to the interface `ShowCheckRuleDetail`
+  - The request parameter `version`, `host_id_list` changed to required of the interface `SwitchHostsProtectStatus`
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - Support the interface `UploadBatchTaskFile`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IoTEdge
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `virtual_ipv6_address` to the interface `ShowEdgeNode`
+
 # 3.1.22 2023-01-12
 
 ### HuaweiCloud SDK APIG

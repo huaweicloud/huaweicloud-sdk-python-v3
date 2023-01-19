@@ -22,6 +22,7 @@ class ShowCheckRuleDetailRequest:
     openapi_types = {
         'enterprise_project_id': 'str',
         'check_name': 'str',
+        'check_type': 'str',
         'check_rule_id': 'str',
         'standard': 'str',
         'host_id': 'str'
@@ -30,12 +31,13 @@ class ShowCheckRuleDetailRequest:
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
         'check_name': 'check_name',
+        'check_type': 'check_type',
         'check_rule_id': 'check_rule_id',
         'standard': 'standard',
         'host_id': 'host_id'
     }
 
-    def __init__(self, enterprise_project_id=None, check_name=None, check_rule_id=None, standard=None, host_id=None):
+    def __init__(self, enterprise_project_id=None, check_name=None, check_type=None, check_rule_id=None, standard=None, host_id=None):
         """ShowCheckRuleDetailRequest
 
         The model defined in huaweicloud sdk
@@ -44,6 +46,8 @@ class ShowCheckRuleDetailRequest:
         :type enterprise_project_id: str
         :param check_name: 基线名称
         :type check_name: str
+        :param check_type: 基线类型
+        :type check_type: str
         :param check_rule_id: 检查项ID
         :type check_rule_id: str
         :param standard: 标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 华为标准   - qt_standard : 青腾标准
@@ -56,6 +60,7 @@ class ShowCheckRuleDetailRequest:
 
         self._enterprise_project_id = None
         self._check_name = None
+        self._check_type = None
         self._check_rule_id = None
         self._standard = None
         self._host_id = None
@@ -64,6 +69,7 @@ class ShowCheckRuleDetailRequest:
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         self.check_name = check_name
+        self.check_type = check_type
         self.check_rule_id = check_rule_id
         self.standard = standard
         if host_id is not None:
@@ -112,6 +118,28 @@ class ShowCheckRuleDetailRequest:
         :type check_name: str
         """
         self._check_name = check_name
+
+    @property
+    def check_type(self):
+        """Gets the check_type of this ShowCheckRuleDetailRequest.
+
+        基线类型
+
+        :return: The check_type of this ShowCheckRuleDetailRequest.
+        :rtype: str
+        """
+        return self._check_type
+
+    @check_type.setter
+    def check_type(self, check_type):
+        """Sets the check_type of this ShowCheckRuleDetailRequest.
+
+        基线类型
+
+        :param check_type: The check_type of this ShowCheckRuleDetailRequest.
+        :type check_type: str
+        """
+        self._check_type = check_type
 
     @property
     def check_rule_id(self):

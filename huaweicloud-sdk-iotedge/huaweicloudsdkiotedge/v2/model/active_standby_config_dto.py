@@ -23,17 +23,19 @@ class ActiveStandbyConfigDTO:
         'work_node': 'str',
         'master_interface_name': 'str',
         'slave_interface_name': 'str',
-        'virtual_ip_address': 'str'
+        'virtual_ip_address': 'str',
+        'virtual_ipv6_address': 'str'
     }
 
     attribute_map = {
         'work_node': 'work_node',
         'master_interface_name': 'master_interface_name',
         'slave_interface_name': 'slave_interface_name',
-        'virtual_ip_address': 'virtual_ip_address'
+        'virtual_ip_address': 'virtual_ip_address',
+        'virtual_ipv6_address': 'virtual_ipv6_address'
     }
 
-    def __init__(self, work_node=None, master_interface_name=None, slave_interface_name=None, virtual_ip_address=None):
+    def __init__(self, work_node=None, master_interface_name=None, slave_interface_name=None, virtual_ip_address=None, virtual_ipv6_address=None):
         """ActiveStandbyConfigDTO
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class ActiveStandbyConfigDTO:
         :type slave_interface_name: str
         :param virtual_ip_address: 网卡ip
         :type virtual_ip_address: str
+        :param virtual_ipv6_address: 网卡ipv6地址
+        :type virtual_ipv6_address: str
         """
         
         
@@ -54,6 +58,7 @@ class ActiveStandbyConfigDTO:
         self._master_interface_name = None
         self._slave_interface_name = None
         self._virtual_ip_address = None
+        self._virtual_ipv6_address = None
         self.discriminator = None
 
         if work_node is not None:
@@ -64,6 +69,8 @@ class ActiveStandbyConfigDTO:
             self.slave_interface_name = slave_interface_name
         if virtual_ip_address is not None:
             self.virtual_ip_address = virtual_ip_address
+        if virtual_ipv6_address is not None:
+            self.virtual_ipv6_address = virtual_ipv6_address
 
     @property
     def work_node(self):
@@ -152,6 +159,28 @@ class ActiveStandbyConfigDTO:
         :type virtual_ip_address: str
         """
         self._virtual_ip_address = virtual_ip_address
+
+    @property
+    def virtual_ipv6_address(self):
+        """Gets the virtual_ipv6_address of this ActiveStandbyConfigDTO.
+
+        网卡ipv6地址
+
+        :return: The virtual_ipv6_address of this ActiveStandbyConfigDTO.
+        :rtype: str
+        """
+        return self._virtual_ipv6_address
+
+    @virtual_ipv6_address.setter
+    def virtual_ipv6_address(self, virtual_ipv6_address):
+        """Sets the virtual_ipv6_address of this ActiveStandbyConfigDTO.
+
+        网卡ipv6地址
+
+        :param virtual_ipv6_address: The virtual_ipv6_address of this ActiveStandbyConfigDTO.
+        :type virtual_ipv6_address: str
+        """
+        self._virtual_ipv6_address = virtual_ipv6_address
 
     def to_dict(self):
         """Returns the model properties as a dict"""

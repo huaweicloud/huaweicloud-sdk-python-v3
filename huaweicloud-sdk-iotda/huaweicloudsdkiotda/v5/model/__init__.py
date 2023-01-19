@@ -227,5 +227,8 @@ from huaweicloudsdkiotda.v5.model.update_rule_action_response import UpdateRuleA
 from huaweicloudsdkiotda.v5.model.update_rule_req import UpdateRuleReq
 from huaweicloudsdkiotda.v5.model.update_rule_request import UpdateRuleRequest
 from huaweicloudsdkiotda.v5.model.update_rule_response import UpdateRuleResponse
+from huaweicloudsdkiotda.v5.model.upload_batch_task_file_request import UploadBatchTaskFileRequest
+from huaweicloudsdkiotda.v5.model.upload_batch_task_file_request_body import UploadBatchTaskFileRequestBody
+from huaweicloudsdkiotda.v5.model.upload_batch_task_file_response import UploadBatchTaskFileResponse
 from huaweicloudsdkiotda.v5.model.user_prop_dto import UserPropDTO
 from huaweicloudsdkiotda.v5.model.verify_certificate_dto import VerifyCertificateDTO

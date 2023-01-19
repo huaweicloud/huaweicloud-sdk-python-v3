@@ -128,6 +128,7 @@ from huaweicloudsdkdws.v2.model.ext_data_source_req import ExtDataSourceReq
 from huaweicloudsdkdws.v2.model.failed_reason import FailedReason
 from huaweicloudsdkdws.v2.model.fine_grained_snapshot_detail import FineGrainedSnapshotDetail
 from huaweicloudsdkdws.v2.model.host_overview_response import HostOverviewResponse
+from huaweicloudsdkdws.v2.model.indicator_info import IndicatorInfo
 from huaweicloudsdkdws.v2.model.link_copy_req import LinkCopyReq
 from huaweicloudsdkdws.v2.model.list_alarm_configs_request import ListAlarmConfigsRequest
 from huaweicloudsdkdws.v2.model.list_alarm_configs_response import ListAlarmConfigsResponse
@@ -181,6 +182,10 @@ from huaweicloudsdkdws.v2.model.list_host_overview_request import ListHostOvervi
 from huaweicloudsdkdws.v2.model.list_host_overview_response import ListHostOverviewResponse
 from huaweicloudsdkdws.v2.model.list_job_details_request import ListJobDetailsRequest
 from huaweicloudsdkdws.v2.model.list_job_details_response import ListJobDetailsResponse
+from huaweicloudsdkdws.v2.model.list_monitor_indicator_data_request import ListMonitorIndicatorDataRequest
+from huaweicloudsdkdws.v2.model.list_monitor_indicator_data_response import ListMonitorIndicatorDataResponse
+from huaweicloudsdkdws.v2.model.list_monitor_indicators_request import ListMonitorIndicatorsRequest
+from huaweicloudsdkdws.v2.model.list_monitor_indicators_response import ListMonitorIndicatorsResponse
 from huaweicloudsdkdws.v2.model.list_node_types_request import ListNodeTypesRequest
 from huaweicloudsdkdws.v2.model.list_node_types_response import ListNodeTypesResponse
 from huaweicloudsdkdws.v2.model.list_quotas_request import ListQuotasRequest
@@ -258,6 +263,8 @@ from huaweicloudsdkdws.v2.model.switchover_disaster_recovery_request import Swit
 from huaweicloudsdkdws.v2.model.switchover_disaster_recovery_response import SwitchoverDisasterRecoveryResponse
 from huaweicloudsdkdws.v2.model.tag import Tag
 from huaweicloudsdkdws.v2.model.tags import Tags
+from huaweicloudsdkdws.v2.model.trend_query_data import TrendQueryData
+from huaweicloudsdkdws.v2.model.trend_query_data_resp import TrendQueryDataResp
 from huaweicloudsdkdws.v2.model.update_alarm_sub_request import UpdateAlarmSubRequest
 from huaweicloudsdkdws.v2.model.update_alarm_sub_response import UpdateAlarmSubResponse
 from huaweicloudsdkdws.v2.model.update_cluster_dns_request import UpdateClusterDnsRequest

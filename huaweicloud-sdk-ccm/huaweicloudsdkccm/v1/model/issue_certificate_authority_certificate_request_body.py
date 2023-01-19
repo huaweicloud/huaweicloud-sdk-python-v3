@@ -42,7 +42,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
         :type issuer_id: str
         :param path_length: 路径长度。
         :type path_length: int
-        :param signature_algorithm: 签名哈希算法，可选值如下：   - **SHA256**   - **SHA384**   - **SHA512**
+        :param signature_algorithm: 签名哈希算法，可选值如下：   - **SHA256**   - **SHA384**   - **SHA512**   - **SM3**（中国站）
         :type signature_algorithm: str
         :param validity: 
         :type validity: :class:`huaweicloudsdkccm.v1.Validity`
@@ -109,7 +109,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
     def signature_algorithm(self):
         """Gets the signature_algorithm of this IssueCertificateAuthorityCertificateRequestBody.
 
-        签名哈希算法，可选值如下：   - **SHA256**   - **SHA384**   - **SHA512**
+        签名哈希算法，可选值如下：   - **SHA256**   - **SHA384**   - **SHA512**   - **SM3**（中国站）
 
         :return: The signature_algorithm of this IssueCertificateAuthorityCertificateRequestBody.
         :rtype: str
@@ -120,7 +120,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
     def signature_algorithm(self, signature_algorithm):
         """Sets the signature_algorithm of this IssueCertificateAuthorityCertificateRequestBody.
 
-        签名哈希算法，可选值如下：   - **SHA256**   - **SHA384**   - **SHA512**
+        签名哈希算法，可选值如下：   - **SHA256**   - **SHA384**   - **SHA512**   - **SM3**（中国站）
 
         :param signature_algorithm: The signature_algorithm of this IssueCertificateAuthorityCertificateRequestBody.
         :type signature_algorithm: str

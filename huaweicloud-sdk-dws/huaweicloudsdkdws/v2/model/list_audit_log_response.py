@@ -38,7 +38,7 @@ class ListAuditLogResponse(SdkResponse):
 
         :param records: 审计日志列表。
         :type records: list[:class:`huaweicloudsdkdws.v2.AuditDumpRecord`]
-        :param cluster_id: 项目ID。
+        :param cluster_id: 集群ID。
         :type cluster_id: str
         :param count: 总数。
         :type count: int
@@ -84,7 +84,7 @@ class ListAuditLogResponse(SdkResponse):
     def cluster_id(self):
         """Gets the cluster_id of this ListAuditLogResponse.
 
-        项目ID。
+        集群ID。
 
         :return: The cluster_id of this ListAuditLogResponse.
         :rtype: str
@@ -95,7 +95,7 @@ class ListAuditLogResponse(SdkResponse):
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this ListAuditLogResponse.
 
-        项目ID。
+        集群ID。
 
         :param cluster_id: The cluster_id of this ListAuditLogResponse.
         :type cluster_id: str

@@ -3069,7 +3069,7 @@ class HssClient(Client):
         return self.show_check_rule_detail_with_http_info(request)
 
     def show_check_rule_detail_with_http_info(self, request):
-        all_params = ['check_name', 'check_rule_id', 'standard', 'enterprise_project_id', 'host_id']
+        all_params = ['check_name', 'check_type', 'check_rule_id', 'standard', 'enterprise_project_id', 'host_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3086,6 +3086,8 @@ class HssClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'check_name' in local_var_params:
             query_params.append(('check_name', local_var_params['check_name']))
+        if 'check_type' in local_var_params:
+            query_params.append(('check_type', local_var_params['check_type']))
         if 'check_rule_id' in local_var_params:
             query_params.append(('check_rule_id', local_var_params['check_rule_id']))
         if 'standard' in local_var_params:

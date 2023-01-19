@@ -33,7 +33,8 @@ class Certificates:
         'delete_time': 'int',
         'not_before': 'int',
         'not_after': 'int',
-        'distinguished_name': 'DistinguishedName'
+        'distinguished_name': 'DistinguishedName',
+        'enc_cert_info': 'EncCertInfo'
     }
 
     attribute_map = {
@@ -50,10 +51,11 @@ class Certificates:
         'delete_time': 'delete_time',
         'not_before': 'not_before',
         'not_after': 'not_after',
-        'distinguished_name': 'distinguished_name'
+        'distinguished_name': 'distinguished_name',
+        'enc_cert_info': 'enc_cert_info'
     }
 
-    def __init__(self, certificate_id=None, status=None, issuer_id=None, issuer_name=None, key_algorithm=None, signature_algorithm=None, freeze_flag=None, gen_mode=None, serial_number=None, create_time=None, delete_time=None, not_before=None, not_after=None, distinguished_name=None):
+    def __init__(self, certificate_id=None, status=None, issuer_id=None, issuer_name=None, key_algorithm=None, signature_algorithm=None, freeze_flag=None, gen_mode=None, serial_number=None, create_time=None, delete_time=None, not_before=None, not_after=None, distinguished_name=None, enc_cert_info=None):
         """Certificates
 
         The model defined in huaweicloud sdk
@@ -86,6 +88,8 @@ class Certificates:
         :type not_after: int
         :param distinguished_name: 
         :type distinguished_name: :class:`huaweicloudsdkccm.v1.DistinguishedName`
+        :param enc_cert_info: 
+        :type enc_cert_info: :class:`huaweicloudsdkccm.v1.EncCertInfo`
         """
         
         
@@ -104,6 +108,7 @@ class Certificates:
         self._not_before = None
         self._not_after = None
         self._distinguished_name = None
+        self._enc_cert_info = None
         self.discriminator = None
 
         self.certificate_id = certificate_id
@@ -120,6 +125,8 @@ class Certificates:
         self.not_before = not_before
         self.not_after = not_after
         self.distinguished_name = distinguished_name
+        if enc_cert_info is not None:
+            self.enc_cert_info = enc_cert_info
 
     @property
     def certificate_id(self):
@@ -424,6 +431,24 @@ class Certificates:
         :type distinguished_name: :class:`huaweicloudsdkccm.v1.DistinguishedName`
         """
         self._distinguished_name = distinguished_name
+
+    @property
+    def enc_cert_info(self):
+        """Gets the enc_cert_info of this Certificates.
+
+        :return: The enc_cert_info of this Certificates.
+        :rtype: :class:`huaweicloudsdkccm.v1.EncCertInfo`
+        """
+        return self._enc_cert_info
+
+    @enc_cert_info.setter
+    def enc_cert_info(self, enc_cert_info):
+        """Sets the enc_cert_info of this Certificates.
+
+        :param enc_cert_info: The enc_cert_info of this Certificates.
+        :type enc_cert_info: :class:`huaweicloudsdkccm.v1.EncCertInfo`
+        """
+        self._enc_cert_info = enc_cert_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

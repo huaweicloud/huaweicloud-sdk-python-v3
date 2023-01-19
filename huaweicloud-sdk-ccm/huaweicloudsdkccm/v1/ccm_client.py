@@ -300,23 +300,204 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def disable_certificate_authority_crl(self, request):
+        """禁用CRL
+
+        禁用当前CA的CRL。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DisableCertificateAuthorityCrl
+        :type request: :class:`huaweicloudsdkccm.v1.DisableCertificateAuthorityCrlRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.DisableCertificateAuthorityCrlResponse`
+        """
+        return self.disable_certificate_authority_crl_with_http_info(request)
+
+    def disable_certificate_authority_crl_with_http_info(self, request):
+        all_params = ['ca_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ca_id' in local_var_params:
+            path_params['ca_id'] = local_var_params['ca_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/private-certificate-authorities/{ca_id}/crl/disable',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DisableCertificateAuthorityCrlResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def enable_certificate_authority_crl(self, request):
+        """启用CRL
+
+        启用当前CA的CRL。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for EnableCertificateAuthorityCrl
+        :type request: :class:`huaweicloudsdkccm.v1.EnableCertificateAuthorityCrlRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.EnableCertificateAuthorityCrlResponse`
+        """
+        return self.enable_certificate_authority_crl_with_http_info(request)
+
+    def enable_certificate_authority_crl_with_http_info(self, request):
+        all_params = ['ca_id', 'enable_certificate_authority_crl_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ca_id' in local_var_params:
+            path_params['ca_id'] = local_var_params['ca_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/private-certificate-authorities/{ca_id}/crl/enable',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='EnableCertificateAuthorityCrlResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def export_certificate(self, request):
         """导出证书
 
         导出证书。
-          - 选择是否压缩时，分以下两种情况：
-            - is_compressed为true时，返回文件压缩包，命名为：证书名称_type字段小写字母.zip，如”test_apache.zip“。
-              - type &#x3D; \&quot;**APACHE**\&quot;时，压缩包中包含三个文件：**server.key**（密钥文件，内容为PEM格式）、**chain.crt**（证书链，内容为PEM格式）、**server.crt**（证书，内容为PEM格式）；
-              - type &#x3D; \&quot;**IIS**\&quot;时，压缩包中包含两个文件：**keystorePass.txt**（keystore口令）、**server.pfx**（PFX证书，证书与证书链包含在同一个文件）；
-              - type &#x3D; \&quot;**NGINX**\&quot;时，压缩包中包含两个文件：**server.key**（密钥文件，内容为PEM格式）、**server.crt**（内容为PEM格式，证书与证书链包含在同一个文件）；
-              - type &#x3D; \&quot;**TOMCAT**\&quot;时，压缩包中包含两个文件：**keystorePass.txt**（keystore口令）、**server.jks**（JKX证书，证书与证书链包含在同一个文件）；
-              - type &#x3D; \&quot;**OTHER**\&quot;时，压缩包中包含三个文件：**server.key**（密钥文件，内容为PEM格式）、**chain.pem**（证书链）、**server.pem**（证书）。
-            - is_compressed为false时，返回json格式，返回的具体参数如下：
-              - type &#x3D; \&quot;**APACHE**\&quot;或\&quot;**NGINX**\&quot;或\&quot;**OTHER**\&quot;时，返回参数如下：
-                - **certificate**（证书内容，PEM格式）；
-                - **certificate_chain**（证书链，PEM格式）；
-                - **private_key**（证书私钥，PEM格式）；
-              - type &#x3D; \&quot;**IIS**\&quot;或\&quot;**TOMCAT**\&quot;时，暂时未定义。
+          - 国际算法
+            - 选择是否压缩时，分以下两种情况：
+              - is_compressed为true时，返回文件压缩包，命名为：证书名称_type字段小写字母.zip，如”test_apache.zip“。
+                - 系统生成密钥签发证书
+                  - type &#x3D; \&quot;**APACHE**\&quot;时，压缩包中包含三个文件：**server.key**（密钥文件，内容为PEM格式）、**chain.crt**（证书链，内容为PEM格式）、**server.crt**（证书，内容为PEM格式）；
+                  - type &#x3D; \&quot;**IIS**\&quot;时，压缩包中包含两个文件：**keystorePass.txt**（keystore口令）、**server.pfx**（PFX证书，证书与证书链包含在同一个文件）；
+                  - type &#x3D; \&quot;**NGINX**\&quot;时，压缩包中包含两个文件：**server.key**（密钥文件，内容为PEM格式）、**server.crt**（内容为PEM格式，证书与证书链包含在同一个文件）；
+                  - type &#x3D; \&quot;**TOMCAT**\&quot;时，压缩包中包含两个文件：**keystorePass.txt**（keystore口令）、**server.jks**（JKX证书，证书与证书链包含在同一个文件）；
+                  - type &#x3D; \&quot;**OTHER**\&quot;时，压缩包中包含三个文件：**server.key**（密钥文件，内容为PEM格式）、**chain.pem**（证书链）、**server.pem**（证书）。
+                - 导入CSR签发证书
+                  - type &#x3D; \&quot;**APACHE**\&quot;或\&quot;**IIS**\&quot;或\&quot;**TOMCAT**\&quot;时，压缩包中包含两个文件：**chain.crt**（证书链，内容为PEM格式）、**server.crt**（证书，内容为PEM格式）；
+                  - type &#x3D; \&quot;**NGINX**\&quot;时，压缩包中包含一个文件：**server.crt**（证书，内容为PEM格式）；
+                  - type &#x3D; \&quot;**OTHER**\&quot;时，压缩包中包含两个文件：**chain.pem**（证书链，内容为PEM格式）、**cert.pem**（证书，内容为PEM格式）。
+              - is_compressed为false时，返回json格式，返回的具体参数如下：
+                - 系统生成密钥签发证书
+                  - type &#x3D; \&quot;**APACHE**\&quot;或\&quot;**NGINX**\&quot;或\&quot;**OTHER**\&quot;时，返回参数如下：
+                    - **certificate**（证书内容，PEM格式）；
+                    - **certificate_chain**（证书链，PEM格式）；
+                    - **private_key**（证书私钥，PEM格式）；
+                  - type &#x3D; \&quot;**IIS**\&quot;或\&quot;**TOMCAT**\&quot;时，暂时未定义。
+                - 导入CSR签发证书
+                  - type &#x3D; \&quot;**APACHE**\&quot;或\&quot;**NGINX**\&quot;或\&quot;**IIS**\&quot;或\&quot;**TOMCAT**\&quot;或\&quot;**OTHER**\&quot;时，返回参数如下：
+                    - **certificate**（证书内容，PEM格式）；
+                    - **certificate_chain**（证书链，PEM格式）；
+          - 国密算法（中国站）
+            - 选择是否压缩和是否国密标准时，分以下四种情况：
+              - is_compressed为true、is_sm_standard为true时，返回文件压缩包，命名为：证书名称_type字段小写字母.zip，如”test_apache.zip“。
+                - 系统生成密钥签发证书
+                  - type &#x3D; \&quot;**APACHE**\&quot;或\&quot;**IIS**\&quot;或\&quot;**NGINX**\&quot;或\&quot;**TOMCAT**\&quot;时，暂时未定义；
+                  - type &#x3D; \&quot;**OTHER**\&quot;时，压缩包中包含五个文件：**chain.pem**（证书链，内容为PEM格式）、**signCert.key**（签名证书密钥文件，内容为PEM格式）、**signCert.pem**（签名证书，内容为PEM格式）、**encSm2EnvelopedKey.key**（加密证书的国密标准SM2数字信封文件，内容为BASE64编码）、**encCert.pem**（加密证书，内容为PEM格式）。
+                - 导入CSR签发证书
+                  - type &#x3D; \&quot;**APACHE**\&quot;或\&quot;**IIS**\&quot;或\&quot;**NGINX**\&quot;或\&quot;**TOMCAT**\&quot;时，暂时未定义；
+                  - type &#x3D; \&quot;**OTHER**\&quot;时，压缩包中包含四个文件：**chain.pem**（证书链，内容为PEM格式）、**signCert.pem**（签名证书，内容为PEM格式）、**encSm2EnvelopedKey.key**（加密证书的国密标准SM2数字信封文件，内容为BASE64编码）、**encCert.pem**（加密证书，内容为PEM格式）。
+              - is_compressed为true、is_sm_standard为false时，返回文件压缩包，命名为：证书名称_type字段小写字母.zip，如”test_apache.zip“。
+                - 系统生成密钥签发证书
+                  - type &#x3D; \&quot;**APACHE**\&quot;或\&quot;**IIS**\&quot;或\&quot;**NGINX**\&quot;或\&quot;**TOMCAT**\&quot;时，暂时未定义；
+                  - type &#x3D; \&quot;**OTHER**\&quot;时，压缩包中包含五个文件：**chain.pem**（证书链，内容为PEM格式）、**signCert.key**（签名证书密钥文件，内容为PEM格式）、**signCert.pem**（签名证书，内容为PEM格式）、**encCert.key**（加密证书密钥文件，内容为PEM格式）、**encCert.pem**（加密证书，内容为PEM格式）。
+                - 导入CSR签发证书
+                  - type &#x3D; \&quot;**APACHE**\&quot;或\&quot;**IIS**\&quot;或\&quot;**NGINX**\&quot;或\&quot;**TOMCAT**\&quot;时，暂时未定义；
+                  - type &#x3D; \&quot;**OTHER**\&quot;时，压缩包中包含四个文件：**chain.pem**（证书链，内容为PEM格式）、**signCert.pem**（签名证书，内容为PEM格式）、**encCert.key**（加密证书密钥文件，内容为PEM格式）、**encCert.pem**（加密证书，内容为PEM格式）。
+              - is_compressed为false、is_sm_standard为true时，返回json格式，返回的具体参数如下：
+                - 系统生成密钥签发证书
+                  - type &#x3D; \&quot;**APACHE**\&quot;或\&quot;**IIS**\&quot;或\&quot;**NGINX**\&quot;或\&quot;**TOMCAT**\&quot;时，暂时未定义；
+                  - type &#x3D; \&quot;**OTHER**\&quot;时，返回参数如下：
+                    - **certificate_chain**（证书链，PEM格式）；
+                    - **certificate**（签名证书内容，PEM格式）；
+                    - **private_key**（签名证书私钥，PEM格式）；
+                    - **enc_certificate**（加密证书内容，PEM格式）；
+                    - **enc_sm2_enveloped_key**（加密证书的国密GMT0009标准规范SM2数字信封文件，BASE64编码）。
+                - 导入CSR签发证书
+                  - type &#x3D; \&quot;**APACHE**\&quot;或\&quot;**IIS**\&quot;或\&quot;**NGINX**\&quot;或\&quot;**TOMCAT**\&quot;时，暂时未定义；
+                  - type &#x3D; \&quot;**OTHER**\&quot;时，返回参数如下：
+                    - **certificate_chain**（证书链，PEM格式）；
+                    - **certificate**（签名证书内容，PEM格式）；
+                    - **enc_certificate**（加密证书内容，PEM格式）；
+                    - **enc_sm2_enveloped_key**（加密证书的国密GMT0009标准规范SM2数字信封文件，BASE64编码）。
+              - is_compressed为false、is_sm_standard为false时，返回json格式，返回的具体参数如下：
+                - 系统生成密钥签发证书
+                  - type &#x3D; \&quot;**APACHE**\&quot;或\&quot;**IIS**\&quot;或\&quot;**NGINX**\&quot;或\&quot;**TOMCAT**\&quot;时，暂时未定义；
+                  - type &#x3D; \&quot;**OTHER**\&quot;时，返回参数如下：
+                    - **certificate_chain**（证书链，PEM格式）；
+                    - **certificate**（签名证书内容，PEM格式）；
+                    - **private_key**（签名证书私钥，PEM格式）；
+                    - **enc_certificate**（加密证书内容，PEM格式）；
+                    - **enc_private_key**（加密证书私钥，PEM格式）。
+                - 导入CSR签发证书
+                  - type &#x3D; \&quot;**APACHE**\&quot;或\&quot;**IIS**\&quot;或\&quot;**NGINX**\&quot;或\&quot;**TOMCAT**\&quot;时，暂时未定义；
+                  - type &#x3D; \&quot;**OTHER**\&quot;时，返回参数如下：
+                    - **certificate_chain**（证书链，PEM格式）；
+                    - **certificate**（签名证书内容，PEM格式）；
+                    - **enc_certificate**（加密证书内容，PEM格式）；
+                    - **enc_private_key**（加密证书私钥，PEM格式）。
         &gt; 只有当证书状态为“已签发”时，可进行导出操作。
         
         Please refer to HUAWEI cloud API Explorer for details.

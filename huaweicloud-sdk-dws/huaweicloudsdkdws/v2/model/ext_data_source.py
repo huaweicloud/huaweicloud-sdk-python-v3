@@ -62,7 +62,7 @@ class ExtDataSource:
 
         :param id: id。
         :type id: str
-        :param name: 项目ID。
+        :param name: 数据源名称。
         :type name: str
         :param type: 类型。
         :type type: str
@@ -168,7 +168,7 @@ class ExtDataSource:
     def name(self):
         """Gets the name of this ExtDataSource.
 
-        项目ID。
+        数据源名称。
 
         :return: The name of this ExtDataSource.
         :rtype: str
@@ -179,7 +179,7 @@ class ExtDataSource:
     def name(self, name):
         """Sets the name of this ExtDataSource.
 
-        项目ID。
+        数据源名称。
 
         :param name: The name of this ExtDataSource.
         :type name: str

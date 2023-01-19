@@ -40,15 +40,15 @@ class SwitchHostsProtectStatusRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param version: 主机开通的版本，包含如下:   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
+        :param version: 主机开通的版本，包含如下:   - hss.version.null ：无，代表关闭防护。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
         :type version: str
-        :param charging_mode: 付费模式   - packet_cycle : 包周期   - on_demand : 按需
+        :param charging_mode: 付费模式，当version不为“hss.version.null”时，则需必填该参数   - packet_cycle : 包周期   - on_demand : 按需
         :type charging_mode: str
-        :param resource_id: 资源实例ID
+        :param resource_id: HSS配额ID，不填该参数时，则随机选择对应版本配额
         :type resource_id: str
         :param host_id_list: 服务器列表
         :type host_id_list: list[str]
-        :param tags: 资源标签
+        :param tags: 资源标签列表
         :type tags: list[:class:`huaweicloudsdkhss.v5.TagInfo`]
         """
         
@@ -61,14 +61,12 @@ class SwitchHostsProtectStatusRequestInfo:
         self._tags = None
         self.discriminator = None
 
-        if version is not None:
-            self.version = version
+        self.version = version
         if charging_mode is not None:
             self.charging_mode = charging_mode
         if resource_id is not None:
             self.resource_id = resource_id
-        if host_id_list is not None:
-            self.host_id_list = host_id_list
+        self.host_id_list = host_id_list
         if tags is not None:
             self.tags = tags
 
@@ -76,7 +74,7 @@ class SwitchHostsProtectStatusRequestInfo:
     def version(self):
         """Gets the version of this SwitchHostsProtectStatusRequestInfo.
 
-        主机开通的版本，包含如下:   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
+        主机开通的版本，包含如下:   - hss.version.null ：无，代表关闭防护。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
 
         :return: The version of this SwitchHostsProtectStatusRequestInfo.
         :rtype: str
@@ -87,7 +85,7 @@ class SwitchHostsProtectStatusRequestInfo:
     def version(self, version):
         """Sets the version of this SwitchHostsProtectStatusRequestInfo.
 
-        主机开通的版本，包含如下:   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
+        主机开通的版本，包含如下:   - hss.version.null ：无，代表关闭防护。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
 
         :param version: The version of this SwitchHostsProtectStatusRequestInfo.
         :type version: str
@@ -98,7 +96,7 @@ class SwitchHostsProtectStatusRequestInfo:
     def charging_mode(self):
         """Gets the charging_mode of this SwitchHostsProtectStatusRequestInfo.
 
-        付费模式   - packet_cycle : 包周期   - on_demand : 按需
+        付费模式，当version不为“hss.version.null”时，则需必填该参数   - packet_cycle : 包周期   - on_demand : 按需
 
         :return: The charging_mode of this SwitchHostsProtectStatusRequestInfo.
         :rtype: str
@@ -109,7 +107,7 @@ class SwitchHostsProtectStatusRequestInfo:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this SwitchHostsProtectStatusRequestInfo.
 
-        付费模式   - packet_cycle : 包周期   - on_demand : 按需
+        付费模式，当version不为“hss.version.null”时，则需必填该参数   - packet_cycle : 包周期   - on_demand : 按需
 
         :param charging_mode: The charging_mode of this SwitchHostsProtectStatusRequestInfo.
         :type charging_mode: str
@@ -120,7 +118,7 @@ class SwitchHostsProtectStatusRequestInfo:
     def resource_id(self):
         """Gets the resource_id of this SwitchHostsProtectStatusRequestInfo.
 
-        资源实例ID
+        HSS配额ID，不填该参数时，则随机选择对应版本配额
 
         :return: The resource_id of this SwitchHostsProtectStatusRequestInfo.
         :rtype: str
@@ -131,7 +129,7 @@ class SwitchHostsProtectStatusRequestInfo:
     def resource_id(self, resource_id):
         """Sets the resource_id of this SwitchHostsProtectStatusRequestInfo.
 
-        资源实例ID
+        HSS配额ID，不填该参数时，则随机选择对应版本配额
 
         :param resource_id: The resource_id of this SwitchHostsProtectStatusRequestInfo.
         :type resource_id: str
@@ -164,7 +162,7 @@ class SwitchHostsProtectStatusRequestInfo:
     def tags(self):
         """Gets the tags of this SwitchHostsProtectStatusRequestInfo.
 
-        资源标签
+        资源标签列表
 
         :return: The tags of this SwitchHostsProtectStatusRequestInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.TagInfo`]
@@ -175,7 +173,7 @@ class SwitchHostsProtectStatusRequestInfo:
     def tags(self, tags):
         """Sets the tags of this SwitchHostsProtectStatusRequestInfo.
 
-        资源标签
+        资源标签列表
 
         :param tags: The tags of this SwitchHostsProtectStatusRequestInfo.
         :type tags: list[:class:`huaweicloudsdkhss.v5.TagInfo`]

@@ -1,3 +1,58 @@
+# 3.1.23 2023-01-19
+
+### HuaweiCloud SDK CCM
+
+- _新增特性_
+  - 支持接口`EnableCertificateAuthorityCrl`、`DisableCertificateAuthorityCrl`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListCertificate`新增响应参数 `enc_cert_info`
+  - 接口`ShowCertificate`新增响应参数 `enc_cert_info`
+  - 接口`ExportCertificate`:
+    - 新增请求参数 `is_sm_standard`
+    - 新增响应参数 `enc_certificate`、`enc_private_key`、`enc_sm2_enveloped_key`
+
+### HuaweiCloud SDK DWS
+
+- _新增特性_
+  - 支持接口`ListMonitorIndicatorData`、`ListMonitorIndicators`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK HSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListRiskConfigCheckRules`:
+    - 新增响应参数 `enable_fix`、`enable_click`
+    - 移除响应参数 `fix_status`、`enable_auto_fix`
+  - 接口`ShowCheckRuleDetail`新增请求参数 `check_type`
+  - 接口`SwitchHostsProtectStatus`请求参数`version`、`host_id_list`改为必填
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 支持接口`UploadBatchTaskFile`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IoTEdge
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowEdgeNode`新增响应参数 `virtual_ipv6_address`
+
 # 3.1.22 2023-01-12
 
 ### HuaweiCloud SDK APIG

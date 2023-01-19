@@ -54,7 +54,7 @@ class ListCertificateAuthorityRequest:
         :type status: str
         :param type: CA证书类型： - **ROOT** : 根CA证书 - **SUBORDINATE** : 从属CA证书
         :type type: str
-        :param sort_key: 排序属性，目前支持以下属性： - **create_time** : 证书创建时间（默认） - **common_name** : 证书名称 - **ca_type** : CA证书类型 - **not_after** : 证书到期时间
+        :param sort_key: 排序属性，目前支持以下属性： - **create_time** : 证书创建时间（默认） - **common_name** : 证书名称 - **type** : CA证书类型 - **not_after** : 证书到期时间
         :type sort_key: str
         :param sort_dir: 排序方向，支持以下值： - **DESC** : 降序（默认） - **ASC** : 升序
         :type sort_dir: str
@@ -200,7 +200,7 @@ class ListCertificateAuthorityRequest:
     def sort_key(self):
         """Gets the sort_key of this ListCertificateAuthorityRequest.
 
-        排序属性，目前支持以下属性： - **create_time** : 证书创建时间（默认） - **common_name** : 证书名称 - **ca_type** : CA证书类型 - **not_after** : 证书到期时间
+        排序属性，目前支持以下属性： - **create_time** : 证书创建时间（默认） - **common_name** : 证书名称 - **type** : CA证书类型 - **not_after** : 证书到期时间
 
         :return: The sort_key of this ListCertificateAuthorityRequest.
         :rtype: str
@@ -211,7 +211,7 @@ class ListCertificateAuthorityRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListCertificateAuthorityRequest.
 
-        排序属性，目前支持以下属性： - **create_time** : 证书创建时间（默认） - **common_name** : 证书名称 - **ca_type** : CA证书类型 - **not_after** : 证书到期时间
+        排序属性，目前支持以下属性： - **create_time** : 证书创建时间（默认） - **common_name** : 证书名称 - **type** : CA证书类型 - **not_after** : 证书到期时间
 
         :param sort_key: The sort_key of this ListCertificateAuthorityRequest.
         :type sort_key: str

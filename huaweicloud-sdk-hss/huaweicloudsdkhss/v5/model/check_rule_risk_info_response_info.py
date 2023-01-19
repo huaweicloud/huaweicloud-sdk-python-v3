@@ -29,8 +29,8 @@ class CheckRuleRiskInfoResponseInfo:
         'host_num': 'int',
         'scan_result': 'str',
         'status': 'str',
-        'fix_status': 'str',
-        'enable_auto_fix': 'bool',
+        'enable_fix': 'int',
+        'enable_click': 'bool',
         'rule_params': 'list[CheckRuleFixParamInfo]'
     }
 
@@ -44,12 +44,12 @@ class CheckRuleRiskInfoResponseInfo:
         'host_num': 'host_num',
         'scan_result': 'scan_result',
         'status': 'status',
-        'fix_status': 'fix_status',
-        'enable_auto_fix': 'enable_auto_fix',
+        'enable_fix': 'enable_fix',
+        'enable_click': 'enable_click',
         'rule_params': 'rule_params'
     }
 
-    def __init__(self, severity=None, check_name=None, check_type=None, standard=None, check_rule_name=None, check_rule_id=None, host_num=None, scan_result=None, status=None, fix_status=None, enable_auto_fix=None, rule_params=None):
+    def __init__(self, severity=None, check_name=None, check_type=None, standard=None, check_rule_name=None, check_rule_id=None, host_num=None, scan_result=None, status=None, enable_fix=None, enable_click=None, rule_params=None):
         """CheckRuleRiskInfoResponseInfo
 
         The model defined in huaweicloud sdk
@@ -70,12 +70,12 @@ class CheckRuleRiskInfoResponseInfo:
         :type host_num: int
         :param scan_result: 检测结果，包含如下：   - pass   - failed
         :type scan_result: str
-        :param status: 状态，包含如下：   - safe : 无需处理   - ignored : 已忽略   - unhandled : 未处理
+        :param status: 状态，包含如下：   - safe : 无需处理   - ignored : 已忽略   - unhandled : 未处理   - fixing : 修复中   - fix-failed : 修复失败   - verifying : 验证中
         :type status: str
-        :param fix_status: 修复状态，包含如下：   - fixing :正在修复中   - fix_failed :修复失败   - fix_success :修复成功
-        :type fix_status: str
-        :param enable_auto_fix: 是否支持一键修复
-        :type enable_auto_fix: bool
+        :param enable_fix: 是否支持一键修复,1:支持一键修复,0:不支持
+        :type enable_fix: int
+        :param enable_click: 该检查项的修复&amp;忽略&amp;验证按钮是否可点击,true:按钮可点击,false:按钮不可点击
+        :type enable_click: bool
         :param rule_params: 支持传递参数修复的检查项可传递参数的范围
         :type rule_params: list[:class:`huaweicloudsdkhss.v5.CheckRuleFixParamInfo`]
         """
@@ -91,8 +91,8 @@ class CheckRuleRiskInfoResponseInfo:
         self._host_num = None
         self._scan_result = None
         self._status = None
-        self._fix_status = None
-        self._enable_auto_fix = None
+        self._enable_fix = None
+        self._enable_click = None
         self._rule_params = None
         self.discriminator = None
 
@@ -114,10 +114,10 @@ class CheckRuleRiskInfoResponseInfo:
             self.scan_result = scan_result
         if status is not None:
             self.status = status
-        if fix_status is not None:
-            self.fix_status = fix_status
-        if enable_auto_fix is not None:
-            self.enable_auto_fix = enable_auto_fix
+        if enable_fix is not None:
+            self.enable_fix = enable_fix
+        if enable_click is not None:
+            self.enable_click = enable_click
         if rule_params is not None:
             self.rule_params = rule_params
 
@@ -301,7 +301,7 @@ class CheckRuleRiskInfoResponseInfo:
     def status(self):
         """Gets the status of this CheckRuleRiskInfoResponseInfo.
 
-        状态，包含如下：   - safe : 无需处理   - ignored : 已忽略   - unhandled : 未处理
+        状态，包含如下：   - safe : 无需处理   - ignored : 已忽略   - unhandled : 未处理   - fixing : 修复中   - fix-failed : 修复失败   - verifying : 验证中
 
         :return: The status of this CheckRuleRiskInfoResponseInfo.
         :rtype: str
@@ -312,7 +312,7 @@ class CheckRuleRiskInfoResponseInfo:
     def status(self, status):
         """Sets the status of this CheckRuleRiskInfoResponseInfo.
 
-        状态，包含如下：   - safe : 无需处理   - ignored : 已忽略   - unhandled : 未处理
+        状态，包含如下：   - safe : 无需处理   - ignored : 已忽略   - unhandled : 未处理   - fixing : 修复中   - fix-failed : 修复失败   - verifying : 验证中
 
         :param status: The status of this CheckRuleRiskInfoResponseInfo.
         :type status: str
@@ -320,48 +320,48 @@ class CheckRuleRiskInfoResponseInfo:
         self._status = status
 
     @property
-    def fix_status(self):
-        """Gets the fix_status of this CheckRuleRiskInfoResponseInfo.
+    def enable_fix(self):
+        """Gets the enable_fix of this CheckRuleRiskInfoResponseInfo.
 
-        修复状态，包含如下：   - fixing :正在修复中   - fix_failed :修复失败   - fix_success :修复成功
+        是否支持一键修复,1:支持一键修复,0:不支持
 
-        :return: The fix_status of this CheckRuleRiskInfoResponseInfo.
-        :rtype: str
+        :return: The enable_fix of this CheckRuleRiskInfoResponseInfo.
+        :rtype: int
         """
-        return self._fix_status
+        return self._enable_fix
 
-    @fix_status.setter
-    def fix_status(self, fix_status):
-        """Sets the fix_status of this CheckRuleRiskInfoResponseInfo.
+    @enable_fix.setter
+    def enable_fix(self, enable_fix):
+        """Sets the enable_fix of this CheckRuleRiskInfoResponseInfo.
 
-        修复状态，包含如下：   - fixing :正在修复中   - fix_failed :修复失败   - fix_success :修复成功
+        是否支持一键修复,1:支持一键修复,0:不支持
 
-        :param fix_status: The fix_status of this CheckRuleRiskInfoResponseInfo.
-        :type fix_status: str
+        :param enable_fix: The enable_fix of this CheckRuleRiskInfoResponseInfo.
+        :type enable_fix: int
         """
-        self._fix_status = fix_status
+        self._enable_fix = enable_fix
 
     @property
-    def enable_auto_fix(self):
-        """Gets the enable_auto_fix of this CheckRuleRiskInfoResponseInfo.
+    def enable_click(self):
+        """Gets the enable_click of this CheckRuleRiskInfoResponseInfo.
 
-        是否支持一键修复
+        该检查项的修复&忽略&验证按钮是否可点击,true:按钮可点击,false:按钮不可点击
 
-        :return: The enable_auto_fix of this CheckRuleRiskInfoResponseInfo.
+        :return: The enable_click of this CheckRuleRiskInfoResponseInfo.
         :rtype: bool
         """
-        return self._enable_auto_fix
+        return self._enable_click
 
-    @enable_auto_fix.setter
-    def enable_auto_fix(self, enable_auto_fix):
-        """Sets the enable_auto_fix of this CheckRuleRiskInfoResponseInfo.
+    @enable_click.setter
+    def enable_click(self, enable_click):
+        """Sets the enable_click of this CheckRuleRiskInfoResponseInfo.
 
-        是否支持一键修复
+        该检查项的修复&忽略&验证按钮是否可点击,true:按钮可点击,false:按钮不可点击
 
-        :param enable_auto_fix: The enable_auto_fix of this CheckRuleRiskInfoResponseInfo.
-        :type enable_auto_fix: bool
+        :param enable_click: The enable_click of this CheckRuleRiskInfoResponseInfo.
+        :type enable_click: bool
         """
-        self._enable_auto_fix = enable_auto_fix
+        self._enable_click = enable_click
 
     @property
     def rule_params(self):

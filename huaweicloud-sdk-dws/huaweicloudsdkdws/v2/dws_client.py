@@ -3683,6 +3683,136 @@ class DwsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_monitor_indicator_data(self, request):
+        """openApi查询历史监控数据
+
+        openApi查询历史监控数据
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListMonitorIndicatorData
+        :type request: :class:`huaweicloudsdkdws.v2.ListMonitorIndicatorDataRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListMonitorIndicatorDataResponse`
+        """
+        return self.list_monitor_indicator_data_with_http_info(request)
+
+    def list_monitor_indicator_data_with_http_info(self, request):
+        all_params = ['_from', 'to', 'indicator_name', 'dim0', 'function', 'period', 'dim1']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'function' in local_var_params:
+            query_params.append(('function', local_var_params['function']))
+        if 'period' in local_var_params:
+            query_params.append(('period', local_var_params['period']))
+        if 'indicator_name' in local_var_params:
+            query_params.append(('indicator_name', local_var_params['indicator_name']))
+        if 'dim0' in local_var_params:
+            query_params.append(('dim0', local_var_params['dim0']))
+        if 'dim1' in local_var_params:
+            query_params.append(('dim1', local_var_params['dim1']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/dms/metric-data',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListMonitorIndicatorDataResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_monitor_indicators(self, request):
+        """openApi查询性能监控指标
+
+        openApi查询性能监控指标
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListMonitorIndicators
+        :type request: :class:`huaweicloudsdkdws.v2.ListMonitorIndicatorsRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListMonitorIndicatorsResponse`
+        """
+        return self.list_monitor_indicators_with_http_info(request)
+
+    def list_monitor_indicators_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/dms/metric-data/indicators',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListMonitorIndicatorsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_node_types(self, request):
         """查询节点类型
 

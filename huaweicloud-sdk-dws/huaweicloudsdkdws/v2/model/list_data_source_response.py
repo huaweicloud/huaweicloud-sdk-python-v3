@@ -44,7 +44,7 @@ class ListDataSourceResponse(SdkResponse):
         :type data_sources: list[:class:`huaweicloudsdkdws.v2.ExtDataSource`]
         :param project_id: 项目ID。
         :type project_id: str
-        :param cluster_id: 项目ID。
+        :param cluster_id: 集群ID。
         :type cluster_id: str
         :param type: 数据源类型。
         :type type: str
@@ -120,7 +120,7 @@ class ListDataSourceResponse(SdkResponse):
     def cluster_id(self):
         """Gets the cluster_id of this ListDataSourceResponse.
 
-        项目ID。
+        集群ID。
 
         :return: The cluster_id of this ListDataSourceResponse.
         :rtype: str
@@ -131,7 +131,7 @@ class ListDataSourceResponse(SdkResponse):
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this ListDataSourceResponse.
 
-        项目ID。
+        集群ID。
 
         :param cluster_id: The cluster_id of this ListDataSourceResponse.
         :type cluster_id: str
