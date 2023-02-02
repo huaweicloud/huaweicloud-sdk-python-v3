@@ -1,3 +1,99 @@
+# 3.1.24 2023-02-02
+
+### HuaweiCloud SDK AOS
+
+- _新增特性_
+  - 支持接口`UpdateStack`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ApplyExecutionPlan`新增请求参数 `executor`
+  - 接口`ListStackEvents`:
+    - 新增请求参数 `filter`、`field`
+    - 移除响应参数 `resource_id_key`、`resource_id_value`、`resource_name`、`resource_type`、`time`、`event_type`、`event_message`、`elapsed_seconds`
+  - 接口`GetStackMetadata`响应参数`stack_name`改为必填
+  - 接口`CreateStack`新增请求参数 `executor`
+  - 接口`ListStackResources`:
+    - 新增响应参数 `index_key`
+    - 响应参数`resource_status`移除枚举值`DELETION_SKIPPED`
+  - 接口`DeployStack`新增请求参数 `executor`
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RenewalResources`新增响应参数 `fail_resource_infos`
+  - 接口`CancelResourcesSubscription`新增响应参数 `fail_resource_infos`
+
+### HuaweiCloud SDK CloudPipeline
+
+- _新增特性_
+  - 支持以下接口：
+    - `RunPipeline`
+    - `BatchShowPipelinesLatestStatus`
+    - `ShowPipelineRunDetail`
+    - `ListPipelines`
+    - `DeletePipeline`
+    - `StopPipelineRun`
+    - `ListPipelineRuns`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateInstance`请求参数`type`新增枚举值`GaussDB`
+  - 接口`ListInstances`请求参数`datastore_type`新增枚举值`GaussDB`
+  - 接口`ListBackups`响应参数`type`新增枚举值`GaussDB`
+
+### HuaweiCloud SDK GSL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListBackPools`新增请求参数 `all_billing_cycle`
+  - 接口`ListSimPools`新增请求参数 `all_billing_cycle`
+
+### HuaweiCloud SDK IMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateImage`请求参数`type`新增枚举值`IsoImage`
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 支持接口`CreateInstanceByEngine`、`ShowEngineInstanceExtendProductInfo`、`ResizeEngineInstance`、`CreateReassignmentTask`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListInstances`新增响应参数 `sasl_enabled_mechanisms`
+  - 接口`CreatePostPaidInstance`请求参数`kafka_manager_user`、`kafka_manager_password`改为非必填
+  - 接口`ShowInstance`新增响应参数 `sasl_enabled_mechanisms`
+
+### HuaweiCloud SDK Moderation
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RunTextModeration`新增请求参数 `white_glossaries`
+
 # 3.1.23 2023-01-19
 
 ### HuaweiCloud SDK CCM

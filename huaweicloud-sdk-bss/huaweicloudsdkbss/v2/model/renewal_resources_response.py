@@ -20,29 +20,36 @@ class RenewalResourcesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'order_ids': 'list[str]'
+        'order_ids': 'list[str]',
+        'fail_resource_infos': 'list[FailResourceInfo]'
     }
 
     attribute_map = {
-        'order_ids': 'order_ids'
+        'order_ids': 'order_ids',
+        'fail_resource_infos': 'fail_resource_infos'
     }
 
-    def __init__(self, order_ids=None):
+    def __init__(self, order_ids=None, fail_resource_infos=None):
         """RenewalResourcesResponse
 
         The model defined in huaweicloud sdk
 
         :param order_ids: 续订资源生成的订单ID的列表。
         :type order_ids: list[str]
+        :param fail_resource_infos: |参数名称：失败的资源信息列表| |参数的约束及描述：套餐包使用量信息|
+        :type fail_resource_infos: list[:class:`huaweicloudsdkbss.v2.FailResourceInfo`]
         """
         
         super(RenewalResourcesResponse, self).__init__()
 
         self._order_ids = None
+        self._fail_resource_infos = None
         self.discriminator = None
 
         if order_ids is not None:
             self.order_ids = order_ids
+        if fail_resource_infos is not None:
+            self.fail_resource_infos = fail_resource_infos
 
     @property
     def order_ids(self):
@@ -65,6 +72,28 @@ class RenewalResourcesResponse(SdkResponse):
         :type order_ids: list[str]
         """
         self._order_ids = order_ids
+
+    @property
+    def fail_resource_infos(self):
+        """Gets the fail_resource_infos of this RenewalResourcesResponse.
+
+        |参数名称：失败的资源信息列表| |参数的约束及描述：套餐包使用量信息|
+
+        :return: The fail_resource_infos of this RenewalResourcesResponse.
+        :rtype: list[:class:`huaweicloudsdkbss.v2.FailResourceInfo`]
+        """
+        return self._fail_resource_infos
+
+    @fail_resource_infos.setter
+    def fail_resource_infos(self, fail_resource_infos):
+        """Sets the fail_resource_infos of this RenewalResourcesResponse.
+
+        |参数名称：失败的资源信息列表| |参数的约束及描述：套餐包使用量信息|
+
+        :param fail_resource_infos: The fail_resource_infos of this RenewalResourcesResponse.
+        :type fail_resource_infos: list[:class:`huaweicloudsdkbss.v2.FailResourceInfo`]
+        """
+        self._fail_resource_infos = fail_resource_infos
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -80,7 +80,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
         :type resource_id: str
         :param resource_name: 资源名称。此参数不携带或携带值为空时，不作为筛选条件。
         :type resource_name: str
-        :param enterprise_project_id: 企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。此参数不携带或携带值为空时，不作为筛选条件。
+        :param enterprise_project_id: 企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。此参数不携带或携带值为空时，不作为筛选条件。
         :type enterprise_project_id: str
         :param method: 查询资源消费记录的方式。oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户默认为all，如果没有企业子客户，取值为all时查询的是客户自己的资源消费记录。此参数不携带，不作为筛选条件。
         :type method: str
@@ -380,7 +380,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。此参数不携带或携带值为空时，不作为筛选条件。
+        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。此参数不携带或携带值为空时，不作为筛选条件。
 
         :return: The enterprise_project_id of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: str
@@ -391,7 +391,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。此参数不携带或携带值为空时，不作为筛选条件。
+        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。此参数不携带或携带值为空时，不作为筛选条件。
 
         :param enterprise_project_id: The enterprise_project_id of this ListCustomerBillsMonthlyBreakDownRequest.
         :type enterprise_project_id: str

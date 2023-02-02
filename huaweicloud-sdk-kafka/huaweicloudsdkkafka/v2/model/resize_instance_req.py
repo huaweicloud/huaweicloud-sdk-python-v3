@@ -52,7 +52,7 @@ class ResizeInstanceReq:
         :type new_broker_num: int
         :param new_product_id: 新规格变更后的产品ID。 涉及垂直扩容场景，需指定该项。
         :type new_product_id: str
-        :param publicip_id: 实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网再扩容，需要填写此参数。
+        :param publicip_id: 实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网再进行扩容，需要填写此参数。
         :type publicip_id: str
         """
         
@@ -193,7 +193,7 @@ class ResizeInstanceReq:
     def publicip_id(self):
         """Gets the publicip_id of this ResizeInstanceReq.
 
-        实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网再扩容，需要填写此参数。
+        实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网再进行扩容，需要填写此参数。
 
         :return: The publicip_id of this ResizeInstanceReq.
         :rtype: str
@@ -204,7 +204,7 @@ class ResizeInstanceReq:
     def publicip_id(self, publicip_id):
         """Sets the publicip_id of this ResizeInstanceReq.
 
-        实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网再扩容，需要填写此参数。
+        实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网再进行扩容，需要填写此参数。
 
         :param publicip_id: The publicip_id of this ResizeInstanceReq.
         :type publicip_id: str

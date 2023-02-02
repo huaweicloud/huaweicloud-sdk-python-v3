@@ -38,9 +38,9 @@ class ListStackResourcesRequest:
 
         :param client_request_id: 用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
         :type client_request_id: str
-        :param stack_name: 用户希望操作的资源栈名
+        :param stack_name: 用户希望操作的资源栈名称
         :type stack_name: str
-        :param stack_id: 用户希望描述的栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
+        :param stack_id: 用户希望描述的资源栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
         :type stack_id: str
         """
         
@@ -82,7 +82,7 @@ class ListStackResourcesRequest:
     def stack_name(self):
         """Gets the stack_name of this ListStackResourcesRequest.
 
-        用户希望操作的资源栈名
+        用户希望操作的资源栈名称
 
         :return: The stack_name of this ListStackResourcesRequest.
         :rtype: str
@@ -93,7 +93,7 @@ class ListStackResourcesRequest:
     def stack_name(self, stack_name):
         """Sets the stack_name of this ListStackResourcesRequest.
 
-        用户希望操作的资源栈名
+        用户希望操作的资源栈名称
 
         :param stack_name: The stack_name of this ListStackResourcesRequest.
         :type stack_name: str
@@ -104,7 +104,7 @@ class ListStackResourcesRequest:
     def stack_id(self):
         """Gets the stack_id of this ListStackResourcesRequest.
 
-        用户希望描述的栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
+        用户希望描述的资源栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
 
         :return: The stack_id of this ListStackResourcesRequest.
         :rtype: str
@@ -115,7 +115,7 @@ class ListStackResourcesRequest:
     def stack_id(self, stack_id):
         """Sets the stack_id of this ListStackResourcesRequest.
 
-        用户希望描述的栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
+        用户希望描述的资源栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
 
         :param stack_id: The stack_id of this ListStackResourcesRequest.
         :type stack_id: str

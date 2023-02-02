@@ -356,6 +356,70 @@ class KafkaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_instance_by_engine(self, request):
+        """创建实例
+
+        创建实例。
+        
+        该接口支持创建按需和包周期两种计费方式的实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateInstanceByEngine
+        :type request: :class:`huaweicloudsdkkafka.v2.CreateInstanceByEngineRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.CreateInstanceByEngineResponse`
+        """
+        return self.create_instance_by_engine_with_http_info(request)
+
+    def create_instance_by_engine_with_http_info(self, request):
+        all_params = ['engine', 'create_instance_by_engine_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine' in local_var_params:
+            path_params['engine'] = local_var_params['engine']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{engine}/{project_id}/instances',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateInstanceByEngineResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_instance_topic(self, request):
         """Kafka实例创建Topic
 
@@ -547,7 +611,7 @@ class KafkaClient(Client):
     def create_post_paid_instance(self, request):
         """创建实例
 
-        [创建按需计费类型的Kafka实例。](tag:hc,hk,hws,hws_hk,otc,hws_ocb,ctc,sbc,hk_sbc,cmcc,hws_eu)[创建kafka实例。](tag:ocb)
+        [创建按需计费类型的Kafka实例。](tag:hc,hk,hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[创建kafka实例。](tag:otc,ocb,hws_ocb)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -599,6 +663,68 @@ class KafkaClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreatePostPaidInstanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_reassignment_task(self, request):
+        """Kafka实例开始分区重平衡任务
+
+        该接口用于向Kafka实例提交分区重平衡任务，若成功则返回重平衡任务的job id。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateReassignmentTask
+        :type request: :class:`huaweicloudsdkkafka.v2.CreateReassignmentTaskRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.CreateReassignmentTaskResponse`
+        """
+        return self.create_reassignment_task_with_http_info(request)
+
+    def create_reassignment_task_with_http_info(self, request):
+        all_params = ['instance_id', 'create_reassignment_task_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/kafka/{project_id}/instances/{instance_id}/reassign',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateReassignmentTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1616,12 +1742,74 @@ class KafkaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def resize_instance(self, request):
+    def resize_engine_instance(self, request):
         """实例规格变更
 
         实例规格变更。
         
-        **当前通过调用API，只支持按需实例进行实例规格变更。**
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ResizeEngineInstance
+        :type request: :class:`huaweicloudsdkkafka.v2.ResizeEngineInstanceRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ResizeEngineInstanceResponse`
+        """
+        return self.resize_engine_instance_with_http_info(request)
+
+    def resize_engine_instance_with_http_info(self, request):
+        all_params = ['engine', 'instance_id', 'resize_engine_instance_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine' in local_var_params:
+            path_params['engine'] = local_var_params['engine']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{engine}/{project_id}/instances/{instance_id}/extend',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ResizeEngineInstanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def resize_instance(self, request):
+        """实例规格变更
+
+        实例规格变更。[当前通过调用API，只支持按需实例进行实例规格变更。](tag:hc,hk,hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1982,6 +2170,70 @@ class KafkaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_engine_instance_extend_product_info(self, request):
+        """查询实例的扩容规格列表
+
+        查询实例的扩容规格列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowEngineInstanceExtendProductInfo
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowEngineInstanceExtendProductInfoRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowEngineInstanceExtendProductInfoResponse`
+        """
+        return self.show_engine_instance_extend_product_info_with_http_info(request)
+
+    def show_engine_instance_extend_product_info_with_http_info(self, request):
+        all_params = ['engine', 'instance_id', 'type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine' in local_var_params:
+            path_params['engine'] = local_var_params['engine']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{engine}/{project_id}/instances/{instance_id}/extend',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowEngineInstanceExtendProductInfoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_groups(self, request):
         """查询消费组信息
 
@@ -2248,7 +2500,7 @@ class KafkaClient(Client):
             request_type=request.__class__.__name__)
 
     def show_instance_topic_detail(self, request):
-        """查询Kafka实例Topic详细信息
+        """查询Kafka实例Topic详细信息(单个实例调用不要超过1s一次)
 
         查询Kafka实例Topic详细信息。
         

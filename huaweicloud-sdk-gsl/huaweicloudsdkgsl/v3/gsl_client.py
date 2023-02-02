@@ -124,7 +124,7 @@ class GslClient(Client):
         return self.list_back_pools_with_http_info(request)
 
     def list_back_pools_with_http_info(self, request):
-        all_params = ['pool_name', 'limit', 'offset', 'billing_cycle']
+        all_params = ['pool_name', 'limit', 'offset', 'billing_cycle', 'all_billing_cycle']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -145,6 +145,8 @@ class GslClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'billing_cycle' in local_var_params:
             query_params.append(('billing_cycle', local_var_params['billing_cycle']))
+        if 'all_billing_cycle' in local_var_params:
+            query_params.append(('all_billing_cycle', local_var_params['all_billing_cycle']))
 
         header_params = {}
 
@@ -1479,7 +1481,7 @@ class GslClient(Client):
         return self.list_sim_pools_with_http_info(request)
 
     def list_sim_pools_with_http_info(self, request):
-        all_params = ['pool_name', 'limit', 'offset', 'billing_cycle']
+        all_params = ['pool_name', 'limit', 'offset', 'billing_cycle', 'all_billing_cycle']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1500,6 +1502,8 @@ class GslClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'billing_cycle' in local_var_params:
             query_params.append(('billing_cycle', local_var_params['billing_cycle']))
+        if 'all_billing_cycle' in local_var_params:
+            query_params.append(('all_billing_cycle', local_var_params['all_billing_cycle']))
 
         header_params = {}
 

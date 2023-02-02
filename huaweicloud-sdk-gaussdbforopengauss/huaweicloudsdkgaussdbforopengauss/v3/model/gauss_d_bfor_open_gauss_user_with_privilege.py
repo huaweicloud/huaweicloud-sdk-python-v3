@@ -40,7 +40,7 @@ class GaussDBforOpenGaussUserWithPrivilege:
         :type name: str
         :param readonly: 数据库帐号权限。 - true：只读。 - false：可读可写。
         :type readonly: bool
-        :param schema_name: schema名称。  schema名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，不能和GaussDB for OpenGauss模板库重名，且schema名称必须存在。  GaussDB for OpenGauss模板库包括postgres， template0 ，template1, public，information_schema。
+        :param schema_name: schema名称。  schema名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，不能和GaussDB 模板库重名，且schema名称必须存在。  GaussDB 模板库包括postgres， template0 ，template1, public，information_schema。
         :type schema_name: str
         """
         
@@ -103,7 +103,7 @@ class GaussDBforOpenGaussUserWithPrivilege:
     def schema_name(self):
         """Gets the schema_name of this GaussDBforOpenGaussUserWithPrivilege.
 
-        schema名称。  schema名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，不能和GaussDB for OpenGauss模板库重名，且schema名称必须存在。  GaussDB for OpenGauss模板库包括postgres， template0 ，template1, public，information_schema。
+        schema名称。  schema名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，不能和GaussDB 模板库重名，且schema名称必须存在。  GaussDB 模板库包括postgres， template0 ，template1, public，information_schema。
 
         :return: The schema_name of this GaussDBforOpenGaussUserWithPrivilege.
         :rtype: str
@@ -114,7 +114,7 @@ class GaussDBforOpenGaussUserWithPrivilege:
     def schema_name(self, schema_name):
         """Sets the schema_name of this GaussDBforOpenGaussUserWithPrivilege.
 
-        schema名称。  schema名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，不能和GaussDB for OpenGauss模板库重名，且schema名称必须存在。  GaussDB for OpenGauss模板库包括postgres， template0 ，template1, public，information_schema。
+        schema名称。  schema名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，不能和GaussDB 模板库重名，且schema名称必须存在。  GaussDB 模板库包括postgres， template0 ，template1, public，information_schema。
 
         :param schema_name: The schema_name of this GaussDBforOpenGaussUserWithPrivilege.
         :type schema_name: str

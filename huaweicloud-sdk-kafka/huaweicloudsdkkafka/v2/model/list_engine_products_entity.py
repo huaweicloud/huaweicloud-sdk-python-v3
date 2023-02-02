@@ -58,7 +58,7 @@ class ListEngineProductsEntity:
         :type billing_code: str
         :param arch_types: CPU架构。
         :type arch_types: list[str]
-        :param charging_mode: [计费模式。monthly：包年/包月类型。hourly：按需类型。](tag:hc,hk,hws,hws_hk,otc,ctc,sbc,hk_sbc,cmcc,hws_eu)[暂未使用。](tag:hws_ocb,ocb)
+        :param charging_mode: [计费模式。monthly：包年/包月类型。hourly：按需类型。](tag:hc,hk,hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[暂未使用。](tag:hws_ocb,ocb)[计费模式。hourly：按需类型。](tag:otc,dt,g42,tm)
         :type charging_mode: list[str]
         :param ios: 支持的磁盘IO类型列表。
         :type ios: list[:class:`huaweicloudsdkkafka.v2.ListEngineIosEntity`]
@@ -214,7 +214,7 @@ class ListEngineProductsEntity:
     def charging_mode(self):
         """Gets the charging_mode of this ListEngineProductsEntity.
 
-        [计费模式。monthly：包年/包月类型。hourly：按需类型。](tag:hc,hk,hws,hws_hk,otc,ctc,sbc,hk_sbc,cmcc,hws_eu)[暂未使用。](tag:hws_ocb,ocb)
+        [计费模式。monthly：包年/包月类型。hourly：按需类型。](tag:hc,hk,hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[暂未使用。](tag:hws_ocb,ocb)[计费模式。hourly：按需类型。](tag:otc,dt,g42,tm)
 
         :return: The charging_mode of this ListEngineProductsEntity.
         :rtype: list[str]
@@ -225,7 +225,7 @@ class ListEngineProductsEntity:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this ListEngineProductsEntity.
 
-        [计费模式。monthly：包年/包月类型。hourly：按需类型。](tag:hc,hk,hws,hws_hk,otc,ctc,sbc,hk_sbc,cmcc,hws_eu)[暂未使用。](tag:hws_ocb,ocb)
+        [计费模式。monthly：包年/包月类型。hourly：按需类型。](tag:hc,hk,hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[暂未使用。](tag:hws_ocb,ocb)[计费模式。hourly：按需类型。](tag:otc,dt,g42,tm)
 
         :param charging_mode: The charging_mode of this ListEngineProductsEntity.
         :type charging_mode: list[str]

@@ -32,7 +32,7 @@ class OpenGaussEnlargeVolume:
 
         The model defined in huaweicloud sdk
 
-        :param size: GaussDB(for openGauss)磁盘大小要求（分片数*40GB）的倍数；取值范围：（分片数*40GB）~（分片数*16TB）
+        :param size: GaussDB磁盘大小要求（分片数*40GB）的倍数；取值范围：（分片数*40GB）~（分片数*16TB）
         :type size: int
         """
         
@@ -47,7 +47,7 @@ class OpenGaussEnlargeVolume:
     def size(self):
         """Gets the size of this OpenGaussEnlargeVolume.
 
-        GaussDB(for openGauss)磁盘大小要求（分片数*40GB）的倍数；取值范围：（分片数*40GB）~（分片数*16TB）
+        GaussDB磁盘大小要求（分片数*40GB）的倍数；取值范围：（分片数*40GB）~（分片数*16TB）
 
         :return: The size of this OpenGaussEnlargeVolume.
         :rtype: int
@@ -58,7 +58,7 @@ class OpenGaussEnlargeVolume:
     def size(self, size):
         """Sets the size of this OpenGaussEnlargeVolume.
 
-        GaussDB(for openGauss)磁盘大小要求（分片数*40GB）的倍数；取值范围：（分片数*40GB）~（分片数*16TB）
+        GaussDB磁盘大小要求（分片数*40GB）的倍数；取值范围：（分片数*40GB）~（分片数*16TB）
 
         :param size: The size of this OpenGaussEnlargeVolume.
         :type size: int

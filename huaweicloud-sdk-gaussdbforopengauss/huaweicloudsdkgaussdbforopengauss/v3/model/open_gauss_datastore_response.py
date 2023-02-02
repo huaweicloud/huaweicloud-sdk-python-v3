@@ -34,7 +34,7 @@ class OpenGaussDatastoreResponse:
 
         The model defined in huaweicloud sdk
 
-        :param type: 数据库引擎，不区分大小写，取值如下：  GaussDB(for openGauss)
+        :param type: 数据库引擎，不区分大小写，取值如下：  GaussDB
         :type type: str
         :param version: 数据库版本。
         :type version: str
@@ -53,7 +53,7 @@ class OpenGaussDatastoreResponse:
     def type(self):
         """Gets the type of this OpenGaussDatastoreResponse.
 
-        数据库引擎，不区分大小写，取值如下：  GaussDB(for openGauss)
+        数据库引擎，不区分大小写，取值如下：  GaussDB
 
         :return: The type of this OpenGaussDatastoreResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class OpenGaussDatastoreResponse:
     def type(self, type):
         """Sets the type of this OpenGaussDatastoreResponse.
 
-        数据库引擎，不区分大小写，取值如下：  GaussDB(for openGauss)
+        数据库引擎，不区分大小写，取值如下：  GaussDB
 
         :param type: The type of this OpenGaussDatastoreResponse.
         :type type: str

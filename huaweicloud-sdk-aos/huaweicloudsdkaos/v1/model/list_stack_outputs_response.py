@@ -32,7 +32,7 @@ class ListStackOutputsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param outputs: 资源栈输出
+        :param outputs: 资源栈输出列表
         :type outputs: list[:class:`huaweicloudsdkaos.v1.StackOutput`]
         """
         
@@ -48,7 +48,7 @@ class ListStackOutputsResponse(SdkResponse):
     def outputs(self):
         """Gets the outputs of this ListStackOutputsResponse.
 
-        资源栈输出
+        资源栈输出列表
 
         :return: The outputs of this ListStackOutputsResponse.
         :rtype: list[:class:`huaweicloudsdkaos.v1.StackOutput`]
@@ -59,7 +59,7 @@ class ListStackOutputsResponse(SdkResponse):
     def outputs(self, outputs):
         """Sets the outputs of this ListStackOutputsResponse.
 
-        资源栈输出
+        资源栈输出列表
 
         :param outputs: The outputs of this ListStackOutputsResponse.
         :type outputs: list[:class:`huaweicloudsdkaos.v1.StackOutput`]

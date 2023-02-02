@@ -754,6 +754,462 @@ class CloudPipelineClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def batch_show_pipelines_latest_status(self, request):
+        """批量获取流水线状态
+
+        批量获取流水线状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchShowPipelinesLatestStatus
+        :type request: :class:`huaweicloudsdkcloudpipeline.v2.BatchShowPipelinesLatestStatusRequest`
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.BatchShowPipelinesLatestStatusResponse`
+        """
+        return self.batch_show_pipelines_latest_status_with_http_info(request)
+
+    def batch_show_pipelines_latest_status_with_http_info(self, request):
+        all_params = ['project_id', 'pipeline_ids', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/api/pipelines/status',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchShowPipelinesLatestStatusResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_pipeline(self, request):
+        """删除流水线
+
+        删除流水线
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeletePipeline
+        :type request: :class:`huaweicloudsdkcloudpipeline.v2.DeletePipelineRequest`
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.DeletePipelineResponse`
+        """
+        return self.delete_pipeline_with_http_info(request)
+
+    def delete_pipeline_with_http_info(self, request):
+        all_params = ['project_id', 'pipeline_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'pipeline_id' in local_var_params:
+            path_params['pipeline_id'] = local_var_params['pipeline_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/api/pipelines/{pipeline_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeletePipelineResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_pipeline_runs(self, request):
+        """获取流水线执行记录
+
+        获取流水线执行记录
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPipelineRuns
+        :type request: :class:`huaweicloudsdkcloudpipeline.v2.ListPipelineRunsRequest`
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ListPipelineRunsResponse`
+        """
+        return self.list_pipeline_runs_with_http_info(request)
+
+    def list_pipeline_runs_with_http_info(self, request):
+        all_params = ['project_id', 'pipeline_id', 'x_language', 'list_pipeline_runs_query']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'pipeline_id' in local_var_params:
+            path_params['pipeline_id'] = local_var_params['pipeline_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/api/pipelines/{pipeline_id}/pipeline-runs/list',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListPipelineRunsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_pipelines(self, request):
+        """获取流水线列表/获取项目下流水线执行状况
+
+        获取流水线列表/获取项目下流水线执行状况
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPipelines
+        :type request: :class:`huaweicloudsdkcloudpipeline.v2.ListPipelinesRequest`
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ListPipelinesResponse`
+        """
+        return self.list_pipelines_with_http_info(request)
+
+    def list_pipelines_with_http_info(self, request):
+        all_params = ['project_id', 'x_language', 'list_pipelines_query']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/api/pipelines/list',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListPipelinesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def run_pipeline(self, request):
+        """启动流水线
+
+        启动流水线
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RunPipeline
+        :type request: :class:`huaweicloudsdkcloudpipeline.v2.RunPipelineRequest`
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.RunPipelineResponse`
+        """
+        return self.run_pipeline_with_http_info(request)
+
+    def run_pipeline_with_http_info(self, request):
+        all_params = ['project_id', 'pipeline_id', 'x_language', 'run_pipeline_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'pipeline_id' in local_var_params:
+            path_params['pipeline_id'] = local_var_params['pipeline_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/api/pipelines/{pipeline_id}/run',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RunPipelineResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_pipeline_run_detail(self, request):
+        """获取流水线状态/获取流水线执行详情
+
+        获取流水线状态/获取流水线执行详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowPipelineRunDetail
+        :type request: :class:`huaweicloudsdkcloudpipeline.v2.ShowPipelineRunDetailRequest`
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ShowPipelineRunDetailResponse`
+        """
+        return self.show_pipeline_run_detail_with_http_info(request)
+
+    def show_pipeline_run_detail_with_http_info(self, request):
+        all_params = ['project_id', 'pipeline_id', 'pipeline_run_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'pipeline_id' in local_var_params:
+            path_params['pipeline_id'] = local_var_params['pipeline_id']
+
+        query_params = []
+        if 'pipeline_run_id' in local_var_params:
+            query_params.append(('pipeline_run_id', local_var_params['pipeline_run_id']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/api/pipelines/{pipeline_id}/pipeline-runs/detail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowPipelineRunDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def stop_pipeline_run(self, request):
+        """停止流水线
+
+        停止流水线
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for StopPipelineRun
+        :type request: :class:`huaweicloudsdkcloudpipeline.v2.StopPipelineRunRequest`
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.StopPipelineRunResponse`
+        """
+        return self.stop_pipeline_run_with_http_info(request)
+
+    def stop_pipeline_run_with_http_info(self, request):
+        all_params = ['project_id', 'pipeline_id', 'pipeline_run_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'pipeline_id' in local_var_params:
+            path_params['pipeline_id'] = local_var_params['pipeline_id']
+        if 'pipeline_run_id' in local_var_params:
+            path_params['pipeline_run_id'] = local_var_params['pipeline_run_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/api/pipelines/{pipeline_id}/pipeline-runs/{pipeline_run_id}/stop',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='StopPipelineRunResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):

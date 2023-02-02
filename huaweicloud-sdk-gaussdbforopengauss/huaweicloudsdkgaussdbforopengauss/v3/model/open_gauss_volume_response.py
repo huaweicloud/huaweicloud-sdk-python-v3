@@ -36,7 +36,7 @@ class OpenGaussVolumeResponse:
 
         :param type: 磁盘类型。  取值如下，区分大小写：  - ULTRAHIGH，表示SSD。 - ESSD，表示急速云盘
         :type type: str
-        :param size: 磁盘大小。  GaussDB(for openGauss)分布式实例创建时需指定大小：要求必须为（分片数 * 40GB）的倍数，取值范围：（分片数*40GB）~（分片数*16TB）。
+        :param size: 磁盘大小。  GaussDB分布式实例创建时需指定大小：要求必须为（分片数 * 40GB）的倍数，取值范围：（分片数*40GB）~（分片数*16TB）。
         :type size: int
         """
         
@@ -75,7 +75,7 @@ class OpenGaussVolumeResponse:
     def size(self):
         """Gets the size of this OpenGaussVolumeResponse.
 
-        磁盘大小。  GaussDB(for openGauss)分布式实例创建时需指定大小：要求必须为（分片数 * 40GB）的倍数，取值范围：（分片数*40GB）~（分片数*16TB）。
+        磁盘大小。  GaussDB分布式实例创建时需指定大小：要求必须为（分片数 * 40GB）的倍数，取值范围：（分片数*40GB）~（分片数*16TB）。
 
         :return: The size of this OpenGaussVolumeResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class OpenGaussVolumeResponse:
     def size(self, size):
         """Sets the size of this OpenGaussVolumeResponse.
 
-        磁盘大小。  GaussDB(for openGauss)分布式实例创建时需指定大小：要求必须为（分片数 * 40GB）的倍数，取值范围：（分片数*40GB）~（分片数*16TB）。
+        磁盘大小。  GaussDB分布式实例创建时需指定大小：要求必须为（分片数 * 40GB）的倍数，取值范围：（分片数*40GB）~（分片数*16TB）。
 
         :param size: The size of this OpenGaussVolumeResponse.
         :type size: int

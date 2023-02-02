@@ -64,7 +64,7 @@ class TopicEntity:
         :type sync_message_flush: bool
         :param external_configs: 扩展配置。
         :type external_configs: object
-        :param topic_type: topic类型(0:普通Topic 1:系统(内部)Topic。
+        :param topic_type: topic类型(0:普通Topic 1:系统(内部)Topic)。
         :type topic_type: int
         """
         
@@ -280,7 +280,7 @@ class TopicEntity:
     def topic_type(self):
         """Gets the topic_type of this TopicEntity.
 
-        topic类型(0:普通Topic 1:系统(内部)Topic。
+        topic类型(0:普通Topic 1:系统(内部)Topic)。
 
         :return: The topic_type of this TopicEntity.
         :rtype: int
@@ -291,7 +291,7 @@ class TopicEntity:
     def topic_type(self, topic_type):
         """Sets the topic_type of this TopicEntity.
 
-        topic类型(0:普通Topic 1:系统(内部)Topic。
+        topic类型(0:普通Topic 1:系统(内部)Topic)。
 
         :param topic_type: The topic_type of this TopicEntity.
         :type topic_type: int

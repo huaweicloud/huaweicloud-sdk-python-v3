@@ -58,7 +58,7 @@ class ListInstancesRequest:
         :type name: str
         :param type: 按照实例类型查询。目前仅支持取值“Enterprise”（区分大小写），对应分布式实例（企业版）。当前支持取值\&quot;Ha\&quot;（区分大小写），对应主备式实例。
         :type type: str
-        :param datastore_type: 数据库类型，区分大小写。  - GaussDB(for openGauss)
+        :param datastore_type: 数据库类型，区分大小写。  - GaussDB
         :type datastore_type: str
         :param vpc_id: 虚拟私有云ID。  方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html)。
         :type vpc_id: str
@@ -199,7 +199,7 @@ class ListInstancesRequest:
     def datastore_type(self):
         """Gets the datastore_type of this ListInstancesRequest.
 
-        数据库类型，区分大小写。  - GaussDB(for openGauss)
+        数据库类型，区分大小写。  - GaussDB
 
         :return: The datastore_type of this ListInstancesRequest.
         :rtype: str
@@ -210,7 +210,7 @@ class ListInstancesRequest:
     def datastore_type(self, datastore_type):
         """Sets the datastore_type of this ListInstancesRequest.
 
-        数据库类型，区分大小写。  - GaussDB(for openGauss)
+        数据库类型，区分大小写。  - GaussDB
 
         :param datastore_type: The datastore_type of this ListInstancesRequest.
         :type datastore_type: str

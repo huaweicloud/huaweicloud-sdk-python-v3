@@ -36,11 +36,11 @@ class OpenGaussHa:
 
         The model defined in huaweicloud sdk
 
-        :param mode: GaussDB(for openGauss)为分布式时，取值：enterprise；为集中式时，取值：centralization_standard。不区分大小写。
+        :param mode: GaussDB为分布式时，取值：enterprise；为集中式时，取值：centralization_standard。不区分大小写。
         :type mode: str
         :param consistency: 指定实例一致性类型，当创建分布式模式实例时，该字段值必传，当创建主备模式实例时，该字段值不传。取值范围：strong（强一致性） | eventual(最终一致性)，不分区大小写。
         :type consistency: str
-        :param replication_mode: 备机同步参数。  取值：  GaussDB(for openGauss)为“sync\&quot;  说明： - “sync”为同步模式。
+        :param replication_mode: 备机同步参数。  取值：  GaussDB为“sync\&quot;  说明： - “sync”为同步模式。
         :type replication_mode: str
         """
         
@@ -59,7 +59,7 @@ class OpenGaussHa:
     def mode(self):
         """Gets the mode of this OpenGaussHa.
 
-        GaussDB(for openGauss)为分布式时，取值：enterprise；为集中式时，取值：centralization_standard。不区分大小写。
+        GaussDB为分布式时，取值：enterprise；为集中式时，取值：centralization_standard。不区分大小写。
 
         :return: The mode of this OpenGaussHa.
         :rtype: str
@@ -70,7 +70,7 @@ class OpenGaussHa:
     def mode(self, mode):
         """Sets the mode of this OpenGaussHa.
 
-        GaussDB(for openGauss)为分布式时，取值：enterprise；为集中式时，取值：centralization_standard。不区分大小写。
+        GaussDB为分布式时，取值：enterprise；为集中式时，取值：centralization_standard。不区分大小写。
 
         :param mode: The mode of this OpenGaussHa.
         :type mode: str
@@ -103,7 +103,7 @@ class OpenGaussHa:
     def replication_mode(self):
         """Gets the replication_mode of this OpenGaussHa.
 
-        备机同步参数。  取值：  GaussDB(for openGauss)为“sync\"  说明： - “sync”为同步模式。
+        备机同步参数。  取值：  GaussDB为“sync\"  说明： - “sync”为同步模式。
 
         :return: The replication_mode of this OpenGaussHa.
         :rtype: str
@@ -114,7 +114,7 @@ class OpenGaussHa:
     def replication_mode(self, replication_mode):
         """Sets the replication_mode of this OpenGaussHa.
 
-        备机同步参数。  取值：  GaussDB(for openGauss)为“sync\"  说明： - “sync”为同步模式。
+        备机同步参数。  取值：  GaussDB为“sync\"  说明： - “sync”为同步模式。
 
         :param replication_mode: The replication_mode of this OpenGaussHa.
         :type replication_mode: str

@@ -23,17 +23,19 @@ class ListBackPoolsRequest:
         'pool_name': 'str',
         'limit': 'int',
         'offset': 'int',
-        'billing_cycle': 'str'
+        'billing_cycle': 'str',
+        'all_billing_cycle': 'bool'
     }
 
     attribute_map = {
         'pool_name': 'pool_name',
         'limit': 'limit',
         'offset': 'offset',
-        'billing_cycle': 'billing_cycle'
+        'billing_cycle': 'billing_cycle',
+        'all_billing_cycle': 'all_billing_cycle'
     }
 
-    def __init__(self, pool_name=None, limit=None, offset=None, billing_cycle=None):
+    def __init__(self, pool_name=None, limit=None, offset=None, billing_cycle=None, all_billing_cycle=None):
         """ListBackPoolsRequest
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class ListBackPoolsRequest:
         :type offset: int
         :param billing_cycle: 账期，例如：2021-04
         :type billing_cycle: str
+        :param all_billing_cycle: 是否查询近六个月账期标识
+        :type all_billing_cycle: bool
         """
         
         
@@ -54,6 +58,7 @@ class ListBackPoolsRequest:
         self._limit = None
         self._offset = None
         self._billing_cycle = None
+        self._all_billing_cycle = None
         self.discriminator = None
 
         if pool_name is not None:
@@ -64,6 +69,8 @@ class ListBackPoolsRequest:
             self.offset = offset
         if billing_cycle is not None:
             self.billing_cycle = billing_cycle
+        if all_billing_cycle is not None:
+            self.all_billing_cycle = all_billing_cycle
 
     @property
     def pool_name(self):
@@ -152,6 +159,28 @@ class ListBackPoolsRequest:
         :type billing_cycle: str
         """
         self._billing_cycle = billing_cycle
+
+    @property
+    def all_billing_cycle(self):
+        """Gets the all_billing_cycle of this ListBackPoolsRequest.
+
+        是否查询近六个月账期标识
+
+        :return: The all_billing_cycle of this ListBackPoolsRequest.
+        :rtype: bool
+        """
+        return self._all_billing_cycle
+
+    @all_billing_cycle.setter
+    def all_billing_cycle(self, all_billing_cycle):
+        """Sets the all_billing_cycle of this ListBackPoolsRequest.
+
+        是否查询近六个月账期标识
+
+        :param all_billing_cycle: The all_billing_cycle of this ListBackPoolsRequest.
+        :type all_billing_cycle: bool
+        """
+        self._all_billing_cycle = all_billing_cycle
 
     def to_dict(self):
         """Returns the model properties as a dict"""

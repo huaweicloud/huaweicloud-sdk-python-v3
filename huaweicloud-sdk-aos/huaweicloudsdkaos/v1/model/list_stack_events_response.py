@@ -20,7 +20,7 @@ class ListStackEventsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'stack_events': 'list[StackEventResponse]'
+        'stack_events': 'list[StackEvent]'
     }
 
     attribute_map = {
@@ -32,8 +32,8 @@ class ListStackEventsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param stack_events: 栈的更新状态
-        :type stack_events: list[:class:`huaweicloudsdkaos.v1.StackEventResponse`]
+        :param stack_events: 资源栈事件列表
+        :type stack_events: list[:class:`huaweicloudsdkaos.v1.StackEvent`]
         """
         
         super(ListStackEventsResponse, self).__init__()
@@ -48,10 +48,10 @@ class ListStackEventsResponse(SdkResponse):
     def stack_events(self):
         """Gets the stack_events of this ListStackEventsResponse.
 
-        栈的更新状态
+        资源栈事件列表
 
         :return: The stack_events of this ListStackEventsResponse.
-        :rtype: list[:class:`huaweicloudsdkaos.v1.StackEventResponse`]
+        :rtype: list[:class:`huaweicloudsdkaos.v1.StackEvent`]
         """
         return self._stack_events
 
@@ -59,10 +59,10 @@ class ListStackEventsResponse(SdkResponse):
     def stack_events(self, stack_events):
         """Sets the stack_events of this ListStackEventsResponse.
 
-        栈的更新状态
+        资源栈事件列表
 
         :param stack_events: The stack_events of this ListStackEventsResponse.
-        :type stack_events: list[:class:`huaweicloudsdkaos.v1.StackEventResponse`]
+        :type stack_events: list[:class:`huaweicloudsdkaos.v1.StackEvent`]
         """
         self._stack_events = stack_events
 

@@ -36,11 +36,11 @@ class OpenGaussHaResponse:
 
         The model defined in huaweicloud sdk
 
-        :param mode: GaussDB(for openGauss) 分布式模式，返回值为：Enterprise（企业版）；主备版，返回值为：Ha(主备版)。
+        :param mode: GaussDB 分布式模式，返回值为：Enterprise（企业版）；主备版，返回值为：Ha(主备版)。
         :type mode: str
-        :param replication_mode: 备机同步参数。  取值：  GaussDB(for openGauss)为“sync”。 说明： - “sync”为同步模式。
+        :param replication_mode: 备机同步参数。  取值：  GaussDB为“sync”。 说明： - “sync”为同步模式。
         :type replication_mode: str
-        :param consistency: GaussDB(for openGauss)的预留参数：指定实例一致性类型，取值范围：strong（强一致性） | eventual(最终一致性)。
+        :param consistency: GaussDB的预留参数：指定实例一致性类型，取值范围：strong（强一致性） | eventual(最终一致性)。
         :type consistency: str
         """
         
@@ -59,7 +59,7 @@ class OpenGaussHaResponse:
     def mode(self):
         """Gets the mode of this OpenGaussHaResponse.
 
-        GaussDB(for openGauss) 分布式模式，返回值为：Enterprise（企业版）；主备版，返回值为：Ha(主备版)。
+        GaussDB 分布式模式，返回值为：Enterprise（企业版）；主备版，返回值为：Ha(主备版)。
 
         :return: The mode of this OpenGaussHaResponse.
         :rtype: str
@@ -70,7 +70,7 @@ class OpenGaussHaResponse:
     def mode(self, mode):
         """Sets the mode of this OpenGaussHaResponse.
 
-        GaussDB(for openGauss) 分布式模式，返回值为：Enterprise（企业版）；主备版，返回值为：Ha(主备版)。
+        GaussDB 分布式模式，返回值为：Enterprise（企业版）；主备版，返回值为：Ha(主备版)。
 
         :param mode: The mode of this OpenGaussHaResponse.
         :type mode: str
@@ -81,7 +81,7 @@ class OpenGaussHaResponse:
     def replication_mode(self):
         """Gets the replication_mode of this OpenGaussHaResponse.
 
-        备机同步参数。  取值：  GaussDB(for openGauss)为“sync”。 说明： - “sync”为同步模式。
+        备机同步参数。  取值：  GaussDB为“sync”。 说明： - “sync”为同步模式。
 
         :return: The replication_mode of this OpenGaussHaResponse.
         :rtype: str
@@ -92,7 +92,7 @@ class OpenGaussHaResponse:
     def replication_mode(self, replication_mode):
         """Sets the replication_mode of this OpenGaussHaResponse.
 
-        备机同步参数。  取值：  GaussDB(for openGauss)为“sync”。 说明： - “sync”为同步模式。
+        备机同步参数。  取值：  GaussDB为“sync”。 说明： - “sync”为同步模式。
 
         :param replication_mode: The replication_mode of this OpenGaussHaResponse.
         :type replication_mode: str
@@ -103,7 +103,7 @@ class OpenGaussHaResponse:
     def consistency(self):
         """Gets the consistency of this OpenGaussHaResponse.
 
-        GaussDB(for openGauss)的预留参数：指定实例一致性类型，取值范围：strong（强一致性） | eventual(最终一致性)。
+        GaussDB的预留参数：指定实例一致性类型，取值范围：strong（强一致性） | eventual(最终一致性)。
 
         :return: The consistency of this OpenGaussHaResponse.
         :rtype: str
@@ -114,7 +114,7 @@ class OpenGaussHaResponse:
     def consistency(self, consistency):
         """Sets the consistency of this OpenGaussHaResponse.
 
-        GaussDB(for openGauss)的预留参数：指定实例一致性类型，取值范围：strong（强一致性） | eventual(最终一致性)。
+        GaussDB的预留参数：指定实例一致性类型，取值范围：strong（强一致性） | eventual(最终一致性)。
 
         :param consistency: The consistency of this OpenGaussHaResponse.
         :type consistency: str

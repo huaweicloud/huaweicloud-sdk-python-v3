@@ -37,6 +37,8 @@ class ShowInstanceResp:
         'vpc_id': 'str',
         'vpc_name': 'str',
         'created_at': 'str',
+        'subnet_name': 'str',
+        'subnet_cidr': 'str',
         'user_id': 'str',
         'user_name': 'str',
         'access_user': 'str',
@@ -46,8 +48,10 @@ class ShowInstanceResp:
         'enable_publicip': 'bool',
         'management_connect_address': 'str',
         'ssl_enable': 'bool',
+        'sasl_enabled_mechanisms': 'list[str]',
         'ssl_two_way_enable': 'bool',
         'cert_replaced': 'bool',
+        'public_management_connect_address': 'str',
         'enterprise_project_id': 'str',
         'is_logical_volume': 'bool',
         'extend_times': 'int',
@@ -85,14 +89,11 @@ class ShowInstanceResp:
         'pod_connect_address': 'str',
         'disk_encrypted': 'bool',
         'disk_encrypted_key': 'str',
-        'public_management_connect_address': 'str',
-        'subnet_cidr': 'str',
-        'subnet_name': 'str',
-        'enable_acl': 'bool',
         'kafka_private_connect_address': 'str',
         'ces_version': 'str',
         'public_access_enabled': 'str',
         'node_num': 'int',
+        'enable_acl': 'bool',
         'new_spec_billing_enable': 'bool',
         'broker_num': 'int',
         'tags': 'list[TagEntity]',
@@ -117,6 +118,8 @@ class ShowInstanceResp:
         'vpc_id': 'vpc_id',
         'vpc_name': 'vpc_name',
         'created_at': 'created_at',
+        'subnet_name': 'subnet_name',
+        'subnet_cidr': 'subnet_cidr',
         'user_id': 'user_id',
         'user_name': 'user_name',
         'access_user': 'access_user',
@@ -126,8 +129,10 @@ class ShowInstanceResp:
         'enable_publicip': 'enable_publicip',
         'management_connect_address': 'management_connect_address',
         'ssl_enable': 'ssl_enable',
+        'sasl_enabled_mechanisms': 'sasl_enabled_mechanisms',
         'ssl_two_way_enable': 'ssl_two_way_enable',
         'cert_replaced': 'cert_replaced',
+        'public_management_connect_address': 'public_management_connect_address',
         'enterprise_project_id': 'enterprise_project_id',
         'is_logical_volume': 'is_logical_volume',
         'extend_times': 'extend_times',
@@ -165,21 +170,18 @@ class ShowInstanceResp:
         'pod_connect_address': 'pod_connect_address',
         'disk_encrypted': 'disk_encrypted',
         'disk_encrypted_key': 'disk_encrypted_key',
-        'public_management_connect_address': 'public_management_connect_address',
-        'subnet_cidr': 'subnet_cidr',
-        'subnet_name': 'subnet_name',
-        'enable_acl': 'enable_acl',
         'kafka_private_connect_address': 'kafka_private_connect_address',
         'ces_version': 'ces_version',
         'public_access_enabled': 'public_access_enabled',
         'node_num': 'node_num',
+        'enable_acl': 'enable_acl',
         'new_spec_billing_enable': 'new_spec_billing_enable',
         'broker_num': 'broker_num',
         'tags': 'tags',
         'dr_enable': 'dr_enable'
     }
 
-    def __init__(self, name=None, engine=None, engine_version=None, description=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, user_id=None, user_name=None, access_user=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, ssl_two_way_enable=None, cert_replaced=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_user=None, enable_log_collection=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_id=None, rest_enable=None, rest_connect_address=None, public_boundwidth=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, agent_enable=None, pod_connect_address=None, disk_encrypted=None, disk_encrypted_key=None, public_management_connect_address=None, subnet_cidr=None, subnet_name=None, enable_acl=None, kafka_private_connect_address=None, ces_version=None, public_access_enabled=None, node_num=None, new_spec_billing_enable=None, broker_num=None, tags=None, dr_enable=None):
+    def __init__(self, name=None, engine=None, engine_version=None, description=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, subnet_name=None, subnet_cidr=None, user_id=None, user_name=None, access_user=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, sasl_enabled_mechanisms=None, ssl_two_way_enable=None, cert_replaced=None, public_management_connect_address=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_user=None, enable_log_collection=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_id=None, rest_enable=None, rest_connect_address=None, public_boundwidth=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, agent_enable=None, pod_connect_address=None, disk_encrypted=None, disk_encrypted_key=None, kafka_private_connect_address=None, ces_version=None, public_access_enabled=None, node_num=None, enable_acl=None, new_spec_billing_enable=None, broker_num=None, tags=None, dr_enable=None):
         """ShowInstanceResp
 
         The model defined in huaweicloud sdk
@@ -210,7 +212,7 @@ class ShowInstanceResp:
         :type instance_id: str
         :param resource_spec_code: 资源规格标识。   - dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。   - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。   - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。   - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。
         :type resource_spec_code: str
-        :param charging_mode: [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hc,hk,hws,hws_hk,otc,ctc,sbc,hk_sbc,cmcc)[付费模式，暂未使用。](tag:hws_ocb,ocb)[付费模式，1表示按需计费](tag:hws_eu)
+        :param charging_mode: [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hc,hk,hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:otc,dt,g42,tm)
         :type charging_mode: int
         :param vpc_id: VPC ID。
         :type vpc_id: str
@@ -218,6 +220,10 @@ class ShowInstanceResp:
         :type vpc_name: str
         :param created_at: 完成创建时间。  格式为时间戳，指从格林威治时间 1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。
         :type created_at: str
+        :param subnet_name: 子网名称。
+        :type subnet_name: str
+        :param subnet_cidr: 子网网段。
+        :type subnet_cidr: str
         :param user_id: 用户ID。
         :type user_id: str
         :param user_name: 用户名。
@@ -236,10 +242,14 @@ class ShowInstanceResp:
         :type management_connect_address: str
         :param ssl_enable: 是否开启安全认证。 - true：开启 - false：未开启
         :type ssl_enable: bool
+        :param sasl_enabled_mechanisms: 开启SASL后使用的认证机制。 - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
+        :type sasl_enabled_mechanisms: list[str]
         :param ssl_two_way_enable: 是否开启双向认证。
         :type ssl_two_way_enable: bool
         :param cert_replaced: 是否能够证书替换。
         :type cert_replaced: bool
+        :param public_management_connect_address: 公网访问Kafka Manager连接地址。
+        :type public_management_connect_address: str
         :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
         :param is_logical_volume: 实例扩容时用于区分老实例与新实例。 - true：新创建的实例，允许磁盘动态扩容不需要重启。 - false：老实例
@@ -314,14 +324,6 @@ class ShowInstanceResp:
         :type disk_encrypted: bool
         :param disk_encrypted_key: 磁盘加密key，未开启磁盘加密时为空。
         :type disk_encrypted_key: str
-        :param public_management_connect_address: 公网访问Kafka Manager连接地址。
-        :type public_management_connect_address: str
-        :param subnet_cidr: 子网网段。
-        :type subnet_cidr: str
-        :param subnet_name: 子网名称。
-        :type subnet_name: str
-        :param enable_acl: 是否开启访问控制。
-        :type enable_acl: bool
         :param kafka_private_connect_address: Kafka实例私有连接地址。
         :type kafka_private_connect_address: str
         :param ces_version: 云监控版本。
@@ -330,6 +332,8 @@ class ShowInstanceResp:
         :type public_access_enabled: str
         :param node_num: 节点数。
         :type node_num: int
+        :param enable_acl: 是否开启访问控制。
+        :type enable_acl: bool
         :param new_spec_billing_enable: 是否启用新规格计费。
         :type new_spec_billing_enable: bool
         :param broker_num: 节点数量。
@@ -359,6 +363,8 @@ class ShowInstanceResp:
         self._vpc_id = None
         self._vpc_name = None
         self._created_at = None
+        self._subnet_name = None
+        self._subnet_cidr = None
         self._user_id = None
         self._user_name = None
         self._access_user = None
@@ -368,8 +374,10 @@ class ShowInstanceResp:
         self._enable_publicip = None
         self._management_connect_address = None
         self._ssl_enable = None
+        self._sasl_enabled_mechanisms = None
         self._ssl_two_way_enable = None
         self._cert_replaced = None
+        self._public_management_connect_address = None
         self._enterprise_project_id = None
         self._is_logical_volume = None
         self._extend_times = None
@@ -407,14 +415,11 @@ class ShowInstanceResp:
         self._pod_connect_address = None
         self._disk_encrypted = None
         self._disk_encrypted_key = None
-        self._public_management_connect_address = None
-        self._subnet_cidr = None
-        self._subnet_name = None
-        self._enable_acl = None
         self._kafka_private_connect_address = None
         self._ces_version = None
         self._public_access_enabled = None
         self._node_num = None
+        self._enable_acl = None
         self._new_spec_billing_enable = None
         self._broker_num = None
         self._tags = None
@@ -455,6 +460,10 @@ class ShowInstanceResp:
             self.vpc_name = vpc_name
         if created_at is not None:
             self.created_at = created_at
+        if subnet_name is not None:
+            self.subnet_name = subnet_name
+        if subnet_cidr is not None:
+            self.subnet_cidr = subnet_cidr
         if user_id is not None:
             self.user_id = user_id
         if user_name is not None:
@@ -473,10 +482,14 @@ class ShowInstanceResp:
             self.management_connect_address = management_connect_address
         if ssl_enable is not None:
             self.ssl_enable = ssl_enable
+        if sasl_enabled_mechanisms is not None:
+            self.sasl_enabled_mechanisms = sasl_enabled_mechanisms
         if ssl_two_way_enable is not None:
             self.ssl_two_way_enable = ssl_two_way_enable
         if cert_replaced is not None:
             self.cert_replaced = cert_replaced
+        if public_management_connect_address is not None:
+            self.public_management_connect_address = public_management_connect_address
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if is_logical_volume is not None:
@@ -551,14 +564,6 @@ class ShowInstanceResp:
             self.disk_encrypted = disk_encrypted
         if disk_encrypted_key is not None:
             self.disk_encrypted_key = disk_encrypted_key
-        if public_management_connect_address is not None:
-            self.public_management_connect_address = public_management_connect_address
-        if subnet_cidr is not None:
-            self.subnet_cidr = subnet_cidr
-        if subnet_name is not None:
-            self.subnet_name = subnet_name
-        if enable_acl is not None:
-            self.enable_acl = enable_acl
         if kafka_private_connect_address is not None:
             self.kafka_private_connect_address = kafka_private_connect_address
         if ces_version is not None:
@@ -567,6 +572,8 @@ class ShowInstanceResp:
             self.public_access_enabled = public_access_enabled
         if node_num is not None:
             self.node_num = node_num
+        if enable_acl is not None:
+            self.enable_acl = enable_acl
         if new_spec_billing_enable is not None:
             self.new_spec_billing_enable = new_spec_billing_enable
         if broker_num is not None:
@@ -866,7 +873,7 @@ class ShowInstanceResp:
     def charging_mode(self):
         """Gets the charging_mode of this ShowInstanceResp.
 
-        [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hc,hk,hws,hws_hk,otc,ctc,sbc,hk_sbc,cmcc)[付费模式，暂未使用。](tag:hws_ocb,ocb)[付费模式，1表示按需计费](tag:hws_eu)
+        [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hc,hk,hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:otc,dt,g42,tm)
 
         :return: The charging_mode of this ShowInstanceResp.
         :rtype: int
@@ -877,7 +884,7 @@ class ShowInstanceResp:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this ShowInstanceResp.
 
-        [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hc,hk,hws,hws_hk,otc,ctc,sbc,hk_sbc,cmcc)[付费模式，暂未使用。](tag:hws_ocb,ocb)[付费模式，1表示按需计费](tag:hws_eu)
+        [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hc,hk,hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:otc,dt,g42,tm)
 
         :param charging_mode: The charging_mode of this ShowInstanceResp.
         :type charging_mode: int
@@ -949,6 +956,50 @@ class ShowInstanceResp:
         :type created_at: str
         """
         self._created_at = created_at
+
+    @property
+    def subnet_name(self):
+        """Gets the subnet_name of this ShowInstanceResp.
+
+        子网名称。
+
+        :return: The subnet_name of this ShowInstanceResp.
+        :rtype: str
+        """
+        return self._subnet_name
+
+    @subnet_name.setter
+    def subnet_name(self, subnet_name):
+        """Sets the subnet_name of this ShowInstanceResp.
+
+        子网名称。
+
+        :param subnet_name: The subnet_name of this ShowInstanceResp.
+        :type subnet_name: str
+        """
+        self._subnet_name = subnet_name
+
+    @property
+    def subnet_cidr(self):
+        """Gets the subnet_cidr of this ShowInstanceResp.
+
+        子网网段。
+
+        :return: The subnet_cidr of this ShowInstanceResp.
+        :rtype: str
+        """
+        return self._subnet_cidr
+
+    @subnet_cidr.setter
+    def subnet_cidr(self, subnet_cidr):
+        """Sets the subnet_cidr of this ShowInstanceResp.
+
+        子网网段。
+
+        :param subnet_cidr: The subnet_cidr of this ShowInstanceResp.
+        :type subnet_cidr: str
+        """
+        self._subnet_cidr = subnet_cidr
 
     @property
     def user_id(self):
@@ -1149,6 +1200,28 @@ class ShowInstanceResp:
         self._ssl_enable = ssl_enable
 
     @property
+    def sasl_enabled_mechanisms(self):
+        """Gets the sasl_enabled_mechanisms of this ShowInstanceResp.
+
+        开启SASL后使用的认证机制。 - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
+
+        :return: The sasl_enabled_mechanisms of this ShowInstanceResp.
+        :rtype: list[str]
+        """
+        return self._sasl_enabled_mechanisms
+
+    @sasl_enabled_mechanisms.setter
+    def sasl_enabled_mechanisms(self, sasl_enabled_mechanisms):
+        """Sets the sasl_enabled_mechanisms of this ShowInstanceResp.
+
+        开启SASL后使用的认证机制。 - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
+
+        :param sasl_enabled_mechanisms: The sasl_enabled_mechanisms of this ShowInstanceResp.
+        :type sasl_enabled_mechanisms: list[str]
+        """
+        self._sasl_enabled_mechanisms = sasl_enabled_mechanisms
+
+    @property
     def ssl_two_way_enable(self):
         """Gets the ssl_two_way_enable of this ShowInstanceResp.
 
@@ -1191,6 +1264,28 @@ class ShowInstanceResp:
         :type cert_replaced: bool
         """
         self._cert_replaced = cert_replaced
+
+    @property
+    def public_management_connect_address(self):
+        """Gets the public_management_connect_address of this ShowInstanceResp.
+
+        公网访问Kafka Manager连接地址。
+
+        :return: The public_management_connect_address of this ShowInstanceResp.
+        :rtype: str
+        """
+        return self._public_management_connect_address
+
+    @public_management_connect_address.setter
+    def public_management_connect_address(self, public_management_connect_address):
+        """Sets the public_management_connect_address of this ShowInstanceResp.
+
+        公网访问Kafka Manager连接地址。
+
+        :param public_management_connect_address: The public_management_connect_address of this ShowInstanceResp.
+        :type public_management_connect_address: str
+        """
+        self._public_management_connect_address = public_management_connect_address
 
     @property
     def enterprise_project_id(self):
@@ -2007,94 +2102,6 @@ class ShowInstanceResp:
         self._disk_encrypted_key = disk_encrypted_key
 
     @property
-    def public_management_connect_address(self):
-        """Gets the public_management_connect_address of this ShowInstanceResp.
-
-        公网访问Kafka Manager连接地址。
-
-        :return: The public_management_connect_address of this ShowInstanceResp.
-        :rtype: str
-        """
-        return self._public_management_connect_address
-
-    @public_management_connect_address.setter
-    def public_management_connect_address(self, public_management_connect_address):
-        """Sets the public_management_connect_address of this ShowInstanceResp.
-
-        公网访问Kafka Manager连接地址。
-
-        :param public_management_connect_address: The public_management_connect_address of this ShowInstanceResp.
-        :type public_management_connect_address: str
-        """
-        self._public_management_connect_address = public_management_connect_address
-
-    @property
-    def subnet_cidr(self):
-        """Gets the subnet_cidr of this ShowInstanceResp.
-
-        子网网段。
-
-        :return: The subnet_cidr of this ShowInstanceResp.
-        :rtype: str
-        """
-        return self._subnet_cidr
-
-    @subnet_cidr.setter
-    def subnet_cidr(self, subnet_cidr):
-        """Sets the subnet_cidr of this ShowInstanceResp.
-
-        子网网段。
-
-        :param subnet_cidr: The subnet_cidr of this ShowInstanceResp.
-        :type subnet_cidr: str
-        """
-        self._subnet_cidr = subnet_cidr
-
-    @property
-    def subnet_name(self):
-        """Gets the subnet_name of this ShowInstanceResp.
-
-        子网名称。
-
-        :return: The subnet_name of this ShowInstanceResp.
-        :rtype: str
-        """
-        return self._subnet_name
-
-    @subnet_name.setter
-    def subnet_name(self, subnet_name):
-        """Sets the subnet_name of this ShowInstanceResp.
-
-        子网名称。
-
-        :param subnet_name: The subnet_name of this ShowInstanceResp.
-        :type subnet_name: str
-        """
-        self._subnet_name = subnet_name
-
-    @property
-    def enable_acl(self):
-        """Gets the enable_acl of this ShowInstanceResp.
-
-        是否开启访问控制。
-
-        :return: The enable_acl of this ShowInstanceResp.
-        :rtype: bool
-        """
-        return self._enable_acl
-
-    @enable_acl.setter
-    def enable_acl(self, enable_acl):
-        """Sets the enable_acl of this ShowInstanceResp.
-
-        是否开启访问控制。
-
-        :param enable_acl: The enable_acl of this ShowInstanceResp.
-        :type enable_acl: bool
-        """
-        self._enable_acl = enable_acl
-
-    @property
     def kafka_private_connect_address(self):
         """Gets the kafka_private_connect_address of this ShowInstanceResp.
 
@@ -2181,6 +2188,28 @@ class ShowInstanceResp:
         :type node_num: int
         """
         self._node_num = node_num
+
+    @property
+    def enable_acl(self):
+        """Gets the enable_acl of this ShowInstanceResp.
+
+        是否开启访问控制。
+
+        :return: The enable_acl of this ShowInstanceResp.
+        :rtype: bool
+        """
+        return self._enable_acl
+
+    @enable_acl.setter
+    def enable_acl(self, enable_acl):
+        """Sets the enable_acl of this ShowInstanceResp.
+
+        是否开启访问控制。
+
+        :param enable_acl: The enable_acl of this ShowInstanceResp.
+        :type enable_acl: bool
+        """
+        self._enable_acl = enable_acl
 
     @property
     def new_spec_billing_enable(self):

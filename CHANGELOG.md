@@ -1,3 +1,99 @@
+# 3.1.24 2023-02-02
+
+### HuaweiCloud SDK AOS
+
+- _Features_
+  - Support the interface `UpdateStack`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `executor` to the interface `ApplyExecutionPlan`
+  - Changes of the interface `ListStackEvents`:
+    - Add the request parameters `filter`, `field`
+    - Remove the response parameters `resource_id_key`, `resource_id_value`, `resource_name`, `resource_type`, `time`, `event_type`, `event_message`, `elapsed_seconds`
+  - The response parameter `stack_name` changed to required of the interface `GetStackMetadata`
+  - Add the request parameter `executor` to the interface `CreateStack`
+  - Changes of the interface `ListStackResources`:
+    - Add the response parameter `index_key`
+    - Remove the enum values `DELETION_SKIPPED` from the response parameter `resource_status`
+  - Add the request parameter `executor` to the interface `DeployStack`
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `fail_resource_infos` to the interface `RenewalResources`
+  - Add the response parameter `fail_resource_infos` to the interface `CancelResourcesSubscription`
+
+### HuaweiCloud SDK CloudPipeline
+
+- _Features_
+  - Support the following interfaces：
+    - `RunPipeline`
+    - `BatchShowPipelinesLatestStatus`
+    - `ShowPipelineRunDetail`
+    - `ListPipelines`
+    - `DeletePipeline`
+    - `StopPipelineRun`
+    - `ListPipelineRuns`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `GaussDB` to the request parameter `type` to the interface `CreateInstance`
+  - Add the enum values `GaussDB` to the request parameter `datastore_type` to the interface `ListInstances`
+  - Add the enum values `GaussDB` to the response parameter `type` to the interface `ListBackups`
+
+### HuaweiCloud SDK GSL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `all_billing_cycle` to the interface `ListBackPools`
+  - Add the request parameter `all_billing_cycle` to the interface `ListSimPools`
+
+### HuaweiCloud SDK IMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `IsoImage` to the request parameter `type` to the interface `CreateImage`
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - Support the interfaces `CreateInstanceByEngine`, `ShowEngineInstanceExtendProductInfo`, `ResizeEngineInstance`, `CreateReassignmentTask`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `sasl_enabled_mechanisms` to the interface `ListInstances`
+  - The request parameter `kafka_manager_user`, `kafka_manager_password` changed to not required of the interface `CreatePostPaidInstance`
+  - Add the response parameter `sasl_enabled_mechanisms` to the interface `ShowInstance`
+
+### HuaweiCloud SDK Moderation
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `white_glossaries` to the interface `RunTextModeration`
+
 # 3.1.23 2023-01-19
 
 ### HuaweiCloud SDK CCM

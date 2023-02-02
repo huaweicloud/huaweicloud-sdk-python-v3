@@ -84,7 +84,7 @@ class CreateInstanceRespItem:
         :type backup_strategy: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategyForResponse`
         :param flavor_ref: 规格码。
         :type flavor_ref: str
-        :param availability_zone: 可用区ID。GaussDB(for openGauss)取值范围：非空，可选部署在同一可用区或三个不同可用区，可用区之间用逗号隔开。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
+        :param availability_zone: 可用区ID。GaussDB取值范围：非空，可选部署在同一可用区或三个不同可用区，可用区之间用逗号隔开。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
         :type availability_zone: str
         :param vpc_id: 虚拟私有云ID。
         :type vpc_id: str
@@ -363,7 +363,7 @@ class CreateInstanceRespItem:
     def availability_zone(self):
         """Gets the availability_zone of this CreateInstanceRespItem.
 
-        可用区ID。GaussDB(for openGauss)取值范围：非空，可选部署在同一可用区或三个不同可用区，可用区之间用逗号隔开。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
+        可用区ID。GaussDB取值范围：非空，可选部署在同一可用区或三个不同可用区，可用区之间用逗号隔开。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
         :return: The availability_zone of this CreateInstanceRespItem.
         :rtype: str
@@ -374,7 +374,7 @@ class CreateInstanceRespItem:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this CreateInstanceRespItem.
 
-        可用区ID。GaussDB(for openGauss)取值范围：非空，可选部署在同一可用区或三个不同可用区，可用区之间用逗号隔开。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
+        可用区ID。GaussDB取值范围：非空，可选部署在同一可用区或三个不同可用区，可用区之间用逗号隔开。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
         :param availability_zone: The availability_zone of this CreateInstanceRespItem.
         :type availability_zone: str

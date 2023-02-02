@@ -23,29 +23,37 @@ class ListStackEventsRequest:
         'client_request_id': 'str',
         'stack_name': 'str',
         'stack_id': 'str',
-        'deployment_id': 'str'
+        'deployment_id': 'str',
+        'filter': 'str',
+        'field': 'str'
     }
 
     attribute_map = {
         'client_request_id': 'Client-Request-Id',
         'stack_name': 'stack_name',
         'stack_id': 'stack_id',
-        'deployment_id': 'deployment_id'
+        'deployment_id': 'deployment_id',
+        'filter': 'filter',
+        'field': 'field'
     }
 
-    def __init__(self, client_request_id=None, stack_name=None, stack_id=None, deployment_id=None):
+    def __init__(self, client_request_id=None, stack_name=None, stack_id=None, deployment_id=None, filter=None, field=None):
         """ListStackEventsRequest
 
         The model defined in huaweicloud sdk
 
         :param client_request_id: 用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
         :type client_request_id: str
-        :param stack_name: 用户希望操作的资源栈名
+        :param stack_name: 用户希望操作的资源栈名称
         :type stack_name: str
-        :param stack_id: 用户希望描述的栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
+        :param stack_id: 用户希望描述的资源栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
         :type stack_id: str
-        :param deployment_id: 部署时API返回的id(uuid)。如果deployment_id不存在，则返回整个栈从生成到现在的所有更新状态
+        :param deployment_id: 部署时API返回的id（uuid）
         :type deployment_id: str
+        :param filter: 过滤条件  * 与（AND）运算符使用逗号（，）定义 * 或（OR）运算符使用竖线（|）定义，OR运算符优先级高于AND运算符 * 不支持括号 * 过滤运算符仅支持等号（&#x3D;&#x3D;） * 过滤参数名及其值仅支持包含大小写英文、数字和下划线 * 过滤条件中禁止使用分号，若有分号，则此条过滤会被忽略 * 一个过滤参数仅能与一个与条件相关，一个与条件中的多个或条件仅能与一个过滤参数相关 
+        :type filter: str
+        :param field: 选择的属性名称  * 属性名仅支持包含大小写英文、数字和下划线 * 多个属性名称之间以逗号（，）分隔 
+        :type field: str
         """
         
         
@@ -54,6 +62,8 @@ class ListStackEventsRequest:
         self._stack_name = None
         self._stack_id = None
         self._deployment_id = None
+        self._filter = None
+        self._field = None
         self.discriminator = None
 
         self.client_request_id = client_request_id
@@ -62,6 +72,10 @@ class ListStackEventsRequest:
             self.stack_id = stack_id
         if deployment_id is not None:
             self.deployment_id = deployment_id
+        if filter is not None:
+            self.filter = filter
+        if field is not None:
+            self.field = field
 
     @property
     def client_request_id(self):
@@ -89,7 +103,7 @@ class ListStackEventsRequest:
     def stack_name(self):
         """Gets the stack_name of this ListStackEventsRequest.
 
-        用户希望操作的资源栈名
+        用户希望操作的资源栈名称
 
         :return: The stack_name of this ListStackEventsRequest.
         :rtype: str
@@ -100,7 +114,7 @@ class ListStackEventsRequest:
     def stack_name(self, stack_name):
         """Sets the stack_name of this ListStackEventsRequest.
 
-        用户希望操作的资源栈名
+        用户希望操作的资源栈名称
 
         :param stack_name: The stack_name of this ListStackEventsRequest.
         :type stack_name: str
@@ -111,7 +125,7 @@ class ListStackEventsRequest:
     def stack_id(self):
         """Gets the stack_id of this ListStackEventsRequest.
 
-        用户希望描述的栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
+        用户希望描述的资源栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
 
         :return: The stack_id of this ListStackEventsRequest.
         :rtype: str
@@ -122,7 +136,7 @@ class ListStackEventsRequest:
     def stack_id(self, stack_id):
         """Sets the stack_id of this ListStackEventsRequest.
 
-        用户希望描述的栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
+        用户希望描述的资源栈的Id。若stack_name和stack_id同时存在，则资源编排服务会检查是否两个匹配，否则返回400
 
         :param stack_id: The stack_id of this ListStackEventsRequest.
         :type stack_id: str
@@ -133,7 +147,7 @@ class ListStackEventsRequest:
     def deployment_id(self):
         """Gets the deployment_id of this ListStackEventsRequest.
 
-        部署时API返回的id(uuid)。如果deployment_id不存在，则返回整个栈从生成到现在的所有更新状态
+        部署时API返回的id（uuid）
 
         :return: The deployment_id of this ListStackEventsRequest.
         :rtype: str
@@ -144,12 +158,56 @@ class ListStackEventsRequest:
     def deployment_id(self, deployment_id):
         """Sets the deployment_id of this ListStackEventsRequest.
 
-        部署时API返回的id(uuid)。如果deployment_id不存在，则返回整个栈从生成到现在的所有更新状态
+        部署时API返回的id（uuid）
 
         :param deployment_id: The deployment_id of this ListStackEventsRequest.
         :type deployment_id: str
         """
         self._deployment_id = deployment_id
+
+    @property
+    def filter(self):
+        """Gets the filter of this ListStackEventsRequest.
+
+        过滤条件  * 与（AND）运算符使用逗号（，）定义 * 或（OR）运算符使用竖线（|）定义，OR运算符优先级高于AND运算符 * 不支持括号 * 过滤运算符仅支持等号（==） * 过滤参数名及其值仅支持包含大小写英文、数字和下划线 * 过滤条件中禁止使用分号，若有分号，则此条过滤会被忽略 * 一个过滤参数仅能与一个与条件相关，一个与条件中的多个或条件仅能与一个过滤参数相关 
+
+        :return: The filter of this ListStackEventsRequest.
+        :rtype: str
+        """
+        return self._filter
+
+    @filter.setter
+    def filter(self, filter):
+        """Sets the filter of this ListStackEventsRequest.
+
+        过滤条件  * 与（AND）运算符使用逗号（，）定义 * 或（OR）运算符使用竖线（|）定义，OR运算符优先级高于AND运算符 * 不支持括号 * 过滤运算符仅支持等号（==） * 过滤参数名及其值仅支持包含大小写英文、数字和下划线 * 过滤条件中禁止使用分号，若有分号，则此条过滤会被忽略 * 一个过滤参数仅能与一个与条件相关，一个与条件中的多个或条件仅能与一个过滤参数相关 
+
+        :param filter: The filter of this ListStackEventsRequest.
+        :type filter: str
+        """
+        self._filter = filter
+
+    @property
+    def field(self):
+        """Gets the field of this ListStackEventsRequest.
+
+        选择的属性名称  * 属性名仅支持包含大小写英文、数字和下划线 * 多个属性名称之间以逗号（，）分隔 
+
+        :return: The field of this ListStackEventsRequest.
+        :rtype: str
+        """
+        return self._field
+
+    @field.setter
+    def field(self, field):
+        """Sets the field of this ListStackEventsRequest.
+
+        选择的属性名称  * 属性名仅支持包含大小写英文、数字和下划线 * 多个属性名称之间以逗号（，）分隔 
+
+        :param field: The field of this ListStackEventsRequest.
+        :type field: str
+        """
+        self._field = field
 
     def to_dict(self):
         """Returns the model properties as a dict"""

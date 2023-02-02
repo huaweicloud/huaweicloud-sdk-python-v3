@@ -38,7 +38,7 @@ class DeployStackRequest:
 
         :param client_request_id: 用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
         :type client_request_id: str
-        :param stack_name: 用户希望操作的资源栈名
+        :param stack_name: 用户希望操作的资源栈名称
         :type stack_name: str
         :param body: Body of the DeployStackRequest
         :type body: :class:`huaweicloudsdkaos.v1.DeployStackRequestBody`
@@ -82,7 +82,7 @@ class DeployStackRequest:
     def stack_name(self):
         """Gets the stack_name of this DeployStackRequest.
 
-        用户希望操作的资源栈名
+        用户希望操作的资源栈名称
 
         :return: The stack_name of this DeployStackRequest.
         :rtype: str
@@ -93,7 +93,7 @@ class DeployStackRequest:
     def stack_name(self, stack_name):
         """Sets the stack_name of this DeployStackRequest.
 
-        用户希望操作的资源栈名
+        用户希望操作的资源栈名称
 
         :param stack_name: The stack_name of this DeployStackRequest.
         :type stack_name: str

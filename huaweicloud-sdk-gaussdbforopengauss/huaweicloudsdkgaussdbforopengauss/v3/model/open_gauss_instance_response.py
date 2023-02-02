@@ -82,7 +82,7 @@ class OpenGaussInstanceResponse:
         :type port: str
         :param enterprise_project_id: 项目标签。
         :type enterprise_project_id: str
-        :param flavor_ref: 规格码，取值范围：非空。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB(for openGauss)的“规格编码”列内容获取。
+        :param flavor_ref: 规格码，取值范围：非空。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB 的“规格编码”列内容获取。
         :type flavor_ref: str
         :param volume: 
         :type volume: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussVolumeResponse`
@@ -331,7 +331,7 @@ class OpenGaussInstanceResponse:
     def flavor_ref(self):
         """Gets the flavor_ref of this OpenGaussInstanceResponse.
 
-        规格码，取值范围：非空。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB(for openGauss)的“规格编码”列内容获取。
+        规格码，取值范围：非空。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB 的“规格编码”列内容获取。
 
         :return: The flavor_ref of this OpenGaussInstanceResponse.
         :rtype: str
@@ -342,7 +342,7 @@ class OpenGaussInstanceResponse:
     def flavor_ref(self, flavor_ref):
         """Sets the flavor_ref of this OpenGaussInstanceResponse.
 
-        规格码，取值范围：非空。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB(for openGauss)的“规格编码”列内容获取。
+        规格码，取值范围：非空。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB 的“规格编码”列内容获取。
 
         :param flavor_ref: The flavor_ref of this OpenGaussInstanceResponse.
         :type flavor_ref: str

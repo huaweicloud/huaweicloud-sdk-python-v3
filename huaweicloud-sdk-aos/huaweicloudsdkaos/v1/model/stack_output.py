@@ -40,15 +40,15 @@ class StackOutput:
 
         The model defined in huaweicloud sdk
 
-        :param name: 资源栈输出的name，由用户自己在模板中定义
+        :param name: 资源栈输出的名称，由用户在模板中定义  以 hcl 模板为例，name 为 vpc_id  &#x60;&#x60;&#x60;hcl output \&quot;vpc_id\&quot; {   value &#x3D; huaweicloud_vpc.my_hello_world_vpc.id } &#x60;&#x60;&#x60;  以 json 模板为例，name 为 vpc_id &#x60;&#x60;&#x60;json {   \&quot;output\&quot;: {     \&quot;vpc_id\&quot;: [       {         \&quot;value\&quot;: \&quot;${huaweicloud_vpc.my_hello_world_vpc.id}\&quot;       }     ]   } } &#x60;&#x60;&#x60; 
         :type name: str
-        :param description: 描述
+        :param description: 资源栈输出的描述，由用户在模板中定义
         :type description: str
-        :param type: 输出的类型
+        :param type: 资源栈输出的类型
         :type type: str
-        :param value: 输出的值(json字符串)
+        :param value: 资源栈输出的值
         :type value: str
-        :param sensitive: 是否为敏感信息
+        :param sensitive: 标识该资源栈输出是否为敏感信息，由用户在模板中定义  若用户在模板中将该输出定义为sensitive，则返回体中该输出的value和type不会返回真实值，而是返回&#x60;&lt;sensitive&gt;&#x60; 
         :type sensitive: bool
         """
         
@@ -76,7 +76,7 @@ class StackOutput:
     def name(self):
         """Gets the name of this StackOutput.
 
-        资源栈输出的name，由用户自己在模板中定义
+        资源栈输出的名称，由用户在模板中定义  以 hcl 模板为例，name 为 vpc_id  ```hcl output \"vpc_id\" {   value = huaweicloud_vpc.my_hello_world_vpc.id } ```  以 json 模板为例，name 为 vpc_id ```json {   \"output\": {     \"vpc_id\": [       {         \"value\": \"${huaweicloud_vpc.my_hello_world_vpc.id}\"       }     ]   } } ``` 
 
         :return: The name of this StackOutput.
         :rtype: str
@@ -87,7 +87,7 @@ class StackOutput:
     def name(self, name):
         """Sets the name of this StackOutput.
 
-        资源栈输出的name，由用户自己在模板中定义
+        资源栈输出的名称，由用户在模板中定义  以 hcl 模板为例，name 为 vpc_id  ```hcl output \"vpc_id\" {   value = huaweicloud_vpc.my_hello_world_vpc.id } ```  以 json 模板为例，name 为 vpc_id ```json {   \"output\": {     \"vpc_id\": [       {         \"value\": \"${huaweicloud_vpc.my_hello_world_vpc.id}\"       }     ]   } } ``` 
 
         :param name: The name of this StackOutput.
         :type name: str
@@ -98,7 +98,7 @@ class StackOutput:
     def description(self):
         """Gets the description of this StackOutput.
 
-        描述
+        资源栈输出的描述，由用户在模板中定义
 
         :return: The description of this StackOutput.
         :rtype: str
@@ -109,7 +109,7 @@ class StackOutput:
     def description(self, description):
         """Sets the description of this StackOutput.
 
-        描述
+        资源栈输出的描述，由用户在模板中定义
 
         :param description: The description of this StackOutput.
         :type description: str
@@ -120,7 +120,7 @@ class StackOutput:
     def type(self):
         """Gets the type of this StackOutput.
 
-        输出的类型
+        资源栈输出的类型
 
         :return: The type of this StackOutput.
         :rtype: str
@@ -131,7 +131,7 @@ class StackOutput:
     def type(self, type):
         """Sets the type of this StackOutput.
 
-        输出的类型
+        资源栈输出的类型
 
         :param type: The type of this StackOutput.
         :type type: str
@@ -142,7 +142,7 @@ class StackOutput:
     def value(self):
         """Gets the value of this StackOutput.
 
-        输出的值(json字符串)
+        资源栈输出的值
 
         :return: The value of this StackOutput.
         :rtype: str
@@ -153,7 +153,7 @@ class StackOutput:
     def value(self, value):
         """Sets the value of this StackOutput.
 
-        输出的值(json字符串)
+        资源栈输出的值
 
         :param value: The value of this StackOutput.
         :type value: str
@@ -164,7 +164,7 @@ class StackOutput:
     def sensitive(self):
         """Gets the sensitive of this StackOutput.
 
-        是否为敏感信息
+        标识该资源栈输出是否为敏感信息，由用户在模板中定义  若用户在模板中将该输出定义为sensitive，则返回体中该输出的value和type不会返回真实值，而是返回`<sensitive>` 
 
         :return: The sensitive of this StackOutput.
         :rtype: bool
@@ -175,7 +175,7 @@ class StackOutput:
     def sensitive(self, sensitive):
         """Sets the sensitive of this StackOutput.
 
-        是否为敏感信息
+        标识该资源栈输出是否为敏感信息，由用户在模板中定义  若用户在模板中将该输出定义为sensitive，则返回体中该输出的value和type不会返回真实值，而是返回`<sensitive>` 
 
         :param sensitive: The sensitive of this StackOutput.
         :type sensitive: bool

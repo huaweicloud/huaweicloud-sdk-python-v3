@@ -24,15 +24,15 @@ class GetStackMetadataResponse(SdkResponse):
         'stack_name': 'str',
         'description': 'str',
         'vars_structure': 'list[VarsStructure]',
-        'vars_uri_content': 'str',
         'vars_body': 'str',
-        'create_time': 'str',
-        'update_time': 'str',
         'enable_deletion_protection': 'bool',
         'enable_auto_rollback': 'bool',
         'status': 'str',
+        'agencies': 'list[Agency]',
         'status_message': 'str',
-        'agencies': 'list[Agency]'
+        'vars_uri_content': 'str',
+        'create_time': 'str',
+        'update_time': 'str'
     }
 
     attribute_map = {
@@ -40,48 +40,48 @@ class GetStackMetadataResponse(SdkResponse):
         'stack_name': 'stack_name',
         'description': 'description',
         'vars_structure': 'vars_structure',
-        'vars_uri_content': 'vars_uri_content',
         'vars_body': 'vars_body',
-        'create_time': 'create_time',
-        'update_time': 'update_time',
         'enable_deletion_protection': 'enable_deletion_protection',
         'enable_auto_rollback': 'enable_auto_rollback',
         'status': 'status',
+        'agencies': 'agencies',
         'status_message': 'status_message',
-        'agencies': 'agencies'
+        'vars_uri_content': 'vars_uri_content',
+        'create_time': 'create_time',
+        'update_time': 'update_time'
     }
 
-    def __init__(self, stack_id=None, stack_name=None, description=None, vars_structure=None, vars_uri_content=None, vars_body=None, create_time=None, update_time=None, enable_deletion_protection=None, enable_auto_rollback=None, status=None, status_message=None, agencies=None):
+    def __init__(self, stack_id=None, stack_name=None, description=None, vars_structure=None, vars_body=None, enable_deletion_protection=None, enable_auto_rollback=None, status=None, agencies=None, status_message=None, vars_uri_content=None, create_time=None, update_time=None):
         """GetStackMetadataResponse
 
         The model defined in huaweicloud sdk
 
-        :param stack_id: 栈的唯一Id
+        :param stack_id: 资源栈（stack）的唯一Id。  此Id由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给与的stack_id和当前资源栈的ID不一致，则返回400 
         :type stack_id: str
-        :param stack_name: 栈的名字
+        :param stack_name: 用户希望生成的资源栈的名字。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
         :type stack_name: str
-        :param description: 栈的描述，此描述为用户在创建资源栈时指定
+        :param description: 资源栈的描述。可用于客户识别自己的资源栈。
         :type description: str
-        :param vars_structure: 参数列表
+        :param vars_structure: HCL支持参数，即，同一个模板可以给予不同的参数而达到不同的效果。  * var_structure可以允许客户提交最简单的字符串类型的参数  * 资源编排服务支持vars_structure，vars_body和vars_uri，如果他们中声名了同一个变量，将报错400  * vars_structure中的值只支持简单的字符串类型，如果需要使用其他类型，需要用户自己在HCL引用时转换， 或者用户可以使用vars_uri、vars_body，vars_uri和vars_body中支持HCL支持的各种类型以及复杂结构  * 如果vars_structure过大，可以使用vars_uri  * 注意：vars_structure中默认不应该含有任何敏感信息，资源编排服务会直接明文使用、log、展示、存储对应的vars。如为敏感信息，建议设置encryption字段开启加密 
         :type vars_structure: list[:class:`huaweicloudsdkaos.v1.VarsStructure`]
-        :param vars_uri_content: vars文件中的内容
-        :type vars_uri_content: str
-        :param vars_body: terraform支持参数，即，同一个模板可以给予不同的参数而达到不同的效果。vars_body用于接收用户直接提交的tfvars文件内容
+        :param vars_body: HCL支持参数，即，同一个模板可以给予不同的参数而达到不同的效果  * vars_body使用HCL的tfvars格式，用户可以将“.tfvars”中的内容提交到vars_body中。具体tfvars格式见：https://www.terraform.io/language/values/variables#variable-definitions-tfvars-files  * 资源编排服务支持vars_structure，vars_body和vars_uri，如果他们中声名了同一个变量，将报错400  * 如果vars_body过大，可以使用vars_uri  * 如果vars中都是简单的字符串格式，可以使用var_structure  * 注意：vars_body中不应该含有任何敏感信息，资源编排服务会直接明文使用、log、展示、存储对应的vars。如为敏感信息，建议通过vars_structure并设置encryption字段传递 
         :type vars_body: str
-        :param create_time: 栈的生成时间，格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
-        :type create_time: str
-        :param update_time: 由于栈可以被更新，此处为上次更新时间，格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
-        :type update_time: str
-        :param enable_deletion_protection: 资源栈删除保护的目标状态
+        :param enable_deletion_protection: 删除保护的标识位，如果不传默认为false，即默认不开启资源栈删除保护（删除保护开启后资源栈不允许被删除）
         :type enable_deletion_protection: bool
-        :param enable_auto_rollback: 资源栈是否开启自动回滚的标识位
+        :param enable_auto_rollback: 自动回滚的标识位，如果不传默认为false，即默认不开启资源栈自动回滚（自动回滚开启后，如果部署失败，则会自动回滚，并返回上一个稳定状态）
         :type enable_auto_rollback: bool
-        :param status: 资源栈的执行状态     * &#x60;DEPLOYMENT_IN_PROGRESS&#x60; - 正在部署     * &#x60;DEPLOYMENT_FAILED&#x60; - 部署失败。请于StatusMessage见更多详情     * &#x60;DEPLOYMENT_COMPLETE &#x60; - 部署结束     * &#x60;ROLLBACK_IN_PROGRESS&#x60; - 正在回滚     * &#x60;ROLLBACK_FAILED&#x60; - 回滚失败。请于StatusMessage见更多详情     * &#x60;ROLLBACK_COMPLETE&#x60; - 回滚完成     * &#x60;DELETION_IN_PROGRESS&#x60; - 正在删除     * &#x60;DELETION_FAILED&#x60; - 删除失败     * &#x60;CREATION_COMPLETE&#x60; - 生成完成，并没有任何部署
+        :param status: 资源栈的状态     * &#x60;CREATION_COMPLETE&#x60; - 生成空资源栈完成，并没有任何部署     * &#x60;DEPLOYMENT_IN_PROGRESS&#x60; - 正在部署，请等待     * &#x60;DEPLOYMENT_FAILED&#x60; - 部署失败。请于status_message见错误信息汇总，或者调用ListStackEvents获得事件详情     * &#x60;DEPLOYMENT_COMPLETE&#x60; - 部署完成     * &#x60;ROLLBACK_IN_PROGRESS&#x60; - 部署失败，正在回滚，请等待     * &#x60;ROLLBACK_FAILED&#x60; - 回滚失败。请于status_message见错误信息汇总，或者调用ListStackEvents获得事件详情     * &#x60;ROLLBACK_COMPLETE&#x60; - 回滚完成     * &#x60;DELETION_IN_PROGRESS&#x60; - 正在删除，请等待     * &#x60;DELETION_FAILED&#x60; - 删除失败。请于status_message见错误信息汇总，或者调用ListStackEvents获得事件详情
         :type status: str
-        :param status_message: 展示更多细节的信息
-        :type status_message: str
-        :param agencies: 委托授权的信息
+        :param agencies: 委托授权的信息。
         :type agencies: list[:class:`huaweicloudsdkaos.v1.Agency`]
+        :param status_message: 当资源栈的状态为任意失败状态（即以 &#x60;FAILED&#x60; 结尾时），将会展示简要的错误信息总结以供debug
+        :type status_message: str
+        :param vars_uri_content: vars_uri对应的文件内容
+        :type vars_uri_content: str
+        :param create_time: 资源栈的生成时间 格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z 
+        :type create_time: str
+        :param update_time: 资源栈的更新时间（更新场景包括元数据更新场景和部署场景） 格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z 
+        :type update_time: str
         """
         
         super(GetStackMetadataResponse, self).__init__()
@@ -90,49 +90,48 @@ class GetStackMetadataResponse(SdkResponse):
         self._stack_name = None
         self._description = None
         self._vars_structure = None
-        self._vars_uri_content = None
         self._vars_body = None
-        self._create_time = None
-        self._update_time = None
         self._enable_deletion_protection = None
         self._enable_auto_rollback = None
         self._status = None
-        self._status_message = None
         self._agencies = None
+        self._status_message = None
+        self._vars_uri_content = None
+        self._create_time = None
+        self._update_time = None
         self.discriminator = None
 
         if stack_id is not None:
             self.stack_id = stack_id
-        if stack_name is not None:
-            self.stack_name = stack_name
+        self.stack_name = stack_name
         if description is not None:
             self.description = description
         if vars_structure is not None:
             self.vars_structure = vars_structure
-        if vars_uri_content is not None:
-            self.vars_uri_content = vars_uri_content
         if vars_body is not None:
             self.vars_body = vars_body
-        if create_time is not None:
-            self.create_time = create_time
-        if update_time is not None:
-            self.update_time = update_time
         if enable_deletion_protection is not None:
             self.enable_deletion_protection = enable_deletion_protection
         if enable_auto_rollback is not None:
             self.enable_auto_rollback = enable_auto_rollback
         if status is not None:
             self.status = status
-        if status_message is not None:
-            self.status_message = status_message
         if agencies is not None:
             self.agencies = agencies
+        if status_message is not None:
+            self.status_message = status_message
+        if vars_uri_content is not None:
+            self.vars_uri_content = vars_uri_content
+        if create_time is not None:
+            self.create_time = create_time
+        if update_time is not None:
+            self.update_time = update_time
 
     @property
     def stack_id(self):
         """Gets the stack_id of this GetStackMetadataResponse.
 
-        栈的唯一Id
+        资源栈（stack）的唯一Id。  此Id由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给与的stack_id和当前资源栈的ID不一致，则返回400 
 
         :return: The stack_id of this GetStackMetadataResponse.
         :rtype: str
@@ -143,7 +142,7 @@ class GetStackMetadataResponse(SdkResponse):
     def stack_id(self, stack_id):
         """Sets the stack_id of this GetStackMetadataResponse.
 
-        栈的唯一Id
+        资源栈（stack）的唯一Id。  此Id由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给与的stack_id和当前资源栈的ID不一致，则返回400 
 
         :param stack_id: The stack_id of this GetStackMetadataResponse.
         :type stack_id: str
@@ -154,7 +153,7 @@ class GetStackMetadataResponse(SdkResponse):
     def stack_name(self):
         """Gets the stack_name of this GetStackMetadataResponse.
 
-        栈的名字
+        用户希望生成的资源栈的名字。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
         :return: The stack_name of this GetStackMetadataResponse.
         :rtype: str
@@ -165,7 +164,7 @@ class GetStackMetadataResponse(SdkResponse):
     def stack_name(self, stack_name):
         """Sets the stack_name of this GetStackMetadataResponse.
 
-        栈的名字
+        用户希望生成的资源栈的名字。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
         :param stack_name: The stack_name of this GetStackMetadataResponse.
         :type stack_name: str
@@ -176,7 +175,7 @@ class GetStackMetadataResponse(SdkResponse):
     def description(self):
         """Gets the description of this GetStackMetadataResponse.
 
-        栈的描述，此描述为用户在创建资源栈时指定
+        资源栈的描述。可用于客户识别自己的资源栈。
 
         :return: The description of this GetStackMetadataResponse.
         :rtype: str
@@ -187,7 +186,7 @@ class GetStackMetadataResponse(SdkResponse):
     def description(self, description):
         """Sets the description of this GetStackMetadataResponse.
 
-        栈的描述，此描述为用户在创建资源栈时指定
+        资源栈的描述。可用于客户识别自己的资源栈。
 
         :param description: The description of this GetStackMetadataResponse.
         :type description: str
@@ -198,7 +197,7 @@ class GetStackMetadataResponse(SdkResponse):
     def vars_structure(self):
         """Gets the vars_structure of this GetStackMetadataResponse.
 
-        参数列表
+        HCL支持参数，即，同一个模板可以给予不同的参数而达到不同的效果。  * var_structure可以允许客户提交最简单的字符串类型的参数  * 资源编排服务支持vars_structure，vars_body和vars_uri，如果他们中声名了同一个变量，将报错400  * vars_structure中的值只支持简单的字符串类型，如果需要使用其他类型，需要用户自己在HCL引用时转换， 或者用户可以使用vars_uri、vars_body，vars_uri和vars_body中支持HCL支持的各种类型以及复杂结构  * 如果vars_structure过大，可以使用vars_uri  * 注意：vars_structure中默认不应该含有任何敏感信息，资源编排服务会直接明文使用、log、展示、存储对应的vars。如为敏感信息，建议设置encryption字段开启加密 
 
         :return: The vars_structure of this GetStackMetadataResponse.
         :rtype: list[:class:`huaweicloudsdkaos.v1.VarsStructure`]
@@ -209,7 +208,7 @@ class GetStackMetadataResponse(SdkResponse):
     def vars_structure(self, vars_structure):
         """Sets the vars_structure of this GetStackMetadataResponse.
 
-        参数列表
+        HCL支持参数，即，同一个模板可以给予不同的参数而达到不同的效果。  * var_structure可以允许客户提交最简单的字符串类型的参数  * 资源编排服务支持vars_structure，vars_body和vars_uri，如果他们中声名了同一个变量，将报错400  * vars_structure中的值只支持简单的字符串类型，如果需要使用其他类型，需要用户自己在HCL引用时转换， 或者用户可以使用vars_uri、vars_body，vars_uri和vars_body中支持HCL支持的各种类型以及复杂结构  * 如果vars_structure过大，可以使用vars_uri  * 注意：vars_structure中默认不应该含有任何敏感信息，资源编排服务会直接明文使用、log、展示、存储对应的vars。如为敏感信息，建议设置encryption字段开启加密 
 
         :param vars_structure: The vars_structure of this GetStackMetadataResponse.
         :type vars_structure: list[:class:`huaweicloudsdkaos.v1.VarsStructure`]
@@ -217,32 +216,10 @@ class GetStackMetadataResponse(SdkResponse):
         self._vars_structure = vars_structure
 
     @property
-    def vars_uri_content(self):
-        """Gets the vars_uri_content of this GetStackMetadataResponse.
-
-        vars文件中的内容
-
-        :return: The vars_uri_content of this GetStackMetadataResponse.
-        :rtype: str
-        """
-        return self._vars_uri_content
-
-    @vars_uri_content.setter
-    def vars_uri_content(self, vars_uri_content):
-        """Sets the vars_uri_content of this GetStackMetadataResponse.
-
-        vars文件中的内容
-
-        :param vars_uri_content: The vars_uri_content of this GetStackMetadataResponse.
-        :type vars_uri_content: str
-        """
-        self._vars_uri_content = vars_uri_content
-
-    @property
     def vars_body(self):
         """Gets the vars_body of this GetStackMetadataResponse.
 
-        terraform支持参数，即，同一个模板可以给予不同的参数而达到不同的效果。vars_body用于接收用户直接提交的tfvars文件内容
+        HCL支持参数，即，同一个模板可以给予不同的参数而达到不同的效果  * vars_body使用HCL的tfvars格式，用户可以将“.tfvars”中的内容提交到vars_body中。具体tfvars格式见：https://www.terraform.io/language/values/variables#variable-definitions-tfvars-files  * 资源编排服务支持vars_structure，vars_body和vars_uri，如果他们中声名了同一个变量，将报错400  * 如果vars_body过大，可以使用vars_uri  * 如果vars中都是简单的字符串格式，可以使用var_structure  * 注意：vars_body中不应该含有任何敏感信息，资源编排服务会直接明文使用、log、展示、存储对应的vars。如为敏感信息，建议通过vars_structure并设置encryption字段传递 
 
         :return: The vars_body of this GetStackMetadataResponse.
         :rtype: str
@@ -253,7 +230,7 @@ class GetStackMetadataResponse(SdkResponse):
     def vars_body(self, vars_body):
         """Sets the vars_body of this GetStackMetadataResponse.
 
-        terraform支持参数，即，同一个模板可以给予不同的参数而达到不同的效果。vars_body用于接收用户直接提交的tfvars文件内容
+        HCL支持参数，即，同一个模板可以给予不同的参数而达到不同的效果  * vars_body使用HCL的tfvars格式，用户可以将“.tfvars”中的内容提交到vars_body中。具体tfvars格式见：https://www.terraform.io/language/values/variables#variable-definitions-tfvars-files  * 资源编排服务支持vars_structure，vars_body和vars_uri，如果他们中声名了同一个变量，将报错400  * 如果vars_body过大，可以使用vars_uri  * 如果vars中都是简单的字符串格式，可以使用var_structure  * 注意：vars_body中不应该含有任何敏感信息，资源编排服务会直接明文使用、log、展示、存储对应的vars。如为敏感信息，建议通过vars_structure并设置encryption字段传递 
 
         :param vars_body: The vars_body of this GetStackMetadataResponse.
         :type vars_body: str
@@ -261,54 +238,10 @@ class GetStackMetadataResponse(SdkResponse):
         self._vars_body = vars_body
 
     @property
-    def create_time(self):
-        """Gets the create_time of this GetStackMetadataResponse.
-
-        栈的生成时间，格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
-
-        :return: The create_time of this GetStackMetadataResponse.
-        :rtype: str
-        """
-        return self._create_time
-
-    @create_time.setter
-    def create_time(self, create_time):
-        """Sets the create_time of this GetStackMetadataResponse.
-
-        栈的生成时间，格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
-
-        :param create_time: The create_time of this GetStackMetadataResponse.
-        :type create_time: str
-        """
-        self._create_time = create_time
-
-    @property
-    def update_time(self):
-        """Gets the update_time of this GetStackMetadataResponse.
-
-        由于栈可以被更新，此处为上次更新时间，格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
-
-        :return: The update_time of this GetStackMetadataResponse.
-        :rtype: str
-        """
-        return self._update_time
-
-    @update_time.setter
-    def update_time(self, update_time):
-        """Sets the update_time of this GetStackMetadataResponse.
-
-        由于栈可以被更新，此处为上次更新时间，格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
-
-        :param update_time: The update_time of this GetStackMetadataResponse.
-        :type update_time: str
-        """
-        self._update_time = update_time
-
-    @property
     def enable_deletion_protection(self):
         """Gets the enable_deletion_protection of this GetStackMetadataResponse.
 
-        资源栈删除保护的目标状态
+        删除保护的标识位，如果不传默认为false，即默认不开启资源栈删除保护（删除保护开启后资源栈不允许被删除）
 
         :return: The enable_deletion_protection of this GetStackMetadataResponse.
         :rtype: bool
@@ -319,7 +252,7 @@ class GetStackMetadataResponse(SdkResponse):
     def enable_deletion_protection(self, enable_deletion_protection):
         """Sets the enable_deletion_protection of this GetStackMetadataResponse.
 
-        资源栈删除保护的目标状态
+        删除保护的标识位，如果不传默认为false，即默认不开启资源栈删除保护（删除保护开启后资源栈不允许被删除）
 
         :param enable_deletion_protection: The enable_deletion_protection of this GetStackMetadataResponse.
         :type enable_deletion_protection: bool
@@ -330,7 +263,7 @@ class GetStackMetadataResponse(SdkResponse):
     def enable_auto_rollback(self):
         """Gets the enable_auto_rollback of this GetStackMetadataResponse.
 
-        资源栈是否开启自动回滚的标识位
+        自动回滚的标识位，如果不传默认为false，即默认不开启资源栈自动回滚（自动回滚开启后，如果部署失败，则会自动回滚，并返回上一个稳定状态）
 
         :return: The enable_auto_rollback of this GetStackMetadataResponse.
         :rtype: bool
@@ -341,7 +274,7 @@ class GetStackMetadataResponse(SdkResponse):
     def enable_auto_rollback(self, enable_auto_rollback):
         """Sets the enable_auto_rollback of this GetStackMetadataResponse.
 
-        资源栈是否开启自动回滚的标识位
+        自动回滚的标识位，如果不传默认为false，即默认不开启资源栈自动回滚（自动回滚开启后，如果部署失败，则会自动回滚，并返回上一个稳定状态）
 
         :param enable_auto_rollback: The enable_auto_rollback of this GetStackMetadataResponse.
         :type enable_auto_rollback: bool
@@ -352,7 +285,7 @@ class GetStackMetadataResponse(SdkResponse):
     def status(self):
         """Gets the status of this GetStackMetadataResponse.
 
-        资源栈的执行状态     * `DEPLOYMENT_IN_PROGRESS` - 正在部署     * `DEPLOYMENT_FAILED` - 部署失败。请于StatusMessage见更多详情     * `DEPLOYMENT_COMPLETE ` - 部署结束     * `ROLLBACK_IN_PROGRESS` - 正在回滚     * `ROLLBACK_FAILED` - 回滚失败。请于StatusMessage见更多详情     * `ROLLBACK_COMPLETE` - 回滚完成     * `DELETION_IN_PROGRESS` - 正在删除     * `DELETION_FAILED` - 删除失败     * `CREATION_COMPLETE` - 生成完成，并没有任何部署
+        资源栈的状态     * `CREATION_COMPLETE` - 生成空资源栈完成，并没有任何部署     * `DEPLOYMENT_IN_PROGRESS` - 正在部署，请等待     * `DEPLOYMENT_FAILED` - 部署失败。请于status_message见错误信息汇总，或者调用ListStackEvents获得事件详情     * `DEPLOYMENT_COMPLETE` - 部署完成     * `ROLLBACK_IN_PROGRESS` - 部署失败，正在回滚，请等待     * `ROLLBACK_FAILED` - 回滚失败。请于status_message见错误信息汇总，或者调用ListStackEvents获得事件详情     * `ROLLBACK_COMPLETE` - 回滚完成     * `DELETION_IN_PROGRESS` - 正在删除，请等待     * `DELETION_FAILED` - 删除失败。请于status_message见错误信息汇总，或者调用ListStackEvents获得事件详情
 
         :return: The status of this GetStackMetadataResponse.
         :rtype: str
@@ -363,7 +296,7 @@ class GetStackMetadataResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this GetStackMetadataResponse.
 
-        资源栈的执行状态     * `DEPLOYMENT_IN_PROGRESS` - 正在部署     * `DEPLOYMENT_FAILED` - 部署失败。请于StatusMessage见更多详情     * `DEPLOYMENT_COMPLETE ` - 部署结束     * `ROLLBACK_IN_PROGRESS` - 正在回滚     * `ROLLBACK_FAILED` - 回滚失败。请于StatusMessage见更多详情     * `ROLLBACK_COMPLETE` - 回滚完成     * `DELETION_IN_PROGRESS` - 正在删除     * `DELETION_FAILED` - 删除失败     * `CREATION_COMPLETE` - 生成完成，并没有任何部署
+        资源栈的状态     * `CREATION_COMPLETE` - 生成空资源栈完成，并没有任何部署     * `DEPLOYMENT_IN_PROGRESS` - 正在部署，请等待     * `DEPLOYMENT_FAILED` - 部署失败。请于status_message见错误信息汇总，或者调用ListStackEvents获得事件详情     * `DEPLOYMENT_COMPLETE` - 部署完成     * `ROLLBACK_IN_PROGRESS` - 部署失败，正在回滚，请等待     * `ROLLBACK_FAILED` - 回滚失败。请于status_message见错误信息汇总，或者调用ListStackEvents获得事件详情     * `ROLLBACK_COMPLETE` - 回滚完成     * `DELETION_IN_PROGRESS` - 正在删除，请等待     * `DELETION_FAILED` - 删除失败。请于status_message见错误信息汇总，或者调用ListStackEvents获得事件详情
 
         :param status: The status of this GetStackMetadataResponse.
         :type status: str
@@ -371,32 +304,10 @@ class GetStackMetadataResponse(SdkResponse):
         self._status = status
 
     @property
-    def status_message(self):
-        """Gets the status_message of this GetStackMetadataResponse.
-
-        展示更多细节的信息
-
-        :return: The status_message of this GetStackMetadataResponse.
-        :rtype: str
-        """
-        return self._status_message
-
-    @status_message.setter
-    def status_message(self, status_message):
-        """Sets the status_message of this GetStackMetadataResponse.
-
-        展示更多细节的信息
-
-        :param status_message: The status_message of this GetStackMetadataResponse.
-        :type status_message: str
-        """
-        self._status_message = status_message
-
-    @property
     def agencies(self):
         """Gets the agencies of this GetStackMetadataResponse.
 
-        委托授权的信息
+        委托授权的信息。
 
         :return: The agencies of this GetStackMetadataResponse.
         :rtype: list[:class:`huaweicloudsdkaos.v1.Agency`]
@@ -407,12 +318,100 @@ class GetStackMetadataResponse(SdkResponse):
     def agencies(self, agencies):
         """Sets the agencies of this GetStackMetadataResponse.
 
-        委托授权的信息
+        委托授权的信息。
 
         :param agencies: The agencies of this GetStackMetadataResponse.
         :type agencies: list[:class:`huaweicloudsdkaos.v1.Agency`]
         """
         self._agencies = agencies
+
+    @property
+    def status_message(self):
+        """Gets the status_message of this GetStackMetadataResponse.
+
+        当资源栈的状态为任意失败状态（即以 `FAILED` 结尾时），将会展示简要的错误信息总结以供debug
+
+        :return: The status_message of this GetStackMetadataResponse.
+        :rtype: str
+        """
+        return self._status_message
+
+    @status_message.setter
+    def status_message(self, status_message):
+        """Sets the status_message of this GetStackMetadataResponse.
+
+        当资源栈的状态为任意失败状态（即以 `FAILED` 结尾时），将会展示简要的错误信息总结以供debug
+
+        :param status_message: The status_message of this GetStackMetadataResponse.
+        :type status_message: str
+        """
+        self._status_message = status_message
+
+    @property
+    def vars_uri_content(self):
+        """Gets the vars_uri_content of this GetStackMetadataResponse.
+
+        vars_uri对应的文件内容
+
+        :return: The vars_uri_content of this GetStackMetadataResponse.
+        :rtype: str
+        """
+        return self._vars_uri_content
+
+    @vars_uri_content.setter
+    def vars_uri_content(self, vars_uri_content):
+        """Sets the vars_uri_content of this GetStackMetadataResponse.
+
+        vars_uri对应的文件内容
+
+        :param vars_uri_content: The vars_uri_content of this GetStackMetadataResponse.
+        :type vars_uri_content: str
+        """
+        self._vars_uri_content = vars_uri_content
+
+    @property
+    def create_time(self):
+        """Gets the create_time of this GetStackMetadataResponse.
+
+        资源栈的生成时间 格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z 
+
+        :return: The create_time of this GetStackMetadataResponse.
+        :rtype: str
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        """Sets the create_time of this GetStackMetadataResponse.
+
+        资源栈的生成时间 格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z 
+
+        :param create_time: The create_time of this GetStackMetadataResponse.
+        :type create_time: str
+        """
+        self._create_time = create_time
+
+    @property
+    def update_time(self):
+        """Gets the update_time of this GetStackMetadataResponse.
+
+        资源栈的更新时间（更新场景包括元数据更新场景和部署场景） 格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z 
+
+        :return: The update_time of this GetStackMetadataResponse.
+        :rtype: str
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        """Sets the update_time of this GetStackMetadataResponse.
+
+        资源栈的更新时间（更新场景包括元数据更新场景和部署场景） 格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z 
+
+        :param update_time: The update_time of this GetStackMetadataResponse.
+        :type update_time: str
+        """
+        self._update_time = update_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -82,7 +82,7 @@ class OpenGaussInstanceRequest:
         :type ha: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussHa`
         :param configuration_id: 参数模板ID。当不传该参数时，使用系统默认的参数模板。
         :type configuration_id: str
-        :param port: 数据库对外开放的端口，不填默认为8000，可选范围为：1024-39998。限制端口： 2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,12016,12017,20049,20050,21731,21732,32122,32123,32124。  - GaussDB(for openGauss)数据库端口当前只支持设置为8000，当不传该参数时，默认端口为8000。
+        :param port: 数据库对外开放的端口，不填默认为8000，可选范围为：1024-39998。限制端口： 2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,12016,12017,20049,20050,21731,21732,32122,32123,32124。  - GaussDB数据库端口当前只支持设置为8000，当不传该参数时，默认端口为8000。
         :type port: str
         :param password: 数据库密码。必选。  取值范围：  &#39;非空； 至少包含大写字母（A-Z），小写字母（a-z），数字（0-9），非字母数字字符（限定为~!@#%^*-_&#x3D;+?,）四类字符中的三类字符；长度8~32个字符。&#39;  &#39;建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。&#39;
         :type password: str
@@ -92,13 +92,13 @@ class OpenGaussInstanceRequest:
         :type enterprise_project_id: str
         :param disk_encryption_id: 用于磁盘加密的密钥ID，默认为空。
         :type disk_encryption_id: str
-        :param flavor_ref: 规格码，取值范围：非空。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB(for openGauss)的“规格编码”列内容获取。
+        :param flavor_ref: 规格码，取值范围：非空。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB 的“规格编码”列内容获取。
         :type flavor_ref: str
         :param volume: 
         :type volume: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussVolume`
         :param region: 区域ID。  取值范围：非空，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
         :type region: str
-        :param availability_zone: 可用区ID。  GaussDB(for openGauss)取值范围：非空，可选部署在同一可用区或三个不同可用区，可用区之间用逗号隔开。详见示例。  - 部署在同一可用区：需要输入三个相同的可用区。例如：部署在“cn-north-4a”可用区，则需要在此处输入\&quot;cn-north-4a,cn-north-4a,cn-north-4a\&quot;。 - 部署在三个不同可用区：需要分别输入三个不同的可用区。 取值范围：非空，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
+        :param availability_zone: 可用区ID。  GaussDB取值范围：非空，可选部署在同一可用区或三个不同可用区，可用区之间用逗号隔开。详见示例。  - 部署在同一可用区：需要输入三个相同的可用区。例如：部署在“cn-north-4a”可用区，则需要在此处输入\&quot;cn-north-4a,cn-north-4a,cn-north-4a\&quot;。 - 部署在三个不同可用区：需要分别输入三个不同的可用区。 取值范围：非空，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
         :type availability_zone: str
         :param vpc_id: 虚拟私有云ID，获取方法如下：  - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html)。
         :type vpc_id: str
@@ -108,7 +108,7 @@ class OpenGaussInstanceRequest:
         :type security_group_id: str
         :param charge_info: 
         :type charge_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfo`
-        :param time_zone: UTC时区。  - 不选择时，GaussDB(for openGauss)国内站、默认为UTC时间。 - 选择填写时，取值范围为UTC-12:00~UTC+12:00，且只支持整段时间，如UTC+08:00，不支持UTC+08:30。
+        :param time_zone: UTC时区。  - 不选择时，GaussDB国内站、默认为UTC时间。 - 选择填写时，取值范围为UTC-12:00~UTC+12:00，且只支持整段时间，如UTC+08:00，不支持UTC+08:30。
         :type time_zone: str
         :param sharding_num: 仅分布式形态需要填写该参数。分片数量，取值范围1~9。
         :type sharding_num: int
@@ -264,7 +264,7 @@ class OpenGaussInstanceRequest:
     def port(self):
         """Gets the port of this OpenGaussInstanceRequest.
 
-        数据库对外开放的端口，不填默认为8000，可选范围为：1024-39998。限制端口： 2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,12016,12017,20049,20050,21731,21732,32122,32123,32124。  - GaussDB(for openGauss)数据库端口当前只支持设置为8000，当不传该参数时，默认端口为8000。
+        数据库对外开放的端口，不填默认为8000，可选范围为：1024-39998。限制端口： 2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,12016,12017,20049,20050,21731,21732,32122,32123,32124。  - GaussDB数据库端口当前只支持设置为8000，当不传该参数时，默认端口为8000。
 
         :return: The port of this OpenGaussInstanceRequest.
         :rtype: str
@@ -275,7 +275,7 @@ class OpenGaussInstanceRequest:
     def port(self, port):
         """Sets the port of this OpenGaussInstanceRequest.
 
-        数据库对外开放的端口，不填默认为8000，可选范围为：1024-39998。限制端口： 2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,12016,12017,20049,20050,21731,21732,32122,32123,32124。  - GaussDB(for openGauss)数据库端口当前只支持设置为8000，当不传该参数时，默认端口为8000。
+        数据库对外开放的端口，不填默认为8000，可选范围为：1024-39998。限制端口： 2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,12016,12017,20049,20050,21731,21732,32122,32123,32124。  - GaussDB数据库端口当前只支持设置为8000，当不传该参数时，默认端口为8000。
 
         :param port: The port of this OpenGaussInstanceRequest.
         :type port: str
@@ -370,7 +370,7 @@ class OpenGaussInstanceRequest:
     def flavor_ref(self):
         """Gets the flavor_ref of this OpenGaussInstanceRequest.
 
-        规格码，取值范围：非空。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB(for openGauss)的“规格编码”列内容获取。
+        规格码，取值范围：非空。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB 的“规格编码”列内容获取。
 
         :return: The flavor_ref of this OpenGaussInstanceRequest.
         :rtype: str
@@ -381,7 +381,7 @@ class OpenGaussInstanceRequest:
     def flavor_ref(self, flavor_ref):
         """Sets the flavor_ref of this OpenGaussInstanceRequest.
 
-        规格码，取值范围：非空。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB(for openGauss)的“规格编码”列内容获取。
+        规格码，取值范围：非空。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB 的“规格编码”列内容获取。
 
         :param flavor_ref: The flavor_ref of this OpenGaussInstanceRequest.
         :type flavor_ref: str
@@ -432,7 +432,7 @@ class OpenGaussInstanceRequest:
     def availability_zone(self):
         """Gets the availability_zone of this OpenGaussInstanceRequest.
 
-        可用区ID。  GaussDB(for openGauss)取值范围：非空，可选部署在同一可用区或三个不同可用区，可用区之间用逗号隔开。详见示例。  - 部署在同一可用区：需要输入三个相同的可用区。例如：部署在“cn-north-4a”可用区，则需要在此处输入\"cn-north-4a,cn-north-4a,cn-north-4a\"。 - 部署在三个不同可用区：需要分别输入三个不同的可用区。 取值范围：非空，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
+        可用区ID。  GaussDB取值范围：非空，可选部署在同一可用区或三个不同可用区，可用区之间用逗号隔开。详见示例。  - 部署在同一可用区：需要输入三个相同的可用区。例如：部署在“cn-north-4a”可用区，则需要在此处输入\"cn-north-4a,cn-north-4a,cn-north-4a\"。 - 部署在三个不同可用区：需要分别输入三个不同的可用区。 取值范围：非空，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
         :return: The availability_zone of this OpenGaussInstanceRequest.
         :rtype: str
@@ -443,7 +443,7 @@ class OpenGaussInstanceRequest:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this OpenGaussInstanceRequest.
 
-        可用区ID。  GaussDB(for openGauss)取值范围：非空，可选部署在同一可用区或三个不同可用区，可用区之间用逗号隔开。详见示例。  - 部署在同一可用区：需要输入三个相同的可用区。例如：部署在“cn-north-4a”可用区，则需要在此处输入\"cn-north-4a,cn-north-4a,cn-north-4a\"。 - 部署在三个不同可用区：需要分别输入三个不同的可用区。 取值范围：非空，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
+        可用区ID。  GaussDB取值范围：非空，可选部署在同一可用区或三个不同可用区，可用区之间用逗号隔开。详见示例。  - 部署在同一可用区：需要输入三个相同的可用区。例如：部署在“cn-north-4a”可用区，则需要在此处输入\"cn-north-4a,cn-north-4a,cn-north-4a\"。 - 部署在三个不同可用区：需要分别输入三个不同的可用区。 取值范围：非空，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
         :param availability_zone: The availability_zone of this OpenGaussInstanceRequest.
         :type availability_zone: str
@@ -538,7 +538,7 @@ class OpenGaussInstanceRequest:
     def time_zone(self):
         """Gets the time_zone of this OpenGaussInstanceRequest.
 
-        UTC时区。  - 不选择时，GaussDB(for openGauss)国内站、默认为UTC时间。 - 选择填写时，取值范围为UTC-12:00~UTC+12:00，且只支持整段时间，如UTC+08:00，不支持UTC+08:30。
+        UTC时区。  - 不选择时，GaussDB国内站、默认为UTC时间。 - 选择填写时，取值范围为UTC-12:00~UTC+12:00，且只支持整段时间，如UTC+08:00，不支持UTC+08:30。
 
         :return: The time_zone of this OpenGaussInstanceRequest.
         :rtype: str
@@ -549,7 +549,7 @@ class OpenGaussInstanceRequest:
     def time_zone(self, time_zone):
         """Sets the time_zone of this OpenGaussInstanceRequest.
 
-        UTC时区。  - 不选择时，GaussDB(for openGauss)国内站、默认为UTC时间。 - 选择填写时，取值范围为UTC-12:00~UTC+12:00，且只支持整段时间，如UTC+08:00，不支持UTC+08:30。
+        UTC时区。  - 不选择时，GaussDB国内站、默认为UTC时间。 - 选择填写时，取值范围为UTC-12:00~UTC+12:00，且只支持整段时间，如UTC+08:00，不支持UTC+08:30。
 
         :param time_zone: The time_zone of this OpenGaussInstanceRequest.
         :type time_zone: str

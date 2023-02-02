@@ -36,7 +36,7 @@ class ListHa:
 
         :param consistency: 数据库一致性类型，分布式模式实例仅有。取值为“strong”、“eventual”，分别表示强一致性、最终一致性。
         :type consistency: str
-        :param replication_mode: 备机同步参数。  取值：非空。  GaussDB(for openGauss)为 “sync” 说明： “sync”为同步模式。
+        :param replication_mode: 备机同步参数。  取值：非空。  GaussDB为 “sync” 说明： “sync”为同步模式。
         :type replication_mode: str
         """
         
@@ -75,7 +75,7 @@ class ListHa:
     def replication_mode(self):
         """Gets the replication_mode of this ListHa.
 
-        备机同步参数。  取值：非空。  GaussDB(for openGauss)为 “sync” 说明： “sync”为同步模式。
+        备机同步参数。  取值：非空。  GaussDB为 “sync” 说明： “sync”为同步模式。
 
         :return: The replication_mode of this ListHa.
         :rtype: str
@@ -86,7 +86,7 @@ class ListHa:
     def replication_mode(self, replication_mode):
         """Sets the replication_mode of this ListHa.
 
-        备机同步参数。  取值：非空。  GaussDB(for openGauss)为 “sync” 说明： “sync”为同步模式。
+        备机同步参数。  取值：非空。  GaussDB为 “sync” 说明： “sync”为同步模式。
 
         :param replication_mode: The replication_mode of this ListHa.
         :type replication_mode: str

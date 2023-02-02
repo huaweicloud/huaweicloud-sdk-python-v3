@@ -100,7 +100,7 @@ class ListInstanceResponse:
         :type private_ips: list[str]
         :param public_ips: 实例外网IP地址列表。绑定弹性公网IP后，该值不为空。
         :type public_ips: list[str]
-        :param port: 数据库端口号。GaussDB(for openGauss)数据库端口设置范围为1024~39998（其中2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,20049,20050,21731,21732被系统占用不可设置）。  当不传该参数时，默认端口如下：8000。
+        :param port: 数据库端口号。GaussDB 数据库端口设置范围为1024~39998（其中2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,20049,20050,21731,21732被系统占用不可设置）。  当不传该参数时，默认端口如下：8000。
         :type port: int
         :param type: 实例类型，取值为 \&quot;enterprise\&quot;，对应于分布式实例（企业版）。取值为\&quot;Ha\&quot;，对应于主备版实例。
         :type type: str
@@ -124,7 +124,7 @@ class ListInstanceResponse:
         :type subnet_id: str
         :param security_group_id: 安全组ID。
         :type security_group_id: str
-        :param flavor_ref: 规格码。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB(for openGauss)的“规格编码”列内容获取。
+        :param flavor_ref: 规格码。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB 的“规格编码”列内容获取。
         :type flavor_ref: str
         :param flavor_info: 
         :type flavor_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListFlavorInfo`
@@ -332,7 +332,7 @@ class ListInstanceResponse:
     def port(self):
         """Gets the port of this ListInstanceResponse.
 
-        数据库端口号。GaussDB(for openGauss)数据库端口设置范围为1024~39998（其中2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,20049,20050,21731,21732被系统占用不可设置）。  当不传该参数时，默认端口如下：8000。
+        数据库端口号。GaussDB 数据库端口设置范围为1024~39998（其中2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,20049,20050,21731,21732被系统占用不可设置）。  当不传该参数时，默认端口如下：8000。
 
         :return: The port of this ListInstanceResponse.
         :rtype: int
@@ -343,7 +343,7 @@ class ListInstanceResponse:
     def port(self, port):
         """Sets the port of this ListInstanceResponse.
 
-        数据库端口号。GaussDB(for openGauss)数据库端口设置范围为1024~39998（其中2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,20049,20050,21731,21732被系统占用不可设置）。  当不传该参数时，默认端口如下：8000。
+        数据库端口号。GaussDB 数据库端口设置范围为1024~39998（其中2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,20049,20050,21731,21732被系统占用不可设置）。  当不传该参数时，默认端口如下：8000。
 
         :param port: The port of this ListInstanceResponse.
         :type port: int
@@ -588,7 +588,7 @@ class ListInstanceResponse:
     def flavor_ref(self):
         """Gets the flavor_ref of this ListInstanceResponse.
 
-        规格码。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB(for openGauss)的“规格编码”列内容获取。
+        规格码。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB 的“规格编码”列内容获取。
 
         :return: The flavor_ref of this ListInstanceResponse.
         :rtype: str
@@ -599,7 +599,7 @@ class ListInstanceResponse:
     def flavor_ref(self, flavor_ref):
         """Sets the flavor_ref of this ListInstanceResponse.
 
-        规格码。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB(for openGauss)的“规格编码”列内容获取。
+        规格码。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB 的“规格编码”列内容获取。
 
         :param flavor_ref: The flavor_ref of this ListInstanceResponse.
         :type flavor_ref: str

@@ -42,7 +42,7 @@ class GaussDBforOpenDatabaseForCreation:
 
         The model defined in huaweicloud sdk
 
-        :param name: 数据库名称。  数据库名称长度可在1～63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和GaussDB for OpenGauss模板库重名。 GaussDB for OpenGauss模板库包括postgres， template0 ，template1。
+        :param name: 数据库名称。  数据库名称长度可在1～63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和GaussDB 模板库重名。 GaussDB 模板库包括postgres， template0 ，template1。
         :type name: str
         :param character_set: 数据库字符集。默认C。
         :type character_set: str
@@ -50,7 +50,7 @@ class GaussDBforOpenDatabaseForCreation:
         :type owner: str
         :param template: 数据库模板名称，仅为template0。
         :type template: str
-        :param lc_collate: 数据库排序集。默认默认C。  - 须知： 不同的排序规则下，相同字符串的比较其结果可能是不同的。 例如，在en_US.utf8下， select &#39;a&#39;&gt;&#39;A&#39;;执行结果为false，但在&#39;C&#39;下，select &#39;a&#39;&gt;&#39;A&#39;;结果为true。如果数据库从“O”迁移到GaussDB for OpenGauss，数据库排序集需使用&#39;C&#39;才能得到一致的预期。支持的排序规则可以查询系统表 pg_collation。
+        :param lc_collate: 数据库排序集。默认默认C。  - 须知： 不同的排序规则下，相同字符串的比较其结果可能是不同的。 例如，在en_US.utf8下， select &#39;a&#39;&gt;&#39;A&#39;;执行结果为false，但在&#39;C&#39;下，select &#39;a&#39;&gt;&#39;A&#39;;结果为true。如果数据库从“O”迁移到GaussDB ，数据库排序集需使用&#39;C&#39;才能得到一致的预期。支持的排序规则可以查询系统表 pg_collation。
         :type lc_collate: str
         :param lc_ctype: 数据库分类集。默认C。
         :type lc_ctype: str
@@ -82,7 +82,7 @@ class GaussDBforOpenDatabaseForCreation:
     def name(self):
         """Gets the name of this GaussDBforOpenDatabaseForCreation.
 
-        数据库名称。  数据库名称长度可在1～63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和GaussDB for OpenGauss模板库重名。 GaussDB for OpenGauss模板库包括postgres， template0 ，template1。
+        数据库名称。  数据库名称长度可在1～63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和GaussDB 模板库重名。 GaussDB 模板库包括postgres， template0 ，template1。
 
         :return: The name of this GaussDBforOpenDatabaseForCreation.
         :rtype: str
@@ -93,7 +93,7 @@ class GaussDBforOpenDatabaseForCreation:
     def name(self, name):
         """Sets the name of this GaussDBforOpenDatabaseForCreation.
 
-        数据库名称。  数据库名称长度可在1～63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和GaussDB for OpenGauss模板库重名。 GaussDB for OpenGauss模板库包括postgres， template0 ，template1。
+        数据库名称。  数据库名称长度可在1～63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和GaussDB 模板库重名。 GaussDB 模板库包括postgres， template0 ，template1。
 
         :param name: The name of this GaussDBforOpenDatabaseForCreation.
         :type name: str
@@ -170,7 +170,7 @@ class GaussDBforOpenDatabaseForCreation:
     def lc_collate(self):
         """Gets the lc_collate of this GaussDBforOpenDatabaseForCreation.
 
-        数据库排序集。默认默认C。  - 须知： 不同的排序规则下，相同字符串的比较其结果可能是不同的。 例如，在en_US.utf8下， select 'a'>'A';执行结果为false，但在'C'下，select 'a'>'A';结果为true。如果数据库从“O”迁移到GaussDB for OpenGauss，数据库排序集需使用'C'才能得到一致的预期。支持的排序规则可以查询系统表 pg_collation。
+        数据库排序集。默认默认C。  - 须知： 不同的排序规则下，相同字符串的比较其结果可能是不同的。 例如，在en_US.utf8下， select 'a'>'A';执行结果为false，但在'C'下，select 'a'>'A';结果为true。如果数据库从“O”迁移到GaussDB ，数据库排序集需使用'C'才能得到一致的预期。支持的排序规则可以查询系统表 pg_collation。
 
         :return: The lc_collate of this GaussDBforOpenDatabaseForCreation.
         :rtype: str
@@ -181,7 +181,7 @@ class GaussDBforOpenDatabaseForCreation:
     def lc_collate(self, lc_collate):
         """Sets the lc_collate of this GaussDBforOpenDatabaseForCreation.
 
-        数据库排序集。默认默认C。  - 须知： 不同的排序规则下，相同字符串的比较其结果可能是不同的。 例如，在en_US.utf8下， select 'a'>'A';执行结果为false，但在'C'下，select 'a'>'A';结果为true。如果数据库从“O”迁移到GaussDB for OpenGauss，数据库排序集需使用'C'才能得到一致的预期。支持的排序规则可以查询系统表 pg_collation。
+        数据库排序集。默认默认C。  - 须知： 不同的排序规则下，相同字符串的比较其结果可能是不同的。 例如，在en_US.utf8下， select 'a'>'A';执行结果为false，但在'C'下，select 'a'>'A';结果为true。如果数据库从“O”迁移到GaussDB ，数据库排序集需使用'C'才能得到一致的预期。支持的排序规则可以查询系统表 pg_collation。
 
         :param lc_collate: The lc_collate of this GaussDBforOpenDatabaseForCreation.
         :type lc_collate: str

@@ -34,7 +34,7 @@ class GaussDBforOpenGaussGrantRequest:
 
         The model defined in huaweicloud sdk
 
-        :param db_name: 数据库名称。  数据库名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和GaussDB for OpenGauss模板库重名。  GaussDB for OpenGauss模板库包括postgres， template0 ，template1。
+        :param db_name: 数据库名称。  数据库名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和GaussDB 模板库重名。  GaussDB 模板库包括postgres， template0 ，template1。
         :type db_name: str
         :param users: 每个元素都是与数据库相关联的帐号。单次请求最多支持50个元素。
         :type users: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenGaussUserWithPrivilege`]
@@ -53,7 +53,7 @@ class GaussDBforOpenGaussGrantRequest:
     def db_name(self):
         """Gets the db_name of this GaussDBforOpenGaussGrantRequest.
 
-        数据库名称。  数据库名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和GaussDB for OpenGauss模板库重名。  GaussDB for OpenGauss模板库包括postgres， template0 ，template1。
+        数据库名称。  数据库名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和GaussDB 模板库重名。  GaussDB 模板库包括postgres， template0 ，template1。
 
         :return: The db_name of this GaussDBforOpenGaussGrantRequest.
         :rtype: str
@@ -64,7 +64,7 @@ class GaussDBforOpenGaussGrantRequest:
     def db_name(self, db_name):
         """Sets the db_name of this GaussDBforOpenGaussGrantRequest.
 
-        数据库名称。  数据库名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和GaussDB for OpenGauss模板库重名。  GaussDB for OpenGauss模板库包括postgres， template0 ，template1。
+        数据库名称。  数据库名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和GaussDB 模板库重名。  GaussDB 模板库包括postgres， template0 ，template1。
 
         :param db_name: The db_name of this GaussDBforOpenGaussGrantRequest.
         :type db_name: str
