@@ -24,7 +24,12 @@ class ChannelDetail:
         'dis_forwarding': 'DisForwarding',
         'obs_forwarding': 'ObsForwarding',
         'amqp_forwarding': 'AmqpForwarding',
-        'dms_kafka_forwarding': 'DmsKafkaForwarding'
+        'dms_kafka_forwarding': 'DmsKafkaForwarding',
+        'roma_forwarding': 'RomaForwarding',
+        'influxdb_forwarding': 'InfluxDBForwarding',
+        'functiongraph_forwarding': 'FunctionGraphForwarding',
+        'mrs_kafka_forwarding': 'MrsKafkaForwarding',
+        'dms_rocketmq_forwarding': 'DmsRocketMQForwarding'
     }
 
     attribute_map = {
@@ -32,10 +37,15 @@ class ChannelDetail:
         'dis_forwarding': 'dis_forwarding',
         'obs_forwarding': 'obs_forwarding',
         'amqp_forwarding': 'amqp_forwarding',
-        'dms_kafka_forwarding': 'dms_kafka_forwarding'
+        'dms_kafka_forwarding': 'dms_kafka_forwarding',
+        'roma_forwarding': 'roma_forwarding',
+        'influxdb_forwarding': 'influxdb_forwarding',
+        'functiongraph_forwarding': 'functiongraph_forwarding',
+        'mrs_kafka_forwarding': 'mrs_kafka_forwarding',
+        'dms_rocketmq_forwarding': 'dms_rocketmq_forwarding'
     }
 
-    def __init__(self, http_forwarding=None, dis_forwarding=None, obs_forwarding=None, amqp_forwarding=None, dms_kafka_forwarding=None):
+    def __init__(self, http_forwarding=None, dis_forwarding=None, obs_forwarding=None, amqp_forwarding=None, dms_kafka_forwarding=None, roma_forwarding=None, influxdb_forwarding=None, functiongraph_forwarding=None, mrs_kafka_forwarding=None, dms_rocketmq_forwarding=None):
         """ChannelDetail
 
         The model defined in huaweicloud sdk
@@ -50,6 +60,16 @@ class ChannelDetail:
         :type amqp_forwarding: :class:`huaweicloudsdkiotda.v5.AmqpForwarding`
         :param dms_kafka_forwarding: 
         :type dms_kafka_forwarding: :class:`huaweicloudsdkiotda.v5.DmsKafkaForwarding`
+        :param roma_forwarding: 
+        :type roma_forwarding: :class:`huaweicloudsdkiotda.v5.RomaForwarding`
+        :param influxdb_forwarding: 
+        :type influxdb_forwarding: :class:`huaweicloudsdkiotda.v5.InfluxDBForwarding`
+        :param functiongraph_forwarding: 
+        :type functiongraph_forwarding: :class:`huaweicloudsdkiotda.v5.FunctionGraphForwarding`
+        :param mrs_kafka_forwarding: 
+        :type mrs_kafka_forwarding: :class:`huaweicloudsdkiotda.v5.MrsKafkaForwarding`
+        :param dms_rocketmq_forwarding: 
+        :type dms_rocketmq_forwarding: :class:`huaweicloudsdkiotda.v5.DmsRocketMQForwarding`
         """
         
         
@@ -59,6 +79,11 @@ class ChannelDetail:
         self._obs_forwarding = None
         self._amqp_forwarding = None
         self._dms_kafka_forwarding = None
+        self._roma_forwarding = None
+        self._influxdb_forwarding = None
+        self._functiongraph_forwarding = None
+        self._mrs_kafka_forwarding = None
+        self._dms_rocketmq_forwarding = None
         self.discriminator = None
 
         if http_forwarding is not None:
@@ -71,6 +96,16 @@ class ChannelDetail:
             self.amqp_forwarding = amqp_forwarding
         if dms_kafka_forwarding is not None:
             self.dms_kafka_forwarding = dms_kafka_forwarding
+        if roma_forwarding is not None:
+            self.roma_forwarding = roma_forwarding
+        if influxdb_forwarding is not None:
+            self.influxdb_forwarding = influxdb_forwarding
+        if functiongraph_forwarding is not None:
+            self.functiongraph_forwarding = functiongraph_forwarding
+        if mrs_kafka_forwarding is not None:
+            self.mrs_kafka_forwarding = mrs_kafka_forwarding
+        if dms_rocketmq_forwarding is not None:
+            self.dms_rocketmq_forwarding = dms_rocketmq_forwarding
 
     @property
     def http_forwarding(self):
@@ -161,6 +196,96 @@ class ChannelDetail:
         :type dms_kafka_forwarding: :class:`huaweicloudsdkiotda.v5.DmsKafkaForwarding`
         """
         self._dms_kafka_forwarding = dms_kafka_forwarding
+
+    @property
+    def roma_forwarding(self):
+        """Gets the roma_forwarding of this ChannelDetail.
+
+        :return: The roma_forwarding of this ChannelDetail.
+        :rtype: :class:`huaweicloudsdkiotda.v5.RomaForwarding`
+        """
+        return self._roma_forwarding
+
+    @roma_forwarding.setter
+    def roma_forwarding(self, roma_forwarding):
+        """Sets the roma_forwarding of this ChannelDetail.
+
+        :param roma_forwarding: The roma_forwarding of this ChannelDetail.
+        :type roma_forwarding: :class:`huaweicloudsdkiotda.v5.RomaForwarding`
+        """
+        self._roma_forwarding = roma_forwarding
+
+    @property
+    def influxdb_forwarding(self):
+        """Gets the influxdb_forwarding of this ChannelDetail.
+
+        :return: The influxdb_forwarding of this ChannelDetail.
+        :rtype: :class:`huaweicloudsdkiotda.v5.InfluxDBForwarding`
+        """
+        return self._influxdb_forwarding
+
+    @influxdb_forwarding.setter
+    def influxdb_forwarding(self, influxdb_forwarding):
+        """Sets the influxdb_forwarding of this ChannelDetail.
+
+        :param influxdb_forwarding: The influxdb_forwarding of this ChannelDetail.
+        :type influxdb_forwarding: :class:`huaweicloudsdkiotda.v5.InfluxDBForwarding`
+        """
+        self._influxdb_forwarding = influxdb_forwarding
+
+    @property
+    def functiongraph_forwarding(self):
+        """Gets the functiongraph_forwarding of this ChannelDetail.
+
+        :return: The functiongraph_forwarding of this ChannelDetail.
+        :rtype: :class:`huaweicloudsdkiotda.v5.FunctionGraphForwarding`
+        """
+        return self._functiongraph_forwarding
+
+    @functiongraph_forwarding.setter
+    def functiongraph_forwarding(self, functiongraph_forwarding):
+        """Sets the functiongraph_forwarding of this ChannelDetail.
+
+        :param functiongraph_forwarding: The functiongraph_forwarding of this ChannelDetail.
+        :type functiongraph_forwarding: :class:`huaweicloudsdkiotda.v5.FunctionGraphForwarding`
+        """
+        self._functiongraph_forwarding = functiongraph_forwarding
+
+    @property
+    def mrs_kafka_forwarding(self):
+        """Gets the mrs_kafka_forwarding of this ChannelDetail.
+
+        :return: The mrs_kafka_forwarding of this ChannelDetail.
+        :rtype: :class:`huaweicloudsdkiotda.v5.MrsKafkaForwarding`
+        """
+        return self._mrs_kafka_forwarding
+
+    @mrs_kafka_forwarding.setter
+    def mrs_kafka_forwarding(self, mrs_kafka_forwarding):
+        """Sets the mrs_kafka_forwarding of this ChannelDetail.
+
+        :param mrs_kafka_forwarding: The mrs_kafka_forwarding of this ChannelDetail.
+        :type mrs_kafka_forwarding: :class:`huaweicloudsdkiotda.v5.MrsKafkaForwarding`
+        """
+        self._mrs_kafka_forwarding = mrs_kafka_forwarding
+
+    @property
+    def dms_rocketmq_forwarding(self):
+        """Gets the dms_rocketmq_forwarding of this ChannelDetail.
+
+        :return: The dms_rocketmq_forwarding of this ChannelDetail.
+        :rtype: :class:`huaweicloudsdkiotda.v5.DmsRocketMQForwarding`
+        """
+        return self._dms_rocketmq_forwarding
+
+    @dms_rocketmq_forwarding.setter
+    def dms_rocketmq_forwarding(self, dms_rocketmq_forwarding):
+        """Sets the dms_rocketmq_forwarding of this ChannelDetail.
+
+        :param dms_rocketmq_forwarding: The dms_rocketmq_forwarding of this ChannelDetail.
+        :type dms_rocketmq_forwarding: :class:`huaweicloudsdkiotda.v5.DmsRocketMQForwarding`
+        """
+        self._dms_rocketmq_forwarding = dms_rocketmq_forwarding
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -29,7 +29,8 @@ class TollInvoiceResult:
         'vehicle_type': 'str',
         'date': 'str',
         'time': 'str',
-        'confidence': 'object'
+        'confidence': 'object',
+        'text_location': 'object'
     }
 
     attribute_map = {
@@ -42,10 +43,11 @@ class TollInvoiceResult:
         'vehicle_type': 'vehicle_type',
         'date': 'date',
         'time': 'time',
-        'confidence': 'confidence'
+        'confidence': 'confidence',
+        'text_location': 'text_location'
     }
 
-    def __init__(self, code=None, number=None, entry=None, exit=None, amount=None, cashier=None, vehicle_type=None, date=None, time=None, confidence=None):
+    def __init__(self, code=None, number=None, entry=None, exit=None, amount=None, cashier=None, vehicle_type=None, date=None, time=None, confidence=None, text_location=None):
         """TollInvoiceResult
 
         The model defined in huaweicloud sdk
@@ -70,6 +72,8 @@ class TollInvoiceResult:
         :type time: str
         :param confidence: 相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。
         :type confidence: object
+        :param text_location: 对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+        :type text_location: object
         """
         
         
@@ -84,6 +88,7 @@ class TollInvoiceResult:
         self._date = None
         self._time = None
         self._confidence = None
+        self._text_location = None
         self.discriminator = None
 
         if code is not None:
@@ -106,6 +111,8 @@ class TollInvoiceResult:
             self.time = time
         if confidence is not None:
             self.confidence = confidence
+        if text_location is not None:
+            self.text_location = text_location
 
     @property
     def code(self):
@@ -326,6 +333,28 @@ class TollInvoiceResult:
         :type confidence: object
         """
         self._confidence = confidence
+
+    @property
+    def text_location(self):
+        """Gets the text_location of this TollInvoiceResult.
+
+        对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+
+        :return: The text_location of this TollInvoiceResult.
+        :rtype: object
+        """
+        return self._text_location
+
+    @text_location.setter
+    def text_location(self, text_location):
+        """Sets the text_location of this TollInvoiceResult.
+
+        对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+
+        :param text_location: The text_location of this TollInvoiceResult.
+        :type text_location: object
+        """
+        self._text_location = text_location
 
     def to_dict(self):
         """Returns the model properties as a dict"""

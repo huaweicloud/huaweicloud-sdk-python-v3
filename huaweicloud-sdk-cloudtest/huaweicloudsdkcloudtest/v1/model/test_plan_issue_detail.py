@@ -58,7 +58,7 @@ class TestPlanIssueDetail:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: DevCloud项目id，项目唯一标识，固定长度32位字符
+        :param project_id: 项目id，项目唯一标识，固定长度32位字符
         :type project_id: str
         :param plan_id: 测试计划id
         :type plan_id: str
@@ -139,7 +139,7 @@ class TestPlanIssueDetail:
     def project_id(self):
         """Gets the project_id of this TestPlanIssueDetail.
 
-        DevCloud项目id，项目唯一标识，固定长度32位字符
+        项目id，项目唯一标识，固定长度32位字符
 
         :return: The project_id of this TestPlanIssueDetail.
         :rtype: str
@@ -150,7 +150,7 @@ class TestPlanIssueDetail:
     def project_id(self, project_id):
         """Sets the project_id of this TestPlanIssueDetail.
 
-        DevCloud项目id，项目唯一标识，固定长度32位字符
+        项目id，项目唯一标识，固定长度32位字符
 
         :param project_id: The project_id of this TestPlanIssueDetail.
         :type project_id: str

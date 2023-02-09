@@ -36,7 +36,7 @@ class ListEnvironmentsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: devcloud的项目ID
+        :param project_id: 项目ID
         :type project_id: str
         :param offset: 起始偏移量，表示从此偏移量开始查询， offset大于等于0
         :type offset: int
@@ -59,7 +59,7 @@ class ListEnvironmentsRequest:
     def project_id(self):
         """Gets the project_id of this ListEnvironmentsRequest.
 
-        devcloud的项目ID
+        项目ID
 
         :return: The project_id of this ListEnvironmentsRequest.
         :rtype: str
@@ -70,7 +70,7 @@ class ListEnvironmentsRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ListEnvironmentsRequest.
 
-        devcloud的项目ID
+        项目ID
 
         :param project_id: The project_id of this ListEnvironmentsRequest.
         :type project_id: str

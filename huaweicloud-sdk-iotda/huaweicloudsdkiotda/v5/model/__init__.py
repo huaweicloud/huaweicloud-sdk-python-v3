@@ -38,6 +38,7 @@ from huaweicloudsdkiotda.v5.model.channel_detail import ChannelDetail
 from huaweicloudsdkiotda.v5.model.check_certificate_request import CheckCertificateRequest
 from huaweicloudsdkiotda.v5.model.check_certificate_response import CheckCertificateResponse
 from huaweicloudsdkiotda.v5.model.cmd import Cmd
+from huaweicloudsdkiotda.v5.model.column_mapping import ColumnMapping
 from huaweicloudsdkiotda.v5.model.condition_group import ConditionGroup
 from huaweicloudsdkiotda.v5.model.create_access_code_request import CreateAccessCodeRequest
 from huaweicloudsdkiotda.v5.model.create_access_code_request_body import CreateAccessCodeRequestBody
@@ -94,11 +95,14 @@ from huaweicloudsdkiotda.v5.model.device_shadow_properties import DeviceShadowPr
 from huaweicloudsdkiotda.v5.model.device_side import DeviceSide
 from huaweicloudsdkiotda.v5.model.dis_forwarding import DisForwarding
 from huaweicloudsdkiotda.v5.model.dms_kafka_forwarding import DmsKafkaForwarding
+from huaweicloudsdkiotda.v5.model.dms_rocket_mq_forwarding import DmsRocketMQForwarding
 from huaweicloudsdkiotda.v5.model.error_info import ErrorInfo
 from huaweicloudsdkiotda.v5.model.error_info_dto import ErrorInfoDTO
 from huaweicloudsdkiotda.v5.model.freeze_device_request import FreezeDeviceRequest
 from huaweicloudsdkiotda.v5.model.freeze_device_response import FreezeDeviceResponse
+from huaweicloudsdkiotda.v5.model.function_graph_forwarding import FunctionGraphForwarding
 from huaweicloudsdkiotda.v5.model.http_forwarding import HttpForwarding
+from huaweicloudsdkiotda.v5.model.influx_db_forwarding import InfluxDBForwarding
 from huaweicloudsdkiotda.v5.model.initial_desired import InitialDesired
 from huaweicloudsdkiotda.v5.model.list_batch_task_files_request import ListBatchTaskFilesRequest
 from huaweicloudsdkiotda.v5.model.list_batch_task_files_response import ListBatchTaskFilesResponse
@@ -125,6 +129,7 @@ from huaweicloudsdkiotda.v5.model.list_rule_actions_response import ListRuleActi
 from huaweicloudsdkiotda.v5.model.list_rules_request import ListRulesRequest
 from huaweicloudsdkiotda.v5.model.list_rules_response import ListRulesResponse
 from huaweicloudsdkiotda.v5.model.message_result import MessageResult
+from huaweicloudsdkiotda.v5.model.mrs_kafka_forwarding import MrsKafkaForwarding
 from huaweicloudsdkiotda.v5.model.net_address import NetAddress
 from huaweicloudsdkiotda.v5.model.obs_forwarding import ObsForwarding
 from huaweicloudsdkiotda.v5.model.page import Page
@@ -142,6 +147,7 @@ from huaweicloudsdkiotda.v5.model.reset_fingerprint import ResetFingerprint
 from huaweicloudsdkiotda.v5.model.reset_fingerprint_request import ResetFingerprintRequest
 from huaweicloudsdkiotda.v5.model.reset_fingerprint_response import ResetFingerprintResponse
 from huaweicloudsdkiotda.v5.model.resource_dto import ResourceDTO
+from huaweicloudsdkiotda.v5.model.roma_forwarding import RomaForwarding
 from huaweicloudsdkiotda.v5.model.routing_rule import RoutingRule
 from huaweicloudsdkiotda.v5.model.routing_rule_action import RoutingRuleAction
 from huaweicloudsdkiotda.v5.model.routing_rule_subject import RoutingRuleSubject

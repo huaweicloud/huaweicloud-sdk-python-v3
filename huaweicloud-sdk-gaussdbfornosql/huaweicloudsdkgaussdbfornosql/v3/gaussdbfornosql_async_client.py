@@ -3784,7 +3784,7 @@ class GaussDBforNoSQLAsyncClient(Client):
     def show_pause_resume_stutus_async(self, request):
         """获取容灾实例数据同步状态
 
-        获取容灾实例数据同步状态。
+        获取容灾实例数据同步状态，主备实例id，数据同步指标值，以及倒换和切换场景下的RPO，RTO指标值。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

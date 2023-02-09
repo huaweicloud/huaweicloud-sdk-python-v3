@@ -40,7 +40,7 @@ class ShowPlanListRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: DevCloud项目id，项目唯一标识，固定长度32位字符
+        :param project_id: 项目id，项目唯一标识，固定长度32位字符
         :type project_id: str
         :param offset: 起始偏移量，表示从此偏移量开始查询， offset大于等于0
         :type offset: int
@@ -73,7 +73,7 @@ class ShowPlanListRequest:
     def project_id(self):
         """Gets the project_id of this ShowPlanListRequest.
 
-        DevCloud项目id，项目唯一标识，固定长度32位字符
+        项目id，项目唯一标识，固定长度32位字符
 
         :return: The project_id of this ShowPlanListRequest.
         :rtype: str
@@ -84,7 +84,7 @@ class ShowPlanListRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ShowPlanListRequest.
 
-        DevCloud项目id，项目唯一标识，固定长度32位字符
+        项目id，项目唯一标识，固定长度32位字符
 
         :param project_id: The project_id of this ShowPlanListRequest.
         :type project_id: str

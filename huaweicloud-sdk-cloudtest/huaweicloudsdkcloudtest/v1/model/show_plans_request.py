@@ -40,7 +40,7 @@ class ShowPlansRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: DevCloud项目id，项目唯一标识，固定长度32位字符
+        :param project_id: 项目id，项目唯一标识，固定长度32位字符
         :type project_id: str
         :param name: 模糊查询使用(针对测试计划名称)
         :type name: str
@@ -73,7 +73,7 @@ class ShowPlansRequest:
     def project_id(self):
         """Gets the project_id of this ShowPlansRequest.
 
-        DevCloud项目id，项目唯一标识，固定长度32位字符
+        项目id，项目唯一标识，固定长度32位字符
 
         :return: The project_id of this ShowPlansRequest.
         :rtype: str
@@ -84,7 +84,7 @@ class ShowPlansRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ShowPlansRequest.
 
-        DevCloud项目id，项目唯一标识，固定长度32位字符
+        项目id，项目唯一标识，固定长度32位字符
 
         :param project_id: The project_id of this ShowPlansRequest.
         :type project_id: str

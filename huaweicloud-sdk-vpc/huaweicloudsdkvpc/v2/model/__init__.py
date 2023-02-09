@@ -23,6 +23,10 @@ from huaweicloudsdkvpc.v2.model.batch_delete_vpc_tags_request import BatchDelete
 from huaweicloudsdkvpc.v2.model.batch_delete_vpc_tags_request_body import BatchDeleteVpcTagsRequestBody
 from huaweicloudsdkvpc.v2.model.batch_delete_vpc_tags_response import BatchDeleteVpcTagsResponse
 from huaweicloudsdkvpc.v2.model.binding_vif_details import BindingVifDetails
+from huaweicloudsdkvpc.v2.model.create_flow_log_req import CreateFlowLogReq
+from huaweicloudsdkvpc.v2.model.create_flow_log_req_body import CreateFlowLogReqBody
+from huaweicloudsdkvpc.v2.model.create_flow_log_request import CreateFlowLogRequest
+from huaweicloudsdkvpc.v2.model.create_flow_log_response import CreateFlowLogResponse
 from huaweicloudsdkvpc.v2.model.create_port_option import CreatePortOption
 from huaweicloudsdkvpc.v2.model.create_port_request import CreatePortRequest
 from huaweicloudsdkvpc.v2.model.create_port_request_body import CreatePortRequestBody
@@ -65,6 +69,8 @@ from huaweicloudsdkvpc.v2.model.create_vpc_route_option import CreateVpcRouteOpt
 from huaweicloudsdkvpc.v2.model.create_vpc_route_request import CreateVpcRouteRequest
 from huaweicloudsdkvpc.v2.model.create_vpc_route_request_body import CreateVpcRouteRequestBody
 from huaweicloudsdkvpc.v2.model.create_vpc_route_response import CreateVpcRouteResponse
+from huaweicloudsdkvpc.v2.model.delete_flow_log_request import DeleteFlowLogRequest
+from huaweicloudsdkvpc.v2.model.delete_flow_log_response import DeleteFlowLogResponse
 from huaweicloudsdkvpc.v2.model.delete_port_request import DeletePortRequest
 from huaweicloudsdkvpc.v2.model.delete_port_response import DeletePortResponse
 from huaweicloudsdkvpc.v2.model.delete_privateip_request import DeletePrivateipRequest
@@ -93,6 +99,9 @@ from huaweicloudsdkvpc.v2.model.dns_assign_ment import DnsAssignMent
 from huaweicloudsdkvpc.v2.model.extra_dhcp_opt import ExtraDhcpOpt
 from huaweicloudsdkvpc.v2.model.extra_dhcp_option import ExtraDhcpOption
 from huaweicloudsdkvpc.v2.model.fixed_ip import FixedIp
+from huaweicloudsdkvpc.v2.model.flow_log_resp import FlowLogResp
+from huaweicloudsdkvpc.v2.model.list_flow_logs_request import ListFlowLogsRequest
+from huaweicloudsdkvpc.v2.model.list_flow_logs_response import ListFlowLogsResponse
 from huaweicloudsdkvpc.v2.model.list_ports_request import ListPortsRequest
 from huaweicloudsdkvpc.v2.model.list_ports_response import ListPortsResponse
 from huaweicloudsdkvpc.v2.model.list_privateips_request import ListPrivateipsRequest
@@ -217,6 +226,8 @@ from huaweicloudsdkvpc.v2.model.route_table_route import RouteTableRoute
 from huaweicloudsdkvpc.v2.model.routetable_associate_reqbody import RoutetableAssociateReqbody
 from huaweicloudsdkvpc.v2.model.security_group import SecurityGroup
 from huaweicloudsdkvpc.v2.model.security_group_rule import SecurityGroupRule
+from huaweicloudsdkvpc.v2.model.show_flow_log_request import ShowFlowLogRequest
+from huaweicloudsdkvpc.v2.model.show_flow_log_response import ShowFlowLogResponse
 from huaweicloudsdkvpc.v2.model.show_network_ip_availabilities_request import ShowNetworkIpAvailabilitiesRequest
 from huaweicloudsdkvpc.v2.model.show_network_ip_availabilities_response import ShowNetworkIpAvailabilitiesResponse
 from huaweicloudsdkvpc.v2.model.show_port_request import ShowPortRequest
@@ -247,6 +258,10 @@ from huaweicloudsdkvpc.v2.model.subnet import Subnet
 from huaweicloudsdkvpc.v2.model.subnet_ip_availability import SubnetIpAvailability
 from huaweicloudsdkvpc.v2.model.subnet_list import SubnetList
 from huaweicloudsdkvpc.v2.model.subnet_result import SubnetResult
+from huaweicloudsdkvpc.v2.model.update_flow_log_req import UpdateFlowLogReq
+from huaweicloudsdkvpc.v2.model.update_flow_log_req_body import UpdateFlowLogReqBody
+from huaweicloudsdkvpc.v2.model.update_flow_log_request import UpdateFlowLogRequest
+from huaweicloudsdkvpc.v2.model.update_flow_log_response import UpdateFlowLogResponse
 from huaweicloudsdkvpc.v2.model.update_port_option import UpdatePortOption
 from huaweicloudsdkvpc.v2.model.update_port_request import UpdatePortRequest
 from huaweicloudsdkvpc.v2.model.update_port_request_body import UpdatePortRequestBody

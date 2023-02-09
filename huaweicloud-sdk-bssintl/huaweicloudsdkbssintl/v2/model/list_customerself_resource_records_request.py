@@ -80,7 +80,7 @@ class ListCustomerselfResourceRecordsRequest:
         :type limit: int
         :param resource_id: 资源ID。此参数不携带时，不作为筛选条件；携带值为空或携带值为空串时，作为筛选条件。
         :type resource_id: str
-        :param enterprise_project_id: 企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1。此参数不携带时，不作为筛选条件；携带值为空或携带值为空串时，作为筛选条件。
+        :param enterprise_project_id: 企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null。此参数不携带时，不作为筛选条件；携带值为空或携带值为空串时，作为筛选条件。
         :type enterprise_project_id: str
         :param include_zero_record: 返回是否包含应付金额为0的记录。true：包含false：不包含。此参数不携带或携带值为空时，不作为筛选条件。
         :type include_zero_record: bool
@@ -350,7 +350,7 @@ class ListCustomerselfResourceRecordsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListCustomerselfResourceRecordsRequest.
 
-        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1。此参数不携带时，不作为筛选条件；携带值为空或携带值为空串时，作为筛选条件。
+        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null。此参数不携带时，不作为筛选条件；携带值为空或携带值为空串时，作为筛选条件。
 
         :return: The enterprise_project_id of this ListCustomerselfResourceRecordsRequest.
         :rtype: str
@@ -361,7 +361,7 @@ class ListCustomerselfResourceRecordsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListCustomerselfResourceRecordsRequest.
 
-        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1。此参数不携带时，不作为筛选条件；携带值为空或携带值为空串时，作为筛选条件。
+        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null。此参数不携带时，不作为筛选条件；携带值为空或携带值为空串时，作为筛选条件。
 
         :param enterprise_project_id: The enterprise_project_id of this ListCustomerselfResourceRecordsRequest.
         :type enterprise_project_id: str

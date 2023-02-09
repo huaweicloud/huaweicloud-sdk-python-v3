@@ -184,7 +184,7 @@ class ResFeeRecordV2:
         :type trade_id: str
         :param trade_time: 交易时间。
         :type trade_time: str
-        :param enterprise_project_id: 企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1
+        :param enterprise_project_id: 企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null
         :type enterprise_project_id: str
         :param enterprise_project_name: 企业项目的名称。
         :type enterprise_project_name: str
@@ -910,7 +910,7 @@ class ResFeeRecordV2:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ResFeeRecordV2.
 
-        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1
+        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null
 
         :return: The enterprise_project_id of this ResFeeRecordV2.
         :rtype: str
@@ -921,7 +921,7 @@ class ResFeeRecordV2:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ResFeeRecordV2.
 
-        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1
+        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null
 
         :param enterprise_project_id: The enterprise_project_id of this ResFeeRecordV2.
         :type enterprise_project_id: str

@@ -23,6 +23,7 @@ class ListFunctionAsyncInvocationsResult:
         'request_id': 'str',
         'status': 'str',
         'error_message': 'str',
+        'error_code': 'int',
         'start_time': 'datetime',
         'end_time': 'datetime'
     }
@@ -31,11 +32,12 @@ class ListFunctionAsyncInvocationsResult:
         'request_id': 'request_id',
         'status': 'status',
         'error_message': 'error_message',
+        'error_code': 'error_code',
         'start_time': 'start_time',
         'end_time': 'end_time'
     }
 
-    def __init__(self, request_id=None, status=None, error_message=None, start_time=None, end_time=None):
+    def __init__(self, request_id=None, status=None, error_message=None, error_code=None, start_time=None, end_time=None):
         """ListFunctionAsyncInvocationsResult
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class ListFunctionAsyncInvocationsResult:
         :type status: str
         :param error_message: 异步调用错误信息，如果执行成功，则返回空
         :type error_message: str
+        :param error_code: 异步调用错误码，如果执行成功，则返回0
+        :type error_code: int
         :param start_time: 异步调用开始时间（格式为YYYY-MM-DD&#39;T&#39;HH:mm:ss,UTC时间）。
         :type start_time: datetime
         :param end_time: 异步调用结束时间（格式为YYYY-MM-DD&#39;T&#39;HH:mm:ss,UTC时间）。
@@ -57,6 +61,7 @@ class ListFunctionAsyncInvocationsResult:
         self._request_id = None
         self._status = None
         self._error_message = None
+        self._error_code = None
         self._start_time = None
         self._end_time = None
         self.discriminator = None
@@ -67,6 +72,8 @@ class ListFunctionAsyncInvocationsResult:
             self.status = status
         if error_message is not None:
             self.error_message = error_message
+        if error_code is not None:
+            self.error_code = error_code
         if start_time is not None:
             self.start_time = start_time
         if end_time is not None:
@@ -137,6 +144,28 @@ class ListFunctionAsyncInvocationsResult:
         :type error_message: str
         """
         self._error_message = error_message
+
+    @property
+    def error_code(self):
+        """Gets the error_code of this ListFunctionAsyncInvocationsResult.
+
+        异步调用错误码，如果执行成功，则返回0
+
+        :return: The error_code of this ListFunctionAsyncInvocationsResult.
+        :rtype: int
+        """
+        return self._error_code
+
+    @error_code.setter
+    def error_code(self, error_code):
+        """Sets the error_code of this ListFunctionAsyncInvocationsResult.
+
+        异步调用错误码，如果执行成功，则返回0
+
+        :param error_code: The error_code of this ListFunctionAsyncInvocationsResult.
+        :type error_code: int
+        """
+        self._error_code = error_code
 
     @property
     def start_time(self):

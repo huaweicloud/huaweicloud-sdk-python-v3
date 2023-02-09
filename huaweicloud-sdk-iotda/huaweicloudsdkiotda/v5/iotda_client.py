@@ -610,7 +610,9 @@ class IoTDAClient(Client):
         """下发异步设备命令
 
         设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发异步命令，以实现对设备的控制。平台负责将命令发送给设备，并将设备执行命令结果异步通知应用服务器。 命令执行结果支持灵活的数据流转，应用服务器通过调用物联网平台的创建规则触发条件（Resource:device.command.status，Event:update）、创建规则动作并激活规则后，当命令状态变更时，物联网平台会根据规则将结果发送到规则指定的服务器，如用户自定义的HTTP服务器，AMQP服务器，以及华为云的其他储存服务器等, 详情参考[[设备命令状态变更通知](https://support.huaweicloud.com/api-iothub/iot_06_v5_01212.html)](tag:hws)[[设备命令状态变更通知](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_01212.html)](tag:hws_hk)。
-        注意：此接口适用于NB设备异步命令下发，暂不支持其他协议类型设备命令下发。
+        注意：
+        - 此接口适用于NB设备异步命令下发，暂不支持其他协议类型设备命令下发。
+        - 此接口仅支持单个设备异步命令下发，如需多个设备异步命令下发，请参见 [[创建批量任务](https://support.huaweicloud.com/api-iothub/iot_06_v5_0045.html)](tag:hws)[[创建批量任务](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_0045.html)](tag:hws_hk)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1410,8 +1412,10 @@ class IoTDAClient(Client):
     def create_command(self, request):
         """下发设备命令
 
-        设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发命令，以实现对设备的同步控制。平台负责将命令以同步方式发送给设备，并将设备执行命令结果同步返回, 如果设备没有响应，平台会返回给应用服务器超时，平台超时间是20秒。
-        注意：此接口适用于MQTT设备同步命令下发，暂不支持NB-IoT设备命令下发。
+        设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发命令，以实现对设备的同步控制。平台负责将命令以同步方式发送给设备，并将设备执行命令结果同步返回, 如果设备没有响应，平台会返回给应用服务器超时，平台超时时间是20秒。如果命令下发需要超过20秒，建议采用[[消息下发](https://support.huaweicloud.com/api-iothub/iot_06_v5_0059.html)](tag:hws)[[消息下发](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_0059.html)](tag:hws_hk)。
+        注意：
+        - 此接口适用于MQTT设备同步命令下发，暂不支持NB-IoT设备命令下发。
+        - 此接口仅支持单个设备同步命令下发，如需多个设备同步命令下发，请参见 [[创建批量任务](https://support.huaweicloud.com/api-iothub/iot_06_v5_0045.html)](tag:hws)[[创建批量任务](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_0045.html)](tag:hws_hk)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1934,6 +1938,7 @@ class IoTDAClient(Client):
         - 该接口支持使用gateway_id参数指定在父设备下创建一个子设备，并且支持多级子设备，当前最大支持二级子设备。
         - 该接口同时还支持对设备进行初始配置，接口会读取创建设备请求参数product_id对应的产品详情，如果产品的属性有定义默认值，则会将该属性默认值写入该设备的设备影子中。
         - 用户还可以使用创建设备请求参数shadow字段为设备指定初始配置，指定后将会根据service_id和desired设置的属性值与产品中对应属性的默认值比对，如果不同，则将以shadow字段中设置的属性值为准写入到设备影子中。
+        - 该接口仅支持创建单个设备，如需批量注册设备，请参见 [[创建批量任务](https://support.huaweicloud.com/api-iothub/iot_06_v5_0045.html)](tag:hws)[[创建批量任务](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_0045.html)](tag:hws_hk)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1995,7 +2000,7 @@ class IoTDAClient(Client):
     def delete_device(self, request):
         """删除设备
 
-        应用服务器可调用此接口在物联网平台上删除指定设备。若设备下连接了非直连设备，则必须把设备下的非直连设备都删除后，才能删除该设备。
+        应用服务器可调用此接口在物联网平台上删除指定设备。若设备下连接了非直连设备，则必须把设备下的非直连设备都删除后，才能删除该设备。该接口仅支持删除单个设备，如需批量删除设备，请参见 [[创建批量任务](https://support.huaweicloud.com/api-iothub/iot_06_v5_0045.html)](tag:hws)[[创建批量任务](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_0045.html)](tag:hws_hk)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2057,7 +2062,7 @@ class IoTDAClient(Client):
     def freeze_device(self, request):
         """冻结设备
 
-        应用服务器可调用此接口冻结设备，设备冻结后不能再连接上线，可以通过解冻设备接口解除设备冻结。注意，当前仅支持冻结与平台直连的设备。
+        应用服务器可调用此接口冻结设备，设备冻结后不能再连接上线，可以通过解冻设备接口解除设备冻结。注意，当前仅支持冻结与平台直连的设备。该接口仅支持冻结单个设备，如需批量冻结设备，请参见 [[创建批量任务](https://support.huaweicloud.com/api-iothub/iot_06_v5_0045.html)](tag:hws)[[创建批量任务](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_0045.html)](tag:hws_hk)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2568,7 +2573,7 @@ class IoTDAClient(Client):
     def unfreeze_device(self, request):
         """解冻设备
 
-        应用服务器可调用此接口解冻设备，解除冻结后，设备可以连接上线。
+        应用服务器可调用此接口解冻设备，解除冻结后，设备可以连接上线。该接口仅支持解冻单个设备，如需批量解冻设备，请参见 [[创建批量任务](https://support.huaweicloud.com/api-iothub/iot_06_v5_0045.html)](tag:hws)[[创建批量任务](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_0045.html)](tag:hws_hk)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2699,7 +2704,7 @@ class IoTDAClient(Client):
         设备影子介绍：
         设备影子是一个用于存储和检索设备当前状态信息的JSON文档。
         - 每个设备有且只有一个设备影子，由设备ID唯一标识
-        - 设备影子仅保存最近一次设备的上报数据和预期数据
+        - 设备影子用于存储设备上报的(状态)属性和应用程序期望的设备(状态)属性
         - 无论该设备是否在线，都可以通过该影子获取和设置设备的属性
         - 设备上线或者设备上报属性时，如果desired区和reported区存在差异，则将差异部分下发给设备，配置的预期属性需在产品模型中定义且method具有可写属性“W”才可下发
         
@@ -2771,9 +2776,10 @@ class IoTDAClient(Client):
         设备影子介绍：
         设备影子是一个用于存储和检索设备当前状态信息的JSON文档。
         - 每个设备有且只有一个设备影子，由设备ID唯一标识
-        - 设备影子仅保存最近一次设备的上报数据和预期数据
+        - 设备影子用于存储设备上报的(状态)属性和应用程序期望的设备(状态)属性
         - 无论该设备是否在线，都可以通过该影子获取和设置设备的属性
         - 设备上线或者设备上报属性时，如果desired区和reported区存在差异，则将差异部分下发给设备，配置的预期属性需在产品模型中定义且method具有可写属性“W”才可下发
+        - 该接口仅支持配置单个设备的设备影子的预期数据，如需多个设备的设备影子配置，请参见 [[创建批量任务](https://support.huaweicloud.com/api-iothub/iot_06_v5_0045.html)](tag:hws)[[创建批量任务](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_0045.html)](tag:hws_hk)。
         
         限制：
         设备影子JSON文档中的key不允许特殊字符：点(.)、dollar符号($)、空char(十六进制的ASCII码为00)。如果包含了以上特殊字符则无法正常刷新影子文档。
@@ -2841,7 +2847,9 @@ class IoTDAClient(Client):
         """下发设备消息
 
         物联网平台可向设备下发消息，应用服务器可调用此接口向指定设备下发消息，以实现对设备的控制。应用将消息下发给平台后，平台返回应用响应结果，平台再将消息发送给设备。平台返回应用响应结果不一定是设备接收结果，建议用户应用通过订阅[[设备消息状态变更通知](https://support.huaweicloud.com/api-iothub/iot_06_v5_01203.html)](tag:hws)[[设备消息状态变更通知](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_01203.html)](tag:hws_hk)，订阅后平台会将设备接收结果推送给订阅的应用。
-        注意：此接口适用于MQTT设备消息下发，暂不支持其他协议接入的设备消息下发。
+        注意：
+        - 此接口适用于MQTT设备消息下发，暂不支持其他协议接入的设备消息下发。
+        - 此接口仅支持单个设备消息下发，如需多个设备消息下发，请参见 [[创建批量任务](https://support.huaweicloud.com/api-iothub/iot_06_v5_0045.html)](tag:hws)[[创建批量任务](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_0045.html)](tag:hws_hk)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

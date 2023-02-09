@@ -72,7 +72,7 @@ class QueryResRecordsDetailReq:
         :type charge_mode: int
         :param bill_type: 账单类型： 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额&#x3D;客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。 20：退款-变更100：退款-退订税金101：调账-补偿税金102：调账-扣费税金 此参数不携带或者携带值为null时，返回所有账单类型的资源详单数据记录。
         :type bill_type: int
-        :param enterprise_project_id: 企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
+        :param enterprise_project_id: 企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
         :type enterprise_project_id: str
         :param include_zero_record: 返回是否包含应付金额为0的记录。 true: 包含false: 不包含 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
         :type include_zero_record: bool
@@ -292,7 +292,7 @@ class QueryResRecordsDetailReq:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this QueryResRecordsDetailReq.
 
-        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
+        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
         :return: The enterprise_project_id of this QueryResRecordsDetailReq.
         :rtype: str
@@ -303,7 +303,7 @@ class QueryResRecordsDetailReq:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this QueryResRecordsDetailReq.
 
-        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
+        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
         :param enterprise_project_id: The enterprise_project_id of this QueryResRecordsDetailReq.
         :type enterprise_project_id: str

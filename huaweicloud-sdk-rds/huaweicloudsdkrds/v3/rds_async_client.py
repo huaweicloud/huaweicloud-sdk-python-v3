@@ -1734,6 +1734,71 @@ class RdsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_errorlog_for_lts_async(self, request):
+        """list_errorlog_for_lts
+
+        查询实例的错误日志数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListErrorlogForLts
+        :type request: :class:`huaweicloudsdkrds.v3.ListErrorlogForLtsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListErrorlogForLtsResponse`
+        """
+        return self.list_errorlog_for_lts_with_http_info(request)
+
+    def list_errorlog_for_lts_with_http_info(self, request):
+        all_params = ['instance_id', 'request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/error-logs',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListErrorlogForLtsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_flavors_async(self, request):
         """查询数据库规格
 
@@ -2482,6 +2547,71 @@ class RdsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_slow_log_statistics_for_lts_async(self, request):
+        """list_slow_log_statistics_for_lts
+
+        查询实例慢日志的统计数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSlowLogStatisticsForLts
+        :type request: :class:`huaweicloudsdkrds.v3.ListSlowLogStatisticsForLtsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListSlowLogStatisticsForLtsResponse`
+        """
+        return self.list_slow_log_statistics_for_lts_with_http_info(request)
+
+    def list_slow_log_statistics_for_lts_with_http_info(self, request):
+        all_params = ['instance_id', 'request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.1/{project_id}/instances/{instance_id}/slow-logs/statistics',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListSlowLogStatisticsForLtsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_slow_logs_async(self, request):
         """查询数据库慢日志
 
@@ -2623,6 +2753,71 @@ class RdsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListSlowLogsNewResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_slowlog_for_lts_async(self, request):
+        """list_slowlog_for_lts
+
+        查询实例的慢日志数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSlowlogForLts
+        :type request: :class:`huaweicloudsdkrds.v3.ListSlowlogForLtsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListSlowlogForLtsResponse`
+        """
+        return self.list_slowlog_for_lts_with_http_info(request)
+
+    def list_slowlog_for_lts_with_http_info(self, request):
+        all_params = ['instance_id', 'request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/slow-logs',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListSlowlogForLtsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

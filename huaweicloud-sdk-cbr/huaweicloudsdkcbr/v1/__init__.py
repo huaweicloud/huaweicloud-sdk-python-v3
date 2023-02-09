@@ -30,6 +30,7 @@ from huaweicloudsdkcbr.v1.model.billbing_create_extra_info import BillbingCreate
 from huaweicloudsdkcbr.v1.model.billing import Billing
 from huaweicloudsdkcbr.v1.model.billing_create import BillingCreate
 from huaweicloudsdkcbr.v1.model.billing_update import BillingUpdate
+from huaweicloudsdkcbr.v1.model.bind_rules_tags import BindRulesTags
 from huaweicloudsdkcbr.v1.model.bulk_create_and_delete_vault_tags_req import BulkCreateAndDeleteVaultTagsReq
 from huaweicloudsdkcbr.v1.model.cbc_order_result import CbcOrderResult
 from huaweicloudsdkcbr.v1.model.checkpoint_create import CheckpointCreate

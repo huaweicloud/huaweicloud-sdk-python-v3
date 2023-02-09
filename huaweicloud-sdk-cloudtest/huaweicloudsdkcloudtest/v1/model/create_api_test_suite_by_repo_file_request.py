@@ -34,7 +34,7 @@ class CreateApiTestSuiteByRepoFileRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: devcloud的项目ID
+        :param project_id: 项目ID
         :type project_id: str
         :param body: Body of the CreateApiTestSuiteByRepoFileRequest
         :type body: :class:`huaweicloudsdkcloudtest.v1.CreateTestSuitByRepoFileInfo`
@@ -54,7 +54,7 @@ class CreateApiTestSuiteByRepoFileRequest:
     def project_id(self):
         """Gets the project_id of this CreateApiTestSuiteByRepoFileRequest.
 
-        devcloud的项目ID
+        项目ID
 
         :return: The project_id of this CreateApiTestSuiteByRepoFileRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class CreateApiTestSuiteByRepoFileRequest:
     def project_id(self, project_id):
         """Sets the project_id of this CreateApiTestSuiteByRepoFileRequest.
 
-        devcloud的项目ID
+        项目ID
 
         :param project_id: The project_id of this CreateApiTestSuiteByRepoFileRequest.
         :type project_id: str

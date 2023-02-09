@@ -1,3 +1,117 @@
+# 3.1.25 2023-02-09
+
+### HuaweiCloud SDK LakeFormation
+
+- _Features_
+  - Support the service `LakeFormation`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CloudArtifact
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - `CloudArtifact` is renamed to `CodeArtsArtifact`
+
+### HuaweiCloud SDK CloudBuild
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - `CloudBuild` is renamed to `CodeArts Build`
+
+### HuaweiCloud SDK BSSINTL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `fail_resource_infos` to the interface `RenewalResources`
+  - Add the response parameter `fail_resource_infos` to the interface `CancelResourcesSubscription`
+
+### HuaweiCloud SDK DBSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `SwitchRiskRule`:
+    - Add the response parameter `status`
+    - Remove the response parameter `result`
+
+### HuaweiCloud SDK DDS
+
+- _Features_
+  - Support the interface `ListLtsSlowLogs`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `error_code` to the interface `ListAsyncInvocations`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ShowPauseResumeStutus`:
+    - Add the request parameter `X-Auth-Token`
+    - Add the response parameters `master_instance_id`, `slave_instance_id`, `data_sync_indicators`, `rto_and_rpo_indicators`
+    - Remove the request parameter `x-auth-token`
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `roma_forwarding`, `influxdb_forwarding`, `functiongraph_forwarding`, `mrs_kafka_forwarding`, `dms_rocketmq_forwarding` to the interface `ListRuleActions`
+  - Add the request parameters `roma_forwarding`, `influxdb_forwarding`, `functiongraph_forwarding`, `mrs_kafka_forwarding`, `dms_rocketmq_forwarding` to the interface `CreateRuleAction`
+  - Changes of the interface `UpdateRuleAction`:
+    - Add the request parameters `roma_forwarding`, `influxdb_forwarding`, `functiongraph_forwarding`, `mrs_kafka_forwarding`, `dms_rocketmq_forwarding`
+    - Add the response parameters `roma_forwarding`, `influxdb_forwarding`, `functiongraph_forwarding`, `mrs_kafka_forwarding`, `dms_rocketmq_forwarding`
+  - Add the response parameters `roma_forwarding`, `influxdb_forwarding`, `functiongraph_forwarding`, `mrs_kafka_forwarding`, `dms_rocketmq_forwarding` to the interface `ShowRuleAction`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `RecognizeTollInvoice`:
+    - Add the request parameter `return_text_location`
+    - Add the response parameter `text_location`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interfaces `ListErrorlogForLts`, `ListSlowlogForLts`, `ListSlowLogStatisticsForLts`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.24 2023-02-02
 
 ### HuaweiCloud SDK AOS

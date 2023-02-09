@@ -128,7 +128,9 @@ from huaweicloudsdkrds.v3.model.enable_configuration_response import EnableConfi
 from huaweicloudsdkrds.v3.model.enlarge_volume import EnlargeVolume
 from huaweicloudsdkrds.v3.model.enlarge_volume_object import EnlargeVolumeObject
 from huaweicloudsdkrds.v3.model.error_log import ErrorLog
+from huaweicloudsdkrds.v3.model.error_log_item import ErrorLogItem
 from huaweicloudsdkrds.v3.model.error_response import ErrorResponse
+from huaweicloudsdkrds.v3.model.errorlog_for_lts_request import ErrorlogForLtsRequest
 from huaweicloudsdkrds.v3.model.extension_request import ExtensionRequest
 from huaweicloudsdkrds.v3.model.extensions_response import ExtensionsResponse
 from huaweicloudsdkrds.v3.model.failover_mode_request import FailoverModeRequest
@@ -182,6 +184,8 @@ from huaweicloudsdkrds.v3.model.list_error_logs_new_request import ListErrorLogs
 from huaweicloudsdkrds.v3.model.list_error_logs_new_response import ListErrorLogsNewResponse
 from huaweicloudsdkrds.v3.model.list_error_logs_request import ListErrorLogsRequest
 from huaweicloudsdkrds.v3.model.list_error_logs_response import ListErrorLogsResponse
+from huaweicloudsdkrds.v3.model.list_errorlog_for_lts_request import ListErrorlogForLtsRequest
+from huaweicloudsdkrds.v3.model.list_errorlog_for_lts_response import ListErrorlogForLtsResponse
 from huaweicloudsdkrds.v3.model.list_flavors_request import ListFlavorsRequest
 from huaweicloudsdkrds.v3.model.list_flavors_response import ListFlavorsResponse
 from huaweicloudsdkrds.v3.model.list_instance_param_histories_request import ListInstanceParamHistoriesRequest
@@ -214,10 +218,14 @@ from huaweicloudsdkrds.v3.model.list_restore_times_request import ListRestoreTim
 from huaweicloudsdkrds.v3.model.list_restore_times_response import ListRestoreTimesResponse
 from huaweicloudsdkrds.v3.model.list_slow_log_file_request import ListSlowLogFileRequest
 from huaweicloudsdkrds.v3.model.list_slow_log_file_response import ListSlowLogFileResponse
+from huaweicloudsdkrds.v3.model.list_slow_log_statistics_for_lts_request import ListSlowLogStatisticsForLtsRequest
+from huaweicloudsdkrds.v3.model.list_slow_log_statistics_for_lts_response import ListSlowLogStatisticsForLtsResponse
 from huaweicloudsdkrds.v3.model.list_slow_logs_new_request import ListSlowLogsNewRequest
 from huaweicloudsdkrds.v3.model.list_slow_logs_new_response import ListSlowLogsNewResponse
 from huaweicloudsdkrds.v3.model.list_slow_logs_request import ListSlowLogsRequest
 from huaweicloudsdkrds.v3.model.list_slow_logs_response import ListSlowLogsResponse
+from huaweicloudsdkrds.v3.model.list_slowlog_for_lts_request import ListSlowlogForLtsRequest
+from huaweicloudsdkrds.v3.model.list_slowlog_for_lts_response import ListSlowlogForLtsResponse
 from huaweicloudsdkrds.v3.model.list_slowlog_statistics_request import ListSlowlogStatisticsRequest
 from huaweicloudsdkrds.v3.model.list_slowlog_statistics_response import ListSlowlogStatisticsResponse
 from huaweicloudsdkrds.v3.model.list_sqlserver_databases_request import ListSqlserverDatabasesRequest
@@ -235,6 +243,8 @@ from huaweicloudsdkrds.v3.model.modify_param_request import ModifyParamRequest
 from huaweicloudsdkrds.v3.model.modify_proxy_weight_request import ModifyProxyWeightRequest
 from huaweicloudsdkrds.v3.model.msdtc_host_option import MsdtcHostOption
 from huaweicloudsdkrds.v3.model.mysql_read_only_switch import MysqlReadOnlySwitch
+from huaweicloudsdkrds.v3.model.mysql_slow_log_details_item import MysqlSlowLogDetailsItem
+from huaweicloudsdkrds.v3.model.mysql_slow_log_statistics_item import MysqlSlowLogStatisticsItem
 from huaweicloudsdkrds.v3.model.node_response import NodeResponse
 from huaweicloudsdkrds.v3.model.off_site_backup_for_list import OffSiteBackupForList
 from huaweicloudsdkrds.v3.model.off_site_backup_policy import OffSiteBackupPolicy
@@ -366,8 +376,10 @@ from huaweicloudsdkrds.v3.model.slave_instance import SlaveInstance
 from huaweicloudsdkrds.v3.model.slow_log import SlowLog
 from huaweicloudsdkrds.v3.model.slow_log_file import SlowLogFile
 from huaweicloudsdkrds.v3.model.slow_log_statistics import SlowLogStatistics
+from huaweicloudsdkrds.v3.model.slow_log_statistics_for_lts_request import SlowLogStatisticsForLtsRequest
 from huaweicloudsdkrds.v3.model.slowlog_download_info import SlowlogDownloadInfo
 from huaweicloudsdkrds.v3.model.slowlog_download_request import SlowlogDownloadRequest
+from huaweicloudsdkrds.v3.model.slowlog_for_lts_request import SlowlogForLtsRequest
 from huaweicloudsdkrds.v3.model.sqlserver_database_for_creation import SqlserverDatabaseForCreation
 from huaweicloudsdkrds.v3.model.sqlserver_database_for_detail import SqlserverDatabaseForDetail
 from huaweicloudsdkrds.v3.model.sqlserver_grant_request import SqlserverGrantRequest

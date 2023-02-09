@@ -72,7 +72,7 @@ class VaultResourceInstancesReq:
         :type offset: str
         :param action: 操作标识取值范围为：\&quot;filter\&quot;, \&quot;count\&quot;。如果是filter就是分页查询，如果是count只需按照条件将总条数返回即可
         :type action: str
-        :param matches: 资源本身支持的查询条件。  matches不允许为空列表。  matches中key不允许重复。
+        :param matches: 资源本身支持的查询条件。  matches中key不允许重复。  数组长度最大值为 1，后续再扩展。
         :type matches: list[:class:`huaweicloudsdkcbr.v1.Match`]
         :param cloud_type: 云类型
         :type cloud_type: str
@@ -322,7 +322,7 @@ class VaultResourceInstancesReq:
     def matches(self):
         """Gets the matches of this VaultResourceInstancesReq.
 
-        资源本身支持的查询条件。  matches不允许为空列表。  matches中key不允许重复。
+        资源本身支持的查询条件。  matches中key不允许重复。  数组长度最大值为 1，后续再扩展。
 
         :return: The matches of this VaultResourceInstancesReq.
         :rtype: list[:class:`huaweicloudsdkcbr.v1.Match`]
@@ -333,7 +333,7 @@ class VaultResourceInstancesReq:
     def matches(self, matches):
         """Sets the matches of this VaultResourceInstancesReq.
 
-        资源本身支持的查询条件。  matches不允许为空列表。  matches中key不允许重复。
+        资源本身支持的查询条件。  matches中key不允许重复。  数组长度最大值为 1，后续再扩展。
 
         :param matches: The matches of this VaultResourceInstancesReq.
         :type matches: list[:class:`huaweicloudsdkcbr.v1.Match`]

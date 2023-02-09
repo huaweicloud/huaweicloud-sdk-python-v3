@@ -51,6 +51,7 @@ from huaweicloudsdkbssintl.v2.model.discount_item_v2 import DiscountItemV2
 from huaweicloudsdkbssintl.v2.model.discount_simple_info_v3 import DiscountSimpleInfoV3
 from huaweicloudsdkbssintl.v2.model.enterprise_person_new import EnterprisePersonNew
 from huaweicloudsdkbssintl.v2.model.error_detail import ErrorDetail
+from huaweicloudsdkbssintl.v2.model.fail_resource_info import FailResourceInfo
 from huaweicloudsdkbssintl.v2.model.filter_factor import FilterFactor
 from huaweicloudsdkbssintl.v2.model.filter_v2 import FilterV2
 from huaweicloudsdkbssintl.v2.model.free_resource_detail import FreeResourceDetail

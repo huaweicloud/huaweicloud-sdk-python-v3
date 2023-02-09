@@ -157,6 +157,9 @@ from huaweicloudsdkdds.v3.model.list_instances_by_tags_request_body import ListI
 from huaweicloudsdkdds.v3.model.list_instances_by_tags_response import ListInstancesByTagsResponse
 from huaweicloudsdkdds.v3.model.list_instances_request import ListInstancesRequest
 from huaweicloudsdkdds.v3.model.list_instances_response import ListInstancesResponse
+from huaweicloudsdkdds.v3.model.list_lts_slow_logs_request import ListLtsSlowLogsRequest
+from huaweicloudsdkdds.v3.model.list_lts_slow_logs_request_body import ListLtsSlowLogsRequestBody
+from huaweicloudsdkdds.v3.model.list_lts_slow_logs_response import ListLtsSlowLogsResponse
 from huaweicloudsdkdds.v3.model.list_project_tags_request import ListProjectTagsRequest
 from huaweicloudsdkdds.v3.model.list_project_tags_response import ListProjectTagsResponse
 from huaweicloudsdkdds.v3.model.list_recycle_instances_request import ListRecycleInstancesRequest
@@ -274,6 +277,7 @@ from huaweicloudsdkdds.v3.model.show_slowlog_desensitization_switch_request impo
 from huaweicloudsdkdds.v3.model.show_slowlog_desensitization_switch_response import ShowSlowlogDesensitizationSwitchResponse
 from huaweicloudsdkdds.v3.model.show_upgrade_duration_request import ShowUpgradeDurationRequest
 from huaweicloudsdkdds.v3.model.show_upgrade_duration_response import ShowUpgradeDurationResponse
+from huaweicloudsdkdds.v3.model.slow_log_detail import SlowLogDetail
 from huaweicloudsdkdds.v3.model.slowlog_result import SlowlogResult
 from huaweicloudsdkdds.v3.model.source import Source
 from huaweicloudsdkdds.v3.model.storage import Storage

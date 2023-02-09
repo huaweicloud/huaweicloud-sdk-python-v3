@@ -20,7 +20,7 @@ class VaultBindRules:
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'list[Tag]'
+        'tags': 'list[BindRulesTags]'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class VaultBindRules:
         The model defined in huaweicloud sdk
 
         :param tags: 按tags过滤自动绑定的资源
-        :type tags: list[:class:`huaweicloudsdkcbr.v1.Tag`]
+        :type tags: list[:class:`huaweicloudsdkcbr.v1.BindRulesTags`]
         """
         
         
@@ -51,7 +51,7 @@ class VaultBindRules:
         按tags过滤自动绑定的资源
 
         :return: The tags of this VaultBindRules.
-        :rtype: list[:class:`huaweicloudsdkcbr.v1.Tag`]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.BindRulesTags`]
         """
         return self._tags
 
@@ -62,7 +62,7 @@ class VaultBindRules:
         按tags过滤自动绑定的资源
 
         :param tags: The tags of this VaultBindRules.
-        :type tags: list[:class:`huaweicloudsdkcbr.v1.Tag`]
+        :type tags: list[:class:`huaweicloudsdkcbr.v1.BindRulesTags`]
         """
         self._tags = tags
 

@@ -294,6 +294,69 @@ class VpcAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_flow_log_async(self, request):
+        """创建流日志
+
+        创建流日志。
+        流日志功能可以记录虚拟私有云中的流量信息，帮助您检查和优化安全组和网络ACL防火墙控制规则、监控网络流量、进行网络攻击分析等。
+        VPC流日志功能需要与云日志服务LTS结合使用，请先在云日志服务中创建日志组和日志主题，然后再创建VPC流日志。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateFlowLog
+        :type request: :class:`huaweicloudsdkvpc.v2.CreateFlowLogRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.CreateFlowLogResponse`
+        """
+        return self.create_flow_log_with_http_info(request)
+
+    def create_flow_log_with_http_info(self, request):
+        all_params = ['flow_log']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/fl/flow_logs',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateFlowLogResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_port_async(self, request):
         """创建端口
 
@@ -719,6 +782,67 @@ class VpcAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateVpcPeeringResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_flow_log_async(self, request):
+        """删除流日志
+
+        删除流日志
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteFlowLog
+        :type request: :class:`huaweicloudsdkvpc.v2.DeleteFlowLogRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.DeleteFlowLogResponse`
+        """
+        return self.delete_flow_log_with_http_info(request)
+
+    def delete_flow_log_with_http_info(self, request):
+        all_params = ['flowlog_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'flowlog_id' in local_var_params:
+            path_params['flowlog_id'] = local_var_params['flowlog_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/fl/flow_logs/{flowlog_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteFlowLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1215,6 +1339,91 @@ class VpcAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DisassociateRouteTableResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_flow_logs_async(self, request):
+        """查询流日志列表
+
+        查询提交请求的租户的所有流日志列表，并根据过滤条件进行过滤
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListFlowLogs
+        :type request: :class:`huaweicloudsdkvpc.v2.ListFlowLogsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ListFlowLogsResponse`
+        """
+        return self.list_flow_logs_with_http_info(request)
+
+    def list_flow_logs_with_http_info(self, request):
+        all_params = ['id', 'name', 'tenant_id', 'description', 'resource_type', 'resource_id', 'traffic_type', 'log_group_id', 'log_topic_id', 'log_store_type', 'status', 'limit', 'marker']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'tenant_id' in local_var_params:
+            query_params.append(('tenant_id', local_var_params['tenant_id']))
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+        if 'resource_type' in local_var_params:
+            query_params.append(('resource_type', local_var_params['resource_type']))
+        if 'resource_id' in local_var_params:
+            query_params.append(('resource_id', local_var_params['resource_id']))
+        if 'traffic_type' in local_var_params:
+            query_params.append(('traffic_type', local_var_params['traffic_type']))
+        if 'log_group_id' in local_var_params:
+            query_params.append(('log_group_id', local_var_params['log_group_id']))
+        if 'log_topic_id' in local_var_params:
+            query_params.append(('log_topic_id', local_var_params['log_topic_id']))
+        if 'log_store_type' in local_var_params:
+            query_params.append(('log_store_type', local_var_params['log_store_type']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/fl/flow_logs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListFlowLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1827,6 +2036,67 @@ class VpcAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_flow_log_async(self, request):
+        """查询流日志
+
+        查询流日志详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowFlowLog
+        :type request: :class:`huaweicloudsdkvpc.v2.ShowFlowLogRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ShowFlowLogResponse`
+        """
+        return self.show_flow_log_with_http_info(request)
+
+    def show_flow_log_with_http_info(self, request):
+        all_params = ['flowlog_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'flowlog_id' in local_var_params:
+            path_params['flowlog_id'] = local_var_params['flowlog_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/fl/flow_logs/{flowlog_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowFlowLogResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_port_async(self, request):
         """查询端口
 
@@ -2310,6 +2580,69 @@ class VpcAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowVpcPeeringResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_flow_log_async(self, request):
+        """更新流日志
+
+        更新流日志
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateFlowLog
+        :type request: :class:`huaweicloudsdkvpc.v2.UpdateFlowLogRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.UpdateFlowLogResponse`
+        """
+        return self.update_flow_log_with_http_info(request)
+
+    def update_flow_log_with_http_info(self, request):
+        all_params = ['flowlog_id', 'flow_log']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'flowlog_id' in local_var_params:
+            path_params['flowlog_id'] = local_var_params['flowlog_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/fl/flow_logs/{flowlog_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateFlowLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

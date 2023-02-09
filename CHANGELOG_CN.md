@@ -1,3 +1,117 @@
+# 3.1.25 2023-02-09
+
+### HuaweiCloud SDK LakeFormation
+
+- _新增特性_
+  - 支持湖仓构建服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CloudArtifact
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - `制品仓库 CloudArtifact`更名为`制品仓库 CodeArtsArtifact`
+
+### HuaweiCloud SDK CloudBuild
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - `编译构建 CloudBuild`更名为`编译构建 CodeArts Build`
+
+### HuaweiCloud SDK BSSINTL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RenewalResources`新增响应参数 `fail_resource_infos`
+  - 接口`CancelResourcesSubscription`新增响应参数 `fail_resource_infos`
+
+### HuaweiCloud SDK DBSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`SwitchRiskRule`:
+    - 新增响应参数 `status`
+    - 移除响应参数 `result`
+
+### HuaweiCloud SDK DDS
+
+- _新增特性_
+  - 支持接口`ListLtsSlowLogs`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListAsyncInvocations`新增响应参数 `error_code`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowPauseResumeStutus`:
+    - 新增请求参数 `X-Auth-Token`
+    - 新增响应参数 `master_instance_id`、`slave_instance_id`、`data_sync_indicators`、`rto_and_rpo_indicators`
+    - 移除请求参数 `x-auth-token`
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListRuleActions`新增响应参数 `roma_forwarding`、`influxdb_forwarding`、`functiongraph_forwarding`、`mrs_kafka_forwarding`、`dms_rocketmq_forwarding`
+  - 接口`CreateRuleAction`新增请求参数 `roma_forwarding`、`influxdb_forwarding`、`functiongraph_forwarding`、`mrs_kafka_forwarding`、`dms_rocketmq_forwarding`
+  - 接口`UpdateRuleAction`:
+    - 新增请求参数 `roma_forwarding`、`influxdb_forwarding`、`functiongraph_forwarding`、`mrs_kafka_forwarding`、`dms_rocketmq_forwarding`
+    - 新增响应参数 `roma_forwarding`、`influxdb_forwarding`、`functiongraph_forwarding`、`mrs_kafka_forwarding`、`dms_rocketmq_forwarding`
+  - 接口`ShowRuleAction`新增响应参数 `roma_forwarding`、`influxdb_forwarding`、`functiongraph_forwarding`、`mrs_kafka_forwarding`、`dms_rocketmq_forwarding`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RecognizeTollInvoice`:
+    - 新增请求参数 `return_text_location`
+    - 新增响应参数 `text_location`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`ListErrorlogForLts`、`ListSlowlogForLts`、`ListSlowLogStatisticsForLts`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.24 2023-02-02
 
 ### HuaweiCloud SDK AOS

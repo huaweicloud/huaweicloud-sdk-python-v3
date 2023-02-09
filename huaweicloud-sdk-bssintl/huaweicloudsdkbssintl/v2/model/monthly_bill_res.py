@@ -138,7 +138,7 @@ class MonthlyBillRes:
         :type resource_tag: str
         :param sku_code: SKU编码，在账单中唯一标识一个资源的规格。
         :type sku_code: str
-        :param enterprise_project_id: 企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
+        :param enterprise_project_id: 企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null其余项目对应ID获取方法请参见如何获取企业项目ID。
         :type enterprise_project_id: str
         :param enterprise_project_name: 企业项目名称。
         :type enterprise_project_name: str
@@ -629,7 +629,7 @@ class MonthlyBillRes:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this MonthlyBillRes.
 
-        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
+        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null其余项目对应ID获取方法请参见如何获取企业项目ID。
 
         :return: The enterprise_project_id of this MonthlyBillRes.
         :rtype: str
@@ -640,7 +640,7 @@ class MonthlyBillRes:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this MonthlyBillRes.
 
-        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
+        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null其余项目对应ID获取方法请参见如何获取企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this MonthlyBillRes.
         :type enterprise_project_id: str
