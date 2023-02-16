@@ -54,7 +54,7 @@ class LogConfiguration:
         :type cluster_id: str
         :param obs_bucket: 用于存储日志的OBS桶的桶名。
         :type obs_bucket: str
-        :param agency: IAM 委托。
+        :param agency: 委托名称，委托给CSS，允许CSS调用您的其他云服务。
         :type agency: str
         :param update_at: 更新时间。格式为：Unix时间戳格式。
         :type update_at: int
@@ -170,7 +170,7 @@ class LogConfiguration:
     def agency(self):
         """Gets the agency of this LogConfiguration.
 
-        IAM 委托。
+        委托名称，委托给CSS，允许CSS调用您的其他云服务。
 
         :return: The agency of this LogConfiguration.
         :rtype: str
@@ -181,7 +181,7 @@ class LogConfiguration:
     def agency(self, agency):
         """Sets the agency of this LogConfiguration.
 
-        IAM 委托。
+        委托名称，委托给CSS，允许CSS调用您的其他云服务。
 
         :param agency: The agency of this LogConfiguration.
         :type agency: str

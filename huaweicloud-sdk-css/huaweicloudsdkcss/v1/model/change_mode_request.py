@@ -21,7 +21,7 @@ class ChangeModeRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'body': 'ChangeModeRequestBody'
+        'body': 'ChangeModeReq'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class ChangeModeRequest:
         :param cluster_id: 指定修改的集群ID。
         :type cluster_id: str
         :param body: Body of the ChangeModeRequest
-        :type body: :class:`huaweicloudsdkcss.v1.ChangeModeRequestBody`
+        :type body: :class:`huaweicloudsdkcss.v1.ChangeModeReq`
         """
         
         
@@ -77,7 +77,7 @@ class ChangeModeRequest:
         """Gets the body of this ChangeModeRequest.
 
         :return: The body of this ChangeModeRequest.
-        :rtype: :class:`huaweicloudsdkcss.v1.ChangeModeRequestBody`
+        :rtype: :class:`huaweicloudsdkcss.v1.ChangeModeReq`
         """
         return self._body
 
@@ -86,7 +86,7 @@ class ChangeModeRequest:
         """Sets the body of this ChangeModeRequest.
 
         :param body: The body of this ChangeModeRequest.
-        :type body: :class:`huaweicloudsdkcss.v1.ChangeModeRequestBody`
+        :type body: :class:`huaweicloudsdkcss.v1.ChangeModeReq`
         """
         self._body = body
 

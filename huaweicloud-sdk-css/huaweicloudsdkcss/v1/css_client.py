@@ -56,7 +56,7 @@ class CssClient(Client):
         return self.add_independent_node_with_http_info(request)
 
     def add_independent_node_with_http_info(self, request):
-        all_params = ['cluster_id', 'type', 'independent_request_body']
+        all_params = ['cluster_id', 'type', 'independent_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -120,7 +120,7 @@ class CssClient(Client):
         return self.change_mode_with_http_info(request)
 
     def change_mode_with_http_info(self, request):
-        all_params = ['cluster_id', 'change_mode_request_body']
+        all_params = ['cluster_id', 'change_mode_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -163,6 +163,68 @@ class CssClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ChangeModeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def change_security_group(self, request):
+        """切换安全组
+
+        该接口可以在集群创建成功后，修改安全组。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ChangeSecurityGroup
+        :type request: :class:`huaweicloudsdkcss.v1.ChangeSecurityGroupRequest`
+        :rtype: :class:`huaweicloudsdkcss.v1.ChangeSecurityGroupResponse`
+        """
+        return self.change_security_group_with_http_info(request)
+
+    def change_security_group_with_http_info(self, request):
+        all_params = ['cluster_id', 'change_security_group_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/sg/change',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ChangeSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1939,13 +2001,16 @@ class CssClient(Client):
     def start_auto_setting(self, request):
         """自动设置集群快照的基础配置（不推荐使用）
 
-        &gt;自动设置集群快照接口将会自动创建快照OBS桶和委托。如果有多个集群，每个集群使用这个接口都会创建一个不一样的OBS桶，可能会导致OBS的配额不够，较多的OBS桶也难以维护。建议可以直接使用[修改集群快照的基础配置](UpdateSnapshotSetting.xml)。
-        
         该接口用于自动设置集群快照的基础配置，包括配置OBS桶和IAM委托。
         
+        
         - “OBS桶”：快照存储的OBS桶位置。
+        
         - “备份路径”：快照在OBS桶中的存放路径。
+        
         - “IAM委托”：由于需要将快照保存在OBS中，所以需要在IAM中设置对应的委托获取对OBS服务的授权。
+        
+        &gt;自动设置集群快照接口将会自动创建快照OBS桶和委托。如果有多个集群，每个集群使用这个接口都会创建一个不一样的OBS桶，可能会导致OBS的配额不够，较多的OBS桶也难以维护。建议可以直接使用[修改集群快照的基础配置](UpdateSnapshotSetting.xml)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3183,7 +3248,7 @@ class CssClient(Client):
     def update_shrink_cluster(self, request):
         """指定节点类型缩容
 
-        该接口用于集群对不同类型实例的个数以及存储容量进行缩容。包周期集群不支持API操作。
+        该接口用于集群对不同类型实例的个数以及存储容量进行缩容。包周期类型的集群不支持通过api进行指定节点类型缩容操作。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3245,7 +3310,7 @@ class CssClient(Client):
     def update_shrink_nodes(self, request):
         """指定节点缩容
 
-        该接口可以对集群现有节点中指定节点进行缩容。包周期集群不支持API操作。
+        该接口可以对集群现有节点中指定节点进行缩容。包周期类型的集群不支持通过api进行指定节点缩容操作。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

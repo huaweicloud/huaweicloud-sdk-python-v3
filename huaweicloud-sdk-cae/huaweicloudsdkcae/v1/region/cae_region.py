@@ -9,10 +9,10 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class CaeRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("CAE")
 
-
-    CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://cae.cn-north-4.myhuaweicloud.com")
-
-    CN_EAST_3 = Region(id="cn-east-3", endpoint="https://cae.cn-east-3.myhuaweicloud.com")
+    CN_NORTH_4 = Region("cn-north-4",
+                        "https://cae.cn-north-4.myhuaweicloud.com")
+    CN_EAST_3 = Region("cn-east-3",
+                        "https://cae.cn-east-3.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,

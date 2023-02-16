@@ -23,7 +23,7 @@ from huaweicloudsdkcloudide.v2.model.check_name_request import CheckNameRequest
 from huaweicloudsdkcloudide.v2.model.check_name_response import CheckNameResponse
 from huaweicloudsdkcloudide.v2.model.check_result import CheckResult
 from huaweicloudsdkcloudide.v2.model.check_result_error import CheckResultError
-from huaweicloudsdkcloudide.v2.model.cloud_ide_extension_version_property import CloudIDEExtensionVersionProperty
+from huaweicloudsdkcloudide.v2.model.code_arts_ide_online_extension_version_property import CodeArtsIDEOnlineExtensionVersionProperty
 from huaweicloudsdkcloudide.v2.model.create_acceptance_request import CreateAcceptanceRequest
 from huaweicloudsdkcloudide.v2.model.create_acceptance_response import CreateAcceptanceResponse
 from huaweicloudsdkcloudide.v2.model.create_extension_authorization_request import CreateExtensionAuthorizationRequest
@@ -32,6 +32,8 @@ from huaweicloudsdkcloudide.v2.model.create_instance_by3rd_request import Create
 from huaweicloudsdkcloudide.v2.model.create_instance_by3rd_response import CreateInstanceBy3rdResponse
 from huaweicloudsdkcloudide.v2.model.create_instance_request import CreateInstanceRequest
 from huaweicloudsdkcloudide.v2.model.create_instance_response import CreateInstanceResponse
+from huaweicloudsdkcloudide.v2.model.create_login_request import CreateLoginRequest
+from huaweicloudsdkcloudide.v2.model.create_login_response import CreateLoginResponse
 from huaweicloudsdkcloudide.v2.model.create_request_request import CreateRequestRequest
 from huaweicloudsdkcloudide.v2.model.create_request_response import CreateRequestResponse
 from huaweicloudsdkcloudide.v2.model.criteria_snake import CriteriaSnake
@@ -73,6 +75,7 @@ from huaweicloudsdkcloudide.v2.model.list_project_templates_request import ListP
 from huaweicloudsdkcloudide.v2.model.list_project_templates_response import ListProjectTemplatesResponse
 from huaweicloudsdkcloudide.v2.model.list_stacks_request import ListStacksRequest
 from huaweicloudsdkcloudide.v2.model.list_stacks_response import ListStacksResponse
+from huaweicloudsdkcloudide.v2.model.login_schema import LoginSchema
 from huaweicloudsdkcloudide.v2.model.page_instances_vo import PageInstancesVO
 from huaweicloudsdkcloudide.v2.model.plugin import Plugin
 from huaweicloudsdkcloudide.v2.model.project_templates import ProjectTemplates

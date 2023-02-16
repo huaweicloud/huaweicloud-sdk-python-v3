@@ -419,6 +419,69 @@ class DcsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_auto_expire_scan_task_async(self, request):
+        """创建过期key扫描任务
+
+        创建过期key扫描任务（Redis 3.0 不支持过期key扫描）。
+        过期key扫描会对键空间进行Redis的scan扫描，释放内存中已过期但是由于惰性删除机制而没有释放的内存空间。
+        过期key扫描在主节点上执行，会对实例性能有一定的影响，建议不要在业务高峰期进行。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateAutoExpireScanTask
+        :type request: :class:`huaweicloudsdkdcs.v2.CreateAutoExpireScanTaskRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.CreateAutoExpireScanTaskResponse`
+        """
+        return self.create_auto_expire_scan_task_with_http_info(request)
+
+    def create_auto_expire_scan_task_with_http_info(self, request):
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/scan-expire-keys-task',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateAutoExpireScanTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_bigkey_scan_task_async(self, request):
         """创建大key分析任务
 
@@ -475,6 +538,67 @@ class DcsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateBigkeyScanTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_custom_template_async(self, request):
+        """创建自定义模板
+
+        创建自定义模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateCustomTemplate
+        :type request: :class:`huaweicloudsdkdcs.v2.CreateCustomTemplateRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.CreateCustomTemplateResponse`
+        """
+        return self.create_custom_template_with_http_info(request)
+
+    def create_custom_template_with_http_info(self, request):
+        all_params = ['create_custom_template_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/config-templates',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateCustomTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

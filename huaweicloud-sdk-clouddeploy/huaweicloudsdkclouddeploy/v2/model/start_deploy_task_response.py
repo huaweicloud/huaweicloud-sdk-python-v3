@@ -38,13 +38,13 @@ class StartDeployTaskResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 执行记录id
+        :param id: 部署记录id
         :type id: str
         :param task_id: 部署任务id
         :type task_id: str
         :param job_name: 执行任务名称
         :type job_name: str
-        :param app_component_list: 部署任务和应用组件对应关系
+        :param app_component_list: 应用和AOM应用组件对应关系
         :type app_component_list: list[:class:`huaweicloudsdkclouddeploy.v2.AppComponentDao`]
         """
         
@@ -69,7 +69,7 @@ class StartDeployTaskResponse(SdkResponse):
     def id(self):
         """Gets the id of this StartDeployTaskResponse.
 
-        执行记录id
+        部署记录id
 
         :return: The id of this StartDeployTaskResponse.
         :rtype: str
@@ -80,7 +80,7 @@ class StartDeployTaskResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this StartDeployTaskResponse.
 
-        执行记录id
+        部署记录id
 
         :param id: The id of this StartDeployTaskResponse.
         :type id: str
@@ -135,7 +135,7 @@ class StartDeployTaskResponse(SdkResponse):
     def app_component_list(self):
         """Gets the app_component_list of this StartDeployTaskResponse.
 
-        部署任务和应用组件对应关系
+        应用和AOM应用组件对应关系
 
         :return: The app_component_list of this StartDeployTaskResponse.
         :rtype: list[:class:`huaweicloudsdkclouddeploy.v2.AppComponentDao`]
@@ -146,7 +146,7 @@ class StartDeployTaskResponse(SdkResponse):
     def app_component_list(self, app_component_list):
         """Sets the app_component_list of this StartDeployTaskResponse.
 
-        部署任务和应用组件对应关系
+        应用和AOM应用组件对应关系
 
         :param app_component_list: The app_component_list of this StartDeployTaskResponse.
         :type app_component_list: list[:class:`huaweicloudsdkclouddeploy.v2.AppComponentDao`]

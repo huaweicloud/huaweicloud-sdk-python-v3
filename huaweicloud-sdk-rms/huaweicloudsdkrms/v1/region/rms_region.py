@@ -9,8 +9,8 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class RmsRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("RMS")
 
-
-    CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://rms.myhuaweicloud.com")
+    CN_NORTH_4 = Region("cn-north-4",
+                        "https://rms.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,

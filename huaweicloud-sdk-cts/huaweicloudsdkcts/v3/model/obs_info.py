@@ -24,7 +24,9 @@ class ObsInfo:
         'file_prefix_name': 'str',
         'is_obs_created': 'bool',
         'is_authorized_bucket': 'bool',
-        'bucket_lifecycle': 'int'
+        'bucket_lifecycle': 'int',
+        'compress_type': 'str',
+        'is_sort_by_service': 'bool'
     }
 
     attribute_map = {
@@ -32,10 +34,12 @@ class ObsInfo:
         'file_prefix_name': 'file_prefix_name',
         'is_obs_created': 'is_obs_created',
         'is_authorized_bucket': 'is_authorized_bucket',
-        'bucket_lifecycle': 'bucket_lifecycle'
+        'bucket_lifecycle': 'bucket_lifecycle',
+        'compress_type': 'compress_type',
+        'is_sort_by_service': 'is_sort_by_service'
     }
 
-    def __init__(self, bucket_name=None, file_prefix_name=None, is_obs_created=None, is_authorized_bucket=None, bucket_lifecycle=None):
+    def __init__(self, bucket_name=None, file_prefix_name=None, is_obs_created=None, is_authorized_bucket=None, bucket_lifecycle=None, compress_type=None, is_sort_by_service=None):
         """ObsInfo
 
         The model defined in huaweicloud sdk
@@ -50,6 +54,10 @@ class ObsInfo:
         :type is_authorized_bucket: bool
         :param bucket_lifecycle: 标识配置桶内对象存储周期。 当\&quot;tracker_type\&quot;参数值为\&quot;data\&quot;时该参数值有效。
         :type bucket_lifecycle: int
+        :param compress_type: 压缩类型。包括不压缩（json），压缩（gzip）两种状态。默认为gzip格式。
+        :type compress_type: str
+        :param is_sort_by_service: 路径按云服务划分，打开后转储文件路径中将增加云服务名。默认为true。
+        :type is_sort_by_service: bool
         """
         
         
@@ -59,6 +67,8 @@ class ObsInfo:
         self._is_obs_created = None
         self._is_authorized_bucket = None
         self._bucket_lifecycle = None
+        self._compress_type = None
+        self._is_sort_by_service = None
         self.discriminator = None
 
         if bucket_name is not None:
@@ -71,6 +81,10 @@ class ObsInfo:
             self.is_authorized_bucket = is_authorized_bucket
         if bucket_lifecycle is not None:
             self.bucket_lifecycle = bucket_lifecycle
+        if compress_type is not None:
+            self.compress_type = compress_type
+        if is_sort_by_service is not None:
+            self.is_sort_by_service = is_sort_by_service
 
     @property
     def bucket_name(self):
@@ -181,6 +195,50 @@ class ObsInfo:
         :type bucket_lifecycle: int
         """
         self._bucket_lifecycle = bucket_lifecycle
+
+    @property
+    def compress_type(self):
+        """Gets the compress_type of this ObsInfo.
+
+        压缩类型。包括不压缩（json），压缩（gzip）两种状态。默认为gzip格式。
+
+        :return: The compress_type of this ObsInfo.
+        :rtype: str
+        """
+        return self._compress_type
+
+    @compress_type.setter
+    def compress_type(self, compress_type):
+        """Sets the compress_type of this ObsInfo.
+
+        压缩类型。包括不压缩（json），压缩（gzip）两种状态。默认为gzip格式。
+
+        :param compress_type: The compress_type of this ObsInfo.
+        :type compress_type: str
+        """
+        self._compress_type = compress_type
+
+    @property
+    def is_sort_by_service(self):
+        """Gets the is_sort_by_service of this ObsInfo.
+
+        路径按云服务划分，打开后转储文件路径中将增加云服务名。默认为true。
+
+        :return: The is_sort_by_service of this ObsInfo.
+        :rtype: bool
+        """
+        return self._is_sort_by_service
+
+    @is_sort_by_service.setter
+    def is_sort_by_service(self, is_sort_by_service):
+        """Sets the is_sort_by_service of this ObsInfo.
+
+        路径按云服务划分，打开后转储文件路径中将增加云服务名。默认为true。
+
+        :param is_sort_by_service: The is_sort_by_service of this ObsInfo.
+        :type is_sort_by_service: bool
+        """
+        self._is_sort_by_service = is_sort_by_service
 
     def to_dict(self):
         """Returns the model properties as a dict"""

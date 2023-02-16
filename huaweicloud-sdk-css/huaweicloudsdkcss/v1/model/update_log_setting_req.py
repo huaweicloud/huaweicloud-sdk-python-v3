@@ -36,7 +36,7 @@ class UpdateLogSettingReq:
 
         The model defined in huaweicloud sdk
 
-        :param agency: IAM 委托。
+        :param agency: 委托名称，委托给CSS，允许CSS调用您的其他云服务。
         :type agency: str
         :param log_base_path: 日志在OBS桶中的备份路径。
         :type log_base_path: str
@@ -59,7 +59,7 @@ class UpdateLogSettingReq:
     def agency(self):
         """Gets the agency of this UpdateLogSettingReq.
 
-        IAM 委托。
+        委托名称，委托给CSS，允许CSS调用您的其他云服务。
 
         :return: The agency of this UpdateLogSettingReq.
         :rtype: str
@@ -70,7 +70,7 @@ class UpdateLogSettingReq:
     def agency(self, agency):
         """Sets the agency of this UpdateLogSettingReq.
 
-        IAM 委托。
+        委托名称，委托给CSS，允许CSS调用您的其他云服务。
 
         :param agency: The agency of this UpdateLogSettingReq.
         :type agency: str

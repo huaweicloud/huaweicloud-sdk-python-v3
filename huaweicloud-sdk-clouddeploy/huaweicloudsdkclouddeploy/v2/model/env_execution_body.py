@@ -36,11 +36,11 @@ class EnvExecutionBody:
 
         The model defined in huaweicloud sdk
 
-        :param params: 部署任务执行时传递的参数
+        :param params: 部署应用时传递的参数
         :type params: list[:class:`huaweicloudsdkclouddeploy.v2.DynamicConfigInfo`]
-        :param record_id: 部署任务的执行id，可通过record_id回滚至之前的部署状态。选中部署历史执行记录，在URL中获取
+        :param record_id: 应用的部署id，可通过record_id回滚至之前的部署状态。选中应用历史部署记录，在URL中获取
         :type record_id: str
-        :param trigger_source: 限制触发来源,0不限制任何执行请求来源,1时只允许通过流水线触发执行
+        :param trigger_source: 限制触发来源,0不限制任何部署请求来源,1时只允许通过流水线触发部署
         :type trigger_source: str
         """
         
@@ -62,7 +62,7 @@ class EnvExecutionBody:
     def params(self):
         """Gets the params of this EnvExecutionBody.
 
-        部署任务执行时传递的参数
+        部署应用时传递的参数
 
         :return: The params of this EnvExecutionBody.
         :rtype: list[:class:`huaweicloudsdkclouddeploy.v2.DynamicConfigInfo`]
@@ -73,7 +73,7 @@ class EnvExecutionBody:
     def params(self, params):
         """Sets the params of this EnvExecutionBody.
 
-        部署任务执行时传递的参数
+        部署应用时传递的参数
 
         :param params: The params of this EnvExecutionBody.
         :type params: list[:class:`huaweicloudsdkclouddeploy.v2.DynamicConfigInfo`]
@@ -84,7 +84,7 @@ class EnvExecutionBody:
     def record_id(self):
         """Gets the record_id of this EnvExecutionBody.
 
-        部署任务的执行id，可通过record_id回滚至之前的部署状态。选中部署历史执行记录，在URL中获取
+        应用的部署id，可通过record_id回滚至之前的部署状态。选中应用历史部署记录，在URL中获取
 
         :return: The record_id of this EnvExecutionBody.
         :rtype: str
@@ -95,7 +95,7 @@ class EnvExecutionBody:
     def record_id(self, record_id):
         """Sets the record_id of this EnvExecutionBody.
 
-        部署任务的执行id，可通过record_id回滚至之前的部署状态。选中部署历史执行记录，在URL中获取
+        应用的部署id，可通过record_id回滚至之前的部署状态。选中应用历史部署记录，在URL中获取
 
         :param record_id: The record_id of this EnvExecutionBody.
         :type record_id: str
@@ -106,7 +106,7 @@ class EnvExecutionBody:
     def trigger_source(self):
         """Gets the trigger_source of this EnvExecutionBody.
 
-        限制触发来源,0不限制任何执行请求来源,1时只允许通过流水线触发执行
+        限制触发来源,0不限制任何部署请求来源,1时只允许通过流水线触发部署
 
         :return: The trigger_source of this EnvExecutionBody.
         :rtype: str
@@ -117,7 +117,7 @@ class EnvExecutionBody:
     def trigger_source(self, trigger_source):
         """Sets the trigger_source of this EnvExecutionBody.
 
-        限制触发来源,0不限制任何执行请求来源,1时只允许通过流水线触发执行
+        限制触发来源,0不限制任何部署请求来源,1时只允许通过流水线触发部署
 
         :param trigger_source: The trigger_source of this EnvExecutionBody.
         :type trigger_source: str

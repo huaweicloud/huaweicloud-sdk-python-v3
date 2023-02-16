@@ -18,27 +18,22 @@ class UpdateStoredQueryRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
-    sensitive_list.append('x_auth_token')
 
     openapi_types = {
-        'x_auth_token': 'str',
         'query_id': 'str',
         'body': 'StoredQueryRequestBody'
     }
 
     attribute_map = {
-        'x_auth_token': 'X-Auth-Token',
         'query_id': 'query_id',
         'body': 'body'
     }
 
-    def __init__(self, x_auth_token=None, query_id=None, body=None):
+    def __init__(self, query_id=None, body=None):
         """UpdateStoredQueryRequest
 
         The model defined in huaweicloud sdk
 
-        :param x_auth_token: 用户Token。 获取Token，请参考《统一身份认证服务API参考》的“获取用户Token”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。
-        :type x_auth_token: str
         :param query_id: 查询ID
         :type query_id: str
         :param body: Body of the UpdateStoredQueryRequest
@@ -47,37 +42,13 @@ class UpdateStoredQueryRequest:
         
         
 
-        self._x_auth_token = None
         self._query_id = None
         self._body = None
         self.discriminator = None
 
-        self.x_auth_token = x_auth_token
         self.query_id = query_id
         if body is not None:
             self.body = body
-
-    @property
-    def x_auth_token(self):
-        """Gets the x_auth_token of this UpdateStoredQueryRequest.
-
-        用户Token。 获取Token，请参考《统一身份认证服务API参考》的“获取用户Token”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。
-
-        :return: The x_auth_token of this UpdateStoredQueryRequest.
-        :rtype: str
-        """
-        return self._x_auth_token
-
-    @x_auth_token.setter
-    def x_auth_token(self, x_auth_token):
-        """Sets the x_auth_token of this UpdateStoredQueryRequest.
-
-        用户Token。 获取Token，请参考《统一身份认证服务API参考》的“获取用户Token”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。
-
-        :param x_auth_token: The x_auth_token of this UpdateStoredQueryRequest.
-        :type x_auth_token: str
-        """
-        self._x_auth_token = x_auth_token
 
     @property
     def query_id(self):

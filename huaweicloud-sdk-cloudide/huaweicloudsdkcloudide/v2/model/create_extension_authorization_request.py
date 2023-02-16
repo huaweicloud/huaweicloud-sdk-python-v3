@@ -34,7 +34,7 @@ class CreateExtensionAuthorizationRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: CloudIDE实例ID
+        :param instance_id: CodeArtsIDEOnline实例ID
         :type instance_id: str
         :param body: Body of the CreateExtensionAuthorizationRequest
         :type body: :class:`huaweicloudsdkcloudide.v2.ExtensionAuthorization`
@@ -54,7 +54,7 @@ class CreateExtensionAuthorizationRequest:
     def instance_id(self):
         """Gets the instance_id of this CreateExtensionAuthorizationRequest.
 
-        CloudIDE实例ID
+        CodeArtsIDEOnline实例ID
 
         :return: The instance_id of this CreateExtensionAuthorizationRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class CreateExtensionAuthorizationRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this CreateExtensionAuthorizationRequest.
 
-        CloudIDE实例ID
+        CodeArtsIDEOnline实例ID
 
         :param instance_id: The instance_id of this CreateExtensionAuthorizationRequest.
         :type instance_id: str

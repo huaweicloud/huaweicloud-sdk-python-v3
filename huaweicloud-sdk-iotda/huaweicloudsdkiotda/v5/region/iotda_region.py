@@ -9,16 +9,16 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class IoTDARegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("IOTDA")
 
-
-    CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://iotda.cn-north-4.myhuaweicloud.com")
-
-    CN_SOUTH_4 = Region(id="cn-south-4", endpoint="https://iotda.cn-south-4.myhuaweicloud.com")
-
-    CN_SOUTH_1 = Region(id="cn-south-1", endpoint="https://iotda.cn-south-1.myhuaweicloud.com")
-
-    CN_EAST_3 = Region(id="cn-east-3", endpoint="https://iotda.cn-east-3.myhuaweicloud.com")
-
-    AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://iotda.ap-southeast-3.myhuaweicloud.com")
+    CN_NORTH_4 = Region("cn-north-4",
+                        "https://iotda.cn-north-4.myhuaweicloud.com")
+    CN_SOUTH_4 = Region("cn-south-4",
+                        "https://iotda.cn-south-4.myhuaweicloud.com")
+    CN_SOUTH_1 = Region("cn-south-1",
+                        "https://iotda.cn-south-1.myhuaweicloud.com")
+    CN_EAST_3 = Region("cn-east-3",
+                        "https://iotda.cn-east-3.myhuaweicloud.com")
+    AP_SOUTHEAST_3 = Region("ap-southeast-3",
+                        "https://iotda.ap-southeast-3.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,

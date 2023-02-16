@@ -9,8 +9,8 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class CloudRTCRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("CLOUDRTC")
 
-
-    CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://rtc-api.myhuaweicloud.com")
+    CN_NORTH_4 = Region("cn-north-4",
+                        "https://rtc-api.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,

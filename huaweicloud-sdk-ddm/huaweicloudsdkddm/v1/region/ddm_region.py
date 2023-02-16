@@ -9,28 +9,28 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class DdmRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("DDM")
 
-
-    CN_SOUTHWEST_2 = Region(id="cn-southwest-2", endpoint="https://ddm.cn-southwest-2.myhuaweicloud.com")
-
-    CN_SOUTH_2 = Region(id="cn-south-2", endpoint="https://ddm.cn-south-2.myhuaweicloud.com")
-
-    CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://ddm.cn-north-4.myhuaweicloud.com")
-
-    CN_EAST_3 = Region(id="cn-east-3", endpoint="https://ddm.cn-east-3.myhuaweicloud.com")
-
-    CN_EAST_2 = Region(id="cn-east-2", endpoint="https://ddm.cn-east-2.myhuaweicloud.com")
-
-    CN_NORTH_1 = Region(id="cn-north-1", endpoint="https://ddm.cn-north-1.myhuaweicloud.com")
-
-    CN_SOUTH_1 = Region(id="cn-south-1", endpoint="https://ddm.cn-south-1.myhuaweicloud.com")
-
-    AP_SOUTHEAST_1 = Region(id="ap-southeast-1", endpoint="https://ddm.ap-southeast-1.myhuaweicloud.com")
-
-    LA_NORTH_2 = Region(id="la-north-2", endpoint="https://ddm.la-north-2.myhuaweicloud.com")
-
-    SA_BRAZIL_1 = Region(id="sa-brazil-1", endpoint="https://ddm.sa-brazil-1.myhuaweicloud.com")
-
-    LA_SOUTH_2 = Region(id="la-south-2", endpoint="https://ddm.la-south-2.myhuaweicloud.com")
+    CN_SOUTHWEST_2 = Region("cn-southwest-2",
+                        "https://ddm.cn-southwest-2.myhuaweicloud.com")
+    CN_SOUTH_2 = Region("cn-south-2",
+                        "https://ddm.cn-south-2.myhuaweicloud.com")
+    CN_NORTH_4 = Region("cn-north-4",
+                        "https://ddm.cn-north-4.myhuaweicloud.com")
+    CN_EAST_3 = Region("cn-east-3",
+                        "https://ddm.cn-east-3.myhuaweicloud.com")
+    CN_EAST_2 = Region("cn-east-2",
+                        "https://ddm.cn-east-2.myhuaweicloud.com")
+    CN_NORTH_1 = Region("cn-north-1",
+                        "https://ddm.cn-north-1.myhuaweicloud.com")
+    CN_SOUTH_1 = Region("cn-south-1",
+                        "https://ddm.cn-south-1.myhuaweicloud.com")
+    AP_SOUTHEAST_1 = Region("ap-southeast-1",
+                        "https://ddm.ap-southeast-1.myhuaweicloud.com")
+    LA_NORTH_2 = Region("la-north-2",
+                        "https://ddm.la-north-2.myhuaweicloud.com")
+    SA_BRAZIL_1 = Region("sa-brazil-1",
+                        "https://ddm.sa-brazil-1.myhuaweicloud.com")
+    LA_SOUTH_2 = Region("la-south-2",
+                        "https://ddm.la-south-2.myhuaweicloud.com")
 
     static_fields = {
         "cn-southwest-2": CN_SOUTHWEST_2,

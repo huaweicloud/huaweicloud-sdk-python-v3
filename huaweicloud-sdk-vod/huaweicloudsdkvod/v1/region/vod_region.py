@@ -9,12 +9,12 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class VodRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("VOD")
 
-
-    CN_EAST_2 = Region(id="cn-east-2", endpoint="https://vod.cn-east-2.myhuaweicloud.com")
-
-    CN_NORTH_1 = Region(id="cn-north-1", endpoint="https://vod.cn-north-1.myhuaweicloud.com")
-
-    CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://vod.cn-north-4.myhuaweicloud.com")
+    CN_EAST_2 = Region("cn-east-2",
+                        "https://vod.cn-east-2.myhuaweicloud.com")
+    CN_NORTH_1 = Region("cn-north-1",
+                        "https://vod.cn-north-1.myhuaweicloud.com")
+    CN_NORTH_4 = Region("cn-north-4",
+                        "https://vod.cn-north-4.myhuaweicloud.com")
 
     static_fields = {
         "cn-east-2": CN_EAST_2,

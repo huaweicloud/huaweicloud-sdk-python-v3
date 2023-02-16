@@ -9,10 +9,10 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class MeetingRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("MEETING")
 
-
-    CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://api.meeting.huaweicloud.com")
-
-    AP_SOUTHEAST_1 = Region(id="ap-southeast-1", endpoint="https://api-intl.meeting.huaweicloud.com")
+    CN_NORTH_4 = Region("cn-north-4",
+                        "https://api.meeting.huaweicloud.com")
+    AP_SOUTHEAST_1 = Region("ap-southeast-1",
+                        "https://api-intl.meeting.huaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,

@@ -66,7 +66,7 @@ class CreateHostRequestBody:
         :type web_tag: str
         :param exclusive_ip: 是否使用独享ip   - true：使用独享ip   - false：不实用独享ip
         :type exclusive_ip: bool
-        :param paid_type: 套餐付费模式，目前只支持prePaid预付款模式
+        :param paid_type: 套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
         :type paid_type: str
         :param proxy: 防护域名是否使用代理   - false：不使用代理   - true：使用代理
         :type proxy: bool
@@ -269,7 +269,7 @@ class CreateHostRequestBody:
     def paid_type(self):
         """Gets the paid_type of this CreateHostRequestBody.
 
-        套餐付费模式，目前只支持prePaid预付款模式
+        套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
 
         :return: The paid_type of this CreateHostRequestBody.
         :rtype: str
@@ -280,7 +280,7 @@ class CreateHostRequestBody:
     def paid_type(self, paid_type):
         """Sets the paid_type of this CreateHostRequestBody.
 
-        套餐付费模式，目前只支持prePaid预付款模式
+        套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
 
         :param paid_type: The paid_type of this CreateHostRequestBody.
         :type paid_type: str

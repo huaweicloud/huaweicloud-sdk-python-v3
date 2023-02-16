@@ -1264,7 +1264,7 @@ class FrsClient(Client):
         return self.detect_live_by_file_with_http_info(request)
 
     def detect_live_by_file_with_http_info(self, request):
-        all_params = ['video_file', 'actions', 'enterprise_project_id', 'action_time']
+        all_params = ['video_file', 'actions', 'enterprise_project_id', 'action_time', 'nod_threshold']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1289,6 +1289,8 @@ class FrsClient(Client):
             form_params['actions'] = local_var_params['actions']
         if 'action_time' in local_var_params:
             form_params['action_time'] = local_var_params['action_time']
+        if 'nod_threshold' in local_var_params:
+            form_params['nod_threshold'] = local_var_params['nod_threshold']
 
         body_params = None
         if 'body' in local_var_params:
@@ -1332,7 +1334,7 @@ class FrsClient(Client):
         return self.detect_live_by_file_intl_with_http_info(request)
 
     def detect_live_by_file_intl_with_http_info(self, request):
-        all_params = ['video_file', 'actions', 'enterprise_project_id', 'action_time']
+        all_params = ['video_file', 'actions', 'enterprise_project_id', 'action_time', 'nod_threshold']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1357,6 +1359,8 @@ class FrsClient(Client):
             form_params['actions'] = local_var_params['actions']
         if 'action_time' in local_var_params:
             form_params['action_time'] = local_var_params['action_time']
+        if 'nod_threshold' in local_var_params:
+            form_params['nod_threshold'] = local_var_params['nod_threshold']
 
         body_params = None
         if 'body' in local_var_params:

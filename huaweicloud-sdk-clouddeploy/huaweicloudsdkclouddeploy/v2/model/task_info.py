@@ -100,11 +100,11 @@ class TaskInfo:
 
         :param task_id: 部署任务id
         :type task_id: str
-        :param name: 部署任务名称
+        :param name: 应用名称
         :type name: str
-        :param project_id: devcloud项目id
+        :param project_id: 项目id
         :type project_id: str
-        :param project_name: devcloud项目名称
+        :param project_name: 项目名称
         :type project_name: str
         :param deploy_system: 部署类型模式，包括deployTemplate，ansible，shell
         :type deploy_system: str
@@ -112,9 +112,9 @@ class TaskInfo:
         :type create_time: str
         :param update_time: 修改时间
         :type update_time: str
-        :param state: 部署任务状态，Draft表示草稿状态，Available表示可用状态
+        :param state: 应用状态，Draft表示草稿状态，Available表示可用状态
         :type state: str
-        :param execution_time: 最后一次执行时间
+        :param execution_time: 最后一次部署时间
         :type execution_time: str
         :param description: 描述
         :type description: str
@@ -122,15 +122,15 @@ class TaskInfo:
         :type is_defaut_permission: bool
         :param template_id: 模板id
         :type template_id: str
-        :param owner: 部署任务创建者用户名
+        :param owner: 应用创建者用户名
         :type owner: str
-        :param nick_name: 部署任务创建者昵称
+        :param nick_name: 应用创建者昵称
         :type nick_name: str
-        :param owner_id: 部署任务创建者用户ID
+        :param owner_id: 应用创建者用户ID
         :type owner_id: str
-        :param tenant_id: 部署任务创建者租户ID
+        :param tenant_id: 应用创建者租户ID
         :type tenant_id: str
-        :param tenant_name: 部署任务创建者租户名
+        :param tenant_name: 应用创建者租户名
         :type tenant_name: str
         :param slave_cluster_id: slave集群id，默认为null时使用devcloud八爪鱼slave集群，用户自定义slave时为slave集群id
         :type slave_cluster_id: str
@@ -142,29 +142,29 @@ class TaskInfo:
         :type can_delete: bool
         :param can_view: 是否有查看权限
         :type can_view: bool
-        :param can_execute: 是否有执行权限
+        :param can_execute: 是否有部署权限
         :type can_execute: bool
         :param can_copy: 是否有复制权限
         :type can_copy: bool
-        :param can_manage: 是否有管理权限，包含增删改查执行以及权限修改
+        :param can_manage: 是否有管理权限，包含增删改查部署以及权限修改
         :type can_manage: bool
-        :param app_component_list: 部署任务和应用组件对应关系
+        :param app_component_list: 应用和AOM应用组件对应关系
         :type app_component_list: list[:class:`huaweicloudsdkclouddeploy.v2.AppComponentDao`]
-        :param role_id: 角色ID,0：部署任务创建者，-1：项目创建者，3：项目经理，4：开发人员，5：测试经理，6：测试人员，7：参与者，8：浏览者
+        :param role_id: 角色ID,0：应用创建者，-1：项目创建者，3：项目经理，4：开发人员，5：测试经理，6：测试人员，7：参与者，8：浏览者
         :type role_id: int
         :param id: 部署任务id
         :type id: str
-        :param release_id: 任务序列id
+        :param release_id: 部署记录序列号
         :type release_id: int
-        :param duration: 执行时间
+        :param duration: 部署时间
         :type duration: str
-        :param execution_state: 执行状态
+        :param execution_state: 部署状态
         :type execution_state: str
-        :param executor_id: 执行者id
+        :param executor_id: 部署者id
         :type executor_id: str
-        :param executor_nick_name: 执行者名称
+        :param executor_nick_name: 部署者名称
         :type executor_nick_name: str
-        :param steps: 执行步骤
+        :param steps: 部署步骤
         :type steps: dict(str, Step)
         """
         
@@ -301,7 +301,7 @@ class TaskInfo:
     def name(self):
         """Gets the name of this TaskInfo.
 
-        部署任务名称
+        应用名称
 
         :return: The name of this TaskInfo.
         :rtype: str
@@ -312,7 +312,7 @@ class TaskInfo:
     def name(self, name):
         """Sets the name of this TaskInfo.
 
-        部署任务名称
+        应用名称
 
         :param name: The name of this TaskInfo.
         :type name: str
@@ -323,7 +323,7 @@ class TaskInfo:
     def project_id(self):
         """Gets the project_id of this TaskInfo.
 
-        devcloud项目id
+        项目id
 
         :return: The project_id of this TaskInfo.
         :rtype: str
@@ -334,7 +334,7 @@ class TaskInfo:
     def project_id(self, project_id):
         """Sets the project_id of this TaskInfo.
 
-        devcloud项目id
+        项目id
 
         :param project_id: The project_id of this TaskInfo.
         :type project_id: str
@@ -345,7 +345,7 @@ class TaskInfo:
     def project_name(self):
         """Gets the project_name of this TaskInfo.
 
-        devcloud项目名称
+        项目名称
 
         :return: The project_name of this TaskInfo.
         :rtype: str
@@ -356,7 +356,7 @@ class TaskInfo:
     def project_name(self, project_name):
         """Sets the project_name of this TaskInfo.
 
-        devcloud项目名称
+        项目名称
 
         :param project_name: The project_name of this TaskInfo.
         :type project_name: str
@@ -433,7 +433,7 @@ class TaskInfo:
     def state(self):
         """Gets the state of this TaskInfo.
 
-        部署任务状态，Draft表示草稿状态，Available表示可用状态
+        应用状态，Draft表示草稿状态，Available表示可用状态
 
         :return: The state of this TaskInfo.
         :rtype: str
@@ -444,7 +444,7 @@ class TaskInfo:
     def state(self, state):
         """Sets the state of this TaskInfo.
 
-        部署任务状态，Draft表示草稿状态，Available表示可用状态
+        应用状态，Draft表示草稿状态，Available表示可用状态
 
         :param state: The state of this TaskInfo.
         :type state: str
@@ -455,7 +455,7 @@ class TaskInfo:
     def execution_time(self):
         """Gets the execution_time of this TaskInfo.
 
-        最后一次执行时间
+        最后一次部署时间
 
         :return: The execution_time of this TaskInfo.
         :rtype: str
@@ -466,7 +466,7 @@ class TaskInfo:
     def execution_time(self, execution_time):
         """Sets the execution_time of this TaskInfo.
 
-        最后一次执行时间
+        最后一次部署时间
 
         :param execution_time: The execution_time of this TaskInfo.
         :type execution_time: str
@@ -543,7 +543,7 @@ class TaskInfo:
     def owner(self):
         """Gets the owner of this TaskInfo.
 
-        部署任务创建者用户名
+        应用创建者用户名
 
         :return: The owner of this TaskInfo.
         :rtype: str
@@ -554,7 +554,7 @@ class TaskInfo:
     def owner(self, owner):
         """Sets the owner of this TaskInfo.
 
-        部署任务创建者用户名
+        应用创建者用户名
 
         :param owner: The owner of this TaskInfo.
         :type owner: str
@@ -565,7 +565,7 @@ class TaskInfo:
     def nick_name(self):
         """Gets the nick_name of this TaskInfo.
 
-        部署任务创建者昵称
+        应用创建者昵称
 
         :return: The nick_name of this TaskInfo.
         :rtype: str
@@ -576,7 +576,7 @@ class TaskInfo:
     def nick_name(self, nick_name):
         """Sets the nick_name of this TaskInfo.
 
-        部署任务创建者昵称
+        应用创建者昵称
 
         :param nick_name: The nick_name of this TaskInfo.
         :type nick_name: str
@@ -587,7 +587,7 @@ class TaskInfo:
     def owner_id(self):
         """Gets the owner_id of this TaskInfo.
 
-        部署任务创建者用户ID
+        应用创建者用户ID
 
         :return: The owner_id of this TaskInfo.
         :rtype: str
@@ -598,7 +598,7 @@ class TaskInfo:
     def owner_id(self, owner_id):
         """Sets the owner_id of this TaskInfo.
 
-        部署任务创建者用户ID
+        应用创建者用户ID
 
         :param owner_id: The owner_id of this TaskInfo.
         :type owner_id: str
@@ -609,7 +609,7 @@ class TaskInfo:
     def tenant_id(self):
         """Gets the tenant_id of this TaskInfo.
 
-        部署任务创建者租户ID
+        应用创建者租户ID
 
         :return: The tenant_id of this TaskInfo.
         :rtype: str
@@ -620,7 +620,7 @@ class TaskInfo:
     def tenant_id(self, tenant_id):
         """Sets the tenant_id of this TaskInfo.
 
-        部署任务创建者租户ID
+        应用创建者租户ID
 
         :param tenant_id: The tenant_id of this TaskInfo.
         :type tenant_id: str
@@ -631,7 +631,7 @@ class TaskInfo:
     def tenant_name(self):
         """Gets the tenant_name of this TaskInfo.
 
-        部署任务创建者租户名
+        应用创建者租户名
 
         :return: The tenant_name of this TaskInfo.
         :rtype: str
@@ -642,7 +642,7 @@ class TaskInfo:
     def tenant_name(self, tenant_name):
         """Sets the tenant_name of this TaskInfo.
 
-        部署任务创建者租户名
+        应用创建者租户名
 
         :param tenant_name: The tenant_name of this TaskInfo.
         :type tenant_name: str
@@ -763,7 +763,7 @@ class TaskInfo:
     def can_execute(self):
         """Gets the can_execute of this TaskInfo.
 
-        是否有执行权限
+        是否有部署权限
 
         :return: The can_execute of this TaskInfo.
         :rtype: bool
@@ -774,7 +774,7 @@ class TaskInfo:
     def can_execute(self, can_execute):
         """Sets the can_execute of this TaskInfo.
 
-        是否有执行权限
+        是否有部署权限
 
         :param can_execute: The can_execute of this TaskInfo.
         :type can_execute: bool
@@ -807,7 +807,7 @@ class TaskInfo:
     def can_manage(self):
         """Gets the can_manage of this TaskInfo.
 
-        是否有管理权限，包含增删改查执行以及权限修改
+        是否有管理权限，包含增删改查部署以及权限修改
 
         :return: The can_manage of this TaskInfo.
         :rtype: bool
@@ -818,7 +818,7 @@ class TaskInfo:
     def can_manage(self, can_manage):
         """Sets the can_manage of this TaskInfo.
 
-        是否有管理权限，包含增删改查执行以及权限修改
+        是否有管理权限，包含增删改查部署以及权限修改
 
         :param can_manage: The can_manage of this TaskInfo.
         :type can_manage: bool
@@ -829,7 +829,7 @@ class TaskInfo:
     def app_component_list(self):
         """Gets the app_component_list of this TaskInfo.
 
-        部署任务和应用组件对应关系
+        应用和AOM应用组件对应关系
 
         :return: The app_component_list of this TaskInfo.
         :rtype: list[:class:`huaweicloudsdkclouddeploy.v2.AppComponentDao`]
@@ -840,7 +840,7 @@ class TaskInfo:
     def app_component_list(self, app_component_list):
         """Sets the app_component_list of this TaskInfo.
 
-        部署任务和应用组件对应关系
+        应用和AOM应用组件对应关系
 
         :param app_component_list: The app_component_list of this TaskInfo.
         :type app_component_list: list[:class:`huaweicloudsdkclouddeploy.v2.AppComponentDao`]
@@ -851,7 +851,7 @@ class TaskInfo:
     def role_id(self):
         """Gets the role_id of this TaskInfo.
 
-        角色ID,0：部署任务创建者，-1：项目创建者，3：项目经理，4：开发人员，5：测试经理，6：测试人员，7：参与者，8：浏览者
+        角色ID,0：应用创建者，-1：项目创建者，3：项目经理，4：开发人员，5：测试经理，6：测试人员，7：参与者，8：浏览者
 
         :return: The role_id of this TaskInfo.
         :rtype: int
@@ -862,7 +862,7 @@ class TaskInfo:
     def role_id(self, role_id):
         """Sets the role_id of this TaskInfo.
 
-        角色ID,0：部署任务创建者，-1：项目创建者，3：项目经理，4：开发人员，5：测试经理，6：测试人员，7：参与者，8：浏览者
+        角色ID,0：应用创建者，-1：项目创建者，3：项目经理，4：开发人员，5：测试经理，6：测试人员，7：参与者，8：浏览者
 
         :param role_id: The role_id of this TaskInfo.
         :type role_id: int
@@ -895,7 +895,7 @@ class TaskInfo:
     def release_id(self):
         """Gets the release_id of this TaskInfo.
 
-        任务序列id
+        部署记录序列号
 
         :return: The release_id of this TaskInfo.
         :rtype: int
@@ -906,7 +906,7 @@ class TaskInfo:
     def release_id(self, release_id):
         """Sets the release_id of this TaskInfo.
 
-        任务序列id
+        部署记录序列号
 
         :param release_id: The release_id of this TaskInfo.
         :type release_id: int
@@ -917,7 +917,7 @@ class TaskInfo:
     def duration(self):
         """Gets the duration of this TaskInfo.
 
-        执行时间
+        部署时间
 
         :return: The duration of this TaskInfo.
         :rtype: str
@@ -928,7 +928,7 @@ class TaskInfo:
     def duration(self, duration):
         """Sets the duration of this TaskInfo.
 
-        执行时间
+        部署时间
 
         :param duration: The duration of this TaskInfo.
         :type duration: str
@@ -939,7 +939,7 @@ class TaskInfo:
     def execution_state(self):
         """Gets the execution_state of this TaskInfo.
 
-        执行状态
+        部署状态
 
         :return: The execution_state of this TaskInfo.
         :rtype: str
@@ -950,7 +950,7 @@ class TaskInfo:
     def execution_state(self, execution_state):
         """Sets the execution_state of this TaskInfo.
 
-        执行状态
+        部署状态
 
         :param execution_state: The execution_state of this TaskInfo.
         :type execution_state: str
@@ -961,7 +961,7 @@ class TaskInfo:
     def executor_id(self):
         """Gets the executor_id of this TaskInfo.
 
-        执行者id
+        部署者id
 
         :return: The executor_id of this TaskInfo.
         :rtype: str
@@ -972,7 +972,7 @@ class TaskInfo:
     def executor_id(self, executor_id):
         """Sets the executor_id of this TaskInfo.
 
-        执行者id
+        部署者id
 
         :param executor_id: The executor_id of this TaskInfo.
         :type executor_id: str
@@ -983,7 +983,7 @@ class TaskInfo:
     def executor_nick_name(self):
         """Gets the executor_nick_name of this TaskInfo.
 
-        执行者名称
+        部署者名称
 
         :return: The executor_nick_name of this TaskInfo.
         :rtype: str
@@ -994,7 +994,7 @@ class TaskInfo:
     def executor_nick_name(self, executor_nick_name):
         """Sets the executor_nick_name of this TaskInfo.
 
-        执行者名称
+        部署者名称
 
         :param executor_nick_name: The executor_nick_name of this TaskInfo.
         :type executor_nick_name: str
@@ -1005,7 +1005,7 @@ class TaskInfo:
     def steps(self):
         """Gets the steps of this TaskInfo.
 
-        执行步骤
+        部署步骤
 
         :return: The steps of this TaskInfo.
         :rtype: dict(str, Step)
@@ -1016,7 +1016,7 @@ class TaskInfo:
     def steps(self, steps):
         """Sets the steps of this TaskInfo.
 
-        执行步骤
+        部署步骤
 
         :param steps: The steps of this TaskInfo.
         :type steps: dict(str, Step)

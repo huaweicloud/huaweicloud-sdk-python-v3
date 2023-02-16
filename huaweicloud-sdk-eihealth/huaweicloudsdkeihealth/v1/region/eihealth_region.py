@@ -9,12 +9,12 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class EiHealthRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("EIHEALTH")
 
-
-    CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://eihealth.cn-north-4.myhuaweicloud.com")
-
-    CN_EAST_3 = Region(id="cn-east-3", endpoint="https://eihealth.cn-east-3.myhuaweicloud.com")
-
-    CN_SOUTH_1 = Region(id="cn-south-1", endpoint="https://eihealth.cn-south-1.myhuaweicloud.com")
+    CN_NORTH_4 = Region("cn-north-4",
+                        "https://eihealth.cn-north-4.myhuaweicloud.com")
+    CN_EAST_3 = Region("cn-east-3",
+                        "https://eihealth.cn-east-3.myhuaweicloud.com")
+    CN_SOUTH_1 = Region("cn-south-1",
+                        "https://eihealth.cn-south-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,

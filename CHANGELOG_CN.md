@@ -1,3 +1,171 @@
+# 3.1.26 2023-02-16
+
+### HuaweiCloud SDK AOM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateApp`移除响应参数 `id`
+  - 接口`ListResourceUnderNode`:
+    - 新增请求参数 `ci_ids`
+    - 请求参数`ci_id`改为非必填
+
+### HuaweiCloud SDK CloudIDE
+
+- _新增特性_
+  - 支持接口`CreateLogin`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListExtensions`移除响应参数 `id`、`property_name`、`property_value`、`extension_version_id`、`created_at`、`updated_at`
+  - 接口`ShowExtensionDetail`移除响应参数 `id`、`property_name`、`property_value`、`extension_version_id`、`created_at`、`updated_at`
+
+### HuaweiCloud SDK CSS
+
+- _新增特性_
+  - 支持接口`ChangeSecurityGroup`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ChangeMode`:
+    - 新增请求参数 `changeModeReq`
+    - 移除请求参数 `changeModeRequestBody`
+  - 接口`AddIndependentNode`:
+    - 新增请求参数 `IndependentReq`
+    - 移除请求参数 `IndependentRequestBody`
+
+### HuaweiCloud SDK CTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateTracker`新增请求参数 `compress_type`、`is_sort_by_service`
+  - 接口`CreateTracker`新增请求参数 `compress_type`、`is_sort_by_service`
+  - 接口`ListTrackers`新增响应参数 `compress_type`、`is_sort_by_service`
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 支持接口`CreateCustomTemplate`、`CreateAutoExpireScanTask`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DRIS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowHistoryTrafficEvents`新增响应参数 `esn`
+
+### HuaweiCloud SDK DWS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListClusterSnapshots`新增请求参数 `project_id`、`cluster_id`、`limit`、`offset`、`sort_key`、`sort_dir`
+
+### HuaweiCloud SDK FRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`DetectLiveByUrl`新增请求参数 `nod_threshold`
+  - 接口`DetectLiveByUrlIntl`新增请求参数 `nod_threshold`
+  - 接口`DetectLiveByFile`新增请求参数 `nod_threshold`
+  - 接口`DetectLiveByFileIntl`新增请求参数 `nod_threshold`
+  - 接口`DetectLiveByBase64`新增请求参数 `nod_threshold`
+  - 接口`DetectLiveByBase64Intl`新增请求参数 `nod_threshold`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`AddDatabasePermission`请求参数`host`改为必填
+
+### HuaweiCloud SDK Image
+
+- _新增特性_
+  - 支持接口`RunImageSuperResolution`、`RunRecaptureDetect`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK OSM
+
+- _新增特性_
+  - 支持以下接口：
+    - `CreateAuthorization`
+    - `CreateFeedback`
+    - `ShowDownloadAccessoryUrl`
+    - `CreateQuestionInSession`
+    - `CreateSession`
+    - `CreateEvaluate`
+    - `ListFeedbackOption`
+    - `CreateQaFeedbacks`
+    - `CreateAskQuestion`
+    - `ShowQaPairDetail`
+    - `ShowAssociatedQuestions`
+    - `ShowQaPairs`
+    - `ListRecommendWords`
+    - `CreateQaAsk`
+    - `ShowTheme`
+    - `ListArticles`
+    - `ListNotices`
+    - `ListTools`
+    - `CreateDiagnoseFeedback`
+    - `ListDiagnoseItems`
+    - `ListDiagnoseJob`
+    - `ListDiagnoseRecords`
+    - `CreateDiagnoseJob`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RocketMQ
+
+- _新增特性_
+  - 支持接口`CreateInstanceByEngine`、`BatchCreateOrDeleteRocketmqTag`、`ShowRocketmqTags`、`ShowRocketmqProjectTags`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListInstances`新增请求参数 `limit`、`offset`
+  - 接口`ShowConsumerListOrDetails`新增请求参数 `limit`、`offset`
+  - 接口`ListConsumerGroupOfTopic`新增请求参数 `limit`、`offset`
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateHost`:
+    - 请求参数`tls`移除枚举值`TLS v1.3`
+    - 响应参数`tls`移除枚举值`TLS v1.3`
+  - 接口`ShowHost`响应参数`tls`移除枚举值`TLS v1.3`
+  - 接口`CreatePremiumHost`响应参数`tls`移除枚举值`TLS v1.3`
+  - 接口`ShowPremiumHost`响应参数`tls`移除枚举值`TLS v1.3`
+  - 接口`UpdatePremiumHost`:
+    - 请求参数`tls`移除枚举值`TLS v1.3`
+    - 响应参数`tls`移除枚举值`TLS v1.3`
+
 # 3.1.25 2023-02-09
 
 ### HuaweiCloud SDK LakeFormation

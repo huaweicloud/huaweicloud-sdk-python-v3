@@ -9,8 +9,8 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class CodeCraftRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("CODECRAFT")
 
-
-    CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://codecraft.cn-north-4.myhuaweicloud.com")
+    CN_NORTH_4 = Region("cn-north-4",
+                        "https://codecraft.cn-north-4.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,

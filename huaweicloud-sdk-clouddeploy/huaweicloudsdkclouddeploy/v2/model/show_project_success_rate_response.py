@@ -52,15 +52,15 @@ class ShowProjectSuccessRateResponse(SdkResponse):
         :type project_id: str
         :param project_name: 项目名称
         :type project_name: str
-        :param start_date: 任务执行开始时间范围的左边界（包含），格式yyyy-MM-dd
+        :param start_date: 应用部署开始时间范围的左边界（包含），格式yyyy-MM-dd
         :type start_date: str
-        :param end_date: 任务执行开始时间范围的右边界（包含），格式yyyy-MM-dd
+        :param end_date: 应用部署开始时间范围的右边界（包含），格式yyyy-MM-dd
         :type end_date: str
-        :param task_count: 查询到的任务数
+        :param task_count: 查询到的应用数
         :type task_count: int
-        :param record_count: 查询到的任务执行记录数
+        :param record_count: 查询到的应用部署记录数
         :type record_count: int
-        :param success_record_count: 成功的任务执行记录数
+        :param success_record_count: 成功的应用部署记录数
         :type success_record_count: int
         """
         
@@ -163,7 +163,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
     def start_date(self):
         """Gets the start_date of this ShowProjectSuccessRateResponse.
 
-        任务执行开始时间范围的左边界（包含），格式yyyy-MM-dd
+        应用部署开始时间范围的左边界（包含），格式yyyy-MM-dd
 
         :return: The start_date of this ShowProjectSuccessRateResponse.
         :rtype: str
@@ -174,7 +174,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
     def start_date(self, start_date):
         """Sets the start_date of this ShowProjectSuccessRateResponse.
 
-        任务执行开始时间范围的左边界（包含），格式yyyy-MM-dd
+        应用部署开始时间范围的左边界（包含），格式yyyy-MM-dd
 
         :param start_date: The start_date of this ShowProjectSuccessRateResponse.
         :type start_date: str
@@ -185,7 +185,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
     def end_date(self):
         """Gets the end_date of this ShowProjectSuccessRateResponse.
 
-        任务执行开始时间范围的右边界（包含），格式yyyy-MM-dd
+        应用部署开始时间范围的右边界（包含），格式yyyy-MM-dd
 
         :return: The end_date of this ShowProjectSuccessRateResponse.
         :rtype: str
@@ -196,7 +196,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
     def end_date(self, end_date):
         """Sets the end_date of this ShowProjectSuccessRateResponse.
 
-        任务执行开始时间范围的右边界（包含），格式yyyy-MM-dd
+        应用部署开始时间范围的右边界（包含），格式yyyy-MM-dd
 
         :param end_date: The end_date of this ShowProjectSuccessRateResponse.
         :type end_date: str
@@ -207,7 +207,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
     def task_count(self):
         """Gets the task_count of this ShowProjectSuccessRateResponse.
 
-        查询到的任务数
+        查询到的应用数
 
         :return: The task_count of this ShowProjectSuccessRateResponse.
         :rtype: int
@@ -218,7 +218,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
     def task_count(self, task_count):
         """Sets the task_count of this ShowProjectSuccessRateResponse.
 
-        查询到的任务数
+        查询到的应用数
 
         :param task_count: The task_count of this ShowProjectSuccessRateResponse.
         :type task_count: int
@@ -229,7 +229,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
     def record_count(self):
         """Gets the record_count of this ShowProjectSuccessRateResponse.
 
-        查询到的任务执行记录数
+        查询到的应用部署记录数
 
         :return: The record_count of this ShowProjectSuccessRateResponse.
         :rtype: int
@@ -240,7 +240,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
     def record_count(self, record_count):
         """Sets the record_count of this ShowProjectSuccessRateResponse.
 
-        查询到的任务执行记录数
+        查询到的应用部署记录数
 
         :param record_count: The record_count of this ShowProjectSuccessRateResponse.
         :type record_count: int
@@ -251,7 +251,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
     def success_record_count(self):
         """Gets the success_record_count of this ShowProjectSuccessRateResponse.
 
-        成功的任务执行记录数
+        成功的应用部署记录数
 
         :return: The success_record_count of this ShowProjectSuccessRateResponse.
         :rtype: int
@@ -262,7 +262,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
     def success_record_count(self, success_record_count):
         """Sets the success_record_count of this ShowProjectSuccessRateResponse.
 
-        成功的任务执行记录数
+        成功的应用部署记录数
 
         :param success_record_count: The success_record_count of this ShowProjectSuccessRateResponse.
         :type success_record_count: int

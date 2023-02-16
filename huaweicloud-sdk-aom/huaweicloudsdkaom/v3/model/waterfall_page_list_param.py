@@ -34,7 +34,7 @@ class WaterfallPageListParam:
 
         The model defined in huaweicloud sdk
 
-        :param maker: 页面的分页标志位
+        :param maker: 页面的分页标志位；为分页的最后一条记录的id
         :type maker: str
         :param limit: 查询返回记录的数量限制
         :type limit: int
@@ -55,7 +55,7 @@ class WaterfallPageListParam:
     def maker(self):
         """Gets the maker of this WaterfallPageListParam.
 
-        页面的分页标志位
+        页面的分页标志位；为分页的最后一条记录的id
 
         :return: The maker of this WaterfallPageListParam.
         :rtype: str
@@ -66,7 +66,7 @@ class WaterfallPageListParam:
     def maker(self, maker):
         """Sets the maker of this WaterfallPageListParam.
 
-        页面的分页标志位
+        页面的分页标志位；为分页的最后一条记录的id
 
         :param maker: The maker of this WaterfallPageListParam.
         :type maker: str

@@ -9,8 +9,8 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class BssintlRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("BSSINTL")
 
-
-    AP_SOUTHEAST_1 = Region(id="ap-southeast-1", endpoint="https://bss-intl.myhuaweicloud.com")
+    AP_SOUTHEAST_1 = Region("ap-southeast-1",
+                        "https://bss-intl.myhuaweicloud.com")
 
     static_fields = {
         "ap-southeast-1": AP_SOUTHEAST_1,

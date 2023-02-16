@@ -34,7 +34,7 @@ class UploadExtensionFileRequest:
 
         The model defined in huaweicloud sdk
 
-        :param official: 插件类型。目前只支持CloudIDE
+        :param official: 插件类型。目前只支持CodeArtsIDEOnline
         :type official: str
         :param body: Body of the UploadExtensionFileRequest
         :type body: :class:`huaweicloudsdkcloudide.v2.UploadExtensionFileRequestBody`
@@ -54,7 +54,7 @@ class UploadExtensionFileRequest:
     def official(self):
         """Gets the official of this UploadExtensionFileRequest.
 
-        插件类型。目前只支持CloudIDE
+        插件类型。目前只支持CodeArtsIDEOnline
 
         :return: The official of this UploadExtensionFileRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class UploadExtensionFileRequest:
     def official(self, official):
         """Sets the official of this UploadExtensionFileRequest.
 
-        插件类型。目前只支持CloudIDE
+        插件类型。目前只支持CodeArtsIDEOnline
 
         :param official: The official of this UploadExtensionFileRequest.
         :type official: str

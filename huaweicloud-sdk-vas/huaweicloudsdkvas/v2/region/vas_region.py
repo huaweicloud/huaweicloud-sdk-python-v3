@@ -9,22 +9,22 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class VasRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("VAS")
 
-
-    CN_NORTH_1 = Region(id="cn-north-1", endpoint="https://iva.cn-north-1.myhuaweicloud.com")
-
-    CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://iva.cn-north-4.myhuaweicloud.com")
-
-    CN_EAST_3 = Region(id="cn-east-3", endpoint="https://iva.cn-east-3.myhuaweicloud.com")
-
-    CN_EAST_2 = Region(id="cn-east-2", endpoint="https://iva.cn-east-2.myhuaweicloud.com")
-
-    CN_SOUTH_1 = Region(id="cn-south-1", endpoint="https://iva.cn-south-1.myhuaweicloud.com")
-
-    AP_SOUTHEAST_1 = Region(id="ap-southeast-1", endpoint="https://iva.ap-southeast-1.myhuaweicloud.com")
-
-    AP_SOUTHEAST_2 = Region(id="ap-southeast-2", endpoint="https://iva.ap-southeast-2.myhuaweicloud.com")
-
-    AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://iva.ap-southeast-3.myhuaweicloud.com")
+    CN_NORTH_1 = Region("cn-north-1",
+                        "https://iva.cn-north-1.myhuaweicloud.com")
+    CN_NORTH_4 = Region("cn-north-4",
+                        "https://iva.cn-north-4.myhuaweicloud.com")
+    CN_EAST_3 = Region("cn-east-3",
+                        "https://iva.cn-east-3.myhuaweicloud.com")
+    CN_EAST_2 = Region("cn-east-2",
+                        "https://iva.cn-east-2.myhuaweicloud.com")
+    CN_SOUTH_1 = Region("cn-south-1",
+                        "https://iva.cn-south-1.myhuaweicloud.com")
+    AP_SOUTHEAST_1 = Region("ap-southeast-1",
+                        "https://iva.ap-southeast-1.myhuaweicloud.com")
+    AP_SOUTHEAST_2 = Region("ap-southeast-2",
+                        "https://iva.ap-southeast-2.myhuaweicloud.com")
+    AP_SOUTHEAST_3 = Region("ap-southeast-3",
+                        "https://iva.ap-southeast-3.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-1": CN_NORTH_1,

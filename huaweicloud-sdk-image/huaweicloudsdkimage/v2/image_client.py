@@ -222,6 +222,66 @@ class ImageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def run_image_super_resolution(self, request):
+        """图像超分
+
+        图像数据，base64编码，输入图像范围200px ~ 1080px，支持JPG/PNG/BMP/JPEG/WEBP格式
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RunImageSuperResolution
+        :type request: :class:`huaweicloudsdkimage.v2.RunImageSuperResolutionRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.RunImageSuperResolutionResponse`
+        """
+        return self.run_image_super_resolution_with_http_info(request)
+
+    def run_image_super_resolution_with_http_info(self, request):
+        all_params = ['run_image_super_resolution_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/image-super-resolution',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RunImageSuperResolutionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def run_image_tagging(self, request):
         """图像标签
 
@@ -277,6 +337,66 @@ class ImageClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='RunImageTaggingResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def run_recapture_detect(self, request):
+        """翻拍识别
+
+        零售行业通常根据零售店的销售量进行销售奖励，拍摄售出商品的条形码上传后台是常用的统计方式。翻拍识别利用深度神经网络算法判断条形码图片为原始拍摄，还是经过二次翻拍、打印翻拍等手法二次处理的图片。利用翻拍识别，可以检测出经过二次处理的不合规范图片，使得统计数据更准确、有效。。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RunRecaptureDetect
+        :type request: :class:`huaweicloudsdkimage.v2.RunRecaptureDetectRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.RunRecaptureDetectResponse`
+        """
+        return self.run_recapture_detect_with_http_info(request)
+
+    def run_recapture_detect_with_http_info(self, request):
+        all_params = ['run_recapture_detect_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/recapture-detect',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RunRecaptureDetectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

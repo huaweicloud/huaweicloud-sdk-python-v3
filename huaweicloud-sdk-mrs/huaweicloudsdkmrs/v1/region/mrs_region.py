@@ -9,40 +9,40 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class MrsRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("MRS")
 
-
-    CN_NORTH_1 = Region(id="cn-north-1", endpoint="https://mrs.cn-north-1.myhuaweicloud.com")
-
-    CN_NORTH_2 = Region(id="cn-north-2", endpoint="https://mrs.cn-north-2.myhuaweicloud.com")
-
-    CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://mrs.cn-north-4.myhuaweicloud.com")
-
-    CN_SOUTH_1 = Region(id="cn-south-1", endpoint="https://mrs.cn-south-1.myhuaweicloud.com")
-
-    CN_EAST_2 = Region(id="cn-east-2", endpoint="https://mrs.cn-east-2.myhuaweicloud.com")
-
-    CN_EAST_3 = Region(id="cn-east-3", endpoint="https://mrs.cn-east-3.myhuaweicloud.com")
-
-    AP_SOUTHEAST_1 = Region(id="ap-southeast-1", endpoint="https://mrs.ap-southeast-1.myhuaweicloud.cn")
-
-    AP_SOUTHEAST_2 = Region(id="ap-southeast-2", endpoint="https://mrs.ap-southeast-2.myhuaweicloud.com")
-
-    AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://mrs.ap-southeast-3.myhuaweicloud.com")
-
-    AF_SOUTH_1 = Region(id="af-south-1", endpoint="https://mrs.af-south-1.myhuaweicloud.com")
-
-    RU_NORTHWEST_2 = Region(id="ru-northwest-2", endpoint="https://mrs.ru-northwest-2.myhuaweicloud.cn")
-
-    SA_BRAZIL_1 = Region(id="sa-brazil-1", endpoint="https://mrs.sa-brazil-1.myhuaweicloud.com")
-
-    LA_SOUTH_2 = Region(id="la-south-2", endpoint="https://mrs.la-south-2.myhuaweicloud.com")
-
-    LA_NORTH_2 = Region(id="la-north-2", endpoint="https://mrs.la-north-2.myhuaweicloud.com")
-
-    NA_MEXICO_1 = Region(id="na-mexico-1", endpoint="https://mrs.na-mexico-1.myhuaweicloud.com")
-
-    CN_NORTH_9 = Region(id="cn-north-9", endpoint="https://mrs.cn-north-9.myhuaweicloud.com")
-
-    CN_SOUTHWEST_2 = Region(id="cn-southwest-2", endpoint="https://mrs.cn-southwest-2.myhuaweicloud.com")
+    CN_NORTH_1 = Region("cn-north-1",
+                        "https://mrs.cn-north-1.myhuaweicloud.com")
+    CN_NORTH_2 = Region("cn-north-2",
+                        "https://mrs.cn-north-2.myhuaweicloud.com")
+    CN_NORTH_4 = Region("cn-north-4",
+                        "https://mrs.cn-north-4.myhuaweicloud.com")
+    CN_SOUTH_1 = Region("cn-south-1",
+                        "https://mrs.cn-south-1.myhuaweicloud.com")
+    CN_EAST_2 = Region("cn-east-2",
+                        "https://mrs.cn-east-2.myhuaweicloud.com")
+    CN_EAST_3 = Region("cn-east-3",
+                        "https://mrs.cn-east-3.myhuaweicloud.com")
+    AP_SOUTHEAST_1 = Region("ap-southeast-1",
+                        "https://mrs.ap-southeast-1.myhuaweicloud.cn")
+    AP_SOUTHEAST_2 = Region("ap-southeast-2",
+                        "https://mrs.ap-southeast-2.myhuaweicloud.com")
+    AP_SOUTHEAST_3 = Region("ap-southeast-3",
+                        "https://mrs.ap-southeast-3.myhuaweicloud.com")
+    AF_SOUTH_1 = Region("af-south-1",
+                        "https://mrs.af-south-1.myhuaweicloud.com")
+    RU_NORTHWEST_2 = Region("ru-northwest-2",
+                        "https://mrs.ru-northwest-2.myhuaweicloud.cn")
+    SA_BRAZIL_1 = Region("sa-brazil-1",
+                        "https://mrs.sa-brazil-1.myhuaweicloud.com")
+    LA_SOUTH_2 = Region("la-south-2",
+                        "https://mrs.la-south-2.myhuaweicloud.com")
+    LA_NORTH_2 = Region("la-north-2",
+                        "https://mrs.la-north-2.myhuaweicloud.com")
+    NA_MEXICO_1 = Region("na-mexico-1",
+                        "https://mrs.na-mexico-1.myhuaweicloud.com")
+    CN_NORTH_9 = Region("cn-north-9",
+                        "https://mrs.cn-north-9.myhuaweicloud.com")
+    CN_SOUTHWEST_2 = Region("cn-southwest-2",
+                        "https://mrs.cn-southwest-2.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-1": CN_NORTH_1,

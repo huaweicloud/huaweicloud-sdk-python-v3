@@ -314,6 +314,134 @@ class OsmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_ask_question(self, request):
+        """语料提问
+
+        基于语料的一次问答
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAskQuestion
+        :type request: :class:`huaweicloudsdkosm.v2.CreateAskQuestionRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.CreateAskQuestionResponse`
+        """
+        return self.create_ask_question_with_http_info(request)
+
+    def create_ask_question_with_http_info(self, request):
+        all_params = ['x_service_key', 'x_site', 'x_language', 'create_ask_question_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_service_key' in local_var_params:
+            header_params['x-service-key'] = local_var_params['x_service_key']
+        if 'x_site' in local_var_params:
+            header_params['x-site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['x-language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/irobot/qapairs/ask',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateAskQuestionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_authorization(self, request):
+        """创建授权
+
+        创建授权
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAuthorization
+        :type request: :class:`huaweicloudsdkosm.v2.CreateAuthorizationRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.CreateAuthorizationResponse`
+        """
+        return self.create_authorization_with_http_info(request)
+
+    def create_authorization_with_http_info(self, request):
+        all_params = ['case_id', 'create_authorization_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'case_id' in local_var_params:
+            path_params['case_id'] = local_var_params['case_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/servicerequest/cases/{case_id}/authorizations',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateAuthorizationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_case_extends_param(self, request):
         """提交工单扩展参数
 
@@ -521,6 +649,256 @@ class OsmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_diagnose_feedback(self, request):
+        """用户反馈是否有帮助
+
+        用户反馈是否有帮助
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDiagnoseFeedback
+        :type request: :class:`huaweicloudsdkosm.v2.CreateDiagnoseFeedbackRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.CreateDiagnoseFeedbackResponse`
+        """
+        return self.create_diagnose_feedback_with_http_info(request)
+
+    def create_diagnose_feedback_with_http_info(self, request):
+        all_params = ['create_diagnose_feedback_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/servicerequest/diagnose/feedback',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateDiagnoseFeedbackResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_diagnose_job(self, request):
+        """开始一键诊断
+
+        开始一键诊断
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDiagnoseJob
+        :type request: :class:`huaweicloudsdkosm.v2.CreateDiagnoseJobRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.CreateDiagnoseJobResponse`
+        """
+        return self.create_diagnose_job_with_http_info(request)
+
+    def create_diagnose_job_with_http_info(self, request):
+        all_params = ['create_diagnose_job_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/servicerequest/diagnose/job/start',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateDiagnoseJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_evaluate(self, request):
+        """问答满意度评价
+
+        一次问答完毕后, 针对这一次问答提交满意度评价
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateEvaluate
+        :type request: :class:`huaweicloudsdkosm.v2.CreateEvaluateRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.CreateEvaluateResponse`
+        """
+        return self.create_evaluate_with_http_info(request)
+
+    def create_evaluate_with_http_info(self, request):
+        all_params = ['x_service_key', 'session_id', 'request_id', 'x_site', 'x_language', 'create_evaluate_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'session_id' in local_var_params:
+            path_params['session_id'] = local_var_params['session_id']
+        if 'request_id' in local_var_params:
+            path_params['request_id'] = local_var_params['request_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_service_key' in local_var_params:
+            header_params['x-service-key'] = local_var_params['x_service_key']
+        if 'x_site' in local_var_params:
+            header_params['x-site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['x-language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/irobot/sessions/{session_id}/{request_id}/evaluate',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateEvaluateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_feedback(self, request):
+        """创建举报反馈
+
+        创建举报反馈
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateFeedback
+        :type request: :class:`huaweicloudsdkosm.v2.CreateFeedbackRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.CreateFeedbackResponse`
+        """
+        return self.create_feedback_with_http_info(request)
+
+    def create_feedback_with_http_info(self, request):
+        all_params = ['create_feedback_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/servicerequest/feedbacks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateFeedbackResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_labels(self, request):
         """创建标签
 
@@ -721,6 +1099,208 @@ class OsmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_qa_ask(self, request):
+        """新问答接口
+
+        支持多轮流程问答接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateQaAsk
+        :type request: :class:`huaweicloudsdkosm.v2.CreateQaAskRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.CreateQaAskResponse`
+        """
+        return self.create_qa_ask_with_http_info(request)
+
+    def create_qa_ask_with_http_info(self, request):
+        all_params = ['x_service_key', 'x_site', 'x_language', 'create_qa_ask_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_service_key' in local_var_params:
+            header_params['x-service-key'] = local_var_params['x_service_key']
+        if 'x_site' in local_var_params:
+            header_params['x-site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['x-language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/irobot/ask',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateQaAskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_qa_feedbacks(self, request):
+        """反馈评价
+
+        提交/取消反馈评价
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateQaFeedbacks
+        :type request: :class:`huaweicloudsdkosm.v2.CreateQaFeedbacksRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.CreateQaFeedbacksResponse`
+        """
+        return self.create_qa_feedbacks_with_http_info(request)
+
+    def create_qa_feedbacks_with_http_info(self, request):
+        all_params = ['feedback_type', 'x_service_key', 'x_site', 'x_language', 'create_qa_feedbacks_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'feedback_type' in local_var_params:
+            query_params.append(('feedback_type', local_var_params['feedback_type']))
+
+        header_params = {}
+        if 'x_service_key' in local_var_params:
+            header_params['x-service-key'] = local_var_params['x_service_key']
+        if 'x_site' in local_var_params:
+            header_params['x-site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['x-language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/irobot/feedbacks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateQaFeedbacksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_question_in_session(self, request):
+        """提问（在制定的会话中）
+
+        提问（在制定的会话中）
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateQuestionInSession
+        :type request: :class:`huaweicloudsdkosm.v2.CreateQuestionInSessionRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.CreateQuestionInSessionResponse`
+        """
+        return self.create_question_in_session_with_http_info(request)
+
+    def create_question_in_session_with_http_info(self, request):
+        all_params = ['x_service_key', 'session_id', 'x_site', 'x_language', 'create_question_in_session_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'session_id' in local_var_params:
+            path_params['session_id'] = local_var_params['session_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_service_key' in local_var_params:
+            header_params['x-service-key'] = local_var_params['x_service_key']
+        if 'x_site' in local_var_params:
+            header_params['x-site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['x-language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/irobot/sessions/{session_id}/ask',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateQuestionInSessionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_relations(self, request):
         """创建关联
 
@@ -852,6 +1432,70 @@ class OsmClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateScoresResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_session(self, request):
+        """创建问答会话
+
+        用于创建问答会话, 创建会话后可开始问答
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSession
+        :type request: :class:`huaweicloudsdkosm.v2.CreateSessionRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.CreateSessionResponse`
+        """
+        return self.create_session_with_http_info(request)
+
+    def create_session_with_http_info(self, request):
+        all_params = ['x_service_key', 'x_site', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_service_key' in local_var_params:
+            header_params['x-service-key'] = local_var_params['x_service_key']
+        if 'x_site' in local_var_params:
+            header_params['x-site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['x-language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/irobot/sessions',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateSessionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1545,6 +2189,74 @@ class OsmClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListAreaCodesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_articles(self, request):
+        """查询案例
+
+        查询满足指定条件的案例列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListArticles
+        :type request: :class:`huaweicloudsdkosm.v2.ListArticlesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListArticlesResponse`
+        """
+        return self.list_articles_with_http_info(request)
+
+    def list_articles_with_http_info(self, request):
+        all_params = ['search_type', 'x_service_key', 'x_site', 'x_language', 'list_articles_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'search_type' in local_var_params:
+            query_params.append(('search_type', local_var_params['search_type']))
+
+        header_params = {}
+        if 'x_service_key' in local_var_params:
+            header_params['x-service-key'] = local_var_params['x_service_key']
+        if 'x_site' in local_var_params:
+            header_params['x-site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['x-language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/irobot/articles/search',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListArticlesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2314,6 +3026,190 @@ class OsmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_diagnose_items(self, request):
+        """根据itemIds查询指定的诊断检查项执行结果
+
+        根据itemIds查询指定的诊断检查项执行结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDiagnoseItems
+        :type request: :class:`huaweicloudsdkosm.v2.ListDiagnoseItemsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListDiagnoseItemsResponse`
+        """
+        return self.list_diagnose_items_with_http_info(request)
+
+    def list_diagnose_items_with_http_info(self, request):
+        all_params = ['list_diagnose_items_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/servicerequest/diagnose/job/show-items',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListDiagnoseItemsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_diagnose_job(self, request):
+        """查询诊断任务执行结果
+
+        查询诊断任务执行结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDiagnoseJob
+        :type request: :class:`huaweicloudsdkosm.v2.ListDiagnoseJobRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListDiagnoseJobResponse`
+        """
+        return self.list_diagnose_job_with_http_info(request)
+
+    def list_diagnose_job_with_http_info(self, request):
+        all_params = ['job_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/servicerequest/diagnose/job',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListDiagnoseJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_diagnose_records(self, request):
+        """查询诊断历史记录列表
+
+        查询诊断历史记录列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDiagnoseRecords
+        :type request: :class:`huaweicloudsdkosm.v2.ListDiagnoseRecordsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListDiagnoseRecordsResponse`
+        """
+        return self.list_diagnose_records_with_http_info(request)
+
+    def list_diagnose_records_with_http_info(self, request):
+        all_params = ['page_size', 'page_no', 'type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'page_no' in local_var_params:
+            query_params.append(('page_no', local_var_params['page_no']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/servicerequest/diagnose/records',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListDiagnoseRecordsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_extends_params(self, request):
         """查询附加参数
 
@@ -2379,6 +3275,74 @@ class OsmClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListExtendsParamsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_feedback_option(self, request):
+        """查询反馈选项
+
+        查询符合条件的反馈选项
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListFeedbackOption
+        :type request: :class:`huaweicloudsdkosm.v2.ListFeedbackOptionRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListFeedbackOptionResponse`
+        """
+        return self.list_feedback_option_with_http_info(request)
+
+    def list_feedback_option_with_http_info(self, request):
+        all_params = ['status', 'x_service_key', 'x_site', 'x_language', 'feedback_source']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'feedback_source' in local_var_params:
+            query_params.append(('feedback_source', local_var_params['feedback_source']))
+
+        header_params = {}
+        if 'x_service_key' in local_var_params:
+            header_params['x-service-key'] = local_var_params['x_service_key']
+        if 'x_site' in local_var_params:
+            header_params['x-site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['x-language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/irobot/feedbacks/options',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListFeedbackOptionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2907,6 +3871,72 @@ class OsmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_notices(self, request):
+        """查询公告
+
+        查询满足指定条件的公告列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListNotices
+        :type request: :class:`huaweicloudsdkosm.v2.ListNoticesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListNoticesResponse`
+        """
+        return self.list_notices_with_http_info(request)
+
+    def list_notices_with_http_info(self, request):
+        all_params = ['x_service_key', 'x_site', 'x_language', 'list_notices_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_service_key' in local_var_params:
+            header_params['x-service-key'] = local_var_params['x_service_key']
+        if 'x_site' in local_var_params:
+            header_params['x-site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['x-language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/irobot/notices/search',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListNoticesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_privileges(self, request):
         """查询工单权限
 
@@ -3100,6 +4130,76 @@ class OsmClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListProductCategoriesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_recommend_words(self, request):
+        """查询推荐热词
+
+        查询指定条件的推荐热词
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListRecommendWords
+        :type request: :class:`huaweicloudsdkosm.v2.ListRecommendWordsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListRecommendWordsResponse`
+        """
+        return self.list_recommend_words_with_http_info(request)
+
+    def list_recommend_words_with_http_info(self, request):
+        all_params = ['x_service_key', 'x_site', 'x_language', 'recommend_word_id', 'level_value', 'theme_name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'recommend_word_id' in local_var_params:
+            query_params.append(('recommend_word_id', local_var_params['recommend_word_id']))
+        if 'level_value' in local_var_params:
+            query_params.append(('level_value', local_var_params['level_value']))
+        if 'theme_name' in local_var_params:
+            query_params.append(('theme_name', local_var_params['theme_name']))
+
+        header_params = {}
+        if 'x_service_key' in local_var_params:
+            header_params['x-service-key'] = local_var_params['x_service_key']
+        if 'x_site' in local_var_params:
+            header_params['x-site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['x-language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/irobot/recommend-words',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListRecommendWordsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3430,6 +4530,72 @@ class OsmClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListSubCustomersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_tools(self, request):
+        """查询工具
+
+        查询满足指定条件的工具列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTools
+        :type request: :class:`huaweicloudsdkosm.v2.ListToolsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListToolsResponse`
+        """
+        return self.list_tools_with_http_info(request)
+
+    def list_tools_with_http_info(self, request):
+        all_params = ['x_service_key', 'x_site', 'x_language', 'list_tools_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_service_key' in local_var_params:
+            header_params['x-service-key'] = local_var_params['x_service_key']
+        if 'x_site' in local_var_params:
+            header_params['x-site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['x-language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/irobot/tools/search',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListToolsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3780,6 +4946,72 @@ class OsmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_associated_questions(self, request):
+        """查询联想问题
+
+        根据当前输入, 联想相关的问题
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAssociatedQuestions
+        :type request: :class:`huaweicloudsdkosm.v2.ShowAssociatedQuestionsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ShowAssociatedQuestionsResponse`
+        """
+        return self.show_associated_questions_with_http_info(request)
+
+    def show_associated_questions_with_http_info(self, request):
+        all_params = ['x_service_key', 'x_site', 'x_language', 'show_associated_questions_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_service_key' in local_var_params:
+            header_params['x-service-key'] = local_var_params['x_service_key']
+        if 'x_site' in local_var_params:
+            header_params['x-site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['x-language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/irobot/qapairs/associate',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowAssociatedQuestionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_authorization_detail(self, request):
         """查询授权详情
 
@@ -4114,6 +5346,72 @@ class OsmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_download_accessory_url(self, request):
+        """附件下载地址
+
+        附件下载地址
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDownloadAccessoryUrl
+        :type request: :class:`huaweicloudsdkosm.v2.ShowDownloadAccessoryUrlRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ShowDownloadAccessoryUrlResponse`
+        """
+        return self.show_download_accessory_url_with_http_info(request)
+
+    def show_download_accessory_url_with_http_info(self, request):
+        all_params = ['accessory_id', 'relation_type', 'relation_id', 'incident_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'accessory_id' in local_var_params:
+            path_params['accessory_id'] = local_var_params['accessory_id']
+
+        query_params = []
+        if 'relation_type' in local_var_params:
+            query_params.append(('relation_type', local_var_params['relation_type']))
+        if 'relation_id' in local_var_params:
+            query_params.append(('relation_id', local_var_params['relation_id']))
+        if 'incident_id' in local_var_params:
+            query_params.append(('incident_id', local_var_params['incident_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/servicerequest/accessorys/{accessory_id}/access-url',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowDownloadAccessoryUrlResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_latest_published_agreement(self, request):
         """查看最新发布版本协议详情
 
@@ -4312,6 +5610,140 @@ class OsmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_qa_pair_detail(self, request):
+        """查询语料详情
+
+        查询指定语料的详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowQaPairDetail
+        :type request: :class:`huaweicloudsdkosm.v2.ShowQaPairDetailRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ShowQaPairDetailResponse`
+        """
+        return self.show_qa_pair_detail_with_http_info(request)
+
+    def show_qa_pair_detail_with_http_info(self, request):
+        all_params = ['x_service_key', 'qa_pair_id', 'x_site', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'qa_pair_id' in local_var_params:
+            path_params['qa_pair_id'] = local_var_params['qa_pair_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_service_key' in local_var_params:
+            header_params['x-service-key'] = local_var_params['x_service_key']
+        if 'x_site' in local_var_params:
+            header_params['x-site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['x-language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/irobot/qapairs/{qa_pair_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowQaPairDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_qa_pairs(self, request):
+        """查询语料
+
+        查询满足指定条件的语料列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowQaPairs
+        :type request: :class:`huaweicloudsdkosm.v2.ShowQaPairsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ShowQaPairsResponse`
+        """
+        return self.show_qa_pairs_with_http_info(request)
+
+    def show_qa_pairs_with_http_info(self, request):
+        all_params = ['x_service_key', 'search_type', 'x_site', 'x_language', 'show_qa_pairs_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'search_type' in local_var_params:
+            query_params.append(('search_type', local_var_params['search_type']))
+
+        header_params = {}
+        if 'x_service_key' in local_var_params:
+            header_params['x-service-key'] = local_var_params['x_service_key']
+        if 'x_site' in local_var_params:
+            header_params['x-site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['x-language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/irobot/qapairs/search',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowQaPairsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_signed_latest_published_agreement(self, request):
         """查询用户是否签署最新协议
 
@@ -4373,6 +5805,76 @@ class OsmClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowSignedLatestPublishedAgreementResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_theme(self, request):
+        """产品类型转为主题
+
+        产品类型转为主题
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTheme
+        :type request: :class:`huaweicloudsdkosm.v2.ShowThemeRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ShowThemeResponse`
+        """
+        return self.show_theme_with_http_info(request)
+
+    def show_theme_with_http_info(self, request):
+        all_params = ['x_service_key', 'x_site', 'x_language', 'product_type_id', 'product_type_name', 'product_type_short_name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'product_type_id' in local_var_params:
+            query_params.append(('product_type_id', local_var_params['product_type_id']))
+        if 'product_type_name' in local_var_params:
+            query_params.append(('product_type_name', local_var_params['product_type_name']))
+        if 'product_type_short_name' in local_var_params:
+            query_params.append(('product_type_short_name', local_var_params['product_type_short_name']))
+
+        header_params = {}
+        if 'x_service_key' in local_var_params:
+            header_params['x-service-key'] = local_var_params['x_service_key']
+        if 'x_site' in local_var_params:
+            header_params['x-site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['x-language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/irobot/themes/convert',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowThemeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

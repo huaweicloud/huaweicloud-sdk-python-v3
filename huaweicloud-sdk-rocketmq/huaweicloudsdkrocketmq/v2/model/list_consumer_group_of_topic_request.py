@@ -21,15 +21,19 @@ class ListConsumerGroupOfTopicRequest:
 
     openapi_types = {
         'instance_id': 'str',
-        'topic': 'str'
+        'topic': 'str',
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
-        'topic': 'topic'
+        'topic': 'topic',
+        'limit': 'limit',
+        'offset': 'offset'
     }
 
-    def __init__(self, instance_id=None, topic=None):
+    def __init__(self, instance_id=None, topic=None, limit=None, offset=None):
         """ListConsumerGroupOfTopicRequest
 
         The model defined in huaweicloud sdk
@@ -38,16 +42,26 @@ class ListConsumerGroupOfTopicRequest:
         :type instance_id: str
         :param topic: 主题名称。
         :type topic: str
+        :param limit: 当次查询返回的最大个数,默认值为10,取值范围为1~50。
+        :type limit: int
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
+        :type offset: int
         """
         
         
 
         self._instance_id = None
         self._topic = None
+        self._limit = None
+        self._offset = None
         self.discriminator = None
 
         self.instance_id = instance_id
         self.topic = topic
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
 
     @property
     def instance_id(self):
@@ -92,6 +106,50 @@ class ListConsumerGroupOfTopicRequest:
         :type topic: str
         """
         self._topic = topic
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListConsumerGroupOfTopicRequest.
+
+        当次查询返回的最大个数,默认值为10,取值范围为1~50。
+
+        :return: The limit of this ListConsumerGroupOfTopicRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListConsumerGroupOfTopicRequest.
+
+        当次查询返回的最大个数,默认值为10,取值范围为1~50。
+
+        :param limit: The limit of this ListConsumerGroupOfTopicRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListConsumerGroupOfTopicRequest.
+
+        偏移量，表示从此偏移量开始查询， offset大于等于0。
+
+        :return: The offset of this ListConsumerGroupOfTopicRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListConsumerGroupOfTopicRequest.
+
+        偏移量，表示从此偏移量开始查询， offset大于等于0。
+
+        :param offset: The offset of this ListConsumerGroupOfTopicRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     def to_dict(self):
         """Returns the model properties as a dict"""

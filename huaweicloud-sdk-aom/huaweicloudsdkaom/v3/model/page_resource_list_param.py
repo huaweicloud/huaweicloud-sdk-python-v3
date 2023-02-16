@@ -26,6 +26,7 @@ class PageResourceListParam:
         'ci_relationships': 'bool',
         'ci_type': 'str',
         'ci_region': 'str',
+        'ci_ids': 'list[str]',
         'ci_id': 'str'
     }
 
@@ -36,15 +37,16 @@ class PageResourceListParam:
         'ci_relationships': 'ci_relationships',
         'ci_type': 'ci_type',
         'ci_region': 'ci_region',
+        'ci_ids': 'ci_ids',
         'ci_id': 'ci_id'
     }
 
-    def __init__(self, maker=None, limit=None, keywords=None, ci_relationships=None, ci_type=None, ci_region=None, ci_id=None):
+    def __init__(self, maker=None, limit=None, keywords=None, ci_relationships=None, ci_type=None, ci_region=None, ci_ids=None, ci_id=None):
         """PageResourceListParam
 
         The model defined in huaweicloud sdk
 
-        :param maker: 页面的分页标志位
+        :param maker: 页面的分页标志位；为分页的最后一条记录的id
         :type maker: str
         :param limit: 查询返回记录的数量限制
         :type limit: int
@@ -56,7 +58,9 @@ class PageResourceListParam:
         :type ci_type: str
         :param ci_region: 环境的region信息，若没有值，代表全部
         :type ci_region: str
-        :param ci_id: 节点id
+        :param ci_ids: 节点id列表;如果ci_ids和ci_id同时有，则优先ci_ids，但是不能同时为空
+        :type ci_ids: list[str]
+        :param ci_id: 节点id列表;如果ci_ids和ci_id同时有，则优先ci_ids，但是不能同时为空。但是不支持应用批量查询
         :type ci_id: str
         """
         
@@ -68,6 +72,7 @@ class PageResourceListParam:
         self._ci_relationships = None
         self._ci_type = None
         self._ci_region = None
+        self._ci_ids = None
         self._ci_id = None
         self.discriminator = None
 
@@ -82,13 +87,16 @@ class PageResourceListParam:
         self.ci_type = ci_type
         if ci_region is not None:
             self.ci_region = ci_region
-        self.ci_id = ci_id
+        if ci_ids is not None:
+            self.ci_ids = ci_ids
+        if ci_id is not None:
+            self.ci_id = ci_id
 
     @property
     def maker(self):
         """Gets the maker of this PageResourceListParam.
 
-        页面的分页标志位
+        页面的分页标志位；为分页的最后一条记录的id
 
         :return: The maker of this PageResourceListParam.
         :rtype: str
@@ -99,7 +107,7 @@ class PageResourceListParam:
     def maker(self, maker):
         """Sets the maker of this PageResourceListParam.
 
-        页面的分页标志位
+        页面的分页标志位；为分页的最后一条记录的id
 
         :param maker: The maker of this PageResourceListParam.
         :type maker: str
@@ -217,10 +225,32 @@ class PageResourceListParam:
         self._ci_region = ci_region
 
     @property
+    def ci_ids(self):
+        """Gets the ci_ids of this PageResourceListParam.
+
+        节点id列表;如果ci_ids和ci_id同时有，则优先ci_ids，但是不能同时为空
+
+        :return: The ci_ids of this PageResourceListParam.
+        :rtype: list[str]
+        """
+        return self._ci_ids
+
+    @ci_ids.setter
+    def ci_ids(self, ci_ids):
+        """Sets the ci_ids of this PageResourceListParam.
+
+        节点id列表;如果ci_ids和ci_id同时有，则优先ci_ids，但是不能同时为空
+
+        :param ci_ids: The ci_ids of this PageResourceListParam.
+        :type ci_ids: list[str]
+        """
+        self._ci_ids = ci_ids
+
+    @property
     def ci_id(self):
         """Gets the ci_id of this PageResourceListParam.
 
-        节点id
+        节点id列表;如果ci_ids和ci_id同时有，则优先ci_ids，但是不能同时为空。但是不支持应用批量查询
 
         :return: The ci_id of this PageResourceListParam.
         :rtype: str
@@ -231,7 +261,7 @@ class PageResourceListParam:
     def ci_id(self, ci_id):
         """Sets the ci_id of this PageResourceListParam.
 
-        节点id
+        节点id列表;如果ci_ids和ci_id同时有，则优先ci_ids，但是不能同时为空。但是不支持应用批量查询
 
         :param ci_id: The ci_id of this PageResourceListParam.
         :type ci_id: str

@@ -34,9 +34,9 @@ class ShowAppByNameRequest:
 
         The model defined in huaweicloud sdk
 
-        :param name: 应用唯一标识
+        :param name: 应用唯一标识;字符集长度2-64，仅支持字符集：英文字母、数字、下划线、中划线、点；应用唯一标识与显示名称至少填写其一
         :type name: str
-        :param display_name: 实体的显示名称。
+        :param display_name: 实体的显示名称；字符集长度2-64，仅支持字符集：中文字符、英文字母、数字、下划线、中划线、点；应用唯一标识与显示名称至少填写其一
         :type display_name: str
         """
         
@@ -55,7 +55,7 @@ class ShowAppByNameRequest:
     def name(self):
         """Gets the name of this ShowAppByNameRequest.
 
-        应用唯一标识
+        应用唯一标识;字符集长度2-64，仅支持字符集：英文字母、数字、下划线、中划线、点；应用唯一标识与显示名称至少填写其一
 
         :return: The name of this ShowAppByNameRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class ShowAppByNameRequest:
     def name(self, name):
         """Sets the name of this ShowAppByNameRequest.
 
-        应用唯一标识
+        应用唯一标识;字符集长度2-64，仅支持字符集：英文字母、数字、下划线、中划线、点；应用唯一标识与显示名称至少填写其一
 
         :param name: The name of this ShowAppByNameRequest.
         :type name: str
@@ -77,7 +77,7 @@ class ShowAppByNameRequest:
     def display_name(self):
         """Gets the display_name of this ShowAppByNameRequest.
 
-        实体的显示名称。
+        实体的显示名称；字符集长度2-64，仅支持字符集：中文字符、英文字母、数字、下划线、中划线、点；应用唯一标识与显示名称至少填写其一
 
         :return: The display_name of this ShowAppByNameRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class ShowAppByNameRequest:
     def display_name(self, display_name):
         """Sets the display_name of this ShowAppByNameRequest.
 
-        实体的显示名称。
+        实体的显示名称；字符集长度2-64，仅支持字符集：中文字符、英文字母、数字、下划线、中划线、点；应用唯一标识与显示名称至少填写其一
 
         :param display_name: The display_name of this ShowAppByNameRequest.
         :type display_name: str

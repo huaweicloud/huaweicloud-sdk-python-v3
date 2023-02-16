@@ -38,9 +38,9 @@ class ShowProjectSuccessRateRequest:
 
         :param project_id: 项目id
         :type project_id: str
-        :param start_date: 任务执行开始时间范围的左边界（包含），格式yyyy-MM-dd
+        :param start_date: 部署应用开始时间范围的左边界（包含），格式yyyy-MM-dd
         :type start_date: str
-        :param end_date: 任务执行开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
+        :param end_date: 部署应用开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
         :type end_date: str
         """
         
@@ -81,7 +81,7 @@ class ShowProjectSuccessRateRequest:
     def start_date(self):
         """Gets the start_date of this ShowProjectSuccessRateRequest.
 
-        任务执行开始时间范围的左边界（包含），格式yyyy-MM-dd
+        部署应用开始时间范围的左边界（包含），格式yyyy-MM-dd
 
         :return: The start_date of this ShowProjectSuccessRateRequest.
         :rtype: str
@@ -92,7 +92,7 @@ class ShowProjectSuccessRateRequest:
     def start_date(self, start_date):
         """Sets the start_date of this ShowProjectSuccessRateRequest.
 
-        任务执行开始时间范围的左边界（包含），格式yyyy-MM-dd
+        部署应用开始时间范围的左边界（包含），格式yyyy-MM-dd
 
         :param start_date: The start_date of this ShowProjectSuccessRateRequest.
         :type start_date: str
@@ -103,7 +103,7 @@ class ShowProjectSuccessRateRequest:
     def end_date(self):
         """Gets the end_date of this ShowProjectSuccessRateRequest.
 
-        任务执行开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
+        部署应用开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
 
         :return: The end_date of this ShowProjectSuccessRateRequest.
         :rtype: str
@@ -114,7 +114,7 @@ class ShowProjectSuccessRateRequest:
     def end_date(self, end_date):
         """Sets the end_date of this ShowProjectSuccessRateRequest.
 
-        任务执行开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
+        部署应用开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
 
         :param end_date: The end_date of this ShowProjectSuccessRateRequest.
         :type end_date: str

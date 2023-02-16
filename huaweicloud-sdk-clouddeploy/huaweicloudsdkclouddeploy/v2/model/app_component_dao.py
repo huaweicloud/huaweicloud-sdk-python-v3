@@ -48,19 +48,19 @@ class AppComponentDao:
 
         :param task_id: 部署任务id
         :type task_id: str
-        :param app_id: 应用id
+        :param app_id: AOM应用id
         :type app_id: str
-        :param app_name: 应用名称
+        :param app_name: AOM应用名称
         :type app_name: str
-        :param comp_id: 组件id
+        :param comp_id: AOM应用组件id
         :type comp_id: str
-        :param comp_name: 组件名称
+        :param comp_name: AOM应用组件名称
         :type comp_name: str
         :param domain_id: 租户ID
         :type domain_id: str
         :param region: 局点信息
         :type region: str
-        :param state: 组件是否生效，0表示初始化，1表示执行成功，已生效
+        :param state: AOM应用组件是否生效，0表示初始化，1表示执行成功，已生效
         :type state: str
         """
         
@@ -119,7 +119,7 @@ class AppComponentDao:
     def app_id(self):
         """Gets the app_id of this AppComponentDao.
 
-        应用id
+        AOM应用id
 
         :return: The app_id of this AppComponentDao.
         :rtype: str
@@ -130,7 +130,7 @@ class AppComponentDao:
     def app_id(self, app_id):
         """Sets the app_id of this AppComponentDao.
 
-        应用id
+        AOM应用id
 
         :param app_id: The app_id of this AppComponentDao.
         :type app_id: str
@@ -141,7 +141,7 @@ class AppComponentDao:
     def app_name(self):
         """Gets the app_name of this AppComponentDao.
 
-        应用名称
+        AOM应用名称
 
         :return: The app_name of this AppComponentDao.
         :rtype: str
@@ -152,7 +152,7 @@ class AppComponentDao:
     def app_name(self, app_name):
         """Sets the app_name of this AppComponentDao.
 
-        应用名称
+        AOM应用名称
 
         :param app_name: The app_name of this AppComponentDao.
         :type app_name: str
@@ -163,7 +163,7 @@ class AppComponentDao:
     def comp_id(self):
         """Gets the comp_id of this AppComponentDao.
 
-        组件id
+        AOM应用组件id
 
         :return: The comp_id of this AppComponentDao.
         :rtype: str
@@ -174,7 +174,7 @@ class AppComponentDao:
     def comp_id(self, comp_id):
         """Sets the comp_id of this AppComponentDao.
 
-        组件id
+        AOM应用组件id
 
         :param comp_id: The comp_id of this AppComponentDao.
         :type comp_id: str
@@ -185,7 +185,7 @@ class AppComponentDao:
     def comp_name(self):
         """Gets the comp_name of this AppComponentDao.
 
-        组件名称
+        AOM应用组件名称
 
         :return: The comp_name of this AppComponentDao.
         :rtype: str
@@ -196,7 +196,7 @@ class AppComponentDao:
     def comp_name(self, comp_name):
         """Sets the comp_name of this AppComponentDao.
 
-        组件名称
+        AOM应用组件名称
 
         :param comp_name: The comp_name of this AppComponentDao.
         :type comp_name: str
@@ -251,7 +251,7 @@ class AppComponentDao:
     def state(self):
         """Gets the state of this AppComponentDao.
 
-        组件是否生效，0表示初始化，1表示执行成功，已生效
+        AOM应用组件是否生效，0表示初始化，1表示执行成功，已生效
 
         :return: The state of this AppComponentDao.
         :rtype: str
@@ -262,7 +262,7 @@ class AppComponentDao:
     def state(self, state):
         """Sets the state of this AppComponentDao.
 
-        组件是否生效，0表示初始化，1表示执行成功，已生效
+        AOM应用组件是否生效，0表示初始化，1表示执行成功，已生效
 
         :param state: The state of this AppComponentDao.
         :type state: str

@@ -22,7 +22,7 @@ class AddIndependentNodeRequest:
     openapi_types = {
         'cluster_id': 'str',
         'type': 'str',
-        'body': 'IndependentRequestBody'
+        'body': 'IndependentReq'
     }
 
     attribute_map = {
@@ -41,7 +41,7 @@ class AddIndependentNodeRequest:
         :param type: 指定待新增独立节点类型。 - ess-master：Master节点。 - ess-client：Client节点。
         :type type: str
         :param body: Body of the AddIndependentNodeRequest
-        :type body: :class:`huaweicloudsdkcss.v1.IndependentRequestBody`
+        :type body: :class:`huaweicloudsdkcss.v1.IndependentReq`
         """
         
         
@@ -105,7 +105,7 @@ class AddIndependentNodeRequest:
         """Gets the body of this AddIndependentNodeRequest.
 
         :return: The body of this AddIndependentNodeRequest.
-        :rtype: :class:`huaweicloudsdkcss.v1.IndependentRequestBody`
+        :rtype: :class:`huaweicloudsdkcss.v1.IndependentReq`
         """
         return self._body
 
@@ -114,7 +114,7 @@ class AddIndependentNodeRequest:
         """Sets the body of this AddIndependentNodeRequest.
 
         :param body: The body of this AddIndependentNodeRequest.
-        :type body: :class:`huaweicloudsdkcss.v1.IndependentRequestBody`
+        :type body: :class:`huaweicloudsdkcss.v1.IndependentReq`
         """
         self._body = body
 

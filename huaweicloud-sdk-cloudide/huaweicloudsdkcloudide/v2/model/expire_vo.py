@@ -38,9 +38,9 @@ class ExpireVo:
 
         :param expiration: 过期时间。UNIX时间戳，单位毫秒。eg:1635905480465
         :type expiration: int
-        :param instance_id: CloudIDE实例id
+        :param instance_id: CodeArtsIDEOnline实例id
         :type instance_id: str
-        :param interval: CloudIDE实例自动休眠时长，单位‘分钟’
+        :param interval: CodeArtsIDEOnline实例自动休眠时长，单位‘分钟’
         :type interval: int
         """
         
@@ -84,7 +84,7 @@ class ExpireVo:
     def instance_id(self):
         """Gets the instance_id of this ExpireVo.
 
-        CloudIDE实例id
+        CodeArtsIDEOnline实例id
 
         :return: The instance_id of this ExpireVo.
         :rtype: str
@@ -95,7 +95,7 @@ class ExpireVo:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ExpireVo.
 
-        CloudIDE实例id
+        CodeArtsIDEOnline实例id
 
         :param instance_id: The instance_id of this ExpireVo.
         :type instance_id: str
@@ -106,7 +106,7 @@ class ExpireVo:
     def interval(self):
         """Gets the interval of this ExpireVo.
 
-        CloudIDE实例自动休眠时长，单位‘分钟’
+        CodeArtsIDEOnline实例自动休眠时长，单位‘分钟’
 
         :return: The interval of this ExpireVo.
         :rtype: int
@@ -117,7 +117,7 @@ class ExpireVo:
     def interval(self, interval):
         """Sets the interval of this ExpireVo.
 
-        CloudIDE实例自动休眠时长，单位‘分钟’
+        CodeArtsIDEOnline实例自动休眠时长，单位‘分钟’
 
         :param interval: The interval of this ExpireVo.
         :type interval: int

@@ -42,13 +42,13 @@ class TaskSuccessRate:
 
         :param task_id: 任务id
         :type task_id: str
-        :param task_name: 任务名称
+        :param task_name: 应用名称
         :type task_name: str
         :param success_rate: 成功率
         :type success_rate: str
-        :param record_count: 执行记录数
+        :param record_count: 部署记录数
         :type record_count: int
-        :param success_record_count: 成功的执行记录数
+        :param success_record_count: 成功的部署记录数
         :type success_record_count: int
         """
         
@@ -98,7 +98,7 @@ class TaskSuccessRate:
     def task_name(self):
         """Gets the task_name of this TaskSuccessRate.
 
-        任务名称
+        应用名称
 
         :return: The task_name of this TaskSuccessRate.
         :rtype: str
@@ -109,7 +109,7 @@ class TaskSuccessRate:
     def task_name(self, task_name):
         """Sets the task_name of this TaskSuccessRate.
 
-        任务名称
+        应用名称
 
         :param task_name: The task_name of this TaskSuccessRate.
         :type task_name: str
@@ -142,7 +142,7 @@ class TaskSuccessRate:
     def record_count(self):
         """Gets the record_count of this TaskSuccessRate.
 
-        执行记录数
+        部署记录数
 
         :return: The record_count of this TaskSuccessRate.
         :rtype: int
@@ -153,7 +153,7 @@ class TaskSuccessRate:
     def record_count(self, record_count):
         """Sets the record_count of this TaskSuccessRate.
 
-        执行记录数
+        部署记录数
 
         :param record_count: The record_count of this TaskSuccessRate.
         :type record_count: int
@@ -164,7 +164,7 @@ class TaskSuccessRate:
     def success_record_count(self):
         """Gets the success_record_count of this TaskSuccessRate.
 
-        成功的执行记录数
+        成功的部署记录数
 
         :return: The success_record_count of this TaskSuccessRate.
         :rtype: int
@@ -175,7 +175,7 @@ class TaskSuccessRate:
     def success_record_count(self, success_record_count):
         """Sets the success_record_count of this TaskSuccessRate.
 
-        成功的执行记录数
+        成功的部署记录数
 
         :param success_record_count: The success_record_count of this TaskSuccessRate.
         :type success_record_count: int

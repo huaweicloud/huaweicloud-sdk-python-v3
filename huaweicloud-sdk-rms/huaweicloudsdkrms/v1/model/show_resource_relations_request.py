@@ -18,10 +18,8 @@ class ShowResourceRelationsRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
-    sensitive_list.append('x_auth_token')
 
     openapi_types = {
-        'x_auth_token': 'str',
         'resource_id': 'str',
         'direction': 'str',
         'limit': 'int',
@@ -29,20 +27,17 @@ class ShowResourceRelationsRequest:
     }
 
     attribute_map = {
-        'x_auth_token': 'X-Auth-Token',
         'resource_id': 'resource_id',
         'direction': 'direction',
         'limit': 'limit',
         'marker': 'marker'
     }
 
-    def __init__(self, x_auth_token=None, resource_id=None, direction=None, limit=None, marker=None):
+    def __init__(self, resource_id=None, direction=None, limit=None, marker=None):
         """ShowResourceRelationsRequest
 
         The model defined in huaweicloud sdk
 
-        :param x_auth_token: 用户Token。 获取Token，请参考《统一身份认证服务API参考》的“获取用户Token”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。
-        :type x_auth_token: str
         :param resource_id: 资源ID
         :type resource_id: str
         :param direction: 资源关系的指向
@@ -55,42 +50,18 @@ class ShowResourceRelationsRequest:
         
         
 
-        self._x_auth_token = None
         self._resource_id = None
         self._direction = None
         self._limit = None
         self._marker = None
         self.discriminator = None
 
-        self.x_auth_token = x_auth_token
         self.resource_id = resource_id
         self.direction = direction
         if limit is not None:
             self.limit = limit
         if marker is not None:
             self.marker = marker
-
-    @property
-    def x_auth_token(self):
-        """Gets the x_auth_token of this ShowResourceRelationsRequest.
-
-        用户Token。 获取Token，请参考《统一身份认证服务API参考》的“获取用户Token”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。
-
-        :return: The x_auth_token of this ShowResourceRelationsRequest.
-        :rtype: str
-        """
-        return self._x_auth_token
-
-    @x_auth_token.setter
-    def x_auth_token(self, x_auth_token):
-        """Sets the x_auth_token of this ShowResourceRelationsRequest.
-
-        用户Token。 获取Token，请参考《统一身份认证服务API参考》的“获取用户Token”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。
-
-        :param x_auth_token: The x_auth_token of this ShowResourceRelationsRequest.
-        :type x_auth_token: str
-        """
-        self._x_auth_token = x_auth_token
 
     @property
     def resource_id(self):

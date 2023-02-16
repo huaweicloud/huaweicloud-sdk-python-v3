@@ -34,7 +34,7 @@ class CreateInstanceBy3rdRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_label: 实例标签（不同的第三方需要和CloudIDE服务共同设定标签）。不传默认为classroom
+        :param instance_label: 实例标签（不同的第三方需要和CodeArtsIDEOnline服务共同设定标签）。不传默认为classroom
         :type instance_label: str
         :param body: Body of the CreateInstanceBy3rdRequest
         :type body: :class:`huaweicloudsdkcloudide.v2.InstanceEdgeParam`
@@ -55,7 +55,7 @@ class CreateInstanceBy3rdRequest:
     def instance_label(self):
         """Gets the instance_label of this CreateInstanceBy3rdRequest.
 
-        实例标签（不同的第三方需要和CloudIDE服务共同设定标签）。不传默认为classroom
+        实例标签（不同的第三方需要和CodeArtsIDEOnline服务共同设定标签）。不传默认为classroom
 
         :return: The instance_label of this CreateInstanceBy3rdRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class CreateInstanceBy3rdRequest:
     def instance_label(self, instance_label):
         """Sets the instance_label of this CreateInstanceBy3rdRequest.
 
-        实例标签（不同的第三方需要和CloudIDE服务共同设定标签）。不传默认为classroom
+        实例标签（不同的第三方需要和CodeArtsIDEOnline服务共同设定标签）。不传默认为classroom
 
         :param instance_label: The instance_label of this CreateInstanceBy3rdRequest.
         :type instance_label: str

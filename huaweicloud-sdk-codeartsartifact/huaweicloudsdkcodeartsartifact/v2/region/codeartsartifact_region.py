@@ -9,8 +9,8 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class CodeArtsArtifactRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("CODEARTSARTIFACT")
 
-
-    CN_EAST_3 = Region(id="cn-east-3", endpoint="https://cloudartifacts-ext.cn-east-3.myhuaweicloud.com")
+    CN_EAST_3 = Region("cn-east-3",
+                        "https://cloudartifacts-ext.cn-east-3.myhuaweicloud.com")
 
     static_fields = {
         "cn-east-3": CN_EAST_3,

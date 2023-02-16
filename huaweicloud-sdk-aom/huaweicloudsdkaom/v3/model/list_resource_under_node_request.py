@@ -36,9 +36,9 @@ class ListResourceUnderNodeRequest:
 
         The model defined in huaweicloud sdk
 
-        :param rf_resource_type: 资源种类
+        :param rf_resource_type: 云服务资源；同rms服务的provider
         :type rf_resource_type: str
-        :param type: 资源种类下的类型区分
+        :param type: 云服务资源类型；同rms服务的type
         :type type: str
         :param body: Body of the ListResourceUnderNodeRequest
         :type body: :class:`huaweicloudsdkaom.v3.PageResourceListParam`
@@ -60,7 +60,7 @@ class ListResourceUnderNodeRequest:
     def rf_resource_type(self):
         """Gets the rf_resource_type of this ListResourceUnderNodeRequest.
 
-        资源种类
+        云服务资源；同rms服务的provider
 
         :return: The rf_resource_type of this ListResourceUnderNodeRequest.
         :rtype: str
@@ -71,7 +71,7 @@ class ListResourceUnderNodeRequest:
     def rf_resource_type(self, rf_resource_type):
         """Sets the rf_resource_type of this ListResourceUnderNodeRequest.
 
-        资源种类
+        云服务资源；同rms服务的provider
 
         :param rf_resource_type: The rf_resource_type of this ListResourceUnderNodeRequest.
         :type rf_resource_type: str
@@ -82,7 +82,7 @@ class ListResourceUnderNodeRequest:
     def type(self):
         """Gets the type of this ListResourceUnderNodeRequest.
 
-        资源种类下的类型区分
+        云服务资源类型；同rms服务的type
 
         :return: The type of this ListResourceUnderNodeRequest.
         :rtype: str
@@ -93,7 +93,7 @@ class ListResourceUnderNodeRequest:
     def type(self, type):
         """Sets the type of this ListResourceUnderNodeRequest.
 
-        资源种类下的类型区分
+        云服务资源类型；同rms服务的type
 
         :param type: The type of this ListResourceUnderNodeRequest.
         :type type: str

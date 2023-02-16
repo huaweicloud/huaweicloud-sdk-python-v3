@@ -9,20 +9,20 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class DasRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("DAS")
 
-
-    CN_SOUTH_1 = Region(id="cn-south-1", endpoint="https://das.cn-south-1.myhuaweicloud.com")
-
-    CN_SOUTH_2 = Region(id="cn-south-2", endpoint="https://das.cn-south-2.myhuaweicloud.com")
-
-    CN_NORTH_1 = Region(id="cn-north-1", endpoint="https://das.cn-north-1.myhuaweicloud.com")
-
-    CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://das.cn-north-4.myhuaweicloud.com")
-
-    CN_EAST_3 = Region(id="cn-east-3", endpoint="https://das.cn-east-3.myhuaweicloud.com")
-
-    CN_EAST_2 = Region(id="cn-east-2", endpoint="https://das.cn-east-2.myhuaweicloud.com")
-
-    CN_SOUTHWEST_2 = Region(id="cn-southwest-2", endpoint="https://das.cn-southwest-2.myhuaweicloud.com")
+    CN_SOUTH_1 = Region("cn-south-1",
+                        "https://das.cn-south-1.myhuaweicloud.com")
+    CN_SOUTH_2 = Region("cn-south-2",
+                        "https://das.cn-south-2.myhuaweicloud.com")
+    CN_NORTH_1 = Region("cn-north-1",
+                        "https://das.cn-north-1.myhuaweicloud.com")
+    CN_NORTH_4 = Region("cn-north-4",
+                        "https://das.cn-north-4.myhuaweicloud.com")
+    CN_EAST_3 = Region("cn-east-3",
+                        "https://das.cn-east-3.myhuaweicloud.com")
+    CN_EAST_2 = Region("cn-east-2",
+                        "https://das.cn-east-2.myhuaweicloud.com")
+    CN_SOUTHWEST_2 = Region("cn-southwest-2",
+                        "https://das.cn-southwest-2.myhuaweicloud.com")
 
     static_fields = {
         "cn-south-1": CN_SOUTH_1,

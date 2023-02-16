@@ -46,7 +46,7 @@ class ExtensionVersionSnake:
         'issue_link': 'str',
         'asset_size': 'int',
         'depends': 'list[str]',
-        'property_list': 'list[CloudIDEExtensionVersionProperty]',
+        'property_list': 'list[CodeArtsIDEOnlineExtensionVersionProperty]',
         'uploader': 'str',
         'extension_id': 'str'
     }
@@ -140,8 +140,8 @@ class ExtensionVersionSnake:
         :type asset_size: int
         :param depends: 依赖插件
         :type depends: list[str]
-        :param property_list: cloudide插件版本参数
-        :type property_list: list[:class:`huaweicloudsdkcloudide.v2.CloudIDEExtensionVersionProperty`]
+        :param property_list: CodeArtsIDEOnline插件版本参数
+        :type property_list: list[:class:`huaweicloudsdkcloudide.v2.CodeArtsIDEOnlineExtensionVersionProperty`]
         :param uploader: 版本发布者
         :type uploader: str
         :param extension_id: 插件id
@@ -816,10 +816,10 @@ class ExtensionVersionSnake:
     def property_list(self):
         """Gets the property_list of this ExtensionVersionSnake.
 
-        cloudide插件版本参数
+        CodeArtsIDEOnline插件版本参数
 
         :return: The property_list of this ExtensionVersionSnake.
-        :rtype: list[:class:`huaweicloudsdkcloudide.v2.CloudIDEExtensionVersionProperty`]
+        :rtype: list[:class:`huaweicloudsdkcloudide.v2.CodeArtsIDEOnlineExtensionVersionProperty`]
         """
         return self._property_list
 
@@ -827,10 +827,10 @@ class ExtensionVersionSnake:
     def property_list(self, property_list):
         """Sets the property_list of this ExtensionVersionSnake.
 
-        cloudide插件版本参数
+        CodeArtsIDEOnline插件版本参数
 
         :param property_list: The property_list of this ExtensionVersionSnake.
-        :type property_list: list[:class:`huaweicloudsdkcloudide.v2.CloudIDEExtensionVersionProperty`]
+        :type property_list: list[:class:`huaweicloudsdkcloudide.v2.CodeArtsIDEOnlineExtensionVersionProperty`]
         """
         self._property_list = property_list
 

@@ -1,3 +1,171 @@
+# 3.1.26 2023-02-16
+
+### HuaweiCloud SDK AOM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the response parameter `id` from the interface `CreateApp`
+  - Changes of the interface `ListResourceUnderNode`:
+    - Add the request parameter `ci_ids`
+    - The request parameter `ci_id` changed to not required
+
+### HuaweiCloud SDK CloudIDE
+
+- _Features_
+  - Support the interface `CreateLogin`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the response parameters `id`, `property_name`, `property_value`, `extension_version_id`, `created_at`, `updated_at` from the interface `ListExtensions`
+  - Remove the response parameters `id`, `property_name`, `property_value`, `extension_version_id`, `created_at`, `updated_at` from the interface `ShowExtensionDetail`
+
+### HuaweiCloud SDK CSS
+
+- _Features_
+  - Support the interface `ChangeSecurityGroup`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ChangeMode`:
+    - Add the request parameter `changeModeReq`
+    - Remove the request parameter `changeModeRequestBody`
+  - Changes of the interface `AddIndependentNode`:
+    - Add the request parameter `IndependentReq`
+    - Remove the request parameter `IndependentRequestBody`
+
+### HuaweiCloud SDK CTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `compress_type`, `is_sort_by_service` to the interface `UpdateTracker`
+  - Add the request parameters `compress_type`, `is_sort_by_service` to the interface `CreateTracker`
+  - Add the response parameters `compress_type`, `is_sort_by_service` to the interface `ListTrackers`
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - Support the interfaces `CreateCustomTemplate`, `CreateAutoExpireScanTask`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DRIS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `esn` to the interface `ShowHistoryTrafficEvents`
+
+### HuaweiCloud SDK DWS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `project_id`, `cluster_id`, `limit`, `offset`, `sort_key`, `sort_dir` to the interface `ListClusterSnapshots`
+
+### HuaweiCloud SDK FRS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `nod_threshold` to the interface `DetectLiveByUrl`
+  - Add the request parameter `nod_threshold` to the interface `DetectLiveByUrlIntl`
+  - Add the request parameter `nod_threshold` to the interface `DetectLiveByFile`
+  - Add the request parameter `nod_threshold` to the interface `DetectLiveByFileIntl`
+  - Add the request parameter `nod_threshold` to the interface `DetectLiveByBase64`
+  - Add the request parameter `nod_threshold` to the interface `DetectLiveByBase64Intl`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `host` changed to required of the interface `AddDatabasePermission`
+
+### HuaweiCloud SDK Image
+
+- _Features_
+  - Support the interfaces `RunImageSuperResolution`, `RunRecaptureDetect`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK OSM
+
+- _Features_
+  - Support the following interfaces：
+    - `CreateAuthorization`
+    - `CreateFeedback`
+    - `ShowDownloadAccessoryUrl`
+    - `CreateQuestionInSession`
+    - `CreateSession`
+    - `CreateEvaluate`
+    - `ListFeedbackOption`
+    - `CreateQaFeedbacks`
+    - `CreateAskQuestion`
+    - `ShowQaPairDetail`
+    - `ShowAssociatedQuestions`
+    - `ShowQaPairs`
+    - `ListRecommendWords`
+    - `CreateQaAsk`
+    - `ShowTheme`
+    - `ListArticles`
+    - `ListNotices`
+    - `ListTools`
+    - `CreateDiagnoseFeedback`
+    - `ListDiagnoseItems`
+    - `ListDiagnoseJob`
+    - `ListDiagnoseRecords`
+    - `CreateDiagnoseJob`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RocketMQ
+
+- _Features_
+  - Support the interfaces `CreateInstanceByEngine`, `BatchCreateOrDeleteRocketmqTag`, `ShowRocketmqTags`, `ShowRocketmqProjectTags`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `limit`, `offset` to the interface `ListInstances`
+  - Add the request parameters `limit`, `offset` to the interface `ShowConsumerListOrDetails`
+  - Add the request parameters `limit`, `offset` to the interface `ListConsumerGroupOfTopic`
+
+### HuaweiCloud SDK WAF
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `UpdateHost`:
+    - Remove the enum values `TLS v1.3` from the request parameter `tls`
+    - Remove the enum values `TLS v1.3` from the response parameter `tls`
+  - Remove the enum values `TLS v1.3` from the response parameter `tls` from the interface `ShowHost`
+  - Remove the enum values `TLS v1.3` from the response parameter `tls` from the interface `CreatePremiumHost`
+  - Remove the enum values `TLS v1.3` from the response parameter `tls` from the interface `ShowPremiumHost`
+  - Changes of the interface `UpdatePremiumHost`:
+    - Remove the enum values `TLS v1.3` from the request parameter `tls`
+    - Remove the enum values `TLS v1.3` from the response parameter `tls`
+
 # 3.1.25 2023-02-09
 
 ### HuaweiCloud SDK LakeFormation

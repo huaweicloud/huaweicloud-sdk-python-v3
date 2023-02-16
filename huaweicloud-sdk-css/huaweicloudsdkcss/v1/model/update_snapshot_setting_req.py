@@ -38,7 +38,7 @@ class UpdateSnapshotSettingReq:
 
         :param bucket: 备份使用的OBS桶的桶名。
         :type bucket: str
-        :param agency: 访问OBS使用的IAM委托名称。
+        :param agency: 委托名称，委托给CSS，允许CSS调用您的其他云服务。
         :type agency: str
         :param base_path: 快照在OBS桶中的存放路径。
         :type base_path: str
@@ -81,7 +81,7 @@ class UpdateSnapshotSettingReq:
     def agency(self):
         """Gets the agency of this UpdateSnapshotSettingReq.
 
-        访问OBS使用的IAM委托名称。
+        委托名称，委托给CSS，允许CSS调用您的其他云服务。
 
         :return: The agency of this UpdateSnapshotSettingReq.
         :rtype: str
@@ -92,7 +92,7 @@ class UpdateSnapshotSettingReq:
     def agency(self, agency):
         """Sets the agency of this UpdateSnapshotSettingReq.
 
-        访问OBS使用的IAM委托名称。
+        委托名称，委托给CSS，允许CSS调用您的其他云服务。
 
         :param agency: The agency of this UpdateSnapshotSettingReq.
         :type agency: str

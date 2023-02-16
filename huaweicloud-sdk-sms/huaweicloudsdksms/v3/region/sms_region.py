@@ -9,8 +9,8 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class SmsRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("SMS")
 
-
-    AP_SOUTHEAST_1 = Region(id="ap-southeast-1", endpoint="https://sms.ap-southeast-1.myhuaweicloud.com")
+    AP_SOUTHEAST_1 = Region("ap-southeast-1",
+                        "https://sms.ap-southeast-1.myhuaweicloud.com")
 
     static_fields = {
         "ap-southeast-1": AP_SOUTHEAST_1,

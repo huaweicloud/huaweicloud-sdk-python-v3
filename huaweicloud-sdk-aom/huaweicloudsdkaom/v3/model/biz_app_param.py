@@ -42,11 +42,11 @@ class BizAppParam:
 
         :param description: 应用描述
         :type description: str
-        :param display_name: 应用名称
+        :param display_name: 应用名称.字符集长度2-64，仅支持字符集：中文字符、英文字母、数字、下划线、中划线、点
         :type display_name: str
         :param eps_id: 应用关联的企业项目id。企业级用户必传
         :type eps_id: str
-        :param name: 唯一标识
+        :param name: 唯一标识.字符集长度2-64，仅支持字符集：英文字母、数字、下划线、中划线、点
         :type name: str
         :param register_type: 前端默认是CONSOLE，不需要传参。rest接口无参数是API，有参数只能是：SERVICE_DISCOVERY
         :type register_type: str
@@ -97,7 +97,7 @@ class BizAppParam:
     def display_name(self):
         """Gets the display_name of this BizAppParam.
 
-        应用名称
+        应用名称.字符集长度2-64，仅支持字符集：中文字符、英文字母、数字、下划线、中划线、点
 
         :return: The display_name of this BizAppParam.
         :rtype: str
@@ -108,7 +108,7 @@ class BizAppParam:
     def display_name(self, display_name):
         """Sets the display_name of this BizAppParam.
 
-        应用名称
+        应用名称.字符集长度2-64，仅支持字符集：中文字符、英文字母、数字、下划线、中划线、点
 
         :param display_name: The display_name of this BizAppParam.
         :type display_name: str
@@ -141,7 +141,7 @@ class BizAppParam:
     def name(self):
         """Gets the name of this BizAppParam.
 
-        唯一标识
+        唯一标识.字符集长度2-64，仅支持字符集：英文字母、数字、下划线、中划线、点
 
         :return: The name of this BizAppParam.
         :rtype: str
@@ -152,7 +152,7 @@ class BizAppParam:
     def name(self, name):
         """Sets the name of this BizAppParam.
 
-        唯一标识
+        唯一标识.字符集长度2-64，仅支持字符集：英文字母、数字、下划线、中划线、点
 
         :param name: The name of this BizAppParam.
         :type name: str

@@ -82,7 +82,7 @@ class InstanceParam:
         :type display_name: str
         :param is_temporary: 是否页面显示（以标签配置为准）
         :type is_temporary: bool
-        :param label_tag: 实例标签（不同的第三方需要和CloudIDE服务共同设定标签），不传默认为default
+        :param label_tag: 实例标签（不同的第三方需要和CodeArtsIDEOnline服务共同设定标签），不传默认为default
         :type label_tag: str
         :param plugin_enable_list: 预装插件列表
         :type plugin_enable_list: list[str]
@@ -308,7 +308,7 @@ class InstanceParam:
     def label_tag(self):
         """Gets the label_tag of this InstanceParam.
 
-        实例标签（不同的第三方需要和CloudIDE服务共同设定标签），不传默认为default
+        实例标签（不同的第三方需要和CodeArtsIDEOnline服务共同设定标签），不传默认为default
 
         :return: The label_tag of this InstanceParam.
         :rtype: str
@@ -319,7 +319,7 @@ class InstanceParam:
     def label_tag(self, label_tag):
         """Sets the label_tag of this InstanceParam.
 
-        实例标签（不同的第三方需要和CloudIDE服务共同设定标签），不传默认为default
+        实例标签（不同的第三方需要和CodeArtsIDEOnline服务共同设定标签），不传默认为default
 
         :param label_tag: The label_tag of this InstanceParam.
         :type label_tag: str

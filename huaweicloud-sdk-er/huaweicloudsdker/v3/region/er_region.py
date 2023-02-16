@@ -9,24 +9,24 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class ErRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("ER")
 
-
-    CN_SOUTH_1 = Region(id="cn-south-1", endpoint="https://er.cn-south-1.myhuaweicloud.com")
-
-    CN_EAST_3 = Region(id="cn-east-3", endpoint="https://er.cn-east-3.myhuaweicloud.com")
-
-    CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://er.cn-north-4.myhuaweicloud.com")
-
-    CN_NORTH_2 = Region(id="cn-north-2", endpoint="https://er.cn-north-2.myhuaweicloud.com")
-
-    CN_NORTH_9 = Region(id="cn-north-9", endpoint="https://er.cn-north-9.myhuaweicloud.com")
-
-    AP_SOUTHEAST_1 = Region(id="ap-southeast-1", endpoint="https://er.ap-southeast-1.myhuaweicloud.com")
-
-    AP_SOUTHEAST_2 = Region(id="ap-southeast-2", endpoint="https://er.ap-southeast-2.myhuaweicloud.com")
-
-    AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://er.ap-southeast-3.myhuaweicloud.com")
-
-    CN_SOUTHWEST_2 = Region(id="cn-southwest-2", endpoint="https://er.cn-southwest-2.myhuaweicloud.com")
+    CN_SOUTH_1 = Region("cn-south-1",
+                        "https://er.cn-south-1.myhuaweicloud.com")
+    CN_EAST_3 = Region("cn-east-3",
+                        "https://er.cn-east-3.myhuaweicloud.com")
+    CN_NORTH_4 = Region("cn-north-4",
+                        "https://er.cn-north-4.myhuaweicloud.com")
+    CN_NORTH_2 = Region("cn-north-2",
+                        "https://er.cn-north-2.myhuaweicloud.com")
+    CN_NORTH_9 = Region("cn-north-9",
+                        "https://er.cn-north-9.myhuaweicloud.com")
+    AP_SOUTHEAST_1 = Region("ap-southeast-1",
+                        "https://er.ap-southeast-1.myhuaweicloud.com")
+    AP_SOUTHEAST_2 = Region("ap-southeast-2",
+                        "https://er.ap-southeast-2.myhuaweicloud.com")
+    AP_SOUTHEAST_3 = Region("ap-southeast-3",
+                        "https://er.ap-southeast-3.myhuaweicloud.com")
+    CN_SOUTHWEST_2 = Region("cn-southwest-2",
+                        "https://er.cn-southwest-2.myhuaweicloud.com")
 
     static_fields = {
         "cn-south-1": CN_SOUTH_1,

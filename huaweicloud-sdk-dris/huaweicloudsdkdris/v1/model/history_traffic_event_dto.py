@@ -23,6 +23,7 @@ class HistoryTrafficEventDTO:
         'event_id': 'str',
         'event_source_type': 'str',
         'event_source_id': 'str',
+        'esn': 'str',
         'area_code': 'int',
         'event_class': 'str',
         'event_type': 'int',
@@ -47,6 +48,7 @@ class HistoryTrafficEventDTO:
         'event_id': 'event_id',
         'event_source_type': 'event_source_type',
         'event_source_id': 'event_source_id',
+        'esn': 'esn',
         'area_code': 'area_code',
         'event_class': 'event_class',
         'event_type': 'event_type',
@@ -67,7 +69,7 @@ class HistoryTrafficEventDTO:
         'created_time': 'created_time'
     }
 
-    def __init__(self, event_id=None, event_source_type=None, event_source_id=None, area_code=None, event_class=None, event_type=None, cross_id=None, event_description=None, event_level=None, event_params=None, event_position=None, event_position_name=None, reference_paths=None, note=None, event_status=None, event_confidence=None, event_ex_info=None, rsu_id=None, start_time=None, end_time=None, created_time=None):
+    def __init__(self, event_id=None, event_source_type=None, event_source_id=None, esn=None, area_code=None, event_class=None, event_type=None, cross_id=None, event_description=None, event_level=None, event_params=None, event_position=None, event_position_name=None, reference_paths=None, note=None, event_status=None, event_confidence=None, event_ex_info=None, rsu_id=None, start_time=None, end_time=None, created_time=None):
         """HistoryTrafficEventDTO
 
         The model defined in huaweicloud sdk
@@ -78,6 +80,8 @@ class HistoryTrafficEventDTO:
         :type event_source_type: str
         :param event_source_id: **参数说明**：事件来源ID。
         :type event_source_id: str
+        :param esn: **参数说明**：设备编码。 **取值范围**：长度不超过64，只允许字母、数字、以及_等字符的组合。 
+        :type esn: str
         :param area_code: **参数说明**：区域码。
         :type area_code: int
         :param event_class: **参数说明**：事件的分类。  **取值范围**：  - AbnormalTraffic：异常路况  - AbnormalVehicle：异常车况  - AdverseWeather：恶劣天气  - TrafficSign：标志标牌 
@@ -121,6 +125,7 @@ class HistoryTrafficEventDTO:
         self._event_id = None
         self._event_source_type = None
         self._event_source_id = None
+        self._esn = None
         self._area_code = None
         self._event_class = None
         self._event_type = None
@@ -147,6 +152,8 @@ class HistoryTrafficEventDTO:
             self.event_source_type = event_source_type
         if event_source_id is not None:
             self.event_source_id = event_source_id
+        if esn is not None:
+            self.esn = esn
         if area_code is not None:
             self.area_code = area_code
         if event_class is not None:
@@ -249,6 +256,28 @@ class HistoryTrafficEventDTO:
         :type event_source_id: str
         """
         self._event_source_id = event_source_id
+
+    @property
+    def esn(self):
+        """Gets the esn of this HistoryTrafficEventDTO.
+
+        **参数说明**：设备编码。 **取值范围**：长度不超过64，只允许字母、数字、以及_等字符的组合。 
+
+        :return: The esn of this HistoryTrafficEventDTO.
+        :rtype: str
+        """
+        return self._esn
+
+    @esn.setter
+    def esn(self, esn):
+        """Sets the esn of this HistoryTrafficEventDTO.
+
+        **参数说明**：设备编码。 **取值范围**：长度不超过64，只允许字母、数字、以及_等字符的组合。 
+
+        :param esn: The esn of this HistoryTrafficEventDTO.
+        :type esn: str
+        """
+        self._esn = esn
 
     @property
     def area_code(self):

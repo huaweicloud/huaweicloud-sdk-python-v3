@@ -48,21 +48,21 @@ class ExecuteRecordV2Body:
 
         The model defined in huaweicloud sdk
 
-        :param duration: 执行用时
+        :param duration: 部署用时
         :type duration: str
-        :param state: 任务状态
+        :param state: 应用状态
         :type state: str
         :param operator: 操作人用户名
         :type operator: str
-        :param execution_id: 执行记录ID
+        :param execution_id: 部署记录ID
         :type execution_id: str
-        :param start_time: 执行任务的开始时间
+        :param start_time: 部署应用的开始时间
         :type start_time: str
         :param nickname: 操作人昵称
         :type nickname: str
-        :param end_time: 执行任务的结束时间
+        :param end_time: 部署应用的结束时间
         :type end_time: str
-        :param release_id: 执行序列号
+        :param release_id: 部署记录序列号
         :type release_id: int
         :param type: 类型
         :type type: str
@@ -104,7 +104,7 @@ class ExecuteRecordV2Body:
     def duration(self):
         """Gets the duration of this ExecuteRecordV2Body.
 
-        执行用时
+        部署用时
 
         :return: The duration of this ExecuteRecordV2Body.
         :rtype: str
@@ -115,7 +115,7 @@ class ExecuteRecordV2Body:
     def duration(self, duration):
         """Sets the duration of this ExecuteRecordV2Body.
 
-        执行用时
+        部署用时
 
         :param duration: The duration of this ExecuteRecordV2Body.
         :type duration: str
@@ -126,7 +126,7 @@ class ExecuteRecordV2Body:
     def state(self):
         """Gets the state of this ExecuteRecordV2Body.
 
-        任务状态
+        应用状态
 
         :return: The state of this ExecuteRecordV2Body.
         :rtype: str
@@ -137,7 +137,7 @@ class ExecuteRecordV2Body:
     def state(self, state):
         """Sets the state of this ExecuteRecordV2Body.
 
-        任务状态
+        应用状态
 
         :param state: The state of this ExecuteRecordV2Body.
         :type state: str
@@ -170,7 +170,7 @@ class ExecuteRecordV2Body:
     def execution_id(self):
         """Gets the execution_id of this ExecuteRecordV2Body.
 
-        执行记录ID
+        部署记录ID
 
         :return: The execution_id of this ExecuteRecordV2Body.
         :rtype: str
@@ -181,7 +181,7 @@ class ExecuteRecordV2Body:
     def execution_id(self, execution_id):
         """Sets the execution_id of this ExecuteRecordV2Body.
 
-        执行记录ID
+        部署记录ID
 
         :param execution_id: The execution_id of this ExecuteRecordV2Body.
         :type execution_id: str
@@ -192,7 +192,7 @@ class ExecuteRecordV2Body:
     def start_time(self):
         """Gets the start_time of this ExecuteRecordV2Body.
 
-        执行任务的开始时间
+        部署应用的开始时间
 
         :return: The start_time of this ExecuteRecordV2Body.
         :rtype: str
@@ -203,7 +203,7 @@ class ExecuteRecordV2Body:
     def start_time(self, start_time):
         """Sets the start_time of this ExecuteRecordV2Body.
 
-        执行任务的开始时间
+        部署应用的开始时间
 
         :param start_time: The start_time of this ExecuteRecordV2Body.
         :type start_time: str
@@ -236,7 +236,7 @@ class ExecuteRecordV2Body:
     def end_time(self):
         """Gets the end_time of this ExecuteRecordV2Body.
 
-        执行任务的结束时间
+        部署应用的结束时间
 
         :return: The end_time of this ExecuteRecordV2Body.
         :rtype: str
@@ -247,7 +247,7 @@ class ExecuteRecordV2Body:
     def end_time(self, end_time):
         """Sets the end_time of this ExecuteRecordV2Body.
 
-        执行任务的结束时间
+        部署应用的结束时间
 
         :param end_time: The end_time of this ExecuteRecordV2Body.
         :type end_time: str
@@ -258,7 +258,7 @@ class ExecuteRecordV2Body:
     def release_id(self):
         """Gets the release_id of this ExecuteRecordV2Body.
 
-        执行序列号
+        部署记录序列号
 
         :return: The release_id of this ExecuteRecordV2Body.
         :rtype: int
@@ -269,7 +269,7 @@ class ExecuteRecordV2Body:
     def release_id(self, release_id):
         """Sets the release_id of this ExecuteRecordV2Body.
 
-        执行序列号
+        部署记录序列号
 
         :param release_id: The release_id of this ExecuteRecordV2Body.
         :type release_id: int

@@ -9,16 +9,16 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class LiveRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("LIVE")
 
-
-    CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://live.cn-north-4.myhuaweicloud.com")
-
-    CN_NORTH_1 = Region(id="cn-north-1", endpoint="https://live.cn-north-1.myhuaweicloud.com")
-
-    CN_EAST_3 = Region(id="cn-east-3", endpoint="https://live.cn-east-3.myhuaweicloud.com")
-
-    AP_SOUTHEAST_2 = Region(id="ap-southeast-2", endpoint="https://live.ap-southeast-2.myhuaweicloud.com")
-
-    AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://live.ap-southeast-3.myhuaweicloud.com")
+    CN_NORTH_4 = Region("cn-north-4",
+                        "https://live.cn-north-4.myhuaweicloud.com")
+    CN_NORTH_1 = Region("cn-north-1",
+                        "https://live.cn-north-1.myhuaweicloud.com")
+    CN_EAST_3 = Region("cn-east-3",
+                        "https://live.cn-east-3.myhuaweicloud.com")
+    AP_SOUTHEAST_2 = Region("ap-southeast-2",
+                        "https://live.ap-southeast-2.myhuaweicloud.com")
+    AP_SOUTHEAST_3 = Region("ap-southeast-3",
+                        "https://live.ap-southeast-3.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,

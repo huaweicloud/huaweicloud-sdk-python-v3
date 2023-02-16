@@ -40,7 +40,7 @@ class ComponentParam:
 
         :param description: 组件描述
         :type description: str
-        :param model_id: 应用Id、子应用Id
+        :param model_id: 应用Id、子应用Id；id长度不能超过36位，由大小写字母、数字组成
         :type model_id: str
         :param model_type: 应用、子应用，取值：APPLICATION、SUB_APPLICATION
         :type model_type: str
@@ -88,7 +88,7 @@ class ComponentParam:
     def model_id(self):
         """Gets the model_id of this ComponentParam.
 
-        应用Id、子应用Id
+        应用Id、子应用Id；id长度不能超过36位，由大小写字母、数字组成
 
         :return: The model_id of this ComponentParam.
         :rtype: str
@@ -99,7 +99,7 @@ class ComponentParam:
     def model_id(self, model_id):
         """Sets the model_id of this ComponentParam.
 
-        应用Id、子应用Id
+        应用Id、子应用Id；id长度不能超过36位，由大小写字母、数字组成
 
         :param model_id: The model_id of this ComponentParam.
         :type model_id: str

@@ -44,7 +44,7 @@ class EnvParam:
 
         The model defined in huaweicloud sdk
 
-        :param component_id: 环境关联组件id
+        :param component_id: 环境关联组件id；id长度不能超过36位，由大小写字母、数字组成
         :type component_id: str
         :param description: 描述
         :type description: str
@@ -86,7 +86,7 @@ class EnvParam:
     def component_id(self):
         """Gets the component_id of this EnvParam.
 
-        环境关联组件id
+        环境关联组件id；id长度不能超过36位，由大小写字母、数字组成
 
         :return: The component_id of this EnvParam.
         :rtype: str
@@ -97,7 +97,7 @@ class EnvParam:
     def component_id(self, component_id):
         """Sets the component_id of this EnvParam.
 
-        环境关联组件id
+        环境关联组件id；id长度不能超过36位，由大小写字母、数字组成
 
         :param component_id: The component_id of this EnvParam.
         :type component_id: str

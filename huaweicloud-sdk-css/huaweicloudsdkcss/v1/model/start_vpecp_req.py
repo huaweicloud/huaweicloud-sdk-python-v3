@@ -32,7 +32,7 @@ class StartVpecpReq:
 
         The model defined in huaweicloud sdk
 
-        :param endpoint_with_dns_name: 是否开启内网域名。 - ture：表示开启。 - false： 表示不开启。
+        :param endpoint_with_dns_name: 是否开启内网域名。 - true：开启。 - false：不开启。
         :type endpoint_with_dns_name: bool
         """
         
@@ -48,7 +48,7 @@ class StartVpecpReq:
     def endpoint_with_dns_name(self):
         """Gets the endpoint_with_dns_name of this StartVpecpReq.
 
-        是否开启内网域名。 - ture：表示开启。 - false： 表示不开启。
+        是否开启内网域名。 - true：开启。 - false：不开启。
 
         :return: The endpoint_with_dns_name of this StartVpecpReq.
         :rtype: bool
@@ -59,7 +59,7 @@ class StartVpecpReq:
     def endpoint_with_dns_name(self, endpoint_with_dns_name):
         """Sets the endpoint_with_dns_name of this StartVpecpReq.
 
-        是否开启内网域名。 - ture：表示开启。 - false： 表示不开启。
+        是否开启内网域名。 - true：开启。 - false：不开启。
 
         :param endpoint_with_dns_name: The endpoint_with_dns_name of this StartVpecpReq.
         :type endpoint_with_dns_name: bool

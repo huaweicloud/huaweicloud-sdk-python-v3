@@ -9,18 +9,18 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class FrsRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("FRS")
 
-
-    CN_NORTH_1 = Region(id="cn-north-1", endpoint="https://face.cn-north-1.myhuaweicloud.com")
-
-    CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://face.cn-north-4.myhuaweicloud.com")
-
-    CN_SOUTH_1 = Region(id="cn-south-1", endpoint="https://face.cn-south-1.myhuaweicloud.com")
-
-    CN_EAST_3 = Region(id="cn-east-3", endpoint="https://face.cn-east-3.myhuaweicloud.com")
-
-    AP_SOUTHEAST_1 = Region(id="ap-southeast-1", endpoint="https://face.ap-southeast-1.myhuaweicloud.com")
-
-    AP_SOUTHEAST_2 = Region(id="ap-southeast-2", endpoint="https://face.ap-southeast-2.myhuaweicloud.com")
+    CN_NORTH_1 = Region("cn-north-1",
+                        "https://face.cn-north-1.myhuaweicloud.com")
+    CN_NORTH_4 = Region("cn-north-4",
+                        "https://face.cn-north-4.myhuaweicloud.com")
+    CN_SOUTH_1 = Region("cn-south-1",
+                        "https://face.cn-south-1.myhuaweicloud.com")
+    CN_EAST_3 = Region("cn-east-3",
+                        "https://face.cn-east-3.myhuaweicloud.com")
+    AP_SOUTHEAST_1 = Region("ap-southeast-1",
+                        "https://face.ap-southeast-1.myhuaweicloud.com")
+    AP_SOUTHEAST_2 = Region("ap-southeast-2",
+                        "https://face.ap-southeast-2.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-1": CN_NORTH_1,

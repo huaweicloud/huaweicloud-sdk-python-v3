@@ -20,9 +20,12 @@ from huaweicloudsdkcss.v1.model.bind_public_req import BindPublicReq
 from huaweicloudsdkcss.v1.model.bind_public_req_eip import BindPublicReqEip
 from huaweicloudsdkcss.v1.model.bind_public_req_eip_band_width import BindPublicReqEipBandWidth
 from huaweicloudsdkcss.v1.model.bind_public_req_eip_req import BindPublicReqEipReq
+from huaweicloudsdkcss.v1.model.change_mode_req import ChangeModeReq
 from huaweicloudsdkcss.v1.model.change_mode_request import ChangeModeRequest
-from huaweicloudsdkcss.v1.model.change_mode_request_body import ChangeModeRequestBody
 from huaweicloudsdkcss.v1.model.change_mode_response import ChangeModeResponse
+from huaweicloudsdkcss.v1.model.change_security_group_req import ChangeSecurityGroupReq
+from huaweicloudsdkcss.v1.model.change_security_group_request import ChangeSecurityGroupRequest
+from huaweicloudsdkcss.v1.model.change_security_group_response import ChangeSecurityGroupResponse
 from huaweicloudsdkcss.v1.model.close_kibana_public_req import CloseKibanaPublicReq
 from huaweicloudsdkcss.v1.model.cluster_detail_datastore import ClusterDetailDatastore
 from huaweicloudsdkcss.v1.model.cluster_detail_failed_reasons import ClusterDetailFailedReasons
@@ -88,8 +91,8 @@ from huaweicloudsdkcss.v1.model.esflavors_versions_resp import EsflavorsVersions
 from huaweicloudsdkcss.v1.model.extend_cluster_grow_req import ExtendClusterGrowReq
 from huaweicloudsdkcss.v1.model.extend_cluster_req import ExtendClusterReq
 from huaweicloudsdkcss.v1.model.get_log_backup_req import GetLogBackupReq
+from huaweicloudsdkcss.v1.model.independent_body_req import IndependentBodyReq
 from huaweicloudsdkcss.v1.model.independent_req import IndependentReq
-from huaweicloudsdkcss.v1.model.independent_request_body import IndependentRequestBody
 from huaweicloudsdkcss.v1.model.kibana_elb_white_list_resp import KibanaElbWhiteListResp
 from huaweicloudsdkcss.v1.model.list_actions_request import ListActionsRequest
 from huaweicloudsdkcss.v1.model.list_actions_response import ListActionsResponse

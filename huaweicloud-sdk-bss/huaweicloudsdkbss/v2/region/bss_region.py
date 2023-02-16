@@ -9,8 +9,8 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class BssRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("BSS")
 
-
-    CN_NORTH_1 = Region(id="cn-north-1", endpoint="https://bss.myhuaweicloud.com")
+    CN_NORTH_1 = Region("cn-north-1",
+                        "https://bss.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-1": CN_NORTH_1,

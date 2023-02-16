@@ -44,11 +44,11 @@ class ListTaskSuccessRateResponse(SdkResponse):
         :type project_id: str
         :param project_name: 项目名称
         :type project_name: str
-        :param start_date: 任务执行开始时间范围的左边界（包含），格式yyyy-MM-dd
+        :param start_date: 部署应用开始时间范围的左边界（包含），格式yyyy-MM-dd
         :type start_date: str
-        :param end_date: 任务执行开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
+        :param end_date: 部署应用开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
         :type end_date: str
-        :param tasks_success_rate: 任务的成功率列表
+        :param tasks_success_rate: 应用的成功率列表
         :type tasks_success_rate: list[:class:`huaweicloudsdkclouddeploy.v2.TaskSuccessRate`]
         """
         
@@ -120,7 +120,7 @@ class ListTaskSuccessRateResponse(SdkResponse):
     def start_date(self):
         """Gets the start_date of this ListTaskSuccessRateResponse.
 
-        任务执行开始时间范围的左边界（包含），格式yyyy-MM-dd
+        部署应用开始时间范围的左边界（包含），格式yyyy-MM-dd
 
         :return: The start_date of this ListTaskSuccessRateResponse.
         :rtype: str
@@ -131,7 +131,7 @@ class ListTaskSuccessRateResponse(SdkResponse):
     def start_date(self, start_date):
         """Sets the start_date of this ListTaskSuccessRateResponse.
 
-        任务执行开始时间范围的左边界（包含），格式yyyy-MM-dd
+        部署应用开始时间范围的左边界（包含），格式yyyy-MM-dd
 
         :param start_date: The start_date of this ListTaskSuccessRateResponse.
         :type start_date: str
@@ -142,7 +142,7 @@ class ListTaskSuccessRateResponse(SdkResponse):
     def end_date(self):
         """Gets the end_date of this ListTaskSuccessRateResponse.
 
-        任务执行开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
+        部署应用开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
 
         :return: The end_date of this ListTaskSuccessRateResponse.
         :rtype: str
@@ -153,7 +153,7 @@ class ListTaskSuccessRateResponse(SdkResponse):
     def end_date(self, end_date):
         """Sets the end_date of this ListTaskSuccessRateResponse.
 
-        任务执行开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
+        部署应用开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
 
         :param end_date: The end_date of this ListTaskSuccessRateResponse.
         :type end_date: str
@@ -164,7 +164,7 @@ class ListTaskSuccessRateResponse(SdkResponse):
     def tasks_success_rate(self):
         """Gets the tasks_success_rate of this ListTaskSuccessRateResponse.
 
-        任务的成功率列表
+        应用的成功率列表
 
         :return: The tasks_success_rate of this ListTaskSuccessRateResponse.
         :rtype: list[:class:`huaweicloudsdkclouddeploy.v2.TaskSuccessRate`]
@@ -175,7 +175,7 @@ class ListTaskSuccessRateResponse(SdkResponse):
     def tasks_success_rate(self, tasks_success_rate):
         """Sets the tasks_success_rate of this ListTaskSuccessRateResponse.
 
-        任务的成功率列表
+        应用的成功率列表
 
         :param tasks_success_rate: The tasks_success_rate of this ListTaskSuccessRateResponse.
         :type tasks_success_rate: list[:class:`huaweicloudsdkclouddeploy.v2.TaskSuccessRate`]

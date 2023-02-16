@@ -40,7 +40,7 @@ class ShowExtensionAuthorizationRequest:
         :type extension_version: str
         :param identifier: 插件标识(发布者.插件名)
         :type identifier: str
-        :param instance_id: CloudIDE实例ID
+        :param instance_id: CodeArtsIDEOnline实例ID
         :type instance_id: str
         """
         
@@ -103,7 +103,7 @@ class ShowExtensionAuthorizationRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowExtensionAuthorizationRequest.
 
-        CloudIDE实例ID
+        CodeArtsIDEOnline实例ID
 
         :return: The instance_id of this ShowExtensionAuthorizationRequest.
         :rtype: str
@@ -114,7 +114,7 @@ class ShowExtensionAuthorizationRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowExtensionAuthorizationRequest.
 
-        CloudIDE实例ID
+        CodeArtsIDEOnline实例ID
 
         :param instance_id: The instance_id of this ShowExtensionAuthorizationRequest.
         :type instance_id: str

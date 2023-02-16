@@ -9,8 +9,8 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class CgsRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("CGS")
 
-
-    CN_SOUTH_4 = Region(id="cn-south-4", endpoint="https://cgs.cn-south-4.myhuaweicloud.com")
+    CN_SOUTH_4 = Region("cn-south-4",
+                        "https://cgs.cn-south-4.myhuaweicloud.com")
 
     static_fields = {
         "cn-south-4": CN_SOUTH_4,

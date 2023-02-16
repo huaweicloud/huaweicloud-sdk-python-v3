@@ -20,51 +20,47 @@ class CreateAppResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str'
+        'body': 'str'
     }
 
     attribute_map = {
-        'id': 'id'
+        'body': 'body'
     }
 
-    def __init__(self, id=None):
+    def __init__(self, body=None):
         """CreateAppResponse
 
         The model defined in huaweicloud sdk
 
-        :param id: 对象id
-        :type id: str
+        :param body: 
+        :type body: str
         """
         
         super(CreateAppResponse, self).__init__()
 
-        self._id = None
+        self._body = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
+        if body is not None:
+            self.body = body
 
     @property
-    def id(self):
-        """Gets the id of this CreateAppResponse.
+    def body(self):
+        """Gets the body of this CreateAppResponse.
 
-        对象id
-
-        :return: The id of this CreateAppResponse.
+        :return: The body of this CreateAppResponse.
         :rtype: str
         """
-        return self._id
+        return self._body
 
-    @id.setter
-    def id(self, id):
-        """Sets the id of this CreateAppResponse.
+    @body.setter
+    def body(self, body):
+        """Sets the body of this CreateAppResponse.
 
-        对象id
-
-        :param id: The id of this CreateAppResponse.
-        :type id: str
+        :param body: The body of this CreateAppResponse.
+        :type body: str
         """
-        self._id = id
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

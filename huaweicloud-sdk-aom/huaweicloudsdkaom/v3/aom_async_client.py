@@ -535,7 +535,7 @@ class AomAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_app_by_name_async(self, request):
-        """查询应用详情
+        """根据应用名称查询应用详情
 
         获取应用详情。（注：接口目前开放的region为：上海一）。
         
@@ -659,7 +659,7 @@ class AomAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_component_by_name_async(self, request):
-        """查询组件详情
+        """根据组件名称查询组件详情
 
         查询组件详情。（注：接口目前开放的region为：上海一）。
         
@@ -783,7 +783,7 @@ class AomAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_env_by_name_async(self, request):
-        """查询环境详情
+        """根据环境名称查询环境详情
 
         查询环境详情。（注：接口目前开放的region为：上海一）。
         

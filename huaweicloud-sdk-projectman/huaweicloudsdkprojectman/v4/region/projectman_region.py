@@ -9,24 +9,24 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class ProjectManRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("PROJECTMAN")
 
-
-    CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://projectman-ext.cn-north-4.myhuaweicloud.com")
-
-    CN_NORTH_1 = Region(id="cn-north-1", endpoint="https://projectman-ext.cn-north-1.myhuaweicloud.com")
-
-    CN_EAST_2 = Region(id="cn-east-2", endpoint="https://projectman-ext.cn-east-2.myhuaweicloud.com")
-
-    CN_SOUTH_1 = Region(id="cn-south-1", endpoint="https://projectman-ext.cn-south-1.myhuaweicloud.com")
-
-    CN_SOUTHWEST_2 = Region(id="cn-southwest-2", endpoint="https://projectman-ext.cn-southwest-2.myhuaweicloud.com")
-
-    CN_EAST_3 = Region(id="cn-east-3", endpoint="https://projectman-ext.cn-east-3.myhuaweicloud.com")
-
-    AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://projectman-ext.ap-southeast-3.myhuaweicloud.com")
-
-    LA_NORTH_2 = Region(id="la-north-2", endpoint="https://projectman-ext.la-north-2.myhuaweicloud.com")
-
-    SA_BRAZIL_1 = Region(id="sa-brazil-1", endpoint="https://projectman-ext.sa-brazil-1.myhuaweicloud.com")
+    CN_NORTH_4 = Region("cn-north-4",
+                        "https://projectman-ext.cn-north-4.myhuaweicloud.com")
+    CN_NORTH_1 = Region("cn-north-1",
+                        "https://projectman-ext.cn-north-1.myhuaweicloud.com")
+    CN_EAST_2 = Region("cn-east-2",
+                        "https://projectman-ext.cn-east-2.myhuaweicloud.com")
+    CN_SOUTH_1 = Region("cn-south-1",
+                        "https://projectman-ext.cn-south-1.myhuaweicloud.com")
+    CN_SOUTHWEST_2 = Region("cn-southwest-2",
+                        "https://projectman-ext.cn-southwest-2.myhuaweicloud.com")
+    CN_EAST_3 = Region("cn-east-3",
+                        "https://projectman-ext.cn-east-3.myhuaweicloud.com")
+    AP_SOUTHEAST_3 = Region("ap-southeast-3",
+                        "https://projectman-ext.ap-southeast-3.myhuaweicloud.com")
+    LA_NORTH_2 = Region("la-north-2",
+                        "https://projectman-ext.la-north-2.myhuaweicloud.com")
+    SA_BRAZIL_1 = Region("sa-brazil-1",
+                        "https://projectman-ext.sa-brazil-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,

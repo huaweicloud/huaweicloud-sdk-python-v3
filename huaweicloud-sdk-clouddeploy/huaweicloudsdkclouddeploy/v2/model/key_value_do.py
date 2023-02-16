@@ -34,9 +34,9 @@ class KeyValueDO:
 
         The model defined in huaweicloud sdk
 
-        :param key: 执行部署任务时传递的参数名称
+        :param key: 部署应用时传递的参数名称
         :type key: str
-        :param value: 执行部署任务时传递的参数值
+        :param value: 部署应用时传递的参数值
         :type value: str
         """
         
@@ -55,7 +55,7 @@ class KeyValueDO:
     def key(self):
         """Gets the key of this KeyValueDO.
 
-        执行部署任务时传递的参数名称
+        部署应用时传递的参数名称
 
         :return: The key of this KeyValueDO.
         :rtype: str
@@ -66,7 +66,7 @@ class KeyValueDO:
     def key(self, key):
         """Sets the key of this KeyValueDO.
 
-        执行部署任务时传递的参数名称
+        部署应用时传递的参数名称
 
         :param key: The key of this KeyValueDO.
         :type key: str
@@ -77,7 +77,7 @@ class KeyValueDO:
     def value(self):
         """Gets the value of this KeyValueDO.
 
-        执行部署任务时传递的参数值
+        部署应用时传递的参数值
 
         :return: The value of this KeyValueDO.
         :rtype: str
@@ -88,7 +88,7 @@ class KeyValueDO:
     def value(self, value):
         """Sets the value of this KeyValueDO.
 
-        执行部署任务时传递的参数值
+        部署应用时传递的参数值
 
         :param value: The value of this KeyValueDO.
         :type value: str

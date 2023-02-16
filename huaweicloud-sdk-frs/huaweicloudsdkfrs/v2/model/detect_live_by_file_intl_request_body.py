@@ -22,16 +22,18 @@ class DetectLiveByFileIntlRequestBody:
     openapi_types = {
         'video_file': 'file',
         'actions': 'str',
-        'action_time': 'str'
+        'action_time': 'str',
+        'nod_threshold': 'float'
     }
 
     attribute_map = {
         'video_file': 'video_file',
         'actions': 'actions',
-        'action_time': 'action_time'
+        'action_time': 'action_time',
+        'nod_threshold': 'nod_threshold'
     }
 
-    def __init__(self, video_file=None, actions=None, action_time=None):
+    def __init__(self, video_file=None, actions=None, action_time=None, nod_threshold=None):
         """DetectLiveByFileIntlRequestBody
 
         The model defined in huaweicloud sdk
@@ -42,6 +44,8 @@ class DetectLiveByFileIntlRequestBody:
         :type actions: str
         :param action_time: 该参数为动作时间数组拼接的字符串，数组的长度和actions的数量一致，每一项代表了对应次序动作的起始时间和结束时间，单位为距视频开始的毫秒数。
         :type action_time: str
+        :param nod_threshold: 该参数为点头动作幅度的判断门限，取值范围：[1,90]，默认为10，单位为度。该值设置越大，则越难判断为点头。
+        :type nod_threshold: float
         """
         
         
@@ -49,12 +53,15 @@ class DetectLiveByFileIntlRequestBody:
         self._video_file = None
         self._actions = None
         self._action_time = None
+        self._nod_threshold = None
         self.discriminator = None
 
         self.video_file = video_file
         self.actions = actions
         if action_time is not None:
             self.action_time = action_time
+        if nod_threshold is not None:
+            self.nod_threshold = nod_threshold
 
     @property
     def video_file(self):
@@ -121,6 +128,28 @@ class DetectLiveByFileIntlRequestBody:
         :type action_time: str
         """
         self._action_time = action_time
+
+    @property
+    def nod_threshold(self):
+        """Gets the nod_threshold of this DetectLiveByFileIntlRequestBody.
+
+        该参数为点头动作幅度的判断门限，取值范围：[1,90]，默认为10，单位为度。该值设置越大，则越难判断为点头。
+
+        :return: The nod_threshold of this DetectLiveByFileIntlRequestBody.
+        :rtype: float
+        """
+        return self._nod_threshold
+
+    @nod_threshold.setter
+    def nod_threshold(self, nod_threshold):
+        """Sets the nod_threshold of this DetectLiveByFileIntlRequestBody.
+
+        该参数为点头动作幅度的判断门限，取值范围：[1,90]，默认为10，单位为度。该值设置越大，则越难判断为点头。
+
+        :param nod_threshold: The nod_threshold of this DetectLiveByFileIntlRequestBody.
+        :type nod_threshold: float
+        """
+        self._nod_threshold = nod_threshold
 
     def to_dict(self):
         """Returns the model properties as a dict"""

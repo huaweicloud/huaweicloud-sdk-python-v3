@@ -18,29 +18,24 @@ class ListProvidersRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
-    sensitive_list.append('x_auth_token')
 
     openapi_types = {
-        'x_auth_token': 'str',
         'offset': 'int',
         'limit': 'int',
         'x_language': 'str'
     }
 
     attribute_map = {
-        'x_auth_token': 'X-Auth-Token',
         'offset': 'offset',
         'limit': 'limit',
         'x_language': 'X-Language'
     }
 
-    def __init__(self, x_auth_token=None, offset=None, limit=None, x_language=None):
+    def __init__(self, offset=None, limit=None, x_language=None):
         """ListProvidersRequest
 
         The model defined in huaweicloud sdk
 
-        :param x_auth_token: 用户Token。 获取Token，请参考《统一身份认证服务API参考》的“获取用户Token”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。
-        :type x_auth_token: str
         :param offset: 分页偏移
         :type offset: int
         :param limit: 最大的返回数量
@@ -51,41 +46,17 @@ class ListProvidersRequest:
         
         
 
-        self._x_auth_token = None
         self._offset = None
         self._limit = None
         self._x_language = None
         self.discriminator = None
 
-        self.x_auth_token = x_auth_token
         if offset is not None:
             self.offset = offset
         if limit is not None:
             self.limit = limit
         if x_language is not None:
             self.x_language = x_language
-
-    @property
-    def x_auth_token(self):
-        """Gets the x_auth_token of this ListProvidersRequest.
-
-        用户Token。 获取Token，请参考《统一身份认证服务API参考》的“获取用户Token”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。
-
-        :return: The x_auth_token of this ListProvidersRequest.
-        :rtype: str
-        """
-        return self._x_auth_token
-
-    @x_auth_token.setter
-    def x_auth_token(self, x_auth_token):
-        """Sets the x_auth_token of this ListProvidersRequest.
-
-        用户Token。 获取Token，请参考《统一身份认证服务API参考》的“获取用户Token”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。
-
-        :param x_auth_token: The x_auth_token of this ListProvidersRequest.
-        :type x_auth_token: str
-        """
-        self._x_auth_token = x_auth_token
 
     @property
     def offset(self):

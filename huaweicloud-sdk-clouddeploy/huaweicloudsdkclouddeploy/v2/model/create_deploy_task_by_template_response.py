@@ -34,7 +34,7 @@ class CreateDeployTaskByTemplateResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param task_name: 部署任务名称
+        :param task_name: 应用名称
         :type task_name: str
         :param task_id: 部署任务id
         :type task_id: str
@@ -55,7 +55,7 @@ class CreateDeployTaskByTemplateResponse(SdkResponse):
     def task_name(self):
         """Gets the task_name of this CreateDeployTaskByTemplateResponse.
 
-        部署任务名称
+        应用名称
 
         :return: The task_name of this CreateDeployTaskByTemplateResponse.
         :rtype: str
@@ -66,7 +66,7 @@ class CreateDeployTaskByTemplateResponse(SdkResponse):
     def task_name(self, task_name):
         """Sets the task_name of this CreateDeployTaskByTemplateResponse.
 
-        部署任务名称
+        应用名称
 
         :param task_name: The task_name of this CreateDeployTaskByTemplateResponse.
         :type task_name: str

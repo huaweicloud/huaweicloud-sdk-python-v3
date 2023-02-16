@@ -9,10 +9,10 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class ScmRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("SCM")
 
-
-    CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://scm.cn-north-4.myhuaweicloud.com")
-
-    AP_SOUTHEAST_1 = Region(id="ap-southeast-1", endpoint="https://scm.ap-southeast-1.myhuaweicloud.com")
+    CN_NORTH_4 = Region("cn-north-4",
+                        "https://scm.cn-north-4.myhuaweicloud.com")
+    AP_SOUTHEAST_1 = Region("ap-southeast-1",
+                        "https://scm.ap-southeast-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,

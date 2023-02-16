@@ -36,9 +36,9 @@ class DynamicConfigInfo:
 
         The model defined in huaweicloud sdk
 
-        :param key: 执行部署任务时传递的参数名称
+        :param key: 部署应用时传递的参数名称
         :type key: str
-        :param value: 执行部署任务时传递的参数值
+        :param value: 部署应用时传递的参数值
         :type value: str
         :param type: 类型，如果填写动态参数，则类型必选
         :type type: str
@@ -62,7 +62,7 @@ class DynamicConfigInfo:
     def key(self):
         """Gets the key of this DynamicConfigInfo.
 
-        执行部署任务时传递的参数名称
+        部署应用时传递的参数名称
 
         :return: The key of this DynamicConfigInfo.
         :rtype: str
@@ -73,7 +73,7 @@ class DynamicConfigInfo:
     def key(self, key):
         """Sets the key of this DynamicConfigInfo.
 
-        执行部署任务时传递的参数名称
+        部署应用时传递的参数名称
 
         :param key: The key of this DynamicConfigInfo.
         :type key: str
@@ -84,7 +84,7 @@ class DynamicConfigInfo:
     def value(self):
         """Gets the value of this DynamicConfigInfo.
 
-        执行部署任务时传递的参数值
+        部署应用时传递的参数值
 
         :return: The value of this DynamicConfigInfo.
         :rtype: str
@@ -95,7 +95,7 @@ class DynamicConfigInfo:
     def value(self, value):
         """Sets the value of this DynamicConfigInfo.
 
-        执行部署任务时传递的参数值
+        部署应用时传递的参数值
 
         :param value: The value of this DynamicConfigInfo.
         :type value: str

@@ -32,7 +32,7 @@ class CheckInstanceAccessRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: CloudIDE实例id
+        :param instance_id: CodeArtsIDEOnline实例id
         :type instance_id: str
         """
         
@@ -47,7 +47,7 @@ class CheckInstanceAccessRequest:
     def instance_id(self):
         """Gets the instance_id of this CheckInstanceAccessRequest.
 
-        CloudIDE实例id
+        CodeArtsIDEOnline实例id
 
         :return: The instance_id of this CheckInstanceAccessRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class CheckInstanceAccessRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this CheckInstanceAccessRequest.
 
-        CloudIDE实例id
+        CodeArtsIDEOnline实例id
 
         :param instance_id: The instance_id of this CheckInstanceAccessRequest.
         :type instance_id: str

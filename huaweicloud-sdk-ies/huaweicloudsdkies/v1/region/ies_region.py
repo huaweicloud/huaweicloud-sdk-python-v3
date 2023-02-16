@@ -9,8 +9,8 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class IesRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("IES")
 
-
-    CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://ies.myhuaweicloud.com")
+    CN_NORTH_4 = Region("cn-north-4",
+                        "https://ies.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,

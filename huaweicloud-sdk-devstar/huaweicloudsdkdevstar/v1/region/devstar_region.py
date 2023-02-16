@@ -9,8 +9,8 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class DevStarRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("DEVSTAR")
 
-
-    CN_NORTH_1 = Region(id="cn-north-1", endpoint="https://devstar.cn-north-1.myhuaweicloud.com")
+    CN_NORTH_1 = Region("cn-north-1",
+                        "https://devstar.cn-north-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-1": CN_NORTH_1,

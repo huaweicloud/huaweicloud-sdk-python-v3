@@ -42,7 +42,7 @@ class ExtensionAuthorization:
         :type extension_version: str
         :param identifier: 插件标识(发布者.插件名)
         :type identifier: str
-        :param instance_id: CloudIDE实例ID
+        :param instance_id: CodeArtsIDEOnline实例ID
         :type instance_id: str
         :param status: 插件状态。 - AGREE 同意 - REJECT 不同意 - UNKNOWN 未知（下次重新询问）
         :type status: str
@@ -110,7 +110,7 @@ class ExtensionAuthorization:
     def instance_id(self):
         """Gets the instance_id of this ExtensionAuthorization.
 
-        CloudIDE实例ID
+        CodeArtsIDEOnline实例ID
 
         :return: The instance_id of this ExtensionAuthorization.
         :rtype: str
@@ -121,7 +121,7 @@ class ExtensionAuthorization:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ExtensionAuthorization.
 
-        CloudIDE实例ID
+        CodeArtsIDEOnline实例ID
 
         :param instance_id: The instance_id of this ExtensionAuthorization.
         :type instance_id: str

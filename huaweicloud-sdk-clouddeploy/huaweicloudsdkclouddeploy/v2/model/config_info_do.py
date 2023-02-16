@@ -52,9 +52,9 @@ class ConfigInfoDO:
         :type description: str
         :param value: 部署参数值
         :type value: str
-        :param task_id: 部署任务id，创建部署任务后由系统自动生成
+        :param task_id: 部署任务id，创建应用后由系统自动生成
         :type task_id: str
-        :param static_status: 表示是否为静态参数，值为1时不支持执行时变更参数，值为0时支持，并且也会把该参数上报流水线
+        :param static_status: 表示是否为静态参数，值为1时不支持部署时变更参数，值为0时支持，并且也会把该参数上报流水线
         :type static_status: int
         :param limits: 当参数类型为enum枚举类型时，必须填写可选值
         :type limits: list[:class:`huaweicloudsdkclouddeploy.v2.ParamTypeLimits`]
@@ -178,7 +178,7 @@ class ConfigInfoDO:
     def task_id(self):
         """Gets the task_id of this ConfigInfoDO.
 
-        部署任务id，创建部署任务后由系统自动生成
+        部署任务id，创建应用后由系统自动生成
 
         :return: The task_id of this ConfigInfoDO.
         :rtype: str
@@ -189,7 +189,7 @@ class ConfigInfoDO:
     def task_id(self, task_id):
         """Sets the task_id of this ConfigInfoDO.
 
-        部署任务id，创建部署任务后由系统自动生成
+        部署任务id，创建应用后由系统自动生成
 
         :param task_id: The task_id of this ConfigInfoDO.
         :type task_id: str
@@ -200,7 +200,7 @@ class ConfigInfoDO:
     def static_status(self):
         """Gets the static_status of this ConfigInfoDO.
 
-        表示是否为静态参数，值为1时不支持执行时变更参数，值为0时支持，并且也会把该参数上报流水线
+        表示是否为静态参数，值为1时不支持部署时变更参数，值为0时支持，并且也会把该参数上报流水线
 
         :return: The static_status of this ConfigInfoDO.
         :rtype: int
@@ -211,7 +211,7 @@ class ConfigInfoDO:
     def static_status(self, static_status):
         """Sets the static_status of this ConfigInfoDO.
 
-        表示是否为静态参数，值为1时不支持执行时变更参数，值为0时支持，并且也会把该参数上报流水线
+        表示是否为静态参数，值为1时不支持部署时变更参数，值为0时支持，并且也会把该参数上报流水线
 
         :param static_status: The static_status of this ConfigInfoDO.
         :type static_status: int

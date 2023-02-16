@@ -9,40 +9,40 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class CesRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("CES")
 
-
-    AF_SOUTH_1 = Region(id="af-south-1", endpoint="https://ces.af-south-1.myhuaweicloud.com")
-
-    CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://ces.cn-north-4.myhuaweicloud.com")
-
-    CN_NORTH_1 = Region(id="cn-north-1", endpoint="https://ces.cn-north-1.myhuaweicloud.com")
-
-    CN_EAST_2 = Region(id="cn-east-2", endpoint="https://ces.cn-east-2.myhuaweicloud.com")
-
-    CN_EAST_3 = Region(id="cn-east-3", endpoint="https://ces.cn-east-3.myhuaweicloud.com")
-
-    CN_SOUTH_1 = Region(id="cn-south-1", endpoint="https://ces.cn-south-1.myhuaweicloud.com")
-
-    CN_SOUTHWEST_2 = Region(id="cn-southwest-2", endpoint="https://ces.cn-southwest-2.myhuaweicloud.com")
-
-    AP_SOUTHEAST_2 = Region(id="ap-southeast-2", endpoint="https://ces.ap-southeast-2.myhuaweicloud.com")
-
-    AP_SOUTHEAST_1 = Region(id="ap-southeast-1", endpoint="https://ces.ap-southeast-1.myhuaweicloud.com")
-
-    AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://ces.ap-southeast-3.myhuaweicloud.com")
-
-    NA_MEXICO_1 = Region(id="na-mexico-1", endpoint="https://ces.na-mexico-1.myhuaweicloud.com")
-
-    SA_BRAZIL_1 = Region(id="sa-brazil-1", endpoint="https://ces.sa-brazil-1.myhuaweicloud.com")
-
-    LA_SOUTH_2 = Region(id="la-south-2", endpoint="https://ces.la-south-2.myhuaweicloud.com")
-
-    LA_NORTH_2 = Region(id="la-north-2", endpoint="https://ces.la-north-2.myhuaweicloud.com")
-
-    CN_NORTH_9 = Region(id="cn-north-9", endpoint="https://ces.cn-north-9.myhuaweicloud.com")
-
-    CN_NORTH_2 = Region(id="cn-north-2", endpoint="https://ces.cn-north-2.myhuaweicloud.com")
-
-    AP_SOUTHEAST_4 = Region(id="ap-southeast-4", endpoint="https://ces.ap-southeast-4.myhuaweicloud.com")
+    AF_SOUTH_1 = Region("af-south-1",
+                        "https://ces.af-south-1.myhuaweicloud.com")
+    CN_NORTH_4 = Region("cn-north-4",
+                        "https://ces.cn-north-4.myhuaweicloud.com")
+    CN_NORTH_1 = Region("cn-north-1",
+                        "https://ces.cn-north-1.myhuaweicloud.com")
+    CN_EAST_2 = Region("cn-east-2",
+                        "https://ces.cn-east-2.myhuaweicloud.com")
+    CN_EAST_3 = Region("cn-east-3",
+                        "https://ces.cn-east-3.myhuaweicloud.com")
+    CN_SOUTH_1 = Region("cn-south-1",
+                        "https://ces.cn-south-1.myhuaweicloud.com")
+    CN_SOUTHWEST_2 = Region("cn-southwest-2",
+                        "https://ces.cn-southwest-2.myhuaweicloud.com")
+    AP_SOUTHEAST_2 = Region("ap-southeast-2",
+                        "https://ces.ap-southeast-2.myhuaweicloud.com")
+    AP_SOUTHEAST_1 = Region("ap-southeast-1",
+                        "https://ces.ap-southeast-1.myhuaweicloud.com")
+    AP_SOUTHEAST_3 = Region("ap-southeast-3",
+                        "https://ces.ap-southeast-3.myhuaweicloud.com")
+    NA_MEXICO_1 = Region("na-mexico-1",
+                        "https://ces.na-mexico-1.myhuaweicloud.com")
+    SA_BRAZIL_1 = Region("sa-brazil-1",
+                        "https://ces.sa-brazil-1.myhuaweicloud.com")
+    LA_SOUTH_2 = Region("la-south-2",
+                        "https://ces.la-south-2.myhuaweicloud.com")
+    LA_NORTH_2 = Region("la-north-2",
+                        "https://ces.la-north-2.myhuaweicloud.com")
+    CN_NORTH_9 = Region("cn-north-9",
+                        "https://ces.cn-north-9.myhuaweicloud.com")
+    CN_NORTH_2 = Region("cn-north-2",
+                        "https://ces.cn-north-2.myhuaweicloud.com")
+    AP_SOUTHEAST_4 = Region("ap-southeast-4",
+                        "https://ces.ap-southeast-4.myhuaweicloud.com")
 
     static_fields = {
         "af-south-1": AF_SOUTH_1,

@@ -9,10 +9,10 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class GaRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("GA")
 
-
-    CN_EAST_3 = Region(id="cn-east-3", endpoint="https://ga.myhuaweicloud.com")
-
-    CN_SOUTHWEST_2 = Region(id="cn-southwest-2", endpoint="https://ga.myhuaweicloud.com")
+    CN_EAST_3 = Region("cn-east-3",
+                        "https://ga.myhuaweicloud.com")
+    CN_SOUTHWEST_2 = Region("cn-southwest-2",
+                        "https://ga.myhuaweicloud.com")
 
     static_fields = {
         "cn-east-3": CN_EAST_3,

@@ -64,7 +64,7 @@ class ListInstancesRequest:
         :type limit: int
         :param status: 实例状态。详细状态说明见[缓存实例状态说明](https://support.huaweicloud.com/api-dcs/dcs-api-0312047.html)
         :type status: str
-        :param name_equal: 是否按照实例名称进行精确匹配查询。  默认为“false”，表示模糊匹配实例名称查询。若参数值为“true”表示按照实例名称进行精确匹配查询。
+        :param name_equal: 是否按照实例名称进行精确匹配查询。  和name字段对应，name字段为模糊匹配的用例名，name_equal是精确匹配的用例名。
         :type name_equal: str
         :param tags: 根据实例标签键值对进行查询。{key}表示标签键，{value}表示标签值。  如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。 
         :type tags: str
@@ -265,7 +265,7 @@ class ListInstancesRequest:
     def name_equal(self):
         """Gets the name_equal of this ListInstancesRequest.
 
-        是否按照实例名称进行精确匹配查询。  默认为“false”，表示模糊匹配实例名称查询。若参数值为“true”表示按照实例名称进行精确匹配查询。
+        是否按照实例名称进行精确匹配查询。  和name字段对应，name字段为模糊匹配的用例名，name_equal是精确匹配的用例名。
 
         :return: The name_equal of this ListInstancesRequest.
         :rtype: str
@@ -276,7 +276,7 @@ class ListInstancesRequest:
     def name_equal(self, name_equal):
         """Sets the name_equal of this ListInstancesRequest.
 
-        是否按照实例名称进行精确匹配查询。  默认为“false”，表示模糊匹配实例名称查询。若参数值为“true”表示按照实例名称进行精确匹配查询。
+        是否按照实例名称进行精确匹配查询。  和name字段对应，name字段为模糊匹配的用例名，name_equal是精确匹配的用例名。
 
         :param name_equal: The name_equal of this ListInstancesRequest.
         :type name_equal: str

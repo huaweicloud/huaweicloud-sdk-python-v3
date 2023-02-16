@@ -36,9 +36,9 @@ class TasksSuccessRateQuery:
 
         The model defined in huaweicloud sdk
 
-        :param start_date: 任务执行开始时间范围的左边界（包含），格式yyyy-MM-dd
+        :param start_date: 部署应用开始时间范围的左边界（包含），格式yyyy-MM-dd
         :type start_date: str
-        :param end_date: 任务执行开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
+        :param end_date: 部署应用开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
         :type end_date: str
         :param task_ids: 任务id列表
         :type task_ids: list[str]
@@ -59,7 +59,7 @@ class TasksSuccessRateQuery:
     def start_date(self):
         """Gets the start_date of this TasksSuccessRateQuery.
 
-        任务执行开始时间范围的左边界（包含），格式yyyy-MM-dd
+        部署应用开始时间范围的左边界（包含），格式yyyy-MM-dd
 
         :return: The start_date of this TasksSuccessRateQuery.
         :rtype: str
@@ -70,7 +70,7 @@ class TasksSuccessRateQuery:
     def start_date(self, start_date):
         """Sets the start_date of this TasksSuccessRateQuery.
 
-        任务执行开始时间范围的左边界（包含），格式yyyy-MM-dd
+        部署应用开始时间范围的左边界（包含），格式yyyy-MM-dd
 
         :param start_date: The start_date of this TasksSuccessRateQuery.
         :type start_date: str
@@ -81,7 +81,7 @@ class TasksSuccessRateQuery:
     def end_date(self):
         """Gets the end_date of this TasksSuccessRateQuery.
 
-        任务执行开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
+        部署应用开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
 
         :return: The end_date of this TasksSuccessRateQuery.
         :rtype: str
@@ -92,7 +92,7 @@ class TasksSuccessRateQuery:
     def end_date(self, end_date):
         """Sets the end_date of this TasksSuccessRateQuery.
 
-        任务执行开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
+        部署应用开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
 
         :param end_date: The end_date of this TasksSuccessRateQuery.
         :type end_date: str

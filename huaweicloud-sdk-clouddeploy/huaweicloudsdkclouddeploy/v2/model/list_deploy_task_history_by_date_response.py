@@ -34,9 +34,9 @@ class ListDeployTaskHistoryByDateResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 部署任务历史执行记录列表
+        :param result: 应用历史部署记录列表
         :type result: list[:class:`huaweicloudsdkclouddeploy.v2.ExecuteRecordV2Body`]
-        :param total_num: 开始时间和结束时间内任务历史执行记录总数
+        :param total_num: 开始时间和结束时间内应用历史部署记录总数
         :type total_num: int
         """
         
@@ -55,7 +55,7 @@ class ListDeployTaskHistoryByDateResponse(SdkResponse):
     def result(self):
         """Gets the result of this ListDeployTaskHistoryByDateResponse.
 
-        部署任务历史执行记录列表
+        应用历史部署记录列表
 
         :return: The result of this ListDeployTaskHistoryByDateResponse.
         :rtype: list[:class:`huaweicloudsdkclouddeploy.v2.ExecuteRecordV2Body`]
@@ -66,7 +66,7 @@ class ListDeployTaskHistoryByDateResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this ListDeployTaskHistoryByDateResponse.
 
-        部署任务历史执行记录列表
+        应用历史部署记录列表
 
         :param result: The result of this ListDeployTaskHistoryByDateResponse.
         :type result: list[:class:`huaweicloudsdkclouddeploy.v2.ExecuteRecordV2Body`]
@@ -77,7 +77,7 @@ class ListDeployTaskHistoryByDateResponse(SdkResponse):
     def total_num(self):
         """Gets the total_num of this ListDeployTaskHistoryByDateResponse.
 
-        开始时间和结束时间内任务历史执行记录总数
+        开始时间和结束时间内应用历史部署记录总数
 
         :return: The total_num of this ListDeployTaskHistoryByDateResponse.
         :rtype: int
@@ -88,7 +88,7 @@ class ListDeployTaskHistoryByDateResponse(SdkResponse):
     def total_num(self, total_num):
         """Sets the total_num of this ListDeployTaskHistoryByDateResponse.
 
-        开始时间和结束时间内任务历史执行记录总数
+        开始时间和结束时间内应用历史部署记录总数
 
         :param total_num: The total_num of this ListDeployTaskHistoryByDateResponse.
         :type total_num: int

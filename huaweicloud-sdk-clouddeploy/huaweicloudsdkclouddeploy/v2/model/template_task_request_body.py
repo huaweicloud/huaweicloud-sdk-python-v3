@@ -48,7 +48,7 @@ class TemplateTaskRequestBody:
         :type project_name: str
         :param template_id: 部署模板id
         :type template_id: str
-        :param task_name: 部署任务名称
+        :param task_name: 应用名称
         :type task_name: str
         :param slave_cluster_id: 自定义slave资源池id
         :type slave_cluster_id: str
@@ -145,7 +145,7 @@ class TemplateTaskRequestBody:
     def task_name(self):
         """Gets the task_name of this TemplateTaskRequestBody.
 
-        部署任务名称
+        应用名称
 
         :return: The task_name of this TemplateTaskRequestBody.
         :rtype: str
@@ -156,7 +156,7 @@ class TemplateTaskRequestBody:
     def task_name(self, task_name):
         """Sets the task_name of this TemplateTaskRequestBody.
 
-        部署任务名称
+        应用名称
 
         :param task_name: The task_name of this TemplateTaskRequestBody.
         :type task_name: str

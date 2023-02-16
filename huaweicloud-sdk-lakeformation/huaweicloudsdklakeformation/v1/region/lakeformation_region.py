@@ -9,12 +9,12 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class LakeFormationRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("LAKEFORMATION")
 
-
-    CN_NORTH_9 = Region(id="cn-north-9", endpoint="https://lakeformation.cn-north-9.myhuaweicloud.com")
-
-    CN_NORTH_2 = Region(id="cn-north-2", endpoint="https://lakeformation.cn-north-2.myhuaweicloud.com")
-
-    CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://lakeformation.cn-north-4.myhuaweicloud.com")
+    CN_NORTH_9 = Region("cn-north-9",
+                        "https://lakeformation.cn-north-9.myhuaweicloud.com")
+    CN_NORTH_2 = Region("cn-north-2",
+                        "https://lakeformation.cn-north-2.myhuaweicloud.com")
+    CN_NORTH_4 = Region("cn-north-4",
+                        "https://lakeformation.cn-north-4.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-9": CN_NORTH_9,
