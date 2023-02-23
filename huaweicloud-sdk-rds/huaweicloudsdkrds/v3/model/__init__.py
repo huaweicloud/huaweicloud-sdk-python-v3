@@ -97,6 +97,7 @@ from huaweicloudsdkrds.v3.model.database_for_creation import DatabaseForCreation
 from huaweicloudsdkrds.v3.model.database_with_privilege import DatabaseWithPrivilege
 from huaweicloudsdkrds.v3.model.database_with_privilege_object import DatabaseWithPrivilegeObject
 from huaweicloudsdkrds.v3.model.datastore import Datastore
+from huaweicloudsdkrds.v3.model.db_user_privilege_request import DbUserPrivilegeRequest
 from huaweicloudsdkrds.v3.model.db_user_pwd_request import DbUserPwdRequest
 from huaweicloudsdkrds.v3.model.delete_configuration_request import DeleteConfigurationRequest
 from huaweicloudsdkrds.v3.model.delete_configuration_response import DeleteConfigurationResponse
@@ -422,6 +423,8 @@ from huaweicloudsdkrds.v3.model.update_database_response import UpdateDatabaseRe
 from huaweicloudsdkrds.v3.model.update_db_port_request import UpdateDbPortRequest
 from huaweicloudsdkrds.v3.model.update_db_user_comment_request import UpdateDbUserCommentRequest
 from huaweicloudsdkrds.v3.model.update_db_user_comment_response import UpdateDbUserCommentResponse
+from huaweicloudsdkrds.v3.model.update_db_user_privilege_request import UpdateDbUserPrivilegeRequest
+from huaweicloudsdkrds.v3.model.update_db_user_privilege_response import UpdateDbUserPrivilegeResponse
 from huaweicloudsdkrds.v3.model.update_db_user_req import UpdateDbUserReq
 from huaweicloudsdkrds.v3.model.update_dns_name_request import UpdateDnsNameRequest
 from huaweicloudsdkrds.v3.model.update_dns_name_response import UpdateDnsNameResponse

@@ -47,8 +47,7 @@ class BindRulesTags:
         self.discriminator = None
 
         self.key = key
-        if value is not None:
-            self.value = value
+        self.value = value
 
     @property
     def key(self):

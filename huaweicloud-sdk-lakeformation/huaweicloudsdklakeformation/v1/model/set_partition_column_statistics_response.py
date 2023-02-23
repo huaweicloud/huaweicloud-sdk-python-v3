@@ -20,47 +20,20 @@ class SetPartitionColumnStatisticsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[PartitionColumnStatistics]'
     }
 
     attribute_map = {
-        'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self):
         """SetPartitionColumnStatisticsResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: list[:class:`huaweicloudsdklakeformation.v1.PartitionColumnStatistics`]
         """
         
         super(SetPartitionColumnStatisticsResponse, self).__init__()
-
-        self._body = None
         self.discriminator = None
-
-        if body is not None:
-            self.body = body
-
-    @property
-    def body(self):
-        """Gets the body of this SetPartitionColumnStatisticsResponse.
-
-        :return: The body of this SetPartitionColumnStatisticsResponse.
-        :rtype: list[:class:`huaweicloudsdklakeformation.v1.PartitionColumnStatistics`]
-        """
-        return self._body
-
-    @body.setter
-    def body(self, body):
-        """Sets the body of this SetPartitionColumnStatisticsResponse.
-
-        :param body: The body of this SetPartitionColumnStatisticsResponse.
-        :type body: list[:class:`huaweicloudsdklakeformation.v1.PartitionColumnStatistics`]
-        """
-        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -703,7 +703,7 @@ class RdsAsyncClient(Client):
         return self.create_instance_with_http_info(request)
 
     def create_instance_with_http_info(self, request):
-        all_params = ['create_instance_request_body', 'x_language']
+        all_params = ['create_instance_request_body', 'x_language', 'x_client_token']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -720,6 +720,8 @@ class RdsAsyncClient(Client):
         header_params = {}
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
+        if 'x_client_token' in local_var_params:
+            header_params['X-Client-Token'] = local_var_params['x_client_token']
 
         form_params = {}
 
@@ -8333,6 +8335,69 @@ class RdsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='StopDatabaseProxyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_db_user_privilege_async(self, request):
+        """update_db_user_privilege
+
+        数据库帐号授权。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDbUserPrivilege
+        :type request: :class:`huaweicloudsdkrds.v3.UpdateDbUserPrivilegeRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdateDbUserPrivilegeResponse`
+        """
+        return self.update_db_user_privilege_with_http_info(request)
+
+    def update_db_user_privilege_with_http_info(self, request):
+        all_params = ['instance_id', 'db_user_privilege_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/db-user-privilege',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateDbUserPrivilegeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

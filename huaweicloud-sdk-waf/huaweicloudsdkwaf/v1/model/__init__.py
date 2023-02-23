@@ -100,6 +100,7 @@ from huaweicloudsdkwaf.v1.model.flag import Flag
 from huaweicloudsdkwaf.v1.model.ge_o_ip_item import GeOIpItem
 from huaweicloudsdkwaf.v1.model.geo_classification_item import GeoClassificationItem
 from huaweicloudsdkwaf.v1.model.geo_item import GeoItem
+from huaweicloudsdkwaf.v1.model.host_flag import HostFlag
 from huaweicloudsdkwaf.v1.model.id_hostname_entry import IdHostnameEntry
 from huaweicloudsdkwaf.v1.model.ignore_rule_body import IgnoreRuleBody
 from huaweicloudsdkwaf.v1.model.instance_info import InstanceInfo

@@ -21,15 +21,17 @@ class CreateRequestResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'status': 'RequestStatus'
+        'status': 'RequestStatus',
+        'dispatched_task_number': 'int'
     }
 
     attribute_map = {
         'request_id': 'request_id',
-        'status': 'status'
+        'status': 'status',
+        'dispatched_task_number': 'dispatched_task_number'
     }
 
-    def __init__(self, request_id=None, status=None):
+    def __init__(self, request_id=None, status=None, dispatched_task_number=None):
         """CreateRequestResponse
 
         The model defined in huaweicloud sdk
@@ -38,18 +40,23 @@ class CreateRequestResponse(SdkResponse):
         :type request_id: str
         :param status: 
         :type status: :class:`huaweicloudsdkcloudide.v2.RequestStatus`
+        :param dispatched_task_number: the number of tasks dispatched successfully
+        :type dispatched_task_number: int
         """
         
         super(CreateRequestResponse, self).__init__()
 
         self._request_id = None
         self._status = None
+        self._dispatched_task_number = None
         self.discriminator = None
 
         if request_id is not None:
             self.request_id = request_id
         if status is not None:
             self.status = status
+        if dispatched_task_number is not None:
+            self.dispatched_task_number = dispatched_task_number
 
     @property
     def request_id(self):
@@ -90,6 +97,28 @@ class CreateRequestResponse(SdkResponse):
         :type status: :class:`huaweicloudsdkcloudide.v2.RequestStatus`
         """
         self._status = status
+
+    @property
+    def dispatched_task_number(self):
+        """Gets the dispatched_task_number of this CreateRequestResponse.
+
+        the number of tasks dispatched successfully
+
+        :return: The dispatched_task_number of this CreateRequestResponse.
+        :rtype: int
+        """
+        return self._dispatched_task_number
+
+    @dispatched_task_number.setter
+    def dispatched_task_number(self, dispatched_task_number):
+        """Sets the dispatched_task_number of this CreateRequestResponse.
+
+        the number of tasks dispatched successfully
+
+        :param dispatched_task_number: The dispatched_task_number of this CreateRequestResponse.
+        :type dispatched_task_number: int
+        """
+        self._dispatched_task_number = dispatched_task_number
 
     def to_dict(self):
         """Returns the model properties as a dict"""

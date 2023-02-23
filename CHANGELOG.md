@@ -1,3 +1,147 @@
+# 3.1.27 2023-02-23
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+  - Support the interface `ListCustomerAccountChangeRecords`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CBR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The response parameter `value` changed to required of the interface `ListVault`
+  - Changes of the interface `CreateVault`:
+    - The request parameter `value` changed to required
+    - The response parameter `value` changed to required
+  - The response parameter `value` changed to required of the interface `ShowVault`
+  - Changes of the interface `UpdateVault`:
+    - The request parameter `value` changed to required
+    - The response parameter `value` changed to required
+  - The response parameter `value` changed to required of the interface `ListProtectable`
+  - The response parameter `value` changed to required of the interface `ShowProtectable`
+  - The response parameter `value` changed to required of the interface `ShowVaultResourceInstances`
+
+### HuaweiCloud SDK CloudIDE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateRequest`:
+    - Add the request parameters `request_type`, `above_text`, `following_text`
+    - Add the response parameter `dispatched_task_number`
+    - The request parameter `signature` changed to not required
+  - Add the response parameter `request_type` to the interface `ShowResult`
+
+### HuaweiCloud SDK CPH
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `phone_model_name` to the interface `ChangeCloudPhoneServerModel`
+
+### HuaweiCloud SDK CSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `mainObject`, `stopObject`, `synonymObject` changed to not required of the interface `CreateLoadIkThesaurus`
+
+### HuaweiCloud SDK DDS
+
+- _Features_
+  - Support the interface `ShrinkInstanceNodes`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DWS
+
+- _Features_
+  - Support the interface `CreateClusterV2`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `active` to the interface `ListRoutingRules`
+  - Add the request parameter `mysql_forwarding` to the interface `CreateRuleAction`
+  - Add the response parameter `mysql_forwarding` to the interface `ListRuleActions`
+  - Changes of the interface `UpdateRuleAction`:
+    - Add the request parameter `mysql_forwarding`
+    - Add the response parameter `mysql_forwarding`
+  - Add the response parameter `mysql_forwarding` to the interface `ShowRuleAction`
+
+### HuaweiCloud SDK LakeFormation
+
+- _Features_
+  - Support the interfaces `BatchUpdateLakeFormationInstanceTags`, `CreateLakeFormationInstance`, `ListPolicy`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the response parameters `key`, `value` from the interface `ShowLakeFormationInstance`
+  - Remove the response parameters `column_statistics_desc`, `column_statistics_objects` from the interface `SetPartitionColumnStatistics`
+
+### HuaweiCloud SDK MRS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ShowJobExeListNew`:
+    - Add the enum values `FAILED`, `KILLED`, `NEW`, `NEW_SAVING`, `SUBMITTED`, `ACCEPTED`, `RUNNING`, `FINISHED`, Remove the enum values `FAILED：失败`, `KILLED：已终止`, `NEW：已创建`, `NEW_SAVING：已创建保存中`, `SUBMITTED：已提交`, `ACCEPTED：已接受`, `RUNNING：运行中`, `FINISHED：已完成` from the request parameter `job_state`
+    - Add the enum values `FAILED`, `KILLED`, `UNDEFINED`, `SUCCEEDED`, Remove the enum values `FAILED：执行失败的作业。`, `KILLED：执行中被手动终止的作业。`, `UNDEFINED：正在执行的作业。`, `SUCCEEDED：执行成功的作业。` from the request parameter `job_result`
+  - Add the enum values `path_suffix`, `length`, `modification_time`, Remove the enum values `path_suffix：文件或目录名称`, `length：文件大小`, `modification_time：修改时间` from the request parameter `sort_key` to the interface `ShowHdfsFileList`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interface `UpdateDbUserPrivilege`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `X-Client-Token` to the interface `CreateInstance`
+
+### HuaweiCloud SDK SCM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `certificate_chain` changed to not required of the interface `ImportCertificate`
+  - Add the response parameter `entire_certificate` to the interface `ExportCertificate`
+
+### HuaweiCloud SDK WAF
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `flag` to the interface `UpdatePremiumHost`
+
 # 3.1.26 2023-02-16
 
 ### HuaweiCloud SDK AOM

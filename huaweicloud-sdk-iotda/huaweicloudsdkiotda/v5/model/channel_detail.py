@@ -26,6 +26,7 @@ class ChannelDetail:
         'amqp_forwarding': 'AmqpForwarding',
         'dms_kafka_forwarding': 'DmsKafkaForwarding',
         'roma_forwarding': 'RomaForwarding',
+        'mysql_forwarding': 'MysqlForwarding',
         'influxdb_forwarding': 'InfluxDBForwarding',
         'functiongraph_forwarding': 'FunctionGraphForwarding',
         'mrs_kafka_forwarding': 'MrsKafkaForwarding',
@@ -39,13 +40,14 @@ class ChannelDetail:
         'amqp_forwarding': 'amqp_forwarding',
         'dms_kafka_forwarding': 'dms_kafka_forwarding',
         'roma_forwarding': 'roma_forwarding',
+        'mysql_forwarding': 'mysql_forwarding',
         'influxdb_forwarding': 'influxdb_forwarding',
         'functiongraph_forwarding': 'functiongraph_forwarding',
         'mrs_kafka_forwarding': 'mrs_kafka_forwarding',
         'dms_rocketmq_forwarding': 'dms_rocketmq_forwarding'
     }
 
-    def __init__(self, http_forwarding=None, dis_forwarding=None, obs_forwarding=None, amqp_forwarding=None, dms_kafka_forwarding=None, roma_forwarding=None, influxdb_forwarding=None, functiongraph_forwarding=None, mrs_kafka_forwarding=None, dms_rocketmq_forwarding=None):
+    def __init__(self, http_forwarding=None, dis_forwarding=None, obs_forwarding=None, amqp_forwarding=None, dms_kafka_forwarding=None, roma_forwarding=None, mysql_forwarding=None, influxdb_forwarding=None, functiongraph_forwarding=None, mrs_kafka_forwarding=None, dms_rocketmq_forwarding=None):
         """ChannelDetail
 
         The model defined in huaweicloud sdk
@@ -62,6 +64,8 @@ class ChannelDetail:
         :type dms_kafka_forwarding: :class:`huaweicloudsdkiotda.v5.DmsKafkaForwarding`
         :param roma_forwarding: 
         :type roma_forwarding: :class:`huaweicloudsdkiotda.v5.RomaForwarding`
+        :param mysql_forwarding: 
+        :type mysql_forwarding: :class:`huaweicloudsdkiotda.v5.MysqlForwarding`
         :param influxdb_forwarding: 
         :type influxdb_forwarding: :class:`huaweicloudsdkiotda.v5.InfluxDBForwarding`
         :param functiongraph_forwarding: 
@@ -80,6 +84,7 @@ class ChannelDetail:
         self._amqp_forwarding = None
         self._dms_kafka_forwarding = None
         self._roma_forwarding = None
+        self._mysql_forwarding = None
         self._influxdb_forwarding = None
         self._functiongraph_forwarding = None
         self._mrs_kafka_forwarding = None
@@ -98,6 +103,8 @@ class ChannelDetail:
             self.dms_kafka_forwarding = dms_kafka_forwarding
         if roma_forwarding is not None:
             self.roma_forwarding = roma_forwarding
+        if mysql_forwarding is not None:
+            self.mysql_forwarding = mysql_forwarding
         if influxdb_forwarding is not None:
             self.influxdb_forwarding = influxdb_forwarding
         if functiongraph_forwarding is not None:
@@ -214,6 +221,24 @@ class ChannelDetail:
         :type roma_forwarding: :class:`huaweicloudsdkiotda.v5.RomaForwarding`
         """
         self._roma_forwarding = roma_forwarding
+
+    @property
+    def mysql_forwarding(self):
+        """Gets the mysql_forwarding of this ChannelDetail.
+
+        :return: The mysql_forwarding of this ChannelDetail.
+        :rtype: :class:`huaweicloudsdkiotda.v5.MysqlForwarding`
+        """
+        return self._mysql_forwarding
+
+    @mysql_forwarding.setter
+    def mysql_forwarding(self, mysql_forwarding):
+        """Sets the mysql_forwarding of this ChannelDetail.
+
+        :param mysql_forwarding: The mysql_forwarding of this ChannelDetail.
+        :type mysql_forwarding: :class:`huaweicloudsdkiotda.v5.MysqlForwarding`
+        """
+        self._mysql_forwarding = mysql_forwarding
 
     @property
     def influxdb_forwarding(self):

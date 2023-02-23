@@ -368,6 +368,72 @@ class LakeFormationClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_policy(self, request):
+        """获取同步权限策略
+
+        分页获取同步权限策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPolicy
+        :type request: :class:`huaweicloudsdklakeformation.v1.ListPolicyRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.ListPolicyResponse`
+        """
+        return self.list_policy_with_http_info(request)
+
+    def list_policy_with_http_info(self, request):
+        all_params = ['instance_id', 'limit', 'marker', 'reverse_page']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'reverse_page' in local_var_params:
+            query_params.append(('reverse_page', local_var_params['reverse_page']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/policies',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_sync_policy(self, request):
         """获取同步权限策略
 
@@ -1781,6 +1847,66 @@ class LakeFormationClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CountMetaObjResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_lake_formation_instance(self, request):
+        """创建实例
+
+        创建一个LakeFormation实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateLakeFormationInstance
+        :type request: :class:`huaweicloudsdklakeformation.v1.CreateLakeFormationInstanceRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.CreateLakeFormationInstanceResponse`
+        """
+        return self.create_lake_formation_instance_with_http_info(request)
+
+    def create_lake_formation_instance_with_http_info(self, request):
+        all_params = ['create_instance_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateLakeFormationInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3370,6 +3496,68 @@ class LakeFormationClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListSpecsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_update_lake_formation_instance_tags(self, request):
+        """批量更新标签
+
+        为指定实例批量更新标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchUpdateLakeFormationInstanceTags
+        :type request: :class:`huaweicloudsdklakeformation.v1.BatchUpdateLakeFormationInstanceTagsRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.BatchUpdateLakeFormationInstanceTagsResponse`
+        """
+        return self.batch_update_lake_formation_instance_tags_with_http_info(request)
+
+    def batch_update_lake_formation_instance_tags_with_http_info(self, request):
+        all_params = ['instance_id', 'batch_update_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/tags',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchUpdateLakeFormationInstanceTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -148,7 +148,7 @@ class ListFunctionResult:
         :type description: str
         :param last_modified: 函数最后一次更新时间。
         :type last_modified: datetime
-        :param func_vpc_id: 对应tbl_func_vpc表的id字段。
+        :param func_vpc_id: 用户的vpcid。
         :type func_vpc_id: str
         :param strategy_config: 
         :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
@@ -797,7 +797,7 @@ class ListFunctionResult:
     def func_vpc_id(self):
         """Gets the func_vpc_id of this ListFunctionResult.
 
-        对应tbl_func_vpc表的id字段。
+        用户的vpcid。
 
         :return: The func_vpc_id of this ListFunctionResult.
         :rtype: str
@@ -808,7 +808,7 @@ class ListFunctionResult:
     def func_vpc_id(self, func_vpc_id):
         """Sets the func_vpc_id of this ListFunctionResult.
 
-        对应tbl_func_vpc表的id字段。
+        用户的vpcid。
 
         :param func_vpc_id: The func_vpc_id of this ListFunctionResult.
         :type func_vpc_id: str

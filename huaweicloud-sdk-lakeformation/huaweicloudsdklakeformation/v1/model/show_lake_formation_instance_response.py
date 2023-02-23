@@ -29,7 +29,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
         'update_time': 'datetime',
         'status': 'str',
         'in_recycle_bin': 'bool',
-        'tags': 'list[TMSResourceTag]',
+        'tags': 'list[ResourceTag]',
         'specs': 'list[CreateSpec]',
         'x_request_id': 'str'
     }
@@ -73,7 +73,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
         :param in_recycle_bin: 是否在回收站
         :type in_recycle_bin: bool
         :param tags: 标签列表
-        :type tags: list[:class:`huaweicloudsdklakeformation.v1.TMSResourceTag`]
+        :type tags: list[:class:`huaweicloudsdklakeformation.v1.ResourceTag`]
         :param specs: 规格信息
         :type specs: list[:class:`huaweicloudsdklakeformation.v1.CreateSpec`]
         :param x_request_id: 
@@ -326,7 +326,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
         标签列表
 
         :return: The tags of this ShowLakeFormationInstanceResponse.
-        :rtype: list[:class:`huaweicloudsdklakeformation.v1.TMSResourceTag`]
+        :rtype: list[:class:`huaweicloudsdklakeformation.v1.ResourceTag`]
         """
         return self._tags
 
@@ -337,7 +337,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
         标签列表
 
         :param tags: The tags of this ShowLakeFormationInstanceResponse.
-        :type tags: list[:class:`huaweicloudsdklakeformation.v1.TMSResourceTag`]
+        :type tags: list[:class:`huaweicloudsdklakeformation.v1.ResourceTag`]
         """
         self._tags = tags
 

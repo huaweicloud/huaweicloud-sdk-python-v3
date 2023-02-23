@@ -94,9 +94,9 @@ class ListSubCustomerBillDetailRequest:
         :type limit: int
         :param indirect_partner_id: 云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。  说明： 华为云总经销商可以查询名下所有子客户消费（包括云经销商子客户）。如果是普通经销商，那么此处可以为空。如果华为云总经销商需要查询客户在云经销商关联期间的消费，需要携带该字段；除此之外，此参数不做处理。否则只能查询该客户在与自己关联期间的消费。
         :type indirect_partner_id: str
-        :param bill_date_begin: 查询的资源消费记录的开始日期，格式为YYYY-MM-DD。此参数不携带或携带值为空或携带值为空串时，不作为筛选条件。 说明： 必须和cycle（即资源的消费账期）在同一个月。
+        :param bill_date_begin: 查询的资源消费记录的开始日期，格式为YYYY-MM-DD。此参数不携带或携带值为空时，不作为筛选条件；不支持携带值为空串。 说明： 必须和cycle（即资源的消费账期）在同一个月。
         :type bill_date_begin: str
-        :param bill_date_end: 查询的资源消费记录的结束日期，格式为YYYY-MM-DD。此参数不携带或携带值为空或携带值为空串时，不作为筛选条件。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
+        :param bill_date_end: 查询的资源消费记录的结束日期，格式为YYYY-MM-DD。此参数不携带或携带值为空时，不作为筛选条件；不支持携带值为空串。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
         :type bill_date_end: str
         """
         
@@ -488,7 +488,7 @@ class ListSubCustomerBillDetailRequest:
     def bill_date_begin(self):
         """Gets the bill_date_begin of this ListSubCustomerBillDetailRequest.
 
-        查询的资源消费记录的开始日期，格式为YYYY-MM-DD。此参数不携带或携带值为空或携带值为空串时，不作为筛选条件。 说明： 必须和cycle（即资源的消费账期）在同一个月。
+        查询的资源消费记录的开始日期，格式为YYYY-MM-DD。此参数不携带或携带值为空时，不作为筛选条件；不支持携带值为空串。 说明： 必须和cycle（即资源的消费账期）在同一个月。
 
         :return: The bill_date_begin of this ListSubCustomerBillDetailRequest.
         :rtype: str
@@ -499,7 +499,7 @@ class ListSubCustomerBillDetailRequest:
     def bill_date_begin(self, bill_date_begin):
         """Sets the bill_date_begin of this ListSubCustomerBillDetailRequest.
 
-        查询的资源消费记录的开始日期，格式为YYYY-MM-DD。此参数不携带或携带值为空或携带值为空串时，不作为筛选条件。 说明： 必须和cycle（即资源的消费账期）在同一个月。
+        查询的资源消费记录的开始日期，格式为YYYY-MM-DD。此参数不携带或携带值为空时，不作为筛选条件；不支持携带值为空串。 说明： 必须和cycle（即资源的消费账期）在同一个月。
 
         :param bill_date_begin: The bill_date_begin of this ListSubCustomerBillDetailRequest.
         :type bill_date_begin: str
@@ -510,7 +510,7 @@ class ListSubCustomerBillDetailRequest:
     def bill_date_end(self):
         """Gets the bill_date_end of this ListSubCustomerBillDetailRequest.
 
-        查询的资源消费记录的结束日期，格式为YYYY-MM-DD。此参数不携带或携带值为空或携带值为空串时，不作为筛选条件。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
+        查询的资源消费记录的结束日期，格式为YYYY-MM-DD。此参数不携带或携带值为空时，不作为筛选条件；不支持携带值为空串。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
 
         :return: The bill_date_end of this ListSubCustomerBillDetailRequest.
         :rtype: str
@@ -521,7 +521,7 @@ class ListSubCustomerBillDetailRequest:
     def bill_date_end(self, bill_date_end):
         """Sets the bill_date_end of this ListSubCustomerBillDetailRequest.
 
-        查询的资源消费记录的结束日期，格式为YYYY-MM-DD。此参数不携带或携带值为空或携带值为空串时，不作为筛选条件。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
+        查询的资源消费记录的结束日期，格式为YYYY-MM-DD。此参数不携带或携带值为空时，不作为筛选条件；不支持携带值为空串。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
 
         :param bill_date_end: The bill_date_end of this ListSubCustomerBillDetailRequest.
         :type bill_date_end: str

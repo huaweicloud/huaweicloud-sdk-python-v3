@@ -36,7 +36,7 @@ class CouponSimpleInfoOrderPayV3:
 
         :param id: 优惠券ID。
         :type id: str
-        :param type: 折扣类型：300:折扣券 301:促销代金券 302:促销现金券 303:促销储值卡
+        :param type: 优惠券类型：300:折扣券 301:促销代金券 302:促销现金券 303:促销储值卡
         :type type: int
         """
         
@@ -75,7 +75,7 @@ class CouponSimpleInfoOrderPayV3:
     def type(self):
         """Gets the type of this CouponSimpleInfoOrderPayV3.
 
-        折扣类型：300:折扣券 301:促销代金券 302:促销现金券 303:促销储值卡
+        优惠券类型：300:折扣券 301:促销代金券 302:促销现金券 303:促销储值卡
 
         :return: The type of this CouponSimpleInfoOrderPayV3.
         :rtype: int
@@ -86,7 +86,7 @@ class CouponSimpleInfoOrderPayV3:
     def type(self, type):
         """Sets the type of this CouponSimpleInfoOrderPayV3.
 
-        折扣类型：300:折扣券 301:促销代金券 302:促销现金券 303:促销储值卡
+        优惠券类型：300:折扣券 301:促销代金券 302:促销现金券 303:促销储值卡
 
         :param type: The type of this CouponSimpleInfoOrderPayV3.
         :type type: int

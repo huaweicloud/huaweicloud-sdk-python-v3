@@ -40,7 +40,7 @@ class BatchShowQueueRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID。
         :type instance_id: str
         :param queue_name: **参数说明**：amqp队列名称，支持模糊查询，为空查询所有的队列（当前规格单个用户最大100个队列）。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）、间隔号（.）、冒号（:）的组合。
         :type queue_name: str
@@ -76,7 +76,7 @@ class BatchShowQueueRequest:
     def instance_id(self):
         """Gets the instance_id of this BatchShowQueueRequest.
 
-        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID。
 
         :return: The instance_id of this BatchShowQueueRequest.
         :rtype: str
@@ -87,7 +87,7 @@ class BatchShowQueueRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this BatchShowQueueRequest.
 
-        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID。
 
         :param instance_id: The instance_id of this BatchShowQueueRequest.
         :type instance_id: str

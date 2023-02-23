@@ -26,7 +26,9 @@ class PropertiesSchema:
         'ide_version': 'str',
         'language': 'str',
         'plugin_version': 'str',
-        'signature': 'str'
+        'signature': 'str',
+        'above_text': 'str',
+        'following_text': 'str'
     }
 
     attribute_map = {
@@ -36,10 +38,12 @@ class PropertiesSchema:
         'ide_version': 'ide_version',
         'language': 'language',
         'plugin_version': 'plugin_version',
-        'signature': 'signature'
+        'signature': 'signature',
+        'above_text': 'above_text',
+        'following_text': 'following_text'
     }
 
-    def __init__(self, context=None, docstring=None, ide_type=None, ide_version=None, language=None, plugin_version=None, signature=None):
+    def __init__(self, context=None, docstring=None, ide_type=None, ide_version=None, language=None, plugin_version=None, signature=None, above_text=None, following_text=None):
         """PropertiesSchema
 
         The model defined in huaweicloud sdk
@@ -58,6 +62,10 @@ class PropertiesSchema:
         :type plugin_version: str
         :param signature: signature
         :type signature: str
+        :param above_text: the text above the cursor
+        :type above_text: str
+        :param following_text: the text following the cursor
+        :type following_text: str
         """
         
         
@@ -69,6 +77,8 @@ class PropertiesSchema:
         self._language = None
         self._plugin_version = None
         self._signature = None
+        self._above_text = None
+        self._following_text = None
         self.discriminator = None
 
         if context is not None:
@@ -82,7 +92,12 @@ class PropertiesSchema:
         self.language = language
         if plugin_version is not None:
             self.plugin_version = plugin_version
-        self.signature = signature
+        if signature is not None:
+            self.signature = signature
+        if above_text is not None:
+            self.above_text = above_text
+        if following_text is not None:
+            self.following_text = following_text
 
     @property
     def context(self):
@@ -237,6 +252,50 @@ class PropertiesSchema:
         :type signature: str
         """
         self._signature = signature
+
+    @property
+    def above_text(self):
+        """Gets the above_text of this PropertiesSchema.
+
+        the text above the cursor
+
+        :return: The above_text of this PropertiesSchema.
+        :rtype: str
+        """
+        return self._above_text
+
+    @above_text.setter
+    def above_text(self, above_text):
+        """Sets the above_text of this PropertiesSchema.
+
+        the text above the cursor
+
+        :param above_text: The above_text of this PropertiesSchema.
+        :type above_text: str
+        """
+        self._above_text = above_text
+
+    @property
+    def following_text(self):
+        """Gets the following_text of this PropertiesSchema.
+
+        the text following the cursor
+
+        :return: The following_text of this PropertiesSchema.
+        :rtype: str
+        """
+        return self._following_text
+
+    @following_text.setter
+    def following_text(self, following_text):
+        """Sets the following_text of this PropertiesSchema.
+
+        the text following the cursor
+
+        :param following_text: The following_text of this PropertiesSchema.
+        :type following_text: str
+        """
+        self._following_text = following_text
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -201,6 +201,7 @@ from huaweicloudsdkdds.v3.model.recycle_datastore import RecycleDatastore
 from huaweicloudsdkdds.v3.model.recycle_instance import RecycleInstance
 from huaweicloudsdkdds.v3.model.recycle_policy import RecyclePolicy
 from huaweicloudsdkdds.v3.model.recycle_policy_request_body import RecyclePolicyRequestBody
+from huaweicloudsdkdds.v3.model.reduce_instance_node_request_body import ReduceInstanceNodeRequestBody
 from huaweicloudsdkdds.v3.model.reset_configuration_request import ResetConfigurationRequest
 from huaweicloudsdkdds.v3.model.reset_configuration_response import ResetConfigurationResponse
 from huaweicloudsdkdds.v3.model.reset_password_request import ResetPasswordRequest
@@ -280,6 +281,8 @@ from huaweicloudsdkdds.v3.model.show_slowlog_desensitization_switch_request impo
 from huaweicloudsdkdds.v3.model.show_slowlog_desensitization_switch_response import ShowSlowlogDesensitizationSwitchResponse
 from huaweicloudsdkdds.v3.model.show_upgrade_duration_request import ShowUpgradeDurationRequest
 from huaweicloudsdkdds.v3.model.show_upgrade_duration_response import ShowUpgradeDurationResponse
+from huaweicloudsdkdds.v3.model.shrink_instance_nodes_request import ShrinkInstanceNodesRequest
+from huaweicloudsdkdds.v3.model.shrink_instance_nodes_response import ShrinkInstanceNodesResponse
 from huaweicloudsdkdds.v3.model.slow_log_detail import SlowLogDetail
 from huaweicloudsdkdds.v3.model.slowlog_result import SlowlogResult
 from huaweicloudsdkdds.v3.model.source import Source

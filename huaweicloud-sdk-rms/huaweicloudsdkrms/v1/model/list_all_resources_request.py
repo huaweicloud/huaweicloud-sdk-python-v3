@@ -24,7 +24,10 @@ class ListAllResourcesRequest:
         'ep_id': 'str',
         'type': 'str',
         'limit': 'int',
-        'marker': 'str'
+        'marker': 'str',
+        'id': 'str',
+        'name': 'str',
+        'tags': 'list[str]'
     }
 
     attribute_map = {
@@ -32,10 +35,13 @@ class ListAllResourcesRequest:
         'ep_id': 'ep_id',
         'type': 'type',
         'limit': 'limit',
-        'marker': 'marker'
+        'marker': 'marker',
+        'id': 'id',
+        'name': 'name',
+        'tags': 'tags'
     }
 
-    def __init__(self, region_id=None, ep_id=None, type=None, limit=None, marker=None):
+    def __init__(self, region_id=None, ep_id=None, type=None, limit=None, marker=None, id=None, name=None, tags=None):
         """ListAllResourcesRequest
 
         The model defined in huaweicloud sdk
@@ -46,10 +52,16 @@ class ListAllResourcesRequest:
         :type ep_id: str
         :param type: 资源类型（provider.type）
         :type type: str
-        :param limit: 最大的返回数量
+        :param limit: 最大的返回数量。
         :type limit: int
         :param marker: 分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
         :type marker: str
+        :param id: 资源ID
+        :type id: str
+        :param name: 资源名称
+        :type name: str
+        :param tags: 标签列表
+        :type tags: list[str]
         """
         
         
@@ -59,6 +71,9 @@ class ListAllResourcesRequest:
         self._type = None
         self._limit = None
         self._marker = None
+        self._id = None
+        self._name = None
+        self._tags = None
         self.discriminator = None
 
         if region_id is not None:
@@ -71,6 +86,12 @@ class ListAllResourcesRequest:
             self.limit = limit
         if marker is not None:
             self.marker = marker
+        if id is not None:
+            self.id = id
+        if name is not None:
+            self.name = name
+        if tags is not None:
+            self.tags = tags
 
     @property
     def region_id(self):
@@ -142,7 +163,7 @@ class ListAllResourcesRequest:
     def limit(self):
         """Gets the limit of this ListAllResourcesRequest.
 
-        最大的返回数量
+        最大的返回数量。
 
         :return: The limit of this ListAllResourcesRequest.
         :rtype: int
@@ -153,7 +174,7 @@ class ListAllResourcesRequest:
     def limit(self, limit):
         """Sets the limit of this ListAllResourcesRequest.
 
-        最大的返回数量
+        最大的返回数量。
 
         :param limit: The limit of this ListAllResourcesRequest.
         :type limit: int
@@ -181,6 +202,72 @@ class ListAllResourcesRequest:
         :type marker: str
         """
         self._marker = marker
+
+    @property
+    def id(self):
+        """Gets the id of this ListAllResourcesRequest.
+
+        资源ID
+
+        :return: The id of this ListAllResourcesRequest.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ListAllResourcesRequest.
+
+        资源ID
+
+        :param id: The id of this ListAllResourcesRequest.
+        :type id: str
+        """
+        self._id = id
+
+    @property
+    def name(self):
+        """Gets the name of this ListAllResourcesRequest.
+
+        资源名称
+
+        :return: The name of this ListAllResourcesRequest.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ListAllResourcesRequest.
+
+        资源名称
+
+        :param name: The name of this ListAllResourcesRequest.
+        :type name: str
+        """
+        self._name = name
+
+    @property
+    def tags(self):
+        """Gets the tags of this ListAllResourcesRequest.
+
+        标签列表
+
+        :return: The tags of this ListAllResourcesRequest.
+        :rtype: list[str]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ListAllResourcesRequest.
+
+        标签列表
+
+        :param tags: The tags of this ListAllResourcesRequest.
+        :type tags: list[str]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

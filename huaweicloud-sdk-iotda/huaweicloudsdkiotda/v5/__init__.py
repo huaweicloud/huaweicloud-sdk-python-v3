@@ -133,6 +133,7 @@ from huaweicloudsdkiotda.v5.model.list_rules_request import ListRulesRequest
 from huaweicloudsdkiotda.v5.model.list_rules_response import ListRulesResponse
 from huaweicloudsdkiotda.v5.model.message_result import MessageResult
 from huaweicloudsdkiotda.v5.model.mrs_kafka_forwarding import MrsKafkaForwarding
+from huaweicloudsdkiotda.v5.model.mysql_forwarding import MysqlForwarding
 from huaweicloudsdkiotda.v5.model.net_address import NetAddress
 from huaweicloudsdkiotda.v5.model.obs_forwarding import ObsForwarding
 from huaweicloudsdkiotda.v5.model.page import Page

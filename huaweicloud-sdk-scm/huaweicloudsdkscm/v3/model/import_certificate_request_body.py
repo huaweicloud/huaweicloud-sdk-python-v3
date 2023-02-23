@@ -46,9 +46,9 @@ class ImportCertificateRequestBody:
 
         :param name: 证书名称。字符长度为3~63位。
         :type name: str
-        :param certificate: 证书内容。回车换行需要使用转义字符\\n或者\\r\\n替换。
+        :param certificate: 证书内容，可包含中间证书及根证书。若certificate_chain字段传入证书链，则该字段只取证书本身。回车换行需要使用转义字符\\n或者\\r\\n替换。
         :type certificate: str
-        :param certificate_chain: 证书链。回车换行需要使用转义字符\\n或者\\r\\n替换。
+        :param certificate_chain: 证书链，非必填，可通过certificate字段传入。回车换行需要使用转义字符\\n或者\\r\\n替换。
         :type certificate_chain: str
         :param private_key: 证书私钥。 不能上传带有口令保护的私钥，回车换行需要使用转义字符\\n或者\\r\\n替换。
         :type private_key: str
@@ -73,7 +73,8 @@ class ImportCertificateRequestBody:
 
         self.name = name
         self.certificate = certificate
-        self.certificate_chain = certificate_chain
+        if certificate_chain is not None:
+            self.certificate_chain = certificate_chain
         self.private_key = private_key
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
@@ -108,7 +109,7 @@ class ImportCertificateRequestBody:
     def certificate(self):
         """Gets the certificate of this ImportCertificateRequestBody.
 
-        证书内容。回车换行需要使用转义字符\\n或者\\r\\n替换。
+        证书内容，可包含中间证书及根证书。若certificate_chain字段传入证书链，则该字段只取证书本身。回车换行需要使用转义字符\\n或者\\r\\n替换。
 
         :return: The certificate of this ImportCertificateRequestBody.
         :rtype: str
@@ -119,7 +120,7 @@ class ImportCertificateRequestBody:
     def certificate(self, certificate):
         """Sets the certificate of this ImportCertificateRequestBody.
 
-        证书内容。回车换行需要使用转义字符\\n或者\\r\\n替换。
+        证书内容，可包含中间证书及根证书。若certificate_chain字段传入证书链，则该字段只取证书本身。回车换行需要使用转义字符\\n或者\\r\\n替换。
 
         :param certificate: The certificate of this ImportCertificateRequestBody.
         :type certificate: str
@@ -130,7 +131,7 @@ class ImportCertificateRequestBody:
     def certificate_chain(self):
         """Gets the certificate_chain of this ImportCertificateRequestBody.
 
-        证书链。回车换行需要使用转义字符\\n或者\\r\\n替换。
+        证书链，非必填，可通过certificate字段传入。回车换行需要使用转义字符\\n或者\\r\\n替换。
 
         :return: The certificate_chain of this ImportCertificateRequestBody.
         :rtype: str
@@ -141,7 +142,7 @@ class ImportCertificateRequestBody:
     def certificate_chain(self, certificate_chain):
         """Sets the certificate_chain of this ImportCertificateRequestBody.
 
-        证书链。回车换行需要使用转义字符\\n或者\\r\\n替换。
+        证书链，非必填，可通过certificate字段传入。回车换行需要使用转义字符\\n或者\\r\\n替换。
 
         :param certificate_chain: The certificate_chain of this ImportCertificateRequestBody.
         :type certificate_chain: str

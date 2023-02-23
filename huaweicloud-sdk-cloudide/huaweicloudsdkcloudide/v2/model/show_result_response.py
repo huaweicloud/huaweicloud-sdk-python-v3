@@ -21,15 +21,17 @@ class ShowResultResponse(SdkResponse):
 
     openapi_types = {
         'request_status': 'RequestStatus',
-        'tasks': 'list[TaskModel]'
+        'tasks': 'list[TaskModel]',
+        'request_type': 'str'
     }
 
     attribute_map = {
         'request_status': 'request_status',
-        'tasks': 'tasks'
+        'tasks': 'tasks',
+        'request_type': 'request_type'
     }
 
-    def __init__(self, request_status=None, tasks=None):
+    def __init__(self, request_status=None, tasks=None, request_type=None):
         """ShowResultResponse
 
         The model defined in huaweicloud sdk
@@ -38,18 +40,23 @@ class ShowResultResponse(SdkResponse):
         :type request_status: :class:`huaweicloudsdkcloudide.v2.RequestStatus`
         :param tasks: task list
         :type tasks: list[:class:`huaweicloudsdkcloudide.v2.TaskModel`]
+        :param request_type: the type of the request
+        :type request_type: str
         """
         
         super(ShowResultResponse, self).__init__()
 
         self._request_status = None
         self._tasks = None
+        self._request_type = None
         self.discriminator = None
 
         if request_status is not None:
             self.request_status = request_status
         if tasks is not None:
             self.tasks = tasks
+        if request_type is not None:
+            self.request_type = request_type
 
     @property
     def request_status(self):
@@ -90,6 +97,28 @@ class ShowResultResponse(SdkResponse):
         :type tasks: list[:class:`huaweicloudsdkcloudide.v2.TaskModel`]
         """
         self._tasks = tasks
+
+    @property
+    def request_type(self):
+        """Gets the request_type of this ShowResultResponse.
+
+        the type of the request
+
+        :return: The request_type of this ShowResultResponse.
+        :rtype: str
+        """
+        return self._request_type
+
+    @request_type.setter
+    def request_type(self, request_type):
+        """Sets the request_type of this ShowResultResponse.
+
+        the type of the request
+
+        :param request_type: The request_type of this ShowResultResponse.
+        :type request_type: str
+        """
+        self._request_type = request_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

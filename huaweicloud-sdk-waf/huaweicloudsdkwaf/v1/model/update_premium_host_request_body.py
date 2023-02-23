@@ -34,7 +34,8 @@ class UpdatePremiumHostRequestBody:
         'block_page': 'BlockPage',
         'traffic_mark': 'TrafficMark',
         'circuit_breaker': 'CircuitBreaker',
-        'timeout_config': 'TimeoutConfig'
+        'timeout_config': 'TimeoutConfig',
+        'flag': 'HostFlag'
     }
 
     attribute_map = {
@@ -52,10 +53,11 @@ class UpdatePremiumHostRequestBody:
         'block_page': 'block_page',
         'traffic_mark': 'traffic_mark',
         'circuit_breaker': 'circuit_breaker',
-        'timeout_config': 'timeout_config'
+        'timeout_config': 'timeout_config',
+        'flag': 'flag'
     }
 
-    def __init__(self, proxy=None, certificateid=None, certificatename=None, tls=None, cipher=None, mode=None, locked=None, protect_status=None, access_status=None, timestamp=None, pool_ids=None, block_page=None, traffic_mark=None, circuit_breaker=None, timeout_config=None):
+    def __init__(self, proxy=None, certificateid=None, certificatename=None, tls=None, cipher=None, mode=None, locked=None, protect_status=None, access_status=None, timestamp=None, pool_ids=None, block_page=None, traffic_mark=None, circuit_breaker=None, timeout_config=None, flag=None):
         """UpdatePremiumHostRequestBody
 
         The model defined in huaweicloud sdk
@@ -90,6 +92,8 @@ class UpdatePremiumHostRequestBody:
         :type circuit_breaker: :class:`huaweicloudsdkwaf.v1.CircuitBreaker`
         :param timeout_config: 
         :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
+        :param flag: 
+        :type flag: :class:`huaweicloudsdkwaf.v1.HostFlag`
         """
         
         
@@ -109,6 +113,7 @@ class UpdatePremiumHostRequestBody:
         self._traffic_mark = None
         self._circuit_breaker = None
         self._timeout_config = None
+        self._flag = None
         self.discriminator = None
 
         if proxy is not None:
@@ -141,6 +146,8 @@ class UpdatePremiumHostRequestBody:
             self.circuit_breaker = circuit_breaker
         if timeout_config is not None:
             self.timeout_config = timeout_config
+        if flag is not None:
+            self.flag = flag
 
     @property
     def proxy(self):
@@ -455,6 +462,24 @@ class UpdatePremiumHostRequestBody:
         :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
         """
         self._timeout_config = timeout_config
+
+    @property
+    def flag(self):
+        """Gets the flag of this UpdatePremiumHostRequestBody.
+
+        :return: The flag of this UpdatePremiumHostRequestBody.
+        :rtype: :class:`huaweicloudsdkwaf.v1.HostFlag`
+        """
+        return self._flag
+
+    @flag.setter
+    def flag(self, flag):
+        """Sets the flag of this UpdatePremiumHostRequestBody.
+
+        :param flag: The flag of this UpdatePremiumHostRequestBody.
+        :type flag: :class:`huaweicloudsdkwaf.v1.HostFlag`
+        """
+        self._flag = flag
 
     def to_dict(self):
         """Returns the model properties as a dict"""

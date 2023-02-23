@@ -27,7 +27,7 @@ class ServiceRegion:
     def __init__(self):
         pass
 
-    CN_NORTH_7 = Region(id="cn-north-7", endpoint=MOCK_ENDPOINT)
+    CN_NORTH_7 = Region("cn-north-7", MOCK_ENDPOINT)
 
     static_fields = types.MappingProxyType({
         "cn-north-7": CN_NORTH_7,

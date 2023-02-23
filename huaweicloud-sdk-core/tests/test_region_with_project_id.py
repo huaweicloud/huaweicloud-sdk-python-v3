@@ -42,8 +42,8 @@ def test_endpoint_with_region_1():
         .with_region(ServiceRegion.CN_NORTH_7) \
         .build()
 
-    assert hasattr(client, "_endpoint") is True
-    assert getattr(client, "_endpoint") == MOCK_ENDPOINT
+    assert hasattr(client, "_endpoints") is True
+    assert getattr(client, "_endpoints")[0] == MOCK_ENDPOINT
 
 
 def test_endpoint_with_region_2():
@@ -53,19 +53,19 @@ def test_endpoint_with_region_2():
         .with_region(ServiceRegion.value_of("cn-north-7")) \
         .build()
 
-    assert hasattr(client, "_endpoint") is True
-    assert getattr(client, "_endpoint") == MOCK_ENDPOINT
+    assert hasattr(client, "_endpoints") is True
+    assert getattr(client, "_endpoints")[0] == MOCK_ENDPOINT
 
 
 def test_endpoint_with_region_3():
     client = ServiceClient.new_builder() \
         .with_http_config(config) \
         .with_credentials(credentials) \
-        .with_region(Region(id="cn-north-7", endpoint=MOCK_ENDPOINT)) \
+        .with_region(Region("cn-north-7", MOCK_ENDPOINT)) \
         .build()
 
-    assert hasattr(client, "_endpoint") is True
-    assert getattr(client, "_endpoint") == MOCK_ENDPOINT
+    assert hasattr(client, "_endpoints") is True
+    assert getattr(client, "_endpoints")[0] == MOCK_ENDPOINT
 
 
 def test_endpoint_with_region_override_1():
@@ -75,8 +75,8 @@ def test_endpoint_with_region_override_1():
         .with_region(ServiceRegion.CN_NORTH_7.with_endpoint_override(OVERRIDE_ENDPOINT)) \
         .build()
 
-    assert hasattr(client, "_endpoint") is True
-    assert getattr(client, "_endpoint") == OVERRIDE_ENDPOINT
+    assert hasattr(client, "_endpoints") is True
+    assert getattr(client, "_endpoints")[0] == OVERRIDE_ENDPOINT
 
 
 def test_endpoint_with_region_override_2():
@@ -86,8 +86,8 @@ def test_endpoint_with_region_override_2():
         .with_region(ServiceRegion.value_of("cn-north-7").with_endpoint_override(OVERRIDE_ENDPOINT)) \
         .build()
 
-    assert hasattr(client, "_endpoint") is True
-    assert getattr(client, "_endpoint") == OVERRIDE_ENDPOINT
+    assert hasattr(client, "_endpoints") is True
+    assert getattr(client, "_endpoints")[0] == OVERRIDE_ENDPOINT
 
 
 def test_region_value_of_empty():

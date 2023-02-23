@@ -27,7 +27,7 @@ class VaultGet:
         'project_id': 'str',
         'provider_id': 'str',
         'resources': 'list[ResourceResp]',
-        'tags': 'list[TagsResp]',
+        'tags': 'list[Tag]',
         'enterprise_project_id': 'str',
         'auto_bind': 'bool',
         'bind_rules': 'VaultBindRules',
@@ -80,8 +80,8 @@ class VaultGet:
         :type provider_id: str
         :param resources: 资源
         :type resources: list[:class:`huaweicloudsdkcbr.v1.ResourceResp`]
-        :param tags: 标签
-        :type tags: list[:class:`huaweicloudsdkcbr.v1.TagsResp`]
+        :param tags: 存储库标签
+        :type tags: list[:class:`huaweicloudsdkcbr.v1.Tag`]
         :param enterprise_project_id: 企业项目id，默认为‘0’。
         :type enterprise_project_id: str
         :param auto_bind: 是否自动绑定，默认为false，不支持。
@@ -310,10 +310,10 @@ class VaultGet:
     def tags(self):
         """Gets the tags of this VaultGet.
 
-        标签
+        存储库标签
 
         :return: The tags of this VaultGet.
-        :rtype: list[:class:`huaweicloudsdkcbr.v1.TagsResp`]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.Tag`]
         """
         return self._tags
 
@@ -321,10 +321,10 @@ class VaultGet:
     def tags(self, tags):
         """Sets the tags of this VaultGet.
 
-        标签
+        存储库标签
 
         :param tags: The tags of this VaultGet.
-        :type tags: list[:class:`huaweicloudsdkcbr.v1.TagsResp`]
+        :type tags: list[:class:`huaweicloudsdkcbr.v1.Tag`]
         """
         self._tags = tags
 

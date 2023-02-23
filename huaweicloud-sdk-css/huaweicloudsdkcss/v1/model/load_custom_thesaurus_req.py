@@ -57,9 +57,12 @@ class LoadCustomThesaurusReq:
         self.discriminator = None
 
         self.bucket_name = bucket_name
-        self.main_object = main_object
-        self.stop_object = stop_object
-        self.synonym_object = synonym_object
+        if main_object is not None:
+            self.main_object = main_object
+        if stop_object is not None:
+            self.stop_object = stop_object
+        if synonym_object is not None:
+            self.synonym_object = synonym_object
 
     @property
     def bucket_name(self):

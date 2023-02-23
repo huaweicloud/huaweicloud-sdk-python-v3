@@ -24,6 +24,7 @@ class CreateRequestRequest:
         'scenario': 'str',
         'resubmit': 'bool',
         'model_id': 'str',
+        'request_type': 'str',
         'body': 'PropertiesSchema'
     }
 
@@ -32,10 +33,11 @@ class CreateRequestRequest:
         'scenario': 'scenario',
         'resubmit': 'resubmit',
         'model_id': 'model_id',
+        'request_type': 'request_type',
         'body': 'body'
     }
 
-    def __init__(self, topn=None, scenario=None, resubmit=None, model_id=None, body=None):
+    def __init__(self, topn=None, scenario=None, resubmit=None, model_id=None, request_type=None, body=None):
         """CreateRequestRequest
 
         The model defined in huaweicloud sdk
@@ -48,6 +50,8 @@ class CreateRequestRequest:
         :type resubmit: bool
         :param model_id: choose the model
         :type model_id: str
+        :param request_type: An enumeration. - function - rawtext
+        :type request_type: str
         :param body: Body of the CreateRequestRequest
         :type body: :class:`huaweicloudsdkcloudide.v2.PropertiesSchema`
         """
@@ -58,6 +62,7 @@ class CreateRequestRequest:
         self._scenario = None
         self._resubmit = None
         self._model_id = None
+        self._request_type = None
         self._body = None
         self.discriminator = None
 
@@ -69,6 +74,8 @@ class CreateRequestRequest:
             self.resubmit = resubmit
         if model_id is not None:
             self.model_id = model_id
+        if request_type is not None:
+            self.request_type = request_type
         if body is not None:
             self.body = body
 
@@ -159,6 +166,28 @@ class CreateRequestRequest:
         :type model_id: str
         """
         self._model_id = model_id
+
+    @property
+    def request_type(self):
+        """Gets the request_type of this CreateRequestRequest.
+
+        An enumeration. - function - rawtext
+
+        :return: The request_type of this CreateRequestRequest.
+        :rtype: str
+        """
+        return self._request_type
+
+    @request_type.setter
+    def request_type(self, request_type):
+        """Sets the request_type of this CreateRequestRequest.
+
+        An enumeration. - function - rawtext
+
+        :param request_type: The request_type of this CreateRequestRequest.
+        :type request_type: str
+        """
+        self._request_type = request_type
 
     @property
     def body(self):

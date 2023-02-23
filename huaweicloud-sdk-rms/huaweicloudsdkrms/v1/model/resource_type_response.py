@@ -26,7 +26,8 @@ class ResourceTypeResponse:
         'regions': 'list[str]',
         'console_endpoint_id': 'str',
         'console_list_url': 'str',
-        'console_detail_url': 'str'
+        'console_detail_url': 'str',
+        'track': 'str'
     }
 
     attribute_map = {
@@ -36,10 +37,11 @@ class ResourceTypeResponse:
         'regions': 'regions',
         'console_endpoint_id': 'console_endpoint_id',
         'console_list_url': 'console_list_url',
-        'console_detail_url': 'console_detail_url'
+        'console_detail_url': 'console_detail_url',
+        'track': 'track'
     }
 
-    def __init__(self, name=None, display_name=None, _global=None, regions=None, console_endpoint_id=None, console_list_url=None, console_detail_url=None):
+    def __init__(self, name=None, display_name=None, _global=None, regions=None, console_endpoint_id=None, console_list_url=None, console_detail_url=None, track=None):
         """ResourceTypeResponse
 
         The model defined in huaweicloud sdk
@@ -58,6 +60,8 @@ class ResourceTypeResponse:
         :type console_list_url: str
         :param console_detail_url: console详情页地址
         :type console_detail_url: str
+        :param track: 资源是否默认收集，\&quot;tracked\&quot;表示默认收集，\&quot;untracked\&quot;表示默认不收集
+        :type track: str
         """
         
         
@@ -69,6 +73,7 @@ class ResourceTypeResponse:
         self._console_endpoint_id = None
         self._console_list_url = None
         self._console_detail_url = None
+        self._track = None
         self.discriminator = None
 
         if name is not None:
@@ -85,6 +90,8 @@ class ResourceTypeResponse:
             self.console_list_url = console_list_url
         if console_detail_url is not None:
             self.console_detail_url = console_detail_url
+        if track is not None:
+            self.track = track
 
     @property
     def name(self):
@@ -239,6 +246,28 @@ class ResourceTypeResponse:
         :type console_detail_url: str
         """
         self._console_detail_url = console_detail_url
+
+    @property
+    def track(self):
+        """Gets the track of this ResourceTypeResponse.
+
+        资源是否默认收集，\"tracked\"表示默认收集，\"untracked\"表示默认不收集
+
+        :return: The track of this ResourceTypeResponse.
+        :rtype: str
+        """
+        return self._track
+
+    @track.setter
+    def track(self, track):
+        """Sets the track of this ResourceTypeResponse.
+
+        资源是否默认收集，\"tracked\"表示默认收集，\"untracked\"表示默认不收集
+
+        :param track: The track of this ResourceTypeResponse.
+        :type track: str
+        """
+        self._track = track
 
     def to_dict(self):
         """Returns the model properties as a dict"""

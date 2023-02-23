@@ -18,33 +18,47 @@
  under the LICENSE.
 """
 
+import warnings
+
 
 class Region(object):
-    def __init__(self, id=None, endpoint=None):
-        self._id = None
-        self._endpoint = None
-
-        if id is not None:
-            self.id = id
-        if endpoint is not None:
-            self.endpoint = endpoint
+    def __init__(self, _id, *endpoints):
+        self._id = _id
+        self._endpoints = list(endpoints)
 
     @property
     def id(self):
         return self._id
 
     @id.setter
-    def id(self, id):
-        self._id = id
+    def id(self, _id):
+        self._id = _id
 
     @property
     def endpoint(self):
-        return self._endpoint
+        warnings.warn("As of 3.1.27, because of the support of the multi-endpoint feature, use endpoints instead",
+                      DeprecationWarning)
+        return self.endpoints[0] if self.endpoints else None
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        self._endpoint = endpoint
+        warnings.warn("As of 3.1.27, because of the support of the multi-endpoint feature, use endpoints instead",
+                      DeprecationWarning)
+        self.endpoints = [endpoint]
+
+    @property
+    def endpoints(self):
+        return self._endpoints
+
+    @endpoints.setter
+    def endpoints(self, endpoints):
+        self._endpoints = endpoints
 
     def with_endpoint_override(self, endpoint):
-        self._endpoint = endpoint
+        warnings.warn("As of 3.1.27, because of the support of the multi-endpoint feature,"
+                      "use with_endpoints_override instead", DeprecationWarning)
+        return self.with_endpoints_override([endpoint])
+
+    def with_endpoints_override(self, endpoints):
+        self.endpoints = endpoints
         return self

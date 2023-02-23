@@ -20,6 +20,7 @@ class ExportCertificateResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'entire_certificate': 'str',
         'certificate': 'str',
         'certificate_chain': 'str',
         'private_key': 'str',
@@ -28,6 +29,7 @@ class ExportCertificateResponse(SdkResponse):
     }
 
     attribute_map = {
+        'entire_certificate': 'entire_certificate',
         'certificate': 'certificate',
         'certificate_chain': 'certificate_chain',
         'private_key': 'private_key',
@@ -35,12 +37,14 @@ class ExportCertificateResponse(SdkResponse):
         'enc_private_key': 'enc_private_key'
     }
 
-    def __init__(self, certificate=None, certificate_chain=None, private_key=None, enc_certificate=None, enc_private_key=None):
+    def __init__(self, entire_certificate=None, certificate=None, certificate_chain=None, private_key=None, enc_certificate=None, enc_private_key=None):
         """ExportCertificateResponse
 
         The model defined in huaweicloud sdk
 
-        :param certificate: 证书内容。
+        :param entire_certificate: 证书及证书链。
+        :type entire_certificate: str
+        :param certificate: 证书内容，不包含证书链。
         :type certificate: str
         :param certificate_chain: 证书链。
         :type certificate_chain: str
@@ -54,6 +58,7 @@ class ExportCertificateResponse(SdkResponse):
         
         super(ExportCertificateResponse, self).__init__()
 
+        self._entire_certificate = None
         self._certificate = None
         self._certificate_chain = None
         self._private_key = None
@@ -61,6 +66,8 @@ class ExportCertificateResponse(SdkResponse):
         self._enc_private_key = None
         self.discriminator = None
 
+        if entire_certificate is not None:
+            self.entire_certificate = entire_certificate
         if certificate is not None:
             self.certificate = certificate
         if certificate_chain is not None:
@@ -73,10 +80,32 @@ class ExportCertificateResponse(SdkResponse):
             self.enc_private_key = enc_private_key
 
     @property
+    def entire_certificate(self):
+        """Gets the entire_certificate of this ExportCertificateResponse.
+
+        证书及证书链。
+
+        :return: The entire_certificate of this ExportCertificateResponse.
+        :rtype: str
+        """
+        return self._entire_certificate
+
+    @entire_certificate.setter
+    def entire_certificate(self, entire_certificate):
+        """Sets the entire_certificate of this ExportCertificateResponse.
+
+        证书及证书链。
+
+        :param entire_certificate: The entire_certificate of this ExportCertificateResponse.
+        :type entire_certificate: str
+        """
+        self._entire_certificate = entire_certificate
+
+    @property
     def certificate(self):
         """Gets the certificate of this ExportCertificateResponse.
 
-        证书内容。
+        证书内容，不包含证书链。
 
         :return: The certificate of this ExportCertificateResponse.
         :rtype: str
@@ -87,7 +116,7 @@ class ExportCertificateResponse(SdkResponse):
     def certificate(self, certificate):
         """Sets the certificate of this ExportCertificateResponse.
 
-        证书内容。
+        证书内容，不包含证书链。
 
         :param certificate: The certificate of this ExportCertificateResponse.
         :type certificate: str

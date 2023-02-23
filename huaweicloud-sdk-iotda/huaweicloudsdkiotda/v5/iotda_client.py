@@ -3750,7 +3750,7 @@ class IoTDAClient(Client):
         return self.list_routing_rules_with_http_info(request)
 
     def list_routing_rules_with_http_info(self, request):
-        all_params = ['instance_id', 'resource', 'event', 'app_type', 'app_id', 'rule_name', 'limit', 'marker', 'offset']
+        all_params = ['instance_id', 'resource', 'event', 'app_type', 'app_id', 'rule_name', 'active', 'limit', 'marker', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3773,6 +3773,8 @@ class IoTDAClient(Client):
             query_params.append(('app_id', local_var_params['app_id']))
         if 'rule_name' in local_var_params:
             query_params.append(('rule_name', local_var_params['rule_name']))
+        if 'active' in local_var_params:
+            query_params.append(('active', local_var_params['active']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'marker' in local_var_params:

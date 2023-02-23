@@ -2027,7 +2027,7 @@ class CloudIDEClient(Client):
         return self.create_request_with_http_info(request)
 
     def create_request_with_http_info(self, request):
-        all_params = ['create_request_request_body', 'topn', 'scenario', 'resubmit', 'model_id']
+        all_params = ['create_request_request_body', 'topn', 'scenario', 'resubmit', 'model_id', 'request_type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2048,6 +2048,8 @@ class CloudIDEClient(Client):
             query_params.append(('resubmit', local_var_params['resubmit']))
         if 'model_id' in local_var_params:
             query_params.append(('model_id', local_var_params['model_id']))
+        if 'request_type' in local_var_params:
+            query_params.append(('request_type', local_var_params['request_type']))
 
         header_params = {}
 

@@ -26,6 +26,7 @@ class ListRoutingRulesRequest:
         'app_type': 'str',
         'app_id': 'str',
         'rule_name': 'str',
+        'active': 'bool',
         'limit': 'int',
         'marker': 'str',
         'offset': 'int'
@@ -38,17 +39,18 @@ class ListRoutingRulesRequest:
         'app_type': 'app_type',
         'app_id': 'app_id',
         'rule_name': 'rule_name',
+        'active': 'active',
         'limit': 'limit',
         'marker': 'marker',
         'offset': 'offset'
     }
 
-    def __init__(self, instance_id=None, resource=None, event=None, app_type=None, app_id=None, rule_name=None, limit=None, marker=None, offset=None):
+    def __init__(self, instance_id=None, resource=None, event=None, app_type=None, app_id=None, rule_name=None, active=None, limit=None, marker=None, offset=None):
         """ListRoutingRulesRequest
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID。
         :type instance_id: str
         :param resource: **参数说明**：订阅的资源名称。 **取值范围**： - device：设备。 - device.property：设备属性。 - device.message：设备消息。 - device.message.status：设备消息状态。 - device.status：设备状态。 - batchtask：批量任务。 - product：产品。 - device.command.status：设备异步命令状态。
         :type resource: str
@@ -60,6 +62,8 @@ class ListRoutingRulesRequest:
         :type app_id: str
         :param rule_name: **参数说明**：用户自定义的规则名称
         :type rule_name: str
+        :param active: **参数说明**：规则条件的状态是否为激活。
+        :type active: bool
         :param limit: **参数说明**：分页查询时每页显示的记录数。默认每页10条记录，最大设定每页50条记录。 **取值范围**：1-50的整数，默认值为10。
         :type limit: int
         :param marker: **参数说明**：上一次分页查询结果中最后一条记录的ID，在上一次分页查询时由物联网平台返回获得。分页查询时物联网平台是按marker也就是记录ID降序查询的，越新的数据记录ID也会越大。若填写marker，则本次只查询记录ID小于marker的数据记录。若不填写，则从记录ID最大也就是最新的一条数据开始查询。如果需要依次查询所有数据，则每次查询时必须填写上一次查询响应中的marker值。 **取值范围**：长度为24的十六进制字符串，默认值为ffffffffffffffffffffffff。
@@ -76,6 +80,7 @@ class ListRoutingRulesRequest:
         self._app_type = None
         self._app_id = None
         self._rule_name = None
+        self._active = None
         self._limit = None
         self._marker = None
         self._offset = None
@@ -93,6 +98,8 @@ class ListRoutingRulesRequest:
             self.app_id = app_id
         if rule_name is not None:
             self.rule_name = rule_name
+        if active is not None:
+            self.active = active
         if limit is not None:
             self.limit = limit
         if marker is not None:
@@ -104,7 +111,7 @@ class ListRoutingRulesRequest:
     def instance_id(self):
         """Gets the instance_id of this ListRoutingRulesRequest.
 
-        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID。
 
         :return: The instance_id of this ListRoutingRulesRequest.
         :rtype: str
@@ -115,7 +122,7 @@ class ListRoutingRulesRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListRoutingRulesRequest.
 
-        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID。
 
         :param instance_id: The instance_id of this ListRoutingRulesRequest.
         :type instance_id: str
@@ -231,6 +238,28 @@ class ListRoutingRulesRequest:
         :type rule_name: str
         """
         self._rule_name = rule_name
+
+    @property
+    def active(self):
+        """Gets the active of this ListRoutingRulesRequest.
+
+        **参数说明**：规则条件的状态是否为激活。
+
+        :return: The active of this ListRoutingRulesRequest.
+        :rtype: bool
+        """
+        return self._active
+
+    @active.setter
+    def active(self, active):
+        """Sets the active of this ListRoutingRulesRequest.
+
+        **参数说明**：规则条件的状态是否为激活。
+
+        :param active: The active of this ListRoutingRulesRequest.
+        :type active: bool
+        """
+        self._active = active
 
     @property
     def limit(self):

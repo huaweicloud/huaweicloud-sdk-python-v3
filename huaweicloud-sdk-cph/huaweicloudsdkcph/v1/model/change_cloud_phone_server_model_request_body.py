@@ -22,24 +22,28 @@ class ChangeCloudPhoneServerModelRequestBody:
     openapi_types = {
         'server_id': 'str',
         'server_model_name': 'str',
+        'phone_model_name': 'str',
         'extend_param': 'ChangeCloudPhoneServerModelRequestBodyExtendParam'
     }
 
     attribute_map = {
         'server_id': 'server_id',
         'server_model_name': 'server_model_name',
+        'phone_model_name': 'phone_model_name',
         'extend_param': 'extend_param'
     }
 
-    def __init__(self, server_id=None, server_model_name=None, extend_param=None):
+    def __init__(self, server_id=None, server_model_name=None, phone_model_name=None, extend_param=None):
         """ChangeCloudPhoneServerModelRequestBody
 
         The model defined in huaweicloud sdk
 
         :param server_id: 云手机服务器的唯一标识。只有特定的服务器才能操作变更规格
         :type server_id: str
-        :param server_model_name: 要变更为的目标云手机服务器规格，不超过64个字节。 当前只支持填写physical.rx1.xlarge.special
+        :param server_model_name: 目标云手机服务器规格，不超过64个字节。仅允许相同代系服务器之间的规格切换。
         :type server_model_name: str
+        :param phone_model_name: 目标云手机规格。要求与变更前云手机规格路数相同，与目标云手机服务器规格匹配。
+        :type phone_model_name: str
         :param extend_param: 
         :type extend_param: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerModelRequestBodyExtendParam`
         """
@@ -48,11 +52,13 @@ class ChangeCloudPhoneServerModelRequestBody:
 
         self._server_id = None
         self._server_model_name = None
+        self._phone_model_name = None
         self._extend_param = None
         self.discriminator = None
 
         self.server_id = server_id
         self.server_model_name = server_model_name
+        self.phone_model_name = phone_model_name
         if extend_param is not None:
             self.extend_param = extend_param
 
@@ -82,7 +88,7 @@ class ChangeCloudPhoneServerModelRequestBody:
     def server_model_name(self):
         """Gets the server_model_name of this ChangeCloudPhoneServerModelRequestBody.
 
-        要变更为的目标云手机服务器规格，不超过64个字节。 当前只支持填写physical.rx1.xlarge.special
+        目标云手机服务器规格，不超过64个字节。仅允许相同代系服务器之间的规格切换。
 
         :return: The server_model_name of this ChangeCloudPhoneServerModelRequestBody.
         :rtype: str
@@ -93,12 +99,34 @@ class ChangeCloudPhoneServerModelRequestBody:
     def server_model_name(self, server_model_name):
         """Sets the server_model_name of this ChangeCloudPhoneServerModelRequestBody.
 
-        要变更为的目标云手机服务器规格，不超过64个字节。 当前只支持填写physical.rx1.xlarge.special
+        目标云手机服务器规格，不超过64个字节。仅允许相同代系服务器之间的规格切换。
 
         :param server_model_name: The server_model_name of this ChangeCloudPhoneServerModelRequestBody.
         :type server_model_name: str
         """
         self._server_model_name = server_model_name
+
+    @property
+    def phone_model_name(self):
+        """Gets the phone_model_name of this ChangeCloudPhoneServerModelRequestBody.
+
+        目标云手机规格。要求与变更前云手机规格路数相同，与目标云手机服务器规格匹配。
+
+        :return: The phone_model_name of this ChangeCloudPhoneServerModelRequestBody.
+        :rtype: str
+        """
+        return self._phone_model_name
+
+    @phone_model_name.setter
+    def phone_model_name(self, phone_model_name):
+        """Sets the phone_model_name of this ChangeCloudPhoneServerModelRequestBody.
+
+        目标云手机规格。要求与变更前云手机规格路数相同，与目标云手机服务器规格匹配。
+
+        :param phone_model_name: The phone_model_name of this ChangeCloudPhoneServerModelRequestBody.
+        :type phone_model_name: str
+        """
+        self._phone_model_name = phone_model_name
 
     @property
     def extend_param(self):

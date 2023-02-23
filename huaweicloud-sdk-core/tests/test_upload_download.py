@@ -19,6 +19,7 @@
 """
 
 import pytest
+from huaweicloudsdkcore.http.http_config import HttpConfig
 
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
 from huaweicloudsdkcore.client import Client
@@ -35,7 +36,11 @@ def process_stream(stream):
 
 
 def test_upload_download(mocker):
-    client = Client().with_credentials(BasicCredentials("ak", "sk", "project_id")).with_endpoint("mock://test.com")
+    client = Client()\
+        .with_credentials(BasicCredentials("ak", "sk", "project_id"))\
+        .with_endpoint("mock://test.com")\
+        .with_config(HttpConfig.get_default_config())
+    client.init_http_client()
 
     mocker.patch.object(client, '_is_stream', return_value=True)
     mocker.patch.object(client, '_do_http_request_sync', return_value=mocked_file_response())

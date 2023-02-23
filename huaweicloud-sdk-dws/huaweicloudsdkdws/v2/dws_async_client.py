@@ -862,6 +862,69 @@ class DwsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_cluster_v2_async(self, request):
+        """V2创建集群
+
+        该接口用于创建集群。
+        集群必须要运行在VPC之内，创建集群前，您需要先创建VPC，并获取VPC和子网的id。
+        该接口为异步接口，创建集群需要10～15分钟。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateClusterV2
+        :type request: :class:`huaweicloudsdkdws.v2.CreateClusterV2Request`
+        :rtype: :class:`huaweicloudsdkdws.v2.CreateClusterV2Response`
+        """
+        return self.create_cluster_v2_with_http_info(request)
+
+    def create_cluster_v2_with_http_info(self, request):
+        all_params = ['v2_create_cluster_req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/clusters',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateClusterV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_cluster_workload_async(self, request):
         """设置资源管理
 

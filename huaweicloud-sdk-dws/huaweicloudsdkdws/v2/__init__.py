@@ -65,6 +65,8 @@ from huaweicloudsdkdws.v2.model.create_cluster_info import CreateClusterInfo
 from huaweicloudsdkdws.v2.model.create_cluster_request import CreateClusterRequest
 from huaweicloudsdkdws.v2.model.create_cluster_request_body import CreateClusterRequestBody
 from huaweicloudsdkdws.v2.model.create_cluster_response import CreateClusterResponse
+from huaweicloudsdkdws.v2.model.create_cluster_v2_request import CreateClusterV2Request
+from huaweicloudsdkdws.v2.model.create_cluster_v2_response import CreateClusterV2Response
 from huaweicloudsdkdws.v2.model.create_cluster_workload_request import CreateClusterWorkloadRequest
 from huaweicloudsdkdws.v2.model.create_cluster_workload_response import CreateClusterWorkloadResponse
 from huaweicloudsdkdws.v2.model.create_data_source_request import CreateDataSourceRequest
@@ -277,6 +279,8 @@ from huaweicloudsdkdws.v2.model.update_event_sub_request import UpdateEventSubRe
 from huaweicloudsdkdws.v2.model.update_event_sub_response import UpdateEventSubResponse
 from huaweicloudsdkdws.v2.model.update_maintenance_window_request import UpdateMaintenanceWindowRequest
 from huaweicloudsdkdws.v2.model.update_maintenance_window_response import UpdateMaintenanceWindowResponse
+from huaweicloudsdkdws.v2.model.v2_create_cluster import V2CreateCluster
+from huaweicloudsdkdws.v2.model.v2_create_cluster_req import V2CreateClusterReq
 from huaweicloudsdkdws.v2.model.volume import Volume
 from huaweicloudsdkdws.v2.model.volume_resp import VolumeResp
 from huaweicloudsdkdws.v2.model.workload_plan_req import WorkloadPlanReq

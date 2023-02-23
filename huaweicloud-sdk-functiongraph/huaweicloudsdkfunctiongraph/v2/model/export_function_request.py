@@ -40,11 +40,11 @@ class ExportFunctionRequest:
 
         :param function_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。
         :type function_urn: str
-        :param config: 是否导出函数配置
+        :param config: 是否导出函数配置，默认为false
         :type config: bool
-        :param code: 是否导出函数代码
+        :param code: 是否导出函数代码，默认为false
         :type code: bool
-        :param type: 兼容老的方式，type&#x3D;code代表导出代码,type&#x3D;config代码导出配置
+        :param type: 不兼容与code、config参数混用；type&#x3D;code代表导出代码,type&#x3D;config代码导出配置
         :type type: str
         """
         
@@ -90,7 +90,7 @@ class ExportFunctionRequest:
     def config(self):
         """Gets the config of this ExportFunctionRequest.
 
-        是否导出函数配置
+        是否导出函数配置，默认为false
 
         :return: The config of this ExportFunctionRequest.
         :rtype: bool
@@ -101,7 +101,7 @@ class ExportFunctionRequest:
     def config(self, config):
         """Sets the config of this ExportFunctionRequest.
 
-        是否导出函数配置
+        是否导出函数配置，默认为false
 
         :param config: The config of this ExportFunctionRequest.
         :type config: bool
@@ -112,7 +112,7 @@ class ExportFunctionRequest:
     def code(self):
         """Gets the code of this ExportFunctionRequest.
 
-        是否导出函数代码
+        是否导出函数代码，默认为false
 
         :return: The code of this ExportFunctionRequest.
         :rtype: bool
@@ -123,7 +123,7 @@ class ExportFunctionRequest:
     def code(self, code):
         """Sets the code of this ExportFunctionRequest.
 
-        是否导出函数代码
+        是否导出函数代码，默认为false
 
         :param code: The code of this ExportFunctionRequest.
         :type code: bool
@@ -134,7 +134,7 @@ class ExportFunctionRequest:
     def type(self):
         """Gets the type of this ExportFunctionRequest.
 
-        兼容老的方式，type=code代表导出代码,type=config代码导出配置
+        不兼容与code、config参数混用；type=code代表导出代码,type=config代码导出配置
 
         :return: The type of this ExportFunctionRequest.
         :rtype: str
@@ -145,7 +145,7 @@ class ExportFunctionRequest:
     def type(self, type):
         """Sets the type of this ExportFunctionRequest.
 
-        兼容老的方式，type=code代表导出代码,type=config代码导出配置
+        不兼容与code、config参数混用；type=code代表导出代码,type=config代码导出配置
 
         :param type: The type of this ExportFunctionRequest.
         :type type: str

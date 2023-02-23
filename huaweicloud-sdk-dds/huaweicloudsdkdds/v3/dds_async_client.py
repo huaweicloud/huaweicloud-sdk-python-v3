@@ -5339,6 +5339,69 @@ class DdsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def shrink_instance_nodes_async(self, request):
+        """删除实例的节点
+
+        删除实例的节点。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShrinkInstanceNodes
+        :type request: :class:`huaweicloudsdkdds.v3.ShrinkInstanceNodesRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.ShrinkInstanceNodesResponse`
+        """
+        return self.shrink_instance_nodes_with_http_info(request)
+
+    def shrink_instance_nodes_with_http_info(self, request):
+        all_params = ['instance_id', 'reduce_replicaset_node_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/nodes',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShrinkInstanceNodesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def switch_configuration_async(self, request):
         """应用参数模板
 

@@ -38,8 +38,8 @@ def test_endpoint_without_scheme():
         .with_endpoint(MOCK_ENDPOINT_WITHOUT_SCHEME) \
         .build()
 
-    assert hasattr(client, "_endpoint") is True
-    assert getattr(client, "_endpoint") == MOCK_ENDPOINT
+    assert hasattr(client, "_endpoints") is True
+    assert getattr(client, "_endpoints")[0] == MOCK_ENDPOINT
 
 
 if __name__ == "__main__":

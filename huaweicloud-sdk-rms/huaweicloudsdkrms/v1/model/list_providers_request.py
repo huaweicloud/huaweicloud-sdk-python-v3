@@ -22,16 +22,18 @@ class ListProvidersRequest:
     openapi_types = {
         'offset': 'int',
         'limit': 'int',
+        'track': 'str',
         'x_language': 'str'
     }
 
     attribute_map = {
         'offset': 'offset',
         'limit': 'limit',
+        'track': 'track',
         'x_language': 'X-Language'
     }
 
-    def __init__(self, offset=None, limit=None, x_language=None):
+    def __init__(self, offset=None, limit=None, track=None, x_language=None):
         """ListProvidersRequest
 
         The model defined in huaweicloud sdk
@@ -40,6 +42,8 @@ class ListProvidersRequest:
         :type offset: int
         :param limit: 最大的返回数量
         :type limit: int
+        :param track: 资源是否默认收集
+        :type track: str
         :param x_language: 选择接口返回的信息的语言，默认为\&quot;zh-cn\&quot;中文
         :type x_language: str
         """
@@ -48,6 +52,7 @@ class ListProvidersRequest:
 
         self._offset = None
         self._limit = None
+        self._track = None
         self._x_language = None
         self.discriminator = None
 
@@ -55,6 +60,8 @@ class ListProvidersRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if track is not None:
+            self.track = track
         if x_language is not None:
             self.x_language = x_language
 
@@ -101,6 +108,28 @@ class ListProvidersRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def track(self):
+        """Gets the track of this ListProvidersRequest.
+
+        资源是否默认收集
+
+        :return: The track of this ListProvidersRequest.
+        :rtype: str
+        """
+        return self._track
+
+    @track.setter
+    def track(self, track):
+        """Sets the track of this ListProvidersRequest.
+
+        资源是否默认收集
+
+        :param track: The track of this ListProvidersRequest.
+        :type track: str
+        """
+        self._track = track
 
     @property
     def x_language(self):

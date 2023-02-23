@@ -1905,6 +1905,84 @@ class BssClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_customer_account_change_records(self, request):
+        """查询收支明细(客户)
+
+        功能描述：客户可以查询自身的收支明细情况(此接口不适用于伙伴的代售类、转售类客户。)
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCustomerAccountChangeRecords
+        :type request: :class:`huaweicloudsdkbss.v2.ListCustomerAccountChangeRecordsRequest`
+        :rtype: :class:`huaweicloudsdkbss.v2.ListCustomerAccountChangeRecordsResponse`
+        """
+        return self.list_customer_account_change_records_with_http_info(request)
+
+    def list_customer_account_change_records_with_http_info(self, request):
+        all_params = ['balance_type', 'revenue_expense_type', 'trade_type', 'trade_time_begin', 'trade_time_end', 'trade_id', 'payment_channel_id', 'payment_channel_no', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'balance_type' in local_var_params:
+            query_params.append(('balance_type', local_var_params['balance_type']))
+        if 'revenue_expense_type' in local_var_params:
+            query_params.append(('revenue_expense_type', local_var_params['revenue_expense_type']))
+        if 'trade_type' in local_var_params:
+            query_params.append(('trade_type', local_var_params['trade_type']))
+        if 'trade_time_begin' in local_var_params:
+            query_params.append(('trade_time_begin', local_var_params['trade_time_begin']))
+        if 'trade_time_end' in local_var_params:
+            query_params.append(('trade_time_end', local_var_params['trade_time_end']))
+        if 'trade_id' in local_var_params:
+            query_params.append(('trade_id', local_var_params['trade_id']))
+        if 'payment_channel_id' in local_var_params:
+            query_params.append(('payment_channel_id', local_var_params['payment_channel_id']))
+        if 'payment_channel_no' in local_var_params:
+            query_params.append(('payment_channel_no', local_var_params['payment_channel_no']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/accounts/customer-accounts/account-change-records',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListCustomerAccountChangeRecordsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_customer_bills_fee_records(self, request):
         """查询流水账单
 

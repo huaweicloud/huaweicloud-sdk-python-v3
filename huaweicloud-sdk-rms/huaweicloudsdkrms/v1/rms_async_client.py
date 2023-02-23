@@ -42,6 +42,947 @@ class RmsAsyncClient(Client):
 
         return ClientBuilder(clazz, "GlobalCredentials")
 
+    def create_aggregation_authorization_async(self, request):
+        """创建资源聚合器授权
+
+        给资源聚合器帐号授予从源帐号收集数据的权限。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateAggregationAuthorization
+        :type request: :class:`huaweicloudsdkrms.v1.CreateAggregationAuthorizationRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.CreateAggregationAuthorizationResponse`
+        """
+        return self.create_aggregation_authorization_with_http_info(request)
+
+    def create_aggregation_authorization_with_http_info(self, request):
+        all_params = ['aggregation_authorization_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/aggregation-authorization',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateAggregationAuthorizationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_configuration_aggregator_async(self, request):
+        """创建资源聚合器
+
+        创建资源聚合器。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateConfigurationAggregator
+        :type request: :class:`huaweicloudsdkrms.v1.CreateConfigurationAggregatorRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.CreateConfigurationAggregatorResponse`
+        """
+        return self.create_configuration_aggregator_with_http_info(request)
+
+    def create_configuration_aggregator_with_http_info(self, request):
+        all_params = ['configuration_aggregator_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateConfigurationAggregatorResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_aggregation_authorization_async(self, request):
+        """删除资源聚合器授权
+
+        删除指定资源聚合器帐号的授权。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteAggregationAuthorization
+        :type request: :class:`huaweicloudsdkrms.v1.DeleteAggregationAuthorizationRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.DeleteAggregationAuthorizationResponse`
+        """
+        return self.delete_aggregation_authorization_with_http_info(request)
+
+    def delete_aggregation_authorization_with_http_info(self, request):
+        all_params = ['authorized_account_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'authorized_account_id' in local_var_params:
+            path_params['authorized_account_id'] = local_var_params['authorized_account_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/aggregation-authorization/{authorized_account_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteAggregationAuthorizationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_configuration_aggregator_async(self, request):
+        """删除资源聚合器
+
+        删除资源聚合器。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteConfigurationAggregator
+        :type request: :class:`huaweicloudsdkrms.v1.DeleteConfigurationAggregatorRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.DeleteConfigurationAggregatorResponse`
+        """
+        return self.delete_configuration_aggregator_with_http_info(request)
+
+    def delete_configuration_aggregator_with_http_info(self, request):
+        all_params = ['aggregator_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'aggregator_id' in local_var_params:
+            path_params['aggregator_id'] = local_var_params['aggregator_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/{aggregator_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteConfigurationAggregatorResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_pending_aggregation_request_async(self, request):
+        """删除聚合器帐号中挂起的授权请求
+
+        删除聚合器帐号中挂起的授权请求。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeletePendingAggregationRequest
+        :type request: :class:`huaweicloudsdkrms.v1.DeletePendingAggregationRequestRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.DeletePendingAggregationRequestResponse`
+        """
+        return self.delete_pending_aggregation_request_with_http_info(request)
+
+    def delete_pending_aggregation_request_with_http_info(self, request):
+        all_params = ['requester_account_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'requester_account_id' in local_var_params:
+            path_params['requester_account_id'] = local_var_params['requester_account_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/pending-aggregation-request/{requester_account_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeletePendingAggregationRequestResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_aggregate_discovered_resources_async(self, request):
+        """查询聚合器中资源的列表
+
+        查询资源聚合器中特定资源的列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAggregateDiscoveredResources
+        :type request: :class:`huaweicloudsdkrms.v1.ListAggregateDiscoveredResourcesRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ListAggregateDiscoveredResourcesResponse`
+        """
+        return self.list_aggregate_discovered_resources_with_http_info(request)
+
+    def list_aggregate_discovered_resources_with_http_info(self, request):
+        all_params = ['limit', 'marker', 'aggregate_discovered_resources_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/aggregate-data/aggregate-discovered-resources',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListAggregateDiscoveredResourcesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_aggregation_authorizations_async(self, request):
+        """查询资源聚合器授权列表
+
+        查询授权过的资源聚合器列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAggregationAuthorizations
+        :type request: :class:`huaweicloudsdkrms.v1.ListAggregationAuthorizationsRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ListAggregationAuthorizationsResponse`
+        """
+        return self.list_aggregation_authorizations_with_http_info(request)
+
+    def list_aggregation_authorizations_with_http_info(self, request):
+        all_params = ['account_id', 'limit', 'marker']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'account_id' in local_var_params:
+            query_params.append(('account_id', local_var_params['account_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/aggregation-authorization',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListAggregationAuthorizationsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_configuration_aggregators_async(self, request):
+        """查询资源聚合器列表
+
+        查询资源聚合器列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListConfigurationAggregators
+        :type request: :class:`huaweicloudsdkrms.v1.ListConfigurationAggregatorsRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ListConfigurationAggregatorsResponse`
+        """
+        return self.list_configuration_aggregators_with_http_info(request)
+
+    def list_configuration_aggregators_with_http_info(self, request):
+        all_params = ['aggregator_name', 'limit', 'marker']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'aggregator_name' in local_var_params:
+            query_params.append(('aggregator_name', local_var_params['aggregator_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListConfigurationAggregatorsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_pending_aggregation_requests_async(self, request):
+        """查询所有挂起的聚合请求列表
+
+        查询所有挂起的聚合请求列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPendingAggregationRequests
+        :type request: :class:`huaweicloudsdkrms.v1.ListPendingAggregationRequestsRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ListPendingAggregationRequestsResponse`
+        """
+        return self.list_pending_aggregation_requests_with_http_info(request)
+
+    def list_pending_aggregation_requests_with_http_info(self, request):
+        all_params = ['account_id', 'limit', 'marker']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'account_id' in local_var_params:
+            query_params.append(('account_id', local_var_params['account_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/pending-aggregation-request',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListPendingAggregationRequestsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def run_aggregate_resource_query_async(self, request):
+        """对指定聚合器执行高级查询
+
+        对指定聚合器执行高级查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RunAggregateResourceQuery
+        :type request: :class:`huaweicloudsdkrms.v1.RunAggregateResourceQueryRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.RunAggregateResourceQueryResponse`
+        """
+        return self.run_aggregate_resource_query_with_http_info(request)
+
+    def run_aggregate_resource_query_with_http_info(self, request):
+        all_params = ['aggregator_id', 'query_run_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'aggregator_id' in local_var_params:
+            path_params['aggregator_id'] = local_var_params['aggregator_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/{aggregator_id}/run-query',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RunAggregateResourceQueryResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_aggregate_discovered_resource_counts_async(self, request):
+        """查询聚合器中帐号资源的计数
+
+        查询聚合器中帐号资源的计数，支持通过过滤器和GroupByKey来统计资源数量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAggregateDiscoveredResourceCounts
+        :type request: :class:`huaweicloudsdkrms.v1.ShowAggregateDiscoveredResourceCountsRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ShowAggregateDiscoveredResourceCountsResponse`
+        """
+        return self.show_aggregate_discovered_resource_counts_with_http_info(request)
+
+    def show_aggregate_discovered_resource_counts_with_http_info(self, request):
+        all_params = ['aggregate_discovered_resource_counts_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/aggregate-data/aggregate-discovered-resource-counts',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowAggregateDiscoveredResourceCountsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_aggregate_resource_config_async(self, request):
+        """查询源帐号中资源的详情
+
+        查询源帐号中特定资源的详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAggregateResourceConfig
+        :type request: :class:`huaweicloudsdkrms.v1.ShowAggregateResourceConfigRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ShowAggregateResourceConfigResponse`
+        """
+        return self.show_aggregate_resource_config_with_http_info(request)
+
+    def show_aggregate_resource_config_with_http_info(self, request):
+        all_params = ['aggregate_resource_config_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/aggregate-resource-config',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowAggregateResourceConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_configuration_aggregator_async(self, request):
+        """查询指定资源聚合器
+
+        查询指定资源聚合器。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowConfigurationAggregator
+        :type request: :class:`huaweicloudsdkrms.v1.ShowConfigurationAggregatorRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ShowConfigurationAggregatorResponse`
+        """
+        return self.show_configuration_aggregator_with_http_info(request)
+
+    def show_configuration_aggregator_with_http_info(self, request):
+        all_params = ['aggregator_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'aggregator_id' in local_var_params:
+            path_params['aggregator_id'] = local_var_params['aggregator_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/{aggregator_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowConfigurationAggregatorResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_configuration_aggregator_sources_status_async(self, request):
+        """查询指定资源聚合器聚合帐号的状态信息
+
+        查询指定资源聚合器聚合帐号的状态信息，状态包括验证源帐号和聚合器帐号之间授权的信息。如果失败，状态包含相关的错误码或消息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowConfigurationAggregatorSourcesStatus
+        :type request: :class:`huaweicloudsdkrms.v1.ShowConfigurationAggregatorSourcesStatusRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ShowConfigurationAggregatorSourcesStatusResponse`
+        """
+        return self.show_configuration_aggregator_sources_status_with_http_info(request)
+
+    def show_configuration_aggregator_sources_status_with_http_info(self, request):
+        all_params = ['aggregator_id', 'update_status', 'limit', 'marker']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'aggregator_id' in local_var_params:
+            path_params['aggregator_id'] = local_var_params['aggregator_id']
+
+        query_params = []
+        if 'update_status' in local_var_params:
+            query_params.append(('update_status', local_var_params['update_status']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/{aggregator_id}/aggregator-sources-status',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowConfigurationAggregatorSourcesStatusResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_configuration_aggregator_async(self, request):
+        """更新资源聚合器
+
+        更新资源聚合器。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateConfigurationAggregator
+        :type request: :class:`huaweicloudsdkrms.v1.UpdateConfigurationAggregatorRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.UpdateConfigurationAggregatorResponse`
+        """
+        return self.update_configuration_aggregator_with_http_info(request)
+
+    def update_configuration_aggregator_with_http_info(self, request):
+        all_params = ['aggregator_id', 'configuration_aggregator_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'aggregator_id' in local_var_params:
+            path_params['aggregator_id'] = local_var_params['aggregator_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/{aggregator_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateConfigurationAggregatorResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_resource_history_async(self, request):
         """查询资源历史
 
@@ -113,6 +1054,69 @@ class RmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_organization_policy_assignment_async(self, request):
+        """创建或更新组织合规规则
+
+        创建或更新组织合规规则，如果规则名称已存在，则为更新操作。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateOrganizationPolicyAssignment
+        :type request: :class:`huaweicloudsdkrms.v1.CreateOrganizationPolicyAssignmentRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.CreateOrganizationPolicyAssignmentResponse`
+        """
+        return self.create_organization_policy_assignment_with_http_info(request)
+
+    def create_organization_policy_assignment_with_http_info(self, request):
+        all_params = ['organization_id', 'organization_policy_assignment_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'organization_id' in local_var_params:
+            path_params['organization_id'] = local_var_params['organization_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/organizations/{organization_id}/policy-assignments',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateOrganizationPolicyAssignmentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_policy_assignments_async(self, request):
         """创建合规规则
 
@@ -169,6 +1173,69 @@ class RmsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreatePolicyAssignmentsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_organization_policy_assignment_async(self, request):
+        """删除组织合规规则
+
+        删除组织合规规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteOrganizationPolicyAssignment
+        :type request: :class:`huaweicloudsdkrms.v1.DeleteOrganizationPolicyAssignmentRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.DeleteOrganizationPolicyAssignmentResponse`
+        """
+        return self.delete_organization_policy_assignment_with_http_info(request)
+
+    def delete_organization_policy_assignment_with_http_info(self, request):
+        all_params = ['organization_id', 'organization_policy_assignment_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'organization_id' in local_var_params:
+            path_params['organization_id'] = local_var_params['organization_id']
+        if 'organization_policy_assignment_id' in local_var_params:
+            path_params['organization_policy_assignment_id'] = local_var_params['organization_policy_assignment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/organizations/{organization_id}/policy-assignments/{organization_policy_assignment_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteOrganizationPolicyAssignmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -413,6 +1480,73 @@ class RmsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListBuiltInPolicyDefinitionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_organization_policy_assignments_async(self, request):
+        """查询组织合规规则列表
+
+        查询组织合规规则列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOrganizationPolicyAssignments
+        :type request: :class:`huaweicloudsdkrms.v1.ListOrganizationPolicyAssignmentsRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ListOrganizationPolicyAssignmentsResponse`
+        """
+        return self.list_organization_policy_assignments_with_http_info(request)
+
+    def list_organization_policy_assignments_with_http_info(self, request):
+        all_params = ['organization_id', 'organization_policy_assignment_name', 'limit', 'marker']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'organization_id' in local_var_params:
+            path_params['organization_id'] = local_var_params['organization_id']
+
+        query_params = []
+        if 'organization_policy_assignment_name' in local_var_params:
+            query_params.append(('organization_policy_assignment_name', local_var_params['organization_policy_assignment_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/organizations/{organization_id}/policy-assignments',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListOrganizationPolicyAssignmentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -864,6 +1998,205 @@ class RmsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowEvaluationStateByAssignmentIdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_organization_policy_assignment_async(self, request):
+        """查询指定组织合规规则
+
+        查询指定组织合规规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOrganizationPolicyAssignment
+        :type request: :class:`huaweicloudsdkrms.v1.ShowOrganizationPolicyAssignmentRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ShowOrganizationPolicyAssignmentResponse`
+        """
+        return self.show_organization_policy_assignment_with_http_info(request)
+
+    def show_organization_policy_assignment_with_http_info(self, request):
+        all_params = ['organization_id', 'organization_policy_assignment_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'organization_id' in local_var_params:
+            path_params['organization_id'] = local_var_params['organization_id']
+        if 'organization_policy_assignment_id' in local_var_params:
+            path_params['organization_policy_assignment_id'] = local_var_params['organization_policy_assignment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/organizations/{organization_id}/policy-assignments/{organization_policy_assignment_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowOrganizationPolicyAssignmentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_organization_policy_assignment_detailed_status_async(self, request):
+        """查询组织内每个成员帐号合规规则部署的详细状态
+
+        查询组织内每个成员帐号合规规则部署的详细状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOrganizationPolicyAssignmentDetailedStatus
+        :type request: :class:`huaweicloudsdkrms.v1.ShowOrganizationPolicyAssignmentDetailedStatusRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ShowOrganizationPolicyAssignmentDetailedStatusResponse`
+        """
+        return self.show_organization_policy_assignment_detailed_status_with_http_info(request)
+
+    def show_organization_policy_assignment_detailed_status_with_http_info(self, request):
+        all_params = ['organization_id', 'organization_policy_assignment_name', 'status', 'limit', 'marker']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'organization_id' in local_var_params:
+            path_params['organization_id'] = local_var_params['organization_id']
+
+        query_params = []
+        if 'organization_policy_assignment_name' in local_var_params:
+            query_params.append(('organization_policy_assignment_name', local_var_params['organization_policy_assignment_name']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/organizations/{organization_id}/policy-assignment-detailed-status',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowOrganizationPolicyAssignmentDetailedStatusResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_organization_policy_assignment_statuses_async(self, request):
+        """查询组织合规规则部署状态
+
+        查询组织合规规则部署状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOrganizationPolicyAssignmentStatuses
+        :type request: :class:`huaweicloudsdkrms.v1.ShowOrganizationPolicyAssignmentStatusesRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ShowOrganizationPolicyAssignmentStatusesResponse`
+        """
+        return self.show_organization_policy_assignment_statuses_with_http_info(request)
+
+    def show_organization_policy_assignment_statuses_with_http_info(self, request):
+        all_params = ['organization_id', 'organization_policy_assignment_name', 'limit', 'marker']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'organization_id' in local_var_params:
+            path_params['organization_id'] = local_var_params['organization_id']
+
+        query_params = []
+        if 'organization_policy_assignment_name' in local_var_params:
+            query_params.append(('organization_policy_assignment_name', local_var_params['organization_policy_assignment_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/organizations/{organization_id}/policy-assignment-statuses',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowOrganizationPolicyAssignmentStatusesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1617,6 +2950,227 @@ class RmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_resource_relations_detail_async(self, request):
+        """列举资源关系详情
+
+        指定资源ID，查询该资源与其他资源的关联关系，可以指定关系方向为“in”或者“out”，需要当帐号有rms:resources:getRelation权限。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowResourceRelationsDetail
+        :type request: :class:`huaweicloudsdkrms.v1.ShowResourceRelationsDetailRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ShowResourceRelationsDetailResponse`
+        """
+        return self.show_resource_relations_detail_with_http_info(request)
+
+    def show_resource_relations_detail_with_http_info(self, request):
+        all_params = ['resource_id', 'direction', 'limit', 'marker']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+        if 'direction' in local_var_params:
+            query_params.append(('direction', local_var_params['direction']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/all-resources/{resource_id}/relations',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowResourceRelationsDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def collect_all_resources_summary_async(self, request):
+        """列举资源概要
+
+        查询当前帐号的资源概览。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CollectAllResourcesSummary
+        :type request: :class:`huaweicloudsdkrms.v1.CollectAllResourcesSummaryRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.CollectAllResourcesSummaryResponse`
+        """
+        return self.collect_all_resources_summary_with_http_info(request)
+
+    def collect_all_resources_summary_with_http_info(self, request):
+        all_params = ['name', 'type', 'region_id', 'ep_id', 'project_id', 'tags']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+            collection_formats['type'] = 'csv'
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+            collection_formats['region_id'] = 'csv'
+        if 'ep_id' in local_var_params:
+            query_params.append(('ep_id', local_var_params['ep_id']))
+            collection_formats['ep_id'] = 'csv'
+        if 'project_id' in local_var_params:
+            query_params.append(('project_id', local_var_params['project_id']))
+            collection_formats['project_id'] = 'csv'
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+            collection_formats['tags'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/all-resources/summary',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CollectAllResourcesSummaryResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def count_all_resources_async(self, request):
+        """查询资源数量
+
+        查询当前帐号的资源数量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CountAllResources
+        :type request: :class:`huaweicloudsdkrms.v1.CountAllResourcesRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.CountAllResourcesResponse`
+        """
+        return self.count_all_resources_with_http_info(request)
+
+    def count_all_resources_with_http_info(self, request):
+        all_params = ['id', 'name', 'type', 'region_id', 'ep_id', 'project_id', 'tags']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+            collection_formats['type'] = 'csv'
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+            collection_formats['region_id'] = 'csv'
+        if 'ep_id' in local_var_params:
+            query_params.append(('ep_id', local_var_params['ep_id']))
+            collection_formats['ep_id'] = 'csv'
+        if 'project_id' in local_var_params:
+            query_params.append(('project_id', local_var_params['project_id']))
+            collection_formats['project_id'] = 'csv'
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+            collection_formats['tags'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/all-resources/count',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CountAllResourcesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_all_resources_async(self, request):
         """列举所有资源
 
@@ -1632,7 +3186,7 @@ class RmsAsyncClient(Client):
         return self.list_all_resources_with_http_info(request)
 
     def list_all_resources_with_http_info(self, request):
-        all_params = ['region_id', 'ep_id', 'type', 'limit', 'marker']
+        all_params = ['region_id', 'ep_id', 'type', 'limit', 'marker', 'id', 'name', 'tags']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1655,6 +3209,13 @@ class RmsAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'marker' in local_var_params:
             query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+            collection_formats['tags'] = 'multi'
 
         header_params = {}
 
@@ -1686,6 +3247,71 @@ class RmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_all_tags_async(self, request):
+        """列举资源标签
+
+        查询当前帐号下所有资源的标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAllTags
+        :type request: :class:`huaweicloudsdkrms.v1.ListAllTagsRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ListAllTagsResponse`
+        """
+        return self.list_all_tags_with_http_info(request)
+
+    def list_all_tags_with_http_info(self, request):
+        all_params = ['key', 'marker', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'key' in local_var_params:
+            query_params.append(('key', local_var_params['key']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/all-resources/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListAllTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_providers_async(self, request):
         """列举云服务
 
@@ -1701,7 +3327,7 @@ class RmsAsyncClient(Client):
         return self.list_providers_with_http_info(request)
 
     def list_providers_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'x_language']
+        all_params = ['offset', 'limit', 'track', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1718,6 +3344,8 @@ class RmsAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'track' in local_var_params:
+            query_params.append(('track', local_var_params['track']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -1884,6 +3512,67 @@ class RmsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowResourceByIdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_resource_detail_async(self, request):
+        """查询帐号下的单个资源
+
+        查询当前帐号下的单个资源。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowResourceDetail
+        :type request: :class:`huaweicloudsdkrms.v1.ShowResourceDetailRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ShowResourceDetailResponse`
+        """
+        return self.show_resource_detail_with_http_info(request)
+
+    def show_resource_detail_with_http_info(self, request):
+        all_params = ['resource_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth', 'PkiTokenAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/all-resources/{resource_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowResourceDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -98,7 +98,7 @@ class ShowCertificateResponse(SdkResponse):
         :type not_before: str
         :param not_after: 证书失效时间，没有获取到有效值时为空。
         :type not_after: str
-        :param validity_period: 证书有效期，按月为单位。
+        :param validity_period: 证书有效期，按月为单位。[云证书管理服务提供了一种购买多年有效期证书的解决方案，这种多年有效期证书生效方式为多张有效期为1年的SSL证书叠加生效，例如：有效期为“3年”的证书实际包含3张有效期为1年且规格相同的SSL证书，在第一张证书到期前30天，系统自动以第一张证书的信息申请第二张证书，在第二张证书到期前30天，系统自动以第一张证书的信息申请第三张证书。](tag:hws)
         :type validity_period: int
         :param validation_method: 域名认证方式，取值如下：DNS、FILE、EMAIL。
         :type validation_method: str
@@ -459,7 +459,7 @@ class ShowCertificateResponse(SdkResponse):
     def validity_period(self):
         """Gets the validity_period of this ShowCertificateResponse.
 
-        证书有效期，按月为单位。
+        证书有效期，按月为单位。[云证书管理服务提供了一种购买多年有效期证书的解决方案，这种多年有效期证书生效方式为多张有效期为1年的SSL证书叠加生效，例如：有效期为“3年”的证书实际包含3张有效期为1年且规格相同的SSL证书，在第一张证书到期前30天，系统自动以第一张证书的信息申请第二张证书，在第二张证书到期前30天，系统自动以第一张证书的信息申请第三张证书。](tag:hws)
 
         :return: The validity_period of this ShowCertificateResponse.
         :rtype: int
@@ -470,7 +470,7 @@ class ShowCertificateResponse(SdkResponse):
     def validity_period(self, validity_period):
         """Sets the validity_period of this ShowCertificateResponse.
 
-        证书有效期，按月为单位。
+        证书有效期，按月为单位。[云证书管理服务提供了一种购买多年有效期证书的解决方案，这种多年有效期证书生效方式为多张有效期为1年的SSL证书叠加生效，例如：有效期为“3年”的证书实际包含3张有效期为1年且规格相同的SSL证书，在第一张证书到期前30天，系统自动以第一张证书的信息申请第二张证书，在第二张证书到期前30天，系统自动以第一张证书的信息申请第三张证书。](tag:hws)
 
         :param validity_period: The validity_period of this ShowCertificateResponse.
         :type validity_period: int

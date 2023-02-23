@@ -1,3 +1,147 @@
+# 3.1.27 2023-02-23
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 支持接口`ListCustomerAccountChangeRecords`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CBR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListVault`响应参数`value`改为必填
+  - 接口`CreateVault`:
+    - 请求参数`value`改为必填
+    - 响应参数`value`改为必填
+  - 接口`ShowVault`响应参数`value`改为必填
+  - 接口`UpdateVault`:
+    - 请求参数`value`改为必填
+    - 响应参数`value`改为必填
+  - 接口`ListProtectable`响应参数`value`改为必填
+  - 接口`ShowProtectable`响应参数`value`改为必填
+  - 接口`ShowVaultResourceInstances`响应参数`value`改为必填
+
+### HuaweiCloud SDK CloudIDE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateRequest`:
+    - 新增请求参数 `request_type`、`above_text`、`following_text`
+    - 新增响应参数 `dispatched_task_number`
+    - 请求参数`signature`改为非必填
+  - 接口`ShowResult`新增响应参数 `request_type`
+
+### HuaweiCloud SDK CPH
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ChangeCloudPhoneServerModel`新增请求参数 `phone_model_name`
+
+### HuaweiCloud SDK CSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateLoadIkThesaurus`请求参数`mainObject`、`stopObject`、`synonymObject`改为非必填
+
+### HuaweiCloud SDK DDS
+
+- _新增特性_
+  - 支持接口`ShrinkInstanceNodes`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DWS
+
+- _新增特性_
+  - 支持接口`CreateClusterV2`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListRoutingRules`新增请求参数 `active`
+  - 接口`CreateRuleAction`新增请求参数 `mysql_forwarding`
+  - 接口`ListRuleActions`新增响应参数 `mysql_forwarding`
+  - 接口`UpdateRuleAction`:
+    - 新增请求参数 `mysql_forwarding`
+    - 新增响应参数 `mysql_forwarding`
+  - 接口`ShowRuleAction`新增响应参数 `mysql_forwarding`
+
+### HuaweiCloud SDK LakeFormation
+
+- _新增特性_
+  - 支持接口`BatchUpdateLakeFormationInstanceTags`、`CreateLakeFormationInstance`、`ListPolicy`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowLakeFormationInstance`移除响应参数 `key`、`value`
+  - 接口`SetPartitionColumnStatistics`移除响应参数 `column_statistics_desc`、`column_statistics_objects`
+
+### HuaweiCloud SDK MRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowJobExeListNew`:
+    - 请求参数`job_state`新增枚举值`FAILED`、`KILLED`、`NEW`、`NEW_SAVING`、`SUBMITTED`、`ACCEPTED`、`RUNNING`、`FINISHED`, 移除枚举值`FAILED：失败`、`KILLED：已终止`、`NEW：已创建`、`NEW_SAVING：已创建保存中`、`SUBMITTED：已提交`、`ACCEPTED：已接受`、`RUNNING：运行中`、`FINISHED：已完成`
+    - 请求参数`job_result`新增枚举值`FAILED`、`KILLED`、`UNDEFINED`、`SUCCEEDED`, 移除枚举值`FAILED：执行失败的作业。`、`KILLED：执行中被手动终止的作业。`、`UNDEFINED：正在执行的作业。`、`SUCCEEDED：执行成功的作业。`
+  - 接口`ShowHdfsFileList`请求参数`sort_key`新增枚举值`path_suffix`、`length`、`modification_time`, 移除枚举值`path_suffix：文件或目录名称`、`length：文件大小`、`modification_time：修改时间`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`UpdateDbUserPrivilege`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateInstance`新增请求参数 `X-Client-Token`
+
+### HuaweiCloud SDK SCM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ImportCertificate`请求参数`certificate_chain`改为非必填
+  - 接口`ExportCertificate`新增响应参数 `entire_certificate`
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdatePremiumHost`新增请求参数 `flag`
+
 # 3.1.26 2023-02-16
 
 ### HuaweiCloud SDK AOM
