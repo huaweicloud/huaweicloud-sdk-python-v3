@@ -40,7 +40,7 @@ class RateControl:
         :type have_rate_control: bool
         :param time_delay: 每批间隔。
         :type time_delay: int
-        :param max: 是否分批发布。
+        :param max: 每批支持的最大实例数。
         :type max: int
         """
         
@@ -106,7 +106,7 @@ class RateControl:
     def max(self):
         """Gets the max of this RateControl.
 
-        是否分批发布。
+        每批支持的最大实例数。
 
         :return: The max of this RateControl.
         :rtype: int
@@ -117,7 +117,7 @@ class RateControl:
     def max(self, max):
         """Sets the max of this RateControl.
 
-        是否分批发布。
+        每批支持的最大实例数。
 
         :param max: The max of this RateControl.
         :type max: int

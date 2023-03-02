@@ -26,7 +26,9 @@ class ListCommitsRequest:
         'until': 'str',
         'path': 'str',
         'all': 'bool',
-        'with_stats': 'bool'
+        'with_stats': 'bool',
+        'page': 'int',
+        'per_page': 'int'
     }
 
     attribute_map = {
@@ -36,10 +38,12 @@ class ListCommitsRequest:
         'until': 'until',
         'path': 'path',
         'all': 'all',
-        'with_stats': 'with_stats'
+        'with_stats': 'with_stats',
+        'page': 'page',
+        'per_page': 'per_page'
     }
 
-    def __init__(self, repo_id=None, ref_name=None, since=None, until=None, path=None, all=None, with_stats=None):
+    def __init__(self, repo_id=None, ref_name=None, since=None, until=None, path=None, all=None, with_stats=None, page=None, per_page=None):
         """ListCommitsRequest
 
         The model defined in huaweicloud sdk
@@ -58,6 +62,10 @@ class ListCommitsRequest:
         :type all: bool
         :param with_stats: 有关每个提交的统计信息是否添加到响应中
         :type with_stats: bool
+        :param page: 页码
+        :type page: int
+        :param per_page: 每页条目数
+        :type per_page: int
         """
         
         
@@ -69,6 +77,8 @@ class ListCommitsRequest:
         self._path = None
         self._all = None
         self._with_stats = None
+        self._page = None
+        self._per_page = None
         self.discriminator = None
 
         self.repo_id = repo_id
@@ -84,6 +94,10 @@ class ListCommitsRequest:
             self.all = all
         if with_stats is not None:
             self.with_stats = with_stats
+        if page is not None:
+            self.page = page
+        if per_page is not None:
+            self.per_page = per_page
 
     @property
     def repo_id(self):
@@ -238,6 +252,50 @@ class ListCommitsRequest:
         :type with_stats: bool
         """
         self._with_stats = with_stats
+
+    @property
+    def page(self):
+        """Gets the page of this ListCommitsRequest.
+
+        页码
+
+        :return: The page of this ListCommitsRequest.
+        :rtype: int
+        """
+        return self._page
+
+    @page.setter
+    def page(self, page):
+        """Sets the page of this ListCommitsRequest.
+
+        页码
+
+        :param page: The page of this ListCommitsRequest.
+        :type page: int
+        """
+        self._page = page
+
+    @property
+    def per_page(self):
+        """Gets the per_page of this ListCommitsRequest.
+
+        每页条目数
+
+        :return: The per_page of this ListCommitsRequest.
+        :rtype: int
+        """
+        return self._per_page
+
+    @per_page.setter
+    def per_page(self, per_page):
+        """Sets the per_page of this ListCommitsRequest.
+
+        每页条目数
+
+        :param per_page: The per_page of this ListCommitsRequest.
+        :type per_page: int
+        """
+        self._per_page = per_page
 
     def to_dict(self):
         """Returns the model properties as a dict"""

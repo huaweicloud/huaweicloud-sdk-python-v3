@@ -38,7 +38,7 @@ class PutEventsResponse(SdkResponse):
 
         :param failed_count: 发布失败的事件个数
         :type failed_count: int
-        :param events: 
+        :param events: 事件列表
         :type events: list[:class:`huaweicloudsdkeg.v1.PutEventsRespEvents`]
         :param x_request_id: 
         :type x_request_id: str
@@ -84,6 +84,8 @@ class PutEventsResponse(SdkResponse):
     def events(self):
         """Gets the events of this PutEventsResponse.
 
+        事件列表
+
         :return: The events of this PutEventsResponse.
         :rtype: list[:class:`huaweicloudsdkeg.v1.PutEventsRespEvents`]
         """
@@ -92,6 +94,8 @@ class PutEventsResponse(SdkResponse):
     @events.setter
     def events(self, events):
         """Sets the events of this PutEventsResponse.
+
+        事件列表
 
         :param events: The events of this PutEventsResponse.
         :type events: list[:class:`huaweicloudsdkeg.v1.PutEventsRespEvents`]

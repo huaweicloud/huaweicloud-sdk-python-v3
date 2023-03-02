@@ -283,7 +283,7 @@ class AomClient(Client):
             request_type=request.__class__.__name__)
 
     def list_all_script_by_name(self, request):
-        """脚本主页查询
+        """脚本查询
 
         该接口是脚本主页查询，可指定脚本名称和脚本创建人进行精确查询，返回包含脚本基本信息的列表数据。（注：接口目前开放的region为：上海一）。
         
@@ -343,7 +343,7 @@ class AomClient(Client):
             request_type=request.__class__.__name__)
 
     def list_all_version_by_version_id(self, request):
-        """脚本管理主页查询，版本管理查询
+        """脚本版本查询
 
         该接口可查询指定脚本ID下的所有版本，返回该名称的脚本版本列表信息。（注：接口目前开放的region为：上海一）。
         

@@ -49,9 +49,9 @@ from huaweicloudsdkaom.v1.model.stop_execution_request import StopExecutionReque
 from huaweicloudsdkaom.v1.model.stop_execution_response import StopExecutionResponse
 from huaweicloudsdkaom.v1.model.task_param import TaskParam
 from huaweicloudsdkaom.v1.model.template import Template
-from huaweicloudsdkaom.v1.model.trigger import Trigger
 from huaweicloudsdkaom.v1.model.update_workflow_trigger_status_request import UpdateWorkflowTriggerStatusRequest
 from huaweicloudsdkaom.v1.model.update_workflow_trigger_status_response import UpdateWorkflowTriggerStatusResponse
+from huaweicloudsdkaom.v1.model.work_flow_model import WorkFlowModel
 from huaweicloudsdkaom.v1.model.workflow import Workflow
 from huaweicloudsdkaom.v1.model.workflow_execution_brief import WorkflowExecutionBrief
 from huaweicloudsdkaom.v1.model.workflow_query_param import WorkflowQueryParam

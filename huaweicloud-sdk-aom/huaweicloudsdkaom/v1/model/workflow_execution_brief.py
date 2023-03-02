@@ -60,7 +60,7 @@ class WorkflowExecutionBrief:
         :type execution_id: str
         :param status: 流程实例执行状态
         :type status: str
-        :param begin_time: 流程实例创建时间，格式：UT时间戳
+        :param begin_time: 流程实例创建时间，格式：UTC时间戳
         :type begin_time: int
         :param end_time: 流程实例结束时间，格式：UTC时间戳
         :type end_time: int
@@ -191,7 +191,7 @@ class WorkflowExecutionBrief:
     def begin_time(self):
         """Gets the begin_time of this WorkflowExecutionBrief.
 
-        流程实例创建时间，格式：UT时间戳
+        流程实例创建时间，格式：UTC时间戳
 
         :return: The begin_time of this WorkflowExecutionBrief.
         :rtype: int
@@ -202,7 +202,7 @@ class WorkflowExecutionBrief:
     def begin_time(self, begin_time):
         """Sets the begin_time of this WorkflowExecutionBrief.
 
-        流程实例创建时间，格式：UT时间戳
+        流程实例创建时间，格式：UTC时间戳
 
         :param begin_time: The begin_time of this WorkflowExecutionBrief.
         :type begin_time: int

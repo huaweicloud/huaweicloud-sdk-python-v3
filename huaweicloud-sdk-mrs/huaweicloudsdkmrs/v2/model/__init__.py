@@ -14,6 +14,7 @@ from huaweicloudsdkmrs.v2.model.bootstrap_script import BootstrapScript
 from huaweicloudsdkmrs.v2.model.cancel_sql_request import CancelSqlRequest
 from huaweicloudsdkmrs.v2.model.cancel_sql_response import CancelSqlResponse
 from huaweicloudsdkmrs.v2.model.charge_info import ChargeInfo
+from huaweicloudsdkmrs.v2.model.cluster_data_connector_map import ClusterDataConnectorMap
 from huaweicloudsdkmrs.v2.model.create_cluster_req_v2 import CreateClusterReqV2
 from huaweicloudsdkmrs.v2.model.create_cluster_request import CreateClusterRequest
 from huaweicloudsdkmrs.v2.model.create_cluster_response import CreateClusterResponse

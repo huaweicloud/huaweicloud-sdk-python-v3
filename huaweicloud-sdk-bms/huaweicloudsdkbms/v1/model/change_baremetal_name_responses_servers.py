@@ -164,7 +164,7 @@ class ChangeBaremetalNameResponsesServers:
         :type os_ext_st_spower_state: int
         :param os_ext_st_stask_state: 扩展属性，裸金属服务器任务状态。例如：rebooting表示重启中reboot_started表示普通重启reboot_started_hard表示强制重启powering-off表示关机中powering-on表示开机中rebuilding表示重建中scheduling表示调度中deleting表示删除中
         :type os_ext_st_stask_state: str
-        :param os_ext_st_svm_state: 扩展属性，裸金属服务器状态。例如：RUNNING表示运行中SHUTOFF表示关机SUSPENDED表示暂停REBOOT表示重启
+        :param os_ext_st_svm_state: 扩展属性，裸金属服务器状态。例如：RUNNING表示运行中SHUTOFF表示关机REBOOT表示重启
         :type os_ext_st_svm_state: str
         :param os_srv_us_glaunched_at: 扩展属性，裸金属服务器启动时间。时间戳格式为ISO 8601，例如：2019-05-25T03:40:25.000000
         :type os_srv_us_glaunched_at: datetime
@@ -824,7 +824,7 @@ class ChangeBaremetalNameResponsesServers:
     def os_ext_st_svm_state(self):
         """Gets the os_ext_st_svm_state of this ChangeBaremetalNameResponsesServers.
 
-        扩展属性，裸金属服务器状态。例如：RUNNING表示运行中SHUTOFF表示关机SUSPENDED表示暂停REBOOT表示重启
+        扩展属性，裸金属服务器状态。例如：RUNNING表示运行中SHUTOFF表示关机REBOOT表示重启
 
         :return: The os_ext_st_svm_state of this ChangeBaremetalNameResponsesServers.
         :rtype: str
@@ -835,7 +835,7 @@ class ChangeBaremetalNameResponsesServers:
     def os_ext_st_svm_state(self, os_ext_st_svm_state):
         """Sets the os_ext_st_svm_state of this ChangeBaremetalNameResponsesServers.
 
-        扩展属性，裸金属服务器状态。例如：RUNNING表示运行中SHUTOFF表示关机SUSPENDED表示暂停REBOOT表示重启
+        扩展属性，裸金属服务器状态。例如：RUNNING表示运行中SHUTOFF表示关机REBOOT表示重启
 
         :param os_ext_st_svm_state: The os_ext_st_svm_state of this ChangeBaremetalNameResponsesServers.
         :type os_ext_st_svm_state: str

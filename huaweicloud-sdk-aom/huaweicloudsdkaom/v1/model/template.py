@@ -74,7 +74,7 @@ class Template:
 
         :param approve_info: 
         :type approve_info: :class:`huaweicloudsdkaom.v1.ApproveInfo`
-        :param create_by: 模板创人，从接口调用传入的token中获取。
+        :param create_by: 模板创建人，从接口调用传入的token中获取。
         :type create_by: str
         :param create_time: 模板创建时间，为utc时间毫秒数。
         :type create_time: int
@@ -206,7 +206,7 @@ class Template:
     def create_by(self):
         """Gets the create_by of this Template.
 
-        模板创人，从接口调用传入的token中获取。
+        模板创建人，从接口调用传入的token中获取。
 
         :return: The create_by of this Template.
         :rtype: str
@@ -217,7 +217,7 @@ class Template:
     def create_by(self, create_by):
         """Sets the create_by of this Template.
 
-        模板创人，从接口调用传入的token中获取。
+        模板创建人，从接口调用传入的token中获取。
 
         :param create_by: The create_by of this Template.
         :type create_by: str

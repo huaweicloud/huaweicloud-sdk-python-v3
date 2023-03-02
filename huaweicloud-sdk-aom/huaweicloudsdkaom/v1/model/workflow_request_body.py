@@ -28,7 +28,6 @@ class WorkflowRequestBody:
         'template_id': 'str',
         'input': 'dict(str, object)',
         'quote': 'list[str]',
-        'trigger': 'Trigger',
         'job_name': 'str',
         'job_id': 'str',
         'service_scenario': 'str',
@@ -45,7 +44,6 @@ class WorkflowRequestBody:
         'template_id': 'template_id',
         'input': 'input',
         'quote': 'quote',
-        'trigger': 'trigger',
         'job_name': 'job_name',
         'job_id': 'job_id',
         'service_scenario': 'service_scenario',
@@ -53,7 +51,7 @@ class WorkflowRequestBody:
         'task_type': 'task_type'
     }
 
-    def __init__(self, name=None, type=None, description=None, tags=None, template_name=None, template_id=None, input=None, quote=None, trigger=None, job_name=None, job_id=None, service_scenario=None, service_name=None, task_type=None):
+    def __init__(self, name=None, type=None, description=None, tags=None, template_name=None, template_id=None, input=None, quote=None, job_name=None, job_id=None, service_scenario=None, service_name=None, task_type=None):
         """WorkflowRequestBody
 
         The model defined in huaweicloud sdk
@@ -74,8 +72,6 @@ class WorkflowRequestBody:
         :type input: dict(str, object)
         :param quote: 引用，参数引用。
         :type quote: list[str]
-        :param trigger: 
-        :type trigger: :class:`huaweicloudsdkaom.v1.Trigger`
         :param job_name: 作业名称。
         :type job_name: str
         :param job_id: 作业id。
@@ -98,7 +94,6 @@ class WorkflowRequestBody:
         self._template_id = None
         self._input = None
         self._quote = None
-        self._trigger = None
         self._job_name = None
         self._job_id = None
         self._service_scenario = None
@@ -122,8 +117,6 @@ class WorkflowRequestBody:
             self.input = input
         if quote is not None:
             self.quote = quote
-        if trigger is not None:
-            self.trigger = trigger
         if job_name is not None:
             self.job_name = job_name
         if job_id is not None:
@@ -310,24 +303,6 @@ class WorkflowRequestBody:
         :type quote: list[str]
         """
         self._quote = quote
-
-    @property
-    def trigger(self):
-        """Gets the trigger of this WorkflowRequestBody.
-
-        :return: The trigger of this WorkflowRequestBody.
-        :rtype: :class:`huaweicloudsdkaom.v1.Trigger`
-        """
-        return self._trigger
-
-    @trigger.setter
-    def trigger(self, trigger):
-        """Sets the trigger of this WorkflowRequestBody.
-
-        :param trigger: The trigger of this WorkflowRequestBody.
-        :type trigger: :class:`huaweicloudsdkaom.v1.Trigger`
-        """
-        self._trigger = trigger
 
     @property
     def job_name(self):

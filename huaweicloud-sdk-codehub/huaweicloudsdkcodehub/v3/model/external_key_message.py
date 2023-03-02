@@ -34,7 +34,7 @@ class ExternalKeyMessage:
 
         The model defined in huaweicloud sdk
 
-        :param external_key_message: 第三方保存在codehub的关键信息
+        :param external_key_message: 第三方保存在代码托管的关键信息
         :type external_key_message: str
         :param external_service: 外部服务名称
         :type external_service: str
@@ -55,7 +55,7 @@ class ExternalKeyMessage:
     def external_key_message(self):
         """Gets the external_key_message of this ExternalKeyMessage.
 
-        第三方保存在codehub的关键信息
+        第三方保存在代码托管的关键信息
 
         :return: The external_key_message of this ExternalKeyMessage.
         :rtype: str
@@ -66,7 +66,7 @@ class ExternalKeyMessage:
     def external_key_message(self, external_key_message):
         """Sets the external_key_message of this ExternalKeyMessage.
 
-        第三方保存在codehub的关键信息
+        第三方保存在代码托管的关键信息
 
         :param external_key_message: The external_key_message of this ExternalKeyMessage.
         :type external_key_message: str

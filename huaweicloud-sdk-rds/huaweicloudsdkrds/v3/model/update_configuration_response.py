@@ -20,20 +20,47 @@ class UpdateConfigurationResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'configuration': 'UpdateConfigurationRspConfiguration'
     }
 
     attribute_map = {
+        'configuration': 'configuration'
     }
 
-    def __init__(self):
+    def __init__(self, configuration=None):
         """UpdateConfigurationResponse
 
         The model defined in huaweicloud sdk
 
+        :param configuration: 
+        :type configuration: :class:`huaweicloudsdkrds.v3.UpdateConfigurationRspConfiguration`
         """
         
         super(UpdateConfigurationResponse, self).__init__()
+
+        self._configuration = None
         self.discriminator = None
+
+        if configuration is not None:
+            self.configuration = configuration
+
+    @property
+    def configuration(self):
+        """Gets the configuration of this UpdateConfigurationResponse.
+
+        :return: The configuration of this UpdateConfigurationResponse.
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdateConfigurationRspConfiguration`
+        """
+        return self._configuration
+
+    @configuration.setter
+    def configuration(self, configuration):
+        """Sets the configuration of this UpdateConfigurationResponse.
+
+        :param configuration: The configuration of this UpdateConfigurationResponse.
+        :type configuration: :class:`huaweicloudsdkrds.v3.UpdateConfigurationRspConfiguration`
+        """
+        self._configuration = configuration
 
     def to_dict(self):
         """Returns the model properties as a dict"""

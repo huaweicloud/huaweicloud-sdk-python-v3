@@ -32,7 +32,7 @@ class CreateFastExecuteScriptResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param execution_id: 响应体。
+        :param execution_id: 工作流执行id。
         :type execution_id: str
         """
         
@@ -48,7 +48,7 @@ class CreateFastExecuteScriptResponse(SdkResponse):
     def execution_id(self):
         """Gets the execution_id of this CreateFastExecuteScriptResponse.
 
-        响应体。
+        工作流执行id。
 
         :return: The execution_id of this CreateFastExecuteScriptResponse.
         :rtype: str
@@ -59,7 +59,7 @@ class CreateFastExecuteScriptResponse(SdkResponse):
     def execution_id(self, execution_id):
         """Sets the execution_id of this CreateFastExecuteScriptResponse.
 
-        响应体。
+        工作流执行id。
 
         :param execution_id: The execution_id of this CreateFastExecuteScriptResponse.
         :type execution_id: str

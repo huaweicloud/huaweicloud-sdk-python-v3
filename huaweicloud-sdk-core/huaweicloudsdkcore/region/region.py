@@ -22,9 +22,36 @@ import warnings
 
 
 class Region(object):
-    def __init__(self, _id, *endpoints):
-        self._id = _id
-        self._endpoints = list(endpoints)
+    def __init__(self, *args, **kwargs):
+        """
+        There are two ways to initialize the region object.
+
+        In the first way, only one region and one endpoint can be specified.
+        region1 = Region(id="region-id", endpoint="region-endpoint")
+
+        In the second way, one region and multiple endpoints can be specified.
+        region2 = Region("region-id", "endpoint1", "endpoint2")
+
+        It is not recommended to mix the two initialization ways.
+        If two initialization ways are mixed, the first way has priority over the second.
+        """
+        self._id = None
+        self._endpoints = None
+
+        if len(args) > 1:
+            self._id = args[0]
+            self._endpoints = list(args[1:])
+
+        if kwargs:
+            if "id" in kwargs:
+                self._id = kwargs.get("id")
+            if "endpoint" in kwargs:
+                self._endpoints = [kwargs.get("endpoint")]
+
+        if not self._id:
+            raise ValueError("id is required")
+        if not self.endpoints:
+            raise ValueError("at lease one endpoint is required")
 
     @property
     def id(self):

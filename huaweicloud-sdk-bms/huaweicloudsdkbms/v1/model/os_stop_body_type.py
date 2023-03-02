@@ -34,7 +34,7 @@ class OsStopBodyType:
 
         The model defined in huaweicloud sdk
 
-        :param type: 关机类型：SOFT：普通关机（默认）。HARD：强制关机。
+        :param type: 关机类型：SOFT：普通关机（不生效）。HARD：强制关机（默认）。
         :type type: str
         :param servers: 裸金属服务器ID列表，详情请参见表3 servers字段数据结构说明。
         :type servers: list[:class:`huaweicloudsdkbms.v1.ServersList`]
@@ -53,7 +53,7 @@ class OsStopBodyType:
     def type(self):
         """Gets the type of this OsStopBodyType.
 
-        关机类型：SOFT：普通关机（默认）。HARD：强制关机。
+        关机类型：SOFT：普通关机（不生效）。HARD：强制关机（默认）。
 
         :return: The type of this OsStopBodyType.
         :rtype: str
@@ -64,7 +64,7 @@ class OsStopBodyType:
     def type(self, type):
         """Sets the type of this OsStopBodyType.
 
-        关机类型：SOFT：普通关机（默认）。HARD：强制关机。
+        关机类型：SOFT：普通关机（不生效）。HARD：强制关机（默认）。
 
         :param type: The type of this OsStopBodyType.
         :type type: str

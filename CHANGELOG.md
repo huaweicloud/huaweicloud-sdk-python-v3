@@ -1,3 +1,255 @@
+# 3.1.28 2023-03-02
+
+### HuaweiCloud SDK AOM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateWorkflow`:
+    - Remove the request parameter `trigger`
+    - Modify the type of the response parameter `template_i18n`
+  - Modify the type of the response parameter `template_i18n` of the interface `ListWorkflow`
+
+### HuaweiCloud SDK BCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `result` to the interface `BatchInviteMembersToChannel`
+  - Modify the type `string` -> `int32` of the response parameter `node_count` of the interface `ListNotifications`
+  - Modify the type `string` -> `int32` of the response parameter `node_count` of the interface `ListMembers`
+  - Remove the response parameter `result` from the interface `DownloadBlockchainCert`
+  - Remove the response parameter `result` from the interface `DownloadBlockchainSdkConfig`
+  - Remove the response parameter `result` from the interface `CreateBlockchainCertByUserName`
+
+### HuaweiCloud SDK BMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListBareMetalServers`:
+    - Add the enum values `HARD_REBOOT`, `DELETED` to the response parameter `status`
+    - Remove the enum values `suspended` from the response parameter `OS-EXT-STS:vm_state`
+  - Changes of the interface `CreateBareMetalServers`:
+    - Add the request parameter `chargingMode`
+    - Remove the request parameter `chargingmode`
+  - Remove the enum values `SUSPENDED` from the response parameter `OS-EXT-STS:vm_state` from the interface `ChangeBaremetalServerName`
+  - Changes of the interface `ListBareMetalServerDetails`:
+    - Add the enum values `HARD_REBOOT`, `DELETED` to the response parameter `status`
+    - Remove the enum values `suspended` from the response parameter `OS-EXT-STS:vm_state`
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ShowDomainFullConfig`:
+    - Modify the type `string` -> `int32` of the response parameter `error_code`
+    - Modify the type `string` -> `int32` of the response parameter `target_code`
+  - Changes of the interface `UpdateDomainFullConfig`:
+    - Modify the type `string` -> `int32` of the request parameter `error_code`
+    - Modify the type `string` -> `int32` of the request parameter `target_code`
+
+### HuaweiCloud SDK CodeHub
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `page`, `per_page` to the interface `ListCommits`
+
+### HuaweiCloud SDK DDS
+
+- _Features_
+  - Support the interfaces `ShowReplSetName`, `UpdateReplSetName`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DRIS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `ip` to the interface `ListV2xEdges`
+  
+### HuaweiCloud SDK EG
+
+- _Features_
+  - Support the following interfaces：
+    - `CheckPutEvents`
+    - `ListObsBuckets`
+    - `ListWorkflowTriggers`
+    - `ListPubMetrics`
+    - `ListSubMetrics`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `ROCKETMQ` to the request parameter `type` to the interface `CreateEventSource`
+  - The request parameter `name` changed to required of the interface `CreateChannel`
+  - Changes of the interface `ListSubscriptions`:
+    - Add the response parameter `used`
+    - Modify the type of the response parameter `transform`
+  - Changes of the interface `CreateSubscription`:
+    - Add the response parameter `used`
+    - Modify the type of the request parameter `transform`
+    - The request parameter `detail` changed to required
+    - Modify the type of the response parameter `transform`
+  - Changes of the interface `ShowDetailOfSubscription`:
+    - Add the response parameter `used`
+    - Modify the type of the response parameter `transform`
+  - Changes of the interface `UpdateSubscription`:
+    - Add the response parameter `used`
+    - Modify the type of the request parameter `transform`
+    - The request parameter `detail` changed to required
+    - Modify the type of the response parameter `transform`
+  - Changes of the interface `CreateSubscriptionTarget`:
+    - Modify the type of the request parameter `transform`
+    - The request parameter `detail` changed to required
+    - Modify the type of the response parameter `transform`
+  - Modify the type of the response parameter `transform` of the interface `ShowDetailOfSubscriptionTarget`
+  - Changes of the interface `UpdateSubscriptionTarget`:
+    - Modify the type of the request parameter `transform`
+    - The request parameter `detail` changed to required
+    - Modify the type of the response parameter `transform`
+  - The request parameter `vpc_id`, `subnet_id` changed to required of the interface `CreateConnection`
+  - Add the enum values `EG_RESTORE_AGENCY` to the request parameter `type` to the interface `ListAgencies`
+  - Add the enum values `EG_RESTORE_AGENCY` to the request parameter `type` to the interface `CreateAgencies`
+  - Changes of the interface `ListQuotas`:
+    - Add the enum values `SOURCE_ROCKETMQ` to the request parameter `type`
+    - Add the enum values `SOURCE_ROCKETMQ` to the response parameter `type`
+  - Changes of the interface `ListTriggers`:
+    - Add the response parameter `used`
+    - Modify the type of the response parameter `transform`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `UpdateTrigger`:
+    - Add the request parameter `event_data`
+    - Add the response parameters `trigger_id`, `trigger_type_code`, `trigger_status`, `event_data`, `last_updated_time`, `created_time`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+  - Support the following interfaces：
+    - `ResetDbUserPassword`
+    - `ModifyDbUserPrivilege`
+    - `ListDbUsers`
+    - `CreateDbUser`
+    - `DeleteDbUser`
+    - `ListInstanceDatabases`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GSL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `order_ids` to the interface `ListSimCards`
+
+### HuaweiCloud SDK Image
+
+- _Features_
+  - Support the following interfaces：
+    - `CreateVideoSynthesisTask`
+    - `ShowVideoSynthesisTask`
+    - `CreateImageToVideoTask`
+    - `ShowImageToVideoTask`
+    - `CreateVideoCuttingTask`
+    - `ShowVideoCuttingTask`
+    - `CreateVideoTranslateTask`
+    - `ShowVideoTranslateTask`
+    - `CreateImageHighresolutionMattingTask`
+    - `ShowImageHighresolutionMattingTask`
+    - `CreateImageTranslateTask`
+    - `ShowImageTranslateTask`
+    - `CreateVideoCoverAnalysisTask`
+    - `ShowVideoCoverAnalysisTask`
+    - `CreateVideoSummarizationAnalysisTask`
+    - `ShowVideoSummarizationAnalysisTask`
+    - `CreateVideoShotSplitTask`
+    - `ShowVideoShotSplitTask`
+    - `RunImageWisedesignCrop`
+    - `RunImageWisedesignInpainting`
+    - `RunImageWisedesignColorfilter`
+    - `RunImageWisedesignCombine`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - Support the interfaces `ListOtaPackageInfo`, `CreateOtaPackage`, `ShowOtaPackage`, `DeleteOtaPackage`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListInstanceConsumerGroups`:
+    - Add the response parameter `groups`
+    - Remove the response parameters `group_ids`, `next_offset`, `previous_offset`
+
+### HuaweiCloud SDK MRS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `external_datasources`, `effective_days` to the interface `CreateCluster`
+  - Add the response parameter `effective_days` to the interface `ShowAutoScalingPolicy`
+
+### HuaweiCloud SDK ProjectMan
+
+- _Features_
+  - Support the interface `ListSpecIssueStayTimes`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interface `ListSslCertDownloadLink`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `configuration` to the interface `UpdateConfiguration`
+  - The request parameter `alias` changed to not required of the interface `UpdatePostgresqlInstanceAlias`
+  - The request parameter `comment` changed to not required of the interface `UpdateDatabase`
+
 # 3.1.27 2023-02-23
 
 ### HuaweiCloud SDK BSS

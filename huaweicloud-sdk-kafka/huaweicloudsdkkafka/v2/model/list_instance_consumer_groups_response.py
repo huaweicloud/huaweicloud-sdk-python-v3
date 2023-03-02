@@ -20,78 +20,64 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'group_ids': 'list[str]',
-        'total': 'int',
-        'next_offset': 'int',
-        'previous_offset': 'int'
+        'groups': 'list[GroupInfoSimple]',
+        'total': 'int'
     }
 
     attribute_map = {
-        'group_ids': 'group_ids',
-        'total': 'total',
-        'next_offset': 'next_offset',
-        'previous_offset': 'previous_offset'
+        'groups': 'groups',
+        'total': 'total'
     }
 
-    def __init__(self, group_ids=None, total=None, next_offset=None, previous_offset=None):
+    def __init__(self, groups=None, total=None):
         """ListInstanceConsumerGroupsResponse
 
         The model defined in huaweicloud sdk
 
-        :param group_ids: 所有的消费组ID
-        :type group_ids: list[str]
-        :param total: 所有的消费组总数
+        :param groups: 所有的消费组。
+        :type groups: list[:class:`huaweicloudsdkkafka.v2.GroupInfoSimple`]
+        :param total: 所有的消费组总数。
         :type total: int
-        :param next_offset: 下一个消费组序号
-        :type next_offset: int
-        :param previous_offset: 上一个消费组序号
-        :type previous_offset: int
         """
         
         super(ListInstanceConsumerGroupsResponse, self).__init__()
 
-        self._group_ids = None
+        self._groups = None
         self._total = None
-        self._next_offset = None
-        self._previous_offset = None
         self.discriminator = None
 
-        if group_ids is not None:
-            self.group_ids = group_ids
+        if groups is not None:
+            self.groups = groups
         if total is not None:
             self.total = total
-        if next_offset is not None:
-            self.next_offset = next_offset
-        if previous_offset is not None:
-            self.previous_offset = previous_offset
 
     @property
-    def group_ids(self):
-        """Gets the group_ids of this ListInstanceConsumerGroupsResponse.
+    def groups(self):
+        """Gets the groups of this ListInstanceConsumerGroupsResponse.
 
-        所有的消费组ID
+        所有的消费组。
 
-        :return: The group_ids of this ListInstanceConsumerGroupsResponse.
-        :rtype: list[str]
+        :return: The groups of this ListInstanceConsumerGroupsResponse.
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.GroupInfoSimple`]
         """
-        return self._group_ids
+        return self._groups
 
-    @group_ids.setter
-    def group_ids(self, group_ids):
-        """Sets the group_ids of this ListInstanceConsumerGroupsResponse.
+    @groups.setter
+    def groups(self, groups):
+        """Sets the groups of this ListInstanceConsumerGroupsResponse.
 
-        所有的消费组ID
+        所有的消费组。
 
-        :param group_ids: The group_ids of this ListInstanceConsumerGroupsResponse.
-        :type group_ids: list[str]
+        :param groups: The groups of this ListInstanceConsumerGroupsResponse.
+        :type groups: list[:class:`huaweicloudsdkkafka.v2.GroupInfoSimple`]
         """
-        self._group_ids = group_ids
+        self._groups = groups
 
     @property
     def total(self):
         """Gets the total of this ListInstanceConsumerGroupsResponse.
 
-        所有的消费组总数
+        所有的消费组总数。
 
         :return: The total of this ListInstanceConsumerGroupsResponse.
         :rtype: int
@@ -102,56 +88,12 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListInstanceConsumerGroupsResponse.
 
-        所有的消费组总数
+        所有的消费组总数。
 
         :param total: The total of this ListInstanceConsumerGroupsResponse.
         :type total: int
         """
         self._total = total
-
-    @property
-    def next_offset(self):
-        """Gets the next_offset of this ListInstanceConsumerGroupsResponse.
-
-        下一个消费组序号
-
-        :return: The next_offset of this ListInstanceConsumerGroupsResponse.
-        :rtype: int
-        """
-        return self._next_offset
-
-    @next_offset.setter
-    def next_offset(self, next_offset):
-        """Sets the next_offset of this ListInstanceConsumerGroupsResponse.
-
-        下一个消费组序号
-
-        :param next_offset: The next_offset of this ListInstanceConsumerGroupsResponse.
-        :type next_offset: int
-        """
-        self._next_offset = next_offset
-
-    @property
-    def previous_offset(self):
-        """Gets the previous_offset of this ListInstanceConsumerGroupsResponse.
-
-        上一个消费组序号
-
-        :return: The previous_offset of this ListInstanceConsumerGroupsResponse.
-        :rtype: int
-        """
-        return self._previous_offset
-
-    @previous_offset.setter
-    def previous_offset(self, previous_offset):
-        """Sets the previous_offset of this ListInstanceConsumerGroupsResponse.
-
-        上一个消费组序号
-
-        :param previous_offset: The previous_offset of this ListInstanceConsumerGroupsResponse.
-        :type previous_offset: int
-        """
-        self._previous_offset = previous_offset
 
     def to_dict(self):
         """Returns the model properties as a dict"""

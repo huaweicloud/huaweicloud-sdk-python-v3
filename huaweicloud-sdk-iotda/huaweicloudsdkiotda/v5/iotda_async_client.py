@@ -3080,6 +3080,279 @@ class IoTDAAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_ota_package_async(self, request):
+        """创建OTA升级包
+
+        用户可调用此接口创建升级包关联OBS对象
+        使用前提：使用该API需要您授权设备接入服务(IoTDA)的实例访问对象存储服务(OBS)以及 密钥管理服务(KMS Administrator)的权限。在“[[统一身份认证服务（IAM）](https://console.huaweicloud.com/iam/?region&#x3D;cn-north-4#/iam/agencies)](tag:hws) - 委托”中将委托名称为iotda_admin_trust的委托授权KMS Administrator和OBS OperateAccess
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateOtaPackage
+        :type request: :class:`huaweicloudsdkiotda.v5.CreateOtaPackageRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.CreateOtaPackageResponse`
+        """
+        return self.create_ota_package_with_http_info(request)
+
+    def create_ota_package_with_http_info(self, request):
+        all_params = ['create_ota_package_request_body', 'sp_auth_token', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/ota-upgrades/packages',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateOtaPackageResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_ota_package_async(self, request):
+        """删除OTA升级包
+
+        只删除升级包信息，不会删除OBS上对象
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteOtaPackage
+        :type request: :class:`huaweicloudsdkiotda.v5.DeleteOtaPackageRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.DeleteOtaPackageResponse`
+        """
+        return self.delete_ota_package_with_http_info(request)
+
+    def delete_ota_package_with_http_info(self, request):
+        all_params = ['package_id', 'sp_auth_token', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'package_id' in local_var_params:
+            path_params['package_id'] = local_var_params['package_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/ota-upgrades/packages/{package_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteOtaPackageResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_ota_package_info_async(self, request):
+        """查询OTA升级包列表
+
+        查询OTA升级包列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOtaPackageInfo
+        :type request: :class:`huaweicloudsdkiotda.v5.ListOtaPackageInfoRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ListOtaPackageInfoResponse`
+        """
+        return self.list_ota_package_info_with_http_info(request)
+
+    def list_ota_package_info_with_http_info(self, request):
+        all_params = ['package_type', 'sp_auth_token', 'instance_id', 'app_id', 'product_id', 'version', 'limit', 'marker', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+        if 'package_type' in local_var_params:
+            query_params.append(('package_type', local_var_params['package_type']))
+        if 'product_id' in local_var_params:
+            query_params.append(('product_id', local_var_params['product_id']))
+        if 'version' in local_var_params:
+            query_params.append(('version', local_var_params['version']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/ota-upgrades/packages',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListOtaPackageInfoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_ota_package_async(self, request):
+        """获取OTA升级包详情
+
+        获取OTA升级包详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOtaPackage
+        :type request: :class:`huaweicloudsdkiotda.v5.ShowOtaPackageRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ShowOtaPackageResponse`
+        """
+        return self.show_ota_package_with_http_info(request)
+
+    def show_ota_package_with_http_info(self, request):
+        all_params = ['package_id', 'sp_auth_token', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'package_id' in local_var_params:
+            path_params['package_id'] = local_var_params['package_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/ota-upgrades/packages/{package_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowOtaPackageResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_product_async(self, request):
         """创建产品
 

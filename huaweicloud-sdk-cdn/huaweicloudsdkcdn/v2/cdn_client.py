@@ -281,7 +281,7 @@ class CdnClient(Client):
         
         - 服务区域仅支持mainland_china（国内）
         
-        - 计费模式仅支持设置flux（流量），bw（带宽）
+        - 计费模式仅支持设置flux（流量），v2及以上客户支持bw（带宽）
         
         - 加速类型仅支持base（基础加速）
         

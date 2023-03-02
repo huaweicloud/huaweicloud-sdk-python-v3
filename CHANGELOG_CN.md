@@ -1,3 +1,255 @@
+# 3.1.28 2023-03-02
+
+### HuaweiCloud SDK AOM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateWorkflow`:
+    - 移除请求参数 `trigger`
+    - 响应参数`template_i18n`类型调整
+  - 接口`ListWorkflow`响应参数`template_i18n`类型调整
+
+### HuaweiCloud SDK BCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`BatchInviteMembersToChannel`新增响应参数 `result`
+  - 接口`ListNotifications`响应参数`node_count`类型调整 `string` -> `int32`
+  - 接口`ListMembers`响应参数`node_count`类型调整 `string` -> `int32`
+  - 接口`DownloadBlockchainCert`移除响应参数 `result`
+  - 接口`DownloadBlockchainSdkConfig`移除响应参数 `result`
+  - 接口`CreateBlockchainCertByUserName`移除响应参数 `result`
+
+### HuaweiCloud SDK BMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListBareMetalServers`:
+    - 响应参数`status`新增枚举值`HARD_REBOOT`、`DELETED`
+    - 响应参数`OS-EXT-STS:vm_state`移除枚举值`suspended`
+  - 接口`CreateBareMetalServers`:
+    - 新增请求参数 `chargingMode`
+    - 移除请求参数 `chargingmode`
+  - 接口`ChangeBaremetalServerName`响应参数`OS-EXT-STS:vm_state`移除枚举值`SUSPENDED`
+  - 接口`ListBareMetalServerDetails`:
+    - 响应参数`status`新增枚举值`HARD_REBOOT`、`DELETED`
+    - 响应参数`OS-EXT-STS:vm_state`移除枚举值`suspended`
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowDomainFullConfig`:
+    - 响应参数`error_code`类型调整 `string` -> `int32`
+    - 响应参数`target_code`类型调整 `string` -> `int32`
+  - 接口`UpdateDomainFullConfig`:
+    - 请求参数`error_code`类型调整 `string` -> `int32`
+    - 请求参数`target_code`类型调整 `string` -> `int32`
+
+### HuaweiCloud SDK CodeHub
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListCommits`新增请求参数 `page`、`per_page`
+
+### HuaweiCloud SDK DDS
+
+- _新增特性_
+  - 支持接口`ShowReplSetName`、`UpdateReplSetName`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DRIS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListV2xEdges`新增响应参数 `ip`
+
+### HuaweiCloud SDK EG
+
+- _新增特性_
+  - 支持以下接口：
+    - `CheckPutEvents`
+    - `ListObsBuckets`
+    - `ListWorkflowTriggers`
+    - `ListPubMetrics`
+    - `ListSubMetrics`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateEventSource`请求参数`type`新增枚举值`ROCKETMQ`
+  - 接口`CreateChannel`请求参数`name`改为必填
+  - 接口`ListSubscriptions`:
+    - 新增响应参数 `used`
+    - 响应参数`transform`类型调整
+  - 接口`CreateSubscription`:
+    - 新增响应参数 `used`
+    - 请求参数`transform`类型调整
+    - 请求参数`detail`改为必填
+    - 响应参数`transform`类型调整
+  - 接口`ShowDetailOfSubscription`:
+    - 新增响应参数 `used`
+    - 响应参数`transform`类型调整
+  - 接口`UpdateSubscription`:
+    - 新增响应参数 `used`
+    - 请求参数`transform`类型调整
+    - 请求参数`detail`改为必填
+    - 响应参数`transform`类型调整
+  - 接口`CreateSubscriptionTarget`:
+    - 请求参数`transform`类型调整
+    - 请求参数`detail`改为必填
+    - 响应参数`transform`类型调整
+  - 接口`ShowDetailOfSubscriptionTarget`响应参数`transform`类型调整
+  - 接口`UpdateSubscriptionTarget`:
+    - 请求参数`transform`类型调整
+    - 请求参数`detail`改为必填
+    - 响应参数`transform`类型调整
+  - 接口`CreateConnection`请求参数`vpc_id`、`subnet_id`改为必填
+  - 接口`ListAgencies`请求参数`type`新增枚举值`EG_RESTORE_AGENCY`
+  - 接口`CreateAgencies`请求参数`type`新增枚举值`EG_RESTORE_AGENCY`
+  - 接口`ListQuotas`:
+    - 请求参数`type`新增枚举值`SOURCE_ROCKETMQ`
+    - 响应参数`type`新增枚举值`SOURCE_ROCKETMQ`
+  - 接口`ListTriggers`:
+    - 新增响应参数 `used`
+    - 响应参数`transform`类型调整
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateTrigger`:
+    - 新增请求参数 `event_data`
+    - 新增响应参数 `trigger_id`、`trigger_type_code`、`trigger_status`、`event_data`、`last_updated_time`、`created_time`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _新增特性_
+  - 支持以下接口：
+    - `ResetDbUserPassword`
+    - `ModifyDbUserPrivilege`
+    - `ListDbUsers`
+    - `CreateDbUser`
+    - `DeleteDbUser`
+    - `ListInstanceDatabases`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GSL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListSimCards`新增请求参数 `order_ids`
+
+### HuaweiCloud SDK Image
+
+- _新增特性_
+  - 支持以下接口：
+    - `CreateVideoSynthesisTask`
+    - `ShowVideoSynthesisTask`
+    - `CreateImageToVideoTask`
+    - `ShowImageToVideoTask`
+    - `CreateVideoCuttingTask`
+    - `ShowVideoCuttingTask`
+    - `CreateVideoTranslateTask`
+    - `ShowVideoTranslateTask`
+    - `CreateImageHighresolutionMattingTask`
+    - `ShowImageHighresolutionMattingTask`
+    - `CreateImageTranslateTask`
+    - `ShowImageTranslateTask`
+    - `CreateVideoCoverAnalysisTask`
+    - `ShowVideoCoverAnalysisTask`
+    - `CreateVideoSummarizationAnalysisTask`
+    - `ShowVideoSummarizationAnalysisTask`
+    - `CreateVideoShotSplitTask`
+    - `ShowVideoShotSplitTask`
+    - `RunImageWisedesignCrop`
+    - `RunImageWisedesignInpainting`
+    - `RunImageWisedesignColorfilter`
+    - `RunImageWisedesignCombine`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 支持接口`ListOtaPackageInfo`、`CreateOtaPackage`、`ShowOtaPackage`、`DeleteOtaPackage`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListInstanceConsumerGroups`:
+    - 新增响应参数 `groups`
+    - 移除响应参数 `group_ids`、`next_offset`、`previous_offset`
+
+### HuaweiCloud SDK MRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateCluster`新增请求参数 `external_datasources`、`effective_days`
+  - 接口`ShowAutoScalingPolicy`新增响应参数 `effective_days`
+
+### HuaweiCloud SDK ProjectMan
+
+- _新增特性_
+  - 支持接口`ListSpecIssueStayTimes`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`ListSslCertDownloadLink`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateConfiguration`新增响应参数 `configuration`
+  - 接口`UpdatePostgresqlInstanceAlias`请求参数`alias`改为非必填
+  - 接口`UpdateDatabase`请求参数`comment`改为非必填
+
 # 3.1.27 2023-02-23
 
 ### HuaweiCloud SDK BSS

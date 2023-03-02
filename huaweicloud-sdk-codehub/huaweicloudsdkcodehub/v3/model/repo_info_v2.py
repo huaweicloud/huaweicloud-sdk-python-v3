@@ -78,7 +78,7 @@ class RepoInfoV2:
         :type creator_name: str
         :param domain_name: 创建者的租户名
         :type domain_name: str
-        :param group_name: 仓库组名(克隆地址中域名后面项目名前的一段 示例：git@codehub.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
+        :param group_name: 仓库组名(克隆地址中域名后面项目名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
         :type group_name: str
         :param https_url: 使用 https 克隆仓库时所使用的 url
         :type https_url: str
@@ -254,7 +254,7 @@ class RepoInfoV2:
     def group_name(self):
         """Gets the group_name of this RepoInfoV2.
 
-        仓库组名(克隆地址中域名后面项目名前的一段 示例：git@codehub.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
+        仓库组名(克隆地址中域名后面项目名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
 
         :return: The group_name of this RepoInfoV2.
         :rtype: str
@@ -265,7 +265,7 @@ class RepoInfoV2:
     def group_name(self, group_name):
         """Sets the group_name of this RepoInfoV2.
 
-        仓库组名(克隆地址中域名后面项目名前的一段 示例：git@codehub.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
+        仓库组名(克隆地址中域名后面项目名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
 
         :param group_name: The group_name of this RepoInfoV2.
         :type group_name: str

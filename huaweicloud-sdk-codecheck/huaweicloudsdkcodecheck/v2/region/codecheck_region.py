@@ -10,15 +10,20 @@ class CodeCheckRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("CODECHECK")
 
     CN_NORTH_4 = Region("cn-north-4",
-                        "https://codecheck-ext.cn-north-4.myhuaweicloud.com")
+                        "https://codecheck-ext.cn-north-4.myhuaweicloud.com",
+                        "https://codecheck-ext.cn-north-4.myhuaweicloud.cn")
     CN_NORTH_1 = Region("cn-north-1",
-                        "https://codecheck-ext.cn-north-1.myhuaweicloud.com")
+                        "https://codecheck-ext.cn-north-1.myhuaweicloud.com",
+                        "https://codecheck-ext.cn-north-1.myhuaweicloud.cn")
     CN_EAST_2 = Region("cn-east-2",
-                        "https://codecheck-ext.cn-east-2.myhuaweicloud.com")
+                        "https://codecheck-ext.cn-east-2.myhuaweicloud.com",
+                        "https://codecheck-ext.cn-east-2.myhuaweicloud.cn")
     CN_SOUTH_1 = Region("cn-south-1",
-                        "https://codecheck-ext.cn-south-1.myhuaweicloud.com")
+                        "https://codecheck-ext.cn-south-1.myhuaweicloud.com",
+                        "https://codecheck-ext.cn-south-1.myhuaweicloud.cn")
     CN_EAST_3 = Region("cn-east-3",
-                        "https://codecheck-ext.cn-east-3.myhuaweicloud.com")
+                        "https://codecheck-ext.cn-east-3.myhuaweicloud.com",
+                        "https://codecheck-ext.cn-east-3.myhuaweicloud.cn")
     LA_NORTH_2 = Region("la-north-2",
                         "https://codecheck-ext.la-north-2.myhuaweicloud.com")
     SA_BRAZIL_1 = Region("sa-brazil-1",

@@ -27,6 +27,7 @@ class UpdateSubscriptionResponse(SdkResponse):
         'status': 'str',
         'channel_id': 'str',
         'channel_name': 'str',
+        'used': 'list[SubscriptionUsedInfo]',
         'sources': 'list[SubscriptionSourceInfo]',
         'targets': 'list[SubscriptionTargetInfo]',
         'created_time': 'str',
@@ -42,6 +43,7 @@ class UpdateSubscriptionResponse(SdkResponse):
         'status': 'status',
         'channel_id': 'channel_id',
         'channel_name': 'channel_name',
+        'used': 'used',
         'sources': 'sources',
         'targets': 'targets',
         'created_time': 'created_time',
@@ -49,7 +51,7 @@ class UpdateSubscriptionResponse(SdkResponse):
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, id=None, name=None, description=None, type=None, status=None, channel_id=None, channel_name=None, sources=None, targets=None, created_time=None, updated_time=None, x_request_id=None):
+    def __init__(self, id=None, name=None, description=None, type=None, status=None, channel_id=None, channel_name=None, used=None, sources=None, targets=None, created_time=None, updated_time=None, x_request_id=None):
         """UpdateSubscriptionResponse
 
         The model defined in huaweicloud sdk
@@ -68,6 +70,8 @@ class UpdateSubscriptionResponse(SdkResponse):
         :type channel_id: str
         :param channel_name: 通道名称
         :type channel_name: str
+        :param used: 标签信息
+        :type used: list[:class:`huaweicloudsdkeg.v1.SubscriptionUsedInfo`]
         :param sources: 订阅源列表
         :type sources: list[:class:`huaweicloudsdkeg.v1.SubscriptionSourceInfo`]
         :param targets: 订阅目标列表
@@ -89,6 +93,7 @@ class UpdateSubscriptionResponse(SdkResponse):
         self._status = None
         self._channel_id = None
         self._channel_name = None
+        self._used = None
         self._sources = None
         self._targets = None
         self._created_time = None
@@ -110,6 +115,8 @@ class UpdateSubscriptionResponse(SdkResponse):
             self.channel_id = channel_id
         if channel_name is not None:
             self.channel_name = channel_name
+        if used is not None:
+            self.used = used
         if sources is not None:
             self.sources = sources
         if targets is not None:
@@ -274,6 +281,28 @@ class UpdateSubscriptionResponse(SdkResponse):
         :type channel_name: str
         """
         self._channel_name = channel_name
+
+    @property
+    def used(self):
+        """Gets the used of this UpdateSubscriptionResponse.
+
+        标签信息
+
+        :return: The used of this UpdateSubscriptionResponse.
+        :rtype: list[:class:`huaweicloudsdkeg.v1.SubscriptionUsedInfo`]
+        """
+        return self._used
+
+    @used.setter
+    def used(self, used):
+        """Sets the used of this UpdateSubscriptionResponse.
+
+        标签信息
+
+        :param used: The used of this UpdateSubscriptionResponse.
+        :type used: list[:class:`huaweicloudsdkeg.v1.SubscriptionUsedInfo`]
+        """
+        self._used = used
 
     @property
     def sources(self):

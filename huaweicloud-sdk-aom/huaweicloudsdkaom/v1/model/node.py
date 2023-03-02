@@ -50,7 +50,7 @@ class Node:
         :type parent_node: str
         :param category: 节点类型。
         :type category: str
-        :param description: 节点描述,节点上任务的描述。
+        :param description: 节点描述。
         :type description: str
         :param id: 节点id
         :type id: str
@@ -141,7 +141,7 @@ class Node:
     def description(self):
         """Gets the description of this Node.
 
-        节点描述,节点上任务的描述。
+        节点描述。
 
         :return: The description of this Node.
         :rtype: str
@@ -152,7 +152,7 @@ class Node:
     def description(self, description):
         """Sets the description of this Node.
 
-        节点描述,节点上任务的描述。
+        节点描述。
 
         :param description: The description of this Node.
         :type description: str

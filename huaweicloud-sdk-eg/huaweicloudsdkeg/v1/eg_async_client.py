@@ -42,6 +42,67 @@ class EgAsyncClient(Client):
 
         return ClientBuilder(clazz)
 
+    def check_put_events_async(self, request):
+        """预校验指定事件源发布事件成功
+
+        发布事件到事件源成功需要有订阅等条件，预先校验
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CheckPutEvents
+        :type request: :class:`huaweicloudsdkeg.v1.CheckPutEventsRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.CheckPutEventsResponse`
+        """
+        return self.check_put_events_with_http_info(request)
+
+    def check_put_events_with_http_info(self, request):
+        all_params = ['check_put_events_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/events/check',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CheckPutEventsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_agencies_async(self, request):
         """创建服务委托
 
@@ -228,7 +289,7 @@ class EgAsyncClient(Client):
     def create_endpoint_async(self, request):
         """创建访问端点
 
-        create endpoint
+        创建访问端点
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -720,6 +781,7 @@ class EgAsyncClient(Client):
     def delete_endpoint_async(self, request):
         """删除访问端点
 
+        删除访问端点
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1150,6 +1212,7 @@ class EgAsyncClient(Client):
     def list_agencies_async(self, request):
         """查询服务委托
 
+        查询服务委托
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1350,7 +1413,7 @@ class EgAsyncClient(Client):
     def list_endpoints_async(self, request):
         """查询访问端点
 
-        list all endpoints
+        查询访问端点
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1700,6 +1763,79 @@ class EgAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_pub_metrics_async(self, request):
+        """查询事件通道监控指标数据
+
+        查询事件通道监控指标数据
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPubMetrics
+        :type request: :class:`huaweicloudsdkeg.v1.ListPubMetricsRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.ListPubMetricsResponse`
+        """
+        return self.list_pub_metrics_with_http_info(request)
+
+    def list_pub_metrics_with_http_info(self, request):
+        all_params = ['start_time', 'channel_id', 'filter', 'period', 'end_time', 'provider_type', 'source_name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'filter' in local_var_params:
+            query_params.append(('filter', local_var_params['filter']))
+        if 'period' in local_var_params:
+            query_params.append(('period', local_var_params['period']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'channel_id' in local_var_params:
+            query_params.append(('channel_id', local_var_params['channel_id']))
+        if 'provider_type' in local_var_params:
+            query_params.append(('provider_type', local_var_params['provider_type']))
+        if 'source_name' in local_var_params:
+            query_params.append(('source_name', local_var_params['source_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/metrics/pub',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListPubMetricsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_quotas_async(self, request):
         """查询配额
 
@@ -1756,6 +1892,79 @@ class EgAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListQuotasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_sub_metrics_async(self, request):
+        """查询事件订阅监控指标数据
+
+        查询事件订阅监控指标数据
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSubMetrics
+        :type request: :class:`huaweicloudsdkeg.v1.ListSubMetricsRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.ListSubMetricsResponse`
+        """
+        return self.list_sub_metrics_with_http_info(request)
+
+    def list_sub_metrics_with_http_info(self, request):
+        all_params = ['start_time', 'subscription_id', 'filter', 'period', 'end_time', 'provider_type', 'target_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'filter' in local_var_params:
+            query_params.append(('filter', local_var_params['filter']))
+        if 'period' in local_var_params:
+            query_params.append(('period', local_var_params['period']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'subscription_id' in local_var_params:
+            query_params.append(('subscription_id', local_var_params['subscription_id']))
+        if 'provider_type' in local_var_params:
+            query_params.append(('provider_type', local_var_params['provider_type']))
+        if 'target_id' in local_var_params:
+            query_params.append(('target_id', local_var_params['target_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/metrics/sub',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListSubMetricsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1833,7 +2042,7 @@ class EgAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_triggers_async(self, request):
-        """查询事件订阅列表
+        """查询单个函数的EG触发器
 
         查询触发器，支持指定函数urn。一个以函数urn为目标的订阅为一个触发器。
         
@@ -1894,6 +2103,73 @@ class EgAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListTriggersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_workflow_triggers_async(self, request):
+        """查询单个函数流的EG触发器
+
+        查询触发器，支持指定函数流id。一个以函数流id为目标的订阅为一个触发器。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListWorkflowTriggers
+        :type request: :class:`huaweicloudsdkeg.v1.ListWorkflowTriggersRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.ListWorkflowTriggersResponse`
+        """
+        return self.list_workflow_triggers_with_http_info(request)
+
+    def list_workflow_triggers_with_http_info(self, request):
+        all_params = ['workflow_id', 'offset', 'limit', 'sort']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workflow_id' in local_var_params:
+            path_params['workflow_id'] = local_var_params['workflow_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/subscription-triggers/workflow/{workflow_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListWorkflowTriggersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2026,6 +2302,7 @@ class EgAsyncClient(Client):
     def show_detail_of_channel_async(self, request):
         """查询事件通道详情
 
+        查询指定事件通道详情
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2086,6 +2363,7 @@ class EgAsyncClient(Client):
     def show_detail_of_connection_async(self, request):
         """查询目标连接详情
 
+        查询目标连接详情
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2581,7 +2859,7 @@ class EgAsyncClient(Client):
     def update_endpoint_async(self, request):
         """更新访问端点
 
-        update endpoint
+        更新访问端点
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3014,6 +3292,71 @@ class EgAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListApiVersionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_obs_buckets_async(self, request):
+        """获取obs桶列表
+
+        获取obs桶列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListObsBuckets
+        :type request: :class:`huaweicloudsdkeg.v1.ListObsBucketsRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.ListObsBucketsResponse`
+        """
+        return self.list_obs_buckets_with_http_info(request)
+
+    def list_obs_buckets_with_http_info(self, request):
+        all_params = ['offset', 'limit', 'sort']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/subscriptions/obsbuckets',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListObsBucketsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

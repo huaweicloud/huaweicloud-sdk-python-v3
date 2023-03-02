@@ -42,7 +42,7 @@ class ListConnectionsRequest:
 
         :param offset: 偏移量，表示从此偏移量开始查询，偏移量不能小于0
         :type offset: int
-        :param limit: 每页显示的条目数量，不能小于0
+        :param limit: 每页显示的条目数量，不能小于1或大于1000
         :type limit: int
         :param sort: 指定查询排序
         :type sort: str
@@ -98,7 +98,7 @@ class ListConnectionsRequest:
     def limit(self):
         """Gets the limit of this ListConnectionsRequest.
 
-        每页显示的条目数量，不能小于0
+        每页显示的条目数量，不能小于1或大于1000
 
         :return: The limit of this ListConnectionsRequest.
         :rtype: int
@@ -109,7 +109,7 @@ class ListConnectionsRequest:
     def limit(self, limit):
         """Sets the limit of this ListConnectionsRequest.
 
-        每页显示的条目数量，不能小于0
+        每页显示的条目数量，不能小于1或大于1000
 
         :param limit: The limit of this ListConnectionsRequest.
         :type limit: int

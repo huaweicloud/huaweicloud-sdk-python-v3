@@ -25,7 +25,7 @@ class SubscriptionTarget:
         'provider_type': 'str',
         'connection_id': 'str',
         'detail': 'object',
-        'transform': 'SubscriptionTargetTransform'
+        'transform': 'TransForm'
     }
 
     attribute_map = {
@@ -53,7 +53,7 @@ class SubscriptionTarget:
         :param detail: 订阅的事件目标参数列表，该字段序列化后总长度不超过1024字节
         :type detail: object
         :param transform: 
-        :type transform: :class:`huaweicloudsdkeg.v1.SubscriptionTargetTransform`
+        :type transform: :class:`huaweicloudsdkeg.v1.TransForm`
         """
         
         
@@ -72,8 +72,7 @@ class SubscriptionTarget:
         self.provider_type = provider_type
         if connection_id is not None:
             self.connection_id = connection_id
-        if detail is not None:
-            self.detail = detail
+        self.detail = detail
         self.transform = transform
 
     @property
@@ -191,7 +190,7 @@ class SubscriptionTarget:
         """Gets the transform of this SubscriptionTarget.
 
         :return: The transform of this SubscriptionTarget.
-        :rtype: :class:`huaweicloudsdkeg.v1.SubscriptionTargetTransform`
+        :rtype: :class:`huaweicloudsdkeg.v1.TransForm`
         """
         return self._transform
 
@@ -200,7 +199,7 @@ class SubscriptionTarget:
         """Sets the transform of this SubscriptionTarget.
 
         :param transform: The transform of this SubscriptionTarget.
-        :type transform: :class:`huaweicloudsdkeg.v1.SubscriptionTargetTransform`
+        :type transform: :class:`huaweicloudsdkeg.v1.TransForm`
         """
         self._transform = transform
 

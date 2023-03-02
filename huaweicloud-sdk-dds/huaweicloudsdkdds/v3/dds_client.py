@@ -5012,6 +5012,66 @@ class DdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_repl_set_name(self, request):
+        """查询数据库复制集名称
+
+        查询数据库复制集名称
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowReplSetName
+        :type request: :class:`huaweicloudsdkdds.v3.ShowReplSetNameRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.ShowReplSetNameResponse`
+        """
+        return self.show_repl_set_name_with_http_info(request)
+
+    def show_repl_set_name_with_http_info(self, request):
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["name", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/replica-set/name',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowReplSetNameResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_second_level_monitoring_status(self, request):
         """查询秒级监控配置
 
@@ -5995,6 +6055,68 @@ class DdsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateInstanceRemarkResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_repl_set_name(self, request):
+        """修改数据库复制集名称
+
+        修改数据库复制集名称
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateReplSetName
+        :type request: :class:`huaweicloudsdkdds.v3.UpdateReplSetNameRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.UpdateReplSetNameResponse`
+        """
+        return self.update_repl_set_name_with_http_info(request)
+
+    def update_repl_set_name_with_http_info(self, request):
+        all_params = ['instance_id', 'mongo_update_repl_set_v3_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/replica-set/name',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateReplSetNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

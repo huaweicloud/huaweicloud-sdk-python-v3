@@ -32,7 +32,7 @@ class UpdateRdsInstanceAliasRequest:
 
         The model defined in huaweicloud sdk
 
-        :param alias: 长度可在0~64个字符之间，由字母、数字、汉字、英文句号、下划线、中划线组成。
+        :param alias: 长度可在0~64个字符之间，由字母、数字、汉字、英文句号、下划线、中划线组成。Mysql实例此参数为空时可以清空原有备注，PostgreSQL此参数必传，SQLServer此参数为空时不生效。
         :type alias: str
         """
         
@@ -41,13 +41,14 @@ class UpdateRdsInstanceAliasRequest:
         self._alias = None
         self.discriminator = None
 
-        self.alias = alias
+        if alias is not None:
+            self.alias = alias
 
     @property
     def alias(self):
         """Gets the alias of this UpdateRdsInstanceAliasRequest.
 
-        长度可在0~64个字符之间，由字母、数字、汉字、英文句号、下划线、中划线组成。
+        长度可在0~64个字符之间，由字母、数字、汉字、英文句号、下划线、中划线组成。Mysql实例此参数为空时可以清空原有备注，PostgreSQL此参数必传，SQLServer此参数为空时不生效。
 
         :return: The alias of this UpdateRdsInstanceAliasRequest.
         :rtype: str
@@ -58,7 +59,7 @@ class UpdateRdsInstanceAliasRequest:
     def alias(self, alias):
         """Sets the alias of this UpdateRdsInstanceAliasRequest.
 
-        长度可在0~64个字符之间，由字母、数字、汉字、英文句号、下划线、中划线组成。
+        长度可在0~64个字符之间，由字母、数字、汉字、英文句号、下划线、中划线组成。Mysql实例此参数为空时可以清空原有备注，PostgreSQL此参数必传，SQLServer此参数为空时不生效。
 
         :param alias: The alias of this UpdateRdsInstanceAliasRequest.
         :type alias: str

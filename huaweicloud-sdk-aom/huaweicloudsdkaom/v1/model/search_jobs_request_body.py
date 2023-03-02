@@ -48,7 +48,7 @@ class SearchJobsRequestBody:
         :type page_num: int
         :param page_size: 每页显示的条数，每页查询的总条数，page_size为正整数，不能是0和负数，当输入参数为负数，0和大于101，自动修正参数为10，默认值是10（用户不传时，值是10）。
         :type page_size: int
-        :param order_by_column: 需要排序的字段(默认为更新时间),支持字段有create_time。
+        :param order_by_column: 需要排序的字段(默认为更新时间),支持字段有name,create_time,update_time。
         :type order_by_column: str
         :param sort_order: 排序规则(默认降序) 传入升序或降序，升序：ASC，降序：DESC。
         :type sort_order: str
@@ -148,7 +148,7 @@ class SearchJobsRequestBody:
     def order_by_column(self):
         """Gets the order_by_column of this SearchJobsRequestBody.
 
-        需要排序的字段(默认为更新时间),支持字段有create_time。
+        需要排序的字段(默认为更新时间),支持字段有name,create_time,update_time。
 
         :return: The order_by_column of this SearchJobsRequestBody.
         :rtype: str
@@ -159,7 +159,7 @@ class SearchJobsRequestBody:
     def order_by_column(self, order_by_column):
         """Sets the order_by_column of this SearchJobsRequestBody.
 
-        需要排序的字段(默认为更新时间),支持字段有create_time。
+        需要排序的字段(默认为更新时间),支持字段有name,create_time,update_time。
 
         :param order_by_column: The order_by_column of this SearchJobsRequestBody.
         :type order_by_column: str

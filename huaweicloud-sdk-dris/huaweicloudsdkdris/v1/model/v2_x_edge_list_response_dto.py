@@ -23,6 +23,7 @@ class V2XEdgeListResponseDTO:
         'v2x_edge_id': 'str',
         'name': 'str',
         'esn': 'str',
+        'ip': 'str',
         'position_description': 'str',
         'location': 'Location',
         'status': 'str',
@@ -34,6 +35,7 @@ class V2XEdgeListResponseDTO:
         'v2x_edge_id': 'v2x_edge_id',
         'name': 'name',
         'esn': 'esn',
+        'ip': 'ip',
         'position_description': 'position_description',
         'location': 'location',
         'status': 'status',
@@ -41,7 +43,7 @@ class V2XEdgeListResponseDTO:
         'created_time': 'created_time'
     }
 
-    def __init__(self, v2x_edge_id=None, name=None, esn=None, position_description=None, location=None, status=None, channel_status=None, created_time=None):
+    def __init__(self, v2x_edge_id=None, name=None, esn=None, ip=None, position_description=None, location=None, status=None, channel_status=None, created_time=None):
         """V2XEdgeListResponseDTO
 
         The model defined in huaweicloud sdk
@@ -52,6 +54,8 @@ class V2XEdgeListResponseDTO:
         :type name: str
         :param esn: **参数说明**：设备编码。  **取值范围**：长度不超过64，只允许字母、数字、以及_等字符的组合。
         :type esn: str
+        :param ip: **参数说明**：网络IP，例如127.0.0.1。 
+        :type ip: str
         :param position_description: **参数说明**：安装位置编码，由用户自定义。  **取值范围**：长度不低于1不超过128，只允许字母、数字、下划线（_）的组合。
         :type position_description: str
         :param location: 
@@ -69,6 +73,7 @@ class V2XEdgeListResponseDTO:
         self._v2x_edge_id = None
         self._name = None
         self._esn = None
+        self._ip = None
         self._position_description = None
         self._location = None
         self._status = None
@@ -82,6 +87,8 @@ class V2XEdgeListResponseDTO:
             self.name = name
         if esn is not None:
             self.esn = esn
+        if ip is not None:
+            self.ip = ip
         if position_description is not None:
             self.position_description = position_description
         if location is not None:
@@ -158,6 +165,28 @@ class V2XEdgeListResponseDTO:
         :type esn: str
         """
         self._esn = esn
+
+    @property
+    def ip(self):
+        """Gets the ip of this V2XEdgeListResponseDTO.
+
+        **参数说明**：网络IP，例如127.0.0.1。 
+
+        :return: The ip of this V2XEdgeListResponseDTO.
+        :rtype: str
+        """
+        return self._ip
+
+    @ip.setter
+    def ip(self, ip):
+        """Sets the ip of this V2XEdgeListResponseDTO.
+
+        **参数说明**：网络IP，例如127.0.0.1。 
+
+        :param ip: The ip of this V2XEdgeListResponseDTO.
+        :type ip: str
+        """
+        self._ip = ip
 
     @property
     def position_description(self):

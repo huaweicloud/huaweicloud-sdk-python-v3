@@ -1009,6 +1009,77 @@ class DrisAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_edge_flows_async(self, request):
+        """查询历史交通统计信息列表
+
+        查询历史交通统计信息列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListEdgeFlows
+        :type request: :class:`huaweicloudsdkdris.v1.ListEdgeFlowsRequest`
+        :rtype: :class:`huaweicloudsdkdris.v1.ListEdgeFlowsResponse`
+        """
+        return self.list_edge_flows_with_http_info(request)
+
+    def list_edge_flows_with_http_info(self, request):
+        all_params = ['instance_id', 'offset', 'limit', 'from_date', 'to_date', 'edge_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'from_date' in local_var_params:
+            query_params.append(('from_date', local_var_params['from_date']))
+        if 'to_date' in local_var_params:
+            query_params.append(('to_date', local_var_params['to_date']))
+        if 'edge_id' in local_var_params:
+            query_params.append(('edge_id', local_var_params['edge_id']))
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/edge-flow',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListEdgeFlowsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_history_traffic_events_async(self, request):
         """查询历史交通事件列表
 
@@ -3478,77 +3549,6 @@ class DrisAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateEdgeApplicationVersionStateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def list_edge_flows_async(self, request):
-        """查询历史交通统计信息列表
-
-        查询历史交通统计信息列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListEdgeFlows
-        :type request: :class:`huaweicloudsdkdris.v1.ListEdgeFlowsRequest`
-        :rtype: :class:`huaweicloudsdkdris.v1.ListEdgeFlowsResponse`
-        """
-        return self.list_edge_flows_with_http_info(request)
-
-    def list_edge_flows_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'from_date', 'to_date', 'edge_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'from_date' in local_var_params:
-            query_params.append(('from_date', local_var_params['from_date']))
-        if 'to_date' in local_var_params:
-            query_params.append(('to_date', local_var_params['to_date']))
-        if 'edge_id' in local_var_params:
-            query_params.append(('edge_id', local_var_params['edge_id']))
-
-        header_params = {}
-        if 'instance_id' in local_var_params:
-            header_params['Instance-Id'] = local_var_params['instance_id']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/edge-flow',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEdgeFlowsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

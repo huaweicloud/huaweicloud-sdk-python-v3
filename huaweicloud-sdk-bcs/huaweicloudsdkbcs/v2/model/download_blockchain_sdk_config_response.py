@@ -4,11 +4,11 @@ import re
 import six
 
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class DownloadBlockchainSdkConfigResponse(SdkResponse):
+class DownloadBlockchainSdkConfigResponse(SdkStreamResponse):
 
     """
     Attributes:
@@ -20,51 +20,20 @@ class DownloadBlockchainSdkConfigResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'str'
     }
 
     attribute_map = {
-        'result': 'result'
     }
 
-    def __init__(self, result=None):
+    def __init__(self, response):
         """DownloadBlockchainSdkConfigResponse
 
         The model defined in huaweicloud sdk
 
-        :param result: 请求成功的结果
-        :type result: str
         """
         
-        super(DownloadBlockchainSdkConfigResponse, self).__init__()
-
-        self._result = None
+        super(DownloadBlockchainSdkConfigResponse, self).__init__(response)
         self.discriminator = None
-
-        if result is not None:
-            self.result = result
-
-    @property
-    def result(self):
-        """Gets the result of this DownloadBlockchainSdkConfigResponse.
-
-        请求成功的结果
-
-        :return: The result of this DownloadBlockchainSdkConfigResponse.
-        :rtype: str
-        """
-        return self._result
-
-    @result.setter
-    def result(self, result):
-        """Sets the result of this DownloadBlockchainSdkConfigResponse.
-
-        请求成功的结果
-
-        :param result: The result of this DownloadBlockchainSdkConfigResponse.
-        :type result: str
-        """
-        self._result = result
 
     def to_dict(self):
         """Returns the model properties as a dict"""

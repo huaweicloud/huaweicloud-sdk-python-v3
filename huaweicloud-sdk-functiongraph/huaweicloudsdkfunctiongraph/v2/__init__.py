@@ -182,6 +182,7 @@ from huaweicloudsdkfunctiongraph.v2.model.strategy_config import StrategyConfig
 from huaweicloudsdkfunctiongraph.v2.model.sync_execution_node_error_detail import SyncExecutionNodeErrorDetail
 from huaweicloudsdkfunctiongraph.v2.model.tactics_config import TacticsConfig
 from huaweicloudsdkfunctiongraph.v2.model.trigger import Trigger
+from huaweicloudsdkfunctiongraph.v2.model.trigger_event_data import TriggerEventData
 from huaweicloudsdkfunctiongraph.v2.model.update_dependcy_request import UpdateDependcyRequest
 from huaweicloudsdkfunctiongraph.v2.model.update_dependcy_response import UpdateDependcyResponse
 from huaweicloudsdkfunctiongraph.v2.model.update_dependency_request_body import UpdateDependencyRequestBody

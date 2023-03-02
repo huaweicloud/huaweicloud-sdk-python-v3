@@ -38,7 +38,7 @@ class OperateSubscriptionResponse(SdkResponse):
 
         :param failed_count: 操作失败的订阅个数
         :type failed_count: int
-        :param events: 
+        :param events: 事件列表
         :type events: list[:class:`huaweicloudsdkeg.v1.SubscriptionOperateRespEvents`]
         :param x_request_id: 
         :type x_request_id: str
@@ -84,6 +84,8 @@ class OperateSubscriptionResponse(SdkResponse):
     def events(self):
         """Gets the events of this OperateSubscriptionResponse.
 
+        事件列表
+
         :return: The events of this OperateSubscriptionResponse.
         :rtype: list[:class:`huaweicloudsdkeg.v1.SubscriptionOperateRespEvents`]
         """
@@ -92,6 +94,8 @@ class OperateSubscriptionResponse(SdkResponse):
     @events.setter
     def events(self, events):
         """Sets the events of this OperateSubscriptionResponse.
+
+        事件列表
 
         :param events: The events of this OperateSubscriptionResponse.
         :type events: list[:class:`huaweicloudsdkeg.v1.SubscriptionOperateRespEvents`]

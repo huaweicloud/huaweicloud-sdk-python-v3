@@ -20,8 +20,8 @@ class ErrorCodeRedirectRules:
     sensitive_list = []
 
     openapi_types = {
-        'error_code': 'str',
-        'target_code': 'str',
+        'error_code': 'int',
+        'target_code': 'int',
         'target_link': 'str'
     }
 
@@ -37,9 +37,9 @@ class ErrorCodeRedirectRules:
         The model defined in huaweicloud sdk
 
         :param error_code: 重定向的错误码，当前支持以下状态码 4xx:400, 403, 404, 405, 414, 416, 451 5xx:500, 501, 502, 503, 504
-        :type error_code: str
+        :type error_code: int
         :param target_code: 重定向状态码，取值为301或302
-        :type target_code: str
+        :type target_code: int
         :param target_link: 重定向的目标链接
         :type target_link: str
         """
@@ -62,7 +62,7 @@ class ErrorCodeRedirectRules:
         重定向的错误码，当前支持以下状态码 4xx:400, 403, 404, 405, 414, 416, 451 5xx:500, 501, 502, 503, 504
 
         :return: The error_code of this ErrorCodeRedirectRules.
-        :rtype: str
+        :rtype: int
         """
         return self._error_code
 
@@ -73,7 +73,7 @@ class ErrorCodeRedirectRules:
         重定向的错误码，当前支持以下状态码 4xx:400, 403, 404, 405, 414, 416, 451 5xx:500, 501, 502, 503, 504
 
         :param error_code: The error_code of this ErrorCodeRedirectRules.
-        :type error_code: str
+        :type error_code: int
         """
         self._error_code = error_code
 
@@ -84,7 +84,7 @@ class ErrorCodeRedirectRules:
         重定向状态码，取值为301或302
 
         :return: The target_code of this ErrorCodeRedirectRules.
-        :rtype: str
+        :rtype: int
         """
         return self._target_code
 
@@ -95,7 +95,7 @@ class ErrorCodeRedirectRules:
         重定向状态码，取值为301或302
 
         :param target_code: The target_code of this ErrorCodeRedirectRules.
-        :type target_code: str
+        :type target_code: int
         """
         self._target_code = target_code
 

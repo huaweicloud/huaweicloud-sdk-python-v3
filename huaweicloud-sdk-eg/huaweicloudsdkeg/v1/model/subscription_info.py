@@ -27,6 +27,7 @@ class SubscriptionInfo:
         'status': 'str',
         'channel_id': 'str',
         'channel_name': 'str',
+        'used': 'list[SubscriptionUsedInfo]',
         'sources': 'list[SubscriptionSourceInfo]',
         'targets': 'list[SubscriptionTargetInfo]',
         'created_time': 'str',
@@ -41,13 +42,14 @@ class SubscriptionInfo:
         'status': 'status',
         'channel_id': 'channel_id',
         'channel_name': 'channel_name',
+        'used': 'used',
         'sources': 'sources',
         'targets': 'targets',
         'created_time': 'created_time',
         'updated_time': 'updated_time'
     }
 
-    def __init__(self, id=None, name=None, description=None, type=None, status=None, channel_id=None, channel_name=None, sources=None, targets=None, created_time=None, updated_time=None):
+    def __init__(self, id=None, name=None, description=None, type=None, status=None, channel_id=None, channel_name=None, used=None, sources=None, targets=None, created_time=None, updated_time=None):
         """SubscriptionInfo
 
         The model defined in huaweicloud sdk
@@ -66,6 +68,8 @@ class SubscriptionInfo:
         :type channel_id: str
         :param channel_name: 通道名称
         :type channel_name: str
+        :param used: 标签信息
+        :type used: list[:class:`huaweicloudsdkeg.v1.SubscriptionUsedInfo`]
         :param sources: 订阅源列表
         :type sources: list[:class:`huaweicloudsdkeg.v1.SubscriptionSourceInfo`]
         :param targets: 订阅目标列表
@@ -85,6 +89,7 @@ class SubscriptionInfo:
         self._status = None
         self._channel_id = None
         self._channel_name = None
+        self._used = None
         self._sources = None
         self._targets = None
         self._created_time = None
@@ -105,6 +110,8 @@ class SubscriptionInfo:
             self.channel_id = channel_id
         if channel_name is not None:
             self.channel_name = channel_name
+        if used is not None:
+            self.used = used
         if sources is not None:
             self.sources = sources
         if targets is not None:
@@ -267,6 +274,28 @@ class SubscriptionInfo:
         :type channel_name: str
         """
         self._channel_name = channel_name
+
+    @property
+    def used(self):
+        """Gets the used of this SubscriptionInfo.
+
+        标签信息
+
+        :return: The used of this SubscriptionInfo.
+        :rtype: list[:class:`huaweicloudsdkeg.v1.SubscriptionUsedInfo`]
+        """
+        return self._used
+
+    @used.setter
+    def used(self, used):
+        """Sets the used of this SubscriptionInfo.
+
+        标签信息
+
+        :param used: The used of this SubscriptionInfo.
+        :type used: list[:class:`huaweicloudsdkeg.v1.SubscriptionUsedInfo`]
+        """
+        self._used = used
 
     @property
     def sources(self):

@@ -36,7 +36,7 @@ class DeleteHooksRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_name: 组名(克隆地址中域名后面项目名前的一段 示例：git@codehub.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
+        :param group_name: 组名(克隆地址中域名后面项目名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
         :type group_name: str
         :param hook_id: 通过id删除指定仓库的hook
         :type hook_id: int
@@ -59,7 +59,7 @@ class DeleteHooksRequest:
     def group_name(self):
         """Gets the group_name of this DeleteHooksRequest.
 
-        组名(克隆地址中域名后面项目名前的一段 示例：git@codehub.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
+        组名(克隆地址中域名后面项目名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
 
         :return: The group_name of this DeleteHooksRequest.
         :rtype: str
@@ -70,7 +70,7 @@ class DeleteHooksRequest:
     def group_name(self, group_name):
         """Sets the group_name of this DeleteHooksRequest.
 
-        组名(克隆地址中域名后面项目名前的一段 示例：git@codehub.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
+        组名(克隆地址中域名后面项目名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
 
         :param group_name: The group_name of this DeleteHooksRequest.
         :type group_name: str

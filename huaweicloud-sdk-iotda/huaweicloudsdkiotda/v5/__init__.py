@@ -58,6 +58,9 @@ from huaweicloudsdkiotda.v5.model.create_message_request import CreateMessageReq
 from huaweicloudsdkiotda.v5.model.create_message_response import CreateMessageResponse
 from huaweicloudsdkiotda.v5.model.create_or_delete_device_in_group_request import CreateOrDeleteDeviceInGroupRequest
 from huaweicloudsdkiotda.v5.model.create_or_delete_device_in_group_response import CreateOrDeleteDeviceInGroupResponse
+from huaweicloudsdkiotda.v5.model.create_ota_package import CreateOtaPackage
+from huaweicloudsdkiotda.v5.model.create_ota_package_request import CreateOtaPackageRequest
+from huaweicloudsdkiotda.v5.model.create_ota_package_response import CreateOtaPackageResponse
 from huaweicloudsdkiotda.v5.model.create_product_request import CreateProductRequest
 from huaweicloudsdkiotda.v5.model.create_product_response import CreateProductResponse
 from huaweicloudsdkiotda.v5.model.create_routing_rule_request import CreateRoutingRuleRequest
@@ -77,6 +80,8 @@ from huaweicloudsdkiotda.v5.model.delete_device_group_request import DeleteDevic
 from huaweicloudsdkiotda.v5.model.delete_device_group_response import DeleteDeviceGroupResponse
 from huaweicloudsdkiotda.v5.model.delete_device_request import DeleteDeviceRequest
 from huaweicloudsdkiotda.v5.model.delete_device_response import DeleteDeviceResponse
+from huaweicloudsdkiotda.v5.model.delete_ota_package_request import DeleteOtaPackageRequest
+from huaweicloudsdkiotda.v5.model.delete_ota_package_response import DeleteOtaPackageResponse
 from huaweicloudsdkiotda.v5.model.delete_product_request import DeleteProductRequest
 from huaweicloudsdkiotda.v5.model.delete_product_response import DeleteProductResponse
 from huaweicloudsdkiotda.v5.model.delete_queue_request import DeleteQueueRequest
@@ -101,6 +106,7 @@ from huaweicloudsdkiotda.v5.model.dms_kafka_forwarding import DmsKafkaForwarding
 from huaweicloudsdkiotda.v5.model.dms_rocket_mq_forwarding import DmsRocketMQForwarding
 from huaweicloudsdkiotda.v5.model.error_info import ErrorInfo
 from huaweicloudsdkiotda.v5.model.error_info_dto import ErrorInfoDTO
+from huaweicloudsdkiotda.v5.model.file_location import FileLocation
 from huaweicloudsdkiotda.v5.model.freeze_device_request import FreezeDeviceRequest
 from huaweicloudsdkiotda.v5.model.freeze_device_response import FreezeDeviceResponse
 from huaweicloudsdkiotda.v5.model.function_graph_forwarding import FunctionGraphForwarding
@@ -119,6 +125,8 @@ from huaweicloudsdkiotda.v5.model.list_device_messages_request import ListDevice
 from huaweicloudsdkiotda.v5.model.list_device_messages_response import ListDeviceMessagesResponse
 from huaweicloudsdkiotda.v5.model.list_devices_request import ListDevicesRequest
 from huaweicloudsdkiotda.v5.model.list_devices_response import ListDevicesResponse
+from huaweicloudsdkiotda.v5.model.list_ota_package_info_request import ListOtaPackageInfoRequest
+from huaweicloudsdkiotda.v5.model.list_ota_package_info_response import ListOtaPackageInfoResponse
 from huaweicloudsdkiotda.v5.model.list_products_request import ListProductsRequest
 from huaweicloudsdkiotda.v5.model.list_products_response import ListProductsResponse
 from huaweicloudsdkiotda.v5.model.list_properties_request import ListPropertiesRequest
@@ -136,7 +144,10 @@ from huaweicloudsdkiotda.v5.model.mrs_kafka_forwarding import MrsKafkaForwarding
 from huaweicloudsdkiotda.v5.model.mysql_forwarding import MysqlForwarding
 from huaweicloudsdkiotda.v5.model.net_address import NetAddress
 from huaweicloudsdkiotda.v5.model.obs_forwarding import ObsForwarding
+from huaweicloudsdkiotda.v5.model.obs_location import ObsLocation
+from huaweicloudsdkiotda.v5.model.ota_package_info import OtaPackageInfo
 from huaweicloudsdkiotda.v5.model.page import Page
+from huaweicloudsdkiotda.v5.model.page_info import PageInfo
 from huaweicloudsdkiotda.v5.model.product_summary import ProductSummary
 from huaweicloudsdkiotda.v5.model.properties_dto import PropertiesDTO
 from huaweicloudsdkiotda.v5.model.property_filter import PropertyFilter
@@ -188,6 +199,8 @@ from huaweicloudsdkiotda.v5.model.show_device_shadow_request import ShowDeviceSh
 from huaweicloudsdkiotda.v5.model.show_device_shadow_response import ShowDeviceShadowResponse
 from huaweicloudsdkiotda.v5.model.show_devices_in_group_request import ShowDevicesInGroupRequest
 from huaweicloudsdkiotda.v5.model.show_devices_in_group_response import ShowDevicesInGroupResponse
+from huaweicloudsdkiotda.v5.model.show_ota_package_request import ShowOtaPackageRequest
+from huaweicloudsdkiotda.v5.model.show_ota_package_response import ShowOtaPackageResponse
 from huaweicloudsdkiotda.v5.model.show_product_request import ShowProductRequest
 from huaweicloudsdkiotda.v5.model.show_product_response import ShowProductResponse
 from huaweicloudsdkiotda.v5.model.show_queue_request import ShowQueueRequest

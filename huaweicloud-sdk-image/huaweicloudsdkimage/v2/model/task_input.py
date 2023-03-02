@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class SubscriptionTargetInfoTransform:
+class TaskInput:
 
     """
     Attributes:
@@ -21,108 +21,77 @@ class SubscriptionTargetInfoTransform:
 
     openapi_types = {
         'type': 'str',
-        'value': 'str',
-        'template': 'str'
+        'data': 'list[TaskInputData]'
     }
 
     attribute_map = {
         'type': 'type',
-        'value': 'value',
-        'template': 'template'
+        'data': 'data'
     }
 
-    def __init__(self, type=None, value=None, template=None):
-        """SubscriptionTargetInfoTransform
+    def __init__(self, type=None, data=None):
+        """TaskInput
 
         The model defined in huaweicloud sdk
 
-        :param type: 转换规则类型
+        :param type: 任务的输入类型。可选类型有obs（对象存储服务存储的文件），url（指定的文件地址）
         :type type: str
-        :param value: 转换规则内容
-        :type value: str
-        :param template: 转换规则模板
-        :type template: str
+        :param data: 任务的输入详情。针对不同的输入类型有不同的配置。
+        :type data: list[:class:`huaweicloudsdkimage.v2.TaskInputData`]
         """
         
         
 
         self._type = None
-        self._value = None
-        self._template = None
+        self._data = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
-        if value is not None:
-            self.value = value
-        if template is not None:
-            self.template = template
+        self.type = type
+        self.data = data
 
     @property
     def type(self):
-        """Gets the type of this SubscriptionTargetInfoTransform.
+        """Gets the type of this TaskInput.
 
-        转换规则类型
+        任务的输入类型。可选类型有obs（对象存储服务存储的文件），url（指定的文件地址）
 
-        :return: The type of this SubscriptionTargetInfoTransform.
+        :return: The type of this TaskInput.
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SubscriptionTargetInfoTransform.
+        """Sets the type of this TaskInput.
 
-        转换规则类型
+        任务的输入类型。可选类型有obs（对象存储服务存储的文件），url（指定的文件地址）
 
-        :param type: The type of this SubscriptionTargetInfoTransform.
+        :param type: The type of this TaskInput.
         :type type: str
         """
         self._type = type
 
     @property
-    def value(self):
-        """Gets the value of this SubscriptionTargetInfoTransform.
+    def data(self):
+        """Gets the data of this TaskInput.
 
-        转换规则内容
+        任务的输入详情。针对不同的输入类型有不同的配置。
 
-        :return: The value of this SubscriptionTargetInfoTransform.
-        :rtype: str
+        :return: The data of this TaskInput.
+        :rtype: list[:class:`huaweicloudsdkimage.v2.TaskInputData`]
         """
-        return self._value
+        return self._data
 
-    @value.setter
-    def value(self, value):
-        """Sets the value of this SubscriptionTargetInfoTransform.
+    @data.setter
+    def data(self, data):
+        """Sets the data of this TaskInput.
 
-        转换规则内容
+        任务的输入详情。针对不同的输入类型有不同的配置。
 
-        :param value: The value of this SubscriptionTargetInfoTransform.
-        :type value: str
+        :param data: The data of this TaskInput.
+        :type data: list[:class:`huaweicloudsdkimage.v2.TaskInputData`]
         """
-        self._value = value
-
-    @property
-    def template(self):
-        """Gets the template of this SubscriptionTargetInfoTransform.
-
-        转换规则模板
-
-        :return: The template of this SubscriptionTargetInfoTransform.
-        :rtype: str
-        """
-        return self._template
-
-    @template.setter
-    def template(self, template):
-        """Sets the template of this SubscriptionTargetInfoTransform.
-
-        转换规则模板
-
-        :param template: The template of this SubscriptionTargetInfoTransform.
-        :type template: str
-        """
-        self._template = template
+        self._data = data
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -166,7 +135,7 @@ class SubscriptionTargetInfoTransform:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SubscriptionTargetInfoTransform):
+        if not isinstance(other, TaskInput):
             return False
 
         return self.__dict__ == other.__dict__

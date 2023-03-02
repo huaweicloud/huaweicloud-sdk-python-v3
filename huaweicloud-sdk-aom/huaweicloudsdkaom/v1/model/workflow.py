@@ -57,7 +57,7 @@ class Workflow:
         'trigger_id': 'str',
         'trigger_status': 'str',
         'approve_id': 'str',
-        'template_i18n': 'dict(str, dict(str, object))',
+        'template_i18n': 'WorkFlowModel',
         'enterprise_project_id': 'str',
         'last_execute_by': 'str'
     }
@@ -112,7 +112,7 @@ class Workflow:
 
         :param id: 工作流id，唯一标识，根据project_id和workflow_name生成。
         :type id: str
-        :param name: 工作流名称，满足：[^\\\\&gt;+&lt;^;#\&quot;\\s&amp;?%&#x3D;&#39;$￥@*/\\]\\[【】{}|:,.，。：‘’“、—！!~&#x60;·？《》…]{1,64}。
+        :param name: 工作流名称。
         :type name: str
         :param type: 工作流类型，可以为cron、manual
         :type type: str
@@ -128,7 +128,7 @@ class Workflow:
         :type update_time: int
         :param update_by: 工作流更新人，从接口调用传入的token中获取。
         :type update_by: str
-        :param template_name: 模板名称，需要满足：[^\\\\&gt;+&lt;^;#\&quot;\\s&amp;?%&#x3D;&#39;$￥@*/\\]\\[【】{}|:,.，。：‘’“、—！!~&#x60;·？《》…]{1,64}。
+        :param template_name: 模板名称。
         :type template_name: str
         :param template_id: 模板id
         :type template_id: str
@@ -138,7 +138,7 @@ class Workflow:
         :type last_execution_id: str
         :param status: 任务状态，包含success，fail,executing
         :type status: str
-        :param citation_urns: 引用链接,workflow引用的工作链接
+        :param citation_urns: 工作流的引用。
         :type citation_urns: list[str]
         :param last_execution_end_time: 最近一次执行结束时间，为utc时间毫秒数
         :type last_execution_end_time: int
@@ -184,8 +184,8 @@ class Workflow:
         :type trigger_status: str
         :param approve_id: 审批id
         :type approve_id: str
-        :param template_i18n: 任务国际化字段，包含中英文描述
-        :type template_i18n: dict(str, dict(str, object))
+        :param template_i18n: 
+        :type template_i18n: :class:`huaweicloudsdkaom.v1.WorkFlowModel`
         :param enterprise_project_id: 任务所属的企业项目
         :type enterprise_project_id: str
         :param last_execute_by: 任务最后一次执行人
@@ -342,7 +342,7 @@ class Workflow:
     def name(self):
         """Gets the name of this Workflow.
 
-        工作流名称，满足：[^\\\\>+<^;#\"\\s&?%='$￥@*/\\]\\[【】{}|:,.，。：‘’“、—！!~`·？《》…]{1,64}。
+        工作流名称。
 
         :return: The name of this Workflow.
         :rtype: str
@@ -353,7 +353,7 @@ class Workflow:
     def name(self, name):
         """Sets the name of this Workflow.
 
-        工作流名称，满足：[^\\\\>+<^;#\"\\s&?%='$￥@*/\\]\\[【】{}|:,.，。：‘’“、—！!~`·？《》…]{1,64}。
+        工作流名称。
 
         :param name: The name of this Workflow.
         :type name: str
@@ -518,7 +518,7 @@ class Workflow:
     def template_name(self):
         """Gets the template_name of this Workflow.
 
-        模板名称，需要满足：[^\\\\>+<^;#\"\\s&?%='$￥@*/\\]\\[【】{}|:,.，。：‘’“、—！!~`·？《》…]{1,64}。
+        模板名称。
 
         :return: The template_name of this Workflow.
         :rtype: str
@@ -529,7 +529,7 @@ class Workflow:
     def template_name(self, template_name):
         """Sets the template_name of this Workflow.
 
-        模板名称，需要满足：[^\\\\>+<^;#\"\\s&?%='$￥@*/\\]\\[【】{}|:,.，。：‘’“、—！!~`·？《》…]{1,64}。
+        模板名称。
 
         :param template_name: The template_name of this Workflow.
         :type template_name: str
@@ -628,7 +628,7 @@ class Workflow:
     def citation_urns(self):
         """Gets the citation_urns of this Workflow.
 
-        引用链接,workflow引用的工作链接
+        工作流的引用。
 
         :return: The citation_urns of this Workflow.
         :rtype: list[str]
@@ -639,7 +639,7 @@ class Workflow:
     def citation_urns(self, citation_urns):
         """Sets the citation_urns of this Workflow.
 
-        引用链接,workflow引用的工作链接
+        工作流的引用。
 
         :param citation_urns: The citation_urns of this Workflow.
         :type citation_urns: list[str]
@@ -1134,10 +1134,8 @@ class Workflow:
     def template_i18n(self):
         """Gets the template_i18n of this Workflow.
 
-        任务国际化字段，包含中英文描述
-
         :return: The template_i18n of this Workflow.
-        :rtype: dict(str, dict(str, object))
+        :rtype: :class:`huaweicloudsdkaom.v1.WorkFlowModel`
         """
         return self._template_i18n
 
@@ -1145,10 +1143,8 @@ class Workflow:
     def template_i18n(self, template_i18n):
         """Sets the template_i18n of this Workflow.
 
-        任务国际化字段，包含中英文描述
-
         :param template_i18n: The template_i18n of this Workflow.
-        :type template_i18n: dict(str, dict(str, object))
+        :type template_i18n: :class:`huaweicloudsdkaom.v1.WorkFlowModel`
         """
         self._template_i18n = template_i18n
 

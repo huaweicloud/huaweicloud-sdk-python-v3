@@ -58,7 +58,7 @@ class WorkflowQueryParam:
         :type search: str
         :param type: 工作流分类，可以取值[\&quot;cron\&quot;,\&quot;event\&quot;,\&quot;manual\&quot;]。
         :type type: str
-        :param tags: 工作标签，最多支持10个。
+        :param tags: 工作流标签，最多支持10个。
         :type tags: dict(str, str)
         :param page: 查询当前的页数，默认值为0。
         :type page: int
@@ -68,13 +68,13 @@ class WorkflowQueryParam:
         :type enterprise_project_id: str
         :param create_by: 工作流创建人。
         :type create_by: str
-        :param sort_field: 排序字段，取值[\&quot;create_time\&quot;，\&quot;last_execution_start_time\&quot;]。
+        :param sort_field: 排序字段，取值[\&quot;create_time\&quot;，\&quot;last_execution_start_time\&quot;，\&quot;update_time\&quot;]。
         :type sort_field: str
         :param sort_type: 排序类型，取值[\&quot;ASC\&quot;，\&quot;DESC\&quot;]。
         :type sort_type: str
-        :param search_time_start: 更新时间，时间范围查询的开始时间。
+        :param search_time_start: 时间范围查询的开始时间。
         :type search_time_start: int
-        :param search_time_end: 更新时间，时间范围查询的结束时间。
+        :param search_time_end: 时间范围查询的结束时间。
         :type search_time_end: int
         :param status: 任务的状态 [\&quot;success\&quot;,\&quot;fail\&quot;,\&quot;executing\&quot;,\&quot;cancel\&quot;,\&quot;waitExecute\&quot;,\&quot;waitApproval\&quot;,\&quot;approvalFailed\&quot;,\&quot;pausing\&quot;,\&quot;canceling\&quot;]
         :type status: str
@@ -167,7 +167,7 @@ class WorkflowQueryParam:
     def tags(self):
         """Gets the tags of this WorkflowQueryParam.
 
-        工作标签，最多支持10个。
+        工作流标签，最多支持10个。
 
         :return: The tags of this WorkflowQueryParam.
         :rtype: dict(str, str)
@@ -178,7 +178,7 @@ class WorkflowQueryParam:
     def tags(self, tags):
         """Sets the tags of this WorkflowQueryParam.
 
-        工作标签，最多支持10个。
+        工作流标签，最多支持10个。
 
         :param tags: The tags of this WorkflowQueryParam.
         :type tags: dict(str, str)
@@ -277,7 +277,7 @@ class WorkflowQueryParam:
     def sort_field(self):
         """Gets the sort_field of this WorkflowQueryParam.
 
-        排序字段，取值[\"create_time\"，\"last_execution_start_time\"]。
+        排序字段，取值[\"create_time\"，\"last_execution_start_time\"，\"update_time\"]。
 
         :return: The sort_field of this WorkflowQueryParam.
         :rtype: str
@@ -288,7 +288,7 @@ class WorkflowQueryParam:
     def sort_field(self, sort_field):
         """Sets the sort_field of this WorkflowQueryParam.
 
-        排序字段，取值[\"create_time\"，\"last_execution_start_time\"]。
+        排序字段，取值[\"create_time\"，\"last_execution_start_time\"，\"update_time\"]。
 
         :param sort_field: The sort_field of this WorkflowQueryParam.
         :type sort_field: str
@@ -321,7 +321,7 @@ class WorkflowQueryParam:
     def search_time_start(self):
         """Gets the search_time_start of this WorkflowQueryParam.
 
-        更新时间，时间范围查询的开始时间。
+        时间范围查询的开始时间。
 
         :return: The search_time_start of this WorkflowQueryParam.
         :rtype: int
@@ -332,7 +332,7 @@ class WorkflowQueryParam:
     def search_time_start(self, search_time_start):
         """Sets the search_time_start of this WorkflowQueryParam.
 
-        更新时间，时间范围查询的开始时间。
+        时间范围查询的开始时间。
 
         :param search_time_start: The search_time_start of this WorkflowQueryParam.
         :type search_time_start: int
@@ -343,7 +343,7 @@ class WorkflowQueryParam:
     def search_time_end(self):
         """Gets the search_time_end of this WorkflowQueryParam.
 
-        更新时间，时间范围查询的结束时间。
+        时间范围查询的结束时间。
 
         :return: The search_time_end of this WorkflowQueryParam.
         :rtype: int
@@ -354,7 +354,7 @@ class WorkflowQueryParam:
     def search_time_end(self, search_time_end):
         """Sets the search_time_end of this WorkflowQueryParam.
 
-        更新时间，时间范围查询的结束时间。
+        时间范围查询的结束时间。
 
         :param search_time_end: The search_time_end of this WorkflowQueryParam.
         :type search_time_end: int

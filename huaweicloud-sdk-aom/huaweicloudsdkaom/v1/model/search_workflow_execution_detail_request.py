@@ -36,7 +36,7 @@ class SearchWorkflowExecutionDetailRequest:
 
         :param workflow_id: 工作流ID，唯一标识，根据project_id和workflow_name生成。
         :type workflow_id: str
-        :param execution_id: 工作流执行ID，xxxxx。
+        :param execution_id: 工作流执行ID。
         :type execution_id: str
         """
         
@@ -75,7 +75,7 @@ class SearchWorkflowExecutionDetailRequest:
     def execution_id(self):
         """Gets the execution_id of this SearchWorkflowExecutionDetailRequest.
 
-        工作流执行ID，xxxxx。
+        工作流执行ID。
 
         :return: The execution_id of this SearchWorkflowExecutionDetailRequest.
         :rtype: str
@@ -86,7 +86,7 @@ class SearchWorkflowExecutionDetailRequest:
     def execution_id(self, execution_id):
         """Sets the execution_id of this SearchWorkflowExecutionDetailRequest.
 
-        工作流执行ID，xxxxx。
+        工作流执行ID。
 
         :param execution_id: The execution_id of this SearchWorkflowExecutionDetailRequest.
         :type execution_id: str

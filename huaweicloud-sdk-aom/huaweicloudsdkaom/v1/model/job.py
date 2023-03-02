@@ -68,7 +68,7 @@ class Job:
         :type create_time: int
         :param create_by: 创建人。
         :type create_by: str
-        :param update_time: 实体的最后更新时间戳。 注意：执行创建/修补/删除操作时，update_time将更新。
+        :param update_time: 实体的最后更新时间戳。 注意：执行创建/修改/删除操作时，update_time将更新。
         :type update_time: int
         :param update_by: 修改人。
         :type update_by: str
@@ -227,7 +227,7 @@ class Job:
     def update_time(self):
         """Gets the update_time of this Job.
 
-        实体的最后更新时间戳。 注意：执行创建/修补/删除操作时，update_time将更新。
+        实体的最后更新时间戳。 注意：执行创建/修改/删除操作时，update_time将更新。
 
         :return: The update_time of this Job.
         :rtype: int
@@ -238,7 +238,7 @@ class Job:
     def update_time(self, update_time):
         """Sets the update_time of this Job.
 
-        实体的最后更新时间戳。 注意：执行创建/修补/删除操作时，update_time将更新。
+        实体的最后更新时间戳。 注意：执行创建/修改/删除操作时，update_time将更新。
 
         :param update_time: The update_time of this Job.
         :type update_time: int

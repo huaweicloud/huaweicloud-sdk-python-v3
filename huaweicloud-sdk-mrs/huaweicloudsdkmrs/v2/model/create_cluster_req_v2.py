@@ -30,6 +30,7 @@ class CreateClusterReqV2:
         'subnet_id': 'str',
         'subnet_name': 'str',
         'components': 'str',
+        'external_datasources': 'list[ClusterDataConnectorMap]',
         'availability_zone': 'str',
         'security_groups_id': 'str',
         'auto_create_default_security_group': 'bool',
@@ -61,6 +62,7 @@ class CreateClusterReqV2:
         'subnet_id': 'subnet_id',
         'subnet_name': 'subnet_name',
         'components': 'components',
+        'external_datasources': 'external_datasources',
         'availability_zone': 'availability_zone',
         'security_groups_id': 'security_groups_id',
         'auto_create_default_security_group': 'auto_create_default_security_group',
@@ -81,7 +83,7 @@ class CreateClusterReqV2:
         'add_jobs': 'add_jobs'
     }
 
-    def __init__(self, is_dec_project=None, cluster_version=None, cluster_name=None, cluster_type=None, charge_info=None, region=None, vpc_name=None, subnet_id=None, subnet_name=None, components=None, availability_zone=None, security_groups_id=None, auto_create_default_security_group=None, safe_mode=None, manager_admin_password=None, login_mode=None, node_root_password=None, node_keypair_name=None, enterprise_project_id=None, eip_address=None, eip_id=None, mrs_ecs_default_agency=None, template_id=None, tags=None, log_collection=None, node_groups=None, bootstrap_scripts=None, add_jobs=None):
+    def __init__(self, is_dec_project=None, cluster_version=None, cluster_name=None, cluster_type=None, charge_info=None, region=None, vpc_name=None, subnet_id=None, subnet_name=None, components=None, external_datasources=None, availability_zone=None, security_groups_id=None, auto_create_default_security_group=None, safe_mode=None, manager_admin_password=None, login_mode=None, node_root_password=None, node_keypair_name=None, enterprise_project_id=None, eip_address=None, eip_id=None, mrs_ecs_default_agency=None, template_id=None, tags=None, log_collection=None, node_groups=None, bootstrap_scripts=None, add_jobs=None):
         """CreateClusterReqV2
 
         The model defined in huaweicloud sdk
@@ -106,6 +108,8 @@ class CreateClusterReqV2:
         :type subnet_name: str
         :param components: 组件名称列表，用逗号分隔。支持的组件请参见[获取MRS集群信息](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)页面的“MRS服务支持的组件”内容。
         :type components: str
+        :param external_datasources: 部署Hive和Ranger等组件时，可以关联数据连接，将元数据存储于关联的数据库
+        :type external_datasources: list[:class:`huaweicloudsdkmrs.v2.ClusterDataConnectorMap`]
         :param availability_zone: 可用分区名称，不支持多AZ集群。 可用分区信息请参见[终端节点](https://support.huaweicloud.com/api-mrs/mrs_02_0003.html)。
         :type availability_zone: str
         :param security_groups_id: 集群安全组的ID。 - 当该ID为空时MRS后台会自动创建安全组，自动创建的安全组名称以mrs_{cluster_name}开头。 - 当该ID不为空时，表示使用固定安全组来创建集群，传入的ID必须是当前租户中包含的安全组ID，且该安全组中需要包含一条支持全部协议、全部端口、源地址为指定的管理面节点IP的入方向规则。
@@ -156,6 +160,7 @@ class CreateClusterReqV2:
         self._subnet_id = None
         self._subnet_name = None
         self._components = None
+        self._external_datasources = None
         self._availability_zone = None
         self._security_groups_id = None
         self._auto_create_default_security_group = None
@@ -189,6 +194,8 @@ class CreateClusterReqV2:
             self.subnet_id = subnet_id
         self.subnet_name = subnet_name
         self.components = components
+        if external_datasources is not None:
+            self.external_datasources = external_datasources
         self.availability_zone = availability_zone
         if security_groups_id is not None:
             self.security_groups_id = security_groups_id
@@ -436,6 +443,28 @@ class CreateClusterReqV2:
         :type components: str
         """
         self._components = components
+
+    @property
+    def external_datasources(self):
+        """Gets the external_datasources of this CreateClusterReqV2.
+
+        部署Hive和Ranger等组件时，可以关联数据连接，将元数据存储于关联的数据库
+
+        :return: The external_datasources of this CreateClusterReqV2.
+        :rtype: list[:class:`huaweicloudsdkmrs.v2.ClusterDataConnectorMap`]
+        """
+        return self._external_datasources
+
+    @external_datasources.setter
+    def external_datasources(self, external_datasources):
+        """Sets the external_datasources of this CreateClusterReqV2.
+
+        部署Hive和Ranger等组件时，可以关联数据连接，将元数据存储于关联的数据库
+
+        :param external_datasources: The external_datasources of this CreateClusterReqV2.
+        :type external_datasources: list[:class:`huaweicloudsdkmrs.v2.ClusterDataConnectorMap`]
+        """
+        self._external_datasources = external_datasources
 
     @property
     def availability_zone(self):

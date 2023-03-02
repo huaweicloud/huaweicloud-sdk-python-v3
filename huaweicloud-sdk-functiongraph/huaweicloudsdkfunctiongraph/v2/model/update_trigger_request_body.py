@@ -20,29 +20,36 @@ class UpdateTriggerRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'trigger_status': 'str'
+        'trigger_status': 'str',
+        'event_data': 'list[TriggerEventData]'
     }
 
     attribute_map = {
-        'trigger_status': 'trigger_status'
+        'trigger_status': 'trigger_status',
+        'event_data': 'event_data'
     }
 
-    def __init__(self, trigger_status=None):
+    def __init__(self, trigger_status=None, event_data=None):
         """UpdateTriggerRequestBody
 
         The model defined in huaweicloud sdk
 
         :param trigger_status: 触发器状态
         :type trigger_status: str
+        :param event_data: 触发器更新事件
+        :type event_data: list[:class:`huaweicloudsdkfunctiongraph.v2.TriggerEventData`]
         """
         
         
 
         self._trigger_status = None
+        self._event_data = None
         self.discriminator = None
 
         if trigger_status is not None:
             self.trigger_status = trigger_status
+        if event_data is not None:
+            self.event_data = event_data
 
     @property
     def trigger_status(self):
@@ -65,6 +72,28 @@ class UpdateTriggerRequestBody:
         :type trigger_status: str
         """
         self._trigger_status = trigger_status
+
+    @property
+    def event_data(self):
+        """Gets the event_data of this UpdateTriggerRequestBody.
+
+        触发器更新事件
+
+        :return: The event_data of this UpdateTriggerRequestBody.
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.TriggerEventData`]
+        """
+        return self._event_data
+
+    @event_data.setter
+    def event_data(self, event_data):
+        """Sets the event_data of this UpdateTriggerRequestBody.
+
+        触发器更新事件
+
+        :param event_data: The event_data of this UpdateTriggerRequestBody.
+        :type event_data: list[:class:`huaweicloudsdkfunctiongraph.v2.TriggerEventData`]
+        """
+        self._event_data = event_data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

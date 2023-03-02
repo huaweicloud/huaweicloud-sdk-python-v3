@@ -754,7 +754,7 @@ class GslClient(Client):
         return self.list_sim_cards_with_http_info(request)
 
     def list_sim_cards_with_http_info(self, request):
-        all_params = ['main_search_type', 'main_search_key', 'limit', 'offset', 'sim_status', 'device_status', 'tag_id', 'sim_type', 'order', 'sort', 'msisdn', 'customer_attribute1', 'customer_attribute2', 'customer_attribute3', 'customer_attribute4', 'customer_attribute5', 'customer_attribute6', 'min_used_flow', 'max_used_flow', 'min_left_flow', 'max_left_flow', 'real_named', 'order_id', 'filter_downtime_period']
+        all_params = ['main_search_type', 'main_search_key', 'limit', 'offset', 'sim_status', 'device_status', 'tag_id', 'sim_type', 'order', 'sort', 'msisdn', 'customer_attribute1', 'customer_attribute2', 'customer_attribute3', 'customer_attribute4', 'customer_attribute5', 'customer_attribute6', 'min_used_flow', 'max_used_flow', 'min_left_flow', 'max_left_flow', 'real_named', 'order_id', 'filter_downtime_period', 'order_ids']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -816,6 +816,9 @@ class GslClient(Client):
             query_params.append(('order_id', local_var_params['order_id']))
         if 'filter_downtime_period' in local_var_params:
             query_params.append(('filter_downtime_period', local_var_params['filter_downtime_period']))
+        if 'order_ids' in local_var_params:
+            query_params.append(('order_ids', local_var_params['order_ids']))
+            collection_formats['order_ids'] = 'multi'
 
         header_params = {}
 

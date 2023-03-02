@@ -146,7 +146,7 @@ class ServerDetails:
         :type access_i_pv4: str
         :param access_i_pv6: 预留属性
         :type access_i_pv6: str
-        :param status: 裸金属服务器当前状态信息。取值范围：ACTIVE：运行中/正在关机/删除中BUILD：创建中ERROR：故障HARD_REBOOT：强制重启中REBOOT：重启中裸金属服务器当前状态信息。取值范围：ACTIVE：运行中/正在关机/删除中BUILD：创建中ERROR：故障HARD_REBOOT：强制重启中REBOOT：重启中
+        :param status: 裸金属服务器当前状态信息。  取值范围：  ACTIVE：运行中/正在关机/删除中 BUILD：创建中 ERROR：故障 HARD_REBOOT：强制重启中 REBOOT：重启中 DELETED：实例已被正常删除 SHUTOFF：关机/正在开机/删除中/重建中/重装操作系统中/重装操作系统失败/冻结
         :type status: str
         :param progress: 预留属性
         :type progress: int
@@ -156,7 +156,7 @@ class ServerDetails:
         :type metadata: :class:`huaweicloudsdkbms.v1.MetadataList`
         :param os_ext_st_stask_state: 扩展属性，裸金属服务器当前的任务状态。例如：rebooting：重启中reboot_started：普通重启reboot_started_hard：强制重启powering-off：关机中powering-on：开机中rebuilding：重建中scheduling：调度中deleting：删除中
         :type os_ext_st_stask_state: str
-        :param os_ext_st_svm_state: 扩展属性，裸金属服务器的稳定状态。例如：active：运行中shutoff：关机suspended：暂停reboot：重启
+        :param os_ext_st_svm_state: 扩展属性，裸金属服务器的稳定状态。例如：active：运行中shutoff：关机reboot：重启
         :type os_ext_st_svm_state: str
         :param os_ext_srv_att_rhost: 扩展属性，裸金属服务器宿主名称
         :type os_ext_srv_att_rhost: str
@@ -644,7 +644,7 @@ class ServerDetails:
     def status(self):
         """Gets the status of this ServerDetails.
 
-        裸金属服务器当前状态信息。取值范围：ACTIVE：运行中/正在关机/删除中BUILD：创建中ERROR：故障HARD_REBOOT：强制重启中REBOOT：重启中裸金属服务器当前状态信息。取值范围：ACTIVE：运行中/正在关机/删除中BUILD：创建中ERROR：故障HARD_REBOOT：强制重启中REBOOT：重启中
+        裸金属服务器当前状态信息。  取值范围：  ACTIVE：运行中/正在关机/删除中 BUILD：创建中 ERROR：故障 HARD_REBOOT：强制重启中 REBOOT：重启中 DELETED：实例已被正常删除 SHUTOFF：关机/正在开机/删除中/重建中/重装操作系统中/重装操作系统失败/冻结
 
         :return: The status of this ServerDetails.
         :rtype: str
@@ -655,7 +655,7 @@ class ServerDetails:
     def status(self, status):
         """Sets the status of this ServerDetails.
 
-        裸金属服务器当前状态信息。取值范围：ACTIVE：运行中/正在关机/删除中BUILD：创建中ERROR：故障HARD_REBOOT：强制重启中REBOOT：重启中裸金属服务器当前状态信息。取值范围：ACTIVE：运行中/正在关机/删除中BUILD：创建中ERROR：故障HARD_REBOOT：强制重启中REBOOT：重启中
+        裸金属服务器当前状态信息。  取值范围：  ACTIVE：运行中/正在关机/删除中 BUILD：创建中 ERROR：故障 HARD_REBOOT：强制重启中 REBOOT：重启中 DELETED：实例已被正常删除 SHUTOFF：关机/正在开机/删除中/重建中/重装操作系统中/重装操作系统失败/冻结
 
         :param status: The status of this ServerDetails.
         :type status: str
@@ -750,7 +750,7 @@ class ServerDetails:
     def os_ext_st_svm_state(self):
         """Gets the os_ext_st_svm_state of this ServerDetails.
 
-        扩展属性，裸金属服务器的稳定状态。例如：active：运行中shutoff：关机suspended：暂停reboot：重启
+        扩展属性，裸金属服务器的稳定状态。例如：active：运行中shutoff：关机reboot：重启
 
         :return: The os_ext_st_svm_state of this ServerDetails.
         :rtype: str
@@ -761,7 +761,7 @@ class ServerDetails:
     def os_ext_st_svm_state(self, os_ext_st_svm_state):
         """Sets the os_ext_st_svm_state of this ServerDetails.
 
-        扩展属性，裸金属服务器的稳定状态。例如：active：运行中shutoff：关机suspended：暂停reboot：重启
+        扩展属性，裸金属服务器的稳定状态。例如：active：运行中shutoff：关机reboot：重启
 
         :param os_ext_st_svm_state: The os_ext_st_svm_state of this ServerDetails.
         :type os_ext_st_svm_state: str

@@ -118,7 +118,7 @@ class CodeHubClient(Client):
         return self.list_commits_with_http_info(request)
 
     def list_commits_with_http_info(self, request):
-        all_params = ['repo_id', 'ref_name', 'since', 'until', 'path', 'all', 'with_stats']
+        all_params = ['repo_id', 'ref_name', 'since', 'until', 'path', 'all', 'with_stats', 'page', 'per_page']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -145,6 +145,10 @@ class CodeHubClient(Client):
             query_params.append(('all', local_var_params['all']))
         if 'with_stats' in local_var_params:
             query_params.append(('with_stats', local_var_params['with_stats']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'per_page' in local_var_params:
+            query_params.append(('per_page', local_var_params['per_page']))
 
         header_params = {}
 
@@ -689,7 +693,7 @@ class CodeHubClient(Client):
     def add_repo_members(self, request):
         """添加仓库成员
 
-        调用方codehubportal,添加仓库成员。
+        添加仓库成员。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

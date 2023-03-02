@@ -74,7 +74,7 @@ class ScriptVersion:
         :type project_id: str
         :param reference_number: 脚本引用次数，脚本被任务和模板引用的次数。默认是0次,引用次数未非负整数，不能出现负数
         :type reference_number: int
-        :param script_id: 版本所在的脚本id,根据project_id、脚本名称的和，用guava计算hash(md5)方式获取，比如为：d648c682ef5750f700c050b41692b2b8
+        :param script_id: 脚本id，根据UUID.randomUUID生成。
         :type script_id: str
         :param script_language: 脚本语言，目前支持四种，分别是：SHELL BAT PYTHON POWER_SHELL
         :type script_language: str
@@ -82,9 +82,9 @@ class ScriptVersion:
         :type status_desc: int
         :param update_by: 修改人
         :type update_by: str
-        :param update_time: 实体的最后更新时间戳。 注意：执行创建/修补/删除操作时，update_time将更新。
+        :param update_time: 实体的最后更新时间戳。 注意：执行创建/修改/删除操作时，update_time将更新。
         :type update_time: int
-        :param version_id: 版本id，唯一标识，根据project_id、脚本名称、脚本版本号的和，用guava计算hash(md5)方式获取，比如为：d648c682ef5750f700c050b41692b2b8
+        :param version_id: 版本id，根据UUID.randomUUID生成。
         :type version_id: str
         :param version_number: 脚本版本号，支持数字，下划线，大小写字母和小数点
         :type version_number: str
@@ -299,7 +299,7 @@ class ScriptVersion:
     def script_id(self):
         """Gets the script_id of this ScriptVersion.
 
-        版本所在的脚本id,根据project_id、脚本名称的和，用guava计算hash(md5)方式获取，比如为：d648c682ef5750f700c050b41692b2b8
+        脚本id，根据UUID.randomUUID生成。
 
         :return: The script_id of this ScriptVersion.
         :rtype: str
@@ -310,7 +310,7 @@ class ScriptVersion:
     def script_id(self, script_id):
         """Sets the script_id of this ScriptVersion.
 
-        版本所在的脚本id,根据project_id、脚本名称的和，用guava计算hash(md5)方式获取，比如为：d648c682ef5750f700c050b41692b2b8
+        脚本id，根据UUID.randomUUID生成。
 
         :param script_id: The script_id of this ScriptVersion.
         :type script_id: str
@@ -387,7 +387,7 @@ class ScriptVersion:
     def update_time(self):
         """Gets the update_time of this ScriptVersion.
 
-        实体的最后更新时间戳。 注意：执行创建/修补/删除操作时，update_time将更新。
+        实体的最后更新时间戳。 注意：执行创建/修改/删除操作时，update_time将更新。
 
         :return: The update_time of this ScriptVersion.
         :rtype: int
@@ -398,7 +398,7 @@ class ScriptVersion:
     def update_time(self, update_time):
         """Sets the update_time of this ScriptVersion.
 
-        实体的最后更新时间戳。 注意：执行创建/修补/删除操作时，update_time将更新。
+        实体的最后更新时间戳。 注意：执行创建/修改/删除操作时，update_time将更新。
 
         :param update_time: The update_time of this ScriptVersion.
         :type update_time: int
@@ -409,7 +409,7 @@ class ScriptVersion:
     def version_id(self):
         """Gets the version_id of this ScriptVersion.
 
-        版本id，唯一标识，根据project_id、脚本名称、脚本版本号的和，用guava计算hash(md5)方式获取，比如为：d648c682ef5750f700c050b41692b2b8
+        版本id，根据UUID.randomUUID生成。
 
         :return: The version_id of this ScriptVersion.
         :rtype: str
@@ -420,7 +420,7 @@ class ScriptVersion:
     def version_id(self, version_id):
         """Sets the version_id of this ScriptVersion.
 
-        版本id，唯一标识，根据project_id、脚本名称、脚本版本号的和，用guava计算hash(md5)方式获取，比如为：d648c682ef5750f700c050b41692b2b8
+        版本id，根据UUID.randomUUID生成。
 
         :param version_id: The version_id of this ScriptVersion.
         :type version_id: str

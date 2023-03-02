@@ -36,7 +36,7 @@ class SetChargeModesBody:
 
         The model defined in huaweicloud sdk
 
-        :param charge_mode: 计费模式，支持flux（流量），bw（带宽）
+        :param charge_mode: 计费模式，支持flux（流量），v2及以上客户支持bw（带宽）
         :type charge_mode: str
         :param product_type: 产品模式，仅支持base（基础加速）
         :type product_type: str
@@ -59,7 +59,7 @@ class SetChargeModesBody:
     def charge_mode(self):
         """Gets the charge_mode of this SetChargeModesBody.
 
-        计费模式，支持flux（流量），bw（带宽）
+        计费模式，支持flux（流量），v2及以上客户支持bw（带宽）
 
         :return: The charge_mode of this SetChargeModesBody.
         :rtype: str
@@ -70,7 +70,7 @@ class SetChargeModesBody:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this SetChargeModesBody.
 
-        计费模式，支持flux（流量），bw（带宽）
+        计费模式，支持flux（流量），v2及以上客户支持bw（带宽）
 
         :param charge_mode: The charge_mode of this SetChargeModesBody.
         :type charge_mode: str

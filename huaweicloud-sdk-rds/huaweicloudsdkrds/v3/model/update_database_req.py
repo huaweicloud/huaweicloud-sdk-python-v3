@@ -47,7 +47,8 @@ class UpdateDatabaseReq:
         self.discriminator = None
 
         self.name = name
-        self.comment = comment
+        if comment is not None:
+            self.comment = comment
 
     @property
     def name(self):

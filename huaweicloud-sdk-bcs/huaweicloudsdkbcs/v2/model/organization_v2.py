@@ -22,7 +22,7 @@ class OrganizationV2:
     openapi_types = {
         'name': 'str',
         'name_hash': 'str',
-        'node_count': 'str',
+        'node_count': 'int',
         'status': 'str',
         'status_detail': 'str'
     }
@@ -45,7 +45,7 @@ class OrganizationV2:
         :param name_hash: 组织hash
         :type name_hash: str
         :param node_count: 组织节点
-        :type node_count: str
+        :type node_count: int
         :param status: 状态
         :type status: str
         :param status_detail: 状态描述
@@ -123,7 +123,7 @@ class OrganizationV2:
         组织节点
 
         :return: The node_count of this OrganizationV2.
-        :rtype: str
+        :rtype: int
         """
         return self._node_count
 
@@ -134,7 +134,7 @@ class OrganizationV2:
         组织节点
 
         :param node_count: The node_count of this OrganizationV2.
-        :type node_count: str
+        :type node_count: int
         """
         self._node_count = node_count
 

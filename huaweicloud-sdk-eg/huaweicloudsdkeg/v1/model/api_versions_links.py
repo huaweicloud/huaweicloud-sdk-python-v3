@@ -34,9 +34,9 @@ class ApiVersionsLinks:
 
         The model defined in huaweicloud sdk
 
-        :param href: 
+        :param href: href属性
         :type href: str
-        :param rel: 
+        :param rel: rel属性
         :type rel: str
         """
         
@@ -55,6 +55,8 @@ class ApiVersionsLinks:
     def href(self):
         """Gets the href of this ApiVersionsLinks.
 
+        href属性
+
         :return: The href of this ApiVersionsLinks.
         :rtype: str
         """
@@ -63,6 +65,8 @@ class ApiVersionsLinks:
     @href.setter
     def href(self, href):
         """Sets the href of this ApiVersionsLinks.
+
+        href属性
 
         :param href: The href of this ApiVersionsLinks.
         :type href: str
@@ -73,6 +77,8 @@ class ApiVersionsLinks:
     def rel(self):
         """Gets the rel of this ApiVersionsLinks.
 
+        rel属性
+
         :return: The rel of this ApiVersionsLinks.
         :rtype: str
         """
@@ -81,6 +87,8 @@ class ApiVersionsLinks:
     @rel.setter
     def rel(self, rel):
         """Sets the rel of this ApiVersionsLinks.
+
+        rel属性
 
         :param rel: The rel of this ApiVersionsLinks.
         :type rel: str

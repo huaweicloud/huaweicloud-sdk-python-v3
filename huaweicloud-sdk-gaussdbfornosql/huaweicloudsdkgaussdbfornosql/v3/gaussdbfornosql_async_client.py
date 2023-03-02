@@ -604,6 +604,69 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_db_user_async(self, request):
+        """创建Redis数据库账号
+
+        在Redis实例中创建数据库帐号。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDbUser
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateDbUserRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateDbUserResponse`
+        """
+        return self.create_db_user_with_http_info(request)
+
+    def create_db_user_with_http_info(self, request):
+        all_params = ['instance_id', 'redis_create_db_user_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/redis/instances/{instance_id}/db-users',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateDbUserResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_disaster_recovery_async(self, request):
         """搭建实例与特定实例的容灾关系
 
@@ -845,6 +908,69 @@ class GaussDBforNoSQLAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteConfigurationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_db_user_async(self, request):
+        """删除Redis数据库账号
+
+        删除Redis实例的数据库账号。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteDbUser
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteDbUserRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteDbUserResponse`
+        """
+        return self.delete_db_user_with_http_info(request)
+
+    def delete_db_user_with_http_info(self, request):
+        all_params = ['instance_id', 'redis_delete_db_user_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/redis/instances/{instance_id}/db-users',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteDbUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1405,6 +1531,73 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_db_users_async(self, request):
+        """获取Redis数据库账号列表和详情
+
+        获取Redis数据库账号列表和详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDbUsers
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListDbUsersRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListDbUsersResponse`
+        """
+        return self.list_db_users_with_http_info(request)
+
+    def list_db_users_with_http_info(self, request):
+        all_params = ['instance_id', 'name', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/redis/instances/{instance_id}/db-users',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListDbUsersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_dedicated_resources_async(self, request):
         """查询专属资源列表
 
@@ -1656,6 +1849,71 @@ class GaussDBforNoSQLAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListFlavorsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_instance_databases_async(self, request):
+        """获取Redis实例数据库列表
+
+        获取Redis实例数据库列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListInstanceDatabases
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstanceDatabasesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstanceDatabasesResponse`
+        """
+        return self.list_instance_databases_with_http_info(request)
+
+    def list_instance_databases_with_http_info(self, request):
+        all_params = ['instance_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/redis/instances/{instance_id}/databases',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListInstanceDatabasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2189,6 +2447,69 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def modify_db_user_privilege_async(self, request):
+        """修改Redis数据库帐号权限
+
+        修改Redis数据库帐号权限。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ModifyDbUserPrivilege
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ModifyDbUserPrivilegeRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ModifyDbUserPrivilegeResponse`
+        """
+        return self.modify_db_user_privilege_with_http_info(request)
+
+    def modify_db_user_privilege_with_http_info(self, request):
+        all_params = ['instance_id', 'redis_modify_db_user_privilege_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/redis/instances/{instance_id}/db-users/privilege',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ModifyDbUserPrivilegeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def modify_eps_quotas_async(self, request):
         """修改企业项目配额
 
@@ -2501,6 +2822,69 @@ class GaussDBforNoSQLAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='PauseResumeDataSynchronizationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def reset_db_user_password_async(self, request):
+        """重置Redis数据库账号密码
+
+        重置Redis数据库账号密码。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ResetDbUserPassword
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ResetDbUserPasswordRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ResetDbUserPasswordResponse`
+        """
+        return self.reset_db_user_password_with_http_info(request)
+
+    def reset_db_user_password_with_http_info(self, request):
+        all_params = ['instance_id', 'redis_reset_db_user_password_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/redis/instances/{instance_id}/db-users/password',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ResetDbUserPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

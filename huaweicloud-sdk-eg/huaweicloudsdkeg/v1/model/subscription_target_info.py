@@ -25,7 +25,7 @@ class SubscriptionTargetInfo:
         'provider_type': 'str',
         'connection_id': 'str',
         'detail': 'object',
-        'transform': 'SubscriptionTargetInfoTransform',
+        'transform': 'TransForm',
         'created_time': 'str',
         'updated_time': 'str'
     }
@@ -57,7 +57,7 @@ class SubscriptionTargetInfo:
         :param detail: 订阅的事件目标参数列表
         :type detail: object
         :param transform: 
-        :type transform: :class:`huaweicloudsdkeg.v1.SubscriptionTargetInfoTransform`
+        :type transform: :class:`huaweicloudsdkeg.v1.TransForm`
         :param created_time: 创建时间
         :type created_time: str
         :param updated_time: 更新时间
@@ -208,7 +208,7 @@ class SubscriptionTargetInfo:
         """Gets the transform of this SubscriptionTargetInfo.
 
         :return: The transform of this SubscriptionTargetInfo.
-        :rtype: :class:`huaweicloudsdkeg.v1.SubscriptionTargetInfoTransform`
+        :rtype: :class:`huaweicloudsdkeg.v1.TransForm`
         """
         return self._transform
 
@@ -217,7 +217,7 @@ class SubscriptionTargetInfo:
         """Sets the transform of this SubscriptionTargetInfo.
 
         :param transform: The transform of this SubscriptionTargetInfo.
-        :type transform: :class:`huaweicloudsdkeg.v1.SubscriptionTargetInfoTransform`
+        :type transform: :class:`huaweicloudsdkeg.v1.TransForm`
         """
         self._transform = transform
 

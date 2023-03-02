@@ -34,7 +34,7 @@ class Metadata:
 
         The model defined in huaweicloud sdk
 
-        :param type: 形状,节点类型。
+        :param type: 节点类型。
         :type type: str
         :param configuration: 配置信息。
         :type configuration: dict(str, object)
@@ -55,7 +55,7 @@ class Metadata:
     def type(self):
         """Gets the type of this Metadata.
 
-        形状,节点类型。
+        节点类型。
 
         :return: The type of this Metadata.
         :rtype: str
@@ -66,7 +66,7 @@ class Metadata:
     def type(self, type):
         """Sets the type of this Metadata.
 
-        形状,节点类型。
+        节点类型。
 
         :param type: The type of this Metadata.
         :type type: str

@@ -68,7 +68,7 @@ class Script:
         :type description: str
         :param enterprise_project_id: 企业项目id
         :type enterprise_project_id: str
-        :param id: 脚本id,根据project_id、脚本名称的和，用guava计算hash(md5)方式获取，比如为：c279d73a0b4e0f0927721e366c736880
+        :param id: 脚本id，根据UUID.randomUUID生成。
         :type id: str
         :param name: 脚本名称，支持数字，下划线，大小写字母 ,中文
         :type name: str
@@ -243,7 +243,7 @@ class Script:
     def id(self):
         """Gets the id of this Script.
 
-        脚本id,根据project_id、脚本名称的和，用guava计算hash(md5)方式获取，比如为：c279d73a0b4e0f0927721e366c736880
+        脚本id，根据UUID.randomUUID生成。
 
         :return: The id of this Script.
         :rtype: str
@@ -254,7 +254,7 @@ class Script:
     def id(self, id):
         """Sets the id of this Script.
 
-        脚本id,根据project_id、脚本名称的和，用guava计算hash(md5)方式获取，比如为：c279d73a0b4e0f0927721e366c736880
+        脚本id，根据UUID.randomUUID生成。
 
         :param id: The id of this Script.
         :type id: str

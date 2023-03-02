@@ -59,10 +59,8 @@ class ConnectionCreateReq:
         self.name = name
         if description is not None:
             self.description = description
-        if vpc_id is not None:
-            self.vpc_id = vpc_id
-        if subnet_id is not None:
-            self.subnet_id = subnet_id
+        self.vpc_id = vpc_id
+        self.subnet_id = subnet_id
 
     @property
     def name(self):

@@ -42,6 +42,546 @@ class ImageClient(Client):
 
         return ClientBuilder(clazz)
 
+    def create_image_highresolution_matting_task(self, request):
+        """创建任务
+
+        Create Task
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateImageHighresolutionMattingTask
+        :type request: :class:`huaweicloudsdkimage.v2.CreateImageHighresolutionMattingTaskRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.CreateImageHighresolutionMattingTaskResponse`
+        """
+        return self.create_image_highresolution_matting_task_with_http_info(request)
+
+    def create_image_highresolution_matting_task_with_http_info(self, request):
+        all_params = ['create_task_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/image-highresolution-matting/tasks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateImageHighresolutionMattingTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_image_to_video_task(self, request):
+        """创建任务
+
+        Create Task
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateImageToVideoTask
+        :type request: :class:`huaweicloudsdkimage.v2.CreateImageToVideoTaskRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.CreateImageToVideoTaskResponse`
+        """
+        return self.create_image_to_video_task_with_http_info(request)
+
+    def create_image_to_video_task_with_http_info(self, request):
+        all_params = ['create_task_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/image-to-video/tasks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateImageToVideoTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_image_translate_task(self, request):
+        """创建任务
+
+        Create Task
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateImageTranslateTask
+        :type request: :class:`huaweicloudsdkimage.v2.CreateImageTranslateTaskRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.CreateImageTranslateTaskResponse`
+        """
+        return self.create_image_translate_task_with_http_info(request)
+
+    def create_image_translate_task_with_http_info(self, request):
+        all_params = ['create_task_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/image-wisedesign-translate/tasks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateImageTranslateTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_video_cover_analysis_task(self, request):
+        """创建任务
+
+        创建视频封面任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateVideoCoverAnalysisTask
+        :type request: :class:`huaweicloudsdkimage.v2.CreateVideoCoverAnalysisTaskRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.CreateVideoCoverAnalysisTaskResponse`
+        """
+        return self.create_video_cover_analysis_task_with_http_info(request)
+
+    def create_video_cover_analysis_task_with_http_info(self, request):
+        all_params = ['create_task_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/video-cover-analysis/tasks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateVideoCoverAnalysisTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_video_cutting_task(self, request):
+        """创建任务
+
+        Create Task
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateVideoCuttingTask
+        :type request: :class:`huaweicloudsdkimage.v2.CreateVideoCuttingTaskRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.CreateVideoCuttingTaskResponse`
+        """
+        return self.create_video_cutting_task_with_http_info(request)
+
+    def create_video_cutting_task_with_http_info(self, request):
+        all_params = ['create_task_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/video-cutting/tasks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateVideoCuttingTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_video_shot_split_task(self, request):
+        """创建任务
+
+        创建视频拆条任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateVideoShotSplitTask
+        :type request: :class:`huaweicloudsdkimage.v2.CreateVideoShotSplitTaskRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.CreateVideoShotSplitTaskResponse`
+        """
+        return self.create_video_shot_split_task_with_http_info(request)
+
+    def create_video_shot_split_task_with_http_info(self, request):
+        all_params = ['create_task_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/video-shot-split/tasks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateVideoShotSplitTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_video_summarization_analysis_task(self, request):
+        """创建任务
+
+        Create Task
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateVideoSummarizationAnalysisTask
+        :type request: :class:`huaweicloudsdkimage.v2.CreateVideoSummarizationAnalysisTaskRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.CreateVideoSummarizationAnalysisTaskResponse`
+        """
+        return self.create_video_summarization_analysis_task_with_http_info(request)
+
+    def create_video_summarization_analysis_task_with_http_info(self, request):
+        all_params = ['create_task_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/video-summarization-analysis/tasks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateVideoSummarizationAnalysisTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_video_synthesis_task(self, request):
+        """创建任务
+
+        Create Task
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateVideoSynthesisTask
+        :type request: :class:`huaweicloudsdkimage.v2.CreateVideoSynthesisTaskRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.CreateVideoSynthesisTaskResponse`
+        """
+        return self.create_video_synthesis_task_with_http_info(request)
+
+    def create_video_synthesis_task_with_http_info(self, request):
+        all_params = ['create_task_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/video-synthesis/tasks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateVideoSynthesisTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_video_translate_task(self, request):
+        """创建任务
+
+        Create Task
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateVideoTranslateTask
+        :type request: :class:`huaweicloudsdkimage.v2.CreateVideoTranslateTaskRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.CreateVideoTranslateTaskResponse`
+        """
+        return self.create_video_translate_task_with_http_info(request)
+
+    def create_video_translate_task_with_http_info(self, request):
+        all_params = ['create_task_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/video-translate/tasks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateVideoTranslateTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def run_celebrity_recognition(self, request):
         """名人识别
 
@@ -342,6 +882,246 @@ class ImageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def run_image_wisedesign_colorfilter(self, request):
+        """智能设计图像滤镜
+
+        智能设计图像滤镜服务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RunImageWisedesignColorfilter
+        :type request: :class:`huaweicloudsdkimage.v2.RunImageWisedesignColorfilterRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.RunImageWisedesignColorfilterResponse`
+        """
+        return self.run_image_wisedesign_colorfilter_with_http_info(request)
+
+    def run_image_wisedesign_colorfilter_with_http_info(self, request):
+        all_params = ['run_image_wisedesign_colorfilter_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/image-wisedesign-colorfilter',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RunImageWisedesignColorfilterResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def run_image_wisedesign_combine(self, request):
+        """智能设计图像合图
+
+        智能设计图像合图服务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RunImageWisedesignCombine
+        :type request: :class:`huaweicloudsdkimage.v2.RunImageWisedesignCombineRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.RunImageWisedesignCombineResponse`
+        """
+        return self.run_image_wisedesign_combine_with_http_info(request)
+
+    def run_image_wisedesign_combine_with_http_info(self, request):
+        all_params = ['run_image_wisedesign_combine_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/image-wisedesign-combine',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RunImageWisedesignCombineResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def run_image_wisedesign_crop(self, request):
+        """智能设计图像裁剪
+
+        智能设计图像裁剪服务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RunImageWisedesignCrop
+        :type request: :class:`huaweicloudsdkimage.v2.RunImageWisedesignCropRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.RunImageWisedesignCropResponse`
+        """
+        return self.run_image_wisedesign_crop_with_http_info(request)
+
+    def run_image_wisedesign_crop_with_http_info(self, request):
+        all_params = ['run_image_wisedesign_crop_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/image-wisedesign-crop',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RunImageWisedesignCropResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def run_image_wisedesign_inpainting(self, request):
+        """智能设计图像修复
+
+        智能设计图像修复服务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RunImageWisedesignInpainting
+        :type request: :class:`huaweicloudsdkimage.v2.RunImageWisedesignInpaintingRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.RunImageWisedesignInpaintingResponse`
+        """
+        return self.run_image_wisedesign_inpainting_with_http_info(request)
+
+    def run_image_wisedesign_inpainting_with_http_info(self, request):
+        all_params = ['run_image_wisedesign_inpainting_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/image-wisedesign-inpainting',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RunImageWisedesignInpaintingResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def run_recapture_detect(self, request):
         """翻拍识别
 
@@ -397,6 +1177,546 @@ class ImageClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='RunRecaptureDetectResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_image_highresolution_matting_task(self, request):
+        """查询任务
+
+        show task
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowImageHighresolutionMattingTask
+        :type request: :class:`huaweicloudsdkimage.v2.ShowImageHighresolutionMattingTaskRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.ShowImageHighresolutionMattingTaskResponse`
+        """
+        return self.show_image_highresolution_matting_task_with_http_info(request)
+
+    def show_image_highresolution_matting_task_with_http_info(self, request):
+        all_params = ['task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/image-highresolution-matting/tasks/{task_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowImageHighresolutionMattingTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_image_to_video_task(self, request):
+        """查询任务
+
+        show task
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowImageToVideoTask
+        :type request: :class:`huaweicloudsdkimage.v2.ShowImageToVideoTaskRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.ShowImageToVideoTaskResponse`
+        """
+        return self.show_image_to_video_task_with_http_info(request)
+
+    def show_image_to_video_task_with_http_info(self, request):
+        all_params = ['task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/image-to-video/tasks/{task_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowImageToVideoTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_image_translate_task(self, request):
+        """查询任务
+
+        show task
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowImageTranslateTask
+        :type request: :class:`huaweicloudsdkimage.v2.ShowImageTranslateTaskRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.ShowImageTranslateTaskResponse`
+        """
+        return self.show_image_translate_task_with_http_info(request)
+
+    def show_image_translate_task_with_http_info(self, request):
+        all_params = ['task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/image-wisedesign-translate/tasks/{task_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowImageTranslateTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_video_cover_analysis_task(self, request):
+        """查询任务
+
+        查询视频封面任务完成状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowVideoCoverAnalysisTask
+        :type request: :class:`huaweicloudsdkimage.v2.ShowVideoCoverAnalysisTaskRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.ShowVideoCoverAnalysisTaskResponse`
+        """
+        return self.show_video_cover_analysis_task_with_http_info(request)
+
+    def show_video_cover_analysis_task_with_http_info(self, request):
+        all_params = ['task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/video-cover-analysis/tasks/{task_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowVideoCoverAnalysisTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_video_cutting_task(self, request):
+        """查询任务
+
+        show task
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowVideoCuttingTask
+        :type request: :class:`huaweicloudsdkimage.v2.ShowVideoCuttingTaskRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.ShowVideoCuttingTaskResponse`
+        """
+        return self.show_video_cutting_task_with_http_info(request)
+
+    def show_video_cutting_task_with_http_info(self, request):
+        all_params = ['task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/video-cutting/tasks/{task_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowVideoCuttingTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_video_shot_split_task(self, request):
+        """查询任务
+
+        查询拆条任务状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowVideoShotSplitTask
+        :type request: :class:`huaweicloudsdkimage.v2.ShowVideoShotSplitTaskRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.ShowVideoShotSplitTaskResponse`
+        """
+        return self.show_video_shot_split_task_with_http_info(request)
+
+    def show_video_shot_split_task_with_http_info(self, request):
+        all_params = ['task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/video-shot-split/tasks/{task_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowVideoShotSplitTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_video_summarization_analysis_task(self, request):
+        """查询任务
+
+        show task
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowVideoSummarizationAnalysisTask
+        :type request: :class:`huaweicloudsdkimage.v2.ShowVideoSummarizationAnalysisTaskRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.ShowVideoSummarizationAnalysisTaskResponse`
+        """
+        return self.show_video_summarization_analysis_task_with_http_info(request)
+
+    def show_video_summarization_analysis_task_with_http_info(self, request):
+        all_params = ['task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/video-summarization-analysis/tasks/{task_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowVideoSummarizationAnalysisTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_video_synthesis_task(self, request):
+        """查询任务
+
+        show task
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowVideoSynthesisTask
+        :type request: :class:`huaweicloudsdkimage.v2.ShowVideoSynthesisTaskRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.ShowVideoSynthesisTaskResponse`
+        """
+        return self.show_video_synthesis_task_with_http_info(request)
+
+    def show_video_synthesis_task_with_http_info(self, request):
+        all_params = ['task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/video-synthesis/tasks/{task_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowVideoSynthesisTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_video_translate_task(self, request):
+        """查询任务
+
+        show task
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowVideoTranslateTask
+        :type request: :class:`huaweicloudsdkimage.v2.ShowVideoTranslateTaskRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.ShowVideoTranslateTaskResponse`
+        """
+        return self.show_video_translate_task_with_http_info(request)
+
+    def show_video_translate_task_with_http_info(self, request):
+        all_params = ['task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/video-translate/tasks/{task_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowVideoTranslateTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

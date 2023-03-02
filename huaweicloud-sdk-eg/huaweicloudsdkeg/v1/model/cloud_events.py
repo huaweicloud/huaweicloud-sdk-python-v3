@@ -58,7 +58,7 @@ class CloudEvents:
         :type type: str
         :param datacontenttype: 事件内容格式，采用MIME格式，遵循RFC2046，参考https://tools.ietf.org/html/rfc2046
         :type datacontenttype: str
-        :param dataschema: 件内容模型定义的URI，遵循RFC3986，参考https://tools.ietf.org/html/rfc3986#section-4.3
+        :param dataschema: 事件内容模型定义的URI，遵循RFC3986，参考https://tools.ietf.org/html/rfc3986#section-4.3
         :type dataschema: str
         :param data: 事件的负载内容，采用datacontenttype字段指定的格式，内容字段遵循dataschema字段的描述
         :type data: object
@@ -210,7 +210,7 @@ class CloudEvents:
     def dataschema(self):
         """Gets the dataschema of this CloudEvents.
 
-        件内容模型定义的URI，遵循RFC3986，参考https://tools.ietf.org/html/rfc3986#section-4.3
+        事件内容模型定义的URI，遵循RFC3986，参考https://tools.ietf.org/html/rfc3986#section-4.3
 
         :return: The dataschema of this CloudEvents.
         :rtype: str
@@ -221,7 +221,7 @@ class CloudEvents:
     def dataschema(self, dataschema):
         """Sets the dataschema of this CloudEvents.
 
-        件内容模型定义的URI，遵循RFC3986，参考https://tools.ietf.org/html/rfc3986#section-4.3
+        事件内容模型定义的URI，遵循RFC3986，参考https://tools.ietf.org/html/rfc3986#section-4.3
 
         :param dataschema: The dataschema of this CloudEvents.
         :type dataschema: str

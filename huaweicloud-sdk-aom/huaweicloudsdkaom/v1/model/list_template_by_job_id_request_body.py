@@ -46,9 +46,9 @@ class ListTemplateByJobIdRequestBody:
         :type page_num: int
         :param page_size: 每页显示的条数
         :type page_size: int
-        :param order_by_column: 需要排序的字段(默认为更新时间),支持字段有create_time
+        :param order_by_column: 需要排序的字段(默认为更新时间),支持字段有name，create_time，update_time。
         :type order_by_column: str
-        :param sort_order: 排序规则(默认降序) 传入升序或降序，升序：ASC，降序：DESC 排序规则(默认降序) 传入升序或降序，升序：ASC，降序：DESC
+        :param sort_order: 排序规则(默认降序) 传入升序或降序，升序：ASC，降序：DESC。
         :type sort_order: str
         """
         
@@ -141,7 +141,7 @@ class ListTemplateByJobIdRequestBody:
     def order_by_column(self):
         """Gets the order_by_column of this ListTemplateByJobIdRequestBody.
 
-        需要排序的字段(默认为更新时间),支持字段有create_time
+        需要排序的字段(默认为更新时间),支持字段有name，create_time，update_time。
 
         :return: The order_by_column of this ListTemplateByJobIdRequestBody.
         :rtype: str
@@ -152,7 +152,7 @@ class ListTemplateByJobIdRequestBody:
     def order_by_column(self, order_by_column):
         """Sets the order_by_column of this ListTemplateByJobIdRequestBody.
 
-        需要排序的字段(默认为更新时间),支持字段有create_time
+        需要排序的字段(默认为更新时间),支持字段有name，create_time，update_time。
 
         :param order_by_column: The order_by_column of this ListTemplateByJobIdRequestBody.
         :type order_by_column: str
@@ -163,7 +163,7 @@ class ListTemplateByJobIdRequestBody:
     def sort_order(self):
         """Gets the sort_order of this ListTemplateByJobIdRequestBody.
 
-        排序规则(默认降序) 传入升序或降序，升序：ASC，降序：DESC 排序规则(默认降序) 传入升序或降序，升序：ASC，降序：DESC
+        排序规则(默认降序) 传入升序或降序，升序：ASC，降序：DESC。
 
         :return: The sort_order of this ListTemplateByJobIdRequestBody.
         :rtype: str
@@ -174,7 +174,7 @@ class ListTemplateByJobIdRequestBody:
     def sort_order(self, sort_order):
         """Sets the sort_order of this ListTemplateByJobIdRequestBody.
 
-        排序规则(默认降序) 传入升序或降序，升序：ASC，降序：DESC 排序规则(默认降序) 传入升序或降序，升序：ASC，降序：DESC
+        排序规则(默认降序) 传入升序或降序，升序：ASC，降序：DESC。
 
         :param sort_order: The sort_order of this ListTemplateByJobIdRequestBody.
         :type sort_order: str

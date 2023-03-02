@@ -50,9 +50,9 @@ class SearchScriptsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param name: 查询接收的参数，版本管理时，name为脚本名称（版本管理查询时name不能为空），页面查询时，name为接收模糊查询的参数，name是null，表示查询所有默认脚本。
+        :param name: 查询接收的参数，版本管理时，name为脚本名称（版本管理查询时name不能为空），脚本管理页面查询时，name为接收模糊查询的参数，name是null，表示查询所有默认脚本。
         :type name: str
-        :param is_default: 查询规则，当取值为default时，表示脚本管理主页查询，包括模糊查询；当取值为no_default时，表示版本管理；当取值为空时，默认是页面查询, 传入不影响使用。
+        :param is_default: 查询规则，如果是类型为default，则为模糊查询和脚本管理主页展示，no_default为版本管理。
         :type is_default: str
         :param create_by: 创建人，默认按照创建人搜索脚本。
         :type create_by: str
@@ -110,7 +110,7 @@ class SearchScriptsRequestBody:
     def name(self):
         """Gets the name of this SearchScriptsRequestBody.
 
-        查询接收的参数，版本管理时，name为脚本名称（版本管理查询时name不能为空），页面查询时，name为接收模糊查询的参数，name是null，表示查询所有默认脚本。
+        查询接收的参数，版本管理时，name为脚本名称（版本管理查询时name不能为空），脚本管理页面查询时，name为接收模糊查询的参数，name是null，表示查询所有默认脚本。
 
         :return: The name of this SearchScriptsRequestBody.
         :rtype: str
@@ -121,7 +121,7 @@ class SearchScriptsRequestBody:
     def name(self, name):
         """Sets the name of this SearchScriptsRequestBody.
 
-        查询接收的参数，版本管理时，name为脚本名称（版本管理查询时name不能为空），页面查询时，name为接收模糊查询的参数，name是null，表示查询所有默认脚本。
+        查询接收的参数，版本管理时，name为脚本名称（版本管理查询时name不能为空），脚本管理页面查询时，name为接收模糊查询的参数，name是null，表示查询所有默认脚本。
 
         :param name: The name of this SearchScriptsRequestBody.
         :type name: str
@@ -132,7 +132,7 @@ class SearchScriptsRequestBody:
     def is_default(self):
         """Gets the is_default of this SearchScriptsRequestBody.
 
-        查询规则，当取值为default时，表示脚本管理主页查询，包括模糊查询；当取值为no_default时，表示版本管理；当取值为空时，默认是页面查询, 传入不影响使用。
+        查询规则，如果是类型为default，则为模糊查询和脚本管理主页展示，no_default为版本管理。
 
         :return: The is_default of this SearchScriptsRequestBody.
         :rtype: str
@@ -143,7 +143,7 @@ class SearchScriptsRequestBody:
     def is_default(self, is_default):
         """Sets the is_default of this SearchScriptsRequestBody.
 
-        查询规则，当取值为default时，表示脚本管理主页查询，包括模糊查询；当取值为no_default时，表示版本管理；当取值为空时，默认是页面查询, 传入不影响使用。
+        查询规则，如果是类型为default，则为模糊查询和脚本管理主页展示，no_default为版本管理。
 
         :param is_default: The is_default of this SearchScriptsRequestBody.
         :type is_default: str

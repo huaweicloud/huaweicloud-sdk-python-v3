@@ -24,7 +24,8 @@ class ResourcesPlan:
         'start_time': 'str',
         'end_time': 'str',
         'min_capacity': 'int',
-        'max_capacity': 'int'
+        'max_capacity': 'int',
+        'effective_days': 'list[str]'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class ResourcesPlan:
         'start_time': 'start_time',
         'end_time': 'end_time',
         'min_capacity': 'min_capacity',
-        'max_capacity': 'max_capacity'
+        'max_capacity': 'max_capacity',
+        'effective_days': 'effective_days'
     }
 
-    def __init__(self, period_type=None, start_time=None, end_time=None, min_capacity=None, max_capacity=None):
+    def __init__(self, period_type=None, start_time=None, end_time=None, min_capacity=None, max_capacity=None, effective_days=None):
         """ResourcesPlan
 
         The model defined in huaweicloud sdk
@@ -50,6 +52,8 @@ class ResourcesPlan:
         :type min_capacity: int
         :param max_capacity: 资源计划内该节点组的最大保留节点数。 取值范围：[0～500]
         :type max_capacity: int
+        :param effective_days: 资源计划的生效日期，为空时代表每日，另外也可为以下返回值：  MONDAY（周一）、TUESDAY（周二）、WEDNESDAY（周三）、THURSDAY（周四）、FRIDAY（周五）、SATURDAY（周六）、SUNDAY（周日）
+        :type effective_days: list[str]
         """
         
         
@@ -59,6 +63,7 @@ class ResourcesPlan:
         self._end_time = None
         self._min_capacity = None
         self._max_capacity = None
+        self._effective_days = None
         self.discriminator = None
 
         self.period_type = period_type
@@ -66,6 +71,8 @@ class ResourcesPlan:
         self.end_time = end_time
         self.min_capacity = min_capacity
         self.max_capacity = max_capacity
+        if effective_days is not None:
+            self.effective_days = effective_days
 
     @property
     def period_type(self):
@@ -176,6 +183,28 @@ class ResourcesPlan:
         :type max_capacity: int
         """
         self._max_capacity = max_capacity
+
+    @property
+    def effective_days(self):
+        """Gets the effective_days of this ResourcesPlan.
+
+        资源计划的生效日期，为空时代表每日，另外也可为以下返回值：  MONDAY（周一）、TUESDAY（周二）、WEDNESDAY（周三）、THURSDAY（周四）、FRIDAY（周五）、SATURDAY（周六）、SUNDAY（周日）
+
+        :return: The effective_days of this ResourcesPlan.
+        :rtype: list[str]
+        """
+        return self._effective_days
+
+    @effective_days.setter
+    def effective_days(self, effective_days):
+        """Sets the effective_days of this ResourcesPlan.
+
+        资源计划的生效日期，为空时代表每日，另外也可为以下返回值：  MONDAY（周一）、TUESDAY（周二）、WEDNESDAY（周三）、THURSDAY（周四）、FRIDAY（周五）、SATURDAY（周六）、SUNDAY（周日）
+
+        :param effective_days: The effective_days of this ResourcesPlan.
+        :type effective_days: list[str]
+        """
+        self._effective_days = effective_days
 
     def to_dict(self):
         """Returns the model properties as a dict"""

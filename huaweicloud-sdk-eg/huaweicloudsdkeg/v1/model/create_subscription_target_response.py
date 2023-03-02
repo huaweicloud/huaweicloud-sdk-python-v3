@@ -25,7 +25,7 @@ class CreateSubscriptionTargetResponse(SdkResponse):
         'provider_type': 'str',
         'connection_id': 'str',
         'detail': 'object',
-        'transform': 'SubscriptionTargetInfoTransform',
+        'transform': 'TransForm',
         'created_time': 'str',
         'updated_time': 'str',
         'x_request_id': 'str'
@@ -59,7 +59,7 @@ class CreateSubscriptionTargetResponse(SdkResponse):
         :param detail: 订阅的事件目标参数列表
         :type detail: object
         :param transform: 
-        :type transform: :class:`huaweicloudsdkeg.v1.SubscriptionTargetInfoTransform`
+        :type transform: :class:`huaweicloudsdkeg.v1.TransForm`
         :param created_time: 创建时间
         :type created_time: str
         :param updated_time: 更新时间
@@ -215,7 +215,7 @@ class CreateSubscriptionTargetResponse(SdkResponse):
         """Gets the transform of this CreateSubscriptionTargetResponse.
 
         :return: The transform of this CreateSubscriptionTargetResponse.
-        :rtype: :class:`huaweicloudsdkeg.v1.SubscriptionTargetInfoTransform`
+        :rtype: :class:`huaweicloudsdkeg.v1.TransForm`
         """
         return self._transform
 
@@ -224,7 +224,7 @@ class CreateSubscriptionTargetResponse(SdkResponse):
         """Sets the transform of this CreateSubscriptionTargetResponse.
 
         :param transform: The transform of this CreateSubscriptionTargetResponse.
-        :type transform: :class:`huaweicloudsdkeg.v1.SubscriptionTargetInfoTransform`
+        :type transform: :class:`huaweicloudsdkeg.v1.TransForm`
         """
         self._transform = transform
 
