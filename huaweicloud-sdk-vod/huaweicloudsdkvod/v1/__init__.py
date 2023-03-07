@@ -6,6 +6,7 @@ from __future__ import absolute_import
 from huaweicloudsdkvod.v1.vod_client import VodClient
 from huaweicloudsdkvod.v1.vod_async_client import VodAsyncClient
 # import models into sdk package
+from huaweicloudsdkvod.v1.model.add_subtitle import AddSubtitle
 from huaweicloudsdkvod.v1.model.asset_details import AssetDetails
 from huaweicloudsdkvod.v1.model.asset_info import AssetInfo
 from huaweicloudsdkvod.v1.model.asset_process_req import AssetProcessReq
@@ -63,6 +64,7 @@ from huaweicloudsdkvod.v1.model.delete_asset_category_response import DeleteAsse
 from huaweicloudsdkvod.v1.model.delete_assets_request import DeleteAssetsRequest
 from huaweicloudsdkvod.v1.model.delete_assets_response import DeleteAssetsResponse
 from huaweicloudsdkvod.v1.model.delete_result import DeleteResult
+from huaweicloudsdkvod.v1.model.delete_subtitle import DeleteSubtitle
 from huaweicloudsdkvod.v1.model.delete_template_group_collection_request import DeleteTemplateGroupCollectionRequest
 from huaweicloudsdkvod.v1.model.delete_template_group_collection_response import DeleteTemplateGroupCollectionResponse
 from huaweicloudsdkvod.v1.model.delete_template_group_request import DeleteTemplateGroupRequest
@@ -92,9 +94,12 @@ from huaweicloudsdkvod.v1.model.list_transcode_template_response import ListTran
 from huaweicloudsdkvod.v1.model.list_watermark_template_request import ListWatermarkTemplateRequest
 from huaweicloudsdkvod.v1.model.list_watermark_template_response import ListWatermarkTemplateResponse
 from huaweicloudsdkvod.v1.model.meta_data import MetaData
+from huaweicloudsdkvod.v1.model.modify_subtitle_request import ModifySubtitleRequest
+from huaweicloudsdkvod.v1.model.modify_subtitle_response import ModifySubtitleResponse
 from huaweicloudsdkvod.v1.model.modify_template_group_collection import ModifyTemplateGroupCollection
 from huaweicloudsdkvod.v1.model.modify_trans_template import ModifyTransTemplate
 from huaweicloudsdkvod.v1.model.modify_trans_template_group import ModifyTransTemplateGroup
+from huaweicloudsdkvod.v1.model.obs_info import ObsInfo
 from huaweicloudsdkvod.v1.model.output import Output
 from huaweicloudsdkvod.v1.model.parameter import Parameter
 from huaweicloudsdkvod.v1.model.picture_review_ret import PictureReviewRet
@@ -132,6 +137,7 @@ from huaweicloudsdkvod.v1.model.show_vod_statistics_request import ShowVodStatis
 from huaweicloudsdkvod.v1.model.show_vod_statistics_response import ShowVodStatisticsResponse
 from huaweicloudsdkvod.v1.model.subtitle import Subtitle
 from huaweicloudsdkvod.v1.model.subtitle_info import SubtitleInfo
+from huaweicloudsdkvod.v1.model.subtitle_modify_req import SubtitleModifyReq
 from huaweicloudsdkvod.v1.model.take_over_task import TakeOverTask
 from huaweicloudsdkvod.v1.model.template_group import TemplateGroup
 from huaweicloudsdkvod.v1.model.template_group_collection import TemplateGroupCollection

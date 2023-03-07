@@ -32,7 +32,7 @@ class VaultBindRules:
 
         The model defined in huaweicloud sdk
 
-        :param tags: 按tags过滤自动绑定的资源
+        :param tags: 按tags过滤自动绑定的资源  最小长度：1  最大长度：5
         :type tags: list[:class:`huaweicloudsdkcbr.v1.BindRulesTags`]
         """
         
@@ -48,7 +48,7 @@ class VaultBindRules:
     def tags(self):
         """Gets the tags of this VaultBindRules.
 
-        按tags过滤自动绑定的资源
+        按tags过滤自动绑定的资源  最小长度：1  最大长度：5
 
         :return: The tags of this VaultBindRules.
         :rtype: list[:class:`huaweicloudsdkcbr.v1.BindRulesTags`]
@@ -59,7 +59,7 @@ class VaultBindRules:
     def tags(self, tags):
         """Sets the tags of this VaultBindRules.
 
-        按tags过滤自动绑定的资源
+        按tags过滤自动绑定的资源  最小长度：1  最大长度：5
 
         :param tags: The tags of this VaultBindRules.
         :type tags: list[:class:`huaweicloudsdkcbr.v1.BindRulesTags`]

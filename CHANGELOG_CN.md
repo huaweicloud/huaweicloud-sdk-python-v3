@@ -1,3 +1,14 @@
+# 3.1.29 2023-03-07
+
+### HuaweiCloud SDK VOD
+
+- _新增特性_
+  - 支持接口`ModifySubtitle`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.28 2023-03-02
 
 ### HuaweiCloud SDK AOM
