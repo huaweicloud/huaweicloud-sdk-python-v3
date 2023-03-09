@@ -1,3 +1,60 @@
+# 3.1.30 2023-03-09
+
+### HuaweiCloud SDK AOS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListTemplates`
+    - `DeleteTemplate`
+    - `ShowTemplateMetadata`
+    - `UpdateTemplateMetadata`
+    - `ShowTemplateVersionContent`
+    - `DeleteTemplateVersion`
+    - `ShowTemplateVersionMetadata`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListExecutionPlans`:
+    - 响应参数`status`新增枚举值`APPLY_IN_PROGRESS`
+    - 响应参数`stack_name`、`execution_plan_name`改为必填
+  - 接口`GetExecutionPlan`响应参数`action`移除枚举值`IN_PLACE_UPDATE`
+  - 接口`GetExecutionPlanMetadata`响应参数`stack_name`、`execution_plan_name`改为必填
+  - 接口`ListStackResources`新增响应参数 `resource_attributes`
+  - 接口`EstimateExecutionPlanPrice`:
+    - 新增响应参数 `unsupported_message`
+    - 响应参数`sale_price`类型调整 `object` -> `double`
+    - 响应参数`discount`类型调整 `object` -> `double`
+    - 响应参数`original_price`类型调整 `object` -> `double`
+    - 响应参数`period_type`移除枚举值`WEEK`
+
+### HuaweiCloud SDK CloudIDE
+
+- _新增特性_
+  - 支持接口`ShowCategoryList`、`ListPublisher`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateDevice`新增响应参数 `connection_status_update_time`、`active_time`
+  - 接口`ShowDevice`新增响应参数 `connection_status_update_time`、`active_time`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RecognizeAutoClassification`新增请求参数 `extended_parameters`
+
 # 3.1.29 2023-03-07
 
 ### HuaweiCloud SDK VOD

@@ -34,7 +34,7 @@ class VariableValidationResponse:
 
         The model defined in huaweicloud sdk
 
-        :param condition: 校验表达式。支持Terraform表达式
+        :param condition: 校验表达式
         :type condition: str
         :param error_message: 校验失败后的错误信息
         :type error_message: str
@@ -55,7 +55,7 @@ class VariableValidationResponse:
     def condition(self):
         """Gets the condition of this VariableValidationResponse.
 
-        校验表达式。支持Terraform表达式
+        校验表达式
 
         :return: The condition of this VariableValidationResponse.
         :rtype: str
@@ -66,7 +66,7 @@ class VariableValidationResponse:
     def condition(self, condition):
         """Sets the condition of this VariableValidationResponse.
 
-        校验表达式。支持Terraform表达式
+        校验表达式
 
         :param condition: The condition of this VariableValidationResponse.
         :type condition: str

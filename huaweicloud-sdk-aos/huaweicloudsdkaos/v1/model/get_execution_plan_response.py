@@ -32,7 +32,7 @@ class GetExecutionPlanResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param execution_plan_items: 执行计划元素的列表，只有当状态为&#39;AVAILABLE&#39;、&#39;APPLIED&#39;、’APPLY_IN_PROGRESS‘等完成创建后的状态才会被赋值，而&#39;CREATION_IN_PROGRESS&#39;或&#39;CREATION_FAILED&#39;会返回错误。
+        :param execution_plan_items: 执行计划项目的列表
         :type execution_plan_items: list[:class:`huaweicloudsdkaos.v1.ExecutionPlanItem`]
         """
         
@@ -48,7 +48,7 @@ class GetExecutionPlanResponse(SdkResponse):
     def execution_plan_items(self):
         """Gets the execution_plan_items of this GetExecutionPlanResponse.
 
-        执行计划元素的列表，只有当状态为'AVAILABLE'、'APPLIED'、’APPLY_IN_PROGRESS‘等完成创建后的状态才会被赋值，而'CREATION_IN_PROGRESS'或'CREATION_FAILED'会返回错误。
+        执行计划项目的列表
 
         :return: The execution_plan_items of this GetExecutionPlanResponse.
         :rtype: list[:class:`huaweicloudsdkaos.v1.ExecutionPlanItem`]
@@ -59,7 +59,7 @@ class GetExecutionPlanResponse(SdkResponse):
     def execution_plan_items(self, execution_plan_items):
         """Sets the execution_plan_items of this GetExecutionPlanResponse.
 
-        执行计划元素的列表，只有当状态为'AVAILABLE'、'APPLIED'、’APPLY_IN_PROGRESS‘等完成创建后的状态才会被赋值，而'CREATION_IN_PROGRESS'或'CREATION_FAILED'会返回错误。
+        执行计划项目的列表
 
         :param execution_plan_items: The execution_plan_items of this GetExecutionPlanResponse.
         :type execution_plan_items: list[:class:`huaweicloudsdkaos.v1.ExecutionPlanItem`]

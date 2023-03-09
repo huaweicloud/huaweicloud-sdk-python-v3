@@ -10,11 +10,14 @@ class ImageSearchRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("IMAGESEARCH")
 
     CN_NORTH_4 = Region("cn-north-4",
-                        "https://imagesearch.cn-north-4.myhuaweicloud.com")
+                        "https://imagesearch.cn-north-4.myhuaweicloud.com",
+                        "https://imagesearch.cn-north-4.myhuaweicloud.cn")
     CN_NORTH_1 = Region("cn-north-1",
-                        "https://imagesearch.cn-north-1.myhuaweicloud.com")
+                        "https://imagesearch.cn-north-1.myhuaweicloud.com",
+                        "https://imagesearch.cn-north-1.myhuaweicloud.cn")
     AP_SOUTHEAST_1 = Region("ap-southeast-1",
-                        "https://imagesearch.ap-southeast-1.myhuaweicloud.com")
+                        "https://imagesearch.ap-southeast-1.myhuaweicloud.com",
+                        "https://imagesearch.ap-southeast-1.myhuaweicloud.cn")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,

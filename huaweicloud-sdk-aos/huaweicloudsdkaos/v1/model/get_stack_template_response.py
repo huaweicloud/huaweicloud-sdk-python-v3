@@ -20,20 +20,47 @@ class GetStackTemplateResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'location': 'str'
     }
 
     attribute_map = {
+        'location': 'Location'
     }
 
-    def __init__(self):
+    def __init__(self, location=None):
         """GetStackTemplateResponse
 
         The model defined in huaweicloud sdk
 
+        :param location: 
+        :type location: str
         """
         
         super(GetStackTemplateResponse, self).__init__()
+
+        self._location = None
         self.discriminator = None
+
+        if location is not None:
+            self.location = location
+
+    @property
+    def location(self):
+        """Gets the location of this GetStackTemplateResponse.
+
+        :return: The location of this GetStackTemplateResponse.
+        :rtype: str
+        """
+        return self._location
+
+    @location.setter
+    def location(self, location):
+        """Sets the location of this GetStackTemplateResponse.
+
+        :param location: The location of this GetStackTemplateResponse.
+        :type location: str
+        """
+        self._location = location
 
     def to_dict(self):
         """Returns the model properties as a dict"""

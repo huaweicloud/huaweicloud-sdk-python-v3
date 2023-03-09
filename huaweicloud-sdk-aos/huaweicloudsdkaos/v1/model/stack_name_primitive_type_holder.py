@@ -32,7 +32,7 @@ class StackNamePrimitiveTypeHolder:
 
         The model defined in huaweicloud sdk
 
-        :param stack_name: 用户希望生成的资源栈的名字。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
+        :param stack_name: 资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
         :type stack_name: str
         """
         
@@ -47,7 +47,7 @@ class StackNamePrimitiveTypeHolder:
     def stack_name(self):
         """Gets the stack_name of this StackNamePrimitiveTypeHolder.
 
-        用户希望生成的资源栈的名字。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
+        资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
         :return: The stack_name of this StackNamePrimitiveTypeHolder.
         :rtype: str
@@ -58,7 +58,7 @@ class StackNamePrimitiveTypeHolder:
     def stack_name(self, stack_name):
         """Sets the stack_name of this StackNamePrimitiveTypeHolder.
 
-        用户希望生成的资源栈的名字。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
+        资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
         :param stack_name: The stack_name of this StackNamePrimitiveTypeHolder.
         :type stack_name: str

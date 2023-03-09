@@ -735,7 +735,7 @@ class BssAsyncClient(Client):
         客户在自建平台查询自己的资源使用量明细。
         
         &gt;![](public_sys-resources/icon-note.gif) **说明：** 
-        &gt;当前仅支持查询CDN和OBS两种云服务类型的资源用量明细，仅针对95计费场景。
+        &gt;当前仅支持查询CDN、OBS和VPC三种云服务类型的资源用量明细，仅针对95计费场景。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -813,7 +813,7 @@ class BssAsyncClient(Client):
         客户在自建平台查询自己的资源使用量汇总。
         
         &gt;![](public_sys-resources/icon-note.gif) **说明：** 
-        &gt;-   当前仅支持查询CDN和OBS两种云服务类型的资源用量汇总，仅针对95计费场景。
+        &gt;-   当前仅支持查询CDN、OBS和VPC三种云服务类型的资源用量汇总，仅针对95计费场景。
         &gt;-   使用量汇总列表只包含月汇总金额和资源ID，若要查询具体某个资源的用量明细，请调用[查询资源用量明细](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001190606757.html)接口获取。
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2745,7 +2745,8 @@ class BssAsyncClient(Client):
         伙伴登录伙伴中心，进入“客户业务 \\&gt; 现金券管理”，选择“已发放现金券”页签，即可查询已发放的现金券。
         
         &gt;![](public_sys-resources/icon-note.gif) **说明：** 
-        &gt;只可查到失效时间在12个月内的代金/现金劵。
+        &gt;-   只可查到失效时间在12个月内的代金/现金劵。
+        &gt;-   在API只可以查询代售子客户已发放的代金/现金劵，在伙伴中心可以查询代售和顾问销售已发放的代金/现金劵，对比一致性时需要注意关联模式是否一致。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

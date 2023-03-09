@@ -20,7 +20,7 @@ class CreateNatGatewaySnatRuleResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'snat_rule': 'NatGatewaySnatRuleResponseBody'
+        'snat_rule': 'CreateNatGatewaySnatRuleResponseBody'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class CreateNatGatewaySnatRuleResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param snat_rule: 
-        :type snat_rule: :class:`huaweicloudsdknat.v2.NatGatewaySnatRuleResponseBody`
+        :type snat_rule: :class:`huaweicloudsdknat.v2.CreateNatGatewaySnatRuleResponseBody`
         """
         
         super(CreateNatGatewaySnatRuleResponse, self).__init__()
@@ -49,7 +49,7 @@ class CreateNatGatewaySnatRuleResponse(SdkResponse):
         """Gets the snat_rule of this CreateNatGatewaySnatRuleResponse.
 
         :return: The snat_rule of this CreateNatGatewaySnatRuleResponse.
-        :rtype: :class:`huaweicloudsdknat.v2.NatGatewaySnatRuleResponseBody`
+        :rtype: :class:`huaweicloudsdknat.v2.CreateNatGatewaySnatRuleResponseBody`
         """
         return self._snat_rule
 
@@ -58,7 +58,7 @@ class CreateNatGatewaySnatRuleResponse(SdkResponse):
         """Sets the snat_rule of this CreateNatGatewaySnatRuleResponse.
 
         :param snat_rule: The snat_rule of this CreateNatGatewaySnatRuleResponse.
-        :type snat_rule: :class:`huaweicloudsdknat.v2.NatGatewaySnatRuleResponseBody`
+        :type snat_rule: :class:`huaweicloudsdknat.v2.CreateNatGatewaySnatRuleResponseBody`
         """
         self._snat_rule = snat_rule
 

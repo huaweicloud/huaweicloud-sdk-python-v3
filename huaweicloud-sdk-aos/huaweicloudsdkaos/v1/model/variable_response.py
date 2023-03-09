@@ -44,19 +44,19 @@ class VariableResponse:
 
         The model defined in huaweicloud sdk
 
-        :param name: 参数的名字
+        :param name: 参数的名字  以HCL格式的模板为例，name 为 &#x60;my_hello_world_variable&#x60;  &#x60;&#x60;&#x60;hcl variable \&quot;my_hello_world_variable\&quot; {   type &#x3D; string   description &#x3D; \&quot;this is a variable\&quot;   default &#x3D; \&quot;hello world\&quot;   sensitive &#x3D; false   nullable &#x3D; false   validation {     condition     &#x3D; length(var.my_hello_world_variable) &gt; 0 &amp;&amp; substr(var.my_hello_world_variable, 0, 5) &#x3D;&#x3D; \&quot;hello\&quot;     error_message &#x3D; \&quot;my_hello_world_variable should start with &#39;hello&#39;.\&quot;   } } &#x60;&#x60;&#x60;  以json格式的模板为例，name 为 &#x60;my_hello_world_variable&#x60;  &#x60;&#x60;&#x60;json {   \&quot;variable\&quot;: {     \&quot;my_hello_world_variable\&quot;: [       {         \&quot;default\&quot;: \&quot;hello world\&quot;,         \&quot;description\&quot;: \&quot;this is a variable\&quot;,         \&quot;nullable\&quot;: false,         \&quot;sensitive\&quot;: false,         \&quot;type\&quot;: \&quot;string\&quot;,         \&quot;validation\&quot;: [           {             \&quot;condition\&quot;: \&quot;${length(var.my_hello_world_variable) &gt; 0 &amp;&amp; substr(var.my_hello_world_variable, 0, 5) &#x3D;&#x3D; \\\&quot;hello\\\&quot;}\&quot;,             \&quot;error_message\&quot;: \&quot;my_hello_world_variable should start with &#39;hello&#39;.\&quot;           }         ]       }     ]   } } &#x60;&#x60;&#x60; 
         :type name: str
-        :param type: 参数类型
+        :param type: 参数的类型  以HCL格式的模板为例，type 为 &#x60;string&#x60;  &#x60;&#x60;&#x60;hcl variable \&quot;my_hello_world_variable\&quot; {   type &#x3D; string   description &#x3D; \&quot;this is a variable\&quot;   default &#x3D; \&quot;hello world\&quot;   sensitive &#x3D; false   nullable &#x3D; false   validation {     condition     &#x3D; length(var.my_hello_world_variable) &gt; 0 &amp;&amp; substr(var.my_hello_world_variable, 0, 5) &#x3D;&#x3D; \&quot;hello\&quot;     error_message &#x3D; \&quot;my_hello_world_variable should start with &#39;hello&#39;.\&quot;   } } &#x60;&#x60;&#x60;  以json格式的模板为例，type 为 &#x60;string&#x60;  &#x60;&#x60;&#x60;json {   \&quot;variable\&quot;: {     \&quot;my_hello_world_variable\&quot;: [       {         \&quot;default\&quot;: \&quot;hello world\&quot;,         \&quot;description\&quot;: \&quot;this is a variable\&quot;,         \&quot;nullable\&quot;: false,         \&quot;sensitive\&quot;: false,         \&quot;type\&quot;: \&quot;string\&quot;,         \&quot;validation\&quot;: [           {             \&quot;condition\&quot;: \&quot;${length(var.my_hello_world_variable) &gt; 0 &amp;&amp; substr(var.my_hello_world_variable, 0, 5) &#x3D;&#x3D; \\\&quot;hello\\\&quot;}\&quot;,             \&quot;error_message\&quot;: \&quot;my_hello_world_variable should start with &#39;hello&#39;.\&quot;           }         ]       }     ]   } } &#x60;&#x60;&#x60; 
         :type type: str
-        :param description: 描述参数的用途
+        :param description: 参数的描述  以HCL格式的模板为例，description 为 &#x60;this is a variable&#x60;  &#x60;&#x60;&#x60;hcl variable \&quot;my_hello_world_variable\&quot; {   type &#x3D; string   description &#x3D; \&quot;this is a variable\&quot;   default &#x3D; \&quot;hello world\&quot;   sensitive &#x3D; false   nullable &#x3D; false   validation {     condition     &#x3D; length(var.my_hello_world_variable) &gt; 0 &amp;&amp; substr(var.my_hello_world_variable, 0, 5) &#x3D;&#x3D; \&quot;hello\&quot;     error_message &#x3D; \&quot;my_hello_world_variable should start with &#39;hello&#39;.\&quot;   } } &#x60;&#x60;&#x60;  以json格式的模板为例，description 为 &#x60;this is a variable&#x60;  &#x60;&#x60;&#x60;json {   \&quot;variable\&quot;: {     \&quot;my_hello_world_variable\&quot;: [       {         \&quot;default\&quot;: \&quot;hello world\&quot;,         \&quot;description\&quot;: \&quot;this is a variable\&quot;,         \&quot;nullable\&quot;: false,         \&quot;sensitive\&quot;: false,         \&quot;type\&quot;: \&quot;string\&quot;,         \&quot;validation\&quot;: [           {             \&quot;condition\&quot;: \&quot;${length(var.my_hello_world_variable) &gt; 0 &amp;&amp; substr(var.my_hello_world_variable, 0, 5) &#x3D;&#x3D; \\\&quot;hello\\\&quot;}\&quot;,             \&quot;error_message\&quot;: \&quot;my_hello_world_variable should start with &#39;hello&#39;.\&quot;           }         ]       }     ]   } } &#x60;&#x60;&#x60; 
         :type description: str
-        :param default: 参数默认值。该类型与type保持一致
+        :param default: 参数默认值。此返回值的类型将与type保持一致  例如，对于type为string的变量，此值的返回类型为string；对于type为number的变量，此值的返回类型为number  以HCL格式的模板为例，default 为 &#x60;hello world&#x60;  &#x60;&#x60;&#x60;hcl variable \&quot;my_hello_world_variable\&quot; {   type &#x3D; string   description &#x3D; \&quot;this is a variable\&quot;   default &#x3D; \&quot;hello world\&quot;   sensitive &#x3D; false   nullable &#x3D; false   validation {     condition     &#x3D; length(var.my_hello_world_variable) &gt; 0 &amp;&amp; substr(var.my_hello_world_variable, 0, 5) &#x3D;&#x3D; \&quot;hello\&quot;     error_message &#x3D; \&quot;my_hello_world_variable should start with &#39;hello&#39;.\&quot;   } } &#x60;&#x60;&#x60;  以json格式的模板为例，default 为 &#x60;hello world&#x60;  &#x60;&#x60;&#x60;json {   \&quot;variable\&quot;: {     \&quot;my_hello_world_variable\&quot;: [       {         \&quot;default\&quot;: \&quot;hello world\&quot;,         \&quot;description\&quot;: \&quot;this is a variable\&quot;,         \&quot;nullable\&quot;: false,         \&quot;sensitive\&quot;: false,         \&quot;type\&quot;: \&quot;string\&quot;,         \&quot;validation\&quot;: [           {             \&quot;condition\&quot;: \&quot;${length(var.my_hello_world_variable) &gt; 0 &amp;&amp; substr(var.my_hello_world_variable, 0, 5) &#x3D;&#x3D; \\\&quot;hello\\\&quot;}\&quot;,             \&quot;error_message\&quot;: \&quot;my_hello_world_variable should start with &#39;hello&#39;.\&quot;           }         ]       }     ]   } } &#x60;&#x60;&#x60; 
         :type default: object
-        :param sensitive: 参数是否为敏感字段
+        :param sensitive: 参数是否为敏感字段  若variable中没有定义sensitive，默认返回false。  以HCL格式的模板为例，sensitive 为 &#x60;false&#x60;  &#x60;&#x60;&#x60;hcl variable \&quot;my_hello_world_variable\&quot; {   type &#x3D; string   description &#x3D; \&quot;this is a variable\&quot;   default &#x3D; \&quot;hello world\&quot;   sensitive &#x3D; false   nullable &#x3D; false   validation {     condition     &#x3D; length(var.my_hello_world_variable) &gt; 0 &amp;&amp; substr(var.my_hello_world_variable, 0, 5) &#x3D;&#x3D; \&quot;hello\&quot;     error_message &#x3D; \&quot;my_hello_world_variable should start with &#39;hello&#39;.\&quot;   } } &#x60;&#x60;&#x60;  以json格式的模板为例，sensitive 为 &#x60;false&#x60;  &#x60;&#x60;&#x60;json {   \&quot;variable\&quot;: {     \&quot;my_hello_world_variable\&quot;: [       {         \&quot;default\&quot;: \&quot;hello world\&quot;,         \&quot;description\&quot;: \&quot;this is a variable\&quot;,         \&quot;nullable\&quot;: false,         \&quot;sensitive\&quot;: false,         \&quot;type\&quot;: \&quot;string\&quot;,         \&quot;validation\&quot;: [           {             \&quot;condition\&quot;: \&quot;${length(var.my_hello_world_variable) &gt; 0 &amp;&amp; substr(var.my_hello_world_variable, 0, 5) &#x3D;&#x3D; \\\&quot;hello\\\&quot;}\&quot;,             \&quot;error_message\&quot;: \&quot;my_hello_world_variable should start with &#39;hello&#39;.\&quot;           }         ]       }     ]   } } &#x60;&#x60;&#x60; 
         :type sensitive: bool
-        :param nullable: 参数是否可设置为null
+        :param nullable: 参数是否可设置为null。  若variable中没有定义nullable，默认返回true。  以HCL格式的模板为例，nullable 为 &#x60;false&#x60;  &#x60;&#x60;&#x60;hcl variable \&quot;my_hello_world_variable\&quot; {   type &#x3D; string   description &#x3D; \&quot;this is a variable\&quot;   default &#x3D; \&quot;hello world\&quot;   sensitive &#x3D; false   nullable &#x3D; false   validation {     condition     &#x3D; length(var.my_hello_world_variable) &gt; 0 &amp;&amp; substr(var.my_hello_world_variable, 0, 5) &#x3D;&#x3D; \&quot;hello\&quot;     error_message &#x3D; \&quot;my_hello_world_variable should start with &#39;hello&#39;.\&quot;   } } &#x60;&#x60;&#x60;  以json格式的模板为例，nullable 为 &#x60;false&#x60;  &#x60;&#x60;&#x60;json {   \&quot;variable\&quot;: {     \&quot;my_hello_world_variable\&quot;: [       {         \&quot;default\&quot;: \&quot;hello world\&quot;,         \&quot;description\&quot;: \&quot;this is a variable\&quot;,         \&quot;nullable\&quot;: false,         \&quot;sensitive\&quot;: false,         \&quot;type\&quot;: \&quot;string\&quot;,         \&quot;validation\&quot;: [           {             \&quot;condition\&quot;: \&quot;${length(var.my_hello_world_variable) &gt; 0 &amp;&amp; substr(var.my_hello_world_variable, 0, 5) &#x3D;&#x3D; \\\&quot;hello\\\&quot;}\&quot;,             \&quot;error_message\&quot;: \&quot;my_hello_world_variable should start with &#39;hello&#39;.\&quot;           }         ]       }     ]   } } &#x60;&#x60;&#x60; 
         :type nullable: bool
-        :param validations: 参数校验模块
+        :param validations: 参数的校验模块
         :type validations: list[:class:`huaweicloudsdkaos.v1.VariableValidationResponse`]
         """
         
@@ -90,7 +90,7 @@ class VariableResponse:
     def name(self):
         """Gets the name of this VariableResponse.
 
-        参数的名字
+        参数的名字  以HCL格式的模板为例，name 为 `my_hello_world_variable`  ```hcl variable \"my_hello_world_variable\" {   type = string   description = \"this is a variable\"   default = \"hello world\"   sensitive = false   nullable = false   validation {     condition     = length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \"hello\"     error_message = \"my_hello_world_variable should start with 'hello'.\"   } } ```  以json格式的模板为例，name 为 `my_hello_world_variable`  ```json {   \"variable\": {     \"my_hello_world_variable\": [       {         \"default\": \"hello world\",         \"description\": \"this is a variable\",         \"nullable\": false,         \"sensitive\": false,         \"type\": \"string\",         \"validation\": [           {             \"condition\": \"${length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \\\"hello\\\"}\",             \"error_message\": \"my_hello_world_variable should start with 'hello'.\"           }         ]       }     ]   } } ``` 
 
         :return: The name of this VariableResponse.
         :rtype: str
@@ -101,7 +101,7 @@ class VariableResponse:
     def name(self, name):
         """Sets the name of this VariableResponse.
 
-        参数的名字
+        参数的名字  以HCL格式的模板为例，name 为 `my_hello_world_variable`  ```hcl variable \"my_hello_world_variable\" {   type = string   description = \"this is a variable\"   default = \"hello world\"   sensitive = false   nullable = false   validation {     condition     = length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \"hello\"     error_message = \"my_hello_world_variable should start with 'hello'.\"   } } ```  以json格式的模板为例，name 为 `my_hello_world_variable`  ```json {   \"variable\": {     \"my_hello_world_variable\": [       {         \"default\": \"hello world\",         \"description\": \"this is a variable\",         \"nullable\": false,         \"sensitive\": false,         \"type\": \"string\",         \"validation\": [           {             \"condition\": \"${length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \\\"hello\\\"}\",             \"error_message\": \"my_hello_world_variable should start with 'hello'.\"           }         ]       }     ]   } } ``` 
 
         :param name: The name of this VariableResponse.
         :type name: str
@@ -112,7 +112,7 @@ class VariableResponse:
     def type(self):
         """Gets the type of this VariableResponse.
 
-        参数类型
+        参数的类型  以HCL格式的模板为例，type 为 `string`  ```hcl variable \"my_hello_world_variable\" {   type = string   description = \"this is a variable\"   default = \"hello world\"   sensitive = false   nullable = false   validation {     condition     = length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \"hello\"     error_message = \"my_hello_world_variable should start with 'hello'.\"   } } ```  以json格式的模板为例，type 为 `string`  ```json {   \"variable\": {     \"my_hello_world_variable\": [       {         \"default\": \"hello world\",         \"description\": \"this is a variable\",         \"nullable\": false,         \"sensitive\": false,         \"type\": \"string\",         \"validation\": [           {             \"condition\": \"${length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \\\"hello\\\"}\",             \"error_message\": \"my_hello_world_variable should start with 'hello'.\"           }         ]       }     ]   } } ``` 
 
         :return: The type of this VariableResponse.
         :rtype: str
@@ -123,7 +123,7 @@ class VariableResponse:
     def type(self, type):
         """Sets the type of this VariableResponse.
 
-        参数类型
+        参数的类型  以HCL格式的模板为例，type 为 `string`  ```hcl variable \"my_hello_world_variable\" {   type = string   description = \"this is a variable\"   default = \"hello world\"   sensitive = false   nullable = false   validation {     condition     = length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \"hello\"     error_message = \"my_hello_world_variable should start with 'hello'.\"   } } ```  以json格式的模板为例，type 为 `string`  ```json {   \"variable\": {     \"my_hello_world_variable\": [       {         \"default\": \"hello world\",         \"description\": \"this is a variable\",         \"nullable\": false,         \"sensitive\": false,         \"type\": \"string\",         \"validation\": [           {             \"condition\": \"${length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \\\"hello\\\"}\",             \"error_message\": \"my_hello_world_variable should start with 'hello'.\"           }         ]       }     ]   } } ``` 
 
         :param type: The type of this VariableResponse.
         :type type: str
@@ -134,7 +134,7 @@ class VariableResponse:
     def description(self):
         """Gets the description of this VariableResponse.
 
-        描述参数的用途
+        参数的描述  以HCL格式的模板为例，description 为 `this is a variable`  ```hcl variable \"my_hello_world_variable\" {   type = string   description = \"this is a variable\"   default = \"hello world\"   sensitive = false   nullable = false   validation {     condition     = length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \"hello\"     error_message = \"my_hello_world_variable should start with 'hello'.\"   } } ```  以json格式的模板为例，description 为 `this is a variable`  ```json {   \"variable\": {     \"my_hello_world_variable\": [       {         \"default\": \"hello world\",         \"description\": \"this is a variable\",         \"nullable\": false,         \"sensitive\": false,         \"type\": \"string\",         \"validation\": [           {             \"condition\": \"${length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \\\"hello\\\"}\",             \"error_message\": \"my_hello_world_variable should start with 'hello'.\"           }         ]       }     ]   } } ``` 
 
         :return: The description of this VariableResponse.
         :rtype: str
@@ -145,7 +145,7 @@ class VariableResponse:
     def description(self, description):
         """Sets the description of this VariableResponse.
 
-        描述参数的用途
+        参数的描述  以HCL格式的模板为例，description 为 `this is a variable`  ```hcl variable \"my_hello_world_variable\" {   type = string   description = \"this is a variable\"   default = \"hello world\"   sensitive = false   nullable = false   validation {     condition     = length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \"hello\"     error_message = \"my_hello_world_variable should start with 'hello'.\"   } } ```  以json格式的模板为例，description 为 `this is a variable`  ```json {   \"variable\": {     \"my_hello_world_variable\": [       {         \"default\": \"hello world\",         \"description\": \"this is a variable\",         \"nullable\": false,         \"sensitive\": false,         \"type\": \"string\",         \"validation\": [           {             \"condition\": \"${length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \\\"hello\\\"}\",             \"error_message\": \"my_hello_world_variable should start with 'hello'.\"           }         ]       }     ]   } } ``` 
 
         :param description: The description of this VariableResponse.
         :type description: str
@@ -156,7 +156,7 @@ class VariableResponse:
     def default(self):
         """Gets the default of this VariableResponse.
 
-        参数默认值。该类型与type保持一致
+        参数默认值。此返回值的类型将与type保持一致  例如，对于type为string的变量，此值的返回类型为string；对于type为number的变量，此值的返回类型为number  以HCL格式的模板为例，default 为 `hello world`  ```hcl variable \"my_hello_world_variable\" {   type = string   description = \"this is a variable\"   default = \"hello world\"   sensitive = false   nullable = false   validation {     condition     = length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \"hello\"     error_message = \"my_hello_world_variable should start with 'hello'.\"   } } ```  以json格式的模板为例，default 为 `hello world`  ```json {   \"variable\": {     \"my_hello_world_variable\": [       {         \"default\": \"hello world\",         \"description\": \"this is a variable\",         \"nullable\": false,         \"sensitive\": false,         \"type\": \"string\",         \"validation\": [           {             \"condition\": \"${length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \\\"hello\\\"}\",             \"error_message\": \"my_hello_world_variable should start with 'hello'.\"           }         ]       }     ]   } } ``` 
 
         :return: The default of this VariableResponse.
         :rtype: object
@@ -167,7 +167,7 @@ class VariableResponse:
     def default(self, default):
         """Sets the default of this VariableResponse.
 
-        参数默认值。该类型与type保持一致
+        参数默认值。此返回值的类型将与type保持一致  例如，对于type为string的变量，此值的返回类型为string；对于type为number的变量，此值的返回类型为number  以HCL格式的模板为例，default 为 `hello world`  ```hcl variable \"my_hello_world_variable\" {   type = string   description = \"this is a variable\"   default = \"hello world\"   sensitive = false   nullable = false   validation {     condition     = length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \"hello\"     error_message = \"my_hello_world_variable should start with 'hello'.\"   } } ```  以json格式的模板为例，default 为 `hello world`  ```json {   \"variable\": {     \"my_hello_world_variable\": [       {         \"default\": \"hello world\",         \"description\": \"this is a variable\",         \"nullable\": false,         \"sensitive\": false,         \"type\": \"string\",         \"validation\": [           {             \"condition\": \"${length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \\\"hello\\\"}\",             \"error_message\": \"my_hello_world_variable should start with 'hello'.\"           }         ]       }     ]   } } ``` 
 
         :param default: The default of this VariableResponse.
         :type default: object
@@ -178,7 +178,7 @@ class VariableResponse:
     def sensitive(self):
         """Gets the sensitive of this VariableResponse.
 
-        参数是否为敏感字段
+        参数是否为敏感字段  若variable中没有定义sensitive，默认返回false。  以HCL格式的模板为例，sensitive 为 `false`  ```hcl variable \"my_hello_world_variable\" {   type = string   description = \"this is a variable\"   default = \"hello world\"   sensitive = false   nullable = false   validation {     condition     = length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \"hello\"     error_message = \"my_hello_world_variable should start with 'hello'.\"   } } ```  以json格式的模板为例，sensitive 为 `false`  ```json {   \"variable\": {     \"my_hello_world_variable\": [       {         \"default\": \"hello world\",         \"description\": \"this is a variable\",         \"nullable\": false,         \"sensitive\": false,         \"type\": \"string\",         \"validation\": [           {             \"condition\": \"${length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \\\"hello\\\"}\",             \"error_message\": \"my_hello_world_variable should start with 'hello'.\"           }         ]       }     ]   } } ``` 
 
         :return: The sensitive of this VariableResponse.
         :rtype: bool
@@ -189,7 +189,7 @@ class VariableResponse:
     def sensitive(self, sensitive):
         """Sets the sensitive of this VariableResponse.
 
-        参数是否为敏感字段
+        参数是否为敏感字段  若variable中没有定义sensitive，默认返回false。  以HCL格式的模板为例，sensitive 为 `false`  ```hcl variable \"my_hello_world_variable\" {   type = string   description = \"this is a variable\"   default = \"hello world\"   sensitive = false   nullable = false   validation {     condition     = length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \"hello\"     error_message = \"my_hello_world_variable should start with 'hello'.\"   } } ```  以json格式的模板为例，sensitive 为 `false`  ```json {   \"variable\": {     \"my_hello_world_variable\": [       {         \"default\": \"hello world\",         \"description\": \"this is a variable\",         \"nullable\": false,         \"sensitive\": false,         \"type\": \"string\",         \"validation\": [           {             \"condition\": \"${length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \\\"hello\\\"}\",             \"error_message\": \"my_hello_world_variable should start with 'hello'.\"           }         ]       }     ]   } } ``` 
 
         :param sensitive: The sensitive of this VariableResponse.
         :type sensitive: bool
@@ -200,7 +200,7 @@ class VariableResponse:
     def nullable(self):
         """Gets the nullable of this VariableResponse.
 
-        参数是否可设置为null
+        参数是否可设置为null。  若variable中没有定义nullable，默认返回true。  以HCL格式的模板为例，nullable 为 `false`  ```hcl variable \"my_hello_world_variable\" {   type = string   description = \"this is a variable\"   default = \"hello world\"   sensitive = false   nullable = false   validation {     condition     = length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \"hello\"     error_message = \"my_hello_world_variable should start with 'hello'.\"   } } ```  以json格式的模板为例，nullable 为 `false`  ```json {   \"variable\": {     \"my_hello_world_variable\": [       {         \"default\": \"hello world\",         \"description\": \"this is a variable\",         \"nullable\": false,         \"sensitive\": false,         \"type\": \"string\",         \"validation\": [           {             \"condition\": \"${length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \\\"hello\\\"}\",             \"error_message\": \"my_hello_world_variable should start with 'hello'.\"           }         ]       }     ]   } } ``` 
 
         :return: The nullable of this VariableResponse.
         :rtype: bool
@@ -211,7 +211,7 @@ class VariableResponse:
     def nullable(self, nullable):
         """Sets the nullable of this VariableResponse.
 
-        参数是否可设置为null
+        参数是否可设置为null。  若variable中没有定义nullable，默认返回true。  以HCL格式的模板为例，nullable 为 `false`  ```hcl variable \"my_hello_world_variable\" {   type = string   description = \"this is a variable\"   default = \"hello world\"   sensitive = false   nullable = false   validation {     condition     = length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \"hello\"     error_message = \"my_hello_world_variable should start with 'hello'.\"   } } ```  以json格式的模板为例，nullable 为 `false`  ```json {   \"variable\": {     \"my_hello_world_variable\": [       {         \"default\": \"hello world\",         \"description\": \"this is a variable\",         \"nullable\": false,         \"sensitive\": false,         \"type\": \"string\",         \"validation\": [           {             \"condition\": \"${length(var.my_hello_world_variable) > 0 && substr(var.my_hello_world_variable, 0, 5) == \\\"hello\\\"}\",             \"error_message\": \"my_hello_world_variable should start with 'hello'.\"           }         ]       }     ]   } } ``` 
 
         :param nullable: The nullable of this VariableResponse.
         :type nullable: bool
@@ -222,7 +222,7 @@ class VariableResponse:
     def validations(self):
         """Gets the validations of this VariableResponse.
 
-        参数校验模块
+        参数的校验模块
 
         :return: The validations of this VariableResponse.
         :rtype: list[:class:`huaweicloudsdkaos.v1.VariableValidationResponse`]
@@ -233,7 +233,7 @@ class VariableResponse:
     def validations(self, validations):
         """Sets the validations of this VariableResponse.
 
-        参数校验模块
+        参数的校验模块
 
         :param validations: The validations of this VariableResponse.
         :type validations: list[:class:`huaweicloudsdkaos.v1.VariableValidationResponse`]

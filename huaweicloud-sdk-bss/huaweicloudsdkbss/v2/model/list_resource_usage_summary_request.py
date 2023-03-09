@@ -48,9 +48,9 @@ class ListResourceUsageSummaryRequest:
         :type x_language: str
         :param bill_cycle: 账期，东八区时间，格式为yyyy-MM。
         :type bill_cycle: str
-        :param service_type_code: 云服务类型，当前仅支持：hws.service.type.cdn：内容分发网络,hws.service.type.obs：对象存储服务
+        :param service_type_code: 云服务类型，当前仅支持：hws.service.type.cdn：内容分发网络,hws.service.type.obs：对象存储服务,hws.service.type.vpc：虚拟私有云
         :type service_type_code: str
-        :param resource_type_code: 资源类型编码，当前仅支持：hws.resource.type.cdn：CDN,hws.resource.type.obs：云存储.资源类型和云服务类型的对应关系可调用[根据云服务类型查询资源列表](https://support.huaweicloud.com/api-oce/qct_00003.html)接口获取。
+        :param resource_type_code: 资源类型编码，当前仅支持：hws.resource.type.cdn：CDN,hws.resource.type.obs：云存储,hws.resource.type.bandwidth：固定带宽.资源类型和云服务类型的对应关系可调用[根据云服务类型查询资源列表](https://support.huaweicloud.com/api-oce/qct_00003.html)接口获取。
         :type resource_type_code: str
         :param usage_type: 使用量类型编码，目前仅支持：95Peak：中国大陆月95峰值带宽_1024进制,95peak_1000：中国大陆月95峰值带宽_1000进制,bandwidth95peak：95峰值带宽.资源类型和使用量类型的对应关系可调用[查询使用量类型列表接](https://support.huaweicloud.com/api-oce/qct_00004.html)口获取。
         :type usage_type: str
@@ -130,7 +130,7 @@ class ListResourceUsageSummaryRequest:
     def service_type_code(self):
         """Gets the service_type_code of this ListResourceUsageSummaryRequest.
 
-        云服务类型，当前仅支持：hws.service.type.cdn：内容分发网络,hws.service.type.obs：对象存储服务
+        云服务类型，当前仅支持：hws.service.type.cdn：内容分发网络,hws.service.type.obs：对象存储服务,hws.service.type.vpc：虚拟私有云
 
         :return: The service_type_code of this ListResourceUsageSummaryRequest.
         :rtype: str
@@ -141,7 +141,7 @@ class ListResourceUsageSummaryRequest:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this ListResourceUsageSummaryRequest.
 
-        云服务类型，当前仅支持：hws.service.type.cdn：内容分发网络,hws.service.type.obs：对象存储服务
+        云服务类型，当前仅支持：hws.service.type.cdn：内容分发网络,hws.service.type.obs：对象存储服务,hws.service.type.vpc：虚拟私有云
 
         :param service_type_code: The service_type_code of this ListResourceUsageSummaryRequest.
         :type service_type_code: str
@@ -152,7 +152,7 @@ class ListResourceUsageSummaryRequest:
     def resource_type_code(self):
         """Gets the resource_type_code of this ListResourceUsageSummaryRequest.
 
-        资源类型编码，当前仅支持：hws.resource.type.cdn：CDN,hws.resource.type.obs：云存储.资源类型和云服务类型的对应关系可调用[根据云服务类型查询资源列表](https://support.huaweicloud.com/api-oce/qct_00003.html)接口获取。
+        资源类型编码，当前仅支持：hws.resource.type.cdn：CDN,hws.resource.type.obs：云存储,hws.resource.type.bandwidth：固定带宽.资源类型和云服务类型的对应关系可调用[根据云服务类型查询资源列表](https://support.huaweicloud.com/api-oce/qct_00003.html)接口获取。
 
         :return: The resource_type_code of this ListResourceUsageSummaryRequest.
         :rtype: str
@@ -163,7 +163,7 @@ class ListResourceUsageSummaryRequest:
     def resource_type_code(self, resource_type_code):
         """Sets the resource_type_code of this ListResourceUsageSummaryRequest.
 
-        资源类型编码，当前仅支持：hws.resource.type.cdn：CDN,hws.resource.type.obs：云存储.资源类型和云服务类型的对应关系可调用[根据云服务类型查询资源列表](https://support.huaweicloud.com/api-oce/qct_00003.html)接口获取。
+        资源类型编码，当前仅支持：hws.resource.type.cdn：CDN,hws.resource.type.obs：云存储,hws.resource.type.bandwidth：固定带宽.资源类型和云服务类型的对应关系可调用[根据云服务类型查询资源列表](https://support.huaweicloud.com/api-oce/qct_00003.html)接口获取。
 
         :param resource_type_code: The resource_type_code of this ListResourceUsageSummaryRequest.
         :type resource_type_code: str

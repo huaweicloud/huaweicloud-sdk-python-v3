@@ -32,7 +32,7 @@ class ParseTemplateVariablesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param variables: 模板中的所有参数
+        :param variables: 解析模板得到的参数列表
         :type variables: list[:class:`huaweicloudsdkaos.v1.VariableResponse`]
         """
         
@@ -48,7 +48,7 @@ class ParseTemplateVariablesResponse(SdkResponse):
     def variables(self):
         """Gets the variables of this ParseTemplateVariablesResponse.
 
-        模板中的所有参数
+        解析模板得到的参数列表
 
         :return: The variables of this ParseTemplateVariablesResponse.
         :rtype: list[:class:`huaweicloudsdkaos.v1.VariableResponse`]
@@ -59,7 +59,7 @@ class ParseTemplateVariablesResponse(SdkResponse):
     def variables(self, variables):
         """Sets the variables of this ParseTemplateVariablesResponse.
 
-        模板中的所有参数
+        解析模板得到的参数列表
 
         :param variables: The variables of this ParseTemplateVariablesResponse.
         :type variables: list[:class:`huaweicloudsdkaos.v1.VariableResponse`]

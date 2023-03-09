@@ -11,9 +11,12 @@ class EgRegion:
 
     CN_NORTH_4 = Region("cn-north-4",
                         "https://eg.cn-north-4.myhuaweicloud.com")
+    CN_EAST_2 = Region("cn-east-2",
+                        "https://eg.cn-east-2.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
+        "cn-east-2": CN_EAST_2,
     }
 
     @classmethod

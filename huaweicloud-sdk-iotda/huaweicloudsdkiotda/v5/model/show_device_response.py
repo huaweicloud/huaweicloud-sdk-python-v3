@@ -36,6 +36,8 @@ class ShowDeviceResponse(SdkResponse):
         'product_name': 'str',
         'status': 'str',
         'create_time': 'str',
+        'connection_status_update_time': 'str',
+        'active_time': 'str',
         'tags': 'list[TagV5DTO]',
         'extension_info': 'object'
     }
@@ -57,11 +59,13 @@ class ShowDeviceResponse(SdkResponse):
         'product_name': 'product_name',
         'status': 'status',
         'create_time': 'create_time',
+        'connection_status_update_time': 'connection_status_update_time',
+        'active_time': 'active_time',
         'tags': 'tags',
         'extension_info': 'extension_info'
     }
 
-    def __init__(self, app_id=None, app_name=None, device_id=None, node_id=None, gateway_id=None, device_name=None, node_type=None, description=None, fw_version=None, sw_version=None, device_sdk_version=None, auth_info=None, product_id=None, product_name=None, status=None, create_time=None, tags=None, extension_info=None):
+    def __init__(self, app_id=None, app_name=None, device_id=None, node_id=None, gateway_id=None, device_name=None, node_type=None, description=None, fw_version=None, sw_version=None, device_sdk_version=None, auth_info=None, product_id=None, product_name=None, status=None, create_time=None, connection_status_update_time=None, active_time=None, tags=None, extension_info=None):
         """ShowDeviceResponse
 
         The model defined in huaweicloud sdk
@@ -98,6 +102,10 @@ class ShowDeviceResponse(SdkResponse):
         :type status: str
         :param create_time: 在物联网平台注册设备的时间。格式：yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;，如20151212T121212Z。
         :type create_time: str
+        :param connection_status_update_time: 设备最近一次连接状态(ONLINE:在线，OFFLINE：离线，ABNORMAL：异常)变化时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS&#39;Z&#39;,如 2015-12-12T12:12:122Z。
+        :type connection_status_update_time: str
+        :param active_time: 设备激活时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS&#39;Z&#39;,如 2015-12-12T12:12:122Z。
+        :type active_time: str
         :param tags: 设备的标签列表。
         :type tags: list[:class:`huaweicloudsdkiotda.v5.TagV5DTO`]
         :param extension_info: 设备扩展信息。用户可以自定义任何想要的扩展信息，如果在创建设备时为子设备指定该字段，将会通过MQTT接口“平台通知网关子设备新增“将该信息通知给网关。
@@ -122,6 +130,8 @@ class ShowDeviceResponse(SdkResponse):
         self._product_name = None
         self._status = None
         self._create_time = None
+        self._connection_status_update_time = None
+        self._active_time = None
         self._tags = None
         self._extension_info = None
         self.discriminator = None
@@ -158,6 +168,10 @@ class ShowDeviceResponse(SdkResponse):
             self.status = status
         if create_time is not None:
             self.create_time = create_time
+        if connection_status_update_time is not None:
+            self.connection_status_update_time = connection_status_update_time
+        if active_time is not None:
+            self.active_time = active_time
         if tags is not None:
             self.tags = tags
         if extension_info is not None:
@@ -510,6 +524,50 @@ class ShowDeviceResponse(SdkResponse):
         :type create_time: str
         """
         self._create_time = create_time
+
+    @property
+    def connection_status_update_time(self):
+        """Gets the connection_status_update_time of this ShowDeviceResponse.
+
+        设备最近一次连接状态(ONLINE:在线，OFFLINE：离线，ABNORMAL：异常)变化时间。格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z',如 2015-12-12T12:12:122Z。
+
+        :return: The connection_status_update_time of this ShowDeviceResponse.
+        :rtype: str
+        """
+        return self._connection_status_update_time
+
+    @connection_status_update_time.setter
+    def connection_status_update_time(self, connection_status_update_time):
+        """Sets the connection_status_update_time of this ShowDeviceResponse.
+
+        设备最近一次连接状态(ONLINE:在线，OFFLINE：离线，ABNORMAL：异常)变化时间。格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z',如 2015-12-12T12:12:122Z。
+
+        :param connection_status_update_time: The connection_status_update_time of this ShowDeviceResponse.
+        :type connection_status_update_time: str
+        """
+        self._connection_status_update_time = connection_status_update_time
+
+    @property
+    def active_time(self):
+        """Gets the active_time of this ShowDeviceResponse.
+
+        设备激活时间。格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z',如 2015-12-12T12:12:122Z。
+
+        :return: The active_time of this ShowDeviceResponse.
+        :rtype: str
+        """
+        return self._active_time
+
+    @active_time.setter
+    def active_time(self, active_time):
+        """Sets the active_time of this ShowDeviceResponse.
+
+        设备激活时间。格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z',如 2015-12-12T12:12:122Z。
+
+        :param active_time: The active_time of this ShowDeviceResponse.
+        :type active_time: str
+        """
+        self._active_time = active_time
 
     @property
     def tags(self):

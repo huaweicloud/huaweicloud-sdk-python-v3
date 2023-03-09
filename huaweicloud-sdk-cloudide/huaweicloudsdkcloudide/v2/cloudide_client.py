@@ -586,6 +586,66 @@ class CloudIDEClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_publisher(self, request):
+        """获取当前用户下的发布商列表
+
+        获取当前用户下的发布商列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPublisher
+        :type request: :class:`huaweicloudsdkcloudide.v2.ListPublisherRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.ListPublisherResponse`
+        """
+        return self.list_publisher_with_http_info(request)
+
+    def list_publisher_with_http_info(self, request):
+        all_params = ['name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/marketplace/publishers/mine',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListPublisherResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_stacks(self, request):
         """按region获取标签所有技术栈
 
@@ -699,6 +759,74 @@ class CloudIDEClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowAccountStatusResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_category_list(self, request):
+        """查询插件分类
+
+        查询插件分类
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowCategoryList
+        :type request: :class:`huaweicloudsdkcloudide.v2.ShowCategoryListRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.ShowCategoryListResponse`
+        """
+        return self.show_category_list_with_http_info(request)
+
+    def show_category_list_with_http_info(self, request):
+        all_params = ['page_num', 'page_size', 'scene_name', 'support_ide', 'type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'page_num' in local_var_params:
+            query_params.append(('page_num', local_var_params['page_num']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'scene_name' in local_var_params:
+            query_params.append(('scene_name', local_var_params['scene_name']))
+        if 'support_ide' in local_var_params:
+            query_params.append(('support_ide', local_var_params['support_ide']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/marketplace/extension/category',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowCategoryListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

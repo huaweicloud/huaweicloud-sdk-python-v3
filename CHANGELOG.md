@@ -1,3 +1,60 @@
+# 3.1.30 2023-03-09
+
+### HuaweiCloud SDK AOS
+
+- _Features_
+  - Support the following interfaces：
+    - `ListTemplates`
+    - `DeleteTemplate`
+    - `ShowTemplateMetadata`
+    - `UpdateTemplateMetadata`
+    - `ShowTemplateVersionContent`
+    - `DeleteTemplateVersion`
+    - `ShowTemplateVersionMetadata`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListExecutionPlans`:
+    - Add the enum values `APPLY_IN_PROGRESS` to the response parameter `status`
+    - The response parameter `stack_name`, `execution_plan_name` changed to required
+  - Remove the enum values `IN_PLACE_UPDATE` from the response parameter `action` from the interface `GetExecutionPlan`
+  - The response parameter `stack_name`, `execution_plan_name` changed to required of the interface `GetExecutionPlanMetadata`
+  - Add the response parameter `resource_attributes` to the interface `ListStackResources`
+  - Changes of the interface `EstimateExecutionPlanPrice`:
+    - Add the response parameter `unsupported_message`
+    - Modify the type `object` -> `double` of the response parameter `sale_price`
+    - Modify the type `object` -> `double` of the response parameter `discount`
+    - Modify the type `object` -> `double` of the response parameter `original_price`
+    - Remove the enum values `WEEK` from the response parameter `period_type`
+
+### HuaweiCloud SDK CloudIDE
+
+- _Features_
+  - Support the interfaces `ShowCategoryList`, `ListPublisher`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `connection_status_update_time`, `active_time` to the interface `UpdateDevice`
+  - Add the response parameters `connection_status_update_time`, `active_time` to the interface `ShowDevice`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `extended_parameters` to the interface `RecognizeAutoClassification`
+
 # 3.1.29 2023-03-07
 
 ### HuaweiCloud SDK VOD

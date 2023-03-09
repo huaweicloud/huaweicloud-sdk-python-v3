@@ -20,51 +20,51 @@ class UpdateStackRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'stack_id': 'str',
         'description': 'str',
+        'stack_id': 'str',
         'enable_deletion_protection': 'bool',
         'enable_auto_rollback': 'bool',
         'agencies': 'list[Agency]'
     }
 
     attribute_map = {
-        'stack_id': 'stack_id',
         'description': 'description',
+        'stack_id': 'stack_id',
         'enable_deletion_protection': 'enable_deletion_protection',
         'enable_auto_rollback': 'enable_auto_rollback',
         'agencies': 'agencies'
     }
 
-    def __init__(self, stack_id=None, description=None, enable_deletion_protection=None, enable_auto_rollback=None, agencies=None):
+    def __init__(self, description=None, stack_id=None, enable_deletion_protection=None, enable_auto_rollback=None, agencies=None):
         """UpdateStackRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param stack_id: 资源栈Id
-        :type stack_id: str
-        :param description: 资源栈的描述
+        :param description: 资源栈的描述。可用于客户识别自己的资源栈。
         :type description: str
-        :param enable_deletion_protection: 是否开启删除保护
+        :param stack_id: 资源栈（stack）的唯一Id。  此Id由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给与的stack_id和当前资源栈的ID不一致，则返回400 
+        :type stack_id: str
+        :param enable_deletion_protection: 删除保护的标识位，如果不传默认为false，即默认不开启资源栈删除保护（删除保护开启后资源栈不允许被删除）  *在UpdateStack API中，若该参数未在RequestBody中给予，则不会对资源栈的删除保护属性进行更新* 
         :type enable_deletion_protection: bool
-        :param enable_auto_rollback: 是否开启自动回滚
+        :param enable_auto_rollback: 自动回滚的标识位，如果不传默认为false，即默认不开启资源栈自动回滚（自动回滚开启后，如果部署失败，则会自动回滚，并返回上一个稳定状态）  *在UpdateStack API中，若该参数未在RequestBody中给予，则不会对资源栈的自动回滚属性进行更新* 
         :type enable_auto_rollback: bool
-        :param agencies: 委托列表
+        :param agencies: 委托授权的信息。
         :type agencies: list[:class:`huaweicloudsdkaos.v1.Agency`]
         """
         
         
 
-        self._stack_id = None
         self._description = None
+        self._stack_id = None
         self._enable_deletion_protection = None
         self._enable_auto_rollback = None
         self._agencies = None
         self.discriminator = None
 
-        if stack_id is not None:
-            self.stack_id = stack_id
         if description is not None:
             self.description = description
+        if stack_id is not None:
+            self.stack_id = stack_id
         if enable_deletion_protection is not None:
             self.enable_deletion_protection = enable_deletion_protection
         if enable_auto_rollback is not None:
@@ -73,32 +73,10 @@ class UpdateStackRequestBody:
             self.agencies = agencies
 
     @property
-    def stack_id(self):
-        """Gets the stack_id of this UpdateStackRequestBody.
-
-        资源栈Id
-
-        :return: The stack_id of this UpdateStackRequestBody.
-        :rtype: str
-        """
-        return self._stack_id
-
-    @stack_id.setter
-    def stack_id(self, stack_id):
-        """Sets the stack_id of this UpdateStackRequestBody.
-
-        资源栈Id
-
-        :param stack_id: The stack_id of this UpdateStackRequestBody.
-        :type stack_id: str
-        """
-        self._stack_id = stack_id
-
-    @property
     def description(self):
         """Gets the description of this UpdateStackRequestBody.
 
-        资源栈的描述
+        资源栈的描述。可用于客户识别自己的资源栈。
 
         :return: The description of this UpdateStackRequestBody.
         :rtype: str
@@ -109,7 +87,7 @@ class UpdateStackRequestBody:
     def description(self, description):
         """Sets the description of this UpdateStackRequestBody.
 
-        资源栈的描述
+        资源栈的描述。可用于客户识别自己的资源栈。
 
         :param description: The description of this UpdateStackRequestBody.
         :type description: str
@@ -117,10 +95,32 @@ class UpdateStackRequestBody:
         self._description = description
 
     @property
+    def stack_id(self):
+        """Gets the stack_id of this UpdateStackRequestBody.
+
+        资源栈（stack）的唯一Id。  此Id由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给与的stack_id和当前资源栈的ID不一致，则返回400 
+
+        :return: The stack_id of this UpdateStackRequestBody.
+        :rtype: str
+        """
+        return self._stack_id
+
+    @stack_id.setter
+    def stack_id(self, stack_id):
+        """Sets the stack_id of this UpdateStackRequestBody.
+
+        资源栈（stack）的唯一Id。  此Id由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给与的stack_id和当前资源栈的ID不一致，则返回400 
+
+        :param stack_id: The stack_id of this UpdateStackRequestBody.
+        :type stack_id: str
+        """
+        self._stack_id = stack_id
+
+    @property
     def enable_deletion_protection(self):
         """Gets the enable_deletion_protection of this UpdateStackRequestBody.
 
-        是否开启删除保护
+        删除保护的标识位，如果不传默认为false，即默认不开启资源栈删除保护（删除保护开启后资源栈不允许被删除）  *在UpdateStack API中，若该参数未在RequestBody中给予，则不会对资源栈的删除保护属性进行更新* 
 
         :return: The enable_deletion_protection of this UpdateStackRequestBody.
         :rtype: bool
@@ -131,7 +131,7 @@ class UpdateStackRequestBody:
     def enable_deletion_protection(self, enable_deletion_protection):
         """Sets the enable_deletion_protection of this UpdateStackRequestBody.
 
-        是否开启删除保护
+        删除保护的标识位，如果不传默认为false，即默认不开启资源栈删除保护（删除保护开启后资源栈不允许被删除）  *在UpdateStack API中，若该参数未在RequestBody中给予，则不会对资源栈的删除保护属性进行更新* 
 
         :param enable_deletion_protection: The enable_deletion_protection of this UpdateStackRequestBody.
         :type enable_deletion_protection: bool
@@ -142,7 +142,7 @@ class UpdateStackRequestBody:
     def enable_auto_rollback(self):
         """Gets the enable_auto_rollback of this UpdateStackRequestBody.
 
-        是否开启自动回滚
+        自动回滚的标识位，如果不传默认为false，即默认不开启资源栈自动回滚（自动回滚开启后，如果部署失败，则会自动回滚，并返回上一个稳定状态）  *在UpdateStack API中，若该参数未在RequestBody中给予，则不会对资源栈的自动回滚属性进行更新* 
 
         :return: The enable_auto_rollback of this UpdateStackRequestBody.
         :rtype: bool
@@ -153,7 +153,7 @@ class UpdateStackRequestBody:
     def enable_auto_rollback(self, enable_auto_rollback):
         """Sets the enable_auto_rollback of this UpdateStackRequestBody.
 
-        是否开启自动回滚
+        自动回滚的标识位，如果不传默认为false，即默认不开启资源栈自动回滚（自动回滚开启后，如果部署失败，则会自动回滚，并返回上一个稳定状态）  *在UpdateStack API中，若该参数未在RequestBody中给予，则不会对资源栈的自动回滚属性进行更新* 
 
         :param enable_auto_rollback: The enable_auto_rollback of this UpdateStackRequestBody.
         :type enable_auto_rollback: bool
@@ -164,7 +164,7 @@ class UpdateStackRequestBody:
     def agencies(self):
         """Gets the agencies of this UpdateStackRequestBody.
 
-        委托列表
+        委托授权的信息。
 
         :return: The agencies of this UpdateStackRequestBody.
         :rtype: list[:class:`huaweicloudsdkaos.v1.Agency`]
@@ -175,7 +175,7 @@ class UpdateStackRequestBody:
     def agencies(self, agencies):
         """Sets the agencies of this UpdateStackRequestBody.
 
-        委托列表
+        委托授权的信息。
 
         :param agencies: The agencies of this UpdateStackRequestBody.
         :type agencies: list[:class:`huaweicloudsdkaos.v1.Agency`]
