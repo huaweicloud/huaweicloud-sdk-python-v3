@@ -52,7 +52,7 @@ class ListBareMetalServersRequest:
         :type flavor: str
         :param name: 裸金属服务器名称
         :type name: str
-        :param status: 裸金属服务器状态,只有管理员可以使用DELETED状态过滤查询已经删除的裸金属服务器。取值范围：ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、REBOOT、REBUILD、SHUTOFF
+        :param status: 裸金属服务器状态,只有管理员可以使用DELETED状态过滤查询已经删除的裸金属服务器。取值范围：ACTIVE、BUILD、ERROR、HARD_REBOOT、REBOOT、REBUILD、SHUTOFF
         :type status: str
         :param limit: 每页返回裸金属服务器的条数，默认值是25，最大值为1000。limit为每页返回裸金属服务器详情的条数
         :type limit: int
@@ -62,7 +62,7 @@ class ListBareMetalServersRequest:
         :type tags: str
         :param reservation_id: 批量创建裸金属服务器时，指定返回的ID，用于查询本次批量创建的裸金属服务器
         :type reservation_id: str
-        :param detail: 查询裸金属服务器结果的详细级别，级别越高，查询到的裸金属服务器信息越多，默认为4。可使用的级别为 1，2，3，4，5
+        :param detail: 查询裸金属服务器结果的详细级别，级别越高，查询到的裸金属服务器信息越多，默认为4。可使用的级别为 1，2，3，4
         :type detail: str
         :param enterprise_project_id: 查询绑定某个企业项目的裸金属服务器
         :type enterprise_project_id: str
@@ -148,7 +148,7 @@ class ListBareMetalServersRequest:
     def status(self):
         """Gets the status of this ListBareMetalServersRequest.
 
-        裸金属服务器状态,只有管理员可以使用DELETED状态过滤查询已经删除的裸金属服务器。取值范围：ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、REBOOT、REBUILD、SHUTOFF
+        裸金属服务器状态,只有管理员可以使用DELETED状态过滤查询已经删除的裸金属服务器。取值范围：ACTIVE、BUILD、ERROR、HARD_REBOOT、REBOOT、REBUILD、SHUTOFF
 
         :return: The status of this ListBareMetalServersRequest.
         :rtype: str
@@ -159,7 +159,7 @@ class ListBareMetalServersRequest:
     def status(self, status):
         """Sets the status of this ListBareMetalServersRequest.
 
-        裸金属服务器状态,只有管理员可以使用DELETED状态过滤查询已经删除的裸金属服务器。取值范围：ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、REBOOT、REBUILD、SHUTOFF
+        裸金属服务器状态,只有管理员可以使用DELETED状态过滤查询已经删除的裸金属服务器。取值范围：ACTIVE、BUILD、ERROR、HARD_REBOOT、REBOOT、REBUILD、SHUTOFF
 
         :param status: The status of this ListBareMetalServersRequest.
         :type status: str
@@ -258,7 +258,7 @@ class ListBareMetalServersRequest:
     def detail(self):
         """Gets the detail of this ListBareMetalServersRequest.
 
-        查询裸金属服务器结果的详细级别，级别越高，查询到的裸金属服务器信息越多，默认为4。可使用的级别为 1，2，3，4，5
+        查询裸金属服务器结果的详细级别，级别越高，查询到的裸金属服务器信息越多，默认为4。可使用的级别为 1，2，3，4
 
         :return: The detail of this ListBareMetalServersRequest.
         :rtype: str
@@ -269,7 +269,7 @@ class ListBareMetalServersRequest:
     def detail(self, detail):
         """Sets the detail of this ListBareMetalServersRequest.
 
-        查询裸金属服务器结果的详细级别，级别越高，查询到的裸金属服务器信息越多，默认为4。可使用的级别为 1，2，3，4，5
+        查询裸金属服务器结果的详细级别，级别越高，查询到的裸金属服务器信息越多，默认为4。可使用的级别为 1，2，3，4
 
         :param detail: The detail of this ListBareMetalServersRequest.
         :type detail: str

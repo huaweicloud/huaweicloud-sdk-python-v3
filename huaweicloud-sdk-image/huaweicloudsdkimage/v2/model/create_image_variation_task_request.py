@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class RunImageWisedesignColorfilterRequest:
+class CreateImageVariationTaskRequest:
 
     """
     Attributes:
@@ -20,7 +20,7 @@ class RunImageWisedesignColorfilterRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'ImageWisedesignColorfilterReq'
+        'body': 'CreateImageVariationTaskRequestBody'
     }
 
     attribute_map = {
@@ -28,12 +28,12 @@ class RunImageWisedesignColorfilterRequest:
     }
 
     def __init__(self, body=None):
-        """RunImageWisedesignColorfilterRequest
+        """CreateImageVariationTaskRequest
 
         The model defined in huaweicloud sdk
 
-        :param body: Body of the RunImageWisedesignColorfilterRequest
-        :type body: :class:`huaweicloudsdkimage.v2.ImageWisedesignColorfilterReq`
+        :param body: Body of the CreateImageVariationTaskRequest
+        :type body: :class:`huaweicloudsdkimage.v2.CreateImageVariationTaskRequestBody`
         """
         
         
@@ -46,19 +46,19 @@ class RunImageWisedesignColorfilterRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunImageWisedesignColorfilterRequest.
+        """Gets the body of this CreateImageVariationTaskRequest.
 
-        :return: The body of this RunImageWisedesignColorfilterRequest.
-        :rtype: :class:`huaweicloudsdkimage.v2.ImageWisedesignColorfilterReq`
+        :return: The body of this CreateImageVariationTaskRequest.
+        :rtype: :class:`huaweicloudsdkimage.v2.CreateImageVariationTaskRequestBody`
         """
         return self._body
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunImageWisedesignColorfilterRequest.
+        """Sets the body of this CreateImageVariationTaskRequest.
 
-        :param body: The body of this RunImageWisedesignColorfilterRequest.
-        :type body: :class:`huaweicloudsdkimage.v2.ImageWisedesignColorfilterReq`
+        :param body: The body of this CreateImageVariationTaskRequest.
+        :type body: :class:`huaweicloudsdkimage.v2.CreateImageVariationTaskRequestBody`
         """
         self._body = body
 
@@ -104,7 +104,7 @@ class RunImageWisedesignColorfilterRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunImageWisedesignColorfilterRequest):
+        if not isinstance(other, CreateImageVariationTaskRequest):
             return False
 
         return self.__dict__ == other.__dict__

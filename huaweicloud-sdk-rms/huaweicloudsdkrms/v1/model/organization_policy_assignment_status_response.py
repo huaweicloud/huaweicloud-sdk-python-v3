@@ -24,7 +24,7 @@ class OrganizationPolicyAssignmentStatusResponse:
         'organization_policy_assignment_name': 'str',
         'organization_policy_assignment_status': 'str',
         'error_code': 'str',
-        'error_message': 'object',
+        'error_message': 'str',
         'created_at': 'str',
         'updated_at': 'str'
     }
@@ -53,7 +53,7 @@ class OrganizationPolicyAssignmentStatusResponse:
         :param error_code: 当创建或更新组织合规规则失败时错误码。
         :type error_code: str
         :param error_message: 当创建或更新组织合规规则失败时错误信息。
-        :type error_message: object
+        :type error_message: str
         :param created_at: 创建时间。
         :type created_at: str
         :param updated_at: 更新时间。
@@ -181,7 +181,7 @@ class OrganizationPolicyAssignmentStatusResponse:
         当创建或更新组织合规规则失败时错误信息。
 
         :return: The error_message of this OrganizationPolicyAssignmentStatusResponse.
-        :rtype: object
+        :rtype: str
         """
         return self._error_message
 
@@ -192,7 +192,7 @@ class OrganizationPolicyAssignmentStatusResponse:
         当创建或更新组织合规规则失败时错误信息。
 
         :param error_message: The error_message of this OrganizationPolicyAssignmentStatusResponse.
-        :type error_message: object
+        :type error_message: str
         """
         self._error_message = error_message
 

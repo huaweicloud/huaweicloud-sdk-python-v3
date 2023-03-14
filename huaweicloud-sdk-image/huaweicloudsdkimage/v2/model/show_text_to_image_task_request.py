@@ -4,11 +4,11 @@ import re
 import six
 
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
+
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class RunImageWisedesignColorfilterResponse(SdkResponse):
+class ShowTextToImageTaskRequest:
 
     """
     Attributes:
@@ -20,47 +20,50 @@ class RunImageWisedesignColorfilterResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'ImageWisedesignColorfilterResponseResult'
+        'task_id': 'str'
     }
 
     attribute_map = {
-        'result': 'result'
+        'task_id': 'task_id'
     }
 
-    def __init__(self, result=None):
-        """RunImageWisedesignColorfilterResponse
+    def __init__(self, task_id=None):
+        """ShowTextToImageTaskRequest
 
         The model defined in huaweicloud sdk
 
-        :param result: 
-        :type result: :class:`huaweicloudsdkimage.v2.ImageWisedesignColorfilterResponseResult`
+        :param task_id: 任务ID
+        :type task_id: str
         """
         
-        super(RunImageWisedesignColorfilterResponse, self).__init__()
+        
 
-        self._result = None
+        self._task_id = None
         self.discriminator = None
 
-        if result is not None:
-            self.result = result
+        self.task_id = task_id
 
     @property
-    def result(self):
-        """Gets the result of this RunImageWisedesignColorfilterResponse.
+    def task_id(self):
+        """Gets the task_id of this ShowTextToImageTaskRequest.
 
-        :return: The result of this RunImageWisedesignColorfilterResponse.
-        :rtype: :class:`huaweicloudsdkimage.v2.ImageWisedesignColorfilterResponseResult`
+        任务ID
+
+        :return: The task_id of this ShowTextToImageTaskRequest.
+        :rtype: str
         """
-        return self._result
+        return self._task_id
 
-    @result.setter
-    def result(self, result):
-        """Sets the result of this RunImageWisedesignColorfilterResponse.
+    @task_id.setter
+    def task_id(self, task_id):
+        """Sets the task_id of this ShowTextToImageTaskRequest.
 
-        :param result: The result of this RunImageWisedesignColorfilterResponse.
-        :type result: :class:`huaweicloudsdkimage.v2.ImageWisedesignColorfilterResponseResult`
+        任务ID
+
+        :param task_id: The task_id of this ShowTextToImageTaskRequest.
+        :type task_id: str
         """
-        self._result = result
+        self._task_id = task_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -104,7 +107,7 @@ class RunImageWisedesignColorfilterResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunImageWisedesignColorfilterResponse):
+        if not isinstance(other, ShowTextToImageTaskRequest):
             return False
 
         return self.__dict__ == other.__dict__

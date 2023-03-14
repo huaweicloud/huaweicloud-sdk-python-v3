@@ -44,7 +44,7 @@ class ListResizeFlavorsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_uuid: 进行规格切换的云服务器ID，UUID格式。
+        :param instance_uuid: 进行规格切换的云服务器ID，UUID格式。(instance_uuid,source_flavor_id and source_flavor_name 不能都为空)
         :type instance_uuid: str
         :param limit: 单页面可显示的flavor条数最大值，默认是1000。
         :type limit: int
@@ -54,9 +54,9 @@ class ListResizeFlavorsRequest:
         :type sort_dir: str
         :param sort_key: 排序字段。  key的取值范围：  - flavorid：表示规格ID。 - sort_key的默认值为“flavorid”。 - name：表示规格名称。 - memory_mb：表示内存大小。 - vcpus：表示CPU大小。 - root_gb：表示系统盘大小。
         :type sort_key: str
-        :param source_flavor_id: 进行规格切换的云服务器源规格ID。
+        :param source_flavor_id: 进行规格切换的云服务器源规格ID。(instance_uuid,source_flavor_id and source_flavor_name 不能都为空)
         :type source_flavor_id: str
-        :param source_flavor_name: 进行规格切换的云服务器源规格名称。
+        :param source_flavor_name: 进行规格切换的云服务器源规格名称。(instance_uuid,source_flavor_id and source_flavor_name 不能都为空)
         :type source_flavor_name: str
         """
         
@@ -90,7 +90,7 @@ class ListResizeFlavorsRequest:
     def instance_uuid(self):
         """Gets the instance_uuid of this ListResizeFlavorsRequest.
 
-        进行规格切换的云服务器ID，UUID格式。
+        进行规格切换的云服务器ID，UUID格式。(instance_uuid,source_flavor_id and source_flavor_name 不能都为空)
 
         :return: The instance_uuid of this ListResizeFlavorsRequest.
         :rtype: str
@@ -101,7 +101,7 @@ class ListResizeFlavorsRequest:
     def instance_uuid(self, instance_uuid):
         """Sets the instance_uuid of this ListResizeFlavorsRequest.
 
-        进行规格切换的云服务器ID，UUID格式。
+        进行规格切换的云服务器ID，UUID格式。(instance_uuid,source_flavor_id and source_flavor_name 不能都为空)
 
         :param instance_uuid: The instance_uuid of this ListResizeFlavorsRequest.
         :type instance_uuid: str
@@ -200,7 +200,7 @@ class ListResizeFlavorsRequest:
     def source_flavor_id(self):
         """Gets the source_flavor_id of this ListResizeFlavorsRequest.
 
-        进行规格切换的云服务器源规格ID。
+        进行规格切换的云服务器源规格ID。(instance_uuid,source_flavor_id and source_flavor_name 不能都为空)
 
         :return: The source_flavor_id of this ListResizeFlavorsRequest.
         :rtype: str
@@ -211,7 +211,7 @@ class ListResizeFlavorsRequest:
     def source_flavor_id(self, source_flavor_id):
         """Sets the source_flavor_id of this ListResizeFlavorsRequest.
 
-        进行规格切换的云服务器源规格ID。
+        进行规格切换的云服务器源规格ID。(instance_uuid,source_flavor_id and source_flavor_name 不能都为空)
 
         :param source_flavor_id: The source_flavor_id of this ListResizeFlavorsRequest.
         :type source_flavor_id: str
@@ -222,7 +222,7 @@ class ListResizeFlavorsRequest:
     def source_flavor_name(self):
         """Gets the source_flavor_name of this ListResizeFlavorsRequest.
 
-        进行规格切换的云服务器源规格名称。
+        进行规格切换的云服务器源规格名称。(instance_uuid,source_flavor_id and source_flavor_name 不能都为空)
 
         :return: The source_flavor_name of this ListResizeFlavorsRequest.
         :rtype: str
@@ -233,7 +233,7 @@ class ListResizeFlavorsRequest:
     def source_flavor_name(self, source_flavor_name):
         """Sets the source_flavor_name of this ListResizeFlavorsRequest.
 
-        进行规格切换的云服务器源规格名称。
+        进行规格切换的云服务器源规格名称。(instance_uuid,source_flavor_id and source_flavor_name 不能都为空)
 
         :param source_flavor_name: The source_flavor_name of this ListResizeFlavorsRequest.
         :type source_flavor_name: str

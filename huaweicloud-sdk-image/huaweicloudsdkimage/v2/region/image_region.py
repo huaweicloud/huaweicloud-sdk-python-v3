@@ -10,15 +10,20 @@ class ImageRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("IMAGE")
 
     CN_NORTH_4 = Region("cn-north-4",
-                        "https://image.cn-north-4.myhuaweicloud.com")
+                        "https://image.cn-north-4.myhuaweicloud.com",
+                        "https://image.cn-north-4.myhuaweicloud.cn")
     CN_NORTH_1 = Region("cn-north-1",
-                        "https://image.cn-north-1.myhuaweicloud.com")
+                        "https://image.cn-north-1.myhuaweicloud.com",
+                        "https://image.cn-north-1.myhuaweicloud.cn")
     AP_SOUTHEAST_1 = Region("ap-southeast-1",
-                        "https://image.ap-southeast-1.myhuaweicloud.com")
+                        "https://image.ap-southeast-1.myhuaweicloud.com",
+                        "https://image.ap-southeast-1.myhuaweicloud.cn")
     AP_SOUTHEAST_3 = Region("ap-southeast-3",
-                        "https://image.ap-southeast-3.myhuaweicloud.com")
+                        "https://image.ap-southeast-3.myhuaweicloud.com",
+                        "https://image.ap-southeast-3.myhuaweicloud.cn")
     CN_EAST_3 = Region("cn-east-3",
-                        "https://image.cn-east-3.myhuaweicloud.com")
+                        "https://image.cn-east-3.myhuaweicloud.com",
+                        "https://image.cn-east-3.myhuaweicloud.cn")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,

@@ -4,11 +4,11 @@ import re
 import six
 
 
-
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ImageWisedesignColorfilterResponseResult:
+class CreateTextToImageTaskResponse(SdkResponse):
 
     """
     Attributes:
@@ -20,51 +20,51 @@ class ImageWisedesignColorfilterResponseResult:
     sensitive_list = []
 
     openapi_types = {
-        'result_base64': 'str'
+        'task_id': 'str'
     }
 
     attribute_map = {
-        'result_base64': 'result_base64'
+        'task_id': 'task_id'
     }
 
-    def __init__(self, result_base64=None):
-        """ImageWisedesignColorfilterResponseResult
+    def __init__(self, task_id=None):
+        """CreateTextToImageTaskResponse
 
         The model defined in huaweicloud sdk
 
-        :param result_base64: 图片加滤镜后图像的64位编码
-        :type result_base64: str
+        :param task_id: 任务唯一标识
+        :type task_id: str
         """
         
-        
+        super(CreateTextToImageTaskResponse, self).__init__()
 
-        self._result_base64 = None
+        self._task_id = None
         self.discriminator = None
 
-        if result_base64 is not None:
-            self.result_base64 = result_base64
+        if task_id is not None:
+            self.task_id = task_id
 
     @property
-    def result_base64(self):
-        """Gets the result_base64 of this ImageWisedesignColorfilterResponseResult.
+    def task_id(self):
+        """Gets the task_id of this CreateTextToImageTaskResponse.
 
-        图片加滤镜后图像的64位编码
+        任务唯一标识
 
-        :return: The result_base64 of this ImageWisedesignColorfilterResponseResult.
+        :return: The task_id of this CreateTextToImageTaskResponse.
         :rtype: str
         """
-        return self._result_base64
+        return self._task_id
 
-    @result_base64.setter
-    def result_base64(self, result_base64):
-        """Sets the result_base64 of this ImageWisedesignColorfilterResponseResult.
+    @task_id.setter
+    def task_id(self, task_id):
+        """Sets the task_id of this CreateTextToImageTaskResponse.
 
-        图片加滤镜后图像的64位编码
+        任务唯一标识
 
-        :param result_base64: The result_base64 of this ImageWisedesignColorfilterResponseResult.
-        :type result_base64: str
+        :param task_id: The task_id of this CreateTextToImageTaskResponse.
+        :type task_id: str
         """
-        self._result_base64 = result_base64
+        self._task_id = task_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -108,7 +108,7 @@ class ImageWisedesignColorfilterResponseResult:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ImageWisedesignColorfilterResponseResult):
+        if not isinstance(other, CreateTextToImageTaskResponse):
             return False
 
         return self.__dict__ == other.__dict__

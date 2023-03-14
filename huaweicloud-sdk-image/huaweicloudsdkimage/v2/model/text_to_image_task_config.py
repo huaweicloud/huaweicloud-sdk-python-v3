@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class RunImageWisedesignCombineRequest:
+class TextToImageTaskConfig:
 
     """
     Attributes:
@@ -20,47 +20,46 @@ class RunImageWisedesignCombineRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'ImageWisedesignCombineReq'
+        'common': 'TextToImageTaskConfigCommon'
     }
 
     attribute_map = {
-        'body': 'body'
+        'common': 'common'
     }
 
-    def __init__(self, body=None):
-        """RunImageWisedesignCombineRequest
+    def __init__(self, common=None):
+        """TextToImageTaskConfig
 
         The model defined in huaweicloud sdk
 
-        :param body: Body of the RunImageWisedesignCombineRequest
-        :type body: :class:`huaweicloudsdkimage.v2.ImageWisedesignCombineReq`
+        :param common: 
+        :type common: :class:`huaweicloudsdkimage.v2.TextToImageTaskConfigCommon`
         """
         
         
 
-        self._body = None
+        self._common = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        self.common = common
 
     @property
-    def body(self):
-        """Gets the body of this RunImageWisedesignCombineRequest.
+    def common(self):
+        """Gets the common of this TextToImageTaskConfig.
 
-        :return: The body of this RunImageWisedesignCombineRequest.
-        :rtype: :class:`huaweicloudsdkimage.v2.ImageWisedesignCombineReq`
+        :return: The common of this TextToImageTaskConfig.
+        :rtype: :class:`huaweicloudsdkimage.v2.TextToImageTaskConfigCommon`
         """
-        return self._body
+        return self._common
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this RunImageWisedesignCombineRequest.
+    @common.setter
+    def common(self, common):
+        """Sets the common of this TextToImageTaskConfig.
 
-        :param body: The body of this RunImageWisedesignCombineRequest.
-        :type body: :class:`huaweicloudsdkimage.v2.ImageWisedesignCombineReq`
+        :param common: The common of this TextToImageTaskConfig.
+        :type common: :class:`huaweicloudsdkimage.v2.TextToImageTaskConfigCommon`
         """
-        self._body = body
+        self._common = common
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -104,7 +103,7 @@ class RunImageWisedesignCombineRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunImageWisedesignCombineRequest):
+        if not isinstance(other, TextToImageTaskConfig):
             return False
 
         return self.__dict__ == other.__dict__

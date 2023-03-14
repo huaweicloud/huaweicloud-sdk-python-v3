@@ -1,3 +1,14 @@
+# 3.1.31 2023-03-14
+
+### HuaweiCloud SDK Image
+
+- _新增特性_
+  - 支持接口`CreateTextToImageTask`、`ShowTextToImageTask`、`CreateImageVariationTask`、`ShowImageVariationTask`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`RunImageWisedesignColorfilter`、`RunImageWisedesignCombine`
+
 # 3.1.30 2023-03-09
 
 ### HuaweiCloud SDK AOS
