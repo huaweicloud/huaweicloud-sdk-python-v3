@@ -38,13 +38,13 @@ class UpgradeCbhInstanceResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: 操作结果
+        :param code: 操作结果。
         :type code: int
-        :param description: 描述
+        :param description: 描述。
         :type description: str
-        :param task_id: 任务 id
+        :param task_id: 任务 id。
         :type task_id: str
-        :param order_id: 订单 id
+        :param order_id: 订单 id。
         :type order_id: str
         """
         
@@ -69,7 +69,7 @@ class UpgradeCbhInstanceResponse(SdkResponse):
     def code(self):
         """Gets the code of this UpgradeCbhInstanceResponse.
 
-        操作结果
+        操作结果。
 
         :return: The code of this UpgradeCbhInstanceResponse.
         :rtype: int
@@ -80,7 +80,7 @@ class UpgradeCbhInstanceResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this UpgradeCbhInstanceResponse.
 
-        操作结果
+        操作结果。
 
         :param code: The code of this UpgradeCbhInstanceResponse.
         :type code: int
@@ -91,7 +91,7 @@ class UpgradeCbhInstanceResponse(SdkResponse):
     def description(self):
         """Gets the description of this UpgradeCbhInstanceResponse.
 
-        描述
+        描述。
 
         :return: The description of this UpgradeCbhInstanceResponse.
         :rtype: str
@@ -102,7 +102,7 @@ class UpgradeCbhInstanceResponse(SdkResponse):
     def description(self, description):
         """Sets the description of this UpgradeCbhInstanceResponse.
 
-        描述
+        描述。
 
         :param description: The description of this UpgradeCbhInstanceResponse.
         :type description: str
@@ -113,7 +113,7 @@ class UpgradeCbhInstanceResponse(SdkResponse):
     def task_id(self):
         """Gets the task_id of this UpgradeCbhInstanceResponse.
 
-        任务 id
+        任务 id。
 
         :return: The task_id of this UpgradeCbhInstanceResponse.
         :rtype: str
@@ -124,7 +124,7 @@ class UpgradeCbhInstanceResponse(SdkResponse):
     def task_id(self, task_id):
         """Sets the task_id of this UpgradeCbhInstanceResponse.
 
-        任务 id
+        任务 id。
 
         :param task_id: The task_id of this UpgradeCbhInstanceResponse.
         :type task_id: str
@@ -135,7 +135,7 @@ class UpgradeCbhInstanceResponse(SdkResponse):
     def order_id(self):
         """Gets the order_id of this UpgradeCbhInstanceResponse.
 
-        订单 id
+        订单 id。
 
         :return: The order_id of this UpgradeCbhInstanceResponse.
         :rtype: str
@@ -146,7 +146,7 @@ class UpgradeCbhInstanceResponse(SdkResponse):
     def order_id(self, order_id):
         """Sets the order_id of this UpgradeCbhInstanceResponse.
 
-        订单 id
+        订单 id。
 
         :param order_id: The order_id of this UpgradeCbhInstanceResponse.
         :type order_id: str

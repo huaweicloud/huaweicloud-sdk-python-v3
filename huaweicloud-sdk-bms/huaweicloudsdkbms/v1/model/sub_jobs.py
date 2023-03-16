@@ -24,8 +24,8 @@ class SubJobs:
         'entities': 'Entitie',
         'job_id': 'str',
         'job_type': 'str',
-        'begin_time': 'datetime',
-        'end_time': 'datetime',
+        'begin_time': 'str',
+        'end_time': 'str',
         'error_code': 'str',
         'fail_reason': 'str',
         'message': 'str',
@@ -59,9 +59,9 @@ class SubJobs:
         :param job_type: Job的类型，包含以下类型：baremetalSingleCreate：创建单个裸金属服务器；baremetalSingleOperate：修改单个裸金属服务器电源状态；baremetalAttachSingleVolume：挂载单个共享磁盘
         :type job_type: str
         :param begin_time: 开始时间。时间戳格式为ISO 8601，例如：2019-04-25T20:04:47.591Z
-        :type begin_time: datetime
+        :type begin_time: str
         :param end_time: 结束时间。时间戳格式为ISO 8601，例如：2019-04-26T20:04:47.591Z
-        :type end_time: datetime
+        :type end_time: str
         :param error_code: Job执行失败时的错误码
         :type error_code: str
         :param fail_reason: Job执行失败时的错误原因
@@ -198,7 +198,7 @@ class SubJobs:
         开始时间。时间戳格式为ISO 8601，例如：2019-04-25T20:04:47.591Z
 
         :return: The begin_time of this SubJobs.
-        :rtype: datetime
+        :rtype: str
         """
         return self._begin_time
 
@@ -209,7 +209,7 @@ class SubJobs:
         开始时间。时间戳格式为ISO 8601，例如：2019-04-25T20:04:47.591Z
 
         :param begin_time: The begin_time of this SubJobs.
-        :type begin_time: datetime
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -220,7 +220,7 @@ class SubJobs:
         结束时间。时间戳格式为ISO 8601，例如：2019-04-26T20:04:47.591Z
 
         :return: The end_time of this SubJobs.
-        :rtype: datetime
+        :rtype: str
         """
         return self._end_time
 
@@ -231,7 +231,7 @@ class SubJobs:
         结束时间。时间戳格式为ISO 8601，例如：2019-04-26T20:04:47.591Z
 
         :param end_time: The end_time of this SubJobs.
-        :type end_time: datetime
+        :type end_time: str
         """
         self._end_time = end_time
 

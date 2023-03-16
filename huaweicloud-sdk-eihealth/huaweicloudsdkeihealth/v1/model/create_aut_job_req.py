@@ -106,7 +106,7 @@ class CreateAutJobReq:
         :type output_dir_type: str
         :param node_labels: 节点标签 取值范围[0,1]，单个标签最大长度63字符
         :type node_labels: list[str]
-        :param io_acc_id: 自动作业使用的SFS-Turbo实例id，不填表示不使用
+        :param io_acc_id: 自动作业使用的IO加速实例id，不填表示不使用
         :type io_acc_id: str
         :param tasks: 自动作业依赖的流程信息
         :type tasks: list[:class:`huaweicloudsdkeihealth.v1.JobTaskDto`]
@@ -566,7 +566,7 @@ class CreateAutJobReq:
     def io_acc_id(self):
         """Gets the io_acc_id of this CreateAutJobReq.
 
-        自动作业使用的SFS-Turbo实例id，不填表示不使用
+        自动作业使用的IO加速实例id，不填表示不使用
 
         :return: The io_acc_id of this CreateAutJobReq.
         :rtype: str
@@ -577,7 +577,7 @@ class CreateAutJobReq:
     def io_acc_id(self, io_acc_id):
         """Sets the io_acc_id of this CreateAutJobReq.
 
-        自动作业使用的SFS-Turbo实例id，不填表示不使用
+        自动作业使用的IO加速实例id，不填表示不使用
 
         :param io_acc_id: The io_acc_id of this CreateAutJobReq.
         :type io_acc_id: str

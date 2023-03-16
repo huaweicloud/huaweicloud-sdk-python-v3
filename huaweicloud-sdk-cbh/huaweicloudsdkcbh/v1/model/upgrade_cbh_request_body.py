@@ -32,7 +32,7 @@ class UpgradeCbhRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例的server id
+        :param instance_id: 云堡垒机实例ID，使用UUID格式。
         :type instance_id: str
         """
         
@@ -47,7 +47,7 @@ class UpgradeCbhRequestBody:
     def instance_id(self):
         """Gets the instance_id of this UpgradeCbhRequestBody.
 
-        实例的server id
+        云堡垒机实例ID，使用UUID格式。
 
         :return: The instance_id of this UpgradeCbhRequestBody.
         :rtype: str
@@ -58,7 +58,7 @@ class UpgradeCbhRequestBody:
     def instance_id(self, instance_id):
         """Sets the instance_id of this UpgradeCbhRequestBody.
 
-        实例的server id
+        云堡垒机实例ID，使用UUID格式。
 
         :param instance_id: The instance_id of this UpgradeCbhRequestBody.
         :type instance_id: str

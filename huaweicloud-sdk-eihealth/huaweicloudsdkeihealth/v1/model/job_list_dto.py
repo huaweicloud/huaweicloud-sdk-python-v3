@@ -92,7 +92,7 @@ class JobListDto:
         :type user_name: str
         :param tool_info: 
         :type tool_info: :class:`huaweicloudsdkeihealth.v1.ToolInfoDto`
-        :param io_acc_id: IO加速实例ID
+        :param io_acc_id: 作业使用的IO加速实例id，不填表示不使用；
         :type io_acc_id: str
         :param io_acc_expected_usage: 作业使用的SFS-Turbo实例预期占用存储量，单位G，用于投递作业时评估当前加速实例余量是否充足
         :type io_acc_expected_usage: int
@@ -464,7 +464,7 @@ class JobListDto:
     def io_acc_id(self):
         """Gets the io_acc_id of this JobListDto.
 
-        IO加速实例ID
+        作业使用的IO加速实例id，不填表示不使用；
 
         :return: The io_acc_id of this JobListDto.
         :rtype: str
@@ -475,7 +475,7 @@ class JobListDto:
     def io_acc_id(self, io_acc_id):
         """Sets the io_acc_id of this JobListDto.
 
-        IO加速实例ID
+        作业使用的IO加速实例id，不填表示不使用；
 
         :param io_acc_id: The io_acc_id of this JobListDto.
         :type io_acc_id: str

@@ -24,7 +24,8 @@ class ShowEnvResponse(SdkResponse):
         'has_dev': 'bool',
         'has_drug': 'bool',
         'has_encryption_button': 'bool',
-        'deploy_mode': 'str'
+        'deploy_mode': 'str',
+        'enable_cold_archive': 'bool'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class ShowEnvResponse(SdkResponse):
         'has_dev': 'has_dev',
         'has_drug': 'has_drug',
         'has_encryption_button': 'has_encryption_button',
-        'deploy_mode': 'deploy_mode'
+        'deploy_mode': 'deploy_mode',
+        'enable_cold_archive': 'enable_cold_archive'
     }
 
-    def __init__(self, dev_user_pool=None, has_dev=None, has_drug=None, has_encryption_button=None, deploy_mode=None):
+    def __init__(self, dev_user_pool=None, has_dev=None, has_drug=None, has_encryption_button=None, deploy_mode=None, enable_cold_archive=None):
         """ShowEnvResponse
 
         The model defined in huaweicloud sdk
@@ -50,6 +52,8 @@ class ShowEnvResponse(SdkResponse):
         :type has_encryption_button: bool
         :param deploy_mode: 医疗智能体部署模式
         :type deploy_mode: str
+        :param enable_cold_archive: 是否支持归档类型存储
+        :type enable_cold_archive: bool
         """
         
         super(ShowEnvResponse, self).__init__()
@@ -59,6 +63,7 @@ class ShowEnvResponse(SdkResponse):
         self._has_drug = None
         self._has_encryption_button = None
         self._deploy_mode = None
+        self._enable_cold_archive = None
         self.discriminator = None
 
         if dev_user_pool is not None:
@@ -71,6 +76,8 @@ class ShowEnvResponse(SdkResponse):
             self.has_encryption_button = has_encryption_button
         if deploy_mode is not None:
             self.deploy_mode = deploy_mode
+        if enable_cold_archive is not None:
+            self.enable_cold_archive = enable_cold_archive
 
     @property
     def dev_user_pool(self):
@@ -181,6 +188,28 @@ class ShowEnvResponse(SdkResponse):
         :type deploy_mode: str
         """
         self._deploy_mode = deploy_mode
+
+    @property
+    def enable_cold_archive(self):
+        """Gets the enable_cold_archive of this ShowEnvResponse.
+
+        是否支持归档类型存储
+
+        :return: The enable_cold_archive of this ShowEnvResponse.
+        :rtype: bool
+        """
+        return self._enable_cold_archive
+
+    @enable_cold_archive.setter
+    def enable_cold_archive(self, enable_cold_archive):
+        """Sets the enable_cold_archive of this ShowEnvResponse.
+
+        是否支持归档类型存储
+
+        :param enable_cold_archive: The enable_cold_archive of this ShowEnvResponse.
+        :type enable_cold_archive: bool
+        """
+        self._enable_cold_archive = enable_cold_archive
 
     def to_dict(self):
         """Returns the model properties as a dict"""

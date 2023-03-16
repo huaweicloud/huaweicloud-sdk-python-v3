@@ -782,7 +782,7 @@ class CphClient(Client):
         return self.list_cloud_phone_models_with_http_info(request)
 
     def list_cloud_phone_models_with_http_info(self, request):
-        all_params = ['status']
+        all_params = ['status', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -797,6 +797,10 @@ class CphClient(Client):
         query_params = []
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -1108,7 +1112,7 @@ class CphClient(Client):
         return self.list_jobs_with_http_info(request)
 
     def list_jobs_with_http_info(self, request):
-        all_params = ['request_id', 'request_ids']
+        all_params = ['request_id', 'request_ids', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1125,6 +1129,10 @@ class CphClient(Client):
             query_params.append(('request_id', local_var_params['request_id']))
         if 'request_ids' in local_var_params:
             query_params.append(('request_ids', local_var_params['request_ids']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -1780,7 +1788,7 @@ class CphClient(Client):
         return self.show_bandwidth_detail_with_http_info(request)
 
     def show_bandwidth_detail_with_http_info(self, request):
-        all_params = []
+        all_params = ['offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1793,6 +1801,10 @@ class CphClient(Client):
         path_params = {}
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 

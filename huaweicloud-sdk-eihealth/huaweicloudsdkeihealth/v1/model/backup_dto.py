@@ -23,10 +23,12 @@ class BackupDto:
         'id': 'str',
         'name': 'str',
         'type': 'str',
+        'storage_type': 'str',
         'region': 'str',
         'paths': 'list[str]',
         'start_time': 'str',
         'end_time': 'str',
+        'archive_days': 'int',
         'size': 'int',
         'description': 'str',
         'operator_name': 'str'
@@ -36,16 +38,18 @@ class BackupDto:
         'id': 'id',
         'name': 'name',
         'type': 'type',
+        'storage_type': 'storage_type',
         'region': 'region',
         'paths': 'paths',
         'start_time': 'start_time',
         'end_time': 'end_time',
+        'archive_days': 'archive_days',
         'size': 'size',
         'description': 'description',
         'operator_name': 'operator_name'
     }
 
-    def __init__(self, id=None, name=None, type=None, region=None, paths=None, start_time=None, end_time=None, size=None, description=None, operator_name=None):
+    def __init__(self, id=None, name=None, type=None, storage_type=None, region=None, paths=None, start_time=None, end_time=None, archive_days=None, size=None, description=None, operator_name=None):
         """BackupDto
 
         The model defined in huaweicloud sdk
@@ -56,6 +60,8 @@ class BackupDto:
         :type name: str
         :param type: 类型
         :type type: str
+        :param storage_type: 存储类型
+        :type storage_type: str
         :param region: 区域
         :type region: str
         :param paths: 归档数据路径集
@@ -64,6 +70,8 @@ class BackupDto:
         :type start_time: str
         :param end_time: 归档结束时间
         :type end_time: str
+        :param archive_days: 已归档天数
+        :type archive_days: int
         :param size: 大小
         :type size: int
         :param description: 归档描述
@@ -77,10 +85,12 @@ class BackupDto:
         self._id = None
         self._name = None
         self._type = None
+        self._storage_type = None
         self._region = None
         self._paths = None
         self._start_time = None
         self._end_time = None
+        self._archive_days = None
         self._size = None
         self._description = None
         self._operator_name = None
@@ -92,6 +102,8 @@ class BackupDto:
             self.name = name
         if type is not None:
             self.type = type
+        if storage_type is not None:
+            self.storage_type = storage_type
         if region is not None:
             self.region = region
         if paths is not None:
@@ -100,6 +112,8 @@ class BackupDto:
             self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
+        if archive_days is not None:
+            self.archive_days = archive_days
         if size is not None:
             self.size = size
         if description is not None:
@@ -172,6 +186,28 @@ class BackupDto:
         :type type: str
         """
         self._type = type
+
+    @property
+    def storage_type(self):
+        """Gets the storage_type of this BackupDto.
+
+        存储类型
+
+        :return: The storage_type of this BackupDto.
+        :rtype: str
+        """
+        return self._storage_type
+
+    @storage_type.setter
+    def storage_type(self, storage_type):
+        """Sets the storage_type of this BackupDto.
+
+        存储类型
+
+        :param storage_type: The storage_type of this BackupDto.
+        :type storage_type: str
+        """
+        self._storage_type = storage_type
 
     @property
     def region(self):
@@ -260,6 +296,28 @@ class BackupDto:
         :type end_time: str
         """
         self._end_time = end_time
+
+    @property
+    def archive_days(self):
+        """Gets the archive_days of this BackupDto.
+
+        已归档天数
+
+        :return: The archive_days of this BackupDto.
+        :rtype: int
+        """
+        return self._archive_days
+
+    @archive_days.setter
+    def archive_days(self, archive_days):
+        """Sets the archive_days of this BackupDto.
+
+        已归档天数
+
+        :param archive_days: The archive_days of this BackupDto.
+        :type archive_days: int
+        """
+        self._archive_days = archive_days
 
     @property
     def size(self):

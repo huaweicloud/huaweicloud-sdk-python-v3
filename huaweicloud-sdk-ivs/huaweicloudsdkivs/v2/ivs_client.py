@@ -169,8 +169,7 @@ class IvsClient(Client):
     def detect_standard_by_id_card_image(self, request):
         """人证核身标准版（三要素）
 
-        使用姓名、身份证号码、人脸图片三要素进行身份审核。
-        身份验证时，传入的数据为人脸图片、身份证信息。提取身份证信息时，可以使用身份证正反面图片，也可以直接输入姓名、身份证号文本。
+        使用身份证正反面图片提取姓名和身份证号码，与人脸图片进行三要素身份审核。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -232,7 +231,7 @@ class IvsClient(Client):
     def detect_standard_by_name_and_id(self, request):
         """人证核身标准版（三要素）
 
-        校验用户上传的身份证图片支持正反面同时上传 中的信息的真实性，输出最终的审核结果。 该接口也支持用户直接上传姓名和身份证号码进行合法性校验 。
+        使用姓名、身份证号文本和人脸图片进行三要素身份审核。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -286,6 +285,130 @@ class IvsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DetectStandardByNameAndIdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def detect_standard_by_video_and_id_card_image(self, request):
+        """人证核身标准版（三要素）
+
+        从身份证正反面图片中提取姓名和身份证号码，并对视频做活体检测后提取人脸图片，以此进行三要素身份审核。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DetectStandardByVideoAndIdCardImage
+        :type request: :class:`huaweicloudsdkivs.v2.DetectStandardByVideoAndIdCardImageRequest`
+        :rtype: :class:`huaweicloudsdkivs.v2.DetectStandardByVideoAndIdCardImageResponse`
+        """
+        return self.detect_standard_by_video_and_id_card_image_with_http_info(request)
+
+    def detect_standard_by_video_and_id_card_image_with_http_info(self, request):
+        all_params = ['ivs_standard_by_video_and_id_card_image_request_body', 'enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/ivs-standard',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DetectStandardByVideoAndIdCardImageResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def detect_standard_by_video_and_name_and_id(self, request):
+        """人证核身标准版（三要素）
+
+        使用姓名、身份证号文本，并对视频做活体检测后提取人脸图片，以此进行三要素身份审核。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DetectStandardByVideoAndNameAndId
+        :type request: :class:`huaweicloudsdkivs.v2.DetectStandardByVideoAndNameAndIdRequest`
+        :rtype: :class:`huaweicloudsdkivs.v2.DetectStandardByVideoAndNameAndIdResponse`
+        """
+        return self.detect_standard_by_video_and_name_and_id_with_http_info(request)
+
+    def detect_standard_by_video_and_name_and_id_with_http_info(self, request):
+        all_params = ['ivs_standard_by_video_and_name_and_id_request_body', 'enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/ivs-standard',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DetectStandardByVideoAndNameAndIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

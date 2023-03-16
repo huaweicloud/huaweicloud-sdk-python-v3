@@ -23,6 +23,7 @@ class CreateBackupReq:
         'description': 'str',
         'name': 'str',
         'sub_paths': 'list[str]',
+        'storage_type': 'StorageType',
         'delete_archived_data': 'bool'
     }
 
@@ -30,10 +31,11 @@ class CreateBackupReq:
         'description': 'description',
         'name': 'name',
         'sub_paths': 'sub_paths',
+        'storage_type': 'storage_type',
         'delete_archived_data': 'delete_archived_data'
     }
 
-    def __init__(self, description=None, name=None, sub_paths=None, delete_archived_data=None):
+    def __init__(self, description=None, name=None, sub_paths=None, storage_type=None, delete_archived_data=None):
         """CreateBackupReq
 
         The model defined in huaweicloud sdk
@@ -44,6 +46,8 @@ class CreateBackupReq:
         :type name: str
         :param sub_paths: 归档路径集
         :type sub_paths: list[str]
+        :param storage_type: 
+        :type storage_type: :class:`huaweicloudsdkeihealth.v1.StorageType`
         :param delete_archived_data: 是否删除已归档数据
         :type delete_archived_data: bool
         """
@@ -53,6 +57,7 @@ class CreateBackupReq:
         self._description = None
         self._name = None
         self._sub_paths = None
+        self._storage_type = None
         self._delete_archived_data = None
         self.discriminator = None
 
@@ -60,6 +65,8 @@ class CreateBackupReq:
             self.description = description
         self.name = name
         self.sub_paths = sub_paths
+        if storage_type is not None:
+            self.storage_type = storage_type
         if delete_archived_data is not None:
             self.delete_archived_data = delete_archived_data
 
@@ -128,6 +135,24 @@ class CreateBackupReq:
         :type sub_paths: list[str]
         """
         self._sub_paths = sub_paths
+
+    @property
+    def storage_type(self):
+        """Gets the storage_type of this CreateBackupReq.
+
+        :return: The storage_type of this CreateBackupReq.
+        :rtype: :class:`huaweicloudsdkeihealth.v1.StorageType`
+        """
+        return self._storage_type
+
+    @storage_type.setter
+    def storage_type(self, storage_type):
+        """Sets the storage_type of this CreateBackupReq.
+
+        :param storage_type: The storage_type of this CreateBackupReq.
+        :type storage_type: :class:`huaweicloudsdkeihealth.v1.StorageType`
+        """
+        self._storage_type = storage_type
 
     @property
     def delete_archived_data(self):

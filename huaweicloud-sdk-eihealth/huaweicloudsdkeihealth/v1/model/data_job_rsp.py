@@ -29,7 +29,8 @@ class DataJobRsp:
         'finish_count': 'int',
         'total_count': 'int',
         'type': 'str',
-        'failed_reason': 'str'
+        'failed_reason': 'str',
+        'additions': 'str'
     }
 
     attribute_map = {
@@ -42,10 +43,11 @@ class DataJobRsp:
         'finish_count': 'finish_count',
         'total_count': 'total_count',
         'type': 'type',
-        'failed_reason': 'failed_reason'
+        'failed_reason': 'failed_reason',
+        'additions': 'additions'
     }
 
-    def __init__(self, creator=None, end_time=None, id=None, name=None, create_time=None, status=None, finish_count=None, total_count=None, type=None, failed_reason=None):
+    def __init__(self, creator=None, end_time=None, id=None, name=None, create_time=None, status=None, finish_count=None, total_count=None, type=None, failed_reason=None, additions=None):
         """DataJobRsp
 
         The model defined in huaweicloud sdk
@@ -70,6 +72,8 @@ class DataJobRsp:
         :type type: str
         :param failed_reason: 数据作业失败原因
         :type failed_reason: str
+        :param additions: 附加信息
+        :type additions: str
         """
         
         
@@ -84,6 +88,7 @@ class DataJobRsp:
         self._total_count = None
         self._type = None
         self._failed_reason = None
+        self._additions = None
         self.discriminator = None
 
         if creator is not None:
@@ -106,6 +111,8 @@ class DataJobRsp:
             self.type = type
         if failed_reason is not None:
             self.failed_reason = failed_reason
+        if additions is not None:
+            self.additions = additions
 
     @property
     def creator(self):
@@ -326,6 +333,28 @@ class DataJobRsp:
         :type failed_reason: str
         """
         self._failed_reason = failed_reason
+
+    @property
+    def additions(self):
+        """Gets the additions of this DataJobRsp.
+
+        附加信息
+
+        :return: The additions of this DataJobRsp.
+        :rtype: str
+        """
+        return self._additions
+
+    @additions.setter
+    def additions(self, additions):
+        """Sets the additions of this DataJobRsp.
+
+        附加信息
+
+        :param additions: The additions of this DataJobRsp.
+        :type additions: str
+        """
+        self._additions = additions
 
     def to_dict(self):
         """Returns the model properties as a dict"""

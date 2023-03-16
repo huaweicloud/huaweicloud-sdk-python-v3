@@ -34,9 +34,9 @@ class ChangeInstanceOrderRequest:
 
         The model defined in huaweicloud sdk
 
-        :param server_id: 实例ID
+        :param server_id: 云堡垒机实例ID。
         :type server_id: str
-        :param instance_key: 实例的Instance_id
+        :param instance_key: 云堡垒机实例Key。
         :type instance_key: str
         """
         
@@ -53,7 +53,7 @@ class ChangeInstanceOrderRequest:
     def server_id(self):
         """Gets the server_id of this ChangeInstanceOrderRequest.
 
-        实例ID
+        云堡垒机实例ID。
 
         :return: The server_id of this ChangeInstanceOrderRequest.
         :rtype: str
@@ -64,7 +64,7 @@ class ChangeInstanceOrderRequest:
     def server_id(self, server_id):
         """Sets the server_id of this ChangeInstanceOrderRequest.
 
-        实例ID
+        云堡垒机实例ID。
 
         :param server_id: The server_id of this ChangeInstanceOrderRequest.
         :type server_id: str
@@ -75,7 +75,7 @@ class ChangeInstanceOrderRequest:
     def instance_key(self):
         """Gets the instance_key of this ChangeInstanceOrderRequest.
 
-        实例的Instance_id
+        云堡垒机实例Key。
 
         :return: The instance_key of this ChangeInstanceOrderRequest.
         :rtype: str
@@ -86,7 +86,7 @@ class ChangeInstanceOrderRequest:
     def instance_key(self, instance_key):
         """Sets the instance_key of this ChangeInstanceOrderRequest.
 
-        实例的Instance_id
+        云堡垒机实例Key。
 
         :param instance_key: The instance_key of this ChangeInstanceOrderRequest.
         :type instance_key: str

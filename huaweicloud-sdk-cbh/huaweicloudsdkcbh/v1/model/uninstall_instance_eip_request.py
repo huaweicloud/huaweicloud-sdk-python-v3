@@ -34,7 +34,7 @@ class UninstallInstanceEipRequest:
 
         The model defined in huaweicloud sdk
 
-        :param server_id: server_id
+        :param server_id: 云堡垒机实例ID，使用UUID格式。
         :type server_id: str
         :param body: Body of the UninstallInstanceEipRequest
         :type body: :class:`huaweicloudsdkcbh.v1.OperateEipRequestBody`
@@ -54,7 +54,7 @@ class UninstallInstanceEipRequest:
     def server_id(self):
         """Gets the server_id of this UninstallInstanceEipRequest.
 
-        server_id
+        云堡垒机实例ID，使用UUID格式。
 
         :return: The server_id of this UninstallInstanceEipRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class UninstallInstanceEipRequest:
     def server_id(self, server_id):
         """Sets the server_id of this UninstallInstanceEipRequest.
 
-        server_id
+        云堡垒机实例ID，使用UUID格式。
 
         :param server_id: The server_id of this UninstallInstanceEipRequest.
         :type server_id: str

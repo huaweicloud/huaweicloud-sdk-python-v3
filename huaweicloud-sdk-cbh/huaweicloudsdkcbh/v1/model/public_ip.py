@@ -36,9 +36,9 @@ class PublicIp:
 
         The model defined in huaweicloud sdk
 
-        :param id: 已分配的弹性IP 和EIP只能有一个
+        :param id: 已分配的弹性IP和EIP只能有一个。
         :type id: str
-        :param public_eip: 已分配的弹性IP的地址Address
+        :param public_eip: 已分配的弹性IP的地址Address。
         :type public_eip: str
         :param eip: 
         :type eip: :class:`huaweicloudsdkcbh.v1.Eip`
@@ -60,7 +60,7 @@ class PublicIp:
     def id(self):
         """Gets the id of this PublicIp.
 
-        已分配的弹性IP 和EIP只能有一个
+        已分配的弹性IP和EIP只能有一个。
 
         :return: The id of this PublicIp.
         :rtype: str
@@ -71,7 +71,7 @@ class PublicIp:
     def id(self, id):
         """Sets the id of this PublicIp.
 
-        已分配的弹性IP 和EIP只能有一个
+        已分配的弹性IP和EIP只能有一个。
 
         :param id: The id of this PublicIp.
         :type id: str
@@ -82,7 +82,7 @@ class PublicIp:
     def public_eip(self):
         """Gets the public_eip of this PublicIp.
 
-        已分配的弹性IP的地址Address
+        已分配的弹性IP的地址Address。
 
         :return: The public_eip of this PublicIp.
         :rtype: str
@@ -93,7 +93,7 @@ class PublicIp:
     def public_eip(self, public_eip):
         """Sets the public_eip of this PublicIp.
 
-        已分配的弹性IP的地址Address
+        已分配的弹性IP的地址Address。
 
         :param public_eip: The public_eip of this PublicIp.
         :type public_eip: str

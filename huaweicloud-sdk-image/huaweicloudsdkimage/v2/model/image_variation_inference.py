@@ -21,35 +21,42 @@ class ImageVariationInference:
 
     openapi_types = {
         'seed': 'int',
-        'resolution': 'str'
+        'resolution': 'str',
+        'image_nums': 'int'
     }
 
     attribute_map = {
         'seed': 'seed',
-        'resolution': 'resolution'
+        'resolution': 'resolution',
+        'image_nums': 'image_nums'
     }
 
-    def __init__(self, seed=None, resolution=None):
+    def __init__(self, seed=None, resolution=None, image_nums=None):
         """ImageVariationInference
 
         The model defined in huaweicloud sdk
 
         :param seed: 随机数种子
         :type seed: int
-        :param resolution: 生成图片分辨率，限定字符串\&quot;512*768\&quot;,\&quot;768*512\&quot;,\&quot;512*512\&quot;,\&quot;1024*768\&quot;,\&quot;768*1024\&quot;，默认\&quot;512*512\&quot;
+        :param resolution: 生成图片分辨率，限定字符串\&quot;512\\*768\&quot;,\&quot;768\\*512\&quot;,\&quot;512\\*512\&quot;，默认\&quot;512\\*512\&quot;
         :type resolution: str
+        :param image_nums: 生成图片数量，支持1-4张，默认为1
+        :type image_nums: int
         """
         
         
 
         self._seed = None
         self._resolution = None
+        self._image_nums = None
         self.discriminator = None
 
         if seed is not None:
             self.seed = seed
         if resolution is not None:
             self.resolution = resolution
+        if image_nums is not None:
+            self.image_nums = image_nums
 
     @property
     def seed(self):
@@ -77,7 +84,7 @@ class ImageVariationInference:
     def resolution(self):
         """Gets the resolution of this ImageVariationInference.
 
-        生成图片分辨率，限定字符串\"512*768\",\"768*512\",\"512*512\",\"1024*768\",\"768*1024\"，默认\"512*512\"
+        生成图片分辨率，限定字符串\"512\\*768\",\"768\\*512\",\"512\\*512\"，默认\"512\\*512\"
 
         :return: The resolution of this ImageVariationInference.
         :rtype: str
@@ -88,12 +95,34 @@ class ImageVariationInference:
     def resolution(self, resolution):
         """Sets the resolution of this ImageVariationInference.
 
-        生成图片分辨率，限定字符串\"512*768\",\"768*512\",\"512*512\",\"1024*768\",\"768*1024\"，默认\"512*512\"
+        生成图片分辨率，限定字符串\"512\\*768\",\"768\\*512\",\"512\\*512\"，默认\"512\\*512\"
 
         :param resolution: The resolution of this ImageVariationInference.
         :type resolution: str
         """
         self._resolution = resolution
+
+    @property
+    def image_nums(self):
+        """Gets the image_nums of this ImageVariationInference.
+
+        生成图片数量，支持1-4张，默认为1
+
+        :return: The image_nums of this ImageVariationInference.
+        :rtype: int
+        """
+        return self._image_nums
+
+    @image_nums.setter
+    def image_nums(self, image_nums):
+        """Sets the image_nums of this ImageVariationInference.
+
+        生成图片数量，支持1-4张，默认为1
+
+        :param image_nums: The image_nums of this ImageVariationInference.
+        :type image_nums: int
+        """
+        self._image_nums = image_nums
 
     def to_dict(self):
         """Returns the model properties as a dict"""

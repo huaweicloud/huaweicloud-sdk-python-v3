@@ -407,7 +407,6 @@ from huaweicloudsdkiam.v3.model.role_user_assignment_id import RoleUserAssignmen
 from huaweicloudsdkiam.v3.model.roles_item import RolesItem
 from huaweicloudsdkiam.v3.model.rules_local import RulesLocal
 from huaweicloudsdkiam.v3.model.rules_local_group import RulesLocalGroup
-from huaweicloudsdkiam.v3.model.rules_local_groups import RulesLocalGroups
 from huaweicloudsdkiam.v3.model.rules_local_user import RulesLocalUser
 from huaweicloudsdkiam.v3.model.rules_remote import RulesRemote
 from huaweicloudsdkiam.v3.model.scope_domain_option import ScopeDomainOption

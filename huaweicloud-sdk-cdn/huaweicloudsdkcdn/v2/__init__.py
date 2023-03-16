@@ -13,12 +13,18 @@ from huaweicloudsdkcdn.v2.model.batch_copy_domain_response import BatchCopyDomai
 from huaweicloudsdkcdn.v2.model.batch_copy_error_rsp import BatchCopyErrorRsp
 from huaweicloudsdkcdn.v2.model.batch_copy_error_rsp_error import BatchCopyErrorRspError
 from huaweicloudsdkcdn.v2.model.batch_copy_result_vo import BatchCopyResultVo
+from huaweicloudsdkcdn.v2.model.domain_origin_host import DomainOriginHost
+from huaweicloudsdkcdn.v2.model.domains import Domains
+from huaweicloudsdkcdn.v2.model.domains_with_port import DomainsWithPort
 from huaweicloudsdkcdn.v2.model.download_region_carrier_excel_request import DownloadRegionCarrierExcelRequest
 from huaweicloudsdkcdn.v2.model.download_region_carrier_excel_response import DownloadRegionCarrierExcelResponse
 from huaweicloudsdkcdn.v2.model.download_statistics_excel_request import DownloadStatisticsExcelRequest
 from huaweicloudsdkcdn.v2.model.download_statistics_excel_response import DownloadStatisticsExcelResponse
+from huaweicloudsdkcdn.v2.model.ep_resource_tag import EpResourceTag
 from huaweicloudsdkcdn.v2.model.err_msg import ErrMsg
 from huaweicloudsdkcdn.v2.model.err_rsp import ErrRsp
+from huaweicloudsdkcdn.v2.model.list_domains_request import ListDomainsRequest
+from huaweicloudsdkcdn.v2.model.list_domains_response import ListDomainsResponse
 from huaweicloudsdkcdn.v2.model.set_charge_modes_body import SetChargeModesBody
 from huaweicloudsdkcdn.v2.model.set_charge_modes_request import SetChargeModesRequest
 from huaweicloudsdkcdn.v2.model.set_charge_modes_response import SetChargeModesResponse
@@ -26,6 +32,8 @@ from huaweicloudsdkcdn.v2.model.show_bandwidth_calc_request import ShowBandwidth
 from huaweicloudsdkcdn.v2.model.show_bandwidth_calc_response import ShowBandwidthCalcResponse
 from huaweicloudsdkcdn.v2.model.show_charge_modes_request import ShowChargeModesRequest
 from huaweicloudsdkcdn.v2.model.show_charge_modes_response import ShowChargeModesResponse
+from huaweicloudsdkcdn.v2.model.show_domain_detail_by_name_request import ShowDomainDetailByNameRequest
+from huaweicloudsdkcdn.v2.model.show_domain_detail_by_name_response import ShowDomainDetailByNameResponse
 from huaweicloudsdkcdn.v2.model.show_domain_location_stats_request import ShowDomainLocationStatsRequest
 from huaweicloudsdkcdn.v2.model.show_domain_location_stats_response import ShowDomainLocationStatsResponse
 from huaweicloudsdkcdn.v2.model.show_domain_stats_request import ShowDomainStatsRequest
@@ -34,5 +42,7 @@ from huaweicloudsdkcdn.v2.model.show_top_domain_names_request import ShowTopDoma
 from huaweicloudsdkcdn.v2.model.show_top_domain_names_response import ShowTopDomainNamesResponse
 from huaweicloudsdkcdn.v2.model.show_top_url_request import ShowTopUrlRequest
 from huaweicloudsdkcdn.v2.model.show_top_url_response import ShowTopUrlResponse
+from huaweicloudsdkcdn.v2.model.sources import Sources
+from huaweicloudsdkcdn.v2.model.sources_config import SourcesConfig
 from huaweicloudsdkcdn.v2.model.top_url_summary import TopUrlSummary
 

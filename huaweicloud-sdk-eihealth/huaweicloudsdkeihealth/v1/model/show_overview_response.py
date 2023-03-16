@@ -23,17 +23,19 @@ class ShowOverviewResponse(SdkResponse):
         'id': 'str',
         'storage': 'int',
         'project_num': 'int',
-        'charge_mode': 'int'
+        'charge_mode': 'int',
+        'is_arrears': 'bool'
     }
 
     attribute_map = {
         'id': 'id',
         'storage': 'storage',
         'project_num': 'project_num',
-        'charge_mode': 'charge_mode'
+        'charge_mode': 'charge_mode',
+        'is_arrears': 'is_arrears'
     }
 
-    def __init__(self, id=None, storage=None, project_num=None, charge_mode=None):
+    def __init__(self, id=None, storage=None, project_num=None, charge_mode=None, is_arrears=None):
         """ShowOverviewResponse
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class ShowOverviewResponse(SdkResponse):
         :type project_num: int
         :param charge_mode: 计费模式
         :type charge_mode: int
+        :param is_arrears: 是否欠费
+        :type is_arrears: bool
         """
         
         super(ShowOverviewResponse, self).__init__()
@@ -54,6 +58,7 @@ class ShowOverviewResponse(SdkResponse):
         self._storage = None
         self._project_num = None
         self._charge_mode = None
+        self._is_arrears = None
         self.discriminator = None
 
         if id is not None:
@@ -64,6 +69,8 @@ class ShowOverviewResponse(SdkResponse):
             self.project_num = project_num
         if charge_mode is not None:
             self.charge_mode = charge_mode
+        if is_arrears is not None:
+            self.is_arrears = is_arrears
 
     @property
     def id(self):
@@ -152,6 +159,28 @@ class ShowOverviewResponse(SdkResponse):
         :type charge_mode: int
         """
         self._charge_mode = charge_mode
+
+    @property
+    def is_arrears(self):
+        """Gets the is_arrears of this ShowOverviewResponse.
+
+        是否欠费
+
+        :return: The is_arrears of this ShowOverviewResponse.
+        :rtype: bool
+        """
+        return self._is_arrears
+
+    @is_arrears.setter
+    def is_arrears(self, is_arrears):
+        """Sets the is_arrears of this ShowOverviewResponse.
+
+        是否欠费
+
+        :param is_arrears: The is_arrears of this ShowOverviewResponse.
+        :type is_arrears: bool
+        """
+        self._is_arrears = is_arrears
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -24,6 +24,7 @@ class TaskDefinitionDto:
         'display_name': 'str',
         'output_dir': 'str',
         'whole_output_dir': 'str',
+        'io_acc_type': 'str',
         'resources': 'TaskResourceDto',
         'location': 'VertexLocationDto',
         'inputs': 'list[TaskParameterDto]',
@@ -35,13 +36,14 @@ class TaskDefinitionDto:
         'display_name': 'display_name',
         'output_dir': 'output_dir',
         'whole_output_dir': 'whole_output_dir',
+        'io_acc_type': 'io_acc_type',
         'resources': 'resources',
         'location': 'location',
         'inputs': 'inputs',
         'app_info': 'app_info'
     }
 
-    def __init__(self, task_name=None, display_name=None, output_dir=None, whole_output_dir=None, resources=None, location=None, inputs=None, app_info=None):
+    def __init__(self, task_name=None, display_name=None, output_dir=None, whole_output_dir=None, io_acc_type=None, resources=None, location=None, inputs=None, app_info=None):
         """TaskDefinitionDto
 
         The model defined in huaweicloud sdk
@@ -54,6 +56,8 @@ class TaskDefinitionDto:
         :type output_dir: str
         :param whole_output_dir: 子任务的完整输出路径，查看流程不会返回，查看作业时才会返回完整输出路径
         :type whole_output_dir: str
+        :param io_acc_type: 子任务使用的IO加速类型，不填表示不使用；
+        :type io_acc_type: str
         :param resources: 
         :type resources: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
         :param location: 
@@ -70,6 +74,7 @@ class TaskDefinitionDto:
         self._display_name = None
         self._output_dir = None
         self._whole_output_dir = None
+        self._io_acc_type = None
         self._resources = None
         self._location = None
         self._inputs = None
@@ -84,6 +89,8 @@ class TaskDefinitionDto:
             self.output_dir = output_dir
         if whole_output_dir is not None:
             self.whole_output_dir = whole_output_dir
+        if io_acc_type is not None:
+            self.io_acc_type = io_acc_type
         if resources is not None:
             self.resources = resources
         if location is not None:
@@ -180,6 +187,28 @@ class TaskDefinitionDto:
         :type whole_output_dir: str
         """
         self._whole_output_dir = whole_output_dir
+
+    @property
+    def io_acc_type(self):
+        """Gets the io_acc_type of this TaskDefinitionDto.
+
+        子任务使用的IO加速类型，不填表示不使用；
+
+        :return: The io_acc_type of this TaskDefinitionDto.
+        :rtype: str
+        """
+        return self._io_acc_type
+
+    @io_acc_type.setter
+    def io_acc_type(self, io_acc_type):
+        """Sets the io_acc_type of this TaskDefinitionDto.
+
+        子任务使用的IO加速类型，不填表示不使用；
+
+        :param io_acc_type: The io_acc_type of this TaskDefinitionDto.
+        :type io_acc_type: str
+        """
+        self._io_acc_type = io_acc_type
 
     @property
     def resources(self):

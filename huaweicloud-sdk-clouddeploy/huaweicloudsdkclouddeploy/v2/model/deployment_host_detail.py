@@ -104,9 +104,9 @@ class DeploymentHostDetail:
         :type proxy_host: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostDetail`
         :param group_name: 主机组名
         :type group_name: str
-        :param project_id: devcloud项目id
+        :param project_id: 项目id
         :type project_id: str
-        :param project_name: devcloud项目名称
+        :param project_name: 项目名称
         :type project_name: str
         :param permission: 
         :type permission: :class:`huaweicloudsdkclouddeploy.v2.PermissionHostDetail`
@@ -465,7 +465,7 @@ class DeploymentHostDetail:
     def project_id(self):
         """Gets the project_id of this DeploymentHostDetail.
 
-        devcloud项目id
+        项目id
 
         :return: The project_id of this DeploymentHostDetail.
         :rtype: str
@@ -476,7 +476,7 @@ class DeploymentHostDetail:
     def project_id(self, project_id):
         """Sets the project_id of this DeploymentHostDetail.
 
-        devcloud项目id
+        项目id
 
         :param project_id: The project_id of this DeploymentHostDetail.
         :type project_id: str
@@ -487,7 +487,7 @@ class DeploymentHostDetail:
     def project_name(self):
         """Gets the project_name of this DeploymentHostDetail.
 
-        devcloud项目名称
+        项目名称
 
         :return: The project_name of this DeploymentHostDetail.
         :rtype: str
@@ -498,7 +498,7 @@ class DeploymentHostDetail:
     def project_name(self, project_name):
         """Sets the project_name of this DeploymentHostDetail.
 
-        devcloud项目名称
+        项目名称
 
         :param project_name: The project_name of this DeploymentHostDetail.
         :type project_name: str

@@ -4,11 +4,11 @@ import re
 import six
 
 
-from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ShowBackupPathResponse(SdkStreamResponse):
+class ShowBackupPathResponse(SdkResponse):
 
     """
     Attributes:
@@ -25,14 +25,14 @@ class ShowBackupPathResponse(SdkStreamResponse):
     attribute_map = {
     }
 
-    def __init__(self, response):
+    def __init__(self):
         """ShowBackupPathResponse
 
         The model defined in huaweicloud sdk
 
         """
         
-        super(ShowBackupPathResponse, self).__init__(response)
+        super(ShowBackupPathResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

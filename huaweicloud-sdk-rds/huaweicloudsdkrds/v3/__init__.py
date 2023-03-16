@@ -216,6 +216,8 @@ from huaweicloudsdkrds.v3.model.list_postgresql_extension_request import ListPos
 from huaweicloudsdkrds.v3.model.list_postgresql_extension_response import ListPostgresqlExtensionResponse
 from huaweicloudsdkrds.v3.model.list_project_tags_request import ListProjectTagsRequest
 from huaweicloudsdkrds.v3.model.list_project_tags_response import ListProjectTagsResponse
+from huaweicloudsdkrds.v3.model.list_recycle_instances_request import ListRecycleInstancesRequest
+from huaweicloudsdkrds.v3.model.list_recycle_instances_response import ListRecycleInstancesResponse
 from huaweicloudsdkrds.v3.model.list_restore_times_request import ListRestoreTimesRequest
 from huaweicloudsdkrds.v3.model.list_restore_times_response import ListRestoreTimesResponse
 from huaweicloudsdkrds.v3.model.list_slow_log_file_request import ListSlowLogFileRequest
@@ -273,6 +275,7 @@ from huaweicloudsdkrds.v3.model.proxy_readonly_instances import ProxyReadonlyIns
 from huaweicloudsdkrds.v3.model.pwd_reset_request import PwdResetRequest
 from huaweicloudsdkrds.v3.model.quotas import Quotas
 from huaweicloudsdkrds.v3.model.readonly_instances import ReadonlyInstances
+from huaweicloudsdkrds.v3.model.recycle_instsance_v3 import RecycleInstsanceV3
 from huaweicloudsdkrds.v3.model.recycle_policy import RecyclePolicy
 from huaweicloudsdkrds.v3.model.recycle_policy_request_body import RecyclePolicyRequestBody
 from huaweicloudsdkrds.v3.model.related_instance import RelatedInstance
@@ -370,6 +373,8 @@ from huaweicloudsdkrds.v3.model.show_postgresql_param_value_request import ShowP
 from huaweicloudsdkrds.v3.model.show_postgresql_param_value_response import ShowPostgresqlParamValueResponse
 from huaweicloudsdkrds.v3.model.show_quotas_request import ShowQuotasRequest
 from huaweicloudsdkrds.v3.model.show_quotas_response import ShowQuotasResponse
+from huaweicloudsdkrds.v3.model.show_recycle_policy_request import ShowRecyclePolicyRequest
+from huaweicloudsdkrds.v3.model.show_recycle_policy_response import ShowRecyclePolicyResponse
 from huaweicloudsdkrds.v3.model.show_replication_status_request import ShowReplicationStatusRequest
 from huaweicloudsdkrds.v3.model.show_replication_status_response import ShowReplicationStatusResponse
 from huaweicloudsdkrds.v3.model.show_second_level_monitoring_request import ShowSecondLevelMonitoringRequest

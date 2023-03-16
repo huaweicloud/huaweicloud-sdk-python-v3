@@ -22,54 +22,54 @@ class SearchQuotaResponse(SdkResponse):
     openapi_types = {
         'quota': 'int',
         'eip_quota': 'int',
-        'status': 'str',
-        'status_v6': 'str'
+        'status_v6': 'str',
+        'status': 'str'
     }
 
     attribute_map = {
         'quota': 'quota',
         'eip_quota': 'eip_quota',
-        'status': 'status',
-        'status_v6': 'status_v6'
+        'status_v6': 'status_v6',
+        'status': 'status'
     }
 
-    def __init__(self, quota=None, eip_quota=None, status=None, status_v6=None):
+    def __init__(self, quota=None, eip_quota=None, status_v6=None, status=None):
         """SearchQuotaResponse
 
         The model defined in huaweicloud sdk
 
-        :param quota: 配额
+        :param quota: 剩余可创建云堡垒机实例个数。
         :type quota: int
-        :param eip_quota: EIP配额
+        :param eip_quota: 弹性公网IP个数，默认值1。
         :type eip_quota: int
-        :param status: 状态
-        :type status: str
-        :param status_v6: v6状态
+        :param status_v6: IPV6状态信息，返回默认值null。
         :type status_v6: str
+        :param status: IPV6状态信息，返回默认值null。
+        :type status: str
         """
         
         super(SearchQuotaResponse, self).__init__()
 
         self._quota = None
         self._eip_quota = None
-        self._status = None
         self._status_v6 = None
+        self._status = None
         self.discriminator = None
 
         if quota is not None:
             self.quota = quota
         if eip_quota is not None:
             self.eip_quota = eip_quota
-        if status is not None:
-            self.status = status
         if status_v6 is not None:
             self.status_v6 = status_v6
+        if status is not None:
+            self.status = status
 
     @property
     def quota(self):
         """Gets the quota of this SearchQuotaResponse.
 
-        配额
+        剩余可创建云堡垒机实例个数。
 
         :return: The quota of this SearchQuotaResponse.
         :rtype: int
@@ -80,7 +80,7 @@ class SearchQuotaResponse(SdkResponse):
     def quota(self, quota):
         """Sets the quota of this SearchQuotaResponse.
 
-        配额
+        剩余可创建云堡垒机实例个数。
 
         :param quota: The quota of this SearchQuotaResponse.
         :type quota: int
@@ -91,7 +91,7 @@ class SearchQuotaResponse(SdkResponse):
     def eip_quota(self):
         """Gets the eip_quota of this SearchQuotaResponse.
 
-        EIP配额
+        弹性公网IP个数，默认值1。
 
         :return: The eip_quota of this SearchQuotaResponse.
         :rtype: int
@@ -102,7 +102,7 @@ class SearchQuotaResponse(SdkResponse):
     def eip_quota(self, eip_quota):
         """Sets the eip_quota of this SearchQuotaResponse.
 
-        EIP配额
+        弹性公网IP个数，默认值1。
 
         :param eip_quota: The eip_quota of this SearchQuotaResponse.
         :type eip_quota: int
@@ -110,32 +110,10 @@ class SearchQuotaResponse(SdkResponse):
         self._eip_quota = eip_quota
 
     @property
-    def status(self):
-        """Gets the status of this SearchQuotaResponse.
-
-        状态
-
-        :return: The status of this SearchQuotaResponse.
-        :rtype: str
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this SearchQuotaResponse.
-
-        状态
-
-        :param status: The status of this SearchQuotaResponse.
-        :type status: str
-        """
-        self._status = status
-
-    @property
     def status_v6(self):
         """Gets the status_v6 of this SearchQuotaResponse.
 
-        v6状态
+        IPV6状态信息，返回默认值null。
 
         :return: The status_v6 of this SearchQuotaResponse.
         :rtype: str
@@ -146,12 +124,34 @@ class SearchQuotaResponse(SdkResponse):
     def status_v6(self, status_v6):
         """Sets the status_v6 of this SearchQuotaResponse.
 
-        v6状态
+        IPV6状态信息，返回默认值null。
 
         :param status_v6: The status_v6 of this SearchQuotaResponse.
         :type status_v6: str
         """
         self._status_v6 = status_v6
+
+    @property
+    def status(self):
+        """Gets the status of this SearchQuotaResponse.
+
+        IPV6状态信息，返回默认值null。
+
+        :return: The status of this SearchQuotaResponse.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this SearchQuotaResponse.
+
+        IPV6状态信息，返回默认值null。
+
+        :param status: The status of this SearchQuotaResponse.
+        :type status: str
+        """
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

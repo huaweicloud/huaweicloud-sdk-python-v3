@@ -132,7 +132,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         :type tenant_id: str
         :param tenant_name: 应用创建者租户名
         :type tenant_name: str
-        :param slave_cluster_id: slave集群id，默认为null时使用devcloud八爪鱼slave集群，用户自定义slave时为slave集群id
+        :param slave_cluster_id: slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
         :type slave_cluster_id: str
         :param is_care: 当前用户是否已收藏
         :type is_care: bool
@@ -653,7 +653,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
     def slave_cluster_id(self):
         """Gets the slave_cluster_id of this ShowDeployTaskDetailResponse.
 
-        slave集群id，默认为null时使用devcloud八爪鱼slave集群，用户自定义slave时为slave集群id
+        slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
         :return: The slave_cluster_id of this ShowDeployTaskDetailResponse.
         :rtype: str
@@ -664,7 +664,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
     def slave_cluster_id(self, slave_cluster_id):
         """Sets the slave_cluster_id of this ShowDeployTaskDetailResponse.
 
-        slave集群id，默认为null时使用devcloud八爪鱼slave集群，用户自定义slave时为slave集群id
+        slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
         :param slave_cluster_id: The slave_cluster_id of this ShowDeployTaskDetailResponse.
         :type slave_cluster_id: str

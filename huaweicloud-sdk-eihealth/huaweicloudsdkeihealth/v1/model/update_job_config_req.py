@@ -41,8 +41,7 @@ class UpdateJobConfigReq:
         self._job_retain_number = None
         self.discriminator = None
 
-        if job_retain_number is not None:
-            self.job_retain_number = job_retain_number
+        self.job_retain_number = job_retain_number
 
     @property
     def job_retain_number(self):

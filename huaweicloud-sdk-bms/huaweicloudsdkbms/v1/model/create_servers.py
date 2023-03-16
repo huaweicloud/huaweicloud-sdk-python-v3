@@ -90,7 +90,7 @@ class CreateServers:
         :type vpcid: str
         :param publicip: 
         :type publicip: :class:`huaweicloudsdkbms.v1.PublicIp`
-        :param count: 创建裸金属服务器的数量。约束：不传该字段时默认取值为1。租户的配额足够时，最大值为24。
+        :param count: 创建裸金属服务器的数量。约束：不传该字段时默认取值为1。租户的配额足够时，最大值为100。
         :type count: int
         :param root_volume: 
         :type root_volume: :class:`huaweicloudsdkbms.v1.RootVolume`
@@ -415,7 +415,7 @@ class CreateServers:
     def count(self):
         """Gets the count of this CreateServers.
 
-        创建裸金属服务器的数量。约束：不传该字段时默认取值为1。租户的配额足够时，最大值为24。
+        创建裸金属服务器的数量。约束：不传该字段时默认取值为1。租户的配额足够时，最大值为100。
 
         :return: The count of this CreateServers.
         :rtype: int
@@ -426,7 +426,7 @@ class CreateServers:
     def count(self, count):
         """Sets the count of this CreateServers.
 
-        创建裸金属服务器的数量。约束：不传该字段时默认取值为1。租户的配额足够时，最大值为24。
+        创建裸金属服务器的数量。约束：不传该字段时默认取值为1。租户的配额足够时，最大值为100。
 
         :param count: The count of this CreateServers.
         :type count: int

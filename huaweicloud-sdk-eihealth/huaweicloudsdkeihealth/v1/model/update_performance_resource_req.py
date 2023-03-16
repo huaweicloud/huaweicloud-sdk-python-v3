@@ -20,28 +20,36 @@ class UpdatePerformanceResourceReq:
     sensitive_list = []
 
     openapi_types = {
-        'job_quota': 'int'
+        'job_quota': 'int',
+        'schedulable': 'bool'
     }
 
     attribute_map = {
-        'job_quota': 'job_quota'
+        'job_quota': 'job_quota',
+        'schedulable': 'schedulable'
     }
 
-    def __init__(self, job_quota=None):
+    def __init__(self, job_quota=None, schedulable=None):
         """UpdatePerformanceResourceReq
 
         The model defined in huaweicloud sdk
 
         :param job_quota: 运行的最大作业数量
         :type job_quota: int
+        :param schedulable: 资源是否可调度
+        :type schedulable: bool
         """
         
         
 
         self._job_quota = None
+        self._schedulable = None
         self.discriminator = None
 
-        self.job_quota = job_quota
+        if job_quota is not None:
+            self.job_quota = job_quota
+        if schedulable is not None:
+            self.schedulable = schedulable
 
     @property
     def job_quota(self):
@@ -64,6 +72,28 @@ class UpdatePerformanceResourceReq:
         :type job_quota: int
         """
         self._job_quota = job_quota
+
+    @property
+    def schedulable(self):
+        """Gets the schedulable of this UpdatePerformanceResourceReq.
+
+        资源是否可调度
+
+        :return: The schedulable of this UpdatePerformanceResourceReq.
+        :rtype: bool
+        """
+        return self._schedulable
+
+    @schedulable.setter
+    def schedulable(self, schedulable):
+        """Sets the schedulable of this UpdatePerformanceResourceReq.
+
+        资源是否可调度
+
+        :param schedulable: The schedulable of this UpdatePerformanceResourceReq.
+        :type schedulable: bool
+        """
+        self._schedulable = schedulable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

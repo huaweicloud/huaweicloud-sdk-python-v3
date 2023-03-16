@@ -34,9 +34,9 @@ class OperateEipRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param publicip_id: 弹性ip的id
+        :param publicip_id: 弹性公网IP的ID,使用UUID格式。
         :type publicip_id: str
-        :param public_eip: 弹性ip
+        :param public_eip: 弹性公网IP，使用IP地址。
         :type public_eip: str
         """
         
@@ -53,7 +53,7 @@ class OperateEipRequestBody:
     def publicip_id(self):
         """Gets the publicip_id of this OperateEipRequestBody.
 
-        弹性ip的id
+        弹性公网IP的ID,使用UUID格式。
 
         :return: The publicip_id of this OperateEipRequestBody.
         :rtype: str
@@ -64,7 +64,7 @@ class OperateEipRequestBody:
     def publicip_id(self, publicip_id):
         """Sets the publicip_id of this OperateEipRequestBody.
 
-        弹性ip的id
+        弹性公网IP的ID,使用UUID格式。
 
         :param publicip_id: The publicip_id of this OperateEipRequestBody.
         :type publicip_id: str
@@ -75,7 +75,7 @@ class OperateEipRequestBody:
     def public_eip(self):
         """Gets the public_eip of this OperateEipRequestBody.
 
-        弹性ip
+        弹性公网IP，使用IP地址。
 
         :return: The public_eip of this OperateEipRequestBody.
         :rtype: str
@@ -86,7 +86,7 @@ class OperateEipRequestBody:
     def public_eip(self, public_eip):
         """Sets the public_eip of this OperateEipRequestBody.
 
-        弹性ip
+        弹性公网IP，使用IP地址。
 
         :param public_eip: The public_eip of this OperateEipRequestBody.
         :type public_eip: str

@@ -42,6 +42,7 @@ from huaweicloudsdkcdn.v1.model.domains import Domains
 from huaweicloudsdkcdn.v1.model.domains_with_port import DomainsWithPort
 from huaweicloudsdkcdn.v1.model.enable_domain_request import EnableDomainRequest
 from huaweicloudsdkcdn.v1.model.enable_domain_response import EnableDomainResponse
+from huaweicloudsdkcdn.v1.model.ep_resource_tag import EpResourceTag
 from huaweicloudsdkcdn.v1.model.error_code_cache import ErrorCodeCache
 from huaweicloudsdkcdn.v1.model.error_code_redirect_rules import ErrorCodeRedirectRules
 from huaweicloudsdkcdn.v1.model.follow302_status_body import Follow302StatusBody

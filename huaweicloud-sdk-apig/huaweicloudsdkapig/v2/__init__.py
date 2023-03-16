@@ -17,6 +17,8 @@ from huaweicloudsdkapig.v2.model.add_eip_v2_request import AddEipV2Request
 from huaweicloudsdkapig.v2.model.add_eip_v2_response import AddEipV2Response
 from huaweicloudsdkapig.v2.model.add_engress_eip_v2_request import AddEngressEipV2Request
 from huaweicloudsdkapig.v2.model.add_engress_eip_v2_response import AddEngressEipV2Response
+from huaweicloudsdkapig.v2.model.add_ingress_eip_v2_request import AddIngressEipV2Request
+from huaweicloudsdkapig.v2.model.add_ingress_eip_v2_response import AddIngressEipV2Response
 from huaweicloudsdkapig.v2.model.adding_backend_instances_v2_request import AddingBackendInstancesV2Request
 from huaweicloudsdkapig.v2.model.adding_backend_instances_v2_response import AddingBackendInstancesV2Response
 from huaweicloudsdkapig.v2.model.api_acl_create import ApiAclCreate
@@ -389,6 +391,7 @@ from huaweicloudsdkapig.v2.model.microservice_label import MicroserviceLabel
 from huaweicloudsdkapig.v2.model.network_traffic_stats import NetworkTrafficStats
 from huaweicloudsdkapig.v2.model.node_ips import NodeIps
 from huaweicloudsdkapig.v2.model.open_engress_eip_req import OpenEngressEipReq
+from huaweicloudsdkapig.v2.model.open_ingress_eip_req import OpenIngressEipReq
 from huaweicloudsdkapig.v2.model.plugin_api_attach_info import PluginApiAttachInfo
 from huaweicloudsdkapig.v2.model.plugin_api_info import PluginApiInfo
 from huaweicloudsdkapig.v2.model.plugin_create import PluginCreate
@@ -399,6 +402,8 @@ from huaweicloudsdkapig.v2.model.remove_eip_v2_request import RemoveEipV2Request
 from huaweicloudsdkapig.v2.model.remove_eip_v2_response import RemoveEipV2Response
 from huaweicloudsdkapig.v2.model.remove_engress_eip_v2_request import RemoveEngressEipV2Request
 from huaweicloudsdkapig.v2.model.remove_engress_eip_v2_response import RemoveEngressEipV2Response
+from huaweicloudsdkapig.v2.model.remove_ingress_eip_v2_request import RemoveIngressEipV2Request
+from huaweicloudsdkapig.v2.model.remove_ingress_eip_v2_response import RemoveIngressEipV2Response
 from huaweicloudsdkapig.v2.model.req_param import ReqParam
 from huaweicloudsdkapig.v2.model.req_param_base import ReqParamBase
 from huaweicloudsdkapig.v2.model.request_count_stats import RequestCountStats
@@ -494,6 +499,8 @@ from huaweicloudsdkapig.v2.model.update_gateway_response_v2_request import Updat
 from huaweicloudsdkapig.v2.model.update_gateway_response_v2_response import UpdateGatewayResponseV2Response
 from huaweicloudsdkapig.v2.model.update_health_check_request import UpdateHealthCheckRequest
 from huaweicloudsdkapig.v2.model.update_health_check_response import UpdateHealthCheckResponse
+from huaweicloudsdkapig.v2.model.update_ingress_eip_v2_request import UpdateIngressEipV2Request
+from huaweicloudsdkapig.v2.model.update_ingress_eip_v2_response import UpdateIngressEipV2Response
 from huaweicloudsdkapig.v2.model.update_instance_v2_request import UpdateInstanceV2Request
 from huaweicloudsdkapig.v2.model.update_instance_v2_response import UpdateInstanceV2Response
 from huaweicloudsdkapig.v2.model.update_member_group_request import UpdateMemberGroupRequest

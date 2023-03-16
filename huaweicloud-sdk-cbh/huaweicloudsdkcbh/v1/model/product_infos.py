@@ -24,7 +24,6 @@ class ProductInfos:
         'cloud_service_type': 'str',
         'resource_type': 'str',
         'resource_spec_code': 'str',
-        'available_zone_id': 'str',
         'resource_size_measure_id': 'str',
         'resource_size': 'str'
     }
@@ -34,29 +33,26 @@ class ProductInfos:
         'cloud_service_type': 'cloud_service_type',
         'resource_type': 'resource_type',
         'resource_spec_code': 'resource_spec_code',
-        'available_zone_id': 'available_zone_id',
         'resource_size_measure_id': 'resource_size_measure_id',
         'resource_size': 'resource_size'
     }
 
-    def __init__(self, product_id=None, cloud_service_type=None, resource_type=None, resource_spec_code=None, available_zone_id=None, resource_size_measure_id=None, resource_size=None):
+    def __init__(self, product_id=None, cloud_service_type=None, resource_type=None, resource_spec_code=None, resource_size_measure_id=None, resource_size=None):
         """ProductInfos
 
         The model defined in huaweicloud sdk
 
-        :param product_id: 产品标识，通过订购询价接口获得
+        :param product_id: 产品标识，通过订购询价接口获得。
         :type product_id: str
-        :param cloud_service_type: CBH云服务类型
+        :param cloud_service_type: 云服务类型，填写“hws.service.type.cbh”。
         :type cloud_service_type: str
-        :param resource_type: CBH资源类型
+        :param resource_type: 云堡垒机资源类型，填写“hws.resource.type.cbh.ins”。
         :type resource_type: str
-        :param resource_spec_code: CBH资源规格
+        :param resource_spec_code: 待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50 已上线的规格请参见《云堡垒机产品介绍》的“服务版本差异(https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)”章节。
         :type resource_spec_code: str
-        :param available_zone_id: 可用区id
-        :type available_zone_id: str
-        :param resource_size_measure_id: 资源容量度量标识
+        :param resource_size_measure_id: 资源容量度量标识。 - 15：Mbps（购买带宽时使用） - 17：GB（购买云硬盘时使用） - 14：个/次（购买堡垒机使用）
         :type resource_size_measure_id: str
-        :param resource_size: 资源容量大小
+        :param resource_size: 资源容量大小。默认为1
         :type resource_size: str
         """
         
@@ -66,7 +62,6 @@ class ProductInfos:
         self._cloud_service_type = None
         self._resource_type = None
         self._resource_spec_code = None
-        self._available_zone_id = None
         self._resource_size_measure_id = None
         self._resource_size = None
         self.discriminator = None
@@ -75,8 +70,6 @@ class ProductInfos:
         self.cloud_service_type = cloud_service_type
         self.resource_type = resource_type
         self.resource_spec_code = resource_spec_code
-        if available_zone_id is not None:
-            self.available_zone_id = available_zone_id
         self.resource_size_measure_id = resource_size_measure_id
         self.resource_size = resource_size
 
@@ -84,7 +77,7 @@ class ProductInfos:
     def product_id(self):
         """Gets the product_id of this ProductInfos.
 
-        产品标识，通过订购询价接口获得
+        产品标识，通过订购询价接口获得。
 
         :return: The product_id of this ProductInfos.
         :rtype: str
@@ -95,7 +88,7 @@ class ProductInfos:
     def product_id(self, product_id):
         """Sets the product_id of this ProductInfos.
 
-        产品标识，通过订购询价接口获得
+        产品标识，通过订购询价接口获得。
 
         :param product_id: The product_id of this ProductInfos.
         :type product_id: str
@@ -106,7 +99,7 @@ class ProductInfos:
     def cloud_service_type(self):
         """Gets the cloud_service_type of this ProductInfos.
 
-        CBH云服务类型
+        云服务类型，填写“hws.service.type.cbh”。
 
         :return: The cloud_service_type of this ProductInfos.
         :rtype: str
@@ -117,7 +110,7 @@ class ProductInfos:
     def cloud_service_type(self, cloud_service_type):
         """Sets the cloud_service_type of this ProductInfos.
 
-        CBH云服务类型
+        云服务类型，填写“hws.service.type.cbh”。
 
         :param cloud_service_type: The cloud_service_type of this ProductInfos.
         :type cloud_service_type: str
@@ -128,7 +121,7 @@ class ProductInfos:
     def resource_type(self):
         """Gets the resource_type of this ProductInfos.
 
-        CBH资源类型
+        云堡垒机资源类型，填写“hws.resource.type.cbh.ins”。
 
         :return: The resource_type of this ProductInfos.
         :rtype: str
@@ -139,7 +132,7 @@ class ProductInfos:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ProductInfos.
 
-        CBH资源类型
+        云堡垒机资源类型，填写“hws.resource.type.cbh.ins”。
 
         :param resource_type: The resource_type of this ProductInfos.
         :type resource_type: str
@@ -150,7 +143,7 @@ class ProductInfos:
     def resource_spec_code(self):
         """Gets the resource_spec_code of this ProductInfos.
 
-        CBH资源规格
+        待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50 已上线的规格请参见《云堡垒机产品介绍》的“服务版本差异(https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)”章节。
 
         :return: The resource_spec_code of this ProductInfos.
         :rtype: str
@@ -161,7 +154,7 @@ class ProductInfos:
     def resource_spec_code(self, resource_spec_code):
         """Sets the resource_spec_code of this ProductInfos.
 
-        CBH资源规格
+        待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50 已上线的规格请参见《云堡垒机产品介绍》的“服务版本差异(https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)”章节。
 
         :param resource_spec_code: The resource_spec_code of this ProductInfos.
         :type resource_spec_code: str
@@ -169,32 +162,10 @@ class ProductInfos:
         self._resource_spec_code = resource_spec_code
 
     @property
-    def available_zone_id(self):
-        """Gets the available_zone_id of this ProductInfos.
-
-        可用区id
-
-        :return: The available_zone_id of this ProductInfos.
-        :rtype: str
-        """
-        return self._available_zone_id
-
-    @available_zone_id.setter
-    def available_zone_id(self, available_zone_id):
-        """Sets the available_zone_id of this ProductInfos.
-
-        可用区id
-
-        :param available_zone_id: The available_zone_id of this ProductInfos.
-        :type available_zone_id: str
-        """
-        self._available_zone_id = available_zone_id
-
-    @property
     def resource_size_measure_id(self):
         """Gets the resource_size_measure_id of this ProductInfos.
 
-        资源容量度量标识
+        资源容量度量标识。 - 15：Mbps（购买带宽时使用） - 17：GB（购买云硬盘时使用） - 14：个/次（购买堡垒机使用）
 
         :return: The resource_size_measure_id of this ProductInfos.
         :rtype: str
@@ -205,7 +176,7 @@ class ProductInfos:
     def resource_size_measure_id(self, resource_size_measure_id):
         """Sets the resource_size_measure_id of this ProductInfos.
 
-        资源容量度量标识
+        资源容量度量标识。 - 15：Mbps（购买带宽时使用） - 17：GB（购买云硬盘时使用） - 14：个/次（购买堡垒机使用）
 
         :param resource_size_measure_id: The resource_size_measure_id of this ProductInfos.
         :type resource_size_measure_id: str
@@ -216,7 +187,7 @@ class ProductInfos:
     def resource_size(self):
         """Gets the resource_size of this ProductInfos.
 
-        资源容量大小
+        资源容量大小。默认为1
 
         :return: The resource_size of this ProductInfos.
         :rtype: str
@@ -227,7 +198,7 @@ class ProductInfos:
     def resource_size(self, resource_size):
         """Sets the resource_size of this ProductInfos.
 
-        资源容量大小
+        资源容量大小。默认为1
 
         :param resource_size: The resource_size of this ProductInfos.
         :type resource_size: str

@@ -21,7 +21,7 @@ class ListDatabaseDataResponse(SdkResponse):
 
     openapi_types = {
         'count': 'int',
-        'objects': 'list[dict(str, object)]'
+        'objects': 'list[dict(str, str)]'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class ListDatabaseDataResponse(SdkResponse):
         :param count: 总条数
         :type count: int
         :param objects: 查询记录列表
-        :type objects: list[dict(str, object)]
+        :type objects: list[dict(str, str)]
         """
         
         super(ListDatabaseDataResponse, self).__init__()
@@ -80,7 +80,7 @@ class ListDatabaseDataResponse(SdkResponse):
         查询记录列表
 
         :return: The objects of this ListDatabaseDataResponse.
-        :rtype: list[dict(str, object)]
+        :rtype: list[dict(str, str)]
         """
         return self._objects
 
@@ -91,7 +91,7 @@ class ListDatabaseDataResponse(SdkResponse):
         查询记录列表
 
         :param objects: The objects of this ListDatabaseDataResponse.
-        :type objects: list[dict(str, object)]
+        :type objects: list[dict(str, str)]
         """
         self._objects = objects
 

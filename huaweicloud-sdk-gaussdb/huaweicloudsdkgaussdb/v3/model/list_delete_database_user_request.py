@@ -47,8 +47,7 @@ class ListDeleteDatabaseUserRequest:
         self.discriminator = None
 
         self.name = name
-        if host is not None:
-            self.host = host
+        self.host = host
 
     @property
     def name(self):

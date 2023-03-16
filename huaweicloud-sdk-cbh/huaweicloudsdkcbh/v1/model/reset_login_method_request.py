@@ -32,7 +32,7 @@ class ResetLoginMethodRequest:
 
         The model defined in huaweicloud sdk
 
-        :param server_id: Cbh Server Id
+        :param server_id: 堡垒机实例ID，使用UUID格式。
         :type server_id: str
         """
         
@@ -47,7 +47,7 @@ class ResetLoginMethodRequest:
     def server_id(self):
         """Gets the server_id of this ResetLoginMethodRequest.
 
-        Cbh Server Id
+        堡垒机实例ID，使用UUID格式。
 
         :return: The server_id of this ResetLoginMethodRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class ResetLoginMethodRequest:
     def server_id(self, server_id):
         """Sets the server_id of this ResetLoginMethodRequest.
 
-        Cbh Server Id
+        堡垒机实例ID，使用UUID格式。
 
         :param server_id: The server_id of this ResetLoginMethodRequest.
         :type server_id: str

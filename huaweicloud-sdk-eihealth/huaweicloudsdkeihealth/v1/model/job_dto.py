@@ -58,7 +58,7 @@ class JobDto:
         :type name: str
         :param description: 作业的描述,取值范围：输入字符最大长度为255
         :type description: str
-        :param labels: 作业标签，取值范围[0,5]，单个标签最大长度32字符，仅仅包含小写字母或数字或大写字母
+        :param labels: 作业标签，取值范围[0,5]，单个标签最大长度32字符，支持中文、字母、数字、空格、下划线和中划线，且不能以空格开头或者结尾。
         :type labels: list[str]
         :param priority: 作业的优先级,取值范围[0,9]，0最低，默认数值0
         :type priority: int
@@ -72,7 +72,7 @@ class JobDto:
         :type tool_type: str
         :param tasks: 基于替换规则压扁后，job实际的运行信息
         :type tasks: list[:class:`huaweicloudsdkeihealth.v1.JobTaskDto`]
-        :param io_acc_id: 作业使用的SFS-Turbo实例id，不填表示不使用
+        :param io_acc_id: 作业使用的IO加速实例id，不填表示不使用
         :type io_acc_id: str
         :param io_acc_expected_usage: 作业使用的SFS-Turbo实例预期占用存储量，单位G，用于投递作业时评估当前加速实例余量是否充足
         :type io_acc_expected_usage: int
@@ -166,7 +166,7 @@ class JobDto:
     def labels(self):
         """Gets the labels of this JobDto.
 
-        作业标签，取值范围[0,5]，单个标签最大长度32字符，仅仅包含小写字母或数字或大写字母
+        作业标签，取值范围[0,5]，单个标签最大长度32字符，支持中文、字母、数字、空格、下划线和中划线，且不能以空格开头或者结尾。
 
         :return: The labels of this JobDto.
         :rtype: list[str]
@@ -177,7 +177,7 @@ class JobDto:
     def labels(self, labels):
         """Sets the labels of this JobDto.
 
-        作业标签，取值范围[0,5]，单个标签最大长度32字符，仅仅包含小写字母或数字或大写字母
+        作业标签，取值范围[0,5]，单个标签最大长度32字符，支持中文、字母、数字、空格、下划线和中划线，且不能以空格开头或者结尾。
 
         :param labels: The labels of this JobDto.
         :type labels: list[str]
@@ -320,7 +320,7 @@ class JobDto:
     def io_acc_id(self):
         """Gets the io_acc_id of this JobDto.
 
-        作业使用的SFS-Turbo实例id，不填表示不使用
+        作业使用的IO加速实例id，不填表示不使用
 
         :return: The io_acc_id of this JobDto.
         :rtype: str
@@ -331,7 +331,7 @@ class JobDto:
     def io_acc_id(self, io_acc_id):
         """Sets the io_acc_id of this JobDto.
 
-        作业使用的SFS-Turbo实例id，不填表示不使用
+        作业使用的IO加速实例id，不填表示不使用
 
         :param io_acc_id: The io_acc_id of this JobDto.
         :type io_acc_id: str

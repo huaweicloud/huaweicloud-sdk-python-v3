@@ -22,16 +22,18 @@ class JobTaskDto:
     openapi_types = {
         'task_name': 'str',
         'inputs': 'list[TaskParameterDto]',
-        'resources': 'TaskResourceDto'
+        'resources': 'TaskResourceDto',
+        'io_acc_type': 'str'
     }
 
     attribute_map = {
         'task_name': 'task_name',
         'inputs': 'inputs',
-        'resources': 'resources'
+        'resources': 'resources',
+        'io_acc_type': 'io_acc_type'
     }
 
-    def __init__(self, task_name=None, inputs=None, resources=None):
+    def __init__(self, task_name=None, inputs=None, resources=None, io_acc_type=None):
         """JobTaskDto
 
         The model defined in huaweicloud sdk
@@ -42,6 +44,8 @@ class JobTaskDto:
         :type inputs: list[:class:`huaweicloudsdkeihealth.v1.TaskParameterDto`]
         :param resources: 
         :type resources: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
+        :param io_acc_type: 子任务使用的IO加速实例类型，不填表示不使用；
+        :type io_acc_type: str
         """
         
         
@@ -49,6 +53,7 @@ class JobTaskDto:
         self._task_name = None
         self._inputs = None
         self._resources = None
+        self._io_acc_type = None
         self.discriminator = None
 
         self.task_name = task_name
@@ -56,6 +61,8 @@ class JobTaskDto:
             self.inputs = inputs
         if resources is not None:
             self.resources = resources
+        if io_acc_type is not None:
+            self.io_acc_type = io_acc_type
 
     @property
     def task_name(self):
@@ -118,6 +125,28 @@ class JobTaskDto:
         :type resources: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
         """
         self._resources = resources
+
+    @property
+    def io_acc_type(self):
+        """Gets the io_acc_type of this JobTaskDto.
+
+        子任务使用的IO加速实例类型，不填表示不使用；
+
+        :return: The io_acc_type of this JobTaskDto.
+        :rtype: str
+        """
+        return self._io_acc_type
+
+    @io_acc_type.setter
+    def io_acc_type(self, io_acc_type):
+        """Sets the io_acc_type of this JobTaskDto.
+
+        子任务使用的IO加速实例类型，不填表示不使用；
+
+        :param io_acc_type: The io_acc_type of this JobTaskDto.
+        :type io_acc_type: str
+        """
+        self._io_acc_type = io_acc_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

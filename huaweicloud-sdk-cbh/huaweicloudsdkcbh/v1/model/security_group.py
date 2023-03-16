@@ -32,7 +32,7 @@ class SecurityGroup:
 
         The model defined in huaweicloud sdk
 
-        :param id: 安全组ID
+        :param id: 云堡垒机实例安全组ID，字母数字下划线连接符组成。
         :type id: str
         """
         
@@ -47,7 +47,7 @@ class SecurityGroup:
     def id(self):
         """Gets the id of this SecurityGroup.
 
-        安全组ID
+        云堡垒机实例安全组ID，字母数字下划线连接符组成。
 
         :return: The id of this SecurityGroup.
         :rtype: str
@@ -58,7 +58,7 @@ class SecurityGroup:
     def id(self, id):
         """Sets the id of this SecurityGroup.
 
-        安全组ID
+        云堡垒机实例安全组ID，字母数字下划线连接符组成。
 
         :param id: The id of this SecurityGroup.
         :type id: str

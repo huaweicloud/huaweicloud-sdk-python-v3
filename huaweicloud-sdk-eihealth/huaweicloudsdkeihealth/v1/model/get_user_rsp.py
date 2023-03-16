@@ -30,7 +30,8 @@ class GetUserRsp:
         'is_domain_owner': 'bool',
         'create_time': 'str',
         'pwd_status': 'bool',
-        'update_time': 'str'
+        'update_time': 'str',
+        'source': 'str'
     }
 
     attribute_map = {
@@ -44,10 +45,11 @@ class GetUserRsp:
         'is_domain_owner': 'is_domain_owner',
         'create_time': 'create_time',
         'pwd_status': 'pwd_status',
-        'update_time': 'update_time'
+        'update_time': 'update_time',
+        'source': 'source'
     }
 
-    def __init__(self, id=None, name=None, role=None, status=None, email=None, phone=None, areacode=None, is_domain_owner=None, create_time=None, pwd_status=None, update_time=None):
+    def __init__(self, id=None, name=None, role=None, status=None, email=None, phone=None, areacode=None, is_domain_owner=None, create_time=None, pwd_status=None, update_time=None, source=None):
         """GetUserRsp
 
         The model defined in huaweicloud sdk
@@ -74,6 +76,8 @@ class GetUserRsp:
         :type pwd_status: bool
         :param update_time: 更新时间，UTC时间
         :type update_time: str
+        :param source: 来源，PLATFORM或者IAM
+        :type source: str
         """
         
         
@@ -89,6 +93,7 @@ class GetUserRsp:
         self._create_time = None
         self._pwd_status = None
         self._update_time = None
+        self._source = None
         self.discriminator = None
 
         if id is not None:
@@ -113,6 +118,8 @@ class GetUserRsp:
             self.pwd_status = pwd_status
         if update_time is not None:
             self.update_time = update_time
+        if source is not None:
+            self.source = source
 
     @property
     def id(self):
@@ -355,6 +362,28 @@ class GetUserRsp:
         :type update_time: str
         """
         self._update_time = update_time
+
+    @property
+    def source(self):
+        """Gets the source of this GetUserRsp.
+
+        来源，PLATFORM或者IAM
+
+        :return: The source of this GetUserRsp.
+        :rtype: str
+        """
+        return self._source
+
+    @source.setter
+    def source(self, source):
+        """Sets the source of this GetUserRsp.
+
+        来源，PLATFORM或者IAM
+
+        :param source: The source of this GetUserRsp.
+        :type source: str
+        """
+        self._source = source
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -81,18 +81,12 @@ class IdcardResult:
         self._valid_to = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if number is not None:
-            self.number = number
-        if sex is not None:
-            self.sex = sex
-        if birth is not None:
-            self.birth = birth
-        if ethnicity is not None:
-            self.ethnicity = ethnicity
-        if address is not None:
-            self.address = address
+        self.name = name
+        self.number = number
+        self.sex = sex
+        self.birth = birth
+        self.ethnicity = ethnicity
+        self.address = address
         if issue is not None:
             self.issue = issue
         if valid_from is not None:

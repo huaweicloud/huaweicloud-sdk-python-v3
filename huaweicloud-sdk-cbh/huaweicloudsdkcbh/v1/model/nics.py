@@ -34,9 +34,9 @@ class Nics:
 
         The model defined in huaweicloud sdk
 
-        :param subnet_id: 子网ID
+        :param subnet_id: 子网ID，字母数字下划线连接符组成。
         :type subnet_id: str
-        :param ip_address: IP地址，不填或空字符串为自动分配
+        :param ip_address: IP地址，不填或空字符串为自动分配。
         :type ip_address: str
         """
         
@@ -54,7 +54,7 @@ class Nics:
     def subnet_id(self):
         """Gets the subnet_id of this Nics.
 
-        子网ID
+        子网ID，字母数字下划线连接符组成。
 
         :return: The subnet_id of this Nics.
         :rtype: str
@@ -65,7 +65,7 @@ class Nics:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this Nics.
 
-        子网ID
+        子网ID，字母数字下划线连接符组成。
 
         :param subnet_id: The subnet_id of this Nics.
         :type subnet_id: str
@@ -76,7 +76,7 @@ class Nics:
     def ip_address(self):
         """Gets the ip_address of this Nics.
 
-        IP地址，不填或空字符串为自动分配
+        IP地址，不填或空字符串为自动分配。
 
         :return: The ip_address of this Nics.
         :rtype: str
@@ -87,7 +87,7 @@ class Nics:
     def ip_address(self, ip_address):
         """Sets the ip_address of this Nics.
 
-        IP地址，不填或空字符串为自动分配
+        IP地址，不填或空字符串为自动分配。
 
         :param ip_address: The ip_address of this Nics.
         :type ip_address: str

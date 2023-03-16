@@ -168,6 +168,69 @@ class ApigAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def add_ingress_eip_v2_async(self, request):
+        """开启实例公网入口
+
+        开启实例开启公网入口，仅当实例为ELB类型时支持
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddIngressEipV2
+        :type request: :class:`huaweicloudsdkapig.v2.AddIngressEipV2Request`
+        :rtype: :class:`huaweicloudsdkapig.v2.AddIngressEipV2Response`
+        """
+        return self.add_ingress_eip_v2_with_http_info(request)
+
+    def add_ingress_eip_v2_with_http_info(self, request):
+        all_params = ['instance_id', 'add_ingress_eip_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/ingress-eip',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddIngressEipV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def associate_certificate_v2_async(self, request):
         """绑定域名证书
 
@@ -4461,6 +4524,67 @@ class ApigAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def remove_ingress_eip_v2_async(self, request):
+        """关闭实例公网入口
+
+        关闭实例公网入口，仅当实例为ELB类型时支持
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RemoveIngressEipV2
+        :type request: :class:`huaweicloudsdkapig.v2.RemoveIngressEipV2Request`
+        :rtype: :class:`huaweicloudsdkapig.v2.RemoveIngressEipV2Response`
+        """
+        return self.remove_ingress_eip_v2_with_http_info(request)
+
+    def remove_ingress_eip_v2_with_http_info(self, request):
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/ingress-eip',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RemoveIngressEipV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_details_of_custom_authorizers_v2_async(self, request):
         """查看自定义认证详情
 
@@ -5425,6 +5549,69 @@ class ApigAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateGatewayResponseV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_ingress_eip_v2_async(self, request):
+        """更新实例入公网带宽
+
+        更新实例入公网带宽，仅当实例为ELB类型时支持
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateIngressEipV2
+        :type request: :class:`huaweicloudsdkapig.v2.UpdateIngressEipV2Request`
+        :rtype: :class:`huaweicloudsdkapig.v2.UpdateIngressEipV2Response`
+        """
+        return self.update_ingress_eip_v2_with_http_info(request)
+
+    def update_ingress_eip_v2_with_http_info(self, request):
+        all_params = ['instance_id', 'update_ingress_eip_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/ingress-eip',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateIngressEipV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

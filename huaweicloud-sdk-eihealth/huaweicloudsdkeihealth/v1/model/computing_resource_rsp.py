@@ -24,13 +24,12 @@ class ComputingResourceRsp:
         'resource_id': 'str',
         'name': 'str',
         'spec': 'ComputingSpecDto',
-        'ip': 'str',
         'system_disk': 'DiskDto',
         'data_disks': 'list[DiskDto]',
         'image': 'ImageDto',
         'charge_mode': 'str',
-        'period_num': 'str',
         'create_time': 'str',
+        'failure_reason': 'str',
         'status': 'str',
         'availability_zone_id': 'str',
         'schedulable': 'bool',
@@ -42,20 +41,19 @@ class ComputingResourceRsp:
         'resource_id': 'resource_id',
         'name': 'name',
         'spec': 'spec',
-        'ip': 'ip',
         'system_disk': 'system_disk',
         'data_disks': 'data_disks',
         'image': 'image',
         'charge_mode': 'charge_mode',
-        'period_num': 'period_num',
         'create_time': 'create_time',
+        'failure_reason': 'failure_reason',
         'status': 'status',
         'availability_zone_id': 'availability_zone_id',
         'schedulable': 'schedulable',
         'node_labels': 'node_labels'
     }
 
-    def __init__(self, id=None, resource_id=None, name=None, spec=None, ip=None, system_disk=None, data_disks=None, image=None, charge_mode=None, period_num=None, create_time=None, status=None, availability_zone_id=None, schedulable=None, node_labels=None):
+    def __init__(self, id=None, resource_id=None, name=None, spec=None, system_disk=None, data_disks=None, image=None, charge_mode=None, create_time=None, failure_reason=None, status=None, availability_zone_id=None, schedulable=None, node_labels=None):
         """ComputingResourceRsp
 
         The model defined in huaweicloud sdk
@@ -68,8 +66,6 @@ class ComputingResourceRsp:
         :type name: str
         :param spec: 
         :type spec: :class:`huaweicloudsdkeihealth.v1.ComputingSpecDto`
-        :param ip: IP地址
-        :type ip: str
         :param system_disk: 
         :type system_disk: :class:`huaweicloudsdkeihealth.v1.DiskDto`
         :param data_disks: 数据盘
@@ -78,10 +74,10 @@ class ComputingResourceRsp:
         :type image: :class:`huaweicloudsdkeihealth.v1.ImageDto`
         :param charge_mode: 计费模式
         :type charge_mode: str
-        :param period_num: 购买周期
-        :type period_num: str
         :param create_time: 购买时间
         :type create_time: str
+        :param failure_reason: 失败原因
+        :type failure_reason: str
         :param status: 状态
         :type status: str
         :param availability_zone_id: 可用区
@@ -98,13 +94,12 @@ class ComputingResourceRsp:
         self._resource_id = None
         self._name = None
         self._spec = None
-        self._ip = None
         self._system_disk = None
         self._data_disks = None
         self._image = None
         self._charge_mode = None
-        self._period_num = None
         self._create_time = None
+        self._failure_reason = None
         self._status = None
         self._availability_zone_id = None
         self._schedulable = None
@@ -116,7 +111,6 @@ class ComputingResourceRsp:
         self.name = name
         if spec is not None:
             self.spec = spec
-        self.ip = ip
         if system_disk is not None:
             self.system_disk = system_disk
         if data_disks is not None:
@@ -124,9 +118,8 @@ class ComputingResourceRsp:
         if image is not None:
             self.image = image
         self.charge_mode = charge_mode
-        if period_num is not None:
-            self.period_num = period_num
         self.create_time = create_time
+        self.failure_reason = failure_reason
         self.status = status
         self.availability_zone_id = availability_zone_id
         if schedulable is not None:
@@ -218,28 +211,6 @@ class ComputingResourceRsp:
         self._spec = spec
 
     @property
-    def ip(self):
-        """Gets the ip of this ComputingResourceRsp.
-
-        IP地址
-
-        :return: The ip of this ComputingResourceRsp.
-        :rtype: str
-        """
-        return self._ip
-
-    @ip.setter
-    def ip(self, ip):
-        """Sets the ip of this ComputingResourceRsp.
-
-        IP地址
-
-        :param ip: The ip of this ComputingResourceRsp.
-        :type ip: str
-        """
-        self._ip = ip
-
-    @property
     def system_disk(self):
         """Gets the system_disk of this ComputingResourceRsp.
 
@@ -320,28 +291,6 @@ class ComputingResourceRsp:
         self._charge_mode = charge_mode
 
     @property
-    def period_num(self):
-        """Gets the period_num of this ComputingResourceRsp.
-
-        购买周期
-
-        :return: The period_num of this ComputingResourceRsp.
-        :rtype: str
-        """
-        return self._period_num
-
-    @period_num.setter
-    def period_num(self, period_num):
-        """Sets the period_num of this ComputingResourceRsp.
-
-        购买周期
-
-        :param period_num: The period_num of this ComputingResourceRsp.
-        :type period_num: str
-        """
-        self._period_num = period_num
-
-    @property
     def create_time(self):
         """Gets the create_time of this ComputingResourceRsp.
 
@@ -362,6 +311,28 @@ class ComputingResourceRsp:
         :type create_time: str
         """
         self._create_time = create_time
+
+    @property
+    def failure_reason(self):
+        """Gets the failure_reason of this ComputingResourceRsp.
+
+        失败原因
+
+        :return: The failure_reason of this ComputingResourceRsp.
+        :rtype: str
+        """
+        return self._failure_reason
+
+    @failure_reason.setter
+    def failure_reason(self, failure_reason):
+        """Sets the failure_reason of this ComputingResourceRsp.
+
+        失败原因
+
+        :param failure_reason: The failure_reason of this ComputingResourceRsp.
+        :type failure_reason: str
+        """
+        self._failure_reason = failure_reason
 
     @property
     def status(self):

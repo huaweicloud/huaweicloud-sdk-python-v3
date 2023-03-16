@@ -23,7 +23,6 @@ class ShowMessageEmailConfigResponse(SdkResponse):
         'server': 'str',
         'subject_prefix': 'str',
         'user_name': 'str',
-        'password': 'str',
         'email': 'str',
         'language': 'LanguageEnum'
     }
@@ -32,12 +31,11 @@ class ShowMessageEmailConfigResponse(SdkResponse):
         'server': 'server',
         'subject_prefix': 'subject_prefix',
         'user_name': 'user_name',
-        'password': 'password',
         'email': 'email',
         'language': 'language'
     }
 
-    def __init__(self, server=None, subject_prefix=None, user_name=None, password=None, email=None, language=None):
+    def __init__(self, server=None, subject_prefix=None, user_name=None, email=None, language=None):
         """ShowMessageEmailConfigResponse
 
         The model defined in huaweicloud sdk
@@ -48,8 +46,6 @@ class ShowMessageEmailConfigResponse(SdkResponse):
         :type subject_prefix: str
         :param user_name: 用户名
         :type user_name: str
-        :param password: 密码
-        :type password: str
         :param email: 邮箱
         :type email: str
         :param language: 
@@ -61,7 +57,6 @@ class ShowMessageEmailConfigResponse(SdkResponse):
         self._server = None
         self._subject_prefix = None
         self._user_name = None
-        self._password = None
         self._email = None
         self._language = None
         self.discriminator = None
@@ -72,8 +67,6 @@ class ShowMessageEmailConfigResponse(SdkResponse):
             self.subject_prefix = subject_prefix
         if user_name is not None:
             self.user_name = user_name
-        if password is not None:
-            self.password = password
         if email is not None:
             self.email = email
         if language is not None:
@@ -144,28 +137,6 @@ class ShowMessageEmailConfigResponse(SdkResponse):
         :type user_name: str
         """
         self._user_name = user_name
-
-    @property
-    def password(self):
-        """Gets the password of this ShowMessageEmailConfigResponse.
-
-        密码
-
-        :return: The password of this ShowMessageEmailConfigResponse.
-        :rtype: str
-        """
-        return self._password
-
-    @password.setter
-    def password(self, password):
-        """Sets the password of this ShowMessageEmailConfigResponse.
-
-        密码
-
-        :param password: The password of this ShowMessageEmailConfigResponse.
-        :type password: str
-        """
-        self._password = password
 
     @property
     def email(self):

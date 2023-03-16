@@ -38,7 +38,8 @@ class ShowJobResponse(SdkResponse):
         'dag': 'dict(str, dict(str, str))',
         'io_acc_expected_usage': 'int',
         'io_acc_info': 'IoAccInfoDto',
-        'node_labels': 'list[str]'
+        'node_labels': 'list[str]',
+        'still_running_tasks': 'list[str]'
     }
 
     attribute_map = {
@@ -60,10 +61,11 @@ class ShowJobResponse(SdkResponse):
         'dag': 'dag',
         'io_acc_expected_usage': 'io_acc_expected_usage',
         'io_acc_info': 'io_acc_info',
-        'node_labels': 'node_labels'
+        'node_labels': 'node_labels',
+        'still_running_tasks': 'still_running_tasks'
     }
 
-    def __init__(self, id=None, name=None, description=None, labels=None, priority=None, timeout=None, output_dir=None, status=None, create_time=None, finish_time=None, failed_message=None, failed_reason=None, tool_info=None, tasks=None, task_runtime_info=None, dag=None, io_acc_expected_usage=None, io_acc_info=None, node_labels=None):
+    def __init__(self, id=None, name=None, description=None, labels=None, priority=None, timeout=None, output_dir=None, status=None, create_time=None, finish_time=None, failed_message=None, failed_reason=None, tool_info=None, tasks=None, task_runtime_info=None, dag=None, io_acc_expected_usage=None, io_acc_info=None, node_labels=None, still_running_tasks=None):
         """ShowJobResponse
 
         The model defined in huaweicloud sdk
@@ -106,6 +108,8 @@ class ShowJobResponse(SdkResponse):
         :type io_acc_info: :class:`huaweicloudsdkeihealth.v1.IoAccInfoDto`
         :param node_labels: 计算节点标签
         :type node_labels: list[str]
+        :param still_running_tasks: 仍在运行中的子任务
+        :type still_running_tasks: list[str]
         """
         
         super(ShowJobResponse, self).__init__()
@@ -129,6 +133,7 @@ class ShowJobResponse(SdkResponse):
         self._io_acc_expected_usage = None
         self._io_acc_info = None
         self._node_labels = None
+        self._still_running_tasks = None
         self.discriminator = None
 
         if id is not None:
@@ -169,6 +174,8 @@ class ShowJobResponse(SdkResponse):
             self.io_acc_info = io_acc_info
         if node_labels is not None:
             self.node_labels = node_labels
+        if still_running_tasks is not None:
+            self.still_running_tasks = still_running_tasks
 
     @property
     def id(self):
@@ -579,6 +586,28 @@ class ShowJobResponse(SdkResponse):
         :type node_labels: list[str]
         """
         self._node_labels = node_labels
+
+    @property
+    def still_running_tasks(self):
+        """Gets the still_running_tasks of this ShowJobResponse.
+
+        仍在运行中的子任务
+
+        :return: The still_running_tasks of this ShowJobResponse.
+        :rtype: list[str]
+        """
+        return self._still_running_tasks
+
+    @still_running_tasks.setter
+    def still_running_tasks(self, still_running_tasks):
+        """Sets the still_running_tasks of this ShowJobResponse.
+
+        仍在运行中的子任务
+
+        :param still_running_tasks: The still_running_tasks of this ShowJobResponse.
+        :type still_running_tasks: list[str]
+        """
+        self._still_running_tasks = still_running_tasks
 
     def to_dict(self):
         """Returns the model properties as a dict"""

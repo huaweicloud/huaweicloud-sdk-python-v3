@@ -1,3 +1,445 @@
+# 3.1.32 2023-03-16
+
+### HuaweiCloud SDK Organizations
+
+- _新增特性_
+  - 支持组织云服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK APIG
+
+- _新增特性_
+  - 支持接口`UpdateIngressEipV2`、`AddIngressEipV2`、`RemoveIngressEipV2`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK BMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowJobInfos**
+    - 响应参数变更
+      - `* begin_time: date-time -> string`
+      - `* end_time: date-time -> string`
+      - `* entities.sub_jobs.begin_time: date-time -> string`
+      - `* entities.sub_jobs.end_time: date-time -> string`
+
+### HuaweiCloud SDK CBH
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListQuotaStatus**
+    - 响应参数变更
+      - `* quota: string -> int32`
+      - `* eip_quota: string -> int32`
+  - **StopCbhInstance**
+    - 请求参数变更
+      - `- reboot`
+  - **ShowNetworkConfiguration**
+    - 请求参数变更
+      - `+ server_id`
+  - **CreateInstanceOrder**
+    - 请求参数变更
+      - `- end_time`
+      - `- relative_resource_id`
+      - `- product_infos.available_zone_id`
+  - **ChangeInstanceNetwork**
+    - 请求参数变更
+      - `+ server_id`
+  - **ListCbhInstance**
+    - 响应参数变更
+      - `- instance.is_auto_renew`
+  - **CreateInstance**
+    - 请求参数变更
+      - `- server.image_ref`
+      - `- server.name`
+      - `- server.personality`
+      - `- server.user_data`
+      - `- server.admin_password`
+      - `- server.key_name`
+      - `- server.count`
+      - `- server.root_volume`
+      - `- server.data_volumes`
+      - `- server.extend_param`
+      - `- server.metadata`
+      - `- server.region_id`
+      - `- server.resource_spec_code`
+      - `- server.end_time`
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 支持接口`ListDomains`、`ShowDomainDetailByName`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListDomains**
+    - 请求参数变更
+      - `+ show_tags`
+      - `+ exact_match`
+    - 响应参数变更
+      - `+ domains.tags`
+
+### HuaweiCloud SDK CPH
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowBandwidthDetail**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+  - **ListJobs**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+  - **ListCloudPhoneModels**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+  - **CreateCloudPhoneServer**
+    - 响应参数变更
+      - `+ server_ids`
+  - **CreateNet2CloudPhoneServer**
+    - 响应参数变更
+      - `+ server_ids`
+
+### HuaweiCloud SDK eiHealth
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListMessageStatistics`
+    - `ListNotice`
+    - `BatchDeleteNotice`
+    - `BatchUpdateNotice`
+    - `ImportUser`
+    - `ListGlobalWorkflowStatistic`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListDatabaseData**
+    - 响应参数变更
+      - `* objects: list<map<string, object>> -> list<map<string, string>>`
+  - **ImportDatabaseData**
+    - 响应参数变更
+      - `- creator`
+      - `- create_time`
+      - `- total_count`
+      - `- end_time`
+      - `- name`
+      - `- finish_count`
+      - `- type`
+      - `- failed_reason`
+      - `- status`
+  - **ShowDataJob**
+    - 响应参数变更
+      - `+ additions`
+  - **UpdateJobConfig**
+    - 请求参数变更
+      - `- job_retain_number`
+  - **ShowMessageClearRule**
+    - 响应参数变更
+      - `- message_retain_time`
+  - **UpdateMessageClearRule**
+    - 请求参数变更
+      - `- message_retain_number`
+      - `- message_retain_time`
+  - **ShowOverview**
+    - 响应参数变更
+      - `+ is_arrears`
+  - **UpdatePerformanceResource**
+    - 请求参数变更
+      - `+ schedulable`
+  - **ShowEnv**
+    - 响应参数变更
+      - `+ enable_cold_archive`
+  - **ShowUser**
+    - 响应参数变更
+      - `+ source`
+  - **ShowAsset**
+    - 响应参数变更
+      - `+ versions.description`
+      - `- versions.descritpion`
+  - **ShowAssetVersion**
+    - 响应参数变更
+      - `+ version.description`
+      - `- version.descritpion`
+  - **CreateBackup**
+    - 请求参数变更
+      - `+ storage_type`
+  - **ListBackup**
+    - 响应参数变更
+      - `+ backups.storage_type`
+      - `+ backups.archive_days`
+  - **ShowData**
+    - 请求参数变更
+      - `+ X-Need-Content`
+    - 响应参数变更
+      - `+ content`
+  - **ListDataJob**
+    - 响应参数变更
+      - `- creator`
+      - `- create_time`
+      - `- total_count`
+      - `- end_time`
+      - `- name`
+      - `- id`
+      - `- finish_count`
+      - `- type`
+      - `- failed_reason`
+      - `- status`
+      - `+ data_jobs.additions`
+  - **ShowProjectTraceData**
+    - 响应参数变更
+      - `- allowed_operate`
+      - `- deletable`
+  - **UpdateMessageReceiveConfig**
+    - 请求参数变更
+      - `- scope`
+      - `- language`
+      - `- resource_types`
+  - **ShowMessageEmailConfig**
+    - 响应参数变更
+      - `- password`
+  - **UpdateMessageEmailConfig**
+    - 请求参数变更
+      - `- server`
+      - `- subject_prefix`
+      - `- password`
+      - `- user_name`
+      - `- language`
+      - `- email`
+  - **ListUser**
+    - 响应参数变更
+      - `+ source`
+      - `+ users.source`
+  - **ShowTaskInstanceMetricData**
+    - 响应参数变更
+      - `- metric_name`
+      - `- resource_id`
+  - **ListPerformanceResourceStat**
+    - 响应参数变更
+      - `+ performance_resources.schedulable`
+  - **ListAsset**
+    - 响应参数变更
+      - `+ assets.versions.description`
+      - `- assets.versions.descritpion`
+  - **ListStar**
+    - 响应参数变更
+      - `+ assets.versions.description`
+      - `- assets.versions.descritpion`
+  - **ListData**
+    - 响应参数变更
+      - `+ content`
+      - `+ datas.content`
+  - **ShowProjectTrace**
+    - 响应参数变更
+      - `- allowed_operate`
+      - `- deletable`
+      - `- datas.allowed_operate`
+      - `- datas.deletable`
+      - `* datas: list<DataRsp> -> list<TraceDataRsp>`
+  - **ListComputingResources**
+    - 响应参数变更
+      - `+ resources.failure_reason`
+      - `- resources.ip`
+      - `- resources.period_num`
+  - **ListDatabaseResource**
+    - 响应参数变更
+      - `+ resources.failure_reason`
+  - **ListPerformanceResources**
+    - 响应参数变更
+      - `+ resources.running_job_count`
+      - `+ resources.failure_reason`
+      - `+ resources.schedulable`
+  - **ListStorageResources**
+    - 响应参数变更
+      - `- resources.id`
+      - `- resources.name`
+  - **ExecuteJob**
+    - 请求参数变更
+      - `+ tasks.io_acc_type`
+  - **CreateAutoJob**
+    - 请求参数变更
+      - `+ tasks.io_acc_type`
+  - **UpdateJob**
+    - 请求参数变更
+      - `+ tasks.io_acc_type`
+  - **ShowJob**
+    - 响应参数变更
+      - `+ still_running_tasks`
+      - `+ task_runtime_info.sub_tasks.pod_create_time`
+      - `+ task_runtime_info.sub_tasks.pod_start_time`
+      - `+ task_runtime_info.sub_tasks.job_failed_times`
+      - `+ tasks.io_acc_type`
+  - **UpdateAutoJob**
+    - 请求参数变更
+      - `+ tasks.io_acc_type`
+  - **ShowAutoJob**
+    - 响应参数变更
+      - `+ tasks.io_acc_type`
+  - **ShowWorkflow**
+    - 响应参数变更
+      - `+ tasks.io_acc_type`
+
+### HuaweiCloud SDK EIP
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListBandwidthPkg**
+    - 请求参数变更
+      - `+ limit`
+      - `+ marker`
+      - `+ offset`
+  - **ListCommonPools**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+  - **ListShareBandwidthTypes**
+    - 请求参数变更
+      - `+ marker`
+      - `+ offset`
+
+### HuaweiCloud SDK IAM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **KeystoneListMappings**
+    - 响应参数变更
+      - `* mappings.rules.local.groups: object -> string`
+  - **KeystoneShowMapping**
+    - 响应参数变更
+      - `* mapping.rules.local.groups: object -> string`
+  - **KeystoneCreateMapping**
+    - 请求参数变更
+      - `* mapping.rules.local.groups: object -> string`
+    - 响应参数变更
+      - `* mapping.rules.local.groups: object -> string`
+  - **KeystoneUpdateMapping**
+    - 请求参数变更
+      - `* mapping.rules.local.groups: object -> string`
+    - 响应参数变更
+      - `* mapping.rules.local.groups: object -> string`
+
+### HuaweiCloud SDK Image
+
+- _新增特性_
+  - 支持接口`CreateVideoObjectMaskingTask`、`ShowVideoObjectMaskingTask`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateTextToImageTask**
+    - 请求参数变更
+      - `+ config.common.inference.image_nums`
+      - `+ config.common.inference.resolution: enum value [512*768,768*512,512*512]`
+  - **ShowTextToImageTask**
+    - 响应参数变更
+      - `+ config.common.inference.image_nums`
+      - `+ config.common.inference.resolution: enum value [512*768,768*512,512*512]`
+  - **CreateImageVariationTask**
+    - 请求参数变更
+      - `+ config.common.inference.image_nums`
+      - `+ config.common.inference.resolution: enum value [512*768,768*512,512*512]`
+  - **ShowImageVariationTask**
+    - 响应参数变更
+      - `+ config.common.inference.image_nums`
+      - `+ config.common.inference.resolution: enum value [512*768,768*512,512*512]`
+
+### HuaweiCloud SDK IoTEdge
+
+- _新增特性_
+  - 支持以下接口：
+    - `BatchListDcDs`
+    - `CreateDs`
+    - `ShowDcDs`
+    - `UpdateDcDs`
+    - `DeleteDcDs`
+    - `SynchronizeDcConfigs`
+    - `BatchListDcDevices`
+    - `BatchListDcPoints`
+    - `CreateDcPoint`
+    - `ShowDcPoint`
+    - `UpdateDcPoint`
+    - `DeleteDcPoint`
+    - `ImportPoints`
+    - `ShowPointTemplate`
+    - `ShowPoints`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IVS
+
+- _新增特性_
+  - 支持接口`DetectStandardByVideoAndIdCardImage`、`DetectStandardByVideoAndNameAndId`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeMvsInvoice**
+    - 请求参数变更
+      - `+ return_text_location`
+      - `+ return_confidence`
+      - `+ type`
+    - 响应参数变更
+      - `+ result.buyer_address`
+      - `+ result.buyer_phone`
+      - `+ result.licence_plate_number`
+      - `+ result.registration_number`
+      - `+ result.dept_motor_vehicles`
+      - `+ result.auction_org_name`
+      - `+ result.auction_org_address`
+      - `+ result.auction_org_id`
+      - `+ result.auction_org_bank_account`
+      - `+ result.auction_org_phone`
+      - `+ result.used_vehicle_market_name`
+      - `+ result.used_vehicle_market_id`
+      - `+ result.used_vehicle_market_address`
+      - `+ result.used_vehicle_market_bank_account`
+      - `+ result.used_vehicle_market_phone`
+      - `+ result.remark`
+      - `+ result.drawer_name`
+      - `+ result.type`
+      - `+ result.text_location`
+      - `+ result.confidence`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`ListRecycleInstances`、`ShowRecyclePolicy`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.31 2023-03-14
 
 ### HuaweiCloud SDK Image

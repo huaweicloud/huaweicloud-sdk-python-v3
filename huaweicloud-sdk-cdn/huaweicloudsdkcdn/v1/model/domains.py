@@ -40,7 +40,8 @@ class Domains:
         'origin_status': 'str',
         'banned_reason': 'str',
         'locked_reason': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'tags': 'list[EpResourceTag]'
     }
 
     attribute_map = {
@@ -64,10 +65,11 @@ class Domains:
         'origin_status': 'origin_status',
         'banned_reason': 'banned_reason',
         'locked_reason': 'locked_reason',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'tags': 'tags'
     }
 
-    def __init__(self, id=None, domain_name=None, business_type=None, user_domain_id=None, domain_status=None, cname=None, sources=None, domain_origin_host=None, https_status=None, create_time=None, modify_time=None, disabled=None, locked=None, auto_refresh_preheat=None, service_area=None, range_status=None, follow_status=None, origin_status=None, banned_reason=None, locked_reason=None, enterprise_project_id=None):
+    def __init__(self, id=None, domain_name=None, business_type=None, user_domain_id=None, domain_status=None, cname=None, sources=None, domain_origin_host=None, https_status=None, create_time=None, modify_time=None, disabled=None, locked=None, auto_refresh_preheat=None, service_area=None, range_status=None, follow_status=None, origin_status=None, banned_reason=None, locked_reason=None, enterprise_project_id=None, tags=None):
         """Domains
 
         The model defined in huaweicloud sdk
@@ -114,6 +116,8 @@ class Domains:
         :type locked_reason: str
         :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
         :type enterprise_project_id: str
+        :param tags: 标签信息
+        :type tags: list[:class:`huaweicloudsdkcdn.v1.EpResourceTag`]
         """
         
         
@@ -139,6 +143,7 @@ class Domains:
         self._banned_reason = None
         self._locked_reason = None
         self._enterprise_project_id = None
+        self._tags = None
         self.discriminator = None
 
         if id is not None:
@@ -183,6 +188,8 @@ class Domains:
             self.locked_reason = locked_reason
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if tags is not None:
+            self.tags = tags
 
     @property
     def id(self):
@@ -641,6 +648,28 @@ class Domains:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def tags(self):
+        """Gets the tags of this Domains.
+
+        标签信息
+
+        :return: The tags of this Domains.
+        :rtype: list[:class:`huaweicloudsdkcdn.v1.EpResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this Domains.
+
+        标签信息
+
+        :param tags: The tags of this Domains.
+        :type tags: list[:class:`huaweicloudsdkcdn.v1.EpResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

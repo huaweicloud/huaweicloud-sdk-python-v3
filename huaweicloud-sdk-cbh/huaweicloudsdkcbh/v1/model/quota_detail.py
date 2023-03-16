@@ -36,11 +36,11 @@ class QuotaDetail:
 
         The model defined in huaweicloud sdk
 
-        :param zh_cn: 中文配额描述
+        :param zh_cn: 中文配额描述。
         :type zh_cn: str
-        :param en_us: 英文配额描述
+        :param en_us: 英文配额描述。
         :type en_us: str
-        :param remaining: 租户剩余配额数量
+        :param remaining: 租户剩余配额数量。
         :type remaining: int
         """
         
@@ -59,7 +59,7 @@ class QuotaDetail:
     def zh_cn(self):
         """Gets the zh_cn of this QuotaDetail.
 
-        中文配额描述
+        中文配额描述。
 
         :return: The zh_cn of this QuotaDetail.
         :rtype: str
@@ -70,7 +70,7 @@ class QuotaDetail:
     def zh_cn(self, zh_cn):
         """Sets the zh_cn of this QuotaDetail.
 
-        中文配额描述
+        中文配额描述。
 
         :param zh_cn: The zh_cn of this QuotaDetail.
         :type zh_cn: str
@@ -81,7 +81,7 @@ class QuotaDetail:
     def en_us(self):
         """Gets the en_us of this QuotaDetail.
 
-        英文配额描述
+        英文配额描述。
 
         :return: The en_us of this QuotaDetail.
         :rtype: str
@@ -92,7 +92,7 @@ class QuotaDetail:
     def en_us(self, en_us):
         """Sets the en_us of this QuotaDetail.
 
-        英文配额描述
+        英文配额描述。
 
         :param en_us: The en_us of this QuotaDetail.
         :type en_us: str
@@ -103,7 +103,7 @@ class QuotaDetail:
     def remaining(self):
         """Gets the remaining of this QuotaDetail.
 
-        租户剩余配额数量
+        租户剩余配额数量。
 
         :return: The remaining of this QuotaDetail.
         :rtype: int
@@ -114,7 +114,7 @@ class QuotaDetail:
     def remaining(self, remaining):
         """Sets the remaining of this QuotaDetail.
 
-        租户剩余配额数量
+        租户剩余配额数量。
 
         :param remaining: The remaining of this QuotaDetail.
         :type remaining: int

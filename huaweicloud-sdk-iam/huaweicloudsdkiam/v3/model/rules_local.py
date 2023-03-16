@@ -22,7 +22,7 @@ class RulesLocal:
     openapi_types = {
         'user': 'RulesLocalUser',
         'group': 'RulesLocalGroup',
-        'groups': 'RulesLocalGroups'
+        'groups': 'str'
     }
 
     attribute_map = {
@@ -40,8 +40,8 @@ class RulesLocal:
         :type user: :class:`huaweicloudsdkiam.v3.RulesLocalUser`
         :param group: 
         :type group: :class:`huaweicloudsdkiam.v3.RulesLocalGroup`
-        :param groups: 
-        :type groups: :class:`huaweicloudsdkiam.v3.RulesLocalGroups`
+        :param groups: 联邦用户在本系统中所属用户组列表
+        :type groups: str
         """
         
         
@@ -98,8 +98,10 @@ class RulesLocal:
     def groups(self):
         """Gets the groups of this RulesLocal.
 
+        联邦用户在本系统中所属用户组列表
+
         :return: The groups of this RulesLocal.
-        :rtype: :class:`huaweicloudsdkiam.v3.RulesLocalGroups`
+        :rtype: str
         """
         return self._groups
 
@@ -107,8 +109,10 @@ class RulesLocal:
     def groups(self, groups):
         """Sets the groups of this RulesLocal.
 
+        联邦用户在本系统中所属用户组列表
+
         :param groups: The groups of this RulesLocal.
-        :type groups: :class:`huaweicloudsdkiam.v3.RulesLocalGroups`
+        :type groups: str
         """
         self._groups = groups
 

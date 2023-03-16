@@ -1313,6 +1313,792 @@ class IoTEdgeClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def batch_list_dc_ds(self, request):
+        """查询数据源配置列表
+
+        查询数据源配置列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchListDcDs
+        :type request: :class:`huaweicloudsdkiotedge.v2.BatchListDcDsRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.BatchListDcDsResponse`
+        """
+        return self.batch_list_dc_ds_with_http_info(request)
+
+    def batch_list_dc_ds_with_http_info(self, request):
+        all_params = ['edge_node_id', 'module_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+
+        query_params = []
+        if 'module_id' in local_var_params:
+            query_params.append(('module_id', local_var_params['module_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchListDcDsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_ds(self, request):
+        """创建数据源配置
+
+        用户通过Console接口在指定边缘节点上创建数据源配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDs
+        :type request: :class:`huaweicloudsdkiotedge.v2.CreateDsRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.CreateDsResponse`
+        """
+        return self.create_ds_with_http_info(request)
+
+    def create_ds_with_http_info(self, request):
+        all_params = ['edge_node_id', 'create_dc_ds_req_dto']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateDsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_dc_ds(self, request):
+        """删除数据源配置
+
+        删除数据源配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDcDs
+        :type request: :class:`huaweicloudsdkiotedge.v2.DeleteDcDsRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteDcDsResponse`
+        """
+        return self.delete_dc_ds_with_http_info(request)
+
+    def delete_dc_ds_with_http_info(self, request):
+        all_params = ['edge_node_id', 'ds_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+        if 'ds_id' in local_var_params:
+            path_params['ds_id'] = local_var_params['ds_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteDcDsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_dc_ds(self, request):
+        """查询数据源配置
+
+        查询数据源配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDcDs
+        :type request: :class:`huaweicloudsdkiotedge.v2.ShowDcDsRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ShowDcDsResponse`
+        """
+        return self.show_dc_ds_with_http_info(request)
+
+    def show_dc_ds_with_http_info(self, request):
+        all_params = ['edge_node_id', 'ds_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+        if 'ds_id' in local_var_params:
+            path_params['ds_id'] = local_var_params['ds_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowDcDsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def synchronize_dc_configs(self, request):
+        """下发数采配置
+
+        下发数采配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SynchronizeDcConfigs
+        :type request: :class:`huaweicloudsdkiotedge.v2.SynchronizeDcConfigsRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.SynchronizeDcConfigsResponse`
+        """
+        return self.synchronize_dc_configs_with_http_info(request)
+
+    def synchronize_dc_configs_with_http_info(self, request):
+        all_params = ['edge_node_id', 'ds_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+        if 'ds_id' in local_var_params:
+            path_params['ds_id'] = local_var_params['ds_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/synchronize',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SynchronizeDcConfigsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_dc_ds(self, request):
+        """修改数据源配置
+
+        修改数据源配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDcDs
+        :type request: :class:`huaweicloudsdkiotedge.v2.UpdateDcDsRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateDcDsResponse`
+        """
+        return self.update_dc_ds_with_http_info(request)
+
+    def update_dc_ds_with_http_info(self, request):
+        all_params = ['edge_node_id', 'ds_id', 'update_dc_ds_req_dto']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+        if 'ds_id' in local_var_params:
+            path_params['ds_id'] = local_var_params['ds_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateDcDsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_list_dc_devices(self, request):
+        """查数采连接子设备列表
+
+        查询数采连接下子设备列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchListDcDevices
+        :type request: :class:`huaweicloudsdkiotedge.v2.BatchListDcDevicesRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.BatchListDcDevicesResponse`
+        """
+        return self.batch_list_dc_devices_with_http_info(request)
+
+    def batch_list_dc_devices_with_http_info(self, request):
+        all_params = ['edge_node_id', 'ds_id', 'device_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+        if 'ds_id' in local_var_params:
+            path_params['ds_id'] = local_var_params['ds_id']
+
+        query_params = []
+        if 'device_id' in local_var_params:
+            query_params.append(('device_id', local_var_params['device_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/devices',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchListDcDevicesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_list_dc_points(self, request):
+        """查询点位表配置列表
+
+        查询点位表配置列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchListDcPoints
+        :type request: :class:`huaweicloudsdkiotedge.v2.BatchListDcPointsRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.BatchListDcPointsResponse`
+        """
+        return self.batch_list_dc_points_with_http_info(request)
+
+    def batch_list_dc_points_with_http_info(self, request):
+        all_params = ['edge_node_id', 'ds_id', 'point_id', 'name', '_property', 'device_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+        if 'ds_id' in local_var_params:
+            path_params['ds_id'] = local_var_params['ds_id']
+
+        query_params = []
+        if 'point_id' in local_var_params:
+            query_params.append(('point_id', local_var_params['point_id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if '_property' in local_var_params:
+            query_params.append(('property', local_var_params['_property']))
+        if 'device_id' in local_var_params:
+            query_params.append(('device_id', local_var_params['device_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/points',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchListDcPointsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_dc_point(self, request):
+        """创建点位表配置
+
+        用户通过Console接口在指定边缘节点上点位表配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDcPoint
+        :type request: :class:`huaweicloudsdkiotedge.v2.CreateDcPointRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.CreateDcPointResponse`
+        """
+        return self.create_dc_point_with_http_info(request)
+
+    def create_dc_point_with_http_info(self, request):
+        all_params = ['edge_node_id', 'ds_id', 'create_dc_point_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+        if 'ds_id' in local_var_params:
+            path_params['ds_id'] = local_var_params['ds_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/points',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateDcPointResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_dc_point(self, request):
+        """删除点位表配置
+
+        删除点位表配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDcPoint
+        :type request: :class:`huaweicloudsdkiotedge.v2.DeleteDcPointRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteDcPointResponse`
+        """
+        return self.delete_dc_point_with_http_info(request)
+
+    def delete_dc_point_with_http_info(self, request):
+        all_params = ['edge_node_id', 'ds_id', 'point_id', 'device_id', '_property']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+        if 'ds_id' in local_var_params:
+            path_params['ds_id'] = local_var_params['ds_id']
+        if 'point_id' in local_var_params:
+            path_params['point_id'] = local_var_params['point_id']
+
+        query_params = []
+        if 'device_id' in local_var_params:
+            query_params.append(('device_id', local_var_params['device_id']))
+        if '_property' in local_var_params:
+            query_params.append(('property', local_var_params['_property']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/points/{point_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteDcPointResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_dc_point(self, request):
+        """查询点位表配置详情
+
+        查询点位表配置详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDcPoint
+        :type request: :class:`huaweicloudsdkiotedge.v2.ShowDcPointRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ShowDcPointResponse`
+        """
+        return self.show_dc_point_with_http_info(request)
+
+    def show_dc_point_with_http_info(self, request):
+        all_params = ['edge_node_id', 'ds_id', 'point_id', 'device_id', '_property']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+        if 'ds_id' in local_var_params:
+            path_params['ds_id'] = local_var_params['ds_id']
+        if 'point_id' in local_var_params:
+            path_params['point_id'] = local_var_params['point_id']
+
+        query_params = []
+        if 'device_id' in local_var_params:
+            query_params.append(('device_id', local_var_params['device_id']))
+        if '_property' in local_var_params:
+            query_params.append(('property', local_var_params['_property']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/points/{point_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowDcPointResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_dc_point(self, request):
+        """修改点位表配置
+
+        修改点位表配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDcPoint
+        :type request: :class:`huaweicloudsdkiotedge.v2.UpdateDcPointRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateDcPointResponse`
+        """
+        return self.update_dc_point_with_http_info(request)
+
+    def update_dc_point_with_http_info(self, request):
+        all_params = ['edge_node_id', 'ds_id', 'point_id', 'update_dc_point_req_dto']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+        if 'ds_id' in local_var_params:
+            path_params['ds_id'] = local_var_params['ds_id']
+        if 'point_id' in local_var_params:
+            path_params['point_id'] = local_var_params['point_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/points/{point_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateDcPointResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_external_entity(self, request):
         """在指定节点上创建外部实体
 
@@ -2002,6 +2788,198 @@ class IoTEdgeClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateRoutesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def import_points(self, request):
+        """批量导入点位表
+
+        用户通过Console接口在指定边缘节点上点位表配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ImportPoints
+        :type request: :class:`huaweicloudsdkiotedge.v2.ImportPointsRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ImportPointsResponse`
+        """
+        return self.import_points_with_http_info(request)
+
+    def import_points_with_http_info(self, request):
+        all_params = ['edge_node_id', 'ds_id', 'update_type', 'file']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+        if 'ds_id' in local_var_params:
+            path_params['ds_id'] = local_var_params['ds_id']
+
+        query_params = []
+        if 'update_type' in local_var_params:
+            query_params.append(('update_type', local_var_params['update_type']))
+
+        header_params = {}
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/import-points',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ImportPointsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_point_template(self, request):
+        """查询点位表模板文件
+
+        查询点位表模板文件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowPointTemplate
+        :type request: :class:`huaweicloudsdkiotedge.v2.ShowPointTemplateRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ShowPointTemplateResponse`
+        """
+        return self.show_point_template_with_http_info(request)
+
+    def show_point_template_with_http_info(self, request):
+        all_params = ['edge_node_id', 'ds_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+        if 'ds_id' in local_var_params:
+            path_params['ds_id'] = local_var_params['ds_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/download-template',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowPointTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_points(self, request):
+        """查询点位表模板文件
+
+        查询点位表模板文件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowPoints
+        :type request: :class:`huaweicloudsdkiotedge.v2.ShowPointsRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ShowPointsResponse`
+        """
+        return self.show_points_with_http_info(request)
+
+    def show_points_with_http_info(self, request):
+        all_params = ['edge_node_id', 'ds_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+        if 'ds_id' in local_var_params:
+            path_params['ds_id'] = local_var_params['ds_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/export-points',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowPointsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

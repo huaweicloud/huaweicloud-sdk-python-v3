@@ -1,3 +1,445 @@
+# 3.1.32 2023-03-16
+
+### HuaweiCloud SDK Organizations
+
+- _Features_
+  - Support the service `Organizations`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK APIG
+
+- _Features_
+  - Support the interfaces `UpdateIngressEipV2`, `AddIngressEipV2`, `RemoveIngressEipV2`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK BMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowJobInfos**
+    - changes of response param
+      - `* begin_time: date-time -> string`
+      - `* end_time: date-time -> string`
+      - `* entities.sub_jobs.begin_time: date-time -> string`
+      - `* entities.sub_jobs.end_time: date-time -> string`
+
+### HuaweiCloud SDK CBH
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListQuotaStatus**
+    - changes of response param
+      - `* quota: string -> int32`
+      - `* eip_quota: string -> int32`
+  - **StopCbhInstance**
+    - changes of request param
+      - `- reboot`
+  - **ShowNetworkConfiguration**
+    - changes of request param
+      - `+ server_id`
+  - **CreateInstanceOrder**
+    - changes of request param
+      - `- end_time`
+      - `- relative_resource_id`
+      - `- product_infos.available_zone_id`
+  - **ChangeInstanceNetwork**
+    - changes of request param
+      - `+ server_id`
+  - **ListCbhInstance**
+    - changes of response param
+      - `- instance.is_auto_renew`
+  - **CreateInstance**
+    - changes of request param
+      - `- server.image_ref`
+      - `- server.name`
+      - `- server.personality`
+      - `- server.user_data`
+      - `- server.admin_password`
+      - `- server.key_name`
+      - `- server.count`
+      - `- server.root_volume`
+      - `- server.data_volumes`
+      - `- server.extend_param`
+      - `- server.metadata`
+      - `- server.region_id`
+      - `- server.resource_spec_code`
+      - `- server.end_time`
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - Support the interfaces `ListDomains`, `ShowDomainDetailByName`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListDomains**
+    - changes of request param
+      - `+ show_tags`
+      - `+ exact_match`
+    - changes of response param
+      - `+ domains.tags`
+
+### HuaweiCloud SDK CPH
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowBandwidthDetail**
+    - changes of request param
+      - `+ offset`
+      - `+ limit`
+  - **ListJobs**
+    - changes of request param
+      - `+ offset`
+      - `+ limit`
+  - **ListCloudPhoneModels**
+    - changes of request param
+      - `+ offset`
+      - `+ limit`
+  - **CreateCloudPhoneServer**
+    - changes of response param
+      - `+ server_ids`
+  - **CreateNet2CloudPhoneServer**
+    - changes of response param
+      - `+ server_ids`
+
+### HuaweiCloud SDK eiHealth
+
+- _Features_
+  - Support the following interfaces：
+    - `ListMessageStatistics`
+    - `ListNotice`
+    - `BatchDeleteNotice`
+    - `BatchUpdateNotice`
+    - `ImportUser`
+    - `ListGlobalWorkflowStatistic`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListDatabaseData**
+    - changes of response param
+      - `* objects: list<map<string, object>> -> list<map<string, string>>`
+  - **ImportDatabaseData**
+    - changes of response param
+      - `- creator`
+      - `- create_time`
+      - `- total_count`
+      - `- end_time`
+      - `- name`
+      - `- finish_count`
+      - `- type`
+      - `- failed_reason`
+      - `- status`
+  - **ShowDataJob**
+    - changes of response param
+      - `+ additions`
+  - **UpdateJobConfig**
+    - changes of request param
+      - `- job_retain_number`
+  - **ShowMessageClearRule**
+    - changes of response param
+      - `- message_retain_time`
+  - **UpdateMessageClearRule**
+    - changes of request param
+      - `- message_retain_number`
+      - `- message_retain_time`
+  - **ShowOverview**
+    - changes of response param
+      - `+ is_arrears`
+  - **UpdatePerformanceResource**
+    - changes of request param
+      - `+ schedulable`
+  - **ShowEnv**
+    - changes of response param
+      - `+ enable_cold_archive`
+  - **ShowUser**
+    - changes of response param
+      - `+ source`
+  - **ShowAsset**
+    - changes of response param
+      - `+ versions.description`
+      - `- versions.descritpion`
+  - **ShowAssetVersion**
+    - changes of response param
+      - `+ version.description`
+      - `- version.descritpion`
+  - **CreateBackup**
+    - changes of request param
+      - `+ storage_type`
+  - **ListBackup**
+    - changes of response param
+      - `+ backups.storage_type`
+      - `+ backups.archive_days`
+  - **ShowData**
+    - changes of request param
+      - `+ X-Need-Content`
+    - changes of response param
+      - `+ content`
+  - **ListDataJob**
+    - changes of response param
+      - `- creator`
+      - `- create_time`
+      - `- total_count`
+      - `- end_time`
+      - `- name`
+      - `- id`
+      - `- finish_count`
+      - `- type`
+      - `- failed_reason`
+      - `- status`
+      - `+ data_jobs.additions`
+  - **ShowProjectTraceData**
+    - changes of response param
+      - `- allowed_operate`
+      - `- deletable`
+  - **UpdateMessageReceiveConfig**
+    - changes of request param
+      - `- scope`
+      - `- language`
+      - `- resource_types`
+  - **ShowMessageEmailConfig**
+    - changes of response param
+      - `- password`
+  - **UpdateMessageEmailConfig**
+    - changes of request param
+      - `- server`
+      - `- subject_prefix`
+      - `- password`
+      - `- user_name`
+      - `- language`
+      - `- email`
+  - **ListUser**
+    - changes of response param
+      - `+ source`
+      - `+ users.source`
+  - **ShowTaskInstanceMetricData**
+    - changes of response param
+      - `- metric_name`
+      - `- resource_id`
+  - **ListPerformanceResourceStat**
+    - changes of response param
+      - `+ performance_resources.schedulable`
+  - **ListAsset**
+    - changes of response param
+      - `+ assets.versions.description`
+      - `- assets.versions.descritpion`
+  - **ListStar**
+    - changes of response param
+      - `+ assets.versions.description`
+      - `- assets.versions.descritpion`
+  - **ListData**
+    - changes of response param
+      - `+ content`
+      - `+ datas.content`
+  - **ShowProjectTrace**
+    - changes of response param
+      - `- allowed_operate`
+      - `- deletable`
+      - `- datas.allowed_operate`
+      - `- datas.deletable`
+      - `* datas: list<DataRsp> -> list<TraceDataRsp>`
+  - **ListComputingResources**
+    - changes of response param
+      - `+ resources.failure_reason`
+      - `- resources.ip`
+      - `- resources.period_num`
+  - **ListDatabaseResource**
+    - changes of response param
+      - `+ resources.failure_reason`
+  - **ListPerformanceResources**
+    - changes of response param
+      - `+ resources.running_job_count`
+      - `+ resources.failure_reason`
+      - `+ resources.schedulable`
+  - **ListStorageResources**
+    - changes of response param
+      - `- resources.id`
+      - `- resources.name`
+  - **ExecuteJob**
+    - changes of request param
+      - `+ tasks.io_acc_type`
+  - **CreateAutoJob**
+    - changes of request param
+      - `+ tasks.io_acc_type`
+  - **UpdateJob**
+    - changes of request param
+      - `+ tasks.io_acc_type`
+  - **ShowJob**
+    - changes of response param
+      - `+ still_running_tasks`
+      - `+ task_runtime_info.sub_tasks.pod_create_time`
+      - `+ task_runtime_info.sub_tasks.pod_start_time`
+      - `+ task_runtime_info.sub_tasks.job_failed_times`
+      - `+ tasks.io_acc_type`
+  - **UpdateAutoJob**
+    - changes of request param
+      - `+ tasks.io_acc_type`
+  - **ShowAutoJob**
+    - changes of response param
+      - `+ tasks.io_acc_type`
+  - **ShowWorkflow**
+    - changes of response param
+      - `+ tasks.io_acc_type`
+
+### HuaweiCloud SDK EIP
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListBandwidthPkg**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+      - `+ offset`
+  - **ListCommonPools**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+  - **ListShareBandwidthTypes**
+    - changes of request param
+      - `+ marker`
+      - `+ offset`
+
+### HuaweiCloud SDK IAM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **KeystoneListMappings**
+    - changes of response param
+      - `* mappings.rules.local.groups: object -> string`
+  - **KeystoneShowMapping**
+    - changes of response param
+      - `* mapping.rules.local.groups: object -> string`
+  - **KeystoneCreateMapping**
+    - changes of request param
+      - `* mapping.rules.local.groups: object -> string`
+    - changes of response param
+      - `* mapping.rules.local.groups: object -> string`
+  - **KeystoneUpdateMapping**
+    - changes of request param
+      - `* mapping.rules.local.groups: object -> string`
+    - changes of response param
+      - `* mapping.rules.local.groups: object -> string`
+
+### HuaweiCloud SDK Image
+
+- _Features_
+  - Support the interfaces `CreateVideoObjectMaskingTask`, `ShowVideoObjectMaskingTask`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateTextToImageTask**
+    - changes of request param
+      - `+ config.common.inference.image_nums`
+      - `+ config.common.inference.resolution: enum value [512*768,768*512,512*512]`
+  - **ShowTextToImageTask**
+    - changes of response param
+      - `+ config.common.inference.image_nums`
+      - `+ config.common.inference.resolution: enum value [512*768,768*512,512*512]`
+  - **CreateImageVariationTask**
+    - changes of request param
+      - `+ config.common.inference.image_nums`
+      - `+ config.common.inference.resolution: enum value [512*768,768*512,512*512]`
+  - **ShowImageVariationTask**
+    - changes of response param
+      - `+ config.common.inference.image_nums`
+      - `+ config.common.inference.resolution: enum value [512*768,768*512,512*512]`
+
+### HuaweiCloud SDK IoTEdge
+
+- _Features_
+  - Support the following interfaces：
+    - `BatchListDcDs`
+    - `CreateDs`
+    - `ShowDcDs`
+    - `UpdateDcDs`
+    - `DeleteDcDs`
+    - `SynchronizeDcConfigs`
+    - `BatchListDcDevices`
+    - `BatchListDcPoints`
+    - `CreateDcPoint`
+    - `ShowDcPoint`
+    - `UpdateDcPoint`
+    - `DeleteDcPoint`
+    - `ImportPoints`
+    - `ShowPointTemplate`
+    - `ShowPoints`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IVS
+
+- _Features_
+  - Support the interfaces `DetectStandardByVideoAndIdCardImage`, `DetectStandardByVideoAndNameAndId`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RecognizeMvsInvoice**
+    - changes of request param
+      - `+ return_text_location`
+      - `+ return_confidence`
+      - `+ type`
+    - changes of response param
+      - `+ result.buyer_address`
+      - `+ result.buyer_phone`
+      - `+ result.licence_plate_number`
+      - `+ result.registration_number`
+      - `+ result.dept_motor_vehicles`
+      - `+ result.auction_org_name`
+      - `+ result.auction_org_address`
+      - `+ result.auction_org_id`
+      - `+ result.auction_org_bank_account`
+      - `+ result.auction_org_phone`
+      - `+ result.used_vehicle_market_name`
+      - `+ result.used_vehicle_market_id`
+      - `+ result.used_vehicle_market_address`
+      - `+ result.used_vehicle_market_bank_account`
+      - `+ result.used_vehicle_market_phone`
+      - `+ result.remark`
+      - `+ result.drawer_name`
+      - `+ result.type`
+      - `+ result.text_location`
+      - `+ result.confidence`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interfaces `ListRecycleInstances`, `ShowRecyclePolicy`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.31 2023-03-14
 
 ### HuaweiCloud SDK Image

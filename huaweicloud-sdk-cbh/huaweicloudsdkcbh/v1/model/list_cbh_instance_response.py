@@ -36,11 +36,11 @@ class ListCbhInstanceResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 实例总数
+        :param total: 云堡垒机实例总数。
         :type total: int
         :param quota_detail: 
         :type quota_detail: :class:`huaweicloudsdkcbh.v1.QuotaDetail`
-        :param instance: 实例列表
+        :param instance: 云堡垒机实例列表信息。
         :type instance: list[:class:`huaweicloudsdkcbh.v1.InstanceDetail`]
         """
         
@@ -62,7 +62,7 @@ class ListCbhInstanceResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListCbhInstanceResponse.
 
-        实例总数
+        云堡垒机实例总数。
 
         :return: The total of this ListCbhInstanceResponse.
         :rtype: int
@@ -73,7 +73,7 @@ class ListCbhInstanceResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListCbhInstanceResponse.
 
-        实例总数
+        云堡垒机实例总数。
 
         :param total: The total of this ListCbhInstanceResponse.
         :type total: int
@@ -102,7 +102,7 @@ class ListCbhInstanceResponse(SdkResponse):
     def instance(self):
         """Gets the instance of this ListCbhInstanceResponse.
 
-        实例列表
+        云堡垒机实例列表信息。
 
         :return: The instance of this ListCbhInstanceResponse.
         :rtype: list[:class:`huaweicloudsdkcbh.v1.InstanceDetail`]
@@ -113,7 +113,7 @@ class ListCbhInstanceResponse(SdkResponse):
     def instance(self, instance):
         """Sets the instance of this ListCbhInstanceResponse.
 
-        实例列表
+        云堡垒机实例列表信息。
 
         :param instance: The instance of this ListCbhInstanceResponse.
         :type instance: list[:class:`huaweicloudsdkcbh.v1.InstanceDetail`]

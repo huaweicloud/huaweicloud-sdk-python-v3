@@ -38,13 +38,13 @@ class ShowNetworkConfigurationResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 状态
+        :param status: 云堡垒机实例网络状态。下面3个正常则正常，有一个不正常，网络状态为失败。
         :type status: bool
-        :param security_grp_status: 安全组状态
+        :param security_grp_status: 云堡垒机实例安全组状态。 - true  正常 - false 失败
         :type security_grp_status: bool
-        :param firewall_status: 防火墙状态
+        :param firewall_status: 云堡垒机实例防火墙状态。 - true  正常 - false 失败
         :type firewall_status: bool
-        :param public_eip_status: 公网IP状态
+        :param public_eip_status: 云堡垒机实例公网IP状态。 - true  正常 - false 失败
         :type public_eip_status: bool
         """
         
@@ -69,7 +69,7 @@ class ShowNetworkConfigurationResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowNetworkConfigurationResponse.
 
-        状态
+        云堡垒机实例网络状态。下面3个正常则正常，有一个不正常，网络状态为失败。
 
         :return: The status of this ShowNetworkConfigurationResponse.
         :rtype: bool
@@ -80,7 +80,7 @@ class ShowNetworkConfigurationResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowNetworkConfigurationResponse.
 
-        状态
+        云堡垒机实例网络状态。下面3个正常则正常，有一个不正常，网络状态为失败。
 
         :param status: The status of this ShowNetworkConfigurationResponse.
         :type status: bool
@@ -91,7 +91,7 @@ class ShowNetworkConfigurationResponse(SdkResponse):
     def security_grp_status(self):
         """Gets the security_grp_status of this ShowNetworkConfigurationResponse.
 
-        安全组状态
+        云堡垒机实例安全组状态。 - true  正常 - false 失败
 
         :return: The security_grp_status of this ShowNetworkConfigurationResponse.
         :rtype: bool
@@ -102,7 +102,7 @@ class ShowNetworkConfigurationResponse(SdkResponse):
     def security_grp_status(self, security_grp_status):
         """Sets the security_grp_status of this ShowNetworkConfigurationResponse.
 
-        安全组状态
+        云堡垒机实例安全组状态。 - true  正常 - false 失败
 
         :param security_grp_status: The security_grp_status of this ShowNetworkConfigurationResponse.
         :type security_grp_status: bool
@@ -113,7 +113,7 @@ class ShowNetworkConfigurationResponse(SdkResponse):
     def firewall_status(self):
         """Gets the firewall_status of this ShowNetworkConfigurationResponse.
 
-        防火墙状态
+        云堡垒机实例防火墙状态。 - true  正常 - false 失败
 
         :return: The firewall_status of this ShowNetworkConfigurationResponse.
         :rtype: bool
@@ -124,7 +124,7 @@ class ShowNetworkConfigurationResponse(SdkResponse):
     def firewall_status(self, firewall_status):
         """Sets the firewall_status of this ShowNetworkConfigurationResponse.
 
-        防火墙状态
+        云堡垒机实例防火墙状态。 - true  正常 - false 失败
 
         :param firewall_status: The firewall_status of this ShowNetworkConfigurationResponse.
         :type firewall_status: bool
@@ -135,7 +135,7 @@ class ShowNetworkConfigurationResponse(SdkResponse):
     def public_eip_status(self):
         """Gets the public_eip_status of this ShowNetworkConfigurationResponse.
 
-        公网IP状态
+        云堡垒机实例公网IP状态。 - true  正常 - false 失败
 
         :return: The public_eip_status of this ShowNetworkConfigurationResponse.
         :rtype: bool
@@ -146,7 +146,7 @@ class ShowNetworkConfigurationResponse(SdkResponse):
     def public_eip_status(self, public_eip_status):
         """Sets the public_eip_status of this ShowNetworkConfigurationResponse.
 
-        公网IP状态
+        云堡垒机实例公网IP状态。 - true  正常 - false 失败
 
         :param public_eip_status: The public_eip_status of this ShowNetworkConfigurationResponse.
         :type public_eip_status: bool

@@ -51,12 +51,9 @@ class IvsStandardByIdCardImageResponseBodyResult:
         self._resp_data = None
         self.discriminator = None
 
-        if service_name is not None:
-            self.service_name = service_name
-        if count is not None:
-            self.count = count
-        if resp_data is not None:
-            self.resp_data = resp_data
+        self.service_name = service_name
+        self.count = count
+        self.resp_data = resp_data
 
     @property
     def service_name(self):

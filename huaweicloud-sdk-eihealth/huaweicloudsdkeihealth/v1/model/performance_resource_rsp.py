@@ -29,9 +29,12 @@ class PerformanceResourceRsp:
         'free_space': 'float',
         'charge_mode': 'str',
         'period_num': 'int',
+        'running_job_count': 'int',
         'job_quota': 'int',
         'create_time': 'str',
-        'status': 'str'
+        'failure_reason': 'str',
+        'status': 'str',
+        'schedulable': 'bool'
     }
 
     attribute_map = {
@@ -44,12 +47,15 @@ class PerformanceResourceRsp:
         'free_space': 'free_space',
         'charge_mode': 'charge_mode',
         'period_num': 'period_num',
+        'running_job_count': 'running_job_count',
         'job_quota': 'job_quota',
         'create_time': 'create_time',
-        'status': 'status'
+        'failure_reason': 'failure_reason',
+        'status': 'status',
+        'schedulable': 'schedulable'
     }
 
-    def __init__(self, id=None, resource_id=None, name=None, spec=None, availability_zone_id=None, space=None, free_space=None, charge_mode=None, period_num=None, job_quota=None, create_time=None, status=None):
+    def __init__(self, id=None, resource_id=None, name=None, spec=None, availability_zone_id=None, space=None, free_space=None, charge_mode=None, period_num=None, running_job_count=None, job_quota=None, create_time=None, failure_reason=None, status=None, schedulable=None):
         """PerformanceResourceRsp
 
         The model defined in huaweicloud sdk
@@ -72,12 +78,18 @@ class PerformanceResourceRsp:
         :type charge_mode: str
         :param period_num: 购买周期
         :type period_num: int
+        :param running_job_count: 作业运行数
+        :type running_job_count: int
         :param job_quota: 运行的最大作业数量
         :type job_quota: int
         :param create_time: 购买时间
         :type create_time: str
+        :param failure_reason: 失败原因
+        :type failure_reason: str
         :param status: 状态
         :type status: str
+        :param schedulable: 资源是否可调度
+        :type schedulable: bool
         """
         
         
@@ -91,9 +103,12 @@ class PerformanceResourceRsp:
         self._free_space = None
         self._charge_mode = None
         self._period_num = None
+        self._running_job_count = None
         self._job_quota = None
         self._create_time = None
+        self._failure_reason = None
         self._status = None
+        self._schedulable = None
         self.discriminator = None
 
         self.id = id
@@ -105,10 +120,14 @@ class PerformanceResourceRsp:
         self.free_space = free_space
         self.charge_mode = charge_mode
         self.period_num = period_num
+        if running_job_count is not None:
+            self.running_job_count = running_job_count
         if job_quota is not None:
             self.job_quota = job_quota
         self.create_time = create_time
+        self.failure_reason = failure_reason
         self.status = status
+        self.schedulable = schedulable
 
     @property
     def id(self):
@@ -305,6 +324,28 @@ class PerformanceResourceRsp:
         self._period_num = period_num
 
     @property
+    def running_job_count(self):
+        """Gets the running_job_count of this PerformanceResourceRsp.
+
+        作业运行数
+
+        :return: The running_job_count of this PerformanceResourceRsp.
+        :rtype: int
+        """
+        return self._running_job_count
+
+    @running_job_count.setter
+    def running_job_count(self, running_job_count):
+        """Sets the running_job_count of this PerformanceResourceRsp.
+
+        作业运行数
+
+        :param running_job_count: The running_job_count of this PerformanceResourceRsp.
+        :type running_job_count: int
+        """
+        self._running_job_count = running_job_count
+
+    @property
     def job_quota(self):
         """Gets the job_quota of this PerformanceResourceRsp.
 
@@ -349,6 +390,28 @@ class PerformanceResourceRsp:
         self._create_time = create_time
 
     @property
+    def failure_reason(self):
+        """Gets the failure_reason of this PerformanceResourceRsp.
+
+        失败原因
+
+        :return: The failure_reason of this PerformanceResourceRsp.
+        :rtype: str
+        """
+        return self._failure_reason
+
+    @failure_reason.setter
+    def failure_reason(self, failure_reason):
+        """Sets the failure_reason of this PerformanceResourceRsp.
+
+        失败原因
+
+        :param failure_reason: The failure_reason of this PerformanceResourceRsp.
+        :type failure_reason: str
+        """
+        self._failure_reason = failure_reason
+
+    @property
     def status(self):
         """Gets the status of this PerformanceResourceRsp.
 
@@ -369,6 +432,28 @@ class PerformanceResourceRsp:
         :type status: str
         """
         self._status = status
+
+    @property
+    def schedulable(self):
+        """Gets the schedulable of this PerformanceResourceRsp.
+
+        资源是否可调度
+
+        :return: The schedulable of this PerformanceResourceRsp.
+        :rtype: bool
+        """
+        return self._schedulable
+
+    @schedulable.setter
+    def schedulable(self, schedulable):
+        """Sets the schedulable of this PerformanceResourceRsp.
+
+        资源是否可调度
+
+        :param schedulable: The schedulable of this PerformanceResourceRsp.
+        :type schedulable: bool
+        """
+        self._schedulable = schedulable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

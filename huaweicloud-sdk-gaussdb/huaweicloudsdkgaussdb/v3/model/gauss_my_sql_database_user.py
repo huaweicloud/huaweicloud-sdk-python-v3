@@ -52,10 +52,8 @@ class GaussMySqlDatabaseUser:
         self.discriminator = None
 
         self.name = name
-        if host is not None:
-            self.host = host
-        if readonly is not None:
-            self.readonly = readonly
+        self.host = host
+        self.readonly = readonly
 
     @property
     def name(self):

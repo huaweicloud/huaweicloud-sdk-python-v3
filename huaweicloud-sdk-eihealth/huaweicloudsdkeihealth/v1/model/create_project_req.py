@@ -61,7 +61,8 @@ class CreateProjectReq:
         self.name = name
         if tags is not None:
             self.tags = tags
-        self.is_core = is_core
+        if is_core is not None:
+            self.is_core = is_core
 
     @property
     def description(self):

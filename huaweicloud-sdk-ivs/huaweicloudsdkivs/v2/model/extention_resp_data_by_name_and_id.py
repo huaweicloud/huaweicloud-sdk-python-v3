@@ -38,9 +38,9 @@ class ExtentionRespDataByNameAndId:
 
         :param verification_result: 审核校验结果： \&quot;valid\&quot;表示身份审核通过； \&quot;invalid\&quot;表示身份审核不通过； \&quot;nonexistent\&quot;表示数据源没有该身份证号码，这种情况一般是被验证人正在办理户籍迁移，或者被验证人是军人或政要。
         :type verification_result: str
-        :param verification_message: 审核校验信息，具体参[考校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
+        :param verification_message: 审核校验信息，具体参考[校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
         :type verification_message: str
-        :param verification_code: 审核校验代码，具体参[考校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
+        :param verification_code: 审核校验代码，具体参考[校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
         :type verification_code: int
         """
         
@@ -84,7 +84,7 @@ class ExtentionRespDataByNameAndId:
     def verification_message(self):
         """Gets the verification_message of this ExtentionRespDataByNameAndId.
 
-        审核校验信息，具体参[考校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
+        审核校验信息，具体参考[校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
 
         :return: The verification_message of this ExtentionRespDataByNameAndId.
         :rtype: str
@@ -95,7 +95,7 @@ class ExtentionRespDataByNameAndId:
     def verification_message(self, verification_message):
         """Sets the verification_message of this ExtentionRespDataByNameAndId.
 
-        审核校验信息，具体参[考校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
+        审核校验信息，具体参考[校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
 
         :param verification_message: The verification_message of this ExtentionRespDataByNameAndId.
         :type verification_message: str
@@ -106,7 +106,7 @@ class ExtentionRespDataByNameAndId:
     def verification_code(self):
         """Gets the verification_code of this ExtentionRespDataByNameAndId.
 
-        审核校验代码，具体参[考校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
+        审核校验代码，具体参考[校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
 
         :return: The verification_code of this ExtentionRespDataByNameAndId.
         :rtype: int
@@ -117,7 +117,7 @@ class ExtentionRespDataByNameAndId:
     def verification_code(self, verification_code):
         """Sets the verification_code of this ExtentionRespDataByNameAndId.
 
-        审核校验代码，具体参[考校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
+        审核校验代码，具体参考[校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
 
         :param verification_code: The verification_code of this ExtentionRespDataByNameAndId.
         :type verification_code: int

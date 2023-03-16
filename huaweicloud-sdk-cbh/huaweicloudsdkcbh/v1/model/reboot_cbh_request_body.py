@@ -34,7 +34,7 @@ class RebootCbhRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例的server id
+        :param instance_id: 云堡垒机实例ID，使用UUID格式。
         :type instance_id: str
         :param reboot: 
         :type reboot: :class:`huaweicloudsdkcbh.v1.RebootType`
@@ -53,7 +53,7 @@ class RebootCbhRequestBody:
     def instance_id(self):
         """Gets the instance_id of this RebootCbhRequestBody.
 
-        实例的server id
+        云堡垒机实例ID，使用UUID格式。
 
         :return: The instance_id of this RebootCbhRequestBody.
         :rtype: str
@@ -64,7 +64,7 @@ class RebootCbhRequestBody:
     def instance_id(self, instance_id):
         """Sets the instance_id of this RebootCbhRequestBody.
 
-        实例的server id
+        云堡垒机实例ID，使用UUID格式。
 
         :param instance_id: The instance_id of this RebootCbhRequestBody.
         :type instance_id: str

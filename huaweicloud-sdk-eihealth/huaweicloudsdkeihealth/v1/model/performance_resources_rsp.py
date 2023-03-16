@@ -22,16 +22,18 @@ class PerformanceResourcesRsp:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'running_job_count': 'int'
+        'running_job_count': 'int',
+        'schedulable': 'bool'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
-        'running_job_count': 'running_job_count'
+        'running_job_count': 'running_job_count',
+        'schedulable': 'schedulable'
     }
 
-    def __init__(self, id=None, name=None, running_job_count=None):
+    def __init__(self, id=None, name=None, running_job_count=None, schedulable=None):
         """PerformanceResourcesRsp
 
         The model defined in huaweicloud sdk
@@ -42,6 +44,8 @@ class PerformanceResourcesRsp:
         :type name: str
         :param running_job_count: 当前运行中的作业总数
         :type running_job_count: int
+        :param schedulable: 资源是否可调度
+        :type schedulable: bool
         """
         
         
@@ -49,6 +53,7 @@ class PerformanceResourcesRsp:
         self._id = None
         self._name = None
         self._running_job_count = None
+        self._schedulable = None
         self.discriminator = None
 
         if id is not None:
@@ -57,6 +62,8 @@ class PerformanceResourcesRsp:
             self.name = name
         if running_job_count is not None:
             self.running_job_count = running_job_count
+        if schedulable is not None:
+            self.schedulable = schedulable
 
     @property
     def id(self):
@@ -123,6 +130,28 @@ class PerformanceResourcesRsp:
         :type running_job_count: int
         """
         self._running_job_count = running_job_count
+
+    @property
+    def schedulable(self):
+        """Gets the schedulable of this PerformanceResourcesRsp.
+
+        资源是否可调度
+
+        :return: The schedulable of this PerformanceResourcesRsp.
+        :rtype: bool
+        """
+        return self._schedulable
+
+    @schedulable.setter
+    def schedulable(self, schedulable):
+        """Sets the schedulable of this PerformanceResourcesRsp.
+
+        资源是否可调度
+
+        :param schedulable: The schedulable of this PerformanceResourcesRsp.
+        :type schedulable: bool
+        """
+        self._schedulable = schedulable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -32,7 +32,7 @@ class ChangeInstanceOrderResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param order_id: 订单ID
+        :param order_id: 订单ID。
         :type order_id: str
         """
         
@@ -48,7 +48,7 @@ class ChangeInstanceOrderResponse(SdkResponse):
     def order_id(self):
         """Gets the order_id of this ChangeInstanceOrderResponse.
 
-        订单ID
+        订单ID。
 
         :return: The order_id of this ChangeInstanceOrderResponse.
         :rtype: str
@@ -59,7 +59,7 @@ class ChangeInstanceOrderResponse(SdkResponse):
     def order_id(self, order_id):
         """Sets the order_id of this ChangeInstanceOrderResponse.
 
-        订单ID
+        订单ID。
 
         :param order_id: The order_id of this ChangeInstanceOrderResponse.
         :type order_id: str

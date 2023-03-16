@@ -469,6 +469,67 @@ class ImageAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_video_object_masking_task_async(self, request):
+        """创建司乘敏感擦除任务
+
+        Create Task
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateVideoObjectMaskingTask
+        :type request: :class:`huaweicloudsdkimage.v2.CreateVideoObjectMaskingTaskRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.CreateVideoObjectMaskingTaskResponse`
+        """
+        return self.create_video_object_masking_task_with_http_info(request)
+
+    def create_video_object_masking_task_with_http_info(self, request):
+        all_params = ['create_video_object_masking_task_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/video-object-masking/tasks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateVideoObjectMaskingTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_video_shot_split_task_async(self, request):
         """创建任务
 
@@ -1623,6 +1684,67 @@ class ImageAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowVideoCuttingTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_video_object_masking_task_async(self, request):
+        """show task 查询任务信息
+
+        show task
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowVideoObjectMaskingTask
+        :type request: :class:`huaweicloudsdkimage.v2.ShowVideoObjectMaskingTaskRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.ShowVideoObjectMaskingTaskResponse`
+        """
+        return self.show_video_object_masking_task_with_http_info(request)
+
+    def show_video_object_masking_task_with_http_info(self, request):
+        all_params = ['task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/video-object-masking/tasks/{task_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowVideoObjectMaskingTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

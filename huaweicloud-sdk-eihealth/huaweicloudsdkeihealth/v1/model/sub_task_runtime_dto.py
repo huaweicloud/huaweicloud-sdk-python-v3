@@ -25,7 +25,10 @@ class SubTaskRuntimeDto:
         'finish_time': 'str',
         'actual_running_time': 'int',
         'status': 'str',
-        'log_storage_link': 'str'
+        'log_storage_link': 'str',
+        'pod_create_time': 'str',
+        'pod_start_time': 'str',
+        'job_failed_times': 'int'
     }
 
     attribute_map = {
@@ -34,10 +37,13 @@ class SubTaskRuntimeDto:
         'finish_time': 'finish_time',
         'actual_running_time': 'actual_running_time',
         'status': 'status',
-        'log_storage_link': 'log_storage_link'
+        'log_storage_link': 'log_storage_link',
+        'pod_create_time': 'pod_create_time',
+        'pod_start_time': 'pod_start_time',
+        'job_failed_times': 'job_failed_times'
     }
 
-    def __init__(self, sub_task_name=None, create_time=None, finish_time=None, actual_running_time=None, status=None, log_storage_link=None):
+    def __init__(self, sub_task_name=None, create_time=None, finish_time=None, actual_running_time=None, status=None, log_storage_link=None, pod_create_time=None, pod_start_time=None, job_failed_times=None):
         """SubTaskRuntimeDto
 
         The model defined in huaweicloud sdk
@@ -54,6 +60,12 @@ class SubTaskRuntimeDto:
         :type status: str
         :param log_storage_link: 作业日志存储链接
         :type log_storage_link: str
+        :param pod_create_time: task的pod创建时间
+        :type pod_create_time: str
+        :param pod_start_time: task的pod启动时间
+        :type pod_start_time: str
+        :param job_failed_times: task的cce job失败次数
+        :type job_failed_times: int
         """
         
         
@@ -64,6 +76,9 @@ class SubTaskRuntimeDto:
         self._actual_running_time = None
         self._status = None
         self._log_storage_link = None
+        self._pod_create_time = None
+        self._pod_start_time = None
+        self._job_failed_times = None
         self.discriminator = None
 
         if sub_task_name is not None:
@@ -78,6 +93,12 @@ class SubTaskRuntimeDto:
             self.status = status
         if log_storage_link is not None:
             self.log_storage_link = log_storage_link
+        if pod_create_time is not None:
+            self.pod_create_time = pod_create_time
+        if pod_start_time is not None:
+            self.pod_start_time = pod_start_time
+        if job_failed_times is not None:
+            self.job_failed_times = job_failed_times
 
     @property
     def sub_task_name(self):
@@ -210,6 +231,72 @@ class SubTaskRuntimeDto:
         :type log_storage_link: str
         """
         self._log_storage_link = log_storage_link
+
+    @property
+    def pod_create_time(self):
+        """Gets the pod_create_time of this SubTaskRuntimeDto.
+
+        task的pod创建时间
+
+        :return: The pod_create_time of this SubTaskRuntimeDto.
+        :rtype: str
+        """
+        return self._pod_create_time
+
+    @pod_create_time.setter
+    def pod_create_time(self, pod_create_time):
+        """Sets the pod_create_time of this SubTaskRuntimeDto.
+
+        task的pod创建时间
+
+        :param pod_create_time: The pod_create_time of this SubTaskRuntimeDto.
+        :type pod_create_time: str
+        """
+        self._pod_create_time = pod_create_time
+
+    @property
+    def pod_start_time(self):
+        """Gets the pod_start_time of this SubTaskRuntimeDto.
+
+        task的pod启动时间
+
+        :return: The pod_start_time of this SubTaskRuntimeDto.
+        :rtype: str
+        """
+        return self._pod_start_time
+
+    @pod_start_time.setter
+    def pod_start_time(self, pod_start_time):
+        """Sets the pod_start_time of this SubTaskRuntimeDto.
+
+        task的pod启动时间
+
+        :param pod_start_time: The pod_start_time of this SubTaskRuntimeDto.
+        :type pod_start_time: str
+        """
+        self._pod_start_time = pod_start_time
+
+    @property
+    def job_failed_times(self):
+        """Gets the job_failed_times of this SubTaskRuntimeDto.
+
+        task的cce job失败次数
+
+        :return: The job_failed_times of this SubTaskRuntimeDto.
+        :rtype: int
+        """
+        return self._job_failed_times
+
+    @job_failed_times.setter
+    def job_failed_times(self, job_failed_times):
+        """Sets the job_failed_times of this SubTaskRuntimeDto.
+
+        task的cce job失败次数
+
+        :param job_failed_times: The job_failed_times of this SubTaskRuntimeDto.
+        :type job_failed_times: int
+        """
+        self._job_failed_times = job_failed_times
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -26,6 +26,8 @@ class ListDomainsRequest:
         'service_area': 'str',
         'page_size': 'int',
         'page_number': 'int',
+        'show_tags': 'bool',
+        'exact_match': 'bool',
         'enterprise_project_id': 'str'
     }
 
@@ -36,10 +38,12 @@ class ListDomainsRequest:
         'service_area': 'service_area',
         'page_size': 'page_size',
         'page_number': 'page_number',
+        'show_tags': 'show_tags',
+        'exact_match': 'exact_match',
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, domain_name=None, business_type=None, domain_status=None, service_area=None, page_size=None, page_number=None, enterprise_project_id=None):
+    def __init__(self, domain_name=None, business_type=None, domain_status=None, service_area=None, page_size=None, page_number=None, show_tags=None, exact_match=None, enterprise_project_id=None):
         """ListDomainsRequest
 
         The model defined in huaweicloud sdk
@@ -56,6 +60,10 @@ class ListDomainsRequest:
         :type page_size: int
         :param page_number: 查询的页码。取值范围1-65535，不设值时默认值为1。
         :type page_number: int
+        :param show_tags: 展示标签标识 true：不展示 false：展示。
+        :type show_tags: bool
+        :param exact_match: 精准匹配 on：开启 off：关闭。
+        :type exact_match: bool
         :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\&quot;all\&quot;表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
         :type enterprise_project_id: str
         """
@@ -68,6 +76,8 @@ class ListDomainsRequest:
         self._service_area = None
         self._page_size = None
         self._page_number = None
+        self._show_tags = None
+        self._exact_match = None
         self._enterprise_project_id = None
         self.discriminator = None
 
@@ -83,6 +93,10 @@ class ListDomainsRequest:
             self.page_size = page_size
         if page_number is not None:
             self.page_number = page_number
+        if show_tags is not None:
+            self.show_tags = show_tags
+        if exact_match is not None:
+            self.exact_match = exact_match
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
 
@@ -217,6 +231,50 @@ class ListDomainsRequest:
         :type page_number: int
         """
         self._page_number = page_number
+
+    @property
+    def show_tags(self):
+        """Gets the show_tags of this ListDomainsRequest.
+
+        展示标签标识 true：不展示 false：展示。
+
+        :return: The show_tags of this ListDomainsRequest.
+        :rtype: bool
+        """
+        return self._show_tags
+
+    @show_tags.setter
+    def show_tags(self, show_tags):
+        """Sets the show_tags of this ListDomainsRequest.
+
+        展示标签标识 true：不展示 false：展示。
+
+        :param show_tags: The show_tags of this ListDomainsRequest.
+        :type show_tags: bool
+        """
+        self._show_tags = show_tags
+
+    @property
+    def exact_match(self):
+        """Gets the exact_match of this ListDomainsRequest.
+
+        精准匹配 on：开启 off：关闭。
+
+        :return: The exact_match of this ListDomainsRequest.
+        :rtype: bool
+        """
+        return self._exact_match
+
+    @exact_match.setter
+    def exact_match(self, exact_match):
+        """Sets the exact_match of this ListDomainsRequest.
+
+        精准匹配 on：开启 off：关闭。
+
+        :param exact_match: The exact_match of this ListDomainsRequest.
+        :type exact_match: bool
+        """
+        self._exact_match = exact_match
 
     @property
     def enterprise_project_id(self):

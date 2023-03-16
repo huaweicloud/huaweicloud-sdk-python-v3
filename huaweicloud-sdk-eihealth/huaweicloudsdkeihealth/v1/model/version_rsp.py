@@ -22,7 +22,7 @@ class VersionRsp:
     openapi_types = {
         'version': 'str',
         'publisher': 'str',
-        'descritpion': 'str',
+        'description': 'str',
         'summary': 'str',
         'license': 'str',
         'status': 'str',
@@ -36,7 +36,7 @@ class VersionRsp:
     attribute_map = {
         'version': 'version',
         'publisher': 'publisher',
-        'descritpion': 'descritpion',
+        'description': 'description',
         'summary': 'summary',
         'license': 'license',
         'status': 'status',
@@ -47,7 +47,7 @@ class VersionRsp:
         'update_time': 'update_time'
     }
 
-    def __init__(self, version=None, publisher=None, descritpion=None, summary=None, license=None, status=None, failed_reason=None, labels=None, picture=None, create_time=None, update_time=None):
+    def __init__(self, version=None, publisher=None, description=None, summary=None, license=None, status=None, failed_reason=None, labels=None, picture=None, create_time=None, update_time=None):
         """VersionRsp
 
         The model defined in huaweicloud sdk
@@ -56,8 +56,8 @@ class VersionRsp:
         :type version: str
         :param publisher: 发布者
         :type publisher: str
-        :param descritpion: 资产长描述
-        :type descritpion: str
+        :param description: 资产长描述
+        :type description: str
         :param summary: 资产短描述
         :type summary: str
         :param license: 许可证
@@ -80,7 +80,7 @@ class VersionRsp:
 
         self._version = None
         self._publisher = None
-        self._descritpion = None
+        self._description = None
         self._summary = None
         self._license = None
         self._status = None
@@ -95,8 +95,8 @@ class VersionRsp:
             self.version = version
         if publisher is not None:
             self.publisher = publisher
-        if descritpion is not None:
-            self.descritpion = descritpion
+        if description is not None:
+            self.description = description
         if summary is not None:
             self.summary = summary
         if license is not None:
@@ -159,26 +159,26 @@ class VersionRsp:
         self._publisher = publisher
 
     @property
-    def descritpion(self):
-        """Gets the descritpion of this VersionRsp.
+    def description(self):
+        """Gets the description of this VersionRsp.
 
         资产长描述
 
-        :return: The descritpion of this VersionRsp.
+        :return: The description of this VersionRsp.
         :rtype: str
         """
-        return self._descritpion
+        return self._description
 
-    @descritpion.setter
-    def descritpion(self, descritpion):
-        """Sets the descritpion of this VersionRsp.
+    @description.setter
+    def description(self, description):
+        """Sets the description of this VersionRsp.
 
         资产长描述
 
-        :param descritpion: The descritpion of this VersionRsp.
-        :type descritpion: str
+        :param description: The description of this VersionRsp.
+        :type description: str
         """
-        self._descritpion = descritpion
+        self._description = description
 
     @property
     def summary(self):

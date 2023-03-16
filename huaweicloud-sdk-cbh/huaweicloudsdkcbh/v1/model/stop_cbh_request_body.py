@@ -20,41 +20,34 @@ class StopCbhRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'instance_id': 'str',
-        'reboot': 'RebootType'
+        'instance_id': 'str'
     }
 
     attribute_map = {
-        'instance_id': 'instance_id',
-        'reboot': 'reboot'
+        'instance_id': 'instance_id'
     }
 
-    def __init__(self, instance_id=None, reboot=None):
+    def __init__(self, instance_id=None):
         """StopCbhRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例的server id
+        :param instance_id: 云堡垒机实例ID，使用UUID格式。
         :type instance_id: str
-        :param reboot: 
-        :type reboot: :class:`huaweicloudsdkcbh.v1.RebootType`
         """
         
         
 
         self._instance_id = None
-        self._reboot = None
         self.discriminator = None
 
         self.instance_id = instance_id
-        if reboot is not None:
-            self.reboot = reboot
 
     @property
     def instance_id(self):
         """Gets the instance_id of this StopCbhRequestBody.
 
-        实例的server id
+        云堡垒机实例ID，使用UUID格式。
 
         :return: The instance_id of this StopCbhRequestBody.
         :rtype: str
@@ -65,30 +58,12 @@ class StopCbhRequestBody:
     def instance_id(self, instance_id):
         """Sets the instance_id of this StopCbhRequestBody.
 
-        实例的server id
+        云堡垒机实例ID，使用UUID格式。
 
         :param instance_id: The instance_id of this StopCbhRequestBody.
         :type instance_id: str
         """
         self._instance_id = instance_id
-
-    @property
-    def reboot(self):
-        """Gets the reboot of this StopCbhRequestBody.
-
-        :return: The reboot of this StopCbhRequestBody.
-        :rtype: :class:`huaweicloudsdkcbh.v1.RebootType`
-        """
-        return self._reboot
-
-    @reboot.setter
-    def reboot(self, reboot):
-        """Sets the reboot of this StopCbhRequestBody.
-
-        :param reboot: The reboot of this StopCbhRequestBody.
-        :type reboot: :class:`huaweicloudsdkcbh.v1.RebootType`
-        """
-        self._reboot = reboot
 
     def to_dict(self):
         """Returns the model properties as a dict"""

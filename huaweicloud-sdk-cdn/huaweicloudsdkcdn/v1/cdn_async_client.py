@@ -555,7 +555,7 @@ class CdnAsyncClient(Client):
         return self.list_domains_with_http_info(request)
 
     def list_domains_with_http_info(self, request):
-        all_params = ['domain_name', 'business_type', 'domain_status', 'service_area', 'page_size', 'page_number', 'enterprise_project_id']
+        all_params = ['domain_name', 'business_type', 'domain_status', 'service_area', 'page_size', 'page_number', 'show_tags', 'exact_match', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -580,6 +580,10 @@ class CdnAsyncClient(Client):
             query_params.append(('page_size', local_var_params['page_size']))
         if 'page_number' in local_var_params:
             query_params.append(('page_number', local_var_params['page_number']))
+        if 'show_tags' in local_var_params:
+            query_params.append(('show_tags', local_var_params['show_tags']))
+        if 'exact_match' in local_var_params:
+            query_params.append(('exact_match', local_var_params['exact_match']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 

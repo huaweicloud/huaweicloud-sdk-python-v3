@@ -52,8 +52,7 @@ class DeleteDatabasePermission:
         self.discriminator = None
 
         self.name = name
-        if host is not None:
-            self.host = host
+        self.host = host
         self.databases = databases
 
     @property

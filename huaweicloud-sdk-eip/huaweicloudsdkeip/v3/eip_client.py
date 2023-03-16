@@ -56,7 +56,7 @@ class EipClient(Client):
         return self.list_common_pools_with_http_info(request)
 
     def list_common_pools_with_http_info(self, request):
-        all_params = ['fields', 'name', 'public_border_group']
+        all_params = ['fields', 'limit', 'offset', 'name', 'public_border_group']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -71,6 +71,10 @@ class EipClient(Client):
         query_params = []
         if 'fields' in local_var_params:
             query_params.append(('fields', local_var_params['fields']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
         if 'public_border_group' in local_var_params:
@@ -262,7 +266,7 @@ class EipClient(Client):
         return self.list_share_bandwidth_types_with_http_info(request)
 
     def list_share_bandwidth_types_with_http_info(self, request):
-        all_params = ['fields', 'id', 'bandwidth_type', 'name_en', 'name_zh', 'public_border_group', 'sort_key', 'sort_dir', 'limit']
+        all_params = ['fields', 'id', 'bandwidth_type', 'name_en', 'name_zh', 'public_border_group', 'sort_key', 'sort_dir', 'limit', 'marker', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -293,6 +297,10 @@ class EipClient(Client):
             query_params.append(('sort_dir', local_var_params['sort_dir']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 

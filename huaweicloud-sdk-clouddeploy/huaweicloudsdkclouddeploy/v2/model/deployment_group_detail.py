@@ -70,19 +70,19 @@ class DeploymentGroupDetail:
         :type updated_time: str
         :param host_count: 组内主机数量，一个主机组内最多可添加200台主机
         :type host_count: int
-        :param project_name: devcloud项目名称
+        :param project_name: 项目名称
         :type project_name: str
         :param name: 主机组名
         :type name: str
         :param region_name: 局点信息
         :type region_name: str
-        :param project_id: devcloud项目id
+        :param project_id: 项目id
         :type project_id: str
         :param os: 操作系统：windows|linux
         :type os: str
         :param auto_connection_test_switch: 自动连通性验证 0不执行 1每日 2每周
         :type auto_connection_test_switch: int
-        :param slave_cluster_id: slave集群id，默认为null时使用devcloud八爪鱼slave集群，用户自定义slave时为slave集群id
+        :param slave_cluster_id: slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
         :type slave_cluster_id: str
         :param nick_name: 用户昵称
         :type nick_name: str
@@ -241,7 +241,7 @@ class DeploymentGroupDetail:
     def project_name(self):
         """Gets the project_name of this DeploymentGroupDetail.
 
-        devcloud项目名称
+        项目名称
 
         :return: The project_name of this DeploymentGroupDetail.
         :rtype: str
@@ -252,7 +252,7 @@ class DeploymentGroupDetail:
     def project_name(self, project_name):
         """Sets the project_name of this DeploymentGroupDetail.
 
-        devcloud项目名称
+        项目名称
 
         :param project_name: The project_name of this DeploymentGroupDetail.
         :type project_name: str
@@ -307,7 +307,7 @@ class DeploymentGroupDetail:
     def project_id(self):
         """Gets the project_id of this DeploymentGroupDetail.
 
-        devcloud项目id
+        项目id
 
         :return: The project_id of this DeploymentGroupDetail.
         :rtype: str
@@ -318,7 +318,7 @@ class DeploymentGroupDetail:
     def project_id(self, project_id):
         """Sets the project_id of this DeploymentGroupDetail.
 
-        devcloud项目id
+        项目id
 
         :param project_id: The project_id of this DeploymentGroupDetail.
         :type project_id: str
@@ -373,7 +373,7 @@ class DeploymentGroupDetail:
     def slave_cluster_id(self):
         """Gets the slave_cluster_id of this DeploymentGroupDetail.
 
-        slave集群id，默认为null时使用devcloud八爪鱼slave集群，用户自定义slave时为slave集群id
+        slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
         :return: The slave_cluster_id of this DeploymentGroupDetail.
         :rtype: str
@@ -384,7 +384,7 @@ class DeploymentGroupDetail:
     def slave_cluster_id(self, slave_cluster_id):
         """Sets the slave_cluster_id of this DeploymentGroupDetail.
 
-        slave集群id，默认为null时使用devcloud八爪鱼slave集群，用户自定义slave时为slave集群id
+        slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
         :param slave_cluster_id: The slave_cluster_id of this DeploymentGroupDetail.
         :type slave_cluster_id: str

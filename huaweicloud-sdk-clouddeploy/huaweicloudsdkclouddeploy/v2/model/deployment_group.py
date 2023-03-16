@@ -46,11 +46,11 @@ class DeploymentGroup:
         :type name: str
         :param region_name: 局点信息
         :type region_name: str
-        :param project_id: devcloud项目id
+        :param project_id: 项目id
         :type project_id: str
         :param os: 操作信息：windows|linux
         :type os: str
-        :param slave_cluster_id: slave集群id，默认为null时使用devcloud八爪鱼slave集群，用户自定义slave时为slave集群id
+        :param slave_cluster_id: slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
         :type slave_cluster_id: str
         :param description: 描述
         :type description: str
@@ -123,7 +123,7 @@ class DeploymentGroup:
     def project_id(self):
         """Gets the project_id of this DeploymentGroup.
 
-        devcloud项目id
+        项目id
 
         :return: The project_id of this DeploymentGroup.
         :rtype: str
@@ -134,7 +134,7 @@ class DeploymentGroup:
     def project_id(self, project_id):
         """Sets the project_id of this DeploymentGroup.
 
-        devcloud项目id
+        项目id
 
         :param project_id: The project_id of this DeploymentGroup.
         :type project_id: str
@@ -167,7 +167,7 @@ class DeploymentGroup:
     def slave_cluster_id(self):
         """Gets the slave_cluster_id of this DeploymentGroup.
 
-        slave集群id，默认为null时使用devcloud八爪鱼slave集群，用户自定义slave时为slave集群id
+        slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
         :return: The slave_cluster_id of this DeploymentGroup.
         :rtype: str
@@ -178,7 +178,7 @@ class DeploymentGroup:
     def slave_cluster_id(self, slave_cluster_id):
         """Sets the slave_cluster_id of this DeploymentGroup.
 
-        slave集群id，默认为null时使用devcloud八爪鱼slave集群，用户自定义slave时为slave集群id
+        slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
         :param slave_cluster_id: The slave_cluster_id of this DeploymentGroup.
         :type slave_cluster_id: str

@@ -34,9 +34,9 @@ class ResetPassword:
 
         The model defined in huaweicloud sdk
 
-        :param new_password: 新密码
+        :param new_password: admin用户修改后的新密码，8-32位，大写字母、小写字母、数字和特殊字符。
         :type new_password: str
-        :param server_id: Cbh Server Id
+        :param server_id: 云堡垒机实例ID，使用UUID格式。
         :type server_id: str
         """
         
@@ -53,7 +53,7 @@ class ResetPassword:
     def new_password(self):
         """Gets the new_password of this ResetPassword.
 
-        新密码
+        admin用户修改后的新密码，8-32位，大写字母、小写字母、数字和特殊字符。
 
         :return: The new_password of this ResetPassword.
         :rtype: str
@@ -64,7 +64,7 @@ class ResetPassword:
     def new_password(self, new_password):
         """Sets the new_password of this ResetPassword.
 
-        新密码
+        admin用户修改后的新密码，8-32位，大写字母、小写字母、数字和特殊字符。
 
         :param new_password: The new_password of this ResetPassword.
         :type new_password: str
@@ -75,7 +75,7 @@ class ResetPassword:
     def server_id(self):
         """Gets the server_id of this ResetPassword.
 
-        Cbh Server Id
+        云堡垒机实例ID，使用UUID格式。
 
         :return: The server_id of this ResetPassword.
         :rtype: str
@@ -86,7 +86,7 @@ class ResetPassword:
     def server_id(self, server_id):
         """Sets the server_id of this ResetPassword.
 
-        Cbh Server Id
+        云堡垒机实例ID，使用UUID格式。
 
         :param server_id: The server_id of this ResetPassword.
         :type server_id: str

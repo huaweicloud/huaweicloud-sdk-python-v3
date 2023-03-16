@@ -28,7 +28,9 @@ class ListShareBandwidthTypesRequest:
         'public_border_group': 'str',
         'sort_key': 'str',
         'sort_dir': 'str',
-        'limit': 'int'
+        'limit': 'int',
+        'marker': 'str',
+        'offset': 'int'
     }
 
     attribute_map = {
@@ -40,10 +42,12 @@ class ListShareBandwidthTypesRequest:
         'public_border_group': 'public_border_group',
         'sort_key': 'sort_key',
         'sort_dir': 'sort_dir',
-        'limit': 'limit'
+        'limit': 'limit',
+        'marker': 'marker',
+        'offset': 'offset'
     }
 
-    def __init__(self, fields=None, id=None, bandwidth_type=None, name_en=None, name_zh=None, public_border_group=None, sort_key=None, sort_dir=None, limit=None):
+    def __init__(self, fields=None, id=None, bandwidth_type=None, name_en=None, name_zh=None, public_border_group=None, sort_key=None, sort_dir=None, limit=None, marker=None, offset=None):
         """ListShareBandwidthTypesRequest
 
         The model defined in huaweicloud sdk
@@ -66,6 +70,10 @@ class ListShareBandwidthTypesRequest:
         :type sort_dir: str
         :param limit: 每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
         :type limit: int
+        :param marker: 分页查询起始的资源ID，为空时为查询第一页
+        :type marker: str
+        :param offset: 分页查询起始的资源序号
+        :type offset: int
         """
         
         
@@ -79,6 +87,8 @@ class ListShareBandwidthTypesRequest:
         self._sort_key = None
         self._sort_dir = None
         self._limit = None
+        self._marker = None
+        self._offset = None
         self.discriminator = None
 
         if fields is not None:
@@ -99,6 +109,10 @@ class ListShareBandwidthTypesRequest:
             self.sort_dir = sort_dir
         if limit is not None:
             self.limit = limit
+        if marker is not None:
+            self.marker = marker
+        if offset is not None:
+            self.offset = offset
 
     @property
     def fields(self):
@@ -297,6 +311,50 @@ class ListShareBandwidthTypesRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def marker(self):
+        """Gets the marker of this ListShareBandwidthTypesRequest.
+
+        分页查询起始的资源ID，为空时为查询第一页
+
+        :return: The marker of this ListShareBandwidthTypesRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListShareBandwidthTypesRequest.
+
+        分页查询起始的资源ID，为空时为查询第一页
+
+        :param marker: The marker of this ListShareBandwidthTypesRequest.
+        :type marker: str
+        """
+        self._marker = marker
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListShareBandwidthTypesRequest.
+
+        分页查询起始的资源序号
+
+        :return: The offset of this ListShareBandwidthTypesRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListShareBandwidthTypesRequest.
+
+        分页查询起始的资源序号
+
+        :param offset: The offset of this ListShareBandwidthTypesRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     def to_dict(self):
         """Returns the model properties as a dict"""

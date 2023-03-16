@@ -277,6 +277,83 @@ class CdnAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_domains_async(self, request):
+        """查询加速域名
+
+        查询加速域名
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDomains
+        :type request: :class:`huaweicloudsdkcdn.v2.ListDomainsRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ListDomainsResponse`
+        """
+        return self.list_domains_with_http_info(request)
+
+    def list_domains_with_http_info(self, request):
+        all_params = ['domain_name', 'business_type', 'domain_status', 'service_area', 'page_size', 'page_number', 'show_tags', 'exact_match', 'enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain_name' in local_var_params:
+            query_params.append(('domain_name', local_var_params['domain_name']))
+        if 'business_type' in local_var_params:
+            query_params.append(('business_type', local_var_params['business_type']))
+        if 'domain_status' in local_var_params:
+            query_params.append(('domain_status', local_var_params['domain_status']))
+        if 'service_area' in local_var_params:
+            query_params.append(('service_area', local_var_params['service_area']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'page_number' in local_var_params:
+            query_params.append(('page_number', local_var_params['page_number']))
+        if 'show_tags' in local_var_params:
+            query_params.append(('show_tags', local_var_params['show_tags']))
+        if 'exact_match' in local_var_params:
+            query_params.append(('exact_match', local_var_params['exact_match']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/cdn/domains',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListDomainsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def set_charge_modes_async(self, request):
         """设置用户计费模式
 
@@ -497,6 +574,69 @@ class CdnAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowChargeModesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_domain_detail_by_name_async(self, request):
+        """查询加速域名详情
+
+        加速域名详情信息接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDomainDetailByName
+        :type request: :class:`huaweicloudsdkcdn.v2.ShowDomainDetailByNameRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ShowDomainDetailByNameResponse`
+        """
+        return self.show_domain_detail_by_name_with_http_info(request)
+
+    def show_domain_detail_by_name_with_http_info(self, request):
+        all_params = ['domain_name', 'enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_name' in local_var_params:
+            path_params['domain_name'] = local_var_params['domain_name']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/cdn/configuration/domains/{domain_name}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowDomainDetailByNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

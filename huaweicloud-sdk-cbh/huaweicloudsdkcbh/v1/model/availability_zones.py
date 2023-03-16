@@ -40,15 +40,15 @@ class AvailabilityZones:
 
         The model defined in huaweicloud sdk
 
-        :param id: 可用区id
+        :param id: 云堡垒机服务可用区ID。
         :type id: str
-        :param display_name: 可用区显示名称
+        :param display_name: 云堡垒机服务可用分区显示名称。
         :type display_name: str
-        :param region_id: region id
+        :param region_id: 云堡垒机服务分区ID
         :type region_id: str
-        :param status: 可用区状态
+        :param status: 云堡垒机服务可用区状态。
         :type status: str
-        :param type: 可用区类型
+        :param type: 云堡垒机服务可用区类型。
         :type type: str
         """
         
@@ -72,7 +72,7 @@ class AvailabilityZones:
     def id(self):
         """Gets the id of this AvailabilityZones.
 
-        可用区id
+        云堡垒机服务可用区ID。
 
         :return: The id of this AvailabilityZones.
         :rtype: str
@@ -83,7 +83,7 @@ class AvailabilityZones:
     def id(self, id):
         """Sets the id of this AvailabilityZones.
 
-        可用区id
+        云堡垒机服务可用区ID。
 
         :param id: The id of this AvailabilityZones.
         :type id: str
@@ -94,7 +94,7 @@ class AvailabilityZones:
     def display_name(self):
         """Gets the display_name of this AvailabilityZones.
 
-        可用区显示名称
+        云堡垒机服务可用分区显示名称。
 
         :return: The display_name of this AvailabilityZones.
         :rtype: str
@@ -105,7 +105,7 @@ class AvailabilityZones:
     def display_name(self, display_name):
         """Sets the display_name of this AvailabilityZones.
 
-        可用区显示名称
+        云堡垒机服务可用分区显示名称。
 
         :param display_name: The display_name of this AvailabilityZones.
         :type display_name: str
@@ -116,7 +116,7 @@ class AvailabilityZones:
     def region_id(self):
         """Gets the region_id of this AvailabilityZones.
 
-        region id
+        云堡垒机服务分区ID
 
         :return: The region_id of this AvailabilityZones.
         :rtype: str
@@ -127,7 +127,7 @@ class AvailabilityZones:
     def region_id(self, region_id):
         """Sets the region_id of this AvailabilityZones.
 
-        region id
+        云堡垒机服务分区ID
 
         :param region_id: The region_id of this AvailabilityZones.
         :type region_id: str
@@ -138,7 +138,7 @@ class AvailabilityZones:
     def status(self):
         """Gets the status of this AvailabilityZones.
 
-        可用区状态
+        云堡垒机服务可用区状态。
 
         :return: The status of this AvailabilityZones.
         :rtype: str
@@ -149,7 +149,7 @@ class AvailabilityZones:
     def status(self, status):
         """Sets the status of this AvailabilityZones.
 
-        可用区状态
+        云堡垒机服务可用区状态。
 
         :param status: The status of this AvailabilityZones.
         :type status: str
@@ -160,7 +160,7 @@ class AvailabilityZones:
     def type(self):
         """Gets the type of this AvailabilityZones.
 
-        可用区类型
+        云堡垒机服务可用区类型。
 
         :return: The type of this AvailabilityZones.
         :rtype: str
@@ -171,7 +171,7 @@ class AvailabilityZones:
     def type(self, type):
         """Sets the type of this AvailabilityZones.
 
-        可用区类型
+        云堡垒机服务可用区类型。
 
         :param type: The type of this AvailabilityZones.
         :type type: str

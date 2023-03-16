@@ -25,9 +25,7 @@ class ShowProjectTraceDataResponse(SdkResponse):
         'type': 'PathType',
         'size': 'int',
         'create_time': 'str',
-        'download_url': 'str',
-        'allowed_operate': 'bool',
-        'deletable': 'bool'
+        'download_url': 'str'
     }
 
     attribute_map = {
@@ -36,12 +34,10 @@ class ShowProjectTraceDataResponse(SdkResponse):
         'type': 'type',
         'size': 'size',
         'create_time': 'create_time',
-        'download_url': 'download_url',
-        'allowed_operate': 'allowed_operate',
-        'deletable': 'deletable'
+        'download_url': 'download_url'
     }
 
-    def __init__(self, path=None, name=None, type=None, size=None, create_time=None, download_url=None, allowed_operate=None, deletable=None):
+    def __init__(self, path=None, name=None, type=None, size=None, create_time=None, download_url=None):
         """ShowProjectTraceDataResponse
 
         The model defined in huaweicloud sdk
@@ -58,10 +54,6 @@ class ShowProjectTraceDataResponse(SdkResponse):
         :type create_time: str
         :param download_url: 下载链接
         :type download_url: str
-        :param allowed_operate: 可操作标记
-        :type allowed_operate: bool
-        :param deletable: 可删除标记
-        :type deletable: bool
         """
         
         super(ShowProjectTraceDataResponse, self).__init__()
@@ -72,8 +64,6 @@ class ShowProjectTraceDataResponse(SdkResponse):
         self._size = None
         self._create_time = None
         self._download_url = None
-        self._allowed_operate = None
-        self._deletable = None
         self.discriminator = None
 
         if path is not None:
@@ -88,10 +78,6 @@ class ShowProjectTraceDataResponse(SdkResponse):
             self.create_time = create_time
         if download_url is not None:
             self.download_url = download_url
-        if allowed_operate is not None:
-            self.allowed_operate = allowed_operate
-        if deletable is not None:
-            self.deletable = deletable
 
     @property
     def path(self):
@@ -220,50 +206,6 @@ class ShowProjectTraceDataResponse(SdkResponse):
         :type download_url: str
         """
         self._download_url = download_url
-
-    @property
-    def allowed_operate(self):
-        """Gets the allowed_operate of this ShowProjectTraceDataResponse.
-
-        可操作标记
-
-        :return: The allowed_operate of this ShowProjectTraceDataResponse.
-        :rtype: bool
-        """
-        return self._allowed_operate
-
-    @allowed_operate.setter
-    def allowed_operate(self, allowed_operate):
-        """Sets the allowed_operate of this ShowProjectTraceDataResponse.
-
-        可操作标记
-
-        :param allowed_operate: The allowed_operate of this ShowProjectTraceDataResponse.
-        :type allowed_operate: bool
-        """
-        self._allowed_operate = allowed_operate
-
-    @property
-    def deletable(self):
-        """Gets the deletable of this ShowProjectTraceDataResponse.
-
-        可删除标记
-
-        :return: The deletable of this ShowProjectTraceDataResponse.
-        :rtype: bool
-        """
-        return self._deletable
-
-    @deletable.setter
-    def deletable(self, deletable):
-        """Sets the deletable of this ShowProjectTraceDataResponse.
-
-        可删除标记
-
-        :param deletable: The deletable of this ShowProjectTraceDataResponse.
-        :type deletable: bool
-        """
-        self._deletable = deletable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

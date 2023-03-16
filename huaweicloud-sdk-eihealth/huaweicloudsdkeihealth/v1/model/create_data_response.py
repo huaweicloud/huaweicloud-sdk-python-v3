@@ -20,20 +20,51 @@ class CreateDataResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str'
     }
 
     attribute_map = {
+        'id': 'id'
     }
 
-    def __init__(self):
+    def __init__(self, id=None):
         """CreateDataResponse
 
         The model defined in huaweicloud sdk
 
+        :param id: 创建文件夹返回体
+        :type id: str
         """
         
         super(CreateDataResponse, self).__init__()
+
+        self._id = None
         self.discriminator = None
+
+        if id is not None:
+            self.id = id
+
+    @property
+    def id(self):
+        """Gets the id of this CreateDataResponse.
+
+        创建文件夹返回体
+
+        :return: The id of this CreateDataResponse.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this CreateDataResponse.
+
+        创建文件夹返回体
+
+        :param id: The id of this CreateDataResponse.
+        :type id: str
+        """
+        self._id = id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -25,6 +25,7 @@ class DataRsp:
         'type': 'PathType',
         'size': 'int',
         'create_time': 'str',
+        'content': 'str',
         'download_url': 'str',
         'allowed_operate': 'bool',
         'deletable': 'bool'
@@ -36,12 +37,13 @@ class DataRsp:
         'type': 'type',
         'size': 'size',
         'create_time': 'create_time',
+        'content': 'content',
         'download_url': 'download_url',
         'allowed_operate': 'allowed_operate',
         'deletable': 'deletable'
     }
 
-    def __init__(self, path=None, name=None, type=None, size=None, create_time=None, download_url=None, allowed_operate=None, deletable=None):
+    def __init__(self, path=None, name=None, type=None, size=None, create_time=None, content=None, download_url=None, allowed_operate=None, deletable=None):
         """DataRsp
 
         The model defined in huaweicloud sdk
@@ -56,6 +58,8 @@ class DataRsp:
         :type size: int
         :param create_time: 创建时间
         :type create_time: str
+        :param content: 文件内容
+        :type content: str
         :param download_url: 下载链接
         :type download_url: str
         :param allowed_operate: 可操作标记
@@ -71,6 +75,7 @@ class DataRsp:
         self._type = None
         self._size = None
         self._create_time = None
+        self._content = None
         self._download_url = None
         self._allowed_operate = None
         self._deletable = None
@@ -86,6 +91,8 @@ class DataRsp:
             self.size = size
         if create_time is not None:
             self.create_time = create_time
+        if content is not None:
+            self.content = content
         if download_url is not None:
             self.download_url = download_url
         if allowed_operate is not None:
@@ -198,6 +205,28 @@ class DataRsp:
         :type create_time: str
         """
         self._create_time = create_time
+
+    @property
+    def content(self):
+        """Gets the content of this DataRsp.
+
+        文件内容
+
+        :return: The content of this DataRsp.
+        :rtype: str
+        """
+        return self._content
+
+    @content.setter
+    def content(self, content):
+        """Sets the content of this DataRsp.
+
+        文件内容
+
+        :param content: The content of this DataRsp.
+        :type content: str
+        """
+        self._content = content
 
     @property
     def download_url(self):

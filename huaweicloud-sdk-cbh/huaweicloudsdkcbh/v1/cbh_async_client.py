@@ -43,9 +43,9 @@ class CbhAsyncClient(Client):
         return ClientBuilder(clazz)
 
     def change_instance_network_async(self, request):
-        """修改CBH实例网络
+        """修改实例网络
 
-        修改CBH实例网络
+        修改云堡垒机实例网络。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -105,10 +105,73 @@ class CbhAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def create_instance_async(self, request):
-        """创建CBH实例
+    def change_instance_order_async(self, request):
+        """创建变更云堡垒机实例订单
 
-        创建CBH实例
+        创建变更云堡垒机实例订单。（调用此接口前先调用创建变更云堡垒机实例任务接口，当前接口未开放）
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ChangeInstanceOrder
+        :type request: :class:`huaweicloudsdkcbh.v1.ChangeInstanceOrderRequest`
+        :rtype: :class:`huaweicloudsdkcbh.v1.ChangeInstanceOrderResponse`
+        """
+        return self.change_instance_order_with_http_info(request)
+
+    def change_instance_order_with_http_info(self, request):
+        all_params = ['server_id', 'instance_key']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+        if 'instance_key' in local_var_params:
+            path_params['instance_key'] = local_var_params['instance_key']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cbs/{server_id}/alter/{instance_key}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ChangeInstanceOrderResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_instance_async(self, request):
+        """创建云堡垒机实例
+
+        创建云堡垒机实例。（创建云堡垒机实例订单前，先调用此接口）
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -167,9 +230,9 @@ class CbhAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def create_instance_order_async(self, request):
-        """创建CBH实例订单
+        """创建云堡垒机实例订单
 
-        创建CBH实例订单
+        创建云堡垒机实例订单。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -227,10 +290,73 @@ class CbhAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def install_instance_eip_async(self, request):
+        """绑定弹性公网IP
+
+        云堡垒机实例绑定弹性公网IP
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for InstallInstanceEip
+        :type request: :class:`huaweicloudsdkcbh.v1.InstallInstanceEipRequest`
+        :rtype: :class:`huaweicloudsdkcbh.v1.InstallInstanceEipResponse`
+        """
+        return self.install_instance_eip_with_http_info(request)
+
+    def install_instance_eip_with_http_info(self, request):
+        all_params = ['server_id', 'install_instance_eip_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cbs/instance/{server_id}/eip/bind',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='InstallInstanceEipResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_cbh_instance_async(self, request):
         """获取CBH实例列表
 
-        获取CBH实例列表
+        获取当前租户下的云堡垒机实例列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -286,10 +412,195 @@ class CbhAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def restart_cbh_instance_async(self, request):
-        """重启CBH实例
+    def list_quota_status_async(self, request):
+        """获取弹性云服务器配额
 
-        重启CBH实例
+        获取当前租户所选择的可用分区、性能规格所对应的弹性云服务器是否可用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListQuotaStatus
+        :type request: :class:`huaweicloudsdkcbh.v1.ListQuotaStatusRequest`
+        :rtype: :class:`huaweicloudsdkcbh.v1.ListQuotaStatusResponse`
+        """
+        return self.list_quota_status_with_http_info(request)
+
+    def list_quota_status_with_http_info(self, request):
+        all_params = ['availability_zone', 'resource_spec_code']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'availability_zone' in local_var_params:
+            query_params.append(('availability_zone', local_var_params['availability_zone']))
+        if 'resource_spec_code' in local_var_params:
+            query_params.append(('resource_spec_code', local_var_params['resource_spec_code']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cbs/instance/ecs-quota',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListQuotaStatusResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def reset_login_method_async(self, request):
+        """重置admin用户多因子认证方式
+
+        重置admin用户多因子认证方式。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ResetLoginMethod
+        :type request: :class:`huaweicloudsdkcbh.v1.ResetLoginMethodRequest`
+        :rtype: :class:`huaweicloudsdkcbh.v1.ResetLoginMethodResponse`
+        """
+        return self.reset_login_method_with_http_info(request)
+
+    def reset_login_method_with_http_info(self, request):
+        all_params = ['server_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cbs/instance/{server_id}/login-method',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ResetLoginMethodResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def reset_password_async(self, request):
+        """修改admin用户密码
+
+        修改云堡垒机实例web登录admin用户密码。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ResetPassword
+        :type request: :class:`huaweicloudsdkcbh.v1.ResetPasswordRequest`
+        :rtype: :class:`huaweicloudsdkcbh.v1.ResetPasswordResponse`
+        """
+        return self.reset_password_with_http_info(request)
+
+    def reset_password_with_http_info(self, request):
+        all_params = ['reset_password_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cbs/instance/password',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ResetPasswordResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def restart_cbh_instance_async(self, request):
+        """重启云堡垒机实例
+
+        重启云堡垒机实例。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -350,7 +661,7 @@ class CbhAsyncClient(Client):
     def search_quota_async(self, request):
         """查询堡垒机配额
 
-        查询堡垒机配额
+        查询云堡垒机配额信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -407,9 +718,9 @@ class CbhAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_available_zone_info_async(self, request):
-        """获取CBH服务可用分区信息
+        """获取可用用分区信息
 
-        获取CBH服务可用分区信息
+        获取云堡垒机服务可用分区信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -466,9 +777,9 @@ class CbhAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_network_configuration_async(self, request):
-        """检查网络接口
+        """检查云堡垒机网络
 
-        检查网络接口
+        检查云堡垒机实例网络信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -527,9 +838,9 @@ class CbhAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def start_cbh_instance_async(self, request):
-        """启动CBH实例
+        """启动云堡垒机实例
 
-        启动CBH实例
+        启动云堡垒机实例。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -587,134 +898,10 @@ class CbhAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def upgrade_cbh_instance_async(self, request):
-        """升级CBH实例
-
-        升级CBH实例
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpgradeCbhInstance
-        :type request: :class:`huaweicloudsdkcbh.v1.UpgradeCbhInstanceRequest`
-        :rtype: :class:`huaweicloudsdkcbh.v1.UpgradeCbhInstanceResponse`
-        """
-        return self.upgrade_cbh_instance_with_http_info(request)
-
-    def upgrade_cbh_instance_with_http_info(self, request):
-        all_params = ['upgrade_cbh_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/cbs/instance/upgrade',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpgradeCbhInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def change_instance_order_async(self, request):
-        """创建变更CBH订单
-
-        创建变更CBH订单
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ChangeInstanceOrder
-        :type request: :class:`huaweicloudsdkcbh.v1.ChangeInstanceOrderRequest`
-        :rtype: :class:`huaweicloudsdkcbh.v1.ChangeInstanceOrderResponse`
-        """
-        return self.change_instance_order_with_http_info(request)
-
-    def change_instance_order_with_http_info(self, request):
-        all_params = ['server_id', 'instance_key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'server_id' in local_var_params:
-            path_params['server_id'] = local_var_params['server_id']
-        if 'instance_key' in local_var_params:
-            path_params['instance_key'] = local_var_params['instance_key']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/cbs/{server_id}/alter/{instance_key}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeInstanceOrderResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def stop_cbh_instance_async(self, request):
-        """关闭CBH实例
+        """关闭云堡垒机实例
 
-        关闭CBH实例
+        关闭云堡垒机实例。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -772,136 +959,10 @@ class CbhAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def list_quota_state_async(self, request):
-        """获取ECS配额
-
-        获取当前租户所选择的可用分区、性能规格所对应的ECS flavor是否可用
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListQuotaState
-        :type request: :class:`huaweicloudsdkcbh.v1.ListQuotaStateRequest`
-        :rtype: :class:`huaweicloudsdkcbh.v1.ListQuotaStateResponse`
-        """
-        return self.list_quota_state_with_http_info(request)
-
-    def list_quota_state_with_http_info(self, request):
-        all_params = ['availability_zone', 'resource_spec_code']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'availability_zone' in local_var_params:
-            query_params.append(('availability_zone', local_var_params['availability_zone']))
-        if 'resource_spec_code' in local_var_params:
-            query_params.append(('resource_spec_code', local_var_params['resource_spec_code']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/cbs/instance/ecs-quota',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQuotaStateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def install_instance_eip_async(self, request):
-        """绑定CBH实例Eip
-
-        绑定CBH实例Eip
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for InstallInstanceEip
-        :type request: :class:`huaweicloudsdkcbh.v1.InstallInstanceEipRequest`
-        :rtype: :class:`huaweicloudsdkcbh.v1.InstallInstanceEipResponse`
-        """
-        return self.install_instance_eip_with_http_info(request)
-
-    def install_instance_eip_with_http_info(self, request):
-        all_params = ['server_id', 'install_instance_eip_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'server_id' in local_var_params:
-            path_params['server_id'] = local_var_params['server_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/cbs/instance/{server_id}/eip/bind',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='InstallInstanceEipResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def uninstall_instance_eip_async(self, request):
-        """解绑CBH实例Eip
+        """解绑弹性公网IP
 
-        解绑CBH实例Eip
+        云堡垒机实例解绑弹性公网IP。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -961,83 +1022,22 @@ class CbhAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def reset_login_method_async(self, request):
-        """修改admin用户多因子认证方式
+    def upgrade_cbh_instance_async(self, request):
+        """升级云堡垒机实例
 
-        修改admin用户多因子认证方式
+        升级云堡垒机实例
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ResetLoginMethod
-        :type request: :class:`huaweicloudsdkcbh.v1.ResetLoginMethodRequest`
-        :rtype: :class:`huaweicloudsdkcbh.v1.ResetLoginMethodResponse`
+        :param request: Request instance for UpgradeCbhInstance
+        :type request: :class:`huaweicloudsdkcbh.v1.UpgradeCbhInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcbh.v1.UpgradeCbhInstanceResponse`
         """
-        return self.reset_login_method_with_http_info(request)
+        return self.upgrade_cbh_instance_with_http_info(request)
 
-    def reset_login_method_with_http_info(self, request):
-        all_params = ['server_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'server_id' in local_var_params:
-            path_params['server_id'] = local_var_params['server_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/cbs/instance/{server_id}/login-method',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetLoginMethodResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def reset_password_async(self, request):
-        """修改admin密码
-
-        修改admin密码
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ResetPassword
-        :type request: :class:`huaweicloudsdkcbh.v1.ResetPasswordRequest`
-        :rtype: :class:`huaweicloudsdkcbh.v1.ResetPasswordResponse`
-        """
-        return self.reset_password_with_http_info(request)
-
-    def reset_password_with_http_info(self, request):
-        all_params = ['reset_password_request_body']
+    def upgrade_cbh_instance_with_http_info(self, request):
+        all_params = ['upgrade_cbh_instance_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1069,15 +1069,15 @@ class CbhAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1/{project_id}/cbs/instance/password',
-            method='PUT',
+            resource_path='/v1/{project_id}/cbs/instance/upgrade',
+            method='POST',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
             body=body_params,
             post_params=form_params,
             cname=cname,
-            response_type='ResetPasswordResponse',
+            response_type='UpgradeCbhInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -20,6 +20,8 @@ from huaweicloudsdkeihealth.v1.model.backup_dto import BackupDto
 from huaweicloudsdkeihealth.v1.model.batch_cancel_job_request import BatchCancelJobRequest
 from huaweicloudsdkeihealth.v1.model.batch_cancel_job_response import BatchCancelJobResponse
 from huaweicloudsdkeihealth.v1.model.batch_delete_data_req import BatchDeleteDataReq
+from huaweicloudsdkeihealth.v1.model.batch_delete_data_request import BatchDeleteDataRequest
+from huaweicloudsdkeihealth.v1.model.batch_delete_data_response import BatchDeleteDataResponse
 from huaweicloudsdkeihealth.v1.model.batch_delete_job_request import BatchDeleteJobRequest
 from huaweicloudsdkeihealth.v1.model.batch_delete_job_response import BatchDeleteJobResponse
 from huaweicloudsdkeihealth.v1.model.batch_delete_label_req import BatchDeleteLabelReq
@@ -29,6 +31,9 @@ from huaweicloudsdkeihealth.v1.model.batch_delete_member_req import BatchDeleteM
 from huaweicloudsdkeihealth.v1.model.batch_delete_member_request import BatchDeleteMemberRequest
 from huaweicloudsdkeihealth.v1.model.batch_delete_member_response import BatchDeleteMemberResponse
 from huaweicloudsdkeihealth.v1.model.batch_delete_member_rsp import BatchDeleteMemberRsp
+from huaweicloudsdkeihealth.v1.model.batch_delete_notice_req import BatchDeleteNoticeReq
+from huaweicloudsdkeihealth.v1.model.batch_delete_notice_request import BatchDeleteNoticeRequest
+from huaweicloudsdkeihealth.v1.model.batch_delete_notice_response import BatchDeleteNoticeResponse
 from huaweicloudsdkeihealth.v1.model.batch_delete_tag_req import BatchDeleteTagReq
 from huaweicloudsdkeihealth.v1.model.batch_delete_tag_request import BatchDeleteTagRequest
 from huaweicloudsdkeihealth.v1.model.batch_delete_tag_response import BatchDeleteTagResponse
@@ -46,6 +51,9 @@ from huaweicloudsdkeihealth.v1.model.batch_retry_job_response import BatchRetryJ
 from huaweicloudsdkeihealth.v1.model.batch_update_node_label_req import BatchUpdateNodeLabelReq
 from huaweicloudsdkeihealth.v1.model.batch_update_node_label_request import BatchUpdateNodeLabelRequest
 from huaweicloudsdkeihealth.v1.model.batch_update_node_label_response import BatchUpdateNodeLabelResponse
+from huaweicloudsdkeihealth.v1.model.batch_update_notice_req import BatchUpdateNoticeReq
+from huaweicloudsdkeihealth.v1.model.batch_update_notice_request import BatchUpdateNoticeRequest
+from huaweicloudsdkeihealth.v1.model.batch_update_notice_response import BatchUpdateNoticeResponse
 from huaweicloudsdkeihealth.v1.model.bind_user_rsp import BindUserRsp
 from huaweicloudsdkeihealth.v1.model.bucket_dto import BucketDto
 from huaweicloudsdkeihealth.v1.model.bucket_object_dto import BucketObjectDto
@@ -55,6 +63,8 @@ from huaweicloudsdkeihealth.v1.model.cancel_data_job_response import CancelDataJ
 from huaweicloudsdkeihealth.v1.model.cancel_job_request import CancelJobRequest
 from huaweicloudsdkeihealth.v1.model.cancel_job_response import CancelJobResponse
 from huaweicloudsdkeihealth.v1.model.change_password_req import ChangePasswordReq
+from huaweicloudsdkeihealth.v1.model.change_password_request import ChangePasswordRequest
+from huaweicloudsdkeihealth.v1.model.change_password_response import ChangePasswordResponse
 from huaweicloudsdkeihealth.v1.model.check_email_connection_request import CheckEmailConnectionRequest
 from huaweicloudsdkeihealth.v1.model.check_email_connection_response import CheckEmailConnectionResponse
 from huaweicloudsdkeihealth.v1.model.check_token_verification_request import CheckTokenVerificationRequest
@@ -151,8 +161,6 @@ from huaweicloudsdkeihealth.v1.model.delete_computing_resource_request import De
 from huaweicloudsdkeihealth.v1.model.delete_computing_resource_response import DeleteComputingResourceResponse
 from huaweicloudsdkeihealth.v1.model.delete_data_job_request import DeleteDataJobRequest
 from huaweicloudsdkeihealth.v1.model.delete_data_job_response import DeleteDataJobResponse
-from huaweicloudsdkeihealth.v1.model.delete_data_request import DeleteDataRequest
-from huaweicloudsdkeihealth.v1.model.delete_data_response import DeleteDataResponse
 from huaweicloudsdkeihealth.v1.model.delete_database_data_request import DeleteDatabaseDataRequest
 from huaweicloudsdkeihealth.v1.model.delete_database_data_response import DeleteDatabaseDataResponse
 from huaweicloudsdkeihealth.v1.model.delete_database_resource_request import DeleteDatabaseResourceRequest
@@ -207,8 +215,6 @@ from huaweicloudsdkeihealth.v1.model.feature_enum import FeatureEnum
 from huaweicloudsdkeihealth.v1.model.flavor_info import FlavorInfo
 from huaweicloudsdkeihealth.v1.model.get_archive_config_rsp import GetArchiveConfigRsp
 from huaweicloudsdkeihealth.v1.model.get_asset_rsp import GetAssetRsp
-from huaweicloudsdkeihealth.v1.model.get_data_policy_rsp import GetDataPolicyRsp
-from huaweicloudsdkeihealth.v1.model.get_message_clear_rule_req import GetMessageClearRuleReq
 from huaweicloudsdkeihealth.v1.model.get_tag_detail_rsp import GetTagDetailRsp
 from huaweicloudsdkeihealth.v1.model.get_user_rsp import GetUserRsp
 from huaweicloudsdkeihealth.v1.model.image_chip_type import ImageChipType
@@ -233,6 +239,9 @@ from huaweicloudsdkeihealth.v1.model.import_template_req import ImportTemplateRe
 from huaweicloudsdkeihealth.v1.model.import_template_request import ImportTemplateRequest
 from huaweicloudsdkeihealth.v1.model.import_template_response import ImportTemplateResponse
 from huaweicloudsdkeihealth.v1.model.import_template_result_rsp import ImportTemplateResultRsp
+from huaweicloudsdkeihealth.v1.model.import_user_req import ImportUserReq
+from huaweicloudsdkeihealth.v1.model.import_user_request import ImportUserRequest
+from huaweicloudsdkeihealth.v1.model.import_user_response import ImportUserResponse
 from huaweicloudsdkeihealth.v1.model.import_workflow_req import ImportWorkflowReq
 from huaweicloudsdkeihealth.v1.model.import_workflow_request import ImportWorkflowRequest
 from huaweicloudsdkeihealth.v1.model.import_workflow_response import ImportWorkflowResponse
@@ -276,6 +285,8 @@ from huaweicloudsdkeihealth.v1.model.list_database_resource_flavor_request impor
 from huaweicloudsdkeihealth.v1.model.list_database_resource_flavor_response import ListDatabaseResourceFlavorResponse
 from huaweicloudsdkeihealth.v1.model.list_database_resource_request import ListDatabaseResourceRequest
 from huaweicloudsdkeihealth.v1.model.list_database_resource_response import ListDatabaseResourceResponse
+from huaweicloudsdkeihealth.v1.model.list_global_workflow_statistic_request import ListGlobalWorkflowStatisticRequest
+from huaweicloudsdkeihealth.v1.model.list_global_workflow_statistic_response import ListGlobalWorkflowStatisticResponse
 from huaweicloudsdkeihealth.v1.model.list_image_request import ListImageRequest
 from huaweicloudsdkeihealth.v1.model.list_image_response import ListImageResponse
 from huaweicloudsdkeihealth.v1.model.list_image_tag_request import ListImageTagRequest
@@ -290,6 +301,8 @@ from huaweicloudsdkeihealth.v1.model.list_label_request import ListLabelRequest
 from huaweicloudsdkeihealth.v1.model.list_label_response import ListLabelResponse
 from huaweicloudsdkeihealth.v1.model.list_message_request import ListMessageRequest
 from huaweicloudsdkeihealth.v1.model.list_message_response import ListMessageResponse
+from huaweicloudsdkeihealth.v1.model.list_message_statistics_request import ListMessageStatisticsRequest
+from huaweicloudsdkeihealth.v1.model.list_message_statistics_response import ListMessageStatisticsResponse
 from huaweicloudsdkeihealth.v1.model.list_mfa_request import ListMfaRequest
 from huaweicloudsdkeihealth.v1.model.list_mfa_response import ListMfaResponse
 from huaweicloudsdkeihealth.v1.model.list_node_label_request import ListNodeLabelRequest
@@ -298,6 +311,8 @@ from huaweicloudsdkeihealth.v1.model.list_notebook_request import ListNotebookRe
 from huaweicloudsdkeihealth.v1.model.list_notebook_response import ListNotebookResponse
 from huaweicloudsdkeihealth.v1.model.list_notebook_tool_request import ListNotebookToolRequest
 from huaweicloudsdkeihealth.v1.model.list_notebook_tool_response import ListNotebookToolResponse
+from huaweicloudsdkeihealth.v1.model.list_notice_request import ListNoticeRequest
+from huaweicloudsdkeihealth.v1.model.list_notice_response import ListNoticeResponse
 from huaweicloudsdkeihealth.v1.model.list_obs_bucket_object_request import ListObsBucketObjectRequest
 from huaweicloudsdkeihealth.v1.model.list_obs_bucket_object_response import ListObsBucketObjectResponse
 from huaweicloudsdkeihealth.v1.model.list_obs_bucket_request import ListObsBucketRequest
@@ -346,6 +361,8 @@ from huaweicloudsdkeihealth.v1.model.notebook_image import NotebookImage
 from huaweicloudsdkeihealth.v1.model.notebook_status import NotebookStatus
 from huaweicloudsdkeihealth.v1.model.notebook_storage import NotebookStorage
 from huaweicloudsdkeihealth.v1.model.notebook_tool_dto import NotebookToolDto
+from huaweicloudsdkeihealth.v1.model.notice_operation import NoticeOperation
+from huaweicloudsdkeihealth.v1.model.notice_rsp import NoticeRsp
 from huaweicloudsdkeihealth.v1.model.operation import Operation
 from huaweicloudsdkeihealth.v1.model.output_file_type import OutputFileType
 from huaweicloudsdkeihealth.v1.model.path_type import PathType
@@ -395,6 +412,7 @@ from huaweicloudsdkeihealth.v1.model.retry_job_response import RetryJobResponse
 from huaweicloudsdkeihealth.v1.model.role_dto import RoleDto
 from huaweicloudsdkeihealth.v1.model.row_data_req import RowDataReq
 from huaweicloudsdkeihealth.v1.model.send_code_req import SendCodeReq
+from huaweicloudsdkeihealth.v1.model.set_message_clear_rule_req import SetMessageClearRuleReq
 from huaweicloudsdkeihealth.v1.model.set_message_email_config_req import SetMessageEmailConfigReq
 from huaweicloudsdkeihealth.v1.model.set_message_receive_config_req import SetMessageReceiveConfigReq
 from huaweicloudsdkeihealth.v1.model.show3d_structure_content_request import Show3dStructureContentRequest
@@ -495,6 +513,7 @@ from huaweicloudsdkeihealth.v1.model.stop_node_response import StopNodeResponse
 from huaweicloudsdkeihealth.v1.model.stop_or_start_notebook_request import StopOrStartNotebookRequest
 from huaweicloudsdkeihealth.v1.model.stop_or_start_notebook_response import StopOrStartNotebookResponse
 from huaweicloudsdkeihealth.v1.model.storage_resource_rsp import StorageResourceRsp
+from huaweicloudsdkeihealth.v1.model.storage_type import StorageType
 from huaweicloudsdkeihealth.v1.model.study_job_rsp import StudyJobRsp
 from huaweicloudsdkeihealth.v1.model.study_rsp import StudyRsp
 from huaweicloudsdkeihealth.v1.model.sub_task_runtime_dto import SubTaskRuntimeDto
@@ -529,6 +548,7 @@ from huaweicloudsdkeihealth.v1.model.template_rsp import TemplateRsp
 from huaweicloudsdkeihealth.v1.model.template_src_req import TemplateSrcReq
 from huaweicloudsdkeihealth.v1.model.terminate_job_req import TerminateJobReq
 from huaweicloudsdkeihealth.v1.model.tool_info_dto import ToolInfoDto
+from huaweicloudsdkeihealth.v1.model.trace_data_rsp import TraceDataRsp
 from huaweicloudsdkeihealth.v1.model.transfer_project_req import TransferProjectReq
 from huaweicloudsdkeihealth.v1.model.transfer_project_request import TransferProjectRequest
 from huaweicloudsdkeihealth.v1.model.transfer_project_response import TransferProjectResponse
@@ -545,6 +565,7 @@ from huaweicloudsdkeihealth.v1.model.update_auto_job_request import UpdateAutoJo
 from huaweicloudsdkeihealth.v1.model.update_auto_job_response import UpdateAutoJobResponse
 from huaweicloudsdkeihealth.v1.model.update_data_path_policy_request import UpdateDataPathPolicyRequest
 from huaweicloudsdkeihealth.v1.model.update_data_path_policy_response import UpdateDataPathPolicyResponse
+from huaweicloudsdkeihealth.v1.model.update_data_policy_req import UpdateDataPolicyReq
 from huaweicloudsdkeihealth.v1.model.update_data_policy_request import UpdateDataPolicyRequest
 from huaweicloudsdkeihealth.v1.model.update_data_policy_response import UpdateDataPolicyResponse
 from huaweicloudsdkeihealth.v1.model.update_database_data_request import UpdateDatabaseDataRequest
@@ -573,8 +594,6 @@ from huaweicloudsdkeihealth.v1.model.update_node_label_req import UpdateNodeLabe
 from huaweicloudsdkeihealth.v1.model.update_notebook_req import UpdateNotebookReq
 from huaweicloudsdkeihealth.v1.model.update_notebook_request import UpdateNotebookRequest
 from huaweicloudsdkeihealth.v1.model.update_notebook_response import UpdateNotebookResponse
-from huaweicloudsdkeihealth.v1.model.update_password_request import UpdatePasswordRequest
-from huaweicloudsdkeihealth.v1.model.update_password_response import UpdatePasswordResponse
 from huaweicloudsdkeihealth.v1.model.update_performance_resource_req import UpdatePerformanceResourceReq
 from huaweicloudsdkeihealth.v1.model.update_performance_resource_request import UpdatePerformanceResourceRequest
 from huaweicloudsdkeihealth.v1.model.update_performance_resource_response import UpdatePerformanceResourceResponse
@@ -613,6 +632,7 @@ from huaweicloudsdkeihealth.v1.model.upload_template_request import UploadTempla
 from huaweicloudsdkeihealth.v1.model.upload_template_request_body import UploadTemplateRequestBody
 from huaweicloudsdkeihealth.v1.model.upload_template_response import UploadTemplateResponse
 from huaweicloudsdkeihealth.v1.model.user_dto import UserDto
+from huaweicloudsdkeihealth.v1.model.user_id_rsp import UserIdRsp
 from huaweicloudsdkeihealth.v1.model.user_role import UserRole
 from huaweicloudsdkeihealth.v1.model.user_setting_dto import UserSettingDto
 from huaweicloudsdkeihealth.v1.model.validate_code_request import ValidateCodeRequest

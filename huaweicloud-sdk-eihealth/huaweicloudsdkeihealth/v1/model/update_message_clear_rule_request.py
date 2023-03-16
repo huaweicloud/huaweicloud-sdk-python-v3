@@ -20,7 +20,7 @@ class UpdateMessageClearRuleRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'GetMessageClearRuleReq'
+        'body': 'SetMessageClearRuleReq'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class UpdateMessageClearRuleRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the UpdateMessageClearRuleRequest
-        :type body: :class:`huaweicloudsdkeihealth.v1.GetMessageClearRuleReq`
+        :type body: :class:`huaweicloudsdkeihealth.v1.SetMessageClearRuleReq`
         """
         
         
@@ -49,7 +49,7 @@ class UpdateMessageClearRuleRequest:
         """Gets the body of this UpdateMessageClearRuleRequest.
 
         :return: The body of this UpdateMessageClearRuleRequest.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.GetMessageClearRuleReq`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.SetMessageClearRuleReq`
         """
         return self._body
 
@@ -58,7 +58,7 @@ class UpdateMessageClearRuleRequest:
         """Sets the body of this UpdateMessageClearRuleRequest.
 
         :param body: The body of this UpdateMessageClearRuleRequest.
-        :type body: :class:`huaweicloudsdkeihealth.v1.GetMessageClearRuleReq`
+        :type body: :class:`huaweicloudsdkeihealth.v1.SetMessageClearRuleReq`
         """
         self._body = body
 

@@ -32,7 +32,7 @@ class RebootType:
 
         The model defined in huaweicloud sdk
 
-        :param type: 重启方式
+        :param type: 重启方式，不区分大小写。 - SOFT  普通重启，关闭虚拟机服务 - HARD  强制重启，重启虚拟机
         :type type: str
         """
         
@@ -47,7 +47,7 @@ class RebootType:
     def type(self):
         """Gets the type of this RebootType.
 
-        重启方式
+        重启方式，不区分大小写。 - SOFT  普通重启，关闭虚拟机服务 - HARD  强制重启，重启虚拟机
 
         :return: The type of this RebootType.
         :rtype: str
@@ -58,7 +58,7 @@ class RebootType:
     def type(self, type):
         """Sets the type of this RebootType.
 
-        重启方式
+        重启方式，不区分大小写。 - SOFT  普通重启，关闭虚拟机服务 - HARD  强制重启，重启虚拟机
 
         :param type: The type of this RebootType.
         :type type: str

@@ -52,7 +52,6 @@ class InstanceDetail:
         'new_bastion_version': 'str',
         'instance_status': 'str',
         'instance_description': 'str',
-        'is_auto_renew': 'int',
         'slave_zone': 'str',
         'enterprise_project_id': 'str',
         'instance_type': 'str',
@@ -95,7 +94,6 @@ class InstanceDetail:
         'new_bastion_version': 'newBastionVersion',
         'instance_status': 'instanceStatus',
         'instance_description': 'instanceDescription',
-        'is_auto_renew': 'is_auto_renew',
         'slave_zone': 'slaveZone',
         'enterprise_project_id': 'enterpriseProjectId',
         'instance_type': 'instanceType',
@@ -105,90 +103,88 @@ class InstanceDetail:
         'vip': 'vip'
     }
 
-    def __init__(self, publicip=None, exp_time=None, start_time=None, end_time=None, release_time=None, name=None, instance_id=None, private_ip=None, task_status=None, status=None, created=None, region=None, zone=None, availability_zone_display=None, vpc_id=None, subnet_id=None, security_group_id=None, specification=None, update=None, createinstance_status=None, fail_reason=None, instance_key=None, order_id=None, period_num=None, resource_id=None, bastion_type=None, alter_permit=None, public_id=None, bastion_version=None, new_bastion_version=None, instance_status=None, instance_description=None, is_auto_renew=None, slave_zone=None, enterprise_project_id=None, instance_type=None, ha_id=None, slave_zone_display=None, web_port=None, vip=None):
+    def __init__(self, publicip=None, exp_time=None, start_time=None, end_time=None, release_time=None, name=None, instance_id=None, private_ip=None, task_status=None, status=None, created=None, region=None, zone=None, availability_zone_display=None, vpc_id=None, subnet_id=None, security_group_id=None, specification=None, update=None, createinstance_status=None, fail_reason=None, instance_key=None, order_id=None, period_num=None, resource_id=None, bastion_type=None, alter_permit=None, public_id=None, bastion_version=None, new_bastion_version=None, instance_status=None, instance_description=None, slave_zone=None, enterprise_project_id=None, instance_type=None, ha_id=None, slave_zone_display=None, web_port=None, vip=None):
         """InstanceDetail
 
         The model defined in huaweicloud sdk
 
-        :param publicip: 弹性ip
+        :param publicip: 云堡垒机实例弹性公网IP，返回默认值null
         :type publicip: str
-        :param exp_time: 过期时间，要求用UTC时间表示
+        :param exp_time: 云堡垒机实例过期时间。
         :type exp_time: str
-        :param start_time: 开始时间，要求用UTC时间表示
+        :param start_time: 云堡垒机实例开始时间，使用时间戳格式表示。
         :type start_time: str
-        :param end_time: 结束时间，要求用UTC时间表示
+        :param end_time: 云堡垒机实例结束时间，使用时间戳格式表示。
         :type end_time: str
-        :param release_time: 释放时间，要求用UTC时间表示
+        :param release_time: 云堡垒机释放时间，使用时间戳格式表示。
         :type release_time: str
-        :param name: 实例名称
+        :param name: 云堡垒机实例名称。
         :type name: str
-        :param instance_id: 实例的server id
+        :param instance_id: 云堡垒机实例ID，UUID格式。
         :type instance_id: str
-        :param private_ip: 实例私有ip
+        :param private_ip: 云堡垒机实例私有ip。
         :type private_ip: str
-        :param task_status: 实例当前的任务状态
+        :param task_status: 云堡垒机实例当前的任务状态。
         :type task_status: str
-        :param status: 实例状态
+        :param status: 云堡垒机实例状态。
         :type status: str
-        :param created: 实例创建时间，要求用UTC时间表示
+        :param created: 云堡垒机实例创建时间，使用UTC时间表示。
         :type created: str
-        :param region: 实例所在region
+        :param region: 云堡垒机实例所在局点。
         :type region: str
-        :param zone: 实例所在可用区id
+        :param zone: 云堡垒机实例所在可用区。
         :type zone: str
-        :param availability_zone_display: 实例所在可用区名称
+        :param availability_zone_display: 云堡垒机实例所在可用区中文名称。
         :type availability_zone_display: str
-        :param vpc_id: 实例所在vpc的id
+        :param vpc_id: 云堡垒机实例所在虚拟私有云的VPC ID。
         :type vpc_id: str
-        :param subnet_id: 实例所在子网的id
+        :param subnet_id: 云堡垒机实例所在子网的ID。
         :type subnet_id: str
-        :param security_group_id: 实例所属的安全组的id
+        :param security_group_id: 云堡垒机实例所属的安全组的ID。
         :type security_group_id: str
-        :param specification: 实例规格
+        :param specification: 云堡垒机实例规格。
         :type specification: str
-        :param update: 实例镜像是否可以升级
+        :param update: 云堡垒机实例镜像是否可以升级。 - NEW，可以升级 - OLD，不能升级
         :type update: str
-        :param createinstance_status: 在创建实例过程中的过程状态信息
+        :param createinstance_status: 云堡垒机实例在创建实例过程中的过程状态信息。 - Waiting for payment，等待支付 - creating-network，创建网络 - creating-server，创建服务 - tranfering-horizontal-network，网络打通 - adding-policy-route，添加路由策略 - configing-dns，配置DNS - starting-cbs-service，服务运行中 - setting-init-conf，初始化 - buying-EIP，购买弹性公网IP
         :type createinstance_status: str
-        :param fail_reason: 创建实例失败原因
+        :param fail_reason: 云堡垒机实例创建实例失败原因。
         :type fail_reason: str
-        :param instance_key: 实例ID
+        :param instance_key: 云堡垒机实例key。
         :type instance_key: str
-        :param order_id: 订单id
+        :param order_id: 订单ID。
         :type order_id: str
-        :param period_num: 租户购买的时长
+        :param period_num: 云堡垒机实例订购周期数。
         :type period_num: str
-        :param resource_id: 实例的资源id
+        :param resource_id: 云堡垒机实例实例的资源id,UUID格式显示。
         :type resource_id: str
-        :param bastion_type: 堡垒机类型
+        :param bastion_type: 云堡垒机实例堡垒机类型。 - OEM
         :type bastion_type: str
-        :param alter_permit: 前端是否显示扩容按钮
+        :param alter_permit: 云堡垒机实例是否可以扩容。 - 1 开启扩容 - 0 关闭扩容
         :type alter_permit: str
-        :param public_id: 实例绑定的弹性IP的id
+        :param public_id: 云堡垒机实例绑定公网的弹性IP的ID，UUID格式表示。
         :type public_id: str
-        :param bastion_version: 实例镜像当前版本号
+        :param bastion_version: 云堡垒机实例镜像当前版本号。
         :type bastion_version: str
-        :param new_bastion_version: 实例镜像最新版本号
+        :param new_bastion_version: 云堡垒机实例镜像可以升级的版本号。
         :type new_bastion_version: str
-        :param instance_status: 实例状态
+        :param instance_status: 云堡垒机实例状态。 - building  创建中 - deleting  删除中 - deleted 删除了 - unpaid  未支付 - upgrading 升级中 - resizing  扩容中 - abnormal  异常 - error 故障 - ok  正常
         :type instance_status: str
-        :param instance_description: 实例描述
+        :param instance_description: 云堡垒机实例状态描述。
         :type instance_description: str
-        :param is_auto_renew: 是否支持续费
-        :type is_auto_renew: int
-        :param slave_zone: 备可用分区
+        :param slave_zone: 备可用分区，默认返回null。
         :type slave_zone: str
-        :param enterprise_project_id: 企业项目id
+        :param enterprise_project_id: 云堡垒机实例所属企业项目ID。
         :type enterprise_project_id: str
-        :param instance_type: 实例类型
+        :param instance_type: 云堡垒机实例类型。 - null  单机默认返回null - master  HA时返回主机 - slave HA时返回备机
         :type instance_type: str
-        :param ha_id: 主备ID
+        :param ha_id: 云堡垒机实例主备ID。 - 单机堡垒机实例默认返回null - HA堡垒机实例返回主机HAID
         :type ha_id: str
-        :param slave_zone_display: 备可用分区名称
+        :param slave_zone_display: 云堡垒机实例备机可用分区名称。 单机堡垒机实例和备机堡垒机实例返回null，HA堡垒机实例主机返回备机所在可用区名称。
         :type slave_zone_display: str
-        :param web_port: 端口号
+        :param web_port: 云堡垒机实例WEB界面访问的端口号。
         :type web_port: str
-        :param vip: 浮动ip
+        :param vip: 云堡垒机实例浮动ip。
         :type vip: str
         """
         
@@ -226,7 +222,6 @@ class InstanceDetail:
         self._new_bastion_version = None
         self._instance_status = None
         self._instance_description = None
-        self._is_auto_renew = None
         self._slave_zone = None
         self._enterprise_project_id = None
         self._instance_type = None
@@ -268,8 +263,6 @@ class InstanceDetail:
         self.new_bastion_version = new_bastion_version
         self.instance_status = instance_status
         self.instance_description = instance_description
-        if is_auto_renew is not None:
-            self.is_auto_renew = is_auto_renew
         if slave_zone is not None:
             self.slave_zone = slave_zone
         if enterprise_project_id is not None:
@@ -289,7 +282,7 @@ class InstanceDetail:
     def publicip(self):
         """Gets the publicip of this InstanceDetail.
 
-        弹性ip
+        云堡垒机实例弹性公网IP，返回默认值null
 
         :return: The publicip of this InstanceDetail.
         :rtype: str
@@ -300,7 +293,7 @@ class InstanceDetail:
     def publicip(self, publicip):
         """Sets the publicip of this InstanceDetail.
 
-        弹性ip
+        云堡垒机实例弹性公网IP，返回默认值null
 
         :param publicip: The publicip of this InstanceDetail.
         :type publicip: str
@@ -311,7 +304,7 @@ class InstanceDetail:
     def exp_time(self):
         """Gets the exp_time of this InstanceDetail.
 
-        过期时间，要求用UTC时间表示
+        云堡垒机实例过期时间。
 
         :return: The exp_time of this InstanceDetail.
         :rtype: str
@@ -322,7 +315,7 @@ class InstanceDetail:
     def exp_time(self, exp_time):
         """Sets the exp_time of this InstanceDetail.
 
-        过期时间，要求用UTC时间表示
+        云堡垒机实例过期时间。
 
         :param exp_time: The exp_time of this InstanceDetail.
         :type exp_time: str
@@ -333,7 +326,7 @@ class InstanceDetail:
     def start_time(self):
         """Gets the start_time of this InstanceDetail.
 
-        开始时间，要求用UTC时间表示
+        云堡垒机实例开始时间，使用时间戳格式表示。
 
         :return: The start_time of this InstanceDetail.
         :rtype: str
@@ -344,7 +337,7 @@ class InstanceDetail:
     def start_time(self, start_time):
         """Sets the start_time of this InstanceDetail.
 
-        开始时间，要求用UTC时间表示
+        云堡垒机实例开始时间，使用时间戳格式表示。
 
         :param start_time: The start_time of this InstanceDetail.
         :type start_time: str
@@ -355,7 +348,7 @@ class InstanceDetail:
     def end_time(self):
         """Gets the end_time of this InstanceDetail.
 
-        结束时间，要求用UTC时间表示
+        云堡垒机实例结束时间，使用时间戳格式表示。
 
         :return: The end_time of this InstanceDetail.
         :rtype: str
@@ -366,7 +359,7 @@ class InstanceDetail:
     def end_time(self, end_time):
         """Sets the end_time of this InstanceDetail.
 
-        结束时间，要求用UTC时间表示
+        云堡垒机实例结束时间，使用时间戳格式表示。
 
         :param end_time: The end_time of this InstanceDetail.
         :type end_time: str
@@ -377,7 +370,7 @@ class InstanceDetail:
     def release_time(self):
         """Gets the release_time of this InstanceDetail.
 
-        释放时间，要求用UTC时间表示
+        云堡垒机释放时间，使用时间戳格式表示。
 
         :return: The release_time of this InstanceDetail.
         :rtype: str
@@ -388,7 +381,7 @@ class InstanceDetail:
     def release_time(self, release_time):
         """Sets the release_time of this InstanceDetail.
 
-        释放时间，要求用UTC时间表示
+        云堡垒机释放时间，使用时间戳格式表示。
 
         :param release_time: The release_time of this InstanceDetail.
         :type release_time: str
@@ -399,7 +392,7 @@ class InstanceDetail:
     def name(self):
         """Gets the name of this InstanceDetail.
 
-        实例名称
+        云堡垒机实例名称。
 
         :return: The name of this InstanceDetail.
         :rtype: str
@@ -410,7 +403,7 @@ class InstanceDetail:
     def name(self, name):
         """Sets the name of this InstanceDetail.
 
-        实例名称
+        云堡垒机实例名称。
 
         :param name: The name of this InstanceDetail.
         :type name: str
@@ -421,7 +414,7 @@ class InstanceDetail:
     def instance_id(self):
         """Gets the instance_id of this InstanceDetail.
 
-        实例的server id
+        云堡垒机实例ID，UUID格式。
 
         :return: The instance_id of this InstanceDetail.
         :rtype: str
@@ -432,7 +425,7 @@ class InstanceDetail:
     def instance_id(self, instance_id):
         """Sets the instance_id of this InstanceDetail.
 
-        实例的server id
+        云堡垒机实例ID，UUID格式。
 
         :param instance_id: The instance_id of this InstanceDetail.
         :type instance_id: str
@@ -443,7 +436,7 @@ class InstanceDetail:
     def private_ip(self):
         """Gets the private_ip of this InstanceDetail.
 
-        实例私有ip
+        云堡垒机实例私有ip。
 
         :return: The private_ip of this InstanceDetail.
         :rtype: str
@@ -454,7 +447,7 @@ class InstanceDetail:
     def private_ip(self, private_ip):
         """Sets the private_ip of this InstanceDetail.
 
-        实例私有ip
+        云堡垒机实例私有ip。
 
         :param private_ip: The private_ip of this InstanceDetail.
         :type private_ip: str
@@ -465,7 +458,7 @@ class InstanceDetail:
     def task_status(self):
         """Gets the task_status of this InstanceDetail.
 
-        实例当前的任务状态
+        云堡垒机实例当前的任务状态。
 
         :return: The task_status of this InstanceDetail.
         :rtype: str
@@ -476,7 +469,7 @@ class InstanceDetail:
     def task_status(self, task_status):
         """Sets the task_status of this InstanceDetail.
 
-        实例当前的任务状态
+        云堡垒机实例当前的任务状态。
 
         :param task_status: The task_status of this InstanceDetail.
         :type task_status: str
@@ -487,7 +480,7 @@ class InstanceDetail:
     def status(self):
         """Gets the status of this InstanceDetail.
 
-        实例状态
+        云堡垒机实例状态。
 
         :return: The status of this InstanceDetail.
         :rtype: str
@@ -498,7 +491,7 @@ class InstanceDetail:
     def status(self, status):
         """Sets the status of this InstanceDetail.
 
-        实例状态
+        云堡垒机实例状态。
 
         :param status: The status of this InstanceDetail.
         :type status: str
@@ -509,7 +502,7 @@ class InstanceDetail:
     def created(self):
         """Gets the created of this InstanceDetail.
 
-        实例创建时间，要求用UTC时间表示
+        云堡垒机实例创建时间，使用UTC时间表示。
 
         :return: The created of this InstanceDetail.
         :rtype: str
@@ -520,7 +513,7 @@ class InstanceDetail:
     def created(self, created):
         """Sets the created of this InstanceDetail.
 
-        实例创建时间，要求用UTC时间表示
+        云堡垒机实例创建时间，使用UTC时间表示。
 
         :param created: The created of this InstanceDetail.
         :type created: str
@@ -531,7 +524,7 @@ class InstanceDetail:
     def region(self):
         """Gets the region of this InstanceDetail.
 
-        实例所在region
+        云堡垒机实例所在局点。
 
         :return: The region of this InstanceDetail.
         :rtype: str
@@ -542,7 +535,7 @@ class InstanceDetail:
     def region(self, region):
         """Sets the region of this InstanceDetail.
 
-        实例所在region
+        云堡垒机实例所在局点。
 
         :param region: The region of this InstanceDetail.
         :type region: str
@@ -553,7 +546,7 @@ class InstanceDetail:
     def zone(self):
         """Gets the zone of this InstanceDetail.
 
-        实例所在可用区id
+        云堡垒机实例所在可用区。
 
         :return: The zone of this InstanceDetail.
         :rtype: str
@@ -564,7 +557,7 @@ class InstanceDetail:
     def zone(self, zone):
         """Sets the zone of this InstanceDetail.
 
-        实例所在可用区id
+        云堡垒机实例所在可用区。
 
         :param zone: The zone of this InstanceDetail.
         :type zone: str
@@ -575,7 +568,7 @@ class InstanceDetail:
     def availability_zone_display(self):
         """Gets the availability_zone_display of this InstanceDetail.
 
-        实例所在可用区名称
+        云堡垒机实例所在可用区中文名称。
 
         :return: The availability_zone_display of this InstanceDetail.
         :rtype: str
@@ -586,7 +579,7 @@ class InstanceDetail:
     def availability_zone_display(self, availability_zone_display):
         """Sets the availability_zone_display of this InstanceDetail.
 
-        实例所在可用区名称
+        云堡垒机实例所在可用区中文名称。
 
         :param availability_zone_display: The availability_zone_display of this InstanceDetail.
         :type availability_zone_display: str
@@ -597,7 +590,7 @@ class InstanceDetail:
     def vpc_id(self):
         """Gets the vpc_id of this InstanceDetail.
 
-        实例所在vpc的id
+        云堡垒机实例所在虚拟私有云的VPC ID。
 
         :return: The vpc_id of this InstanceDetail.
         :rtype: str
@@ -608,7 +601,7 @@ class InstanceDetail:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this InstanceDetail.
 
-        实例所在vpc的id
+        云堡垒机实例所在虚拟私有云的VPC ID。
 
         :param vpc_id: The vpc_id of this InstanceDetail.
         :type vpc_id: str
@@ -619,7 +612,7 @@ class InstanceDetail:
     def subnet_id(self):
         """Gets the subnet_id of this InstanceDetail.
 
-        实例所在子网的id
+        云堡垒机实例所在子网的ID。
 
         :return: The subnet_id of this InstanceDetail.
         :rtype: str
@@ -630,7 +623,7 @@ class InstanceDetail:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this InstanceDetail.
 
-        实例所在子网的id
+        云堡垒机实例所在子网的ID。
 
         :param subnet_id: The subnet_id of this InstanceDetail.
         :type subnet_id: str
@@ -641,7 +634,7 @@ class InstanceDetail:
     def security_group_id(self):
         """Gets the security_group_id of this InstanceDetail.
 
-        实例所属的安全组的id
+        云堡垒机实例所属的安全组的ID。
 
         :return: The security_group_id of this InstanceDetail.
         :rtype: str
@@ -652,7 +645,7 @@ class InstanceDetail:
     def security_group_id(self, security_group_id):
         """Sets the security_group_id of this InstanceDetail.
 
-        实例所属的安全组的id
+        云堡垒机实例所属的安全组的ID。
 
         :param security_group_id: The security_group_id of this InstanceDetail.
         :type security_group_id: str
@@ -663,7 +656,7 @@ class InstanceDetail:
     def specification(self):
         """Gets the specification of this InstanceDetail.
 
-        实例规格
+        云堡垒机实例规格。
 
         :return: The specification of this InstanceDetail.
         :rtype: str
@@ -674,7 +667,7 @@ class InstanceDetail:
     def specification(self, specification):
         """Sets the specification of this InstanceDetail.
 
-        实例规格
+        云堡垒机实例规格。
 
         :param specification: The specification of this InstanceDetail.
         :type specification: str
@@ -685,7 +678,7 @@ class InstanceDetail:
     def update(self):
         """Gets the update of this InstanceDetail.
 
-        实例镜像是否可以升级
+        云堡垒机实例镜像是否可以升级。 - NEW，可以升级 - OLD，不能升级
 
         :return: The update of this InstanceDetail.
         :rtype: str
@@ -696,7 +689,7 @@ class InstanceDetail:
     def update(self, update):
         """Sets the update of this InstanceDetail.
 
-        实例镜像是否可以升级
+        云堡垒机实例镜像是否可以升级。 - NEW，可以升级 - OLD，不能升级
 
         :param update: The update of this InstanceDetail.
         :type update: str
@@ -707,7 +700,7 @@ class InstanceDetail:
     def createinstance_status(self):
         """Gets the createinstance_status of this InstanceDetail.
 
-        在创建实例过程中的过程状态信息
+        云堡垒机实例在创建实例过程中的过程状态信息。 - Waiting for payment，等待支付 - creating-network，创建网络 - creating-server，创建服务 - tranfering-horizontal-network，网络打通 - adding-policy-route，添加路由策略 - configing-dns，配置DNS - starting-cbs-service，服务运行中 - setting-init-conf，初始化 - buying-EIP，购买弹性公网IP
 
         :return: The createinstance_status of this InstanceDetail.
         :rtype: str
@@ -718,7 +711,7 @@ class InstanceDetail:
     def createinstance_status(self, createinstance_status):
         """Sets the createinstance_status of this InstanceDetail.
 
-        在创建实例过程中的过程状态信息
+        云堡垒机实例在创建实例过程中的过程状态信息。 - Waiting for payment，等待支付 - creating-network，创建网络 - creating-server，创建服务 - tranfering-horizontal-network，网络打通 - adding-policy-route，添加路由策略 - configing-dns，配置DNS - starting-cbs-service，服务运行中 - setting-init-conf，初始化 - buying-EIP，购买弹性公网IP
 
         :param createinstance_status: The createinstance_status of this InstanceDetail.
         :type createinstance_status: str
@@ -729,7 +722,7 @@ class InstanceDetail:
     def fail_reason(self):
         """Gets the fail_reason of this InstanceDetail.
 
-        创建实例失败原因
+        云堡垒机实例创建实例失败原因。
 
         :return: The fail_reason of this InstanceDetail.
         :rtype: str
@@ -740,7 +733,7 @@ class InstanceDetail:
     def fail_reason(self, fail_reason):
         """Sets the fail_reason of this InstanceDetail.
 
-        创建实例失败原因
+        云堡垒机实例创建实例失败原因。
 
         :param fail_reason: The fail_reason of this InstanceDetail.
         :type fail_reason: str
@@ -751,7 +744,7 @@ class InstanceDetail:
     def instance_key(self):
         """Gets the instance_key of this InstanceDetail.
 
-        实例ID
+        云堡垒机实例key。
 
         :return: The instance_key of this InstanceDetail.
         :rtype: str
@@ -762,7 +755,7 @@ class InstanceDetail:
     def instance_key(self, instance_key):
         """Sets the instance_key of this InstanceDetail.
 
-        实例ID
+        云堡垒机实例key。
 
         :param instance_key: The instance_key of this InstanceDetail.
         :type instance_key: str
@@ -773,7 +766,7 @@ class InstanceDetail:
     def order_id(self):
         """Gets the order_id of this InstanceDetail.
 
-        订单id
+        订单ID。
 
         :return: The order_id of this InstanceDetail.
         :rtype: str
@@ -784,7 +777,7 @@ class InstanceDetail:
     def order_id(self, order_id):
         """Sets the order_id of this InstanceDetail.
 
-        订单id
+        订单ID。
 
         :param order_id: The order_id of this InstanceDetail.
         :type order_id: str
@@ -795,7 +788,7 @@ class InstanceDetail:
     def period_num(self):
         """Gets the period_num of this InstanceDetail.
 
-        租户购买的时长
+        云堡垒机实例订购周期数。
 
         :return: The period_num of this InstanceDetail.
         :rtype: str
@@ -806,7 +799,7 @@ class InstanceDetail:
     def period_num(self, period_num):
         """Sets the period_num of this InstanceDetail.
 
-        租户购买的时长
+        云堡垒机实例订购周期数。
 
         :param period_num: The period_num of this InstanceDetail.
         :type period_num: str
@@ -817,7 +810,7 @@ class InstanceDetail:
     def resource_id(self):
         """Gets the resource_id of this InstanceDetail.
 
-        实例的资源id
+        云堡垒机实例实例的资源id,UUID格式显示。
 
         :return: The resource_id of this InstanceDetail.
         :rtype: str
@@ -828,7 +821,7 @@ class InstanceDetail:
     def resource_id(self, resource_id):
         """Sets the resource_id of this InstanceDetail.
 
-        实例的资源id
+        云堡垒机实例实例的资源id,UUID格式显示。
 
         :param resource_id: The resource_id of this InstanceDetail.
         :type resource_id: str
@@ -839,7 +832,7 @@ class InstanceDetail:
     def bastion_type(self):
         """Gets the bastion_type of this InstanceDetail.
 
-        堡垒机类型
+        云堡垒机实例堡垒机类型。 - OEM
 
         :return: The bastion_type of this InstanceDetail.
         :rtype: str
@@ -850,7 +843,7 @@ class InstanceDetail:
     def bastion_type(self, bastion_type):
         """Sets the bastion_type of this InstanceDetail.
 
-        堡垒机类型
+        云堡垒机实例堡垒机类型。 - OEM
 
         :param bastion_type: The bastion_type of this InstanceDetail.
         :type bastion_type: str
@@ -861,7 +854,7 @@ class InstanceDetail:
     def alter_permit(self):
         """Gets the alter_permit of this InstanceDetail.
 
-        前端是否显示扩容按钮
+        云堡垒机实例是否可以扩容。 - 1 开启扩容 - 0 关闭扩容
 
         :return: The alter_permit of this InstanceDetail.
         :rtype: str
@@ -872,7 +865,7 @@ class InstanceDetail:
     def alter_permit(self, alter_permit):
         """Sets the alter_permit of this InstanceDetail.
 
-        前端是否显示扩容按钮
+        云堡垒机实例是否可以扩容。 - 1 开启扩容 - 0 关闭扩容
 
         :param alter_permit: The alter_permit of this InstanceDetail.
         :type alter_permit: str
@@ -883,7 +876,7 @@ class InstanceDetail:
     def public_id(self):
         """Gets the public_id of this InstanceDetail.
 
-        实例绑定的弹性IP的id
+        云堡垒机实例绑定公网的弹性IP的ID，UUID格式表示。
 
         :return: The public_id of this InstanceDetail.
         :rtype: str
@@ -894,7 +887,7 @@ class InstanceDetail:
     def public_id(self, public_id):
         """Sets the public_id of this InstanceDetail.
 
-        实例绑定的弹性IP的id
+        云堡垒机实例绑定公网的弹性IP的ID，UUID格式表示。
 
         :param public_id: The public_id of this InstanceDetail.
         :type public_id: str
@@ -905,7 +898,7 @@ class InstanceDetail:
     def bastion_version(self):
         """Gets the bastion_version of this InstanceDetail.
 
-        实例镜像当前版本号
+        云堡垒机实例镜像当前版本号。
 
         :return: The bastion_version of this InstanceDetail.
         :rtype: str
@@ -916,7 +909,7 @@ class InstanceDetail:
     def bastion_version(self, bastion_version):
         """Sets the bastion_version of this InstanceDetail.
 
-        实例镜像当前版本号
+        云堡垒机实例镜像当前版本号。
 
         :param bastion_version: The bastion_version of this InstanceDetail.
         :type bastion_version: str
@@ -927,7 +920,7 @@ class InstanceDetail:
     def new_bastion_version(self):
         """Gets the new_bastion_version of this InstanceDetail.
 
-        实例镜像最新版本号
+        云堡垒机实例镜像可以升级的版本号。
 
         :return: The new_bastion_version of this InstanceDetail.
         :rtype: str
@@ -938,7 +931,7 @@ class InstanceDetail:
     def new_bastion_version(self, new_bastion_version):
         """Sets the new_bastion_version of this InstanceDetail.
 
-        实例镜像最新版本号
+        云堡垒机实例镜像可以升级的版本号。
 
         :param new_bastion_version: The new_bastion_version of this InstanceDetail.
         :type new_bastion_version: str
@@ -949,7 +942,7 @@ class InstanceDetail:
     def instance_status(self):
         """Gets the instance_status of this InstanceDetail.
 
-        实例状态
+        云堡垒机实例状态。 - building  创建中 - deleting  删除中 - deleted 删除了 - unpaid  未支付 - upgrading 升级中 - resizing  扩容中 - abnormal  异常 - error 故障 - ok  正常
 
         :return: The instance_status of this InstanceDetail.
         :rtype: str
@@ -960,7 +953,7 @@ class InstanceDetail:
     def instance_status(self, instance_status):
         """Sets the instance_status of this InstanceDetail.
 
-        实例状态
+        云堡垒机实例状态。 - building  创建中 - deleting  删除中 - deleted 删除了 - unpaid  未支付 - upgrading 升级中 - resizing  扩容中 - abnormal  异常 - error 故障 - ok  正常
 
         :param instance_status: The instance_status of this InstanceDetail.
         :type instance_status: str
@@ -971,7 +964,7 @@ class InstanceDetail:
     def instance_description(self):
         """Gets the instance_description of this InstanceDetail.
 
-        实例描述
+        云堡垒机实例状态描述。
 
         :return: The instance_description of this InstanceDetail.
         :rtype: str
@@ -982,7 +975,7 @@ class InstanceDetail:
     def instance_description(self, instance_description):
         """Sets the instance_description of this InstanceDetail.
 
-        实例描述
+        云堡垒机实例状态描述。
 
         :param instance_description: The instance_description of this InstanceDetail.
         :type instance_description: str
@@ -990,32 +983,10 @@ class InstanceDetail:
         self._instance_description = instance_description
 
     @property
-    def is_auto_renew(self):
-        """Gets the is_auto_renew of this InstanceDetail.
-
-        是否支持续费
-
-        :return: The is_auto_renew of this InstanceDetail.
-        :rtype: int
-        """
-        return self._is_auto_renew
-
-    @is_auto_renew.setter
-    def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this InstanceDetail.
-
-        是否支持续费
-
-        :param is_auto_renew: The is_auto_renew of this InstanceDetail.
-        :type is_auto_renew: int
-        """
-        self._is_auto_renew = is_auto_renew
-
-    @property
     def slave_zone(self):
         """Gets the slave_zone of this InstanceDetail.
 
-        备可用分区
+        备可用分区，默认返回null。
 
         :return: The slave_zone of this InstanceDetail.
         :rtype: str
@@ -1026,7 +997,7 @@ class InstanceDetail:
     def slave_zone(self, slave_zone):
         """Sets the slave_zone of this InstanceDetail.
 
-        备可用分区
+        备可用分区，默认返回null。
 
         :param slave_zone: The slave_zone of this InstanceDetail.
         :type slave_zone: str
@@ -1037,7 +1008,7 @@ class InstanceDetail:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this InstanceDetail.
 
-        企业项目id
+        云堡垒机实例所属企业项目ID。
 
         :return: The enterprise_project_id of this InstanceDetail.
         :rtype: str
@@ -1048,7 +1019,7 @@ class InstanceDetail:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this InstanceDetail.
 
-        企业项目id
+        云堡垒机实例所属企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this InstanceDetail.
         :type enterprise_project_id: str
@@ -1059,7 +1030,7 @@ class InstanceDetail:
     def instance_type(self):
         """Gets the instance_type of this InstanceDetail.
 
-        实例类型
+        云堡垒机实例类型。 - null  单机默认返回null - master  HA时返回主机 - slave HA时返回备机
 
         :return: The instance_type of this InstanceDetail.
         :rtype: str
@@ -1070,7 +1041,7 @@ class InstanceDetail:
     def instance_type(self, instance_type):
         """Sets the instance_type of this InstanceDetail.
 
-        实例类型
+        云堡垒机实例类型。 - null  单机默认返回null - master  HA时返回主机 - slave HA时返回备机
 
         :param instance_type: The instance_type of this InstanceDetail.
         :type instance_type: str
@@ -1081,7 +1052,7 @@ class InstanceDetail:
     def ha_id(self):
         """Gets the ha_id of this InstanceDetail.
 
-        主备ID
+        云堡垒机实例主备ID。 - 单机堡垒机实例默认返回null - HA堡垒机实例返回主机HAID
 
         :return: The ha_id of this InstanceDetail.
         :rtype: str
@@ -1092,7 +1063,7 @@ class InstanceDetail:
     def ha_id(self, ha_id):
         """Sets the ha_id of this InstanceDetail.
 
-        主备ID
+        云堡垒机实例主备ID。 - 单机堡垒机实例默认返回null - HA堡垒机实例返回主机HAID
 
         :param ha_id: The ha_id of this InstanceDetail.
         :type ha_id: str
@@ -1103,7 +1074,7 @@ class InstanceDetail:
     def slave_zone_display(self):
         """Gets the slave_zone_display of this InstanceDetail.
 
-        备可用分区名称
+        云堡垒机实例备机可用分区名称。 单机堡垒机实例和备机堡垒机实例返回null，HA堡垒机实例主机返回备机所在可用区名称。
 
         :return: The slave_zone_display of this InstanceDetail.
         :rtype: str
@@ -1114,7 +1085,7 @@ class InstanceDetail:
     def slave_zone_display(self, slave_zone_display):
         """Sets the slave_zone_display of this InstanceDetail.
 
-        备可用分区名称
+        云堡垒机实例备机可用分区名称。 单机堡垒机实例和备机堡垒机实例返回null，HA堡垒机实例主机返回备机所在可用区名称。
 
         :param slave_zone_display: The slave_zone_display of this InstanceDetail.
         :type slave_zone_display: str
@@ -1125,7 +1096,7 @@ class InstanceDetail:
     def web_port(self):
         """Gets the web_port of this InstanceDetail.
 
-        端口号
+        云堡垒机实例WEB界面访问的端口号。
 
         :return: The web_port of this InstanceDetail.
         :rtype: str
@@ -1136,7 +1107,7 @@ class InstanceDetail:
     def web_port(self, web_port):
         """Sets the web_port of this InstanceDetail.
 
-        端口号
+        云堡垒机实例WEB界面访问的端口号。
 
         :param web_port: The web_port of this InstanceDetail.
         :type web_port: str
@@ -1147,7 +1118,7 @@ class InstanceDetail:
     def vip(self):
         """Gets the vip of this InstanceDetail.
 
-        浮动ip
+        云堡垒机实例浮动ip。
 
         :return: The vip of this InstanceDetail.
         :rtype: str
@@ -1158,7 +1129,7 @@ class InstanceDetail:
     def vip(self, vip):
         """Sets the vip of this InstanceDetail.
 
-        浮动ip
+        云堡垒机实例浮动ip。
 
         :param vip: The vip of this InstanceDetail.
         :type vip: str

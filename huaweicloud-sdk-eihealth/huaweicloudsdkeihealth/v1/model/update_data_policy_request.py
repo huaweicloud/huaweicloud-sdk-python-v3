@@ -21,7 +21,7 @@ class UpdateDataPolicyRequest:
 
     openapi_types = {
         'eihealth_project_id': 'str',
-        'body': 'GetDataPolicyRsp'
+        'body': 'UpdateDataPolicyReq'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class UpdateDataPolicyRequest:
         :param eihealth_project_id: 医疗智能体平台项目ID，您可以在EIHealth平台单击所需的项目名称，进入项目设置页面查看。
         :type eihealth_project_id: str
         :param body: Body of the UpdateDataPolicyRequest
-        :type body: :class:`huaweicloudsdkeihealth.v1.GetDataPolicyRsp`
+        :type body: :class:`huaweicloudsdkeihealth.v1.UpdateDataPolicyReq`
         """
         
         
@@ -77,7 +77,7 @@ class UpdateDataPolicyRequest:
         """Gets the body of this UpdateDataPolicyRequest.
 
         :return: The body of this UpdateDataPolicyRequest.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.GetDataPolicyRsp`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateDataPolicyReq`
         """
         return self._body
 
@@ -86,7 +86,7 @@ class UpdateDataPolicyRequest:
         """Sets the body of this UpdateDataPolicyRequest.
 
         :param body: The body of this UpdateDataPolicyRequest.
-        :type body: :class:`huaweicloudsdkeihealth.v1.GetDataPolicyRsp`
+        :type body: :class:`huaweicloudsdkeihealth.v1.UpdateDataPolicyReq`
         """
         self._body = body
 

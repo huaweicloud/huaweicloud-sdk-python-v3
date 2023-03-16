@@ -44,7 +44,7 @@ class TaskResourceDto:
         :type cpu: str
         :param cpu_type: cpu架构类型，不填默认X86
         :type cpu_type: str
-        :param memory: 内存申请使用量，取值范围[0.1-512]，单位G，支持一位小数。对于应用，不填默认1G；对于流程和作业，不填默认使用前一级的配置，填值会覆盖更新。覆盖关系：作业-&gt;流程-&gt;应用
+        :param memory: 内存申请使用量，取值范围[0.1-3072]，单位G，支持一位小数。对于应用，不填默认1G；对于流程和作业，不填默认使用前一级的配置，填值会覆盖更新。覆盖关系：作业-&gt;流程-&gt;应用
         :type memory: str
         :param gpu_type: gpu架构类型，取值范围 &#39; &#39;|GPU|D910|D310。对于流程和作业，不填默认使用前一级的配置，填值会覆盖更新。覆盖关系：作业-&gt;流程-&gt;应用
         :type gpu_type: str
@@ -120,7 +120,7 @@ class TaskResourceDto:
     def memory(self):
         """Gets the memory of this TaskResourceDto.
 
-        内存申请使用量，取值范围[0.1-512]，单位G，支持一位小数。对于应用，不填默认1G；对于流程和作业，不填默认使用前一级的配置，填值会覆盖更新。覆盖关系：作业->流程->应用
+        内存申请使用量，取值范围[0.1-3072]，单位G，支持一位小数。对于应用，不填默认1G；对于流程和作业，不填默认使用前一级的配置，填值会覆盖更新。覆盖关系：作业->流程->应用
 
         :return: The memory of this TaskResourceDto.
         :rtype: str
@@ -131,7 +131,7 @@ class TaskResourceDto:
     def memory(self, memory):
         """Sets the memory of this TaskResourceDto.
 
-        内存申请使用量，取值范围[0.1-512]，单位G，支持一位小数。对于应用，不填默认1G；对于流程和作业，不填默认使用前一级的配置，填值会覆盖更新。覆盖关系：作业->流程->应用
+        内存申请使用量，取值范围[0.1-3072]，单位G，支持一位小数。对于应用，不填默认1G；对于流程和作业，不填默认使用前一级的配置，填值会覆盖更新。覆盖关系：作业->流程->应用
 
         :param memory: The memory of this TaskResourceDto.
         :type memory: str

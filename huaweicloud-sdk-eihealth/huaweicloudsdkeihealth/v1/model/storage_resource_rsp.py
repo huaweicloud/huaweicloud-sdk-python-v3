@@ -20,8 +20,6 @@ class StorageResourceRsp:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
-        'name': 'str',
         'spec': 'SpecDto',
         'size': 'int',
         'charge_mode': 'str',
@@ -30,8 +28,6 @@ class StorageResourceRsp:
     }
 
     attribute_map = {
-        'id': 'id',
-        'name': 'name',
         'spec': 'spec',
         'size': 'size',
         'charge_mode': 'charge_mode',
@@ -39,15 +35,11 @@ class StorageResourceRsp:
         'status': 'status'
     }
 
-    def __init__(self, id=None, name=None, spec=None, size=None, charge_mode=None, create_time=None, status=None):
+    def __init__(self, spec=None, size=None, charge_mode=None, create_time=None, status=None):
         """StorageResourceRsp
 
         The model defined in huaweicloud sdk
 
-        :param id: 实例ID
-        :type id: str
-        :param name: 实例名称
-        :type name: str
         :param spec: 
         :type spec: :class:`huaweicloudsdkeihealth.v1.SpecDto`
         :param size: 使用量
@@ -62,8 +54,6 @@ class StorageResourceRsp:
         
         
 
-        self._id = None
-        self._name = None
         self._spec = None
         self._size = None
         self._charge_mode = None
@@ -71,57 +61,11 @@ class StorageResourceRsp:
         self._status = None
         self.discriminator = None
 
-        self.id = id
-        self.name = name
         self.spec = spec
         self.size = size
         self.charge_mode = charge_mode
         self.create_time = create_time
         self.status = status
-
-    @property
-    def id(self):
-        """Gets the id of this StorageResourceRsp.
-
-        实例ID
-
-        :return: The id of this StorageResourceRsp.
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this StorageResourceRsp.
-
-        实例ID
-
-        :param id: The id of this StorageResourceRsp.
-        :type id: str
-        """
-        self._id = id
-
-    @property
-    def name(self):
-        """Gets the name of this StorageResourceRsp.
-
-        实例名称
-
-        :return: The name of this StorageResourceRsp.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this StorageResourceRsp.
-
-        实例名称
-
-        :param name: The name of this StorageResourceRsp.
-        :type name: str
-        """
-        self._name = name
 
     @property
     def spec(self):

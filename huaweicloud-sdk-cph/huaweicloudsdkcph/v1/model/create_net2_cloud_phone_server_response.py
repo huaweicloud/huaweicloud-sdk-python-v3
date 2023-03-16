@@ -22,16 +22,18 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
     openapi_types = {
         'request_id': 'str',
         'order_id': 'str',
-        'product_id': 'str'
+        'product_id': 'str',
+        'server_ids': 'list[str]'
     }
 
     attribute_map = {
         'request_id': 'request_id',
         'order_id': 'order_id',
-        'product_id': 'product_id'
+        'product_id': 'product_id',
+        'server_ids': 'server_ids'
     }
 
-    def __init__(self, request_id=None, order_id=None, product_id=None):
+    def __init__(self, request_id=None, order_id=None, product_id=None, server_ids=None):
         """CreateNet2CloudPhoneServerResponse
 
         The model defined in huaweicloud sdk
@@ -42,6 +44,8 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
         :type order_id: str
         :param product_id: 产品ID，不超过64个字节
         :type product_id: str
+        :param server_ids: 服务器ID列表
+        :type server_ids: list[str]
         """
         
         super(CreateNet2CloudPhoneServerResponse, self).__init__()
@@ -49,6 +53,7 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
         self._request_id = None
         self._order_id = None
         self._product_id = None
+        self._server_ids = None
         self.discriminator = None
 
         if request_id is not None:
@@ -57,6 +62,8 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
             self.order_id = order_id
         if product_id is not None:
             self.product_id = product_id
+        if server_ids is not None:
+            self.server_ids = server_ids
 
     @property
     def request_id(self):
@@ -123,6 +130,28 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
         :type product_id: str
         """
         self._product_id = product_id
+
+    @property
+    def server_ids(self):
+        """Gets the server_ids of this CreateNet2CloudPhoneServerResponse.
+
+        服务器ID列表
+
+        :return: The server_ids of this CreateNet2CloudPhoneServerResponse.
+        :rtype: list[str]
+        """
+        return self._server_ids
+
+    @server_ids.setter
+    def server_ids(self, server_ids):
+        """Sets the server_ids of this CreateNet2CloudPhoneServerResponse.
+
+        服务器ID列表
+
+        :param server_ids: The server_ids of this CreateNet2CloudPhoneServerResponse.
+        :type server_ids: list[str]
+        """
+        self._server_ids = server_ids
 
     def to_dict(self):
         """Returns the model properties as a dict"""

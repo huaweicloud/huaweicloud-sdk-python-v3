@@ -34,7 +34,7 @@ class ChangeInstanceNetworkRequest:
 
         The model defined in huaweicloud sdk
 
-        :param server_id: 实例ID
+        :param server_id: 云堡垒机实例ID，使用UUID格式。
         :type server_id: str
         :param body: Body of the ChangeInstanceNetworkRequest
         :type body: :class:`huaweicloudsdkcbh.v1.ChangeInstanceNetwork`
@@ -54,7 +54,7 @@ class ChangeInstanceNetworkRequest:
     def server_id(self):
         """Gets the server_id of this ChangeInstanceNetworkRequest.
 
-        实例ID
+        云堡垒机实例ID，使用UUID格式。
 
         :return: The server_id of this ChangeInstanceNetworkRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class ChangeInstanceNetworkRequest:
     def server_id(self, server_id):
         """Sets the server_id of this ChangeInstanceNetworkRequest.
 
-        实例ID
+        云堡垒机实例ID，使用UUID格式。
 
         :param server_id: The server_id of this ChangeInstanceNetworkRequest.
         :type server_id: str

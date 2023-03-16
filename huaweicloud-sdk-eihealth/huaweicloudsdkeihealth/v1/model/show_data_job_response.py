@@ -33,7 +33,8 @@ class ShowDataJobResponse(SdkResponse):
         'status': 'str',
         'destinations': 'list[str]',
         'type': 'str',
-        'failed_reason': 'str'
+        'failed_reason': 'str',
+        'additions': 'str'
     }
 
     attribute_map = {
@@ -50,10 +51,11 @@ class ShowDataJobResponse(SdkResponse):
         'status': 'status',
         'destinations': 'destinations',
         'type': 'type',
-        'failed_reason': 'failed_reason'
+        'failed_reason': 'failed_reason',
+        'additions': 'additions'
     }
 
-    def __init__(self, complete_data=None, running_data=None, creator=None, source_project_id=None, source_project_name=None, id=None, name=None, sources=None, create_time=None, end_time=None, status=None, destinations=None, type=None, failed_reason=None):
+    def __init__(self, complete_data=None, running_data=None, creator=None, source_project_id=None, source_project_name=None, id=None, name=None, sources=None, create_time=None, end_time=None, status=None, destinations=None, type=None, failed_reason=None, additions=None):
         """ShowDataJobResponse
 
         The model defined in huaweicloud sdk
@@ -86,6 +88,8 @@ class ShowDataJobResponse(SdkResponse):
         :type type: str
         :param failed_reason: 数据作业失败原因
         :type failed_reason: str
+        :param additions: 附加信息
+        :type additions: str
         """
         
         super(ShowDataJobResponse, self).__init__()
@@ -104,6 +108,7 @@ class ShowDataJobResponse(SdkResponse):
         self._destinations = None
         self._type = None
         self._failed_reason = None
+        self._additions = None
         self.discriminator = None
 
         if complete_data is not None:
@@ -134,6 +139,8 @@ class ShowDataJobResponse(SdkResponse):
             self.type = type
         if failed_reason is not None:
             self.failed_reason = failed_reason
+        if additions is not None:
+            self.additions = additions
 
     @property
     def complete_data(self):
@@ -442,6 +449,28 @@ class ShowDataJobResponse(SdkResponse):
         :type failed_reason: str
         """
         self._failed_reason = failed_reason
+
+    @property
+    def additions(self):
+        """Gets the additions of this ShowDataJobResponse.
+
+        附加信息
+
+        :return: The additions of this ShowDataJobResponse.
+        :rtype: str
+        """
+        return self._additions
+
+    @additions.setter
+    def additions(self, additions):
+        """Sets the additions of this ShowDataJobResponse.
+
+        附加信息
+
+        :param additions: The additions of this ShowDataJobResponse.
+        :type additions: str
+        """
+        self._additions = additions
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -20,58 +20,29 @@ class ShowMessageClearRuleResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'message_retain_time': 'int',
         'message_retain_number': 'int'
     }
 
     attribute_map = {
-        'message_retain_time': 'message_retain_time',
         'message_retain_number': 'message_retain_number'
     }
 
-    def __init__(self, message_retain_time=None, message_retain_number=None):
+    def __init__(self, message_retain_number=None):
         """ShowMessageClearRuleResponse
 
         The model defined in huaweicloud sdk
 
-        :param message_retain_time: 保存时长，单位：天
-        :type message_retain_time: int
         :param message_retain_number: 最多保留记录数
         :type message_retain_number: int
         """
         
         super(ShowMessageClearRuleResponse, self).__init__()
 
-        self._message_retain_time = None
         self._message_retain_number = None
         self.discriminator = None
 
-        if message_retain_time is not None:
-            self.message_retain_time = message_retain_time
         if message_retain_number is not None:
             self.message_retain_number = message_retain_number
-
-    @property
-    def message_retain_time(self):
-        """Gets the message_retain_time of this ShowMessageClearRuleResponse.
-
-        保存时长，单位：天
-
-        :return: The message_retain_time of this ShowMessageClearRuleResponse.
-        :rtype: int
-        """
-        return self._message_retain_time
-
-    @message_retain_time.setter
-    def message_retain_time(self, message_retain_time):
-        """Sets the message_retain_time of this ShowMessageClearRuleResponse.
-
-        保存时长，单位：天
-
-        :param message_retain_time: The message_retain_time of this ShowMessageClearRuleResponse.
-        :type message_retain_time: int
-        """
-        self._message_retain_time = message_retain_time
 
     @property
     def message_retain_number(self):

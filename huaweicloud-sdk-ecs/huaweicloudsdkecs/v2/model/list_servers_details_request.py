@@ -76,7 +76,7 @@ class ListServersDetailsRequest:
         :type tags: str
         :param ip_eq: IPv4地址过滤结果，匹配规则为精确匹配。
         :type ip_eq: str
-        :param server_id: 云服务器ID，格式为UUID，匹配规则为精确匹配  示例: server_id&#x3D;{id1}&amp;server_id&#x3D;{id2}
+        :param server_id: 云服务器ID，格式为UUID，匹配规则为精确匹配  示例: server_id&#x3D;id1,id2
         :type server_id: str
         """
         
@@ -367,7 +367,7 @@ class ListServersDetailsRequest:
     def server_id(self):
         """Gets the server_id of this ListServersDetailsRequest.
 
-        云服务器ID，格式为UUID，匹配规则为精确匹配  示例: server_id={id1}&server_id={id2}
+        云服务器ID，格式为UUID，匹配规则为精确匹配  示例: server_id=id1,id2
 
         :return: The server_id of this ListServersDetailsRequest.
         :rtype: str
@@ -378,7 +378,7 @@ class ListServersDetailsRequest:
     def server_id(self, server_id):
         """Sets the server_id of this ListServersDetailsRequest.
 
-        云服务器ID，格式为UUID，匹配规则为精确匹配  示例: server_id={id1}&server_id={id2}
+        云服务器ID，格式为UUID，匹配规则为精确匹配  示例: server_id=id1,id2
 
         :param server_id: The server_id of this ListServersDetailsRequest.
         :type server_id: str

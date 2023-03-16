@@ -27,6 +27,7 @@ class DatabaseResourceRsp:
         'charge_mode': 'str',
         'period_num': 'int',
         'create_time': 'str',
+        'failure_reason': 'str',
         'status': 'DatabaseStatusEnum'
     }
 
@@ -38,10 +39,11 @@ class DatabaseResourceRsp:
         'charge_mode': 'charge_mode',
         'period_num': 'period_num',
         'create_time': 'create_time',
+        'failure_reason': 'failure_reason',
         'status': 'status'
     }
 
-    def __init__(self, id=None, resource_id=None, spec=None, disk=None, charge_mode=None, period_num=None, create_time=None, status=None):
+    def __init__(self, id=None, resource_id=None, spec=None, disk=None, charge_mode=None, period_num=None, create_time=None, failure_reason=None, status=None):
         """DatabaseResourceRsp
 
         The model defined in huaweicloud sdk
@@ -60,6 +62,8 @@ class DatabaseResourceRsp:
         :type period_num: int
         :param create_time: 购买时间，UTC时间
         :type create_time: str
+        :param failure_reason: 失败原因
+        :type failure_reason: str
         :param status: 
         :type status: :class:`huaweicloudsdkeihealth.v1.DatabaseStatusEnum`
         """
@@ -73,6 +77,7 @@ class DatabaseResourceRsp:
         self._charge_mode = None
         self._period_num = None
         self._create_time = None
+        self._failure_reason = None
         self._status = None
         self.discriminator = None
 
@@ -83,6 +88,7 @@ class DatabaseResourceRsp:
         self.charge_mode = charge_mode
         self.period_num = period_num
         self.create_time = create_time
+        self.failure_reason = failure_reason
         self.status = status
 
     @property
@@ -230,6 +236,28 @@ class DatabaseResourceRsp:
         :type create_time: str
         """
         self._create_time = create_time
+
+    @property
+    def failure_reason(self):
+        """Gets the failure_reason of this DatabaseResourceRsp.
+
+        失败原因
+
+        :return: The failure_reason of this DatabaseResourceRsp.
+        :rtype: str
+        """
+        return self._failure_reason
+
+    @failure_reason.setter
+    def failure_reason(self, failure_reason):
+        """Sets the failure_reason of this DatabaseResourceRsp.
+
+        失败原因
+
+        :param failure_reason: The failure_reason of this DatabaseResourceRsp.
+        :type failure_reason: str
+        """
+        self._failure_reason = failure_reason
 
     @property
     def status(self):
