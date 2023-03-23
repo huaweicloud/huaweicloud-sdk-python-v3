@@ -21,7 +21,7 @@ class UpdateFlinkJarRequest:
 
     openapi_types = {
         'job_id': 'int',
-        'body': 'UpdateFlinkdefinedJobsResp'
+        'body': 'UpdateFlinkJarRequestBody'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class UpdateFlinkJarRequest:
         :param job_id: 作业ID。
         :type job_id: int
         :param body: Body of the UpdateFlinkJarRequest
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateFlinkdefinedJobsResp`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateFlinkJarRequestBody`
         """
         
         
@@ -77,7 +77,7 @@ class UpdateFlinkJarRequest:
         """Gets the body of this UpdateFlinkJarRequest.
 
         :return: The body of this UpdateFlinkJarRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.UpdateFlinkdefinedJobsResp`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateFlinkJarRequestBody`
         """
         return self._body
 
@@ -86,7 +86,7 @@ class UpdateFlinkJarRequest:
         """Sets the body of this UpdateFlinkJarRequest.
 
         :param body: The body of this UpdateFlinkJarRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateFlinkdefinedJobsResp`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateFlinkJarRequestBody`
         """
         self._body = body
 

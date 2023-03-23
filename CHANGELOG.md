@@ -1,3 +1,333 @@
+# 3.1.33 2023-03-23
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowNode**
+    - changes of response param
+      - `+ spec.extendParam.agency_name`
+  - **UpdateNode**
+    - changes of response param
+      - `+ spec.extendParam.agency_name`
+  - **DeleteNode**
+    - changes of response param
+      - `+ spec.extendParam.agency_name`
+  - **CreateNode**
+    - changes of request param
+      - `+ spec.extendParam.agency_name`
+    - changes of response param
+      - `+ spec.extendParam.agency_name`
+  - **ListNodes**
+    - changes of response param
+      - `+ items.spec.extendParam.agency_name`
+  - **ShowNodePool**
+    - changes of response param
+      - `+ spec.nodeTemplate.extendParam.agency_name`
+  - **UpdateNodePool**
+    - changes of response param
+      - `+ spec.nodeTemplate.extendParam.agency_name`
+  - **DeleteNodePool**
+    - changes of response param
+      - `+ spec.nodeTemplate.extendParam.agency_name`
+  - **CreateNodePool**
+    - changes of request param
+      - `+ spec.nodeTemplate.extendParam.agency_name`
+    - changes of response param
+      - `+ spec.nodeTemplate.extendParam.agency_name`
+  - **ListNodePools**
+    - changes of response param
+      - `+ items.spec.nodeTemplate.extendParam.agency_name`
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDomainDetailByName**
+    - changes of response param
+      - `- domain.banned_reason`
+      - `- domain.locked_reason`
+      - `- domain.enterprise_project_id`
+
+### HuaweiCloud SDK CloudIDE
+
+- _Features_
+  - Support the interfaces `UploadFilePublisher`, `ShowExtensionTestingResult`, `PublishExtension`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateMigrationTask**
+    - changes of request param
+      - `+ backup_files.file_source: enum value [backup_record]`
+  - **ShowMigrationTask**
+    - changes of response param
+      - `+ backup_files.file_source: enum value [backup_record]`
+  - **StopMigrationTask**
+    - changes of response param
+      - `+ backup_files.file_source: enum value [backup_record]`
+
+### HuaweiCloud SDK DDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowReplSetName**
+    - changes of response param
+      - `+ name`
+  - **UpdateReplSetName**
+    - changes of response param
+      - `+ job_id`
+
+### HuaweiCloud SDK DLI
+
+- _Features_
+  - Support the following interfaces：
+    - `AuthorizeResource`
+    - `ListAuthInfo`
+    - `UpdateAuthInfo`
+    - `CreateAuthInfo`
+    - `DeleteAuthInfo`
+    - `DeleteEnhancedConnectionRoutes`
+    - `CreateEnhancedConnectionRoutes`
+    - `ListElasticResourcePoolScaleRecords`
+    - `ShowSqlTemplates`
+    - `CreateSqlTemplates`
+    - `ShowSqlSampleTemplates`
+    - `UpdateSqlTemplates`
+    - `DeleteSqlTemplates`
+    - `ListJobTemplates`
+    - `CreateJobTemplates`
+    - `ShowJobTemplate`
+    - `UpdateJobTemplates`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interface `CreateDownloadJob`
+  - **ShowBatchInfo**
+    - changes of response param
+      - `* appId: list<string> -> string`
+  - **ChangeQueuePlan**
+    - changes of request param
+      - `+ repeat_day: enum value [MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY]`
+      - `- repeat_day: enum value [ MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY]`
+  - **DisassociateConnectionQueue**
+    - changes of request param
+      - `+ elastic_resource_pools`
+      - `- queues: enum value [q1,q2]`
+  - **AssociateConnectionQueue**
+    - changes of request param
+      - `+ elastic_resource_pools`
+  - **ListBatches**
+    - changes of response param
+      - `* sessions.appId: list<string> -> string`
+  - **CreateBatchJob**
+    - changes of request param
+      - `+ className`
+      - `+ pyFiles`
+      - `+ driverMemory`
+      - `+ driverCores`
+      - `+ executorMemory`
+      - `+ executorCores`
+      - `+ numExecutors`
+      - `- class_name`
+      - `- python_files`
+      - `- driver_memory`
+      - `- driver_cores`
+      - `- executor_memory`
+      - `- executor_cores`
+      - `- num_executors`
+      - `- catalog_name`
+      - `* conf: list<object> -> map<string, object>`
+      - `+ feature: enum value [ai,custom]`
+      - `- feature: enum value [ ai, custom]`
+      - `* body: object<CreateBatchJobReq> -> object<BatchJobInfo>`
+    - changes of response param
+      - `* appId: list<string> -> string`
+  - **CreateTable**
+    - changes of request param
+      - `+ tags`
+  - **ListQueues**
+    - changes of response param
+      - `* queues: list<ListQueuesRespQueues> -> list<QueueDetails>`
+  - **CreateQueuePlan**
+    - changes of request param
+      - `+ repeat_day: enum value [MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY]`
+      - `- repeat_day: enum value [ MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY]`
+  - **ListQueuePlans**
+    - changes of response param
+      - `+ plans.repeat_day: enum value [MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY]`
+      - `- plans.repeat_day: enum value [ MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY]`
+  - **ShowEnhancedConnection**
+    - changes of response param
+      - `+ elastic_resource_pools`
+  - **ListElasticResourcePools**
+    - changes of request param
+      - `+ status: enum value [AVAILABLE,SCALING,CREATING,FAILED]`
+      - `+ status: enum value [AVAILABLE，SCALING，CREATING，FAILED]`
+  - **CreateFlinkJar**
+    - changes of request param
+      - `* body: object<CreateFlinkdefinedJobsReq> -> object<CreateFlinkJarRequestBody>`
+  - **UpdateFlinkJar**
+    - changes of request param
+      - `* body: object<UpdateFlinkdefinedJobsResp> -> object<UpdateFlinkJarRequestBody>`
+  - **ListEnhancedConnections**
+    - changes of request param
+      - `* limit: string -> int32`
+      - `* offset: string -> int32`
+    - changes of response param
+      - `+ connections.elastic_resource_pools`
+  - **CreateFlinkTemplate**
+    - changes of request param
+      - `+ job_type: enum value [flink_sql_job,flink_opensource_sql_job]`
+      - `- job_type: enum value [flink_sql_job，flink_opensource_sql_job]`
+      - `* body: object<CreateTemplateReq> -> object<CreateFlinkTemplateRequestBody>`
+
+### HuaweiCloud SDK eiHealth
+
+- _Features_
+  - Support the following interfaces：
+    - `CreateCpiTask`
+    - `ShowCpiTaskResult`
+    - `CreateGenerationTask`
+    - `ShowGenerationTaskResult`
+    - `CreateOptimizationTask`
+    - `ShowOptimizationTaskResult`
+    - `CreateSearchTask`
+    - `ShowSearchTaskResult`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK NAT
+
+- _Features_
+  - Support the following interfaces：
+    - `ListPrivateNats`
+    - `CreatePrivateNat`
+    - `ShowPrivateNat`
+    - `UpdatePrivateNat`
+    - `DeletePrivateNat`
+    - `ListPrivateDnats`
+    - `CreatePrivateDnat`
+    - `ShowPrivateDnat`
+    - `UpdatePrivateDnat`
+    - `DeletePrivateDnat`
+    - `ListPrivateSnats`
+    - `CreatePrivateSnat`
+    - `ShowPrivateSnat`
+    - `UpdatePrivateSnat`
+    - `DeletePrivateSnat`
+    - `ListTransitIps`
+    - `CreateTransitIp`
+    - `ShowTransitIp`
+    - `DeleteTransitIp`
+    - `ListPrivateNatsByTags`
+    - `ListPrivateNatTags`
+    - `ShowPrivateNatTags`
+    - `CreatePrivateNatTag`
+    - `BatchCreateDeletePrivateNatTags`
+    - `DeletePrivateNatTag`
+    - `ListTransitIpsByTags`
+    - `ListTransitIpTags`
+    - `ShowTransitIpTags`
+    - `CreateTransitIpTag`
+    - `BatchCreateDeleteTransitIpTags`
+    - `DeleteTransitIpTag`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Organizations
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the following interfaces：
+    - `ShowCreateAccountStatus`
+    - `ShowEffectivePolicies`
+    - `ListTagPolicyServices`
+    - `ListTagResources`
+    - `CreateTagResource`
+    - `DeleteTagResource`
+    - `ListResourceInstances`
+    - `ShowResourceInstancesCount`
+    - `ListResourceTags`
+    - `CreateAccount`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _Features_
+  - Support the interfaces `ShowEngineInstanceExtendProductInfo`, `ResizeEngineInstance`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK WAF
+
+- _Features_
+  - Support the following interfaces：
+    - `ListCcRules`
+    - `CreateCcRule`
+    - `ShowCcRule`
+    - `UpdateCcRule`
+    - `DeleteCcRule`
+    - `ListCustomRules`
+    - `CreateCustomRule`
+    - `ShowCustomRule`
+    - `UpdateCustomRule`
+    - `DeleteCustomRule`
+    - `ListAnticrawlerRules`
+    - `UpdateAnticrawlerRuleType`
+    - `CreateAnticrawlerRule`
+    - `ShowAnticrawlerRule`
+    - `UpdateAnticrawlerRule`
+    - `DeleteAnticrawlerRule`
+    - `ListPunishmentRules`
+    - `CreatePunishmentRule`
+    - `ShowPunishmentRule`
+    - `UpdatePunishmentRule`
+    - `DeletePunishmentRule`
+    - `ListAntileakageRules`
+    - `CreateAntileakageRule`
+    - `ShowAntileakageRule`
+    - `UpdateAntileakageRule`
+    - `DeleteAntileakageRule`
+    - `UpdateAntiTamperRuleRefresh`
+    - `ShowGeoipRule`
+    - `ShowIgnoreRule`
+    - `UpdateIgnoreRule`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListHost**
+    - changes of response param
+      - `- items.paid_type: enum value [prePaid]`
+  - **DeleteHost**
+    - changes of response param
+      - `- paid_type: enum value [prePaid]`
+
 # 3.1.32 2023-03-16
 
 ### HuaweiCloud SDK Organizations

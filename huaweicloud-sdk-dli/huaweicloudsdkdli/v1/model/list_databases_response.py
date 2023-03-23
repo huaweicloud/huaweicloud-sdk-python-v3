@@ -23,7 +23,7 @@ class ListDatabasesResponse(SdkResponse):
         'is_success': 'bool',
         'message': 'str',
         'database_count': 'int',
-        'databases': 'list[ListDatabasesRespDatabase]'
+        'databases': 'list[Database]'
     }
 
     attribute_map = {
@@ -45,7 +45,7 @@ class ListDatabasesResponse(SdkResponse):
         :param database_count: 数据库的总数。
         :type database_count: int
         :param databases: 查询所有数据库的响应参数。
-        :type databases: list[:class:`huaweicloudsdkdli.v1.ListDatabasesRespDatabase`]
+        :type databases: list[:class:`huaweicloudsdkdli.v1.Database`]
         """
         
         super(ListDatabasesResponse, self).__init__()
@@ -138,7 +138,7 @@ class ListDatabasesResponse(SdkResponse):
         查询所有数据库的响应参数。
 
         :return: The databases of this ListDatabasesResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.ListDatabasesRespDatabase`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.Database`]
         """
         return self._databases
 
@@ -149,7 +149,7 @@ class ListDatabasesResponse(SdkResponse):
         查询所有数据库的响应参数。
 
         :param databases: The databases of this ListDatabasesResponse.
-        :type databases: list[:class:`huaweicloudsdkdli.v1.ListDatabasesRespDatabase`]
+        :type databases: list[:class:`huaweicloudsdkdli.v1.Database`]
         """
         self._databases = databases
 

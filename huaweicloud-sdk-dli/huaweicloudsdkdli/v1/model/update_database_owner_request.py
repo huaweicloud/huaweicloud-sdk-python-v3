@@ -21,7 +21,7 @@ class UpdateDatabaseOwnerRequest:
 
     openapi_types = {
         'database_name': 'str',
-        'body': 'UpdateDatabaseOwnerReq'
+        'body': 'UpdateOwnerRequestBody'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class UpdateDatabaseOwnerRequest:
         :param database_name: 删除的数据库名称。
         :type database_name: str
         :param body: Body of the UpdateDatabaseOwnerRequest
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateDatabaseOwnerReq`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateOwnerRequestBody`
         """
         
         
@@ -77,7 +77,7 @@ class UpdateDatabaseOwnerRequest:
         """Gets the body of this UpdateDatabaseOwnerRequest.
 
         :return: The body of this UpdateDatabaseOwnerRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.UpdateDatabaseOwnerReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateOwnerRequestBody`
         """
         return self._body
 
@@ -86,7 +86,7 @@ class UpdateDatabaseOwnerRequest:
         """Sets the body of this UpdateDatabaseOwnerRequest.
 
         :param body: The body of this UpdateDatabaseOwnerRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateDatabaseOwnerReq`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateOwnerRequestBody`
         """
         self._body = body
 

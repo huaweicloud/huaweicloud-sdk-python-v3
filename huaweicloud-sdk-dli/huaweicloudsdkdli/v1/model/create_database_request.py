@@ -20,7 +20,7 @@ class CreateDatabaseRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateDatabaseReq'
+        'body': 'CreateDatabaseRequestBody'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class CreateDatabaseRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CreateDatabaseRequest
-        :type body: :class:`huaweicloudsdkdli.v1.CreateDatabaseReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateDatabaseRequestBody`
         """
         
         
@@ -49,7 +49,7 @@ class CreateDatabaseRequest:
         """Gets the body of this CreateDatabaseRequest.
 
         :return: The body of this CreateDatabaseRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateDatabaseReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateDatabaseRequestBody`
         """
         return self._body
 
@@ -58,7 +58,7 @@ class CreateDatabaseRequest:
         """Sets the body of this CreateDatabaseRequest.
 
         :param body: The body of this CreateDatabaseRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.CreateDatabaseReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateDatabaseRequestBody`
         """
         self._body = body
 

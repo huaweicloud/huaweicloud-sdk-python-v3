@@ -84,7 +84,7 @@ class ShowCompositeHostResponse(SdkResponse):
         :type proxy: bool
         :param timestamp: 创建防护域名的时间
         :type timestamp: int
-        :param paid_type: 套餐付费模式，目前只支持prePaid预付款模式
+        :param paid_type: 套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
         :type paid_type: str
         :param flag: 
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -365,7 +365,7 @@ class ShowCompositeHostResponse(SdkResponse):
     def paid_type(self):
         """Gets the paid_type of this ShowCompositeHostResponse.
 
-        套餐付费模式，目前只支持prePaid预付款模式
+        套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
 
         :return: The paid_type of this ShowCompositeHostResponse.
         :rtype: str
@@ -376,7 +376,7 @@ class ShowCompositeHostResponse(SdkResponse):
     def paid_type(self, paid_type):
         """Sets the paid_type of this ShowCompositeHostResponse.
 
-        套餐付费模式，目前只支持prePaid预付款模式
+        套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
 
         :param paid_type: The paid_type of this ShowCompositeHostResponse.
         :type paid_type: str

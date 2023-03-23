@@ -32,7 +32,8 @@ class CreateTableReq:
         'escape_char': 'str',
         'date_format': 'str',
         'timestamp_format': 'str',
-        'select_statement': 'str'
+        'select_statement': 'str',
+        'tags': 'list[TmsTagEntity]'
     }
 
     attribute_map = {
@@ -48,10 +49,11 @@ class CreateTableReq:
         'escape_char': 'escape_char',
         'date_format': 'date_format',
         'timestamp_format': 'timestamp_format',
-        'select_statement': 'select_statement'
+        'select_statement': 'select_statement',
+        'tags': 'tags'
     }
 
-    def __init__(self, table_name=None, data_location=None, description=None, columns=None, data_type=None, data_path=None, with_column_header=None, delimiter=None, quote_char=None, escape_char=None, date_format=None, timestamp_format=None, select_statement=None):
+    def __init__(self, table_name=None, data_location=None, description=None, columns=None, data_type=None, data_path=None, with_column_header=None, delimiter=None, quote_char=None, escape_char=None, date_format=None, timestamp_format=None, select_statement=None, tags=None):
         """CreateTableReq
 
         The model defined in huaweicloud sdk
@@ -82,6 +84,8 @@ class CreateTableReq:
         :type timestamp_format: str
         :param select_statement: VIEW视图必选参数，创建视图时的数据选择语句。语句中涉及表需要使用“表&#x3D;库名.表名”的格式
         :type select_statement: str
+        :param tags: 标签
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         
         
@@ -99,6 +103,7 @@ class CreateTableReq:
         self._date_format = None
         self._timestamp_format = None
         self._select_statement = None
+        self._tags = None
         self.discriminator = None
 
         self.table_name = table_name
@@ -124,6 +129,8 @@ class CreateTableReq:
             self.timestamp_format = timestamp_format
         if select_statement is not None:
             self.select_statement = select_statement
+        if tags is not None:
+            self.tags = tags
 
     @property
     def table_name(self):
@@ -410,6 +417,28 @@ class CreateTableReq:
         :type select_statement: str
         """
         self._select_statement = select_statement
+
+    @property
+    def tags(self):
+        """Gets the tags of this CreateTableReq.
+
+        标签
+
+        :return: The tags of this CreateTableReq.
+        :rtype: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this CreateTableReq.
+
+        标签
+
+        :param tags: The tags of this CreateTableReq.
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

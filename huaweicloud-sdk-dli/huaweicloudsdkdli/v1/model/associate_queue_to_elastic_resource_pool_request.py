@@ -21,7 +21,7 @@ class AssociateQueueToElasticResourcePoolRequest:
 
     openapi_types = {
         'elastic_resource_pool_name': 'str',
-        'body': 'AssociateQueueToElasticResourcePoolIfno'
+        'body': 'AssociateQueueToElasticResourcePoolRequestBody'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class AssociateQueueToElasticResourcePoolRequest:
         :param elastic_resource_pool_name: 弹性资源池名称
         :type elastic_resource_pool_name: str
         :param body: Body of the AssociateQueueToElasticResourcePoolRequest
-        :type body: :class:`huaweicloudsdkdli.v1.AssociateQueueToElasticResourcePoolIfno`
+        :type body: :class:`huaweicloudsdkdli.v1.AssociateQueueToElasticResourcePoolRequestBody`
         """
         
         
@@ -77,7 +77,7 @@ class AssociateQueueToElasticResourcePoolRequest:
         """Gets the body of this AssociateQueueToElasticResourcePoolRequest.
 
         :return: The body of this AssociateQueueToElasticResourcePoolRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.AssociateQueueToElasticResourcePoolIfno`
+        :rtype: :class:`huaweicloudsdkdli.v1.AssociateQueueToElasticResourcePoolRequestBody`
         """
         return self._body
 
@@ -86,7 +86,7 @@ class AssociateQueueToElasticResourcePoolRequest:
         """Sets the body of this AssociateQueueToElasticResourcePoolRequest.
 
         :param body: The body of this AssociateQueueToElasticResourcePoolRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.AssociateQueueToElasticResourcePoolIfno`
+        :type body: :class:`huaweicloudsdkdli.v1.AssociateQueueToElasticResourcePoolRequestBody`
         """
         self._body = body
 

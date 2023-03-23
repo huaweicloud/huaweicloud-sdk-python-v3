@@ -706,6 +706,70 @@ class CloudIDEClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def publish_extension(self, request):
+        """插件发布
+
+        插件发布
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for PublishExtension
+        :type request: :class:`huaweicloudsdkcloudide.v2.PublishExtensionRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.PublishExtensionResponse`
+        """
+        return self.publish_extension_with_http_info(request)
+
+    def publish_extension_with_http_info(self, request):
+        all_params = ['task_id', 'publish_extension_request_body', 'x_publisher_token']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_publisher_token' in local_var_params:
+            header_params['x-publisher-token'] = local_var_params['x_publisher_token']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/marketplace/extension/{task_id}/archiving',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='PublishExtensionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_account_status(self, request):
         """查询当前帐号访问权限
 
@@ -1084,6 +1148,68 @@ class CloudIDEClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_extension_testing_result(self, request):
+        """获取插件检测结果
+
+        获取插件检测结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowExtensionTestingResult
+        :type request: :class:`huaweicloudsdkcloudide.v2.ShowExtensionTestingResultRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.ShowExtensionTestingResultResponse`
+        """
+        return self.show_extension_testing_result_with_http_info(request)
+
+    def show_extension_testing_result_with_http_info(self, request):
+        all_params = ['task_id', 'x_publisher_token']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_publisher_token' in local_var_params:
+            header_params['x-publisher-token'] = local_var_params['x_publisher_token']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/marketplace/extension/{task_id}/status',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowExtensionTestingResultResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_price(self, request):
         """获取技术栈计费信息
 
@@ -1201,6 +1327,90 @@ class CloudIDEClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UploadExtensionFileResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def upload_file_publisher(self, request):
+        """文件上传归一化
+
+        文件上传归一化
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UploadFilePublisher
+        :type request: :class:`huaweicloudsdkcloudide.v2.UploadFilePublisherRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.UploadFilePublisherResponse`
+        """
+        return self.upload_file_publisher_with_http_info(request)
+
+    def upload_file_publisher_with_http_info(self, request):
+        all_params = ['file', 'chunk_index', 'merge', 'total_chunk_num', 'parent_file_size', 'parent_file_name', 'override', 'chunk_md5', 'x_publisher_token', 'publisher_id', 'parent_file_sha256', 'task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_publisher_token' in local_var_params:
+            header_params['x-publisher-token'] = local_var_params['x_publisher_token']
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+        if 'publisher_id' in local_var_params:
+            form_params['publisher_id'] = local_var_params['publisher_id']
+        if 'chunk_index' in local_var_params:
+            form_params['chunk_index'] = local_var_params['chunk_index']
+        if 'merge' in local_var_params:
+            form_params['merge'] = local_var_params['merge']
+        if 'total_chunk_num' in local_var_params:
+            form_params['total_chunk_num'] = local_var_params['total_chunk_num']
+        if 'parent_file_size' in local_var_params:
+            form_params['parent_file_size'] = local_var_params['parent_file_size']
+        if 'parent_file_name' in local_var_params:
+            form_params['parent_file_name'] = local_var_params['parent_file_name']
+        if 'override' in local_var_params:
+            form_params['override'] = local_var_params['override']
+        if 'chunk_md5' in local_var_params:
+            form_params['chunk_md5'] = local_var_params['chunk_md5']
+        if 'parent_file_sha256' in local_var_params:
+            form_params['parent_file_sha256'] = local_var_params['parent_file_sha256']
+        if 'task_id' in local_var_params:
+            form_params['task_id'] = local_var_params['task_id']
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/fileservice/file/upload',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UploadFilePublisherResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

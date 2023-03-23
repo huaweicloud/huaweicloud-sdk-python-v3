@@ -20,7 +20,7 @@ class CreateFlinkTemplateRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateTemplateReq'
+        'body': 'CreateFlinkTemplateRequestBody'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class CreateFlinkTemplateRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CreateFlinkTemplateRequest
-        :type body: :class:`huaweicloudsdkdli.v1.CreateTemplateReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateFlinkTemplateRequestBody`
         """
         
         
@@ -49,7 +49,7 @@ class CreateFlinkTemplateRequest:
         """Gets the body of this CreateFlinkTemplateRequest.
 
         :return: The body of this CreateFlinkTemplateRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateTemplateReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateFlinkTemplateRequestBody`
         """
         return self._body
 
@@ -58,7 +58,7 @@ class CreateFlinkTemplateRequest:
         """Sets the body of this CreateFlinkTemplateRequest.
 
         :param body: The body of this CreateFlinkTemplateRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.CreateTemplateReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateFlinkTemplateRequestBody`
         """
         self._body = body
 

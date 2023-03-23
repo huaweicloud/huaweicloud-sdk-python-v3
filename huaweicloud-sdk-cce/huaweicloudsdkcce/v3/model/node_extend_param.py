@@ -37,7 +37,8 @@ class NodeExtendParam:
         'nic_multiqueue': 'str',
         'nic_threshold': 'str',
         'enterprise_project_id': 'str',
-        'charging_mode': 'int'
+        'charging_mode': 'int',
+        'agency_name': 'str'
     }
 
     attribute_map = {
@@ -58,10 +59,11 @@ class NodeExtendParam:
         'nic_multiqueue': 'nicMultiqueue',
         'nic_threshold': 'nicThreshold',
         'enterprise_project_id': 'enterprise_project_id',
-        'charging_mode': 'chargingMode'
+        'charging_mode': 'chargingMode',
+        'agency_name': 'agency_name'
     }
 
-    def __init__(self, ecsperformancetype=None, order_id=None, product_id=None, max_pods=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, docker_lvm_config_override=None, docker_base_size=None, public_key=None, alpha_cce_pre_install=None, alpha_cce_post_install=None, alpha_cce_node_image_id=None, nic_multiqueue=None, nic_threshold=None, enterprise_project_id=None, charging_mode=None):
+    def __init__(self, ecsperformancetype=None, order_id=None, product_id=None, max_pods=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, docker_lvm_config_override=None, docker_base_size=None, public_key=None, alpha_cce_pre_install=None, alpha_cce_post_install=None, alpha_cce_node_image_id=None, nic_multiqueue=None, nic_threshold=None, enterprise_project_id=None, charging_mode=None, agency_name=None):
         """NodeExtendParam
 
         The model defined in huaweicloud sdk
@@ -102,6 +104,8 @@ class NodeExtendParam:
         :type enterprise_project_id: str
         :param charging_mode: 节点的计费模式。已废弃，请使用NodeSpec中的billingMode字段。 
         :type charging_mode: int
+        :param agency_name: 委托的名称。  委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为CCE节点提供访问云服务器的临时凭证。 
+        :type agency_name: str
         """
         
         
@@ -124,6 +128,7 @@ class NodeExtendParam:
         self._nic_threshold = None
         self._enterprise_project_id = None
         self._charging_mode = None
+        self._agency_name = None
         self.discriminator = None
 
         if ecsperformancetype is not None:
@@ -162,6 +167,8 @@ class NodeExtendParam:
             self.enterprise_project_id = enterprise_project_id
         if charging_mode is not None:
             self.charging_mode = charging_mode
+        if agency_name is not None:
+            self.agency_name = agency_name
 
     @property
     def ecsperformancetype(self):
@@ -558,6 +565,28 @@ class NodeExtendParam:
         :type charging_mode: int
         """
         self._charging_mode = charging_mode
+
+    @property
+    def agency_name(self):
+        """Gets the agency_name of this NodeExtendParam.
+
+        委托的名称。  委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为CCE节点提供访问云服务器的临时凭证。 
+
+        :return: The agency_name of this NodeExtendParam.
+        :rtype: str
+        """
+        return self._agency_name
+
+    @agency_name.setter
+    def agency_name(self, agency_name):
+        """Sets the agency_name of this NodeExtendParam.
+
+        委托的名称。  委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为CCE节点提供访问云服务器的临时凭证。 
+
+        :param agency_name: The agency_name of this NodeExtendParam.
+        :type agency_name: str
+        """
+        self._agency_name = agency_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

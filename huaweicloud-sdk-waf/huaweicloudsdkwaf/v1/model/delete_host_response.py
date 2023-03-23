@@ -86,7 +86,7 @@ class DeleteHostResponse(SdkResponse):
         :type access_status: int
         :param exclusive_ip: 是否使用独享ip   - true：使用独享ip   - false：不实用独享ip
         :type exclusive_ip: bool
-        :param paid_type: 套餐付费模式，目前只支持prePaid预付款模式
+        :param paid_type: 套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
         :type paid_type: str
         :param web_tag: 网站名称，对应WAF控制台域名详情中的网站名称
         :type web_tag: str
@@ -428,7 +428,7 @@ class DeleteHostResponse(SdkResponse):
     def paid_type(self):
         """Gets the paid_type of this DeleteHostResponse.
 
-        套餐付费模式，目前只支持prePaid预付款模式
+        套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
 
         :return: The paid_type of this DeleteHostResponse.
         :rtype: str
@@ -439,7 +439,7 @@ class DeleteHostResponse(SdkResponse):
     def paid_type(self, paid_type):
         """Sets the paid_type of this DeleteHostResponse.
 
-        套餐付费模式，目前只支持prePaid预付款模式
+        套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
 
         :param paid_type: The paid_type of this DeleteHostResponse.
         :type paid_type: str

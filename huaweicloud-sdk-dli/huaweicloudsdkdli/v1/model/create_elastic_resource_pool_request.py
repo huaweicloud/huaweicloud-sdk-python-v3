@@ -20,7 +20,7 @@ class CreateElasticResourcePoolRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateElasticResourcePoolInfo'
+        'body': 'CreateElasticResourcePoolRequestBody'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class CreateElasticResourcePoolRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CreateElasticResourcePoolRequest
-        :type body: :class:`huaweicloudsdkdli.v1.CreateElasticResourcePoolInfo`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateElasticResourcePoolRequestBody`
         """
         
         
@@ -49,7 +49,7 @@ class CreateElasticResourcePoolRequest:
         """Gets the body of this CreateElasticResourcePoolRequest.
 
         :return: The body of this CreateElasticResourcePoolRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateElasticResourcePoolInfo`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateElasticResourcePoolRequestBody`
         """
         return self._body
 
@@ -58,7 +58,7 @@ class CreateElasticResourcePoolRequest:
         """Sets the body of this CreateElasticResourcePoolRequest.
 
         :param body: The body of this CreateElasticResourcePoolRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.CreateElasticResourcePoolInfo`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateElasticResourcePoolRequestBody`
         """
         self._body = body
 

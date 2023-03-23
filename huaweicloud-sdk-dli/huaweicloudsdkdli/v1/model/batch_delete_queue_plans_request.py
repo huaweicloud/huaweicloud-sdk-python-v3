@@ -21,7 +21,7 @@ class BatchDeleteQueuePlansRequest:
 
     openapi_types = {
         'queue_name': 'str',
-        'body': 'PlanIdslReq'
+        'body': 'QueuePlanIds'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class BatchDeleteQueuePlansRequest:
         :param queue_name: 待删除定时扩缩计划的队列名称
         :type queue_name: str
         :param body: Body of the BatchDeleteQueuePlansRequest
-        :type body: :class:`huaweicloudsdkdli.v1.PlanIdslReq`
+        :type body: :class:`huaweicloudsdkdli.v1.QueuePlanIds`
         """
         
         
@@ -77,7 +77,7 @@ class BatchDeleteQueuePlansRequest:
         """Gets the body of this BatchDeleteQueuePlansRequest.
 
         :return: The body of this BatchDeleteQueuePlansRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.PlanIdslReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.QueuePlanIds`
         """
         return self._body
 
@@ -86,7 +86,7 @@ class BatchDeleteQueuePlansRequest:
         """Sets the body of this BatchDeleteQueuePlansRequest.
 
         :param body: The body of this BatchDeleteQueuePlansRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.PlanIdslReq`
+        :type body: :class:`huaweicloudsdkdli.v1.QueuePlanIds`
         """
         self._body = body
 

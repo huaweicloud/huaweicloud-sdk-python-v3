@@ -20,7 +20,7 @@ class CheckSqlRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CheckSQLGramarReq'
+        'body': 'CheckSqlRequestBody'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class CheckSqlRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CheckSqlRequest
-        :type body: :class:`huaweicloudsdkdli.v1.CheckSQLGramarReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CheckSqlRequestBody`
         """
         
         
@@ -49,7 +49,7 @@ class CheckSqlRequest:
         """Gets the body of this CheckSqlRequest.
 
         :return: The body of this CheckSqlRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.CheckSQLGramarReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.CheckSqlRequestBody`
         """
         return self._body
 
@@ -58,7 +58,7 @@ class CheckSqlRequest:
         """Sets the body of this CheckSqlRequest.
 
         :param body: The body of this CheckSqlRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.CheckSQLGramarReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CheckSqlRequestBody`
         """
         self._body = body
 

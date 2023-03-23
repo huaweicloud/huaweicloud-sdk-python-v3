@@ -21,7 +21,7 @@ class CreateBatchJobRequest:
 
     openapi_types = {
         'user_id': 'str',
-        'body': 'CreateBatchJobReq'
+        'body': 'BatchJobInfo'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class CreateBatchJobRequest:
         :param user_id: 
         :type user_id: str
         :param body: Body of the CreateBatchJobRequest
-        :type body: :class:`huaweicloudsdkdli.v1.CreateBatchJobReq`
+        :type body: :class:`huaweicloudsdkdli.v1.BatchJobInfo`
         """
         
         
@@ -74,7 +74,7 @@ class CreateBatchJobRequest:
         """Gets the body of this CreateBatchJobRequest.
 
         :return: The body of this CreateBatchJobRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateBatchJobReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.BatchJobInfo`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class CreateBatchJobRequest:
         """Sets the body of this CreateBatchJobRequest.
 
         :param body: The body of this CreateBatchJobRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.CreateBatchJobReq`
+        :type body: :class:`huaweicloudsdkdli.v1.BatchJobInfo`
         """
         self._body = body
 

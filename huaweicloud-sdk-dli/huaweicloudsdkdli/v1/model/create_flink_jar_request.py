@@ -20,7 +20,7 @@ class CreateFlinkJarRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateFlinkdefinedJobsReq'
+        'body': 'CreateFlinkJarRequestBody'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class CreateFlinkJarRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CreateFlinkJarRequest
-        :type body: :class:`huaweicloudsdkdli.v1.CreateFlinkdefinedJobsReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateFlinkJarRequestBody`
         """
         
         
@@ -49,7 +49,7 @@ class CreateFlinkJarRequest:
         """Gets the body of this CreateFlinkJarRequest.
 
         :return: The body of this CreateFlinkJarRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateFlinkdefinedJobsReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateFlinkJarRequestBody`
         """
         return self._body
 
@@ -58,7 +58,7 @@ class CreateFlinkJarRequest:
         """Sets the body of this CreateFlinkJarRequest.
 
         :param body: The body of this CreateFlinkJarRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.CreateFlinkdefinedJobsReq`
+        :type body: :class:`huaweicloudsdkdli.v1.CreateFlinkJarRequestBody`
         """
         self._body = body
 

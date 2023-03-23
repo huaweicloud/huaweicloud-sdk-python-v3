@@ -21,7 +21,7 @@ class UpdateFlinkTemplateRequest:
 
     openapi_types = {
         'template_id': 'int',
-        'body': 'UpdateTemplateReq'
+        'body': 'UpdateFlinkTemplateRequestBody'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class UpdateFlinkTemplateRequest:
         :param template_id: 
         :type template_id: int
         :param body: Body of the UpdateFlinkTemplateRequest
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateTemplateReq`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateFlinkTemplateRequestBody`
         """
         
         
@@ -73,7 +73,7 @@ class UpdateFlinkTemplateRequest:
         """Gets the body of this UpdateFlinkTemplateRequest.
 
         :return: The body of this UpdateFlinkTemplateRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.UpdateTemplateReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateFlinkTemplateRequestBody`
         """
         return self._body
 
@@ -82,7 +82,7 @@ class UpdateFlinkTemplateRequest:
         """Sets the body of this UpdateFlinkTemplateRequest.
 
         :param body: The body of this UpdateFlinkTemplateRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateTemplateReq`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateFlinkTemplateRequestBody`
         """
         self._body = body
 

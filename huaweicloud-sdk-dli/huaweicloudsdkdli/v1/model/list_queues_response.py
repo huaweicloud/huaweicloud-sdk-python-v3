@@ -22,7 +22,7 @@ class ListQueuesResponse(SdkResponse):
     openapi_types = {
         'is_success': 'bool',
         'message': 'str',
-        'queues': 'list[ListQueuesRespQueues]'
+        'queues': 'list[QueueDetails]'
     }
 
     attribute_map = {
@@ -41,7 +41,7 @@ class ListQueuesResponse(SdkResponse):
         :param message: 系统提示信息，执行成功时，信息可能为空。
         :type message: str
         :param queues: 队列信息。
-        :type queues: list[:class:`huaweicloudsdkdli.v1.ListQueuesRespQueues`]
+        :type queues: list[:class:`huaweicloudsdkdli.v1.QueueDetails`]
         """
         
         super(ListQueuesResponse, self).__init__()
@@ -109,7 +109,7 @@ class ListQueuesResponse(SdkResponse):
         队列信息。
 
         :return: The queues of this ListQueuesResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.ListQueuesRespQueues`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.QueueDetails`]
         """
         return self._queues
 
@@ -120,7 +120,7 @@ class ListQueuesResponse(SdkResponse):
         队列信息。
 
         :param queues: The queues of this ListQueuesResponse.
-        :type queues: list[:class:`huaweicloudsdkdli.v1.ListQueuesRespQueues`]
+        :type queues: list[:class:`huaweicloudsdkdli.v1.QueueDetails`]
         """
         self._queues = queues
 

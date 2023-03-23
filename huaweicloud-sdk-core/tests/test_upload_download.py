@@ -38,7 +38,7 @@ def process_stream(stream):
 def test_upload_download(mocker):
     client = Client()\
         .with_credentials(BasicCredentials("ak", "sk", "project_id"))\
-        .with_endpoint("mock://test.com")\
+        .with_endpoints(["mock://test.com"])\
         .with_config(HttpConfig.get_default_config())
     client.init_http_client()
 

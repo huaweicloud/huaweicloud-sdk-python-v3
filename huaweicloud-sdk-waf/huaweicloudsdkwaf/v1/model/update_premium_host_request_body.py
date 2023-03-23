@@ -76,7 +76,7 @@ class UpdatePremiumHostRequestBody:
         :type mode: str
         :param locked: 预留参数，用于后期设计冻结域名，解锁域名功能，目前暂不支持
         :type locked: int
-        :param protect_status: 域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        :param protect_status: 域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
         :type protect_status: int
         :param access_status: 域名接入状态，0表示未接入，1表示已接入
         :type access_status: int
@@ -307,7 +307,7 @@ class UpdatePremiumHostRequestBody:
     def protect_status(self):
         """Gets the protect_status of this UpdatePremiumHostRequestBody.
 
-        域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
         :return: The protect_status of this UpdatePremiumHostRequestBody.
         :rtype: int
@@ -318,7 +318,7 @@ class UpdatePremiumHostRequestBody:
     def protect_status(self, protect_status):
         """Sets the protect_status of this UpdatePremiumHostRequestBody.
 
-        域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
         :param protect_status: The protect_status of this UpdatePremiumHostRequestBody.
         :type protect_status: int

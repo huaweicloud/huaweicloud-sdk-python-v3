@@ -22,7 +22,7 @@ class UpdateTableOwnerRequest:
     openapi_types = {
         'database_name': 'str',
         'table_name': 'str',
-        'body': 'UpdateDatabaseOwnerReq'
+        'body': 'UpdateOwnerRequestBody'
     }
 
     attribute_map = {
@@ -41,7 +41,7 @@ class UpdateTableOwnerRequest:
         :param table_name: 
         :type table_name: str
         :param body: Body of the UpdateTableOwnerRequest
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateDatabaseOwnerReq`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateOwnerRequestBody`
         """
         
         
@@ -101,7 +101,7 @@ class UpdateTableOwnerRequest:
         """Gets the body of this UpdateTableOwnerRequest.
 
         :return: The body of this UpdateTableOwnerRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.UpdateDatabaseOwnerReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateOwnerRequestBody`
         """
         return self._body
 
@@ -110,7 +110,7 @@ class UpdateTableOwnerRequest:
         """Sets the body of this UpdateTableOwnerRequest.
 
         :param body: The body of this UpdateTableOwnerRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateDatabaseOwnerReq`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateOwnerRequestBody`
         """
         self._body = body
 

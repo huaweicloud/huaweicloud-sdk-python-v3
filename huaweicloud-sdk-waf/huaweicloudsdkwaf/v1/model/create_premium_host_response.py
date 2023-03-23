@@ -100,7 +100,7 @@ class CreatePremiumHostResponse(SdkResponse):
         :type projectid: str
         :param enterprise_project_id: 企业项目ID，对应华为云控制台用户名-&gt;企业-&gt;项目管理-&gt;点击项目名称-&gt;ID
         :type enterprise_project_id: str
-        :param protect_status: 域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        :param protect_status: 域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
         :type protect_status: int
         :param access_status: 域名接入状态，0表示未接入，1表示已接入
         :type access_status: int
@@ -522,7 +522,7 @@ class CreatePremiumHostResponse(SdkResponse):
     def protect_status(self):
         """Gets the protect_status of this CreatePremiumHostResponse.
 
-        域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
         :return: The protect_status of this CreatePremiumHostResponse.
         :rtype: int
@@ -533,7 +533,7 @@ class CreatePremiumHostResponse(SdkResponse):
     def protect_status(self, protect_status):
         """Sets the protect_status of this CreatePremiumHostResponse.
 
-        域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
         :param protect_status: The protect_status of this CreatePremiumHostResponse.
         :type protect_status: int

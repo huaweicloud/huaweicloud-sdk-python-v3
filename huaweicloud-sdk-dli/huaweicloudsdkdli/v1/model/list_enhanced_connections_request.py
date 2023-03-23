@@ -20,9 +20,9 @@ class ListEnhancedConnectionsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'limit': 'str',
+        'limit': 'int',
         'name': 'str',
-        'offset': 'str',
+        'offset': 'int',
         'status': 'str',
         'tags': 'str'
     }
@@ -41,11 +41,11 @@ class ListEnhancedConnectionsRequest:
         The model defined in huaweicloud sdk
 
         :param limit: 查询最大连接个数，默认100。
-        :type limit: str
+        :type limit: int
         :param name: 连接名。
         :type name: str
         :param offset: 查询结果偏移量，默认为0（连接以创建时间进行排序）
-        :type offset: str
+        :type offset: int
         :param status: 连接状态，包括以下两种状态： ACTIVE：已激活 DELETED：已删除
         :type status: str
         :param tags: 标签
@@ -79,7 +79,7 @@ class ListEnhancedConnectionsRequest:
         查询最大连接个数，默认100。
 
         :return: The limit of this ListEnhancedConnectionsRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._limit
 
@@ -90,7 +90,7 @@ class ListEnhancedConnectionsRequest:
         查询最大连接个数，默认100。
 
         :param limit: The limit of this ListEnhancedConnectionsRequest.
-        :type limit: str
+        :type limit: int
         """
         self._limit = limit
 
@@ -123,7 +123,7 @@ class ListEnhancedConnectionsRequest:
         查询结果偏移量，默认为0（连接以创建时间进行排序）
 
         :return: The offset of this ListEnhancedConnectionsRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._offset
 
@@ -134,7 +134,7 @@ class ListEnhancedConnectionsRequest:
         查询结果偏移量，默认为0（连接以创建时间进行排序）
 
         :param offset: The offset of this ListEnhancedConnectionsRequest.
-        :type offset: str
+        :type offset: int
         """
         self._offset = offset
 

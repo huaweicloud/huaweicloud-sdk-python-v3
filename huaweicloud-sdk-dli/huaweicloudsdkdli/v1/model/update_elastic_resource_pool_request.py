@@ -21,7 +21,7 @@ class UpdateElasticResourcePoolRequest:
 
     openapi_types = {
         'elastic_resource_pool_name': 'str',
-        'body': 'UpdateElasticResourcePoolInfo'
+        'body': 'UpdateElasticResourcePoolRequestBody'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class UpdateElasticResourcePoolRequest:
         :param elastic_resource_pool_name: 弹性资源池名称
         :type elastic_resource_pool_name: str
         :param body: Body of the UpdateElasticResourcePoolRequest
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolInfo`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolRequestBody`
         """
         
         
@@ -77,7 +77,7 @@ class UpdateElasticResourcePoolRequest:
         """Gets the body of this UpdateElasticResourcePoolRequest.
 
         :return: The body of this UpdateElasticResourcePoolRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolInfo`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolRequestBody`
         """
         return self._body
 
@@ -86,7 +86,7 @@ class UpdateElasticResourcePoolRequest:
         """Sets the body of this UpdateElasticResourcePoolRequest.
 
         :param body: The body of this UpdateElasticResourcePoolRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolInfo`
+        :type body: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolRequestBody`
         """
         self._body = body
 

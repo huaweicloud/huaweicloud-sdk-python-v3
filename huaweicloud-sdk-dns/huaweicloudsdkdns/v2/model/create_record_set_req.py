@@ -48,7 +48,7 @@ class CreateRecordSetReq:
         :type name: str
         :param description: 可选配置，对域名的描述。  长度不超过255个字符。  默认值为空。
         :type description: str
-        :param type: Record Set的类型。  取值范围：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。
+        :param type: Record Set的类型。  公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。  内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA、PTR。  默认值为空。
         :type type: str
         :param status: 资源状态。
         :type status: str
@@ -131,7 +131,7 @@ class CreateRecordSetReq:
     def type(self):
         """Gets the type of this CreateRecordSetReq.
 
-        Record Set的类型。  取值范围：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。
+        Record Set的类型。  公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。  内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA、PTR。  默认值为空。
 
         :return: The type of this CreateRecordSetReq.
         :rtype: str
@@ -142,7 +142,7 @@ class CreateRecordSetReq:
     def type(self, type):
         """Sets the type of this CreateRecordSetReq.
 
-        Record Set的类型。  取值范围：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。
+        Record Set的类型。  公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。  内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA、PTR。  默认值为空。
 
         :param type: The type of this CreateRecordSetReq.
         :type type: str

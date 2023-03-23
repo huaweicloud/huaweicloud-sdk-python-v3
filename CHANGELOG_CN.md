@@ -1,3 +1,333 @@
+# 3.1.33 2023-03-23
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowNode**
+    - 响应参数变更
+      - `+ spec.extendParam.agency_name`
+  - **UpdateNode**
+    - 响应参数变更
+      - `+ spec.extendParam.agency_name`
+  - **DeleteNode**
+    - 响应参数变更
+      - `+ spec.extendParam.agency_name`
+  - **CreateNode**
+    - 请求参数变更
+      - `+ spec.extendParam.agency_name`
+    - 响应参数变更
+      - `+ spec.extendParam.agency_name`
+  - **ListNodes**
+    - 响应参数变更
+      - `+ items.spec.extendParam.agency_name`
+  - **ShowNodePool**
+    - 响应参数变更
+      - `+ spec.nodeTemplate.extendParam.agency_name`
+  - **UpdateNodePool**
+    - 响应参数变更
+      - `+ spec.nodeTemplate.extendParam.agency_name`
+  - **DeleteNodePool**
+    - 响应参数变更
+      - `+ spec.nodeTemplate.extendParam.agency_name`
+  - **CreateNodePool**
+    - 请求参数变更
+      - `+ spec.nodeTemplate.extendParam.agency_name`
+    - 响应参数变更
+      - `+ spec.nodeTemplate.extendParam.agency_name`
+  - **ListNodePools**
+    - 响应参数变更
+      - `+ items.spec.nodeTemplate.extendParam.agency_name`
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDomainDetailByName**
+    - 响应参数变更
+      - `- domain.banned_reason`
+      - `- domain.locked_reason`
+      - `- domain.enterprise_project_id`
+
+### HuaweiCloud SDK CloudIDE
+
+- _新增特性_
+  - 支持接口`UploadFilePublisher`、`ShowExtensionTestingResult`、`PublishExtension`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateMigrationTask**
+    - 请求参数变更
+      - `+ backup_files.file_source: enum value [backup_record]`
+  - **ShowMigrationTask**
+    - 响应参数变更
+      - `+ backup_files.file_source: enum value [backup_record]`
+  - **StopMigrationTask**
+    - 响应参数变更
+      - `+ backup_files.file_source: enum value [backup_record]`
+
+### HuaweiCloud SDK DDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowReplSetName**
+    - 响应参数变更
+      - `+ name`
+  - **UpdateReplSetName**
+    - 响应参数变更
+      - `+ job_id`
+
+### HuaweiCloud SDK DLI
+
+- _新增特性_
+  - 支持以下接口：
+    - `AuthorizeResource`
+    - `ListAuthInfo`
+    - `UpdateAuthInfo`
+    - `CreateAuthInfo`
+    - `DeleteAuthInfo`
+    - `DeleteEnhancedConnectionRoutes`
+    - `CreateEnhancedConnectionRoutes`
+    - `ListElasticResourcePoolScaleRecords`
+    - `ShowSqlTemplates`
+    - `CreateSqlTemplates`
+    - `ShowSqlSampleTemplates`
+    - `UpdateSqlTemplates`
+    - `DeleteSqlTemplates`
+    - `ListJobTemplates`
+    - `CreateJobTemplates`
+    - `ShowJobTemplate`
+    - `UpdateJobTemplates`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`CreateDownloadJob`
+  - **ShowBatchInfo**
+    - 响应参数变更
+      - `* appId: list<string> -> string`
+  - **ChangeQueuePlan**
+    - 请求参数变更
+      - `+ repeat_day: enum value [MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY]`
+      - `- repeat_day: enum value [ MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY]`
+  - **DisassociateConnectionQueue**
+    - 请求参数变更
+      - `+ elastic_resource_pools`
+      - `- queues: enum value [q1,q2]`
+  - **AssociateConnectionQueue**
+    - 请求参数变更
+      - `+ elastic_resource_pools`
+  - **ListBatches**
+    - 响应参数变更
+      - `* sessions.appId: list<string> -> string`
+  - **CreateBatchJob**
+    - 请求参数变更
+      - `+ className`
+      - `+ pyFiles`
+      - `+ driverMemory`
+      - `+ driverCores`
+      - `+ executorMemory`
+      - `+ executorCores`
+      - `+ numExecutors`
+      - `- class_name`
+      - `- python_files`
+      - `- driver_memory`
+      - `- driver_cores`
+      - `- executor_memory`
+      - `- executor_cores`
+      - `- num_executors`
+      - `- catalog_name`
+      - `* conf: list<object> -> map<string, object>`
+      - `+ feature: enum value [ai,custom]`
+      - `- feature: enum value [ ai, custom]`
+      - `* body: object<CreateBatchJobReq> -> object<BatchJobInfo>`
+    - 响应参数变更
+      - `* appId: list<string> -> string`
+  - **CreateTable**
+    - 请求参数变更
+      - `+ tags`
+  - **ListQueues**
+    - 响应参数变更
+      - `* queues: list<ListQueuesRespQueues> -> list<QueueDetails>`
+  - **CreateQueuePlan**
+    - 请求参数变更
+      - `+ repeat_day: enum value [MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY]`
+      - `- repeat_day: enum value [ MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY]`
+  - **ListQueuePlans**
+    - 响应参数变更
+      - `+ plans.repeat_day: enum value [MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY]`
+      - `- plans.repeat_day: enum value [ MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY]`
+  - **ShowEnhancedConnection**
+    - 响应参数变更
+      - `+ elastic_resource_pools`
+  - **ListElasticResourcePools**
+    - 请求参数变更
+      - `+ status: enum value [AVAILABLE,SCALING,CREATING,FAILED]`
+      - `+ status: enum value [AVAILABLE，SCALING，CREATING，FAILED]`
+  - **CreateFlinkJar**
+    - 请求参数变更
+      - `* body: object<CreateFlinkdefinedJobsReq> -> object<CreateFlinkJarRequestBody>`
+  - **UpdateFlinkJar**
+    - 请求参数变更
+      - `* body: object<UpdateFlinkdefinedJobsResp> -> object<UpdateFlinkJarRequestBody>`
+  - **ListEnhancedConnections**
+    - 请求参数变更
+      - `* limit: string -> int32`
+      - `* offset: string -> int32`
+    - 响应参数变更
+      - `+ connections.elastic_resource_pools`
+  - **CreateFlinkTemplate**
+    - 请求参数变更
+      - `+ job_type: enum value [flink_sql_job,flink_opensource_sql_job]`
+      - `- job_type: enum value [flink_sql_job，flink_opensource_sql_job]`
+      - `* body: object<CreateTemplateReq> -> object<CreateFlinkTemplateRequestBody>`
+
+### HuaweiCloud SDK eiHealth
+
+- _新增特性_
+  - 支持以下接口：
+    - `CreateCpiTask`
+    - `ShowCpiTaskResult`
+    - `CreateGenerationTask`
+    - `ShowGenerationTaskResult`
+    - `CreateOptimizationTask`
+    - `ShowOptimizationTaskResult`
+    - `CreateSearchTask`
+    - `ShowSearchTaskResult`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK NAT
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListPrivateNats`
+    - `CreatePrivateNat`
+    - `ShowPrivateNat`
+    - `UpdatePrivateNat`
+    - `DeletePrivateNat`
+    - `ListPrivateDnats`
+    - `CreatePrivateDnat`
+    - `ShowPrivateDnat`
+    - `UpdatePrivateDnat`
+    - `DeletePrivateDnat`
+    - `ListPrivateSnats`
+    - `CreatePrivateSnat`
+    - `ShowPrivateSnat`
+    - `UpdatePrivateSnat`
+    - `DeletePrivateSnat`
+    - `ListTransitIps`
+    - `CreateTransitIp`
+    - `ShowTransitIp`
+    - `DeleteTransitIp`
+    - `ListPrivateNatsByTags`
+    - `ListPrivateNatTags`
+    - `ShowPrivateNatTags`
+    - `CreatePrivateNatTag`
+    - `BatchCreateDeletePrivateNatTags`
+    - `DeletePrivateNatTag`
+    - `ListTransitIpsByTags`
+    - `ListTransitIpTags`
+    - `ShowTransitIpTags`
+    - `CreateTransitIpTag`
+    - `BatchCreateDeleteTransitIpTags`
+    - `DeleteTransitIpTag`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Organizations
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除以下接口：
+    - `ShowCreateAccountStatus`
+    - `ShowEffectivePolicies`
+    - `ListTagPolicyServices`
+    - `ListTagResources`
+    - `CreateTagResource`
+    - `DeleteTagResource`
+    - `ListResourceInstances`
+    - `ShowResourceInstancesCount`
+    - `ListResourceTags`
+    - `CreateAccount`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _新增特性_
+  - 支持接口`ShowEngineInstanceExtendProductInfo`、`ResizeEngineInstance`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListCcRules`
+    - `CreateCcRule`
+    - `ShowCcRule`
+    - `UpdateCcRule`
+    - `DeleteCcRule`
+    - `ListCustomRules`
+    - `CreateCustomRule`
+    - `ShowCustomRule`
+    - `UpdateCustomRule`
+    - `DeleteCustomRule`
+    - `ListAnticrawlerRules`
+    - `UpdateAnticrawlerRuleType`
+    - `CreateAnticrawlerRule`
+    - `ShowAnticrawlerRule`
+    - `UpdateAnticrawlerRule`
+    - `DeleteAnticrawlerRule`
+    - `ListPunishmentRules`
+    - `CreatePunishmentRule`
+    - `ShowPunishmentRule`
+    - `UpdatePunishmentRule`
+    - `DeletePunishmentRule`
+    - `ListAntileakageRules`
+    - `CreateAntileakageRule`
+    - `ShowAntileakageRule`
+    - `UpdateAntileakageRule`
+    - `DeleteAntileakageRule`
+    - `UpdateAntiTamperRuleRefresh`
+    - `ShowGeoipRule`
+    - `ShowIgnoreRule`
+    - `UpdateIgnoreRule`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListHost**
+    - 响应参数变更
+      - `- items.paid_type: enum value [prePaid]`
+  - **DeleteHost**
+    - 响应参数变更
+      - `- paid_type: enum value [prePaid]`
+
 # 3.1.32 2023-03-16
 
 ### HuaweiCloud SDK Organizations

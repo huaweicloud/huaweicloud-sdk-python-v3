@@ -18,20 +18,17 @@
  under the LICENSE.
 """
 
-import json
+from concurrent.futures import ThreadPoolExecutor
 
-import six
 import requests
 from requests import HTTPError, Timeout, TooManyRedirects
 from requests.adapters import HTTPAdapter
 from requests.exceptions import ConnectionError
 from requests.packages.urllib3.util import Retry
 from urllib3.exceptions import SSLError, NewConnectionError
-from concurrent.futures import ThreadPoolExecutor
 
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.http.future_session import FutureSession
-from huaweicloudsdkcore.utils.xml_utils import XmlTransfer
 
 
 class HttpClient(object):
@@ -130,9 +127,7 @@ class HttpClient(object):
             try:
                 resp.raise_for_status()
             except HTTPError as httpError:
-                sdk_error = self._get_sdk_error_from_xml_response(httpError.response) \
-                    if httpError.response.headers.get("Content-Type") == "application/xml" \
-                    else self._get_sdk_error_from_response(httpError.response)
+                sdk_error = self._exception_handler.handle_exception(httpError.request, httpError.response)
                 if 400 <= httpError.response.status_code < 500:
                     raise exceptions.ClientRequestException(httpError.response.status_code, sdk_error)
                 else:
@@ -143,58 +138,3 @@ class HttpClient(object):
                 raise exceptions.RetryOutageException(str(tooManyRedirects))
 
         return response_hook
-
-    def _get_sdk_error_from_xml_response(self, resp):
-        request_id = resp.headers.get("x-obs-request-id")
-        sdk_error = exceptions.SdkError(request_id=request_id)
-        try:
-            sdk_error_dict = XmlTransfer().to_dict(resp.text, ignore_root=True)
-            self._process_sdk_error_from_xml(sdk_error, sdk_error_dict)
-        except Exception:
-            sdk_error.error_msg = six.ensure_str(resp.text)
-            raise exceptions.ServerResponseException(resp.status_code, sdk_error)
-
-        return self._handle_sdk_error_msg(sdk_error, resp.text)
-
-    @classmethod
-    def _process_sdk_error_from_xml(cls, sdk_error, sdk_error_dict):
-        if not sdk_error.request_id:
-            sdk_error.request_id = sdk_error_dict.get("RequestId")
-        if "Code" in sdk_error_dict and "Message" in sdk_error_dict:
-            sdk_error.error_code = sdk_error_dict.get("Code")
-            sdk_error.error_msg = sdk_error_dict.get("Message")
-
-    def _get_sdk_error_from_response(self, resp):
-        request_id = resp.headers.get("X-Request-Id")
-        sdk_error = exceptions.SdkError(request_id=request_id)
-        try:
-            sdk_error_dict = json.loads(resp.text)
-            self._process_sdk_error(sdk_error, sdk_error_dict)
-        except Exception:
-            sdk_error.error_msg = six.ensure_str(resp.text)
-            raise exceptions.ServerResponseException(resp.status_code, sdk_error)
-
-        return self._handle_sdk_error_msg(sdk_error, resp.text)
-
-    def _handle_sdk_error_msg(self, sdk_error, response_body):
-        if sdk_error.error_msg:
-            return sdk_error
-        if not sdk_error.error_msg and self._exception_handler:
-            sdk_error = self._exception_handler(response_body)
-        if not sdk_error.error_msg:
-            sdk_error = exceptions.SdkError(error_msg=response_body)
-        return sdk_error
-
-    @classmethod
-    def _process_sdk_error(cls, sdk_error, sdk_error_dict):
-        if "error_code" in sdk_error_dict and "error_msg" in sdk_error_dict:
-            sdk_error.error_code = sdk_error_dict.get("error_code")
-            sdk_error.error_msg = sdk_error_dict.get("error_msg")
-        elif "code" in sdk_error_dict and "message" in sdk_error_dict:
-            sdk_error.error_code = sdk_error_dict.get("code")
-            sdk_error.error_msg = sdk_error_dict.get("message")
-        else:
-            for value in sdk_error_dict.values():
-                if not isinstance(value, dict):
-                    continue
-                cls._process_sdk_error(sdk_error, value)

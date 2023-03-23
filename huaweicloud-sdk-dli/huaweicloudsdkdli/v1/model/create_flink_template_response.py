@@ -22,7 +22,7 @@ class CreateFlinkTemplateResponse(SdkResponse):
     openapi_types = {
         'is_success': 'bool',
         'message': 'str',
-        'template': 'CreateTemplateRespTemplate'
+        'template': 'FlinkTemplate'
     }
 
     attribute_map = {
@@ -41,7 +41,7 @@ class CreateFlinkTemplateResponse(SdkResponse):
         :param message: 消息内容
         :type message: str
         :param template: 
-        :type template: :class:`huaweicloudsdkdli.v1.CreateTemplateRespTemplate`
+        :type template: :class:`huaweicloudsdkdli.v1.FlinkTemplate`
         """
         
         super(CreateFlinkTemplateResponse, self).__init__()
@@ -107,7 +107,7 @@ class CreateFlinkTemplateResponse(SdkResponse):
         """Gets the template of this CreateFlinkTemplateResponse.
 
         :return: The template of this CreateFlinkTemplateResponse.
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateTemplateRespTemplate`
+        :rtype: :class:`huaweicloudsdkdli.v1.FlinkTemplate`
         """
         return self._template
 
@@ -116,7 +116,7 @@ class CreateFlinkTemplateResponse(SdkResponse):
         """Sets the template of this CreateFlinkTemplateResponse.
 
         :param template: The template of this CreateFlinkTemplateResponse.
-        :type template: :class:`huaweicloudsdkdli.v1.CreateTemplateRespTemplate`
+        :type template: :class:`huaweicloudsdkdli.v1.FlinkTemplate`
         """
         self._template = template
 

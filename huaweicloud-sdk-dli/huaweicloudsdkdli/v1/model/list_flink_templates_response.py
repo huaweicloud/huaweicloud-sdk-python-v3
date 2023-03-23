@@ -22,7 +22,7 @@ class ListFlinkTemplatesResponse(SdkResponse):
     openapi_types = {
         'is_success': 'bool',
         'message': 'str',
-        'template_list': 'ListTemplatesRespList'
+        'template_list': 'FlinkTemplateList'
     }
 
     attribute_map = {
@@ -41,7 +41,7 @@ class ListFlinkTemplatesResponse(SdkResponse):
         :param message: 消息内容。
         :type message: str
         :param template_list: 
-        :type template_list: :class:`huaweicloudsdkdli.v1.ListTemplatesRespList`
+        :type template_list: :class:`huaweicloudsdkdli.v1.FlinkTemplateList`
         """
         
         super(ListFlinkTemplatesResponse, self).__init__()
@@ -107,7 +107,7 @@ class ListFlinkTemplatesResponse(SdkResponse):
         """Gets the template_list of this ListFlinkTemplatesResponse.
 
         :return: The template_list of this ListFlinkTemplatesResponse.
-        :rtype: :class:`huaweicloudsdkdli.v1.ListTemplatesRespList`
+        :rtype: :class:`huaweicloudsdkdli.v1.FlinkTemplateList`
         """
         return self._template_list
 
@@ -116,7 +116,7 @@ class ListFlinkTemplatesResponse(SdkResponse):
         """Sets the template_list of this ListFlinkTemplatesResponse.
 
         :param template_list: The template_list of this ListFlinkTemplatesResponse.
-        :type template_list: :class:`huaweicloudsdkdli.v1.ListTemplatesRespList`
+        :type template_list: :class:`huaweicloudsdkdli.v1.FlinkTemplateList`
         """
         self._template_list = template_list
 

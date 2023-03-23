@@ -23,7 +23,7 @@ class ListAllTablesResponse(SdkResponse):
         'is_success': 'bool',
         'message': 'str',
         'table_count': 'int',
-        'tables': 'list[ListTablesRespTable]'
+        'tables': 'list[Table]'
     }
 
     attribute_map = {
@@ -45,7 +45,7 @@ class ListAllTablesResponse(SdkResponse):
         :param table_count: 表的总个数。
         :type table_count: int
         :param tables: 表的信息。
-        :type tables: list[:class:`huaweicloudsdkdli.v1.ListTablesRespTable`]
+        :type tables: list[:class:`huaweicloudsdkdli.v1.Table`]
         """
         
         super(ListAllTablesResponse, self).__init__()
@@ -138,7 +138,7 @@ class ListAllTablesResponse(SdkResponse):
         表的信息。
 
         :return: The tables of this ListAllTablesResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.ListTablesRespTable`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.Table`]
         """
         return self._tables
 
@@ -149,7 +149,7 @@ class ListAllTablesResponse(SdkResponse):
         表的信息。
 
         :param tables: The tables of this ListAllTablesResponse.
-        :type tables: list[:class:`huaweicloudsdkdli.v1.ListTablesRespTable`]
+        :type tables: list[:class:`huaweicloudsdkdli.v1.Table`]
         """
         self._tables = tables
 

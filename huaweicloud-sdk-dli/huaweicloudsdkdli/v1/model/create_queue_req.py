@@ -60,7 +60,7 @@ class CreateQueueReq:
         :type queue_type: str
         :param description: 队列的描述信息。
         :type description: str
-        :param cu_count: 与队列绑定的最小计算单元个数。设置值当前只支持16，64，256。
+        :param cu_count: 队列的实际CU。
         :type cu_count: int
         :param charging_mode: 队列的收费模式。只能设置为“1”，表示按照CU时收费。
         :type charging_mode: int
@@ -189,7 +189,7 @@ class CreateQueueReq:
     def cu_count(self):
         """Gets the cu_count of this CreateQueueReq.
 
-        与队列绑定的最小计算单元个数。设置值当前只支持16，64，256。
+        队列的实际CU。
 
         :return: The cu_count of this CreateQueueReq.
         :rtype: int
@@ -200,7 +200,7 @@ class CreateQueueReq:
     def cu_count(self, cu_count):
         """Sets the cu_count of this CreateQueueReq.
 
-        与队列绑定的最小计算单元个数。设置值当前只支持16，64，256。
+        队列的实际CU。
 
         :param cu_count: The cu_count of this CreateQueueReq.
         :type cu_count: int

@@ -20,7 +20,7 @@ class ImportFlinkJobRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'ImportReq'
+        'body': 'ImportFlinkJobRequestBody'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class ImportFlinkJobRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the ImportFlinkJobRequest
-        :type body: :class:`huaweicloudsdkdli.v1.ImportReq`
+        :type body: :class:`huaweicloudsdkdli.v1.ImportFlinkJobRequestBody`
         """
         
         
@@ -49,7 +49,7 @@ class ImportFlinkJobRequest:
         """Gets the body of this ImportFlinkJobRequest.
 
         :return: The body of this ImportFlinkJobRequest.
-        :rtype: :class:`huaweicloudsdkdli.v1.ImportReq`
+        :rtype: :class:`huaweicloudsdkdli.v1.ImportFlinkJobRequestBody`
         """
         return self._body
 
@@ -58,7 +58,7 @@ class ImportFlinkJobRequest:
         """Sets the body of this ImportFlinkJobRequest.
 
         :param body: The body of this ImportFlinkJobRequest.
-        :type body: :class:`huaweicloudsdkdli.v1.ImportReq`
+        :type body: :class:`huaweicloudsdkdli.v1.ImportFlinkJobRequestBody`
         """
         self._body = body
 

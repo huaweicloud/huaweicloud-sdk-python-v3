@@ -22,7 +22,7 @@ class ShowBatchInfoResponse(SdkResponse):
     openapi_types = {
         'id': 'str',
         'state': 'str',
-        'app_id': 'list[str]',
+        'app_id': 'str',
         'log': 'list[str]',
         'sc_type': 'str',
         'cluster_name': 'str',
@@ -66,8 +66,8 @@ class ShowBatchInfoResponse(SdkResponse):
         :type id: str
         :param state: Batch作业的状态。包括： starting：正在启动；running：正在执行任务；dead：session已退出；success：session停止成功；recovering：正在恢复。
         :type state: str
-        :param app_id: Batch作业的后台app id。
-        :type app_id: list[str]
+        :param app_id: 批处理作业的后台app id。
+        :type app_id: str
         :param log: 显示当前Batch作业的最后10条记录。
         :type log: list[str]
         :param sc_type: 计算资源类型。用户自定义时返回CUSTOMIZED。
@@ -197,10 +197,10 @@ class ShowBatchInfoResponse(SdkResponse):
     def app_id(self):
         """Gets the app_id of this ShowBatchInfoResponse.
 
-        Batch作业的后台app id。
+        批处理作业的后台app id。
 
         :return: The app_id of this ShowBatchInfoResponse.
-        :rtype: list[str]
+        :rtype: str
         """
         return self._app_id
 
@@ -208,10 +208,10 @@ class ShowBatchInfoResponse(SdkResponse):
     def app_id(self, app_id):
         """Sets the app_id of this ShowBatchInfoResponse.
 
-        Batch作业的后台app id。
+        批处理作业的后台app id。
 
         :param app_id: The app_id of this ShowBatchInfoResponse.
-        :type app_id: list[str]
+        :type app_id: str
         """
         self._app_id = app_id
 

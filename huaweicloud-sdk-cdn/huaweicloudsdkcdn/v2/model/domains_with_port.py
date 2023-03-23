@@ -30,10 +30,7 @@ class DomainsWithPort:
         'update_time': 'int',
         'disabled': 'int',
         'locked': 'int',
-        'service_area': 'str',
-        'banned_reason': 'str',
-        'locked_reason': 'str',
-        'enterprise_project_id': 'str'
+        'service_area': 'str'
     }
 
     attribute_map = {
@@ -47,13 +44,10 @@ class DomainsWithPort:
         'update_time': 'update_time',
         'disabled': 'disabled',
         'locked': 'locked',
-        'service_area': 'service_area',
-        'banned_reason': 'banned_reason',
-        'locked_reason': 'locked_reason',
-        'enterprise_project_id': 'enterprise_project_id'
+        'service_area': 'service_area'
     }
 
-    def __init__(self, id=None, business_type=None, domain_status=None, cname=None, sources=None, https_status=None, create_time=None, update_time=None, disabled=None, locked=None, service_area=None, banned_reason=None, locked_reason=None, enterprise_project_id=None):
+    def __init__(self, id=None, business_type=None, domain_status=None, cname=None, sources=None, https_status=None, create_time=None, update_time=None, disabled=None, locked=None, service_area=None):
         """DomainsWithPort
 
         The model defined in huaweicloud sdk
@@ -80,12 +74,6 @@ class DomainsWithPort:
         :type locked: int
         :param service_area: 华为云CDN提供的加速服务范围，包含：mainland_china中国大陆、outside_mainland_china中国大陆境外、global全球。
         :type service_area: str
-        :param banned_reason: 域名禁用原因。 1：该域名涉嫌违规内容（涉黄/涉赌/涉毒/涉政）已被禁用； 2：该域名因备案失效已被禁用； 3：该域名遭受攻击，已被禁用； 150：该域名涉嫌违规内容涉黄已被禁用； 151：该域名涉嫌违规内容涉政已被禁用； 152：该域名涉嫌违规内容涉暴已被禁用； 153：该域名涉嫌违规内容涉赌已被禁用。
-        :type banned_reason: str
-        :param locked_reason: 域名锁定原因（Changing the config, please wait）。
-        :type locked_reason: str
-        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。       
-        :type enterprise_project_id: str
         """
         
         
@@ -101,9 +89,6 @@ class DomainsWithPort:
         self._disabled = None
         self._locked = None
         self._service_area = None
-        self._banned_reason = None
-        self._locked_reason = None
-        self._enterprise_project_id = None
         self.discriminator = None
 
         if id is not None:
@@ -128,12 +113,6 @@ class DomainsWithPort:
             self.locked = locked
         if service_area is not None:
             self.service_area = service_area
-        if banned_reason is not None:
-            self.banned_reason = banned_reason
-        if locked_reason is not None:
-            self.locked_reason = locked_reason
-        if enterprise_project_id is not None:
-            self.enterprise_project_id = enterprise_project_id
 
     @property
     def id(self):
@@ -376,72 +355,6 @@ class DomainsWithPort:
         :type service_area: str
         """
         self._service_area = service_area
-
-    @property
-    def banned_reason(self):
-        """Gets the banned_reason of this DomainsWithPort.
-
-        域名禁用原因。 1：该域名涉嫌违规内容（涉黄/涉赌/涉毒/涉政）已被禁用； 2：该域名因备案失效已被禁用； 3：该域名遭受攻击，已被禁用； 150：该域名涉嫌违规内容涉黄已被禁用； 151：该域名涉嫌违规内容涉政已被禁用； 152：该域名涉嫌违规内容涉暴已被禁用； 153：该域名涉嫌违规内容涉赌已被禁用。
-
-        :return: The banned_reason of this DomainsWithPort.
-        :rtype: str
-        """
-        return self._banned_reason
-
-    @banned_reason.setter
-    def banned_reason(self, banned_reason):
-        """Sets the banned_reason of this DomainsWithPort.
-
-        域名禁用原因。 1：该域名涉嫌违规内容（涉黄/涉赌/涉毒/涉政）已被禁用； 2：该域名因备案失效已被禁用； 3：该域名遭受攻击，已被禁用； 150：该域名涉嫌违规内容涉黄已被禁用； 151：该域名涉嫌违规内容涉政已被禁用； 152：该域名涉嫌违规内容涉暴已被禁用； 153：该域名涉嫌违规内容涉赌已被禁用。
-
-        :param banned_reason: The banned_reason of this DomainsWithPort.
-        :type banned_reason: str
-        """
-        self._banned_reason = banned_reason
-
-    @property
-    def locked_reason(self):
-        """Gets the locked_reason of this DomainsWithPort.
-
-        域名锁定原因（Changing the config, please wait）。
-
-        :return: The locked_reason of this DomainsWithPort.
-        :rtype: str
-        """
-        return self._locked_reason
-
-    @locked_reason.setter
-    def locked_reason(self, locked_reason):
-        """Sets the locked_reason of this DomainsWithPort.
-
-        域名锁定原因（Changing the config, please wait）。
-
-        :param locked_reason: The locked_reason of this DomainsWithPort.
-        :type locked_reason: str
-        """
-        self._locked_reason = locked_reason
-
-    @property
-    def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DomainsWithPort.
-
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。       
-
-        :return: The enterprise_project_id of this DomainsWithPort.
-        :rtype: str
-        """
-        return self._enterprise_project_id
-
-    @enterprise_project_id.setter
-    def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DomainsWithPort.
-
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。       
-
-        :param enterprise_project_id: The enterprise_project_id of this DomainsWithPort.
-        :type enterprise_project_id: str
-        """
-        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

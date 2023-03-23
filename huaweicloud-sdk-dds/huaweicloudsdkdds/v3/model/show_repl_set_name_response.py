@@ -20,58 +20,35 @@ class ShowReplSetNameResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str',
         'name': 'str'
     }
 
     attribute_map = {
-        'body': 'body',
         'name': 'name'
     }
 
-    def __init__(self, body=None, name=None):
+    def __init__(self, name=None):
         """ShowReplSetNameResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: str
-        :param name: 
+        :param name: 连接地址复制集名称：实例高可用连接地址的唯一标识。该参数可以将读请求发送到副本集实例的所有节点。副本集中的所有主机必须具有相同的集名称。字符限制：大小写字母，数字，下划线组合，字母为首，长度限制在3-128
         :type name: str
         """
         
         super(ShowReplSetNameResponse, self).__init__()
 
-        self._body = None
         self._name = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
         if name is not None:
             self.name = name
 
     @property
-    def body(self):
-        """Gets the body of this ShowReplSetNameResponse.
-
-        :return: The body of this ShowReplSetNameResponse.
-        :rtype: str
-        """
-        return self._body
-
-    @body.setter
-    def body(self, body):
-        """Sets the body of this ShowReplSetNameResponse.
-
-        :param body: The body of this ShowReplSetNameResponse.
-        :type body: str
-        """
-        self._body = body
-
-    @property
     def name(self):
         """Gets the name of this ShowReplSetNameResponse.
+
+        连接地址复制集名称：实例高可用连接地址的唯一标识。该参数可以将读请求发送到副本集实例的所有节点。副本集中的所有主机必须具有相同的集名称。字符限制：大小写字母，数字，下划线组合，字母为首，长度限制在3-128
 
         :return: The name of this ShowReplSetNameResponse.
         :rtype: str
@@ -81,6 +58,8 @@ class ShowReplSetNameResponse(SdkResponse):
     @name.setter
     def name(self, name):
         """Sets the name of this ShowReplSetNameResponse.
+
+        连接地址复制集名称：实例高可用连接地址的唯一标识。该参数可以将读请求发送到副本集实例的所有节点。副本集中的所有主机必须具有相同的集名称。字符限制：大小写字母，数字，下划线组合，字母为首，长度限制在3-128
 
         :param name: The name of this ShowReplSetNameResponse.
         :type name: str

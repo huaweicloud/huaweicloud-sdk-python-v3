@@ -867,6 +867,71 @@ class RabbitMQAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def resize_engine_instance_async(self, request):
+        """新规格实例的规格变更
+
+        新规格实例的规格变更。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ResizeEngineInstance
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ResizeEngineInstanceRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ResizeEngineInstanceResponse`
+        """
+        return self.resize_engine_instance_with_http_info(request)
+
+    def resize_engine_instance_with_http_info(self, request):
+        all_params = ['instance_id', 'engine', 'resize_engine_instance_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'engine' in local_var_params:
+            path_params['engine'] = local_var_params['engine']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{engine}/{project_id}/instances/{instance_id}/extend',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ResizeEngineInstanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def resize_instance_async(self, request):
         """实例规格变更
 
@@ -990,6 +1055,71 @@ class RabbitMQAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowBackgroundTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_engine_instance_extend_product_info_async(self, request):
+        """查询新规格可扩容规格列表
+
+        查询新规格实例可扩容列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowEngineInstanceExtendProductInfo
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowEngineInstanceExtendProductInfoRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowEngineInstanceExtendProductInfoResponse`
+        """
+        return self.show_engine_instance_extend_product_info_with_http_info(request)
+
+    def show_engine_instance_extend_product_info_with_http_info(self, request):
+        all_params = ['engine', 'instance_id', 'type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine' in local_var_params:
+            path_params['engine'] = local_var_params['engine']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{engine}/{project_id}/instances/{instance_id}/extend',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowEngineInstanceExtendProductInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

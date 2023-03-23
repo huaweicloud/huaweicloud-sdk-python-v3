@@ -20,28 +20,36 @@ class DisassociateConnectionQueueReq:
     sensitive_list = []
 
     openapi_types = {
-        'queues': 'list[str]'
+        'queues': 'list[str]',
+        'elastic_resource_pools': 'list[str]'
     }
 
     attribute_map = {
-        'queues': 'queues'
+        'queues': 'queues',
+        'elastic_resource_pools': 'elastic_resource_pools'
     }
 
-    def __init__(self, queues=None):
+    def __init__(self, queues=None, elastic_resource_pools=None):
         """DisassociateConnectionQueueReq
 
         The model defined in huaweicloud sdk
 
         :param queues: 需要使用跨源的队列名列表。
         :type queues: list[str]
+        :param elastic_resource_pools: 需要使用跨源的弹性资源池名列表。
+        :type elastic_resource_pools: list[str]
         """
         
         
 
         self._queues = None
+        self._elastic_resource_pools = None
         self.discriminator = None
 
-        self.queues = queues
+        if queues is not None:
+            self.queues = queues
+        if elastic_resource_pools is not None:
+            self.elastic_resource_pools = elastic_resource_pools
 
     @property
     def queues(self):
@@ -64,6 +72,28 @@ class DisassociateConnectionQueueReq:
         :type queues: list[str]
         """
         self._queues = queues
+
+    @property
+    def elastic_resource_pools(self):
+        """Gets the elastic_resource_pools of this DisassociateConnectionQueueReq.
+
+        需要使用跨源的弹性资源池名列表。
+
+        :return: The elastic_resource_pools of this DisassociateConnectionQueueReq.
+        :rtype: list[str]
+        """
+        return self._elastic_resource_pools
+
+    @elastic_resource_pools.setter
+    def elastic_resource_pools(self, elastic_resource_pools):
+        """Sets the elastic_resource_pools of this DisassociateConnectionQueueReq.
+
+        需要使用跨源的弹性资源池名列表。
+
+        :param elastic_resource_pools: The elastic_resource_pools of this DisassociateConnectionQueueReq.
+        :type elastic_resource_pools: list[str]
+        """
+        self._elastic_resource_pools = elastic_resource_pools
 
     def to_dict(self):
         """Returns the model properties as a dict"""

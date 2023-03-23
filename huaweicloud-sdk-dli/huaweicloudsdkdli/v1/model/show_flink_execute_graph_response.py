@@ -22,7 +22,7 @@ class ShowFlinkExecuteGraphResponse(SdkResponse):
     openapi_types = {
         'is_success': 'bool',
         'message': 'str',
-        'execute_graph': 'ShowJobPlanRespPlan'
+        'execute_graph': 'StreamGraphInfo'
     }
 
     attribute_map = {
@@ -41,7 +41,7 @@ class ShowFlinkExecuteGraphResponse(SdkResponse):
         :param message: 消息内容。
         :type message: str
         :param execute_graph: 
-        :type execute_graph: :class:`huaweicloudsdkdli.v1.ShowJobPlanRespPlan`
+        :type execute_graph: :class:`huaweicloudsdkdli.v1.StreamGraphInfo`
         """
         
         super(ShowFlinkExecuteGraphResponse, self).__init__()
@@ -107,7 +107,7 @@ class ShowFlinkExecuteGraphResponse(SdkResponse):
         """Gets the execute_graph of this ShowFlinkExecuteGraphResponse.
 
         :return: The execute_graph of this ShowFlinkExecuteGraphResponse.
-        :rtype: :class:`huaweicloudsdkdli.v1.ShowJobPlanRespPlan`
+        :rtype: :class:`huaweicloudsdkdli.v1.StreamGraphInfo`
         """
         return self._execute_graph
 
@@ -116,7 +116,7 @@ class ShowFlinkExecuteGraphResponse(SdkResponse):
         """Sets the execute_graph of this ShowFlinkExecuteGraphResponse.
 
         :param execute_graph: The execute_graph of this ShowFlinkExecuteGraphResponse.
-        :type execute_graph: :class:`huaweicloudsdkdli.v1.ShowJobPlanRespPlan`
+        :type execute_graph: :class:`huaweicloudsdkdli.v1.StreamGraphInfo`
         """
         self._execute_graph = execute_graph
 

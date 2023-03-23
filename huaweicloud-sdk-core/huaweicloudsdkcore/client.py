@@ -20,7 +20,6 @@
 
 import datetime
 import decimal
-import importlib
 import logging
 import re
 import sys
@@ -31,12 +30,13 @@ from logging.handlers import RotatingFileHandler
 
 import simplejson as json
 import six
-from huaweicloudsdkcore.exceptions.exceptions import HostUnreachableException
 from requests_toolbelt import MultipartEncoder
 from six.moves.urllib.parse import quote, urlparse
 
 from huaweicloudsdkcore.auth.credentials import BasicCredentials, DerivedCredentials
 from huaweicloudsdkcore.auth.provider import CredentialProviderChain
+from huaweicloudsdkcore.exceptions.exceptions import HostUnreachableException
+from huaweicloudsdkcore.exceptions import exception_handler
 from huaweicloudsdkcore.http.formdata import FormFile
 from huaweicloudsdkcore.http.http_client import HttpClient
 from huaweicloudsdkcore.http.http_config import HttpConfig
@@ -203,11 +203,7 @@ class Client(object):
         self._http_handler = None
 
         self.model_package = None
-        try:
-            exception_handler_model_name = "%s.exception_handler" % self.__module__[:self.__module__.rindex('.')]
-            self.exception_handler_model = importlib.import_module(exception_handler_model_name)
-        except ImportError:
-            self.exception_handler_model = None
+        self.exception_handler = None
 
     @classmethod
     def _init_logger(cls):
@@ -249,9 +245,9 @@ class Client(object):
         return self
 
     def init_http_client(self):
-        exception_handler = None \
-            if self.exception_handler_model is None else getattr(self.exception_handler_model, "handle_exception")
-        self._http_client = HttpClient(self._config, self._http_handler, exception_handler, self._logger)
+        if not self.exception_handler or not isinstance(self.exception_handler, exception_handler.ExceptionHandler):
+            self.exception_handler = exception_handler.DefaultExceptionHandler()
+        self._http_client = HttpClient(self._config, self._http_handler, self.exception_handler, self._logger)
 
     def add_stream_logger(self, stream, log_level, format_string):
         self._logger.setLevel(log_level)

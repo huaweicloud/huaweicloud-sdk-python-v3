@@ -40,7 +40,7 @@ class RunQueueActionReq:
         :type action: str
         :param force: 是否强制重启，action为restart时可选择配置，默认为false。
         :type force: bool
-        :param cu_count: 扩容或者缩容的cu数。“action”为“scale_out”或者“scale_in”时可选择配置
+        :param cu_count: 队列的实际CU。
         :type cu_count: int
         """
         
@@ -105,7 +105,7 @@ class RunQueueActionReq:
     def cu_count(self):
         """Gets the cu_count of this RunQueueActionReq.
 
-        扩容或者缩容的cu数。“action”为“scale_out”或者“scale_in”时可选择配置
+        队列的实际CU。
 
         :return: The cu_count of this RunQueueActionReq.
         :rtype: int
@@ -116,7 +116,7 @@ class RunQueueActionReq:
     def cu_count(self, cu_count):
         """Sets the cu_count of this RunQueueActionReq.
 
-        扩容或者缩容的cu数。“action”为“scale_out”或者“scale_in”时可选择配置
+        队列的实际CU。
 
         :param cu_count: The cu_count of this RunQueueActionReq.
         :type cu_count: int

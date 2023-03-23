@@ -68,7 +68,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
         :type description: str
         :param email: 管理该zone的管理员邮箱。
         :type email: str
-        :param zone_type: zone类型，公网（public）或者内网（private）。
+        :param zone_type: zone类型，公网（public）。
         :type zone_type: str
         :param ttl: 该zone下SOA记录中的ttl值。
         :type ttl: int
@@ -234,7 +234,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
     def zone_type(self):
         """Gets the zone_type of this UpdatePublicZoneStatusResponse.
 
-        zone类型，公网（public）或者内网（private）。
+        zone类型，公网（public）。
 
         :return: The zone_type of this UpdatePublicZoneStatusResponse.
         :rtype: str
@@ -245,7 +245,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
     def zone_type(self, zone_type):
         """Sets the zone_type of this UpdatePublicZoneStatusResponse.
 
-        zone类型，公网（public）或者内网（private）。
+        zone类型，公网（public）。
 
         :param zone_type: The zone_type of this UpdatePublicZoneStatusResponse.
         :type zone_type: str

@@ -23,7 +23,8 @@ class ListEnhancedConnectionsDetail:
         'id': 'str',
         'name': 'str',
         'status': 'str',
-        'available_queue_info': 'list[EnhancedConnectionQueueInfo]',
+        'available_queue_info': 'list[EnhancedConnectionResourceInfo]',
+        'elastic_resource_pools': 'list[EnhancedConnectionResourceInfo]',
         'dest_vpc_id': 'str',
         'dest_network_id': 'str',
         'create_time': 'int',
@@ -36,6 +37,7 @@ class ListEnhancedConnectionsDetail:
         'name': 'name',
         'status': 'status',
         'available_queue_info': 'available_queue_info',
+        'elastic_resource_pools': 'elastic_resource_pools',
         'dest_vpc_id': 'dest_vpc_id',
         'dest_network_id': 'dest_network_id',
         'create_time': 'create_time',
@@ -43,7 +45,7 @@ class ListEnhancedConnectionsDetail:
         'is_privis': 'isPrivis'
     }
 
-    def __init__(self, id=None, name=None, status=None, available_queue_info=None, dest_vpc_id=None, dest_network_id=None, create_time=None, hosts=None, is_privis=None):
+    def __init__(self, id=None, name=None, status=None, available_queue_info=None, elastic_resource_pools=None, dest_vpc_id=None, dest_network_id=None, create_time=None, hosts=None, is_privis=None):
         """ListEnhancedConnectionsDetail
 
         The model defined in huaweicloud sdk
@@ -55,7 +57,9 @@ class ListEnhancedConnectionsDetail:
         :param status: 连接状态，包括以下两种状态： ACTIVE：已激活 DELETED：已删除
         :type status: str
         :param available_queue_info: 各个队列创建对等连接的信息。
-        :type available_queue_info: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionQueueInfo`]
+        :type available_queue_info: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionResourceInfo`]
+        :param elastic_resource_pools: 各个弹性资源池创建对等连接的信息。
+        :type elastic_resource_pools: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionResourceInfo`]
         :param dest_vpc_id: 对应服务的虚拟私有云标识。
         :type dest_vpc_id: str
         :param dest_network_id: 对应服务的子网网络标识。
@@ -74,6 +78,7 @@ class ListEnhancedConnectionsDetail:
         self._name = None
         self._status = None
         self._available_queue_info = None
+        self._elastic_resource_pools = None
         self._dest_vpc_id = None
         self._dest_network_id = None
         self._create_time = None
@@ -89,6 +94,8 @@ class ListEnhancedConnectionsDetail:
             self.status = status
         if available_queue_info is not None:
             self.available_queue_info = available_queue_info
+        if elastic_resource_pools is not None:
+            self.elastic_resource_pools = elastic_resource_pools
         if dest_vpc_id is not None:
             self.dest_vpc_id = dest_vpc_id
         if dest_network_id is not None:
@@ -173,7 +180,7 @@ class ListEnhancedConnectionsDetail:
         各个队列创建对等连接的信息。
 
         :return: The available_queue_info of this ListEnhancedConnectionsDetail.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionQueueInfo`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionResourceInfo`]
         """
         return self._available_queue_info
 
@@ -184,9 +191,31 @@ class ListEnhancedConnectionsDetail:
         各个队列创建对等连接的信息。
 
         :param available_queue_info: The available_queue_info of this ListEnhancedConnectionsDetail.
-        :type available_queue_info: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionQueueInfo`]
+        :type available_queue_info: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionResourceInfo`]
         """
         self._available_queue_info = available_queue_info
+
+    @property
+    def elastic_resource_pools(self):
+        """Gets the elastic_resource_pools of this ListEnhancedConnectionsDetail.
+
+        各个弹性资源池创建对等连接的信息。
+
+        :return: The elastic_resource_pools of this ListEnhancedConnectionsDetail.
+        :rtype: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionResourceInfo`]
+        """
+        return self._elastic_resource_pools
+
+    @elastic_resource_pools.setter
+    def elastic_resource_pools(self, elastic_resource_pools):
+        """Sets the elastic_resource_pools of this ListEnhancedConnectionsDetail.
+
+        各个弹性资源池创建对等连接的信息。
+
+        :param elastic_resource_pools: The elastic_resource_pools of this ListEnhancedConnectionsDetail.
+        :type elastic_resource_pools: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionResourceInfo`]
+        """
+        self._elastic_resource_pools = elastic_resource_pools
 
     @property
     def dest_vpc_id(self):
