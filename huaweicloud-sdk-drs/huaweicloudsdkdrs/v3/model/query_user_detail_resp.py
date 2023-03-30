@@ -24,7 +24,7 @@ class QueryUserDetailResp:
         'account': 'str',
         'comment': 'str',
         'is_transfer': 'bool',
-        'privileges': 'list[str]',
+        'privileges': 'str',
         'password': 'str',
         'roles': 'list[str]',
         'selected': 'bool',
@@ -61,7 +61,7 @@ class QueryUserDetailResp:
         :param is_transfer: 是否支持迁移
         :type is_transfer: bool
         :param privileges: 权限
-        :type privileges: list[str]
+        :type privileges: str
         :param password: 密码。
         :type password: str
         :param roles: 账号拥有的角色
@@ -209,7 +209,7 @@ class QueryUserDetailResp:
         权限
 
         :return: The privileges of this QueryUserDetailResp.
-        :rtype: list[str]
+        :rtype: str
         """
         return self._privileges
 
@@ -220,7 +220,7 @@ class QueryUserDetailResp:
         权限
 
         :param privileges: The privileges of this QueryUserDetailResp.
-        :type privileges: list[str]
+        :type privileges: str
         """
         self._privileges = privileges
 

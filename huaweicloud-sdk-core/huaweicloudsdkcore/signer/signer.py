@@ -46,7 +46,14 @@ class Signer(object):
         self._ak = credentials.ak
         self._sk = credentials.sk
 
+    def _verify_required(self):
+        if not self._ak:
+            raise ValueError("ak is required in credentials")
+        if not self._sk:
+            raise ValueError("sk is required in credentials")
+
     def sign(self, request):
+        self._verify_required()
         if isinstance(request.body, six.text_type):
             request.body = six.ensure_binary(request.body)
 
@@ -233,6 +240,12 @@ class DerivationAKSKSigner(Signer):
             cls.Algorithm, app_key, info, ";".join(signed_headers), signature)
 
     def sign(self, request, derived_auth_service_name=None, region_id=None):
+        super(DerivationAKSKSigner, self)._verify_required()
+        if not derived_auth_service_name:
+            raise ValueError("derivedAuthServiceName is required in credentials when using derived auth")
+        if not region_id:
+            raise ValueError("regionId is required in credentials when using derived auth")
+
         request.body = six.ensure_binary(request.body)
 
         t = self.process_header_time(request)
@@ -251,4 +264,3 @@ class DerivationAKSKSigner(Signer):
         self.process_request_uri(request)
 
         return request
-

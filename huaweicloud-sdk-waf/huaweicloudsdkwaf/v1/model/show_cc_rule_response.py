@@ -20,11 +20,12 @@ class ShowCcRuleResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'name': 'str',
         'id': 'str',
         'policyid': 'str',
         'url': 'str',
         'prefix': 'bool',
-        'mode': 'float',
+        'mode': 'int',
         'status': 'int',
         'conditions': 'list[CcCondition]',
         'action': 'CcrulesListInfoAction',
@@ -46,6 +47,7 @@ class ShowCcRuleResponse(SdkResponse):
     }
 
     attribute_map = {
+        'name': 'name',
         'id': 'id',
         'policyid': 'policyid',
         'url': 'url',
@@ -71,11 +73,13 @@ class ShowCcRuleResponse(SdkResponse):
         'timestamp': 'timestamp'
     }
 
-    def __init__(self, id=None, policyid=None, url=None, prefix=None, mode=None, status=None, conditions=None, action=None, tag_type=None, tag_index=None, tag_condition=None, limit_num=None, limit_period=None, unlock_num=None, lock_time=None, domain_aggregation=None, region_aggregation=None, description=None, total_num=None, unaggregation=None, aging_time=None, producer=None, timestamp=None):
+    def __init__(self, name=None, id=None, policyid=None, url=None, prefix=None, mode=None, status=None, conditions=None, action=None, tag_type=None, tag_index=None, tag_condition=None, limit_num=None, limit_period=None, unlock_num=None, lock_time=None, domain_aggregation=None, region_aggregation=None, description=None, total_num=None, unaggregation=None, aging_time=None, producer=None, timestamp=None):
         """ShowCcRuleResponse
 
         The model defined in huaweicloud sdk
 
+        :param name: 规则名称
+        :type name: str
         :param id: Rule ID.
         :type id: str
         :param policyid: Policy ID.
@@ -85,7 +89,7 @@ class ShowCcRuleResponse(SdkResponse):
         :param prefix: 路径是否为前缀模式，当防护url以*结束，则为前缀模式。
         :type prefix: bool
         :param mode: cc规则防护模式，对应console上的mode，现在只支持创建高级cc规则防护模式。   - 0：标准，只支持对域名的防护路径做限制。  - 1：高级，支持对路径、IP、Cookie、Header、Params字段做限制。
-        :type mode: float
+        :type mode: int
         :param status: 规则状态，0：关闭，1：开启
         :type status: int
         :param conditions: cc规则防护规则限速条件，当cc防护规则为高级模式（mode参数值为1）时，该参数必填。
@@ -126,6 +130,7 @@ class ShowCcRuleResponse(SdkResponse):
         
         super(ShowCcRuleResponse, self).__init__()
 
+        self._name = None
         self._id = None
         self._policyid = None
         self._url = None
@@ -151,6 +156,8 @@ class ShowCcRuleResponse(SdkResponse):
         self._timestamp = None
         self.discriminator = None
 
+        if name is not None:
+            self.name = name
         if id is not None:
             self.id = id
         if policyid is not None:
@@ -197,6 +204,28 @@ class ShowCcRuleResponse(SdkResponse):
             self.producer = producer
         if timestamp is not None:
             self.timestamp = timestamp
+
+    @property
+    def name(self):
+        """Gets the name of this ShowCcRuleResponse.
+
+        规则名称
+
+        :return: The name of this ShowCcRuleResponse.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ShowCcRuleResponse.
+
+        规则名称
+
+        :param name: The name of this ShowCcRuleResponse.
+        :type name: str
+        """
+        self._name = name
 
     @property
     def id(self):
@@ -293,7 +322,7 @@ class ShowCcRuleResponse(SdkResponse):
         cc规则防护模式，对应console上的mode，现在只支持创建高级cc规则防护模式。   - 0：标准，只支持对域名的防护路径做限制。  - 1：高级，支持对路径、IP、Cookie、Header、Params字段做限制。
 
         :return: The mode of this ShowCcRuleResponse.
-        :rtype: float
+        :rtype: int
         """
         return self._mode
 
@@ -304,7 +333,7 @@ class ShowCcRuleResponse(SdkResponse):
         cc规则防护模式，对应console上的mode，现在只支持创建高级cc规则防护模式。   - 0：标准，只支持对域名的防护路径做限制。  - 1：高级，支持对路径、IP、Cookie、Header、Params字段做限制。
 
         :param mode: The mode of this ShowCcRuleResponse.
-        :type mode: float
+        :type mode: int
         """
         self._mode = mode
 

@@ -23,22 +23,24 @@ class RuleCondition:
         'type': 'str',
         'device_property_condition': 'DeviceDataCondition',
         'simple_timer_condition': 'SimpleTimerType',
-        'daily_timer_condition': 'DailyTimerType'
+        'daily_timer_condition': 'DailyTimerType',
+        'device_linkage_status_condition': 'DeviceLinkageStatusCondition'
     }
 
     attribute_map = {
         'type': 'type',
         'device_property_condition': 'device_property_condition',
         'simple_timer_condition': 'simple_timer_condition',
-        'daily_timer_condition': 'daily_timer_condition'
+        'daily_timer_condition': 'daily_timer_condition',
+        'device_linkage_status_condition': 'device_linkage_status_condition'
     }
 
-    def __init__(self, type=None, device_property_condition=None, simple_timer_condition=None, daily_timer_condition=None):
+    def __init__(self, type=None, device_property_condition=None, simple_timer_condition=None, daily_timer_condition=None, device_linkage_status_condition=None):
         """RuleCondition
 
         The model defined in huaweicloud sdk
 
-        :param type: **参数说明**：规则条件的类型。 **取值范围**： - DEVICE_DATA：设备属性数据类型条件。 - SIMPLE_TIMER：简单定时类型条件。 - DAILY_TIMER：每日定时类型条件。
+        :param type: **参数说明**：规则条件的类型。 **取值范围**： - DEVICE_DATA：设备属性数据类型条件。 - SIMPLE_TIMER：简单定时类型条件。 - DAILY_TIMER：每日定时类型条件。 - DEVICE_LINKAGE_STATUS：设备状态类型条件。
         :type type: str
         :param device_property_condition: 
         :type device_property_condition: :class:`huaweicloudsdkiotda.v5.DeviceDataCondition`
@@ -46,6 +48,8 @@ class RuleCondition:
         :type simple_timer_condition: :class:`huaweicloudsdkiotda.v5.SimpleTimerType`
         :param daily_timer_condition: 
         :type daily_timer_condition: :class:`huaweicloudsdkiotda.v5.DailyTimerType`
+        :param device_linkage_status_condition: 
+        :type device_linkage_status_condition: :class:`huaweicloudsdkiotda.v5.DeviceLinkageStatusCondition`
         """
         
         
@@ -54,6 +58,7 @@ class RuleCondition:
         self._device_property_condition = None
         self._simple_timer_condition = None
         self._daily_timer_condition = None
+        self._device_linkage_status_condition = None
         self.discriminator = None
 
         self.type = type
@@ -63,12 +68,14 @@ class RuleCondition:
             self.simple_timer_condition = simple_timer_condition
         if daily_timer_condition is not None:
             self.daily_timer_condition = daily_timer_condition
+        if device_linkage_status_condition is not None:
+            self.device_linkage_status_condition = device_linkage_status_condition
 
     @property
     def type(self):
         """Gets the type of this RuleCondition.
 
-        **参数说明**：规则条件的类型。 **取值范围**： - DEVICE_DATA：设备属性数据类型条件。 - SIMPLE_TIMER：简单定时类型条件。 - DAILY_TIMER：每日定时类型条件。
+        **参数说明**：规则条件的类型。 **取值范围**： - DEVICE_DATA：设备属性数据类型条件。 - SIMPLE_TIMER：简单定时类型条件。 - DAILY_TIMER：每日定时类型条件。 - DEVICE_LINKAGE_STATUS：设备状态类型条件。
 
         :return: The type of this RuleCondition.
         :rtype: str
@@ -79,7 +86,7 @@ class RuleCondition:
     def type(self, type):
         """Sets the type of this RuleCondition.
 
-        **参数说明**：规则条件的类型。 **取值范围**： - DEVICE_DATA：设备属性数据类型条件。 - SIMPLE_TIMER：简单定时类型条件。 - DAILY_TIMER：每日定时类型条件。
+        **参数说明**：规则条件的类型。 **取值范围**： - DEVICE_DATA：设备属性数据类型条件。 - SIMPLE_TIMER：简单定时类型条件。 - DAILY_TIMER：每日定时类型条件。 - DEVICE_LINKAGE_STATUS：设备状态类型条件。
 
         :param type: The type of this RuleCondition.
         :type type: str
@@ -139,6 +146,24 @@ class RuleCondition:
         :type daily_timer_condition: :class:`huaweicloudsdkiotda.v5.DailyTimerType`
         """
         self._daily_timer_condition = daily_timer_condition
+
+    @property
+    def device_linkage_status_condition(self):
+        """Gets the device_linkage_status_condition of this RuleCondition.
+
+        :return: The device_linkage_status_condition of this RuleCondition.
+        :rtype: :class:`huaweicloudsdkiotda.v5.DeviceLinkageStatusCondition`
+        """
+        return self._device_linkage_status_condition
+
+    @device_linkage_status_condition.setter
+    def device_linkage_status_condition(self, device_linkage_status_condition):
+        """Sets the device_linkage_status_condition of this RuleCondition.
+
+        :param device_linkage_status_condition: The device_linkage_status_condition of this RuleCondition.
+        :type device_linkage_status_condition: :class:`huaweicloudsdkiotda.v5.DeviceLinkageStatusCondition`
+        """
+        self._device_linkage_status_condition = device_linkage_status_condition
 
     def to_dict(self):
         """Returns the model properties as a dict"""

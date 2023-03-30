@@ -23,6 +23,7 @@ class ActionDeviceAlarm:
         'name': 'str',
         'alarm_status': 'str',
         'severity': 'str',
+        'dimension': 'str',
         'description': 'str'
     }
 
@@ -30,10 +31,11 @@ class ActionDeviceAlarm:
         'name': 'name',
         'alarm_status': 'alarm_status',
         'severity': 'severity',
+        'dimension': 'dimension',
         'description': 'description'
     }
 
-    def __init__(self, name=None, alarm_status=None, severity=None, description=None):
+    def __init__(self, name=None, alarm_status=None, severity=None, dimension=None, description=None):
         """ActionDeviceAlarm
 
         The model defined in huaweicloud sdk
@@ -44,6 +46,8 @@ class ActionDeviceAlarm:
         :type alarm_status: str
         :param severity: **参数说明**：告警级别。 **取值范围**：warning（警告）、minor（一般）、major（严重）和critical（致命）。
         :type severity: str
+        :param dimension: **参数说明**：告警维度，与告警名称和告警级别组合起来共同标识一条告警，默认不携带该字段为用户维度告警，支持设备维度和资源空间维度告警。 **取值范围**： - device：设备维度。 - app：资源空间维度。
+        :type dimension: str
         :param description: **参数说明**：告警的描述信息。
         :type description: str
         """
@@ -53,12 +57,15 @@ class ActionDeviceAlarm:
         self._name = None
         self._alarm_status = None
         self._severity = None
+        self._dimension = None
         self._description = None
         self.discriminator = None
 
         self.name = name
         self.alarm_status = alarm_status
         self.severity = severity
+        if dimension is not None:
+            self.dimension = dimension
         if description is not None:
             self.description = description
 
@@ -127,6 +134,28 @@ class ActionDeviceAlarm:
         :type severity: str
         """
         self._severity = severity
+
+    @property
+    def dimension(self):
+        """Gets the dimension of this ActionDeviceAlarm.
+
+        **参数说明**：告警维度，与告警名称和告警级别组合起来共同标识一条告警，默认不携带该字段为用户维度告警，支持设备维度和资源空间维度告警。 **取值范围**： - device：设备维度。 - app：资源空间维度。
+
+        :return: The dimension of this ActionDeviceAlarm.
+        :rtype: str
+        """
+        return self._dimension
+
+    @dimension.setter
+    def dimension(self, dimension):
+        """Sets the dimension of this ActionDeviceAlarm.
+
+        **参数说明**：告警维度，与告警名称和告警级别组合起来共同标识一条告警，默认不携带该字段为用户维度告警，支持设备维度和资源空间维度告警。 **取值范围**： - device：设备维度。 - app：资源空间维度。
+
+        :param dimension: The dimension of this ActionDeviceAlarm.
+        :type dimension: str
+        """
+        self._dimension = dimension
 
     @property
     def description(self):

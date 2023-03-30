@@ -1376,6 +1376,130 @@ class RamClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def batch_create_resource_share_tags(self, request):
+        """资源共享实例增加标签
+
+        资源共享实例增加标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreateResourceShareTags
+        :type request: :class:`huaweicloudsdkram.v1.BatchCreateResourceShareTagsRequest`
+        :rtype: :class:`huaweicloudsdkram.v1.BatchCreateResourceShareTagsResponse`
+        """
+        return self.batch_create_resource_share_tags_with_http_info(request)
+
+    def batch_create_resource_share_tags_with_http_info(self, request):
+        all_params = ['resource_share_id', 'tag_resource_req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_share_id' in local_var_params:
+            path_params['resource_share_id'] = local_var_params['resource_share_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-shares/{resource_share_id}/tags/create',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchCreateResourceShareTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_delete_resource_share_tags(self, request):
+        """删除资源共享实例的标签
+
+        删除资源共享实例指定的标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteResourceShareTags
+        :type request: :class:`huaweicloudsdkram.v1.BatchDeleteResourceShareTagsRequest`
+        :rtype: :class:`huaweicloudsdkram.v1.BatchDeleteResourceShareTagsResponse`
+        """
+        return self.batch_delete_resource_share_tags_with_http_info(request)
+
+    def batch_delete_resource_share_tags_with_http_info(self, request):
+        all_params = ['resource_share_id', 'untag_resource_req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_share_id' in local_var_params:
+            path_params['resource_share_id'] = local_var_params['resource_share_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-shares/{resource_share_id}/tags/delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchDeleteResourceShareTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):

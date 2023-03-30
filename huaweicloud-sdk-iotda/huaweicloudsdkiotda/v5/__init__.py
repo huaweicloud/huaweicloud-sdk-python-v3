@@ -94,7 +94,8 @@ from huaweicloudsdkiotda.v5.model.delete_rule_request import DeleteRuleRequest
 from huaweicloudsdkiotda.v5.model.delete_rule_response import DeleteRuleResponse
 from huaweicloudsdkiotda.v5.model.device_command_request import DeviceCommandRequest
 from huaweicloudsdkiotda.v5.model.device_data_condition import DeviceDataCondition
-from huaweicloudsdkiotda.v5.model.device_group_response_dto import DeviceGroupResponseDTO
+from huaweicloudsdkiotda.v5.model.device_group_response_summary import DeviceGroupResponseSummary
+from huaweicloudsdkiotda.v5.model.device_linkage_status_condition import DeviceLinkageStatusCondition
 from huaweicloudsdkiotda.v5.model.device_message import DeviceMessage
 from huaweicloudsdkiotda.v5.model.device_message_request import DeviceMessageRequest
 from huaweicloudsdkiotda.v5.model.device_properties_request import DevicePropertiesRequest

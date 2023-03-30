@@ -22,7 +22,7 @@ class PageInfo:
     openapi_types = {
         'next_marker': 'str',
         'previous_marker': 'str',
-        'current_count': 'float'
+        'current_count': 'int'
     }
 
     attribute_map = {
@@ -41,7 +41,7 @@ class PageInfo:
         :param previous_marker: 分页查询结果中第一条记录的ID。通常用于配合page_reverse&#x3D;true查询上一页。
         :type previous_marker: str
         :param current_count: 分页查询资源时，本页的实例的个数。
-        :type current_count: float
+        :type current_count: int
         """
         
         
@@ -109,7 +109,7 @@ class PageInfo:
         分页查询资源时，本页的实例的个数。
 
         :return: The current_count of this PageInfo.
-        :rtype: float
+        :rtype: int
         """
         return self._current_count
 
@@ -120,7 +120,7 @@ class PageInfo:
         分页查询资源时，本页的实例的个数。
 
         :param current_count: The current_count of this PageInfo.
-        :type current_count: float
+        :type current_count: int
         """
         self._current_count = current_count
 

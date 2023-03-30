@@ -36,7 +36,7 @@ class ObsLocation:
 
         The model defined in huaweicloud sdk
 
-        :param region_name: **参数说明**：OBS所在区域。您可以从[地区和终端节点](https://developer.huaweicloud.com/endpoint?OBS)中查询服务的终端节点。 **取值范围**：长度不超过256，只允许字母、数字、连接符（-）的组合。
+        :param region_name: **参数说明**：OBS所在区域。您可以从[[地区和终端节点](https://developer.huaweicloud.com/endpoint?OBS)](tag:hws)[[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?OBS)](tag:hws_hk)中查询服务的终端节点。 **取值范围**：长度不超过256，只允许字母、数字、连接符（-）的组合。
         :type region_name: str
         :param bucket_name: **参数说明**：OBS桶名称。 **取值范围**：长度最小为3，最大为63，只允许小写字母、数字、连接符（-）、英文点（.）的组合。
         :type bucket_name: str
@@ -59,7 +59,7 @@ class ObsLocation:
     def region_name(self):
         """Gets the region_name of this ObsLocation.
 
-        **参数说明**：OBS所在区域。您可以从[地区和终端节点](https://developer.huaweicloud.com/endpoint?OBS)中查询服务的终端节点。 **取值范围**：长度不超过256，只允许字母、数字、连接符（-）的组合。
+        **参数说明**：OBS所在区域。您可以从[[地区和终端节点](https://developer.huaweicloud.com/endpoint?OBS)](tag:hws)[[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?OBS)](tag:hws_hk)中查询服务的终端节点。 **取值范围**：长度不超过256，只允许字母、数字、连接符（-）的组合。
 
         :return: The region_name of this ObsLocation.
         :rtype: str
@@ -70,7 +70,7 @@ class ObsLocation:
     def region_name(self, region_name):
         """Sets the region_name of this ObsLocation.
 
-        **参数说明**：OBS所在区域。您可以从[地区和终端节点](https://developer.huaweicloud.com/endpoint?OBS)中查询服务的终端节点。 **取值范围**：长度不超过256，只允许字母、数字、连接符（-）的组合。
+        **参数说明**：OBS所在区域。您可以从[[地区和终端节点](https://developer.huaweicloud.com/endpoint?OBS)](tag:hws)[[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?OBS)](tag:hws_hk)中查询服务的终端节点。 **取值范围**：长度不超过256，只允许字母、数字、连接符（-）的组合。
 
         :param region_name: The region_name of this ObsLocation.
         :type region_name: str

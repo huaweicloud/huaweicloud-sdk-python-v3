@@ -36,7 +36,7 @@ class StartInfo:
 
         :param job_id: 任务id。 
         :type job_id: str
-        :param start_time: 任务启动时间，时间戳格式精确到秒，例如：1614078283，取值为空代表立即启动。
+        :param start_time: 任务启动时间，时间戳格式精确到毫秒，例如：1679966489593，取值为空代表立即启动。
         :type start_time: str
         """
         
@@ -76,7 +76,7 @@ class StartInfo:
     def start_time(self):
         """Gets the start_time of this StartInfo.
 
-        任务启动时间，时间戳格式精确到秒，例如：1614078283，取值为空代表立即启动。
+        任务启动时间，时间戳格式精确到毫秒，例如：1679966489593，取值为空代表立即启动。
 
         :return: The start_time of this StartInfo.
         :rtype: str
@@ -87,7 +87,7 @@ class StartInfo:
     def start_time(self, start_time):
         """Sets the start_time of this StartInfo.
 
-        任务启动时间，时间戳格式精确到秒，例如：1614078283，取值为空代表立即启动。
+        任务启动时间，时间戳格式精确到毫秒，例如：1679966489593，取值为空代表立即启动。
 
         :param start_time: The start_time of this StartInfo.
         :type start_time: str

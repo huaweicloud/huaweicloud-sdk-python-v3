@@ -66,7 +66,7 @@ class ListServersDetailsRequest:
         :type name: str
         :param not_tags: 查询tag字段中不包含该值的云服务器。
         :type not_tags: str
-        :param offset: 页码。 当前页面数，默认为1。  取值大于等于0，取值为0时返回第1页。
+        :param offset: 页码。 当前页面数，默认为1，取值范围大于等于0。 当取值为0时，系统默认返回第1页，与取值为1时相同。 建议设置该参数大于等于1。
         :type offset: int
         :param reservation_id: 批量创建弹性云服务器时，指定返回的ID，用于查询本次批量创建的弹性云服务器。
         :type reservation_id: str
@@ -257,7 +257,7 @@ class ListServersDetailsRequest:
     def offset(self):
         """Gets the offset of this ListServersDetailsRequest.
 
-        页码。 当前页面数，默认为1。  取值大于等于0，取值为0时返回第1页。
+        页码。 当前页面数，默认为1，取值范围大于等于0。 当取值为0时，系统默认返回第1页，与取值为1时相同。 建议设置该参数大于等于1。
 
         :return: The offset of this ListServersDetailsRequest.
         :rtype: int
@@ -268,7 +268,7 @@ class ListServersDetailsRequest:
     def offset(self, offset):
         """Sets the offset of this ListServersDetailsRequest.
 
-        页码。 当前页面数，默认为1。  取值大于等于0，取值为0时返回第1页。
+        页码。 当前页面数，默认为1，取值范围大于等于0。 当取值为0时，系统默认返回第1页，与取值为1时相同。 建议设置该参数大于等于1。
 
         :param offset: The offset of this ListServersDetailsRequest.
         :type offset: int

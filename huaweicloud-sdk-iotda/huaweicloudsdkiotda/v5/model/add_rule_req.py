@@ -54,9 +54,9 @@ class AddRuleReq:
         :type app_type: str
         :param app_id: **参数说明**：资源空间ID。。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
         :type app_id: str
-        :param select: **参数说明**：用户自定义sql select语句，最大长度500，该参数仅供标准版和企业版用户使用。
+        :param select: **参数说明**：用户自定义sql select语句，最大长度2500，该参数仅供标准版和企业版用户使用。
         :type select: str
-        :param where: **参数说明**：用户自定义sql where语句，最大长度500，该参数仅供标准版和企业版用户使用。
+        :param where: **参数说明**：用户自定义sql where语句，最大长度2500，该参数仅供标准版和企业版用户使用。
         :type where: str
         """
         
@@ -195,7 +195,7 @@ class AddRuleReq:
     def select(self):
         """Gets the select of this AddRuleReq.
 
-        **参数说明**：用户自定义sql select语句，最大长度500，该参数仅供标准版和企业版用户使用。
+        **参数说明**：用户自定义sql select语句，最大长度2500，该参数仅供标准版和企业版用户使用。
 
         :return: The select of this AddRuleReq.
         :rtype: str
@@ -206,7 +206,7 @@ class AddRuleReq:
     def select(self, select):
         """Sets the select of this AddRuleReq.
 
-        **参数说明**：用户自定义sql select语句，最大长度500，该参数仅供标准版和企业版用户使用。
+        **参数说明**：用户自定义sql select语句，最大长度2500，该参数仅供标准版和企业版用户使用。
 
         :param select: The select of this AddRuleReq.
         :type select: str
@@ -217,7 +217,7 @@ class AddRuleReq:
     def where(self):
         """Gets the where of this AddRuleReq.
 
-        **参数说明**：用户自定义sql where语句，最大长度500，该参数仅供标准版和企业版用户使用。
+        **参数说明**：用户自定义sql where语句，最大长度2500，该参数仅供标准版和企业版用户使用。
 
         :return: The where of this AddRuleReq.
         :rtype: str
@@ -228,7 +228,7 @@ class AddRuleReq:
     def where(self, where):
         """Sets the where of this AddRuleReq.
 
-        **参数说明**：用户自定义sql where语句，最大长度500，该参数仅供标准版和企业版用户使用。
+        **参数说明**：用户自定义sql where语句，最大长度2500，该参数仅供标准版和企业版用户使用。
 
         :param where: The where of this AddRuleReq.
         :type where: str

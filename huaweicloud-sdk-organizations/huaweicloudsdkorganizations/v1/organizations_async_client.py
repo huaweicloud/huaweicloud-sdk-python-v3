@@ -419,6 +419,67 @@ class OrganizationsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_create_account_status_async(self, request):
+        """查询有关创建帐号状态的信息
+
+        检索创建帐号的异步请求的当前状态。此操作只能由组织的管理帐号或作为服务委托管理员的成员帐号调用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowCreateAccountStatus
+        :type request: :class:`huaweicloudsdkorganizations.v1.ShowCreateAccountStatusRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.ShowCreateAccountStatusResponse`
+        """
+        return self.show_create_account_status_with_http_info(request)
+
+    def show_create_account_status_with_http_info(self, request):
+        all_params = ['create_account_status_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'create_account_status_id' in local_var_params:
+            path_params['create_account_status_id'] = local_var_params['create_account_status_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/organizations/create-account-status/{create_account_status_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowCreateAccountStatusResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def deregister_delegated_administrator_async(self, request):
         """注销服务的委托管理员
 
@@ -1162,6 +1223,128 @@ class OrganizationsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListServicesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_tag_policy_services_async(self, request):
+        """列出被添加到标签策略强制执行的资源类型
+
+        List all services and resource type that could integrate with tag policy.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTagPolicyServices
+        :type request: :class:`huaweicloudsdkorganizations.v1.ListTagPolicyServicesRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.ListTagPolicyServicesResponse`
+        """
+        return self.list_tag_policy_services_with_http_info(request)
+
+    def list_tag_policy_services_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/organizations/tag-policy-services',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListTagPolicyServicesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_effective_policies_async(self, request):
+        """查询有效的策略
+
+        查询指定策略类型和帐户的有效策略信息。当前此接口不支持查询服务控制策略（service_control_policy）。此操作只能由组织的管理帐号或作为服务委托管理员的成员帐号调用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowEffectivePolicies
+        :type request: :class:`huaweicloudsdkorganizations.v1.ShowEffectivePoliciesRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.ShowEffectivePoliciesResponse`
+        """
+        return self.show_effective_policies_with_http_info(request)
+
+    def show_effective_policies_with_http_info(self, request):
+        all_params = ['entity_id', 'policy_type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'entity_id' in local_var_params:
+            query_params.append(('entity_id', local_var_params['entity_id']))
+        if 'policy_type' in local_var_params:
+            query_params.append(('policy_type', local_var_params['policy_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/organizations/entities/effective-policies',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowEffectivePoliciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2409,6 +2592,331 @@ class OrganizationsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_tag_resource_async(self, request):
+        """为指定资源添加标签
+
+        向指定的资源添加一个或多个标签。目前，您可以将标签附加到组织中的帐号、组织单元、根和策略。此操作只能由组织的管理帐号调用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateTagResource
+        :type request: :class:`huaweicloudsdkorganizations.v1.CreateTagResourceRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.CreateTagResourceResponse`
+        """
+        return self.create_tag_resource_with_http_info(request)
+
+    def create_tag_resource_with_http_info(self, request):
+        all_params = ['resource_type', 'resource_id', 'tag_resource_req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/organizations/{resource_type}/{resource_id}/tags/create',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateTagResourceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_tag_resource_async(self, request):
+        """从指定资源中删除指定主键标签
+
+        从指定资源中删除具有指定主键的任何标签。您可以将标签绑定到组织中的帐号、组织单元、根和策略。此操作只能由组织的管理帐号调用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteTagResource
+        :type request: :class:`huaweicloudsdkorganizations.v1.DeleteTagResourceRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.DeleteTagResourceResponse`
+        """
+        return self.delete_tag_resource_with_http_info(request)
+
+    def delete_tag_resource_with_http_info(self, request):
+        all_params = ['resource_type', 'resource_id', 'tag_resource_req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/organizations/{resource_type}/{resource_id}/tags/delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteTagResourceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_resource_instances_async(self, request):
+        """根据资源类型及标签信息查询实例列表
+
+        根据资源类型及标签信息查询实例列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListResourceInstances
+        :type request: :class:`huaweicloudsdkorganizations.v1.ListResourceInstancesRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.ListResourceInstancesResponse`
+        """
+        return self.list_resource_instances_with_http_info(request)
+
+    def list_resource_instances_with_http_info(self, request):
+        all_params = ['resource_type', 'resource_instance_req_body', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/organizations/{resource_type}/resource-instances/filter',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListResourceInstancesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_resource_tags_async(self, request):
+        """查询项目标签
+
+        查询项目标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListResourceTags
+        :type request: :class:`huaweicloudsdkorganizations.v1.ListResourceTagsRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.ListResourceTagsResponse`
+        """
+        return self.list_resource_tags_with_http_info(request)
+
+    def list_resource_tags_with_http_info(self, request):
+        all_params = ['resource_type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/organizations/{resource_type}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListResourceTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_tag_resources_async(self, request):
+        """列出绑定到指定资源的标签
+
+        列出绑定到指定资源的标签。您可以将标签附加到组织中的帐号、组织单元、根和策略。此操作只能由组织的管理帐号或作为服务委托管理员的成员帐号调用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTagResources
+        :type request: :class:`huaweicloudsdkorganizations.v1.ListTagResourcesRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.ListTagResourcesResponse`
+        """
+        return self.list_tag_resources_with_http_info(request)
+
+    def list_tag_resources_with_http_info(self, request):
+        all_params = ['resource_type', 'resource_id', 'limit', 'marker']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/organizations/{resource_type}/{resource_id}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListTagResourcesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_tags_for_resource_async(self, request):
         """列出绑定到指定资源的标签
 
@@ -2469,6 +2977,69 @@ class OrganizationsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListTagsForResourceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_resource_instances_count_async(self, request):
+        """根据资源类型及标签信息查询实例数量
+
+        根据资源类型及标签信息查询实例数量
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowResourceInstancesCount
+        :type request: :class:`huaweicloudsdkorganizations.v1.ShowResourceInstancesCountRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.ShowResourceInstancesCountResponse`
+        """
+        return self.show_resource_instances_count_with_http_info(request)
+
+    def show_resource_instances_count_with_http_info(self, request):
+        all_params = ['resource_type', 'resource_instance_req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/organizations/{resource_type}/resource-instances/count',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowResourceInstancesCountResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

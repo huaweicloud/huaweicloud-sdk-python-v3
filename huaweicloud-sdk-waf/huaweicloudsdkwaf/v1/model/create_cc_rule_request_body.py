@@ -20,6 +20,7 @@ class CreateCcRuleRequestBody:
     sensitive_list = []
 
     openapi_types = {
+        'name': 'str',
         'mode': 'int',
         'conditions': 'list[CcCondition]',
         'action': 'CreateCcRuleRequestBodyAction',
@@ -36,6 +37,7 @@ class CreateCcRuleRequestBody:
     }
 
     attribute_map = {
+        'name': 'name',
         'mode': 'mode',
         'conditions': 'conditions',
         'action': 'action',
@@ -51,11 +53,13 @@ class CreateCcRuleRequestBody:
         'description': 'description'
     }
 
-    def __init__(self, mode=None, conditions=None, action=None, tag_type=None, tag_index=None, tag_condition=None, limit_num=None, limit_period=None, unlock_num=None, lock_time=None, domain_aggregation=None, region_aggregation=None, description=None):
+    def __init__(self, name=None, mode=None, conditions=None, action=None, tag_type=None, tag_index=None, tag_condition=None, limit_num=None, limit_period=None, unlock_num=None, lock_time=None, domain_aggregation=None, region_aggregation=None, description=None):
         """CreateCcRuleRequestBody
 
         The model defined in huaweicloud sdk
 
+        :param name: 规则名称
+        :type name: str
         :param mode: cc规则防护模式，对应console上的mode，现在只支持创建高级cc规则防护模式。   - 0：标准，只支持对域名的防护路径做限制。  - 1：高级，支持对路径、IP、Cookie、Header、Params字段做限制。
         :type mode: int
         :param conditions: cc规则防护规则限速条件，当cc防护规则为高级模式（mode参数值为1）时，该参数必填。
@@ -86,6 +90,7 @@ class CreateCcRuleRequestBody:
         
         
 
+        self._name = None
         self._mode = None
         self._conditions = None
         self._action = None
@@ -101,6 +106,8 @@ class CreateCcRuleRequestBody:
         self._description = None
         self.discriminator = None
 
+        if name is not None:
+            self.name = name
         self.mode = mode
         self.conditions = conditions
         self.action = action
@@ -121,6 +128,28 @@ class CreateCcRuleRequestBody:
             self.region_aggregation = region_aggregation
         if description is not None:
             self.description = description
+
+    @property
+    def name(self):
+        """Gets the name of this CreateCcRuleRequestBody.
+
+        规则名称
+
+        :return: The name of this CreateCcRuleRequestBody.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this CreateCcRuleRequestBody.
+
+        规则名称
+
+        :param name: The name of this CreateCcRuleRequestBody.
+        :type name: str
+        """
+        self._name = name
 
     @property
     def mode(self):

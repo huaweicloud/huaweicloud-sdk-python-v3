@@ -1556,6 +1556,66 @@ class BssintlClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_renew_rate_on_period(self, request):
+        """查询待续订包年包月资源的续订金额
+
+        功能描述：客户在自建平台按照条件查询待续订包年/包月资源续订时候的续订金额
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListRenewRateOnPeriod
+        :type request: :class:`huaweicloudsdkbssintl.v2.ListRenewRateOnPeriodRequest`
+        :rtype: :class:`huaweicloudsdkbssintl.v2.ListRenewRateOnPeriodResponse`
+        """
+        return self.list_renew_rate_on_period_with_http_info(request)
+
+    def list_renew_rate_on_period_with_http_info(self, request):
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/bills/ratings/period-resources/renew-rate',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListRenewRateOnPeriodResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_service_resources(self, request):
         """根据云服务类型查询资源列表
 

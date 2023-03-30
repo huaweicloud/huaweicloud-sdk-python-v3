@@ -18,28 +18,23 @@ class CreateOtaPackageRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
-    sensitive_list.append('sp_auth_token')
 
     openapi_types = {
-        'sp_auth_token': 'str',
         'instance_id': 'str',
         'body': 'CreateOtaPackage'
     }
 
     attribute_map = {
-        'sp_auth_token': 'Sp-Auth-Token',
         'instance_id': 'Instance-Id',
         'body': 'body'
     }
 
-    def __init__(self, sp_auth_token=None, instance_id=None, body=None):
+    def __init__(self, instance_id=None, body=None):
         """CreateOtaPackageRequest
 
         The model defined in huaweicloud sdk
 
-        :param sp_auth_token: Sp用户Token。通过调用IoBPS服务获取SP用户Token
-        :type sp_auth_token: str
-        :param instance_id: 实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID。
         :type instance_id: str
         :param body: Body of the CreateOtaPackageRequest
         :type body: :class:`huaweicloudsdkiotda.v5.CreateOtaPackage`
@@ -47,45 +42,20 @@ class CreateOtaPackageRequest:
         
         
 
-        self._sp_auth_token = None
         self._instance_id = None
         self._body = None
         self.discriminator = None
 
-        if sp_auth_token is not None:
-            self.sp_auth_token = sp_auth_token
         if instance_id is not None:
             self.instance_id = instance_id
         if body is not None:
             self.body = body
 
     @property
-    def sp_auth_token(self):
-        """Gets the sp_auth_token of this CreateOtaPackageRequest.
-
-        Sp用户Token。通过调用IoBPS服务获取SP用户Token
-
-        :return: The sp_auth_token of this CreateOtaPackageRequest.
-        :rtype: str
-        """
-        return self._sp_auth_token
-
-    @sp_auth_token.setter
-    def sp_auth_token(self, sp_auth_token):
-        """Sets the sp_auth_token of this CreateOtaPackageRequest.
-
-        Sp用户Token。通过调用IoBPS服务获取SP用户Token
-
-        :param sp_auth_token: The sp_auth_token of this CreateOtaPackageRequest.
-        :type sp_auth_token: str
-        """
-        self._sp_auth_token = sp_auth_token
-
-    @property
     def instance_id(self):
         """Gets the instance_id of this CreateOtaPackageRequest.
 
-        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID。
 
         :return: The instance_id of this CreateOtaPackageRequest.
         :rtype: str
@@ -96,7 +66,7 @@ class CreateOtaPackageRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this CreateOtaPackageRequest.
 
-        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID。
 
         :param instance_id: The instance_id of this CreateOtaPackageRequest.
         :type instance_id: str

@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class DeviceGroupResponseDTO:
+class DeviceGroupResponseSummary:
 
     """
     Attributes:
@@ -34,7 +34,7 @@ class DeviceGroupResponseDTO:
     }
 
     def __init__(self, group_id=None, name=None, description=None, super_group_id=None):
-        """DeviceGroupResponseDTO
+        """DeviceGroupResponseSummary
 
         The model defined in huaweicloud sdk
 
@@ -67,88 +67,88 @@ class DeviceGroupResponseDTO:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DeviceGroupResponseDTO.
+        """Gets the group_id of this DeviceGroupResponseSummary.
 
         设备组ID，用于唯一标识一个设备组，在创建设备组时由物联网平台分配。
 
-        :return: The group_id of this DeviceGroupResponseDTO.
+        :return: The group_id of this DeviceGroupResponseSummary.
         :rtype: str
         """
         return self._group_id
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DeviceGroupResponseDTO.
+        """Sets the group_id of this DeviceGroupResponseSummary.
 
         设备组ID，用于唯一标识一个设备组，在创建设备组时由物联网平台分配。
 
-        :param group_id: The group_id of this DeviceGroupResponseDTO.
+        :param group_id: The group_id of this DeviceGroupResponseSummary.
         :type group_id: str
         """
         self._group_id = group_id
 
     @property
     def name(self):
-        """Gets the name of this DeviceGroupResponseDTO.
+        """Gets the name of this DeviceGroupResponseSummary.
 
         设备组名称，单个资源空间下不可重复。
 
-        :return: The name of this DeviceGroupResponseDTO.
+        :return: The name of this DeviceGroupResponseSummary.
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeviceGroupResponseDTO.
+        """Sets the name of this DeviceGroupResponseSummary.
 
         设备组名称，单个资源空间下不可重复。
 
-        :param name: The name of this DeviceGroupResponseDTO.
+        :param name: The name of this DeviceGroupResponseSummary.
         :type name: str
         """
         self._name = name
 
     @property
     def description(self):
-        """Gets the description of this DeviceGroupResponseDTO.
+        """Gets the description of this DeviceGroupResponseSummary.
 
         设备组描述。
 
-        :return: The description of this DeviceGroupResponseDTO.
+        :return: The description of this DeviceGroupResponseSummary.
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DeviceGroupResponseDTO.
+        """Sets the description of this DeviceGroupResponseSummary.
 
         设备组描述。
 
-        :param description: The description of this DeviceGroupResponseDTO.
+        :param description: The description of this DeviceGroupResponseSummary.
         :type description: str
         """
         self._description = description
 
     @property
     def super_group_id(self):
-        """Gets the super_group_id of this DeviceGroupResponseDTO.
+        """Gets the super_group_id of this DeviceGroupResponseSummary.
 
         父设备组ID，该设备组的父设备组ID。
 
-        :return: The super_group_id of this DeviceGroupResponseDTO.
+        :return: The super_group_id of this DeviceGroupResponseSummary.
         :rtype: str
         """
         return self._super_group_id
 
     @super_group_id.setter
     def super_group_id(self, super_group_id):
-        """Sets the super_group_id of this DeviceGroupResponseDTO.
+        """Sets the super_group_id of this DeviceGroupResponseSummary.
 
         父设备组ID，该设备组的父设备组ID。
 
-        :param super_group_id: The super_group_id of this DeviceGroupResponseDTO.
+        :param super_group_id: The super_group_id of this DeviceGroupResponseSummary.
         :type super_group_id: str
         """
         self._super_group_id = super_group_id
@@ -195,7 +195,7 @@ class DeviceGroupResponseDTO:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DeviceGroupResponseDTO):
+        if not isinstance(other, DeviceGroupResponseSummary):
             return False
 
         return self.__dict__ == other.__dict__

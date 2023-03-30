@@ -1,3 +1,297 @@
+# 3.1.34 2023-03-30
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 支持接口`ListRenewRateOnPeriod`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK BSSINTL
+
+- _新增特性_
+  - 支持接口`ListRenewRateOnPeriod`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CBR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListBackups**
+    - 请求参数变更
+      - `+ incremental`
+  - **ListVault**
+    - 响应参数变更
+      - `+ vaults.billing.object_type: enum value [vmware,rds,file]`
+  - **CreateVault**
+    - 请求参数变更
+      - `+ vault.billing.object_type: enum value [vmware,rds,file]`
+    - 响应参数变更
+      - `+ vault.billing.object_type: enum value [vmware,rds,file]`
+  - **ShowVault**
+    - 响应参数变更
+      - `+ vault.billing.object_type: enum value [vmware,rds,file]`
+  - **UpdateVault**
+    - 响应参数变更
+      - `+ vault.billing.object_type: enum value [vmware,rds,file]`
+  - **ShowVaultResourceInstances**
+    - 响应参数变更
+      - `+ resources.resource_detail.billing.object_type: enum value [vmware,rds,file]`
+  - **ListProtectable**
+    - 响应参数变更
+      - `+ instances.protectable.vault.billing.object_type: enum value [vmware,rds,file]`
+  - **ShowProtectable**
+    - 响应参数变更
+      - `+ instance.protectable.vault.billing.object_type: enum value [vmware,rds,file]`
+
+### HuaweiCloud SDK CloudIDE
+
+- _新增特性_
+  - 支持接口`CreateApply`、`CreateEvent`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateAutoCreatePolicy**
+    - 请求参数变更
+      - `+ indices`
+
+### HuaweiCloud SDK DRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListUsers**
+    - 响应参数变更
+      - `* user_list.privileges: list<string> -> string`
+  - **BatchUpdateUser**
+    - 响应参数变更
+      - `* results.user_list.privileges: list<string> -> string`
+
+### HuaweiCloud SDK eiHealth
+
+- _新增特性_
+  - 支持接口`ShowAdmetProperties`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateGenerationTask**
+    - 请求参数变更
+      - `- strong_constraints.requirement`
+  - **CreateOptimizationTask**
+    - 请求参数变更
+      - `- strong_constraints.requirement`
+  - **ShowGenerationTaskResult**
+    - 响应参数变更
+      - `- task_data.strong_constraints.requirement`
+  - **ShowOptimizationTaskResult**
+    - 响应参数变更
+      - `- task_data.strong_constraints.requirement`
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListOtaPackageInfo**
+    - 请求参数变更
+      - `- Sp-Auth-Token`
+  - **CreateOtaPackage**
+    - 请求参数变更
+      - `- Sp-Auth-Token`
+  - **DeleteOtaPackage**
+    - 请求参数变更
+      - `- Sp-Auth-Token`
+  - **ShowOtaPackage**
+    - 请求参数变更
+      - `- Sp-Auth-Token`
+  - **ShowRuleAction**
+    - 响应参数变更
+      - `+ channel_detail.http_forwarding.signature_enable`
+      - `+ channel_detail.http_forwarding.token`
+  - **UpdateRuleAction**
+    - 请求参数变更
+      - `+ channel_detail.http_forwarding.signature_enable`
+      - `+ channel_detail.http_forwarding.token`
+    - 响应参数变更
+      - `+ channel_detail.http_forwarding.signature_enable`
+      - `+ channel_detail.http_forwarding.token`
+  - **CreateRuleAction**
+    - 请求参数变更
+      - `+ channel_detail.http_forwarding.signature_enable`
+      - `+ channel_detail.http_forwarding.token`
+    - 响应参数变更
+      - `+ channel_detail.http_forwarding.signature_enable`
+      - `+ channel_detail.http_forwarding.token`
+  - **ListRuleActions**
+    - 响应参数变更
+      - `+ actions.channel_detail.http_forwarding.signature_enable`
+      - `+ actions.channel_detail.http_forwarding.token`
+  - **ShowRule**
+    - 响应参数变更
+      - `+ actions.device_alarm.dimension`
+      - `+ condition_group.conditions.device_linkage_status_condition`
+      - `+ condition_group.conditions.device_property_condition.filters.in_values`
+  - **UpdateRule**
+    - 请求参数变更
+      - `+ actions.device_alarm.dimension`
+      - `+ condition_group.conditions.device_linkage_status_condition`
+      - `+ condition_group.conditions.device_property_condition.filters.in_values`
+    - 响应参数变更
+      - `+ actions.device_alarm.dimension`
+      - `+ condition_group.conditions.device_linkage_status_condition`
+      - `+ condition_group.conditions.device_property_condition.filters.in_values`
+  - **CreateRule**
+    - 请求参数变更
+      - `+ actions.device_alarm.dimension`
+      - `+ condition_group.conditions.device_linkage_status_condition`
+      - `+ condition_group.conditions.device_property_condition.filters.in_values`
+    - 响应参数变更
+      - `+ actions.device_alarm.dimension`
+      - `+ condition_group.conditions.device_linkage_status_condition`
+      - `+ condition_group.conditions.device_property_condition.filters.in_values`
+  - **ListRules**
+    - 响应参数变更
+      - `+ rules.actions.device_alarm.dimension`
+      - `+ rules.condition_group.conditions.device_linkage_status_condition`
+      - `+ rules.condition_group.conditions.device_property_condition.filters.in_values`
+
+### HuaweiCloud SDK NAT
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPrivateDnats**
+    - 响应参数变更
+      - `* page_info.current_count: number -> integer`
+  - **ListPrivateNats**
+    - 响应参数变更
+      - `* page_info.current_count: number -> integer`
+  - **ListPrivateSnats**
+    - 响应参数变更
+      - `* page_info.current_count: number -> integer`
+  - **ListTransitIps**
+    - 响应参数变更
+      - `* page_info.current_count: number -> integer`
+
+### HuaweiCloud SDK Organizations
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowCreateAccountStatus`
+    - `ShowEffectivePolicies`
+    - `ListTagPolicyServices`
+    - `ListTagResources`
+    - `CreateTagResource`
+    - `DeleteTagResource`
+    - `ListResourceInstances`
+    - `ShowResourceInstancesCount`
+    - `ListResourceTags`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK OSM
+
+- _新增特性_
+  - 支持接口`ShowConfiguration`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RAM
+
+- _新增特性_
+  - 支持接口`BatchCreateResourceShareTags`、`BatchDeleteResourceShareTags`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK VOD
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **PublishAssetFromObs**
+    - 请求参数变更
+      - `+ video_type: enum value [RMVB,WEBM]`
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 支持接口`ShowValueList`、`ShowPrivacyRule`、`ShowAntitamperRule`、`ShowWhiteBlackIpRule`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowCcRule**
+    - 响应参数变更
+      - `+ name`
+      - `* mode: number -> int32`
+  - **UpdateCcRule**
+    - 请求参数变更
+      - `+ name`
+    - 响应参数变更
+      - `+ name`
+      - `* mode: number -> int32`
+  - **DeleteCcRule**
+    - 响应参数变更
+      - `+ name`
+      - `* mode: number -> int32`
+  - **ShowCustomRule**
+    - 响应参数变更
+      - `+ time`
+  - **UpdateCustomRule**
+    - 响应参数变更
+      - `+ time`
+  - **DeleteCustomRule**
+    - 响应参数变更
+      - `+ time`
+  - **ListAntileakageRules**
+    - 响应参数变更
+      - `+ items.description`
+  - **CreateCcRule**
+    - 请求参数变更
+      - `+ name`
+    - 响应参数变更
+      - `+ name`
+      - `* mode: number -> int32`
+  - **ListCcRules**
+    - 响应参数变更
+      - `+ items.name`
+  - **CreateCustomRule**
+    - 响应参数变更
+      - `+ time`
+  - **ListCustomRules**
+    - 响应参数变更
+      - `+ items.time`
+
 # 3.1.33 2023-03-23
 
 ### HuaweiCloud SDK CCE

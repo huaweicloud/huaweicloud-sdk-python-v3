@@ -18,10 +18,8 @@ class ListOtaPackageInfoRequest:
                             and the value is json key in definition.
     """
     sensitive_list = []
-    sensitive_list.append('sp_auth_token')
 
     openapi_types = {
-        'sp_auth_token': 'str',
         'instance_id': 'str',
         'app_id': 'str',
         'package_type': 'str',
@@ -33,7 +31,6 @@ class ListOtaPackageInfoRequest:
     }
 
     attribute_map = {
-        'sp_auth_token': 'Sp-Auth-Token',
         'instance_id': 'Instance-Id',
         'app_id': 'app_id',
         'package_type': 'package_type',
@@ -44,14 +41,12 @@ class ListOtaPackageInfoRequest:
         'offset': 'offset'
     }
 
-    def __init__(self, sp_auth_token=None, instance_id=None, app_id=None, package_type=None, product_id=None, version=None, limit=None, marker=None, offset=None):
+    def __init__(self, instance_id=None, app_id=None, package_type=None, product_id=None, version=None, limit=None, marker=None, offset=None):
         """ListOtaPackageInfoRequest
 
         The model defined in huaweicloud sdk
 
-        :param sp_auth_token: Sp用户Token。通过调用IoBPS服务获取SP用户Token
-        :type sp_auth_token: str
-        :param instance_id: 实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID。
         :type instance_id: str
         :param app_id: **参数说明**：资源空间ID。存在多资源空间的用户需要使用该接口时，建议携带该参数指定查询指定资源空间的升级包列表。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
         :type app_id: str
@@ -61,9 +56,9 @@ class ListOtaPackageInfoRequest:
         :type product_id: str
         :param version: **参数说明**：升级包版本号。 **取值范围**：长度不超过256，只允许字母、数字、下划线（_）、连接符（-）、英文点（.）的组合。
         :type version: str
-        :param limit: |- **参数说明**：分页查询时每页显示的记录数。 **取值范围**：1-50的整数，默认值为10。
+        :param limit: **参数说明**：分页查询时每页显示的记录数。 **取值范围**：1-50的整数，默认值为10。
         :type limit: int
-        :param marker: **参数说明**：上一次分页查询结果中最后一条记录的ID，在上一次分页查询时由物联网平台返回获得。分页查询时物联网平台是按marker也就是记录ID降序查询的，越新的数据记录ID也会越大。若填写marker，则本次只查询记录ID小于marker的数据记录。若不填写，则从记录ID最大也就是最新的一条数据开始查询。如果需要依次查询所有数据，则每次查询时必须填写上一次查询响应中的marker值。 **取值范围**：长度为24的十六进制字符串，默认值为ffffffffffffffffffffffff。
+        :param marker: **参数说明**：上一次分页查询结果中最后一条记录的ID，在上一次分页查询时由物联网平台返回获得。分页查询时物联网平台是按marker也就是记录ID降序查询的，越新的数据记录ID也会越大。若填写marker，则本次只查询记录ID小于marker的数据记录。若不填写，则从记录ID最大也就是最新的一条数据开始查询。如果需要依次查询所有数据，则每次查询时必须填写上一次查询响应中的marker值。**取值范围**：长度为24的十六进制字符串，默认值为ffffffffffffffffffffffff。
         :type marker: str
         :param offset: **参数说明**：表示从marker后偏移offset条记录开始查询。默认为0，取值范围为0-500的整数。当offset为0时，表示从marker后第一条记录开始输出。限制offset最大值是出于API性能考虑，您可以搭配marker使用该参数实现翻页，例如每页50条记录，1-11页内都可以直接使用offset跳转到指定页，但到11页后，由于offset限制为500，您需要使用第11页返回的marker作为下次查询的marker，以实现翻页到12-22页。 **取值范围**：0-500的整数，默认为0。
         :type offset: int
@@ -71,7 +66,6 @@ class ListOtaPackageInfoRequest:
         
         
 
-        self._sp_auth_token = None
         self._instance_id = None
         self._app_id = None
         self._package_type = None
@@ -82,8 +76,6 @@ class ListOtaPackageInfoRequest:
         self._offset = None
         self.discriminator = None
 
-        if sp_auth_token is not None:
-            self.sp_auth_token = sp_auth_token
         if instance_id is not None:
             self.instance_id = instance_id
         if app_id is not None:
@@ -101,32 +93,10 @@ class ListOtaPackageInfoRequest:
             self.offset = offset
 
     @property
-    def sp_auth_token(self):
-        """Gets the sp_auth_token of this ListOtaPackageInfoRequest.
-
-        Sp用户Token。通过调用IoBPS服务获取SP用户Token
-
-        :return: The sp_auth_token of this ListOtaPackageInfoRequest.
-        :rtype: str
-        """
-        return self._sp_auth_token
-
-    @sp_auth_token.setter
-    def sp_auth_token(self, sp_auth_token):
-        """Sets the sp_auth_token of this ListOtaPackageInfoRequest.
-
-        Sp用户Token。通过调用IoBPS服务获取SP用户Token
-
-        :param sp_auth_token: The sp_auth_token of this ListOtaPackageInfoRequest.
-        :type sp_auth_token: str
-        """
-        self._sp_auth_token = sp_auth_token
-
-    @property
     def instance_id(self):
         """Gets the instance_id of this ListOtaPackageInfoRequest.
 
-        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID。
 
         :return: The instance_id of this ListOtaPackageInfoRequest.
         :rtype: str
@@ -137,7 +107,7 @@ class ListOtaPackageInfoRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListOtaPackageInfoRequest.
 
-        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID。
 
         :param instance_id: The instance_id of this ListOtaPackageInfoRequest.
         :type instance_id: str
@@ -236,7 +206,7 @@ class ListOtaPackageInfoRequest:
     def limit(self):
         """Gets the limit of this ListOtaPackageInfoRequest.
 
-        |- **参数说明**：分页查询时每页显示的记录数。 **取值范围**：1-50的整数，默认值为10。
+        **参数说明**：分页查询时每页显示的记录数。 **取值范围**：1-50的整数，默认值为10。
 
         :return: The limit of this ListOtaPackageInfoRequest.
         :rtype: int
@@ -247,7 +217,7 @@ class ListOtaPackageInfoRequest:
     def limit(self, limit):
         """Sets the limit of this ListOtaPackageInfoRequest.
 
-        |- **参数说明**：分页查询时每页显示的记录数。 **取值范围**：1-50的整数，默认值为10。
+        **参数说明**：分页查询时每页显示的记录数。 **取值范围**：1-50的整数，默认值为10。
 
         :param limit: The limit of this ListOtaPackageInfoRequest.
         :type limit: int
@@ -258,7 +228,7 @@ class ListOtaPackageInfoRequest:
     def marker(self):
         """Gets the marker of this ListOtaPackageInfoRequest.
 
-        **参数说明**：上一次分页查询结果中最后一条记录的ID，在上一次分页查询时由物联网平台返回获得。分页查询时物联网平台是按marker也就是记录ID降序查询的，越新的数据记录ID也会越大。若填写marker，则本次只查询记录ID小于marker的数据记录。若不填写，则从记录ID最大也就是最新的一条数据开始查询。如果需要依次查询所有数据，则每次查询时必须填写上一次查询响应中的marker值。 **取值范围**：长度为24的十六进制字符串，默认值为ffffffffffffffffffffffff。
+        **参数说明**：上一次分页查询结果中最后一条记录的ID，在上一次分页查询时由物联网平台返回获得。分页查询时物联网平台是按marker也就是记录ID降序查询的，越新的数据记录ID也会越大。若填写marker，则本次只查询记录ID小于marker的数据记录。若不填写，则从记录ID最大也就是最新的一条数据开始查询。如果需要依次查询所有数据，则每次查询时必须填写上一次查询响应中的marker值。**取值范围**：长度为24的十六进制字符串，默认值为ffffffffffffffffffffffff。
 
         :return: The marker of this ListOtaPackageInfoRequest.
         :rtype: str
@@ -269,7 +239,7 @@ class ListOtaPackageInfoRequest:
     def marker(self, marker):
         """Sets the marker of this ListOtaPackageInfoRequest.
 
-        **参数说明**：上一次分页查询结果中最后一条记录的ID，在上一次分页查询时由物联网平台返回获得。分页查询时物联网平台是按marker也就是记录ID降序查询的，越新的数据记录ID也会越大。若填写marker，则本次只查询记录ID小于marker的数据记录。若不填写，则从记录ID最大也就是最新的一条数据开始查询。如果需要依次查询所有数据，则每次查询时必须填写上一次查询响应中的marker值。 **取值范围**：长度为24的十六进制字符串，默认值为ffffffffffffffffffffffff。
+        **参数说明**：上一次分页查询结果中最后一条记录的ID，在上一次分页查询时由物联网平台返回获得。分页查询时物联网平台是按marker也就是记录ID降序查询的，越新的数据记录ID也会越大。若填写marker，则本次只查询记录ID小于marker的数据记录。若不填写，则从记录ID最大也就是最新的一条数据开始查询。如果需要依次查询所有数据，则每次查询时必须填写上一次查询响应中的marker值。**取值范围**：长度为24的十六进制字符串，默认值为ffffffffffffffffffffffff。
 
         :param marker: The marker of this ListOtaPackageInfoRequest.
         :type marker: str

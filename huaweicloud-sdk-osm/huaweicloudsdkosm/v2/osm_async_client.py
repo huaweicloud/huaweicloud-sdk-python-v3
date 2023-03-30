@@ -5359,6 +5359,67 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_configuration_async(self, request):
+        """查询配置
+
+        查询配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowConfiguration
+        :type request: :class:`huaweicloudsdkosm.v2.ShowConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ShowConfigurationResponse`
+        """
+        return self.show_configuration_with_http_info(request)
+
+    def show_configuration_with_http_info(self, request):
+        all_params = ['config_key']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'config_key' in local_var_params:
+            path_params['config_key'] = local_var_params['config_key']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/servicerequest/configurations/{config_key}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowConfigurationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_customer_privilege_policy_async(self, request):
         """查询提单权限
 

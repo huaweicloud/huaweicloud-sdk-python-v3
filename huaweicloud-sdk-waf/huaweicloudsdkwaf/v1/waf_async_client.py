@@ -4537,6 +4537,71 @@ class WafAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_antitamper_rule_async(self, request):
+        """查询防篡改防护规则
+
+        查询防篡改防护规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAntitamperRule
+        :type request: :class:`huaweicloudsdkwaf.v1.ShowAntitamperRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ShowAntitamperRuleResponse`
+        """
+        return self.show_antitamper_rule_with_http_info(request)
+
+    def show_antitamper_rule_with_http_info(self, request):
+        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/waf/policy/{policy_id}/antitamper/{rule_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowAntitamperRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_cc_rule_async(self, request):
         """根据Id查询cc防护规则
 
@@ -5421,6 +5486,71 @@ class WafAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_privacy_rule_async(self, request):
+        """查询隐私屏蔽防护规则
+
+        删除隐私屏蔽防护规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowPrivacyRule
+        :type request: :class:`huaweicloudsdkwaf.v1.ShowPrivacyRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ShowPrivacyRuleResponse`
+        """
+        return self.show_privacy_rule_with_http_info(request)
+
+    def show_privacy_rule_with_http_info(self, request):
+        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/waf/policy/{policy_id}/privacy/{rule_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowPrivacyRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_punishment_rule_async(self, request):
         """根据Id查询攻击惩罚防护规则
 
@@ -5599,6 +5729,134 @@ class WafAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowSubscriptionInfoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_value_list_async(self, request):
+        """查询引用表
+
+        查询引用表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowValueList
+        :type request: :class:`huaweicloudsdkwaf.v1.ShowValueListRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ShowValueListResponse`
+        """
+        return self.show_value_list_with_http_info(request)
+
+    def show_value_list_with_http_info(self, request):
+        all_params = ['valuelistid', 'enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'valuelistid' in local_var_params:
+            path_params['valuelistid'] = local_var_params['valuelistid']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/waf/valuelist/{valuelistid}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowValueListResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_white_black_ip_rule_async(self, request):
+        """查询黑白名单防护规则
+
+        查询黑白名单防护规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowWhiteBlackIpRule
+        :type request: :class:`huaweicloudsdkwaf.v1.ShowWhiteBlackIpRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ShowWhiteBlackIpRuleResponse`
+        """
+        return self.show_white_black_ip_rule_with_http_info(request)
+
+    def show_white_black_ip_rule_with_http_info(self, request):
+        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/waf/policy/{policy_id}/whiteblackip/{rule_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowWhiteBlackIpRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

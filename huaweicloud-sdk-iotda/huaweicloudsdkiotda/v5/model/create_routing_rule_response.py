@@ -60,9 +60,9 @@ class CreateRoutingRuleResponse(SdkResponse):
         :type app_type: str
         :param app_id: 资源空间ID
         :type app_id: str
-        :param select: 用户自定义sql select语句，最大长度500，该参数仅供标准版和企业版用户使用。
+        :param select: 用户自定义sql select语句，最大长度2500，该参数仅供标准版和企业版用户使用。
         :type select: str
-        :param where: 用户自定义sql where语句，最大长度500，该参数仅供标准版和企业版用户使用。
+        :param where: 用户自定义sql where语句，最大长度2500，该参数仅供标准版和企业版用户使用。
         :type where: str
         :param active: 规则条件的状态是否为激活。
         :type active: bool
@@ -232,7 +232,7 @@ class CreateRoutingRuleResponse(SdkResponse):
     def select(self):
         """Gets the select of this CreateRoutingRuleResponse.
 
-        用户自定义sql select语句，最大长度500，该参数仅供标准版和企业版用户使用。
+        用户自定义sql select语句，最大长度2500，该参数仅供标准版和企业版用户使用。
 
         :return: The select of this CreateRoutingRuleResponse.
         :rtype: str
@@ -243,7 +243,7 @@ class CreateRoutingRuleResponse(SdkResponse):
     def select(self, select):
         """Sets the select of this CreateRoutingRuleResponse.
 
-        用户自定义sql select语句，最大长度500，该参数仅供标准版和企业版用户使用。
+        用户自定义sql select语句，最大长度2500，该参数仅供标准版和企业版用户使用。
 
         :param select: The select of this CreateRoutingRuleResponse.
         :type select: str
@@ -254,7 +254,7 @@ class CreateRoutingRuleResponse(SdkResponse):
     def where(self):
         """Gets the where of this CreateRoutingRuleResponse.
 
-        用户自定义sql where语句，最大长度500，该参数仅供标准版和企业版用户使用。
+        用户自定义sql where语句，最大长度2500，该参数仅供标准版和企业版用户使用。
 
         :return: The where of this CreateRoutingRuleResponse.
         :rtype: str
@@ -265,7 +265,7 @@ class CreateRoutingRuleResponse(SdkResponse):
     def where(self, where):
         """Sets the where of this CreateRoutingRuleResponse.
 
-        用户自定义sql where语句，最大长度500，该参数仅供标准版和企业版用户使用。
+        用户自定义sql where语句，最大长度2500，该参数仅供标准版和企业版用户使用。
 
         :param where: The where of this CreateRoutingRuleResponse.
         :type where: str

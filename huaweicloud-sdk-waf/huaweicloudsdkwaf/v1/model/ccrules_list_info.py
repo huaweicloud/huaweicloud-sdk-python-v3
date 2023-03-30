@@ -20,6 +20,7 @@ class CcrulesListInfo:
     sensitive_list = []
 
     openapi_types = {
+        'name': 'str',
         'id': 'str',
         'policyid': 'str',
         'url': 'str',
@@ -46,6 +47,7 @@ class CcrulesListInfo:
     }
 
     attribute_map = {
+        'name': 'name',
         'id': 'id',
         'policyid': 'policyid',
         'url': 'url',
@@ -71,11 +73,13 @@ class CcrulesListInfo:
         'timestamp': 'timestamp'
     }
 
-    def __init__(self, id=None, policyid=None, url=None, prefix=None, mode=None, status=None, conditions=None, action=None, tag_type=None, tag_index=None, tag_condition=None, limit_num=None, limit_period=None, unlock_num=None, lock_time=None, domain_aggregation=None, region_aggregation=None, description=None, total_num=None, unaggregation=None, aging_time=None, producer=None, timestamp=None):
+    def __init__(self, name=None, id=None, policyid=None, url=None, prefix=None, mode=None, status=None, conditions=None, action=None, tag_type=None, tag_index=None, tag_condition=None, limit_num=None, limit_period=None, unlock_num=None, lock_time=None, domain_aggregation=None, region_aggregation=None, description=None, total_num=None, unaggregation=None, aging_time=None, producer=None, timestamp=None):
         """CcrulesListInfo
 
         The model defined in huaweicloud sdk
 
+        :param name: 规则名称
+        :type name: str
         :param id: Rule ID.
         :type id: str
         :param policyid: Policy ID.
@@ -126,6 +130,7 @@ class CcrulesListInfo:
         
         
 
+        self._name = None
         self._id = None
         self._policyid = None
         self._url = None
@@ -151,6 +156,8 @@ class CcrulesListInfo:
         self._timestamp = None
         self.discriminator = None
 
+        if name is not None:
+            self.name = name
         if id is not None:
             self.id = id
         if policyid is not None:
@@ -197,6 +204,28 @@ class CcrulesListInfo:
             self.producer = producer
         if timestamp is not None:
             self.timestamp = timestamp
+
+    @property
+    def name(self):
+        """Gets the name of this CcrulesListInfo.
+
+        规则名称
+
+        :return: The name of this CcrulesListInfo.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this CcrulesListInfo.
+
+        规则名称
+
+        :param name: The name of this CcrulesListInfo.
+        :type name: str
+        """
+        self._name = name
 
     @property
     def id(self):

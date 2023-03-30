@@ -76,7 +76,7 @@ class IgnoreRuleBody:
         :type conditions: list[:class:`huaweicloudsdkwaf.v1.Condition`]
         :param domain: 防护域名或防护网站
         :type domain: list[str]
-        :param advanced: 高级配置项
+        :param advanced: 高级配置项。**当前该参数类型错误，请用户忽略该参数**；正确类型可先参考更新接口，后续将改正。
         :type advanced: list[:class:`huaweicloudsdkwaf.v1.Advanced`]
         """
         
@@ -367,7 +367,7 @@ class IgnoreRuleBody:
     def advanced(self):
         """Gets the advanced of this IgnoreRuleBody.
 
-        高级配置项
+        高级配置项。**当前该参数类型错误，请用户忽略该参数**；正确类型可先参考更新接口，后续将改正。
 
         :return: The advanced of this IgnoreRuleBody.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.Advanced`]
@@ -378,7 +378,7 @@ class IgnoreRuleBody:
     def advanced(self, advanced):
         """Sets the advanced of this IgnoreRuleBody.
 
-        高级配置项
+        高级配置项。**当前该参数类型错误，请用户忽略该参数**；正确类型可先参考更新接口，后续将改正。
 
         :param advanced: The advanced of this IgnoreRuleBody.
         :type advanced: list[:class:`huaweicloudsdkwaf.v1.Advanced`]

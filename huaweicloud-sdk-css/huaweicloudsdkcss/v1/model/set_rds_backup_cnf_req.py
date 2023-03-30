@@ -20,6 +20,7 @@ class SetRDSBackupCnfReq:
     sensitive_list = []
 
     openapi_types = {
+        'indices': 'str',
         'prefix': 'str',
         'period': 'str',
         'keepday': 'int',
@@ -28,6 +29,7 @@ class SetRDSBackupCnfReq:
     }
 
     attribute_map = {
+        'indices': 'indices',
         'prefix': 'prefix',
         'period': 'period',
         'keepday': 'keepday',
@@ -35,11 +37,13 @@ class SetRDSBackupCnfReq:
         'delete_auto': 'deleteAuto'
     }
 
-    def __init__(self, prefix=None, period=None, keepday=None, enable=None, delete_auto=None):
+    def __init__(self, indices=None, prefix=None, period=None, keepday=None, enable=None, delete_auto=None):
         """SetRDSBackupCnfReq
 
         The model defined in huaweicloud sdk
 
+        :param indices: 需要备份的索引名。*代表所有索引。
+        :type indices: str
         :param prefix: 自动创建快照的名称前缀，需要用户自己手动输入。只能包含1~32位小写字母、数字、中划线或者下划线，并且以小写字母开头。
         :type prefix: str
         :param period: 每天创建快照的时刻，只支持整点，后面需加上时区，格式为“HH:mm z”，“HH:mm”表示整点时间，“z”表示时区。比如“00:00 GMT+08:00”、“01:00 GMT+08:00”等。
@@ -54,6 +58,7 @@ class SetRDSBackupCnfReq:
         
         
 
+        self._indices = None
         self._prefix = None
         self._period = None
         self._keepday = None
@@ -61,12 +66,36 @@ class SetRDSBackupCnfReq:
         self._delete_auto = None
         self.discriminator = None
 
+        if indices is not None:
+            self.indices = indices
         self.prefix = prefix
         self.period = period
         self.keepday = keepday
         self.enable = enable
         if delete_auto is not None:
             self.delete_auto = delete_auto
+
+    @property
+    def indices(self):
+        """Gets the indices of this SetRDSBackupCnfReq.
+
+        需要备份的索引名。*代表所有索引。
+
+        :return: The indices of this SetRDSBackupCnfReq.
+        :rtype: str
+        """
+        return self._indices
+
+    @indices.setter
+    def indices(self, indices):
+        """Sets the indices of this SetRDSBackupCnfReq.
+
+        需要备份的索引名。*代表所有索引。
+
+        :param indices: The indices of this SetRDSBackupCnfReq.
+        :type indices: str
+        """
+        self._indices = indices
 
     @property
     def prefix(self):

@@ -25,8 +25,7 @@ class MoleculeConstraint:
         'bool': 'bool',
         'range': 'list[float]',
         'struct': 'StructureConstraintParams',
-        'quantiles': 'list[float]',
-        'requirement': 'object'
+        'quantiles': 'list[float]'
     }
 
     attribute_map = {
@@ -35,11 +34,10 @@ class MoleculeConstraint:
         'bool': 'bool',
         'range': 'range',
         'struct': 'struct',
-        'quantiles': 'quantiles',
-        'requirement': 'requirement'
+        'quantiles': 'quantiles'
     }
 
-    def __init__(self, name=None, type=None, bool=None, range=None, struct=None, quantiles=None, requirement=None):
+    def __init__(self, name=None, type=None, bool=None, range=None, struct=None, quantiles=None):
         """MoleculeConstraint
 
         The model defined in huaweicloud sdk
@@ -56,8 +54,6 @@ class MoleculeConstraint:
         :type struct: :class:`huaweicloudsdkeihealth.v1.StructureConstraintParams`
         :param quantiles: 属性约束类型minimize和maximize的参数
         :type quantiles: list[float]
-        :param requirement: 属性约束参数
-        :type requirement: object
         """
         
         
@@ -68,7 +64,6 @@ class MoleculeConstraint:
         self._range = None
         self._struct = None
         self._quantiles = None
-        self._requirement = None
         self.discriminator = None
 
         if name is not None:
@@ -82,8 +77,6 @@ class MoleculeConstraint:
             self.struct = struct
         if quantiles is not None:
             self.quantiles = quantiles
-        if requirement is not None:
-            self.requirement = requirement
 
     @property
     def name(self):
@@ -212,28 +205,6 @@ class MoleculeConstraint:
         :type quantiles: list[float]
         """
         self._quantiles = quantiles
-
-    @property
-    def requirement(self):
-        """Gets the requirement of this MoleculeConstraint.
-
-        属性约束参数
-
-        :return: The requirement of this MoleculeConstraint.
-        :rtype: object
-        """
-        return self._requirement
-
-    @requirement.setter
-    def requirement(self, requirement):
-        """Sets the requirement of this MoleculeConstraint.
-
-        属性约束参数
-
-        :param requirement: The requirement of this MoleculeConstraint.
-        :type requirement: object
-        """
-        self._requirement = requirement
 
     def to_dict(self):
         """Returns the model properties as a dict"""

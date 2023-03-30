@@ -7,6 +7,7 @@ from huaweicloudsdkeihealth.v1.eihealth_client import EiHealthClient
 from huaweicloudsdkeihealth.v1.eihealth_async_client import EiHealthAsyncClient
 # import models into sdk package
 from huaweicloudsdkeihealth.v1.model.action_type import ActionType
+from huaweicloudsdkeihealth.v1.model.admet_request import AdmetRequest
 from huaweicloudsdkeihealth.v1.model.app_dto import AppDto
 from huaweicloudsdkeihealth.v1.model.app_filter_dto import AppFilterDto
 from huaweicloudsdkeihealth.v1.model.app_info_dto import AppInfoDto
@@ -443,6 +444,8 @@ from huaweicloudsdkeihealth.v1.model.set_message_email_config_req import SetMess
 from huaweicloudsdkeihealth.v1.model.set_message_receive_config_req import SetMessageReceiveConfigReq
 from huaweicloudsdkeihealth.v1.model.show3d_structure_content_request import Show3dStructureContentRequest
 from huaweicloudsdkeihealth.v1.model.show3d_structure_content_response import Show3dStructureContentResponse
+from huaweicloudsdkeihealth.v1.model.show_admet_properties_request import ShowAdmetPropertiesRequest
+from huaweicloudsdkeihealth.v1.model.show_admet_properties_response import ShowAdmetPropertiesResponse
 from huaweicloudsdkeihealth.v1.model.show_app_request import ShowAppRequest
 from huaweicloudsdkeihealth.v1.model.show_app_response import ShowAppResponse
 from huaweicloudsdkeihealth.v1.model.show_asset_request import ShowAssetRequest

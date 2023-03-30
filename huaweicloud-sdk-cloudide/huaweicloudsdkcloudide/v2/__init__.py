@@ -26,6 +26,10 @@ from huaweicloudsdkcloudide.v2.model.check_result_error import CheckResultError
 from huaweicloudsdkcloudide.v2.model.code_arts_ide_online_extension_version_property import CodeArtsIDEOnlineExtensionVersionProperty
 from huaweicloudsdkcloudide.v2.model.create_acceptance_request import CreateAcceptanceRequest
 from huaweicloudsdkcloudide.v2.model.create_acceptance_response import CreateAcceptanceResponse
+from huaweicloudsdkcloudide.v2.model.create_apply_request import CreateApplyRequest
+from huaweicloudsdkcloudide.v2.model.create_apply_response import CreateApplyResponse
+from huaweicloudsdkcloudide.v2.model.create_event_request import CreateEventRequest
+from huaweicloudsdkcloudide.v2.model.create_event_response import CreateEventResponse
 from huaweicloudsdkcloudide.v2.model.create_extension_authorization_request import CreateExtensionAuthorizationRequest
 from huaweicloudsdkcloudide.v2.model.create_extension_authorization_response import CreateExtensionAuthorizationResponse
 from huaweicloudsdkcloudide.v2.model.create_instance_by3rd_request import CreateInstanceBy3rdRequest
@@ -47,6 +51,7 @@ from huaweicloudsdkcloudide.v2.model.error import Error
 from huaweicloudsdkcloudide.v2.model.evaluation import Evaluation
 from huaweicloudsdkcloudide.v2.model.evaluation_accusation import EvaluationAccusation
 from huaweicloudsdkcloudide.v2.model.evaluation_reply import EvaluationReply
+from huaweicloudsdkcloudide.v2.model.event_schema import EventSchema
 from huaweicloudsdkcloudide.v2.model.expire_vo import ExpireVo
 from huaweicloudsdkcloudide.v2.model.extension_all_snake import ExtensionAllSnake
 from huaweicloudsdkcloudide.v2.model.extension_authorization import ExtensionAuthorization
@@ -65,6 +70,7 @@ from huaweicloudsdkcloudide.v2.model.instance_status_response import InstanceSta
 from huaweicloudsdkcloudide.v2.model.instance_update_param import InstanceUpdateParam
 from huaweicloudsdkcloudide.v2.model.instances_response_instances_vo_result import InstancesResponseInstancesVOResult
 from huaweicloudsdkcloudide.v2.model.instances_vo import InstancesVO
+from huaweicloudsdkcloudide.v2.model.join_request_schema import JoinRequestSchema
 from huaweicloudsdkcloudide.v2.model.list_extensions_request import ListExtensionsRequest
 from huaweicloudsdkcloudide.v2.model.list_extensions_response import ListExtensionsResponse
 from huaweicloudsdkcloudide.v2.model.list_instances_request import ListInstancesRequest

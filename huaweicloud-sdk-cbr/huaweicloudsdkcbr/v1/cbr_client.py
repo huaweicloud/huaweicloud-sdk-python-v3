@@ -1102,7 +1102,7 @@ class CbrClient(Client):
         return self.list_backups_with_http_info(request)
 
     def list_backups_with_http_info(self, request):
-        all_params = ['checkpoint_id', 'dec', 'end_time', 'image_type', 'limit', 'marker', 'name', 'offset', 'resource_az', 'resource_id', 'resource_name', 'resource_type', 'sort', 'start_time', 'status', 'vault_id', 'enterprise_project_id', 'own_type', 'member_status', 'parent_id', 'used_percent', 'show_replication']
+        all_params = ['checkpoint_id', 'dec', 'end_time', 'image_type', 'limit', 'marker', 'name', 'offset', 'resource_az', 'resource_id', 'resource_name', 'resource_type', 'sort', 'start_time', 'status', 'vault_id', 'enterprise_project_id', 'own_type', 'member_status', 'parent_id', 'used_percent', 'show_replication', 'incremental']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1159,6 +1159,8 @@ class CbrClient(Client):
             query_params.append(('used_percent', local_var_params['used_percent']))
         if 'show_replication' in local_var_params:
             query_params.append(('show_replication', local_var_params['show_replication']))
+        if 'incremental' in local_var_params:
+            query_params.append(('incremental', local_var_params['incremental']))
 
         header_params = {}
 

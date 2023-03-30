@@ -26,7 +26,8 @@ class LeakageListInfo:
         'category': 'str',
         'contents': 'list[str]',
         'timestamp': 'int',
-        'status': 'int'
+        'status': 'int',
+        'description': 'str'
     }
 
     attribute_map = {
@@ -36,10 +37,11 @@ class LeakageListInfo:
         'category': 'category',
         'contents': 'contents',
         'timestamp': 'timestamp',
-        'status': 'status'
+        'status': 'status',
+        'description': 'description'
     }
 
-    def __init__(self, id=None, policyid=None, url=None, category=None, contents=None, timestamp=None, status=None):
+    def __init__(self, id=None, policyid=None, url=None, category=None, contents=None, timestamp=None, status=None, description=None):
         """LeakageListInfo
 
         The model defined in huaweicloud sdk
@@ -58,6 +60,8 @@ class LeakageListInfo:
         :type timestamp: int
         :param status: 规则状态，0：关闭，1：开启
         :type status: int
+        :param description: 规则描述
+        :type description: str
         """
         
         
@@ -69,6 +73,7 @@ class LeakageListInfo:
         self._contents = None
         self._timestamp = None
         self._status = None
+        self._description = None
         self.discriminator = None
 
         if id is not None:
@@ -85,6 +90,8 @@ class LeakageListInfo:
             self.timestamp = timestamp
         if status is not None:
             self.status = status
+        if description is not None:
+            self.description = description
 
     @property
     def id(self):
@@ -239,6 +246,28 @@ class LeakageListInfo:
         :type status: int
         """
         self._status = status
+
+    @property
+    def description(self):
+        """Gets the description of this LeakageListInfo.
+
+        规则描述
+
+        :return: The description of this LeakageListInfo.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this LeakageListInfo.
+
+        规则描述
+
+        :param description: The description of this LeakageListInfo.
+        :type description: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

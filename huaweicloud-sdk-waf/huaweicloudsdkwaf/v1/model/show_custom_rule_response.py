@@ -30,6 +30,7 @@ class ShowCustomRuleResponse(SdkResponse):
         'action_mode': 'bool',
         'priority': 'int',
         'timestamp': 'int',
+        'time': 'bool',
         'start': 'int',
         'terminal': 'int',
         'producer': 'int'
@@ -46,12 +47,13 @@ class ShowCustomRuleResponse(SdkResponse):
         'action_mode': 'action_mode',
         'priority': 'priority',
         'timestamp': 'timestamp',
+        'time': 'time',
         'start': 'start',
         'terminal': 'terminal',
         'producer': 'producer'
     }
 
-    def __init__(self, id=None, name=None, policyid=None, description=None, status=None, conditions=None, action=None, action_mode=None, priority=None, timestamp=None, start=None, terminal=None, producer=None):
+    def __init__(self, id=None, name=None, policyid=None, description=None, status=None, conditions=None, action=None, action_mode=None, priority=None, timestamp=None, time=None, start=None, terminal=None, producer=None):
         """ShowCustomRuleResponse
 
         The model defined in huaweicloud sdk
@@ -76,6 +78,8 @@ class ShowCustomRuleResponse(SdkResponse):
         :type priority: int
         :param timestamp: 创建精准防护规则的
         :type timestamp: int
+        :param time: 精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
+        :type time: bool
         :param start: 精准防护规则生效的起始时间戳（毫秒）。当time&#x3D;true，才会返回该参数。
         :type start: int
         :param terminal: 精准防护规则生效的终止时间戳（毫秒）。当time&#x3D;true，才会返回该参数。
@@ -96,6 +100,7 @@ class ShowCustomRuleResponse(SdkResponse):
         self._action_mode = None
         self._priority = None
         self._timestamp = None
+        self._time = None
         self._start = None
         self._terminal = None
         self._producer = None
@@ -121,6 +126,8 @@ class ShowCustomRuleResponse(SdkResponse):
             self.priority = priority
         if timestamp is not None:
             self.timestamp = timestamp
+        if time is not None:
+            self.time = time
         if start is not None:
             self.start = start
         if terminal is not None:
@@ -343,6 +350,28 @@ class ShowCustomRuleResponse(SdkResponse):
         :type timestamp: int
         """
         self._timestamp = timestamp
+
+    @property
+    def time(self):
+        """Gets the time of this ShowCustomRuleResponse.
+
+        精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
+
+        :return: The time of this ShowCustomRuleResponse.
+        :rtype: bool
+        """
+        return self._time
+
+    @time.setter
+    def time(self, time):
+        """Sets the time of this ShowCustomRuleResponse.
+
+        精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
+
+        :param time: The time of this ShowCustomRuleResponse.
+        :type time: bool
+        """
+        self._time = time
 
     @property
     def start(self):

@@ -68,7 +68,7 @@ class Billing:
         :type cloud_type: str
         :param consistent_level: 崩溃一致性（crash_consistent）或应用一致性（app_consistent）
         :type consistent_level: str
-        :param object_type: 对象类型: 云服务器（server），云硬盘（disk），云桌面（workspace）。
+        :param object_type: 对象类型：云服务器（server），云硬盘（disk），文件系统（turbo），云桌面（workspace），VMware（vmware），关系型数据库（rds），文件（file）。
         :type object_type: str
         :param order_id: 订单ID
         :type order_id: str
@@ -226,7 +226,7 @@ class Billing:
     def object_type(self):
         """Gets the object_type of this Billing.
 
-        对象类型: 云服务器（server），云硬盘（disk），云桌面（workspace）。
+        对象类型：云服务器（server），云硬盘（disk），文件系统（turbo），云桌面（workspace），VMware（vmware），关系型数据库（rds），文件（file）。
 
         :return: The object_type of this Billing.
         :rtype: str
@@ -237,7 +237,7 @@ class Billing:
     def object_type(self, object_type):
         """Sets the object_type of this Billing.
 
-        对象类型: 云服务器（server），云硬盘（disk），云桌面（workspace）。
+        对象类型：云服务器（server），云硬盘（disk），文件系统（turbo），云桌面（workspace），VMware（vmware），关系型数据库（rds），文件（file）。
 
         :param object_type: The object_type of this Billing.
         :type object_type: str

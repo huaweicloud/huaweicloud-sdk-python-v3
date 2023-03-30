@@ -23,6 +23,7 @@ class PropertyFilter:
         'path': 'str',
         'operator': 'str',
         'value': 'str',
+        'in_values': 'list[str]',
         'strategy': 'Strategy'
     }
 
@@ -30,20 +31,23 @@ class PropertyFilter:
         'path': 'path',
         'operator': 'operator',
         'value': 'value',
+        'in_values': 'in_values',
         'strategy': 'strategy'
     }
 
-    def __init__(self, path=None, operator=None, value=None, strategy=None):
+    def __init__(self, path=None, operator=None, value=None, in_values=None, strategy=None):
         """PropertyFilter
 
         The model defined in huaweicloud sdk
 
         :param path: **参数说明**：设备属性的路径信息，格式：service_id/DataProperty，例如门磁状态为“DoorWindow/status”。
         :type path: str
-        :param operator: **参数说明**：数据比较的操作符。 **取值范围**：当前支持的操作符有：&gt;，&lt;，&gt;&#x3D;，&lt;&#x3D;，&#x3D;和between:表示数值区间。
+        :param operator: **参数说明**：数据比较的操作符。 **取值范围**：当前支持的操作符有：&gt;，&lt;，&gt;&#x3D;，&lt;&#x3D;，&#x3D;,in:表示在指定值中匹配和between:表示数值区间。
         :type operator: str
         :param value: **参数说明**：数据比较表达式的右值。与数据比较操作符between联用时，右值表示最小值和最大值，用逗号隔开，如“20,30”表示大于等于20小于30。
         :type value: str
+        :param in_values: **参数说明**：当operator为in时该字段必填，使用该字段传递比较表达式右值，上限为20个。
+        :type in_values: list[str]
         :param strategy: 
         :type strategy: :class:`huaweicloudsdkiotda.v5.Strategy`
         """
@@ -53,12 +57,16 @@ class PropertyFilter:
         self._path = None
         self._operator = None
         self._value = None
+        self._in_values = None
         self._strategy = None
         self.discriminator = None
 
         self.path = path
         self.operator = operator
-        self.value = value
+        if value is not None:
+            self.value = value
+        if in_values is not None:
+            self.in_values = in_values
         if strategy is not None:
             self.strategy = strategy
 
@@ -88,7 +96,7 @@ class PropertyFilter:
     def operator(self):
         """Gets the operator of this PropertyFilter.
 
-        **参数说明**：数据比较的操作符。 **取值范围**：当前支持的操作符有：>，<，>=，<=，=和between:表示数值区间。
+        **参数说明**：数据比较的操作符。 **取值范围**：当前支持的操作符有：>，<，>=，<=，=,in:表示在指定值中匹配和between:表示数值区间。
 
         :return: The operator of this PropertyFilter.
         :rtype: str
@@ -99,7 +107,7 @@ class PropertyFilter:
     def operator(self, operator):
         """Sets the operator of this PropertyFilter.
 
-        **参数说明**：数据比较的操作符。 **取值范围**：当前支持的操作符有：>，<，>=，<=，=和between:表示数值区间。
+        **参数说明**：数据比较的操作符。 **取值范围**：当前支持的操作符有：>，<，>=，<=，=,in:表示在指定值中匹配和between:表示数值区间。
 
         :param operator: The operator of this PropertyFilter.
         :type operator: str
@@ -127,6 +135,28 @@ class PropertyFilter:
         :type value: str
         """
         self._value = value
+
+    @property
+    def in_values(self):
+        """Gets the in_values of this PropertyFilter.
+
+        **参数说明**：当operator为in时该字段必填，使用该字段传递比较表达式右值，上限为20个。
+
+        :return: The in_values of this PropertyFilter.
+        :rtype: list[str]
+        """
+        return self._in_values
+
+    @in_values.setter
+    def in_values(self, in_values):
+        """Sets the in_values of this PropertyFilter.
+
+        **参数说明**：当operator为in时该字段必填，使用该字段传递比较表达式右值，上限为20个。
+
+        :param in_values: The in_values of this PropertyFilter.
+        :type in_values: list[str]
+        """
+        self._in_values = in_values
 
     @property
     def strategy(self):
