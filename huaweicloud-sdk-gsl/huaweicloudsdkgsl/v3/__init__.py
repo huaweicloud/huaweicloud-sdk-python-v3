@@ -21,6 +21,7 @@ from huaweicloudsdkgsl.v3.model.cm_attribute_vo import CmAttributeVO
 from huaweicloudsdkgsl.v3.model.cm_tag_vo import CmTagVO
 from huaweicloudsdkgsl.v3.model.create_attribute_request import CreateAttributeRequest
 from huaweicloudsdkgsl.v3.model.create_attribute_response import CreateAttributeResponse
+from huaweicloudsdkgsl.v3.model.create_send_sms_req import CreateSendSmsReq
 from huaweicloudsdkgsl.v3.model.create_tag_request import CreateTagRequest
 from huaweicloudsdkgsl.v3.model.create_tag_response import CreateTagResponse
 from huaweicloudsdkgsl.v3.model.cut_net_req import CutNetReq
@@ -56,6 +57,8 @@ from huaweicloudsdkgsl.v3.model.list_sim_pools_request import ListSimPoolsReques
 from huaweicloudsdkgsl.v3.model.list_sim_pools_response import ListSimPoolsResponse
 from huaweicloudsdkgsl.v3.model.list_sim_price_plans_request import ListSimPricePlansRequest
 from huaweicloudsdkgsl.v3.model.list_sim_price_plans_response import ListSimPricePlansResponse
+from huaweicloudsdkgsl.v3.model.list_sms_details_request import ListSmsDetailsRequest
+from huaweicloudsdkgsl.v3.model.list_sms_details_response import ListSmsDetailsResponse
 from huaweicloudsdkgsl.v3.model.list_tags_request import ListTagsRequest
 from huaweicloudsdkgsl.v3.model.list_tags_response import ListTagsResponse
 from huaweicloudsdkgsl.v3.model.month_usage_vo import MonthUsageVo
@@ -66,6 +69,8 @@ from huaweicloudsdkgsl.v3.model.register_imei_request import RegisterImeiRequest
 from huaweicloudsdkgsl.v3.model.register_imei_response import RegisterImeiResponse
 from huaweicloudsdkgsl.v3.model.reset_sim_card_request import ResetSimCardRequest
 from huaweicloudsdkgsl.v3.model.reset_sim_card_response import ResetSimCardResponse
+from huaweicloudsdkgsl.v3.model.send_sms_request import SendSmsRequest
+from huaweicloudsdkgsl.v3.model.send_sms_response import SendSmsResponse
 from huaweicloudsdkgsl.v3.model.set_exceed_cut_net_request import SetExceedCutNetRequest
 from huaweicloudsdkgsl.v3.model.set_exceed_cut_net_response import SetExceedCutNetResponse
 from huaweicloudsdkgsl.v3.model.set_speed_value_req import SetSpeedValueReq
@@ -82,6 +87,7 @@ from huaweicloudsdkgsl.v3.model.sim_cards_flow_vo import SimCardsFlowVO
 from huaweicloudsdkgsl.v3.model.sim_device_vo import SimDeviceVO
 from huaweicloudsdkgsl.v3.model.sim_pool_vo import SimPoolVO
 from huaweicloudsdkgsl.v3.model.sim_price_plan_vo import SimPricePlanVO
+from huaweicloudsdkgsl.v3.model.sms_send_detail_query_vo import SmsSendDetailQueryVo
 from huaweicloudsdkgsl.v3.model.start_stop_net_request import StartStopNetRequest
 from huaweicloudsdkgsl.v3.model.start_stop_net_response import StartStopNetResponse
 from huaweicloudsdkgsl.v3.model.stop_sim_card_request import StopSimCardRequest

@@ -21,15 +21,19 @@ class RespAddr:
 
     openapi_types = {
         'addr': 'str',
-        'version': 'str'
+        'version': 'int',
+        'os_ext_ip_stype': 'str',
+        'os_ext_ips_ma_cmac_addr': 'str'
     }
 
     attribute_map = {
         'addr': 'addr',
-        'version': 'version'
+        'version': 'version',
+        'os_ext_ip_stype': 'OS-EXT-IPS:type',
+        'os_ext_ips_ma_cmac_addr': 'OS-EXT-IPS-MAC:mac_addr'
     }
 
-    def __init__(self, addr=None, version=None):
+    def __init__(self, addr=None, version=None, os_ext_ip_stype=None, os_ext_ips_ma_cmac_addr=None):
         """RespAddr
 
         The model defined in huaweicloud sdk
@@ -37,17 +41,27 @@ class RespAddr:
         :param addr: 云服务器的vpc ip。
         :type addr: str
         :param version: 云服务器的vpc版本。
-        :type version: str
+        :type version: int
+        :param os_ext_ip_stype: 扩展属性，分配IP地址方式。
+        :type os_ext_ip_stype: str
+        :param os_ext_ips_ma_cmac_addr: 扩展属性，MAC地址。
+        :type os_ext_ips_ma_cmac_addr: str
         """
         
         
 
         self._addr = None
         self._version = None
+        self._os_ext_ip_stype = None
+        self._os_ext_ips_ma_cmac_addr = None
         self.discriminator = None
 
         self.addr = addr
         self.version = version
+        if os_ext_ip_stype is not None:
+            self.os_ext_ip_stype = os_ext_ip_stype
+        if os_ext_ips_ma_cmac_addr is not None:
+            self.os_ext_ips_ma_cmac_addr = os_ext_ips_ma_cmac_addr
 
     @property
     def addr(self):
@@ -78,7 +92,7 @@ class RespAddr:
         云服务器的vpc版本。
 
         :return: The version of this RespAddr.
-        :rtype: str
+        :rtype: int
         """
         return self._version
 
@@ -89,9 +103,53 @@ class RespAddr:
         云服务器的vpc版本。
 
         :param version: The version of this RespAddr.
-        :type version: str
+        :type version: int
         """
         self._version = version
+
+    @property
+    def os_ext_ip_stype(self):
+        """Gets the os_ext_ip_stype of this RespAddr.
+
+        扩展属性，分配IP地址方式。
+
+        :return: The os_ext_ip_stype of this RespAddr.
+        :rtype: str
+        """
+        return self._os_ext_ip_stype
+
+    @os_ext_ip_stype.setter
+    def os_ext_ip_stype(self, os_ext_ip_stype):
+        """Sets the os_ext_ip_stype of this RespAddr.
+
+        扩展属性，分配IP地址方式。
+
+        :param os_ext_ip_stype: The os_ext_ip_stype of this RespAddr.
+        :type os_ext_ip_stype: str
+        """
+        self._os_ext_ip_stype = os_ext_ip_stype
+
+    @property
+    def os_ext_ips_ma_cmac_addr(self):
+        """Gets the os_ext_ips_ma_cmac_addr of this RespAddr.
+
+        扩展属性，MAC地址。
+
+        :return: The os_ext_ips_ma_cmac_addr of this RespAddr.
+        :rtype: str
+        """
+        return self._os_ext_ips_ma_cmac_addr
+
+    @os_ext_ips_ma_cmac_addr.setter
+    def os_ext_ips_ma_cmac_addr(self, os_ext_ips_ma_cmac_addr):
+        """Sets the os_ext_ips_ma_cmac_addr of this RespAddr.
+
+        扩展属性，MAC地址。
+
+        :param os_ext_ips_ma_cmac_addr: The os_ext_ips_ma_cmac_addr of this RespAddr.
+        :type os_ext_ips_ma_cmac_addr: str
+        """
+        self._os_ext_ips_ma_cmac_addr = os_ext_ips_ma_cmac_addr
 
     def to_dict(self):
         """Returns the model properties as a dict"""

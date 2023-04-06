@@ -20,7 +20,7 @@ class RespServer:
     sensitive_list = []
 
     openapi_types = {
-        'addresses': 'RespAddresses',
+        'addresses': 'dict(str, list[RespAddr])',
         'created': 'str',
         'flavor': 'RespFlavor',
         'id': 'str',
@@ -54,8 +54,8 @@ class RespServer:
 
         The model defined in huaweicloud sdk
 
-        :param addresses: 
-        :type addresses: :class:`huaweicloudsdkdeh.v1.RespAddresses`
+        :param addresses: 弹性云服务器的网络属性。
+        :type addresses: dict(str, list[RespAddr])
         :param created: 弹性云服务器创建时间。
         :type created: str
         :param flavor: 
@@ -113,8 +113,10 @@ class RespServer:
     def addresses(self):
         """Gets the addresses of this RespServer.
 
+        弹性云服务器的网络属性。
+
         :return: The addresses of this RespServer.
-        :rtype: :class:`huaweicloudsdkdeh.v1.RespAddresses`
+        :rtype: dict(str, list[RespAddr])
         """
         return self._addresses
 
@@ -122,8 +124,10 @@ class RespServer:
     def addresses(self, addresses):
         """Sets the addresses of this RespServer.
 
+        弹性云服务器的网络属性。
+
         :param addresses: The addresses of this RespServer.
-        :type addresses: :class:`huaweicloudsdkdeh.v1.RespAddresses`
+        :type addresses: dict(str, list[RespAddr])
         """
         self._addresses = addresses
 

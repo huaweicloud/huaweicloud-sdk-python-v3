@@ -22,16 +22,18 @@ class ExportCertificateRequestBody:
     openapi_types = {
         'is_compressed': 'str',
         'type': 'str',
-        'is_sm_standard': 'str'
+        'is_sm_standard': 'str',
+        'password': 'str'
     }
 
     attribute_map = {
         'is_compressed': 'is_compressed',
         'type': 'type',
-        'is_sm_standard': 'is_sm_standard'
+        'is_sm_standard': 'is_sm_standard',
+        'password': 'password'
     }
 
-    def __init__(self, is_compressed=None, type=None, is_sm_standard=None):
+    def __init__(self, is_compressed=None, type=None, is_sm_standard=None, password=None):
         """ExportCertificateRequestBody
 
         The model defined in huaweicloud sdk
@@ -42,6 +44,8 @@ class ExportCertificateRequestBody:
         :type type: str
         :param is_sm_standard: 是否国密GMT0009标准规范。当证书算法为SM2时传入才有效，若不传入，则默认为false。   - **true**   - **false**
         :type is_sm_standard: str
+        :param password: 设置用于加密私钥的密码。支持使用英文大小写字母、数字、特殊字符（例如,.+-_#）等。最大长度为32字节，若不传入，则默认不使用加密导出。
+        :type password: str
         """
         
         
@@ -49,12 +53,15 @@ class ExportCertificateRequestBody:
         self._is_compressed = None
         self._type = None
         self._is_sm_standard = None
+        self._password = None
         self.discriminator = None
 
         self.is_compressed = is_compressed
         self.type = type
         if is_sm_standard is not None:
             self.is_sm_standard = is_sm_standard
+        if password is not None:
+            self.password = password
 
     @property
     def is_compressed(self):
@@ -121,6 +128,28 @@ class ExportCertificateRequestBody:
         :type is_sm_standard: str
         """
         self._is_sm_standard = is_sm_standard
+
+    @property
+    def password(self):
+        """Gets the password of this ExportCertificateRequestBody.
+
+        设置用于加密私钥的密码。支持使用英文大小写字母、数字、特殊字符（例如,.+-_#）等。最大长度为32字节，若不传入，则默认不使用加密导出。
+
+        :return: The password of this ExportCertificateRequestBody.
+        :rtype: str
+        """
+        return self._password
+
+    @password.setter
+    def password(self, password):
+        """Sets the password of this ExportCertificateRequestBody.
+
+        设置用于加密私钥的密码。支持使用英文大小写字母、数字、特殊字符（例如,.+-_#）等。最大长度为32字节，若不传入，则默认不使用加密导出。
+
+        :param password: The password of this ExportCertificateRequestBody.
+        :type password: str
+        """
+        self._password = password
 
     def to_dict(self):
         """Returns the model properties as a dict"""

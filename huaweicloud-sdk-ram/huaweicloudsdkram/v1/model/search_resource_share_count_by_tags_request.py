@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ImageVariationTaskConfigCommon:
+class SearchResourceShareCountByTagsRequest:
 
     """
     Attributes:
@@ -20,46 +20,47 @@ class ImageVariationTaskConfigCommon:
     sensitive_list = []
 
     openapi_types = {
-        'inference': 'ImageVariationInference'
+        'body': 'ResourceSharesByTagsReqBody'
     }
 
     attribute_map = {
-        'inference': 'inference'
+        'body': 'body'
     }
 
-    def __init__(self, inference=None):
-        """ImageVariationTaskConfigCommon
+    def __init__(self, body=None):
+        """SearchResourceShareCountByTagsRequest
 
         The model defined in huaweicloud sdk
 
-        :param inference: 
-        :type inference: :class:`huaweicloudsdkimage.v2.ImageVariationInference`
+        :param body: Body of the SearchResourceShareCountByTagsRequest
+        :type body: :class:`huaweicloudsdkram.v1.ResourceSharesByTagsReqBody`
         """
         
         
 
-        self._inference = None
+        self._body = None
         self.discriminator = None
 
-        self.inference = inference
+        if body is not None:
+            self.body = body
 
     @property
-    def inference(self):
-        """Gets the inference of this ImageVariationTaskConfigCommon.
+    def body(self):
+        """Gets the body of this SearchResourceShareCountByTagsRequest.
 
-        :return: The inference of this ImageVariationTaskConfigCommon.
-        :rtype: :class:`huaweicloudsdkimage.v2.ImageVariationInference`
+        :return: The body of this SearchResourceShareCountByTagsRequest.
+        :rtype: :class:`huaweicloudsdkram.v1.ResourceSharesByTagsReqBody`
         """
-        return self._inference
+        return self._body
 
-    @inference.setter
-    def inference(self, inference):
-        """Sets the inference of this ImageVariationTaskConfigCommon.
+    @body.setter
+    def body(self, body):
+        """Sets the body of this SearchResourceShareCountByTagsRequest.
 
-        :param inference: The inference of this ImageVariationTaskConfigCommon.
-        :type inference: :class:`huaweicloudsdkimage.v2.ImageVariationInference`
+        :param body: The body of this SearchResourceShareCountByTagsRequest.
+        :type body: :class:`huaweicloudsdkram.v1.ResourceSharesByTagsReqBody`
         """
-        self._inference = inference
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -103,7 +104,7 @@ class ImageVariationTaskConfigCommon:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ImageVariationTaskConfigCommon):
+        if not isinstance(other, SearchResourceShareCountByTagsRequest):
             return False
 
         return self.__dict__ == other.__dict__

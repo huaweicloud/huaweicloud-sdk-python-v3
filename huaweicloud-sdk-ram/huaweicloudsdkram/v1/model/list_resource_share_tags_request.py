@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ImageVariationTaskConfig:
+class ListResourceShareTagsRequest:
 
     """
     Attributes:
@@ -20,46 +20,80 @@ class ImageVariationTaskConfig:
     sensitive_list = []
 
     openapi_types = {
-        'common': 'ImageVariationTaskConfigCommon'
+        'limit': 'int',
+        'marker': 'str'
     }
 
     attribute_map = {
-        'common': 'common'
+        'limit': 'limit',
+        'marker': 'marker'
     }
 
-    def __init__(self, common=None):
-        """ImageVariationTaskConfig
+    def __init__(self, limit=None, marker=None):
+        """ListResourceShareTagsRequest
 
         The model defined in huaweicloud sdk
 
-        :param common: 
-        :type common: :class:`huaweicloudsdkimage.v2.ImageVariationTaskConfigCommon`
+        :param limit: 分页页面的最大值。
+        :type limit: int
+        :param marker: 页面标记。
+        :type marker: str
         """
         
         
 
-        self._common = None
+        self._limit = None
+        self._marker = None
         self.discriminator = None
 
-        self.common = common
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
 
     @property
-    def common(self):
-        """Gets the common of this ImageVariationTaskConfig.
+    def limit(self):
+        """Gets the limit of this ListResourceShareTagsRequest.
 
-        :return: The common of this ImageVariationTaskConfig.
-        :rtype: :class:`huaweicloudsdkimage.v2.ImageVariationTaskConfigCommon`
+        分页页面的最大值。
+
+        :return: The limit of this ListResourceShareTagsRequest.
+        :rtype: int
         """
-        return self._common
+        return self._limit
 
-    @common.setter
-    def common(self, common):
-        """Sets the common of this ImageVariationTaskConfig.
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListResourceShareTagsRequest.
 
-        :param common: The common of this ImageVariationTaskConfig.
-        :type common: :class:`huaweicloudsdkimage.v2.ImageVariationTaskConfigCommon`
+        分页页面的最大值。
+
+        :param limit: The limit of this ListResourceShareTagsRequest.
+        :type limit: int
         """
-        self._common = common
+        self._limit = limit
+
+    @property
+    def marker(self):
+        """Gets the marker of this ListResourceShareTagsRequest.
+
+        页面标记。
+
+        :return: The marker of this ListResourceShareTagsRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListResourceShareTagsRequest.
+
+        页面标记。
+
+        :param marker: The marker of this ListResourceShareTagsRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -103,7 +137,7 @@ class ImageVariationTaskConfig:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ImageVariationTaskConfig):
+        if not isinstance(other, ListResourceShareTagsRequest):
             return False
 
         return self.__dict__ == other.__dict__

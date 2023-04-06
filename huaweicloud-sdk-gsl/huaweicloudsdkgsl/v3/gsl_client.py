@@ -1039,7 +1039,7 @@ class GslClient(Client):
     def set_speed_value(self, request):
         """实体卡限速
 
-        实体卡限速接口,支持电信和联通实体卡调用。
+        实体卡限速接口,支持电信和联通实体卡调用。联通卡需要个人实名认证后才能使用限速功能。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1905,6 +1905,134 @@ class GslClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_sms_details(self, request):
+        """短信发送详情
+
+        短信发送详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSmsDetails
+        :type request: :class:`huaweicloudsdkgsl.v3.ListSmsDetailsRequest`
+        :rtype: :class:`huaweicloudsdkgsl.v3.ListSmsDetailsResponse`
+        """
+        return self.list_sms_details_with_http_info(request)
+
+    def list_sms_details_with_http_info(self, request):
+        all_params = ['limit', 'offset', 'cid', 'start_time', 'end_time']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'cid' in local_var_params:
+            query_params.append(('cid', local_var_params['cid']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/sms-send-infos/details',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListSmsDetailsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def send_sms(self, request):
+        """发送短信
+
+        发送短信
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SendSms
+        :type request: :class:`huaweicloudsdkgsl.v3.SendSmsRequest`
+        :rtype: :class:`huaweicloudsdkgsl.v3.SendSmsResponse`
+        """
+        return self.send_sms_with_http_info(request)
+
+    def send_sms_with_http_info(self, request):
+        all_params = ['send_sms_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/sms-send-infos',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SendSmsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class RespAddresses:
+class RunJobFlowRequest:
 
     """
     Attributes:
@@ -20,50 +20,47 @@ class RespAddresses:
     sensitive_list = []
 
     openapi_types = {
-        'vpc_id': 'list[RespAddr]'
+        'body': 'RunJobFlowCommand'
     }
 
     attribute_map = {
-        'vpc_id': 'vpc_id'
+        'body': 'body'
     }
 
-    def __init__(self, vpc_id=None):
-        """RespAddresses
+    def __init__(self, body=None):
+        """RunJobFlowRequest
 
         The model defined in huaweicloud sdk
 
-        :param vpc_id: 云服务器的vpc信息。
-        :type vpc_id: list[:class:`huaweicloudsdkdeh.v1.RespAddr`]
+        :param body: Body of the RunJobFlowRequest
+        :type body: :class:`huaweicloudsdkmrs.v2.RunJobFlowCommand`
         """
         
         
 
-        self._vpc_id = None
+        self._body = None
         self.discriminator = None
 
-        self.vpc_id = vpc_id
+        if body is not None:
+            self.body = body
 
     @property
-    def vpc_id(self):
-        """Gets the vpc_id of this RespAddresses.
+    def body(self):
+        """Gets the body of this RunJobFlowRequest.
 
-        云服务器的vpc信息。
-
-        :return: The vpc_id of this RespAddresses.
-        :rtype: list[:class:`huaweicloudsdkdeh.v1.RespAddr`]
+        :return: The body of this RunJobFlowRequest.
+        :rtype: :class:`huaweicloudsdkmrs.v2.RunJobFlowCommand`
         """
-        return self._vpc_id
+        return self._body
 
-    @vpc_id.setter
-    def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this RespAddresses.
+    @body.setter
+    def body(self, body):
+        """Sets the body of this RunJobFlowRequest.
 
-        云服务器的vpc信息。
-
-        :param vpc_id: The vpc_id of this RespAddresses.
-        :type vpc_id: list[:class:`huaweicloudsdkdeh.v1.RespAddr`]
+        :param body: The body of this RunJobFlowRequest.
+        :type body: :class:`huaweicloudsdkmrs.v2.RunJobFlowCommand`
         """
-        self._vpc_id = vpc_id
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -107,7 +104,7 @@ class RespAddresses:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RespAddresses):
+        if not isinstance(other, RunJobFlowRequest):
             return False
 
         return self.__dict__ == other.__dict__

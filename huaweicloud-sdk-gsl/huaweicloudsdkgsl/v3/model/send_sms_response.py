@@ -4,11 +4,11 @@ import re
 import six
 
 
-
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class TextToImageTaskConfig:
+class SendSmsResponse(SdkResponse):
 
     """
     Attributes:
@@ -20,46 +20,47 @@ class TextToImageTaskConfig:
     sensitive_list = []
 
     openapi_types = {
-        'common': 'TextToImageTaskConfigCommon'
+        'body': 'str'
     }
 
     attribute_map = {
-        'common': 'common'
+        'body': 'body'
     }
 
-    def __init__(self, common=None):
-        """TextToImageTaskConfig
+    def __init__(self, body=None):
+        """SendSmsResponse
 
         The model defined in huaweicloud sdk
 
-        :param common: 
-        :type common: :class:`huaweicloudsdkimage.v2.TextToImageTaskConfigCommon`
+        :param body: 
+        :type body: str
         """
         
-        
+        super(SendSmsResponse, self).__init__()
 
-        self._common = None
+        self._body = None
         self.discriminator = None
 
-        self.common = common
+        if body is not None:
+            self.body = body
 
     @property
-    def common(self):
-        """Gets the common of this TextToImageTaskConfig.
+    def body(self):
+        """Gets the body of this SendSmsResponse.
 
-        :return: The common of this TextToImageTaskConfig.
-        :rtype: :class:`huaweicloudsdkimage.v2.TextToImageTaskConfigCommon`
+        :return: The body of this SendSmsResponse.
+        :rtype: str
         """
-        return self._common
+        return self._body
 
-    @common.setter
-    def common(self, common):
-        """Sets the common of this TextToImageTaskConfig.
+    @body.setter
+    def body(self, body):
+        """Sets the body of this SendSmsResponse.
 
-        :param common: The common of this TextToImageTaskConfig.
-        :type common: :class:`huaweicloudsdkimage.v2.TextToImageTaskConfigCommon`
+        :param body: The body of this SendSmsResponse.
+        :type body: str
         """
-        self._common = common
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -103,7 +104,7 @@ class TextToImageTaskConfig:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, TextToImageTaskConfig):
+        if not isinstance(other, SendSmsResponse):
             return False
 
         return self.__dict__ == other.__dict__

@@ -15,6 +15,8 @@ from huaweicloudsdkmrs.v2.model.cancel_sql_request import CancelSqlRequest
 from huaweicloudsdkmrs.v2.model.cancel_sql_response import CancelSqlResponse
 from huaweicloudsdkmrs.v2.model.charge_info import ChargeInfo
 from huaweicloudsdkmrs.v2.model.cluster_data_connector_map import ClusterDataConnectorMap
+from huaweicloudsdkmrs.v2.model.component_config import ComponentConfig
+from huaweicloudsdkmrs.v2.model.config import Config
 from huaweicloudsdkmrs.v2.model.create_cluster_req_v2 import CreateClusterReqV2
 from huaweicloudsdkmrs.v2.model.create_cluster_request import CreateClusterRequest
 from huaweicloudsdkmrs.v2.model.create_cluster_response import CreateClusterResponse
@@ -30,6 +32,9 @@ from huaweicloudsdkmrs.v2.model.job_submit_result import JobSubmitResult
 from huaweicloudsdkmrs.v2.model.node_group_v2 import NodeGroupV2
 from huaweicloudsdkmrs.v2.model.resources_plan import ResourcesPlan
 from huaweicloudsdkmrs.v2.model.rule import Rule
+from huaweicloudsdkmrs.v2.model.run_job_flow_command import RunJobFlowCommand
+from huaweicloudsdkmrs.v2.model.run_job_flow_request import RunJobFlowRequest
+from huaweicloudsdkmrs.v2.model.run_job_flow_response import RunJobFlowResponse
 from huaweicloudsdkmrs.v2.model.scale_script import ScaleScript
 from huaweicloudsdkmrs.v2.model.show_agency_mapping_request import ShowAgencyMappingRequest
 from huaweicloudsdkmrs.v2.model.show_agency_mapping_response import ShowAgencyMappingResponse
@@ -46,6 +51,7 @@ from huaweicloudsdkmrs.v2.model.show_sql_result_response import ShowSqlResultRes
 from huaweicloudsdkmrs.v2.model.show_sql_result_with_job_request import ShowSqlResultWithJobRequest
 from huaweicloudsdkmrs.v2.model.show_sql_result_with_job_response import ShowSqlResultWithJobResponse
 from huaweicloudsdkmrs.v2.model.sql_execution_req import SqlExecutionReq
+from huaweicloudsdkmrs.v2.model.step_config import StepConfig
 from huaweicloudsdkmrs.v2.model.stop_job_request import StopJobRequest
 from huaweicloudsdkmrs.v2.model.stop_job_response import StopJobResponse
 from huaweicloudsdkmrs.v2.model.tag import Tag

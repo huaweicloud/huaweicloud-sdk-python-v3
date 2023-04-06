@@ -26,7 +26,8 @@ class FinancialStatementRequestBody:
         'return_confidence': 'bool',
         'return_excel': 'bool',
         'return_table_location': 'bool',
-        'return_image_size': 'bool'
+        'return_image_size': 'bool',
+        'return_rectification_matrix': 'bool'
     }
 
     attribute_map = {
@@ -36,10 +37,11 @@ class FinancialStatementRequestBody:
         'return_confidence': 'return_confidence',
         'return_excel': 'return_excel',
         'return_table_location': 'return_table_location',
-        'return_image_size': 'return_image_size'
+        'return_image_size': 'return_image_size',
+        'return_rectification_matrix': 'return_rectification_matrix'
     }
 
-    def __init__(self, image=None, url=None, return_text_location=None, return_confidence=None, return_excel=None, return_table_location=None, return_image_size=None):
+    def __init__(self, image=None, url=None, return_text_location=None, return_confidence=None, return_excel=None, return_table_location=None, return_image_size=None, return_rectification_matrix=None):
         """FinancialStatementRequestBody
 
         The model defined in huaweicloud sdk
@@ -58,6 +60,8 @@ class FinancialStatementRequestBody:
         :type return_table_location: bool
         :param return_image_size: 返回矫正后的图像大小，可选值包括： - true：返回矫正图像大小; - false：不返回。  &gt; 说明： - 未传入该参数时默认为false，即不返回。 
         :type return_image_size: bool
+        :param return_rectification_matrix: 透视变换矩阵，可选值包括： - true：返回透视变换矩阵; - false：不返回。  &gt; 说明： - 未传入该参数时默认为false，即不返回透视变换矩阵。 
+        :type return_rectification_matrix: bool
         """
         
         
@@ -69,6 +73,7 @@ class FinancialStatementRequestBody:
         self._return_excel = None
         self._return_table_location = None
         self._return_image_size = None
+        self._return_rectification_matrix = None
         self.discriminator = None
 
         if image is not None:
@@ -85,6 +90,8 @@ class FinancialStatementRequestBody:
             self.return_table_location = return_table_location
         if return_image_size is not None:
             self.return_image_size = return_image_size
+        if return_rectification_matrix is not None:
+            self.return_rectification_matrix = return_rectification_matrix
 
     @property
     def image(self):
@@ -239,6 +246,28 @@ class FinancialStatementRequestBody:
         :type return_image_size: bool
         """
         self._return_image_size = return_image_size
+
+    @property
+    def return_rectification_matrix(self):
+        """Gets the return_rectification_matrix of this FinancialStatementRequestBody.
+
+        透视变换矩阵，可选值包括： - true：返回透视变换矩阵; - false：不返回。  > 说明： - 未传入该参数时默认为false，即不返回透视变换矩阵。 
+
+        :return: The return_rectification_matrix of this FinancialStatementRequestBody.
+        :rtype: bool
+        """
+        return self._return_rectification_matrix
+
+    @return_rectification_matrix.setter
+    def return_rectification_matrix(self, return_rectification_matrix):
+        """Sets the return_rectification_matrix of this FinancialStatementRequestBody.
+
+        透视变换矩阵，可选值包括： - true：返回透视变换矩阵; - false：不返回。  > 说明： - 未传入该参数时默认为false，即不返回透视变换矩阵。 
+
+        :param return_rectification_matrix: The return_rectification_matrix of this FinancialStatementRequestBody.
+        :type return_rectification_matrix: bool
+        """
+        self._return_rectification_matrix = return_rectification_matrix
 
     def to_dict(self):
         """Returns the model properties as a dict"""

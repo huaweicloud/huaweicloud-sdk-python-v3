@@ -21,21 +21,25 @@ class RefreshTaskRequestBody:
 
     openapi_types = {
         'type': 'str',
+        'mode': 'bool',
         'urls': 'list[str]'
     }
 
     attribute_map = {
         'type': 'type',
+        'mode': 'mode',
         'urls': 'urls'
     }
 
-    def __init__(self, type=None, urls=None):
+    def __init__(self, type=None, mode=None, urls=None):
         """RefreshTaskRequestBody
 
         The model defined in huaweicloud sdk
 
         :param type: 刷新的类型，其值可以为file 或directory，默认为file
         :type type: str
+        :param mode: 目录刷新只刷新变更资源标识，其值为true 或false，默认为false
+        :type mode: bool
         :param urls: 输入URL必须带有“http://”或“https://”，多个URL用逗号分隔，单个url的长度限制为4096字符，单次最多输入1000个url。
         :type urls: list[str]
         """
@@ -43,11 +47,14 @@ class RefreshTaskRequestBody:
         
 
         self._type = None
+        self._mode = None
         self._urls = None
         self.discriminator = None
 
         if type is not None:
             self.type = type
+        if mode is not None:
+            self.mode = mode
         self.urls = urls
 
     @property
@@ -71,6 +78,28 @@ class RefreshTaskRequestBody:
         :type type: str
         """
         self._type = type
+
+    @property
+    def mode(self):
+        """Gets the mode of this RefreshTaskRequestBody.
+
+        目录刷新只刷新变更资源标识，其值为true 或false，默认为false
+
+        :return: The mode of this RefreshTaskRequestBody.
+        :rtype: bool
+        """
+        return self._mode
+
+    @mode.setter
+    def mode(self, mode):
+        """Sets the mode of this RefreshTaskRequestBody.
+
+        目录刷新只刷新变更资源标识，其值为true 或false，默认为false
+
+        :param mode: The mode of this RefreshTaskRequestBody.
+        :type mode: bool
+        """
+        self._mode = mode
 
     @property
     def urls(self):

@@ -30,7 +30,6 @@ from huaweicloudsdkdeh.v1.model.req_update_deh import ReqUpdateDeh
 from huaweicloudsdkdeh.v1.model.req_update_deh_message import ReqUpdateDehMessage
 from huaweicloudsdkdeh.v1.model.resource_tag import ResourceTag
 from huaweicloudsdkdeh.v1.model.resp_addr import RespAddr
-from huaweicloudsdkdeh.v1.model.resp_addresses import RespAddresses
 from huaweicloudsdkdeh.v1.model.resp_dedicated_host import RespDedicatedHost
 from huaweicloudsdkdeh.v1.model.resp_deh import RespDeh
 from huaweicloudsdkdeh.v1.model.resp_flavor import RespFlavor

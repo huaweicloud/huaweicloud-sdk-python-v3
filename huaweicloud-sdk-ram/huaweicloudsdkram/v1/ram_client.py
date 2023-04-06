@@ -1500,6 +1500,192 @@ class RamClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_resource_share_tags(self, request):
+        """查询已经使用的标签列表
+
+        查询的标签相信列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListResourceShareTags
+        :type request: :class:`huaweicloudsdkram.v1.ListResourceShareTagsRequest`
+        :rtype: :class:`huaweicloudsdkram.v1.ListResourceShareTagsResponse`
+        """
+        return self.list_resource_share_tags_with_http_info(request)
+
+    def list_resource_share_tags_with_http_info(self, request):
+        all_params = ['limit', 'marker']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-shares/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListResourceShareTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_resource_shares_by_tags(self, request):
+        """根据标签信息查询实例列表
+
+        根据标签信息查询实例列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListResourceSharesByTags
+        :type request: :class:`huaweicloudsdkram.v1.ListResourceSharesByTagsRequest`
+        :rtype: :class:`huaweicloudsdkram.v1.ListResourceSharesByTagsResponse`
+        """
+        return self.list_resource_shares_by_tags_with_http_info(request)
+
+    def list_resource_shares_by_tags_with_http_info(self, request):
+        all_params = ['resource_shares_by_tags_req_body', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-shares/resource-instances/filter',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListResourceSharesByTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def search_resource_share_count_by_tags(self, request):
+        """根据标签信息查询实例数量
+
+        根据标签信息查询实例数量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SearchResourceShareCountByTags
+        :type request: :class:`huaweicloudsdkram.v1.SearchResourceShareCountByTagsRequest`
+        :rtype: :class:`huaweicloudsdkram.v1.SearchResourceShareCountByTagsResponse`
+        """
+        return self.search_resource_share_count_by_tags_with_http_info(request)
+
+    def search_resource_share_count_by_tags_with_http_info(self, request):
+        all_params = ['resource_shares_by_tags_req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-shares/resource-instances/count',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SearchResourceShareCountByTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):

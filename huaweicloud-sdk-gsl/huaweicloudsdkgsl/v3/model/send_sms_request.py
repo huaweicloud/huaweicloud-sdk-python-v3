@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ShowTextToImageTaskRequest:
+class SendSmsRequest:
 
     """
     Attributes:
@@ -20,50 +20,47 @@ class ShowTextToImageTaskRequest:
     sensitive_list = []
 
     openapi_types = {
-        'task_id': 'str'
+        'body': 'CreateSendSmsReq'
     }
 
     attribute_map = {
-        'task_id': 'task_id'
+        'body': 'body'
     }
 
-    def __init__(self, task_id=None):
-        """ShowTextToImageTaskRequest
+    def __init__(self, body=None):
+        """SendSmsRequest
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 任务ID
-        :type task_id: str
+        :param body: Body of the SendSmsRequest
+        :type body: :class:`huaweicloudsdkgsl.v3.CreateSendSmsReq`
         """
         
         
 
-        self._task_id = None
+        self._body = None
         self.discriminator = None
 
-        self.task_id = task_id
+        if body is not None:
+            self.body = body
 
     @property
-    def task_id(self):
-        """Gets the task_id of this ShowTextToImageTaskRequest.
+    def body(self):
+        """Gets the body of this SendSmsRequest.
 
-        任务ID
-
-        :return: The task_id of this ShowTextToImageTaskRequest.
-        :rtype: str
+        :return: The body of this SendSmsRequest.
+        :rtype: :class:`huaweicloudsdkgsl.v3.CreateSendSmsReq`
         """
-        return self._task_id
+        return self._body
 
-    @task_id.setter
-    def task_id(self, task_id):
-        """Sets the task_id of this ShowTextToImageTaskRequest.
+    @body.setter
+    def body(self, body):
+        """Sets the body of this SendSmsRequest.
 
-        任务ID
-
-        :param task_id: The task_id of this ShowTextToImageTaskRequest.
-        :type task_id: str
+        :param body: The body of this SendSmsRequest.
+        :type body: :class:`huaweicloudsdkgsl.v3.CreateSendSmsReq`
         """
-        self._task_id = task_id
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -107,7 +104,7 @@ class ShowTextToImageTaskRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ShowTextToImageTaskRequest):
+        if not isinstance(other, SendSmsRequest):
             return False
 
         return self.__dict__ == other.__dict__

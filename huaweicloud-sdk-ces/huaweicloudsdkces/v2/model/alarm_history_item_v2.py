@@ -25,7 +25,7 @@ class AlarmHistoryItemV2:
         'name': 'str',
         'status': 'str',
         'level': 'int',
-        'type': 'str',
+        'type': 'AlarmType',
         'action_enabled': 'bool',
         'begin_time': 'datetime',
         'end_time': 'datetime',
@@ -70,8 +70,8 @@ class AlarmHistoryItemV2:
         :type status: str
         :param level: 告警记录的告警级别，值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。
         :type level: int
-        :param type: 告警类型； 仅针对事件告警的参数，枚举类型：值为EVENT.SYS或者EVENT.CUSTOM
-        :type type: str
+        :param type: 
+        :type type: :class:`huaweicloudsdkces.v2.AlarmType`
         :param action_enabled: 是否发送通知，值为true或者false。
         :type action_enabled: bool
         :param begin_time: 产生时间,UTC时间
@@ -256,10 +256,8 @@ class AlarmHistoryItemV2:
     def type(self):
         """Gets the type of this AlarmHistoryItemV2.
 
-        告警类型； 仅针对事件告警的参数，枚举类型：值为EVENT.SYS或者EVENT.CUSTOM
-
         :return: The type of this AlarmHistoryItemV2.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkces.v2.AlarmType`
         """
         return self._type
 
@@ -267,10 +265,8 @@ class AlarmHistoryItemV2:
     def type(self, type):
         """Sets the type of this AlarmHistoryItemV2.
 
-        告警类型； 仅针对事件告警的参数，枚举类型：值为EVENT.SYS或者EVENT.CUSTOM
-
         :param type: The type of this AlarmHistoryItemV2.
-        :type type: str
+        :type type: :class:`huaweicloudsdkces.v2.AlarmType`
         """
         self._type = type
 

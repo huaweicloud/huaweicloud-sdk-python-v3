@@ -26,7 +26,7 @@ class PostAlarmsReqV2:
         'resource_group_id': 'str',
         'resources': 'list[list[Dimension]]',
         'policies': 'list[Policy]',
-        'type': 'str',
+        'type': 'AlarmType',
         'alarm_notifications': 'list[Notification]',
         'ok_notifications': 'list[Notification]',
         'notification_begin_time': 'str',
@@ -72,8 +72,8 @@ class PostAlarmsReqV2:
         :type resources: list[list[Dimension]]
         :param policies: 告警策略
         :type policies: list[:class:`huaweicloudsdkces.v2.Policy`]
-        :param type: 告警规则类型
-        :type type: str
+        :param type: 
+        :type type: :class:`huaweicloudsdkces.v2.AlarmType`
         :param alarm_notifications: 告警触发的动作
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
         :param ok_notifications: 告警恢复触发的动作
@@ -271,10 +271,8 @@ class PostAlarmsReqV2:
     def type(self):
         """Gets the type of this PostAlarmsReqV2.
 
-        告警规则类型
-
         :return: The type of this PostAlarmsReqV2.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkces.v2.AlarmType`
         """
         return self._type
 
@@ -282,10 +280,8 @@ class PostAlarmsReqV2:
     def type(self, type):
         """Sets the type of this PostAlarmsReqV2.
 
-        告警规则类型
-
         :param type: The type of this PostAlarmsReqV2.
-        :type type: str
+        :type type: :class:`huaweicloudsdkces.v2.AlarmType`
         """
         self._type = type
 

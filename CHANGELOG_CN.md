@@ -1,3 +1,108 @@
+# 3.1.35 2023-04-06
+
+### HuaweiCloud SDK CCM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ExportCertificate**
+    - 请求参数变更
+      - `+ password`
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateRefreshTasks**
+    - 请求参数变更
+      - `+ refresh_task.mode`
+
+### HuaweiCloud SDK CES
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAlarmHistories**
+    - 响应参数变更
+      - `+ alarm_histories.type: enum value [DNSHealthCheck,RESOURCE_GROUP,MULTI_INSTANCE,ALL_INSTANCE]`
+  - **ListAlarmRules**
+    - 响应参数变更
+      - `+ alarms.type: enum value [EVENT.SYS,EVENT.CUSTOM,DNSHealthCheck,RESOURCE_GROUP,MULTI_INSTANCE,ALL_INSTANCE]`
+  - **CreateAlarmRules**
+    - 请求参数变更
+      - `+ type: enum value [EVENT.SYS,EVENT.CUSTOM,DNSHealthCheck,RESOURCE_GROUP,MULTI_INSTANCE,ALL_INSTANCE]`
+
+### HuaweiCloud SDK DeH
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListServersDedicatedHost**
+    - 响应参数变更
+      - `- servers.addresses.vpc_id`
+      - `* servers.addresses: object<RespAddresses> -> map<string, list<RespAddr>>`
+
+### HuaweiCloud SDK GSL
+
+- _新增特性_
+  - 支持接口`SendSms`、`ListSmsDetails`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Image
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`CreateTextToImageTask`、`ShowTextToImageTask`、`CreateImageVariationTask`、`ShowImageVariationTask`
+
+### HuaweiCloud SDK MRS
+
+- _新增特性_
+  - 支持接口`RunJobFlow`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateCluster**
+    - 请求参数变更
+      - `+ log_uri`
+      - `+ component_configs`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeFinancialStatement**
+    - 请求参数变更
+      - `+ return_rectification_matrix`
+    - 响应参数变更
+      - `+ result.rectification_matrix`
+
+### HuaweiCloud SDK RAM
+
+- _新增特性_
+  - 支持接口`ListResourceShareTags`、`ListResourceSharesByTags`、`SearchResourceShareCountByTags`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.34 2023-03-30
 
 ### HuaweiCloud SDK BSS

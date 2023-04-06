@@ -4,11 +4,11 @@ import re
 import six
 
 
-
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreateImageVariationTaskRequest:
+class SearchResourceShareCountByTagsResponse(SdkResponse):
 
     """
     Attributes:
@@ -20,47 +20,51 @@ class CreateImageVariationTaskRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateImageVariationTaskRequestBody'
+        'total_count': 'int'
     }
 
     attribute_map = {
-        'body': 'body'
+        'total_count': 'total_count'
     }
 
-    def __init__(self, body=None):
-        """CreateImageVariationTaskRequest
+    def __init__(self, total_count=None):
+        """SearchResourceShareCountByTagsResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: Body of the CreateImageVariationTaskRequest
-        :type body: :class:`huaweicloudsdkimage.v2.CreateImageVariationTaskRequestBody`
+        :param total_count: 总记录数。
+        :type total_count: int
         """
         
-        
+        super(SearchResourceShareCountByTagsResponse, self).__init__()
 
-        self._body = None
+        self._total_count = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if total_count is not None:
+            self.total_count = total_count
 
     @property
-    def body(self):
-        """Gets the body of this CreateImageVariationTaskRequest.
+    def total_count(self):
+        """Gets the total_count of this SearchResourceShareCountByTagsResponse.
 
-        :return: The body of this CreateImageVariationTaskRequest.
-        :rtype: :class:`huaweicloudsdkimage.v2.CreateImageVariationTaskRequestBody`
+        总记录数。
+
+        :return: The total_count of this SearchResourceShareCountByTagsResponse.
+        :rtype: int
         """
-        return self._body
+        return self._total_count
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this CreateImageVariationTaskRequest.
+    @total_count.setter
+    def total_count(self, total_count):
+        """Sets the total_count of this SearchResourceShareCountByTagsResponse.
 
-        :param body: The body of this CreateImageVariationTaskRequest.
-        :type body: :class:`huaweicloudsdkimage.v2.CreateImageVariationTaskRequestBody`
+        总记录数。
+
+        :param total_count: The total_count of this SearchResourceShareCountByTagsResponse.
+        :type total_count: int
         """
-        self._body = body
+        self._total_count = total_count
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -104,7 +108,7 @@ class CreateImageVariationTaskRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateImageVariationTaskRequest):
+        if not isinstance(other, SearchResourceShareCountByTagsResponse):
             return False
 
         return self.__dict__ == other.__dict__

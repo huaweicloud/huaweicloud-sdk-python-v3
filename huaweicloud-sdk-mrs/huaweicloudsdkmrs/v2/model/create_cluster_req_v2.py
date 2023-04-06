@@ -48,7 +48,9 @@ class CreateClusterReqV2:
         'log_collection': 'int',
         'node_groups': 'list[NodeGroupV2]',
         'bootstrap_scripts': 'list[BootstrapScript]',
-        'add_jobs': 'list[AddJobsReqV11]'
+        'add_jobs': 'list[AddJobsReqV11]',
+        'log_uri': 'str',
+        'component_configs': 'list[ComponentConfig]'
     }
 
     attribute_map = {
@@ -80,10 +82,12 @@ class CreateClusterReqV2:
         'log_collection': 'log_collection',
         'node_groups': 'node_groups',
         'bootstrap_scripts': 'bootstrap_scripts',
-        'add_jobs': 'add_jobs'
+        'add_jobs': 'add_jobs',
+        'log_uri': 'log_uri',
+        'component_configs': 'component_configs'
     }
 
-    def __init__(self, is_dec_project=None, cluster_version=None, cluster_name=None, cluster_type=None, charge_info=None, region=None, vpc_name=None, subnet_id=None, subnet_name=None, components=None, external_datasources=None, availability_zone=None, security_groups_id=None, auto_create_default_security_group=None, safe_mode=None, manager_admin_password=None, login_mode=None, node_root_password=None, node_keypair_name=None, enterprise_project_id=None, eip_address=None, eip_id=None, mrs_ecs_default_agency=None, template_id=None, tags=None, log_collection=None, node_groups=None, bootstrap_scripts=None, add_jobs=None):
+    def __init__(self, is_dec_project=None, cluster_version=None, cluster_name=None, cluster_type=None, charge_info=None, region=None, vpc_name=None, subnet_id=None, subnet_name=None, components=None, external_datasources=None, availability_zone=None, security_groups_id=None, auto_create_default_security_group=None, safe_mode=None, manager_admin_password=None, login_mode=None, node_root_password=None, node_keypair_name=None, enterprise_project_id=None, eip_address=None, eip_id=None, mrs_ecs_default_agency=None, template_id=None, tags=None, log_collection=None, node_groups=None, bootstrap_scripts=None, add_jobs=None, log_uri=None, component_configs=None):
         """CreateClusterReqV2
 
         The model defined in huaweicloud sdk
@@ -144,8 +148,12 @@ class CreateClusterReqV2:
         :type node_groups: list[:class:`huaweicloudsdkmrs.v2.NodeGroupV2`]
         :param bootstrap_scripts: 配置引导操作脚本信息。
         :type bootstrap_scripts: list[:class:`huaweicloudsdkmrs.v2.BootstrapScript`]
-        :param add_jobs: 创建集群时可同时提交作业，当前版本暂时只支持新增一个作业。
+        :param add_jobs: 创建集群时可同时提交作业，当前仅MRS1.8.7之前版本支持，暂时只支持新增一个作业。建议使用创建集群并提交作业接口RunJobFlow的steps参数
         :type add_jobs: list[:class:`huaweicloudsdkmrs.v2.AddJobsReqV11`]
+        :param log_uri: 集群日志转储至OBS的具体路径。 开启日志转储功能后，日志上传需要对应OBS路径的读写权限， 请配置MRS_ECS_DEFULT_AGENCY默认委托或具有对应OBS路径读写权限的自定义委托。 具体请参见[配置存算分离集群（委托方式）](https://support.huaweicloud.com/usermanual-mrs/mrs_01_0768.html)。 该参数只适用于支持“集群日志转储OBS”特性的集群版本。
+        :type log_uri: str
+        :param component_configs: 集群组件自定义配置。 该参数只适用于支持“自定义组件配置创建集群”特性的集群版本。
+        :type component_configs: list[:class:`huaweicloudsdkmrs.v2.ComponentConfig`]
         """
         
         
@@ -179,6 +187,8 @@ class CreateClusterReqV2:
         self._node_groups = None
         self._bootstrap_scripts = None
         self._add_jobs = None
+        self._log_uri = None
+        self._component_configs = None
         self.discriminator = None
 
         if is_dec_project is not None:
@@ -227,6 +237,10 @@ class CreateClusterReqV2:
             self.bootstrap_scripts = bootstrap_scripts
         if add_jobs is not None:
             self.add_jobs = add_jobs
+        if log_uri is not None:
+            self.log_uri = log_uri
+        if component_configs is not None:
+            self.component_configs = component_configs
 
     @property
     def is_dec_project(self):
@@ -844,7 +858,7 @@ class CreateClusterReqV2:
     def add_jobs(self):
         """Gets the add_jobs of this CreateClusterReqV2.
 
-        创建集群时可同时提交作业，当前版本暂时只支持新增一个作业。
+        创建集群时可同时提交作业，当前仅MRS1.8.7之前版本支持，暂时只支持新增一个作业。建议使用创建集群并提交作业接口RunJobFlow的steps参数
 
         :return: The add_jobs of this CreateClusterReqV2.
         :rtype: list[:class:`huaweicloudsdkmrs.v2.AddJobsReqV11`]
@@ -855,12 +869,56 @@ class CreateClusterReqV2:
     def add_jobs(self, add_jobs):
         """Sets the add_jobs of this CreateClusterReqV2.
 
-        创建集群时可同时提交作业，当前版本暂时只支持新增一个作业。
+        创建集群时可同时提交作业，当前仅MRS1.8.7之前版本支持，暂时只支持新增一个作业。建议使用创建集群并提交作业接口RunJobFlow的steps参数
 
         :param add_jobs: The add_jobs of this CreateClusterReqV2.
         :type add_jobs: list[:class:`huaweicloudsdkmrs.v2.AddJobsReqV11`]
         """
         self._add_jobs = add_jobs
+
+    @property
+    def log_uri(self):
+        """Gets the log_uri of this CreateClusterReqV2.
+
+        集群日志转储至OBS的具体路径。 开启日志转储功能后，日志上传需要对应OBS路径的读写权限， 请配置MRS_ECS_DEFULT_AGENCY默认委托或具有对应OBS路径读写权限的自定义委托。 具体请参见[配置存算分离集群（委托方式）](https://support.huaweicloud.com/usermanual-mrs/mrs_01_0768.html)。 该参数只适用于支持“集群日志转储OBS”特性的集群版本。
+
+        :return: The log_uri of this CreateClusterReqV2.
+        :rtype: str
+        """
+        return self._log_uri
+
+    @log_uri.setter
+    def log_uri(self, log_uri):
+        """Sets the log_uri of this CreateClusterReqV2.
+
+        集群日志转储至OBS的具体路径。 开启日志转储功能后，日志上传需要对应OBS路径的读写权限， 请配置MRS_ECS_DEFULT_AGENCY默认委托或具有对应OBS路径读写权限的自定义委托。 具体请参见[配置存算分离集群（委托方式）](https://support.huaweicloud.com/usermanual-mrs/mrs_01_0768.html)。 该参数只适用于支持“集群日志转储OBS”特性的集群版本。
+
+        :param log_uri: The log_uri of this CreateClusterReqV2.
+        :type log_uri: str
+        """
+        self._log_uri = log_uri
+
+    @property
+    def component_configs(self):
+        """Gets the component_configs of this CreateClusterReqV2.
+
+        集群组件自定义配置。 该参数只适用于支持“自定义组件配置创建集群”特性的集群版本。
+
+        :return: The component_configs of this CreateClusterReqV2.
+        :rtype: list[:class:`huaweicloudsdkmrs.v2.ComponentConfig`]
+        """
+        return self._component_configs
+
+    @component_configs.setter
+    def component_configs(self, component_configs):
+        """Sets the component_configs of this CreateClusterReqV2.
+
+        集群组件自定义配置。 该参数只适用于支持“自定义组件配置创建集群”特性的集群版本。
+
+        :param component_configs: The component_configs of this CreateClusterReqV2.
+        :type component_configs: list[:class:`huaweicloudsdkmrs.v2.ComponentConfig`]
+        """
+        self._component_configs = component_configs
 
     def to_dict(self):
         """Returns the model properties as a dict"""

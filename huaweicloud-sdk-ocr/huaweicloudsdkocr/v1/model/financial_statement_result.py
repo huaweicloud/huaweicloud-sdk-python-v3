@@ -23,17 +23,19 @@ class FinancialStatementResult:
         'words_region_count': 'int',
         'words_region_list': 'list[FinancialStatementWordsRegionList]',
         'excel': 'str',
-        'image_size': 'FinancialStatementResultImageSize'
+        'image_size': 'FinancialStatementResultImageSize',
+        'rectification_matrix': 'list[list[float]]'
     }
 
     attribute_map = {
         'words_region_count': 'words_region_count',
         'words_region_list': 'words_region_list',
         'excel': 'excel',
-        'image_size': 'image_size'
+        'image_size': 'image_size',
+        'rectification_matrix': 'rectification_matrix'
     }
 
-    def __init__(self, words_region_count=None, words_region_list=None, excel=None, image_size=None):
+    def __init__(self, words_region_count=None, words_region_list=None, excel=None, image_size=None, rectification_matrix=None):
         """FinancialStatementResult
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class FinancialStatementResult:
         :type excel: str
         :param image_size: 
         :type image_size: :class:`huaweicloudsdkocr.v1.FinancialStatementResultImageSize`
+        :param rectification_matrix: 返回透视变换矩阵 
+        :type rectification_matrix: list[list[float]]
         """
         
         
@@ -54,6 +58,7 @@ class FinancialStatementResult:
         self._words_region_list = None
         self._excel = None
         self._image_size = None
+        self._rectification_matrix = None
         self.discriminator = None
 
         self.words_region_count = words_region_count
@@ -62,6 +67,8 @@ class FinancialStatementResult:
             self.excel = excel
         if image_size is not None:
             self.image_size = image_size
+        if rectification_matrix is not None:
+            self.rectification_matrix = rectification_matrix
 
     @property
     def words_region_count(self):
@@ -146,6 +153,28 @@ class FinancialStatementResult:
         :type image_size: :class:`huaweicloudsdkocr.v1.FinancialStatementResultImageSize`
         """
         self._image_size = image_size
+
+    @property
+    def rectification_matrix(self):
+        """Gets the rectification_matrix of this FinancialStatementResult.
+
+        返回透视变换矩阵 
+
+        :return: The rectification_matrix of this FinancialStatementResult.
+        :rtype: list[list[float]]
+        """
+        return self._rectification_matrix
+
+    @rectification_matrix.setter
+    def rectification_matrix(self, rectification_matrix):
+        """Sets the rectification_matrix of this FinancialStatementResult.
+
+        返回透视变换矩阵 
+
+        :param rectification_matrix: The rectification_matrix of this FinancialStatementResult.
+        :type rectification_matrix: list[list[float]]
+        """
+        self._rectification_matrix = rectification_matrix
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -26,7 +26,7 @@ class ListAlarmResponseAlarms:
         'namespace': 'str',
         'policies': 'list[Policy]',
         'resources': 'list[ResourcesInListResp]',
-        'type': 'str',
+        'type': 'AlarmType',
         'enabled': 'bool',
         'notification_enabled': 'bool',
         'alarm_notifications': 'list[Notification]',
@@ -72,8 +72,8 @@ class ListAlarmResponseAlarms:
         :type policies: list[:class:`huaweicloudsdkces.v2.Policy`]
         :param resources: 资源列表，关联资源需要使用查询告警规则资源接口获取
         :type resources: list[:class:`huaweicloudsdkces.v2.ResourcesInListResp`]
-        :param type: 告警规则类型
-        :type type: str
+        :param type: 
+        :type type: :class:`huaweicloudsdkces.v2.AlarmType`
         :param enabled: 告警开关
         :type enabled: bool
         :param notification_enabled: 是否开启告警通知
@@ -278,10 +278,8 @@ class ListAlarmResponseAlarms:
     def type(self):
         """Gets the type of this ListAlarmResponseAlarms.
 
-        告警规则类型
-
         :return: The type of this ListAlarmResponseAlarms.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkces.v2.AlarmType`
         """
         return self._type
 
@@ -289,10 +287,8 @@ class ListAlarmResponseAlarms:
     def type(self, type):
         """Sets the type of this ListAlarmResponseAlarms.
 
-        告警规则类型
-
         :param type: The type of this ListAlarmResponseAlarms.
-        :type type: str
+        :type type: :class:`huaweicloudsdkces.v2.AlarmType`
         """
         self._type = type
 

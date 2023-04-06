@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreateTextToImageTaskRequest:
+class ListResourceSharesByTagsRequest:
 
     """
     Attributes:
@@ -20,45 +20,103 @@ class CreateTextToImageTaskRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateTextToImageTaskRequestBody'
+        'limit': 'int',
+        'offset': 'str',
+        'body': 'ResourceSharesByTagsReqBody'
     }
 
     attribute_map = {
+        'limit': 'limit',
+        'offset': 'offset',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
-        """CreateTextToImageTaskRequest
+    def __init__(self, limit=None, offset=None, body=None):
+        """ListResourceSharesByTagsRequest
 
         The model defined in huaweicloud sdk
 
-        :param body: Body of the CreateTextToImageTaskRequest
-        :type body: :class:`huaweicloudsdkimage.v2.CreateTextToImageTaskRequestBody`
+        :param limit: 分页页面的最大值。
+        :type limit: int
+        :param offset: 分页标记。
+        :type offset: str
+        :param body: Body of the ListResourceSharesByTagsRequest
+        :type body: :class:`huaweicloudsdkram.v1.ResourceSharesByTagsReqBody`
         """
         
         
 
+        self._limit = None
+        self._offset = None
         self._body = None
         self.discriminator = None
 
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
         if body is not None:
             self.body = body
 
     @property
-    def body(self):
-        """Gets the body of this CreateTextToImageTaskRequest.
+    def limit(self):
+        """Gets the limit of this ListResourceSharesByTagsRequest.
 
-        :return: The body of this CreateTextToImageTaskRequest.
-        :rtype: :class:`huaweicloudsdkimage.v2.CreateTextToImageTaskRequestBody`
+        分页页面的最大值。
+
+        :return: The limit of this ListResourceSharesByTagsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListResourceSharesByTagsRequest.
+
+        分页页面的最大值。
+
+        :param limit: The limit of this ListResourceSharesByTagsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListResourceSharesByTagsRequest.
+
+        分页标记。
+
+        :return: The offset of this ListResourceSharesByTagsRequest.
+        :rtype: str
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListResourceSharesByTagsRequest.
+
+        分页标记。
+
+        :param offset: The offset of this ListResourceSharesByTagsRequest.
+        :type offset: str
+        """
+        self._offset = offset
+
+    @property
+    def body(self):
+        """Gets the body of this ListResourceSharesByTagsRequest.
+
+        :return: The body of this ListResourceSharesByTagsRequest.
+        :rtype: :class:`huaweicloudsdkram.v1.ResourceSharesByTagsReqBody`
         """
         return self._body
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTextToImageTaskRequest.
+        """Sets the body of this ListResourceSharesByTagsRequest.
 
-        :param body: The body of this CreateTextToImageTaskRequest.
-        :type body: :class:`huaweicloudsdkimage.v2.CreateTextToImageTaskRequestBody`
+        :param body: The body of this ListResourceSharesByTagsRequest.
+        :type body: :class:`huaweicloudsdkram.v1.ResourceSharesByTagsReqBody`
         """
         self._body = body
 
@@ -104,7 +162,7 @@ class CreateTextToImageTaskRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateTextToImageTaskRequest):
+        if not isinstance(other, ListResourceSharesByTagsRequest):
             return False
 
         return self.__dict__ == other.__dict__

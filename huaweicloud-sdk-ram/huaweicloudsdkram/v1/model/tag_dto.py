@@ -4,11 +4,11 @@ import re
 import six
 
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
+
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreateImageVariationTaskResponse(SdkResponse):
+class TagDTO:
 
     """
     Attributes:
@@ -20,51 +20,78 @@ class CreateImageVariationTaskResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'task_id': 'str'
+        'key': 'str',
+        'values': 'list[str]'
     }
 
     attribute_map = {
-        'task_id': 'task_id'
+        'key': 'key',
+        'values': 'values'
     }
 
-    def __init__(self, task_id=None):
-        """CreateImageVariationTaskResponse
+    def __init__(self, key=None, values=None):
+        """TagDTO
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 任务唯一标识
-        :type task_id: str
+        :param key: 标签\&quot;键\&quot;的标识符或名称。您可以将标签的值设置为空字符串，但不能设置为null。
+        :type key: str
+        :param values: 值列表。每个值最大长度255个unicode字符。
+        :type values: list[str]
         """
         
-        super(CreateImageVariationTaskResponse, self).__init__()
+        
 
-        self._task_id = None
+        self._key = None
+        self._values = None
         self.discriminator = None
 
-        if task_id is not None:
-            self.task_id = task_id
+        self.key = key
+        self.values = values
 
     @property
-    def task_id(self):
-        """Gets the task_id of this CreateImageVariationTaskResponse.
+    def key(self):
+        """Gets the key of this TagDTO.
 
-        任务唯一标识
+        标签\"键\"的标识符或名称。您可以将标签的值设置为空字符串，但不能设置为null。
 
-        :return: The task_id of this CreateImageVariationTaskResponse.
+        :return: The key of this TagDTO.
         :rtype: str
         """
-        return self._task_id
+        return self._key
 
-    @task_id.setter
-    def task_id(self, task_id):
-        """Sets the task_id of this CreateImageVariationTaskResponse.
+    @key.setter
+    def key(self, key):
+        """Sets the key of this TagDTO.
 
-        任务唯一标识
+        标签\"键\"的标识符或名称。您可以将标签的值设置为空字符串，但不能设置为null。
 
-        :param task_id: The task_id of this CreateImageVariationTaskResponse.
-        :type task_id: str
+        :param key: The key of this TagDTO.
+        :type key: str
         """
-        self._task_id = task_id
+        self._key = key
+
+    @property
+    def values(self):
+        """Gets the values of this TagDTO.
+
+        值列表。每个值最大长度255个unicode字符。
+
+        :return: The values of this TagDTO.
+        :rtype: list[str]
+        """
+        return self._values
+
+    @values.setter
+    def values(self, values):
+        """Sets the values of this TagDTO.
+
+        值列表。每个值最大长度255个unicode字符。
+
+        :param values: The values of this TagDTO.
+        :type values: list[str]
+        """
+        self._values = values
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -108,7 +135,7 @@ class CreateImageVariationTaskResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateImageVariationTaskResponse):
+        if not isinstance(other, TagDTO):
             return False
 
         return self.__dict__ == other.__dict__

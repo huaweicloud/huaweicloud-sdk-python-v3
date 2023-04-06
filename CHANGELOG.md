@@ -1,3 +1,108 @@
+# 3.1.35 2023-04-06
+
+### HuaweiCloud SDK CCM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ExportCertificate**
+    - changes of request param
+      - `+ password`
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateRefreshTasks**
+    - changes of request param
+      - `+ refresh_task.mode`
+
+### HuaweiCloud SDK CES
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAlarmHistories**
+    - changes of response param
+      - `+ alarm_histories.type: enum value [DNSHealthCheck,RESOURCE_GROUP,MULTI_INSTANCE,ALL_INSTANCE]`
+  - **ListAlarmRules**
+    - changes of response param
+      - `+ alarms.type: enum value [EVENT.SYS,EVENT.CUSTOM,DNSHealthCheck,RESOURCE_GROUP,MULTI_INSTANCE,ALL_INSTANCE]`
+  - **CreateAlarmRules**
+    - changes of request param
+      - `+ type: enum value [EVENT.SYS,EVENT.CUSTOM,DNSHealthCheck,RESOURCE_GROUP,MULTI_INSTANCE,ALL_INSTANCE]`
+
+### HuaweiCloud SDK DeH
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListServersDedicatedHost**
+    - changes of response param
+      - `- servers.addresses.vpc_id`
+      - `* servers.addresses: object<RespAddresses> -> map<string, list<RespAddr>>`
+
+### HuaweiCloud SDK GSL
+
+- _Features_
+  - Support the interfaces `SendSms`, `ListSmsDetails`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Image
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interfaces `CreateTextToImageTask`, `ShowTextToImageTask`, `CreateImageVariationTask`, `ShowImageVariationTask`
+
+### HuaweiCloud SDK MRS
+
+- _Features_
+  - Support the interface `RunJobFlow`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateCluster**
+    - changes of request param
+      - `+ log_uri`
+      - `+ component_configs`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RecognizeFinancialStatement**
+    - changes of request param
+      - `+ return_rectification_matrix`
+    - changes of response param
+      - `+ result.rectification_matrix`
+
+### HuaweiCloud SDK RAM
+
+- _Features_
+  - Support the interfaces `ListResourceShareTags`, `ListResourceSharesByTags`, `SearchResourceShareCountByTags`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.34 2023-03-30
 
 ### HuaweiCloud SDK BSS

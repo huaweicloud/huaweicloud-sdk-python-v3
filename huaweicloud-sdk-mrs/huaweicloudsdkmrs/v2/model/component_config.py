@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ShowImageVariationTaskRequest:
+class ComponentConfig:
 
     """
     Attributes:
@@ -20,50 +20,79 @@ class ShowImageVariationTaskRequest:
     sensitive_list = []
 
     openapi_types = {
-        'task_id': 'str'
+        'component_name': 'str',
+        'configs': 'list[Config]'
     }
 
     attribute_map = {
-        'task_id': 'task_id'
+        'component_name': 'component_name',
+        'configs': 'configs'
     }
 
-    def __init__(self, task_id=None):
-        """ShowImageVariationTaskRequest
+    def __init__(self, component_name=None, configs=None):
+        """ComponentConfig
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 任务ID
-        :type task_id: str
+        :param component_name: 组件名称
+        :type component_name: str
+        :param configs: 组件配置项列表
+        :type configs: list[:class:`huaweicloudsdkmrs.v2.Config`]
         """
         
         
 
-        self._task_id = None
+        self._component_name = None
+        self._configs = None
         self.discriminator = None
 
-        self.task_id = task_id
+        self.component_name = component_name
+        if configs is not None:
+            self.configs = configs
 
     @property
-    def task_id(self):
-        """Gets the task_id of this ShowImageVariationTaskRequest.
+    def component_name(self):
+        """Gets the component_name of this ComponentConfig.
 
-        任务ID
+        组件名称
 
-        :return: The task_id of this ShowImageVariationTaskRequest.
+        :return: The component_name of this ComponentConfig.
         :rtype: str
         """
-        return self._task_id
+        return self._component_name
 
-    @task_id.setter
-    def task_id(self, task_id):
-        """Sets the task_id of this ShowImageVariationTaskRequest.
+    @component_name.setter
+    def component_name(self, component_name):
+        """Sets the component_name of this ComponentConfig.
 
-        任务ID
+        组件名称
 
-        :param task_id: The task_id of this ShowImageVariationTaskRequest.
-        :type task_id: str
+        :param component_name: The component_name of this ComponentConfig.
+        :type component_name: str
         """
-        self._task_id = task_id
+        self._component_name = component_name
+
+    @property
+    def configs(self):
+        """Gets the configs of this ComponentConfig.
+
+        组件配置项列表
+
+        :return: The configs of this ComponentConfig.
+        :rtype: list[:class:`huaweicloudsdkmrs.v2.Config`]
+        """
+        return self._configs
+
+    @configs.setter
+    def configs(self, configs):
+        """Sets the configs of this ComponentConfig.
+
+        组件配置项列表
+
+        :param configs: The configs of this ComponentConfig.
+        :type configs: list[:class:`huaweicloudsdkmrs.v2.Config`]
+        """
+        self._configs = configs
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -107,7 +136,7 @@ class ShowImageVariationTaskRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ShowImageVariationTaskRequest):
+        if not isinstance(other, ComponentConfig):
             return False
 
         return self.__dict__ == other.__dict__

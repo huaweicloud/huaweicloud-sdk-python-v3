@@ -4,11 +4,11 @@ import re
 import six
 
 
-
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class TextToImageTaskConfigCommon:
+class RunJobFlowResponse(SdkResponse):
 
     """
     Attributes:
@@ -20,46 +20,51 @@ class TextToImageTaskConfigCommon:
     sensitive_list = []
 
     openapi_types = {
-        'inference': 'TextToImageInference'
+        'cluster_id': 'str'
     }
 
     attribute_map = {
-        'inference': 'inference'
+        'cluster_id': 'cluster_id'
     }
 
-    def __init__(self, inference=None):
-        """TextToImageTaskConfigCommon
+    def __init__(self, cluster_id=None):
+        """RunJobFlowResponse
 
         The model defined in huaweicloud sdk
 
-        :param inference: 
-        :type inference: :class:`huaweicloudsdkimage.v2.TextToImageInference`
+        :param cluster_id: 集群创建成功后系统返回的集群ID值。
+        :type cluster_id: str
         """
         
-        
+        super(RunJobFlowResponse, self).__init__()
 
-        self._inference = None
+        self._cluster_id = None
         self.discriminator = None
 
-        self.inference = inference
+        if cluster_id is not None:
+            self.cluster_id = cluster_id
 
     @property
-    def inference(self):
-        """Gets the inference of this TextToImageTaskConfigCommon.
+    def cluster_id(self):
+        """Gets the cluster_id of this RunJobFlowResponse.
 
-        :return: The inference of this TextToImageTaskConfigCommon.
-        :rtype: :class:`huaweicloudsdkimage.v2.TextToImageInference`
+        集群创建成功后系统返回的集群ID值。
+
+        :return: The cluster_id of this RunJobFlowResponse.
+        :rtype: str
         """
-        return self._inference
+        return self._cluster_id
 
-    @inference.setter
-    def inference(self, inference):
-        """Sets the inference of this TextToImageTaskConfigCommon.
+    @cluster_id.setter
+    def cluster_id(self, cluster_id):
+        """Sets the cluster_id of this RunJobFlowResponse.
 
-        :param inference: The inference of this TextToImageTaskConfigCommon.
-        :type inference: :class:`huaweicloudsdkimage.v2.TextToImageInference`
+        集群创建成功后系统返回的集群ID值。
+
+        :param cluster_id: The cluster_id of this RunJobFlowResponse.
+        :type cluster_id: str
         """
-        self._inference = inference
+        self._cluster_id = cluster_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -103,7 +108,7 @@ class TextToImageTaskConfigCommon:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, TextToImageTaskConfigCommon):
+        if not isinstance(other, RunJobFlowResponse):
             return False
 
         return self.__dict__ == other.__dict__

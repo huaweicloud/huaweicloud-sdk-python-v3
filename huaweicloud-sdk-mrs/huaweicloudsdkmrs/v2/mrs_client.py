@@ -56,7 +56,7 @@ class MrsClient(Client):
         return self.batch_delete_jobs_with_http_info(request)
 
     def batch_delete_jobs_with_http_info(self, request):
-        all_params = ['cluster_id', 'job_batch_delete']
+        all_params = ['cluster_id', 'batch_delete_jobs_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -122,7 +122,7 @@ class MrsClient(Client):
         return self.create_cluster_with_http_info(request)
 
     def create_cluster_with_http_info(self, request):
-        all_params = ['cluster_req_v2']
+        all_params = ['create_cluster_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -188,7 +188,7 @@ class MrsClient(Client):
         return self.create_execute_job_with_http_info(request)
 
     def create_execute_job_with_http_info(self, request):
-        all_params = ['cluster_id', 'job_execution']
+        all_params = ['cluster_id', 'create_execute_job_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -231,6 +231,70 @@ class MrsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateExecuteJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def run_job_flow(self, request):
+        """创建集群并提交作业
+
+        创建一个MRS集群并提交作业，并支持作业完成后删除集群，支持MRS 1.8.9及以上集群版本使用。使用接口前，您需要先获取下的资源信息。
+        - 通过VPC创建或查询VPC、子网
+        - 通过ECS创建或查询密钥对
+        - 通过[终端节点](https://support.huaweicloud.com/api-mrs/mrs_02_0003.html)获取区域信息
+        - 参考[MRS服务支持的组件](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)获取MRS版本及对应版本支持的组件信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RunJobFlow
+        :type request: :class:`huaweicloudsdkmrs.v2.RunJobFlowRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.RunJobFlowResponse`
+        """
+        return self.run_job_flow_with_http_info(request)
+
+    def run_job_flow_with_http_info(self, request):
+        all_params = ['run_job_flow_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/run-job-flow',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RunJobFlowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -640,7 +704,7 @@ class MrsClient(Client):
         return self.update_agency_mapping_with_http_info(request)
 
     def update_agency_mapping_with_http_info(self, request):
-        all_params = ['cluster_id', 'agency_mapping_array']
+        all_params = ['cluster_id', 'update_agency_mapping_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -702,7 +766,7 @@ class MrsClient(Client):
         return self.update_cluster_name_with_http_info(request)
 
     def update_cluster_name_with_http_info(self, request):
-        all_params = ['cluster_id', 'update_cluster_req']
+        all_params = ['cluster_id', 'update_cluster_name_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -896,7 +960,7 @@ class MrsClient(Client):
         return self.execute_sql_with_http_info(request)
 
     def execute_sql_with_http_info(self, request):
-        all_params = ['cluster_id', 'sql_execution_request']
+        all_params = ['cluster_id', 'execute_sql_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):

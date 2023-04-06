@@ -8,7 +8,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreateTextToImageTaskResponse(SdkResponse):
+class ListResourceSharesByTagsResponse(SdkResponse):
 
     """
     Attributes:
@@ -20,51 +20,80 @@ class CreateTextToImageTaskResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'task_id': 'str'
+        'resources': 'list[ResourceDTO]',
+        'total_count': 'int'
     }
 
     attribute_map = {
-        'task_id': 'task_id'
+        'resources': 'resources',
+        'total_count': 'total_count'
     }
 
-    def __init__(self, task_id=None):
-        """CreateTextToImageTaskResponse
+    def __init__(self, resources=None, total_count=None):
+        """ListResourceSharesByTagsResponse
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 任务唯一标识
-        :type task_id: str
+        :param resources: 资源信息列表。
+        :type resources: list[:class:`huaweicloudsdkram.v1.ResourceDTO`]
+        :param total_count: 总记录数。
+        :type total_count: int
         """
         
-        super(CreateTextToImageTaskResponse, self).__init__()
+        super(ListResourceSharesByTagsResponse, self).__init__()
 
-        self._task_id = None
+        self._resources = None
+        self._total_count = None
         self.discriminator = None
 
-        if task_id is not None:
-            self.task_id = task_id
+        if resources is not None:
+            self.resources = resources
+        if total_count is not None:
+            self.total_count = total_count
 
     @property
-    def task_id(self):
-        """Gets the task_id of this CreateTextToImageTaskResponse.
+    def resources(self):
+        """Gets the resources of this ListResourceSharesByTagsResponse.
 
-        任务唯一标识
+        资源信息列表。
 
-        :return: The task_id of this CreateTextToImageTaskResponse.
-        :rtype: str
+        :return: The resources of this ListResourceSharesByTagsResponse.
+        :rtype: list[:class:`huaweicloudsdkram.v1.ResourceDTO`]
         """
-        return self._task_id
+        return self._resources
 
-    @task_id.setter
-    def task_id(self, task_id):
-        """Sets the task_id of this CreateTextToImageTaskResponse.
+    @resources.setter
+    def resources(self, resources):
+        """Sets the resources of this ListResourceSharesByTagsResponse.
 
-        任务唯一标识
+        资源信息列表。
 
-        :param task_id: The task_id of this CreateTextToImageTaskResponse.
-        :type task_id: str
+        :param resources: The resources of this ListResourceSharesByTagsResponse.
+        :type resources: list[:class:`huaweicloudsdkram.v1.ResourceDTO`]
         """
-        self._task_id = task_id
+        self._resources = resources
+
+    @property
+    def total_count(self):
+        """Gets the total_count of this ListResourceSharesByTagsResponse.
+
+        总记录数。
+
+        :return: The total_count of this ListResourceSharesByTagsResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        """Sets the total_count of this ListResourceSharesByTagsResponse.
+
+        总记录数。
+
+        :param total_count: The total_count of this ListResourceSharesByTagsResponse.
+        :type total_count: int
+        """
+        self._total_count = total_count
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -108,7 +137,7 @@ class CreateTextToImageTaskResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateTextToImageTaskResponse):
+        if not isinstance(other, ListResourceSharesByTagsResponse):
             return False
 
         return self.__dict__ == other.__dict__
