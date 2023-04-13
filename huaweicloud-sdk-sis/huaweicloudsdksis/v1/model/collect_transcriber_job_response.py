@@ -20,6 +20,7 @@ class CollectTranscriberJobResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'job_id': 'str',
         'status': 'str',
         'create_time': 'str',
         'start_time': 'str',
@@ -29,6 +30,7 @@ class CollectTranscriberJobResponse(SdkResponse):
     }
 
     attribute_map = {
+        'job_id': 'job_id',
         'status': 'status',
         'create_time': 'create_time',
         'start_time': 'start_time',
@@ -37,11 +39,13 @@ class CollectTranscriberJobResponse(SdkResponse):
         'audio_duration': 'audio_duration'
     }
 
-    def __init__(self, status=None, create_time=None, start_time=None, finish_time=None, segments=None, audio_duration=None):
+    def __init__(self, job_id=None, status=None, create_time=None, start_time=None, finish_time=None, segments=None, audio_duration=None):
         """CollectTranscriberJobResponse
 
         The model defined in huaweicloud sdk
 
+        :param job_id: 录音文件识别任务标识符。  使用“callback_url”回调url时，该字段会随结果发送至用户服务器。 使用get接口查询，不会出现该字段
+        :type job_id: str
         :param status: 当前识别状态。具体状态如下所示：  WAITING 等待识别。 FINISHED 识别已经完成。 ERROR 识别过程中发生错误。
         :type status: str
         :param create_time: 任务创建时间, 遵循 RFC 3339格式。 格式示例：2018-12-04T13:10:29.310Z。
@@ -58,6 +62,7 @@ class CollectTranscriberJobResponse(SdkResponse):
         
         super(CollectTranscriberJobResponse, self).__init__()
 
+        self._job_id = None
         self._status = None
         self._create_time = None
         self._start_time = None
@@ -66,6 +71,8 @@ class CollectTranscriberJobResponse(SdkResponse):
         self._audio_duration = None
         self.discriminator = None
 
+        if job_id is not None:
+            self.job_id = job_id
         if status is not None:
             self.status = status
         if create_time is not None:
@@ -78,6 +85,28 @@ class CollectTranscriberJobResponse(SdkResponse):
             self.segments = segments
         if audio_duration is not None:
             self.audio_duration = audio_duration
+
+    @property
+    def job_id(self):
+        """Gets the job_id of this CollectTranscriberJobResponse.
+
+        录音文件识别任务标识符。  使用“callback_url”回调url时，该字段会随结果发送至用户服务器。 使用get接口查询，不会出现该字段
+
+        :return: The job_id of this CollectTranscriberJobResponse.
+        :rtype: str
+        """
+        return self._job_id
+
+    @job_id.setter
+    def job_id(self, job_id):
+        """Sets the job_id of this CollectTranscriberJobResponse.
+
+        录音文件识别任务标识符。  使用“callback_url”回调url时，该字段会随结果发送至用户服务器。 使用get接口查询，不会出现该字段
+
+        :param job_id: The job_id of this CollectTranscriberJobResponse.
+        :type job_id: str
+        """
+        self._job_id = job_id
 
     @property
     def status(self):

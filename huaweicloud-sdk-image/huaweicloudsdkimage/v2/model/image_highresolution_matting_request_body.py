@@ -20,7 +20,7 @@ class ImageHighresolutionMattingRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'input': 'TaskInput',
+        'input': 'ImageHighresolutionMattingInput',
         'output': 'TaskOutput',
         'param_callback': 'TaskCallback',
         'config': 'ImageHighresolutionMattingConfig'
@@ -39,7 +39,7 @@ class ImageHighresolutionMattingRequestBody:
         The model defined in huaweicloud sdk
 
         :param input: 
-        :type input: :class:`huaweicloudsdkimage.v2.TaskInput`
+        :type input: :class:`huaweicloudsdkimage.v2.ImageHighresolutionMattingInput`
         :param output: 
         :type output: :class:`huaweicloudsdkimage.v2.TaskOutput`
         :param param_callback: 
@@ -67,7 +67,7 @@ class ImageHighresolutionMattingRequestBody:
         """Gets the input of this ImageHighresolutionMattingRequestBody.
 
         :return: The input of this ImageHighresolutionMattingRequestBody.
-        :rtype: :class:`huaweicloudsdkimage.v2.TaskInput`
+        :rtype: :class:`huaweicloudsdkimage.v2.ImageHighresolutionMattingInput`
         """
         return self._input
 
@@ -76,7 +76,7 @@ class ImageHighresolutionMattingRequestBody:
         """Sets the input of this ImageHighresolutionMattingRequestBody.
 
         :param input: The input of this ImageHighresolutionMattingRequestBody.
-        :type input: :class:`huaweicloudsdkimage.v2.TaskInput`
+        :type input: :class:`huaweicloudsdkimage.v2.ImageHighresolutionMattingInput`
         """
         self._input = input
 

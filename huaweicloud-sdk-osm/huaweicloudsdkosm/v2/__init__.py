@@ -20,6 +20,7 @@ from huaweicloudsdkosm.v2.model.area_code_simple_info_v2 import AreaCodeSimpleIn
 from huaweicloudsdkosm.v2.model.article import Article
 from huaweicloudsdkosm.v2.model.ask_question_req import AskQuestionReq
 from huaweicloudsdkosm.v2.model.case_label_info import CaseLabelInfo
+from huaweicloudsdkosm.v2.model.case_query_label import CaseQueryLabel
 from huaweicloudsdkosm.v2.model.case_realtion_info import CaseRealtionInfo
 from huaweicloudsdkosm.v2.model.cbs_flow_entry import CbsFlowEntry
 from huaweicloudsdkosm.v2.model.check_hosts_request import CheckHostsRequest
@@ -90,6 +91,7 @@ from huaweicloudsdkosm.v2.model.delete_relation_request import DeleteRelationReq
 from huaweicloudsdkosm.v2.model.delete_relation_response import DeleteRelationResponse
 from huaweicloudsdkosm.v2.model.delete_relations_req import DeleteRelationsReq
 from huaweicloudsdkosm.v2.model.diagnose_record_vo import DiagnoseRecordVo
+from huaweicloudsdkosm.v2.model.diagnose_resource_vo import DiagnoseResourceVo
 from huaweicloudsdkosm.v2.model.download_accessories_request import DownloadAccessoriesRequest
 from huaweicloudsdkosm.v2.model.download_accessories_response import DownloadAccessoriesResponse
 from huaweicloudsdkosm.v2.model.download_cases_request import DownloadCasesRequest
@@ -105,6 +107,7 @@ from huaweicloudsdkosm.v2.model.im_status_v2 import ImStatusV2
 from huaweicloudsdkosm.v2.model.im_unread_v2 import ImUnreadV2
 from huaweicloudsdkosm.v2.model.incident_detail_ext_info_v2 import IncidentDetailExtInfoV2
 from huaweicloudsdkosm.v2.model.incident_detail_info_v2 import IncidentDetailInfoV2
+from huaweicloudsdkosm.v2.model.incident_info import IncidentInfo
 from huaweicloudsdkosm.v2.model.incident_info_v2 import IncidentInfoV2
 from huaweicloudsdkosm.v2.model.incident_message_v2 import IncidentMessageV2
 from huaweicloudsdkosm.v2.model.incident_operate_log_v2 import IncidentOperateLogV2
@@ -157,6 +160,8 @@ from huaweicloudsdkosm.v2.model.list_diagnose_job_request import ListDiagnoseJob
 from huaweicloudsdkosm.v2.model.list_diagnose_job_response import ListDiagnoseJobResponse
 from huaweicloudsdkosm.v2.model.list_diagnose_records_request import ListDiagnoseRecordsRequest
 from huaweicloudsdkosm.v2.model.list_diagnose_records_response import ListDiagnoseRecordsResponse
+from huaweicloudsdkosm.v2.model.list_diagnose_resources_request import ListDiagnoseResourcesRequest
+from huaweicloudsdkosm.v2.model.list_diagnose_resources_response import ListDiagnoseResourcesResponse
 from huaweicloudsdkosm.v2.model.list_extends_params_request import ListExtendsParamsRequest
 from huaweicloudsdkosm.v2.model.list_extends_params_response import ListExtendsParamsResponse
 from huaweicloudsdkosm.v2.model.list_feedback_option_request import ListFeedbackOptionRequest
@@ -177,6 +182,8 @@ from huaweicloudsdkosm.v2.model.list_new_instant_messages_request import ListNew
 from huaweicloudsdkosm.v2.model.list_new_instant_messages_response import ListNewInstantMessagesResponse
 from huaweicloudsdkosm.v2.model.list_notices_request import ListNoticesRequest
 from huaweicloudsdkosm.v2.model.list_notices_response import ListNoticesResponse
+from huaweicloudsdkosm.v2.model.list_order_incident_request import ListOrderIncidentRequest
+from huaweicloudsdkosm.v2.model.list_order_incident_response import ListOrderIncidentResponse
 from huaweicloudsdkosm.v2.model.list_privileges_request import ListPrivilegesRequest
 from huaweicloudsdkosm.v2.model.list_privileges_response import ListPrivilegesResponse
 from huaweicloudsdkosm.v2.model.list_problem_types_request import ListProblemTypesRequest
@@ -217,6 +224,7 @@ from huaweicloudsdkosm.v2.model.qabot_answer import QabotAnswer
 from huaweicloudsdkosm.v2.model.query_associated_question_req import QueryAssociatedQuestionReq
 from huaweicloudsdkosm.v2.model.query_diagnose_items_req import QueryDiagnoseItemsReq
 from huaweicloudsdkosm.v2.model.query_message_info_v2 import QueryMessageInfoV2
+from huaweicloudsdkosm.v2.model.query_tsc_diagnose_resources_req import QueryTscDiagnoseResourcesReq
 from huaweicloudsdkosm.v2.model.recommend_word import RecommendWord
 from huaweicloudsdkosm.v2.model.region import Region
 from huaweicloudsdkosm.v2.model.relation_theme import RelationTheme

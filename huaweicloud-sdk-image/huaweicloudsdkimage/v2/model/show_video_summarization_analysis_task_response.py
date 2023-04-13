@@ -24,7 +24,7 @@ class ShowVideoSummarizationAnalysisTaskResponse(SdkResponse):
         'create_time': 'str',
         'update_time': 'str',
         'state': 'str',
-        'input': 'TaskInput',
+        'input': 'VideoSummarizationTaskInput',
         'output': 'TaskOutput',
         'config': 'SummarizationAnalysisConfig',
         'param_callback': 'TaskCallback',
@@ -57,7 +57,7 @@ class ShowVideoSummarizationAnalysisTaskResponse(SdkResponse):
         :param state: 任务当前的状态，分别为SUCCEEDED（运行成功），FAILED（运行失败），RUNNING（运行中）。
         :type state: str
         :param input: 
-        :type input: :class:`huaweicloudsdkimage.v2.TaskInput`
+        :type input: :class:`huaweicloudsdkimage.v2.VideoSummarizationTaskInput`
         :param output: 
         :type output: :class:`huaweicloudsdkimage.v2.TaskOutput`
         :param config: 
@@ -193,7 +193,7 @@ class ShowVideoSummarizationAnalysisTaskResponse(SdkResponse):
         """Gets the input of this ShowVideoSummarizationAnalysisTaskResponse.
 
         :return: The input of this ShowVideoSummarizationAnalysisTaskResponse.
-        :rtype: :class:`huaweicloudsdkimage.v2.TaskInput`
+        :rtype: :class:`huaweicloudsdkimage.v2.VideoSummarizationTaskInput`
         """
         return self._input
 
@@ -202,7 +202,7 @@ class ShowVideoSummarizationAnalysisTaskResponse(SdkResponse):
         """Sets the input of this ShowVideoSummarizationAnalysisTaskResponse.
 
         :param input: The input of this ShowVideoSummarizationAnalysisTaskResponse.
-        :type input: :class:`huaweicloudsdkimage.v2.TaskInput`
+        :type input: :class:`huaweicloudsdkimage.v2.VideoSummarizationTaskInput`
         """
         self._input = input
 

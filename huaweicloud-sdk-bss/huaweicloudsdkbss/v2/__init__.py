@@ -20,6 +20,7 @@ from huaweicloudsdkbss.v2.model.apply_enterprise_realname_auths_req import Apply
 from huaweicloudsdkbss.v2.model.apply_individual_realname_auths_req import ApplyIndividualRealnameAuthsReq
 from huaweicloudsdkbss.v2.model.auto_renewal_resources_request import AutoRenewalResourcesRequest
 from huaweicloudsdkbss.v2.model.auto_renewal_resources_response import AutoRenewalResourcesResponse
+from huaweicloudsdkbss.v2.model.az_code_info import AzCodeInfo
 from huaweicloudsdkbss.v2.model.balance_type_deduct_sum_v2 import BalanceTypeDeductSumV2
 from huaweicloudsdkbss.v2.model.bank_card_info_v2 import BankCardInfoV2
 from huaweicloudsdkbss.v2.model.bill_sum_info_v2 import BillSumInfoV2

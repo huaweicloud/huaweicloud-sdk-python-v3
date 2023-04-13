@@ -105,6 +105,69 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def batch_delete_group_async(self, request):
+        """Kafka实例批量删除Group
+
+        该接口用于向Kafka实例批量删除Group。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteGroup
+        :type request: :class:`huaweicloudsdkkafka.v2.BatchDeleteGroupRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.BatchDeleteGroupResponse`
+        """
+        return self.batch_delete_group_with_http_info(request)
+
+    def batch_delete_group_with_http_info(self, request):
+        all_params = ['instance_id', 'batch_delete_group_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/groups/batch-delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchDeleteGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def batch_delete_instance_topic_async(self, request):
         """Kafka实例批量删除Topic
 

@@ -48,6 +48,7 @@ from huaweicloudsdkevs.v2.model.delete_snapshot_response import DeleteSnapshotRe
 from huaweicloudsdkevs.v2.model.delete_tags_option import DeleteTagsOption
 from huaweicloudsdkevs.v2.model.delete_volume_request import DeleteVolumeRequest
 from huaweicloudsdkevs.v2.model.delete_volume_response import DeleteVolumeResponse
+from huaweicloudsdkevs.v2.model.iops import Iops
 from huaweicloudsdkevs.v2.model.job_entities import JobEntities
 from huaweicloudsdkevs.v2.model.link import Link
 from huaweicloudsdkevs.v2.model.list_snapshots_request import ListSnapshotsRequest
@@ -109,6 +110,7 @@ from huaweicloudsdkevs.v2.model.sub_job import SubJob
 from huaweicloudsdkevs.v2.model.sub_job_entities import SubJobEntities
 from huaweicloudsdkevs.v2.model.tag import Tag
 from huaweicloudsdkevs.v2.model.tags_for_list_volumes import TagsForListVolumes
+from huaweicloudsdkevs.v2.model.throughput import Throughput
 from huaweicloudsdkevs.v2.model.update_snapshot_option import UpdateSnapshotOption
 from huaweicloudsdkevs.v2.model.update_snapshot_request import UpdateSnapshotRequest
 from huaweicloudsdkevs.v2.model.update_snapshot_request_body import UpdateSnapshotRequestBody

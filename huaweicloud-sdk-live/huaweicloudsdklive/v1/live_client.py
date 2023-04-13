@@ -342,6 +342,70 @@ class LiveClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_snapshot_config(self, request):
+        """创建直播截图配置
+
+        创建直播截图配置接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSnapshotConfig
+        :type request: :class:`huaweicloudsdklive.v1.CreateSnapshotConfigRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.CreateSnapshotConfigResponse`
+        """
+        return self.create_snapshot_config_with_http_info(request)
+
+    def create_snapshot_config_with_http_info(self, request):
+        all_params = ['create_snapshot_config_request_body', 'access_control_allow_internal', 'access_control_allow_external']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/stream/snapshot',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateSnapshotConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_stream_forbidden(self, request):
         """禁止直播推流
 
@@ -517,6 +581,70 @@ class LiveClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteDomainResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_domain_key_chain(self, request):
+        """删除指定域名的Key防盗链配置
+
+        删除指定域名的Key防盗链配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDomainKeyChain
+        :type request: :class:`huaweicloudsdklive.v1.DeleteDomainKeyChainRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.DeleteDomainKeyChainResponse`
+        """
+        return self.delete_domain_key_chain_with_http_info(request)
+
+    def delete_domain_key_chain_with_http_info(self, request):
+        all_params = ['domain', 'access_control_allow_internal', 'access_control_allow_external']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/guard/key-chain',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteDomainKeyChainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -699,6 +827,72 @@ class LiveClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteRecordRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_snapshot_config(self, request):
+        """删除直播截图配置
+
+        删除直播截图配置接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteSnapshotConfig
+        :type request: :class:`huaweicloudsdklive.v1.DeleteSnapshotConfigRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.DeleteSnapshotConfigResponse`
+        """
+        return self.delete_snapshot_config_with_http_info(request)
+
+    def delete_snapshot_config_with_http_info(self, request):
+        all_params = ['domain', 'app_name', 'access_control_allow_internal', 'access_control_allow_external']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
+        if 'app_name' in local_var_params:
+            query_params.append(('app_name', local_var_params['app_name']))
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/stream/snapshot',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteSnapshotConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1172,6 +1366,80 @@ class LiveClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_snapshot_configs(self, request):
+        """查询直播截图配置
+
+        查询直播截图配置接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSnapshotConfigs
+        :type request: :class:`huaweicloudsdklive.v1.ListSnapshotConfigsRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ListSnapshotConfigsResponse`
+        """
+        return self.list_snapshot_configs_with_http_info(request)
+
+    def list_snapshot_configs_with_http_info(self, request):
+        all_params = ['domain', 'access_control_allow_internal', 'access_control_allow_external', 'app_name', 'page', 'size', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
+        if 'app_name' in local_var_params:
+            query_params.append(('app_name', local_var_params['app_name']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'size' in local_var_params:
+            query_params.append(('size', local_var_params['size']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/stream/snapshot',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListSnapshotConfigsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_stream_forbidden(self, request):
         """查询禁止直播推流列表
 
@@ -1359,6 +1627,70 @@ class LiveClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowDomainResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_domain_key_chain(self, request):
+        """查询指定域名的Key防盗链配置
+
+        查询指定域名的Key防盗链配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDomainKeyChain
+        :type request: :class:`huaweicloudsdklive.v1.ShowDomainKeyChainRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ShowDomainKeyChainResponse`
+        """
+        return self.show_domain_key_chain_with_http_info(request)
+
+    def show_domain_key_chain_with_http_info(self, request):
+        all_params = ['domain', 'access_control_allow_internal', 'access_control_allow_external']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/guard/key-chain',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowDomainKeyChainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1670,6 +2002,72 @@ class LiveClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_domain_key_chain(self, request):
+        """更新指定域名的Key防盗链配置
+
+        更新指定域名的Key防盗链配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDomainKeyChain
+        :type request: :class:`huaweicloudsdklive.v1.UpdateDomainKeyChainRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.UpdateDomainKeyChainResponse`
+        """
+        return self.update_domain_key_chain_with_http_info(request)
+
+    def update_domain_key_chain_with_http_info(self, request):
+        all_params = ['domain', 'access_control_allow_internal', 'access_control_allow_external', 'update_domain_key_chain_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/guard/key-chain',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateDomainKeyChainResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_record_callback_config(self, request):
         """修改录制回调配置
 
@@ -1794,6 +2192,70 @@ class LiveClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_snapshot_config(self, request):
+        """修改直播截图配置
+
+        修改直播截图配置接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateSnapshotConfig
+        :type request: :class:`huaweicloudsdklive.v1.UpdateSnapshotConfigRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.UpdateSnapshotConfigResponse`
+        """
+        return self.update_snapshot_config_with_http_info(request)
+
+    def update_snapshot_config_with_http_info(self, request):
+        all_params = ['update_snapshot_config_request_body', 'access_control_allow_internal', 'access_control_allow_external']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/stream/snapshot',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateSnapshotConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_stream_forbidden(self, request):
         """修改禁推属性
 
@@ -1909,6 +2371,264 @@ class LiveClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateTranscodingsTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_domain_https_cert(self, request):
+        """删除指定域名的https证书配置
+
+        删除指定域名的https证书配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDomainHttpsCert
+        :type request: :class:`huaweicloudsdklive.v1.DeleteDomainHttpsCertRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.DeleteDomainHttpsCertResponse`
+        """
+        return self.delete_domain_https_cert_with_http_info(request)
+
+    def delete_domain_https_cert_with_http_info(self, request):
+        all_params = ['domain', 'access_control_allow_internal', 'access_control_allow_external']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/guard/https-cert',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteDomainHttpsCertResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_domain_https_cert(self, request):
+        """查询指定域名的https证书配置
+
+        查询指定域名的https证书配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDomainHttpsCert
+        :type request: :class:`huaweicloudsdklive.v1.ShowDomainHttpsCertRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ShowDomainHttpsCertResponse`
+        """
+        return self.show_domain_https_cert_with_http_info(request)
+
+    def show_domain_https_cert_with_http_info(self, request):
+        all_params = ['domain', 'access_control_allow_internal', 'access_control_allow_external']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/guard/https-cert',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowDomainHttpsCertResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_domain_https_cert(self, request):
+        """修改指定域名的https证书配置
+
+        修改指定域名的https证书配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDomainHttpsCert
+        :type request: :class:`huaweicloudsdklive.v1.UpdateDomainHttpsCertRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.UpdateDomainHttpsCertResponse`
+        """
+        return self.update_domain_https_cert_with_http_info(request)
+
+    def update_domain_https_cert_with_http_info(self, request):
+        all_params = ['domain', 'access_control_allow_internal', 'access_control_allow_external', 'update_domain_https_cert_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/guard/https-cert',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateDomainHttpsCertResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_obs_bucket_authority_public(self, request):
+        """OBS桶授权及取消授权
+
+        OBS桶授权及取消授权
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateObsBucketAuthorityPublic
+        :type request: :class:`huaweicloudsdklive.v1.UpdateObsBucketAuthorityPublicRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.UpdateObsBucketAuthorityPublicResponse`
+        """
+        return self.update_obs_bucket_authority_public_with_http_info(request)
+
+    def update_obs_bucket_authority_public_with_http_info(self, request):
+        all_params = ['update_obs_bucket_authority_public_request_body', 'access_control_allow_internal', 'access_control_allow_external']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'access_control_allow_internal' in local_var_params:
+            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
+        if 'access_control_allow_external' in local_var_params:
+            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/obs/authority',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateObsBucketAuthorityPublicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

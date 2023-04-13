@@ -20,7 +20,7 @@ class CreateVideoObjectMaskingTaskRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'input': 'TaskInput',
+        'input': 'ObjectMaskingTaskInput',
         'output': 'TaskOutput',
         'param_callback': 'TaskCallback',
         'config': 'VideoObjectMaskingTaskConfig'
@@ -39,7 +39,7 @@ class CreateVideoObjectMaskingTaskRequestBody:
         The model defined in huaweicloud sdk
 
         :param input: 
-        :type input: :class:`huaweicloudsdkimage.v2.TaskInput`
+        :type input: :class:`huaweicloudsdkimage.v2.ObjectMaskingTaskInput`
         :param output: 
         :type output: :class:`huaweicloudsdkimage.v2.TaskOutput`
         :param param_callback: 
@@ -67,7 +67,7 @@ class CreateVideoObjectMaskingTaskRequestBody:
         """Gets the input of this CreateVideoObjectMaskingTaskRequestBody.
 
         :return: The input of this CreateVideoObjectMaskingTaskRequestBody.
-        :rtype: :class:`huaweicloudsdkimage.v2.TaskInput`
+        :rtype: :class:`huaweicloudsdkimage.v2.ObjectMaskingTaskInput`
         """
         return self._input
 
@@ -76,7 +76,7 @@ class CreateVideoObjectMaskingTaskRequestBody:
         """Sets the input of this CreateVideoObjectMaskingTaskRequestBody.
 
         :param input: The input of this CreateVideoObjectMaskingTaskRequestBody.
-        :type input: :class:`huaweicloudsdkimage.v2.TaskInput`
+        :type input: :class:`huaweicloudsdkimage.v2.ObjectMaskingTaskInput`
         """
         self._input = input
 

@@ -42,9 +42,9 @@ class RestoreSnapshotReq:
         :type target_cluster: str
         :param indices: 指定要恢复的索引名称，多个索引用逗号隔开，默认恢复所有索引。支持使用“\\*”匹配多个索引，例如：2018-06\\*，表示恢复名称前缀是2018-06的所有索引的数据。  0～1024个字符，不能包含空格和大写字母，且不能包含\\\&quot;\\\\&lt;|&gt;/?特殊字符。
         :type indices: str
-        :param rename_pattern: 匹配要恢复的索引规则，最大支持1024个字符。根据此处定义的过滤条件去恢复符合条件的索引，过滤条件请使用正则表达式。  0～1024个字符，不能包含空格和大写字母，且不能包含\\\&quot;\\\\&lt;|&gt;/?,特殊字符。
+        :param rename_pattern: 匹配要恢复的索引规则，最大支持1024个字符。根据此处定义的过滤条件去恢复符合条件的索引，过滤条件请使用正则表达式。  0～1024个字符，不能包含空格和大写字母，且不能包含\\\&quot;\\\\&lt;|&gt;/?,特殊字符。   renamePattern参数与renameReplacement参数必须同时设置才能生效。
         :type rename_pattern: str
-        :param rename_replacement: 索引重命名的规则。0～1024个字符，不能包含空格和大写字母，且不能包含\\\&quot;\\\\&lt;|&gt;/?,特殊字符。例如，“restored_index_$1”表示在所有恢复的索引名称前面加上“restored_”。  设置renameReplacement参数时，renamePattern和该参数必须同时设置才能生效。
+        :param rename_replacement: 索引重命名的规则。0～1024个字符，不能包含空格和大写字母，且不能包含\\\&quot;\\\\&lt;|&gt;/?,特殊字符。例如，“restored_index_$1”表示在所有恢复的索引名称前面加上“restored_”。    renamePattern参数与renameReplacement参数必须同时设置才能生效。
         :type rename_replacement: str
         """
         
@@ -112,7 +112,7 @@ class RestoreSnapshotReq:
     def rename_pattern(self):
         """Gets the rename_pattern of this RestoreSnapshotReq.
 
-        匹配要恢复的索引规则，最大支持1024个字符。根据此处定义的过滤条件去恢复符合条件的索引，过滤条件请使用正则表达式。  0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?,特殊字符。
+        匹配要恢复的索引规则，最大支持1024个字符。根据此处定义的过滤条件去恢复符合条件的索引，过滤条件请使用正则表达式。  0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?,特殊字符。   renamePattern参数与renameReplacement参数必须同时设置才能生效。
 
         :return: The rename_pattern of this RestoreSnapshotReq.
         :rtype: str
@@ -123,7 +123,7 @@ class RestoreSnapshotReq:
     def rename_pattern(self, rename_pattern):
         """Sets the rename_pattern of this RestoreSnapshotReq.
 
-        匹配要恢复的索引规则，最大支持1024个字符。根据此处定义的过滤条件去恢复符合条件的索引，过滤条件请使用正则表达式。  0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?,特殊字符。
+        匹配要恢复的索引规则，最大支持1024个字符。根据此处定义的过滤条件去恢复符合条件的索引，过滤条件请使用正则表达式。  0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?,特殊字符。   renamePattern参数与renameReplacement参数必须同时设置才能生效。
 
         :param rename_pattern: The rename_pattern of this RestoreSnapshotReq.
         :type rename_pattern: str
@@ -134,7 +134,7 @@ class RestoreSnapshotReq:
     def rename_replacement(self):
         """Gets the rename_replacement of this RestoreSnapshotReq.
 
-        索引重命名的规则。0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?,特殊字符。例如，“restored_index_$1”表示在所有恢复的索引名称前面加上“restored_”。  设置renameReplacement参数时，renamePattern和该参数必须同时设置才能生效。
+        索引重命名的规则。0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?,特殊字符。例如，“restored_index_$1”表示在所有恢复的索引名称前面加上“restored_”。    renamePattern参数与renameReplacement参数必须同时设置才能生效。
 
         :return: The rename_replacement of this RestoreSnapshotReq.
         :rtype: str
@@ -145,7 +145,7 @@ class RestoreSnapshotReq:
     def rename_replacement(self, rename_replacement):
         """Sets the rename_replacement of this RestoreSnapshotReq.
 
-        索引重命名的规则。0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?,特殊字符。例如，“restored_index_$1”表示在所有恢复的索引名称前面加上“restored_”。  设置renameReplacement参数时，renamePattern和该参数必须同时设置才能生效。
+        索引重命名的规则。0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?,特殊字符。例如，“restored_index_$1”表示在所有恢复的索引名称前面加上“restored_”。    renamePattern参数与renameReplacement参数必须同时设置才能生效。
 
         :param rename_replacement: The rename_replacement of this RestoreSnapshotReq.
         :type rename_replacement: str

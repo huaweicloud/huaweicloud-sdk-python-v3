@@ -34,9 +34,9 @@ class TaskOutputObs:
 
         The model defined in huaweicloud sdk
 
-        :param bucket: OBS桶名。
+        :param bucket: 任务运行结果输出的OBS桶名。
         :type bucket: str
-        :param path: OBS的路径。
+        :param path: 任务运行结果输出的OBS路径。
         :type path: str
         """
         
@@ -53,7 +53,7 @@ class TaskOutputObs:
     def bucket(self):
         """Gets the bucket of this TaskOutputObs.
 
-        OBS桶名。
+        任务运行结果输出的OBS桶名。
 
         :return: The bucket of this TaskOutputObs.
         :rtype: str
@@ -64,7 +64,7 @@ class TaskOutputObs:
     def bucket(self, bucket):
         """Sets the bucket of this TaskOutputObs.
 
-        OBS桶名。
+        任务运行结果输出的OBS桶名。
 
         :param bucket: The bucket of this TaskOutputObs.
         :type bucket: str
@@ -75,7 +75,7 @@ class TaskOutputObs:
     def path(self):
         """Gets the path of this TaskOutputObs.
 
-        OBS的路径。
+        任务运行结果输出的OBS路径。
 
         :return: The path of this TaskOutputObs.
         :rtype: str
@@ -86,7 +86,7 @@ class TaskOutputObs:
     def path(self, path):
         """Sets the path of this TaskOutputObs.
 
-        OBS的路径。
+        任务运行结果输出的OBS路径。
 
         :param path: The path of this TaskOutputObs.
         :type path: str

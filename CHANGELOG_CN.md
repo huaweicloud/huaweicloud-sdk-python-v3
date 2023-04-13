@@ -1,3 +1,215 @@
+# 3.1.36 2023-04-13
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCustomerselfResourceRecordDetails**
+    - 响应参数变更
+      - `+ monthly_records.pre_order_id`
+      - `+ monthly_records.az_code_infos`
+
+### HuaweiCloud SDK Cloudtest
+
+- _新增特性_
+  - 支持接口`ShowReport`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CPTS
+
+- _新增特性_
+  - 支持接口`UpdateAgentHealthStatus`、`ShowAgentConfig`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowReport**
+    - 响应参数变更
+      - `* result.brokens.commonTimestamps: list<integer> -> list<string>`
+
+### HuaweiCloud SDK EVS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowVolume**
+    - 响应参数变更
+      - `+ volume.iops`
+      - `+ volume.throughput`
+  - **ListVolumes**
+    - 响应参数变更
+      - `+ volumes.iops`
+      - `+ volumes.throughput`
+
+### HuaweiCloud SDK IES
+
+- _新增特性_
+  - 支持接口`ListRacks`、`ShowRack`、`ListStoragePools`、`ShowStoragePool`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Image
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除以下接口：
+    - `CreateVideoSynthesisTask`
+    - `ShowVideoSynthesisTask`
+    - `CreateImageToVideoTask`
+    - `ShowImageToVideoTask`
+    - `CreateVideoCuttingTask`
+    - `ShowVideoCuttingTask`
+    - `RunImageWisedesignCrop`
+    - `RunImageWisedesignInpainting`
+  - **RunImageTagging**
+    - 响应参数变更
+      - `+ result.tags.instances.bounding_box.width`
+      - `+ result.tags.instances.bounding_box.height`
+      - `+ result.tags.instances.bounding_box.top_left_x`
+      - `+ result.tags.instances.bounding_box.top_left_y`
+      - `* result.tags.instances.bounding_box: object -> object<ImageTaggingBoundingBox>`
+  - **RunImageMediaTagging**
+    - 响应参数变更
+      - `+ result.tags.instances.bounding_box.width`
+      - `+ result.tags.instances.bounding_box.height`
+      - `+ result.tags.instances.bounding_box.top_left_x`
+      - `+ result.tags.instances.bounding_box.top_left_y`
+      - `* result.tags.instances.bounding_box: object -> object<BoundingBox>`
+      - `* result.tags.instances: list<ImageTaggingInstance> -> list<ImageMediaTaggingInstance>`
+  - **RunImageMediaTaggingDet**
+    - 响应参数变更
+      - `+ result.tags.instances.bounding_box.width`
+      - `+ result.tags.instances.bounding_box.height`
+      - `+ result.tags.instances.bounding_box.top_left_x`
+      - `+ result.tags.instances.bounding_box.top_left_y`
+      - `* result.tags.instances.bounding_box: object -> object<BoundingBox>`
+  - **ShowVideoShotSplitTask**
+    - 响应参数变更
+      - `- state: enum value [SUCCEEDED,FAILED,RUNNING]`
+  - **CreateVideoTranslateTask**
+    - 请求参数变更
+      - `* body: object<VideoTranslateRequestBody> -> object<CreateVideoTranslateTaskRequestBody>`
+  - **CreateImageHighresolutionMattingTask**
+    - 请求参数变更
+      - `* input.data: list<TaskInputData> -> list<ImageHighresolutionMattingInputData>`
+      - `* input: object<TaskInput> -> object<ImageHighresolutionMattingInput>`
+  - **ShowImageHighresolutionMattingTask**
+    - 响应参数变更
+      - `* input.data: list<TaskInputData> -> list<ImageHighresolutionMattingInputData>`
+      - `* input: object<TaskInput> -> object<ImageHighresolutionMattingInput>`
+  - **CreateImageTranslateTask**
+    - 请求参数变更
+      - `* input.data: list<TaskInputData> -> list<ImageTranslateTaskInputData>`
+      - `* input: object<TaskInput> -> object<ImageTranslateTaskInput>`
+      - `* body: object<ImageTranslateRequestBody> -> object<CreateImageTranslateRequestBody>`
+  - **ShowImageTranslateTask**
+    - 响应参数变更
+      - `* input.data: list<TaskInputData> -> list<ImageTranslateTaskInputData>`
+      - `* input: object<TaskInput> -> object<ImageTranslateTaskInput>`
+  - **CreateVideoCoverAnalysisTask**
+    - 请求参数变更
+      - `* input.data: list<TaskInputData> -> list<VideoCoverAnalysisTaskInputData>`
+      - `* input: object<TaskInput> -> object<VideoCoverAnalysisTaskInput>`
+      - `* body: object<VideoCoverAnalysisCreateTaskRequestBody> -> object<CreateVideoCoverAnalysisTaskRequestBody>`
+  - **ShowVideoCoverAnalysisTask**
+    - 响应参数变更
+      - `* input.data: list<TaskInputData> -> list<VideoCoverAnalysisTaskInputData>`
+      - `* input: object<TaskInput> -> object<VideoCoverAnalysisTaskInput>`
+  - **CreateVideoSummarizationAnalysisTask**
+    - 请求参数变更
+      - `* input.data: list<TaskInputData> -> list<VideoSummarizationTaskInputData>`
+      - `* input: object<TaskInput> -> object<VideoSummarizationTaskInput>`
+      - `* body: object<VideoSummarizationCreateTaskRequestBody> -> object<CreateVideoSummarizationTaskRequestBody>`
+  - **ShowVideoSummarizationAnalysisTask**
+    - 响应参数变更
+      - `* input.data: list<TaskInputData> -> list<VideoSummarizationTaskInputData>`
+      - `* input: object<TaskInput> -> object<VideoSummarizationTaskInput>`
+  - **CreateVideoObjectMaskingTask**
+    - 请求参数变更
+      - `* input.data: list<TaskInputData> -> list<ObjectMaskingTaskInputData>`
+      - `* input: object<TaskInput> -> object<ObjectMaskingTaskInput>`
+  - **ShowVideoObjectMaskingTask**
+    - 响应参数变更
+      - `* input.data: list<TaskInputData> -> list<ObjectMaskingTaskInputData>`
+      - `* input: object<TaskInput> -> object<ObjectMaskingTaskInput>`
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 支持接口`BatchDeleteGroup`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ResizeEngineInstance**
+    - 请求参数变更
+      - `+ publicip_id`
+
+### HuaweiCloud SDK Live
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListSnapshotConfigs`
+    - `UpdateSnapshotConfig`
+    - `CreateSnapshotConfig`
+    - `DeleteSnapshotConfig`
+    - `ShowDomainKeyChain`
+    - `UpdateDomainKeyChain`
+    - `DeleteDomainKeyChain`
+    - `ShowDomainHttpsCert`
+    - `UpdateDomainHttpsCert`
+    - `DeleteDomainHttpsCert`
+    - `UpdateObsBucketAuthorityPublic`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK OSM
+
+- _新增特性_
+  - 支持接口`ListDiagnoseResources`、`ListOrderIncident`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK SIS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeShortAudio**
+    - 请求参数变更
+      - `+ config.property: enum value [english_8k_common,english_16k_common]`
+  - **CollectTranscriberJob**
+    - 响应参数变更
+      - `+ job_id`
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 支持接口`CreateCloudWafPostPaidResource`、`DeleteCloudWafPostPaidResource`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCustomRules**
+    - 响应参数变更
+      - `+ items.name`
+
 # 3.1.35 2023-04-06
 
 ### HuaweiCloud SDK CCM

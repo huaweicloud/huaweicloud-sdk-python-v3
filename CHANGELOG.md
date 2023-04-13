@@ -1,3 +1,215 @@
+# 3.1.36 2023-04-13
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCustomerselfResourceRecordDetails**
+    - changes of response param
+      - `+ monthly_records.pre_order_id`
+      - `+ monthly_records.az_code_infos`
+
+### HuaweiCloud SDK Cloudtest
+
+- _Features_
+  - Support the interface `ShowReport`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CPTS
+
+- _Features_
+  - Support the interfaces `UpdateAgentHealthStatus`, `ShowAgentConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowReport**
+    - changes of response param
+      - `* result.brokens.commonTimestamps: list<integer> -> list<string>`
+
+### HuaweiCloud SDK EVS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowVolume**
+    - changes of response param
+      - `+ volume.iops`
+      - `+ volume.throughput`
+  - **ListVolumes**
+    - changes of response param
+      - `+ volumes.iops`
+      - `+ volumes.throughput`
+
+### HuaweiCloud SDK IES
+
+- _Features_
+  - Support the interfaces `ListRacks`, `ShowRack`, `ListStoragePools`, `ShowStoragePool`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Image
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the following interfaces：
+    - `CreateVideoSynthesisTask`
+    - `ShowVideoSynthesisTask`
+    - `CreateImageToVideoTask`
+    - `ShowImageToVideoTask`
+    - `CreateVideoCuttingTask`
+    - `ShowVideoCuttingTask`
+    - `RunImageWisedesignCrop`
+    - `RunImageWisedesignInpainting`
+  - **RunImageTagging**
+    - changes of response param
+      - `+ result.tags.instances.bounding_box.width`
+      - `+ result.tags.instances.bounding_box.height`
+      - `+ result.tags.instances.bounding_box.top_left_x`
+      - `+ result.tags.instances.bounding_box.top_left_y`
+      - `* result.tags.instances.bounding_box: object -> object<ImageTaggingBoundingBox>`
+  - **RunImageMediaTagging**
+    - changes of response param
+      - `+ result.tags.instances.bounding_box.width`
+      - `+ result.tags.instances.bounding_box.height`
+      - `+ result.tags.instances.bounding_box.top_left_x`
+      - `+ result.tags.instances.bounding_box.top_left_y`
+      - `* result.tags.instances.bounding_box: object -> object<BoundingBox>`
+      - `* result.tags.instances: list<ImageTaggingInstance> -> list<ImageMediaTaggingInstance>`
+  - **RunImageMediaTaggingDet**
+    - changes of response param
+      - `+ result.tags.instances.bounding_box.width`
+      - `+ result.tags.instances.bounding_box.height`
+      - `+ result.tags.instances.bounding_box.top_left_x`
+      - `+ result.tags.instances.bounding_box.top_left_y`
+      - `* result.tags.instances.bounding_box: object -> object<BoundingBox>`
+  - **ShowVideoShotSplitTask**
+    - changes of response param
+      - `- state: enum value [SUCCEEDED,FAILED,RUNNING]`
+  - **CreateVideoTranslateTask**
+    - changes of request param
+      - `* body: object<VideoTranslateRequestBody> -> object<CreateVideoTranslateTaskRequestBody>`
+  - **CreateImageHighresolutionMattingTask**
+    - changes of request param
+      - `* input.data: list<TaskInputData> -> list<ImageHighresolutionMattingInputData>`
+      - `* input: object<TaskInput> -> object<ImageHighresolutionMattingInput>`
+  - **ShowImageHighresolutionMattingTask**
+    - changes of response param
+      - `* input.data: list<TaskInputData> -> list<ImageHighresolutionMattingInputData>`
+      - `* input: object<TaskInput> -> object<ImageHighresolutionMattingInput>`
+  - **CreateImageTranslateTask**
+    - changes of request param
+      - `* input.data: list<TaskInputData> -> list<ImageTranslateTaskInputData>`
+      - `* input: object<TaskInput> -> object<ImageTranslateTaskInput>`
+      - `* body: object<ImageTranslateRequestBody> -> object<CreateImageTranslateRequestBody>`
+  - **ShowImageTranslateTask**
+    - changes of response param
+      - `* input.data: list<TaskInputData> -> list<ImageTranslateTaskInputData>`
+      - `* input: object<TaskInput> -> object<ImageTranslateTaskInput>`
+  - **CreateVideoCoverAnalysisTask**
+    - changes of request param
+      - `* input.data: list<TaskInputData> -> list<VideoCoverAnalysisTaskInputData>`
+      - `* input: object<TaskInput> -> object<VideoCoverAnalysisTaskInput>`
+      - `* body: object<VideoCoverAnalysisCreateTaskRequestBody> -> object<CreateVideoCoverAnalysisTaskRequestBody>`
+  - **ShowVideoCoverAnalysisTask**
+    - changes of response param
+      - `* input.data: list<TaskInputData> -> list<VideoCoverAnalysisTaskInputData>`
+      - `* input: object<TaskInput> -> object<VideoCoverAnalysisTaskInput>`
+  - **CreateVideoSummarizationAnalysisTask**
+    - changes of request param
+      - `* input.data: list<TaskInputData> -> list<VideoSummarizationTaskInputData>`
+      - `* input: object<TaskInput> -> object<VideoSummarizationTaskInput>`
+      - `* body: object<VideoSummarizationCreateTaskRequestBody> -> object<CreateVideoSummarizationTaskRequestBody>`
+  - **ShowVideoSummarizationAnalysisTask**
+    - changes of response param
+      - `* input.data: list<TaskInputData> -> list<VideoSummarizationTaskInputData>`
+      - `* input: object<TaskInput> -> object<VideoSummarizationTaskInput>`
+  - **CreateVideoObjectMaskingTask**
+    - changes of request param
+      - `* input.data: list<TaskInputData> -> list<ObjectMaskingTaskInputData>`
+      - `* input: object<TaskInput> -> object<ObjectMaskingTaskInput>`
+  - **ShowVideoObjectMaskingTask**
+    - changes of response param
+      - `* input.data: list<TaskInputData> -> list<ObjectMaskingTaskInputData>`
+      - `* input: object<TaskInput> -> object<ObjectMaskingTaskInput>`
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - Support the interface `BatchDeleteGroup`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ResizeEngineInstance**
+    - changes of request param
+      - `+ publicip_id`
+
+### HuaweiCloud SDK Live
+
+- _Features_
+  - Support the following interfaces：
+    - `ListSnapshotConfigs`
+    - `UpdateSnapshotConfig`
+    - `CreateSnapshotConfig`
+    - `DeleteSnapshotConfig`
+    - `ShowDomainKeyChain`
+    - `UpdateDomainKeyChain`
+    - `DeleteDomainKeyChain`
+    - `ShowDomainHttpsCert`
+    - `UpdateDomainHttpsCert`
+    - `DeleteDomainHttpsCert`
+    - `UpdateObsBucketAuthorityPublic`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK OSM
+
+- _Features_
+  - Support the interfaces `ListDiagnoseResources`, `ListOrderIncident`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SIS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RecognizeShortAudio**
+    - changes of request param
+      - `+ config.property: enum value [english_8k_common,english_16k_common]`
+  - **CollectTranscriberJob**
+    - changes of response param
+      - `+ job_id`
+
+### HuaweiCloud SDK WAF
+
+- _Features_
+  - Support the interfaces `CreateCloudWafPostPaidResource`, `DeleteCloudWafPostPaidResource`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCustomRules**
+    - changes of response param
+      - `+ items.name`
+
 # 3.1.35 2023-04-06
 
 ### HuaweiCloud SDK CCM

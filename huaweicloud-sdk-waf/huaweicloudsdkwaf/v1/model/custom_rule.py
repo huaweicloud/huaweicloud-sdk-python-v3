@@ -32,7 +32,8 @@ class CustomRule:
         'time': 'bool',
         'start': 'int',
         'terminal': 'int',
-        'producer': 'int'
+        'producer': 'int',
+        'name': 'str'
     }
 
     attribute_map = {
@@ -48,10 +49,11 @@ class CustomRule:
         'time': 'time',
         'start': 'start',
         'terminal': 'terminal',
-        'producer': 'producer'
+        'producer': 'producer',
+        'name': 'name'
     }
 
-    def __init__(self, id=None, policyid=None, description=None, status=None, conditions=None, action=None, action_mode=None, priority=None, timestamp=None, time=None, start=None, terminal=None, producer=None):
+    def __init__(self, id=None, policyid=None, description=None, status=None, conditions=None, action=None, action_mode=None, priority=None, timestamp=None, time=None, start=None, terminal=None, producer=None, name=None):
         """CustomRule
 
         The model defined in huaweicloud sdk
@@ -82,6 +84,8 @@ class CustomRule:
         :type terminal: int
         :param producer: 规则创建对象，该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
         :type producer: int
+        :param name: 规则名称
+        :type name: str
         """
         
         
@@ -99,6 +103,7 @@ class CustomRule:
         self._start = None
         self._terminal = None
         self._producer = None
+        self._name = None
         self.discriminator = None
 
         if id is not None:
@@ -127,6 +132,8 @@ class CustomRule:
             self.terminal = terminal
         if producer is not None:
             self.producer = producer
+        if name is not None:
+            self.name = name
 
     @property
     def id(self):
@@ -409,6 +416,28 @@ class CustomRule:
         :type producer: int
         """
         self._producer = producer
+
+    @property
+    def name(self):
+        """Gets the name of this CustomRule.
+
+        规则名称
+
+        :return: The name of this CustomRule.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this CustomRule.
+
+        规则名称
+
+        :param name: The name of this CustomRule.
+        :type name: str
+        """
+        self._name = name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

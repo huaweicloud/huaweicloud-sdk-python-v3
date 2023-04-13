@@ -24,7 +24,7 @@ class ShowVideoTranslateTaskResponse(SdkResponse):
         'create_time': 'str',
         'update_time': 'str',
         'state': 'str',
-        'input': 'TaskInput',
+        'input': 'VideoTranslateTaskInput',
         'output': 'TaskOutput',
         'config': 'VideoTranslateConfig',
         'param_callback': 'TaskCallback',
@@ -57,7 +57,7 @@ class ShowVideoTranslateTaskResponse(SdkResponse):
         :param state: 任务当前的状态，分别为SUCCEEDED（运行成功），FAILED（运行失败），RUNNING（运行中）。
         :type state: str
         :param input: 
-        :type input: :class:`huaweicloudsdkimage.v2.TaskInput`
+        :type input: :class:`huaweicloudsdkimage.v2.VideoTranslateTaskInput`
         :param output: 
         :type output: :class:`huaweicloudsdkimage.v2.TaskOutput`
         :param config: 
@@ -193,7 +193,7 @@ class ShowVideoTranslateTaskResponse(SdkResponse):
         """Gets the input of this ShowVideoTranslateTaskResponse.
 
         :return: The input of this ShowVideoTranslateTaskResponse.
-        :rtype: :class:`huaweicloudsdkimage.v2.TaskInput`
+        :rtype: :class:`huaweicloudsdkimage.v2.VideoTranslateTaskInput`
         """
         return self._input
 
@@ -202,7 +202,7 @@ class ShowVideoTranslateTaskResponse(SdkResponse):
         """Sets the input of this ShowVideoTranslateTaskResponse.
 
         :param input: The input of this ShowVideoTranslateTaskResponse.
-        :type input: :class:`huaweicloudsdkimage.v2.TaskInput`
+        :type input: :class:`huaweicloudsdkimage.v2.VideoTranslateTaskInput`
         """
         self._input = input
 

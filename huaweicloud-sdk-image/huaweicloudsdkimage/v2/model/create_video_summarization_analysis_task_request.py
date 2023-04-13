@@ -20,7 +20,7 @@ class CreateVideoSummarizationAnalysisTaskRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'VideoSummarizationCreateTaskRequestBody'
+        'body': 'CreateVideoSummarizationTaskRequestBody'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class CreateVideoSummarizationAnalysisTaskRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CreateVideoSummarizationAnalysisTaskRequest
-        :type body: :class:`huaweicloudsdkimage.v2.VideoSummarizationCreateTaskRequestBody`
+        :type body: :class:`huaweicloudsdkimage.v2.CreateVideoSummarizationTaskRequestBody`
         """
         
         
@@ -49,7 +49,7 @@ class CreateVideoSummarizationAnalysisTaskRequest:
         """Gets the body of this CreateVideoSummarizationAnalysisTaskRequest.
 
         :return: The body of this CreateVideoSummarizationAnalysisTaskRequest.
-        :rtype: :class:`huaweicloudsdkimage.v2.VideoSummarizationCreateTaskRequestBody`
+        :rtype: :class:`huaweicloudsdkimage.v2.CreateVideoSummarizationTaskRequestBody`
         """
         return self._body
 
@@ -58,7 +58,7 @@ class CreateVideoSummarizationAnalysisTaskRequest:
         """Sets the body of this CreateVideoSummarizationAnalysisTaskRequest.
 
         :param body: The body of this CreateVideoSummarizationAnalysisTaskRequest.
-        :type body: :class:`huaweicloudsdkimage.v2.VideoSummarizationCreateTaskRequestBody`
+        :type body: :class:`huaweicloudsdkimage.v2.CreateVideoSummarizationTaskRequestBody`
         """
         self._body = body
 

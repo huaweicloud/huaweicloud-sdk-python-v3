@@ -21,7 +21,7 @@ class ReportbrokensInfo:
 
     openapi_types = {
         'brand_brokens': 'BrandBrokens',
-        'common_timestamps': 'list[int]',
+        'common_timestamps': 'list[str]',
         'respcode_brokens': 'RespcodeBrokens',
         'tps_brokens': 'TpsBrokens',
         'vusers_brokens': 'VusersBrokens'
@@ -43,7 +43,7 @@ class ReportbrokensInfo:
         :param brand_brokens: 
         :type brand_brokens: :class:`huaweicloudsdkcpts.v1.BrandBrokens`
         :param common_timestamps: 时间戳
-        :type common_timestamps: list[int]
+        :type common_timestamps: list[str]
         :param respcode_brokens: 
         :type respcode_brokens: :class:`huaweicloudsdkcpts.v1.RespcodeBrokens`
         :param tps_brokens: 
@@ -97,7 +97,7 @@ class ReportbrokensInfo:
         时间戳
 
         :return: The common_timestamps of this ReportbrokensInfo.
-        :rtype: list[int]
+        :rtype: list[str]
         """
         return self._common_timestamps
 
@@ -108,7 +108,7 @@ class ReportbrokensInfo:
         时间戳
 
         :param common_timestamps: The common_timestamps of this ReportbrokensInfo.
-        :type common_timestamps: list[int]
+        :type common_timestamps: list[str]
         """
         self._common_timestamps = common_timestamps
 

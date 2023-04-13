@@ -24,7 +24,7 @@ class ShowImageHighresolutionMattingTaskResponse(SdkResponse):
         'create_time': 'str',
         'update_time': 'str',
         'state': 'str',
-        'input': 'TaskInput',
+        'input': 'ImageHighresolutionMattingInput',
         'output': 'TaskOutput',
         'config': 'ImageHighresolutionMattingConfig',
         'param_callback': 'TaskCallback',
@@ -57,7 +57,7 @@ class ShowImageHighresolutionMattingTaskResponse(SdkResponse):
         :param state: 任务当前的状态，分别为SUCCEEDED（运行成功），FAILED（运行失败），RUNNING（运行中）。
         :type state: str
         :param input: 
-        :type input: :class:`huaweicloudsdkimage.v2.TaskInput`
+        :type input: :class:`huaweicloudsdkimage.v2.ImageHighresolutionMattingInput`
         :param output: 
         :type output: :class:`huaweicloudsdkimage.v2.TaskOutput`
         :param config: 
@@ -193,7 +193,7 @@ class ShowImageHighresolutionMattingTaskResponse(SdkResponse):
         """Gets the input of this ShowImageHighresolutionMattingTaskResponse.
 
         :return: The input of this ShowImageHighresolutionMattingTaskResponse.
-        :rtype: :class:`huaweicloudsdkimage.v2.TaskInput`
+        :rtype: :class:`huaweicloudsdkimage.v2.ImageHighresolutionMattingInput`
         """
         return self._input
 
@@ -202,7 +202,7 @@ class ShowImageHighresolutionMattingTaskResponse(SdkResponse):
         """Sets the input of this ShowImageHighresolutionMattingTaskResponse.
 
         :param input: The input of this ShowImageHighresolutionMattingTaskResponse.
-        :type input: :class:`huaweicloudsdkimage.v2.TaskInput`
+        :type input: :class:`huaweicloudsdkimage.v2.ImageHighresolutionMattingInput`
         """
         self._input = input
 

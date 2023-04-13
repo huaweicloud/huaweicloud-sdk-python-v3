@@ -52,7 +52,7 @@ class ImageTaggingItemBody:
         :type i18n_tag: :class:`huaweicloudsdkimage.v2.ImageTaggingItemBodyI18nTag`
         :param i18n_type: 
         :type i18n_type: :class:`huaweicloudsdkimage.v2.ImageTaggingItemBodyI18nType`
-        :param instances: 目标检测框信息，为空则表示没有目标检测框。
+        :param instances: 目标检测框信息(该服务不返回目标检测信息)。
         :type instances: list[:class:`huaweicloudsdkimage.v2.ImageTaggingInstance`]
         """
         
@@ -185,7 +185,7 @@ class ImageTaggingItemBody:
     def instances(self):
         """Gets the instances of this ImageTaggingItemBody.
 
-        目标检测框信息，为空则表示没有目标检测框。
+        目标检测框信息(该服务不返回目标检测信息)。
 
         :return: The instances of this ImageTaggingItemBody.
         :rtype: list[:class:`huaweicloudsdkimage.v2.ImageTaggingInstance`]
@@ -196,7 +196,7 @@ class ImageTaggingItemBody:
     def instances(self, instances):
         """Sets the instances of this ImageTaggingItemBody.
 
-        目标检测框信息，为空则表示没有目标检测框。
+        目标检测框信息(该服务不返回目标检测信息)。
 
         :param instances: The instances of this ImageTaggingItemBody.
         :type instances: list[:class:`huaweicloudsdkimage.v2.ImageTaggingInstance`]

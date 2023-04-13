@@ -25,7 +25,7 @@ class ImageMediaTaggingItemBody:
         'tag': 'str',
         'i18n_tag': 'ImageMediaTaggingItemBodyI18nTag',
         'i18n_type': 'ImageMediaTaggingItemBodyI18nType',
-        'instances': 'list[ImageTaggingInstance]'
+        'instances': 'list[ImageMediaTaggingInstance]'
     }
 
     attribute_map = {
@@ -53,7 +53,7 @@ class ImageMediaTaggingItemBody:
         :param i18n_type: 
         :type i18n_type: :class:`huaweicloudsdkimage.v2.ImageMediaTaggingItemBodyI18nType`
         :param instances: 目标检测框信息，为空则表示没有目标检测框。
-        :type instances: list[:class:`huaweicloudsdkimage.v2.ImageTaggingInstance`]
+        :type instances: list[:class:`huaweicloudsdkimage.v2.ImageMediaTaggingInstance`]
         """
         
         
@@ -188,7 +188,7 @@ class ImageMediaTaggingItemBody:
         目标检测框信息，为空则表示没有目标检测框。
 
         :return: The instances of this ImageMediaTaggingItemBody.
-        :rtype: list[:class:`huaweicloudsdkimage.v2.ImageTaggingInstance`]
+        :rtype: list[:class:`huaweicloudsdkimage.v2.ImageMediaTaggingInstance`]
         """
         return self._instances
 
@@ -199,7 +199,7 @@ class ImageMediaTaggingItemBody:
         目标检测框信息，为空则表示没有目标检测框。
 
         :param instances: The instances of this ImageMediaTaggingItemBody.
-        :type instances: list[:class:`huaweicloudsdkimage.v2.ImageTaggingInstance`]
+        :type instances: list[:class:`huaweicloudsdkimage.v2.ImageMediaTaggingInstance`]
         """
         self._instances = instances
 

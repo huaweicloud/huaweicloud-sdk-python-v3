@@ -32,7 +32,7 @@ class ChangeSecurityGroupReq:
 
         The model defined in huaweicloud sdk
 
-        :param security_group_ids: 期望安全组的ID。如何获取安全组ID，请参见[[《查询安全组列表》](https://support.huaweicloud.com/api-vpc/vpc_sg01_0003.html)](tag:hc)[[《查询安全组列表》](https://support.huaweicloud.com/intl/zh-cn/api-vpc/vpc_sg01_0003.html)](tag:hk,hws_hk)
+        :param security_group_ids: 期望安全组的ID。
         :type security_group_ids: str
         """
         
@@ -47,7 +47,7 @@ class ChangeSecurityGroupReq:
     def security_group_ids(self):
         """Gets the security_group_ids of this ChangeSecurityGroupReq.
 
-        期望安全组的ID。如何获取安全组ID，请参见[[《查询安全组列表》](https://support.huaweicloud.com/api-vpc/vpc_sg01_0003.html)](tag:hc)[[《查询安全组列表》](https://support.huaweicloud.com/intl/zh-cn/api-vpc/vpc_sg01_0003.html)](tag:hk,hws_hk)
+        期望安全组的ID。
 
         :return: The security_group_ids of this ChangeSecurityGroupReq.
         :rtype: str
@@ -58,7 +58,7 @@ class ChangeSecurityGroupReq:
     def security_group_ids(self, security_group_ids):
         """Sets the security_group_ids of this ChangeSecurityGroupReq.
 
-        期望安全组的ID。如何获取安全组ID，请参见[[《查询安全组列表》](https://support.huaweicloud.com/api-vpc/vpc_sg01_0003.html)](tag:hc)[[《查询安全组列表》](https://support.huaweicloud.com/intl/zh-cn/api-vpc/vpc_sg01_0003.html)](tag:hk,hws_hk)
+        期望安全组的ID。
 
         :param security_group_ids: The security_group_ids of this ChangeSecurityGroupReq.
         :type security_group_ids: str

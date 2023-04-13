@@ -52,7 +52,7 @@ class BootstrapScript:
 
         :param name: 引导操作脚本的名称，同一个集群的引导操作脚本名称不允许相同。 只能由数字、英文字符、空格、中划线和下划线组成，且不能以空格开头。 可输入的字符串长度为1～64个字符。
         :type name: str
-        :param uri: 引导操作脚本的路径。设置为OBS桶的路径或虚拟机本地的路径。 - OBS桶的路径：直接手动输入脚本路径。例如输入MRS提供的公共样例脚本路径。示例：obs://bootstrap/presto/presto-install.sh，其中安装dualroles时，presto-install.sh脚本参数为dualroles, 安装worker时，presto-install.sh脚本参数为worker。根据Presto使用习惯，建议您在Active Master节点上安装dualroles，在Core节点上安装worker。 - 虚拟机本地的路径：用户需要输入正确的脚本路径。脚本所在的路径必须以‘/’开头，以.sh结尾。
+        :param uri: 引导操作脚本的路径。设置为OBS桶的路径或虚拟机本地的路径。 OBS桶的路径：直接手动输入脚本路径。例如输入MRS提供的公共样例脚本路径。示例：obs://bootstrap/presto/presto-install.sh，其中安装dualroles时，presto-install.sh脚本参数为dualroles, 安装worker时，presto-install.sh脚本参数为worker。根据Presto使用习惯，建议您在Active Master节点上安装dualroles，在Core节点上安装worker。 虚拟机本地的路径：用户需要输入正确的脚本路径。脚本所在的路径必须以‘/’开头，以.sh结尾。
         :type uri: str
         :param parameters: 引导操作脚本参数。
         :type parameters: str
@@ -68,7 +68,7 @@ class BootstrapScript:
         :type start_time: int
         :param state: 单个引导操作脚本的运行状态。  - PENDING - IN_PROGRESS - SUCCESS - FAILURE
         :type state: str
-        :param action_stages: 选择引导操作脚本执行的时间。 - BEFORE_COMPONENT_FIRST_START: 组件首次启动后 - AFTER_COMPONENT_FIRST_START: 组件首次启动前 - BEFORE_SCALE_IN: 缩容前 - AFTER_SCALE_IN: 缩容后 - BEFORE_SCALE_OUT: 扩容前 - AFTER_SCALE_OUT: 扩容后
+        :param action_stages: 选择引导操作脚本执行的时间。 - BEFORE_COMPONENT_FIRST_START: 组件首次启动前 - AFTER_COMPONENT_FIRST_START: 组件首次启动后 - BEFORE_SCALE_IN: 缩容前 - AFTER_SCALE_IN: 缩容后 - BEFORE_SCALE_OUT: 扩容前 - AFTER_SCALE_OUT: 扩容后
         :type action_stages: list[str]
         """
         
@@ -129,7 +129,7 @@ class BootstrapScript:
     def uri(self):
         """Gets the uri of this BootstrapScript.
 
-        引导操作脚本的路径。设置为OBS桶的路径或虚拟机本地的路径。 - OBS桶的路径：直接手动输入脚本路径。例如输入MRS提供的公共样例脚本路径。示例：obs://bootstrap/presto/presto-install.sh，其中安装dualroles时，presto-install.sh脚本参数为dualroles, 安装worker时，presto-install.sh脚本参数为worker。根据Presto使用习惯，建议您在Active Master节点上安装dualroles，在Core节点上安装worker。 - 虚拟机本地的路径：用户需要输入正确的脚本路径。脚本所在的路径必须以‘/’开头，以.sh结尾。
+        引导操作脚本的路径。设置为OBS桶的路径或虚拟机本地的路径。 OBS桶的路径：直接手动输入脚本路径。例如输入MRS提供的公共样例脚本路径。示例：obs://bootstrap/presto/presto-install.sh，其中安装dualroles时，presto-install.sh脚本参数为dualroles, 安装worker时，presto-install.sh脚本参数为worker。根据Presto使用习惯，建议您在Active Master节点上安装dualroles，在Core节点上安装worker。 虚拟机本地的路径：用户需要输入正确的脚本路径。脚本所在的路径必须以‘/’开头，以.sh结尾。
 
         :return: The uri of this BootstrapScript.
         :rtype: str
@@ -140,7 +140,7 @@ class BootstrapScript:
     def uri(self, uri):
         """Sets the uri of this BootstrapScript.
 
-        引导操作脚本的路径。设置为OBS桶的路径或虚拟机本地的路径。 - OBS桶的路径：直接手动输入脚本路径。例如输入MRS提供的公共样例脚本路径。示例：obs://bootstrap/presto/presto-install.sh，其中安装dualroles时，presto-install.sh脚本参数为dualroles, 安装worker时，presto-install.sh脚本参数为worker。根据Presto使用习惯，建议您在Active Master节点上安装dualroles，在Core节点上安装worker。 - 虚拟机本地的路径：用户需要输入正确的脚本路径。脚本所在的路径必须以‘/’开头，以.sh结尾。
+        引导操作脚本的路径。设置为OBS桶的路径或虚拟机本地的路径。 OBS桶的路径：直接手动输入脚本路径。例如输入MRS提供的公共样例脚本路径。示例：obs://bootstrap/presto/presto-install.sh，其中安装dualroles时，presto-install.sh脚本参数为dualroles, 安装worker时，presto-install.sh脚本参数为worker。根据Presto使用习惯，建议您在Active Master节点上安装dualroles，在Core节点上安装worker。 虚拟机本地的路径：用户需要输入正确的脚本路径。脚本所在的路径必须以‘/’开头，以.sh结尾。
 
         :param uri: The uri of this BootstrapScript.
         :type uri: str
@@ -305,7 +305,7 @@ class BootstrapScript:
     def action_stages(self):
         """Gets the action_stages of this BootstrapScript.
 
-        选择引导操作脚本执行的时间。 - BEFORE_COMPONENT_FIRST_START: 组件首次启动后 - AFTER_COMPONENT_FIRST_START: 组件首次启动前 - BEFORE_SCALE_IN: 缩容前 - AFTER_SCALE_IN: 缩容后 - BEFORE_SCALE_OUT: 扩容前 - AFTER_SCALE_OUT: 扩容后
+        选择引导操作脚本执行的时间。 - BEFORE_COMPONENT_FIRST_START: 组件首次启动前 - AFTER_COMPONENT_FIRST_START: 组件首次启动后 - BEFORE_SCALE_IN: 缩容前 - AFTER_SCALE_IN: 缩容后 - BEFORE_SCALE_OUT: 扩容前 - AFTER_SCALE_OUT: 扩容后
 
         :return: The action_stages of this BootstrapScript.
         :rtype: list[str]
@@ -316,7 +316,7 @@ class BootstrapScript:
     def action_stages(self, action_stages):
         """Sets the action_stages of this BootstrapScript.
 
-        选择引导操作脚本执行的时间。 - BEFORE_COMPONENT_FIRST_START: 组件首次启动后 - AFTER_COMPONENT_FIRST_START: 组件首次启动前 - BEFORE_SCALE_IN: 缩容前 - AFTER_SCALE_IN: 缩容后 - BEFORE_SCALE_OUT: 扩容前 - AFTER_SCALE_OUT: 扩容后
+        选择引导操作脚本执行的时间。 - BEFORE_COMPONENT_FIRST_START: 组件首次启动前 - AFTER_COMPONENT_FIRST_START: 组件首次启动后 - BEFORE_SCALE_IN: 缩容前 - AFTER_SCALE_IN: 缩容后 - BEFORE_SCALE_OUT: 扩容前 - AFTER_SCALE_OUT: 扩容后
 
         :param action_stages: The action_stages of this BootstrapScript.
         :type action_stages: list[str]

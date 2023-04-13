@@ -3257,6 +3257,67 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_diagnose_resources_async(self, request):
+        """获取资源信息
+
+        获取资源信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDiagnoseResources
+        :type request: :class:`huaweicloudsdkosm.v2.ListDiagnoseResourcesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListDiagnoseResourcesResponse`
+        """
+        return self.list_diagnose_resources_with_http_info(request)
+
+    def list_diagnose_resources_with_http_info(self, request):
+        all_params = ['list_diagnose_resources_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/servicerequest/diagnose/job/vm/resources',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListDiagnoseResourcesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_extends_params_async(self, request):
         """查询附加参数
 
@@ -3989,6 +4050,99 @@ class OsmAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListNoticesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_order_incident_async(self, request):
+        """工单列表
+
+        工单列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOrderIncident
+        :type request: :class:`huaweicloudsdkosm.v2.ListOrderIncidentRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListOrderIncidentResponse`
+        """
+        return self.list_order_incident_with_http_info(request)
+
+    def list_order_incident_with_http_info(self, request):
+        all_params = ['version', 'search_key', 'label_id_list', 'app_key', 'incident_id', 'query_start_time', 'query_end_time', 'status', 'incident_status', 'x_customer_name', 'group_id', 'product_category_id', 'business_type_id', 'page_no', 'page_size', 'xcustomer_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'version' in local_var_params:
+            query_params.append(('version', local_var_params['version']))
+        if 'search_key' in local_var_params:
+            query_params.append(('searchKey', local_var_params['search_key']))
+            collection_formats['searchKey'] = 'multi'
+        if 'label_id_list' in local_var_params:
+            query_params.append(('labelIdList', local_var_params['label_id_list']))
+            collection_formats['labelIdList'] = 'multi'
+        if 'app_key' in local_var_params:
+            query_params.append(('appKey', local_var_params['app_key']))
+        if 'incident_id' in local_var_params:
+            query_params.append(('incidentId', local_var_params['incident_id']))
+        if 'query_start_time' in local_var_params:
+            query_params.append(('queryStartTime', local_var_params['query_start_time']))
+        if 'query_end_time' in local_var_params:
+            query_params.append(('queryEndTime', local_var_params['query_end_time']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'incident_status' in local_var_params:
+            query_params.append(('incidentStatus', local_var_params['incident_status']))
+        if 'x_customer_name' in local_var_params:
+            query_params.append(('xCustomerName', local_var_params['x_customer_name']))
+        if 'group_id' in local_var_params:
+            query_params.append(('groupId', local_var_params['group_id']))
+        if 'product_category_id' in local_var_params:
+            query_params.append(('productCategoryId', local_var_params['product_category_id']))
+        if 'business_type_id' in local_var_params:
+            query_params.append(('businessTypeId', local_var_params['business_type_id']))
+        if 'page_no' in local_var_params:
+            query_params.append(('pageNo', local_var_params['page_no']))
+        if 'page_size' in local_var_params:
+            query_params.append(('pageSize', local_var_params['page_size']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/osm/incidentservice/api/v1/queryincident',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListOrderIncidentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

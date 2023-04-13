@@ -20,7 +20,7 @@ class CreateImageTranslateTaskRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'ImageTranslateRequestBody'
+        'body': 'CreateImageTranslateRequestBody'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class CreateImageTranslateTaskRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CreateImageTranslateTaskRequest
-        :type body: :class:`huaweicloudsdkimage.v2.ImageTranslateRequestBody`
+        :type body: :class:`huaweicloudsdkimage.v2.CreateImageTranslateRequestBody`
         """
         
         
@@ -49,7 +49,7 @@ class CreateImageTranslateTaskRequest:
         """Gets the body of this CreateImageTranslateTaskRequest.
 
         :return: The body of this CreateImageTranslateTaskRequest.
-        :rtype: :class:`huaweicloudsdkimage.v2.ImageTranslateRequestBody`
+        :rtype: :class:`huaweicloudsdkimage.v2.CreateImageTranslateRequestBody`
         """
         return self._body
 
@@ -58,7 +58,7 @@ class CreateImageTranslateTaskRequest:
         """Sets the body of this CreateImageTranslateTaskRequest.
 
         :param body: The body of this CreateImageTranslateTaskRequest.
-        :type body: :class:`huaweicloudsdkimage.v2.ImageTranslateRequestBody`
+        :type body: :class:`huaweicloudsdkimage.v2.CreateImageTranslateRequestBody`
         """
         self._body = body
 

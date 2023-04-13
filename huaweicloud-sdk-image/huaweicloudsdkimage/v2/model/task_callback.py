@@ -32,7 +32,7 @@ class TaskCallback:
 
         The model defined in huaweicloud sdk
 
-        :param url: 回调url地址。
+        :param url: 回调url地址，用于通知客户任务运行结束。
         :type url: str
         """
         
@@ -48,7 +48,7 @@ class TaskCallback:
     def url(self):
         """Gets the url of this TaskCallback.
 
-        回调url地址。
+        回调url地址，用于通知客户任务运行结束。
 
         :return: The url of this TaskCallback.
         :rtype: str
@@ -59,7 +59,7 @@ class TaskCallback:
     def url(self, url):
         """Sets the url of this TaskCallback.
 
-        回调url地址。
+        回调url地址，用于通知客户任务运行结束。
 
         :param url: The url of this TaskCallback.
         :type url: str

@@ -489,6 +489,70 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_cloud_waf_post_paid_resource(self, request):
+        """开通云模式按需计费接口
+
+        开通云模式按需计费接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateCloudWafPostPaidResource
+        :type request: :class:`huaweicloudsdkwaf.v1.CreateCloudWafPostPaidResourceRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreateCloudWafPostPaidResourceResponse`
+        """
+        return self.create_cloud_waf_post_paid_resource_with_http_info(request)
+
+    def create_cloud_waf_post_paid_resource_with_http_info(self, request):
+        all_params = ['region', 'create_cloud_waf_post_paid_resource_request_body', 'enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+        if 'region' in local_var_params:
+            header_params['region'] = local_var_params['region']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/waf/postpaid',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateCloudWafPostPaidResourceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_custom_rule(self, request):
         """创建精准防护规则
 
@@ -1620,6 +1684,68 @@ class WafClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteCertificateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_cloud_waf_post_paid_resource(self, request):
+        """关闭云模式按需计费接口
+
+        关闭云模式按需计费接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteCloudWafPostPaidResource
+        :type request: :class:`huaweicloudsdkwaf.v1.DeleteCloudWafPostPaidResourceRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.DeleteCloudWafPostPaidResourceResponse`
+        """
+        return self.delete_cloud_waf_post_paid_resource_with_http_info(request)
+
+    def delete_cloud_waf_post_paid_resource_with_http_info(self, request):
+        all_params = ['region', 'enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+        if 'region' in local_var_params:
+            header_params['region'] = local_var_params['region']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/waf/postpaid',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteCloudWafPostPaidResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3668,9 +3794,9 @@ class WafClient(Client):
             request_type=request.__class__.__name__)
 
     def list_privacy_rule(self, request):
-        """查询隐私屏蔽防护规则
+        """查询隐私屏蔽防护规则列表
 
-        查询隐私屏蔽防护规则
+        查询隐私屏蔽防护规则列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 

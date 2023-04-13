@@ -59,7 +59,9 @@ class MonthlyBillRes:
         'sub_resource_type_code': 'str',
         'sub_resource_type_name': 'str',
         'sub_resource_id': 'str',
-        'sub_resource_name': 'str'
+        'sub_resource_name': 'str',
+        'pre_order_id': 'str',
+        'az_code_infos': 'list[AzCodeInfo]'
     }
 
     attribute_map = {
@@ -102,10 +104,12 @@ class MonthlyBillRes:
         'sub_resource_type_code': 'sub_resource_type_code',
         'sub_resource_type_name': 'sub_resource_type_name',
         'sub_resource_id': 'sub_resource_id',
-        'sub_resource_name': 'sub_resource_name'
+        'sub_resource_name': 'sub_resource_name',
+        'pre_order_id': 'pre_order_id',
+        'az_code_infos': 'az_code_infos'
     }
 
-    def __init__(self, cycle=None, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, cloud_service_type_name=None, resource_type_name=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None, period_type=None, root_resource_id=None, parent_resource_id=None, trade_id=None, product_spec_desc=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None):
+    def __init__(self, cycle=None, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, cloud_service_type_name=None, resource_type_name=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None, period_type=None, root_resource_id=None, parent_resource_id=None, trade_id=None, product_spec_desc=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, pre_order_id=None, az_code_infos=None):
         """MonthlyBillRes
 
         The model defined in huaweicloud sdk
@@ -190,6 +194,10 @@ class MonthlyBillRes:
         :type sub_resource_id: str
         :param sub_resource_name: 该字段为预留字段。
         :type sub_resource_name: str
+        :param pre_order_id: 原订单ID 。
+        :type pre_order_id: str
+        :param az_code_infos: 可用区信息列表。具体请参见表 AzCodeInfo。
+        :type az_code_infos: list[:class:`huaweicloudsdkbss.v2.AzCodeInfo`]
         """
         
         
@@ -234,6 +242,8 @@ class MonthlyBillRes:
         self._sub_resource_type_name = None
         self._sub_resource_id = None
         self._sub_resource_name = None
+        self._pre_order_id = None
+        self._az_code_infos = None
         self.discriminator = None
 
         if cycle is not None:
@@ -316,6 +326,10 @@ class MonthlyBillRes:
             self.sub_resource_id = sub_resource_id
         if sub_resource_name is not None:
             self.sub_resource_name = sub_resource_name
+        if pre_order_id is not None:
+            self.pre_order_id = pre_order_id
+        if az_code_infos is not None:
+            self.az_code_infos = az_code_infos
 
     @property
     def cycle(self):
@@ -1196,6 +1210,50 @@ class MonthlyBillRes:
         :type sub_resource_name: str
         """
         self._sub_resource_name = sub_resource_name
+
+    @property
+    def pre_order_id(self):
+        """Gets the pre_order_id of this MonthlyBillRes.
+
+        原订单ID 。
+
+        :return: The pre_order_id of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._pre_order_id
+
+    @pre_order_id.setter
+    def pre_order_id(self, pre_order_id):
+        """Sets the pre_order_id of this MonthlyBillRes.
+
+        原订单ID 。
+
+        :param pre_order_id: The pre_order_id of this MonthlyBillRes.
+        :type pre_order_id: str
+        """
+        self._pre_order_id = pre_order_id
+
+    @property
+    def az_code_infos(self):
+        """Gets the az_code_infos of this MonthlyBillRes.
+
+        可用区信息列表。具体请参见表 AzCodeInfo。
+
+        :return: The az_code_infos of this MonthlyBillRes.
+        :rtype: list[:class:`huaweicloudsdkbss.v2.AzCodeInfo`]
+        """
+        return self._az_code_infos
+
+    @az_code_infos.setter
+    def az_code_infos(self, az_code_infos):
+        """Sets the az_code_infos of this MonthlyBillRes.
+
+        可用区信息列表。具体请参见表 AzCodeInfo。
+
+        :param az_code_infos: The az_code_infos of this MonthlyBillRes.
+        :type az_code_infos: list[:class:`huaweicloudsdkbss.v2.AzCodeInfo`]
+        """
+        self._az_code_infos = az_code_infos
 
     def to_dict(self):
         """Returns the model properties as a dict"""

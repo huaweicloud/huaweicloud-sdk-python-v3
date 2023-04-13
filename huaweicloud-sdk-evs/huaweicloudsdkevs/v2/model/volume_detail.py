@@ -53,7 +53,9 @@ class VolumeDetail:
         'tags': 'dict(str, str)',
         'wwn': 'str',
         'enterprise_project_id': 'str',
-        'serial_number': 'str'
+        'serial_number': 'str',
+        'iops': 'Iops',
+        'throughput': 'Throughput'
     }
 
     attribute_map = {
@@ -90,10 +92,12 @@ class VolumeDetail:
         'tags': 'tags',
         'wwn': 'wwn',
         'enterprise_project_id': 'enterprise_project_id',
-        'serial_number': 'serial_number'
+        'serial_number': 'serial_number',
+        'iops': 'iops',
+        'throughput': 'throughput'
     }
 
-    def __init__(self, id=None, links=None, name=None, status=None, attachments=None, availability_zone=None, os_vol_host_attrhost=None, source_volid=None, snapshot_id=None, description=None, created_at=None, os_vol_tenant_attrtenant_id=None, volume_image_metadata=None, volume_type=None, size=None, consistencygroup_id=None, bootable=None, metadata=None, updated_at=None, encrypted=None, replication_status=None, os_volume_replicationextended_status=None, os_vol_mig_status_attrmigstat=None, os_vol_mig_status_attrname_id=None, shareable=None, user_id=None, service_type=None, multiattach=None, dedicated_storage_id=None, dedicated_storage_name=None, tags=None, wwn=None, enterprise_project_id=None, serial_number=None):
+    def __init__(self, id=None, links=None, name=None, status=None, attachments=None, availability_zone=None, os_vol_host_attrhost=None, source_volid=None, snapshot_id=None, description=None, created_at=None, os_vol_tenant_attrtenant_id=None, volume_image_metadata=None, volume_type=None, size=None, consistencygroup_id=None, bootable=None, metadata=None, updated_at=None, encrypted=None, replication_status=None, os_volume_replicationextended_status=None, os_vol_mig_status_attrmigstat=None, os_vol_mig_status_attrname_id=None, shareable=None, user_id=None, service_type=None, multiattach=None, dedicated_storage_id=None, dedicated_storage_name=None, tags=None, wwn=None, enterprise_project_id=None, serial_number=None, iops=None, throughput=None):
         """VolumeDetail
 
         The model defined in huaweicloud sdk
@@ -166,6 +170,10 @@ class VolumeDetail:
         :type enterprise_project_id: str
         :param serial_number: 云硬盘序列号。 只有SCSI类型的非双活卷才会返回该字段，用于与虚拟机中的盘做对应关系。
         :type serial_number: str
+        :param iops: 
+        :type iops: :class:`huaweicloudsdkevs.v2.Iops`
+        :param throughput: 
+        :type throughput: :class:`huaweicloudsdkevs.v2.Throughput`
         """
         
         
@@ -204,6 +212,8 @@ class VolumeDetail:
         self._wwn = None
         self._enterprise_project_id = None
         self._serial_number = None
+        self._iops = None
+        self._throughput = None
         self.discriminator = None
 
         self.id = id
@@ -248,6 +258,10 @@ class VolumeDetail:
             self.enterprise_project_id = enterprise_project_id
         if serial_number is not None:
             self.serial_number = serial_number
+        if iops is not None:
+            self.iops = iops
+        if throughput is not None:
+            self.throughput = throughput
 
     @property
     def id(self):
@@ -996,6 +1010,42 @@ class VolumeDetail:
         :type serial_number: str
         """
         self._serial_number = serial_number
+
+    @property
+    def iops(self):
+        """Gets the iops of this VolumeDetail.
+
+        :return: The iops of this VolumeDetail.
+        :rtype: :class:`huaweicloudsdkevs.v2.Iops`
+        """
+        return self._iops
+
+    @iops.setter
+    def iops(self, iops):
+        """Sets the iops of this VolumeDetail.
+
+        :param iops: The iops of this VolumeDetail.
+        :type iops: :class:`huaweicloudsdkevs.v2.Iops`
+        """
+        self._iops = iops
+
+    @property
+    def throughput(self):
+        """Gets the throughput of this VolumeDetail.
+
+        :return: The throughput of this VolumeDetail.
+        :rtype: :class:`huaweicloudsdkevs.v2.Throughput`
+        """
+        return self._throughput
+
+    @throughput.setter
+    def throughput(self, throughput):
+        """Sets the throughput of this VolumeDetail.
+
+        :param throughput: The throughput of this VolumeDetail.
+        :type throughput: :class:`huaweicloudsdkevs.v2.Throughput`
+        """
+        self._throughput = throughput
 
     def to_dict(self):
         """Returns the model properties as a dict"""

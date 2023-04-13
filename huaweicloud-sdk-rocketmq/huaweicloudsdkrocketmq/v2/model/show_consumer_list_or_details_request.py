@@ -46,7 +46,7 @@ class ShowConsumerListOrDetailsRequest:
         :type group: str
         :param topic: 待查询的topic，不指定时查询topic列表，指定时查询详情。
         :type topic: str
-        :param limit: 当次查询返回的最大个数,默认值为10,取值范围为1~50。
+        :param limit: 当次查询返回的最大个数，默认值为10，取值范围为1~50。
         :type limit: int
         :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
         :type offset: int
@@ -140,7 +140,7 @@ class ShowConsumerListOrDetailsRequest:
     def limit(self):
         """Gets the limit of this ShowConsumerListOrDetailsRequest.
 
-        当次查询返回的最大个数,默认值为10,取值范围为1~50。
+        当次查询返回的最大个数，默认值为10，取值范围为1~50。
 
         :return: The limit of this ShowConsumerListOrDetailsRequest.
         :rtype: int
@@ -151,7 +151,7 @@ class ShowConsumerListOrDetailsRequest:
     def limit(self, limit):
         """Sets the limit of this ShowConsumerListOrDetailsRequest.
 
-        当次查询返回的最大个数,默认值为10,取值范围为1~50。
+        当次查询返回的最大个数，默认值为10，取值范围为1~50。
 
         :param limit: The limit of this ShowConsumerListOrDetailsRequest.
         :type limit: int

@@ -42,9 +42,9 @@ class ListConsumerGroupOfTopicRequest:
         :type instance_id: str
         :param topic: 主题名称。
         :type topic: str
-        :param limit: 当次查询返回的最大个数,默认值为10,取值范围为1~50。
+        :param limit: 当次查询返回的最大个数，默认值为10，取值范围为1~50。
         :type limit: int
-        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
+        :param offset: 偏移量，表示从此偏移量开始查询，offset大于等于0。
         :type offset: int
         """
         
@@ -111,7 +111,7 @@ class ListConsumerGroupOfTopicRequest:
     def limit(self):
         """Gets the limit of this ListConsumerGroupOfTopicRequest.
 
-        当次查询返回的最大个数,默认值为10,取值范围为1~50。
+        当次查询返回的最大个数，默认值为10，取值范围为1~50。
 
         :return: The limit of this ListConsumerGroupOfTopicRequest.
         :rtype: int
@@ -122,7 +122,7 @@ class ListConsumerGroupOfTopicRequest:
     def limit(self, limit):
         """Sets the limit of this ListConsumerGroupOfTopicRequest.
 
-        当次查询返回的最大个数,默认值为10,取值范围为1~50。
+        当次查询返回的最大个数，默认值为10，取值范围为1~50。
 
         :param limit: The limit of this ListConsumerGroupOfTopicRequest.
         :type limit: int
@@ -133,7 +133,7 @@ class ListConsumerGroupOfTopicRequest:
     def offset(self):
         """Gets the offset of this ListConsumerGroupOfTopicRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0。
+        偏移量，表示从此偏移量开始查询，offset大于等于0。
 
         :return: The offset of this ListConsumerGroupOfTopicRequest.
         :rtype: int
@@ -144,7 +144,7 @@ class ListConsumerGroupOfTopicRequest:
     def offset(self, offset):
         """Sets the offset of this ListConsumerGroupOfTopicRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0。
+        偏移量，表示从此偏移量开始查询，offset大于等于0。
 
         :param offset: The offset of this ListConsumerGroupOfTopicRequest.
         :type offset: int

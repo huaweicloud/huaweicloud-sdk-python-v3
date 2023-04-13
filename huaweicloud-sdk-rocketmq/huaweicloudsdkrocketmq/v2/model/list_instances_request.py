@@ -62,7 +62,7 @@ class ListInstancesRequest:
         :type exact_match_name: str
         :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
-        :param limit: 当次查询返回的最大个数,默认值为10,取值范围为1~50。
+        :param limit: 当次查询返回的最大个数，默认值为10，取值范围为1~50。
         :type limit: int
         :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
         :type offset: int
@@ -258,7 +258,7 @@ class ListInstancesRequest:
     def limit(self):
         """Gets the limit of this ListInstancesRequest.
 
-        当次查询返回的最大个数,默认值为10,取值范围为1~50。
+        当次查询返回的最大个数，默认值为10，取值范围为1~50。
 
         :return: The limit of this ListInstancesRequest.
         :rtype: int
@@ -269,7 +269,7 @@ class ListInstancesRequest:
     def limit(self, limit):
         """Sets the limit of this ListInstancesRequest.
 
-        当次查询返回的最大个数,默认值为10,取值范围为1~50。
+        当次查询返回的最大个数，默认值为10，取值范围为1~50。
 
         :param limit: The limit of this ListInstancesRequest.
         :type limit: int

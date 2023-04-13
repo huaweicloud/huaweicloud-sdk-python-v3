@@ -654,6 +654,66 @@ class CptsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_agent_config(self, request):
+        """全链路压测探针获取配置信息
+
+        全链路压测探针获取配置信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAgentConfig
+        :type request: :class:`huaweicloudsdkcpts.v1.ShowAgentConfigRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.ShowAgentConfigResponse`
+        """
+        return self.show_agent_config_with_http_info(request)
+
+    def show_agent_config_with_http_info(self, request):
+        all_params = ['show_agent_config_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/cpts/{project_id}/stress/agents',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowAgentConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_history_run_info(self, request):
         """查询CPTS任务离线报告列表
 
@@ -1021,6 +1081,68 @@ class CptsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowTempSetResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_agent_health_status(self, request):
+        """全链路压测探针上报健康状态
+
+        全链路压测探针上报健康状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAgentHealthStatus
+        :type request: :class:`huaweicloudsdkcpts.v1.UpdateAgentHealthStatusRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.UpdateAgentHealthStatusResponse`
+        """
+        return self.update_agent_health_status_with_http_info(request)
+
+    def update_agent_health_status_with_http_info(self, request):
+        all_params = ['agent_id', 'update_agent_health_status_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'agent_id' in local_var_params:
+            path_params['agent_id'] = local_var_params['agent_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/stress/agents/{agent_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateAgentHealthStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

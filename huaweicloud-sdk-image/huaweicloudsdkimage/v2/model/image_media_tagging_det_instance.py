@@ -20,7 +20,7 @@ class ImageMediaTaggingDetInstance:
     sensitive_list = []
 
     openapi_types = {
-        'bounding_box': 'object',
+        'bounding_box': 'BoundingBox',
         'confidence': 'str'
     }
 
@@ -34,8 +34,8 @@ class ImageMediaTaggingDetInstance:
 
         The model defined in huaweicloud sdk
 
-        :param bounding_box: 目标检测框位置信息，包括4个值：  width：检测框区域宽度  height：检测框区域高度  top_left_x：检测框左上角到垂直轴距离  top_left_y：检测框左上角到水平轴距离 
-        :type bounding_box: object
+        :param bounding_box: 
+        :type bounding_box: :class:`huaweicloudsdkimage.v2.BoundingBox`
         :param confidence: 检测标签的置信度，将Float型置信度转为String类型返回，Float取值范围（0~100）。
         :type confidence: str
         """
@@ -55,10 +55,8 @@ class ImageMediaTaggingDetInstance:
     def bounding_box(self):
         """Gets the bounding_box of this ImageMediaTaggingDetInstance.
 
-        目标检测框位置信息，包括4个值：  width：检测框区域宽度  height：检测框区域高度  top_left_x：检测框左上角到垂直轴距离  top_left_y：检测框左上角到水平轴距离 
-
         :return: The bounding_box of this ImageMediaTaggingDetInstance.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkimage.v2.BoundingBox`
         """
         return self._bounding_box
 
@@ -66,10 +64,8 @@ class ImageMediaTaggingDetInstance:
     def bounding_box(self, bounding_box):
         """Sets the bounding_box of this ImageMediaTaggingDetInstance.
 
-        目标检测框位置信息，包括4个值：  width：检测框区域宽度  height：检测框区域高度  top_left_x：检测框左上角到垂直轴距离  top_left_y：检测框左上角到水平轴距离 
-
         :param bounding_box: The bounding_box of this ImageMediaTaggingDetInstance.
-        :type bounding_box: object
+        :type bounding_box: :class:`huaweicloudsdkimage.v2.BoundingBox`
         """
         self._bounding_box = bounding_box
 

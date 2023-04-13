@@ -23,17 +23,19 @@ class ResizeEngineInstanceReq:
         'oper_type': 'str',
         'new_storage_space': 'int',
         'new_broker_num': 'int',
-        'new_product_id': 'str'
+        'new_product_id': 'str',
+        'publicip_id': 'str'
     }
 
     attribute_map = {
         'oper_type': 'oper_type',
         'new_storage_space': 'new_storage_space',
         'new_broker_num': 'new_broker_num',
-        'new_product_id': 'new_product_id'
+        'new_product_id': 'new_product_id',
+        'publicip_id': 'publicip_id'
     }
 
-    def __init__(self, oper_type=None, new_storage_space=None, new_broker_num=None, new_product_id=None):
+    def __init__(self, oper_type=None, new_storage_space=None, new_broker_num=None, new_product_id=None, publicip_id=None):
         """ResizeEngineInstanceReq
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class ResizeEngineInstanceReq:
         :type new_broker_num: int
         :param new_product_id: 垂直扩容时的新产品ID。  当oper_type类型是vertical时，该参数才有效且必填。
         :type new_product_id: str
+        :param publicip_id: 实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 当oper_type类型是horizontal时，该参数必填。
+        :type publicip_id: str
         """
         
         
@@ -54,6 +58,7 @@ class ResizeEngineInstanceReq:
         self._new_storage_space = None
         self._new_broker_num = None
         self._new_product_id = None
+        self._publicip_id = None
         self.discriminator = None
 
         self.oper_type = oper_type
@@ -63,6 +68,8 @@ class ResizeEngineInstanceReq:
             self.new_broker_num = new_broker_num
         if new_product_id is not None:
             self.new_product_id = new_product_id
+        if publicip_id is not None:
+            self.publicip_id = publicip_id
 
     @property
     def oper_type(self):
@@ -151,6 +158,28 @@ class ResizeEngineInstanceReq:
         :type new_product_id: str
         """
         self._new_product_id = new_product_id
+
+    @property
+    def publicip_id(self):
+        """Gets the publicip_id of this ResizeEngineInstanceReq.
+
+        实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 当oper_type类型是horizontal时，该参数必填。
+
+        :return: The publicip_id of this ResizeEngineInstanceReq.
+        :rtype: str
+        """
+        return self._publicip_id
+
+    @publicip_id.setter
+    def publicip_id(self, publicip_id):
+        """Sets the publicip_id of this ResizeEngineInstanceReq.
+
+        实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 当oper_type类型是horizontal时，该参数必填。
+
+        :param publicip_id: The publicip_id of this ResizeEngineInstanceReq.
+        :type publicip_id: str
+        """
+        self._publicip_id = publicip_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

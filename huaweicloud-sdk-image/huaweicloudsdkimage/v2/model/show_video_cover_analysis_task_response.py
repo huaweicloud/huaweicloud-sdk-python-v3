@@ -24,7 +24,7 @@ class ShowVideoCoverAnalysisTaskResponse(SdkResponse):
         'create_time': 'str',
         'update_time': 'str',
         'state': 'str',
-        'input': 'TaskInput',
+        'input': 'VideoCoverAnalysisTaskInput',
         'output': 'TaskOutput',
         'config': 'VideoCoverAnalysisConfig',
         'param_callback': 'TaskCallback',
@@ -57,7 +57,7 @@ class ShowVideoCoverAnalysisTaskResponse(SdkResponse):
         :param state: 任务当前的状态，分别为SUCCEEDED（运行成功），FAILED（运行失败），RUNNING（运行中）。
         :type state: str
         :param input: 
-        :type input: :class:`huaweicloudsdkimage.v2.TaskInput`
+        :type input: :class:`huaweicloudsdkimage.v2.VideoCoverAnalysisTaskInput`
         :param output: 
         :type output: :class:`huaweicloudsdkimage.v2.TaskOutput`
         :param config: 
@@ -193,7 +193,7 @@ class ShowVideoCoverAnalysisTaskResponse(SdkResponse):
         """Gets the input of this ShowVideoCoverAnalysisTaskResponse.
 
         :return: The input of this ShowVideoCoverAnalysisTaskResponse.
-        :rtype: :class:`huaweicloudsdkimage.v2.TaskInput`
+        :rtype: :class:`huaweicloudsdkimage.v2.VideoCoverAnalysisTaskInput`
         """
         return self._input
 
@@ -202,7 +202,7 @@ class ShowVideoCoverAnalysisTaskResponse(SdkResponse):
         """Sets the input of this ShowVideoCoverAnalysisTaskResponse.
 
         :param input: The input of this ShowVideoCoverAnalysisTaskResponse.
-        :type input: :class:`huaweicloudsdkimage.v2.TaskInput`
+        :type input: :class:`huaweicloudsdkimage.v2.VideoCoverAnalysisTaskInput`
         """
         self._input = input
 

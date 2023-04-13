@@ -3,6 +3,7 @@
 from __future__ import absolute_import
 
 # import models into model package
+from huaweicloudsdkcpts.v1.model.agent_config import AgentConfig
 from huaweicloudsdkcpts.v1.model.brand_brokens import BrandBrokens
 from huaweicloudsdkcpts.v1.model.case_info import CaseInfo
 from huaweicloudsdkcpts.v1.model.code_message_resq import CodeMessageResq
@@ -66,6 +67,9 @@ from huaweicloudsdkcpts.v1.model.reportdetail_item_info import ReportdetailItemI
 from huaweicloudsdkcpts.v1.model.reportdetails_info import ReportdetailsInfo
 from huaweicloudsdkcpts.v1.model.reportoutline_info import ReportoutlineInfo
 from huaweicloudsdkcpts.v1.model.respcode_brokens import RespcodeBrokens
+from huaweicloudsdkcpts.v1.model.show_agent_config_request import ShowAgentConfigRequest
+from huaweicloudsdkcpts.v1.model.show_agent_config_request_body import ShowAgentConfigRequestBody
+from huaweicloudsdkcpts.v1.model.show_agent_config_response import ShowAgentConfigResponse
 from huaweicloudsdkcpts.v1.model.show_history_run_info_request import ShowHistoryRunInfoRequest
 from huaweicloudsdkcpts.v1.model.show_history_run_info_response import ShowHistoryRunInfoResponse
 from huaweicloudsdkcpts.v1.model.show_process_request import ShowProcessRequest
@@ -94,6 +98,10 @@ from huaweicloudsdkcpts.v1.model.temp_name import TempName
 from huaweicloudsdkcpts.v1.model.temp_running_data import TempRunningData
 from huaweicloudsdkcpts.v1.model.test_case_stage import TestCaseStage
 from huaweicloudsdkcpts.v1.model.tps_brokens import TpsBrokens
+from huaweicloudsdkcpts.v1.model.update_agent_health_status_request import UpdateAgentHealthStatusRequest
+from huaweicloudsdkcpts.v1.model.update_agent_health_status_request_body import UpdateAgentHealthStatusRequestBody
+from huaweicloudsdkcpts.v1.model.update_agent_health_status_response import UpdateAgentHealthStatusResponse
+from huaweicloudsdkcpts.v1.model.update_agent_status_response_detail import UpdateAgentStatusResponseDetail
 from huaweicloudsdkcpts.v1.model.update_case_request import UpdateCaseRequest
 from huaweicloudsdkcpts.v1.model.update_case_response import UpdateCaseResponse
 from huaweicloudsdkcpts.v1.model.update_new_task_request_body import UpdateNewTaskRequestBody
