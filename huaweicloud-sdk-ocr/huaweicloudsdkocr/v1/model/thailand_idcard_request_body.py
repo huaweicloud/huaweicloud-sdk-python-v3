@@ -54,7 +54,7 @@ class ThailandIdcardRequestBody:
         :type return_portrait_image: bool
         :param return_portrait_location: 是否返回头像坐标的开关，可选值如下所示： - true：返回身份证头像的位置 - false：不返回身份证头像的位置 
         :type return_portrait_location: bool
-        :param return_idcard_type: 是否返回身份证类型的开关，可选值如下所示： - true：返回身份证的类型，类型包括身份证原件以及身份证复印件 - false：不返回身份证的类型 
+        :param return_idcard_type: 是否返回身份证类型的开关，可选值如下所示： - true：返回身份证的类型，类型包括身份证原件、身份证复印件和屏幕翻拍 - false：不返回身份证的类型 
         :type return_idcard_type: bool
         :param return_text_location: 识别到的文字块的区域位置信息。可选值包括： - true：返回各个文字块区域 - false：不返回各个文字块区域  如果无该参数，系统默认不返回文字块区域。如果输入参数不是Boolean类型，则会报非法参数错误。 
         :type return_text_location: bool
@@ -200,7 +200,7 @@ class ThailandIdcardRequestBody:
     def return_idcard_type(self):
         """Gets the return_idcard_type of this ThailandIdcardRequestBody.
 
-        是否返回身份证类型的开关，可选值如下所示： - true：返回身份证的类型，类型包括身份证原件以及身份证复印件 - false：不返回身份证的类型 
+        是否返回身份证类型的开关，可选值如下所示： - true：返回身份证的类型，类型包括身份证原件、身份证复印件和屏幕翻拍 - false：不返回身份证的类型 
 
         :return: The return_idcard_type of this ThailandIdcardRequestBody.
         :rtype: bool
@@ -211,7 +211,7 @@ class ThailandIdcardRequestBody:
     def return_idcard_type(self, return_idcard_type):
         """Sets the return_idcard_type of this ThailandIdcardRequestBody.
 
-        是否返回身份证类型的开关，可选值如下所示： - true：返回身份证的类型，类型包括身份证原件以及身份证复印件 - false：不返回身份证的类型 
+        是否返回身份证类型的开关，可选值如下所示： - true：返回身份证的类型，类型包括身份证原件、身份证复印件和屏幕翻拍 - false：不返回身份证的类型 
 
         :param return_idcard_type: The return_idcard_type of this ThailandIdcardRequestBody.
         :type return_idcard_type: bool

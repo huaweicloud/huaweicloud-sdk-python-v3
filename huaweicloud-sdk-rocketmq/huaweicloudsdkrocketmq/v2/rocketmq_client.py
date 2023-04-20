@@ -87,7 +87,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/rocketmq/{instance_id}/tags/action',
@@ -147,7 +147,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/action',
@@ -209,7 +209,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/groups',
@@ -273,7 +273,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/groups',
@@ -335,7 +335,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{engine}/{project_id}/instances',
@@ -395,7 +395,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances',
@@ -457,7 +457,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/users',
@@ -519,7 +519,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/groups/{group}',
@@ -579,7 +579,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}',
@@ -641,7 +641,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/users/{user_name}',
@@ -703,7 +703,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/messages/export',
@@ -761,7 +761,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/available-zones',
@@ -821,7 +821,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/brokers',
@@ -889,7 +889,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{engine}/{project_id}/instances/{instance_id}/groups/{group_id}/accesspolicy',
@@ -955,7 +955,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/groups',
@@ -1031,7 +1031,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances',
@@ -1095,7 +1095,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{engine}/{project_id}/instances/{instance_id}/trace',
@@ -1169,7 +1169,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{engine}/{project_id}/instances/{instance_id}/messages',
@@ -1235,7 +1235,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/topics/{topic}/accesspolicy',
@@ -1299,7 +1299,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/users',
@@ -1365,7 +1365,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{engine}/{project_id}/instances/{instance_id}/groups/{group_id}/reset-message-offset',
@@ -1377,6 +1377,74 @@ class RocketMQClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ResetConsumeOffsetResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_consumer_connections(self, request):
+        """查询消费者列表
+
+        查询消费组内消费者列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowConsumerConnections
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ShowConsumerConnectionsRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowConsumerConnectionsResponse`
+        """
+        return self.show_consumer_connections_with_http_info(request)
+
+    def show_consumer_connections_with_http_info(self, request):
+        all_params = ['instance_id', 'group', 'limit', 'offset', 'is_detail']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group' in local_var_params:
+            path_params['group'] = local_var_params['group']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'is_detail' in local_var_params:
+            query_params.append(('is_detail', local_var_params['is_detail']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/rocketmq/{project_id}/instances/{instance_id}/groups/{group}/clients',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowConsumerConnectionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1433,7 +1501,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/groups/{group}/topics',
@@ -1495,7 +1563,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/groups/{group}',
@@ -1555,7 +1623,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}',
@@ -1613,7 +1681,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/rocketmq/tags',
@@ -1673,7 +1741,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/rocketmq/{instance_id}/tags',
@@ -1735,7 +1803,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/users/{user_name}',
@@ -1799,7 +1867,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/groups/{group}',
@@ -1861,7 +1929,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}',
@@ -1925,7 +1993,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/users/{user_name}',
@@ -1989,7 +2057,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/topics',
@@ -2051,7 +2119,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/topics/{topic}',
@@ -2117,7 +2185,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/topics/{topic}/groups',
@@ -2181,7 +2249,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/topics',
@@ -2243,7 +2311,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/topics/{topic}',
@@ -2305,7 +2373,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/topics/{topic}/status',
@@ -2369,7 +2437,7 @@ class RocketMQClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/topics/{topic}',

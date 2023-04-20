@@ -21,15 +21,17 @@ class GaussDBforOpenGaussUserForCreation:
 
     openapi_types = {
         'name': 'str',
-        'password': 'str'
+        'password': 'str',
+        'is_login_only': 'bool'
     }
 
     attribute_map = {
         'name': 'name',
-        'password': 'password'
+        'password': 'password',
+        'is_login_only': 'is_login_only'
     }
 
-    def __init__(self, name=None, password=None):
+    def __init__(self, name=None, password=None, is_login_only=None):
         """GaussDBforOpenGaussUserForCreation
 
         The model defined in huaweicloud sdk
@@ -38,16 +40,21 @@ class GaussDBforOpenGaussUserForCreation:
         :type name: str
         :param password: 数据库用户密码。  取值范围：非空，密码长度在8到32个字符之间，至少包含大写字母、小写字母、数字、特殊字符~!@#%^*-_&#x3D;+?,三种字符的组合，不能和数据库帐号“name”或“name”的逆序相同。  建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
         :type password: str
+        :param is_login_only: 数据库账户是否只支持登入。 取值范围：不传值或设置为false，创建数据库账号包含登入数据库、创建数据库与用户权限，设置为true，只包含登入数据库权限。
+        :type is_login_only: bool
         """
         
         
 
         self._name = None
         self._password = None
+        self._is_login_only = None
         self.discriminator = None
 
         self.name = name
         self.password = password
+        if is_login_only is not None:
+            self.is_login_only = is_login_only
 
     @property
     def name(self):
@@ -92,6 +99,28 @@ class GaussDBforOpenGaussUserForCreation:
         :type password: str
         """
         self._password = password
+
+    @property
+    def is_login_only(self):
+        """Gets the is_login_only of this GaussDBforOpenGaussUserForCreation.
+
+        数据库账户是否只支持登入。 取值范围：不传值或设置为false，创建数据库账号包含登入数据库、创建数据库与用户权限，设置为true，只包含登入数据库权限。
+
+        :return: The is_login_only of this GaussDBforOpenGaussUserForCreation.
+        :rtype: bool
+        """
+        return self._is_login_only
+
+    @is_login_only.setter
+    def is_login_only(self, is_login_only):
+        """Sets the is_login_only of this GaussDBforOpenGaussUserForCreation.
+
+        数据库账户是否只支持登入。 取值范围：不传值或设置为false，创建数据库账号包含登入数据库、创建数据库与用户权限，设置为true，只包含登入数据库权限。
+
+        :param is_login_only: The is_login_only of this GaussDBforOpenGaussUserForCreation.
+        :type is_login_only: bool
+        """
+        self._is_login_only = is_login_only
 
     def to_dict(self):
         """Returns the model properties as a dict"""

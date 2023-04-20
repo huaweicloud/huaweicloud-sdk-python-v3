@@ -39,7 +39,8 @@ class ServiceList:
         'tcp_proxy': 'str',
         'error': 'list[Error]',
         'description': 'str',
-        'public_border_group': 'str'
+        'public_border_group': 'str',
+        'enable_policy': 'bool'
     }
 
     attribute_map = {
@@ -62,17 +63,18 @@ class ServiceList:
         'tcp_proxy': 'tcp_proxy',
         'error': 'error',
         'description': 'description',
-        'public_border_group': 'public_border_group'
+        'public_border_group': 'public_border_group',
+        'enable_policy': 'enable_policy'
     }
 
-    def __init__(self, id=None, port_id=None, vip_port_id=None, service_name=None, server_type=None, vpc_id=None, approval_enabled=None, status=None, service_type=None, created_at=None, updated_at=None, project_id=None, domain_id=None, ports=None, tags=None, connection_count=None, tcp_proxy=None, error=None, description=None, public_border_group=None):
+    def __init__(self, id=None, port_id=None, vip_port_id=None, service_name=None, server_type=None, vpc_id=None, approval_enabled=None, status=None, service_type=None, created_at=None, updated_at=None, project_id=None, domain_id=None, ports=None, tags=None, connection_count=None, tcp_proxy=None, error=None, description=None, public_border_group=None, enable_policy=None):
         """ServiceList
 
         The model defined in huaweicloud sdk
 
         :param id: 终端节点服务的ID，唯一标识。
         :type id: str
-        :param port_id: 标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。取值为： ● LB类型：增强型负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。
+        :param port_id: 标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。取值为： ● LB类型：负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。（该字段已废弃，请优先使用LB类型）
         :type port_id: str
         :param vip_port_id: 虚拟IP的网卡ID。 仅当“port_id”为“VIP类型”时，返回该参数。
         :type vip_port_id: str
@@ -102,7 +104,7 @@ class ServiceList:
         :type tags: list[:class:`huaweicloudsdkvpcep.v1.TagList`]
         :param connection_count: 终端节点服务下连接的状态为“创建中”或“已接受”的终端节点的个数。
         :type connection_count: int
-        :param tcp_proxy: 用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcp，option字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
+        :param tcp_proxy: 用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcp，option字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 ● proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
         :type tcp_proxy: str
         :param error: 提交任务异常时返回的异常信息
         :type error: list[:class:`huaweicloudsdkvpcep.v1.Error`]
@@ -110,6 +112,8 @@ class ServiceList:
         :type description: str
         :param public_border_group: 终端节点服务对应Pool的Public Border Group信息
         :type public_border_group: str
+        :param enable_policy: 是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+        :type enable_policy: bool
         """
         
         
@@ -134,6 +138,7 @@ class ServiceList:
         self._error = None
         self._description = None
         self._public_border_group = None
+        self._enable_policy = None
         self.discriminator = None
 
         if id is not None:
@@ -176,6 +181,8 @@ class ServiceList:
             self.description = description
         if public_border_group is not None:
             self.public_border_group = public_border_group
+        if enable_policy is not None:
+            self.enable_policy = enable_policy
 
     @property
     def id(self):
@@ -203,7 +210,7 @@ class ServiceList:
     def port_id(self):
         """Gets the port_id of this ServiceList.
 
-        标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。取值为： ● LB类型：增强型负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。
+        标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。取值为： ● LB类型：负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。（该字段已废弃，请优先使用LB类型）
 
         :return: The port_id of this ServiceList.
         :rtype: str
@@ -214,7 +221,7 @@ class ServiceList:
     def port_id(self, port_id):
         """Sets the port_id of this ServiceList.
 
-        标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。取值为： ● LB类型：增强型负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。
+        标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。取值为： ● LB类型：负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。（该字段已废弃，请优先使用LB类型）
 
         :param port_id: The port_id of this ServiceList.
         :type port_id: str
@@ -533,7 +540,7 @@ class ServiceList:
     def tcp_proxy(self):
         """Gets the tcp_proxy of this ServiceList.
 
-        用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcp，option字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
+        用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcp，option字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 ● proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
 
         :return: The tcp_proxy of this ServiceList.
         :rtype: str
@@ -544,7 +551,7 @@ class ServiceList:
     def tcp_proxy(self, tcp_proxy):
         """Sets the tcp_proxy of this ServiceList.
 
-        用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcp，option字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
+        用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcp，option字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 ● proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
 
         :param tcp_proxy: The tcp_proxy of this ServiceList.
         :type tcp_proxy: str
@@ -616,6 +623,28 @@ class ServiceList:
         :type public_border_group: str
         """
         self._public_border_group = public_border_group
+
+    @property
+    def enable_policy(self):
+        """Gets the enable_policy of this ServiceList.
+
+        是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+
+        :return: The enable_policy of this ServiceList.
+        :rtype: bool
+        """
+        return self._enable_policy
+
+    @enable_policy.setter
+    def enable_policy(self, enable_policy):
+        """Sets the enable_policy of this ServiceList.
+
+        是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+
+        :param enable_policy: The enable_policy of this ServiceList.
+        :type enable_policy: bool
+        """
+        self._enable_policy = enable_policy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

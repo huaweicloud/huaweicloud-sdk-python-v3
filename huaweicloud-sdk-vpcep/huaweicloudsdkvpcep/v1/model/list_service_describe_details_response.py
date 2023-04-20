@@ -24,7 +24,8 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
         'service_name': 'str',
         'service_type': 'str',
         'created_at': 'str',
-        'is_charge': 'bool'
+        'is_charge': 'bool',
+        'public_border_group': 'str'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
         'service_name': 'service_name',
         'service_type': 'service_type',
         'created_at': 'created_at',
-        'is_charge': 'is_charge'
+        'is_charge': 'is_charge',
+        'public_border_group': 'public_border_group'
     }
 
-    def __init__(self, id=None, service_name=None, service_type=None, created_at=None, is_charge=None):
+    def __init__(self, id=None, service_name=None, service_type=None, created_at=None, is_charge=None, public_border_group=None):
         """ListServiceDescribeDetailsResponse
 
         The model defined in huaweicloud sdk
@@ -50,6 +52,8 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
         :type created_at: str
         :param is_charge: 连接该终端节点服务的终端节点是否计费。 ● true：计费 ● false：不计费
         :type is_charge: bool
+        :param public_border_group: 终端节点对应Pool的Public Border Group信息
+        :type public_border_group: str
         """
         
         super(ListServiceDescribeDetailsResponse, self).__init__()
@@ -59,6 +63,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
         self._service_type = None
         self._created_at = None
         self._is_charge = None
+        self._public_border_group = None
         self.discriminator = None
 
         if id is not None:
@@ -71,6 +76,8 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
             self.created_at = created_at
         if is_charge is not None:
             self.is_charge = is_charge
+        if public_border_group is not None:
+            self.public_border_group = public_border_group
 
     @property
     def id(self):
@@ -181,6 +188,28 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
         :type is_charge: bool
         """
         self._is_charge = is_charge
+
+    @property
+    def public_border_group(self):
+        """Gets the public_border_group of this ListServiceDescribeDetailsResponse.
+
+        终端节点对应Pool的Public Border Group信息
+
+        :return: The public_border_group of this ListServiceDescribeDetailsResponse.
+        :rtype: str
+        """
+        return self._public_border_group
+
+    @public_border_group.setter
+    def public_border_group(self, public_border_group):
+        """Sets the public_border_group of this ListServiceDescribeDetailsResponse.
+
+        终端节点对应Pool的Public Border Group信息
+
+        :param public_border_group: The public_border_group of this ListServiceDescribeDetailsResponse.
+        :type public_border_group: str
+        """
+        self._public_border_group = public_border_group
 
     def to_dict(self):
         """Returns the model properties as a dict"""

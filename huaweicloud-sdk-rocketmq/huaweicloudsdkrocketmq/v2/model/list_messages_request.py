@@ -56,9 +56,9 @@ class ListMessagesRequest:
         :type limit: str
         :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
         :type offset: str
-        :param start_time: 开始时间（不按msg_id查询时需要填写开始时间）。
+        :param start_time: 开始时间（不通过msg_id精确查询消息时，此参数必填）。
         :type start_time: str
-        :param end_time: 结束时间（不按msg_id查询时需要填写结束时间）。
+        :param end_time: 结束时间（不通过msg_id精确查询消息时，此参数必填）。
         :type end_time: str
         :param msg_id: 消息ID。
         :type msg_id: str
@@ -204,7 +204,7 @@ class ListMessagesRequest:
     def start_time(self):
         """Gets the start_time of this ListMessagesRequest.
 
-        开始时间（不按msg_id查询时需要填写开始时间）。
+        开始时间（不通过msg_id精确查询消息时，此参数必填）。
 
         :return: The start_time of this ListMessagesRequest.
         :rtype: str
@@ -215,7 +215,7 @@ class ListMessagesRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListMessagesRequest.
 
-        开始时间（不按msg_id查询时需要填写开始时间）。
+        开始时间（不通过msg_id精确查询消息时，此参数必填）。
 
         :param start_time: The start_time of this ListMessagesRequest.
         :type start_time: str
@@ -226,7 +226,7 @@ class ListMessagesRequest:
     def end_time(self):
         """Gets the end_time of this ListMessagesRequest.
 
-        结束时间（不按msg_id查询时需要填写结束时间）。
+        结束时间（不通过msg_id精确查询消息时，此参数必填）。
 
         :return: The end_time of this ListMessagesRequest.
         :rtype: str
@@ -237,7 +237,7 @@ class ListMessagesRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListMessagesRequest.
 
-        结束时间（不按msg_id查询时需要填写结束时间）。
+        结束时间（不通过msg_id精确查询消息时，此参数必填）。
 
         :param end_time: The end_time of this ListMessagesRequest.
         :type end_time: str

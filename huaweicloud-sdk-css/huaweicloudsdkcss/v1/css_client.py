@@ -1162,7 +1162,7 @@ class CssClient(Client):
         return self.list_logs_job_with_http_info(request)
 
     def list_logs_job_with_http_info(self, request):
-        all_params = ['cluster_id']
+        all_params = ['cluster_id', 'start', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1177,6 +1177,10 @@ class CssClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
+        if 'start' in local_var_params:
+            query_params.append(('start', local_var_params['start']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -1342,7 +1346,7 @@ class CssClient(Client):
         return self.list_ymls_job_with_http_info(request)
 
     def list_ymls_job_with_http_info(self, request):
-        all_params = ['cluster_id']
+        all_params = ['cluster_id', 'start', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1357,6 +1361,10 @@ class CssClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
+        if 'start' in local_var_params:
+            query_params.append(('start', local_var_params['start']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -1952,7 +1960,7 @@ class CssClient(Client):
         return self.show_vpcep_connection_with_http_info(request)
 
     def show_vpcep_connection_with_http_info(self, request):
-        all_params = ['cluster_id']
+        all_params = ['cluster_id', 'start', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1967,6 +1975,10 @@ class CssClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
+        if 'start' in local_var_params:
+            query_params.append(('start', local_var_params['start']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 

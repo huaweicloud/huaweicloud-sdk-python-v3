@@ -120,6 +120,7 @@ from huaweicloudsdkdrs.v3.model.endpoint import Endpoint
 from huaweicloudsdkdrs.v3.model.endpoint_vo import EndpointVO
 from huaweicloudsdkdrs.v3.model.import_smn_resp import ImportSmnResp
 from huaweicloudsdkdrs.v3.model.inst_info import InstInfo
+from huaweicloudsdkdrs.v3.model.job_action_resp import JobActionResp
 from huaweicloudsdkdrs.v3.model.job_info import JobInfo
 from huaweicloudsdkdrs.v3.model.kafka_security import KafkaSecurity
 from huaweicloudsdkdrs.v3.model.kerberos_vo import KerberosVO

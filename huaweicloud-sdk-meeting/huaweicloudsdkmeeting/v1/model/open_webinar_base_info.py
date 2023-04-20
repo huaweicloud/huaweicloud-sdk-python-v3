@@ -40,7 +40,8 @@ class OpenWebinarBaseInfo:
         'guest_join_uri': 'str',
         'guest_passwd': 'str',
         'audience_join_uri': 'str',
-        'audience_passwd': 'str'
+        'audience_passwd': 'str',
+        'enable_recording': 'YesNoEnum'
     }
 
     attribute_map = {
@@ -64,10 +65,11 @@ class OpenWebinarBaseInfo:
         'guest_join_uri': 'guestJoinUri',
         'guest_passwd': 'guestPasswd',
         'audience_join_uri': 'audienceJoinUri',
-        'audience_passwd': 'audiencePasswd'
+        'audience_passwd': 'audiencePasswd',
+        'enable_recording': 'enableRecording'
     }
 
-    def __init__(self, conference_id=None, corp_id=None, subject=None, description=None, start_time=None, duration=None, time_zone_id=None, state=None, scheduser_id=None, dept_name=None, scheduser_name=None, vmr_pkg_name=None, call_restriction=None, scope=None, audience_scope=None, chair_join_uri=None, chair_passwd=None, guest_join_uri=None, guest_passwd=None, audience_join_uri=None, audience_passwd=None):
+    def __init__(self, conference_id=None, corp_id=None, subject=None, description=None, start_time=None, duration=None, time_zone_id=None, state=None, scheduser_id=None, dept_name=None, scheduser_name=None, vmr_pkg_name=None, call_restriction=None, scope=None, audience_scope=None, chair_join_uri=None, chair_passwd=None, guest_join_uri=None, guest_passwd=None, audience_join_uri=None, audience_passwd=None, enable_recording=None):
         """OpenWebinarBaseInfo
 
         The model defined in huaweicloud sdk
@@ -114,6 +116,8 @@ class OpenWebinarBaseInfo:
         :type audience_join_uri: str
         :param audience_passwd: 观众入会密码。
         :type audience_passwd: str
+        :param enable_recording: 
+        :type enable_recording: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
         """
         
         
@@ -139,6 +143,7 @@ class OpenWebinarBaseInfo:
         self._guest_passwd = None
         self._audience_join_uri = None
         self._audience_passwd = None
+        self._enable_recording = None
         self.discriminator = None
 
         if conference_id is not None:
@@ -183,6 +188,8 @@ class OpenWebinarBaseInfo:
             self.audience_join_uri = audience_join_uri
         if audience_passwd is not None:
             self.audience_passwd = audience_passwd
+        if enable_recording is not None:
+            self.enable_recording = enable_recording
 
     @property
     def conference_id(self):
@@ -641,6 +648,24 @@ class OpenWebinarBaseInfo:
         :type audience_passwd: str
         """
         self._audience_passwd = audience_passwd
+
+    @property
+    def enable_recording(self):
+        """Gets the enable_recording of this OpenWebinarBaseInfo.
+
+        :return: The enable_recording of this OpenWebinarBaseInfo.
+        :rtype: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
+        """
+        return self._enable_recording
+
+    @enable_recording.setter
+    def enable_recording(self, enable_recording):
+        """Sets the enable_recording of this OpenWebinarBaseInfo.
+
+        :param enable_recording: The enable_recording of this OpenWebinarBaseInfo.
+        :type enable_recording: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
+        """
+        self._enable_recording = enable_recording
 
     def to_dict(self):
         """Returns the model properties as a dict"""

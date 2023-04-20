@@ -43,7 +43,9 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         'enable_whitelist': 'bool',
         'routetables': 'list[str]',
         'description': 'str',
-        'policy_statement': 'list[str]'
+        'policy_statement': 'list[str]',
+        'endpoint_pool_id': 'str',
+        'public_border_group': 'str'
     }
 
     attribute_map = {
@@ -70,10 +72,12 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         'enable_whitelist': 'enable_whitelist',
         'routetables': 'routetables',
         'description': 'description',
-        'policy_statement': 'policy_statement'
+        'policy_statement': 'policy_statement',
+        'endpoint_pool_id': 'endpoint_pool_id',
+        'public_border_group': 'public_border_group'
     }
 
-    def __init__(self, id=None, service_type=None, status=None, active_status=None, enable_status=None, specification_name=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, ip=None, vpc_id=None, subnet_id=None, created_at=None, updated_at=None, project_id=None, tags=None, error=None, whitelist=None, enable_whitelist=None, routetables=None, description=None, policy_statement=None):
+    def __init__(self, id=None, service_type=None, status=None, active_status=None, enable_status=None, specification_name=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, ip=None, vpc_id=None, subnet_id=None, created_at=None, updated_at=None, project_id=None, tags=None, error=None, whitelist=None, enable_whitelist=None, routetables=None, description=None, policy_statement=None, endpoint_pool_id=None, public_border_group=None):
         """ListEndpointInfoDetailsResponse
 
         The model defined in huaweicloud sdk
@@ -126,6 +130,10 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         :type description: str
         :param policy_statement: 只涉及开启双端固定的网关型终端节点，响应体展示此字段
         :type policy_statement: list[str]
+        :param endpoint_pool_id: 待废弃，实例相关联的集群ID
+        :type endpoint_pool_id: str
+        :param public_border_group: 终端节点对应Pool的Public Border Group信息
+        :type public_border_group: str
         """
         
         super(ListEndpointInfoDetailsResponse, self).__init__()
@@ -154,6 +162,8 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         self._routetables = None
         self._description = None
         self._policy_statement = None
+        self._endpoint_pool_id = None
+        self._public_border_group = None
         self.discriminator = None
 
         if id is not None:
@@ -204,6 +214,10 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
             self.description = description
         if policy_statement is not None:
             self.policy_statement = policy_statement
+        if endpoint_pool_id is not None:
+            self.endpoint_pool_id = endpoint_pool_id
+        if public_border_group is not None:
+            self.public_border_group = public_border_group
 
     @property
     def id(self):
@@ -728,6 +742,50 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         :type policy_statement: list[str]
         """
         self._policy_statement = policy_statement
+
+    @property
+    def endpoint_pool_id(self):
+        """Gets the endpoint_pool_id of this ListEndpointInfoDetailsResponse.
+
+        待废弃，实例相关联的集群ID
+
+        :return: The endpoint_pool_id of this ListEndpointInfoDetailsResponse.
+        :rtype: str
+        """
+        return self._endpoint_pool_id
+
+    @endpoint_pool_id.setter
+    def endpoint_pool_id(self, endpoint_pool_id):
+        """Sets the endpoint_pool_id of this ListEndpointInfoDetailsResponse.
+
+        待废弃，实例相关联的集群ID
+
+        :param endpoint_pool_id: The endpoint_pool_id of this ListEndpointInfoDetailsResponse.
+        :type endpoint_pool_id: str
+        """
+        self._endpoint_pool_id = endpoint_pool_id
+
+    @property
+    def public_border_group(self):
+        """Gets the public_border_group of this ListEndpointInfoDetailsResponse.
+
+        终端节点对应Pool的Public Border Group信息
+
+        :return: The public_border_group of this ListEndpointInfoDetailsResponse.
+        :rtype: str
+        """
+        return self._public_border_group
+
+    @public_border_group.setter
+    def public_border_group(self, public_border_group):
+        """Sets the public_border_group of this ListEndpointInfoDetailsResponse.
+
+        终端节点对应Pool的Public Border Group信息
+
+        :param public_border_group: The public_border_group of this ListEndpointInfoDetailsResponse.
+        :type public_border_group: str
+        """
+        self._public_border_group = public_border_group
 
     def to_dict(self):
         """Returns the model properties as a dict"""

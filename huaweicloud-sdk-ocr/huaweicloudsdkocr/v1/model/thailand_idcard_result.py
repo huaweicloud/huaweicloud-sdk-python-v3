@@ -20,6 +20,9 @@ class ThailandIdcardResult:
     sensitive_list = []
 
     openapi_types = {
+        'type': 'str',
+        'name_en': 'str',
+        'ref_number': 'str',
         'side': 'str',
         'id_number': 'str',
         'name_th': 'str',
@@ -44,6 +47,9 @@ class ThailandIdcardResult:
     }
 
     attribute_map = {
+        'type': 'type',
+        'name_en': 'name_en',
+        'ref_number': 'ref_number',
         'side': 'side',
         'id_number': 'id_number',
         'name_th': 'name_th',
@@ -67,11 +73,17 @@ class ThailandIdcardResult:
         'text_location': 'text_location'
     }
 
-    def __init__(self, side=None, id_number=None, name_th=None, first_name_en=None, last_name_en=None, date_of_birth_th=None, date_of_birth_en=None, religion_th=None, address_th=None, date_of_issue_th=None, date_of_issue_en=None, date_of_expiry_th=None, date_of_expiry_en=None, serial_number=None, card_number=None, laser_number=None, confidence=None, portrait_image=None, portrait_location=None, idcard_type=None, text_location=None):
+    def __init__(self, type=None, name_en=None, ref_number=None, side=None, id_number=None, name_th=None, first_name_en=None, last_name_en=None, date_of_birth_th=None, date_of_birth_en=None, religion_th=None, address_th=None, date_of_issue_th=None, date_of_issue_en=None, date_of_expiry_th=None, date_of_expiry_en=None, serial_number=None, card_number=None, laser_number=None, confidence=None, portrait_image=None, portrait_location=None, idcard_type=None, text_location=None):
         """ThailandIdcardResult
 
         The model defined in huaweicloud sdk
 
+        :param type: 返回证件类型，\&quot;normal\&quot;表示普通泰文证件，\&quot;pink\&quot;表示外国人身份证件 
+        :type type: str
+        :param name_en: 英文名。 
+        :type name_en: str
+        :param ref_number: 参考编码。 
+        :type ref_number: str
         :param side: 标示正面还是反面，取值为front或back。 
         :type side: str
         :param id_number: 身份证号。 
@@ -110,7 +122,7 @@ class ThailandIdcardResult:
         :type portrait_image: str
         :param portrait_location: 头像在原图上的位置。 当输入参数“return_portrait_location”为“true”时，才返回该参数。以列表形式显示，包含头像区域四个顶点的二维坐标（x,y），坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向 
         :type portrait_location: list[list[int]]
-        :param idcard_type: 身份证的类型。取值如下所示： - normal：身份证原件 - copy：复印的身份证 当输入参数“return_idcard_type”为“true”时，才返回该参数。 
+        :param idcard_type: 身份证的类型。取值如下所示： - normal：身份证原件 - copy：复印的身份证 - screen：屏幕翻拍 当输入参数“return_idcard_type”为“true”时，才返回该参数。 
         :type idcard_type: str
         :param text_location: 对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
         :type text_location: object
@@ -118,6 +130,9 @@ class ThailandIdcardResult:
         
         
 
+        self._type = None
+        self._name_en = None
+        self._ref_number = None
         self._side = None
         self._id_number = None
         self._name_th = None
@@ -141,6 +156,12 @@ class ThailandIdcardResult:
         self._text_location = None
         self.discriminator = None
 
+        if type is not None:
+            self.type = type
+        if name_en is not None:
+            self.name_en = name_en
+        if ref_number is not None:
+            self.ref_number = ref_number
         if side is not None:
             self.side = side
         if id_number is not None:
@@ -183,6 +204,72 @@ class ThailandIdcardResult:
             self.idcard_type = idcard_type
         if text_location is not None:
             self.text_location = text_location
+
+    @property
+    def type(self):
+        """Gets the type of this ThailandIdcardResult.
+
+        返回证件类型，\"normal\"表示普通泰文证件，\"pink\"表示外国人身份证件 
+
+        :return: The type of this ThailandIdcardResult.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ThailandIdcardResult.
+
+        返回证件类型，\"normal\"表示普通泰文证件，\"pink\"表示外国人身份证件 
+
+        :param type: The type of this ThailandIdcardResult.
+        :type type: str
+        """
+        self._type = type
+
+    @property
+    def name_en(self):
+        """Gets the name_en of this ThailandIdcardResult.
+
+        英文名。 
+
+        :return: The name_en of this ThailandIdcardResult.
+        :rtype: str
+        """
+        return self._name_en
+
+    @name_en.setter
+    def name_en(self, name_en):
+        """Sets the name_en of this ThailandIdcardResult.
+
+        英文名。 
+
+        :param name_en: The name_en of this ThailandIdcardResult.
+        :type name_en: str
+        """
+        self._name_en = name_en
+
+    @property
+    def ref_number(self):
+        """Gets the ref_number of this ThailandIdcardResult.
+
+        参考编码。 
+
+        :return: The ref_number of this ThailandIdcardResult.
+        :rtype: str
+        """
+        return self._ref_number
+
+    @ref_number.setter
+    def ref_number(self, ref_number):
+        """Sets the ref_number of this ThailandIdcardResult.
+
+        参考编码。 
+
+        :param ref_number: The ref_number of this ThailandIdcardResult.
+        :type ref_number: str
+        """
+        self._ref_number = ref_number
 
     @property
     def side(self):
@@ -602,7 +689,7 @@ class ThailandIdcardResult:
     def idcard_type(self):
         """Gets the idcard_type of this ThailandIdcardResult.
 
-        身份证的类型。取值如下所示： - normal：身份证原件 - copy：复印的身份证 当输入参数“return_idcard_type”为“true”时，才返回该参数。 
+        身份证的类型。取值如下所示： - normal：身份证原件 - copy：复印的身份证 - screen：屏幕翻拍 当输入参数“return_idcard_type”为“true”时，才返回该参数。 
 
         :return: The idcard_type of this ThailandIdcardResult.
         :rtype: str
@@ -613,7 +700,7 @@ class ThailandIdcardResult:
     def idcard_type(self, idcard_type):
         """Sets the idcard_type of this ThailandIdcardResult.
 
-        身份证的类型。取值如下所示： - normal：身份证原件 - copy：复印的身份证 当输入参数“return_idcard_type”为“true”时，才返回该参数。 
+        身份证的类型。取值如下所示： - normal：身份证原件 - copy：复印的身份证 - screen：屏幕翻拍 当输入参数“return_idcard_type”为“true”时，才返回该参数。 
 
         :param idcard_type: The idcard_type of this ThailandIdcardResult.
         :type idcard_type: str

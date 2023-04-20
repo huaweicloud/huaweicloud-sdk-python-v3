@@ -20,28 +20,20 @@ class ImageHighresolutionMattingInputData:
     sensitive_list = []
 
     openapi_types = {
-        'bucket': 'str',
-        'path': 'str',
         'url': 'str',
         'key': 'str'
     }
 
     attribute_map = {
-        'bucket': 'bucket',
-        'path': 'path',
         'url': 'url',
         'key': 'key'
     }
 
-    def __init__(self, bucket=None, path=None, url=None, key=None):
+    def __init__(self, url=None, key=None):
         """ImageHighresolutionMattingInputData
 
         The model defined in huaweicloud sdk
 
-        :param bucket: OBS桶名，当输入为obs类型时必填。
-        :type bucket: str
-        :param path: OBS的路径，当输入为obs类型时必填。
-        :type path: str
         :param url: url输入源的地址，当输入为url类型时必填。 长度不超过1000。输入的图片大小不能大于20M，长边不能大于10000px。
         :type url: str
         :param key: 数据标识。多输入场景下必选，值由算法定义；单输入场景非必选。
@@ -50,64 +42,14 @@ class ImageHighresolutionMattingInputData:
         
         
 
-        self._bucket = None
-        self._path = None
         self._url = None
         self._key = None
         self.discriminator = None
 
-        if bucket is not None:
-            self.bucket = bucket
-        if path is not None:
-            self.path = path
         if url is not None:
             self.url = url
         if key is not None:
             self.key = key
-
-    @property
-    def bucket(self):
-        """Gets the bucket of this ImageHighresolutionMattingInputData.
-
-        OBS桶名，当输入为obs类型时必填。
-
-        :return: The bucket of this ImageHighresolutionMattingInputData.
-        :rtype: str
-        """
-        return self._bucket
-
-    @bucket.setter
-    def bucket(self, bucket):
-        """Sets the bucket of this ImageHighresolutionMattingInputData.
-
-        OBS桶名，当输入为obs类型时必填。
-
-        :param bucket: The bucket of this ImageHighresolutionMattingInputData.
-        :type bucket: str
-        """
-        self._bucket = bucket
-
-    @property
-    def path(self):
-        """Gets the path of this ImageHighresolutionMattingInputData.
-
-        OBS的路径，当输入为obs类型时必填。
-
-        :return: The path of this ImageHighresolutionMattingInputData.
-        :rtype: str
-        """
-        return self._path
-
-    @path.setter
-    def path(self, path):
-        """Sets the path of this ImageHighresolutionMattingInputData.
-
-        OBS的路径，当输入为obs类型时必填。
-
-        :param path: The path of this ImageHighresolutionMattingInputData.
-        :type path: str
-        """
-        self._path = path
 
     @property
     def url(self):

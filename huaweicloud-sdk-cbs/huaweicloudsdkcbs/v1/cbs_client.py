@@ -442,6 +442,749 @@ class CbsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def execute_compose_video(self, request):
+        """合成视频(按包周期收费)
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteComposeVideo
+        :type request: :class:`huaweicloudsdkcbs.v1.ExecuteComposeVideoRequest`
+        :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteComposeVideoResponse`
+        """
+        return self.execute_compose_video_with_http_info(request)
+
+    def execute_compose_video_with_http_info(self, request):
+        all_params = ['video_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'video_id' in local_var_params:
+            path_params['video_id'] = local_var_params['video_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/digital-human/video/{video_id}/compose',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExecuteComposeVideoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def execute_compose_video_ondemand(self, request):
+        """合成视频(按需收费)
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteComposeVideoOndemand
+        :type request: :class:`huaweicloudsdkcbs.v1.ExecuteComposeVideoOndemandRequest`
+        :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteComposeVideoOndemandResponse`
+        """
+        return self.execute_compose_video_ondemand_with_http_info(request)
+
+    def execute_compose_video_ondemand_with_http_info(self, request):
+        all_params = ['video_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'video_id' in local_var_params:
+            path_params['video_id'] = local_var_params['video_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/digital-human/video/{video_id}/compose/on-demand',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExecuteComposeVideoOndemandResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def execute_create_video(self, request):
+        """创建视频
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteCreateVideo
+        :type request: :class:`huaweicloudsdkcbs.v1.ExecuteCreateVideoRequest`
+        :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteCreateVideoResponse`
+        """
+        return self.execute_create_video_with_http_info(request)
+
+    def execute_create_video_with_http_info(self, request):
+        all_params = ['create_video_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/digital-human/video',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExecuteCreateVideoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def execute_delete_video_by_id(self, request):
+        """删除视频
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteDeleteVideoById
+        :type request: :class:`huaweicloudsdkcbs.v1.ExecuteDeleteVideoByIdRequest`
+        :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteDeleteVideoByIdResponse`
+        """
+        return self.execute_delete_video_by_id_with_http_info(request)
+
+    def execute_delete_video_by_id_with_http_info(self, request):
+        all_params = ['video_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'video_id' in local_var_params:
+            path_params['video_id'] = local_var_params['video_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/digital-human/video/{video_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExecuteDeleteVideoByIdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def execute_deleteimage_by_id(self, request):
+        """删除图片
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteDeleteimageById
+        :type request: :class:`huaweicloudsdkcbs.v1.ExecuteDeleteimageByIdRequest`
+        :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteDeleteimageByIdResponse`
+        """
+        return self.execute_deleteimage_by_id_with_http_info(request)
+
+    def execute_deleteimage_by_id_with_http_info(self, request):
+        all_params = ['image_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/digital-human/images/{image_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExecuteDeleteimageByIdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def execute_get_character_info_by_id(self, request):
+        """获取形象详情
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteGetCharacterInfoById
+        :type request: :class:`huaweicloudsdkcbs.v1.ExecuteGetCharacterInfoByIdRequest`
+        :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteGetCharacterInfoByIdResponse`
+        """
+        return self.execute_get_character_info_by_id_with_http_info(request)
+
+    def execute_get_character_info_by_id_with_http_info(self, request):
+        all_params = ['character_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'character_id' in local_var_params:
+            path_params['character_id'] = local_var_params['character_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/digital-human/characters/{character_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExecuteGetCharacterInfoByIdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def execute_get_characters(self, request):
+        """获取形象列表
+
+        TODO:
+        
+        本期不做形象进度
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteGetCharacters
+        :type request: :class:`huaweicloudsdkcbs.v1.ExecuteGetCharactersRequest`
+        :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteGetCharactersResponse`
+        """
+        return self.execute_get_characters_with_http_info(request)
+
+    def execute_get_characters_with_http_info(self, request):
+        all_params = ['offset', 'limit', 'type', 'train_status', 'character_name', 'support_interact', 'gender']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'train_status' in local_var_params:
+            query_params.append(('train_status', local_var_params['train_status']))
+        if 'character_name' in local_var_params:
+            query_params.append(('character_name', local_var_params['character_name']))
+        if 'support_interact' in local_var_params:
+            query_params.append(('support_interact', local_var_params['support_interact']))
+        if 'gender' in local_var_params:
+            query_params.append(('gender', local_var_params['gender']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/digital-human/characters',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExecuteGetCharactersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def execute_get_frams_list_by_images_id(self, request):
+        """获取播报框
+
+        获取指定图片可用的播报框列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteGetFramsListByImagesId
+        :type request: :class:`huaweicloudsdkcbs.v1.ExecuteGetFramsListByImagesIdRequest`
+        :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteGetFramsListByImagesIdResponse`
+        """
+        return self.execute_get_frams_list_by_images_id_with_http_info(request)
+
+    def execute_get_frams_list_by_images_id_with_http_info(self, request):
+        all_params = ['image_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'image_id' in local_var_params:
+            query_params.append(('image_id', local_var_params['image_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/digital-human/image-frames',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExecuteGetFramsListByImagesIdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def execute_get_images_list(self, request):
+        """获取图片列表
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteGetImagesList
+        :type request: :class:`huaweicloudsdkcbs.v1.ExecuteGetImagesListRequest`
+        :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteGetImagesListResponse`
+        """
+        return self.execute_get_images_list_with_http_info(request)
+
+    def execute_get_images_list_with_http_info(self, request):
+        all_params = ['limit', 'offset', 'resolution_type', 'type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'resolution_type' in local_var_params:
+            query_params.append(('resolution_type', local_var_params['resolution_type']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/digital-human/images',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExecuteGetImagesListResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def execute_get_video_info_by_id(self, request):
+        """获取视频详情
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteGetVideoInfoById
+        :type request: :class:`huaweicloudsdkcbs.v1.ExecuteGetVideoInfoByIdRequest`
+        :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteGetVideoInfoByIdResponse`
+        """
+        return self.execute_get_video_info_by_id_with_http_info(request)
+
+    def execute_get_video_info_by_id_with_http_info(self, request):
+        all_params = ['video_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'video_id' in local_var_params:
+            path_params['video_id'] = local_var_params['video_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/digital-human/video/{video_id}/info',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExecuteGetVideoInfoByIdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def execute_get_videos_list(self, request):
+        """获取视频列表
+
+        该接口用于获取视频列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteGetVideosList
+        :type request: :class:`huaweicloudsdkcbs.v1.ExecuteGetVideosListRequest`
+        :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteGetVideosListResponse`
+        """
+        return self.execute_get_videos_list_with_http_info(request)
+
+    def execute_get_videos_list_with_http_info(self, request):
+        all_params = ['limit', 'name', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/digital-human/video',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExecuteGetVideosListResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def execute_post_create_images(self, request):
+        """创建图片
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecutePostCreateImages
+        :type request: :class:`huaweicloudsdkcbs.v1.ExecutePostCreateImagesRequest`
+        :rtype: :class:`huaweicloudsdkcbs.v1.ExecutePostCreateImagesResponse`
+        """
+        return self.execute_post_create_images_with_http_info(request)
+
+    def execute_post_create_images_with_http_info(self, request):
+        all_params = ['type', 'name', 'file', 'resolution_type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'type' in local_var_params:
+            form_params['type'] = local_var_params['type']
+        if 'name' in local_var_params:
+            form_params['name'] = local_var_params['name']
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+        if 'resolution_type' in local_var_params:
+            form_params['resolution_type'] = local_var_params['resolution_type']
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/digital-human/images',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExecutePostCreateImagesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def execute_qa_chat(self, request):
         """问答机器人会话
 
@@ -563,6 +1306,323 @@ class CbsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ExecuteSessionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def execute_update_image_name(self, request):
+        """修改图片名
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteUpdateImageName
+        :type request: :class:`huaweicloudsdkcbs.v1.ExecuteUpdateImageNameRequest`
+        :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteUpdateImageNameResponse`
+        """
+        return self.execute_update_image_name_with_http_info(request)
+
+    def execute_update_image_name_with_http_info(self, request):
+        all_params = ['image_id', 'update_image_name_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/digital-human/images/{image_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExecuteUpdateImageNameResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def execute_update_video_by_id(self, request):
+        """更新视频名
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteUpdateVideoById
+        :type request: :class:`huaweicloudsdkcbs.v1.ExecuteUpdateVideoByIdRequest`
+        :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteUpdateVideoByIdResponse`
+        """
+        return self.execute_update_video_by_id_with_http_info(request)
+
+    def execute_update_video_by_id_with_http_info(self, request):
+        all_params = ['video_id', 'update_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'video_id' in local_var_params:
+            path_params['video_id'] = local_var_params['video_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/digital-human/video/{video_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExecuteUpdateVideoByIdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def execute_update_video_info_by_id(self, request):
+        """配置视频
+
+        通过该接口配置视频
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteUpdateVideoInfoById
+        :type request: :class:`huaweicloudsdkcbs.v1.ExecuteUpdateVideoInfoByIdRequest`
+        :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteUpdateVideoInfoByIdResponse`
+        """
+        return self.execute_update_video_info_by_id_with_http_info(request)
+
+    def execute_update_video_info_by_id_with_http_info(self, request):
+        all_params = ['video_id', 'name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'video_id' in local_var_params:
+            path_params['video_id'] = local_var_params['video_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/digital-human/video/{video_id}/info',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExecuteUpdateVideoInfoByIdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def execute_upload_image(self, request):
+        """上传播报插图
+
+        上传图片并生成图片链接，图片需小于10m；
+        同一个视频同时最多支持50张插图。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteUploadImage
+        :type request: :class:`huaweicloudsdkcbs.v1.ExecuteUploadImageRequest`
+        :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteUploadImageResponse`
+        """
+        return self.execute_upload_image_with_http_info(request)
+
+    def execute_upload_image_with_http_info(self, request):
+        all_params = ['video_id', 'name', 'file']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'video_id' in local_var_params:
+            path_params['video_id'] = local_var_params['video_id']
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/digital-human/video/{video_id}/upload/image',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExecuteUploadImageResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def execute_upload_ppt(self, request):
+        """通过pdf上传多张插图
+
+        当前仅支持上传PDF，如有PPT请将PPT转化为PDF再进行上传，文件需小于10m；
+        该接口会将pdf每一页转换图片，并生成链接；
+        同一个视频同时最多支持50张插图。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteUploadPpt
+        :type request: :class:`huaweicloudsdkcbs.v1.ExecuteUploadPptRequest`
+        :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteUploadPptResponse`
+        """
+        return self.execute_upload_ppt_with_http_info(request)
+
+    def execute_upload_ppt_with_http_info(self, request):
+        all_params = ['video_id', 'file']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'video_id' in local_var_params:
+            path_params['video_id'] = local_var_params['video_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/digital-human/video/{video_id}/upload/ppt',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExecuteUploadPptResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

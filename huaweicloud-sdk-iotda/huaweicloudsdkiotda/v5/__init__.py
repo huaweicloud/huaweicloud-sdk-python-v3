@@ -34,6 +34,8 @@ from huaweicloudsdkiotda.v5.model.batch_show_queue_request import BatchShowQueue
 from huaweicloudsdkiotda.v5.model.batch_show_queue_response import BatchShowQueueResponse
 from huaweicloudsdkiotda.v5.model.batch_task_file import BatchTaskFile
 from huaweicloudsdkiotda.v5.model.bind_tags_dto import BindTagsDTO
+from huaweicloudsdkiotda.v5.model.broadcast_message_request import BroadcastMessageRequest
+from huaweicloudsdkiotda.v5.model.broadcast_message_response import BroadcastMessageResponse
 from huaweicloudsdkiotda.v5.model.certificates_rsp_dto import CertificatesRspDTO
 from huaweicloudsdkiotda.v5.model.change_rule_status_request import ChangeRuleStatusRequest
 from huaweicloudsdkiotda.v5.model.change_rule_status_response import ChangeRuleStatusResponse
@@ -92,9 +94,10 @@ from huaweicloudsdkiotda.v5.model.delete_rule_action_request import DeleteRuleAc
 from huaweicloudsdkiotda.v5.model.delete_rule_action_response import DeleteRuleActionResponse
 from huaweicloudsdkiotda.v5.model.delete_rule_request import DeleteRuleRequest
 from huaweicloudsdkiotda.v5.model.delete_rule_response import DeleteRuleResponse
+from huaweicloudsdkiotda.v5.model.device_broadcast_request import DeviceBroadcastRequest
 from huaweicloudsdkiotda.v5.model.device_command_request import DeviceCommandRequest
 from huaweicloudsdkiotda.v5.model.device_data_condition import DeviceDataCondition
-from huaweicloudsdkiotda.v5.model.device_group_response_summary import DeviceGroupResponseSummary
+from huaweicloudsdkiotda.v5.model.device_group_respons_summery import DeviceGroupResponsSummery
 from huaweicloudsdkiotda.v5.model.device_linkage_status_condition import DeviceLinkageStatusCondition
 from huaweicloudsdkiotda.v5.model.device_message import DeviceMessage
 from huaweicloudsdkiotda.v5.model.device_message_request import DeviceMessageRequest

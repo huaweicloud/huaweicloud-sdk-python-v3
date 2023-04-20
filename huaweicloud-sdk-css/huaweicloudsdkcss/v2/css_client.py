@@ -169,6 +169,8 @@ class CssClient(Client):
 
         该接口会一个一个重启节点，在索引数量比较多的情况下耗时较长
         
+        &gt;仅当集群的节点数量（含Master节点、Client节点和冷数据节点）大于3时，才支持滚动重启
+        
         Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for RollingRestart

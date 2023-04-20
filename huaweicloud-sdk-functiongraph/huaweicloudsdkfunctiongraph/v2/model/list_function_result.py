@@ -30,6 +30,7 @@ class ListFunctionResult:
         'timeout': 'int',
         'handler': 'str',
         'memory_size': 'int',
+        'gpu_memory': 'int',
         'cpu': 'int',
         'code_type': 'str',
         'code_url': 'str',
@@ -54,7 +55,9 @@ class ListFunctionResult:
         'log_group_id': 'str',
         'log_stream_id': 'str',
         'type': 'str',
-        'fail_count': 'int'
+        'fail_count': 'int',
+        'is_bridge_function': 'bool',
+        'bind_bridge_func_urns': 'list[str]'
     }
 
     attribute_map = {
@@ -68,6 +71,7 @@ class ListFunctionResult:
         'timeout': 'timeout',
         'handler': 'handler',
         'memory_size': 'memory_size',
+        'gpu_memory': 'gpu_memory',
         'cpu': 'cpu',
         'code_type': 'code_type',
         'code_url': 'code_url',
@@ -92,10 +96,12 @@ class ListFunctionResult:
         'log_group_id': 'log_group_id',
         'log_stream_id': 'log_stream_id',
         'type': 'type',
-        'fail_count': 'fail_count'
+        'fail_count': 'fail_count',
+        'is_bridge_function': 'is_bridge_function',
+        'bind_bridge_func_urns': 'bind_bridge_funcUrns'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc_id=None, strategy_config=None, extend_config=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, fail_count=None):
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc_id=None, strategy_config=None, extend_config=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, fail_count=None, is_bridge_function=None, bind_bridge_func_urns=None):
         """ListFunctionResult
 
         The model defined in huaweicloud sdk
@@ -120,6 +126,8 @@ class ListFunctionResult:
         :type handler: str
         :param memory_size: 函数消耗的内存。 单位M。 取值范围为：128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096。 最小值为128，最大值为4096。
         :type memory_size: int
+        :param gpu_memory: 函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
+        :type gpu_memory: int
         :param cpu: 函数占用的cpu资源。 单位为millicore（1 core&#x3D;1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。 函数占用的CPU为基础CPU：200 millicores，再加上内存按比例占用的CPU，计算方法：内存/128 *100 + 200。
         :type cpu: int
         :param code_type: 函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
@@ -170,6 +178,10 @@ class ListFunctionResult:
         :type type: str
         :param fail_count: 函数最近1天内执行失败的次数。
         :type fail_count: int
+        :param is_bridge_function: 是否为bridge函数
+        :type is_bridge_function: bool
+        :param bind_bridge_func_urns: 绑定bridge函数的urn列表
+        :type bind_bridge_func_urns: list[str]
         """
         
         
@@ -184,6 +196,7 @@ class ListFunctionResult:
         self._timeout = None
         self._handler = None
         self._memory_size = None
+        self._gpu_memory = None
         self._cpu = None
         self._code_type = None
         self._code_url = None
@@ -209,6 +222,8 @@ class ListFunctionResult:
         self._log_stream_id = None
         self._type = None
         self._fail_count = None
+        self._is_bridge_function = None
+        self._bind_bridge_func_urns = None
         self.discriminator = None
 
         self.func_urn = func_urn
@@ -221,6 +236,8 @@ class ListFunctionResult:
         self.timeout = timeout
         self.handler = handler
         self.memory_size = memory_size
+        if gpu_memory is not None:
+            self.gpu_memory = gpu_memory
         self.cpu = cpu
         self.code_type = code_type
         if code_url is not None:
@@ -264,6 +281,10 @@ class ListFunctionResult:
             self.type = type
         if fail_count is not None:
             self.fail_count = fail_count
+        if is_bridge_function is not None:
+            self.is_bridge_function = is_bridge_function
+        if bind_bridge_func_urns is not None:
+            self.bind_bridge_func_urns = bind_bridge_func_urns
 
     @property
     def func_urn(self):
@@ -484,6 +505,28 @@ class ListFunctionResult:
         :type memory_size: int
         """
         self._memory_size = memory_size
+
+    @property
+    def gpu_memory(self):
+        """Gets the gpu_memory of this ListFunctionResult.
+
+        函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
+
+        :return: The gpu_memory of this ListFunctionResult.
+        :rtype: int
+        """
+        return self._gpu_memory
+
+    @gpu_memory.setter
+    def gpu_memory(self, gpu_memory):
+        """Sets the gpu_memory of this ListFunctionResult.
+
+        函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
+
+        :param gpu_memory: The gpu_memory of this ListFunctionResult.
+        :type gpu_memory: int
+        """
+        self._gpu_memory = gpu_memory
 
     @property
     def cpu(self):
@@ -1030,6 +1073,50 @@ class ListFunctionResult:
         :type fail_count: int
         """
         self._fail_count = fail_count
+
+    @property
+    def is_bridge_function(self):
+        """Gets the is_bridge_function of this ListFunctionResult.
+
+        是否为bridge函数
+
+        :return: The is_bridge_function of this ListFunctionResult.
+        :rtype: bool
+        """
+        return self._is_bridge_function
+
+    @is_bridge_function.setter
+    def is_bridge_function(self, is_bridge_function):
+        """Sets the is_bridge_function of this ListFunctionResult.
+
+        是否为bridge函数
+
+        :param is_bridge_function: The is_bridge_function of this ListFunctionResult.
+        :type is_bridge_function: bool
+        """
+        self._is_bridge_function = is_bridge_function
+
+    @property
+    def bind_bridge_func_urns(self):
+        """Gets the bind_bridge_func_urns of this ListFunctionResult.
+
+        绑定bridge函数的urn列表
+
+        :return: The bind_bridge_func_urns of this ListFunctionResult.
+        :rtype: list[str]
+        """
+        return self._bind_bridge_func_urns
+
+    @bind_bridge_func_urns.setter
+    def bind_bridge_func_urns(self, bind_bridge_func_urns):
+        """Sets the bind_bridge_func_urns of this ListFunctionResult.
+
+        绑定bridge函数的urn列表
+
+        :param bind_bridge_func_urns: The bind_bridge_func_urns of this ListFunctionResult.
+        :type bind_bridge_func_urns: list[str]
+        """
+        self._bind_bridge_func_urns = bind_bridge_func_urns
 
     def to_dict(self):
         """Returns the model properties as a dict"""

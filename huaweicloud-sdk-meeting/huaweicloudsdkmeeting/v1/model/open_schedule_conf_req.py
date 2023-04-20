@@ -32,7 +32,8 @@ class OpenScheduleConfReq:
         'audience_passwd': 'str',
         'call_restriction': 'bool',
         'scope': 'int',
-        'audience_scope': 'int'
+        'audience_scope': 'int',
+        'enable_recording': 'YesNoEnum'
     }
 
     attribute_map = {
@@ -48,10 +49,11 @@ class OpenScheduleConfReq:
         'audience_passwd': 'audiencePasswd',
         'call_restriction': 'callRestriction',
         'scope': 'scope',
-        'audience_scope': 'audienceScope'
+        'audience_scope': 'audienceScope',
+        'enable_recording': 'enableRecording'
     }
 
-    def __init__(self, subject=None, description=None, start_time=None, duration=None, time_zone_id=None, attendees=None, notify_setting=None, vmr_id=None, guest_passwd=None, audience_passwd=None, call_restriction=None, scope=None, audience_scope=None):
+    def __init__(self, subject=None, description=None, start_time=None, duration=None, time_zone_id=None, attendees=None, notify_setting=None, vmr_id=None, guest_passwd=None, audience_passwd=None, call_restriction=None, scope=None, audience_scope=None, enable_recording=None):
         """OpenScheduleConfReq
 
         The model defined in huaweicloud sdk
@@ -82,6 +84,8 @@ class OpenScheduleConfReq:
         :type scope: int
         :param audience_scope: 观众入会范围。仅callRestriction设置成true后生效。 * 0: 所有用户 * 2: 企业内用户和被邀请用户 
         :type audience_scope: int
+        :param enable_recording: 
+        :type enable_recording: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
         """
         
         
@@ -99,6 +103,7 @@ class OpenScheduleConfReq:
         self._call_restriction = None
         self._scope = None
         self._audience_scope = None
+        self._enable_recording = None
         self.discriminator = None
 
         self.subject = subject
@@ -122,6 +127,8 @@ class OpenScheduleConfReq:
             self.scope = scope
         if audience_scope is not None:
             self.audience_scope = audience_scope
+        if enable_recording is not None:
+            self.enable_recording = enable_recording
 
     @property
     def subject(self):
@@ -404,6 +411,24 @@ class OpenScheduleConfReq:
         :type audience_scope: int
         """
         self._audience_scope = audience_scope
+
+    @property
+    def enable_recording(self):
+        """Gets the enable_recording of this OpenScheduleConfReq.
+
+        :return: The enable_recording of this OpenScheduleConfReq.
+        :rtype: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
+        """
+        return self._enable_recording
+
+    @enable_recording.setter
+    def enable_recording(self, enable_recording):
+        """Sets the enable_recording of this OpenScheduleConfReq.
+
+        :param enable_recording: The enable_recording of this OpenScheduleConfReq.
+        :type enable_recording: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
+        """
+        self._enable_recording = enable_recording
 
     def to_dict(self):
         """Returns the model properties as a dict"""

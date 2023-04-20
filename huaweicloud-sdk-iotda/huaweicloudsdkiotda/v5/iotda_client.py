@@ -1135,6 +1135,70 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def broadcast_message(self, request):
+        """下发广播消息
+
+        应用服务器可调用此接口向订阅了指定Topic的所有在线设备发布广播消息。应用将广播消息下发给平台后，平台会先返回应用响应结果，再将消息广播给设备。
+        注意：
+        - 此接口只适用于使用MQTT协议接入的设备。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BroadcastMessage
+        :type request: :class:`huaweicloudsdkiotda.v5.BroadcastMessageRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.BroadcastMessageResponse`
+        """
+        return self.broadcast_message_with_http_info(request)
+
+    def broadcast_message_with_http_info(self, request):
+        all_params = ['broadcast_message_request_body', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/broadcast-messages',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BroadcastMessageResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def add_certificate(self, request):
         """上传设备CA证书
 

@@ -20,26 +20,26 @@ class ListResourceResp:
     sensitive_list = []
 
     openapi_types = {
-        'resouce_detail': 'object',
+        'resource_detail': 'object',
         'resource_id': 'str',
         'resource_name': 'str',
         'tags': 'list[ResourceTag]'
     }
 
     attribute_map = {
-        'resouce_detail': 'resouce_detail',
+        'resource_detail': 'resource_detail',
         'resource_id': 'resource_id',
         'resource_name': 'resource_name',
         'tags': 'tags'
     }
 
-    def __init__(self, resouce_detail=None, resource_id=None, resource_name=None, tags=None):
+    def __init__(self, resource_detail=None, resource_id=None, resource_name=None, tags=None):
         """ListResourceResp
 
         The model defined in huaweicloud sdk
 
-        :param resouce_detail: 资源详情。 资源对象，用于扩展。默认为空
-        :type resouce_detail: object
+        :param resource_detail: 资源详情。 资源对象，用于扩展。默认为空
+        :type resource_detail: object
         :param resource_id: 资源ID
         :type resource_id: str
         :param resource_name: 资源名称，没有默认为空字符串
@@ -50,39 +50,39 @@ class ListResourceResp:
         
         
 
-        self._resouce_detail = None
+        self._resource_detail = None
         self._resource_id = None
         self._resource_name = None
         self._tags = None
         self.discriminator = None
 
-        self.resouce_detail = resouce_detail
+        self.resource_detail = resource_detail
         self.resource_id = resource_id
         self.resource_name = resource_name
         if tags is not None:
             self.tags = tags
 
     @property
-    def resouce_detail(self):
-        """Gets the resouce_detail of this ListResourceResp.
+    def resource_detail(self):
+        """Gets the resource_detail of this ListResourceResp.
 
         资源详情。 资源对象，用于扩展。默认为空
 
-        :return: The resouce_detail of this ListResourceResp.
+        :return: The resource_detail of this ListResourceResp.
         :rtype: object
         """
-        return self._resouce_detail
+        return self._resource_detail
 
-    @resouce_detail.setter
-    def resouce_detail(self, resouce_detail):
-        """Sets the resouce_detail of this ListResourceResp.
+    @resource_detail.setter
+    def resource_detail(self, resource_detail):
+        """Sets the resource_detail of this ListResourceResp.
 
         资源详情。 资源对象，用于扩展。默认为空
 
-        :param resouce_detail: The resouce_detail of this ListResourceResp.
-        :type resouce_detail: object
+        :param resource_detail: The resource_detail of this ListResourceResp.
+        :type resource_detail: object
         """
-        self._resouce_detail = resouce_detail
+        self._resource_detail = resource_detail
 
     @property
     def resource_id(self):

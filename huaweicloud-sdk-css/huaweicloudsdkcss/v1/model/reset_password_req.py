@@ -32,7 +32,7 @@ class ResetPasswordReq:
 
         The model defined in huaweicloud sdk
 
-        :param newpassword: 安全模式下集群管理员admin的密码，只有在创建集群时authorityEnable设置为true时该接口可用。 - 参数范围：8~32个字符。 - 参数要求：密码至少包含大写字母，小写字母，数字、特殊字符四类中的三类，其中可输入的特殊字符为：~!@#$%&amp;*()-_&#x3D;|[{}];:,&lt;.&gt;/?
+        :param newpassword: 安全模式下集群管理员admin的密码，只有在创建集群时authorityEnable设置为true时该接口可用。  - 参数范围：8~32个字符。  - 参数要求：密码至少包含大写字母，小写字母，数字、特殊字符四类中的三类，其中可输入的特殊字符为：~!@#$%&amp;*()-_&#x3D;|[{}];:,&lt;.&gt;/?
         :type newpassword: str
         """
         
@@ -47,7 +47,7 @@ class ResetPasswordReq:
     def newpassword(self):
         """Gets the newpassword of this ResetPasswordReq.
 
-        安全模式下集群管理员admin的密码，只有在创建集群时authorityEnable设置为true时该接口可用。 - 参数范围：8~32个字符。 - 参数要求：密码至少包含大写字母，小写字母，数字、特殊字符四类中的三类，其中可输入的特殊字符为：~!@#$%&*()-_=|[{}];:,<.>/?
+        安全模式下集群管理员admin的密码，只有在创建集群时authorityEnable设置为true时该接口可用。  - 参数范围：8~32个字符。  - 参数要求：密码至少包含大写字母，小写字母，数字、特殊字符四类中的三类，其中可输入的特殊字符为：~!@#$%&*()-_=|[{}];:,<.>/?
 
         :return: The newpassword of this ResetPasswordReq.
         :rtype: str
@@ -58,7 +58,7 @@ class ResetPasswordReq:
     def newpassword(self, newpassword):
         """Sets the newpassword of this ResetPasswordReq.
 
-        安全模式下集群管理员admin的密码，只有在创建集群时authorityEnable设置为true时该接口可用。 - 参数范围：8~32个字符。 - 参数要求：密码至少包含大写字母，小写字母，数字、特殊字符四类中的三类，其中可输入的特殊字符为：~!@#$%&*()-_=|[{}];:,<.>/?
+        安全模式下集群管理员admin的密码，只有在创建集群时authorityEnable设置为true时该接口可用。  - 参数范围：8~32个字符。  - 参数要求：密码至少包含大写字母，小写字母，数字、特殊字符四类中的三类，其中可输入的特殊字符为：~!@#$%&*()-_=|[{}];:,<.>/?
 
         :param newpassword: The newpassword of this ResetPasswordReq.
         :type newpassword: str

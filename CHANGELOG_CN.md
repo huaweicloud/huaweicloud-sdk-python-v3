@@ -1,3 +1,525 @@
+# 3.1.37 2023-04-20
+
+### HuaweiCloud SDK AOM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAllVersionByVersionId**
+    - 响应参数变更
+      - `+ elements.job_reference_number`
+      - `+ elements.job_reference_name`
+      - `- elements.reference_number`
+      - `- elements.script_reference`
+
+### HuaweiCloud SDK AOS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **GetStackTemplate**
+    - 请求参数变更
+      - `- executor`
+  - **ListStackEvents**
+    - 请求参数变更
+      - `- executor`
+  - **ListStackOutputs**
+    - 请求参数变更
+      - `- executor`
+  - **DeleteStack**
+    - 请求参数变更
+      - `- executor`
+  - **DeleteExecutionPlan**
+    - 请求参数变更
+      - `- executor`
+  - **ApplyExecutionPlan**
+    - 请求参数变更
+      - `- executor`
+  - **GetExecutionPlan**
+    - 请求参数变更
+      - `- executor`
+  - **ListStackResources**
+    - 请求参数变更
+      - `- executor`
+  - **ListExecutionPlans**
+    - 请求参数变更
+      - `- executor`
+  - **CreateExecutionPlan**
+    - 请求参数变更
+      - `- executor`
+  - **GetExecutionPlanMetadata**
+    - 请求参数变更
+      - `- executor`
+  - **GetStackMetadata**
+    - 请求参数变更
+      - `- executor`
+  - **ListStacks**
+    - 请求参数变更
+      - `- executor`
+  - **CreateStack**
+    - 请求参数变更
+      - `- executor`
+  - **DeployStack**
+    - 请求参数变更
+      - `- executor`
+
+### HuaweiCloud SDK BSSINTL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCustomerselfResourceRecordDetails**
+    - 响应参数变更
+      - `+ monthly_records.pre_order_id`
+      - `+ monthly_records.az_code_infos`
+
+### HuaweiCloud SDK CBS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ExecuteGetVideosList`
+    - `ExecuteCreateVideo`
+    - `ExecuteUpdateVideoById`
+    - `ExecuteDeleteVideoById`
+    - `ExecuteGetVideoInfoById`
+    - `ExecuteUpdateVideoInfoById`
+    - `ExecuteComposeVideo`
+    - `ExecuteComposeVideoOndemand`
+    - `ExecuteGetCharacters`
+    - `ExecuteGetCharacterInfoById`
+    - `ExecuteUploadPpt`
+    - `ExecuteUploadImage`
+    - `ExecuteUpdateImageName`
+    - `ExecuteDeleteimageById`
+    - `ExecuteGetImagesList`
+    - `ExecutePostCreateImages`
+    - `ExecuteGetFramsListByImagesId`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 支持接口`ShowDomainFullConfig`、`UpdateDomainFullConfig`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDomainFullConfig**
+    - 响应参数变更
+      - `+ configs.origin_follow302_status`
+      - `+ configs.cache_rules`
+      - `+ configs.ip_filter`
+      - `+ configs.referer`
+      - `+ configs.force_redirect.redirect_code`
+  - **UpdateDomainFullConfig**
+    - 请求参数变更
+      - `+ configs.origin_follow302_status`
+      - `+ configs.cache_rules`
+      - `+ configs.ip_filter`
+      - `+ configs.referer`
+      - `+ configs.force_redirect.redirect_code`
+
+### HuaweiCloud SDK CloudPipeline
+
+- _新增特性_
+  - 支持接口`ListPipelineTemplates`、`ShowPipelineTemplateDetail`、`CreatePipelineByTemplateId`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListLogsJob**
+    - 请求参数变更
+      - `+ start`
+      - `+ limit`
+  - **ShowVpcepConnection**
+    - 请求参数变更
+      - `+ start`
+      - `+ limit`
+  - **ListYmlsJob**
+    - 请求参数变更
+      - `+ start`
+      - `+ limit`
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateRedislogDownloadLink**
+    - 响应参数变更
+      - `+ backup_id`
+
+### HuaweiCloud SDK DDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateConfiguration**
+    - 响应参数变更
+      - `+ configuration`
+      - `- datastore_version`
+      - `- created`
+      - `- name`
+      - `- description`
+      - `- id`
+      - `- datastore_name`
+      - `- updated`
+
+### HuaweiCloud SDK DLF
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowJob**
+    - 响应参数变更
+      - `+ lastUpdateUser`
+      - `+ id`
+  - **UpdateJob**
+    - 请求参数变更
+      - `+ lastUpdateUser`
+      - `+ id`
+  - **CreateJob**
+    - 请求参数变更
+      - `+ lastUpdateUser`
+      - `+ id`
+  - **ListJobs**
+    - 响应参数变更
+      - `+ lastUpdateUser`
+      - `+ id`
+      - `+ jobs.id`
+      - `+ jobs.lastUpdateUser`
+
+### HuaweiCloud SDK DRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowJobList**
+    - 响应参数变更
+      - `+ jobs.job_action`
+      - `+ jobs.children.job_action`
+  - **BatchListJobDetails**
+    - 响应参数变更
+      - `+ results.original_job_direction`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ImportFunction**
+    - 响应参数变更
+      - `+ gpu_memory`
+      - `+ func_vpc.security_groups`
+  - **ListFunctions**
+    - 响应参数变更
+      - `+ functions.gpu_memory`
+      - `+ functions.is_bridge_function`
+      - `+ functions.bind_bridge_funcUrns`
+  - **CreateFunction**
+    - 请求参数变更
+      - `+ gpu_memory`
+      - `+ log_config`
+      - `+ network_controller`
+      - `+ func_vpc.security_groups`
+    - 响应参数变更
+      - `+ gpu_memory`
+      - `+ func_vpc.security_groups`
+  - **ShowFunctionConfig**
+    - 响应参数变更
+      - `+ gpu_memory`
+      - `+ ephemeral_storage`
+      - `+ func_vpc.security_groups`
+  - **UpdateFunctionConfig**
+    - 请求参数变更
+      - `+ gpu_memory`
+      - `+ ephemeral_storage`
+      - `+ log_config`
+      - `+ network_controller`
+      - `+ restore_hook_handler`
+      - `+ restore_hook_timeout`
+      - `+ func_vpc.security_groups`
+    - 响应参数变更
+      - `+ gpu_memory`
+      - `+ ephemeral_storage`
+      - `+ func_vpc.security_groups`
+  - **UpdateFunctionMaxInstanceConfig**
+    - 响应参数变更
+      - `+ func_vpc.security_groups`
+  - **CreateFunctionVersion**
+    - 响应参数变更
+      - `+ func_vpc.security_groups`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateDbUser**
+    - 请求参数变更
+      - `+ is_login_only`
+
+### HuaweiCloud SDK GSL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSimCards**
+    - 请求参数变更
+      - `+ price_plan_id`
+
+### HuaweiCloud SDK Image
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除以下接口：
+    - `CreateVideoTranslateTask`
+    - `ShowVideoTranslateTask`
+    - `CreateImageTranslateTask`
+    - `ShowImageTranslateTask`
+    - `CreateVideoCoverAnalysisTask`
+    - `ShowVideoCoverAnalysisTask`
+    - `CreateVideoSummarizationAnalysisTask`
+    - `ShowVideoSummarizationAnalysisTask`
+    - `CreateVideoShotSplitTask`
+    - `ShowVideoShotSplitTask`
+  - **CreateImageHighresolutionMattingTask**
+    - 请求参数变更
+      - `- input.data.bucket`
+      - `- input.data.path`
+  - **ShowImageHighresolutionMattingTask**
+    - 响应参数变更
+      - `- input.data.bucket`
+      - `- input.data.path`
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 支持接口`BroadcastMessage`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IoTEdge
+
+- _新增特性_
+  - 支持以下接口：
+    - `BatchListOtTemplates`
+    - `AddOtTemplates`
+    - `ShowOtTemplate`
+    - `DeleteOtTemplate`
+    - `AddGeneralOtTemplate`
+    - `UpdateModuleState`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Meeting
+
+- _新增特性_
+  - 支持接口`BatchShowUserDetails`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateWebinar**
+    - 请求参数变更
+      - `+ enableRecording`
+  - **CreateWebinar**
+    - 请求参数变更
+      - `+ enableRecording`
+    - 响应参数变更
+      - `+ enableRecording`
+  - **ShowWebinar**
+    - 响应参数变更
+      - `+ enableRecording`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeDriverLicense**
+    - 响应参数变更
+      - `+ result.front`
+      - `+ result.back`
+  - **RecognizeThailandIdcard**
+    - 响应参数变更
+      - `+ result.type`
+      - `+ result.name_en`
+      - `+ result.ref_number`
+      - `+ result.confidence.name_en`
+      - `+ result.confidence.ref_number`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListRestoreTimes**
+    - 响应参数变更
+      - `* restore_time.start_time: int32 -> int64`
+      - `* restore_time.end_time: int32 -> int64`
+  - **ListOffSiteRestoreTimes**
+    - 响应参数变更
+      - `* restore_time.start_time: int32 -> int64`
+      - `* restore_time.end_time: int32 -> int64`
+  - **RestoreToExistingInstance**
+    - 请求参数变更
+      - `* source.restore_time: int32 -> int64`
+  - **RestoreExistInstance**
+    - 请求参数变更
+      - `* source.restore_time: int32 -> int64`
+  - **CreateInstance**
+    - 请求参数变更
+      - `* restore_point.restore_time: int32 -> int64`
+    - 响应参数变更
+      - `* instance.restore_point.restore_time: int32 -> int64`
+  - **CreateRestoreInstance**
+    - 请求参数变更
+      - `* restore_point.restore_time: int32 -> int64`
+    - 响应参数变更
+      - `* instance.restore_point.restore_time: int32 -> int64`
+
+### HuaweiCloud SDK RocketMQ
+
+- _新增特性_
+  - 支持接口`ShowConsumerConnections`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowConsumerListOrDetails**
+    - 响应参数变更
+      - `+ total`
+      - `+ brokers`
+  - **ShowUser**
+    - 响应参数变更
+      - `- default_group_perm: enum value [PUB,PUB|SUB]`
+      - `- group_perms.perm: enum value [PUB,PUB|SUB]`
+  - **UpdateUser**
+    - 请求参数变更
+      - `- default_group_perm: enum value [PUB,PUB|SUB]`
+      - `- group_perms.perm: enum value [PUB,PUB|SUB]`
+    - 响应参数变更
+      - `- default_group_perm: enum value [PUB,PUB|SUB]`
+      - `- group_perms.perm: enum value [PUB,PUB|SUB]`
+  - **UpdateInstance**
+    - 请求参数变更
+      - `+ enable_publicip`
+      - `+ publicip_id`
+  - **CreateUser**
+    - 请求参数变更
+      - `- default_group_perm: enum value [PUB,PUB|SUB]`
+      - `- group_perms.perm: enum value [PUB,PUB|SUB]`
+    - 响应参数变更
+      - `- default_group_perm: enum value [PUB,PUB|SUB]`
+      - `- group_perms.perm: enum value [PUB,PUB|SUB]`
+  - **ListUser**
+    - 响应参数变更
+      - `- users.default_group_perm: enum value [PUB,PUB|SUB]`
+      - `- users.group_perms.perm: enum value [PUB,PUB|SUB]`
+
+### HuaweiCloud SDK VPC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListVpcsByTags**
+    - 响应参数变更
+      - `+ resources.resource_detail`
+      - `- resources.resouce_detail`
+  - **ListSubnetsByTags**
+    - 响应参数变更
+      - `+ resources.resource_detail`
+      - `- resources.resouce_detail`
+  - **UpdateRouteTable**
+    - 请求参数变更
+      - `+ routetable.routes.add`
+      - `+ routetable.routes.mod`
+      - `+ routetable.routes.del`
+      - `* routetable.routes: map<string, list<RouteTableRoute>> -> object<RouteTableRouteAction>`
+
+### HuaweiCloud SDK VPCEP
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListServiceDescribeDetails**
+    - 响应参数变更
+      - `+ public_border_group`
+  - **ListServiceDetails**
+    - 响应参数变更
+      - `+ enable_policy`
+      - `+ tcp_proxy: enum value [proxy_vni]`
+  - **UpdateEndpointService**
+    - 请求参数变更
+      - `+ tcp_proxy`
+    - 响应参数变更
+      - `+ enable_policy`
+      - `+ tcp_proxy: enum value [proxy_vni]`
+  - **ListEndpointInfoDetails**
+    - 响应参数变更
+      - `+ endpoint_pool_id`
+      - `+ public_border_group`
+  - **CreateEndpointService**
+    - 请求参数变更
+      - `+ enable_policy`
+      - `+ tcp_proxy: enum value [proxy_vni]`
+    - 响应参数变更
+      - `+ enable_policy`
+      - `+ tcp_proxy: enum value [proxy_vni]`
+  - **ListEndpointService**
+    - 响应参数变更
+      - `+ endpoint_services.enable_policy`
+      - `+ endpoint_services.tcp_proxy: enum value [proxy_vni]`
+  - **CreateEndpoint**
+    - 响应参数变更
+      - `+ endpoint_pool_id`
+      - `+ public_border_group`
+      - `+ ip`
+
 # 3.1.36 2023-04-13
 
 ### HuaweiCloud SDK BSS

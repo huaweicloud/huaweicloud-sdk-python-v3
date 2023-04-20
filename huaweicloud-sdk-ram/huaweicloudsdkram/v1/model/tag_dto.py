@@ -36,7 +36,7 @@ class TagDTO:
 
         :param key: 标签\&quot;键\&quot;的标识符或名称。您可以将标签的值设置为空字符串，但不能设置为null。
         :type key: str
-        :param values: 值列表。每个值最大长度255个unicode字符。
+        :param values: 值列表。每个值最大长度255个字符。
         :type values: list[str]
         """
         
@@ -75,7 +75,7 @@ class TagDTO:
     def values(self):
         """Gets the values of this TagDTO.
 
-        值列表。每个值最大长度255个unicode字符。
+        值列表。每个值最大长度255个字符。
 
         :return: The values of this TagDTO.
         :rtype: list[str]
@@ -86,7 +86,7 @@ class TagDTO:
     def values(self, values):
         """Sets the values of this TagDTO.
 
-        值列表。每个值最大长度255个unicode字符。
+        值列表。每个值最大长度255个字符。
 
         :param values: The values of this TagDTO.
         :type values: list[str]

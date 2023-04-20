@@ -44,7 +44,8 @@ class ListSimCardsRequest:
         'real_named': 'bool',
         'order_id': 'int',
         'filter_downtime_period': 'bool',
-        'order_ids': 'list[int]'
+        'order_ids': 'list[int]',
+        'price_plan_id': 'list[str]'
     }
 
     attribute_map = {
@@ -72,10 +73,11 @@ class ListSimCardsRequest:
         'real_named': 'real_named',
         'order_id': 'order_id',
         'filter_downtime_period': 'filter_downtime_period',
-        'order_ids': 'order_ids'
+        'order_ids': 'order_ids',
+        'price_plan_id': 'price_plan_id'
     }
 
-    def __init__(self, main_search_type=None, main_search_key=None, limit=None, offset=None, sim_status=None, device_status=None, tag_id=None, sim_type=None, order=None, sort=None, msisdn=None, customer_attribute1=None, customer_attribute2=None, customer_attribute3=None, customer_attribute4=None, customer_attribute5=None, customer_attribute6=None, min_used_flow=None, max_used_flow=None, min_left_flow=None, max_left_flow=None, real_named=None, order_id=None, filter_downtime_period=None, order_ids=None):
+    def __init__(self, main_search_type=None, main_search_key=None, limit=None, offset=None, sim_status=None, device_status=None, tag_id=None, sim_type=None, order=None, sort=None, msisdn=None, customer_attribute1=None, customer_attribute2=None, customer_attribute3=None, customer_attribute4=None, customer_attribute5=None, customer_attribute6=None, min_used_flow=None, max_used_flow=None, min_left_flow=None, max_left_flow=None, real_named=None, order_id=None, filter_downtime_period=None, order_ids=None, price_plan_id=None):
         """ListSimCardsRequest
 
         The model defined in huaweicloud sdk
@@ -130,6 +132,8 @@ class ListSimCardsRequest:
         :type filter_downtime_period: bool
         :param order_ids: 订单批次号集合
         :type order_ids: list[int]
+        :param price_plan_id: 套餐id集合，最多支持传30个
+        :type price_plan_id: list[str]
         """
         
         
@@ -159,6 +163,7 @@ class ListSimCardsRequest:
         self._order_id = None
         self._filter_downtime_period = None
         self._order_ids = None
+        self._price_plan_id = None
         self.discriminator = None
 
         if main_search_type is not None:
@@ -211,6 +216,8 @@ class ListSimCardsRequest:
             self.filter_downtime_period = filter_downtime_period
         if order_ids is not None:
             self.order_ids = order_ids
+        if price_plan_id is not None:
+            self.price_plan_id = price_plan_id
 
     @property
     def main_search_type(self):
@@ -761,6 +768,28 @@ class ListSimCardsRequest:
         :type order_ids: list[int]
         """
         self._order_ids = order_ids
+
+    @property
+    def price_plan_id(self):
+        """Gets the price_plan_id of this ListSimCardsRequest.
+
+        套餐id集合，最多支持传30个
+
+        :return: The price_plan_id of this ListSimCardsRequest.
+        :rtype: list[str]
+        """
+        return self._price_plan_id
+
+    @price_plan_id.setter
+    def price_plan_id(self, price_plan_id):
+        """Sets the price_plan_id of this ListSimCardsRequest.
+
+        套餐id集合，最多支持传30个
+
+        :param price_plan_id: The price_plan_id of this ListSimCardsRequest.
+        :type price_plan_id: list[str]
+        """
+        self._price_plan_id = price_plan_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

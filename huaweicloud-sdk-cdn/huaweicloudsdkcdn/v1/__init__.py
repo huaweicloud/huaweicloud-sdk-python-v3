@@ -12,6 +12,7 @@ from huaweicloudsdkcdn.v1.model.black_white_list_body import BlackWhiteListBody
 from huaweicloudsdkcdn.v1.model.cache_config import CacheConfig
 from huaweicloudsdkcdn.v1.model.cache_config_request import CacheConfigRequest
 from huaweicloudsdkcdn.v1.model.cache_config_request_body import CacheConfigRequestBody
+from huaweicloudsdkcdn.v1.model.cache_rules import CacheRules
 from huaweicloudsdkcdn.v1.model.cache_url_parameter_filter import CacheUrlParameterFilter
 from huaweicloudsdkcdn.v1.model.cdn_ips import CdnIps
 from huaweicloudsdkcdn.v1.model.compress import Compress
@@ -61,6 +62,7 @@ from huaweicloudsdkcdn.v1.model.http_info_response_body import HttpInfoResponseB
 from huaweicloudsdkcdn.v1.model.http_put_body import HttpPutBody
 from huaweicloudsdkcdn.v1.model.http_response_header import HttpResponseHeader
 from huaweicloudsdkcdn.v1.model.https_detail import HttpsDetail
+from huaweicloudsdkcdn.v1.model.ip_filter import IpFilter
 from huaweicloudsdkcdn.v1.model.list_domains_request import ListDomainsRequest
 from huaweicloudsdkcdn.v1.model.list_domains_response import ListDomainsResponse
 from huaweicloudsdkcdn.v1.model.log_object import LogObject
@@ -78,6 +80,7 @@ from huaweicloudsdkcdn.v1.model.quotas import Quotas
 from huaweicloudsdkcdn.v1.model.range_status_request import RangeStatusRequest
 from huaweicloudsdkcdn.v1.model.referer import Referer
 from huaweicloudsdkcdn.v1.model.referer_body import RefererBody
+from huaweicloudsdkcdn.v1.model.referer_config import RefererConfig
 from huaweicloudsdkcdn.v1.model.referer_rsp import RefererRsp
 from huaweicloudsdkcdn.v1.model.refresh_task_request import RefreshTaskRequest
 from huaweicloudsdkcdn.v1.model.refresh_task_request_body import RefreshTaskRequestBody

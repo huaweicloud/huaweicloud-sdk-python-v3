@@ -28,6 +28,7 @@ class CreateFunctionRequestBody:
         'depend_version_list': 'list[str]',
         'func_vpc': 'FuncVpc',
         'memory_size': 'int',
+        'gpu_memory': 'int',
         'code_type': 'str',
         'code_url': 'str',
         'code_filename': 'str',
@@ -39,7 +40,9 @@ class CreateFunctionRequestBody:
         'initializer_handler': 'str',
         'initializer_timeout': 'int',
         'enterprise_project_id': 'str',
-        'type': 'str'
+        'type': 'str',
+        'log_config': 'FuncLogConfig',
+        'network_controller': 'NetworkControlConfig'
     }
 
     attribute_map = {
@@ -51,6 +54,7 @@ class CreateFunctionRequestBody:
         'depend_version_list': 'depend_version_list',
         'func_vpc': 'func_vpc',
         'memory_size': 'memory_size',
+        'gpu_memory': 'gpu_memory',
         'code_type': 'code_type',
         'code_url': 'code_url',
         'code_filename': 'code_filename',
@@ -62,10 +66,12 @@ class CreateFunctionRequestBody:
         'initializer_handler': 'initializer_handler',
         'initializer_timeout': 'initializer_timeout',
         'enterprise_project_id': 'enterprise_project_id',
-        'type': 'type'
+        'type': 'type',
+        'log_config': 'log_config',
+        'network_controller': 'network_controller'
     }
 
-    def __init__(self, func_name=None, package=None, runtime=None, timeout=None, handler=None, depend_version_list=None, func_vpc=None, memory_size=None, code_type=None, code_url=None, code_filename=None, user_data=None, xrole=None, app_xrole=None, description=None, func_code=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, type=None):
+    def __init__(self, func_name=None, package=None, runtime=None, timeout=None, handler=None, depend_version_list=None, func_vpc=None, memory_size=None, gpu_memory=None, code_type=None, code_url=None, code_filename=None, user_data=None, xrole=None, app_xrole=None, description=None, func_code=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, type=None, log_config=None, network_controller=None):
         """CreateFunctionRequestBody
 
         The model defined in huaweicloud sdk
@@ -86,6 +92,8 @@ class CreateFunctionRequestBody:
         :type func_vpc: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
         :param memory_size: 函数消耗的内存。 单位M。 取值范围为：128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096。 最小值为128，最大值为4096。
         :type memory_size: int
+        :param gpu_memory: 函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
+        :type gpu_memory: int
         :param code_type: 函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
         :type code_type: str
         :param code_url: 当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
@@ -110,6 +118,10 @@ class CreateFunctionRequestBody:
         :type enterprise_project_id: str
         :param type: 函数版本；部分局点只支持v1函数，缺省值则为v1
         :type type: str
+        :param log_config: 
+        :type log_config: :class:`huaweicloudsdkfunctiongraph.v2.FuncLogConfig`
+        :param network_controller: 
+        :type network_controller: :class:`huaweicloudsdkfunctiongraph.v2.NetworkControlConfig`
         """
         
         
@@ -122,6 +134,7 @@ class CreateFunctionRequestBody:
         self._depend_version_list = None
         self._func_vpc = None
         self._memory_size = None
+        self._gpu_memory = None
         self._code_type = None
         self._code_url = None
         self._code_filename = None
@@ -134,6 +147,8 @@ class CreateFunctionRequestBody:
         self._initializer_timeout = None
         self._enterprise_project_id = None
         self._type = None
+        self._log_config = None
+        self._network_controller = None
         self.discriminator = None
 
         self.func_name = func_name
@@ -146,6 +161,8 @@ class CreateFunctionRequestBody:
         if func_vpc is not None:
             self.func_vpc = func_vpc
         self.memory_size = memory_size
+        if gpu_memory is not None:
+            self.gpu_memory = gpu_memory
         self.code_type = code_type
         if code_url is not None:
             self.code_url = code_url
@@ -169,6 +186,10 @@ class CreateFunctionRequestBody:
             self.enterprise_project_id = enterprise_project_id
         if type is not None:
             self.type = type
+        if log_config is not None:
+            self.log_config = log_config
+        if network_controller is not None:
+            self.network_controller = network_controller
 
     @property
     def func_name(self):
@@ -341,6 +362,28 @@ class CreateFunctionRequestBody:
         :type memory_size: int
         """
         self._memory_size = memory_size
+
+    @property
+    def gpu_memory(self):
+        """Gets the gpu_memory of this CreateFunctionRequestBody.
+
+        函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
+
+        :return: The gpu_memory of this CreateFunctionRequestBody.
+        :rtype: int
+        """
+        return self._gpu_memory
+
+    @gpu_memory.setter
+    def gpu_memory(self, gpu_memory):
+        """Sets the gpu_memory of this CreateFunctionRequestBody.
+
+        函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
+
+        :param gpu_memory: The gpu_memory of this CreateFunctionRequestBody.
+        :type gpu_memory: int
+        """
+        self._gpu_memory = gpu_memory
 
     @property
     def code_type(self):
@@ -601,6 +644,42 @@ class CreateFunctionRequestBody:
         :type type: str
         """
         self._type = type
+
+    @property
+    def log_config(self):
+        """Gets the log_config of this CreateFunctionRequestBody.
+
+        :return: The log_config of this CreateFunctionRequestBody.
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncLogConfig`
+        """
+        return self._log_config
+
+    @log_config.setter
+    def log_config(self, log_config):
+        """Sets the log_config of this CreateFunctionRequestBody.
+
+        :param log_config: The log_config of this CreateFunctionRequestBody.
+        :type log_config: :class:`huaweicloudsdkfunctiongraph.v2.FuncLogConfig`
+        """
+        self._log_config = log_config
+
+    @property
+    def network_controller(self):
+        """Gets the network_controller of this CreateFunctionRequestBody.
+
+        :return: The network_controller of this CreateFunctionRequestBody.
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.NetworkControlConfig`
+        """
+        return self._network_controller
+
+    @network_controller.setter
+    def network_controller(self, network_controller):
+        """Sets the network_controller of this CreateFunctionRequestBody.
+
+        :param network_controller: The network_controller of this CreateFunctionRequestBody.
+        :type network_controller: :class:`huaweicloudsdkfunctiongraph.v2.NetworkControlConfig`
+        """
+        self._network_controller = network_controller
 
     def to_dict(self):
         """Returns the model properties as a dict"""

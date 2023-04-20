@@ -96,7 +96,7 @@ class CreateInstanceByEngineReq:
         :type enterprise_project_id: str
         :param enable_acl: 是否开启访问控制列表。
         :type enable_acl: bool
-        :param ipv6_enable: 是否支持IPV6。   - true: 支持   - false：不支持
+        :param ipv6_enable: 是否支持IPv6。   - true: 支持   - false：不支持
         :type ipv6_enable: bool
         :param enable_publicip: 是否开启公网访问功能。默认不开启公网。 - true：开启 - false：不开启
         :type enable_publicip: bool
@@ -471,7 +471,7 @@ class CreateInstanceByEngineReq:
     def ipv6_enable(self):
         """Gets the ipv6_enable of this CreateInstanceByEngineReq.
 
-        是否支持IPV6。   - true: 支持   - false：不支持
+        是否支持IPv6。   - true: 支持   - false：不支持
 
         :return: The ipv6_enable of this CreateInstanceByEngineReq.
         :rtype: bool
@@ -482,7 +482,7 @@ class CreateInstanceByEngineReq:
     def ipv6_enable(self, ipv6_enable):
         """Sets the ipv6_enable of this CreateInstanceByEngineReq.
 
-        是否支持IPV6。   - true: 支持   - false：不支持
+        是否支持IPv6。   - true: 支持   - false：不支持
 
         :param ipv6_enable: The ipv6_enable of this CreateInstanceByEngineReq.
         :type ipv6_enable: bool

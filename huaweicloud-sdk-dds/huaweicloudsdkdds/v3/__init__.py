@@ -190,6 +190,7 @@ from huaweicloudsdkdds.v3.model.migrate_az_response import MigrateAzResponse
 from huaweicloudsdkdds.v3.model.mongo_update_repl_set_v3_request_body import MongoUpdateReplSetV3RequestBody
 from huaweicloudsdkdds.v3.model.node_item import NodeItem
 from huaweicloudsdkdds.v3.model.ops_window_request_body import OpsWindowRequestBody
+from huaweicloudsdkdds.v3.model.param_group_info_result import ParamGroupInfoResult
 from huaweicloudsdkdds.v3.model.produce_auditlog_links_request_body import ProduceAuditlogLinksRequestBody
 from huaweicloudsdkdds.v3.model.query_connections_response import QueryConnectionsResponse
 from huaweicloudsdkdds.v3.model.query_instance_response import QueryInstanceResponse

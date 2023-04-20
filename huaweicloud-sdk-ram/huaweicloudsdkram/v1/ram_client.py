@@ -1501,9 +1501,9 @@ class RamClient(Client):
             request_type=request.__class__.__name__)
 
     def list_resource_share_tags(self, request):
-        """查询已经使用的标签列表
+        """查询已使用的标签列表
 
-        查询的标签相信列表。
+        查询资源共享实例已使用标签的列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1565,7 +1565,7 @@ class RamClient(Client):
     def list_resource_shares_by_tags(self, request):
         """根据标签信息查询实例列表
 
-        根据标签信息查询实例列表。
+        根据标签信息查询资源共享实例列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1629,7 +1629,7 @@ class RamClient(Client):
     def search_resource_share_count_by_tags(self, request):
         """根据标签信息查询实例数量
 
-        根据标签信息查询实例数量。
+        根据标签信息查询资源共享实例数量。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

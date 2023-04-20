@@ -21,21 +21,25 @@ class CreateRedislogDownloadLinkResponse(SdkResponse):
 
     openapi_types = {
         'id': 'str',
+        'backup_id': 'str',
         'link': 'str'
     }
 
     attribute_map = {
         'id': 'id',
+        'backup_id': 'backup_id',
         'link': 'link'
     }
 
-    def __init__(self, id=None, link=None):
+    def __init__(self, id=None, backup_id=None, link=None):
         """CreateRedislogDownloadLinkResponse
 
         The model defined in huaweicloud sdk
 
         :param id: 日志id
         :type id: str
+        :param backup_id: 后台任务id
+        :type backup_id: str
         :param link: 日志下载链接，默认有效时间为24小时
         :type link: str
         """
@@ -43,11 +47,14 @@ class CreateRedislogDownloadLinkResponse(SdkResponse):
         super(CreateRedislogDownloadLinkResponse, self).__init__()
 
         self._id = None
+        self._backup_id = None
         self._link = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
+        if backup_id is not None:
+            self.backup_id = backup_id
         if link is not None:
             self.link = link
 
@@ -72,6 +79,28 @@ class CreateRedislogDownloadLinkResponse(SdkResponse):
         :type id: str
         """
         self._id = id
+
+    @property
+    def backup_id(self):
+        """Gets the backup_id of this CreateRedislogDownloadLinkResponse.
+
+        后台任务id
+
+        :return: The backup_id of this CreateRedislogDownloadLinkResponse.
+        :rtype: str
+        """
+        return self._backup_id
+
+    @backup_id.setter
+    def backup_id(self, backup_id):
+        """Sets the backup_id of this CreateRedislogDownloadLinkResponse.
+
+        后台任务id
+
+        :param backup_id: The backup_id of this CreateRedislogDownloadLinkResponse.
+        :type backup_id: str
+        """
+        self._backup_id = backup_id
 
     @property
     def link(self):

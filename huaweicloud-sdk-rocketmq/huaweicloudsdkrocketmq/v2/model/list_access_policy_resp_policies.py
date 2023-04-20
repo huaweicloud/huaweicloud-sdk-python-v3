@@ -42,7 +42,7 @@ class ListAccessPolicyRespPolicies:
 
         :param access_key: 用户名。
         :type access_key: str
-        :param secret_key: 秘钥。
+        :param secret_key: 密钥。
         :type secret_key: str
         :param white_remote_address: IP白名单。
         :type white_remote_address: str
@@ -98,7 +98,7 @@ class ListAccessPolicyRespPolicies:
     def secret_key(self):
         """Gets the secret_key of this ListAccessPolicyRespPolicies.
 
-        秘钥。
+        密钥。
 
         :return: The secret_key of this ListAccessPolicyRespPolicies.
         :rtype: str
@@ -109,7 +109,7 @@ class ListAccessPolicyRespPolicies:
     def secret_key(self, secret_key):
         """Sets the secret_key of this ListAccessPolicyRespPolicies.
 
-        秘钥。
+        密钥。
 
         :param secret_key: The secret_key of this ListAccessPolicyRespPolicies.
         :type secret_key: str

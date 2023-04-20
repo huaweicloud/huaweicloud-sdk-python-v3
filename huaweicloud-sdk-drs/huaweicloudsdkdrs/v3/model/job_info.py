@@ -32,7 +32,8 @@ class JobInfo:
         'db_use_type': 'str',
         'task_type': 'str',
         'children': 'list[ChildrenJobInfo]',
-        'node_new_framework': 'bool'
+        'node_new_framework': 'bool',
+        'job_action': 'JobActionResp'
     }
 
     attribute_map = {
@@ -48,10 +49,11 @@ class JobInfo:
         'db_use_type': 'db_use_type',
         'task_type': 'task_type',
         'children': 'children',
-        'node_new_framework': 'node_newFramework'
+        'node_new_framework': 'node_newFramework',
+        'job_action': 'job_action'
     }
 
-    def __init__(self, id=None, name=None, status=None, description=None, create_time=None, engine_type=None, net_type=None, billing_tag=None, job_direction=None, db_use_type=None, task_type=None, children=None, node_new_framework=None):
+    def __init__(self, id=None, name=None, status=None, description=None, create_time=None, engine_type=None, net_type=None, billing_tag=None, job_direction=None, db_use_type=None, task_type=None, children=None, node_new_framework=None, job_action=None):
         """JobInfo
 
         The model defined in huaweicloud sdk
@@ -82,6 +84,8 @@ class JobInfo:
         :type children: list[:class:`huaweicloudsdkdrs.v3.ChildrenJobInfo`]
         :param node_new_framework: 是否新框架
         :type node_new_framework: bool
+        :param job_action: 
+        :type job_action: :class:`huaweicloudsdkdrs.v3.JobActionResp`
         """
         
         
@@ -99,6 +103,7 @@ class JobInfo:
         self._task_type = None
         self._children = None
         self._node_new_framework = None
+        self._job_action = None
         self.discriminator = None
 
         self.id = id
@@ -115,6 +120,8 @@ class JobInfo:
         if children is not None:
             self.children = children
         self.node_new_framework = node_new_framework
+        if job_action is not None:
+            self.job_action = job_action
 
     @property
     def id(self):
@@ -401,6 +408,24 @@ class JobInfo:
         :type node_new_framework: bool
         """
         self._node_new_framework = node_new_framework
+
+    @property
+    def job_action(self):
+        """Gets the job_action of this JobInfo.
+
+        :return: The job_action of this JobInfo.
+        :rtype: :class:`huaweicloudsdkdrs.v3.JobActionResp`
+        """
+        return self._job_action
+
+    @job_action.setter
+    def job_action(self, job_action):
+        """Sets the job_action of this JobInfo.
+
+        :param job_action: The job_action of this JobInfo.
+        :type job_action: :class:`huaweicloudsdkdrs.v3.JobActionResp`
+        """
+        self._job_action = job_action
 
     def to_dict(self):
         """Returns the model properties as a dict"""

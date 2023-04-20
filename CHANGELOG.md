@@ -1,3 +1,525 @@
+# 3.1.37 2023-04-20
+
+### HuaweiCloud SDK AOM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAllVersionByVersionId**
+    - changes of response param
+      - `+ elements.job_reference_number`
+      - `+ elements.job_reference_name`
+      - `- elements.reference_number`
+      - `- elements.script_reference`
+
+### HuaweiCloud SDK AOS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **GetStackTemplate**
+    - changes of request param
+      - `- executor`
+  - **ListStackEvents**
+    - changes of request param
+      - `- executor`
+  - **ListStackOutputs**
+    - changes of request param
+      - `- executor`
+  - **DeleteStack**
+    - changes of request param
+      - `- executor`
+  - **DeleteExecutionPlan**
+    - changes of request param
+      - `- executor`
+  - **ApplyExecutionPlan**
+    - changes of request param
+      - `- executor`
+  - **GetExecutionPlan**
+    - changes of request param
+      - `- executor`
+  - **ListStackResources**
+    - changes of request param
+      - `- executor`
+  - **ListExecutionPlans**
+    - changes of request param
+      - `- executor`
+  - **CreateExecutionPlan**
+    - changes of request param
+      - `- executor`
+  - **GetExecutionPlanMetadata**
+    - changes of request param
+      - `- executor`
+  - **GetStackMetadata**
+    - changes of request param
+      - `- executor`
+  - **ListStacks**
+    - changes of request param
+      - `- executor`
+  - **CreateStack**
+    - changes of request param
+      - `- executor`
+  - **DeployStack**
+    - changes of request param
+      - `- executor`
+
+### HuaweiCloud SDK BSSINTL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCustomerselfResourceRecordDetails**
+    - changes of response param
+      - `+ monthly_records.pre_order_id`
+      - `+ monthly_records.az_code_infos`
+
+### HuaweiCloud SDK CBS
+
+- _Features_
+  - Support the following interfaces：
+    - `ExecuteGetVideosList`
+    - `ExecuteCreateVideo`
+    - `ExecuteUpdateVideoById`
+    - `ExecuteDeleteVideoById`
+    - `ExecuteGetVideoInfoById`
+    - `ExecuteUpdateVideoInfoById`
+    - `ExecuteComposeVideo`
+    - `ExecuteComposeVideoOndemand`
+    - `ExecuteGetCharacters`
+    - `ExecuteGetCharacterInfoById`
+    - `ExecuteUploadPpt`
+    - `ExecuteUploadImage`
+    - `ExecuteUpdateImageName`
+    - `ExecuteDeleteimageById`
+    - `ExecuteGetImagesList`
+    - `ExecutePostCreateImages`
+    - `ExecuteGetFramsListByImagesId`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - Support the interfaces `ShowDomainFullConfig`, `UpdateDomainFullConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDomainFullConfig**
+    - changes of response param
+      - `+ configs.origin_follow302_status`
+      - `+ configs.cache_rules`
+      - `+ configs.ip_filter`
+      - `+ configs.referer`
+      - `+ configs.force_redirect.redirect_code`
+  - **UpdateDomainFullConfig**
+    - changes of request param
+      - `+ configs.origin_follow302_status`
+      - `+ configs.cache_rules`
+      - `+ configs.ip_filter`
+      - `+ configs.referer`
+      - `+ configs.force_redirect.redirect_code`
+
+### HuaweiCloud SDK CloudPipeline
+
+- _Features_
+  - Support the interfaces `ListPipelineTemplates`, `ShowPipelineTemplateDetail`, `CreatePipelineByTemplateId`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListLogsJob**
+    - changes of request param
+      - `+ start`
+      - `+ limit`
+  - **ShowVpcepConnection**
+    - changes of request param
+      - `+ start`
+      - `+ limit`
+  - **ListYmlsJob**
+    - changes of request param
+      - `+ start`
+      - `+ limit`
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateRedislogDownloadLink**
+    - changes of response param
+      - `+ backup_id`
+
+### HuaweiCloud SDK DDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateConfiguration**
+    - changes of response param
+      - `+ configuration`
+      - `- datastore_version`
+      - `- created`
+      - `- name`
+      - `- description`
+      - `- id`
+      - `- datastore_name`
+      - `- updated`
+
+### HuaweiCloud SDK DLF
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowJob**
+    - changes of response param
+      - `+ lastUpdateUser`
+      - `+ id`
+  - **UpdateJob**
+    - changes of request param
+      - `+ lastUpdateUser`
+      - `+ id`
+  - **CreateJob**
+    - changes of request param
+      - `+ lastUpdateUser`
+      - `+ id`
+  - **ListJobs**
+    - changes of response param
+      - `+ lastUpdateUser`
+      - `+ id`
+      - `+ jobs.id`
+      - `+ jobs.lastUpdateUser`
+
+### HuaweiCloud SDK DRS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowJobList**
+    - changes of response param
+      - `+ jobs.job_action`
+      - `+ jobs.children.job_action`
+  - **BatchListJobDetails**
+    - changes of response param
+      - `+ results.original_job_direction`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ImportFunction**
+    - changes of response param
+      - `+ gpu_memory`
+      - `+ func_vpc.security_groups`
+  - **ListFunctions**
+    - changes of response param
+      - `+ functions.gpu_memory`
+      - `+ functions.is_bridge_function`
+      - `+ functions.bind_bridge_funcUrns`
+  - **CreateFunction**
+    - changes of request param
+      - `+ gpu_memory`
+      - `+ log_config`
+      - `+ network_controller`
+      - `+ func_vpc.security_groups`
+    - changes of response param
+      - `+ gpu_memory`
+      - `+ func_vpc.security_groups`
+  - **ShowFunctionConfig**
+    - changes of response param
+      - `+ gpu_memory`
+      - `+ ephemeral_storage`
+      - `+ func_vpc.security_groups`
+  - **UpdateFunctionConfig**
+    - changes of request param
+      - `+ gpu_memory`
+      - `+ ephemeral_storage`
+      - `+ log_config`
+      - `+ network_controller`
+      - `+ restore_hook_handler`
+      - `+ restore_hook_timeout`
+      - `+ func_vpc.security_groups`
+    - changes of response param
+      - `+ gpu_memory`
+      - `+ ephemeral_storage`
+      - `+ func_vpc.security_groups`
+  - **UpdateFunctionMaxInstanceConfig**
+    - changes of response param
+      - `+ func_vpc.security_groups`
+  - **CreateFunctionVersion**
+    - changes of response param
+      - `+ func_vpc.security_groups`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateDbUser**
+    - changes of request param
+      - `+ is_login_only`
+
+### HuaweiCloud SDK GSL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSimCards**
+    - changes of request param
+      - `+ price_plan_id`
+
+### HuaweiCloud SDK Image
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the following interfaces：
+    - `CreateVideoTranslateTask`
+    - `ShowVideoTranslateTask`
+    - `CreateImageTranslateTask`
+    - `ShowImageTranslateTask`
+    - `CreateVideoCoverAnalysisTask`
+    - `ShowVideoCoverAnalysisTask`
+    - `CreateVideoSummarizationAnalysisTask`
+    - `ShowVideoSummarizationAnalysisTask`
+    - `CreateVideoShotSplitTask`
+    - `ShowVideoShotSplitTask`
+  - **CreateImageHighresolutionMattingTask**
+    - changes of request param
+      - `- input.data.bucket`
+      - `- input.data.path`
+  - **ShowImageHighresolutionMattingTask**
+    - changes of response param
+      - `- input.data.bucket`
+      - `- input.data.path`
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - Support the interface `BroadcastMessage`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IoTEdge
+
+- _Features_
+  - Support the following interfaces：
+    - `BatchListOtTemplates`
+    - `AddOtTemplates`
+    - `ShowOtTemplate`
+    - `DeleteOtTemplate`
+    - `AddGeneralOtTemplate`
+    - `UpdateModuleState`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Meeting
+
+- _Features_
+  - Support the interface `BatchShowUserDetails`
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateWebinar**
+    - changes of request param
+      - `+ enableRecording`
+  - **CreateWebinar**
+    - changes of request param
+      - `+ enableRecording`
+    - changes of response param
+      - `+ enableRecording`
+  - **ShowWebinar**
+    - changes of response param
+      - `+ enableRecording`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RecognizeDriverLicense**
+    - changes of response param
+      - `+ result.front`
+      - `+ result.back`
+  - **RecognizeThailandIdcard**
+    - changes of response param
+      - `+ result.type`
+      - `+ result.name_en`
+      - `+ result.ref_number`
+      - `+ result.confidence.name_en`
+      - `+ result.confidence.ref_number`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListRestoreTimes**
+    - changes of response param
+      - `* restore_time.start_time: int32 -> int64`
+      - `* restore_time.end_time: int32 -> int64`
+  - **ListOffSiteRestoreTimes**
+    - changes of response param
+      - `* restore_time.start_time: int32 -> int64`
+      - `* restore_time.end_time: int32 -> int64`
+  - **RestoreToExistingInstance**
+    - changes of request param
+      - `* source.restore_time: int32 -> int64`
+  - **RestoreExistInstance**
+    - changes of request param
+      - `* source.restore_time: int32 -> int64`
+  - **CreateInstance**
+    - changes of request param
+      - `* restore_point.restore_time: int32 -> int64`
+    - changes of response param
+      - `* instance.restore_point.restore_time: int32 -> int64`
+  - **CreateRestoreInstance**
+    - changes of request param
+      - `* restore_point.restore_time: int32 -> int64`
+    - changes of response param
+      - `* instance.restore_point.restore_time: int32 -> int64`
+
+### HuaweiCloud SDK RocketMQ
+
+- _Features_
+  - Support the interface `ShowConsumerConnections`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowConsumerListOrDetails**
+    - changes of response param
+      - `+ total`
+      - `+ brokers`
+  - **ShowUser**
+    - changes of response param
+      - `- default_group_perm: enum value [PUB,PUB|SUB]`
+      - `- group_perms.perm: enum value [PUB,PUB|SUB]`
+  - **UpdateUser**
+    - changes of request param
+      - `- default_group_perm: enum value [PUB,PUB|SUB]`
+      - `- group_perms.perm: enum value [PUB,PUB|SUB]`
+    - changes of response param
+      - `- default_group_perm: enum value [PUB,PUB|SUB]`
+      - `- group_perms.perm: enum value [PUB,PUB|SUB]`
+  - **UpdateInstance**
+    - changes of request param
+      - `+ enable_publicip`
+      - `+ publicip_id`
+  - **CreateUser**
+    - changes of request param
+      - `- default_group_perm: enum value [PUB,PUB|SUB]`
+      - `- group_perms.perm: enum value [PUB,PUB|SUB]`
+    - changes of response param
+      - `- default_group_perm: enum value [PUB,PUB|SUB]`
+      - `- group_perms.perm: enum value [PUB,PUB|SUB]`
+  - **ListUser**
+    - changes of response param
+      - `- users.default_group_perm: enum value [PUB,PUB|SUB]`
+      - `- users.group_perms.perm: enum value [PUB,PUB|SUB]`
+
+### HuaweiCloud SDK VPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListVpcsByTags**
+    - changes of response param
+      - `+ resources.resource_detail`
+      - `- resources.resouce_detail`
+  - **ListSubnetsByTags**
+    - changes of response param
+      - `+ resources.resource_detail`
+      - `- resources.resouce_detail`
+  - **UpdateRouteTable**
+    - changes of request param
+      - `+ routetable.routes.add`
+      - `+ routetable.routes.mod`
+      - `+ routetable.routes.del`
+      - `* routetable.routes: map<string, list<RouteTableRoute>> -> object<RouteTableRouteAction>`
+
+### HuaweiCloud SDK VPCEP
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListServiceDescribeDetails**
+    - changes of response param
+      - `+ public_border_group`
+  - **ListServiceDetails**
+    - changes of response param
+      - `+ enable_policy`
+      - `+ tcp_proxy: enum value [proxy_vni]`
+  - **UpdateEndpointService**
+    - changes of request param
+      - `+ tcp_proxy`
+    - changes of response param
+      - `+ enable_policy`
+      - `+ tcp_proxy: enum value [proxy_vni]`
+  - **ListEndpointInfoDetails**
+    - changes of response param
+      - `+ endpoint_pool_id`
+      - `+ public_border_group`
+  - **CreateEndpointService**
+    - changes of request param
+      - `+ enable_policy`
+      - `+ tcp_proxy: enum value [proxy_vni]`
+    - changes of response param
+      - `+ enable_policy`
+      - `+ tcp_proxy: enum value [proxy_vni]`
+  - **ListEndpointService**
+    - changes of response param
+      - `+ endpoint_services.enable_policy`
+      - `+ endpoint_services.tcp_proxy: enum value [proxy_vni]`
+  - **CreateEndpoint**
+    - changes of response param
+      - `+ endpoint_pool_id`
+      - `+ public_border_group`
+      - `+ ip`
+
 # 3.1.36 2023-04-13
 
 ### HuaweiCloud SDK BSS

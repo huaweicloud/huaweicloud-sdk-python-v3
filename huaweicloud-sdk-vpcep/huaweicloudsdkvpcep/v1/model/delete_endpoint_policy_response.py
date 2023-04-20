@@ -122,7 +122,7 @@ class DeleteEndpointPolicyResponse(SdkResponse):
         :type description: str
         :param policy_statement: 只涉及开启双端固定的网关型终端节点，响应体展示此字段
         :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
-        :param endpoint_pool_id: 终端节点相关联的Pood的ID
+        :param endpoint_pool_id: 待废弃，实例相关联的集群ID
         :type endpoint_pool_id: str
         :param public_border_group: 终端节点关联的Public Border Group信息，只有当终端节点和边缘Pool相关联时才会返回改字段
         :type public_border_group: str
@@ -693,7 +693,7 @@ class DeleteEndpointPolicyResponse(SdkResponse):
     def endpoint_pool_id(self):
         """Gets the endpoint_pool_id of this DeleteEndpointPolicyResponse.
 
-        终端节点相关联的Pood的ID
+        待废弃，实例相关联的集群ID
 
         :return: The endpoint_pool_id of this DeleteEndpointPolicyResponse.
         :rtype: str
@@ -704,7 +704,7 @@ class DeleteEndpointPolicyResponse(SdkResponse):
     def endpoint_pool_id(self, endpoint_pool_id):
         """Sets the endpoint_pool_id of this DeleteEndpointPolicyResponse.
 
-        终端节点相关联的Pood的ID
+        待废弃，实例相关联的集群ID
 
         :param endpoint_pool_id: The endpoint_pool_id of this DeleteEndpointPolicyResponse.
         :type endpoint_pool_id: str

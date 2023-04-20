@@ -38,7 +38,9 @@ class DriverLicenseResult:
         'status': 'list[str]',
         'generation_date': 'str',
         'current_time': 'str',
-        'text_location': 'object'
+        'text_location': 'object',
+        'front': 'DriverLicenseFront',
+        'back': 'DriverLicenseBack'
     }
 
     attribute_map = {
@@ -60,10 +62,12 @@ class DriverLicenseResult:
         'status': 'status',
         'generation_date': 'generation_date',
         'current_time': 'current_time',
-        'text_location': 'text_location'
+        'text_location': 'text_location',
+        'front': 'front',
+        'back': 'back'
     }
 
-    def __init__(self, type=None, number=None, name=None, sex=None, nationality=None, address=None, birth=None, issue_date=None, _class=None, valid_from=None, valid_to=None, issuing_authority=None, file_number=None, record=None, accumulated_scores=None, status=None, generation_date=None, current_time=None, text_location=None):
+    def __init__(self, type=None, number=None, name=None, sex=None, nationality=None, address=None, birth=None, issue_date=None, _class=None, valid_from=None, valid_to=None, issuing_authority=None, file_number=None, record=None, accumulated_scores=None, status=None, generation_date=None, current_time=None, text_location=None, front=None, back=None):
         """DriverLicenseResult
 
         The model defined in huaweicloud sdk
@@ -106,6 +110,10 @@ class DriverLicenseResult:
         :type current_time: str
         :param text_location: 对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
         :type text_location: object
+        :param front: 
+        :type front: :class:`huaweicloudsdkocr.v1.DriverLicenseFront`
+        :param back: 
+        :type back: :class:`huaweicloudsdkocr.v1.DriverLicenseBack`
         """
         
         
@@ -129,6 +137,8 @@ class DriverLicenseResult:
         self._generation_date = None
         self._current_time = None
         self._text_location = None
+        self._front = None
+        self._back = None
         self.discriminator = None
 
         if type is not None:
@@ -169,6 +179,10 @@ class DriverLicenseResult:
             self.current_time = current_time
         if text_location is not None:
             self.text_location = text_location
+        if front is not None:
+            self.front = front
+        if back is not None:
+            self.back = back
 
     @property
     def type(self):
@@ -587,6 +601,42 @@ class DriverLicenseResult:
         :type text_location: object
         """
         self._text_location = text_location
+
+    @property
+    def front(self):
+        """Gets the front of this DriverLicenseResult.
+
+        :return: The front of this DriverLicenseResult.
+        :rtype: :class:`huaweicloudsdkocr.v1.DriverLicenseFront`
+        """
+        return self._front
+
+    @front.setter
+    def front(self, front):
+        """Sets the front of this DriverLicenseResult.
+
+        :param front: The front of this DriverLicenseResult.
+        :type front: :class:`huaweicloudsdkocr.v1.DriverLicenseFront`
+        """
+        self._front = front
+
+    @property
+    def back(self):
+        """Gets the back of this DriverLicenseResult.
+
+        :return: The back of this DriverLicenseResult.
+        :rtype: :class:`huaweicloudsdkocr.v1.DriverLicenseBack`
+        """
+        return self._back
+
+    @back.setter
+    def back(self, back):
+        """Sets the back of this DriverLicenseResult.
+
+        :param back: The back of this DriverLicenseResult.
+        :type back: :class:`huaweicloudsdkocr.v1.DriverLicenseBack`
+        """
+        self._back = back
 
     def to_dict(self):
         """Returns the model properties as a dict"""

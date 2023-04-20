@@ -634,6 +634,68 @@ class CdnClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_domain_full_config(self, request):
+        """查询域名配置接口
+
+        查询域名配置接口，支持查询回源请求头、HTTP header配置、URL鉴权、证书、源站、回源协议、强制重定向、智能压缩、缓存URL参数、IPv6开关、状态码缓存时间、Range回源、User-Agent黑白名单、改写回源URL、自定义错误页面
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDomainFullConfig
+        :type request: :class:`huaweicloudsdkcdn.v2.ShowDomainFullConfigRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ShowDomainFullConfigResponse`
+        """
+        return self.show_domain_full_config_with_http_info(request)
+
+    def show_domain_full_config_with_http_info(self, request):
+        all_params = ['domain_name', 'enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_name' in local_var_params:
+            path_params['domain_name'] = local_var_params['domain_name']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.1/cdn/configuration/domains/{domain_name}/configs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowDomainFullConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_domain_location_stats(self, request):
         """查询域名统计区域运营商数据
 
@@ -973,6 +1035,70 @@ class CdnClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowTopUrlResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_domain_full_config(self, request):
+        """修改域名全量配置接口
+
+        修改域名全量配置接口，支持配置回源请求头、HTTP header配置、URL鉴权、证书、源站、回源协议、强制重定向、智能压缩、缓存URL参数、IPv6、状态码缓存时间、Range回源、User-Agent黑白名单、改写回源URL、自定义错误页面
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDomainFullConfig
+        :type request: :class:`huaweicloudsdkcdn.v2.UpdateDomainFullConfigRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.UpdateDomainFullConfigResponse`
+        """
+        return self.update_domain_full_config_with_http_info(request)
+
+    def update_domain_full_config_with_http_info(self, request):
+        all_params = ['domain_name', 'enterprise_project_id', 'modify_domain_config_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_name' in local_var_params:
+            path_params['domain_name'] = local_var_params['domain_name']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.1/cdn/configuration/domains/{domain_name}/configs',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateDomainFullConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

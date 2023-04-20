@@ -21,31 +21,37 @@ class ShowJobResponse(SdkResponse):
 
     openapi_types = {
         'name': 'str',
+        'id': 'int',
         'nodes': 'list[Node]',
         'schedule': 'Schedule',
         'params': 'list[JobParam]',
         'directory': 'str',
         'job_type': 'str',
+        'last_update_user': 'str',
         'basic_config': 'BasicInfo'
     }
 
     attribute_map = {
         'name': 'name',
+        'id': 'id',
         'nodes': 'nodes',
         'schedule': 'schedule',
         'params': 'params',
         'directory': 'directory',
         'job_type': 'jobType',
+        'last_update_user': 'lastUpdateUser',
         'basic_config': 'basicConfig'
     }
 
-    def __init__(self, name=None, nodes=None, schedule=None, params=None, directory=None, job_type=None, basic_config=None):
+    def __init__(self, name=None, id=None, nodes=None, schedule=None, params=None, directory=None, job_type=None, last_update_user=None, basic_config=None):
         """ShowJobResponse
 
         The model defined in huaweicloud sdk
 
         :param name: 
         :type name: str
+        :param id: 
+        :type id: int
         :param nodes: 
         :type nodes: list[:class:`huaweicloudsdkdlf.v1.Node`]
         :param schedule: 
@@ -56,6 +62,8 @@ class ShowJobResponse(SdkResponse):
         :type directory: str
         :param job_type: 
         :type job_type: str
+        :param last_update_user: 
+        :type last_update_user: str
         :param basic_config: 
         :type basic_config: :class:`huaweicloudsdkdlf.v1.BasicInfo`
         """
@@ -63,16 +71,20 @@ class ShowJobResponse(SdkResponse):
         super(ShowJobResponse, self).__init__()
 
         self._name = None
+        self._id = None
         self._nodes = None
         self._schedule = None
         self._params = None
         self._directory = None
         self._job_type = None
+        self._last_update_user = None
         self._basic_config = None
         self.discriminator = None
 
         if name is not None:
             self.name = name
+        if id is not None:
+            self.id = id
         if nodes is not None:
             self.nodes = nodes
         if schedule is not None:
@@ -83,6 +95,8 @@ class ShowJobResponse(SdkResponse):
             self.directory = directory
         if job_type is not None:
             self.job_type = job_type
+        if last_update_user is not None:
+            self.last_update_user = last_update_user
         if basic_config is not None:
             self.basic_config = basic_config
 
@@ -103,6 +117,24 @@ class ShowJobResponse(SdkResponse):
         :type name: str
         """
         self._name = name
+
+    @property
+    def id(self):
+        """Gets the id of this ShowJobResponse.
+
+        :return: The id of this ShowJobResponse.
+        :rtype: int
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ShowJobResponse.
+
+        :param id: The id of this ShowJobResponse.
+        :type id: int
+        """
+        self._id = id
 
     @property
     def nodes(self):
@@ -193,6 +225,24 @@ class ShowJobResponse(SdkResponse):
         :type job_type: str
         """
         self._job_type = job_type
+
+    @property
+    def last_update_user(self):
+        """Gets the last_update_user of this ShowJobResponse.
+
+        :return: The last_update_user of this ShowJobResponse.
+        :rtype: str
+        """
+        return self._last_update_user
+
+    @last_update_user.setter
+    def last_update_user(self, last_update_user):
+        """Sets the last_update_user of this ShowJobResponse.
+
+        :param last_update_user: The last_update_user of this ShowJobResponse.
+        :type last_update_user: str
+        """
+        self._last_update_user = last_update_user
 
     @property
     def basic_config(self):

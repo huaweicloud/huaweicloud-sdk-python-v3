@@ -38,7 +38,7 @@ class ResourceDTO:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 资源Id。
+        :param resource_id: 资源ID。
         :type resource_id: str
         :param resource_name: 资源名称。
         :type resource_name: str
@@ -65,7 +65,7 @@ class ResourceDTO:
     def resource_id(self):
         """Gets the resource_id of this ResourceDTO.
 
-        资源Id。
+        资源ID。
 
         :return: The resource_id of this ResourceDTO.
         :rtype: str
@@ -76,7 +76,7 @@ class ResourceDTO:
     def resource_id(self, resource_id):
         """Sets the resource_id of this ResourceDTO.
 
-        资源Id。
+        资源ID。
 
         :param resource_id: The resource_id of this ResourceDTO.
         :type resource_id: str

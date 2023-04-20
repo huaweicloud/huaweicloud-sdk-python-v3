@@ -42,7 +42,7 @@ class StorageUnit:
 
         :param storage_type: 
         :type storage_type: :class:`huaweicloudsdkies.v1.StorageType`
-        :param capacity: 存储池大小，单位：TB/PB（视图存储中容量、视图存储大容量）。
+        :param capacity: 存储池大小，单位：TB。
         :type capacity: int
         :param gears: 存储池销售档位
         :type gears: list[int]
@@ -89,7 +89,7 @@ class StorageUnit:
     def capacity(self):
         """Gets the capacity of this StorageUnit.
 
-        存储池大小，单位：TB/PB（视图存储中容量、视图存储大容量）。
+        存储池大小，单位：TB。
 
         :return: The capacity of this StorageUnit.
         :rtype: int
@@ -100,7 +100,7 @@ class StorageUnit:
     def capacity(self, capacity):
         """Sets the capacity of this StorageUnit.
 
-        存储池大小，单位：TB/PB（视图存储中容量、视图存储大容量）。
+        存储池大小，单位：TB。
 
         :param capacity: The capacity of this StorageUnit.
         :type capacity: int

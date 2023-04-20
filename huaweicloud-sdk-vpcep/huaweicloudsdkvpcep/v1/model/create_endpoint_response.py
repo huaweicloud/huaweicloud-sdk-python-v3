@@ -23,6 +23,7 @@ class CreateEndpointResponse(SdkResponse):
         'id': 'str',
         'service_type': 'str',
         'status': 'str',
+        'ip': 'str',
         'active_status': 'list[str]',
         'endpoint_service_name': 'str',
         'marker_id': 'int',
@@ -41,13 +42,16 @@ class CreateEndpointResponse(SdkResponse):
         'specification_name': 'str',
         'description': 'str',
         'policy_statement': 'list[str]',
-        'enable_status': 'str'
+        'enable_status': 'str',
+        'endpoint_pool_id': 'str',
+        'public_border_group': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'service_type': 'service_type',
         'status': 'status',
+        'ip': 'ip',
         'active_status': 'active_status',
         'endpoint_service_name': 'endpoint_service_name',
         'marker_id': 'marker_id',
@@ -66,10 +70,12 @@ class CreateEndpointResponse(SdkResponse):
         'specification_name': 'specification_name',
         'description': 'description',
         'policy_statement': 'policy_statement',
-        'enable_status': 'enable_status'
+        'enable_status': 'enable_status',
+        'endpoint_pool_id': 'endpoint_pool_id',
+        'public_border_group': 'public_border_group'
     }
 
-    def __init__(self, id=None, service_type=None, status=None, active_status=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, subnet_id=None, vpc_id=None, created_at=None, updated_at=None, project_id=None, tags=None, whitelist=None, enable_whitelist=None, routetables=None, specification_name=None, description=None, policy_statement=None, enable_status=None):
+    def __init__(self, id=None, service_type=None, status=None, ip=None, active_status=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, subnet_id=None, vpc_id=None, created_at=None, updated_at=None, project_id=None, tags=None, whitelist=None, enable_whitelist=None, routetables=None, specification_name=None, description=None, policy_statement=None, enable_status=None, endpoint_pool_id=None, public_border_group=None):
         """CreateEndpointResponse
 
         The model defined in huaweicloud sdk
@@ -78,8 +84,10 @@ class CreateEndpointResponse(SdkResponse):
         :type id: str
         :param service_type: 终端节点连接的终端节点服务类型。 ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
         :type service_type: str
-        :param status: 终端节点的连接状态。 ● pendingAcceptance：待接受 ● creating：创建中 ● accepted：已接受 ● failed：失败
+        :param status: 终端节点的连接状态。 ● pendingAcceptance：待接受 ● creating：创建中 ● accepted：已接受 ● rejected：已拒绝 ● failed：失败 ● deleting：删除中
         :type status: str
+        :param ip: 终端节点ip
+        :type ip: str
         :param active_status: 帐号状态。 ● frozen：冻结 ● active：解冻
         :type active_status: list[str]
         :param endpoint_service_name: 终端节点服务的名称。
@@ -118,6 +126,10 @@ class CreateEndpointResponse(SdkResponse):
         :type policy_statement: list[str]
         :param enable_status: 终端节点是否已停用，取值【enable/disable】
         :type enable_status: str
+        :param endpoint_pool_id: 待废弃，实例相关联的集群ID
+        :type endpoint_pool_id: str
+        :param public_border_group: 终端节点对应Pool的Public Border Group信息
+        :type public_border_group: str
         """
         
         super(CreateEndpointResponse, self).__init__()
@@ -125,6 +137,7 @@ class CreateEndpointResponse(SdkResponse):
         self._id = None
         self._service_type = None
         self._status = None
+        self._ip = None
         self._active_status = None
         self._endpoint_service_name = None
         self._marker_id = None
@@ -144,6 +157,8 @@ class CreateEndpointResponse(SdkResponse):
         self._description = None
         self._policy_statement = None
         self._enable_status = None
+        self._endpoint_pool_id = None
+        self._public_border_group = None
         self.discriminator = None
 
         if id is not None:
@@ -152,6 +167,8 @@ class CreateEndpointResponse(SdkResponse):
             self.service_type = service_type
         if status is not None:
             self.status = status
+        if ip is not None:
+            self.ip = ip
         if active_status is not None:
             self.active_status = active_status
         if endpoint_service_name is not None:
@@ -190,6 +207,10 @@ class CreateEndpointResponse(SdkResponse):
             self.policy_statement = policy_statement
         if enable_status is not None:
             self.enable_status = enable_status
+        if endpoint_pool_id is not None:
+            self.endpoint_pool_id = endpoint_pool_id
+        if public_border_group is not None:
+            self.public_border_group = public_border_group
 
     @property
     def id(self):
@@ -239,7 +260,7 @@ class CreateEndpointResponse(SdkResponse):
     def status(self):
         """Gets the status of this CreateEndpointResponse.
 
-        终端节点的连接状态。 ● pendingAcceptance：待接受 ● creating：创建中 ● accepted：已接受 ● failed：失败
+        终端节点的连接状态。 ● pendingAcceptance：待接受 ● creating：创建中 ● accepted：已接受 ● rejected：已拒绝 ● failed：失败 ● deleting：删除中
 
         :return: The status of this CreateEndpointResponse.
         :rtype: str
@@ -250,12 +271,34 @@ class CreateEndpointResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this CreateEndpointResponse.
 
-        终端节点的连接状态。 ● pendingAcceptance：待接受 ● creating：创建中 ● accepted：已接受 ● failed：失败
+        终端节点的连接状态。 ● pendingAcceptance：待接受 ● creating：创建中 ● accepted：已接受 ● rejected：已拒绝 ● failed：失败 ● deleting：删除中
 
         :param status: The status of this CreateEndpointResponse.
         :type status: str
         """
         self._status = status
+
+    @property
+    def ip(self):
+        """Gets the ip of this CreateEndpointResponse.
+
+        终端节点ip
+
+        :return: The ip of this CreateEndpointResponse.
+        :rtype: str
+        """
+        return self._ip
+
+    @ip.setter
+    def ip(self, ip):
+        """Sets the ip of this CreateEndpointResponse.
+
+        终端节点ip
+
+        :param ip: The ip of this CreateEndpointResponse.
+        :type ip: str
+        """
+        self._ip = ip
 
     @property
     def active_status(self):
@@ -674,6 +717,50 @@ class CreateEndpointResponse(SdkResponse):
         :type enable_status: str
         """
         self._enable_status = enable_status
+
+    @property
+    def endpoint_pool_id(self):
+        """Gets the endpoint_pool_id of this CreateEndpointResponse.
+
+        待废弃，实例相关联的集群ID
+
+        :return: The endpoint_pool_id of this CreateEndpointResponse.
+        :rtype: str
+        """
+        return self._endpoint_pool_id
+
+    @endpoint_pool_id.setter
+    def endpoint_pool_id(self, endpoint_pool_id):
+        """Sets the endpoint_pool_id of this CreateEndpointResponse.
+
+        待废弃，实例相关联的集群ID
+
+        :param endpoint_pool_id: The endpoint_pool_id of this CreateEndpointResponse.
+        :type endpoint_pool_id: str
+        """
+        self._endpoint_pool_id = endpoint_pool_id
+
+    @property
+    def public_border_group(self):
+        """Gets the public_border_group of this CreateEndpointResponse.
+
+        终端节点对应Pool的Public Border Group信息
+
+        :return: The public_border_group of this CreateEndpointResponse.
+        :rtype: str
+        """
+        return self._public_border_group
+
+    @public_border_group.setter
+    def public_border_group(self, public_border_group):
+        """Sets the public_border_group of this CreateEndpointResponse.
+
+        终端节点对应Pool的Public Border Group信息
+
+        :param public_border_group: The public_border_group of this CreateEndpointResponse.
+        :type public_border_group: str
+        """
+        self._public_border_group = public_border_group
 
     def to_dict(self):
         """Returns the model properties as a dict"""

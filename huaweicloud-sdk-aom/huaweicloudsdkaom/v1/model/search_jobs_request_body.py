@@ -73,8 +73,7 @@ class SearchJobsRequestBody:
         if page_size is not None:
             self.page_size = page_size
         self.order_by_column = order_by_column
-        if sort_order is not None:
-            self.sort_order = sort_order
+        self.sort_order = sort_order
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
 

@@ -68,6 +68,7 @@ from huaweicloudsdkfunctiongraph.v2.model.flow_execution_brief_v2 import FlowExe
 from huaweicloudsdkfunctiongraph.v2.model.func_async_destination_config import FuncAsyncDestinationConfig
 from huaweicloudsdkfunctiongraph.v2.model.func_code import FuncCode
 from huaweicloudsdkfunctiongraph.v2.model.func_destination_config import FuncDestinationConfig
+from huaweicloudsdkfunctiongraph.v2.model.func_log_config import FuncLogConfig
 from huaweicloudsdkfunctiongraph.v2.model.func_mount import FuncMount
 from huaweicloudsdkfunctiongraph.v2.model.func_reserved_instance import FuncReservedInstance
 from huaweicloudsdkfunctiongraph.v2.model.func_vpc import FuncVpc
@@ -128,6 +129,7 @@ from huaweicloudsdkfunctiongraph.v2.model.metric_config import MetricConfig
 from huaweicloudsdkfunctiongraph.v2.model.month_used import MonthUsed
 from huaweicloudsdkfunctiongraph.v2.model.mount_config import MountConfig
 from huaweicloudsdkfunctiongraph.v2.model.mount_user import MountUser
+from huaweicloudsdkfunctiongraph.v2.model.network_control_config import NetworkControlConfig
 from huaweicloudsdkfunctiongraph.v2.model.node_execution import NodeExecution
 from huaweicloudsdkfunctiongraph.v2.model.node_execution_detail import NodeExecutionDetail
 from huaweicloudsdkfunctiongraph.v2.model.obs_trigger_config import OBSTriggerConfig
@@ -215,6 +217,7 @@ from huaweicloudsdkfunctiongraph.v2.model.update_version_alias_request_body impo
 from huaweicloudsdkfunctiongraph.v2.model.update_version_alias_response import UpdateVersionAliasResponse
 from huaweicloudsdkfunctiongraph.v2.model.update_work_flow_request import UpdateWorkFlowRequest
 from huaweicloudsdkfunctiongraph.v2.model.update_work_flow_response import UpdateWorkFlowResponse
+from huaweicloudsdkfunctiongraph.v2.model.vpc_config import VpcConfig
 from huaweicloudsdkfunctiongraph.v2.model.workflow_create_body import WorkflowCreateBody
 from huaweicloudsdkfunctiongraph.v2.model.workflow_delete_body import WorkflowDeleteBody
 from huaweicloudsdkfunctiongraph.v2.model.workflow_simple_info import WorkflowSimpleInfo

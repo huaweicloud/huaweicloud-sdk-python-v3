@@ -76,7 +76,7 @@ class CreateInstanceRequestBody:
         :type security_group: list[str]
         :param count: 申请的独享引擎数量
         :type count: int
-        :param res_tenant: 是否为资源租户类   - true: 资源租户类   - false: 普通租户类
+        :param res_tenant: 是否为资源租户类，默认值为false。   - true: 资源租户类   - false: 普通租户类
         :type res_tenant: bool
         """
         
@@ -108,7 +108,8 @@ class CreateInstanceRequestBody:
         self.subnet_id = subnet_id
         self.security_group = security_group
         self.count = count
-        self.res_tenant = res_tenant
+        if res_tenant is not None:
+            self.res_tenant = res_tenant
 
     @property
     def chargemode(self):
@@ -356,7 +357,7 @@ class CreateInstanceRequestBody:
     def res_tenant(self):
         """Gets the res_tenant of this CreateInstanceRequestBody.
 
-        是否为资源租户类   - true: 资源租户类   - false: 普通租户类
+        是否为资源租户类，默认值为false。   - true: 资源租户类   - false: 普通租户类
 
         :return: The res_tenant of this CreateInstanceRequestBody.
         :rtype: bool
@@ -367,7 +368,7 @@ class CreateInstanceRequestBody:
     def res_tenant(self, res_tenant):
         """Sets the res_tenant of this CreateInstanceRequestBody.
 
-        是否为资源租户类   - true: 资源租户类   - false: 普通租户类
+        是否为资源租户类，默认值为false。   - true: 资源租户类   - false: 普通租户类
 
         :param res_tenant: The res_tenant of this CreateInstanceRequestBody.
         :type res_tenant: bool

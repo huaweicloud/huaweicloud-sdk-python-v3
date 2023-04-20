@@ -20,7 +20,7 @@ class ListDeviceGroupsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'device_groups': 'list[DeviceGroupResponseSummary]',
+        'device_groups': 'list[DeviceGroupResponsSummery]',
         'page': 'Page'
     }
 
@@ -35,7 +35,7 @@ class ListDeviceGroupsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param device_groups: 设备组信息列表。
-        :type device_groups: list[:class:`huaweicloudsdkiotda.v5.DeviceGroupResponseSummary`]
+        :type device_groups: list[:class:`huaweicloudsdkiotda.v5.DeviceGroupResponsSummery`]
         :param page: 
         :type page: :class:`huaweicloudsdkiotda.v5.Page`
         """
@@ -58,7 +58,7 @@ class ListDeviceGroupsResponse(SdkResponse):
         设备组信息列表。
 
         :return: The device_groups of this ListDeviceGroupsResponse.
-        :rtype: list[:class:`huaweicloudsdkiotda.v5.DeviceGroupResponseSummary`]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.DeviceGroupResponsSummery`]
         """
         return self._device_groups
 
@@ -69,7 +69,7 @@ class ListDeviceGroupsResponse(SdkResponse):
         设备组信息列表。
 
         :param device_groups: The device_groups of this ListDeviceGroupsResponse.
-        :type device_groups: list[:class:`huaweicloudsdkiotda.v5.DeviceGroupResponseSummary`]
+        :type device_groups: list[:class:`huaweicloudsdkiotda.v5.DeviceGroupResponsSummery`]
         """
         self._device_groups = device_groups
 

@@ -25,7 +25,8 @@ class FuncVpc:
         'subnet_name': 'str',
         'subnet_id': 'str',
         'cidr': 'str',
-        'gateway': 'str'
+        'gateway': 'str',
+        'security_groups': 'list[str]'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class FuncVpc:
         'subnet_name': 'subnet_name',
         'subnet_id': 'subnet_id',
         'cidr': 'cidr',
-        'gateway': 'gateway'
+        'gateway': 'gateway',
+        'security_groups': 'security_groups'
     }
 
-    def __init__(self, vpc_name=None, vpc_id=None, subnet_name=None, subnet_id=None, cidr=None, gateway=None):
+    def __init__(self, vpc_name=None, vpc_id=None, subnet_name=None, subnet_id=None, cidr=None, gateway=None, security_groups=None):
         """FuncVpc
 
         The model defined in huaweicloud sdk
@@ -54,6 +56,8 @@ class FuncVpc:
         :type cidr: str
         :param gateway: 网关。
         :type gateway: str
+        :param security_groups: 安全组
+        :type security_groups: list[str]
         """
         
         
@@ -64,6 +68,7 @@ class FuncVpc:
         self._subnet_id = None
         self._cidr = None
         self._gateway = None
+        self._security_groups = None
         self.discriminator = None
 
         self.vpc_name = vpc_name
@@ -72,6 +77,8 @@ class FuncVpc:
         self.subnet_id = subnet_id
         self.cidr = cidr
         self.gateway = gateway
+        if security_groups is not None:
+            self.security_groups = security_groups
 
     @property
     def vpc_name(self):
@@ -204,6 +211,28 @@ class FuncVpc:
         :type gateway: str
         """
         self._gateway = gateway
+
+    @property
+    def security_groups(self):
+        """Gets the security_groups of this FuncVpc.
+
+        安全组
+
+        :return: The security_groups of this FuncVpc.
+        :rtype: list[str]
+        """
+        return self._security_groups
+
+    @security_groups.setter
+    def security_groups(self, security_groups):
+        """Sets the security_groups of this FuncVpc.
+
+        安全组
+
+        :param security_groups: The security_groups of this FuncVpc.
+        :type security_groups: list[str]
+        """
+        self._security_groups = security_groups
 
     def to_dict(self):
         """Returns the model properties as a dict"""

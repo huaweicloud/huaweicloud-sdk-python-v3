@@ -24,7 +24,7 @@ class ShowVideoObjectMaskingTaskResponse(SdkResponse):
         'create_time': 'str',
         'update_time': 'str',
         'state': 'str',
-        'input': 'ObjectMaskingTaskInput',
+        'input': 'TaskInput',
         'output': 'TaskOutput',
         'config': 'VideoObjectMaskingTaskConfig',
         'param_callback': 'TaskCallback',
@@ -57,7 +57,7 @@ class ShowVideoObjectMaskingTaskResponse(SdkResponse):
         :param state: 任务当前的状态，分别为SUCCEEDED（运行成功），FAILED（运行失败），RUNNING（运行中）。
         :type state: str
         :param input: 
-        :type input: :class:`huaweicloudsdkimage.v2.ObjectMaskingTaskInput`
+        :type input: :class:`huaweicloudsdkimage.v2.TaskInput`
         :param output: 
         :type output: :class:`huaweicloudsdkimage.v2.TaskOutput`
         :param config: 
@@ -193,7 +193,7 @@ class ShowVideoObjectMaskingTaskResponse(SdkResponse):
         """Gets the input of this ShowVideoObjectMaskingTaskResponse.
 
         :return: The input of this ShowVideoObjectMaskingTaskResponse.
-        :rtype: :class:`huaweicloudsdkimage.v2.ObjectMaskingTaskInput`
+        :rtype: :class:`huaweicloudsdkimage.v2.TaskInput`
         """
         return self._input
 
@@ -202,7 +202,7 @@ class ShowVideoObjectMaskingTaskResponse(SdkResponse):
         """Sets the input of this ShowVideoObjectMaskingTaskResponse.
 
         :param input: The input of this ShowVideoObjectMaskingTaskResponse.
-        :type input: :class:`huaweicloudsdkimage.v2.ObjectMaskingTaskInput`
+        :type input: :class:`huaweicloudsdkimage.v2.TaskInput`
         """
         self._input = input
 

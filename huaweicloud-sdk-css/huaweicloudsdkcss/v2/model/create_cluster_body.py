@@ -68,9 +68,9 @@ class CreateClusterBody:
         :type roles: list[:class:`huaweicloudsdkcss.v2.CreateClusterRolesBody`]
         :param nics: 
         :type nics: :class:`huaweicloudsdkcss.v2.CreateClusterInstanceNicsBody`
-        :param enterprise_project_id: 企业项目ID。创建集群时，给集群绑定企业项目ID。最大长度36个字符，带\&quot;-\&quot;连字符的UUID格式，或者是字符串\&quot;0\&quot;。\&quot;0\&quot;表示默认企业项目。  关于企业项目ID的获取及企业项目特性的详细信息，请参见[[《企业管理服务用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0123692049.html)](tag:hc)[[《企业管理服务用户指南》](https://support.huaweicloud.com/intl/zh-cn/usermanual-em/zh-cn_topic_0123692049.html)](tag:hk)。
+        :param enterprise_project_id: 企业项目ID。创建集群时，给集群绑定企业项目ID。最大长度36个字符，带\&quot;-\&quot;连字符的UUID格式，或者是字符串\&quot;0\&quot;。\&quot;0\&quot;表示默认企业项目。
         :type enterprise_project_id: str
-        :param tags: 集群标签。   关于标签特性的详细信息，请参见[[《标签管理服务介绍》](https://support.huaweicloud.com/productdesc-tms/zh-cn_topic_0071335169.html)](tag:hc)[[《标签管理服务介绍》](https://support.huaweicloud.com/intl/zh-cn/productdesc-tms/zh-cn_topic_0071335169.html)](tag:hk)。
+        :param tags: 集群标签。
         :type tags: list[:class:`huaweicloudsdkcss.v2.CreateClusterTagsBody`]
         :param availability_zone: 可用区。
         :type availability_zone: str
@@ -78,9 +78,9 @@ class CreateClusterBody:
         :type datastore: :class:`huaweicloudsdkcss.v2.CreateClusterDatastoreBody`
         :param authority_enable: 是否开启认证，取值范围为true或false。默认关闭认证功能。  - true：表示集群开启认证。 - false：表示集群不开启认证。  &gt;此参数只有6.5.4及之后版本支持。
         :type authority_enable: bool
-        :param https_enable: 设置是否进行通信加密。取值范围为true或false。默认关闭通信加密功能。当httpsEnable设置为true时，authorityEnable字段需要设置为true。  - true：表示集群进行通信加密。 - false：表示集群不进行通信加密。  &gt;此参数只有6.5.4及之后版本支持。
+        :param https_enable: 设置是否进行通信加密。取值范围为true或false。默认关闭通信加密功能。当httpsEnable设置为true时，authorityEnable字段需要设置为true。 - true：表示集群进行通信加密。 - false：表示集群不进行通信加密。  &gt;此参数只有6.5.4及之后版本支持。
         :type https_enable: bool
-        :param admin_pwd: 安全模式下集群管理员admin的密码，只有在创建集群时authorityEnable设置为true时需要设置此参数。 - 参数范围：8~32个字符。 - 参数要求：密码至少包含大写字母，小写字母，数字、特殊字符四类中的三类，其中可输入的特殊字符为：~!@#$%&amp;*()-_&#x3D;|[{}];:,&lt;.&gt;/?
+        :param admin_pwd: 安全模式下集群管理员admin的密码，只有在创建集群时authorityEnable设置为true时需要设置此参数。  - 参数范围：8~32个字符。  - 参数要求：密码至少包含大写字母，小写字母，数字、特殊字符四类中的三类，其中可输入的特殊字符为：~!@#$%&amp;*()-_&#x3D;|[{}];:,&lt;.&gt;/?
         :type admin_pwd: str
         :param public_ip_req: 
         :type public_ip_req: :class:`huaweicloudsdkcss.v2.CreateClusterPublicIpReq`
@@ -218,7 +218,7 @@ class CreateClusterBody:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CreateClusterBody.
 
-        企业项目ID。创建集群时，给集群绑定企业项目ID。最大长度36个字符，带\"-\"连字符的UUID格式，或者是字符串\"0\"。\"0\"表示默认企业项目。  关于企业项目ID的获取及企业项目特性的详细信息，请参见[[《企业管理服务用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0123692049.html)](tag:hc)[[《企业管理服务用户指南》](https://support.huaweicloud.com/intl/zh-cn/usermanual-em/zh-cn_topic_0123692049.html)](tag:hk)。
+        企业项目ID。创建集群时，给集群绑定企业项目ID。最大长度36个字符，带\"-\"连字符的UUID格式，或者是字符串\"0\"。\"0\"表示默认企业项目。
 
         :return: The enterprise_project_id of this CreateClusterBody.
         :rtype: str
@@ -229,7 +229,7 @@ class CreateClusterBody:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CreateClusterBody.
 
-        企业项目ID。创建集群时，给集群绑定企业项目ID。最大长度36个字符，带\"-\"连字符的UUID格式，或者是字符串\"0\"。\"0\"表示默认企业项目。  关于企业项目ID的获取及企业项目特性的详细信息，请参见[[《企业管理服务用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0123692049.html)](tag:hc)[[《企业管理服务用户指南》](https://support.huaweicloud.com/intl/zh-cn/usermanual-em/zh-cn_topic_0123692049.html)](tag:hk)。
+        企业项目ID。创建集群时，给集群绑定企业项目ID。最大长度36个字符，带\"-\"连字符的UUID格式，或者是字符串\"0\"。\"0\"表示默认企业项目。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateClusterBody.
         :type enterprise_project_id: str
@@ -240,7 +240,7 @@ class CreateClusterBody:
     def tags(self):
         """Gets the tags of this CreateClusterBody.
 
-        集群标签。   关于标签特性的详细信息，请参见[[《标签管理服务介绍》](https://support.huaweicloud.com/productdesc-tms/zh-cn_topic_0071335169.html)](tag:hc)[[《标签管理服务介绍》](https://support.huaweicloud.com/intl/zh-cn/productdesc-tms/zh-cn_topic_0071335169.html)](tag:hk)。
+        集群标签。
 
         :return: The tags of this CreateClusterBody.
         :rtype: list[:class:`huaweicloudsdkcss.v2.CreateClusterTagsBody`]
@@ -251,7 +251,7 @@ class CreateClusterBody:
     def tags(self, tags):
         """Sets the tags of this CreateClusterBody.
 
-        集群标签。   关于标签特性的详细信息，请参见[[《标签管理服务介绍》](https://support.huaweicloud.com/productdesc-tms/zh-cn_topic_0071335169.html)](tag:hc)[[《标签管理服务介绍》](https://support.huaweicloud.com/intl/zh-cn/productdesc-tms/zh-cn_topic_0071335169.html)](tag:hk)。
+        集群标签。
 
         :param tags: The tags of this CreateClusterBody.
         :type tags: list[:class:`huaweicloudsdkcss.v2.CreateClusterTagsBody`]
@@ -324,7 +324,7 @@ class CreateClusterBody:
     def https_enable(self):
         """Gets the https_enable of this CreateClusterBody.
 
-        设置是否进行通信加密。取值范围为true或false。默认关闭通信加密功能。当httpsEnable设置为true时，authorityEnable字段需要设置为true。  - true：表示集群进行通信加密。 - false：表示集群不进行通信加密。  >此参数只有6.5.4及之后版本支持。
+        设置是否进行通信加密。取值范围为true或false。默认关闭通信加密功能。当httpsEnable设置为true时，authorityEnable字段需要设置为true。 - true：表示集群进行通信加密。 - false：表示集群不进行通信加密。  >此参数只有6.5.4及之后版本支持。
 
         :return: The https_enable of this CreateClusterBody.
         :rtype: bool
@@ -335,7 +335,7 @@ class CreateClusterBody:
     def https_enable(self, https_enable):
         """Sets the https_enable of this CreateClusterBody.
 
-        设置是否进行通信加密。取值范围为true或false。默认关闭通信加密功能。当httpsEnable设置为true时，authorityEnable字段需要设置为true。  - true：表示集群进行通信加密。 - false：表示集群不进行通信加密。  >此参数只有6.5.4及之后版本支持。
+        设置是否进行通信加密。取值范围为true或false。默认关闭通信加密功能。当httpsEnable设置为true时，authorityEnable字段需要设置为true。 - true：表示集群进行通信加密。 - false：表示集群不进行通信加密。  >此参数只有6.5.4及之后版本支持。
 
         :param https_enable: The https_enable of this CreateClusterBody.
         :type https_enable: bool
@@ -346,7 +346,7 @@ class CreateClusterBody:
     def admin_pwd(self):
         """Gets the admin_pwd of this CreateClusterBody.
 
-        安全模式下集群管理员admin的密码，只有在创建集群时authorityEnable设置为true时需要设置此参数。 - 参数范围：8~32个字符。 - 参数要求：密码至少包含大写字母，小写字母，数字、特殊字符四类中的三类，其中可输入的特殊字符为：~!@#$%&*()-_=|[{}];:,<.>/?
+        安全模式下集群管理员admin的密码，只有在创建集群时authorityEnable设置为true时需要设置此参数。  - 参数范围：8~32个字符。  - 参数要求：密码至少包含大写字母，小写字母，数字、特殊字符四类中的三类，其中可输入的特殊字符为：~!@#$%&*()-_=|[{}];:,<.>/?
 
         :return: The admin_pwd of this CreateClusterBody.
         :rtype: str
@@ -357,7 +357,7 @@ class CreateClusterBody:
     def admin_pwd(self, admin_pwd):
         """Sets the admin_pwd of this CreateClusterBody.
 
-        安全模式下集群管理员admin的密码，只有在创建集群时authorityEnable设置为true时需要设置此参数。 - 参数范围：8~32个字符。 - 参数要求：密码至少包含大写字母，小写字母，数字、特殊字符四类中的三类，其中可输入的特殊字符为：~!@#$%&*()-_=|[{}];:,<.>/?
+        安全模式下集群管理员admin的密码，只有在创建集群时authorityEnable设置为true时需要设置此参数。  - 参数范围：8~32个字符。  - 参数要求：密码至少包含大写字母，小写字母，数字、特殊字符四类中的三类，其中可输入的特殊字符为：~!@#$%&*()-_=|[{}];:,<.>/?
 
         :param admin_pwd: The admin_pwd of this CreateClusterBody.
         :type admin_pwd: str

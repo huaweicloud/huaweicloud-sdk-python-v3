@@ -92,8 +92,7 @@ class SearchScriptsRequestBody:
             self.is_default = is_default
         if create_by is not None:
             self.create_by = create_by
-        if script_id is not None:
-            self.script_id = script_id
+        self.script_id = script_id
         if page_num is not None:
             self.page_num = page_num
         if page_size is not None:
@@ -101,8 +100,7 @@ class SearchScriptsRequestBody:
         if project_id is not None:
             self.project_id = project_id
         self.order_by_column = order_by_column
-        if sort_order is not None:
-            self.sort_order = sort_order
+        self.sort_order = sort_order
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
 

@@ -57,6 +57,8 @@ from huaweicloudsdkmeeting.v1.model.batch_delete_users_request import BatchDelet
 from huaweicloudsdkmeeting.v1.model.batch_delete_users_response import BatchDeleteUsersResponse
 from huaweicloudsdkmeeting.v1.model.batch_hand_request import BatchHandRequest
 from huaweicloudsdkmeeting.v1.model.batch_hand_response import BatchHandResponse
+from huaweicloudsdkmeeting.v1.model.batch_show_user_details_request import BatchShowUserDetailsRequest
+from huaweicloudsdkmeeting.v1.model.batch_show_user_details_response import BatchShowUserDetailsResponse
 from huaweicloudsdkmeeting.v1.model.batch_update_devices_status_request import BatchUpdateDevicesStatusRequest
 from huaweicloudsdkmeeting.v1.model.batch_update_devices_status_response import BatchUpdateDevicesStatusResponse
 from huaweicloudsdkmeeting.v1.model.batch_update_user_status_request import BatchUpdateUserStatusRequest
@@ -455,6 +457,7 @@ from huaweicloudsdkmeeting.v1.model.show_sso_config_request import ShowSsoConfig
 from huaweicloudsdkmeeting.v1.model.show_sso_config_response import ShowSsoConfigResponse
 from huaweicloudsdkmeeting.v1.model.show_user_detail_request import ShowUserDetailRequest
 from huaweicloudsdkmeeting.v1.model.show_user_detail_response import ShowUserDetailResponse
+from huaweicloudsdkmeeting.v1.model.show_user_request_dto import ShowUserRequestDTO
 from huaweicloudsdkmeeting.v1.model.show_web_hook_config_request import ShowWebHookConfigRequest
 from huaweicloudsdkmeeting.v1.model.show_web_hook_config_response import ShowWebHookConfigResponse
 from huaweicloudsdkmeeting.v1.model.show_webinar_request import ShowWebinarRequest
@@ -536,3 +539,4 @@ from huaweicloudsdkmeeting.v1.model.verify_code_check_dto import VerifyCodeCheck
 from huaweicloudsdkmeeting.v1.model.verify_code_send_dtov1 import VerifyCodeSendDTOV1
 from huaweicloudsdkmeeting.v1.model.vision_active_code_dto import VisionActiveCodeDTO
 from huaweicloudsdkmeeting.v1.model.web_hook_config_request import WebHookConfigRequest
+from huaweicloudsdkmeeting.v1.model.yes_no_enum import YesNoEnum

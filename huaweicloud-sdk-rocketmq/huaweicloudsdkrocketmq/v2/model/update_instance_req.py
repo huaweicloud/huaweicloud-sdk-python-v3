@@ -23,17 +23,21 @@ class UpdateInstanceReq:
         'name': 'str',
         'description': 'str',
         'security_group_id': 'str',
-        'enable_acl': 'bool'
+        'enable_acl': 'bool',
+        'enable_publicip': 'bool',
+        'publicip_id': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
         'security_group_id': 'security_group_id',
-        'enable_acl': 'enable_acl'
+        'enable_acl': 'enable_acl',
+        'enable_publicip': 'enable_publicip',
+        'publicip_id': 'publicip_id'
     }
 
-    def __init__(self, name=None, description=None, security_group_id=None, enable_acl=None):
+    def __init__(self, name=None, description=None, security_group_id=None, enable_acl=None, enable_publicip=None, publicip_id=None):
         """UpdateInstanceReq
 
         The model defined in huaweicloud sdk
@@ -46,6 +50,10 @@ class UpdateInstanceReq:
         :type security_group_id: str
         :param enable_acl: ACL访问控制。
         :type enable_acl: bool
+        :param enable_publicip: 是否开启公网。
+        :type enable_publicip: bool
+        :param publicip_id: 实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
+        :type publicip_id: str
         """
         
         
@@ -54,6 +62,8 @@ class UpdateInstanceReq:
         self._description = None
         self._security_group_id = None
         self._enable_acl = None
+        self._enable_publicip = None
+        self._publicip_id = None
         self.discriminator = None
 
         if name is not None:
@@ -64,6 +74,10 @@ class UpdateInstanceReq:
             self.security_group_id = security_group_id
         if enable_acl is not None:
             self.enable_acl = enable_acl
+        if enable_publicip is not None:
+            self.enable_publicip = enable_publicip
+        if publicip_id is not None:
+            self.publicip_id = publicip_id
 
     @property
     def name(self):
@@ -152,6 +166,50 @@ class UpdateInstanceReq:
         :type enable_acl: bool
         """
         self._enable_acl = enable_acl
+
+    @property
+    def enable_publicip(self):
+        """Gets the enable_publicip of this UpdateInstanceReq.
+
+        是否开启公网。
+
+        :return: The enable_publicip of this UpdateInstanceReq.
+        :rtype: bool
+        """
+        return self._enable_publicip
+
+    @enable_publicip.setter
+    def enable_publicip(self, enable_publicip):
+        """Sets the enable_publicip of this UpdateInstanceReq.
+
+        是否开启公网。
+
+        :param enable_publicip: The enable_publicip of this UpdateInstanceReq.
+        :type enable_publicip: bool
+        """
+        self._enable_publicip = enable_publicip
+
+    @property
+    def publicip_id(self):
+        """Gets the publicip_id of this UpdateInstanceReq.
+
+        实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
+
+        :return: The publicip_id of this UpdateInstanceReq.
+        :rtype: str
+        """
+        return self._publicip_id
+
+    @publicip_id.setter
+    def publicip_id(self, publicip_id):
+        """Sets the publicip_id of this UpdateInstanceReq.
+
+        实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
+
+        :param publicip_id: The publicip_id of this UpdateInstanceReq.
+        :type publicip_id: str
+        """
+        self._publicip_id = publicip_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

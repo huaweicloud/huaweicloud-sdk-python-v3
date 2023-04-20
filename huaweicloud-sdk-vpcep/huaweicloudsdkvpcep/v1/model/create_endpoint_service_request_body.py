@@ -30,7 +30,8 @@ class CreateEndpointServiceRequestBody:
         'ports': 'list[PortList]',
         'tcp_proxy': 'str',
         'tags': 'list[TagList]',
-        'description': 'str'
+        'description': 'str',
+        'enable_policy': 'bool'
     }
 
     attribute_map = {
@@ -44,17 +45,18 @@ class CreateEndpointServiceRequestBody:
         'ports': 'ports',
         'tcp_proxy': 'tcp_proxy',
         'tags': 'tags',
-        'description': 'description'
+        'description': 'description',
+        'enable_policy': 'enable_policy'
     }
 
-    def __init__(self, port_id=None, vip_port_id=None, service_name=None, vpc_id=None, approval_enabled=None, service_type=None, server_type=None, ports=None, tcp_proxy=None, tags=None, description=None):
+    def __init__(self, port_id=None, vip_port_id=None, service_name=None, vpc_id=None, approval_enabled=None, service_type=None, server_type=None, ports=None, tcp_proxy=None, tags=None, description=None, enable_policy=None):
         """CreateEndpointServiceRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param port_id: 标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。 取值为： ● LB类型：增强型负载均衡器内网IP对应的端口ID。 详细内容请参考《弹性负载均衡API参考》中的“查询负载均衡详情”， 详见响应消息中的“vip_port_id”字段。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 详细内容请参考《弹性云服务器API参考》中的“查询云服务器网卡信息”， 详见响应消息中的“port_id”字段。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。 说明 ● 创建终端节点服务时，VPC的子网网段不能与198.19.128.0/17重叠。 ● VPC路由表中自定义路由的目的地址不能与198.19.128.0/17重叠。
+        :param port_id: 标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。 取值为： ● LB类型：负载均衡器内网IP对应的端口ID。 详细内容请参考《弹性负载均衡API参考》中的“查询负载均衡详情”， 详见响应消息中的“vip_port_id”字段。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 详细内容请参考《弹性云服务器API参考》中的“查询云服务器网卡信息”， 详见响应消息中的“port_id”字段。 ● VIP类型：虚拟IP所在虚拟机的网卡ID（VIP类型业务已不支持，该取值类型已废弃） 说明： ● 创建终端节点服务时，VPC的子网网段不能与198.19.128.0/17重叠。 ● VPC路由表中自定义路由的目的地址不能与198.19.128.0/17重叠。
         :type port_id: str
-        :param vip_port_id: 虚拟IP的网卡ID。
+        :param vip_port_id: 虚拟IP的网卡ID。如果是DCS VIP场景，则该参数必需提供
         :type vip_port_id: str
         :param service_name: 终端节点服务的名称，长度不大于16，允许传入大小写字母、数字、下划线、中划线。 ● 传入为空，存入值为regionName+.+serviceId ● 传入不为空并校验通过，存入值为regionName+.+serviceName+.+serviceId
         :type service_name: str
@@ -62,18 +64,20 @@ class CreateEndpointServiceRequestBody:
         :type vpc_id: str
         :param approval_enabled: 是否需要审批。 ● false：不需要审批，创建的终端节点连接直接为accepted状态。 ● true：需要审批，创建的终端节点连接为pendingAcceptance状态， 需要终端节点服务所属用户审核后方可使用。 默认为true，需要审批。
         :type approval_enabled: bool
-        :param service_type: 终端节点服务类型。 仅支持将用户私有服务创建为interface类型的终端节点服务。 终端节点服务类型包括“网关（gataway）型”和“接口（interface）型”： ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建， 用户可直接使用。 您可以通过查询公共终端节点服务列表, 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
+        :param service_type: 终端节点服务类型。 仅支持将用户私有服务创建为interface类型的终端节点服务。 终端节点服务类型包括“网关（gataway）型”和“接口（interface）型”： ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建， 用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
         :type service_type: str
-        :param server_type: 资源类型。 ● VM：云服务器，适用于作为服务器使用。 ● VIP：虚拟IP，适用于作为虚拟资源的物理服务器使用。 ● LB：增强型负载均衡，适用于高访问量业务和对可靠性和容灾性要求较高的业务。
+        :param server_type: 资源类型。 ● VM：云服务器，适用于作为服务器使用。 ● VIP：虚拟IP，适用于作为虚拟资源的物理服务器使用。（该字段已废弃，请优先使用LB类型） ● LB：负载均衡，适用于高访问量业务和对可靠性和容灾性要求较高的业务。
         :type server_type: str
         :param ports: 服务开放的端口映射列表，详细内容请参见表4-10。 同一个终端节点服务下，不允许重复的端口映射。若多个终端节点服务共用一个port_id， 则终端节点服务之间的所有端口映射的server_port和protocol的组合不能重复， 单次最多添加200个。
         :type ports: list[:class:`huaweicloudsdkvpcep.v1.PortList`]
-        :param tcp_proxy: 用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
+        :param tcp_proxy: 用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 ● proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
         :type tcp_proxy: str
         :param tags: 资源标签列表。同一个终端节点服务最多可添加10个标签。
         :type tags: list[:class:`huaweicloudsdkvpcep.v1.TagList`]
         :param description: 描述字段，支持中英文字母、数字等字符，不支持“&lt;”或“&gt;”字符。  描述字段，支持中英文字母、数字等字符，不支持“&lt;”或“&gt;”字符。
         :type description: str
+        :param enable_policy: 是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+        :type enable_policy: bool
         """
         
         
@@ -89,6 +93,7 @@ class CreateEndpointServiceRequestBody:
         self._tcp_proxy = None
         self._tags = None
         self._description = None
+        self._enable_policy = None
         self.discriminator = None
 
         self.port_id = port_id
@@ -109,12 +114,14 @@ class CreateEndpointServiceRequestBody:
             self.tags = tags
         if description is not None:
             self.description = description
+        if enable_policy is not None:
+            self.enable_policy = enable_policy
 
     @property
     def port_id(self):
         """Gets the port_id of this CreateEndpointServiceRequestBody.
 
-        标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。 取值为： ● LB类型：增强型负载均衡器内网IP对应的端口ID。 详细内容请参考《弹性负载均衡API参考》中的“查询负载均衡详情”， 详见响应消息中的“vip_port_id”字段。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 详细内容请参考《弹性云服务器API参考》中的“查询云服务器网卡信息”， 详见响应消息中的“port_id”字段。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。 说明 ● 创建终端节点服务时，VPC的子网网段不能与198.19.128.0/17重叠。 ● VPC路由表中自定义路由的目的地址不能与198.19.128.0/17重叠。
+        标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。 取值为： ● LB类型：负载均衡器内网IP对应的端口ID。 详细内容请参考《弹性负载均衡API参考》中的“查询负载均衡详情”， 详见响应消息中的“vip_port_id”字段。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 详细内容请参考《弹性云服务器API参考》中的“查询云服务器网卡信息”， 详见响应消息中的“port_id”字段。 ● VIP类型：虚拟IP所在虚拟机的网卡ID（VIP类型业务已不支持，该取值类型已废弃） 说明： ● 创建终端节点服务时，VPC的子网网段不能与198.19.128.0/17重叠。 ● VPC路由表中自定义路由的目的地址不能与198.19.128.0/17重叠。
 
         :return: The port_id of this CreateEndpointServiceRequestBody.
         :rtype: str
@@ -125,7 +132,7 @@ class CreateEndpointServiceRequestBody:
     def port_id(self, port_id):
         """Sets the port_id of this CreateEndpointServiceRequestBody.
 
-        标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。 取值为： ● LB类型：增强型负载均衡器内网IP对应的端口ID。 详细内容请参考《弹性负载均衡API参考》中的“查询负载均衡详情”， 详见响应消息中的“vip_port_id”字段。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 详细内容请参考《弹性云服务器API参考》中的“查询云服务器网卡信息”， 详见响应消息中的“port_id”字段。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。 说明 ● 创建终端节点服务时，VPC的子网网段不能与198.19.128.0/17重叠。 ● VPC路由表中自定义路由的目的地址不能与198.19.128.0/17重叠。
+        标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。 取值为： ● LB类型：负载均衡器内网IP对应的端口ID。 详细内容请参考《弹性负载均衡API参考》中的“查询负载均衡详情”， 详见响应消息中的“vip_port_id”字段。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 详细内容请参考《弹性云服务器API参考》中的“查询云服务器网卡信息”， 详见响应消息中的“port_id”字段。 ● VIP类型：虚拟IP所在虚拟机的网卡ID（VIP类型业务已不支持，该取值类型已废弃） 说明： ● 创建终端节点服务时，VPC的子网网段不能与198.19.128.0/17重叠。 ● VPC路由表中自定义路由的目的地址不能与198.19.128.0/17重叠。
 
         :param port_id: The port_id of this CreateEndpointServiceRequestBody.
         :type port_id: str
@@ -136,7 +143,7 @@ class CreateEndpointServiceRequestBody:
     def vip_port_id(self):
         """Gets the vip_port_id of this CreateEndpointServiceRequestBody.
 
-        虚拟IP的网卡ID。
+        虚拟IP的网卡ID。如果是DCS VIP场景，则该参数必需提供
 
         :return: The vip_port_id of this CreateEndpointServiceRequestBody.
         :rtype: str
@@ -147,7 +154,7 @@ class CreateEndpointServiceRequestBody:
     def vip_port_id(self, vip_port_id):
         """Sets the vip_port_id of this CreateEndpointServiceRequestBody.
 
-        虚拟IP的网卡ID。
+        虚拟IP的网卡ID。如果是DCS VIP场景，则该参数必需提供
 
         :param vip_port_id: The vip_port_id of this CreateEndpointServiceRequestBody.
         :type vip_port_id: str
@@ -224,7 +231,7 @@ class CreateEndpointServiceRequestBody:
     def service_type(self):
         """Gets the service_type of this CreateEndpointServiceRequestBody.
 
-        终端节点服务类型。 仅支持将用户私有服务创建为interface类型的终端节点服务。 终端节点服务类型包括“网关（gataway）型”和“接口（interface）型”： ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建， 用户可直接使用。 您可以通过查询公共终端节点服务列表, 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
+        终端节点服务类型。 仅支持将用户私有服务创建为interface类型的终端节点服务。 终端节点服务类型包括“网关（gataway）型”和“接口（interface）型”： ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建， 用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
 
         :return: The service_type of this CreateEndpointServiceRequestBody.
         :rtype: str
@@ -235,7 +242,7 @@ class CreateEndpointServiceRequestBody:
     def service_type(self, service_type):
         """Sets the service_type of this CreateEndpointServiceRequestBody.
 
-        终端节点服务类型。 仅支持将用户私有服务创建为interface类型的终端节点服务。 终端节点服务类型包括“网关（gataway）型”和“接口（interface）型”： ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建， 用户可直接使用。 您可以通过查询公共终端节点服务列表, 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
+        终端节点服务类型。 仅支持将用户私有服务创建为interface类型的终端节点服务。 终端节点服务类型包括“网关（gataway）型”和“接口（interface）型”： ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建， 用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
 
         :param service_type: The service_type of this CreateEndpointServiceRequestBody.
         :type service_type: str
@@ -246,7 +253,7 @@ class CreateEndpointServiceRequestBody:
     def server_type(self):
         """Gets the server_type of this CreateEndpointServiceRequestBody.
 
-        资源类型。 ● VM：云服务器，适用于作为服务器使用。 ● VIP：虚拟IP，适用于作为虚拟资源的物理服务器使用。 ● LB：增强型负载均衡，适用于高访问量业务和对可靠性和容灾性要求较高的业务。
+        资源类型。 ● VM：云服务器，适用于作为服务器使用。 ● VIP：虚拟IP，适用于作为虚拟资源的物理服务器使用。（该字段已废弃，请优先使用LB类型） ● LB：负载均衡，适用于高访问量业务和对可靠性和容灾性要求较高的业务。
 
         :return: The server_type of this CreateEndpointServiceRequestBody.
         :rtype: str
@@ -257,7 +264,7 @@ class CreateEndpointServiceRequestBody:
     def server_type(self, server_type):
         """Sets the server_type of this CreateEndpointServiceRequestBody.
 
-        资源类型。 ● VM：云服务器，适用于作为服务器使用。 ● VIP：虚拟IP，适用于作为虚拟资源的物理服务器使用。 ● LB：增强型负载均衡，适用于高访问量业务和对可靠性和容灾性要求较高的业务。
+        资源类型。 ● VM：云服务器，适用于作为服务器使用。 ● VIP：虚拟IP，适用于作为虚拟资源的物理服务器使用。（该字段已废弃，请优先使用LB类型） ● LB：负载均衡，适用于高访问量业务和对可靠性和容灾性要求较高的业务。
 
         :param server_type: The server_type of this CreateEndpointServiceRequestBody.
         :type server_type: str
@@ -290,7 +297,7 @@ class CreateEndpointServiceRequestBody:
     def tcp_proxy(self):
         """Gets the tcp_proxy of this CreateEndpointServiceRequestBody.
 
-        用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
+        用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 ● proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
 
         :return: The tcp_proxy of this CreateEndpointServiceRequestBody.
         :rtype: str
@@ -301,7 +308,7 @@ class CreateEndpointServiceRequestBody:
     def tcp_proxy(self, tcp_proxy):
         """Sets the tcp_proxy of this CreateEndpointServiceRequestBody.
 
-        用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
+        用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 ● proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
 
         :param tcp_proxy: The tcp_proxy of this CreateEndpointServiceRequestBody.
         :type tcp_proxy: str
@@ -351,6 +358,28 @@ class CreateEndpointServiceRequestBody:
         :type description: str
         """
         self._description = description
+
+    @property
+    def enable_policy(self):
+        """Gets the enable_policy of this CreateEndpointServiceRequestBody.
+
+        是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+
+        :return: The enable_policy of this CreateEndpointServiceRequestBody.
+        :rtype: bool
+        """
+        return self._enable_policy
+
+    @enable_policy.setter
+    def enable_policy(self, enable_policy):
+        """Sets the enable_policy of this CreateEndpointServiceRequestBody.
+
+        是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+
+        :param enable_policy: The enable_policy of this CreateEndpointServiceRequestBody.
+        :type enable_policy: bool
+        """
+        self._enable_policy = enable_policy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

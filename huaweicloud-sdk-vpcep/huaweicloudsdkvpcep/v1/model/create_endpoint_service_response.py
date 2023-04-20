@@ -37,7 +37,8 @@ class CreateEndpointServiceResponse(SdkResponse):
         'ports': 'list[PortList]',
         'tcp_proxy': 'str',
         'tags': 'list[TagList]',
-        'description': 'str'
+        'description': 'str',
+        'enable_policy': 'bool'
     }
 
     attribute_map = {
@@ -58,17 +59,18 @@ class CreateEndpointServiceResponse(SdkResponse):
         'ports': 'ports',
         'tcp_proxy': 'tcp_proxy',
         'tags': 'tags',
-        'description': 'description'
+        'description': 'description',
+        'enable_policy': 'enable_policy'
     }
 
-    def __init__(self, id=None, port_id=None, vip_port_id=None, service_name=None, server_type=None, vpc_id=None, pool_id=None, approval_enabled=None, status=None, service_type=None, created_at=None, updated_at=None, project_id=None, cidr_type=None, ports=None, tcp_proxy=None, tags=None, description=None):
+    def __init__(self, id=None, port_id=None, vip_port_id=None, service_name=None, server_type=None, vpc_id=None, pool_id=None, approval_enabled=None, status=None, service_type=None, created_at=None, updated_at=None, project_id=None, cidr_type=None, ports=None, tcp_proxy=None, tags=None, description=None, enable_policy=None):
         """CreateEndpointServiceResponse
 
         The model defined in huaweicloud sdk
 
         :param id: 终端节点服务的ID，唯一标识。
         :type id: str
-        :param port_id: 标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。 取值为： ● LB类型：增强型负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。
+        :param port_id: 标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。 取值为： ● LB类型：负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。（该字段已废弃，请优先使用LB类型）
         :type port_id: str
         :param vip_port_id: 虚拟IP的网卡ID。 仅当“port_id”为“VIP类型”时，返回该参数。
         :type vip_port_id: str
@@ -96,12 +98,14 @@ class CreateEndpointServiceResponse(SdkResponse):
         :type cidr_type: str
         :param ports: 服务开放的端口映射列表 同一个终端节点服务下，不允许重复的端口映射。 若多个终端节点服务共用一个port_id， 则终端节点服务之间的所有端口映射的server_port和protocol的组合不能重复。
         :type ports: list[:class:`huaweicloudsdkvpcep.v1.PortList`]
-        :param tcp_proxy: 用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
+        :param tcp_proxy: 用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 ● proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
         :type tcp_proxy: str
         :param tags: 资源标签列表
         :type tags: list[:class:`huaweicloudsdkvpcep.v1.TagList`]
         :param description: 描述字段，支持中英文字母、数字等字符，不支持“&lt;”或“&gt;”字符。
         :type description: str
+        :param enable_policy: 是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+        :type enable_policy: bool
         """
         
         super(CreateEndpointServiceResponse, self).__init__()
@@ -124,6 +128,7 @@ class CreateEndpointServiceResponse(SdkResponse):
         self._tcp_proxy = None
         self._tags = None
         self._description = None
+        self._enable_policy = None
         self.discriminator = None
 
         if id is not None:
@@ -162,6 +167,8 @@ class CreateEndpointServiceResponse(SdkResponse):
             self.tags = tags
         if description is not None:
             self.description = description
+        if enable_policy is not None:
+            self.enable_policy = enable_policy
 
     @property
     def id(self):
@@ -189,7 +196,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def port_id(self):
         """Gets the port_id of this CreateEndpointServiceResponse.
 
-        标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。 取值为： ● LB类型：增强型负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。
+        标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。 取值为： ● LB类型：负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。（该字段已废弃，请优先使用LB类型）
 
         :return: The port_id of this CreateEndpointServiceResponse.
         :rtype: str
@@ -200,7 +207,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def port_id(self, port_id):
         """Sets the port_id of this CreateEndpointServiceResponse.
 
-        标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。 取值为： ● LB类型：增强型负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。
+        标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。 取值为： ● LB类型：负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。（该字段已废弃，请优先使用LB类型）
 
         :param port_id: The port_id of this CreateEndpointServiceResponse.
         :type port_id: str
@@ -497,7 +504,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def tcp_proxy(self):
         """Gets the tcp_proxy of this CreateEndpointServiceResponse.
 
-        用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
+        用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 ● proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
 
         :return: The tcp_proxy of this CreateEndpointServiceResponse.
         :rtype: str
@@ -508,7 +515,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def tcp_proxy(self, tcp_proxy):
         """Sets the tcp_proxy of this CreateEndpointServiceResponse.
 
-        用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
+        用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 ● proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
 
         :param tcp_proxy: The tcp_proxy of this CreateEndpointServiceResponse.
         :type tcp_proxy: str
@@ -558,6 +565,28 @@ class CreateEndpointServiceResponse(SdkResponse):
         :type description: str
         """
         self._description = description
+
+    @property
+    def enable_policy(self):
+        """Gets the enable_policy of this CreateEndpointServiceResponse.
+
+        是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+
+        :return: The enable_policy of this CreateEndpointServiceResponse.
+        :rtype: bool
+        """
+        return self._enable_policy
+
+    @enable_policy.setter
+    def enable_policy(self, enable_policy):
+        """Sets the enable_policy of this CreateEndpointServiceResponse.
+
+        是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+
+        :param enable_policy: The enable_policy of this CreateEndpointServiceResponse.
+        :type enable_policy: bool
+        """
+        self._enable_policy = enable_policy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

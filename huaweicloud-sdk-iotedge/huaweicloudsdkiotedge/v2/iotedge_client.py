@@ -2669,6 +2669,70 @@ class IoTEdgeClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_module_state(self, request):
+        """修改边缘模块状态
+
+        用户通过Console接口启停数采连接
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateModuleState
+        :type request: :class:`huaweicloudsdkiotedge.v2.UpdateModuleStateRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateModuleStateResponse`
+        """
+        return self.update_module_state_with_http_info(request)
+
+    def update_module_state_with_http_info(self, request):
+        all_params = ['edge_node_id', 'module_id', 'update_module_state_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+        if 'module_id' in local_var_params:
+            path_params['module_id'] = local_var_params['module_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/modules/{module_id}/state',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateModuleStateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_routes(self, request):
         """查询边缘路由列表
 
@@ -2788,6 +2852,306 @@ class IoTEdgeClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateRoutesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def add_general_ot_template(self, request):
+        """导入标准数采模板
+
+        导入标准数采模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddGeneralOtTemplate
+        :type request: :class:`huaweicloudsdkiotedge.v2.AddGeneralOtTemplateRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.AddGeneralOtTemplateResponse`
+        """
+        return self.add_general_ot_template_with_http_info(request)
+
+    def add_general_ot_template_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/templates/ots/data-sources/import',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddGeneralOtTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def add_ot_templates(self, request):
+        """添加数采模板
+
+        添加数采模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddOtTemplates
+        :type request: :class:`huaweicloudsdkiotedge.v2.AddOtTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.AddOtTemplatesResponse`
+        """
+        return self.add_ot_templates_with_http_info(request)
+
+    def add_ot_templates_with_http_info(self, request):
+        all_params = ['add_ot_templates_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/templates/ots/data-sources',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddOtTemplatesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_list_ot_templates(self, request):
+        """查询数采模板列表
+
+        查询数采模板列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchListOtTemplates
+        :type request: :class:`huaweicloudsdkiotedge.v2.BatchListOtTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.BatchListOtTemplatesResponse`
+        """
+        return self.batch_list_ot_templates_with_http_info(request)
+
+    def batch_list_ot_templates_with_http_info(self, request):
+        all_params = ['offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/templates/ots/data-sources',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchListOtTemplatesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_ot_template(self, request):
+        """删除数采模板
+
+        删除数采模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteOtTemplate
+        :type request: :class:`huaweicloudsdkiotedge.v2.DeleteOtTemplateRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteOtTemplateResponse`
+        """
+        return self.delete_ot_template_with_http_info(request)
+
+    def delete_ot_template_with_http_info(self, request):
+        all_params = ['tpl_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tpl_id' in local_var_params:
+            path_params['tpl_id'] = local_var_params['tpl_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/templates/ots/data-sources/{tpl_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteOtTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_ot_template(self, request):
+        """查询数采模板详情
+
+        查询数采模板详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowOtTemplate
+        :type request: :class:`huaweicloudsdkiotedge.v2.ShowOtTemplateRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ShowOtTemplateResponse`
+        """
+        return self.show_ot_template_with_http_info(request)
+
+    def show_ot_template_with_http_info(self, request):
+        all_params = ['tpl_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tpl_id' in local_var_params:
+            path_params['tpl_id'] = local_var_params['tpl_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/templates/ots/data-sources/{tpl_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowOtTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

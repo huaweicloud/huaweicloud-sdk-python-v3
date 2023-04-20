@@ -34,7 +34,7 @@ class StartInfo:
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务id。 
+        :param job_id: 任务id。
         :type job_id: str
         :param start_time: 任务启动时间，时间戳格式精确到毫秒，例如：1679966489593，取值为空代表立即启动。
         :type start_time: str
@@ -54,7 +54,7 @@ class StartInfo:
     def job_id(self):
         """Gets the job_id of this StartInfo.
 
-        任务id。 
+        任务id。
 
         :return: The job_id of this StartInfo.
         :rtype: str
@@ -65,7 +65,7 @@ class StartInfo:
     def job_id(self, job_id):
         """Sets the job_id of this StartInfo.
 
-        任务id。 
+        任务id。
 
         :param job_id: The job_id of this StartInfo.
         :type job_id: str

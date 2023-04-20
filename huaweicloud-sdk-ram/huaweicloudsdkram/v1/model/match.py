@@ -36,7 +36,7 @@ class Match:
 
         :param key: 键。取值范围为policy , organizational-unit, account。
         :type key: str
-        :param value: 值。每个值最大长度255个unicode字符。
+        :param value: 值。每个值最大长度255个字符。
         :type value: str
         """
         
@@ -75,7 +75,7 @@ class Match:
     def value(self):
         """Gets the value of this Match.
 
-        值。每个值最大长度255个unicode字符。
+        值。每个值最大长度255个字符。
 
         :return: The value of this Match.
         :rtype: str
@@ -86,7 +86,7 @@ class Match:
     def value(self, value):
         """Sets the value of this Match.
 
-        值。每个值最大长度255个unicode字符。
+        值。每个值最大长度255个字符。
 
         :param value: The value of this Match.
         :type value: str

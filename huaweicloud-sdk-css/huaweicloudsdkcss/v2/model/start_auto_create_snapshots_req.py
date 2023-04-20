@@ -38,7 +38,7 @@ class StartAutoCreateSnapshotsReq:
 
         The model defined in huaweicloud sdk
 
-        :param indices: 指定要恢复的索引名称，多个索引用逗号隔开，默认恢复所有索引。支持使用“\\*”匹配多个索引，例如：2018-06\\*，表示恢复名称前缀是2018-06的所有索引的数据。  0～1024个字符，不能包含空格和大写字母，且不能包含\\\&quot;\\\\&lt;|&gt;/?特殊字符。  默认值为\\*，表示恢复所有索引。
+        :param indices: 指定要恢复的索引名称，多个索引用逗号隔开，默认恢复所有索引。支持使用“\\*”匹配多个索引，例如：2018-06\\*，表示恢复名称前缀是2018-06的所有索引的数据。 0～1024个字符，不能包含空格和大写字母，且不能包含\\\&quot;\\\\&lt;|&gt;/?特殊字符。 默认值为\\*，表示恢复所有索引。
         :type indices: str
         :param keepday: 设置快照保留的天数，范围是1～90。系统在半点时刻会自动删除超过保留天数的快照。
         :type keepday: int
@@ -66,7 +66,7 @@ class StartAutoCreateSnapshotsReq:
     def indices(self):
         """Gets the indices of this StartAutoCreateSnapshotsReq.
 
-        指定要恢复的索引名称，多个索引用逗号隔开，默认恢复所有索引。支持使用“\\*”匹配多个索引，例如：2018-06\\*，表示恢复名称前缀是2018-06的所有索引的数据。  0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?特殊字符。  默认值为\\*，表示恢复所有索引。
+        指定要恢复的索引名称，多个索引用逗号隔开，默认恢复所有索引。支持使用“\\*”匹配多个索引，例如：2018-06\\*，表示恢复名称前缀是2018-06的所有索引的数据。 0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?特殊字符。 默认值为\\*，表示恢复所有索引。
 
         :return: The indices of this StartAutoCreateSnapshotsReq.
         :rtype: str
@@ -77,7 +77,7 @@ class StartAutoCreateSnapshotsReq:
     def indices(self, indices):
         """Sets the indices of this StartAutoCreateSnapshotsReq.
 
-        指定要恢复的索引名称，多个索引用逗号隔开，默认恢复所有索引。支持使用“\\*”匹配多个索引，例如：2018-06\\*，表示恢复名称前缀是2018-06的所有索引的数据。  0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?特殊字符。  默认值为\\*，表示恢复所有索引。
+        指定要恢复的索引名称，多个索引用逗号隔开，默认恢复所有索引。支持使用“\\*”匹配多个索引，例如：2018-06\\*，表示恢复名称前缀是2018-06的所有索引的数据。 0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?特殊字符。 默认值为\\*，表示恢复所有索引。
 
         :param indices: The indices of this StartAutoCreateSnapshotsReq.
         :type indices: str

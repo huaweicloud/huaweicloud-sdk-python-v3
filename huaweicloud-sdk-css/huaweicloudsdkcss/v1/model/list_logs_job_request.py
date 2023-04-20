@@ -20,28 +20,42 @@ class ListLogsJobRequest:
     sensitive_list = []
 
     openapi_types = {
-        'cluster_id': 'str'
+        'cluster_id': 'str',
+        'start': 'int',
+        'limit': 'int'
     }
 
     attribute_map = {
-        'cluster_id': 'cluster_id'
+        'cluster_id': 'cluster_id',
+        'start': 'start',
+        'limit': 'limit'
     }
 
-    def __init__(self, cluster_id=None):
+    def __init__(self, cluster_id=None, start=None, limit=None):
         """ListLogsJobRequest
 
         The model defined in huaweicloud sdk
 
         :param cluster_id: 指定查询集群ID。
         :type cluster_id: str
+        :param start: 指定查询起始值，默认值为1，即从第1个任务开始查询。
+        :type start: int
+        :param limit: 指定查询个数，默认值为10，即一次查询10个任务信息。
+        :type limit: int
         """
         
         
 
         self._cluster_id = None
+        self._start = None
+        self._limit = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
+        if start is not None:
+            self.start = start
+        if limit is not None:
+            self.limit = limit
 
     @property
     def cluster_id(self):
@@ -64,6 +78,50 @@ class ListLogsJobRequest:
         :type cluster_id: str
         """
         self._cluster_id = cluster_id
+
+    @property
+    def start(self):
+        """Gets the start of this ListLogsJobRequest.
+
+        指定查询起始值，默认值为1，即从第1个任务开始查询。
+
+        :return: The start of this ListLogsJobRequest.
+        :rtype: int
+        """
+        return self._start
+
+    @start.setter
+    def start(self, start):
+        """Sets the start of this ListLogsJobRequest.
+
+        指定查询起始值，默认值为1，即从第1个任务开始查询。
+
+        :param start: The start of this ListLogsJobRequest.
+        :type start: int
+        """
+        self._start = start
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListLogsJobRequest.
+
+        指定查询个数，默认值为10，即一次查询10个任务信息。
+
+        :return: The limit of this ListLogsJobRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListLogsJobRequest.
+
+        指定查询个数，默认值为10，即一次查询10个任务信息。
+
+        :param limit: The limit of this ListLogsJobRequest.
+        :type limit: int
+        """
+        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

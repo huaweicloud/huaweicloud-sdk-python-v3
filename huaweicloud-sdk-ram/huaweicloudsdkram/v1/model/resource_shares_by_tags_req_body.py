@@ -38,9 +38,9 @@ class ResourceSharesByTagsReqBody:
 
         :param without_any_tag: 不包含任意一个标签，该字段为true时查询所有不带标签的资源。
         :type without_any_tag: bool
-        :param tags: 包含标签，最多包含20个key，每个key下面的value最多20个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无tag过滤条件时返回全量数据。
+        :param tags: 包含标签，最多包含20个key，每个key下面的value最多20个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回包含所有标签的资源列表，key之间是\&quot;与\&quot;的关系，key-value结构中value是\&quot;或\&quot;的关系。无tag过滤条件时返回全量数据。
         :type tags: list[:class:`huaweicloudsdkram.v1.TagFilter`]
-        :param matches: 要绑定到新创建的帐号的标签列表。
+        :param matches: 资源共享实例绑定标签列表的匹配字段。
         :type matches: list[:class:`huaweicloudsdkram.v1.Match`]
         """
         
@@ -84,7 +84,7 @@ class ResourceSharesByTagsReqBody:
     def tags(self):
         """Gets the tags of this ResourceSharesByTagsReqBody.
 
-        包含标签，最多包含20个key，每个key下面的value最多20个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无tag过滤条件时返回全量数据。
+        包含标签，最多包含20个key，每个key下面的value最多20个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回包含所有标签的资源列表，key之间是\"与\"的关系，key-value结构中value是\"或\"的关系。无tag过滤条件时返回全量数据。
 
         :return: The tags of this ResourceSharesByTagsReqBody.
         :rtype: list[:class:`huaweicloudsdkram.v1.TagFilter`]
@@ -95,7 +95,7 @@ class ResourceSharesByTagsReqBody:
     def tags(self, tags):
         """Sets the tags of this ResourceSharesByTagsReqBody.
 
-        包含标签，最多包含20个key，每个key下面的value最多20个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无tag过滤条件时返回全量数据。
+        包含标签，最多包含20个key，每个key下面的value最多20个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回包含所有标签的资源列表，key之间是\"与\"的关系，key-value结构中value是\"或\"的关系。无tag过滤条件时返回全量数据。
 
         :param tags: The tags of this ResourceSharesByTagsReqBody.
         :type tags: list[:class:`huaweicloudsdkram.v1.TagFilter`]
@@ -106,7 +106,7 @@ class ResourceSharesByTagsReqBody:
     def matches(self):
         """Gets the matches of this ResourceSharesByTagsReqBody.
 
-        要绑定到新创建的帐号的标签列表。
+        资源共享实例绑定标签列表的匹配字段。
 
         :return: The matches of this ResourceSharesByTagsReqBody.
         :rtype: list[:class:`huaweicloudsdkram.v1.Match`]
@@ -117,7 +117,7 @@ class ResourceSharesByTagsReqBody:
     def matches(self, matches):
         """Sets the matches of this ResourceSharesByTagsReqBody.
 
-        要绑定到新创建的帐号的标签列表。
+        资源共享实例绑定标签列表的匹配字段。
 
         :param matches: The matches of this ResourceSharesByTagsReqBody.
         :type matches: list[:class:`huaweicloudsdkram.v1.Match`]

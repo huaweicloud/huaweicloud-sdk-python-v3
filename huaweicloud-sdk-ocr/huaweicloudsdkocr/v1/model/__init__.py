@@ -20,6 +20,8 @@ from huaweicloudsdkocr.v1.model.chile_id_card_confidence import ChileIdCardConfi
 from huaweicloudsdkocr.v1.model.chile_id_card_request_body import ChileIdCardRequestBody
 from huaweicloudsdkocr.v1.model.chile_id_card_result import ChileIdCardResult
 from huaweicloudsdkocr.v1.model.custom_template_request_body import CustomTemplateRequestBody
+from huaweicloudsdkocr.v1.model.driver_license_back import DriverLicenseBack
+from huaweicloudsdkocr.v1.model.driver_license_front import DriverLicenseFront
 from huaweicloudsdkocr.v1.model.driver_license_request_body import DriverLicenseRequestBody
 from huaweicloudsdkocr.v1.model.driver_license_result import DriverLicenseResult
 from huaweicloudsdkocr.v1.model.exit_entry_permit_confidence import ExitEntryPermitConfidence

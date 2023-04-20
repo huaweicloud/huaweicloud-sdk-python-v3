@@ -50,7 +50,7 @@ class SetRDSBackupCnfReq:
         :type period: str
         :param keepday: 自定义设置快照保留的天数，范围是1～90。系统在半点时刻会自动删除超过保留天数的快照。
         :type keepday: int
-        :param enable: 是否开启自动创建快照策略。 - true：表示开启自动创建快照策略。 - false：表示关闭自动创建快照策略。
+        :param enable: 是否开启自动创建快照策略。 - true：表示开启自动创建快照策略。 - false：表示关闭自动创建快照策略，且无需下发其余参数。
         :type enable: str
         :param delete_auto: 表示关闭自动创建快照策略时，是否需要清除所有自动创建的快照。默认为“false”，表示不会删除之前已自动创建的快照。设置为true，表示在关闭自动创建快照策略的同时，删除所有已创建的快照。
         :type delete_auto: str
@@ -167,7 +167,7 @@ class SetRDSBackupCnfReq:
     def enable(self):
         """Gets the enable of this SetRDSBackupCnfReq.
 
-        是否开启自动创建快照策略。 - true：表示开启自动创建快照策略。 - false：表示关闭自动创建快照策略。
+        是否开启自动创建快照策略。 - true：表示开启自动创建快照策略。 - false：表示关闭自动创建快照策略，且无需下发其余参数。
 
         :return: The enable of this SetRDSBackupCnfReq.
         :rtype: str
@@ -178,7 +178,7 @@ class SetRDSBackupCnfReq:
     def enable(self, enable):
         """Sets the enable of this SetRDSBackupCnfReq.
 
-        是否开启自动创建快照策略。 - true：表示开启自动创建快照策略。 - false：表示关闭自动创建快照策略。
+        是否开启自动创建快照策略。 - true：表示开启自动创建快照策略。 - false：表示关闭自动创建快照策略，且无需下发其余参数。
 
         :param enable: The enable of this SetRDSBackupCnfReq.
         :type enable: str

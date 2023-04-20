@@ -25,6 +25,10 @@ class ConfigsGetBody:
         'url_auth': 'UrlAuthGetBody',
         'https': 'HttpGetBody',
         'sources': 'list[SourcesConfig]',
+        'origin_follow302_status': 'str',
+        'cache_rules': 'list[CacheRules]',
+        'ip_filter': 'IpFilter',
+        'referer': 'RefererConfig',
         'origin_protocol': 'str',
         'force_redirect': 'ForceRedirectConfig',
         'compress': 'Compress',
@@ -43,6 +47,10 @@ class ConfigsGetBody:
         'url_auth': 'url_auth',
         'https': 'https',
         'sources': 'sources',
+        'origin_follow302_status': 'origin_follow302_status',
+        'cache_rules': 'cache_rules',
+        'ip_filter': 'ip_filter',
+        'referer': 'referer',
         'origin_protocol': 'origin_protocol',
         'force_redirect': 'force_redirect',
         'compress': 'compress',
@@ -55,7 +63,7 @@ class ConfigsGetBody:
         'error_code_redirect_rules': 'error_code_redirect_rules'
     }
 
-    def __init__(self, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, error_code_redirect_rules=None):
+    def __init__(self, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, origin_protocol=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, error_code_redirect_rules=None):
         """ConfigsGetBody
 
         The model defined in huaweicloud sdk
@@ -70,6 +78,14 @@ class ConfigsGetBody:
         :type https: :class:`huaweicloudsdkcdn.v1.HttpGetBody`
         :param sources: 源站配置。
         :type sources: list[:class:`huaweicloudsdkcdn.v1.SourcesConfig`]
+        :param origin_follow302_status: 回源跟随（on：开启，off：关闭）。
+        :type origin_follow302_status: str
+        :param cache_rules: 缓存规则。
+        :type cache_rules: list[:class:`huaweicloudsdkcdn.v1.CacheRules`]
+        :param ip_filter: 
+        :type ip_filter: :class:`huaweicloudsdkcdn.v1.IpFilter`
+        :param referer: 
+        :type referer: :class:`huaweicloudsdkcdn.v1.RefererConfig`
         :param origin_protocol: 回源协议（follow：协议跟随回源，http：HTTP回源(默认)，https：https回源）。
         :type origin_protocol: str
         :param force_redirect: 
@@ -99,6 +115,10 @@ class ConfigsGetBody:
         self._url_auth = None
         self._https = None
         self._sources = None
+        self._origin_follow302_status = None
+        self._cache_rules = None
+        self._ip_filter = None
+        self._referer = None
         self._origin_protocol = None
         self._force_redirect = None
         self._compress = None
@@ -121,6 +141,14 @@ class ConfigsGetBody:
             self.https = https
         if sources is not None:
             self.sources = sources
+        if origin_follow302_status is not None:
+            self.origin_follow302_status = origin_follow302_status
+        if cache_rules is not None:
+            self.cache_rules = cache_rules
+        if ip_filter is not None:
+            self.ip_filter = ip_filter
+        if referer is not None:
+            self.referer = referer
         if origin_protocol is not None:
             self.origin_protocol = origin_protocol
         if force_redirect is not None:
@@ -243,6 +271,86 @@ class ConfigsGetBody:
         :type sources: list[:class:`huaweicloudsdkcdn.v1.SourcesConfig`]
         """
         self._sources = sources
+
+    @property
+    def origin_follow302_status(self):
+        """Gets the origin_follow302_status of this ConfigsGetBody.
+
+        回源跟随（on：开启，off：关闭）。
+
+        :return: The origin_follow302_status of this ConfigsGetBody.
+        :rtype: str
+        """
+        return self._origin_follow302_status
+
+    @origin_follow302_status.setter
+    def origin_follow302_status(self, origin_follow302_status):
+        """Sets the origin_follow302_status of this ConfigsGetBody.
+
+        回源跟随（on：开启，off：关闭）。
+
+        :param origin_follow302_status: The origin_follow302_status of this ConfigsGetBody.
+        :type origin_follow302_status: str
+        """
+        self._origin_follow302_status = origin_follow302_status
+
+    @property
+    def cache_rules(self):
+        """Gets the cache_rules of this ConfigsGetBody.
+
+        缓存规则。
+
+        :return: The cache_rules of this ConfigsGetBody.
+        :rtype: list[:class:`huaweicloudsdkcdn.v1.CacheRules`]
+        """
+        return self._cache_rules
+
+    @cache_rules.setter
+    def cache_rules(self, cache_rules):
+        """Sets the cache_rules of this ConfigsGetBody.
+
+        缓存规则。
+
+        :param cache_rules: The cache_rules of this ConfigsGetBody.
+        :type cache_rules: list[:class:`huaweicloudsdkcdn.v1.CacheRules`]
+        """
+        self._cache_rules = cache_rules
+
+    @property
+    def ip_filter(self):
+        """Gets the ip_filter of this ConfigsGetBody.
+
+        :return: The ip_filter of this ConfigsGetBody.
+        :rtype: :class:`huaweicloudsdkcdn.v1.IpFilter`
+        """
+        return self._ip_filter
+
+    @ip_filter.setter
+    def ip_filter(self, ip_filter):
+        """Sets the ip_filter of this ConfigsGetBody.
+
+        :param ip_filter: The ip_filter of this ConfigsGetBody.
+        :type ip_filter: :class:`huaweicloudsdkcdn.v1.IpFilter`
+        """
+        self._ip_filter = ip_filter
+
+    @property
+    def referer(self):
+        """Gets the referer of this ConfigsGetBody.
+
+        :return: The referer of this ConfigsGetBody.
+        :rtype: :class:`huaweicloudsdkcdn.v1.RefererConfig`
+        """
+        return self._referer
+
+    @referer.setter
+    def referer(self, referer):
+        """Sets the referer of this ConfigsGetBody.
+
+        :param referer: The referer of this ConfigsGetBody.
+        :type referer: :class:`huaweicloudsdkcdn.v1.RefererConfig`
+        """
+        self._referer = referer
 
     @property
     def origin_protocol(self):

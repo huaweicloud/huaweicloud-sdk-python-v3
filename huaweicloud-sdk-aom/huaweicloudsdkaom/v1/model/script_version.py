@@ -26,7 +26,7 @@ class ScriptVersion:
         'enterprise_project_id': 'str',
         'name': 'str',
         'project_id': 'str',
-        'reference_number': 'int',
+        'job_reference_number': 'int',
         'script_id': 'str',
         'script_language': 'str',
         'status_desc': 'int',
@@ -34,7 +34,7 @@ class ScriptVersion:
         'update_time': 'int',
         'version_id': 'str',
         'version_number': 'str',
-        'script_reference': 'list[ScriptReferenceDetail]'
+        'job_reference_name': 'list[ReferenceInfo]'
     }
 
     attribute_map = {
@@ -44,7 +44,7 @@ class ScriptVersion:
         'enterprise_project_id': 'enterprise_project_id',
         'name': 'name',
         'project_id': 'project_id',
-        'reference_number': 'reference_number',
+        'job_reference_number': 'job_reference_number',
         'script_id': 'script_id',
         'script_language': 'script_language',
         'status_desc': 'status_desc',
@@ -52,10 +52,10 @@ class ScriptVersion:
         'update_time': 'update_time',
         'version_id': 'version_id',
         'version_number': 'version_number',
-        'script_reference': 'script_reference'
+        'job_reference_name': 'job_reference_name'
     }
 
-    def __init__(self, content=None, create_by=None, create_time=None, enterprise_project_id=None, name=None, project_id=None, reference_number=None, script_id=None, script_language=None, status_desc=None, update_by=None, update_time=None, version_id=None, version_number=None, script_reference=None):
+    def __init__(self, content=None, create_by=None, create_time=None, enterprise_project_id=None, name=None, project_id=None, job_reference_number=None, script_id=None, script_language=None, status_desc=None, update_by=None, update_time=None, version_id=None, version_number=None, job_reference_name=None):
         """ScriptVersion
 
         The model defined in huaweicloud sdk
@@ -72,8 +72,8 @@ class ScriptVersion:
         :type name: str
         :param project_id: 租户从IAM申请到的projectid，一般为32位字符串
         :type project_id: str
-        :param reference_number: 脚本引用次数，脚本被任务和模板引用的次数。默认是0次,引用次数未非负整数，不能出现负数
-        :type reference_number: int
+        :param job_reference_number: 脚本版本的引用次数，脚本版本被作业引用的次数。默认是0次,引用次数为非负整数，不能出现负数
+        :type job_reference_number: int
         :param script_id: 脚本id，根据UUID.randomUUID生成。
         :type script_id: str
         :param script_language: 脚本语言，目前支持四种，分别是：SHELL BAT PYTHON POWER_SHELL
@@ -88,8 +88,8 @@ class ScriptVersion:
         :type version_id: str
         :param version_number: 脚本版本号，支持数字，下划线，大小写字母和小数点
         :type version_number: str
-        :param script_reference: 脚本引用详情
-        :type script_reference: list[:class:`huaweicloudsdkaom.v1.ScriptReferenceDetail`]
+        :param job_reference_name: 脚本引用的作业详情
+        :type job_reference_name: list[:class:`huaweicloudsdkaom.v1.ReferenceInfo`]
         """
         
         
@@ -100,7 +100,7 @@ class ScriptVersion:
         self._enterprise_project_id = None
         self._name = None
         self._project_id = None
-        self._reference_number = None
+        self._job_reference_number = None
         self._script_id = None
         self._script_language = None
         self._status_desc = None
@@ -108,7 +108,7 @@ class ScriptVersion:
         self._update_time = None
         self._version_id = None
         self._version_number = None
-        self._script_reference = None
+        self._job_reference_name = None
         self.discriminator = None
 
         self.content = content
@@ -122,8 +122,8 @@ class ScriptVersion:
             self.name = name
         if project_id is not None:
             self.project_id = project_id
-        if reference_number is not None:
-            self.reference_number = reference_number
+        if job_reference_number is not None:
+            self.job_reference_number = job_reference_number
         if script_id is not None:
             self.script_id = script_id
         if script_language is not None:
@@ -138,8 +138,8 @@ class ScriptVersion:
             self.version_id = version_id
         if version_number is not None:
             self.version_number = version_number
-        if script_reference is not None:
-            self.script_reference = script_reference
+        if job_reference_name is not None:
+            self.job_reference_name = job_reference_name
 
     @property
     def content(self):
@@ -274,26 +274,26 @@ class ScriptVersion:
         self._project_id = project_id
 
     @property
-    def reference_number(self):
-        """Gets the reference_number of this ScriptVersion.
+    def job_reference_number(self):
+        """Gets the job_reference_number of this ScriptVersion.
 
-        脚本引用次数，脚本被任务和模板引用的次数。默认是0次,引用次数未非负整数，不能出现负数
+        脚本版本的引用次数，脚本版本被作业引用的次数。默认是0次,引用次数为非负整数，不能出现负数
 
-        :return: The reference_number of this ScriptVersion.
+        :return: The job_reference_number of this ScriptVersion.
         :rtype: int
         """
-        return self._reference_number
+        return self._job_reference_number
 
-    @reference_number.setter
-    def reference_number(self, reference_number):
-        """Sets the reference_number of this ScriptVersion.
+    @job_reference_number.setter
+    def job_reference_number(self, job_reference_number):
+        """Sets the job_reference_number of this ScriptVersion.
 
-        脚本引用次数，脚本被任务和模板引用的次数。默认是0次,引用次数未非负整数，不能出现负数
+        脚本版本的引用次数，脚本版本被作业引用的次数。默认是0次,引用次数为非负整数，不能出现负数
 
-        :param reference_number: The reference_number of this ScriptVersion.
-        :type reference_number: int
+        :param job_reference_number: The job_reference_number of this ScriptVersion.
+        :type job_reference_number: int
         """
-        self._reference_number = reference_number
+        self._job_reference_number = job_reference_number
 
     @property
     def script_id(self):
@@ -450,26 +450,26 @@ class ScriptVersion:
         self._version_number = version_number
 
     @property
-    def script_reference(self):
-        """Gets the script_reference of this ScriptVersion.
+    def job_reference_name(self):
+        """Gets the job_reference_name of this ScriptVersion.
 
-        脚本引用详情
+        脚本引用的作业详情
 
-        :return: The script_reference of this ScriptVersion.
-        :rtype: list[:class:`huaweicloudsdkaom.v1.ScriptReferenceDetail`]
+        :return: The job_reference_name of this ScriptVersion.
+        :rtype: list[:class:`huaweicloudsdkaom.v1.ReferenceInfo`]
         """
-        return self._script_reference
+        return self._job_reference_name
 
-    @script_reference.setter
-    def script_reference(self, script_reference):
-        """Sets the script_reference of this ScriptVersion.
+    @job_reference_name.setter
+    def job_reference_name(self, job_reference_name):
+        """Sets the job_reference_name of this ScriptVersion.
 
-        脚本引用详情
+        脚本引用的作业详情
 
-        :param script_reference: The script_reference of this ScriptVersion.
-        :type script_reference: list[:class:`huaweicloudsdkaom.v1.ScriptReferenceDetail`]
+        :param job_reference_name: The job_reference_name of this ScriptVersion.
+        :type job_reference_name: list[:class:`huaweicloudsdkaom.v1.ReferenceInfo`]
         """
-        self._script_reference = script_reference
+        self._job_reference_name = job_reference_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

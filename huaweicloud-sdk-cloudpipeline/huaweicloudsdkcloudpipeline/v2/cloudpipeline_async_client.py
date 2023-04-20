@@ -830,6 +830,75 @@ class CloudPipelineAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_pipeline_by_template_id_async(self, request):
+        """基于模板创建流水线
+
+        基于模板创建流水线
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreatePipelineByTemplateId
+        :type request: :class:`huaweicloudsdkcloudpipeline.v2.CreatePipelineByTemplateIdRequest`
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.CreatePipelineByTemplateIdResponse`
+        """
+        return self.create_pipeline_by_template_id_with_http_info(request)
+
+    def create_pipeline_by_template_id_with_http_info(self, request):
+        all_params = ['project_id', 'template_id', 'pipeline_by_template_dto', 'x_language', 'component_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+        if 'component_id' in local_var_params:
+            query_params.append(('component_id', local_var_params['component_id']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/api/pipeline-templates/{template_id}/create-pipeline',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreatePipelineByTemplateIdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_pipeline_async(self, request):
         """删除流水线
 
@@ -957,6 +1026,71 @@ class CloudPipelineAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListPipelineRunsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_pipeline_templates_async(self, request):
+        """查询模板列表
+
+        查询流水线模板列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPipelineTemplates
+        :type request: :class:`huaweicloudsdkcloudpipeline.v2.ListPipelineTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ListPipelineTemplatesResponse`
+        """
+        return self.list_pipeline_templates_with_http_info(request)
+
+    def list_pipeline_templates_with_http_info(self, request):
+        all_params = ['tenant_id', 'x_language', 'list_pipeline_templates_query']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tenant_id' in local_var_params:
+            path_params['tenant_id'] = local_var_params['tenant_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{tenant_id}/api/pipeline-templates/list',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListPipelineTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1156,6 +1290,69 @@ class CloudPipelineAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowPipelineRunDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_pipeline_template_detail_async(self, request):
+        """查询模板详情
+
+        查询模板详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowPipelineTemplateDetail
+        :type request: :class:`huaweicloudsdkcloudpipeline.v2.ShowPipelineTemplateDetailRequest`
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ShowPipelineTemplateDetailResponse`
+        """
+        return self.show_pipeline_template_detail_with_http_info(request)
+
+    def show_pipeline_template_detail_with_http_info(self, request):
+        all_params = ['tenant_id', 'template_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tenant_id' in local_var_params:
+            path_params['tenant_id'] = local_var_params['tenant_id']
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{tenant_id}/api/pipeline-templates/{template_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowPipelineTemplateDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

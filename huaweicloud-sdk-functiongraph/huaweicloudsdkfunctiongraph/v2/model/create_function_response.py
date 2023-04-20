@@ -30,6 +30,7 @@ class CreateFunctionResponse(SdkResponse):
         'timeout': 'int',
         'handler': 'str',
         'memory_size': 'int',
+        'gpu_memory': 'int',
         'cpu': 'int',
         'code_type': 'str',
         'code_url': 'str',
@@ -70,6 +71,7 @@ class CreateFunctionResponse(SdkResponse):
         'timeout': 'timeout',
         'handler': 'handler',
         'memory_size': 'memory_size',
+        'gpu_memory': 'gpu_memory',
         'cpu': 'cpu',
         'code_type': 'code_type',
         'code_url': 'code_url',
@@ -99,7 +101,7 @@ class CreateFunctionResponse(SdkResponse):
         'custom_image': 'custom_image'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc=None, mount_config=None, depend_list=None, depend_version_list=None, strategy_config=None, extend_config=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, enable_dynamic_memory=None, is_stateful_function=None, enable_auth_in_header=None, custom_image=None):
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc=None, mount_config=None, depend_list=None, depend_version_list=None, strategy_config=None, extend_config=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, enable_dynamic_memory=None, is_stateful_function=None, enable_auth_in_header=None, custom_image=None):
         """CreateFunctionResponse
 
         The model defined in huaweicloud sdk
@@ -124,6 +126,8 @@ class CreateFunctionResponse(SdkResponse):
         :type handler: str
         :param memory_size: 函数消耗的内存。 单位M。 取值范围为：128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096。 最小值为128，最大值为4096。
         :type memory_size: int
+        :param gpu_memory: 函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
+        :type gpu_memory: int
         :param cpu: 函数占用的cpu资源。 单位为millicore（1 core&#x3D;1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。 函数占用的CPU为基础CPU：200 millicores，再加上内存按比例占用的CPU，计算方法：内存/128 *100 + 200。
         :type cpu: int
         :param code_type: 函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
@@ -192,6 +196,7 @@ class CreateFunctionResponse(SdkResponse):
         self._timeout = None
         self._handler = None
         self._memory_size = None
+        self._gpu_memory = None
         self._cpu = None
         self._code_type = None
         self._code_url = None
@@ -241,6 +246,8 @@ class CreateFunctionResponse(SdkResponse):
             self.handler = handler
         if memory_size is not None:
             self.memory_size = memory_size
+        if gpu_memory is not None:
+            self.gpu_memory = gpu_memory
         if cpu is not None:
             self.cpu = cpu
         if code_type is not None:
@@ -515,6 +522,28 @@ class CreateFunctionResponse(SdkResponse):
         :type memory_size: int
         """
         self._memory_size = memory_size
+
+    @property
+    def gpu_memory(self):
+        """Gets the gpu_memory of this CreateFunctionResponse.
+
+        函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
+
+        :return: The gpu_memory of this CreateFunctionResponse.
+        :rtype: int
+        """
+        return self._gpu_memory
+
+    @gpu_memory.setter
+    def gpu_memory(self, gpu_memory):
+        """Sets the gpu_memory of this CreateFunctionResponse.
+
+        函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
+
+        :param gpu_memory: The gpu_memory of this CreateFunctionResponse.
+        :type gpu_memory: int
+        """
+        self._gpu_memory = gpu_memory
 
     @property
     def cpu(self):

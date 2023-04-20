@@ -32,7 +32,8 @@ class ChildrenJobInfo:
         'net_type': 'str',
         'node_new_framework': 'bool',
         'status': 'str',
-        'task_type': 'str'
+        'task_type': 'str',
+        'job_action': 'JobActionResp'
     }
 
     attribute_map = {
@@ -48,10 +49,11 @@ class ChildrenJobInfo:
         'net_type': 'net_type',
         'node_new_framework': 'node_newFramework',
         'status': 'status',
-        'task_type': 'task_type'
+        'task_type': 'task_type',
+        'job_action': 'job_action'
     }
 
-    def __init__(self, billing_tag=None, create_time=None, db_use_type=None, description=None, engine_type=None, error_msg=None, id=None, job_direction=None, name=None, net_type=None, node_new_framework=None, status=None, task_type=None):
+    def __init__(self, billing_tag=None, create_time=None, db_use_type=None, description=None, engine_type=None, error_msg=None, id=None, job_direction=None, name=None, net_type=None, node_new_framework=None, status=None, task_type=None, job_action=None):
         """ChildrenJobInfo
 
         The model defined in huaweicloud sdk
@@ -82,6 +84,8 @@ class ChildrenJobInfo:
         :type status: str
         :param task_type: 迁移模式
         :type task_type: str
+        :param job_action: 
+        :type job_action: :class:`huaweicloudsdkdrs.v3.JobActionResp`
         """
         
         
@@ -99,6 +103,7 @@ class ChildrenJobInfo:
         self._node_new_framework = None
         self._status = None
         self._task_type = None
+        self._job_action = None
         self.discriminator = None
 
         self.billing_tag = billing_tag
@@ -114,6 +119,8 @@ class ChildrenJobInfo:
         self.node_new_framework = node_new_framework
         self.status = status
         self.task_type = task_type
+        if job_action is not None:
+            self.job_action = job_action
 
     @property
     def billing_tag(self):
@@ -400,6 +407,24 @@ class ChildrenJobInfo:
         :type task_type: str
         """
         self._task_type = task_type
+
+    @property
+    def job_action(self):
+        """Gets the job_action of this ChildrenJobInfo.
+
+        :return: The job_action of this ChildrenJobInfo.
+        :rtype: :class:`huaweicloudsdkdrs.v3.JobActionResp`
+        """
+        return self._job_action
+
+    @job_action.setter
+    def job_action(self, job_action):
+        """Sets the job_action of this ChildrenJobInfo.
+
+        :param job_action: The job_action of this ChildrenJobInfo.
+        :type job_action: :class:`huaweicloudsdkdrs.v3.JobActionResp`
+        """
+        self._job_action = job_action
 
     def to_dict(self):
         """Returns the model properties as a dict"""

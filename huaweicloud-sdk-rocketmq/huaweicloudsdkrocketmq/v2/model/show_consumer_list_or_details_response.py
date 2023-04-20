@@ -20,35 +20,49 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'topics': 'list[str]'
+        'topics': 'list[str]',
+        'total': 'float',
+        'brokers': 'list[Brokers]'
     }
 
     attribute_map = {
-        'topics': 'topics'
+        'topics': 'topics',
+        'total': 'total',
+        'brokers': 'brokers'
     }
 
-    def __init__(self, topics=None):
+    def __init__(self, topics=None, total=None, brokers=None):
         """ShowConsumerListOrDetailsResponse
 
         The model defined in huaweicloud sdk
 
-        :param topics: Topic列表。
+        :param topics: Topic列表（当查询topic消费“列表”时才显示此参数）。
         :type topics: list[str]
+        :param total: Topic总数（当查询topic消费“列表”时才显示此参数）。
+        :type total: float
+        :param brokers: Topic关联代理（当查询topic消费“详情”才显示此参数）。
+        :type brokers: list[:class:`huaweicloudsdkrocketmq.v2.Brokers`]
         """
         
         super(ShowConsumerListOrDetailsResponse, self).__init__()
 
         self._topics = None
+        self._total = None
+        self._brokers = None
         self.discriminator = None
 
         if topics is not None:
             self.topics = topics
+        if total is not None:
+            self.total = total
+        if brokers is not None:
+            self.brokers = brokers
 
     @property
     def topics(self):
         """Gets the topics of this ShowConsumerListOrDetailsResponse.
 
-        Topic列表。
+        Topic列表（当查询topic消费“列表”时才显示此参数）。
 
         :return: The topics of this ShowConsumerListOrDetailsResponse.
         :rtype: list[str]
@@ -59,12 +73,56 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
     def topics(self, topics):
         """Sets the topics of this ShowConsumerListOrDetailsResponse.
 
-        Topic列表。
+        Topic列表（当查询topic消费“列表”时才显示此参数）。
 
         :param topics: The topics of this ShowConsumerListOrDetailsResponse.
         :type topics: list[str]
         """
         self._topics = topics
+
+    @property
+    def total(self):
+        """Gets the total of this ShowConsumerListOrDetailsResponse.
+
+        Topic总数（当查询topic消费“列表”时才显示此参数）。
+
+        :return: The total of this ShowConsumerListOrDetailsResponse.
+        :rtype: float
+        """
+        return self._total
+
+    @total.setter
+    def total(self, total):
+        """Sets the total of this ShowConsumerListOrDetailsResponse.
+
+        Topic总数（当查询topic消费“列表”时才显示此参数）。
+
+        :param total: The total of this ShowConsumerListOrDetailsResponse.
+        :type total: float
+        """
+        self._total = total
+
+    @property
+    def brokers(self):
+        """Gets the brokers of this ShowConsumerListOrDetailsResponse.
+
+        Topic关联代理（当查询topic消费“详情”才显示此参数）。
+
+        :return: The brokers of this ShowConsumerListOrDetailsResponse.
+        :rtype: list[:class:`huaweicloudsdkrocketmq.v2.Brokers`]
+        """
+        return self._brokers
+
+    @brokers.setter
+    def brokers(self, brokers):
+        """Sets the brokers of this ShowConsumerListOrDetailsResponse.
+
+        Topic关联代理（当查询topic消费“详情”才显示此参数）。
+
+        :param brokers: The brokers of this ShowConsumerListOrDetailsResponse.
+        :type brokers: list[:class:`huaweicloudsdkrocketmq.v2.Brokers`]
+        """
+        self._brokers = brokers
 
     def to_dict(self):
         """Returns the model properties as a dict"""

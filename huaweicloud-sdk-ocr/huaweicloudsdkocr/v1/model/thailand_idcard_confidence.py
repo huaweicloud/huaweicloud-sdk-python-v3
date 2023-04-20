@@ -22,6 +22,8 @@ class ThailandIdcardConfidence:
     openapi_types = {
         'id_number': 'float',
         'name_th': 'float',
+        'name_en': 'float',
+        'ref_number': 'float',
         'first_name_en': 'float',
         'last_name_en': 'float',
         'date_of_birth_th': 'float',
@@ -40,6 +42,8 @@ class ThailandIdcardConfidence:
     attribute_map = {
         'id_number': 'id_number',
         'name_th': 'name_th',
+        'name_en': 'name_en',
+        'ref_number': 'ref_number',
         'first_name_en': 'first_name_en',
         'last_name_en': 'last_name_en',
         'date_of_birth_th': 'date_of_birth_th',
@@ -55,7 +59,7 @@ class ThailandIdcardConfidence:
         'laser_number': 'laser_number'
     }
 
-    def __init__(self, id_number=None, name_th=None, first_name_en=None, last_name_en=None, date_of_birth_th=None, date_of_birth_en=None, religion_th=None, address_th=None, date_of_issue_th=None, date_of_issue_en=None, date_of_expiry_th=None, date_of_expiry_en=None, serial_number=None, card_number=None, laser_number=None):
+    def __init__(self, id_number=None, name_th=None, name_en=None, ref_number=None, first_name_en=None, last_name_en=None, date_of_birth_th=None, date_of_birth_en=None, religion_th=None, address_th=None, date_of_issue_th=None, date_of_issue_en=None, date_of_expiry_th=None, date_of_expiry_en=None, serial_number=None, card_number=None, laser_number=None):
         """ThailandIdcardConfidence
 
         The model defined in huaweicloud sdk
@@ -64,6 +68,10 @@ class ThailandIdcardConfidence:
         :type id_number: float
         :param name_th: 泰文名字置信度。 
         :type name_th: float
+        :param name_en: 英文名置信度。 
+        :type name_en: float
+        :param ref_number: 参考编码置信度。 
+        :type ref_number: float
         :param first_name_en: 英文名字置信度。 
         :type first_name_en: float
         :param last_name_en: 英文姓氏置信度。 
@@ -96,6 +104,8 @@ class ThailandIdcardConfidence:
 
         self._id_number = None
         self._name_th = None
+        self._name_en = None
+        self._ref_number = None
         self._first_name_en = None
         self._last_name_en = None
         self._date_of_birth_th = None
@@ -115,6 +125,10 @@ class ThailandIdcardConfidence:
             self.id_number = id_number
         if name_th is not None:
             self.name_th = name_th
+        if name_en is not None:
+            self.name_en = name_en
+        if ref_number is not None:
+            self.ref_number = ref_number
         if first_name_en is not None:
             self.first_name_en = first_name_en
         if last_name_en is not None:
@@ -185,6 +199,50 @@ class ThailandIdcardConfidence:
         :type name_th: float
         """
         self._name_th = name_th
+
+    @property
+    def name_en(self):
+        """Gets the name_en of this ThailandIdcardConfidence.
+
+        英文名置信度。 
+
+        :return: The name_en of this ThailandIdcardConfidence.
+        :rtype: float
+        """
+        return self._name_en
+
+    @name_en.setter
+    def name_en(self, name_en):
+        """Sets the name_en of this ThailandIdcardConfidence.
+
+        英文名置信度。 
+
+        :param name_en: The name_en of this ThailandIdcardConfidence.
+        :type name_en: float
+        """
+        self._name_en = name_en
+
+    @property
+    def ref_number(self):
+        """Gets the ref_number of this ThailandIdcardConfidence.
+
+        参考编码置信度。 
+
+        :return: The ref_number of this ThailandIdcardConfidence.
+        :rtype: float
+        """
+        return self._ref_number
+
+    @ref_number.setter
+    def ref_number(self, ref_number):
+        """Sets the ref_number of this ThailandIdcardConfidence.
+
+        参考编码置信度。 
+
+        :param ref_number: The ref_number of this ThailandIdcardConfidence.
+        :type ref_number: float
+        """
+        self._ref_number = ref_number
 
     @property
     def first_name_en(self):

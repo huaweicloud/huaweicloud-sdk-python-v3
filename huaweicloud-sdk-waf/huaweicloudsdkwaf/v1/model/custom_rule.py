@@ -74,7 +74,7 @@ class CustomRule:
         :type action_mode: bool
         :param priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
         :type priority: int
-        :param timestamp: 创建精准防护规则的
+        :param timestamp: 创建精准防护规则的时间戳
         :type timestamp: int
         :param time: 精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
         :type time: bool
@@ -311,7 +311,7 @@ class CustomRule:
     def timestamp(self):
         """Gets the timestamp of this CustomRule.
 
-        创建精准防护规则的
+        创建精准防护规则的时间戳
 
         :return: The timestamp of this CustomRule.
         :rtype: int
@@ -322,7 +322,7 @@ class CustomRule:
     def timestamp(self, timestamp):
         """Sets the timestamp of this CustomRule.
 
-        创建精准防护规则的
+        创建精准防护规则的时间戳
 
         :param timestamp: The timestamp of this CustomRule.
         :type timestamp: int

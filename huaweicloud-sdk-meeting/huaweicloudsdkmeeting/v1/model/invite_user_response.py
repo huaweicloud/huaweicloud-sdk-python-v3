@@ -20,20 +20,51 @@ class InviteUserResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'user_exist': 'bool'
     }
 
     attribute_map = {
+        'user_exist': 'userExist'
     }
 
-    def __init__(self):
+    def __init__(self, user_exist=None):
         """InviteUserResponse
 
         The model defined in huaweicloud sdk
 
+        :param user_exist: 用户是否存在
+        :type user_exist: bool
         """
         
         super(InviteUserResponse, self).__init__()
+
+        self._user_exist = None
         self.discriminator = None
+
+        if user_exist is not None:
+            self.user_exist = user_exist
+
+    @property
+    def user_exist(self):
+        """Gets the user_exist of this InviteUserResponse.
+
+        用户是否存在
+
+        :return: The user_exist of this InviteUserResponse.
+        :rtype: bool
+        """
+        return self._user_exist
+
+    @user_exist.setter
+    def user_exist(self, user_exist):
+        """Sets the user_exist of this InviteUserResponse.
+
+        用户是否存在
+
+        :param user_exist: The user_exist of this InviteUserResponse.
+        :type user_exist: bool
+        """
+        self._user_exist = user_exist
 
     def to_dict(self):
         """Returns the model properties as a dict"""

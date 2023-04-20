@@ -41,6 +41,7 @@ class CreateWebinarResponse(SdkResponse):
         'guest_passwd': 'str',
         'audience_join_uri': 'str',
         'audience_passwd': 'str',
+        'enable_recording': 'YesNoEnum',
         'attendees': 'list[str]'
     }
 
@@ -66,10 +67,11 @@ class CreateWebinarResponse(SdkResponse):
         'guest_passwd': 'guestPasswd',
         'audience_join_uri': 'audienceJoinUri',
         'audience_passwd': 'audiencePasswd',
+        'enable_recording': 'enableRecording',
         'attendees': 'attendees'
     }
 
-    def __init__(self, conference_id=None, corp_id=None, subject=None, description=None, start_time=None, duration=None, time_zone_id=None, state=None, scheduser_id=None, dept_name=None, scheduser_name=None, vmr_pkg_name=None, call_restriction=None, scope=None, audience_scope=None, chair_join_uri=None, chair_passwd=None, guest_join_uri=None, guest_passwd=None, audience_join_uri=None, audience_passwd=None, attendees=None):
+    def __init__(self, conference_id=None, corp_id=None, subject=None, description=None, start_time=None, duration=None, time_zone_id=None, state=None, scheduser_id=None, dept_name=None, scheduser_name=None, vmr_pkg_name=None, call_restriction=None, scope=None, audience_scope=None, chair_join_uri=None, chair_passwd=None, guest_join_uri=None, guest_passwd=None, audience_join_uri=None, audience_passwd=None, enable_recording=None, attendees=None):
         """CreateWebinarResponse
 
         The model defined in huaweicloud sdk
@@ -116,6 +118,8 @@ class CreateWebinarResponse(SdkResponse):
         :type audience_join_uri: str
         :param audience_passwd: 观众入会密码。
         :type audience_passwd: str
+        :param enable_recording: 
+        :type enable_recording: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
         :param attendees: 与会嘉宾名称列表。
         :type attendees: list[str]
         """
@@ -143,6 +147,7 @@ class CreateWebinarResponse(SdkResponse):
         self._guest_passwd = None
         self._audience_join_uri = None
         self._audience_passwd = None
+        self._enable_recording = None
         self._attendees = None
         self.discriminator = None
 
@@ -188,6 +193,8 @@ class CreateWebinarResponse(SdkResponse):
             self.audience_join_uri = audience_join_uri
         if audience_passwd is not None:
             self.audience_passwd = audience_passwd
+        if enable_recording is not None:
+            self.enable_recording = enable_recording
         if attendees is not None:
             self.attendees = attendees
 
@@ -648,6 +655,24 @@ class CreateWebinarResponse(SdkResponse):
         :type audience_passwd: str
         """
         self._audience_passwd = audience_passwd
+
+    @property
+    def enable_recording(self):
+        """Gets the enable_recording of this CreateWebinarResponse.
+
+        :return: The enable_recording of this CreateWebinarResponse.
+        :rtype: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
+        """
+        return self._enable_recording
+
+    @enable_recording.setter
+    def enable_recording(self, enable_recording):
+        """Sets the enable_recording of this CreateWebinarResponse.
+
+        :param enable_recording: The enable_recording of this CreateWebinarResponse.
+        :type enable_recording: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
+        """
+        self._enable_recording = enable_recording
 
     @property
     def attendees(self):

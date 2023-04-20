@@ -25,6 +25,7 @@ class UpdateFunctionConfigRequestBody:
         'timeout': 'int',
         'handler': 'str',
         'memory_size': 'int',
+        'gpu_memory': 'int',
         'user_data': 'str',
         'encrypted_user_data': 'str',
         'xrole': 'str',
@@ -37,11 +38,16 @@ class UpdateFunctionConfigRequestBody:
         'extend_config': 'str',
         'initializer_handler': 'str',
         'initializer_timeout': 'int',
+        'ephemeral_storage': 'int',
         'enterprise_project_id': 'str',
+        'log_config': 'FuncLogConfig',
+        'network_controller': 'NetworkControlConfig',
         'is_stateful_function': 'bool',
         'enable_dynamic_memory': 'bool',
         'enable_auth_in_header': 'bool',
-        'domain_names': 'str'
+        'domain_names': 'str',
+        'restore_hook_handler': 'str',
+        'restore_hook_timeout': 'int'
     }
 
     attribute_map = {
@@ -50,6 +56,7 @@ class UpdateFunctionConfigRequestBody:
         'timeout': 'timeout',
         'handler': 'handler',
         'memory_size': 'memory_size',
+        'gpu_memory': 'gpu_memory',
         'user_data': 'user_data',
         'encrypted_user_data': 'encrypted_user_data',
         'xrole': 'xrole',
@@ -62,14 +69,19 @@ class UpdateFunctionConfigRequestBody:
         'extend_config': 'extend_config',
         'initializer_handler': 'initializer_handler',
         'initializer_timeout': 'initializer_timeout',
+        'ephemeral_storage': 'ephemeral_storage',
         'enterprise_project_id': 'enterprise_project_id',
+        'log_config': 'log_config',
+        'network_controller': 'network_controller',
         'is_stateful_function': 'is_stateful_function',
         'enable_dynamic_memory': 'enable_dynamic_memory',
         'enable_auth_in_header': 'enable_auth_in_header',
-        'domain_names': 'domain_names'
+        'domain_names': 'domain_names',
+        'restore_hook_handler': 'restore_hook_handler',
+        'restore_hook_timeout': 'restore_hook_timeout'
     }
 
-    def __init__(self, func_name=None, runtime=None, timeout=None, handler=None, memory_size=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_vpc=None, mount_config=None, strategy_config=None, custom_image=None, extend_config=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, is_stateful_function=None, enable_dynamic_memory=None, enable_auth_in_header=None, domain_names=None):
+    def __init__(self, func_name=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_vpc=None, mount_config=None, strategy_config=None, custom_image=None, extend_config=None, initializer_handler=None, initializer_timeout=None, ephemeral_storage=None, enterprise_project_id=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None, enable_auth_in_header=None, domain_names=None, restore_hook_handler=None, restore_hook_timeout=None):
         """UpdateFunctionConfigRequestBody
 
         The model defined in huaweicloud sdk
@@ -84,6 +96,8 @@ class UpdateFunctionConfigRequestBody:
         :type handler: str
         :param memory_size: 函数消耗的内存。 单位M。 取值范围为：128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096。 最小值为128，最大值为4096。
         :type memory_size: int
+        :param gpu_memory: 函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
+        :type gpu_memory: int
         :param user_data: 用户自定义的name/value信息。 在函数中使用的参数。 举例：如函数要访问某个主机，可以设置自定义参数：Host&#x3D;{host_ip}，最多定义20个，总长度不超过4KB。
         :type user_data: str
         :param encrypted_user_data: 用户自定义的name/value信息，用于需要加密的配置。
@@ -108,8 +122,14 @@ class UpdateFunctionConfigRequestBody:
         :type initializer_handler: str
         :param initializer_timeout: 初始化超时时间，超时函数将被强行停止，范围1～300秒。
         :type initializer_timeout: int
+        :param ephemeral_storage: 临时存储大小, 默认512M, 支持配置10G。
+        :type ephemeral_storage: int
         :param enterprise_project_id: 企业项目ID，在企业用户创建函数时必填。
         :type enterprise_project_id: str
+        :param log_config: 
+        :type log_config: :class:`huaweicloudsdkfunctiongraph.v2.FuncLogConfig`
+        :param network_controller: 
+        :type network_controller: :class:`huaweicloudsdkfunctiongraph.v2.NetworkControlConfig`
         :param is_stateful_function: 是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
         :type is_stateful_function: bool
         :param enable_dynamic_memory: 是否启动动态内存配置
@@ -118,6 +138,10 @@ class UpdateFunctionConfigRequestBody:
         :type enable_auth_in_header: bool
         :param domain_names: 内网域名配置。
         :type domain_names: str
+        :param restore_hook_handler: 函数快照式冷启动Restore Hook入口，仅支持Java，规则：xx.xx，必须包含“. ”。如：com.huawei.demo.Test.restoreHook
+        :type restore_hook_handler: str
+        :param restore_hook_timeout: 快照冷启动Restore Hook的超时时间，超时函数将被强行停止，范围1～300秒。
+        :type restore_hook_timeout: int
         """
         
         
@@ -127,6 +151,7 @@ class UpdateFunctionConfigRequestBody:
         self._timeout = None
         self._handler = None
         self._memory_size = None
+        self._gpu_memory = None
         self._user_data = None
         self._encrypted_user_data = None
         self._xrole = None
@@ -139,11 +164,16 @@ class UpdateFunctionConfigRequestBody:
         self._extend_config = None
         self._initializer_handler = None
         self._initializer_timeout = None
+        self._ephemeral_storage = None
         self._enterprise_project_id = None
+        self._log_config = None
+        self._network_controller = None
         self._is_stateful_function = None
         self._enable_dynamic_memory = None
         self._enable_auth_in_header = None
         self._domain_names = None
+        self._restore_hook_handler = None
+        self._restore_hook_timeout = None
         self.discriminator = None
 
         self.func_name = func_name
@@ -151,6 +181,8 @@ class UpdateFunctionConfigRequestBody:
         self.timeout = timeout
         self.handler = handler
         self.memory_size = memory_size
+        if gpu_memory is not None:
+            self.gpu_memory = gpu_memory
         if user_data is not None:
             self.user_data = user_data
         if encrypted_user_data is not None:
@@ -175,8 +207,14 @@ class UpdateFunctionConfigRequestBody:
             self.initializer_handler = initializer_handler
         if initializer_timeout is not None:
             self.initializer_timeout = initializer_timeout
+        if ephemeral_storage is not None:
+            self.ephemeral_storage = ephemeral_storage
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if log_config is not None:
+            self.log_config = log_config
+        if network_controller is not None:
+            self.network_controller = network_controller
         if is_stateful_function is not None:
             self.is_stateful_function = is_stateful_function
         if enable_dynamic_memory is not None:
@@ -185,6 +223,10 @@ class UpdateFunctionConfigRequestBody:
             self.enable_auth_in_header = enable_auth_in_header
         if domain_names is not None:
             self.domain_names = domain_names
+        if restore_hook_handler is not None:
+            self.restore_hook_handler = restore_hook_handler
+        if restore_hook_timeout is not None:
+            self.restore_hook_timeout = restore_hook_timeout
 
     @property
     def func_name(self):
@@ -295,6 +337,28 @@ class UpdateFunctionConfigRequestBody:
         :type memory_size: int
         """
         self._memory_size = memory_size
+
+    @property
+    def gpu_memory(self):
+        """Gets the gpu_memory of this UpdateFunctionConfigRequestBody.
+
+        函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
+
+        :return: The gpu_memory of this UpdateFunctionConfigRequestBody.
+        :rtype: int
+        """
+        return self._gpu_memory
+
+    @gpu_memory.setter
+    def gpu_memory(self, gpu_memory):
+        """Sets the gpu_memory of this UpdateFunctionConfigRequestBody.
+
+        函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
+
+        :param gpu_memory: The gpu_memory of this UpdateFunctionConfigRequestBody.
+        :type gpu_memory: int
+        """
+        self._gpu_memory = gpu_memory
 
     @property
     def user_data(self):
@@ -545,6 +609,28 @@ class UpdateFunctionConfigRequestBody:
         self._initializer_timeout = initializer_timeout
 
     @property
+    def ephemeral_storage(self):
+        """Gets the ephemeral_storage of this UpdateFunctionConfigRequestBody.
+
+        临时存储大小, 默认512M, 支持配置10G。
+
+        :return: The ephemeral_storage of this UpdateFunctionConfigRequestBody.
+        :rtype: int
+        """
+        return self._ephemeral_storage
+
+    @ephemeral_storage.setter
+    def ephemeral_storage(self, ephemeral_storage):
+        """Sets the ephemeral_storage of this UpdateFunctionConfigRequestBody.
+
+        临时存储大小, 默认512M, 支持配置10G。
+
+        :param ephemeral_storage: The ephemeral_storage of this UpdateFunctionConfigRequestBody.
+        :type ephemeral_storage: int
+        """
+        self._ephemeral_storage = ephemeral_storage
+
+    @property
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this UpdateFunctionConfigRequestBody.
 
@@ -565,6 +651,42 @@ class UpdateFunctionConfigRequestBody:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def log_config(self):
+        """Gets the log_config of this UpdateFunctionConfigRequestBody.
+
+        :return: The log_config of this UpdateFunctionConfigRequestBody.
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncLogConfig`
+        """
+        return self._log_config
+
+    @log_config.setter
+    def log_config(self, log_config):
+        """Sets the log_config of this UpdateFunctionConfigRequestBody.
+
+        :param log_config: The log_config of this UpdateFunctionConfigRequestBody.
+        :type log_config: :class:`huaweicloudsdkfunctiongraph.v2.FuncLogConfig`
+        """
+        self._log_config = log_config
+
+    @property
+    def network_controller(self):
+        """Gets the network_controller of this UpdateFunctionConfigRequestBody.
+
+        :return: The network_controller of this UpdateFunctionConfigRequestBody.
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.NetworkControlConfig`
+        """
+        return self._network_controller
+
+    @network_controller.setter
+    def network_controller(self, network_controller):
+        """Sets the network_controller of this UpdateFunctionConfigRequestBody.
+
+        :param network_controller: The network_controller of this UpdateFunctionConfigRequestBody.
+        :type network_controller: :class:`huaweicloudsdkfunctiongraph.v2.NetworkControlConfig`
+        """
+        self._network_controller = network_controller
 
     @property
     def is_stateful_function(self):
@@ -653,6 +775,50 @@ class UpdateFunctionConfigRequestBody:
         :type domain_names: str
         """
         self._domain_names = domain_names
+
+    @property
+    def restore_hook_handler(self):
+        """Gets the restore_hook_handler of this UpdateFunctionConfigRequestBody.
+
+        函数快照式冷启动Restore Hook入口，仅支持Java，规则：xx.xx，必须包含“. ”。如：com.huawei.demo.Test.restoreHook
+
+        :return: The restore_hook_handler of this UpdateFunctionConfigRequestBody.
+        :rtype: str
+        """
+        return self._restore_hook_handler
+
+    @restore_hook_handler.setter
+    def restore_hook_handler(self, restore_hook_handler):
+        """Sets the restore_hook_handler of this UpdateFunctionConfigRequestBody.
+
+        函数快照式冷启动Restore Hook入口，仅支持Java，规则：xx.xx，必须包含“. ”。如：com.huawei.demo.Test.restoreHook
+
+        :param restore_hook_handler: The restore_hook_handler of this UpdateFunctionConfigRequestBody.
+        :type restore_hook_handler: str
+        """
+        self._restore_hook_handler = restore_hook_handler
+
+    @property
+    def restore_hook_timeout(self):
+        """Gets the restore_hook_timeout of this UpdateFunctionConfigRequestBody.
+
+        快照冷启动Restore Hook的超时时间，超时函数将被强行停止，范围1～300秒。
+
+        :return: The restore_hook_timeout of this UpdateFunctionConfigRequestBody.
+        :rtype: int
+        """
+        return self._restore_hook_timeout
+
+    @restore_hook_timeout.setter
+    def restore_hook_timeout(self, restore_hook_timeout):
+        """Sets the restore_hook_timeout of this UpdateFunctionConfigRequestBody.
+
+        快照冷启动Restore Hook的超时时间，超时函数将被强行停止，范围1～300秒。
+
+        :param restore_hook_timeout: The restore_hook_timeout of this UpdateFunctionConfigRequestBody.
+        :type restore_hook_timeout: int
+        """
+        self._restore_hook_timeout = restore_hook_timeout
 
     def to_dict(self):
         """Returns the model properties as a dict"""

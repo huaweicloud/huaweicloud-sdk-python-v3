@@ -1425,6 +1425,73 @@ class MeetingAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def batch_show_user_details_async(self, request):
+        """批量查询用户详情
+
+        批量查询用户详情，支持指定第三方账号查询详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchShowUserDetails
+        :type request: :class:`huaweicloudsdkmeeting.v1.BatchShowUserDetailsRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.BatchShowUserDetailsResponse`
+        """
+        return self.batch_show_user_details_with_http_info(request)
+
+    def batch_show_user_details_with_http_info(self, request):
+        all_params = ['x_request_id', 'accept_language', 'id_type', 'get_user_dt_os']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id_type' in local_var_params:
+            query_params.append(('idType', local_var_params['id_type']))
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/abs/users/list',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchShowUserDetailsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def batch_update_devices_status_async(self, request):
         """批量修改终端状态
 

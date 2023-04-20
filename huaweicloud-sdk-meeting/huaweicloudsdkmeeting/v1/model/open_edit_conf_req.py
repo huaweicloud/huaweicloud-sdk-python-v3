@@ -32,7 +32,8 @@ class OpenEditConfReq:
         'audience_passwd': 'str',
         'call_restriction': 'bool',
         'scope': 'int',
-        'audience_scope': 'int'
+        'audience_scope': 'int',
+        'enable_recording': 'YesNoEnum'
     }
 
     attribute_map = {
@@ -48,10 +49,11 @@ class OpenEditConfReq:
         'audience_passwd': 'audiencePasswd',
         'call_restriction': 'callRestriction',
         'scope': 'scope',
-        'audience_scope': 'audienceScope'
+        'audience_scope': 'audienceScope',
+        'enable_recording': 'enableRecording'
     }
 
-    def __init__(self, conference_id=None, subject=None, description=None, start_time=None, duration=None, time_zone_id=None, attendees=None, notify_setting=None, guest_passwd=None, audience_passwd=None, call_restriction=None, scope=None, audience_scope=None):
+    def __init__(self, conference_id=None, subject=None, description=None, start_time=None, duration=None, time_zone_id=None, attendees=None, notify_setting=None, guest_passwd=None, audience_passwd=None, call_restriction=None, scope=None, audience_scope=None, enable_recording=None):
         """OpenEditConfReq
 
         The model defined in huaweicloud sdk
@@ -82,6 +84,8 @@ class OpenEditConfReq:
         :type scope: int
         :param audience_scope: 观众入会范围。 * 0: 所有用户 * 2: 企业内用户和被邀请用户 
         :type audience_scope: int
+        :param enable_recording: 
+        :type enable_recording: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
         """
         
         
@@ -99,6 +103,7 @@ class OpenEditConfReq:
         self._call_restriction = None
         self._scope = None
         self._audience_scope = None
+        self._enable_recording = None
         self.discriminator = None
 
         self.conference_id = conference_id
@@ -122,6 +127,8 @@ class OpenEditConfReq:
             self.scope = scope
         if audience_scope is not None:
             self.audience_scope = audience_scope
+        if enable_recording is not None:
+            self.enable_recording = enable_recording
 
     @property
     def conference_id(self):
@@ -404,6 +411,24 @@ class OpenEditConfReq:
         :type audience_scope: int
         """
         self._audience_scope = audience_scope
+
+    @property
+    def enable_recording(self):
+        """Gets the enable_recording of this OpenEditConfReq.
+
+        :return: The enable_recording of this OpenEditConfReq.
+        :rtype: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
+        """
+        return self._enable_recording
+
+    @enable_recording.setter
+    def enable_recording(self, enable_recording):
+        """Sets the enable_recording of this OpenEditConfReq.
+
+        :param enable_recording: The enable_recording of this OpenEditConfReq.
+        :type enable_recording: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
+        """
+        self._enable_recording = enable_recording
 
     def to_dict(self):
         """Returns the model properties as a dict"""

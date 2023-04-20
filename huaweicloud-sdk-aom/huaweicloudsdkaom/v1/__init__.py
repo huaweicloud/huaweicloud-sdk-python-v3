@@ -33,8 +33,8 @@ from huaweicloudsdkaom.v1.model.metadata import Metadata
 from huaweicloudsdkaom.v1.model.node import Node
 from huaweicloudsdkaom.v1.model.parameter import Parameter
 from huaweicloudsdkaom.v1.model.rate_control import RateControl
+from huaweicloudsdkaom.v1.model.reference_info import ReferenceInfo
 from huaweicloudsdkaom.v1.model.script import Script
-from huaweicloudsdkaom.v1.model.script_reference_detail import ScriptReferenceDetail
 from huaweicloudsdkaom.v1.model.script_version import ScriptVersion
 from huaweicloudsdkaom.v1.model.search_jobs_request_body import SearchJobsRequestBody
 from huaweicloudsdkaom.v1.model.search_scripts_request_body import SearchScriptsRequestBody

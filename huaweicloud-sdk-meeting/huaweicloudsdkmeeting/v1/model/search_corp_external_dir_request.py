@@ -50,7 +50,7 @@ class SearchCorpExternalDirRequest:
         :type offset: int
         :param limit: 查询数量。 默认值：10。 
         :type limit: int
-        :param search_key: 搜索条件。支持帐号、SIP号码、名称、手机、邮箱模糊搜索。
+        :param search_key: 搜索条件。支持名称、手机、邮箱模糊搜索。
         :type search_key: str
         :param search_scope: 搜索范围。默认值为ALL。 * PERSONAL - 查询个人外部联系人 * CORP - 查询企业外部联系人 * ALL - 查询所有外部联系人 
         :type search_scope: str
@@ -171,7 +171,7 @@ class SearchCorpExternalDirRequest:
     def search_key(self):
         """Gets the search_key of this SearchCorpExternalDirRequest.
 
-        搜索条件。支持帐号、SIP号码、名称、手机、邮箱模糊搜索。
+        搜索条件。支持名称、手机、邮箱模糊搜索。
 
         :return: The search_key of this SearchCorpExternalDirRequest.
         :rtype: str
@@ -182,7 +182,7 @@ class SearchCorpExternalDirRequest:
     def search_key(self, search_key):
         """Sets the search_key of this SearchCorpExternalDirRequest.
 
-        搜索条件。支持帐号、SIP号码、名称、手机、邮箱模糊搜索。
+        搜索条件。支持名称、手机、邮箱模糊搜索。
 
         :param search_key: The search_key of this SearchCorpExternalDirRequest.
         :type search_key: str

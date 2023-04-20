@@ -8,6 +8,7 @@ from huaweicloudsdkvpc.v2.vpc_async_client import VpcAsyncClient
 # import models into sdk package
 from huaweicloudsdkvpc.v2.model.accept_vpc_peering_request import AcceptVpcPeeringRequest
 from huaweicloudsdkvpc.v2.model.accept_vpc_peering_response import AcceptVpcPeeringResponse
+from huaweicloudsdkvpc.v2.model.add_route_table_route import AddRouteTableRoute
 from huaweicloudsdkvpc.v2.model.allowed_address_pair import AllowedAddressPair
 from huaweicloudsdkvpc.v2.model.asscoiate_req import AsscoiateReq
 from huaweicloudsdkvpc.v2.model.associate_route_table_and_subnet_req import AssociateRouteTableAndSubnetReq
@@ -72,6 +73,7 @@ from huaweicloudsdkvpc.v2.model.create_vpc_route_option import CreateVpcRouteOpt
 from huaweicloudsdkvpc.v2.model.create_vpc_route_request import CreateVpcRouteRequest
 from huaweicloudsdkvpc.v2.model.create_vpc_route_request_body import CreateVpcRouteRequestBody
 from huaweicloudsdkvpc.v2.model.create_vpc_route_response import CreateVpcRouteResponse
+from huaweicloudsdkvpc.v2.model.del_route_table_route import DelRouteTableRoute
 from huaweicloudsdkvpc.v2.model.delete_flow_log_request import DeleteFlowLogRequest
 from huaweicloudsdkvpc.v2.model.delete_flow_log_response import DeleteFlowLogResponse
 from huaweicloudsdkvpc.v2.model.delete_port_request import DeletePortRequest
@@ -136,6 +138,7 @@ from huaweicloudsdkvpc.v2.model.list_vpcs_by_tags_response import ListVpcsByTags
 from huaweicloudsdkvpc.v2.model.list_vpcs_request import ListVpcsRequest
 from huaweicloudsdkvpc.v2.model.list_vpcs_response import ListVpcsResponse
 from huaweicloudsdkvpc.v2.model.match import Match
+from huaweicloudsdkvpc.v2.model.mod_route_table_route import ModRouteTableRoute
 from huaweicloudsdkvpc.v2.model.network_ip_availability import NetworkIpAvailability
 from huaweicloudsdkvpc.v2.model.neutron_add_firewall_rule_request import NeutronAddFirewallRuleRequest
 from huaweicloudsdkvpc.v2.model.neutron_add_firewall_rule_response import NeutronAddFirewallRuleResponse
@@ -226,6 +229,7 @@ from huaweicloudsdkvpc.v2.model.route import Route
 from huaweicloudsdkvpc.v2.model.route_table_list_resp import RouteTableListResp
 from huaweicloudsdkvpc.v2.model.route_table_resp import RouteTableResp
 from huaweicloudsdkvpc.v2.model.route_table_route import RouteTableRoute
+from huaweicloudsdkvpc.v2.model.route_table_route_action import RouteTableRouteAction
 from huaweicloudsdkvpc.v2.model.routetable_associate_reqbody import RoutetableAssociateReqbody
 from huaweicloudsdkvpc.v2.model.security_group import SecurityGroup
 from huaweicloudsdkvpc.v2.model.security_group_rule import SecurityGroupRule
