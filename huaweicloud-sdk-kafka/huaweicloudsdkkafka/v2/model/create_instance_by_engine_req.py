@@ -40,6 +40,8 @@ class CreateInstanceByEngineReq:
         'enable_publicip': 'bool',
         'publicip_id': 'str',
         'ssl_enable': 'bool',
+        'kafka_security_protocol': 'str',
+        'sasl_enabled_mechanisms': 'list[str]',
         'retention_policy': 'str',
         'connector_enable': 'bool',
         'enable_auto_topic': 'bool',
@@ -72,6 +74,8 @@ class CreateInstanceByEngineReq:
         'enable_publicip': 'enable_publicip',
         'publicip_id': 'publicip_id',
         'ssl_enable': 'ssl_enable',
+        'kafka_security_protocol': 'kafka_security_protocol',
+        'sasl_enabled_mechanisms': 'sasl_enabled_mechanisms',
         'retention_policy': 'retention_policy',
         'connector_enable': 'connector_enable',
         'enable_auto_topic': 'enable_auto_topic',
@@ -83,7 +87,7 @@ class CreateInstanceByEngineReq:
         'bss_param': 'bss_param'
     }
 
-    def __init__(self, name=None, description=None, engine=None, engine_version=None, broker_num=None, storage_space=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, kafka_manager_user=None, kafka_manager_password=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_id=None, ssl_enable=None, retention_policy=None, connector_enable=None, enable_auto_topic=None, storage_spec_code=None, enterprise_project_id=None, tags=None, arch_type=None, vpc_client_plain=None, bss_param=None):
+    def __init__(self, name=None, description=None, engine=None, engine_version=None, broker_num=None, storage_space=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, kafka_manager_user=None, kafka_manager_password=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_id=None, ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, retention_policy=None, connector_enable=None, enable_auto_topic=None, storage_spec_code=None, enterprise_project_id=None, tags=None, arch_type=None, vpc_client_plain=None, bss_param=None):
         """CreateInstanceByEngineReq
 
         The model defined in huaweicloud sdk
@@ -128,6 +132,10 @@ class CreateInstanceByEngineReq:
         :type publicip_id: str
         :param ssl_enable: 是否打开SSL加密访问。  实例创建后将不支持动态开启和关闭。  - true：打开SSL加密访问。 - false：不打开SSL加密访问。
         :type ssl_enable: bool
+        :param kafka_security_protocol: 开启SASL后使用的安全协议，如果开启了SASL认证功能（即ssl_enable&#x3D;true），该字段为必选。  若该字段值为空，默认开启SASL_SSL认证机制。  实例创建后将不支持动态开启和关闭。  - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，仅支持SCRAM-SHA-512机制。  
+        :type kafka_security_protocol: str
+        :param sasl_enabled_mechanisms: 开启SASL后使用的认证机制，如果开启了SASL认证功能（即ssl_enable&#x3D;true），该字段为必选。  若该字段值为空，默认开启PLAIN认证机制。  选择其一进行SASL认证即可,支持同时开启两种认证机制。 取值如下： - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
+        :type sasl_enabled_mechanisms: list[str]
         :param retention_policy: 磁盘的容量到达容量阈值后，对于消息的处理策略。  取值如下： - produce_reject：表示拒绝消息写入。 - time_base：表示自动删除最老消息。
         :type retention_policy: str
         :param connector_enable: 是否开启消息转储功能。  默认不开启消息转储。
@@ -170,6 +178,8 @@ class CreateInstanceByEngineReq:
         self._enable_publicip = None
         self._publicip_id = None
         self._ssl_enable = None
+        self._kafka_security_protocol = None
+        self._sasl_enabled_mechanisms = None
         self._retention_policy = None
         self._connector_enable = None
         self._enable_auto_topic = None
@@ -211,6 +221,10 @@ class CreateInstanceByEngineReq:
             self.publicip_id = publicip_id
         if ssl_enable is not None:
             self.ssl_enable = ssl_enable
+        if kafka_security_protocol is not None:
+            self.kafka_security_protocol = kafka_security_protocol
+        if sasl_enabled_mechanisms is not None:
+            self.sasl_enabled_mechanisms = sasl_enabled_mechanisms
         if retention_policy is not None:
             self.retention_policy = retention_policy
         if connector_enable is not None:
@@ -668,6 +682,50 @@ class CreateInstanceByEngineReq:
         :type ssl_enable: bool
         """
         self._ssl_enable = ssl_enable
+
+    @property
+    def kafka_security_protocol(self):
+        """Gets the kafka_security_protocol of this CreateInstanceByEngineReq.
+
+        开启SASL后使用的安全协议，如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。  若该字段值为空，默认开启SASL_SSL认证机制。  实例创建后将不支持动态开启和关闭。  - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，仅支持SCRAM-SHA-512机制。  
+
+        :return: The kafka_security_protocol of this CreateInstanceByEngineReq.
+        :rtype: str
+        """
+        return self._kafka_security_protocol
+
+    @kafka_security_protocol.setter
+    def kafka_security_protocol(self, kafka_security_protocol):
+        """Sets the kafka_security_protocol of this CreateInstanceByEngineReq.
+
+        开启SASL后使用的安全协议，如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。  若该字段值为空，默认开启SASL_SSL认证机制。  实例创建后将不支持动态开启和关闭。  - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，仅支持SCRAM-SHA-512机制。  
+
+        :param kafka_security_protocol: The kafka_security_protocol of this CreateInstanceByEngineReq.
+        :type kafka_security_protocol: str
+        """
+        self._kafka_security_protocol = kafka_security_protocol
+
+    @property
+    def sasl_enabled_mechanisms(self):
+        """Gets the sasl_enabled_mechanisms of this CreateInstanceByEngineReq.
+
+        开启SASL后使用的认证机制，如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。  若该字段值为空，默认开启PLAIN认证机制。  选择其一进行SASL认证即可,支持同时开启两种认证机制。 取值如下： - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
+
+        :return: The sasl_enabled_mechanisms of this CreateInstanceByEngineReq.
+        :rtype: list[str]
+        """
+        return self._sasl_enabled_mechanisms
+
+    @sasl_enabled_mechanisms.setter
+    def sasl_enabled_mechanisms(self, sasl_enabled_mechanisms):
+        """Sets the sasl_enabled_mechanisms of this CreateInstanceByEngineReq.
+
+        开启SASL后使用的认证机制，如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。  若该字段值为空，默认开启PLAIN认证机制。  选择其一进行SASL认证即可,支持同时开启两种认证机制。 取值如下： - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
+
+        :param sasl_enabled_mechanisms: The sasl_enabled_mechanisms of this CreateInstanceByEngineReq.
+        :type sasl_enabled_mechanisms: list[str]
+        """
+        self._sasl_enabled_mechanisms = sasl_enabled_mechanisms
 
     @property
     def retention_policy(self):

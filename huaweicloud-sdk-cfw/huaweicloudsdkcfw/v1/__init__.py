@@ -83,6 +83,7 @@ from huaweicloudsdkcfw.v1.model.http_query_cfw_flow_logs_response_dto_data impor
 from huaweicloudsdkcfw.v1.model.http_query_cfw_flow_logs_response_dto_data_records import HttpQueryCfwFlowLogsResponseDTODataRecords
 from huaweicloudsdkcfw.v1.model.id_object import IdObject
 from huaweicloudsdkcfw.v1.model.ips_protect_dto import IpsProtectDTO
+from huaweicloudsdkcfw.v1.model.ips_protect_mode_object import IpsProtectModeObject
 from huaweicloudsdkcfw.v1.model.ips_switch_dto import IpsSwitchDTO
 from huaweicloudsdkcfw.v1.model.ips_switch_response_dto import IpsSwitchResponseDTO
 from huaweicloudsdkcfw.v1.model.list_access_control_logs_request import ListAccessControlLogsRequest

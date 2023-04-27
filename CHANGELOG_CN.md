@@ -1,3 +1,302 @@
+# 3.1.38 2023-04-27
+
+### HuaweiCloud SDK MSGSMS
+
+- _新增特性_
+  - 支持消息&短信服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK AOM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListResourceUnderNode**
+    - 请求参数变更
+      - `+ marker`
+      - `- maker`
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDomainFullConfig**
+    - 响应参数变更
+      - `+ configs.ipv6_accelerate`
+      - `+ configs.origin_range_status`
+
+### HuaweiCloud SDK CFW
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListIpsProtectModeUsingPost**
+    - 响应参数变更
+      - `+ data`
+      - `- object_id`
+      - `- status`
+
+### HuaweiCloud SDK CSMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListResourceInstances**
+    - 响应参数变更
+      - `+ resources.sys_tags`
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 支持接口`ResetPassword`、`UpdateInstanceBandwidth`、`ListConfigTemplates`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DLI
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateBatchJob**
+    - 请求参数变更
+      - `+ catalog_name`
+  - **ShowJobTemplate**
+    - 响应参数变更
+      - `+ body.catalog_name`
+  - **ListJobTemplates**
+    - 响应参数变更
+      - `+ templates.body.catalog_name`
+
+### HuaweiCloud SDK eiHealth
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListIamUsers`
+    - `ListIamGroups`
+    - `ListIamGroupUsers`
+    - `ListScaleOutPolicy`
+    - `CreateScaleOutPolicy`
+    - `ShowScaleOutPolicy`
+    - `UpdateScaleOutPolicy`
+    - `DeleteScaleOutPolicy`
+    - `StartScaleOutPolicy`
+    - `StopScaleOutPolicy`
+    - `ShowScaleInPolicy`
+    - `UpdateScaleInPolicy`
+    - `InstallNextflow`
+    - `ShowNextflow`
+    - `UninstallNextflow`
+    - `CleanNextflowCache`
+    - `ListNextflowVersion`
+    - `ListNextflowJob`
+    - `CreateNextflowJob`
+    - `ShowNextflowJob`
+    - `DeleteNextflowJob`
+    - `RetryNextflowJob`
+    - `ShowNextflowJobLog`
+    - `StopNextflowJob`
+    - `ShowNextflowJobReports`
+    - `ListNextflowTask`
+    - `ShowNextflowTaskDetail`
+    - `ShowNextflowTaskLog`
+    - `ListNextflowWorkflow`
+    - `CreateNextflowWorkflow`
+    - `ShowNextflowWorkflow`
+    - `UpdateNextflowWorkflow`
+    - `DeleteNextflowWorkflow`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **PublishData**
+    - 响应参数变更
+      - `+ id`
+      - `- asset_id`
+  - **PublishImage**
+    - 响应参数变更
+      - `+ id`
+      - `- asset_id`
+  - **PublishApp**
+    - 响应参数变更
+      - `+ id`
+      - `- asset_id`
+  - **PublishWorkflow**
+    - 响应参数变更
+      - `+ id`
+      - `- asset_id`
+  - **ListImageTag**
+    - 响应参数变更
+      - `+ tags.path`
+  - **CreateApp**
+    - 请求参数变更
+      - `* body: object<AppDto> -> object<AppReq>`
+  - **UpdateApp**
+    - 请求参数变更
+      - `* body: object<AppDto> -> object<AppReq>`
+  - **ListData**
+    - 响应参数变更
+      - `- path`
+      - `- allowed_operate`
+      - `- size`
+      - `- create_time`
+      - `- name`
+      - `- download_url`
+      - `- deletable`
+      - `- type`
+      - `- content`
+      - `- datas.content`
+      - `- datas.download_url`
+      - `* datas: list<DataRsp> -> list<DataSummaryRsp>`
+  - **ListObsBucketObject**
+    - 请求参数变更
+      - `+ search_key`
+
+### HuaweiCloud SDK Image
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`RunQueryCustomTags`、`RunDeleteCustomTags`
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateInstanceByEngine**
+    - 请求参数变更
+      - `+ kafka_security_protocol`
+      - `+ sasl_enabled_mechanisms`
+  - **ShowInstance**
+    - 响应参数变更
+      - `+ kafka_security_protocol`
+      - `+ sasl_enabled_mechanisms: enum value [PLAIN,SCRAM-SHA-512]`
+  - **CreatePostPaidInstance**
+    - 请求参数变更
+      - `+ kafka_security_protocol`
+      - `+ sasl_enabled_mechanisms: enum value [PLAIN,SCRAM-SHA-512]`
+  - **ListInstances**
+    - 响应参数变更
+      - `+ kafka_security_protocol`
+      - `+ instances.kafka_security_protocol`
+      - `+ instances.sasl_enabled_mechanisms: enum value [PLAIN,SCRAM-SHA-512]`
+
+### HuaweiCloud SDK KMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListKeys**
+    - 响应参数变更
+      - `+ key_details.partition_type`
+  - **ListKeyDetail**
+    - 响应参数变更
+      - `+ key_info.partition_type`
+  - **ListRetirableGrants**
+    - 响应参数变更
+      - `+ total`
+  - **ListKmsByTags**
+    - 响应参数变更
+      - `+ resources.resource_detail.partition_type`
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListLogHistogram**
+    - 请求参数变更
+      - `+ is_iterative`
+    - 响应参数变更
+      - `+ isQueryComplete`
+  - **Createfavorite**
+    - 响应参数变更
+      - `* create_time: string -> int64`
+  - **ListLogStream**
+    - 响应参数变更
+      - `+ log_streams.is_favorite`
+  - **ListLogs**
+    - 请求参数变更
+      - `+ is_iterative`
+    - 响应参数变更
+      - `+ isQueryComplete`
+  - **UpdateStructTemplate**
+    - 请求参数变更
+      - `* rule: list<rule> -> object<rule>`
+  - **CreateStructTemplate**
+    - 请求参数变更
+      - `* rule: list<rule> -> object<rule>`
+  - **ListHistorySql**
+    - 请求参数变更
+      - `+ log_group_id`
+      - `+ log_stream_id`
+
+### HuaweiCloud SDK Organizations
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreatePolicy**
+    - 请求参数变更
+      - `+ type: enum value [tag_policy]`
+  - **EnablePolicyType**
+    - 请求参数变更
+      - `+ policy_type: enum value [tag_policy]`
+  - **DisablePolicyType**
+    - 请求参数变更
+      - `+ policy_type: enum value [tag_policy]`
+
+### HuaweiCloud SDK RocketMQ
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowConsumerListOrDetails**
+    - 响应参数变更
+      - `* total: int64 -> int32`
+
+### HuaweiCloud SDK SMS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListApiVersion`
+    - `ShowApiVersion`
+    - `ShowConfig`
+    - `UpdateNetworkCheckInfo`
+    - `ShowConfigSetting`
+    - `UploadSpecialConfigurationSetting`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.37 2023-04-20
 
 ### HuaweiCloud SDK AOM

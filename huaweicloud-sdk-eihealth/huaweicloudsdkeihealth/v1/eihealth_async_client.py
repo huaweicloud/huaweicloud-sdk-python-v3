@@ -1761,6 +1761,553 @@ class EiHealthAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_scale_out_policy_async(self, request):
+        """创建扩容策略
+
+        创建扩容策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateScaleOutPolicy
+        :type request: :class:`huaweicloudsdkeihealth.v1.CreateScaleOutPolicyRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.CreateScaleOutPolicyResponse`
+        """
+        return self.create_scale_out_policy_with_http_info(request)
+
+    def create_scale_out_policy_with_http_info(self, request):
+        all_params = ['create_scale_out_policy_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/system/autoscaler/scale-out-policies',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateScaleOutPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_scale_out_policy_async(self, request):
+        """删除扩容策略
+
+        删除扩容策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteScaleOutPolicy
+        :type request: :class:`huaweicloudsdkeihealth.v1.DeleteScaleOutPolicyRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteScaleOutPolicyResponse`
+        """
+        return self.delete_scale_out_policy_with_http_info(request)
+
+    def delete_scale_out_policy_with_http_info(self, request):
+        all_params = ['id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/system/autoscaler/scale-out-policies/{id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteScaleOutPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_scale_out_policy_async(self, request):
+        """查询扩容策略列表
+
+        查询扩容策略列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListScaleOutPolicy
+        :type request: :class:`huaweicloudsdkeihealth.v1.ListScaleOutPolicyRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ListScaleOutPolicyResponse`
+        """
+        return self.list_scale_out_policy_with_http_info(request)
+
+    def list_scale_out_policy_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/system/autoscaler/scale-out-policies',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListScaleOutPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_scale_in_policy_async(self, request):
+        """查询缩容策略
+
+        查询缩容策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowScaleInPolicy
+        :type request: :class:`huaweicloudsdkeihealth.v1.ShowScaleInPolicyRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ShowScaleInPolicyResponse`
+        """
+        return self.show_scale_in_policy_with_http_info(request)
+
+    def show_scale_in_policy_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/system/autoscaler/scale-in-policy',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowScaleInPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_scale_out_policy_async(self, request):
+        """获取扩容策略详情
+
+        获取扩容策略详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowScaleOutPolicy
+        :type request: :class:`huaweicloudsdkeihealth.v1.ShowScaleOutPolicyRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ShowScaleOutPolicyResponse`
+        """
+        return self.show_scale_out_policy_with_http_info(request)
+
+    def show_scale_out_policy_with_http_info(self, request):
+        all_params = ['id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/system/autoscaler/scale-out-policies/{id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowScaleOutPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def start_scale_out_policy_async(self, request):
+        """启动自动扩容策略
+
+        启动自动扩容策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StartScaleOutPolicy
+        :type request: :class:`huaweicloudsdkeihealth.v1.StartScaleOutPolicyRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.StartScaleOutPolicyResponse`
+        """
+        return self.start_scale_out_policy_with_http_info(request)
+
+    def start_scale_out_policy_with_http_info(self, request):
+        all_params = ['id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/system/autoscaler/scale-out-policies/{id}/start',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='StartScaleOutPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def stop_scale_out_policy_async(self, request):
+        """停用自动扩容策略
+
+        停用自动扩容策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StopScaleOutPolicy
+        :type request: :class:`huaweicloudsdkeihealth.v1.StopScaleOutPolicyRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.StopScaleOutPolicyResponse`
+        """
+        return self.stop_scale_out_policy_with_http_info(request)
+
+    def stop_scale_out_policy_with_http_info(self, request):
+        all_params = ['id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/system/autoscaler/scale-out-policies/{id}/stop',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='StopScaleOutPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_scale_in_policy_async(self, request):
+        """修改缩容策略
+
+        修改缩容策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateScaleInPolicy
+        :type request: :class:`huaweicloudsdkeihealth.v1.UpdateScaleInPolicyRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateScaleInPolicyResponse`
+        """
+        return self.update_scale_in_policy_with_http_info(request)
+
+    def update_scale_in_policy_with_http_info(self, request):
+        all_params = ['update_scale_in_policy_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/system/autoscaler/scale-in-policy',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateScaleInPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_scale_out_policy_async(self, request):
+        """修改扩容策略
+
+        修改扩容策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateScaleOutPolicy
+        :type request: :class:`huaweicloudsdkeihealth.v1.UpdateScaleOutPolicyRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateScaleOutPolicyResponse`
+        """
+        return self.update_scale_out_policy_with_http_info(request)
+
+    def update_scale_out_policy_with_http_info(self, request):
+        all_params = ['id', 'update_scale_out_policy_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/system/autoscaler/scale-out-policies/{id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateScaleOutPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_computing_resource_async(self, request):
         """购买计算资源
 
@@ -3455,7 +4002,7 @@ class EiHealthAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_data_async(self, request):
-        """获取指定数据对象
+        """获取数据详情
 
         获取指定数据对象的详细信息
         
@@ -5194,6 +5741,185 @@ class EiHealthAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListDatabaseResourceFlavorResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_iam_group_users_async(self, request):
+        """查询IAM用户组的用户列表
+
+        查询IAM用户组的用户列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListIamGroupUsers
+        :type request: :class:`huaweicloudsdkeihealth.v1.ListIamGroupUsersRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ListIamGroupUsersResponse`
+        """
+        return self.list_iam_group_users_with_http_info(request)
+
+    def list_iam_group_users_with_http_info(self, request):
+        all_params = ['group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/iam/groups/{group_id}/users',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListIamGroupUsersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_iam_groups_async(self, request):
+        """查询IAM用户组列表
+
+        查询IAM用户组列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListIamGroups
+        :type request: :class:`huaweicloudsdkeihealth.v1.ListIamGroupsRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ListIamGroupsResponse`
+        """
+        return self.list_iam_groups_with_http_info(request)
+
+    def list_iam_groups_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/iam/groups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListIamGroupsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_iam_users_async(self, request):
+        """查询IAM用户列表
+
+        查询IAM用户列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListIamUsers
+        :type request: :class:`huaweicloudsdkeihealth.v1.ListIamUsersRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ListIamUsersResponse`
+        """
+        return self.list_iam_users_with_http_info(request)
+
+    def list_iam_users_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/iam/users',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListIamUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -8392,6 +9118,1399 @@ class EiHealthAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def clean_nextflow_cache_async(self, request):
+        """清理Nextflow缓存
+
+        清理Nextflow缓存
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CleanNextflowCache
+        :type request: :class:`huaweicloudsdkeihealth.v1.CleanNextflowCacheRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.CleanNextflowCacheResponse`
+        """
+        return self.clean_nextflow_cache_with_http_info(request)
+
+    def clean_nextflow_cache_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/nextflow/clean-cache',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CleanNextflowCacheResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def install_nextflow_async(self, request):
+        """安装Nextflow
+
+        安装Nextflow（file和version参数必须提供其中一种）
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for InstallNextflow
+        :type request: :class:`huaweicloudsdkeihealth.v1.InstallNextflowRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.InstallNextflowResponse`
+        """
+        return self.install_nextflow_with_http_info(request)
+
+    def install_nextflow_with_http_info(self, request):
+        all_params = ['file', 'part_number', 'total_part', 'multipart_id', 'file_name', 'version']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+        if 'part_number' in local_var_params:
+            form_params['part_number'] = local_var_params['part_number']
+        if 'total_part' in local_var_params:
+            form_params['total_part'] = local_var_params['total_part']
+        if 'multipart_id' in local_var_params:
+            form_params['multipart_id'] = local_var_params['multipart_id']
+        if 'file_name' in local_var_params:
+            form_params['file_name'] = local_var_params['file_name']
+        if 'version' in local_var_params:
+            form_params['version'] = local_var_params['version']
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/nextflow/engines',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='InstallNextflowResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_nextflow_version_async(self, request):
+        """查询Nextflow版本列表
+
+        查询Nextflow版本列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListNextflowVersion
+        :type request: :class:`huaweicloudsdkeihealth.v1.ListNextflowVersionRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ListNextflowVersionResponse`
+        """
+        return self.list_nextflow_version_with_http_info(request)
+
+    def list_nextflow_version_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/nextflow/versions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListNextflowVersionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_nextflow_async(self, request):
+        """查询Nextflow配置详情
+
+        查询Nextflow配置详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowNextflow
+        :type request: :class:`huaweicloudsdkeihealth.v1.ShowNextflowRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNextflowResponse`
+        """
+        return self.show_nextflow_with_http_info(request)
+
+    def show_nextflow_with_http_info(self, request):
+        all_params = ['id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/nextflow/engines/{id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowNextflowResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def uninstall_nextflow_async(self, request):
+        """卸载Nextflow
+
+        卸载Nextflow
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UninstallNextflow
+        :type request: :class:`huaweicloudsdkeihealth.v1.UninstallNextflowRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.UninstallNextflowResponse`
+        """
+        return self.uninstall_nextflow_with_http_info(request)
+
+    def uninstall_nextflow_with_http_info(self, request):
+        all_params = ['id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/nextflow/engines/{id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UninstallNextflowResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_nextflow_job_async(self, request):
+        """创建nextflow作业
+
+        创建nextflow作业
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateNextflowJob
+        :type request: :class:`huaweicloudsdkeihealth.v1.CreateNextflowJobRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.CreateNextflowJobResponse`
+        """
+        return self.create_nextflow_job_with_http_info(request)
+
+    def create_nextflow_job_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'name', 'workflow_id', 'description', 'labels', 'params']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'name' in local_var_params:
+            form_params['name'] = local_var_params['name']
+        if 'description' in local_var_params:
+            form_params['description'] = local_var_params['description']
+        if 'labels' in local_var_params:
+            form_params['labels'] = local_var_params['labels']
+            collection_formats['labels'] = 'csv'
+        if 'workflow_id' in local_var_params:
+            form_params['workflow_id'] = local_var_params['workflow_id']
+        if 'params' in local_var_params:
+            form_params['params'] = local_var_params['params']
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateNextflowJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_nextflow_job_async(self, request):
+        """删除Nextflow作业
+
+        删除Nextflow作业
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteNextflowJob
+        :type request: :class:`huaweicloudsdkeihealth.v1.DeleteNextflowJobRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteNextflowJobResponse`
+        """
+        return self.delete_nextflow_job_with_http_info(request)
+
+    def delete_nextflow_job_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'job_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteNextflowJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_nextflow_job_async(self, request):
+        """查询nextflow作业列表
+
+        查询nextflow作业列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListNextflowJob
+        :type request: :class:`huaweicloudsdkeihealth.v1.ListNextflowJobRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ListNextflowJobResponse`
+        """
+        return self.list_nextflow_job_with_http_info(request)
+
+    def list_nextflow_job_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'limit', 'offset', 'sort_dir', 'sort_key', 'job_name', 'labels', 'status', 'workflow_name', 'user_name', 'create_start_time', 'create_end_time', 'finish_start_time', 'finish_end_time']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'job_name' in local_var_params:
+            query_params.append(('job_name', local_var_params['job_name']))
+        if 'labels' in local_var_params:
+            query_params.append(('labels', local_var_params['labels']))
+            collection_formats['labels'] = 'csv'
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'workflow_name' in local_var_params:
+            query_params.append(('workflow_name', local_var_params['workflow_name']))
+        if 'user_name' in local_var_params:
+            query_params.append(('user_name', local_var_params['user_name']))
+        if 'create_start_time' in local_var_params:
+            query_params.append(('create_start_time', local_var_params['create_start_time']))
+        if 'create_end_time' in local_var_params:
+            query_params.append(('create_end_time', local_var_params['create_end_time']))
+        if 'finish_start_time' in local_var_params:
+            query_params.append(('finish_start_time', local_var_params['finish_start_time']))
+        if 'finish_end_time' in local_var_params:
+            query_params.append(('finish_end_time', local_var_params['finish_end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListNextflowJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def retry_nextflow_job_async(self, request):
+        """重试Nextflow作业
+
+        重试Nextflow作业
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RetryNextflowJob
+        :type request: :class:`huaweicloudsdkeihealth.v1.RetryNextflowJobRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.RetryNextflowJobResponse`
+        """
+        return self.retry_nextflow_job_with_http_info(request)
+
+    def retry_nextflow_job_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'job_id', 'params']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'params' in local_var_params:
+            form_params['params'] = local_var_params['params']
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}/retry',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RetryNextflowJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_nextflow_job_async(self, request):
+        """获取Nextflow作业详情
+
+        获取Nextflow作业详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowNextflowJob
+        :type request: :class:`huaweicloudsdkeihealth.v1.ShowNextflowJobRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNextflowJobResponse`
+        """
+        return self.show_nextflow_job_with_http_info(request)
+
+    def show_nextflow_job_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'job_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowNextflowJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_nextflow_job_log_async(self, request):
+        """获取Nextflow作业日志
+
+        获取Nextflow作业日志
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowNextflowJobLog
+        :type request: :class:`huaweicloudsdkeihealth.v1.ShowNextflowJobLogRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNextflowJobLogResponse`
+        """
+        return self.show_nextflow_job_log_with_http_info(request)
+
+    def show_nextflow_job_log_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'job_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}/logs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowNextflowJobLogResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_nextflow_job_reports_async(self, request):
+        """获取Nextflow作业报告
+
+        获取Nextflow作业报告
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowNextflowJobReports
+        :type request: :class:`huaweicloudsdkeihealth.v1.ShowNextflowJobReportsRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNextflowJobReportsResponse`
+        """
+        return self.show_nextflow_job_reports_with_http_info(request)
+
+    def show_nextflow_job_reports_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'job_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}/reports',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowNextflowJobReportsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def stop_nextflow_job_async(self, request):
+        """停止Nextflow作业
+
+        停止Nextflow作业
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StopNextflowJob
+        :type request: :class:`huaweicloudsdkeihealth.v1.StopNextflowJobRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.StopNextflowJobResponse`
+        """
+        return self.stop_nextflow_job_with_http_info(request)
+
+    def stop_nextflow_job_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'job_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}/stop',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='StopNextflowJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_nextflow_task_async(self, request):
+        """获取task列表
+
+        获取task列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListNextflowTask
+        :type request: :class:`huaweicloudsdkeihealth.v1.ListNextflowTaskRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ListNextflowTaskResponse`
+        """
+        return self.list_nextflow_task_with_http_info(request)
+
+    def list_nextflow_task_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'job_id', 'search_key']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'search_key' in local_var_params:
+            query_params.append(('search_key', local_var_params['search_key']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}/tasks',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListNextflowTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_nextflow_task_detail_async(self, request):
+        """获取task详情
+
+        获取task详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowNextflowTaskDetail
+        :type request: :class:`huaweicloudsdkeihealth.v1.ShowNextflowTaskDetailRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNextflowTaskDetailResponse`
+        """
+        return self.show_nextflow_task_detail_with_http_info(request)
+
+    def show_nextflow_task_detail_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'job_id', 'task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}/tasks/{task_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowNextflowTaskDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_nextflow_task_log_async(self, request):
+        """获取Nextflow任务日志
+
+        获取Nextflow任务日志
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowNextflowTaskLog
+        :type request: :class:`huaweicloudsdkeihealth.v1.ShowNextflowTaskLogRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNextflowTaskLogResponse`
+        """
+        return self.show_nextflow_task_log_with_http_info(request)
+
+    def show_nextflow_task_log_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'job_id', 'task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}/tasks/{task_id}/logs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowNextflowTaskLogResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_nextflow_workflow_async(self, request):
+        """创建流程
+
+        创建流程
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateNextflowWorkflow
+        :type request: :class:`huaweicloudsdkeihealth.v1.CreateNextflowWorkflowRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.CreateNextflowWorkflowResponse`
+        """
+        return self.create_nextflow_workflow_with_http_info(request)
+
+    def create_nextflow_workflow_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'workflow_file', 'name', 'main_file', 'description', 'labels', 'params']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'workflow_file' in local_var_params:
+            form_params['workflow_file'] = local_var_params['workflow_file']
+        if 'name' in local_var_params:
+            form_params['name'] = local_var_params['name']
+        if 'description' in local_var_params:
+            form_params['description'] = local_var_params['description']
+        if 'labels' in local_var_params:
+            form_params['labels'] = local_var_params['labels']
+            collection_formats['labels'] = 'csv'
+        if 'main_file' in local_var_params:
+            form_params['main_file'] = local_var_params['main_file']
+        if 'params' in local_var_params:
+            form_params['params'] = local_var_params['params']
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/workflows',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateNextflowWorkflowResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_nextflow_workflow_async(self, request):
+        """删除流程
+
+        删除流程
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteNextflowWorkflow
+        :type request: :class:`huaweicloudsdkeihealth.v1.DeleteNextflowWorkflowRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteNextflowWorkflowResponse`
+        """
+        return self.delete_nextflow_workflow_with_http_info(request)
+
+    def delete_nextflow_workflow_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'workflow_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+        if 'workflow_id' in local_var_params:
+            path_params['workflow_id'] = local_var_params['workflow_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/workflows/{workflow_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteNextflowWorkflowResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_nextflow_workflow_async(self, request):
+        """获取流程列表
+
+        获取流程列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListNextflowWorkflow
+        :type request: :class:`huaweicloudsdkeihealth.v1.ListNextflowWorkflowRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ListNextflowWorkflowResponse`
+        """
+        return self.list_nextflow_workflow_with_http_info(request)
+
+    def list_nextflow_workflow_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/workflows',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListNextflowWorkflowResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_nextflow_workflow_async(self, request):
+        """获取流程详情
+
+        获取流程详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowNextflowWorkflow
+        :type request: :class:`huaweicloudsdkeihealth.v1.ShowNextflowWorkflowRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNextflowWorkflowResponse`
+        """
+        return self.show_nextflow_workflow_with_http_info(request)
+
+    def show_nextflow_workflow_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'workflow_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+        if 'workflow_id' in local_var_params:
+            path_params['workflow_id'] = local_var_params['workflow_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/workflows/{workflow_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowNextflowWorkflowResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_nextflow_workflow_async(self, request):
+        """更新流程
+
+        更新流程
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateNextflowWorkflow
+        :type request: :class:`huaweicloudsdkeihealth.v1.UpdateNextflowWorkflowRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateNextflowWorkflowResponse`
+        """
+        return self.update_nextflow_workflow_with_http_info(request)
+
+    def update_nextflow_workflow_with_http_info(self, request):
+        all_params = ['eihealth_project_id', 'workflow_id', 'workflow_file', 'description', 'labels', 'main_file', 'params']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+        if 'workflow_id' in local_var_params:
+            path_params['workflow_id'] = local_var_params['workflow_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'workflow_file' in local_var_params:
+            form_params['workflow_file'] = local_var_params['workflow_file']
+        if 'description' in local_var_params:
+            form_params['description'] = local_var_params['description']
+        if 'labels' in local_var_params:
+            form_params['labels'] = local_var_params['labels']
+            collection_formats['labels'] = 'csv'
+        if 'main_file' in local_var_params:
+            form_params['main_file'] = local_var_params['main_file']
+        if 'params' in local_var_params:
+            form_params['params'] = local_var_params['params']
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/workflows/{workflow_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateNextflowWorkflowResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def batch_update_node_label_async(self, request):
         """设置节点标签
 
@@ -9222,7 +11341,7 @@ class EiHealthAsyncClient(Client):
         return self.list_obs_bucket_object_with_http_info(request)
 
     def list_obs_bucket_object_with_http_info(self, request):
-        all_params = ['bucket_name', 'limit', 'offset', 'path']
+        all_params = ['bucket_name', 'limit', 'offset', 'path', 'search_key']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -9243,6 +11362,8 @@ class EiHealthAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'path' in local_var_params:
             query_params.append(('path', local_var_params['path']))
+        if 'search_key' in local_var_params:
+            query_params.append(('search_key', local_var_params['search_key']))
 
         header_params = {}
 

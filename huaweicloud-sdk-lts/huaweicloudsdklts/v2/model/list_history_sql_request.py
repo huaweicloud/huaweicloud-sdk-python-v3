@@ -20,20 +20,78 @@ class ListHistorySqlRequest:
     sensitive_list = []
 
     openapi_types = {
+        'log_group_id': 'str',
+        'log_stream_id': 'str'
     }
 
     attribute_map = {
+        'log_group_id': 'log_group_id',
+        'log_stream_id': 'log_stream_id'
     }
 
-    def __init__(self):
+    def __init__(self, log_group_id=None, log_stream_id=None):
         """ListHistorySqlRequest
 
         The model defined in huaweicloud sdk
 
+        :param log_group_id: 日志组id
+        :type log_group_id: str
+        :param log_stream_id: 日志流id
+        :type log_stream_id: str
         """
         
         
+
+        self._log_group_id = None
+        self._log_stream_id = None
         self.discriminator = None
+
+        self.log_group_id = log_group_id
+        self.log_stream_id = log_stream_id
+
+    @property
+    def log_group_id(self):
+        """Gets the log_group_id of this ListHistorySqlRequest.
+
+        日志组id
+
+        :return: The log_group_id of this ListHistorySqlRequest.
+        :rtype: str
+        """
+        return self._log_group_id
+
+    @log_group_id.setter
+    def log_group_id(self, log_group_id):
+        """Sets the log_group_id of this ListHistorySqlRequest.
+
+        日志组id
+
+        :param log_group_id: The log_group_id of this ListHistorySqlRequest.
+        :type log_group_id: str
+        """
+        self._log_group_id = log_group_id
+
+    @property
+    def log_stream_id(self):
+        """Gets the log_stream_id of this ListHistorySqlRequest.
+
+        日志流id
+
+        :return: The log_stream_id of this ListHistorySqlRequest.
+        :rtype: str
+        """
+        return self._log_stream_id
+
+    @log_stream_id.setter
+    def log_stream_id(self, log_stream_id):
+        """Sets the log_stream_id of this ListHistorySqlRequest.
+
+        日志流id
+
+        :param log_stream_id: The log_stream_id of this ListHistorySqlRequest.
+        :type log_stream_id: str
+        """
+        self._log_stream_id = log_stream_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

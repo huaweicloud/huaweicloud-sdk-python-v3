@@ -22,16 +22,18 @@ class ListRetirableGrantsResponse(SdkResponse):
     openapi_types = {
         'grants': 'list[Grants]',
         'next_marker': 'str',
+        'total': 'int',
         'truncated': 'str'
     }
 
     attribute_map = {
         'grants': 'grants',
         'next_marker': 'next_marker',
+        'total': 'total',
         'truncated': 'truncated'
     }
 
-    def __init__(self, grants=None, next_marker=None, truncated=None):
+    def __init__(self, grants=None, next_marker=None, total=None, truncated=None):
         """ListRetirableGrantsResponse
 
         The model defined in huaweicloud sdk
@@ -40,6 +42,8 @@ class ListRetirableGrantsResponse(SdkResponse):
         :type grants: list[:class:`huaweicloudsdkkms.v2.Grants`]
         :param next_marker: 获取下一页所需要传递的marker值。 当“truncated”为“false”时，“next_marker”为空。
         :type next_marker: str
+        :param total: 可退役授权总条数。
+        :type total: int
         :param truncated: 是否还有下一页：  - “true”表示还有数据。  - “false”表示已经是最后一页。
         :type truncated: str
         """
@@ -48,6 +52,7 @@ class ListRetirableGrantsResponse(SdkResponse):
 
         self._grants = None
         self._next_marker = None
+        self._total = None
         self._truncated = None
         self.discriminator = None
 
@@ -55,6 +60,8 @@ class ListRetirableGrantsResponse(SdkResponse):
             self.grants = grants
         if next_marker is not None:
             self.next_marker = next_marker
+        if total is not None:
+            self.total = total
         if truncated is not None:
             self.truncated = truncated
 
@@ -101,6 +108,28 @@ class ListRetirableGrantsResponse(SdkResponse):
         :type next_marker: str
         """
         self._next_marker = next_marker
+
+    @property
+    def total(self):
+        """Gets the total of this ListRetirableGrantsResponse.
+
+        可退役授权总条数。
+
+        :return: The total of this ListRetirableGrantsResponse.
+        :rtype: int
+        """
+        return self._total
+
+    @total.setter
+    def total(self, total):
+        """Sets the total of this ListRetirableGrantsResponse.
+
+        可退役授权总条数。
+
+        :param total: The total of this ListRetirableGrantsResponse.
+        :type total: int
+        """
+        self._total = total
 
     @property
     def truncated(self):

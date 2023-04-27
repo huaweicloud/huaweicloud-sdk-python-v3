@@ -20,44 +20,28 @@ class ListSnapshotConfigsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'access_control_allow_internal': 'str',
-        'access_control_allow_external': 'str',
         'domain': 'str',
         'app_name': 'str',
-        'page': 'int',
-        'size': 'int',
         'limit': 'int',
         'offset': 'int'
     }
 
     attribute_map = {
-        'access_control_allow_internal': 'Access-Control-Allow-Internal',
-        'access_control_allow_external': 'Access-Control-Allow-External',
         'domain': 'domain',
         'app_name': 'app_name',
-        'page': 'page',
-        'size': 'size',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, access_control_allow_internal=None, access_control_allow_external=None, domain=None, app_name=None, page=None, size=None, limit=None, offset=None):
+    def __init__(self, domain=None, app_name=None, limit=None, offset=None):
         """ListSnapshotConfigsRequest
 
         The model defined in huaweicloud sdk
 
-        :param access_control_allow_internal: 服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
-        :type access_control_allow_internal: str
-        :param access_control_allow_external: 服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
-        :type access_control_allow_external: str
         :param domain: 域名
         :type domain: str
         :param app_name: 应用名称
         :type app_name: str
-        :param page: 分页编号
-        :type page: int
-        :param size: 每页记录数，取值范围[1,100]
-        :type size: int
         :param limit: 每页记录数  取值范围[1,100]  默认值：10
         :type limit: int
         :param offset: 偏移量，表示从此偏移量开始查询，offset大于等于0
@@ -66,75 +50,19 @@ class ListSnapshotConfigsRequest:
         
         
 
-        self._access_control_allow_internal = None
-        self._access_control_allow_external = None
         self._domain = None
         self._app_name = None
-        self._page = None
-        self._size = None
         self._limit = None
         self._offset = None
         self.discriminator = None
 
-        if access_control_allow_internal is not None:
-            self.access_control_allow_internal = access_control_allow_internal
-        if access_control_allow_external is not None:
-            self.access_control_allow_external = access_control_allow_external
         self.domain = domain
         if app_name is not None:
             self.app_name = app_name
-        if page is not None:
-            self.page = page
-        if size is not None:
-            self.size = size
         if limit is not None:
             self.limit = limit
         if offset is not None:
             self.offset = offset
-
-    @property
-    def access_control_allow_internal(self):
-        """Gets the access_control_allow_internal of this ListSnapshotConfigsRequest.
-
-        服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
-
-        :return: The access_control_allow_internal of this ListSnapshotConfigsRequest.
-        :rtype: str
-        """
-        return self._access_control_allow_internal
-
-    @access_control_allow_internal.setter
-    def access_control_allow_internal(self, access_control_allow_internal):
-        """Sets the access_control_allow_internal of this ListSnapshotConfigsRequest.
-
-        服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
-
-        :param access_control_allow_internal: The access_control_allow_internal of this ListSnapshotConfigsRequest.
-        :type access_control_allow_internal: str
-        """
-        self._access_control_allow_internal = access_control_allow_internal
-
-    @property
-    def access_control_allow_external(self):
-        """Gets the access_control_allow_external of this ListSnapshotConfigsRequest.
-
-        服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
-
-        :return: The access_control_allow_external of this ListSnapshotConfigsRequest.
-        :rtype: str
-        """
-        return self._access_control_allow_external
-
-    @access_control_allow_external.setter
-    def access_control_allow_external(self, access_control_allow_external):
-        """Sets the access_control_allow_external of this ListSnapshotConfigsRequest.
-
-        服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
-
-        :param access_control_allow_external: The access_control_allow_external of this ListSnapshotConfigsRequest.
-        :type access_control_allow_external: str
-        """
-        self._access_control_allow_external = access_control_allow_external
 
     @property
     def domain(self):
@@ -179,50 +107,6 @@ class ListSnapshotConfigsRequest:
         :type app_name: str
         """
         self._app_name = app_name
-
-    @property
-    def page(self):
-        """Gets the page of this ListSnapshotConfigsRequest.
-
-        分页编号
-
-        :return: The page of this ListSnapshotConfigsRequest.
-        :rtype: int
-        """
-        return self._page
-
-    @page.setter
-    def page(self, page):
-        """Sets the page of this ListSnapshotConfigsRequest.
-
-        分页编号
-
-        :param page: The page of this ListSnapshotConfigsRequest.
-        :type page: int
-        """
-        self._page = page
-
-    @property
-    def size(self):
-        """Gets the size of this ListSnapshotConfigsRequest.
-
-        每页记录数，取值范围[1,100]
-
-        :return: The size of this ListSnapshotConfigsRequest.
-        :rtype: int
-        """
-        return self._size
-
-    @size.setter
-    def size(self, size):
-        """Sets the size of this ListSnapshotConfigsRequest.
-
-        每页记录数，取值范围[1,100]
-
-        :param size: The size of this ListSnapshotConfigsRequest.
-        :type size: int
-        """
-        self._size = size
 
     @property
     def limit(self):

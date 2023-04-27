@@ -33,7 +33,9 @@ class ConfigsGetBody:
         'force_redirect': 'ForceRedirectConfig',
         'compress': 'Compress',
         'cache_url_parameter_filter': 'CacheUrlParameterFilter',
+        'ipv6_accelerate': 'int',
         'error_code_cache': 'list[ErrorCodeCache]',
+        'origin_range_status': 'str',
         'user_agent_filter': 'UserAgentFilter',
         'origin_request_url_rewrite': 'list[OriginRequestUrlRewrite]',
         'error_code_redirect_rules': 'list[ErrorCodeRedirectRules]'
@@ -53,13 +55,15 @@ class ConfigsGetBody:
         'force_redirect': 'force_redirect',
         'compress': 'compress',
         'cache_url_parameter_filter': 'cache_url_parameter_filter',
+        'ipv6_accelerate': 'ipv6_accelerate',
         'error_code_cache': 'error_code_cache',
+        'origin_range_status': 'origin_range_status',
         'user_agent_filter': 'user_agent_filter',
         'origin_request_url_rewrite': 'origin_request_url_rewrite',
         'error_code_redirect_rules': 'error_code_redirect_rules'
     }
 
-    def __init__(self, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, error_code_cache=None, user_agent_filter=None, origin_request_url_rewrite=None, error_code_redirect_rules=None):
+    def __init__(self, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, error_code_redirect_rules=None):
         """ConfigsGetBody
 
         The model defined in huaweicloud sdk
@@ -90,8 +94,12 @@ class ConfigsGetBody:
         :type compress: :class:`huaweicloudsdkcdn.v2.Compress`
         :param cache_url_parameter_filter: 
         :type cache_url_parameter_filter: :class:`huaweicloudsdkcdn.v2.CacheUrlParameterFilter`
+        :param ipv6_accelerate: ipv6设置（1：打开；0：关闭）
+        :type ipv6_accelerate: int
         :param error_code_cache: 
         :type error_code_cache: list[:class:`huaweicloudsdkcdn.v2.ErrorCodeCache`]
+        :param origin_range_status: Range回源，即分片回源 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败。 开启: on
+        :type origin_range_status: str
         :param user_agent_filter: 
         :type user_agent_filter: :class:`huaweicloudsdkcdn.v2.UserAgentFilter`
         :param origin_request_url_rewrite: 改写回源URL，最多配置20条。
@@ -115,7 +123,9 @@ class ConfigsGetBody:
         self._force_redirect = None
         self._compress = None
         self._cache_url_parameter_filter = None
+        self._ipv6_accelerate = None
         self._error_code_cache = None
+        self._origin_range_status = None
         self._user_agent_filter = None
         self._origin_request_url_rewrite = None
         self._error_code_redirect_rules = None
@@ -147,8 +157,12 @@ class ConfigsGetBody:
             self.compress = compress
         if cache_url_parameter_filter is not None:
             self.cache_url_parameter_filter = cache_url_parameter_filter
+        if ipv6_accelerate is not None:
+            self.ipv6_accelerate = ipv6_accelerate
         if error_code_cache is not None:
             self.error_code_cache = error_code_cache
+        if origin_range_status is not None:
+            self.origin_range_status = origin_range_status
         if user_agent_filter is not None:
             self.user_agent_filter = user_agent_filter
         if origin_request_url_rewrite is not None:
@@ -403,6 +417,28 @@ class ConfigsGetBody:
         self._cache_url_parameter_filter = cache_url_parameter_filter
 
     @property
+    def ipv6_accelerate(self):
+        """Gets the ipv6_accelerate of this ConfigsGetBody.
+
+        ipv6设置（1：打开；0：关闭）
+
+        :return: The ipv6_accelerate of this ConfigsGetBody.
+        :rtype: int
+        """
+        return self._ipv6_accelerate
+
+    @ipv6_accelerate.setter
+    def ipv6_accelerate(self, ipv6_accelerate):
+        """Sets the ipv6_accelerate of this ConfigsGetBody.
+
+        ipv6设置（1：打开；0：关闭）
+
+        :param ipv6_accelerate: The ipv6_accelerate of this ConfigsGetBody.
+        :type ipv6_accelerate: int
+        """
+        self._ipv6_accelerate = ipv6_accelerate
+
+    @property
     def error_code_cache(self):
         """Gets the error_code_cache of this ConfigsGetBody.
 
@@ -419,6 +455,28 @@ class ConfigsGetBody:
         :type error_code_cache: list[:class:`huaweicloudsdkcdn.v2.ErrorCodeCache`]
         """
         self._error_code_cache = error_code_cache
+
+    @property
+    def origin_range_status(self):
+        """Gets the origin_range_status of this ConfigsGetBody.
+
+        Range回源，即分片回源 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败。 开启: on
+
+        :return: The origin_range_status of this ConfigsGetBody.
+        :rtype: str
+        """
+        return self._origin_range_status
+
+    @origin_range_status.setter
+    def origin_range_status(self, origin_range_status):
+        """Sets the origin_range_status of this ConfigsGetBody.
+
+        Range回源，即分片回源 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败。 开启: on
+
+        :param origin_range_status: The origin_range_status of this ConfigsGetBody.
+        :type origin_range_status: str
+        """
+        self._origin_range_status = origin_range_status
 
     @property
     def user_agent_filter(self):

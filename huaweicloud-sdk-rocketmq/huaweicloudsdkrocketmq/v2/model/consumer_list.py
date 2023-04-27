@@ -21,7 +21,7 @@ class ConsumerList:
 
     openapi_types = {
         'topics': 'list[str]',
-        'total': 'float'
+        'total': 'int'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class ConsumerList:
         :param topics: Topic列表（当查询topic消费“列表”时才显示此参数）。
         :type topics: list[str]
         :param total: Topic总数（当查询topic消费“列表”时才显示此参数）。
-        :type total: float
+        :type total: int
         """
         
         
@@ -80,7 +80,7 @@ class ConsumerList:
         Topic总数（当查询topic消费“列表”时才显示此参数）。
 
         :return: The total of this ConsumerList.
-        :rtype: float
+        :rtype: int
         """
         return self._total
 
@@ -91,7 +91,7 @@ class ConsumerList:
         Topic总数（当查询topic消费“列表”时才显示此参数）。
 
         :param total: The total of this ConsumerList.
-        :type total: float
+        :type total: int
         """
         self._total = total
 

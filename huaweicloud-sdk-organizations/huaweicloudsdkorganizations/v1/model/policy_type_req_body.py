@@ -34,7 +34,7 @@ class PolicyTypeReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param policy_type: 策略类型的名称，service_control_policy服务控制策略。
+        :param policy_type: 策略类型的名称，service_control_policy服务控制策略；tag_policy：标签策略。
         :type policy_type: str
         :param root_id: 根的唯一标识符（ID）。
         :type root_id: str
@@ -53,7 +53,7 @@ class PolicyTypeReqBody:
     def policy_type(self):
         """Gets the policy_type of this PolicyTypeReqBody.
 
-        策略类型的名称，service_control_policy服务控制策略。
+        策略类型的名称，service_control_policy服务控制策略；tag_policy：标签策略。
 
         :return: The policy_type of this PolicyTypeReqBody.
         :rtype: str
@@ -64,7 +64,7 @@ class PolicyTypeReqBody:
     def policy_type(self, policy_type):
         """Sets the policy_type of this PolicyTypeReqBody.
 
-        策略类型的名称，service_control_policy服务控制策略。
+        策略类型的名称，service_control_policy服务控制策略；tag_policy：标签策略。
 
         :param policy_type: The policy_type of this PolicyTypeReqBody.
         :type policy_type: str

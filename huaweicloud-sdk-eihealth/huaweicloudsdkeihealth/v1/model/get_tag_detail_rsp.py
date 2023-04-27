@@ -23,17 +23,19 @@ class GetTagDetailRsp:
         'tag': 'str',
         'size': 'int',
         'create_time': 'str',
-        'update_time': 'str'
+        'update_time': 'str',
+        'path': 'str'
     }
 
     attribute_map = {
         'tag': 'tag',
         'size': 'size',
         'create_time': 'create_time',
-        'update_time': 'update_time'
+        'update_time': 'update_time',
+        'path': 'path'
     }
 
-    def __init__(self, tag=None, size=None, create_time=None, update_time=None):
+    def __init__(self, tag=None, size=None, create_time=None, update_time=None, path=None):
         """GetTagDetailRsp
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class GetTagDetailRsp:
         :type create_time: str
         :param update_time: 镜像版本更新时间
         :type update_time: str
+        :param path: 镜像地址
+        :type path: str
         """
         
         
@@ -54,6 +58,7 @@ class GetTagDetailRsp:
         self._size = None
         self._create_time = None
         self._update_time = None
+        self._path = None
         self.discriminator = None
 
         if tag is not None:
@@ -64,6 +69,8 @@ class GetTagDetailRsp:
             self.create_time = create_time
         if update_time is not None:
             self.update_time = update_time
+        if path is not None:
+            self.path = path
 
     @property
     def tag(self):
@@ -152,6 +159,28 @@ class GetTagDetailRsp:
         :type update_time: str
         """
         self._update_time = update_time
+
+    @property
+    def path(self):
+        """Gets the path of this GetTagDetailRsp.
+
+        镜像地址
+
+        :return: The path of this GetTagDetailRsp.
+        :rtype: str
+        """
+        return self._path
+
+    @path.setter
+    def path(self, path):
+        """Sets the path of this GetTagDetailRsp.
+
+        镜像地址
+
+        :param path: The path of this GetTagDetailRsp.
+        :type path: str
+        """
+        self._path = path
 
     def to_dict(self):
         """Returns the model properties as a dict"""

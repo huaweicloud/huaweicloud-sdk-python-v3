@@ -44,7 +44,7 @@ class ListPoliciesRequest:
         :type limit: int
         :param marker: 分页标记。
         :type marker: str
-        :param x_language: 选择接口返回的信息的语言，默认为\&quot;zh-cn\&quot;中文，zh-cn中文，en-us英文
+        :param x_language: 选择接口返回的信息的语言
         :type x_language: str
         """
         
@@ -135,7 +135,7 @@ class ListPoliciesRequest:
     def x_language(self):
         """Gets the x_language of this ListPoliciesRequest.
 
-        选择接口返回的信息的语言，默认为\"zh-cn\"中文，zh-cn中文，en-us英文
+        选择接口返回的信息的语言
 
         :return: The x_language of this ListPoliciesRequest.
         :rtype: str
@@ -146,7 +146,7 @@ class ListPoliciesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListPoliciesRequest.
 
-        选择接口返回的信息的语言，默认为\"zh-cn\"中文，zh-cn中文，en-us英文
+        选择接口返回的信息的语言
 
         :param x_language: The x_language of this ListPoliciesRequest.
         :type x_language: str

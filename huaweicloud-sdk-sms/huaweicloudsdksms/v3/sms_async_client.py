@@ -1316,6 +1316,69 @@ class SmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_config_setting_async(self, request):
+        """查询配置资源
+
+        使用该接口查询任指定任务的指定配置类型的配置信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowConfigSetting
+        :type request: :class:`huaweicloudsdksms.v3.ShowConfigSettingRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.ShowConfigSettingResponse`
+        """
+        return self.show_config_setting_with_http_info(request)
+
+    def show_config_setting_with_http_info(self, request):
+        all_params = ['task_id', 'config_key']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+        if 'config_key' in local_var_params:
+            query_params.append(('config_key', local_var_params['config_key']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/tasks/{task_id}/configuration-setting',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowConfigSettingResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_migproject_async(self, request):
         """查询指定ID迁移项目详情
 
@@ -2237,6 +2300,69 @@ class SmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_network_check_info_async(self, request):
+        """更新网络检测相关的信息
+
+        Agent 上报网络检测相关的信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateNetworkCheckInfo
+        :type request: :class:`huaweicloudsdksms.v3.UpdateNetworkCheckInfoRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.UpdateNetworkCheckInfoResponse`
+        """
+        return self.update_network_check_info_with_http_info(request)
+
+    def update_network_check_info_with_http_info(self, request):
+        all_params = ['task_id', 'update_network_check_info_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{task_id}/update-network-check-info',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateNetworkCheckInfoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_server_name_async(self, request):
         """修改指定ID的源端服务器名称
 
@@ -2612,6 +2738,248 @@ class SmsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def upload_special_configuration_setting_async(self, request):
+        """迁移任务配置设置
+
+        配置迁移任务特殊设置，例如配置指定同步的文件或路径
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UploadSpecialConfigurationSetting
+        :type request: :class:`huaweicloudsdksms.v3.UploadSpecialConfigurationSettingRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.UploadSpecialConfigurationSettingResponse`
+        """
+        return self.upload_special_configuration_setting_with_http_info(request)
+
+    def upload_special_configuration_setting_with_http_info(self, request):
+        all_params = ['task_id', 'upload_special_configuration_setting_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/tasks/{task_id}/configuration-setting',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UploadSpecialConfigurationSettingResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_api_version_async(self, request):
+        """查询主机迁移服务的API版本信息
+
+        查询主机迁移服务的API版本信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListApiVersion
+        :type request: :class:`huaweicloudsdksms.v3.ListApiVersionRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.ListApiVersionResponse`
+        """
+        return self.list_api_version_with_http_info(request)
+
+    def list_api_version_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListApiVersionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_api_version_async(self, request):
+        """查询主机迁移服务指定API版本信息
+
+        查询主机迁移服务指定API版本信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowApiVersion
+        :type request: :class:`huaweicloudsdksms.v3.ShowApiVersionRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.ShowApiVersionResponse`
+        """
+        return self.show_api_version_with_http_info(request)
+
+    def show_api_version_with_http_info(self, request):
+        all_params = ['version']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'version' in local_var_params:
+            path_params['version'] = local_var_params['version']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/{version}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowApiVersionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_config_async(self, request):
+        """获取Agent配置信息
+
+        源端Agent启动后，访问此接口获取配置信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowConfig
+        :type request: :class:`huaweicloudsdksms.v3.ShowConfigRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.ShowConfigResponse`
+        """
+        return self.show_config_with_http_info(request)
+
+    def show_config_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/config',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

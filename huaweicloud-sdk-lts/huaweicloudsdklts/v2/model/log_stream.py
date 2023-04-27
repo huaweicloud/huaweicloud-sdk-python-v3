@@ -24,7 +24,8 @@ class LogStream:
         'log_stream_name': 'str',
         'log_stream_id': 'str',
         'filter_count': 'int',
-        'tag': 'dict(str, str)'
+        'tag': 'dict(str, str)',
+        'is_favorite': 'bool'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class LogStream:
         'log_stream_name': 'log_stream_name',
         'log_stream_id': 'log_stream_id',
         'filter_count': 'filter_count',
-        'tag': 'tag'
+        'tag': 'tag',
+        'is_favorite': 'is_favorite'
     }
 
-    def __init__(self, creation_time=None, log_stream_name=None, log_stream_id=None, filter_count=None, tag=None):
+    def __init__(self, creation_time=None, log_stream_name=None, log_stream_id=None, filter_count=None, tag=None, is_favorite=None):
         """LogStream
 
         The model defined in huaweicloud sdk
@@ -50,6 +52,8 @@ class LogStream:
         :type filter_count: int
         :param tag: 日志流所属标签
         :type tag: dict(str, str)
+        :param is_favorite: 是否收藏日志流
+        :type is_favorite: bool
         """
         
         
@@ -59,6 +63,7 @@ class LogStream:
         self._log_stream_id = None
         self._filter_count = None
         self._tag = None
+        self._is_favorite = None
         self.discriminator = None
 
         self.creation_time = creation_time
@@ -67,6 +72,8 @@ class LogStream:
         self.filter_count = filter_count
         if tag is not None:
             self.tag = tag
+        if is_favorite is not None:
+            self.is_favorite = is_favorite
 
     @property
     def creation_time(self):
@@ -177,6 +184,28 @@ class LogStream:
         :type tag: dict(str, str)
         """
         self._tag = tag
+
+    @property
+    def is_favorite(self):
+        """Gets the is_favorite of this LogStream.
+
+        是否收藏日志流
+
+        :return: The is_favorite of this LogStream.
+        :rtype: bool
+        """
+        return self._is_favorite
+
+    @is_favorite.setter
+    def is_favorite(self, is_favorite):
+        """Sets the is_favorite of this LogStream.
+
+        是否收藏日志流
+
+        :param is_favorite: The is_favorite of this LogStream.
+        :type is_favorite: bool
+        """
+        self._is_favorite = is_favorite
 
     def to_dict(self):
         """Returns the model properties as a dict"""

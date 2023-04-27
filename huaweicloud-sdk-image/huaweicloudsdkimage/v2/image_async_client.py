@@ -652,65 +652,6 @@ class ImageAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def run_delete_custom_tags_async(self, request):
-        """删除媒资图像标签
-
-        用于用户删除自定义的标签。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for RunDeleteCustomTags
-        :type request: :class:`huaweicloudsdkimage.v2.RunDeleteCustomTagsRequest`
-        :rtype: :class:`huaweicloudsdkimage.v2.RunDeleteCustomTagsResponse`
-        """
-        return self.run_delete_custom_tags_with_http_info(request)
-
-    def run_delete_custom_tags_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/image/media-tagging/custom-tags',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunDeleteCustomTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def run_image_media_tagging_async(self, request):
         """标签识别
 
@@ -828,65 +769,6 @@ class ImageAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='RunImageMediaTaggingDetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def run_query_custom_tags_async(self, request):
-        """查询媒资图像标签
-
-        用于用户自查是否存在自定义的标签。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for RunQueryCustomTags
-        :type request: :class:`huaweicloudsdkimage.v2.RunQueryCustomTagsRequest`
-        :rtype: :class:`huaweicloudsdkimage.v2.RunQueryCustomTagsResponse`
-        """
-        return self.run_query_custom_tags_with_http_info(request)
-
-    def run_query_custom_tags_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/image/media-tagging/custom-tags/check',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunQueryCustomTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

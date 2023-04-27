@@ -21,7 +21,7 @@ class ListDataResponse(SdkResponse):
 
     openapi_types = {
         'count': 'int',
-        'datas': 'list[DataRsp]',
+        'datas': 'list[DataSummaryRsp]',
         'next_marker': 'str'
     }
 
@@ -39,7 +39,7 @@ class ListDataResponse(SdkResponse):
         :param count: 数据对象（目录，文件）总数量
         :type count: int
         :param datas: 数据对象列表
-        :type datas: list[:class:`huaweicloudsdkeihealth.v1.DataRsp`]
+        :type datas: list[:class:`huaweicloudsdkeihealth.v1.DataSummaryRsp`]
         :param next_marker: 下一页开始标签
         :type next_marker: str
         """
@@ -87,7 +87,7 @@ class ListDataResponse(SdkResponse):
         数据对象列表
 
         :return: The datas of this ListDataResponse.
-        :rtype: list[:class:`huaweicloudsdkeihealth.v1.DataRsp`]
+        :rtype: list[:class:`huaweicloudsdkeihealth.v1.DataSummaryRsp`]
         """
         return self._datas
 
@@ -98,7 +98,7 @@ class ListDataResponse(SdkResponse):
         数据对象列表
 
         :param datas: The datas of this ListDataResponse.
-        :type datas: list[:class:`huaweicloudsdkeihealth.v1.DataRsp`]
+        :type datas: list[:class:`huaweicloudsdkeihealth.v1.DataSummaryRsp`]
         """
         self._datas = datas
 

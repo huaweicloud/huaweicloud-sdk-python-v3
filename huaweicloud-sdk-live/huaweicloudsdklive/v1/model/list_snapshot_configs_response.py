@@ -21,8 +21,6 @@ class ListSnapshotConfigsResponse(SdkResponse):
 
     openapi_types = {
         'total': 'int',
-        'page': 'int',
-        'size': 'int',
         'snapshot_config_list': 'LiveSnapshotConfig',
         'limit': 'int',
         'offset': 'int'
@@ -30,24 +28,18 @@ class ListSnapshotConfigsResponse(SdkResponse):
 
     attribute_map = {
         'total': 'total',
-        'page': 'page',
-        'size': 'size',
         'snapshot_config_list': 'snapshot_config_list',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, total=None, page=None, size=None, snapshot_config_list=None, limit=None, offset=None):
+    def __init__(self, total=None, snapshot_config_list=None, limit=None, offset=None):
         """ListSnapshotConfigsResponse
 
         The model defined in huaweicloud sdk
 
         :param total: 总条目数
         :type total: int
-        :param page: Page
-        :type page: int
-        :param size: Size
-        :type size: int
         :param snapshot_config_list: 
         :type snapshot_config_list: :class:`huaweicloudsdklive.v1.LiveSnapshotConfig`
         :param limit: 每页记录数
@@ -59,8 +51,6 @@ class ListSnapshotConfigsResponse(SdkResponse):
         super(ListSnapshotConfigsResponse, self).__init__()
 
         self._total = None
-        self._page = None
-        self._size = None
         self._snapshot_config_list = None
         self._limit = None
         self._offset = None
@@ -68,10 +58,6 @@ class ListSnapshotConfigsResponse(SdkResponse):
 
         if total is not None:
             self.total = total
-        if page is not None:
-            self.page = page
-        if size is not None:
-            self.size = size
         if snapshot_config_list is not None:
             self.snapshot_config_list = snapshot_config_list
         if limit is not None:
@@ -100,50 +86,6 @@ class ListSnapshotConfigsResponse(SdkResponse):
         :type total: int
         """
         self._total = total
-
-    @property
-    def page(self):
-        """Gets the page of this ListSnapshotConfigsResponse.
-
-        Page
-
-        :return: The page of this ListSnapshotConfigsResponse.
-        :rtype: int
-        """
-        return self._page
-
-    @page.setter
-    def page(self, page):
-        """Sets the page of this ListSnapshotConfigsResponse.
-
-        Page
-
-        :param page: The page of this ListSnapshotConfigsResponse.
-        :type page: int
-        """
-        self._page = page
-
-    @property
-    def size(self):
-        """Gets the size of this ListSnapshotConfigsResponse.
-
-        Size
-
-        :return: The size of this ListSnapshotConfigsResponse.
-        :rtype: int
-        """
-        return self._size
-
-    @size.setter
-    def size(self, size):
-        """Sets the size of this ListSnapshotConfigsResponse.
-
-        Size
-
-        :param size: The size of this ListSnapshotConfigsResponse.
-        :type size: int
-        """
-        self._size = size
 
     @property
     def snapshot_config_list(self):

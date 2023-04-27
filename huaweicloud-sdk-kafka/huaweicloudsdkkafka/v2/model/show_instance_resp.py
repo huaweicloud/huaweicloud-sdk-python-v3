@@ -48,6 +48,7 @@ class ShowInstanceResp:
         'enable_publicip': 'bool',
         'management_connect_address': 'str',
         'ssl_enable': 'bool',
+        'kafka_security_protocol': 'str',
         'sasl_enabled_mechanisms': 'list[str]',
         'ssl_two_way_enable': 'bool',
         'cert_replaced': 'bool',
@@ -129,6 +130,7 @@ class ShowInstanceResp:
         'enable_publicip': 'enable_publicip',
         'management_connect_address': 'management_connect_address',
         'ssl_enable': 'ssl_enable',
+        'kafka_security_protocol': 'kafka_security_protocol',
         'sasl_enabled_mechanisms': 'sasl_enabled_mechanisms',
         'ssl_two_way_enable': 'ssl_two_way_enable',
         'cert_replaced': 'cert_replaced',
@@ -181,7 +183,7 @@ class ShowInstanceResp:
         'dr_enable': 'dr_enable'
     }
 
-    def __init__(self, name=None, engine=None, engine_version=None, description=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, subnet_name=None, subnet_cidr=None, user_id=None, user_name=None, access_user=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, sasl_enabled_mechanisms=None, ssl_two_way_enable=None, cert_replaced=None, public_management_connect_address=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_user=None, enable_log_collection=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_id=None, rest_enable=None, rest_connect_address=None, public_boundwidth=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, agent_enable=None, pod_connect_address=None, disk_encrypted=None, disk_encrypted_key=None, kafka_private_connect_address=None, ces_version=None, public_access_enabled=None, node_num=None, enable_acl=None, new_spec_billing_enable=None, broker_num=None, tags=None, dr_enable=None):
+    def __init__(self, name=None, engine=None, engine_version=None, description=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, subnet_name=None, subnet_cidr=None, user_id=None, user_name=None, access_user=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, ssl_two_way_enable=None, cert_replaced=None, public_management_connect_address=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_user=None, enable_log_collection=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_id=None, rest_enable=None, rest_connect_address=None, public_boundwidth=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, agent_enable=None, pod_connect_address=None, disk_encrypted=None, disk_encrypted_key=None, kafka_private_connect_address=None, ces_version=None, public_access_enabled=None, node_num=None, enable_acl=None, new_spec_billing_enable=None, broker_num=None, tags=None, dr_enable=None):
         """ShowInstanceResp
 
         The model defined in huaweicloud sdk
@@ -242,6 +244,8 @@ class ShowInstanceResp:
         :type management_connect_address: str
         :param ssl_enable: 是否开启安全认证。 - true：开启 - false：未开启
         :type ssl_enable: bool
+        :param kafka_security_protocol: 开启SASL后使用的安全协议。 - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，仅支持SCRAM-SHA-512机制。  
+        :type kafka_security_protocol: str
         :param sasl_enabled_mechanisms: 开启SASL后使用的认证机制。 - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
         :type sasl_enabled_mechanisms: list[str]
         :param ssl_two_way_enable: 是否开启双向认证。
@@ -374,6 +378,7 @@ class ShowInstanceResp:
         self._enable_publicip = None
         self._management_connect_address = None
         self._ssl_enable = None
+        self._kafka_security_protocol = None
         self._sasl_enabled_mechanisms = None
         self._ssl_two_way_enable = None
         self._cert_replaced = None
@@ -482,6 +487,8 @@ class ShowInstanceResp:
             self.management_connect_address = management_connect_address
         if ssl_enable is not None:
             self.ssl_enable = ssl_enable
+        if kafka_security_protocol is not None:
+            self.kafka_security_protocol = kafka_security_protocol
         if sasl_enabled_mechanisms is not None:
             self.sasl_enabled_mechanisms = sasl_enabled_mechanisms
         if ssl_two_way_enable is not None:
@@ -1198,6 +1205,28 @@ class ShowInstanceResp:
         :type ssl_enable: bool
         """
         self._ssl_enable = ssl_enable
+
+    @property
+    def kafka_security_protocol(self):
+        """Gets the kafka_security_protocol of this ShowInstanceResp.
+
+        开启SASL后使用的安全协议。 - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，仅支持SCRAM-SHA-512机制。  
+
+        :return: The kafka_security_protocol of this ShowInstanceResp.
+        :rtype: str
+        """
+        return self._kafka_security_protocol
+
+    @kafka_security_protocol.setter
+    def kafka_security_protocol(self, kafka_security_protocol):
+        """Sets the kafka_security_protocol of this ShowInstanceResp.
+
+        开启SASL后使用的安全协议。 - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，仅支持SCRAM-SHA-512机制。  
+
+        :param kafka_security_protocol: The kafka_security_protocol of this ShowInstanceResp.
+        :type kafka_security_protocol: str
+        """
+        self._kafka_security_protocol = kafka_security_protocol
 
     @property
     def sasl_enabled_mechanisms(self):

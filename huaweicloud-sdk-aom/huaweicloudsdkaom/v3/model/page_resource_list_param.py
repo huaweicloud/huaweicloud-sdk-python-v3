@@ -20,7 +20,7 @@ class PageResourceListParam:
     sensitive_list = []
 
     openapi_types = {
-        'maker': 'str',
+        'marker': 'str',
         'limit': 'int',
         'keywords': 'dict(str, str)',
         'ci_relationships': 'bool',
@@ -31,7 +31,7 @@ class PageResourceListParam:
     }
 
     attribute_map = {
-        'maker': 'maker',
+        'marker': 'marker',
         'limit': 'limit',
         'keywords': 'keywords',
         'ci_relationships': 'ci_relationships',
@@ -41,13 +41,13 @@ class PageResourceListParam:
         'ci_id': 'ci_id'
     }
 
-    def __init__(self, maker=None, limit=None, keywords=None, ci_relationships=None, ci_type=None, ci_region=None, ci_ids=None, ci_id=None):
+    def __init__(self, marker=None, limit=None, keywords=None, ci_relationships=None, ci_type=None, ci_region=None, ci_ids=None, ci_id=None):
         """PageResourceListParam
 
         The model defined in huaweicloud sdk
 
-        :param maker: 页面的分页标志位；为分页的最后一条记录的id
-        :type maker: str
+        :param marker: 页面的分页标志位；为分页的最后一条记录的id
+        :type marker: str
         :param limit: 查询返回记录的数量限制
         :type limit: int
         :param keywords: 关键字模糊搜索
@@ -66,7 +66,7 @@ class PageResourceListParam:
         
         
 
-        self._maker = None
+        self._marker = None
         self._limit = None
         self._keywords = None
         self._ci_relationships = None
@@ -76,8 +76,8 @@ class PageResourceListParam:
         self._ci_id = None
         self.discriminator = None
 
-        if maker is not None:
-            self.maker = maker
+        if marker is not None:
+            self.marker = marker
         if limit is not None:
             self.limit = limit
         if keywords is not None:
@@ -93,26 +93,26 @@ class PageResourceListParam:
             self.ci_id = ci_id
 
     @property
-    def maker(self):
-        """Gets the maker of this PageResourceListParam.
+    def marker(self):
+        """Gets the marker of this PageResourceListParam.
 
         页面的分页标志位；为分页的最后一条记录的id
 
-        :return: The maker of this PageResourceListParam.
+        :return: The marker of this PageResourceListParam.
         :rtype: str
         """
-        return self._maker
+        return self._marker
 
-    @maker.setter
-    def maker(self, maker):
-        """Sets the maker of this PageResourceListParam.
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this PageResourceListParam.
 
         页面的分页标志位；为分页的最后一条记录的id
 
-        :param maker: The maker of this PageResourceListParam.
-        :type maker: str
+        :param marker: The marker of this PageResourceListParam.
+        :type marker: str
         """
-        self._maker = maker
+        self._marker = marker
 
     @property
     def limit(self):

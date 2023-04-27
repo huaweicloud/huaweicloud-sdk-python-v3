@@ -26,7 +26,8 @@ class UpdateTaskSpeedReq:
         'totalsize': 'int',
         'process_trace': 'str',
         'migrate_speed': 'float',
-        'compress_rate': 'float'
+        'compress_rate': 'float',
+        'remain_time': 'int'
     }
 
     attribute_map = {
@@ -36,10 +37,11 @@ class UpdateTaskSpeedReq:
         'totalsize': 'totalsize',
         'process_trace': 'process_trace',
         'migrate_speed': 'migrate_speed',
-        'compress_rate': 'compress_rate'
+        'compress_rate': 'compress_rate',
+        'remain_time': 'remain_time'
     }
 
-    def __init__(self, subtask_name=None, progress=None, replicatesize=None, totalsize=None, process_trace=None, migrate_speed=None, compress_rate=None):
+    def __init__(self, subtask_name=None, progress=None, replicatesize=None, totalsize=None, process_trace=None, migrate_speed=None, compress_rate=None, remain_time=None):
         """UpdateTaskSpeedReq
 
         The model defined in huaweicloud sdk
@@ -58,6 +60,8 @@ class UpdateTaskSpeedReq:
         :type migrate_speed: float
         :param compress_rate: 实施文件压缩率
         :type compress_rate: float
+        :param remain_time: 剩余时间
+        :type remain_time: int
         """
         
         
@@ -69,6 +73,7 @@ class UpdateTaskSpeedReq:
         self._process_trace = None
         self._migrate_speed = None
         self._compress_rate = None
+        self._remain_time = None
         self.discriminator = None
 
         self.subtask_name = subtask_name
@@ -80,6 +85,8 @@ class UpdateTaskSpeedReq:
             self.migrate_speed = migrate_speed
         if compress_rate is not None:
             self.compress_rate = compress_rate
+        if remain_time is not None:
+            self.remain_time = remain_time
 
     @property
     def subtask_name(self):
@@ -234,6 +241,28 @@ class UpdateTaskSpeedReq:
         :type compress_rate: float
         """
         self._compress_rate = compress_rate
+
+    @property
+    def remain_time(self):
+        """Gets the remain_time of this UpdateTaskSpeedReq.
+
+        剩余时间
+
+        :return: The remain_time of this UpdateTaskSpeedReq.
+        :rtype: int
+        """
+        return self._remain_time
+
+    @remain_time.setter
+    def remain_time(self, remain_time):
+        """Sets the remain_time of this UpdateTaskSpeedReq.
+
+        剩余时间
+
+        :param remain_time: The remain_time of this UpdateTaskSpeedReq.
+        :type remain_time: int
+        """
+        self._remain_time = remain_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

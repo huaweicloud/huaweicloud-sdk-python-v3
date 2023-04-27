@@ -20,58 +20,58 @@ class WaterfallPageListParam:
     sensitive_list = []
 
     openapi_types = {
-        'maker': 'str',
+        'marker': 'str',
         'limit': 'int'
     }
 
     attribute_map = {
-        'maker': 'maker',
+        'marker': 'marker',
         'limit': 'limit'
     }
 
-    def __init__(self, maker=None, limit=None):
+    def __init__(self, marker=None, limit=None):
         """WaterfallPageListParam
 
         The model defined in huaweicloud sdk
 
-        :param maker: 页面的分页标志位；为分页的最后一条记录的id
-        :type maker: str
+        :param marker: 页面的分页标志位；为分页的最后一条记录的id
+        :type marker: str
         :param limit: 查询返回记录的数量限制
         :type limit: int
         """
         
         
 
-        self._maker = None
+        self._marker = None
         self._limit = None
         self.discriminator = None
 
-        if maker is not None:
-            self.maker = maker
+        if marker is not None:
+            self.marker = marker
         if limit is not None:
             self.limit = limit
 
     @property
-    def maker(self):
-        """Gets the maker of this WaterfallPageListParam.
+    def marker(self):
+        """Gets the marker of this WaterfallPageListParam.
 
         页面的分页标志位；为分页的最后一条记录的id
 
-        :return: The maker of this WaterfallPageListParam.
+        :return: The marker of this WaterfallPageListParam.
         :rtype: str
         """
-        return self._maker
+        return self._marker
 
-    @maker.setter
-    def maker(self, maker):
-        """Sets the maker of this WaterfallPageListParam.
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this WaterfallPageListParam.
 
         页面的分页标志位；为分页的最后一条记录的id
 
-        :param maker: The maker of this WaterfallPageListParam.
-        :type maker: str
+        :param marker: The marker of this WaterfallPageListParam.
+        :type marker: str
         """
-        self._maker = maker
+        self._marker = marker
 
     @property
     def limit(self):

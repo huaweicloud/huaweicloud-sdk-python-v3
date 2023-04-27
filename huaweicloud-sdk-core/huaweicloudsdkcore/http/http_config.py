@@ -24,7 +24,7 @@ import six
 class HttpConfig(object):
     def __init__(self, proxy_protocol=None, proxy_host=None, proxy_port=None, proxy_user=None, proxy_password=None,
                  ignore_ssl_verification=False, ssl_ca_cert=None, cert_file=None, key_file=None, timeout=(60, 120),
-                 retry_times=0, pool_connections=1, pool_maxsize=1):
+                 retry_times=0, pool_connections=10, pool_maxsize=10):
         """
         :param proxy_protocol(optional) : proxy protocol, http or https
         :type proxy_protocol: str
@@ -63,11 +63,11 @@ class HttpConfig(object):
         :type retry_times: int
 
         :param pool_connections: number of urllib3 connection pools to cache,
-         default, value is 1
+         default, value is 10
         :type pool_connections: int
 
         :param pool_maxsize: maximum number of connections to save in the pool，
-         default, value is 1
+         default, value is 10
         :type pool_maxsize: int
         """
         self.proxy_protocol = proxy_protocol

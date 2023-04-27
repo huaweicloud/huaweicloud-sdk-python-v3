@@ -58,8 +58,7 @@ class AomMappingRequestInfo:
 
         self.project_id = project_id
         self.rule_name = rule_name
-        if rule_id is not None:
-            self.rule_id = rule_id
+        self.rule_id = rule_id
         self.rule_info = rule_info
 
     @property

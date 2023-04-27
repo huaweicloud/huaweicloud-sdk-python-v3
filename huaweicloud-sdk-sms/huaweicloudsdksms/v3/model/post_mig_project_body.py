@@ -30,7 +30,8 @@ class PostMigProjectBody:
         'exist_server': 'bool',
         'type': 'str',
         'enterprise_project': 'str',
-        'syncing': 'bool'
+        'syncing': 'bool',
+        'start_networck_check': 'bool'
     }
 
     attribute_map = {
@@ -44,10 +45,11 @@ class PostMigProjectBody:
         'exist_server': 'exist_server',
         'type': 'type',
         'enterprise_project': 'enterprise_project',
-        'syncing': 'syncing'
+        'syncing': 'syncing',
+        'start_networck_check': 'start_networck_check'
     }
 
-    def __init__(self, name=None, description=None, isdefault=None, region=None, start_target_server=None, speed_limit=None, use_public_ip=None, exist_server=None, type=None, enterprise_project=None, syncing=None):
+    def __init__(self, name=None, description=None, isdefault=None, region=None, start_target_server=None, speed_limit=None, use_public_ip=None, exist_server=None, type=None, enterprise_project=None, syncing=None, start_networck_check=None):
         """PostMigProjectBody
 
         The model defined in huaweicloud sdk
@@ -68,12 +70,14 @@ class PostMigProjectBody:
         :type use_public_ip: bool
         :param exist_server: 是否是已经存在的服务器
         :type exist_server: bool
-        :param type: 迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移 
+        :param type: 迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移
         :type type: str
         :param enterprise_project: 企业项目名称
         :type enterprise_project: str
         :param syncing: 首次复制或者同步后 是否继续持续同步
         :type syncing: bool
+        :param start_networck_check: 是否启动网络质量检测
+        :type start_networck_check: bool
         """
         
         
@@ -89,6 +93,7 @@ class PostMigProjectBody:
         self._type = None
         self._enterprise_project = None
         self._syncing = None
+        self._start_networck_check = None
         self.discriminator = None
 
         self.name = name
@@ -107,6 +112,8 @@ class PostMigProjectBody:
         if enterprise_project is not None:
             self.enterprise_project = enterprise_project
         self.syncing = syncing
+        if start_networck_check is not None:
+            self.start_networck_check = start_networck_check
 
     @property
     def name(self):
@@ -288,7 +295,7 @@ class PostMigProjectBody:
     def type(self):
         """Gets the type of this PostMigProjectBody.
 
-        迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移 
+        迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移
 
         :return: The type of this PostMigProjectBody.
         :rtype: str
@@ -299,7 +306,7 @@ class PostMigProjectBody:
     def type(self, type):
         """Sets the type of this PostMigProjectBody.
 
-        迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移 
+        迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移
 
         :param type: The type of this PostMigProjectBody.
         :type type: str
@@ -349,6 +356,28 @@ class PostMigProjectBody:
         :type syncing: bool
         """
         self._syncing = syncing
+
+    @property
+    def start_networck_check(self):
+        """Gets the start_networck_check of this PostMigProjectBody.
+
+        是否启动网络质量检测
+
+        :return: The start_networck_check of this PostMigProjectBody.
+        :rtype: bool
+        """
+        return self._start_networck_check
+
+    @start_networck_check.setter
+    def start_networck_check(self, start_networck_check):
+        """Sets the start_networck_check of this PostMigProjectBody.
+
+        是否启动网络质量检测
+
+        :param start_networck_check: The start_networck_check of this PostMigProjectBody.
+        :type start_networck_check: bool
+        """
+        self._start_networck_check = start_networck_check
 
     def to_dict(self):
         """Returns the model properties as a dict"""

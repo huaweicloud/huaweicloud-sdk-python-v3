@@ -52,7 +52,7 @@ class ApiPolicyHttpBase:
         :type req_uri: str
         :param timeout: API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
         :type timeout: int
-        :param retry_count: 请求后端服务的重试次数，默认为-1，范围[-1,10]
+        :param retry_count: 请求后端服务的重试次数，默认为-1，范围[-1,10]。  当该值为-1时，幂等的接口会重试1次，非幂等的不会重试。POST，PATCH方法为非幂等；GET，HEAD，PUT，OPTIONS和DELETE等方法为幂等的。
         :type retry_count: str
         """
         
@@ -190,7 +190,7 @@ class ApiPolicyHttpBase:
     def retry_count(self):
         """Gets the retry_count of this ApiPolicyHttpBase.
 
-        请求后端服务的重试次数，默认为-1，范围[-1,10]
+        请求后端服务的重试次数，默认为-1，范围[-1,10]。  当该值为-1时，幂等的接口会重试1次，非幂等的不会重试。POST，PATCH方法为非幂等；GET，HEAD，PUT，OPTIONS和DELETE等方法为幂等的。
 
         :return: The retry_count of this ApiPolicyHttpBase.
         :rtype: str
@@ -201,7 +201,7 @@ class ApiPolicyHttpBase:
     def retry_count(self, retry_count):
         """Sets the retry_count of this ApiPolicyHttpBase.
 
-        请求后端服务的重试次数，默认为-1，范围[-1,10]
+        请求后端服务的重试次数，默认为-1，范围[-1,10]。  当该值为-1时，幂等的接口会重试1次，非幂等的不会重试。POST，PATCH方法为非幂等；GET，HEAD，PUT，OPTIONS和DELETE等方法为幂等的。
 
         :param retry_count: The retry_count of this ApiPolicyHttpBase.
         :type retry_count: str

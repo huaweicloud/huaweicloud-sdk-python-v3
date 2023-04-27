@@ -34,7 +34,7 @@ class AttachPolicyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param policy_id: 根、组织单元或帐号的唯一标识符（ID）。
+        :param policy_id: 策略的唯一标识符（ID）。
         :type policy_id: str
         :param body: Body of the AttachPolicyRequest
         :type body: :class:`huaweicloudsdkorganizations.v1.PolicyTachReqBody`
@@ -54,7 +54,7 @@ class AttachPolicyRequest:
     def policy_id(self):
         """Gets the policy_id of this AttachPolicyRequest.
 
-        根、组织单元或帐号的唯一标识符（ID）。
+        策略的唯一标识符（ID）。
 
         :return: The policy_id of this AttachPolicyRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class AttachPolicyRequest:
     def policy_id(self, policy_id):
         """Sets the policy_id of this AttachPolicyRequest.
 
-        根、组织单元或帐号的唯一标识符（ID）。
+        策略的唯一标识符（ID）。
 
         :param policy_id: The policy_id of this AttachPolicyRequest.
         :type policy_id: str

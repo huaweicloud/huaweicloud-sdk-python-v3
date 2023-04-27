@@ -29,7 +29,8 @@ class QueryLtsLogParams:
         'is_desc': 'bool',
         'search_type': 'str',
         'limit': 'int',
-        'highlight': 'bool'
+        'highlight': 'bool',
+        'is_iterative': 'bool'
     }
 
     attribute_map = {
@@ -42,10 +43,11 @@ class QueryLtsLogParams:
         'is_desc': 'is_desc',
         'search_type': 'search_type',
         'limit': 'limit',
-        'highlight': 'highlight'
+        'highlight': 'highlight',
+        'is_iterative': 'is_iterative'
     }
 
-    def __init__(self, start_time=None, end_time=None, labels=None, is_count=None, keywords=None, line_num=None, is_desc=None, search_type=None, limit=None, highlight=None):
+    def __init__(self, start_time=None, end_time=None, labels=None, is_count=None, keywords=None, line_num=None, is_desc=None, search_type=None, limit=None, highlight=None, is_iterative=None):
         """QueryLtsLogParams
 
         The model defined in huaweicloud sdk
@@ -70,6 +72,8 @@ class QueryLtsLogParams:
         :type limit: int
         :param highlight: 日志关键词高亮显示，默认为true（高亮显示），false为取消高亮显示。
         :type highlight: bool
+        :param is_iterative: 日志迭代查询，默认为false（不开启迭代），true为开启迭代。
+        :type is_iterative: bool
         """
         
         
@@ -84,6 +88,7 @@ class QueryLtsLogParams:
         self._search_type = None
         self._limit = None
         self._highlight = None
+        self._is_iterative = None
         self.discriminator = None
 
         self.start_time = start_time
@@ -104,6 +109,8 @@ class QueryLtsLogParams:
             self.limit = limit
         if highlight is not None:
             self.highlight = highlight
+        if is_iterative is not None:
+            self.is_iterative = is_iterative
 
     @property
     def start_time(self):
@@ -324,6 +331,28 @@ class QueryLtsLogParams:
         :type highlight: bool
         """
         self._highlight = highlight
+
+    @property
+    def is_iterative(self):
+        """Gets the is_iterative of this QueryLtsLogParams.
+
+        日志迭代查询，默认为false（不开启迭代），true为开启迭代。
+
+        :return: The is_iterative of this QueryLtsLogParams.
+        :rtype: bool
+        """
+        return self._is_iterative
+
+    @is_iterative.setter
+    def is_iterative(self, is_iterative):
+        """Sets the is_iterative of this QueryLtsLogParams.
+
+        日志迭代查询，默认为false（不开启迭代），true为开启迭代。
+
+        :param is_iterative: The is_iterative of this QueryLtsLogParams.
+        :type is_iterative: bool
+        """
+        self._is_iterative = is_iterative
 
     def to_dict(self):
         """Returns the model properties as a dict"""

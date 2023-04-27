@@ -25,7 +25,8 @@ class QueryLogKeyWordCountRequestBody:
         'step_interval': 'int',
         'group_id': 'str',
         'stream_id': 'str',
-        'key_word': 'str'
+        'key_word': 'str',
+        'is_iterative': 'bool'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class QueryLogKeyWordCountRequestBody:
         'step_interval': 'step_interval',
         'group_id': 'group_id',
         'stream_id': 'stream_id',
-        'key_word': 'key_word'
+        'key_word': 'key_word',
+        'is_iterative': 'is_iterative'
     }
 
-    def __init__(self, start_time=None, end_time=None, step_interval=None, group_id=None, stream_id=None, key_word=None):
+    def __init__(self, start_time=None, end_time=None, step_interval=None, group_id=None, stream_id=None, key_word=None, is_iterative=None):
         """QueryLogKeyWordCountRequestBody
 
         The model defined in huaweicloud sdk
@@ -54,6 +56,8 @@ class QueryLogKeyWordCountRequestBody:
         :type stream_id: str
         :param key_word: 关键词
         :type key_word: str
+        :param is_iterative: 日志迭代查询，默认为false（不开启迭代），true为开启迭代。
+        :type is_iterative: bool
         """
         
         
@@ -64,6 +68,7 @@ class QueryLogKeyWordCountRequestBody:
         self._group_id = None
         self._stream_id = None
         self._key_word = None
+        self._is_iterative = None
         self.discriminator = None
 
         self.start_time = start_time
@@ -72,6 +77,8 @@ class QueryLogKeyWordCountRequestBody:
         self.group_id = group_id
         self.stream_id = stream_id
         self.key_word = key_word
+        if is_iterative is not None:
+            self.is_iterative = is_iterative
 
     @property
     def start_time(self):
@@ -204,6 +211,28 @@ class QueryLogKeyWordCountRequestBody:
         :type key_word: str
         """
         self._key_word = key_word
+
+    @property
+    def is_iterative(self):
+        """Gets the is_iterative of this QueryLogKeyWordCountRequestBody.
+
+        日志迭代查询，默认为false（不开启迭代），true为开启迭代。
+
+        :return: The is_iterative of this QueryLogKeyWordCountRequestBody.
+        :rtype: bool
+        """
+        return self._is_iterative
+
+    @is_iterative.setter
+    def is_iterative(self, is_iterative):
+        """Sets the is_iterative of this QueryLogKeyWordCountRequestBody.
+
+        日志迭代查询，默认为false（不开启迭代），true为开启迭代。
+
+        :param is_iterative: The is_iterative of this QueryLogKeyWordCountRequestBody.
+        :type is_iterative: bool
+        """
+        self._is_iterative = is_iterative
 
     def to_dict(self):
         """Returns the model properties as a dict"""

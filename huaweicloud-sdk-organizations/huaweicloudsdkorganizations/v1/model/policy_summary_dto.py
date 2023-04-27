@@ -52,7 +52,7 @@ class PolicySummaryDto:
         :type urn: str
         :param name: 策略的名称。
         :type name: str
-        :param type: 策略的类型,service_control_policy：服务控制策略。
+        :param type: 策略的类型,service_control_policy：服务控制策略；tag_policy：标签策略。
         :type type: str
         """
         
@@ -187,7 +187,7 @@ class PolicySummaryDto:
     def type(self):
         """Gets the type of this PolicySummaryDto.
 
-        策略的类型,service_control_policy：服务控制策略。
+        策略的类型,service_control_policy：服务控制策略；tag_policy：标签策略。
 
         :return: The type of this PolicySummaryDto.
         :rtype: str
@@ -198,7 +198,7 @@ class PolicySummaryDto:
     def type(self, type):
         """Sets the type of this PolicySummaryDto.
 
-        策略的类型,service_control_policy：服务控制策略。
+        策略的类型,service_control_policy：服务控制策略；tag_policy：标签策略。
 
         :param type: The type of this PolicySummaryDto.
         :type type: str

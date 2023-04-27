@@ -41,7 +41,9 @@ class TasksResponseBody:
         'target_server': 'TargetServerAssociatedWithTask',
         'log_collect_status': 'str',
         'clone_server': 'CloneServerBrief',
-        'syncing': 'bool'
+        'syncing': 'bool',
+        'network_check_info': 'NetworkCheckInfoRequestBody',
+        'special_config': 'list[ConfigBody]'
     }
 
     attribute_map = {
@@ -66,10 +68,12 @@ class TasksResponseBody:
         'target_server': 'target_server',
         'log_collect_status': 'log_collect_status',
         'clone_server': 'clone_server',
-        'syncing': 'syncing'
+        'syncing': 'syncing',
+        'network_check_info': 'network_check_info',
+        'special_config': 'special_config'
     }
 
-    def __init__(self, id=None, name=None, type=None, os_type=None, state=None, estimate_complete_time=None, create_date=None, priority=None, speed_limit=None, migrate_speed=None, compress_rate=None, start_target_server=None, error_json=None, total_time=None, migration_ip=None, sub_tasks=None, source_server=None, enterprise_project_id=None, target_server=None, log_collect_status=None, clone_server=None, syncing=None):
+    def __init__(self, id=None, name=None, type=None, os_type=None, state=None, estimate_complete_time=None, create_date=None, priority=None, speed_limit=None, migrate_speed=None, compress_rate=None, start_target_server=None, error_json=None, total_time=None, migration_ip=None, sub_tasks=None, source_server=None, enterprise_project_id=None, target_server=None, log_collect_status=None, clone_server=None, syncing=None, network_check_info=None, special_config=None):
         """TasksResponseBody
 
         The model defined in huaweicloud sdk
@@ -78,7 +82,7 @@ class TasksResponseBody:
         :type id: str
         :param name: 任务名称（用户自定义）
         :type name: str
-        :param type: 任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
+        :param type: 任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移
         :type type: str
         :param os_type: 操作系统类型，分为WINDOWS和LINUX，创建时必选，更新时可选
         :type os_type: str
@@ -112,12 +116,16 @@ class TasksResponseBody:
         :type enterprise_project_id: str
         :param target_server: 
         :type target_server: :class:`huaweicloudsdksms.v3.TargetServerAssociatedWithTask`
-        :param log_collect_status: 日志收集状态 INIT TELL_AGENT_TO_COLLECT WAIT_AGENT_COLLECT_ACK AGENT_COLLECT_FAIL AGENT_COLLECT_SUCCESS WAIT_SERVER_COLLECT SERVER_COLLECT_FAIL SERVER_COLLECT_SUCCESS TELL_AGENT_RESET_ACL WAIT_AGENT_RESET_ACL_ACK 
+        :param log_collect_status: 日志收集状态 INIT TELL_AGENT_TO_COLLECT WAIT_AGENT_COLLECT_ACK AGENT_COLLECT_FAIL AGENT_COLLECT_SUCCESS WAIT_SERVER_COLLECT SERVER_COLLECT_FAIL SERVER_COLLECT_SUCCESS TELL_AGENT_RESET_ACL WAIT_AGENT_RESET_ACL_ACK
         :type log_collect_status: str
         :param clone_server: 
         :type clone_server: :class:`huaweicloudsdksms.v3.CloneServerBrief`
         :param syncing: 是否同步
         :type syncing: bool
+        :param network_check_info: 
+        :type network_check_info: :class:`huaweicloudsdksms.v3.NetworkCheckInfoRequestBody`
+        :param special_config: 特殊配置项配置信息
+        :type special_config: list[:class:`huaweicloudsdksms.v3.ConfigBody`]
         """
         
         
@@ -144,6 +152,8 @@ class TasksResponseBody:
         self._log_collect_status = None
         self._clone_server = None
         self._syncing = None
+        self._network_check_info = None
+        self._special_config = None
         self.discriminator = None
 
         if id is not None:
@@ -190,6 +200,10 @@ class TasksResponseBody:
             self.clone_server = clone_server
         if syncing is not None:
             self.syncing = syncing
+        if network_check_info is not None:
+            self.network_check_info = network_check_info
+        if special_config is not None:
+            self.special_config = special_config
 
     @property
     def id(self):
@@ -239,7 +253,7 @@ class TasksResponseBody:
     def type(self):
         """Gets the type of this TasksResponseBody.
 
-        任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
+        任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移
 
         :return: The type of this TasksResponseBody.
         :rtype: str
@@ -250,7 +264,7 @@ class TasksResponseBody:
     def type(self, type):
         """Sets the type of this TasksResponseBody.
 
-        任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
+        任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移
 
         :param type: The type of this TasksResponseBody.
         :type type: str
@@ -605,7 +619,7 @@ class TasksResponseBody:
     def log_collect_status(self):
         """Gets the log_collect_status of this TasksResponseBody.
 
-        日志收集状态 INIT TELL_AGENT_TO_COLLECT WAIT_AGENT_COLLECT_ACK AGENT_COLLECT_FAIL AGENT_COLLECT_SUCCESS WAIT_SERVER_COLLECT SERVER_COLLECT_FAIL SERVER_COLLECT_SUCCESS TELL_AGENT_RESET_ACL WAIT_AGENT_RESET_ACL_ACK 
+        日志收集状态 INIT TELL_AGENT_TO_COLLECT WAIT_AGENT_COLLECT_ACK AGENT_COLLECT_FAIL AGENT_COLLECT_SUCCESS WAIT_SERVER_COLLECT SERVER_COLLECT_FAIL SERVER_COLLECT_SUCCESS TELL_AGENT_RESET_ACL WAIT_AGENT_RESET_ACL_ACK
 
         :return: The log_collect_status of this TasksResponseBody.
         :rtype: str
@@ -616,7 +630,7 @@ class TasksResponseBody:
     def log_collect_status(self, log_collect_status):
         """Sets the log_collect_status of this TasksResponseBody.
 
-        日志收集状态 INIT TELL_AGENT_TO_COLLECT WAIT_AGENT_COLLECT_ACK AGENT_COLLECT_FAIL AGENT_COLLECT_SUCCESS WAIT_SERVER_COLLECT SERVER_COLLECT_FAIL SERVER_COLLECT_SUCCESS TELL_AGENT_RESET_ACL WAIT_AGENT_RESET_ACL_ACK 
+        日志收集状态 INIT TELL_AGENT_TO_COLLECT WAIT_AGENT_COLLECT_ACK AGENT_COLLECT_FAIL AGENT_COLLECT_SUCCESS WAIT_SERVER_COLLECT SERVER_COLLECT_FAIL SERVER_COLLECT_SUCCESS TELL_AGENT_RESET_ACL WAIT_AGENT_RESET_ACL_ACK
 
         :param log_collect_status: The log_collect_status of this TasksResponseBody.
         :type log_collect_status: str
@@ -662,6 +676,46 @@ class TasksResponseBody:
         :type syncing: bool
         """
         self._syncing = syncing
+
+    @property
+    def network_check_info(self):
+        """Gets the network_check_info of this TasksResponseBody.
+
+        :return: The network_check_info of this TasksResponseBody.
+        :rtype: :class:`huaweicloudsdksms.v3.NetworkCheckInfoRequestBody`
+        """
+        return self._network_check_info
+
+    @network_check_info.setter
+    def network_check_info(self, network_check_info):
+        """Sets the network_check_info of this TasksResponseBody.
+
+        :param network_check_info: The network_check_info of this TasksResponseBody.
+        :type network_check_info: :class:`huaweicloudsdksms.v3.NetworkCheckInfoRequestBody`
+        """
+        self._network_check_info = network_check_info
+
+    @property
+    def special_config(self):
+        """Gets the special_config of this TasksResponseBody.
+
+        特殊配置项配置信息
+
+        :return: The special_config of this TasksResponseBody.
+        :rtype: list[:class:`huaweicloudsdksms.v3.ConfigBody`]
+        """
+        return self._special_config
+
+    @special_config.setter
+    def special_config(self, special_config):
+        """Sets the special_config of this TasksResponseBody.
+
+        特殊配置项配置信息
+
+        :param special_config: The special_config of this TasksResponseBody.
+        :type special_config: list[:class:`huaweicloudsdksms.v3.ConfigBody`]
+        """
+        self._special_config = special_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -23,17 +23,19 @@ class ListObsBucketObjectRequest:
         'bucket_name': 'str',
         'limit': 'int',
         'offset': 'int',
-        'path': 'str'
+        'path': 'str',
+        'search_key': 'str'
     }
 
     attribute_map = {
         'bucket_name': 'bucket_name',
         'limit': 'limit',
         'offset': 'offset',
-        'path': 'path'
+        'path': 'path',
+        'search_key': 'search_key'
     }
 
-    def __init__(self, bucket_name=None, limit=None, offset=None, path=None):
+    def __init__(self, bucket_name=None, limit=None, offset=None, path=None, search_key=None):
         """ListObsBucketObjectRequest
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class ListObsBucketObjectRequest:
         :type offset: int
         :param path: 子路径
         :type path: str
+        :param search_key: 查询关键词
+        :type search_key: str
         """
         
         
@@ -54,6 +58,7 @@ class ListObsBucketObjectRequest:
         self._limit = None
         self._offset = None
         self._path = None
+        self._search_key = None
         self.discriminator = None
 
         self.bucket_name = bucket_name
@@ -63,6 +68,8 @@ class ListObsBucketObjectRequest:
             self.offset = offset
         if path is not None:
             self.path = path
+        if search_key is not None:
+            self.search_key = search_key
 
     @property
     def bucket_name(self):
@@ -151,6 +158,28 @@ class ListObsBucketObjectRequest:
         :type path: str
         """
         self._path = path
+
+    @property
+    def search_key(self):
+        """Gets the search_key of this ListObsBucketObjectRequest.
+
+        查询关键词
+
+        :return: The search_key of this ListObsBucketObjectRequest.
+        :rtype: str
+        """
+        return self._search_key
+
+    @search_key.setter
+    def search_key(self, search_key):
+        """Sets the search_key of this ListObsBucketObjectRequest.
+
+        查询关键词
+
+        :param search_key: The search_key of this ListObsBucketObjectRequest.
+        :type search_key: str
+        """
+        self._search_key = search_key
 
     def to_dict(self):
         """Returns the model properties as a dict"""

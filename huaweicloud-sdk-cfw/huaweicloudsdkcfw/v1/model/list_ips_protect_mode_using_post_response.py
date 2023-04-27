@@ -20,80 +20,47 @@ class ListIpsProtectModeUsingPostResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'object_id': 'str',
-        'status': 'int'
+        'data': 'IpsProtectModeObject'
     }
 
     attribute_map = {
-        'object_id': 'object_id',
-        'status': 'status'
+        'data': 'data'
     }
 
-    def __init__(self, object_id=None, status=None):
+    def __init__(self, data=None):
         """ListIpsProtectModeUsingPostResponse
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
-        :type object_id: str
-        :param status: 防护状态
-        :type status: int
+        :param data: 
+        :type data: :class:`huaweicloudsdkcfw.v1.IpsProtectModeObject`
         """
         
         super(ListIpsProtectModeUsingPostResponse, self).__init__()
 
-        self._object_id = None
-        self._status = None
+        self._data = None
         self.discriminator = None
 
-        if object_id is not None:
-            self.object_id = object_id
-        if status is not None:
-            self.status = status
+        if data is not None:
+            self.data = data
 
     @property
-    def object_id(self):
-        """Gets the object_id of this ListIpsProtectModeUsingPostResponse.
+    def data(self):
+        """Gets the data of this ListIpsProtectModeUsingPostResponse.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
-
-        :return: The object_id of this ListIpsProtectModeUsingPostResponse.
-        :rtype: str
+        :return: The data of this ListIpsProtectModeUsingPostResponse.
+        :rtype: :class:`huaweicloudsdkcfw.v1.IpsProtectModeObject`
         """
-        return self._object_id
+        return self._data
 
-    @object_id.setter
-    def object_id(self, object_id):
-        """Sets the object_id of this ListIpsProtectModeUsingPostResponse.
+    @data.setter
+    def data(self, data):
+        """Sets the data of this ListIpsProtectModeUsingPostResponse.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
-
-        :param object_id: The object_id of this ListIpsProtectModeUsingPostResponse.
-        :type object_id: str
+        :param data: The data of this ListIpsProtectModeUsingPostResponse.
+        :type data: :class:`huaweicloudsdkcfw.v1.IpsProtectModeObject`
         """
-        self._object_id = object_id
-
-    @property
-    def status(self):
-        """Gets the status of this ListIpsProtectModeUsingPostResponse.
-
-        防护状态
-
-        :return: The status of this ListIpsProtectModeUsingPostResponse.
-        :rtype: int
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this ListIpsProtectModeUsingPostResponse.
-
-        防护状态
-
-        :param status: The status of this ListIpsProtectModeUsingPostResponse.
-        :type status: int
-        """
-        self._status = status
+        self._data = data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

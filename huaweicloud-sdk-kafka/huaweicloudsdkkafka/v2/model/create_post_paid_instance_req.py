@@ -43,6 +43,7 @@ class CreatePostPaidInstanceReq:
         'public_bandwidth': 'int',
         'publicip_id': 'str',
         'ssl_enable': 'bool',
+        'kafka_security_protocol': 'str',
         'sasl_enabled_mechanisms': 'list[str]',
         'retention_policy': 'str',
         'disk_encrypted_enable': 'bool',
@@ -78,6 +79,7 @@ class CreatePostPaidInstanceReq:
         'public_bandwidth': 'public_bandwidth',
         'publicip_id': 'publicip_id',
         'ssl_enable': 'ssl_enable',
+        'kafka_security_protocol': 'kafka_security_protocol',
         'sasl_enabled_mechanisms': 'sasl_enabled_mechanisms',
         'retention_policy': 'retention_policy',
         'disk_encrypted_enable': 'disk_encrypted_enable',
@@ -89,7 +91,7 @@ class CreatePostPaidInstanceReq:
         'tags': 'tags'
     }
 
-    def __init__(self, name=None, description=None, engine=None, engine_version=None, specification=None, broker_num=None, storage_space=None, partition_num=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, kafka_manager_user=None, kafka_manager_password=None, maintain_begin=None, maintain_end=None, enable_publicip=None, public_bandwidth=None, publicip_id=None, ssl_enable=None, sasl_enabled_mechanisms=None, retention_policy=None, disk_encrypted_enable=None, disk_encrypted_key=None, connector_enable=None, enable_auto_topic=None, storage_spec_code=None, enterprise_project_id=None, tags=None):
+    def __init__(self, name=None, description=None, engine=None, engine_version=None, specification=None, broker_num=None, storage_space=None, partition_num=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, kafka_manager_user=None, kafka_manager_password=None, maintain_begin=None, maintain_end=None, enable_publicip=None, public_bandwidth=None, publicip_id=None, ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, retention_policy=None, disk_encrypted_enable=None, disk_encrypted_key=None, connector_enable=None, enable_auto_topic=None, storage_spec_code=None, enterprise_project_id=None, tags=None):
         """CreatePostPaidInstanceReq
 
         The model defined in huaweicloud sdk
@@ -140,6 +142,8 @@ class CreatePostPaidInstanceReq:
         :type publicip_id: str
         :param ssl_enable: 是否打开SSL加密访问。  实例创建后将不支持动态开启和关闭。  - true：打开SSL加密访问。 - false：不打开SSL加密访问。
         :type ssl_enable: bool
+        :param kafka_security_protocol: 开启SASL后使用的安全协议，如果开启了SASL认证功能（即ssl_enable&#x3D;true），该字段为必选。  若该字段值为空，默认开启SASL_SSL认证机制。  实例创建后将不支持动态开启和关闭。  - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，仅支持SCRAM-SHA-512机制。
+        :type kafka_security_protocol: str
         :param sasl_enabled_mechanisms: 开启SASL后使用的认证机制，如果开启了SASL认证功能（即ssl_enable&#x3D;true），该字段为必选。  若该字段值为空，默认开启PLAIN认证机制。  选择其一进行SASL认证即可,支持同时开启两种认证机制。 取值如下： - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
         :type sasl_enabled_mechanisms: list[str]
         :param retention_policy: 磁盘的容量到达容量阈值后，对于消息的处理策略。  取值如下： - produce_reject：表示拒绝消息写入。 - time_base：表示自动删除最老消息。
@@ -185,6 +189,7 @@ class CreatePostPaidInstanceReq:
         self._public_bandwidth = None
         self._publicip_id = None
         self._ssl_enable = None
+        self._kafka_security_protocol = None
         self._sasl_enabled_mechanisms = None
         self._retention_policy = None
         self._disk_encrypted_enable = None
@@ -233,6 +238,8 @@ class CreatePostPaidInstanceReq:
             self.publicip_id = publicip_id
         if ssl_enable is not None:
             self.ssl_enable = ssl_enable
+        if kafka_security_protocol is not None:
+            self.kafka_security_protocol = kafka_security_protocol
         if sasl_enabled_mechanisms is not None:
             self.sasl_enabled_mechanisms = sasl_enabled_mechanisms
         if retention_policy is not None:
@@ -756,6 +763,28 @@ class CreatePostPaidInstanceReq:
         :type ssl_enable: bool
         """
         self._ssl_enable = ssl_enable
+
+    @property
+    def kafka_security_protocol(self):
+        """Gets the kafka_security_protocol of this CreatePostPaidInstanceReq.
+
+        开启SASL后使用的安全协议，如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。  若该字段值为空，默认开启SASL_SSL认证机制。  实例创建后将不支持动态开启和关闭。  - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，仅支持SCRAM-SHA-512机制。
+
+        :return: The kafka_security_protocol of this CreatePostPaidInstanceReq.
+        :rtype: str
+        """
+        return self._kafka_security_protocol
+
+    @kafka_security_protocol.setter
+    def kafka_security_protocol(self, kafka_security_protocol):
+        """Sets the kafka_security_protocol of this CreatePostPaidInstanceReq.
+
+        开启SASL后使用的安全协议，如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。  若该字段值为空，默认开启SASL_SSL认证机制。  实例创建后将不支持动态开启和关闭。  - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，仅支持SCRAM-SHA-512机制。
+
+        :param kafka_security_protocol: The kafka_security_protocol of this CreatePostPaidInstanceReq.
+        :type kafka_security_protocol: str
+        """
+        self._kafka_security_protocol = kafka_security_protocol
 
     @property
     def sasl_enabled_mechanisms(self):

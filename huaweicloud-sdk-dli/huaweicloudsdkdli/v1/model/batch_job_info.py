@@ -44,7 +44,8 @@ class BatchJobInfo:
         'auto_recovery': 'bool',
         'max_retry_times': 'int',
         'image': 'str',
-        'obs_bucket': 'str'
+        'obs_bucket': 'str',
+        'catalog_name': 'str'
     }
 
     attribute_map = {
@@ -72,10 +73,11 @@ class BatchJobInfo:
         'auto_recovery': 'auto_recovery',
         'max_retry_times': 'max_retry_times',
         'image': 'image',
-        'obs_bucket': 'obs_bucket'
+        'obs_bucket': 'obs_bucket',
+        'catalog_name': 'catalog_name'
     }
 
-    def __init__(self, file=None, class_name=None, cluster_name=None, args=None, sc_type=None, jars=None, py_files=None, files=None, modules=None, resources=None, groups=None, conf=None, name=None, driver_memory=None, driver_cores=None, executor_memory=None, executor_cores=None, num_executors=None, feature=None, spark_version=None, queue=None, auto_recovery=None, max_retry_times=None, image=None, obs_bucket=None):
+    def __init__(self, file=None, class_name=None, cluster_name=None, args=None, sc_type=None, jars=None, py_files=None, files=None, modules=None, resources=None, groups=None, conf=None, name=None, driver_memory=None, driver_cores=None, executor_memory=None, executor_cores=None, num_executors=None, feature=None, spark_version=None, queue=None, auto_recovery=None, max_retry_times=None, image=None, obs_bucket=None, catalog_name=None):
         """BatchJobInfo
 
         The model defined in huaweicloud sdk
@@ -130,6 +132,8 @@ class BatchJobInfo:
         :type image: str
         :param obs_bucket: 保存Spark作业的obs桶，需要保存作业时配置该参数
         :type obs_bucket: str
+        :param catalog_name: 访问元数据时，需要将该参数配置为dli。
+        :type catalog_name: str
         """
         
         
@@ -159,6 +163,7 @@ class BatchJobInfo:
         self._max_retry_times = None
         self._image = None
         self._obs_bucket = None
+        self._catalog_name = None
         self.discriminator = None
 
         self.file = file
@@ -209,6 +214,8 @@ class BatchJobInfo:
             self.image = image
         if obs_bucket is not None:
             self.obs_bucket = obs_bucket
+        if catalog_name is not None:
+            self.catalog_name = catalog_name
 
     @property
     def file(self):
@@ -759,6 +766,28 @@ class BatchJobInfo:
         :type obs_bucket: str
         """
         self._obs_bucket = obs_bucket
+
+    @property
+    def catalog_name(self):
+        """Gets the catalog_name of this BatchJobInfo.
+
+        访问元数据时，需要将该参数配置为dli。
+
+        :return: The catalog_name of this BatchJobInfo.
+        :rtype: str
+        """
+        return self._catalog_name
+
+    @catalog_name.setter
+    def catalog_name(self, catalog_name):
+        """Sets the catalog_name of this BatchJobInfo.
+
+        访问元数据时，需要将该参数配置为dli。
+
+        :param catalog_name: The catalog_name of this BatchJobInfo.
+        :type catalog_name: str
+        """
+        self._catalog_name = catalog_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

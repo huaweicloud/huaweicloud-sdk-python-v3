@@ -34,7 +34,8 @@ class PostTask:
         'vm_template_id': 'str',
         'use_public_ip': 'bool',
         'syncing': 'bool',
-        'exist_server': 'bool'
+        'exist_server': 'bool',
+        'start_network_check': 'bool'
     }
 
     attribute_map = {
@@ -52,17 +53,18 @@ class PostTask:
         'vm_template_id': 'vm_template_id',
         'use_public_ip': 'use_public_ip',
         'syncing': 'syncing',
-        'exist_server': 'exist_server'
+        'exist_server': 'exist_server',
+        'start_network_check': 'start_network_check'
     }
 
-    def __init__(self, name=None, type=None, start_target_server=None, os_type=None, source_server=None, target_server=None, migration_ip=None, region_name=None, region_id=None, project_name=None, project_id=None, vm_template_id=None, use_public_ip=None, syncing=None, exist_server=None):
+    def __init__(self, name=None, type=None, start_target_server=None, os_type=None, source_server=None, target_server=None, migration_ip=None, region_name=None, region_id=None, project_name=None, project_id=None, vm_template_id=None, use_public_ip=None, syncing=None, exist_server=None, start_network_check=None):
         """PostTask
 
         The model defined in huaweicloud sdk
 
         :param name: 任务名称
         :type name: str
-        :param type: 任务类型 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
+        :param type: 任务类型 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移
         :type type: str
         :param start_target_server: 迁移后是否启动目的端虚拟机
         :type start_target_server: bool
@@ -90,6 +92,8 @@ class PostTask:
         :type syncing: bool
         :param exist_server: 是否存在服务，如果存在，则创建任务
         :type exist_server: bool
+        :param start_network_check: 是否开启网络检测
+        :type start_network_check: bool
         """
         
         
@@ -109,6 +113,7 @@ class PostTask:
         self._use_public_ip = None
         self._syncing = None
         self._exist_server = None
+        self._start_network_check = None
         self.discriminator = None
 
         self.name = name
@@ -132,6 +137,8 @@ class PostTask:
             self.syncing = syncing
         if exist_server is not None:
             self.exist_server = exist_server
+        if start_network_check is not None:
+            self.start_network_check = start_network_check
 
     @property
     def name(self):
@@ -159,7 +166,7 @@ class PostTask:
     def type(self):
         """Gets the type of this PostTask.
 
-        任务类型 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
+        任务类型 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移
 
         :return: The type of this PostTask.
         :rtype: str
@@ -170,7 +177,7 @@ class PostTask:
     def type(self, type):
         """Sets the type of this PostTask.
 
-        任务类型 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
+        任务类型 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移
 
         :param type: The type of this PostTask.
         :type type: str
@@ -454,6 +461,28 @@ class PostTask:
         :type exist_server: bool
         """
         self._exist_server = exist_server
+
+    @property
+    def start_network_check(self):
+        """Gets the start_network_check of this PostTask.
+
+        是否开启网络检测
+
+        :return: The start_network_check of this PostTask.
+        :rtype: bool
+        """
+        return self._start_network_check
+
+    @start_network_check.setter
+    def start_network_check(self, start_network_check):
+        """Sets the start_network_check of this PostTask.
+
+        是否开启网络检测
+
+        :param start_network_check: The start_network_check of this PostTask.
+        :type start_network_check: bool
+        """
+        self._start_network_check = start_network_check
 
     def to_dict(self):
         """Returns the model properties as a dict"""

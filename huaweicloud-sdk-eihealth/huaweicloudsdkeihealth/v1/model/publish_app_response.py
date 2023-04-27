@@ -20,58 +20,58 @@ class PublishAppResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'asset_id': 'str',
+        'id': 'str',
         'version': 'str'
     }
 
     attribute_map = {
-        'asset_id': 'asset_id',
+        'id': 'id',
         'version': 'version'
     }
 
-    def __init__(self, asset_id=None, version=None):
+    def __init__(self, id=None, version=None):
         """PublishAppResponse
 
         The model defined in huaweicloud sdk
 
-        :param asset_id: 资产id
-        :type asset_id: str
+        :param id: 资产id
+        :type id: str
         :param version: 资产版本
         :type version: str
         """
         
         super(PublishAppResponse, self).__init__()
 
-        self._asset_id = None
+        self._id = None
         self._version = None
         self.discriminator = None
 
-        if asset_id is not None:
-            self.asset_id = asset_id
+        if id is not None:
+            self.id = id
         if version is not None:
             self.version = version
 
     @property
-    def asset_id(self):
-        """Gets the asset_id of this PublishAppResponse.
+    def id(self):
+        """Gets the id of this PublishAppResponse.
 
         资产id
 
-        :return: The asset_id of this PublishAppResponse.
+        :return: The id of this PublishAppResponse.
         :rtype: str
         """
-        return self._asset_id
+        return self._id
 
-    @asset_id.setter
-    def asset_id(self, asset_id):
-        """Sets the asset_id of this PublishAppResponse.
+    @id.setter
+    def id(self, id):
+        """Sets the id of this PublishAppResponse.
 
         资产id
 
-        :param asset_id: The asset_id of this PublishAppResponse.
-        :type asset_id: str
+        :param id: The id of this PublishAppResponse.
+        :type id: str
         """
-        self._asset_id = asset_id
+        self._id = id
 
     @property
     def version(self):

@@ -34,9 +34,9 @@ class ShowPolicyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param policy_id: 根、组织单元或帐号的唯一标识符（ID）。
+        :param policy_id: 策略的唯一标识符（ID）。
         :type policy_id: str
-        :param x_language: 选择接口返回的信息的语言，默认为\&quot;zh-cn\&quot;中文，zh-cn中文，en-us英文
+        :param x_language: 选择接口返回的信息的语言
         :type x_language: str
         """
         
@@ -54,7 +54,7 @@ class ShowPolicyRequest:
     def policy_id(self):
         """Gets the policy_id of this ShowPolicyRequest.
 
-        根、组织单元或帐号的唯一标识符（ID）。
+        策略的唯一标识符（ID）。
 
         :return: The policy_id of this ShowPolicyRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class ShowPolicyRequest:
     def policy_id(self, policy_id):
         """Sets the policy_id of this ShowPolicyRequest.
 
-        根、组织单元或帐号的唯一标识符（ID）。
+        策略的唯一标识符（ID）。
 
         :param policy_id: The policy_id of this ShowPolicyRequest.
         :type policy_id: str
@@ -76,7 +76,7 @@ class ShowPolicyRequest:
     def x_language(self):
         """Gets the x_language of this ShowPolicyRequest.
 
-        选择接口返回的信息的语言，默认为\"zh-cn\"中文，zh-cn中文，en-us英文
+        选择接口返回的信息的语言
 
         :return: The x_language of this ShowPolicyRequest.
         :rtype: str
@@ -87,7 +87,7 @@ class ShowPolicyRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ShowPolicyRequest.
 
-        选择接口返回的信息的语言，默认为\"zh-cn\"中文，zh-cn中文，en-us英文
+        选择接口返回的信息的语言
 
         :param x_language: The x_language of this ShowPolicyRequest.
         :type x_language: str

@@ -38,7 +38,7 @@ class PublicIp:
 
         :param type: 弹性公网IP类型，默认为5_bgp
         :type type: str
-        :param bandwidth_size: 带宽大小，单位：Mbit/s  调整带宽时的最小单位会根据带宽范围不同存在差异。  小于等于300Mbit/s，默认最小单位为1Mbit/s。300Mbit/s~1000Mbit/s，默认最小单位为50Mbit/s。大于1000Mbit/s：默认最小单位为500Mbit/s。 
+        :param bandwidth_size: 带宽大小，单位：Mbit/s。 调整带宽时的最小单位会根据带宽范围不同存在差异。 小于等于300Mbit/s，默认最小单位为1Mbit/s。300Mbit/s~1000Mbit/s，默认最小单位为50Mbit/s。大于1000Mbit/s：默认最小单位为500Mbit/s。
         :type bandwidth_size: int
         :param bandwidth_share_type: 带宽共享类型
         :type bandwidth_share_type: str
@@ -82,7 +82,7 @@ class PublicIp:
     def bandwidth_size(self):
         """Gets the bandwidth_size of this PublicIp.
 
-        带宽大小，单位：Mbit/s  调整带宽时的最小单位会根据带宽范围不同存在差异。  小于等于300Mbit/s，默认最小单位为1Mbit/s。300Mbit/s~1000Mbit/s，默认最小单位为50Mbit/s。大于1000Mbit/s：默认最小单位为500Mbit/s。 
+        带宽大小，单位：Mbit/s。 调整带宽时的最小单位会根据带宽范围不同存在差异。 小于等于300Mbit/s，默认最小单位为1Mbit/s。300Mbit/s~1000Mbit/s，默认最小单位为50Mbit/s。大于1000Mbit/s：默认最小单位为500Mbit/s。
 
         :return: The bandwidth_size of this PublicIp.
         :rtype: int
@@ -93,7 +93,7 @@ class PublicIp:
     def bandwidth_size(self, bandwidth_size):
         """Sets the bandwidth_size of this PublicIp.
 
-        带宽大小，单位：Mbit/s  调整带宽时的最小单位会根据带宽范围不同存在差异。  小于等于300Mbit/s，默认最小单位为1Mbit/s。300Mbit/s~1000Mbit/s，默认最小单位为50Mbit/s。大于1000Mbit/s：默认最小单位为500Mbit/s。 
+        带宽大小，单位：Mbit/s。 调整带宽时的最小单位会根据带宽范围不同存在差异。 小于等于300Mbit/s，默认最小单位为1Mbit/s。300Mbit/s~1000Mbit/s，默认最小单位为50Mbit/s。大于1000Mbit/s：默认最小单位为500Mbit/s。
 
         :param bandwidth_size: The bandwidth_size of this PublicIp.
         :type bandwidth_size: int

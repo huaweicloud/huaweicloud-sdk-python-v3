@@ -2070,7 +2070,7 @@ class LtsClient(Client):
         return self.list_history_sql_with_http_info(request)
 
     def list_history_sql_with_http_info(self, request):
-        all_params = []
+        all_params = ['log_group_id', 'log_stream_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2083,6 +2083,10 @@ class LtsClient(Client):
         path_params = {}
 
         query_params = []
+        if 'log_group_id' in local_var_params:
+            query_params.append(('log_group_id', local_var_params['log_group_id']))
+        if 'log_stream_id' in local_var_params:
+            query_params.append(('log_stream_id', local_var_params['log_stream_id']))
 
         header_params = {}
 

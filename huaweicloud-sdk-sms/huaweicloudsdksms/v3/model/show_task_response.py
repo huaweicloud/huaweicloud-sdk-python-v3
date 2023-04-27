@@ -50,7 +50,8 @@ class ShowTaskResponse(SdkResponse):
         'remain_seconds': 'int',
         'target_snapshot_id': 'str',
         'clone_server': 'CloneServer',
-        'sub_tasks': 'list[SubTask]'
+        'sub_tasks': 'list[SubTask]',
+        'network_check_info': 'NetworkCheckInfoRequestBody'
     }
 
     attribute_map = {
@@ -84,17 +85,18 @@ class ShowTaskResponse(SdkResponse):
         'remain_seconds': 'remain_seconds',
         'target_snapshot_id': 'target_snapshot_id',
         'clone_server': 'clone_server',
-        'sub_tasks': 'sub_tasks'
+        'sub_tasks': 'sub_tasks',
+        'network_check_info': 'network_check_info'
     }
 
-    def __init__(self, name=None, type=None, os_type=None, id=None, priority=None, speed_limit=None, region_id=None, start_target_server=None, enterprise_project_id=None, migration_ip=None, region_name=None, project_name=None, project_id=None, vm_template_id=None, source_server=None, target_server=None, state=None, estimate_complete_time=None, connected=None, create_date=None, start_date=None, finish_date=None, migrate_speed=None, compress_rate=None, error_json=None, total_time=None, float_ip=None, remain_seconds=None, target_snapshot_id=None, clone_server=None, sub_tasks=None):
+    def __init__(self, name=None, type=None, os_type=None, id=None, priority=None, speed_limit=None, region_id=None, start_target_server=None, enterprise_project_id=None, migration_ip=None, region_name=None, project_name=None, project_id=None, vm_template_id=None, source_server=None, target_server=None, state=None, estimate_complete_time=None, connected=None, create_date=None, start_date=None, finish_date=None, migrate_speed=None, compress_rate=None, error_json=None, total_time=None, float_ip=None, remain_seconds=None, target_snapshot_id=None, clone_server=None, sub_tasks=None, network_check_info=None):
         """ShowTaskResponse
 
         The model defined in huaweicloud sdk
 
         :param name: 任务名称（用户自定义）
         :type name: str
-        :param type: 任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
+        :param type: 任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移
         :type type: str
         :param os_type: 操作系统类型，分为WINDOWS和LINUX，创建时必选，更新时可选
         :type os_type: str
@@ -154,6 +156,8 @@ class ShowTaskResponse(SdkResponse):
         :type clone_server: :class:`huaweicloudsdksms.v3.CloneServer`
         :param sub_tasks: 任务包含的子任务列表
         :type sub_tasks: list[:class:`huaweicloudsdksms.v3.SubTask`]
+        :param network_check_info: 
+        :type network_check_info: :class:`huaweicloudsdksms.v3.NetworkCheckInfoRequestBody`
         """
         
         super(ShowTaskResponse, self).__init__()
@@ -189,6 +193,7 @@ class ShowTaskResponse(SdkResponse):
         self._target_snapshot_id = None
         self._clone_server = None
         self._sub_tasks = None
+        self._network_check_info = None
         self.discriminator = None
 
         if name is not None:
@@ -253,6 +258,8 @@ class ShowTaskResponse(SdkResponse):
             self.clone_server = clone_server
         if sub_tasks is not None:
             self.sub_tasks = sub_tasks
+        if network_check_info is not None:
+            self.network_check_info = network_check_info
 
     @property
     def name(self):
@@ -280,7 +287,7 @@ class ShowTaskResponse(SdkResponse):
     def type(self):
         """Gets the type of this ShowTaskResponse.
 
-        任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
+        任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移
 
         :return: The type of this ShowTaskResponse.
         :rtype: str
@@ -291,7 +298,7 @@ class ShowTaskResponse(SdkResponse):
     def type(self, type):
         """Sets the type of this ShowTaskResponse.
 
-        任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
+        任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移
 
         :param type: The type of this ShowTaskResponse.
         :type type: str
@@ -923,6 +930,24 @@ class ShowTaskResponse(SdkResponse):
         :type sub_tasks: list[:class:`huaweicloudsdksms.v3.SubTask`]
         """
         self._sub_tasks = sub_tasks
+
+    @property
+    def network_check_info(self):
+        """Gets the network_check_info of this ShowTaskResponse.
+
+        :return: The network_check_info of this ShowTaskResponse.
+        :rtype: :class:`huaweicloudsdksms.v3.NetworkCheckInfoRequestBody`
+        """
+        return self._network_check_info
+
+    @network_check_info.setter
+    def network_check_info(self, network_check_info):
+        """Sets the network_check_info of this ShowTaskResponse.
+
+        :param network_check_info: The network_check_info of this ShowTaskResponse.
+        :type network_check_info: :class:`huaweicloudsdksms.v3.NetworkCheckInfoRequestBody`
+        """
+        self._network_check_info = network_check_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

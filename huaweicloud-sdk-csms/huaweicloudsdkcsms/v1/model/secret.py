@@ -50,7 +50,7 @@ class Secret:
         :type id: str
         :param name: 凭据名称。
         :type name: str
-        :param state: 凭据状态，取值如下：  ENABLED：表示启用状态  DISABLED：表示禁用状态  PENDING_DELETE：表示待删除状态  FROZEN：表示冻结状态状态 
+        :param state: 凭据状态，取值如下：  ENABLED：表示启用状态  DISABLED：表示禁用状态  PENDING_DELETE：表示待删除状态  FROZEN：表示冻结状态 
         :type state: str
         :param kms_key_id: 用于加密凭据值的KMS主密钥的ID值。 
         :type kms_key_id: str
@@ -141,7 +141,7 @@ class Secret:
     def state(self):
         """Gets the state of this Secret.
 
-        凭据状态，取值如下：  ENABLED：表示启用状态  DISABLED：表示禁用状态  PENDING_DELETE：表示待删除状态  FROZEN：表示冻结状态状态 
+        凭据状态，取值如下：  ENABLED：表示启用状态  DISABLED：表示禁用状态  PENDING_DELETE：表示待删除状态  FROZEN：表示冻结状态 
 
         :return: The state of this Secret.
         :rtype: str
@@ -152,7 +152,7 @@ class Secret:
     def state(self, state):
         """Sets the state of this Secret.
 
-        凭据状态，取值如下：  ENABLED：表示启用状态  DISABLED：表示禁用状态  PENDING_DELETE：表示待删除状态  FROZEN：表示冻结状态状态 
+        凭据状态，取值如下：  ENABLED：表示启用状态  DISABLED：表示禁用状态  PENDING_DELETE：表示待删除状态  FROZEN：表示冻结状态 
 
         :param state: The state of this Secret.
         :type state: str

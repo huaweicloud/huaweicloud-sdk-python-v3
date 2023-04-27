@@ -20,28 +20,20 @@ class DeleteSnapshotConfigRequest:
     sensitive_list = []
 
     openapi_types = {
-        'access_control_allow_internal': 'str',
-        'access_control_allow_external': 'str',
         'domain': 'str',
         'app_name': 'str'
     }
 
     attribute_map = {
-        'access_control_allow_internal': 'Access-Control-Allow-Internal',
-        'access_control_allow_external': 'Access-Control-Allow-External',
         'domain': 'domain',
         'app_name': 'app_name'
     }
 
-    def __init__(self, access_control_allow_internal=None, access_control_allow_external=None, domain=None, app_name=None):
+    def __init__(self, domain=None, app_name=None):
         """DeleteSnapshotConfigRequest
 
         The model defined in huaweicloud sdk
 
-        :param access_control_allow_internal: 服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
-        :type access_control_allow_internal: str
-        :param access_control_allow_external: 服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
-        :type access_control_allow_external: str
         :param domain: 直播流播放域名
         :type domain: str
         :param app_name: 应用名称
@@ -50,62 +42,12 @@ class DeleteSnapshotConfigRequest:
         
         
 
-        self._access_control_allow_internal = None
-        self._access_control_allow_external = None
         self._domain = None
         self._app_name = None
         self.discriminator = None
 
-        if access_control_allow_internal is not None:
-            self.access_control_allow_internal = access_control_allow_internal
-        if access_control_allow_external is not None:
-            self.access_control_allow_external = access_control_allow_external
         self.domain = domain
         self.app_name = app_name
-
-    @property
-    def access_control_allow_internal(self):
-        """Gets the access_control_allow_internal of this DeleteSnapshotConfigRequest.
-
-        服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
-
-        :return: The access_control_allow_internal of this DeleteSnapshotConfigRequest.
-        :rtype: str
-        """
-        return self._access_control_allow_internal
-
-    @access_control_allow_internal.setter
-    def access_control_allow_internal(self, access_control_allow_internal):
-        """Sets the access_control_allow_internal of this DeleteSnapshotConfigRequest.
-
-        服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
-
-        :param access_control_allow_internal: The access_control_allow_internal of this DeleteSnapshotConfigRequest.
-        :type access_control_allow_internal: str
-        """
-        self._access_control_allow_internal = access_control_allow_internal
-
-    @property
-    def access_control_allow_external(self):
-        """Gets the access_control_allow_external of this DeleteSnapshotConfigRequest.
-
-        服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
-
-        :return: The access_control_allow_external of this DeleteSnapshotConfigRequest.
-        :rtype: str
-        """
-        return self._access_control_allow_external
-
-    @access_control_allow_external.setter
-    def access_control_allow_external(self, access_control_allow_external):
-        """Sets the access_control_allow_external of this DeleteSnapshotConfigRequest.
-
-        服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
-
-        :param access_control_allow_external: The access_control_allow_external of this DeleteSnapshotConfigRequest.
-        :type access_control_allow_external: str
-        """
-        self._access_control_allow_external = access_control_allow_external
 
     @property
     def domain(self):

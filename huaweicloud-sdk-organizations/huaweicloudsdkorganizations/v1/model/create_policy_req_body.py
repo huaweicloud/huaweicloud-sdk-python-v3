@@ -46,7 +46,7 @@ class CreatePolicyReqBody:
         :type description: str
         :param name: 要分配给策略的名称。
         :type name: str
-        :param type: 要创建的策略类型,service_control_policy服务控制策略。
+        :param type: 要创建的策略类型,service_control_policy服务控制策略；tag_policy：标签策略。
         :type type: str
         :param tags: 要附加到新创建的策略的标签列表。
         :type tags: list[:class:`huaweicloudsdkorganizations.v1.TagDto`]
@@ -138,7 +138,7 @@ class CreatePolicyReqBody:
     def type(self):
         """Gets the type of this CreatePolicyReqBody.
 
-        要创建的策略类型,service_control_policy服务控制策略。
+        要创建的策略类型,service_control_policy服务控制策略；tag_policy：标签策略。
 
         :return: The type of this CreatePolicyReqBody.
         :rtype: str
@@ -149,7 +149,7 @@ class CreatePolicyReqBody:
     def type(self, type):
         """Sets the type of this CreatePolicyReqBody.
 
-        要创建的策略类型,service_control_policy服务控制策略。
+        要创建的策略类型,service_control_policy服务控制策略；tag_policy：标签策略。
 
         :param type: The type of this CreatePolicyReqBody.
         :type type: str

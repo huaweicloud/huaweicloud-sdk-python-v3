@@ -36,7 +36,7 @@ class PolicyTypeSummaryDto:
 
         :param status: 与根关联的策略类型状态。要将指定类型的策略绑定到根或该根中的组织单元或帐号，该策略必须在组织中可用，并在该根已启用。enabled：启用；pending_enable：启用中；disabled：禁用；pending_disable：禁用中。
         :type status: str
-        :param type: 策略类型的名称，service_control_policy：服务控制策略。
+        :param type: 策略类型的名称，service_control_policy：服务控制策略；tag_policy：标签策略。
         :type type: str
         """
         
@@ -75,7 +75,7 @@ class PolicyTypeSummaryDto:
     def type(self):
         """Gets the type of this PolicyTypeSummaryDto.
 
-        策略类型的名称，service_control_policy：服务控制策略。
+        策略类型的名称，service_control_policy：服务控制策略；tag_policy：标签策略。
 
         :return: The type of this PolicyTypeSummaryDto.
         :rtype: str
@@ -86,7 +86,7 @@ class PolicyTypeSummaryDto:
     def type(self, type):
         """Sets the type of this PolicyTypeSummaryDto.
 
-        策略类型的名称，service_control_policy：服务控制策略。
+        策略类型的名称，service_control_policy：服务控制策略；tag_policy：标签策略。
 
         :param type: The type of this PolicyTypeSummaryDto.
         :type type: str

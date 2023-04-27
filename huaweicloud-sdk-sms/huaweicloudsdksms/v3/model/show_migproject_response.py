@@ -32,7 +32,8 @@ class ShowMigprojectResponse(SdkResponse):
         'exist_server': 'bool',
         'type': 'str',
         'enterprise_project': 'str',
-        'syncing': 'bool'
+        'syncing': 'bool',
+        'start_network_check': 'bool'
     }
 
     attribute_map = {
@@ -48,10 +49,11 @@ class ShowMigprojectResponse(SdkResponse):
         'exist_server': 'exist_server',
         'type': 'type',
         'enterprise_project': 'enterprise_project',
-        'syncing': 'syncing'
+        'syncing': 'syncing',
+        'start_network_check': 'start_network_check'
     }
 
-    def __init__(self, id=None, name=None, description=None, isdefault=None, template=None, region=None, start_target_server=None, speed_limit=None, use_public_ip=None, exist_server=None, type=None, enterprise_project=None, syncing=None):
+    def __init__(self, id=None, name=None, description=None, isdefault=None, template=None, region=None, start_target_server=None, speed_limit=None, use_public_ip=None, exist_server=None, type=None, enterprise_project=None, syncing=None, start_network_check=None):
         """ShowMigprojectResponse
 
         The model defined in huaweicloud sdk
@@ -82,6 +84,8 @@ class ShowMigprojectResponse(SdkResponse):
         :type enterprise_project: str
         :param syncing: 首次复制或者同步后 是否继续持续同步
         :type syncing: bool
+        :param start_network_check: 是否启动网络质量检测
+        :type start_network_check: bool
         """
         
         super(ShowMigprojectResponse, self).__init__()
@@ -99,6 +103,7 @@ class ShowMigprojectResponse(SdkResponse):
         self._type = None
         self._enterprise_project = None
         self._syncing = None
+        self._start_network_check = None
         self.discriminator = None
 
         if id is not None:
@@ -127,6 +132,8 @@ class ShowMigprojectResponse(SdkResponse):
             self.enterprise_project = enterprise_project
         if syncing is not None:
             self.syncing = syncing
+        if start_network_check is not None:
+            self.start_network_check = start_network_check
 
     @property
     def id(self):
@@ -409,6 +416,28 @@ class ShowMigprojectResponse(SdkResponse):
         :type syncing: bool
         """
         self._syncing = syncing
+
+    @property
+    def start_network_check(self):
+        """Gets the start_network_check of this ShowMigprojectResponse.
+
+        是否启动网络质量检测
+
+        :return: The start_network_check of this ShowMigprojectResponse.
+        :rtype: bool
+        """
+        return self._start_network_check
+
+    @start_network_check.setter
+    def start_network_check(self, start_network_check):
+        """Sets the start_network_check of this ShowMigprojectResponse.
+
+        是否启动网络质量检测
+
+        :param start_network_check: The start_network_check of this ShowMigprojectResponse.
+        :type start_network_check: bool
+        """
+        self._start_network_check = start_network_check
 
     def to_dict(self):
         """Returns the model properties as a dict"""

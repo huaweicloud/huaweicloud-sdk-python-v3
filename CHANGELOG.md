@@ -1,3 +1,302 @@
+# 3.1.38 2023-04-27
+
+### HuaweiCloud SDK MSGSMS
+
+- _Features_
+  - Support the service `MSG&SMS`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK AOM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListResourceUnderNode**
+    - changes of request param
+      - `+ marker`
+      - `- maker`
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDomainFullConfig**
+    - changes of response param
+      - `+ configs.ipv6_accelerate`
+      - `+ configs.origin_range_status`
+
+### HuaweiCloud SDK CFW
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListIpsProtectModeUsingPost**
+    - changes of response param
+      - `+ data`
+      - `- object_id`
+      - `- status`
+
+### HuaweiCloud SDK CSMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListResourceInstances**
+    - changes of response param
+      - `+ resources.sys_tags`
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - Support the interfaces `ResetPassword`, `UpdateInstanceBandwidth`, `ListConfigTemplates`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DLI
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateBatchJob**
+    - changes of request param
+      - `+ catalog_name`
+  - **ShowJobTemplate**
+    - changes of response param
+      - `+ body.catalog_name`
+  - **ListJobTemplates**
+    - changes of response param
+      - `+ templates.body.catalog_name`
+
+### HuaweiCloud SDK eiHealth
+
+- _Features_
+  - Support the following interfaces：
+    - `ListIamUsers`
+    - `ListIamGroups`
+    - `ListIamGroupUsers`
+    - `ListScaleOutPolicy`
+    - `CreateScaleOutPolicy`
+    - `ShowScaleOutPolicy`
+    - `UpdateScaleOutPolicy`
+    - `DeleteScaleOutPolicy`
+    - `StartScaleOutPolicy`
+    - `StopScaleOutPolicy`
+    - `ShowScaleInPolicy`
+    - `UpdateScaleInPolicy`
+    - `InstallNextflow`
+    - `ShowNextflow`
+    - `UninstallNextflow`
+    - `CleanNextflowCache`
+    - `ListNextflowVersion`
+    - `ListNextflowJob`
+    - `CreateNextflowJob`
+    - `ShowNextflowJob`
+    - `DeleteNextflowJob`
+    - `RetryNextflowJob`
+    - `ShowNextflowJobLog`
+    - `StopNextflowJob`
+    - `ShowNextflowJobReports`
+    - `ListNextflowTask`
+    - `ShowNextflowTaskDetail`
+    - `ShowNextflowTaskLog`
+    - `ListNextflowWorkflow`
+    - `CreateNextflowWorkflow`
+    - `ShowNextflowWorkflow`
+    - `UpdateNextflowWorkflow`
+    - `DeleteNextflowWorkflow`
+- _Bug Fix_
+  - None
+- _Change_
+  - **PublishData**
+    - changes of response param
+      - `+ id`
+      - `- asset_id`
+  - **PublishImage**
+    - changes of response param
+      - `+ id`
+      - `- asset_id`
+  - **PublishApp**
+    - changes of response param
+      - `+ id`
+      - `- asset_id`
+  - **PublishWorkflow**
+    - changes of response param
+      - `+ id`
+      - `- asset_id`
+  - **ListImageTag**
+    - changes of response param
+      - `+ tags.path`
+  - **CreateApp**
+    - changes of request param
+      - `* body: object<AppDto> -> object<AppReq>`
+  - **UpdateApp**
+    - changes of request param
+      - `* body: object<AppDto> -> object<AppReq>`
+  - **ListData**
+    - changes of response param
+      - `- path`
+      - `- allowed_operate`
+      - `- size`
+      - `- create_time`
+      - `- name`
+      - `- download_url`
+      - `- deletable`
+      - `- type`
+      - `- content`
+      - `- datas.content`
+      - `- datas.download_url`
+      - `* datas: list<DataRsp> -> list<DataSummaryRsp>`
+  - **ListObsBucketObject**
+    - changes of request param
+      - `+ search_key`
+
+### HuaweiCloud SDK Image
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interfaces `RunQueryCustomTags`, `RunDeleteCustomTags`
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateInstanceByEngine**
+    - changes of request param
+      - `+ kafka_security_protocol`
+      - `+ sasl_enabled_mechanisms`
+  - **ShowInstance**
+    - changes of response param
+      - `+ kafka_security_protocol`
+      - `+ sasl_enabled_mechanisms: enum value [PLAIN,SCRAM-SHA-512]`
+  - **CreatePostPaidInstance**
+    - changes of request param
+      - `+ kafka_security_protocol`
+      - `+ sasl_enabled_mechanisms: enum value [PLAIN,SCRAM-SHA-512]`
+  - **ListInstances**
+    - changes of response param
+      - `+ kafka_security_protocol`
+      - `+ instances.kafka_security_protocol`
+      - `+ instances.sasl_enabled_mechanisms: enum value [PLAIN,SCRAM-SHA-512]`
+
+### HuaweiCloud SDK KMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListKeys**
+    - changes of response param
+      - `+ key_details.partition_type`
+  - **ListKeyDetail**
+    - changes of response param
+      - `+ key_info.partition_type`
+  - **ListRetirableGrants**
+    - changes of response param
+      - `+ total`
+  - **ListKmsByTags**
+    - changes of response param
+      - `+ resources.resource_detail.partition_type`
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListLogHistogram**
+    - changes of request param
+      - `+ is_iterative`
+    - changes of response param
+      - `+ isQueryComplete`
+  - **Createfavorite**
+    - changes of response param
+      - `* create_time: string -> int64`
+  - **ListLogStream**
+    - changes of response param
+      - `+ log_streams.is_favorite`
+  - **ListLogs**
+    - changes of request param
+      - `+ is_iterative`
+    - changes of response param
+      - `+ isQueryComplete`
+  - **UpdateStructTemplate**
+    - changes of request param
+      - `* rule: list<rule> -> object<rule>`
+  - **CreateStructTemplate**
+    - changes of request param
+      - `* rule: list<rule> -> object<rule>`
+  - **ListHistorySql**
+    - changes of request param
+      - `+ log_group_id`
+      - `+ log_stream_id`
+
+### HuaweiCloud SDK Organizations
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreatePolicy**
+    - changes of request param
+      - `+ type: enum value [tag_policy]`
+  - **EnablePolicyType**
+    - changes of request param
+      - `+ policy_type: enum value [tag_policy]`
+  - **DisablePolicyType**
+    - changes of request param
+      - `+ policy_type: enum value [tag_policy]`
+
+### HuaweiCloud SDK RocketMQ
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowConsumerListOrDetails**
+    - changes of response param
+      - `* total: int64 -> int32`
+
+### HuaweiCloud SDK SMS
+
+- _Features_
+  - Support the following interfaces：
+    - `ListApiVersion`
+    - `ShowApiVersion`
+    - `ShowConfig`
+    - `UpdateNetworkCheckInfo`
+    - `ShowConfigSetting`
+    - `UploadSpecialConfigurationSetting`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.37 2023-04-20
 
 ### HuaweiCloud SDK AOM

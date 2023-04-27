@@ -356,7 +356,7 @@ class LiveClient(Client):
         return self.create_snapshot_config_with_http_info(request)
 
     def create_snapshot_config_with_http_info(self, request):
-        all_params = ['create_snapshot_config_request_body', 'access_control_allow_internal', 'access_control_allow_external']
+        all_params = ['create_snapshot_config_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -371,10 +371,6 @@ class LiveClient(Client):
         query_params = []
 
         header_params = {}
-        if 'access_control_allow_internal' in local_var_params:
-            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
-        if 'access_control_allow_external' in local_var_params:
-            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
 
         form_params = {}
 
@@ -600,7 +596,7 @@ class LiveClient(Client):
         return self.delete_domain_key_chain_with_http_info(request)
 
     def delete_domain_key_chain_with_http_info(self, request):
-        all_params = ['domain', 'access_control_allow_internal', 'access_control_allow_external']
+        all_params = ['domain']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -617,10 +613,6 @@ class LiveClient(Client):
             query_params.append(('domain', local_var_params['domain']))
 
         header_params = {}
-        if 'access_control_allow_internal' in local_var_params:
-            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
-        if 'access_control_allow_external' in local_var_params:
-            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
 
         form_params = {}
 
@@ -846,7 +838,7 @@ class LiveClient(Client):
         return self.delete_snapshot_config_with_http_info(request)
 
     def delete_snapshot_config_with_http_info(self, request):
-        all_params = ['domain', 'app_name', 'access_control_allow_internal', 'access_control_allow_external']
+        all_params = ['domain', 'app_name']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -865,10 +857,6 @@ class LiveClient(Client):
             query_params.append(('app_name', local_var_params['app_name']))
 
         header_params = {}
-        if 'access_control_allow_internal' in local_var_params:
-            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
-        if 'access_control_allow_external' in local_var_params:
-            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
 
         form_params = {}
 
@@ -1380,7 +1368,7 @@ class LiveClient(Client):
         return self.list_snapshot_configs_with_http_info(request)
 
     def list_snapshot_configs_with_http_info(self, request):
-        all_params = ['domain', 'access_control_allow_internal', 'access_control_allow_external', 'app_name', 'page', 'size', 'limit', 'offset']
+        all_params = ['domain', 'app_name', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1397,20 +1385,12 @@ class LiveClient(Client):
             query_params.append(('domain', local_var_params['domain']))
         if 'app_name' in local_var_params:
             query_params.append(('app_name', local_var_params['app_name']))
-        if 'page' in local_var_params:
-            query_params.append(('page', local_var_params['page']))
-        if 'size' in local_var_params:
-            query_params.append(('size', local_var_params['size']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
-        if 'access_control_allow_internal' in local_var_params:
-            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
-        if 'access_control_allow_external' in local_var_params:
-            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
 
         form_params = {}
 
@@ -1646,7 +1626,7 @@ class LiveClient(Client):
         return self.show_domain_key_chain_with_http_info(request)
 
     def show_domain_key_chain_with_http_info(self, request):
-        all_params = ['domain', 'access_control_allow_internal', 'access_control_allow_external']
+        all_params = ['domain']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1663,10 +1643,6 @@ class LiveClient(Client):
             query_params.append(('domain', local_var_params['domain']))
 
         header_params = {}
-        if 'access_control_allow_internal' in local_var_params:
-            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
-        if 'access_control_allow_external' in local_var_params:
-            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
 
         form_params = {}
 
@@ -2016,7 +1992,7 @@ class LiveClient(Client):
         return self.update_domain_key_chain_with_http_info(request)
 
     def update_domain_key_chain_with_http_info(self, request):
-        all_params = ['domain', 'access_control_allow_internal', 'access_control_allow_external', 'update_domain_key_chain_request_body']
+        all_params = ['domain', 'update_domain_key_chain_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2033,10 +2009,6 @@ class LiveClient(Client):
             query_params.append(('domain', local_var_params['domain']))
 
         header_params = {}
-        if 'access_control_allow_internal' in local_var_params:
-            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
-        if 'access_control_allow_external' in local_var_params:
-            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
 
         form_params = {}
 
@@ -2206,7 +2178,7 @@ class LiveClient(Client):
         return self.update_snapshot_config_with_http_info(request)
 
     def update_snapshot_config_with_http_info(self, request):
-        all_params = ['update_snapshot_config_request_body', 'access_control_allow_internal', 'access_control_allow_external']
+        all_params = ['update_snapshot_config_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2221,10 +2193,6 @@ class LiveClient(Client):
         query_params = []
 
         header_params = {}
-        if 'access_control_allow_internal' in local_var_params:
-            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
-        if 'access_control_allow_external' in local_var_params:
-            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
 
         form_params = {}
 
@@ -2390,7 +2358,7 @@ class LiveClient(Client):
         return self.delete_domain_https_cert_with_http_info(request)
 
     def delete_domain_https_cert_with_http_info(self, request):
-        all_params = ['domain', 'access_control_allow_internal', 'access_control_allow_external']
+        all_params = ['domain']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2407,10 +2375,6 @@ class LiveClient(Client):
             query_params.append(('domain', local_var_params['domain']))
 
         header_params = {}
-        if 'access_control_allow_internal' in local_var_params:
-            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
-        if 'access_control_allow_external' in local_var_params:
-            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
 
         form_params = {}
 
@@ -2454,7 +2418,7 @@ class LiveClient(Client):
         return self.show_domain_https_cert_with_http_info(request)
 
     def show_domain_https_cert_with_http_info(self, request):
-        all_params = ['domain', 'access_control_allow_internal', 'access_control_allow_external']
+        all_params = ['domain']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2471,10 +2435,6 @@ class LiveClient(Client):
             query_params.append(('domain', local_var_params['domain']))
 
         header_params = {}
-        if 'access_control_allow_internal' in local_var_params:
-            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
-        if 'access_control_allow_external' in local_var_params:
-            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
 
         form_params = {}
 
@@ -2518,7 +2478,7 @@ class LiveClient(Client):
         return self.update_domain_https_cert_with_http_info(request)
 
     def update_domain_https_cert_with_http_info(self, request):
-        all_params = ['domain', 'access_control_allow_internal', 'access_control_allow_external', 'update_domain_https_cert_request_body']
+        all_params = ['domain', 'update_domain_https_cert_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2535,10 +2495,6 @@ class LiveClient(Client):
             query_params.append(('domain', local_var_params['domain']))
 
         header_params = {}
-        if 'access_control_allow_internal' in local_var_params:
-            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
-        if 'access_control_allow_external' in local_var_params:
-            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
 
         form_params = {}
 
@@ -2584,7 +2540,7 @@ class LiveClient(Client):
         return self.update_obs_bucket_authority_public_with_http_info(request)
 
     def update_obs_bucket_authority_public_with_http_info(self, request):
-        all_params = ['update_obs_bucket_authority_public_request_body', 'access_control_allow_internal', 'access_control_allow_external']
+        all_params = ['update_obs_bucket_authority_public_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2599,10 +2555,6 @@ class LiveClient(Client):
         query_params = []
 
         header_params = {}
-        if 'access_control_allow_internal' in local_var_params:
-            header_params['Access-Control-Allow-Internal'] = local_var_params['access_control_allow_internal']
-        if 'access_control_allow_external' in local_var_params:
-            header_params['Access-Control-Allow-External'] = local_var_params['access_control_allow_external']
 
         form_params = {}
 

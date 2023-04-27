@@ -21,15 +21,17 @@ class ListLogHistogramResponse(SdkResponse):
 
     openapi_types = {
         'histogram': 'str',
-        'count': 'int'
+        'count': 'int',
+        'is_query_complete': 'bool'
     }
 
     attribute_map = {
         'histogram': 'histogram',
-        'count': 'count'
+        'count': 'count',
+        'is_query_complete': 'isQueryComplete'
     }
 
-    def __init__(self, histogram=None, count=None):
+    def __init__(self, histogram=None, count=None, is_query_complete=None):
         """ListLogHistogramResponse
 
         The model defined in huaweicloud sdk
@@ -38,18 +40,23 @@ class ListLogHistogramResponse(SdkResponse):
         :type histogram: str
         :param count: 日志条数
         :type count: int
+        :param is_query_complete: 是否查询完成。
+        :type is_query_complete: bool
         """
         
         super(ListLogHistogramResponse, self).__init__()
 
         self._histogram = None
         self._count = None
+        self._is_query_complete = None
         self.discriminator = None
 
         if histogram is not None:
             self.histogram = histogram
         if count is not None:
             self.count = count
+        if is_query_complete is not None:
+            self.is_query_complete = is_query_complete
 
     @property
     def histogram(self):
@@ -94,6 +101,28 @@ class ListLogHistogramResponse(SdkResponse):
         :type count: int
         """
         self._count = count
+
+    @property
+    def is_query_complete(self):
+        """Gets the is_query_complete of this ListLogHistogramResponse.
+
+        是否查询完成。
+
+        :return: The is_query_complete of this ListLogHistogramResponse.
+        :rtype: bool
+        """
+        return self._is_query_complete
+
+    @is_query_complete.setter
+    def is_query_complete(self, is_query_complete):
+        """Sets the is_query_complete of this ListLogHistogramResponse.
+
+        是否查询完成。
+
+        :param is_query_complete: The is_query_complete of this ListLogHistogramResponse.
+        :type is_query_complete: bool
+        """
+        self._is_query_complete = is_query_complete
 
     def to_dict(self):
         """Returns the model properties as a dict"""

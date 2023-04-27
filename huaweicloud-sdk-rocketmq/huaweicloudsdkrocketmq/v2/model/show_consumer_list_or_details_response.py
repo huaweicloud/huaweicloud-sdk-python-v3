@@ -21,7 +21,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
 
     openapi_types = {
         'topics': 'list[str]',
-        'total': 'float',
+        'total': 'int',
         'brokers': 'list[Brokers]'
     }
 
@@ -39,7 +39,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
         :param topics: Topic列表（当查询topic消费“列表”时才显示此参数）。
         :type topics: list[str]
         :param total: Topic总数（当查询topic消费“列表”时才显示此参数）。
-        :type total: float
+        :type total: int
         :param brokers: Topic关联代理（当查询topic消费“详情”才显示此参数）。
         :type brokers: list[:class:`huaweicloudsdkrocketmq.v2.Brokers`]
         """
@@ -87,7 +87,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
         Topic总数（当查询topic消费“列表”时才显示此参数）。
 
         :return: The total of this ShowConsumerListOrDetailsResponse.
-        :rtype: float
+        :rtype: int
         """
         return self._total
 
@@ -98,7 +98,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
         Topic总数（当查询topic消费“列表”时才显示此参数）。
 
         :param total: The total of this ShowConsumerListOrDetailsResponse.
-        :type total: float
+        :type total: int
         """
         self._total = total
 

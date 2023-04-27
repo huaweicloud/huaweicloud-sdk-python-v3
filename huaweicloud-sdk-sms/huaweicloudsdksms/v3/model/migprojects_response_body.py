@@ -31,7 +31,8 @@ class MigprojectsResponseBody:
         'description': 'str',
         'type': 'str',
         'enterprise_project': 'str',
-        'syncing': 'bool'
+        'syncing': 'bool',
+        'start_network_check': 'bool'
     }
 
     attribute_map = {
@@ -46,10 +47,11 @@ class MigprojectsResponseBody:
         'description': 'description',
         'type': 'type',
         'enterprise_project': 'enterprise_project',
-        'syncing': 'syncing'
+        'syncing': 'syncing',
+        'start_network_check': 'start_network_check'
     }
 
-    def __init__(self, id=None, name=None, use_public_ip=None, isdefault=None, start_target_server=None, region=None, speed_limit=None, exist_server=None, description=None, type=None, enterprise_project=None, syncing=None):
+    def __init__(self, id=None, name=None, use_public_ip=None, isdefault=None, start_target_server=None, region=None, speed_limit=None, exist_server=None, description=None, type=None, enterprise_project=None, syncing=None, start_network_check=None):
         """MigprojectsResponseBody
 
         The model defined in huaweicloud sdk
@@ -72,12 +74,14 @@ class MigprojectsResponseBody:
         :type exist_server: bool
         :param description: 迁移项目描述
         :type description: str
-        :param type: 迁移项目默认迁移类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移 
+        :param type: 迁移项目默认迁移类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移
         :type type: str
         :param enterprise_project: 迁移项目所属的企业项目名称
         :type enterprise_project: str
         :param syncing: 是否持续同步
         :type syncing: bool
+        :param start_network_check: 是否开启网络质量检测
+        :type start_network_check: bool
         """
         
         
@@ -94,6 +98,7 @@ class MigprojectsResponseBody:
         self._type = None
         self._enterprise_project = None
         self._syncing = None
+        self._start_network_check = None
         self.discriminator = None
 
         if id is not None:
@@ -120,6 +125,8 @@ class MigprojectsResponseBody:
             self.enterprise_project = enterprise_project
         if syncing is not None:
             self.syncing = syncing
+        if start_network_check is not None:
+            self.start_network_check = start_network_check
 
     @property
     def id(self):
@@ -323,7 +330,7 @@ class MigprojectsResponseBody:
     def type(self):
         """Gets the type of this MigprojectsResponseBody.
 
-        迁移项目默认迁移类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移 
+        迁移项目默认迁移类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移
 
         :return: The type of this MigprojectsResponseBody.
         :rtype: str
@@ -334,7 +341,7 @@ class MigprojectsResponseBody:
     def type(self, type):
         """Sets the type of this MigprojectsResponseBody.
 
-        迁移项目默认迁移类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移 
+        迁移项目默认迁移类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移
 
         :param type: The type of this MigprojectsResponseBody.
         :type type: str
@@ -384,6 +391,28 @@ class MigprojectsResponseBody:
         :type syncing: bool
         """
         self._syncing = syncing
+
+    @property
+    def start_network_check(self):
+        """Gets the start_network_check of this MigprojectsResponseBody.
+
+        是否开启网络质量检测
+
+        :return: The start_network_check of this MigprojectsResponseBody.
+        :rtype: bool
+        """
+        return self._start_network_check
+
+    @start_network_check.setter
+    def start_network_check(self, start_network_check):
+        """Sets the start_network_check of this MigprojectsResponseBody.
+
+        是否开启网络质量检测
+
+        :param start_network_check: The start_network_check of this MigprojectsResponseBody.
+        :type start_network_check: bool
+        """
+        self._start_network_check = start_network_check
 
     def to_dict(self):
         """Returns the model properties as a dict"""

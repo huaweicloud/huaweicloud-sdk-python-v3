@@ -27,11 +27,7 @@ class LiveSnapshotConfig:
         'object_write_mode': 'int',
         'obs_location': 'ObsFileAddr',
         'call_back_enable': 'str',
-        'call_back_url': 'str',
-        'call_back_area': 'str',
-        'call_back_ssl_verify': 'bool',
-        'call_back_ssl_ca': 'str',
-        'image_object_format': 'str'
+        'call_back_url': 'str'
     }
 
     attribute_map = {
@@ -42,14 +38,10 @@ class LiveSnapshotConfig:
         'object_write_mode': 'object_write_mode',
         'obs_location': 'obs_location',
         'call_back_enable': 'call_back_enable',
-        'call_back_url': 'call_back_url',
-        'call_back_area': 'call_back_area',
-        'call_back_ssl_verify': 'call_back_ssl_verify',
-        'call_back_ssl_ca': 'call_back_ssl_ca',
-        'image_object_format': 'image_object_format'
+        'call_back_url': 'call_back_url'
     }
 
-    def __init__(self, domain=None, app_name=None, auth_key=None, time_interval=None, object_write_mode=None, obs_location=None, call_back_enable=None, call_back_url=None, call_back_area=None, call_back_ssl_verify=None, call_back_ssl_ca=None, image_object_format=None):
+    def __init__(self, domain=None, app_name=None, auth_key=None, time_interval=None, object_write_mode=None, obs_location=None, call_back_enable=None, call_back_url=None):
         """LiveSnapshotConfig
 
         The model defined in huaweicloud sdk
@@ -70,14 +62,6 @@ class LiveSnapshotConfig:
         :type call_back_enable: str
         :param call_back_url: 通知服务器地址，必须是合法的URL且携带协议，协议支持http和https。截图完成后直播服务会向此地址推送截图状态信息。
         :type call_back_url: str
-        :param call_back_area: 通知服务器区域。 - mainland_china：表示中国大陆区域 - outside_mainland_china：表示中国大陆以外区域  为空则按默认处理。
-        :type call_back_area: str
-        :param call_back_ssl_verify: 是否开启ssl校验服务服务端证书，仅当回调url使用https协议时有效
-        :type call_back_ssl_verify: bool
-        :param call_back_ssl_ca: 客户端校验服务端的受信证书，call_back_ssl_verify为ture时必需
-        :type call_back_ssl_ca: str
-        :param image_object_format: 截图存储文件命名规则， 仅支持jpg格式 包含 - &#39;{obs_object}&#39; OBS存储路径，即obs_location.object的值  - &#39;{domain}&#39; 域名 - &#39;{app}&#39; 应用名 - &#39;{stream}&#39;  流名  其中实时截图模式下  - &#39;{unix_time}&#39;  时间戳，秒 - &#39;{unix_time_milli}&#39;  时间戳，毫秒 - &#39;{fmt_time_utc}&#39;   格式化UTC时间, 格式：YYYYMMDDhhmmss, 如20060102070405 - &#39;{fmt_time_local}&#39;  格式化本地时间, 格式：YYYYMMDDhhmmss，如20060102150405 必选一个时间类型模板
-        :type image_object_format: str
         """
         
         
@@ -90,10 +74,6 @@ class LiveSnapshotConfig:
         self._obs_location = None
         self._call_back_enable = None
         self._call_back_url = None
-        self._call_back_area = None
-        self._call_back_ssl_verify = None
-        self._call_back_ssl_ca = None
-        self._image_object_format = None
         self.discriminator = None
 
         self.domain = domain
@@ -107,14 +87,6 @@ class LiveSnapshotConfig:
             self.call_back_enable = call_back_enable
         if call_back_url is not None:
             self.call_back_url = call_back_url
-        if call_back_area is not None:
-            self.call_back_area = call_back_area
-        if call_back_ssl_verify is not None:
-            self.call_back_ssl_verify = call_back_ssl_verify
-        if call_back_ssl_ca is not None:
-            self.call_back_ssl_ca = call_back_ssl_ca
-        if image_object_format is not None:
-            self.image_object_format = image_object_format
 
     @property
     def domain(self):
@@ -287,94 +259,6 @@ class LiveSnapshotConfig:
         :type call_back_url: str
         """
         self._call_back_url = call_back_url
-
-    @property
-    def call_back_area(self):
-        """Gets the call_back_area of this LiveSnapshotConfig.
-
-        通知服务器区域。 - mainland_china：表示中国大陆区域 - outside_mainland_china：表示中国大陆以外区域  为空则按默认处理。
-
-        :return: The call_back_area of this LiveSnapshotConfig.
-        :rtype: str
-        """
-        return self._call_back_area
-
-    @call_back_area.setter
-    def call_back_area(self, call_back_area):
-        """Sets the call_back_area of this LiveSnapshotConfig.
-
-        通知服务器区域。 - mainland_china：表示中国大陆区域 - outside_mainland_china：表示中国大陆以外区域  为空则按默认处理。
-
-        :param call_back_area: The call_back_area of this LiveSnapshotConfig.
-        :type call_back_area: str
-        """
-        self._call_back_area = call_back_area
-
-    @property
-    def call_back_ssl_verify(self):
-        """Gets the call_back_ssl_verify of this LiveSnapshotConfig.
-
-        是否开启ssl校验服务服务端证书，仅当回调url使用https协议时有效
-
-        :return: The call_back_ssl_verify of this LiveSnapshotConfig.
-        :rtype: bool
-        """
-        return self._call_back_ssl_verify
-
-    @call_back_ssl_verify.setter
-    def call_back_ssl_verify(self, call_back_ssl_verify):
-        """Sets the call_back_ssl_verify of this LiveSnapshotConfig.
-
-        是否开启ssl校验服务服务端证书，仅当回调url使用https协议时有效
-
-        :param call_back_ssl_verify: The call_back_ssl_verify of this LiveSnapshotConfig.
-        :type call_back_ssl_verify: bool
-        """
-        self._call_back_ssl_verify = call_back_ssl_verify
-
-    @property
-    def call_back_ssl_ca(self):
-        """Gets the call_back_ssl_ca of this LiveSnapshotConfig.
-
-        客户端校验服务端的受信证书，call_back_ssl_verify为ture时必需
-
-        :return: The call_back_ssl_ca of this LiveSnapshotConfig.
-        :rtype: str
-        """
-        return self._call_back_ssl_ca
-
-    @call_back_ssl_ca.setter
-    def call_back_ssl_ca(self, call_back_ssl_ca):
-        """Sets the call_back_ssl_ca of this LiveSnapshotConfig.
-
-        客户端校验服务端的受信证书，call_back_ssl_verify为ture时必需
-
-        :param call_back_ssl_ca: The call_back_ssl_ca of this LiveSnapshotConfig.
-        :type call_back_ssl_ca: str
-        """
-        self._call_back_ssl_ca = call_back_ssl_ca
-
-    @property
-    def image_object_format(self):
-        """Gets the image_object_format of this LiveSnapshotConfig.
-
-        截图存储文件命名规则， 仅支持jpg格式 包含 - '{obs_object}' OBS存储路径，即obs_location.object的值  - '{domain}' 域名 - '{app}' 应用名 - '{stream}'  流名  其中实时截图模式下  - '{unix_time}'  时间戳，秒 - '{unix_time_milli}'  时间戳，毫秒 - '{fmt_time_utc}'   格式化UTC时间, 格式：YYYYMMDDhhmmss, 如20060102070405 - '{fmt_time_local}'  格式化本地时间, 格式：YYYYMMDDhhmmss，如20060102150405 必选一个时间类型模板
-
-        :return: The image_object_format of this LiveSnapshotConfig.
-        :rtype: str
-        """
-        return self._image_object_format
-
-    @image_object_format.setter
-    def image_object_format(self, image_object_format):
-        """Sets the image_object_format of this LiveSnapshotConfig.
-
-        截图存储文件命名规则， 仅支持jpg格式 包含 - '{obs_object}' OBS存储路径，即obs_location.object的值  - '{domain}' 域名 - '{app}' 应用名 - '{stream}'  流名  其中实时截图模式下  - '{unix_time}'  时间戳，秒 - '{unix_time_milli}'  时间戳，毫秒 - '{fmt_time_utc}'   格式化UTC时间, 格式：YYYYMMDDhhmmss, 如20060102070405 - '{fmt_time_local}'  格式化本地时间, 格式：YYYYMMDDhhmmss，如20060102150405 必选一个时间类型模板
-
-        :param image_object_format: The image_object_format of this LiveSnapshotConfig.
-        :type image_object_format: str
-        """
-        self._image_object_format = image_object_format
 
     def to_dict(self):
         """Returns the model properties as a dict"""

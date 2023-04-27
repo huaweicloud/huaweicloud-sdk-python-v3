@@ -21,15 +21,17 @@ class UpdateTaskStatusReq:
 
     openapi_types = {
         'operation': 'str',
-        'param': 'dict(str, str)'
+        'param': 'dict(str, str)',
+        'switch_hce': 'bool'
     }
 
     attribute_map = {
         'operation': 'operation',
-        'param': 'param'
+        'param': 'param',
+        'switch_hce': 'switch_hce'
     }
 
-    def __init__(self, operation=None, param=None):
+    def __init__(self, operation=None, param=None, switch_hce=None):
         """UpdateTaskStatusReq
 
         The model defined in huaweicloud sdk
@@ -38,17 +40,22 @@ class UpdateTaskStatusReq:
         :type operation: str
         :param param: 操作参数
         :type param: dict(str, str)
+        :param switch_hce: 是否切换hce
+        :type switch_hce: bool
         """
         
         
 
         self._operation = None
         self._param = None
+        self._switch_hce = None
         self.discriminator = None
 
         self.operation = operation
         if param is not None:
             self.param = param
+        if switch_hce is not None:
+            self.switch_hce = switch_hce
 
     @property
     def operation(self):
@@ -93,6 +100,28 @@ class UpdateTaskStatusReq:
         :type param: dict(str, str)
         """
         self._param = param
+
+    @property
+    def switch_hce(self):
+        """Gets the switch_hce of this UpdateTaskStatusReq.
+
+        是否切换hce
+
+        :return: The switch_hce of this UpdateTaskStatusReq.
+        :rtype: bool
+        """
+        return self._switch_hce
+
+    @switch_hce.setter
+    def switch_hce(self, switch_hce):
+        """Sets the switch_hce of this UpdateTaskStatusReq.
+
+        是否切换hce
+
+        :param switch_hce: The switch_hce of this UpdateTaskStatusReq.
+        :type switch_hce: bool
+        """
+        self._switch_hce = switch_hce
 
     def to_dict(self):
         """Returns the model properties as a dict"""

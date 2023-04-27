@@ -44,7 +44,7 @@ class ShowConsumerConnectionsRequest:
         :type instance_id: str
         :param group: 消费组名称
         :type group: str
-        :param limit: 查询数量，取值范围[1, 50]。
+        :param limit: 查询数量，取值范围为1~50。
         :type limit: int
         :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
         :type offset: int
@@ -118,7 +118,7 @@ class ShowConsumerConnectionsRequest:
     def limit(self):
         """Gets the limit of this ShowConsumerConnectionsRequest.
 
-        查询数量，取值范围[1, 50]。
+        查询数量，取值范围为1~50。
 
         :return: The limit of this ShowConsumerConnectionsRequest.
         :rtype: int
@@ -129,7 +129,7 @@ class ShowConsumerConnectionsRequest:
     def limit(self, limit):
         """Sets the limit of this ShowConsumerConnectionsRequest.
 
-        查询数量，取值范围[1, 50]。
+        查询数量，取值范围为1~50。
 
         :param limit: The limit of this ShowConsumerConnectionsRequest.
         :type limit: int

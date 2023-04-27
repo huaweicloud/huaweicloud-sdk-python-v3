@@ -21,7 +21,7 @@ class CreateAppRequest:
 
     openapi_types = {
         'eihealth_project_id': 'str',
-        'body': 'AppDto'
+        'body': 'AppReq'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class CreateAppRequest:
         :param eihealth_project_id: 医疗智能体平台项目ID，您可以在EIHealth平台单击所需的项目名称，进入项目设置页面查看。
         :type eihealth_project_id: str
         :param body: Body of the CreateAppRequest
-        :type body: :class:`huaweicloudsdkeihealth.v1.AppDto`
+        :type body: :class:`huaweicloudsdkeihealth.v1.AppReq`
         """
         
         
@@ -77,7 +77,7 @@ class CreateAppRequest:
         """Gets the body of this CreateAppRequest.
 
         :return: The body of this CreateAppRequest.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.AppDto`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.AppReq`
         """
         return self._body
 
@@ -86,7 +86,7 @@ class CreateAppRequest:
         """Sets the body of this CreateAppRequest.
 
         :param body: The body of this CreateAppRequest.
-        :type body: :class:`huaweicloudsdkeihealth.v1.AppDto`
+        :type body: :class:`huaweicloudsdkeihealth.v1.AppReq`
         """
         self._body = body
 

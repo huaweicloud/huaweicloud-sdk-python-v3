@@ -1849,6 +1849,82 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_config_templates(self, request):
+        """查询参数模板列表
+
+        查询租户的参数模板列表，支持按照条件查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListConfigTemplates
+        :type request: :class:`huaweicloudsdkdcs.v2.ListConfigTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.ListConfigTemplatesResponse`
+        """
+        return self.list_config_templates_with_http_info(request)
+
+    def list_config_templates_with_http_info(self, request):
+        all_params = ['type', 'name', 'template_id', 'engine', 'engine_version', 'cache_mode', 'description', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'template_id' in local_var_params:
+            query_params.append(('template_id', local_var_params['template_id']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'engine' in local_var_params:
+            query_params.append(('engine', local_var_params['engine']))
+        if 'engine_version' in local_var_params:
+            query_params.append(('engine_version', local_var_params['engine_version']))
+        if 'cache_mode' in local_var_params:
+            query_params.append(('cache_mode', local_var_params['cache_mode']))
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/config-templates',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListConfigTemplatesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_configurations(self, request):
         """查询实例配置参数
 
@@ -2876,6 +2952,68 @@ class DcsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListTagsOfTenantResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def reset_password(self, request):
+        """重置密码
+
+        重置缓存实例的密码。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ResetPassword
+        :type request: :class:`huaweicloudsdkdcs.v2.ResetPasswordRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.ResetPasswordResponse`
+        """
+        return self.reset_password_with_http_info(request)
+
+    def reset_password_with_http_info(self, request):
+        all_params = ['instance_id', 'reset_password_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/password/reset',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ResetPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4095,6 +4233,66 @@ class DcsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateInstanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_instance_bandwidth(self, request):
+        """变更指定实例的带宽
+
+        变更指定实例的带宽
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateInstanceBandwidth
+        :type request: :class:`huaweicloudsdkdcs.v2.UpdateInstanceBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.UpdateInstanceBandwidthResponse`
+        """
+        return self.update_instance_bandwidth_with_http_info(request)
+
+    def update_instance_bandwidth_with_http_info(self, request):
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/bandwidth',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateInstanceBandwidthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

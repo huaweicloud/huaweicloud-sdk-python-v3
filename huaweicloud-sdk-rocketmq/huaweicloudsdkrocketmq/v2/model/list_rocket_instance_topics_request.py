@@ -38,7 +38,7 @@ class ListRocketInstanceTopicsRequest:
 
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param limit: 查询数量，取值范围[1, 50]。
+        :param limit: 查询数量，取值范围为1~50。
         :type limit: int
         :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
         :type offset: int
@@ -83,7 +83,7 @@ class ListRocketInstanceTopicsRequest:
     def limit(self):
         """Gets the limit of this ListRocketInstanceTopicsRequest.
 
-        查询数量，取值范围[1, 50]。
+        查询数量，取值范围为1~50。
 
         :return: The limit of this ListRocketInstanceTopicsRequest.
         :rtype: int
@@ -94,7 +94,7 @@ class ListRocketInstanceTopicsRequest:
     def limit(self, limit):
         """Sets the limit of this ListRocketInstanceTopicsRequest.
 
-        查询数量，取值范围[1, 50]。
+        查询数量，取值范围为1~50。
 
         :param limit: The limit of this ListRocketInstanceTopicsRequest.
         :type limit: int

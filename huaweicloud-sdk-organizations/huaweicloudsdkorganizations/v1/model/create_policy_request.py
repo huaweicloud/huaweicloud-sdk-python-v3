@@ -34,7 +34,7 @@ class CreatePolicyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 选择接口返回的信息的语言，默认为\&quot;zh-cn\&quot;中文，zh-cn中文，en-us英文
+        :param x_language: 选择接口返回的信息的语言
         :type x_language: str
         :param body: Body of the CreatePolicyRequest
         :type body: :class:`huaweicloudsdkorganizations.v1.CreatePolicyReqBody`
@@ -55,7 +55,7 @@ class CreatePolicyRequest:
     def x_language(self):
         """Gets the x_language of this CreatePolicyRequest.
 
-        选择接口返回的信息的语言，默认为\"zh-cn\"中文，zh-cn中文，en-us英文
+        选择接口返回的信息的语言
 
         :return: The x_language of this CreatePolicyRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class CreatePolicyRequest:
     def x_language(self, x_language):
         """Sets the x_language of this CreatePolicyRequest.
 
-        选择接口返回的信息的语言，默认为\"zh-cn\"中文，zh-cn中文，en-us英文
+        选择接口返回的信息的语言
 
         :param x_language: The x_language of this CreatePolicyRequest.
         :type x_language: str

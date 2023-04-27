@@ -34,7 +34,7 @@ class DetachPolicyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param policy_id: 根、组织单元或帐号的唯一标识符（ID）。
+        :param policy_id: 策略的唯一标识符（ID）。
         :type policy_id: str
         :param body: Body of the DetachPolicyRequest
         :type body: :class:`huaweicloudsdkorganizations.v1.PolicyTachReqBody`
@@ -54,7 +54,7 @@ class DetachPolicyRequest:
     def policy_id(self):
         """Gets the policy_id of this DetachPolicyRequest.
 
-        根、组织单元或帐号的唯一标识符（ID）。
+        策略的唯一标识符（ID）。
 
         :return: The policy_id of this DetachPolicyRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class DetachPolicyRequest:
     def policy_id(self, policy_id):
         """Sets the policy_id of this DetachPolicyRequest.
 
-        根、组织单元或帐号的唯一标识符（ID）。
+        策略的唯一标识符（ID）。
 
         :param policy_id: The policy_id of this DetachPolicyRequest.
         :type policy_id: str

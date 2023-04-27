@@ -31,7 +31,7 @@ class LtsStructTemplateInfo:
         'layers': 'int',
         'tokenizer': 'str',
         'log_format': 'str',
-        'rule': 'list[Rule]'
+        'rule': 'Rule'
     }
 
     attribute_map = {
@@ -76,8 +76,8 @@ class LtsStructTemplateInfo:
         :type tokenizer: str
         :param log_format: parse_type为nginx类型时必填，nginx日志格式模板
         :type log_format: str
-        :param rule: 结构化方式
-        :type rule: list[:class:`huaweicloudsdklts.v2.Rule`]
+        :param rule: 
+        :type rule: :class:`huaweicloudsdklts.v2.Rule`
         """
         
         
@@ -360,10 +360,8 @@ class LtsStructTemplateInfo:
     def rule(self):
         """Gets the rule of this LtsStructTemplateInfo.
 
-        结构化方式
-
         :return: The rule of this LtsStructTemplateInfo.
-        :rtype: list[:class:`huaweicloudsdklts.v2.Rule`]
+        :rtype: :class:`huaweicloudsdklts.v2.Rule`
         """
         return self._rule
 
@@ -371,10 +369,8 @@ class LtsStructTemplateInfo:
     def rule(self, rule):
         """Sets the rule of this LtsStructTemplateInfo.
 
-        结构化方式
-
         :param rule: The rule of this LtsStructTemplateInfo.
-        :type rule: list[:class:`huaweicloudsdklts.v2.Rule`]
+        :type rule: :class:`huaweicloudsdklts.v2.Rule`
         """
         self._rule = rule
 

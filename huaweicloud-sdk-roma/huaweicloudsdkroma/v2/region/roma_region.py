@@ -22,7 +22,7 @@ class RomaRegion:
     AP_SOUTHEAST_3 = Region("ap-southeast-3",
                         "https://roma.ap-southeast-3.myhuaweicloud.com")
     AP_SOUTHEAST_1 = Region("ap-southeast-1",
-                        "https://roma.ap-southeast-3.myhuaweicloud.com")
+                        "https://roma.ap-southeast-1.myhuaweicloud.com")
     RU_NORTHWEST_2 = Region("ru-northwest-2",
                         "https://roma.ru-northwest-2.myhuaweicloud.com")
 

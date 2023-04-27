@@ -2189,7 +2189,7 @@ class ApigClient(Client):
             request_type=request.__class__.__name__)
 
     def disassociate_signature_key_v2(self, request):
-        """解除绑定
+        """解除API与签名密钥的绑定关系
 
         解除API与签名密钥的绑定关系。
         
@@ -6569,7 +6569,7 @@ class ApigClient(Client):
             request_type=request.__class__.__name__)
 
     def create_api_v2(self, request):
-        """注册API
+        """创建API
 
         添加一个API，API即一个服务接口，具体的服务能力。
         

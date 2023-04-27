@@ -13,6 +13,8 @@ from huaweicloudsdksms.v3.model.collect_log_request import CollectLogRequest
 from huaweicloudsdksms.v3.model.collect_log_response import CollectLogResponse
 from huaweicloudsdksms.v3.model.comand_param import ComandParam
 from huaweicloudsdksms.v3.model.command_body import CommandBody
+from huaweicloudsdksms.v3.model.config_body import ConfigBody
+from huaweicloudsdksms.v3.model.configuration_request_body import ConfigurationRequestBody
 from huaweicloudsdksms.v3.model.create_migproject_request import CreateMigprojectRequest
 from huaweicloudsdksms.v3.model.create_migproject_response import CreateMigprojectResponse
 from huaweicloudsdksms.v3.model.create_task_request import CreateTaskRequest
@@ -41,6 +43,9 @@ from huaweicloudsdksms.v3.model.disk import Disk
 from huaweicloudsdksms.v3.model.disk_intarget_server import DiskIntargetServer
 from huaweicloudsdksms.v3.model.environment_check import EnvironmentCheck
 from huaweicloudsdksms.v3.model.init_target_server import InitTargetServer
+from huaweicloudsdksms.v3.model.link import Link
+from huaweicloudsdksms.v3.model.list_api_version_request import ListApiVersionRequest
+from huaweicloudsdksms.v3.model.list_api_version_response import ListApiVersionResponse
 from huaweicloudsdksms.v3.model.list_error_servers_request import ListErrorServersRequest
 from huaweicloudsdksms.v3.model.list_error_servers_response import ListErrorServersResponse
 from huaweicloudsdksms.v3.model.list_migprojects_request import ListMigprojectsRequest
@@ -56,6 +61,7 @@ from huaweicloudsdksms.v3.model.mig_project import MigProject
 from huaweicloudsdksms.v3.model.migprojects_response_body import MigprojectsResponseBody
 from huaweicloudsdksms.v3.model.migration_errors import MigrationErrors
 from huaweicloudsdksms.v3.model.net_work import NetWork
+from huaweicloudsdksms.v3.model.network_check_info_request_body import NetworkCheckInfoRequestBody
 from huaweicloudsdksms.v3.model.nics import Nics
 from huaweicloudsdksms.v3.model.physical_volume import PhysicalVolume
 from huaweicloudsdksms.v3.model.physical_volumes import PhysicalVolumes
@@ -76,10 +82,16 @@ from huaweicloudsdksms.v3.model.register_server_response import RegisterServerRe
 from huaweicloudsdksms.v3.model.server import Server
 from huaweicloudsdksms.v3.model.server_disk import ServerDisk
 from huaweicloudsdksms.v3.model.sg_object import SgObject
+from huaweicloudsdksms.v3.model.show_api_version_request import ShowApiVersionRequest
+from huaweicloudsdksms.v3.model.show_api_version_response import ShowApiVersionResponse
 from huaweicloudsdksms.v3.model.show_cert_key_request import ShowCertKeyRequest
 from huaweicloudsdksms.v3.model.show_cert_key_response import ShowCertKeyResponse
 from huaweicloudsdksms.v3.model.show_command_request import ShowCommandRequest
 from huaweicloudsdksms.v3.model.show_command_response import ShowCommandResponse
+from huaweicloudsdksms.v3.model.show_config_request import ShowConfigRequest
+from huaweicloudsdksms.v3.model.show_config_response import ShowConfigResponse
+from huaweicloudsdksms.v3.model.show_config_setting_request import ShowConfigSettingRequest
+from huaweicloudsdksms.v3.model.show_config_setting_response import ShowConfigSettingResponse
 from huaweicloudsdksms.v3.model.show_migproject_request import ShowMigprojectRequest
 from huaweicloudsdksms.v3.model.show_migproject_response import ShowMigprojectResponse
 from huaweicloudsdksms.v3.model.show_overview_request import ShowOverviewRequest
@@ -132,6 +144,8 @@ from huaweicloudsdksms.v3.model.update_disk_info_request import UpdateDiskInfoRe
 from huaweicloudsdksms.v3.model.update_disk_info_response import UpdateDiskInfoResponse
 from huaweicloudsdksms.v3.model.update_migproject_request import UpdateMigprojectRequest
 from huaweicloudsdksms.v3.model.update_migproject_response import UpdateMigprojectResponse
+from huaweicloudsdksms.v3.model.update_network_check_info_request import UpdateNetworkCheckInfoRequest
+from huaweicloudsdksms.v3.model.update_network_check_info_response import UpdateNetworkCheckInfoResponse
 from huaweicloudsdksms.v3.model.update_server_name_request import UpdateServerNameRequest
 from huaweicloudsdksms.v3.model.update_server_name_response import UpdateServerNameResponse
 from huaweicloudsdksms.v3.model.update_speed_request import UpdateSpeedRequest
@@ -148,5 +162,8 @@ from huaweicloudsdksms.v3.model.update_template_req import UpdateTemplateReq
 from huaweicloudsdksms.v3.model.update_template_request import UpdateTemplateRequest
 from huaweicloudsdksms.v3.model.update_template_response import UpdateTemplateResponse
 from huaweicloudsdksms.v3.model.upload_log_request_body import UploadLogRequestBody
+from huaweicloudsdksms.v3.model.upload_special_configuration_setting_request import UploadSpecialConfigurationSettingRequest
+from huaweicloudsdksms.v3.model.upload_special_configuration_setting_response import UploadSpecialConfigurationSettingResponse
+from huaweicloudsdksms.v3.model.version import Version
 from huaweicloudsdksms.v3.model.volume_groups import VolumeGroups
 from huaweicloudsdksms.v3.model.vpc_object import VpcObject

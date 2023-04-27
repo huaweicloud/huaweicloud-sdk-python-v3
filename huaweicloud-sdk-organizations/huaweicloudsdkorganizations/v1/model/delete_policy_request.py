@@ -32,7 +32,7 @@ class DeletePolicyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param policy_id: 根、组织单元或帐号的唯一标识符（ID）。
+        :param policy_id: 策略的唯一标识符（ID）。
         :type policy_id: str
         """
         
@@ -47,7 +47,7 @@ class DeletePolicyRequest:
     def policy_id(self):
         """Gets the policy_id of this DeletePolicyRequest.
 
-        根、组织单元或帐号的唯一标识符（ID）。
+        策略的唯一标识符（ID）。
 
         :return: The policy_id of this DeletePolicyRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class DeletePolicyRequest:
     def policy_id(self, policy_id):
         """Sets the policy_id of this DeletePolicyRequest.
 
-        根、组织单元或帐号的唯一标识符（ID）。
+        策略的唯一标识符（ID）。
 
         :param policy_id: The policy_id of this DeletePolicyRequest.
         :type policy_id: str

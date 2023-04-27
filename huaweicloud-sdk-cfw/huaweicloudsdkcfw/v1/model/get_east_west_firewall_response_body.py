@@ -56,7 +56,7 @@ class GetEastWestFirewallResponseBody:
         :type object_id: str
         :param project_id: 租户project_id
         :type project_id: str
-        :param status: 防护状态：0 未开启防护， 1 已开启防护
+        :param status: 防护状态：0 已开启防护， 1 未开启防护
         :type status: int
         :param er_associated_subnet: 
         :type er_associated_subnet: :class:`huaweicloudsdkcfw.v1.SubnetInfo`
@@ -162,7 +162,7 @@ class GetEastWestFirewallResponseBody:
     def status(self):
         """Gets the status of this GetEastWestFirewallResponseBody.
 
-        防护状态：0 未开启防护， 1 已开启防护
+        防护状态：0 已开启防护， 1 未开启防护
 
         :return: The status of this GetEastWestFirewallResponseBody.
         :rtype: int
@@ -173,7 +173,7 @@ class GetEastWestFirewallResponseBody:
     def status(self, status):
         """Sets the status of this GetEastWestFirewallResponseBody.
 
-        防护状态：0 未开启防护， 1 已开启防护
+        防护状态：0 已开启防护， 1 未开启防护
 
         :param status: The status of this GetEastWestFirewallResponseBody.
         :type status: int

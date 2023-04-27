@@ -38,7 +38,7 @@ class EipOperateProtectReq:
 
         :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
         :type object_id: str
-        :param status: EIP状态
+        :param status: EIP状态，0表示防护中，1表示未防护
         :type status: int
         :param ip_infos: EIP信息列表
         :type ip_infos: list[:class:`huaweicloudsdkcfw.v1.EipOperateProtectReqIpInfos`]
@@ -81,7 +81,7 @@ class EipOperateProtectReq:
     def status(self):
         """Gets the status of this EipOperateProtectReq.
 
-        EIP状态
+        EIP状态，0表示防护中，1表示未防护
 
         :return: The status of this EipOperateProtectReq.
         :rtype: int
@@ -92,7 +92,7 @@ class EipOperateProtectReq:
     def status(self, status):
         """Sets the status of this EipOperateProtectReq.
 
-        EIP状态
+        EIP状态，0表示防护中，1表示未防护
 
         :param status: The status of this EipOperateProtectReq.
         :type status: int

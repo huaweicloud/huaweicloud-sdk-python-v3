@@ -58,7 +58,7 @@ class EipResource:
         :type id: str
         :param public_ip: 弹性公网IP
         :type public_ip: str
-        :param status: EIP防护状态
+        :param status: EIP防护状态，0表示防护中，1表示未防护
         :type status: int
         :param public_ipv6: 弹性公网IP,IPV6
         :type public_ipv6: str
@@ -169,7 +169,7 @@ class EipResource:
     def status(self):
         """Gets the status of this EipResource.
 
-        EIP防护状态
+        EIP防护状态，0表示防护中，1表示未防护
 
         :return: The status of this EipResource.
         :rtype: int
@@ -180,7 +180,7 @@ class EipResource:
     def status(self, status):
         """Sets the status of this EipResource.
 
-        EIP防护状态
+        EIP防护状态，0表示防护中，1表示未防护
 
         :param status: The status of this EipResource.
         :type status: int

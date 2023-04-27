@@ -20,7 +20,7 @@ class CreatefavoriteResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'create_time': 'str',
+        'create_time': 'int',
         'eps_id': 'str',
         'favorite_resource_id': 'str',
         'favorite_resource_type': 'str',
@@ -49,7 +49,7 @@ class CreatefavoriteResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param create_time: 创建时间
-        :type create_time: str
+        :type create_time: int
         :param eps_id: 企业项目id
         :type eps_id: str
         :param favorite_resource_id: 收藏资源id
@@ -107,7 +107,7 @@ class CreatefavoriteResponse(SdkResponse):
         创建时间
 
         :return: The create_time of this CreatefavoriteResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._create_time
 
@@ -118,7 +118,7 @@ class CreatefavoriteResponse(SdkResponse):
         创建时间
 
         :param create_time: The create_time of this CreatefavoriteResponse.
-        :type create_time: str
+        :type create_time: int
         """
         self._create_time = create_time
 

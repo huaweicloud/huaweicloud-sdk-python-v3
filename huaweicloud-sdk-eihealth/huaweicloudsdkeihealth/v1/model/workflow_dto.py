@@ -54,7 +54,7 @@ class WorkflowDto:
         :type summary: str
         :param description: 流程描述 取值范围[0,65535]，后续支持markdown文本
         :type description: str
-        :param labels: 流程标签，取值范围[0,5]，单个标签最大长度32字符，仅包含小写字母或数字或大写字母
+        :param labels: 流程标签，取值范围[0,5]，单个标签最大长度32字符，支持中文、字母、数字、空格、下划线和中划线，且不能以空格开头或者结尾。
         :type labels: list[str]
         :param timeout: 流程超时时间，取值范围[1,144000]，单位分钟，默认1440
         :type timeout: int
@@ -183,7 +183,7 @@ class WorkflowDto:
     def labels(self):
         """Gets the labels of this WorkflowDto.
 
-        流程标签，取值范围[0,5]，单个标签最大长度32字符，仅包含小写字母或数字或大写字母
+        流程标签，取值范围[0,5]，单个标签最大长度32字符，支持中文、字母、数字、空格、下划线和中划线，且不能以空格开头或者结尾。
 
         :return: The labels of this WorkflowDto.
         :rtype: list[str]
@@ -194,7 +194,7 @@ class WorkflowDto:
     def labels(self, labels):
         """Sets the labels of this WorkflowDto.
 
-        流程标签，取值范围[0,5]，单个标签最大长度32字符，仅包含小写字母或数字或大写字母
+        流程标签，取值范围[0,5]，单个标签最大长度32字符，支持中文、字母、数字、空格、下划线和中划线，且不能以空格开头或者结尾。
 
         :param labels: The labels of this WorkflowDto.
         :type labels: list[str]

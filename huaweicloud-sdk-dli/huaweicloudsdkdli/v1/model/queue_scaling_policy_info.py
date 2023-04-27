@@ -61,16 +61,11 @@ class QueueScalingPolicyInfo:
         self._max_cu = None
         self.discriminator = None
 
-        if priority is not None:
-            self.priority = priority
-        if impact_start_time is not None:
-            self.impact_start_time = impact_start_time
-        if impact_stop_time is not None:
-            self.impact_stop_time = impact_stop_time
-        if min_cu is not None:
-            self.min_cu = min_cu
-        if max_cu is not None:
-            self.max_cu = max_cu
+        self.priority = priority
+        self.impact_start_time = impact_start_time
+        self.impact_stop_time = impact_stop_time
+        self.min_cu = min_cu
+        self.max_cu = max_cu
 
     @property
     def priority(self):

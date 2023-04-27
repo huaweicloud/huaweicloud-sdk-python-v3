@@ -42,7 +42,7 @@ class CreateSecretRequestBody:
 
         :param name: 凭据名称。  约束：取值范围为1到64个字符，满足正则匹配“^[a-zA-Z0-9._-]{1,64}$”。 
         :type name: str
-        :param kms_key_id: 用于加密保护凭据值的KMS主密钥ID，如果您未指定此参数，凭据管理服务将默认使用名为csms/default的默认主密钥，用于加密您账号在本项目中创建的凭据值。如果用户账号下不存在该名称的主密钥，则凭据管理服务自动为您创建该名称的密钥。
+        :param kms_key_id: 用于加密保护凭据值的KMS主密钥ID，如果您未指定此参数，凭据管理服务将默认使用名为csms/default的默认主密钥，用于加密您帐号在本项目中创建的凭据值。如果用户帐号下不存在该名称的主密钥，则凭据管理服务自动为您创建该名称的密钥。
         :type kms_key_id: str
         :param description: 凭据的描述信息。  约束：2048字节。 
         :type description: str
@@ -97,7 +97,7 @@ class CreateSecretRequestBody:
     def kms_key_id(self):
         """Gets the kms_key_id of this CreateSecretRequestBody.
 
-        用于加密保护凭据值的KMS主密钥ID，如果您未指定此参数，凭据管理服务将默认使用名为csms/default的默认主密钥，用于加密您账号在本项目中创建的凭据值。如果用户账号下不存在该名称的主密钥，则凭据管理服务自动为您创建该名称的密钥。
+        用于加密保护凭据值的KMS主密钥ID，如果您未指定此参数，凭据管理服务将默认使用名为csms/default的默认主密钥，用于加密您帐号在本项目中创建的凭据值。如果用户帐号下不存在该名称的主密钥，则凭据管理服务自动为您创建该名称的密钥。
 
         :return: The kms_key_id of this CreateSecretRequestBody.
         :rtype: str
@@ -108,7 +108,7 @@ class CreateSecretRequestBody:
     def kms_key_id(self, kms_key_id):
         """Sets the kms_key_id of this CreateSecretRequestBody.
 
-        用于加密保护凭据值的KMS主密钥ID，如果您未指定此参数，凭据管理服务将默认使用名为csms/default的默认主密钥，用于加密您账号在本项目中创建的凭据值。如果用户账号下不存在该名称的主密钥，则凭据管理服务自动为您创建该名称的密钥。
+        用于加密保护凭据值的KMS主密钥ID，如果您未指定此参数，凭据管理服务将默认使用名为csms/default的默认主密钥，用于加密您帐号在本项目中创建的凭据值。如果用户帐号下不存在该名称的主密钥，则凭据管理服务自动为您创建该名称的密钥。
 
         :param kms_key_id: The kms_key_id of this CreateSecretRequestBody.
         :type kms_key_id: str
